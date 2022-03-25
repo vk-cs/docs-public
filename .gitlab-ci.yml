@@ -6,7 +6,6 @@ include:
 variables:
   # pipeline parameters
   VKCS_DOCKERFILE_PATH: Dockerfile
-  # VKCS_K8S_PROD_CLUSTERS: dp1, ms1
   VKCS_BRANCH_PREVIEW_ENABLED: "true"
   VKCS_DEPLOY_PROD_ENABLED: "false"
   VKCS_DEPLOY_STAGE_ENABLED: "false"
