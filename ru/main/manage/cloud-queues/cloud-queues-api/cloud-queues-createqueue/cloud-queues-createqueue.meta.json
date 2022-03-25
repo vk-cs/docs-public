@@ -1,0 +1,13 @@
+{
+  "title": "CreateQueue",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "CreateQueue - VK Cloud Solutions",
+  "metaDescription": "Запрос создает новую стандартную очередь или очередь FIFO. В запросе можно передать один или несколько атрибутов. Параметры запроса Атрибут Attribute.N.Nam",
+  "sectionTitle": "CreateQueue",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5,
+  "uuid": "76b4e05e-ee69-477a-8101-fd57002699e3"
+}

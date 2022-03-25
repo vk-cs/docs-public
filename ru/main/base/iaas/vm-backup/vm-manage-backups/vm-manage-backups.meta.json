@@ -1,0 +1,13 @@
+{
+  "title": "Восстановление ВМ из копии",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Восстановление ВМ из копии - VK Cloud Solutions",
+  "metaDescription": "Восстановление инстанса из резервной копии помогает создать копию виртуальной машины на определенный момент времени, когда была создана точка бэкапа. Приме",
+  "sectionTitle": "Восстановление ВМ из копии",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "2682d77f-ebc9-4526-b4c8-7edb848fa0cb"
+}

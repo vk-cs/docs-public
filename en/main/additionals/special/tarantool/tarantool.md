@@ -1,0 +1,1 @@
+Open database management system with non-blocking Lua application server. The database has a high performance compared to traditional DBMS, having the same properties: persistence, ACID transactional, master-slave replication, master-master

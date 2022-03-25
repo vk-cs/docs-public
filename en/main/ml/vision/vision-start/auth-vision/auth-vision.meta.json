@@ -1,0 +1,12 @@
+{
+  "title": "Авторизация",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Авторизация - VK Cloud Solutions",
+  "metaDescription": "Для авторизации клиента на платформе VK CS Vision используется токен, который передается в параметре запроса: curl -k -v",
+  "sectionTitle": "Авторизация",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "uuid": "cf5fe676-6fa6-44cf-8ae9-3d9f36245521"
+}

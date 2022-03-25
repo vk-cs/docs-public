@@ -1,0 +1,13 @@
+{
+  "title": "VNC консоль",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "VNC консоль - VK Cloud Solutions",
+  "metaDescription": "VNC используется для просмотра вывода консоли виртуальной машины, вне зависимости от того, есть ли вывод в журнале консоли. Это позволяет передавать активн",
+  "sectionTitle": "VNC консоль",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5,
+  "uuid": "eb2300a9-171d-4a9e-862f-a237b30b60e3"
+}

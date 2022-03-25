@@ -1,0 +1,13 @@
+{
+  "title": "GetQueueUrl",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "GetQueueUrl - VK Cloud Solutions",
+  "metaDescription": "The request returns the URL of an existing Cloud Queues queue. To access a queue that belongs to another VK CS account, use",
+  "sectionTitle": "GetQueueUrl",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 10,
+  "uuid": "de9ac794-e8e5-484f-9f67-34194f67e8a5"
+}

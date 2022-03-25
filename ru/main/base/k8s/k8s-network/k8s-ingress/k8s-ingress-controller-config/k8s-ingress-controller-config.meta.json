@@ -1,0 +1,13 @@
+{
+  "title": "Управление Ingress Controller",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Управление Ingress Controller - VK Cloud Solutions",
+  "metaDescription": "При создании нового кластера Kubernetes уже имеется предустановленный Ingress Controller: После выполнения шагов по созданию кластера в разделе",
+  "sectionTitle": "Управление Ingress Controller",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "813d2381-ecc6-4f8b-9b09-36af0fac558a"
+}

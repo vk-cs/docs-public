@@ -1,0 +1,13 @@
+{
+  "title": "NFS connection",
+  "pageDescription": "Together with a Ceph-based cloud storage system, you can use shared file storage available via the NFS protocol to create Persistent volumes in your Kubernetes cluster.",
+  "shortDescription": "",
+  "metaTitle": "NFS connection - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "NFS connection",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "4268d1aa-ee56-446e-b883-02dbc07e9af3"
+}

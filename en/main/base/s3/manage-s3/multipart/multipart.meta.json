@@ -1,0 +1,13 @@
+{
+  "title": "Multipart upload",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Multipart upload - VK Cloud Solutions",
+  "metaDescription": "VK CS provides a mechanism for working with large files that might be too large to upload a file to a bucket one time using the GUI or CLI. Multiple (multipa",
+  "sectionTitle": "Multipart upload",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "aa58b445-5ea4-46a2-a9c7-57325bc1f672"
+}

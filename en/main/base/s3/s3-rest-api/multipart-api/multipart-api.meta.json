@@ -1,0 +1,13 @@
+{
+  "title": "Multipart",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Multipart - VK Cloud Solutions",
+  "metaDescription": "Composite or multipart loading allows you to save objects in VK CS S3 Object Storage in parts. This can be useful when loading or copying large objects. We r",
+  "sectionTitle": "Multipart",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "137af533-914e-4a3a-b99e-c3608e9f54fe"
+}

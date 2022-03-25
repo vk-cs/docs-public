@@ -1,0 +1,13 @@
+{
+  "title": "Архитектура",
+  "pageDescription": "Структура взаимодействия сервиса Kubernetes с платформой VK CS, облачными провайдерами и сетями.",
+  "shortDescription": "Структура взаимодействия сервиса Kubernetes с платформой VK CS, облачными провайдерами и сетями.",
+  "metaTitle": "Архитектура - VK Cloud Solutions",
+  "metaDescription": "Структура взаимодействия сервиса Kubernetes с платформой VK CS, облачными провайдерами и сетями.",
+  "sectionTitle": "Архитектура",
+  "markdown": "Структура взаимодействия сервиса Kubernetes с платформой VK CS, облачными провайдерами и сетями.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "dd5dcf80-7530-4c27-89d4-43dbf17f9453"
+}

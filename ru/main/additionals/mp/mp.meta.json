@@ -1,0 +1,13 @@
+{
+  "title": "Маркетплейс",
+  "pageDescription": "Cloud Marketplace —  это магазин облачных приложений от VK Cloud Solutions. Установите из готовых образов приложения для разработки и бизнеса: Docker CE, Docker Registry, Nexus 3, GitLab CE, Nexus 2, Tomcat и другие решения. Приложения не тарифицируются, оплата списывается только за использование виртуальных машин.",
+  "shortDescription": "Магазин облачных приложений от VK Cloud Solutions",
+  "metaTitle": "Маркетплейс - VK Cloud Solutions",
+  "metaDescription": "Cloud Marketplace —  это магазин облачных приложений от VK Cloud Solutions. Установите из готовых образов приложения для разработки и бизнеса: Docker",
+  "sectionTitle": "Маркетплейс",
+  "markdown": "Cloud Marketplace —  это магазин облачных приложений от VK Cloud Solutions. Установите из готовых образов приложения для разработки и бизнеса: Docker CE, Docker Registry, Nexus 3, GitLab CE, Nexus 2, Tomcat и другие решения. Приложения не тарифицируются, оплата списывается только за использование виртуальных машин.",
+  "icon": "",
+  "weight": 10,
+  "infobarItems": null,
+  "uuid": "e82d4cad-6126-4739-b4e0-a8e79ae2377f"
+}

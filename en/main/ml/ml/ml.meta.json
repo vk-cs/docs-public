@@ -1,0 +1,13 @@
+{
+  "title": "Machine learning",
+  "pageDescription": "VK Cloud Solutions Machine Learning is a service for creating applications based on deep learning without having to maintain your own infrastructure. By quickly deploying learning environments in the cloud, you can use common tools and frameworks without tedious customization. The environments are deployed as images with the neural network training services and drivers installed and configured.",
+  "shortDescription": "Service for rapid application development based on machine learning",
+  "metaTitle": "Machine learning - VK Cloud Solutions",
+  "metaDescription": "VK Cloud Solutions Machine Learning is a service for creating applications based on deep learning without having to maintain your own infrastructure. By quickly deplo",
+  "sectionTitle": "Machine learning",
+  "markdown": "VK Cloud Solutions Machine Learning is a service for creating applications based on deep learning without having to maintain your own infrastructure. By quickly deploying learning environments in the cloud, you can use common tools and frameworks without tedious customization. The environments are deployed as images with the neural network training services and drivers installed and configured.",
+  "icon": "",
+  "weight": 5,
+  "infobarItems": null,
+  "uuid": "58007ff4-80da-4d95-b8f2-02cf9508af70"
+}

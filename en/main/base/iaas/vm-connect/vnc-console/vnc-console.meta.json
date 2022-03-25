@@ -1,0 +1,13 @@
+{
+  "title": "VNC console",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "VNC console - VK Cloud Solutions",
+  "metaDescription": "VNC is used to view the console output of a virtual machine, regardless of whether there is output in the console log. This allows keyboard and mouse activ",
+  "sectionTitle": "VNC console",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "572ead11-f7d1-471c-b0f0-4dea8050ee2b"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "ChangeMessageVisibilityBatch",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "ChangeMessageVisibilityBatch - VK Cloud Solutions",
+  "metaDescription": "Запрос изменяет тайм-аут видимости сразу нескольких сообщений. Результат действия для каждого сообщения сообщается отдельно в ответе, и вы можете отправить",
+  "sectionTitle": "ChangeMessageVisibilityBatch",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "05ab043b-1d48-48cd-9904-6417a1dc06b6"
+}

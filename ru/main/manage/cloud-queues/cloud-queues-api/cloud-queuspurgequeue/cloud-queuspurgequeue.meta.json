@@ -1,0 +1,13 @@
+{
+  "title": "PurgeQueue",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "PurgeQueue\r\n - VK Cloud Solutions",
+  "metaDescription": "Удаляет сообщения из очереди, указанной параметром  QueueURL . Сообщения, отправленные в очередь до вашего звонка, PurgeQueue  могут быть получены, но удал",
+  "sectionTitle": "PurgeQueue",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 14,
+  "uuid": "e011bfc0-9bd6-4288-a69f-63f85d509a2e"
+}

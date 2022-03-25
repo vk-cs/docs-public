@@ -1,0 +1,13 @@
+{
+  "title": "Мониторинг (Prometheus+Grafana)",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Мониторинг (Prometheus+Grafana) - VK Cloud Solutions",
+  "metaDescription": "Данный стек предназначен для построения систем мониторинга на основе свободно распространаяемого ПО - Prometheus и Grafana. Перейдите в личный кабинет в ра",
+  "sectionTitle": "Мониторинг (Prometheus+Grafana)",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5,
+  "uuid": "2a9dd393-ad10-4606-ac2b-3fa5557844b3"
+}

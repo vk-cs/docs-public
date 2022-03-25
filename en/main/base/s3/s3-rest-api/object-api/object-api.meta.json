@@ -1,0 +1,13 @@
+{
+  "title": "Object",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Object - VK Cloud Solutions",
+  "metaDescription": "Operations with Objects: Get - Download an object from a bucket\nUpload - Upload an object to a bucket\nCopy - Copy an object in the bucket\nHeadObject - Get",
+  "sectionTitle": "Object",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "44c3a879-7fa3-4e76-9f59-145a2a30bdba"
+}

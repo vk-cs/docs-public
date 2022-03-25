@@ -1,0 +1,13 @@
+{
+  "title": "ListDeadLetterSourceQueues",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "ListDeadLetterSourceQueues\r\n - VK Cloud Solutions",
+  "metaDescription": "The request returns a list of your queues for which the RedrivePolicy attribute of the queue is configured using the undelivered message queue. The method supports",
+  "sectionTitle": "ListDeadLetterSourceQueues",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 11,
+  "uuid": "570eb3c1-c911-48f8-95b5-7fe4784554cf"
+}

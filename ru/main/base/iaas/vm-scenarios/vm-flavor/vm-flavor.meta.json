@@ -1,0 +1,13 @@
+{
+  "title": "Изменение типа ВМ",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Изменение типа ВМ - VK Cloud Solutions",
+  "metaDescription": "Тип виртуальной машины (кол-во/тип CPU и объем RAM) можно изменять в рамках доступных проекту конфигураций (флейворов).  Примечание Изменить тип существующ",
+  "sectionTitle": "Изменение типа ВМ",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "7507d0b6-d1d5-47a9-b439-0fe25e77cfe7"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Открыть доступ к сервису с помощью Ingress",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Открыть доступ к сервису с помощью Ingress - VK Cloud Solutions",
+  "metaDescription": "Доступ к сервисам при помощи Ingress >Кластеры Kubernetes, устанавливаемые в VK CS содержат преднастроенный Ingress Controller на базе балансировщика нагр",
+  "sectionTitle": "Открыть доступ к сервису с помощью Ingress",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "uuid": "4f192b57-fd6e-427e-a304-1910904dee8a"
+}

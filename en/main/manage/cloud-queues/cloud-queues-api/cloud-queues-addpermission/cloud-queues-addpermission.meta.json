@@ -1,0 +1,13 @@
+{
+  "title": "AddPermission",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "AddPermission - VK Cloud Solutions",
+  "metaDescription": "Adds a permission to the queue for a specific participant. This allows you to share access to the queue. When you create a queue, you have full rights",
+  "sectionTitle": "AddPermission",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "dfcee8df-6a9d-4af0-a021-b71457dca8e1"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Manage cluster",
+  "pageDescription": "Available operations when working with Kubernetes, from creating a cluster to managing its individual functions.",
+  "shortDescription": "Available operations when working with Kubernetes, from creating a cluster to managing its individual functions.",
+  "metaTitle": "Manage cluster - VK Cloud Solutions",
+  "metaDescription": "Available operations when working with Kubernetes, from creating a cluster to managing its individual functions.",
+  "sectionTitle": "Manage cluster",
+  "markdown": "Available operations when working with Kubernetes, from creating a cluster to managing its individual functions.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "1d9dae9f-b231-4be6-818d-4b4422548001"
+}

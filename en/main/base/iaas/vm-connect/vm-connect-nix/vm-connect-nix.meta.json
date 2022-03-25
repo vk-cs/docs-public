@@ -1,0 +1,13 @@
+{
+  "title": "Connecting to Linux VM",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Connecting to Linux VM - VK Cloud Solutions",
+  "metaDescription": "Linux-based virtual machines are created with openssh client enabled, which allows remote access to the instance via SSH protocol. The recommended way to c",
+  "sectionTitle": "Connecting to Linux VM",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "4c3f7e19-b0b2-4c37-802b-6f1b2792554a"
+}

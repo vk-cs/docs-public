@@ -1,0 +1,13 @@
+{
+  "title": "TagQueue",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "TagQueue - VK Cloud Solutions",
+  "metaDescription": "Add cost allocation tags to the specified VK CS SQS queue.  When using queue tags, consider the following recommendations: It is not recommended to add",
+  "sectionTitle": "TagQueue",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 20,
+  "uuid": "70a94eb9-e6d0-447d-80bd-8bb8a1cf9c4f"
+}

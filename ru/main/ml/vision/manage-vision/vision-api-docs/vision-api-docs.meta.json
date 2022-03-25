@@ -1,0 +1,13 @@
+{
+  "title": "Распознавание полей документов",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Распознавание полей документов - VK Cloud Solutions",
+  "metaDescription": "docs/recognize Данный метод позволяет распознать поля паспорта на фото. Примеры POST api/v1/docs/recognize HTTP/1.1 ... {",
+  "sectionTitle": "Распознавание полей документов",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "75d8448f-e7a5-45ad-8e2c-1851c8d5cc5d"
+}

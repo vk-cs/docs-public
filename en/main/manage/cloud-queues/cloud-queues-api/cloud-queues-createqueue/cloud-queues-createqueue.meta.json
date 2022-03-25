@@ -1,0 +1,13 @@
+{
+  "title": "CreateQueue",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "CreateQueue - VK Cloud Solutions",
+  "metaDescription": "The request creates a new standard queue or FIFO queue. One or more attributes can be passed in the request. Request Parameters Attribute Attribute.N.Nam",
+  "sectionTitle": "CreateQueue",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5,
+  "uuid": "606afc95-e3f1-4a23-9512-b5c1c025e010"
+}

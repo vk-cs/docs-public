@@ -1,0 +1,13 @@
+{
+  "title": "Распознавание текста",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Распознавание текста - VK Cloud Solutions",
+  "metaDescription": "Данный метод позволяет распознавать текст на изображении. Запрос Авторизационные данные передаются в строке запроса: Параметр Тип Значение oauth_token stri",
+  "sectionTitle": "Распознавание текста",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5,
+  "uuid": "83d12a52-564d-48cd-9db5-28528f2e377e"
+}

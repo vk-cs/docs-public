@@ -1,0 +1,13 @@
+{
+  "title": "Ingress controller",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Ingress controller - VK Cloud Solutions",
+  "metaDescription": "Ingress Controller When creating a PaaS Kubernetes cluster, you can choose from the pre-installed NGINX Ingress Controller services. If it was selected, th",
+  "sectionTitle": "Ingress controller",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "1bccdc14-a097-41da-873d-f612c1ba5df6"
+}

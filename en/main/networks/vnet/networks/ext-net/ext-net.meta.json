@@ -1,0 +1,13 @@
+{
+  "title": "External network",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "External network - VK Cloud Solutions",
+  "metaDescription": "Description In VK CS, there are two ways to organize access to an instance from the Internet: using floating IPs or adding a port from the ext-net network. I",
+  "sectionTitle": "External network",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "732ebdd0-3b88-4fc5-96e1-9a8211ecc110"
+}

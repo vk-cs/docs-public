@@ -1,0 +1,13 @@
+{
+  "title": "Создание кластера Kubernetes",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Создание кластера Kubernetes - VK Cloud Solutions",
+  "metaDescription": "Описание Кластер Kubernetes состоит из набора машин, так называемых узлов (node's), которые запускают контейнеризированные приложения. Кластер должен иметь",
+  "sectionTitle": "Создание кластера Kubernetes",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "db61615c-3775-442f-89df-21109f5a54c9"
+}

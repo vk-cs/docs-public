@@ -1,0 +1,13 @@
+{
+  "title": "Подключение к Linux ВМ",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Подключение к Linux ВМ - VK Cloud Solutions",
+  "metaDescription": "Виртуальные машины на базе ОС Linux создаются с включенным openssh клиентом, позволяющим осуществить удаленный доступ к инстансу по протоколу SSH. Рекоменд",
+  "sectionTitle": "Подключение к Linux ВМ",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "283ba2d1-c094-41ec-89c1-2f5f78b60928"
+}

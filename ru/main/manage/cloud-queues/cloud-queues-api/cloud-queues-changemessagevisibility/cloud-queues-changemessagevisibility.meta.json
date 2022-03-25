@@ -1,0 +1,13 @@
+{
+  "title": "ChangeMessageVisibility",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "ChangeMessageVisibility - VK Cloud Solutions",
+  "metaDescription": "Запрос изменяет тайм-аут видимости указанного сообщения в очереди на новое значение. Тайм-аут видимости сообщения по умолчанию составляет 30 секунд (миниму",
+  "sectionTitle": "ChangeMessageVisibility",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "b0c03315-7390-4dfb-89dd-65535d94d7e5"
+}

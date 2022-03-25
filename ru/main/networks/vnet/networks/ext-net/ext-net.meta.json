@@ -1,0 +1,13 @@
+{
+  "title": "Внешняя сеть",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Внешняя сеть - VK Cloud Solutions",
+  "metaDescription": "Описание В VK CS существует два способа организации доступа к инстансу из сети интернет: использование плавающих IP или добавление порта из сети ext-net. В о",
+  "sectionTitle": "Внешняя сеть",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "ab284798-bdb7-4a27-aece-7bc3666ea94b"
+}

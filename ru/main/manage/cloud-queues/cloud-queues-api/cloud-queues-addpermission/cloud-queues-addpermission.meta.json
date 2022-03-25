@@ -1,0 +1,13 @@
+{
+  "title": "AddPermission",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "AddPermission - VK Cloud Solutions",
+  "metaDescription": "Добавляет разрешение в очередь для определенного участника . Это позволяет разделить доступ к очереди. Когда вы создаете очередь, у вас есть права полного",
+  "sectionTitle": "AddPermission",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "07b7bfb5-4231-466e-af01-5ec6b2780bac"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "ListQueues",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "ListQueues - VK Cloud Solutions",
+  "metaDescription": "Returns a list of your queues in the current region. The answer includes no more than 1000 results. If you specify a value for the optional Queue Name Prefix",
+  "sectionTitle": "ListQueues",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 12,
+  "uuid": "559b05fd-39ec-4b26-9367-1f1b5fb681ce"
+}

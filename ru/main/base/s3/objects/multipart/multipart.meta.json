@@ -1,0 +1,13 @@
+{
+  "title": "Составная загрузка",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Составная загрузка - VK Cloud Solutions",
+  "metaDescription": "VK CS предоставляет механизм для работы с объемными файлами, размер которых может оказаться слишком велик для единоразовой загрузки файла в бакет через графи",
+  "sectionTitle": "Составная загрузка",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "b1e427d0-94c0-4b7f-a5a5-9a87df47bb88"
+}

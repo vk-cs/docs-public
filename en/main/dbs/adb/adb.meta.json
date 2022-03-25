@@ -1,0 +1,13 @@
+{
+  "title": "Analytical DB",
+  "pageDescription": "Arenadata DB is a powerful distributed analytical database based on Greenplum as a managed service. It is a massively parallel DBMS with linear scalability. Arenadata DB is used in mission-critical systems with large amounts of data, and is 20% faster than other DBMS.",
+  "shortDescription": "Powerful distributed analytic database for large projects powered by Greenplum",
+  "metaTitle": "Analytical DB - VK Cloud Solutions",
+  "metaDescription": "Arenadata DB is a powerful distributed analytical database based on Greenplum as a managed service. It is a massively parallel DBMS with linear scalability",
+  "sectionTitle": "Analytical DB",
+  "markdown": "Arenadata DB is a powerful distributed analytical database based on Greenplum as a managed service. It is a massively parallel DBMS with linear scalability. Arenadata DB is used in mission-critical systems with large amounts of data, and is 20% faster than other DBMS.",
+  "icon": "",
+  "weight": 9,
+  "infobarItems": null,
+  "uuid": "e846cce7-45cf-4baf-999f-c6bc8f1f3967"
+}

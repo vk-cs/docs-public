@@ -1,0 +1,13 @@
+{
+  "title": "Архитектура",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Архитектура - VK Cloud Solutions",
+  "metaDescription": "Концепции Сервис мониторинга VK CS состоит из нескольких частей: Масштабируемый API по приему метрик\nРаспределенное хранилище метрик\nМасштабируемый API по чт",
+  "sectionTitle": "Архитектура",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "8b980499-86d8-4016-b222-7c3be4dba322"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Bucket",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Bucket - VK Cloud Solutions",
+  "metaDescription": "Operations with Buckets: Create - Create bucket\nListBuckets - Get a list of buckets\nHeadBucket - Check if a bucket exists and has access to it\nListObjects",
+  "sectionTitle": "Bucket",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "778f3c6c-dec5-4978-9c11-0fe9e71b43fa"
+}

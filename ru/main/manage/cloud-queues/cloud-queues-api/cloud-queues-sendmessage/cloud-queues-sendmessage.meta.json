@@ -1,0 +1,13 @@
+{
+  "title": "SendMessage",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "SendMessage - VK Cloud Solutions",
+  "metaDescription": "Доставляет сообщение в указанную очередь.  Важно \nСообщение может содержать только XML, JSON и неформатированный текст. Разрешены следующие символы Unicode",
+  "sectionTitle": "SendMessage",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 17,
+  "uuid": "801d162d-ba66-4160-a23e-1666260e53c2"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Pods",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Pods - VK Cloud Solutions",
+  "metaDescription": "Description Pod is the smallest computing unit in Kubernetes terminology.Sub - a group of one or more application containers, including shared storage (vol",
+  "sectionTitle": "Pods",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "07d0022d-ad51-4b35-8ccd-f9ed5dc58b65"
+}

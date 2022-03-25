@@ -1,0 +1,13 @@
+{
+  "title": "Labels и Taints",
+  "pageDescription": "Label - это пары ключ/значение, которые прикрепляются к объектам Kubernetes, таким как поды. Taints позволяют защитить ноды от запуска определенных подов.",
+  "shortDescription": "",
+  "metaTitle": "Labels и Taints - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Labels и Taints",
+  "markdown": "",
+  "icon": "",
+  "weight": 6,
+  "infobarItems": null,
+  "uuid": "ab082882-2802-491f-ae6c-f9f736a92aed"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Организация доступа к приложению в Kubernetes",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Организация доступа к приложению в Kubernetes - VK Cloud Solutions",
+  "metaDescription": "В общем случае способы доступа к сервисам внутри кластера перечислены в официальной документации. Подробности нашей реализации: NodePortоткрывает публичный",
+  "sectionTitle": "Организация доступа к приложению в Kubernetes",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "ebbdf526-dbab-4483-9a52-332bc952fd93"
+}

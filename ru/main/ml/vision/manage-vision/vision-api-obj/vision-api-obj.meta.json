@@ -1,0 +1,13 @@
+{
+  "title": "Распознавание объектов",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Распознавание объектов - VK Cloud Solutions",
+  "metaDescription": "Данный метод позволяет найти различные объекты на фотографии. Запрос Авторизационные данные передаются в строке запроса: Параметр Тип Значение oauth_token",
+  "sectionTitle": "Распознавание объектов",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "af392b18-a5f2-4b1a-808d-7e1be0c86913"
+}

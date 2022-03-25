@@ -1,0 +1,13 @@
+{
+  "title": "Интерпретация ответов API",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Интерпретация ответов API - VK Cloud Solutions",
+  "metaDescription": "В ответ на запрос по API VK CS SQS возвращает структуру данных XML, содержащую результаты запроса.  Структура успешного ответа Если запрос успешен, основной",
+  "sectionTitle": "Интерпретация ответов API",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "8aba0752-fa8a-452d-bbe1-2f557c1b8d20"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Harbor",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Harbor - VK Cloud Solutions",
+  "metaDescription": "Что такое Harbor Harbor - это реестр Docker и Helm c открытым исходным кодом, который обеспечивает доступ к артефактам с помощью политик и контроля доступа",
+  "sectionTitle": "Harbor",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 11,
+  "uuid": "bb7df308-0c05-4316-9905-070d644215b8"
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Service Documentation",
+  "faqLinks": [
+    "docs/en/main/dbs/adb/adb-limits/adb-limits-perf",
+    "docs/en/main/dbs/adb/adb-limits/adb-limits-perf",
+    "docs/en/main/dbs/adb/adb-info/arenadata",
+    "docs/en/main/dbs/adb/adb-connect/int-connect-adb"
+  ],
+  "serviceGroupLinks": [],
+  "uuid": "301ac9a0-a82e-406d-b707-702fa2154727"
+}

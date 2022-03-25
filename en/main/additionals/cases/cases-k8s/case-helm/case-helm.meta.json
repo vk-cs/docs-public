@@ -1,0 +1,13 @@
+{
+  "title": "Cert-Manager + Helm в Kubernetes",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Cert-Manager + Helm в Kubernetes - VK Cloud Solutions",
+  "metaDescription": "Конфигурация оборудования Установленный и настроенный кластер Kubernetes.\nПри использовании Helm2 - установленный Tiller. Что такое Cert-manager Cert-manag",
+  "sectionTitle": "Cert-Manager + Helm в Kubernetes",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "931afbb1-a3dc-49b9-8be8-55492fbe0756"
+}

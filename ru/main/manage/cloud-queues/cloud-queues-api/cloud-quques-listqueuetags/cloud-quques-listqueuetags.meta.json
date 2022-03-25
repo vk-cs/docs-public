@@ -1,0 +1,13 @@
+{
+  "title": "ListQueueTags",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "ListQueueTags - VK Cloud Solutions",
+  "metaDescription": "Список всех тегов распределения затрат, добавленных в указанную очередь Amazon SQS.  Параметры запроса QueueUrl URL-адрес очереди.\nТип: Строка\nОбязательно:",
+  "sectionTitle": "ListQueueTags",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 13,
+  "uuid": "2948cc65-1eae-4a52-9aa0-63f4e0449f06"
+}
