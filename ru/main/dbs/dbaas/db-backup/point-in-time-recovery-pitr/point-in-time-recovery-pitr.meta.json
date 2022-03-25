@@ -1,0 +1,13 @@
+{
+  "title": "Point in Time Recovery (PITR)",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Point in Time Recovery (PITR) - VK Cloud Solutions",
+  "metaDescription": "Point-in-time-recovery (PITR) обеспечивает непрерывное резервное копирование данных таблицы PostgreSQL. Вы можете восстановить таблицу на определенный моме",
+  "sectionTitle": "Point in Time Recovery (PITR)",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "14165165-68a1-41ee-a430-675b4593cdb3"
+}

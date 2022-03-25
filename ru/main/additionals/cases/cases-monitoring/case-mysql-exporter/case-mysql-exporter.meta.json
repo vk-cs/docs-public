@@ -1,0 +1,13 @@
+{
+  "title": "Мониторинг баз данных: MySQL Exporter",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Мониторинг баз данных: MySQL Exporter - VK Cloud Solutions",
+  "metaDescription": "Конфигурация оборудования Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы c использованием следующего оборудования:  Prometheus",
+  "sectionTitle": "Мониторинг баз данных: MySQL Exporter",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "825f75d5-8383-4d78-9808-7578d872d63e"
+}

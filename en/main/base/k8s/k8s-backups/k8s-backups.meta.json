@@ -1,0 +1,13 @@
+{
+  "title": "Backing up with Velero",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Backing up with Velero - VK Cloud Solutions",
+  "metaDescription": "Using Velero, you can create a backup copy of a Kubernetes cluster to the VK Cloud Solutions cloud and deploy this copy to a new cluster. This operation is",
+  "sectionTitle": "Backing up with Velero",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5,
+  "uuid": "9e12acd2-4d24-4b59-8eb4-73a642a19312"
+}

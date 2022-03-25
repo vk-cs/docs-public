@@ -1,0 +1,13 @@
+{
+  "title": "RemovePermission",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "RemovePermission - VK Cloud Solutions",
+  "metaDescription": "Отменяет все разрешения в политике очереди, соответствующие указанному Label параметру. Параметры запроса метка Идентификация разрешения на удаление. Это м",
+  "sectionTitle": "RemovePermission",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 16,
+  "uuid": "dd63f37f-d7df-4ac1-8536-956346f4ffc3"
+}

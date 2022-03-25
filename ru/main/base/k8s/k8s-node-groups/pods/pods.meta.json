@@ -1,0 +1,13 @@
+{
+  "title": "Поды",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Поды - VK Cloud Solutions",
+  "metaDescription": "Описание Под является минимальной вычислительной единицей в терминологии Kubernetes.Под — группа из одного или нескольких контейнеров приложений, включающа",
+  "sectionTitle": "Поды",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "f8756c03-74b7-4ba5-ae5d-6da215a6dee7"
+}

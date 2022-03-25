@@ -1,0 +1,13 @@
+{
+  "title": "GetQueueAttributes",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "GetQueueAttributes - VK Cloud Solutions",
+  "metaDescription": "Запрос получает атрибуты для указанной очереди.  Параметры запроса AttributeName.N Список атрибутов, для которых нужно получить информацию.\nПоддерживаются",
+  "sectionTitle": "GetQueueAttributes",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 9,
+  "uuid": "4d3218cb-e74e-490a-bf3b-0518f0814b05"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Change VM type",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Change VM type - VK Cloud Solutions",
+  "metaDescription": "The type of virtual machine (number / type of CPU and the amount of RAM) can be changed within the configurations (flavors) available to the project. Note",
+  "sectionTitle": "Change VM type",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "13440b35-f80c-4631-a082-f4bd035dde05"
+}

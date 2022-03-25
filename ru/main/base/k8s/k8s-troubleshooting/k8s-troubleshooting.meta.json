@@ -1,0 +1,13 @@
+{
+  "title": "Устранение неисправностей",
+  "pageDescription": "Cloud Containers от VK Cloud Solutions — Kubernetes как облачный сервис. Сервис имеет сертификацию CNCF и совместим со стандартным Kubernetes API. Благодаря автоматическому масштабированию (autoscaling), приложения на Cloud Containers моментально получают дополнительные мощности в момент пиковых нагрузки и снижают потребление при её падении. Автомасштабирование позволяет экономить до 60% на вычислениях.",
+  "shortDescription": "Автоматическое масштабирование сервисов и приложений при нагрузках на базе Docker и Kubernetes",
+  "metaTitle": "Контейнеры - VK Cloud Solutions",
+  "metaDescription": "Cloud Containers от VK Cloud Solutions — Kubernetes как облачный сервис. Сервис имеет сертификацию CNCF и совместим со стандартным Kubernetes API. Благодаря автоматическ",
+  "sectionTitle": "Контейнеры",
+  "markdown": "Cloud Containers от VK Cloud Solutions — Kubernetes как облачный сервис. Сервис имеет сертификацию CNCF и совместим со стандартным Kubernetes API. Благодаря автоматическому масштабированию (autoscaling), приложения на Cloud Containers моментально получают дополнительные мощности в момент пиковых нагрузки и снижают потребление при её падении. Автомасштабирование позволяет экономить до 60% на вычислениях.",
+  "icon": "",
+  "weight": 9,
+  "infobarItems": null,
+  "uuid": "d2a829ca-72a4-4364-90ef-1c62d0ec734c"
+}

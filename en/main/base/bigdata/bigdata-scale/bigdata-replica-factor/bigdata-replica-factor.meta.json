@@ -1,0 +1,12 @@
+{
+  "title": "Настройка фактора репликации",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Настройка фактора репликации - VK Cloud Solutions",
+  "metaDescription": "По умолчанию кластера Hadoop и Spark в VK Cloud Solutions используют фактор репликации данных (dfs.replication) равным 1. Использование данного значен",
+  "sectionTitle": "Настройка фактора репликации",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "uuid": "1be7be97-27ad-4eb8-9143-dbcb5fe2f031"
+}

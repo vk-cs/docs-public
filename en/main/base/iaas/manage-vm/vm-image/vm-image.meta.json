@@ -1,0 +1,13 @@
+{
+  "title": "Creating an image from an instance disk",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Creating an image from an instance disk - VK Cloud Solutions",
+  "metaDescription": "An image is a file that contains a virtual disk with an operating system or other data already installed on it. Images are used to create virtual instances",
+  "sectionTitle": "Creating an image from an instance disk",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 8,
+  "uuid": "b83a76a9-0bbf-4b59-b7d5-fbbae69c760d"
+}

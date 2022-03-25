@@ -1,0 +1,13 @@
+{
+  "title": "SetQueueAttributes",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "SetQueueAttributes - VK Cloud Solutions",
+  "metaDescription": "Sets the value of one or more queue attributes. When you change queue attributes, this change can take up to 60 seconds before fighting",
+  "sectionTitle": "SetQueueAttributes",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 19,
+  "uuid": "bf63c316-6185-4c41-ad1a-fca4a3f00f1d"
+}

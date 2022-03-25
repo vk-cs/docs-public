@@ -1,0 +1,13 @@
+{
+  "title": "Image import and export",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Image import and export - VK Cloud Solutions",
+  "metaDescription": "Image import Note Currently, images in the vmdk, qcow2, raw, iso format are supported. It is possible to load an individual image of a virtual machine, cre",
+  "sectionTitle": "Image import and export",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "82c36518-fc4d-48ec-b471-e0faf6f9699d"
+}

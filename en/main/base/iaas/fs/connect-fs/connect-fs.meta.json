@@ -1,0 +1,13 @@
+{
+  "title": "Connecting file storage to VM",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Connecting file storage to VM - VK Cloud Solutions",
+  "metaDescription": "The way to connect File Storage to an instance depends on the operating system and the storage access protocol selected when it was created: NFS is a",
+  "sectionTitle": "Connecting file storage to VM",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "31674d3c-e25c-41d1-b9d0-370b15eb2160"
+}

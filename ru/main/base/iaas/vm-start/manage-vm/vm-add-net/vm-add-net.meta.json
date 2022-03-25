@@ -1,0 +1,13 @@
+{
+  "title": "Подключение сети к ВМ",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Подключение сети к ВМ - VK Cloud Solutions",
+  "metaDescription": "К виртуальным машинам возможно подключить несколько портов различных сетей. Порт - виртуальная сетевая карта инстанса, для которой настраиваются группы без",
+  "sectionTitle": "Подключение сети к ВМ",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "329d46c7-5634-4b4a-bdf1-8ae89de072b8"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Деплой приложений через API",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Деплой приложений через API - VK Cloud Solutions",
+  "metaDescription": "Развертывание приложения в Kubernetes (k8s) осуществляется с помощью утилиты kubectl. Полный синтаксис команд утилиты можно найти в официальной документаци",
+  "sectionTitle": "Деплой приложений через API",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "uuid": "b75e4120-3a1a-4a92-b1b9-3a21bce333cb"
+}

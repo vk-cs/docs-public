@@ -1,0 +1,13 @@
+{
+  "title": "Базы данных",
+  "pageDescription": "VK Cloud Solutions Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Postgres Pro, Greenplum. Базы доступны в single, master-slave и кластерных конфигурациях. Использование сервиса снимает с вас нагрузку по администрированию баз данных.",
+  "shortDescription": "Управляемые и масштабируемые облачные базы данных",
+  "metaTitle": "Базы данных - VK Cloud Solutions",
+  "metaDescription": "VK Cloud Solutions Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB,",
+  "sectionTitle": "Базы данных",
+  "markdown": "VK Cloud Solutions Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Postgres Pro, Greenplum. Базы доступны в single, master-slave и кластерных конфигурациях. Использование сервиса снимает с вас нагрузку по администрированию баз данных.",
+  "icon": "",
+  "weight": 7,
+  "infobarItems": null,
+  "uuid": "93dd09ce-09eb-4af0-807e-ea909d8c6588"
+}

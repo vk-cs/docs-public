@@ -1,0 +1,13 @@
+{
+  "title": "Connecting to Windows VM",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Connecting to Windows VM - VK Cloud Solutions",
+  "metaDescription": "After creating a virtual machine based on Microsoft Windows, you can connect to the instance remotely using RDP (Remote Desktop Protocol). For this, the fo",
+  "sectionTitle": "Connecting to Windows VM",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "0b885679-e0c3-486d-b89d-f8b0c7b6a0b1"
+}

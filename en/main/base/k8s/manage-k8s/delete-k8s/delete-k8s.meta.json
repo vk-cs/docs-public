@@ -1,0 +1,13 @@
+{
+  "title": "Deleting a cluster",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Deleting a cluster - VK Cloud Solutions",
+  "metaDescription": "Before deleting a cluster, you need to make sure that it is in an enabled state. Otherwise, the delete operation cannot be performed. In VK CS Panel To delet",
+  "sectionTitle": "Deleting a cluster",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "8350223b-cdec-44d3-8e3a-3a993b0668df"
+}

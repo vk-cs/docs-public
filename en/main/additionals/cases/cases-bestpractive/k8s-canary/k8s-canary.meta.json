@@ -1,0 +1,13 @@
+{
+  "title": "Настройка Canary Deployment Ingress",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Настройка Canary Deployment Ingress - VK Cloud Solutions",
+  "metaDescription": "Эта статья поможет вам развернуть кластер Kubernetes и настроить на нем Canary Deployment при помощи Nginx Ingress Annotations Canary Deployment — это спос",
+  "sectionTitle": "Настройка Canary Deployment Ingress",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "6f0a2aef-cf60-456d-92ec-d20dcf43c31d"
+}

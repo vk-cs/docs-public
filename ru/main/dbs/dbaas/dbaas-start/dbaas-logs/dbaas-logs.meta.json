@@ -1,0 +1,13 @@
+{
+  "title": "Получение логов Базы данных",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Получение логов Базы данных - VK Cloud Solutions",
+  "metaDescription": "Важно\nЛоги баз данных доступны только для БД, созданных после 1 декабря 2020 года. В настоящее время реализована возможность получения логов для следующих",
+  "sectionTitle": "Получение логов Базы данных",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 16,
+  "uuid": "1feb61b9-7f0c-45dc-80b5-b8be0d54ed8e"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Подключение к ВМ",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Подключение к ВМ - VK Cloud Solutions",
+  "metaDescription": "Способ подключения Файлового хранилища к инстансу зависит от операционной системы и протокола доступа к хранилищу, выбранного при его создании: NFS - это «",
+  "sectionTitle": "Подключение к ВМ",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "9c3f8cb3-c760-4edc-82b1-6d9054521593"
+}

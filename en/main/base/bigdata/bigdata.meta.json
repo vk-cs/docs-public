@@ -1,0 +1,13 @@
+{
+  "title": "Big Data",
+  "pageDescription": "VK Cloud Solutions Big Data are big data solutions based on Apache Hadoop, Apache Spark, ClickHouse, Storm and Kafka. You can choose a suitable pre-installed template or define your own configuration by installing the necessary components via the web interface. Integration with S3 object storage, virtual machines, Kubernetes clusters, GPU computing, cloud machine learning services is supported.",
+  "shortDescription": "Scalable PaaS big data analytics service powered by Hadoop, Spark and NiFi",
+  "metaTitle": "Big Data - VK Cloud Solutions",
+  "metaDescription": "VK Cloud Solutions Big Data are big data solutions based on Apache Hadoop, Apache Spark, ClickHouse, Storm and Kafka. You can choose a suitable pre-installed te",
+  "sectionTitle": "Big Data",
+  "markdown": "VK Cloud Solutions Big Data are big data solutions based on Apache Hadoop, Apache Spark, ClickHouse, Storm and Kafka. You can choose a suitable pre-installed template or define your own configuration by installing the necessary components via the web interface. Integration with S3 object storage, virtual machines, Kubernetes clusters, GPU computing, cloud machine learning services is supported.",
+  "icon": "",
+  "weight": 7,
+  "infobarItems": null,
+  "uuid": "d93b16d5-c976-4fc0-99ac-192ce784b348"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Чтение метрик",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Чтение метрик - VK Cloud Solutions",
+  "metaDescription": "VK CS Cloud Monitoring предоставляет API для получения значения метрик. Сейчас реализована поддержка подмножества языка PromQL для работы с метриками на осно",
+  "sectionTitle": "Чтение метрик",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "b8ec2888-8bcd-4f29-b426-2902f60606d2"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Настройка параметров Java Memory Heap",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Настройка параметров Java Memory Heap - VK Cloud Solutions",
+  "metaDescription": "Оптимальные параметры виртуальной машины Java подбираются автоматически при установке и настройке кластера, в зависимости от типа виртуальной машины. Если",
+  "sectionTitle": "Настройка параметров Java Memory Heap",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "9eeb4086-ba4c-4509-9d89-4f4c86fa93e6"
+}

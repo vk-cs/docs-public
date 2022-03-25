@@ -1,0 +1,13 @@
+{
+  "title": "Мониторинг баз данных: Redis Exporter",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Мониторинг баз данных: Redis Exporter - VK Cloud Solutions",
+  "metaDescription": "Конфигурация оборудования Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы c использованием следующего оборудования:  Prometheus",
+  "sectionTitle": "Мониторинг баз данных: Redis Exporter",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "ae597249-38bf-4b04-9344-e058f6f7b7ca"
+}

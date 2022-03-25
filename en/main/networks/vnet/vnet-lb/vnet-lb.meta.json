@@ -1,0 +1,13 @@
+{
+  "title": "Load balancers",
+  "pageDescription": "Information about the possibilities of distributing traffic among several network devices in order to optimize the use of resources, reduce the time for servicing requests, and ensure fault tolerance.",
+  "shortDescription": "Information about the possibilities of distributing traffic among several network devices in order to optimize the use of resources, reduce the time for servicing requests, and ensure fault tolerance.",
+  "metaTitle": "Load balancers - VK Cloud Solutions",
+  "metaDescription": "Information about the possibilities of distributing traffic among several network devices in order to optimize the use of resources, reduce the time for se",
+  "sectionTitle": "Load balancers",
+  "markdown": "Information about the possibilities of distributing traffic among several network devices in order to optimize the use of resources, reduce the time for servicing requests, and ensure fault tolerance.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "0211098f-0a9c-45df-b260-5cdeeabaa1a1"
+}

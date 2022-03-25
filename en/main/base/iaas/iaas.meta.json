@@ -1,0 +1,13 @@
+{
+  "title": "Cloud Compute",
+  "pageDescription": "VK Cloud Solutions Servers is a cloud computing service that allows you to manage virtual machines on the VK Cloud Solutions platform. Includes management of configurations of instances, disks, images, backups, allows you to create file storage.",
+  "shortDescription": "Cloud server, file and block storage, unlimited support for applications and services",
+  "metaTitle": "Cloud Compute - VK Cloud Solutions",
+  "metaDescription": "VK Cloud Solutions Servers is a cloud computing service that allows you to manage virtual machines on the VK Cloud Solutions platform. Includes management",
+  "sectionTitle": "Cloud Compute",
+  "markdown": "VK Cloud Solutions Servers is a cloud computing service that allows you to manage virtual machines on the VK Cloud Solutions platform. Includes management of configurations of instances, disks, images, backups, allows you to create file storage.",
+  "icon": "",
+  "weight": 13,
+  "infobarItems": null,
+  "uuid": "10d14d5d-951f-4ed0-ac2a-c3d706ab1a55"
+}

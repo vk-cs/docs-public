@@ -1,0 +1,13 @@
+{
+  "title": "Добавление объектов в бакет",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Добавление объектов в бакет - VK Cloud Solutions",
+  "metaDescription": "В созданный бакет можно загружать файлы, которые сохраняются как объект S3. Объекты состоят из данных файла и метаданных, описывающих объект. В бакете може",
+  "sectionTitle": "Добавление объектов в бакет",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "b540ddd0-a9e8-4c70-a3a0-226f07805cf9"
+}

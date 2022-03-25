@@ -1,0 +1,13 @@
+{
+  "title": "Создание виртуальной машины через Terraform",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Создание виртуальной машины через Terraform - VK Cloud Solutions",
+  "metaDescription": "Данная статья расскажет, как создать в VK CS виртуальную машину через Terraform. Предполагаем, что вы уже установили и подготовили Terraform по этой инструкц",
+  "sectionTitle": "Создание виртуальной машины через Terraform",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 8,
+  "uuid": "71df6b45-d31a-4d17-b611-2940d193934e"
+}

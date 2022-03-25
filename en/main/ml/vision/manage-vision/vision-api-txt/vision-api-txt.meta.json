@@ -1,0 +1,12 @@
+{
+  "title": "Text Recognition",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Text Recognition - VK Cloud Solutions",
+  "metaDescription": "This method allows you to recognize text in an image. The authorization data is passed in the request string: Parameter Value Type oauth_token string",
+  "sectionTitle": "Text Recognition",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "uuid": "9244167b-cfc1-4f28-bdd1-785533c65795"
+}

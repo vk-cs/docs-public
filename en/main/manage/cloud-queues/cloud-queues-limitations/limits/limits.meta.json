@@ -1,0 +1,13 @@
+{
+  "title": "Limits",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Limits - VK Cloud Solutions",
+  "metaDescription": "How long messages can be in the Cloud Queues message queue\n You can specify a value from 60 seconds as the storage period of a Cloud Queues message",
+  "sectionTitle": "Limits",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "e714f05b-6f9d-4342-aa85-43787af59de6"
+}

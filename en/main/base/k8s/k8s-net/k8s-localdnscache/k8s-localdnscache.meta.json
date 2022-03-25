@@ -1,0 +1,13 @@
+{
+  "title": "Installing Local DNS Cache",
+  "pageDescription": "Installing Local DNS Cache",
+  "shortDescription": "Installing Local DNS Cache",
+  "metaTitle": "Installing Local DNS Cache - VK Cloud Solutions",
+  "metaDescription": "Installing Local DNS Cache reduces the number of requests to CoreDNS and improve the stability of DNS name resolution.",
+  "sectionTitle": "Installing Local DNS Cache",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "d79731dc-c029-4c6a-8137-b3ab9d10c99f"
+}

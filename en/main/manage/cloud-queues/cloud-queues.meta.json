@@ -1,0 +1,13 @@
+{
+  "title": "Message Queue Service",
+  "pageDescription": "A fully managed message queue management service. Compatible with Amazon SQS API.",
+  "shortDescription": "A fully managed message queue management service. Compatible with Amazon SQS API",
+  "metaTitle": "Message Queue Service - VK Cloud Solutions",
+  "metaDescription": "A fully managed message queue management service. Compatible with Amazon SQS API.",
+  "sectionTitle": "Message Queue Service",
+  "markdown": "A fully managed message queue management service. Compatible with Amazon SQS API.",
+  "icon": "",
+  "weight": 5,
+  "infobarItems": null,
+  "uuid": "cbffa8cf-4f2f-434b-8041-ccd6668e1659"
+}

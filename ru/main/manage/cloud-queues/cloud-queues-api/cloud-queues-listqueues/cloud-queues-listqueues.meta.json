@@ -1,0 +1,13 @@
+{
+  "title": "ListQueues",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "ListQueues - VK Cloud Solutions",
+  "metaDescription": "Возвращает список ваших очередей в текущем регионе. Ответ включает не более 1000 результатов. Если вы укажете значение для необязательного QueueNamePrefix",
+  "sectionTitle": "ListQueues",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 12,
+  "uuid": "1d2c976b-f518-4883-9b86-8392b6b84784"
+}

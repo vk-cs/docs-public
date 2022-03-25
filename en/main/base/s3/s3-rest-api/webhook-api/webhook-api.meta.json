@@ -1,0 +1,13 @@
+{
+  "title": "Webhooks",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Webhooks - VK Cloud Solutions",
+  "metaDescription": "Webhooks for S3 is the ability to configure sending HTTP / S requests on events for a bucket using an API. For example, you can: configure processing and c",
+  "sectionTitle": "Webhooks",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 8,
+  "uuid": "f308615d-dbc7-41ba-beed-6b093d15b711"
+}
