@@ -32,6 +32,7 @@ deploy:
     variables: false
   trigger:
     project: infra/front/new-help
+    strategy: depend
   variables:
     VKCS_AUTO_DEPLOY_PROD_ENABLED: "true"
     VKCS_AUTO_DEPLOY_AMS_ENABLED: "true"
