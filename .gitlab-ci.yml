@@ -1,6 +1,6 @@
 include:
   - project: infra/common/ci-templates
-    ref: MCSAD-516
+    ref: master
     file: pipelines/frontend.yml
 
 variables:
