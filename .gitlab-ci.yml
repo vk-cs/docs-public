@@ -14,7 +14,7 @@ variables:
 Healthcheck links for branch:
   stage: deploy_stage
   needs:
-    - deploy:stage:branch
+    - "Deploy Branch"
   image: stage-registry.infra.devmail.ru/infra/front/new-help
   script:
     - cd /home/node/app
