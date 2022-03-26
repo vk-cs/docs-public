@@ -18,6 +18,7 @@ Healthcheck links for branch:
   image: stage-registry.infra.devmail.ru/infra/front/new-help
   script:
     - cd /home/node/app
+    - ln -sf $CI_PROJECT_DIR/docs docs
     - npm run fullHealthyLinks
   variables:
     base404CheckUrl: "https://$CI_COMMIT_REF_SLUG.ingress.infra.devmail.ru"
