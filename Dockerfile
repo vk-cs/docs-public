@@ -1,6 +1,7 @@
 ARG BASE_IMAGE_RELEASE=latest
 FROM stage-registry.infra.devmail.ru/infra/front/new-help:$BASE_IMAGE_RELEASE
 
+RUN rm -rf docs/*
 COPY en/ docs/en/
 COPY ru/ docs/ru/
 
