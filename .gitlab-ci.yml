@@ -14,11 +14,11 @@ variables:
 Healthcheck links for branch:
   stage: deploy_stage
   needs:
+    - "Build image"
     - "Deploy Branch"
-  image: stage-registry.infra.devmail.ru/infra/front/new-help
+  image: stage-registry.infra.devmail.ru/$CI_PROJECT_PATH:$IMAGE_TAG
   script:
     - cd /home/node/app
-    - ln -sf $CI_PROJECT_DIR/docs .
     - npm run fullHealthyLinks
   variables:
     base404CheckUrl: "https://$CI_COMMIT_REF_SLUG.ingress.infra.devmail.ru"
