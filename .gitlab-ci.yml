@@ -26,7 +26,7 @@ Healthcheck links for branch:
     - if: $CI_MERGE_REQUEST_ID
 
 Deploy to Stage and Prod:
-  stage: deploy_stage
+  stage: .post
   inherit:
     variables: false
   trigger:
