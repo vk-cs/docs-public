@@ -1,9 +1,12 @@
 ARG BASE_IMAGE_RELEASE=latest
 FROM stage-registry.infra.devmail.ru/infra/front/new-help:$BASE_IMAGE_RELEASE
 
+# remove saved in image symlink
 RUN unlink docs
+# copy new docs
 COPY docs/ docs/
 
+# rebuild
 RUN npm run test:lint \
     && npm run test:ts \
     && npm run preparation:full \
