@@ -7,4 +7,5 @@ COPY docs/ docs/
 RUN npm run test:lint \
     && npm run test:ts \
     && npm run preparation:full \
+    && npm run preparation:fullRedirectNetwork \
     && npm run build
