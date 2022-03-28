@@ -30,16 +30,18 @@ Push submodule update:
   stage: .post
   image: ${DOCKER_REGISTRY_EXTERNAL}/centos-7.9
   variables:
+    GIT_STRATEGY: none
     HELP_REPOSITORY: infra/front/new-help
   before_script:
     - git config --global user.email "$CI_PROJECT_NAME@corp.mail.ru"
     - git config --global user.name "$CI_PROJECT_NAME"
     - git config --global push.default current
   script:
-    - git clone --single-branch --recurse-submodules https://gitlab-ci-token:$CI_JOB_TOKEN@$CI_SERVER_HOST/$HELP_REPOSITORY.git
+    - git clone --single-branch --recurse-submodules https://gitlab-ci-token:$CI_JOB_TOKEN@$CI_SERVER_HOST/$HELP_REPOSITORY.git update
+    - cd update
     - git submodule update --remote
-    - git diff-index --quiet HEAD || git commit -m "Update private-docs $CI_PROJECT_URL/-/commit/$CI_COMMIT_SHA"
-    - git remote set-url origin "https://$CI_PROJECT_NAME:$NEW_HELP_ACCESS_TOKEN@$CI_SERVER_HOST/$HELP_REPOSITORY.git"
+    - git remote set-url origin "https://$CI_PROJECT_NAME:$NEW_HELP_ACCESS_TOKEN@$CI_SERVER_HOST/infra/front/new-help.git"
+    - git commit -m "Update private-docs $CI_PROJECT_URL/-/commit/$CI_COMMIT_SHA" -a
     - git push -o ci.skip
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
