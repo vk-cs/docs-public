@@ -36,9 +36,10 @@ Push submodule update:
     - git config --global user.name "$CI_PROJECT_NAME"
     - git config --global push.default simple
   script:
-    - git clone --recurse-submodules https://$CI_PROJECT_NAME:$NEW_HELP_ACCESS_TOKEN@$CI_SERVER_HOST/$HELP_REPOSITORY.git
+    - git clone --recurse-submodules https://gitlab-ci-token:$CI_JOB_TOKEN@$CI_SERVER_HOST/$HELP_REPOSITORY.git
     - git submodule update --remote
     - git diff-index --quiet HEAD || git commit -m "Update private-docs $CI_PROJECT_URL/-/commit/$CI_COMMIT_SHA"
+    - git remote set-url origin "https://$CI_PROJECT_NAME:$NEW_HELP_ACCESS_TOKEN@$CI_SERVER_HOST/$HELP_REPOSITORY.git"
     - git push -o ci.skip
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
