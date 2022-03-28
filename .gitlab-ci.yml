@@ -31,7 +31,7 @@ Push submodule update:
   stage: .post
   needs:
     - "Build image"
-  # use image from this build
+  # use image from this pipeline build (previous stage)
   image: ${DOCKER_REGISTRY_STAGE}/$CI_PROJECT_PATH:$IMAGE_TAG
   variables:
     GIT_STRATEGY: none
@@ -41,7 +41,7 @@ Push submodule update:
     - git config --global user.name "$CI_PROJECT_NAME-bot"
     - git config --global push.default current
   script:
-    - git clone --single-branch --recurse-submodules https://gitlab-ci-token:$CI_JOB_TOKEN@$CI_SERVER_HOST/$HELP_REPOSITORY.git update
+    - git clone --single-branch --recurse-submodules "https://gitlab-ci-token:$CI_JOB_TOKEN@$CI_SERVER_HOST/$HELP_REPOSITORY.git" update
     - cd update
       # use node_modules installed to image
     - ln -sf /home/node/app/node_modules .
