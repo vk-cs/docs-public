@@ -16,7 +16,7 @@ Healthcheck links for branch:
   needs:
     - "Build image"
     - "Deploy Branch"
-  image: stage-registry.infra.devmail.ru/$CI_PROJECT_PATH:$IMAGE_TAG
+  image: ${DOCKER_REGISTRY_STAGE}/$CI_PROJECT_PATH:$IMAGE_TAG
   script:
     - cd /home/node/app
     - npm run fullHealthyLinks
@@ -26,8 +26,27 @@ Healthcheck links for branch:
   rules:
     - if: $CI_MERGE_REQUEST_ID
 
+Push submodule update:
+  stage: .post
+  image: ${DOCKER_REGISTRY_EXTERNAL}/centos-7.9
+  variables:
+    HELP_REPOSITORY: infra/front/new-help
+  before_script:
+    - git config --global user.email "$CI_PROJECT_NAME@corp.mail.ru"
+    - git config --global user.name "$CI_PROJECT_NAME"
+    - git config --global push.default simple
+  script:
+    - git clone --recurse-submodules https://$CI_PROJECT_NAME:$NEW_HELP_ACCESS_TOKEN@$CI_SERVER_HOST/$HELP_REPOSITORY.git
+    - git submodule update --remote
+    - git diff-index --quiet HEAD || git commit -m "Update private-docs $CI_PROJECT_URL/-/commit/$CI_COMMIT_SHA"
+    - git push -o ci.skip
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
 Deploy to Stage and Prod:
   stage: .post
+  needs:
+    - "Push submodule update"
   inherit:
     variables: false
   trigger:
