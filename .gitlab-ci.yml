@@ -4,6 +4,7 @@ include:
     file: pipelines/frontend.yml
 
 variables:
+  SENTRYCLI_CDNURL: $GITHUB_RELEASES_URL/getsentry/sentry-cli/releases/download
   # pipeline parameters
   VKCS_DOCKERFILE_PATH: Dockerfile
   VKCS_BRANCH_PREVIEW_ENABLED: "true"
