@@ -41,7 +41,7 @@ Push submodule update:
     - cd update
     - git submodule update --remote
     - git remote set-url origin "https://$CI_PROJECT_NAME:$NEW_HELP_ACCESS_TOKEN@$CI_SERVER_HOST/infra/front/new-help.git"
-    - git commit -m "Submodule update $CI_PROJECT_URL/-/commit/$CI_COMMIT_SHA" -a
+    - git commit -m "Submodule update $CI_PROJECT_PATH@$CI_COMMIT_SHORT_SHA" -a
     - git push -o ci.skip
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
