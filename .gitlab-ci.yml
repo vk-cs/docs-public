@@ -33,14 +33,14 @@ Push submodule update:
     GIT_STRATEGY: none
     HELP_REPOSITORY: infra/front/new-help
   before_script:
-    - git config --global user.email "$CI_PROJECT_NAME@corp.mail.ru"
-    - git config --global user.name "$CI_PROJECT_NAME"
+    - git config --global user.email "$CI_PROJECT_NAME-bot@corp.mail.ru"
+    - git config --global user.name "$CI_PROJECT_NAME-bot"
     - git config --global push.default current
   script:
     - git clone --single-branch --recurse-submodules https://gitlab-ci-token:$CI_JOB_TOKEN@$CI_SERVER_HOST/$HELP_REPOSITORY.git update
     - cd update
     - git submodule update --remote
-    - git remote set-url origin "https://$CI_PROJECT_NAME:$NEW_HELP_ACCESS_TOKEN@$CI_SERVER_HOST/infra/front/new-help.git"
+    - git remote set-url origin "https://$CI_PROJECT_NAME-bot:$NEW_HELP_ACCESS_TOKEN@$CI_SERVER_HOST/infra/front/new-help.git"
     - git commit -m "Submodule update $CI_PROJECT_PATH@$CI_COMMIT_SHORT_SHA" -a
     - git push -o ci.skip
   rules:
