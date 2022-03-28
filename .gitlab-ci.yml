@@ -29,7 +29,9 @@ Healthcheck links for branch:
 
 Push submodule update:
   stage: .post
-  image: ${DOCKER_REGISTRY_EXTERNAL}/nodejs-14
+  needs:
+    - "Build image"
+  image: ${DOCKER_REGISTRY_STAGE}/$CI_PROJECT_PATH:$IMAGE_TAG
   variables:
     GIT_STRATEGY: none
     HELP_REPOSITORY: infra/front/new-help
@@ -40,7 +42,7 @@ Push submodule update:
   script:
     - git clone --single-branch --recurse-submodules https://gitlab-ci-token:$CI_JOB_TOKEN@$CI_SERVER_HOST/$HELP_REPOSITORY.git update
     - cd update
-    - if [ ! -d "node_modules" ]; then npm i --no-audit --prefer-offline; fi;
+    - ln -sf /home/node/app/node_modules .
     - git submodule update --remote
     - git remote set-url origin "https://$CI_PROJECT_NAME-bot:$NEW_HELP_ACCESS_TOKEN@$CI_SERVER_HOST/infra/front/new-help.git"
     - git add -A
@@ -48,13 +50,6 @@ Push submodule update:
     - git push -o ci.skip
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-  cache:
-    key:
-      files:
-        - update/package-lock.json
-        - update/package.json
-    paths:
-      - update/node_modules/
 
 Deploy to Stage and Prod:
   stage: .post
