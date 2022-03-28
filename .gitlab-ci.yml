@@ -31,6 +31,7 @@ Push submodule update:
   stage: .post
   needs:
     - "Build image"
+  # use image from this build
   image: ${DOCKER_REGISTRY_STAGE}/$CI_PROJECT_PATH:$IMAGE_TAG
   variables:
     GIT_STRATEGY: none
@@ -42,7 +43,9 @@ Push submodule update:
   script:
     - git clone --single-branch --recurse-submodules https://gitlab-ci-token:$CI_JOB_TOKEN@$CI_SERVER_HOST/$HELP_REPOSITORY.git update
     - cd update
+      # use node_modules installed to image
     - ln -sf /home/node/app/node_modules .
+      # update submodule to latest commit
     - git submodule update --remote
     - git remote set-url origin "https://$CI_PROJECT_NAME-bot:$NEW_HELP_ACCESS_TOKEN@$CI_SERVER_HOST/infra/front/new-help.git"
     - git add -A
