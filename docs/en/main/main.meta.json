@@ -1,10 +1,10 @@
 {
   "title": "Service Documentation",
   "faqLinks": [
-    "docs/en/main/dbs/adb/adb-limits/adb-limits-perf",
-    "docs/en/main/dbs/adb/adb-limits/adb-limits-perf",
-    "docs/en/main/dbs/adb/adb-info/arenadata",
-    "docs/en/main/dbs/adb/adb-connect/int-connect-adb"
+    "docs/en/main/additionals/start/get-started/registration",
+    "docs/en/main/additionals/start/user-account/account-billing",
+    "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+    "docs/en/main/additionals/cases"
   ],
   "serviceGroupLinks": [],
   "uuid": "301ac9a0-a82e-406d-b707-702fa2154727"
