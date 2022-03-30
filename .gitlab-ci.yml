@@ -47,6 +47,7 @@ Push submodule update:
     - ln -sf /home/node/app/node_modules .
     # update submodule to latest commit
     - git submodule update --remote
+    - npm run preparation:fullRedirectNetwork
     - git remote set-url origin "https://$CI_PROJECT_NAME-bot:$NEW_HELP_ACCESS_TOKEN@$CI_SERVER_HOST/infra/front/new-help.git"
     - git add -A
     - git diff-index --quiet HEAD || git commit -m "Submodule update $CI_PROJECT_PATH@$CI_COMMIT_SHORT_SHA"
