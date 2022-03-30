@@ -24,6 +24,7 @@ Healthcheck links for branch:
   variables:
     base404CheckUrl: "https://$CI_COMMIT_REF_SLUG.ingress.infra.devmail.ru"
     NODE_TLS_REJECT_UNAUTHORIZED: 0
+    GIT_STRATEGY: none
   rules:
     - if: $CI_MERGE_REQUEST_ID
 
@@ -50,7 +51,7 @@ Push submodule update:
     # generate uuids and create redirects
     - npm run preparation:fullRedirectNetwork
     # commit update to master of this repo
-    - cd private-docs
+    - cd docs-private
     - git remote set-url origin "https://$CI_PROJECT_NAME-bot:$DOCS_PRIVATE_ACCESS_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git"
     - git add -A
     - git diff-index --quiet HEAD || git commit -m "CI update by $CI_PROJECT_PATH@$CI_COMMIT_SHORT_SHA"
