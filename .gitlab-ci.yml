@@ -55,7 +55,7 @@ Push submodule update:
     - git remote set-url origin "https://$CI_PROJECT_NAME-bot:$DOCS_PRIVATE_ACCESS_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git"
     - git add -A
     - git diff-index --quiet HEAD || git commit -m "CI update by $CI_PROJECT_PATH@$CI_COMMIT_SHORT_SHA"
-    - git push -o ci.skip
+    - git push origin HEAD:$CI_DEFAULT_BRANCH -o ci.skip
     - cd -
     # commit update to master of new-help repo
     - git submodule update --remote
