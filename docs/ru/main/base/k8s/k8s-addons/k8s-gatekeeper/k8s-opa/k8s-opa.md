@@ -18,6 +18,6 @@ helm delete gatekeeper --namespace opa-gatekeeper
 ```
 Helm v3 не будет очищать установленные Gatekeeper CRD. Выполните следующие действия, чтобы удалить CRD:
 ```bash
-kubectl delete crdl gatekeeper.sh/system=yes
+kubectl delete crd -l gatekeeper.sh/system=yes
 ```
 Эта операция также удалит все изменения конфигурации, установленные пользователем, а еще политики ограничений и их шаблоны.
