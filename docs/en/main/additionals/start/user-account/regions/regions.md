@@ -26,7 +26,7 @@ Depending on the region, tariffs may change. To get price information, select th
 
 ### Billing
 
-The billing page is one for all regions. You can learn more about the Billing section in [Billing] (https://mcs.mail.ru/docs/ru/additionals/start/user-account/account-billing).
+The billing page is one for all regions. You can learn more about the Billing section in [Billing] (https://mcs.mail.ru/docs/ru/main/additionals/billing). 
 
 ### quotas
 
