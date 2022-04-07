@@ -36,7 +36,7 @@ Push submodule update:
   image: ${DOCKER_REGISTRY_STAGE}/$CI_PROJECT_PATH:$IMAGE_TAG
   variables:
     GIT_STRATEGY: none
-    HELP_REPOSITORY: infra/front/new-help
+    HELP_REPOSITORY: infra/front/services/new-help
   before_script:
     - git config --global user.email "$CI_PROJECT_NAME-bot@corp.mail.ru"
     - git config --global user.name "$CI_PROJECT_NAME-bot"
@@ -73,7 +73,7 @@ Deploy to Stage and Prod:
   inherit:
     variables: false
   trigger:
-    project: infra/front/new-help
+    project: infra/front/services/new-help
     strategy: depend
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
