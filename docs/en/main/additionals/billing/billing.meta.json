@@ -8,5 +8,6 @@
   "markdown": "A set of tools for accounting for resource usage, generating reports, interacting with payment systems and obtaining financial documents on the VK Cloud Solutions platform.",
   "icon": "",
   "weight": 16,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "3434e2b1-217e-4b66-9d2e-53c6dd1f5f67"
 }
