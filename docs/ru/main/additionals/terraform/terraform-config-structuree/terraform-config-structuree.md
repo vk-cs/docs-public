@@ -2,7 +2,8 @@
 
 Синтаксис языка Terraform состоит из нескольких базовых элементов:
 
-``` bash
+```
+bash
 resource "mcs_kubernetes_cluster" "mycluster"
 
 { name = "terracluster" }
@@ -20,12 +21,19 @@ resource "mcs_kubernetes_cluster" "mycluster"
 Обычно в конфигурации используются:
 
 ```terraform и required_providers``` - необходимые для работы Terraform провайдеры. Настройка необходимых провайдеров описана в этой [статье](статья Настройка провайдера terraform для VK CS и OpenStack).
+
 ```resource "resource_type" "resource_rame" {}``` - описывает создаваемый [ресурс](https://www.terraform.io/language/resources/syntax), например: сеть, подсеть, кластер Kubernetes или кластер базы данных.
+
 ```data "data_type" "data_name" ```- позволяет использовать [данные](https://www.terraform.io/language/data-sources), указанные вне конфигурации Terraform, которые существуют в облаке или локально. Например: флейвор ВМ, шаблон/версия кластера и тд.
+
 ```variable "image_id" {}``` - [входные переменные](https://www.terraform.io/language/values/variables). Используются для вынесения параметров создаваемых ресурсов вне основной конфигурации.
+
 ```output "instance_ip_addr" {}``` - [выходные переменные](https://www.terraform.io/language/values/outputs). Выводят данные в коммандную строку.
+
 Для определения последовательности создания ресурсов и их зависимостей используется блок *depends_on*, в котором указывается ресурс от которого зависит создаваемый ресурс.
-``` bash
+
+```
+bash
 depends_on = [
 mcs_kubernetes_cluster.k8s-cluster,
 ]
