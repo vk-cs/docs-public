@@ -3,18 +3,18 @@ Payment of resources — crediting funds to the main or bonus account.
 The ways to top up your account depend on your legal status:
 
 <tabs>
-<list of tables>
+<tablist>
 <tab>Individuals</tab>
 <tab>Legal entities</tab>
-</list of tables>
-<tab bar>
+</tablist>
+<tabpanel>
 
 - By bank card
 - Electronic money (SberPay, Qiwi, ЮMoney)
 - Via phone
 
-</tab bar>
-<tab bar>
+</tabpanel>
+<tabpanel>
 
 - By bank card
 - By bank transfer
@@ -25,7 +25,7 @@ Funds replenished with a bank card do not get into the closing documents after t
 
 </warn>
 
-</tab bar>
+</tabpanel>
 </tabs>
 
-About how to top up your account, read [here](https://mcs.mail.ru/docs/ru/additionals/billing/operations/payment).
+About how to top up your account, read [here](https://mcs.mail.en/docs/en/additionals/billing/operations/payment).
