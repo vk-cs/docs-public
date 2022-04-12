@@ -20,7 +20,7 @@ To top up your balance:
 2. Select the payment method. You can top up your account using many popular payment systems - bank cards, SberPay, Qiwi, YooMoney, from a phone number.
 3. Make the payment using your preferred payment method. 
 
-Payment operations are carried out with the support of the [Money.<url>](https://money.mail.ru/oferta/payfast).
+Payment operations are carried out with the support of the [Деньги.Мэйл.Ру](https://money.mail.ru/oferta/payfast).
 
 The payment takes place in real time and is credited within 10 minutes.
 
