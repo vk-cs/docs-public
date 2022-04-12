@@ -26,6 +26,7 @@ The UPD form contains all the details of the invoice set out in clauses 5, 5.1, 
 The UPD can be obtained in one of the following ways:
 
 ### Document Management (EDO)
+
 Electronic document management is the main way of exchanging electronic documents in VK CS, carried out through telecommunication communication channels (TCS) of the EDO operator.
 
 An electronic document is a file certified with an electronic signature. It does not need to be printed out, since it is a legally significant original in electronic form.
@@ -53,13 +54,13 @@ When working with another operator, you need to configure roaming yourself by sp
 
 Paper originals of documents are sent by Russian Post after the 15th day following the reporting period of the month.
 
-The documents are sent after the request to [technical support](https://mcs.mail.ru/docs/ru/contacts ) and to the address of the recipients, in whose projects the details of the legal address are indicated.
+The documents are sent after the request to [technical support](https://mcs.mail.ru/docs/ru/contacts) and to the address of the recipients, in whose projects the details of the legal address are indicated.
 
 The reconciliation report is provided individually upon request to technical support. The application should specify the details of the organization, the project, as well as the reporting period of the required act.
 
 <warn>
 
-If for some reason it was not possible to receive the document through the EDO or the Russian Post, you can request a copy of the UPD in *.pdf format by contacting [technical support] (https://mcs.mail.ru/docs/ru/contacts ).
+If for some reason it was not possible to receive the document through the EDO or the Russian Post, you can request a copy of the UPD in *.pdf format by contacting [technical support](https://mcs.mail.ru/docs/ru/contacts).
 
 The request should specify the name and details of the organization, the project and the reporting period of the closing document.
 
