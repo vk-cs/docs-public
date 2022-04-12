@@ -13,7 +13,7 @@ To get a refund, you need to contact [technical support](https://mcs.mail.ru/doc
 * Details for the refund: the first 6 digits and the last 4 digits of the bank card;
 * A link to the received electronic receipt or its screenshot.
 
-Read more about the refund [here](https://mcs.mail.ru/docs/ru/additionals/billing/operations/refund).
+Read more about the refund [here](https://mcs.mail.ru/docs/en/additionals/billing/operations/refund).
 
 ### How do I get the accounting documents after paying the invoice?
 <tabs>
