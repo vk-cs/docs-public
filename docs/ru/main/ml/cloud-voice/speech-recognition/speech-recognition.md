@@ -2,10 +2,11 @@
 - распознавание аудиофайлов;
 - распознавание потокового аудио.
 ## Распознавание аудиофайлов
-Для того чтобы распознать речь из аудиофайла, отправьте аудиофайл в теле POST запроса к [https://voice.mcs.mail.ru/asr](https://voice.mcs.mail.ru/asr), указав правильный Content-Type в заголовке. 
+
+Для того чтобы распознать речь из аудиофайла, отправьте аудиофайл в теле POST запроса к [https://voice.mcs.mail.ru/asr](https://voice.mcs.mail.ru/asr), указав правильный `Content-Type` в заголовке. 
 
 Пример запроса:
-```
+```bash
 curl -L --request POST 'https://voice.mcs.mail.ru/asr' \
 --header 'Content-Type: audio/ogg; codecs=opus' \
 --header 'Authorization: Bearer xxxxxxxxxx'  \
@@ -13,7 +14,7 @@ curl -L --request POST 'https://voice.mcs.mail.ru/asr' \
 ```
 
 Пример ответа:
-```
+```json
 {
   "qid": "feee44764aef4d658033c9d5c7051835",
   "result": {
@@ -44,109 +45,50 @@ curl -L --request POST 'https://voice.mcs.mail.ru/asr' \
 ```
 ### Поддерживаемые форматы аудио
 
-<table class="fr-table-border-0" style="width: 100%;"><tbody><tr><td style="width: 33.3333%; background-color: rgb(209, 213, 216); text-align: center; vertical-align: center;"><p id="isPasted">Контейнер</p></td><td style="width: 33.3333%; background-color: rgb(209, 213, 216); text-align: center; vertical-align: center;">Кодек</td><td style="width: 33.3333%; background-color: rgb(209, 213, 216); text-align: center; vertical-align: center;"><p id="isPasted">Content-type</p></td></tr><tr><td style="width: 33.3333%; text-align: center;">WAV</td><td style="width: 33.3333%; text-align: center;">—</td><td style="width: 33.3333%; text-align: center;"><p id="isPasted">audio/wave</p></td></tr><tr><td style="width: 33.3333%; text-align: center;">OGG</td><td style="width: 33.3333%; text-align: center;">Opus</td><td style="width: 33.3333%; text-align: center;">audio/ogg; codecs=opus</td></tr></tbody></table>
+| Контейнер | Кодек | Content-type |
+| --- | --- | --- |
+| WAV | — | audio/wave |
+| OGG | Opus | audio/ogg; codecs=opus |
 
 ### Ограничения
 
-<table class="fr-table-border-0" style="width: 100%;">
-   <tbody>
-      <tr>
-         <td style="width: 50%; background-color: rgb(209, 213, 216); text-align: center;">Ограничение<br></td>
-         <td style="width: 50%; text-align: center; background-color: rgb(209, 213, 216);">Значение<br></td>
-      </tr>
-      <tr>
-         <td style="width: 50%; text-align: center;">
-            <p id="isPasted">Максимальный размер аудио файла</p>
-         </td>
-         <td style="width: 50%; text-align: center;">
-            <p id="isPasted">20 Мб</p>
-            <br>
-         </td>
-      </tr>
-      <tr>
-         <td style="width: 50%; text-align: center;">
-            <p id="isPasted">Максимальная длительность аудио</p>
-         </td>
-         <td style="width: 50%; text-align: center;">
-            <p id="isPasted">5 мин</p>
-            <br>
-         </td>
-      </tr>
-      <tr>
-         <td style="width: 50%; text-align: center;">
-            <p id="isPasted">Максимальное количество каналов</p>
-         </td>
-         <td style="width: 50%; text-align: center;">1<br></td>
-      </tr>
-   </tbody>
-</table>
+| Ограничение | Значение |
+| --- | --- |
+| Максимальный размер аудио файла | 20 Мб |
+| Максимальная длительность аудио | 5 мин |
+| Максимальное количество каналов | 1 |
+
 
 ### Коды ошибок
 
-<table class="fr-table-border-0" style="width: 100%;">
-   <tbody>
-      <tr>
-         <td style="width: 33.33%; background-color: rgb(209, 213, 216); text-align: center;">Код</td>
-         <td style="width: 33.33%; background-color: rgb(209, 213, 216); text-align: center;">Статус</td>
-         <td style="width: 33.33%; background-color: rgb(209, 213, 216); text-align: center;">Описание</td>
-      </tr>
-      <tr>
-         <td style="width: 33.33%; text-align: center;">4009</td>
-         <td style="width: 33.33%; text-align: center;">400</td>
-         <td style="width: 33.33%; text-align: center;">Слишком большой размер аудио</td>
-      </tr>
-      <tr>
-         <td style="width: 33.33%; text-align: center;">4033</td>
-         <td style="width: 33.33%; text-align: center;">400</td>
-         <td style="width: 33.33%; text-align: center;">Неизвестный формат аудио</td>
-      </tr>
-      <tr>
-         <td style="width: 33.33%; text-align: center;">4034</td>
-         <td style="width: 33.33%; text-align: center;">400</td>
-         <td style="width: 33.33%; text-align: center;">Аудио повреждено или имеет неожиданный формат</td>
-      </tr>
-      <tr>
-         <td style="width: 33.33%; text-align: center;">4043</td>
-         <td style="width: 33.33%; text-align: center;">400</td>
-         <td style="width: 33.33%; text-align: center;">Слишком длинное аудио</td>
-      </tr>
-      <tr>
-         <td style="width: 33.33%; text-align: center;">4044</td>
-         <td style="width: 33.33%; text-align: center;">400</td>
-         <td style="width: 33.33%; text-align: center;">Неподдерживаемое количество каналов аудио</td>
-      </tr>
-      <tr>
-         <td style="width: 33.33%; text-align: center;">4045</td>
-         <td style="width: 33.33%; text-align: center;">400</td>
-         <td style="width: 33.33%; text-align: center;">Неподдерживаемая частота дискретизации аудио</td>
-      </tr>
-      <tr>
-         <td style="width: 33.33%; text-align: center;">4048</td>
-         <td style="width: 33.33%; text-align: center;">400</td>
-         <td style="width: 33.33%; text-align: center;">Невалидный токен</td>
-      </tr>
-      <tr>
-         <td style="width: 33.33%; text-align: center;">4049</td>
-         <td style="width: 33.33%; text-align: center;">400</td>
-         <td style="width: 33.33%; text-align: center;">Неактивный проект VK CS</td>
-      </tr>
-   </tbody>
-</table>
+| Код | Статус | Описание |
+| --- | --- | --- |
+| 4009 | 400 | Слишком большой размер аудио |
+| 4033 | 400 | Неизвестный формат аудио |
+| 4034 | 400 | Аудио повреждено или имеет неожиданный формат |
+| 4043 | 400 | Слишком длинное аудио |
+| 4044 | 400 | Неподдерживаемое количество каналов аудио |
+| 4045 | 400 | Неподдерживаемая частота дискретизации аудио |
+| 4048 | 400 | Невалидный токен |
+| 4049 | 400 | Неактивный проект VK CS |
+
 
 ## Распознавание потокового аудио
+
 Чтобы распознать чанк (маленький кусочек речи), нужно отправить запрос на создание задачи. После этого появится возможность отправлять чанки и получать конечный результат.
 
 ### Запрос на создание задачи
-Для того, чтобы создать задачу, достаточно отправить POST запрос на https://voice.mcs.mail.ru/asr_stream/create_task с заголовком авторизации с access_token, в ответ придет: task_id, task_token.
+
+Для того, чтобы создать задачу, достаточно отправить POST запрос на https://voice.mcs.mail.ru/asr_stream/create_task с заголовком авторизации с `access_token`, в ответ придет `task_id`, `task_token`.
 
 Пример запроса:
-```
+```bash
 curl --request POST \
   --url https://voice.mcs.mail.ru/asr_stream/create_task \
   --header 'Authorization: Bearer access_tokenxxxxxxxx'
 ```
 Пример ответа:
-```
+```json
 {
   "qid": "61b5cf067c494b4a9a0b87a3c43e37ef",
   "result": {
@@ -156,11 +98,17 @@ curl --request POST \
 }
 ```
 ### Запрос на отправку чанка
-Чтобы отправить чанк, достаточно отправить POST запрос на https://voice.mcs.mail.ru/asr_stream/add_chunk, передав в заголовке Authorization- task_token. В GET параметрах передать task_id и chunk_num (нумерация начинается с 1), а в теле запроса — чанк, указав корректный Content-Type в заголовке. 
-В ответе придет результат распознавания отправленных на данный момент чанков.
+
+Чтобы отправить чанк, достаточно:
+- отправить POST запрос на https://voice.mcs.mail.ru/asr_stream/add_chunk, передав в заголовке `Authorization- task_token`;
+- в GET параметрах передать `task_id` и `chunk_num` (нумерация начинается с 1);
+- указать корректный `Content-Type` в заголовке запроса.
+- в теле запроса передается чанк, который представляет собой массив байт в формате *wav* или *ogg*.  
+
+В ответе придет результат распознавания чанков.
 
 Пример запроса:
-```
+```bash
 curl --request POST \
   --url 'https://voice.mcs.mail.ru/asr_stream/add_chunk?task_id=xxxxx&chunk_num=2' \
   --header 'Authorization: Bearer task_tokenxxxxxxxx' \
@@ -168,7 +116,7 @@ curl --request POST \
   --data 'xxxxxxxxxx'
 ```
 Пример ответа:
-```
+```json
 {
   "qid": "4d44cb0eb81f4e7f84a7997ec4f2f3c4",
   "result": {
@@ -177,88 +125,44 @@ curl --request POST \
   }
 }
 ```
->**Важно**
->Интервал между отправкой чанков не должен превышать 5 секунд, после этого задача переходит в статус *done* и продолжать отправлять чанки будет нельзя. Так же невозможно отправлять следующий чанк, не дожидаясь результатов обработки предыдущего. 
+<warn>
+
+Интервал между отправкой чанков не должен превышать 5 секунд, после этого задача переходит в статус *done* и продолжать отправлять чанки будет нельзя. 
+
+Также невозможно отправлять следующий чанк, не дожидаясь результатов обработки предыдущего. 
+
+</warn>
 
 #### Поддерживаемые форматы аудио
-<table style="width: 100%;">
-	<tbody>
-		<tr>
-			<td style="width: 33.3333%; background-color: rgb(239, 239, 239); text-align: center;">Контейнер</td>
-			<td style="width: 33.3333%; background-color: rgb(239, 239, 239); text-align: center;">Кодек</td>
-			<td style="width: 33.3333%; background-color: rgb(239, 239, 239); text-align: center;">Content-Type
-				<br>
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 33.3333%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">WAV</span>
-				<br>
-			</td>
-			<td style="width: 33.3333%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">&mdash;</span>
-				<br>
-			</td>
-			<td style="width: 33.3333%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">audio/wave</span>
-				<br>
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 33.3333%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">OGG</span>
-				<br>
-			</td>
-			<td style="width: 33.3333%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Opus</span>
-				<br>
-			</td>
-			<td style="width: 33.3333%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">audio/ogg; codecs=opus</span>
-				<br>
-			</td>
-		</tr>
-	</tbody>
-</table>
+
+| Контейнер | Кодек | Content-Type |
+| --- | --- | --- |
+| WAV | — | audio/wave |
+| OGG | Opus | audio/ogg; codecs=opus |
 
 ## Ограничения
-<table style="width: 100%;">
-	<tbody>
-		<tr>
-			<td style="width: 50%; text-align: center; background-color: rgb(239, 239, 239);">Ограничение</td>
-			<td style="width: 50%; text-align: center; background-color: rgb(239, 239, 239);">Значение</td>
-		</tr>
-		<tr>
-			<td style="width: 50.0000%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Максимальный размер аудио файла</span>
-				<br>
-			</td>
-			<td style="width: 50.0000%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">32100 Б</span>
-				<br>
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 50.0000%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Максимальная длительность аудио</span>
-				<br>
-			</td>
-			<td style="width: 50.0000%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">1 с</span>
-				<br>
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 50.0000%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Максимальное количество каналов</span>
-				<br>
-			</td>
-			<td style="width: 50.0000%;">1</td>
-		</tr>
-	</tbody>
-</table>
+
+| Ограничение | Значение |
+| --- | --- |
+| Максимальный размер чанка | 32100 Б |
+| Максимальная длительность чанка | 1 с |
+| Максимальное количество каналов | 1 |
+
 
 ### Запрос на получение конечного результата задачи
-В любой момент после отправки чанков можно получить результат, для этого необходимо отправить GET запрос на https://voice.mcs.mail.ru/asr_stream/get_result, передав в заголовке Authorization- task_token, в GET параметрах — task_id. 
+
+В любой момент после отправки чанков можно получить результат, для этого необходимо отправить GET запрос на https://voice.mcs.mail.ru/asr_stream/get_result, передав в заголовке `Authorization- task_token`, в GET параметрах — `task_id`. 
+
 В ответе придет результат распознавания с текущим статусом задачи.
 
 Пример запроса:
-```
+```bash
 curl --request GET \
   --url 'https://voice.mcs.mail.ru/asr_stream/get_result?task_id=xxxxx' \
   --header 'Authorization: Bearer task_tokenxxxxxxxx' \
 ```
 Пример ответа:
-```
+```json
 {
   "qid": "517e5ba9f4a9465c9d73778bedac0808",
   "result": {

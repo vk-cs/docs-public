@@ -18,75 +18,22 @@ curl -L --request POST \
 ## Дополнительные параметры
 
 В POST и GET-запросах допускаются следующие параметры:
-<table style="width: 100%;">
-	<tbody>
-		<tr>
-			<td style="width: 33.3333%; background-color: rgb(239, 239, 239); text-align: center;">Параметр</td>
-			<td style="width: 33.3333%; background-color: rgb(239, 239, 239); text-align: center;">Описание</td>
-			<td style="width: 33.3333%; background-color: rgb(239, 239, 239); text-align: center;">Допустимые значения</td>
-		</tr>
-		<tr>
-			<td style="width: 33.3333%;">model_name
-				<br>
-			</td>
-			<td style="width: 33.3333%;">Название модели голоса</td>
-			<td style="width: 33.3333%;">
-				<p id="isPasted">- katherine (или katherine-hifigan) — по умолчанию</p>
-				<p>- maria (или maria-serious)</p>
-				<p>- pavel (или pavel-hifigan)</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 33.3333%;">encoder
-				<br>
-			</td>
-			<td style="width: 33.3333%;">Тип энкодера</td>
-			<td style="width: 33.3333%;">
-				<p id="isPasted">- pcm — по умолчанию</p>
-				<p>- mp3</p>
-				<p>- opus</p>
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 33.3333%;">tempo
-				<br>
-			</td>
-			<td style="width: 33.3333%;">Скорость речи</td>
-			<td style="width: 33.3333%;">от 0.75 до 1.75
-				<br>
-			</td>
-		</tr>
-	</tbody>
-</table>
+
+| Параметр | Описание | Допустимые значения |
+| --- | --- | --- |
+| model_name | Название модели голоса | katherine (или katherine-hifigan) — по умолчанию; maria (или maria-serious); pavel (или pavel-hifigan) |
+| encoder | Тип энкодера | pcm — по умолчанию; mp3; opus |
+| tempo | Скорость речи | от 0.75 до 1.75 |
 
 В обоих случаях в ответе будет аудиопоток, формат которого указан в Content-Type.
 
 ## Коды ошибок
 
-<table class="fr-table-border-0" style="width: 100%;">
-	<tbody>
-		<tr>
-			<td style="width: 33.33%; background-color: rgb(239, 239, 239); text-align: center;">Код</td>
-			<td style="width: 33.33%; background-color: rgb(239, 239, 239); text-align: center;">Статус</td>
-			<td style="width: 33.33%; background-color: rgb(239, 239, 239); text-align: center;">Описание</td>
-		</tr>
-		<tr>
-			<td style="width: 33.33%; text-align: center;">4048</td>
-			<td style="width: 33.33%; text-align: center;">400</td>
-			<td style="width: 33.33%; text-align: center;">Некорректный токен</td>
-		</tr>
-		<tr>
-			<td style="width: 33.33%; text-align: center;">4049</td>
-			<td style="width: 33.33%; text-align: center;">400</td>
-			<td style="width: 33.33%; text-align: center;">Неактивный проект VK CS</td>
-		</tr>
-		<tr>
-			<td style="width: 33.33%; text-align: center;">4051</td>
-			<td style="width: 33.33%; text-align: center;">400</td>
-			<td style="width: 33.33%; text-align: center;">Некорректный формат текста</td>
-		</tr>
-	</tbody>
-</table>
+| Код | Статус | Описание |
+| --- | --- | --- |
+| 4048 | 400 | Некорректный токен |
+| 4049 | 400 | Неактивный проект VK CS |
+| 4051 | 14001 | Некорректный формат текста |
 
 ### Смотрите также
 
