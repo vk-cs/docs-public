@@ -1,12 +1,13 @@
 {
-    "title": "Service cost",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Service cost - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Service cost",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
+  "title": "Service cost",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Service cost - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Service cost",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "5183fc57-8c72-43dc-bea0-a9d75537aa45"
 }
