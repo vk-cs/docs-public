@@ -1,12 +1,13 @@
 {
-    "title": "Создание кластера в Terraform",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Создание кластера в Terraform - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Создание кластера в Terraform",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "Создание кластера в Terraform",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Создание кластера в Terraform - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Создание кластера в Terraform",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "6e16ec95-2a52-4036-9b81-0ad45b38e3fb"
+}
