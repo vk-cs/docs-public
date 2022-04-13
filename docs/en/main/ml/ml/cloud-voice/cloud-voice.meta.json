@@ -8,5 +8,6 @@
   "markdown": "Cloud Voice - the service contains and synthesizes speech based on the technologies of Marusya's voice assistant. The service provides speech recognition from audio files and streaming audio, as well as speech generation from text with voice control of your choice.",
   "icon": "",
   "weight": 17,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "6d2017d0-06e7-4f61-a11a-43f1faca036f"
 }
