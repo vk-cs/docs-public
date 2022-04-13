@@ -1,0 +1,19 @@
+{
+    "meta": "Работа с сетями",
+    "groups": [
+        {
+            "title": "Информация",
+            "links": [
+                "docs/ru/main/base/iaas/vm-images/custom-image",
+                "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+            ]
+        },
+        {
+            "title": "Быстрый старт",
+            "links": [
+                "docs/ru/main/base/iaas/fs",
+                "docs/ru/main/additionals/mp"
+            ]
+        }
+    ]
+}
