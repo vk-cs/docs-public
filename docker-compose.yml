@@ -5,6 +5,7 @@ services:
     image: stage-registry.infra.devmail.ru/infra/front/services/new-help
     volumes:
       - ./docs:/home/node/app/docs
+      - ./externals:/home/node/app/externals
     ports:
       - "3000:3000"
     command: ["npm", "run", "dev"]
