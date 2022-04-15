@@ -1,10 +1,10 @@
 {
-  "title": "Manage network",
+  "title": "Network",
   "pageDescription": "Management of high-load services is possible only with proper configuration of network communication and load balancing of containers.",
   "shortDescription": "Management of high-load services is possible only with proper configuration of network communication and load balancing of containers.",
-  "metaTitle": "Manage network - VK Cloud Solutions",
+  "metaTitle": "Network - VK Cloud Solutions",
   "metaDescription": "Management of high-load services is possible only with proper configuration of network communication and load balancing of containers.",
-  "sectionTitle": "Manage network",
+  "sectionTitle": "Network",
   "markdown": "Management of high-load services is possible only with proper configuration of network communication and load balancing of containers.",
   "icon": "",
   "infobarItems": null,
