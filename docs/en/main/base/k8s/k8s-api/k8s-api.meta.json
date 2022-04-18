@@ -1,10 +1,10 @@
 {
-  "title": "API",
+  "title": "Terraform",
   "pageDescription": "Using the Kubernetes service management software on the VK CS platform significantly reduces the time it takes to process and execute application deployment or uninstallation operations.",
   "shortDescription": "Using the Kubernetes service management software on the VK CS platform significantly reduces the time it takes to process and execute application deployment or uninstallation operations.",
-  "metaTitle": "API - VK Cloud Solutions",
+  "metaTitle": "Terraform - VK Cloud Solutions",
   "metaDescription": "Using the Kubernetes service management software on the VK CS platform significantly reduces the time it takes to process and execute application deployment",
-  "sectionTitle": "API",
+  "sectionTitle": "Terraform",
   "markdown": "Using the Kubernetes service management software on the VK CS platform significantly reduces the time it takes to process and execute application deployment or uninstallation operations.",
   "icon": "",
   "infobarItems": null,
