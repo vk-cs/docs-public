@@ -4,7 +4,7 @@
   "shortDescription": "Terraform - open-source программное обеспечение Infrastructure as code (IaC) или «инфраструктура как код», созданное HashiCorp. Оно позволяет пользователям определять и предоставлять инфраструктуру центра обработки данных, используя декларативный язык конфигурации, известный как язык конфигурации HashiCorp, или, опционально, JSON.",
   "metaTitle": "Terraform - VK Cloud Solutions",
   "metaDescription": "Terraform - open-source программное обеспечение Infrastructure as code (IaC) или «инфраструктура как код», созданное HashiCorp. Оно позволяет пользователям определять и предоставлять инфраструктуру центра обработки данных, используя декларативный язык конфигурации, известный как язык конфигурации HashiCorp, или, опционально, JSON.",
-  "sectionTitle": "",
+  "sectionTitle": "Terraform",
   "markdown": "",
   "icon": "",
   "weight": 5,
