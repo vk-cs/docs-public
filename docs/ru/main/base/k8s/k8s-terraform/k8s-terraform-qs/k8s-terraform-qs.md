@@ -1,1 +1,0 @@
-Детальную инструкцию по провайдеру VK CS для Terraform читайте [здесь](https://registry.terraform.io/providers/MailRuCloudSolutions/mcs/latest/docs).
