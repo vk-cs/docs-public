@@ -32,8 +32,7 @@ resource "mcs_kubernetes_cluster" "mycluster"
 
 Для определения последовательности создания ресурсов и их зависимостей используется блок *depends_on*, в котором указывается ресурс от которого зависит создаваемый ресурс.
 
-```
-bash
+```bash
 depends_on = [
 mcs_kubernetes_cluster.k8s-cluster,
 ]
