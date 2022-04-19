@@ -7,7 +7,7 @@
 
 Рассмотрим следующий кластер, управляемый OpenStack Provider:
 
-```
+```bash
 resource "openstack_containerinfra_cluster_v1" "cluster_1" {
 name                 = "clusterone"
 cluster_template_id = "cluster_template_id"
@@ -23,7 +23,7 @@ labels = {
 
 1\. Создадим аналогичную конфигурацию для **VK CS провайдера** и заполним только необходимые поля:
 
-```
+```bash
 **#описание кластера**
 resource "mcs_kubernetes_cluster" "cluster_2" {
 name                 = "clusterone"
@@ -42,26 +42,26 @@ resource "mcs_kubernetes_node_group" "ng_2" {
 
 2\. Если до этого в terraform state не было ресурсов **VK CS провайдера**, то выполним 
 
-```
+```bash
 terraform init
 ```
 
 3\. Выполним команды (где \`cluster_uuid\` и \`ng_uuid\` - уникальные идентификаторы кластера и node group, которые можно получить в панели VK CS):
 
-```
+```bash
 terraform import mcs_kubernetes_cluster.cluster_2 cluster_uuid
 terraform import mcs_kubernetes_node_group.ng_2 ng_uuid
 ```
 
 4\. Для прекращения использования **openstack провайдера** для управления кластером Kubernetes обязательно выполним команду
 
-```
+```bash
 terraform state rm openstack_containerinfra_cluster_v1.cluster_1 
 ```
 
 5\. Удалим из кода упоминание кластера, управляемого с помощью OpenStack Terraform Provider
 
-```
+```bash
 resource "openstack_containerinfra_cluster_v1" "cluster_1"
 ```
 
