@@ -5,8 +5,7 @@
 Вы можете скачать уже заполненный `main.tf` в [личном кабинете](https://mcs.mail.ru/app/project/terraform/).
 Первый блок terraform описывает какие провайдеры нужны (required_providers). Внутри указаны два провайдера openstack и mcs, их источник и версии. Если вы собираетесь использовать дополнительные провайдеры, добавьте их в данном блоке.
 
-```
-bash
+```bash
 terraform {
 required_providers {
 openstack =
