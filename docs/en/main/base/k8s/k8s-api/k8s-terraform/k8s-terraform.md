@@ -1,1 +1,1 @@
-Детальную инструкцию по провайдеру VK CS для Terraform читайте [здесь](https://mcs.mail.ru/terraform/docs).
+Read detailed instructions on VK CS provider for Terraform [here](https://maps.mail.ru/terraform/docs ).

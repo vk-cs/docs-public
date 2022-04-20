@@ -8,6 +8,6 @@
   "markdown": "Management of high-load services is possible only with proper configuration of network communication and load balancing of containers.",
   "icon": "",
   "infobarItems": null,
-  "weight": 4,
+  "weight": 5,
   "uuid": "8b3a451d-f897-487e-b5c3-cd97985f75bb"
 }

@@ -1,10 +1,10 @@
-В общем случае способы доступа к сервисам внутри кластера [перечислены в официальной документации](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types). Подробности нашей реализации:
+In general, the ways to access services within the cluster [are listed in the official documentation](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types). Details of our implementation:
 
-**NodePort**открывает публичный порт на ноде. Однако есть ограничение: в целях безопасности по умолчанию публичные IP-адреса не установлены ни на мастера, ни на рабочие узлы, кластеры создаются без белых IP-адресов. Пользователь может установить их самостоятельно.
+**NodePort**opens a public port on the node. However, there is a limitation: for security reasons, by default, public IP addresses are not installed on either the master or the worker nodes, and clusters are created without white IP addresses. The user can install them themselves.
 
-**Load Balancer****.** Наш Kubernetes интегрирован с облачной платформой VK CS, так что платформа предоставляет Load Balancer как сервис и может сама создавать балансировщики. Для сравнения, если пользователь настраивает Kubernetes (например, в он премисе), нужно самостоятельно поднимать и настраивать софтверные балансеры. На платформе VK CS балансировщики поднимаются сразу в отказоустойчивом режиме active-standby. Когда поднимается основной балансер (на HAProxy), у него всегда есть standby, спящий балансер. Между ними настроен VRRP. Если основной балансер отказывает, весь трафик мгновенно переключается на standby, при этом IP-адрес не меняется.
+**Load Balancer** Our Kubernetes is integrated with the VK CS cloud platform so that the platform provides Load Balancer as a service and can create load balancers itself. For comparison, if a user configures Kubernetes (for example, on-premise), you need to raise and configure software balancers yourself. On the VK CS platform, load balancers are lifted immediately in the fault-tolerant active-standby mode. When the main balancer rises (on HAProxy), it always has a standby, sleeping balancer. VRRP is configured between them. If the main balancer fails, all traffic is instantly switched to standby, while the IP address does not change.
 
-В настройке балансировки для Kubernetes помогает наш Cloud Provider. Нужно создать манифест, в котором пользователь указывает тип манифеста «сервис» и тип сервиса «Load Balancer». После деплоя этого манифеста Kubernetes (точнее, Cloud Provider, который работает в Kubernetes) обращается к OpenStack API, создаёт балансировщик и внешний IP-адрес, если это необходимо. Если внешний адрес не нужен, нужно поставить аннотацию, что требуется внутренний балансировщик, и можно пускать трафик на кластер, не открывая публичный IP-адрес на каждой ноде.
+Our Cloud Provider helps you set up balancing for Kubernetes. You need to create a manifest in which the user specifies the type of manifest "service" and the type of service "Load Balancer". After deploying this manifest, Kubernetes (more precisely, the Cloud Provider that runs in Kubernetes) accesses the OpenStack API, and creates a load balancer and an external IP address, if necessary. If an external address is not needed, you need to put an annotation that an internal load balancer is required, and you can let traffic into the cluster without opening a public IP address on each node.
 
 ```
 apiVersion: v1
@@ -29,8 +29,8 @@ spec:
       targetPort: httpn
 ```
 
-Не всегда удобно создавать по балансеру на каждый сервис, 10 сервисов — есть 10 балансировщиков, 50 сервисов — 50 балансировщиков. Ими потом также приходится управлять, это тяжелые сущности. Эту проблему решает Ingress.
+It is not always convenient to create a balancer for each service, 10 services — there are 10 load balancers, 50 services — and 50 load balancers. Then they also have to be managed, these are heavy entities. Ingress solves this problem.
 
-Ingress. Чтобы можно было не создавать много балансировщиков, мы добавили поддержку Ingress Controller. Ingress Controller интегрирован с балансировщиком OpenStack. То есть в декларации сервиса конкретного Ingress Controller указан тип Load Balancer. Для кластера создается один балансировщик, по которому Ingress Controller работает и дальше распределяет трафик по сервисам. Ingress Controller балансирует по DNS-именам.
+**Ingress** To avoid creating a lot of load balancers, we added support for Ingress Controller. Ingress Controller is integrated with the OpenStack load balancer. That is, the Load Balancer type is specified in the service declaration of a specific Ingress Controller. A single load balancer is created for the cluster, according to which Ingress Controller works and further distributes traffic across services. Ingress Controller balances by DNS names.
 
-Подробнее о работе с Ingress в [этой статье](https://mcs.mail.ru/help/ru_RU/k8s-net/k8s-ingress).
+Learn more about working with Ingress in [this article](https://mcs.mail.ru/help/ru_RU/k8s-net/k8s-ingress ).

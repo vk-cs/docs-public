@@ -8,6 +8,6 @@
   "markdown": "Using the Kubernetes service management software on the VK CS platform significantly reduces the time it takes to process and execute application deployment or uninstallation operations.",
   "icon": "",
   "infobarItems": null,
-  "weight": 6,
+  "weight": 7,
   "uuid": "ae30b7c7-02e6-4221-9970-d547eec35acb"
 }
