@@ -24,7 +24,7 @@ If the cluster is created on a version of Kubernetes that is no longer supported
 |1.19.4|26 August 2020|23.12.2020|23.02.2022|
 |1.20.4|December 8, 2020|03/01/2021|05/01/2022|
 |1.21.4|April 8, 2021|10/12/2021|12/12/2022|
-|1.22.6|19 January 2022|18.02.2022|18.04.2022|
+|1.22.6|19 January 2022|18.02.2022|18.04.2023|
 
 ## Support for service features in Kubernetes versions
 New features are added to all versions whenever possible unless the feature is incompatible with the Kubernetes version.
