@@ -8,6 +8,6 @@
   "markdown": "Available operations when working with Kubernetes, from creating a cluster to managing its individual functions.",
   "icon": "",
   "infobarItems": null,
-  "weight": 3,
+  "weight": 2,
   "uuid": "1d9dae9f-b231-4be6-818d-4b4422548001"
 }

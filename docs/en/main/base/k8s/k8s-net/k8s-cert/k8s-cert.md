@@ -1,22 +1,22 @@
-Ingress Controllers в Kubernetes позволяют использовать SSL-сертификаты для терминации TLS-трафика. Возможно применение как Let's Encrypt сертификатов, так и заранее выпущенных сертификатов.
+Ingress Controllers in Kubernetes allow you to use SSL certificates to terminate TLS traffic. It is possible to use both Let's Encrypt certificates and pre-issued certificates.
 
-В этой статье рассмотрим процесс интеграции существующих SSL-сертификатов в Ingress.
+In this article, we will look at the process of integrating existing SSL certificates into Ingress.
 
-1\. Получите внешний IP-адрес Ingress-контроллера командой:
+1\. Get the external IP address of the Ingress controller with the command:
 
 ```
 kubectl get svc -n ingress-nginx | grep ingress | grep LoadBalancer
 ```
 
-2\. Заделегируйте A-запись вашего домена на внешний IP-адрес Ingress Controller.
+2\. Assign the A-record of your domain to the external IP address of the Ingress Controller.
 
-3\. Создайте Secret для хранения данных SSL-сертификата. В поля tls.crt и tls.key нужно вставить код сертификата и закрытого ключа в формате base64.
+3\. Create a Secret to store the SSL certificate data. In the tls.crt and tls.key fields, you need to insert the certificate and private key code in base64 format.
 
 ```
 kubectl apply -f tls-secret.yaml
 ```
 
-Ниже пример файла tls-secret.yaml.
+Below is an example of the tls-secret.yaml file.
 
 ```
 \---
@@ -31,13 +31,13 @@ data:
 type: kubernetes.io/tls
 ```
 
-4\. Создайте целевое приложение и сервис. Пример ниже создает Replication Controller на базе nginx и ассоциированный с ним сервис.
+4\. Create a target application and service. The example below creates a Replication Controller based on nginx and associated service.
 
 ```
 kubectl apply -f service-rc.yaml
 ```
 
-Ниже пример файла service-rc.yaml.
+Below is an example of the service-rc.yaml file.
 
 ```
 \---
@@ -71,24 +71,24 @@ spec:
    ports:
      # The port that this service should serve on.
      - port: 80
-   # Label keys and values that must match in order to receive traffic for this service.
+   # Label keys and values that must match to receive traffic for this service.
    selector:
      app: nginx
 ```
 
-5\. Создайте Ingress:
+5\. Create Ingress:
 
 ```
 kubectl apply -f ingress-custom-ssl.yaml
 ```
 
-В нем нужно заменить ingress.example.com на ваше доменное имя.
+It needs to be replaced ingress.example.com to your domain name.
 
-Также обратите внимание на аннотацию «ingress.kubernetes.io/ssl-redirect: "true"», которая делает обязательный редирект с http на https.
+Also pay attention to the annotation "ingress.kubernetes.io/ssl-redirect : "true"", which makes a mandatory redirect from http to https.
 
-Если вы используете несколько разных Ingress Controller и хотите использовать для этого экземпляра Ingress Nginx Ingress Controller, то вам нужно раскомментировать аннотацию «kubernetes.io/ingress.class: nginx» .
+If you use several different Ingress Controller and want to use Ingress Nginx Ingress Controller for this instance, then you need to uncomment the annotation "kubernetes.io/ingress.class : nginx" .
 
-Ниже пример файла ingress-custom-ssl.yaml. 
+Below is an example of the ingress-custom-ssl.yaml file. 
 
 ```
 \---
