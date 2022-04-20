@@ -1,45 +1,45 @@
-Развертывание приложения в Kubernetes (k8s) осуществляется с помощью утилиты kubectl. Полный синтаксис команд утилиты можно найти в [официальной документации](https://kubernetes.io/docs/reference/kubectl/overview/).
+Application deployment in Kubernetes (k8s) is carried out using the kubectl utility. The full syntax of the utility commands can be found in the [official documentation](https://kubernetes.io/docs/reference/kubectl/overview /).
 
-Подготовка
+Preparation
 ----------
 
-Kubectl работает в командной строке или терминале.
+Kubectl runs on the command line or terminal.
 
-Убедиться что kubectl установлен можно при помощи команды:
+To make sure that kubectl is installed, use the command:
 
 ```
 kubectl version --client
 ```
 
-Общий формат команды kubectl:  kubectl action resource (kubectl -> действие -> сущность, на которую направлено действие)
+The general format of the kubectl command is: kubectl action resource (kubectl -> action -> entity to which the action is directed)
 
-Эта последовательность команд выполняет указанное действие (например, создание, описание) для указанного ресурса (например, узла, контейнера). Можно использовать --help после команды, чтобы получить дополнительную информацию о возможных параметрах, например
+This sequence of commands performs the specified action (for example, creation, description) for the specified resource (for example, node, container). You can use --help after the command to get additional information about possible parameters, for example
 
 ```
 kubectl get nodes --help
 ```
 
-Перед выполнением работы на кластере необходимо подключиться к нему, предварительно импортировав конфигурационный файл, загруженный при создании кластера:
+Before working on a cluster, you need to connect to it by first importing the configuration file downloaded when creating the cluster.:
 
-```
-export KUBECONFIG=<путь к файлу>
-```
+``
+export KUBECONFIG=<file path>
+``
 
-Убедитесь, что kubectl настроен для взаимодействия с вашим кластером, выполнив команду kubectl version:
+Make sure that kubectl is configured to interact with your cluster by running the kubectl version command:
 
 ```
 kubectl cluster-info
 ```
 
-В ответ должно получиться примерно следующее:
+The answer should be something like the following:
 
-Просмотреть узлы в кластере можно при помощи команды:
+You can view the nodes in the cluster using the command:
 
 ```
 kubectl get nodes
 ```
 
-Должно получиться примерно следующее:
+It should turn out something like the following:
 
 ```
 kubectl get nodes
@@ -47,31 +47,31 @@ NAME       STATUS   ROLES    AGE    VERSION
 k8s-cl01   Ready    master   8m4s   v1.17.3
 ```
 
-Отображаются доступные узлы. Kubernetes выберет где развернуть приложение в зависимости от доступных ресурсов Node.
+The available nodes are displayed. Kubernetes will choose where to deploy the application depending on the available Node resources.
 
-Развертывание приложения
+Deploying the application
 ------------------------
 
-Развернем первое приложение в Kubernetes с помощью команды kubectl create deployment. Нужно указать имя развертывания и расположение образа приложения.
+Let's deploy the first application in Kubernetes using the kubectl create deployment command. You need to specify the deployment name and location of the application image.
 
 ```
 kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
 deployment.apps/kubernetes-bootcamp created
 ```
 
-В результате выполнения команд было развернуто приложение. Это включало несколько этапов:
+As a result of executing the commands, the application was deployed. This included several stages:
 
-*   поиск подходящего узла, на котором можно было бы запустить экземпляр приложения
-*   планирование запуска приложения на этом узле
-*   настройка кластера, чтобы при необходимости запустить экземпляр на новом узле
+* search for a suitable node on which to run an instance of the application
+* planning to run the application on this node
+* configure the cluster to start an instance on a new node if necessary
 
-Чтобы вывести список деплойментов, используется команда get deployments:
+To display a list of deployments, use the get deployments command:
 
 ```
 kubectl get deployments
 ```
 
-Результатом выполнения команды будет:
+The result of executing the command will be:
 
 ```
 kubectl get deployments
@@ -79,37 +79,37 @@ NAME                  READY   UP-TO-DATE   AVAILABLE   AGE
 kubernetes-bootcamp   1/1     1            1           3m41s
 ```
 
-В выводе отражен 1 деплоймент с одним экземпляром приложения. Экземпляр работает внутри контейнера Docker на узле.
+The output reflects 1 deployment with one instance of the application. The instance runs inside a Docker container on a node.
 
-Просмотр приложения
+Viewing the application
 -------------------
 
-Поды, работающие внутри Kubernetes, работают в частной изолированной сети. По умолчанию они видны из других подов и сервисов в том же кластере Kubernetes, но не за пределами этой сети. Когда используется kubectl, осуществляется взаимодействие через конечную точку API для связи с приложением.
+The pods working inside Kubernetes work in a private isolated network. By default, they are visible from other pods and services in the same Kubernetes cluster, but not outside this network. When kubectl is used, interaction is carried out through the API endpoint to communicate with the application.
 
-Kubectl может создать прокси, который будет пересылать сообщения в частную сеть всего кластера. Прокси-сервер можно завершить, нажав Ctrl-C, и он не будет показывать никаких результатов во время работы.
+Kubectl can create a proxy that will forward messages to the private network of the entire cluster. The proxy server can be terminated by pressing Ctrl-C and it will not show any results while running.
 
-Следующим шагом запустим прокси в новом окне командной строки или терминала:
+The next step is to launch the proxy in a new command line or terminal window:
 
 ```
 echo -e "\\n\\n\\n\\e\[92mStarting Proxy. After starting it will not output a response. Please click the first Terminal Tab\\n";
 ```
 
-Затем нужно выполнить команду kubectl proxy:
+Then you need to run the kubectl proxy command:
 
 ```
 kubectl proxy
 Starting to serve on 127.0.0.1:8001
 ```
 
-После этого появляется соединение между хостом (онлайн-терминалом) и кластером Kubernetes. Прокси-сервер обеспечивает прямой доступ к API с этих терминалов.
+After that, a connection appears between the host (online terminal) and the Kubernetes cluster. The proxy server provides direct API access from these terminals.
 
-Можно увидеть все API, размещенные через конечную точку прокси. Например, можно запросить версию напрямую через API, используя команду curl:
+You can see all the APIs hosted through the proxy endpoint. For example, you can request a version directly through the API using the curl command:
 
 ```
 curl http://localhost:8001/version
 ```
 
-Результатом вывода команды будет:
+The output of the command will be:
 
 ```
 {
@@ -125,18 +125,18 @@ curl http://localhost:8001/version
 }
 ```
 
-Если порт 8001 недоступен, необходимо убедиться, что прокси kubectl запущен.
+If port 8001 is unavailable, you need to make sure that the kubectl proxy is running.
 
-Сервер API автоматически создаст конечную точку для каждого модуля на основе имени модуля, который также доступен через прокси.
+The API server will automatically create an endpoint for each module based on the module name, which is also accessible via a proxy.
 
-Сначала нужно получить имя Pod, и сохранить в переменной окружения POD\_NAME:
+First, you need to get the Pod name, and save it in the environment variable POD\_NAME:
 
 ```
 export POD\_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\\n"}}{{end}}')
 echo Name of the Pod: $POD\_NAME
 ```
 
-Должно получиться примерно следующее:
+It should turn out something like the following:
 
 ```
 export POD\_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\\n"}}{{end}}')
@@ -144,6 +144,6 @@ echo Name of the Pod: $POD\_NAME
 Name of the Pod: kubernetes-bootcamp-69fbc6f4cf-c7khc
 ```
 
-**Примечание**
+**Note**
 
-Прокси-сервер запускался в новой вкладке (Терминал 2), а последние команды выполнялись на исходной вкладке (Терминал 1). Прокси-сервер по-прежнему работает на второй вкладке, и это позволило команде curl работать с использованием localhost: 8001
+The proxy server was started in a new tab (Terminal 2), and the last commands were executed on the original tab (Terminal 1). The proxy server is still running on the second tab, and this allowed the curl command to work using localhost:8001
