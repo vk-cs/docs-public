@@ -1,9 +1,9 @@
-**Внимание**
+**Attention**
 
-При удалении пользователя, от имени которого был создан кластер, управление кластером становится невозможным. Кластер останавливается и работоспособность кластера восстановлению не подлежит.
+When deleting the user on whose behalf the cluster was created, cluster management becomes impossible. The cluster is stopped and the cluster's operability cannot be restored.
 
-При необходимости сменить владельца кластера рекомендуется обратиться в [техническую поддержку](mailto:support@mcs.mail.ru).
+If it is necessary to change the owner of the cluster, it is recommended to contact [technical support] (mailto:support@mcs.mail.ru ).
 
-Проверить доступы пользователей проекта можно в [соответствующем разделе личного кабинета](https://mcs.mail.ru/app/access/). Там же можно добавить новых пользователей с разными ролями и правами.
+You can check the access of project users in the [corresponding section of the personal account](https://mchs.mail.ru/app/access /). You can also add new users with different roles and rights there.
 
 ![](./assets/1598990406970-1598990406970.png)

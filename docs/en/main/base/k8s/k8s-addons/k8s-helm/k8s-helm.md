@@ -1,6 +1,6 @@
-Helm - популярный менеджер пакетов для Kubernetes, который может быть использован для быстрой установки сложных приложений, таких как CRM, e-commerce, базы данных и т.д.
+Helm is a popular package manager for Kubernetes that can be used to quickly install complex applications such as CRM, e-commerce, databases, etc.
 
-Так как кластеры Kubernetes, устанавливаемые VK CS, используют ролевую модель безопасности, необходимо инициализировать Helm следующим образом:
+Since Kubernetes clusters installed by VK CS use a role-based security model, it is necessary to initialize Helm as follows:
 
 ```
 kubectl create serviceaccount --namespace kube-system tiller
@@ -8,13 +8,13 @@ helm init --service-account tiller
 kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
 ```
 
-Мы рекомендуем использовать Helm версии не ниже 2.8.1. Проверить какая версия у вас установлена можно командой:
+We recommend using Helm versions at least 2.8.1. To check which version you have installed, you can use the command:
 
 ```
 helm version
 ```
 
-Для того, чтобы обновить и клиентские и серверные компоненты Helm до самой последней версии, инициализируйте Helm с помощью следующих команд:
+To update both the client and server components of Helm to the latest version, initialize Helm with the following commands:
 
 ```
 kubectl create serviceaccount --namespace kube-system tiller

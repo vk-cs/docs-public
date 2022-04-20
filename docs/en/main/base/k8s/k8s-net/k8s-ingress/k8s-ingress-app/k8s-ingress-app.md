@@ -1,23 +1,23 @@
-Доступ к сервисам при помощи Ingress
+Access to services using Ingress
 ------------------------------------
 
-\>Кластеры Kubernetes, устанавливаемые в VK CS содержат преднастроенный Ingress Controller на базе балансировщика нагрузки Nginx, который может обеспечить доступ к вашим сервисам, используя один и тот же выделенный балансировщик нагрузки OpenStack. Подробную инструкцию по настройкам Nginx Ingress Controller вы можете найти в [официальном руководстве](https://kubernetes.github.io/ingress-nginx/).
+\>Kubernetes clusters installed in VK CS contain a pre-configured Ingress Controller based on the Nginx load balancer, which can provide access to your services using the same dedicated OpenStack load balancer. Detailed instructions on Nginx Ingress Controller settings can be found in the [official manual](https://kubernetes .github.io/ingress-nginx/).
 
-Для активации доступа к сервису с помощью Ingress вам необходимо иметь:
+To activate access to the service using Ingress, you need to have:
 
-*   как минимум один работающий Service, к которому будет открываться доступ;
-*   доменное имя, с которым будет работать Ingress.
+* at least one running Service that will be accessed;
+* the domain name that Ingress will work with.
 
-Ingress поддерживает два типа маршрутизации:
+Ingress supports two types of routing:
 
-1.  Name-based routing (распределение трафика на разные домены по их DNS-имени).
-2.  Path-based routing (распределение трафика внутри одного домена согласно относительных путей).
+1. Name-based routing (distribution of traffic to different domains by their DNS name).
+2. Path-based routing (distribution of traffic within one domain according to relative paths).
     
 
-Пример ниже создает Ingress и использует сразу 2 варианта маршрутизации:
+The example below creates Ingress and uses 2 routing options at once:
 
-1.  Name-based для домена cafe.example.com.
-2.  Path-based для путей /tea и /coffee.
+1. Name-based for domain cafe.example.com .
+2. Path-based for /tea and /coffee paths.
 
 ```
 apiVersion: extensions/v1beta1

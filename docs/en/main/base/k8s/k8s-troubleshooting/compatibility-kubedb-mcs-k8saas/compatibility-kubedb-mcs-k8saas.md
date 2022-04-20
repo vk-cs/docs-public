@@ -1,30 +1,30 @@
-Проблема
+Problem
 --------
 
-Проблема масштабирования k8aas с использованием kubedb и команды:
+The problem of scaling k8aas using kubedb and the command:
 
 ```
-1Resource CREATE failed: WaitConditionTimeout: resources\[37\].resources.minion\_wait\_condition: 0 of 1 received
+1 Resource CREATE failed: Wait Condition Timeout: resources\[37\].resources.minion\_wait\_condition: 0 of 1 received
 ```
 
-#### Симптомы
+#### Symptoms
 
-*   ВМ создаётся, но среди нод ее нет. 
-*   Стек в статусе CREATE\_FAILED. 
-*   Контроллер менеджер работает "с тормозами". 
-*   Не работают базовые компоненты k8s.
+* VM is being created, but it is not among the nodes. 
+* The stack is in the CREATE\_FAILED status.
+* The controller manager works "with brakes".
+* The basic components of k8s do not work.
 
-Решение
+Decision
 -------
 
-#### Временное
+#### Temporary
 
-Перезапуск мастер-ноды k8s помогает решить проблему кратковременно.
+Restarting the k8s master node helps to solve the problem for a short time.
 
-#### Постоянное
+#### Permanent
 
-Вам нужно обратиться в [техническую поддержку VK CS](https://mcs.mail.ru/help/contact-us) для обновления сертификатов.
+You need to contact [VK CS Technical Support](http://mchs.mail.ru/help/contact-us ) to update the certificates.
 
-### Важно
+### Important
 
-Мы не гарантируем полную совместимость kubedb с k8saas VK CS, так как kubedb использует custom resource definition, на которые завязывается kube-apiserver.
+We do not guarantee full compatibility of kubedb with k8saas VK CS, since kubedb uses custom resource definition, which is tied to kube-apiserver.

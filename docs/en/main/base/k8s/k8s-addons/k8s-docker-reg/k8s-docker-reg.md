@@ -1,75 +1,75 @@
-Загрузка образов в Kubernetes, используя Docker Registry
+Uploading images to Kubernetes using Docker Registry
 --------------------------------------------------------
 
-Данная статья поможет Вам в создании пода, использующего Секрет, для загрузки образа из частного реестра Docker или репозитория.
+This article will help you in creating a pod that uses a Secret to download an image from a private Docker registry or repository.
 
-Docker Registry - это серверное приложение, предназначенное для хранения и распространения Docker-образов.
+Docker Registry is a server application designed for storing and distributing Docker images.
 
-Для чего может использоваться Docker Registry
+What can Docker Registry be used for?
 ---------------------------------------------
 
-*   контроль над местом хранения образов
-*   контроль над распространения образов
-*   интеграция хранения и распространения образов в процесс разработки
+* Control over the storage location of images
+* Control over the distribution of images
+* integration of image storage and distribution into the development process
 
-Запуск Docker
+Launching Docker
 -------------
 
-Необходимо авторизоваться:
+You need to log in:
 
 ```
 docker login
 ```
 
-Необходимо будет ввести свой логин и пароль.
+You will need to enter your username and password.
 
-Данная команда создаст или изменит файл config.json. В нём будет храниться информация, необходимая для авторизации.
+This command will create or modify the config.json file. It will store the information necessary for authorization.
 
-Просмотреть содержимое можно через выполнение команды:
+You can view the contents by running the command:
 
 ```
 cat ~/.docker/config.json
 ```
 
-Результат выполнения будет примерно следующим:
+The result of the execution will be approximate as follows:
 
 ```
 {     "auths": {         "https://index.docker.io/v1/": {             "auth": "c3R...zE2"         }     } }
 ```
 
-Создание Секрета на основе существующих учётных данных Docker
+Creating a Secret based on existing Docker credentials
 -------------------------------------------------------------
 
-Кластер Kubernetes использует для авторизации Секрет, входящий в состав docker-registry. Если **docker login** уже запущен, то можно скопировать учётные данные в Kubernetes:
+The Kubernetes cluster uses a Secret that is part of the docker-registry for authorization. If **docker login** is already running, then you can copy the credentials to Kubernetes:
 
-kubectl create secret generic regcred \\     --from-file=".dockerconfigjson=<path/to/."docker/config.json> \\     -- необходимо внести какие-либо изменения (например, изменить имя нового секрета), то Вы можете внести изменения в Секрет перед тем, как сохранить его. Убедитесь, что:
+kubectl create secret generic regcred \\     --from-file=".dockerconfigjson=<path/to/."docker/config.json> \\ -- if you need to make any changes (for example, change the name of a new secret), then you can make changes to the Secret before saving it. Make sure that:
 
-*   указан typeдляkubernetes.io/dockerconfigjson
-*   задано имя для элемента.dockerconfigjson
-*   base64 кодирует файл docker и вставляет эту строку, непрерывную как значение для данных поля data\[".dockerconfigjson"\]
+* specified typeдляkubernetes.io/dockerconfigjson
+* a name has been set for the element.dockerconfigjson
+* base64 encodes the docker file and inserts this string, continuous as the value for the data field data\[".dockerconfigjson"\]
 
-Например:
+For example:
 
 ```
 apiVersion: v1 kind: Secret metadata:   name: myregistrykey   namespace: awesomeapps data:   .dockerconfigjson: UmVhbGx5IHJlYWxseSByZWVlZWVlZWVlZWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGx5eXl5eXl5eXl5eXl5eXl5eXl5eSBsbGxsbGxsbGxsbGxsbG9vb29vb29vb29vb29vb29vb29vb29vb29vb25ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubmdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2cgYXV0aCBrZXlzCg==" type: "kubernetes.io/dockerconfigjson
 ```
 
-Создание под, используя Секрет:
+Creating a pod using a Secret:
 -------------------------------
 
-Ниже приведён конфигурационный файл для создания пода использующего учётные данные указанные в regcred:
+Below is a configuration file for creating a pod using the credentials specified in regcred:
 
 ```
 apiVersion: v1 kind: Pod metadata:   name: private-reg spec:   containers:   - name: private-reg-container     image: <your-private-image>   imagePullSecrets:   - name: regcred
 ```
 
-В файле my-private-reg-pod.yaml замените<your-private-image> на путь к требуемому образу из Вашего реестра. Например:
+In the my-private-reg-pod file.replace yaml<your-private-image> with the path to the required image from your registry. For example:
 
 ```
 example/exmpl-private:v1
 ```
 
-Создаём под, используя имеющийся Секрет, и проверяем, что под запущен:
+We create a pod using the existing Secret, and check that the pod is running:
 ----------------------------------------------------------------------
 
 ```
