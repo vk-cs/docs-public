@@ -14,8 +14,4 @@ CDN technology is able to prevent delays in data transmission, possible interrup
 CDN service pricing
 -------------------
 
-The service is being provided on a pay-as-you-go basis with the base price of **₽0.60/GB** (VAT inclusive).
-
-In other words, you will only pay for what you consume.
-
-in case you need to distribute larger amounts of data and these amounts are above 10TB per month, please reach out to us at: [support@mcs.mail.ru](mailto:support@mcs.mail.ru).
+The service is being provided on a pay-as-you-go basis. You will only pay for what you consume.
