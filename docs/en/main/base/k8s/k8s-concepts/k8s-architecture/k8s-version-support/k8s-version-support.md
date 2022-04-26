@@ -2,12 +2,12 @@ In Kubernetes aaS from VK Cloud Solutions, new versions are mainly added one mon
 
 The following versions of Kubernetes are currently available in Kubernetes aaS from VK Cloud Solutions:
 
-* 1.22.6
-* 1.21.4
-* 1.20.4
-* 1.19.4
-* 1.18.12
-* 1.17.8
+- 1.22.6
+- 1.21.4
+- 1.20.4
+- 1.19.4
+- 1.18.12
+- 1.17.8
 
 Kubernetes versions are supported for 14 months from the release date in Kubernetes aaS from VK Cloud Solutions.
 
@@ -27,6 +27,7 @@ If the cluster is created on a version of Kubernetes that is no longer supported
 |1.22.6|19 January 2022|18.02.2022|18.04.2023|
 
 ## Support for service features in Kubernetes versions
+
 New features are added to all versions whenever possible unless the feature is incompatible with the Kubernetes version.
 |Name|1.16 and below|1.17.8|1.18.12|1.19.4|1.20.4|1.21.4|1.22.6|
 |------|------|------|-------|-------|-------|-------|-------|

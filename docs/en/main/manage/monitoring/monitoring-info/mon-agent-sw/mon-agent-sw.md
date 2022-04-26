@@ -10,18 +10,18 @@
     5.  Информацию о утилизации диска
     6.  Информацию о работе сетевой подсистемы внутри ОС
 4.  Если вам требуется настроить мониторинг какого-либо стандартного ПО, которое установлено в виртуальной машине, то вам потребуется отредактировать конфигурационный файл агента мониторинга Telegraf, добавив декларации необходимых input-плагинов и перезапустить соответствующую службу
-5.  Список поддерживаемых input-плагинов можно найти в этом github-репозитории [https://github.com/influxdata/telegraf/tree/master/plugins/inputs](https://github.com/influxdata/telegraf/tree/master/plugins/inputs) 
+5.  Список поддерживаемых input-плагинов можно найти в этом github-репозитории [https://github.com/influxdata/telegraf/tree/master/plugins/inputs](https://github.com/influxdata/telegraf/tree/master/plugins/inputs)
 6.  На примере добавления мониторинга для СУБД MySQL, установленной в той же ВМ на базе CentOS, что и агент мониторинга, и работающей по стандартному порту 3306
-7.  Открываем описание Input-плагина Telegraf для MySQL [https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mysql](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mysql) 
-8.  Открываем на редактирование конфигурационный файл агента Telegraf  sudo vi /etc/telegraf/telegraf.d/outputs.conf 
-9.  Добавляем в файл следующие строки: 
+7.  Открываем описание Input-плагина Telegraf для MySQL [https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mysql](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mysql)
+8.  Открываем на редактирование конфигурационный файл агента Telegraf  sudo vi /etc/telegraf/telegraf.d/outputs.conf
+9.  Добавляем в файл следующие строки:
     ```
     [[inputs.mysql]]
     servers = ["user:passwd@tcp(127.0.0.1:3306)/?tls=false"]
     metric_version = 2
     ```
-    
-10.  Применяем новую конфигурацию без перезагрузки ОС:
+10. Применяем новую конфигурацию без перезагрузки ОС:
+
     ```
     sudo systemctl reload telegraf.service
     ```

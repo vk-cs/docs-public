@@ -1,22 +1,19 @@
-Description
------------
+## Description
 
 Pod is the smallest computing unit in Kubernetes terminology.
 
 Sub - a group of one or more application containers, including shared storage (volumes) used, IP address and information on their launch.
 
-Using pods
-----------
+## Using pods
 
 Kubernetes has two main uses for pods:
 
-*   For launching a single container. The "one-container-to-one-pod" model is more common in Kubernetes and in this case, we can assume that the pod is a wrapper for the container. Keep in mind that Kubernetes manages pods, not containers directly.
-*   Underneath launching several containers inside itself. A pod can contain an application consisting of several containers, the interaction of which is closely related and there is a need to share resources. For example, container-1, which is a web server, sends data from a shared disk "outside", and there is container-2 that updates and changes this data on the disk.
+- For launching a single container. The "one-container-to-one-pod" model is more common in Kubernetes and in this case, we can assume that the pod is a wrapper for the container. Keep in mind that Kubernetes manages pods, not containers directly.
+- Underneath launching several containers inside itself. A pod can contain an application consisting of several containers, the interaction of which is closely related and there is a need to share resources. For example, container-1, which is a web server, sends data from a shared disk "outside", and there is container-2 that updates and changes this data on the disk.
 
 The second way, with grouping multiple containers within a single pod, is a rather specific case. It is not recommended to use it unless it is clearly necessary.
 
-Working with pods
------------------
+## Working with pods
 
 Each pod is a single instance (instance) of a running application. If you need to scale out to provide more resources by running more instances, you should run multiple pods, one for each application instance.
 
@@ -67,6 +64,7 @@ Once in the centos-pod pod shell, let's try curl to the pod address with the ngi
 ```
 curl 10.100.6.201
 ```
+
 ```
 <!DOCTYPE html>
 <html>

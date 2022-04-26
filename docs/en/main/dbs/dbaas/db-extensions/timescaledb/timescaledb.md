@@ -3,6 +3,7 @@
 More information about using the extension can be found on the [documentation page](https://docs.timescale.com/api/latest).
 
 #### Parameters applicable in VK Cloud Solutions infrastructure:
-|Name|Description|Example|
-|---|---|---|
-|`database`|Specifies which database the extension will be deployed to.|`--database="timescale_DB"`|
+
+| Name       | Description                                                 | Example                     |
+| ---------- | ----------------------------------------------------------- | --------------------------- |
+| `database` | Specifies which database the extension will be deployed to. | `--database="timescale_DB"` |

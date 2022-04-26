@@ -2,8 +2,7 @@ The credentials for connecting and managing the virtual machine must be stored i
 
 However, if the credentials have been lost, there are several ways to restore access to the server.
 
-User password
--------------
+## User password
 
 User password recovery is performed regardless of the installed operating system family of the instance.
 
@@ -15,12 +14,11 @@ On the "Console" tab, click on the "Set password" button.
 
 **Attention**
 
-Password must contain upper and lower case letters of the Latin alphabet, numbers, symbols! "# $% & () \* +, -.:; <=>? @ [] ^ _\` {} ~
+Password must contain upper and lower case letters of the Latin alphabet, numbers, symbols! "# $% & () \* +, -.:; <=>? @ [] ^ \_\` {} ~
 
 The password must contain at least one letter or number, in addition to special characters.
 
-Key pair
---------
+## Key pair
 
 If you have a user password, you can also replenish the lost key pair for your Linux instance.
 
@@ -34,23 +32,19 @@ To restore access, you need to add a new key pair using the CLI and VNC console:
     ```
      openstack keypair create --private-key <filename_and_location> <keyname>
     ```
-    
 2.  Copy the contents of the public key to a local file
     ```
      openstack keypair show --public-key >> <file_path>
     ```
-    
 3.  Upload the created file to any external resource or cloud
 4.  Save the file to the virtual machine with the command
     ```
      wget <your_file>
     ```
-    
 5.  Copy the content of the new key to authorized_keys file
     ```
      cat <your_file> >> ~ / .ssh / authorized_keys
     ```
-    
 6.  Check access to the instance with a new key pair
     ```
      ssh -i <path_to_key> login @ IP_address

@@ -2,20 +2,19 @@
 
 #### Конфигурация оборудования
 
-Сервер Ubuntu 18.04 LTS x86_64. 
+Сервер Ubuntu 18.04 LTS x86_64.
 
-**Как сэкономить время на установке PostgreSQL
+\*\*Как сэкономить время на установке PostgreSQL
 
-****
+---
 
 Воспользуйтесь нашим готовым облачным решением на базе СУБД PostgreSQL. При регистрации вы получаете бесплатный бонусный счет, которого достаточно для работы в течение нескольких дней.
 
-**
+\*\*
 
 **[**[**попробовать облачную СУБД PostgreSQL**](https://mcs.mail.ru/databases/)**]**
 
-Установка Standalone PostgreSQL
--------------------------------
+## Установка Standalone PostgreSQL
 
 1.  Авторизуйтесь на сервере Ubuntu 18.04.
 2.  Обновите списки репозиториев:
@@ -26,24 +25,21 @@ ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get update
 
 3.  По умолчанию в Ubuntu 18.04 в репозиториях располагается PostgreSQL версии 10. Выполните одно из действий:
 
-*   Если этой версии достаточно, установите ее:
+- Если этой версии достаточно, установите ее:
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get install postgresql
 ```
 
-*   Чтобы установить актуальную версию PostgreSQL:
-    
-*   Скачайте ключ репозитория PostgreSQL:
-    
+- Чтобы установить актуальную версию PostgreSQL:
+- Скачайте ключ репозитория PostgreSQL:
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 OK
 ```
 
-*   В список репозиториев добавьте репозиторий PostgreSQL:
-    
+- В список репозиториев добавьте репозиторий PostgreSQL:
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-add-repository "deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main"
@@ -57,8 +53,7 @@ Fetched 225 kB in 1s (217 kB/s)
 Reading package lists... Done
 ```
 
-*   Посмотрите доступные версии сервера:
-    
+- Посмотрите доступные версии сервера:
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-cache search postgresql | grep "SQL database, version"
@@ -71,15 +66,13 @@ postgresql-9.5 - object-relational SQL database, version 9.5 server
 postgresql-9.6 - object-relational SQL database, version 9.6 server
 ```
 
-*   Установите актуальную версию (например, 12):
-    
+- Установите актуальную версию (например, 12):
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get install postgresql-12
 ```
 
 4.  После установки убедитесь, что сервер запущен:
-    
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ ps ax | grep postgres
@@ -115,12 +108,11 @@ postgres=# \l
 postgres=# \q
 ```
 
-Установка завершена.**
+Установка завершена.\*\*
 
-Создание базы данных и настройка прав доступа
----------------------------------------------
+## Создание базы данных и настройка прав доступа
 
-**
+\*\*
 
 1.  Создайте базу данных mybase:
 
@@ -149,7 +141,6 @@ GRANT
 ```
 
 4.  Проверьте подключение с правами пользователя ОС Ubuntu:
-    
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ psql -hlocalhost -Umyuser -W mybase
@@ -161,8 +152,7 @@ Type "help" for help.
 mybase=>
 ```
 
-Настройка сетевого доступа
---------------------------
+## Настройка сетевого доступа
 
 По умолчанию PostgreSQL слушает только 127.0.0.1. Чтобы настроить сетевой доступ к серверу, в файле _/etc/postgresql/12/main/postgresql.conf_ найдите строку _listen_addresses=_ и укажите следующее\*:
 

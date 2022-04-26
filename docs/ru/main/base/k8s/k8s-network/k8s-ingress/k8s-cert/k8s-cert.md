@@ -88,7 +88,7 @@ kubectl apply -f ingress-custom-ssl.yaml
 
 Если вы используете несколько разных Ingress Controller и хотите использовать для этого экземпляра Ingress Nginx Ingress Controller, то вам нужно раскомментировать аннотацию «kubernetes.io/ingress.class: nginx» .
 
-Ниже пример файла ingress-custom-ssl.yaml. 
+Ниже пример файла ingress-custom-ssl.yaml.
 
 ```
 ---

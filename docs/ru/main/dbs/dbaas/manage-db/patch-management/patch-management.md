@@ -1,8 +1,9 @@
-Чтобы получить доступ к новым возможностям PostgreSQL, необходимо обновлять версии СУБД. Patch Management позволяет обновить Postgres и Postgres Pro с более младшей на более старшую версию. 
+Чтобы получить доступ к новым возможностям PostgreSQL, необходимо обновлять версии СУБД. Patch Management позволяет обновить Postgres и Postgres Pro с более младшей на более старшую версию.
 
 Мы предлагаем 3 варианта конфигурации работы с PostgreSQL. Ниже мы рассмотрим подробнее каждые из них.
 
 ## Обновление версии СУБД
+
 Для обновления PostgreSQL необходимо использовать утилиту [pg_upgrade](https://postgrespro.ru/docs/postgresql/13/pgupgrade).
 
 <warn>
@@ -20,7 +21,8 @@
 <tabpanel>
 
 Выполните API запрос:
-``` bash
+
+```bash
 curl --location --request PATCH '/v1.0/project_id/instances/instance_id' \
 --header 'X-Auth-Token:  <токен пользователя>' \
 --header 'Content-Type: application/json' \
@@ -37,7 +39,8 @@ curl --location --request PATCH '/v1.0/project_id/instances/instance_id' \
 Для обновления реплик на сервера будет установлена новая версия PostgreSQL и данные по средствам репликации будут синхронизированы с мастером.
 
 Выполните API запрос:
-``` bash
+
+```bash
 curl --location --request PATCH '/v1.0/project_id/instances/instance_id' \
 --header 'X-Auth-Token:  <токен пользователя>' \
 --header 'Content-Type: application/json' \
@@ -47,13 +50,14 @@ curl --location --request PATCH '/v1.0/project_id/instances/instance_id' \
   }
 }'
 ```
- 
+
 </tabpanel>
 <tabpanel>
- 
+
 Для обновления реплик будет установлена новая версия СУБД и Patroni синхронизирует данные на них.
- 
+
 Выполните API запрос:
+
 ``` bash
 curl --location --request POST '/v1.0/project_id/clusters/cluster_id' \
 --header 'X-Auth-Token: <токен пользователя>' \
@@ -66,6 +70,6 @@ curl --location --request POST '/v1.0/project_id/clusters/cluster_id' \
   ]
 }'
 ```
- 
+
 </tabpanel>
 </tabs>

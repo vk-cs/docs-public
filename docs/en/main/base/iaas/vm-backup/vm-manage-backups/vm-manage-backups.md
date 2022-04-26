@@ -6,8 +6,7 @@ Incremental backups are consolidated into a full backup according to the schedul
 
 When recovering, you should only focus on a full instance backup.
 
-VK CS control panel
------------------
+## VK CS control panel
 
 To restore a backup [in your VK CS account, you](https://mcs.mail.ru/app/services/infra/servers/) should:
 
@@ -17,8 +16,7 @@ To restore a backup [in your VK CS account, you](https://mcs.mail.ru/app/service
 4.  Configure the parameters of the instance being restored from the backup:![](./assets/1596745115820-snimok-ekrana-2020-08-06-v-23.18.07.png)
 5.  Select "Create a copy of an instance from a backup", after which the creation of a new virtual machine will begin.
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 You can create an instance from a backup using the karbor package of the Openstack CLI toolkit. To do this, you need to run the following commands:
 

@@ -4,8 +4,7 @@ VK CS provides a RESTful XML API for programmatically manipulating stored data u
 
 SOAP over HTTP support has been deprecated but is still available over HTTPS. However, new Amazon S3 features will not be supported for SOAP. REST API or AWS SDK is recommended.
 
-S3 compatible
--------------
+## S3 compatible
 
 The VK CS S3 API is designed to interact with the Amazon AWS S3 API. In most cases, when using the client library, setting the "endpoint" or "base" URL hb.bizmrg.com and creating the VK CS S3 key pair will allow the VK CS Object Storage service.
 
@@ -32,7 +31,7 @@ client.create_bucket (Bucket = 'my-test-bucket1')
 # View the list of buckets in the project.
 response = client.list_buckets ()
 buckets = [bucket ['Name'] for bucket in response ['Buckets']]
-print ("Bucket List:% s"% buckets) 
+print ("Bucket List:% s"% buckets)
 ```
 
 **Go example**
@@ -78,11 +77,10 @@ fmt.Println ("List of all buckets for this access key:")
 for _, bucket: = range buckets {
 fmt.Println (bucket.Name)
 }
-} 
+}
 ```
 
-Authentication
---------------
+## Authentication
 
 Requests to the VK CS S3 APIs must include the HTTP-Authorization header. The AWS v4 signature type is supported, as well as the AWS v2 signature type for compatibility with legacy customers. The examples below use v4 signatures. When using the client library, signatures will be generated automatically.
 
@@ -102,7 +100,7 @@ The v4 signature consists of several parts. The table below describes each part 
 Authorization: AWS4-HMAC-SHA256
 Credential = urvt4LXPwoSL9s6ieGTLT5 / 20200831 / ru-msk / s3 / aws4_request,
 SignedHeaders = host; x-amz-acl; x-amz-content-sha256; x-amz-date,
-Signature = 6cab03bef74a80a0441ab7fd33c829a2cdb46bba07e82da518cdb78ac238fda5 
+Signature = 6cab03bef74a80a0441ab7fd33c829a2cdb46bba07e82da518cdb78ac238fda5
 ```
 
 **Signature example (pseudo code)**
@@ -124,17 +122,17 @@ dateKey = HMAC-SHA256 ("AWS4" + {SECRET_KEY}, date (format = YYYYMMDD))
 dateRegionKey = HMAC-SHA256 (dateKey, "ru-msk")
 dateRegionServiceKey = HMAC-SHA256 (dateRegionKey, "s3")
 signingKey = HMAC-SHA256 (dateRegionServiceKey, "aws4_request")
-signature = Hex (HMAC-SHA256 (signingKey, stringToSign)) 
+signature = Hex (HMAC-SHA256 (signingKey, stringToSign))
 ```
 
 The canonical request included in the signature consists of:
 
-*   The HTTP request method to use.
-*   Path component of the request URI.
-*   Query string parameters included in the request.
-*   A list of request headers and their values, separated by a newline, in lowercase and without spaces.
-*   A list of header names without values, sorted alphabetically, in lowercase, and separated by semicolons.
-*   The SHA256 hash of the request body.
+- The HTTP request method to use.
+- Path component of the request URI.
+- Query string parameters included in the request.
+- A list of request headers and their values, separated by a newline, in lowercase and without spaces.
+- A list of header names without values, sorted alphabetically, in lowercase, and separated by semicolons.
+- The SHA256 hash of the request body.
 
 For example, for the following query:
 
@@ -158,8 +156,7 @@ host; x-amz-content-sha256; x-amz-date
 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 ```
 
-General headers
----------------
+## General headers
 
 Common headers that can be used in most requests:
 

@@ -1,5 +1,4 @@
-Конфигурация оборудования
--------------------------
+## Конфигурация оборудования
 
 Чтобы выполнить данный сценарий, требуется установленный и настроенный сервер для ELK на ОС Ubuntu 18.04 LTS x86_64.
 
@@ -7,22 +6,17 @@
 
 При использовании других серверов и оборудования некоторые шаги сценария могут отличаться от описанных ниже.
 
-Схема работы
-------------
+## Схема работы
 
 **![](./assets/1575925083095-1575925083095.png)**
 
 Стек ELK состоит из трех компонентов:
 
-*   Elasticsearch - движок для хранения, индексирования и обработки данных в общем хранилище, а также для полнотекстового поиска данных.
-    
-*   Logstash - утилита для сбора, фильтрации, агрегации, изменения  и последующего перенаправления исходных данных в конечное хранилище. 
-    
-*    Kibana - веб-интерфейс для просмотра и анализа данных из хранилища.
-    
+- Elasticsearch - движок для хранения, индексирования и обработки данных в общем хранилище, а также для полнотекстового поиска данных.
+- Logstash - утилита для сбора, фильтрации, агрегации, изменения  и последующего перенаправления исходных данных в конечное хранилище.
+- Kibana - веб-интерфейс для просмотра и анализа данных из хранилища.
 
-Установка Elasticsearch, Logstash и Kibana
-------------------------------------------
+## Установка Elasticsearch, Logstash и Kibana
 
 1.  Выполните логин на сервере Ubuntu с правами root.
 2.  Импортируйте ключ репозитория Elasticsearch:
@@ -70,24 +64,20 @@ root@ubuntu-basic-1-1-10gb:~# apt-get install logstash
 
 ```
 
-Настройка Elasticsearch
------------------------
+## Настройка Elasticsearch
 
 Elasticsearch настраивается с использованием трех конфигурационных файлов:
 
-*   **elasticsearch.yml  - основной конфигурационный файл;**
-    
-*   **jvm.options - файл для настройки Java-машины для запуска Elasticsearch;**
-    
-*   **log4j2.properties  - файл для настройки логирования Elasticsearch.**
-    
+- **elasticsearch.yml  - основной конфигурационный файл;**
+- **jvm.options - файл для настройки Java-машины для запуска Elasticsearch;**
+- **log4j2.properties  - файл для настройки логирования Elasticsearch.**
 
 **jvm.options**
 
-Наиболее важной в этом файле является настройка памяти, выделенной для JVM (Heap Size). Для Elasticsearch этот параметр влияет напрямую на то, насколько крупные массивы данных он сможет обработать. Heap Size определяется парой параметров: 
+Наиболее важной в этом файле является настройка памяти, выделенной для JVM (Heap Size). Для Elasticsearch этот параметр влияет напрямую на то, насколько крупные массивы данных он сможет обработать. Heap Size определяется парой параметров:
 
-*   Xms - начальное значение;
-*   Xmx - максимальное значение.
+- Xms - начальное значение;
+- Xmx - максимальное значение.
 
 По умолчанию Heap Size составляет 1 ГБ. Если объем памяти на сервере позволяет, увеличьте это значение ([подробнее о Heap Size](https://www.elastic.co/guide/en/elasticsearch/reference/current/heap-size.html)). Для этого найдите строки:
 
@@ -103,16 +93,16 @@ Xms4g
 Xmx4g
 ```
 
-**log4j2.properties** 
+**log4j2.properties**
 
 Для удобства  можно поменять appender.rolling.policies.size.size, указывающий размер лога, при котором выполняется ротация (по умолчанию - 128 МБ). Подробнее о логировании [см.тут](https://www.elastic.co/guide/en/elasticsearch/reference/current/logging.html).
 
-**elasticsearch.yml** 
+**elasticsearch.yml**
 
 Настройте:
 
-*   node.name: elasticsearch - укажите имя ноды;
-*   network.host: 127.0.0.1 - установите слушать только localhost.
+- node.name: elasticsearch - укажите имя ноды;
+- network.host: 127.0.0.1 - установите слушать только localhost.
 
 Запустите Elasticsearch:
 
@@ -120,11 +110,11 @@ Xmx4g
 root@ubuntu-basic-1-1-10gb:~# systemctl start elasticsearch.service
 ```
 
-**
+\*\*
 
 Если вы указали слишком большое значение Heap Size, запуск завершится неудачей. При этом в логах будет следующее:
 
-**
+\*\*
 
 ```
 root@ubuntu-basic-1-1-10gb:~# systemctl start elasticsearch.service
@@ -173,8 +163,7 @@ root@ubuntu-basic-1-1-10gb:~# curl http://localhost:9200
 }
 ```
 
-Настройка Kibana
-----------------
+## Настройка Kibana
 
 По умолчанию в конфигурационном файле Kibana /etc/kibana/kibana.yml содержатся все необходимые настройки. Единственный параметр, который нужно изменить: server.host: “localhost”. При настройке по умолчанию Kibana доступна только локально. Для удаленного доступа к Kibana замените “localhost” на внешний IP-адрес сервера, на котором установлена Kibana. Кроме того, если Elasticsearch расположен не на одном хосте с Kibana, измените настройку elasticsearch.hosts: ["[http://localhost:9200](http://localhost:9200/)"].
 
@@ -185,7 +174,6 @@ root@ubuntu-basic-1-1-10gb:/etc/kibana# systemctl start kibana.service
 ```
 
 2.  Добавьте Kibana в список приложений, запускаемых автоматически:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:/etc/kibana# systemctl enable kibana.service
@@ -193,21 +181,18 @@ Synchronizing state of kibana.service with SysV service script with /lib/s
 Executing: /lib/systemd/systemd-sysv-install enable kibana
 ```
 
-3.  В браузере перейдите по адресу http://<IP-адрес сервера kibana>:5601. 
+3.  В браузере перейдите по адресу http://<IP-адрес сервера kibana>:5601.
 
 Если Kibana работает, отобразится следующее:
 
 ![](./assets/1576044633830-1576044633830.png)
 
-Настройка  безопасности Kibana и Elasticsearch
-----------------------------------------------
+## Настройка  безопасности Kibana и Elasticsearch
 
 По умолчанию Elasticsearch и Kibana полностью доступны для всех. Доступ можно ограничить одним из способов:
 
-*   Использовать Nginx как reverse proxy с авторизацией и контролем доступа.
-    
-*   Использовать встроенный механизм elasticsearch xpack.security (подробно об этом см. [тут](https://www.elastic.co/guide/en/elasticsearch/reference/7.4/configuring-security.html) или [тут](https://www.elastic.co/guide/en/kibana/current/using-kibana-with-security.html)).
-    
+- Использовать Nginx как reverse proxy с авторизацией и контролем доступа.
+- Использовать встроенный механизм elasticsearch xpack.security (подробно об этом см. [тут](https://www.elastic.co/guide/en/elasticsearch/reference/7.4/configuring-security.html) или [тут](https://www.elastic.co/guide/en/kibana/current/using-kibana-with-security.html)).
 
 Рассмотрим наиболее популярный первый способ.
 
@@ -240,7 +225,7 @@ root@ubuntu-basic-1-1-10gb:~# systemctl restart kibana.service
 root@ubuntu-basic-1-1-10gb:~# netstat -tulpn | grep 9200
 tcp6 0 0 127.0.0.1:9200 :::\* LISTEN 10512/java
 root@ubuntu-basic-1-1-10gb:~# netstat -tulpn | grep 5601
-tcp        0      0 127.0.0.1:5601          0.0.0.0:\*               LISTEN      11029/node 
+tcp        0      0 127.0.0.1:5601          0.0.0.0:\*               LISTEN      11029/node
 ```
 
 5.  В /etc/nginx/sites-available создайте файл kibana.conf и добавьте в него следующее:
@@ -285,7 +270,6 @@ root@ubuntu-basic-1-1-10gb:~# systemctl start nginx 
 ```
 
 9.  В браузере перейдите по адресу http://<IP-адрес сервера kibana>:5601. В открывшемся окне введите логин и пароль для доступа к веб-интерфейсу Kibana.
-    
 
 Аналогично настройте Nginx в качестве reverse proxy для Elasticsearh (порт 9200) и Logstash (обычно порт 5044).
 
@@ -295,42 +279,38 @@ root@ubuntu-basic-1-1-10gb:~# systemctl start nginx 
 
 [![](./assets/1576047982336-1576047982336.png)](https://hb.bizmrg.com/help-images/logging/Kibana_Dashboard_3.png)
 
-Установка filebeat
-------------------
+## Установка filebeat
 
 Beats - часть инфраструктуры Elasticsearch, так называемые Data Shippers (поставщики данных). Это легковесные агенты, которые берут данные из различных источников и преобразуют их для передачи в Elasticsearch. Функциональность Beats частично дублирует Logstash, но Beats легковеснее, проще настраиваются, быстрее работают и не требуют установки Java stack. Обычно на нодах, где формируются логи, устанавливаются соответствующие агенты Beats, которые передают логи в Logstash. Logstash аггрегирует, трансформирует логи и передает их в Elasticsearch. Существует множество разных Beats, в стандартный набор входят следующие агенты:
 
-*   Filebeat - сбор логов из различных log-файлов.
-*   Packetbeat - сбор сетевой статистики.
-*   Winlogbeat -  сбор логов на платформе Windows.
-*   Metricbeat - сбор разнообразных метрик.
-*   Heartbeat - сбор данных о доступности инфраструктуры.
-*   Auditbeat - сбор данных аудита систем.
-*   Functionbeat - сбор данных с Serverless проектов (AWS Lambda).
-*   Journalbeat - сбор логов Journald.
+- Filebeat - сбор логов из различных log-файлов.
+- Packetbeat - сбор сетевой статистики.
+- Winlogbeat -  сбор логов на платформе Windows.
+- Metricbeat - сбор разнообразных метрик.
+- Heartbeat - сбор данных о доступности инфраструктуры.
+- Auditbeat - сбор данных аудита систем.
+- Functionbeat - сбор данных с Serverless проектов (AWS Lambda).
+- Journalbeat - сбор логов Journald.
 
-Наиболее распространен агент Filebeat, используем его для сбора логов Nginx. 
+Наиболее распространен агент Filebeat, используем его для сбора логов Nginx.
 
 1.  Установите Filebeat:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:~# apt-get install filebeat
 ```
 
 2.  Разрешите обработку логов Nginx:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:~# mv /etc/filebeat/modules.d/nginx.yml.disabled /etc/filebeat/modules.d/nginx.yml
 ```
 
-Если логи находятся в нестандартном месте, либо требуется обработка только части логов, в файле /etc/filebeat/modules.d/nginx.yml раскомментируйте и заполните переменные var.paths. 
+Если логи находятся в нестандартном месте, либо требуется обработка только части логов, в файле /etc/filebeat/modules.d/nginx.yml раскомментируйте и заполните переменные var.paths.
 
 В примере далее будем собирать и анализировать логи обращения к сервису Kibana. При настройке Nginx мы определили, что логи обращений будут храниться в файлах /var/log/nginx/kibana.access.log  и /var/log/nginx/kibana.error.log.
 
 3.  Приведите файл /etc/filebeat/modules.d/nginx.yml к следующему виду:
-    
 
 ```
 # Module: nginx
@@ -353,11 +333,10 @@ enabled: true
 # Set custom paths for the log files. If left empty,
 # Filebeat will choose the paths depending on your OS.
 var.paths:
-     - /var/log/nginx/kibana.error.log 
+     - /var/log/nginx/kibana.error.log
 ```
 
 4.  В файле /etc/filebeat/filebeat.yml отредактируйте секцию setup.kibana:
-    
 
 ```
 setup.kibana:
@@ -371,7 +350,6 @@ setup.kibana:
 Логин и пароль требуются для доступа Filebeat в Kibana с целью загрузки типовых dashboard под известные наборы данных.
 
 5.  Логи будут пересылаться в Logstash, поэтому закомментируйте секцию output.elasticsearch и укажите IP-адрес сервера, на котором расположен Logstash, в секции output.logstash:
-    
 
 ```
 #-------------------------- Elasticsearch output ------------------------------
@@ -401,7 +379,6 @@ hosts: ["<IP-адрес сервера logstash>:5044"]
 ```
 
 6.  Убедитесь, что в конфигурационном файле нет ошибок:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:/etc/filebeat# filebeat test config -c /etc/filebeat/filebeat.yml
@@ -410,17 +387,15 @@ Config OK
 
 Перед запуском Filebeat настройте прием логов в Logstash.
 
-Настройка Logstash
-------------------
+## Настройка Logstash
 
 Конфигурационный файл Logstash в общем виде состоит из трех секций:
 
-*   input - описание пункта назначения логов.
-*   filter - трансформация логов.
-*   output - описание пункта назначения преобразованных логов.
+- input - описание пункта назначения логов.
+- filter - трансформация логов.
+- output - описание пункта назначения преобразованных логов.
 
 1.  Создайте файл /etc/logstash/conf.d/input-beats.conf, содержащий номер порта, на который Beats (в частности, Filebeat) присылает свои логи:
-    
 
 ```
 input {
@@ -431,7 +406,6 @@ port => 5044
 ```
 
 2.  Создайте файл /etc/logstash/conf.d/output-elasticsearch.conf и укажите, что логи нужно отправлять в Elasticsearch по адресу localhost и индексы нужно именовать в формате nginx-<дата> (то есть каждый день будет создаваться новый индекс, это удобно для анализа):
-    
 
 ```
 output {
@@ -488,7 +462,7 @@ Filebeat, который будет пересылать логи Nginx в Logst
 [2019-11-19T09:55:46,254][ERROR][logstash.filters.useragent][main] Uknown error while parsing user agent data {:exception=>#<TypeError: cannot convert instance of class org.jruby.RubyHash to class java.lang.String>, :field=>"agent", :event=>#<LogStash::Event:0x1b16bb2>}
 ```
 
-По той же причине в секции  grok match не нужно использовать макрос %{COMBINEDAPACHELOG}. 
+По той же причине в секции  grok match не нужно использовать макрос %{COMBINEDAPACHELOG}.
 
 Для отслеживания ошибок в Logstash включите дебаг. Для этого в секцию output добавьте следующую строку:
 
@@ -499,7 +473,6 @@ stdout { codec => rubydebug }
 В результате вывод в базу Elasticsearch будет дублироваться выводом на консоль/syslog. Кроме того, для проверки выражений grok match полезно использовать [Grok Debugger](https://grokdebug.herokuapp.com/).
 
 4.  Запустите Logstash и добавьте его в список приложений для автоматического запуска:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:~# systemctl start logstash
@@ -508,91 +481,78 @@ Created symlink /etc/systemd/system/multi-user.target.wants/logstash.service →
 ```
 
 5.  Убедитесь, что сервис запустился:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:~# netstat -tulpn | grep 5044
-tcp6       0      0 :::5044                 :::\*                    LISTEN      18857/java  
+tcp6       0      0 :::5044                 :::\*                    LISTEN      18857/java
 ```
 
 6.  Протестируйте работу Filebeat:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:~# service filebeat start
 ```
 
-Настройка Kibana Templates
---------------------------
+## Настройка Kibana Templates
 
 После запуска Filebeat логи обращения к Kibana поступают в Logstash, затем в Elasticsearch. Чтобы просмотреть эти логи, в Kibana необходимо настроить templates.
 
 1.  Перейдите в Kibana, в левом меню нажмите шестеренку, выберите Kibana > Index Patterns и нажмите Create Index Pattern.
-    
 
 [![](./assets/1576061057996-1576061057996.png)](https://hb.bizmrg.com/help-images/logging/Template-1.png)
 
 2.  Чтобы выбрать все записи, в поле Index pattern введите nginx-\*  и нажмите Next step.
-    
 
 [![](./assets/1576061025693-1576061025693.png)](https://hb.bizmrg.com/help-images/logging/Template-2.png)
 
 3.  Чтобы использоваться временные метки из лог-файлов, в поле Time Filter field name выберите @timestamp и нажмите Create index pattern.
-    
 
 [![](./assets/1576060887959-1576060887959.png)](https://hb.bizmrg.com/help-images/logging/Template-3.png)
 
- Будет создан index pattern.
+Будет создан index pattern.
 
 [![](./assets/1576063973675-1576063973675.png)](https://hb.bizmrg.com/help-images/logging/Template-4.png)
 
 Чтобы просмотреть логи, попавшие в Elasticsearch, перейдите в Discover.
 
-Настройка Kibana Visualizations
--------------------------------
+## Настройка Kibana Visualizations
 
 Dashboard в Kibana состоит из визуализаций. Визуализация - это разновидность графика, построенного по определенным запросам из Elasticsearch.
 
 Построим первую визуализацию  - топ 10 клиентов.
 
 1.  В левом меню выберите Visualisations и нажмите кнопку Create new visualisation.
-    
 
 [![](./assets/1576064128640-1576064128640.png)](https://hb.bizmrg.com/help-images/logging/Visualisation_1.png)
 
 2.  Выберите Vertical bar.
-    
 
 ![](./assets/1576064583763-1576064583763.png)
 
 3.  Выберите темплейт nginx-\*.
-    
 
 ![](./assets/1576065003535-1576065003535.png)
 
 4.  Добавьте ось X.
-    
 
 [![](./assets/1576065045921-1576065045921.png)](https://hb.bizmrg.com/help-images/logging/Visualisation-4.png)
 
 5.  Введите данные:
-    
 
-*   Aggregation: Terms - возвращает указанное количество топ-значений.
-*   Field: clientip.keyword - выбираем клиента по IP-адресу.
-*   Size: 10 - 10 топ значений.
-*   Custom Label: Top 10 clients - название визуализации.
+- Aggregation: Terms - возвращает указанное количество топ-значений.
+- Field: clientip.keyword - выбираем клиента по IP-адресу.
+- Size: 10 - 10 топ значений.
+- Custom Label: Top 10 clients - название визуализации.
 
 [![](./assets/1576065062374-1576065062374.png)](https://hb.bizmrg.com/help-images/logging/Visualisation-5.png)
 
 6.  Выполните запрос и сохраните визуализацию.
-    
 
 [![](./assets/1576065262380-1576065262380.png)](https://hb.bizmrg.com/help-images/logging/Visualisation-6.png)
 
 В результате на визуализации показаны топ-10 IP-адресов, с которых были обращения.
 
-Построим вторую визуализацию - круговую диаграмму, показывающую топ 5 стран, откуда обращались пользователи. 
+Построим вторую визуализацию - круговую диаграмму, показывающую топ 5 стран, откуда обращались пользователи.
 
 1.  В левом меню выберите Visualisations и нажмите кнопку Create new visualisation.
 2.  Выберите Pie.
@@ -604,59 +564,53 @@ Dashboard в Kibana состоит из визуализаций. Визуали
 
 1.  Введите следующие данные:
 
-*   Aggregation: Terms - выбираем топ значения данных.
-*   Field: geoip.country_code2.keyword - двухбуквенное обозначение страны.
-*   Size:5  - выбираем топ 5.
-*   Custom label: Top 5 countries -  название графика.
+- Aggregation: Terms - выбираем топ значения данных.
+- Field: geoip.country_code2.keyword - двухбуквенное обозначение страны.
+- Size:5  - выбираем топ 5.
+- Custom label: Top 5 countries -  название графика.
 
 [![](./assets/1576065921656-1576065921656.png)](https://hb.bizmrg.com/help-images/logging/Visualisation_22.png)
 
 9.  Выполните запрос и сохраните визуализацию.
-    
 
 [![](./assets/1576065939964-1576065939964.png)](https://hb.bizmrg.com/help-images/logging/Visualisation_23.png)
 
 На графике отобразятся топ 5 стран, из которых был доступ.
 
-Построим третью визуализацию - график количества запросов, с делением по кодам ответа. 
+Построим третью визуализацию - график количества запросов, с делением по кодам ответа.
 
 1.  В левом меню выберите Visualisations и нажмите кнопку Create new visualisation.
 2.  Выберите TSVB.
 3.  Выберите темплейт nginx-\*.
 4.  Чтобы получить все коды ответов сервера (то есть все запросы, отправленные серверу), в появившемся окне впишите в название Requests, выберите группировать по фильтру и в строке запроса укажите responce:\*.
-5.   Для добавления второй линии на график, .
-6.  Чтобы на втором графике получить выборку количества ответов сервера "200 ОК" в единицу времени, нажмите "+", выберите другой цвет, в названии укажите Responce:200, в строке запроса - responce:200. 
+5.  Для добавления второй линии на график, .
+6.  Чтобы на втором графике получить выборку количества ответов сервера "200 ОК" в единицу времени, нажмите "+", выберите другой цвет, в названии укажите Responce:200, в строке запроса - responce:200.
 7.  Нажмите "+" и аналогичным образом добавьте код ответа 302. Затем сохраните визуализацию.
 
 [![](./assets/1576067043735-1576067043735.png)](https://hb.bizmrg.com/help-images/logging/Visualisation_32.png)
 
-Настройка Kibana Dashboard
---------------------------
+## Настройка Kibana Dashboard
 
 Kibana Dashboard - это набор визуализаций.
 
 1.  Нажмите Dashboards, затем Create New Dashboard.
-    
 
 [![](./assets/1576067237826-1576067237826.png)](https://hb.bizmrg.com/help-images/logging/Dashboard_1.png)
 
 2.  В верхнем меню нажмите Add.
-    
 
 [![](./assets/1576067256219-1576067256219.png)](https://hb.bizmrg.com/help-images/logging/Dashboard_2.png)
 
 3.  В открывшемся окне выберите созданные вами визуализации.
-    
 
 [![](./assets/1576067130968-1576067130968.png)](https://hb.bizmrg.com/help-images/logging/Dashboard_3.png)
 
 4.  При необходимости измените порядок и размер визуализаций, затем нажмите Save.
-    
 
 [![](./assets/1576067332838-1576067332838.png)](https://hb.bizmrg.com/help-images/logging/Dashboard_4.png)
 
 **Обратная связь**
 
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады](https://mcs.mail.ru/help/contact-us) 
+Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады](https://mcs.mail.ru/help/contact-us)
 
 ###  [](https://mcs.mail.ru/help/contact-us)

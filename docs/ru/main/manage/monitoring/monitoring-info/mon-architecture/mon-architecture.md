@@ -1,5 +1,4 @@
-Концепции
----------
+## Концепции
 
 Сервис мониторинга VK CS состоит из нескольких частей:
 
@@ -10,8 +9,7 @@
 5.  UI с возможностью строить дашборды и графики
 6.  Сервис централизованного обновления агентов мониторинга
 
-Namespaces
-----------
+## Namespaces
 
 Каждый сервис пишет данные в свой namespace. Стандартные имена Namespace,формируемые сервисами VK CS, выглядят как “mcs/servicename”. Если необходимо писать кастомные метрики, то название Namespace не должно начинаться с “mcs/”.
 
@@ -19,8 +17,7 @@ Namespaces
 
 <table><tbody><tr><td style="background-color: rgb(209, 213, 216);"><p><strong>Название сервиса</strong></p></td><td style="background-color: rgb(209, 213, 216);"><p><strong>Название Namespace</strong></p></td></tr><tr><td>Облачные вычисления</td><td>mcs/vm</td></tr><tr><td>Виртуальные сети</td><td>mcs/network</td></tr><tr><td>Объектное хранилище</td><td>mcs/cloudstorage</td></tr><tr><td>Контейнеры</td><td>mcs/containers</td></tr><tr><td>Базы данных</td><td>mcs/databases</td></tr><tr><td>Большие данные</td><td>mcs/bigdata</td></tr><tr><td>SQS</td><td>mcs/managedqueue</td></tr><tr><td>Marketplace</td><td>mcs/marketplace</td></tr><tr><td>CDN</td><td>mcs/cdn</td></tr><tr><td>Аналитические БД</td><td>mcs/dwh</td></tr><tr><td>IoT</td><td>mcs/iot</td></tr><tr><td>Monitoring</td><td>mcs/monitoring</td></tr></tbody></table>
 
-Метки (Labels)
---------------
+## Метки (Labels)
 
 В Labels передается дополнительная метаинформация, которая может идентифицировать целевой ресурс, который мы мониторим. Т.е. В случае VM - название VM или id VM.
 
@@ -33,12 +30,12 @@ Namespaces
 ```
 SUM BY(host) (cpu:Minimum{instance="<"span >"server1", app!="<"span >"system"})
 ```
+
 ```
 SUM BY(job) (cpu:Average{host="<"span >"server1", job!="<"span >"system"}[12h] offset 24h
 ```
 
-Агрегация
----------
+## Агрегация
 
 1.  VK Cloud Solutions Monitoring автоматически агрегирует значения метрик по интервалам 1 минута, 5 минут, 1 час
 2.  Сырые значения метрик автоматически удаляются после агрегации
@@ -50,8 +47,7 @@ SUM BY(job) (cpu:Average{host="<"span >"server1", job!="<"span >"system"}[12h] o
 5.  Агрегированные метрики хранятся в течение 30 дней
 6.  Пользователь может получить значения агрегированных метрик с фильтрацией по необходимым значениям Labels
 
-Единицы измерения
------------------
+## Единицы измерения
 
 В VK Cloud Solutions Monitoring есть стандартные единицы измерений, которые можно передавать и по которым агрегировать:
 

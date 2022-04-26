@@ -1,5 +1,4 @@
-Problem
---------
+## Problem
 
 The problem of scaling k8aas using kubedb and the command:
 
@@ -9,13 +8,12 @@ The problem of scaling k8aas using kubedb and the command:
 
 #### Symptoms
 
-* VM is being created, but it is not among the nodes. 
-* The stack is in the CREATE\_FAILED status.
-* The controller manager works "with brakes".
-* The basic components of k8s do not work.
+- VM is being created, but it is not among the nodes.
+- The stack is in the CREATE_FAILED status.
+- The controller manager works "with brakes".
+- The basic components of k8s do not work.
 
-Decision
--------
+## Decision
 
 #### Temporary
 
@@ -23,7 +21,7 @@ Restarting the k8s master node helps to solve the problem for a short time.
 
 #### Permanent
 
-You need to contact [VK CS Technical Support](http://mchs.mail.ru/help/contact-us ) to update the certificates.
+You need to contact [VK CS Technical Support](http://mchs.mail.ru/help/contact-us) to update the certificates.
 
 ### Important
 

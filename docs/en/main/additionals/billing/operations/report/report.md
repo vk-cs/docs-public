@@ -1,4 +1,5 @@
 ## Financial documents
+
 For all payments made, users receive financial documents.
 
 <tabs>
@@ -44,7 +45,7 @@ What do electronic documents give and why connect to EDO:
 
 VK CS uses the [Contour.Dyadok](https://www.diadoc.ru/) and [VLSI](https://sbis.ru/).
 
-You can connect to one of these EDI systems yourself by sending an invitation to one of these systems. The request must specify the name of the organization, full details, including the full name of the general director, and the system to which the organization will be connected. 
+You can connect to one of these EDI systems yourself by sending an invitation to one of these systems. The request must specify the name of the organization, full details, including the full name of the general director, and the system to which the organization will be connected.
 
 When working with another operator, you need to configure roaming yourself by specifying the following details:
 
@@ -60,7 +61,7 @@ The reconciliation report is provided individually upon request to technical sup
 
 <warn>
 
-If for some reason it was not possible to receive the document through the EDO or the Russian Post, you can request a copy of the UPD in *.pdf format by contacting [technical support](https://mcs.mail.ru/docs/ru/contacts).
+If for some reason it was not possible to receive the document through the EDO or the Russian Post, you can request a copy of the UPD in \*.pdf format by contacting [technical support](https://mcs.mail.ru/docs/ru/contacts).
 
 The request should specify the name and details of the organization, the project and the reporting period of the closing document.
 

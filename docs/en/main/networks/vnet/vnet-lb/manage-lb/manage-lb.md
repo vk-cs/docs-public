@@ -8,10 +8,10 @@ When you select balancing, a window will open for viewing, adding and editing ru
 
 To add a rule, specify the required field values:
 
-*   Balancing protocol
-*   Destination protocol
-*   Balancing method
-*   Port
+- Balancing protocol
+- Destination protocol
+- Balancing method
+- Port
 
 ![](./assets/1603310081299-dobavleniya-pravil-balansirovshchika.jpg)
 

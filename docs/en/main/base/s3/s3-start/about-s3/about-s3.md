@@ -1,5 +1,4 @@
-Description
------------
+## Description
 
 Object Storage or S3 can be used to store and retrieve any amount of data anytime from anywhere on the Internet. These tasks can be accomplished using the VK CS Control Panel.
 
@@ -9,15 +8,14 @@ Buckets are containers for objects. A project can have one or more buckets. Acce
 
 The following tasks can be accomplished using the VK CS Control Panel:
 
-*   Bucket creation
-*   Loading an object into a bucket
-*   Object Access Control
-*   Object lifecycle management
-*   Copying an item to a folder
-*   Removing objects and buckets
+- Bucket creation
+- Loading an object into a bucket
+- Object Access Control
+- Object lifecycle management
+- Copying an item to a folder
+- Removing objects and buckets
 
-List of terms
--------------
+## List of terms
 
 The Object Storage service uses the following concepts:
 

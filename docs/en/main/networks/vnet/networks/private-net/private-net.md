@@ -2,8 +2,7 @@ The VK CS platform allows you to create and configure private networks in the pr
 
 By default, only ext-net is available in a new project, this is an external network common to all projects. Ext-net is not a private network.
 
-VK CS control panel
------------------
+## VK CS control panel
 
 Networks management in [VK CS personal account is](https://mcs.mail.ru/app/services/server/networks/) carried out on the "Networks" page of the "Virtual Networks" service.
 
@@ -23,8 +22,7 @@ After completing the settings, click "Add network".
 
 To change the parameters of an existing network, select the "Edit network" option in the context menu on the network list page. It is possible to add new subnets, change the router, enable or disable DHCP / DNS, and change the addressing.
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 Project networks can be managed in the OpenStack client:
 

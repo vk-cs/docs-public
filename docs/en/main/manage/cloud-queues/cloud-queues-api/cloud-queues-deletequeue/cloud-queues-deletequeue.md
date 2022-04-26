@@ -1,6 +1,6 @@
-The request deletes the queue specified in 'QueueUrl', regardless of its contents. 
+The request deletes the queue specified in 'QueueUrl', regardless of its contents.
 
-### Important 
+### Important
 
 Be careful with the deletequeue action: when you delete a queue, all messages in it are no longer available.
 
@@ -8,8 +8,7 @@ When deleting a queue, the deletion process takes up to 60 seconds. Requests sen
 
 When deleting a queue, you must wait at least 60 seconds before creating a queue with the same name.
 
-Request Parameters
------------------
+## Request Parameters
 
 **QueueUrl**
 
@@ -21,8 +20,7 @@ Type: String
 
 Required: Yes
 
-Mistakes
-------
+## Mistakes
 
 #### Error response structure
 
@@ -30,10 +28,10 @@ In case of an unsuccessful request, VK CS SQS always returns the main element of
 
 **Error** The element contains the following child elements:
 
-* **Type** \- Indicates whether the error was a manufacturer's or consumer's error.
-* **Code** \- Indicates the type of error.
-* **Message** \- Indicates the error status in a readable format.
-* **Detail**\- (Optional) Specifies additional information about the error.
+- **Type** \- Indicates whether the error was a manufacturer's or consumer's error.
+- **Code** \- Indicates the type of error.
+- **Message** \- Indicates the error status in a readable format.
+- **Detail**\- (Optional) Specifies additional information about the error.
 
 **RequestId** The element contains the UUID of the request.
 
@@ -53,8 +51,7 @@ Below is an example of an error response in XML format:
 </ErrorResponse>
 ```
 
-Examples
--------
+## Examples
 
 #### Sample request
 

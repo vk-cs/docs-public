@@ -2,8 +2,7 @@ The request returns a list of your queues for which the RedrivePolicy attribute 
 
 The method supports pagination. Set the maxResults parameter in the request to specify the maximum number of results returned in the response. If maxResults is not set, the response will contain no more than 1000 results. If you have set maxResults and there are additional results to display, the response will contain a value for nextToken. Use nextToken as a parameter in the listdeadlettersourcequeues request to get the next page of results.
 
-Request Parameters
------------------
+## Request Parameters
 
 MaxResults
 
@@ -31,8 +30,7 @@ Type: String
 
 Required: Yes
 
-Response Elements
----------------
+## Response Elements
 
 The following items are returned by the service.
 
@@ -48,8 +46,7 @@ A list of source queue URLs for which the redrivepolicy queue attribute is confi
 
 Type: array of strings
 
-Mistakes
-------
+## Mistakes
 
 AWS.SimpleQueueService.NonExistentQueue
 
@@ -57,10 +54,9 @@ The specified queue does not exist.
 
 HTTP Status Code: 400
 
-Examples
--------
+## Examples
 
-The following sample request request returns a list of the original queues of undelivered messages. In this example, only one MySourceQueue source queue is configured with an undelivered message queue. The AUTHPARAMS structure depends on the API request signature. 
+The following sample request request returns a list of the original queues of undelivered messages. In this example, only one MySourceQueue source queue is configured with an undelivered message queue. The AUTHPARAMS structure depends on the API request signature.
 
 #### Sample request
 

@@ -1,5 +1,4 @@
-Создание кластера
------------------
+## Создание кластера
 
 Все инструкции при работе с API выполняются в консоли.
 
@@ -62,7 +61,7 @@ curl -s -H "X-Auth-Token: <your_auth_token>" -H "Content-Type: application/json"
 
 В данном примере запущено сразу 3 worker-узла и диск увеличен до 300Гб
 
-Кластерам Big Data соответствует сервис OpenStack Sahara. 
+Кластерам Big Data соответствует сервис OpenStack Sahara.
 
 Важно помнить, что параметры cluster_template_id, head_template_id и worker_template_id нельзя создать самому - они уже предварительно созданы. Получить указанный список шаблонов кластеров template можно через данный блок:
 
@@ -70,8 +69,7 @@ curl -s -H "X-Auth-Token: <your_auth_token>" -H "Content-Type: application/json"
 curl -s -H "X-Auth-Token: <your_auth_token>" -H "Content-Type: application/json"  -X GET "http://infra.mail.ru:8386/v1.1/<your_project_ID>/cluster-templates" -v
 ```
 
-Удаление кластера
------------------
+## Удаление кластера
 
 Удаление кластера Больших Данных необходимо проводить с помощью команды
 

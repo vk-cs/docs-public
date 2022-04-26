@@ -6,8 +6,7 @@ Floating IP is associated to a "gray" address due to the 1: 1 NAT mechanism on t
 
 Floating addresses in your [VK CS account are](https://mcs.mail.ru/app/services/infra/routers/) managed on the "Floating IPs" page of the "Virtual Networks" service. This page displays the addresses allocated to the project:![](./assets/1598291459714-snimok-ekrana-2020-08-24-v-20.50.50.png)
 
-Binding an address to an instance
----------------------------------
+## Binding an address to an instance
 
 To assign a floating address to a private network port, select the "Bind" option in the line with IP, then select the required address in the drop-down list:![](./assets/1598291631383-snimok-ekrana-2020-08-24-v-20.53.06.png)
 
@@ -15,8 +14,7 @@ To assign a floating address to a private network port, select the "Bind" option
 
 Floating IP binding can only be done if there is an instance with a connected port on the private network.
 
-Releasing Floating IP
----------------------
+## Releasing Floating IP
 
 To remove an address from a project, select "Remove IP from project" in the address context menu.
 
@@ -26,8 +24,7 @@ To remove an address from a project, select "Remove IP from project" in the addr
 
 When a floating IP address is deleted, it is released from the project and can be automatically assigned to another project.
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 Floating addresses can be managed in the OpenStack client:
 

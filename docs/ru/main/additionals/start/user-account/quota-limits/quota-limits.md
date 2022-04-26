@@ -1,7 +1,6 @@
 Технические и организационные ограничения необходимы для гарантии стабильности и надежности платформы. Ограничения использования ресурсов позволяют клиентам платформы беспрепятственно получать доступ к сервисам VK CS.
 
-Квоты
------
+## Квоты
 
 Квоты - организационные ограничения операционной активности каждого проекта.
 
@@ -23,8 +22,7 @@
 
 ![](./assets/1598288024298-1598288024298.png)
 
-Квоты проекта
--------------
+## Квоты проекта
 
 Текущие квоты проекта можно увидеть на отдельной странице. Для этого надо нажать в правом верхнем углу на логин, и выбрать в выпадающем меню пункт "Квоты":
 
@@ -38,8 +36,7 @@
 
 ![](./assets/1598288392972-1598288392972.png)
 
-Базовые квоты
--------------
+## Базовые квоты
 
 При создании проекта ему назначаются квоты на ресурсы, установленные по умолчанию для всех новых проектов. Каждый новый проект не наследует доступное количество квот от уже имеющихся проектов.
 
@@ -76,14 +73,11 @@ neutron quota-show
 
 <table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(2%); width: 98%;" width="227"><tbody><tr><td height="19" style="text-align: center; background-color: rgb(239, 239, 239); width: 55.0923%;" width="66.07929515418502%">Наименование</td><td style="text-align: center; background-color: rgb(239, 239, 239); width: 44.7758%;" width="33.92070484581498%">Значение</td></tr><tr><td height="19" style="width: 55.0923%;">gigabytes</td><td align="right" style="width: 44.7758%;">100</td></tr><tr><td height="19" style="width: 55.0923%;">id</td><td style="width: 44.7758%;"><br></td></tr><tr><td height="19" style="width: 55.0923%;">share_networks</td><td align="right" style="width: 44.7758%;">5</td></tr><tr><td height="19" style="width: 55.0923%;">shares</td><td align="right" style="width: 44.7758%;">5</td></tr><tr><td height="19" style="width: 55.0923%;">snapshot_gigabytes</td><td align="right" style="width: 44.7758%;">100</td></tr><tr><td height="19" style="width: 55.0923%;">snapshots</td><td align="right" style="width: 44.7758%;">5</td></tr></tbody></table>
 
- 
-
 **Сети**
 
 <table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(2%); width: 98%;" width="227"><tbody><tr><td height="19" style="text-align: center; background-color: rgb(239, 239, 239); width: 56.3852%;" width="66.07929515418502%">Наименование</td><td style="text-align: center; background-color: rgb(239, 239, 239); width: 43.4829%;" width="33.92070484581498%">Значение</td></tr><tr><td height="19" style="width: 56.3852%;">floatingip</td><td align="right" style="width: 43.4829%;">1</td></tr><tr><td height="19" style="width: 56.3852%;">loadbalancer</td><td align="right" style="width: 43.4829%;">3</td></tr><tr><td height="19" style="width: 56.3852%;">network</td><td align="right" style="width: 43.4829%;">10</td></tr><tr><td height="19" style="width: 56.3852%;">pool</td><td align="right" style="width: 43.4829%;">30</td></tr><tr><td height="19" style="width: 56.3852%;">port</td><td align="right" style="width: 43.4829%;">30</td></tr><tr><td height="19" style="width: 56.3852%;">router</td><td align="right" style="width: 43.4829%;">3</td></tr><tr><td height="19" style="width: 56.3852%;">security_group</td><td align="right" style="width: 43.4829%;">3</td></tr><tr><td height="19" style="width: 56.3852%;">security_group_rule</td><td align="right" style="width: 43.4829%;">200</td></tr><tr><td height="19" style="width: 56.3852%;">subnet</td><td align="right" style="width: 43.4829%;">10</td></tr></tbody></table>
 
-Увеличение квот
----------------
+## Увеличение квот
 
 **Примечание**
 
@@ -91,13 +85,12 @@ neutron quota-show
 
 В качестве примера используем квоты виртуальных процессоров.Чтобы запросить увеличение квоты на виртуальные CPU, необходимо решить, сколько виртуальных CPU вы хотите использовать дополнительно. Определите также какие квоты требуются дополнительно, затем создайте обращение [в техническую поддержку](mailto:support@mcs.mail.ru) с указанием:
 
-*   наименование учетной записи
-*   номер проекта (mcs_pid)
-*   тип квоты
-*   на какой объем требуется увеличение
+- наименование учетной записи
+- номер проекта (mcs_pid)
+- тип квоты
+- на какой объем требуется увеличение
 
-Технические лимиты
-------------------
+## Технические лимиты
 
 Стабильность работы сервисов VK CS обеспечивается назначением технических лимитов платформы. Это общие ограничения, обусловленные особенностями архитектуры VK CS.
 

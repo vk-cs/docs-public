@@ -1,7 +1,6 @@
 Technical and organizational constraints are necessary to ensure the stability and reliability of the platform. Resource restrictions allow platform clients to seamlessly access VK CS services.
 
-Quotas
-------
+## Quotas
 
 Quotas are organizational restrictions on the operational activity of each project.
 
@@ -23,8 +22,7 @@ or (for some entities) **when trying to create an entity** :
 
 ![](./assets/1598288024298-1598288024298.png)
 
-Project quotas
---------------
+## Project quotas
 
 The current project quotas can be seen on a separate page. To do this, click on the login in the upper right corner, and select the "Quotas" item in the drop-down menu:
 
@@ -38,8 +36,7 @@ For more information on a specific quota, you can click on the " **i** " icon on
 
 ![](./assets/1598288392972-1598288392972.png)
 
-Base quotas
------------
+## Base quotas
 
 When a project is created, it is assigned resource quotas that are set by default for all new projects. Each new project does not inherit the available number of quotas from existing projects.
 
@@ -78,8 +75,7 @@ The standard set of quotas is defined as follows:
 
 <table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(2%); width: 98%;" width="227"><tbody><tr><td height="19" style="text-align: center; background-color: rgb(239, 239, 239); width: 56.3852%;" width="66.07929515418502%">Name</td><td style="text-align: center; background-color: rgb(239, 239, 239); width: 43.4829%;" width="33.92070484581498%">Value</td></tr><tr><td height="19" style="width: 56.3852%;">floatingip</td><td align="right" style="width: 43.4829%;">1</td></tr><tr><td height="19" style="width: 56.3852%;">loadbalancer</td><td align="right" style="width: 43.4829%;">3</td></tr><tr><td height="19" style="width: 56.3852%;">network</td><td align="right" style="width: 43.4829%;">ten</td></tr><tr><td height="19" style="width: 56.3852%;">pool</td><td align="right" style="width: 43.4829%;">thirty</td></tr><tr><td height="19" style="width: 56.3852%;">port</td><td align="right" style="width: 43.4829%;">thirty</td></tr><tr><td height="19" style="width: 56.3852%;">router</td><td align="right" style="width: 43.4829%;">3</td></tr><tr><td height="19" style="width: 56.3852%;">security_group</td><td align="right" style="width: 43.4829%;">3</td></tr><tr><td height="19" style="width: 56.3852%;">security_group_rule</td><td align="right" style="width: 43.4829%;">200</td></tr><tr><td height="19" style="width: 56.3852%;">subnet</td><td align="right" style="width: 43.4829%;">ten</td></tr></tbody></table>
 
-Increase in quotas
-------------------
+## Increase in quotas
 
 **Note**
 
@@ -87,13 +83,12 @@ If you would like to increase the limit or quota above the default limit, please
 
 We will use virtual processor quotas as an example. To request an increase in the virtual CPU quota, you need to decide how many additional virtual CPUs you want to use. Also determine which quotas are required additionally, then create a request [to technical support](mailto:support@mcs.mail.ru) indicating:
 
-*   account name
-*   project number (mcs_pid)
-*   type of quota
-*   how much increase is required
+- account name
+- project number (mcs_pid)
+- type of quota
+- how much increase is required
 
-Technical limits
-----------------
+## Technical limits
 
 The stability of the VK CS services is ensured by the appointment of technical limits for the platform. These are general limitations due to the VK CS architecture.
 

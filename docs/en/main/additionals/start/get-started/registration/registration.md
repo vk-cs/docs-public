@@ -1,5 +1,4 @@
-Registration
-------------
+## Registration
 
 To register, go to the main page of VK CS services - [https://mcs.mail.ru](https://mcs.mail.ru/) - and click on the "Register" or "Try for free" button:
 
@@ -9,8 +8,7 @@ Enter your login (your valid email) and create a password:
 
 ![](./assets/1595452621108-1595452621108.png)
 
-Confirmation
-------------
+## Confirmation
 
 After registration, you will be taken to a confirmation page where you can manage your account settings. To start using VK CS services, you need to confirm your email. A confirmation message will be sent immediately:
 
@@ -26,8 +24,7 @@ The confirmation message looks like this:
 
 When you click on the link, you will be redirected to your personal account, your account will be confirmed. You can see the structure of services in your personal account.
 
-Service activation
-------------------
+## Service activation
 
 To fully activate the services, you must register and confirm your phone number. The request will be generated automatically after confirmation of the mailbox.
 

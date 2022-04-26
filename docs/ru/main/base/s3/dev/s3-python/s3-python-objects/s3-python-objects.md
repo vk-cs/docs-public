@@ -1,7 +1,6 @@
 Проведя [предварительные настройки сессии](https://mcs.mail.ru/help/ru_RU/s3-python/s3-python-setup), можно приступить к работе с объектами S3.
 
-Загрузка объекта
-----------------
+## Загрузка объекта
 
 Загрузка объектов в бакет инициализируется данной командой:
 
@@ -31,8 +30,7 @@ s3_client.upload_file('some_test_file_from_local.txt', test_bucket_name, 'backup
 
 Подробное описание команд PUT_OBJECT и UPLOAD_FILE дано в официальной документации библиотеки boto3 по методам [PUT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.put_object) и [UPLOAD](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.upload_file)
 
-Копирование объектов между бакетами
------------------------------------
+## Копирование объектов между бакетами
 
 Копирование объектов между бакетами можно выполнить следующим образом:
 
@@ -60,10 +58,9 @@ copy_source = {
 s3_client.copy(copy_source, target_bucket_name, target_path)
 ```
 
-Подробное описание команды COPY дано в [официальной документации библиотеки boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.copy) 
+Подробное описание команды COPY дано в [официальной документации библиотеки boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.copy)
 
-Получение объекта
------------------
+## Получение объекта
 
 Для получения объекта из бакета следует воспользоваться следующим способом:
 
@@ -81,10 +78,9 @@ print(response)
 print(response['Body'].read())
 ```
 
-Подробное описание команды GET_OBJECT дано в [официальной документации библиотеки boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.get_object) 
+Подробное описание команды GET_OBJECT дано в [официальной документации библиотеки boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.get_object)
 
-Получение списка объектов
--------------------------
+## Получение списка объектов
 
 Для получения списка объектов в бакете необходимо:
 
@@ -104,10 +100,9 @@ for key in s3_client.list_objects(Bucket=test_bucket_name)['Contents']:
     print(key['Key'])
 ```
 
-Подробное описание команды LIST_OBJECT дано в [официальной документации библиотеки boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.list_objects) 
+Подробное описание команды LIST_OBJECT дано в [официальной документации библиотеки boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.list_objects)
 
-Удаление объекта 
------------------
+## Удаление объекта
 
 Чтобы удалить объекты в бакете:
 

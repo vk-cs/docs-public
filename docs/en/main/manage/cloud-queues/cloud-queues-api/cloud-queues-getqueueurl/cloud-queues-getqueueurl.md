@@ -1,13 +1,12 @@
 The request returns the URL of an existing Cloud Queues queue.
 
-To access a queue that belongs to another VK CS account, use the 'queueownerawsaccountid' parameter (to specify the account ID of the queue owner). The queue owner must grant you permission to access the queue. 
+To access a queue that belongs to another VK CS account, use the 'queueownerawsaccountid' parameter (to specify the account ID of the queue owner). The queue owner must grant you permission to access the queue.
 
-Request Parameters
------------------
+## Request Parameters
 
 **QueueName**
 
-The name of the queue whose URL needs to be retrieved. Maximum of 80 characters. Acceptable values are alphanumeric characters, hyphens ( '-`) and underscores (`_').
+The name of the queue whose URL needs to be retrieved. Maximum of 80 characters. Acceptable values are alphanumeric characters, hyphens ( '-`) and underscores (`\_').
 
 URLs and queue names are case-sensitive.
 
@@ -23,8 +22,7 @@ Type: String
 
 Required: No
 
-Response Elements
----------------
+## Response Elements
 
 The service returns the following item.
 
@@ -34,8 +32,7 @@ The URL of the queue.
 
 Type: String
 
-Mistakes
-------
+## Mistakes
 
 **AWS.SimpleQueueService.NonExistentQueue**
 
@@ -43,8 +40,7 @@ The specified queue does not exist.
 
 HTTP Status Code: 400
 
-Examples
--------
+## Examples
 
 #### Sample request
 

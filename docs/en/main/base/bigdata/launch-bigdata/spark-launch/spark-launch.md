@@ -1,7 +1,6 @@
 Apache Spark is an open source Big Data framework for distributed batching and streaming of unstructured and semi-structured data, part of the Hadoop ecosystem.
 
-Working with Spark in the Ambari interface
-------------------------------------------
+## Working with Spark in the Ambari interface
 
 To create a Spark cluster, follow the instructions, setting the required parameters.
 
@@ -29,8 +28,7 @@ This will open the Ambari interface for managing the Spark cluster and its compo
 
 ![](./assets/1601759974519-s5.png)
 
-Working with Spark in Zeppelin
-------------------------------
+## Working with Spark in Zeppelin
 
 Apache Zeppelin is a multipurpose notebook (web-notebook) that allows you to process, analyze and visualize data on the Hadoop platform. Spark clusters in VK CS include Zeppelin notebooks that can be used to perform Spark tasks.
 
@@ -42,12 +40,11 @@ Most of the services in the Hadoop ecosystem do not have authorization, so by de
 
 Thus, the default configuration only provides access to the Ambari web interface and SSH access to the head node. Access to internal web interfaces and API services is possible only from an internal network isolated from the public Internet. To ensure access, the following options are possible:
 
-*   Configuring VPN access to VK Cloud Solutions resources from the organization's network.
-*   Using the master host as a proxy server.
-*   Opening access to specific ranges of IP addresses through security groups.
+- Configuring VPN access to VK Cloud Solutions resources from the organization's network.
+- Using the master host as a proxy server.
+- Opening access to specific ranges of IP addresses through security groups.
 
-Organization of VPN access
---------------------------
+## Organization of VPN access
 
 To provide access to all resources of the Hadoop cluster, it is recommended to create a VPN connection from the organization's network to the VK CS network. At the same time, the resources of VK Cloud Solutions will be available as if they were within the internal network of the organization.
 
@@ -57,8 +54,7 @@ To use a VPN with a Hadoop cluster, do the following:
 2.  Start the Hadoop cluster using the created network as the cluster's internal network.
 3.  Set up a VPN connection to VK Cloud Solutions services.
 
-Using the head node as a proxy
-------------------------------
+## Using the head node as a proxy
 
 Alternatively, you can use an SSH tunnel to the master. To organize an SSH tunnel, a machine with an OpenSSH client of any version is required. The SSH client is started with the -D option, which starts the SOCKS5 proxy using an SSH tunnel to the remote server:
 
@@ -66,11 +62,11 @@ Alternatively, you can use an SSH tunnel to the master. To organize an SSH tunne
  ssh -D 3128 -C -q -N -f centos @ <host>
 ```
 
-*   the -D 3128 option tells you to start the SOCKS5 proxy server;
-*   the -C option requests data compression;
-*   the -q option minimizes the output of status messages to the console;
-*   the -N option says that when connecting, you should not run any commands and use an SSH connection exclusively for the tunnel;
-*   the -f option sends the SSH client to the background.
+- the -D 3128 option tells you to start the SOCKS5 proxy server;
+- the -C option requests data compression;
+- the -q option minimizes the output of status messages to the console;
+- the -N option says that when connecting, you should not run any commands and use an SSH connection exclusively for the tunnel;
+- the -f option sends the SSH client to the background.
 
 If necessary, the SSH-SOCKS5 tunnel can be automatically created at system boot. To do this, create a .service file for systemd.
 
@@ -104,8 +100,7 @@ After starting the SSH-SOCKS5 proxy, you can use the address 127.0.0.1:3128 as a
 
 More information on enabling SOCKS5 proxy in your browser can be found in the Firefox and Chrome documentation. Detailed information on the procedure and configuration parameters of the tunnel itself is contained in the documentation for the SSH client.
 
-Setting up security groups
---------------------------
+## Setting up security groups
 
 Services can also be accessed by changing the security group settings. To do this, in the section "Virtual networks" - "Firewall settings" of the VK CS interface, you must select the appropriate security group containing the name of the cluster and the type of node (head or worker) in the name.
 
@@ -113,15 +108,14 @@ For example, if the cluster is named test1, then the security group for the mast
 
 So, to organize access to Zeppelin, you need to use the following data:
 
-*   Login: admin
-*   Password: admin
+- Login: admin
+- Password: admin
 
 Use the control bar in the upper right corner of a cell to execute code within that cell. The result is displayed immediately below the executable code:
 
 ![](./assets/1598817768185-zeppelin.png)
 
-Working with Spark in the console
----------------------------------
+## Working with Spark in the console
 
 Spark VK CS clusters include console utilities for working with Spark.
 

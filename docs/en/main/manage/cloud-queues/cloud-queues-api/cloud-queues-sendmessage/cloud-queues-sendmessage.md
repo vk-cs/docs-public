@@ -1,15 +1,14 @@
-Delivers the message to the specified queue. 
+Delivers the message to the specified queue.
 
-### Important 
+### Important
 
 The message can contain only XML, JSON and unformatted text. The following Unicode characters are allowed:
 
-#x9| #xA| #xD| #x20k #xD7FF| #xE000k #xFFFD| #x10000k#x10FFFF
+\#x9| \#xA| \#xD| \#x20k \#xD7FF| \#xE000k \#xFFFD| \#x10000k\#x10FFFF
 
 Any characters not included in this list will be rejected.
 
-Request Parameters
------------------
+## Request Parameters
 
 DelaySeconds
 
@@ -25,7 +24,7 @@ MessageAttribute.N.Name (key)
 
 MessageAttribute.N.Value (value)
 
-Each message attribute consists of a Name, a Turret, and a Value. 
+Each message attribute consists of a Name, a Turret, and a Value.
 
 Type: String to the MessageAttributeValue object map
 
@@ -43,25 +42,17 @@ MessageDeduplicationId
 
 This parameter applies only to FIFO (first-in-first-out) queues.
 
-A token used for deduplication of sent messages. If a message with a specific messageduplicationid code is sent successfully, any messages sent with the same MessageDeduplicationId name are received successfully, but are not delivered within the 5-minute deduplication interval. 
+A token used for deduplication of sent messages. If a message with a specific messageduplicationid code is sent successfully, any messages sent with the same MessageDeduplicationId name are received successfully, but are not delivered within the 5-minute deduplication interval.
 
-* Each message must have a unique MessageDeduplicationId,
-    
-    * You can MessageDeduplicationId explicitly specify.
-        
-    * If you cannot provide MessageDeduplicationId and have enabled ContentBasedDeduplication for your queue, VK CS SQS uses a SHA-256 hash to generate with MessageDeduplicationId using the message body (but not the message attributes).
-        
-    * If you do not provide MessageDeduplicationId the queue is not ContentBasedDeduplication set, the action will fail.
-        
-    * If the contentbaseddeduplication queue is set, you MessageDeduplicationId cancel the generated one.
-        
-    
-* When contentbaseddeduplication is in effect, messages with identical content sent within the deduplication interval are treated as duplicates, and only one copy of the message is delivered.
-    
-* If you send one message with ContentBasedDeduplication enabled and then another message with the MessageDeduplicationId the same as the message created for the first MessageDeduplicationId, the two messages are treated as duplicates and only one copy of the message is delivered.
-    
+- Each message must have a unique MessageDeduplicationId,
+  - You can MessageDeduplicationId explicitly specify.
+  - If you cannot provide MessageDeduplicationId and have enabled ContentBasedDeduplication for your queue, VK CS SQS uses a SHA-256 hash to generate with MessageDeduplicationId using the message body (but not the message attributes).
+  - If you do not provide MessageDeduplicationId the queue is not ContentBasedDeduplication set, the action will fail.
+  - If the contentbaseddeduplication queue is set, you MessageDeduplicationId cancel the generated one.
+- When contentbaseddeduplication is in effect, messages with identical content sent within the deduplication interval are treated as duplicates, and only one copy of the message is delivered.
+- If you send one message with ContentBasedDeduplication enabled and then another message with the MessageDeduplicationId the same as the message created for the first MessageDeduplicationId, the two messages are treated as duplicates and only one copy of the message is delivered.
 
-The maximum length of MessageDeduplicationId\ is 128 characters. MessageDeduplicationId can contain alphanumeric characters (a-z, A-Z, 0-9) and punctuation marks ( ). !"#$%&'()\*+,-./:;<=>?@[\\]^_\`{|}~
+The maximum length of MessageDeduplicationId\ is 128 characters. MessageDeduplicationId can contain alphanumeric characters (a-z, A-Z, 0-9) and punctuation marks ( ). !"#$%&'()\*+,-./:;<=>?@[\\]^\_\`{|}~
 
 Type: String
 
@@ -73,12 +64,10 @@ This parameter applies only to FIFO (first-in-first-out) queues.
 
 A tag indicating that the message belongs to a specific group of messages. Messages belonging to the same message group are processed according to the FIFO principle (however, messages in different message groups may be processed out of order). To alternate multiple ordered threads in the same queue, use MessageGroupId values (for example, session data for multiple users). In this scenario, multiple consumers can process the queue, but each user's session data is processed in FIFO mode.
 
-* You must associate a non-empty MessageGroupId with a message. If you don't provide MessageGroupId, the action will fail.
-    
-* ReceiveMessage can return messages with multiple MessageGroupId values. For each MessageGroupId, messages are sorted by the time they were sent. The caller cannot specify MessageGroupId.
-    
+- You must associate a non-empty MessageGroupId with a message. If you don't provide MessageGroupId, the action will fail.
+- ReceiveMessage can return messages with multiple MessageGroupId values. For each MessageGroupId, messages are sorted by the time they were sent. The caller cannot specify MessageGroupId.
 
-The length of the MessageGroupId is 128 characters. Acceptable values: alphanumeric characters and punctuation marks. (!"#$%&'()\*+,-./:;<=>?@[\\]^_\`{|}~)
+The length of the MessageGroupId is 128 characters. Acceptable values: alphanumeric characters and punctuation marks. (!"#$%&'()\*+,-./:;<=>?@[\\]^\_\`{|}~)
 
 Type: String
 
@@ -108,20 +97,19 @@ Type: String
 
 Required: Yes
 
-Response Elements
----------------
+## Response Elements
 
 The following items are returned by the service.
 
 MD5OfMessageAttributes
 
-MD5 digest of the message attribute string without URL encoding. This attribute can be used to verify that the VK CS SQS message is received correctly. VK CS SQS decrypts the message by URL before creating an MD5 digest. 
+MD5 digest of the message attribute string without URL encoding. This attribute can be used to verify that the VK CS SQS message is received correctly. VK CS SQS decrypts the message by URL before creating an MD5 digest.
 
 Type: String
 
 MD5OfMessageBody
 
-MD5 digest of the message attribute string without URL encoding. This attribute can be used to verify that the VK CS SQS message is received correctly. VK CS SQS decrypts the message by URL before creating an MD5 digest. 
+MD5 digest of the message attribute string without URL encoding. This attribute can be used to verify that the VK CS SQS message is received correctly. VK CS SQS decrypts the message by URL before creating an MD5 digest.
 
 Type: String
 
@@ -133,7 +121,7 @@ Type: String
 
 MessageId
 
-An attribute containing the messageId message sent to the queue. 
+An attribute containing the messageId message sent to the queue.
 
 Type: String
 
@@ -147,8 +135,7 @@ The length of the SequenceNumber128 bits. SequenceNumber continues to increase f
 
 Type: String
 
-Mistakes
-------
+## Mistakes
 
 AWS.SimpleQueueService.UnsupportedOperation
 
@@ -162,10 +149,9 @@ The message contains characters outside the allowed set.
 
 HTTP Status Code: 400
 
-Examples
--------
+## Examples
 
-The following example of a SendMessage request sends a message to the queue containing This is a test message. You have to URL-encode the entire URL. However, in this example, only the message body is encoded in the URL to make it easier to read. The structure of AUTHPARAMS depends on the signature of the API request. 
+The following example of a SendMessage request sends a message to the queue containing This is a test message. You have to URL-encode the entire URL. However, in this example, only the message body is encoded in the URL to make it easier to read. The structure of AUTHPARAMS depends on the signature of the API request.
 
 #### Sample request
 

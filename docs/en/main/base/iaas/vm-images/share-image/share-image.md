@@ -1,7 +1,6 @@
 Sharing an image across multiple projects allows you to speed up deployment of instances.
 
-VK CS panel
----------
+## VK CS panel
 
 When creating an image, select the "Allow access to all projects" item:
 
@@ -11,8 +10,7 @@ In this case, the image will not appear automatically in other projects - but a 
 
 ![](./assets/1598375177058-1598375177058.png)
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 To set up image sharing in the OpenStack client:
 

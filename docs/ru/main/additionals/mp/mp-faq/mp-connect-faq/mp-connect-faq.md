@@ -1,5 +1,4 @@
-Создание виртуальной машины с предустановленным ПО
---------------------------------------------------
+## Создание виртуальной машины с предустановленным ПО
 
 В [разделе личного кабинета "Магазин приложений"](https://mcs.mail.ru/app/services/marketplace/) вам уже доступны для создания виртуальные машины с предустановленным ПО:
 
@@ -13,16 +12,15 @@
 
 ![](./assets/1547733569513-img-2019-01-17-08-30-51.png)
 
-Подключение и управление
-------------------------
+## Подключение и управление
 
 Выберите нужный вам тип подключения и прочитайте о том, как это сделать, в следующих статьях:
 
-*   [](https://mcs.mail.ru/help/iaas-create/vnc)[Подключение к инстансу через консоль VNC](https://mcs.mail.ru/help/iaas-create/vnc)
-*   [Подключение к инстансу через консоль PuTTY](https://mcs.mail.ru/help/iaas-create/putty)
-*   [Подключение к инстансу через консоль Cygwin](https://mcs.mail.ru/help/iaas-create/cygwin)
-*   [Подключение к инстансу через RDP](https://mcs.mail.ru/help/iaas-create/rdp-connect?kb_language=ru_RU)
+- [](https://mcs.mail.ru/help/iaas-create/vnc)[Подключение к инстансу через консоль VNC](https://mcs.mail.ru/help/iaas-create/vnc)
+- [Подключение к инстансу через консоль PuTTY](https://mcs.mail.ru/help/iaas-create/putty)
+- [Подключение к инстансу через консоль Cygwin](https://mcs.mail.ru/help/iaas-create/cygwin)
+- [Подключение к инстансу через RDP](https://mcs.mail.ru/help/iaas-create/rdp-connect?kb_language=ru_RU)
 
 Также рекомендуем следующие статьи:
 
-*   [](https://mcs.mail.ru/help/iaas-create/control?kb_language=ru_RU)[Устройство панели управления VK CS](https://mcs.mail.ru/help/iaas-create/control?kb_language=ru_RU)
+- [](https://mcs.mail.ru/help/iaas-create/control?kb_language=ru_RU)[Устройство панели управления VK CS](https://mcs.mail.ru/help/iaas-create/control?kb_language=ru_RU)

@@ -16,14 +16,14 @@ The minimum deposit amount is 10 rubles.
 <tabpanel>
 
 To top up your balance:
+
 1. Specify the amount of the deposit.
 2. Select the payment method. You can top up your account using many popular payment systems - bank cards, SberPay, Qiwi, YooMoney, from a phone number.
-3. Make the payment using your preferred payment method. 
+3. Make the payment using your preferred payment method.
 
 Payment operations are carried out with the support of the [Деньги.Мэйл.Ру](https://money.mail.ru/oferta/payfast).
 
 The payment takes place in real time and is credited within 10 minutes.
-
 
 </tabpanel>
 <tabpanel>
@@ -32,10 +32,10 @@ For legal entities, residents of the Russian Federation, it is possible to creat
 
 1. Enter the payment amount.
 2. Select the payment method - bank transfer. A file with an invoice will be automatically generated and uploaded, in the purpose of payment of which the necessary data will be specified:
-    - Details of the organization of the payee;
-    - Account number;
-    - Purpose of payment;
-    - Payment amount.
+   - Details of the organization of the payee;
+   - Account number;
+   - Purpose of payment;
+   - Payment amount.
 
 <warn>
 
@@ -43,7 +43,7 @@ Before making a payment, make sure that the information about the purpose of the
 
 </warn>
 
-Funds sent by bank transfer are credited automatically. It should be noted that the processing time of the transaction depends on the bank and can reach up to three banking (working) days. 
+Funds sent by bank transfer are credited automatically. It should be noted that the processing time of the transaction depends on the bank and can reach up to three banking (working) days.
 
 Funds will be credited to the balance after checking the receipt of the transfer to the payee's account.
 

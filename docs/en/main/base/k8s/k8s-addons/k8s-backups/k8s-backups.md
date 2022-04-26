@@ -2,12 +2,11 @@ Using Velero, you can create a backup copy of a Kubernetes cluster to the VK Clo
 
 For this you will need:
 
-*   Kubernetes cluster deployed in VK CS;
-*   Velero client;
-*   OpenStack Plugin.
+- Kubernetes cluster deployed in VK CS;
+- Velero client;
+- OpenStack Plugin.
 
-Description
------------
+## Description
 
 Velero is a handy Kubernetes backup tool that compresses and backs up Kubernetes objects to object storage.
 
@@ -17,13 +16,12 @@ Every Velero operation — on-demand backup, scheduled backup, restore from back
 
 Velero is ideal for a disaster recovery plan and for preparing a Kubernetes cluster for an upgrade by taking snapshots of the state of the cluster resources. In this scenario, we will install and configure Velero to interact with the Kubernetes cluster on VK Cloud Solutions and make a backup of the namespace with all content to the VK Cloud Storage S3 cloud storage using the Openstack plugin.
 
-Installing Velero client
-------------------------
+## Installing Velero client
 
 Velero consists of:
 
-*   a client that is installed on the local Kubernetes cluster administrator computer;
-*   a server that runs on the kubernetes cluster itself.
+- a client that is installed on the local Kubernetes cluster administrator computer;
+- a server that runs on the kubernetes cluster itself.
 
 Additionally, you may need an Openstack client with a block storage API package. Read more [here](https://mcs.mail.ru/help/ru_RU/user-account/mgmt-interfaces#section-3).
 
@@ -43,8 +41,7 @@ To check if the Velero is working, call the help information:
 velero --help
 ```
 
-Creating a bucket for backups
------------------------------
+## Creating a bucket for backups
 
 Since Velero saves its backups to S3 storage, it is necessary to create a bucket in S3 storage before installing the server into the cluster.
 
@@ -54,7 +51,7 @@ Create a my-velero-backup bucket in the Object Storage service using the VK CS P
 
 You also need to create an account to access the bucket in the Object Storage service and get access keys:
 
-![](./assets/1635260480209-unnamed-(1).png)
+![](<./assets/1635260480209-unnamed-(1).png>)
 
 Write the obtained access keys to the s3_creds file:
 
@@ -64,17 +61,16 @@ aws_access_key_id=<Access Key ID>
 aws_secret_access_key=<Secret Key>
 ```
 
-Installing the velero server
-----------------------------
+## Installing the velero server
 
 A Velero installation consists of multiple Kubernetes objects that work together to create, schedule, and manage backups.
 
 The velero install command will take the preliminary steps to set up your cluster, in particular:
 
-*   will create a namespace velero;
-*   add a velero service account;
-*   configures rbac to access the Velero account service;
-*   will install CRD for Velero specific resources — Backup, Schedule, Restore, Config.
+- will create a namespace velero;
+- add a velero service account;
+- configures rbac to access the Velero account service;
+- will install CRD for Velero specific resources — Backup, Schedule, Restore, Config.
 
 Run the command:
 
@@ -90,12 +86,12 @@ velero install \
 
 Let's dwell on the arguments in detail:
 
-*   \--plugins velero / velero-plugin-for-aws: v1.0.0 — plugin for interacting with S3 storage for backups.
-*   \--provider aws — protocol for interacting with S3 storage.
-*   \--bucket my-velero-backup — bucket for backups.
-*   \--secret-file ./s3_cred — file with keys for connecting to S3 storage.
-*   \--use-volume-snapshots = true — we will use PV snapshots for the current provider.
-*   \--backup-location-config region = mail, s3ForcePathStyle = "true", s3Url = https: //hb.bizmrg.com: 443 — endpoint of connection to VK CS Object Storage.
+- \--plugins velero / velero-plugin-for-aws: v1.0.0 — plugin for interacting with S3 storage for backups.
+- \--provider aws — protocol for interacting with S3 storage.
+- \--bucket my-velero-backup — bucket for backups.
+- \--secret-file ./s3_cred — file with keys for connecting to S3 storage.
+- \--use-volume-snapshots = true — we will use PV snapshots for the current provider.
+- \--backup-location-config region = mail, s3ForcePathStyle = "true", s3Url = https: //hb.bizmrg.com: 443 — endpoint of connection to VK CS Object Storage.
 
 After executing the command, you can see similar output:
 
@@ -118,8 +114,7 @@ kubectl logs deployment/velero -n velero
 
 The output should be free of errors.
 
-Installing the VK CS plugin
----------------------------
+## Installing the VK CS plugin
 
 Next, you need to install the VK CS plugin to work with block storage.
 
@@ -221,8 +216,7 @@ Restart deployment:
 kubectl rollout restart deployment/velero -n velero
 ```
 
-Creating a backup
------------------
+## Creating a backup
 
 You can check creation and restoration from backups using the nginx server as an example.
 
@@ -238,14 +232,14 @@ metadata:
  name: nginx-example
  labels:
    app: nginx
- 
+
 ---
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
  name: cinder
 provisioner: kubernetes.io/cinder
- 
+
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -259,8 +253,8 @@ spec:
  resources:
    requests:
      storage: 3Gi
- 
- 
+
+
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -290,7 +284,7 @@ spec:
          - mountPath: "/var/log/nginx"
            name: nginx-logs
            readOnly: false
- 
+
 ---
 apiVersion: v1
 kind: Service
@@ -342,7 +336,7 @@ Access Modes:	RWO
 VolumeMode:  	Filesystem
 Capacity:    	3Gi
 Node Affinity:   <none>
-Message:    	 
+Message:
 Source:
 	Type:   	Cinder (a Persistent Disk resource in OpenStack)
 	VolumeID:   76bcc859-dea5-4b44-ba8c-46c4bd664e97
@@ -369,7 +363,7 @@ velero backup create nginx-example --include-namespaces nginx-example
 To view existing backups, velero has the velero get backups command:
 
 ```
-velero get backups 
+velero get backups
 NAME            STATUS      CREATED                         EXPIRES   STORAGE LOCATION   SELECTOR
 nginx-example   Completed   2020-02-07 16:02:26 +0300 MSK   29d       default            <none>
 ```
@@ -442,8 +436,7 @@ The list of resources reflects each of the Kubernetes objects that were backed u
 openstack volume backup list
 ```
 
-Restore from backup
--------------------
+## Restore from backup
 
 Simulate the crash and remove the namespace with the test application:
 
@@ -454,7 +447,7 @@ kubectl delete ns nginx-example
 Make sure the namespace is removed:
 
 ```
-kubectl get ns 
+kubectl get ns
 NAME              STATUS   AGE
 default           Active   21h
 ingress-nginx     Active   21h
@@ -476,7 +469,7 @@ Run \`velero restore describe nginx-example-20200207171734\` or \`velero restore
 The namespace with all resources has been successfully restored. Verify this by running the following command:
 
 ```
-kubectl get pods -n nginx-example 
+kubectl get pods -n nginx-example
 NAME                                READY   STATUS    RESTARTS   AGE
 nginx-deployment-7bfb85948d-jfzh9   1/1     Running   0          62s
 nginx-deployment-7bfb85948d-x7h7t   1/1     Running   0          62s
@@ -485,13 +478,12 @@ nginx-deployment-7bfb85948d-x7h7t   1/1     Running   0          62s
 As you can see, the namespace and pods of the web server have been restored. Also, make sure that the block storage disk has been recovered:
 
 ```
-openstack volume list 
+openstack volume list
 ```
 
 If you restore to another cluster, then before restoring from a backup, you must repeat the Velero configuration for the new cluster (repeat the Installing velero to a Kubernetes cluster and Installing the VK CS plugin). The bucket and the keys to access the bucket are used by the existing ones (Bucket where the created backup of the Kubernetes cluster is located).
 
-Deleting a backup
------------------
+## Deleting a backup
 
 To remove the backup, use the command
 
@@ -501,8 +493,7 @@ velero backup delete nginx-example
 
 Velero backups and block storage backups will be deleted.
 
-Creating a backup on a schedule
--------------------------------
+## Creating a backup on a schedule
 
 Velero has a mechanism for creating scheduled backups. A scheduler is responsible for this, which is similar in functionality to cron.
 
@@ -515,14 +506,14 @@ Schedule "daily" created successfully.
 
 At the stage of creating a schedule, you need to specify the name of the schedule - in our case, daily and pass the parameters through the arguments:
 
-*   \--schedule="@every 1h"  - create 1 time per hour. As arguments, this parameter can accept various options for setting the schedule, including using the cron scheme, for example, \--schedule="0 \*/6 \* \* \*". Details of use can be found in the help:
-    
-    ```
-    velero --help
-    ```
-    
-*   \--include-namespaces nginx-example — which namespace we include in the backup.
-*   \--ttl — how long the backup version will live before deleting.
+- \--schedule="@every 1h"  - create 1 time per hour. As arguments, this parameter can accept various options for setting the schedule, including using the cron scheme, for example, \--schedule="0 \*/6 \* \* \*". Details of use can be found in the help:
+
+  ```
+  velero --help
+  ```
+
+- \--include-namespaces nginx-example — which namespace we include in the backup.
+- \--ttl — how long the backup version will live before deleting.
 
 To see what schedules are available, run the command:
 
@@ -537,12 +528,11 @@ In the list of backups, a scheduled backup will have a prefix with the name of t
 ```
 velero get backups
 NAME STATUS CREATED EXPIRES STORAGE LOCATION SELECTOR
-daily-20200414114346 Completed 2020-04-14 11:43:46 +0000 UTC 23h default 
+daily-20200414114346 Completed 2020-04-14 11:43:46 +0000 UTC 23h default
 nginx-example          Completed   2020-04-14 11:25:46 +0000 UTC   29d       default            <none>
 ```
 
-Removing Velero from a Kubernetes cluster
------------------------------------------
+## Removing Velero from a Kubernetes cluster
 
 If Velero is no longer needed, then removal is performed with the following command:
 

@@ -1,12 +1,10 @@
-Description
------------
+## Description
 
 A Kubernetes cluster is made up of a set of machines called node's that run containerized applications. The cluster must have at least one worker node.
 
 Work nodes host pod's, which are application components. The control plane manages the worker nodes and pods in the cluster. In industrial environments, the control plane is typically run on multiple computers, and the cluster is typically deployed on multiple nodes to ensure fault tolerance and high reliability.
 
-Cluster creation
-----------------
+## Cluster creation
 
 To create a cluster, go to the ["Containers" section of the VK CS control panel](https://mcs.mail.ru/app/services/containers/add/) and click the "Add" button.
 
@@ -14,9 +12,9 @@ To create a cluster, go to the ["Containers" section of the VK CS control panel]
 
 Then you should select the desired development environment:
 
-*   Dev environment (development)
-*   Staging environment (pre-release environment)
-*   Production (combat or live environment, for such an environment at least 3 master nodes are recommended)
+- Dev environment (development)
+- Staging environment (pre-release environment)
+- Production (combat or live environment, for such an environment at least 3 master nodes are recommended)
 
 ![](./assets/1603751914413-konfiguraciya-klastera.jpg)
 

@@ -3,7 +3,5 @@ The optimal settings for the Java virtual machine are selected automatically dur
 To change the parameters, enter the Ambari interface,
 
 1. Open the service of interest (for example, HDFS) and select the "Configs" tab.
-    
 2. On the Configs tab, scroll to the very bottom of the page to the Java machine settings:
-    
 3. After changing the settings, Ambari will prompt you to restart the services.

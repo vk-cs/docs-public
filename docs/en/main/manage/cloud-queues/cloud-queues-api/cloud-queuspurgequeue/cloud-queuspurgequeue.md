@@ -4,8 +4,7 @@ Messages sent to the queue before your call, PurgeQueue can be received, but are
 
 Messages sent to the queue after the call, PurgeQueue can be deleted during the queue cleanup.
 
-Request Parameters
------------------
+## Request Parameters
 
 QueueUrl
 
@@ -17,8 +16,7 @@ Type: String
 
 Required: Yes
 
-Mistakes
-------
+## Mistakes
 
 AWS.SimpleQueueService.NonExistentQueue
 
@@ -32,10 +30,9 @@ Indicates that the specified queue has previously received a purgequeuequery wit
 
 HTTP Status Code: 403
 
-Examples
--------
+## Examples
 
-In the following request request example, a queue named myQueue is cleared. The AUTHPARAMS structure depends on the API request signature. For more information, see [Examples of Signed Signature Requests version 4](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html ) in the General Reference for Amazon Web Services .
+In the following request request example, a queue named myQueue is cleared. The AUTHPARAMS structure depends on the API request signature. For more information, see [Examples of Signed Signature Requests version 4](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html) in the General Reference for Amazon Web Services .
 
 #### Sample request
 

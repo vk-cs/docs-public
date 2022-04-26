@@ -1,7 +1,6 @@
 Transferring discs between projects is possible in VK CS.
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 To transfer a disk in the OpenStack client:
 

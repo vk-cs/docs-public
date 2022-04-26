@@ -1,25 +1,24 @@
 Webhooks для S3 - это возможность настраивать отправку HTTP/S запросов по событиям для бакета, используя API. Например, можно:
 
-*   настроить обработку и конвертирование файлов после загрузки
-*   интегрироваться с любыми внешними системами
-*   настроить логирование для объектного хранилища
+- настроить обработку и конвертирование файлов после загрузки
+- интегрироваться с любыми внешними системами
+- настроить логирование для объектного хранилища
 
 Перечень событий (Event), для которых возможно настроить конфигурацию Webjook:
 
-*   s3:ObjectCreated:\* - PutObject, PutObjectCopy, CompleteMultipartUpload
-*   s3:ObjectCreated:Put - PutObject
-*   s3:ObjectCreated:Copy - PutObjectCopy
-*   s3:ObjectCreated:CompleteMultipartUpload - CompleteMultipartUpload
-*   s3:ObjectRemoved:\* - DeleteObject
-*   s3:ObjectRemoved:Delete - DeleteObject
+- s3:ObjectCreated:\* - PutObject, PutObjectCopy, CompleteMultipartUpload
+- s3:ObjectCreated:Put - PutObject
+- s3:ObjectCreated:Copy - PutObjectCopy
+- s3:ObjectCreated:CompleteMultipartUpload - CompleteMultipartUpload
+- s3:ObjectRemoved:\* - DeleteObject
+- s3:ObjectRemoved:Delete - DeleteObject
 
 Доступны следующие методы для работы с WebHooks:
 
-*   PutBucketNotificationConfiguration
-*   GetBucketNotificationConfiguration
+- PutBucketNotificationConfiguration
+- GetBucketNotificationConfiguration
 
-Общая XML-конфигурация
-----------------------
+## Общая XML-конфигурация
 
 ```
 PUT /?notification HTTP/1.1
@@ -46,8 +45,7 @@ Host: Bucket.hb.bizmrg.com
 </NotificationConfiguration>
 ```
 
-Put Bucket Notification Configuration
--------------------------------------
+## Put Bucket Notification Configuration
 
 Метод PUT позволяет включить уведомление о некотором событии (PutObject, DeleteObject и т.д) в бакете.
 
@@ -99,8 +97,7 @@ Content-Type: application/xml
 Connection: close
 ```
 
-GetBucketNotificationConfiguration
-----------------------------------
+## GetBucketNotificationConfiguration
 
 Возвращает текущую конфигурацию правил (SimpleNotificationConfiguration) бакета. Если правила не были установлены для данного бакета, будет возращен пустой элемент NotificationConfiguration.
 
@@ -165,8 +162,7 @@ Connection: close
 </NotificationConfiguration>
 ```
 
-Пример выполнения Webhook
--------------------------
+## Пример выполнения Webhook
 
 Для примера установленных правил, при загрузкие объектов в бакет bucketA с именами image/\*.png, будет приходить следующий запрос:
 
@@ -237,11 +233,11 @@ content-type: application/json
 
 Cигнатура вычисляется по формуле:
 
-* * *
+---
 
-signature = hmac_sha256(_url_, hmac_sha256(_TopicArn_, hmac_sha256(_Timestamp_, _Token_)))
+signature = hmac*sha256(\_url*, hmac*sha256(\_TopicArn*, hmac*sha256(\_Timestamp*, *Token*)))
 
-* * *
+---
 
 в нашем примере:
 

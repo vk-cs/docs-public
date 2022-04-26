@@ -1,10 +1,8 @@
-Перенос лицензий
-================
+## Перенос лицензий
 
 VK CS позволяет развертывать ряд серверных приложений Microsoft, используя ранее приобретенные лицензии. Это упрощает перенос рабочих нагрузок в облако VK CS, избавляя клиентов от новых расходов на покупку лицензий Microsoft. Такое преимущество доступно клиентам корпоративного лицензирования Microsoft с лицензиями соответствующих приложений по действующим договорам Microsoft Software Assurance (SA). Переносимость лицензий не только упрощает перенос для существующих пользователей с договорами SA, но и позволяет пользователям с бессрочными лицензиями продолжить их использование, получив все преимущества эффективной работы в облаке.
 
-Как зарегистрироваться
-----------------------
+## Как зарегистрироваться
 
 Все клиенты, использующие переносимость лицензий по соглашению Software Assurance, должны пройти процесс проверки лицензий, и компания Microsoft должна подтвердить, что вы обладаете правомочными лицензиями в соответствии с действующим договором Software Assurance (SA). Заполните форму проверки на [веб-сайте корпоративного лицензирования](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=28) и предоставьте ее своему представителю или партнеру Майкрософт, который поможет вам отправить ее в Майкрософт. Получив форму, корпорация Майкрософт проверит ваше право на использование преимущества и сообщит о результатах проверки вам и выбранному вами авторизованному партнеру по мобильным решениям.
 
@@ -14,8 +12,7 @@ Microsoft предоставит вам и VK CS подтверждение то
 
 После прохождения процесса проверки сообщите нам об этом по адресу [support@mcs.mail.ru](mailto:support@mcs.mail.ru) с указанием наименования проекта и типа используемой лицензии.
 
-Критерии правомочности
-----------------------
+## Критерии правомочности
 
 Чтобы воспользоваться преимуществом переносимости лицензий, необходимо обеспечить соблюдение следующих условий.
 
@@ -23,36 +20,21 @@ Microsoft предоставит вам и VK CS подтверждение то
 
 2\. Серверные приложения должны входить в перечень правомочных продуктов. Этот перечень включает следующие продукты:
 
-*   Exchange Server
-    
-*   SharePoint Server
-    
-*   SQL Server Standard Edition
-    
-*   SQL Server Enterprise Edition
-    
-*   SQL Server Business Intelligence Edition
-    
-*   Skype for Business Server
-    
-*   System Center Server
-    
-*   Dynamics CRM Server
-    
-*   Dynamics AX Server
-    
-*   Project Server
-    
-*   Visual Studio Team Foundation Server
-    
-*   BizTalk Server
-    
-*   Forefront Identity Manager
-    
-*   Forefront Unified Access Gateway
-    
-*   Remote Desktop Services
-    
+- Exchange Server
+- SharePoint Server
+- SQL Server Standard Edition
+- SQL Server Enterprise Edition
+- SQL Server Business Intelligence Edition
+- Skype for Business Server
+- System Center Server
+- Dynamics CRM Server
+- Dynamics AX Server
+- Project Server
+- Visual Studio Team Foundation Server
+- BizTalk Server
+- Forefront Identity Manager
+- Forefront Unified Access Gateway
+- Remote Desktop Services
 
 Полный список правомочных программных продуктов см. в условиях использования продуктов Microsoft по адресу [http://www.microsoft.com/licensing/about-licensing/product-licensing.aspx](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 
@@ -64,11 +46,10 @@ Microsoft предоставит вам и VK CS подтверждение то
 
 6\. Для обеспечения соответствия правилам «серверной фермы» Microsoft лицензии, развернутые в конкретном регионе VK CS, не могут быть перенесены в другой регион VK CS в течение 90 дней. Дополнительная информация приведена в условиях использования продуктов Microsoft по адресу [http://www.microsoft.com/licensing/about-licensing/product-licensing.aspx](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 
-Свяжитесь с нами
-----------------
+## Свяжитесь с нами
 
 Планируете развернуть сервер Microsoft Windows Server или решение для него (например, SQL или SharePoint) на платформе VK CS и хотите обсудить свой ИТ-проект с представителем отдела продаж VK CS? Свяжитесь с нами по адресу [support@mcs.mail.ru](mailto:support@mcs.mail.ru).
 
-* * *
+---
 
 Также см. [Microsoft Product Terms](https://www.microsoft.com/en-us/licensing/product-licensing/products).

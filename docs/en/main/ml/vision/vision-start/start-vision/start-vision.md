@@ -2,23 +2,20 @@ Machine learning service is enabled by default in VK CS projects. You can connec
 
 ![](./assets/1599679646114-1599679646114.png)
 
-API Endpoint
-------------
+## API Endpoint
 
 API Endpoint is a "entry point", a URL used to connect to a service for management. For machine learning, there are two of them:
 
-*   Vision for image recognition    https://smarty.mail.ru/
-*   Vision for video recognition    https://smarty.mail.ru/
+- Vision for image recognition    https://smarty.mail.ru/
+- Vision for video recognition    https://smarty.mail.ru/
 
-Access via client ID and secret key
------------------------------------
+## Access via client ID and secret key
 
 To control access via client ID and private key, [the Vision API page](https://mcs.mail.ru/app/services/machinelearning/vision/access/) displays the necessary information. The client ID has already been generated and cannot be replaced, and the key can be reissued with the appropriate button:
 
 ![](./assets/1599679805124-1599679805124.png)
 
-Access via service token
-------------------------
+## Access via service token
 
 To generate a service token, click the button and select the desired scope:
 

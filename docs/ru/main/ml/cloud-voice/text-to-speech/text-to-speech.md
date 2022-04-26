@@ -1,20 +1,23 @@
-Для того чтобы синтезировать речь, воспользуйтесь POST или GET-запросом в [https://voice.mcs.mail.ru/tts](https://voice.mcs.mail.ru/tts). 
+Для того чтобы синтезировать речь, воспользуйтесь POST или GET-запросом в [https://voice.mcs.mail.ru/tts](https://voice.mcs.mail.ru/tts).
 
 Для синтеза речи с помощью GET-запроса, нужно отправить его в параметре `text`:
 
-``` bash
+```bash
 curl -L --request GET \
     --url 'https://voice.mcs.mail.ru/tts?text=%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D1%82' \
     --header 'Authorization: Bearer xxxxxxxxxxxx'
  > ~/Downloads/tts.mp3
 ```
+
 Для синтеза речи с помощью POST-запроса нужно отправить его в теле:
-``` bash
+
+```bash
 curl -L --request POST \
   --url 'https://voice.mcs.mail.ru/tts?encoder=mp3' \
   --header 'Authorization: Bearer xxxxxxxxxxxx' \
   --output tts.mp3
 ```
+
 ## Дополнительные параметры
 
 В POST и GET-запросах допускаются следующие параметры:
@@ -29,11 +32,11 @@ curl -L --request POST \
 
 ## Коды ошибок
 
-| Код | Статус | Описание |
-| --- | --- | --- |
-| 4048 | 400 | Некорректный токен |
-| 4049 | 400 | Неактивный проект VK CS |
-| 4051 | 14001 | Некорректный формат текста |
+| Код  | Статус | Описание                   |
+| ---- | ------ | -------------------------- |
+| 4048 | 400    | Некорректный токен         |
+| 4049 | 400    | Неактивный проект VK CS    |
+| 4051 | 14001  | Некорректный формат текста |
 
 ### Смотрите также
 

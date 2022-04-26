@@ -23,9 +23,10 @@ The activation of the project after the restoration of a positive balance is car
 </info>
 
 ## Deleting project data
+
 In the absence of restoring a positive balance, the project resources will be placed in a queue for deletion, depending on the availability of payments for the entire period of the project's existence.:
+
 - If there was no money in the project, then after 3 days all resources will be deleted.
 - If the payment was made, the resources will be placed in the queue for deletion after 30 days (or when the balance is equal to -1000r.) after the services are stopped.
 
 The deletion queue is a mechanism for cleaning resources, in which data from the project and the VK CS platform are permanently deleted, without any possibility of their recovery.
-

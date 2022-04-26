@@ -1,25 +1,22 @@
-Конфигурация оборудования
--------------------------
+## Конфигурация оборудования
 
-Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы c использованием следующего оборудования: 
+Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы c использованием следующего оборудования:
 
-*   Prometheus 2.13 на ОС Ubuntu 18.04 LTS x86_64.
-*   Grafana 6.4.2 на ОС Ubuntu 18.04 LTS x86_64.
-*   Redis 5 на ОС Ubuntu 18.04 LTS x86_64.
+- Prometheus 2.13 на ОС Ubuntu 18.04 LTS x86_64.
+- Grafana 6.4.2 на ОС Ubuntu 18.04 LTS x86_64.
+- Redis 5 на ОС Ubuntu 18.04 LTS x86_64.
 
 **Внимание**
 
 При использовании серверов и оборудования других версий некоторые шаги сценария могут отличаться, от описанных ниже.
 
-Схема работы
-------------
+## Схема работы
 
 **![](./assets/1572296721838-1572296721838.png)**
 
 Для мониторинга параметров Redis и сбора метрик в Prometheus используется экспортер, который опрашивает сервер Redis и передает данные серверу Prometheus. Данные можно визуализировать в Grafana с помощью Dashboard.
 
-Установка redis_exporter
--------------------------
+## Установка redis_exporter
 
 1.  Выполните логин на сервер Redis с правами суперпользователя.
 2.  Укажите актуальную версию экспортера:
@@ -40,7 +37,6 @@ root@redis:~# useradd --system -g prometheus -s /bin/false prometheus
 ```
 
 4.  Скачайте redis_exporter и распакуйте в папку /tmp:
-    
 
 ```
 root@redis:~# wget https://github.com/oliver006/redis_exporter/releases/download/v$VERSION/redis_exporter-v$VERSION.linux-amd64.tar.gz -O - | tar -xzv -C /tmp
@@ -94,7 +90,7 @@ root@redis:~# systemctl enable redis_exporter
 Created symlink /etc/systemd/system/multi-user.target.wants/redis_exporter.service → /etc/systemd/system/redis_exporter.service.
 ```
 
-10.  Убедитесь, что сервис запустился:
+10. Убедитесь, что сервис запустился:
 
 ```
 root@redis:~# systemctl status redis_exporter
@@ -111,13 +107,12 @@ Oct 11 07:10:00 redis redis_exporter[16236]: time="2019-10-11T07:10:00Z" level=i
 Oct 11 07:10:00 redis redis_exporter[16236]: time="2019-10-11T07:10:00Z" level=info msg="Providing metrics at :9121/metrics"
 ```
 
-Настройка сервера Prometheus для получения данных redis_exporter
------------------------------------------------------------------
+## Настройка сервера Prometheus для получения данных redis_exporter
 
 1.  Выполните логин на сервере Prometheus.
 2.  В файле prometheus.yml для работы с redis_exporter:
 
-*   В scrape_configs добавьте следующую секцию:
+- В scrape_configs добавьте следующую секцию:
 
 ```
 scrape_configs:
@@ -128,7 +123,7 @@ scrape_configs:
           alias: redis
 ```
 
-*   В секции targets впишите IP-адрес сервера redis_exporter.
+- В секции targets впишите IP-адрес сервера redis_exporter.
 
 3.  Перезапустите сервиc Prometheus:
 
@@ -136,21 +131,17 @@ scrape_configs:
 root@prometheuskit-11102019-instance-5bqp2hk6nrgk:~# systemctl reload prometheus.service
 ```
 
-Настройка Grafana
------------------
+## Настройка Grafana
 
 Для визуализации полученных данных установите [соответствующий Dashboard](https://grafana.com/grafana/dashboards/763).
 
-После установки и настройки получения данных с сервера Prometheus отобразится примерно следующее:**
+После установки и настройки получения данных с сервера Prometheus отобразится примерно следующее:\*\*
 
 **![](./assets/1572300537338-1572300537337.png)**
 
+\*\*
 
-
-**
-
-Создание тестовой нагрузки
---------------------------
+## Создание тестовой нагрузки
 
 Чтобы посмотреть, как изменятся графики при нагрузке на сервер Redis, воспользуйтесь утилитой redis-benchmark, входящей в состав redis-tools.root@redis:
 
@@ -178,15 +169,11 @@ MSET (10 keys): 24537.47 requests per second
 
 Теперь посмотрите, как в результате тестовой нагрузки в Grafana изменились графики:**![](./assets/1572300626800-1572300626800.png)**
 
-Удаление redis_exporter
-------------------------
+## Удаление redis_exporter
 
 1.  Удалите Dashboard из Grafana.
-    
 2.  Из конфигурационного файла prometheus удалите секцию - job_name: redis.
-    
 3.  На ноде с redis_exporter выполните следующие команды:
-    
 
 ```
 root@redis:~# systemctl stop redis_exporter.service

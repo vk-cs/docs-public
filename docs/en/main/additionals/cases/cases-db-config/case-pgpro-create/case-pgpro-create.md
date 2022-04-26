@@ -1,19 +1,17 @@
 В данной статье рассмотрим, как установить standalone [Postgres Pro](https://postgrespro.ru/about), создать пользователя базы данных, настроить права и сетевой доступ.
 
-Конфигурация оборудования
--------------------------
+## Конфигурация оборудования
 
 Сервер Ubuntu 18.04 LTS x86_64.
 
-Установка Standalone Postgres Pro
----------------------------------
+## Установка Standalone Postgres Pro
 
 1.  Авторизуйтесь на сервере Ubuntu 18.04.
 2.  Обновите список репозиториев:
 
 ### Примечание.
 
- Для получения адресов репозиториев Postgres Pro [зарегистрируйтесь на сайте](https://postgrespro.ru/).
+Для получения адресов репозиториев Postgres Pro [зарегистрируйтесь на сайте](https://postgrespro.ru/).
 
 3.  Установите дополнительные пакеты:
 
@@ -21,21 +19,24 @@
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get install -y wget gnupg2 || sudo apt-get install -y gnupg
 ```
 
-4.  
-5.  Установите Postgres Pro:
-6.  
+4.
+5. Установите Postgres Pro:
 
-*   
-*   Скачайте ключ репозитория Postgres Pro:
-*   
+6.
+
+-
+- Скачайте ключ репозитория Postgres Pro:
+
+-
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ wget -O - http://repo.postgrespro.ru/keys/GPG-KEY-POSTGRESPRO | sudo apt-key add -
 ```
 
-*   
-*   Добавьте в список репозиториев репозиторий Postgres Pro:
-*   
+-
+- Добавьте в список репозиториев репозиторий Postgres Pro:
+
+-
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-add-repository "deb http://repo.postgrespro.ru//pgpro-archive/pgpro-12.1.1/ubuntu bionic main"
@@ -49,17 +50,19 @@ Fetched 87.0 kB in 1s (126 kB/s)
 Reading package lists... Done
 ```
 
-*   
-*   Установите сервер Postgres Pro:
-*   
+-
+- Установите сервер Postgres Pro:
+
+-
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get install -y postgrespro-std-12-server
 ```
 
-*   
-*   Выполните инициализацию базы данных:
-*   
+-
+- Выполните инициализацию базы данных:
+
+-
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo /opt/pgpro/std-12/bin/pg-setup initdb
@@ -67,9 +70,10 @@ Initalizing database...
 OK
 ```
 
-*   
-*   Добавьте сервер в список приложений, загружаемых автоматически:
-*   
+-
+- Добавьте сервер в список приложений, загружаемых автоматически:
+
+-
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo /opt/pgpro/std-12/bin/pg-setup service enable
@@ -77,17 +81,19 @@ Synchronizing state of postgrespro-std-12.service with SysV service script 
 Executing: /lib/systemd/systemd-sysv-install enable postgrespro-std-12
 ```
 
-*   
-*   Запустите сервер:
-*   
+-
+- Запустите сервер:
+
+-
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo systemctl start postgrespro-std-12.service
 ```
 
-*   
-*   После установки убедитесь, что сервер запущен:
-*   
+-
+- После установки убедитесь, что сервер запущен:
+
+-
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ ps ax | grep postgres
@@ -103,18 +109,19 @@ ubuntu@ubuntu-standard-2-4-40gb:~$ ps ax | grep postgres
 
 ```
 
-*   
-*   Обновите пути для использования Postgres Pro:
-*   
+-
+- Обновите пути для использования Postgres Pro:
+
+-
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo /opt/pgpro/std-12/bin/pg-wrapper links update
 ```
 
-5.  
-6.  Поверьте подключение к базе данных. По умолчанию для доступа к базе данных пользователю не требуется пароль:
-    
-7.  
+5.
+6. Поверьте подключение к базе данных. По умолчанию для доступа к базе данных пользователю не требуется пароль:
+
+7.
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo su - postgres
@@ -138,12 +145,12 @@ postgres=# \q
 
 Установка завершена.
 
-Создание базы данных и настройка прав доступа
----------------------------------------------
+## Создание базы данных и настройка прав доступа
 
-1.  
-2.  Создайте базу данных mybase:
-3.  
+1.
+2. Создайте базу данных mybase:
+
+3.
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo su - postgres
@@ -155,28 +162,30 @@ postgres=# create database mybase;
 CREATE DATABASE
 ```
 
-2.  
-3.  Создайте пользователя myuser c паролем mypass:
-4.  
+2.
+3. Создайте пользователя myuser c паролем mypass:
+
+4.
 
 ```
 postgres=# create user myuser with encrypted password 'mypass';
 CREATE ROLE
 ```
 
-3.  
-4.  Дайте пользователю myuser права для доступа к базе данных mybase:
-    
-5.  
+3.
+4. Дайте пользователю myuser права для доступа к базе данных mybase:
+
+5.
 
 ```
 postgres=# grant all privileges on database mybase to myuser;
 GRANT
 ```
 
-4.  
-5.  Проверьте подключение для пользователя ОС Ubuntu:
-6.  
+4.
+5. Проверьте подключение для пользователя ОС Ubuntu:
+
+6.
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ psql -hlocalhost -Umyuser -W mybase
@@ -189,8 +198,7 @@ mybase=>
 
 Настройка сетевого доступа
 
-
-----------------------------
+---
 
 --
 

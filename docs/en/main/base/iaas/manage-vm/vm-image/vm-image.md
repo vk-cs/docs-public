@@ -1,7 +1,6 @@
 An image is a file that contains a virtual disk with an operating system or other data already installed on it. Images are used to create virtual instances in the cloud.
 
-VK CS control panel
------------------
+## VK CS control panel
 
 To create an image from an existing instance [in your VK CS account, you](https://mcs.mail.ru/app/services/infra/servers/) should:
 
@@ -11,8 +10,7 @@ To create an image from an existing instance [in your VK CS account, you](https:
 4.  Click "Create Image". The process of creating an image will begin, and the status can be obtained by hovering the mouse over the colored indicator.![](./assets/1596645337690-snimok-ekrana-2020-08-05-v-19.34.27.png)
 5.  The created image will be available in the "Images" section after a while, and in the context menu of the image it will be possible to create a new virtual machine from this image:![](./assets/1597307157053-1597307157053.png)
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 To create an image in the OpenStack client, you need:
 

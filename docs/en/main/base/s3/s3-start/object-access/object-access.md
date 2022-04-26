@@ -1,5 +1,4 @@
-Information about objects
--------------------------
+## Information about objects
 
 You can view information about an object when you select a bucket on the Buckets tab of the Object Storage service.
 
@@ -9,11 +8,10 @@ All objects of the selected bucket and possible operations with them are listed 
 
 VK CS provides several ways to access objects:
 
-*   Download
-*   Access by public link
+- Download
+- Access by public link
 
-Download
---------
+## Download
 
 To download objects, select the desired object or mark several objects and click the "Download" button:
 
@@ -27,8 +25,7 @@ To download a single object, you can use the options menu of the selected object
 
 Downloading directories in a bucket is only possible through the S3 CLI, S3 API, or S3-compatible graphical file managers.
 
-Public access
--------------
+## Public access
 
 By default, objects uploaded to the bucket have private access settings that prevent users from accessing them from the Internet.
 
