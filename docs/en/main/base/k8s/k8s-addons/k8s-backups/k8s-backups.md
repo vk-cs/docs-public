@@ -51,7 +51,7 @@ Create a my-velero-backup bucket in the Object Storage service using the VK CS P
 
 You also need to create an account to access the bucket in the Object Storage service and get access keys:
 
-![](<./assets/1635260480209-unnamed-(1).png>)
+![](./assets/1635260480209-unnamed-(1).png>)
 
 Write the obtained access keys to the s3_creds file:
 
