@@ -6,8 +6,7 @@ File storages can be connected to project instances using the CIFS or NFS protoc
 
 File storage can only be accessed from virtual machines within the VK CS project.
 
-VK CS control panel
------------------
+## VK CS control panel
 
 To create a storage [in your VK CS account, you](https://mcs.mail.ru/app/services/infra/shares/) should:
 
@@ -19,8 +18,7 @@ To create a storage [in your VK CS account, you](https://mcs.mail.ru/app/service
 
 To delete a file storage, you must first unmount it on virtual machines, then select the "Delete" item in the context menu of the required file storage.
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 To create a file store in the manila client, run the commands:
 

@@ -1,7 +1,6 @@
 На данный момент VK CS поддерживает сразу 2 Terraform провайдера: OpenStack для управления IaaS-сервисами и собственный VK CS Terraform Provider для управления Kubernetes. Кластеры Kubernetes, которые ранее управлялись с помощью OpenStack Terraform Provider можно перевести под управление VK CS Terraform Provider для того, чтобы получить возможность осуществлять с помощью Terraform настройку авто-масштабирования кластера, работу с Node Group, осуществлять обновление версии и тд.
 
-Инструкция по переходу
-----------------------
+## Инструкция по переходу
 
 Важно, что VK CS Terraform Provider работает с базовыми IaaS-ресурсами, управляемыми с помощью OpenStack Terraform Provider. Следовательно, необходимо активировать оба провайдера для корректной работы с кластерами Kubernetes.
 
@@ -40,7 +39,7 @@ resource "mcs_kubernetes_node_group" "ng_2" {
 }
 ```
 
-2\. Если до этого в terraform state не было ресурсов **VK CS провайдера**, то выполним 
+2\. Если до этого в terraform state не было ресурсов **VK CS провайдера**, то выполним
 
 ```bash
 terraform init
@@ -56,8 +55,8 @@ terraform import mcs_kubernetes_node_group.ng_2 ng_uuid
 4\. Для прекращения использования **openstack провайдера** для управления кластером Kubernetes обязательно выполним команду
 
 ```bash
-terraform state rm openstack_containerinfra_cluster_v1.cluster_1 
-```
+terraform state rm openstack_containerinfra_cluster_v1.cluster_1
+````
 
 5\. Удалим из кода упоминание кластера, управляемого с помощью OpenStack Terraform Provider
 

@@ -4,10 +4,10 @@ The recommended way to connect to a virtual machine via SSH is using a key pair:
 
 To connect, the following conditions must be met:
 
-*   15 minutes have passed since the VM was created and all scripts have finished their work
-*   The virtual machine is on
-*   A security group has been assigned to the virtual machine with a rule that allows remote access via SSH and TCP port 22
-*   The instance must have an external IP address available for connection
+- 15 minutes have passed since the VM was created and all scripts have finished their work
+- The virtual machine is on
+- A security group has been assigned to the virtual machine with a rule that allows remote access via SSH and TCP port 22
+- The instance must have an external IP address available for connection
 
 **Caution**
 
@@ -17,26 +17,23 @@ In this case, remote connection using SSH will not be possible.
 
 Remote access for such instances is possible by creating it in a private network with the DHCP option enabled, as well as an assigned Floating IP address.
 
-Getting a login
----------------
+## Getting a login
 
 Each operating system has a login account. The standard account is not used for security purposes, but you can always activate it and assign a password. However, it is not recommended to use built-in accounts to avoid the possibility of unauthorized third parties gaining access to your instance.
 
-<table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(2%); width: 98%;" width="265"><tbody><tr><td style="background-color: rgb(239, 239, 239);">operating system</td><td style="background-color: rgb(239, 239, 239);">Login</td></tr><tr><td height="19" width="48.679245283018865%">Bitrix *</td><td width="51.320754716981135%">root *</td></tr><tr><td height="19">CentOS</td><td>centos</td></tr><tr><td height="19">Debian</td><td>debian</td></tr><tr><td height="19">Fedora</td><td>fedora</td></tr><tr><td height="19">FreeBSD</td><td>freebsd</td></tr><tr><td height="19">Ubuntu</td><td>ubuntu</td></tr></tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(2%); width: 98%;" width="265"><tbody><tr><td style="background-color: rgb(239, 239, 239);">operating system</td><td style="background-color: rgb(239, 239, 239);">Login</td></tr><tr><td height="19" width="48.679245283018865%">Bitrix *</td><td width="51.320754716981135%">root* </td></tr><tr><td height="19">CentOS</td><td>centos</td></tr><tr><td height="19">Debian</td><td>debian</td></tr><tr><td height="19">Fedora</td><td>fedora</td></tr><tr><td height="19">FreeBSD</td><td>freebsd</td></tr><tr><td height="19">Ubuntu</td><td>ubuntu</td></tr></tbody></table>
 
-\* Bitrix: Immediately after logging in, the system will ask you to set a new password. To do this, the system will ask for the current password (bitrix) and will ask for a new password for the root user twice.
+\*Bitrix: Immediately after logging in, the system will ask you to set a new password. To do this, the system will ask for the current password (bitrix) and will ask for a new password for the root user twice.
 
 Bitrix-CentOS \* image currently does not support Ext-Net.
 
-Getting the key
----------------
+## Getting the key
 
 At the stage of creating an instance, a key was selected or a new key pair was created. When a new key was generated, it was downloaded to the local computer. This key is required to connect, regardless of the local operating system used.
 
 Connection to an instance is configured depending on the local operating system used.
 
-Windows
--------
+## Windows
 
 **Windows 10**
 
@@ -47,11 +44,12 @@ It is enough to execute the command
 ```
  ssh -i <path to key> login @ IP_address
 ```
+
 Where:
 
-*   Key path - full path to the key file previously created or loaded when creating an instance
-*   Login - the login of the operating system of the instance
-*   IP address - external IP address of the virtual machine, which can be seen in the instance information on the "Virtual Machines" tab of the "Cloud Computing" service
+- Key path - full path to the key file previously created or loaded when creating an instance
+- Login - the login of the operating system of the instance
+- IP address - external IP address of the virtual machine, which can be seen in the instance information on the "Virtual Machines" tab of the "Cloud Computing" service
 
 If the command is successful, you can see a request to confirm the connection to a previously unknown host:
 
@@ -106,8 +104,7 @@ If everything is configured correctly, a login prompt window will appear:
 
 The login depends on the operating system image and can be found in the general information about the instance.
 
-Linux / MacOS X
----------------
+## Linux / MacOS X
 
 Before connecting to an instance, you must provide access to a previously saved or generated key:
 
@@ -140,7 +137,6 @@ After creating a virtual machine running Linux, we recommend setting a separate 
     ```
      sudo passwd root
     ```
-    
 3.  Enter a new password and confirm it again
 
 To get root user rights, run the command:

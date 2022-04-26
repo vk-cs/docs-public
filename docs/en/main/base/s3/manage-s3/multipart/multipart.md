@@ -4,7 +4,7 @@ Multiple (multipart) loading allows you to load one object as a set of parts. Ea
 
 Using a composite load has the following benefits:
 
-*   Improved performance - You can load parts in parallel to improve performance.
-*   Fast recovery for any network problem - The smaller chunk size minimizes the impact of a failed boot restart due to a network error.
-*   Pause and Resume Object Loading - You can download portions of an object over time. After a multipart download is initiated, there is no expiration date; you must explicitly complete or cancel a compound load.
-*   Start loading before the final size of the object is known - you can load the object as it is created.
+- Improved performance - You can load parts in parallel to improve performance.
+- Fast recovery for any network problem - The smaller chunk size minimizes the impact of a failed boot restart due to a network error.
+- Pause and Resume Object Loading - You can download portions of an object over time. After a multipart download is initiated, there is no expiration date; you must explicitly complete or cancel a compound load.
+- Start loading before the final size of the object is known - you can load the object as it is created.

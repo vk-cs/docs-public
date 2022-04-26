@@ -1,4 +1,5 @@
 In order to ensure the stability of resources in projects, billing sends notifications of several types:
+
 - Excess of expenses
 - Reaching balance thresholds
 

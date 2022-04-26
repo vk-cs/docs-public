@@ -4,8 +4,7 @@ Creating a manual backup can be useful for urgently creating a virtual machine r
 
 Before performing high-risk operations with the settings of an instance or its data, it is recommended to perform a full backup, which will allow you to return the virtual machine to its original state before the changes occur.
 
-VK CS control panel
------------------
+## VK CS control panel
 
 To create a manual backup copy of an instance [in your VK CS account](https://mcs.mail.ru/app/services/infra/servers/) manually, you should:
 
@@ -14,8 +13,7 @@ To create a manual backup copy of an instance [in your VK CS account](https://mc
 3.  Enter the name of the created backup:![](./assets/1596737206419-snimok-ekrana-2020-08-06-v-20.58.17.png)
 4.  Click "Create backup". A notification about the start of the backup creation will appear in the interface.![](./assets/1596739694904-snimok-ekrana-2020-08-06-v-21.48.02.png)
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 To create a backup in the karbor client:
 

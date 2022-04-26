@@ -1,30 +1,29 @@
 ## General guidelines for building fault-tolerant applications
 
-* Separate your application into stateless and stateful components. Plan your application so that any of the components can scale horizontally. Avoid having components that can only scale vertically.
-* To organize the interaction of various application components, use load balancers (Load Balancers) and message queues / message brokers (Message Brokers).
-* Manage your virtual infrastructure through IaC (using tools like Terraform).
-* Avoid manually editing the configuration of services and OS inside the virtual machine. To configure virtual machines, use configuration management systems (Ansible, AWX, Chef, Puppet). This way you can keep track of all configuration changes and manage them effectively.
-* Prepare virtual machine images for fast, secure and reproducible virtual infrastructure deployment (Immutable Infrastructure / Immutable Servers approach - read [here](https://martinfowler.com/bliki/ImmutableServer.html), [here](https:// www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure) and [here](https://medium.com/the-cloud-architect/immutable-infrastructure-21f6613e7a23)).
-* Improve your application's Observability: Set up end-to-end application monitoring from the infrastructure and operating system level down to the application itself to accurately and quickly identify issues and bottlenecks in your application (read [here](https://www.dynatrace .com/news/blog/what-is-observability-2/)).
-* Fault tolerance of virtual infrastructure instances (virtual machines, disks, networks) is already implemented at the platform level. It makes no sense to independently increase the fault tolerance of a virtual infrastructure using the methods used in the physical infrastructure.
-* Use domain names to communicate between your application nodes. This way you won't be tied to IP addresses.
-Use S3 storage for long-term storage of large amounts of information or static content ([Cloud Storage](https://mcs.mail.ru/docs/ru/base/s3#) or [Cloud Data Platform] services(https:// mcs.mail.ru/bigdata/)).
-* For your application components deployed in [Kubernetes](https://mcs.mail.ru/help/kubernetes/scaling), configure autoscaling. This will ensure that the necessary computing resources are provided during periods of increased load on the application.
-* When developing applications, use The Twelve-Factor App methodology (read [here](https://12factor.net/)).
-* Review [documentation]() for functionality, features, and limitations of the cloud provider.
-* Write to us using the [feedback form](https://mcs.mail.ru/help/contact-us) if you have any questions.
-
+- Separate your application into stateless and stateful components. Plan your application so that any of the components can scale horizontally. Avoid having components that can only scale vertically.
+- To organize the interaction of various application components, use load balancers (Load Balancers) and message queues / message brokers (Message Brokers).
+- Manage your virtual infrastructure through IaC (using tools like Terraform).
+- Avoid manually editing the configuration of services and OS inside the virtual machine. To configure virtual machines, use configuration management systems (Ansible, AWX, Chef, Puppet). This way you can keep track of all configuration changes and manage them effectively.
+- Prepare virtual machine images for fast, secure and reproducible virtual infrastructure deployment (Immutable Infrastructure / Immutable Servers approach - read [here](https://martinfowler.com/bliki/ImmutableServer.html), [here](https:// www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure) and [here](https://medium.com/the-cloud-architect/immutable-infrastructure-21f6613e7a23)).
+- Improve your application's Observability: Set up end-to-end application monitoring from the infrastructure and operating system level down to the application itself to accurately and quickly identify issues and bottlenecks in your application (read [here](https://www.dynatrace .com/news/blog/what-is-observability-2/)).
+- Fault tolerance of virtual infrastructure instances (virtual machines, disks, networks) is already implemented at the platform level. It makes no sense to independently increase the fault tolerance of a virtual infrastructure using the methods used in the physical infrastructure.
+- Use domain names to communicate between your application nodes. This way you won't be tied to IP addresses.
+  Use S3 storage for long-term storage of large amounts of information or static content ([Cloud Storage](https://mcs.mail.ru/docs/ru/base/s3#) or [Cloud Data Platform] services(https:// mcs.mail.ru/bigdata/)).
+- For your application components deployed in [Kubernetes](https://mcs.mail.ru/help/kubernetes/scaling), configure autoscaling. This will ensure that the necessary computing resources are provided during periods of increased load on the application.
+- When developing applications, use The Twelve-Factor App methodology (read [here](https://12factor.net/)).
+- Review documentation for functionality, features, and limitations of the cloud provider.
+- Write to us using the [feedback form](https://mcs.mail.ru/help/contact-us) if you have any questions.
 
 ## Security Recommendations
 
-* Use different [private networks](https://mcs.mail.ru/docs/ru/networks/vnet/networks) for different applications within the same project, or deploy each application in its project.
-* Use [security groups](https://mcs.mail.ru/docs/ru/networks/vnet/firewall#). Open only those ports that are necessary for your application's components to communicate, as well as ports used for the maintenance and maintenance tasks of your infrastructure and application.
-* Expose only endpoints (entry points) of your applications to the Internet. Close access to the infrastructure of your service from the Internet.
-* Use a secure VPN channel to network your local resources with resources in the cloud. Read more [here](https://mcs.mail.ru/help/network/vpn).
-* Use backup for critical components of your application. Check the integrity of your backups.
-* Periodically conduct exercises to restore data from backups.
-* Use MFA (Multi-Factor Authentication).
-* Connect AntiDDoS and WAF services.
+- Use different [private networks](https://mcs.mail.ru/docs/ru/networks/vnet/networks) for different applications within the same project, or deploy each application in its project.
+- Use [security groups](https://mcs.mail.ru/docs/ru/networks/vnet/firewall#). Open only those ports that are necessary for your application's components to communicate, as well as ports used for the maintenance and maintenance tasks of your infrastructure and application.
+- Expose only endpoints (entry points) of your applications to the Internet. Close access to the infrastructure of your service from the Internet.
+- Use a secure VPN channel to network your local resources with resources in the cloud. Read more [here](https://mcs.mail.ru/help/network/vpn).
+- Use backup for critical components of your application. Check the integrity of your backups.
+- Periodically conduct exercises to restore data from backups.
+- Use MFA (Multi-Factor Authentication).
+- Connect AntiDDoS and WAF services.
 
 ## Availability Zones
 

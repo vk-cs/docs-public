@@ -1,15 +1,13 @@
-Description
------------
+## Description
 
 Network topology is a graphical representation of the network connectivity of virtual machines. This is a diagram on which you can see the following elements, as well as all the connections between them:
 
-*   Networks
-*   Subnets
-*   Routers
-*   Virtual machines
+- Networks
+- Subnets
+- Routers
+- Virtual machines
 
-Network information
--------------------
+## Network information
 
 The topology of virtual networks of a specific VK CS project can be seen in the " [Network Topology](https://mcs.mail.ru/app/services/cloud-networks/topology/) " section of your personal account.
 

@@ -2,29 +2,26 @@ The Infrastructure Toolkit lets you create and manage instances from the command
 
 Consider creating a virtual machine using the Openstack CLI.
 
-Before starting work
---------------------
+## Before starting work
 
 To create a virtual machine, you must register on the VK CS Platform, make sure that you have an activated Cloud Computing service, a positive account balance in your personal account, and a sufficient number of resource quotas to create the desired instance configuration.
 
-Overview
---------
+## Overview
 
 Before starting an instance, you should collect the following parameters:
 
-*   **Instance source** - can be an image, snapshot (snapshot), or a block storage volume that contains an image or snapshot.
-*   **Name** - The display name of the instance. Also sets the hostname in the OS.
-*   **Flavor** is an instance configuration that defines the limits of the amount of virtual CPU and RAM for a virtual machine.
-*   **Key pair** are SSH credentials that are entered into images when they start. You must create at least one key pair for each project. If the key pair has already been created using an external tool, you can import it into OpenStack. You can also use a key pair for multiple instances belonging to this project.
-*   **Security Group** - Determines which inbound and outbound network traffic is redirected to and from instances. Security groups contain a set of firewall policies known as security group rules.
-*   **Floating IP address** - If necessary, you can assign a floating (public) IP address to a running instance.
-*   **Network** - define the network in which the instance will be located. By default, the project already has an ext-net network
-*   **Volume** - You can mount a block storage device or a persistent storage volume.
+- **Instance source** - can be an image, snapshot (snapshot), or a block storage volume that contains an image or snapshot.
+- **Name** - The display name of the instance. Also sets the hostname in the OS.
+- **Flavor** is an instance configuration that defines the limits of the amount of virtual CPU and RAM for a virtual machine.
+- **Key pair** are SSH credentials that are entered into images when they start. You must create at least one key pair for each project. If the key pair has already been created using an external tool, you can import it into OpenStack. You can also use a key pair for multiple instances belonging to this project.
+- **Security Group** - Determines which inbound and outbound network traffic is redirected to and from instances. Security groups contain a set of firewall policies known as security group rules.
+- **Floating IP address** - If necessary, you can assign a floating (public) IP address to a running instance.
+- **Network** - define the network in which the instance will be located. By default, the project already has an ext-net network
+- **Volume** - You can mount a block storage device or a persistent storage volume.
 
 An instance can be launched directly from one of the available images or from an image that was previously copied to a persistent volume. The OpenStack Image service provides a pool of images available to contributors to various projects.
 
-Collecting parameters
----------------------
+## Collecting parameters
 
 **Displaying a list of available flavors**
 
@@ -116,8 +113,7 @@ If the ext-net network or any other non-DHCP network will be assigned during ins
 
 Otherwise, the instance's network adapter cannot be configured to use a static IP network address.
 
-Instance launch
----------------
+## Instance launch
 
 First, you need to create a disk from the image with the operating system:
 
@@ -129,12 +125,12 @@ The resulting disk ID will be required to launch the instance.
 
 After all the data has been collected, you can start creating an instance. At this point, you should have the following credentials:
 
-*   Flavor - b7d20f15-82f1-4ed4-a12e-e60277fe955f
-*   Disc - b4071336-46a3-4cb7-ae3b-403f815862ad
-*   Key pair - myKey
-*   Security group - 77864043-2111-4e6a-8e4d-ba51ef82ad4b
-*   Network - 298117ae-3fa4-4109-9e08-8be5602be5a2
-*   Server Name - You can choose any name you like, but this example will use myNewServer.
+- Flavor - b7d20f15-82f1-4ed4-a12e-e60277fe955f
+- Disc - b4071336-46a3-4cb7-ae3b-403f815862ad
+- Key pair - myKey
+- Security group - 77864043-2111-4e6a-8e4d-ba51ef82ad4b
+- Network - 298117ae-3fa4-4109-9e08-8be5602be5a2
+- Server Name - You can choose any name you like, but this example will use myNewServer.
 
 **Attention**
 
@@ -145,7 +141,7 @@ If you boot an instance with INSTANCE_NAME that is longer than 63 characters, VK
 This example breaks the command into separate lines:
 
 ```
- $ openstack server create --flavor b7d20f15-82f1-4ed4-a12e-e60277fe955f --volume b4071336-46a3-4cb7-ae3b-403f815862ad --key-name myKey --security-group 77864043-2111-4e6a-8e4d-baef51 network 298117ae-3fa4-4109-9e08-8be5602be5a2 --config-drive True myNewServer
+ openstack server create --flavor b7d20f15-82f1-4ed4-a12e-e60277fe955f --volume b4071336-46a3-4cb7-ae3b-403f815862ad --key-name myKey --security-group 77864043-2111-4e6a-8e4d-baef51 network 298117ae-3fa4-4109-9e08-8be5602be5a2 --config-drive True myNewServer
 ```
 
 If the server was created correctly, you can see the following output:

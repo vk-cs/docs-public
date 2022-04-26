@@ -4,8 +4,7 @@ The Object Storage service allows you to use resources for hosting static sites 
 
 The bucket used for hosting cannot be used to host scripts that require running on the web server side.
 
-Domain binding
---------------
+## Domain binding
 
 To provide access to bucket objects using links leading to a unique site, you can bind your domain on the "Bind Domain" tab.
 
@@ -27,8 +26,7 @@ After binding, the bucket will be available via a link of the form:
 
 When you create a bucket with a period (.) Character in the name, it will only be available when using the HTTP protocol. If you need to use the HTTPS protocol, you must install an SSL certificate.
 
-Installing an SSL Certificate
------------------------------
+## Installing an SSL Certificate
 
 To install a personal SSL certificate, you should [contact technical support](mailto:support@mcs.mail.ru) , specifying the project, bucket data and providing an SSL certificate for installation.
 

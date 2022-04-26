@@ -1,22 +1,21 @@
 Operations with Buckets:
 
-*   Create - Create bucket
-*   ListBuckets - Get a list of buckets
-*   HeadBucket - Check if a bucket exists and has access to it
-*   ListObjects - Get a list of bucket objects
-*   DeleteBucket - Delete bucket
+- Create - Create bucket
+- ListBuckets - Get a list of buckets
+- HeadBucket - Check if a bucket exists and has access to it
+- ListObjects - Get a list of bucket objects
+- DeleteBucket - Delete bucket
 
 All operations with buckets are characterized by typical error messages, request headers and response headers. If the operation has special error messages, request or response headers, this will be indicated in the description of the operation.
 
-CreateBucket
-------------
+## CreateBucket
 
 The PUT operation creates a new bucket. To create a bucket, you need to register on the VK CS platform and obtain an access key to authorize requests. Bucket creation using anonymous requests is not possible. The initiator of the bucket creation request automatically becomes its owner.
 
 When using the operation to create a bucket, you can specify projects or groups that need to be granted certain rights to the bucket, and also specify the storage class: hotbox or icebox. There are two ways to grant rights using request headers:
 
-*   Specifying the prepared ACL in the request using the x-amz-acl request header.
-*   Explicitly specifying access rights using the x-amz-grant-read, x-amz-grant-write, x-amz-grant-read-acp, x-amz-grant-write-acp, x-amz-grant- headers full-control.
+- Specifying the prepared ACL in the request using the x-amz-acl request header.
+- Explicitly specifying access rights using the x-amz-grant-read, x-amz-grant-write, x-amz-grant-read-acp, x-amz-grant-write-acp, x-amz-grant- headers full-control.
 
 You can use a ready-made ACL or specify the access rights explicitly, but you cannot use both methods at the same time.
 
@@ -47,8 +46,7 @@ Content-Type: text / plain; charset = utf-8
 Connection: close
 ```
 
-ListBuckets
------------
+## ListBuckets
 
 The GET operation will return a list of buckets existing in the project.
 
@@ -94,8 +92,7 @@ Connection: close
 </ListAllMyBucketsResult>
 ```
 
-ListObjects
------------
+## ListObjects
 
 The GET operation returns some or all (up to 1000) objects in the bucket. You can use query parameters as selection criteria to return a subset of objects in a bucket.
 
@@ -154,8 +151,7 @@ Connection: close
 </ListBucketResult>
 ```
 
-HeadBucket
-----------
+## HeadBucket
 
 The operation is used to determine whether a bucket exists and whether it has permission to access it. The operation returns a 200 OK message if the bucket exists and you have permission to access it. Otherwise, this operation may return messages such as "404 Not Found" or "403 Forbidden".
 
@@ -182,8 +178,7 @@ Date: Mon, 31 Aug 2020 21:34:56 GMT
 Connection: close
 ```
 
-DeleteBucket
-------------
+## DeleteBucket
 
 DELETE operations delete the bucket specified in the URI. Success of the operation will be indicated by receiving 204 (No content) as the response code.
 

@@ -1,7 +1,6 @@
 Graphical tools such as file managers allow you to view objects in a bucket by simulating a hierarchical directory structure.
 
-Before starting work
---------------------
+## Before starting work
 
 Before you start working with file managers, you need to create an authorized account or make sure it exists, as well as the availability of data on the key ID and secret key.
 
@@ -13,8 +12,7 @@ When you create an account, you will be provided with data that you want to save
 
 ![](./assets/1598239248183-1598239248183.png)
 
-CyberDuck
----------
+## CyberDuck
 
 Cyberduck is a free cloud storage browser for Mac and Windows with support for Object Storage S3 as well as many other cloud platforms.
 
@@ -24,10 +22,10 @@ Installation is performed using [the product distribution kit](https://cyberduck
 
 To connect, specify:
 
-*   Connection type: Amazon S3
-*   Server and Port: hb.bizmrg.com:443
-*   Access Key ID: Key identifier obtained when creating an Object Storage account
-*   Secret access key: the secret key obtained when creating an Object Storage account
+- Connection type: Amazon S3
+- Server and Port: hb.bizmrg.com:443
+- Access Key ID: Key identifier obtained when creating an Object Storage account
+- Secret access key: the secret key obtained when creating an Object Storage account
 
 ![](./assets/1598239805330-1598239805330.png)
 
@@ -35,18 +33,17 @@ To connect, specify:
 
 CyberDuck works with VK CS Object Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
 
-WinSCP
-------
+## WinSCP
 
 WinSCP is an open source graphical SFTP (SSH File Transfer Protocol) client for Windows. It also supports SCP (Secure Copy Protocol). Designed for secure copying of files between a computer and servers that support these protocols.
 
 To configure, enter the following data:
 
-*   Transfer protocol: Amazon S3
-*   Hostname: hb.bizmrg.com
-*   Port: 443
-*   Access Key ID: Key ID obtained when creating an Object Storage account
-*   Secret Access Key: The secret key obtained when creating an Object Storage account
+- Transfer protocol: Amazon S3
+- Hostname: hb.bizmrg.com
+- Port: 443
+- Access Key ID: Key ID obtained when creating an Object Storage account
+- Secret Access Key: The secret key obtained when creating an Object Storage account
 
 ![](./assets/1598239872542-1598239872541.png)
 
@@ -54,8 +51,7 @@ To configure, enter the following data:
 
 CyberDuck works with VK CS Object Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
 
-S3FS
-----
+## S3FS
 
 s3fs allows Linux and macOS to mount an S3 bucket via FUSE. s3fs maintains its own object format for files, allowing you to use other tools such as the AWS CLI.
 
@@ -123,16 +119,13 @@ To mount a bucket in an operating system, you should:
      echo <key_identifier>: <secret_key>> ~ / .passwd-s3fs
     chmod 600 ~ / .passwd-s3fs
     ```
-    
 2.  Select the directory where the bucket will be mounted and make sure you have permission for the mount operation.
 3.  Run a command of the form:
     ```
      s3fs <package_name> / mount / <path_to_folder> -o passwd_file = ~ / .passwd-s3fs -o url = http: //hb.bizmrg.com -o use_path_request_style
     ```
-    
 
-Disk-O:
--------
+## Disk-O:
 
 Disk-O: - a program that allows you to work with clouds in one place - on your computer. At the same time, files do not take up space on the device, because they are stored only in the clouds. The program works with VK CS Object Storage, as well as platforms such as: Cloud Mail.ru, Yandex.Disk, Google Drive, Dropbox and other storages.
 
@@ -146,10 +139,10 @@ To connect, add the Cloud Storage service, then enter the account and bucket dat
 
 Where:
 
-*   Storage: predefined storage class of the Object Storage service - Cold data or Hot data
-*   Bucket: the name of the existing bucket
-*   Access Key: Key identifier obtained when creating an Object Storage account
-*   Secret Key: the secret key obtained when creating an Object Storage account
+- Storage: predefined storage class of the Object Storage service - Cold data or Hot data
+- Bucket: the name of the existing bucket
+- Access Key: Key identifier obtained when creating an Object Storage account
+- Secret Key: the secret key obtained when creating an Object Storage account
 
 As a result, the bucket will be mounted as an additional disk in the operating system and will not use local space.
 

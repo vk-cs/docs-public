@@ -1,7 +1,6 @@
 Application deployment in Kubernetes (k8s) is carried out using the kubectl utility. The full syntax of the utility commands can be found in the [official documentation](https://kubernetes.io/docs/reference/kubectl/overview /).
 
-Preparation
-----------
+## Preparation
 
 Kubectl runs on the command line or terminal.
 
@@ -21,9 +20,7 @@ kubectl get nodes --help
 
 Before working on a cluster, you need to connect to it by first importing the configuration file downloaded when creating the cluster.:
 
-``
-export KUBECONFIG=<file path>
-``
+`export KUBECONFIG=<file path>`
 
 Make sure that kubectl is configured to interact with your cluster by running the kubectl version command:
 
@@ -49,8 +46,7 @@ k8s-cl01   Ready    master   8m4s   v1.17.3
 
 The available nodes are displayed. Kubernetes will choose where to deploy the application depending on the available Node resources.
 
-Deploying the application
-------------------------
+## Deploying the application
 
 Let's deploy the first application in Kubernetes using the kubectl create deployment command. You need to specify the deployment name and location of the application image.
 
@@ -61,9 +57,9 @@ deployment.apps/kubernetes-bootcamp created
 
 As a result of executing the commands, the application was deployed. This included several stages:
 
-* search for a suitable node on which to run an instance of the application
-* planning to run the application on this node
-* configure the cluster to start an instance on a new node if necessary
+- search for a suitable node on which to run an instance of the application
+- planning to run the application on this node
+- configure the cluster to start an instance on a new node if necessary
 
 To display a list of deployments, use the get deployments command:
 
@@ -81,8 +77,7 @@ kubernetes-bootcamp   1/1     1            1           3m41s
 
 The output reflects 1 deployment with one instance of the application. The instance runs inside a Docker container on a node.
 
-Viewing the application
--------------------
+## Viewing the application
 
 The pods working inside Kubernetes work in a private isolated network. By default, they are visible from other pods and services in the same Kubernetes cluster, but not outside this network. When kubectl is used, interaction is carried out through the API endpoint to communicate with the application.
 
@@ -129,7 +124,7 @@ If port 8001 is unavailable, you need to make sure that the kubectl proxy is run
 
 The API server will automatically create an endpoint for each module based on the module name, which is also accessible via a proxy.
 
-First, you need to get the Pod name, and save it in the environment variable POD\_NAME:
+First, you need to get the Pod name, and save it in the environment variable POD_NAME:
 
 ```
 export POD\_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\\n"}}{{end}}')

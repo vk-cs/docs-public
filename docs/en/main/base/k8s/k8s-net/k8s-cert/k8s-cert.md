@@ -88,7 +88,7 @@ Also pay attention to the annotation "ingress.kubernetes.io/ssl-redirect : "true
 
 If you use several different Ingress Controller and want to use Ingress Nginx Ingress Controller for this instance, then you need to uncomment the annotation "kubernetes.io/ingress.class : nginx" .
 
-Below is an example of the ingress-custom-ssl.yaml file. 
+Below is an example of the ingress-custom-ssl.yaml file.
 
 ```
 \---

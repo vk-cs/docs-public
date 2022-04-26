@@ -1,5 +1,4 @@
-Конфигурация оборудования
--------------------------
+## Конфигурация оборудования
 
 Установленный и настроенный сервер ОС Ubuntu 18.04 LTS x86_64.
 
@@ -7,21 +6,19 @@
 
 При использовании серверов и оборудования других версий некоторые шаги сценария могут отличаться от описанных ниже.
 
-Схема работы
-------------
+## Схема работы
 
 ![](./assets/1572591796604-1572591796604.png)
 
-Описание компонентов
---------------------
+## Описание компонентов
 
 **Prometheus** - центральный сервер, предназначенный для сбора и хранения данных. Данные постоянно изменяются во времени (например, уровень заполненности диска, трафик через сетевой интерфейс, время отклика сайта). Элементы данных называются метриками. Сервер Prometheus с заданной периодичностью считывает метрики и помещает полученные данные в Time Series DB. Time Series DB - это разновидность баз данных, предназначенная для хранения временных рядов (значений с привязкой ко времени). Кроме того, Prometheus предоставляет интерфейс для выполнения запросов и визуализации полученных данных. Язык запросов Prometheus называется PromQL. Prometheus работает по модели Pull, то есть он сам опрашивает endpoints с целью получения данных.
 
 **Exporters** \- процессы, обеспечивающие сбор и их передачу серверу Prometheus. Существует много разных exporters, например:
 
-*   Node_exporter - сбор системных метрик (процессор, память, и т.д.).
-*   Mysqld_exporter - сбор метрик работы сервера MySQL.
-*   Postgres_exporter - сбор метрик работы сервера PostgreSQL.
+- Node_exporter - сбор системных метрик (процессор, память, и т.д.).
+- Mysqld_exporter - сбор метрик работы сервера MySQL.
+- Postgres_exporter - сбор метрик работы сервера PostgreSQL.
 
 После запуска exporter начинает сбор соответствующих метрик и ожидает запросов от сервера Prometheus по заданному порту. Данных передаются в формате http.
 
@@ -29,13 +26,10 @@
 
 Помимо функций сбора, анализа и визуализации данных, Prometheus и Grafana поддерживают настраиваемые оповещения. В Grafana этот механизм является встроенным, в Prometheus он реализуется отдельным компонентом (Alert_manager). Подробнее см. [тут](https://prometheus.io/docs/alerting/overview/).
 
-Установка Prometheus
---------------------
+## Установка Prometheus
 
 1.  Выполните логин на сервере Prometheus c правами суперпользователя.
-    
 2.  Укажите актуальную версию Prometheus:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:~# export VERSION="<версия>"
@@ -46,7 +40,6 @@ root@ubuntu-basic-1-1-10gb:~# export VERSION="<версия>"
 Актуальную версию Prometheus можно [найти и скачать тут](https://prometheus.io/download/).[](https://prometheus.io/download/#mysqld_exporter)
 
 3.  Создайте пользователя prometheus и группу prometheus, от имени которых вы будете запускать prometheus:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:~#  groupadd --system prometheus
@@ -84,13 +77,11 @@ root@ubuntu-basic-1-1-10gb:~# mkdir /var/lib/prometheus
     root@ubuntu-basic-1-1-10gb:~# cp /tmp/prometheus-$VERSION.linux-amd64/tsdb /usr/local/bin
     root@ubuntu-basic-1-1-10gb:~# cp -r /tmp/prometheus-$VERSION.linux-amd64/console\* /etc/prometheus
     ```
-    
 9.  Удалите содержимое распакованного архива из папки /tmp:
     ```
     root@ubuntu-basic-1-1-10gb:~# rm -rf /tmp/prometheus-$VERSION.linux-amd64
     ```
-    
-10.  Создайте конфигурационный файл /etc/prometheus/prometheus.yml со следующим содержимым:
+10. Создайте конфигурационный файл /etc/prometheus/prometheus.yml со следующим содержимым:
 
 ```
 global:
@@ -101,17 +92,16 @@ scrape_configs:
     - targets: ['localhost:9090']
 ```
 
-В секции global указывается период опроса данных, в секции scrape_configs подключается мониторинг ресурсов Prometheus. 
+В секции global указывается период опроса данных, в секции scrape_configs подключается мониторинг ресурсов Prometheus.
 
-11.  Измените владельца созданных файлов:
+11. Измените владельца созданных файлов:
 
 ```
 root@ubuntu-basic-1-1-10gb:~# chown -R prometheus:prometheus /var/lib/prometheus /etc/prometheus
 root@ubuntu-basic-1-1-10gb:~# chown prometheus:prometheus /usr/local/bin/prometheus /usr/local/bin/promtool /usr/local/bin/tsdb
 ```
 
-12.  Создайте сценарий запуска systemd сервиса Prometheus. Для этого создайте файл /etc/systemd/system/prometheus.service со следующим содержимым:
-    
+12. Создайте сценарий запуска systemd сервиса Prometheus. Для этого создайте файл /etc/systemd/system/prometheus.service со следующим содержимым:
 
 ```
 [Unit]
@@ -132,8 +122,7 @@ ExecReload=/bin/kill -HUP $MAINPID
 WantedBy=default.target
 ```
 
-13.  Запустите Prometheus:
-    
+13. Запустите Prometheus:
 
 ```
 root@ubuntu-basic-1-1-10gb:~# systemctl daemon-reload
@@ -142,8 +131,7 @@ root@ubuntu-basic-1-1-10gb:~# systemctl enable prometheus.service
 Created symlink /etc/systemd/system/default.target.wants/prometheus.service → /etc/systemd/system/prometheus.service.
 ```
 
-14.  Убедитесь, что сервис запустился:
-    
+14. Убедитесь, что сервис запустился:
 
 ```
 root@ubuntu-basic-1-1-10gb:~# systemctl status prometheus.service
@@ -167,15 +155,13 @@ Oct 16 07:26:46 ubuntu-basic-1-1-10gb prometheus[3980]: level=info ts=2019-10-16
 Oct 16 07:26:46 ubuntu-basic-1-1-10gb prometheus[3980]: level=info ts=2019-10-16T07:26:46.150Z caller=main.go:626 msg="Server is ready to receive web requests."
 ```
 
-15.  Войдите в веб-консоль Prometheus по порту 9090:
+15. Войдите в веб-консоль Prometheus по порту 9090:
 
 ![](./assets/1572596206027-1572596206027.png)
 
-Установка Node_exporter
-------------------------
+## Установка Node_exporter
 
 1.  Укажите актуальную версию Node_exporter:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:~# export VERSION="0.18.1"
@@ -195,7 +181,6 @@ root@ubuntu-basic-1-1-10gb:~# wget  https://github.com/prometheus/node_exporter
     ```
     root@ubuntu-basic-1-1-10gb:~# cp  /tmp/node_exporter-$VERSION.linux-amd64/node_exporter /usr/local/bin
     ```
-    
 4.  Измените владельца созданных файлов:
 
 ```
@@ -203,7 +188,6 @@ root@ubuntu-basic-1-1-10gb:~# chown -R prometheus:prometheus /usr/local/bin/node
 ```
 
 4.  Создайте сценарий запуска systemd сервиса node_exporter. Для этого создайте файл /etc/systemd/system/node_exporter.service со следующим содержимым:
-    
 
 ```
 [Unit]
@@ -222,7 +206,6 @@ WantedBy=multi-user.target
 ```
 
 5.  Запустите node_exporter:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:~# systemctl daemon-reload
@@ -232,7 +215,6 @@ Created symlink /etc/systemd/system/multi-user.target.wants/node_exporter.serv
 ```
 
 6.  Убедитесь, что сервис запустился:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:~# systemctl status node_exporter.service
@@ -256,18 +238,16 @@ Oct 16 07:45:29 ubuntu-basic-1-1-10gb node_exporter[4166]: time="2019-10-16T07:
 Oct 16 07:45:29 ubuntu-basic-1-1-10gb node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg="Listening on :9100" source="node_exporter.go:170"
 ```
 
-Настройка сервера Prometheus для получения данных Node_exporter
-----------------------------------------------------------------
+## Настройка сервера Prometheus для получения данных Node_exporter
 
 1.  В файла /opt/prometheus/prometheus.yml в секцию scrape_configs добавьте секцию работы с node_exporter:
-    
 
 ```
 scrape_configs:
 - job_name: 'node'
 scrape_interval: 10s
 static_configs:
-      - targets: ['localhost:9100'] 
+      - targets: ['localhost:9100']
 ```
 
 **Примечание**
@@ -283,17 +263,14 @@ static_configs:
 [](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_config)
 
 2.  Перезапустите сервиc Prometheus:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:~# systemctl reload prometheus.service
 ```
 
-3.  Подождите несколько минут, чтобы накопились данные. 
-    
+3.  Подождите несколько минут, чтобы накопились данные.
 
 4.  Для просмотра графика средней загрузки CPU в браузере перейдите по ссылке:
-    
 
 ```
 http://<IP-адрес вашего сервера PROMETHEUS>:9090/graph?g0.range_input=1h&g0.expr=rate(node_cpu_seconds_total{mode="system"}[1m])&g0.tab=1
@@ -325,8 +302,7 @@ http://<IP-адрес вашего сервера PROMETHEUS>:9090/consoles/inde
 
 ![](./assets/1572598726113-1572598726113.png)
 
-Установка Grafana
------------------
+## Установка Grafana
 
 Установим Grafana из репозитория:
 
@@ -422,33 +398,33 @@ Oct 16 13:28:23 ubuntu-basic-1-1-10gb grafana-server[6958]: t=2019-10-16T13:28:2
 
 **![](./assets/1572600416821-1572600416821.png)**
 
-10.  Нажмите Datasource Prometheus, затем Test:
+10. Нажмите Datasource Prometheus, затем Test:
 
 **![](./assets/1572600507125-1572600507125.png)**
 
-11.  Установите Dashboard для визуализации Node Exporter ([готовые Dashboard](https://grafana.com/grafana/dashboards), [популярный Dashboard для Node Exporter](https://grafana.com/grafana/dashboards/1860)). Для установки в веб-интерфейсе перейдите в Dashboards/Manage:
-    
-    **![](./assets/1572598970101-1572598970101.png)
-    
-    **
-12.  Нажмите Import и в поле Grafana.com Dashboard введите [https://grafana.com/grafana/dashboards/1860:](https://grafana.com/grafana/dashboards/1860:)
+11. Установите Dashboard для визуализации Node Exporter ([готовые Dashboard](https://grafana.com/grafana/dashboards), [популярный Dashboard для Node Exporter](https://grafana.com/grafana/dashboards/1860)). Для установки в веб-интерфейсе перейдите в Dashboards/Manage:
+
+    \*\*![](./assets/1572598970101-1572598970101.png)
+
+    \*\*
+
+12. Нажмите Import и в поле Grafana.com Dashboard введите [https://grafana.com/grafana/dashboards/1860:](https://grafana.com/grafana/dashboards/1860:)
 
 **![](./assets/1572600711766-1572600711765.png)**
 
-                Нажмите Load, выберите Datasource Prometheus и нажмите Import:
+Нажмите Load, выберите Datasource Prometheus и нажмите Import:
 
 **![](./assets/1572600758994-1572600758994.png)**
 
-13.  Откроется Dashboard:**
-    
+13. Откроется Dashboard:\*\*
+
     ![](./assets/1572600780117-1572600780117.png)
-    
-    **
 
-Создание тестовой нагрузки
---------------------------
+    \*\*
 
-Чтобы посмотреть, как изменятся графики при нагрузке на сервер, воспользуйтесь утилитой sysbench. 
+## Создание тестовой нагрузки
+
+Чтобы посмотреть, как изменятся графики при нагрузке на сервер, воспользуйтесь утилитой sysbench.
 
 Для этого:
 
@@ -459,31 +435,29 @@ root@ubuntu-basic-1-1-10gb:~# apt -y install sysbench
 ```
 
 2.  Запустите серию тестов:
+
     ```
     root@ubuntu-basic-1-1-10gb:~# sysbench cpu  --cpu-max-prime=2000000 --time=60 run
-    
+
     root@ubuntu-basic-1-1-10gb:~# sysbench memory --cpu-max-prime=2000000 --time=60 run
-    
+
     root@ubuntu-basic-1-1-10gb:~# sysbench fileio --file-test-mode=rndrw --time=60 prepare
     root@ubuntu-basic-1-1-10gb:~# sysbench fileio --file-test-mode=rndrw --time=60 run
-    
+
     root@ubuntu-basic-1-1-10gb:~# sysbench threads --time=60 run
-    
+
     root@ubuntu-basic-1-1-10gb:~# sysbench mutex --time=60 run
     ```
-    
 
 В результате тестовой нагрузки графики в Grafana изменяться:
 
 **![](./assets/1572600938427-1572600938427.png)**
 
-Удаление
---------
+## Удаление
 
 Чтобы удалить развернутые инструменты:
 
 1.  Удалите Grafana:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:~# systemctl stop grafana-server.service
@@ -492,17 +466,15 @@ root@ubuntu-basic-1-1-10gb:~# apt -y remove grafana
 ```
 
 2.  Удалите Node_exporter:
-    
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl stop node_exporter.service 
+root@ubuntu-basic-1-1-10gb:~# systemctl stop node_exporter.service
 root@ubuntu-basic-1-1-10gb:~# systemctl disable node_exporter.service 
 root@ubuntu-basic-1-1-10gb:~# rm /etc/systemd/system/node_exporter.service
 root@ubuntu-basic-1-1-10gb:~# rm -rf /opt/node_exporter
 ```
 
 3.  Удалите Prometheus:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:~# systemctl stop prometheus.service
@@ -512,7 +484,6 @@ root@ubuntu-basic-1-1-10gb:~# rm -rf /opt/prometheus
 ```
 
 4.  Удалите пользователя и группу:
-    
 
 ```
 root@ubuntu-basic-1-1-10gb:~# userdel prometheus

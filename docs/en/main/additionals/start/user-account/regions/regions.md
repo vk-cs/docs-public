@@ -6,7 +6,7 @@ You can independently choose the area of ​​location, disks, and other servic
 
 When creating a project, the MSK is the default region. To change the region, in the Personal Cabinet header, click on the name of the current region and select the desired region from the drop-down list.
 
-> ** Important: ** <br> Within one project, resources can be created in different regions. However, to ensure fault tolerance, the resources from different regions are not associated. If there were no resources in the current region, they would not appear in the interface.
+> **Important:** <br> Within one project, resources can be created in different regions. However, to ensure fault tolerance, the resources from different regions are not associated. If there were no resources in the current region, they would not appear in the interface.
 
 ## Services and restrictions
 
@@ -22,19 +22,19 @@ To ensure network connection between regions, you must use VPN or organize an In
 
 ### Prices
 
-Depending on the region, tariffs may change. To get price information, select the region and click ** User -> Project Settings -> Prices **.
+Depending on the region, tariffs may change. To get price information, select the region and click **User -> Project Settings -> Prices**.
 
 ### Billing
 
-The billing page is one for all regions. You can learn more about the Billing section in [Billing] (https://mcs.mail.ru/docs/ru/main/additionals/billing). 
+The billing page is one for all regions. You can learn more about the Billing section in [Billing] (https://mcs.mail.ru/docs/ru/main/additionals/billing).
 
 ### quotas
 
-Depending on the region, the project quota may differ. To get information about available quotas, select the region and click ** User -> Quota Management **. You can find more information about the quota section in the article [quotas] (https://mcs.mail.ru/docs/ru/additionals/start/user-account/quota-limits). To increase quotas [contact our support] (https://help.devmcs.ru/docs/en/contacts).
+Depending on the region, the project quota may differ. To get information about available quotas, select the region and click **User -> Quota Management**. You can find more information about the quota section in the article [quotas] (https://mcs.mail.ru/docs/ru/additionals/start/user-account/quota-limits). To increase quotas [contact our support] (https://help.devmcs.ru/docs/en/contacts).
 
 ## Interfaces
 
-* ** CLI **
+- **CLI**
 
 You can use the CLI to manage resources in any of the regions.
 
@@ -44,16 +44,16 @@ To get the OpenRC configuration file, select the region and click [** User -> Pr
 
 You can learn more about CLI configuration in [CLI section of the control interfaces] (https://mcs.mail.ru/docs/ru/additionals/start/user-Account/mgmt-Interfaces#CLI).
 
-* ** API **
+- **API**
 
 You can use the API to manage resources in any of the regions. To connect to the API in each region, individual endpoints are necessary. You can learn more about working with OpenStack API in [API section of the control interfaces] (https://mcs.mail.ru/docs/ru/additionals/start/user-account/mgmt-interfaces#api).
 
-To obtain a list of endpoints of the selected region, click ** User -> Project Settings -> API EndPoints **.
+To obtain a list of endpoints of the selected region, click **User -> Project Settings -> API EndPoints**.
 
-* ** Terraform **
+- **Terraform**
 
 You can use Terraform to create and configure resources in any region.
 
-For each region there is a configuration file. To get the Terraform configuration file, select the region and click ** User -> Project Settings -> Terraform -> Download file ** Terraform configuration.
+For each region there is a configuration file. To get the Terraform configuration file, select the region and click **User -> Project Settings -> Terraform -> Download file** Terraform configuration.
 
 Learn more about Terraform, you can learn in [Terraform section of the Control Interfaces article] (https://mcs.mail.ru/docs/ru/additionals/start/user-account/mgmt-interfaces#terraform).

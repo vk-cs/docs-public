@@ -3,7 +3,7 @@
 Запрос:
 
 ```
-curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth_provider=mcs&oauth_token=xxx"       \ 
+curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth_provider=mcs&oauth_token=xxx"       \
    -F file_0=@examples/car_number1.jpg                                                             \
    -F file_1=@examples/x5.png                                                                      \
    -F meta='{                                                                                      \

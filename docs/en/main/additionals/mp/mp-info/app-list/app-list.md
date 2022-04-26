@@ -18,8 +18,7 @@ ELK is now a powerful tool for collecting and analyzing information.
 
 VK Cloud Solutions allows you to create either one virtual machine with an ELK stack, or a complex of two ELK Multi Instances - elasticsearch instance and gateway instance.
 
-**Application Development Kits**
---------------------------------
+## **Application Development Kits**
 
 **GitLab CE** (Community Edition) is an open source Git repository management and collaborative project management system.
 
@@ -37,8 +36,7 @@ Implements the Servlet Specification, JavaServerPages Specification, and JavaSer
 
 **Jenkins** is an open source Java software system designed to provide a continuous software integration process. Jenkins allows you to automate the non-human part of the software development process by providing continuous integration functionality. Supports version control system tools including AccuRev, CVS, Subversion, Git, Mercurial, Perforce, Clearcase, RTC. Can build projects using Apache Ant and Apache Maven, and execute arbitrary shell scripts and Windows batch files. A build can be started in different ways, for example, on a commit event in the source control system, on a schedule, on a request to a specific URL, after another build in the queue completes.
 
-**Developer stacks**
---------------------
+## **Developer stacks**
 
 LAMP stack is a set of server software. Includes the following components
 

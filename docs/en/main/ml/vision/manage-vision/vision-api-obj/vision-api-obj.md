@@ -1,37 +1,27 @@
 This method allows you to find various objects in the photo.
 
-Request
-------
+## Request
 
 Authorization data is transmitted in the request line:
 
-  
-/ Parameter | Type | Value |
-| --- | --- | --- |
-| oauth_token | string | OAuth2 access token (required non-empty) |
+| / Parameter    | Type                                          | Value                                    |
+| -------------- | --------------------------------------------- | ---------------------------------------- |
+| oauth_token    | string                                        | OAuth2 access token (required non-empty) |
 | oauth_provider | string / OAuth2 provider (required non-empty) |
-
-### 
 
 ### Supported OAuth2 providers:
 
-  
-/ Provider / Value of oauth_provider | Getting a token |
-| --- | --- | --- |
-| Mail.Ru | mr | [https://help.mail.ru/biz/vision/api/v1/oauth_token](https://help.mail.ru/biz/vision/api/v1/oauth_token) |
-| MCS | mcs | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token ) (all MCS clients) |
-
-### 
+| / Provider / Value of oauth_provider | Getting a token |
+| ------------------------------------ | --------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Mail.Ru                              | mr              | [https://help.mail.ru/biz/vision/api/v1/oauth_token](https://help.mail.ru/biz/vision/api/v1/oauth_token)                 |
+| MCS                                  | mcs             | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token) (all MCS clients) |
 
 Request parameters are passed in JSON format in the request body with name="meta":
 
-  
-/ Parameter | Type | Value |
-| --- | --- | --- |
-| mode | []string | types of objects to be searched in the transmitted images (required non-empty) |
-| images | []image_meta / metadata of transmitted images (required non-empty) |
-
-### 
+| / Parameter | Type                                                               | Value                                                                          |
+| ----------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| mode        | []string                                                           | types of objects to be searched in the transmitted images (required non-empty) |
+| images      | []image_meta / metadata of transmitted images (required non-empty) |
 
 Possible values of mode:
 
@@ -49,12 +39,11 @@ mode can contain one or more modes. For example:
 
 ### image_meta
 
-  
-/ Parameter | Type | Value |
-| --- | --- | --- |
-| name | string | file names for matching files in the request and response (required non-empty) |
+| / Parameter | Type   | Value                                                                          |
+| ----------- | ------ | ------------------------------------------------------------------------------ |
+| name        | string | file names for matching files in the request and response (required non-empty) |
 
-Images are passed in the request body, the values of the name field must match those passed in images. 
+Images are passed in the request body, the values of the name field must match those passed in images.
 
 The maximum number of images per request is 100. The maximum size of each image should not exceed 4MB.
 
@@ -62,58 +51,52 @@ Request example:
 
 <table cellpadding="5" cellspacing="0" style="page-break-inside: avoid;" width="706"><colgroup><col width="694"></colgroup><tbody><tr><td style="border: 1px solid #000000;" width="694"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">POST /api/v1/objects/detect?oauth_provider=mr&amp;oauth_token=123&nbsp;HTTP/1.1<br><br>Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp<br><br>------WebKitFormBoundaryfCqTBHeLZlsicvMp<br>Content-Disposition: form-data; name="file_0"; filename=""<br>Content-Type: image/jpeg<br><br>000000000000000000000000000<br>000000000000000000000000000<br>000000000000000000000000000<br>------WebKitFormBoundaryfCqTBHeLZlsicvMp<br>Content-Disposition: form-data; name="file_1"; filename=""<br>Content-Type: image/jpeg<br><br>111111111111111111111111111<br>111111111111111111111111111<br>111111111111111111111111111<br>------WebKitFormBoundaryfCqTBHeLZlsicvMp<br>Content-Disposition: form-data; name="meta"<br><br>{"mode":["object","scene","car_number"],"images":[{"name":"file_0"},{"name":"file_1"}]}<br>------WebKitFormBoundaryfCqTBHeLZlsicvMp--</p></td></tr></tbody></table>
 
-Answer
------
+## Answer
 
-  
-/ Parameter | Type | Value |
-| --- | --- | --- |
-| status / int|200 if successful, otherwise the error description will be in body |
-/ body | string | response / response body |
+| / Parameter  | Type                                                               | Value                    |
+| ------------ | ------------------------------------------------------------------ | ------------------------ |
+| status / int | 200 if successful, otherwise the error description will be in body |
+| / body       | string                                                             | response / response body |
 
 ### response
 
-  
-/ Parameter | Type | Value |
-| --- | --- | --- |
-| scene_labels | []object / array of responses for each file with scenes (may be missing) |
-/ object_labels | []object / array of responses for each file with objects (may be missing) |
-| car_number_labels | []object / array of responses for each file with machine numbers (may be missing) |
-| multiobject_labels | []object / array of responses for each file with multiobjects (may be missing) |
-/ pedestrian_labels | []object / array of responses for each file with people (may be missing) |
+| / Parameter         | Type                                                                              | Value |
+| ------------------- | --------------------------------------------------------------------------------- | ----- |
+| scene_labels        | []object / array of responses for each file with scenes (may be missing)          |
+| / object_labels     | []object / array of responses for each file with objects (may be missing)         |
+| car_number_labels   | []object / array of responses for each file with machine numbers (may be missing) |
+| multiobject_labels  | []object / array of responses for each file with multiobjects (may be missing)    |
+| / pedestrian_labels | []object / array of responses for each file with people (may be missing)          |
 
 ### object
 
-  
-/ Parameter | Type | Value |
-| --- | --- | --- |
-| status | enum | execution result |
-| error | string / text description of the error (optional) |
-| name | string | file name for matching files in request and response |
-| labels | []label / list of objects (labels) found in the image |
+| / Parameter | Type                                                  | Value                                                |
+| ----------- | ----------------------------------------------------- | ---------------------------------------------------- |
+| status      | enum                                                  | execution result                                     |
+| error       | string / text description of the error (optional)     |
+| name        | string                                                | file name for matching files in request and response |
+| labels      | []label / list of objects (labels) found in the image |
 
 (only for pedestrian mode)
 
-   
-/ Parameter | Type | Value |
-| --- | --- | --- |
-| count_by_density | int | number of people in the frame, calculated using the density map |
-/ Parameter | Value |
-| 0 / successful |
+| / Parameter         | Type  | Value                                                           |
+| ------------------- | ----- | --------------------------------------------------------------- |
+| count_by_density    | int   | number of people in the frame, calculated using the density map |
+| / Parameter         | Value |
+| 0 / successful      |
 | 1 / permanent error |
 | 2 / temporary error |
 
 ### label
 
- 
-/ Parameter | Value |
-| --- | --- |
-| eng / label (name) for the found object in English |
-| rus / label (name) of the found object in Russian |
-/ eng_categories | list of categories (each category includes many labels) in English (optional) |
-/ rus_categories | list of categories (each category includes many labels) in Russian (optional) |
-/ prob | the degree of confidence that this object is in the image |
-| coord / coordinates of the found object (optional) |
+| / Parameter                                                                                                                                                                                                                                                                                | Value                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| eng / label (name) for the found object in English                                                                                                                                                                                                                                         |
+| rus / label (name) of the found object in Russian                                                                                                                                                                                                                                          |
+| / eng_categories                                                                                                                                                                                                                                                                           | list of categories (each category includes many labels) in English (optional) |
+| / rus_categories                                                                                                                                                                                                                                                                           | list of categories (each category includes many labels) in Russian (optional) |
+| / prob                                                                                                                                                                                                                                                                                     | the degree of confidence that this object is in the image                     |
+| coord / coordinates of the found object (optional)                                                                                                                                                                                                                                         |
 | types_prob / array of probabilities of license plate types. currently, the following types are supported: "rus" - all types of Russian numbers, "cis" - CIS numbers (except individual and military Ukrainian), "eu" - single-storey European numbers (optional, only for car_number mode) |
 
 Response example:

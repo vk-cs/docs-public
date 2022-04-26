@@ -1,18 +1,13 @@
-Add cost allocation tags to the specified VK CS SQS queue. 
+Add cost allocation tags to the specified VK CS SQS queue.
 
 When using queue tags, consider the following recommendations:
 
-* It is not recommended to add more than 50 tags to the queue.
-    
-* Tags have no semantic meaning. VK CS SQS interprets tags as character strings.
-    
-* Tags are case sensitive.
-    
-* A new tag with a key identical to the key of an existing tag overwrites an existing tag.
-    
+- It is not recommended to add more than 50 tags to the queue.
+- Tags have no semantic meaning. VK CS SQS interprets tags as character strings.
+- Tags are case sensitive.
+- A new tag with a key identical to the key of an existing tag overwrites an existing tag.
 
-Request Parameters
------------------
+## Request Parameters
 
 QueueUrl
 
@@ -34,8 +29,7 @@ Type: string for string matching
 
 Required: Yes
 
-Examples
--------
+## Examples
 
 This example illustrates one use of TagQueue.
 

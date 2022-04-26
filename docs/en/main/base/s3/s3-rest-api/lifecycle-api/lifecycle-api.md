@@ -1,8 +1,8 @@
 All available methods for working with object lifecycle:
 
-*   Get Buket Lifecycle Configuration - View the lifecycle configuration in a bucket
-*   Configure Buket Lifecycle - Configure lifecycle configuration rules
-*   Delete Buket Lifecycle - Deletes lifecycle configuration
+- Get Buket Lifecycle Configuration - View the lifecycle configuration in a bucket
+- Configure Buket Lifecycle - Configure lifecycle configuration rules
+- Delete Buket Lifecycle - Deletes lifecycle configuration
 
 General view of the configuration
 
@@ -32,8 +32,7 @@ General view of the configuration
 </LifecycleConfiguration>
 ```
 
-Get Buket Lifecycle Configuration
----------------------------------
+## Get Buket Lifecycle Configuration
 
 In a lifecycle configuration for a bucket, you can specify a lifecycle rule by prefixing the object key name, one or more object tags, or a combination of both. The response contains a filter item that you can use to change filter options and select a subset of objects to which the rule should apply.
 
@@ -82,8 +81,7 @@ Connection: close
 </LifecycleConfiguration>
 ```
 
-Configure Buket Lifecycle
--------------------------
+## Configure Buket Lifecycle
 
 In the lifecycle configuration for a bucket, you can specify a lifecycle rule by prefixing the object key name.
 
@@ -134,8 +132,7 @@ Content-Type: application / xml
 Connection: close
 ```
 
-Delete buket lifecycle
-----------------------
+## Delete buket lifecycle
 
 The DELETE operation removes the lifecycle configuration from the specified bucket. Removes all lifecycle configuration rules from the lifecycle subresource associated with the bucket, allowing expiration to be excluded from objects. As a result, the service will no longer automatically delete objects according to the rules contained in the remote lifecycle configuration.
 

@@ -2,15 +2,13 @@ Port - the virtual network interface card of the instance containing the IP addr
 
 Port operations can be performed [in your VK CS account](https://mcs.mail.ru/app/services/infra/shares/) and in the Openstack CLI.
 
-Port View
----------
+## Port View
 
 In your personal account VK CS you can view the existing ports of private networks. To do this, go to the "Networks" page of the "Virtual networks" section, select the required network, then open the subnet.![](./assets/1597858600623-snimok-ekrana-2020-08-19-v-20.36.21.png)
 
 The "Ports" tab shows the subnet connected to the Internet (the router ports are visible: SNAT, INTERFACE_DISTRIBUTED) and with DHCP enabled (the DHCP port address is also the address of the private DNS server).
 
-Adding ports
-------------
+## Adding ports
 
 In the VK CS panel, a port (network connection) is added to the virtual machine by selecting the "Add connection" option on the "Network information" tab of the instance page:![](./assets/1597849466961-snimok-ekrana-2020-08-19-v-17.58.26.png)
 
@@ -20,13 +18,11 @@ In the parameters of the added connection, you must fill in the fields:
 
 After saving, the network interface will be added to the instance; you will additionally need to configure the network in the instance's operating system.
 
-Editing and Deleting Ports
---------------------------
+## Editing and Deleting Ports
 
 Editing or deleting existing ports is available in the port context menu on the Ports tab:![](./assets/1597859877291-snimok-ekrana-2020-08-19-v-20.57.25.png)
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 Port operations can be performed in the OpenStack client:
 
@@ -54,14 +50,14 @@ Change port parameters:
  openstack port set <argument> <port ID>
 ```
 
-*   \--dns-name - DNS port name
-*   \--description - arbitrary description
-*   \--enable / disable - enable / disable the port (disabled port does not allow traffic)
-*   \--name - port name
-*   \--fixed-ip - assign the specified address from the subnet
-*   \--security-group - assign a security group to a port
-*   \--disable-port-security - disable security groups and checks for compliance of the port IP address and traffic
-*   \--allowed-address - specifying a trusted list of outgoing traffic addresses
+- \--dns-name - DNS port name
+- \--description - arbitrary description
+- \--enable / disable - enable / disable the port (disabled port does not allow traffic)
+- \--name - port name
+- \--fixed-ip - assign the specified address from the subnet
+- \--security-group - assign a security group to a port
+- \--disable-port-security - disable security groups and checks for compliance of the port IP address and traffic
+- \--allowed-address - specifying a trusted list of outgoing traffic addresses
 
 Remove port:
 

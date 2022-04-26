@@ -1,13 +1,12 @@
 Adds a permission to the queue for a specific participant. This allows you to share access to the queue.
 
-When you create a queue, you have full access rights to it. Only you, the queue owner, can grant or deny permissions to the queue. 
+When you create a queue, you have full access rights to it. Only you, the queue owner, can grant or deny permissions to the queue.
 
-Request Parameters
------------------
+## Request Parameters
 
 **ActionName.N**
 
-The action that the client wants to allow for the specified principal. Acceptable values: the name of any action or `*'.
+The action that the client wants to allow for the specified principal. Acceptable values: the name of any action or `\*'.
 
 Specifying 'SendMessage`, 'deleteMessage' or 'ChangeMessageVisibility' for 'actionName.n' also grants access rights for the corresponding batch versions of these actions: 'SendMessageBatch`, 'DeleteMessageBatch`, and 'ChangeMessageVisibilityBatch'.
 
@@ -25,7 +24,7 @@ Required: Yes
 
 **label**
 
-The unique identifier of the permission you are setting (for example` 'AliceSendMessage'). Maximum of 80 characters. Allowed characters include alphanumeric characters, hyphens ('-`) and underscores (`_').
+The unique identifier of the permission you are setting (for example `'AliceSendMessage'`). Maximum of 80 characters. Allowed characters include alphanumeric characters, hyphens ('-') and underscores ('\_').
 
 Type: String
 
@@ -41,8 +40,7 @@ Type: String
 
 Required: Yes
 
-Mistakes
-------
+## Mistakes
 
 **OverLimit**
 
@@ -50,8 +48,7 @@ The specified action reports a violation of the limit. For example` 'ReceiveMess
 
 HTTP Status Code: 403
 
-Examples
--------
+## Examples
 
 ### [](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html)
 

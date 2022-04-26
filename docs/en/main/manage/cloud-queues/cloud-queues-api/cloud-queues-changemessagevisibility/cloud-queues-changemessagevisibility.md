@@ -1,7 +1,6 @@
-The request changes the visibility timeout of the specified message in the queue to a new value. The default message visibility timeout is 30 seconds (minimum 0 seconds, maximum 12 hours). 
+The request changes the visibility timeout of the specified message in the queue to a new value. The default message visibility timeout is 30 seconds (minimum 0 seconds, maximum 12 hours).
 
-Request Parameters
------------------
+## Request Parameters
 
 **QueueUrl**
 
@@ -29,8 +28,7 @@ Type: Integer
 
 Required: Yes
 
-Mistakes
-------
+## Mistakes
 
 **AWS.SimpleQueueService.MessageNotInflight**
 
@@ -44,10 +42,9 @@ The specified receipt descriptor is invalid.
 
 HTTP Status Code: 400
 
-Examples
--------
+## Examples
 
-The following request request example changes the message visibility timeout by 60 seconds. The structure of 'AUTHPARAMS' depends on the signature of the API request. 
+The following request request example changes the message visibility timeout by 60 seconds. The structure of 'AUTHPARAMS' depends on the signature of the API request.
 
 #### Sample request
 

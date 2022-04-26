@@ -1,5 +1,4 @@
-Docker CE
----------
+## Docker CE
 
 ![](./assets/1600075000404-d1.png)
 
@@ -13,8 +12,7 @@ After installation, an application card will open with connection parameters:
 
 ![](./assets/1600075729728-d3.png)
 
-Docker Registry
----------------
+## Docker Registry
 
 ![](./assets/1600076134253-dr1.png)
 
@@ -24,8 +22,7 @@ After selecting the appropriate application, a window with a choice of parameter
 
 ![](./assets/1600076448574-dr3.png)
 
-Nexus
------
+## Nexus
 
 ![](./assets/1600079500552-n1.png)
 
@@ -37,8 +34,7 @@ The application is installed in a few minutes. Next, a window appears with chara
 
 ![](./assets/1600079636805-n3.png)
 
-ELK
----
+## ELK
 
 ![](./assets/1600080034651-e1.png)
 
@@ -52,8 +48,7 @@ A few minutes after installation, an application card will open with application
 
 ![](./assets/1600080673971-e4.png)
 
-ELK Multi instance
-------------------
+## ELK Multi instance
 
 ![](./assets/1600082809881-em1.png)
 
@@ -71,8 +66,7 @@ After a few minutes of installation, information on the application parameters a
 
 ![](./assets/1600084634677-em4.png)
 
-GitLab CE
----------
+## GitLab CE
 
 ![](./assets/1600090989394-git1.png)
 
@@ -84,7 +78,6 @@ At the end of the installation, an application card will appear:
 
 ![](./assets/1600091254812-git3.png)
 
-Panel title
------------
+## Panel title
 
 Panel content

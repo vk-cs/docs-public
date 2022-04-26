@@ -48,8 +48,8 @@ Other terms are defined in the Terms of Use of the Platform.
 
 4.1. The placement of Content on the servers of the Company and its use must not violate any applicable law, in particular, the Customer and / or Users are not entitled to:
 
-*   upload, store, transfer, provide access to other persons or otherwise bring to the public knowledge (post on the Service) the Content and other results of intellectual activity of the copyright holders in the absence of the explicitly expressed consent of these persons and / or the required amount of rights to such actions;
-*   upload, store, transfer, provide access to other persons to the Content prohibited by applicable law, or the Content, storage or use of which requires obtaining special permissions from authorized bodies or persons, if the Customer does not have the appropriate permissions.
+- upload, store, transfer, provide access to other persons or otherwise bring to the public knowledge (post on the Service) the Content and other results of intellectual activity of the copyright holders in the absence of the explicitly expressed consent of these persons and / or the required amount of rights to such actions;
+- upload, store, transfer, provide access to other persons to the Content prohibited by applicable law, or the Content, storage or use of which requires obtaining special permissions from authorized bodies or persons, if the Customer does not have the appropriate permissions.
 
 The content described in this clause is hereinafter referred to as “Prohibited Content”.
 

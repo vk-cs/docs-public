@@ -6,8 +6,7 @@ By using the Service you are in accordance with Art. 438 of the Civil Code of th
 
 The use of the Service is also governed by an agreement concluded between the Company and the Customer (hereinafter referred to as the "Agreement"). In the event of a conflict between the terms of the Agreement and the Agreement, the terms of the Agreement shall apply.
 
-1\. Terms and definitions
--------------------------
+## 1\. Terms and definitions
 
 **Site** - an Internet site located at [https://mcs.mail.ru/](https://mcs.mail.ru/) , which provides the Customer with access to the Platform and the Service. The Company places information on the Site that is mandatory for Customers.
 
@@ -25,7 +24,7 @@ Cloud FZ-152 / Service is a service of the Company known under the name "Cloud F
 
 **Subjects** - Subjects of Personal Data, whose Data is processed by the Customer when using the Service.
 
-**ISPDN** is an information system of personal data Cloud Servers from VK Cloud Solutions, formerly known as "VK Cloud Solutions Infra", which complies with the information security requirements of the legislation of the Russian Federation and provides the 3rd level of protection of personal data, which is confirmed by the Certificate of Compliance (available on the Internet at: [https://hb.bizmrg.com/mcs-static/___files/certificates/security_certificate.pdf)](https://hb.bizmrg.com/mcs-static/___files/certificates/security_certificate.pdf)
+**ISPDN** is an information system of personal data Cloud Servers from VK Cloud Solutions, formerly known as "VK Cloud Solutions Infra", which complies with the information security requirements of the legislation of the Russian Federation and provides the 3rd level of protection of personal data, which is confirmed by the Certificate of Compliance (available on the Internet at: [https://hb.bizmrg.com/mcs-static/\_\_\_files/certificates/security_certificate.pdf)](https://hb.bizmrg.com/mcs-static/___files/certificates/security_certificate.pdf)
 
 **Service unavailability (Downtime)** - the time interval from the moment the Customer sent a message to the Company's support service by e-mail to [support@mcs.mail.ru](mailto:support@mcs.mail.ru) or through the feedback form in the personal account, the fact of which was subsequently confirmed by the Company, and the moment the Service was resumed after the completion of the restoration work by the Company.
 
@@ -35,8 +34,7 @@ Cloud FZ-152 / Service is a service of the Company known under the name "Cloud F
 
 Other terms are defined in the Terms of Use of the VK Cloud Solutions Platform.
 
-2\. Subject of the Agreement, conditions for obtaining access to the Service
-----------------------------------------------------------------------------
+## 2\. Subject of the Agreement, conditions for obtaining access to the Service
 
 2.1. Under the terms of this Agreement, the Company provides the Customer around the clock with an Internet connection, the Cloud FZ-152 Service, which allows the Customer to create virtual servers and virtual disks in a secure ISPDN on the Contractor's servers, and the Customer undertakes to pay for the Contractor's services for using access to the Service in the amount of and the order as determined by the Applicable Rules. Protected ISPDN enables the Customer to process Personal Data in ISPDN under the terms of the Agreement (hereinafter also referred to as "services"). Access to the Service is provided to the Customer only if the Customer specifies the List of Personal Data and the Purpose.
 
@@ -56,13 +54,12 @@ The Customer can use the Service to the extent of the rights granted to him by t
 
 2.9. The placement of Content on the Contractor's servers and its use must not violate any applicable law, in particular, the Customer is not entitled to:
 
-*   upload, store, transfer, provide access to other persons or otherwise bring to the public knowledge (post on the Service) Content, including incl. intellectual property objects of rightholders in the absence of sufficient legal grounds for such actions;
-*   upload, store, transfer, provide access to other persons to the Content prohibited by applicable law, or the Content, storage or use of which requires obtaining special permissions from authorized bodies or persons, if the Customer does not have the appropriate permissions.
+- upload, store, transfer, provide access to other persons or otherwise bring to the public knowledge (post on the Service) Content, including incl. intellectual property objects of rightholders in the absence of sufficient legal grounds for such actions;
+- upload, store, transfer, provide access to other persons to the Content prohibited by applicable law, or the Content, storage or use of which requires obtaining special permissions from authorized bodies or persons, if the Customer does not have the appropriate permissions.
 
-2.10. The Contractor has the right to monitor the Content solely in order to verify that the Customer complies with the requirements of this Agreement for the Content and to prevent the use of Prohibited Content. The Customer undertakes not to create obstacles for the Contractor in the implementation of such monitoring, while the Customer has the right to use tools to preserve the confidentiality of the Content (such as encryption, firewalls). 2.11. The Customer instructs the Company to process the List of Personal Data of Subjects with a Purpose using automation tools in the following ways: access, storage, destruction to the extent that allows the Customer to provide the Service under the terms of the Agreement.
+  2.10. The Contractor has the right to monitor the Content solely in order to verify that the Customer complies with the requirements of this Agreement for the Content and to prevent the use of Prohibited Content. The Customer undertakes not to create obstacles for the Contractor in the implementation of such monitoring, while the Customer has the right to use tools to preserve the confidentiality of the Content (such as encryption, firewalls). 2.11. The Customer instructs the Company to process the List of Personal Data of Subjects with a Purpose using automation tools in the following ways: access, storage, destruction to the extent that allows the Customer to provide the Service under the terms of the Agreement.
 
-3\. Customer guarantees
------------------------
+## 3\. Customer guarantees
 
 3.1. The Customer represents and warrants that the Processing of Personal Data is governed exclusively by the legislation of the Russian Federation.
 
@@ -76,8 +73,7 @@ The Customer can use the Service to the extent of the rights granted to him by t
 
 3.6. The Customer certifies and guarantees that he is a legal entity registered in accordance with the legislation of the Russian Federation, fully legally capable, having all the necessary rights, permissions and powers to conclude the Agreement.
 
-4\. Rights and obligations of the Parties
------------------------------------------
+## 4\. Rights and obligations of the Parties
 
 4.1. The Contractor undertakes:
 
@@ -133,29 +129,26 @@ The Customer can use the Service to the extent of the rights granted to him by t
 
 4.6.2 Comply with the following requirements for the protection of Personal Data:
 
-*   Organize a regime for ensuring the security of the premises in which the data processing systems are located, preventing the possibility of uncontrolled entry or stay in these premises of persons who do not have the right to access these premises;
-*   Ensure the safety of the media containing the Data;
-*   Determine the list of persons whose access to the Data processed by the Company is necessary for the performance of their official (labor) duties;
-*   Determine the person responsible for ensuring the security of the Data.
+- Organize a regime for ensuring the security of the premises in which the data processing systems are located, preventing the possibility of uncontrolled entry or stay in these premises of persons who do not have the right to access these premises;
+- Ensure the safety of the media containing the Data;
+- Determine the list of persons whose access to the Data processed by the Company is necessary for the performance of their official (labor) duties;
+- Determine the person responsible for ensuring the security of the Data.
 
-4.6.3. Process the Data only in the amount, for the purposes and in the ways specified in the order of the Customer.
+  4.6.3. Process the Data only in the amount, for the purposes and in the ways specified in the order of the Customer.
 
-4.6.4. Comply with other legal requirements in connection with the provision of services provided for by the Agreement.
+  4.6.4. Comply with other legal requirements in connection with the provision of services provided for by the Agreement.
 
-5\. Cost of services
---------------------
+## 5\. Cost of services
 
 5.1. The use of the Service within the Platform is Paid. The cost of services and the procedure for settlements are established by the Agreement.
 
-6\. Responsibility
-------------------
+## 6\. Responsibility
 
 6.1. For violation of the terms of the Agreement, the parties are responsible in accordance with the legislation of the Russian Federation and the Agreement. The sanctions stipulated by the legislation and the Agreement are subject to payment by the violating Party within 5 working days from the date of receipt of a written request from the injured Party.
 
 6.2. In the event that, as a result of a violation by the Customer of its guarantees, assurances and / or obligations under the Agreement, claims, claims of any third parties, as well as instructions, warnings and other acts of the regulatory authorities are brought against the Company, the Customer undertakes to resolve them on his own and at his own account, without involving the Company.
 
-7\. Other conditions
---------------------
+## 7\. Other conditions
 
 7.1. The applicable legislation under this Agreement is the legislation of the Russian Federation.
 

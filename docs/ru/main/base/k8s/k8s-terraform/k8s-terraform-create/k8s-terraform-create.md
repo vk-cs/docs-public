@@ -7,15 +7,15 @@
 Создайте файл kubernetes.tf, где будет описано создание кластера Kubernetes. Добавьте текст примеров ниже и исправьте значения настроек для вашего кластера.
 
 Для создания кластера нам потребуются следующие openstack ресурсы:
-*openstack_networking_network_v2* – Сеть, в которой будет создан кластер и его ноды. В примере ниже сеть создается с именем «k8s-net». Ссылка на что это.
-*openstack_networking_subnet_v2* – Подсеть из сети, для нод кластера. В примере: k8s-subnet.
-*openstack_networking_network_v2* – Внешняя сеть для получения публичного IP (Floating IP).
-*openstack_networking_router_v2* – Роутер для внешней сети и взаимодействия с внешним миром.
-*openstack_networking_router_interface_v2* – Подключить роутер к внутренней сети.
-*openstack_compute_keypair_v2* – Ключевая пара для ВМ нод кластера. Эта ключевая пара позволяет подключаться к ВМ по ssh при необходимости. Можно не указывать, если не требуется доступ на ноды.
-*openstack_compute_flavor_v2* – Флейвор (CPU, RAM, Disk) нод кластера. В примере создается два объекта типа openstack_compute_flavor_v2 с именами k8s_master и k8s_worker, для использования при создании кластера и его нод-групп.
+_openstack_networking_network_v2_ – Сеть, в которой будет создан кластер и его ноды. В примере ниже сеть создается с именем «k8s-net». Ссылка на что это.
+_openstack_networking_subnet_v2_ – Подсеть из сети, для нод кластера. В примере: k8s-subnet.
+_openstack_networking_network_v2_ – Внешняя сеть для получения публичного IP (Floating IP).
+_openstack_networking_router_v2_ – Роутер для внешней сети и взаимодействия с внешним миром.
+_openstack_networking_router_interface_v2_ – Подключить роутер к внутренней сети.
+_openstack_compute_keypair_v2_ – Ключевая пара для ВМ нод кластера. Эта ключевая пара позволяет подключаться к ВМ по ssh при необходимости. Можно не указывать, если не требуется доступ на ноды.
+_openstack_compute_flavor_v2_ – Флейвор (CPU, RAM, Disk) нод кластера. В примере создается два объекта типа openstack_compute_flavor_v2 с именами k8s_master и k8s_worker, для использования при создании кластера и его нод-групп.
 
-``` bash
+```bash
 resource "openstack_networking_network_v2" "k8s"
 
 { name = "k8s-net" admin_state_up = true }
@@ -43,12 +43,12 @@ data "openstack_compute_flavor_v2" "k8s_worker"
 ```
 
 Ресурсы провайдера MCS для создания кластера:
-*mcs_kubernetes_clustertemplates* – шаблонов/версий кластеров Kubernetes. Нужно указать версию кластера, которая будет создана. Посмотреть список доступных версий можно:
+_mcs_kubernetes_clustertemplates_ – шаблонов/версий кластеров Kubernetes. Нужно указать версию кластера, которая будет создана. Посмотреть список доступных версий можно:
 
 В визарде при создании кластера через личный кабинет
 На странице «Политика поддержки версий Kubernetes» https://mcs.mail.ru/docs/ru/base/k8s/k8s-concepts/k8s-architecture/k8s-version-support
 Используя данные из mcs_kubernetes_clustertemplates. Подробнее на официальной странице (https://registry.terraform.io/providers/MailRuCloudSolutions/mcs/latest/docs/data-sources/mcs_kubernetes_clustertemplate).
-*mcs_kubernetes_cluster* – кластер Kubernetes. В этом ресурсе мы описываем кластер и используем ранее описанные ресурсы.
+_mcs_kubernetes_cluster_ – кластер Kubernetes. В этом ресурсе мы описываем кластер и используем ранее описанные ресурсы.
 
 depends_on – terraform будет ждать завершения создания openstack_networking_router_interface_v2, прежде чем начать создавать кластер.
 name – имя кластера.
@@ -61,7 +61,7 @@ keypair - ключевая пара для доступа на ноды клас
 network_id - сеть кластера Kubernetes.
 subnet_id - подсеть для кластера.
 floating_ip_enabled - назначение публичного IP для API сервера Kubernetes. Поддерживает значение true | false.
-*mcs_kubernetes_node_group* – нод-группа кластера, в которой будет располагаться рабочая нагрузка.
+_mcs_kubernetes_node_group_ – нод-группа кластера, в которой будет располагаться рабочая нагрузка.
 
 depends_on - создание нод-группы начнется после создания кластера.
 cluster_id - идентификатор кластера, в котором создается нод-группа.
@@ -71,7 +71,8 @@ autoscaling_enabled - включаем автомасштабирование к
 max_nodes - максимальное количество нод, до которого кластер автоматически масштабируется при повышении нагрузки. Максимальное значение 100.
 min_nodes - минимальное количество нод в нод-группе.
 flavor_id - флейвор нод в нод-группе.
-``` bash
+
+```bash
 data "mcs_kubernetes_clustertemplate" "cluster_template"
 
 { version = "1.22.6" }
@@ -101,7 +102,7 @@ resource "mcs_kubernetes_node_group" "default_ng"
 
 Добавьте обе части примера в файл kubernetes.tf и выполните следующие команды.
 
-``` bash
+```bash
 terraform init
 terraform apply
 ```

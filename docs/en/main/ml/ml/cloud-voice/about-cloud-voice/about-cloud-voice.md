@@ -4,7 +4,6 @@ Cloud Voice is a service that allows you to recognize and synthesize speech. Wit
 
 To start using the service, go to the [Cloud Voice] page(https://mcs.mail.ru/app/services/machinelearning/voice/methods/). You must be logged in to do this.
 
-
 To use the service, you need to get an access token. To learn how to get an access token, read [here](https://mcs.mail.ru/help/ru_RU/cloud-voice/get-voice-token).
 
 ### See also

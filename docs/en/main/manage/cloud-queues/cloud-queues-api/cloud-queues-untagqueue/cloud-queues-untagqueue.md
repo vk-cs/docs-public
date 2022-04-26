@@ -1,7 +1,6 @@
-Remove the cost allocation tags from the specified VK CS SQS queue. 
+Remove the cost allocation tags from the specified VK CS SQS queue.
 
-Request Parameters
------------------
+## Request Parameters
 
 Queue Url
 
@@ -19,8 +18,7 @@ Type: array of strings
 
 Required: Yes
 
-Examples
--------
+## Examples
 
 This example illustrates one use of UntagQueue.
 

@@ -1,7 +1,6 @@
 Currently, VK CS supports 2 Terraform providers at once: OpenStack for managing IaaS services and its own VK CS Terraform Provider for managing Kubernetes. Kubernetes clusters that were previously managed using the OpenStack Terraform Provider can be transferred under the control of the VK CS Terraform Provider in order to be able to use Terraform to configure the auto-scaling of the cluster, work with the Node Group, update the version, etc.
 
-Transition instructions
------------------------
+## Transition instructions
 
 It is important that VK CS Terraform Provider works with underlying IaaS resources managed by the OpenStack Terraform Provider. Therefore, both providers must be activated to work correctly with Kubernetes clusters.
 

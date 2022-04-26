@@ -1,7 +1,6 @@
 The request deletes the specified message from the specified queue. To select a message to delete, use the `Receipt' character of the message (and _not_ the 'messageId' that you receive when sending the message). VK CS SQS can delete a message from the queue, even if setting a visibility timeout causes the message to be blocked by another consumer. VK CS SQS automatically deletes messages remaining in the queue longer than the retention period configured for the queue.
 
-Request Parameters
------------------
+## Request Parameters
 
 **QueueUrl**
 
@@ -21,8 +20,7 @@ Type: String
 
 Required: Yes
 
-Mistakes
-------
+## Mistakes
 
 **InvalidIdFormat**
 
@@ -36,10 +34,9 @@ The specified receipt descriptor is invalid.
 
 HTTP Status Code: 400
 
-Examples
--------
+## Examples
 
-In the following request request example, a message with the name `myQueue` is deleted from the queue. The structure of 'AUTHPARAMS' depends on the signature of the API request. 
+In the following request request example, a message with the name `myQueue` is deleted from the queue. The structure of 'AUTHPARAMS' depends on the signature of the API request.
 
 #### Sample request
 

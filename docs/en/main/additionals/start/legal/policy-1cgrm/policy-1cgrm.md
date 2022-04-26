@@ -1,7 +1,6 @@
 This document is an official offer of Mail.Ru LLC (hereinafter referred to as the "Contractor") to conclude a user agreement (hereinafter referred to as the "Agreement") with you (hereinafter referred to as the "Customer") on the provision of services for providing access to the 1C Service: within the VK Cloud Solutions Platform (hereinafter referred to as the “Platform”), on the terms set forth in this Agreement, which is available on the Internet at: [https://mcs.mail.ru/help/legal/1cgrm-termofuse](https://mcs.mail.ru/help/legal/1cgrm-termofuse) .
 
-1\. Terms and definitions
--------------------------
+## 1\. Terms and definitions
 
 **Site** - an Internet site located at [https://mcs.mail.ru/](https://mcs.mail.ru/) , which provides the Customer with access to the Service. The Contractor posts on the Site information that is binding on the Customer.
 
@@ -30,8 +29,7 @@ In the event that this Agreement uses terms that are not defined in Section 2 of
 
 **A module** is a type of 1C Service application: Ready workstation.
 
-2\. Subject of the Agreement
-----------------------------
+## 2\. Subject of the Agreement
 
 2.1. Under the terms of this Agreement, the Contractor provides the Customer around the clock with an Internet connection "Service 1C: Ready Workplace" (hereinafter referred to as the Service), which allows the Customer to use the capabilities of remote access to selected programs "1C: Enterprise 8" deployed in the cloud infrastructure through a browser or a thin client from 1C with work through a browser, and the Customer undertakes to pay for the Contractor's services for using the provision of access to the Service in the amount and in the manner determined by the Applicable Rules. The Contractor has the right to provide access to the Service on the basis of agreements concluded with the copyright holders of the rights to the Service or third parties who own such rights on a contractual basis.
 
@@ -55,8 +53,7 @@ The Customer can use the Service to the extent of the rights granted to him by t
 
 2.8.2. With a postpaid settlement system: The Customer is provided with access to work with the Modules.
 
-3\. Rights and obligations of the Parties
------------------------------------------
+## 3\. Rights and obligations of the Parties
 
 3.1. The Contractor undertakes:
 
@@ -84,8 +81,7 @@ The Customer can use the Service to the extent of the rights granted to him by t
 
 3.2.3. Be responsible for your actions and / or inactions on the use of the Contractor's Service.
 
-4\. Cost of services and payment procedure
-------------------------------------------
+## 4\. Cost of services and payment procedure
 
 4.1. The use of the Services is chargeable. The Contractor, in order to determine the cost of using the Service, sets the price and the corresponding list of services in accordance with the Tariffs.
 
@@ -99,8 +95,7 @@ In the absence of funds on the Personal Account to write off the cost of service
 
 4.6. The Customer has the right to use demo access for one application of each Module (without making a fee in order to get acquainted with the functionality) to the Service 1 (one) time for a period not exceeding thirty (30) calendar days.
 
-5\. Responsibility of the Parties
----------------------------------
+## 5\. Responsibility of the Parties
 
 5.1. The amount of the Contractor's liability is limited solely by the relevant Applicable Rules posted on the Site in the section [https://help.mail.ru/mcs/legal/](https://help.mail.ru/mcs/legal/) .
 
@@ -110,8 +105,7 @@ In the absence of funds on the Personal Account to write off the cost of service
 
 5.4. The Contractor is not responsible for any violations of the current legislation that have or may take place on projects implemented by the Customer. In the event of claims against the Contractor from third parties in connection with such violations that have occurred, the Customer is obliged to release the Contractor from liability and settle such claims on his own, all losses incurred by the Contractor through the fault of the Customer, in full, including but not limited to: settlement of claims, disputes, enforcement of sanctions by state authorities, must be reimbursed to the Contractor, if any.
 
-6\. Other conditions
---------------------
+## 6\. Other conditions
 
 6.1. The Customer guarantees that his Content posted using the Contractor's Service does not contain information and images of a pornographic nature, does not promote violence, racial, sexual, religious or other forms of inequality, or other activities directly prohibited by the legislation of the Russian Federation, does not violate copyright laws. law and other applicable legislation, as this may affect the reputation of the Contractor.
 

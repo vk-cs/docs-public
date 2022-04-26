@@ -1,7 +1,6 @@
 В данной статье рассмотрим, как установить standalone [ClickHouse](https://ru.wikipedia.org/wiki/ClickHouse), создать пользователя базы данных, настроить права и сетевой доступ.
 
-Конфигурация оборудования
--------------------------
+## Конфигурация оборудования
 
 Сервер Ubuntu 18.04 LTS x86_64.
 
@@ -11,8 +10,7 @@
 
 [[**попробовать облачную СУБД ClickHouse**](https://mcs.mail.ru/databases/)]
 
-Установка Standalone ClickHouse
--------------------------------
+## Установка Standalone ClickHouse
 
 1.  Авторизуйтесь на сервере Ubuntu 18.04.
 2.  Обновите список репозиториев:
@@ -29,13 +27,13 @@ ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get install -y wget
 
 4.  Установите ClickHouse:
 
-*   Скачайте ключ репозитория ClickHouse:
+- Скачайте ключ репозитория ClickHouse:
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ wget -O - https://repo.yandex.ru/clickhouse/CLICKHOUSE-KEY.GPG | sudo apt-key add -
 ```
 
-*   В список репозиториев добавьте репозиторий ClickHouse:
+- В список репозиториев добавьте репозиторий ClickHouse:
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-add-repository "deb http://repo.yandex.ru/clickhouse/deb/stable/ main/"
@@ -49,7 +47,7 @@ Fetched 252 kB in 1s (341 kB/s)
 Reading package lists... Done
 ```
 
-*   Установите сервер ClickHouse:
+- Установите сервер ClickHouse:
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get install clickhouse-client clickhouse-server
@@ -57,28 +55,26 @@ ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get install clickhouse-client cli
 
 При установке ClickHouse автоматически добавляется в список приложений, запускаемых автоматически.
 
-*   Введите пароль пользователя по умолчанию.
-    
-*   Запустите сервер:
-    
+- Введите пароль пользователя по умолчанию.
+- Запустите сервер:
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo systemctl start clickhouse-server
 ```
 
-*   Убедитесь, что сервер запущен и слушает localhost:
+- Убедитесь, что сервер запущен и слушает localhost:
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo netstat -tulpn  | grep clickhouse
-tcp 0 0 127.0.0.1:9000 0.0.0.0:\* 
+tcp 0 0 127.0.0.1:9000 0.0.0.0:\*
 LISTEN 21373/clickhouse-se
-tcp 0 0 127.0.0.1:9009 0.0.0.0:\* 
+tcp 0 0 127.0.0.1:9009 0.0.0.0:\*
 LISTEN 21373/clickhouse-se
-tcp 0 0 127.0.0.1:8123 0.0.0.0:\* 
+tcp 0 0 127.0.0.1:8123 0.0.0.0:\*
 LISTEN 21373/clickhouse-se
-tcp6 0 0 ::1:9000 :::\* 
+tcp6 0 0 ::1:9000 :::\*
 LISTEN 21373/clickhouse-se
-tcp6 0 0 ::1:9009 :::\* 
+tcp6 0 0 ::1:9009 :::\*
 LISTEN 21373/clickhouse-se
 tcp6       0      0 ::1:8123                :::\*            
 LISTEN      21373/clickhouse-se
@@ -99,8 +95,7 @@ ubuntu-standard-2-4-40gb :)
 
 Установка завершена.
 
-Создание базы данных и настройка прав доступа
----------------------------------------------
+## Создание базы данных и настройка прав доступа
 
 1.  Создайте базу данных mybase:
 
@@ -146,7 +141,6 @@ ubuntu@ubuntu-standard-2-4-40gb:~$ sudo cat /etc/clickhouse-server/users.d/myuse
 В этом файле описан пользователь myuser с паролем mypass и доступом к базе данных mybase с любого IP-адреса.
 
 3.  Проверьте подключение с правами пользователя ОС Ubuntu:
-    
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ clickhouse-client --user myuser --password --database mybase
@@ -158,8 +152,7 @@ Connected to ClickHouse server version 20.1.4 revision 54431.
 ubuntu-standard-2-4-40gb :)
 ```
 
-Настройка сетевого доступа
---------------------------
+## Настройка сетевого доступа
 
 По умолчанию ClickHouse слушает только 127.0.0.1. Чтобы настроить сетевой доступ к серверу, в папке _/etc/clickhouse-server/config.d_ создайте конфигурационный файл _listen.xml_:
 

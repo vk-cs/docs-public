@@ -1,10 +1,8 @@
-Description
------------
+## Description
 
 A load balancer is a method of distributing jobs (traffic) across multiple servers in order to optimize resource utilization, reduce query service time, scale out a cluster (dynamically adding and removing devices), and providing fault tolerance.
 
-Balancer Management
--------------------
+## Balancer Management
 
 To work with container balancers, you need the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) utility.
 
@@ -28,8 +26,7 @@ This feature eliminates the separate step of creating a balancer for the cluster
 
 Certain parameters can only be configured using ConfigMap, or only using annotations.
 
-Configuration with ConfigMaps
------------------------------
+## Configuration with ConfigMaps
 
 You should edit the nginx-config.yaml file by setting the necessary parameters.
 
@@ -47,8 +44,7 @@ If you need to update some parameters, you need to modify the nginx-config.yaml 
  kubectl apply -f nginx-config.yaml
 ```
 
-Configuration using annotations
--------------------------------
+## Configuration using annotations
 
 If you need to customize settings for a specific Ingress, the easiest way is to use annotations. Values used in annotations take precedence over ConfigMap.
 
@@ -89,8 +85,7 @@ serviceName: coffee-svc
 servicePort: 80
 ```
 
-Balancer with internal IP address
----------------------------------
+## Balancer with internal IP address
 
 This example shows how to create a service that is accessible via LoadBalancer, but without an external IP address. Annotation service.beta.kubernetes.io/openstack-internal-load-balancer: activates this behavior: instead of the public IP address, the internal one will be allocated. This can be useful in hybrid scenarios where the service consumers are applications on the internal network outside the Kubernetes cluster.
 
@@ -155,8 +150,7 @@ NAME CLUSTER-IP EXTERNAL-IP PORT (S) AGE
 nginx-internal-lb 10.0.0.10 192.168.0.181 80: 30000 / TCP 5m
 ```
 
-Balancer with static IP address
--------------------------------
+## Balancer with static IP address
 
 This example shows how to create a service accessible by LoadBalancer using a reserved public IP address.
 
@@ -208,8 +202,7 @@ ports:
 - containerPort: 80
 ```
 
-Balancer using sessions
------------------------
+## Balancer using sessions
 
 This example shows how to create a service available with LoadBalancer that redirects traffic to target pods not using round-robin balancing, but based on previous requests from the same client. This can help solve many problems with traditional stafetul web applications. SessionAffinity: ClientIP parameter activates the so-called Session Affinity, i.e. all requests of the same user will go to the same pod as long as this one is alive.
 

@@ -2,8 +2,7 @@ Returns a list of your queues in the current region. The answer includes no more
 
 The method supports pagination. Set the maxResults parameter in the request to specify the maximum number of results returned in the response. If maxResults is not set, the response will contain no more than 1000 results. If you have set maxResults and there are additional results to display, the response will contain a value for nextToken. Use nextToken as a parameter in the next request, listQueues, to get the next page of results.
 
-Request Parameters
------------------
+## Request Parameters
 
 MaxResults
 
@@ -31,8 +30,7 @@ Type: String
 
 Required: No
 
-Response Elements
----------------
+## Response Elements
 
 The following items are returned by the service.
 
@@ -48,10 +46,9 @@ A list of queue URLs, up to 1000 entries, or the maxResults value you sent in th
 
 Type: array of strings
 
-Examples
--------
+## Examples
 
-The following sample request request returns queues whose names begin with the letter t. The structure of AUTHPARAMS depends on the signature of the API request. 
+The following sample request request returns queues whose names begin with the letter t. The structure of AUTHPARAMS depends on the signature of the API request.
 
 #### Sample request
 

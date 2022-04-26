@@ -1,5 +1,4 @@
-Before updating
----------------
+## Before updating
 
 It is recommended to save important data and applications, make a backup, and also perform an update operation on the cluster copies to prevent possible problems and data loss.
 
@@ -9,8 +8,7 @@ You can only upgrade a cluster to a newer version. Reverse operation or downgrad
 
 Upgrading a cluster from version v1.15 to version v1.16 and higher is possible only through the operation of creating a new cluster. To perform this operation, it is recommended to [use the Velero](https://mcs.mail.ru/help/k8s-backups/k8s-import) cluster backup software and then restore to a newer version.
 
-Update in VK CS Panel
--------------------
+## Update in VK CS Panel
 
 Cluster version updates are made in the "Containers" section of the VK CS Panel. To do this, select the appropriate "Update version" option in the context menu of the required cluster:
 

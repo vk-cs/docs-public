@@ -2,15 +2,14 @@ Kubernetes is designed for sharing machines between applications. Generally, sha
 
 Dynamic port allocation creates a lot of complexities for the system - every application must accept ports as flags, API servers must know how to insert dynamic port numbers into config blocks, services must know how to find each other, etc. Instead of getting busy By this, Kubernetes takes a different approach.
 
-Kubernetes networking model
----------------------------
+## Kubernetes networking model
 
 Each Pod gets its own IP address. This means you don't need to explicitly create links between the Pods and you almost never need to deal with mapping container ports to host ports. This creates a clean, backward-compatible model that Pods can work with as virtual machines or physical hosts in terms of port allocation, naming, service discovery, load balancing, application configuration, and migration.
 
 Kubernetes has the following fundamental requirements for any network implementation (prohibiting any intentional network segmentation policies):
 
-*   modules on a node can communicate with all modules on all nodes without NAT
-*   agents on a node (e.g. system daemons) can communicate with all modules on that node
+- modules on a node can communicate with all modules on all nodes without NAT
+- agents on a node (e.g. system daemons) can communicate with all modules on that node
 
 **Note**
 
@@ -24,8 +23,7 @@ How this is implemented is a detail of the particular container runtime used.
 
 It is possible to query the ports on the nodes themselves that are forwarding to your Pod (called host ports), but this is a very rare operation. The implementation of this forwarding is also a detail of the container runtime. The program itself is not aware of the existence or absence of host ports.
 
-Network management
-------------------
+## Network management
 
 Networks are managed in [the "Networks" section of your personal account](https://mcs.mail.ru/app/services/server/networks/) . When a cluster is created, as a rule, a network for this cluster is also created.
 

@@ -1,5 +1,4 @@
-Description
------------
+## Description
 
 **Apache Spark** is an open source Big Data framework for distributed batching and streaming of unstructured and semi-structured data, part of the Hadoop project ecosystem.
 
@@ -7,10 +6,10 @@ In contrast to the classic processor from the Hadoop core, which implements the 
 
 The project provides programming interfaces for the languages Java, Scala, Python, R. Consists of a core and the following extensions:
 
-*   Spark SQL - allows you to execute SQL queries on data
-*   Spark Streaming is an add-on for processing streaming data
-*   Spark MLib - A set of machine learning libraries
-*   GraphX - designed for distributed graph processing
+- Spark SQL - allows you to execute SQL queries on data
+- Spark Streaming is an add-on for processing streaming data
+- Spark MLib - A set of machine learning libraries
+- GraphX - designed for distributed graph processing
 
 This framework can work both in the Hadoop cluster environment under YARN control, and without the Hadoop core component.
 
@@ -30,12 +29,11 @@ The final component is the GraphX API for graphing and graph-parallel computing.
 
 Overall, Spark has:
 
-*   high speed of work at all levels of the framework - from SQL queries to calculations on graphs and machine learning;
-*   multifunctionality;
-*   full integration with the Hadoop ecosystem, since Spark is a complete modification of MapReduce. Accordingly, users do not risk features such as unlimited horizontal scalability and the ability to recover even from severe system errors;
+- high speed of work at all levels of the framework - from SQL queries to calculations on graphs and machine learning;
+- multifunctionality;
+- full integration with the Hadoop ecosystem, since Spark is a complete modification of MapReduce. Accordingly, users do not risk features such as unlimited horizontal scalability and the ability to recover even from severe system errors;
 
-Assembly components
--------------------
+## Assembly components
 
 **HDFS**
 
@@ -143,10 +141,10 @@ To control the Zookeeper component in the Ambari interface, open the appropriate
 
 Ambari Metrics System (AMS) - Collects, aggregates and maintains system metrics in clusters managed by Ambari and has 4 components:
 
-*   metrics monitors on each host in the cluster collect system-level metrics and publish them to the Metrics Collector
-*   Hadoop Sinks connects to Hadoop components to publish metrics to Metrics Collector
-*   Metrics Collector is a daemon that runs on a specific host in a cluster and receives data from registered users, monitors or listeners
-*   Grafana is a daemon that runs on a specific host in the cluster and serves up pre-built dashboards to visualize metrics.
+- metrics monitors on each host in the cluster collect system-level metrics and publish them to the Metrics Collector
+- Hadoop Sinks connects to Hadoop components to publish metrics to Metrics Collector
+- Metrics Collector is a daemon that runs on a specific host in a cluster and receives data from registered users, monitors or listeners
+- Grafana is a daemon that runs on a specific host in the cluster and serves up pre-built dashboards to visualize metrics.
 
 In the Ambari interface, to control the Ambari Metrics component, open the appropriate tab and open the "Actions" drop-down menu:
 
