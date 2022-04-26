@@ -1,5 +1,4 @@
-Description
------------
+## Description
 
 CDN stands for Content-Delivery Network and is a geographically distributed network infrastructure that optimizes the delivery and distribution of content to end-users on the Internet. The use of CDN by content providers helps to increase the download speed of audio, video, software, game, and other types of digital content by Internet users at the points of presence of the CDN network.
 
@@ -11,7 +10,12 @@ CDN technology is able to prevent delays in data transmission, possible interrup
 
 ![](./assets/1600919110398-1600919110398.png)
 
-CDN service pricing
--------------------
+## CDN service pricing
+
+The service is being provided on a pay-as-you-go basis with the base price of **₽0.60/GB** (VAT inclusive).
+
+In other words, you will only pay for what you consume.
+
+#### in case you need to distribute larger amounts of data and these amounts are above 10TB per month, please reach out to us at: [support@mcs.mail.ru](mailto:support@mcs.mail.ru).
 
 The service is being provided on a pay-as-you-go basis. You will only pay for what you consume.

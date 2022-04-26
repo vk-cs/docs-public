@@ -4,18 +4,17 @@
 
 В настоящее время реализована возможность получения логов для следующих Баз данных:
 
-*   MySQL
-*   PostgreSQL/PostgresPro
-*   ClickHouse
-*   Redis
-*   MongoBD
+- MySQL
+- PostgreSQL/PostgresPro
+- ClickHouse
+- Redis
+- MongoBD
 
 Отметим, что для реализации получения логов необходимо [подключиться к БД по SSH](https://mcs.mail.ru/help/ru_RU/dbaas-start/dbaas-connect).
 
 Ниже представлено детальное описание получения логов из каждого типа БД.
 
-MySQL
------
+## MySQL
 
 Для получения логов необходимо подключиться по SSH и ввести следующую команду:
 
@@ -58,8 +57,7 @@ Dec 25 08:35:26 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:
 lines 1-29
 ```
 
-PostgreSQL/PostgresPro
-----------------------
+## PostgreSQL/PostgresPro
 
 Для получения логов необходимо подключиться по SSH и ввести следующую команду:
 
@@ -102,8 +100,7 @@ Dec 25 16:16:03 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 16:16:03.
 lines 1-29
 ```
 
-ClickHouse
-----------
+## ClickHouse
 
 Для получения логов необходимо подключиться по SSH и ввести следующую команду:
 
@@ -135,8 +132,7 @@ ClickHouse
 2020.12.25 20:27:14.775850 [ 1025 ] {} <Information> Application: Setting max_server_memory_usage was set to 3.33 GiB (3/var/log/clickhouse-server/clickhouse-server.log
 ```
 
-Redis
------
+## Redis
 
 Для получения логов необходимо подключиться по SSH и ввести следующую команду:
 
@@ -179,8 +175,7 @@ Jan 11 15:45:48 redis-4275.novalocal redis[1440]: Failed trying to load the MAST
 lines 1-29
 ```
 
-MongoBD
--------
+## MongoBD
 
 Для получения логов необходимо подключиться по SSH и ввести следующую команду:
 

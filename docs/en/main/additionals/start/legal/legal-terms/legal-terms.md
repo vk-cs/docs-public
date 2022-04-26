@@ -1,16 +1,14 @@
-Terms of use of the platform "VK Cloud Solutions"
-=================================================
+## Terms of use of the platform "VK Cloud Solutions"
 
 This document is an agreement (hereinafter referred to as the "Agreement") governing the relationship between Mail.ru LLC (hereinafter referred to as the "Company") and you (hereinafter referred to as the "Customer") in connection with the provision of various types of services, access to which is provided through the VK Cloud Solutions Platform (hereinafter referred to as the Platform), on the terms set forth below:
 
-1\. REGULATION OF THE PLATFORM USE ISSUES. PROCEDURE FOR CONCLUDING AGREEMENT
------------------------------------------------------------------------------
+## 1\. REGULATION OF THE PLATFORM USE ISSUES. PROCEDURE FOR CONCLUDING AGREEMENT
 
 1.1. The rules for using the Platform and the Services available through the Platform are set out in the following documents:
 
-*   this Agreement,
-*   agreements on the use of certain Services provided by the Company or the Partners of the Company,
-*   Company Privacy Policy.
+- this Agreement,
+- agreements on the use of certain Services provided by the Company or the Partners of the Company,
+- Company Privacy Policy.
 
 Hereinafter, the above documents are collectively referred to as the "Applicable Rules".
 
@@ -22,8 +20,7 @@ The provisions of this Agreement apply to the relations between the Parties on t
 
 1.4. The applicable rules can be changed by the Company at any time without any prior notice to the Customer. Any such changes will take effect on the day following the day such changes are posted on the Site. The Customer undertakes to independently check the Applicable Rules for changes. Failure by the Customer to take steps to familiarize himself with the Applicable Rules and / or the revised edition cannot serve as a basis for the Customer's failure to fulfill his obligations related to the Use of the Platform and individual Services. The Customer has the right to refuse to accept changes and additions to the Applicable Rules, which means the Customer's refusal to use the Platform and / or the relevant Services.
 
-2\. TERMS AND DEFINITIONS
--------------------------
+## 2\. TERMS AND DEFINITIONS
 
 **Site** - an Internet site located at [https://mcs.mail.ru](https://mcs.mail.ru/) , which provides the User with access to the Platform and various services. The Company places information on the Site that is mandatory for Users.
 
@@ -61,8 +58,7 @@ Customer account - information provided by the Customer (the presence of which i
 
 **Reporting period** - the period of time during which the Customer is provided with services for the use of the Service. The duration of the Reporting Period is established by the corresponding agreements on the use of individual services.
 
-3\. SUBJECT OF THE AGREEMENT
-----------------------------
+## 3\. SUBJECT OF THE AGREEMENT
 
 3.1. Under the terms of the Agreement, the Company provides the Customer with access to the Platform, which allows the Customer around the clock with an Internet connection, unless otherwise provided by the Applicable Rules, to use the Personal Account to gain access to the Platform Services.
 
@@ -76,8 +72,7 @@ Customer account - information provided by the Customer (the presence of which i
 
 3.6. The functions of the Platform, Services, including all scripts, content, individual elements and design of the Platform and Services are provided "as is". The Company does not provide any guarantees that the Platform, Services or their elements may be suitable for specific purposes of use. The Company cannot guarantee and does not promise any specific results from the use of the Platform, Services and their individual elements.
 
-4\. CONDITIONS AND PROCEDURE FOR USE OF THE PLATFORM BY THE CUSTOMER
---------------------------------------------------------------------
+## 4\. CONDITIONS AND PROCEDURE FOR USE OF THE PLATFORM BY THE CUSTOMER
 
 4.1. To use the Platform, the Customer must register on the Platform and create an Account. When creating an Account on the Platform, the Customer, in a special window with fields, enters his login (his email address) and twice a password, and also confirms his agreement with this Agreement, the Platform's Privacy Policy and Applicable Rules. To confirm registration, a letter is sent to the e-mail address specified by the Customer, which contains a link to confirm the creation of an Account on the Platform.
 
@@ -87,26 +82,25 @@ Authorization and entry to the Platform is carried out through the Site. A perso
 
 4.3. The platform provides the Customer with the following capabilities:
 
-*   make settings for your Account within the functionality of the Platform;
-*   create and delete Projects using the functionality of the Platform.
-*   connect the Services available through the Platform, including the created Projects, as well as refuse to use the connected Services. Agreements on the use of certain services may provide for the need to pay for the services of the Company or Partners for providing access to the relevant Service.
-*   create for individuals with the necessary legal capacity and legal capacity, accounts within the Projects, as well as delete the created accounts.
-*   provide persons who have created accounts with access to the Services of the Platform, restrict or close access to these Services.
-*   grant the rights of the Project Administrator to another person, change the scope of the granted rights, up to the deprivation of the right to manage the Project.
-*   carry out other actions not prohibited by the legislation of the Russian Federation and the Applicable Rules related to the use of the Platform and the Services.
+- make settings for your Account within the functionality of the Platform;
+- create and delete Projects using the functionality of the Platform.
+- connect the Services available through the Platform, including the created Projects, as well as refuse to use the connected Services. Agreements on the use of certain services may provide for the need to pay for the services of the Company or Partners for providing access to the relevant Service.
+- create for individuals with the necessary legal capacity and legal capacity, accounts within the Projects, as well as delete the created accounts.
+- provide persons who have created accounts with access to the Services of the Platform, restrict or close access to these Services.
+- grant the rights of the Project Administrator to another person, change the scope of the granted rights, up to the deprivation of the right to manage the Project.
+- carry out other actions not prohibited by the legislation of the Russian Federation and the Applicable Rules related to the use of the Platform and the Services.
 
-4.4. When using the Platform and Services, the Customer undertakes:
+  4.4. When using the Platform and Services, the Customer undertakes:
 
-*   comply with the provisions of the Applicable Rules without any restrictions;
-*   independently take appropriate measures to ensure the security of his Personal Account and prevent unauthorized access to it by third parties (in particular, to ensure that the password is not saved in the browser, including when using cookies technology, if third parties may use the Customer's computer device) ... The customer is responsible for illegal actions carried out using his Personal Account as for his own.
-*   follow all instructions and instructions of the Company. If the Customer fails to comply with such instructions, the Company has the right to suspend, restrict, terminate the provision of the Customer with access to the Platform, Services or their individual functions;
-*   at the request of the Company in connection with the conclusion and execution of the Agreement, confirm the credentials specified by the Customer when creating / editing his Account, as well as the credentials specified in the User Accounts;
-*   periodically review the content and monitor for changes to the Applicable Rules.
-*   ensure that Project Users are familiar with the End User Guidelines and comply with their provisions. The Customer is responsible for illegal actions committed using the User's Personal Account as for his own.
-*   comply with other requirements and fulfill other obligations provided for by the Applicable Rules.
+- comply with the provisions of the Applicable Rules without any restrictions;
+- independently take appropriate measures to ensure the security of his Personal Account and prevent unauthorized access to it by third parties (in particular, to ensure that the password is not saved in the browser, including when using cookies technology, if third parties may use the Customer's computer device) ... The customer is responsible for illegal actions carried out using his Personal Account as for his own.
+- follow all instructions and instructions of the Company. If the Customer fails to comply with such instructions, the Company has the right to suspend, restrict, terminate the provision of the Customer with access to the Platform, Services or their individual functions;
+- at the request of the Company in connection with the conclusion and execution of the Agreement, confirm the credentials specified by the Customer when creating / editing his Account, as well as the credentials specified in the User Accounts;
+- periodically review the content and monitor for changes to the Applicable Rules.
+- ensure that Project Users are familiar with the End User Guidelines and comply with their provisions. The Customer is responsible for illegal actions committed using the User's Personal Account as for his own.
+- comply with other requirements and fulfill other obligations provided for by the Applicable Rules.
 
-5\. CONDITIONS AND ORDER OF USE OF THE PLATFORM BY THE USER
------------------------------------------------------------
+## 5\. CONDITIONS AND ORDER OF USE OF THE PLATFORM BY THE USER
 
 5.1. The User of the Project gets access to the Platform after the Administrator of the Project opens for him an account linked to the Project. The creation of a User account is carried out by specifying the e-mail address of the Project User as a login and the User following the link received by his e-mail to confirm the creation of the account. The User is authorized on the Platform within the framework of the Project by entering a login (his email address) and a password received from the Project Administrator.
 
@@ -122,33 +116,31 @@ Authorization and entry to the Platform is carried out through the Site. A perso
 
 5.7. When using the Platform and Services, the User undertakes:
 
-*   comply with the provisions of the Rules for End Users without any restrictions;
-*   independently take appropriate measures to ensure the security of his Personal Account and prevent unauthorized access to it by third parties (in particular, to ensure that the password is not saved in the browser, including when using cookies technology, if third parties may use the User's computer device) ...
-*   follow all instructions and instructions of the Company. If the User fails to comply with such instructions, the Company has the right to suspend, restrict, stop providing the User with access to the Platform, Services or their individual functions;
-*   at the request of the Company, confirm the credentials specified in the User Account;
-*   periodically review the content and monitor changes to the Rules for end users.
-*   comply with other requirements and fulfill other obligations provided for by the Rules for End Users.
+- comply with the provisions of the Rules for End Users without any restrictions;
+- independently take appropriate measures to ensure the security of his Personal Account and prevent unauthorized access to it by third parties (in particular, to ensure that the password is not saved in the browser, including when using cookies technology, if third parties may use the User's computer device) ...
+- follow all instructions and instructions of the Company. If the User fails to comply with such instructions, the Company has the right to suspend, restrict, stop providing the User with access to the Platform, Services or their individual functions;
+- at the request of the Company, confirm the credentials specified in the User Account;
+- periodically review the content and monitor changes to the Rules for end users.
+- comply with other requirements and fulfill other obligations provided for by the Rules for End Users.
 
-6\. LIMITS OF USE OF THE PLATFORM AND INDIVIDUAL SERVICES
----------------------------------------------------------
+## 6\. LIMITS OF USE OF THE PLATFORM AND INDIVIDUAL SERVICES
 
 6.1. When using the Platform and certain Services, the Customer and Users are prohibited from:
 
 6.2. The customer is prohibited from:
 
-*   violate the intellectual property rights of the Company and / or Partners in relation to the Platform, Services or any of their elements, in particular, it is prohibited to copy, broadcast, send, publish, and otherwise distribute and reproduce materials posted by the Company and Partners within the Platform and Services ( text, graphic, audio-video materials), fragments and individual elements (including computer programs, scripts and other elements) of the Platform and Services without the written consent of the Company and / or Partners;
-*   collect credentials of other Customers and Users of Projects created by other Customers;
-*   use any automatic or automated means to collect information posted on the Platform and Services;
-*   carry out, through the Platform and Services, propaganda or agitation inciting social, racial, national or religious hatred and enmity, propaganda of war, social, racial, national, religious or linguistic superiority, as well as sending information that promotes suicide, contains a description of methods of suicide and any incitement to commit it; information about narcotic and psychotropic substances, including information about the distribution of drugs, recipes for their manufacture, advice on their use and other information, the dissemination of which is prohibited by the current legislation of the Russian Federation;
-*   send spam - mass mailing of commercial, political, advertising and other information (including hyperlinks leading to Internet sites with such information and / or to Internet sites containing malicious software) if the recipients did not express their consent to receive such information kind of information;
-*   indicate when creating a Personal Account and filling out the registration form or subsequently enter deliberately false or fictitious information about yourself;
-*   transfer the password from the Personal Account to persons who do not have the proper authority to act on behalf of the Customer (or User);
-*   take actions aimed at destabilizing the functioning of the Platform and Services, make attempts to unauthorized access to the management of the Platform and Services or their closed sections (including sections to which only the Company is allowed access), as well as perform any other similar actions;
-*   take actions to create new structures (including blocks in the blockchain) using the functionality of the Platform and Services to ensure the functioning of cryptocurrency platforms or for mining cryptocurrencies in any other way;
-*   carry out any other actions that contradict the policy and goals of creating the Platform and Services or violate the current legislation of the Russian Federation.
+- violate the intellectual property rights of the Company and / or Partners in relation to the Platform, Services or any of their elements, in particular, it is prohibited to copy, broadcast, send, publish, and otherwise distribute and reproduce materials posted by the Company and Partners within the Platform and Services ( text, graphic, audio-video materials), fragments and individual elements (including computer programs, scripts and other elements) of the Platform and Services without the written consent of the Company and / or Partners;
+- collect credentials of other Customers and Users of Projects created by other Customers;
+- use any automatic or automated means to collect information posted on the Platform and Services;
+- carry out, through the Platform and Services, propaganda or agitation inciting social, racial, national or religious hatred and enmity, propaganda of war, social, racial, national, religious or linguistic superiority, as well as sending information that promotes suicide, contains a description of methods of suicide and any incitement to commit it; information about narcotic and psychotropic substances, including information about the distribution of drugs, recipes for their manufacture, advice on their use and other information, the dissemination of which is prohibited by the current legislation of the Russian Federation;
+- send spam - mass mailing of commercial, political, advertising and other information (including hyperlinks leading to Internet sites with such information and / or to Internet sites containing malicious software) if the recipients did not express their consent to receive such information kind of information;
+- indicate when creating a Personal Account and filling out the registration form or subsequently enter deliberately false or fictitious information about yourself;
+- transfer the password from the Personal Account to persons who do not have the proper authority to act on behalf of the Customer (or User);
+- take actions aimed at destabilizing the functioning of the Platform and Services, make attempts to unauthorized access to the management of the Platform and Services or their closed sections (including sections to which only the Company is allowed access), as well as perform any other similar actions;
+- take actions to create new structures (including blocks in the blockchain) using the functionality of the Platform and Services to ensure the functioning of cryptocurrency platforms or for mining cryptocurrencies in any other way;
+- carry out any other actions that contradict the policy and goals of creating the Platform and Services or violate the current legislation of the Russian Federation.
 
-7\. RIGHTS AND OBLIGATIONS OF THE COMPANY
------------------------------------------
+## 7\. RIGHTS AND OBLIGATIONS OF THE COMPANY
 
 7.1. The Company carries out the current management of the Platform, independently determines the structure, appearance, allows or restricts the access of Customers, Users to the Platform and the Services provided by the Company in case of violation of the Applicable Rules and Rules for end users by the specified persons.
 
@@ -158,18 +150,17 @@ Authorization and entry to the Platform is carried out through the Site. A perso
 
 7.4. The company has the right to:
 
-*   at any time change the design and user interface of the Platform, the Services provided by the Company, the content of the functions provided, change or supplement the scripts used, software, the Company's content and other objects used or stored within the Services, any server applications, without mandatory notification of this Customer;
-*   at its discretion, delete any information and materials posted by the Customer within the Platform and Services that violate the laws of the Russian Federation, Applicable rules, the rights of other Customers, Users of Projects created by other Customers or third parties, harm them or threaten their safety;
-*   demand payment for services to provide access to the Services in the amount and in the manner provided for by agreements on the use of individual Services;
-*   when using the Platform and Services by the Customers and Users of the Projects, make comments to the specified persons, warn, notify, inform them about non-compliance with the terms of the Applicable Rules and the Rules for end users. The Company's instructions are binding on the above persons when using the Platform and Services;
-*   suspend, restrict or terminate the access of the Customer, Project Users to all or any of the sections of the Platform, Services at any time without explanation, with or without prior notice in case of violation of the legislation of the Russian Federation, Applicable Rules or Rules for end users;
-*   send messages to Customers, Users of Projects (including messages by e-mail, sms messages, etc.), which are notifications of the introduction of new or cancellation of old functions of the Platform and / or Services, as well as containing advertising information about the capabilities of the Platform and Services;
-*   take measures not prohibited by law to protect their own intellectual rights in relation to the Platform and the Services provided by the Company.
+- at any time change the design and user interface of the Platform, the Services provided by the Company, the content of the functions provided, change or supplement the scripts used, software, the Company's content and other objects used or stored within the Services, any server applications, without mandatory notification of this Customer;
+- at its discretion, delete any information and materials posted by the Customer within the Platform and Services that violate the laws of the Russian Federation, Applicable rules, the rights of other Customers, Users of Projects created by other Customers or third parties, harm them or threaten their safety;
+- demand payment for services to provide access to the Services in the amount and in the manner provided for by agreements on the use of individual Services;
+- when using the Platform and Services by the Customers and Users of the Projects, make comments to the specified persons, warn, notify, inform them about non-compliance with the terms of the Applicable Rules and the Rules for end users. The Company's instructions are binding on the above persons when using the Platform and Services;
+- suspend, restrict or terminate the access of the Customer, Project Users to all or any of the sections of the Platform, Services at any time without explanation, with or without prior notice in case of violation of the legislation of the Russian Federation, Applicable Rules or Rules for end users;
+- send messages to Customers, Users of Projects (including messages by e-mail, sms messages, etc.), which are notifications of the introduction of new or cancellation of old functions of the Platform and / or Services, as well as containing advertising information about the capabilities of the Platform and Services;
+- take measures not prohibited by law to protect their own intellectual rights in relation to the Platform and the Services provided by the Company.
 
-7.5. The Company undertakes, on the terms set forth in the Agreement, to provide the Customer with services for providing access to the Platform.
+  7.5. The Company undertakes, on the terms set forth in the Agreement, to provide the Customer with services for providing access to the Platform.
 
-8\. PAYMENT FOR COMPANY SERVICES
---------------------------------
+## 8\. PAYMENT FOR COMPANY SERVICES
 
 8.1. In cases stipulated by agreements on the use of certain Services, the services of the Company or Partners to provide access to the Services are paid and are provided on a prepaid basis.
 
@@ -189,8 +180,7 @@ After the receipt of funds to the Company's current account, the status of the C
 
 8.6 The Customer undertakes to sign one copy of the Act / UPD and send it to the Company within 10 working days from the date of its receipt, or sign the UPD via EDM using electronic signature within the same time frame.
 
-9\. TERRITORY AND DURATION OF THE AGREEMENT
--------------------------------------------
+## 9\. TERRITORY AND DURATION OF THE AGREEMENT
 
 9.1. The Customer has the right to use the Platform and Services in the ways described in this Agreement throughout the Russian Federation, as well as other territories where they are available using standard computer tools and programs.
 
@@ -201,14 +191,13 @@ After the receipt of funds to the Company's current account, the status of the C
 1.  The Company will decide to change the terms of this Agreement, the need to conclude a new agreement with the Customers, terminate this Agreement in relation to the Customer, terminate the administration and maintenance of the Platform and terminate access to it or terminate access to the use of the Platform in relation to the Customer.
 2.  The Company has the right at any time without notifying the Customer and without giving reasons to terminate the Agreement unilaterally out of court with immediate termination of access and the ability to use the Platform and without reimbursement of any costs, losses or return received under the Agreement, including, but not limited to, in case:
 
-*   closure or termination of the Platform;
-*   any, including one-time, violation by the Customer or the User of the Project created by the Customer, the terms of the Applicable Rules and / or the Rules for end users;
-*   on other grounds that, in the opinion of the Company, are sufficient to make a decision to terminate the Agreement.
+- closure or termination of the Platform;
+- any, including one-time, violation by the Customer or the User of the Project created by the Customer, the terms of the Applicable Rules and / or the Rules for end users;
+- on other grounds that, in the opinion of the Company, are sufficient to make a decision to terminate the Agreement.
 
-9.4. This Agreement does not provide for the assignment of any exclusive rights or the issuance of an exclusive license from the Company to the Customer for any components of the Platform and Services.
+  9.4. This Agreement does not provide for the assignment of any exclusive rights or the issuance of an exclusive license from the Company to the Customer for any components of the Platform and Services.
 
-10\. FINAL PROVISIONS
----------------------
+## 10\. FINAL PROVISIONS
 
 10.1. The invalidity of one or several provisions of the Agreement, recognized in the prescribed manner by a court decision that has entered into force, does not entail the invalidity of the Agreement as a whole for the Parties. In the event that one or several provisions of the Agreement are recognized as invalid in the prescribed manner, the Parties undertake to fulfill their obligations under the Agreement as close as possible to those implied by the Parties when concluding and / or agreeing to amend the Agreement in a manner.
 

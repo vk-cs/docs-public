@@ -1,5 +1,4 @@
-Description
------------
+## Description
 
 The server serial console log can be useful for getting information about the boot of the operating system or for determining the cause of any problems.
 
@@ -13,8 +12,7 @@ When using your own image, you need to configure the output of logs to the seria
  console = tty0 console = ttyS0,115200n8
 ```
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 To get the output of the serial console, you need to type the command:
 

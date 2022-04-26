@@ -4,13 +4,12 @@ Migration of virtual machines between services / platforms on which they can be 
 
 Before migrating a VM, make sure the following requirements are met:
 
-*   The operating system has a 64-bit architecture
-*   VM uses BIOS
-*   The current user has Administrator rights
-*   VM must have at least one connected disk
+- The operating system has a 64-bit architecture
+- VM uses BIOS
+- The current user has Administrator rights
+- VM must have at least one connected disk
 
-Preparing for migration
------------------------
+## Preparing for migration
 
 Before migrating a virtual machine, you should perform preparatory actions aimed at providing the existing virtual server with functionality:
 
@@ -18,8 +17,8 @@ Before migrating a virtual machine, you should perform preparatory actions aimed
 
 The first step is to download and install the VirtIO package drivers into your existing virtual machine.
 
-*   [Windows](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.171-1/) - download and installation [instructions](https://mcs.mail.ru/help/migration-training/windows-hyper-v)
-*   [Linux](https://www.linux-kvm.org/page/Virtio) - download and installation instructions
+- [Windows](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.171-1/) - download and installation [instructions](https://mcs.mail.ru/help/migration-training/windows-hyper-v)
+- [Linux](https://www.linux-kvm.org/page/Virtio) - download and installation instructions
 
 In some cases, if automatic installation of drivers is not possible, you may need to manually add them and install drivers from the downloaded VirtIO driver package.
 
@@ -38,8 +37,7 @@ To do this, you should:
 
 In case of migration from VMWare platform to others, it is necessary to uninstall the platform software, namely VMWare Tools. The action is recommended to be performed through the standard Add / Remove Programs snap-in (for Windows), or the application manager that exists in the operating system.
 
-Exporting a virtual machine
----------------------------
+## Exporting a virtual machine
 
 **Attention**
 
@@ -51,8 +49,7 @@ In the export window, specify the name of the desired exported template, as well
 
 ![](./assets/1597747823199-1597747823199.png)
 
-Loading VM image into VK CS
--------------------------
+## Loading VM image into VK CS
 
 The resulting \* .vmdk file should be loaded into an existing VK CS project.
 
@@ -65,5 +62,5 @@ It is recommended to use the Openstack CLI to load the virtual machine image in 
 If the instance created from the image must support backup, you must load it with the metadata of the presence of the guest agent:
 
 ```
- $ openstack image create --private --container-format bare --disk-format vmdk --file <file.vmdk> --property hw_qemu_guest_agent = yes --property store = s3 --property os_require_quiesce = yes <image_name>
+ openstack image create --private --container-format bare --disk-format vmdk --file <file.vmdk> --property hw_qemu_guest_agent = yes --property store = s3 --property os_require_quiesce = yes <image_name>
 ```

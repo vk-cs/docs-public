@@ -1,5 +1,4 @@
-Bonus points
-------------
+## Bonus points
 
 At the first registration in VK CS and activation of services, 150 points are automatically credited as a bonus for familiarization with the VK CS platform, as well as the services and services provided.
 
@@ -19,8 +18,7 @@ Note
 
 The decision to extend the testing period is made based on the provision of information on the purposes of using the platform and tasks.
 
-Starting quotas
----------------
+## Starting quotas
 
 When [registering](https://mcs.mail.ru/app/signup/) and connecting services, the following resource quota is allocated:
 
@@ -34,5 +32,5 @@ Note
 
 Not all project quotas are displayed in the personal account. A complete list can be obtained using:
 
-*   API - application interface
-*   CLI - Infrastructure Management Client
+- API - application interface
+- CLI - Infrastructure Management Client

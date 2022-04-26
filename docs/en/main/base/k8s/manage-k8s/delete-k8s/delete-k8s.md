@@ -1,14 +1,12 @@
 Before deleting a cluster, you need to make sure that it is in an enabled state. Otherwise, the delete operation cannot be performed.
 
-In VK CS Panel
-------------
+## In VK CS Panel
 
 To delete a cluster through the VK CS Panel, go to the list of clusters in the "Containers" section, in the context menu of the selected cluster, click the "Delete cluster" option.
 
 ![](./assets/1598991750274-1598991750274.png)
 
-With Terraform
---------------
+## With Terraform
 
 The **terraform destroy** command removes resources from the Terraform configuration. This command is the opposite of **terraform apply** because it removes all resources specified in the configuration. It does not destroy resources running elsewhere that are not described in the current configuration.
 

@@ -1,4 +1,4 @@
-Delivers up to ten messages to the specified queue. For a FIFO queue, multiple messages in a single packet are queued in the order they are sent. 
+Delivers up to ten messages to the specified queue. For a FIFO queue, multiple messages in a single packet are queued in the order they are sent.
 
 The result of sending each message is reported individually in the response. Since a batch request can result in a combination of successful and unsuccessful actions, you should check for batch errors even if the call returns the HTTP 200 status code.
 
@@ -12,8 +12,7 @@ Some actions accept parameter lists. These lists are specified using param.value
 
 &AttributeName.2=second
 
-Request Parameters
------------------
+## Request Parameters
 
 QueueUrl
 
@@ -33,8 +32,7 @@ Type: array of SendMessageBatchRequestEntry objects
 
 Required: Yes
 
-Response Elements
----------------
+## Response Elements
 
 The following items are returned by the service.
 
@@ -50,8 +48,7 @@ List of items. SendMessageBatchResultEntry
 
 Type: array of SendMessageBatchResultEntry objects
 
-Mistakes
-------
+## Mistakes
 
 AWS.SimpleQueueService.BatchEntryIdsNotDistinct
 
@@ -89,10 +86,9 @@ Error code 400. Unsupported operation.
 
 HTTP Status Code: 400
 
-Examples
--------
+## Examples
 
-In the following example of a SendMessageBatch request, two messages are sent to the queue. You have to URL-encode the entire URL. However, in this example, only the message body is encoded in the URL to make it easier to read. The structure of AUTHPARAMS depends on the signature of the API request. 
+In the following example of a SendMessageBatch request, two messages are sent to the queue. You have to URL-encode the entire URL. However, in this example, only the message body is encoded in the URL to make it easier to read. The structure of AUTHPARAMS depends on the signature of the API request.
 
 #### Sample request
 

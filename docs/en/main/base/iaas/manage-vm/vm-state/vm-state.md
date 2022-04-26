@@ -1,5 +1,4 @@
-VK CS control panel
------------------
+## VK CS control panel
 
 To work with a VM [in your VK CS account, you](https://mcs.mail.ru/app/services/infra/servers/) should:
 
@@ -13,8 +12,7 @@ If the instance does not respond for some reason, you can use a forced reboot, y
 
 A normal reboot attempts to gracefully shutdown the instance's operating system (graceful shutdown), a forced reboot is equivalent to a power cycle.
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 To turn on the VM, you need to run in the OpenStack client:
 

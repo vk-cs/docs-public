@@ -6,23 +6,18 @@ The PITR function is only available for databases running PostgreSQL.
 
 PITR helps protect PostgreSQL tables from accidental write or delete operations. You don't have to worry about creating, maintaining, or scheduling backups on-demand with point-in-time recovery. For example, a test script accidentally writes data to a PostgreSQL spreadsheet. With PITR, you can restore this table at any point in time.
 
-Read more about backup and recovery in PostgreSQL [here](https://postgrespro.ru/docs/postgresql/9.6/continuous-archiving ).
+Read more about backup and recovery in PostgreSQL [here](https://postgrespro.ru/docs/postgresql/9.6/continuous-archiving).
 
-PITR in VK Cloud Solutions
--------------------------
+## PITR in VK Cloud Solutions
 
 PITR is available for a PostgreSQL instance or cluster if a backup schedule is configured for it. The schedule can be configured when creating an instance or configured later. Contact technical support if you can't set up a schedule on an existing instance. The schedule determines the regularity of creating backups.
 
 To set the schedule, you need:
 
-* Schedule name;
-    
-* Backup interval (3, 4, 6, 8, 12, 24 hours);
-    
-* Start of the backup (specified in UTC in the API);
-    
-* The number of backups stored.
-    
+- Schedule name;
+- Backup interval (3, 4, 6, 8, 12, 24 hours);
+- Start of the backup (specified in UTC in the API);
+- The number of backups stored.
 
 For example, the interval is 3 hours, and the start time is 01:30. Therefore backups will be executed in 01:30, 04:30, 07:30, 10:30, 13:30, 16:30, 19:30 and 22:30 every day.
 
@@ -36,8 +31,8 @@ The system will also copy DBMS logs for PITR capability regardless of regular ba
 
 You can enable the backup schedule:
 
-* in the process of creating an instance or cluster;
-* in the settings of an already created instance or cluster.
+- in the process of creating an instance or cluster;
+- in the settings of an already created instance or cluster.
 
 #### Enabling the backup schedule when creating an instance
 
@@ -51,8 +46,8 @@ To enable the backup schedule when creating an instance, you must:
 
 To enable the backup schedule for existing instances, it is necessary:
 
-1. On the Backup tab or the Backups, click "Add." 
-2. In the step "Create instance," in the section "Backup," select "schedule." 
+1. On the Backup tab or the Backups, click "Add."
+2. In the step "Create instance," in the section "Backup," select "schedule."
 3. In the provided fields, enter the first backup time, select the interval between successive increments, and select database instance.
 4. Click "Add Plan" to accept the changes.
 
@@ -60,8 +55,8 @@ To enable the backup schedule for existing instances, it is necessary:
 
 You can restore an instance from a backup at a certain point in time:
 
-* From the list of backups;
-* when creating an instance.
+- From the list of backups;
+- when creating an instance.
 
 #### Restoring from the backup list
 

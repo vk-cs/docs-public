@@ -1,7 +1,6 @@
-The request deletes up to ten messages from the specified queue. The result of the action for each message in the response is reported separately. 
+The request deletes up to ten messages from the specified queue. The result of the action for each message in the response is reported separately.
 
-Request Parameters
------------------
+## Request Parameters
 
 **DeleteMessageBatchRequestEntry.N**
 
@@ -21,8 +20,7 @@ Type: String
 
 Required: Yes
 
-Response Elements
----------------
+## Response Elements
 
 The following items are returned by the service.
 
@@ -38,8 +36,7 @@ List of items. `DeleteMessageBatchResultEntry`
 
 Type: Array of DeleteMessageBatchResultEntry objects
 
-Mistakes
-------
+## Mistakes
 
 **AWS.SimpleQueueService.BatchEntryIdsNotDistinct**
 
@@ -65,8 +62,7 @@ A batch request contains more records than is allowed.
 
 HTTP Status Code: 400
 
-Examples
--------
+## Examples
 
 #### Sample request
 

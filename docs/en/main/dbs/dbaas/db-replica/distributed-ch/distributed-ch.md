@@ -1,10 +1,8 @@
-Описание
---------
+## Описание
 
 В СУБД Clickhouse репликация данных настраивается на уровне таблиц, в отличие от традиционных, где это обычно уровень БД или даже инстанса. То есть для того, чтобы данные реплицировались на другие хосты в кластере, необходимо правильным образом создать таблицу. Архитектура Clickhouse подразумевает, что таблицы с одинаковым именем реплицируются между двумя репликами (то есть имеют одинаковые данные), а между шардами никак не связаны, то есть данные “шардируются”. При этом, к сожалению, это никак не контролируется Clickhouse, поэтому вам надо самостоятельно  всё создать/настроить правильно.
 
-Создание реплицируемых таблиц
------------------------------
+## Создание реплицируемых таблиц
 
 Итак, у нас в наличии кластер Clickhouse, например с 2 шардами - в каждом 2 реплики. Имя кластера Clickhouse в VK CS всегда cluster. Выполним запрос:
 
@@ -26,8 +24,7 @@ SAMPLE BY intHash32(UserID);
 
 В итоге серверы реплики одного шарда будут иметь одинаковый путь в ZK, и будут применять изменения с других серверов и публиковать свои (двусторонняя репликация). Получается что можно обратиться к одному из серверов и получить актуальные данные, но как получить данные по всем шардам? Для удобства в этом случае можно использовать тип таблицы Distributed.
 
-Создание Distributed-таблиц
----------------------------
+## Создание Distributed-таблиц
 
 ```
 CREATE TABLE distributed ON CLUSTER cluster
@@ -48,9 +45,9 @@ CREATE TABLE distributed ON CLUSTER cluster
 
 Во-вторых, вы можете делать INSERT в Distributed таблицу. В этом случае, таблица будет сама распределять вставляемые данные по серверам. Для того, чтобы писать в Distributed таблицу, у неё должен быть задан ключ шардирования (последний параметр). Также, если шард всего-лишь один, то запись работает и без указания ключа шардирования (так как в этом случае он не имеет смысла).
 
-* * *
+---
 
-Полезные ссылки: 
+Полезные ссылки:
 
-*   [https://clickhouse.tech/docs/ru/operations/table\_engines/replication/](https://clickhouse.tech/docs/ru/operations/table_engines/replication/)
-*   [https://clickhouse.tech/docs/ru/operations/table\_engines/distributed/](https://clickhouse.tech/docs/ru/operations/table_engines/distributed/)
+- [https://clickhouse.tech/docs/ru/operations/table_engines/replication/](https://clickhouse.tech/docs/ru/operations/table_engines/replication/)
+- [https://clickhouse.tech/docs/ru/operations/table_engines/distributed/](https://clickhouse.tech/docs/ru/operations/table_engines/distributed/)

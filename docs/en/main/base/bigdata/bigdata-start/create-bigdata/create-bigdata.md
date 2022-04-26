@@ -1,5 +1,4 @@
-Cluster creation
-----------------
+## Cluster creation
 
 The Big Data cluster is created in the web interface of the VK CS control panel.
 
@@ -15,12 +14,12 @@ _Airflow_ is a set of libraries for running and monitoring tasks written in Pyth
 
 _DataFlow-HDF-v34 -_ Template based on Hortonworks Data Flow. This cluster manages data streams and performs streaming analytics. After initial installation, control is also carried out via the Ambari console. Component versions:
 
-*   Apache NiFi 1.9.0
-*   NiFi Registry 0.3.0
-*   Apache MiNiFi Java Agent 0.6.0
-*   Apache MiNiFi C ++ 0.6.0
-*   Hortonworks Schema Registry 0.7.0
-*   Hortonworks Streaming Analytics Manager 0.6.0
+- Apache NiFi 1.9.0
+- NiFi Registry 0.3.0
+- Apache MiNiFi Java Agent 0.6.0
+- Apache MiNiFi C ++ 0.6.0
+- Hortonworks Schema Registry 0.7.0
+- Hortonworks Streaming Analytics Manager 0.6.0
 
 _Spark is a_ suite for parallel in-memory big data processing. The template is focused on fast data processing in near real time mode.
 
@@ -54,7 +53,6 @@ Initializing the cluster and installing the Hadoop components takes 25-30 minute
 
 Approximately 5-8 minutes after the start of the launch, you will be able to access the Ambari interface and track the progress of the installation process.
 
-Cluster connection
-------------------
+## Cluster connection
 
 Hadoop and Spark clusters can be accessed via SSH to launch tasks, install additional components.

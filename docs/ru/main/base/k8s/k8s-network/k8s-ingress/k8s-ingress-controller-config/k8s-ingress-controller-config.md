@@ -10,10 +10,13 @@
 </info>
 
 ## Опции Nginx Ingress Controller
-Можно управлять различными опциями NGINX Ingress Controller с помощью ConfigMap или аннотаций. В случае использования ConfigMap, данные параметры будут применены глобально ко всем ресурсам Ingress, в случае аннотаций - только к тому Ingress, в котором использована эту аннотацию. 
+
+Можно управлять различными опциями NGINX Ingress Controller с помощью ConfigMap или аннотаций. В случае использования ConfigMap, данные параметры будут применены глобально ко всем ресурсам Ingress, в случае аннотаций - только к тому Ingress, в котором использована эту аннотацию.
 
 Следующая таблица показывает соответствие между доступными аннотациями и ключами ConfigMap.
+
 ### Соответствие аннотаций
+
 <table>
    <tbody>
       <tr>
@@ -314,13 +317,15 @@
 
 Следует отредактировать файл nginx-config.yaml, установив необходимые параметры.
 Далее следует применить данный файл на кластере Kubernetes:
-``` bash
+
+```bash
 kubectl apply -f nginx-config.yaml
 ```
 
 После этого конфигурация NGINX Ingress Controller будет изменена.
 Если необходимо обновить некоторые параметры, надо изменить файл nginx-config.yaml и выполнить следующую команду еще раз:
-``` bash
+
+```bash
 kubectl apply -f nginx-config.yaml
 ```
 
@@ -328,32 +333,41 @@ kubectl apply -f nginx-config.yaml
 <tabpanel>
 
 Развернутый Helm-ом Nginx-ingress берет параметры из ConfigMap находящегося в namespace в котором он развернут.
-Чтобы получить namespace, выполните команду: 
-``` bash
+Чтобы получить namespace, выполните команду:
+
+```bash
 helm ls -A | grep nginx
 ```
-``` yaml
+
+```yaml
 NAME            NAMESPACE       REVISION   UPDATED                                   STATUS     CHART                  APP VERSION
 ingress-nginx   ingress-nginx   1          2021-12-07 10:03:02.541220976 +0000 UTC   deployed   ingress-nginx-3.36.0   0.49.0
 ```
-Для применения параметров к Ingress Controller необходимо добавить их в ConfigMap в соответствующем namespace. Чтобы добавить или изменить параметры к Nginx Ingress Controller выполните следующие шаги: 					
+
+Для применения параметров к Ingress Controller необходимо добавить их в ConfigMap в соответствующем namespace. Чтобы добавить или изменить параметры к Nginx Ingress Controller выполните следующие шаги:
+
 1. Получите список имеющихся ConfigMap:
-``` bash
+
+```bash
 kubectl -n ingress-nginx get configmap
 ```
-``` yaml
+
+```yaml
 NAME                              DATA   AGE
 ingress-controller-leader-nginx   0      35d
 ingress-nginx-controller          7      35d
 kube-root-ca.crt                  1      35d
 ```
+
 Обратите внимание на `ingress-nginx-controller`.
 
 2. Отредактируйте секцию `data`. Вы можете добавить или изменить необходимые параметры.
-``` bash
+
+```bash
 kubectl -n ingress-nginx edit cm ingress-nginx-controller
 ```
-``` yaml
+
+```yaml
 data:
    ...
   proxy-buffer-size: "256k"
@@ -375,7 +389,7 @@ data:
 
 Например, cafe-ingress-with-annotations.yaml:
 
-``` yaml
+```yaml
 apiVersion: networking.k8s.io/v1
 kind: IngressClass
 metadata:
@@ -394,20 +408,20 @@ metadata:
     nginx.ingress.kubernetes.io/proxy-body-size: "4m"
 spec:
   rules:
-  - host: cafe.example.com
-    http:
-      paths:
-      - path: /tea
-        backend:
-          service:
-            name: tea-svc
-            port:
-              number: 80
-      - path: /coffee
-        backend:
-          service:
-            name: coffee-svc
-            port:
-              number: 80
+    - host: cafe.example.com
+      http:
+        paths:
+          - path: /tea
+            backend:
+              service:
+                name: tea-svc
+                port:
+                  number: 80
+          - path: /coffee
+            backend:
+              service:
+                name: coffee-svc
+                port:
+                  number: 80
   ingressClassName: nginx
 ```

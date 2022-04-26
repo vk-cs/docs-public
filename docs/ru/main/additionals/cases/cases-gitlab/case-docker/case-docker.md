@@ -2,9 +2,9 @@
 
 После этого вы можете:
 
-*   [установить и настроить Gitlab](https://mcs.mail.ru/help/gitlab-ci-cd/gitlab-installation);
-*   [установить и настроить Harbor](https://mcs.mail.ru/help/gitlab-ci-cd/harbor-installation);
-*   [настроить авторазвертывание приложения в кластер Kubernetes](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
+- [установить и настроить Gitlab](https://mcs.mail.ru/help/gitlab-ci-cd/gitlab-installation);
+- [установить и настроить Harbor](https://mcs.mail.ru/help/gitlab-ci-cd/harbor-installation);
+- [настроить авторазвертывание приложения в кластер Kubernetes](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
 
 Чтобы установить и настроить Docker:
 

@@ -1,7 +1,6 @@
 This document is the official offer of Mail.ru LLC (hereinafter referred to as the "Contractor") to conclude a user agreement (hereinafter referred to as the "Agreement") with you (hereinafter referred to as the "Customer") on the provision of services for providing access to the Cloud Servers virtual infrastructure Service within Platforms "VK Cloud Solutions" (hereinafter referred to as the "Platform"), on the terms set forth in this Agreement, which is available on the Internet at: [https://mcs.mail.ru/infra](https://mcs.mail.ru/infra) .
 
-1\. Terms and definitions
--------------------------
+## 1\. Terms and definitions
 
 **Site** - an Internet site located at [https://mcs.mail.ru/](https://mcs.mail.ru/) , which provides the Customer with access to the Service. The Contractor posts on the Site information that is binding on the Customer.
 
@@ -21,13 +20,12 @@ This document is the official offer of Mail.ru LLC (hereinafter referred to as t
 
 **Applicable rules** - the rules for using the Contractor's Service, available on the Internet at: [https://mcs.mail.ru/infra](https://mcs.mail.ru/infra) , containing the conditions for access and use of the Service and set out in the following documents:
 
-*   Terms of use of the VK Cloud Solutions Platform ( [https://help.mail.ru/mcs/legal/termofuse](https://help.mail.ru/mcs/legal/termofuse) );
-*   Contractor's privacy policy ( [https://help.mail.ru/mcs/legal/privacy/](https://help.mail.ru/mcs/legal/privacy) ).
+- Terms of use of the VK Cloud Solutions Platform ( [https://help.mail.ru/mcs/legal/termofuse](https://help.mail.ru/mcs/legal/termofuse) );
+- Contractor's privacy policy ( [https://help.mail.ru/mcs/legal/privacy/](https://help.mail.ru/mcs/legal/privacy) ).
 
 In the event that this Agreement uses terms that are not defined in Section 2 of this Agreement, the definitions of these terms of the Applicable Rules are used.
 
-2\. Subject of the Agreement
-----------------------------
+## 2\. Subject of the Agreement
 
 2.1. Under the terms of this Agreement, the Contractor provides the Customer around the clock, with an Internet connection, a "Cloud Servers" service (hereinafter referred to as the Service), which allows the Customer to create virtual servers and virtual disks on the Contractor's servers, and the Customer undertakes to pay for the Contractor's services for using the provision access to the Service in the amount and in the manner determined by the Applicable Rules.
 
@@ -45,15 +43,14 @@ The Customer can use the Service to the extent of the rights granted to him by t
 
 2.7. The placement of Content on the Contractor's servers and its use must not violate any applicable law, in particular, the Customer is not entitled to:
 
-*   upload, store, transfer, provide access to other persons or otherwise bring to the public knowledge (post on the Service) the Content and other results of intellectual activity of the copyright holders in the absence of the explicitly expressed consent of these persons and / or the required amount of rights to such actions;
-*   upload, store, transfer, provide access to other persons to the Content prohibited by applicable law, or the Content, storage or use of which requires obtaining special permissions from authorized bodies or persons, if the Customer does not have the appropriate permissions.
+- upload, store, transfer, provide access to other persons or otherwise bring to the public knowledge (post on the Service) the Content and other results of intellectual activity of the copyright holders in the absence of the explicitly expressed consent of these persons and / or the required amount of rights to such actions;
+- upload, store, transfer, provide access to other persons to the Content prohibited by applicable law, or the Content, storage or use of which requires obtaining special permissions from authorized bodies or persons, if the Customer does not have the appropriate permissions.
 
 The content described in this clause is hereinafter referred to as “Prohibited Content”.
 
 The Contractor has the right to monitor the Content in order to verify that the Customer complies with the requirements of this Agreement for the Content and to prevent Prohibited Content. The Customer undertakes not to create obstacles to the Contractor in the implementation of such monitoring, while he has the right to use tools to preserve the confidentiality of the Content (such as encryption, firewalls).
 
-3\. Rights and obligations of the Parties
------------------------------------------
+## 3\. Rights and obligations of the Parties
 
 3.1. The Contractor undertakes:
 
@@ -83,8 +80,7 @@ The Contractor has the right to monitor the Content in order to verify that the 
 
 3.2.3. Be responsible for your actions and / or inactions on the use of the Contractor's Service.
 
-4\. Cost of services and payment procedure
-------------------------------------------
+## 4\. Cost of services and payment procedure
 
 4.1. The use of the Services is chargeable. The Contractor, in order to determine the cost of using the Service, sets the price and the corresponding list of services in accordance with the Tariffs.
 
@@ -96,8 +92,7 @@ In the absence of funds on the Personal balance (account) of the Customer to wri
 
 4.5. To restore access to the Service, the Customer must replenish funds on his Personal balance (account) for the amount necessary to pay for services in the amount required for the Customer in accordance with the Tariffs in force at the time of the payment.
 
-5\. Responsibility of the Parties
----------------------------------
+## 5\. Responsibility of the Parties
 
 5.1. The amount of the Contractor's liability is limited solely by the relevant Applicable Rules posted on the Site in the section [https://help.mail.ru/mcs/legal/](https://help.mail.ru/mcs/legal/) .
 
@@ -107,8 +102,7 @@ In the absence of funds on the Personal balance (account) of the Customer to wri
 
 5.4. The Contractor is not responsible for any violations of the current legislation that have or may take place on projects implemented by the Customer. In the event of claims against the Contractor from third parties in connection with such violations that have occurred, the Customer is obliged to release the Contractor from liability and settle such claims on his own, all losses incurred by the Contractor through the fault of the Customer, in full, including but not limited to: settlement of claims, disputes, enforcement of sanctions by state authorities, must be reimbursed to the Contractor, if any.
 
-6\. Other conditions
---------------------
+## 6\. Other conditions
 
 6.1. The Customer guarantees that his Content posted using the Contractor's Service does not contain information and images of a pornographic nature, does not promote violence, racial, sexual, religious or other forms of inequality, or other activities directly prohibited by the legislation of the Russian Federation, does not violate copyright laws. law and other applicable legislation, as this may affect the reputation of the Contractor.
 

@@ -1,7 +1,6 @@
 This section describes the parts of a distributed messaging system and explains the lifecycle of a Cloud Queues message.
 
-Distributed queues
-----------------------
+## Distributed queues
 
 A distributed messaging system consists of three main parts: components of your distributed system, your queue (distributed on Cloud Queues servers) and messages in the queue.
 
@@ -9,8 +8,7 @@ In the following scenario, your system has several producers (components that se
 
 ~![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f7055-2fdirect-2f1607970669106-1607970669106.png)~
 
-Message lifecycle
-------------------------
+## Message lifecycle
 
 The following scenario describes the lifecycle of a Cloud Queues message in a queue from creation to deletion.
 

@@ -1,6 +1,7 @@
 An incident is a fixation of the event of a metric value falling under the condition specified in the trigger. It contains information about the trigger, the time of the event, the value of the metric and all its labels.
 
 There are three incident statuses:
+
 - Opened — opened incident
 - Closed — closed by user or automatically (for incidents with an interval)
 - Acknowledged — marked by the user as accepted/processed
@@ -10,6 +11,7 @@ To change the incident status, go to the "Alerting" page in the "Monitoring" sec
 1. Go to the "Incidents" tab.
 2. In the incident table, select the incident whose status you want to change.
 3. In the "Status" column, select the new incident status:
+
 - Open → In progress
 - Open → Closed
 - At work → Private

@@ -1,10 +1,9 @@
 The way to connect File Storage to an instance depends on the operating system and the storage access protocol selected when it was created:
 
-*   NFS is a "Network File System" that allows you to transparently exchange files between servers. It is a client / server application that allows you to view files on a virtual server and update them as if they were locally. Using NFS, it is possible to mount all or part of the file system.
-*   CIFS is the "Common Internet File System" used by operating systems to exchange files. CIFS uses a client-server programming model. The client program requests the server program to access the file or send a message to the program running on the server. The server performs the requested action and returns a response. CIFS is a public or open variant of the Server Message Block (SMB) protocol and uses the TCP / IP protocol. NFS and CIFS are the primary file systems used in NAS.
+- NFS is a "Network File System" that allows you to transparently exchange files between servers. It is a client / server application that allows you to view files on a virtual server and update them as if they were locally. Using NFS, it is possible to mount all or part of the file system.
+- CIFS is the "Common Internet File System" used by operating systems to exchange files. CIFS uses a client-server programming model. The client program requests the server program to access the file or send a message to the program running on the server. The server performs the requested action and returns a response. CIFS is a public or open variant of the Server Message Block (SMB) protocol and uses the TCP / IP protocol. NFS and CIFS are the primary file systems used in NAS.
 
-Windows
--------
+## Windows
 
 **NFS**
 
@@ -26,10 +25,10 @@ After the installation is complete, launch the Services for Network File System 
 
 In the NFS client settings, you can set:
 
-*   Transport protocols used - default TCP + UDP
-*   Mount type for NFS storage: Hard or Soft
-*   The File Permissions tab specifies the default rights for the created folders and files on the NFS share
-*   The Security tab specifies the authentication protocols that can be used to authenticate to the NFS server
+- Transport protocols used - default TCP + UDP
+- Mount type for NFS storage: Hard or Soft
+- The File Permissions tab specifies the default rights for the created folders and files on the NFS share
+- The Security tab specifies the authentication protocols that can be used to authenticate to the NFS server
 
 ![](./assets/1597432934222-1597432934222.png)
 
@@ -45,8 +44,7 @@ To connect, run the command specified in the properties of the created CIFS File
 
 ![](./assets/1597433994830-1597433994830.png)
 
-Linux
------
+## Linux
 
 **NFS**
 
@@ -55,6 +53,7 @@ Before starting to mount an NFS share, make sure that the nfs-common package is 
 ```
  sudo apt-get install nfs-common
 ```
+
 After checking or installing the package, it is enough to use the command specified in the properties of the created NFS storage:
 
 ![](./assets/1597434494849-1597434494848.png)
@@ -74,8 +73,11 @@ CentOS
 ```
  yum install cifs-utils
 ```
+
 After the packages are installed, you need to create a folder to mount the repository:
+
 ```
  mkdir <your_File_storage>
 ```
+
 Then use the mount command available in the properties of the created CIFS repository:![](./assets/1597435004296-1597435004296.png)

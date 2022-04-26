@@ -1,5 +1,4 @@
-The cost
---------
+## The cost
 
 For all software products of the 1C: GRM service, the general principle of cost calculation operates, regardless of the type of application, consisting of 3 basic components:
 
@@ -15,8 +14,7 @@ The base cost of applications is determined as follows:
 
 _\* Payment is made on the basis of 30 calendar days in a month_
 
-Trial period
-------------
+## Trial period
 
 For all 1C software products: Accounting, Salary and Human Resources Management and Management of our company, a demo period is available, within which the service is provided without restrictions for a period of 30 days.
 
@@ -26,8 +24,7 @@ To get demo access to the application, just select it when creating. There is no
 
 Demo access is provided only for the first application of each type in the project. The trial period cannot be extended or stopped. The trial period starts when the application is created.
 
-Balance and documents
----------------------
+## Balance and documents
 
 Based on the result of using the 1C: GRM service, the project owner will be invoiced for payment according to the actual time and volume of service use.
 

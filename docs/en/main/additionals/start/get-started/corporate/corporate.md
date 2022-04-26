@@ -2,8 +2,7 @@ The VK CS platform allows you to work with legal entities that are residents of 
 
 If it is necessary to conclude an individual Contract, you should contact [VK CS support](mailto:support@mcs.mail.ru) .
 
-Organization details
---------------------
+## Organization details
 
 After registering and activating services in your personal account, you can edit information about the project and its purpose.
 
@@ -25,8 +24,7 @@ For many organizations, the requisites will be filled in automatically. If this 
 
 ![](./assets/1595437923781-1595437923781.png)
 
-Closing documents
------------------
+## Closing documents
 
 **Attention**
 

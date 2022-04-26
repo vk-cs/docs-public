@@ -1,12 +1,10 @@
-Master
-------
+## Master
 
 Go to [cluster control panel](https://mchs.mail.ru/app/services/containers/list /). Select "**Change the type of virtual machine Master**" in the context menu of the desired cluster and select the new wizard settings.
 
 ![](./assets/1582901562865-1582901562865.png)
 
-Node group
-----------
+## Node group
 
 Go to [cluster control panel](https://mcs.mail.ru/app/services/containers/list /). Select the "**Resize**" item in the context menu of the desired cluster and select the new number of nodes.
 

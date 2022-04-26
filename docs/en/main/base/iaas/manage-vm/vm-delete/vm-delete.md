@@ -6,8 +6,7 @@ It is not possible to reverse the delete operation, so it is recommended that yo
 
 If you need to delete only the virtual machine, you should disconnect the disks before deleting and replace the root disk with a temporary one.
 
-VK CS control panel
------------------
+## VK CS control panel
 
 To delete an instance [in your VK CS account, you](https://mcs.mail.ru/app/services/infra/servers/) should:
 
@@ -15,8 +14,7 @@ To delete an instance [in your VK CS account, you](https://mcs.mail.ru/app/servi
 2.  In the context menu of the instance, select the "Delete" item:![](./assets/1596480186575-1596480186575.png)
 3.  Confirm the operation:![](./assets/1596480629450-1596480629450.png)
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 To delete an instance in the OpenStack client, use the command:
 

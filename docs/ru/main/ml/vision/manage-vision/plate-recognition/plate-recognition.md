@@ -2,29 +2,28 @@
 
 Данный метод позволяет найти различные объекты на фотографии.
 
-Запрос
-------
+## Запрос
 
 Авторизационные данные передаются в строке запроса:
 
-| **Параметр** | **Тип** | **Значение** |
-| --- | --- | --- |
-| oauth_token | string | OAuth2 access token **(required non-empty)** |
-| oauth_provider | string | провайдер OAuth2 **(required non-empty)** |
+| **Параметр**   | **Тип** | **Значение**                                 |
+| -------------- | ------- | -------------------------------------------- |
+| oauth_token    | string  | OAuth2 access token **(required non-empty)** |
+| oauth_provider | string  | провайдер OAuth2 **(required non-empty)**    |
 
 ### Поддерживаемые провайдеры OAuth2:
 
-| **Провайдер** | **Значение oauth_provider** | **Получение токена** |
-| --- | --- | --- |
-| Mail.Ru | mr | [https://help.mail.ru/biz/vision/api/v1/oauth_token](https://help.mail.ru/biz/vision/api/v1/oauth_token) |
-| MCS | mcs | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token) (все клиенты MCS) |
+| **Провайдер** | **Значение oauth_provider** | **Получение токена**                                                                                                     |
+| ------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Mail.Ru       | mr                          | [https://help.mail.ru/biz/vision/api/v1/oauth_token](https://help.mail.ru/biz/vision/api/v1/oauth_token)                 |
+| MCS           | mcs                         | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token) (все клиенты MCS) |
 
 ### Параметры запроса передаются в формате JSON в теле запроса с name="meta":
 
-| **Параметр** | **Тип** | **Значение** |
-| --- | --- | --- |
-| mode | []string | типы объектов, которые требуется искать на переданных изображениях **(required non-empty)** |
-| images | []image_meta | метаданные передаваемых изображений **(required non-empty)** |
+| **Параметр** | **Тип**      | **Значение**                                                                                |
+| ------------ | ------------ | ------------------------------------------------------------------------------------------- |
+| mode         | []string     | типы объектов, которые требуется искать на переданных изображениях **(required non-empty)** |
+| images       | []image_meta | метаданные передаваемых изображений **(required non-empty)**                                |
 
 ### Возможные значения mode:
 
@@ -42,11 +41,11 @@ mode может содержать один или несколько режим
 
 **image_meta**
 
-| **Параметр** | **Тип** | **Значение** |
-| --- | --- | --- |
-| name | string | имена файлов для сопоставления файлов в запросе и ответе **(required non-empty)** |
+| **Параметр** | **Тип** | **Значение**                                                                      |
+| ------------ | ------- | --------------------------------------------------------------------------------- |
+| name         | string  | имена файлов для сопоставления файлов в запросе и ответе **(required non-empty)** |
 
-Изображения передаются в теле запроса, значения поля name должны соответствовать переданным в images. 
+Изображения передаются в теле запроса, значения поля name должны соответствовать переданным в images.
 
 Максимальное количество изображений в одном запросе равняется 100. Максимальный размер каждого изображения не должен превышать 4МБ.
 
@@ -54,54 +53,53 @@ mode может содержать один или несколько режим
 
 <table cellpadding="5" cellspacing="0" style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; background-color: rgb(255, 255, 255); border: none; empty-cells: show; max-width: 100%; width: 690px; margin-bottom: 20px; color: rgb(56, 76, 96); font-family: &quot;Open Sans&quot;, Helvetica, &quot;Lucida Grande&quot;, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; break-inside: avoid;" width="706"><tbody style="box-sizing: border-box;"><tr style="box-sizing: border-box; user-select: none; line-height: 32px;"><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(0, 0, 0); user-select: text;" width="694"><p style="box-sizing: border-box; margin: 0px 0px 0.1in; color: rgb(56, 76, 96); font-size: 16px; font-weight: 400; line-height: 18.4px; direction: ltr; text-align: left; orphans: 2; widows: 2; background: transparent;">POST /api/v1/objects/detect?oauth_provider=mr&amp;oauth_token=123&nbsp;HTTP/1.1<br style="box-sizing: border-box;"><br style="box-sizing: border-box;">Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp<br style="box-sizing: border-box;"><br style="box-sizing: border-box;">------WebKitFormBoundaryfCqTBHeLZlsicvMp<br style="box-sizing: border-box;">Content-Disposition: form-data; name="file_0"; filename=""<br style="box-sizing: border-box;">Content-Type: image/jpeg<br style="box-sizing: border-box;"><br style="box-sizing: border-box;">000000000000000000000000000<br style="box-sizing: border-box;">000000000000000000000000000<br style="box-sizing: border-box;">000000000000000000000000000<br style="box-sizing: border-box;">------WebKitFormBoundaryfCqTBHeLZlsicvMp<br style="box-sizing: border-box;">Content-Disposition: form-data; name="file_1"; filename=""<br style="box-sizing: border-box;">Content-Type: image/jpeg<br style="box-sizing: border-box;"><br style="box-sizing: border-box;">111111111111111111111111111<br style="box-sizing: border-box;">111111111111111111111111111<br style="box-sizing: border-box;">111111111111111111111111111<br style="box-sizing: border-box;">------WebKitFormBoundaryfCqTBHeLZlsicvMp<br style="box-sizing: border-box;">Content-Disposition: form-data; name="meta"<br style="box-sizing: border-box;"><br style="box-sizing: border-box;">{"mode":["object","scene","car_number"],"images":[{"name":"file_0"},{"name":"file_1"}]}<br style="box-sizing: border-box;">------WebKitFormBoundaryfCqTBHeLZlsicvMp--</p></td></tr></tbody></table>
 
-Ответ
------
+## Ответ
 
-| **Параметр** | **Тип** | **Значение** |
-| --- | --- | --- |
-| status | int | 200 в случае успеха, иначе описание ошибки будет в body |
-| body | string | response | тело ответа |
+| **Параметр** | **Тип** | **Значение**                                            |
+| ------------ | ------- | ------------------------------------------------------- | ----------- |
+| status       | int     | 200 в случае успеха, иначе описание ошибки будет в body |
+| body         | string  | response                                                | тело ответа |
 
 ### response
 
-| **Параметр** | **Тип** | **Значение** |
-| --- | --- | --- |
-| scene_labels | []object | массив ответов для каждого файла со сценами (может отсутствовать) |
-| object_labels | []object | массив ответов для каждого файла с объектами (может отсутствовать) |
-| car_number_labels | []object | массив ответов для каждого файла с номерам машин (может отсутствовать) |
+| **Параметр**       | **Тип**  | **Значение**                                                             |
+| ------------------ | -------- | ------------------------------------------------------------------------ |
+| scene_labels       | []object | массив ответов для каждого файла со сценами (может отсутствовать)        |
+| object_labels      | []object | массив ответов для каждого файла с объектами (может отсутствовать)       |
+| car_number_labels  | []object | массив ответов для каждого файла с номерам машин (может отсутствовать)   |
 | multiobject_labels | []object | массив ответов для каждого файла с мультиобъектами (может отсутствовать) |
-| pedestrian_labels | []object | массив ответов для каждого файла с людьми (может отсутствовать) |
+| pedestrian_labels  | []object | массив ответов для каждого файла с людьми (может отсутствовать)          |
 
 ### object
 
-| **Параметр** | **Тип** | **Значение** |
-| --- | --- | --- |
-| status | enum | результат выполнения |
-| error | string | текстовое описание ошибки **(optional)** |
-| name | string | имя файла для сопоставления файлов в запросе и ответе |
-| labels | []label | список объектов (меток), найденных на изображении |
+| **Параметр** | **Тип** | **Значение**                                          |
+| ------------ | ------- | ----------------------------------------------------- |
+| status       | enum    | результат выполнения                                  |
+| error        | string  | текстовое описание ошибки **(optional)**              |
+| name         | string  | имя файла для сопоставления файлов в запросе и ответе |
+| labels       | []label | список объектов (меток), найденных на изображении     |
 
 (**only for pedestrian mode**)
 
-| **Параметр** | **Тип** | **Значение** |
-| --- | --- | --- |
-| count_by_density | int | кол-во людей в кадре, подсчитанное с помощью карты плотности |
-| **Параметр** | **Значение** |
-| 0 | успешно |
-| 1 | перманентная ошибка |
-| 2 | временная ошибка |
+| **Параметр**     | **Тип**             | **Значение**                                                 |
+| ---------------- | ------------------- | ------------------------------------------------------------ |
+| count_by_density | int                 | кол-во людей в кадре, подсчитанное с помощью карты плотности |
+| **Параметр**     | **Значение**        |
+| 0                | успешно             |
+| 1                | перманентная ошибка |
+| 2                | временная ошибка    |
 
 ### label
 
-| **Параметр** | **Значение** |
-| --- | --- |
-| eng | метка (название) для найденного объекта на английском |
-| rus | метка (название) найденного объекта на русском |
-| eng_categories | список категорий (каждая категория включает в себя множество меток) на английском **(optional)** |
-| rus_categories | список категорий (каждая категория включает в себя множество меток) на русском **(optional)** |
-| prob | степень уверенности в том, что на изображении именно этот объект |
-| coord | координаты найденного объекта **(optional)** |
-| types_prob | массив вероятностей типов номерных знаков. на данный момент поддерживаются следующие типы: "rus" - все типы Российских номеров, "cis" - номера СНГ (кроме индивидуальных и военных украинских), "eu" - одноэтажные номера Европы (**optional, only for car_number mode**) |
+| **Параметр**   | **Значение**                                                                                                                                                                                                                                                              |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| eng            | метка (название) для найденного объекта на английском                                                                                                                                                                                                                     |
+| rus            | метка (название) найденного объекта на русском                                                                                                                                                                                                                            |
+| eng_categories | список категорий (каждая категория включает в себя множество меток) на английском **(optional)**                                                                                                                                                                          |
+| rus_categories | список категорий (каждая категория включает в себя множество меток) на русском **(optional)**                                                                                                                                                                             |
+| prob           | степень уверенности в том, что на изображении именно этот объект                                                                                                                                                                                                          |
+| coord          | координаты найденного объекта **(optional)**                                                                                                                                                                                                                              |
+| types_prob     | массив вероятностей типов номерных знаков. на данный момент поддерживаются следующие типы: "rus" - все типы Российских номеров, "cis" - номера СНГ (кроме индивидуальных и военных украинских), "eu" - одноэтажные номера Европы (**optional, only for car_number mode**) |
 
 Пример ответа:
 

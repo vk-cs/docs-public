@@ -1,5 +1,4 @@
-Deleting a cluster
-------------------
+## Deleting a cluster
 
 In the section "Big Data" - "Clusters" in the context menu of the selected cluster to be deleted, on hovering, a menu appears with the option to delete a cluster. You can also delete it by checking the box next to the required cluster and clicking the "Delete" button:
 

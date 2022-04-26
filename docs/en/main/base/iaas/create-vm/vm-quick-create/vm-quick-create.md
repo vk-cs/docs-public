@@ -4,13 +4,11 @@ Virtual machines can have Linux and Windows operating systems available when cre
 
 The VK CS infrastructure is protected in accordance with Federal Law No. 152.
 
-Before starting work
---------------------
+## Before starting work
 
 To create a virtual machine, you must register on the VK CS Platform, go to your personal account and make sure that the Cloud Computing service is active, the account balance is positive, and there are enough quotas to create the desired instance configuration.
 
-Configuration templates
------------------------
+## Configuration templates
 
 There are several groups of configurations (flavors) of virtual machines that are available in the project for creating virtual machines:
 
@@ -18,8 +16,7 @@ There are several groups of configurations (flavors) of virtual machines that ar
 
 By default, Basic, Standard and Advanced configurations are available in the project. To create Heavy or Custom configurations, [contact our technical support](mailto:support@mcs.mail.ru) . The cost of Heavy and Custom configurations is calculated individually for each request.
 
-VM performance
---------------
+## VM performance
 
 VK CS server equipment located in data centers hosting virtual machines has the following characteristics:
 
@@ -33,8 +30,7 @@ After gaining access, you can create a virtual machine with a high-performance p
 
 ![](./assets/1602983349574-1602983349574.png)
 
-VM creation
------------
+## VM creation
 
 A virtual machine is created in the Virtual machines section of the Cloud computing section using the "Create instance" button.
 
@@ -66,8 +62,7 @@ The next step is to set up an automatic VM backup plan.
 
 After that, you should go to the creation stage by clicking the "Add virtual machine" button.
 
-Completion
-----------
+## Completion
 
 The virtual machine will be created in 10-15 minutes. During this period, the operating system is being deployed to the instance disk, and system tools are also running to configure the virtual machine in accordance with the specified parameters.
 

@@ -4,18 +4,17 @@ The S3 CLI introduces a new set of simple commands to efficiently receive and se
 
 With minimal configuration, the S3 CLI allows you to run commands from the command line in a terminal program:
 
-*   Linux shells are common shell programs such as bash, zsh, and tcsh for executing commands on Linux or macOS.
-*   Windows Command Prompt - On Windows, you run commands from the Windows Command Prompt or PowerShell.
+- Linux shells are common shell programs such as bash, zsh, and tcsh for executing commands on Linux or macOS.
+- Windows Command Prompt - On Windows, you run commands from the Windows Command Prompt or PowerShell.
 
 The S3 CLI is available in two versions, and the information in this guide applies to both, unless otherwise noted.
 
-*   Version 2.x is the current generally available version of the S3 CLI for use in production environments.
-*   Version 1.x is the previous version of the AWS CLI available for backward compatibility.
+- Version 2.x is the current generally available version of the S3 CLI for use in production environments.
+- Version 1.x is the previous version of the AWS CLI available for backward compatibility.
 
 Full information about the set of commands and additional CLI settings is available on [the developer's website](https://docs.aws.amazon.com/cli/index.html) .
 
-CLI installation
-----------------
+## CLI installation
 
 To install S3 CLI v2 in the operating system, you must install the appropriate package:
 
@@ -28,6 +27,7 @@ Ability to extract or "unzip" a downloaded package. If the operating system does
 AWS CLI version 2 uses glibc, groff, and less. They are included by default in most major Linux distributions.
 
 For Linux x86 (64-bit):
+
 ```
  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
@@ -41,7 +41,9 @@ For Linux ARM
 unzip awscliv2.zip
 sudo ./aws/install
 ```
+
 Check the correctness of the installation:
+
 ```
  aws --version
 ```
@@ -55,6 +57,7 @@ Installation for MacOS is done using the standard MacOS user interface and brows
 3.  Follow the instructions on the screen.
 
 You can check the correctness of the installation in the terminal:
+
 ```
  aws --version
 ```
@@ -63,8 +66,8 @@ You can check the correctness of the installation in the terminal:
 
 Before installing AWS CLI v2 on Windows, you must ensure that you have the following:
 
-*   Windows XP 64-bit or newer.
-*   Administrator rights to install software
+- Windows XP 64-bit or newer.
+- Administrator rights to install software
 
 For installation:
 
@@ -78,8 +81,7 @@ You can use the Windows Standard Command Line Interface (cmd) to confirm the ins
  aws --version
 ```
 
-Accessing the CLI
------------------
+## Accessing the CLI
 
 Access keys consist of an access key identifier and a secret access key, which are used to sign software requests sent to VK CS. If access keys are missing, they can be created in the VK CS Control Panel.
 
@@ -89,8 +91,7 @@ In the VK CS panel, in the "Accounts" menu of the "Object Storage" service, you 
 
 ![](./assets/1598234121428-1598234121428.png)
 
-CLI setup
----------
+## CLI setup
 
 The fastest way to customize your AWS CLI installation is with the command:
 
@@ -100,31 +101,29 @@ The fastest way to customize your AWS CLI installation is with the command:
 
 When you enter this command, the AWS CLI prompts for four pieces of information:
 
-*   Access key identifier - the received key identifier data is used when adding an account.
-*   Secret access key - the received secret key data is used when adding an account.
-*   AWS region - the region where the S3 service is located, by default it is ru-msk.
-*   Output Format - Determines how to format the output of the command being used. If no output format is specified, it will use json by default. Available options are json, yaml, text, and table.
+- Access key identifier - the received key identifier data is used when adding an account.
+- Secret access key - the received secret key data is used when adding an account.
+- AWS region - the region where the S3 service is located, by default it is ru-msk.
+- Output Format - Determines how to format the output of the command being used. If no output format is specified, it will use json by default. Available options are json, yaml, text, and table.
 
 The AWS CLI stores this information in a profile (set of settings) called default in the credentials file. By default, the information in this profile is used when you run an AWS CLI command that does not explicitly specify the profile to use.
 
-Features:
----------
+## Features:
 
 When using the AWS CLI to work with Object Storage, there are a few things to keep in mind:
 
-*   The AWS CLI treats VK CS S3 as a hierarchical file system and object keys are in the form of a file path.
-*   When running the aws command to work with VK CS S3, the --endpoint-url parameter is required because the client is configured by default to work with Amazon servers.
-*   Bucket creation should be done using the appropriate --endpoint-url - [http://hb.bizmrg.com](http://hb.bizmrg.com) for the Hotbox bucket and [http://ib.bizmrg.com](http://ib.bizmrg.com) for the Icebox bucket.
-*   Any operations cannot be performed using the CLI with the Backup bucket class.
-*   When using the storage classes --storage-class, the STANDARD values for Hotbox and STANDARD_IA for Icebox apply.
-*   When working in MacOS, in some cases it is required to run the following view:
+- The AWS CLI treats VK CS S3 as a hierarchical file system and object keys are in the form of a file path.
+- When running the aws command to work with VK CS S3, the --endpoint-url parameter is required because the client is configured by default to work with Amazon servers.
+- Bucket creation should be done using the appropriate --endpoint-url - [http://hb.bizmrg.com](http://hb.bizmrg.com) for the Hotbox bucket and [http://ib.bizmrg.com](http://ib.bizmrg.com) for the Icebox bucket.
+- Any operations cannot be performed using the CLI with the Backup bucket class.
+- When using the storage classes --storage-class, the STANDARD values for Hotbox and STANDARD_IA for Icebox apply.
+- When working in MacOS, in some cases it is required to run the following view:
 
 ```
  export PYTHONPATH = / Library / Python / 2.7 / site-packages; aws s3 <command> --endpoint-url = http: //hb.bizmrg.com
 ```
 
-Examples of using
------------------
+## Examples of using
 
 Create a hotbox bucket:
 

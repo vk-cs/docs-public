@@ -1,5 +1,4 @@
-Импорт образа
--------------
+## Импорт образа
 
 <warn>
 
@@ -34,25 +33,25 @@
 
 Для загрузки образа в клиенте OpenStack следует выполнить команду:
 
-``` bash
+```bash
 openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <файл.raw> <название_образа>
 ```
 
 Если инстанс, созданный из образа, должен поддерживать резервное копирование, необходимо загрузить его с указанием метаданных наличия гостевого агента:
 
-``` bash
+```bash
 openstack image create --private --container-format bare --disk-format raw --file <файл.raw> **--property hw_qemu_guest_agent=yes** --property store=s3 **--property os_require_quiesce=yes** <название_образа>
 ```
 
 В зависимости от формата загружаемого файла требуется указать соответствующее значение ключа --disk-format:
 
-*   raw
-*   vhd
-*   vhdx
-*   vmdk
-*   vdi
-*   iso
-*   qcow2
+- raw
+- vhd
+- vhdx
+- vmdk
+- vdi
+- iso
+- qcow2
 
 </tabpanel>
 </tabs>
@@ -67,13 +66,13 @@ openstack image create --private --container-format bare --disk-format raw --fil
 
 Получить список образов:
 
-``` bash
+```bash
 openstack image list
 ```
 
 Инициировать процесс загрузки образа, выполнив команду:
 
-``` bash
+```bash
 openstack image save --file <путь> <ID образа>
 ```
 
@@ -81,6 +80,6 @@ openstack image save --file <путь> <ID образа>
 
 В некоторых случаях загрузка через CLI может потребовать большое количество оперативной памяти, в этом случае возможно использование cURL:
 
-``` bash
+```bash
 curl -H "X-Auth-Token: $(openstack token issue -c id -f value)" https://infra.mail.ru:9292/v2/images/<IMAGE_ID>/file --output <output_filename>
 ```

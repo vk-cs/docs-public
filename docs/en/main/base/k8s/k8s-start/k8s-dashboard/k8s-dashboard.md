@@ -1,10 +1,8 @@
-Description
------------
+## Description
 
 Kubernetes Dashboard is a universal web interface for Kubernetes clusters. It allows users to manage and troubleshoot applications running on the cluster, and to manage the cluster itself.
 
-Connection
-----------
+## Connection
 
 First, you need to get Secret to access the cluster. This can be done in two ways: through the VK CS GUI and using kubectl.
 
@@ -25,10 +23,9 @@ kubectl proxy
 
 [http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/](http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/)
 
-
 4.  In the window that opens, select the "Token" option.
 5.  Insert the token received from the previous command and click "Sign In".
-    
+
     ![](./assets/1598991200265-1598991200264.png)
-    
+
 6.  The Kubernetes Dashboard window will open with superadmin rights.

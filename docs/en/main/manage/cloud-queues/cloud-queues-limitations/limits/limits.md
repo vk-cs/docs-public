@@ -16,7 +16,7 @@ To set the maximum message size, set the value of the MaximumMessageSize attribu
 
 Cloud Queues messages can contain up to 256 KB of text data, including XML, JSON and unformatted text formats. The following Unicode characters are allowed:
 
-#x9 | #xA | #xD | [from #x20 to #xD7FF] | [from #xE000 to #xFFFD] | [from #x10000 to #x10FFFF]
+\#x9 | \#xA | \#xD | [from \#x20 to \#xD7FF] | [from \#xE000 to \#xFFFD] | [from \#x10000 to \#x10FFFF]
 
 #### Maximum allowed size of the Cloud Queues message queue
 

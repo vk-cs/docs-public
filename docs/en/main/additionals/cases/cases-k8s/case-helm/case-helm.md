@@ -1,18 +1,15 @@
-Конфигурация оборудования
--------------------------
+## Конфигурация оборудования
 
-*   Установленный и настроенный кластер Kubernetes.
-*   При использовании Helm2 - установленный Tiller.
+- Установленный и настроенный кластер Kubernetes.
+- При использовании Helm2 - установленный Tiller.
 
-Что такое Cert-manager
-----------------------
+## Что такое Cert-manager
 
 Cert-manager - нативное для Kubernetes средство управления сертификатами. Cert-manager может получать сертификаты из нескольких источников (например, [Let’s Encrypt](https://letsencrypt.org/), [HashiCorp Vault](https://www.vaultproject.io/), [Venafi](https://www.venafi.com/)), из локальных контейнеров, содержащих сертификат и ключ, либо может генерировать самоподписанные сертификаты, которые чаще всего используются для предоставления https-доступа к ingress-контроллерам. Кроме того, Cert-manager контролирует срок действия сертификатов и поддерживает автоматическое обновление сертификатов. Cхема организации Cert-manager (источник: [официальная документация](https://cert-manager.io/docs/)):
 
 ![](./assets/1580395247227-1580395247227.png)
 
-Установка Cert-manager
-----------------------
+## Установка Cert-manager
 
 1.  Уточните версию кластера Kubernetes:
 
@@ -20,12 +17,12 @@ Cert-manager - нативное для Kubernetes средство управл�
 ash-work:~ kubectl version
 Client Version: version.Info{Major:"1", Minor:"16+",
 GitVersion:"v1.16.6-beta.0",
-GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc", 
-GitTreeState:"clean", BuildDate:"2020-01-15T08:26:26Z", 
+GitCommit:"e7f962ba86f4ce7033828210ca3556393c377bcc",
+GitTreeState:"clean", BuildDate:"2020-01-15T08:26:26Z",
 GoVersion:"go1.13.5", Compiler:"gc", Platform:"darwin/amd64"}
-Server Version: version.Info{Major:"1", Minor:"16", 
+Server Version: version.Info{Major:"1", Minor:"16",
 GitVersion:"v1.16.4",
-GitCommit:"2bba0127d85d5a46ab4b778548be28623b32d0b0", 
+GitCommit:"2bba0127d85d5a46ab4b778548be28623b32d0b0",
 GitTreeState:"clean", BuildDate:"2020-05-19T18:09:41Z",
 GoVersion:"go1.12.12", Compiler:"gc", Platform:"linux/amd64"
 ```
@@ -34,11 +31,11 @@ GoVersion:"go1.12.12", Compiler:"gc", Platform:"linux/amd64"
 
 ```
 # Kubernetes 1.15+
-kubectl apply --validate=false -f 
+kubectl apply --validate=false -f
 https://github.com/jetstack/cert-manager/releases/download/v0.16.0/cert-manager.crds.yaml
 
 # Kubernetes <1.15
-kubectl apply --validate=false-f 
+kubectl apply --validate=false-f
 https://github.com/jetstack/cert-manager/releases/download/v0.16.0/cert-manager-legacy.crds.yaml
 ```
 
@@ -118,12 +115,11 @@ documentation:
 ash-work:~ kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
 ```
 
-Затем повторите команду для  установки. 
+Затем повторите команду для  установки.
 
 Подробнее о настройке прав Helm см. [тут](https://mcs.mail.ru/help/ingress/helm).
 
-Проверка Cert-manager
----------------------
+## Проверка Cert-manager
 
 1.  Убедитесь, что Cert-manager установлен:
 
@@ -222,8 +218,7 @@ Events:
   Normal  Issuing    34s   cert-manager  The certificate has been successfully issued
 ```
 
-Резервное копирование и восстановление настроек Cert-manager
-------------------------------------------------------------
+## Резервное копирование и восстановление настроек Cert-manager
 
 Для резервирования настроек Cert-manager выполните команду:
 
@@ -240,8 +235,7 @@ ash-work:~ kubectl get -o yaml \
 ash-work:~ kubectl apply -f cert-manager-backup.yaml
 ```
 
-Обновление Cert-manager
------------------------
+## Обновление Cert-manager
 
 Рассмотрим обновление Cert-manager версии 0.12 до версии 0.16.
 
@@ -323,8 +317,7 @@ ash-work:~ helm list -n cert-manager | grep cert-manager
 cert-manager    cert-manager    3           2020-08-04 12:27:16.694045 +0300 MSK    deployed    cert-manager-v0.16.0
 ```
 
-Удаление Cert-manager
----------------------
+## Удаление Cert-manager
 
 1.  Просмотрите созданные пользовательские ресурсы:
 

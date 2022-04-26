@@ -1,7 +1,6 @@
-A list of all cost allocation tags added to the specified Amazon SQS queue. 
+A list of all cost allocation tags added to the specified Amazon SQS queue.
 
-Request Parameters
------------------
+## Request Parameters
 
 QueueUrl
 
@@ -11,8 +10,7 @@ Type: String
 
 Required: Yes
 
-Response Elements
----------------
+## Response Elements
 
 The service returns the following item.
 
@@ -26,8 +24,7 @@ A list of all tags added to the specified queue.
 
 Type: string for string matching
 
-Examples
--------
+## Examples
 
 This example shows one use of ListQueueTags.
 

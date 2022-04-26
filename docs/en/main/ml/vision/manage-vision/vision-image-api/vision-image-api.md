@@ -1,53 +1,41 @@
 The **improve** method is used to improve photos.
 
-Request
-------
+## Request
 
 Authorization data is transmitted in the request line:
 
-  
-| **Parameter** | **Type** | **Value** |
-| --- | --- | --- |
-| oauth_token | string | OAuth2 access token **(required non-empty)** |
+| **Parameter**  | **Type**                                          | **Value**                                    |
+| -------------- | ------------------------------------------------- | -------------------------------------------- |
+| oauth_token    | string                                            | OAuth2 access token **(required non-empty)** |
 | oauth_provider | string / provider OAuth2 **(required non-empty)** |
-
-### 
 
 Supported OAuth2 providers:
 
-  
-| **Provider** | **Value of oauth_provider** | **Getting a token** |
-| --- | --- | --- |
-| MCS | mcs | [https://mcs.mail.ru /](https://mcs.mail.ru /) |
+| **Provider** | **Value of oauth_provider** | **Getting a token**                            |
+| ------------ | --------------------------- | ---------------------------------------------- |
+| MCS          | mcs                         | [https://mcs.mail.ru /](https://mcs.mail.ru /) |
 
 Request parameters are passed in JSON format in the request body with name="meta":
 
-  
-| **Parameter** | **Type** | **Value** |
-| --- | --- | --- |
-| mode | []string | types of objects to be searched in the transmitted images **(required non-empty)** |
-| images | []image_meta / metadata of transmitted images **(required non-empty)** |
-/ rfactor | int / resolution increase factor, can take values either 2 or 4 **(required non-empty for resolution mode)** /
-/ ftype | string | image type, "art" or "photo" **(required non-empty for resolution mode)** |
-
-### 
+| **Parameter** | **Type**                                                                                                       | **Value**                                                                          |
+| ------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| mode          | []string                                                                                                       | types of objects to be searched in the transmitted images **(required non-empty)** |
+| images        | []image_meta / metadata of transmitted images **(required non-empty)**                                         |
+| / rfactor     | int / resolution increase factor, can take values either 2 or 4 **(required non-empty for resolution mode)** / |
+| / ftype       | string                                                                                                         | image type, "art" or "photo" **(required non-empty for resolution mode)**          |
 
 Possible values of mode:
 
- 
-| **Parameter** | **Value** |
-| --- | --- |
-| improve / restore photos |
+| **Parameter**                    | **Value** |
+| -------------------------------- | --------- |
+| improve / restore photos         |
 | resolution / increase resolution |
-
-### 
 
 image_meta
 
-  
-| **Parameter** | **Type** | **Value** |
-| --- | --- | --- |
-| name | string / file names for matching files in request and response **(required non-empty)** |
+| **Parameter** | **Type**                                                                                | **Value** |
+| ------------- | --------------------------------------------------------------------------------------- | --------- |
+| name          | string / file names for matching files in request and response **(required non-empty)** |
 
 Images are passed in the request body, the values of the name field must match those passed in images.
 
@@ -59,52 +47,46 @@ Request example:
 
 --
 
-Answer
------
+## Answer
 
-  
-| **Parameter** | **Type** | **Value** |
-| --- | --- | --- |
-| status / int|200 if successful, otherwise the error description will be in body |
-/ body | string | response / response body |
+| **Parameter** | **Type**                                                           | **Value**                |
+| ------------- | ------------------------------------------------------------------ | ------------------------ |
+| status / int  | 200 if successful, otherwise the error description will be in body |
+| / body        | string                                                             | response / response body |
 
 ### response
 
-  
-| **Parameter** | **Type** | **Value** |
-| --- | --- | --- |
-| improve | []improve_object / array of responses for improve mode |
-| resolution | []resolution_object / array of responses for resolution mode |
+| **Parameter** | **Type**                                                     | **Value** |
+| ------------- | ------------------------------------------------------------ | --------- |
+| improve       | []improve_object / array of responses for improve mode       |
+| resolution    | []resolution_object / array of responses for resolution mode |
 
 ### improve_object
 
-  
-| **Parameter** | **Type** | **Value** |
-| --- | --- | --- |
-| status | enum | execution result |
-| error | string | text description of the error **(optional)** /
-/ name | string | file name for matching files in request and response |
-| improved | string | jpeg image of a photo with fixed defects (base64). **The field may be missing or empty** if, according to the algorithm, there is no point in restoring the photo (it is already good) |
-| colorized_improved | string | jpeg image of a photo with corrected defects and restored color (base64). **The field may be missing or empty** if, according to the algorithm, it makes no sense to restore and fill in the photo |
-| colorized | string | jpeg image of a photo with restored color (base64) |
-| bw | bool / true - the algorithm believes that he was given a black-and-white photo to enter, false - the algorithm believes that he was given a color photo to enter |
+| **Parameter**      | **Type**                                                                                                                                                         | **Value**                                                                                                                                                                                          |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| status             | enum                                                                                                                                                             | execution result                                                                                                                                                                                   |
+| error              | string                                                                                                                                                           | text description of the error **(optional)** /                                                                                                                                                     |
+| / name             | string                                                                                                                                                           | file name for matching files in request and response                                                                                                                                               |
+| improved           | string                                                                                                                                                           | jpeg image of a photo with fixed defects (base64). **The field may be missing or empty** if, according to the algorithm, there is no point in restoring the photo (it is already good)             |
+| colorized_improved | string                                                                                                                                                           | jpeg image of a photo with corrected defects and restored color (base64). **The field may be missing or empty** if, according to the algorithm, it makes no sense to restore and fill in the photo |
+| colorized          | string                                                                                                                                                           | jpeg image of a photo with restored color (base64)                                                                                                                                                 |
+| bw                 | bool / true - the algorithm believes that he was given a black-and-white photo to enter, false - the algorithm believes that he was given a color photo to enter |
 
 ### resolution_object
 
-  
-| **Parameter** | **Type** | **Value** |
-| --- | --- | --- |
-| status | enum | execution result |
-| error | string | text description of the error **(optional)** /
-/ name | string | file name for matching files in request and response |
-| resolved | string | jpeg image of a photo with an increased resolution (base64) |
+| **Parameter** | **Type** | **Value**                                                   |
+| ------------- | -------- | ----------------------------------------------------------- |
+| status        | enum     | execution result                                            |
+| error         | string   | text description of the error **(optional)** /              |
+| / name        | string   | file name for matching files in request and response        |
+| resolved      | string   | jpeg image of a photo with an increased resolution (base64) |
 
 ### status
 
- 
-| **Parameter** | **Value** |
-| --- | --- |
-| 0 | successfully |
+| **Parameter**       | **Value**    |
+| ------------------- | ------------ |
+| 0                   | successfully |
 | 1 / permanent error |
 | 2 / temporary error |
 

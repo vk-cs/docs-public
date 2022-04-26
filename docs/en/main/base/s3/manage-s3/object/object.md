@@ -1,7 +1,6 @@
 VK CS Object Storage is a simple key and value store designed to store any number of objects. These objects are stored in one or more buckets, and each object can be up to 320 TB in size.
 
-general information
--------------------
+## general information
 
 The object consists of the following:
 
@@ -13,8 +12,7 @@ The object consists of the following:
 
 **Information for access control** **(Access Control Information)** - you can control access to objects stored in the Object repository. VK CS supports resource-based access control such as access control list (ACL) and bucket policies, as well as user-based access control.
 
-Functionality
--------------
+## Functionality
 
 Loadable objects have additional functionality such as:
 
@@ -22,8 +20,7 @@ Storage class - VK CS provides the ability to use several storage classes to bes
 
 Lifecycle - a mechanism that determines automatic actions to delete individual objects of a bucket or a group of objects within a specified period of time
 
-Loading an object
------------------
+## Loading an object
 
 The created bucket can be loaded with files that are saved as an S3 object. Objects are composed of file data and metadata describing the object. The bucket can contain an unlimited number of objects.
 
@@ -39,8 +36,7 @@ When loading a folder, S3 loads all files and subfolders from the specified fold
 
 If an object with a key name that already exists in the bucket is loaded, S3 replaces the existing object.
 
-Displaying objects
-------------------
+## Displaying objects
 
 You can view the objects in the bucket using graphical tools such as the VK CS Panel or graphical file manager, and the AWS S3 CLI console.
 
@@ -50,8 +46,7 @@ In the VK CS panel, the list of objects is available when you select a bucket in
 
 In Object Storage, a folder is a zero-sized object whose key is included in the keys of other objects as a prefix. The VK CS panel interface, as well as file managers such as CyberDuck, allow you to work with these objects as folders, simulating a hierarchical structure.
 
-Downloading an object
----------------------
+## Downloading an object
 
 Downloading of a single object or a group of objects is available in the VK CS panel.
 
@@ -65,8 +60,7 @@ To download a single object, you can use the options menu of the selected object
 
 To download the entire folder (directory) in the bucket, use the S3 CLI, or S3-compatible file managers, for example CyberDuck.
 
-Providing access to an object
------------------------------
+## Providing access to an object
 
 By default, objects uploaded to the bucket have private access settings, which prevents users from accessing them from the Internet.
 
@@ -82,8 +76,7 @@ The link contains the name of the bucket containing the object, the endpoint of 
 
 Making a folder public will open access to the objects contained in that folder, but not to the folder itself, since the final URL can only contain the object itself.
 
-Deleting an Object
-------------------
+## Deleting an Object
 
 Deleting an object, folder or group of objects can be done in the graphical interface of the VK CS panel, S3 CLI or any S3-compatible file manager.
 
@@ -91,8 +84,7 @@ To delete one or several objects or folders in the VK CS panel, select one or se
 
 ![](./assets/1598219417350-1598219417350.png)
 
-Removing a multipart object
----------------------------
+## Removing a multipart object
 
 When using multipart upload for bulk files, you can delete a partially loaded object from the Multipart tab of the selected bucket.
 

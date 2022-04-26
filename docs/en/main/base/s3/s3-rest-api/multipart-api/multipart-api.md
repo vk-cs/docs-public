@@ -2,14 +2,13 @@ Composite or multipart loading allows you to save objects in VK CS S3 Object Sto
 
 Composite loading consists of the following steps:
 
-*   Initiate Multipart Upload - Initialize Upload
-*   Upload Part - Upload an object in parts
-*   Complete Multipart Upload - Completing the upload by combining previously uploaded parts
-*   Abort Multipart Upload - Abort upload
-*   List Parts - Returns a list of loaded parts
+- Initiate Multipart Upload - Initialize Upload
+- Upload Part - Upload an object in parts
+- Complete Multipart Upload - Completing the upload by combining previously uploaded parts
+- Abort Multipart Upload - Abort upload
+- List Parts - Returns a list of loaded parts
 
-Initiate Multipart Upload
--------------------------
+## Initiate Multipart Upload
 
 The operation initializes a multipart download and returns the download ID. The load ID is used to combine all parts of a single multipart load. You must include this download ID in each of your subsequent download requests for a part.
 
@@ -49,8 +48,7 @@ Connection: close
 </InitiateMultipartUploadResult>
 ```
 
-Upload Part
------------
+## Upload Part
 
 The operation loads a portion of a multipart load. To perform this operation, you must provide data from the part in the request. To load a part from an existing object, use the load part (copy) operation.
 
@@ -83,8 +81,7 @@ x-amz-request-id: tx00000000000000ab85dab-005991efac-66a8-ru-mska
 Connection: close
 ```
 
-Complete Multipart Upload
--------------------------
+## Complete Multipart Upload
 
 The operation completes the multi-part download by combining the previously loaded parts. Upon receiving this request, VK CS merges all loaded parts in ascending order by part number, creating a new object. In a request to complete a multipart download, you must provide a list of parts. For each part from the list, you must provide the part number and the ETag header value returned after that part is loaded.
 
@@ -137,8 +134,7 @@ Connection: close
 </CompleteMultipartUploadResult>
 ```
 
-Abort Multipart Upload
-----------------------
+## Abort Multipart Upload
 
 The operation aborts the multipart download. After aborting a multipart download, it is not possible to download additional parts using the download ID of the interrupted multipart download. The space allocated for storing the previously loaded parts will be freed. Moreover, if any parts are loaded, then such an operation may be completed or interrupted. As a result, it may be necessary to repeatedly interrupt the multi-part download in order to completely free up the space occupied by all parts.
 
@@ -164,8 +160,7 @@ x-amz-request-id: tx00000000000000abbaefe-0059920764-66a8-ru-mska
 Connection: close
 ```
 
-List Parts
-----------
+## List Parts
 
 The operation returns a list of parts loaded for a specific multipart load. The operation must include the download ID, which was received after the request was sent to initialize the multipart download. Such a query will return no more than 1000 loaded parts. You can limit the number of parts returned by specifying the max-parts query parameter. If the multipart load contains more than 1000 parts, then the response returns a NextPartNumberMarker element and an IsTruncated field with the value true. Subsequent requests to view the list of parts can include the part-number-marker query string parameter by setting it to the NextPartNumberMarker field value from the previous response.
 

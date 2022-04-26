@@ -1,5 +1,4 @@
-Description
------------
+## Description
 
 The Object Storage service allows you to use an automated mechanism for cleaning objects at specified intervals.
 
@@ -9,8 +8,7 @@ Object life cycles can be configured only for each individual bucket. You cannot
 
 Lifecycle rules in the VK CS panel are managed on the "Lifecycle" tab of the selected bucket.
 
-Create a rule
--------------
+## Create a rule
 
 When creating a rule in the VK CS panel interface, fill in the fields and confirm the creation:
 
@@ -18,7 +16,7 @@ When creating a rule in the VK CS panel interface, fill in the fields and confir
 
 Where:
 
-*   Rule Name - The display name of the rule. Only numbers, Latin letters and symbols "-", "_" and "."
-*   Object key prefix - a key prefix that is used to filter objects that are subject to the rule. A filter can contain only one prefix. Examples of prefixes for a key image, image /, image / photo
-*   Delete after a specified number of days - a timer after which the rule for deleting objects starts
-*   Activate rule - a mechanism for activating a rule that allows you to enable or disable a rule without having to delete it
+- Rule Name - The display name of the rule. Only numbers, Latin letters and symbols "-", "\_" and "."
+- Object key prefix - a key prefix that is used to filter objects that are subject to the rule. A filter can contain only one prefix. Examples of prefixes for a key image, image /, image / photo
+- Delete after a specified number of days - a timer after which the rule for deleting objects starts
+- Activate rule - a mechanism for activating a rule that allows you to enable or disable a rule without having to delete it

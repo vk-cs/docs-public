@@ -2,29 +2,28 @@ Car license plate recognition is a special case of using the detect method - the
 
 This method allows you to find various objects in the photo.
 
-Request
-------
+## Request
 
 Authorization data is transmitted in the request line:
 
-| **Parameter** | **Type** | **Value** |
-| --- | --- | --- |
-| oauth_token | string | OAuth2 access token **(required non-empty)** |
+| **Parameter**  | **Type**                                          | **Value**                                    |
+| -------------- | ------------------------------------------------- | -------------------------------------------- |
+| oauth_token    | string                                            | OAuth2 access token **(required non-empty)** |
 | oauth_provider | string / provider OAuth2 **(required non-empty)** |
 
 ### Supported OAuth2 providers:
 
-| **Provider** | **Value of oauth_provider** | **Getting a token** |
-| --- | --- | --- |
-| Mail.Ru | mr | [https://help.mail.ru/biz/vision/api/v1/oauth_token](https://help.mail.ru/biz/vision/api/v1/oauth_token) |
-| MCS | mcs | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token ) (all MCS clients) |
+| **Provider** | **Value of oauth_provider** | **Getting a token**                                                                                                      |
+| ------------ | --------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Mail.Ru      | mr                          | [https://help.mail.ru/biz/vision/api/v1/oauth_token](https://help.mail.ru/biz/vision/api/v1/oauth_token)                 |
+| MCS          | mcs                         | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token) (all MCS clients) |
 
 ### Request parameters are passed in JSON format in the request body with name="meta":
 
-| **Parameter** | **Type** | **Value** |
-| --- | --- | --- |
-| mode | []string | types of objects to be searched in the transmitted images **(required non-empty)** |
-| images | []image_meta / metadata of transmitted images **(required non-empty)** |
+| **Parameter** | **Type**                                                               | **Value**                                                                          |
+| ------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| mode          | []string                                                               | types of objects to be searched in the transmitted images **(required non-empty)** |
+| images        | []image_meta / metadata of transmitted images **(required non-empty)** |
 
 ### Possible values of mode:
 
@@ -42,11 +41,11 @@ mode can contain one or more modes. For example:
 
 **image_meta**
 
-| **Parameter** | **Type** | **Value** |
-| --- | --- | --- |
-| name | string | file names for matching files in request and response **(required non-empty)** |
+| **Parameter** | **Type** | **Value**                                                                      |
+| ------------- | -------- | ------------------------------------------------------------------------------ |
+| name          | string   | file names for matching files in request and response **(required non-empty)** |
 
-Images are passed in the request body, the values of the name field must match those passed in images. 
+Images are passed in the request body, the values of the name field must match those passed in images.
 
 The maximum number of images per request is 100. The maximum size of each image should not exceed 4MB.
 
@@ -54,50 +53,50 @@ Request example:
 
 <table cellpadding="5" cellspacing="0" style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; background-color: rgb(255, 255, 255); border: none; empty-cells: show; max-width: 100%; width: 690px; margin-bottom: 20px; color: rgb(56, 76, 96); font-family: &quot;Open Sans&quot;, Helvetica, &quot;Lucida Grande&quot;, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; break-inside: avoid;" width="706"><tbody style="box-sizing: border-box;"><tr style="box-sizing: border-box; user-select: none; line-height: 32px;"><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(0, 0, 0); user-select: text;" width="694"><p style="box-sizing: border-box; margin: 0px 0px 0.1in; color: rgb(56, 76, 96); font-size: 16px; font-weight: 400; line-height: 18.4px; direction: ltr; text-align: left; orphans: 2; widows: 2; background: transparent;">POST /api/v1/objects/detect?oauth_provider=mr&amp;oauth_token=123&nbsp;HTTP/1.1<br style="box-sizing: border-box;"><br style="box-sizing: border-box;">Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp<br style="box-sizing: border-box;"><br style="box-sizing: border-box;">------WebKitFormBoundaryfCqTBHeLZlsicvMp<br style="box-sizing: border-box;">Content-Disposition: form-data; name="file_0"; filename=""<br style="box-sizing: border-box;">Content-Type: image/jpeg<br style="box-sizing: border-box;"><br style="box-sizing: border-box;">000000000000000000000000000<br style="box-sizing: border-box;">000000000000000000000000000<br style="box-sizing: border-box;">000000000000000000000000000<br style="box-sizing: border-box;">------WebKitFormBoundaryfCqTBHeLZlsicvMp<br style="box-sizing: border-box;">Content-Disposition: form-data; name="file_1"; filename=""<br style="box-sizing: border-box;">Content-Type: image/jpeg<br style="box-sizing: border-box;"><br style="box-sizing: border-box;">111111111111111111111111111<br style="box-sizing: border-box;">111111111111111111111111111<br style="box-sizing: border-box;">111111111111111111111111111<br style="box-sizing: border-box;">------WebKitFormBoundaryfCqTBHeLZlsicvMp<br style="box-sizing: border-box;">Content-Disposition: form-data; name="meta"<br style="box-sizing: border-box;"><br style="box-sizing: border-box;">{"mode":["object","scene","car_number"],"images":[{"name":"file_0"},{"name":"file_1"}]}<br style="box-sizing: border-box;">------WebKitFormBoundaryfCqTBHeLZlsicvMp--</p></td></tr></tbody></table>
 
-Answer
------
+## Answer
 
-| **Parameter** | **Type** | **Value** |
-| --- | --- | --- |
-| status / int|200 if successful, otherwise the error description will be in body |
-/ body | string | response / response body |
+| **Parameter** | **Type**                                                           | **Value**                |
+| ------------- | ------------------------------------------------------------------ | ------------------------ |
+| status / int  | 200 if successful, otherwise the error description will be in body |
+| / body        | string                                                             | response / response body |
 
 ### response
 
-| **Parameter** | **Type** | **Value** |
-| --- | --- | --- |
-/ scene_labels | []object / array of responses for each file with scenes (may be missing) |
-/ object_labels | []object / array of responses for each file with objects (may be missing) |
-| car_number_labels | []object / array of responses for each file with machine numbers (may be missing) |
-| multiobject_labels | []object / array of responses for each file with multiobjects (may be missing) |
-/ pedestrian_labels | []object / array of responses for each file with people (may be missing) |
+| **Parameter**       | **Type**                                                                          | **Value** |
+| ------------------- | --------------------------------------------------------------------------------- | --------- |
+| / scene_labels      | []object / array of responses for each file with scenes (may be missing)          |
+| / object_labels     | []object / array of responses for each file with objects (may be missing)         |
+| car_number_labels   | []object / array of responses for each file with machine numbers (may be missing) |
+| multiobject_labels  | []object / array of responses for each file with multiobjects (may be missing)    |
+| / pedestrian_labels | []object / array of responses for each file with people (may be missing)          |
 
 ### object
 
-| **Parameter** | **Type** | **Value** |
-| --- | --- | --- |
-| status | enum | execution result |
-| error | string | text description of the error **(optional)** /
-/ name | string | file name for matching files in request and response |
-| labels | []label / list of objects (labels) found in the image |
+| **Parameter** | **Type**                                              | **Value**                                            |
+| ------------- | ----------------------------------------------------- | ---------------------------------------------------- |
+| status        | enum                                                  | execution result                                     |
+| error         | string                                                | text description of the error **(optional)** /       |
+| / name        | string                                                | file name for matching files in request and response |
+| labels        | []label / list of objects (labels) found in the image |
 
 (**only for pedestrian mode**)
 
-| **Parameter** | **Type** | **Value** |
-| --- | --- | --- |
-| count_by_density | int | number of people in the frame, calculated using the density map |
-| **Parameter** | **Value** |
-| 0 | successfully |
+| **Parameter**       | **Type**     | **Value**                                                       |
+| ------------------- | ------------ | --------------------------------------------------------------- |
+| count_by_density    | int          | number of people in the frame, calculated using the density map |
+| **Parameter**       | **Value**    |
+| 0                   | successfully |
 | 1 / permanent error |
 | 2 / temporary error |
 
 ### label
 
-| **Parameter** | **Value** |
-| --- | --- |
-| eng / label (name) for the found object in English |
-| rus / label (name) of the found object in Russian |
-/ eng_categories / list of categories (each category includes many labels) in English **(optional)** |
+| **Parameter**                                                                                        | **Value** |
+| ---------------------------------------------------------------------------------------------------- | --------- |
+| eng / label (name) for the found object in English                                                   |
+| rus / label (name) of the found object in Russian                                                    |
+| / eng_categories / list of categories (each category includes many labels) in English **(optional)** |
+
 / rus_categories / list of categories (each category includes many labels) in Russian **(optional)** /
 / prob | the degree of confidence that this object is in the image |
 | coord / coordinates of the found object **(optional)** |

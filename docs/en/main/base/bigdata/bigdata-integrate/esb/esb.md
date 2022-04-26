@@ -1,12 +1,10 @@
-Description
------------
+## Description
 
 Apache Kafka is used as a data bus in VK Cloud Solutions Big Data.
 
 Apache Kafka is a distributed streaming platform today. In this case, a bus with a colossal bandwidth is provided, on which absolutely all data passing through it can be processed in real time.
 
-Terminology
------------
+## Terminology
 
 First, you need to understand the Kafka terminology.
 
@@ -22,16 +20,15 @@ Consumers - Consumers accept data provided by manufacturers. Consumers are the f
 
 Let's say there is a cluster of connected machines that can:
 
-*   receive data from several producers.
-*   store the received data.
-*   allow consumers to read stored data. Typically, consumers read one message at a time.
-*   ordinal reading of data. Let's say message m1 is received by the cluster at time t1; and message m2 at time T1 + 5. The consumer will read message m1 before m2.
-*   provides one-time data delivery. This means that a message sent to the cluster will be guaranteed to the consumer at least once.
+- receive data from several producers.
+- store the received data.
+- allow consumers to read stored data. Typically, consumers read one message at a time.
+- ordinal reading of data. Let's say message m1 is received by the cluster at time t1; and message m2 at time T1 + 5. The consumer will read message m1 before m2.
+- provides one-time data delivery. This means that a message sent to the cluster will be guaranteed to the consumer at least once.
 
 ![](./assets/1598824864788-simple_kafka.png)
 
-Scaling
--------
+## Scaling
 
 Like most components in the Hadoop ecosystem, a Kafka cluster can scale to an infinite number of nodes.
 

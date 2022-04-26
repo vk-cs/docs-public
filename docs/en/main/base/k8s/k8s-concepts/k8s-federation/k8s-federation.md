@@ -6,13 +6,11 @@ There are times when you still need to leverage multiple separate clusters, be i
 
 Kubernetes Federation expands on some of the multi-cluster attributes, but does not cover all multi-cluster scenarios. When multiple clusters are combined, they actually share parts of their configuration, which is managed by a so-called cluster of nodes and sent to the federated member clusters. The advantage of sharing high-level portions of the configuration is that any resources configured to take advantage of federation will treat all member clusters as a single distributed cluster under the control of the host cluster.
 
-Kubernetes Federation
----------------------
+## Kubernetes Federation
 
 One of the most common scenarios in which federation is desirable is to scale an application across multiple data centers. The application is packaged in deployment, and configured to use federation, and it evenly distributes the required number of replicas across the working nodes in all clusters. Since not all configuration needs to be passed from the host to all members, this allows local variables in each member cluster to be additional to the combined configuration. This allows you to tailor cluster-specific things such as domain names and network policies, which may differ depending on the environment.
 
-Basic architecture of Kubernetes Federation
--------------------------------------------
+## Basic architecture of Kubernetes Federation
 
 The core concept of Kubernetes Federation is a host cluster containing any configuration that would be propagated to member clusters. A host cluster can be a member and run real workloads, but typically organizations will have a host cluster as a separate cluster for simplicity.
 
@@ -24,8 +22,7 @@ For example, Kubernetes federation is configured with three member clusters. The
 
 More information on the Kubefed architecture [can be found on the project's GitHub](https://github.com/kubernetes-sigs/kubefed) .
 
-Configuring Kubernetes Federation
----------------------------------
+## Configuring Kubernetes Federation
 
 The base thread selects the cluster to become the node cluster and configures the required roles and service accounts, and deploys the federation control plane.
 
@@ -64,8 +61,7 @@ helm install kubefed-charts / kubefed --name kubefed --version = \
 --namespace kube-federation-system
 ```
 
-The setup process in Kubernetes Federation
-------------------------------------------
+## The setup process in Kubernetes Federation
 
 Now that the federation is up and running between a couple of Kubernetes clusters, it's time to start taking advantage of the capabilities to simplify service and application administration. The most common object types federated are deployments and services that point to the applications contained in those deployments.
 

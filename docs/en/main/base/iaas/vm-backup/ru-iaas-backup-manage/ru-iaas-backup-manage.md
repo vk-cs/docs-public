@@ -1,7 +1,6 @@
 Controlling the availability of backups helps to prevent the loss of important data, and also provides information about possible recovery points for a virtual machine in the event of its failure or the need to undo the changes made.
 
-VK CS control panel
------------------
+## VK CS control panel
 
 To view backups [in your VK CS account, you](https://mcs.mail.ru/app/services/infra/servers/) should:
 
@@ -12,8 +11,7 @@ To delete a backup, select "Delete copy" from the context menu of the recovery p
 
 To pause or resume the creation of backups, select the required plan on the "Backup" page and click on "Stop" or "Activate" in the top menu.
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 To view the backup copies of the plan in the karbor client, you must:
 

@@ -6,8 +6,7 @@ Taking a disk snapshot stops the guest OS recording for a short time, saves the 
 
 Low-latency disk snapshots are removed during virtual machine migration (this can happen when load balancing hypervisors). It is recommended to create a manual backup to save the state of the disk at a certain point.
 
-VK CS control panel
------------------
+## VK CS control panel
 
 To create a snapshot of a disk [in your VK CS account, you](https://mcs.mail.ru/app/services/infra/servers/) should:
 
@@ -19,8 +18,7 @@ To view the snapshots of a disk, select the "Snapshot list" on the "Disks" page 
 
 To delete disk snapshots, select the required snapshots on the snapshot view page and click "Delete snapshot"![](./assets/1597083302765-snimok-ekrana-2020-08-10-v-21.12.34.png)
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 You can also perform operations with disk snapshots in the OpenStack client
 
@@ -56,7 +54,7 @@ Change snapshot properties:
 
 Available properties:
 
-*   \--name - name
-*   \--description - description
-*   \--property - data in key = value format
-*   \--no-property - remove all additional values
+- \--name - name
+- \--description - description
+- \--property - data in key = value format
+- \--no-property - remove all additional values

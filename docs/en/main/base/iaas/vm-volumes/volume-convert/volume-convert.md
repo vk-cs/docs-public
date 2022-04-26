@@ -2,8 +2,7 @@ In VK Cloud Solutions, it is possible to change the disk type to any of the avai
 
 You can only convert one disc at a time from one type to another. In this case , the disk should not have any snapshots (snapshots).
 
-VK CS control panel
------------------
+## VK CS control panel
 
 To change the type of disk [in your VK CS personal account, you](https://mcs.mail.ru/app/services/infra/servers/) should:
 
@@ -16,8 +15,7 @@ To change the type of disk [in your VK CS personal account, you](https://mcs.mai
 
 You can change the disk type without disconnecting the virtual machine and without interrupting its operation.
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 To change the disk type in the OpenStack client:
 

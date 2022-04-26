@@ -8,9 +8,9 @@ There is no charge for creating a bucket. You are charged only for storing objec
 
 There are several types of buckets, differing in both the purpose and the amount of payment for the objects placed in them:
 
-*   **Hotbox** - designed to store and quickly distribute a large number of files for media services, online media, sites with multi-user content and mobile applications
-*   **Icebox** - cloud storage of rarely used data: backups, logs, media content, scientific, statistical data, as well as working archives
-*   **Backup** - placement of backups of instances created both automatically and manually. A bucket of this type is not subject to self-creation or deletion, but is managed by a backup service
+- **Hotbox** - designed to store and quickly distribute a large number of files for media services, online media, sites with multi-user content and mobile applications
+- **Icebox** - cloud storage of rarely used data: backups, logs, media content, scientific, statistical data, as well as working archives
+- **Backup** - placement of backups of instances created both automatically and manually. A bucket of this type is not subject to self-creation or deletion, but is managed by a backup service
 
 You can create a bucket both in the VK CS Panel and using the S3 CLI.
 
@@ -18,8 +18,7 @@ Attention
 
 No more than 25 buckets can be created in one project. There is no limit on the volume of the bucket, but the number of objects placed in it cannot exceed 1,000,000,000.
 
-Creation via VK CS Panel
-----------------------
+## Creation via VK CS Panel
 
 To create you should:
 
@@ -31,23 +30,22 @@ To create you should:
 
 The bucket name must meet the following conditions:
 
-*   Be unique across the entire VK CS platform
-*   Contain between 4 and 63 characters
-*   Do not contain uppercase characters (uppercase)
-*   Start with a lowercase character (lowercase) or numbers
+- Be unique across the entire VK CS platform
+- Contain between 4 and 63 characters
+- Do not contain uppercase characters (uppercase)
+- Start with a lowercase character (lowercase) or numbers
 
 Not recommended in name:
 
-*   Formatting similar to IP address (i.e. 192.168.5.4)
-*   Using the underscore (_) character, because it is not DNS-compatible and such a bucket cannot be bound to a DNS name
-*   Start with characters xn--
+- Formatting similar to IP address (i.e. 192.168.5.4)
+- Using the underscore (\_) character, because it is not DNS-compatible and such a bucket cannot be bound to a DNS name
+- Start with characters xn--
 
 It is recommended to avoid using personal information such as project number or user account in the bucket name.
 
 Once a bucket is created, its name cannot be changed.
 
-Creation via S3 CLI
--------------------
+## Creation via S3 CLI
 
 **Create an authorized account**
 
@@ -71,10 +69,10 @@ Launch AWS S3 Configuration
 
 Use the following data in the configurator:
 
-*   Access Key ID: the key received when creating an account
-*   Secret Key: the key received when creating an account
-*   Default region name: ru-msk
-*   Default output format: json
+- Access Key ID: the key received when creating an account
+- Secret Key: the key received when creating an account
+- Default region name: ru-msk
+- Default output format: json
 
 **Create bucket**
 

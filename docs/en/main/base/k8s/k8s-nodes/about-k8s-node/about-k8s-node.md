@@ -1,5 +1,4 @@
-Description
------------
+## Description
 
 A **node** is a separate physical or virtual machine on which application containers are deployed and run. Each node in the cluster contains services for running applications in containers (such as Docker), as well as components for centralized management of the node.
 

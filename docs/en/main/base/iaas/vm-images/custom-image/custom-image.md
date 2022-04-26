@@ -1,5 +1,4 @@
-Image import
-------------
+## Image import
 
 <warn>
 
@@ -29,31 +28,30 @@ Enabling the «Allow access to all projects» option allows the image to be used
 
 </warn>
 
-
 </tabpanel>
 <tabpanel>
 
 To download the image in the OpenStack client, run the command:
 
-``` bash
+```bash
 openstack image create --private --container-format bare --disk-format raw --property store = s3 --file <file.raw> <image_name>
 ```
 
 If the instance created from the image must support backup, you must load it with the metadata of the presence of the guest agent:
 
-``` bash
+```bash
 openstack image create --private --container-format bare --disk-format raw --file <file.raw> **--property hw_qemu_guest_agent = yes** --property store = s3 **--property os_require_quiesce = yes** < **image_name** >
 ```
 
 Depending on the format of the downloaded file, you need to specify the appropriate value for the `--disk-format key`:
 
-*   raw
-*   vhd
-*   vhdx
-*   vmdk
-*   vdi
-*   iso
-*   qcow2
+- raw
+- vhd
+- vhdx
+- vmdk
+- vdi
+- iso
+- qcow2
 
 </tabpanel>
 </tabs>
@@ -68,19 +66,20 @@ To upload an image using an OpenStack client:
 
 Get a list of images:
 
-``` bash
+```bash
 openstack image list
 ```
 
 Initiate the image boot process by running the command:
 
-``` bash
+```bash
 openstack image save --file <path> <image ID>
 ```
 
 ### cURL
 
 In some cases, downloading via the command line interface may require a large amount of RAM, in case of possible use of cURL:
-``` bash
+
+```bash
 curl -H "X-Auth-Token: $(openstack token issue -c id -f value)" https://infra.mail.ru:9292/v2/images/<IMAGE_ID>/file --output <output_filename>
 ```

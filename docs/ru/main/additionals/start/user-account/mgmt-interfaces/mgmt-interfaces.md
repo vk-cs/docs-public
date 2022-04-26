@@ -14,12 +14,12 @@
 
 В **верхней части** можно увидеть:
 
-*   Информацию о проекте;
-*   Привязку карты для автоматического пополнения баланса;
-*   Текущий баланс проекта и переход в раздел "Баланс";
-*   Свойства учетной записи;
-*   Системные уведомления;
-*   Способы быстрого обращения в поддержку.
+- Информацию о проекте;
+- Привязку карты для автоматического пополнения баланса;
+- Текущий баланс проекта и переход в раздел "Баланс";
+- Свойства учетной записи;
+- Системные уведомления;
+- Способы быстрого обращения в поддержку.
 
 В левой части экрана располагаются сервисы VK CS. Набор сервисов изменяется по мере дополнения функциональности платформы.
 
@@ -27,7 +27,7 @@
 
 ## CLI
 
-Работа с виртуальной инфраструктурой также возможна через OpenStackClient. Это клиент, позволяющий использовать API OpenStack через интерфейс командной строки c использованием единой и простой структуры команд. 
+Работа с виртуальной инфраструктурой также возможна через OpenStackClient. Это клиент, позволяющий использовать API OpenStack через интерфейс командной строки c использованием единой и простой структуры команд.
 
 Полный список клиентов и информация по их использованию находится в официальной [документации разработчика](https://docs.openstack.org/python-openstackclient/latest/).
 
@@ -43,7 +43,7 @@
 
 ```
 apt update
-apt install python3-openstackclient 
+apt install python3-openstackclient
 ```
 
 ##### С помощью dnf (RHEL 8, CentOS 8,  Fedora):
@@ -58,7 +58,7 @@ dnf install python3-openstackclient
 
 ```
 yum install [https://rdoproject.org/repos/rdo-release.rpm](https://rdoproject.org/repos/rdo-release.rpm) 
-yum update 
+yum update
 yum install python2-openstackclient
 ```
 
@@ -67,7 +67,7 @@ yum install python2-openstackclient
 Для установки с помощью pip3 в системе должны присутствовать пакеты: gcc, pyhton3-dev, python3-pip.
 
 ```
-pip3 install -UI pbr testresources setuptools pytz wheel 
+pip3 install -UI pbr testresources setuptools pytz wheel
 pip3 install -UI python-openstackclient
 ```
 
@@ -78,7 +78,7 @@ pip3 install -UI python-openstackclient
 Далее, выполните следующие команды в командной строке:
 
 ```
-pip3 install -UI pbr setuptools pytz wheel 
+pip3 install -UI pbr setuptools pytz wheel
 pip3 install -UI python-openstackclient
 ```
 
@@ -92,34 +92,34 @@ pip3 install -UI python-openstackclient
 \# pip install python-PROJECTclient
 ```
 
-*   cinder – API блочного хранилища и расширений
-*   glance – API образов
-*   heat – API оркестрации
-*   manila – Shared file systems API файлового хранилища
-*   neutron – API сетей
-*   nova – API облачных вычислений (ВМ) и расширений
-*   sahara – API обработки больших данных
-*   trove – API баз данных
+- cinder – API блочного хранилища и расширений
+- glance – API образов
+- heat – API оркестрации
+- manila – Shared file systems API файлового хранилища
+- neutron – API сетей
+- nova – API облачных вычислений (ВМ) и расширений
+- sahara – API обработки больших данных
+- trove – API баз данных
 
 ### Авторизация в CLI
 
 Загрузите в панели [API ключи](https://mcs.mail.ru/app/project/keys/) личного кабинета openrc файл для конфигурации CLI.
 
->**Важно:**<br>Для каждого региона используется свой файл openrc. Подробнее о регионах вы можете узнать в статье [Регионы](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions).
+> **Важно:**<br>Для каждого региона используется свой файл openrc. Подробнее о регионах вы можете узнать в статье [Регионы](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions).
 
 Затем, выполните действия, соответствующие процедуре для операционной системы на вашем компьютере:
 
 #### Linux
 
-Выполните импорт переменных из файла openrc  с помощью команды `source`:
+Выполните импорт переменных из файла openrc с помощью команды `source`:
 
 ```
-source file.sh 
+source file.sh
 ```
 
 #### Windows
 
-Откройте загруженный из личного кабинета файл openrc, найдите в нем переменные, начинающиеся на OS_, и импортируйте в командную строку с помощью команды `SET` по примеру, в каждую переменную подставив значение из сохраненного openrc файла без кавычек:
+Откройте загруженный из личного кабинета файл openrc, найдите в нем переменные, начинающиеся на OS\_, и импортируйте в командную строку с помощью команды `SET` по примеру, в каждую переменную подставив значение из сохраненного openrc файла без кавычек:
 
 ```
 set OS_INTERFACE=public
@@ -132,7 +132,7 @@ set OS_PASSWORD=your_password
 set OS_IDENTITY_API_VERSION=3
 ```
 
-Для PowerShell следует использовать следующие значения переменных: 
+Для PowerShell следует использовать следующие значения переменных:
 
 ```
 $env:OS_INTERFACE = "public"
@@ -145,7 +145,7 @@ $env:OS_PASSWORD = "your_password"
 $env:OS_IDENTITY_API_VERSION = "3"
 ```
 
->**Важно:**<br>Для переменной `OS_PASSWORD` нужно ввести действительный пароль учетной записи, его нет в файле openrc.
+> **Важно:**<br>Для переменной `OS_PASSWORD` нужно ввести действительный пароль учетной записи, его нет в файле openrc.
 
 #### Проверка работы CLI
 
@@ -188,25 +188,26 @@ pip install awscli
 ## SQS CLI
 
 Подробнее о работе с сервисом очередей сообщений Cloud Queues через CLI вы можете узнать в статье [Работа с Cloud Queues в AWS CLI](https://mcs.mail.ru/docs/ru/manage/cloud-queues/cloud-queues-cli).
+
 ## API
 
 Для управления ресурсами платформы VK CS можно использовать API для запуска инстансов, создания образов, назначения метаданных инстансам и образам, создания контейнеров и объектов хранения и выполнения других действий в проектах.
 
->**Важно:**<br>Список эндпоинтов меняется в зависимости от выбранного региона. Подробнее о регионах вы можете узнать в статье [Регионы](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions).
+> **Важно:**<br>Список эндпоинтов меняется в зависимости от выбранного региона. Подробнее о регионах вы можете узнать в статье [Регионы](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions).
 
 Список доступных эндпоинтов всегда доступен в панели VK CS [в разделе "API Endpoints"](https://mcs.mail.ru/app/project/endpoints/).
 
 ### Примеры использования API
 
-После аутентификации с помощью Identity можно использовать другие API-интерфейсы для создания и управления ресурсами в проекте. 
+После аутентификации с помощью Identity можно использовать другие API-интерфейсы для создания и управления ресурсами в проекте.
 
 Чтобы начать отправлять запросы API, используется один из следующих методов:
 
-*   **cURL** – Инструмент командной строки, который позволяет отправлять HTTP-запросы и получать ответы.
-*   **Openstack CLI** – клиент, который позволяет получать доступ к API через простые в использовании команды.
-*   **REST клиенты** – Mozilla и Google предоставляют браузерные графические интерфейсы для REST. Для Firefox см. [RESTClient](https://addons.mozilla.org/en-US/firefox/addon/restclient/). Для Chrome см. [rest-client](https://code.google.com/archive/p/rest-client/).
-*   **OpenStack Python Software Development Kit (SDK)** – SDK для написания скриптов автоматизации Python, которые создают ресурсы в проекте и управляют ими. В SDK реализованы привязки Python к API-интерфейсу OpenStack, который позволяет выполнять задачи автоматизации в Python, выполняя вызовы объектов Python вместо непосредственных вызовов REST. Все инструменты командной строки OpenStack реализованы с использованием Python SDK.
-*   **OpenStack APIs**
+- **cURL** – Инструмент командной строки, который позволяет отправлять HTTP-запросы и получать ответы.
+- **Openstack CLI** – клиент, который позволяет получать доступ к API через простые в использовании команды.
+- **REST клиенты** – Mozilla и Google предоставляют браузерные графические интерфейсы для REST. Для Firefox см. [RESTClient](https://addons.mozilla.org/en-US/firefox/addon/restclient/). Для Chrome см. [rest-client](https://code.google.com/archive/p/rest-client/).
+- **OpenStack Python Software Development Kit (SDK)** – SDK для написания скриптов автоматизации Python, которые создают ресурсы в проекте и управляют ими. В SDK реализованы привязки Python к API-интерфейсу OpenStack, который позволяет выполнять задачи автоматизации в Python, выполняя вызовы объектов Python вместо непосредственных вызовов REST. Все инструменты командной строки OpenStack реализованы с использованием Python SDK.
+- **OpenStack APIs**
 
 ## Terraform
 

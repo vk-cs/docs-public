@@ -4,13 +4,12 @@ The Apache Hadoop software library is a platform that enables distributed proces
 
 The Apache Hadoop project includes the following modules:
 
-*   Hadoop Common - Common utilities that support other Hadoop modules
-*   HDFS is a distributed file system that provides high-performance access to application data.
-*   Hadoop YARN is a framework for scheduling jobs and managing cluster resources.
-*   Hadoop MapReduce is a YARN-based system for parallel processing of large datasets.
+- Hadoop Common - Common utilities that support other Hadoop modules
+- HDFS is a distributed file system that provides high-performance access to application data.
+- Hadoop YARN is a framework for scheduling jobs and managing cluster resources.
+- Hadoop MapReduce is a YARN-based system for parallel processing of large datasets.
 
-HDFS
-----
+## HDFS
 
 This distributed file system is designed to run on standard hardware. HDFS is highly resilient and is designed to be deployed on low-cost hardware. HDFS provides high-performance data access and is suitable for data-intensive applications.
 
@@ -22,8 +21,7 @@ HDFS has a master / slave architecture. An HDFS cluster consists of a single Nam
 
 ![](./assets/1598866522501-hdfsarchitecture.png)
 
-Hadoop YARN
------------
+## Hadoop YARN
 
 The fundamental idea behind YARN is to separate resource management and job scheduling / monitoring functions into separate daemons. The idea is to have a global ResourseManager (RM) and ApplicationMaster (AM) for each application.
 
@@ -37,8 +35,7 @@ The scheduler is responsible for allocating resources among the various running 
 
 The ApplicationManager is responsible for accepting submitted jobs, negotiating the container to run a specific ApplicationMaster, and providing a service to restart the ApplicationManager container in case of failure. The ApplicationMaster for each application is responsible for coordinating and scheduling the respective resource containers, tracking their status, and monitoring execution.
 
-Hadoop MapReduce
-----------------
+## Hadoop MapReduce
 
 Hadoop MapReduce is a software framework for writing applications that process large (multi-terabyte) amounts of data in parallel on large clusters in a reliable and fault-tolerant manner.
 

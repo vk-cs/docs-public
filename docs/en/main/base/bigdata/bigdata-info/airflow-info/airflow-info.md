@@ -2,8 +2,7 @@ Apache Airflow is a platform for creating, planning and monitoring workflows.
 
 Airflow allows you to create workflows in the form of directed acyclic graphs (DAGs) of tasks. A variety of command line utilities perform complex operations on the DAG. The user interface easily visualizes pipelines running in a production environment, monitors progress, and troubleshoots as needed.
 
-Apache Airflow Principles
--------------------------
+## Apache Airflow Principles
 
 Dynamic - pipelines have a code configuration (Python) that allows you to create dynamic pipelines.
 
@@ -15,8 +14,7 @@ Scalability - Airflow has a modular architecture and uses a message queue to org
 
 This platform is not a streaming solution.
 
-Assembly components
--------------------
+## Assembly components
 
 **ZooKeeper**
 
@@ -34,10 +32,10 @@ In the Ambari interface, to control the Zookeeper component, open the appropriat
 
 Ambari Metrics System (AMS) - Collects, aggregates and maintains system metrics in clusters managed by Ambari and has 4 components:
 
-*   metrics monitors on each host in the cluster collect system-level metrics and publish them to the Metrics Collector
-*   Hadoop Sinks connects to Hadoop components to publish metrics to Metrics Collector
-*   Metrics Collector is a daemon that runs on a specific host in a cluster and receives data from registered users, monitors or listeners
-*   Grafana is a daemon that runs on a specific host in the cluster and serves up pre-built dashboards to visualize metrics.
+- metrics monitors on each host in the cluster collect system-level metrics and publish them to the Metrics Collector
+- Hadoop Sinks connects to Hadoop components to publish metrics to Metrics Collector
+- Metrics Collector is a daemon that runs on a specific host in a cluster and receives data from registered users, monitors or listeners
+- Grafana is a daemon that runs on a specific host in the cluster and serves up pre-built dashboards to visualize metrics.
 
 In the Ambari interface, to control the Ambari Metrics component, open the appropriate tab and open the "Actions" drop-down menu:
 

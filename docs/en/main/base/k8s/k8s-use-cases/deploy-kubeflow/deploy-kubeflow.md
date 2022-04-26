@@ -14,7 +14,7 @@ In the course of this article, we:
 
 But first I'll tell you a little about MLOps and Kubeflow.
 
-> If you prefer a video tutorial, you can watch the webinar "[MLOps without pain in the cloud. Deploying Kubeflow](https://youtu.be/fZ-g2TjhhGE )".
+> If you prefer a video tutorial, you can watch the webinar "[MLOps without pain in the cloud. Deploying Kubeflow](https://youtu.be/fZ-g2TjhhGE)".
 
 ### A few words about MLOps
 
@@ -38,15 +38,11 @@ Using Kubeflow inside the cloud Kubernetes, you solve this problem: any Data Sci
 
 Other Kubeflow Features:
 
-* fast publication of models via TensorFlow Serving, Seldon Core components — you can make them available via REST protocol or gRPC;
-* convenient UI for managing experiments and monitoring models - you can build your Kubeflow from open components, but it will be much more difficult to manage them without UI;
-    
-* orchestration of complex machine learning pipelines from multiple steps — the platform partially replaces AirFlow;
-    
-* built-in component that is responsible for the selection of hyperparameters;
-    
-* Metadata management capabilities and Feature Store.
-    
+- fast publication of models via TensorFlow Serving, Seldon Core components — you can make them available via REST protocol or gRPC;
+- convenient UI for managing experiments and monitoring models - you can build your Kubeflow from open components, but it will be much more difficult to manage them without UI;
+- orchestration of complex machine learning pipelines from multiple steps — the platform partially replaces AirFlow;
+- built-in component that is responsible for the selection of hyperparameters;
+- Metadata management capabilities and Feature Store.
 
 It is important to note that some of the Kubeflow components are still in beta. But now you can start using Kubeflow, because it is one of the few Production-Ready platforms that solve MLOps and machine learning tasks. To begin with, Kubeflow can be used as a flexible version of JupyterHub, and then gradually get acquainted with the rest of the features.
 
@@ -58,7 +54,7 @@ So, let's start installing Kubeflow.
 
 First, we need to deploy a Kubernetes cluster. We will do this on our VK Cloud Solutions cloud platform.
 
-> Before creating a cluster, you need to configure the network and generate and upload an SSH key to connect to the VM. You can set up the network yourself [according to the instructions](https://mcs.mail.ru/help/ru_RU/networks/create-net#section-0 ).
+> Before creating a cluster, you need to configure the network and generate and upload an SSH key to connect to the VM. You can set up the network yourself [according to the instructions](https://mcs.mail.ru/help/ru_RU/networks/create-net#section-0).
 
 First, go to the VK CS panel and create [Kubernetes cluster](https://mcs.mail.ru/containers /). The cluster can be created in different configurations, select "Other", and specify the version of Kubernetes 1.16.4. This is not the most up-to-date version that is available on the platform, but, according to Kubeflow developers, it is best tested. We also select two pre-installed services: monitoring based on Prometheus/Grafana and Ingress Controller.
 
@@ -112,5 +108,4 @@ Then you need to reboot the Kubernetes cluster after making changes. To do this,
 
 When the Kubernetes cluster is stopped, you only pay for disk space, which is convenient when conducting experiments in the cloud.
 
-Next, we need to prepare a virtual machine in which we will perform all further actions. First [create a VM](https://mcs.mail.ru/help/ru_RU/create-vm/vm-quick-create ) with Ubuntu 18.04 OS and [connect to it via SSH](https://mcs.mail.ru/help/ru_RU/vm-connect/vm-connect-nix ). Then [install kubectl](https://mcs.mail.ru/help/ru_RU/k8s-start/connect-k8s#section-2 ) and [import the configuration file](https://mcs.mail.ru/help/ru_RU/k8s-start/connect-k8s#section-9 ) to connect to the created Kubernetes cluster. You can also deploy all this on your machine.
-
+Next, we need to prepare a virtual machine in which we will perform all further actions. First [create a VM](https://mcs.mail.ru/help/ru_RU/create-vm/vm-quick-create) with Ubuntu 18.04 OS and [connect to it via SSH](https://mcs.mail.ru/help/ru_RU/vm-connect/vm-connect-nix). Then [install kubectl](https://mcs.mail.ru/help/ru_RU/k8s-start/connect-k8s#section-2) and [import the configuration file](https://mcs.mail.ru/help/ru_RU/k8s-start/connect-k8s#section-9) to connect to the created Kubernetes cluster. You can also deploy all this on your machine.

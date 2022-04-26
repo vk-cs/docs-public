@@ -1,5 +1,4 @@
-Cluster scaling
----------------
+## Cluster scaling
 
 Cluster scaling is done in the VK CS control panel.
 

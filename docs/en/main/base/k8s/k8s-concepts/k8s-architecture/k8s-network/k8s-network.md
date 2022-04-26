@@ -1,11 +1,10 @@
-Kubernetes networking model
----------------------------
+## Kubernetes networking model
 
 Kubernetes has the following requirements for any network implementation:
 
-*   all modules can communicate with all other modules without using network address translation (NAT).
-*   all nodes can communicate with all modules without NAT
-*   The IP address that the Pod sees in itself is the same IP that others see it as
+- all modules can communicate with all other modules without using network address translation (NAT).
+- all nodes can communicate with all modules without NAT
+- The IP address that the Pod sees in itself is the same IP that others see it as
 
 Given these limitations, the following network communication issues remain to be addressed:
 
@@ -14,8 +13,7 @@ Given these limitations, the following network communication issues remain to be
 
 Let's take a look at these problems in turn and how to solve them.
 
-Container-container network
----------------------------
+## Container-container network
 
 Typically, networking in a virtual machine is viewed as communicating directly with an Ethernet device, as shown in the figure.
 
@@ -50,8 +48,7 @@ In terms of Docker constructs, a Pod is modeled as a group of Docker containers 
 
 Applications within a module also have access to shared volumes, which are defined as part of the module and are available for mounting on the file system of each application.
 
-Pod-to-Pod Network
-------------------
+## Pod-to-Pod Network
 
 In Kubernetes, each pod has a real IP address, and each pod communicates with other pods using that IP. You need to understand how Kubernetes provides Pod-to-Pod communication using real IP addresses, whether the Pod is deployed on one physical node or on another node in the cluster. Consider the modules that are on the same computer to avoid the complexities associated with navigating the internal network for communication between nodes.
 

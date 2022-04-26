@@ -1,23 +1,21 @@
-Installing terraform
---------------------
+## Installing terraform
 
 Download terraform from the link [https://www.terraform.io/downloads.html](https://www.terraform.io/downloads.html) and follow the instructions [https://learn.hashicorp.com/terraform/getting-started/install.html](https://learn.hashicorp.com/terraform/getting-started/install.html) to install it.
 
-Provider setting
-----------------
+## Provider setting
 
 To start using the terraform VK CS provider, follow these steps:
 
-*   Download the provider's VK CS binary from the link [Mac](https://hub.mcs.mail.ru/repository/terraform/darwin/v0.1.0/mcs-provider) [version, Linux](https://hub.mcs.mail.ru/repository/terraform/linux/v0.1.0/mcs-provider) [version, Windows version](https://hub.mcs.mail.ru/repository/terraform/windows/v0.1.0/mcs-provider.zip) .
-*   Create a directory where the config files will be stored, for example "mcs_provider".
-*   Place the provider VK CS binary in the following path "~ / .terraform.d / plugins /".
-*   Change to the "vkcs_provider" directory and create a "main.tf" file in it. To use variables when creating resources, also create a "vars.tf" file.
-*   To initialize the openstack provider, use the "openrc" file - you can download it from the link [https://mcs.mail.ru/app/project/keys/](https://mcs.mail.ru/app/project/keys/) .
+- Download the provider's VK CS binary from the link [Mac](https://hub.mcs.mail.ru/repository/terraform/darwin/v0.1.0/mcs-provider) [version, Linux](https://hub.mcs.mail.ru/repository/terraform/linux/v0.1.0/mcs-provider) [version, Windows version](https://hub.mcs.mail.ru/repository/terraform/windows/v0.1.0/mcs-provider.zip) .
+- Create a directory where the config files will be stored, for example "mcs_provider".
+- Place the provider VK CS binary in the following path "~ / .terraform.d / plugins /".
+- Change to the "vkcs_provider" directory and create a "main.tf" file in it. To use variables when creating resources, also create a "vars.tf" file.
+- To initialize the openstack provider, use the "openrc" file - you can download it from the link [https://mcs.mail.ru/app/project/keys/](https://mcs.mail.ru/app/project/keys/) .
 
 ![](./assets/1601594018584-1601594018584.png) Then run:
 
 ```
- source% your_openrc_name% .sh 
+ source% your_openrc_name% .sh
 ```
 
 **Attention**
@@ -60,8 +58,7 @@ project_id = "your_project_id"
 \`\`,
 ```
 
-Resource creation
------------------
+## Resource creation
 
 Follow these steps to create and manage resources:
 
@@ -87,7 +84,7 @@ resource "mcs_kubernetes_node_group" "myng" {
 cluster_id = mcs_kubernetes_cluster.mycluster.id
 node_count = 1
 }
-\`\`, 
+\`\`,
 ```
 
 **Attention**
@@ -162,8 +159,7 @@ subnet_id = openstack_networking_subnet_v2.k8s-subnetwork.id
 \`\`,
 ```
 
-Application configuration
--------------------------
+## Application configuration
 
 Run the command "terraform init".
 
@@ -171,13 +167,11 @@ In order to see what resources will be created - execute "terraform plan".
 
 To apply the selected configuration execute "terraform apply" and enter "yes"
 
-Deleting Resources
-------------------
+## Deleting Resources
 
 \- Execute the command "terraform destroy" and enter "yes".
 
-Switching to VK CS provider
--------------------------
+## Switching to VK CS provider
 
 To switch from an openstack provider to mcs, follow the following algorithm:
 
