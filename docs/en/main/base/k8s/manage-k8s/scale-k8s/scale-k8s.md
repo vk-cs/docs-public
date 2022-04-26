@@ -2,8 +2,7 @@ VK CS services have the ability to enable cluster autoscaling. Automatic scaling
 
 In case of increased load on the server, the cluster will automatically increase the number of nodes, and if there is no load, it will automatically reduce their number.
 
-When creating a cluster
------------------------
+## When creating a cluster
 
 To enable the autoscaling option in the New Cluster Wizard, select the appropriate checkbox and select the minimum and maximum number of nodes.
 
@@ -15,8 +14,7 @@ In the wizard, you can also add a Group node by clicking Add Node Group:
 
 For each group of nodes, you can select an automatic scaling option.
 
-On the created cluster
-----------------------
+## On the created cluster
 
 If the cluster was created without the autoscaling option, but there was a need to activate it, this operation can be performed on the already created cluster by the "Configure autoscaling" option in the context menu of the selected cluster in the "Containers" service of the VK CS Panel:
 

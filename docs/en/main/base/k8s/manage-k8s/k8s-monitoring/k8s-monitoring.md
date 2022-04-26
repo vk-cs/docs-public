@@ -1,5 +1,4 @@
-Description
------------
+## Description
 
 The Kubernetes cluster contains built-in monitoring tools based on Heapster, InfluxDB time-series database, and Grafana.
 
@@ -9,8 +8,7 @@ As a result, the Kubernetes Dashboard displays monitoring data from both Node no
 
 Advanced monitoring of Kubernetes infrastructure and all custom applications can be configured using Grafana. Every Pod that is deployed to a Kubernetes cluster will be automatically registered with Grafana. Also, with the help of Grafana, you can configure alerts about unavailability of resources.
 
-Connection
-----------
+## Connection
 
 To enter the Grafana panel, you need to establish a connection to the cluster using the command
 
@@ -24,8 +22,8 @@ and open the Grafana interface in a browser:
 
 For the first login use:
 
-*   Login: **admin**
-*   Password: **admin**
+- Login: **admin**
+- Password: **admin**
 
 ![](./assets/1532516102383-055a77945ed2d05bb5de6344ab27fdcc.png)
 

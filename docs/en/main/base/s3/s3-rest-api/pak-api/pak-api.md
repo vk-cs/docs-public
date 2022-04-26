@@ -1,22 +1,20 @@
-general information
--------------------
+## general information
 
 Prefix access keys allow you to create users for whom access is restricted to a specific path. These users are bound to buckets for which their prefix works. There are the following restrictions when working with prefix keys:
 
-*   the user can only be bound to 1 bucket (at creation)
-*   the user will not have access to other buckets and the contents of his bucket, for which the path will not start with the prefix of this user
-*   access keys can only be obtained upon creation
-*   a user can only have 1 pair of keys
-*   for ease of use, it is recommended to name users associated with the prefix by which they have access. For example username = user / folder1 / file1; prefix = folder1 / file1
+- the user can only be bound to 1 bucket (at creation)
+- the user will not have access to other buckets and the contents of his bucket, for which the path will not start with the prefix of this user
+- access keys can only be obtained upon creation
+- a user can only have 1 pair of keys
+- for ease of use, it is recommended to name users associated with the prefix by which they have access. For example username = user / folder1 / file1; prefix = folder1 / file1
 
-Generating prefix keys
-----------------------
+## Generating prefix keys
 
 **Supported PAK methods**
 
-*   CreatePrefixKey
-*   ListPrefixKeys
-*   DeletePrefixKey
+- CreatePrefixKey
+- ListPrefixKeys
+- DeletePrefixKey
 
 **Description**
 
@@ -34,8 +32,8 @@ Connection: close
 
 **Request parameters**
 
-*   username - the user who will own the keys
-*   prefix - the prefix of the path that will be available for these keys
+- username - the user who will own the keys
+- prefix - the prefix of the path that will be available for these keys
 
 **Answer**
 
@@ -61,14 +59,13 @@ X-req-id: 2NrqrYuki
 
 **Description of XML elements**
 
-*   BucketName - the name of the bucket
-*   Prefix - path prefix that will be available for these keys
-*   UserName - the user who owns the keys
-*   SecretKey - a secret key, it is returned only upon creation, it is impossible to get the key later
-*   AccessKey - public key
+- BucketName - the name of the bucket
+- Prefix - path prefix that will be available for these keys
+- UserName - the user who owns the keys
+- SecretKey - a secret key, it is returned only upon creation, it is impossible to get the key later
+- AccessKey - public key
 
-List of prefix users
---------------------
+## List of prefix users
 
 **Inquiries**
 
@@ -82,9 +79,9 @@ Host: bucketName.hb.bizmrg.com
 
 **Request parameters**
 
-*   max-keys - the maximum number of items in the optional listing
-*   name-prefix - username prefix optional
-*   marker - the name or part of the username from which the listing will begin optional
+- max-keys - the maximum number of items in the optional listing
+- name-prefix - username prefix optional
+- marker - the name or part of the username from which the listing will begin optional
 
 **Answer**
 
@@ -118,17 +115,16 @@ X-req-id: 35RBZWzAX
 
 **Description of XML elements**
 
-*   BucketName - the name of the bucket
-*   IsTruncated - true if only part of prefixed users are displayed
-*   Marker - the name or part of the username from which the listing will begin
-*   NamePrefix - username prefix
-*   MaxKeys - the maximum number of items in the listing
-*   Contents - block containing the user
-*   UserName - username
-*   Prefix - prefix by which data is available for this user
+- BucketName - the name of the bucket
+- IsTruncated - true if only part of prefixed users are displayed
+- Marker - the name or part of the username from which the listing will begin
+- NamePrefix - username prefix
+- MaxKeys - the maximum number of items in the listing
+- Contents - block containing the user
+- UserName - username
+- Prefix - prefix by which data is available for this user
 
-Removing a prefix key from a user
----------------------------------
+## Removing a prefix key from a user
 
 **Request**
 
@@ -142,8 +138,8 @@ Host: bucketName.hb.bizmrg.com
 
 **Request parameters**
 
-*   username - username
-*   prefix - the path where objects are available for this user optional
+- username - username
+- prefix - the path where objects are available for this user optional
 
 **Answer**
 
@@ -166,5 +162,5 @@ X-req-id: 33yVonNmQ
 
 **Description of XML elements**
 
-*   Prefix - path prefix that will be available for these keys
-*   UserName - the user who owns the keys
+- Prefix - path prefix that will be available for these keys
+- UserName - the user who owns the keys

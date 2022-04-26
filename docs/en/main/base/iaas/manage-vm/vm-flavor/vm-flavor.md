@@ -8,8 +8,7 @@ Configurations with high-performance processors can be added to the project upon
 
 Any change to the VM configuration affects its cost.
 
-In VK CS panel
-------------
+## In VK CS panel
 
 To change the type of instance in your [VK CS account, you](https://mcs.mail.ru/app/services/infra/servers/) should:
 
@@ -18,8 +17,7 @@ To change the type of instance in your [VK CS account, you](https://mcs.mail.ru/
 3.  In the menu that appears, select the required type and click "Save Size". The VM will be rebooted:![](./assets/1596199666963-1596199666963.png)
 4.  In some cases, after changing the type, it is necessary to confirm the operation, this can be done in the context menu of the instance:![](./assets/1596200614684-1596200614684.png)
 
-Via Openstack CLI
------------------
+## Via Openstack CLI
 
 To change the type in the OpenStack CLI, run the command:
 

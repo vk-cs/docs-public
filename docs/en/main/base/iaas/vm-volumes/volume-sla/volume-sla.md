@@ -16,8 +16,7 @@ Benefits of network drives:
 
 The created disk takes up space in the shared storage, so its availability is paid for separately, even if it is disconnected from the instance.
 
-Disc types
-----------
+## Disc types
 
 Network drives differ by type and location:
 
@@ -27,8 +26,7 @@ Network drives differ by type and location:
 
 To avoid potential performance degradation, it is recommended that you select an Availability Zone that matches your current instance when creating a disk that is attached to an existing instance.
 
-SLA
----
+## SLA
 
 For each type of disk, there is a performance limit that is required to guarantee the stability of the disk regardless of its type or size.
 
@@ -68,16 +66,15 @@ DiskPSD is an official testing tool recommended by Microsoft and [included in th
     ```
      fsutil file createnew C: \ temp \ test.bin 10485760000
     ```
-    
 4.  To execute tests, you must use the command corresponding to the test type:
 
-*   Random Write Test:
+- Random Write Test:
 
 ```
  diskspd -Suw -b4K -o1 -t32 -r -w100 C: \ temp \ test.bin> C: \ temp \ random_write_results.txt
 ```
 
-*   Random read test:
+- Random read test:
 
 ```
  diskspd -Suw -b4K -o1 -t32 -r -w0 C: \ temp \ test.bin> C: \ temp \ random_read_results.txt
@@ -87,9 +84,9 @@ DiskPSD is an official testing tool recommended by Microsoft and [included in th
 
 IOPS measurements using fio are performed using the rate_iops parameter. Tests are performed with values:
 
-*   \--rw (randread or randwrite)
-*   \--filename (name of the device under test)
-*   \--iodepth (8, 16, 32 or 64)
+- \--rw (randread or randwrite)
+- \--filename (name of the device under test)
+- \--iodepth (8, 16, 32 or 64)
 
 Download and install Fio from the official resource: [https://bsdio.com/fio/](https://bsdio.com/fio/)
 
@@ -107,9 +104,9 @@ The mechanics of Fio are different from the DiskSPD tool. The Fio records in 2 f
 
 The read / write IOPS measurements are performed by the fio software and the rate_iops parameter. Tests are performed with values:
 
-*   \--rw (randread or randwrite)
-*   \--filename (name of the device under test)
-*   \--iodepth (8, 16, 32 or 64)
+- \--rw (randread or randwrite)
+- \--filename (name of the device under test)
+- \--iodepth (8, 16, 32 or 64)
 
 Installing Fio:
 
@@ -125,7 +122,7 @@ Command to run the test:
 
 Measurement results:
 
-*   read: IOPS
-*   write: IOPS
+- read: IOPS
+- write: IOPS
 
 <table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(1%); width: 99%;" width="170"><tbody><tr><td height="19" style="background-color: rgb(239, 239, 239);" width="45.88235294117647%">Types of testing performed</td><td style="background-color: rgb(239, 239, 239);" width="54.11764705882353%">Test result (Number of IOPS)</td></tr><tr><td height="19">Read / Write in 4 KB blocks in 32 threads</td><td>According to SLA values</td></tr><tr><td height="19">Read / Write in 8 KB blocks in 32 threads</td><td>at least 75% of the SLA</td></tr><tr><td height="19">Read / Write 16KB in 32 Streams</td><td>at least 50% of the SLA</td></tr></tbody></table>

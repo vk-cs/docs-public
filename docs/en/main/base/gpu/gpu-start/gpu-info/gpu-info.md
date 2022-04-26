@@ -4,14 +4,13 @@ VK Cloud Solutions offers the highest performing NVIDIA® Tesla® V100 GPUs for 
 
 NVIDIA® Tesla® V100 GPUs are designed for machine learning systems and have a high level of processing power of about 15 teraflops in single-precision operations and 7.5 teraflops in double (1 teraflops - 1 trillion operations per second, a value used to measure performance computers).
 
-Software
---------
+## Software
 
 VK CS recommends using the following GPU-enabled development software:
 
-*   CUDA Toolkit - its documentation [is available on the official resource](https://developer.nvidia.com/cuda-toolkit)
-*   Deepo - documentation and distribution [are available on its official resource](https://github.com/ufoym/deepo)
-*   NVIDIA GRID - Datasheet is [available on the official resource](https://www.nvidia.com/ru-ru/design-visualization/technologies/grid-technology/)
+- CUDA Toolkit - its documentation [is available on the official resource](https://developer.nvidia.com/cuda-toolkit)
+- Deepo - documentation and distribution [are available on its official resource](https://github.com/ufoym/deepo)
+- NVIDIA GRID - Datasheet is [available on the official resource](https://www.nvidia.com/ru-ru/design-visualization/technologies/grid-technology/)
 
 Server side graphics rendering
 
@@ -19,8 +18,7 @@ The NVIDIA® Tesla® V100 GPU dramatically improves server-side graphics renderi
 
 NVIDIA® Tesla® V100 and VK Cloud Solutions maximize performance; Reduce the time it takes to solve deep learning, graphical visualization and HPC challenges from days to hours.
 
-GPU-accelerated cloud computing
--------------------------------
+## GPU-accelerated cloud computing
 
 New generations of scientific applications and tasks related to artificial intelligence and machine learning require colossal amounts of computing power that even modern CPU servers cannot handle. GPU-accelerated servers are used to successfully solve such problems.
 

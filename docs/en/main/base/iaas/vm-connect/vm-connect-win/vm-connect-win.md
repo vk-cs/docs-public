@@ -2,10 +2,10 @@ After creating a virtual machine based on Microsoft Windows, you can connect to 
 
 For this, the following conditions must be met:
 
-*   15 minutes have passed since creation and all scripts have finished their work
-*   The virtual machine is on
-*   A security group has been assigned to the virtual machine with a rule that allows remote access on TCP port 3389
-*   The instance must have an external IP address available for connection
+- 15 minutes have passed since creation and all scripts have finished their work
+- The virtual machine is on
+- A security group has been assigned to the virtual machine with a rule that allows remote access on TCP port 3389
+- The instance must have an external IP address available for connection
 
 The way to connect to a VM depends on the local operating system being used.
 
@@ -13,8 +13,7 @@ The way to connect to a VM depends on the local operating system being used.
 
 The first time you connect to an instance created on the ext-net network, you will need to change the password by entering the original password and confirming the new password.
 
-Retrieving a password
----------------------
+## Retrieving a password
 
 Before connecting to the instance, you need to obtain the password for the virtual machine user.
 
@@ -36,7 +35,7 @@ On the "Console" tab, click on the "Set password" button.
 
 **Attention**
 
-The password must contain upper and lower case letters of the Latin alphabet, numbers, symbols ! "# $% & () \* +, -.:; <=>? @ [] ^ _\` {} ~
+The password must contain upper and lower case letters of the Latin alphabet, numbers, symbols ! "# $% & () \* +, -.:; <=>? @ [] ^ \_\` {} ~
 
 The password must contain at least one letter or number, in addition to special characters.
 
@@ -49,8 +48,7 @@ To get the VM password:
 3.  In the window for obtaining a password, you need to attach the key file selected when creating the instance and click on the "Decrypt password" button. The result will be the password for the ADMIN user:![](./assets/1597078714299-1597078714299.png)
 4.  You can copy the received password and close the window
 
-Windows
--------
+## Windows
 
 To connect via RDP, you can use manual configuration or a configuration file.
 
@@ -67,8 +65,7 @@ You can download the RDP config file on the instance information page on the "Wi
 
 You can connect to the virtual machine using the downloaded file.
 
-Linux
------
+## Linux
 
 You can connect to a Windows instance via RDP from Linux.
 
@@ -80,19 +77,17 @@ To do this, you can use the Remmina utility:
     sudo apt-get update
     sudo apt-get install remmina remmina-plugin-rdp libfreerdp-plugins-standard
     ```
-    
 2.  Launch Remmina client
 3.  To create a new connection, use the menu item "Connection" / "New" / "CTRL + N" or the button on the Remmina toolbar
 4.  Enter the name of the connection, the group (if desired), select the "RDP" protocol
 5.  Enter the IP address of the virtual machine in the "Server" field
 6.  Enter user data:
-    *   User Name: ADMIN
-    *   Password: your password
+    - User Name: ADMIN
+    - Password: your password
 7.  Click the Save button
 8.  Connect to remote machine in the list of connections
 
-MacOS X
--------
+## MacOS X
 
 It is possible to connect to an instance from an operating system of the Apple Mac OS X family.
 
@@ -103,7 +98,7 @@ To make the connection:
 3.  Enter the IP address of the virtual machine in the name field
 4.  Add a new user by selecting "Add User Account" in the "User Account" field
 5.  Enter user data:
-    *   User Name: Admin
-    *   Password: your password
+    - User Name: Admin
+    - Password: your password
 6.  Press the "Add" button twice
 7.  Connect to the virtual machine by double clicking in the RDP client interface

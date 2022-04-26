@@ -1,6 +1,7 @@
 When creating a Kubernetes PaaS cluster, it is possible to choose among the pre-installed NGINX Ingress Controller services. If it was selected, then after creating the cluster, the Ingress Controller will be deployed automatically.
 
 Ingress Controller consists of two components:
+
 1. The controller interacting with the Kubernetes API server.
 2. Reverse proxy server.
 
@@ -43,7 +44,7 @@ Adding or changing traffic proxying rules occurs by reconfiguring Ingress — by
 
 Let 's take an example:
 
-1. Create a cluster under *nginx-pod with an Nginx web server that will give the inscription "Hello World!".
+1. Create a cluster under \*nginx-pod with an Nginx web server that will give the inscription "Hello World!".
 
 2. Create a test-service that will direct traffic to the nginx-pod.
 
@@ -144,17 +145,20 @@ kubectl get configmap
 NAME           DATA   AGE
 my-configmap   1      173m
 ```
+
 ```bash
 kubectl get pods
 NAME        READY   STATUS    RESTARTS   AGE
 nginx-pod   1/1     Running   0          173m
 ```
+
 ```bash
 kubectl get svc
 NAME           TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)   AGE
 kubernetes     ClusterIP   10.254.0.1       <none>        443/TCP   62d
 test-service   ClusterIP   10.254.175.104   <none>        80/TCP    3h58m
 ```
+
 ```bash
 kubectl get ing
 NAME           HOSTS   ADDRESS   PORTS   AGE

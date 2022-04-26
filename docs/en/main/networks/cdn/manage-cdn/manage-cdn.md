@@ -1,5 +1,4 @@
-Adding a resource
-=================
+## Adding a resource
 
 To add a resource, go to the "CDN resources" tab (on the left) and click on the "Add CDN" button:
 
@@ -13,8 +12,7 @@ Resource created:
 
 ![](./assets/1600280655123-1600280655123.png)
 
-Uploading files to a resource
-=============================
+## Uploading files to a resource
 
 Via CDN panel:
 
@@ -32,8 +30,7 @@ And on the "CDN" tab of the bucket, set the recommended value for the cache life
 
 ![](./assets/1600280760673-1600280760673.png)
 
-Caching
-=======
+## Caching
 
 Resource caching is necessary for fast content delivery - for example, if the content is used on a popular web resource with more than 100,000 user visits per month.
 
@@ -41,8 +38,7 @@ In the CDN resource settings, you can set the desired caching values:
 
 ![](./assets/1600919489315-1600919489315.png)
 
-HTTP headers
-============
+## HTTP headers
 
 When the browser requests a resource from the server, it uses HTTP. This request includes a set of key-value pairs containing information such as the version of the browser or the file formats it understands. These pairs are called request headers.
 
@@ -52,15 +48,13 @@ In the settings of the CDN resource, you can configure the required headers with
 
 ![](./assets/1600920047295-1600920047295.png)
 
-Content settings
-================
+## Content settings
 
 In the settings of the CDN resource, you can set the necessary content settings, including the HTTP response code and URL for the redirect:
 
 ![](./assets/1600920123530-1600920123530.png)
 
-Source groups
-=============
+## Source groups
 
 In case there is a need to distribute content from different sources, the VK CS interface has such an option.
 
@@ -70,8 +64,7 @@ To add a source group, click the corresponding button:
 
 ![](./assets/1600920348314-1600920348314.png)
 
-DNS setup
-=========
+## DNS setup
 
 Create a CNAME cdn record for the devmcs.ru domain zone directed to [ ] (in this example, we are talking about the cl-0cc5e00c.gcdn.co domain).
 
@@ -82,8 +75,7 @@ An example in BIND format is below:
 cdn CNAME cl-0cc5e00c.gcdn.co.
 ```
 
-CDN integration / content distribution
-======================================
+## CDN integration / content distribution
 
 1.  You need to decide what content (what files) you need to distribute through the CDN.
 2.  It is necessary to determine the source / group of sources through which the content will be distributed.

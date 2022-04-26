@@ -7,13 +7,10 @@ If someone has a copy of the private key and you want to prevent them from conne
 To start the disability procedure, open [personal account](https://mcs.mail.ru/app /) and follow the instructions:
 
 1. In the "Kubernetes Clusters" tab of the "Containers" section, click the action menu icon next to the cluster in which you want to replace the key and select the "Disable" option.
-    
 2. In the window that opens, select the option to add a new public key instead of the deleted one:
-    
-    * "Upload a public ssh key" – import a public key from a user's computer.
-        
-    * "Create a new key" – generates a new key pair and binds the cluster to its public key. The download of the private key file will begin immediately after clicking the "Disable" button.
-        
-    * Choosing another available public key – you can link another public key available in the system.
-        
+
+   - "Upload a public ssh key" – import a public key from a user's computer.
+   - "Create a new key" – generates a new key pair and binds the cluster to its public key. The download of the private key file will begin immediately after clicking the "Disable" button.
+   - Choosing another available public key – you can link another public key available in the system.
+
 3. Click Disable.

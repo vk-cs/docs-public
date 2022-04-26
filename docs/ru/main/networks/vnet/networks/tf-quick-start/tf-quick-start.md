@@ -1,23 +1,21 @@
-Установка terraform
--------------------
+## Установка terraform
 
 Скачайте terraform по ссылке [https://www.terraform.io/downloads.html](https://www.terraform.io/downloads.html) и воспользуйтесь инструкцией [https://learn.hashicorp.com/terraform/getting-started/install.html](https://learn.hashicorp.com/terraform/getting-started/install.html) по его установке.
 
-Настройка провайдера
---------------------
+## Настройка провайдера
 
 Для начала использования провайдера terraform VK CS выполните следующие действия:
 
-*   Скачайте бинарный файл VK CS провайдера по ссылке [https://hub.mcs.mail.ru/repository/terraform/linux/v0.1.0/mcs-provider](https://hub.mcs.mail.ru/repository/terraform/linux/v0.1.0/mcs-provider).
-*   Создайте директорию, в которой будут храниться конфигурационные файлы, например, "mcs_provider".
-*   Поместите бинарный файл VK CS провайдера по следующему пути "~/.terraform.d/plugins/".
-*   Перейдите в директорию "mcs_provider" и создайте в ней файл "main.tf". Для использования переменных при создании ресурсов также создайте файл "vars.tf".
-*   Для инициализации openstack провайдера используйте "openrc" файл - скачать его можно по ссылке [https://mcs.mail.ru/app/project/keys/](https://mcs.mail.ru/app/project/keys/). 
+- Скачайте бинарный файл VK CS провайдера по ссылке [https://hub.mcs.mail.ru/repository/terraform/linux/v0.1.0/mcs-provider](https://hub.mcs.mail.ru/repository/terraform/linux/v0.1.0/mcs-provider).
+- Создайте директорию, в которой будут храниться конфигурационные файлы, например, "mcs_provider".
+- Поместите бинарный файл VK CS провайдера по следующему пути "~/.terraform.d/plugins/".
+- Перейдите в директорию "mcs_provider" и создайте в ней файл "main.tf". Для использования переменных при создании ресурсов также создайте файл "vars.tf".
+- Для инициализации openstack провайдера используйте "openrc" файл - скачать его можно по ссылке [https://mcs.mail.ru/app/project/keys/](https://mcs.mail.ru/app/project/keys/).
 
 ![](./assets/1601594594299-1601594594299.png)Затем выполните:
 
 ```
-source %your_openrc_name%.sh 
+source %your_openrc_name%.sh
 ```
 
 **Внимание**
@@ -54,8 +52,7 @@ provider "mcs"{
 }
 ```
 
-Создание ресурсов
------------------
+## Создание ресурсов
 
 Для создания и управления ресурсами выполните следующие шаги:
 
@@ -131,7 +128,7 @@ resource "openstack_networking_subnet_v2" "k8s-subnetwork" {
  ip_version      = 4
  dns_nameservers = ["8.8.8.8", "8.8.4.4"]
 }
- 
+
 data "openstack_networking_network_v2" "extnet" {
  name = "ext-net"
 }
@@ -148,8 +145,7 @@ resource "openstack_networking_router_interface_v2" "k8s" {
 }
 ```
 
-Применение конфигурации
------------------------
+## Применение конфигурации
 
 Выполните команду "terraform init".
 
@@ -157,13 +153,11 @@ resource "openstack_networking_router_interface_v2" "k8s" {
 
 Для применения выбранной конфигурации выполните "terraform apply" и введите "yes".
 
-Удаление ресурсов
------------------
+## Удаление ресурсов
 
 Выполните команду "terraform destroy" и введите "yes".
 
-Переход на провайдера VK CS
--------------------------
+## Переход на провайдера VK CS
 
 Для перехода с openstack провайдера на VK CS выполните следующие команды:
 

@@ -33,4 +33,4 @@ It is not always convenient to create a balancer for each service, 10 services â
 
 **Ingress** To avoid creating a lot of load balancers, we added support for Ingress Controller. Ingress Controller is integrated with the OpenStack load balancer. That is, the Load Balancer type is specified in the service declaration of a specific Ingress Controller. A single load balancer is created for the cluster, according to which Ingress Controller works and further distributes traffic across services. Ingress Controller balances by DNS names.
 
-Learn more about working with Ingress in [this article](https://mcs.mail.ru/help/ru_RU/k8s-net/k8s-ingress ).
+Learn more about working with Ingress in [this article](https://mcs.mail.ru/help/ru_RU/k8s-net/k8s-ingress).

@@ -1,7 +1,6 @@
 Проведя [предварительные настройки](https://mcs.mail.ru/help/ru_RU/s3-python/s3-python-setup), можно приступить к работе с бакетами S3.
 
-Создание бакета
----------------
+## Создание бакета
 
 Создание бакета инициализируется следующей командой:
 
@@ -21,10 +20,9 @@ s3_client.create_bucket(Bucket=test_bucket_name)
 
 В [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.create_bucket) дано подробное описание команды CREATE_BICKET.
 
-Получение списка бакетов
-------------------------
+## Получение списка бакетов
 
-Список бакетов можно получить следующим образом: 
+Список бакетов можно получить следующим образом:
 
 ```
 import boto3

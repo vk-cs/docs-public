@@ -1,5 +1,4 @@
-Description
------------
+## Description
 
 VK CS provides Site-to-Site IPsec VPN as a service that connects the client's remote network and the project's private network.
 
@@ -9,8 +8,7 @@ Service works for networks connected to VK CS router, based on strongSwan softwa
 
 You can get the service log from VK CS by contacting technical support.
 
-Creature
---------
+## Creature
 
 To create a connection in your [VK CS account](https://mcs.mail.ru/app/services/server/vpn-tunnels/) , go to the "VPN" page of the "Virtual Networks" service and select "Add" in the top menu. The New VPN Wizard will open:![](./assets/1600101759106-snimok-ekrana-2020-09-14-v-19.42.24.png)
 
@@ -24,25 +22,24 @@ In the fourth step, the tunnel name is configured, the remote router address is 
 
 **Allowed PSK characters:**
 
-Capital and lowercase letters of the Latin alphabet, numbers, symbols! "# $% & () \* +, -.:; <=>? @ [] ^ _\` {} ~
+Capital and lowercase letters of the Latin alphabet, numbers, symbols! "# $% & () \* +, -.:; <=>? @ [] ^ \_\` {} ~
 
 The key must contain at least one letter or number, in addition to special characters.
 
 After clicking Create VPN Tunnel, the tunnel creation process will begin.
 
-Setting up routes
------------------
+## Setting up routes
 
 For the connection to work correctly, in addition to configuring the remote side equipment, it is necessary to configure routes for the client's network and the VK CS design network: traffic to the client's network from virtual machines must go through a port with an IP address corresponding to the "SNAT" router port.
 
 1.  It is possible to find the port and its IP address in the Networks section → <private network name> → Select the required subnet → Ports (The device is designated "SNAT").![](./assets/1600103783808-snimok-ekrana-2020-09-14-v-20.15.58.png)
 2.  After receiving the SNAT port address, specify the route in the network properties:
-    
+
     In the "Networks" section, select a network, go to the settings of the required subnet. In the subnet configuration window, select the "Show static routes field" item and enter a route to the remote network in the format <network address> - <SNAT port address>:![](./assets/1603310743037-redaktirovanie-podseti.jpg)
+
 3.  After saving the settings, renew the DHCP lease on the virtual machines on the specified subnet.
 
-Terraform creation
-------------------
+## Terraform creation
 
 Typically, when using Terraform, it becomes necessary to establish a VPN between Terraform and other networks on the Cloud Solutions service that use the IPSec protocol.
 

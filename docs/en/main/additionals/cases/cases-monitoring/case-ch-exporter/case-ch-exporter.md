@@ -1,30 +1,25 @@
-Конфигурация оборудования
--------------------------
+## Конфигурация оборудования
 
-Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы c использованием следующего оборудования: 
+Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы c использованием следующего оборудования:
 
-*   Prometheus 2.13 на ОС Ubuntu 18.04 LTS x86_64.
-*   Grafana 6.4.2 на ОС Ubuntu 18.04 LTS x86_64.
-*   Clickhouse 19.15.3.6 на ОС Ubuntu 18.04 LTS x86_64.
+- Prometheus 2.13 на ОС Ubuntu 18.04 LTS x86_64.
+- Grafana 6.4.2 на ОС Ubuntu 18.04 LTS x86_64.
+- Clickhouse 19.15.3.6 на ОС Ubuntu 18.04 LTS x86_64.
 
 **Внимание**
 
 При использовании серверов и оборудования других версий некоторые шаги сценария могут отличаться от описанных ниже.
 
-Схема работы
-------------
+## Схема работы
 
 **![](./assets/1573248708605-1573248708605.png)**
 
 Для мониторинга параметров Clickhouse и сбора метрик в Prometheus используется экспортер, который опрашивает сервер Clickhouse и передает данные серверу Prometheus. Данные визуализируются в Grafana с помощью Dashboard.
 
-Установка clickhouse_exporter
-------------------------------
+## Установка clickhouse_exporter
 
 1.  Выполните логин на сервере Clickhouse c правами суперпользователя.
-    
 2.  Поскольку exporter не существует в бинарном виде, установите пакеты для его сборки:
-    
 
 ```
 root@clickhouse:~# apt-get -y install git golang
@@ -32,7 +27,6 @@ root@clickhouse:~# apt-get -y install git golang
 ```
 
 3.  Создайте пользователя prometheus и группу prometheus, от имени которых вы будете запускать clickhouse_exporter:
-    
 
 ```
 root@clickhouse:~# groupadd --system prometheus
@@ -69,7 +63,6 @@ root@clickhouse:~# chown -R prometheus:prometheus /usr/local/bin/clickhouse_expo
 ```
 
 8.  Создайте пользователя мониторинга на сервере Clickhouse. Для этого создайте файл /etc/clickhouse-server/users.d/web.xml со следующим содержимым:
-    
 
 ```
 <yandex>
@@ -102,13 +95,13 @@ root@clickhouse:~# systemctl restart clickhouse-server
 
 ```
 
-10.  Создайте сценарий запуска systemd сервиса clickhouse_exporter. Для этого создайте файл /etc/systemd/system/clickhouse_exporter.service со следующим содержимым:
-    
+10. Создайте сценарий запуска systemd сервиса clickhouse_exporter. Для этого создайте файл /etc/systemd/system/clickhouse_exporter.service со следующим содержимым:
+
     ```
     [Unit]
     Description=Prometheus Clickhouse Exporter
     After=network.target
-    
+
     [Service]
     Type=simple
     Restart=always
@@ -119,15 +112,14 @@ root@clickhouse:~# systemctl restart clickhouse-server
     ExecStart=/usr/local/bin/clickhouse_exporter
     [Install]
     WantedBy=multi-user.target
-    
+
     ```
-    
 
 **Внимание**
 
 Адрес и порт (9116), используемые clickhouse_exporter, должны быть доступны с сервера Prometheus. Если порт недоступен, возможно, вам потребуется изменить настройки firewall на сервере с clickhouse_exporter.
 
-11.  Запустите clickhouse_exporter:
+11. Запустите clickhouse_exporter:
 
 ```
 root@clickhouse:~# systemctl daemon-reload
@@ -137,8 +129,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/clickhouse_exporter.
 
 ```
 
-12.  Убедитесь, что сервис запустился:
-    
+12. Убедитесь, что сервис запустился:
 
 ```
 root@clickhouse:~# systemctl status clickhouse_exporter.service
@@ -157,13 +148,10 @@ Oct 24 06:26:17 clickhouse clickhouse_exporter[10421]: time="2019-10-24T06:26:1
 
 ```
 
-Настройка сервера Prometheus для получения данных Clickhouse_exporter
-----------------------------------------------------------------------
+## Настройка сервера Prometheus для получения данных Clickhouse_exporter
 
 1.  Выполните логин на ноду Prometheus.
-    
 2.  В файла /opt/prometheus/prometheus.yml в секцию scrape_configs добавьте секцию работы с clickhouse_exporter:
-    
 
 ```
 scrape_configs:
@@ -175,18 +163,14 @@ scrape_configs:
 
 ```
 
-### 
-
 3.  Перезапустите сервиc Prometheus:
-    
 
 ```
 root@prometheus:~# systemctl reload prometheus.service
 
 ```
 
-Настройка Grafana
------------------
+## Настройка Grafana
 
 Для визуализации полученных данных установите соответствующий Dashboard (например, [базовый](https://grafana.com/grafana/dashboards/882) ).
 
@@ -194,10 +178,9 @@ root@prometheus:~# systemctl reload prometheus.service
 
 **[![](./assets/1573251451606-1573251451606.png)](https://hb.bizmrg.com/help-images/monitoring-with-prometheus/clickhouse-exporter/Grafana1.png)**
 
-Создание тестовой нагрузки
---------------------------
+## Создание тестовой нагрузки
 
-Чтобы посмотреть, как изменятся графики при нагрузке на сервер Clickhouse, создадим нагрузку . 
+Чтобы посмотреть, как изменятся графики при нагрузке на сервер Clickhouse, создадим нагрузку .
 
 Для этого:
 
@@ -233,17 +216,13 @@ root@clickhouse:/usr/share/clickhouse-test/performance# clickhouse performance-t
 
 **[![](./assets/1573251830540-1573251830540.png)](https://hb.bizmrg.com/help-images/monitoring-with-prometheus/clickhouse-exporter/Grafana_performance.png)**
 
-Удаление clickhouse_exporter
------------------------------
+## Удаление clickhouse_exporter
 
 Чтобы удалить clickhouse_exporter:
 
 1.  Удалите Dashboard из Grafana.
-    
 2.  Из конфигурационного файла prometheus удалите секцию - job_name: clickhouse.
-    
 3.  На сервере с clickhouse_exporter выполните команды:
-    
 
 ```
 root@clickhouse:~# systemctl stop clickhouse_exporter.service 
@@ -259,6 +238,6 @@ root@clickhouse:~# groupdel prometheus
 
 **Обратная связь**
 
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады](https://mcs.mail.ru/help/contact-us) 
+Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады](https://mcs.mail.ru/help/contact-us)
 
 ###  [](https://mcs.mail.ru/help/contact-us)

@@ -1,7 +1,6 @@
 VK CS instances support a variety of disk operations.
 
-VK CS control panel
------------------
+## VK CS control panel
 
 To perform operations with virtual machine disks [in your VK CS personal account, you](https://mcs.mail.ru/app/services/infra/servers/) should:
 
@@ -10,17 +9,17 @@ To perform operations with virtual machine disks [in your VK CS personal account
 
 Available operations in the section top menu:
 
-*   Disc creation![](./assets/1602986507042-sozdanie-diska.jpg)
-*   Attaching an existing disk to an instance![](./assets/1596377144408-1596377144408.png)
+- Disc creation![](./assets/1602986507042-sozdanie-diska.jpg)
+- Attaching an existing disk to an instance![](./assets/1596377144408-1596377144408.png)
 
 Available disk context menu operations:
 
-*   Resizing the disk
-*   Viewing a list of disc snapshots
-*   Change disk type (requires unplugging the disk)
-*   Replacing the root disk
-*   Unmounting a disk
-*   Create a disk snapshot (snapshot)
+- Resizing the disk
+- Viewing a list of disc snapshots
+- Change disk type (requires unplugging the disk)
+- Replacing the root disk
+- Unmounting a disk
+- Create a disk snapshot (snapshot)
 
 **Attention**
 
@@ -45,8 +44,7 @@ resize2fs / dev / vda1
 
 Open the Disk Management snap-in ( diskmgmt.msc ), select "Expand Partition" in the context menu of the desired partition.
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 Instance disks are managed using the following commands:
 

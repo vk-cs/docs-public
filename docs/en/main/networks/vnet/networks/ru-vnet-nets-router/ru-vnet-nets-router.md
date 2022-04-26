@@ -4,32 +4,27 @@ Instances in private networks access the Internet through the IP address of the 
 
 Management of the project routers is available in the [VK CS personal account](https://mcs.mail.ru/app/services/infra/routers/) .
 
-Create a router
----------------
+## Create a router
 
 To create a new router, select the "Add router" option in the top menu of the page, then in the window that appears, configure connections to private networks.
 
-Configuring static routes
--------------------------
+## Configuring static routes
 
 It is possible to add static routes to the router. To do this, go to the "Static routes" tab of the router page and select "Add static route", then specify the destination network and intermediate node in the menu:
 
 ![](./assets/1598278582063-snimok-ekrana-2020-08-24-v-17.14.54.png)
 
-Viewing a list of routers
--------------------------
+## Viewing a list of routers
 
 To view the list, go to the "Routers" page of the "Virtual Networks" service:![](./assets/1598275822344-snimok-ekrana-2020-08-24-v-16.28.52.png)
 
-Editing parameters
-------------------
+## Editing parameters
 
 To edit the parameters of the router, select "Edit router" in the context menu. A window for editing parameters will open:![](./assets/1598276129945-snimok-ekrana-2020-08-24-v-16.35.01.png)
 
 You can edit the connectivity of the router with an external network and connect to subnets of private networks.
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 Routers can be controlled through the OpenStack client:
 

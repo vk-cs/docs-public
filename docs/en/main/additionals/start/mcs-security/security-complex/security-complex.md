@@ -1,5 +1,4 @@
-Antifraud
----------
+## Antifraud
 
 Antifraud in VK CS is a set of security measures and rules aimed at filtering bot- and auto-registrations of users, as well as preventing potential attacks on the resources of the VK CS platform.
 
@@ -9,12 +8,11 @@ If, after confirming the postal address and phone number in the VK CS panel, whe
 
 When you select a method, the corresponding section will open:
 
-*   **Linking a bank card** . Link your card and, if necessary, pay for VK CS services.
-*   **Selfie with a passport** **(only for citizens of the Russian Federation)** . Attach a high-quality photo to your message, which clearly shows your face and your passport details.
-*   **Company card (for legal entities)** . Attach a file with the details of the organization on whose behalf the registration is being performed. The postal address must, however, indicate the name or other details of the organization.
+- **Linking a bank card** . Link your card and, if necessary, pay for VK CS services.
+- **Selfie with a passport** **(only for citizens of the Russian Federation)** . Attach a high-quality photo to your message, which clearly shows your face and your passport details.
+- **Company card (for legal entities)** . Attach a file with the details of the organization on whose behalf the registration is being performed. The postal address must, however, indicate the name or other details of the organization.
 
-Suspicious activity
--------------------
+## Suspicious activity
 
 Users of Internet resources, as well as automated services, have the right to complain about suspicious activity carried out by clients of the VK CS platform. Mechanisms include manual and automatic registration of complaints.
 
@@ -34,13 +32,12 @@ If you are an active user of the services, then technical support will definitel
 
 To avoid encountering a situation of suspicious activity from a virtual machine, you should follow the security rules:
 
-*   Do not set simple passwords for accounts
-*   Do not provide uncontrolled access to your created resources
-*   Be careful with downloaded and installed software
-*   Check instances for malware or code
+- Do not set simple passwords for accounts
+- Do not provide uncontrolled access to your created resources
+- Be careful with downloaded and installed software
+- Check instances for malware or code
 
-DDoS protection
----------------
+## DDoS protection
 
 DoS ( Denial of Service "denial of service") - a hacker attack on a computer system in order to bring it to failure, that is, the creation of such conditions under which bona fide users of the system will not be able to access the provided system resources (servers), or this access will be difficult. The failure of the attacked system can also be a step towards mastering the system (if in an emergency situation the software gives out any critical information - for example, a version, a part of the program code, etc.).
 

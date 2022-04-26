@@ -1,5 +1,4 @@
-Billing
--------
+## Billing
 
 The VK CS platform provides several types of storage to suit individual needs:
 
@@ -15,8 +14,7 @@ For each type, there are prices for data processing and storage:
 
 \* All tariffs in the table are indicated with VAT
 
-Limits
-------
+## Limits
 
 Limits are technical restrictions that apply to the entire VK CS platform.
 

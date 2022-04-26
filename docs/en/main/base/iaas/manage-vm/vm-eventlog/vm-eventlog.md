@@ -1,7 +1,6 @@
 The event list is a collection of records that reflect events in a virtual machine. The event contains the type, time and ID of the request.
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 To view the event log, run the command:
 
@@ -17,8 +16,8 @@ View event in detail:
 
 Possible events
 
-*   live-migration - live migration of an instance
-*   resize - change configuration
-*   start / stop - start / stop the server
-*   create - creating an instance
-*   extend_volume - increase disk size
+- live-migration - live migration of an instance
+- resize - change configuration
+- start / stop - start / stop the server
+- create - creating an instance
+- extend_volume - increase disk size

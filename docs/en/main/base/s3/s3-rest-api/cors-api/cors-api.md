@@ -2,12 +2,11 @@ The VK CS Object Storage service allows you to manage the CORS bucket configurat
 
 List of available methods for CORS bucket configurations:
 
-*   Get Bucket CORS - Get a list of CORS configurations for a bucket
-*   Set Bucket CORS - Set the CORS configuration
-*   Delete Bucket CORS - Delete CORS configuration
+- Get Bucket CORS - Get a list of CORS configurations for a bucket
+- Set Bucket CORS - Set the CORS configuration
+- Delete Bucket CORS - Delete CORS configuration
 
-General view of XML CORS configuration
---------------------------------------
+## General view of XML CORS configuration
 
 ```
  <CORSConfiguration>
@@ -21,8 +20,7 @@ General view of XML CORS configuration
 </CORSConfiguration>
 ```
 
-Get Bucket CORS
----------------
+## Get Bucket CORS
 
 The operation returns information on the CORS configuration set for the bucket.
 
@@ -68,8 +66,7 @@ Connection: close
 </CORSConfiguration>
 ```
 
-Set Bucket CORS
----------------
+## Set Bucket CORS
 
 The PUT operation sets the CORS configuration for the bucket. If the configuration already exists, it is overwritten.
 
@@ -79,8 +76,8 @@ You can set this configuration on a bucket so that it can serve Cross-origin req
 
 To enable cross-origin resource sharing (CORS) on a bucket, you need to add a CORS subresource to the bucket. A CORS subresource is an XML document that configures rules that define HTTP sources and methods that can be used in your bucket. The maximum document size is 64 KB. For example, a CORS configuration on a bucket might have the following two rules set:
 
-*   The first CORSRule rule allows cross-origin PUT, POST and DELETE requests from https://www.example.com. This rule also allows all headers in a preflight OPTIONS request using the Access-Control-Request-Headers header. Therefore, in response to any OPTIONS pre-flight request, the service returns any requested header.
-*   The second rule allows cross-origin GET requests from all sources. The wildcard "\*" indicates that any source can be used.
+- The first CORSRule rule allows cross-origin PUT, POST and DELETE requests from https://www.example.com. This rule also allows all headers in a preflight OPTIONS request using the Access-Control-Request-Headers header. Therefore, in response to any OPTIONS pre-flight request, the service returns any requested header.
+- The second rule allows cross-origin GET requests from all sources. The wildcard "\*" indicates that any source can be used.
 
 Inquiry:
 
@@ -128,8 +125,7 @@ Content-Length: 0
 Connection: close
 ```
 
-Delete Bucket CORS
-------------------
+## Delete Bucket CORS
 
 The DELETE operation removes the CORS configuration information set for the bucket.
 

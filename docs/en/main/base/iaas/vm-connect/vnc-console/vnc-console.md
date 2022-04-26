@@ -2,8 +2,7 @@ VNC is used to view the console output of a virtual machine, regardless of wheth
 
 VK CS uses two methods to access the remote console:
 
-VK CS panel
----------
+## VK CS panel
 
 You can use a web console using HTML5 Canvas and web sockets to connect to a Windows or Linux VM.
 
@@ -19,8 +18,7 @@ In the console window there is a "Ctrl + Alt + Delete" button that performs a fu
 
 It is also possible to set a password for an operating system user using the "Set Password" button and open the Console in a new window.
 
-Openstack CLI
--------------
+## Openstack CLI
 
 To access the console, you can use the command in the CLI:
 

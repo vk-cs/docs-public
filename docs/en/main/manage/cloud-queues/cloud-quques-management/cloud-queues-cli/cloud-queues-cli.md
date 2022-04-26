@@ -2,20 +2,20 @@ The Cloud Queues service from VK Cloud Solutions is compatible with the Amazon S
 
 With the AWS CLI, you can do the following:
 
-* Creating and deleting message queues;
-* Sending, viewing, and deleting messages in queues;
-* Editing message and queue attributes;
-* Changing the rights of users who have access to editing queues.
+- Creating and deleting message queues;
+- Sending, viewing, and deleting messages in queues;
+- Editing message and queue attributes;
+- Changing the rights of users who have access to editing queues.
 
 On this page, you will learn:
 
-* How to Get Started with Cloud Queues in AWS CLI;
-* How to form commands in AWS CLI;
-* Examples of commands.
+- How to Get Started with Cloud Queues in AWS CLI;
+- How to form commands in AWS CLI;
+- Examples of commands.
 
 Before you start working with the Cloud Queues service, read the service restrictions in the [Important restrictions] section (https://mcs.mail.ru/docs/ru/manage/cloud-queues/cloud-queues-limitations ).
 
-# Getting Started with Cloud Queues in AWS CLI
+## Getting Started with Cloud Queues in AWS CLI
 
 To start working with Cloud Queues in the AWS CLI, you need to complete several steps:
 
@@ -31,8 +31,8 @@ To install CLI v2, you need to perform the installation procedure corresponding 
 
 #### Preliminary requirements
 
-* The ability to extract or "unzip" the downloaded package. If there is no built-in unzip command in the operating system, the equivalent should be used.
-* The AWS CLI version 2 uses the **glibc**, **groff** and **less** libraries. They are included by default in most major Linux distributions.
+- The ability to extract or "unzip" the downloaded package. If there is no built-in unzip command in the operating system, the equivalent should be used.
+- The AWS CLI version 2 uses the **glibc**, **groff** and **less** libraries. They are included by default in most major Linux distributions.
 
 #### Installation
 
@@ -88,14 +88,14 @@ aws --version
 
 Before installing AWS CLI version 2 on Windows, you need to make sure that the following is available:
 
-* 64-bit version of Windows XP or later;
-* Administrator rights to install the software.
+- 64-bit version of Windows XP or later;
+- Administrator rights to install the software.
 
 #### Installation
 
 Follow the instructions to install:
 
-1. Download the [AWS CLI MSI Installer](https://awscli.amazonaws.com/AWSCLIV2.msi ) for Windows (64-bit version);
+1. Download the [AWS CLI MSI Installer](https://awscli.amazonaws.com/AWSCLIV2.msi) for Windows (64-bit version);
 2. Run the downloaded MSI installer and follow the on-screen instructions. By default, the AWS command-line interface is set to **C:\Program Files\Amazon\AWSCLIV2**.
 
 #### Confirm the installation is correct
@@ -122,10 +122,10 @@ aws configure
 
 When you enter this command, the AWS command-line interface asks for four pieces of information:
 
-* **Access Key ID** - the received key ID data is used when adding an account;
-* **Secret access key** - the received secret key data is used when adding an account;
-* **AWS region** – S3 service location region, by default it is ru-msk;
-* **Output format** - defines how to format the output of the command used. If the output format is not specified, it will use JSON by default. Available options: JSON, YAML, text, and table.
+- **Access Key ID** - the received key ID data is used when adding an account;
+- **Secret access key** - the received secret key data is used when adding an account;
+- **AWS region** – S3 service location region, by default it is ru-msk;
+- **Output format** - defines how to format the output of the command used. If the output format is not specified, it will use JSON by default. Available options: JSON, YAML, text, and table.
 
 An example of an AWS CLI configuration command looks like this:
 
@@ -147,13 +147,13 @@ The AWS CLI uses composite syntax to form commands:
 aws sqs --endpoint-url https://sqs.mcs.mail.ru <command name> [options and parameters]
 ```
 
-* 'aws sqs` - calling the Cloud Queues service;
+- 'aws sqs` - calling the Cloud Queues service;
 
-* `<command name>` – the name of the operation being performed;
+- `<command name>` – the name of the operation being performed;
 
-* `--endpoint-url https://sqs.mcs.mail.ru ` – for all commands, the `--endpoint-url` parameter must be specified with the value `https://sqs.mcs.mail.ru ` for the normal operation of the service;
+- `--endpoint-url https://sqs.mcs.mail.ru` – for all commands, the `--endpoint-url` parameter must be specified with the value `https://sqs.mcs.mail.ru` for the normal operation of the service;
 
-* `[options and parameters]' – additional parameters of the operation being performed.
+- `[options and parameters]' – additional parameters of the operation being performed.
 
 You can use the 'aws sqs help' command to call help for available commands.
 
@@ -165,13 +165,13 @@ A complete list of all commands available in the AWS CLI for working with Cloud 
 
 The following examples show how to create a standard and FIFO message queue via the AWS CLI.
 
-* Creating a standard queue called "test-queue":
+- Creating a standard queue called "test-queue":
 
 ```
 aws sqs create-queue --endpoint-url https://sqs.mcs.mail.ru   --queue-name test-queue
 ```
 
-* Creating a FIFO queue called "test-queue":
+- Creating a FIFO queue called "test-queue":
 
 ```
 aws sqs create-queue --endpoint-url https://sqs.mcs.mail.ru --queue-name test-queue --attributes FifoQueue
@@ -197,4 +197,5 @@ aws sqs receive-message --endpoint-url https://sqs.mcs.mail.ru --queue-url sqs.m
 The following command will delete the message with the `Receipt-handle AQEB6nR4' parameter... HzlvZQ==' in the "test-queue" queue:
 
 ```
+
 aws sqs delete-message --endpoint-url https://sqs.mcs.mail.ru --queue-url sqs.mcs.mail.ru/mcsprojectid/test-queue --receipt-handle AQEB6nR4...HzlvZQ==

@@ -1,7 +1,6 @@
 Several typographic conventions are used throughout the VK CS documentation.
 
-Notes
------
+## Notes
 
 Notes are formatted as follows.
 
@@ -21,11 +20,10 @@ Optional, but very helpful advice.
 
 Critical information about the risk of data loss or security issues.
 
-Command requests
-----------------
+## Command requests
 
 ```
- $ command
+ command
 ```
 
 Any user, including the root user, can execute commands starting with "$".
@@ -40,8 +38,7 @@ Each block of code can be copied, and you can also see what language the code is
 
 ![](./assets/1595591662397-1595591662397.png)
 
-Hidden text
------------
+## Hidden text
 
 In order not to overwhelm the article with information, it can be hidden in blocks of drop-down texts, when selected, information is displayed. Clicking on the corresponding block will display the hidden text.
 

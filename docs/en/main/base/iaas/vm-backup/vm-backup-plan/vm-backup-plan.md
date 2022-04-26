@@ -10,25 +10,23 @@ After the virtual machine is deleted, all backups are saved in the project. Dele
 
 Configuring a backup plan is available from several interfaces.
 
-VK CS control panel
------------------
+## VK CS control panel
 
 To create a plan [in your VK CS account, you](https://mcs.mail.ru/app/services/infra/servers/) should:
 
 1.  Go to the "Backup" section of the "Cloud Computing" service.
 2.  On the Automatic tab, click Add to add the plan.
 3.  Configure backup options:![](./assets/1596650843455-snimok-ekrana-2020-08-05-v-21.06.43.png)
-    
+
     <table style="width: 100%;"><tbody><tr><td style="width: 39.3333%; background-color: rgb(239, 239, 239);">Parameter</td><td style="width: 60.5334%; background-color: rgb(239, 239, 239);">Description</td></tr><tr><td style="width: 39.3333%;">Backup type</td><td style="width: 60.5334%;">Full or incremental backups. Incremental allows you to save space, reduce costs and increase the speed of creating backups</td></tr><tr><td style="width: 39.3333%;">Plan name</td><td style="width: 60.5334%;">Backup plan name</td></tr><tr><td style="width: 39.3333%;">Max. number of full backups</td><td style="width: 60.5334%;">Configures the number of full backups to keep</td></tr><tr><td style="width: 39.3333%;">Backup Schedule</td><td style="width: 60.5334%;">Specifies the days and times for making copies. Multiple schedules can be created</td></tr><tr><td style="width: 39.3333%;">Apply for the following instances</td><td style="width: 60.5334%;">Selecting virtual machines for which copies will be created</td></tr></tbody></table>
-    
+
 4.  Click "Save Plan".
 
 To edit a backup plan in the "Backup" section, select "Edit" in the context menu of the plan.
 
 To delete a plan, select "Delete" in the context menu of the plan. This will also delete all restore points (backups).
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 To create a backup in the karbor client you need:
 

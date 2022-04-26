@@ -1,7 +1,6 @@
 Buckets are containers for objects. A project can have one or more buckets. Access to each bucket can be controlled: specify which users can create and delete objects in the bucket, and display a list of objects.
 
-Bucket name
------------
+## Bucket name
 
 The bucket name is used to access data and will be seen by other users when granting access.
 
@@ -9,29 +8,27 @@ Bucket names must be unique for all projects of the Object Storage service, ie. 
 
 The bucket name must meet the following conditions:
 
-*   Contain between 4 and 63 characters
-*   Do not contain uppercase characters (uppercase)
-*   Start with a lowercase character (lowercase) or numbers
+- Contain between 4 and 63 characters
+- Do not contain uppercase characters (uppercase)
+- Start with a lowercase character (lowercase) or numbers
 
 Not recommended in name:
 
-*   The format is similar to the IP address (i.e. 192.168.5.4)
-*   Using the underscore (_) character, because it is not DNS-compatible and such a bucket cannot be bound to a DNS name
-*   Start with characters xn--
+- The format is similar to the IP address (i.e. 192.168.5.4)
+- Using the underscore (\_) character, because it is not DNS-compatible and such a bucket cannot be bound to a DNS name
+- Start with characters xn--
 
 It is recommended to avoid using personal information such as project number or user account in the bucket name.
 
-Features of use
----------------
+## Features of use
 
-*   Bucket cannot be renamed
-*   Buckets cannot be nested
-*   You can delete a bucket only if there are no objects in it
-*   It is impossible to delete a bucket with the "Backup" type on your own, this type of storage is managed by the instance backup service
-*   After deleting a bucket, it may take some time before creating a new bucket with the same name becomes possible.
+- Bucket cannot be renamed
+- Buckets cannot be nested
+- You can delete a bucket only if there are no objects in it
+- It is impossible to delete a bucket with the "Backup" type on your own, this type of storage is managed by the instance backup service
+- After deleting a bucket, it may take some time before creating a new bucket with the same name becomes possible.
 
-Bucket creation
----------------
+## Bucket creation
 
 To create a bucket in the VK CS panel:
 
@@ -39,8 +36,7 @@ To create a bucket in the VK CS panel:
 2.  Press the "Add" button:![](./assets/1598051883018-1598051883018.png)
 3.  Select the type of bucket to create and enter a DNS-compatible name:![](./assets/1598051924094-1598051924094.png)
 
-Removing a bucket
------------------
+## Removing a bucket
 
 Deleting a bucket after cleaning it is possible in the general list of buckets of the Object Storage service. To delete one bucket, you can use the delete button against the bucket, and to delete several elements, you can select using the checkbox to the left of the buckets:
 

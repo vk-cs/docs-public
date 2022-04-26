@@ -8,8 +8,7 @@ At the time of this writing, the current version of Terraform is 0.12.24.
 
 Terraform cannot create a virtual machine with a disk type, as this is due to the versioning of the OpenStack API. The correct way is to create a disk, then create a virtual machine.
 
-Configuration creation
-----------------------
+## Configuration creation
 
 First, you should describe the configuration of the virtual infrastructure. For this, the main.tf file is created in the directory with terraform configuration files, and the following data is added:
 
@@ -23,7 +22,7 @@ This code segment is responsible for the ssh key:
   # This key will be displayed in the section
   # Cloud computing -> Key pairs
   name = "terraform_ssh_key"
-  
+
 # Path to public key
 # In the example, it is in the same directory as main.tf
   public_key = file ("{path.module} /terraform.pem.pub")
@@ -67,10 +66,10 @@ This segment is responsible for creating a disc.
  resource "openstack_blockstorage_volume_v2" "volume" {
 # Disc name
   name = "storage"
-  
+
 # Type of disk being created
   volume_type = "dp1"
-  
+
 # Disk size
   size = "10"
 
@@ -122,7 +121,7 @@ The assembled configuration will look like:
 # Name and uuid of the OS image
   image_name = "Ubuntu-18.04-201910"
   image_id = "cd733849-4922-4104-a280-9ea2c3145417"
-  
+
 # Instance configuration
   flavor_name = "Basic-1-1-10"
 
@@ -190,8 +189,7 @@ You can also display artifacts, for example, the ext-net IP address that the VM 
 }
 ```
 
-Infrastructure deployment
--------------------------
+## Infrastructure deployment
 
 To make sure that the deployment configuration is correct, you should run the command:
 

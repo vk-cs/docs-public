@@ -1,5 +1,4 @@
-General information
--------------------
+## General information
 
 The VK CS platform allows you to create virtual machines with pre-installed licensed copies of Microsoft Windows Server operating systems, as well as use additional available Microsoft software products, such as: SQL Server, Remote Desktop Services, Exchange Server with monthly payment.
 
@@ -9,31 +8,28 @@ At the moment, the list of provided software products within the SPLA is limited
 
 <table style="width: 100%;"><tbody><tr><td style="width: 19.5616%; background-color: rgb(239, 239, 239); text-align: center;">The code</td><td style="width: 47.2175%; background-color: rgb(239, 239, 239); text-align: center;">Name</td><td style="width: 33.2209%; background-color: rgb(239, 239, 239); text-align: center;">Description</td></tr><tr><td style="width: 19.5616%;">9EM-00562</td><td style="width: 47.2175%;">WinSvrSTDCore ALNG LicSAPk MVL 2Lic CoreLic</td><td style="width: 33.2209%;">Windows Server Standard edition (2 vCPU)</td></tr><tr><td style="width: 19.5616%;">7NQ-00302</td><td style="width: 47.2175%;">SQLSvrStdCore ALNG LicSAPk MVL 2Lic CoreLic</td><td style="width: 33.2209%;">Microsoft SQL Server Standard (2 vCPU)</td></tr><tr><td style="width: 19.5616%;">7JQ-00341</td><td style="width: 47.2175%;">SQLSvrEntCore ALNG LicSAPk MVL 2Lic CoreLic</td><td style="width: 33.2209%;">Microsoft SQL Server Enterprise Core Edition (2 vCPU)</td></tr><tr><td style="width: 19.5616%;">228-05018</td><td style="width: 47.2175%;">SQLSvrStd ALNG LicSAPk MVL SAL</td><td style="width: 33.2209%;">Microsoft SQL Server Standard Edition (per user)</td></tr><tr><td style="width: 19.5616%;">6WC-00002</td><td style="width: 47.2175%;">WinRmtDsktpSrvcsSAL ALNG LicSAPk MVL</td><td style="width: 33.2209%;">Windows Remote Desktop Services (per user)</td></tr></tbody></table>
 
-Terms of Use
-------------
+## Terms of Use
 
 The terms of use of Microsoft software are governed by the terms of the Microsoft License Agreement with the purchase of Microsoft products. You are responsible for complying with the Microsoft licensing terms. If you have questions about licensing and Microsoft software use rights, please contact your Legal Department or Microsoft sales representatives. The information in this article corresponds to the [current terms of use for Microsoft products](https://www.microsoft.com/en-us/licensing/product-licensing/products).
 
-The cost
---------
+## The cost
 
 find out the cost of monthly license usage, at the top of the control panel, click «Project ettings» —> «Prices».
 
 You can track write-offs in your personal account in the «Balance and payments» section.
 
-Windows Server
---------------
+## Windows Server
 
 When you create an instance with Microsoft Windows OS, a licensed copy of the corresponding edition selected during creation is automatically deployed.
 
 Available editions of the Microsoft Windows Server operating system:
 
-*   Windows Server 2012R2 RU
-*   Windows Server 2012R2 EN
-*   Windows Server 2016 RU
-*   Windows Server 2016 EN
-*   Windows Server 2019 RU
-*   Windows Server 2019 RU
+- Windows Server 2012R2 RU
+- Windows Server 2012R2 EN
+- Windows Server 2016 RU
+- Windows Server 2016 EN
+- Windows Server 2019 RU
+- Windows Server 2019 RU
 
 Every 2 vCPU Windows Instances require one license. Accordingly, when creating an instance with 5 vCPUs, you will need 3 Windows Server licenses per core.
 
@@ -51,8 +47,7 @@ If you selected the Windows 2012/2016 operating system when creating a virtual m
 
 To receive an activation key, write to us in the feedback form indicating your VK CS account and the number of licenses.
 
-Remote Desktop Services
------------------------
+## Remote Desktop Services
 
 Remote Desktop Service allows a large number of users to work with a virtual machine at the same time.
 
@@ -68,8 +63,7 @@ Remote Desktop Services licenses can only be granted for a licensed copy of the 
 
 To activate a license, you should [contact technical support](mailto:support@mcs.mail.ru) and provide the details of the project, instance, the required number of licenses, as well as the parameters for connecting to the instance's remote desktop to activate licenses.
 
-SQL Server
-----------
+## SQL Server
 
 SQL Server Database Management System is available for installation as a pre-installed instance with a pre-installed copy of SQL Server.
 

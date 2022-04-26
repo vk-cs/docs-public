@@ -1,7 +1,6 @@
 Cancels all permissions in the queue policy corresponding to the specified Label parameter.
 
-Request Parameters
------------------
+## Request Parameters
 
 mark
 
@@ -21,8 +20,7 @@ Type: String
 
 Required: Yes
 
-Examples
--------
+## Examples
 
 The following sample request request removes the testLabel permission from the queue named myQueue. The AUTHPARAMS structure depends on the API request signature.
 

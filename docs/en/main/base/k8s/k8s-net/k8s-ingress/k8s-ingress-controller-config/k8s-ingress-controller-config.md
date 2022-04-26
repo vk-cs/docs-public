@@ -314,13 +314,15 @@ There are two options for using ConfigMap:
 
 You should edit the nginx-config.yaml file, setting the necessary parameters.
 Next, apply this file on the Kubernetes cluster:
-``` bash
+
+```bash
 kubectl apply -f nginx-config.yaml
 ```
 
 After that, the NGINX Ingress Controller configuration will be changed.
 If you need to update some settings, you need to edit the nginx-config.yaml file and run the following command again:
-``` bash
+
+```bash
 kubectl apply -f nginx-config.yaml
 ```
 
@@ -329,32 +331,40 @@ kubectl apply -f nginx-config.yaml
 
 The Nginx-ingress deployed by Helm takes parameters from the ConfigMap located in the namespace in which it is deployed.
 To get the namespace, run the command:
-``` bash
+
+```bash
 helm ls -A | grep nginx
 ```
-``` yaml
+
+```yaml
 NAME NAMESPACE REVISION UPDATED STATUS CHART APP VERSION
 ingress-nginx ingress-nginx 1 2021-12-07 10:03:02.541220976 +0000 UTC deployed ingress-nginx-3.36.0 0.49.0
 ```
+
 To apply parameters to the Ingress Controller, you must add them to the ConfigMap in the appropriate namespace. To add or change parameters to Nginx Ingress Controller follow these steps:
 
 1. Get a list of available ConfigMap:
-``` bash
+
+```bash
 kubectl -n ingress-nginx get configmap
 ```
-``` yaml
+
+```yaml
 NAME DATA AGE
 ingress-controller-leader-nginx 0 35d
 ingress-nginx-controller 7 35d
 kube-root-ca.crt 1 35d
 ```
+
 Pay attention to `ingress-nginx-controller`.
 
 2. Edit the `data` section. You can add or change the required parameters.
-``` bash
+
+```bash
 kubectl -n ingress-nginx edit cm ingress-nginx-controller
 ```
-``` yaml
+
+```yaml
 data:
    ...
   proxy-buffer-size: "256k"
@@ -364,7 +374,7 @@ data:
 ```
 
 You can see the full list of options [here](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/configmap/).
- 
+
 3. Save your changes.
 
 </tabpanel>
@@ -376,7 +386,7 @@ If you need to customize settings for a specific Ingress, the easiest way is to 
 
 For example, cafe-ingress-with-annotations.yaml:
 
-``` yaml
+```yaml
 apiVersion: networking.k8s.io/v1
 kind: IngressClass
 metadata:

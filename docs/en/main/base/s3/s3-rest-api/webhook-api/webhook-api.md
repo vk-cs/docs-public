@@ -1,25 +1,24 @@
 Webhooks for S3 is the ability to configure sending HTTP / S requests on events for a bucket using an API. For example, you can:
 
-*   configure processing and converting files after upload
-*   integrate with any external systems
-*   configure logging for object storage
+- configure processing and converting files after upload
+- integrate with any external systems
+- configure logging for object storage
 
 The list of events (Event) for which it is possible to configure the Webjook configuration:
 
-*   s3: ObjectCreated: \* - PutObject, PutObjectCopy, CompleteMultipartUpload
-*   s3: ObjectCreated: Put - PutObject
-*   s3: ObjectCreated: Copy - PutObjectCopy
-*   s3: ObjectCreated: CompleteMultipartUpload - CompleteMultipartUpload
-*   s3: ObjectRemoved: \* - DeleteObject
-*   s3: ObjectRemoved: Delete - DeleteObject
+- s3: ObjectCreated: \* - PutObject, PutObjectCopy, CompleteMultipartUpload
+- s3: ObjectCreated: Put - PutObject
+- s3: ObjectCreated: Copy - PutObjectCopy
+- s3: ObjectCreated: CompleteMultipartUpload - CompleteMultipartUpload
+- s3: ObjectRemoved: \* - DeleteObject
+- s3: ObjectRemoved: Delete - DeleteObject
 
 The following methods are available for working with WebHooks:
 
-*   PutBucketNotificationConfiguration
-*   GetBucketNotificationConfiguration
+- PutBucketNotificationConfiguration
+- GetBucketNotificationConfiguration
 
-General XML configuration
--------------------------
+## General XML configuration
 
 ```
  PUT /? Notification HTTP / 1.1
@@ -46,8 +45,7 @@ Host: Bucket.hb.bizmrg.com
 </NotificationConfiguration>
 ```
 
-Put Bucket Notification Configuration
--------------------------------------
+## Put Bucket Notification Configuration
 
 The PUT method allows you to enable notification about some event (PutObject, DeleteObject, etc.) in the bucket.
 
@@ -101,8 +99,7 @@ Content-Type: application / xml
 Connection: close
 ```
 
-GetBucketNotificationConfiguration
-----------------------------------
+## GetBucketNotificationConfiguration
 
 Returns the current rule configuration (SimpleNotificationConfiguration) of the bucket. If no rules have been set for this bucket, an empty NotificationConfiguration element will be returned.
 
@@ -169,8 +166,7 @@ Connection: close
 </NotificationConfiguration>
 ```
 
-Webhook execution example
--------------------------
+## Webhook execution example
 
 For an example of the established rules, when loading objects into bucketA with the names image / \*. Png, the following request will come:
 

@@ -1,4 +1,5 @@
 Для унификации сбора логов с нод с docker-runtime и crio-runtime следует воспользоваться Fluent Bit (легковесная и более производительная альтернатива fluentd).
+
 ## Файл настройки values.yaml
 
 В качестве values.yaml для хелма стоит использовать файл из аттача — в нем уже настроены необходимые фильтры и парсеры.
@@ -7,21 +8,24 @@
 
 В приложенном values.yaml необходимо поправить параметры для [OUTPUT] — в примере для хранения логов используется PostgreSQL с двумя таблицами в одной базе:
 
-* Таблица fluentbit_21_host — для хранения логов хостовых сервисов(kublet.service, docker.service, crio.service)
-* Таблица fluentbit_21_kube — хранит логи непосредственно логи подов. 
+- Таблица fluentbit_21_host — для хранения логов хостовых сервисов(kublet.service, docker.service, crio.service)
+- Таблица fluentbit_21_kube — хранит логи непосредственно логи подов.
 
 Аналогичным способом логи можно сохранять, например в Elasticsearch. Полный список поддерживаемых типов хранилищ можно посмотреть по [ссылке.](https://docs.fluentbit.io/manual/pipeline/outputs)
 
 Разделение сделано намерено, чтобы показать возможность использования разных таблиц в базе данных (индексов в Elasticsearch).
+
 ## Установка Fluent Bit с помощью Helm 3
 
 Установить Fluent Bit с файлом настройки можно следующими командами:
+
 ```
 helm repo add fluent https://fluent.github.io/helm-charts
 helm install fluent-bit fluent/fluent-bit --values values.yaml
 ```
 
 Больше информации об установке Fluent Bit вы можете найти в официальной документации Fluent Bit: https://docs.fluentbit.io/manual/installation/kubernetes#installing-with-helm-chart
+
 ## Примеры логов
 
 Логи докера выглядят так:

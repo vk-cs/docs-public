@@ -1,5 +1,4 @@
-Cluster creation
-----------------
+## Cluster creation
 
 All instructions when working with the API are executed in the console.
 
@@ -70,8 +69,7 @@ It is important to remember that the parameters cluster_template_id, head_templa
 curl -s -H "X-Auth-Token: <your_auth_token>" -H "Content-Type: application / json" -X GET "http://infra.mail.ru:8386/v1.1/ <your_project_ID> / cluster-templates "-v
 ```
 
-Deleting a cluster
-------------------
+## Deleting a cluster
 
 Removing a Big Data cluster must be done using the command
 

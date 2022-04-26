@@ -1,30 +1,25 @@
-Конфигурация оборудования
--------------------------
+## Конфигурация оборудования
 
-Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы c использованием следующего оборудования: 
+Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы c использованием следующего оборудования:
 
-*   Prometheus 2.13 на ОС Ubuntu 18.04 LTS x86_64.
-*   Grafana 6.4.2 на ОС Ubuntu 18.04 LTS x86_64.
-*   PostgreSQL 10 на ОС Ubuntu 18.04 LTS x86_64.
+- Prometheus 2.13 на ОС Ubuntu 18.04 LTS x86_64.
+- Grafana 6.4.2 на ОС Ubuntu 18.04 LTS x86_64.
+- PostgreSQL 10 на ОС Ubuntu 18.04 LTS x86_64.
 
 **Внимание**
 
 При использовании серверов и оборудования других версий некоторые шаги сценария могут отличаться, от описанных ниже.
 
-Схема работы
-------------
+## Схема работы
 
 ![](./assets/1572590876768-1572590876768.png)
 
 Для мониторинга параметров PostreSQL и сбора метрик в Prometheus используется экспортер, который опрашивает сервер PostgreSQL и передает данные серверу Prometheus. Данные можно визуализировать в Grafana с помощью Dashboard.
 
-Установка postgres_exporter
-----------------------------
+## Установка postgres_exporter
 
 1.  Выполните логин на сервере PostgreSQL с правами суперпользователя.
-    
 2.  Укажите актуальную версию экспортера:
-    
 
 ```
 root@postgresql:~# export VERSION="<версия>"
@@ -44,12 +39,10 @@ root@postgreql:~# wget https://github.com/wrouesnel/postgres_exporter/releases/d
     ```
     root@postgresql:~# cp /tmp/postgres_exporter_v$VERSION_linux-amd64/postgres_exporter /usr/local/bin
     ```
-    
 5.  Удалите содержимое распакованного архива из папки /tmp:
     ```
     root@postgresql:~# rm -rf /tmp/postgres_exporter_v$VERSION_linux-amd64
     ```
-    
 6.  Измените владельца postgres_exporter на postgres:
 
 ```
@@ -57,7 +50,6 @@ root@postgresql:~# chown -R postgres:postgres /usr/local/bin/postgres_exporter
 ```
 
 7.  Создайте сценарий запуска systemd сервиса postgres_exporter. Для этого создайте файл /etc/systemd/system/postgres_exporter.service со следующим содержимым:
-    
 
 ```
 [Unit]
@@ -77,10 +69,9 @@ WantedBy=multi-user.target
 
 **Примечание**
 
-Параметр Environment описывает передаваемые параметры доступа к серверу PostgreSQL. Если вы используете нестандартную инсталляцию PostgreSQL либо сервер и exporter расположены на разных нодах, [настройте этот параметр](https://godoc.org/github.com/lib/pq). 
+Параметр Environment описывает передаваемые параметры доступа к серверу PostgreSQL. Если вы используете нестандартную инсталляцию PostgreSQL либо сервер и exporter расположены на разных нодах, [настройте этот параметр](https://godoc.org/github.com/lib/pq).
 
 8.  Запустите postgres_exporter:
-    
 
 ```
 root@postgresql:~# systemctl daemon-reload
@@ -90,7 +81,6 @@ Created symlink /etc/systemd/system/multi-user.target.wants/postgres_exporter.se
 ```
 
 9.  Убедитесь, что сервис запустился:
-    
 
 ```
 root@postgresql:~# systemctl status postgres_exporter.service 
@@ -113,13 +103,12 @@ Oct 07 09:01:26 postgresql postgres_exporter[4144]: time="2019-10-07T09:01:26+03
 
 По умолчанию postgres_exporter запускается на порту 9187, который должен быть доступен серверу Prometheus. При необходимости настройте межсетевой экран соответствующим образом.
 
-Настройка Prometheus для получения данных postgres_exporter
-------------------------------------------------------------
+## Настройка Prometheus для получения данных postgres_exporter
 
 1.  На ноде Prometheus выполните логин.
 2.  В файле prometheus.yml для работы с postgres_exporter:
 
-*   В scrape_configs добавьте следующую секцию:
+- В scrape_configs добавьте следующую секцию:
 
 ```
 scrape_configs:
@@ -131,7 +120,7 @@ scrape_configs:
 
 ```
 
-*   В секции targets впишите IP-адрес сервера postgres_exporter.
+- В секции targets впишите IP-адрес сервера postgres_exporter.
 
 3.  Перезапустите сервиc Prometheus:
 
@@ -140,8 +129,7 @@ root@prometheus:~# systemctl reload prometheus.service
 
 ```
 
-Настройка Grafana
------------------
+## Настройка Grafana
 
 Для визуализации полученных данных установите соответствующий Dashboard (например, [Dashboard 1](https://grafana.com/grafana/dashboards/455) или [Dashboard 2](https://grafana.com/grafana/dashboards/9628) ).
 
@@ -153,10 +141,9 @@ root@prometheus:~# systemctl reload prometheus.service
 
 **![](./assets/1572590138354-1572590138354.png)**
 
-Создание тестовой нагрузки
---------------------------
+## Создание тестовой нагрузки
 
-Чтобы посмотреть, как изменятся графики при нагрузке на сервер PostgreSQL, воспользуйтесь утилитой pgbench, которая обычно входит в состав дистрибутива PostgreSQL (примеры использования см. [тут](https://wiki.postgresql.org/wiki/Pgbench) и [тут](https://www.8host.com/blog/testirovanie-proizvoditelnosti-upravlyaemoj-bazy-dannyx-postgresql-s-pomoshhyu-pgbench/)) . 
+Чтобы посмотреть, как изменятся графики при нагрузке на сервер PostgreSQL, воспользуйтесь утилитой pgbench, которая обычно входит в состав дистрибутива PostgreSQL (примеры использования см. [тут](https://wiki.postgresql.org/wiki/Pgbench) и [тут](https://www.8host.com/blog/testirovanie-proizvoditelnosti-upravlyaemoj-bazy-dannyx-postgresql-s-pomoshhyu-pgbench/)) .
 
 Для этого:
 
@@ -210,18 +197,14 @@ number of transactions actually processed: 26183
 
 **![](./assets/1572590394406-1572590394406.png)**
 
-Удаление postgres_exporter
----------------------------
+## Удаление postgres_exporter
 
 Чтобы удалить postgres_exporter:
 
 1.  Удалите Dashboard из Grafana.
-    
 2.  Из конфигурационного файла prometheus удалите секцию - job_name: postgresql.
-    
 
-4.  На сервере с postres_exporter выполните команды:
-    
+3.  На сервере с postres_exporter выполните команды:
 
 ```
 root@postgresql:~# systemctl stop postgres_exporter.service 

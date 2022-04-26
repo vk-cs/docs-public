@@ -1,7 +1,6 @@
-The request changes the visibility timeout of several messages at once. The result of the action for each message is reported separately in the response, and you can send up to 10 requests with each action. 
+The request changes the visibility timeout of several messages at once. The result of the action for each message is reported separately in the response, and you can send up to 10 requests with each action.
 
-Request Parameters
------------------
+## Request Parameters
 
 **ChangeMessageVisibilityBatchRequestEntry.N**
 
@@ -21,8 +20,7 @@ Type: String
 
 Required: Yes
 
-Response Elements
----------------
+## Response Elements
 
 The following items are returned by the service.
 
@@ -38,8 +36,7 @@ List of items. `ChangeMessageVisibilityBatchResultEntry`
 
 Type: Array of ChangeMessageVisibilityBatchResultEntry objects
 
-Mistakes
-------
+## Mistakes
 
 **AWS.SimpleQueueService.BatchEntryIdsNotDistinct**
 
@@ -65,8 +62,7 @@ A batch request contains more records than is allowed.
 
 HTTP Status Code: 400
 
-Examples
--------
+## Examples
 
 #### Sample request
 

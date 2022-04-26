@@ -1,21 +1,19 @@
-Описание
---------
+## Описание
 
 Инструмент командной строки Kubernetes kubectl позволяет запускать команды для кластеров Kubernetes. kubectl можно использовать для развертывания приложений, проверки и управления ресурсов кластера, а также для просмотра логов. Полный список операций kubectl доступен в [официальной документации kubectl](https://kubernetes.io/docs/reference/kubectl/overview/).
 
-Подготовка к работе
--------------------
+## Подготовка к работе
 
 Используемая мажорная версия kubectl не должна отличаться от той, которая используется в кластере. Например, версия v1.19 может работать с версиями v1.16 и v1.15. Использование последней версии kubectl поможет избежать непредвиденных проблем.
 
-Установка kubectl
------------------
+## Установка kubectl
 
 Для Linux
 
 **С помощью curl**
 
 Загрузить последнюю версию:
+
 ```
 curl -LO https://storage.googleapis.com/kubernetes-release/release/\`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt\`/bin/linux/amd64/kubectl
 ```
@@ -70,6 +68,7 @@ yum install -y kubectl
 **С помощью curl**
 
 Загрузить последнюю версию:
+
 ```
 curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl"
 ```
@@ -155,8 +154,7 @@ kubectl version --client
 
 Обновить kubectl можно путём выполнения двух команд, перечисленных в шаге 1.
 
-Импорт конфигурации
--------------------
+## Импорт конфигурации
 
 Чтобы kubectl мог найти и получить доступ к кластеру Kubernetes, необходим конфигурационный файл kubeconfig, который создаётся автоматически при создании кластера и загружается на локальный компьютер из панели VK CS. Импорт конфигурационного файла \*.yaml осуществляется с помощью команды
 
@@ -170,14 +168,13 @@ export KUBECONFIG=<путь к файлу>
 export KUBECONFIG=$KUBECONFIG:$HOME/.kube/config
 ```
 
-Для **Windows PowerShell** так: 
+Для **Windows PowerShell** так:
 
 ```
 $Env:KUBECONFIG="$Env:KUBECONFIG;$HOME\.kube\config"
 ```
 
-Подключение к кластеру
-----------------------
+## Подключение к кластеру
 
 Посмотреть на состояние кластера, чтобы убедиться, что kubectl правильно сконфигурирован можно при помощи команды:
 

@@ -14,9 +14,7 @@
 
 <table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Тип</strong></td><td><strong>Значение</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">images</span></td><td><span style="font-family: 'courier new', courier;">[]image_meta</span></td><td>метаданные передаваемых изображений<strong><span>&nbsp;</span><strong>(required non-empty)</strong><br></strong></td></tr></tbody></table>
 
-#### 
-
-image\_meta
+image_meta
 
 <table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Тип</strong></td><td><strong>Значение</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">name<br></span></td><td><span style="font-family: 'courier new', courier;">string</span></td><td><span>имена файлов для сопоставления файлов в запросе и ответе</span><strong>&nbsp;(required non-empty)</strong></td></tr></tbody></table>
 

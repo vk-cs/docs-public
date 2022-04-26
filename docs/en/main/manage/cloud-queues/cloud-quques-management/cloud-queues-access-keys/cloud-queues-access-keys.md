@@ -8,7 +8,7 @@ Accounts (access keys) increase the security of the service. You can create and 
 
 To delete an account:
 
-* click the trash icon to the right on a specific queue
-* or select the desired accounts by ticks and click the icon at the top of the panel.
+- click the trash icon to the right on a specific queue
+- or select the desired accounts by ticks and click the icon at the top of the panel.
 
 ![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f7055-2fdirect-2f1619529829235-1619529829235.png)

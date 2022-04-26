@@ -2,8 +2,7 @@ The created bucket can be loaded with files that are saved as an S3 object. Obje
 
 You can upload any type of file - images, backups, data, movies, etc. - to the S3 bucket. The maximum size of a regular file that can be uploaded to a bucket is 32 GB. For files that exceed this size, you must use the multipart upload and store method. For a comfortable download of a file larger than 1 GB, it is recommended to use the AWS S3 CLI or AWS S3 REST API.
 
-Loading from VK CS Panel
-----------------------
+## Loading from VK CS Panel
 
 To load objects, go to the created bucket in the "Buckets" section of the "Object Storage" service:
 
@@ -17,8 +16,7 @@ When loading a folder, S3 loads all files and subfolders from the specified fold
 
 If an object with a key name that already exists in the bucket is loaded, S3 replaces the existing object.
 
-Booting from S3 CLI
--------------------
+## Booting from S3 CLI
 
 S3 CLI provides several options for loading objects:
 
@@ -32,9 +30,9 @@ For the convenience of loading files from a local directory, you can apply synch
 
 If objects already exist in the bucket, then the files are subject to synchronization:
 
-*   The size of which is different from the size of the object S3
-*   Local file last modified time is newer than S3 object last modified time
-*   Local file does not exist in the specified bucket
+- The size of which is different from the size of the object S3
+- Local file last modified time is newer than S3 object last modified time
+- Local file does not exist in the specified bucket
 
 ```
  aws s3 sync <local_path> s3: // <package_name> --endpoint-url https://hb.bizmrg.com

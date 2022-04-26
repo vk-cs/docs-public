@@ -1,7 +1,6 @@
 Changing the size of the disk is possible only upward from the original size. The disk can be expanded without stopping the server and disconnecting, however, to ensure the safety of existing data, the safest way to perform the operation is to first disconnect the disk.
 
-VK CS control panel
------------------
+## VK CS control panel
 
 To increase the size [of your personal account](https://mcs.mail.ru/app/services/infra/servers/), you should:
 
@@ -41,8 +40,7 @@ realtime =none                   extsz=4096   blocks=0, rtextents=0
 data blocks changed from 6948864 to 20055040
 ```
 
-OpenStack CLI
--------------
+## OpenStack CLI
 
 To increase the size of the disk in the CLI, you must first disconnect the disk:
 
@@ -68,13 +66,12 @@ You can increase the size of the disk attached to the instance by using the cind
 cinder extend <disk id> <size>
 ```
 
-* * *
+---
 
-Try our services
-----------------
+## Try our services
 
 When you activate your account, we will contact you and add a certain amount of bonus rubles to your account so that you can test the service for 60 days.
 
- [Test](https://mcs.mail.ru/app/)
+[Test](https://mcs.mail.ru/app/)
 
 Or leave a [request for consultation](https://mcs.mail.ru/help/contact-us) with an individual calculation.

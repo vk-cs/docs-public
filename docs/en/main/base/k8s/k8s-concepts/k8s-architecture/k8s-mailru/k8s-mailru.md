@@ -1,34 +1,30 @@
-How Kubernetes as a Service works on the VK Cloud Solutions platform
--------------------------------------------------------------------------
+## How Kubernetes as a Service works on the VK Cloud Solutions platform
 
 Kubernetes aaS on VK CS includes:
 
 1.  Management interface for creating a cluster in a few clicks, scaling and setting.
 2.  Automatic scaling of cluster nodes up or down, that is, adding or removing nodes (Cluster Autoscaler).
 3.  Ability to build geo-distributed clusters and federations when the clusters are located in different data centers
-    
+
     ...
-    
+
 4.  Built-in monitoring based on Prometheus Operator and Grafana. Many of our users start with a basic installation where the application runs. When it goes live, it allows them to monitor the services and the cluster itself.
 5.  Your own Terraform provider for Kubernetes.
-    
 6.  Integration with Docker Registry for storing and managing images.
 7.  Automated deployment of federated Kubernetes clusters based on AWS and VK Cloud Solutions (which [we wrote about here](https://habr.com/ru/company/mailru/news/t/509684/) ). The solution has been tested by both providers.
 8.  Ability to make Start / Stop for the entire cluster - savings for test environments.
 9.  Support for the creation of Node Pools, virtual machine pools of different sizes: you can run heavy tasks on large machines, web applications on small ones. Groups can be scaled independently and placed in different regions or Availability Zones (for greater reliability and availability).
-10.  Persistent Volumes are integrated with the OpenStack storage system.
-11.  Clusters with VPN connection.
-12.  Cluster Policy: Local is supported, which allows you to get real IP users within clusters.
-13.  Build and scale Kubernetes clusters using the VK CS UI or API, manage entities through the Kubernetes dashboard and kubectl.
-14.  One-click rolling update with no downtime for both minor and major versions. Cluster updates are available starting from all current versions of the cluster (1.16 \*).
+10. Persistent Volumes are integrated with the OpenStack storage system.
+11. Clusters with VPN connection.
+12. Cluster Policy: Local is supported, which allows you to get real IP users within clusters.
+13. Build and scale Kubernetes clusters using the VK CS UI or API, manage entities through the Kubernetes dashboard and kubectl.
+14. One-click rolling update with no downtime for both minor and major versions. Cluster updates are available starting from all current versions of the cluster (1.16 \*).
 
-Distribution Certification by Cloud Native Computing Foundation
----------------------------------------------------------------
+## Distribution Certification by Cloud Native Computing Foundation
 
 VK Cloud Solutions is part of the CNCF (Cloud Native Computing Foundation). VK CS Kubernetes distribution has received the Certified Kubernetes - Hosted certification. It has been tested for reliability and standards compliance, meets all functional community requirements and is compatible with the standard Kubernetes API. VK CS is so far the only cloud provider in Russia that has received such a certification.
 
-Place Kubernetes in the cloud platform infrastructure
------------------------------------------------------
+## Place Kubernetes in the cloud platform infrastructure
 
 The bottommost layer is typical physical servers (compute nodes). Now there are several thousand of them, they are used for computing and storage. For storage, we provide Ceph-based file and block storage and S3-compatible object storage. Servers are distributed across data centers, between which a 40 Gbps network is laid.
 
@@ -38,26 +34,25 @@ We build a similar scheme in private installations of Kubernetes as a service in
 
 ![](./assets/arhitektura_servisa_kubernetes_ot_mail.ru_-_attachment_2)
 
-What tools do we use
---------------------
+## What tools do we use
 
 1.  **Operating system** . First we used CoreOS, which runs on hosts, now we have Fedora Atomic (1.14-1.15) and CentOS (1.16).
 2.  **CRI** . We have been using the latest Docker version for two years, but we are migrating now
-    
+
     adding an optional virtualization capability with increased isolation based on Firecracker and Kata Container.
-    
+
 3.  **Network** - Calico. Kubernetes networks depend on the cloud network, which is provided by the entire cloud SDN. Our SDN was originally based on OpenStack Neutron. But a year ago, we started developing the Sprut module - our own SDN solution that supports the Neutron API, but works on different principles. Sprut's approach solved our scalability problems arising from tens of thousands of network entities (ports) in our cloud, when the full synchronization process (fullsync) began when network nodes fell in a network of this size. Now we will use Sprut for those clients for whom, due to the nature of the network load, it is more expedient to use it than Calico, in the future we will open it to everyone.
 4.  Clustered **DNS** based on CoreDNS, with all its Service Discovery, Prometheus metrics and other standard features.
 5.  **Ingress Controller** . This is Nginx now, but we are also adding Envoy.
-    
+
     as an additional Ingress Controller. Our tests show that Envoy is often faster
-    
+
     ... The Ingress Controller is integrated with a cloud load balancer based on OpenStack Octavia and supports the Proxy Protocol.
+
 6.  **Monitoring** based on Prometheus Operator. Previously, we just used Prometheus, but now everyone wants automation and service monitors, so we have been offering Prometheus Operator + Grafana for several months now, within which you can add service monitors and monitor clusters.
 7.  **Addons (optional extensions).** In one click, you can install the Docker registry integrated with our S3 storage, the ingress controller, various monitoring systems (Heapster, Prometheus).
 
-Multi Master and Network Topology
----------------------------------
+## Multi Master and Network Topology
 
 Kubernetes from VK Cloud Solutions supports deployments in the Multi Master format, while each user group of nodes is already in a specific availability zone. Geo-distribution is guaranteed by the creation of virtual machines according to the principle of Soft Anti Affinity, when the machines, whenever possible, run on different hypervisors.
 
@@ -69,8 +64,7 @@ In Multi Master, etcd works in cluster mode, so if something happens to one of t
 
 For external access, the Kubernetes server API load balancer is used, which has an external IP address. At the same time, all the nodes - both masters and minions - are in a private network (in fact, in a virtual private cloud) and do not have public addresses.
 
-Accessing the Kubernetes Cluster from the Public Network: Starting Traffic and Load Balancing
----------------------------------------------------------------------------------------------
+## Accessing the Kubernetes Cluster from the Public Network: Starting Traffic and Load Balancing
 
 In general, ways to access services within a cluster [are listed here](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types) . Details of our implementation:
 
@@ -114,8 +108,7 @@ In this case, support for the proxy protocol must be enabled both on the balance
 
 ![](./assets/arhitektura_servisa_kubernetes_ot_mail.ru_-_attachment_10)
 
-Storage and Kubernetes
-----------------------
+## Storage and Kubernetes
 
 If you deploy Kubernetes locally or in the cloud just on virtual machines, then by default there is no normal work with persistent disks in it. You can use Host Path, Local volume (no-provisioner), or deploy exotic software-defined storage systems like Linstor or OpenEBS right in the Kubernetes cluster. But what happens to the data or the data queue that is located in the cluster if a node or pod dies?
 
@@ -143,8 +136,7 @@ You can use the storage class by writing PersistentVolumeClaim declarations. In 
 
 ![](./assets/arhitektura_servisa_kubernetes_ot_mail.ru_-_attachment_13)
 
-Automatic scaling
------------------
+## Automatic scaling
 
 VK CS has Cluster Autoscaler. This is not just auto-scaling of pods within a cluster, but auto-scaling of the cluster itself as needed: new nodes are added when the load has increased, and removed if the load has dropped. Scaling occurs automatically - up to 100 nodes and back in a few minutes.
 
@@ -152,44 +144,43 @@ Autoscaling allows for each group of nodes to set its own autoscaling rules, for
 
 The Cluster Autoscaler is best configured in conjunction with the Horizontal Pod Autoscaler. The difference between using the two Autoscaler options:
 
-*   Cluster Autoscaler allows you to expand the resources allocated to the cluster themselves. In essence, it can automatically rent additional resources or reduce their use through the Cloud Provider.
-*   The Horizontal Pod Autoscaler allows you to expand pod resources within existing allocated cluster resources in order to make optimal use of them.
+- Cluster Autoscaler allows you to expand the resources allocated to the cluster themselves. In essence, it can automatically rent additional resources or reduce their use through the Cloud Provider.
+- The Horizontal Pod Autoscaler allows you to expand pod resources within existing allocated cluster resources in order to make optimal use of them.
 
 ![](./assets/arhitektura_servisa_kubernetes_ot_mail.ru_-_attachment_14)
 
 _Autoscaling setting_
 
-Functionality
--------------
+## Functionality
 
 **Integration with standard Kubernetes tools**
 
-*   Storing and processing serverless functions in containers: OpenFaaS, OpenWhisk, Kubeless
-*   Service Mesh Tools: Istio, Consul, Linkerd
-*   Monitoring, analytics, logging: Prometheus, Fluentd, Jaeger, OpenTracing
-*   CI / CD: Gitlab, CircleCI, Travis CI
-*   IaC (application description): Terraform, Helm
+- Storing and processing serverless functions in containers: OpenFaaS, OpenWhisk, Kubeless
+- Service Mesh Tools: Istio, Consul, Linkerd
+- Monitoring, analytics, logging: Prometheus, Fluentd, Jaeger, OpenTracing
+- CI / CD: Gitlab, CircleCI, Travis CI
+- IaC (application description): Terraform, Helm
 
 **Safety**
 
-*   Kubernetes uses certificate authentication.
-*   Cluster security can be integrated with LDAP / Active Directory for user authentication. At the same time, the role-based security model in Kubernetes can be configured to check access rights based on the user's group membership in the LDAP directory.
-*   Calico Network Policy can be used for network security.
-*   Our Kubernetes aaS has an integrated SSL secured Docker Registry.
+- Kubernetes uses certificate authentication.
+- Cluster security can be integrated with LDAP / Active Directory for user authentication. At the same time, the role-based security model in Kubernetes can be configured to check access rights based on the user's group membership in the LDAP directory.
+- Calico Network Policy can be used for network security.
+- Our Kubernetes aaS has an integrated SSL secured Docker Registry.
 
 **Backup and migration**
 
-*   We support integration with Velero. Velero does a backup that allows you to back up etcd and Persistent Volumes manifests, here's a [guide on how to](https://mcs.mail.ru/help/velero-backup-k8?kb_language=ru_RU) [do that](https://mcs.mail.ru/help/velero-backup-k8?kb_language=ru_RU) .
-*   Also, using Velero, you can migrate clusters of on-premises and other providers to our Kubernetes.
+- We support integration with Velero. Velero does a backup that allows you to back up etcd and Persistent Volumes manifests, here's a [guide on how to](https://mcs.mail.ru/help/velero-backup-k8?kb_language=ru_RU) [do that](https://mcs.mail.ru/help/velero-backup-k8?kb_language=ru_RU) .
+- Also, using Velero, you can migrate clusters of on-premises and other providers to our Kubernetes.
 
 **Working with big data**
 
 Kubernetes can basely be used for any microservice data-driven application. Why Kubernetes on the VK CS platform is interesting for data scientists:
 
-*   Autoscaling allows for heavy computational workloads.
-*   You can create event-triggered data handlers.
-*   Kubernetes applications are easy to integrate with our other PaaS for Big Data, machine learning, within the same network.
-*   If you want to experiment, you can directly connect a GPU to an event queue or Kubernetes-based event handler to speed up learning.
+- Autoscaling allows for heavy computational workloads.
+- You can create event-triggered data handlers.
+- Kubernetes applications are easy to integrate with our other PaaS for Big Data, machine learning, within the same network.
+- If you want to experiment, you can directly connect a GPU to an event queue or Kubernetes-based event handler to speed up learning.
 
 You [can](https://mcs.mail.ru/app/services/containers/) try Kubernetes aaS for free [here](https://mcs.mail.ru/app/services/containers/) .
 

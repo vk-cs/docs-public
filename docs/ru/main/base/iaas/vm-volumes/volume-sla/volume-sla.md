@@ -16,8 +16,7 @@
 
 Созданный диск занимает место в общем хранилище, поэтому его наличие оплачивается отдельно, даже если он отключен от инстанса.
 
-Типы дисков
------------
+## Типы дисков
 
 <table style="width: 100%;"><tbody><tr><td style="width: 25%; background-color: rgb(239, 239, 239);"><p id="isPasted">Тип диска</p></td><td style="width: 25%; background-color: rgb(239, 239, 239);"><p id="isPasted">Название в API</p></td><td style="width: 25%; background-color: rgb(239, 239, 239);"><p id="isPasted">Выбор зоны доступности при создании диска</p></td><td style="background-color: rgb(239, 239, 239);">Описание<strong><br></strong></td></tr><tr><td style="width: 25.0000%;"><p id="isPasted">Сетевой HDD</p></td><td style="width: 25.0000%;"><span id="isPasted" style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">ceph-hdd</span><p dir="ltr" id="isPasted" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#999999;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">deprecated:</span></p><p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#999999;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">dp1, ms1</span></p><br></td><td style="width: 25.0000%;"><p id="isPasted">Да</p></td><td style="width: 25.0000%;"><p id="isPasted">Сетевой HDD диск с низкой скоростью работы. Обладает тройной репликацией между несколькими серверами СХД внутри зоны доступности.</p></td></tr><tr><td style="width: 25.0000%;"><p id="isPasted">Сетевой HDD с георепликацией</p></td><td style="width: 25.0000%;"><span id="isPasted" style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">ceph</span></td><td style="width: 25.0000%;"><p id="isPasted">Не указывается по причине георепликации</p></td><td style="width: 25.0000%;"><p id="isPasted">Сетевой HDD диск с низкой скоростью работы. Обладает тройной георепликацией между несколькими зонами доступности.</p></td></tr><tr><td style="width: 25.0000%;"><p id="isPasted">Сетевой SSD</p></td><td style="width: 25.0000%;"><span id="isPasted" style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">ceph-ssd</span><p dir="ltr" id="isPasted" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#999999;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">deprecated:</span></p><p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#999999;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">dp1-ssd, ko1-ssd</span></p><br></td><td style="width: 25.0000%;"><p id="isPasted">Да</p></td><td style="width: 25.0000%;"><p id="isPasted">Сетевой SSD диск. Обладает тройной репликацией между несколькими серверами СХД внутри зоны доступности.</p></td></tr><tr><td style="width: 25.0000%;"><p id="isPasted">Сетевой SSD с георепликацией</p></td><td style="width: 25.0000%;"><span id="isPasted" style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">ssd</span></td><td style="width: 25.0000%;"><p id="isPasted">Не указывается по причине георепликации</p></td><td style="width: 25.0000%;"><p id="isPasted">Сетевой SSD диск. Обладает тройной георепликацией между несколькими зонами доступности.</p></td></tr><tr><td style="width: 25.0000%;"><p id="isPasted">High IOPS SSD</p></td><td style="width: 25.0000%;"><span id="isPasted" style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">high-iops</span><p dir="ltr" id="isPasted" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#999999;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">deprecated:</span></p><p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#999999;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">local-ssd, ko1-local-ssd, ko1-high-iops, dp1-high-iops, ko1-local-ssd-g2</span></p><br></td><td style="width: 25.0000%;"><p id="isPasted">Да</p></td><td style="width: 25.0000%;"><p id="isPasted">Сетевой SSD диск с двойной репликацией (обе копии находятся на одном сервере СХД) и повышенной скоростью работы.</p></td></tr><tr><td style="width: 25.0000%;">Low Latency NVME</td><td style="width: 25.0000%;"><span id="isPasted" style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">ef-nvme</span></td><td style="width: 25.0000%;"><div style="text-align: left;">Располагается на одном гипервизоре с виртуальной машиной</div></td><td style="width: 25.0000%;">Локальный SSD диск с двойной репликацией (обе копии находятся на одном гипервизоре), высокой скоростью работы и низкими задержками.</td></tr></tbody></table>
 
@@ -25,8 +24,7 @@
 
 Диски с типами Сетевой HDD, Сетевой SSD и High IOPS SSD рекомендуется располагать в той же зоне доступности, где находится виртуальная машина, к которой они будут подключены. В противном случае производительность виртуальной машины снизится, потому что диск будет расположен в другом датацентре.
 
-SLA
----
+## SLA
 
 Для каждого типа дисков существует ограничение по производительности, необходимое для гарантирования стабильности работы диска вне зависимости от его типа или объема.
 
@@ -54,8 +52,7 @@ SLA
 
 Производительность диска напрямую зависит от его объема. При необходимости увеличить скорость обработки данных иногда достаточно увеличить размер требуемого диска.
 
-Как провести тестирование
--------------------------
+## Как провести тестирование
 
 **Для Windows**
 
@@ -68,19 +65,20 @@ DiskPSD — официальный инструмент тестирования
 1.  Загрузить утилиту с официального ресурса и распаковать ее в удобное место: [https://github.com/microsoft/diskspd/releases/latest](https://github.com/microsoft/diskspd/releases/latest)
 2.  Запустить командную строку от администратора и перейти в каталог с распакованной утилитой DiskSpd-2.0.21a\\amd64\\
 3.  Предварительно создать пустой файл с размером не менее 10GB:
+
     ```
     fsutil file createnew C:\temp\test.bin 10485760000
     ```
-    
+
 4.  Для выполнения тестов необходимо применить соответствующую типу теста команду:
 
-*   Тест случайной записи:
+- Тест случайной записи:
 
 ```
 diskspd -Suw -b4K -o1 -t32 -r -w100 C:\temp\test.bin > C:\temp\random_write_results.txt
 ```
 
-*   Тест случайного чтения:
+- Тест случайного чтения:
 
 ```
 diskspd -Suw -b4K -o1 -t32 -r -w0 C:\temp\test.bin > C:\temp\random_read_results.txt
@@ -90,9 +88,9 @@ diskspd -Suw -b4K -o1 -t32 -r -w0 C:\temp\test.bin > C:\temp\random_read_results
 
 Измерения показателей IOPS с помощью fio производятся с указанием параметра rate_iops. Тесты выполняются со значениями:
 
-*   \--rw (randread или randwrite) 
-*   \--filename (имя тестируемого устройства)
-*   \--iodepth (8, 16, 32 или 64)
+- \--rw (randread или randwrite)
+- \--filename (имя тестируемого устройства)
+- \--iodepth (8, 16, 32 или 64)
 
 Скачать и установить Fio с официального ресурса: [https://bsdio.com/fio/](https://bsdio.com/fio/)
 
@@ -110,9 +108,9 @@ fio --name=randwrite --iodepth=32 --rw=randwrite --bs=4k --direct=1 --size=10G -
 
 Измерения показателей IOPS чтения/записи осуществляются программным обеспечением fio и указанием параметра rate_iops. Тесты выполняются со значениями:
 
-*   \--rw (randread или randwrite) 
-*   \--filename (имя тестируемого устройства)
-*   \--iodepth (8, 16, 32 или 64)
+- \--rw (randread или randwrite)
+- \--filename (имя тестируемого устройства)
+- \--iodepth (8, 16, 32 или 64)
 
 Установка Fio:
 
@@ -128,7 +126,7 @@ fio --name=randwrite --ioengine=libaio --iodepth=32 --rw=randwrite --bs=4k --dir
 
 **Результаты измерений:**
 
-*   read: IOPS
-*   write: IOPS
+- read: IOPS
+- write: IOPS
 
 <table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(1%); width: 99%;" width="170"><tbody><tr><td height="19" style="background-color: rgb(239, 239, 239);" width="45.88235294117647%"><strong>Типы проводимого тестирования</strong></td><td style="background-color: rgb(239, 239, 239);" width="54.11764705882353%"><strong>Результат тестирования (Количество IOPS)</strong></td></tr><tr><td height="19">Чтение/запись блоками по 4 КБ в 32 потока</td><td>В соответствии со значениями SLA</td></tr><tr><td height="19">Чтение/запись блоками по 8 КБ в 32 потока</td><td>не менее 75% от SLA</td></tr><tr><td height="19">Чтение/запись &nbsp;по 16 КБ в 32 потока</td><td>не менее 50% от SLA</td></tr></tbody></table>

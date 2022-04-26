@@ -1,5 +1,4 @@
-Connecting to an instance
-=========================
+## Connecting to an instance
 
 To view the methods of connecting to an instance, you can click on the instance name in the list of virtual machines, or hover over the information icon ( **i** ).
 
@@ -11,14 +10,13 @@ The "Connection parameters" section contains code examples from popular language
 
 When using examples, replace macros <DATABASE>, <USERNAME>, <PASSWORD> with actual values:
 
-*   <DATABASE> is the name of the database specified during creation.
-*   <USERNAME> - username (specified during creation).
-*   <PASSWORD> - user password (specified during creation).
+- <DATABASE> is the name of the database specified during creation.
+- <USERNAME> - username (specified during creation).
+- <PASSWORD> - user password (specified during creation).
 
 Additional information can be found in the documentation for the connector used (a connector is an entity through which a connection to a database is made).
 
-Loading data
-============
+## Loading data
 
 Once you have selected a connector to connect to the database and established a connection, you can start downloading data.
 

@@ -1,10 +1,8 @@
-Описание
---------
+## Описание
 
 Статья приводит примеры подключения (с помощью разных приложений) к установленной вами облачной базе данных.
 
-PHP
----
+## PHP
 
 ```
 $conn = pg_connect("host=10.0.0.4 dbname=<DATABASE> user"="<USERNAME&"gt; password="<PASSWORD&"gt;");
@@ -12,13 +10,11 @@ $conn = pg_connect("host=10.0.0.4 dbname=<DATABASE> user"="<USERNAME&"gt; passwo
 
 Вместо 10.0.0.4 - вставьте IP-адрес вашей базы данных.
 
-Установка PHP
--------------
+## Установка PHP
 
 [Подробная инструкция по установке и настройке PHP - на официальном сайте по этой ссылке](https://www.php.net/manual/ru/install.php).
 
-Подключение
------------
+## Подключение
 
 ```
 $conn =" pg_connect("host=10.0.0.4 "dbname="<DATABASE&"gt; user="<USERNAME&"gt; password="<PASSWORD&"gt;");
@@ -32,8 +28,7 @@ pg_connect() открывает соединение с базой данных 
 
 [Подробное описание функций PostgreSQL, доступных через PHP, на официальном сайте - по этой ссылке](https://www.php.net/manual/ru/book.pgsql.php).
 
-Python
-------
+## Python
 
 ```
 import psycopg2 conn = psycopg2.connect("host=10.0.0.4 dbname=<DATABASE> user"="<USERNAME&"gt; password="<PASSWORD&"gt;")
@@ -41,8 +36,7 @@ import psycopg2 conn = psycopg2.connect("host=10.0.0.4 dbname=<DATABASE> user"="
 
 Вместо 10.0.0.4 - вставьте IP-адрес вашей базы данных.
 
-Установка Python
-----------------
+## Установка Python
 
 [Скачать дистрибутив можно на официальном сайте по этой ссылке](https://www.python.org/downloads/). На Windows достаточно запустить дистрибутив и нажимать "Далее".
 
@@ -52,8 +46,7 @@ import psycopg2 conn = psycopg2.connect("host=10.0.0.4 dbname=<DATABASE> user"="
 sudo apt-get install python3
 ```
 
-Подключение
------------
+## Подключение
 
 Чтобы подключиться к вашей базе данных, вы должны сначала создать объект подключения, представляющий базу данных. Затем вы должны создать объект курсора, чтобы помочь вам в выполнении ваших операторов SQL.
 
@@ -69,8 +62,7 @@ conn =" psycopg2.connect("host=10.0.0.4 "dbname="<DATABASE&"gt; user="<USERNAME&
 Database opened successfully
 ```
 
-Пример создания таблицы
------------------------
+## Пример создания таблицы
 
 Чтобы создать таблицу Postgres в Python, мы используем оператор SQL CREATE TABLE. Этот запрос должен быть выполнен после установления соединения с базой данных. Мы также создаем объект курсора, вызывая метод cursor(), который принадлежит объекту connection. Этот объект cursor используется для фактического выполнения ваших команд.
 
@@ -92,8 +84,7 @@ Database opened successfully Table created successfully
 
 На данный момент мы создали таблицу с 4 столбцами, каждый из которых имеет различные типы данных. Приведенный выше вывод показывает, что таблица была успешно создана.
 
-Ruby
-----
+## Ruby
 
 ```
 require "postgres" conn = PGconn.connect(:host => '10.0.0.4', :dbname => '<DATABASE>', :user"="'&"lt;USERNAME>', :password ="> '&"lt;PASSWORD>')
@@ -101,8 +92,7 @@ require "postgres" conn = PGconn.connect(:host => '10.0.0.4', :dbname => '<DATAB
 
 Вместо 10.0.0.4 - вставьте IP-адрес вашей базы данных.
 
-Установка Ruby
---------------
+## Установка Ruby
 
 [Скачать дистрибутив Ruby вы можете на официальном сайте по этой ссылке](https://www.ruby-lang.org/ru/documentation/installation/). На Windows достаточно запустить дистрибутив и нажимать "Далее".
 
@@ -112,8 +102,7 @@ require "postgres" conn = PGconn.connect(:host => '10.0.0.4', :dbname => '<DATAB
 sudo apt-get install ruby-full
 ```
 
-Подключение
------------
+## Подключение
 
 В примере мы подключаемся к базе данных с помощью пароля. Запустите консоль Ruby, введите хост, имя пользователя, имя базы данных и пароль к базе данных.
 
@@ -121,8 +110,7 @@ sudo apt-get install ruby-full
 require "postgres" conn =" PGconn.connect(:host => '10.0.0.4', :dbname => '<DATABASE>', :user='<USERNAME>', :password => '<PASSWORD>')
 ```
 
-Создание таблицы базы данных
-----------------------------
+## Создание таблицы базы данных
 
 В этом разделе мы создаем таблицу базы данных и заполняем ее данными.
 
@@ -134,8 +122,7 @@ require "postgres" conn =" PGconn.connect(:host => '10.0.0.4', :dbname => '<DATA
 
 Созданная таблица называется Cars и имеет три столбца: идентификатор, название автомобиля и его цену.
 
-JDBC
-----
+## JDBC
 
 ```
 Connection conn = DriverManager.getConnection(&"quot;jdbc:postgresql://10.0.0.4/<DATABASE>", "<USERNAME>", "<PASSWORD>");
@@ -143,13 +130,11 @@ Connection conn = DriverManager.getConnection(&"quot;jdbc:postgresql://10.0.0.4/
 
 Вместо 10.0.0.4 - вставьте IP-адрес вашей базы данных.
 
-Установка
----------
+## Установка
 
 Загрузите [PostgreSQL JDBC драйвер](http://jdbc.postgresql.org/download.html).
 
-Подключение
------------
+## Подключение
 
 Фрагменты кода для использования JDBC для подключения к базе данных PostgreSQL:
 
@@ -163,8 +148,7 @@ Class.forName("org.postgresql.Driver"); Connection connection =" null; "connecti
 import java.sql.DriverManager; import java.sql.Connection; import java.sql.SQLException; public class JDBCExample { public static void main(String[]argv) { System.out.println("-------- PostgreSQL " + "JDBC Connection Testing ------------"); try { Class.forName("org.postgresql.Driver"); } catch (ClassNotFoundException e) { System.out.println("Where is your PostgreSQL JDBC Driver? " + "Include in your library path!"); e.printStackTrace(); return; } System.out.println("PostgreSQL JDBC Driver Registered!"); Connection connection =" null; "try { connection =" DriverManager.getConnection( "jdbc:postgresql://10.0.0.4:5432/DATABASE", "USERNAME", "PASSWORD"); } "catch (SQLException e) { System.out.println("Connection Failed! Check output console"); e.printStackTrace(); return; } if (connection !=" null) { "System.out.println("You made it, take control your database now!"); } else { System.out.println("Failed to make connection!"); } } }
 ```
 
-Node.js
--------
+## Node.js
 
 ```
 var" pg =" require('pg'); "var conn =" new "pg.Client("postgres://<USERNAME>:<PASSWORD>@10.0.0.4/<DATABASE>");
@@ -172,8 +156,7 @@ var" pg =" require('pg'); "var conn =" new "pg.Client("postgres://<USERNAME>:<PA
 
 Вместо 10.0.0.4 - вставьте IP-адрес вашей базы данных.
 
-Установка
----------
+## Установка
 
 Надо установить зависимость от npm:
 
@@ -181,8 +164,7 @@ var" pg =" require('pg'); "var conn =" new "pg.Client("postgres://<USERNAME>:<PA
 npm install pg --save
 ```
 
-Подключение
------------
+## Подключение
 
 Теперь вам нужно создать соединение PostgreSQL, которое вы можете позже запросить.
 
@@ -190,8 +172,7 @@ npm install pg --save
 var pg =" require('pg'); "var conn =" new "pg.Client("postgres://<USERNAME>:<PASSWORD>@10.0.0.4/<DATABASE>");
 ```
 
-ODBC
-----
+## ODBC
 
 ```
 Driver"="{PostgreSQL UNICODE}; Server="10.0.0.4"; Port=5432; Database="<DATABASE>"; Uid="<USERNAME>"; Pwd="<PASSWORD>";
@@ -199,21 +180,19 @@ Driver"="{PostgreSQL UNICODE}; Server="10.0.0.4"; Port=5432; Database="<DATABASE
 
 Вместо 10.0.0.4 - вставьте IP-адрес вашей базы данных.
 
-Установка
----------
+## Установка
 
 [Скачать драйвер ODBC можно с официального сайта по этой ссылке](https://www.postgresql.org/ftp/odbc/versions/).
 
-Подключение
------------
+## Подключение
 
 Если вы используете веб-интерфейс для добавления источника данных ODBC, то заполните поля:
 
-*   Сервер (хост) / IP-адрес
-*   Порт
-*   Имя базы данных / название базы данных
-*   Имя пользователя / логин
-*   Пароль
+- Сервер (хост) / IP-адрес
+- Порт
+- Имя базы данных / название базы данных
+- Имя пользователя / логин
+- Пароль
 
 данными, взятыми из вашего личного кабинета (на вкладке ODBC) вашей базы данных.
 

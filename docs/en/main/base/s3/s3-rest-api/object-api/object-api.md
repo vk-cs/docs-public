@@ -1,16 +1,15 @@
 Operations with Objects:
 
-*   Get - Download an object from a bucket
-*   Upload - Upload an object to a bucket
-*   Copy - Copy an object in the bucket
-*   HeadObject - Get information about an object
-*   Delete - Delete object
-*   DeleteMultipleObjects - Delete a group of objects from the list
+- Get - Download an object from a bucket
+- Upload - Upload an object to a bucket
+- Copy - Copy an object in the bucket
+- HeadObject - Get information about an object
+- Delete - Delete object
+- DeleteMultipleObjects - Delete a group of objects from the list
 
 All operations with buckets are characterized by typical error messages, request headers and response headers. If the operation has special error messages, request or response headers, this will be indicated in the description of the operation.
 
-Get
----
+## Get
 
 GET operations retrieves an object from a bucket. To use GET, you must have READ access to the object. By granting READ access to an anonymous user, you can return an object without using an authorization header.
 
@@ -46,8 +45,7 @@ Connection: close
 Example text.
 ```
 
-Upload
-------
+## Upload
 
 The PUT operation adds an object to the bucket. To perform the operation, you must have WRITE rights to the bucket.
 
@@ -89,8 +87,7 @@ Etag: "fb08934ef619f205f272b0adfd6c018c"
 Connection: close
 ```
 
-Copy
-----
+## Copy
 
 PUT operations can create a copy of an object that is already stored in the bucket. The copy PUT operation is identical to the sequential execution of GET and PUT. Adding the x-amz-copy-source request header causes the PUT operation to copy the source object to the target bucket.
 
@@ -129,8 +126,7 @@ Connection: close
 </CopyObjectResult>
 ```
 
-HeadObject
-----------
+## HeadObject
 
 The HEAD operation retrieves metadata from an object without returning the object itself. This operation is used only if only the object metadata is needed. In order to use the HEAD operation, you must have read rights to the object (READ).
 
@@ -138,8 +134,8 @@ The parameters for requesting a HEAD operation are the same as for a GET operati
 
 If the requested object does not exist, then the error returned depends on whether the account has additional s3: ListBucket permission.
 
-*   If there is s3: ListBucket permission on the bucket, then an error is returned - HTTP status code 404 ("key missing").
-*   If s3: ListBucket permission is not present, then an error is returned — HTTP status code 403 (“access error”).
+- If there is s3: ListBucket permission on the bucket, then an error is returned - HTTP status code 404 ("key missing").
+- If s3: ListBucket permission is not present, then an error is returned — HTTP status code 403 (“access error”).
 
 Inquiry:
 
@@ -167,8 +163,7 @@ Etag: "b3a92f49e7ae64acbf6b3e76f2040f5e"
 Connection: close
 ```
 
-Delete
-------
+## Delete
 
 DELETE operations delete the object specified in the request.
 
@@ -193,8 +188,7 @@ x-amz-request-id: tx0000000000000027bbc48-005963d908-1268c-ru-mska
 Connection: close
 ```
 
-DeleteMultipleObjects
----------------------
+## DeleteMultipleObjects
 
 Removes objects according to the list of keys passed in the request. The list for deletion can contain no more than 1000 keys. If the object does not exist, then the response will mark it as deleted.
 
