@@ -1,6 +1,5 @@
 include:
   - project: infra/common/ci-templates
-    ref: master
     file: pipelines/frontend.yml
 
 variables:
@@ -23,7 +22,7 @@ Healthcheck links for branch:
     - cd /home/node/app
     - npm run fullHealthyLinks
   variables:
-    base404CheckUrl: "https://$CI_COMMIT_REF_SLUG.ingress.infra.devmail.ru"
+    base404CheckUrl: "https://$CI_COMMIT_REF_SLUG.front.vkcsdev.corpcloud.devmail.ru"
     NODE_TLS_REJECT_UNAUTHORIZED: 0
     GIT_STRATEGY: none
   rules:
