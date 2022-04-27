@@ -1,17 +1,17 @@
-Вертикальное масштабирование — это увеличение производительности каждого компонента системы с целью повышения общей производительности. Масштабируемость в этом контексте означает возможность заменять в существующей вычислительной системе компоненты более мощными и быстрыми по мере роста требований и развития технологий.
+Vertical scaling is an increase in the performance of each component of the system in order to improve overall performance. Scalability in this context means the ability to replace components in an existing computing system with more powerful and faster components as requirements grow and technology advances.
 
-Мы рассмотрим вертикальное масштабирование на примере кластера PostgreSQL.
+We will look at vertical scaling using the PostgreSQL cluster as an example.
 
-Как создавать базу данных (один инстанс, master-slave или кластер) [описано в этой статье](https://mcs.mail.ru/help/ru_RU/dbaas-start/db-create).
+<warn>
 
-Для вертикального масштабирования кластера следует сначала перейти в [раздел с созданными инстансами](https://mcs.mail.ru/app/services/databases/list/). Затем в контекстном меню нужного кластера выбрать пункт "Вертикальное масштабирование".
+Scaling will be performed for each member of the cluster.
 
-![](./assets/1598460521841-1598460521841.png)
+</warn>
 
-Затем во всплывающем окне следует выбрать новую конфигурацию кластера - с увеличением количества процессоров и увеличением объёма оперативной памяти, и подтвердить выбор соответствующей кнопкой.
+How to create a database (single instance, master-slave or cluster) [described in this article](https://mcs.mail.ru/help/ru_RU/dbaas-start/db-create).
 
-![](./assets/1598460636090-1598460636090.png)
+To scale up a cluster, first go to the [section with created instances](https://mcs.mail.ru/app/services/databases/list/). Then, in the context menu of the desired cluster, select the "Vertical scaling" item.
 
-Процесс масштабирования займёт некоторое время (обычно 3-5 минут).
+Then, in the pop-up window, select a new cluster configuration - with an increase in the number of processors and an increase in the amount of RAM, and confirm the selection with the appropriate button.
 
-![](./assets/1598460749145-1598460749145.png)
+The scaling process will take about 5 minutes.

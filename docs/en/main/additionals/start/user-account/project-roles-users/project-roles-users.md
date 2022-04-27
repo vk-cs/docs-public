@@ -42,7 +42,7 @@ In the project settings menu, you can fill in the data of an individual or legal
 
 ## Change of owner
 
-If it becomes necessary to change the project owner (for example: complete loss of access to the owner's account), you should [contact technical support](mailto:support@mcs.mail.ru) to change the roles of project participants. In this case, the project must have a second account, the owner of which submits an application.
+If it becomes necessary to change the project owner (for example: complete loss of access to the owner's account), you should [contact technical support](https://mcs.mail.ru/docs/contacts) to change the roles of project participants. In this case, the project must have a second account, the owner of which submits an application.
 
 Change of ownership is made after verification of project data and participant accounts by technical support staff.
 

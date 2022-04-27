@@ -1,25 +1,25 @@
-## Что такое HOLISTIC.DEV?
+## What is HOLISTIC.DEV?
 
-Holistic.dev - расширение для анализа баз данных и инструмент для извлечения данных. Представление о структуре данных осуществлено на основе схемы базы данных и запросов DML. Эти знания позволяют нам автоматически контролировать согласованность отношений и предоставляют инструменты для автоматического поиска проблем.
+[HOLISTIC.DEV](https://holistic.dev/) is a database analysis extension and data extraction tool. The representation of the data structure is based on the database schema and DML queries. This knowledge allows us to automatically monitor the consistency of relationships and provides tools to automatically find problems.
 
-Расширение помогает сделать базу данных быстрее, организованней и более безопасной.
+The extension helps make the database faster, more organized and more secure.
 
-## ЧЕМ НЕ ЯВЛЯЕТСЯ HOLISTIC.DEV?
+## What is HOLISTIC.DEV not?
 
-HOLISTIC.DEV  не является анализатором операционных показателей. Он не анализирует конфигурацию базы данных (например, настройки планировщика, размер буферов и т. д.). HOLISTIC.DEV не управляет репликацией или пулами соединений. Для этих целей существует множество инструментов, и большинство из них действительно хороши.
+HOLISTIC.DEV is not an operational performance analyzer. It does not parse the database configuration (eg scheduler settings, buffer sizes, etc.). HOLISTIC.DEV does not manage replication or connection pooling. There are many tools for these purposes, and most of them are really good.
 
-Машина может взять на себя всю сложность структуры базы данных и запросов и выполнить целостный анализ результатов выполнения SQL-операторов, фактически не выполняя их, и может обрабатывать множество баз данных одновременно.
+The machine can take on the complexity of the database structure and queries and perform a holistic analysis of the results of executing SQL statements without actually executing them, and can process many databases at the same time.
 
-На основе всех этих знаний наши решения могут подсказывать разработчикам и администраторам баз данных, что им следует изменить, чтобы делать запросы быстрее, устранять избыточную сложность запросов и сохранять согласованность всего проекта, если изменения были внесены в какую-то его часть.
+Based on all this knowledge, our solutions can tell developers and DBAs what they need to change to make queries faster, remove excessive query complexity, and keep the entire project consistent if changes have been made to any part of it.
 
-## КАКИЕ БАЗЫ ДАННЫХ ПОДДЕРЖИВАЮТСЯ?
+## What databases are supported?
 
-В настоящее время мы поддерживаем PostgreSQL с большинством современных изменений синтаксиса (v13).Вы можете анализировать все базы данных, связанные с синтаксисом PostgreSQL.
+We currently support PostgreSQL with most modern syntax changes (v13). You can parse all databases related to PostgreSQL syntax.
 
-## МОГУ ЛИ Я УЛУЧШИТЬ ЗАПРОСЫ БЕЗ СХЕМЫ БАЗЫ ДАННЫХ?
+## Can I improve queries without a database schema?
 
-К сожалению, нет. Наш целостный подход, основанный на знании структуры базы данных. Мы связываем знания о схеме базы данных и о запросе, чтобы определить все глубокие связи и предложить наиболее эффективные способы оптимизации вашего SQL-кода. Иногда лучше вносить изменения в схему, а не в запрос.
+Unfortunately no. Our holistic approach based on knowledge of the database structure. We link the database schema and query knowledge to determine all the deep links and suggest the most effective ways to optimize your SQL code. Sometimes it's better to make changes to the schema rather than the query.
 
-## ПРЕИМУЩЕСТВА ДЛЯ АДМИНИСТРАТОРОВ БАЗ ДАННЫХ
+## What are the benefits for DBAs?
 
-Анализатор статических SQL-запросов может значительно сократить время, затрачиваемое на поиск проблем с производительностью и поиск проблемных архитектурных паттернов.
+The Static SQL Analyzer can significantly reduce the time spent searching for performance issues and finding problematic architectural patterns.

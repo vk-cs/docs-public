@@ -15,7 +15,7 @@
 <tabs>
 <tablist>
 <tab>Single instance</tab>
-<tab>Mater + replicas</tab>
+<tab>Master + replicas</tab>
 <tab>Cluster</tab>
 </tablist>
 <tabpanel>

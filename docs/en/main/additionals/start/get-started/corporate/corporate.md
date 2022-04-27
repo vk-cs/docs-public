@@ -1,6 +1,6 @@
 The VK CS platform allows you to work with legal entities that are residents of the Russian Federation on the basis of a [Public Offer](https://mcs.mail.ru/help/ru_RU/legal/legal-terms) . This is an offer addressed to an indefinite circle of persons and containing all the additionals conditions of the contract, from which the will of the offeror is seen to conclude an agreement on the conditions specified in the offer with anyone who responds. A person who has performed the necessary actions in order to accept a public offer (for example, who has sent an application for the relevant services) has the right to demand that the offeror fulfill its contractual obligations. ...
 
-If it is necessary to conclude an individual Contract, you should contact [VK CS support](mailto:support@mcs.mail.ru) .
+If it is necessary to conclude an individual Contract, you should contact [VK CS support](https://mcs.mail.ru/docs/contacts) .
 
 ## Organization details
 

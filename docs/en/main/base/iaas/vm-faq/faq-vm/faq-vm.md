@@ -15,7 +15,7 @@ You can set a password for an instance 15 minutes after it was created. At this 
 
 ## No access to high-performance CPUs
 
-To get access to the high-performance Intel (R) Xeon (R) Gold 5217 CPU @ 3.00GHz processors, please [contact technical support](mailto:support@mcs.mail.ru) .
+To get access to the high-performance Intel (R) Xeon (R) Gold 5217 CPU @ 3.00GHz processors, please [contact technical support](https://mcs.mail.ru/docs/contacts) .
 
 After gaining access, you can create a virtual machine with a high-performance processor in your personal account by checking the "High-performance CPUs" option in the instance creation wizard.
 
@@ -37,11 +37,11 @@ It is also not recommended to create instances with a low amount of CPU and RAM 
 
 ## Instance is not created
 
-If an error occurs during the creation of an instance, you should pay attention to the pop-up window in the upper right corner of the VK CS panel, which displays an error message. If the message does not appear, while the creation wizard reports an error, we recommend that you [contact technical support](mailto:support@mcs.mail.ru) .
+If an error occurs during the creation of an instance, you should pay attention to the pop-up window in the upper right corner of the VK CS panel, which displays an error message. If the message does not appear, while the creation wizard reports an error, we recommend that you [contact technical support](https://mcs.mail.ru/docs/contacts) .
 
 ## Not enough quotas when creating a VM
 
-The VM creation mechanism requires a sufficient number of quotas in the project to successfully complete the create operation. In the event that quotas are not enough, you should [contact technical support](mailto:support@mcs.mail.ru) , informing the details of the project, account, as well as the amount of resources required to add to the project.
+The VM creation mechanism requires a sufficient number of quotas in the project to successfully complete the create operation. In the event that quotas are not enough, you should [contact technical support](https://mcs.mail.ru/docs/contacts) , informing the details of the project, account, as well as the amount of resources required to add to the project.
 
 ## Can't create VM with Windows 8/10
 
