@@ -81,7 +81,7 @@ The standard set of quotas is defined as follows:
 
 If you would like to increase the limit or quota above the default limit, please submit a support request.
 
-We will use virtual processor quotas as an example. To request an increase in the virtual CPU quota, you need to decide how many additional virtual CPUs you want to use. Also determine which quotas are required additionally, then create a request [to technical support](mailto:support@mcs.mail.ru) indicating:
+We will use virtual processor quotas as an example. To request an increase in the virtual CPU quota, you need to decide how many additional virtual CPUs you want to use. Also determine which quotas are required additionally, then create a request [to technical support](https://mcs.mail.ru/docs/contacts) indicating:
 
 - account name
 - project number (mcs_pid)

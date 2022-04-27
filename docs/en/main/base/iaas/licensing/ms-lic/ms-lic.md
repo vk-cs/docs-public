@@ -61,7 +61,7 @@ To install a license, an instance must have the Remote Desktop Session host role
 
 Remote Desktop Services licenses can only be granted for a licensed copy of the MS Windows operating system of an instance purchased from VK CS.
 
-To activate a license, you should [contact technical support](mailto:support@mcs.mail.ru) and provide the details of the project, instance, the required number of licenses, as well as the parameters for connecting to the instance's remote desktop to activate licenses.
+To activate a license, you should [contact technical support](https://mcs.mail.ru/docs/contacts) and provide the details of the project, instance, the required number of licenses, as well as the parameters for connecting to the instance's remote desktop to activate licenses.
 
 ## SQL Server
 

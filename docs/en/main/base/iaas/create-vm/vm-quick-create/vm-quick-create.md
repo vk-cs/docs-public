@@ -14,7 +14,7 @@ There are several groups of configurations (flavors) of virtual machines that ar
 
 <table style="width: 100%; margin-right: calc(0%);"><tbody><tr><td style="width: 16.6329%; background-color: rgb(239, 239, 239);">Name</td><td style="width: 34%; background-color: rgb(239, 239, 239);">Configuration options</td><td style="width: 49.2658%; background-color: rgb(239, 239, 239);">Description</td></tr><tr><td style="width: 16.6329%;">Basic</td><td style="width: 34%;">Up to 2 vCPU<br>Up to 4 GB RAM</td><td style="width: 49.2658%;">base group containing low-performance VM configurations</td></tr><tr><td style="width: 16.6329%;">Standard</td><td style="width: 34%;">2 to 4 vCPU<br>4 GB to 16 GB RAM</td><td style="width: 49.2658%;">group with more CPU and RAM</td></tr><tr><td style="width: 16.6329%;">Advanced</td><td style="width: 34%;">8 to 16 vCPU<br>16 GB to 64 GB RAM</td><td style="width: 49.2658%;">group for creating high-performance instances</td></tr><tr><td style="width: 16.6329%;">Heavy</td><td style="width: 34%;">From 16 vCPU<br>From 64 GB RAM</td><td style="width: 49.2658%;">a special group characterizing individual performance configurations</td></tr><tr><td style="width: 16.6329%;">Custom</td><td style="width: 34%;">Not limited</td><td style="width: 49.2658%;">group of individual configurations created on demand</td></tr></tbody></table>
 
-By default, Basic, Standard and Advanced configurations are available in the project. To create Heavy or Custom configurations, [contact our technical support](mailto:support@mcs.mail.ru) . The cost of Heavy and Custom configurations is calculated individually for each request.
+By default, Basic, Standard and Advanced configurations are available in the project. To create Heavy or Custom configurations, [contact our technical support](https://mcs.mail.ru/docs/contacts) . The cost of Heavy and Custom configurations is calculated individually for each request.
 
 ## VM performance
 
@@ -24,7 +24,7 @@ VK CS server equipment located in data centers hosting virtual machines has the 
 
 By default, configurations are available in the project that allow you to create virtual machines on servers with processors of the "Standard" category: Intel (R) Xeon (R) Gold 6230 CPU @ 2.10GHz and Intel (R) Xeon (R) Gold 6238R CPU @ 2.20GHz ...
 
-To gain access to the high-performance Intel (R) Xeon (R) Gold 6230 CPU @ 3.40GHz and Intel (R) Xeon (R) Gold 6238R CPU @ 3.70GHz processors, please [contact technical support](mailto:support@mcs.mail.ru) . The cost of configuring a virtual machine with a high-performance processor is calculated individually for each request.
+To gain access to the high-performance Intel (R) Xeon (R) Gold 6230 CPU @ 3.40GHz and Intel (R) Xeon (R) Gold 6238R CPU @ 3.70GHz processors, please [contact technical support](https://mcs.mail.ru/docs/contacts) . The cost of configuring a virtual machine with a high-performance processor is calculated individually for each request.
 
 After gaining access, you can create a virtual machine with a high-performance processor in your personal account by checking the "Show only high-performance CPUs" option in the instance creation wizard:
 
