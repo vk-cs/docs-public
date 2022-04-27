@@ -12,7 +12,7 @@ To create a disc [in your VK CS account, you](https://mcs.mail.ru/app/services/i
 
 **Note**
 
-You can create low-latency disks if you have access to high-performance virtual machine templates. You can get access to high-freq configurations [using technical support](mailto:support@mcs.mail.ru) .
+You can create low-latency disks if you have access to high-performance virtual machine templates. You can get access to high-freq configurations [using technical support](https://mcs.mail.ru/docs/contacts) .
 
 To create it, you need to select a high-freq template, after which the low-latency disk appears in the VM creation wizard:
 
