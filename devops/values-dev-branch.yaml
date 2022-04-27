@@ -1,0 +1,17 @@
+env:
+  TARGET_ENV: "branch"
+
+components:
+  - name: mcs-help
+    replicas: 1
+    ports:
+      - port: 3000
+    ingress:
+      rules:
+        - hostname: branch-name.front.vkcsdev.corpcloud.devmail.ru
+          paths:
+          - path: /
+      tls:
+        - secretName: vkcsdev-corpcloud-wildcard-tls
+          hosts:
+          - "*.front.vkcsdev.corpcloud.devmail.ru"
