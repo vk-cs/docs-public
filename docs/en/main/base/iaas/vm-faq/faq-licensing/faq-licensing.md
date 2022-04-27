@@ -11,7 +11,7 @@ The list of provided standard licenses is limited, you can get licenses for:
 - Microsoft SQL Server Enterprise
 - Microsoft Remote Desktop Services
 
-However, if you need to obtain a license for a software product that is not in this list, you can [contact technical support](mailto:support@mcs.mail.ru) with information about the product and the term of use.
+However, if you need to obtain a license for a software product that is not in this list, you can [contact technical support](https://mcs.mail.ru/docs/contacts) with information about the product and the term of use.
 
 ## What is a core license
 

@@ -12,7 +12,7 @@
 
 ![](./assets/1595594675662-1595594675662.png)
 
-В **верхней части** можно увидеть:
+В верхней части можно увидеть:
 
 - Информацию о проекте;
 - Привязку карты для автоматического пополнения баланса;
@@ -43,7 +43,7 @@
 
 ```
 apt update
-apt install python3-openstackclient
+apt install python3-openstackclient 
 ```
 
 ##### С помощью dnf (RHEL 8, CentOS 8,  Fedora):
@@ -105,7 +105,11 @@ pip3 install -UI python-openstackclient
 
 Загрузите в панели [API ключи](https://mcs.mail.ru/app/project/keys/) личного кабинета openrc файл для конфигурации CLI.
 
-> **Важно:**<br>Для каждого региона используется свой файл openrc. Подробнее о регионах вы можете узнать в статье [Регионы](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions).
+<warn>
+
+Для каждого региона используется свой файл openrc. Подробнее о регионах вы можете узнать в статье [Регионы](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions).
+
+</warn>
 
 Затем, выполните действия, соответствующие процедуре для операционной системы на вашем компьютере:
 
@@ -119,11 +123,11 @@ source file.sh
 
 #### Windows
 
-Откройте загруженный из личного кабинета файл openrc, найдите в нем переменные, начинающиеся на OS\_, и импортируйте в командную строку с помощью команды `SET` по примеру, в каждую переменную подставив значение из сохраненного openrc файла без кавычек:
+Откройте загруженный из личного кабинета файл openrc, найдите в нем переменные, начинающиеся на OS_, и импортируйте в командную строку с помощью команды `SET` по примеру, в каждую переменную подставив значение из сохраненного openrc файла без кавычек:
 
 ```
 set OS_INTERFACE=public
-set OS_AUTH_URL=[https://infra.mail.ru:35357/v3/](https://infra.mail.ru:35357/v3/)
+set OS_AUTH_URL=https://infra.mail.ru:35357/v3/
 set OS_USERNAME=email
 set OS_PROJECT_ID=projectID
 set OS_REGION_NAME=regionName
@@ -136,7 +140,7 @@ set OS_IDENTITY_API_VERSION=3
 
 ```
 $env:OS_INTERFACE = "public"
-$env:OS_AUTH_URL = "[https://infra.mail.ru:35357/v3/](https://infra.mail.ru:35357/v3/)"
+$env:OS_AUTH_URL = "https://infra.mail.ru:35357/v3/"
 $env:OS_USERNAME = "email"
 $env:OS_PROJECT_ID = "projectID"
 $env:OS_REGION_NAME = "regionName"
@@ -145,13 +149,17 @@ $env:OS_PASSWORD = "your_password"
 $env:OS_IDENTITY_API_VERSION = "3"
 ```
 
-> **Важно:**<br>Для переменной `OS_PASSWORD` нужно ввести действительный пароль учетной записи, его нет в файле openrc.
+<warn>
+
+Для переменной `OS_PASSWORD` нужно ввести действительный пароль учетной записи, его нет в файле openrc.
+
+</warn>
 
 #### Проверка работы CLI
 
 Проверьте работу CLI с помощью команды, например:
 
-```
+```bash
 openstack flavor list
 ```
 
@@ -159,7 +167,7 @@ openstack flavor list
 
 Или:
 
-```
+```bash
 aws --version
 ```
 
@@ -173,7 +181,7 @@ aws --version
 
 Установка осуществляется с помощью команды:
 
-```
+```bash
 pip install awscli
 ```
 
@@ -181,7 +189,7 @@ pip install awscli
 
 Установить можно с помощью [64-битной](https://s3.amazonaws.com/aws-cli/AWSCLI64.msi) и [32-битной](https://s3.amazonaws.com/aws-cli/AWSCLI32.msi) программы-установщика, а также при помощи команды:
 
-```
+```bash
 pip install awscli
 ```
 
@@ -193,7 +201,11 @@ pip install awscli
 
 Для управления ресурсами платформы VK CS можно использовать API для запуска инстансов, создания образов, назначения метаданных инстансам и образам, создания контейнеров и объектов хранения и выполнения других действий в проектах.
 
-> **Важно:**<br>Список эндпоинтов меняется в зависимости от выбранного региона. Подробнее о регионах вы можете узнать в статье [Регионы](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions).
+<warn>
+
+Список эндпоинтов меняется в зависимости от выбранного региона. Подробнее о регионах вы можете узнать в статье [Регионы](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions).
+
+</warn>
 
 Список доступных эндпоинтов всегда доступен в панели VK CS [в разделе "API Endpoints"](https://mcs.mail.ru/app/project/endpoints/).
 
@@ -203,9 +215,9 @@ pip install awscli
 
 Чтобы начать отправлять запросы API, используется один из следующих методов:
 
-- **cURL** – Инструмент командной строки, который позволяет отправлять HTTP-запросы и получать ответы.
-- **Openstack CLI** – клиент, который позволяет получать доступ к API через простые в использовании команды.
-- **REST клиенты** – Mozilla и Google предоставляют браузерные графические интерфейсы для REST. Для Firefox см. [RESTClient](https://addons.mozilla.org/en-US/firefox/addon/restclient/). Для Chrome см. [rest-client](https://code.google.com/archive/p/rest-client/).
+- **cURL** — инструмент командной строки, который позволяет отправлять HTTP-запросы и получать ответы.
+- **Openstack CLI** — клиент, который позволяет получать доступ к API через простые в использовании команды.
+- **REST клиенты** — Mozilla и Google предоставляют браузерные графические интерфейсы для REST. Для Firefox см. [RESTClient](https://addons.mozilla.org/en-US/firefox/addon/restclient/). Для Chrome см. [rest-client](https://code.google.com/archive/p/rest-client/).
 - **OpenStack Python Software Development Kit (SDK)** – SDK для написания скриптов автоматизации Python, которые создают ресурсы в проекте и управляют ими. В SDK реализованы привязки Python к API-интерфейсу OpenStack, который позволяет выполнять задачи автоматизации в Python, выполняя вызовы объектов Python вместо непосредственных вызовов REST. Все инструменты командной строки OpenStack реализованы с использованием Python SDK.
 - **OpenStack APIs**
 
