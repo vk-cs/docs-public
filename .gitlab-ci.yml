@@ -12,14 +12,31 @@ variables:
   VKCS_DEPLOY_STAGE_ENABLED: "false"
   VKCS_DEPLOY_AMS_ENABLED: "false"
 
+.gate:
+  stage: gate
+  image: ${DOCKER_REGISTRY_STAGE}/infra/front/services/new-help
+  before_script:
+    - cd /home/node/app
+    - ln -sf $CI_PROJECT_DIR/docs .
+    - ln -sf $CI_PROJECT_DIR/externals .
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+
+lint::json:
+  extends:
+    - .gate
+  script:
+    - npm run lint:validateMetaJsonFiles
+
 Healthcheck links for branch:
   stage: deploy_stage
   needs:
     - "Build image"
     - "Deploy Branch"
   image: ${DOCKER_REGISTRY_STAGE}/$CI_PROJECT_PATH:$IMAGE_TAG
-  script:
+  before_script:
     - cd /home/node/app
+  script:
     - npm run fullHealthyLinks
   variables:
     base404CheckUrl: "https://$CI_COMMIT_REF_SLUG.front.vkcsdev.corpcloud.devmail.ru"
