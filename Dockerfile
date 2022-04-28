@@ -10,7 +10,6 @@ COPY docs/ docs/
 COPY externals/ externals/
 
 # rebuild
-RUN npm run test:lint \
-    && npm run preparation:full \
+RUN npm run preparation:full \
     && npm run preparation:fullRedirectNetwork \
     && npm run build
