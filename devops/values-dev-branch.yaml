@@ -6,6 +6,7 @@ components:
     replicas: 1
     ports:
       - port: 3000
+        headlessOnly: true
     ingress:
       rules:
         - hostname: branch-name.front.vkcsdev.corpcloud.devmail.ru
