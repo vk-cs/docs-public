@@ -1,0 +1,37 @@
+{
+    "meta": "Единый мониторинг облачных приложений",
+    "path": "/services/monitoring/alerting/triggers",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/en/main/base/iaas/vm-images/custom-image",
+                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/en/main/additionals/start/user-account/quota-limits",
+                "docs/en/main/additionals/billing",
+                "docs/en/main/additionals/billing/operations/payment"
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                "docs/en/main/base/iaas/vm-interfaces/vm-create-cli",
+                "docs/en/main/base/iaas/vm-volumes/volume-sla",
+                "docs/en/main/base/iaas/vm-start/manage-vm",
+                "docs/en/main/base/iaas/fs",
+                "docs/en/main/additionals/mp"
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                "docs/en/main/additionals/start/user-account/project-roles-users",
+                "docs/en/main/dbs/dbaas/manage-db/backup-db",
+                "docs/en/main/networks/vnet",
+                "docs/en/main/networks/vnet/vpn",
+                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/en/main/additionals/start/user-account/quota-limits"
+            ]
+        }
+    ]
+}

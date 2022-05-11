@@ -1,18 +1,15 @@
 {
+    "meta": "VPN",
+    "path": "/services/server/vpn-tunnels",
     "groups": [
         {
-            "title": "Информация",
+            "title": "ИНФОРМАЦИЯ",
             "links": [
                 "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/ru/main/networks/vnet/networks/private-dns",
+                "docs/ru/main/networks/vnet/vpn/create-vpn",
                 "docs/ru/main/networks/vnet",
                 "docs/ru/main/networks/vnet/networks/create-net"
-            ]
-        },
-        {
-            "title": "Продвинутые настройки",
-            "links": [
-                "docs/base/iaas/fs",
-                "docs/additionals/mp"
             ]
         }
     ]

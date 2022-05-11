@@ -1,0 +1,24 @@
+{
+    "meta": "Плавающие IP",
+    "path": "/services/infra/floating-ips",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/ru/main/networks/vnet/networks"
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                "docs/ru/main/networks/vnet/networks/create-net",
+                "docs/ru/main/networks/vnet/vnet-lb",
+                "docs/ru/main/networks/vnet/vpn",
+                "docs/ru/main/networks/vnet/firewall",
+                "docs/ru/main/networks/vnet/networks/private-dns",
+                "docs/ru/main/networks/vnet/networks/publicdns"
+            ]
+        }
+    ]
+}
