@@ -1,4 +1,4 @@
-*.md
+/README.md
 .git*
 /devops/
 Dockerfile
