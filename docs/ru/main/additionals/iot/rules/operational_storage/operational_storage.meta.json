@@ -1,12 +1,13 @@
 {
-    "title": "operational_storage",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "operational_storage - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "operational_storage",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 4
-  }
+  "title": "operational_storage",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "operational_storage - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "operational_storage",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "f49d7929-f903-419c-b02b-bd0dbe20b517"
+}

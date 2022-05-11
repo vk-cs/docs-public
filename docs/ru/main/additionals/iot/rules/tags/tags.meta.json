@@ -1,12 +1,13 @@
 {
-    "title": "tags",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "tags - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "tags",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 3
-  }
+  "title": "tags",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "tags - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "tags",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "2a88775f-497f-48a4-b0ae-d9c0996993b7"
+}

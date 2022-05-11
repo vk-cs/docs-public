@@ -1,12 +1,13 @@
 {
-    "title": "user_logs",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "user_logs - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "user_logs",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
-  }
+  "title": "user_logs",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "user_logs - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "user_logs",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "e4513e19-fd2c-45b2-a156-bff1e6cb84b1"
+}

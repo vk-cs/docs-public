@@ -1,12 +1,13 @@
 {
-    "title": "Rules",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Rules - VK Cloud Solutions",
-    "metaDescription": "Описание работы",
-    "sectionTitle": "Rules",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 7
-  }
+  "title": "Rules",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Rules - VK Cloud Solutions",
+  "metaDescription": "Описание работы",
+  "sectionTitle": "Rules",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 7,
+  "uuid": "93d7035b-2d06-4fee-8af9-6aeabb1526f6"
+}

@@ -1,12 +1,13 @@
 {
-    "title": "Модуль connectors",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Модуль connectors - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Модуль connectors",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "Модуль connectors",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Модуль connectors - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Модуль connectors",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "43e3edfd-779c-4643-b426-49781edc5b10"
+}

@@ -1,12 +1,13 @@
 {
-    "title": "Модуль exporters",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Модуль exporters - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Модуль exporters",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 4
-  }
+  "title": "Модуль exporters",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Модуль exporters - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Модуль exporters",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "4cc25723-59a8-4256-9aeb-97b740866f9e"
+}
