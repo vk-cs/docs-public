@@ -1,0 +1,16 @@
+{
+    "meta": "VPN",
+    "path": "/services/server/vpn-tunnels",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/en/main/networks/vnet/networks/private-dns",
+                "docs/en/main/networks/vnet/vpn/create-vpn",
+                "docs/en/main/networks/vnet",
+                "docs/en/main/networks/vnet/networks/create-net"
+            ]
+        }
+    ]
+}

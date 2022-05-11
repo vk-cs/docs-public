@@ -1,0 +1,14 @@
+{
+    "meta": "Файловое хранилище ВМ",
+    "path": "/services/infra/shares",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/ru/main/additionals/billing",
+                "docs/ru/main/base/iaas/fs"
+            ]
+        }
+    ]
+}

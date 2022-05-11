@@ -1,0 +1,30 @@
+{
+    "meta": "Инстансы баз данных",
+    "path": "/services/databases/list",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/en/main/dbs/dbaas/dbaas-start",
+                "docs/en/main/dbs/dbaas",
+                "docs/en/main/additionals/billing"
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                "docs/en/main/dbs/dbaas/dbaas-start/db-connect",
+                "docs/en/main/dbs/dbaas/dbaas-start/db-cluster"
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                "docs/en/main/dbs/dbaas/db-replica/create-db-replica",
+                "docs/en/main/dbs/dbaas/db-backup",
+                "docs/en/main/additionals/start/user-account/quota-limits"
+            ]
+        }
+    ]
+}

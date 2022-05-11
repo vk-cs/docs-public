@@ -1,0 +1,37 @@
+{
+    "meta": "ВМ",
+    "path": "/services/infra",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/ru/main/base/iaas/vm-images/custom-image",
+                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/ru/main/additionals/start/user-account/quota-limits",
+                "docs/ru/main/additionals/billing",
+                "docs/ru/main/additionals/billing/operations/payment"
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                "docs/ru/main/base/iaas/vm-interfaces/vm-create-cli",
+                "docs/ru/main/base/iaas/vm-volumes/volume-sla",
+                "docs/ru/main/base/iaas/vm-start/manage-vm",
+                "docs/ru/main/base/iaas/fs",
+                "docs/ru/main/additionals/mp"
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                "docs/ru/main/additionals/start/user-account/project-roles-users",
+                "docs/ru/main/dbs/dbaas/manage-db/backup-db",
+                "docs/ru/main/networks/vnet",
+                "docs/ru/main/networks/vnet/vpn",
+                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/ru/main/additionals/start/user-account/quota-limits"
+            ]
+        }
+    ]
+}

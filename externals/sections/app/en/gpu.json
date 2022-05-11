@@ -1,0 +1,27 @@
+{
+    "meta": "GPU",
+    "path": "/services/gpu",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/en/main/base/gpu/gpu-start/gpu-info"
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                "docs/en/main/base/gpu/gpu-start/gpu-create",
+                "docs/en/main/base/iaas/vm-start"
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                "docs/en/main/base/iaas/vm-faq",
+                "docs/en/additionals/start/user-account/quota-limits"
+            ]
+        }
+    ]
+}
