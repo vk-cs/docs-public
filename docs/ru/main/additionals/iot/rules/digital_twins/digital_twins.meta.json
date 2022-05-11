@@ -1,12 +1,13 @@
 {
-    "title": "Модуль digital_twins",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Модуль digital_twins - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Модуль digital_twins",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 4
-  }
+  "title": "Модуль digital_twins",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Модуль digital_twins - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Модуль digital_twins",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "ed103ff8-d0e7-4e0c-87ff-f93bb3b0757f"
+}

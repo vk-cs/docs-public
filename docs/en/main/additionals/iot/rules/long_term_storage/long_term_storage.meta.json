@@ -1,12 +1,13 @@
 {
-    "title": "Модуль long_term_storage",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Модуль long_term_storage - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Модуль long_term_storage",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 4
-  }
+  "title": "Модуль long_term_storage",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Модуль long_term_storage - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Модуль long_term_storage",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "47c3f102-5f55-452a-9094-654b370a67c1"
+}

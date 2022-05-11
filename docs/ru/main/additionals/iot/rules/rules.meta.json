@@ -1,12 +1,13 @@
 {
-    "title": "Правила",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Правила - VK Cloud Solutions",
-    "metaDescription": "Описание работы",
-    "sectionTitle": "Правила",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 7
-  }
+  "title": "Правила",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Правила - VK Cloud Solutions",
+  "metaDescription": "Описание работы",
+  "sectionTitle": "Правила",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 7,
+  "uuid": "ed5a0ff4-1c5f-40cc-a06d-c62b8b09de90"
+}

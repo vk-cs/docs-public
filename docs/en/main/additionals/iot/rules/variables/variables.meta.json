@@ -1,12 +1,13 @@
 {
-    "title": "variables",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "variables - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "variables",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
-  }
+  "title": "variables",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "variables - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "variables",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "b636d69c-0ec5-450a-a8b7-a1931b0fe9e0"
+}

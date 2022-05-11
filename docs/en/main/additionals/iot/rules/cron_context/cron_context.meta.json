@@ -1,12 +1,13 @@
 {
-    "title": "Модуль cron_context",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Модуль cron_context - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Модуль cron_context",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
-  }
+  "title": "Модуль cron_context",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Модуль cron_context - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Модуль cron_context",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "063b690c-36c3-4ffc-bd4b-4994a614179f"
+}
