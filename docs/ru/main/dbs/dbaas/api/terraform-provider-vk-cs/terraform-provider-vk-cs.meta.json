@@ -1,12 +1,13 @@
 {
-  "title": "Quickstart guide Terraform Provider VK CS",
+  "title": "Создание БД и пользователя с Terraform для DBaaS",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Quickstart guide Terraform Provider VK CS",
+  "metaTitle": "Создание БД и пользователя с Terraform для DBaaS",
   "metaDescription": "",
-  "sectionTitle": "Quickstart guide Terraform Provider VK CS",
+  "sectionTitle": "Создание БД и пользователя с Terraform для DBaaS",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
+  "weight": 2,
   "uuid": "c6332d21-771e-4916-a8b5-2496ac480960"
 }

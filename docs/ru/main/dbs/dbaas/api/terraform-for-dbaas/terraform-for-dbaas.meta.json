@@ -1,12 +1,13 @@
 {
-  "title": "Terraform для VK CS DBaaS",
+  "title": "Настройка провайдера Terraform для VK CS и OpenStack",
   "pageDescription": "Установка и настройка Terraform провайдера.",
   "shortDescription": "",
-  "metaTitle": "Terraform для VK CS DBaaS",
+  "metaTitle": "Настройка провайдера Terraform для VK CS и OpenStack",
   "metaDescription": "Terraform, terraform провайдер",
-  "sectionTitle": "Terraform для VK CS DBaaS",
+  "sectionTitle": "Настройка провайдера Terraform для VK CS и OpenStack",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
+  "weight": 0,
   "uuid": "806b42d8-3f18-4777-8aa5-8ff492a572f8"
 }
