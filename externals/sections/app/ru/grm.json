@@ -1,0 +1,15 @@
+{
+    "meta": "1С Готовое рабочее место",
+    "path": "/services/grm",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/ru/main/additionals/special/1cgrm/1cgrm-about",
+                "docs/ru/main/additionals/special/1cgrm/1cgrm-rates",
+                "docs/ru/main/additionals/special/1cgrm/1cgrm-start",
+                "docs/ru/main/additionals/special/1cgrm/1cgrm-faq"
+            ]
+        }
+    ]
+}

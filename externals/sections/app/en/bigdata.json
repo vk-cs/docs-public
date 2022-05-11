@@ -1,0 +1,29 @@
+{
+    "meta": "Большие данные",
+    "path": "/services/bigdata",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/en/main/base/bigdata/bigdata-info/bigdata-architecture",
+                "docs/en/main/additionals/cases"
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                "docs/en/main/base/bigdata/bigdata-start",
+                "docs/en/main/base/bigdata/bigdata-start/create-bigdata"
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                "docs/en/main/base/bigdata",
+                "docs/en/main/base/bigdata/bigdata-scale",
+                "docs/en/additionals/start/user-account/quota-limits"
+            ]
+        }
+    ]
+}

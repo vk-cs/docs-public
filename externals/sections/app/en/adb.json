@@ -1,0 +1,31 @@
+{
+    "meta": "Аналитические базы данных",
+    "path": "/services/analytic-databases",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/en/main/dbs/adb/adb-start",
+                "docs/en/main/dbs/adb",
+                "docs/en/main/additionals/billing"
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                "docs/en/main/dbs/adb/adb-start/create-adb",
+                "docs/en/main/dbs/adb/adb-start/launch-adb",
+                "docs/en/main/dbs/adb/adb-start/delete-adb"
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                "docs/en/main/dbs/dbaas/db-replica/create-db-replica",
+                "docs/en/main/dbs/dbaas/db-backup",
+                "docs/en/main/additionals/start/user-account/quota-limits"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "meta": "Сети",
+    "path": "/services/cloud-networks",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/en/main/networks/vnet",
+                "docs/en/main/networks/vnet/networks/create-net"
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                "docs/en/main/networks/vnet/networks/fip",
+                "docs/en/main/networks/vnet/vnet-lb/about-lb",
+                "docs/en/main/networks/vnet/firewall",
+                "docs/en/main/networks/vnet/networks/create-net",
+                "docs/en/main/additionals/start/user-account/quota-limits"
+            ]
+        }
+    ]
+}

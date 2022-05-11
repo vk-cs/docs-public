@@ -1,0 +1,23 @@
+{
+    "meta": "Лоад балансеры",
+    "path": "/services/infra/balancers",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/ru/main/networks/vnet/vnet-lb/about-lb",
+                "docs/ru/main/networks/vnet"
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                "docs/ru/main/networks/vnet/networks/fip",
+                "docs/ru/main/networks/vnet/firewall",
+                "docs/ru/main/networks/vnet/networks/create-net",
+                "docs/ru/additionals/start/user-account/quota-limits"
+            ]
+        }
+    ]
+}

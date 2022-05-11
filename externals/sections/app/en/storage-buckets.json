@@ -1,0 +1,23 @@
+{
+    "meta": "S3 бакеты",
+    "path": "/services/storage/buckets",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/en/main/additionals/billing",
+                "docs/en/main/base/s3/quick-start"
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                "docs/en/main/base/s3/quick-start/create-bucket",
+                "docs/en/main/base/s3/dev/s3-rest-api/about-s3-api",
+                "docs/en/main/base/s3/dev/s3-sdk",
+                "docs/en/main/additionals/start/user-account/quota-limits"
+            ]
+        }
+    ]
+}

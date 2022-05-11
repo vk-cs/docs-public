@@ -1,0 +1,32 @@
+{
+    "meta": "S3",
+    "path": "/services/storage",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/ru/main/base/s3/intro",
+                "docs/ru/main/base/s3/rates-and-limits/s3-rates",
+                "docs/ru/main/base/s3/quick-start"
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                "docs/ru/main/base/s3/quick-start/create-bucket",
+                "docs/ru/main/base/s3/access-management/s3-account"
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                "docs/ru/main/base/s3/objects/s3-lifecycle",
+                "docs/ru/main/base/s3/dev/s3-rest-api/bucket-api",
+                "docs/ru/main/base/s3/dev/s3-rest-api/object-api",
+                "docs/ru/main/base/s3/dev/s3-rest-api/acl-api",
+                "docs/ru/main/additionals/start/user-account/quota-limits"
+            ]
+        }
+    ]
+}

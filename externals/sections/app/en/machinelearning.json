@@ -1,0 +1,17 @@
+{
+    "meta": "Машинное обучение",
+    "path": "/services/machinelearning",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/en/main/ml/vision",
+                "docs/en/main/ml/vision/vision-start/vision-rates",
+                "docs/en/main/ml/vision/manage-vision",
+                "docs/en/main/ml/cloud-voice/pricing",
+                "docs/en/main/ml/cloud-voice"
+            ]
+        }
+    ]
+}
