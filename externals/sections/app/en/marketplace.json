@@ -1,0 +1,28 @@
+{
+    "meta": "Магазин приложений",
+    "path": "/services/marketplace",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/en/main/additionals/mp/mp-info/about-mp",
+                "docs/en/main/additionals/cases"
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                "docs/en/main/additionals/mp",
+                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/en/main/additionals/mp/mp-faq/mp-connect-faq",
+                "docs/en/main/additionals/mp/mp-apps/mp-gitlab-ce",
+                "docs/en/main/additionals/mp/mp-apps/mp-docker-ce",
+                "docs/en/main/additionals/mp/mp-apps/mp-lemp-stack",
+                "docs/en/main/additionals/mp/mp-apps/mp-lamp-stack",
+                "docs/en/main/additionals/mp/mp-apps/mp-jenkins",
+                "docs/en/main/additionals/mp/mp-apps/mp-docker-registry"
+            ]
+        }
+    ]
+}

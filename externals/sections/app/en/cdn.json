@@ -1,0 +1,13 @@
+{
+    "meta": "Content Delivery Network",
+    "path": "/services/cdn",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/en/main/networks/cdn/about-cdn",
+                "docs/en/main/networks/cdn/connect-cdn"
+            ]
+        }
+    ]
+}

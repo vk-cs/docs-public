@@ -1,0 +1,22 @@
+{
+    "meta": "Контейнеры",
+    "path": "/services/containers",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/en/main/base/k8s",
+                "docs/en/main/additionals/billing",
+                "docs/en/main/additionals/start/user-account/quota-limits"
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                "docs/en/main/base/k8s/k8s-start/create-k8s",
+                "docs/en/main/base/k8s/k8s-start/k8s-dashboard"
+            ]
+        }
+    ]
+}

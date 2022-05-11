@@ -1,0 +1,25 @@
+{
+    "meta": "Диски ВМ",
+    "path": "/services/infra/volumes",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/en/main/base/iaas/vm-volumes",
+                "docs/en/main/additionals/billing"
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                "docs/en/main/base/iaas/vm-volumes/volume-create",
+                "docs/en/main/base/iaas/vm-volumes/volume-resize",
+                "docs/en/main/base/iaas/vm-volumes/volume-convert",
+                "docs/en/main/base/iaas/vm-volumes/volume-create",
+                "docs/en/main/base/iaas/vm-faq/faq-vm-backup",
+                "docs/en/main/additionals/start/user-account/quota-limits"
+            ]
+        }
+    ]
+}

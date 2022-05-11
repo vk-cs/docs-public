@@ -1,0 +1,24 @@
+{
+    "meta": "Общая информация о вирутальных сетях",
+    "path": "/services/cloud-networks",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/en/main/networks/vnet/networks"
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                "docs/en/main/networks/vnet/networks/create-net",
+                "docs/en/main/networks/vnet/vnet-lb",
+                "docs/en/main/networks/vnet/vpn",
+                "docs/en/main/networks/vnet/firewall",
+                "docs/en/main/networks/vnet/networks/private-dns",
+                "docs/en/main/networks/vnet/networks/publicdns"
+            ]
+        }
+    ]
+}

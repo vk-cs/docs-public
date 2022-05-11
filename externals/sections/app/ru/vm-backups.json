@@ -1,0 +1,15 @@
+{
+    "meta": "Резервное копирование ВМ",
+    "path": "/services/infra/backups/auto",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/ru/main/base/iaas/vm-backup",
+                "docs/ru/main/base/iaas/vm-faq/faq-vm-backup",
+                "docs/ru/main/additionals/billing"
+            ]
+        }
+    ]
+}

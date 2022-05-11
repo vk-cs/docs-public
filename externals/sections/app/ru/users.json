@@ -1,0 +1,14 @@
+{
+    "meta": "Управление доступами",
+    "path": "/access/users",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
+                "docs/ru/main/additionals/start/user-account",
+                "docs/ru/main/additionals/start/user-account/project-roles-users"
+            ]
+        }
+    ]
+}

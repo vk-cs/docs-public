@@ -28,6 +28,12 @@ lint::json:
   script:
     - npm run lint:validateMetaJsonFiles
 
+lint::sameFilename:
+  extends:
+    - .gate
+  script:
+    - npm run lint:validateSameNameInFolder
+
 Healthcheck links for branch:
   stage: deploy_stage
   needs:
