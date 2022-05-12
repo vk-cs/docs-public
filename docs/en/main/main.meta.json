@@ -2,7 +2,7 @@
   "title": "Service Documentation",
   "faqLinks": [
     "docs/en/main/additionals/start/get-started/registration",
-    "docs/ru/main/additionals/billing",
+    "docs/en/main/additionals/billing",
     "docs/en/main/additionals/start/user-account/mgmt-interfaces",
     "docs/en/main/additionals/cases"
   ],
