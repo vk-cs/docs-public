@@ -1,12 +1,13 @@
 {
-    "title": "Регионы",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Регионы - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Регионы",
-    "markdown": "",
-    "icon": "",
-    "weight": 3,
-    "infobarItems": null
-  }
+  "title": "Регионы",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Регионы - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Регионы",
+  "markdown": "",
+  "icon": "",
+  "weight": 3,
+  "infobarItems": null,
+  "uuid": "ed8d7e24-9425-4e12-ba85-0bf2228a088c"
+}

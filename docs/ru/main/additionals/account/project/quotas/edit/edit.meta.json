@@ -1,12 +1,13 @@
 {
-    "title": "Изменение квот",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Изменение квот - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Изменение квот",
-    "markdown": "",
-    "icon": "",
-    "weight": 1,
-    "infobarItems": null
-  }
+  "title": "Изменение квот",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Изменение квот - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Изменение квот",
+  "markdown": "",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": null,
+  "uuid": "f4cf5f25-9637-4d21-b82a-d520e81ed6df"
+}

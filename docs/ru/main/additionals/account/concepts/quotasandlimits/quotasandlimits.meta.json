@@ -1,12 +1,13 @@
 {
-    "title": "Квоты и лимиты",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Квоты и лимиты - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Квоты и лимиты",
-    "markdown": "",
-    "icon": "",
-    "weight": 2,
-    "infobarItems": null
-  }
+  "title": "Квоты и лимиты",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Квоты и лимиты - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Квоты и лимиты",
+  "markdown": "",
+  "icon": "",
+  "weight": 2,
+  "infobarItems": null,
+  "uuid": "b8293825-a1e6-4b99-9309-e1b1598a2063"
+}

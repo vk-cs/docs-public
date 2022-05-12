@@ -1,12 +1,13 @@
 {
-    "title": "Состояние системы",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Состояние системы - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Состояние системы",
-    "markdown": "",
-    "icon": "",
-    "weight": 1,
-    "infobarItems": null
-  }
+  "title": "Состояние системы",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Состояние системы - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Состояние системы",
+  "markdown": "",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": null,
+  "uuid": "ab2d8a87-42e2-4cf0-ba77-143f6d6cb25b"
+}

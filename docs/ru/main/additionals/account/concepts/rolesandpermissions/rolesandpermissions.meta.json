@@ -1,12 +1,13 @@
 {
-    "title": "Права и разрешения",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Права и разрешения - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Права и разрешения",
-    "markdown": "",
-    "icon": "",
-    "weight": 1,
-    "infobarItems": null
-  }
+  "title": "Права и разрешения",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Права и разрешения - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Права и разрешения",
+  "markdown": "",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": null,
+  "uuid": "6589dbb9-a0dd-42ec-a74d-fe41f4d8610f"
+}

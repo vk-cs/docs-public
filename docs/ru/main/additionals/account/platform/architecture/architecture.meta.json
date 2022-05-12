@@ -1,12 +1,13 @@
 {
-    "title": "Архитектура платформы",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Архитектура платформы - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Архитектура платформы",
-    "markdown": "",
-    "icon": "",
-    "weight": 0,
-    "infobarItems": null
-  }
+  "title": "Архитектура платформы",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Архитектура платформы - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Архитектура платформы",
+  "markdown": "",
+  "icon": "",
+  "weight": 0,
+  "infobarItems": null,
+  "uuid": "c69d8543-115c-4df6-83c2-bd2c41144103"
+}
