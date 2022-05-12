@@ -1,12 +1,13 @@
 {
-    "title": "Использование 2FA",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Использование 2FA - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Использование 2FA",
-    "markdown": "",
-    "icon": "",
-    "weight": 2,
-    "infobarItems": null
-  }
+  "title": "Использование 2FA",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Использование 2FA - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Использование 2FA",
+  "markdown": "",
+  "icon": "",
+  "weight": 2,
+  "infobarItems": null,
+  "uuid": "7130e6f8-e50d-4b16-a6f7-39bd77f1639c"
+}

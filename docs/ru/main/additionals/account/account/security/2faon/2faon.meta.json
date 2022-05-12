@@ -1,12 +1,13 @@
 {
-    "title": "Включение 2FA",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Включение 2FA - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Включение 2FA",
-    "markdown": "",
-    "icon": "",
-    "weight": 0,
-    "infobarItems": null
-  }
+  "title": "Включение 2FA",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Включение 2FA - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Включение 2FA",
+  "markdown": "",
+  "icon": "",
+  "weight": 0,
+  "infobarItems": null,
+  "uuid": "14754b74-de1d-41b1-a429-32e4fa2e5c62"
+}

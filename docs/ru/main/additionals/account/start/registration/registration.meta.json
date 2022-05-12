@@ -1,12 +1,13 @@
 {
-    "title": "Регистрация",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Регистрация - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Регистрация",
-    "markdown": "",
-    "icon": "",
-    "weight": 0,
-    "infobarItems": null
-  }
+  "title": "Регистрация",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Регистрация - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Регистрация",
+  "markdown": "",
+  "icon": "",
+  "weight": 0,
+  "infobarItems": null,
+  "uuid": "48b35b2c-c63f-4ba5-91d4-10cd5c06833d"
+}

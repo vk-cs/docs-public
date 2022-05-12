@@ -1,12 +1,13 @@
 {
-    "title": "CLI",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "CLI - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "CLI",
-    "markdown": "",
-    "icon": "",
-    "weight": 6,
-    "infobarItems": null
-  }
+  "title": "CLI",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "CLI - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "CLI",
+  "markdown": "",
+  "icon": "",
+  "weight": 6,
+  "infobarItems": null,
+  "uuid": "7b48ba55-53d9-4c8e-8386-7c68d990701b"
+}

@@ -1,12 +1,13 @@
 {
-    "title": "Отключение 2FA",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Отключение 2FA - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Отключение 2FA",
-    "markdown": "",
-    "icon": "",
-    "weight": 1,
-    "infobarItems": null
-  }
+  "title": "Отключение 2FA",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Отключение 2FA - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Отключение 2FA",
+  "markdown": "",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": null,
+  "uuid": "ba0ca820-a867-474d-837d-fc4d186e585c"
+}

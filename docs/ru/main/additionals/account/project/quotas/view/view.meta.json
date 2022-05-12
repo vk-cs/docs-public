@@ -1,12 +1,13 @@
 {
-    "title": "Состояние квот",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Состояние квот - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Состояние квот",
-    "markdown": "",
-    "icon": "",
-    "weight": 0,
-    "infobarItems": null
-  }
+  "title": "Состояние квот",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Состояние квот - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Состояние квот",
+  "markdown": "",
+  "icon": "",
+  "weight": 0,
+  "infobarItems": null,
+  "uuid": "79303dec-22d4-4afa-a425-72ccece47b6a"
+}

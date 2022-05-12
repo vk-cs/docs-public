@@ -1,12 +1,13 @@
 {
-    "title": "Личный кабинет (в разработке)",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Личный кабинет (в разработке) - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Личный кабинет (в разработке)",
-    "markdown": "",
-    "icon": "",
-    "weight": 17,
-    "infobarItems": null
-  }
+  "title": "Личный кабинет (в разработке)",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Личный кабинет (в разработке) - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Личный кабинет (в разработке)",
+  "markdown": "",
+  "icon": "",
+  "weight": 17,
+  "infobarItems": null,
+  "uuid": "fba5b80a-a1f7-46ef-bf82-da0733770999"
+}

@@ -1,12 +1,13 @@
 {
-    "title": "Установка клиента",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Установка клиента - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Установка клиента",
-    "markdown": "",
-    "icon": "",
-    "weight": 1,
-    "infobarItems": null
-  }
+  "title": "Установка клиента",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Установка клиента - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Установка клиента",
+  "markdown": "",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": null,
+  "uuid": "dcd37fe5-79a3-4321-a260-b7f1b24b0b2d"
+}

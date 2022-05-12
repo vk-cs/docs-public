@@ -1,12 +1,13 @@
 {
-    "title": "Тарификация",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Тарификация - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Тарификация",
-    "markdown": "",
-    "icon": "",
-    "weight": 4,
-    "infobarItems": null
-  }
+  "title": "Тарификация",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Тарификация - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Тарификация",
+  "markdown": "",
+  "icon": "",
+  "weight": 4,
+  "infobarItems": null,
+  "uuid": "2542a750-9d11-4793-844b-81cbccd365c0"
+}

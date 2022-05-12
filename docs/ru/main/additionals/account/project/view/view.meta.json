@@ -1,12 +1,13 @@
 {
-    "title": "Просмотр данных проекта",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Просмотр данных проекта - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Просмотр данных проекта",
-    "markdown": "",
-    "icon": "",
-    "weight": 1,
-    "infobarItems": null
-  }
+  "title": "Просмотр данных проекта",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Просмотр данных проекта - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Просмотр данных проекта",
+  "markdown": "",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": null,
+  "uuid": "8cfb317b-616e-44b7-bec4-18b09236c047"
+}

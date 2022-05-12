@@ -1,12 +1,13 @@
 {
-    "title": "Проект",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Проект - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Проект",
-    "markdown": "",
-    "icon": "",
-    "weight": 3,
-    "infobarItems": null
-  }
+  "title": "Проект",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Проект - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Проект",
+  "markdown": "",
+  "icon": "",
+  "weight": 3,
+  "infobarItems": null,
+  "uuid": "b4e1e128-e778-4b33-b140-5008fa9146ff"
+}

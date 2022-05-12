@@ -1,12 +1,13 @@
 {
-    "title": "Портал идей",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Портал идей - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Портал идей",
-    "markdown": "",
-    "icon": "",
-    "weight": 3,
-    "infobarItems": null
-  }
+  "title": "Портал идей",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Портал идей - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Портал идей",
+  "markdown": "",
+  "icon": "",
+  "weight": 3,
+  "infobarItems": null,
+  "uuid": "ab1486af-0c0a-4aa3-b328-383da74395fc"
+}

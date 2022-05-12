@@ -1,12 +1,13 @@
 {
-    "title": "Квоты",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Квоты - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Квоты",
-    "markdown": "",
-    "icon": "",
-    "weight": 2,
-    "infobarItems": null
-  }
+  "title": "Квоты",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Квоты - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Квоты",
+  "markdown": "",
+  "icon": "",
+  "weight": 2,
+  "infobarItems": null,
+  "uuid": "bbc77a62-385d-4918-a916-db3f6a0dabb0"
+}
