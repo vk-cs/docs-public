@@ -1,12 +1,13 @@
 {
-    "title": "Протокол",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Протокол - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Протокол",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "Протокол",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Протокол - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Протокол",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "373f9549-5f01-4336-ad90-fc84abe3c57c"
+}
