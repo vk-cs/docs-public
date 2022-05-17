@@ -1,0 +1,14 @@
+{
+    "meta": "Устройства",
+    "path": "/devices",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/ru/main/additionals/iot",
+                "docs/ru/main/additionals/iot/iot-start/create-device",
+                "docs/ru/main/additionals/iot/iot-start/connect-device"
+            ]
+        }
+    ]
+}
