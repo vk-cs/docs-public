@@ -1,0 +1,14 @@
+{
+    "meta": "Агенты",
+    "path": "/agents",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/ru/main/additionals/iot",
+                "docs/ru/main/additionals/iot/agents",
+                "docs/ru/main/additionals/iot/agents/protocol"
+            ]
+        }
+    ]
+}
