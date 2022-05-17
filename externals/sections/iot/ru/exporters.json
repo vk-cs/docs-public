@@ -1,0 +1,14 @@
+{
+    "meta": "Экспортеры",
+    "path": "/exporters",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/ru/main/additionals/iot",
+                "docs/ru/main/additionals/iot/rules",
+                "docs/ru/main/additionals/iot/rules/exporters"
+            ]
+        }
+    ]
+}
