@@ -1,0 +1,14 @@
+{
+    "meta": "Структура",
+    "path": "/structure",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/ru/main/additionals/iot",
+                "docs/ru/main/additionals/iot/about-iot",
+                "docs/ru/main/additionals/iot/registration"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "meta": "Драйверы",
+    "path": "/drivers",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/ru/main/additionals/iot"
+            ]
+        }
+    ]
+}
