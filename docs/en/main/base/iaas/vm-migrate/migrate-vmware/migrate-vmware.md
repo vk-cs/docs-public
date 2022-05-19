@@ -1,66 +1,68 @@
-Migration of virtual machines between services / platforms on which they can be launched and operated, as a rule, consists of several stages:
+The migration of virtual machines between services/platforms on which they can be launched and operated, as a rule, consists of several stages:
 
-**Attention**
+<warn>
 
-Before migrating a VM, make sure the following requirements are met:
+Before migrating a VM, make sure that the following requirements are met:
 
-- The operating system has a 64-bit architecture
-- VM uses BIOS
-- The current user has Administrator rights
-- VM must have at least one connected disk
+- The operating system has a 64-bit architecture;
+- VM uses BIOS;
+- The current user has Administrator rights;
+- The VM must have at least one disk attached.
+
+</warn>
 
 ## Preparing for migration
 
-Before migrating a virtual machine, you should perform preparatory actions aimed at providing the existing virtual server with functionality:
+Before migrating a virtual machine, preparatory steps should be taken to ensure the functionality of the existing virtual server:
 
-**Driver Integration**
+### Driver integration
 
-The first step is to download and install the VirtIO package drivers into your existing virtual machine.
+The first step is to download and install the VirtIO package drivers into an existing virtual machine.
 
-- [Windows](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.171-1/) - download and installation [instructions](https://mcs.mail.ru/help/migration-training/windows-hyper-v)
-- [Linux](https://www.linux-kvm.org/page/Virtio) - download and installation instructions
+- [Windows](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.171-1/) - download and [instruction](https:/ /www.linux-kvm.org/page/WindowsGuestDrivers/Download_Drivers) to install
+- [Linux](https://www.linux-kvm.org/page/Virtio) - download and [instructions](https://www.linux-kvm.org/page/Virtio) for installation
 
-In some cases, if automatic installation of drivers is not possible, you may need to manually add them and install drivers from the downloaded VirtIO driver package.
+In some cases, if you cannot automatically install drivers, you may need to manually add them and install the drivers from the downloaded VirtIO driver package.
 
-After installing the drivers, you need to install the QEMU Guest Agent. An installer is used that matches the architecture of the existing virtual machine.
+After installing the drivers, you need to install the QEMU Guest Agent. The installer that matches the architecture of the existing virtual machine is used.
 
-**Adding drivers to the registry**
+### Adding drivers to the registry
 
-To correctly identify the drivers, you need to add them to the Windows system registry.
+To correctly identify drivers, you must add them to the Windows system registry.
 
-To do this, you should:
+For this you should:
 
-1.  Upload [Virtio Registry File](http://migration.platform9.com.s3-us-west-1.amazonaws.com/virtio.reg) to your instance.
-2.  Open Windows Registry Editor and import the downloaded file.
+1. Upload [Virtio Registry File](http://migration.platform9.com.s3-us-west-1.amazonaws.com/virtio.reg) to the instance.
+2. Open the Windows Registry Editor and import the downloaded file.
 
-**Removing VMWare Tools**
+### Removing VMWare Tools
 
-In case of migration from VMWare platform to others, it is necessary to uninstall the platform software, namely VMWare Tools. The action is recommended to be performed through the standard Add / Remove Programs snap-in (for Windows), or the application manager that exists in the operating system.
+In case of migrating from VMWare platform to others, it is necessary to uninstall the platform software, namely VMWare Tools. The action is recommended to be performed through the standard Add/Remove Programs snap-in (for Windows), or the application manager that exists in the operating system.
 
-## Exporting a virtual machine
+## Export virtual machine
 
-**Attention**
+<warn>
 
-The virtual machine must be stopped before performing export operations.
+Before performing export operations, the virtual machine must be stopped.
+
+</warn>
 
 To export a virtual machine to a file, select the desired VM, then export its template using the Export OVF Template function.
 
 In the export window, specify the name of the desired exported template, as well as the export format "Folder of files (OVF)".
 
-![](./assets/1597747823199-1597747823199.png)
+## Upload VM image to VK CS
 
-## Loading VM image into VK CS
+The \*.vmdk file obtained as a result of the export should be loaded into an existing VK CS project.
 
-The resulting \* .vmdk file should be loaded into an existing VK CS project.
+It is recommended to use the Openstack CLI to load the virtual machine image in order to avoid possible errors in the processing of large files by the web interface. To load the \*.vmdk image, use the command:
 
-It is recommended to use the Openstack CLI to load the virtual machine image in order to avoid possible errors in processing large files by the web interface. To load the \* .vmdk image, use the command:
-
-```
- openstack image create --private --container-format bare --disk-format vmdk --property store = s3 --file <vmdkfile> <image_name>
+```bash
+openstack image create --private --container-format bare --disk-format vmdk --property store=s3 --file <file.vmdk> <image_name>
 ```
 
-If the instance created from the image must support backup, you must load it with the metadata of the presence of the guest agent:
+If the instance created from the image is to be backed up, it must be booted with the guest agent presence metadata:
 
-```
- openstack image create --private --container-format bare --disk-format vmdk --file <file.vmdk> --property hw_qemu_guest_agent = yes --property store = s3 --property os_require_quiesce = yes <image_name>
+```bash
+openstack image create --private --container-format bare --disk-format vmdk --file <file.vmdk> --property hw_qemu_guest_agent=yes --property store=s3 --property os_require_quiesce=yes <image_name>
 ```

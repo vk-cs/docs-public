@@ -1,47 +1,44 @@
-## How to get a Windows Server license
+## How do I get a Windows Server license?
 
-A licensed copy of the Windows Server operating system is preinstalled in the created virtual machine instance based on Windows. A licensed copy is activated automatically after creating an instance. If an OS activation error occurs, you should [contact technical support](mailto:support@mcs.mail.ri) and specify the virtual machine ID.
+A licensed copy of the Windows Server operating system is preinstalled in the created instance of a Windows-based virtual machine. The license copy is activated automatically after the instance is created. If an OS activation error occurs, you should [contact technical support](https://mcs.mail.ru/docs/contacts ) and specify the virtual machine ID.
 
-## What other licenses can I get
+## What licenses can I get?
 
-The list of provided standard licenses is limited, you can get licenses for:
+The list of standard licenses provided is limited, but you can view the list of available ones [on the pricing page](https://mcs.mail.ru/app/project/prices /). To do this, you must be logged in.
 
-- Microsoft Windows Server Standard
-- Microsoft SQL Server Standard
-- Microsoft SQL Server Enterprise
-- Microsoft Remote Desktop Services
+If necessary, you can get a license for a software product that is not on this list. To do this, you need to [contact technical support](https://mcs.mail.ru/docs/contacts ) with information about the product and the period of use.
 
-However, if you need to obtain a license for a software product that is not in this list, you can [contact technical support](https://mcs.mail.ru/docs/contacts) with information about the product and the term of use.
+## What types of licensing are there?
 
-## What is a core license
+Microsoft provides several licensing models that allow you to make the most optimal use of your budget:
 
-Microsoft provides several licensing models to help you make the most of your budget:
+- To the core. This licensing model provides access to an unlimited number of users or devices.
+- Per user. It is designed to provide access to the license to one user for an unlimited number of servers.
 
-- **To the core** . This licensing model grants access to an unlimited number of users or devices. Applies to operating systems and SQL server.
-- **Per user** . Designed to provide access to a license for one user for an unlimited number of servers. It exists only for SQL Server and Remote Desktop service.
+Licensing "per core" within the framework of Microsoft licensing rules for virtual machines means the need to cover every instance virtual core with a license. Regardless of the number of instance cores, licenses are subject to every 2 virtual CPUs.
 
-Per-core licensing under the Microsoft Virtual Machine Licensing Rules means you must license each virtual core in an instance. Regardless of the number of cores in an instance, licenses are subject to every 2 virtual CPUs. Here are some examples:
+<info>
 
-- VM with 1 CPU. You must purchase at least 1 license for 2 vCPUs.
-- VM with 2 CPU. Enough 1 license for 2 vCPUs.
-- VM with 3 CPUs. Requires 2 licenses for 2 vCPUs.
+SQL server licensing requires at least 2 licenses for 2 vCPUs according to Microsoft policy.
 
-**Attention**
+</info>
 
-SQL Server licensing requires at least 2 licenses for 2 vCPUs according to Microsoft policy.
+## Can I get a discount?
 
-## Can I get a discount
+Licensing discounts are not provided, but since funds are debited every minute from working entities, you can reduce your expenses and save your money. For example, suspend a VM or cluster.
 
-Licensing discounts are not provided under the Offer
+## Is there software support from Microsoft?
 
-## Is there software support from Microsoft
+Contact Microsoft technical support, they will answer all questions regarding the rules of use of Microsoft software, as well as technical questions about software products.
 
-All questions regarding Microsoft software usage guidelines, as well as technical questions about software products, should be directed to Microsoft technical support.
+## Can I use my license?
 
-## Can i use my license
+If you have previously purchased a license for Microsoft software products, its use on the VK CS platform is possible, for this you need to make sure that the license can be transferred, and also get confirmation from Microsoft for this. For more details, see the instructions on [using your own licenses](https://mcs.mail.ru/help/licensing/license-mobility).
 
-If you have a previously purchased license for Microsoft software products, it cannot be used on the VK CS platform
+## Can I buy a license on an indefinite basis?
 
-## Can i buy a license
+VK CS provides license rentals on a monthly basis. The purchase of a license for permanent use, both on the VK CS platform and outside it, is impossible.
 
-VK CS provides rental licenses on a monthly basis. Redemption of a license for permanent use, both on and off the VK CS platform, is not possible.
+## Are funds being debited for a stopped VM?
+
+Funds are debited every minute from working entities. If the operation of entities is stopped, then write-offs continue only for the use of licenses (Windows and RDS, if activated) and leased disk space, as well as for storing existing backups.

@@ -1,9 +1,9 @@
 {
   "title": "Журнал событий инстанса",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Просмотр журнала событий инстанса",
   "metaTitle": "Журнал событий инстанса - VK Cloud Solutions",
-  "metaDescription": "Журнал событий инстанса (event list) - это набор записей, отражающих события виртуальной машины. Событие содержит тип, время и ID запроса. OpenStack CLI Дл",
+  "metaDescription": "",
   "sectionTitle": "Журнал событий инстанса",
   "markdown": "",
   "icon": "",

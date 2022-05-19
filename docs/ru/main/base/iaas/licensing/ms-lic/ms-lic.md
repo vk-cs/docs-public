@@ -12,7 +12,13 @@ VK CS обладает правом предоставления ПО Microsoft 
 
 В данный момент перечень предоставляемых программных продуктов в рамках SPLA ограничен следующим набором:
 
-<table style="width: 100%;"><tbody><tr><td style="width: 19.5616%; background-color: rgb(239, 239, 239); text-align: center;">Код</td><td style="width: 47.2175%; background-color: rgb(239, 239, 239); text-align: center;">Наименование</td><td style="width: 33.2209%; background-color: rgb(239, 239, 239); text-align: center;">Описание</td></tr><tr><td style="width: 19.5616%;">9EM-00562</td><td style="width: 47.2175%;">WinSvrSTDCore ALNG LicSAPk MVL 2Lic CoreLic</td><td style="width: 33.2209%;">Windows Server Standard edition (2 vCPU)</td></tr><tr><td style="width: 19.5616%;">7NQ-00302</td><td style="width: 47.2175%;">SQLSvrStdCore ALNG LicSAPk MVL 2Lic CoreLic</td><td style="width: 33.2209%;">Microsoft SQL Server Standard (2 vCPU)</td></tr><tr><td style="width: 19.5616%;">7JQ-00341</td><td style="width: 47.2175%;">SQLSvrEntCore ALNG LicSAPk MVL 2Lic CoreLic</td><td style="width: 33.2209%;">Microsoft SQL Server Enterprise Core Edition (2 vCPU)</td></tr><tr><td style="width: 19.5616%;">228-05018</td><td style="width: 47.2175%;">SQLSvrStd ALNG LicSAPk MVL SAL</td><td style="width: 33.2209%;">Microsoft SQL Server Standard Edition (per user)</td></tr><tr><td style="width: 19.5616%;">6WC-00002</td><td style="width: 47.2175%;">WinRmtDsktpSrvcsSAL ALNG LicSAPk MVL</td><td style="width: 33.2209%;">Windows Remote Desktop Services (per user)</td></tr></tbody></table>
+| Код | Наименование | Описание |
+| --- | --- | --- |
+| 9EM-00562 | WinSvrSTDCore ALNG LicSAPk MVL 2Lic CoreLic | Windows Server Standard edition (2 vCPU) |
+| 7NQ-00302 | SQLSvrStdCore ALNG LicSAPk MVL 2Lic CoreLic | Microsoft SQL Server Standard (2 vCPU) |
+| 7JQ-00341 | SQLSvrEntCore ALNG LicSAPk MVL 2Lic CoreLic | Microsoft SQL Server Enterprise Core Edition (2 vCPU) |
+| 228-05018 | SQLSvrStd ALNG LicSAPk MVL SAL | Microsoft SQL Server Standard Edition (per user) |
+| 6WC-00002 | WinRmtDsktpSrvcsSAL ALNG LicSAPk MVL | Windows Remote Desktop Services (per user) |
 
 ## Условия использования
 
@@ -30,12 +36,12 @@ VK CS обладает правом предоставления ПО Microsoft 
 
 Доступные редакции операционной системы Microsoft Windows Server:
 
-- Windows Server 2012R2 RU
-- Windows Server 2012R2 EN
-- Windows Server 2016 RU
-- Windows Server 2016 EN
-- Windows Server 2019 RU
-- Windows Server 2019 RU
+- Windows Server 2012R2 RU;
+- Windows Server 2012R2 EN;
+- Windows Server 2016 RU;
+- Windows Server 2016 EN;
+- Windows Server 2019 RU;
+- Windows Server 2019 RU.
 
 Каждые 2 vCPU инстанса с ОС Windows требуют использования одной лицензии. Соответственно, при создании инстанса с 5 vCPU понадобится 3 лицензии Windows Server на ядро.
 
@@ -45,13 +51,13 @@ VK CS обладает правом предоставления ПО Microsoft 
 
 ### Ключ
 
-Для активации ОС Windows Server может потребоваться лицензионный ключ, о чем свидетельствует надпись в правом нижнем углу экрана. В данном случае необходимо обратиться в техническую поддержку, чтобы устранить сбой активации ОС. В зависимости от операционной системы будет предоставлен либо ключ активации, либо команда для самостоятельной активации лицензионной копии.
+Для активации ОС Windows Server может потребоваться лицензионный ключ, о чем свидетельствует надпись в правом нижнем углу экрана. В данном случае необходимо [обратиться в техническую поддержку](https://mcs.mail.ru/docs/contacts), чтобы устранить сбой активации ОС. В зависимости от операционной системы будет предоставлен либо ключ активации, либо команда для самостоятельной активации лицензионной копии.
 
 Наличие сбоя активации не влияет на период использования лицензией, так как платформа VK CS не предоставляет пробного периода использования лицензий Microsoft.
 
 Если при создании виртуальной машины вы выбрали операционную систему Windows 2012 / 2016, то Вы можете приобрести ключ активации. Без активации после истечения триального периода (две недели) Windows будет перезагружаться каждый час.
 
-Для получения ключа активации напишите нам в форму обратной связи с указанием учётной записи VK CS и количества лицензий.
+Для получения ключа активации напишите нам в форму обратной связи с указанием учетной записи VK CS и количества лицензий.
 
 ## Remote Desktop Services
 
@@ -59,8 +65,8 @@ VK CS обладает правом предоставления ПО Microsoft 
 
 По умолчанию после установки ОС Windows Server доступно только 2 одновременных подключения к виртуальной машине:
 
-- 1 прямое подключение к Консоли виртуальной машины
-- 1 подключение к удалённому рабочему столу (RDP)
+- 1 прямое подключение к Консоли виртуальной машины.
+- 1 подключение к удаленному рабочему столу (RDP).
 
 Эти 2 подключения могут использоваться только для настройки и администрирования сервера. Чтобы разрешить более двух административных подключений или подключений к нескольким пользователям, необходимо установить роль узла сеансов удаленных рабочих столов и иметь соответствующие клиентские лицензии служб удаленных рабочих столов.
 

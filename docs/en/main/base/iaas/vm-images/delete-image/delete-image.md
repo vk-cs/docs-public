@@ -1,3 +1,1 @@
-To delete an image in the "Images" section of the VK CS control panel, just select the required instance and select "Delete" in its context menu:
-
-![](./assets/1601936220913-1601936220913.png)
+To delete an image in the VK CS "Images" section of the control panel, just select the desired instance and select "Delete" in its context menu.

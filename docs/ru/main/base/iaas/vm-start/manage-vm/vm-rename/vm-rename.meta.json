@@ -1,9 +1,9 @@
 {
   "title": "Переименование инстанса",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Изменение отображаемого имени инстанса",
   "metaTitle": "Переименование инстанса - VK Cloud Solutions",
-  "metaDescription": "Изменение отображаемого имени инстанса  OpenStack CLI Для изменения имени инстанса необходимо выполнить команду: openstack server set --name <имя>",
+  "metaDescription": "",
   "sectionTitle": "Переименование инстанса",
   "markdown": "",
   "icon": "",

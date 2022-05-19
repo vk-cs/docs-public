@@ -1,53 +1,47 @@
-Sharing an image across multiple projects allows you to speed up deployment of instances.
+Sharing an image in several projects allows you to reproach the deployment of instances.
 
-## VK CS panel
+## VK CS Panel
 
-When creating an image, select the "Allow access to all projects" item:
+When creating an image, select "Allow access to all projects".
 
-![](./assets/1602018947333-1602018947333.png)
-
-In this case, the image will not appear automatically in other projects - but a proposal will appear to add it to the project.
-
-![](./assets/1598375177058-1598375177058.png)
+In this case, the image will not appear in other projects automatically — but a suggestion will appear to add it to the project.
 
 ## OpenStack CLI
 
-To set up image sharing in the OpenStack client:
+To configure image sharing in the OpenStack client, you should:
 
 Get a list of images:
 
-```
- openstack image list
+```bash
+openstack image list
 ```
 
-Set up sharing for an image:
+Set the sharing capability for the image:
 
-```
- openstack image set --shared <image ID>
+```bash
+openstack image set --shared <image ID>
 ```
 
 Add a partner project for an image:
 
-```
- openstack image add project <image ID> <partner project ID>
+```bash
+openstack image add project <image ID> <Partner project ID>
 ```
 
 Next, the partner needs to confirm the addition of the image to the project:
 
-```
- openstack image set --accept <image ID>
-```
-
-To view projects that have access to the image, run:
-
-```
- openstack image member list <image ID>
+```bash
+openstack image set --accept <image ID>
 ```
 
-To remove an image from a project, the owner should do:
+To view the projects that have access to the image, run:
 
-```
- openstack image remove project <image ID> <project ID>
+```bash
+openstack image member list <image ID>
 ```
 
---
+To delete an image from a project, the owner should do:
+
+```bash
+openstack image remove project <image ID> <project ID>
+```
