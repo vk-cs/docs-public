@@ -1,9 +1,9 @@
 {
   "title": "VNC консоль",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Получение доступа к консоли и подключение к виртуальной машине под управлением Windows или Linux",
   "metaTitle": "VNC консоль - VK Cloud Solutions",
-  "metaDescription": "VNC используется для просмотра вывода консоли виртуальной машины, вне зависимости от того, есть ли вывод в журнале консоли. Это позволяет передавать активн",
+  "metaDescription": "",
   "sectionTitle": "VNC консоль",
   "markdown": "",
   "icon": "",

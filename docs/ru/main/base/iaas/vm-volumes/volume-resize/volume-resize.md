@@ -14,19 +14,21 @@
 
 Для ОС Linux необходимо использовать команды:
 
-```
+```bash
 fdisk -l
 growpart /dev/vda 1
 sudo resize2fs /dev/vda1
 ```
 
-### Важно
+<warn>
 
-Resize2fs умеет работать только с ext2-4 файловыми системами, а **CentOS** ставит по дефолту xfs.
+Resize2fs умеет работать только с ext2-4 файловыми системами, а CentOS ставит по дефолту xfs.
+
+</warn>
 
 Решением является использование xfs_growfs:
 
-```
+```bash
 xfs_growfs /dev/centos/root
 meta-data=/dev/mapper/centos-root isize=256    agcount=4, agsize=1737216 blks
          =                       sectsz=512   attr=2, projid32bit=1
@@ -44,29 +46,27 @@ data blocks changed from 6948864 to 20055040
 
 Для увеличения размера диска в CLI следует сначала отсоединить диск:
 
-```
+```bash
 openstack server remove volume <ID сервера> <ID диска>
 ```
 
 Далее выполнить увеличение размера:
 
-```
+```bash
 openstack volume set --size <Размер> <ID диска>
 ```
 
 Получить список дисков можно командой:
 
-```
+```bash
 openstack volume list --long
 ```
 
 Увеличить размер диска, который присоединен к инстансу, можно командой клиента cinder:
 
-```
+```bash
 cinder extend <ID диска> <Размер>
 ```
-
----
 
 ## Попробуйте наши сервисы
 

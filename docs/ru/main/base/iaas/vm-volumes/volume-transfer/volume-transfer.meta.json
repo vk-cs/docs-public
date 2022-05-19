@@ -1,9 +1,9 @@
 {
   "title": "Передача дисков между проектами и ВМ",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Передача диска в клиенте OpenStack или в панели управления VK CS",
   "metaTitle": "Передача дисков между проектами и ВМ - VK Cloud Solutions",
-  "metaDescription": "В VK CS возможна передача дисков между проектами и ВМ.  Передача между проектами OpenStack CLI Для передачи диска в клиенте OpenStack следует: Получить списо",
+  "metaDescription": "",
   "sectionTitle": "Передача дисков между проектами и ВМ",
   "markdown": "",
   "icon": "",

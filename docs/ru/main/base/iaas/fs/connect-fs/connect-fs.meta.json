@@ -1,9 +1,9 @@
 {
   "title": "Подключение к ВМ",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Подключение к ВМ c помощью NFS или CIFS протоколов",
   "metaTitle": "Подключение к ВМ - VK Cloud Solutions",
-  "metaDescription": "Способ подключения Файлового хранилища к инстансу зависит от операционной системы и протокола доступа к хранилищу, выбранного при его создании: NFS - это «",
+  "metaDescription": "",
   "sectionTitle": "Подключение к ВМ",
   "markdown": "",
   "icon": "",

@@ -1,9 +1,9 @@
 {
   "title": "Подключение к Windows ВМ",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Создание виртуальной машины на базе ОС Microsoft Windows",
   "metaTitle": "Подключение к Windows ВМ - VK Cloud Solutions",
-  "metaDescription": "После создания виртуальной машины на базе ОС Microsoft Windows можно выполнить удаленное подключение к инстансу, используя RDP (Remote Desktop Protocol). Д",
+  "metaDescription": "",
   "sectionTitle": "Подключение к Windows ВМ",
   "markdown": "",
   "icon": "",

@@ -1,32 +1,34 @@
-Changing the size of the disk is possible only upward from the original size. The disk can be expanded without stopping the server and disconnecting, however, to ensure the safety of existing data, the safest way to perform the operation is to first disconnect the disk.
+Changing the disk size is only possible in a larger direction from the original size. The disk can be enlarged without stopping the server and disconnecting, however, to ensure the safety of the available data, the safest way to perform the operation is to first disconnect the disk.
 
-## VK CS control panel
+## VK CS Control Panel
 
-To increase the size [of your personal account](https://mcs.mail.ru/app/services/infra/servers/), you should:
+To increase the size [in your personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
 
-1.  Go to the «Disks» section of the «Cloud Computing» service.
-2.  In the context menu of the disk, select «Resize disk».
-3.  In the window for changing the size of the disk, enter the required value in GB, click «Confirm».
+1. Go to the "Disks" section of the "Cloud Computing" service.
+2. In the context menu of the disk, select "Change disk size".
+3. In the disk size change window, enter the required value in GB, click "Confirm".
 
-If you change the disk without stopping the instance, then the operating system needs to expand the disk.
+If the disk is changed without stopping the instance, then the disk expansion must be performed in the operating system.
 
-In Windows OS: open the Disk Management snap-in (diskmgmt.msc), in the context menu of the desired partition, select «Expand Partition».
+In Windows OS: open the disk management snap-in (diskmgmt.msc), select "Expand partition" in the context menu of the desired partition.
 
 For Linux OS, you need to use the commands:
 
-```
+```bash
 fdisk -l
 growpart /dev/vda 1
 sudo resize2fs /dev/vda1
 ```
 
-### Important
+<warn>
 
-Resize2fs can only work with ext2-4 file systems, while **CentOS** defaults to xfs.
+Resize2fs can only work with ext2-4 file systems, and CentOS defaults to xfs.
 
-The solution is to use xfs_growfs:
+</warn>
 
-```
+The solution is to use `xfs_growfs`:
+
+```bash
 xfs_growfs /dev/centos/root
 meta-data=/dev/mapper/centos-root isize=256    agcount=4, agsize=1737216 blks
          =                       sectsz=512   attr=2, projid32bit=1
@@ -42,35 +44,33 @@ data blocks changed from 6948864 to 20055040
 
 ## OpenStack CLI
 
-To increase the size of the disk in the CLI, you must first disconnect the disk:
+To increase the size of the disk in the CLI, you must first detach the disk:
 
-```
+```bash
 openstack server remove volume <server ID> <disk ID>
 ```
 
-Next, increase the size:
+Next, perform an increase in size:
 
-```
-openstack volume set --size <Size> <Disk ID>
+```bash
+openstack volume set --size <Size> <disk ID>
 ```
 
-You can get a list of disks with the command:
+To get a list of disks, use the command:
 
-```
+```bash
 openstack volume list --long
 ```
 
-You can increase the size of the disk attached to the instance by using the cinder client command:
+You can increase the size of the disk that is attached to the instance by using the cinder client command:
 
+```bash
+cinder extend <disk ID> <Size>
 ```
-cinder extend <disk id> <size>
-```
-
----
 
 ## Try our services
 
-When you activate your account, we will contact you and add a certain amount of bonus rubles to your account so that you can test the service for 60 days.
+When you activate your account, we will contact you and add a certain amount of bonus rubles to your account so that you can test the service within 60 days.
 
 [Test](https://mcs.mail.ru/app/)
 

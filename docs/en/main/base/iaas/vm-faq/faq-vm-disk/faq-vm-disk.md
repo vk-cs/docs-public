@@ -1,41 +1,41 @@
-## How to enlarge a disk
+## How to increase disk
 
-You can expand your disk using the VK CS panel in the Virtual Machines or Disks section of the Cloud Computing service. You can expand the disk after shutting down the instance or on the fly, but when expanding without shutting down, you will need to expand the disk in the operating system. Full details are available in the article on [expanding the disk](https://mcs.mail.ru/help/en_US/vm-volumes/volume-resize) .
+You can expand the disk using the VK CS panel in the "Virtual Machines" or "Disks" section of the "Cloud Computing" service. You can expand the disk after the instance is shut down or on the fly, however hot expansion will require you to expand the disk in the operating system. Full details are available in the article about [disk expansion](https://mcs.mail.ru/help/ru_RU/vm-volumes/volume-resize).
 
-## Can't shrink disk
+## Unable to shrink disk
 
-The VK CS panel does not allow the operation to reduce the size of the disk, since such a procedure can negatively affect the operation of the file system and the integrity of the data contained in it. Only increasing the disk size is allowed.
+The VK CS panel does not allow you to reduce the disk size, since such a procedure may adversely affect the operation of the file system and the integrity of the data contained in it. Only increasing the disk size is allowed.
 
 ## Why is my disk slow
 
-Disk performance can be affected by various factors, such as background operating system processes, backup mechanisms, automatic updates (applicable to Windows), and running third-party software.
+Disk performance can be affected by various factors such as background operating system processes, backup mechanisms, automatic updates (applicable to Windows), and third-party software running.
 
-In the absence of third-party factors and unsatisfactory disk speed, it is necessary to collect performance statistics using disk utilization from the iostat utility or load average from the top utility. When collecting statistics, it is necessary to take into account all indicators and make a comparison with the [guaranteed disk performance](https://mcs.mail.ru/help/en_US/vm-volumes/volume-sla) provided by the VK CS platform.
+In the absence of third-party factors and unsatisfactory disk performance, it is necessary to collect performance statistics using disk utilization from the iostat utility or load average from the top utility. When collecting statistics, all indicators must be taken into account and compared with the [guaranteed disk performance](https://mcs.mail.ru/help/ru_RU/vm-volumes/volume-sla) provided by the VK CS platform.
 
-If you need to increase performance, you can [increase its size](https://mcs.mail.ru/help/en_US/vm-volumes/volume-resize) or [change the type of](https://mcs.mail.ru/help/en_US/vm-volumes/volume-convert) disk.
+If you need to increase performance, you can [increase its size](https://mcs.mail.ru/help/ru_RU/vm-volumes/volume-resize) or [change type](https://mcs.mail.ru/help/ru_RU/vm-volumes/volume-convert) disk.
 
 ## Can't remove disk
 
-The delete operation is only available for disconnected disks from instances that have become "available". You can remove a disk from the Disks section of the Cloud Computing service.
+The delete operation is only available for drives detached from instances that have entered the "available" state. You can delete a disk from the Disks section of the Cloud Computing service.
 
 ## How to transfer a VM disk to another project
 
-Transferring discs between projects is not possible.
+Read about how to transfer a disk between projects [here](https://mcs.mail.ru/help/ru_RU/vm-volumes/volume-transfer#section-0).
 
-## How to upload your OS image
+## How to boot your OS image
 
-The VK CS platform allows the creation of virtual machines from previously prepared and loaded images. Image preparation consists of installing the necessary set of software components and drivers for working in the services of cloud providers, or downloading a ready-made "prepared" image.
+The VK CS platform allows the creation of virtual machines from previously prepared and downloaded images. Preparing an image consists of installing the necessary set of software components and drivers for working in cloud provider services, or downloading a ready-made “prepared” image.
 
-Information on loading a prepared image into an VK CS project is available in the [documentation article](https://mcs.mail.ru/help/en_US/vm-images) .
+Information on loading a prepared image into a VK CS project is available in the [documentation article](https://mcs.mail.ru/help/ru_RU/vm-images/custom-image).
 
 ## How to change the root disk of a VM
 
-Replacing the root (root) disk is possible if there is a previously created disk in the VK CS project. It can be either a blank disk or a boot disk containing the operating system. For details, see the article on [replacing the root disk](https://mcs.mail.ru/help/en_US/vm-volumes/volume-disconnect) .
+Replacing the root (root) disk is possible if a previously created disk is available in the VK CS project. It can be either an empty disk or a boot disk containing an operating system. Detailed information is in the article about [replacing the root disk](https://mcs.mail.ru/help/ru_RU/vm-volumes/volume-disconnect).
 
-## Is it possible to create a snapshot of the disk
+## Is it possible to create a disk snapshot
 
-Creating a snapshot of a disk for its subsequent recovery is available from [the VK CS panel or Openstack CLI](https://mcs.mail.ru/help/en_US/vm-volumes/volume-snapshot) . The created snapshot will be counted as an additional disk and stored in the corresponding "Disks" section of the "Cloud Computing" service until the disk itself is deleted.
+Creating a disk snapshot for its subsequent recovery is available from the [VK CS panel or Openstack CLI](https://mcs.mail.ru/help/ru_RU/vm-volumes/volume-snapshot). The created snapshot will be counted as an additional disk and stored in the appropriate Disks section of the Cloud Computing service until the disk itself is deleted.
 
-## How to recover a disk from a snapshot
+## How to restore a disk from a snapshot
 
-When recovering from a snapshot, it is possible to create both a separate disk and an instance from a disk. To restore, select a snapshot of the disk in the card of the required disk in the "Disks" section, then select the desired operation in the context menu of the disk.
+When restoring from a snapshot, it is possible to create both a separate disk and an instance from a disk. To restore, select a disk snapshot in the card of the required disk in the "Disks" section, then select the desired operation in the context menu of the disk.

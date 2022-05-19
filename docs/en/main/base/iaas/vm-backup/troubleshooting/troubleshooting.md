@@ -1,26 +1,26 @@
-## Если возникает проблема "невозможно выполнить резервное копирование" (отсутствует пункт меню или ВМ нет в списке)
+## The "backup cannot be performed" problem
 
-Данная проблема может возникнуть из-за отсутствия в системе гостевого агента QEMU (**qemu guest-agent**) – он обеспечивает консистентное со стороны файловых систем резервное копирование.
+The problem "backup cannot be performed" (the menu item is missing or the VM is not in the list) may arise due to the absence of a QEMU guest agent in the system (*qemu guest-agent) - it provides consistent backup from file systems.
 
-Для его установки на Linux (для deb-based дистрибутивов – Ubuntu, Debian) выполните:
+To install it on Linux (for deb-based distributions – Ubuntu, Debian), run:
 
-```
+```bash
 apt-get install qemu-guest-agent
 ```
 
-Для rpm-based дистрибутивов – CentOS выполните следующее:
+For rpm-based distributions — CentOS, do the following:
 
-```
+```bash
 yum install qemu-guest-agent
 ```
 
-После установки qemu-guest-agent его нужно добавить в автостарт системы:
+After installing qemu-guest-agent, you need to add it to the system autostart:
 
-```
+```bash
 systemctl start qemu-guest-agent
 systemctl enable qemu-guest-agent
 ```
 
-В случае с Windows загрузите установочный файл по [ссылке](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-qemu-ga/qemu-ga-win-7.6.2-2.el7ev/qemu-ga-x64.msi).
+In the case of Windows, download the installation file by [ссылке](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-qemu-ga/qemu-ga-win-7.6.2-2.el7ev/qemu-ga-x64.msi).
 
-После установки требуется прописать на ВМ дополнительные метаданные – пожалуйста, [обратитесь для этого в техническую поддержку](https://mcs.mail.ru/help/contact-us). В некоторых случаях может потребоваться перезагрузка ВМ.
+After installation, you need to register additional metadata on the VM – please [contact technical support for this](https://mcs.mail.ru/help/contact-us). In some cases, you may need to restart the VM.

@@ -1,9 +1,9 @@
 {
   "title": "Image import and export",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Uploading an individual VM image, previously created locally, to the VK CS project",
   "metaTitle": "Image import and export - VK Cloud Solutions",
-  "metaDescription": "Image import Note Currently, images in the vmdk, qcow2, raw, iso format are supported. It is possible to load an individual image of a virtual machine, cre",
+  "metaDescription": "",
   "sectionTitle": "Image import and export",
   "markdown": "",
   "icon": "",

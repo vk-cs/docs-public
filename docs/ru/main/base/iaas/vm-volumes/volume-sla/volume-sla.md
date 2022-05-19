@@ -1,34 +1,45 @@
 Понятие «Диск» на платформе VK CS является аналогом физического носителя информации, такого как HDD или SSD.
 
-**Диск —** это сетевое блочное устройство, которые обеспечивает хранилище данных для инстансов. Все диски на платформе VK CS являются сетевыми и надежно защищены репликацией данных, обеспечивающими надежность хранения и отказоустойчивость.
+Диск — это сетевое блочное устройство, которые обеспечивает хранилище данных для инстансов. Все диски на платформе VK CS являются сетевыми и надежно защищены репликацией данных, обеспечивающими надежность хранения и отказоустойчивость.
 
 Преимущества сетевых дисков:
 
-**Гибкость**: диски — это независимые ресурсы, поэтому их можно перемещать между инстансами в одном центре обработки данных, и можно увеличивать размер диска, не выключая инстанс, к которому он подключен.
+- **Гибкость**. Диски — это независимые ресурсы, поэтому их можно перемещать между инстансами в одном центре обработки данных, и можно увеличивать размер диска, не выключая инстанс, к которому он подключен.
+- **Простота**. Диски функционируют как универсальные блочные устройства, поэтому можно рассматривать присоединенные диски как локально подключенные накопители. Это позволяет разбивать, форматировать диски и управлять ими с помощью знакомых инструментов и методов.
+- **Применение**. Диски является независимым элементом проекта и может существовать отдельно от инстанса. Это удобно, когда требуется изменить размер диска вне зависимости от конфигурации виртуальной машины.
+- **Отказоустойчивость**. Диски обеспечивают надежное хранение данных и позволяют непрерывно выполнять операции чтения и записи даже при выходе из строя одновременно нескольких физических дисков.
 
-**Простота**: диски функционируют как универсальные блочные устройства, поэтому можно рассматривать присоединенные диски как локально подключенные накопители. Это позволяет разбивать, форматировать диски и управлять ими с помощью знакомых инструментов и методов.
-
-**Применение**: диск является независимым элементом проекта и может существовать отдельно от инстанса. Это удобно, когда требуется изменить размер диска вне зависимости от конфигурации виртуальной машины.
-
-**Отказоустойчивость**: диски обеспечивают надежное хранение данных и позволяют непрерывно выполнять операции чтения и записи даже при выходе из строя одновременно нескольких физических дисков.
-
-**Внимание**
+<warn>
 
 Созданный диск занимает место в общем хранилище, поэтому его наличие оплачивается отдельно, даже если он отключен от инстанса.
 
+</warn>
+
 ## Типы дисков
 
-<table style="width: 100%;"><tbody><tr><td style="width: 25%; background-color: rgb(239, 239, 239);"><p id="isPasted">Тип диска</p></td><td style="width: 25%; background-color: rgb(239, 239, 239);"><p id="isPasted">Название в API</p></td><td style="width: 25%; background-color: rgb(239, 239, 239);"><p id="isPasted">Выбор зоны доступности при создании диска</p></td><td style="background-color: rgb(239, 239, 239);">Описание<strong><br></strong></td></tr><tr><td style="width: 25.0000%;"><p id="isPasted">Сетевой HDD</p></td><td style="width: 25.0000%;"><span id="isPasted" style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">ceph-hdd</span><p dir="ltr" id="isPasted" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#999999;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">deprecated:</span></p><p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#999999;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">dp1, ms1</span></p><br></td><td style="width: 25.0000%;"><p id="isPasted">Да</p></td><td style="width: 25.0000%;"><p id="isPasted">Сетевой HDD диск с низкой скоростью работы. Обладает тройной репликацией между несколькими серверами СХД внутри зоны доступности.</p></td></tr><tr><td style="width: 25.0000%;"><p id="isPasted">Сетевой HDD с георепликацией</p></td><td style="width: 25.0000%;"><span id="isPasted" style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">ceph</span></td><td style="width: 25.0000%;"><p id="isPasted">Не указывается по причине георепликации</p></td><td style="width: 25.0000%;"><p id="isPasted">Сетевой HDD диск с низкой скоростью работы. Обладает тройной георепликацией между несколькими зонами доступности.</p></td></tr><tr><td style="width: 25.0000%;"><p id="isPasted">Сетевой SSD</p></td><td style="width: 25.0000%;"><span id="isPasted" style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">ceph-ssd</span><p dir="ltr" id="isPasted" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#999999;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">deprecated:</span></p><p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#999999;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">dp1-ssd, ko1-ssd</span></p><br></td><td style="width: 25.0000%;"><p id="isPasted">Да</p></td><td style="width: 25.0000%;"><p id="isPasted">Сетевой SSD диск. Обладает тройной репликацией между несколькими серверами СХД внутри зоны доступности.</p></td></tr><tr><td style="width: 25.0000%;"><p id="isPasted">Сетевой SSD с георепликацией</p></td><td style="width: 25.0000%;"><span id="isPasted" style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">ssd</span></td><td style="width: 25.0000%;"><p id="isPasted">Не указывается по причине георепликации</p></td><td style="width: 25.0000%;"><p id="isPasted">Сетевой SSD диск. Обладает тройной георепликацией между несколькими зонами доступности.</p></td></tr><tr><td style="width: 25.0000%;"><p id="isPasted">High IOPS SSD</p></td><td style="width: 25.0000%;"><span id="isPasted" style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">high-iops</span><p dir="ltr" id="isPasted" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#999999;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">deprecated:</span></p><p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;"><span style="font-size:11pt;font-family:Arial;color:#999999;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">local-ssd, ko1-local-ssd, ko1-high-iops, dp1-high-iops, ko1-local-ssd-g2</span></p><br></td><td style="width: 25.0000%;"><p id="isPasted">Да</p></td><td style="width: 25.0000%;"><p id="isPasted">Сетевой SSD диск с двойной репликацией (обе копии находятся на одном сервере СХД) и повышенной скоростью работы.</p></td></tr><tr><td style="width: 25.0000%;">Low Latency NVME</td><td style="width: 25.0000%;"><span id="isPasted" style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">ef-nvme</span></td><td style="width: 25.0000%;"><div style="text-align: left;">Располагается на одном гипервизоре с виртуальной машиной</div></td><td style="width: 25.0000%;">Локальный SSD диск с двойной репликацией (обе копии находятся на одном гипервизоре), высокой скоростью работы и низкими задержками.</td></tr></tbody></table>
+| Тип диска | Название в API | Выбор зоны доступности при создании диска | Описание |
+| --- | --- | --- | --- |
+| Сетевой SSD | ceph-hdd deprecated: <br> dp1, <br> ms1 | Да | Сетевой HDD диск с низкой скоростью работы. <br> Обладает тройной репликацией между несколькими серверами СХД внутри зоны доступности. |
+| Сетевой SSD с георепликацией | ceph | Не указывается по причине георепликации | Сетевой HDD диск с низкой скоростью работы. <br> Обладает тройной георепликацией между несколькими зонами доступности. |
+| High IOPS SSD | high-iops deprecated:<br> local-ssd, <br> ko1-local-ssd, <br> ko1-high-iops, <br> dp1-high-iops, <br> ko1-local-ssd-g2 | Да | Сетевой SSD диск с двойной репликацией (обе копии находятся на одном сервере СХД)<br> и повышенной скоростью работы. |
+| Low Latency NVME | ef-nvme | Располагается на одном гипервизоре с виртуальной машиной | Локальный SSD диск с двойной репликацией (обе копии находятся на одном гипервизоре), <br> высокой скоростью работы и низкими задержками. |
 
-**Внимание**
+<warn>
 
 Диски с типами Сетевой HDD, Сетевой SSD и High IOPS SSD рекомендуется располагать в той же зоне доступности, где находится виртуальная машина, к которой они будут подключены. В противном случае производительность виртуальной машины снизится, потому что диск будет расположен в другом датацентре.
+
+</warn>
 
 ## SLA
 
 Для каждого типа дисков существует ограничение по производительности, необходимое для гарантирования стабильности работы диска вне зависимости от его типа или объема.
 
-<table style="width: 100%;"><tbody><tr><td style="width: 20.9335%; background-color: rgb(239, 239, 239); vertical-align: middle;">Тип диска</td><td style="width: 11.3924%; background-color: rgb(239, 239, 239); text-align: center; vertical-align: middle;">min IOPS read</td><td style="width: 11.5443%; background-color: rgb(239, 239, 239); text-align: center; vertical-align: middle;">min IOPS write</td><td style="width: 11.1392%; background-color: rgb(239, 239, 239); text-align: center; vertical-align: middle;">IOPS/GB read</td><td style="width: 11.1281%; background-color: rgb(239, 239, 239); text-align: center; vertical-align: middle;">IOPS/GB write</td><td style="width: 11.8902%; background-color: rgb(239, 239, 239); text-align: center; vertical-align: middle;">max IOPS read</td><td style="width: 12.5823%; background-color: rgb(239, 239, 239); text-align: center; vertical-align: middle;">max IOPS write</td><td style="width: 9.3164%; background-color: rgb(239, 239, 239); text-align: center; vertical-align: middle;">Latency SLA</td></tr><tr><td style="width: 20.9335%; background-color: rgb(239, 239, 239);">HDD ceph (типы дисков ceph, ms1, dp1)</td><td style="width: 11.3924%; vertical-align: middle; text-align: center;">300</td><td style="width: 11.5443%; vertical-align: middle; text-align: center;">150</td><td style="width: 11.1392%; vertical-align: middle; text-align: center;">1</td><td style="width: 11.1281%; text-align: center; vertical-align: middle;">1</td><td style="width: 11.8902%; vertical-align: middle; text-align: center;">2 400</td><td style="width: 12.5823%; vertical-align: middle; text-align: center;">800</td><td style="width: 9.3164%;"><br></td></tr><tr><td style="width: 20.9335%; background-color: rgb(239, 239, 239);">SSD ceph (типы дисков ssd, dp1-ssd, ko1-ssd)</td><td style="width: 11.3924%; vertical-align: middle; text-align: center;">1 000</td><td style="width: 11.5443%; vertical-align: middle; text-align: center;">500</td><td style="width: 11.1392%; vertical-align: middle; text-align: center;">30</td><td style="width: 11.1281%; vertical-align: middle; text-align: center;">15</td><td style="width: 11.8902%; vertical-align: middle; text-align: center;">16 000</td><td style="width: 12.5823%; vertical-align: middle; text-align: center;">8 000</td><td style="width: 9.3164%;"><br></td></tr><tr><td style="width: 20.9335%; background-color: rgb(239, 239, 239);">SSD High IOPS</td><td style="width: 11.3924%; vertical-align: middle; text-align: center;">10 000</td><td style="width: 11.5443%; text-align: center;">5 000</td><td style="width: 11.1392%; vertical-align: middle; text-align: center;">30</td><td style="width: 11.1281%; vertical-align: middle; text-align: center;">25</td><td style="width: 11.8902%; vertical-align: middle; text-align: center;">45 000</td><td style="width: 12.5823%; vertical-align: middle; text-align: center;">30 000</td><td style="width: 9.3164%; text-align: center;"><br></td></tr><tr><td style="width: 20.9335%; background-color: rgb(239, 239, 239);">Low Latency NVME</td><td style="width: 11.3924%; vertical-align: middle; text-align: center;">10 000</td><td style="width: 11.5443%; text-align: center;">5 000</td><td style="width: 11.1392%; vertical-align: middle; text-align: center;">70</td><td style="width: 11.1281%; vertical-align: middle; text-align: center;">35</td><td style="width: 11.8902%; vertical-align: middle; text-align: center;">75 000&nbsp;</td><td style="width: 12.5823%; vertical-align: middle; text-align: center;">50 000</td><td style="width: 9.3164%; text-align: center;">0,5</td></tr></tbody></table>
+| Тип диска | min IOPS read | min IOPS write | IOPS/GB read | IOPS/GB write | max IOPS read | max IOPS write | Tab8 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| HDD ceph (типы дисков ceph, ms1, dp1) | 300 | 150 | 1 | 1 | 2 400 | 800 | — |
+| SSD ceph (типы дисков ssd, dp1-ssd, ko1-ssd) | 1 000 | 500 | 30 | 15 | 16 000 | 8 000 | — |
+| SSD High IOPS | 10 000 | 5 000 | 30 | 25 | 45 000 | 30 000 | — |
+| Low Latency NVME | 10 000 | 5 000 | 70 | 35 | 75 000 | 50 000 | 0,5 |
 
 \* полные характеристики приведены ниже в отдельных таблицах для каждого типа дисков.
 
@@ -48,13 +59,15 @@
 
 <table border="0" cellpadding="0" cellspacing="0" width="769"><tbody><tr><td class="xl85" height="48" rowspan="2" style="width: 15.0923%; background-color: rgb(239, 239, 239);" width="14.044213263979193%">Объём в GB</td><td class="xl84" rowspan="2" style="width: 16.4908%; background-color: rgb(239, 239, 239);" width="13.524057217165149%">Размер блока</td><td class="xl82" colspan="2" style="width: 25.7256%; background-color: rgb(239, 239, 239);" width="28.34850455136541%">Чтение</td><td class="xl84" rowspan="2" style="width: 16.095%; background-color: rgb(239, 239, 239);" width="14.694408322496749%">Размер блока</td><td class="xl82" colspan="2" style="width: 26.57%; background-color: rgb(239, 239, 239);" width="29.388816644993497%">Запись</td></tr><tr><td class="xl81" height="28" style="width: 11.7414%; background-color: rgb(239, 239, 239);">IOPS</td><td class="xl81" style="width: 13.9842%; background-color: rgb(239, 239, 239);">Mb/s</td><td class="xl81" style="width: 11.7236%; background-color: rgb(239, 239, 239);">IOPS</td><td class="xl81" style="width: 14.7553%; background-color: rgb(239, 239, 239);">Mb/s</td></tr><tr><td class="xl83" height="60" rowspan="3" style="width: 15.0923%;">10</td><td class="xl82" style="width: 16.4908%;">4K</td><td class="xl82" style="width: 11.6901%;">10000</td><td class="xl82" style="width: 13.9842%;">39,0625</td><td class="xl82" style="width: 16.095%;">4K</td><td class="xl82" style="width: 11.7236%;">5000</td><td class="xl82" style="width: 14.7553%;">19,53125</td></tr><tr><td class="xl82" height="20" style="width: 16.4908%;">64K</td><td class="xl82" style="width: 11.6901%;"><br></td><td class="xl82" style="width: 13.9842%;">350</td><td class="xl82" style="width: 16.095%;">64K</td><td class="xl82" style="width: 11.7236%;"><br></td><td class="xl82" style="width: 14.7553%;">200</td></tr><tr><td class="xl82" height="20" style="width: 16.4908%;">1M</td><td class="xl82" style="width: 11.6901%;"><br></td><td class="xl82" style="width: 13.9842%;">500</td><td class="xl82" style="width: 16.095%;">1M</td><td class="xl82" style="width: 11.7236%;"><br></td><td class="xl82" style="width: 14.7553%;">500</td></tr><tr><td class="xl83" height="60" rowspan="3" style="width: 15.0923%;">50</td><td class="xl82" style="width: 16.4908%;">4K</td><td class="xl82" style="width: 11.6901%;">10000</td><td class="xl82" style="width: 13.9842%;">39,0625</td><td class="xl82" style="width: 16.095%;">4K</td><td class="xl82" style="width: 11.7236%;">5000</td><td class="xl82" style="width: 14.7553%;">19,53125</td></tr><tr><td class="xl82" height="20" style="width: 16.4908%;">64K</td><td class="xl82" style="width: 11.6901%;"><br></td><td class="xl82" style="width: 13.9842%;">350</td><td class="xl82" style="width: 16.095%;">64K</td><td class="xl82" style="width: 11.7236%;"><br></td><td class="xl82" style="width: 14.7553%;">200</td></tr><tr><td class="xl82" height="20" style="width: 16.4908%;">1M</td><td class="xl82" style="width: 11.6901%;"><br></td><td class="xl82" style="width: 13.9842%;">500</td><td class="xl82" style="width: 16.095%;">1M</td><td class="xl82" style="width: 11.7236%;"><br></td><td class="xl82" style="width: 14.7553%;">500</td></tr><tr><td class="xl83" height="60" rowspan="3" style="width: 15.0923%;">100</td><td class="xl82" style="width: 16.4908%;">4K</td><td class="xl82" style="width: 11.6901%;">10000</td><td class="xl82" style="width: 13.9842%;">39,0625</td><td class="xl82" style="width: 16.095%;">4K</td><td class="xl82" style="width: 11.7236%;">5000</td><td class="xl82" style="width: 14.7553%;">19,53125</td></tr><tr><td class="xl82" height="20" style="width: 16.4908%;">64K</td><td class="xl82" style="width: 11.6901%;"><br></td><td class="xl82" style="width: 13.9842%;">350</td><td class="xl82" style="width: 16.095%;">64K</td><td class="xl82" style="width: 11.7236%;"><br></td><td class="xl82" style="width: 14.7553%;">250</td></tr><tr><td class="xl82" height="20" style="width: 16.4908%;">1M</td><td class="xl82" style="width: 11.6901%;"><br></td><td class="xl82" style="width: 13.9842%;">500</td><td class="xl82" style="width: 16.095%;">1M</td><td class="xl82" style="width: 11.7236%;"><br></td><td class="xl82" style="width: 14.7553%;">500</td></tr><tr><td class="xl83" height="60" rowspan="3" style="width: 15.0923%;">250</td><td class="xl82" style="width: 16.4908%;">4K</td><td class="xl82" style="width: 11.6901%;">18750</td><td class="xl82" style="width: 13.9842%;">73,2421875</td><td class="xl82" style="width: 16.095%;">4K</td><td class="xl82" style="width: 11.7236%;">8750</td><td class="xl82" style="width: 14.7553%;">34,1796875</td></tr><tr><td class="xl82" height="20" style="width: 16.4908%;">64K</td><td class="xl82" style="width: 11.6901%;"><br></td><td class="xl82" style="width: 13.9842%;">350</td><td class="xl82" style="width: 16.095%;">64K</td><td class="xl82" style="width: 11.7236%;"><br></td><td class="xl82" style="width: 14.7553%;">250</td></tr><tr><td class="xl82" height="20" style="width: 16.4908%;">1M</td><td class="xl82" style="width: 11.6901%;"><br></td><td class="xl82" style="width: 13.9842%;">585,9375</td><td class="xl82" style="width: 16.095%;">1M</td><td class="xl82" style="width: 11.7236%;"><br></td><td class="xl82" style="width: 14.7553%;">500</td></tr><tr><td class="xl83" height="60" rowspan="3" style="width: 15.0923%;">500</td><td class="xl82" style="width: 16.4908%;">4K</td><td class="xl82" style="width: 11.6901%;">37500</td><td class="xl82" style="width: 13.9842%;">146,484375</td><td class="xl82" style="width: 16.095%;">4K</td><td class="xl82" style="width: 11.7236%;">17500</td><td class="xl82" style="width: 14.7553%;">68,359375</td></tr><tr><td class="xl82" height="20" style="width: 16.4908%;">64K</td><td class="xl82" style="width: 11.6901%;"><br></td><td class="xl82" style="width: 13.9842%;">585,9375</td><td class="xl82" style="width: 16.095%;">64K</td><td class="xl82" style="width: 11.7236%;"><br></td><td class="xl82" style="width: 14.7553%;">500</td></tr><tr><td class="xl82" height="20" style="width: 16.4908%;">1M</td><td class="xl82" style="width: 11.6901%;"><br></td><td class="xl82" style="width: 13.9842%;">1171,875</td><td class="xl82" style="width: 16.095%;">1M</td><td class="xl82" style="width: 11.7236%;"><br></td><td class="xl82" style="width: 14.7553%;">546,875</td></tr><tr><td class="xl83" height="60" rowspan="3" style="width: 15.0923%;">1000</td><td class="xl82" style="width: 16.4908%;">4K</td><td class="xl82" style="width: 11.6901%;">75000</td><td class="xl82" style="width: 13.9842%;">292,96875</td><td class="xl82" style="width: 16.095%;">4K</td><td class="xl82" style="width: 11.7236%;">35000</td><td class="xl82" style="width: 14.7553%;">136,71875</td></tr><tr><td class="xl82" height="20" style="width: 16.4908%;">64K</td><td class="xl82" style="width: 11.6901%;"><br></td><td class="xl82" style="width: 13.9842%;">1171,875</td><td class="xl82" style="width: 16.095%;">64K</td><td class="xl82" style="width: 11.7236%;"><br></td><td class="xl82" style="width: 14.7553%;">546,875</td></tr><tr><td class="xl82" height="20" style="width: 16.4908%;">1M</td><td class="xl82" style="width: 11.6901%;"><br></td><td class="xl82" style="width: 13.9842%;">1200</td><td class="xl82" style="width: 16.095%;">1M</td><td class="xl82" style="width: 11.7236%;"><br></td><td class="xl82" style="width: 14.7553%;">900</td></tr><tr><td class="xl83" height="60" rowspan="3" style="width: 15.0923%;">2000</td><td class="xl82" style="width: 16.4908%;">4K</td><td class="xl82" style="width: 11.6901%;">75000</td><td class="xl82" style="width: 13.9842%;">292,96875</td><td class="xl82" style="width: 16.095%;">4K</td><td class="xl82" style="width: 11.7236%;">50000</td><td class="xl82" style="width: 14.7553%;">195,3125</td></tr><tr><td class="xl82" height="20" style="width: 16.4908%;">64K</td><td class="xl82" style="width: 11.6901%;"><br></td><td class="xl82" style="width: 13.9842%;">1171,875</td><td class="xl82" style="width: 16.095%;">64K</td><td class="xl82" style="width: 11.7236%;"><br></td><td class="xl82" style="width: 14.7553%;">781,25</td></tr><tr><td class="xl82" height="20" style="width: 16.4908%;">1M</td><td class="xl82" style="width: 11.6901%;"><br></td><td class="xl82" style="width: 13.9842%;">1200</td><td class="xl82" style="width: 16.095%;">1M</td><td class="xl82" style="width: 11.7236%;"><br></td><td class="xl82" style="width: 14.7553%;">900</td></tr></tbody></table>
 
-**Примечание**
+<info>
 
 Производительность диска напрямую зависит от его объема. При необходимости увеличить скорость обработки данных иногда достаточно увеличить размер требуемого диска.
 
+</info>
+
 ## Как провести тестирование
 
-**Для Windows**
+### Для Windows
 
 Для измерения показателей IOPS чтения/записи можно воспользоваться программным обеспечением DiskSPD или Fio.
 
@@ -62,25 +75,25 @@
 
 DiskPSD — официальный инструмент тестирования, рекомендованный компанией Microsoft и [включенная в репозитории разработчиков](https://aka.ms/diskspd). Следующие шаги необходимы для выполнения тестирования:
 
-1.  Загрузить утилиту с официального ресурса и распаковать ее в удобное место: [https://github.com/microsoft/diskspd/releases/latest](https://github.com/microsoft/diskspd/releases/latest)
-2.  Запустить командную строку от администратора и перейти в каталог с распакованной утилитой DiskSpd-2.0.21a\\amd64\\
-3.  Предварительно создать пустой файл с размером не менее 10GB:
+1. Загрузить утилиту с официального ресурса и распаковать ее в удобное место: [https://github.com/microsoft/diskspd/releases/latest](https://github.com/microsoft/diskspd/releases/latest).
+2. Запустить командную строку от администратора и перейти в каталог с распакованной утилитой DiskSpd-2.0.21a\\amd64\\.
+3. Предварительно создать пустой файл с размером не менее 10GB:
 
-    ```
-    fsutil file createnew C:\temp\test.bin 10485760000
-    ```
+```bash
+fsutil file createnew C:\temp\test.bin 10485760000
+```
 
 4.  Для выполнения тестов необходимо применить соответствующую типу теста команду:
 
 - Тест случайной записи:
 
-```
+```bash
 diskspd -Suw -b4K -o1 -t32 -r -w100 C:\temp\test.bin > C:\temp\random_write_results.txt
 ```
 
 - Тест случайного чтения:
 
-```
+```bash
 diskspd -Suw -b4K -o1 -t32 -r -w0 C:\temp\test.bin > C:\temp\random_read_results.txt
 ```
 
@@ -92,19 +105,21 @@ diskspd -Suw -b4K -o1 -t32 -r -w0 C:\temp\test.bin > C:\temp\random_read_results
 - \--filename (имя тестируемого устройства)
 - \--iodepth (8, 16, 32 или 64)
 
-Скачать и установить Fio с официального ресурса: [https://bsdio.com/fio/](https://bsdio.com/fio/)
+Скачать и установить Fio с [официального ресурса](https://bsdio.com/fio/).
 
 Команда для выполнения теста:
 
-```
+```bash
 fio --name=randwrite --iodepth=32 --rw=randwrite --bs=4k --direct=1 --size=10G --numjobs=1 --runtime=240 --group_reporting --filename=C:\Users\ADMIN\test
 ```
 
-Примечание
+<info>
 
 Механика работы Fio отличается от инструмента DiskSPD. Fio выполняет запись в 2 файла, поэтому результаты измерения могут быть разными у обоих инструментов. Тем не менее корпорация Microsoft доверяет своему инструменту и рекомендует на операционных системах семейства Windows использовать DiskSPD.
 
-**Для Linux**
+</info>
+
+### Для Linux
 
 Измерения показателей IOPS чтения/записи осуществляются программным обеспечением fio и указанием параметра rate_iops. Тесты выполняются со значениями:
 
@@ -114,19 +129,23 @@ fio --name=randwrite --iodepth=32 --rw=randwrite --bs=4k --direct=1 --size=10G -
 
 Установка Fio:
 
-```
+```bash
 sudo apt install fio
 ```
 
 Команда для выполнения теста:
 
-```
+```bash
 fio --name=randwrite --ioengine=libaio --iodepth=32 --rw=randwrite --bs=4k --direct=1 --size=512M --numjobs=1 --runtime=240 --group_reporting --filename=/home/user/test
 ```
 
-**Результаты измерений:**
+Результаты измерений:
 
 - read: IOPS
 - write: IOPS
 
-<table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(1%); width: 99%;" width="170"><tbody><tr><td height="19" style="background-color: rgb(239, 239, 239);" width="45.88235294117647%"><strong>Типы проводимого тестирования</strong></td><td style="background-color: rgb(239, 239, 239);" width="54.11764705882353%"><strong>Результат тестирования (Количество IOPS)</strong></td></tr><tr><td height="19">Чтение/запись блоками по 4 КБ в 32 потока</td><td>В соответствии со значениями SLA</td></tr><tr><td height="19">Чтение/запись блоками по 8 КБ в 32 потока</td><td>не менее 75% от SLA</td></tr><tr><td height="19">Чтение/запись &nbsp;по 16 КБ в 32 потока</td><td>не менее 50% от SLA</td></tr></tbody></table>
+| Типы проводимого тестирования | Результат тестирования (Количество IOPS) |
+| --- | --- |
+| Чтение/запись блоками по 4 КБ в 32 потока | В соответствии со значениями SLA |
+| Чтение/запись блоками по 8 КБ в 32 потока | Не менее 75% от SLA |
+| Чтение/запись  по 16 КБ в 32 потока | Не менее 50% от SLA |

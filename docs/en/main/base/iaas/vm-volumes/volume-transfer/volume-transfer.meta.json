@@ -1,9 +1,9 @@
 {
   "title": "Transferring discs between projects",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Disk transfer in the OpenStack client or in the VK CS control panel",
   "metaTitle": "Transferring discs between projects - VK Cloud Solutions",
-  "metaDescription": "Transferring discs between projects is possible in VK CS. OpenStack CLI To transfer a disk in the OpenStack client: Get a list of disks: openstack volume l",
+  "metaDescription": "",
   "sectionTitle": "Transferring discs between projects",
   "markdown": "",
   "icon": "",
