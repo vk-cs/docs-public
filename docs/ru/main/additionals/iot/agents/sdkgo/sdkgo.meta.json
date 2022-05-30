@@ -1,13 +1,13 @@
 {
-    "title": "SDK для Go",
-    "pageDescription": "",
-    "shortDescription": "Описание работы с Go SDK для Agents платформы IoT VK Cloud Solutions.",
-    "metaTitle": "SDK для Go - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "SDK для Go",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0,
-    "uuid": ""
-  }
+  "title": "SDK для Go",
+  "pageDescription": "",
+  "shortDescription": "Описание работы с Go SDK для Agents платформы IoT VK Cloud Solutions.",
+  "metaTitle": "SDK для Go - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "SDK для Go",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "522e5146-d9e8-4c28-af24-f216c55589ff"
+}
