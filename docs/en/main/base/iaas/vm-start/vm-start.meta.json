@@ -8,5 +8,6 @@
   "markdown": "Creating, connecting, and managing a virtual machine, its resources, and statuses.",
   "icon": "",
   "infobarItems": null,
-  "weight": 0
+  "weight": 0,
+  "uuid": "68f79276-fd71-4b20-90ea-0324a0407ee4"
 }
