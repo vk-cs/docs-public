@@ -1,9 +1,9 @@
 {
   "title": "Connecting file storage to VM",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Connecting to a VM using NFS or CIFS protocols",
   "metaTitle": "Connecting file storage to VM - VK Cloud Solutions",
-  "metaDescription": "The way to connect File Storage to an instance depends on the operating system and the storage access protocol selected when it was created: NFS is a",
+  "metaDescription": "",
   "sectionTitle": "Connecting file storage to VM",
   "markdown": "",
   "icon": "",

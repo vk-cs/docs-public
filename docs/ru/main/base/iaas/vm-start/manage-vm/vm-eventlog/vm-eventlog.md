@@ -1,23 +1,21 @@
-Журнал событий инстанса (event list) - это набор записей, отражающих события виртуальной машины. Событие содержит тип, время и ID запроса.
+The instance event log (event list) is a set of records that reflect the events of a virtual machine. The event contains the type, time, and ID of the request.
 
 ## OpenStack CLI
 
-Для просмотра журнала событий требуется выполнить команду:
-
-```
-openstack server event list --long <ID инстанса>
-```
-
-Посмотреть событие детально:
-
-```
-openstack server event show <ID инстанса> <request ID>
+To view the event log, you need to run the command:
+```bash
+openstack server event list --long <instance ID>
 ```
 
-Возможные события
+View the event in detail:
+```bash
+openstack server event show <instance ID> <request ID>
+```
 
-- live-migration - живая миграция инстанса
-- resize - изменение конфигурации
-- start/stop - запуск/остановка сервера
-- create  - создание инстанса
-- extend_volume - увеличение размера диска
+Possible events:
+
+- live-migration — live instance migration.
+- resize — change the configuration.
+- start/stop — start/stop the server.
+- create — create an instance.
+- extend_volume — increase the disk size.

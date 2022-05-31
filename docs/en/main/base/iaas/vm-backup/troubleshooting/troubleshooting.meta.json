@@ -1,12 +1,11 @@
 {
-  "title": "Устранение проблем",
+  "title": "Troubleshooting",
   "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Устранение проблем - VK Cloud Solutions",
-  "metaDescription": "Если возникает проблема",
-  "sectionTitle": "Устранение проблем",
+  "shortDescription": "Solving Backup problems",
+  "metaTitle": "Troubleshooting - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Troubleshooting",
   "markdown": "",
   "icon": "",
-  "infobarItems": null,
-  "uuid": "b8c9ede3-4c3a-43d5-8d1f-c4d2f370cbcd"
+  "infobarItems": null
 }

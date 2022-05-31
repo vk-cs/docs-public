@@ -1,74 +1,97 @@
 ## General information
 
-The VK CS platform allows you to create virtual machines with pre-installed licensed copies of Microsoft Windows Server operating systems, as well as use additional available Microsoft software products, such as: SQL Server, Remote Desktop Services, Exchange Server with monthly payment.
+<info>
 
-VK CS is authorized to provide Microsoft software under the Service Provider License Agreement (SPLA) for the purpose of providing software services.
+On the territory of Crimea, Microsoft licensing services are not provided to customers of individuals and legal entities registered or located on the territory of Crimea, in accordance with the terms of the Microsoft SPLA agreement.
 
-At the moment, the list of provided software products within the SPLA is limited to the following set:
+</info>
 
-<table style="width: 100%;"><tbody><tr><td style="width: 19.5616%; background-color: rgb(239, 239, 239); text-align: center;">The code</td><td style="width: 47.2175%; background-color: rgb(239, 239, 239); text-align: center;">Name</td><td style="width: 33.2209%; background-color: rgb(239, 239, 239); text-align: center;">Description</td></tr><tr><td style="width: 19.5616%;">9EM-00562</td><td style="width: 47.2175%;">WinSvrSTDCore ALNG LicSAPk MVL 2Lic CoreLic</td><td style="width: 33.2209%;">Windows Server Standard edition (2 vCPU)</td></tr><tr><td style="width: 19.5616%;">7NQ-00302</td><td style="width: 47.2175%;">SQLSvrStdCore ALNG LicSAPk MVL 2Lic CoreLic</td><td style="width: 33.2209%;">Microsoft SQL Server Standard (2 vCPU)</td></tr><tr><td style="width: 19.5616%;">7JQ-00341</td><td style="width: 47.2175%;">SQLSvrEntCore ALNG LicSAPk MVL 2Lic CoreLic</td><td style="width: 33.2209%;">Microsoft SQL Server Enterprise Core Edition (2 vCPU)</td></tr><tr><td style="width: 19.5616%;">228-05018</td><td style="width: 47.2175%;">SQLSvrStd ALNG LicSAPk MVL SAL</td><td style="width: 33.2209%;">Microsoft SQL Server Standard Edition (per user)</td></tr><tr><td style="width: 19.5616%;">6WC-00002</td><td style="width: 47.2175%;">WinRmtDsktpSrvcsSAL ALNG LicSAPk MVL</td><td style="width: 33.2209%;">Windows Remote Desktop Services (per user)</td></tr></tbody></table>
+The VK CS platform allows you to create virtual machines with pre-installed licensed copies of Microsoft Windows Server operating systems, as well as use additional Microsoft software products available, such as: SQL Server, Remote Desktop Services, Exchange Server with monthly payment.
+
+VK CS has the right to provide Microsoft software under the Service Provider License Agreement (SPLA) for the purpose of providing software services.
+
+At the moment, the list of software products provided within SPLA is limited to the following set:
+
+| Code | Name | Description |
+| --- | --- | --- |
+| 9EM-00562 | WinSvrSTDCore ALNG LicSAPk MVL 2Lic CoreLic | Windows Server Standard edition (2 vCPUs) |
+| 7NQ-00302 | SQLSvrStdCore ALNG LicSAPk MVL 2Lic CoreLic | Microsoft SQL Server Standard (2 vCPU) |
+| 7JQ-00341 | SQLSvrEntCore ALNG LicSAPk MVL 2Lic CoreLic | Microsoft SQL Server Enterprise Core Edition (2 vCPU) |
+| 228-05018 | SQLSvrStd ALNG LicSAPk MVL SAL | Microsoft SQL Server Standard Edition (per user) |
+| 6WC-00002 | WinRmtDsktpSrvcsSAL ALNG LicSAPk MVL | Windows Remote Desktop Services (per user) |
 
 ## Terms of Use
 
-The terms of use of Microsoft software are governed by the terms of the Microsoft License Agreement with the purchase of Microsoft products. You are responsible for complying with the Microsoft licensing terms. If you have questions about licensing and Microsoft software use rights, please contact your Legal Department or Microsoft sales representatives. The information in this article corresponds to the [current terms of use for Microsoft products](https://www.microsoft.com/en-us/licensing/product-licensing/products).
+The terms of use of Microsoft software are governed by the terms of the license agreement with Microsoft, concluded when purchasing Microsoft products. The user is responsible for compliance with the Microsoft licensing terms. If you have any questions about licensing and rights to use Microsoft software, you should contact your legal department or Microsoft sales representatives. The information in this article complies with [current Microsoft Product Terms of Use](https://www.microsoft.com/en-us/licensing/product-licensing/products ).
 
-## The cost
+## Cost
 
-find out the cost of monthly license usage, at the top of the control panel, click «Project ettings» —> «Prices».
+To find out the cost of monthly license usage, at the top of the control panel, click "Project Settings" —> "Prices".
 
-You can track write-offs in your personal account in the «Balance and payments» section.
+You can track write-offs in your personal account in the "Balance" section.
 
 ## Windows Server
 
-When you create an instance with Microsoft Windows OS, a licensed copy of the corresponding edition selected during creation is automatically deployed.
+When creating an instance with Microsoft Windows OS, a licensed copy of the corresponding edition selected at creation is automatically deployed.
 
 Available editions of the Microsoft Windows Server operating system:
 
-- Windows Server 2012R2 RU
-- Windows Server 2012R2 EN
-- Windows Server 2016 RU
-- Windows Server 2016 EN
-- Windows Server 2019 RU
-- Windows Server 2019 RU
+- Windows Server 2012R2 RU;
+- Windows Server 2012R2 EN;
+- Windows Server 2016 RU;
+- Windows Server 2016 EN;
+- Windows Server 2019 RU;
+- Windows Server 2019 RU.
 
-Every 2 vCPU Windows Instances require one license. Accordingly, when creating an instance with 5 vCPUs, you will need 3 Windows Server licenses per core.
+Every 2 vCPU instances with Windows OS require the use of one license. Accordingly, when creating an instance with 5 vCPUs, you will need 3 Windows Server licenses per core.
 
-Payment for licenses does not require additional steps and will be automatically performed in accordance with the configuration of the created virtual machine.
+Payment of licenses does not require additional actions and will be automatically made in accordance with the configuration of the created virtual machine.
 
-When you change the virtual machine type, the number of licenses will change according to the number of virtual cores of the changed configuration.
+When changing the type of virtual machine, the number of licenses will be changed in accordance with the number of virtual cores of the modified configuration.
 
-**Key**
+### Key
 
-A license key may be required to activate Windows Server, as indicated by the inscription in the lower right corner of the screen. In this case, you need to contact technical support to fix the OS activation failure. Depending on the operating system, either an activation key or a command for self-activation of the licensed copy will be provided.
+To activate Windows Server OS, you may need a license key, as evidenced by the inscription in the lower right corner of the screen. In this case, it is necessary to [contact technical support](https://mcs.mail.ru/docs/contacts) to fix the OS activation failure. Depending on the operating system, either an activation key or a command for self-activation of the licensed copy will be provided.
 
-An activation failure does not affect the license period because VK CS does not provide a trial period for Microsoft licenses.
+The presence of an activation failure does not affect the period of use of the license, since the VK CS platform does not provide a trial period for using Microsoft licenses.
 
-If you selected the Windows 2012/2016 operating system when creating a virtual machine, then you can purchase an activation key. Without activation, after the trial period (two weeks) has expired, Windows will restart every hour.
+If you chose Windows 2012 / 2016 operating system when creating a virtual machine, then you can purchase an activation key. Without activation after the trial period expires (two weeks), Windows will restart every hour.
 
-To receive an activation key, write to us in the feedback form indicating your VK CS account and the number of licenses.
+To get an activation key, write to us in the feedback form indicating the VK CS account and the number of licenses.
 
 ## Remote Desktop Services
 
-Remote Desktop Service allows a large number of users to work with a virtual machine at the same time.
+The remote desktop service allows a large number of users to work with a virtual machine at the same time.
 
-By default, after installing Windows Server, only 2 concurrent Remote Desktop (RDP) connections are available.
+By default, after installing Windows Server OS, only 2 simultaneous connections to the VM are available:
 
-These 2 connections can only be used for server setup and administration. To permanently work with the operating system as a user and run the software, you need to purchase a remote connection license for each user.
+- 1 direct connection to the Virtual Machine Console.
+- 1 Remote Desktop Connection (RDP).
 
-To install a license, an instance must have the Remote Desktop Session host role installed, which will allow you to manage and license RDP connections. Each operating system user who connects using the Remote Desktop Protocol (RDP) is subject to licensing. Multiplexing, i.e. multiple users using the same RDP license is not allowed in this case.
+These 2 connections can only be used to configure and administer the server. To allow more than two administrative connections or connections to multiple users, you must install the Remote Desktop Session host role and have the appropriate Remote Desktop Services client licenses.
 
-**Note**
+Each operating system user who connects using the Remote Desktop Protocol (RDP) is subject to licensing. Activation of the Remote Desktop service completely replaces the default RDP connection. Multiplexing, i.e. the use of a single RDP license by multiple users, is not allowed in this case.
 
-Remote Desktop Services licenses can only be granted for a licensed copy of the MS Windows operating system of an instance purchased from VK CS.
+<warn>
 
-To activate a license, you should [contact technical support](https://mcs.mail.ru/docs/contacts) and provide the details of the project, instance, the required number of licenses, as well as the parameters for connecting to the instance's remote desktop to activate licenses.
+Licenses for Remote Desktop Services can only be granted for a licensed copy of the instance's MS Windows operating system purchased from VK CS.
+
+To activate the license, you should [contact technical support](https://mcs.mail.ru/docs/contacts) and provide the data of the project, instance, the required number of licenses, as well as the parameters for connecting to the remote desktop of the instance to activate licenses.
+
+</warn>
 
 ## SQL Server
 
-SQL Server Database Management System is available for installation as a pre-installed instance with a pre-installed copy of SQL Server.
+The SQL Server database management system is available for installation as a ready-made instance with a pre-installed copy of SQL Server.
 
-Licensing is done automatically when a virtual machine is created. The licensing method "per core" is used, multiple of 2 cores, but not less than 4 cores for a virtual machine.
+Licensing is carried out automatically when creating a virtual machine. The licensing method is applied "per core", a multiple of 2m cores, but not less than 4 cores for a virtual machine.
 
-**Note**
+<warn>
 
-SQL Server licenses are provided along with the operating system licenses when you create a virtual machine.
+SQL Server licenses are granted simultaneously with operating system licenses when creating a virtual machine.
+
+</warn>
+
+## Upgrade (upgrade level) of licenses
+
+To upgrade the license level of the software used, contact [VK CS Technical Support](https://mcs.mail.ru/help/contact-us).

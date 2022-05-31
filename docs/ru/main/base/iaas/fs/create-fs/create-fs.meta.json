@@ -1,9 +1,9 @@
 {
   "title": "Создание и удаление",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Создание и удаление файловых хранилищ из личного кабинета и из Openstack CLI",
   "metaTitle": "Создание и удаление - VK Cloud Solutions",
-  "metaDescription": "Сервис Файловых хранилищ представляет собой набор служб для управления файловыми хранилищами на платформе VK CS. С этой службы можно создать удаленную файлов",
+  "metaDescription": "",
   "sectionTitle": "Создание и удаление",
   "markdown": "",
   "icon": "",

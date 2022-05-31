@@ -1,9 +1,9 @@
 {
   "title": "Создание ВМ с помощью Terraform",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Создание виртуальной машины при использовании Terraform",
   "metaTitle": "Создание ВМ с помощью Terraform - VK Cloud Solutions",
-  "metaDescription": "Terraform - open-source программное обеспечение Infrastructure as code (IaC) или «инфраструктура как код», созданное HashiCorp. Оно позволяет пользователям",
+  "metaDescription": "",
   "sectionTitle": "Создание ВМ с помощью Terraform",
   "markdown": "",
   "icon": "",

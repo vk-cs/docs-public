@@ -1,48 +1,48 @@
 ## Description
 
-The GFS (Grandfather-Father-Son) is an industry-wide strategy for storing backups.
+The industry uses GFS ("grandfather-father-son", Grandfather-Father-Son) backup storage strategy.
 In the grandfather-father-son algorithm, backup consists of three consecutive steps:
 
-- "Grandfather" - full backup at the beginning of the year
-- "Father" - full backup at the beginning of the month
-- "Son" - full backup and increments once a week.
+- "Grandfather" is a full backup for the beginning of the year.
+- "Father" — full backup at the beginning of the month.
+- "Son" — full backup and increments once a week.
 
-## Operation
+## Working principle
 
-After each successful backup, the process of deleting obsolete backups starts. The GFS backup strategy does not create independent weekly, monthly, or yearly backups. This process is dynamic and depends on the current GFS settings. The process of deleting backups first checks the required number of weekly backups. Next, it checks for the presence/absence of monthly and annual backups. After that, it decides to delete obsolete/redundant backups.
+After each successful backup, the process of deleting outdated backups is started. The GFS backup strategy does not create weekly, monthly or annual backups separately. This process is dynamic and depends on the current GFS settings. The process of deleting backups first checks that there is the required number of weekly backups. Next, it checks the presence/absence of monthly and annual backups. After that, it makes a decision to delete outdated/redundant backups, if any.
 
-Changes to GFS settings are applied on the next successful backup. The new backup plan will delete obsolete backups if you specify to store less than any full backups than currently stored.
+Changing the GFS settings is applied at the next successful backup. If you specify to store fewer full backups than are stored now, the outdated backups will be deleted.
 
-GFS settings include:
+GFS settings store:
 
-- Weekly backups - full and incremental backups for the specified number of weeks.
-- Monthly backups - backups are created at the beginning of the month. Only full backups for the specified number of calendar months remain, and incremental backups are deleted.
-- Annual backups - backups are created at the beginning of the year. Only annual backups for the specified number of years remain (including the current calendar year). Incremental backups are deleted.
+- Weekly backups — full and incremental backups for the specified number of weeks.
+- Monthly backups — backups created at the beginning of the month remain. Only full backups for the specified number of calendar months remain. Incremental backups are deleted.
+- Annual backups — backups created at the beginning of the year remain. Only annual backups for the specified number of years (including the current calendar year) remain. Incremental backups are deleted.
 
-## Usage scenarios examples
+## Usage Scenarios
 
-A typical use case for GFS is to comply with corporate policy or legal requirements.
+A typical scenario for using GFS is to follow the requirements of corporate policies or legislation.
 
 The most commonly used and recommended best practices are the following settings.
 
-- Keep weekly backups: 4 weeks
-- Keep monthly backups: 12 months
-- Keep annual backups: 5 years
+- Keep weekly backups: 4 weeks.
+- Store monthly backups: 12 months.
+- Store annual backups: 5 years.
 
 ## FAQ
 
-### When does "deletion" occur?
+### When does the "deletion" happen?
 
-The first deletion occurs after the first successful backup.
+After the first successful backup.
 
-### Can one backup be Monthly and Weekly (or Yearly and Monthly) at the same time?
+### Can there be one backup at the same time Monthly and Weekly (or Annual and Monthly)?
 
-No. In the current implementation of GFS, backups have unique "weekly," "monthly," or "yearly" tags.
+No. In the current implementation of GFS, backups have unique tags "weekly", "monthly" or "annual".
 
-### If it's 2022 now, how can I keep a yearly backup for 2021? How many Yearly backups is it?
+### If it's 2022 now, how to save the annual backup for 2021, how much is it per annum?
 
-It would make two Yearly backups. The current year also counts.
+Two. The current year also counts.
 
-### Why is Weekly backup a required field?
+### Why is Weekly Backup a mandatory field?
 
-It is an architectural requirement. It is necessary for the correct markup of backups when applying the retention policy.
+Architectural requirement. This is necessary for the correct labeling of backups when applying the retention policy.
