@@ -1,21 +1,21 @@
-VM images can have meta tags that specify the settings for the operation of the infrastructure. Such tags are set when creating a VM image or later when editing an image.
+VM images can have meta tags specifying the settings of the infrastructure. These tags are set when creating a VM image, or later when editing the image.
 
-Image tags can be viewed using the `image show` command, run in the Openstack CLI:
+Image tags can be viewed using the `image show` command executed in the Openstack CLI:
 
+```bash
+openstack image show
 ```
-open stack image show
-```
 
-You can edit image tags with the `image set` command:
+Image tags can be edited using the `image set` command:
 
-```
-open stack image set
+```bash
+openstack image set
 ```
 
 VM image tags are divided into two types:
 
-- os\_\* - include various settings for the guest operating system;
-- hw\_\* - include various virtual machine settings.
+- os\_\* — include various settings for the guest operating system;
+- hw\_\* — enable various virtual machine settings.
 
 ## Table of supported image tags
 
@@ -36,7 +36,7 @@ VM image tags are divided into two types:
 
 For OS Windows images that have `virtio` drivers, you must specify:
 
-```
+```bash
 os_type="windows";
 os_distro="win2k16" -- The value `win2k16` is chosen as an example. See "Choosing a value for os_distro";
 os_admin_user="Admin" -- Specify only if the user inside the guest OS is different from the default one;
@@ -48,10 +48,12 @@ hw_vif_model="virtio" -- Specify only if virtio drivers are installed inside the
 
 To determine what value to set for the `os_distro` tag, run the `osinfo-query os vendor="Microsoft Corporation"` command on any compute host and select the appropriate value from the Short ID column
 
-```
+```bash
 osinfo-query os vendor="Microsoft Corporation"
- ShortID | name | version | ID
-----------------------+-------------------- ------------------------+----------+------------- ----------------------------
+```
+
+ ShortID | name | version | ID |
+| ---- |---- |---- |---- |
  win1.0 | Microsoft Windows 1.0 | 1.0 | http://microsoft.com/win/1.0
  win10 | Microsoft Windows 10 | 10.0 | http://microsoft.com/win/10
  win2.0 | Microsoft Windows 2.0 | 2.0 | http://microsoft.com/win/2.0
@@ -63,19 +65,17 @@ osinfo-query os vendor="Microsoft Corporation"
  win2k3 | Microsoft Windows Server 2003 | 5.2 | http://microsoft.com/win/2k3
  win2k3r2 | Microsoft Windows Server 2003 R2 | 5.2 | http://microsoft.com/win/2k3r2
  win2k8 | Microsoft Windows Server 2008 | 6.0 | http://microsoft.com/win/2k8
- win2k8r2 | Microsoft Windows Server 2008 R2 | 6.1 http://microsoft.com/win/2k8r2
- win3.1 | Microsoft Windows 3.1 | 3.1 http://microsoft.com/win/3.1
- win7 | Microsoft Windows 7 | 6.1 http://microsoft.com/win/7
+ win2k8r2 | Microsoft Windows Server 2008 R2 | 6.1 | http://microsoft.com/win/2k8r2
+ win3.1 | Microsoft Windows 3.1 | 3.1 | http://microsoft.com/win/3.1
+ win7 | Microsoft Windows 7 | 6.1 | http://microsoft.com/win/7
  win8 | Microsoft Windows 8 | 6.2 | http://microsoft.com/win/8
  win8.1 | Microsoft Windows 8.1 | 6.3 | http://microsoft.com/win/8.1
  win95 | Microsoft Windows 95 | 4.0 | http://microsoft.com/win/95
- win98 | Microsoft Windows 98 | 4.1 http://microsoft.com/win/98
+ win98 | Microsoft Windows 98 | 4.1 | http://microsoft.com/win/98
  winme | Microsoft Windows Millennium Edition 4.9 | http://microsoft.com/win/me
- winnt3.1 | Microsoft Windows NT Server 3.1 | 3.1 http://microsoft.com/winnt/3.1
+ winnt3.1 | Microsoft Windows NT Server 3.1 | 3.1 | Microsoft Windows Millennium Edition | 4.9 | http://microsoft.com/winnt/3.1
  winnt3.5 | Microsoft Windows NT Server 3.5 | 3.5 | http://microsoft.com/winnt/3.5
  winnt3.51 | Microsoft Windows NT Server 3.51 | 3.51 | http://microsoft.com/winnt/3.51
  winnt4.0 | Microsoft Windows NT Server 4.0 | 4.0 | http://microsoft.com/winnt/4.0
- winvista | Microsoft Windows Vista 6.0 | http://microsoft.com/win/vista
+ winvista | Microsoft Windows Vista | 6.0 | http://microsoft.com/win/vista
  winxp | Microsoft Windows XP | 5.1 | http://microsoft.com/win/xp
- `` `
-```

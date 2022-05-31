@@ -1,9 +1,9 @@
 {
   "title": "Удаление инстанса",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Пошаговая инструкция удаления инстанса",
   "metaTitle": "Удаление инстанса - VK Cloud Solutions",
-  "metaDescription": "Удаление инстанса удаляет виртуальную машину и рут диск сервера, если иное не настроено политикой удаления дисков. Осторожно Обратить операцию удаления нев",
+  "metaDescription": "",
   "sectionTitle": "Удаление инстанса",
   "markdown": "",
   "icon": "",

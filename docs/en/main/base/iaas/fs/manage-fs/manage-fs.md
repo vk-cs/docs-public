@@ -1,71 +1,69 @@
-Management of existing file storages is performed from the personal account of the VK CS panel on the "File storage" tab of the "Cloud computing" section and from the Openstack CLI.
+Existing file storages are managed from the VK CS dashboard personal account on the "File Storage" tab of the "Cloud Computing" section and from the Openstack CLI.
 
-## Viewing information
+## View information
 
-To get detailed information about a file server instance, select "Information" from the context menu. The open properties window displays the parameters and instructions for the connection:![](./assets/1597345180497-snimok-ekrana-2020-08-13-v-21.59.04.png)
+To get detailed information about the file server instance, select "Information" in the context menu. The parameters and connection instructions are displayed in the open properties window.
 
-## Change of size
+## Resizing
 
-Both increasing and decreasing the size of the file storage are possible. To do this, in the context menu of the instance, select "Resize" and specify the new size of the file storage, and then confirm the changes with the "Confirm" button:![](./assets/1597343966724-snimok-ekrana-2020-08-13-v-21.38.06.png)
+It is possible to increase or decrease the size of the file storage. To do this, select "Resize" in the context menu of the instance and specify the new size of the file storage, then confirm the changes with the "Confirm" button.
 
-## Taking a snapshot
+## Creating a snapshot
 
-To create a snapshot (snapshot) of the file storage, select the "Create snapshot" option in the context menu. In the window for creating a snapshot, enter a name and a comment, and then click "Create snapshot":![](./assets/1597344221395-snimok-ekrana-2020-08-13-v-21.40.12.png)
+To create a snapshot of the file storage, select the "Create snapshot" option in the context menu. In the snapshot creation window, enter the name and comment, then click "Create Snapshot".
 
-## Viewing Pictures
+## View snapshots
 
-To view the storage snapshots, select the "Snapshots list" option in the context menu. A window for viewing images will open:![](./assets/1597344709554-snimok-ekrana-2020-08-13-v-21.51.40.png)
+To view the storage snapshots, select the "Snapshot List" option in the context menu. A window for viewing the images opens.
 
-## Recovery from snapshot
+## Restore from snapshot
 
-To restore from a snapshot, in the snapshot view window, select the "Restore file storage" item in the line of the required snapshot:
+To restore from a snapshot, in the snapshot view window, you need to select the "Restore File storage" item in the line of the required snapshot.
 
-![](./assets/1597348967223-snimok-ekrana-2020-08-13-v-22.53.42.png)
+After that, you need to confirm the recovery. The process of creating a new repository from the snapshot will begin.
 
-Then you need to confirm the recovery. The process of creating a new repository from the snapshot will begin.
-
-## OpenStack CLI Management
+## Management in the OpenStack CLI
 
 File storage is managed using the manila client:
 
-Getting a list of file storages in a project:
+Getting a list of file repositories in a project:
 
-```
- manila list
-```
-
-Viewing information about a file storage:
-
-```
- manila show <repository ID>
+```bash
+manila list
 ```
 
-Change of size:
+Viewing information about file storage:
 
-```
- manila extend <repository ID> <new size>
-```
-
-Reducing size:
-
-```
- manila shrink <storage id> <new size>
+``bash
+manila show <storage ID>
 ```
 
-Taking a snapshot:
+Changing the size:
 
-```
- manila snapshot-create --name <snapshot name> <repository ID>
-```
-
-Viewing pictures:
-
-```
- manila snapshot list --share-id <storage id>
+``bash
+manila extend <storage ID> <new size>
 ```
 
-Recovery from snapshot:
+Reducing the size:
 
+``bash
+manila shrink <storage ID> <new size>
 ```
- manila create --snapshot-id <snapshot ID> <protocol> <size>
+
+Creating a snapshot:
+
+``bash
+manila snapshot-create --name <snapshot name> <storage ID>
+```
+
+Viewing snapshots:
+
+``bash
+manila snapshot list --share-id <storage ID>
+```
+
+Restoring from a snapshot:
+
+``bash
+manila create --snapshot-id <snapshot ID> <protocol> <size>
 ```

@@ -1,9 +1,9 @@
 {
   "title": "Включение multiqueue",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Включение multiqueue для увеличения производительности сети",
   "metaTitle": "Включение multiqueue - VK Cloud Solutions",
-  "metaDescription": "Описание С увеличением пропускной способности сетевого ввода-вывода один виртуальный процессор не может удовлетворить требованиям по обработке прерываний с",
+  "metaDescription": "",
   "sectionTitle": "Включение multiqueue",
   "markdown": "",
   "icon": "",

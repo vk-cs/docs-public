@@ -10,46 +10,44 @@ VK CS позволяет развертывать ряд серверных пр
 
 Microsoft предоставит вам и VK CS подтверждение того, что вы прошли процесс проверки. Вы можете развертывать программное обеспечение сервера приложений до завершения процесса проверки. Фактически, вы можете выполнить развертывание за десять дней до отправки формы. Вы отвечаете за выполнение проверок и пролонгаций в соответствии с требованиями соглашения.
 
-После прохождения процесса проверки сообщите нам об этом по адресу [support@mcs.mail.ru](mailto:support@mcs.mail.ru) с указанием наименования проекта и типа используемой лицензии.
+После прохождения процесса проверки сообщите нам об этом в [службу поддержки](mhttps://mcs.mail.ru/docs/contacts) с указанием наименования проекта и типа используемой лицензии.
 
 ## Критерии правомочности
 
 Чтобы воспользоваться преимуществом переносимости лицензий, необходимо обеспечить соблюдение следующих условий.
 
-1\. Все прикладные программные продукты Microsoft Server, перенесенные на VK CS с использованием переносимости лицензий по программе Software Assurance, должны подпадать под действующий договор Software Assurance(SA).
+1. Все прикладные программные продукты Microsoft Server, перенесенные на VK CS с использованием переносимости лицензий по программе Software Assurance, должны подпадать под действующий договор Software Assurance(SA).
 
-2\. Серверные приложения должны входить в перечень правомочных продуктов. Этот перечень включает следующие продукты:
+2. Серверные приложения должны входить в перечень правомочных продуктов. Этот перечень включает следующие продукты:
 
-- Exchange Server
-- SharePoint Server
-- SQL Server Standard Edition
-- SQL Server Enterprise Edition
-- SQL Server Business Intelligence Edition
-- Skype for Business Server
-- System Center Server
-- Dynamics CRM Server
-- Dynamics AX Server
-- Project Server
-- Visual Studio Team Foundation Server
-- BizTalk Server
-- Forefront Identity Manager
-- Forefront Unified Access Gateway
-- Remote Desktop Services
+- Exchange Server;
+- SharePoint Server;
+- SQL Server Standard Edition;
+- SQL Server Enterprise Edition;
+- SQL Server Business Intelligence Edition;
+- Skype for Business Server;
+- System Center Server;
+- Dynamics CRM Server;
+- Dynamics AX Server;
+- Project Server;
+- Visual Studio Team Foundation Server;
+- BizTalk Server;
+- Forefront Identity Manager;
+- Forefront Unified Access Gateway;
+- Remote Desktop Services.
 
-Полный список правомочных программных продуктов см. в условиях использования продуктов Microsoft по адресу [http://www.microsoft.com/licensing/about-licensing/product-licensing.aspx](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
+Полный список правомочных программных продуктов см. в условиях использования продуктов Microsoft [здесь](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 
-3\. Правомочные программы корпоративного лицензирования включают Enterprise Agreement, Enterprise Subscription Agreement и Microsoft Open Value Agreement, в которые включено соглашение Software Assurance, а также другие программы корпоративного лицензирования Mircosoft, в которых соглашение Software Assurance является дополнительной возможностью, например Microsoft Open License или Select Plus.
+3. Правомочные программы корпоративного лицензирования включают Enterprise Agreement, Enterprise Subscription Agreement и Microsoft Open Value Agreement, в которые включено соглашение Software Assurance, а также другие программы корпоративного лицензирования Mircosoft, в которых соглашение Software Assurance является дополнительной возможностью, например Microsoft Open License или Select Plus.
 
-4\. Для доступа к серверам приложений вы должны иметь в договоре корпоративного лицензирования соответствующие лицензии клиентского доступа(CAL) вместе с соглашением Software Assurance.
+4. Для доступа к серверам приложений вы должны иметь в договоре корпоративного лицензирования соответствующие лицензии клиентского доступа(CAL) вместе с соглашением Software Assurance.
 
-5\. Переносимость лицензий не распространяется на клиентские операционные системы Microsoft Windows, прикладные продукты для рабочего стола (например, Microsoft Office) и операционные системы Microsoft Windows Server.
+5. Переносимость лицензий не распространяется на клиентские операционные системы Microsoft Windows, прикладные продукты для рабочего стола (например, Microsoft Office) и операционные системы Microsoft Windows Server.
 
-6\. Для обеспечения соответствия правилам «серверной фермы» Microsoft лицензии, развернутые в конкретном регионе VK CS, не могут быть перенесены в другой регион VK CS в течение 90 дней. Дополнительная информация приведена в условиях использования продуктов Microsoft по адресу [http://www.microsoft.com/licensing/about-licensing/product-licensing.aspx](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
+6. Для обеспечения соответствия правилам «серверной фермы» Microsoft лицензии, развернутые в конкретном регионе VK CS, не могут быть перенесены в другой регион VK CS в течение 90 дней. Дополнительная информация приведена в условиях использования продуктов Microsoft [здесь](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 
 ## Свяжитесь с нами
 
-Планируете развернуть сервер Microsoft Windows Server или решение для него (например, SQL или SharePoint) на платформе VK CS и хотите обсудить свой ИТ-проект с представителем отдела продаж VK CS? Свяжитесь с нами по адресу [support@mcs.mail.ru](mailto:support@mcs.mail.ru).
-
----
+Планируете развернуть сервер Microsoft Windows Server или решение для него (например, SQL или SharePoint) на платформе VK CS и хотите обсудить свой ИТ-проект с представителем отдела продаж VK CS?  [Свяжитесь с нами](https://mcs.mail.ru/docs/contacts).
 
 Также см. [Microsoft Product Terms](https://www.microsoft.com/en-us/licensing/product-licensing/products).
