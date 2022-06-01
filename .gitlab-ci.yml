@@ -1,0 +1,33 @@
+include:
+  - project: infra/common/ci-templates
+    file:
+      - templates/docker/.docker-build-kaniko.yml
+
+stages:
+  - build_stage
+
+default:
+  tags:
+    - hw-mcs-front
+
+Build images:
+  stage: build_stage
+  extends:
+    - .docker-build-kaniko
+  before_script:
+    - !reference [.docker-build-kaniko, before_script]
+    - export IMAGE_SUFFIX=$(echo $PARTNER_NAME | sed 's/[^a-z0-9-]/-/gI' | tr '[:upper:]' '[:lower:]')
+    - export IMAGE_NAME=$IMAGE_NAME-$PARTNER_NAME
+  variables:
+    DOCKERFILE_PATH: Dockerfile
+    BUILD_ARG_1: PARTNER_NAME
+  parallel:
+    matrix:
+      - PARTNER_NAME:
+          - megafon
+          - x5
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_MERGE_REQUEST_ID
+      when: manual
+      allow_failure: true
