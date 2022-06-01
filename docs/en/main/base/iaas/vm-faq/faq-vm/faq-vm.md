@@ -2,8 +2,8 @@
 
 Virtual machines can be created in VK CS data centers located in the Russian Federation:
 
-- dp1 — DataPro data center;
-- ms1 (ko1) — DataLine NORD4 data center.
+- gz1 — [Goznak](https://tech.goznak.ru/dc-goznak-moscow);
+- ms1 (ko1) — [DataLine NORD4](https://www.dtln.ru/tsod-nord).
 
 ## What is the guaranteed connection speed
 

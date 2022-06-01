@@ -10,7 +10,7 @@ Availability Zones can be used to separate applications and provide uninterrupte
 
 VK CS platform resources are located in two data centers located in Moscow:
 
-- dp1 - DataPro data center;
+- gz1 - Goznak data center;
 - ms1 (ko1) - DataLine NORD4 data center;
 
 You can choose the optimal region according to technical considerations.
