@@ -2,8 +2,8 @@
 
 Виртуальные машины можно создать в дата-центрах VK CS, находящихся в Российской Федерации:
 
-- dp1 — дата-центр DataPro;
-- ms1 (ko1) — дата-центр DataLine NORD4.
+- gz1 — дата-центр [Goznak](https://tech.goznak.ru/dc-goznak-moscow);
+- ms1 (ko1) — дата-центр [DataLine NORD4](https://www.dtln.ru/tsod-nord).
 
 ## Какая гарантированная скорость соединения
 

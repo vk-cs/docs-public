@@ -10,7 +10,7 @@
 
 Ресурсы платформы VK CS размещаются в двух дата-центрах, расположенных в Москве:
 
-- dp1 - дата-центр [DataPro](https://datapro.ru/);
+- gz1 - дата-центр [Goznak](https://tech.goznak.ru/dc-goznak-moscow);
 - ms1 (ko1) - дата-центр [DataLine NORD4](https://www.dtln.ru/tsod-nord);
 
 Вы можете выбрать оптимальный регион в соответствии с техническими соображениями.
