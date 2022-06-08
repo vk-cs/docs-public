@@ -1,13 +1,13 @@
 {
-   "title": "Switching from OpenStack Provider to VKCS",
-   "pageDescription": "",
-   "shortDescription": "",
-   "metaTitle": "Switching from OpenStack provider to VKCS - VK Cloud Solutions",
-   "metaDescription": "At the moment, VK CS supports 2 Terraform providers at once: OpenStack for managing IaaS services and its own VK CS Terraform Provider for managing",
-   "sectionTitle": "Switching from OpenStack provider to VKCS",
-   "markdown": "",
-   "icon": "",
-   "infobarItems": null,
-   "weight": 3,
-   "uuid": ""
+  "title": "Switching from OpenStack Provider to VKCS",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Switching from OpenStack provider to VKCS - VK Cloud Solutions",
+  "metaDescription": "At the moment, VK CS supports 2 Terraform providers at once: OpenStack for managing IaaS services and its own VK CS Terraform Provider for managing",
+  "sectionTitle": "Switching from OpenStack provider to VKCS",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "80a78fbe-52c8-4b5f-9f7e-6c53f8d11126"
 }
