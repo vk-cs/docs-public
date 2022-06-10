@@ -1,5 +1,3 @@
-### Авторизация в CLI
-
 Загрузите в панели [API ключи](https://mcs.mail.ru/app/project/keys/) личного кабинета openrc файл для конфигурации CLI.
 
 <warn>
@@ -10,6 +8,13 @@
 
 Затем, выполните действия, соответствующие процедуре для операционной системы на вашем компьютере:
 
+<tabs>
+<tablist>
+<tab>Linux</tab>
+<tab>Windows</tab>
+</tablist>
+<tabpanel>
+
 #### Linux
 
 Выполните импорт переменных из файла openrc с помощью команды `source`:
@@ -17,6 +22,9 @@
 ```
 source file.sh
 ```
+
+</tabpanel>
+<tabpanel>
 
 #### Windows
 
@@ -51,6 +59,9 @@ $env:OS_IDENTITY_API_VERSION = "3"
 Для переменной `OS_PASSWORD` нужно ввести действительный пароль учетной записи, его нет в файле openrc.
 
 </warn>
+
+</tabpanel>
+</tabs>
 
 #### Проверка работы CLI
 
