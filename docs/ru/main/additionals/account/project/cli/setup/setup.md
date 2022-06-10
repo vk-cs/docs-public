@@ -4,7 +4,15 @@
 
 Следующие инструкции помогут установить openstackclient:
 
-#### Linux
+<tabs>
+<tablist>
+<tab>Debian, Ubuntu</tab>
+<tab>RHEL 8, CentOS 8, Fedora</tab>
+<tab>CentOS 7</tab>
+<tab>pip3</tab>
+<tab>Windows</tab>
+</tablist>
+<tabpanel>
 
 ##### C помощью apt (Debian, Ubuntu):
 
@@ -12,6 +20,9 @@
 apt update
 apt install python3-openstackclient 
 ```
+
+</tabpanel>
+<tabpanel>
 
 ##### С помощью dnf (RHEL 8, CentOS 8,  Fedora):
 
@@ -21,6 +32,9 @@ dnf update
 dnf install python3-openstackclient
 ```
 
+</tabpanel>
+<tabpanel>
+
 ##### С помощью yum (CentOS 7):
 
 ```
@@ -28,6 +42,9 @@ yum install [https://rdoproject.org/repos/rdo-release.rpm](https://rdoproject.or
 yum update
 yum install python2-openstackclient
 ```
+
+</tabpanel>
+<tabpanel>
 
 ##### C помощью pip3:
 
@@ -37,6 +54,9 @@ yum install python2-openstackclient
 pip3 install -UI pbr testresources setuptools pytz wheel
 pip3 install -UI python-openstackclient
 ```
+
+</tabpanel>
+<tabpanel>
 
 #### Windows
 
@@ -48,3 +68,6 @@ pip3 install -UI python-openstackclient
 pip3 install -UI pbr setuptools pytz wheel
 pip3 install -UI python-openstackclient
 ```
+
+</tabpanel>
+</tabs>

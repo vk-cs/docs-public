@@ -1,7 +1,7 @@
 version: "3.5"
 
 services:
-  docs-private:
+  docs:
     image: stage-registry.infra.devmail.ru/infra/front/services/new-help
     volumes:
       - ./docs:/home/node/app/docs
