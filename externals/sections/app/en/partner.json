@@ -1,0 +1,13 @@
+{
+    "meta": "Клиенты",
+    "path": "/partner/app*clients",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                "docs/en/main/additionals/start/partners/about-partners",
+                "docs/en/main/additionals/start/partners/partners-profile"
+            ]
+        }
+    ]
+}
