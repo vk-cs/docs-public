@@ -16,7 +16,6 @@
                 "docs/ru/main/base/iaas/vm-volumes/volume-create",
                 "docs/ru/main/base/iaas/vm-volumes/volume-resize",
                 "docs/ru/main/base/iaas/vm-volumes/volume-convert",
-                "docs/ru/main/base/iaas/vm-volumes/volume-create",
                 "docs/ru/main/base/iaas/vm-faq/faq-vm-backup",
                 "docs/ru/main/additionals/start/user-account/quota-limits"
             ]
