@@ -93,7 +93,7 @@ _IP-адрес клиента не доходит до пода_
 
 ![](./assets/arhitektura_servisa_kubernetes_ot_mail.ru_-_attachment_9)
 
-**Терминация SSL на балансировщике**. З десь на балансер приходит HTTPS , он расшифровывается, и в кластер идет HTTP. Если все это сделать и активировать в сервисе ExternalTrafficPolicy: Local, вы будете видеть заголовки IP-пакетов:
+**Терминация SSL на балансировщике**. Здесь на балансер приходит HTTPS , он расшифровывается, и в кластер идет HTTP. Если все это сделать и активировать в сервисе ExternalTrafficPolicy: Local, вы будете видеть заголовки IP-пакетов:
 
 ![](./assets/arhitektura_servisa_kubernetes_ot_mail.ru_-_attachment_10)
 
