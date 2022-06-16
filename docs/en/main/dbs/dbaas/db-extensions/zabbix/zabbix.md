@@ -1,88 +1,144 @@
-## Развертывание zabbix агента
 
-Zabbix — это ПО для мониторинга приложений, серверов и сетевых устройств.
+Zabbix is a monitoring software for applications, servers and network devices.
 
-Многочисленные предустановленные шаблоны позволяют получать информацию о состоянии множества сервисов. Здесь описаны дополнительно устанавливаемые плагины, которые расширяют возможности сервера мониторинга. Решения совместимы с версиями Zabbix 3.4 и выше.
+Numerous preset templates allow you to get information about the status of many services. It describes additionally installed plug-ins that expand the capabilities of the monitoring server. The solutions are compatible with Zabbix versions 3.4 and higher.
 
-Установка расширения Zabbix производится на вкладке «Расширения» карточки инстанса базы данных:
+The Zabbix extension is installed on the Extensions tab of the database instance card:
 
 ![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f7055-2fdirect-2f1621916935129-1621916935129.png)
 
-## Пользовательские параметры
+## An example script for connecting instances to a monitoring server
 
-- **server** (обязательный параметр) — ip адрес или имя  сервера мониторинга Zabbix.
-- **listen_port** (default: 10050) — порт Zabbix агента для пассивных проверок.
-- **server_port** (default: 10051) — порт Zabbix сервера для активных проверок.
-- **b64_pkcs12_container** (default: none) — файл в формате PKS#12 без пароля конвертированный в base4 содержащий сертификат удостоверяющего центра,  приватный ключ и сертификат Zabbix агента.
-- **psk** (default: none) — секретный ключ (Pre Shared Key).
-- **zabbix_agent_version** (default: 3.4) — версия Zabbix агента (возможные значения 3.4 или 5.0). Параметр доступен для «PostgreSQL» и «PostgreSQL Pro».
+1. Provide network connectivity between the instance and the monitoring server by ports for active and passive checks ([details here](https://www.zabbix.com/documentation/current/ru/manual/appendix/items/activepassive)).
+2.  Decide on the method of encrypting the transmitted data (no encryption, TLS or PSK). When installing Zabbix agent, you can choose both connection security methods, in this case, during operation, the encryption method can be changed by changing the connection configuration only on the server ([more details here](https://www.zabbix.com/documentation/current/ru/manual/encryption)).
+3.  Install and configure Zabbix agent on cluster instances.
+4. Connect the instances to the Zabbix server in the Configuration -> Hosts -> Create Hosts section ([more details here](https://www.zabbix.com/documentation/5.4/ru/manual/config/hosts/host)).
 
-Добавить свои параметры и их значения можно на карточке добавления расширения Zabbix:
+<warn>
+
+Use the short name of the instance (hostname -s) for the value of the Host name, PSK identity fields (if using PSK).
+
+</warn>
+
+5.  Assign the monitoring template(s) to the instance or to the group that the instance belongs to ([more info here](https://www.zabbix.com/documentation/5.4/ru/manual/config/templates/linking))
+6.  After 10 minutes, verify that data from the agent is coming to the server under Monitoring -> Latest Data by filtering the content by instance name. You can view historical information on metrics in the same place - in the last column.
+
+## Custom options
+
+- server* — ip address or name of the Zabbix monitoring server.
+- listen_port (default: 10050) — Zabbix agent port for passive checks.
+- server_port (default: 10051) — Zabbix server port for active checks.
+- b64_pkcs12_container (default: none) - a file in PKS#12 format without a password converted to base4 containing a certificate of a certification authority, a private key and a Zabbix agent certificate.
+- psk (default: none) - secret key (Pre Shared Key).
+- zabbix_agent_version (default: 3.4) — Zabbix agent version (possible values ​​3.4 or 5.0). The option is available for "PostgreSQL" and "PostgreSQL Pro".
+
+You can add your parameters and their values ​​on the add Zabbix extension card:
 
 ![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f7055-2fdirect-2f1621916984681-1621916984681.png)
 
-## Мониторинг PostgreSQL
+## PostgreSQL monitoring
 
-Для мониторинга «PostgreSQL» и «PostgreSQL Pro» вместе с Zabbix агентом версии 3.4 устанавливаются компоненты темплейта  pg_monz, а версия 5.0 конфигурируется для использования темплейта «PostgreSQL» предустановленного на сервере Zabbix версии 5.0 и выше.
+To monitor "PostgreSQL" and "PostgreSQL Pro", along with Zabbix agent version 3.4, components of the pg_monz template are installed, and version 5.0 is configured to use the "PostgreSQL" template preinstalled on the Zabbix server version 5.0 and higher.
 
-### Важно
+<warn>
 
-Установка расширения на реплику возможно только в случае если оно установлено на мастере.
+Installing an extension on a replica is only possible if it is installed on the master.
 
-### Темплейт pg_monz
+</warn>
 
-Использование темплейта позволяет получать следующие метрики:
+## PostgreSQL monitoring
 
-<table style="border:none;border-collapse:collapse;"><tbody><tr style="height:36.75pt;"><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 29.3779%;"><p id="isPasted">pg.transactions</p></td><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 70.4873%;"><p dir="ltr" id="isPasted" style="line-height:1.38;margin-top:13pt;margin-bottom:13pt;">Количество подключений, состояние PostgreSQL, количество коммитов и откатов транзакций.</p></td></tr><tr style="height:22.5pt;"><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 29.3779%;"><p id="isPasted">pg.log</p></td><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 70.4873%;"><p dir="ltr" style="line-height:1.38;margin-top:13pt;margin-bottom:13pt;">Мониторинг лога PostgreSQL.</p></td></tr><tr style="height:22.5pt;"><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 29.3779%;"><p id="isPasted">pg.size</p></td><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 70.4873%;"><p id="isPasted">Коэффициент “мусора”, размер баз данных.</p></td></tr><tr style="height:22.5pt;"><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 29.3779%;"><p id="isPasted">pg.slow_query</p></td><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 70.4873%;"><p dir="ltr" style="line-height:1.38;margin-top:13pt;margin-bottom:13pt;">Счетчик медленных запросов, которые превышают пороговое значение.</p></td></tr><tr style="height:51pt;"><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 29.3779%;"><p id="isPasted">pg.sr.status</p></td><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 70.4873%;"><p dir="ltr" style="line-height:1.38;margin-top:13pt;margin-bottom:13pt;">Количество конфликтов, наличие или отсутствие блокировок записи, количество процессов используемых потоковой репликацией.</p></td></tr><tr style="height:22.5pt;"><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 29.3779%;"><p id="isPasted">pg.status</p></td><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 70.4873%;"><p id="isPasted">Рабочее состояние PostgreSQL.</p></td></tr><tr style="height:22.5pt;"><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 29.3779%;"><p id="isPasted">pg.stat_replication</p></td><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 70.4873%;"><p id="isPasted">Задержка &nbsp;при использовании потоковой репликации.</p></td></tr><tr style="height:22.5pt;"><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 29.3779%;"><p id="isPasted">pg.cluster.status</p></td><td style="border-width: 0.75pt; border-style: solid; border-color: rgb(221, 221, 221); vertical-align: bottom; padding: 4pt; overflow: hidden; overflow-wrap: break-word; width: 70.4873%;"><p id="isPasted">PostgreSQL количественные показатели кластера PostgreSQL.</p></td></tr></tbody></table>
+When installing agent version 3.4 on Zabbix server, you must install the template[pg_monz](https://www.google.com/url?q=https://github.com/pg-monz/pg_monz/blob/master/README-en.md&sa=D&source=docs&ust=1635767629305000&usg=AOvVaw3-3XfumQyub6xvlkGtZvjE). To do this, you need to [unzip the archive](https://github.com/pg-monz/pg_monz/archive/refs/tags/2.2.tar.gz)and import the template from the `/pg_monz-2.2/pg_monz/template/` directory on the Zabbix server. In this case, the template does not need to be customized.
 
-### Для pgpool-II
+For agent version 5.0, you should use the Zabbix template of the PosgreSQL Agent server. It does not require customization of the template.
 
-<table style="width: 100%;"><tbody><tr><td style="width: 30.0539%;"><p id="isPasted">pgpool.cache</p></td><td style="width: 69.8113%;">Информация о кэше запросов pgpool-II в оперативной памяти &nbsp;информация о кэше запросов pgpool-II в оперативной памяти.</td></tr><tr><td style="width: 30.0539%;"><p id="isPasted">pgpool.connections</p><br></td><td style="width: 69.8113%;">Количество внешних и внутренних подключений pgpool-II.</td></tr><tr><td style="width: 30.0539%;"><p id="isPasted">pgpool.log</p></td><td style="width: 69.8113%;">Мониторинг логов pgpool-II.</td></tr><tr><td style="width: 30.0539%;"><p id="isPasted">pgpool.nodes</p></td><td style="width: 69.8113%;">Состояние нод, коэффициент балансировки нагрузки, задержки репликации доступные pgpool-II.</td></tr><tr><td style="width: 30.0539%;"><p id="isPasted">pgpool.status</p></td><td style="width: 69.8113%;">Рабочее состояние pgpool-II, наличие или отсутствие виртуального ip-адреса.</td></tr><tr><td style="width: 30.0539%;"><p id="isPasted">pgpool.watchdog</p></td><td style="width: 69.8113%;">Рабочее состояние pgpool-II, наличие или отсутствие виртуального ip-адреса кластера.</td></tr></tbody></table>
+For agent version 5.0v2, you should use the Zabbix template of the PosgreSQL Agent 2 server.
 
-Для начала использования необходимо [распаковать архив](https://github.com/pg-monz/pg_monz/archive/refs/tags/2.2.tar.gz) и импортировать темплейты из директории /pg_monz-2.2/pg_monz/template/ на Zabbix сервере.
+In the template settings you should set:
 
-### Темплейт PostgreSQL
+- PG.URI - tcp://127.0.0.1:5432;
+- PG.DB - postgres.
 
-Использование темплейта позволяет получать следующие метрики:
+## MySQL monitoring
 
-<table style="width: 100%;"><tbody><tr><td style="width: 30.7278%;"><p id="isPasted">bgwriter&nbsp;</p></td><td style="width: 69.1374%;"><span id="isPasted" style="color: rgb(56, 76, 96); font-family: sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Состояние процесса теневой записи: метрики обработки буфферов и чекпойнтов.</span><br></td></tr><tr><td style="width: 30.7278%;"><p id="isPasted">connections&nbsp;</p></td><td style="width: 69.1374%;"><span id="isPasted" style="color: rgb(56, 76, 96); font-family: sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Информация о состоянии подключений.</span><br></td></tr><tr><td style="width: 30.7278%;"><p id="isPasted">replications&nbsp;</p></td><td style="width: 69.1374%;"><span id="isPasted" style="color: rgb(56, 76, 96); font-family: sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Статус репликации.</span><br></td></tr><tr><td style="width: 30.7278%;"><p id="isPasted">transactions&nbsp;</p></td><td style="width: 69.1374%;"><span id="isPasted" style="color: rgb(56, 76, 96); font-family: sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Сведения о времени выполнения транзакций.</span><br></td></tr><tr><td style="width: 30.7278%;"><p id="isPasted">WAL&nbsp;</p></td><td style="width: 69.1374%;">З<span id="isPasted" style="color: rgb(56, 76, 96); font-family: sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">аписано байт, количество сегментов.</span></td></tr><tr><td style="width: 30.7278%;"><p id="isPasted">status&nbsp;</p></td><td style="width: 69.1374%;"><span id="isPasted" style="color: rgb(56, 76, 96); font-family: sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Общие сведения о сервере.</span><br></td></tr><tr><td style="width: 30.7278%;">db<br></td><td style="width: 69.1374%;"><span id="isPasted" style="color: rgb(56, 76, 96); font-family: sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">Метрики по каждой базе данных: запросы, кортежы, deadlocks, rollbacks, размер.</span><br></td></tr></tbody></table>
+Installing the Zabbix Agent extension for ClickHouse allows you to collect the following metrics:
 
-В версии 5.0 и выше темплейт предустановлен на сервере.
+<table style="border: none; border-collapse: collapse; margin-left: calc(0%); width: 100%;"><tbody><tr><td><p dir="ltr">mysql status</p></td><td><p dir="ltr">Version, ID, Status, Continuous Uptime.</p></td></tr><tr><td><p dir="ltr"><span>connections status</span></p></td><td><p dir="ltr">Communication errors and broken connections.</p></td></tr><tr><td><p dir="ltr">traffic</p></td><td><p dir="ltr">Received/sent, bytes per second.</p></td></tr><tr><td><p dir="ltr">temporary objects usage</p></td><td><p dir="ltr">Using temporary files, tables and tables on disks.</p></td></tr><tr><td><p dir="ltr">keys usage</p></td><td><p dir="ltr">Number of writes, reads, blocks and cache usage MyISAM.</p></td></tr><tr><td><p dir="ltr">operations count</p></td><td><p dir="ltr">Operations per second for begin, commit, delete, insert, rollback, select, update.</p></td></tr><tr><td><p dir="ltr">queries</p></td><td><p dir="ltr">The number of requests per second and slow requests.</p></td></tr><tr><td><p dir="ltr">table locks</p></td><td><p dir="ltr">Number of immediate and pending table locks.</p></td></tr><tr><td><p dir="ltr">threads count</p></td><td><p dir="ltr">Number of running, created connected and cached threads.</p></td></tr></tbody></table>
 
-### Важно
+When choosing Zabbix agent version 3.4, template components are installed [mysbix](https://github.com/sergiotocalini/mysbix).
 
-Макросы {$PG.HOST}, {$PG.PORT}, {$PG.USER} переопределяются на стороне агента и их изменение на сервере zabbix не будет иметь эффекта.
+To get started [import](https://www.zabbix.com/documentation/current/ru/manual/xml_export_import/templates#%D0%B8%D0%BC%D0%BF%D0%BE%D1%80%D1%82) template [https://raw.githubusercontent.com/sergiotocalini/mysbix/master/zbx3.4_template_db_mysql.xml](https://raw.githubusercontent.com/sergiotocalini/mysbix/master/zbx3.4_template_db_mysql.xml).
 
-### Мониторинг MySQL
+<warn>
 
-Для мониторинга MySQL вместе с агентом Zabbix устанавливаются компоненты темплейта [mysbix](https://github.com/sergiotocalini/mysbix), который позволяет собирать перечисленные ниже метрики:
+In some versions of Zabbix server, a template with the same name may already be installed. We recommend that you change the template name in the xml file to a unique one before importing to avoid collisions.
 
-<table border="1" cellpadding="0" cellspacing="0" width="468"><tbody><tr><td valign="bottom" width="35.8974358974359%"><p>mysql status</p></td><td valign="bottom" width="64.1025641025641%"><p>версия БД, идентификатор, состояние, непрерывное время работы</p></td></tr><tr><td valign="bottom" width="35.8974358974359%"><p>connections status</p></td><td valign="bottom" width="64.1025641025641%"><p>ошибки связи и прерванные соединения</p></td></tr><tr><td valign="bottom" width="35.8974358974359%"><p>traffic</p></td><td valign="bottom" width="64.1025641025641%"><p>получено/отправлено, байт в секунду&nbsp;</p></td></tr><tr><td valign="bottom" width="35.8974358974359%"><p>temporary objects usage</p></td><td valign="bottom" width="64.1025641025641%"><p>использование временных файлов, таблиц и таблиц на дисках&nbsp;</p></td></tr><tr><td valign="bottom" width="35.8974358974359%"><p>keys usage</p></td><td valign="bottom" width="64.1025641025641%"><p>количество записей, чтений, использование блоков и кэша&nbsp;MyISAM</p></td></tr><tr><td valign="bottom" width="35.8974358974359%"><p>operations count</p></td><td valign="bottom" width="64.1025641025641%"><p>Операций в секунду &nbsp;для begin,commit,delete,insert,rollback,select,update</p></td></tr><tr><td valign="bottom" width="35.8974358974359%"><p>queries</p></td><td valign="bottom" width="64.1025641025641%"><p>Количество запросов в секунду и медленных запросов</p></td></tr><tr><td valign="bottom" width="35.8974358974359%"><p>table locks</p></td><td valign="bottom" width="64.1025641025641%"><p>Количество немедленных и ожидаемых блокировок таблиц</p></td></tr><tr><td valign="bottom" width="35.8974358974359%"><p>threads count</p></td><td valign="bottom" width="64.1025641025641%"><p>Количество работающих, созданных подключенных и кэшированных потоков</p></td></tr></tbody></table>
+When choosing the v.5.0 agent version, use the template [Template DB MySQL by Zabbix agent](https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/db/mysql_agent?at=refs%2Fheads%2Freelease%2F5.0) pre-installed on Zabbix server version 5.0 and higher.
 
-Для начала использования [импортируйте](https://www.zabbix.com/documentation/current/ru/manual/xml_export_import/templates#%D0%B8%D0%BC%D0%BF%D0%BE%D1%80%D1%82) темплейт [https://raw.githubusercontent.com/sergiotocalini/mysbix/master/zbx3.4_template_db_mysql.xml](https://raw.githubusercontent.com/sergiotocalini/mysbix/master/zbx3.4_template_db_mysql.xml).
+</warn>
 
-### Важно
+## Monitoring Galera
 
-В некоторых версиях Zabbix server может быть уже установлен темплейт с таким же именем. Рекомендуется перед импортом изменить имя темплейта в xml файле на уникальное, чтобы избежать коллизий.
+To monitor Galera, along with Zabbix agent version 3.4, the [zabbix-galera-template](https://github.com/MogiePete/zabbix-galera-template) template components are installed, which allows you to collect the following metrics:
 
-## Мониторинг Galera
+<table border="1" cellpadding="0" cellspacing="0" width="523"><tbody><tr><td valign="bottom" width="34.41682600382409%"><p>cluster information</p></td><td valign="bottom" width="65.5831739961759%"><p>cluster ID, number of members</p></td></tr><tr><td valign="bottom" width="34.41682600382409%"><p>cluster member status</p></td><td valign="bottom" width="65.5831739961759%"><p>ready, cluster connection status, EVS protocol status, group connection ID, last transaction number</p></td></tr><tr><td valign="bottom" width="34.41682600382409%"><p>cluster member performance</p></td><td valign="bottom" width="65.5831739961759%"><p>control flow events and state of request queues</p></td></tr><tr><td valign="bottom" width="34.41682600382409%"><p>replication counters</p></td><td valign="bottom" width="65.5831739961759%"><p>metrics for replicated data and keys</p></td></tr></tbody></table>
 
-Для мониторинга Galera вместе с агентом Zabbix устанавливаются компоненты темплейта [zabbix-galera-template](https://github.com/MogiePete/zabbix-galera-template), который позволяет собирать перечисленные ниже метрики:
+To get started [import](https://www.zabbix.com/documentation/current/ru/manual/xml_export_import/templates#%D0%B8%D0%BC%D0%BF%D0%BE%D1%80%D1%82) template: [https://raw.githubusercontent.com/MogiePete/zabbix-galera-template/master/App-Galera_Cluster.xml](https://raw.githubusercontent.com/MogiePete/zabbix-galera-template/master/App-Galera_Cluster.xml).
 
-<table border="1" cellpadding="0" cellspacing="0" width="523"><tbody><tr><td valign="bottom" width="34.41682600382409%"><p>cluster information</p></td><td valign="bottom" width="65.5831739961759%"><p>идентификатор кластера, количество членов</p></td></tr><tr><td valign="bottom" width="34.41682600382409%"><p>cluster member status</p></td><td valign="bottom" width="65.5831739961759%"><p>готовность, состояние подключения к кластеру, состояние протокола EVS, идентификатор групповой связи, номер последней транзакции</p></td></tr><tr><td valign="bottom" width="34.41682600382409%"><p>cluster member performance</p></td><td valign="bottom" width="65.5831739961759%"><p>события потока управления и состояние очередей запросов</p></td></tr><tr><td valign="bottom" width="34.41682600382409%"><p>replication counters</p></td><td valign="bottom" width="65.5831739961759%"><p>количественные показатели реплицированных данных и ключей</p></td></tr></tbody></table>
+## Monitor MongoDB
 
-Для начала использования [импортируйте](https://www.zabbix.com/documentation/current/ru/manual/xml_export_import/templates#%D0%B8%D0%BC%D0%BF%D0%BE%D1%80%D1%82) темплейт: [https://raw.githubusercontent.com/MogiePete/zabbix-galera-template/master/App-Galera_Cluster.xml](https://raw.githubusercontent.com/MogiePete/zabbix-galera-template/master/App-Galera_Cluster.xml).
+Installing the Zabbix agent extension for ClickHouse allows you to collect the following metrics:
+
+<table><tbody><tr><td><p dir="ltr">db status</p></td><td><p dir="ltr">Readiness, status of connections.</p></td></tr><tr><td><p dir="ltr">operations count</p></td><td><p dir="ltr"><span>Commands, inserts, deletes, requests per second.</span></p></td></tr><tr><td><p dir="ltr">storage engine cache</p></td><td><p dir="ltr">Using the storage cache.</p></td></tr><tr><td><p dir="ltr">network usage</p></td><td><p dir="ltr">Network Activity Metrics.</p></td></tr><tr><td><p dir="ltr">memory usage</p></td><td><p dir="ltr">Memory usage.</p></td></tr><tr><td><p dir="ltr">per db metrics</p></td><td><p dir="ltr">Average size and number of objects, number of collections, data volume, number and size of indexes, storage size.</p></td></tr></tbody></table>
+
+When choosing Zabbix agent version 3.4, template components are installed[zabbix-mongodb](https://github.com/omni-lchen/zabbix-mongodb).
+
+To get started [import](https://www.zabbix.com/documentation/current/ru/manual/xml_export_import/templates#%D0%B8%D0%BC%D0%BF%D0%BE%D1%80%D1%82) template: [https://raw.githubusercontent.com/omni-lchen/zabbix-mongodb/master/Templates/Template_MongoDB.xml](https://raw.githubusercontent.com/omni-lchen/zabbix-mongodb/master/Templates/Template_MongoDB.xml).[](https://raw.githubusercontent.com/omni-lchen/zabbix-mongodb/master/Templates/Template_MongoDB.xml)
+
+When choosing Zabbix agent version 5.0, a second generation agent will be installed that supports the template [Template DB MongoDB node by Zabbix Agent 2](https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/db/mongodb/template_db_mongodb.xml?at=refs%2Fheads%2Freerelease%2F5.0) pre-installed on Zabbix server version 5.0 and above. Set the macro value “{$MONGODB.CONNSTRING}” to “mcs_mongodb" to authorize on the observed host.
+
+## Clickhouse monitoring
+
+Installing the Zabbix Agent extension for ClickHouse allows you to collect the following metrics:
+
+<table><tbody><tr><td><p>db status</p></td><td><p>Readiness, status of connections.</p></td></tr><tr><td><p>operations count</p></td><td><p>Inserts\rows per second, queries per second.</p></td></tr><tr><td><p>query</p></td><td><p>The number of current requests, the maximum time for the execution of current requests, the number of processed requests and inserts, insert delays.</p></td></tr><tr><td><p>merge</p></td><td><p>Merges of uncompressed bytes and merges of strings per second.</p></td></tr><tr><td><p>replication</p></td><td><p>Memory usage for replication, lag, number of replication tasks in the queue.</p></td></tr><tr><td><p>memory usage</p></td><td><p>Memory usage for background merges, mutations, deliveries.</p></td></tr></tbody></table>
+
+When choosing the version of zabbix agent 3.4, the template components are installed [clickhouse-zabbix-template](https://www.google.com/url?q=https://github.com/Altinity/clickhouse-zabbix-template/&sa=D&source=docs&ust=1635766525505000&usg=AOvVaw1EbWUEyfblJ3WnlZpK9shE).
+
+To get started [import](https://www.zabbix.com/documentation/current/ru/manual/xml_export_import/templates#%D0%B8%D0%BC%D0%BF%D0%BE%D1%80%D1%82) template: [https://raw.githubusercontent.com/Altinity/clickhouse-zabbix-template/master/zbx_clickhouse_template.xml](https://raw.githubusercontent.com/Altinity/clickhouse-zabbix-template/master/zbx_clickhouse_template.xml).
+
+If your zabbix-server version is 5.0 or higher use built-in template[Template DB ClickHouse by HTTP](https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/db/clickhouse_http?at=refs%2Fheads%2Frelease%2F5.0).
+
+When installing the extension, specify the parameters:
+
+- source_ip_addresses - to specify allowed addresses, to connect to clickhouse-server via http in a format similar to permission settings [cllickhouse users](https://clickhouse.com/docs/en/operations/settings/settings-users/#user-namenetworks) (separator - comma).
+- zabbix_clickhouse_password — to use a value in a macro “{$CLICKHOUSE.PASSWORD}”
+- mcs_user - for macro {$CLICKHOUSE.USER}.
+
+## Monitor Redis
+
+Installing the Zabbix Agent for Redis extension allows you to collect the following metrics:
+
+<table><tbody><tr><td><p>command statistics</p></td><td><p>Team statistics: number, delay.</p></td></tr><tr><td><p>clients</p></td><td><p>connection statistics: number, connections per second, blocked, maximum buffer and maximum output of clients.</p></td></tr><tr><td><p>performance</p></td><td><p>Memory and CPU usage.</p></td></tr><tr><td><p>keys</p></td><td><p>Key counters and database related statistics.</p></td></tr><tr><td><p>replication</p></td><td><p>Replication Status.</p></td></tr><tr><td><p>slowlog</p></td><td><p>Information about slow queries.</p></td></tr></tbody></table>
+
+Template components are installed to monitor Redis Zabbix agent version 3.4 [zabbix-redis-template](https://github.com/pavelnemirovsky/zabbix-redis-template).
+
+To get started [import](https://www.zabbix.com/documentation/current/ru/manual/xml_export_import/templates#%D0%B8%D0%BC%D0%BF%D0%BE%D1%80%D1%82) template: [https://raw.githubusercontent.com/pavelnemirovsky/zabbix-redis-template/master/zbx_template/zbx_export_templates.xml](https://raw.githubusercontent.com/pavelnemirovsky/zabbix-redis-template/master/zbx_template/zbx_export_templates.xml).
+
+When choosing Zabbix agent version 5.0, a second generation agent will be installed that supports the template [Template DB Redis](https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/db/redis?at=release/5.0) pre-installed on zabbix-server v5.0 and above.
 
 ## Пример сценария подключения инстансов к серверу мониторинга
 
-1.  Обеспечьте сетевую связность инстанса и сервера мониторинга по портам для активных и пассивных проверок ([подробнее тут](https://www.zabbix.com/documentation/current/ru/manual/appendix/items/activepassive)).
-2.  Определитесь с методом шифрования передаваемых данных (без шифрования, TLS или PSK). При установке Zabbix агента вы можете выбрать оба метода защиты соединения, в таком случае в процессе эксплуатации способ шифрования можно будет изменять меняя конфигурацию подключения только на сервере ([подробнее тут](https://www.zabbix.com/documentation/current/ru/manual/encryption)).
-3.  Установите Zabbix агент на инстанс или все экземпляры кластера с желаемыми пользовательскими параметрами.
-4.  Подключите инстансы к Zabbix серверу в разделе Configuration -> Hosts -> Create Hosts ([подробнее тут](https://www.zabbix.com/documentation/5.4/ru/manual/config/hosts/host))
+1.  Provide network connectivity between the instance and the monitoring server by ports for active and passive checks ([more details here](https://www.zabbix.com/documentation/current/en/manual/appendix/items/activepassive)).
+2. Decide on the encryption method for the transmitted data (no encryption, TLS or PSK). When installing the Zabbix agent, you can choose both connection security methods, in which case during operation the encryption method can be changed by changing the connection configuration only on the server ([more details here](https://www.zabbix.com/documentation/current/ru/manual/encryption)).
+3.  Install the Zabbix agent on the instance or all instances of the cluster with the desired user settings.
+4. Connect the instances to the Zabbix server in the Configuration -> Hosts -> Create Hosts section ([details here](https://www.zabbix.com/documentation/5.4/ru/manual/config/hosts/host)).
 
-### Важно
+<warn>
 
-Используйте короткое имя инстанса (hostname -s) для значения полей Host name, PSK identity (если используется PSK).
+Use the short name of the instance (hostname -s) for the value of the Host name, PSK identity fields (if using PSK).
 
-5.  Назначьте темплейт(ы) мониторинга для инстанса или для группы в которую входит инстанс ([подробнее тут](https://www.zabbix.com/documentation/5.4/ru/manual/config/templates/linking))
-6.  Через 10 минут убедитесь, что данные от агента поступают на сервер в разделе Monitoring -> Latest Data, отфильтровав содержимое по имени инстанса. Исторические сведения по метрикам вы можете просмотреть там же - в последней колонке.
+5. Assign the monitoring template(s) to the instance or to the group that the instance belongs to ([details here](https://www.zabbix.com/documentation/5.4/ru/manual/config/templates/linking)).
+6.  After 10 minutes, verify that data from the agent is coming to the server under Monitoring -> Latest Data by filtering the content by instance name. You can view historical information on metrics in the same place - in the last column.
+
+</warn>
