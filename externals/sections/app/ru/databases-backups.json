@@ -5,10 +5,18 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/ru/main/dbs/dbaas/db-backup",
-                "docs/ru/main/base/iaas/vm-backup",
-                "docs/ru/main/base/iaas/vm-faq/faq-vm-backup"
+                {
+                    "link": "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/ru/main/dbs/dbaas/db-backup"
+                },
+                {
+                    "link": "docs/ru/main/base/iaas/vm-backup"
+                },
+                {
+                    "link": "docs/ru/main/base/iaas/vm-faq/faq-vm-backup"
+                }
             ]
         }
     ]

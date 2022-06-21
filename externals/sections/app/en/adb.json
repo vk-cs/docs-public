@@ -5,26 +5,46 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/en/main/dbs/adb/adb-start",
-                "docs/en/main/dbs/adb",
-                "docs/en/main/additionals/billing"
+                {
+                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/en/main/dbs/adb/adb-start"
+                },
+                {
+                    "link": "docs/en/main/dbs/adb"
+                },
+                {
+                    "link": "docs/en/main/additionals/billing"
+                }
             ]
         },
         {
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
-                "docs/en/main/dbs/adb/adb-start/create-adb",
-                "docs/en/main/dbs/adb/adb-start/launch-adb",
-                "docs/en/main/dbs/adb/adb-start/delete-adb"
+                {
+                    "link": "docs/en/main/dbs/adb/adb-start/create-adb"
+                },
+                {
+                    "link": "docs/en/main/dbs/adb/adb-start/launch-adb"
+                },
+                {
+                    "link": "docs/en/main/dbs/adb/adb-start/delete-adb"
+                }
             ]
         },
         {
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
-                "docs/en/main/dbs/dbaas/db-replica/create-db-replica",
-                "docs/en/main/dbs/dbaas/db-backup",
-                "docs/en/main/additionals/start/user-account/quota-limits"
+                {
+                    "link": "docs/en/main/dbs/dbaas/db-replica/create-db-replica"
+                },
+                {
+                    "link": "docs/en/main/dbs/dbaas/db-backup"
+                },
+                {
+                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                }
             ]
         }
     ]

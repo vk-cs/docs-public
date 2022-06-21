@@ -5,9 +5,15 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/en/main/additionals/billing",
-                "docs/en/main/base/iaas/fs"
+                {
+                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/en/main/additionals/billing"
+                },
+                {
+                    "link": "docs/en/main/base/iaas/fs"
+                }
             ]
         }
     ]

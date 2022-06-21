@@ -5,32 +5,64 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/ru/main/base/iaas/vm-images/custom-image",
-                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/ru/main/additionals/start/user-account/quota-limits",
-                "docs/ru/main/additionals/billing",
-                "docs/ru/main/additionals/billing/operations/payment"
+                {
+                    "link": "docs/ru/main/base/iaas/vm-images/custom-image"
+                },
+                {
+                    "link": "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/ru/main/additionals/start/user-account/quota-limits"
+                },
+                {
+                    "link": "docs/ru/main/additionals/billing"
+                },
+                {
+                    "link": "docs/ru/main/additionals/billing/operations/payment"
+                }
             ]
         },
         {
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
-                "docs/ru/main/base/iaas/vm-interfaces/vm-create-cli",
-                "docs/ru/main/base/iaas/vm-volumes/volume-sla",
-                "docs/ru/main/base/iaas/vm-start/manage-vm",
-                "docs/ru/main/base/iaas/fs",
-                "docs/ru/main/additionals/mp"
+                {
+                    "link": "docs/ru/main/base/iaas/vm-interfaces/vm-create-cli"
+                },
+                {
+                    "link": "docs/ru/main/base/iaas/vm-volumes/volume-sla"
+                },
+                {
+                    "link": "docs/ru/main/base/iaas/vm-start/manage-vm"
+                },
+                {
+                    "link": "docs/ru/main/base/iaas/fs"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp"
+                }
             ]
         },
         {
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
-                "docs/ru/main/additionals/start/user-account/project-roles-users",
-                "docs/ru/main/dbs/dbaas/manage-db/backup-db",
-                "docs/ru/main/networks/vnet",
-                "docs/ru/main/networks/vnet/vpn",
-                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/ru/main/additionals/start/user-account/quota-limits"
+                {
+                    "link": "docs/ru/main/additionals/start/user-account/project-roles-users"
+                },
+                {
+                    "link": "docs/ru/main/dbs/dbaas/manage-db/backup-db"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet/vpn"
+                },
+                {
+                    "link": "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/ru/main/additionals/start/user-account/quota-limits"
+                }
             ]
         }
     ]

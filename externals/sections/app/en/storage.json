@@ -5,27 +5,49 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/en/main/base/s3/intro",
-                "docs/en/main/base/s3/rates-and-limits/s3-rates",
-                "docs/en/main/base/s3/quick-start"
+                {
+                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/en/main/base/s3/intro"
+                },
+                {
+                    "link": "docs/en/main/base/s3/rates-and-limits/s3-rates"
+                },
+                {
+                    "link": "docs/en/main/base/s3/quick-start"
+                }
             ]
         },
         {
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
-                "docs/en/main/base/s3/quick-start/create-bucket",
-                "docs/en/main/base/s3/access-management/s3-account"
+                {
+                    "link": "docs/en/main/base/s3/quick-start/create-bucket"
+                },
+                {
+                    "link": "docs/en/main/base/s3/access-management/s3-account"
+                }
             ]
         },
         {
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
-                "docs/en/main/base/s3/objects/s3-lifecycle",
-                "docs/en/main/base/s3/dev/s3-rest-api/bucket-api",
-                "docs/en/main/base/s3/dev/s3-rest-api/object-api",
-                "docs/en/main/base/s3/dev/s3-rest-api/acl-api",
-                "docs/en/main/additionals/start/user-account/quota-limits"
+                {
+                    "link": "docs/en/main/base/s3/objects/s3-lifecycle"
+                },
+                {
+                    "link": "docs/en/main/base/s3/dev/s3-rest-api/bucket-api"
+                },
+                {
+                    "link": "docs/en/main/base/s3/dev/s3-rest-api/object-api"
+                },
+                {
+                    "link": "docs/en/main/base/s3/dev/s3-rest-api/acl-api"
+                },
+                {
+                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                }
             ]
         }
     ]
