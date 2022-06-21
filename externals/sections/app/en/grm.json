@@ -5,10 +5,18 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/en/main/additionals/special/1cgrm/1cgrm-about",
-                "docs/en/main/additionals/special/1cgrm/1cgrm-rates",
-                "docs/en/main/additionals/special/1cgrm/1cgrm-start",
-                "docs/en/main/additionals/special/1cgrm/1cgrm-faq"
+                {
+                    "link": "docs/en/main/additionals/special/1cgrm/1cgrm-about"
+                },
+                {
+                    "link": "docs/en/main/additionals/special/1cgrm/1cgrm-rates"
+                },
+                {
+                    "link": "docs/en/main/additionals/special/1cgrm/1cgrm-start"
+                },
+                {
+                    "link": "docs/en/main/additionals/special/1cgrm/1cgrm-faq"
+                }
             ]
         }
     ]

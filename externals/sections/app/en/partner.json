@@ -5,8 +5,12 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/en/main/additionals/start/partners/about-partners",
-                "docs/en/main/additionals/start/partners/partners-profile"
+                {
+                    "link": "docs/en/main/additionals/start/partners/about-partners"
+                },
+                {
+                    "link": "docs/en/main/additionals/start/partners/partners-profile"
+                }
             ]
         }
     ]

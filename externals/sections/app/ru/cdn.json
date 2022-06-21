@@ -5,8 +5,12 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/ru/main/networks/cdn/about-cdn",
-                "docs/ru/main/networks/cdn/connect-cdn"
+                {
+                    "link": "docs/ru/main/networks/cdn/about-cdn"
+                },
+                {
+                    "link": "docs/ru/main/networks/cdn/connect-cdn"
+                }
             ]
         }
     ]

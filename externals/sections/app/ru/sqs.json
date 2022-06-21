@@ -5,12 +5,24 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/ru/main/manage/cloud-queues/cloud-queues-quick-start/cloud-queues-about",
-                "docs/ru/main/manage/cloud-queues/cloud-queues-quick-start/cloud-queues-create-delete",
-                "docs/ru/main/manage/cloud-queues/cloud-queues-architecture/based-architecture",
-                "docs/ru/main/manage/cloud-queues/cloud-quques-management/cloud-queues-access-keys",
-                "docs/ru/main/manage/cloud-queues/cloud-queues-api",
-                "docs/ru/main/manage/cloud-queues/cloud-queues-limitations/limits"
+                {
+                    "link": "docs/ru/main/manage/cloud-queues/cloud-queues-quick-start/cloud-queues-about"
+                },
+                {
+                    "link": "docs/ru/main/manage/cloud-queues/cloud-queues-quick-start/cloud-queues-create-delete"
+                },
+                {
+                    "link": "docs/ru/main/manage/cloud-queues/cloud-queues-architecture/based-architecture"
+                },
+                {
+                    "link": "docs/ru/main/manage/cloud-queues/cloud-quques-management/cloud-queues-access-keys"
+                },
+                {
+                    "link": "docs/ru/main/manage/cloud-queues/cloud-queues-api"
+                },
+                {
+                    "link": "docs/ru/main/manage/cloud-queues/cloud-queues-limitations/limits"
+                }
             ]
         }
     ]

@@ -5,22 +5,34 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/en/main/base/gpu/gpu-start/gpu-info"
+                {
+                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/en/main/base/gpu/gpu-start/gpu-info"
+                }
             ]
         },
         {
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
-                "docs/en/main/base/gpu/gpu-start/gpu-create",
-                "docs/en/main/base/iaas/vm-start"
+                {
+                    "link": "docs/en/main/base/gpu/gpu-start/gpu-create"
+                },
+                {
+                    "link": "docs/en/main/base/iaas/vm-start"
+                }
             ]
         },
         {
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
-                "docs/en/main/base/iaas/vm-faq",
-                "docs/en/main/additionals/start/user-account/quota-limits"
+                {
+                    "link": "docs/en/main/base/iaas/vm-faq"
+                },
+                {
+                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                }
             ]
         }
     ]

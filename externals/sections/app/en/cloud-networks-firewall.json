@@ -5,18 +5,32 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/en/main/networks/vnet/firewall",
-                "docs/en/main/networks/vnet"
+                {
+                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/en/main/networks/vnet/firewall"
+                },
+                {
+                    "link": "docs/en/main/networks/vnet"
+                }
             ]
         },
         {
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
-                "docs/en/main/networks/vnet/networks/fip",
-                "docs/en/main/networks/vnet/vnet-lb/about-lb",
-                "docs/en/main/networks/vnet/networks/create-net",
-                "docs/en/main/additionals/start/user-account/quota-limits"
+                {
+                    "link": "docs/en/main/networks/vnet/networks/fip"
+                },
+                {
+                    "link": "docs/en/main/networks/vnet/vnet-lb/about-lb"
+                },
+                {
+                    "link": "docs/en/main/networks/vnet/networks/create-net"
+                },
+                {
+                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                }
             ]
         }
     ]
