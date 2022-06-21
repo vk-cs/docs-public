@@ -5,25 +5,43 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/en/main/dbs/dbaas/dbaas-start",
-                "docs/en/main/dbs/dbaas",
-                "docs/en/main/additionals/billing"
+                {
+                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/en/main/dbs/dbaas/dbaas-start"
+                },
+                {
+                    "link": "docs/en/main/dbs/dbaas"
+                },
+                {
+                    "link": "docs/en/main/additionals/billing"
+                }
             ]
         },
         {
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
-                "docs/en/main/dbs/dbaas/dbaas-start/db-connect",
-                "docs/en/main/dbs/dbaas/dbaas-start/db-cluster"
+                {
+                    "link": "docs/en/main/dbs/dbaas/dbaas-start/db-connect"
+                },
+                {
+                    "link": "docs/en/main/dbs/dbaas/dbaas-start/db-cluster"
+                }
             ]
         },
         {
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
-                "docs/en/main/dbs/dbaas/db-replica/create-db-replica",
-                "docs/en/main/dbs/dbaas/db-backup",
-                "docs/en/main/additionals/start/user-account/quota-limits"
+                {
+                    "link": "docs/en/main/dbs/dbaas/db-replica/create-db-replica"
+                },
+                {
+                    "link": "docs/en/main/dbs/dbaas/db-backup"
+                },
+                {
+                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                }
             ]
         }
     ]

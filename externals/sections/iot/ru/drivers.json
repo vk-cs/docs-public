@@ -5,7 +5,9 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/ru/main/additionals/iot"
+                {
+                    "link": "docs/ru/main/additionals/iot"
+                }
             ]
         }
     ]

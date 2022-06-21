@@ -5,9 +5,15 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/ru/main/additionals/iot",
-                "docs/ru/main/additionals/iot/agents",
-                "docs/ru/main/additionals/iot/agents/protocol"
+                {
+                    "link": "docs/ru/main/additionals/iot"
+                },
+                {
+                    "link": "docs/ru/main/additionals/iot/agents"
+                },
+                {
+                    "link": "docs/ru/main/additionals/iot/agents/protocol"
+                }
             ]
         }
     ]
