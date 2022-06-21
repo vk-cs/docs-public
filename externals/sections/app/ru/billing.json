@@ -5,8 +5,12 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/ru/main/additionals/billing"
+                {
+                    "link": "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/ru/main/additionals/billing"
+                }
             ]
         }
     ]

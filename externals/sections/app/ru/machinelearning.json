@@ -5,12 +5,24 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/ru/main/ml/vision",
-                "docs/ru/main/ml/vision/vision-start/vision-rates",
-                "docs/ru/main/ml/vision/manage-vision",
-                "docs/ru/main/ml/cloud-voice/pricing",
-                "docs/ru/main/ml/cloud-voice"
+                {
+                    "link": "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/ru/main/ml/vision"
+                },
+                {
+                    "link": "docs/ru/main/ml/vision/vision-start/vision-rates"
+                },
+                {
+                    "link": "docs/ru/main/ml/vision/manage-vision"
+                },
+                {
+                    "link": "docs/ru/main/ml/cloud-voice/pricing"
+                },
+                {
+                    "link": "docs/ru/main/ml/cloud-voice"
+                }
             ]
         }
     ]

@@ -5,19 +5,35 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/ru/main/networks/vnet/networks"
+                {
+                    "link": "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet/networks"
+                }
             ]
         },
         {
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
-                "docs/ru/main/networks/vnet/networks/create-net",
-                "docs/ru/main/networks/vnet/vnet-lb",
-                "docs/ru/main/networks/vnet/vpn",
-                "docs/ru/main/networks/vnet/firewall",
-                "docs/ru/main/networks/vnet/networks/private-dns",
-                "docs/ru/main/networks/vnet/networks/publicdns"
+                {
+                    "link": "docs/ru/main/networks/vnet/networks/create-net"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet/vnet-lb"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet/vpn"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet/firewall"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet/networks/private-dns"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet/networks/publicdns"
+                }
             ]
         }
     ]

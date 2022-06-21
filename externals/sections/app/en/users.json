@@ -5,9 +5,15 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/en/main/additionals/start/user-account",
-                "docs/en/main/additionals/start/user-account/project-roles-users"
+                {
+                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/en/main/additionals/start/user-account"
+                },
+                {
+                    "link": "docs/en/main/additionals/start/user-account/project-roles-users"
+                }
             ]
         }
     ]

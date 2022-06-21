@@ -5,11 +5,21 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/ru/main/networks/vnet/networks/private-dns",
-                "docs/ru/main/networks/vnet/vpn/create-vpn",
-                "docs/ru/main/networks/vnet",
-                "docs/ru/main/networks/vnet/networks/create-net"
+                {
+                    "link": "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet/networks/private-dns"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet/vpn/create-vpn"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet/networks/create-net"
+                }
             ]
         }
     ]

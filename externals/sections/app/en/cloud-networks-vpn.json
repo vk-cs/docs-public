@@ -5,11 +5,21 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/en/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/en/main/networks/vnet/networks/private-dns",
-                "docs/en/main/networks/vnet/vpn/create-vpn",
-                "docs/en/main/networks/vnet",
-                "docs/en/main/networks/vnet/networks/create-net"
+                {
+                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/en/main/networks/vnet/networks/private-dns"
+                },
+                {
+                    "link": "docs/en/main/networks/vnet/vpn/create-vpn"
+                },
+                {
+                    "link": "docs/en/main/networks/vnet"
+                },
+                {
+                    "link": "docs/en/main/networks/vnet/networks/create-net"
+                }
             ]
         }
     ]

@@ -5,24 +5,40 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/ru/main/base/bigdata/bigdata-info/bigdata-architecture",
-                "docs/ru/main/additionals/cases"
+                {
+                    "link": "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/ru/main/base/bigdata/bigdata-info/bigdata-architecture"
+                },
+                {
+                    "link": "docs/ru/main/additionals/cases"
+                }
             ]
         },
         {
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
-                "docs/ru/main/base/bigdata/bigdata-start",
-                "docs/ru/main/base/bigdata/bigdata-start/create-bigdata"
+                {
+                    "link": "docs/ru/main/base/bigdata/bigdata-start"
+                },
+                {
+                    "link": "docs/ru/main/base/bigdata/bigdata-start/create-bigdata"
+                }
             ]
         },
         {
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
-                "docs/ru/main/base/bigdata",
-                "docs/ru/main/base/bigdata/bigdata-scale",
-                "docs/ru/main/additionals/start/user-account/quota-limits"
+                {
+                    "link": "docs/ru/main/base/bigdata"
+                },
+                {
+                    "link": "docs/ru/main/base/bigdata/bigdata-scale"
+                },
+                {
+                    "link": "docs/ru/main/additionals/start/user-account/quota-limits"
+                }
             ]
         }
     ]

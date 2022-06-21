@@ -5,9 +5,15 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/ru/main/additionals/iot",
-                "docs/ru/main/additionals/iot/about-iot",
-                "docs/ru/main/additionals/iot/registration"
+                {
+                    "link": "docs/ru/main/additionals/iot"
+                },
+                {
+                    "link": "docs/ru/main/additionals/iot/about-iot"
+                },
+                {
+                    "link": "docs/ru/main/additionals/iot/registration"
+                }
             ]
         }
     ]

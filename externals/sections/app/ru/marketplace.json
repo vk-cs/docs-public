@@ -5,23 +5,47 @@
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/ru/main/additionals/mp/mp-info/about-mp",
-                "docs/ru/main/additionals/cases"
+                {
+                    "link": "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-info/about-mp"
+                },
+                {
+                    "link": "docs/ru/main/additionals/cases"
+                }
             ]
         },
         {
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
-                "docs/ru/main/additionals/mp",
-                "docs/ru/main/additionals/start/user-account/mgmt-interfaces",
-                "docs/ru/main/additionals/mp/mp-faq/mp-connect-faq",
-                "docs/ru/main/additionals/mp/mp-apps/mp-gitlab-ce",
-                "docs/ru/main/additionals/mp/mp-apps/mp-docker-ce",
-                "docs/ru/main/additionals/mp/mp-apps/mp-lemp-stack",
-                "docs/ru/main/additionals/mp/mp-apps/mp-lamp-stack",
-                "docs/ru/main/additionals/mp/mp-apps/mp-jenkins",
-                "docs/ru/main/additionals/mp/mp-apps/mp-docker-registry"
+                {
+                    "link": "docs/ru/main/additionals/mp"
+                },
+                {
+                    "link": "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-faq/mp-connect-faq"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-gitlab-ce"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-docker-ce"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-lemp-stack"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-lamp-stack"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-jenkins"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-docker-registry"
+                }
             ]
         }
     ]
