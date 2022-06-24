@@ -15,7 +15,8 @@
                     "link": "docs/en/main/dbs/dbaas"
                 },
                 {
-                    "link": "docs/en/main/additionals/billing"
+                    "link": "docs/en/main/additionals/billing",
+                    "hiddenForPartners": true
                 }
             ]
         },

@@ -9,7 +9,8 @@
                     "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
                 },
                 {
-                    "link": "docs/en/main/additionals/billing"
+                    "link": "docs/en/main/additionals/billing",
+                    "hiddenForPartners": true
                 },
                 {
                     "link": "docs/en/main/base/s3/quick-start"
