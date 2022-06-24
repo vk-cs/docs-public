@@ -12,7 +12,8 @@
                     "link": "docs/en/main/base/iaas/vm-volumes"
                 },
                 {
-                    "link": "docs/en/main/additionals/billing"
+                    "link": "docs/en/main/additionals/billing",
+                    "hiddenForPartners": true
                 }
             ]
         },

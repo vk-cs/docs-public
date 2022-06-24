@@ -15,10 +15,12 @@
                     "link": "docs/en/main/additionals/start/user-account/quota-limits"
                 },
                 {
-                    "link": "docs/en/main/additionals/billing"
+                    "link": "docs/en/main/additionals/billing",
+                    "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/main/additionals/billing/operations/payment"
+                    "link": "docs/en/main/additionals/billing/operations/payment",
+                    "hiddenForPartners": true
                 }
             ]
         },
