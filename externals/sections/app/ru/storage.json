@@ -12,7 +12,8 @@
                     "link": "docs/ru/main/base/s3/intro"
                 },
                 {
-                    "link": "docs/ru/main/base/s3/rates-and-limits/s3-rates"
+                    "link": "docs/ru/main/base/s3/rates-and-limits/s3-rates",
+                    "hiddenForPartners": true
                 },
                 {
                     "link": "docs/ru/main/base/s3/quick-start"
