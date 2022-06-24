@@ -12,7 +12,8 @@
                     "link": "docs/ru/main/base/k8s"
                 },
                 {
-                    "link": "docs/ru/main/additionals/billing"
+                    "link": "docs/ru/main/additionals/billing",
+                    "hiddenForPartners": true
                 },
                 {
                     "link": "docs/ru/main/additionals/start/user-account/quota-limits"
