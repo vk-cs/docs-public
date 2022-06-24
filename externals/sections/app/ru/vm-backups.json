@@ -15,7 +15,8 @@
                     "link": "docs/ru/main/base/iaas/vm-faq/faq-vm-backup"
                 },
                 {
-                    "link": "docs/ru/main/additionals/billing"
+                    "link": "docs/ru/main/additionals/billing",
+                    "hiddenForPartners": true
                 }
             ]
         }

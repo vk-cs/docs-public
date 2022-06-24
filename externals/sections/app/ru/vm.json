@@ -6,6 +6,9 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
+                    "link" : "docs/ru/main/base/iaas/vm-start/vm-quick-create"
+                },
+                {
                     "link": "docs/ru/main/base/iaas/vm-images/custom-image"
                 },
                 {
@@ -15,10 +18,12 @@
                     "link": "docs/ru/main/additionals/start/user-account/quota-limits"
                 },
                 {
-                    "link": "docs/ru/main/additionals/billing"
+                    "link": "docs/ru/main/additionals/billing",
+                    "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/main/additionals/billing/operations/payment"
+                    "link": "docs/ru/main/additionals/billing/operations/payment",
+                    "hiddenForPartners": true
                 }
             ]
         },
