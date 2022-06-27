@@ -17,7 +17,7 @@
 
 Чтобы автоматизированно получать записи журнала действий, используйте запрос к API:
 
-```
+```http
 curl -i -X GET "[https://infra.mail.ru](https://infra.mail.ru/):{port}/v1/{project_id}/logs?source=nova" -H "X-Auth-Token: {auth_token}"
 ```
 
@@ -33,7 +33,7 @@ curl -i -X GET "[https://infra.mail.ru](https://infra.mail.ru/):{port}/v1/{proje
 
 Ответ:
 
-```
+```yaml
 {
    "logs": [
       {

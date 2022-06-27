@@ -16,7 +16,7 @@
 
 ##### C помощью apt (Debian, Ubuntu):
 
-```
+```bash
 apt update
 apt install python3-openstackclient 
 ```
@@ -26,7 +26,7 @@ apt install python3-openstackclient
 
 ##### С помощью dnf (RHEL 8, CentOS 8,  Fedora):
 
-```
+```bash
 dnf install [https://www.rdoproject.org/repos/rdo-release.el8.rpm](https://www.rdoproject.org/repos/rdo-release.el8.rpm) 
 dnf update
 dnf install python3-openstackclient
@@ -37,7 +37,7 @@ dnf install python3-openstackclient
 
 ##### С помощью yum (CentOS 7):
 
-```
+```bash
 yum install [https://rdoproject.org/repos/rdo-release.rpm](https://rdoproject.org/repos/rdo-release.rpm) 
 yum update
 yum install python2-openstackclient
@@ -50,7 +50,7 @@ yum install python2-openstackclient
 
 Для установки с помощью pip3 в системе должны присутствовать пакеты: gcc, pyhton3-dev, python3-pip.
 
-```
+```bash
 pip3 install -UI pbr testresources setuptools pytz wheel
 pip3 install -UI python-openstackclient
 ```
@@ -64,7 +64,7 @@ pip3 install -UI python-openstackclient
 
 Далее, выполните следующие команды в командной строке:
 
-```
+```bash
 pip3 install -UI pbr setuptools pytz wheel
 pip3 install -UI python-openstackclient
 ```

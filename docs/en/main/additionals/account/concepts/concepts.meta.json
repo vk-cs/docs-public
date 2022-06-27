@@ -1,0 +1,13 @@
+{
+  "title": "Concepts",
+  "pageDescription": "Basic concepts when working with the VK Cloud Solutions environment",
+  "shortDescription": "Basic concepts when working with the VK Cloud Solutions environment.",
+  "metaTitle": "Concepts - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Concepts",
+  "markdown": "As an administrator, you manage projects, users, and roles. Projects are organizational units in the cloud to which users can be assigned. Users can be members of one or more projects. Roles determine what actions users can perform. Role assignment for a pair user-project.",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": null,
+  "uuid": "083e0a40-14ee-4a2e-9253-bedaf3bad3cb"
+}

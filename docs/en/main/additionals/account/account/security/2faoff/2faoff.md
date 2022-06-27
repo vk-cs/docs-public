@@ -1,0 +1,1 @@
+Disabling 2FA is done in the account settings menu on the "Security" tab. To disable the function, enter the password for the current VK CS account and the code from the application, confirm your entry with the "Disable" button.

@@ -1,8 +1,8 @@
-Загрузите в панели [API ключи](https://mcs.mail.ru/app/project/keys/) личного кабинета openrc файл для конфигурации CLI.
+Загрузите в панели [«API ключи»](https://mcs.mail.ru/app/project/keys/) личного кабинета openrc файл для конфигурации CLI.
 
 <warn>
 
-Для каждого региона используется свой файл openrc. Подробнее о регионах вы можете узнать в статье [Регионы](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions).
+Для каждого региона используется свой файл openrc. Подробнее о регионах вы можете узнать в статье [«Регионы»](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions).
 
 </warn>
 
@@ -19,7 +19,7 @@
 
 Выполните импорт переменных из файла openrc с помощью команды `source`:
 
-```
+```bash
 source file.sh
 ```
 
@@ -30,7 +30,7 @@ source file.sh
 
 Откройте загруженный из личного кабинета файл openrc, найдите в нем переменные, начинающиеся на OS_, и импортируйте в командную строку с помощью команды `SET` по примеру, в каждую переменную подставив значение из сохраненного openrc файла без кавычек:
 
-```
+```bash
 set OS_INTERFACE=public
 set OS_AUTH_URL=https://infra.mail.ru:35357/v3/
 set OS_USERNAME=email
@@ -43,7 +43,7 @@ set OS_IDENTITY_API_VERSION=3
 
 Для PowerShell следует использовать следующие значения переменных:
 
-```
+```bash
 $env:OS_INTERFACE = "public"
 $env:OS_AUTH_URL = "https://infra.mail.ru:35357/v3/"
 $env:OS_USERNAME = "email"

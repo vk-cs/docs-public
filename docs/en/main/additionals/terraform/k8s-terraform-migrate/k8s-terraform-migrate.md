@@ -63,7 +63,7 @@ terraform import vkcs_kubernetes_node_group.ng_2 ng_uuid
 
 ```bash
 terraform state rm vkcs_containerinfra_cluster.cluster_1
-````
+```
 
 5. Remove the mention of the cluster managed using OpenStack Terraform Provider from the code:
 
