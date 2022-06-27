@@ -2,11 +2,11 @@
 
 <warn>
 
-Список эндпоинтов меняется в зависимости от выбранного региона. Подробнее о регионах вы можете узнать в статье [Регионы](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions).
+Список эндпоинтов меняется в зависимости от выбранного региона. Подробнее о регионах вы можете узнать в статье [«Регионы»](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions).
 
 </warn>
 
-Список доступных эндпоинтов всегда доступен в панели VK CS [в разделе "API Endpoints"](https://mcs.mail.ru/app/project/endpoints/).
+Список доступных эндпоинтов всегда доступен в панели VK CS [в разделе «API Endpoints»](https://mcs.mail.ru/app/project/endpoints/).
 
 ### Примеры использования API
 
@@ -14,8 +14,8 @@
 
 Чтобы начать отправлять запросы API, используется один из следующих методов:
 
-- **cURL** — инструмент командной строки, который позволяет отправлять HTTP-запросы и получать ответы.
-- **Openstack CLI** — клиент, который позволяет получать доступ к API через простые в использовании команды.
-- **REST клиенты** — Mozilla и Google предоставляют браузерные графические интерфейсы для REST. Для Firefox см. [RESTClient](https://addons.mozilla.org/en-US/firefox/addon/restclient/). Для Chrome см. [rest-client](https://code.google.com/archive/p/rest-client/).
-- **OpenStack Python Software Development Kit (SDK)** – SDK для написания скриптов автоматизации Python, которые создают ресурсы в проекте и управляют ими. В SDK реализованы привязки Python к API-интерфейсу OpenStack, который позволяет выполнять задачи автоматизации в Python, выполняя вызовы объектов Python вместо непосредственных вызовов REST. Все инструменты командной строки OpenStack реализованы с использованием Python SDK.
-- **OpenStack APIs**
+- cURL — инструмент командной строки, который позволяет отправлять HTTP-запросы и получать ответы.
+- Openstack CLI — клиент, который позволяет получать доступ к API через простые в использовании команды.
+- REST клиенты — Mozilla и Google предоставляют браузерные графические интерфейсы для REST. Для Firefox см. [RESTClient](https://addons.mozilla.org/en-US/firefox/addon/restclient/). Для Chrome см. [rest-client](https://code.google.com/archive/p/rest-client/).
+- OpenStack Python Software Development Kit (SDK) – SDK для написания скриптов автоматизации Python, которые создают ресурсы в проекте и управляют ими. В SDK реализованы привязки Python к API-интерфейсу OpenStack, который позволяет выполнять задачи автоматизации в Python, выполняя вызовы объектов Python вместо непосредственных вызовов REST. Все инструменты командной строки OpenStack реализованы с использованием Python SDK.
+- OpenStack APIs.

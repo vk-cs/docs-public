@@ -30,11 +30,11 @@ The Terraform language is declarative, describing the intended goal, not the ste
 
 Usually the configuration uses:
 
-- `terraform and required_providers' are the providers required for Terraform to work. Setting up the necessary providers is described in this [article](https://mcs.mail.ru/docs/ru/additionals/terraform/terraform-provider-config ).
-- `resource "resource_type" "resource_rame" {}` — describes the [resource] being created(https://www.terraform.io/language/resources/syntax ), for example: network, subnet, Kubernetes cluster or database cluster.
-- `data "data_type" "data_name"` — allows you to use [data](https://www.terraform.io/language/data-sources ) specified outside of the Terraform configuration that exist in the cloud or locally. For example, VM flavor, cluster template/version, and so on.
-- `variable "image_id" {}` — [input variables](https://www.terraform.io/language/values/variables ). They are used for rendering parameters of created resources outside the main configuration.
-- `output "instance_ip_addr" {}` — [output variables](https://www.terraform.io/language/values/outputs ). Output data to the command line.
+- `terraform and required_providers' are the providers required for Terraform to work. Setting up the necessary providers is described in this [article](https://mcs.mail.ru/docs/ru/additionals/terraform/terraform-provider-config).
+- `resource "resource_type" "resource_rame" {}` — describes the [resource] being created(https://www.terraform.io/language/resources/syntax), for example: network, subnet, Kubernetes cluster or database cluster.
+- `data "data_type" "data_name"` — allows you to use [data](https://www.terraform.io/language/data-sources) specified outside of the Terraform configuration that exist in the cloud or locally. For example, VM flavor, cluster template/version, and so on.
+- `variable "image_id" {}` — [input variables](https://www.terraform.io/language/values/variables). They are used for rendering parameters of created resources outside the main configuration.
+- `output "instance_ip_addr" {}` — [output variables](https://www.terraform.io/language/values/outputs). Output data to the command line.
 
 To determine the sequence of creating resources and their dependencies, the `depends_on` block is used, which specifies the resource on which the created resource depends:
 
