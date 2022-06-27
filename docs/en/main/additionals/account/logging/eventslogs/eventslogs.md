@@ -1,0 +1,1 @@
+The instance event log (event list) is a set of records reflecting the events of the virtual machine. More details can be found in the article ["Instance event log"](https://mcs.mail.ru/docs/ru/base/iaas/vm-start/manage-vm/vm-eventlog).
