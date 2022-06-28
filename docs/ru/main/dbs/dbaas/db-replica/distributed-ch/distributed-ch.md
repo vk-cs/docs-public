@@ -44,10 +44,3 @@ CREATE TABLE distributed ON CLUSTER cluster
 Также это является наиболее оптимальным решением, так как данные могут записываться на разные шарды полностью независимо.
 
 Во-вторых, вы можете делать INSERT в Distributed таблицу. В этом случае, таблица будет сама распределять вставляемые данные по серверам. Для того, чтобы писать в Distributed таблицу, у неё должен быть задан ключ шардирования (последний параметр). Также, если шард всего-лишь один, то запись работает и без указания ключа шардирования (так как в этом случае он не имеет смысла).
-
----
-
-Полезные ссылки:
-
-- [https://clickhouse.tech/docs/ru/operations/table_engines/replication/](https://clickhouse.tech/docs/ru/operations/table_engines/replication/)
-- [https://clickhouse.tech/docs/ru/operations/table_engines/distributed/](https://clickhouse.tech/docs/ru/operations/table_engines/distributed/)

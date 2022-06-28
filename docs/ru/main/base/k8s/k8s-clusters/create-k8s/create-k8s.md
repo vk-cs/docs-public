@@ -42,4 +42,4 @@
 
 ![](./assets/1598986650096-1598986650096.png)
 
-Все операции, перечисленные выше могут быть выполнены с помощью [VK CS Terraform Provider.](https://mcs.mail.ru/help/k8s-api/k8s-terraform-mcs)
+Все операции, перечисленные выше могут быть выполнены с помощью [VK CS Terraform Provider.](https://mcs.mail.ru/docs/ru/base/k8s/k8s-terraform/k8s-terraform-create)
