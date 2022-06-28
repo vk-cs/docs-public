@@ -4,29 +4,26 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 
 ## Подключение
 
-Прежде всего вам необходимо получить Secret для доступа к кластеру. Это можно сделать двумя способами: через графический интерфейс VK CS и с помощью kubectl.
+1. Получите Secret для доступа к Kubernetes Dashboard кластера одним из перечисленных способов:
 
-1.  С помощью интерфейса VK CS перейдите к кластеру, в меню выберите пункт "Получить Secret для входа в Kubernetes dashboard". В качестве альтернативы с помощью kubectl. Необходимо выполнить команду и скопировать ее вывод:
+    1. С помощью интерфейса VK CS: перейдите к кластеру, в меню выберите пункт "Получить Secret для входа в Kubernetes dashboard".
+    1. С помощью kubectl: выполните команду и скопируйте ее вывод.
 
-```
-kubectl get secret $(kubectl get sa dashboard-sa -o jsonpath='{.secrets[0].name}') -o jsonpath='{.data.token}' | base64 --decode
-```
+        ```bash
+        kubectl get secret $(kubectl get sa dashboard-sa -o jsonpath='{.secrets[0].name}') -o jsonpath='{.data.token}' | base64 --decode
+        ```
 
-2.  Запустить kubectl proxy:
+2.  Запустите kubectl proxy:
 
-```
-kubectl proxy
-```
+    ```bash
+    kubectl proxy
+    ```
 
-3.  Открыть браузер и перейти по ссылке:
+3.  Откройте браузер и перейдите по [ссылке](http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/).
 
-```
-[http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/](http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/)
-```
+    Загрузится веб-интерфейс Kubernetes Dashboard.
 
-4.  В открывшемся окне нужно выбрать опцию «Token».
-5.  Вставить токен, полученный от предыдущей команды, и нажать «Sign In».
+4.  Вам будет предложено авторизоваться. Выберите опцию «Token».
+5.  Вставьте токен, полученный на шаге 1, и нажмите «Sign In».
 
-    ![](./assets/1598991200265-1598991200264.png)
-
-6.  Откроется окно Kubernetes Dashboard с правами суперадмина.
+    Откроется Kubernetes Dashboard с правами суперадмина.
