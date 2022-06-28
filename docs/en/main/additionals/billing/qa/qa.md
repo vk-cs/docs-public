@@ -8,7 +8,7 @@ Within 10 minutes.
 
 ### How to make a refund when paying with a card?
 
-To get a refund, you need to contact [technical support](https://mcs.mail.ru/docs/ru/contacts). When contacting, you must specify the following data:
+To get a refund, you need to contact [technical support](https://mcs.mail.ru/docs/en/contacts). When contacting, you must specify the following data:
 
 - Account name
 - Project name
@@ -34,7 +34,7 @@ After you make the payment, we will send you a receipt to the email address of t
 <tabpanel>
 
 - In electronic form — within 10 working days following the reporting period of the month.
-- In printed form - up to 15 working days. We will send you paper originals of documents by Russian Post. To do this, contact [technical support](https://mcs.mail.ru/docs/ru/contacts).
+- In printed form - up to 15 working days. We will send you paper originals of documents by Russian Post. To do this, contact [technical support](https://mcs.mail.ru/docs/en/contacts).
 - EDO — up to 3 working days.
 
 </tabpanel>
