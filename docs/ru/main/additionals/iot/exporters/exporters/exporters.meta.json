@@ -1,12 +1,13 @@
 {
-    "title": "Экспорт данных в объектное хранилище",
-    "pageDescription": "",
-    "shortDescription": "Настройка автоматического экспорта данных из платформы в стороннюю систему",
-    "metaTitle": "Экспорт данных в объектное хранилище - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Экспорт данных в объектное хранилище",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "Экспорт данных в объектное хранилище",
+  "pageDescription": "",
+  "shortDescription": "Настройка автоматического экспорта данных из платформы в стороннюю систему",
+  "metaTitle": "Экспорт данных в объектное хранилище - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Экспорт данных в объектное хранилище",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "ca66bddc-8e2c-4da8-ba4b-ad6ce41d48d0"
+}
