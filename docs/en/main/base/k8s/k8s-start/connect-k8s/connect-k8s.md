@@ -1,172 +1,178 @@
 ## Description
 
-The Kubernetes command line tool kubectl lets you run commands against Kubernetes clusters. kubectl can be used to deploy applications, inspect and manage cluster resources, and view logs. A complete list of kubectl operations is available in the [official kubectl documentation](https://kubernetes.io/docs/reference/kubectl/overview/) .
+The Kubernetes command line tool kubectl lets you run commands against Kubernetes clusters. kubectl can be used to deploy applications, inspect and manage cluster resources, and view logs. A complete list of kubectl operations is available in the [official kubectl documentation](https://kubernetes.io/docs/reference/kubectl/overview/).
 
 ## Preparation for work
 
 The major version of kubectl used must not differ from the one used in the cluster. For example, version v1.19 can work with versions v1.16 and v1.15. Using the latest version of kubectl will help you avoid unexpected problems.
 
-## Installing kubectl
+## Installation kubectl
 
-For Linux
+<tabs>
+<tablist>
+<tab>Linux (curl)</tab>
+<tab>Linux (apt)</tab>
+<tab>Linux (yum)</tab>
+<tab>macOS (curl)</tab>
+<tab>macOS (Homebrew)</tab>
+<tab>Windows (manually installation)</tab>
+<tab>Windows (Powershell Gallery)</tab>
+</tablist>
+<tabpanel>
 
-**With curl**
+1. Download the latest version:
 
-Download the latest version:
+    ```bash
+    curl -LO https://storage.googleapis.com/kubernetes-release/release/\`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt\`/bin/linux/amd64/kubectl
+    ```
 
-```
- curl -LO https://storage.googleapis.com/kubernetes-release/release/\`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt\`/bin/linux/amd64/ kubectl
-```
+1. Make a binary file kubectl executable:
 
-Make the kubectl binary executable:
+    ```bash
+    chmod +x ./kubectl
+    ```
 
-```
- chmod + x ./kubectl
-```
+1. Move a binary file to a directory from a variable environment PATH:
 
-Move binary to directory from PATH environment variable:
+    ```bash
+    sudo mv ./kubectl /usr/local/bin/kubectl
+    ```
 
-```
- sudo mv ./kubectl / usr / local / bin / kubectl
-```
+</tabpanel>
+<tabpanel>
 
-Make sure the latest version is installed:
-
-```
- kubectl version --client
-```
-
-**Using the package manager**
-
-For Ubuntu, Debian and HypriotOS
-
-```
- sudo apt-get update && sudo apt-get install -y apt-transport-https
+```bash
+sudo apt-get update && sudo apt-get install -y apt-transport-https
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
 sudo apt-get update
 sudo apt-get install -y kubectl
 ```
 
-For CentOS, RHEL and Fedora
+</tabpanel>
+<tabpanel>
 
-```
- cat << EOF> /etc/yum.repos.d/kubernetes.repo
+```bash
+cat <<EOF > /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
-name = Kubernetes
-baseurl = https: //packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
-enabled = 1
-gpgcheck = 1
-repo_gpgcheck = 1
-gpgkey = https: //packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 EOF
 yum install -y kubectl
 ```
 
-For macOS
+</tabpanel>
+<tabpanel>
 
-**With curl**
+1. Download the latest version:
 
-Download the latest version:
+    ```bash
+    curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl"
+    ```
 
-```
- curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/ amd64 / kubectl "
-```
+1. Make a binary kubectl file executable:
 
-Make the kubectl binary executable:
+    ```bash
+    chmod +x ./kubectl
+    ```
 
-```
- chmod + x ./kubectl
-```
+1. Move a binary file to a directory from a variable environment PATH:
 
-Move binary to directory from PATH environment variable:
+    ```bash
+    sudo mv ./kubectl /usr/local/bin/kubectl
+    ```
 
-```
- sudo mv ./kubectl / usr / local / bin / kubectl
-```
+</tabpanel>
+<tabpanel>
 
-Make sure the latest version is installed:
+Perform one of the command commands:
 
-```
- kubectl version --client
-```
-
-**With Homebrew**
-
-Run the install command:
-
-```
- brew install kubectl
+```bash
+brew install kubectl
 ```
 
-Or:
+ﬁ:
 
-```
- brew install kubernetes-cli
-```
-
-Make sure the latest version is installed:
-
-```
- kubectl version --client
+```bash
+brew install kubernetes-cli
 ```
 
-For Windows
+</tabpanel>
+<tabpanel>
 
-**Using standard tools**
+1.  Download the latest version V1.24.2 by [link](https://storage.googleapis.com/kubernetes-release/release/v1.24.2/bin/windows/amd64/kubectl.exe).
 
-1.  Download the latest version v1.19.0 from the [link](https://storage.googleapis.com/kubernetes-release/release/v1.19.0/bin/windows/amd64/kubectl.exe) .
-2.  Specify the directory with the binary file where the installation was made to the PATH environment variable: "Start-> This computer-> Properties-> Additional system settings-> Environment Variables-> System Variables-> PATH"
-3.  Make sure the version of kubectl is the same as the one loaded:
+1.  Indicate the directory with the binary file where the download was made in the Path environment variable: "Start-> This computer-> Properties-> Additional parameters of the system-> Variating environment-> System variables-> Path"
 
-```
- kubectl version --client
-```
+    <info>
 
-**Note**
+    Docker Desktop for Windows adds its own version of Kubectl to the Path environment variable.If Docker Desktop is installed, you need to place the path to the installed binary file before the recording added by the Docker Desktop installer, or delete the Kubectl supplied along with the Docker Desktop.
 
-Docker Desktop for Windows adds its own version of kubectl to the PATH environment variable. If Docker Desktop is installed, you need to put the path to the installed binary before the entry added by the Docker Desktop installer, or remove the kubectl that comes with Docker Desktop altogether.
+    </info>
 
-**Using PowerShell from PSGallery**
+</tabpanel>
+<tabpanel>
 
-When using the Powershell Gallery package manager on Windows, you can install and update kubectl using Powershell.
+When using the PowerShell Gallery package manager in Windows, you can install and update Kubectl using PowerShell.
 
-Run installation commands (be sure to specify DownloadLocation):
+Perform installation commands:
 
-```
- Install-Script -Name install-kubectl -Scope CurrentUser -Force
+```powershell
+Install-Script -Name install-kubectl -Scope CurrentUser -Force
 install-kubectl.ps1 [-DownloadLocation <path>]
 ```
 
-**Note**
+<info>
 
-If you do not specify DownloadLocation, then kubectl will be installed in the user's temporary directory.
+-   If you do not specify the argument  `-DownloadLocation`, then Kubectl will be installed in the temporary directory of the user.
+-   The installer will create a directory`$HOME/.kube` Together with the configuration file.
+-   You can update Kubectl by execution of two commands listed in step 1.
 
-The installer will create HOME / .kube along with a config file.
+</info>
 
-Make sure the latest version is installed:
+</tabpanel>
+</tabs>
 
+To make sure that kubectl of the required version is installed, you need to run the command:
+
+```bash
+kubectl version --client
 ```
- kubectl version --client
-```
-
-**Note**
-
-You can update kubectl by running the two commands listed in step 1.
 
 ## Import configuration
 
-In order for kubectl to find and access the Kubernetes cluster, a kubeconfig configuration file is required, which is created automatically when the cluster is created and loaded to the local computer from the VK CS panel. The import of the configuration file \* .yaml is carried out using the command
+In order for kubectl to find and access the Kubernetes cluster, the kubeconfig configuration file is required, which is automatically created when the cluster is created and downloaded to the local computer from the VK CS panel. To import the \*.yaml configuration file, you need to run the command:
 
+<tabs>
+<tablist>
+<tab>Linux, macOS</tab>
+<tab>Windows (PowerShell)</tab>
+</tablist>
+<tabpanel>
+
+```bash
+export KUBECONFIG=$KUBECONFIG:$HOME/.kube/config
 ```
- export KUBECONFIG = <path to file>
+
+</tabpanel>
+<tabpanel>
+
+```powershell
+$Env:KUBECONFIG="$Env:KUBECONFIG;$HOME\.kube\config"
 ```
+
+</tabpanel>
+</tabs>
 
 ## Cluster connection
 
 You can look at the state of the cluster to make sure that kubectl is configured correctly using the command:
 
-```
+```bash
  kubectl cluster-info
 ```
 
@@ -174,14 +180,14 @@ If, as a result of the command execution, the URL response is visible, then kube
 
 If the following message appears, it means that kubectl is configured incorrectly or cannot connect to the Kubernetes cluster:
 
-```
+```bash
  The connection to the server <server-name: port> was refused - did you specify the right host or port?
 ```
 
 If the kubectl cluster-info command returns a URL response but fails to connect to your cluster, use the command:
 
-```
+```bash
  kubectl cluster-info dump
 ```
 
-Alternatively, you can connect to the cluster using Kubernetes Dashboard using the [following instruction](https://mcs.mail.ru/help/en_US/k8s-start/k8s-dashboard) .
+Alternatively, you can connect to the cluster using Kubernetes Dashboard using the [following instruction](https://mcs.mail.ru/help/en_US/k8s-start/k8s-dashboard).
