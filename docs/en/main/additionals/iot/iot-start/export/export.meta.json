@@ -1,12 +1,13 @@
 {
-    "title": "Export data stream to object storage",
-    "pageDescription": "Setting up your first exporter to export data to S3 compatible storage.",
-    "shortDescription": "Setting up your first exporter to export data to S3 compatible storage",
-    "metaTitle": "Export data stream to object storage - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Export data stream to object storage",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 3
-  }
+  "title": "Export data stream to object storage",
+  "pageDescription": "Setting up your first exporter to export data to S3 compatible storage.",
+  "shortDescription": "Setting up your first exporter to export data to S3 compatible storage",
+  "metaTitle": "Export data stream to object storage - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Export data stream to object storage",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "16fea53f-29e5-4d8e-9eb2-07898ff40ab4"
+}
