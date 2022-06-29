@@ -1,3 +1,4 @@
 [submodule "devops"]
 	path = devops
 	url = ../docs-public-devops.git
+	branch = master
