@@ -1,12 +1,13 @@
 {
-    "title": "Управление инстансом JupyterHub",
-    "pageDescription": "Управление инстансом JupyterHub",
-    "shortDescription": "Управление созданным инстансом JupyterHub.",
-    "metaTitle": "Управление инстансом JupyterHub - VK Cloud Solutions",
-    "metaDescription": "Управление инстансом JupyterHub",
-    "sectionTitle": "Управление инстансом JupyterHub",
-    "markdown": "Управление инстансом JupyterHub",
-    "icon": "",
-    "weight": 1,
-    "infobarItems": null
-  }
+  "title": "Управление инстансом JupyterHub",
+  "pageDescription": "Управление инстансом JupyterHub",
+  "shortDescription": "Управление созданным инстансом JupyterHub.",
+  "metaTitle": "Управление инстансом JupyterHub - VK Cloud Solutions",
+  "metaDescription": "Управление инстансом JupyterHub",
+  "sectionTitle": "Управление инстансом JupyterHub",
+  "markdown": "Управление инстансом JupyterHub",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": null,
+  "uuid": "84b3d46e-a1a8-4668-ad1b-e51c6d450d41"
+}

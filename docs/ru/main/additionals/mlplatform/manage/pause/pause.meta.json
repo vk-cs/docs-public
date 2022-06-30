@@ -1,12 +1,13 @@
 {
-    "title": "Остановка инстанса JupyterHub",
-    "pageDescription": "Остановка инстанса JupyterHub",
-    "shortDescription": "Процедура остановки работы инстанса JupyterHub.",
-    "metaTitle": "Остановка инстанса JupyterHub - VK Cloud Solutions",
-    "metaDescription": "Остановка инстанса JupyterHub",
-    "sectionTitle": "Остановка инстанса JupyterHub",
-    "markdown": "Остановка инстанса JupyterHub",
-    "icon": "",
-    "weight": 0,
-    "infobarItems": null
-  }
+  "title": "Остановка инстанса JupyterHub",
+  "pageDescription": "Остановка инстанса JupyterHub",
+  "shortDescription": "Процедура остановки работы инстанса JupyterHub.",
+  "metaTitle": "Остановка инстанса JupyterHub - VK Cloud Solutions",
+  "metaDescription": "Остановка инстанса JupyterHub",
+  "sectionTitle": "Остановка инстанса JupyterHub",
+  "markdown": "Остановка инстанса JupyterHub",
+  "icon": "",
+  "weight": 0,
+  "infobarItems": null,
+  "uuid": "83bdbd03-e5ee-4caf-b28d-4de0bbd6a744"
+}
