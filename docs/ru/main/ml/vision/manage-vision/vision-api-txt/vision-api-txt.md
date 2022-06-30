@@ -1,3 +1,7 @@
+HOST: https://smarty.mail.ru
+
+ENDPOINT: /api/v1/text/recognize
+
 Данный метод позволяет распознавать текст на изображении.
 
 ## Запрос
