@@ -8,5 +8,6 @@
   "markdown": "Pausing a JupyterHub instance",
   "icon": "",
   "weight": 0,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "c1708448-4012-40ac-b914-536aaf1b9862"
 }

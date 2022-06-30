@@ -1,12 +1,13 @@
 {
-    "title": "ML Platform",
-    "pageDescription": "ML Platform",
-    "shortDescription": "ML Platform это сервис по созданию и работе с инстансами JupyterHub.",
-    "metaTitle": "ML Platform - VK Cloud Solutions",
-    "metaDescription": "ML Platform",
-    "sectionTitle": "ML Platform",
-    "markdown": "ML Platform",
-    "icon": "",
-    "weight": 16,
-    "infobarItems": null
-  }
+  "title": "ML Platform",
+  "pageDescription": "ML Platform",
+  "shortDescription": "ML Platform это сервис по созданию и работе с инстансами JupyterHub.",
+  "metaTitle": "ML Platform - VK Cloud Solutions",
+  "metaDescription": "ML Platform",
+  "sectionTitle": "ML Platform",
+  "markdown": "ML Platform",
+  "icon": "",
+  "weight": 16,
+  "infobarItems": null,
+  "uuid": "ab24a318-2169-471e-9f86-b5e68361cfdb"
+}

@@ -8,5 +8,6 @@
   "markdown": "JupyterHub Instance Management",
   "icon": "",
   "weight": 1,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "d8e46b13-992e-4b2f-b26c-d7a31eaf3860"
 }

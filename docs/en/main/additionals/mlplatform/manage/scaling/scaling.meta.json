@@ -8,5 +8,6 @@
   "markdown": "Editing JupyterHub instance",
   "icon": "",
   "weight": 1,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "07bcb0ec-3b15-4f23-aa0c-4b16e05884a4"
 }
