@@ -2,6 +2,10 @@
 
 ## Запрос
 
+HOST: `https://smarty.mail.ru`
+
+ENDPOINT: `/api/v1/objects/detect`
+
 Авторизационные данные передаются в строке запроса:
 
 | Параметр       | Тип    | Значение                                 |
@@ -13,7 +17,6 @@
 
 | Провайдер | Значение oauth_provider | Получение токена                                                                                                         |
 | --------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Mail.Ru   | mr                      | [https://help.mail.ru/biz/vision/api/v1/oauth_token](https://help.mail.ru/biz/vision/api/v1/oauth_token)                 |
 | MCS       | mcs                     | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token) (все клиенты MCS) |
 
 Параметры запроса передаются в формате JSON в теле запроса с name="meta":
@@ -25,7 +28,13 @@
 
 Возможные значения mode:
 
-<table cellpadding="5" cellspacing="0" width="623"><colgroup><col width="87"> <col width="514"></colgroup><tbody><tr><td style="border: 1px solid #000000;" width="87"><p align="center" style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">Параметр</p></td><td style="border: 1px solid #000000;" width="514"><p align="center" style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">Значение</p></td></tr><tr><td style="border: 1px solid #000000;" width="87"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">object</p></td><td style="border: 1px solid #000000;" width="514"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">искать на изображении объекты</p></td></tr><tr><td style="border: 1px solid #000000;" width="87"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">scene</p></td><td style="border: 1px solid #000000;" width="514"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">искать на изображении сцены</p></td></tr><tr><td style="border: 1px solid #000000;" width="87"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">car_number</p></td><td style="border: 1px solid #000000;" width="514"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">искать на изображении номера машин</p></td></tr><tr><td style="border: 1px solid #000000;" width="87"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">multiobject</p></td><td style="border: 1px solid #000000;" width="514"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">искать на изображении мультиобъекты - объекты и все множество боксов всех найденных объектов</p></td></tr><tr><td style="border: 1px solid #000000;" width="87"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">pedestrian</p></td><td style="border: 1px solid #000000;" width="514"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">искать на изображении людей (более точно определяет множество боксов всех людей на изображении)</p></td></tr></tbody></table>
+| Параметр | Тип   |
+| -------- | ----- |
+| object | искать на изображении объекты |
+| scene | искать на изображении сцены |
+| car_number | искать на изображении номера машин |
+| multiobject | искать на изображении мультиобъекты – объекты и все множество боксов всех найденных объектов |
+| pedestrian | искать на изображении людей (более точно определяет множество боксов всех людей на изображении) |
 
 ### mode
 
@@ -53,10 +62,10 @@ mode может содержать один или несколько режим
 
 ## Ответ
 
-| Параметр | Тип    | Значение                                                |
-| -------- | ------ | ------------------------------------------------------- | ----------- |
-| status   | int    | 200 в случае успеха, иначе описание ошибки будет в body |
-| body     | string | response                                                | тело ответа |
+| Параметр | Тип | Значение          |
+| -------------- | ----- | --------------------- |
+| status        | int    | 200 в случае успешного взаимодействия с серверами Vision |
+| body          | response | тело ответа |
 
 ### response
 
@@ -70,22 +79,21 @@ mode может содержать один или несколько режим
 
 ### object
 
-| Параметр | Тип     | Значение                                              |
-| -------- | ------- | ----------------------------------------------------- |
-| status   | enum    | результат выполнения                                  |
-| error    | string  | текстовое описание ошибки (optional)                  |
-| name     | string  | имя файла для сопоставления файлов в запросе и ответе |
-| labels   | []label | список объектов (меток), найденных на изображении     |
+| Параметр | Тип  | Значение |
+| --------- | -------- | ------- |
+| status       | enum     | результат выполнения |
+| error        | string   | текстовое описание ошибки (optional) |
+| name         | string   | имя файла для сопоставления файлов в запросе и ответе |
+| labels      | []label | список объектов (меток), найденных на изображении |
+| count_by_density | int | кол-во людей в кадре, подсчитанное с помощью карты плотности  (только для mode=”pedestrian”) |
 
-(only for pedestrian mode)
+### status
 
-| Параметр         | Тип                 | Значение                                                     |
-| ---------------- | ------------------- | ------------------------------------------------------------ |
-| count_by_density | int                 | кол-во людей в кадре, подсчитанное с помощью карты плотности |
-| Параметр         | Значение            |
-| 0                | успешно             |
-| 1                | перманентная ошибка |
-| 2                | временная ошибка    |
+| Параметр | Значение        |
+| ------------ | ------------------- |
+| 0            | успешно             |
+| 1            | перманентная ошибка |
+| 2            | временная ошибка    |
 
 ### label
 

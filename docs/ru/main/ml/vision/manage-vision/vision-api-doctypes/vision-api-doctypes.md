@@ -1,6 +1,10 @@
+HOST: https://smarty.mail.ru
+
+ENDPOINT: /api/v1/docs/detect
+
 Данный метод позволяет определить является ли фотография документом и возможный тип документа.
 
-### Запрос
+## Запрос
 
 Авторизационные данные передаются в строке запроса:
 
@@ -24,9 +28,9 @@ image_meta
 
 <table border="0"><tbody><tr><td style="background-color: rgb(239, 239, 239);"><p><span style="font-family: 'courier new', courier;">POST /api/v1/docs/detect?oauth_provider=mr&amp;oauth_token=123 HTTP/1.1</span></p><p><br><span style="font-family: 'courier new', courier;">Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp</span><br><br><span style="font-family: 'courier new', courier;">------WebKitFormBoundaryfCqTBHeLZlsicvMp</span><br><span style="font-family: 'courier new', courier;">Content-Disposition: form-data; name="file_0"; filename=""</span><br><span style="font-family: 'courier new', courier;">Content-Type: image/jpeg</span><br><br><span style="font-family: 'courier new', courier;">000000000000000000000000000</span><br><span style="font-family: 'courier new', courier;">000000000000000000000000000</span><br><span style="font-family: 'courier new', courier;">000000000000000000000000000</span><br><span style="font-family: 'courier new', courier;">------WebKitFormBoundaryfCqTBHeLZlsicvMp</span><br><span style="font-family: 'courier new', courier;">Content-Disposition: form-data; name="file_1"; filename=""</span><br><span style="font-family: 'courier new', courier;">Content-Type: image/jpeg</span><br><br><span style="font-family: 'courier new', courier;">111111111111111111111111111</span><br><span style="font-family: 'courier new', courier;">111111111111111111111111111</span><br><span style="font-family: 'courier new', courier;">111111111111111111111111111</span><br><span style="font-family: 'courier new', courier;">------WebKitFormBoundaryfCqTBHeLZlsicvMp</span><br><span style="font-family: 'courier new', courier;">Content-Disposition: form-data; name="meta"</span><br><br><span style="font-family: 'courier new', courier;">{"images":[{"name":"file_0"},{"name":"file_1"}]}</span><br><span style="font-family: 'courier new', courier;">------WebKitFormBoundaryfCqTBHeLZlsicvMp--</span></p></td></tr></tbody></table>
 
-### Ответ
+## Ответ
 
-<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Тип</strong></td><td><strong>Значение</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">status</span></td><td><span style="font-family: 'courier new', courier;">int</span></td><td>200 в случае успеха, иначе описание ошибки будет в <span style="font-family: 'courier new', courier;">body</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">body</span></td><td><span style="font-family: 'courier new', courier;">string | response&nbsp;</span></td><td>тело ответа</td></tr></tbody></table>
+<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Тип</strong></td><td><strong>Значение</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">status</span></td><td><span style="font-family: 'courier new', courier;">int</span></td><td>200 в случае успешного взаимодействия с серверами Vision</td></tr><tr><td><span style="font-family: 'courier new', courier;">body</span></td><td><span style="font-family: 'courier new', courier;">response&nbsp;</span></td><td>тело ответа</td></tr></tbody></table>
 
 #### response
 
@@ -34,11 +38,11 @@ image_meta
 
 #### status
 
-<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Значение</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">0</span></td><td>успешно</td></tr><tr><td><span style="font-family: 'courier new', courier;">1</span></td><td>перманентная ошибка</td></tr><tr><td><span style="font-family: 'courier new', courier;">2</span></td><td>временная ошибка</td></tr></tbody></table>
+<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Значение</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">0</span></td><td>успешно</td></tr><tr><td><span style="font-family: 'courier new', courier;">1</span></td><td>массив найденных типов документов на странице</td></tr><tr><td><span style="font-family: 'courier new', courier;">2</span></td><td>номер страницы</td></tr></tbody></table>
 
 #### page
 
-<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Тип</strong></td><td><strong>Значение</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">index</span></td><td><span style="font-family: 'courier new', courier;"><span>int</span></span></td><td>успешно</td></tr><tr><td><span style="font-family: 'courier new', courier;">docs</span></td><td><span style="font-family: 'courier new', courier;">[]doc<span>&nbsp;</span></span></td><td>перманентная ошибка</td></tr></tbody></table>
+<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Тип</strong></td><td><strong>Значение</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">index</span></td><td><span style="font-family: 'courier new', courier;"><span>int</span></span></td><td>номер страницы</td></tr><tr><td><span style="font-family: 'courier new', courier;">docs</span></td><td><span style="font-family: 'courier new', courier;">[]doc<span>&nbsp;</span></span></td><td>массив найденных типов документов на странице</td></tr></tbody></table>
 
 #### doc
 
