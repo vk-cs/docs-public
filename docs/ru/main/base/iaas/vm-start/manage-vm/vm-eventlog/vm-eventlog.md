@@ -1,21 +1,21 @@
-The instance event log (event list) is a set of records that reflect the events of a virtual machine. The event contains the type, time, and ID of the request.
+Журнал событий (список событий) — это набор записей, отражающих события виртуальной машины. Событие содержит тип, время и идентификатор запроса.
 
-## OpenStack CLI
+## Интерфейс командной строки OpenStack
 
-To view the event log, you need to run the command:
+Для просмотра журнала событий выполните команду:
 ```bash
 openstack server event list --long <instance ID>
 ```
 
-View the event in detail:
+Чтобы посмотреть событие в деталях:
 ```bash
 openstack server event show <instance ID> <request ID>
 ```
 
-Possible events:
+Возможные события:
 
-- live-migration — live instance migration.
-- resize — change the configuration.
-- start/stop — start/stop the server.
-- create — create an instance.
-- extend_volume — increase the disk size.
+- live-migration — миграция экземпляров.
+- resize —  изменение конфигурации.
+- start/stop — запуск/остановка сервера.
+- create — создание экземпляров.
+- extend_volume — увеличение размера диска.
