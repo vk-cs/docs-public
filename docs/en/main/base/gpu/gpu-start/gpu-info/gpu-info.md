@@ -1,29 +1,39 @@
-VK Cloud Solutions introduces NVIDIA GPU Cloud Computing. GPU cloud computing empowers companies to tackle tasks that were previously either impossible or resource-intensive.
+## What tasks does
 
-VK Cloud Solutions offers the highest performing NVIDIA® Tesla® V100 GPUs for deep neural network training and inference, including solving deep learning problems several times faster.
+### Machine learning
 
-NVIDIA® Tesla® V100 GPUs are designed for machine learning systems and have a high level of processing power of about 15 teraflops in single-precision operations and 7.5 teraflops in double (1 teraflops - 1 trillion operations per second, a value used to measure performance computers).
+NVIDIA® Tesla® A100 GPUs are great for training and inferencing deep neural networks with high performance.
+
+### High Performance Computing (HPC)
+
+The solution of tasks that require large computing power is easier to carry out using cloud computing on the GPU. This reduces the time for research and waiting for results.
+
+### Render graphics on the server side
+
+Server-side graphics rendering speed with the most advanced NVIDIA® Tesla® V100 GPU, far exceeds the rendering speed of a conventional graphics card.
+
+The time to solve problems in deep learning, graphical visualization and high-performance computing can be reduced from days to hours. Whether training neural networks, solving complex design problems or cutting-edge research, get the best performance with NVIDIA® Tesla® V100 and VK Cloud Solutions.
+
+### GPU-accelerated computing in the cloud
+
+New generations of scientific applications and tasks related to artificial intelligence and machine learning require an enormous amount of computing power that even modern CPU servers cannot cope with. To successfully solve such problems, GPU-accelerated servers are used.
+
+Depending on the type of tasks, 1 modern GPU server can replace up to 100 conventional CPU servers. This is achieved through a different way of performing tasks. The CPU consists of several cores optimized for sequential processing, while the GPU uses thousands of smaller cores to efficiently process parallel tasks.
+
+GPU-based cloud computing will take you to a new level of performance and significantly reduce data processing time, while saving your company money.
+
+VK CS provides NVIDIA® Tesla® V100 graphics cards with 16 GB of VRAM.
 
 ## Software
 
 VK CS recommends using the following GPU-enabled development software:
 
-- CUDA Toolkit - its documentation [is available on the official resource](https://developer.nvidia.com/cuda-toolkit)
-- Deepo - documentation and distribution [are available on its official resource](https://github.com/ufoym/deepo)
-- NVIDIA GRID - Datasheet is [available on the official resource](https://www.nvidia.com/ru-ru/design-visualization/technologies/grid-technology/)
+- CUDA Toolkit — its documentation [is available on the official resource](https://developer.nvidia.com/cuda-toolkit).
+- Deepo — documentation and distribution [are available on its official resource](https://github.com/ufoym/deepo).
+- NVIDIA GRID — Datasheet is [available on the official resource](https://www.nvidia.com/ru-ru/design-visualization/technologies/grid-technology/).
 
-Server side graphics rendering
+## Billing
 
-The NVIDIA® Tesla® V100 GPU dramatically improves server-side graphics rendering speed and improves cloud computing performance.
+Billing per second. Rent and deploy computing power in minutes and turn it off as soon as you complete your tasks. Pay only for the actual use of resources with per-second billing.
 
-NVIDIA® Tesla® V100 and VK Cloud Solutions maximize performance; Reduce the time it takes to solve deep learning, graphical visualization and HPC challenges from days to hours.
-
-## GPU-accelerated cloud computing
-
-New generations of scientific applications and tasks related to artificial intelligence and machine learning require colossal amounts of computing power that even modern CPU servers cannot handle. GPU-accelerated servers are used to successfully solve such problems.
-
-Depending on the type of tasks 1, a modern GPU server can replace up to 100 conventional CPU servers. This is achieved through different ways of performing tasks. The CPU is made up of multiple cores optimized for sequential processing, while the GPU uses thousands of smaller cores to efficiently process parallel tasks.
-
-GPU-based cloud computing will take you to the next level of performance and dramatically reduce processing time, while saving your company money.
-
-VK CS provides a graphics card NVIDIA ® Tesla ® V100 with 16 GB of video memory.
+Current tariffs can be seen [here](https://mcs.mail.ru/cloud-gpu/).
