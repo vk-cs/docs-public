@@ -64,11 +64,11 @@ You also need to make sure that the instance is enabled and it has an assigned I
 
 ## Lost my private key
 
-If you lose the private key to access the server via SSH protocol, you must generate it again and add it to the instance manually. To perform the procedure, you can use the information in the article about [Restoring VM access](https://mcs.mail.ru/help/ru_RU/vm-connect/recover-access-vm).
+If you lose the private key to access the server via SSH protocol, you must generate it again and add it to the instance manually. To perform the procedure, you can use the information in the article about [Restoring VM access](https://mcs.mail.ru/docs/ru/base/iaas/vm-scenarios/recover-access-vm).
 
 ## Openstack CLI does not connect
 
-Access to the Openstack CLI is carried out using a configuration file (Linux) or a set of parameters from a file and a password. Information about installation, configuration and connection parameters can be found in the article about Using [Management Utilities (CLI)](https://mcs.mail.ru/help/ru_RU/create-vm/vm-create-cli).
+Access to the Openstack CLI is carried out using a configuration file (Linux) or a set of parameters from a file and a password. Information about installation, configuration and connection parameters can be found in the article about Using [Management Utilities (CLI)](https://mcs.mail.ru/docs/ru/base/iaas/vm-interfaces/vm-create-cli).
 
 ## The instance console is not displayed in the VK CS panel
 
