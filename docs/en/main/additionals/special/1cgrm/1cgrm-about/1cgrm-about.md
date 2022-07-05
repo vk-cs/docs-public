@@ -74,6 +74,6 @@ The 1C: GRM service is supported by technical experts under an agreement with a 
 - Updating application versions and configurations
 - Application customization for individual needs
 
-To contact technical support, you should use the feedback form at [http://mcs.mail.ru/help/1c-support](http://mcs.mail.ru/help/1c-support) or email [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru)
+To contact technical support, you should use the feedback form at [support](https://mcs.mail.ru/docs/en/contacts).
 
 Support is provided on weekdays, from 09:00 to 18:00 Moscow time (UTC + 3). The first response time for requests for application errors is 2 hours, for other requests - 1 business day.
