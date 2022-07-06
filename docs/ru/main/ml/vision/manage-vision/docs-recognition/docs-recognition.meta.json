@@ -1,10 +1,10 @@
 {
-  "title": "Распознавание документов",
+  "title": "Распознавание полей документов",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Распознавание документов - VK Cloud Solutions",
+  "metaTitle": "Распознавание полей документов - VK Cloud Solutions",
   "metaDescription": "Для распознавания полей документов используется метод docs/recognize. Данный метод позволяет распознать, например, поля паспорта на фото. Рассмотрим его ис",
-  "sectionTitle": "Распознавание документов",
+  "sectionTitle": "Распознавание полей документов",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
