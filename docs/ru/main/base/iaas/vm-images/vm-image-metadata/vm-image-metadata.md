@@ -52,31 +52,30 @@ hw_vif_model="virtio" -- Указывать только если внутри �
 osinfo-query os vendor="Microsoft Corporation"
 ```
 
- Short ID             | Name                                               | Version  | ID
-----------------------+----------------------------------------------------+----------+-----------------------------------------
- win1.0               | Microsoft Windows 1.0                              | 1.0      | http://microsoft.com/win/1.0
- win10                | Microsoft Windows 10                               | 10.0     | http://microsoft.com/win/10
- win2.0               | Microsoft Windows 2.0                              | 2.0      | http://microsoft.com/win/2.0
- win2.1               | Microsoft Windows 2.1                              | 2.1      | http://microsoft.com/win/2.1
- win2k                | Microsoft Windows 2000                             | 5.0      | http://microsoft.com/win/2k
- win2k12              | Microsoft Windows Server 2012                      | 6.3      | http://microsoft.com/win/2k12
- win2k12r2            | Microsoft Windows Server 2012 R2                   | 6.3      | http://microsoft.com/win/2k12r2
- win2k16              | Microsoft Windows Server 2016                      | 10.0     | http://microsoft.com/win/2k16
- win2k3               | Microsoft Windows Server 2003                      | 5.2      | http://microsoft.com/win/2k3
- win2k3r2             | Microsoft Windows Server 2003 R2                   | 5.2      | http://microsoft.com/win/2k3r2
- win2k8               | Microsoft Windows Server 2008                      | 6.0      | http://microsoft.com/win/2k8
- win2k8r2             | Microsoft Windows Server 2008 R2                   | 6.1      | http://microsoft.com/win/2k8r2
- win3.1               | Microsoft Windows 3.1                              | 3.1      | http://microsoft.com/win/3.1
- win7                 | Microsoft Windows 7                                | 6.1      | http://microsoft.com/win/7
- win8                 | Microsoft Windows 8                                | 6.2      | http://microsoft.com/win/8
- win8.1               | Microsoft Windows 8.1                              | 6.3      | http://microsoft.com/win/8.1
- win95                | Microsoft Windows 95                               | 4.0      | http://microsoft.com/win/95
- win98                | Microsoft Windows 98                               | 4.1      | http://microsoft.com/win/98
- winme                | Microsoft Windows Millennium Edition               | 4.9      | http://microsoft.com/win/me
- winnt3.1             | Microsoft Windows NT Server 3.1                    | 3.1      | http://microsoft.com/winnt/3.1
- winnt3.5             | Microsoft Windows NT Server 3.5                    | 3.5      | http://microsoft.com/winnt/3.5
- winnt3.51            | Microsoft Windows NT Server 3.51                   | 3.51     | http://microsoft.com/winnt/3.51
- winnt4.0             | Microsoft Windows NT Server 4.0                    | 4.0      | http://microsoft.com/winnt/4.0
- winvista             | Microsoft Windows Vista                            | 6.0      | http://microsoft.com/win/vista
- winxp                | Microsoft Windows XP                               | 5.1      | http://microsoft.com/win/xp
-```
+| Short ID  | Name                | Version | ID                           |
+| --------|---------------------- | --------| ---------------------------- |
+| win1.0  | Microsoft Windows 1.0 | 1.0     | http://microsoft.com/win/1.0 |
+| win10   | Microsoft Windows 10  | 10.0    | http://microsoft.com/win/10  |
+| win2.0  | Microsoft Windows 2.0 | 2.0     | http://microsoft.com/win/2.0 |
+| win2.1  | Microsoft Windows 2.1 | 2.1     | http://microsoft.com/win/2.1 |
+| win2k   | Microsoft Windows 2000 | 5.0    | http://microsoft.com/win/2k  |
+| win2k12 | Microsoft Windows Server 2012 | 6.3 | http://microsoft.com/win/2k12 |
+| win2k12r2 | Microsoft Windows Server 2012 R2 | 6.3 | http://microsoft.com/win/2k12r2|
+| win2k16 | Microsoft Windows Server 2016 | 10.0 | http://microsoft.com/win/2k16 |
+| win2k3 | Microsoft Windows Server 2003 | 5.2 | http://microsoft.com/win/2k3|
+| win2k3r2 | Microsoft Windows Server 2003 R2 | 5.2  | http://microsoft.com/win/2k3r2|
+| win2k8 | Microsoft Windows Server 2008 | 6.0 | http://microsoft.com/win/2k8|
+| win2k8r2 | Microsoft Windows Server 2008 R2 | 6.1 | http://microsoft.com/win/2k8r2|
+| win3.1   | Microsoft Windows 3.1  | 3.1 | http://microsoft.com/win/3.1 |
+| win7     | Microsoft Windows 7    | 6.1 | http://microsoft.com/win/7   |
+| win8     | Microsoft Windows 8    | 6.2 | http://microsoft.com/win/8   |
+| win8.1   | Microsoft Windows 8.1  | 6.3 | http://microsoft.com/win/8.1 |
+| win95    | Microsoft Windows 95   | 4.0 | http://microsoft.com/win/95  |
+| win98    | Microsoft Windows 98   | 4.1 | http://microsoft.com/win/98  |
+| winme    | Microsoft Windows Millennium Edition | 4.9 | http://microsoft.com/win/me|
+| winnt3.1 | Microsoft Windows NT Server 3.1 | 3.1 | http://microsoft.com/winnt/3.1 |
+| winnt3.5 | Microsoft Windows NT Server 3.5 | 3.5 | http://microsoft.com/winnt/3.5 |
+ winnt3.51 | Microsoft Windows NT Server 3.51 | 3.51 | http://microsoft.com/winnt/3.51 |
+| winnt4.0 | Microsoft Windows NT Server 4.0 | 4.0 | http://microsoft.com/winnt/4.0 |
+| winvista | Microsoft Windows Vista | 6.0 | http://microsoft.com/win/vista |
+| winxp | Microsoft Windows XP | 5.1 | http://microsoft.com/win/xp |
