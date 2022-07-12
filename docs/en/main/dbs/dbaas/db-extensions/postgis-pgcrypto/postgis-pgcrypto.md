@@ -1,170 +1,81 @@
-Дополнения БД могут существенно расширить функциональность базы как сервиса - добавить мониторинг, географические объекты, криптографию - это например, и многое другое тоже.
+DB additions can significantly expand the functionality of the database as a service. For example, add monitoring, geographical objects, and cryptography.
 
-### Важно
+Extensions are installed in [VK CS personal account](https://mcs.mail.ru/app/services/databases/). To do this, go to the "Databases" --> "Database Instances" section.
 
-Для каждого типа базы данных доступен разный набор расширений. Данная статья описывает только частный случай установки и работы с расширениями Postgis и PGcrypto на базе данных PostgreSQL.
+Click on the database where you want to install extensions. Go to the "Extensions" tab and click on the "Add" button.
 
-Все операции по установке расширений проводятся в [Личном кабинете VK CS](https://mcs.mail.ru/app/services/databases/). Необходимо перейти в раздел "Базы данных"- "Инстансы баз данных".
+In the window that opens, select the necessary extensions and click "Add".
 
-![](./assets/1596829385529-1596829385529.png)
+After that, the installation of extensions will begin and they will appear in the list of installed ones.
 
-Далее нужно выбрать базу данных, в которую необходимо установить дополнения (расширения):
+## Postgis Extension
 
-![](./assets/1594623526729-1594623526729.png)
+PostGIS is an extension of the PostgreSQL object-relational DBMS designed for storing geographical data in a database. PostGIS includes support for R-tree/essence spatial indexes and geodata processing functions, as well as optional extensions for working with addresses and topology.
 
-В открывшемся окне надо выбрать вкладку "Расширения" и нажать на кнопку "Добавить".
+After adding this extension to the database, you can work with it with specialized queries. The full list of requests and other useful information can be found on the [official resource](https://gis-lab.info/docs/postgis/manual/postgis-manual-ru-1.3.4.pdf).
 
-![](./assets/1596829187921-1596829187921.png)
+### Available types of geometric objects
 
-В появившемся окне нужно выбрать необходимые расширения и нажать на кнопку "Добавить":
+You have access to point, line, polygon, multipoint, multiline, multi polygon, and geometry collections (point, line, polygon, multipoint, multiline, multi polygon, and geometric collection). They are defined in a well-known Textual Open GIS format with extensions XYZ, XYM, and XYZM.
 
-![](./assets/1596827727515-1596827727515.png)
+### How to build a spatial query?
 
-После этого начнётся установка расширений и они появятся в списке установленных.
-
-![](./assets/1594623487741-1594623487741.png)
-
-## Расширение для поддержки географических объектов - postgis
-
-PostGIS - расширение объектно-реляционной СУБД PostgreSQL предназначенное для хранения в базе географических данных. PostGIS включает поддержку пространственных индексов R-Tree/GiST и функции обработки геоданных.
-
-После добавления этого расширения в базу можно работать с ней специализированными запросами. Полный перечень запросов и другую полезную информацию можно прочитать на официальном ресурсе - [https://gis-lab.info/docs/postgis/manual/postgis-manual-ru-1.3.4.pdf](https://gis-lab.info/docs/postgis/manual/postgis-manual-ru-1.3.4.pdf).
-
-Ниже даны ответы на самые популярные вопросы.
-
-#### Какие виды геометрических объектов имеются в моем распоряжении?
-
-В вашем распоряжении point, line, polygon, multipoint, multiline, multipolygon, and geometrycollections (точка, линия, полигон, мультиточка, мультилиния, мультиполигон и геометрическая коллекция). Они определены в формате Well Known Text Open GIS (с расширениями XYZ, XYM, XYZM).
-
-#### Как построить пространственный запрос?
-
-Сначала вы должны создать таблицу со столбцом типа "geometry", который будет содержать ваши ГИС- данные. Соединитесь с вашей базой данных с помощью psql и выполните SQL:
+which will contain your GIS, you must create a table with a column of type _geometria_, which will include your GIS data. Connect to your database using PSQL and execute SQL:
 
 ```
-             CREATE TABLE gtest ( ID int4, NAME varchar(20) ); SELECT AddGeometryColumn('', 'gtest','geom',-1,'LINESTRING',2);
+             CREATE A gtest TABLE ( ID int4, NAME varchar(20) ); SELECT AddGeometryColumn(", 'gtest','geom', -1,'LINESTRING',2);
 ```
 
-Если не получилось добавить столбец геометрии, то, вероятно, вы не загрузили функции и объекты PostGIS в свою базу данных. Смотрите инструкцию по установке.
+If the geometry failed to add a column, then you probably haven't loaded functions and objects from PostGIS into your database. See the installation instructions.
 
-Далее, вы можете вставлять геометрию в таблицу с помощью SQL-команды insert. Объект ГИС будет форматирован согласно формату "well-known text" Консорциума OpenGIS:
-
-```
-INSERT INTO gtest (ID, NAME, GEOM) VALUES ( 1, 'Первая геометрия', GeomFromText('LINESTRING(2 3,4 5,6 5,7 8)', -1) );
-```
-
-Подробную информацию о других объектах ГИС можно посмотреть в справочнике объектов. Просмотр ваших ГИС-данных в таблице:
+Next, you can insert the geometry into the table using the SQL command _insert_. The GIS object will be formatted according to the format of the well-known text of the OpenGIS Consortium:
 
 ```
-             SELECT id, name, AsText(geom) AS geom FROM gtest;
+INSERT INTO gtest (ID, NAME, GEOM) VALUES (1, 'First Geometry', GeomFromText('LINESTRING(2 3,4 5,6 5,7 8)', -1) );
 ```
 
-Результат должен выглядеть примерно так:
+Detailed information about other GIS objects can be found in the object directory. Viewing your GIS data in a table:
 
 ```
-id | name | geom ---+------------------+-----------------------------        1 | Первая геометрия | LINESTRING(2 3,4 5,6 5,7 8)       (1 row)
+SELECT ID, name, AsText(geom) AS geom FROM gtest;
 ```
 
-#### Как вставить объект ГИС в базу данных?
-
-Так же, как вы строите другие запросы к базе данных, используя SQL-запрос для получения значений, функций, логических тестов.
-
-Есть две важных вещи, которые следует учитывать при построении пространственных запросов: существует ли пространственный индекс, которым можно воспользовать и нужно ли произвести сложные вычисления на большом числе геометрий.
-
-Чаще всего вам будет нужен "оператор пересечения" (&&), который проверяет пересекаются ли границы объектов. Польза оператора && заключается в том, что он может использовать пространственный индекс, если он существует. Это ускорит выполнения запроса.
-
-Кроме того, вы можете использовать пространственные функции, такие как Distance(), ST_Intersects(), ST_Contains() and ST_Within() и другие для сужения результатов поиска. Большинство пространственных запросов включают тест на индекс и тест на пространственную функцию. Тест индекса полезен тем, что ограничивает число проверок значений теми, которые могут попасть в требуемый набор. Далее используются пространственные функции используются для окончательной проверки условия.
+The result should look something like this:
 
 ```
-             SELECT id, the\_geom FROM thetable              WHERE              the\_geom && 'POLYGON((0 0, 0 10, 10 10, 10 0, 0 0))'              AND              \_ST\_Contains(the\_geom,'POLYGON((0 0, 0 10, 10 10, 10 0, 0 0))');
+ID | name | Geom ---+------------------+----------------------------- 1 | First geometry | line(2 3,4 5,6 5,7 8) (1 row)
 ```
 
-## Расширение для криптографических функций - pgcrypto
+### How to insert a GIS object into a database?
 
-Модуль pgcrypto предоставляет криптографические функции для PostgreSQL.
+Like you build other database queries using the SQL query environment to get values, functions, and logic tests.
 
-После добавления этого расширения в базу можно работать с ней специализированными запросами. Ниже приведены некоторые из них, для примера. Полный перечень запросов и другую полезную информацию можно прочитать на официальном ресурсе - [https://postgrespro.ru/docs/postgresql/11/pgcrypto](https://postgrespro.ru/docs/postgresql/11/pgcrypto).
+When building spatial queries, you should take into account:
 
-#### Ограничения безопасности
+- is there a spatial index that can be used;
+- whether it is necessary to perform complex calculations on a large number of geometries.
 
-Все функции pgcrypto выполняются внутри сервера баз данных. Это означает, что все данные и пароли передаются между функциями pgcrypto и клиентскими приложениями открытым текстом. Поэтому вы должны:
+Most often you will need an "intersection operator" (&&), which checks whether the boundaries of objects intersect. The benefit of the && operator is that it can use a spatial index if it exists. This will speed up the execution of the request.
 
-- Подключаться локально или использовать подключения SSL.
-- Доверять и системе, и администратору баз данных.
-- Если это невозможно, лучше произвести шифрование в клиентском приложении.
-
-#### Стандартные функции хеширования
-
-**digest()**
+In addition, you can use spatial functions such as Distance(), ST_Intersects(), ST_Contains() and ST_Within() and others to narrow the search results. Most spatial queries include an index test and a spatial function test. The index test is useful because it limits the number of value checks to those that can fall into the required set. Next, spatial functions are used for the final verification of the condition.
 
 ```
-digest(data text, type text) returns bytea digest(data bytea, type text) returns bytea
+             SELECT THE ID, the_geom FROM THE table WHERE the_geom &&'POLYGON((0 0, 0 10, 10 10, 10 0, 0 0))'              and _ST_Contains(the_geom,'POLYGON((0 0, 0 10, 10 10, 10 0, 0 0))');
 ```
 
-Вычисляет двоичный хеш данных (data). Параметр type выбирает используемый алгоритм. Поддерживаются стандартные алгоритмы: md5, sha1, sha224, sha256, sha384 и sha512. Если модуль pgcrypto собирался с OpenSSL, становятся доступны и другие алгоритмы, как описано в Таблице F.19.
+#### Table of additions
 
-Если вы хотите получить дайджест в виде шестнадцатеричной строки, примените encode() к результату. Например:
+|Name|Description|
+|---|---|
+|[`address_standardizer`](https://postgis.net/docs/manual-2.5/Address_Standardizer.html )|Address normalizer.|
+|[`address_standardizer_data_us`](https://postgis.net/docs/manual-2.5/Address_Standardizer.html )|Address normalizer for the USA.|
+|[`postgis_tiger_geocoder`](https://postgis.net/docs/manual-2.5/Extras.html )|An add-on for working with TIGER (Topologically integrated geographic coding and binding system).|
+|`postgis_topology`|Add—on for working with topology - vertices, faces, polygons, etc./
+|[`pgrouting`](https://pgrouting.org /)|An extension for finding the shortest path.|
 
-```
-CREATE OR REPLACE FUNCTION sha1(bytea) returns text AS $$     SELECT encode(digest($1, 'sha1'), 'hex') $$ LANGUAGE SQL STRICT IMMUTABLE; F.25.1.2. hmac() hmac(data text, key text, type text) returns bytea hmac(data bytea, key bytea, type text) returns bytea
-```
+#### Parameters applicable in VK Cloud Solutions infrastructure:
 
-Вычисляет имитовставку на основе хеша для данных data с ключом key. Параметр type имеет то же значение, что и для digest().
-
-Эта функция похожа на digest(), но вычислить хеш с ней можно, только зная ключ. Это защищает от сценария подмены данных и хеша вместе с ними.
-
-Если размер ключа больше размера блока хеша, он сначала хешируется, а затем используется в качестве ключа хеширования данных.
-
-**Функции хеширования пароля**
-
-Функции crypt() и gen_salt() разработаны специально для хеширования паролей. Функция crypt() выполняет хеширование, а gen_salt() подготавливает параметры алгоритма для неё.
-
-Алгоритмы в crypt() отличаются от обычных алгоритмов хеширования MD5 и SHA1 в следующих аспектах:
-
-- Они медленные. Так как объём данных невелик, это единственный способ усложнить перебор паролей.
-- Они используют случайное значение, называемое солью, чтобы у пользователей с одинаковыми паролями зашифрованные пароли оказывались разными. Это также обеспечивает дополнительную защиту от получения обратного алгоритма.
-- Они включают в результат тип алгоритма, что допускает сосуществование паролей, хешированных разными алгоритмами.
-
-Некоторые из них являются адаптируемыми — то есть с ростом производительности компьютеров эти алгоритмы можно настроить так, чтобы они стали медленнее, при этом сохраняя совместимость с существующими паролями.
-
-В таблице ниже перечислены алгоритмы, поддерживаемые функцией crypt().
-
-| Алгоритм | Макс. длина пароля | Адаптивный? | Размер соли (бит) | Размер результата | Описание                      |
-| -------- | ------------------ | ----------- | ----------------- | ----------------- | ----------------------------- |
-| `bf`     | 72                 | да          | 128               | 60                | На базе Blowfish, вариация 2a |
-| `md5`    | без ограничений    | нет         | 48                | 34                | crypt на базе MD5             |
-| `xdes`   | 8                  | да          | 24                | 20                | Расширенный DES               |
-| `des`    | 8                  | нет         | 12                | 13                | Изначальный crypt из UNIX     |
-
-**crypt()**
-
-```
-crypt(password text, salt text) returns text
-```
-
-Вычисляет хеш пароля (password) в стиле crypt(3). Для сохранения нового пароля необходимо вызвать gen_salt(), чтобы сгенерировать новое значение соли (salt). Для проверки пароля нужно передать сохранённое значение хеша в параметре salt и проверить, соответствует ли результат сохранённому значению.
-
-Пример установки нового пароля:
-
-```
-UPDATE ... SET pswhash =" crypt('new "password', gen\_salt('md5'));
-```
-
-Пример проверки пароля:
-
-```
-SELECT (pswhash =" crypt('entered "password', pswhash)) AS pswmatch FROM ... ;
-```
-
-Этот запрос возвращает true, если введённый пароль правильный.
-
-**gen_salt()**
-
-```
-gen\_salt(type text \[, iter\_count integer \]) returns text
-```
-
-Вычисляет новое случайное значение соли для функции crypt(). Строка соли также говорит crypt(), какой алгоритм использовать.
-
-Параметр type задаёт алгоритм хеширования. Принимаются следующие варианты: des, xdes, md5 и bf.
-
-Параметр iter_count позволяет пользователю указать счётчик итераций для алгоритма, который его принимает. Чем больше это число, тем больше времени уйдёт на вычисление хеша пароля, а значит, тем больше времени понадобится, чтобы взломать его. Хотя со слишком большим значением время вычисления хеша может вырасти до нескольких лет — это вряд ли практично. Когда параметр iter_count опускается, применяется количество итераций по умолчанию. Множество допустимых значений для iter_count зависит от алгоритма.
+|Name|Description|
+|---|---|
+|`database`/A list of databases on which to deploy the extension. Deleting databases from this list for an installed extension is not supported.|
+|`extension_list`|The list of extensions to enable (empty by default). Removing parameters from this list for an installed extension is not supported.|
