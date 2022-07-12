@@ -1,36 +1,42 @@
-## Введение
+## Introduction
 
-Кластер PostgreSQL на базе Patroni существует именно для того, чтобы автоматически переключать мастер-ВМ в случае проблем. Из-за высоких гарантий консистентности переключение мастера (то есть превращение одной из реплик в головной узел) - довольно деструктивное действие.
+To manage a PostgreSQL-based cloud cluster in our cloud, Patroni is used. It is he who performs the automatic switching of the master VM in case of problems. Due to the high consistency guarantees, switching the master (that is, turning one of the replicas into a head node) is a rather destructive action.
 
-Подразумевается, что при переключении происходят следующие шаги:
+It is assumed that the following steps occur when switching:
 
-- Выбранная реплика (желательно с синхронной репликацией) получает команду на отцепление от мастера (перестает получать от него WAL)
-- На том хвосте WAL, что у нее есть, делает redo (применение выполненных транзакций, откат невыполненных), инкрементирует Timeline, переходит в обычный режим работы (то есть принимает запросы и на чтение, и на запись)
-- Бывший мастер должен быть уничтожен ([STONITH](https://en.wikipedia.org/wiki/STONITH)), так как у него нет инструмента понимания, что он не легитимный мастер, и чтобы он не продолжал обслуживать клиентов, проще всего его погасить
+- The selected replica (preferably with synchronous replication) receives a command to detach from the master (stops receiving WAL from him).
+- On the tail of the WAL that it has, it does redo (application of completed transactions, rollback of outstanding ones), increments the Timeline, and switches to normal operation (that is, it accepts both read and write requests).
+- The former master must be destroyed ([STONITH](https://en.wikipedia.org/wiki/STONITH)) since he does not have a tool for understanding that he is not a legitimate master, and so that he does not continue to serve customers, it is easiest to repay him.
 
-Все это и делает служба Patroni (а для консенсуса между нодами она использует внешний DCS - etcd). При этом бывший мастер (если сам сервер в целом в порядке) сразу же переводится в статус реплики (используя утилиту pg_rewind). Таким образом кластер в целом продолжает работать. Было упомянуто, что переключение является деструктивным, что это значит?
+All this is done by the Patroni service (and for consensus between nodes, it uses an external DCS — etcd). At the same time, the former master (if the server itself is in order as a whole) is immediately transferred to the replica status (using the pg_rewind utility). Thus, the cluster as a whole continues to work. It was mentioned that switching is destructive, what does that mean?
 
-- Транзакции, которые прошли commit и на актуальном мастере, и на потенциальном мастере - вне зоны риска. Поэтому следует выбирать синхронную реплику, так как они в теории имеют полностью идентичную информацию.
-- Для транзакций, что не прошли commit полностью, начинаются приключения. Если текущий мастер успеет ответить клиенту об успехе транзакции, но это не дойдет до будущего мастера, клиент будет думать, что все было успешно, но эти данные потеряются. Если мастер не успеет ответить, то клиент получит команду на стоп (got immediate shutdown request), либо разрыв TCP (в зависимости от способа гибели мастера) и должен считать транзакцию зафейленной. Важнейшний паттерн написания приложений - зафейленные транзакции должны ретраиться самим приложением. То есть потеря данных в такой ситуации - вина приложения. Следующее подключение к кластеру должно проходить к новому мастеру.
+- Transactions that have passed commit on both the current master and the potential master are out of the risk zone. Therefore, you should choose a synchronous replica, since, in theory, they have completely identical information.
+- For transactions that have not passed committed completely, adventures begin. If the current master manages to respond to the client about the success of the transaction, but it does not reach the future master, the client will think that everything was successful, but this data will be lost. If the master does not have time to respond, then the client will receive a stop command (got immediate shutdown request), or a TCP break (depending on the method of the master's death) and must consider the transaction to be committed. The most important pattern of writing applications is that the captured transactions should be deleted by the application itself. That is, data loss in such a situation is the fault of the application. The next connection to the cluster should go to the new master.
 
-## Переключения
+## Switching
 
-Как проводилось переключение:
+How the switching was carried out:
 
-- Все подключения производились через LB, который создается вместе с кластером
-- Во время переключения подавалась нагрузка через pgbench, чтобы кластер не простаивал
-- Использовался специальный скрипт, который инсертил каждую секунду
+- All connections were made via LB, which is created together with the cluster.
+- During the switch, the load was supplied via pgbench so that the cluster would not be idle.
+- A special script was used, which was inserted every second.
 
-Следует учитывать, что переключение может быть дольше, если на кластер идет много запросов и WAL для redo может оказаться много.
+Keep in mind that switching may take longer if there are a lot of requests to the cluster and there may be a lot of WAL for redo.
 
-## Штатное переключение
+## Regular switching
 
-Также есть возможность ручного переключения мастера. Такие переключения самые быстрые, так как patroni не ожидает таймаута (вдруг это лишь флап на мастере).
+It is also possible to manually switch the wizard. Such switches are the fastest since patroni does not expect a timeout (suddenly it's just a flop on the master).
 
-<table><tbody><tr><td><p><strong>Тип диска</strong></p></td><td><p><strong>Время переключения</strong></p></td></tr><tr><td>dp1-ssd</td><td>не более 15 секунд</td></tr><tr><td>dp1-highiops</td><td>не более 8 секунд</td></tr></tbody></table>
+| Disk type | Switching time |
+|--------------|--------------------|
+| dp1-ssd | no more than 15 seconds |
+| dp1-highiops | no more than 8 seconds |
 
-## Внештатное переключение
+## Freelance switching
 
-В качестве способа вывода мастера из строя - выключение сетевого интерфейса на мастере. Это довольно жесткая схема, так как из кластера пропадает и patroni демон, и etcd. Почему здесь дольше? Потому что у Patroni есть настройка ttl (по умолчанию 30 секунд). Столько он будет ждать, чтобы убедиться, что это не просто флап мастера. А потом уже начнется реальное переключение.
+As a way to disable the wizard — disabling the network interface on the wizard. This is a rather rigid scheme since both the patroni daemon and etcd disappear from the cluster. Why is it taking longer here? Because Patroni has a TTL setting (default is 30 seconds). He will wait so long to make sure that this is not just a master's collapse. And then the real switching will begin.
 
-<table><tbody><tr><td><p><strong>Тип диска</strong></p></td><td><p><strong>Время переключения</strong></p></td></tr><tr><td>dp1-ssd</td><td>не более 45 секунд</td></tr><tr><td>dp1-highiops</td><td>не более 40 секунд</td></tr></tbody></table>
+| Disk type | Switching time |
+|--------------|--------------------|
+| dp1-ssd | no more than 45 seconds |
+| dp1-highiops | no more than 40 seconds |
