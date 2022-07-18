@@ -1,13 +1,12 @@
 {
   "title": "Migration",
   "pageDescription": "",
-  "shortDescription": "Description of how to create a migration plan and start migrating a protected infrastructure.",
+  "shortDescription": "Description of the creation of a plan for migration and launching the migration of protected infrastructure",
   "metaTitle": "Migration - VK Cloud Solutions",
   "metaDescription": "",
   "sectionTitle": "Migration",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
-  "weight": 2,
-  "uuid": "d7e8e2b4-435d-4e0a-9284-bb9fd49bc6af"
+  "weight": 1
 }

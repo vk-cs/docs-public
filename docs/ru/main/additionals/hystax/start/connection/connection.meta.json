@@ -1,13 +1,13 @@
 {
   "title": "Подключение сервиса",
   "pageDescription": "",
-  "shortDescription": "Описание процесса подключения сервиса Hystax Acura.",
+  "shortDescription": "Настройка облака и создание личного кабинета Hystax Acura",
   "metaTitle": "Подключение сервиса - VK Cloud Solutions",
   "metaDescription": "",
   "sectionTitle": "Подключение сервиса",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
-  "weight": 0,
+  "weight": 1,
   "uuid": "f07e8553-32fa-4d16-ad82-f0085d1fc2c9"
 }

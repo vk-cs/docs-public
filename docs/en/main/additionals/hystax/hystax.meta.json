@@ -1,13 +1,12 @@
 {
-  "title": "Disaster Recovery",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Disaster Recovery - VK Cloud Solutions",
-  "metaDescription": "",
-  "sectionTitle": "Disaster Recovery",
-  "markdown": "",
+  "title": "Cloud Migration/Disaster Recovery",
+  "pageDescription": "Migration and emergency recovery service of infrastructure.",
+  "shortDescription": "Improving the reliability of your infrastructure",
+  "metaTitle": "Cloud Migration/Disaster Recovery - VK Cloud Solutions",
+  "metaDescription": "Migration and emergency recovery service",
+  "sectionTitle": "Cloud Migration/Disaster Recovery",
+  "markdown": "Migration and emergency recovery service of infrastructure.",
   "icon": "",
   "weight": 8,
-  "infobarItems": null,
-  "uuid": "5f4159db-c1cb-4066-b4fa-5f38b41cc79a"
+  "infobarItems": null
 }

@@ -1,13 +1,13 @@
 {
   "title": "Миграция",
   "pageDescription": "",
-  "shortDescription": "Описание создания плана миграции и запуска миграции защищаемой инфраструктуры.",
+  "shortDescription": "Описание создания плана миграции и запуска миграции защищаемой инфраструктуры",
   "metaTitle": "Миграция - VK Cloud Solutions",
   "metaDescription": "",
   "sectionTitle": "Миграция",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
-  "weight": 2,
+  "weight": 1,
   "uuid": "1e8c5df7-0956-4cda-b1d6-6dbc2a0e1907"
 }

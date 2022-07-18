@@ -1,13 +1,12 @@
 {
-  "title": "Compatibility Matrix",
+  "title": "Compatibility matrix",
   "pageDescription": "",
-  "shortDescription": "Table of infrastructure types' compatibility.",
-  "metaTitle": "Compatibility Matrix - VK Cloud Solutions",
+  "shortDescription": "Table of compatibility of types of infrastructures",
+  "metaTitle": "Compatibility matrix - VK Cloud Solutions",
   "metaDescription": "",
-  "sectionTitle": "Compatibility Matrix",
+  "sectionTitle": "Compatibility matrix",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
-  "weight": 0,
-  "uuid": "71610101-b50e-47c0-acbe-ba00e9881a1a"
+  "weight": 0
 }
