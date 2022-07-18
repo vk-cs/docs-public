@@ -1,13 +1,12 @@
 {
-  "title": "Migration Plan",
+  "title": "Preparation of migration in a target cloud",
   "pageDescription": "",
-  "shortDescription": "Description of creating a protected infrastructure migration plan.",
-  "metaTitle": "Migration Plan - VK Cloud Solutions",
+  "shortDescription": "Description of the creation of a plan for the defended infrastructure",
+  "metaTitle": "Preparation of migration in a target cloud - VK Cloud Solutions",
   "metaDescription": "",
-  "sectionTitle": "Migration plan",
+  "sectionTitle": "Preparation of migration in a target cloud",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
-  "weight": 0,
-  "uuid": "3ee7729b-ef18-4321-880e-c1e4614583e3"
+  "weight": 0
 }
