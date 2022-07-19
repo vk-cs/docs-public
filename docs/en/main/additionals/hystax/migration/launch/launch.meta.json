@@ -1,13 +1,12 @@
 {
-  "title": "Start Migration",
+  "title": "Launch of migration",
   "pageDescription": "",
-  "shortDescription": "Description of starting the infrastructure migration process to the Target Cloud.",
-  "metaTitle": "Starting Migration - VK Cloud Solutions",
+  "shortDescription": "Description of the launch of the infrastructure migration process in the target project",
+  "metaTitle": "Launch of migration - VK Cloud Solutions",
   "metaDescription": "",
-  "sectionTitle": "Start Migration",
+  "sectionTitle": "Launch of migration",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
-  "weight": 1,
-  "uuid": "0e380746-07c0-4c37-9f5c-7afa53c34bd3"
+  "weight": 1
 }

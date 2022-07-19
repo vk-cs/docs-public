@@ -1,1 +1,0 @@
-In the target project, you need to create a network (Network) hystax_network with the "Internet access" option enabled and the security group sg_cloud_agent (the group must contain rules allowing incoming traffic to ports tcp/80, tcp/3260 and tcp/15000, and all outgoing traffic).
