@@ -1,12 +1,13 @@
 {
-    "title": "Стоимость сервиса",
-    "pageDescription": "",
-    "shortDescription": "Из чего формируется стоимость",
-    "metaTitle": "Ценообразование - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Ценообразование",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
-  }
+  "title": "Стоимость сервиса",
+  "pageDescription": "",
+  "shortDescription": "Из чего формируется стоимость",
+  "metaTitle": "Ценообразование - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Ценообразование",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "82044665-69e4-44c9-8a25-6566d09050f1"
+}

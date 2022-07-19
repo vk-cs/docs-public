@@ -8,5 +8,6 @@
   "markdown": "Migration and emergency recovery service of infrastructure.",
   "icon": "",
   "weight": 8,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "fcd5be1f-7037-440a-8e78-f3396c82e896"
 }
