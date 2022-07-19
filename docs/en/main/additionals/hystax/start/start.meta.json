@@ -1,13 +1,12 @@
 {
-  "title": "Getting started",
-  "pageDescription": "",
-  "shortDescription": "Description of getting started with Hystax Acura on the VK Cloud Solutions platform.",
-  "metaTitle": "Getting started - VK Cloud Solutions",
+  "title": "Beginning of work",
+  "pageDescription": "The section describes the capabilities of the service, its connection and pricing.",
+  "shortDescription": "Service description, its connection and pricing",
+  "metaTitle": "Beginning of work - VK Cloud Solutions",
   "metaDescription": "",
-  "sectionTitle": "Getting started",
-  "markdown": "",
+  "sectionTitle": "Beginning of work",
+  "markdown": "The section describes the capabilities of the service, its connection and pricing.",
   "icon": "",
   "infobarItems": null,
-  "weight": 0,
-  "uuid": "b9354ba0-8223-4f24-b918-720550204681"
+  "weight": 0
 }
