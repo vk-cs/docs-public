@@ -1,12 +1,13 @@
 {
-    "title": "О сервисе",
-    "pageDescription": "",
-    "shortDescription": "Описание сервиса и его возможности",
-    "metaTitle": "О сервисе - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "О сервисе",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "О сервисе",
+  "pageDescription": "",
+  "shortDescription": "Описание сервиса и его возможности",
+  "metaTitle": "О сервисе - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "О сервисе",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "b022ac01-f047-44f7-b87a-167d1274cb0d"
+}

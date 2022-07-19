@@ -1,12 +1,13 @@
 {
-    "title": "About the service",
-    "pageDescription": "",
-    "shortDescription": "Service description and its capabilities",
-    "metaTitle": "About the service - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "About the service",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "About the service",
+  "pageDescription": "",
+  "shortDescription": "Service description and its capabilities",
+  "metaTitle": "About the service - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "About the service",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "9ef16d37-06c3-45d3-aed7-599ddd6e1505"
+}

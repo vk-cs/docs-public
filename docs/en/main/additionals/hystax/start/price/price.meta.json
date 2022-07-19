@@ -1,12 +1,13 @@
 {
-    "title": "The cost of the service",
-    "pageDescription": "",
-    "shortDescription": "From which the cost is formed",
-    "metaTitle": "Ценообразование - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Pricing",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
-  }
+  "title": "The cost of the service",
+  "pageDescription": "",
+  "shortDescription": "From which the cost is formed",
+  "metaTitle": "Ценообразование - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Pricing",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "3a2a66f7-907b-4d3f-9bbb-d2fa5fcde780"
+}
