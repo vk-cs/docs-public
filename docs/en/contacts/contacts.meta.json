@@ -1,7 +1,7 @@
 {
   "title": "Contacts",
   "pageDescription": "Contacts",
-  "markdown": "If you did not find the answer to your question or you have additional questions, you can ask them by contacting us: \n\n[support@mcs.mail.ru](https://mcs.mail.ru/docs/contacts) — Email for receiving requests \n\n[Telegram](https://t.me/vkcs_assistant) — Telegram bot for registering requests and tracking on the [Portal](https://mcs.atlassian.net/servicedesk/customer/portal/8)",
+  "markdown": "If you did not find the answer to your question or you have additional questions, you can ask them by contacting us: \n\n[support@mcs.mail.ru](https://mcs.mail.ru/docs/contacts) — Email for receiving requests \n\n[Telegram](https://t.me/vkcs_assistant) — Telegram bot for registering requests",
   "sectionTitle": "We may already have the answer to your question.",
   "uuid": "4748e3fa-81fb-49e2-a58e-9e831fe43409"
 }
