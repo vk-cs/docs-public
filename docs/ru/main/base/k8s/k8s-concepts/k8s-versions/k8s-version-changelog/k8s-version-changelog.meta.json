@@ -1,0 +1,12 @@
+{
+  "title": "История версий Kubernetes",
+  "pageDescription": "Платформа VK Cloud Solutions предоставляет несколько версий Kubernetes, которые можно использовать в облачных кластерах. Здесь вы найдете подробную историю версий Kubernetes, которые поддерживаются или поддерживались в прошлом. Для каждой версии представлены: краткое описание изменений в сервисе VK Cloud и в самом Kubernetes.",
+  "shortDescription": "История версий Kubernetes, которые поддерживаются или поддерживались в прошлом для кластеров VK Cloud Solutions",
+  "metaTitle": "История версий Kubernetes - VK Cloud Solutions",
+  "metaDescription": "Kubernetes,K8S,версия,история",
+  "sectionTitle": "История версий Kubernetes",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2
+}
