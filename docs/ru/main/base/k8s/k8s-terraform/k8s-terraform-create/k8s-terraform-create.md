@@ -70,8 +70,8 @@ data "vkcs_compute_flavor" "k8s_worker" {
 Посмотреть список доступных версий можно:
 
 - В визарде при создании кластера через личный кабинет.
-- На странице «[Политика поддержки версий Kubernetes](https://mcs.mail.ru/docs/ru/base/k8s/k8s-concepts/k8s-architecture/k8s-version-support)».
-- Используя данные из vkcs_kubernetes_clustertemplates. Подробнее смотрите [здесь](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/vkcs_kubernetes_clustertemplates.md).
+- На странице «[Политика поддержки версий Kubernetes](../../k8s-concepts/k8s-versions/k8s-version-support/k8s-version-support.md)».
+- Используя данные из vkcs_kubernetes_clustertemplates. Подробнее на [официальной странице](https://registry.terraform.io/providers/MailRuCloudSolutions/mcs/latest/docs/data-sources/mcs_kubernetes_clustertemplate).
 
 2. _vkcs_kubernetes_cluster_ — кластер Kubernetes. В этом ресурсе мы описываем кластер и используем ранее описанные ресурсы.
 
