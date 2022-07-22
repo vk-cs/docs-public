@@ -12,10 +12,10 @@
                     "link": "docs/ru/main/base/iaas/vm-images/custom-image"
                 },
                 {
-                    "link": "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+                    "link": "docs/ru/main/additionals/account/start"
                 },
                 {
-                    "link": "docs/ru/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/ru/main/additionals/account/concepts/quotasandlimits"
                 },
                 {
                     "link": "docs/ru/main/additionals/billing",
@@ -51,7 +51,7 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/start/user-account/project-roles-users"
+                    "link": "additionals/account/concepts/rolesandpermissions"
                 },
                 {
                     "link": "docs/ru/main/dbs/dbaas/manage-db/backup-db"
@@ -63,10 +63,10 @@
                     "link": "docs/ru/main/networks/vnet/vpn"
                 },
                 {
-                    "link": "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+                    "link": "docs/ru/main/additionals/account/start"
                 },
                 {
-                    "link": "docs/ru/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/ru/main/additionals/account/concepts/quotasandlimits"
                 }
             ]
         }
