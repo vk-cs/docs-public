@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+                    "link": "docs/ru/main/additionals/account/start"
                 },
                 {
                     "link": "docs/ru/main/base/iaas/vm-volumes"
@@ -33,7 +33,7 @@
                     "link": "docs/ru/main/base/iaas/vm-faq/faq-vm-backup"
                 },
                 {
-                    "link": "docs/ru/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/ru/main/additionals/account/concepts/quotasandlimits"
                 }
             ]
         }

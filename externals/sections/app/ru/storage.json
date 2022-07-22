@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+                    "link": "docs/ru/main/additionals/account/start"
                 },
                 {
                     "link": "docs/ru/main/base/s3/intro"
@@ -47,7 +47,7 @@
                     "link": "docs/ru/main/base/s3/dev/s3-rest-api/acl-api"
                 },
                 {
-                    "link": "docs/ru/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/ru/main/additionals/account/concepts/quotasandlimits"
                 }
             ]
         }
