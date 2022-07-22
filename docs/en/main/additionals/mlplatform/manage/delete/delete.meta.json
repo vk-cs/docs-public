@@ -1,0 +1,13 @@
+{
+  "title": "Deleting instance",
+  "pageDescription": "How to delete a JupyterHub instance.",
+  "shortDescription": "How to delete a JupyterHub instance",
+  "metaTitle": "Deleting instance - VK Cloud Solutions",
+  "metaDescription": "Deleting instance",
+  "sectionTitle": "Deleting instance",
+  "markdown": "How to delete a JupyterHub instance.",
+  "icon": "",
+  "weight": 2,
+  "infobarItems": null,
+  "uuid": "d0e8d510-969c-4fe9-9e80-6474fd13d485"
+}
