@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/start/user-account/mgmt-interfaces"
+                    "link": "docs/ru/main/additionals/account/start"
                 },
                 {
                     "link": "docs/ru/main/base/bigdata/bigdata-info/bigdata-architecture"
@@ -37,7 +37,7 @@
                     "link": "docs/ru/main/base/bigdata/bigdata-scale"
                 },
                 {
-                    "link": "docs/ru/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/ru/main/additionals/account/concepts/quotasandlimits"
                 }
             ]
         }
