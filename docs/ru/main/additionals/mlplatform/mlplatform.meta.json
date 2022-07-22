@@ -1,0 +1,13 @@
+{
+  "title": "ML Platform",
+  "pageDescription": "Этот раздел описывает принципы работы с сервисом ML Platform, созданию и работе с инстансами JupyterHub.",
+  "shortDescription": "Cервис по созданию и работе с инстансами JupyterHub",
+  "metaTitle": "ML Platform - VK Cloud Solutions",
+  "metaDescription": "ML Platform это сервис по созданию и работе с инстансами JupyterHub",
+  "sectionTitle": "ML Platform",
+  "markdown": "Этот раздел описывает принципы работы с сервисом ML Platform, созданию и работе с инстансами JupyterHub.",
+  "icon": "",
+  "weight": 16,
+  "infobarItems": null,
+  "uuid": "ab24a318-2169-471e-9f86-b5e68361cfdb"
+}
