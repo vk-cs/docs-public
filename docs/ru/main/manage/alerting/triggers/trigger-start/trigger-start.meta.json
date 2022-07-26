@@ -1,12 +1,13 @@
 {
-    "title": "Запуск триггера",
-    "pageDescription": "Решение проблемы выключения триггера и его запуск.",
-    "shortDescription": "Запуск триггера после его отключения",
-    "metaTitle": "Запуск триггера - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Запуск триггера",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 3
-  }
+  "title": "Запуск триггера",
+  "pageDescription": "Решение проблемы выключения триггера и его запуск.",
+  "shortDescription": "Запуск триггера после его отключения",
+  "metaTitle": "Запуск триггера - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Запуск триггера",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "6f6fb6b7-2c17-4c6d-b66e-8cc9ca73896d"
+}
