@@ -1,13 +1,12 @@
 {
   "title": "Event Log",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of working with the event log on the instance.",
+  "shortDescription": "Working with the event log on the instance",
   "metaTitle": "Event Log - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Working with the event log on the instance",
   "sectionTitle": "Event Log",
-  "markdown": "",
+  "markdown": "Description of working with the event log on the instance.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null,
-  "uuid": "ddd09b2f-7e34-493b-8df4-080861fa5abd"
+  "infobarItems": null
 }

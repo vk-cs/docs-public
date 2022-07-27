@@ -1,4 +1,4 @@
-To make your services available all over the world, you can choose the region where the VK Cloud Services infrastructure is located. Each region is a geographic area that includes local data centers. Each data center within the region consists in its own availability zone, isolated from each other to increase the fault tolerance of the system.
+To make your services available all over the world, it is possible to select the region where the VK Cloud Services infrastructure is located. Each region is a geographic area that includes local data centers. Each data center within the region consists in its own availability zone, isolated from each other to increase the fault tolerance of the system.
 
 You have the opportunity to independently choose the region where the capacities, disks and other services of your users are located.
 
@@ -74,7 +74,7 @@ You can use Terraform to create and customize resources in any of the regions.
 
 Each region has its own configuration file. To get the Terraform configuration file, select a region and click "User -> Project Settings -> Terraform -> Download File" of the Terraform configuration.
 
-You can learn more about setting up Terraform in the [Terraform section of the Management Interfaces article](https://mcs.mail.ru/docs/ru/additionals/start/user-account/mgmt-interfaces#terraform).
+More information about setting up Terraform can be found in the [Terraform section of the Management Interfaces article](https://mcs.mail.ru/docs/ru/additionals/start/user-account/mgmt-interfaces#terraform).
 
 </tabpanel>
 </tabs>

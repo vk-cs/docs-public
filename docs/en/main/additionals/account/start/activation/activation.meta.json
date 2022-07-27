@@ -1,13 +1,12 @@
 {
   "title": "Service activation",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Verify phone number to activate services.",
+  "shortDescription": "Verify phone number to activate services",
   "metaTitle": "Service Activation - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Verify phone number to activate services",
   "sectionTitle": "Service activation",
-  "markdown": "",
+  "markdown": "Verify phone number to activate services.",
   "icon": "",
   "weight": 3,
-  "infobarItems": null,
-  "uuid": "2754378b-c15e-40fc-8732-78dfed9a1e59"
+  "infobarItems": null
 }

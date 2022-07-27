@@ -1,13 +1,12 @@
 {
   "title": "Rights and Permissions",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Privilege matrix for user roles.",
+  "shortDescription": "Privilege Matrix for User Roles",
   "metaTitle": "Rights and Permissions - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Privilege Matrix for User Roles",
   "sectionTitle": "Rights and Permissions",
-  "markdown": "",
+  "markdown": "Privilege matrix for user roles.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null,
-  "uuid": "5ed8ce60-b2cc-44e6-aa01-f71f8c704dab"
+  "infobarItems": null
 }

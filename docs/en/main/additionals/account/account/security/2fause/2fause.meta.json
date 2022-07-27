@@ -1,13 +1,12 @@
 {
   "title": "Using 2FA",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of using two-factor authentication for a VK Cloud Solutions account.",
+  "shortDescription": "Using two-factor account authentication",
   "metaTitle": "Using 2FA - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Using VK Cloud Solutions Account Two-Factor Authentication",
   "sectionTitle": "Using 2FA",
-  "markdown": "",
+  "markdown": "Description of how to use two-factor authentication for a VK Cloud Solutions account.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null,
-  "uuid": "16a3b2de-e0c9-4412-be4f-86158b2d935b"
+  "infobarItems": null
 }

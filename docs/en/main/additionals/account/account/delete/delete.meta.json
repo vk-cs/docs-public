@@ -1,13 +1,12 @@
 {
   "title": "Delete account",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of the user account deletion process.",
+  "shortDescription": "Delete user account",
   "metaTitle": "Deleting Account - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Delete user account",
   "sectionTitle": "Deleting Account",
-  "markdown": "",
+  "markdown": "Description of the user account deletion process.",
   "icon": "",
   "weight": 6,
-  "infobarItems": null,
-  "uuid": "3953c127-e8aa-4b28-b428-0620f9dc364b"
+  "infobarItems": null
 }

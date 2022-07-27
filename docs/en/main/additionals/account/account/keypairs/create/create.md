@@ -31,7 +31,7 @@ ssh-keygen -t rsa -b 2048
 
 3. Specify the name of the file where the keys will be saved and enter the password.
 
-The public part of the key will be stored in the `<key_name>.pub` file. Paste this part of the key into the SSH key field when creating a new virtual machine.
+The public part of the key will be saved in the `<key_name>.pub` file. Paste this part of the key into the SSH key field when creating a new virtual machine.
 
 </tabpanel>
 <tabpanel>

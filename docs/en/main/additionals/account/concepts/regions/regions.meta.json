@@ -1,13 +1,12 @@
 {
   "title": "Regions",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of working with the function and dependencies.",
+  "shortDescription": "Description of working with the function and dependencies",
   "metaTitle": "Regions - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Description of working with the function and dependencies",
   "sectionTitle": "Regions",
-  "markdown": "",
+  "markdown": "Description of working with the function and dependencies.",
   "icon": "",
   "weight": 3,
-  "infobarItems": null,
-  "uuid": "1ef99c48-9e54-4b4e-875a-a4763d409cd7"
+  "infobarItems": null
 }

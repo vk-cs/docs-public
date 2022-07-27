@@ -1,13 +1,12 @@
 {
   "title": "API endpoints",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of using endpoints to work with the VK Cloud Solutions platform.",
+  "shortDescription": "Description of using endpoints to work with the VK Cloud Solutions platform",
   "metaTitle": "API endpoints - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Description of using endpoints to work with the VK Cloud Solutions platform",
   "sectionTitle": "API endpoints",
-  "markdown": "",
+  "markdown": "Description of using endpoints to work with the VK Cloud Solutions platform.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null,
-  "uuid": "f2666175-e8f0-4506-bbe7-1a36057a0930"
+  "infobarItems": null
 }
