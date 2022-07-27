@@ -2,115 +2,127 @@ Ingress Controllers в Kubernetes позволяют использовать SS
 
 В этой статье рассмотрим процесс интеграции существующих SSL-сертификатов в Ingress.
 
+Подразумевается что Ingress, Service, Deployment будут находиться в одном неймспейсе кластера. По умолчанию это `default`.
+
 1\. Получите внешний IP-адрес Ingress-контроллера командой:
 
-```
+```bash
 kubectl get svc -n ingress-nginx | grep ingress | grep LoadBalancer
 ```
 
-2\. Заделегируйте A-запись вашего домена на внешний IP-адрес Ingress Controller.
+2\. Заделегируйте A-запись вашего домена на внешний IP-адрес Ingress-контроллера.
 
-3\. Создайте Secret для хранения данных SSL-сертификата. В поля tls.crt и tls.key нужно вставить код сертификата и закрытого ключа в формате base64.
+3\. Создайте Secret для хранения данных SSL-сертификата:
 
+```bash
+kubectl create secret tls testsecret-tls \
+    --namespace default \
+    --key privkey.pem \
+    --cert fullchain.pem
 ```
-kubectl apply -f tls-secret.yaml
+
+4\. Создайте целевое приложение и сервис. Пример ниже создает Deployment и Service ассоциированный с ним.
+
+```bash
+kubectl apply -f application.yaml
 ```
 
-Ниже пример файла tls-secret.yaml.
+Ниже пример файла application.yaml.
 
-```
+```yaml
 ---
-apiVersion: v1
-kind: Secret
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: testsecret-tls
-  namespace: default
-data:
-  tls.crt: base64 encoded cert
-  tls.key: base64 encoded key
-type: kubernetes.io/tls
-```
-
-4\. Создайте целевое приложение и сервис. Пример ниже создает Replication Controller на базе nginx и ассоциированный с ним сервис.
-
-```
-kubectl apply -f service-rc.yaml
-```
-
-Ниже пример файла service-rc.yaml.
-
-```
----
-apiVersion: v1
-kind: ReplicationController
-metadata:
-  name: nginx
+  name: hello-app
+  namespace: default
 spec:
-  replicas: 2
-  selector:
-    app: nginx
-  template:
-    metadata:
-      name: nginx
-      labels:
-        app: nginx
-      spec:
-        containers:
-       - name: nginx
-         image: nginx
-         ports:
-         - containerPort: 80
- ---
- apiVersion: v1
- kind: Service
- metadata:
-   labels:
-     name: nginx
-   name: nginx
- spec:
-   ports:
-     # The port that this service should serve on.
-     - port: 80
-   # Label keys and values that must match in order to receive traffic for this service.
-   selector:
-     app: nginx
+  selector:
+    matchLabels:
+      app: hello
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: hello
+    spec:
+      containers:
+      - name: hello
+        image: "gcr.io/google-samples/hello-app:2.0"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-service
+  namespace: default
+  labels:
+    app: hello
+spec:
+  type: ClusterIP
+  selector:
+    app: hello
+  ports:
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
 ```
 
-5\. Создайте Ingress:
+5\. Создайте Ingress.
 
-```
-kubectl apply -f ingress-custom-ssl.yaml
-```
+В нем нужно заменить ingress.example.com в полях `spec.tls.hosts` и `spec.rules.host` на доменное имя на которое выдан сертификат.
 
-В нем нужно заменить ingress.example.com на ваше доменное имя.
-
-Также обратите внимание на аннотацию «ingress.kubernetes.io/ssl-redirect: "true"», которая делает обязательный редирект с http на https.
-
-Если вы используете несколько разных Ingress Controller и хотите использовать для этого экземпляра Ingress Nginx Ingress Controller, то вам нужно раскомментировать аннотацию «kubernetes.io/ingress.class: nginx» .
+В последних версиях kubernetes по умолчанию включен редирект с http на https если в Ingress задан блок `tls`.
 
 Ниже пример файла ingress-custom-ssl.yaml.
 
-```
+Вместо аннотации `kubernetes.io/ingress.class: "nginx"` в `spec:` можно указать класс `ingressClassName: nginx`.
+
+```yaml
 ---
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-custom-ssl
-  annotations:
-    ingress.kubernetes.io/ssl-redirect: "true"
-#    kubernetes.io/ingress.class: nginx
- 
+  name: ingress-custom-ssl
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
 spec:
-  tls:
-  - hosts:
-    - ingress.example.com
-    secretName: testsecret-tls
-  rules:
-  - host: ingress.example.com
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: nginx
-          servicePort: 80
+  #ingressClassName: nginx
+  tls:
+  - hosts:
+      - ingress.example.com
+    secretName: testsecret-tls
+  rules:
+  - host: ingress.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: hello-service
+            port:
+              number: 80
+
 ```
+
+Примените манифест:
+
+```bash
+kubectl apply -f ingress-custom-ssl.yaml
+```
+
+Логи Ingress-контроллера можно посмотреть в его поде.
+
+Узнать имя пода можно командой:
+
+```bash
+kubectl -n ingress-nginx get pods -o wide | grep 'ingress-nginx-controller'
+```
+
+Далее нужно использовать полное имя пода, чтобы посмотреть логи пода Ingress-контроллера:
+
+```bash
+kubectl -n ingress-nginx logs pod/ingress-nginx-controller-<deployment_id>-<pod_id>
+```
+
+В выводе должно присутствовать `successfully validated configuration, accepting`. Это говорит об успешном применении манифеста и последующем создании ингресса с TLS.
