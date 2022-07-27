@@ -8,31 +8,31 @@ The VK CS platform supports the differentiation of access rights to project reso
 
 List of roles and permissions:
 
-| Operation/Role | User&nbsp;admin (user_admin) | admin. billing | admin. project | Project owner | admin. networks | Observer | admin. internal networks | admin. network security | admin. VM | Super Administrator |
+| Operation/Role | User admin (user_admin) | admin. billing | admin. project | Project owner | admin. networks | Observer | admin. internal networks | admin. network security | admin. VM | Super Administrator |
 |------------------------------------------------- -------------------------------------------------- --------------------|------------------------------ ------------------|-----------------|-------------- --|------------|-------------|-------------| ------------------------|------------------------ -----|-----------|--------------------|
-| Adding a user to a project&nbsp; | x | - | - | x | - | - | - | - | - | X |
+| Adding a user to a project | x | - | - | x | - | - | - | - | - | X |
 | User Role Assignment | x | - | - | X | - | - | - | - | - | X |
 | Billing / changing payment details | - | X | X | X | - | - | - | - | - | X |
 | Create / delete VM | - | - | X | X | - | - | - | - | - | X |
-| Connecting / disconnecting VMs, PaaS services, &nbsp;shared folders to a virtual network | - | - | X | X | - | - | - | - | - | X |
+| Connecting / disconnecting VMs, PaaS services, shared folders to a virtual network | - | - | X | X | - | - | - | - | - | X |
 | VM management (enable/disable/mount images/reboot/change resources//access to monitoring and logs) | - | - | X | X | - | - | - | - | X | X |
-| Virtual Disk Management (Create/Remove/Expand/Mount/Snapshot&rsquo;s/Migrate) | - | - | X | X | - | - | - | - | X | X |
+| Virtual Disk Management (Create/Remove/Expand/Mount/Snapshots/Migrate) | - | - | X | X | - | - | - | - | X | X |
 | Image management (adding / removing VM images) | - | - | X | X | - | - | - | - | - | X |
 | Manage Shared Folders (Add/Remove/Resize) | - | - | X | X | - | - | - | - | - | X || Manage access rules for shared folders (add/delete/modify) | - | - | X | X | - | - | - | - | - | X |
 | Creation modification removal of PaaS-services (K8S,DBaaS) | - | - | X | X | - | - | - | - | - | X |
-| Creation, removal, modification, virtual networks. Connecting to a virtual router&nbsp; | - | - | X | X | X | - | X | - | - | X |
+| Creation, removal, modification, virtual networks. Connecting to a virtual router | - | - | X| X | X | - | X | - | - | X |
 | Creating / deleting project virtual routers. | - | - | X | X | X | - | X | - | - | X |
 | Connecting tenant routers to the ext-net network | - | - | X | X | X | - | X | - | - | X |
 | Management of load balancers and rules in them (adding / removing / adjusting) | - | - | X | X | X | - | X | - | - | X |
 | Working with the Security Group within the tenant (adding/removing groups/access rules) | - | - | X | X | X | - | - | X | - | X |
 | Mapping Security groups to VM interfaces | - | - | X | X | X | - | - | X | - | X |
 | VPN Management | - | - | X | X | X | - | - | - | - | X |
-| FIP Management | - | - | X | X | X | - | - | - | - | X |
-| Managing&nbsp;outbound&nbsp;rules for filtering traffic on external ports of the router (FWaaS) | - | - | - | - | - | - | - | - | - | X |
-| Managing&nbsp;incoming&nbsp;rules for filtering traffic on external ports of the router (FWaaS) | - | - | X | X | X | - | - | - | - | X |
-| Adding virtual networks to the BGP address scope (operation required for routing virtual networks) | - | - | - | - | - | - | - | - | - | X || Create zones and records in public DNS | - | - | x | x | x | - | - | - | - | X |
+| FIP management | - | - | X | X | X | - | - | - | - | X |
+| Managingoutboundrules for filtering traffic on external ports of the router (FWaaS) | - | - | - | - | - | - | - | - | - | X |
+| Managingincomingrules for filtering traffic on external ports of the router (FWaaS) | - | - | X | X | X | - | - | - | - | X |
+| Adding virtual networks to the BGP address scope (operation required for routing virtual networks) | - | - | - | - | - | - | - | - | - | X |
+| Create zones and records in public DNS | - | - | x | x | x | - | - | - | - | X |
 | View information about all services within a project | - | - | - | X | | X | - | - | - | X |
-| Viewing information about all services within the entire WKO cloud | - | - | - | - | | - | - | - | - | - |
 
 ## Deleting a member
 
