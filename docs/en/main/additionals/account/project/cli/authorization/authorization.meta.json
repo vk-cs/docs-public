@@ -8,5 +8,6 @@
   "markdown": "Description of the user CLI client authorization procedure.",
   "icon": "",
   "weight": 3,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "72548886-6a9b-4ef9-a848-e854d2d71e0e"
 }

@@ -8,5 +8,6 @@
   "markdown": "Description of the process for connecting two-factor authentication for a VK Cloud Solutions account.",
   "icon": "",
   "weight": 0,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "0e36e0a0-d522-453f-8a19-1154e955bac9"
 }

@@ -8,5 +8,6 @@
   "markdown": "Description of the user account verification process.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "a5b8146c-623d-4497-97a0-137f624f7bfc"
 }

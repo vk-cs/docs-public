@@ -8,5 +8,6 @@
   "markdown": "Description of technical solutions to improve the security of working with the VK Cloud Solutions platform.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "203e71ab-3f67-4de7-b069-3e53b42c482e"
 }

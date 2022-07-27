@@ -8,5 +8,6 @@
   "markdown": "Description of how to disable two-factor authentication for a VK Cloud Solutions account.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "ec40cf29-145d-4b4b-a445-4e618e53d9f1"
 }
