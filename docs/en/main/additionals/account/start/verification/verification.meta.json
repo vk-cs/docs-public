@@ -1,13 +1,12 @@
 {
   "title": "Account Verification",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of the user account verification process.",
+  "shortDescription": "Account Verification",
   "metaTitle": "Account Verification - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "User Account Verification",
   "sectionTitle": "Account Verification",
-  "markdown": "",
+  "markdown": "Description of the user account verification process.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null,
-  "uuid": "806d00de-f384-4501-8a9a-dd7b35a3bf67"
+  "infobarItems": null
 }

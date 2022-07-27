@@ -1,13 +1,12 @@
 {
   "title": "Terraform",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of working with infrastructure-as-code functions on the VK Cloud Solutions platform.",
+  "shortDescription": "Functions «infrastructure-as-code» on the VK Cloud Solutions platform",
   "metaTitle": "Terraform - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Terraform infrastructure-as-code features powered by VK Cloud Solutions",
   "sectionTitle": "Terraform",
-  "markdown": "",
+  "markdown": "Description of working with infrastructure-as-code functions on the VK Cloud Solutions platform.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null,
-  "uuid": "845ea765-8099-4341-bd06-00671d4e8bab"
+  "infobarItems": null
 }

@@ -1,13 +1,12 @@
 {
   "title": "Client Installation",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of the CLI client installation procedure.",
+  "shortDescription": "CLI client installation",
   "metaTitle": "Client Installation - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "CLI client installation",
   "sectionTitle": "Client Installation",
-  "markdown": "",
+  "markdown": "Description of the CLI client installation procedure.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null,
-  "uuid": "3e45d2a0-74f0-4477-bd0f-c7276da8adb9"
+  "infobarItems": null
 }

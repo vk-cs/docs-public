@@ -1,13 +1,12 @@
 {
   "title": "Changing quotas",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of submitting a request to change project quotas.",
+  "shortDescription": "Description of the project quota change request",
   "metaTitle": "Change Quotas - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Description of the project quota change request",
   "sectionTitle": "Changing Quotas",
-  "markdown": "",
+  "markdown": "Description of submitting a request to change project quotas.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null,
-  "uuid": "5dfeea1b-7401-4cd4-81af-60076fd7adf1"
+  "infobarItems": null
 }

@@ -1,13 +1,12 @@
 {
-  "title": "Changing quotas",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Change Quotas - VK Cloud Solutions",
-  "metaDescription": "",
-  "sectionTitle": "Changing Quotas",
-  "markdown": "",
+  "title": "Status of quotas",
+  "pageDescription": "Description of the steps to view the current project quotas.",
+  "shortDescription": "View current project quotas",
+  "metaTitle": "Quota Status - VK Cloud Solutions",
+  "metaDescription": "View current project quotas",
+  "sectionTitle": "Status of quotas",
+  "markdown": "Description of steps to view current project quotas.",
   "icon": "",
-  "weight": 1,
-  "infobarItems": null,
-  "uuid": "a33fb95a-dc7a-453b-99ee-872e7e4d3e48"
+  "weight": 0,
+  "infobarItems": null
 }

@@ -1,13 +1,12 @@
 {
   "title": "Project",
-  "pageDescription": "Project management in the VK Cloud Solutions environment",
-  "shortDescription": "Project management in VK Cloud Solutions.",
+  "pageDescription": "Description of project management operations on the platform.",
+  "shortDescription": "VK Cloud Solutions Project Management",
   "metaTitle": "Project - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "VK Cloud Solutions Project Management",
   "sectionTitle": "Project",
-  "markdown": "",
+  "markdown": "Description of project management operations on the platform.",
   "icon": "",
   "weight": 3,
-  "infobarItems": null,
-  "uuid": "e51e482d-025a-4468-84e8-a6679842a87d"
+  "infobarItems": null
 }

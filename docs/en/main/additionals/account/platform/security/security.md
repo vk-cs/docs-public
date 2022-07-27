@@ -26,13 +26,13 @@ The IP addresses allocated to virtual machines belong to the VK CS platform and 
 
 Technical support reports the existence of a complaint to the project owner at the registered postal address.
 
-If you are an active user of the services, then technical support will definitely warn you about the existence of such a complaint. If there is no response for more than 1 day, the IP address may be disconnected from the instance and released from the project.
+If you are an active user of the services, then technical support will definitely warn you about the existence of such a complaint. If there is no response for more than 1 day, the IP address can be disconnected from the instance and released from the project.
 
 In order not to encounter a situation of suspicious activity conducted from a virtual machine, you should follow the security rules:
 
 - Do not set simple passwords for accounts
 - Do not provide uncontrolled access to your created resources
-- Pay close attention to downloaded and installed software
+- Pay attention to downloaded and installed software
 - Scan instances for malware or code
 
 </warn>

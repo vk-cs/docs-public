@@ -1,13 +1,12 @@
 {
   "title": "Adding Users",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of the procedure for adding user access keys in the personal account.",
+  "shortDescription": "Adding a user in the personal account",
   "metaTitle": "Add Users - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Adding a user in the personal account",
   "sectionTitle": "Adding Users",
-  "markdown": "",
+  "markdown": "Description of the procedure for adding user access keys in the personal account.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null,
-  "uuid": "3598c3e8-1a57-42cd-9c33-5a2bbab853c3"
+  "infobarItems": null
 }

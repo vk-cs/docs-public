@@ -1,13 +1,12 @@
 {
   "title": "Registration",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of the procedure for creating an account on the VK Cloud Solutions platform.",
+  "shortDescription": "Account Registration",
   "metaTitle": "Registration - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Registration of an account on the VK Cloud Solutions platform",
   "sectionTitle": "Registration",
-  "markdown": "",
+  "markdown": "Description of the procedure for creating an account on the VK Cloud Solutions platform.",
   "icon": "",
   "weight": 0,
-  "infobarItems": null,
-  "uuid": "8501e95b-4a97-425b-b66d-cb9c23f742bd"
+  "infobarItems": null
 }

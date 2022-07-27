@@ -1,13 +1,12 @@
 {
-  "title": "View Project Data",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "View Project Data - VK Cloud Solutions",
-  "metaDescription": "",
-  "sectionTitle": "View Project Data",
-  "markdown": "",
+  "title": "View project",
+  "pageDescription": "Description of the procedure for viewing project data on the VK Cloud Solutions platform.",
+  "shortDescription": "View Project Data",
+  "metaTitle": "Project View - VK Cloud Solutions",
+  "metaDescription": "View project data on the VK Cloud Solutions platform",
+  "sectionTitle": "Project View",
+  "markdown": "Description of the procedure for viewing project data on the VK Cloud Solutions platform.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null,
-  "uuid": "f4eac720-0c48-49ee-8893-ea6baf707b09"
+  "infobarItems": null
 }

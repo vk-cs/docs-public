@@ -1,13 +1,12 @@
 {
   "title": "CLI",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of working with the Command Line Interface - the command line interface of the VK Cloud Solutions platform.",
+  "shortDescription": "Command Line Interface",
   "metaTitle": "CLI - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Command Line Interface — VK Cloud Solutions platform command line interface",
   "sectionTitle": "CLI",
-  "markdown": "",
+  "markdown": "Description of working with the Command Line Interface — the command line interface of the VK Cloud Solutions platform.",
   "icon": "",
   "weight": 6,
-  "infobarItems": null,
-  "uuid": "ab46513a-6411-4f7d-8c4e-9042e048d873"
+  "infobarItems": null
 }

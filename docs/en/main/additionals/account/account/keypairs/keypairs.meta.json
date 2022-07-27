@@ -1,13 +1,12 @@
 {
-  "title": "Ключевые пары",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Ключевые пары - VK Cloud Solutions",
-  "metaDescription": "",
-  "sectionTitle": "Ключевые пары",
-  "markdown": "",
+  "title": "Key Pairs",
+  "pageDescription": "Description of working with SSH keys on the VK Cloud Solutions platform.",
+  "shortDescription": "SSH keys on the VK Cloud Solutions platform",
+  "metaTitle": "Key pairs - VK Cloud Solutions",
+  "metaDescription": "SSH keys on the VK Cloud Solutions platform",
+  "sectionTitle": "Key Pairs",
+  "markdown": "Description of working with SSH keys on the VK Cloud Solutions platform.",
   "icon": "",
   "weight": 4,
-  "infobarItems": null,
-  "uuid": "04058d40-a530-438f-b5e7-693236ebb41f"
+  "infobarItems": null
 }

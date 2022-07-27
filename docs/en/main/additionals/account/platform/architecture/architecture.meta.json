@@ -1,13 +1,12 @@
 {
   "title": "Platform Architecture",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of the main architectural advantages of the VK Cloud Solutions platform.",
+  "shortDescription": "Description of the main architectural advantages of the VK Cloud Solutions platform",
   "metaTitle": "Platform Architecture - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Description of the main architectural advantages of the VK Cloud Solutions platform",
   "sectionTitle": "Platform Architecture",
-  "markdown": "",
+  "markdown": "Description of the main architectural advantages of the VK Cloud Solutions platform.",
   "icon": "",
   "weight": 0,
-  "infobarItems": null,
-  "uuid": "ba98cbcc-b43c-4ce5-8158-4b7bd756e434"
+  "infobarItems": null
 }

@@ -1,13 +1,12 @@
 {
   "title": "Quotas",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of how to view and edit project quotas.",
+  "shortDescription": "View and edit project quotas",
   "metaTitle": "Quotas - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "View and edit project quotas",
   "sectionTitle": "Quotas",
-  "markdown": "",
+  "markdown": "Description of how to view and change project quotas.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null,
-  "uuid": "45d641f9-bdde-4312-b2a4-9c217a62b7c0"
+  "infobarItems": null
 }

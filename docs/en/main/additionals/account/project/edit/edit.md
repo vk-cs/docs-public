@@ -26,4 +26,4 @@ If it is necessary to freeze the project, i.e. to suspend debiting money, then y
 
 ## Transfer resources between projects
 
-Within the VK CS platform, there is a limited set of options for transferring resources between projects. Transferring data from one project to another is possible for [Disks](https://mcs.mail.ru/docs/ru/base/iaas/vm-volumes).
+Within the framework of the VK CS platform, there is a limited set of options for transferring resources between projects. Transferring data from one project to another is possible for [Disks](https://mcs.mail.ru/docs/ru/base/iaas/vm-volumes).

@@ -1,13 +1,12 @@
 {
   "title": "Installing Additional Packages",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of installing individual CLI clients to access a specific OpenStack module.",
+  "shortDescription": "Install individual CLI clients to access a specific OpenStack module",
   "metaTitle": "Installing additional packages - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Installing individual CLI clients to access a specific OpenStack module",
   "sectionTitle": "Installing additional packages",
-  "markdown": "",
+  "markdown": "Description of installing individual CLI clients to access a specific OpenStack module.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null,
-  "uuid": "b3a40e37-613c-4d1c-9c43-af1db2c14dfa"
+  "infobarItems": null
 }

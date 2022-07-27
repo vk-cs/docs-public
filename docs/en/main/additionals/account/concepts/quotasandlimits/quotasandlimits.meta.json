@@ -1,13 +1,12 @@
 {
   "title": "Quotas and Limits",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Listing restrictions for new VK Cloud Solutions projects.",
+  "shortDescription": "Listing restrictions for new VK Cloud Solutions projects",
   "metaTitle": "Quotas and Limits - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Listing restrictions for new VK Cloud Solutions projects",
   "sectionTitle": "Quotas and limits",
-  "markdown": "",
+  "markdown": "List restrictions for new VK Cloud Solutions projects.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null,
-  "uuid": "03d6b447-6cc3-4c9e-8b24-8d550a3f7238"
+  "infobarItems": null
 }

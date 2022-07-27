@@ -1,13 +1,12 @@
 {
   "title": "Projects",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of the functions of projects on the VK Cloud Solutions platform.",
+  "shortDescription": "Project functions on the VK Cloud Solutions platform",
   "metaTitle": "Projects - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Project functions on the VK Cloud Solutions platform",
   "sectionTitle": "Projects",
-  "markdown": "",
+  "markdown": "Description of the functions of projects on the VK Cloud Solutions platform.",
   "icon": "",
   "weight": 0,
-  "infobarItems": null,
-  "uuid": "162d0b20-ce16-4dc0-93e5-f9bb8226725c"
+  "infobarItems": null
 }
