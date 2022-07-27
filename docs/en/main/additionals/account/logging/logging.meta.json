@@ -1,13 +1,12 @@
 {
   "title": "Logging",
-  "pageDescription": "Collection of logs in the VK Cloud Solutions environment",
-  "shortDescription": "Collection of logs in the VK Cloud Solutions environment.",
+  "pageDescription": "Description of the process of collecting logs in the VK Cloud Solutions environment.",
+  "shortDescription": "Logging in VK Cloud Solutions",
   "metaTitle": "Logging - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Logging in VK Cloud Solutions",
   "sectionTitle": "Logging",
-  "markdown": "",
+  "markdown": "Description of the process of collecting logs in the VK Cloud Solutions environment.",
   "icon": "",
   "weight": 4,
-  "infobarItems": null,
-  "uuid": "e6b8334a-307e-4627-a8ae-5550b2303da6"
+  "infobarItems": null
 }

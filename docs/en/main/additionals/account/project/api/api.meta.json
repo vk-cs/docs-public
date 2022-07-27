@@ -1,13 +1,12 @@
 {
   "title": "API",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of managing the functions of the VK Cloud Solutions platform using the API.",
+  "shortDescription": "Tools for managing platform features using the API",
   "metaTitle": "API - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Tools for managing the functions of the VK Cloud Solutions platform using the API",
   "sectionTitle": "API",
-  "markdown": "",
+  "markdown": "Description of managing the functions of the VK Cloud Solutions platform using the API.",
   "icon": "",
   "weight": 7,
-  "infobarItems": null,
-  "uuid": "e43185e6-0773-4d55-8c8b-4af309c72683"
+  "infobarItems": null
 }

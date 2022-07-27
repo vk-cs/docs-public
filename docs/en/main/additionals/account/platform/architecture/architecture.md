@@ -4,7 +4,7 @@ The VK Cloud Solutions platform was created for everyone who needs a convenient 
 
 ## Capabilities
 
-Business process automation capabilities in the cloud are changing the way operations are managed and bring agility to the IT infrastructure. You can quickly change the amount of resources involved and connect additional cloud platform services without expensive integrator services.
+The business process automation capabilities in the cloud are changing the way operations are managed and bring agility to the IT infrastructure. You can quickly change the amount of resources involved and connect additional cloud platform services without expensive integrator services.
 
 ## Automation
 
@@ -12,8 +12,8 @@ Automation of DevOps processes in the cloud reduces the time to market for produ
 
 ## Fault tolerance
 
-The VK Cloud Solutions platform takes into account the requirements of high reliability, security and peak load resistance, the absence of a single point of failure.
+The VK Cloud Solutions platform takes into account the requirements of high reliability, security and resistance to peak loads, the absence of a single point of failure.
 
 ## Price
 
-The “subscription service” model with per-second billing allows you to control your costs and fully utilize the leased capacities. Simple billing and the possibility of pre- and post-payment help plan expenses.
+The "service by subscription" model with per-second billing allows you to control your costs and fully utilize the leased capacity. Simple billing and the possibility of pre- and post-payment help plan expenses.

@@ -1,13 +1,12 @@
 {
   "title": "About platform",
-  "pageDescription": "Information about the VK Cloud Solutions platform",
-  "shortDescription": "Information about the VK Cloud Solutions platform.",
+  "pageDescription": "Additional information about the VK Cloud Solutions platform.",
+  "shortDescription": "Additional information about the VK Cloud Solutions platform",
   "metaTitle": "About platform - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Additional information about the VK Cloud Solutions platform",
   "sectionTitle": "About Platform",
-  "markdown": "",
+  "markdown": "Additional information about the VK Cloud Solutions platform.",
   "icon": "",
   "weight": 5,
-  "infobarItems": null,
-  "uuid": "cd36ef55-4130-417a-8060-385f4a3294a2"
+  "infobarItems": null
 }

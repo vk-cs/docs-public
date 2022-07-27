@@ -1,4 +1,4 @@
-To fully activate the services, you must register and verify your phone number. The request will be generated automatically after confirmation of the mailbox.
+To fully activate the services, you must register and confirm your phone number. The request will be generated automatically after confirmation of the mailbox.
 
 <warn>
 

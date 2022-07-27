@@ -1,13 +1,12 @@
 {
-  "title": "View Project Data",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "View Project Data - VK Cloud Solutions",
-  "metaDescription": "",
-  "sectionTitle": "View Project Data",
-  "markdown": "",
+  "title": "Deleting a project",
+  "pageDescription": "Description of the procedure for deleting a project on the VK Cloud Solutions platform.",
+  "shortDescription": "Project deletion conditions",
+  "metaTitle": "Delete project - VK Cloud Solutions",
+  "metaDescription": "Deleting a project on the VK Cloud Solutions platform",
+  "sectionTitle": "Deleting a project",
+  "markdown": "Description of the procedure for deleting a project on the VK Cloud Solutions platform.",
   "icon": "",
   "weight": 5,
-  "infobarItems": null,
-  "uuid": "d7bd0c7c-3aee-4235-9203-9110b12d03e1"
+  "infobarItems": null
 }

@@ -1,13 +1,12 @@
 {
   "title": "Action Log",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of working with the user activity log.",
+  "shortDescription": "Working with user activity log",
   "metaTitle": "Action Log - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Working with user activity log",
   "sectionTitle": "Action Log",
-  "markdown": "",
+  "markdown": "Description of working with the user activity log.",
   "icon": "",
   "weight": 0,
-  "infobarItems": null,
-  "uuid": "ee84aa3e-2cac-487f-a351-e68721ea7e19"
+  "infobarItems": null
 }

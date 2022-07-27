@@ -1,13 +1,12 @@
 {
   "title": "Personal account",
-  "pageDescription": "Description of work in the user's personal account of VK Cloud Solutions",
-  "shortDescription": "Description of work in the user's personal account of VK Cloud Solutions.",
+  "pageDescription": "Description of the work in the personal account of the VK Cloud Solutions user.",
+  "shortDescription": "User's personal account",
   "metaTitle": "My Account - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "VK Cloud Solutions User Account",
   "sectionTitle": "My Account",
-  "markdown": "",
+  "markdown": "Description of work in the user's personal account of VK Cloud Solutions.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null,
-  "uuid": "b22dc6bf-aeed-4bb1-a798-76c242212c45"
+  "infobarItems": null
 }

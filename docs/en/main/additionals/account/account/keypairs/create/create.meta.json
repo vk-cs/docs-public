@@ -1,13 +1,12 @@
 {
   "title": "Creating a key pair",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of the process for generating a key pair for an SSH connection.",
+  "shortDescription": "The process of generating a key pair for an SSH connection",
   "metaTitle": "Creating a Key Pair - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "The process of generating a key pair for an SSH connection",
   "sectionTitle": "Creating a Key Pair",
-  "markdown": "",
+  "markdown": "Description of the process for generating a key pair for an SSH connection.",
   "icon": "",
   "weight": 0,
-  "infobarItems": null,
-  "uuid": "5bcb3a85-0f55-463a-8ad8-d0bf0bc84a10"
+  "infobarItems": null
 }
