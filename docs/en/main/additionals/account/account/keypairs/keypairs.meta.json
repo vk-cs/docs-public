@@ -8,5 +8,6 @@
   "markdown": "Description of working with SSH keys on the VK Cloud Solutions platform.",
   "icon": "",
   "weight": 4,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "03eb6789-2dac-4d45-b4ed-cd769e480880"
 }

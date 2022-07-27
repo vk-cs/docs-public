@@ -8,5 +8,6 @@
   "markdown": "Description of security tools for accessing the VK Cloud Solutions account.",
   "icon": "",
   "weight": 3,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "9a35a60a-87f1-4967-a61c-fe704739f69b"
 }

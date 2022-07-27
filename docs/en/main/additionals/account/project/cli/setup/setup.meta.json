@@ -8,5 +8,6 @@
   "markdown": "Description of the CLI client installation procedure.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "9e425340-2c55-4074-a3e5-1ca43b98a306"
 }

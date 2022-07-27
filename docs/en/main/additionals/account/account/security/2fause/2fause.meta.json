@@ -8,5 +8,6 @@
   "markdown": "Description of how to use two-factor authentication for a VK Cloud Solutions account.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "4d036613-3c16-4d12-9282-748355c85580"
 }

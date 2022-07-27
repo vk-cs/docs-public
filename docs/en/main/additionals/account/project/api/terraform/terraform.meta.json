@@ -8,5 +8,6 @@
   "markdown": "Description of working with infrastructure-as-code functions on the VK Cloud Solutions platform.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "11fe476e-2d5e-4bae-8500-4b2e53113bdb"
 }

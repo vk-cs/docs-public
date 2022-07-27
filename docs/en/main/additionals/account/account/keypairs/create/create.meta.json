@@ -8,5 +8,6 @@
   "markdown": "Description of the process for generating a key pair for an SSH connection.",
   "icon": "",
   "weight": 0,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "3f879362-d6d1-4d2f-8421-5c5a283d9747"
 }

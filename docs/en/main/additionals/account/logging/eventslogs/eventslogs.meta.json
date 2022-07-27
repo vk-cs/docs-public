@@ -8,5 +8,6 @@
   "markdown": "Description of working with the event log on the instance.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "3f8d1035-813f-4f9f-862a-66739494bdc1"
 }

@@ -8,5 +8,6 @@
   "markdown": "Description of installing individual CLI clients to access a specific OpenStack module.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "fe507a2d-8a30-4683-8366-1c18050a15c9"
 }
