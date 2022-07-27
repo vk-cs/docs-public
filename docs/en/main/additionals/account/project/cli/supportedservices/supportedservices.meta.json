@@ -1,13 +1,12 @@
 {
   "title": "Supported Services",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "List of services available for working with CLI.",
+  "shortDescription": "List of services available for working with CLI",
   "metaTitle": "Supported Services - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "List of services available for working with CLI",
   "sectionTitle": "Supported Services",
-  "markdown": "",
+  "markdown": "List of services available for working with CLI.",
   "icon": "",
   "weight": 0,
-  "infobarItems": null,
-  "uuid": "205e4fd7-6924-4eb8-b6ae-3878f6d7a698"
+  "infobarItems": null
 }

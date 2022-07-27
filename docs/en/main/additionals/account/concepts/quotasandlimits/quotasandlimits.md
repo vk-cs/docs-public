@@ -4,7 +4,7 @@ Technical and organizational restrictions are necessary to guarantee the stabili
 
 Quotas are organizational restrictions on the operational activity of each project.
 
-Quotas are enforced by granting or reserving resources when a request is made, such as when a new virtual machine is created. If resource allocation is not possible, the request to create the resource is denied. If the reservation succeeds, the operation continues until the reservation is either converted to use (the operation was successful) or rolled back (the operation failed).
+Quotas are enforced by granting or reserving resources when a request is made, such as when creating a new virtual machine. If resource allocation is not possible, the request to create the resource is denied. If the reservation succeeds, the operation continues until the reservation is either converted to use (the operation was successful) or rolled back (the operation failed).
 
 When a project is created, minimum quotas are assigned. Quotas differ depending on the region of the project. For more information about regions, see the article [Regions](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions)
 
@@ -122,7 +122,7 @@ The current technical limits have the following meanings:
 
 | Parameter | Quantity / volume |
 |-------------------------------|----------------- ---|
-| Firewall groups | 200|
+| Firewall groups | 200 |
 | Firewall rules inside the group | 50 |
 | Networks near the project | 10 |
 | Subnets y network | 10 |

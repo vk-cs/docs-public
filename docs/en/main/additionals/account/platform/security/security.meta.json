@@ -1,13 +1,12 @@
 {
   "title": "Platform Security",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of technical solutions to improve the security of working with the VK Cloud Solutions platform.",
+  "shortDescription": "Description of technical solutions to improve the security of working with the platform",
   "metaTitle": "Platform Security - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Description of technical solutions to improve the security of working with the VK Cloud Solutions platform",
   "sectionTitle": "Platform Security",
-  "markdown": "",
+  "markdown": "Description of technical solutions to improve the security of working with the VK Cloud Solutions platform.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null,
-  "uuid": "699fe540-3d09-4965-82f3-1d62985c4bec"
+  "infobarItems": null
 }

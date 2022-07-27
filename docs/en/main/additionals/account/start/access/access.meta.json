@@ -1,13 +1,12 @@
 {
   "title": "Login",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of the procedure for logging into your VK Cloud Solutions account.",
+  "shortDescription": "Login to personal account",
   "metaTitle": "Login - VK Cloud Solutions",
-  "metaDescription": "",
-  "sectionTitle": "Login",
-  "markdown": "",
+  "metaDescription": "VK Cloud Solutions personal account login",
+  "sectionTitle": "Input",
+  "markdown": "Description of the procedure for logging into your VK Cloud Solutions account.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null,
-  "uuid": "cb19dae5-9e6a-4304-985c-05d98c0a84c4"
+  "infobarItems": null
 }

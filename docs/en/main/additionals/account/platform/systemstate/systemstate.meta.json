@@ -1,13 +1,12 @@
 {
   "title": "System Status",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of the process of obtaining information about the operation of user resources in real time.",
+  "shortDescription": "Getting real-time information about the operation of user resources",
   "metaTitle": "System Status - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Getting real-time information about the operation of user resources",
   "sectionTitle": "System Status",
-  "markdown": "",
+  "markdown": "Description of the process of obtaining information about the operation of user resources in real time.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null,
-  "uuid": "8a73ed89-052a-44f6-839e-2b670fea3aac"
+  "infobarItems": null
 }

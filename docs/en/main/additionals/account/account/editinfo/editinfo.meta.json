@@ -1,13 +1,12 @@
 {
-  "title": "Change Profile",
-  "pageDescription": "",
-  "shortDescription": "",
+  "title": "Change profile",
+  "pageDescription": "Description of the procedure for changing data in the user profile.",
+  "shortDescription": "Change data in user profile",
   "metaTitle": "Profile Change - VK Cloud Solutions",
-  "metaDescription": "",
-  "sectionTitle": "Change profile",
-  "markdown": "",
+  "metaDescription": "Change data in user profile",
+  "sectionTitle": "Change Profile",
+  "markdown": "Description of the procedure for changing data in the user profile.",
   "icon": "",
   "weight": 5,
-  "infobarItems": null,
-  "uuid": "9b242b48-9979-4352-8d2a-8bfc525ac1e0"
+  "infobarItems": null
 }

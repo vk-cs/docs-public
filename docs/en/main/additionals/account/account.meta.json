@@ -1,13 +1,12 @@
 {
   "title": "Personal account",
-  "pageDescription": "Personal account contains VK Cloud Solutions user infrastructure management tools",
-  "shortDescription": "Personal account contains VK Cloud Solutions user infrastructure management tools.",
-  "metaTitle": "Personal account - VK Cloud Solutions",
+  "pageDescription": "Personal account contains VK Cloud Solutions user infrastructure management tools.",
+  "shortDescription": "VK Cloud Solutions User Account",
+  "metaTitle": "My Account - VK Cloud Solutions",
   "metaDescription": "Personal Account contains VK Cloud Solutions user infrastructure management tools",
-  "sectionTitle": "Personal account",
-  "markdown": "",
+  "sectionTitle": "My Account",
+  "markdown": "Personal account contains VK Cloud Solutions user infrastructure management tools.",
   "icon": "",
   "weight": 17,
-  "infobarItems": null,
-  "uuid": "02e3ca4d-4a50-4314-bb9b-18090edf74e7"
+  "infobarItems": null
 }

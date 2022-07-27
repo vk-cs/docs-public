@@ -1,13 +1,12 @@
 {
   "title": "Delete key pair",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Description of the process for deleting an existing key pair.",
+  "shortDescription": "Delete existing key pair",
   "metaTitle": "Remove Key Pair - VK Cloud Solutions",
-  "metaDescription": "",
+  "metaDescription": "Delete existing key pair",
   "sectionTitle": "Remove Key Pair",
-  "markdown": "",
+  "markdown": "Description of the process for deleting an existing key pair.",
   "icon": "",
   "weight": 0,
-  "infobarItems": null,
-  "uuid": "674211e9-dd01-46f4-a548-bbf1317c3e31"
+  "infobarItems": null
 }
