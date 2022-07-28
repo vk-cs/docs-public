@@ -1,6 +1,6 @@
 {
     "meta": "Бекапы баз данных",
-    "path": "/services/databases/backups/auto",
+    "path": "/services/databases/backups",
     "groups": [
         {
             "title": "ИНФОРМАЦИЯ",
