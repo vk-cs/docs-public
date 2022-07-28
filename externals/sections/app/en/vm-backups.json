@@ -1,6 +1,6 @@
 {
     "meta": "Резервное копирование ВМ",
-    "path": "/services/infra/backups/auto",
+    "path": "/services/infra/backups",
     "groups": [
         {
             "title": "ИНФОРМАЦИЯ",
