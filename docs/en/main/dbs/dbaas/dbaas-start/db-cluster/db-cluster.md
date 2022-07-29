@@ -1,79 +1,100 @@
-## Запуск кластера
+## Start cluster
 
-1\. В разделе личного кабинета [«Базы данных»](https://mcs.mail.ru/app/services/databases/add/) нажмите "**Добавить**"
+one\. In the personal account section ["Databases"](https://mcs.mail.ru/app/services/databases/add/) click "**Add**"
 
-2\. В открывшемся окне выберите базу данных для запуска, а также шаблон конфигурации "**Кластер**".
+2\. In the window that opens, select the database to run, as well as the "**Cluster**" configuration template.
 
 ![](./assets/1586421565636-1586421565636.png)
 
-Доступность шаблонов конфигурации зависит от типа выбранной СУБД.
+Availability of configuration templates depends on the type of DBMS selected.
 
-- **Single** — единичный инстанс СУБД без реплики. Рекомендуется использовать исключительно для целей разработки и тестирования.
-- **Master-slave** — два инстанса СУБД в разных ЦОД с репликацией в режиме master-slave (active-passive). Используйте для промышленной эксплуатации.
-- **Кластер** — кластер с синхронной репликацией данных. Используйте при наличии повышенных требований к надежности и отказоустойчивости системы.
+- **Single** - a single DBMS instance without a replica. Recommended for use only for development and testing purposes.
+- **Master-slave** (**Master-Replica**) - two DBMS instances in different data centers with master-slave (active-passive) replication. Use for industrial use.
+- **Cluster** — cluster with synchronous data replication. Use if there are increased requirements for system reliability and fault tolerance.
 
-На втором шаге выберите необходимые параметры инстанса.
+In the second step, select the required instance settings.
 
 ![](./assets/1586421608647-1586421608647.png)
 
-### Загрузка своего SSH-ключа
+### Upload your SSH key
 
-Обратите внимание, что теперь можно не только сгенерировать новый, использовать старый, но и загрузить свой SSH-ключ
+Please note that now you can not only generate a new one, use the old one, but also upload your SSH key
 
 ![](./assets/1552314256902-img-2019-03-11-17-15-14.png)
 
-<table><tbody><tr><td style="background-color: rgb(239, 239, 239);"><strong>Тип инстанса</strong></td><td>Выберите из списка предложенных конфигурацию инстанса (объём оперативной памяти, количество CPU). Объем жесткого диcка вы можете изменить в следующем пункте.</td></tr><tr><td style="background-color: rgb(239, 239, 239);"><strong>Размер диска</strong></td><td>По умолчанию подставляется объем из выбранной вами конфигурации. Но вы можете увеличить или уменьшить размер.</td></tr><tr><td style="background-color: rgb(239, 239, 239);"><strong>Имя инстанса</strong></td><td>Оставьте имя по умолчанию или введите свое название. Латинскими символами.</td></tr><tr><td style="background-color: rgb(239, 239, 239);"><strong>Зона доступности</strong></td><td>укажите зону доступности (рекомендуем DP1 или MS1).</td></tr><tr><td style="background-color: rgb(239, 239, 239);"><strong>Сеть</strong></td><td>Оставьте по умолчанию или выберите свою приватную сеть. Если у вас не создано ни одной сети, вам будет предложено её создать.</td></tr><tr><td style="background-color: rgb(239, 239, 239);"><strong>Доступ из интернет</strong></td><td><p>Установите для организации доступа к базе данных из Интернет через плавающий IP-адрес</p></td></tr><tr><td style="background-color: rgb(239, 239, 239);"><strong>Количество узлов</strong></td><td><p dir="ltr">Выберите нужное вам количество узлов кластера.</p></td></tr><tr><td style="background-color: rgb(239, 239, 239);"><strong>Ключ для доступа по SSH</strong></td><td>Выберите из уже созданных вами или создайте новый. Он понадобится для подключения к серверу.</td></tr></tbody></table>
+| Instance type | Choose from the list of proposed instance configuration (RAM size, number of CPUs).<br>You can change the hard disk size in the next paragraph. |
+|-------|------|
+| Disk size| By default, the volume from the configuration you choose is substituted. But you can increase or decrease the size.|
+| Instance name| Leave the default name or enter your own name. Latin characters.|
+| Accessibility zone| specify the availability zone (we recommend DP1 or MS1).|
+| Network | Leave as default or choose your own private network. If you have not created any networks, you will be prompted to create one.|
+| Internet access | Set to access the database from the Internet via a floating IP address.|
+| Number of nodes | Select the number of cluster nodes you need.|
+| Key for SSH access | Choose from the ones you've already created or create a new one. You will need it to connect to the server.|
 
-На следующем шаге задайте параметры инициализации базы данных.
+In the next step, set the database initialization parameters.
 
 ![](./assets/1586421648657-1586421648657.png)
 
-<table style="width: 100%;"><tbody><tr><td style="width: 50%; background-color: rgb(239, 239, 239);"><strong>Имя базы данных для создания</strong></td><td style="width: 50.0000%;">Оставьте по умолчанию или введите свое.</td></tr><tr><td style="width: 50%; background-color: rgb(239, 239, 239);"><strong>Имя пользователя</strong></td><td style="width: 50.0000%;">Укажите имя администратора для удаленного доступа.</td></tr><tr><td style="width: 50%; background-color: rgb(239, 239, 239);"><strong>Пароль администратора</strong></td><td style="width: 50.0000%;">Задайте пароль администратора для удаленного доступа.</td></tr><tr><td style="width: 50%; background-color: rgb(239, 239, 239);"><strong>Резервная копия</strong></td><td style="width: 50.0000%;">Имя бэкапа для восстановления.</td></tr></tbody></table>
+| Title | Description |
+|------------------------------|-------------------- --------------------------------------------|
+| Database name to create | Leave the default or enter your own. |
+| Username | Specify an administrator name for remote access. |
+| Administrator password | Set an administrator password for remote access. |
+| Backup | The name of the backup to restore. |
 
-### Внимание!
+<info>
 
-Кластер создаётся в течение нескольких минут. После чего появится информация об инстансе и способы подключения.
+For PostgreSQL in "Single" or "Master-Replica" configurations, [monitoring](../db-monitoring/postgresql) is enabled by default. If necessary, this option can be disabled.
 
-Не прерывайте процесс создания и не закрывайте браузер.
+</info>
+
+<warn>
+
+The cluster is created within a few minutes. After that, information about the instance and connection methods will appear.
+
+</warn>
+
+Do not interrupt the creation process and do not close the browser.
 
 ![](./assets/1552314306216-img-2019-03-11-17-17-07.png)
 
-## Подключение к кластеру
+## Connect to the cluster
 
-Увидеть способы подключения также можно кликнув по названию конкретного инстанса в списке или наведя курсор на значок информации.
+You can also see connection methods by clicking on the name of a particular instance in the list or by hovering over the information icon.
 
 ![](./assets/1549891614124-img-2019-02-11-16-25-58.png)
 
 ![](./assets/1549891638364-img-2019-02-11-16-26-25.png)
 
-В разделе «Параметры подключения из приложений» приведены примеры кода из популярных языков.
+See the Connection Settings from Applications section for code examples from popular languages.
 
 ![](./assets/1536330673178-img-2018-09-07-17-30-46.png)
 
-При использовании примеров следует заменить макросы **<DATABASE>**, **<USERNAME>**, **<PASSWORD>** на актуальные значения:
+When using examples, replace macros **<DATABASE>**, **<USERNAME>**, **<PASSWORD>** with actual values:
 
-- <DATABASE> - название базы данных, указанное при создании.
-- <USERNAME> - имя пользователя (указывается при создании).
-- <PASSWORD> - пароль пользователя (указывается при создании).
+- <DATABASE> - the name of the database specified during creation.
+- <USERNAME> - username (specified during creation).
+- <PASSWORD> - user password (specified during creation).
 
-Дополнительную информацию можно найти в документации по используемому коннектору (приложению для подключения к БД).
+Additional information can be found in the documentation for the used connector (application for connecting to the database).
 
 ## Patroni
 
-### Установка
+### Installation
 
-Patroni предустановлен в вашей системе.
+Patroni is pre-installed on your system.
 
-Patroni - это служба для создания высокодоступных PostgreSQL кластеров на основе стандартной потоковой репликации. Это решение используется такими компаниями как Red Hat, IBM Compose, Zalando и многими другими. С его помощью можно преобразовать систему из ведущего и ведомых узлов (primary - replica) в высокодоступный кластер с поддержкой автоматического контролируемого (switchover) и аварийного (failover) переключения. Patroni позволяет легко добавлять новые реплики в существующий кластер, поддерживает динамическое изменение конфигурации PostgreSQL одновременно на всех узлах кластера и множество других возможностей.
+Patroni is a service for creating highly available PostgreSQL clusters based on standard streaming replication. This solution is used by companies such as Red Hat, IBM Compose, Zalando and many others. It can be used to transform a system from a master and slave nodes (primary - replica) to a highly available cluster with support for automatic controlled (switchover) and emergency (failover) switching. Patroni allows you to easily add new replicas to an existing cluster, supports dynamic PostgreSQL configuration changes simultaneously on all cluster nodes, and many other features.
 
-## Балансер
+## Balancer
 
-Для каждого кластера создается TCP-балансер, который имеет 3 порта. Они указывают на:
+For each cluster, a TCP balancer is created, which has 3 ports. They point to:
 
-1.  \- мастер
-2.  \- синхронную реплику
-3.  \- асинхронную реплику
+1. \- master
+2. \- synchronous replica
+3. \- asynchronous replica
 
 ---
 
-Официальная [документация Patroni находится тут](https://patroni.readthedocs.io/en/latest/index.html).
+The official [Patroni documentation is here](https://patroni.readthedocs.io/en/latest/index.html).
