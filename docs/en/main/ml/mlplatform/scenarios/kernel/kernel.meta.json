@@ -1,0 +1,12 @@
+{
+  "title": "Creating a custom kernel",
+  "pageDescription": "Description of how to create a custom kernel on a JupyterHub instance.",
+  "shortDescription": "Description of the procedure for creating an individual kernel",
+  "metaTitle": "Creating a custom kernel - VK Cloud Solutions",
+  "metaDescription": "Creating a custom JupyterHub kernel",
+  "sectionTitle": "Creating a custom kernel",
+  "markdown": "",
+  "icon": "",
+  "weight": 0,
+  "infobarItems": null
+}
