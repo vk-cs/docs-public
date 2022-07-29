@@ -40,7 +40,7 @@ openstack image create --private --container-format bare --disk-format raw --pro
 Если инстанс, созданный из образа, должен поддерживать резервное копирование, необходимо загрузить его с указанием метаданных наличия гостевого агента:
 
 ```bash
-openstack image create --private --container-format bare --disk-format raw --file <файл.raw> **--property hw_qemu_guest_agent=yes** --property store=s3 **--property os_require_quiesce=yes** <название_образа>
+openstack image create --private --container-format bare --disk-format raw --file <файл.raw> --property hw_qemu_guest_agent=yes --property store=s3 --property os_require_quiesce=yes <название_образа>
 ```
 
 В зависимости от формата загружаемого файла требуется указать соответствующее значение ключа --disk-format:
