@@ -1,12 +1,13 @@
 {
-    "title": "Quick start",
-    "pageDescription": "Description of basic operations for working with Arenadata Hadoop clusters.",
-    "shortDescription": "Getting Started with Arenadata Hadoop",
-    "metaTitle": "Quick start - VK Cloud Solutions",
-    "metaDescription": "Quick start",
-    "sectionTitle": "Quick start",
-    "markdown": "Description of basic operations for working with Arenadata Hadoop clusters.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
+  "title": "Quick start",
+  "pageDescription": "Description of basic operations for working with Arenadata Hadoop clusters.",
+  "shortDescription": "Getting Started with Arenadata Hadoop",
+  "metaTitle": "Quick start - VK Cloud Solutions",
+  "metaDescription": "Quick start",
+  "sectionTitle": "Quick start",
+  "markdown": "Description of basic operations for working with Arenadata Hadoop clusters.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "3444a694-6231-46ea-adc2-1c7b98950346"
 }

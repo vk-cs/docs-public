@@ -1,12 +1,13 @@
 {
-    "title": "Архитектура",
-    "pageDescription": "Архитектура",
-    "shortDescription": "Архитектура решения Arenadata Hadoop",
-    "metaTitle": "Архитектура - VK Cloud Solutions",
-    "metaDescription": "Архитектура",
-    "sectionTitle": "Архитектура",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
+  "title": "Архитектура",
+  "pageDescription": "Архитектура",
+  "shortDescription": "Архитектура решения Arenadata Hadoop",
+  "metaTitle": "Архитектура - VK Cloud Solutions",
+  "metaDescription": "Архитектура",
+  "sectionTitle": "Архитектура",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "eb57baae-4e8a-4249-b49c-169f960a69cd"
 }

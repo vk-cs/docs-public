@@ -1,12 +1,13 @@
 {
-    "title": "ADH Cluster Management",
-    "pageDescription": "ADH Cluster Management",
-    "shortDescription": "Setting up an ADH cluster using Arenadata Cluster Manager",
-    "metaTitle": "ADH Cluster Management - VK Cloud Solutions",
-    "metaDescription": "ADH Cluster Management",
-    "sectionTitle": "ADH Cluster Management",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
+  "title": "ADH Cluster Management",
+  "pageDescription": "ADH Cluster Management",
+  "shortDescription": "Setting up an ADH cluster using Arenadata Cluster Manager",
+  "metaTitle": "ADH Cluster Management - VK Cloud Solutions",
+  "metaDescription": "ADH Cluster Management",
+  "sectionTitle": "ADH Cluster Management",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "097436ab-fa58-4015-942b-e2d87e22ae08"
 }

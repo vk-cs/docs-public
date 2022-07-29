@@ -1,12 +1,13 @@
 {
-    "title": "Интеграция",
-    "pageDescription": "Интеграция кластера ADH с JDBC-совместимыми источниками",
-    "shortDescription": "Интеграция кластера ADH с JDBC-совместимыми источниками",
-    "metaTitle": "Интеграция - VK Cloud Solutions",
-    "metaDescription": "Интеграция кластера ADH с JDBC-совместимыми источникамиr",
-    "sectionTitle": "Интеграция",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
+  "title": "Интеграция",
+  "pageDescription": "Интеграция кластера ADH с JDBC-совместимыми источниками",
+  "shortDescription": "Интеграция кластера ADH с JDBC-совместимыми источниками",
+  "metaTitle": "Интеграция - VK Cloud Solutions",
+  "metaDescription": "Интеграция кластера ADH с JDBC-совместимыми источникамиr",
+  "sectionTitle": "Интеграция",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "4f337acb-e2f2-4439-95e3-858e551d71ab"
 }

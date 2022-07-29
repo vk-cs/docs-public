@@ -1,12 +1,13 @@
 {
-    "title": "Arenadata Hadoop Licenses",
-    "pageDescription": "Difference between Community and Enterprise licenses",
-    "shortDescription": "Difference between Community and Enterprise licenses",
-    "metaTitle": "Arenadata Hadoop - VK Cloud Solutions Licenses",
-    "metaDescription": "Difference between Community and Enterprise licenses",
-    "sectionTitle": "Arenadata Hadoop Licenses",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
+  "title": "Arenadata Hadoop Licenses",
+  "pageDescription": "Difference between Community and Enterprise licenses",
+  "shortDescription": "Difference between Community and Enterprise licenses",
+  "metaTitle": "Arenadata Hadoop - VK Cloud Solutions Licenses",
+  "metaDescription": "Difference between Community and Enterprise licenses",
+  "sectionTitle": "Arenadata Hadoop Licenses",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "7218e556-571c-49d2-a2da-935f03b8625e"
 }
