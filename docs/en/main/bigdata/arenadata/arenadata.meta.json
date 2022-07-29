@@ -7,5 +7,6 @@
   "sectionTitle": "Arenadata ADH",
   "markdown": "A complete distribution based on Apache Hadoop adapted for enterprise use, designed to store and process semi-structured and unstructured data.",
   "icon": "",
-  "weight": 0
+  "weight": 0,
+  "uuid": "6c23a90d-81d8-446f-bed9-3119fb047869"
 }

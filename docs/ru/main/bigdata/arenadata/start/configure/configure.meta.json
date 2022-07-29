@@ -1,12 +1,13 @@
 {
-    "title": "Управление кластером ADH",
-    "pageDescription": "Управление кластером ADH",
-    "shortDescription": "Настройка кластера ADH с помощью Arenadata Cluster Manager",
-    "metaTitle": "Управление кластером ADH - VK Cloud Solutions",
-    "metaDescription": "Управление кластером ADH",
-    "sectionTitle": "Управление кластером ADH",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
+  "title": "Управление кластером ADH",
+  "pageDescription": "Управление кластером ADH",
+  "shortDescription": "Настройка кластера ADH с помощью Arenadata Cluster Manager",
+  "metaTitle": "Управление кластером ADH - VK Cloud Solutions",
+  "metaDescription": "Управление кластером ADH",
+  "sectionTitle": "Управление кластером ADH",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "67591174-c62d-4824-b191-fa674741043b"
 }

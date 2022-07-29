@@ -1,12 +1,13 @@
 {
-    "title": "Концепции",
-    "pageDescription": "Описание основных понятий при работе с Arenadata Hadoop.",
-    "shortDescription": "Архитектура и лицензии сервиса",
-    "metaTitle": "Концепции - VK Cloud Solutions",
-    "metaDescription": "Концепции",
-    "sectionTitle": "Концепции",
-    "markdown": "Описание основных понятий при работе с Arenadata Hadoop.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
+  "title": "Концепции",
+  "pageDescription": "Описание основных понятий при работе с Arenadata Hadoop.",
+  "shortDescription": "Архитектура и лицензии сервиса",
+  "metaTitle": "Концепции - VK Cloud Solutions",
+  "metaDescription": "Концепции",
+  "sectionTitle": "Концепции",
+  "markdown": "Описание основных понятий при работе с Arenadata Hadoop.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "6eaa9096-0eee-4033-aa3e-6c1fb7a13a8c"
 }

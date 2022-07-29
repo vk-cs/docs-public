@@ -1,12 +1,13 @@
 {
-    "title": "Concepts",
-    "pageDescription": "Description of the main concepts when working with Arenadata Hadoop.",
-    "shortDescription": "Service architecture and licenses",
-    "metaTitle": "Concepts - VK Cloud Solutions",
-    "metaDescription": "Concepts",
-    "sectionTitle": "Concepts",
-    "markdown": "Description of the main concepts when working with Arenadata Hadoop.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
+  "title": "Concepts",
+  "pageDescription": "Description of the main concepts when working with Arenadata Hadoop.",
+  "shortDescription": "Service architecture and licenses",
+  "metaTitle": "Concepts - VK Cloud Solutions",
+  "metaDescription": "Concepts",
+  "sectionTitle": "Concepts",
+  "markdown": "Description of the main concepts when working with Arenadata Hadoop.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "fb478a6a-91eb-4a0b-8b5d-5a6c174bd10f"
 }

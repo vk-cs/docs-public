@@ -1,12 +1,13 @@
 {
-    "title": "Удаление кластера ADH",
-    "pageDescription": "Удаление кластера ADH",
-    "shortDescription": "Описание действий для удаления кластера",
-    "metaTitle": "Удаление кластера ADH - VK Cloud Solutions",
-    "metaDescription": "Удаление кластера ADH",
-    "sectionTitle": "Удаление кластера ADH",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
+  "title": "Удаление кластера ADH",
+  "pageDescription": "Удаление кластера ADH",
+  "shortDescription": "Описание действий для удаления кластера",
+  "metaTitle": "Удаление кластера ADH - VK Cloud Solutions",
+  "metaDescription": "Удаление кластера ADH",
+  "sectionTitle": "Удаление кластера ADH",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "3477b2f5-e93c-4839-a5fa-98162becc64b"
 }

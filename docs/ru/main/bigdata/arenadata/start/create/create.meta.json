@@ -1,12 +1,13 @@
 {
-    "title": "Создание кластера",
-    "pageDescription": "Создание кластера ADH",
-    "shortDescription": "Описание процедуры создания кластера",
-    "metaTitle": "Создание кластера ADH - VK Cloud Solutions",
-    "metaDescription": "Создание кластера ADH",
-    "sectionTitle": "Создание кластера ADH",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
+  "title": "Создание кластера",
+  "pageDescription": "Создание кластера ADH",
+  "shortDescription": "Описание процедуры создания кластера",
+  "metaTitle": "Создание кластера ADH - VK Cloud Solutions",
+  "metaDescription": "Создание кластера ADH",
+  "sectionTitle": "Создание кластера ADH",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "8be77a37-c189-4df7-bbd4-6550f8ffa34d"
 }

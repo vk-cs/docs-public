@@ -1,12 +1,13 @@
 {
-    "title": "Лицензии Arenadata Hadoop",
-    "pageDescription": "Разница между лицензиями Community и Enterprise",
-    "shortDescription": "Разница между лицензиями Community и Enterprise",
-    "metaTitle": "Лицензии Arenadata Hadoop - VK Cloud Solutions",
-    "metaDescription": "Разница между лицензиями Community и Enterprise",
-    "sectionTitle": "Лицензии Arenadata Hadoop",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
+  "title": "Лицензии Arenadata Hadoop",
+  "pageDescription": "Разница между лицензиями Community и Enterprise",
+  "shortDescription": "Разница между лицензиями Community и Enterprise",
+  "metaTitle": "Лицензии Arenadata Hadoop - VK Cloud Solutions",
+  "metaDescription": "Разница между лицензиями Community и Enterprise",
+  "sectionTitle": "Лицензии Arenadata Hadoop",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "cd6cb597-dd5d-4873-9aa8-dc201347e6f6"
 }
