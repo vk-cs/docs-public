@@ -26,14 +26,7 @@ The services from the example [Cafe from NGINX](https://github.com/nginxinc/kube
 
    </info>
 
-For this:
-
-1. [Follow the preparatory steps.](#prepare)
-1. [Expand the necessary services.](#deploy-services)
-1. [Deploy the Ingress resource.](#deploy-ingress)
-1. [Check the operation of the services.](#check-operations)
-
-## Preparation <a id="prepare"></a>
+## 1. Preparation
 
 1. [Create a Kubernetes cluster](../../k8s-clusters/create-k8s).
 
@@ -77,7 +70,7 @@ For this:
 
       </info>
 
-## Deploying services <a id="deploy-services"></a>
+## 2. Deploying services
 
 1. Go to the repository directory with the Cafe example:
 
@@ -91,7 +84,7 @@ For this:
    kubectl apply -f ./cafe.yaml
    ```
 
-## Deploy Ingress resource <a id="deploy-ingress"></a>
+## 3. Deploy Ingress resource
 
 1. Go to the repository directory with the Cafe example:
 
@@ -122,7 +115,7 @@ For this:
    kubectl apply -f ./cafe-ingress.yaml
    ```
 
-## Checking the operation of services <a id="check-operations"></a>
+## 4. Checking the operation of services
 
 1. Make sure that the required services and deployments are created:
 
@@ -178,7 +171,7 @@ For this:
 
    This will mean that the Ingress controller is routing traffic according to the Ingress resource settings.
 
-   To do this, run the command by specifying [Ingress Controller IP address](#prepare) instead of `NNN.NNN.NNN.NNN`:
+   To do this, run the command by specifying [Ingress Controller IP address](#1--preparation) instead of `NNN.NNN.NNN.NNN`:
 
    1. For the URL `/tea`:
 
@@ -190,12 +183,12 @@ For this:
 
       <!-- prettier-ignore -->
       ```text
-        Server address: 10.100.82.216:8080
+      Server address: 10.100.82.216:8080
         Server name: tea-6fb46d899f-xvd6f
         Date: 12/Jul/2022:12:53:44 +0000
         URI: /tea
         Request ID: 7b03334b7b3100637aa7e68458c49acd
-        ```
+      ```
 
    1. For the URL `/coffee`:
 
@@ -207,9 +200,9 @@ For this:
 
       <!-- prettier-ignore -->
       ```text
-        Server address: 10.100.82.214:8080
+      Server address: 10.100.82.214:8080
         Server name: coffee-6f4b79b975-6rljv
         Date: 12/Jul/2022:12:55:56 +0000
         URI: /coffee
         Request ID: 5daa1cdb1d0772a2f502e288dec30a3f
-        ```
+      ```
