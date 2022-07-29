@@ -8,5 +8,6 @@
   "markdown": "Connecting to JupyterHub",
   "icon": "",
   "weight": 1,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "edbad91d-ada5-4150-9493-f219828a4647"
 }

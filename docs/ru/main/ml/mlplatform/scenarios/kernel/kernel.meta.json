@@ -1,12 +1,13 @@
 {
-    "title": "Создание индивидуального kernel",
-    "pageDescription": "Описание процедуры создания индивидуального kernel на инстансе JupyterHub.",
-    "shortDescription": "Описание процедуры создания индивидуального kernel",
-    "metaTitle": "Создание индивидуального kernel - VK Cloud Solutions",
-    "metaDescription": "Создание индивидуального kernel JupyterHub",
-    "sectionTitle": "Создание индивидуального kernel",
-    "markdown": "",
-    "icon": "",
-    "weight": 0,
-    "infobarItems": null
-  }
+  "title": "Создание индивидуального kernel",
+  "pageDescription": "Описание процедуры создания индивидуального kernel на инстансе JupyterHub.",
+  "shortDescription": "Описание процедуры создания индивидуального kernel",
+  "metaTitle": "Создание индивидуального kernel - VK Cloud Solutions",
+  "metaDescription": "Создание индивидуального kernel JupyterHub",
+  "sectionTitle": "Создание индивидуального kernel",
+  "markdown": "",
+  "icon": "",
+  "weight": 0,
+  "infobarItems": null,
+  "uuid": "4377b18b-f61d-4f29-aa0c-d6db0d945cf5"
+}
