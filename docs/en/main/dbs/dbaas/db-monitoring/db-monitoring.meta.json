@@ -8,5 +8,6 @@
   "markdown": "Monitor the status of database instances with detailed information about individual host metrics.",
   "icon": "",
   "infobarItems": null,
-  "weight": 5
+  "weight": 5,
+  "uuid": "0df2d1b5-edd7-4422-a515-d8adde3a258f"
 }
