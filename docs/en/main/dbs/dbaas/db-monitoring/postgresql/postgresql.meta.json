@@ -1,0 +1,11 @@
+{
+  "title": "Monitoring PostgreSQL",
+  "pageDescription": "Monitoring the health of PostgreSQL instances with detailed metrics for individual hosts (both masters and replicas).",
+  "shortDescription": "Monitoring deployed PostgreSQL instances",
+  "metaTitle": "PostgreSQL Monitoring - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Monitoring PostgreSQL",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null
+}
