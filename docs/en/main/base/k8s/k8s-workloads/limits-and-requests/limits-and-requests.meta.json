@@ -1,0 +1,12 @@
+{
+  "title": "Pod Resource Limit",
+  "pageDescription": "When allocating pods to nodes, kube-scheduler checks the requests and limits for containers and the current capacity of the nodes.",
+  "shortDescription": "",
+  "metaTitle": "Pod Resource Limit - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Pod resource limit",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1
+}
