@@ -8,5 +8,6 @@
   "markdown": "This section describes how to work with the ML Platform service, create and work with JupyterHub instances.",
   "icon": "",
   "weight": 16,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "0261e568-6e32-47f8-8184-13dfbb04a298"
 }
