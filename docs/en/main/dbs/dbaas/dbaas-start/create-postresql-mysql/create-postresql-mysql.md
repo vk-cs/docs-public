@@ -1,38 +1,45 @@
-Для создания базы перейдите в раздел личного кабинета «[Инстансы баз данных](https://mcs.mail.ru/app/services/databases/list/)» и нажмите кнопку «Создать базу данных». Затем выберите:
+To create a database, go to the "[Database instances](https://mcs.mail.ru/app/services/databases/list/)" section of your personal account and click the "Create database" button. Then select:
 
-- Тип и версию базы данных.
-- Конфигурацию: Single, Master-Slave или Кластер. Для тестирования возможностей мы рекомендуем конфигурацию Single.
+- Database type and version.
+- Configuration: Single, Master-Replica or Cluster. For feature testing, we recommend the Single configuration.
 
-## Поддерживаемые версии
+## Supported Versions
 
-VK CS предоставляет все актуальные версии БД.
+VK CS provides all current database versions.
 
-При выборе типа базы данных MySQL мы рекомендуем использовать версию 8.0.
+When choosing the MySQL database type, we recommend using version 8.0.
 
-Затем укажите:
+Then specify:
 
-- Имя инстанса базы данных — имя виртуальной машины, по которому его можно однозначно идентифицировать.
-- Тип виртуальной машины — конфигурация ресурсов (количество виртуальных процессоров и оперативной памяти).
-- Зону доступности — размещение виртуальной машины в одном из дата-центров.
-- Тип диска — HDD, SSD или High-IOPS SSD.
-- Размер диска, GB — рекомендуем устанавливать минимальное значение 100 Гб.
-- Максимальный размер диска, GB —  включите автомасштабирование и выставите максимальный размер диска. Это дает возможность увеличить размер диска на заданный объем, в случае переполнения тома инстанса. Рекомендуем ставить не менее 20% от текущего объема.
-- Сеть — выберите уже существующую сеть или создайте новую.
-- Настройки Firewall — правила, по которым будет ходить трафик (доступ только по SSH, доступ по WWW или другие нужные конфигурации правил).
-- Ключ для доступа по SSH — выберите уже существующий SSH ключ или создайте  новый.
-- Периодичность резервного копирования — вы можете выбрать периодичность в каждые 3, 12, 24 часа или отключить резервное копирование.
+- Database Instance Name - The name of the virtual machine by which it can be uniquely identified.
+- Virtual machine type - resource configuration (number of virtual processors and RAM).
+- Availability zone - placement of a virtual machine in one of the data centers.
+- Disk type - HDD, SSD or High-IOPS SSD.
+- Disk size, GB - we recommend setting the minimum value to 100 GB.
+- Maximum disk size, GB - enable autoscaling and set the maximum disk size. This makes it possible to increase the size of the disk by a given amount, in case the volume of the instance is full. We recommend betting at least 20% of the current volume.
+- Network - select an existing network or create a new one.
+- Firewall settings - rules by which traffic will go (access only via SSH, access via WWW or other necessary rule configurations).
+- Key for SSH access - select an existing SSH key or create a new one.
+- Backup frequency - you can choose the frequency of every 3, 12, 24 hours or disable backup.
 
-На следующем шаге задайте логин и пароль доступа к базе данных и нажмите кнопку «Создать базу данных».
+<info>
 
-После создания база данных появится в общем списке инстансов и над ней будут доступны операции через контекстное меню.
+For PostgreSQL in "Single" or "Master-Replica" configurations, [monitoring](../db-monitoring/postgresql) is enabled by default. If necessary, this option can be disabled.
 
-![](./assets/1598378191420-1598378191420.png)
+</info>
 
-Если кликнуть на название базы данных, то можно попасть в её карточку с дополнительными параметрами, в том числе с отображением информации, как к этой базе подключиться.
+At the next step, set the login and password for accessing the database and click the "Create database" button.
 
-![](./assets/1598378263506-1598378263506.png)
+After creation, the database will appear in the general list of instances and operations will be available on it through the context menu.
 
-> **Важно**
-> При создании кластера PostgreSQL/PostgresPRO мы рекомендуем использовать конфигурацию не ниже, чем: 4 ядра CPU, 8 Гб оперативной памяти.
+![](./assets/screen178363.png)
 
-Подробнее о производительности в разных конфигурациях [читайте в этой статье](https://mcs.mail.ru/help/ru_RU/dbaas-start/postgresql-disk-performance).
+If you click on the name of the database, you can get into its card with additional parameters, including displaying information on how to connect to this database.
+
+![](./assets/screen174648.png)
+
+> **Important**
+>
+> When creating a PostgreSQL/PostgresPRO cluster, we recommend using a configuration no lower than: 4 CPU cores, 8 GB of RAM.
+
+More details about performance in different configurations [read this article](https://mcs.mail.ru/help/ru_RU/dbaas-start/postgresql-disk-performance).
