@@ -6,7 +6,7 @@
 
 Этот манифест установит на каждый узел кластера локальный DNS-сервер, который будет синхронизироваться с апстримным сервером по протоколу TCP.
 
-Файл конфигурации можно скачать по этой <a href="/docs/_docs/ru/main/base/k8s/k8s-network/k8s-localdnscache/assets/config.yaml" download>ссылке</a>.
+Файл конфигурации можно скачать по этой [ссылке](/docs/_docs/ru/main/base/k8s/k8s-network/k8s-localdnscache/assets/config.yaml "download").
 
 ### Применить конфигурацию
 
