@@ -8,7 +8,9 @@ OpenVPN is a system that allows you to create encrypted tunnels between computer
 4. Select a key for SSH access.
 
 <warn>
+
 Make sure you have the SSH key you created and saved on your computer earlier. If not, then select "Create a new key". A file with the *.pem extension will be downloaded to your computer.
+
 </warn>
 
 5. Click Next Step.
@@ -38,7 +40,7 @@ For security, we recommend that you change your password immediately.
 
 First you need to connect to the instance with the OpenVPN server via SSH. "SSH access to Openvpn" is specified in the application options, copy it and run the command:
 
-```
+```bash
 ssh -i /path/to/key ubuntu@addressofserver
 ```
 
@@ -46,7 +48,7 @@ ssh -i /path/to/key ubuntu@addressofserver
 
 To change the password of an existing user, use the command:
 
-```
+```bash
 sudo passwd client_name
 ```
 
@@ -56,13 +58,14 @@ Next, enter the new password twice.
 
 To add a new user, use the command:
 
+```bash
+sudo useradd newuser
 ```
-sudo useradd newuser -p password
-```
+Change the password with the command in the paragraph above.
 
 Be sure to add the new user to the openvpn group by running the command:
 
-```
+```bash
 sudo usermod -a -G openvpn newuser
 ```
 
@@ -70,7 +73,7 @@ sudo usermod -a -G openvpn newuser
 
 To delete a user, use the command:
 
-```
+```bash
 sudo userdel usertodelete
 ```
 
