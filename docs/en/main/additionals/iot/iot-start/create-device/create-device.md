@@ -106,6 +106,6 @@ To instantiate your device, follow these steps:
 6. Repeat the previous step.
 7. Click the Save button to create the device.
 
-After creating a virtual copy of the device, you must specify the settings for connecting the device to the platform. Connecting the device to the platform is provided by specialized software - an agent. Read about how to create an agent [here](https://mcs.mail.ru/docs/ru/additionals/IoT/IoT-start/connect-device).
+After creating a virtual copy of the device, you must specify the settings for connecting the device to the platform. Connecting the device to the platform is provided by specialized software - an agent. Read about how to create an agent [here](/docs/additionals/iot/agents).
 
 Despite the fact that the agent functionality emulator is built into the device firmware, the agent still needs to be configured for your device in the platform's administrative console.
