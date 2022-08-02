@@ -19,11 +19,11 @@ The cloud is configured once, while there can be many target projects.
 
 ## Creating a Hystax Acura user account and adding a VK CS target project
 
-To create a Hystax Acura user account, go to the [service page](https://mcs.mail.ru/disaster-recovery/) and click the "Submit Request" button.
+To create a Hystax Acura user account, go to the [service page](https://mcs.mail.ru/disaster-recovery/) and click the "Submit Request" button. The form for filling out will appear.
 
 Enter your contact details: full name, your valid email, phone number.
 
-In response to your request, the manager will request the following information:
+Fill in the following information:
 
 |Parameter| Value|
 |---|---|
@@ -39,4 +39,4 @@ In response to your request, the manager will request the following information:
 
 These data can be obtained in the personal account of VK CS by going to the "Project settings" in the "API keys" tab.
 
-Based on this data, our specialists will create an account on the Hystax Acura controller. Log in with the username and password you received. Next, our manager will ask you to provide user data for validation in the cloud. You can provide data for a user that already exists in the project, but we recommend creating a separate user for the infrastructure migration task.
+After submitting the form, the manager will request authorization for validation. Based on this data, our specialists will create an account on the Hystax Acura controller. Log in using the username and password you received to make sure that the account is active.
