@@ -1,69 +1,121 @@
-VK CS team provides technical support to customers using VK CS services.
+The VK CS team provides technical support to clients using VK CS services.
 
-## Methods of handling
+## Methods of treatment
 
-You can submit an appeal to technical support through the following available communication channels:
+You can apply to technical support through the following available communication channels:
 
-<table style="width: 91%; margin-right: calc(9%);"><tbody><tr><td style="width: 34.1772%; background-color: rgb(239, 239, 239);"><em>Channel</em></td><td style="width: 41.3624%; background-color: rgb(239, 239, 239);"><em>Information</em></td><td style="width: 25.2589%; background-color: rgb(239, 239, 239);"><em>Opening</em> <em>hours</em></td></tr><tr><td style="width: 34.1772%;">mail</td><td style="width: 41.3624%;"><a href="mailto:support@mcs.mail.ru">support@mcs.mail.ru</a></td><td style="width: 25.2589%;">around the clock</td></tr><tr><td style="width: 34.1772%;">Telegram chat</td><td style="width: 41.3624%;"><a href="https://t.me/vkcs_assistant" title="">https://t.me/vkcs_assistant</a></td><td style="width: 25.2589%;">around the clock</td></tr><tr><td style="width: 34.1772%;">Facebook</td><td style="width: 41.3624%;"><a href="https://fb.me/Mail.RuCloudSolutions/">https://fb.me/Mail.RuCloudSolutions/</a></td><td style="width: 25.2589%;">around the clock</td></tr><tr><td style="width: 34.1772%;">Vkontakte</td><td style="width: 41.3624%;"><a href="https://vk.com/mrgcloud">https://vk.com/mrgcloud</a></td><td style="width: 25.2589%;">around the clock</td></tr><tr><td style="width: 34.1772%;">Phone</td><td style="width: 41.3624%;"><a href="tel://+7(499)350-97-03" title="">+7 (499) 350-97-03</a></td><td style="width: 25.2589%;">around the clock</td></tr></tbody></table>
+| Channel | Information | Working time<br> |
+|--------------|-----------------------------|-------------------|
+| Mail | support@mcs.mail.ru | around the clock |
+| Telegram bot<br>(for registration of applications)| https://t.me/vkcs_assistant | around the clock |
+| Phone | +7 (499) 350-97-03 | around the clock |
 
-**Advice**
+<note>
 
-To speed up the processing of your request, inform the technical support about your account information: login, project name and describe the issue in as much detail as possible.
+To speed up the processing of the request, inform the technical support of the account details: login, project name and describe the issue in as much detail as possible.
 
 If possible, attach any available diagnostic information: screenshots, logs and other materials.
 
+</note>
+
 ## SLA
 
-The response time and solution of the request depends on the urgency and impact of the request on the information resources of clients. Below is a table of response times and solutions for all types of requests:
+The response time and resolution of the appeal depends on the urgency and impact of the request on the information resources of the clients. Below are tables of response times and solutions for all types of appeals:
 
-<table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(1%); width: 99%;" width="517"><tbody><tr><td class="xl64" height="38" rowspan="2" style="width: 30.3797%; text-align: center;" width="22.05029013539652%">Link</td><td class="xl64" rowspan="2" style="width: 13.5444%; text-align: center;" width="22.05029013539652%">Answer</td><td class="xl66" colspan="4" style="text-align: center;" width="55.89941972920696%">Decision</td></tr><tr><td class="xl63" height="19" style="text-align: center;">Critical</td><td class="xl63" style="text-align: center;">Tall</td><td class="xl63" style="text-align: center;">Middle</td><td class="xl63" style="text-align: center;">Low</td></tr><tr><td class="xl63" height="19" style="width: 30.3797%;">mail</td><td class="xl63" style="width: 13.5444%;">1 hour</td><td class="xl63">2 hours</td><td class="xl63">8 ocloc'k</td><td class="xl63">12 hours</td><td class="xl63">48 hours</td></tr><tr><td class="xl63" height="19" style="width: 30.3797%;">Feedback form</td><td class="xl63" style="width: 13.5444%;">1 hour</td><td class="xl63">2 hours</td><td class="xl63">8 ocloc'k</td><td class="xl63">12 hours</td><td class="xl63">48 hours</td></tr><tr><td class="xl63" height="19" style="width: 30.3797%;">Telegram chat</td><td class="xl63" style="width: 13.5444%;">15 minutes</td><td class="xl63">2 hours</td><td class="xl63">4 hours</td><td class="xl63">8 ocloc'k</td><td class="xl63">48 hours</td></tr><tr><td class="xl63" height="19" style="width: 30.3797%;">Facebook</td><td class="xl63" style="width: 13.5444%;">15 minutes</td><td class="xl63">2 hours</td><td class="xl63">8 ocloc'k</td><td class="xl63">12 hours</td><td class="xl63">48 hours</td></tr><tr><td style="width: 30.3797%;">Vkontakte</td><td style="width: 13.5444%;">15 minutes</td><td>2 hours</td><td>8 ocloc'k</td><td>12 hours</td><td>48 hours</td></tr></tbody></table>
+### Classification of incidents
 
-## Support competencies
+#### Incident classification table
 
-The list of questions that technical support can solve includes:
+| The severity of the<br>incident| Description of the problem |
+|--------------------------------|------------------------------------------------------------------------|
+| Critical|- The Customer's business processes are blocked.<br> (Services are not working / are not deployed / are operating in a significant degradation mode).<br>- The detected problem potentially jeopardizes the confidentiality,<br>availability and integrity of the Customer's information.<br>- The detected problem leads to a violation of legal requirements regarding the protection of confidential information. |
+| High |The customer's business processes are functioning with significant degradation.<br>(Significant degradation / slowdown of components and/or Services.)|
+| Medium |The customer's business processes are functioning normally.<br>Minor degradation/slowdown of components or Services.<br>The services continue to function without restrictions.|
+| Low|Detection of errors and problems that do not lead to stopping or<br>degradation of components and Services.|
 
-- Architectural consulting on the use of VK CS services
-- Diagnosing problems with the work of resources on the project
-- Account recovery issues
+The types of requests **Service Request** and **Request for Information** are equated to incidents of low importance.
+
+#### Query Description table
+
+| Name| Description |
+|-----------------------------|---------------------------------------------------------------|
+| Service Request| Requests to support the functioning of the services.<br> (Creating/changing/enabling/disabling services, settings, entities).|
+| Request for Information| Consultation on the settings and operation of the services<br>within the framework of technical support.|
+
+#### Reaction time
+
+The response time to the appeal is no more than 60 minutes.
+
+<info>
+
+The countdown of the response time to the appeal begins from the moment the Customer is notified of his registration and assignment of an identification number until the moment of the first response from the technical support service.
+
+</info>
+
+#### Solution statistics table
+
+| Degree of<br>importance| Execution time|
+|----------------------|----------------------------------------------|
+| Critical| 95% of critical priority requests are solved in 2h.|
+| High| 95% of high priority requests are solved in 12h.|
+| Medium| 95% of medium priority requests are solved in 24h.|
+| Low| 95% of low priority requests are resolved in 48 hours.|
+
+The table shows the astronomical clock.
+
+## Service readiness stages
+
+| Stages | Description |
+|----------------------|----------------------------------------------------------------------------------------|
+| Preview | Services at the Preview stage are suitable for developers who are ready to use them in the development of their applications or in a test environment.<br>The Service Level Agreement (SLA) does not apply to Preview services,<br>and their use is not charged.|
+| General Availability | Public versions of the services are available to all users<br> and can be fully used to solve problems.<br>These services are subject to billing and a Service level agreement (SLA).|
+
+## Support Competencies
+
+The list of issues that technical support can solve includes:
+
+- Architectural consultations on the use of VK CS services
+- Diagnostics of problems in the operation of resources on the project
+- Issues of restoring access to the account
 - Informing about the work of billing
-- Troubleshooting recommendations
-- Assistance in setting up VK CS services
+- Recommendations for troubleshooting
+- Help in setting up VK CS services
 
 **Note**
 
 The VK CS technical support team does not solve problems related to software development, debugging its own program code, as well as consulting on the work of third-party solutions.
 
-## Technical support notifications
+## Notifications from technical support
 
-The support team informs customers about failures that have occurred with a service or resource in the customer's account, and also provides recommendations for eliminating potential problems in the customer's project.
+The support team informs clients about failures that have occurred with the service or resource in the client's account, and also provides recommendations for eliminating potential problems in the client's project.
 
-The number of notifications also includes informing project owners about security threats or other cases that may lead to data loss or interruptions in access to VK CS services.
+Notifications also include informing project owners about security threats or other cases that may lead to data loss or interruptions in access to VK CS services.
 
 ## Individual support
 
-The list of services of the VK CS platform includes the ability to provide priority support (Managed Services).
+The list of VK CS platform services includes the possibility of providing priority support (Managed Services).
 
-This service includes extended support on all issues of implementation, maintenance and troubleshooting of client projects:
+This service includes extended support for all issues of implementation, maintenance and troubleshooting in the client's projects:
 
-System administration 24/7
+24/7 system administration
 
 - Outsourcing of IT infrastructure and cloud services
 - Technical support
-- Monitoring and maintaining availability
+- Monitoring and availability support
 - Incident response
-- Disaster recovery
+- Crash recovery
 
-Audit and Consulting
+Audit and consulting
 
-- Architecture Consulting
+- Architecture consulting
 - Infrastructure audit
 - Performance audit
 
 Configuration and implementation
 
-- Monitoring setup
-- Configuring backup, high availability (HA), disaster recovery systems
-- PaaS Software Updates
+- Monitoring settings
+- Setting up backup, high availability (HA), crash recovery systems
+- Software update of PaaS services
 - Migration of data and information systems
 
-You can find out more about the service and leave a request for calculating the cost at the link [https://mcs.mail.ru/managed-services/](https://mcs.mail.ru/managed-services/)
+To learn more about the service and submit a request for cost calculation, follow the link [https://mcs.mail.ru/managed-services /](https://mcs.mail.ru/managed-services /)
