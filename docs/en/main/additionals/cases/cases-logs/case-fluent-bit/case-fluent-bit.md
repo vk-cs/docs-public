@@ -2,16 +2,16 @@ To unify the collection of logs from nodes with docker-runtime and crio-runtime,
 
 ## Settings file values.yaml
 
-For the Helm environment, you should use the "values.yaml" file from the attachment - the necessary filters and parsers are already configured in it.
+As values.yaml for the helm, you should use the file from the link below - the necessary filters and parsers are already configured in it.
 
-![](./assets/values.yaml)
+[File values.yaml](./assets/values.yaml "download").
 
-In the attached values.yaml file, you need to correct the parameters for [OUTPUT] - in the example, PostgreSQL is used for storing logs with two tables in one database:
+In the attached values.yaml, you need to correct the parameters for [OUTPUT] - in the example, PostgreSQL is used for storing logs with two tables in one database:
 
 - Table fluentbit_21_host - for storing logs of host services (kublet.service, docker.service, crio.service)
-- Fluentbit_21_kube table - stores logs directly from pod logs.
+- Table fluentbit_21_kube - stores logs directly from pod logs.
 
-Similarly, logs can be saved, for example, in Elasticsearch. For a complete list of supported storage types, see [link.](https://docs.fluentbit.io/manual/pipeline/outputs)
+In a similar way, logs can be saved, for example, in Elasticsearch. For a complete list of supported storage types, see [link.](https://docs.fluentbit.io/manual/pipeline/outputs)
 
 The separation is intentional to show the possibility of using different tables in the database (indexes in Elasticsearch).
 
@@ -68,4 +68,4 @@ labels:
 }
 ```
 
-You can find various parsers available out of the box here - https://github.com/fluent/fluent-bit/blob/master/conf/parsers.conf
+Various parsers available out of the box can be found here - https://github.com/fluent/fluent-bit/blob/master/conf/parsers.conf
