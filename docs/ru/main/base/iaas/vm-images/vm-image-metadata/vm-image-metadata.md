@@ -40,7 +40,7 @@ openstack image set
 os_type="windows";
 os_distro="win2k16" -- Значение `win2k16` выбрано для примера. См. "Выбор значения для os_distro";
 os_admin_user="Admin" -- Указывать только если пользователь внутри гостевой ОС отличается от стандартного;
-os_require_quiesce="true";
+os_require_quiesce="yes";
 hw_vif_model="virtio" -- Указывать только если внутри гостевой ОС установлены virtio драйвера.
 ```
 
