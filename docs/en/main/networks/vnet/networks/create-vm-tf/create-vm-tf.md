@@ -1,203 +1,210 @@
-Данная статья расскажет, как создать в VK CS виртуальную машину через Terraform.
+This article will tell you how to create a virtual machine in VK CS through Terraform.
 
-Предполагаем, что вы уже установили и подготовили Terraform по этой [инструкции](https://mcs.mail.ru/help/iaas-api/infrastructure-terraform).
+We assume that you have already installed and prepared Terraform according to this [instruction](https://mcs.mail.ru/docs/ru/additionals/terraform/terraform-installation).
 
-### Важно
+<warn>
 
-**На момент написания статьи актуальная версия Terraform - 0.12.24.**
+At the time of this writing, the current version of Terraform is 0.12.24.
 
-**C помощью Terraform нельзя создать виртуальную машину с указанием типа диска. Это обусловлено версионированием API OpenStack. Единственная опция — создавать диск заранее и после этого создавать виртуальную машину.**
+Terraform cannot create a virtual machine by specifying a disk type. This is due to the versioning of the OpenStack API. The only option is to create the disk beforehand and then create the virtual machine afterwards.
 
-## Создание конфигурации
+</warn>
 
-Опишем конфигурацию виртуальной инфраструктуры. Для этого в директории с конфигурационными файлами terraform создадим файл main.tf, и добавим в него следующее:
+## Create configuration
 
-**Описание ключевой пары**
+Let us describe the configuration of the virtual infrastructure. To do this, in the directory with the terraform configuration files, create the main.tf file, and add the following to it:
 
-Данный сегмент кода отвечает за ssh ключ:
+#### Key pair description
+
+This code segment is responsible for the ssh key:
 
 ```
-resource "openstack\_compute\_keypair\_v2" "ssh" {
-  # Название нашего ssh ключа,
-  # Данный ключ будет отображаться в разделе
-  # Облачные вычисления -> Ключевые пары
-  name = "terraform\_ssh\_key"
+resource "openstack_compute_keypair_v2" "ssh" {
+  # The name of our ssh key,
+  # This key will be displayed in the section
+  # Cloud Computing -> Key Pairs
+  name="terraform_ssh_key"
 
-  # Путь до публичного ключа.
-  # В нашем случае он лежит рядом с main.tf .
-  public\_key = file("${path.module}/terraform.pem.pub")
+  # Path to the public key.
+  # In our case, it lies next to main.tf .
+  public_key = file("${path.module}/terraform.pem.pub")
 }
 ```
 
-**Описание группы безопасности**
+#### Security group description
 
-Теперь мы создадим security group, которую добавим к создаваемой ВМ, и разрешим соединение на порты 22 и 80, также дополнительно разрешим icmp трафик с любого источника.
+Now we will create a security group, which we will add to the created VM, and allow connection to ports 22 and 80, and additionally allow icmp traffic from any source.
 
 ```
-resource "openstack\_compute\_secgroup\_v2" "rules" {
-  name = "terraform\_\_security\_group"
+resource "openstack_compute_secgroup_v2" "rules" {
+  name = "terraform__security_group"
   description = "security group for terraform instance"
   rule {
-    from\_port = 22
-    to\_port = 22
-    ip\_protocol = "tcp"
-    cidr = "0.0.0.0/0"
+    from_port = 22
+    to_port = 22
+    ip_protocol="tcp"
+    cidr="0.0.0.0/0"
   }
   rule {
-    from\_port = 80
-    to\_port = 80
-    ip\_protocol = "tcp"
-    cidr = "0.0.0.0/0"
+    from_port = 80
+    to_port = 80
+    ip_protocol="tcp"
+    cidr="0.0.0.0/0"
   }
   rule {
-    from\_port = -1
-    to\_port = -1
-    ip\_protocol = "icmp"
-    cidr = "0.0.0.0/0"
+    from_port = -1
+    to_port = -1
+    ip_protocol="icmp"
+    cidr="0.0.0.0/0"
   }
 }
 ```
 
-**Описание блочного устройства**
+#### Block device description
 
-Данный сегмент отвечает за создание диска.
+This segment is responsible for creating the disk.
 
 ```
-resource "openstack\_blockstorage\_volume\_v2" "volume" {
-  # Название диска.
-  name = "storage"
+resource "openstack_blockstorage_volume_v2" "volume" {
+  # Disc title.
+  name="storage"
 
-  # Тип создаваемого диска.
-  volume\_type = "dp1"
+  # The type of disk being created.
+  volume_type="dp1"
 
-  # Размер.
-  size = "10"
+  # The size.
+  size="10"
 
-  # uuid индикатор образа, в примере используется Ubuntu-18.04-201910
-  image\_id = "cd733849-4922-4104-a280-9ea2c3145417"
+  # uuid image indicator, example uses Ubuntu-18.04-201910
+  image_id = "cd733849-4922-4104-a280-9ea2c3145417"
 }
 ```
 
-Доступные типы дисков можно посмотреть с помощью команды OpenStack CLI:
+Available disk types can be viewed using the OpenStack CLI command:
 
 ```
-openstack volume type list
+open stack volume type list
 ```
 
-На момент написания статьи доступны:
+At the time of writing, the following are available:
 
-<table style="width: 100%;"><tbody><tr><td style="width: 50.0000%;"><strong>volume_type</strong></td><td style="width: 50.0000%;"><strong>Описание</strong></td></tr><tr><td style="width: 50.0000%;"><p>ko1-high-iops, dp1-high-iops</p></td><td style="width: 50.0000%;">диски типа high-IOPS-SSD в зонах MS1 и DP1 соответственно</td></tr><tr><td style="width: 50.0000%;"><p>ko1-ssd, dp1-ssd</p></td><td style="width: 50.0000%;">диски типа SSD в зонах MS1 и DP1 соответственно</td></tr><tr><td style="width: 50.0000%;"><p>ssd</p></td><td style="width: 50.0000%;">геораспределенный SSD</td></tr><tr><td style="width: 50.0000%;"><p>ms1, dp1</p></td><td style="width: 50.0000%;">диски типа hdd в зонах MS1 и DP1 соответственно</td></tr><tr><td style="width: 50.0000%;">ceph</td><td style="width: 50.0000%;">геораспределенный HDD</td></tr></tbody></table>
+| volume_type | Description |
+|------------------------------|-------------------- -----------------------------------------|
+| ko1-high-iops, dp1-high-iops | high-IOPS-SSDs in MS1 ​​and DP1 zones, respectively |
+| ko1-ssd, dp1-ssd | SSD drives in MS1 ​​and DP1 zones, respectively |
+| ssd | geo-distributed SSD |
+| ms1, dp1 | disks of type hdd in zones MS1 and DP1 respectively |
+| ceph | geo-distributed HDD |
 
-Доступные образы и их UUID можно посмотреть командой OpenStack CLI:
-
-```
-openstack image list
-```
-
-**Описание флейвора (размера инстанса)**
-
-```
-  # Какой размер используем для инстанса (соотношение vCPU - RAM).
-  flavor\_name = "Basic-1-1-10"
-```
-
-Получить список доступных конфигураций можно через CLI, командой \`openstack flavor list\`.
-
-При выборе ориентируйтесь на первые две цифры, они задают кол-во vCPU и RAM.
-
-**Итоговый вид конфигурации**
-
-Собираем все воедино:
+Available images and their UUIDs can be viewed using the OpenStack CLI command:
 
 ```
-resource "openstack\_compute\_instance\_v2" "instance" {
-  # Название создаваемой ВМ.
-  name = "terraform"
+open stack image list
+```
 
-  # Имя и uuid образа с ОС.
-  image\_name = "Ubuntu-18.04-201910"
-  image\_id = "cd733849-4922-4104-a280-9ea2c3145417"
+#### Description of flavor (instance size)
 
-  # Размер инстанса.
-  flavor\_name = "Basic-1-1-10"
+```
+# What size we use for the instance (ratio vCPU - RAM).
+flavor_name = "Basic-1-1-10"
+```
 
-  # Публичный ключ, который мы описывали выше.
-  key\_pair = openstack\_compute\_keypair\_v2.ssh.name
+You can get a list of available configurations via the CLI, using the \`openstack flavor list\` command.
 
-  # Указываем, что при создании использовать config drive.
-  # Без этой опции ВМ не будет создана корректно в сетях без DHCP
-  config\_drive = true
+When choosing, be guided by the first two digits, they set the number of vCPU and RAM.
 
-  # Присваиваем security group для нашей vm.
-  security\_groups = \[
-   openstack\_compute\_secgroup\_v2.rules.name
-  \]
+#### Final configuration view
 
-  # В данном примере мы используем сеть ext-net.
+Putting it all together:
+
+```
+resource "openstack_compute_instance_v2" "instance" {
+  # The name of the VM to be created.
+  name="terraform"
+
+  # Name and uuid of the OS image.
+  image_name = "Ubuntu-18.04-201910"
+  image_id = "cd733849-4922-4104-a280-9ea2c3145417"
+
+  # Instance size.
+  flavor_name = "Basic-1-1-10"
+
+  # The public key we described above.
+  key_pair = openstack_compute_keypair_v2.ssh.name
+
+  # Specify that when creating, use config drive.
+  # Without this option, the VM will not be created correctly on networks without DHCP
+  config_drive=true
+
+  # Assign a security group to our vm.
+  security_groups = [
+   openstack_compute_secgroup_v2.rules.name
+  ]
+
+  # In this example, we are using an ext-net network.
   network {
-    name = "ext-net"
+    name="extnet"
   }
 
-  # Блочное устройство
-  block\_device {
-    uuid = openstack\_blockstorage\_volume\_v2.volume.id
-    boot\_index = 0
-    source\_type = "volume"
-    destination\_type = "volume"
-    delete\_on\_termination = true
+  # Block device
+  block_device {
+    uuid = openstack_blockstorage_volume_v2.volume.id
+    boot_index = 0
+    source_type="volume"
+    destination_type = "volume"
+    delete_on_termination = true
   }
 }
 ```
 
-**Дополнительные опции**
+#### Additional options
 
-После создания ВМ начнем подготовку ее к использованию. В данном примере показано удаленное подключение и выполнение cli команд.
+After creating the VM, we will begin preparing it for use. This example shows remote connection and execution of cli commands.
 
 ```
   provisioner "remote-exec" {
-    # Сначала описываем соединение
+    # First, describe the connection
     connection {
-      # Данный адрес мы получаем из compute node при создании вм.
-      # Сам же адрес получаем из ext-net.
-      host = openstack\_compute\_instance\_v2.instance.access\_ip\_v4
+      # We get this address from the compute node when creating the vm.
+      # The address itself is obtained from ext-net.
+      host=openstack_compute_instance_v2.instance.access_ip_v4
 
-      # Пользователь, из под которого нужно запустить ssh соединение.
-      user = "ubuntu"
+      # The user under which to start the ssh connection.
+      user="ubuntu"
 
-      # Приватный ключ, который будет использован.
-      # В нашем примере он лежит рядом с main.tf
-      private\_key = file("${path.module}/terraform.pem")
+      # The private key to be used.
+      # In our example, it lies next to main.tf
+      private_key = file("${path.module}/terraform.pem")
     }
 
-    # cli команды, которые необходимо использовать.
-    # Не забывайте, что это array type и необходимо вводить full text
-    inline = \[
+    # cli commands to use.
+    # Don't forget that this is an array type and you need to enter full text
+    inline=[
       "sudo apt-get update",
       "sudo apt-get -y install nginx",
-    \]
-
+]
 
 ```
 
-Также можно выводить артефакты, например, IP адрес сети ext-net, который получила ВМ. Для этого добавим следующее:
+You can also display artifacts, for example, the IP address of the ext-net network that the VM received. To do this, add the following:
 
 ```
 output "instances" {
-  value = "${openstack\_compute\_instance\_v2.instance.access\_ip\_v4}"
+  value = "${openstack_compute_instance_v2.instance.access_ip_v4}"
 }
 ```
 
-## **Развертывание инфраструктуры**
+## Deploy infrastructure
 
-Убедившись, что конфигурация развертывания составлена верно, выполним команду:
+After making sure that the deployment configuration is correct, run the command:
 
 ```
 terraform plan
 ```
 
-Произойдет тестовое подключение,   проверка на доступность ресурсов,  проверка самого .tf синтаксиса, и будет выведен список изменений (add, change, destroy).
+There will be a test connection, a check for the availability of resources, a check of the .tf syntax itself, and a list of changes (add, change, destroy) will be displayed.
 
-В случае, если тестовое подключение успешно завершено, выполните для развертывания конфигурации:
+If the test connection is successfully completed, run to deploy the configuration:
 
 ```
 terraform apply
