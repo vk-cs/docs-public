@@ -8,5 +8,6 @@
   "markdown": "Kubernetes cluster has several pre-configured storage classes integrated with VK Cloud based on the Cinder CSI interface. Learn how to manage these classes and create new ones based on them.",
   "icon": "",
   "infobarItems": null,
-  "weight": 0
+  "weight": 0,
+  "uuid": "2180f26e-cec5-4061-a89b-6c4cd5ca0610"
 }
