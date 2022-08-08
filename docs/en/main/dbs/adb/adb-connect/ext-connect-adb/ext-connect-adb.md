@@ -1,16 +1,15 @@
 ## Connecting to an instance
 
-You can see how to connect to the database by clicking on the instance name in the list or by hovering over the information icon.
+<warn>
 
-![](./assets/1599678281593-1599678281593.png)
+**Attention**
 
-The "Connection parameters" section contains code examples from popular languages.
+Connecting externally requires an ADB instance with external IP enabled. You can learn more about enabling an external IP address on the [“Creating a Cluster”](../../adb-start/create-adb/) page.
 
-When using examples, replace macros <DATABASE>, <USERNAME>, <PASSWORD> with actual values:
+<warn>
 
-- <DATABASE> is the name of the database specified during creation.
-- <USERNAME> - username (specified during creation).
-- <PASSWORD> - user password (specified during creation).
-- <HOST> is the IP address of the virtual machine where the database is located. In the example above, this is 185.241.193.14, which is the external IP.
+To connect to an ADB instance, use the [database instance connection instructions](../../../dbaas/dbaas-start/db-connect/).
 
-Additional information can be found in the documentation for the connector used (a connector is an entity used to connect to a database).
+When using the examples, replace `<HOST>` with the external IP address of the instance.
+
+Additional information can be found in the documentation for the connector used (a connector is an entity that connects to a database).

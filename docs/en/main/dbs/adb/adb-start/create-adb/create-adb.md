@@ -1,25 +1,29 @@
-To create a database, go to the ["Analytical Databases" section of your personal](https://mcs.mail.ru/app/services/analytic-databases/) account, select "Arenadata DB" and "Create Database":
+To create a database, go to the [section of your personal account "Analytical databases"](https://mcs.mail.ru/app/services/analytic-databases/), select the license version "Arenadata DB" and click "Create database".
 
-![](./assets/1599676662889-1599676662889.png)
+In the next step, select the desired cluster type, ArenadataDB instance version, and instance configuration.
 
-![](./assets/1599676647087-1599676647087.png)
+The Cluster configuration is a cluster with synchronous data replication. It is used when there are increased requirements for the reliability and fault tolerance of the system.
 
-Cluster is a cluster with synchronous data replication. It is used when there are increased requirements for system reliability and fault tolerance.
+In the following steps, select the required configuration options:
 
-In the next steps, select the required configuration options:
+| Parameter name | Description |
+|------------------------------------|-------------------- ------------------------|
+| Cluster name | Leave the default name or enter your name in Latin characters.|
+| Amount of uncompressed clean data | The maximum size of the database. |
+| Node configuration | CPU / RAM / HDD (SSD) master configuration.<br>A replica/slave will be created automatically with the same configuration. |
+| Use reservation | Creation of redundant redundant nodes for fault tolerance. |
+| Connect monitoring node ||
+| Disk type | For best performance, we recommend choosing SSD or Hi-IOPS SSD.|
+| Network | Leave as default or choose your own private network.|
+| Assign external IP | Assign an external IP to the cluster to be able to connect to the cluster from external networks. |
+| Accessibility zone | specify the availability zone (we recommend DP1 or MS1).|
 
-![](./assets/1599676750064-1599676750064.png)
+In the next step, set the database initialization parameters:
 
-<table style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; background-color: rgb(255, 255, 255); border: none; empty-cells: show; max-width: 100%; width: 690px; margin-bottom: 20px; color: rgb(56, 76, 96); font-family: &quot;Open Sans&quot;, Helvetica, &quot;Lucida Grande&quot;, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><tbody style="box-sizing: border-box;"><tr style="box-sizing: border-box; user-select: none; line-height: 32px;"><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text; background-color: rgb(239, 239, 239);">Amount of uncompressed data</td><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text;">Maximum database size</td></tr><tr style="box-sizing: border-box; user-select: none; line-height: 32px;"><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text; background-color: rgb(239, 239, 239);">Cluster name</td><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text;">Leave the default name or enter your name in Latin characters.</td></tr><tr style="box-sizing: border-box; user-select: none; line-height: 32px;"><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text; background-color: rgb(239, 239, 239);">Node configuration</td><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text;">CPU / RAM / HDD (SSD) master configuration. The replica / slave will be created with the same configuration automatically.</td></tr><tr style="box-sizing: border-box; user-select: none; line-height: 32px;"><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text; background-color: rgb(239, 239, 239);">Accessibility zone</td><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text;">specify the availability zone (we recommend DP1 or MS1).</td></tr><tr style="box-sizing: border-box; user-select: none; line-height: 32px;"><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text; background-color: rgb(239, 239, 239);">Net</td><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text;">Leave the default or choose your own private network.</td></tr><tr style="box-sizing: border-box; user-select: none; line-height: 32px;"><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text; background-color: rgb(239, 239, 239);">Disc type</td><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text;">For the best performance, we recommend choosing the drive type SSD or Hi-IOPS SSD.</td></tr></tbody></table>
+| Parameter name | Description |
+|------------------------------------|-------------------- ------------------------|
+| Database name to create | You can leave the default or enter your own. |
+| Username | You must specify a username for remote access. |
+| User password | You must set a user password for remote access. |
 
-The next step is to set the parameters for initializing the database.
-
-![](./assets/1599676787109-1599676787109.png)
-
-<table style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; background-color: rgb(255, 255, 255); border: none; empty-cells: show; max-width: 100%; width: 690px; margin-bottom: 20px; color: rgb(56, 76, 96); font-family: &quot;Open Sans&quot;, Helvetica, &quot;Lucida Grande&quot;, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><tbody style="box-sizing: border-box;"><tr style="box-sizing: border-box; user-select: none; line-height: 32px;"><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text; background-color: rgb(239, 239, 239);">Database name to create</td><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text;">You can leave the default or enter your own.</td></tr><tr style="box-sizing: border-box; user-select: none; line-height: 32px;"><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text; background-color: rgb(239, 239, 239);">Username</td><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text;">You need to provide an administrator name for remote access.</td></tr><tr style="box-sizing: border-box; user-select: none; line-height: 32px;"><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text; background-color: rgb(239, 239, 239);">Administrator password</td><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text;">You must set an administrator password for remote access.</td></tr></tbody></table>
-
-The instance will be created in a few minutes.
-
-![](./assets/1599676805437-1599676805437.png)
-
-After that, information about the instance and connection methods will appear.
+The instance will be created within a few minutes. After that, information about the instance and connection methods will appear.
