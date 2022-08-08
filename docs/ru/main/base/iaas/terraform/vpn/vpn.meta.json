@@ -1,12 +1,13 @@
 {
-    "title": "Создание VPN соединения",
-    "pageDescription": "",
-    "shortDescription": "Создание VPN соединения с использованием Terraform.",
-    "metaTitle": "Создание VPN соединения - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Создание VPN соединения",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
-  }
+  "title": "Создание VPN соединения",
+  "pageDescription": "",
+  "shortDescription": "Создание VPN соединения с использованием Terraform.",
+  "metaTitle": "Создание VPN соединения - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Создание VPN соединения",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "30ae3626-b3d1-4cd8-a70e-0c3bb5574535"
+}
