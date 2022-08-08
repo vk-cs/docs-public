@@ -1,12 +1,13 @@
 {
-    "title": "Управление сетями и группами безопасности",
-    "pageDescription": "",
-    "shortDescription": "Создание сетей и изменение групп безопасности с использованием Terraform",
-    "metaTitle": "Управление сетями и группами безопасности - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Управление сетями и группами безопасности",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
-  }
+  "title": "Управление сетями и группами безопасности",
+  "pageDescription": "",
+  "shortDescription": "Создание сетей и изменение групп безопасности с использованием Terraform",
+  "metaTitle": "Управление сетями и группами безопасности - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Управление сетями и группами безопасности",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "cf7dd56a-dbd6-49ce-bf8e-80a95b564c05"
+}
