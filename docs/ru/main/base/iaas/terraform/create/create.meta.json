@@ -1,12 +1,13 @@
 {
-    "title": "Создание ВМ с помощью Terraform",
-    "pageDescription": "",
-    "shortDescription": "Создание виртуальной машины с использованием Terraform",
-    "metaTitle": "Создание ВМ с помощью Terraform - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Создание ВМ с помощью Terraform",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "Создание ВМ с помощью Terraform",
+  "pageDescription": "",
+  "shortDescription": "Создание виртуальной машины с использованием Terraform",
+  "metaTitle": "Создание ВМ с помощью Terraform - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Создание ВМ с помощью Terraform",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "3ed34fb9-c6b8-4025-9c43-177362fe3018"
+}
