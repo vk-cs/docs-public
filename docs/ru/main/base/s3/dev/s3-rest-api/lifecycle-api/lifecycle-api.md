@@ -1,12 +1,12 @@
 Все доступные методы для работы с жизненным циклом объектов:
 
-- Get Buket Lifecycle Configuration - Просмотр конфигурации жизненного цикла в бакете
-- Configure Buket Lifecycle - Настройка правил конфигурации жизненного цикла
-- Delete Buket Lifecycle - Удаление конфигурации жизненного цикла
+- Get Buket Lifecycle Configuration — просмотр конфигурации жизненного цикла в бакете.
+- Configure Buket Lifecycle — настройка правил конфигурации жизненного цикла.
+- Delete Buket Lifecycle — удаление конфигурации жизненного цикла.
 
-Общий вид конфигурации
+Общий вид конфигурации:
 
-```
+```xml
 <LifecycleConfiguration>
     <Rule>
         <ID>Описание правила</ID>
@@ -50,7 +50,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 17:44:35 GMT
 x-amz-request-id: tx000000000000000023935-005a613936-fcf92-ru-mska
@@ -87,7 +87,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 PUT /?lifecycle HTTP/1.1
 Host: my-test-bucket1.hb.bizmrg.com
 Content-Length: 488
@@ -119,7 +119,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 17:31:43 GMT
 x-amz-request-id: tx00000000000000010ad2b-005a6135e2-f647d-ru-mska
@@ -144,7 +144,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 HTTP/1.1 204 No Content
 Date: Mon, 31 Aug 2020 18:13:21 GMT
 Connection: close

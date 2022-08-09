@@ -1,7 +1,7 @@
 {
   "title": "Bucket",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Операции с бакетами",
   "metaTitle": "Bucket - VK Cloud",
   "metaDescription": "Операции с Бакетами: Create - Создать бакет\nListBuckets - Получить список бакетов\nHeadBucket - Проверка наличия бакета и доступа к нему \nListObjects - Полу",
   "sectionTitle": "Bucket",

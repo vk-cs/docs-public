@@ -2,13 +2,13 @@
 
 Перечень доступных методов для конфигураций CORS бакета:
 
-- Get Bucket CORS - Получить список конфигураций CORS для бакета
-- Set Bucket CORS - Установить конфигурацию CORS
-- Delete Bucket CORS - Удалить конфигурацию CORS
+- Get Bucket CORS — получить список конфигураций CORS для бакета.
+- Set Bucket CORS — установить конфигурацию CORS.
+- Delete Bucket CORS — удалить конфигурацию CORS.
 
 ## Общий вид XML конфигурации CORS
 
-```
+```XML
 <CORSConfiguration>
     <CORSRule>
         <AllowedOrigin>URL</AllowedOrigin>
@@ -38,7 +38,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```XML
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 18:53:20 GMT
 x-amz-request-id: tx00000000000000279651f-005963cd20-1268c-ru-mska
@@ -76,7 +76,7 @@ Connection: close
 
 Запрос:
 
-```
+```XML
 PUT /?cors HTTP/1.1
 Host: my-test-bucket1.hb.bizmrg.com
 Content-Length: 374
@@ -133,7 +133,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```XML
 HTTP/1.1 204 No Content
 Date: Mon, 31 Aug 2020 18:25:38 GMT
 x-amz-request-id: tx0000000000000002fae1f-0059690ca2-6441-ru-mska
