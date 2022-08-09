@@ -1,26 +1,26 @@
-Webhooks для S3 - это возможность настраивать отправку HTTP/S запросов по событиям для бакета, используя API. Например, можно:
+Webhooks для S3 — это возможность настраивать отправку HTTP/S запросов по событиям для бакета, используя API. Например, можно:
 
-- настроить обработку и конвертирование файлов после загрузки
-- интегрироваться с любыми внешними системами
-- настроить логирование для объектного хранилища
+- настроить обработку и конвертирование файлов после загрузки;
+- интегрироваться с любыми внешними системами;
+- настроить логирование для объектного хранилища.
 
 Перечень событий (Event), для которых возможно настроить конфигурацию Webjook:
 
-- s3:ObjectCreated:\* - PutObject, PutObjectCopy, CompleteMultipartUpload
-- s3:ObjectCreated:Put - PutObject
-- s3:ObjectCreated:Copy - PutObjectCopy
-- s3:ObjectCreated:CompleteMultipartUpload - CompleteMultipartUpload
-- s3:ObjectRemoved:\* - DeleteObject
-- s3:ObjectRemoved:Delete - DeleteObject
+- s3:ObjectCreated:\* — PutObject, PutObjectCopy, CompleteMultipartUpload.
+- s3:ObjectCreated:Put — PutObject.
+- s3:ObjectCreated:Copy — PutObjectCopy.
+- s3:ObjectCreated:CompleteMultipartUpload — CompleteMultipartUpload.
+- s3:ObjectRemoved:\* — DeleteObject.
+- s3:ObjectRemoved:Delete — DeleteObject.
 
 Доступны следующие методы для работы с WebHooks:
 
-- PutBucketNotificationConfiguration
-- GetBucketNotificationConfiguration
+- PutBucketNotificationConfiguration;
+- GetBucketNotificationConfiguration.
 
 ## Общая XML-конфигурация
 
-```
+```xml
 PUT /?notification HTTP/1.1
 Host: Bucket.hb.bizmrg.com
 
@@ -55,7 +55,7 @@ Host: Bucket.hb.bizmrg.com
 
 Запрос:
 
-```
+```xml
 PUT /?notification HTTP/1.1
 Host: bucketA.hb.bizmrg.com
 Content-Length: 606
@@ -115,7 +115,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 HTTP/1.1 200
 Date: Mon, 31 Aug 2020 17:31:43 GMT
 x-amz-request-id: tx00000000000000010ad2b-005a6135e2-f647d-ru-mska
@@ -166,7 +166,7 @@ Connection: close
 
 Для примера установленных правил, при загрузкие объектов в бакет bucketA с именами image/\*.png, будет приходить следующий запрос:
 
-```
+```json
 POST <url> HTTP/1.1
 x-amz-sns-messages-type: SubscriptionConfirmation
 
@@ -208,7 +208,7 @@ x-amz-sns-messages-type: SubscriptionConfirmation
 
 В момент выполнения этого запроса сервис VK Cloud s3 валидирует url, выполняя на него следующий запрос (2):
 
-```
+```xml
 POST http://test.com HTTP/1.1
 x-amz-sns-messages-type: SubscriptionConfirmation
 content-type: application/json
@@ -225,7 +225,7 @@ content-type: application/json
 
 для подтверждения url необходимо в ответ отправить подпись:
 
-```
+```json
 content-type: application/json
 
 {"signature":"ea3fce4bb15c6de4fec365d36bcebbc34ccddf54616d5ca12e1972f82b6d37af"}
@@ -241,9 +241,11 @@ signature = hmac*sha256(\_url*, hmac*sha256(\_TopicArn*, hmac*sha256(\_Timestamp
 
 в нашем примере:
 
+```
 signature = hmac_sha256_hex(“http://test.com”, hmac_sha256(“mcs2883541269|bucketA|s3:ObjectCreated:Put”, hmac_sha256(“2019-12-26T19:29:12+03:00”, “RPE5UuG94rGgBH6kHXN9FUPugFxj1hs2aUQc99btJp3E49tA”)))
+```
 
-При успешном подтверждении url, в ответ на запрос (1) будет отправлен response
+При успешном подтверждении url, в ответ на запрос (1) будет отправлен response:
 
 ```
 HTTP/1.1 200

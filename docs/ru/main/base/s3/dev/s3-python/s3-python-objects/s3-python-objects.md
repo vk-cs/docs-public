@@ -28,7 +28,7 @@ s3_client.upload_file('some_test_file_from_local.txt', test_bucket_name, 'copy_s
 s3_client.upload_file('some_test_file_from_local.txt', test_bucket_name, 'backup_dir/copy_some_test_file.txt')
 ```
 
-Подробное описание команд PUT_OBJECT и UPLOAD_FILE дано в официальной документации библиотеки boto3 по методам [PUT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.put_object) и [UPLOAD](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.upload_file)
+Подробное описание команд PUT_OBJECT и UPLOAD_FILE дано в официальной документации библиотеки boto3 по методам [PUT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.put_object) и [UPLOAD](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.upload_file).
 
 ## Копирование объектов между бакетами
 
@@ -100,7 +100,7 @@ for key in s3_client.list_objects(Bucket=test_bucket_name)['Contents']:
     print(key['Key'])
 ```
 
-Подробное описание команды LIST_OBJECT дано в [официальной документации библиотеки boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.list_objects)
+Подробное описание команды LIST_OBJECT дано в [официальной документации библиотеки boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.list_objects).
 
 ## Удаление объекта
 
@@ -127,4 +127,4 @@ object_to_delete = [{'Key':'objectkey1.txt'}, {'Key':'objectkey2.txt'}]
 s3_client.delete_objects(Bucket=test_bucket_name, Delete={'Objects': object_to_delete})
 ```
 
-Подробное описание команды DELETE_OBJECTS дано в [официальной документации библиотеки boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.delete_objects)
+Подробное описание команды DELETE_OBJECTS дано в [официальной документации библиотеки boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.delete_objects).

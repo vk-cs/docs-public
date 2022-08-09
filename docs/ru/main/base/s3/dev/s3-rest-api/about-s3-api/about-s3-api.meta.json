@@ -1,7 +1,7 @@
 {
   "title": "Общая информация",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Совместимость с S3 и аутентификация",
   "metaTitle": "Общая информация - VK Cloud",
   "metaDescription": "VK Cloud предоставляет RESTful XML API для программного управления хранимыми данными с помощью стандартных HTTP-запросов. API-интерфейс совместим с API-интерфей",
   "sectionTitle": "Общая информация",
