@@ -2,11 +2,11 @@
 
 Составная загрузка состоит из следующих шагов:
 
-- Initiate Multipart Upload - Инициализация загрузки
-- Upload Part - Загрузка объекта по частям
-- Complete Multipart Upload - Завершение загрузки путем объединения ранее загруженных частей
-- Abort Multipart Upload - Прерывание загрузки
-- List Parts - Возврат списка загруженных частей
+- Initiate Multipart Upload — инициализация загрузки.
+- Upload Part — загрузка объекта по частям.
+- Complete Multipart Upload — завершение загрузки путем объединения ранее загруженных частей.
+- Abort Multipart Upload — прерывание загрузки
+- List Parts — возврат списка загруженных частей.
 
 ## Initiate Multipart Upload
 
@@ -14,13 +14,17 @@
 
 Если настроено правило жизненного цикла на прерывание неоконченных многокомпонентных загрузок, то загрузка должна завершиться в течение количества дней, указанном в конфигурации жизненного цикла бакета. В противном случае для незавершенной многокомпонентной загрузки становится доступной операция прерывания, и сервис прерывает многокомпонентную загрузку.
 
+<info>
+
 **Примечание**
 
 После инициализации многокомпонентной загрузки и собственно загрузки одной или нескольких частей необходимо завершить или прервать многокомпонентную загрузку, чтобы приостановить списание оплаты за хранение загруженных частей. Только после завершения или прерывания многокомпонентной загрузки VK Cloud S3 освобождает место, предоставляемое частям в хранилище, и прекращает производить списание оплаты за хранение этих частей.
 
+</info>
+
 Запрос:
 
-```
+```xml
 POST /multipart-file.tar.gz?uploads HTTP/1.1
 Host: my-test-bucket1.hb.bizmrg.com
 x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -30,7 +34,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 HTTP/1.1 200 OK
 Content-Length: 286
 Content-Type: application/xml
@@ -56,7 +60,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 PUT /multipart-file.tar.gz?partNumber=1&uploadId=2~iCw_lDY8VoBhoRrIJbPMrUqnE3Z-3Qh HTTP/1.1
 Host: my-test-bucket1.hb.bizmrg.com
 Content-Length: 5242880
@@ -67,7 +71,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 HTTP/1.1 200 OK
 Content-Length: 0
 Content-Type: application/xml
@@ -85,7 +89,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 POST /multipart-file.tar.gz?uploadId=2~iCw_lDY8VoBhoRrIJbPMrUqnE3Z-3Qh HTTP/1.1
 Host: my-test-bucket1.hb.bizmrg.com
 Content-Length: 358
@@ -111,7 +115,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 HTTP/1.1 200 OK
 Content-Length: 336
 Content-Type: application/xml
@@ -145,7 +149,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 18:45:01 GMT
 x-amz-request-id: tx00000000000000abbaefe-0059920764-66a8-ru-mska
@@ -171,7 +175,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 HTTP/1.1 200 OK
 Content-Length: 980
 Content-Type: application/xml

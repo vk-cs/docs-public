@@ -1,7 +1,7 @@
 {
   "title": "Object",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Операции с объектами",
   "metaTitle": "Object - VK Cloud",
   "metaDescription": "Операции с Объектами: Get - Скачать объект из бакета\nUpload - Загрузить объект в бакет\nCopy - Скопировать объект, находящийся в бакете\nHeadObject - Получит",
   "sectionTitle": "Object",
