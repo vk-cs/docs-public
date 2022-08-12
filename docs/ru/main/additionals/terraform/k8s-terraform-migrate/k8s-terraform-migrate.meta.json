@@ -1,10 +1,11 @@
 {
-  "title": "Переход с провайдер OpenStack на VKCS",
+  "title": "Переход с провайдер OpenStack на VK Cloud",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Переход с провайдер OpenStack на VKCS - VK Cloud",
+
+  "metaTitle": "Переход с провайдер OpenStack на VK Cloud",
   "metaDescription": "На данный момент VK Cloud поддерживает сразу 2 Terraform провайдера: OpenStack для управления IaaS-сервисами и собственный VK Cloud Terraform Provider для управления",
-  "sectionTitle": "Переход с провайдер OpenStack на VKCS",
+  "sectionTitle": "Переход с провайдер OpenStack на VK Cloud",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
