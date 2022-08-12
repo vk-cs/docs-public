@@ -2,7 +2,7 @@
   "title": "DeleteQueue",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "DeleteQueue - VK Cloud Solutions",
+  "metaTitle": "DeleteQueue - VK Cloud",
   "metaDescription": "Запрос удаляет очередь, указанную в QueueUrl, независимо от ее содержимого.  Важно \nБудьте осторожны с DeleteQueueдействием: когда вы удаляете очередь, все",
   "sectionTitle": "DeleteQueue",
   "markdown": "",

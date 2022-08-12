@@ -1,6 +1,6 @@
-In Kubernetes aaS from VK Cloud Solutions, a new version is added 1 month after the official release.
+In Kubernetes aaS from VK Cloud, a new version is added 1 month after the official release.
 
-At the moment, Kubernetes aaS from VK Cloud Solutions has a similar version of Kubernetes:
+At the moment, Kubernetes aaS from VK Cloud has a similar version of Kubernetes:
 
 - 1.22.6
 - 1.21.4
@@ -12,7 +12,7 @@ If the cluster is created on [Kubernetes version](#k8s-versions-list), which is 
 
 ## Kubernetes version support <a id="k8s-versions-list"></a>
 
-Kubernetes releases unexpectedly extended 14 months from the Kubernetes aaS release date from VK Cloud Solutions.
+Kubernetes releases unexpectedly extended 14 months from the Kubernetes aaS release date from VK Cloud.
 
 A Kubernetes Version Support Consumption Report will be sent out via email and in the Personal Account Observation Center 30 days before the support distribution rate.
 

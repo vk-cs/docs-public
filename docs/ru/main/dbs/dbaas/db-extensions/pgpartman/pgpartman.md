@@ -6,7 +6,7 @@
 
 Подробнее о расширении **pg_partman** вы можете из документации разработчика на [GitHub](https://github.com/pgpartman/pg_partman) или скачав [PDF](https://access.crunchydata.com/documentation/pg-partman/4.6.0/pdf/pg_partman.pdf).
 
-#### Параметры, применимые в инфраструктуре VK Cloud Solutions:
+#### Параметры, применимые в инфраструктуре VK Cloud:
 
 |Название|Описание|
 |---|---|

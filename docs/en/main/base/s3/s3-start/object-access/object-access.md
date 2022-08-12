@@ -6,7 +6,7 @@ All objects of the selected bucket and possible operations with them are listed 
 
 ![](./assets/1598040593720-1598040593720.png)
 
-VK CS provides several ways to access objects:
+VK Cloud provides several ways to access objects:
 
 - Download
 - Access by public link

@@ -6,7 +6,7 @@ To create a new key pair:
 
 <tabs>
 <tablist>
-<tab>On the VK CS platform</tab>
+<tab>On the VK Cloud platform</tab>
 <tab>Linux/Mac</tab>
 <tab>Windows 10</tab>
 </tablist>

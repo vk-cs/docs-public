@@ -16,7 +16,7 @@ Disconnecting the root disk without replacing it with another one is impossible.
 
 The process of replacing the root disk for Windows and Linux virtual machines is identical. To do this, select the required instance in the list of Virtual Machines of the Cloud Computing service and go to the Disks tab.
 
-## Via VK CS control Panel
+## Via VK Cloud control Panel
 
 The replacement is performed in the properties of the disk connected to the VM. If all the conditions are met, a new disk will be available in the list.
 

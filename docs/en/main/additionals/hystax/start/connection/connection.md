@@ -1,9 +1,9 @@
-VK Cloud Solutions provides a Hystax Acura installation for a seamless live migration of your infrastructure to a VK CS cloud target project.
+VK Cloud provides a Hystax Acura installation for a seamless live migration of your infrastructure to a VK Cloud cloud target project.
 
 The Hystax service connection process consists of the following steps:
 
 - Setting up the cloud to work with the Hystax Acura controller.
-- Create a Hystax Acura user account and add a VK CS target project.
+- Create a Hystax Acura user account and add a VK Cloud target project.
 
 ## Cloud setup
 
@@ -17,7 +17,7 @@ The cloud is configured once, while there can be many target projects.
 
 </info>
 
-## Creating a Hystax Acura user account and adding a VK CS target project
+## Creating a Hystax Acura user account and adding a VK Cloud target project
 
 To create a Hystax Acura user account, go to the [service page](https://mcs.mail.ru/disaster-recovery/) and click the "Submit Request" button. The form for filling out will appear.
 
@@ -37,6 +37,6 @@ Fill in the following information:
 |Identity API Version| API version, (eg 3).|
 |Auth URL| Authentication URL. |
 
-These data can be obtained in the personal account of VK CS by going to the "Project settings" in the "API keys" tab.
+These data can be obtained in the personal account of VK Cloud by going to the "Project settings" in the "API keys" tab.
 
 After submitting the form, the manager will request authorization for validation. Based on this data, our specialists will create an account on the Hystax Acura controller. Log in using the username and password you received to make sure that the account is active.

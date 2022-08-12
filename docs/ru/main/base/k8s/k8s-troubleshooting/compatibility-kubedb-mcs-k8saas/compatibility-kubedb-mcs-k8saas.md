@@ -21,8 +21,8 @@
 
 #### Постоянное
 
-Вам нужно обратиться в [техническую поддержку VK CS](https://mcs.mail.ru/help/contact-us) для обновления сертификатов.
+Вам нужно обратиться в [техническую поддержку VK Cloud](https://mcs.mail.ru/help/contact-us) для обновления сертификатов.
 
 ### Важно
 
-Мы не гарантируем полную совместимость kubedb с k8saas VK CS, так как kubedb использует custom resource definition, на которые завязывается kube-apiserver.
+Мы не гарантируем полную совместимость kubedb с k8saas VK Cloud, так как kubedb использует custom resource definition, на которые завязывается kube-apiserver.

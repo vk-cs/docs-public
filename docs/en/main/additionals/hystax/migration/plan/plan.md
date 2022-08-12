@@ -1,4 +1,4 @@
-Before migrating your infrastructure to VK Cloud Solutions, you must:
+Before migrating your infrastructure to VK Cloud, you must:
 
 - download and install the migration agent;
 - configure the Migration plan, which specifies which hosts will be migrated.

@@ -2,7 +2,7 @@
   "title": "Accessing an Application in Kubernetes",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Organizing access to the application in Kubernetes - VK Cloud Solutions",
+  "metaTitle": "Organizing access to the application in Kubernetes - VK Cloud",
   "metaDescription": "In general, ways to access services within a cluster are listed in the official documentation. Our implementation details: NodePort opens public",
   "sectionTitle": "Accessing an application in Kubernetes",
   "markdown": "",

@@ -2,11 +2,11 @@ The Cloud Computing service has a wide range of functionality, thanks to which y
 
 Virtual machines can have an operating system of the OC Linux and Windows family available when creating virtual machines. Each disk with the operating system is automatically replicated within its availability zone, which ensures reliable data storage.
 
-VK CS infrastructure is protected in accordance with FZ-152 only in the MS1 availability zone.
+VK Cloud infrastructure is protected in accordance with FZ-152 only in the MS1 availability zone.
 
 ## Before starting work
 
-To create a virtual machine, you should register on the VK CS platform, go to your personal account and make sure that the Cloud computing service is active, the account balance is positive, and there are enough quotas to create the desired instance configuration.
+To create a virtual machine, you should register on the VK Cloud platform, go to your personal account and make sure that the Cloud computing service is active, the account balance is positive, and there are enough quotas to create the desired instance configuration.
 
 ## Configuration Templates
 
@@ -24,7 +24,7 @@ By default, Basic, Standard and Advanced configurations are available in the pro
 
 ## VM Performance
 
-VK CS server hardware located in data centers hosting virtual machines has the following characteristics:
+VK Cloud server hardware located in data centers hosting virtual machines has the following characteristics:
 
 | Parameter | Value |
 | --- | --- |

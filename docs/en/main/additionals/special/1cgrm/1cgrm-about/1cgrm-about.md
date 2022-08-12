@@ -1,4 +1,4 @@
-With the help of ready-made infrastructure solutions, VK CS, in partnership with 1C Firm, provides an opportunity to quickly connect the entire range of cloud solutions for your business: from cloud infrastructure to end applications that support the business.
+With the help of ready-made infrastructure solutions, VK Cloud, in partnership with 1C Firm, provides an opportunity to quickly connect the entire range of cloud solutions for your business: from cloud infrastructure to end applications that support the business.
 
 1C: GRM ("Ready Workplace") is a convenient and intuitive interface through which you can connect and deploy the infrastructure in a couple of clicks, as well as receive qualified support.
 
@@ -20,11 +20,11 @@ Working with a ready-made 1C application has advantages over deploying your own 
 - **Free trial period** . The ability to test the service and evaluate its functionality.
 - **Flexible payment.** Payment on a monthly basis, according to the rental model, allows you to significantly save the budget, where all costs are transparent and can be regulated.
 - **Improvements on demand.** There is no need to hire IT specialists to configure and maintain the application. You can get advice or order revision by [contacting the timing support service](mailto:support.1c.grm@mcs.mail.ru) .
-- **Security** . The application infrastructure is based on the VK CS fault-tolerant services platform, where virtual machines provide reliable storage and processing of 1C applications.
+- **Security** . The application infrastructure is based on the VK Cloud fault-tolerant services platform, where virtual machines provide reliable storage and processing of 1C applications.
 
 ## Who benefits from 1C: timing
 
-Renting a cloud solution based on 1C products and VK CS services is suitable for:
+Renting a cloud solution based on 1C products and VK Cloud services is suitable for:
 
 - Private accountants
 - Outsourced accounting companies
@@ -50,7 +50,7 @@ If the total amount of data is exceeded, you must [contact the technical support
 
 Simultaneous work with 1C: Timing applications is limited to 5 users who can connect remotely.
 
-For 1C: GRM applications, there are physical limitations of database tables, the total volume of which should not exceed 12GB of data, and one table cannot be more than 4GB. If this volume is exceeded, VK CS cannot guarantee the reliability and fault tolerance of the 1C: GRM application service.
+For 1C: GRM applications, there are physical limitations of database tables, the total volume of which should not exceed 12GB of data, and one table cannot be more than 4GB. If this volume is exceeded, VK Cloud cannot guarantee the reliability and fault tolerance of the 1C: GRM application service.
 
 ## Backup
 

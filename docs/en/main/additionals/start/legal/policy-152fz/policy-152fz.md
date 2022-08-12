@@ -1,6 +1,6 @@
-This document constitutes an offer in accordance with Art. 435 of the Civil Code of the Russian Federation (hereinafter referred to as the "Offer") for a conclusion between Mail.Ru LLC (125167, Moscow, Leningradsky prospect, 39, p. 79, OGRN 1027739850962) (hereinafter referred to as the "Company") and You, a legal entity, (hereinafter referred to as the "Customer") of the user agreement on the terms of this Offer (hereinafter referred to as the "Agreement"), the subject of which is the provision of services for providing access to the Cloud FZ-152 Service within the framework of the VK Cloud Solutions Platform (hereinafter referred to as the "Platform").
+This document constitutes an offer in accordance with Art. 435 of the Civil Code of the Russian Federation (hereinafter referred to as the "Offer") for a conclusion between Mail.Ru LLC (125167, Moscow, Leningradsky prospect, 39, p. 79, OGRN 1027739850962) (hereinafter referred to as the "Company") and You, a legal entity, (hereinafter referred to as the "Customer") of the user agreement on the terms of this Offer (hereinafter referred to as the "Agreement"), the subject of which is the provision of services for providing access to the Cloud FZ-152 Service within the framework of the VK Cloud Platform (hereinafter referred to as the "Platform").
 
-This Agreement is available on the Internet at: [https://mcs.mail.ru/help/legal/152-fz-termofuse](https://mcs.mail.ru/help/legal/152-fz-termofuse) and is an integral part of the Terms of Use of the VK Cloud Solutions platform, available on the Internet at: [https: //mcs.mail.ru/help/legal/termofuse](https://mcs.mail.ru/help/legal/termofuse) and the Company's Privacy Policy, on the Internet at: [https://mcs.mail.ru/help/legal/privacy](https://mcs.mail.ru/help/legal/privacy) (hereinafter collectively - "Applicable Rules"). In the event of a conflict between the provisions of the Terms of Use of the Platform and this Agreement, the provisions of this Agreement shall prevail. The Terms of Use of the Platform apply to the relations of the Parties that are not regulated by this Agreement.
+This Agreement is available on the Internet at: [https://mcs.mail.ru/help/legal/152-fz-termofuse](https://mcs.mail.ru/help/legal/152-fz-termofuse) and is an integral part of the Terms of Use of the VK Cloud platform, available on the Internet at: [https: //mcs.mail.ru/help/legal/termofuse](https://mcs.mail.ru/help/legal/termofuse) and the Company's Privacy Policy, on the Internet at: [https://mcs.mail.ru/help/legal/privacy](https://mcs.mail.ru/help/legal/privacy) (hereinafter collectively - "Applicable Rules"). In the event of a conflict between the provisions of the Terms of Use of the Platform and this Agreement, the provisions of this Agreement shall prevail. The Terms of Use of the Platform apply to the relations of the Parties that are not regulated by this Agreement.
 
 By using the Service you are in accordance with Art. 438 of the Civil Code of the Russian Federation, you unconditionally and in full accept the terms of the Agreement.
 
@@ -24,7 +24,7 @@ Cloud FZ-152 / Service is a service of the Company known under the name "Cloud F
 
 **Subjects** - Subjects of Personal Data, whose Data is processed by the Customer when using the Service.
 
-**ISPDN** is an information system of personal data Cloud Servers from VK Cloud Solutions, formerly known as "VK Cloud Solutions Infra", which complies with the information security requirements of the legislation of the Russian Federation and provides the 3rd level of protection of personal data, which is confirmed by the Certificate of Compliance (available on the Internet at: [https://hb.bizmrg.com/mcs-static/\_\_\_files/certificates/security_certificate.pdf)](https://hb.bizmrg.com/mcs-static/___files/certificates/security_certificate.pdf)
+**ISPDN** is an information system of personal data Cloud Servers from VK Cloud, formerly known as "VK Cloud Infra", which complies with the information security requirements of the legislation of the Russian Federation and provides the 3rd level of protection of personal data, which is confirmed by the Certificate of Compliance (available on the Internet at: [https://hb.bizmrg.com/mcs-static/\_\_\_files/certificates/security_certificate.pdf)](https://hb.bizmrg.com/mcs-static/___files/certificates/security_certificate.pdf)
 
 **Service unavailability (Downtime)** - the time interval from the moment the Customer sent a message to the Company's support service by e-mail to [support@mcs.mail.ru](mailto:support@mcs.mail.ru) or through the feedback form in the personal account, the fact of which was subsequently confirmed by the Company, and the moment the Service was resumed after the completion of the restoration work by the Company.
 
@@ -32,7 +32,7 @@ Cloud FZ-152 / Service is a service of the Company known under the name "Cloud F
 
 **The reporting period** is a calendar month.
 
-Other terms are defined in the Terms of Use of the VK Cloud Solutions Platform.
+Other terms are defined in the Terms of Use of the VK Cloud Platform.
 
 ## 2\. Subject of the Agreement, conditions for obtaining access to the Service
 

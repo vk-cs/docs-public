@@ -1,6 +1,6 @@
 ### Import key
 
-You can import SSH keys from your computer. To do this, in your personal account VK CS:
+You can import SSH keys from your computer. To do this, in your personal account VK Cloud:
 
 1. Go to Project Settings → Key Pairs.
 2. Click Import Key.

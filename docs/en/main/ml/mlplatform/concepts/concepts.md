@@ -1,4 +1,4 @@
-The MLOps platform from VK Cloud Solutions is a set of services and tools designed to solve typical Data Science and ML team tasks.
+The MLOps platform from VK Cloud is a set of services and tools designed to solve typical Data Science and ML team tasks.
 
 MLOps can be defined as a discipline or set of practices with the goal of using and maintaining services based on ML models. This discipline was born at the intersection of Machine Learning, DevOps and Data Engineering.
 

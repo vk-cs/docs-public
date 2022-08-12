@@ -1,10 +1,10 @@
 {
-  "title": "Совместимость kubedb с VK CS k8saas",
+  "title": "Совместимость kubedb с VK Cloud k8saas",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Совместимость kubedb с VK CS k8saas - VK Cloud Solutions",
+  "metaTitle": "Совместимость kubedb с VK Cloud k8saas - VK Cloud",
   "metaDescription": "Проблема Проблема масштабирования k8aas с использованием kubedb и команды: 1Resource CREATE failed: WaitConditionTimeout: resources[37].resources.minion_wa",
-  "sectionTitle": "Совместимость kubedb с VK CS k8saas",
+  "sectionTitle": "Совместимость kubedb с VK Cloud k8saas",
   "markdown": "",
   "icon": "",
   "infobarItems": null,

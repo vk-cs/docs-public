@@ -1,13 +1,13 @@
-На данный момент VK CS поддерживает сразу 2 Terraform провайдера:
+На данный момент VK Cloud поддерживает сразу 2 Terraform провайдера:
 
 - OpenStack для управления IaaS-сервисами;
-- Собственный VK CS Terraform Provider для управления Kubernetes.
+- Собственный VK Cloud Terraform Provider для управления Kubernetes.
 
-Кластеры Kubernetes, которые ранее управлялись с помощью OpenStack Terraform Provider можно перевести под управление VK CS Terraform Provider для того, чтобы получить возможность осуществлять с помощью Terraform настройку авто-масштабирования кластера, работу с Node Group, осуществлять обновление версии и тд.
+Кластеры Kubernetes, которые ранее управлялись с помощью OpenStack Terraform Provider можно перевести под управление VK Cloud Terraform Provider для того, чтобы получить возможность осуществлять с помощью Terraform настройку авто-масштабирования кластера, работу с Node Group, осуществлять обновление версии и тд.
 
 ## Инструкция по переходу
 
-Важно, что VK CS Terraform Provider работает с базовыми IaaS-ресурсами, управляемыми с помощью OpenStack Terraform Provider. Следовательно, необходимо активировать оба провайдера для корректной работы с кластерами Kubernetes.
+Важно, что VK Cloud Terraform Provider работает с базовыми IaaS-ресурсами, управляемыми с помощью OpenStack Terraform Provider. Следовательно, необходимо активировать оба провайдера для корректной работы с кластерами Kubernetes.
 
 Рассмотрим следующий кластер, управляемый OpenStack Provider:
 
@@ -25,7 +25,7 @@ labels = {
 }
 ```
 
-1. Создайте аналогичную конфигурацию для VK CS провайдера и заполним только необходимые поля:
+1. Создайте аналогичную конфигурацию для VK Cloud провайдера и заполним только необходимые поля:
 
 ```bash
 **#описание кластера**
@@ -44,13 +44,13 @@ resource "vkcs_kubernetes_node_group" "ng_2" {
 }
 ```
 
-2. Если до этого в terraform state не было ресурсов VK CS провайдера, то выполните следующую команду:
+2. Если до этого в terraform state не было ресурсов VK Cloud провайдера, то выполните следующую команду:
 
 ```bash
 terraform init
 ```
 
-3. Выполните команды, где \`cluster_uuid\` и \`ng_uuid\` — уникальные идентификаторы кластера и node group, которые можно получить в панели VK CS:
+3. Выполните команды, где \`cluster_uuid\` и \`ng_uuid\` — уникальные идентификаторы кластера и node group, которые можно получить в панели VK Cloud:
 
 ```bash
 terraform import vkcs_kubernetes_cluster.cluster_2 cluster_uuid
@@ -59,7 +59,7 @@ terraform import vkcs_kubernetes_cluster.cluster_2 cluster_uuid
 terraform import vkcs_kubernetes_node_group.ng_2 ng_uuid
 ```
 
-4. Для прекращения использования VK CS провайдера для управления кластером Kubernetes обязательно выполните команду:
+4. Для прекращения использования VK Cloud провайдера для управления кластером Kubernetes обязательно выполните команду:
 
 ```bash
 terraform state rm vkcs_containerinfra_cluster.cluster_1
@@ -71,4 +71,4 @@ terraform state rm vkcs_containerinfra_cluster.cluster_1
 resource "vkcs_containerinfra_cluster" "cluster_1"
 ```
 
-Теперь управление кластером осуществляется через VK CS Terraform Provider.
+Теперь управление кластером осуществляется через VK Cloud Terraform Provider.

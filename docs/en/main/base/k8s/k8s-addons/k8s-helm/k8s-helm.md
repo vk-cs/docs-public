@@ -1,6 +1,6 @@
 Helm is a popular package manager for Kubernetes that can be used to quickly install complex applications such as CRM, e-commerce, databases, etc.
 
-Since Kubernetes clusters installed by VK CS use a role-based security model, it is necessary to initialize Helm as follows:
+Since Kubernetes clusters installed by VK Cloud use a role-based security model, it is necessary to initialize Helm as follows:
 
 ```
 kubectl create serviceaccount --namespace kube-system tiller

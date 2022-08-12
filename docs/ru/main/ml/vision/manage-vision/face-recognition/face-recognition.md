@@ -84,7 +84,7 @@ HOST: `https://smarty.mail.ru`
 
 | **Провайдер** | **Значение oauth_provider** | **Получение токена** |
 | ------------- | --------------------------- | -----|
-| MCS | mcs | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token) (все клиенты MCS) |
+| VK Cloud | mcs | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token) (все клиенты VK Cloud) |
 
 ### Параметры запроса передаются в формате JSON в теле запроса с name="meta":
 

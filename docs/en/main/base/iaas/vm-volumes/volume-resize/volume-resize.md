@@ -1,6 +1,6 @@
 Changing the disk size is only possible in a larger direction from the original size. The disk can be enlarged without stopping the server and disconnecting, however, to ensure the safety of the available data, the safest way to perform the operation is to first disconnect the disk.
 
-## VK CS Control Panel
+## VK Cloud Control Panel
 
 To increase the size [in your personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
 

@@ -4,7 +4,7 @@ The request changes the visibility timeout of the specified message in the queue
 
 **QueueUrl**
 
-URL of the VK CS SQS queue whose message visibility has been changed.
+URL of the VK Cloud SQS queue whose message visibility has been changed.
 
 URLs and queue names are case-sensitive.
 

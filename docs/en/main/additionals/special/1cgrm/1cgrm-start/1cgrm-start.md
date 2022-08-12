@@ -1,4 +1,4 @@
-To activate the 1C: GRM service, you must have a registered account and an active project. If necessary, you should confirm the account and activate the phone number, after which the VK CS panel will inform you about the availability of creating an application:
+To activate the 1C: GRM service, you must have a registered account and an active project. If necessary, you should confirm the account and activate the phone number, after which the VK Cloud panel will inform you about the availability of creating an application:
 
 ![](./assets/1598868682430-1598868682429.png)
 
@@ -56,7 +56,7 @@ The change in the number of licenses in the application card occurs instantly, b
 
 ## Application launch
 
-Once the application has been successfully created, it will appear in the list of applications in the VK CS panel. The application card contains the data entered during creation. It is impossible to change or delete this data.
+Once the application has been successfully created, it will appear in the list of applications in the VK Cloud panel. The application card contains the data entered during creation. It is impossible to change or delete this data.
 
 **Attention**
 
@@ -76,6 +76,6 @@ Editing is possible only for the number of licenses that provide remote access t
 
 ## Connect to app
 
-Remote access to the application for its administration is carried out using user accounts created in the application. Each user created consumes one license assigned to the application in the VK CS panel.
+Remote access to the application for its administration is carried out using user accounts created in the application. Each user created consumes one license assigned to the application in the VK Cloud panel.
 
 The initial connection for setting up and administering the application can be performed using one license assigned to the User when creating the 1C: Timing application. Connection data is sent to the User's mailing address specified during registration.

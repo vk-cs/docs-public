@@ -6,7 +6,7 @@ Together with the extension, a `partman` scheme is created on which the installa
 
 You can learn more about the **pg_partman** extension from the developer documentation on [GitHub](https://github.com/pgpartman/pg_partman) or by downloading [PDF](https://access.crunchydata.com/documentation/pg-partman/4.6.0/pdf/pg_partman.pdf).
 
-#### Parameters applicable in VK Cloud Solutions infrastructure:
+#### Parameters applicable in VK Cloud infrastructure:
 
 |Name|Description|
 |---|---|

@@ -1,4 +1,4 @@
-Данная статья расскажет, как создать в VK CS виртуальную машину через Terraform.
+Данная статья расскажет, как создать в VK Cloud виртуальную машину через Terraform.
 
 Предполагаем, что вы уже установили и подготовили Terraform по этой [инструкции](https://mcs.mail.ru/docs/ru/additionals/terraform/terraform-installation).
 

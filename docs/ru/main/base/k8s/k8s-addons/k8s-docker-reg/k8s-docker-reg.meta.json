@@ -2,7 +2,7 @@
   "title": "Использование Docker Registry",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Использование Docker Registry - VK Cloud Solutions",
+  "metaTitle": "Использование Docker Registry - VK Cloud",
   "metaDescription": "Загрузка образов в Kubernetes, используя Docker Registry Данная статья поможет Вам в создании пода, использующего Секрет, для загрузки образа из частного р",
   "sectionTitle": "Использование Docker Registry",
   "markdown": "",

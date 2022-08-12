@@ -2,7 +2,7 @@
   "title": "Ingress Controller",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Ingress Controller - VK Cloud Solutions",
+  "metaTitle": "Ingress Controller - VK Cloud",
   "metaDescription": "Ingress Controller При создании PaaS кластера Kubernetes есть возможность выбрать среди предустановленных сервисов NGINX Ingress Controller. Если он был вы",
   "sectionTitle": "Ingress Controller",
   "markdown": "",

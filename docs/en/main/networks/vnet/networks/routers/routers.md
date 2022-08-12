@@ -1,16 +1,16 @@
 Port - the virtual network interface card of the instance containing the IP address, DNS name and security groups.
 
-Port operations can be performed [in your VK CS account](https://mcs.mail.ru/app/services/infra/shares/) and in the Openstack CLI.
+Port operations can be performed [in your VK Cloud account](https://mcs.mail.ru/app/services/infra/shares/) and in the Openstack CLI.
 
 ## Port View
 
-In your personal account VK CS you can view the existing ports of private networks. To do this, go to the "Networks" page of the "Virtual networks" section, select the required network, then open the subnet.![](./assets/1597858600623-snimok-ekrana-2020-08-19-v-20.36.21.png)
+In your personal account VK Cloud you can view the existing ports of private networks. To do this, go to the "Networks" page of the "Virtual networks" section, select the required network, then open the subnet.![](./assets/1597858600623-snimok-ekrana-2020-08-19-v-20.36.21.png)
 
 The "Ports" tab shows the subnet connected to the Internet (the router ports are visible: SNAT, INTERFACE_DISTRIBUTED) and with DHCP enabled (the DHCP port address is also the address of the private DNS server).
 
 ## Adding ports
 
-In the VK CS panel, a port (network connection) is added to the virtual machine by selecting the "Add connection" option on the "Network information" tab of the instance page:![](./assets/1597849466961-snimok-ekrana-2020-08-19-v-17.58.26.png)
+In the VK Cloud panel, a port (network connection) is added to the virtual machine by selecting the "Add connection" option on the "Network information" tab of the instance page:![](./assets/1597849466961-snimok-ekrana-2020-08-19-v-17.58.26.png)
 
 In the parameters of the added connection, you must fill in the fields:
 

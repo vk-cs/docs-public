@@ -1,10 +1,10 @@
 {
-  "title": "Настройка провайдера Terraform для VK CS и OpenStack",
+  "title": "Настройка провайдера Terraform для VK Cloud и OpenStack",
   "pageDescription": "Установка и настройка Terraform провайдера.",
   "shortDescription": "",
-  "metaTitle": "Настройка провайдера Terraform для VK CS и OpenStack",
+  "metaTitle": "Настройка провайдера Terraform для VK Cloud и OpenStack",
   "metaDescription": "Terraform, terraform провайдер",
-  "sectionTitle": "Настройка провайдера Terraform для VK CS и OpenStack",
+  "sectionTitle": "Настройка провайдера Terraform для VK Cloud и OpenStack",
   "markdown": "",
   "icon": "",
   "infobarItems": null,

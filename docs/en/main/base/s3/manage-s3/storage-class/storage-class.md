@@ -8,6 +8,6 @@ There are several bucket classes that differ in both the purpose and the amount 
 
 ## Changing the bucket class
 
-After creating a bucket in the panel interface, it is possible to change its class: from Hotbox to Icebox and back. To do this, in the VK CS panel, select the bucket whose class is to be changed, then change the class on the "Storage class" tab and confirm the changes with the "Save changes" button:
+After creating a bucket in the panel interface, it is possible to change its class: from Hotbox to Icebox and back. To do this, in the VK Cloud panel, select the bucket whose class is to be changed, then change the class on the "Storage class" tab and confirm the changes with the "Save changes" button:
 
 ![](./assets/1598052843411-1598052843411.png)

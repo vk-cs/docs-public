@@ -35,7 +35,7 @@ In both cases, the response will be an audio stream, the format of which is spec
 | Code | Status | Description            |
 | ---- | ------ | ---------------------- |
 | 4048 | 400    | Invalid token          |
-| 4049 | 400    | Inactive project VK CS |
+| 4049 | 400    | Inactive project VK Cloud |
 | 4051 | 14001  | Incorrect text format  |
 
 ### See also

@@ -1,8 +1,8 @@
-Using Velero, you can create a backup copy of a Kubernetes cluster to the VK Cloud Solutions cloud and deploy this copy to a new cluster. This operation is useful when you want to replicate a custom cluster.
+Using Velero, you can create a backup copy of a Kubernetes cluster to the VK Cloud cloud and deploy this copy to a new cluster. This operation is useful when you want to replicate a custom cluster.
 
 For this you will need:
 
-- Kubernetes cluster deployed in VK CS;
+- Kubernetes cluster deployed in VK Cloud;
 - Velero client;
 - OpenStack Plugin.
 
@@ -14,7 +14,7 @@ It can take a snapshot from a persistent volume cluster using the cloud provider
 
 Every Velero operation — on-demand backup, scheduled backup, restore from backup - is a custom resource defined using Custom Resource Definition. Velero also contains its own controllers for tracking backup operations.
 
-Velero is ideal for a disaster recovery plan and for preparing a Kubernetes cluster for an upgrade by taking snapshots of the state of the cluster resources. In this scenario, we will install and configure Velero to interact with the Kubernetes cluster on VK Cloud Solutions and make a backup of the namespace with all content to the VK Cloud Storage S3 cloud storage using the Openstack plugin.
+Velero is ideal for a disaster recovery plan and for preparing a Kubernetes cluster for an upgrade by taking snapshots of the state of the cluster resources. In this scenario, we will install and configure Velero to interact with the Kubernetes cluster on VK Cloud and make a backup of the namespace with all content to the VK Cloud Storage S3 cloud storage using the Openstack plugin.
 
 ## Installing Velero client
 
@@ -45,7 +45,7 @@ velero --help
 
 Since Velero saves its backups to S3 storage, it is necessary to create a bucket in S3 storage before installing the server into the cluster.
 
-Create a my-velero-backup bucket in the Object Storage service using the VK CS Panel.
+Create a my-velero-backup bucket in the Object Storage service using the VK Cloud Panel.
 
 ![](./assets/1635260240187-unnamed.png)
 
@@ -91,7 +91,7 @@ Let's dwell on the arguments in detail:
 - \--bucket my-velero-backup — bucket for backups.
 - \--secret-file ./s3_cred — file with keys for connecting to S3 storage.
 - \--use-volume-snapshots = true — we will use PV snapshots for the current provider.
-- \--backup-location-config region = mail, s3ForcePathStyle = "true", s3Url = https: //hb.bizmrg.com: 443 — endpoint of connection to VK CS Object Storage.
+- \--backup-location-config region = mail, s3ForcePathStyle = "true", s3Url = https: //hb.bizmrg.com: 443 — endpoint of connection to VK Cloud Object Storage.
 
 After executing the command, you can see similar output:
 
@@ -114,11 +114,11 @@ kubectl logs deployment/velero -n velero
 
 The output should be free of errors.
 
-## Installing the VK CS plugin
+## Installing the VK Cloud plugin
 
-Next, you need to install the VK CS plugin to work with block storage.
+Next, you need to install the VK Cloud plugin to work with block storage.
 
-First, you need to get an openstack rc file containing the environment variables required to access the Openstack API. You can get the file in the " [Project settings](https://mcs.mail.ru/app/project/keys/) " menu in your VK CS personal account. To do this, go to the " API Keys " section and click "Download openrc version 3".
+First, you need to get an openstack rc file containing the environment variables required to access the Openstack API. You can get the file in the " [Project settings](https://mcs.mail.ru/app/project/keys/) " menu in your VK Cloud personal account. To do this, go to the " API Keys " section and click "Download openrc version 3".
 
 Save the file as openrc.sh. Next, add execute permissions:
 
@@ -126,7 +126,7 @@ Save the file as openrc.sh. Next, add execute permissions:
 . openrc.sh
 ```
 
-Enter the password for your VK Cloud Solutions account. After that, the openstack access parameters will be set in the environment variables.
+Enter the password for your VK Cloud account. After that, the openstack access parameters will be set in the environment variables.
 
 Create a credential file for the plugin using your account settings:
 
@@ -220,9 +220,9 @@ kubectl rollout restart deployment/velero -n velero
 
 You can check creation and restoration from backups using the nginx server as an example.
 
-Create a manifest, in which we describe the deployment and Persistent Volume Claim, indicating that the volume should be created through the VK Cloud Solutions block storage.
+Create a manifest, in which we describe the deployment and Persistent Volume Claim, indicating that the volume should be created through the VK Cloud block storage.
 
-Create an nginx-app.yml file, in which we describe the deployment and Persistent Volume Vlaim, indicating that the volume should be created through the VK Cloud Solutions block storage.
+Create an nginx-app.yml file, in which we describe the deployment and Persistent Volume Vlaim, indicating that the volume should be created through the VK Cloud block storage.
 
 ```
 ---
@@ -481,7 +481,7 @@ As you can see, the namespace and pods of the web server have been restored. Als
 openstack volume list
 ```
 
-If you restore to another cluster, then before restoring from a backup, you must repeat the Velero configuration for the new cluster (repeat the Installing velero to a Kubernetes cluster and Installing the VK CS plugin). The bucket and the keys to access the bucket are used by the existing ones (Bucket where the created backup of the Kubernetes cluster is located).
+If you restore to another cluster, then before restoring from a backup, you must repeat the Velero configuration for the new cluster (repeat the Installing velero to a Kubernetes cluster and Installing the VK Cloud plugin). The bucket and the keys to access the bucket are used by the existing ones (Bucket where the created backup of the Kubernetes cluster is located).
 
 ## Deleting a backup
 

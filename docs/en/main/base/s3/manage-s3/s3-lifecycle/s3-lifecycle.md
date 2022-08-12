@@ -6,11 +6,11 @@ Lifecycle configuration allows you to specify rules for managing the lifecycle o
 
 Object life cycles can be configured only for each individual bucket. You cannot configure lifecycles for a bucket group, catalog, or project.
 
-Lifecycle rules in the VK CS panel are managed on the "Lifecycle" tab of the selected bucket.
+Lifecycle rules in the VK Cloud panel are managed on the "Lifecycle" tab of the selected bucket.
 
 ## Create a rule
 
-When creating a rule in the VK CS panel interface, fill in the fields and confirm the creation:
+When creating a rule in the VK Cloud panel interface, fill in the fields and confirm the creation:
 
 ![](./assets/1598059111681-1598059111681.png)
 

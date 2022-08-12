@@ -12,7 +12,7 @@ Required: Yes
 
 **QueueUrl**
 
-The URL of the VK CS SQS queue whose message visibility has been changed.
+The URL of the VK Cloud SQS queue whose message visibility has been changed.
 
 URLs and queue names are case-sensitive.
 

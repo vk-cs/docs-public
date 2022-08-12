@@ -1,4 +1,4 @@
-To register, go to the [main page](https://mcs.mail.ru) of VK CS services and click on the "Create a VK CS account" or "Try" button.
+To register, go to the [main page](https://mcs.mail.ru) of VK Cloud services and click on the "Create a VK Cloud account" or "Try" button.
 
 Enter your username (your valid email) and create a password.
 

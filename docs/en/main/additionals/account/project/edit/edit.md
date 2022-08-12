@@ -2,7 +2,7 @@ To rename a project, select your project from the drop-down list in the header o
 
 The project name can be copied by clicking on the adjacent button. This is required for use in the API, CLI, or when submitting a case to technical support.
 
-To change additional information about the project, use the "Project settings" menu. In the project settings menu, you can fill in the data of an individual or legal entity, as well as download configuration files to access the VK CS platform through developer tools (API) and infrastructure management (Terraform).
+To change additional information about the project, use the "Project settings" menu. In the project settings menu, you can fill in the data of an individual or legal entity, as well as download configuration files to access the VK Cloud platform through developer tools (API) and infrastructure management (Terraform).
 
 ## Change of ownership
 
@@ -22,8 +22,8 @@ Upon reaching the zero balance, the project resources will be automatically stop
 
 This mechanism allows you to prevent the presence of unconscious additional costs on the project, it is especially useful if there is an attached automatic replenishment or a post-paid settlement method.
 
-If it is necessary to freeze the project, i.e. to suspend debiting money, then you need to stop all virtual machines and delete resources that fall under automatic billing: disks, buckets, backups, etc. With this approach, you can save some of the resources of your project for a while if you plan to return to using the VK CS platform later. There are no other ways to freeze the project.
+If it is necessary to freeze the project, i.e. to suspend debiting money, then you need to stop all virtual machines and delete resources that fall under automatic billing: disks, buckets, backups, etc. With this approach, you can save some of the resources of your project for a while if you plan to return to using the VK Cloud platform later. There are no other ways to freeze the project.
 
 ## Transfer resources between projects
 
-Within the framework of the VK CS platform, there is a limited set of options for transferring resources between projects. Transferring data from one project to another is possible for [Disks](https://mcs.mail.ru/docs/ru/base/iaas/vm-volumes).
+Within the framework of the VK Cloud platform, there is a limited set of options for transferring resources between projects. Transferring data from one project to another is possible for [Disks](https://mcs.mail.ru/docs/ru/base/iaas/vm-volumes).

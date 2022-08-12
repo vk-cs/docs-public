@@ -12,7 +12,7 @@ Required: Yes
 
 **QueueUrl**
 
-URL of the VK CS SQS queue from which messages are being deleted.
+URL of the VK Cloud SQS queue from which messages are being deleted.
 
 URLs and queue names are case-sensitive.
 

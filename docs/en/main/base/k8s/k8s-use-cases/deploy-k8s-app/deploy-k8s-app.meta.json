@@ -2,7 +2,7 @@
   "title": "Deploy apps via API",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "App Deployment via API - VK Cloud Solutions",
+  "metaTitle": "App Deployment via API - VK Cloud",
   "metaDescription": "Deploying an application to Kubernetes (k8s) is done using the kubectl utility. The full syntax of the utility commands can be found in the official documentation",
   "sectionTitle": "Deploy apps via API",
   "markdown": "",

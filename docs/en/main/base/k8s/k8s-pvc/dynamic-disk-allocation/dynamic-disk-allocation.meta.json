@@ -1,8 +1,8 @@
 {
   "title": "Dynamic allocation of PVC disks",
-  "pageDescription": "The Persistent Volume Claim (PVC) mechanism in VK CS allows you to dynamically allocate and attach block disks with the required characteristics to your pods.",
+  "pageDescription": "The Persistent Volume Claim (PVC) mechanism in VK Cloud allows you to dynamically allocate and attach block disks with the required characteristics to your pods.",
   "shortDescription": "",
-  "metaTitle": "Dynamic allocation of PVC disks - VK Cloud Solutions",
+  "metaTitle": "Dynamic allocation of PVC disks - VK Cloud",
   "metaDescription": "",
   "sectionTitle": "Dynamic allocation of PVC disks",
   "markdown": "",

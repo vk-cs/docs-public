@@ -1,4 +1,4 @@
-To edit your account, go to the "Access Management" section in the VK CS panel. In the user row, in the drop-down menu, click "Edit". Select a new role for the user and click Save Changes.
+To edit your account, go to the "Access Management" section in the VK Cloud panel. In the user row, in the drop-down menu, click "Edit". Select a new role for the user and click Save Changes.
 
 <warn>
 

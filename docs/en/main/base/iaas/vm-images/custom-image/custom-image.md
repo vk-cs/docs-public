@@ -6,16 +6,16 @@ Currently, images in the \*.raw format are supported.
 
 </warn>
 
-It is possible to upload an individual image of a virtual machine, created earlier locally, to a VK CS project using the following tools:
+It is possible to upload an individual image of a virtual machine, created earlier locally, to a VK Cloud project using the following tools:
 
 <tabs>
 <tablist>
-<tab>VK CS panel</tab>
+<tab>VK Cloud panel</tab>
 <tab>Openstack CLI</tab>
 </tablist>
 <tabpanel>
 
-To download the image [in your VK CS account](https://mcs.mail.ru/app/services/infra/servers/) you should:
+To download the image [in your VK Cloud account](https://mcs.mail.ru/app/services/infra/servers/) you should:
 
 1. Go to the Images page of the Cloud Computing service.
 2. Select "Create" in the top menu.
@@ -58,7 +58,7 @@ Depending on the format of the uploaded file, you need to specify the correspond
 
 ## Export image
 
-Images can be downloaded from VK CS to use virtual machine data in a local environment.
+Images can be downloaded from VK Cloud to use virtual machine data in a local environment.
 
 ### OpenStack CLI
 

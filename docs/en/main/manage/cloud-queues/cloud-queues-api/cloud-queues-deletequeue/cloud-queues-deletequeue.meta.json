@@ -2,7 +2,7 @@
   "title": "DeleteQueue",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "DeleteQueue - VK Cloud Solutions",
+  "metaTitle": "DeleteQueue - VK Cloud",
   "metaDescription": "The request deletes the queue specified in the QueueUrl, regardless of its contents.  Important Be careful with the deletequeueaction: when you delete a queue, everything",
   "sectionTitle": "DeleteQueue",
   "markdown": "",

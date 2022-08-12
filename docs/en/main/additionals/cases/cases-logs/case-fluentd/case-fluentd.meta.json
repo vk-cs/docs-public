@@ -2,7 +2,7 @@
   "title": "How to set up centralized logging from Kubernetes using Fluentd",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "How to set up centralized logging from Kubernetes using Fluentd - VK Cloud Solutions",
+  "metaTitle": "How to set up centralized logging from Kubernetes using Fluentd - VK Cloud",
   "metaDescription": "Why Kubernetes needs a special logging solution It is inconvenient to write logs to containers because: data generated in containerized applications exist as long as the container exists.",
   "sectionTitle": "How to set up centralized logging from Kubernetes using Fluentd",
   "markdown": "",

@@ -49,7 +49,7 @@ Example text.
 
 The PUT operation adds an object to the bucket. To perform the operation, you must have WRITE rights to the bucket.
 
-VK CS S3 adds partial objects if the object size exceeds 50MB. If a successful response is received, then the entire object has been added to the bucket.
+VK Cloud S3 adds partial objects if the object size exceeds 50MB. If a successful response is received, then the entire object has been added to the bucket.
 
 When performing concurrent PUT operations and when there are identical loadable objects, S3 overwrites everything except the last written object.
 

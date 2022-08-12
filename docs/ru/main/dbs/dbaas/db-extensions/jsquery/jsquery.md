@@ -2,7 +2,7 @@
 
 Подробнее о расширении **JsQuery** вы можете из документации разработчика на [GitHub](https://github.com/postgrespro/jsquery) или на [сайте](https://postgrespro.ru/docs/postgrespro/9.5/jsquery).
 
-#### Параметры, применимые в инфраструктуре VK Cloud Solutions:
+#### Параметры, применимые в инфраструктуре VK Cloud:
 
 |Название|Описание|
 |---|---|

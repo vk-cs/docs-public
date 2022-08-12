@@ -12,7 +12,7 @@ Pre-required:
 
 1.  Register a domain with any hosting provider
 2.  Create a subdomain that will be used for the created bucket
-3.  Link subdomain in VK CS panel
+3.  Link subdomain in VK Cloud panel
 
 ![](./assets/1598053021804-1598053021804.png)
 

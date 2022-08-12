@@ -1,6 +1,6 @@
-The VK CS platform allows you to work with legal entities that are residents of the Russian Federation on the basis of a [Public Offer](https://mcs.mail.ru/help/ru_RU/legal/legal-terms) . This is an offer addressed to an indefinite circle of persons and containing all the additionals conditions of the contract, from which the will of the offeror is seen to conclude an agreement on the conditions specified in the offer with anyone who responds. A person who has performed the necessary actions in order to accept a public offer (for example, who has sent an application for the relevant services) has the right to demand that the offeror fulfill its contractual obligations. ...
+The VK Cloud platform allows you to work with legal entities that are residents of the Russian Federation on the basis of a [Public Offer](https://mcs.mail.ru/help/ru_RU/legal/legal-terms) . This is an offer addressed to an indefinite circle of persons and containing all the additionals conditions of the contract, from which the will of the offeror is seen to conclude an agreement on the conditions specified in the offer with anyone who responds. A person who has performed the necessary actions in order to accept a public offer (for example, who has sent an application for the relevant services) has the right to demand that the offeror fulfill its contractual obligations. ...
 
-If it is necessary to conclude an individual Contract, you should contact [VK CS support](https://mcs.mail.ru/docs/contacts) .
+If it is necessary to conclude an individual Contract, you should contact [VK Cloud support](https://mcs.mail.ru/docs/contacts) .
 
 ## Organization details
 
@@ -30,12 +30,12 @@ For many organizations, the requisites will be filled in automatically. If this 
 
 Before making a payment on the invoice, you must make sure that the payment order must contain the project number in the purpose of the payment.
 
-Upon completion of registration, it is possible to receive closing documents for each of the created VK CS projects. Sending documents is carried out through Electronic Document Management (EDM). In his absence, the documents will be sent by the Russian Post to the legal address specified in the project settings.
+Upon completion of registration, it is possible to receive closing documents for each of the created VK Cloud projects. Sending documents is carried out through Electronic Document Management (EDM). In his absence, the documents will be sent by the Russian Post to the legal address specified in the project settings.
 
 ![](./assets/1595438091913-1595438091913.png)
 
 **Note**
 
-For organizations that are not residents of the Russian Federation, the conclusion of an individual Service Agreement is available. Upon conclusion of the Agreement, VK CS provides invoices and closing documents.
+For organizations that are not residents of the Russian Federation, the conclusion of an individual Service Agreement is available. Upon conclusion of the Agreement, VK Cloud provides invoices and closing documents.
 
 Detailed information can be obtained by [contacting our support](mailto:sales@mcs.mail.ru) .
