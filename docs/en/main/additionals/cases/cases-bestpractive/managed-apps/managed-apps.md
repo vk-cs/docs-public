@@ -27,21 +27,21 @@
 
 ## Availability Zones
 
-To create a fault-tolerant geographically distributed application, host the virtual infrastructure in different availability zones. The Availability Zone in VKCS corresponds to a single Tier III data center. The data centers themselves are connected by optical communication channels with high bandwidth. The use of availability zones is completely transparent for the application: at the level of virtual infrastructure within one project, no additional settings are required to organize the interaction between application components.
+To create a fault-tolerant geographically distributed application, host the virtual infrastructure in different availability zones. The Availability Zone in VK Cloud corresponds to a single Tier III data center. The data centers themselves are connected by optical communication channels with high bandwidth. The use of availability zones is completely transparent for the application: at the level of virtual infrastructure within one project, no additional settings are required to organize the interaction between application components.
 
 To place a virtual machine in a specific availability zone, it is enough to set the appropriate parameter when creating this virtual machine. Host the components of your application on multiple virtual machines distributed across different Availability Zones. In this way, you increase the fault tolerance and availability of your application in the event of a disaster.
 
 ## Block devices (Drives)
 
-In the Disks section of the VKCS portal, you can create a virtual block device with the desired disk type, availability zone, and size settings. We recommend that you create a disk in the same Availability Zone as the virtual machine to which it will be attached. This will help to avoid additional network delays (latency) when accessing the disk.
+In the Disks section of the VK Cloud portal, you can create a virtual block device with the desired disk type, availability zone, and size settings. We recommend that you create a disk in the same Availability Zone as the virtual machine to which it will be attached. This will help to avoid additional network delays (latency) when accessing the disk.
 
 The block device size can be up to 5 TB for the network HDD/SSD drive type. For the High-IOPS SSD drive type, the size limit is 2 TB. If you need a larger block device size on this type of disk, then you should create several High-IOPS SSD virtual block devices with the required total size, connect to a virtual machine and create one partition on them using LVM.
 
-The VKCS platform also has a Low Latency NVME disk type, which is characterized by minimal latency for I / O operations. This type corresponds to physical NVMe disks installed directly in the hypervisor. Due to the additionally applied data abstraction layer, Low Latency NVME disks have all the same advantages as other types of virtual disks.
+The VK Cloud platform also has a Low Latency NVME disk type, which is characterized by minimal latency for I / O operations. This type corresponds to physical NVMe disks installed directly in the hypervisor. Due to the additionally applied data abstraction layer, Low Latency NVME disks have all the same advantages as other types of virtual disks.
 
 Disk types differ in the number of IOPS and latency. When choosing a type, start from the IOPS and latency requirements for the specific application that will use this drive. For example, you should not choose the "network HDD" type for busy databases, or choose High-IOPS SSD or Low Latency NVME for unloaded environments. We also do not recommend creating a disk that is significantly larger than the amount of data stored. Otherwise, you will overpay for unused space and performance. If necessary, you can always change the type of an existing disk and increase its size.
 
-You can view available disk types in VKCS and SLA [here](https://mcs.mail.ru/docs/base/iaas/vm-volumes/volume-sla#tipy_diskov).
+You can view available disk types in VK Cloud and SLA [here](https://mcs.mail.ru/docs/base/iaas/vm-volumes/volume-sla#tipy_diskov).
 
 ## Improving DBMS fault tolerance
 
@@ -49,7 +49,7 @@ To increase the fault tolerance of the DBMS installation, we recommend deploying
 
 Distribute the nodes of the DBMS cluster across different availability zones. So you guarantee the safety of data and the performance of the application in the event of an accident in one of the availability zones. Be sure to set up data backup. It is important to remember that replication is not backup. For storing backups, Cloud Storage is an excellent choice, a fault-tolerant, geo-distributed object storage that runs on the S3 protocol.
 
-On the VKCS platform, you can use popular DBMS for your tasks, which we provide according to the [PaaS] model (https://mcs.mail.ru/databases/). This service has built-in high-availability mechanisms and tools for creating consistent backups.
+On the VK Cloud platform, you can use popular DBMS for your tasks, which we provide according to the [PaaS] model (https://mcs.mail.ru/databases/). This service has built-in high-availability mechanisms and tools for creating consistent backups.
 
 ## Load balancers
 
@@ -57,10 +57,10 @@ A load balancer is an infrastructure component that receives incoming traffic/re
 
 Distribute VMs in a balancing group approximately equally across Availability Zones. In addition, we recommend keeping such several virtual machines in the balancing group that will allow you to withstand the failure of one or two VMs without degradation in servicing requests to your application.
 
-On the VKCS platform, use our failover LBaaS service as a load balancer. You can find the service setup guide [here](https://mcs.mail.ru/help/network/balancers). After configuring LBaaS, it is recommended to perform load testing, as well as a trial shutdown of the virtual machines included in the balancing group.
+On the VK Cloud platform, use our failover LBaaS service as a load balancer. You can find the service setup guide [here](https://mcs.mail.ru/help/network/balancers). After configuring LBaaS, it is recommended to perform load testing, as well as a trial shutdown of the virtual machines included in the balancing group.
 
 ## Message queues
 
 A Message Queue is a component that allows different parts of an application to communicate with each other asynchronously. Using them will help increase the reliability and scalability of your application. The message queue is a buffer for temporarily storing messages and endpoints for sending and receiving messages by application components. The message will be held in the queue until another component retrieves it and performs some operation on it. A queue can be used by multiple sources and recipients, but each message is processed by one recipient only once. For a more detailed understanding of why message queues are needed, read [an article on our blog] (https://mcs.mail.ru/blog/zachem-nuzhny-ocheredi-soobshcheniy-v-mikroservisnoy-arkhitekture).
 
-VKCS platform provides a highly available and fault-tolerant [message queue service](https://mcs.mail.ru/blog/zachem-nuzhny-ocheredi-soobshcheniy-v-mikroservisnoy-arkhitekture).
+VK Cloud platform provides a highly available and fault-tolerant [message queue service](https://mcs.mail.ru/blog/zachem-nuzhny-ocheredi-soobshcheniy-v-mikroservisnoy-arkhitekture).
