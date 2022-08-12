@@ -1,32 +1,28 @@
-## Общая информация
+## General information
 
-CORS (Cross-Origin Resource Sharing) - технология совместного использования ресурсов между разными источниками, позволяющая определять способ взаимодействия клиентских веб-приложений, загружаемых в один домен, с ресурсами другого домена.
+CORS (Cross-Origin Resource Sharing) is a resource sharing technology between different origins that allows you to determine how client web applications loaded in one domain interact with resources in another domain.
 
-Иными словами, это механизм, использующий дополнительные HTTP-заголовки, чтобы дать возможность агенту пользователя получать разрешения на доступ к выбранным ресурсам с сервера на источнике (домене), отличном от того, что сайт использует в данный момент.
+In other words, it is a mechanism that uses additional HTTP headers to allow the user agent to obtain permissions to access selected resources from a server on an origin (domain) other than what the site is currently using.
 
-CORS поддерживает кросс-доменные запросы и передачу данных между браузером и web-серверами по защищенному соединению. Современные браузеры используют CORS в API-контейнерах, таких как XMLHttpRequest или Fetch, чтобы снизить риски, присущие запросам с других источников.
+CORS supports cross-domain requests and the transfer of data between the browser and web servers over a secure connection. Modern browsers use CORS in container APIs like XMLHttpRequest or Fetch to mitigate the risks inherent in requests from other sources.
 
-## Сценарии использования
+## Usage scenarios
 
-Ниже перечислены варианты использования технологии CORS.
+The use cases for CORS technology are listed below.
 
-- **Сценарий №1**. Например, на персональных ресурсах размещается веб-сайт в бакете с названием website. Пользователи загружают URL-адрес конечной точки сайта. Теперь становится необходимо использовать JavaScript на веб-страницах, хранимых в этом бакете, чтобы отправлять аутентифицированные запросы GET и PUT для того же бакета с помощью конечной точки API сервиса для бакета. Обычно браузер предотвращает выполнение кода JavaScript, разрешающего такие запросы, но используя технологию CORS, можно настроить бакет так, чтобы запросы Cross-origin были разрешены с веб-сайта.
-- **Сценарий №2**. Например, необходимо разместить на своих ресурсах веб-шрифт из бакета сервиса. Браузеры обязательно проводят проверку CORS (предварительную проверку) для загрузки веб-шрифтов, так что необходимо настроить бакет, размещающий на своих ресурсах веб-шрифт, на разрешение создания запросов из любого источника.
+- **Scenario #1**. For example, personal resources host a website in a bucket called website. Users load the site endpoint URL. It now becomes necessary to use JavaScript on web pages stored in this bucket to send authenticated GET and PUT requests to the same bucket using the bucket service API endpoint. Normally, the browser will prevent JavaScript from executing to allow such requests, but using CORS technology, you can set up a bucket so that cross-origin requests are allowed from the website.
+- **Scenario #2**. For example, you need to place a web font from a service bucket on your resources. Browsers are required to perform CORS checks (preflight) to load web fonts, so the bucket hosting the web font must be configured to allow requests from any origin.
 
-## Создание правила CORS
+## Create a CORS rule
 
-Сервис "Объектное хранилище" поддерживает технологию кросс-доменных запросов ресурсов в бакете. Создать правило можно на вкладке CORS открытого бакета.
+The "Object storage" service supports the technology of cross-domain requests for resources in a bucket. You can create a rule on the CORS tab of an open bucket.
 
-![](./assets/1598060720120-1598060720120.png)
+Where:
 
-![](./assets/1598060751673-1598060751673.png)
+- AllowedOrigins - a website from which cross-domain requests to the bucket are allowed. Can contain at most one \* character.
+- AllowedMethods - HTTP method allowed to be used for cross-domain request. You can use multiple methods in one rule.
+- MaxAgeSeconds — time in seconds during which the browser caches the result of a request to an object using the options method.
+- AllowedHeaders — allowed header in the request to the object. A single \* character can be used in the header name to define a pattern. Object storage matches the headers passed in Access-Control-Request-Headers to the AllowedHeaders set and responds to options with a list of allowed ones.
+- ExposeHeaders - header allowed to be displayed in a JavaScript application in a browser. In a request to an object, the JavaScript client can only operate on the headers defined in the ExposeHeaders elements.
 
-Где:
-
-- AllowedOrigins - веб-сайт, с которого разрешены кросс-доменные запросы к бакету. Может содержать не более одного символа \*
-- AllowedMethods - HTTP метод, разрешенный для использования при кросс-доменном запросе. Допускается использование нескольких методов в одном правиле
-- MaxAgeSeconds - время в секундах, в течение которого браузер сохраняет в кэше результат запроса к объекту методом options
-- AllowedHeaders - разрешенный заголовок в запросе к объекту. В имени заголовка можно использовать один символ \* для определения шаблона. Объектное хранилище сопоставляет заголовки, переданные в Access-Control-Request-Headers, с набором AllowedHeaders и отвечает на options списком разрешенных
-- ExposeHeaders - заголовок, разрешенный к показу в JavaScript-приложении в браузере. В запросе к объекту JavaScript-клиент может оперировать только заголовками, определенными в элементах ExposeHeaders
-
-При необходимости в конфигураторе правил можно добавить несколько значений параметров.
+If necessary, you can add multiple parameter values ​​in the rules configurator.
