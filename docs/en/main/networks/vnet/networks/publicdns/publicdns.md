@@ -2,9 +2,9 @@
 
 DNS is a hierarchical distributed database that allows you to store IP addresses and other data, as well as view information on DNS names.
 
-VK CS allows you to publish your zones and records in DNS without having to deploy your DNS servers.
+VK Cloud allows you to publish your zones and records in DNS without having to deploy your DNS servers.
 
-VK CS offers:
+VK Cloud offers:
 
 - **Public DNS** - allows you to manage DNS zones that are visible on the Internet.
 - **Private DNS** - exists inside a private network, the zones created here are not visible from the Internet. Read more about private DNS [here](https://mcs.mail.ru/help/ru_RU/networks/private-dns).
@@ -24,29 +24,29 @@ Enter the data in the input fields:
 - TTRetry - if the primary server is unavailable, then after the time (in seconds) specified in this parameter, the server will try to synchronize the information again.
 - TTL - cache lifetime for a negative response to a request in the zone.
 
-Click "Add Zone". After that, contact the registrar from whom the domain was purchased to delegate zone management to the VK CS DNS server (ns1.mcs.mail.ru, ns2.mcs.mail.ru). With most providers, you can delegate zone management yourself. If you have any questions about how to do this, please contact your registrar for help.
+Click "Add Zone". After that, contact the registrar from whom the domain was purchased to delegate zone management to the VK Cloud DNS server (ns1.mcs.mail.ru, ns2.mcs.mail.ru). With most providers, you can delegate zone management yourself. If you have any questions about how to do this, please contact your registrar for help.
 
 ## Creating a subzone
 
-A subzone is a DNS zone that is a level lower than the current one. For example, for the example.com domain (for which you created a zone in the VK CS DNS service), the subzone will be subzone.example.com.
+A subzone is a DNS zone that is a level lower than the current one. For example, for the example.com domain (for which you created a zone in the VK Cloud DNS service), the subzone will be subzone.example.com.
 
 A subzone can be created:
 
 1. In the current project, to separate the resource records of the subzone from the records of the main zone.
-2. In another VK CS project.
+2. In another VK Cloud project.
 3. From a third-party DNS provider.
 
-If you want to create a subzone in the current project or another VK CS project, you need to create 2 NS records with the name of the subzone, re-delegating the subzone to the VK CS DNS server ([ns1.mcs.mail.ru](http://ns1.mcs. mail.ru), [ns2.mcs.mail.ru](http://ns2.mcs.mail.ru)). The process of creating NS records is described below.
+If you want to create a subzone in the current project or another VK Cloud project, you need to create 2 NS records with the name of the subzone, re-delegating the subzone to the VK Cloud DNS server ([ns1.mcs.mail.ru](http://ns1.mcs. mail.ru), [ns2.mcs.mail.ru](http://ns2.mcs.mail.ru)). The process of creating NS records is described below.
 
 If you want to create a subzone with a third-party provider, then the generated NS records will need to point to the DNS servers of the third-party provider.
 
-After creating the NS records, you can create a zone for the delegated subdomain. How to create a zone in the VK CS project is described above.
+After creating the NS records, you can create a zone for the delegated subdomain. How to create a zone in the VK Cloud project is described above.
 
 ## Adding resource records
 
 A resource record is a DNS record for a domain in the Domain Name System. With their help, you determine where to send requests that come in for domain names, as well as provide additional information about the domain.
 
-VK CS supports the resource record types described below.
+VK Cloud supports the resource record types described below.
 
 ### A
 
@@ -80,7 +80,7 @@ When adding an AAAA record, you must specify:
 
 ### NS
 
-NS is a DNS record that contains the address of the name server that serves the given zone or subzone. Two NS records will be set in the default zone, these records are set on the side of the domain name registrar to transfer domain control rights to the VK CS name server.
+NS is a DNS record that contains the address of the name server that serves the given zone or subzone. Two NS records will be set in the default zone, these records are set on the side of the domain name registrar to transfer domain control rights to the VK Cloud name server.
 
 When adding an NS type entry, you must specify:
 

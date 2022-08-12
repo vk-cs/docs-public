@@ -2,7 +2,7 @@
 
 More information about using the extension can be found on the extension [documentation page](https://github.com/darold/pgbadger).
 
-#### Parameters applicable in VK Cloud Solutions infrastructure:
+#### Parameters applicable in VK Cloud infrastructure:
 
 | Name                         | Description                                                                                                                                                                            | Example                       |
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |

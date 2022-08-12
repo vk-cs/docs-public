@@ -7,7 +7,7 @@ In practice, enabling multiqueue sets the number of queues equal to the number o
 ## Conditions for enabling multiqueue
 
 - the virtual machine image must be uploaded by the user himself.
-- the virtual machine image must be different from the default images (pre-installed in VK CS).
+- the virtual machine image must be different from the default images (pre-installed in VK Cloud).
 
 <warn>
 

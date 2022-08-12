@@ -2,7 +2,7 @@
   "title": "PostgreSQL: switching the wizard",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "PostgreSQL: Master switching - VK Cloud Solutions",
+  "metaTitle": "PostgreSQL: Master switching - VK Cloud",
   "metaDescription": "Introduction The Patroni-based PostgreSQL cluster exists precisely to automatically switch the master VM in case of problems. Due to high guarantees",
   "sectionTitle": "PostgreSQL: master switching",
   "markdown": "",

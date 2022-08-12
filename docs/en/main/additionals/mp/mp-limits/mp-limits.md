@@ -1,1 +1,1 @@
-The technical and technological limits of the VK CS platform to consider when planning applications.
+The technical and technological limits of the VK Cloud platform to consider when planning applications.

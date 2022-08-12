@@ -35,7 +35,7 @@ AttributeName.N
 - SentTimestamp\- Возвращает время, когда сообщение было отправлено в очередь ( [время эпохи](http://en.wikipedia.org/wiki/Unix_time) в миллисекундах).
 - MessageDeduplicationId\- Возвращает значение, предоставленное производителем, который вызывает действие. [SendMessage](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html)
 - MessageGroupId\- Возвращает значение, предоставленное производителем, который вызывает действие. Сообщения с такими же сообщениями возвращаются последовательно. [SendMessage](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) MessageGroupId
-- SequenceNumber - Возвращает значение, предоставленное VK CS SQS.
+- SequenceNumber - Возвращает значение, предоставленное VK Cloud SQS.
 
 Тип: массив строк
 
@@ -69,7 +69,7 @@ MessageAttributeName.N
 
 QueueUrl
 
-URL-адрес очереди VK CS SQS, из которой получены сообщения.
+URL-адрес очереди VK Cloud SQS, из которой получены сообщения.
 
 URL-адреса и имена очередей чувствительны к регистру.
 

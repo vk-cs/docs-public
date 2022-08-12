@@ -3,7 +3,7 @@ If the positive balance is not restored, the project resources will be placed in
 - If there were no cash flows in the project, then after 3 days all resources will be deleted;
 - If the payment was made, then the resources will be placed in the queue for deletion 30 days (or when the balance is equal to -1000 rubles) after the services stop.
 
-The deletion queue is a mechanism for cleaning resources, in which data from the project and the VK CS platform are permanently deleted, without the possibility of their recovery.
+The deletion queue is a mechanism for cleaning resources, in which data from the project and the VK Cloud platform are permanently deleted, without the possibility of their recovery.
 
 ## Deleting a project
 

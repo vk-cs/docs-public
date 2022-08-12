@@ -1,4 +1,4 @@
-The Cloud Queues service from VK Cloud Solutions is compatible with the Amazon SQS API. To work with the queue service, you can use the [AWS CLI] tool (https://aws.amazon.com/ru/cli /) to execute commands using the command-line shell.
+The Cloud Queues service from VK Cloud is compatible with the Amazon SQS API. To work with the queue service, you can use the [AWS CLI] tool (https://aws.amazon.com/ru/cli /) to execute commands using the command-line shell.
 
 With the AWS CLI, you can do the following:
 
@@ -108,7 +108,7 @@ aws --version
 
 ## Getting Cloud Queues Access Keys
 
-Access keys consist of an access key identifier and a secret access key used to sign program requests sent to VK CS. You can create access keys in the VK CS panel in the "Access Keys" menu.
+Access keys consist of an access key identifier and a secret access key used to sign program requests sent to VK Cloud. You can create access keys in the VK Cloud panel in the "Access Keys" menu.
 
 You can only view or download a secret access key when the keys are created, and it will be impossible to restore them later. However, you can create new access keys at any time.
 

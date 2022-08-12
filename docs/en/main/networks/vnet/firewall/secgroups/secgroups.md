@@ -6,7 +6,7 @@ GRE traffic is available only on ext-net networks.
 
 ## Creating a security group
 
-You can create a security group on the "Firewall Settings" page of the "Virtual Networks" section [in your VK CS account](https://mcs.mail.ru/app/services/infra/shares/) using the "Add" button:![](./assets/1597681636745-snimok-ekrana-2020-08-17-v-19.27.03.png)
+You can create a security group on the "Firewall Settings" page of the "Virtual Networks" section [in your VK Cloud account](https://mcs.mail.ru/app/services/infra/shares/) using the "Add" button:![](./assets/1597681636745-snimok-ekrana-2020-08-17-v-19.27.03.png)
 
 ## Viewing the list of rules
 

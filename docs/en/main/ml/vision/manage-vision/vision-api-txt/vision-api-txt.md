@@ -14,7 +14,7 @@ Supported OAuth2 providers:
 | **Provider** | **Value of oauth_provider** | **Getting a token**                                                                                      | **Projects**           |
 | ------------ | --------------------------- | -------------------------------------------------------------------------------------------------------- | ---------------------- |
 | Mail.Ru      | mr                          | [https://help.mail.ru/biz/vision/api/v1/oauth_token](https://help.mail.ru/biz/vision/api/v1/oauth_token) | internal projects only |
-| MCS          | mcs                         | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token)   | all MCS clients        |
+| VK Cloud          | mcs                         | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token)   | all VK Cloud clients        |
 
 Request parameters are passed in `JSON' format in the request body with 'name="meta":`
 

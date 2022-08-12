@@ -18,7 +18,7 @@ ENDPOINT: /api/v1/text/recognize
 | **Провайдер** | **Значение oauth_provider** | **Получение токена**                                                                                     | **Проекты**               |
 | ------------- | --------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------- |
 | Mail.Ru       | mr                          | [https://help.mail.ru/biz/vision/api/v1/oauth_token](https://help.mail.ru/biz/vision/api/v1/oauth_token) | только внутренние проекты |
-| MCS           | mcs                         | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token)   | все клиенты MCS           |
+| VK Cloud           | mcs                         | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token)   | все клиенты VK Cloud           |
 
 Параметры запроса передаются в формате `JSON` в теле запроса с `name="meta":`
 

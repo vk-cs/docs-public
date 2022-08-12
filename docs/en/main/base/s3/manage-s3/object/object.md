@@ -1,4 +1,4 @@
-VK CS Object Storage is a simple key and value store designed to store any number of objects. These objects are stored in one or more buckets, and each object can be up to 320 TB in size.
+VK Cloud Object Storage is a simple key and value store designed to store any number of objects. These objects are stored in one or more buckets, and each object can be up to 320 TB in size.
 
 ## general information
 
@@ -8,15 +8,15 @@ The object consists of the following:
 
 **Value** is the content of the stored object. The object value can be any sequence of bytes. Objects can range in size from zero to 320 TB.
 
-**Metadata** is a set of name-value pairs that can be used to store information about an object. It is possible to assign metadata, called custom metadata, to your objects in Object Storage. VK CS also assigns system metadata to these objects, which is used to manage the objects. The object's custom metadata can be up to 2KB in size.
+**Metadata** is a set of name-value pairs that can be used to store information about an object. It is possible to assign metadata, called custom metadata, to your objects in Object Storage. VK Cloud also assigns system metadata to these objects, which is used to manage the objects. The object's custom metadata can be up to 2KB in size.
 
-**Information for access control** **(Access Control Information)** - you can control access to objects stored in the Object repository. VK CS supports resource-based access control such as access control list (ACL) and bucket policies, as well as user-based access control.
+**Information for access control** **(Access Control Information)** - you can control access to objects stored in the Object repository. VK Cloud supports resource-based access control such as access control list (ACL) and bucket policies, as well as user-based access control.
 
 ## Functionality
 
 Loadable objects have additional functionality such as:
 
-Storage class - VK CS provides the ability to use several storage classes to best suit the needs: Hotbox for active work with objects and Cold storage (Icebox) for long-term storage with rare requests to them.
+Storage class - VK Cloud provides the ability to use several storage classes to best suit the needs: Hotbox for active work with objects and Cold storage (Icebox) for long-term storage with rare requests to them.
 
 Lifecycle - a mechanism that determines automatic actions to delete individual objects of a bucket or a group of objects within a specified period of time
 
@@ -30,7 +30,7 @@ To load objects, go to the created bucket in the "Buckets" section of the "Objec
 
 ![](./assets/1598208678739-1598208678739.png)
 
-The VK CS panel allows you to work with buckets as with a hierarchical file system: create folders and load objects into them. The key of the object will be the entire path to the object from the root of the bucket.
+The VK Cloud panel allows you to work with buckets as with a hierarchical file system: create folders and load objects into them. The key of the object will be the entire path to the object from the root of the bucket.
 
 When loading a folder, S3 loads all files and subfolders from the specified folder into the bucket. It then assigns a key object name, which is a combination of the downloaded file name and the folder name.
 
@@ -38,17 +38,17 @@ If an object with a key name that already exists in the bucket is loaded, S3 rep
 
 ## Displaying objects
 
-You can view the objects in the bucket using graphical tools such as the VK CS Panel or graphical file manager, and the AWS S3 CLI console.
+You can view the objects in the bucket using graphical tools such as the VK Cloud Panel or graphical file manager, and the AWS S3 CLI console.
 
-In the VK CS panel, the list of objects is available when you select a bucket in the Buckets menu of the Object Storage service:
+In the VK Cloud panel, the list of objects is available when you select a bucket in the Buckets menu of the Object Storage service:
 
 ![](./assets/1598218430495-1598218430495.png)
 
-In Object Storage, a folder is a zero-sized object whose key is included in the keys of other objects as a prefix. The VK CS panel interface, as well as file managers such as CyberDuck, allow you to work with these objects as folders, simulating a hierarchical structure.
+In Object Storage, a folder is a zero-sized object whose key is included in the keys of other objects as a prefix. The VK Cloud panel interface, as well as file managers such as CyberDuck, allow you to work with these objects as folders, simulating a hierarchical structure.
 
 ## Downloading an object
 
-Downloading of a single object or a group of objects is available in the VK CS panel.
+Downloading of a single object or a group of objects is available in the VK Cloud panel.
 
 To download objects, select the desired object or mark several objects and click the "Download" button:
 
@@ -78,9 +78,9 @@ Making a folder public will open access to the objects contained in that folder,
 
 ## Deleting an Object
 
-Deleting an object, folder or group of objects can be done in the graphical interface of the VK CS panel, S3 CLI or any S3-compatible file manager.
+Deleting an object, folder or group of objects can be done in the graphical interface of the VK Cloud panel, S3 CLI or any S3-compatible file manager.
 
-To delete one or several objects or folders in the VK CS panel, select one or several objects or folders and press the "Delete" button in the object menu or the list menu:
+To delete one or several objects or folders in the VK Cloud panel, select one or several objects or folders and press the "Delete" button in the object menu or the list menu:
 
 ![](./assets/1598219417350-1598219417350.png)
 

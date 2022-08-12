@@ -6,9 +6,9 @@ On the territory of Crimea, Microsoft licensing services are not provided to cus
 
 </info>
 
-The VK CS platform allows you to create virtual machines with pre-installed licensed copies of Microsoft Windows Server operating systems, as well as use additional Microsoft software products available, such as: SQL Server, Remote Desktop Services, Exchange Server with monthly payment.
+The VK Cloud platform allows you to create virtual machines with pre-installed licensed copies of Microsoft Windows Server operating systems, as well as use additional Microsoft software products available, such as: SQL Server, Remote Desktop Services, Exchange Server with monthly payment.
 
-VK CS has the right to provide Microsoft software under the Service Provider License Agreement (SPLA) for the purpose of providing software services.
+VK Cloud has the right to provide Microsoft software under the Service Provider License Agreement (SPLA) for the purpose of providing software services.
 
 At the moment, the list of software products provided within SPLA is limited to the following set:
 
@@ -53,11 +53,11 @@ When changing the type of virtual machine, the number of licenses will be change
 
 To activate Windows Server OS, you may need a license key, as evidenced by the inscription in the lower right corner of the screen. In this case, it is necessary to [contact technical support](https://mcs.mail.ru/docs/contacts) to fix the OS activation failure. Depending on the operating system, either an activation key or a command for self-activation of the licensed copy will be provided.
 
-The presence of an activation failure does not affect the period of use of the license, since the VK CS platform does not provide a trial period for using Microsoft licenses.
+The presence of an activation failure does not affect the period of use of the license, since the VK Cloud platform does not provide a trial period for using Microsoft licenses.
 
 If you chose Windows 2012 / 2016 operating system when creating a virtual machine, then you can purchase an activation key. Without activation after the trial period expires (two weeks), Windows will restart every hour.
 
-To get an activation key, write to us in the feedback form indicating the VK CS account and the number of licenses.
+To get an activation key, write to us in the feedback form indicating the VK Cloud account and the number of licenses.
 
 ## Remote Desktop Services
 
@@ -74,7 +74,7 @@ Each operating system user who connects using the Remote Desktop Protocol (RDP) 
 
 <warn>
 
-Licenses for Remote Desktop Services can only be granted for a licensed copy of the instance's MS Windows operating system purchased from VK CS.
+Licenses for Remote Desktop Services can only be granted for a licensed copy of the instance's MS Windows operating system purchased from VK Cloud.
 
 To activate the license, you should [contact technical support](https://mcs.mail.ru/docs/contacts) and provide the data of the project, instance, the required number of licenses, as well as the parameters for connecting to the remote desktop of the instance to activate licenses.
 
@@ -94,4 +94,4 @@ SQL Server licenses are granted simultaneously with operating system licenses wh
 
 ## Upgrade (upgrade level) of licenses
 
-To upgrade the license level of the software used, contact [VK CS Technical Support](https://mcs.mail.ru/help/contact-us).
+To upgrade the license level of the software used, contact [VK Cloud Technical Support](https://mcs.mail.ru/help/contact-us).

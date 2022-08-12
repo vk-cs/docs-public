@@ -39,7 +39,7 @@ The services from the example [Cafe from NGINX](https://github.com/nginxinc/kube
 
 1. Find out the IP address of the load balancer for the Ingress controller in one of the ways:
 
-   1. After looking at it in the cluster properties in [VK CS panel](https://mcs.mail.ru/app/):
+   1. After looking at it in the cluster properties in [VK Cloud panel](https://mcs.mail.ru/app/):
 
       1. Go to the "Containers" section.
       1. Click on the name of the desired cluster.

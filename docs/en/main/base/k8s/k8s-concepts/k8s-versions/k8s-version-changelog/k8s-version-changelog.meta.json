@@ -1,8 +1,8 @@
 {
   "title": "History of versions Kubernetes",
-  "pageDescription": "The VK Cloud Solutions platform provides several versions of Kubernetes, which can be used in cloud clusters.Here you will find a detailed story of Kubernetes versions that are supported or supported in the past.Each version presents: a brief description of the changes in the VK Cloud service and in Kubernetes itself.",
-  "shortDescription": "The history of Kubernetes versions that are supported or supported in the past for VK Cloud Solutions clusters",
-  "metaTitle": "History of versions Kubernetes - VK Cloud Solutions",
+  "pageDescription": "The VK Cloud platform provides several versions of Kubernetes, which can be used in cloud clusters.Here you will find a detailed story of Kubernetes versions that are supported or supported in the past.Each version presents: a brief description of the changes in the VK Cloud service and in Kubernetes itself.",
+  "shortDescription": "The history of Kubernetes versions that are supported or supported in the past for VK Cloud clusters",
+  "metaTitle": "History of versions Kubernetes - VK Cloud",
   "metaDescription": "Kubernetes,K8S,Version, History ",
   "sectionTitle": "History of versions Kubernetes",
   "markdown": "",

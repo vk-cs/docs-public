@@ -4,7 +4,7 @@ To fully activate the services, you must register and confirm your phone number.
 
 One phone number can be registered per account. If the specified number is already linked to another account, it will not be possible to re-link it to a new account.
 
-If you fail to register a phone number at this stage, registration can be postponed with the "Enter later" button, then return to this stage when you go to any of the VK CS services of your personal account.
+If you fail to register a phone number at this stage, registration can be postponed with the "Enter later" button, then return to this stage when you go to any of the VK Cloud services of your personal account.
 
 </warn>
 

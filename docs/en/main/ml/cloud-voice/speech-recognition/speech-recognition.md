@@ -74,7 +74,7 @@ Answer example:
 | 4044 | 400    | Unsupported number of audio channels          |
 | 4045 | 400    | Unsupported audio sample rate                 |
 | 4048 | 400    | Invalid token                                 |
-| 4049 | 400    | Inactive project VK CS                        |
+| 4049 | 400    | Inactive project VK Cloud                        |
 
 ## Recognize streaming audio
 

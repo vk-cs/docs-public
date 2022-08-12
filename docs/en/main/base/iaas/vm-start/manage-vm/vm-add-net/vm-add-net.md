@@ -10,7 +10,7 @@ You can also create a new network on the fly when creating a virtual machine. In
 
 ## Adding a connection after creating a VM
 
-To manage VM network connections [in VK CS personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
+To manage VM network connections [in VK Cloud personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
 
 1. Go to the "Virtual Machines" page of the "Cloud Computing" section.
 2. Open the instance card, go to the "Networks" tab. This page displays all network connections.

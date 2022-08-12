@@ -10,7 +10,7 @@ Each Velero operation - On-Demand Backup, Scheduled Backup, Restore from Backup 
 
 Velero is ideal for a disaster recovery plan and for preparing a kubernetes cluster for upgrade by taking snapshots of the cluster resource state.
 
-In this scenario, we will install and configure the velero to interact with the kubernetes cluster from VK Cloud Solutions and make a backup of the namespace with all the content to the S3 cloud storage.
+In this scenario, we will install and configure the velero to interact with the kubernetes cluster from VK Cloud and make a backup of the namespace with all the content to the S3 cloud storage.
 
 ## Installing Velero client
 
@@ -35,9 +35,9 @@ velero --help
 
 ## Creating a bucket for backups
 
-Since velero saves its backups to s3 storage, it is necessary to create a bucket in s3 storage VK CS before installing the server into the cluster.
+Since velero saves its backups to s3 storage, it is necessary to create a bucket in s3 storage VK Cloud before installing the server into the cluster.
 
-Let's create a veleromail bucket via VK CS Panel in the "Object Storage" section.
+Let's create a veleromail bucket via VK Cloud Panel in the "Object Storage" section.
 
 ![](./assets/1602114313386-1602114313386.png)
 
@@ -49,7 +49,7 @@ Since we need keys to access the bucket, let's create a s3_creds file in the dir
 aws_access_key_id = <AWS_ACCESS_KEY_ID>
 aws_secret_access_key = <AWS_SECRET_ACCESS_KEY>
 
-Access keys can be obtained when creating an account in the VK CS Panel in the "Object storage" section.
+Access keys can be obtained when creating an account in the VK Cloud Panel in the "Object storage" section.
 
 ## Installing the velero server
 
@@ -79,7 +79,7 @@ Let's dwell on the arguments in detail:
 - \--bucket veleromail - bucket for backups
 - \--secret-file ./s3_cred - file with keys for connecting to s3 storage
 - \--use-volume-snapshots = false - we will not use pv snapshots for the current provider
-- \--backup-location-config region = mail, s3ForcePathStyle = "true", s3Url = https: //hb.bizmrg.com: 443 - endpoint of connection to VK CS Object Storage
+- \--backup-location-config region = mail, s3ForcePathStyle = "true", s3Url = https: //hb.bizmrg.com: 443 - endpoint of connection to VK Cloud Object Storage
 
 After executing the command, we should see similar output:
 

@@ -20,7 +20,7 @@ After registering a phone number, changing it is possible only through a request
 
 ## Can't register with my phone number
 
-If your phone number belongs to a country other than the Russian Federation, and has a prefix (code) not +7, then registration of such a phone will not be possible through your VK CS personal account.
+If your phone number belongs to a country other than the Russian Federation, and has a prefix (code) not +7, then registration of such a phone will not be possible through your VK Cloud personal account.
 
 ## I forgot my account password
 
@@ -32,7 +32,7 @@ Two-factor authentication can only be restored by disabling this option by the t
 
 ## I did not receive bonus points upon registration
 
-Bonus points are awarded when the first project is created in VK CS; this option is not available for subsequent projects.
+Bonus points are awarded when the first project is created in VK Cloud; this option is not available for subsequent projects.
 
 ## I do not have enough quotas
 

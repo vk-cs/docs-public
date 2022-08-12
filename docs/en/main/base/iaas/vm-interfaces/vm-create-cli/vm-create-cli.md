@@ -4,7 +4,7 @@ Consider creating a virtual machine using the Openstack CLI.
 
 ## Before starting work
 
-To create a virtual machine, you should register on the VK CS Platform, make sure that there is an activated Cloud computing service, a positive account balance of your personal account, as well as a sufficient number of resource quotas to create the desired instance configuration.
+To create a virtual machine, you should register on the VK Cloud Platform, make sure that there is an activated Cloud computing service, a positive account balance of your personal account, as well as a sufficient number of resource quotas to create the desired instance configuration.
 
 ## Overview
 
@@ -130,7 +130,7 @@ After all the data is collected, you can start creating an instance. At this sta
 
 <warn>
 
-If you load an instance with an INSTANCE_NAME that exceeds 63 characters in length, VK CS automatically truncates it when converting to a hostname to ensure that dnsmasq works correctly.
+If you load an instance with an INSTANCE_NAME that exceeds 63 characters in length, VK Cloud automatically truncates it when converting to a hostname to ensure that dnsmasq works correctly.
 
 </warn>
 
@@ -197,7 +197,7 @@ If the server was created correctly, you can see this output:
 
 The state of bilding means that the instance is running, but not yet ready for use. The active status indicates that the instance is active. Copy the value of the administrative password from the adminPass field. You can use this password later to log in to your server via the KVM console.
 
-You can also see information about the new instance in the VK CS panel.
+You can also see information about the new instance in the VK Cloud panel.
 
 To get additional parameters, use the following command:
 

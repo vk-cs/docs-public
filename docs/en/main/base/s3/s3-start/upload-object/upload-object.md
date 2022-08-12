@@ -2,7 +2,7 @@ The created bucket can be loaded with files that are saved as an S3 object. Obje
 
 You can upload any type of file - images, backups, data, movies, etc. - to the S3 bucket. The maximum size of a regular file that can be uploaded to a bucket is 32 GB. For files that exceed this size, you must use the multipart upload and store method. For a comfortable download of a file larger than 1 GB, it is recommended to use the AWS S3 CLI or AWS S3 REST API.
 
-## Loading from VK CS Panel
+## Loading from VK Cloud Panel
 
 To load objects, go to the created bucket in the "Buckets" section of the "Object Storage" service:
 
@@ -10,9 +10,9 @@ To load objects, go to the created bucket in the "Buckets" section of the "Objec
 
 **Note**
 
-To load folders through the VK CS Panel interface, they must be dragged into the loading window using the Drag & Drop function. You can drag and drop files to upload files or select them using the Select Files button. The drag and drop functionality is only supported for Chrome and Firefox browsers.
+To load folders through the VK Cloud Panel interface, they must be dragged into the loading window using the Drag & Drop function. You can drag and drop files to upload files or select them using the Select Files button. The drag and drop functionality is only supported for Chrome and Firefox browsers.
 
-When loading a folder, S3 loads all files and subfolders from the specified folder into the bucket. It then assigns a key object name, which is a combination of the downloaded file name and the folder name. For example, if you download a folder named / images that contains two files, sample1.jpg and sample2.jpg, S3 downloads the files and then assigns the appropriate key names, images / sample1.jpg and images / sample2.jpg. Key names include the folder name as a prefix. The VK CS panel displays only the part of the key name that follows the last "/". For example, in the images folder, the images / sample1.jpg and images / sample2.jpg objects appear as sample1.jpg and sample2.jpg.
+When loading a folder, S3 loads all files and subfolders from the specified folder into the bucket. It then assigns a key object name, which is a combination of the downloaded file name and the folder name. For example, if you download a folder named / images that contains two files, sample1.jpg and sample2.jpg, S3 downloads the files and then assigns the appropriate key names, images / sample1.jpg and images / sample2.jpg. Key names include the folder name as a prefix. The VK Cloud panel displays only the part of the key name that follows the last "/". For example, in the images folder, the images / sample1.jpg and images / sample2.jpg objects appear as sample1.jpg and sample2.jpg.
 
 If an object with a key name that already exists in the bucket is loaded, S3 replaces the existing object.
 

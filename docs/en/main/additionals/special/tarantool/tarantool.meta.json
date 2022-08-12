@@ -2,7 +2,7 @@
   "title": "Tarantool",
   "pageDescription": "Open database management system with non-blocking Lua application server. The database has a high performance compared to traditional DBMS, having the same properties: persistence, ACID transactional, master-slave replication, master-master",
   "shortDescription": "Open database management system with non-blocking Lua application server. The database has a high performance compared to traditional DBMS, having the same properties: persistence, ACID transactional, master-slave replication, master-master",
-  "metaTitle": "Tarantool - VK Cloud Solutions",
+  "metaTitle": "Tarantool - VK Cloud",
   "metaDescription": "Open database management system with non-blocking Lua application server. The database has a high performance compared to traditional DBMS, having the same",
   "sectionTitle": "Tarantool",
   "markdown": "",

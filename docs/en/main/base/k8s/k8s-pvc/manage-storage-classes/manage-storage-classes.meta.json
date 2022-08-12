@@ -2,7 +2,7 @@
   "title": "Manage storage classes",
   "pageDescription": "The Kubernetes cluster has several pre-configured storage classes integrated with VK Cloud based on the Cinder CSI interface. Learn how to manage these classes and create new ones based on them.",
   "shortDescription": "How to manage existing storage classes and create new ones",
-  "metaTitle": "Manage Storage Classes - VK Cloud Solutions",
+  "metaTitle": "Manage Storage Classes - VK Cloud",
   "metaDescription": "",
   "sectionTitle": "Storage class management",
   "markdown": "Kubernetes cluster has several pre-configured storage classes integrated with VK Cloud based on the Cinder CSI interface. Learn how to manage these classes and create new ones based on them.",

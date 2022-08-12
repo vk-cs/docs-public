@@ -15,7 +15,7 @@
 
 | Провайдер | Значение oauth_provider | Получение токена                             |
 | --------- | ----------------------- | -------------------------------------------- |
-| VK CS     | mcs                     | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
+| VK Cloud     | mcs                     | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
 
 Параметры запроса передаются в формате `JSON` в теле.
 
@@ -100,7 +100,7 @@
 
 | Провайдер | Значение oauth_provider | Получение токена                             |
 | --------- | ----------------------- | -------------------------------------------- |
-| VK CS     | mcs                     | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
+| VK Cloud     | mcs                     | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
 
 Параметры запроса передаются в формате JSON в теле.
 
@@ -183,7 +183,7 @@ result_item
 
 | Провайдер | Значение oauth_provider | Получение токена                             |
 | --------- | ----------------------- | -------------------------------------------- |
-| VK CS     | mcs                     | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
+| VK Cloud     | mcs                     | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
 
 Параметры запроса передаются в формате `JSON` в теле.
 

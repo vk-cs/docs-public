@@ -1,10 +1,10 @@
-The request deletes the specified message from the specified queue. To select a message to delete, use the `Receipt' character of the message (and _not_ the 'messageId' that you receive when sending the message). VK CS SQS can delete a message from the queue, even if setting a visibility timeout causes the message to be blocked by another consumer. VK CS SQS automatically deletes messages remaining in the queue longer than the retention period configured for the queue.
+The request deletes the specified message from the specified queue. To select a message to delete, use the `Receipt' character of the message (and _not_ the 'messageId' that you receive when sending the message). VK Cloud SQS can delete a message from the queue, even if setting a visibility timeout causes the message to be blocked by another consumer. VK Cloud SQS automatically deletes messages remaining in the queue longer than the retention period configured for the queue.
 
 ## Request Parameters
 
 **QueueUrl**
 
-URL of the VK CS SQS queue from which messages are being deleted.
+URL of the VK Cloud SQS queue from which messages are being deleted.
 
 URLs and queue names are case-sensitive.
 

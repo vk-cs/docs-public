@@ -1,4 +1,4 @@
-System status is a tool for informing about the current situation in real time. It allows you to get information about statuses and incidents that occur on the VK CS platform. The interface reflects information about the following infrastructure objects of VK CS:
+System status is a tool for informing about the current situation in real time. It allows you to get information about statuses and incidents that occur on the VK Cloud platform. The interface reflects information about the following infrastructure objects of VK Cloud:
 
 - Accessibility zones
 - Services

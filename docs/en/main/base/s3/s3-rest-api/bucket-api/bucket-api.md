@@ -10,7 +10,7 @@ All operations with buckets are characterized by typical error messages, request
 
 ## CreateBucket
 
-The PUT operation creates a new bucket. To create a bucket, you need to register on the VK CS platform and obtain an access key to authorize requests. Bucket creation using anonymous requests is not possible. The initiator of the bucket creation request automatically becomes its owner.
+The PUT operation creates a new bucket. To create a bucket, you need to register on the VK Cloud platform and obtain an access key to authorize requests. Bucket creation using anonymous requests is not possible. The initiator of the bucket creation request automatically becomes its owner.
 
 When using the operation to create a bucket, you can specify projects or groups that need to be granted certain rights to the bucket, and also specify the storage class: hotbox or icebox. There are two ways to grant rights using request headers:
 

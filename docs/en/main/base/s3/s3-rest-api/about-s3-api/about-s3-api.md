@@ -1,4 +1,4 @@
-VK CS provides a RESTful XML API for programmatically manipulating stored data using standard HTTP requests. The API is compatible with the Amazon AWS S3 API, allowing you to interact with the service using familiar tools.
+VK Cloud provides a RESTful XML API for programmatically manipulating stored data using standard HTTP requests. The API is compatible with the Amazon AWS S3 API, allowing you to interact with the service using familiar tools.
 
 **Note**
 
@@ -6,20 +6,20 @@ SOAP over HTTP support has been deprecated but is still available over HTTPS. Ho
 
 ## S3 compatible
 
-The VK CS S3 API is designed to interact with the Amazon AWS S3 API. In most cases, when using the client library, setting the "endpoint" or "base" URL hb.bizmrg.com and creating the VK CS S3 key pair will allow the VK CS Object Storage service.
+The VK Cloud S3 API is designed to interact with the Amazon AWS S3 API. In most cases, when using the client library, setting the "endpoint" or "base" URL hb.bizmrg.com and creating the VK Cloud S3 key pair will allow the VK Cloud Object Storage service.
 
-VK CS S3 provides support for create, read, update, and delete operations for both buckets and objects, as well as the ability to define access control lists (ACLs). Some S3 features are not supported, as shown in the table below:
+VK Cloud S3 provides support for create, read, update, and delete operations for both buckets and objects, as well as the ability to define access control lists (ACLs). Some S3 features are not supported, as shown in the table below:
 
 <table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(1%); width: 99%;" width="289"><tbody><tr><td height="19" style="width: 32.962%; background-color: rgb(239, 239, 239);" width="38.062283737024224%">Function</td><td style="width: 21.3418%; background-color: rgb(239, 239, 239);" width="29.41176470588235%">Support</td><td style="width: 45.443%; background-color: rgb(239, 239, 239);" width="32.52595155709343%">Note</td></tr><tr><td height="19" style="width: 32.962%;">Bucket Create, Read, Update, Delete</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object Create, Read, Update, Delete</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Multipart Uploads</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Pre-Signed URLs</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;">Both v2 and v4 signature types are supported</td></tr><tr><td height="19" style="width: 32.962%;">Bucket ACLs</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object ACLs</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Identity and Access Management (IAM)</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Security Token Service (STS)</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Multi-factor Authentication</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Public Access Block</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Policies</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object Policies</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Versioning</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Replication</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Notifications</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Tagging</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object Tagging</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Request Payment</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Lifecycle</td><td style="width: 21.3418%;">Yes</td><td style="width: 45.443%;">Object expiration and removal of incomplete compound downloads are supported. Lifecycle policies based on tagging objects are not supported.</td></tr><tr><td height="19" style="width: 32.962%;">Bucket Inventory</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Access Logging</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Metrics</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Analytics</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Accelerate</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Encryption Configuration</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Websites</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object Torrent</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object Lock</td><td style="width: 21.3418%;">No</td><td style="width: 45.443%;"><br></td></tr></tbody></table>
 
-API requests for S3 functions that are not currently supported by VK CS will receive an S3-compliant NotImplemented error response in XML format.
+API requests for S3 functions that are not currently supported by VK Cloud will receive an S3-compliant NotImplemented error response in XML format.
 
 **Python example**
 
 ```
 import boto3
 from botocore.client import Config
-# Initialize session to VK CS S3.
+# Initialize session to VK Cloud S3.
 session = boto3.session.Session ()
 client = session.client ('s3',
 region_name = 'ru-msk',
@@ -47,15 +47,15 @@ import (
 "github.com/minio/minio-go/pkg/credentials"
 )
 func main () {
-accessKey: = os.Getenv ("VK CS_KEY")
-secKey: = os.Getenv ("VK CS_SECRET")
+accessKey: = os.Getenv ("VK Cloud_KEY")
+secKey: = os.Getenv ("VK Cloud_SECRET")
 endpoint: = "hb.bizmrg.com"
-bucketName: = "my-test-bucket1" // Bucket names must be unique for all VK CS projects
+bucketName: = "my-test-bucket1" // Bucket names must be unique for all VK Cloud projects
 ssl: = true
 if accessKey == "" || secKey == "" {
-log.Fatal ("Must provide VK CS_KEY and VK CS_SECRET environment variables!")
+log.Fatal ("Must provide VK Cloud_KEY and VK Cloud_SECRET environment variables!")
 }
-// Connect to VK CS S3.
+// Connect to VK Cloud S3.
 client, err: = minio.New (endpoint, & minio.Options {
 Creds: credentials.NewStaticV4 (accessKey, secKey, ""),
 Secure: ssl,
@@ -82,9 +82,9 @@ fmt.Println (bucket.Name)
 
 ## Authentication
 
-Requests to the VK CS S3 APIs must include the HTTP-Authorization header. The AWS v4 signature type is supported, as well as the AWS v2 signature type for compatibility with legacy customers. The examples below use v4 signatures. When using the client library, signatures will be generated automatically.
+Requests to the VK Cloud S3 APIs must include the HTTP-Authorization header. The AWS v4 signature type is supported, as well as the AWS v2 signature type for compatibility with legacy customers. The examples below use v4 signatures. When using the client library, signatures will be generated automatically.
 
-You can create the required access key and secret key in the "Accounts" menu of the "Object Storage" service of the graphical interface of the VK CS panel.
+You can create the required access key and secret key in the "Accounts" menu of the "Object Storage" service of the graphical interface of the VK Cloud panel.
 
 ![](./assets/1598390880680-1598390880679.png) When creating an account, an Access Key ID and Secret Key values will be generated that are required for use:
 

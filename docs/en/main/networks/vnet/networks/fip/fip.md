@@ -1,10 +1,10 @@
-Instances in VK CS can be connected to private networks or directly to ext-net. To access a VM located in a private network from the Internet, it is recommended to use the floating IP address functionality.
+Instances in VK Cloud can be connected to private networks or directly to ext-net. To access a VM located in a private network from the Internet, it is recommended to use the floating IP address functionality.
 
 Unlike ext-net, floating IP addresses can be bound to virtual machines and reassigned at any time. Also, this type of addresses is bound to the project and remains in it until released by the user.
 
 Floating IP is associated to a "gray" address due to the 1: 1 NAT mechanism on the router, while a private network address must be configured on the VM.
 
-Floating addresses in your [VK CS account are](https://mcs.mail.ru/app/services/infra/routers/) managed on the "Floating IPs" page of the "Virtual Networks" service. This page displays the addresses allocated to the project:![](./assets/1598291459714-snimok-ekrana-2020-08-24-v-20.50.50.png)
+Floating addresses in your [VK Cloud account are](https://mcs.mail.ru/app/services/infra/routers/) managed on the "Floating IPs" page of the "Virtual Networks" service. This page displays the addresses allocated to the project:![](./assets/1598291459714-snimok-ekrana-2020-08-24-v-20.50.50.png)
 
 ## Binding an address to an instance
 

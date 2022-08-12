@@ -1,8 +1,8 @@
-Using the Velero software product, you can create a backup copy of a Kubernetes cluster to the VK Cloud Solutions cloud - and deploy this copy to a new cluster. This operation is useful when you want to replicate a custom cluster.
+Using the Velero software product, you can create a backup copy of a Kubernetes cluster to the VK Cloud cloud - and deploy this copy to a new cluster. This operation is useful when you want to replicate a custom cluster.
 
 For this you will need:
 
-- Kubernetes cluster deployed in VK CS
+- Kubernetes cluster deployed in VK Cloud
 - Velero client
 - OpenStack Plugin
 
@@ -18,7 +18,7 @@ Every Velero operation - on-demand backup, scheduled backup, restore from backup
 
 Velero is ideal for a disaster recovery plan and for preparing a kubernetes cluster for an upgrade by taking snapshots of the cluster resource state.
 
-In this scenario, we will install and configure velero to interact with the kubernetes cluster on VK Cloud Solutions and make a backup of the cluster with all its content to the S3 cloud storage VK Cloud Solutions Storage using the Openstack plugin.
+In this scenario, we will install and configure velero to interact with the kubernetes cluster on VK Cloud and make a backup of the cluster with all its content to the S3 cloud storage VK Cloud Storage using the Openstack plugin.
 
 ## Installing Velero client
 
@@ -41,7 +41,7 @@ velero version
 
 Since Velero saves its backups to S3 storage, it is necessary to create a bucket in S3 storage before installing the server into the cluster.
 
-Let's create a velero bucket in the Object Storage service using the VK CS Panel.
+Let's create a velero bucket in the Object Storage service using the VK Cloud Panel.
 
 ![](./assets/1602117205468-1602117205468.png)
 
@@ -68,7 +68,7 @@ Let's dwell on the arguments in detail:
 - \--bucket my_velero_backup - the backup bucket we created in the previous step.
 - \--secret-file ./s3_cred - a file for secrets with keys to connect to the S3 storage
 - \--use-volume-snapshots = false - we will not use pv snapshots for the current provider
-- \--backup-location-config region = mail, s3ForcePathStyle = "true", s3Url = https: //hb.bizmrg.com: 443 - link to the VK Cloud Solutions Storage S3 storage.
+- \--backup-location-config region = mail, s3ForcePathStyle = "true", s3Url = https: //hb.bizmrg.com: 443 - link to the VK Cloud Storage S3 storage.
 
 After executing the command, you can see similar output:
 
@@ -93,7 +93,7 @@ Now you need to install the openstack plugin to work with the openstack cinder r
 
 The first step is to get an openstack rc file containing the environment variables required to access the Openstack API.
 
-You can get the file in the ["Project Settings" menu](https://mcs.mail.ru/app/project/keys/) in your personal account[](https://mcs.mail.ru/app/project/keys/) VK CS
+You can get the file in the ["Project Settings" menu](https://mcs.mail.ru/app/project/keys/) in your personal account[](https://mcs.mail.ru/app/project/keys/) VK Cloud
 
 ![](./assets/1601848462552-1601848462552.png)
 
@@ -101,7 +101,7 @@ Save the file as openrc.sh, add execute permissions and execute:
 
 ... openrc.sh
 
-You must enter the password for your VK CS account. After that, the openstack access parameters will be set in the environment variables.
+You must enter the password for your VK Cloud account. After that, the openstack access parameters will be set in the environment variables.
 
 Let's create a credential file for the plugin using the account settings:
 

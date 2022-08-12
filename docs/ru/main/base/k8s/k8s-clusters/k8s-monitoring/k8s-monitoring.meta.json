@@ -2,7 +2,7 @@
   "title": "Мониторинг с помощью Prometheus",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Мониторинг с помощью Prometheus - VK Cloud Solutions",
+  "metaTitle": "Мониторинг с помощью Prometheus - VK Cloud",
   "metaDescription": "Описание Кластер Kubernetes содержит встроенные средства мониторинга на базе Heapster, time-series базы данных InfluxDB и Grafana. В результате Kubernetes",
   "sectionTitle": "Мониторинг с помощью Prometheus",
   "markdown": "",

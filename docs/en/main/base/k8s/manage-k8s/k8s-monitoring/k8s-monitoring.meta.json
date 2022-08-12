@@ -2,7 +2,7 @@
   "title": "Monitoring with Prometheus",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Monitoring with Prometheus - VK Cloud Solutions",
+  "metaTitle": "Monitoring with Prometheus - VK Cloud",
   "metaDescription": "Description The Kubernetes cluster contains built-in monitoring tools based on Heapster, InfluxDB time-series database, and Grafana. As a result, the Kuber",
   "sectionTitle": "Monitoring with Prometheus",
   "markdown": "",

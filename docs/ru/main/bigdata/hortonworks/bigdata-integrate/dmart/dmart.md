@@ -8,7 +8,7 @@
 
 ## Apache Hive
 
-В сервисе VK Cloud Solutions Big Bata используется витрина данных Hive.
+В сервисе VK Cloud Big Bata используется витрина данных Hive.
 
 Apache Hive - это система хранилища данных в экосистеме Hadoop.
 

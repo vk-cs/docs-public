@@ -1,8 +1,8 @@
-VK CS instances support various disk operations.
+VK Cloud instances support various disk operations.
 
-## VK CS Control Panel
+## VK Cloud Control Panel
 
-To perform operations with virtual machine disks [in VK CS personal account](https://mcs.mail.ru/app/services/infra/serversы/) should:
+To perform operations with virtual machine disks [in VK Cloud personal account](https://mcs.mail.ru/app/services/infra/serversы/) should:
 
 1. Go to the "Virtual Machines" page of the "Cloud Computing" section.
 2. Open the instance page, go to the "Disks" tab.

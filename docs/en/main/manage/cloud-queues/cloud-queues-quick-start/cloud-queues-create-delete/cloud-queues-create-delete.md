@@ -18,7 +18,7 @@ Enter a name for your queue and its type (Standart or FIFO).
 
 To create a queue with default parameters, scroll down and select "Create Queue".
 
-VK CS SQS distributes information about the new queue through the system. Since Cloud Queries is a distributed system, there may be a slight delay before the queue is displayed on the Queue List page.
+VK Cloud SQS distributes information about the new queue through the system. Since Cloud Queries is a distributed system, there may be a slight delay before the queue is displayed on the Queue List page.
 
 ## Sending a message
 

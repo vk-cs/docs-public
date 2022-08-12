@@ -1,4 +1,4 @@
-In VK CS, it is possible to create backups of virtual machines on a schedule.
+In VK Cloud, it is possible to create backups of virtual machines on a schedule.
 
 Automatic backup is presented in the form of a "Backup Plan" and includes all instance disks, adding or removing VM disks also changes the plan.
 
@@ -12,9 +12,9 @@ After the virtual machine is deleted, all backups are saved in the project. Dele
 
 Setting up a backup plan is available from several interfaces.
 
-## VK CS Control Panel
+## VK Cloud Control Panel
 
-To create a plan [in VK CS personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
+To create a plan [in VK Cloud personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
 
 1. Go to the "Backup" section of the "Cloud Computing" service.
 2. On the "Automatic" tab, click "Add" to add a plan.

@@ -2,7 +2,7 @@
   "title": "PurgeQueue",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "PurgeQueue\r\n - VK Cloud Solutions",
+  "metaTitle": "PurgeQueue\r\n - VK Cloud",
   "metaDescription": "Deletes messages from the queue specified by the QueueURL parameter. Messages sent to the queue before your call, PurgeQueue can be received, but deleted",
   "sectionTitle": "PurgeQueue",
   "markdown": "",

@@ -46,7 +46,7 @@ A token used for deduplication of sent messages. If a message with a specific me
 
 - Each message must have a unique MessageDeduplicationId,
   - You can MessageDeduplicationId explicitly specify.
-  - If you cannot provide MessageDeduplicationId and have enabled ContentBasedDeduplication for your queue, VK CS SQS uses a SHA-256 hash to generate with MessageDeduplicationId using the message body (but not the message attributes).
+  - If you cannot provide MessageDeduplicationId and have enabled ContentBasedDeduplication for your queue, VK Cloud SQS uses a SHA-256 hash to generate with MessageDeduplicationId using the message body (but not the message attributes).
   - If you do not provide MessageDeduplicationId the queue is not ContentBasedDeduplication set, the action will fail.
   - If the contentbaseddeduplication queue is set, you MessageDeduplicationId cancel the generated one.
 - When contentbaseddeduplication is in effect, messages with identical content sent within the deduplication interval are treated as duplicates, and only one copy of the message is delivered.
@@ -89,7 +89,7 @@ Required: No
 
 QueueUrl
 
-URL of the VK CS SQS queue to which the message is sent.
+URL of the VK Cloud SQS queue to which the message is sent.
 
 URLs and queue names are case-sensitive.
 
@@ -103,19 +103,19 @@ The following items are returned by the service.
 
 MD5OfMessageAttributes
 
-MD5 digest of the message attribute string without URL encoding. This attribute can be used to verify that the VK CS SQS message is received correctly. VK CS SQS decrypts the message by URL before creating an MD5 digest.
+MD5 digest of the message attribute string without URL encoding. This attribute can be used to verify that the VK Cloud SQS message is received correctly. VK Cloud SQS decrypts the message by URL before creating an MD5 digest.
 
 Type: String
 
 MD5OfMessageBody
 
-MD5 digest of the message attribute string without URL encoding. This attribute can be used to verify that the VK CS SQS message is received correctly. VK CS SQS decrypts the message by URL before creating an MD5 digest.
+MD5 digest of the message attribute string without URL encoding. This attribute can be used to verify that the VK Cloud SQS message is received correctly. VK Cloud SQS decrypts the message by URL before creating an MD5 digest.
 
 Type: String
 
 MD5OfMessageSystemAttributes
 
-MD5 digest of the message system attribute string without URL encoding. This attribute can be used to verify that the VK CS SQS message is received correctly. VK CS SQS decodes the message by URL before creating an MD5 digest.
+MD5 digest of the message system attribute string without URL encoding. This attribute can be used to verify that the VK Cloud SQS message is received correctly. VK Cloud SQS decodes the message by URL before creating an MD5 digest.
 
 Type: String
 
@@ -129,7 +129,7 @@ Serial number
 
 This parameter applies only to FIFO (first-in-first-out) queues.
 
-A large inconsistent number that VK CS SQS assigns to each message.
+A large inconsistent number that VK Cloud SQS assigns to each message.
 
 The length of the SequenceNumber128 bits. SequenceNumber continues to increase for a specific MessageGroupId.
 

@@ -6,7 +6,7 @@
 
 <tabs>
 <tablist>
-<tab>На платформе VK CS</tab>
+<tab>На платформе VK Cloud</tab>
 <tab>Linux/Mac</tab>
 <tab>Windows 10</tab>
 </tablist>

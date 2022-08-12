@@ -4,9 +4,9 @@ Kubernetes Dashboard is a universal web interface for Kubernetes clusters. It al
 
 ## Connection
 
-First, you need to get Secret to access the cluster. This can be done in two ways: through the VK CS GUI and using kubectl.
+First, you need to get Secret to access the cluster. This can be done in two ways: through the VK Cloud GUI and using kubectl.
 
-1.  Using the VK CS interface, go to the cluster, from the menu, select "Get Secret to enter Kubernetes dashboard".
+1.  Using the VK Cloud interface, go to the cluster, from the menu, select "Get Secret to enter Kubernetes dashboard".
 2.  Alternatively with kubectl. You need to run the command and copy its output:
 
 ```

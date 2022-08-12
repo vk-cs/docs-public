@@ -1,4 +1,4 @@
-Billing is a set of tools for accounting for resource usage, generating reports, interacting with payment systems and obtaining financial documents on the VK Cloud Solutions platform.
+Billing is a set of tools for accounting for resource usage, generating reports, interacting with payment systems and obtaining financial documents on the VK Cloud platform.
 
 To get started, you need to [register on the platform](https://mcs.mail.ru/docs/en/additionals/start/get-started/registration). This is necessary even if you want to familiarize yourself with the interface and test the services for free. To register, you will need to confirm your email, specify a phone number and link a payment card. We will not deduct money from your account until you start using the resources of the project.
 
@@ -29,4 +29,4 @@ In the absence of restoring a positive balance, the project resources will be pl
 - If there was no money in the project, then after 3 days all resources will be deleted.
 - If the payment was made, the resources will be placed in the queue for deletion after 30 days (or when the balance is equal to -1000r.) after the services are stopped.
 
-The deletion queue is a mechanism for cleaning resources, in which data from the project and the VK CS platform are permanently deleted, without any possibility of their recovery.
+The deletion queue is a mechanism for cleaning resources, in which data from the project and the VK Cloud platform are permanently deleted, without any possibility of their recovery.

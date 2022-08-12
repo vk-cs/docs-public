@@ -51,9 +51,9 @@ To export a virtual machine to a file, select the desired VM, then export its te
 
 In the export window, specify the name of the desired exported template, as well as the export format "Folder of files (OVF)".
 
-## Upload VM image to VK CS
+## Upload VM image to VK Cloud
 
-The \*.vmdk file obtained as a result of the export should be loaded into an existing VK CS project.
+The \*.vmdk file obtained as a result of the export should be loaded into an existing VK Cloud project.
 
 It is recommended to use the Openstack CLI to load the virtual machine image in order to avoid possible errors in the processing of large files by the web interface. To load the \*.vmdk image, use the command:
 

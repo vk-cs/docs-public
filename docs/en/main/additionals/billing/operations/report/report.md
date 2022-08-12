@@ -9,7 +9,7 @@ For all payments made, users receive financial documents.
 </tablist>
 <tabpanel>
 
-When making a payment, individuals receive a payment receipt in accordance with [FZ-54](https://base.garant.ru/12130951/) "On the use of cash register equipment". The receipt is sent to the email address of the VK CS project owner. The original payment receipt is not provided.
+When making a payment, individuals receive a payment receipt in accordance with [FZ-54](https://base.garant.ru/12130951/) "On the use of cash register equipment". The receipt is sent to the email address of the VK Cloud project owner. The original payment receipt is not provided.
 
 </tabpanel>
 <tabpanel>
@@ -28,7 +28,7 @@ The UPD can be obtained in one of the following ways:
 
 ### Document Management (EDO)
 
-Electronic document management is the main way of exchanging electronic documents in VK CS, carried out through telecommunication communication channels (TCS) of the EDO operator.
+Electronic document management is the main way of exchanging electronic documents in VK Cloud, carried out through telecommunication communication channels (TCS) of the EDO operator.
 
 An electronic document is a file certified with an electronic signature. It does not need to be printed out, since it is a legally significant original in electronic form.
 
@@ -43,7 +43,7 @@ What do electronic documents give and why connect to EDO:
 - Increase the loyalty of counterparties;
 - Transfer the archive to electronic form.
 
-VK CS uses the [Contour.Dyadok](https://www.diadoc.ru/) and [VLSI](https://sbis.ru/).
+VK Cloud uses the [Contour.Dyadok](https://www.diadoc.ru/) and [VLSI](https://sbis.ru/).
 
 You can connect to one of these EDI systems yourself by sending an invitation to one of these systems. The request must specify the name of the organization, full details, including the full name of the general director, and the system to which the organization will be connected.
 

@@ -1,6 +1,6 @@
-This article is about VK CS IoT SDK for Go. It is intended for developers who want to develop their own application for the VK Cloud Solutions IoT platform and have a basic understanding of creating projects in the Go language environment.
+This article is about VK Cloud IoT SDK for Go. It is intended for developers who want to develop their own application for the VK Cloud IoT platform and have a basic understanding of creating projects in the Go language environment.
 
-Before starting work, it is recommended to familiarize yourself with the [principles of interaction between agents and the platform](https://gitlab.corp.mail.ru/infra/coiiot/coiiot-documentation/-/blob/master/user_docs/docs/agent/protocol.md ) — key components of the VK Cloud Solutions IoT infrastructure.
+Before starting work, it is recommended to familiarize yourself with the [principles of interaction between agents and the platform](https://gitlab.corp.mail.ru/infra/coiiot/coiiot-documentation/-/blob/master/user_docs/docs/agent/protocol.md ) — key components of the VK Cloud IoT infrastructure.
 
 ## Installing the SDK
 
@@ -43,11 +43,11 @@ go install ./iot-go-agent-sdk
 
 ## Usage Examples
 
-Before starting development using the VK CS IoT SDK, it is recommended to familiarize yourself with [the types of data used by the VK CS platform IoT](https://gitlab.corp.mail.ru/infra/coiiot/coiiot-documentation/-/tree/master/user_docs/docs/data) , as well as with [methods supported by an external public API of the platform](https://gitlab.corp.mail.ru/infra/coiiot/coiiot-documentation/-/blob/master/user_docs/docs/public_api/index.md).
+Before starting development using the VK Cloud IoT SDK, it is recommended to familiarize yourself with [the types of data used by the VK Cloud platform IoT](https://gitlab.corp.mail.ru/infra/coiiot/coiiot-documentation/-/tree/master/user_docs/docs/data) , as well as with [methods supported by an external public API of the platform](https://gitlab.corp.mail.ru/infra/coiiot/coiiot-documentation/-/blob/master/user_docs/docs/public_api/index.md).
 
 ### Accessing platform components using SDK methods
 
-An example of using the VK CS IoT Go Agent SDK is the implementation of device access to the Agent and Platform components in order to update device status data:
+An example of using the VK Cloud IoT Go Agent SDK is the implementation of device access to the Agent and Platform components in order to update device status data:
 
 ```bash
 package main
@@ -131,11 +131,11 @@ the statusTag configuration file, _ := sdk.FindTagByPath(cfg.Agent.Tag, sdk.Stat
 
 ### Virtual IoT Device Emulator
 
-As a debugging stand, you can use an IoT device emulator programmed to send certain data to the Platform. For more information about configuring the device through the VK CS IoT platform user's personal account, see [the IoT section on the VK CS documentation portal](https://mcs.mail.ru/docs/ru/additionals/iot/about-iot ).
+As a debugging stand, you can use an IoT device emulator programmed to send certain data to the Platform. For more information about configuring the device through the VK Cloud IoT platform user's personal account, see [the IoT section on the VK Cloud documentation portal](https://mcs.mail.ru/docs/ru/additionals/iot/about-iot ).
 
-You can import the emulator source code from [VK CS IoT Emulators repository](https://github.com/vk-cs/iot-emulators ), or [download the compiled binary file for your operating system](https://github.com/vk-cs/iot-emulators/releases ).
+You can import the emulator source code from [VK Cloud IoT Emulators repository](https://github.com/vk-cs/iot-emulators ), or [download the compiled binary file for your operating system](https://github.com/vk-cs/iot-emulators/releases ).
 
-## Building an http client from the VK CS IoT Go Agent SDK repository
+## Building an http client from the VK Cloud IoT Go Agent SDK repository
 
 You can build an http client according to the Swagger specification by running the following command from the root directory of the repository:
 

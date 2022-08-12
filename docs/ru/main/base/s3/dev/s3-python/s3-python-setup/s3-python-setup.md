@@ -2,7 +2,7 @@
 
 Установить библиотеку можно на официальном сайте [https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html)
 
-В процессе создания сессии необходимо указать endpoint url VK CS.
+В процессе создания сессии необходимо указать endpoint url VK Cloud.
 
 Список endpoint url:
 

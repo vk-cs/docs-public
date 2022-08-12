@@ -1,6 +1,6 @@
-## Terms of use of the platform "VK Cloud Solutions"
+## Terms of use of the platform "VK Cloud"
 
-This document is an agreement (hereinafter referred to as the "Agreement") governing the relationship between Mail.ru LLC (hereinafter referred to as the "Company") and you (hereinafter referred to as the "Customer") in connection with the provision of various types of services, access to which is provided through the VK Cloud Solutions Platform (hereinafter referred to as the Platform), on the terms set forth below:
+This document is an agreement (hereinafter referred to as the "Agreement") governing the relationship between Mail.ru LLC (hereinafter referred to as the "Company") and you (hereinafter referred to as the "Customer") in connection with the provision of various types of services, access to which is provided through the VK Cloud Platform (hereinafter referred to as the Platform), on the terms set forth below:
 
 ## 1\. REGULATION OF THE PLATFORM USE ISSUES. PROCEDURE FOR CONCLUDING AGREEMENT
 

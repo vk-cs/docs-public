@@ -18,7 +18,7 @@ _\* Payment is made on the basis of 30 calendar days in a month_
 
 For all 1C software products: Accounting, Salary and Human Resources Management and Management of our company, a demo period is available, within which the service is provided without restrictions for a period of 30 days.
 
-To get demo access to the application, just select it when creating. There is no withdrawal of funds during the demo access, and this service is not displayed in the "Balance" section of the VK CS personal account.
+To get demo access to the application, just select it when creating. There is no withdrawal of funds during the demo access, and this service is not displayed in the "Balance" section of the VK Cloud personal account.
 
 **Attention**
 
@@ -32,4 +32,4 @@ If you need to deposit funds and make a prepayment for the service, you should [
 
 At the end of the billing period, the project owner will be sent closing documents, reflecting the period and volume of use of services.
 
-All services provided within the 1C: GRM are not displayed in the general section "Balance and Debit" in the Billing of your VK CS personal account.
+All services provided within the 1C: GRM are not displayed in the general section "Balance and Debit" in the Billing of your VK Cloud personal account.

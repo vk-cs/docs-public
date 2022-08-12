@@ -1,4 +1,4 @@
-VK CS services have the ability to enable cluster autoscaling. Automatic scaling is used when planning dynamic load on the cluster.
+VK Cloud services have the ability to enable cluster autoscaling. Automatic scaling is used when planning dynamic load on the cluster.
 
 In case of increased load on the server, the cluster will automatically increase the number of nodes, and if there is no load, it will automatically reduce their number.
 
@@ -16,7 +16,7 @@ For each group of nodes, you can select an automatic scaling option.
 
 ## On the created cluster
 
-If the cluster was created without the autoscaling option, but there was a need to activate it, this operation can be performed on the already created cluster by the "Configure autoscaling" option in the context menu of the selected cluster in the "Containers" service of the VK CS Panel:
+If the cluster was created without the autoscaling option, but there was a need to activate it, this operation can be performed on the already created cluster by the "Configure autoscaling" option in the context menu of the selected cluster in the "Containers" service of the VK Cloud Panel:
 
 ![](./assets/1598464152626-1598464152626.png)
 

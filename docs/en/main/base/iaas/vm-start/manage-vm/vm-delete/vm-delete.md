@@ -8,9 +8,9 @@ It is impossible to reverse the deletion operation, so it is recommended to make
 
 If you need to delete only a virtual machine, you should disconnect the disks before deleting and replace the root disk with a temporary one.
 
-## VK CS Control Panel
+## VK Cloud Control Panel
 
-To delete an instance [in VK CS personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
+To delete an instance [in VK Cloud personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
 
 1. Go to the "Virtual Machines" page of the "Cloud Computing" section.
 2. In the context menu of the instance, select "Delete".

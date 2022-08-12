@@ -1,4 +1,4 @@
-The VK CS team provides technical support to clients using VK CS services.
+The VK Cloud team provides technical support to clients using VK Cloud services.
 
 ## Methods of treatment
 
@@ -74,26 +74,26 @@ The table shows the astronomical clock.
 
 The list of issues that technical support can solve includes:
 
-- Architectural consultations on the use of VK CS services
+- Architectural consultations on the use of VK Cloud services
 - Diagnostics of problems in the operation of resources on the project
 - Issues of restoring access to the account
 - Informing about the work of billing
 - Recommendations for troubleshooting
-- Help in setting up VK CS services
+- Help in setting up VK Cloud services
 
 **Note**
 
-The VK CS technical support team does not solve problems related to software development, debugging its own program code, as well as consulting on the work of third-party solutions.
+The VK Cloud technical support team does not solve problems related to software development, debugging its own program code, as well as consulting on the work of third-party solutions.
 
 ## Notifications from technical support
 
 The support team informs clients about failures that have occurred with the service or resource in the client's account, and also provides recommendations for eliminating potential problems in the client's project.
 
-Notifications also include informing project owners about security threats or other cases that may lead to data loss or interruptions in access to VK CS services.
+Notifications also include informing project owners about security threats or other cases that may lead to data loss or interruptions in access to VK Cloud services.
 
 ## Individual support
 
-The list of VK CS platform services includes the possibility of providing priority support (Managed Services).
+The list of VK Cloud platform services includes the possibility of providing priority support (Managed Services).
 
 This service includes extended support for all issues of implementation, maintenance and troubleshooting in the client's projects:
 

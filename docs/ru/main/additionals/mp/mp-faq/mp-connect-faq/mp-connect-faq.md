@@ -23,4 +23,4 @@
 
 Также рекомендуем следующие статьи:
 
-- [](https://mcs.mail.ru/help/iaas-create/control?kb_language=ru_RU)[Устройство панели управления VK CS](https://mcs.mail.ru/help/iaas-create/control?kb_language=ru_RU)
+- [](https://mcs.mail.ru/help/iaas-create/control?kb_language=ru_RU)[Устройство панели управления VK Cloud](https://mcs.mail.ru/help/iaas-create/control?kb_language=ru_RU)

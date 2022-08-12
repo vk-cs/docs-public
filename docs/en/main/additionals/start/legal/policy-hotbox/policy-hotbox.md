@@ -1,4 +1,4 @@
-This document is an official offer of Mail.ru LLC (hereinafter - the "Company") to conclude a user agreement (hereinafter - the "Agreement") with you (hereinafter - the "Customer") on the provision of services for providing access to the Service "Cloud for Hot Data" as part of the VK Cloud Solutions Platform (hereinafter referred to as the Platform), on the terms set forth in this Agreement, which is available on the Internet at: [https://mcs.mail.ru/hotbox](https://mcs.mail.ru/hotbox) .
+This document is an official offer of Mail.ru LLC (hereinafter - the "Company") to conclude a user agreement (hereinafter - the "Agreement") with you (hereinafter - the "Customer") on the provision of services for providing access to the Service "Cloud for Hot Data" as part of the VK Cloud Platform (hereinafter referred to as the Platform), on the terms set forth in this Agreement, which is available on the Internet at: [https://mcs.mail.ru/hotbox](https://mcs.mail.ru/hotbox) .
 
 ## 1\. Terms and definitions
 

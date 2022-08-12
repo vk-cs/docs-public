@@ -25,7 +25,7 @@ The best practice when working with pods is to put requests and limits on the co
 
 <info>
 
-In Kubernetes clusters from VK Cloud Solutions, the following default values ​​apply to running containers without specified requests and limits:
+In Kubernetes clusters from VK Cloud, the following default values ​​apply to running containers without specified requests and limits:
 
 - Requests: 100m / 64Mb
 - Limits: 500m / 512Mb

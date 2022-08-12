@@ -2,7 +2,7 @@
   "title": "ReceiveMessage",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "ReceiveMessage - VK Cloud Solutions",
+  "metaTitle": "ReceiveMessage - VK Cloud",
   "metaDescription": "Извлекает одно или несколько сообщений (до 10) из указанной очереди. Использование WaitTimeSeconds параметра включает поддержку длительного опроса.  Коротк",
   "sectionTitle": "ReceiveMessage",
   "markdown": "",

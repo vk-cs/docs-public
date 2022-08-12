@@ -2,7 +2,7 @@
   "title": "DeleteMessage",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "DeleteMessage - VK Cloud Solutions",
+  "metaTitle": "DeleteMessage - VK Cloud",
   "metaDescription": "The request deletes the specified message from the specified queue. To select a message to delete, use the recipthandle character of the message (not the one, Message",
   "sectionTitle": "DeleteMessage",
   "markdown": "",

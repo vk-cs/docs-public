@@ -29,7 +29,7 @@ The Cloud Queues GET request is structured as a URL that consists of the followi
 - **Action** - the action you want to perform on the endpoint. Question mark (?) separates the endpoint from the action, for example: ?Action=SendMessage&MessageBody=Your%20Message%20Text
 - **Parameters** - any query parameters - each parameter is separated by an ampersand (&), for example: &Version=2012-11-05&AUTHPARAMS
 
-Below is an example of a GET request that sends a message to the VK CS SQS queue.
+Below is an example of a GET request that sends a message to the VK Cloud SQS queue.
 
 ```
 https://sqs.mcs.mail.ru/123456789012/MyQueue

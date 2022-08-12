@@ -21,8 +21,8 @@ Restarting the k8s master node helps to solve the problem for a short time.
 
 #### Permanent
 
-You need to contact [VK CS Technical Support](http://mchs.mail.ru/help/contact-us) to update the certificates.
+You need to contact [VK Cloud Technical Support](http://mchs.mail.ru/help/contact-us) to update the certificates.
 
 ### Important
 
-We do not guarantee full compatibility of kubedb with k8saas VK CS, since kubedb uses custom resource definition, which is tied to kube-apiserver.
+We do not guarantee full compatibility of kubedb with k8saas VK Cloud, since kubedb uses custom resource definition, which is tied to kube-apiserver.

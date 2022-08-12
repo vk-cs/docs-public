@@ -2,7 +2,7 @@
   "title": "Terraform",
   "pageDescription": "Terraform is an open-source Infrastructure as code (IaC) software created by HashiCorp. It allows users to define and expose data center infrastructure using a declarative configuration language known as the HashiCorp Configuration Language, or optionally JSON.",
   "shortDescription": "Terraform is an open-source infrastructure-as-code software created by HashiCorp",
-  "metaTitle": "Terraform - VK Cloud Solutions",
+  "metaTitle": "Terraform - VK Cloud",
   "metaDescription": "",
   "sectionTitle": "Terraform",
   "markdown": "Terraform is an open-source Infrastructure as code (IaC) software created by HashiCorp. It allows users to define and expose data center infrastructure using a declarative configuration language known as the HashiCorp Configuration Language, or optionally JSON.",

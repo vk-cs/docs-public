@@ -1,4 +1,4 @@
-Перед началом работы рекомендуется ознакомиться с [принципами взаимодействия агентов и платформы](https://mcs.mail.ru/docs/ru/additionals/iot/agents/protocol) — ключевых компонентов инфраструктуры IoT VK Cloud Solutions.
+Перед началом работы рекомендуется ознакомиться с [принципами взаимодействия агентов и платформы](https://mcs.mail.ru/docs/ru/additionals/iot/agents/protocol) — ключевых компонентов инфраструктуры IoT VK Cloud.
 
 ## Установка SDK
 
@@ -41,11 +41,11 @@ go install ./iot-go-agent-sdk
 
 ## Примеры использования
 
-Перед началом разработки с помощью VK CS IoT SDK рекомендуется ознакомиться с [типами данных](https://gitlab.corp.mail.ru/infra/coiiot/coiiot-documentation/-/tree/master/user_docs/docs/data), используемых платформой VK CS IoT, а также с [методами](https://gitlab.corp.mail.ru/infra/coiiot/coiiot-documentation/-/blob/master/user_docs/docs/public_api/index.md), поддерживаемыми внешним публичным API платформы.
+Перед началом разработки с помощью VK Cloud IoT SDK рекомендуется ознакомиться с [типами данных](https://gitlab.corp.mail.ru/infra/coiiot/coiiot-documentation/-/tree/master/user_docs/docs/data), используемых платформой VK Cloud IoT, а также с [методами](https://gitlab.corp.mail.ru/infra/coiiot/coiiot-documentation/-/blob/master/user_docs/docs/public_api/index.md), поддерживаемыми внешним публичным API платформы.
 
 ### Обращение к компонентам платформы с помощью методов SDK
 
-Примером использования VK CS IoT Go Agent SDK является имплементация обращения устройства к компонентам Агент и Платформа с целью обновления данных о статусе устройства:
+Примером использования VK Cloud IoT Go Agent SDK является имплементация обращения устройства к компонентам Агент и Платформа с целью обновления данных о статусе устройства:
 
 ```bash
 package main
@@ -129,13 +129,13 @@ func main() {
 
 ### Эмулятор виртуального устройства IoT
 
-В качестве отладочного стенда можно использовать эмулятор устройства IoT, запрограммированный отправлять определенные данные на платформу. Подробнее о настройке устройства через личный кабинет пользователя платформы VK CS IoT можно узнать из [раздела IoT на портале документации VK CS](https://mcs.mail.ru/docs/ru/additionals/iot/about-iot).
+В качестве отладочного стенда можно использовать эмулятор устройства IoT, запрограммированный отправлять определенные данные на платформу. Подробнее о настройке устройства через личный кабинет пользователя платформы VK Cloud IoT можно узнать из [раздела IoT на портале документации VK Cloud](https://mcs.mail.ru/docs/ru/additionals/iot/about-iot).
 
-Вы можете импортировать исходный код эмулятора из [репозитория VK CS IoT Emulators](https://github.com/vk-cs/iot-emulators), или [скачать](https://github.com/vk-cs/iot-emulators/releases) собранный бинарный файл для вашей операционной системы.
+Вы можете импортировать исходный код эмулятора из [репозитория VK Cloud IoT Emulators](https://github.com/vk-cs/iot-emulators), или [скачать](https://github.com/vk-cs/iot-emulators/releases) собранный бинарный файл для вашей операционной системы.
 
 ## Сборка http клиента
 
-Вы можете собрать http клиент по Swagger спецификации из репозитория VK CS IoT Go Agent SDK, выполнив следующую команду из корневой директории репозитория:
+Вы можете собрать http клиент по Swagger спецификации из репозитория VK Cloud IoT Go Agent SDK, выполнив следующую команду из корневой директории репозитория:
 
 ```bash
 make generate

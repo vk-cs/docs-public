@@ -1,4 +1,4 @@
-Several typographic conventions are used throughout the VK CS documentation.
+Several typographic conventions are used throughout the VK Cloud documentation.
 
 ## Notes
 
@@ -44,4 +44,4 @@ In order not to overwhelm the article with information, it can be hidden in bloc
 
 ![](./assets/1595593151241-1595593151241.png)
 
-The VK CS support team welcomes requests and additions, as well as bug reports in the Documentation. [Let us know](https://mcs.mail.ru/docs/contacts) and we will make changes.
+The VK Cloud support team welcomes requests and additions, as well as bug reports in the Documentation. [Let us know](https://mcs.mail.ru/docs/contacts) and we will make changes.

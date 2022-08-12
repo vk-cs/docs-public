@@ -2,7 +2,7 @@
   "title": "ListQueues",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "ListQueues - VK Cloud Solutions",
+  "metaTitle": "ListQueues - VK Cloud",
   "metaDescription": "Возвращает список ваших очередей в текущем регионе. Ответ включает не более 1000 результатов. Если вы укажете значение для необязательного QueueNamePrefix",
   "sectionTitle": "ListQueues",
   "markdown": "",

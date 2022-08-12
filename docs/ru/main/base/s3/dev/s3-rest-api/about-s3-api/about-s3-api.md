@@ -1,4 +1,4 @@
-VK CS предоставляет RESTful XML API для программного управления хранимыми данными с помощью стандартных HTTP-запросов. API-интерфейс совместим с API-интерфейсом Amazon AWS S3, что позволяет взаимодействовать с сервисом, используя уже известные инструменты.
+VK Cloud предоставляет RESTful XML API для программного управления хранимыми данными с помощью стандартных HTTP-запросов. API-интерфейс совместим с API-интерфейсом Amazon AWS S3, что позволяет взаимодействовать с сервисом, используя уже известные инструменты.
 
 Основной протокол доступа к объектному хранилищу – это протокол, созданный Amazon Web Services для сервиса AWS S3 (Simple Storage Service). S3 API — набор команд, которые «понимает» хранилище и выполняет в ответ некие действия.
 
@@ -12,13 +12,13 @@ VK CS предоставляет RESTful XML API для программного
 
 ## Совместимость с S3
 
-API VK CS S3 предназначен для взаимодействия с API Amazon AWS S3. В большинстве случаев при использовании клиентской библиотеки установка "конечной точки" (endpoint) или "базового" (base) URL-адреса hb.bizmrg.com и создание ключевой пары VK CS S3 позволит использовать сервис Объектного хранилища VK CS.
+API VK Cloud S3 предназначен для взаимодействия с API Amazon AWS S3. В большинстве случаев при использовании клиентской библиотеки установка "конечной точки" (endpoint) или "базового" (base) URL-адреса hb.bizmrg.com и создание ключевой пары VK Cloud S3 позволит использовать сервис Объектного хранилища VK Cloud.
 
-VK CS S3 обеспечивает поддержку операций создания, чтения, обновления и удаления как для бакетов, так и для объектов, а также возможность определять списки управления доступом (ACL). Некоторые функции S3 не поддерживаются, как показано в таблице ниже:
+VK Cloud S3 обеспечивает поддержку операций создания, чтения, обновления и удаления как для бакетов, так и для объектов, а также возможность определять списки управления доступом (ACL). Некоторые функции S3 не поддерживаются, как показано в таблице ниже:
 
 <table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(1%); width: 99%;" width="289"><tbody><tr><td height="19" style="width: 32.962%; background-color: rgb(239, 239, 239);" width="38.062283737024224%">Функция</td><td style="width: 21.3418%; background-color: rgb(239, 239, 239);" width="29.41176470588235%">Поддержка</td><td style="width: 45.443%; background-color: rgb(239, 239, 239);" width="32.52595155709343%">Примечание</td></tr><tr><td height="19" style="width: 32.962%;">Bucket Create, Read, Update, Delete</td><td style="width: 21.3418%;">Да</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object Create, Read, Update, Delete</td><td style="width: 21.3418%;">Да</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Multipart Uploads</td><td style="width: 21.3418%;">Да</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Pre-Signed URLs</td><td style="width: 21.3418%;">Да</td><td style="width: 45.443%;">Поддерживаются оба типа подписи v2 и v4</td></tr><tr><td height="19" style="width: 32.962%;">Bucket ACLs</td><td style="width: 21.3418%;">Да</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object ACLs</td><td style="width: 21.3418%;">Да</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Identity and Access Management (IAM)</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Security Token Service (STS)</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Multi-factor Authentication</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Public Access Block</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Policies</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object Policies</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Versioning</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Replication</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Notifications</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Tagging</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object Tagging</td><td style="width: 21.3418%;">Да</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Request Payment</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Lifecycle</td><td style="width: 21.3418%;">Да</td><td style="width: 45.443%;">Поддерживаются истечение срока действия объекта и удаление неполных составных загрузок. Политики жизненного цикла, основанные на маркировке объектов, не поддерживаются.</td></tr><tr><td height="19" style="width: 32.962%;">Bucket Inventory</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Access Logging</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Metrics</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Analytics</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Accelerate</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Encryption Configuration</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Bucket Websites</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object Torrent</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr><tr><td height="19" style="width: 32.962%;">Object Lock</td><td style="width: 21.3418%;">Нет</td><td style="width: 45.443%;"><br></td></tr></tbody></table>
 
-Запросы API для функций S3, которые в настоящее время не поддерживаются VK CS, получат S3-совместимый ответ об ошибке NotImplemented в формате XML.
+Запросы API для функций S3, которые в настоящее время не поддерживаются VK Cloud, получат S3-совместимый ответ об ошибке NotImplemented в формате XML.
 
 **Пример на Python**
 
@@ -67,7 +67,7 @@ s3_client = session.client(
 import boto3
 from botocore.client import Config
 
-# Инициализировать сессию к VK CS S3.
+# Инициализировать сессию к VK Cloud S3.
 session = boto3.session.Session()
 client = session.client('s3',
                         region_name='ru-msk',
@@ -100,17 +100,17 @@ import (
 )
 
 func main() {
-    accessKey := os.Getenv("VK CS_KEY")
-    secKey := os.Getenv("VK CS_SECRET")
+    accessKey := os.Getenv("VK Cloud_KEY")
+    secKey := os.Getenv("VK Cloud_SECRET")
     endpoint := "hb.bizmrg.com"
-    bucketName := "my-test-bucket1" // Названия бакетов должны быть уникальными для всех проектов VK CS
+    bucketName := "my-test-bucket1" // Названия бакетов должны быть уникальными для всех проектов VK Cloud
     ssl := true
 
     if accessKey == "" || secKey == "" {
-        log.Fatal("Must provide VK CS_KEY and VK CS_SECRET environment variables!")
+        log.Fatal("Must provide VK Cloud_KEY and VK Cloud_SECRET environment variables!")
     }
 
-    // Подключиться к VK CS S3.
+    // Подключиться к VK Cloud S3.
     client, err := minio.New(endpoint, &minio.Options{
         Creds:  credentials.NewStaticV4(accessKey, secKey, ""),
         Secure: ssl,
@@ -140,9 +140,9 @@ func main() {
 
 ## Аутентификация
 
-Запросы к API VK CS S3 должны включать заголовок HTTP-Authorization. Поддерживается тип подписи AWS v4, а также тип подписи AWS v2 для совместимости со старыми клиентами. В приведенных ниже примерах используются подписи v4. При использовании клиентской библиотеки подписи будут созданы автоматически.
+Запросы к API VK Cloud S3 должны включать заголовок HTTP-Authorization. Поддерживается тип подписи AWS v4, а также тип подписи AWS v2 для совместимости со старыми клиентами. В приведенных ниже примерах используются подписи v4. При использовании клиентской библиотеки подписи будут созданы автоматически.
 
-Создать необходимый ключ доступа и секретный ключ можно в меню "Аккаунты" сервиса "Объектное хранилище" графического интерфейса панели VK CS.
+Создать необходимый ключ доступа и секретный ключ можно в меню "Аккаунты" сервиса "Объектное хранилище" графического интерфейса панели VK Cloud.
 
 ![](./assets/1598390880680-1598390880679.png)При создании аккаунта будет сгенерирован Access Key ID и Secret Key значения, которые необходимы для использования:
 

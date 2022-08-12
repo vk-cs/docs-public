@@ -8,9 +8,9 @@ Incremental backups are consolidated into a full backup according to the schedul
 
 When restoring, you should focus only on a full backup copy of the instance.
 
-## VK CS Control Panel
+## VK Cloud Control Panel
 
-To restore a backup copy [in VK CS personal account](http://mchs.mail.ru/app/services/info/servers/) should:
+To restore a backup copy [in VK Cloud personal account](http://mchs.mail.ru/app/services/info/servers/) should:
 
 1. Go to the "Backup" section of the "Cloud Computing" service.
 2. Go to the required backup plan in the "Automatic" or "Manual" section, the interface for viewing backups will appear.

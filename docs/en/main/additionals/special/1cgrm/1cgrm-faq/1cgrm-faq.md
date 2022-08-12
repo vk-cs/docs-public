@@ -8,7 +8,7 @@ Connection to the application is carried out only through the web interface. It 
 
 ## How many applications can I create
 
-VK CS does not limit the number of created 1C: GRM applications.
+VK Cloud does not limit the number of created 1C: GRM applications.
 
 ## How many users can be connected
 

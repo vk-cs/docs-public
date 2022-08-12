@@ -1,6 +1,6 @@
 ## Cluster scaling
 
-Cluster scaling is done in the VK CS control panel.
+Cluster scaling is done in the VK Cloud control panel.
 
 In the section "Big Data" - "Clusters" in the menu bar of the selected cluster, select the "Scale" option:
 

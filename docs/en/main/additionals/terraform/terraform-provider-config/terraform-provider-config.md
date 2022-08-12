@@ -49,7 +49,7 @@ terraform {
 }
 ```
 
-The `provider "vkcs"` block describes the settings for the provider from VK Cloud Solutions. Specify `user_name`, `password` and `project_id` for your personal account. The project values for `project_id` and `region` are available on the [API keys in the personal account] page (https://mcs.mail.ru/app/project/keys ).
+The `provider "vkcs"` block describes the settings for the provider from VK Cloud. Specify `user_name`, `password` and `project_id` for your personal account. The project values for `project_id` and `region` are available on the [API keys in the personal account] page (https://mcs.mail.ru/app/project/keys ).
 
 ``` yaml
 provider "vkcs"  {

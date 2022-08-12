@@ -14,7 +14,7 @@ VK Cloud allows you to organize access to services in any of the following ways:
 
 1. **Load Balancer**: A load balancer is provided.
 
-   The Kubernetes container service is integrated with the VK CS cloud platform:
+   The Kubernetes container service is integrated with the VK Cloud cloud platform:
 
    - The platform provides Load Balancer as a service and can create balancers itself, providing integration with the cluster. Balancers are created immediately in an active-standby failover configuration, in which traffic is transparently switched to a backup balancer when the main balancer fails. To organize this configuration, two HAProxy instances are used with a configured VRRP protocol between them.
    - To connect the balancer to the Kubernetes cluster, it is enough to create a manifest with the "service" manifest type and the "Load Balancer" service type.
