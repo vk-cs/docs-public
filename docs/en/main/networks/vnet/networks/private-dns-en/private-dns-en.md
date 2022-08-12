@@ -1,4 +1,4 @@
-Private DNS in VK CS is a functionality of a DNS server that operates in project networks and allows accessing instances by DNS names.
+Private DNS in VK Cloud is a functionality of a DNS server that operates in project networks and allows accessing instances by DNS names.
 
 The service supports configuring the private zone and port names of virtual machines. The DNS server responds with the same addresses as the DHCP ports on the network. For private DNS to work, a DHCP server must be enabled on the network.
 
@@ -8,7 +8,7 @@ Currently, the private DNS forwarding servers are 8.8.8.8, 8.8.4.4, changing the
 
 ## Enabling Private DNS
 
-You can enable the service for a specific network in the "Networks" section of the "Cloud Computing" service [in your VK CS account](https://mcs.mail.ru/app/services/server/networks/) . On the page of the required network, on the "Network Settings" tab, select the "Private DNS" option and enter the zone name:![](./assets/1598286541418-snimok-ekrana-2020-08-24-v-19.28.34.png)
+You can enable the service for a specific network in the "Networks" section of the "Cloud Computing" service [in your VK Cloud account](https://mcs.mail.ru/app/services/server/networks/) . On the page of the required network, on the "Network Settings" tab, select the "Private DNS" option and enter the zone name:![](./assets/1598286541418-snimok-ekrana-2020-08-24-v-19.28.34.png)
 
 **Attention**
 

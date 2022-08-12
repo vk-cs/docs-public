@@ -1,8 +1,8 @@
 VNC is used to view the console output of a virtual machine, regardless of whether there is output in the console log. This allows you to transfer keyboard and mouse activity to and from the instance.
 
-VK CS uses two methods of accessing the remote console:
+VK Cloud uses two methods of accessing the remote console:
 
-## VK CS Panel
+## VK Cloud Panel
 
 To connect to a VM running Windows or Linux, you can use a web console using HTML5 Canvas and web sockets.
 

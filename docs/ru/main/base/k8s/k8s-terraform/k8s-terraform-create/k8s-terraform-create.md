@@ -63,7 +63,7 @@ data "vkcs_compute_flavor" "k8s_worker" {
 }
 ```
 
-### Ресурсы провайдера VK CS для создания кластера
+### Ресурсы провайдера VK Cloud для создания кластера
 
 1. _vkcs_kubernetes_clustertemplates_ — шаблоны/версии кластеров Kubernetes. Нужно указать версию кластера, которая будет создана.
 

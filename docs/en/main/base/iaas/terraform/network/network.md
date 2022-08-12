@@ -16,7 +16,7 @@ To create a network and security groups, we need the following objects:
 - vkcs_networking_router_interface - connect the router to the internal network.
 - vkcs_networking_secgroup - Change or create a security group.
 - vkcs_networking_secgroup_rule - Edit or create a rule for a security group.
-- vkcs_networking_port - create or modify a network port resource inside VK CS.
+- vkcs_networking_port - create or modify a network port resource inside VK Cloud.
 - vkcs_networking_port_secgroup_associate - Associate a port with a security group. Can only be used if the port was not created with Terraform.
 
 2. Data sources (data source):

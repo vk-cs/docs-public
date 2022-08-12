@@ -1,4 +1,4 @@
-Technical and organizational restrictions are necessary to guarantee the stability and reliability of the platform. Resource usage limits allow platform clients to freely access VK CS services.
+Technical and organizational restrictions are necessary to guarantee the stability and reliability of the platform. Resource usage limits allow platform clients to freely access VK Cloud services.
 
 ## Quotas
 
@@ -82,7 +82,7 @@ The standard quota set is defined as follows:
 
 ## Technical limits
 
-The stability of the VK CS services is ensured by setting the technical limits of the platform. These are general limitations due to the peculiarities of the VK CS architecture.
+The stability of the VK Cloud services is ensured by setting the technical limits of the platform. These are general limitations due to the peculiarities of the VK Cloud architecture.
 
 The current technical limits have the following meanings:
 

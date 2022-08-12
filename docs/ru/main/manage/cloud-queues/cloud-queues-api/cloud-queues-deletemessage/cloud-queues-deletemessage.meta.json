@@ -2,7 +2,7 @@
   "title": "DeleteMessage",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "DeleteMessage - VK Cloud Solutions",
+  "metaTitle": "DeleteMessage - VK Cloud",
   "metaDescription": "Запрос удаляет указанное сообщение из указанной очереди. Чтобы выбрать сообщение для удаления, используйте ReceiptHandleсимвол сообщения (а не тот, Message",
   "sectionTitle": "DeleteMessage",
   "markdown": "",

@@ -12,7 +12,7 @@ When deleting a queue, you must wait at least 60 seconds before creating a queue
 
 **QueueUrl**
 
-The URL of the VK CS SQS queue to be deleted.
+The URL of the VK Cloud SQS queue to be deleted.
 
 URLs and queue names are case-sensitive.
 
@@ -24,7 +24,7 @@ Required: Yes
 
 #### Error response structure
 
-In case of an unsuccessful request, VK CS SQS always returns the main element of the ErrorResponse response. This element contains the Error element and the RequestId element.
+In case of an unsuccessful request, VK Cloud SQS always returns the main element of the ErrorResponse response. This element contains the Error element and the RequestId element.
 
 **Error** The element contains the following child elements:
 

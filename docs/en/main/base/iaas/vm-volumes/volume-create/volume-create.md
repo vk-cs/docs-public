@@ -1,6 +1,6 @@
-## VK CS Control Panel
+## VK Cloud Control Panel
 
-To create a disk [in VK CS personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
+To create a disk [in VK Cloud personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
 
 1. Go to the "Disks" section of the "Cloud Computing" service.
 2. Select "Create disk" in the top menu.

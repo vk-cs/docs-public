@@ -6,9 +6,9 @@ Before performing high-risk operations with instance settings or its data, it is
 
 </warn>
 
-## VK CS Control Panel
+## VK Cloud Control Panel
 
-To create a manual backup copy of an instance [in VK CS personal account](http://mchs.mail.ru/app/services/info/servers/) manually follows:
+To create a manual backup copy of an instance [in VK Cloud personal account](http://mchs.mail.ru/app/services/info/servers/) manually follows:
 
 1. Go to the "Virtual Machines" section of the "Cloud Computing" service.
 2. In the context menu of the instance, select "Create backup".

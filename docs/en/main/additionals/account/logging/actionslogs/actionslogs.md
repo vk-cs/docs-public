@@ -1,6 +1,6 @@
 The Activity Log section is for monitoring and installing changes. To go to the section, at the top of the control panel, click on the username and select "Activity Log".
 
-The page displays the history of user actions working with the project. Now the history of actions is recorded by 6 components of the VK CS cloud:
+The page displays the history of user actions working with the project. Now the history of actions is recorded by 6 components of the VK Cloud cloud:
 
 1. Nova is a controller of computing resources.
 2. Cinder - a component responsible for working with disks.

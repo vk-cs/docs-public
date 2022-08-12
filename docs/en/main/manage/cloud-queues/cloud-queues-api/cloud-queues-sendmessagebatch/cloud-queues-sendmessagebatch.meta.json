@@ -2,7 +2,7 @@
   "title": "SendMessageBatch",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "SendMessageBatch - VK Cloud Solutions",
+  "metaTitle": "SendMessageBatch - VK Cloud",
   "metaDescription": "Delivers up to ten messages to the specified queue. For a FIFO queue, multiple messages in a single packet are queued in the order they are sent.  Result",
   "sectionTitle": "SendMessageBatch",
   "markdown": "",

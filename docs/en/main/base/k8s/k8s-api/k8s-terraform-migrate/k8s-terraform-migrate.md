@@ -1,8 +1,8 @@
-Currently, VK CS supports 2 Terraform providers at once: OpenStack for managing IaaS services and its own VK CS Terraform Provider for managing Kubernetes. Kubernetes clusters that were previously managed using the OpenStack Terraform Provider can be transferred under the control of the VK CS Terraform Provider in order to be able to use Terraform to configure the auto-scaling of the cluster, work with the Node Group, update the version, etc.
+Currently, VK Cloud supports 2 Terraform providers at once: OpenStack for managing IaaS services and its own VK Cloud Terraform Provider for managing Kubernetes. Kubernetes clusters that were previously managed using the OpenStack Terraform Provider can be transferred under the control of the VK Cloud Terraform Provider in order to be able to use Terraform to configure the auto-scaling of the cluster, work with the Node Group, update the version, etc.
 
 ## Transition instructions
 
-It is important that VK CS Terraform Provider works with underlying IaaS resources managed by the OpenStack Terraform Provider. Therefore, both providers must be activated to work correctly with Kubernetes clusters.
+It is important that VK Cloud Terraform Provider works with underlying IaaS resources managed by the OpenStack Terraform Provider. Therefore, both providers must be activated to work correctly with Kubernetes clusters.
 
 Consider the following cluster managed by the OpenStack Provider:
 
@@ -20,7 +20,7 @@ fixed_subnet = "fixed_subnet_id"
 }
 ```
 
-1\. Let's create a similar configuration for the **VK CS provider** and fill in only the required fields:
+1\. Let's create a similar configuration for the **VK Cloud provider** and fill in only the required fields:
 
 ```
  **# cluster description**
@@ -39,13 +39,13 @@ node_count = 1
 }
 ```
 
-2\. If before that there were no **VK CS provider** resources in the terraform state, then execute
+2\. If before that there were no **VK Cloud provider** resources in the terraform state, then execute
 
 ```
  terraform init
 ```
 
-3\. Let's execute the commands (where \`cluster_uuid\` and\` ng_uuid\` are unique identifiers of the cluster and node group, which can be obtained in the VK CS panel):
+3\. Let's execute the commands (where \`cluster_uuid\` and\` ng_uuid\` are unique identifiers of the cluster and node group, which can be obtained in the VK Cloud panel):
 
 ```
  terraform import mcs_kubernetes_cluster.cluster_2 cluster_uuid

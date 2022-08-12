@@ -1,4 +1,4 @@
-Existing file storages are managed from the VK CS dashboard personal account on the "File Storage" tab of the "Cloud Computing" section and from the Openstack CLI.
+Existing file storages are managed from the VK Cloud dashboard personal account on the "File Storage" tab of the "Cloud Computing" section and from the Openstack CLI.
 
 ## View information
 

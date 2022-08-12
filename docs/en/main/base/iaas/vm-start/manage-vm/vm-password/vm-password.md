@@ -1,11 +1,11 @@
-In VK CS, it is possible to set a user password for Windows and Linux operating systems. To do this, the following conditions must be met:
+In VK Cloud, it is possible to set a user password for Windows and Linux operating systems. To do this, the following conditions must be met:
 
-- The instance is created from the image provided by VK CS, or the QEMU guest agent is installed and running in the system.
+- The instance is created from the image provided by VK Cloud, or the QEMU guest agent is installed and running in the system.
 - At least 15 minutes have passed since the VM was created.
 
-## VK CS Control Panel
+## VK Cloud Control Panel
 
-To set a password [in VK CS personal account](https://mcs.mail.ru/app/services/infra/servers/), should:
+To set a password [in VK Cloud personal account](https://mcs.mail.ru/app/services/infra/servers/), should:
 
 1. Go to the "Virtual Machines" page of the "Cloud Computing" service.
 2. Click on the desired instance, go to the "Console" tab.
@@ -30,7 +30,7 @@ openstack server set --root-password <instance ID>
 
 A password prompt will appear.
 
-It is possible to get the instance ID in the VK CS panel or by executing:
+It is possible to get the instance ID in the VK Cloud panel or by executing:
 ```bash
 openstack server list
 ```

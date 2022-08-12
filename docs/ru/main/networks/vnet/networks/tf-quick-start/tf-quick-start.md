@@ -4,11 +4,11 @@
 
 ## Настройка провайдера
 
-Для начала использования провайдера terraform VK CS выполните следующие действия:
+Для начала использования провайдера terraform VK Cloud выполните следующие действия:
 
-- Скачайте бинарный файл VK CS провайдера по ссылке [https://hub.mcs.mail.ru/repository/terraform/linux/v0.1.0/mcs-provider](https://hub.mcs.mail.ru/repository/terraform/linux/v0.1.0/mcs-provider).
+- Скачайте бинарный файл VK Cloud провайдера по ссылке [https://hub.mcs.mail.ru/repository/terraform/linux/v0.1.0/mcs-provider](https://hub.mcs.mail.ru/repository/terraform/linux/v0.1.0/mcs-provider).
 - Создайте директорию, в которой будут храниться конфигурационные файлы, например, "mcs_provider".
-- Поместите бинарный файл VK CS провайдера по следующему пути "~/.terraform.d/plugins/".
+- Поместите бинарный файл VK Cloud провайдера по следующему пути "~/.terraform.d/plugins/".
 - Перейдите в директорию "mcs_provider" и создайте в ней файл "main.tf". Для использования переменных при создании ресурсов также создайте файл "vars.tf".
 - Для инициализации openstack провайдера используйте "openrc" файл - скачать его можно по ссылке [https://mcs.mail.ru/app/project/keys/](https://mcs.mail.ru/app/project/keys/).
 
@@ -34,7 +34,7 @@ provider "openstack" {
 }
 ```
 
-Для инициализации VK CS провайдера выставите в переменные окружения следующие переменные, выполнив команды:
+Для инициализации VK Cloud провайдера выставите в переменные окружения следующие переменные, выполнив команды:
 
 ```
 export USER_NAME="your_username" #same as OS_USERNAME
@@ -157,9 +157,9 @@ resource "openstack_networking_router_interface_v2" "k8s" {
 
 Выполните команду "terraform destroy" и введите "yes".
 
-## Переход на провайдера VK CS
+## Переход на провайдера VK Cloud
 
-Для перехода с openstack провайдера на VK CS выполните следующие команды:
+Для перехода с openstack провайдера на VK Cloud выполните следующие команды:
 
 Рассмотрим следующий openstack кластер:
 
@@ -177,7 +177,7 @@ labels = {
 }
 ```
 
-Создадим конфигурацию для VK CS провайдера и заполним только необходимые поля:
+Создадим конфигурацию для VK Cloud провайдера и заполним только необходимые поля:
 
 ```
 resource "mcs_kubernetes_cluster" "cluster_2" {
@@ -193,7 +193,7 @@ resource "mcs_kubernetes_node_group" "ng_2" {
 }
 ```
 
-Если до этого у вас в стейте не было ресурсов VK CS провайдера то выполните "terraform init -plugin-dir $GOPATH/bin".
+Если до этого у вас в стейте не было ресурсов VK Cloud провайдера то выполните "terraform init -plugin-dir $GOPATH/bin".
 
 Выполните команды:
 
@@ -206,4 +206,4 @@ terraform import mcs_kubernetes_node_group.ng_2 ng_uuid
 
 В результате в terraform будет создан новый ресурс, который будет управлять существующим кластером.
 
-Теперь управление кластером осуществляется через VK CS провайдер.
+Теперь управление кластером осуществляется через VK Cloud провайдер.

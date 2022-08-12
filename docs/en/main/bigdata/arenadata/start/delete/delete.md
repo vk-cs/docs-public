@@ -1,4 +1,4 @@
-To delete an instance [in your VK CS account](https://mcs.mail.ru/app/services/infra/servers/) you should:
+To delete an instance [in your VK Cloud account](https://mcs.mail.ru/app/services/infra/servers/) you should:
 
 1. Go to the "Clusters" page of the "Big Data" section.
 2. In the context menu of the cluster, select the "Delete" item.

@@ -1,6 +1,6 @@
-VK Cloud Solutions helps you get high-quality cloud services, build your business on them, speed up development and save money.
+VK Cloud helps you get high-quality cloud services, build your business on them, speed up development and save money.
 
-The VK Cloud Solutions platform was created for everyone who needs a convenient tool for building a reliable and secure cloud infrastructure. Platform services help solve business problems, launch applications and services.
+The VK Cloud platform was created for everyone who needs a convenient tool for building a reliable and secure cloud infrastructure. Platform services help solve business problems, launch applications and services.
 
 ## Capabilities
 
@@ -12,7 +12,7 @@ Automation of DevOps processes in the cloud reduces the time to market for produ
 
 ## Fault tolerance
 
-The VK Cloud Solutions platform takes into account the requirements of high reliability, security and resistance to peak loads, the absence of a single point of failure.
+The VK Cloud platform takes into account the requirements of high reliability, security and resistance to peak loads, the absence of a single point of failure.
 
 ## Price
 

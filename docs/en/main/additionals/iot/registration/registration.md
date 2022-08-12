@@ -1,8 +1,8 @@
-To get access to the IoT platform from VK Cloud Solutions, you must leave a request for testing the platform.
+To get access to the IoT platform from VK Cloud, you must leave a request for testing the platform.
 
 <warn>
 
-To gain access to the platform, you must already have a VK Cloud Solutions account.
+To gain access to the platform, you must already have a VK Cloud account.
 If you don't have an account, follow the instructions from [this article](https://mcs.mail.ru/docs/ru/additionals/start/get-started/registration).
 
 </warn>

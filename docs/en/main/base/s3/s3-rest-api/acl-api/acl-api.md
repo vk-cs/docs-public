@@ -20,7 +20,7 @@ ACL (Access Control List) позволяет контролировать, ка�
       <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:type="CanonicalUser">
         <ID>eab55955-ebdb-4f18-a94d-f3558ff150da</ID>
-        <DisplayName>VK CS_UserName</DisplayName>
+        <DisplayName>VK Cloud_UserName</DisplayName>
       </Grantee>
       <Permission>WRITE</Permission>
     </Grant>
@@ -58,7 +58,7 @@ Connection: close
   <AccessControlPolicy xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
     <Owner>
       <ID>eab55955-ebdb-4f18-a94d-f3558ff150da</ID>
-      <DisplayName>VK CS_UserName</DisplayName>
+      <DisplayName>VK Cloud_UserName</DisplayName>
     </Owner>
     <AccessControlList>
       <Grant>
@@ -70,7 +70,7 @@ Connection: close
       <Grant>
         <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
           <ID>eab55955-ebdb-4f18-a94d-f3558ff150da</ID>
-          <DisplayName>VK CS_Username</DisplayName>
+          <DisplayName>VK Cloud_Username</DisplayName>
         </Grantee>
         <Permission>FULL_CONTROL</Permission>
       </Grant>
@@ -161,7 +161,7 @@ Connection: close
   <AccessControlPolicy xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
     <Owner>
       <ID>eab55955-ebdb-4f18-a94d-f3558ff150da</ID>
-      <DisplayName>VK CS_UserName</DisplayName>
+      <DisplayName>VK Cloud_UserName</DisplayName>
     </Owner>
     <AccessControlList>
       <Grant>
@@ -173,7 +173,7 @@ Connection: close
       <Grant>
         <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
           <ID>eab55955-ebdb-4f18-a94d-f3558ff150da</ID>
-          <DisplayName>VK CS_UserName</DisplayName>
+          <DisplayName>VK Cloud_UserName</DisplayName>
         </Grantee>
         <Permission>FULL_CONTROL</Permission>
       </Grant>

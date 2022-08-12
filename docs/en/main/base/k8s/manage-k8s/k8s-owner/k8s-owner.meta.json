@@ -2,7 +2,7 @@
   "title": "Deleting the user who created the cluster",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Deleting the user who created the cluster - VK Cloud Solutions",
+  "metaTitle": "Deleting the user who created the cluster - VK Cloud",
   "metaDescription": "Warning Deleting the user under which the cluster was created makes it impossible to manage the cluster. The cluster stops and works",
   "sectionTitle": "Deleting the user who created the cluster",
   "markdown": "",

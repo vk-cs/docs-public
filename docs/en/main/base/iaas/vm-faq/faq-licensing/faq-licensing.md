@@ -33,11 +33,11 @@ Contact Microsoft technical support, they will answer all questions regarding th
 
 ## Can I use my license?
 
-If you have previously purchased a license for Microsoft software products, its use on the VK CS platform is possible, for this you need to make sure that the license can be transferred, and also get confirmation from Microsoft for this. For more details, see the instructions on [using your own licenses](https://mcs.mail.ru/help/licensing/license-mobility).
+If you have previously purchased a license for Microsoft software products, its use on the VK Cloud platform is possible, for this you need to make sure that the license can be transferred, and also get confirmation from Microsoft for this. For more details, see the instructions on [using your own licenses](https://mcs.mail.ru/help/licensing/license-mobility).
 
 ## Can I buy a license on an indefinite basis?
 
-VK CS provides license rentals on a monthly basis. The purchase of a license for permanent use, both on the VK CS platform and outside it, is impossible.
+VK Cloud provides license rentals on a monthly basis. The purchase of a license for permanent use, both on the VK Cloud platform and outside it, is impossible.
 
 ## Are funds being debited for a stopped VM?
 

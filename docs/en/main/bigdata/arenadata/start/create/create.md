@@ -56,7 +56,7 @@ At this stage of creation, it is necessary to specify some parameters of the clu
 | Disk type | Disk type (HDD/SSD). |
 | Connect monitoring node | Connect Arenadata Monitoring bundle. More details about the functionality can be found on the [Arenadata website](https://docs.arenadata.io/mon/en/index.html). |
 | Connect edge node | Connect a node with UI services added to the cluster. |
-| HA Cluster | Connecting a High-Availability Cluster. This service is performed manually by VK CS technical support specialists. The request is made in the [support chat](https://mcs.mail.ru/docs/contacts). |
+| HA Cluster | Connecting a High-Availability Cluster. This service is performed manually by VK Cloud technical support specialists. The request is made in the [support chat](https://mcs.mail.ru/docs/contacts). |
 | Disk autoscaling | Enabling automatic disk space expansion on cluster nodes. |
 
 After selection, click "Next step" to proceed to the selection of components to be installed on the cluster nodes.## Select components for Arenadata Hadoop cluster nodes

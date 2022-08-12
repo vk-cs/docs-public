@@ -1,4 +1,4 @@
-You can monitor the status of individual PostgreSQL hosts using the monitoring tool built into the VK CS panel.
+You can monitor the status of individual PostgreSQL hosts using the monitoring tool built into the VK Cloud panel.
 
 <warn>
 
@@ -10,7 +10,7 @@ This tool is only available if the PostgreSQL cluster was [created](../../dbaas/
 
 To view monitoring data:
 
-1. Open the [VK CS panel](https://mcs.mail.ru/app/).
+1. Open the [VK Cloud panel](https://mcs.mail.ru/app/).
 1. Go to Databases→Database Instances.
 1. Find the required instance in the list.
 1. Click on the instance host for which you want to view monitoring data.

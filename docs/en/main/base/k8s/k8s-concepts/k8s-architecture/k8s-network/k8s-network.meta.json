@@ -2,7 +2,7 @@
   "title": "Networking",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Networking - VK Cloud Solutions",
+  "metaTitle": "Networking - VK Cloud",
   "metaDescription": "Kubernetes networking model Kubernetes has the following requirements for any network implementation: all modules can communicate with all other modules wi",
   "sectionTitle": "Networking",
   "markdown": "",

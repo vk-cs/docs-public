@@ -1,8 +1,8 @@
-In VK CS, routers manage the connectivity of private networks to the Internet. Each router can be assigned a "white" address in the external (ext-net) network and subnet to which this router is connected.
+In VK Cloud, routers manage the connectivity of private networks to the Internet. Each router can be assigned a "white" address in the external (ext-net) network and subnet to which this router is connected.
 
 Instances in private networks access the Internet through the IP address of the router, unless a floating IP is assigned to them.
 
-Management of the project routers is available in the [VK CS personal account](https://mcs.mail.ru/app/services/infra/routers/) .
+Management of the project routers is available in the [VK Cloud personal account](https://mcs.mail.ru/app/services/infra/routers/) .
 
 ## Create a router
 

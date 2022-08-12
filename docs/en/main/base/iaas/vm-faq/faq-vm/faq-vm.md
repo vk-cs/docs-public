@@ -1,13 +1,13 @@
 ## Where are the servers located
 
-Virtual machines can be created in VK CS data centers located in the Russian Federation:
+Virtual machines can be created in VK Cloud data centers located in the Russian Federation:
 
 - gz1 — [Goznak](https://tech.goznak.ru/dc-goznak-moscow);
 - ms1 (ko1) — [DataLine NORD4](https://www.dtln.ru/tsod-nord).
 
 ## What is the guaranteed connection speed
 
-VK CS provides virtual machines with an incoming and outgoing communication channel to the Internet with a bandwidth of 1 Gbit/s, without traffic restrictions.
+VK Cloud provides virtual machines with an incoming and outgoing communication channel to the Internet with a bandwidth of 1 Gbit/s, without traffic restrictions.
 
 ## I can't set a password when creating
 
@@ -37,7 +37,7 @@ It is also not recommended to create instances with a low amount of CPU and RAM 
 
 ## No instance is being created
 
-If an error occurred during the creation of the instance, you should pay attention to the pop-up window in the upper right corner of the VK CS panel, which displays an error message. If the message does not appear, and the creation wizard reports an error, we recommend [contacting technical support](https://mcs.mail.ru/docs/contacts).
+If an error occurred during the creation of the instance, you should pay attention to the pop-up window in the upper right corner of the VK Cloud panel, which displays an error message. If the message does not appear, and the creation wizard reports an error, we recommend [contacting technical support](https://mcs.mail.ru/docs/contacts).
 
 ## There are not enough quotas when creating a VM
 
@@ -45,7 +45,7 @@ The VM creation mechanism requires a sufficient number of quotas in the project 
 
 ## I can't create a VM with Windows 8 / 10
 
-Client operating systems of the Windows family, such as Windows 7 / 8 / 10 it is not possible to use VK CS in the cloud. This restriction is set for all projects and it cannot be lifted.
+Client operating systems of the Windows family, such as Windows 7 / 8 / 10 it is not possible to use VK Cloud in the cloud. This restriction is set for all projects and it cannot be lifted.
 
 ## Graphic elements are poorly processed on the instance
 
@@ -70,7 +70,7 @@ If you lose the private key to access the server via SSH protocol, you must gene
 
 Access to the Openstack CLI is carried out using a configuration file (Linux) or a set of parameters from a file and a password. Information about installation, configuration and connection parameters can be found in the article about Using [Management Utilities (CLI)](https://mcs.mail.ru/docs/ru/base/iaas/vm-interfaces/vm-create-cli).
 
-## The instance console is not displayed in the VK CS panel
+## The instance console is not displayed in the VK Cloud panel
 
 The Web management console allows you to work with a virtual machine without the need to use a remote connection to the instance. The console is available in the virtual machine card on the Virtual Machines tab of the Cloud Computing service.
 

@@ -1,9 +1,9 @@
 {
   "title": "Configuring the Terraform provider",
-  "pageDescription": "Description of configuring Terraform providers from VK CS and OpenStack",
-  "shortDescription": "Description of configuring Terraform providers from VK CS and OpenStack",
-  "metaTitle": "Configuring the Terraform provider - VK Cloud Solutions",
-  "metaDescription": "Description of configuring Terraform providers from VK CS and OpenStack",
+  "pageDescription": "Description of configuring Terraform providers from VK Cloud and OpenStack",
+  "shortDescription": "Description of configuring Terraform providers from VK Cloud and OpenStack",
+  "metaTitle": "Configuring the Terraform provider - VK Cloud",
+  "metaDescription": "Description of configuring Terraform providers from VK Cloud and OpenStack",
   "sectionTitle": "Configuring the Terraform provider",
   "markdown": "",
   "icon": "",

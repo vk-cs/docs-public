@@ -16,7 +16,7 @@
 - **vkcs_networking_router_interface** — подключить роутер к внутренней сети.
 - **vkcs_networking_secgroup** — группа безопасности, в которую будут включены правила доступа.
 - **vkcs_networking_secgroup_rule** — правило для группы безопасности. В примере, открываем доступ к сети с любого IP по портам 22 и 3389.
-- **vkcs_networking_port** — создать ресурс сетевого порта внутри VK CS.
+- **vkcs_networking_port** — создать ресурс сетевого порта внутри VK Cloud.
 - **vkcs_networking_port_secgroup_associate** — привязать порт к группе безопасности.
 
 2. Источники данных (data source):

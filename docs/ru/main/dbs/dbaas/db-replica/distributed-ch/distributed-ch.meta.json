@@ -2,7 +2,7 @@
   "title": "Инструкция по созданию реплицируемых и distributed таблиц в Clickhouse кластере",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Инструкция по созданию реплицируемых и distributed таблиц в Clickhouse кластере - VK Cloud Solutions",
+  "metaTitle": "Инструкция по созданию реплицируемых и distributed таблиц в Clickhouse кластере - VK Cloud",
   "metaDescription": "Описание В СУБД Clickhouse репликация данных настраивается на уровне таблиц, в отличие от традиционных, где это обычно уровень БД или даже инстанса. То ест",
   "sectionTitle": "Инструкция по созданию реплицируемых и distributed таблиц в Clickhouse кластере",
   "markdown": "",

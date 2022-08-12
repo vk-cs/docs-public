@@ -14,17 +14,17 @@ These images can be “minimal,” meaning the operating system is reduced to wh
 
 Typically, images used for the cloud include some post-launch configuration tools that you can use to set information unique to an instance, such as its hostname.
 
-There are public images provided by VK CS and private images created and uploaded individually in each cloud project.
+There are public images provided by VK Cloud and private images created and uploaded individually in each cloud project.
 
 ## Flavor or Virtual Machine Configuration
 
 Flavor is an instance model that defines its characteristics in terms of resources. The flavor determines the amount of CPU and RAM of the virtual machine.
 
-For example, the "Standard-4-8" flavor in the VK CS cloud defines 4 vCPUs and 8 GB of RAM.
+For example, the "Standard-4-8" flavor in the VK Cloud cloud defines 4 vCPUs and 8 GB of RAM.
 
 ## Disk (Volume)
 
-Disk is a block storage device that attaches to instances. There are several different types of disks in VK CS: ssd, hdd, and high-iops ssd.
+Disk is a block storage device that attaches to instances. There are several different types of disks in VK Cloud: ssd, hdd, and high-iops ssd.
 
 The size and type of discs is set individually when creating them in accordance with the needs. Expand, attach, convert, snapshot or delete operations are available for disks.
 

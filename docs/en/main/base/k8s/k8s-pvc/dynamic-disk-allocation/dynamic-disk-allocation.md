@@ -1,6 +1,6 @@
-The Persistent Volume Claim (PVC) mechanism in VK CS allows you to dynamically allocate and attach block disks with the required characteristics to your pods.
+The Persistent Volume Claim (PVC) mechanism in VK Cloud allows you to dynamically allocate and attach block disks with the required characteristics to your pods.
 
-This is due to the fact that VK CS Kubernetes implements a CSI (Container Storage Interface) driver that interacts with the VK CS API for block disk management.
+This is due to the fact that VK Cloud Kubernetes implements a CSI (Container Storage Interface) driver that interacts with the VK Cloud API for block disk management.
 
 In order to dynamically create a PVC based PV, you need to specify the correct storage class. For a complete list of storage classes and disk types available for your cluster, you need to run the command:
 

@@ -16,7 +16,7 @@ Required: Yes
 
 **AWSAccountId.N**
 
-The VK CS account number of the principal (the principal is a user, service, or account that receives the permissions defined in the policy) that has been granted permission. The customer must have an VK CS account, but must not be registered in Cloud Queues.
+The VK Cloud account number of the principal (the principal is a user, service, or account that receives the permissions defined in the policy) that has been granted permission. The customer must have an VK Cloud account, but must not be registered in Cloud Queues.
 
 Type: array of strings
 
@@ -32,7 +32,7 @@ Required: Yes
 
 **QueueUrl**
 
-VK Cloud Solutions Queues, to which permissions are added.
+VK Cloud Queues, to which permissions are added.
 
 URLs and queue names are case-sensitive.
 

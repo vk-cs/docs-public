@@ -1,4 +1,4 @@
-Remove the cost allocation tags from the specified VK CS SQS queue.
+Remove the cost allocation tags from the specified VK Cloud SQS queue.
 
 ## Request Parameters
 

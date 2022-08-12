@@ -7,7 +7,7 @@
 
 **Внимание**
 
-Elasticsearch и Kibana необходимо установить как [приложение в VK CS](https://mcs.mail.ru/app/services/marketplace/setup/elk_single_instance/).
+Elasticsearch и Kibana необходимо установить как [приложение в VK Cloud](https://mcs.mail.ru/app/services/marketplace/setup/elk_single_instance/).
 
 При использовании других серверов и оборудования некоторые шаги сценария могут отличаться от описанных ниже.
 

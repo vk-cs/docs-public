@@ -1,10 +1,10 @@
-This document is an official offer of Mail.Ru LLC (hereinafter referred to as the "Contractor") to conclude a user agreement (hereinafter referred to as the "Agreement") with you (hereinafter referred to as the "Customer") on the provision of services for providing access to the 1C Service: within the VK Cloud Solutions Platform (hereinafter referred to as the “Platform”), on the terms set forth in this Agreement, which is available on the Internet at: [https://mcs.mail.ru/help/legal/1cgrm-termofuse](https://mcs.mail.ru/help/legal/1cgrm-termofuse) .
+This document is an official offer of Mail.Ru LLC (hereinafter referred to as the "Contractor") to conclude a user agreement (hereinafter referred to as the "Agreement") with you (hereinafter referred to as the "Customer") on the provision of services for providing access to the 1C Service: within the VK Cloud Platform (hereinafter referred to as the “Platform”), on the terms set forth in this Agreement, which is available on the Internet at: [https://mcs.mail.ru/help/legal/1cgrm-termofuse](https://mcs.mail.ru/help/legal/1cgrm-termofuse) .
 
 ## 1\. Terms and definitions
 
 **Site** - an Internet site located at [https://mcs.mail.ru/](https://mcs.mail.ru/) , which provides the Customer with access to the Service. The Contractor posts on the Site information that is binding on the Customer.
 
-**VK Cloud Solutions Platform (Platform)** is a computer program available to the Customer through the Website and operated by the Contractor, which provides the Customer with access to the selected Services.
+**VK Cloud Platform (Platform)** is a computer program available to the Customer through the Website and operated by the Contractor, which provides the Customer with access to the selected Services.
 
 **Service 1C: Ready-made workplace (Service)** - the Contractor's service, known under the name "1C: Ready-made workplace", consisting in presenting to the Customer the possibility of remote access to the selected 1C: Enterprise 8 programs deployed in the cloud infrastructure through a browser or thin client from 1C with work through a browser.
 
@@ -18,7 +18,7 @@ This document is an official offer of Mail.Ru LLC (hereinafter referred to as th
 
 **Applicable rules** - this Agreement, available on the Internet at: [https://mcs.mail.ru/help/legal/1cgrm-termofuse](https://mcs.mail.ru/help/legal/1cgrm-termofuse) , containing the conditions for access and use of the Service, as well as the following documents, to the extent necessary for use Service:
 
-1.  Terms of use of the VK Cloud Solutions Platform ( [https://help.mail.ru/mcs/legal/termofuse](https://help.mail.ru/mcs/legal/termofuse) );
+1.  Terms of use of the VK Cloud Platform ( [https://help.mail.ru/mcs/legal/termofuse](https://help.mail.ru/mcs/legal/termofuse) );
 2.  Contractor's privacy policy ( [https://help.mail.ru/mcs/legal/privacy/](https://help.mail.ru/mcs/legal/privacy) ).
 
 In the event that this Agreement uses terms that are not defined in Section 2 of this Agreement, the definitions of these terms of the Applicable Rules are used.

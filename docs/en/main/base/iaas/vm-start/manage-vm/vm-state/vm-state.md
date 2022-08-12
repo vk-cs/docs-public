@@ -1,6 +1,6 @@
-## VK CS Control Panel
+## VK Cloud Control Panel
 
-To work with VM [in VK CS personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
+To work with VM [in VK Cloud personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
 
 1. Go to the "Virtual Machines" page of the "Cloud Computing" section.
 2. Select instances and click on the action button in the top menu. Stop, start, restart and delete machines are available. Actions can also be called from the context menu.

@@ -1,4 +1,4 @@
-By default, Hadoop and Spark clusters in VK Cloud Solutions use a data replication factor (dfs.replication) of 1. Using this replication factor value means that HDFS data will be stored in a single instance in the cluster. At the same time, the redundancy and reliability of data storage are provided exclusively by the underlying SDS (Software Defined Storage) infrastructure connected to the cluster servers via a high-speed communication channel.
+By default, Hadoop and Spark clusters in VK Cloud use a data replication factor (dfs.replication) of 1. Using this replication factor value means that HDFS data will be stored in a single instance in the cluster. At the same time, the redundancy and reliability of data storage are provided exclusively by the underlying SDS (Software Defined Storage) infrastructure connected to the cluster servers via a high-speed communication channel.
 
 If necessary, the HDFS replication factor can be changed to higher values. In this case, data storage redundancy will be provided both at the level of HDFS itself and at the level of block data storage in SDS, which will provide even greater reliability and speed of data processing.
 
@@ -47,7 +47,7 @@ The filesystem under path '/user/admin/data.csv' is HEALTHY
 
 A non-zero number of "Under-replicated blocks" in the fsck output may mean that the specified number of data copies for the specified file has not yet been reached, for example, due to the lack of the required number of nodes.
 
-When reducing the cluster size during scaling, the VK Cloud Solutions BigData service automatically waits for data to move to other nodes and for the number of under-replicated blocks to decrease to zero before shutting down the decommissioned node. If one or more files have a replication factor greater than the target number of worker nodes, then the scaling process will wait indefinitely until the number of copies is reduced to the target number of worker nodes.
+When reducing the cluster size during scaling, the VK Cloud BigData service automatically waits for data to move to other nodes and for the number of under-replicated blocks to decrease to zero before shutting down the decommissioned node. If one or more files have a replication factor greater than the target number of worker nodes, then the scaling process will wait indefinitely until the number of copies is reduced to the target number of worker nodes.
 
 To change the replication factor for all new files, go to the Ambari interface, HDFS section, Configs tab, Advanced tab:
 

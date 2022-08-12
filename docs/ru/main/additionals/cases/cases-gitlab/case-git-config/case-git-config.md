@@ -3,7 +3,7 @@
 ## Конфигурация оборудования
 
 - Сервер Ubuntu 18.04 LTS x86_64.
-- Установленный и настроенный кластер K8s ([например, в VK CS](https://mcs.mail.ru/app/services/containers/list/)).
+- Установленный и настроенный кластер K8s ([например, в VK Cloud](https://mcs.mail.ru/app/services/containers/list/)).
 
 ## Схема работы
 

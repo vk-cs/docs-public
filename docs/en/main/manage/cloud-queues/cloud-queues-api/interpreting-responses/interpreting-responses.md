@@ -27,7 +27,7 @@ Below is an example of a successful response in XML format:
 
 ## Error Response structure
 
-In case of an unsuccessful request, VK CS SQS always returns the main element of the ErrorResponse response. This element contains the Error element and the RequestId element.
+In case of an unsuccessful request, VK Cloud SQS always returns the main element of the ErrorResponse response. This element contains the Error element and the RequestId element.
 
 **Error** The element contains the following child elements:
 

@@ -2,7 +2,7 @@
   "title": "Подключение существующего диска в качестве Persistent Volume",
   "pageDescription": "Механизм PersistentVolume позволяет подключить к кластеру K8S существующий диск, в качестве постоянного хранилища данных.",
   "shortDescription": "",
-  "metaTitle": "Подключение существующего диска в качестве Persistent Volume - VK Cloud Solutions",
+  "metaTitle": "Подключение существующего диска в качестве Persistent Volume - VK Cloud",
   "metaDescription": "",
   "sectionTitle": "Подключение существующего диска в качестве Persistent Volume",
   "markdown": "",

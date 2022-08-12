@@ -56,7 +56,7 @@ In the settings of the CDN resource, you can set the necessary content settings,
 
 ## Source groups
 
-In case there is a need to distribute content from different sources, the VK CS interface has such an option.
+In case there is a need to distribute content from different sources, the VK Cloud interface has such an option.
 
 To add a source group, click the corresponding button:
 
@@ -79,7 +79,7 @@ cdn CNAME cl-0cc5e00c.gcdn.co.
 
 1.  You need to decide what content (what files) you need to distribute through the CDN.
 2.  It is necessary to determine the source / group of sources through which the content will be distributed.
-3.  You need to upload the content to the VK CS interface.
+3.  You need to upload the content to the VK Cloud interface.
 4.  You need to create a DNS record (see above).
 5.  It is necessary to replace the original domain on the path to the static files with a personal one.
 6.  The resulting path / URL will be the one that needs to be substituted in the layout of the web page (or other resource) as the URL of the required content.

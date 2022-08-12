@@ -1,8 +1,8 @@
 An image is a file that contains a virtual disk with an operating system or other data already installed on it. Images are used to create virtual instances in the cloud.
 
-## VK CS Control Panel
+## VK Cloud Control Panel
 
-To create an image from an existing instance [in VK CS personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
+To create an image from an existing instance [in VK Cloud personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
 
 1. Stop the necessary VM instance — from which we will create an image.
 2. Go to [Images section](https://mcs.mail.ru/app/services/infra/images/) of the Cloud Computing service.

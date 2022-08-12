@@ -1,8 +1,8 @@
 ## Bonus points
 
-At the first registration in VK CS and activation of services, 150 points are automatically credited as a bonus for familiarization with the VK CS platform, as well as the services and services provided.
+At the first registration in VK Cloud and activation of services, 150 points are automatically credited as a bonus for familiarization with the VK Cloud platform, as well as the services and services provided.
 
-Within a few working days after registering a phone number in your personal account, VK CS employees contact to confirm the phone number, as well as help in obtaining the necessary information about the services.
+Within a few working days after registering a phone number in your personal account, VK Cloud employees contact to confirm the phone number, as well as help in obtaining the necessary information about the services.
 
 ![](./assets/1595463285176-1595463285176.png)
 
@@ -10,7 +10,7 @@ or
 
 ![](./assets/1595463303903-1595463303903.png)
 
-Based on the results of providing information about the tasks that are planned to be solved using the VK CS platform, our colleagues can extend the testing period by adding 300 bonus points.
+Based on the results of providing information about the tasks that are planned to be solved using the VK Cloud platform, our colleagues can extend the testing period by adding 300 bonus points.
 
 Note
 

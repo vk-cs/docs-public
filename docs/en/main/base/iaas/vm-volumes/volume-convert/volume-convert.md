@@ -1,10 +1,10 @@
-In VK Cloud Solutions, it is possible to change the disk type to any of the available ones.
+In VK Cloud, it is possible to change the disk type to any of the available ones.
 
 You can convert only one disk from one type to another at a time. At the same time, the disk should not have snapshots.
 
-## VK CS Control Panel
+## VK Cloud Control Panel
 
-To change the disk type [in VK CS personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
+To change the disk type [in VK Cloud personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
 
 1. Go to the "Disks" page of the "Cloud Computing" service.
 2. In the context menu of the disk, select "Change disk type".

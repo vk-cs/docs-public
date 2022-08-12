@@ -2,7 +2,7 @@
   "title": "Persistent Volumes и StatefulSet",
   "pageDescription": "StatefulSet — это удобный способ работы со Stateful-приложениями, которым требуется обрабатывать события об остановке работы Pod и осуществления Graceful Shutdown.",
   "shortDescription": "",
-  "metaTitle": "Persistent Volumes и StatefulSet - VK Cloud Solutions",
+  "metaTitle": "Persistent Volumes и StatefulSet - VK Cloud",
   "metaDescription": "",
   "sectionTitle": "Persistent Volumes и StatefulSet",
   "markdown": "",

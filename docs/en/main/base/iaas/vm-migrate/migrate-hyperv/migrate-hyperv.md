@@ -62,9 +62,9 @@ You can export the necessary virtual machine using the command:
 Export-VM -Name <VM_name> -Path '<full path>'
 ```
 
-## Upload VM image to VK CS
+## Upload VM image to VK Cloud
 
-The \*.vhdx file obtained as a result of the export should be loaded into an existing VK CS project.
+The \*.vhdx file obtained as a result of the export should be loaded into an existing VK Cloud project.
 
 It is recommended to use the Openstack CLI to load the virtual machine image in order to avoid possible errors in the processing of large files by the web interface. To load the \*.vhdx image, use the command:
 

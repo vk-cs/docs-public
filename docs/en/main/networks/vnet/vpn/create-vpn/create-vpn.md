@@ -1,22 +1,22 @@
 ## Description
 
-VK CS provides Site-to-Site IPsec VPN as a service that connects the client's remote network and the project's private network.
+VK Cloud provides Site-to-Site IPsec VPN as a service that connects the client's remote network and the project's private network.
 
-Service works for networks connected to VK CS router, based on strongSwan software.
+Service works for networks connected to VK Cloud router, based on strongSwan software.
 
 **Information**
 
-You can get the service log from VK CS by contacting technical support.
+You can get the service log from VK Cloud by contacting technical support.
 
 ## Creature
 
-To create a connection in your [VK CS account](https://mcs.mail.ru/app/services/server/vpn-tunnels/) , go to the "VPN" page of the "Virtual Networks" service and select "Add" in the top menu. The New VPN Wizard will open:![](./assets/1600101759106-snimok-ekrana-2020-09-14-v-19.42.24.png)
+To create a connection in your [VK Cloud account](https://mcs.mail.ru/app/services/server/vpn-tunnels/) , go to the "VPN" page of the "Virtual Networks" service and select "Add" in the top menu. The New VPN Wizard will open:![](./assets/1600101759106-snimok-ekrana-2020-09-14-v-19.42.24.png)
 
 The first step is to configure the IKE connection parameters. On the service side, only main connection establishment mode is supported.
 
 The second step requires setting the key lifetime, choosing a Diffie-Hellman group and an encryption algorithm.
 
-At the third step, you need to select an existing router, specify the parameters of the local endpoint group from the side of the VK CS project and the remote one from the side of the client's network:![](./assets/1600102335123-snimok-ekrana-2020-09-14-v-19.51.03.png)
+At the third step, you need to select an existing router, specify the parameters of the local endpoint group from the side of the VK Cloud project and the remote one from the side of the client's network:![](./assets/1600102335123-snimok-ekrana-2020-09-14-v-19.51.03.png)
 
 In the fourth step, the tunnel name is configured, the remote router address is the routable address of the client equipment and the PSK key:![](./assets/1600102741691-snimok-ekrana-2020-09-14-v-19.57.26.png)
 
@@ -30,7 +30,7 @@ After clicking Create VPN Tunnel, the tunnel creation process will begin.
 
 ## Setting up routes
 
-For the connection to work correctly, in addition to configuring the remote side equipment, it is necessary to configure routes for the client's network and the VK CS design network: traffic to the client's network from virtual machines must go through a port with an IP address corresponding to the "SNAT" router port.
+For the connection to work correctly, in addition to configuring the remote side equipment, it is necessary to configure routes for the client's network and the VK Cloud design network: traffic to the client's network from virtual machines must go through a port with an IP address corresponding to the "SNAT" router port.
 
 1.  It is possible to find the port and its IP address in the Networks section → <private network name> → Select the required subnet → Ports (The device is designated "SNAT").![](./assets/1600103783808-snimok-ekrana-2020-09-14-v-20.15.58.png)
 2.  After receiving the SNAT port address, specify the route in the network properties:
@@ -41,7 +41,7 @@ For the connection to work correctly, in addition to configuring the remote side
 
 ## Terraform creation
 
-Typically, when using Terraform, it becomes necessary to establish a VPN between Terraform and other networks on the Cloud Solutions service that use the IPSec protocol.
+Typically, when using Terraform, it becomes necessary to establish a VPN between Terraform and other networks on the VK Cloud service that use the IPSec protocol.
 
 Using Terraform, you need to create a VPN gateway and a client gateway with remote network settings as far as possible.
 

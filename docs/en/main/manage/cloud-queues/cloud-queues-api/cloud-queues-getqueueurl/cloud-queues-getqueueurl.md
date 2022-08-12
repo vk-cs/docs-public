@@ -1,6 +1,6 @@
 The request returns the URL of an existing Cloud Queues queue.
 
-To access a queue that belongs to another VK CS account, use the 'queueownerawsaccountid' parameter (to specify the account ID of the queue owner). The queue owner must grant you permission to access the queue.
+To access a queue that belongs to another VK Cloud account, use the 'queueownerawsaccountid' parameter (to specify the account ID of the queue owner). The queue owner must grant you permission to access the queue.
 
 ## Request Parameters
 
@@ -16,7 +16,7 @@ Required: Yes
 
 **QueueOwnerAWSAccountId**
 
-The VK CS account ID for the account that created the queue.
+The VK Cloud account ID for the account that created the queue.
 
 Type: String
 

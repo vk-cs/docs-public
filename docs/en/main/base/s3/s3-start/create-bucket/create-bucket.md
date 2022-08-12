@@ -1,4 +1,4 @@
-When registering on the VK CS platform and activating the account, the user gets full access to the Object Storage service.
+When registering on the VK Cloud platform and activating the account, the user gets full access to the Object Storage service.
 
 Before uploading an object to the storage, you should create a bucket for its placement.
 
@@ -14,7 +14,7 @@ There are several types of buckets that differ in both the purpose and the amoun
 - Icebox — cloud storage of rarely used data: backups, logs, media content, scientific, statistical data, as well as working archives
 - Backup — placement of backup copies of instances created both automatically and manually. A bucket of this type is not subject to self-creation or deletion, but is managed by the backup service.
 
-You can create a bucket both in the VK CS Panel and using the S3 CLI.
+You can create a bucket both in the VK Cloud Panel and using the S3 CLI.
 
 <warn>
 
@@ -24,16 +24,16 @@ No more than 100 buckets can be created in one project. There is no limit on the
 
 <tabs>
 <tablist>
-<tab>VK CS panel</tab>
+<tab>VK Cloud panel</tab>
 <tab>S3 CLI</tab>
 </tablist>
 <tabpanel>
 
-## Creation via VK CS Panel
+## Creation via VK Cloud Panel
 
 To create it , you should:
 
-1. Go to the "Buckets" tab of the Object Storage service in the VK CS panel.
+1. Go to the "Buckets" tab of the Object Storage service in the VK Cloud panel.
 2. Click the "Add" button.
 3. Select the type of bucket to be created and enter a DNS-compatible name.
 
@@ -41,7 +41,7 @@ To create it , you should:
 
 The bucket name must meet the conditions:
 
-- Be unique for the entire VK CS platform
+- Be unique for the entire VK Cloud platform
 - Contain from 4 to 63 characters
 - Do not contain uppercase characters (uppercase)
 - Start with a lowercase character (lowercase) or digits
@@ -103,7 +103,7 @@ The following output will appear as a result of the correct execution of the com
 make_bucket: <make_bucket_name>
 ```
 
-A bucket with the appropriate storage type will be created. You can change its type in the VK CS panel.
+A bucket with the appropriate storage type will be created. You can change its type in the VK Cloud panel.
 
 </tabpanel>
 </tabs>

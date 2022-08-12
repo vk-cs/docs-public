@@ -1,6 +1,6 @@
 ### How do I get a bonus 3000 rubles for registering in my personal account?
 
-After activating your account, we will contact you and add 3000 rubles to your VK Cloud Solutions account.
+After activating your account, we will contact you and add 3000 rubles to your VK Cloud account.
 
 ### How long does the unblocking of services take place after the replenishment of the balance?
 

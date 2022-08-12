@@ -2,7 +2,7 @@
   "title": "Подключение",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Подключение - VK Cloud Solutions",
+  "metaTitle": "Подключение - VK Cloud",
   "metaDescription": "Описание Статья приводит примеры подключения (с помощью разных приложений) к установленной вами облачной базе данных. PHP $conn = pg_connect(",
   "sectionTitle": "Подключение",
   "markdown": "",

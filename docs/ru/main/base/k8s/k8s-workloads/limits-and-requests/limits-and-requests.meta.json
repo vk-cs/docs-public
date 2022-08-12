@@ -2,7 +2,7 @@
   "title": "Ограничение ресурсов для подов",
   "pageDescription": "При распределении подов по нодам kube-scheduler проверяет requests и limits для контейнеров и текущую емкость нод.",
   "shortDescription": "",
-  "metaTitle": "Ограничение ресурсов для подов - VK Cloud Solutions",
+  "metaTitle": "Ограничение ресурсов для подов - VK Cloud",
   "metaDescription": "",
   "sectionTitle": "Ограничение ресурсов для подов",
   "markdown": "",

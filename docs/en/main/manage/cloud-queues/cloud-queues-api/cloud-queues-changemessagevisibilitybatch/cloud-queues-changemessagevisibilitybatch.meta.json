@@ -2,7 +2,7 @@
   "title": "ChangeMessageVisibilityBatch",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "ChangeMessageVisibilityBatch - VK Cloud Solutions",
+  "metaTitle": "ChangeMessageVisibilityBatch - VK Cloud",
   "metaDescription": "The request changes the visibility timeout of several messages at once. The result of the action for each message is reported separately in the response, and you can send",
   "sectionTitle": "ChangeMessageVisibilityBatch",
   "markdown": "",

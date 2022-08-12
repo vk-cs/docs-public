@@ -10,9 +10,9 @@ At the request of technical support, configurations with high-performance proces
 
 Any change in the VM configuration affects its cost.
 
-## In the VK CS panel
+## In the VK Cloud panel
 
-To change the instance type in [VK CS personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
+To change the instance type in [VK Cloud personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
 
 1. Go to the "Virtual Machines" page of the "Cloud Computing" section.
 2. Open the context menu of the instance, select "Change the type of virtual machine".

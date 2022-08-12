@@ -1,8 +1,8 @@
-VK Cloud Solutions app store includes a number of solutions for comfortable development.
+VK Cloud app store includes a number of solutions for comfortable development.
 
 **Docker** is software for automating the deployment and management of applications in containerized environments. This software allows you to package an application with all its environment and dependencies into a container that can be ported to any Linux system with support for cgroups in the kernel, and also provides an environment for managing containers.
 
-The VK CS marketplace offers two components for correct and convenient work with applications - the Docker CE (Community Edition) software itself and the Docker Registry - a server application for hosting and distributing an unlimited number of public docker images.
+The VK Cloud marketplace offers two components for correct and convenient work with applications - the Docker CE (Community Edition) software itself and the Docker Registry - a server application for hosting and distributing an unlimited number of public docker images.
 
 The Docker Registry can be used to control where images are stored and distributed, and to integrate the storage and distribution of images during development.
 
@@ -16,7 +16,7 @@ Kibana is a user-friendly interface for Elasticsearch that has a large number of
 
 ELK is now a powerful tool for collecting and analyzing information.
 
-VK Cloud Solutions allows you to create either one virtual machine with an ELK stack, or a complex of two ELK Multi Instances - elasticsearch instance and gateway instance.
+VK Cloud allows you to create either one virtual machine with an ELK stack, or a complex of two ELK Multi Instances - elasticsearch instance and gateway instance.
 
 ## **Application Development Kits**
 

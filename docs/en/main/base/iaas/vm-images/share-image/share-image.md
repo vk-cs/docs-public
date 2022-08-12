@@ -1,6 +1,6 @@
 Sharing an image in several projects allows you to reproach the deployment of instances.
 
-## VK CS Panel
+## VK Cloud Panel
 
 When creating an image, select "Allow access to all projects".
 

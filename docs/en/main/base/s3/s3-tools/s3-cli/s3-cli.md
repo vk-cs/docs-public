@@ -1,6 +1,6 @@
-The S3 CLI, or S3 Command Line Interface, is a single tool for managing S3 services based on the AWS S3 toolkit. With just one tool downloaded, it is possible to control many VK CS S3 services from the command line and automate them with scripts.
+The S3 CLI, or S3 Command Line Interface, is a single tool for managing S3 services based on the AWS S3 toolkit. With just one tool downloaded, it is possible to control many VK Cloud S3 services from the command line and automate them with scripts.
 
-The S3 CLI introduces a new set of simple commands to efficiently receive and send files to VK CS S3.
+The S3 CLI introduces a new set of simple commands to efficiently receive and send files to VK Cloud S3.
 
 With minimal configuration, the S3 CLI allows you to run commands from the command line in a terminal program:
 
@@ -83,11 +83,11 @@ You can use the Windows Standard Command Line Interface (cmd) to confirm the ins
 
 ## Accessing the CLI
 
-Access keys consist of an access key identifier and a secret access key, which are used to sign software requests sent to VK CS. If access keys are missing, they can be created in the VK CS Control Panel.
+Access keys consist of an access key identifier and a secret access key, which are used to sign software requests sent to VK Cloud. If access keys are missing, they can be created in the VK Cloud Control Panel.
 
 The only time the private access key can be viewed or downloaded is when the keys are generated. It will be impossible to restore them later. However, you can create new access keys at any time.
 
-In the VK CS panel, in the "Accounts" menu of the "Object Storage" service, you need to add an account, and save the received keys for future use:
+In the VK Cloud panel, in the "Accounts" menu of the "Object Storage" service, you need to add an account, and save the received keys for future use:
 
 ![](./assets/1598234121428-1598234121428.png)
 
@@ -112,8 +112,8 @@ The AWS CLI stores this information in a profile (set of settings) called defaul
 
 When using the AWS CLI to work with Object Storage, there are a few things to keep in mind:
 
-- The AWS CLI treats VK CS S3 as a hierarchical file system and object keys are in the form of a file path.
-- When running the aws command to work with VK CS S3, the --endpoint-url parameter is required because the client is configured by default to work with Amazon servers.
+- The AWS CLI treats VK Cloud S3 as a hierarchical file system and object keys are in the form of a file path.
+- When running the aws command to work with VK Cloud S3, the --endpoint-url parameter is required because the client is configured by default to work with Amazon servers.
 - Bucket creation should be done using the appropriate --endpoint-url - [http://hb.bizmrg.com](http://hb.bizmrg.com) for the Hotbox bucket and [http://ib.bizmrg.com](http://ib.bizmrg.com) for the Icebox bucket.
 - Any operations cannot be performed using the CLI with the Backup bucket class.
 - When using the storage classes --storage-class, the STANDARD values for Hotbox and STANDARD_IA for Icebox apply.

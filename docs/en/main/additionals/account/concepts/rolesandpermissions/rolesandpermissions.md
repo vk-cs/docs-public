@@ -1,10 +1,10 @@
 ## Roles
 
-In the personal account of VK CS, you can add additional project participants who will have access to working with cloud services. When adding, the role of the participant is indicated.
+In the personal account of VK Cloud, you can add additional project participants who will have access to working with cloud services. When adding, the role of the participant is indicated.
 
 ## Role matrix
 
-The VK CS platform supports the differentiation of access rights to project resources based on the role model. Following is the list of roles and their respective permission.
+The VK Cloud platform supports the differentiation of access rights to project resources based on the role model. Following is the list of roles and their respective permission.
 
 List of roles and permissions:
 

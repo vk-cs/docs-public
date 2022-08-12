@@ -4,11 +4,11 @@ Download terraform from the link [https://www.terraform.io/downloads.html](https
 
 ## Provider setting
 
-To start using the terraform VK CS provider, follow these steps:
+To start using the terraform VK Cloud provider, follow these steps:
 
-- Download the provider's VK CS binary from the link [Mac](https://hub.mcs.mail.ru/repository/terraform/darwin/v0.1.0/mcs-provider) [version, Linux](https://hub.mcs.mail.ru/repository/terraform/linux/v0.1.0/mcs-provider) [version, Windows version](https://hub.mcs.mail.ru/repository/terraform/windows/v0.1.0/mcs-provider.zip) .
+- Download the provider's VK Cloud binary from the link [Mac](https://hub.mcs.mail.ru/repository/terraform/darwin/v0.1.0/mcs-provider) [version, Linux](https://hub.mcs.mail.ru/repository/terraform/linux/v0.1.0/mcs-provider) [version, Windows version](https://hub.mcs.mail.ru/repository/terraform/windows/v0.1.0/mcs-provider.zip) .
 - Create a directory where the config files will be stored, for example "mcs_provider".
-- Place the provider VK CS binary in the following path "~ / .terraform.d / plugins /".
+- Place the provider VK Cloud binary in the following path "~ / .terraform.d / plugins /".
 - Change to the "vkcs_provider" directory and create a "main.tf" file in it. To use variables when creating resources, also create a "vars.tf" file.
 - To initialize the openstack provider, use the "openrc" file - you can download it from the link [https://mcs.mail.ru/app/project/keys/](https://mcs.mail.ru/app/project/keys/) .
 
@@ -36,7 +36,7 @@ region = "RegionOne"
 \`\`,
 ```
 
-\- To initialize the VK CS provider, set the following variables in the environment variables by running the commands:
+\- To initialize the VK Cloud provider, set the following variables in the environment variables by running the commands:
 
 ```
  \`\` \`sh
@@ -171,7 +171,7 @@ To apply the selected configuration execute "terraform apply" and enter "yes"
 
 \- Execute the command "terraform destroy" and enter "yes".
 
-## Switching to VK CS provider
+## Switching to VK Cloud provider
 
 To switch from an openstack provider to mcs, follow the following algorithm:
 
@@ -193,7 +193,7 @@ fixed_subnet = "fixed_subnet_id"
 \`\`,
 ```
 
-Let's create a configuration for the VK CS provider and fill in only the required fields:
+Let's create a configuration for the VK Cloud provider and fill in only the required fields:
 
 ```
  \`\` \`sh
@@ -211,7 +211,7 @@ node_count = 1
 \`\`,
 ```
 
-If you didn’t have any VK CS provider resources in your state before, then run "terraform init -plugin-dir GOPATH / bin".
+If you didn’t have any VK Cloud provider resources in your state before, then run "terraform init -plugin-dir GOPATH / bin".
 
 Run the commands:
 
@@ -226,4 +226,4 @@ To stop using the openstack provider to manage the cluster, open the terraform.t
 
 This will create a new resource in the terraform that will manage the existing cluster.
 
-Now the cluster is managed through the VK CS provider.
+Now the cluster is managed through the VK Cloud provider.

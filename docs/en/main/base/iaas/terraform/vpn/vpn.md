@@ -49,7 +49,7 @@ resource "vkcs_networking_router_interface" "router_interface" {
 
 ### Create a VPN connection
 
-1. **vkcs_vpnaas_service** - controls the VPN service inside VK CS. Includes the following setting:
+1. **vkcs_vpnaas_service** - controls the VPN service inside VK Cloud. Includes the following setting:
 
 - router_id — router ID. Changing the value of this parameter creates a new service. If you need to use an existing router, then specify its id (data.vkcs_networking_router.router.id) using the data source:
 
@@ -59,20 +59,20 @@ data "vkcs_networking_router" "router" {
 }
 ```
 
-2. **vkcs_vpnaas_ipsec_policy** - controls the IPSec policy of the resource inside the VK CS. The following option is included:
+2. **vkcs_vpnaas_ipsec_policy** - controls the IPSec policy of the resource inside the VK Cloud. The following option is included:
 
 - name — name of the created policy. Changing the value of this parameter changes the name of an existing policy.
 
-3. **vkcs_vpnaas_ike_policy** - controls the IKE policy of the resource inside the VK CS. Includes the following setting:
+3. **vkcs_vpnaas_ike_policy** - controls the IKE policy of the resource inside the VK Cloud. Includes the following setting:
 
 - name — name of the created policy. Changing the value of this parameter changes the name of an existing policy.
 
-4. **vkcs_vpnaas_endpoint_group** - manages the "endpoint group" resource inside VK CS. Includes the following option:
+4. **vkcs_vpnaas_endpoint_group** - manages the "endpoint group" resource inside VK Cloud. Includes the following option:
 
 - type — type of endpoints in the group. Accepts subnet, cidr, network, router, or vlan types. Changing the value of this parameter creates a new group.
 - endpoints - a list of endpoints of the same type included in the endpoint group. The type of values ​​depends on the type of endpoints. Changing the value of this parameter creates a new group.
 
-5. **vkcs_vpnaas_site_connection** - manages the site IPSec connection resource inside VK CS. Includes the following options:
+5. **vkcs_vpnaas_site_connection** - manages the site IPSec connection resource inside VK Cloud. Includes the following options:
 
 - name — connection name. Changing the value of this parameter changes the name of an existing connection.
 - ikepolicy_id - ID of the IKE policy. Changing the value of this parameter creates a new connection.

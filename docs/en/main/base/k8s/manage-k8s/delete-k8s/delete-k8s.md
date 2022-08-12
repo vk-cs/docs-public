@@ -1,8 +1,8 @@
 Before deleting a cluster, you need to make sure that it is in an enabled state. Otherwise, the delete operation cannot be performed.
 
-## In VK CS Panel
+## In VK Cloud Panel
 
-To delete a cluster through the VK CS Panel, go to the list of clusters in the "Containers" section, in the context menu of the selected cluster, click the "Delete cluster" option.
+To delete a cluster through the VK Cloud Panel, go to the list of clusters in the "Containers" section, in the context menu of the selected cluster, click the "Delete cluster" option.
 
 ![](./assets/1598991750274-1598991750274.png)
 

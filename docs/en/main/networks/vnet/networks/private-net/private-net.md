@@ -1,10 +1,10 @@
-The VK CS platform allows you to create and configure private networks in the project, identical to local networks.
+The VK Cloud platform allows you to create and configure private networks in the project, identical to local networks.
 
 By default, only ext-net is available in a new project, this is an external network common to all projects. Ext-net is not a private network.
 
-## VK CS control panel
+## VK Cloud control panel
 
-Networks management in [VK CS personal account is](https://mcs.mail.ru/app/services/server/networks/) carried out on the "Networks" page of the "Virtual Networks" service.
+Networks management in [VK Cloud personal account is](https://mcs.mail.ru/app/services/server/networks/) carried out on the "Networks" page of the "Virtual Networks" service.
 
 To create a network, click "Create" in the top menu of the page. A window for configuring the parameters of a new network will appear:
 

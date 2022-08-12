@@ -1,8 +1,8 @@
 {
   "title": "Available versions of Kubernetes and a policy of supporting versions",
   "pageDescription": "It contains information about available versions of Kubernetes, which can be expanded in VK Cloud. A policy of supporting versions is also given.",
-  "shortDescription": "List of available versions of Kubernetes and a policy of supporting them in clusters VK Cloud Solutions",
-  "metaTitle": "Available versions of Kubernetes and a policy of supporting versions - VK Cloud Solutions",
+  "shortDescription": "List of available versions of Kubernetes and a policy of supporting them in clusters VK Cloud",
+  "metaTitle": "Available versions of Kubernetes and a policy of supporting versions - VK Cloud",
   "metaDescription": "Kubernetes,K8S,версия,история,политика,поддержка",
   "sectionTitle": "Available versions of Kubernetes and a policy of supporting versions",
   "markdown": "",

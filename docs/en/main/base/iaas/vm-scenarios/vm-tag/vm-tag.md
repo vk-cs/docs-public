@@ -1,8 +1,8 @@
 Tags can be added to virtual machines — arbitrary combinations of characters that allow indexing instances or filtering by a specific tag.
 
-## VK CS Control Panel
+## VK Cloud Control Panel
 
-To manage tags [in VK CS personal account](http://mchs.mail.ru/app/services/info/servers/) should:
+To manage tags [in VK Cloud personal account](http://mchs.mail.ru/app/services/info/servers/) should:
 
 1. Go to the "Virtual Machines" page of the "Cloud Computing" section.
 2. In the context menu of the instance, in the "Tag Assignment" section, select existing tags or create a new one.

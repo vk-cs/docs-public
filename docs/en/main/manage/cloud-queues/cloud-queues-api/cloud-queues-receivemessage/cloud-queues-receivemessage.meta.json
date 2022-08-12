@@ -2,7 +2,7 @@
   "title": "ReceiveMessage",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "ReceiveMessage - VK Cloud Solutions",
+  "metaTitle": "ReceiveMessage - VK Cloud",
   "metaDescription": "Retrieves one or more messages (up to 10) from the specified queue. Using the WaitTimeSeconds parameter enables support for long polling.  Short",
   "sectionTitle": "ReceiveMessage",
   "markdown": "",

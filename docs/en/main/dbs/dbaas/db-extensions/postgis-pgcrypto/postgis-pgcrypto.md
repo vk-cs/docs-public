@@ -1,6 +1,6 @@
 DB additions can significantly expand the functionality of the database as a service. For example, add monitoring, geographical objects, and cryptography.
 
-Extensions are installed in [VK CS personal account](https://mcs.mail.ru/app/services/databases/). To do this, go to the "Databases" --> "Database Instances" section.
+Extensions are installed in [VK Cloud personal account](https://mcs.mail.ru/app/services/databases/). To do this, go to the "Databases" --> "Database Instances" section.
 
 Click on the database where you want to install extensions. Go to the "Extensions" tab and click on the "Add" button.
 
@@ -73,7 +73,7 @@ In addition, you can use spatial functions such as Distance(), ST_Intersects(), 
 |`postgis_topology`|Add—on for working with topology - vertices, faces, polygons, etc./
 |[`pgrouting`](https://pgrouting.org /)|An extension for finding the shortest path.|
 
-#### Parameters applicable in VK Cloud Solutions infrastructure:
+#### Parameters applicable in VK Cloud infrastructure:
 
 |Name|Description|
 |---|---|

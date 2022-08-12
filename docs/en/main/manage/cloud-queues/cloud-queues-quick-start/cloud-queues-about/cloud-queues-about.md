@@ -1,6 +1,6 @@
-VK Cloud Solutions Queue Queues offers a secure, reliable and affordable queue service that allows you to integrate and separate distributed software systems and components.
+VK Cloud Queue Queues offers a secure, reliable and affordable queue service that allows you to integrate and separate distributed software systems and components.
 
-## Advantages of using VK Cloud Solutions Queues
+## Advantages of using VK Cloud Queues
 
 - Security - You control who can send messages and receive messages from the Cloud Queues queue.
 - Reliability - To ensure the security of your messages, Cloud Queues stores them on multiple servers. Standard queues support at least one-time message delivery, and FIFO queues support one-time message processing.

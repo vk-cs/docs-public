@@ -1,4 +1,4 @@
-In this article, we'll show you how to set up your first exporter to export data to S3 compatible storage. We will use S3 storage in the VK CS cloud as an S3 compatible storage, and an emulator as the data source for export.
+In this article, we'll show you how to set up your first exporter to export data to S3 compatible storage. We will use S3 storage in the VK Cloud cloud as an S3 compatible storage, and an emulator as the data source for export.
 
 To export a data stream to object storage, you need to:
 
@@ -11,7 +11,7 @@ To export a data stream to object storage, you need to:
 
 To configure access to object storage, follow these steps:
 
-1. In your VK CS personal account, go to the "Object storage" section.
+1. In your VK Cloud personal account, go to the "Object storage" section.
 2. Create a new private bucket called `s3_exporter`.
 3. Create a new account and remember the given Access Key ID and Secret Key.
 

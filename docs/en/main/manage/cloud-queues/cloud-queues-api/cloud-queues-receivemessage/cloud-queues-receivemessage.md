@@ -35,7 +35,7 @@ A list of attributes to be returned with each message. These attributes include:
 - SentTimestamp\- Returns the time when the message was sent to the queue ([epoch time](http://en.wikipedia.org/wiki/Unix_time) in milliseconds).
 - MessageDeduplicationId\- Returns the value provided by the manufacturer that triggers the action. [SendMessage](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html)
 - MessageGroupId\- Returns the value provided by the manufacturer that triggers the action. Messages with the same messages are returned sequentially. [SendMessage](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) MessageGroupId
-- SequenceNumber - Returns the value provided by VK CS SQS.
+- SequenceNumber - Returns the value provided by VK Cloud SQS.
 
 Type: array of strings
 
@@ -69,7 +69,7 @@ Required: No
 
 QueueUrl
 
-URL of the VK CS SQS queue from which messages are received.
+URL of the VK Cloud SQS queue from which messages are received.
 
 URLs and queue names are case-sensitive.
 

@@ -1,4 +1,4 @@
-When creating a database in the VK CS panel, a backup plan is created, which can be managed in the ["Backups"](https://mcs.mail.ru/app/services/databases/backups/) section of the control panel.
+When creating a database in the VK Cloud panel, a backup plan is created, which can be managed in the ["Backups"](https://mcs.mail.ru/app/services/databases/backups/) section of the control panel.
 
 The current status of the plan can be seen by hovering the mouse over the colored status indicator.
 

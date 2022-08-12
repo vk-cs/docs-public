@@ -2,7 +2,7 @@
   "title": "SetQueueAttributes",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "SetQueueAttributes - VK Cloud Solutions",
+  "metaTitle": "SetQueueAttributes - VK Cloud",
   "metaDescription": "Устанавливает значение одного или нескольких атрибутов очереди. Когда вы изменяете атрибуты очереди, это изменение может занять до 60 секунд, прежде чем бо",
   "sectionTitle": "SetQueueAttributes",
   "markdown": "",

@@ -16,7 +16,7 @@ After creating a network, it will appear in the general list of networks:
 
 ## Subnetting
 
-To create a subnet, you must first select a network from the list of created networks in the "Virtual networks" section of your VK CS Personal Account.
+To create a subnet, you must first select a network from the list of created networks in the "Virtual networks" section of your VK Cloud Personal Account.
 
 When you click on the "Add subnet" button, the subnet creation wizard will open, in which you should specify the desired subnet configuration and you can set static routes:
 

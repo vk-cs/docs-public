@@ -11,7 +11,7 @@
 
 <info>
 
-В кластерах Kubernetes от VK Cloud Solutions для запускаемых контейнеров без указанных requests и limits применяются следующие значения по умолчанию:
+В кластерах Kubernetes от VK Cloud для запускаемых контейнеров без указанных requests и limits применяются следующие значения по умолчанию:
 
 - Requests: 100m / 64Mb
 - Limits: 500m / 512Mb

@@ -2,7 +2,7 @@
 
 You can learn more about the **JsQuery** extension from the developer documentation on [GitHub](https://github.com/postgrespro/jsquery) or on [website](https://postgrespro.ru/docs/postgrespro/9.5/jsquery).
 
-#### Parameters applicable in VK Cloud Solutions infrastructure:
+#### Parameters applicable in VK Cloud infrastructure:
 
 |Name|Description|
 |---|---|
