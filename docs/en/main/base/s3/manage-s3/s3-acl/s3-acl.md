@@ -1,6 +1,6 @@
 ## general information
 
-Access Control List VK CS (ACL or Access Control List) allow you to control access to buckets and objects. Each bucket and object has its own ACL, with which you can determine which accounts and groups are granted access, as well as the type of access. When receiving a request for a resource, the service checks the corresponding ACL to see if the requestor has access rights.
+Access Control List VK Cloud (ACL or Access Control List) allow you to control access to buckets and objects. Each bucket and object has its own ACL, with which you can determine which accounts and groups are granted access, as well as the type of access. When receiving a request for a resource, the service checks the corresponding ACL to see if the requestor has access rights.
 
 **Note**
 
@@ -28,8 +28,8 @@ xsi: type = "Canonical User">
 </AccessControlPolicy>
 ```
 
-- The < **Owner** > element identifies the owner by the canonical user ID of the VK CS account.
-- The < **Grant** > element identifies the recipient (VK CS account or predefined group) and grants permission.
+- The < **Owner** > element identifies the owner by the canonical user ID of the VK Cloud account.
+- The < **Grant** > element identifies the recipient (VK Cloud account or predefined group) and grants permission.
 
 The base ACL shown as an example defaults to one Grant element per owner. To grant permission, <Grant> elements are added, each <Grant> element must specify the grantor and permission options.
 
@@ -39,17 +39,17 @@ ACLs can contain up to 100 permissions.
 
 ## Recipient of rights
 
-The recipient of rights can be an VK CS project or one of the global VK CS groups. Rights can be granted to an VK CS project using the project ID address (mcs_pid) or the canonical user ID. Moreover, if you specify the project identifier in the request for access rights, then the service determines the canonical user ID for the corresponding project and adds it to the ACL. As a result, the ACL will always contain the canonical user ID for the project, not the project ID.
+The recipient of rights can be an VK Cloud project or one of the global VK Cloud groups. Rights can be granted to an VK Cloud project using the project ID address (mcs_pid) or the canonical user ID. Moreover, if you specify the project identifier in the request for access rights, then the service determines the canonical user ID for the corresponding project and adds it to the ACL. As a result, the ACL will always contain the canonical user ID for the project, not the project ID.
 
 To grant access rights, you must specify each recipient as a type = value pair, where type is one of the following:
 
-- id - the canonical user ID of the VK CS account
+- id - the canonical user ID of the VK Cloud account
 - uri is a predefined group to which permission is granted
-- emailAddress - VK CS project ID
+- emailAddress - VK Cloud project ID
 
 **Example: project ID**
 
-For example, the x-amz-grant-read header grants VK CS accounts identified by mcs_pid permissions to read object data and its metadata:
+For example, the x-amz-grant-read header grants VK Cloud accounts identified by mcs_pid permissions to read object data and its metadata:
 
 ```
  x-amz-grant-read: emailAddress = "mcs1447309426", emailAddress = "mcs1380112926"
@@ -57,11 +57,11 @@ For example, the x-amz-grant-read header grants VK CS accounts identified by mcs
 
 **Attention**
 
-When granting other VK CS accounts access to their resources, please note that VK CS accounts can delegate their permissions to users under their own accounts. This is known as multi-account access.
+When granting other VK Cloud accounts access to their resources, please note that VK Cloud accounts can delegate their permissions to users under their own accounts. This is known as multi-account access.
 
 ## Canonical user ID
 
-The canonical user ID is associated with the VK CS account. It's a long string like eab55955-ebdb-4f18-a94d-f3558ff150da.
+The canonical user ID is associated with the VK Cloud account. It's a long string like eab55955-ebdb-4f18-a94d-f3558ff150da.
 
 It can be calculated using the command
 
@@ -69,15 +69,15 @@ It can be calculated using the command
  aws s3api list-buckets --query Owner.ID --output text --endpoint-url https://hb.bizmrg.com
 ```
 
-You can also find the canonical user ID of the VK CS account by reading the ACL of the bucket or object that the VK CS account has access to. When an individual VK CS account is granted permissions on a Grant request, a grant entry with the canonical user ID of the VK CS account is added to the ACL.
+You can also find the canonical user ID of the VK Cloud account by reading the ACL of the bucket or object that the VK Cloud account has access to. When an individual VK Cloud account is granted permissions on a Grant request, a grant entry with the canonical user ID of the VK Cloud account is added to the ACL.
 
 **Note**
 
-If you make your bucket public (not recommended), any unauthenticated user can upload objects to the bucket. These anonymous users do not have an VK CS account. When an anonymous user uploads an object to a bucket, VK CS S3 adds a special canonical user ID (65a011a29cdf8ec533ec3d1ccaae921c) as the owner of the object to the ACL.
+If you make your bucket public (not recommended), any unauthenticated user can upload objects to the bucket. These anonymous users do not have an VK Cloud account. When an anonymous user uploads an object to a bucket, VK Cloud S3 adds a special canonical user ID (65a011a29cdf8ec533ec3d1ccaae921c) as the owner of the object to the ACL.
 
 ## Project ID
 
-Project ID (mcs_pid) - a unique parameter that characterizes a project on the VK CS platform. You can get it in your personal account in the account information area:
+Project ID (mcs_pid) - a unique parameter that characterizes a project on the VK Cloud platform. You can get it in your personal account in the account information area:
 
 ![](./assets/1598387677549-1598387677549.png)
 
@@ -85,15 +85,15 @@ The button located next to the project ID allows you to copy the parameter for c
 
 ## Predefined groups
 
-VK CS S3 has a set of predefined groups. When granting access to an account to a group, one of the URIs is specified instead of the canonical user ID. The following predefined groups are available:
+VK Cloud S3 has a set of predefined groups. When granting access to an account to a group, one of the URIs is specified instead of the canonical user ID. The following predefined groups are available:
 
 **Authenticated Users** - a group of authorized users, represented by http://acs.amazonaws.com/groups/global/AuthenticatedUsers.
 
-All VK CS accounts are represented in this group. Permission to access this group allows any VK CS account to access the resource. However, all requests must be signed (authenticated).
+All VK Cloud accounts are represented in this group. Permission to access this group allows any VK Cloud account to access the resource. However, all requests must be signed (authenticated).
 
 **Attention**
 
-When granting access to the Authenticated Users group of users, any authorized VK CS user from the Internet can access the resource.
+When granting access to the Authenticated Users group of users, any authorized VK Cloud user from the Internet can access the resource.
 
 **All Users** - The All Users group, represented by http://acs.amazonaws.com/groups/global/AllUsers.
 
@@ -105,13 +105,13 @@ It is highly recommended that you do not grant permission to the All Users group
 
 ## Types of permits
 
-The table lists the permission sets that VK CS S3 supports in the ACL. The ACL permission set is the same for object ACL and bucket ACL. These ACLs grant permissions for specific buckets or object operations. The table lists the permissions and describes what they mean in the context of objects and buckets.
+The table lists the permission sets that VK Cloud S3 supports in the ACL. The ACL permission set is the same for object ACL and bucket ACL. These ACLs grant permissions for specific buckets or object operations. The table lists the permissions and describes what they mean in the context of objects and buckets.
 
 <table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(1%); width: 99%;" width="426"><tbody><tr><td height="19" style="width: 23.1392%; background-color: rgb(239, 239, 239);" width="23.943661971830984%">Resolution</td><td style="width: 36.8101%; background-color: rgb(239, 239, 239);" width="37.08920187793427%">Applying to a bucket</td><td style="width: 39.7722%; background-color: rgb(239, 239, 239);" width="38.967136150234744%">Applying to an object</td></tr><tr><td height="19" style="width: 23.1392%;">READ</td><td style="width: 36.8101%;"><ul><li>HeadBucket</li><li>GetBucketLifecycle</li><li>GetBucketNotification</li><li>ListObjects</li><li>ListParts</li><li>ListMultiparts</li></ul></td><td style="width: 39.7722%;"><p>Allows you to get the content of an object and its metadata:</p><ul><li>GetObject</li><li>HeadObject</li><li>GetObjectRange</li></ul><br></td></tr><tr><td height="19" style="width: 23.1392%;">WRITE</td><td style="width: 36.8101%;"><p>Allows you to create, delete, overwrite any objects in the bucket:</p><ul><li>DeleteBucketNotification</li><li>PutBucketNotification</li><li>PutBucketLifecycle</li><li>DeleteBucketLifecycle</li><li>DeleteObject</li><li>DeletMultipleObjects</li><li>AbortMultipart</li><li>InitMultipart</li><li>UploadPart</li><li>CompliteMultipart</li><li>PutObject</li><li>PutObjectCopy</li></ul></td><td style="width: 39.7722%;">Not applicable</td></tr><tr><td height="19" style="width: 23.1392%;">READ_ACP</td><td style="width: 36.8101%;"><p>Allows reading the bucket ACL:</p><ul><li>GetBucketAcl</li><li>GetBucketCors</li></ul></td><td style="width: 39.7722%;"><p>Allows reading the ACL of an object:</p><p>GetObjectAcl</p><br></td></tr><tr><td height="19" style="width: 23.1392%;">WRITE_ACP</td><td style="width: 36.8101%;"><p>Allows you to change the bucket ACL:</p><ul><li>CreatePrefixKey</li><li>DeletePrefixKey</li><li>ListPrefixKeys</li><li>PutBucketCors</li><li>DeleteBucketCors</li><li>PutBucketAcl</li></ul></td><td style="width: 39.7722%;"><p>Allows changing the ACL of an object</p><p>PutObjectAcl</p><br></td></tr><tr><td height="19" style="width: 23.1392%;">FULL_CONTROL</td><td style="width: 36.8101%;">Combines READ, WRITE, READ_ACP, WRITE_ACP permissions for bucket</td><td style="width: 39.7722%;">Combines READ, WRITE, READ_ACP, WRITE_ACP rights for an object</td></tr></tbody></table>
 
 ## Mapping ACL Permissions and Access Policy Permissions
 
-The ACL only allows a finite set of permissions compared to the number of permissions that can be set in the access policy. Each of these permissions allows one or more VK CS S3 operations to be performed.
+The ACL only allows a finite set of permissions compared to the number of permissions that can be set in the access policy. Each of these permissions allows one or more VK Cloud S3 operations to be performed.
 
 The following table shows how each ACL permission maps to the corresponding access policy permissions. As you can see, the access policy allows more permissions than the ACL. ACL is used primarily to grant basic read and write permissions, similar to file system permissions.
 
@@ -175,12 +175,12 @@ When granting access policy permission, you can use conditional keys to restrict
 
 ## Fixed ACL
 
-VK CS S3 supports a set of predefined permissions known as standard ACLs. Each fixed ACL has a predefined set of recipients and permissions. The following table lists the standard ACLs and their associated predefined permissions.
+VK Cloud S3 supports a set of predefined permissions known as standard ACLs. Each fixed ACL has a predefined set of recipients and permissions. The following table lists the standard ACLs and their associated predefined permissions.
 
-<table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(0%); width: 100%;" width="289"><tbody><tr><td height="19" style="width: 25.6203%; background-color: rgb(239, 239, 239);" width="38.062283737024224%">Fixed ACL</td><td style="width: 23.8734%; background-color: rgb(239, 239, 239);" width="29.41176470588235%">Refers to</td><td style="width: 50.3038%; background-color: rgb(239, 239, 239);" width="32.52595155709343%">Permissions added to ACL</td></tr><tr><td height="19" style="width: 25.6203%;">private</td><td style="width: 23.8734%;">Bucket and object</td><td style="width: 50.3038%;">The owner gets FULL_CONTROL. Nobody else has access rights (default).</td></tr><tr><td height="19" style="width: 25.6203%;">public-read</td><td style="width: 23.8734%;">Bucket and object</td><td style="width: 50.3038%;">The owner gets FULL_CONTROL. The AllUsers group gets READ access.</td></tr><tr><td height="19" style="width: 25.6203%;">public-read-write</td><td style="width: 23.8734%;">Bucket and object</td><td style="width: 50.3038%;">The owner gets FULL_CONTROL. The AllUsers group gets READ and WRITE access.</td></tr><tr><td height="19" style="width: 25.6203%;">aws-exec-read</td><td style="width: 23.8734%;">Bucket and object</td><td style="width: 50.3038%;">The owner gets FULL_CONTROL.</td></tr><tr><td height="19" style="width: 25.6203%;">authenticated-read</td><td style="width: 23.8734%;">Bucket and object</td><td style="width: 50.3038%;">The owner gets FULL_CONTROL. AuthenticatedUsers group gets READ access.</td></tr><tr><td height="19" style="width: 25.6203%;">bucket-owner-read</td><td style="width: 23.8734%;">An object</td><td style="width: 50.3038%;">The owner of the object gets FULL_CONTROL. The bucket owner gets READ access. If you specify this template ACL when creating a bucket, VK CS S3 will ignore it.</td></tr><tr><td height="19" style="width: 25.6203%;">bucket-owner-full-control</td><td style="width: 23.8734%;">An object</td><td style="width: 50.3038%;">Both the object owner and the bucket owner get FULL_CONTROL over the object. If you specify this fixed ACL when creating a bucket, VK CS S3 will ignore it.</td></tr></tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(0%); width: 100%;" width="289"><tbody><tr><td height="19" style="width: 25.6203%; background-color: rgb(239, 239, 239);" width="38.062283737024224%">Fixed ACL</td><td style="width: 23.8734%; background-color: rgb(239, 239, 239);" width="29.41176470588235%">Refers to</td><td style="width: 50.3038%; background-color: rgb(239, 239, 239);" width="32.52595155709343%">Permissions added to ACL</td></tr><tr><td height="19" style="width: 25.6203%;">private</td><td style="width: 23.8734%;">Bucket and object</td><td style="width: 50.3038%;">The owner gets FULL_CONTROL. Nobody else has access rights (default).</td></tr><tr><td height="19" style="width: 25.6203%;">public-read</td><td style="width: 23.8734%;">Bucket and object</td><td style="width: 50.3038%;">The owner gets FULL_CONTROL. The AllUsers group gets READ access.</td></tr><tr><td height="19" style="width: 25.6203%;">public-read-write</td><td style="width: 23.8734%;">Bucket and object</td><td style="width: 50.3038%;">The owner gets FULL_CONTROL. The AllUsers group gets READ and WRITE access.</td></tr><tr><td height="19" style="width: 25.6203%;">aws-exec-read</td><td style="width: 23.8734%;">Bucket and object</td><td style="width: 50.3038%;">The owner gets FULL_CONTROL.</td></tr><tr><td height="19" style="width: 25.6203%;">authenticated-read</td><td style="width: 23.8734%;">Bucket and object</td><td style="width: 50.3038%;">The owner gets FULL_CONTROL. AuthenticatedUsers group gets READ access.</td></tr><tr><td height="19" style="width: 25.6203%;">bucket-owner-read</td><td style="width: 23.8734%;">An object</td><td style="width: 50.3038%;">The owner of the object gets FULL_CONTROL. The bucket owner gets READ access. If you specify this template ACL when creating a bucket, VK Cloud S3 will ignore it.</td></tr><tr><td height="19" style="width: 25.6203%;">bucket-owner-full-control</td><td style="width: 23.8734%;">An object</td><td style="width: 50.3038%;">Both the object owner and the bucket owner get FULL_CONTROL over the object. If you specify this fixed ACL when creating a bucket, VK Cloud S3 will ignore it.</td></tr></tbody></table>
 
 **Note**
 
 Only one of these fixed ACLs can be specified in a request.
 
-The request specifies a fixed ACL using the x-amz-acl request header. When VK CS S3 receives a request with a standard ACL in the request, it adds the predefined permissions to the ACL of the resource.
+The request specifies a fixed ACL using the x-amz-acl request header. When VK Cloud S3 receives a request with a standard ACL in the request, it adds the predefined permissions to the ACL of the resource.

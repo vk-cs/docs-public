@@ -4,7 +4,7 @@ Open Policy Agent (OPA) — это механизм политик общего 
 
 ### Требования к установке
 
-Свежие версии GateKeeper поддерживают 4 последние стабильные версии Kubernetes. GateKeeper устанавливается автоматически в новые кластера Kubernetes от VK Cloud Solutions начиная с версии 1.21.
+Свежие версии GateKeeper поддерживают 4 последние стабильные версии Kubernetes. GateKeeper устанавливается автоматически в новые кластера Kubernetes от VK Cloud начиная с версии 1.21.
 
 ### Установка GateKeeper через Helm
 

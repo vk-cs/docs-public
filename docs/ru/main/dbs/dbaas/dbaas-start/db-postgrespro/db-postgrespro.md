@@ -69,9 +69,9 @@ Postgres Pro Standard отличают от PostgreSQL следующие усо
 
 Подробнее можно [прочесть в официальной документации](https://postgrespro.ru/docs/postgrespro/11/index).
 
-## Возможности Postgres Pro в VK CS
+## Возможности Postgres Pro в VK Cloud
 
-Запуск Postgres Pro в VK CS - это:
+Запуск Postgres Pro в VK Cloud - это:
 
 - создание виртуальной машины с предустановленным ПО Postgres Pro
 - предоставление интерфейсов / коннекторов к созданной базе данных

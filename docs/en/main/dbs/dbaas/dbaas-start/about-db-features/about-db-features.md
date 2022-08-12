@@ -119,7 +119,7 @@ PostgreSQL — СУБД с открытым исходным кодом, осн
 
 Подробнее о новом в 12 версии (на английском) [читайте на официальном ресурсе](https://www.postgresql.org/about/news/1976/).
 
-Создать облачную базу данных PostgreSQL в VK CS [можно по этой ссылке](https://mcs.mail.ru/app/services/databases/add/?datastoreTypeId=c6e7ff4a-69b4-4aa8-97f1-2b61507b683c) (если вы авторизованы в личном кабинете VK CS).
+Создать облачную базу данных PostgreSQL в VK Cloud [можно по этой ссылке](https://mcs.mail.ru/app/services/databases/add/?datastoreTypeId=c6e7ff4a-69b4-4aa8-97f1-2b61507b683c) (если вы авторизованы в личном кабинете VK Cloud).
 
 ## MySQL 5.7
 

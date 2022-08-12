@@ -1,6 +1,6 @@
 ## Description
 
-Apache Kafka is used as a data bus in VK Cloud Solutions Big Data.
+Apache Kafka is used as a data bus in VK Cloud Big Data.
 
 Apache Kafka is a distributed streaming platform today. In this case, a bus with a colossal bandwidth is provided, on which absolutely all data passing through it can be processed in real time.
 

@@ -5,7 +5,7 @@ To create a database, go to the "[Database instances](https://mcs.mail.ru/app/se
 
 ## Supported Versions
 
-VK CS provides all current database versions.
+VK Cloud provides all current database versions.
 
 When choosing the MySQL database type, we recommend using version 8.0.
 

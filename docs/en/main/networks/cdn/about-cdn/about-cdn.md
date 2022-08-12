@@ -2,7 +2,7 @@
 
 CDN stands for Content-Delivery Network and is a geographically distributed network infrastructure that optimizes the delivery and distribution of content to end-users on the Internet. The use of CDN by content providers helps to increase the download speed of audio, video, software, game, and other types of digital content by Internet users at the points of presence of the CDN network.
 
-In the case of VK CS, this is the distribution of user-uploaded data in data centers across Russia and the world (upon request) for accelerated delivery of your content to users.
+In the case of VK Cloud, this is the distribution of user-uploaded data in data centers across Russia and the world (upon request) for accelerated delivery of your content to users.
 
 The speed of loading a web page and its content is greatly influenced by how far the user is from the server. This is due to the fact that when using TCP / IP technology, which is used to distribute information on the Internet, delays in information transmission depend on the number of routers in the path between the source and the consumer of the content. Placing content on multiple dispersed servers using CDNs shortens the network data path and makes the site load faster from the user's point of view.
 

@@ -1,4 +1,4 @@
-To manage VK CS platform resources, you can use the API to launch instances, create images, assign metadata to instances and images, create containers and storage objects, and perform other actions in projects.
+To manage VK Cloud platform resources, you can use the API to launch instances, create images, assign metadata to instances and images, create containers and storage objects, and perform other actions in projects.
 
 <warn>
 
@@ -6,7 +6,7 @@ The list of endpoints varies depending on the selected region. You can learn mor
 
 </warn>
 
-The list of available endpoints is always available in the VK CS panel [in the "API Endpoints" section](https://mcs.mail.ru/app/project/endpoints/).
+The list of available endpoints is always available in the VK Cloud panel [in the "API Endpoints" section](https://mcs.mail.ru/app/project/endpoints/).
 
 ### API usage examples
 

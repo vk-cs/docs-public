@@ -1,4 +1,4 @@
-The App Store is an VK CS service designed to quickly deploy virtual machine-based web development and administration environments. Virtual machines already contain preinstalled software.
+The App Store is an VK Cloud service designed to quickly deploy virtual machine-based web development and administration environments. Virtual machines already contain preinstalled software.
 
 The following cloud services for development can be deployed in our app store:
 
@@ -21,7 +21,7 @@ Flexible DevOps environment in the cloud. Developers and IT departments can save
 
 ## Service for application vendors
 
-Distribution channel. You can become our partner and submit your application to the Cloud Marketplace so that it becomes available to VK CS users. We support the AWS CloudFormation application packaging standard.
+Distribution channel. You can become our partner and submit your application to the Cloud Marketplace so that it becomes available to VK Cloud users. We support the AWS CloudFormation application packaging standard.
 
 ## How it works
 
@@ -41,7 +41,7 @@ The service is connected to a new account by default, no additional steps are re
 
 Many cloud providers provide only pre-configured virtual machine images that contain all the components of the application at once. This can be a problem for highly loaded services, as it is impossible to scale them horizontally to handle peak loads.
 
-Scale-out cloud services with complex topology are available in VK Cloud Solutions Marketplace. Load balancers, virtual networks and cluster solutions are created in one click.
+Scale-out cloud services with complex topology are available in VK Cloud Marketplace. Load balancers, virtual networks and cluster solutions are created in one click.
 
 ## Benefits
 

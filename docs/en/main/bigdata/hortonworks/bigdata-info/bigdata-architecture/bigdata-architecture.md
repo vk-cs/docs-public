@@ -7,9 +7,9 @@ The basic principles of working with big data are as follows:
 - **horizontal scalability** - the ability to expand the big data processing system with a multiple increase.
 - **fault tolerance** - with an increase in the number of machines in a cluster, the likelihood of their part failure increases. For this reason, big data practices must take this scenario into account and survive it without critical consequences.
 
-Hadoop and Spark clusters are created on the basis of the VK Cloud Solutions service infrastructure. Hadoop clusters of any configuration assume one head and at least one worker. Cluster scaling is carried out by increasing the number of worker nodes.
+Hadoop and Spark clusters are created on the basis of the VK Cloud service infrastructure. Hadoop clusters of any configuration assume one head and at least one worker. Cluster scaling is carried out by increasing the number of worker nodes.
 
-When creating a cluster in the VK CS cloud, the following resources are allocated:
+When creating a cluster in the VK Cloud cloud, the following resources are allocated:
 
 - one virtual machine for the head node;
 - n virtual machines for working nodes, where n is the number of nodes;
@@ -17,7 +17,7 @@ When creating a cluster in the VK CS cloud, the following resources are allocate
 - two security groups - one for the head node and one for the worker nodes;
 - one floating IP address for the head-end.
 
-All machines in the internal network of the VK CS cloud are connected to each other by a 10 Gbps network in high availability mode: even if one of the network adapters of the physical server or one of the internal routers fails, the server remains online. At the same time, an external connection to the Internet is available at a speed of up to 1 Gbps.
+All machines in the internal network of the VK Cloud cloud are connected to each other by a 10 Gbps network in high availability mode: even if one of the network adapters of the physical server or one of the internal routers fails, the server remains online. At the same time, an external connection to the Internet is available at a speed of up to 1 Gbps.
 
 All virtual machines of the cluster are united into a common network based on VXLAN technology. Each node has an internal (private) IP address that is used for communication between cluster nodes. At the same time, by default, after starting the cluster, full access is allowed between the cluster nodes within the internal network. The headend also has a floating IP that can be used to access the Ambari web interface and connect to the machine over SSH. If necessary, SSH access to the worker nodes is through the head node.
 
@@ -25,7 +25,7 @@ All virtual machines of the cluster are united into a common network based on VX
 
 ## Cluster templates and layout
 
-For ease of deployment and use, the following pre-configured templates are provided as part of the Hadoop VK CS:
+For ease of deployment and use, the following pre-configured templates are provided as part of the Hadoop VK Cloud:
 
 **Airflow** is a set of libraries for running and monitoring tasks written in Python. Problems must have a directed acyclic graph structure. Airflow on the cluster will already be configured to run tasks on worker nodes, you just need to independently decompose the task code into nodes. It's also worth noting that Airflow - as a component - can also be installed on Hadoop and Spark clusters.
 

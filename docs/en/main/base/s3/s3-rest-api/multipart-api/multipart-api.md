@@ -1,4 +1,4 @@
-Composite or multipart loading allows you to save objects in VK CS S3 Object Storage in parts. This can be useful when loading or copying large objects. We recommend using multiple uploads for objects from 100 MB.
+Composite or multipart loading allows you to save objects in VK Cloud S3 Object Storage in parts. This can be useful when loading or copying large objects. We recommend using multiple uploads for objects from 100 MB.
 
 Composite loading consists of the following steps:
 
@@ -16,7 +16,7 @@ If a lifecycle rule is configured to abort unfinished multipart downloads, then 
 
 **Note**
 
-After the initialization of the multipart download and the actual download of one or more parts, you must complete or interrupt the multipart download in order to suspend the charge for storing the downloaded parts. Only after the completion or interruption of a multipart upload does VK CS S3 free up the space allocated to the parts in the storage and stop charging for the storage of these parts.
+After the initialization of the multipart download and the actual download of one or more parts, you must complete or interrupt the multipart download in order to suspend the charge for storing the downloaded parts. Only after the completion or interruption of a multipart upload does VK Cloud S3 free up the space allocated to the parts in the storage and stop charging for the storage of these parts.
 
 Inquiry:
 
@@ -54,7 +54,7 @@ The operation loads a portion of a multipart load. To perform this operation, yo
 
 A part can have any number from 1 to 10,000 inclusive. The part number uniquely identifies the part and its position in the created object. If a new part is loaded, with the assigned part number used for one of the existing parts, the existing part will be overwritten. Each part, except the last, must be at least 5 MB in size. The last part of the multipart download has no size limit.
 
-To ensure that the data is not tampered with as it travels over the network, you should include the Content-MD5 header in the download request for the part. VK CS checks the data from the parts against the provided MD5 hash value and returns an error if they do not match.
+To ensure that the data is not tampered with as it travels over the network, you should include the Content-MD5 header in the download request for the part. VK Cloud checks the data from the parts against the provided MD5 hash value and returns an error if they do not match.
 
 Inquiry:
 
@@ -83,9 +83,9 @@ Connection: close
 
 ## Complete Multipart Upload
 
-The operation completes the multi-part download by combining the previously loaded parts. Upon receiving this request, VK CS merges all loaded parts in ascending order by part number, creating a new object. In a request to complete a multipart download, you must provide a list of parts. For each part from the list, you must provide the part number and the ETag header value returned after that part is loaded.
+The operation completes the multi-part download by combining the previously loaded parts. Upon receiving this request, VK Cloud merges all loaded parts in ascending order by part number, creating a new object. In a request to complete a multipart download, you must provide a list of parts. For each part from the list, you must provide the part number and the ETag header value returned after that part is loaded.
 
-It can take several minutes to process a request to complete a multipart upload. After starting to process the request, VK CS sends an HTTP response header containing a 200 OK response. Whitespace is periodically sent during request processing to prevent timeouts. Since an error can occur in a request after the initial 200 OK response has been sent, the body of the response should be checked to determine if the request was successful.
+It can take several minutes to process a request to complete a multipart upload. After starting to process the request, VK Cloud sends an HTTP response header containing a 200 OK response. Whitespace is periodically sent during request processing to prevent timeouts. Since an error can occur in a request after the initial 200 OK response has been sent, the body of the response should be checked to determine if the request was successful.
 
 Inquiry:
 
@@ -200,7 +200,7 @@ Connection: close
 <IsTruncated> false </IsTruncated>
 <Owner>
 <ID> eab55955-ebdb-4f18-a94d-f3558ff150da </ID>
-<DisplayName> VK CS_UserName </DisplayName>
+<DisplayName> VK Cloud_UserName </DisplayName>
 </Owner>
 <Part>
 <LastModified> 2017-08-14T18: 45: 01.601Z </LastModified>

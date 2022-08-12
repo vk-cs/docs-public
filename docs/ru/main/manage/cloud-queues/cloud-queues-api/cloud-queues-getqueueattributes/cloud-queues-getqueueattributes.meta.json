@@ -2,7 +2,7 @@
   "title": "GetQueueAttributes",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "GetQueueAttributes - VK Cloud Solutions",
+  "metaTitle": "GetQueueAttributes - VK Cloud",
   "metaDescription": "Запрос получает атрибуты для указанной очереди.  Параметры запроса AttributeName.N Список атрибутов, для которых нужно получить информацию.\nПоддерживаются",
   "sectionTitle": "GetQueueAttributes",
   "markdown": "",

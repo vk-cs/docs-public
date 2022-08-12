@@ -2,7 +2,7 @@
   "title": "Mounting an existing disk as a Persistent Volume",
   "pageDescription": "The PersistentVolume mechanism allows you to connect an existing disk to the K8S cluster as a persistent data store.",
   "shortDescription": "",
-  "metaTitle": "Mounting an existing disk as a Persistent Volume - VK Cloud Solutions",
+  "metaTitle": "Mounting an existing disk as a Persistent Volume - VK Cloud",
   "metaDescription": "",
   "sectionTitle": "Mounting an existing disk as a Persistent Volume",
   "markdown": "",

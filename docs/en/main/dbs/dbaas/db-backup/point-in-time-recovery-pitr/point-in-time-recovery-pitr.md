@@ -8,7 +8,7 @@ PITR helps protect PostgreSQL tables from accidental write or delete operations.
 
 Read more about backup and recovery in PostgreSQL [here](https://postgrespro.ru/docs/postgresql/9.6/continuous-archiving).
 
-## PITR in VK Cloud Solutions
+## PITR in VK Cloud
 
 PITR is available for a PostgreSQL instance or cluster if a backup schedule is configured for it. The schedule can be configured when creating an instance or configured later. Contact technical support if you can't set up a schedule on an existing instance. The schedule determines the regularity of creating backups.
 

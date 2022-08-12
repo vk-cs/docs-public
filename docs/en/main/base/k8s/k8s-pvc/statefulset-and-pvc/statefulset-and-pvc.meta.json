@@ -2,7 +2,7 @@
   "title": "Persistent Volumes and StatefulSet",
   "pageDescription": "StatefulSet is a convenient way to work with Stateful applications that need to handle Pod shutdown and Graceful Shutdown events.",
   "shortDescription": "",
-  "metaTitle": "Persistent Volumes and StatefulSet - VK Cloud Solutions",
+  "metaTitle": "Persistent Volumes and StatefulSet - VK Cloud",
   "metaDescription": "",
   "sectionTitle": "Persistent Volumes and StatefulSet",
   "markdown": "",

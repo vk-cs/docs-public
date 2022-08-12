@@ -1,6 +1,6 @@
-## How Kubernetes as a Service works on the VK Cloud Solutions platform
+## How Kubernetes as a Service works on the VK Cloud platform
 
-Kubernetes aaS on VK CS includes:
+Kubernetes aaS on VK Cloud includes:
 
 1.  Management interface for creating a cluster in a few clicks, scaling and setting.
 2.  Automatic scaling of cluster nodes up or down, that is, adding or removing nodes (Cluster Autoscaler).
@@ -11,18 +11,18 @@ Kubernetes aaS on VK CS includes:
 4.  Built-in monitoring based on Prometheus Operator and Grafana. Many of our users start with a basic installation where the application runs. When it goes live, it allows them to monitor the services and the cluster itself.
 5.  Your own Terraform provider for Kubernetes.
 6.  Integration with Docker Registry for storing and managing images.
-7.  Automated deployment of federated Kubernetes clusters based on AWS and VK Cloud Solutions (which [we wrote about here](https://habr.com/ru/company/mailru/news/t/509684/) ). The solution has been tested by both providers.
+7.  Automated deployment of federated Kubernetes clusters based on AWS and VK Cloud (which [we wrote about here](https://habr.com/ru/company/mailru/news/t/509684/) ). The solution has been tested by both providers.
 8.  Ability to make Start / Stop for the entire cluster - savings for test environments.
 9.  Support for the creation of Node Pools, virtual machine pools of different sizes: you can run heavy tasks on large machines, web applications on small ones. Groups can be scaled independently and placed in different regions or Availability Zones (for greater reliability and availability).
 10. Persistent Volumes are integrated with the OpenStack storage system.
 11. Clusters with VPN connection.
 12. Cluster Policy: Local is supported, which allows you to get real IP users within clusters.
-13. Build and scale Kubernetes clusters using the VK CS UI or API, manage entities through the Kubernetes dashboard and kubectl.
+13. Build and scale Kubernetes clusters using the VK Cloud UI or API, manage entities through the Kubernetes dashboard and kubectl.
 14. One-click rolling update with no downtime for both minor and major versions. Cluster updates are available starting from all current versions of the cluster (1.16 \*).
 
 ## Distribution Certification by Cloud Native Computing Foundation
 
-VK Cloud Solutions is part of the CNCF (Cloud Native Computing Foundation). VK CS Kubernetes distribution has received the Certified Kubernetes - Hosted certification. It has been tested for reliability and standards compliance, meets all functional community requirements and is compatible with the standard Kubernetes API. VK CS is so far the only cloud provider in Russia that has received such a certification.
+VK Cloud is part of the CNCF (Cloud Native Computing Foundation). VK Cloud Kubernetes distribution has received the Certified Kubernetes - Hosted certification. It has been tested for reliability and standards compliance, meets all functional community requirements and is compatible with the standard Kubernetes API. VK Cloud is so far the only cloud provider in Russia that has received such a certification.
 
 ## Place Kubernetes in the cloud platform infrastructure
 
@@ -54,7 +54,7 @@ We build a similar scheme in private installations of Kubernetes as a service in
 
 ## Multi Master and Network Topology
 
-Kubernetes from VK Cloud Solutions supports deployments in the Multi Master format, while each user group of nodes is already in a specific availability zone. Geo-distribution is guaranteed by the creation of virtual machines according to the principle of Soft Anti Affinity, when the machines, whenever possible, run on different hypervisors.
+Kubernetes from VK Cloud supports deployments in the Multi Master format, while each user group of nodes is already in a specific availability zone. Geo-distribution is guaranteed by the creation of virtual machines according to the principle of Soft Anti Affinity, when the machines, whenever possible, run on different hypervisors.
 
 ![](./assets/arhitektura_servisa_kubernetes_ot_mail.ru_-_attachment_4)
 
@@ -70,11 +70,11 @@ In general, ways to access services within a cluster [are listed here](https://k
 
 **NodePort** opens a public port on the node. However, there is a limitation: for security reasons, by default, public IP addresses are not set to either master or minions, clusters are created without white IP addresses. The user can install them himself.
 
-**Load Balancer** . Our Kubernetes is integrated with the VK CS cloud platform, so the platform provides Load Balancer as a service and can create load balancers itself. For comparison, if a user configures Kubernetes (for example, in a premium), you need to independently raise and configure the software balancers. On the VK CS platform, load balancers rise immediately in a fault-tolerant active-standby mode. When the main balancer goes up (on HAProxy), it always has a standby, sleeping balancer. VRRP is configured between them. If the main balancer fails, all traffic is instantly switched to standby, while the IP address does not change.
+**Load Balancer** . Our Kubernetes is integrated with the VK Cloud cloud platform, so the platform provides Load Balancer as a service and can create load balancers itself. For comparison, if a user configures Kubernetes (for example, in a premium), you need to independently raise and configure the software balancers. On the VK Cloud platform, load balancers rise immediately in a fault-tolerant active-standby mode. When the main balancer goes up (on HAProxy), it always has a standby, sleeping balancer. VRRP is configured between them. If the main balancer fails, all traffic is instantly switched to standby, while the IP address does not change.
 
 ![](./assets/arhitektura_servisa_kubernetes_ot_mail.ru_-_attachment_5)
 
-_Fault Tolerant Load Balancer as a Service on VK CS. Kubernetes creates a nodeport on each node and a load balancer_
+_Fault Tolerant Load Balancer as a Service on VK Cloud. Kubernetes creates a nodeport on each node and a load balancer_
 
 Our Cloud Provider helps in setting up balancing for Kubernetes. You need to create a manifest where the user specifies the type of manifest “service” and the type of service “Load Balancer”. After deploying this Kubernetes manifest (more precisely, the Cloud Provider that runs in Kubernetes), it contacts the OpenStack API, creates a balancer and an external IP address, if necessary. If an external address is not needed, you need to annotate that an internal load balancer is required, and you can start traffic to the cluster without opening a public IP address on each node.
 
@@ -120,7 +120,7 @@ We have several different storage classes that run in Kubernetes: SSD Ceph, HDD 
 
 ![](./assets/arhitektura_servisa_kubernetes_ot_mail.ru_-_attachment_11)
 
-_Multiple Storage Classes in VK CS_
+_Multiple Storage Classes in VK Cloud_
 
 We **use NFS** when needed when clients cannot rewrite applications to a microservice architecture. We have an analogue of Amazon's EFS service, an NFS-based file storage available as a service. It is suitable if you have a legacy application that you are translating to Kubernetes.
 
@@ -138,7 +138,7 @@ You can use the storage class by writing PersistentVolumeClaim declarations. In 
 
 ## Automatic scaling
 
-VK CS has Cluster Autoscaler. This is not just auto-scaling of pods within a cluster, but auto-scaling of the cluster itself as needed: new nodes are added when the load has increased, and removed if the load has dropped. Scaling occurs automatically - up to 100 nodes and back in a few minutes.
+VK Cloud has Cluster Autoscaler. This is not just auto-scaling of pods within a cluster, but auto-scaling of the cluster itself as needed: new nodes are added when the load has increased, and removed if the load has dropped. Scaling occurs automatically - up to 100 nodes and back in a few minutes.
 
 Autoscaling allows for each group of nodes to set its own autoscaling rules, for example, the maximum and minimum number of nodes that the autoscaler can set.
 
@@ -175,7 +175,7 @@ _Autoscaling setting_
 
 **Working with big data**
 
-Kubernetes can basely be used for any microservice data-driven application. Why Kubernetes on the VK CS platform is interesting for data scientists:
+Kubernetes can basely be used for any microservice data-driven application. Why Kubernetes on the VK Cloud platform is interesting for data scientists:
 
 - Autoscaling allows for heavy computational workloads.
 - You can create event-triggered data handlers.
@@ -184,4 +184,4 @@ Kubernetes can basely be used for any microservice data-driven application. Why 
 
 You [can](https://mcs.mail.ru/app/services/containers/) try Kubernetes aaS for free [here](https://mcs.mail.ru/app/services/containers/) .
 
-<table cellpadding="7" cellspacing="0" width="602"><colgroup><col width="586"></colgroup><tbody><tr><td style="background: transparent;" valign="top" width="586"><p style="margin-bottom: 0in; direction: ltr; line-height: 115%; text-align: left; orphans: 0; widows: 2; background: transparent;"><strong>More about VK CS services</strong></p><p style="margin-bottom: 0in; direction: ltr; line-height: 115%; text-align: left; orphans: 0; widows: 2; background: transparent;"><br></p><ol><li style="margin-bottom: 0in; direction: ltr; line-height: 115%; text-align: left; orphans: 0; widows: 2; background: transparent;"><a href="https://habr.com/ru/company/mailru/blog/497570/">Databases in the IIoT Platform: How VK Cloud Solutions Handle Petabytes of Data from Multiple Devices</a></li><li style="margin-bottom: 0in; direction: ltr; line-height: 115%; text-align: left; orphans: 0; widows: 2; background: transparent;"><a href="https://habr.com/ru/company/mailru/blog/474180/">How Fault Tolerant Web Architecture Is Implemented in VK Cloud Solutions Platform</a></li><li style="margin-bottom: 0in; direction: ltr; line-height: 115%; text-align: left; orphans: 0; widows: 2; background: transparent;"><a href="https://habr.com/ru/company/mailru/blog/472694/">More than Ceph: VK CS cloud block storage</a></li><li style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 0; widows: 2; background: transparent;"><a href="https://habr.com/ru/company/mailru/blog/452846/">How we built a reliable PostgreSQL cluster on Patroni</a></li></ol></td></tr></tbody></table>
+<table cellpadding="7" cellspacing="0" width="602"><colgroup><col width="586"></colgroup><tbody><tr><td style="background: transparent;" valign="top" width="586"><p style="margin-bottom: 0in; direction: ltr; line-height: 115%; text-align: left; orphans: 0; widows: 2; background: transparent;"><strong>More about VK Cloud services</strong></p><p style="margin-bottom: 0in; direction: ltr; line-height: 115%; text-align: left; orphans: 0; widows: 2; background: transparent;"><br></p><ol><li style="margin-bottom: 0in; direction: ltr; line-height: 115%; text-align: left; orphans: 0; widows: 2; background: transparent;"><a href="https://habr.com/ru/company/mailru/blog/497570/">Databases in the IIoT Platform: How VK Cloud Handle Petabytes of Data from Multiple Devices</a></li><li style="margin-bottom: 0in; direction: ltr; line-height: 115%; text-align: left; orphans: 0; widows: 2; background: transparent;"><a href="https://habr.com/ru/company/mailru/blog/474180/">How Fault Tolerant Web Architecture Is Implemented in VK Cloud Platform</a></li><li style="margin-bottom: 0in; direction: ltr; line-height: 115%; text-align: left; orphans: 0; widows: 2; background: transparent;"><a href="https://habr.com/ru/company/mailru/blog/472694/">More than Ceph: VK Cloud cloud block storage</a></li><li style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 0; widows: 2; background: transparent;"><a href="https://habr.com/ru/company/mailru/blog/452846/">How we built a reliable PostgreSQL cluster on Patroni</a></li></ol></td></tr></tbody></table>

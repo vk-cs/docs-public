@@ -1,4 +1,4 @@
-Existing Hadoop and Spark clusters in VK Cloud Solutions can be extended with new components. In this section, you will learn how to install new components and services of the Hadoop ecosystem into existing clusters. Consider adding Spark2 to an existing Hadoop cluster.
+Existing Hadoop and Spark clusters in VK Cloud can be extended with new components. In this section, you will learn how to install new components and services of the Hadoop ecosystem into existing clusters. Consider adding Spark2 to an existing Hadoop cluster.
 
 - Go to the [Ambari](https://ambari.apache.org/) interface. On the "Dashboard" tab in the lower-left corner of the services panel, click "Action" → "Add Service".
 - Select the services you want to install. For example, Spark2 and Zeppelin Notebook. Click "Next" at the bottom of the page.

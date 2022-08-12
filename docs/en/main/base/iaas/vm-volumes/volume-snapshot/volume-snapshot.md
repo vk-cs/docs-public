@@ -8,9 +8,9 @@ Snapshots of disks with the LL NVME type are deleted during VM migration (this c
 
 </warn>
 
-## VK CS Control Panel
+## VK Cloud Control Panel
 
-To create a disk snapshot [in VK CS personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
+To create a disk snapshot [in VK Cloud personal account](https://mcs.mail.ru/app/services/infra/servers/) should:
 
 1. Go to the "Disks" page of the "Cloud Computing" service.
 2. In the context menu of the disk, select "Create snapshot".

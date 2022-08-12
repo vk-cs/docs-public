@@ -2,7 +2,7 @@
   "title": "Labels и Taints",
   "pageDescription": "Labels are key/value pairs that are attached to Kubernetes objects like Pods. Taints allow you to protect nodes from running certain pods.",
   "shortDescription": "",
-  "metaTitle": "Labels и Taints - VK Cloud Solutions",
+  "metaTitle": "Labels и Taints - VK Cloud",
   "metaDescription": "",
   "sectionTitle": "Labels и Taints",
   "markdown": "",

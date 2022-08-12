@@ -1,6 +1,6 @@
 ## Billing
 
-The VK CS platform provides several types of storage to suit individual needs:
+The VK Cloud platform provides several types of storage to suit individual needs:
 
 **Hotbox** tariff - suitable for storing hot data. You can store and quickly distribute media and any other frequently downloaded content through it without speed limits.
 
@@ -16,7 +16,7 @@ For each type, there are prices for data processing and storage:
 
 ## Limits
 
-Limits are technical restrictions that apply to the entire VK CS platform.
+Limits are technical restrictions that apply to the entire VK Cloud platform.
 
 The Object Storage service is characterized by the following architectural limits:
 

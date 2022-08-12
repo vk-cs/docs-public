@@ -1,6 +1,6 @@
-The concept of "Disk" on the VK CS platform is analogous to a physical storage medium, such as HDD or SSD.
+The concept of "Disk" on the VK Cloud platform is analogous to a physical storage medium, such as HDD or SSD.
 
-A disk is a network block device that provides data storage for instances. All disks on the VK CS platform are network-based and are reliably protected by data replication, providing reliable storage and fault tolerance.
+A disk is a network block device that provides data storage for instances. All disks on the VK Cloud platform are network-based and are reliably protected by data replication, providing reliable storage and fault tolerance.
 
 Advantages of network drives:
 

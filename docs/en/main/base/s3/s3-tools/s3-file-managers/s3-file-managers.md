@@ -31,7 +31,7 @@ To connect, specify:
 
 **Note**
 
-CyberDuck works with VK CS Object Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
+CyberDuck works with VK Cloud Object Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
 
 ## WinSCP
 
@@ -49,7 +49,7 @@ To configure, enter the following data:
 
 **Note**
 
-CyberDuck works with VK CS Object Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
+CyberDuck works with VK Cloud Object Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
 
 ## S3FS
 
@@ -127,7 +127,7 @@ To mount a bucket in an operating system, you should:
 
 ## Disk-O:
 
-Disk-O: - a program that allows you to work with clouds in one place - on your computer. At the same time, files do not take up space on the device, because they are stored only in the clouds. The program works with VK CS Object Storage, as well as platforms such as: Cloud Mail.ru, Yandex.Disk, Google Drive, Dropbox and other storages.
+Disk-O: - a program that allows you to work with clouds in one place - on your computer. At the same time, files do not take up space on the device, because they are stored only in the clouds. The program works with VK Cloud Object Storage, as well as platforms such as: Cloud Mail.ru, Yandex.Disk, Google Drive, Dropbox and other storages.
 
 The program should be installed using the standard user interface of the operating system, as well as the installation file from the [official website](https://disk-o.cloud/ru/) .
 

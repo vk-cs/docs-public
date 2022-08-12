@@ -1,4 +1,4 @@
-Machine learning service is enabled by default in VK CS projects. You can connect to the service in two different ways, described below.
+Machine learning service is enabled by default in VK Cloud projects. You can connect to the service in two different ways, described below.
 
 ![](./assets/1599679646114-1599679646114.png)
 

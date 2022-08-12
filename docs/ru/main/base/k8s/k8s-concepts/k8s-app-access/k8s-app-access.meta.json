@@ -2,7 +2,7 @@
   "title": "Организация доступа к приложению в Kubernetes",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Организация доступа к приложению в Kubernetes - VK Cloud Solutions",
+  "metaTitle": "Организация доступа к приложению в Kubernetes - VK Cloud",
   "metaDescription": "В общем случае способы доступа к сервисам внутри кластера перечислены в официальной документации. Подробности нашей реализации: NodePortоткрывает публичный",
   "sectionTitle": "Организация доступа к приложению в Kubernetes",
   "markdown": "",

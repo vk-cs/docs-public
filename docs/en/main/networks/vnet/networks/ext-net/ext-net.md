@@ -1,6 +1,6 @@
 ## Description
 
-In VK CS, there are two ways to organize access to an instance from the Internet: using floating IPs or adding a port from the ext-net network. In both cases, the instance will be available via the routed Internet address.
+In VK Cloud, there are two ways to organize access to an instance from the Internet: using floating IPs or adding a port from the ext-net network. In both cases, the instance will be available via the routed Internet address.
 
 Floating IP is a 1: 1 NAT virtual address assigned to a port on a private network. It requires a network with Internet access and a virtual machine network adapter configured for a private network.
 
@@ -8,11 +8,11 @@ The ext-net network is a common network for all projects with routed ("white") s
 
 ## Application
 
-In [the VK CS personal account,](https://mcs.mail.ru/app/services/infra/routers/) when creating a virtual machine at the "Network settings" step, you can select either an external network (ext-net) or a private network with the option "Assign external IP":
+In [the VK Cloud personal account,](https://mcs.mail.ru/app/services/infra/routers/) when creating a virtual machine at the "Network settings" step, you can select either an external network (ext-net) or a private network with the option "Assign external IP":
 
 ![](./assets/1599510590002-1599510590002.png)
 
-The operating system images provided by VK CS use a cloud-init component that configures the virtual machine's network adapter when the "Use configuration disk" option is selected. However, if you are using your own image, you may need to manually configure the network in the operating system.
+The operating system images provided by VK Cloud use a cloud-init component that configures the virtual machine's network adapter when the "Use configuration disk" option is selected. However, if you are using your own image, you may need to manually configure the network in the operating system.
 
 You can add another network connection for an existing instance in the "Network Information" section on the virtual machine page by clicking the "Add Connection" button:
 

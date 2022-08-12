@@ -6,7 +6,7 @@ Work nodes host pod's, which are application components. The control plane manag
 
 ## Cluster creation
 
-To create a cluster, go to the ["Containers" section of the VK CS control panel](https://mcs.mail.ru/app/services/containers/add/) and click the "Add" button.
+To create a cluster, go to the ["Containers" section of the VK Cloud control panel](https://mcs.mail.ru/app/services/containers/add/) and click the "Add" button.
 
 ![](./assets/1598986561482-1598986561482.png)
 

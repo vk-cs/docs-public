@@ -1,4 +1,4 @@
-A disaster recovery plan is a description of the infrastructure and a set of necessary instructions used to recreate a business application on the target VK CS cloud in the event of a disaster. A disaster recovery plan is created in advance based on a declarative description of the infrastructure, tested and kept up to date through periodic updates and replications. Disaster recovery plans should always be kept up to date, as additional time may be required to update the plan after a disaster.
+A disaster recovery plan is a description of the infrastructure and a set of necessary instructions used to recreate a business application on the target VK Cloud cloud in the event of a disaster. A disaster recovery plan is created in advance based on a declarative description of the infrastructure, tested and kept up to date through periodic updates and replications. Disaster recovery plans should always be kept up to date, as additional time may be required to update the plan after a disaster.
 
 ## Installing the DR Agent
 

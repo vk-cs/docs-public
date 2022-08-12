@@ -6,7 +6,7 @@ In this article, we will introduce you to Kubeflow at a basic level and show you
 
 In the course of this article, we:
 
-1. [Create a Kubernetes cluster](https://mcs.mail.ru/containers /) on the VK Cloud Solutions platform.
+1. [Create a Kubernetes cluster](https://mcs.mail.ru/containers /) on the VK Cloud platform.
 2. Install Istio.
 3. Install Kubeflow.
 4. Launch JupyterHub.
@@ -52,11 +52,11 @@ So, let's start installing Kubeflow.
 
 #### Step 1: Creating a Kubernetes cluster
 
-First, we need to deploy a Kubernetes cluster. We will do this on our VK Cloud Solutions cloud platform.
+First, we need to deploy a Kubernetes cluster. We will do this on our VK Cloud cloud platform.
 
 > Before creating a cluster, you need to configure the network and generate and upload an SSH key to connect to the VM. You can set up the network yourself [according to the instructions](https://mcs.mail.ru/help/ru_RU/networks/create-net#section-0).
 
-First, go to the VK CS panel and create [Kubernetes cluster](https://mcs.mail.ru/containers /). The cluster can be created in different configurations, select "Other", and specify the version of Kubernetes 1.16.4. This is not the most up-to-date version that is available on the platform, but, according to Kubeflow developers, it is best tested. We also select two pre-installed services: monitoring based on Prometheus/Grafana and Ingress Controller.
+First, go to the VK Cloud panel and create [Kubernetes cluster](https://mcs.mail.ru/containers /). The cluster can be created in different configurations, select "Other", and specify the version of Kubernetes 1.16.4. This is not the most up-to-date version that is available on the platform, but, according to Kubeflow developers, it is best tested. We also select two pre-installed services: monitoring based on Prometheus/Grafana and Ingress Controller.
 
 ![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f7055-2fdirect-2f1617879700216-1617879700216.png)
 
@@ -72,7 +72,7 @@ An important point: turn on autoscaling and specify a maximum of 10 nodes. This 
 
 If there are difficulties, here are [full instructions] (https://mcs.mail.ru/help/ru_RU/k8s-start/create-k8s ) to create a Kubernetes cluster.
 
-After the cluster has been created, you need to connect to the master node and make some changes. This is necessary, since Kubeflow requires one feature to work, which is not active yet, but we will soon turn it on according to the standard. To do this, you first need to assign a white external IP address. Therefore, in the VK CS panel, go to the "Cloud Computing" section — "[Virtual machines](https://mcs.mail.ru/app/services/infra/servers /)". Opposite the master node in the drop-down menu, select "Manage IP addresses".
+After the cluster has been created, you need to connect to the master node and make some changes. This is necessary, since Kubeflow requires one feature to work, which is not active yet, but we will soon turn it on according to the standard. To do this, you first need to assign a white external IP address. Therefore, in the VK Cloud panel, go to the "Cloud Computing" section — "[Virtual machines](https://mcs.mail.ru/app/services/infra/servers /)". Opposite the master node in the drop-down menu, select "Manage IP addresses".
 
 ![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f7055-2fdirect-2f1617879700316-1617879700316.png)
 

@@ -2,7 +2,7 @@
   "title": "Как настроить централизованное логирование из Kubernetes с помощью Fluentd",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Как настроить централизованное логирование из Kubernetes с помощью Fluentd - VK Cloud Solutions",
+  "metaTitle": "Как настроить централизованное логирование из Kubernetes с помощью Fluentd - VK Cloud",
   "metaDescription": "Почему в Kubernetes необходимо специальное решение для логирования Писать логи в контейнеры неудобно, потому что: данные, генерируемые в контейнеризированн",
   "sectionTitle": "Как настроить централизованное логирование из Kubernetes с помощью Fluentd",
   "markdown": "",

@@ -55,7 +55,7 @@ provider "openstack" {
     # the domain identifier where the user is located
     user_domain_id = "users"
 
-    # an API endpoint to connect to VK CS identity service
+    # an API endpoint to connect to VK Cloud identity service
     auth_url = "https://infra.mail.ru:5000/v3/"
 
     # use octavia to manage load balancers

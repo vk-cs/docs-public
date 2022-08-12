@@ -2,7 +2,7 @@ This instruction will help you set up data encryption on a virtual machine with 
 
 <warn>
 
-VK CS is not responsible for the correct operation of third-party software. This article is given as an example.
+VK Cloud is not responsible for the correct operation of third-party software. This article is given as an example.
 
 </warn>
 
@@ -96,7 +96,7 @@ echo "vdb_crypt UUID=${UUID} none luks,discard" >> /etc/crypttab
 
 The passphrase for decrypting the disk (passphrase) will be requested when the system boots. You can enter a passphrase using VNC access to the virtual machine console.
 
-VNC can be accessed via the VK CS panel interface:
+VNC can be accessed via the VK Cloud panel interface:
 
 1. Section "Cloud Computing" → "Virtual Machines" → select an instance and go to the "Console" tab.
 

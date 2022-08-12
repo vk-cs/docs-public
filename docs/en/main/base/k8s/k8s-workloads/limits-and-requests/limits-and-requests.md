@@ -11,7 +11,7 @@ If you set a memory limit of 4 GB for this container, kubelet will apply this li
 
 <info>
 
-In Kubernetes clusters from VK Cloud Solutions, the following default values ​​apply to running containers without specified requests and limits:
+In Kubernetes clusters from VK Cloud, the following default values ​​apply to running containers without specified requests and limits:
 
 - Requests: 100m / 64Mb
 - Limits: 500m / 512Mb

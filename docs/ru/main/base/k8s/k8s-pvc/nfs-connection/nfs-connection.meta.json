@@ -2,7 +2,7 @@
   "title": "Подключение NFS",
   "pageDescription": "Вместе с облачной системой хранения на базе Ceph вы можете использовать общее файловое хранилище, доступное по протоколу NFS, для создания Persistent volumes в вашем кластере Kubernetes.",
   "shortDescription": "",
-  "metaTitle": "Подключение NFS - VK Cloud Solutions",
+  "metaTitle": "Подключение NFS - VK Cloud",
   "metaDescription": "",
   "sectionTitle": "Подключение NFS",
   "markdown": "",

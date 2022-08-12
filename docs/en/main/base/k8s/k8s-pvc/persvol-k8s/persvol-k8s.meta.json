@@ -2,7 +2,7 @@
   "title": "Working with Persistent Volumes",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Working with Persistent Volumes - VK Cloud Solutions",
+  "metaTitle": "Working with Persistent Volumes - VK Cloud",
   "metaDescription": "Description There are two basic concepts, PV (PersistentVolume) and PVC (PersistentVolumeClaim). Persistent Volumes are designed for persistent storage of",
   "sectionTitle": "Working with Persistent Volumes",
   "markdown": "",

@@ -1,4 +1,4 @@
-The VK CS Object Storage service allows you to manage the CORS bucket configuration. To load the CORS configuration, you need to generate an XML document.
+The VK Cloud Object Storage service allows you to manage the CORS bucket configuration. To load the CORS configuration, you need to generate an XML document.
 
 List of available methods for CORS bucket configurations:
 

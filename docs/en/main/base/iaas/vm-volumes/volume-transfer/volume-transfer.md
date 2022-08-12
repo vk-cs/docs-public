@@ -1,4 +1,4 @@
-In VK CS, it is possible to transfer disks between projects and TOGETHER.
+In VK Cloud, it is possible to transfer disks between projects and TOGETHER.
 
 ## Transfer between projects
 
@@ -36,7 +36,7 @@ After that, contact technical support and let them know which disk was moved fro
 
 ## Transfer between VMs
 
-#### VK CS Control Panel
+#### VK Cloud Control Panel
 
 1. Create a snapshot of the disk according to [this instruction](http://mchs.mail.ru/help/ru_RU/vm-volumes/volume-snapshot).
 

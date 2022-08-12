@@ -19,7 +19,7 @@ A node group can be added in several ways:
 1. When [creating a Kubernetes cluster](../k8s-clusters/create-k8s) immediately add the required number of node groups.
 1. Add a node group to an existing Kubernetes cluster:
 
-   1. Open the [VK CS panel](https://mcs.mail.ru/app/).
+   1. Open the [VK Cloud panel](https://mcs.mail.ru/app/).
    1. Go to Containers → Kubernetes Clusters.
    1. Find the required cluster in the list.
    1. In the context menu of the cluster, select the "Add node group" item.

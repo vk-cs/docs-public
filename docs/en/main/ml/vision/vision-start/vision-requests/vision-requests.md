@@ -13,7 +13,7 @@ Authorization data is transmitted in the request line:
 
 | **Provider** | **Value of oauth_provider** | **Getting a token**                            |
 | ------------ | --------------------------- | ---------------------------------------------- |
-| MCS          | mcs                         | [https://mcs.mail.ru /](https://mcs.mail.ru /) |
+| VK Cloud          | mcs                         | [https://mcs.mail.ru /](https://mcs.mail.ru /) |
 
 Request parameters are passed in JSON format in the request body with name="meta":
 

@@ -1,14 +1,14 @@
 ## Accessibility zones
 
-VK CS platform resources are globally available to provide optimal cloud service levels. Each Availability Zone can consist of one or more datacenters with independent power, cooling, and network configurations.
+VK Cloud platform resources are globally available to provide optimal cloud service levels. Each Availability Zone can consist of one or more datacenters with independent power, cooling, and network configurations.
 
-In contrast to using one data center, the presence of several allows you to provide an increased level of availability, fault tolerance and scalability for applications and databases in a production environment. VK CS Availability Zones are combined into a high-bandwidth, low-latency, redundant, dedicated fiber optic network that provides high-speed data transfer between Availability Zones.
+In contrast to using one data center, the presence of several allows you to provide an increased level of availability, fault tolerance and scalability for applications and databases in a production environment. VK Cloud Availability Zones are combined into a high-bandwidth, low-latency, redundant, dedicated fiber optic network that provides high-speed data transfer between Availability Zones.
 
 The performance of this network is sufficient for synchronous replication between AZs.
 
 Availability Zones can be used to separate applications and provide uninterrupted access to them.
 
-VK CS platform resources are located in two data centers located in Moscow:
+VK Cloud platform resources are located in two data centers located in Moscow:
 
 - gz1 - Goznak data center;
 - ms1 (ko1) - DataLine NORD4 data center;
@@ -30,6 +30,6 @@ The main goals of live migration include:
 3.  **Power management** . If some physical machines are underutilized, the virtual machines running on them can be migrated to other machines, and previous machines can be shut down to reduce power consumption.
 4.  **Fault tolerance** . If at some point the server malfunctions, the running virtual machines can be migrated to another machine, and the failed server will be investigated to find and fix the cause of the malfunctioning. Thus, the user experience of these virtual machines is not affected.
 
-## VK CS certification
+## VK Cloud certification
 
-VK CS brings together all the best practices from 20 years of experience in creating public services and uses the infrastructure that has been tested on other VK Cloud Solutions services with a multi-million audience. Guaranteed reliability can be confirmed by VK CS certificates, which are available [here](https://mcs.mail.ru/cloud-platform/certificates/) .
+VK Cloud brings together all the best practices from 20 years of experience in creating public services and uses the infrastructure that has been tested on other VK Cloud services with a multi-million audience. Guaranteed reliability can be confirmed by VK Cloud certificates, which are available [here](https://mcs.mail.ru/cloud-platform/certificates/) .

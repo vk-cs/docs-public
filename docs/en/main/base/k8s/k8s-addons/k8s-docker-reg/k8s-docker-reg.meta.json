@@ -2,7 +2,7 @@
   "title": "Using Docker Registry",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Using Docker Registry - VK Cloud Solutions",
+  "metaTitle": "Using Docker Registry - VK Cloud",
   "metaDescription": "Uploading images to Kubernetes using Docker Registry This article will help you in creating a pod using a Secret to download an image from a private",
   "sectionTitle": "Using Docker Registry",
   "markdown": "",

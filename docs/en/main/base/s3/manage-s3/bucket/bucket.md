@@ -30,9 +30,9 @@ It is recommended to avoid using personal information such as project number or 
 
 ## Bucket creation
 
-To create a bucket in the VK CS panel:
+To create a bucket in the VK Cloud panel:
 
-1.  Go to the "Buckets" tab of the Object Storage service in the VK CS panel.
+1.  Go to the "Buckets" tab of the Object Storage service in the VK Cloud panel.
 2.  Press the "Add" button:![](./assets/1598051883018-1598051883018.png)
 3.  Select the type of bucket to create and enter a DNS-compatible name:![](./assets/1598051924094-1598051924094.png)
 

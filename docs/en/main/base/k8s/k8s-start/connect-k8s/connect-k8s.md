@@ -20,7 +20,7 @@ To connect to a cluster using `kubectl`:
 
 1. Upload the cluster configuration file to which you want to connect to your local computer:
 
-   1. Go to the "Containers" section of the VK CS Panel.
+   1. Go to the "Containers" section of the VK Cloud Panel.
    1. Select "Get Kubeconfig to access the cluster" in the context menu of the required cluster.
 
    Such a file is automatically created for each new cluster and has a name in the format `<cluster name>_kubeconfig.yaml`.
@@ -143,7 +143,7 @@ To connect to a cluster using `kubectl`:
       kubectl cluster-info dump
       ```
 
-   1. Send the collected information to the VK Cloud Solution technical support service to diagnose and fix the problem.
+   1. Send the collected information to the VK Cloud technical support service to diagnose and fix the problem.
 
 ## Installing kubectl <a id="kubectl-install"></a>
 

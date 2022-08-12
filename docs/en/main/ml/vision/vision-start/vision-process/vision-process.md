@@ -23,7 +23,7 @@ Supported OAuth2 providers:
 
 | Provider | Value of oauth_provider | Getting a token |
 | ------------------------------------ | --------------- | ---------------------------------------------- |
-| MCS                                  | mcs             | [https://mcs.mail.ru /](https://mcs.mail.ru /) |
+| VK Cloud                                  | mcs             | [https://mcs.mail.ru /](https://mcs.mail.ru /) |
 
 The request parameters are passed in JSON format in the body.
 
@@ -172,7 +172,7 @@ Supported OAuth2 providers:
 
 | / Provider / Value of oauth_provider | Getting a token |
 | ------------------------------------ | --------------- | -------------------------------------------- |
-| MCS                                  | mcs             | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
+| VK Cloud                                  | mcs             | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
 
 The request parameters are passed in the `JSON` format in the body.
 
@@ -259,7 +259,7 @@ Supported OAuth2 providers:
 
 | Provider | Value of oauth_provider | Getting a token |
 | ------------------------------------ | --------------- | -------------------------------------------- |
-| MCS                                  | mcs             | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
+| VK Cloud                                  | mcs             | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
 
 The request parameters are passed in the `JSON` format in the body.
 

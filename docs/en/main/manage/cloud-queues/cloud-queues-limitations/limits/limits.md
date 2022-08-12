@@ -30,4 +30,4 @@ By default, the number of message queues created by the user = 500. To increase 
 
 The queue name is limited to 80 characters in length. You can use alphanumeric characters, hyphens(-) and underscores(_). You can use alphanumeric characters, hyphens(-) and underscores(_).
 
-The message queue name must be unique within the VK CS account. After deleting the message queue, its name can be reused.
+The message queue name must be unique within the VK Cloud account. After deleting the message queue, its name can be reused.

@@ -2,7 +2,7 @@
   "title": "SendMessageBatch",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "SendMessageBatch - VK Cloud Solutions",
+  "metaTitle": "SendMessageBatch - VK Cloud",
   "metaDescription": "Доставляет до десяти сообщений в указанную очередь. Для очереди FIFO несколько сообщений в одном пакете ставятся в очередь в порядке их отправки.  Результа",
   "sectionTitle": "SendMessageBatch",
   "markdown": "",

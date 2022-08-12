@@ -63,7 +63,7 @@ data "vkcs_compute_flavor" "k8s_worker" {
 }
 ```
 
-### VK CS provider resources to create a cluster
+### VK Cloud provider resources to create a cluster
 
 1. Resources (resource):
 

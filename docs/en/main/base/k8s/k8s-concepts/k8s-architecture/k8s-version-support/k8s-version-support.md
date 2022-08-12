@@ -1,6 +1,6 @@
-In Kubernetes aaS from VK Cloud Solutions, new versions are mainly added one month after the official release.
+In Kubernetes aaS from VK Cloud, new versions are mainly added one month after the official release.
 
-The following versions of Kubernetes are currently available in Kubernetes aaS from VK Cloud Solutions:
+The following versions of Kubernetes are currently available in Kubernetes aaS from VK Cloud:
 
 - 1.22.6
 - 1.21.4
@@ -9,7 +9,7 @@ The following versions of Kubernetes are currently available in Kubernetes aaS f
 - 1.18.12
 - 1.17.8
 
-Kubernetes versions are supported for 14 months from the release date in Kubernetes aaS from VK Cloud Solutions.
+Kubernetes versions are supported for 14 months from the release date in Kubernetes aaS from VK Cloud.
 
 A Kubernetes end of support notice will be sent out via email and in your account notification center 30 days before the end of the support date.
 

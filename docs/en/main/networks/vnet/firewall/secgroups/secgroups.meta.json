@@ -2,7 +2,7 @@
   "title": "Security groups",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Security groups - VK Cloud Solutions",
+  "metaTitle": "Security groups - VK Cloud",
   "metaDescription": "A security group is a set of configurable allowing traffic flow rules that can be assigned to instance ports. Important limitation GRE traffic is available",
   "sectionTitle": "Security groups",
   "markdown": "",

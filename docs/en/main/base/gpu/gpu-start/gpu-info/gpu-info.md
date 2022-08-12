@@ -12,7 +12,7 @@ The solution of tasks that require large computing power is easier to carry out 
 
 Server-side graphics rendering speed with the most advanced NVIDIA® Tesla® V100 GPU, far exceeds the rendering speed of a conventional graphics card.
 
-The time to solve problems in deep learning, graphical visualization and high-performance computing can be reduced from days to hours. Whether training neural networks, solving complex design problems or cutting-edge research, get the best performance with NVIDIA® Tesla® V100 and VK Cloud Solutions.
+The time to solve problems in deep learning, graphical visualization and high-performance computing can be reduced from days to hours. Whether training neural networks, solving complex design problems or cutting-edge research, get the best performance with NVIDIA® Tesla® V100 and VK Cloud.
 
 ### GPU-accelerated computing in the cloud
 
@@ -22,11 +22,11 @@ Depending on the type of tasks, 1 modern GPU server can replace up to 100 conven
 
 GPU-based cloud computing will take you to a new level of performance and significantly reduce data processing time, while saving your company money.
 
-VK CS provides NVIDIA® Tesla® V100 graphics cards with 16 GB of VRAM.
+VK Cloud provides NVIDIA® Tesla® V100 graphics cards with 16 GB of VRAM.
 
 ## Software
 
-VK CS recommends using the following GPU-enabled development software:
+VK Cloud recommends using the following GPU-enabled development software:
 
 - CUDA Toolkit — its documentation [is available on the official resource](https://developer.nvidia.com/cuda-toolkit).
 - Deepo — documentation and distribution [are available on its official resource](https://github.com/ufoym/deepo).

@@ -1,6 +1,6 @@
 A security group rule is a set of parameters that determine the conditions for traffic flow. Rules are combined into groups, which in turn are applied to instance ports.
 
-To manage the rules of a security group, you need to click on the group name on the Firewall Settings page of the Virtual Networks page of your [VK CS personal account](https://mcs.mail.ru/app/services/infra/firewall/) .
+To manage the rules of a security group, you need to click on the group name on the Firewall Settings page of the Virtual Networks page of your [VK Cloud personal account](https://mcs.mail.ru/app/services/infra/firewall/) .
 
 ## Adding a rule
 

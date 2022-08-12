@@ -41,4 +41,4 @@ kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-graf
 4. Укажите новый размер диска.
 5. Нажмите кнопку «Подтвердить».
 
-VK CS запустит операцию изменения размера диска.
+VK Cloud запустит операцию изменения размера диска.

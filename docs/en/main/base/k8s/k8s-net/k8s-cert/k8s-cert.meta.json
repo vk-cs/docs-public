@@ -2,7 +2,7 @@
   "title": "Using SSL Certificates in Ingress",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Using SSL certificates in Ingress - VK Cloud Solutions",
+  "metaTitle": "Using SSL certificates in Ingress - VK Cloud",
   "metaDescription": "Ingress Controllers in Kubernetes allow you to use SSL certificates to terminate TLS traffic. Both Let's Encrypt certificates can be used",
   "sectionTitle": "Using SSL Certificates in Ingress",
   "markdown": "",

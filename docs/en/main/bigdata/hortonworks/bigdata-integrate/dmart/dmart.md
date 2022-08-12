@@ -8,7 +8,7 @@ The advantages of such a slice are that the target part of the data warehouse is
 
 ## Apache hive
 
-The VK Cloud Solutions Big Bata service uses the Hive data mart.
+The VK Cloud Big Bata service uses the Hive data mart.
 
 Apache Hive is a data warehouse system in the Hadoop ecosystem.
 

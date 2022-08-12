@@ -9,7 +9,7 @@ Network topology is a graphical representation of the network connectivity of vi
 
 ## Network information
 
-The topology of virtual networks of a specific VK CS project can be seen in the " [Network Topology](https://mcs.mail.ru/app/services/cloud-networks/topology/) " section of your personal account.
+The topology of virtual networks of a specific VK Cloud project can be seen in the " [Network Topology](https://mcs.mail.ru/app/services/cloud-networks/topology/) " section of your personal account.
 
 ![](./assets/1598286753345-1598286753344.png)
 

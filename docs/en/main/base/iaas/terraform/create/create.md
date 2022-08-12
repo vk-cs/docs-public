@@ -72,7 +72,7 @@ To create a virtual machine, create an instance.tf file in the directory and add
   - **network** — network connected when creating a VM.
   - **depends_on** - The VM will not start until the specified resources are created.
 
-- **vkcs_networking_floatingip** - Gets available floating IP ID from VK CS. Includes the following resource:
+- **vkcs_networking_floatingip** - Gets available floating IP ID from VK Cloud. Includes the following resource:
 
   - **pool** is the name of the pool that the floating IP belongs to.
 
