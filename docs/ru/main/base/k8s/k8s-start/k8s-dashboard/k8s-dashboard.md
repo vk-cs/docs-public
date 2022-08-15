@@ -4,6 +4,13 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 
 ## Подключение
 
+<tabs>
+<tablist>
+<tab>Версия kubectl >v1.23</tab>
+<tab>Версия kubectl v1.23+</tab>
+</tablist>
+<tabpanel>
+
 1. Получите Secret для доступа к Kubernetes Dashboard кластера одним из перечисленных способов:
 
     1. С помощью интерфейса VK Cloud: перейдите к кластеру, в меню выберите пункт "Получить Secret для входа в Kubernetes dashboard".
@@ -27,3 +34,26 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 5.  Вставьте токен, полученный на шаге 1, и нажмите «Sign In».
 
     Откроется Kubernetes Dashboard с правами суперадмина.
+
+</tabpanel>
+<tabpanel>
+
+1. Установите client-keystone-auth по [инструкции](...\k8s\k8s-clusters\client-keystone-auth).
+2. Установите kauthproxy по [инструкции](https://github.com/int128/kauthproxy#getting-started).
+3. Импортируйте [конфигурацию](.../k8s/k8s-start/connect-k8s#import-konfiguracii).
+4. Откройте командную строку и запустите команду приведенную ниже:
+
+### Linux
+
+```bash
+kauthproxy --kubeconfig $KUBECONFIG -n kube-system https://kubernetes-dashboard.svc
+```
+
+### Windows
+
+```bash
+kauthproxy --kubeconfig $Env:KUBECONFIG -n kube-system https://kubernetes-dashboard.svc
+```
+
+</tabpanel>
+</tabs>

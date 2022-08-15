@@ -6,7 +6,13 @@
 
 Полный список операций, которые можно выполнить с помощью `kubectl`, доступен в [официальной документации](https://kubernetes.io/docs/reference/kubectl/overview/).
 
-## Подключение к кластеру <a id="connect"></a>
+<warn>
+
+При использовании версий kubectl v1.23 и выше, вам необходимо ввести пароль при подключении. Чтобы воспользоваться автоматическим вводом пароля, его можно указать в файле настройки подключения kubeconfig. Подробнее о файле kubeconfig можно узнать [здесь](.../k8s/k8s-start/connect-k8s#import-konfiguracii).
+
+</warn>
+
+## Подключение к кластеру
 
 Чтобы подключиться к кластеру с помощью `kubectl`:
 
@@ -145,7 +151,7 @@
 
    1. Передайте собранную информацию в службу технической поддержки VK Cloud для диагностики и устранения проблемы.
 
-## Установка kubectl <a id="kubectl-install"></a>
+## Установка kubectl
 
 <tabs>
 <tablist>
@@ -302,3 +308,86 @@ install-kubectl.ps1 [-DownloadLocation <path>]
 ```bash
 kubectl version --client
 ```
+
+## Импорт конфигурации
+
+Чтобы kubectl мог найти и получить доступ к кластеру Kubernetes, необходим конфигурационный файл kubeconfig, который создаётся автоматически при создании кластера и загружается на локальный компьютер из панели VK CS. Чтобы импортировать конфигурационный файл \*.yaml, нужно выполнить команду:
+
+<tabs>
+<tablist>
+<tab>Linux, macOS</tab>
+<tab>Windows (PowerShell)</tab>
+</tablist>
+<tabpanel>
+
+```bash
+export KUBECONFIG=$KUBECONFIG:$HOME/.kube/config
+```
+
+</tabpanel>
+<tabpanel>
+
+```powershell
+$Env:KUBECONFIG="$Env:KUBECONFIG;$HOME\.kube\config"
+```
+
+</tabpanel>
+</tabs>
+
+## Подключение к кластеру
+
+<tabs>
+<tablist>
+<tab>Kubernetes v1.22 и ниже</tab>
+<tab>Kubernetes v1.23+</tab>
+</tablist>
+<tabpanel>
+
+Посмотреть на состояние кластера, чтобы убедиться, что kubectl правильно сконфигурирован можно при помощи команды:
+
+```bash
+kubectl cluster-info
+```
+
+Если в результате выполнения команды виден URL-ответ, значит kubectl корректно настроен для работы с кластером.
+
+Если появляется следующее сообщение, то значит kubectl настроен некорректно или не может подключиться к кластеру Kubernetes:
+
+```bash
+The connection to the server <server-name:port> was refused - did you specify the right host or port?
+```
+
+Если команда `kubectl cluster-info` возвращает URL-ответ, но подключиться к своему кластеру не удается, следует воспользоваться командой:
+
+```bash
+kubectl cluster-info dump
+```
+
+</tabpanel>
+<tabpanel>
+
+1. Установите client-keystone-auth по [инструкции](.../k8s-clusters/client-keystone-auth).
+2. При каждом запуске команды kubectl будет запрашивать ваш пароль для аутентификации в кластере Kubernetes. Чтобы каждый раз не вводить пароль, укажите пароль от ЛК в файле kubeconfig для переменной OS_PASSWORD.
+
+Посмотреть на состояние кластера, чтобы убедиться, что kubectl правильно сконфигурирован можно при помощи команды:
+
+```bash
+kubectl cluster-info
+```
+
+Если в результате выполнения команды виден URL-ответ, значит kubectl корректно настроен для работы с кластером.
+
+Если появляется следующее сообщение, то значит kubectl настроен некорректно или не может подключиться к кластеру Kubernetes:
+
+```bash
+The connection to the server <server-name:port> was refused - did you specify the right host or port?
+```
+
+Если команда `kubectl cluster-info` возвращает URL-ответ, но подключиться к своему кластеру не удается, следует воспользоваться командой:
+
+```bash
+kubectl cluster-info dump
+```
+
+</tabpanel>
+</tabs>
