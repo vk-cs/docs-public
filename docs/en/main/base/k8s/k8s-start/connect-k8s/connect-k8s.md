@@ -6,6 +6,12 @@ Kubernetes`kubectl` command line tool allows you to run commands in Kubernetes c
 
 A complete list of operations that can be performed using `kubectl` is available in [official documentation] (https://kubernetes.io/docs/reference/kubectl/overview /).
 
+<note>
+
+When using kubectl versions v1.23 and higher, the user will need to enter a password when connecting. To use automatic password entry, you can specify it in the kubeconfig connection configuration file. More information about the kubeconfig file can be found [here](https://maps.mail.ru/docs/base/k8s/k8s-start/connect-k8s#import-konfiguracii).
+
+</note>
+
 ## Connecting to a cluster <a id="connect"></a>
 
 To connect to a cluster using `kubectl`:
