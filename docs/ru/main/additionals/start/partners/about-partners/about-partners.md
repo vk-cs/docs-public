@@ -44,7 +44,7 @@
 
 Если в течение суток с Вами не связались, обратитесь, пожалуйста, по другим каналам связи:
 
-1.  Чат телеграм [https://t.me/vkcs_assistant](https://t.me/vkcs_assistant)
+1.  Чат телеграм [https://t.me/vkcloud_assistant](https://t.me/vkcloud_assistant)
 2.  Электронным письмом по адресу [support@mcs.mail.ru](mailto:support@mcs.mail.ru)
 
 ## Преимущества партнерской программы VK Cloud
