@@ -8,7 +8,7 @@
 
 <warn>
 
-При использовании версий kubectl v1.23 и выше, вам необходимо ввести пароль при подключении. Чтобы воспользоваться автоматическим вводом пароля, его можно указать в файле настройки подключения kubeconfig. Подробнее о файле kubeconfig можно узнать [здесь](.../k8s/k8s-start/connect-k8s#import-konfiguracii).
+При использовании версий kubectl v1.23 и выше, вам необходимо ввести пароль при подключении. Чтобы воспользоваться автоматическим вводом пароля, его можно указать в файле настройки подключения kubeconfig. Подробнее о файле kubeconfig можно узнать [здесь](https://mcs.mail.ru/docs/base/k8s/k8s-start/connect-k8s#import-konfiguracii).
 
 </warn>
 
@@ -366,7 +366,7 @@ kubectl cluster-info dump
 </tabpanel>
 <tabpanel>
 
-1. Установите client-keystone-auth по [инструкции](.../k8s-clusters/client-keystone-auth).
+1. Установите client-keystone-auth по [инструкции](https://mcs.mail.ru/docs/ru/base/k8s/k8s-clusters/client-keystone-auth).
 2. При каждом запуске команды kubectl будет запрашивать ваш пароль для аутентификации в кластере Kubernetes. Чтобы каждый раз не вводить пароль, укажите пароль от ЛК в файле kubeconfig для переменной OS_PASSWORD.
 
 Посмотреть на состояние кластера, чтобы убедиться, что kubectl правильно сконфигурирован можно при помощи команды:

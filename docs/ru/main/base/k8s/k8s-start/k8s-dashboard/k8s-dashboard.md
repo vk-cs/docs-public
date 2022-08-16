@@ -38,9 +38,9 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 </tabpanel>
 <tabpanel>
 
-1. Установите client-keystone-auth по [инструкции](...\k8s\k8s-clusters\client-keystone-auth).
+1. Установите client-keystone-auth по [инструкции](https://mcs.mail.ru/docs/ru/base/k8s/k8s-clusters/client-keystone-auth).
 2. Установите kauthproxy по [инструкции](https://github.com/int128/kauthproxy#getting-started).
-3. Импортируйте [конфигурацию](.../k8s/k8s-start/connect-k8s#import-konfiguracii).
+3. Импортируйте [конфигурацию](https://mcs.mail.ru/docs/base/k8s/k8s-start/connect-k8s#import-konfiguracii).
 4. Откройте командную строку и запустите команду приведенную ниже:
 
 ### Linux
