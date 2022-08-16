@@ -44,7 +44,7 @@ POST /v2/dns/
 Заголовки:
 
 - Location:
-<https://mcs.mail.ru/public-dns/v2/dns/66ecfe9e-532b-44f6-ba36-b0dc85ab3f8f>
+<https://mcs.mail.ru/public-dns/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6>
 - Content-Type: application/json; charset=UTF-8
 - Content-Length: 441
 
@@ -56,23 +56,17 @@ POST /v2/dns/
 
 ``` json
 {
-    "status_description": "",
-    "uuid": "66ecfe9e-532b-44f6-ba36-b0dc85ab3f8f",
-    "zone_ns_ttl": 3600,
+    "uuid": "a5ef043e-b517-4c45-a727-e8298f5d47d6",
+    "tenant": "7642b2c2-4162-4983-a7e7-b26de7cbdaf9",
+    "soa_primary_dns": "ns1.mcs.mail.ru.",
+    "soa_admin_email": "admin@example.com",
+    "soa_serial": 2020080302,
     "soa_refresh": 7200,
     "soa_retry": 3600,
-    "enabled": false,
     "soa_expire": 1209600,
-    "soa_primary_dns": "ns1.mcs.mail.ru.",
-    "zone": "example.com.",
     "soa_ttl": 3600,
-    "soa_serial": 2020080302,
-    "soa_admin_email": "admin@example.com",
-    "zone_ns": [
-        "ns1.mcs.mail.ru.",
-        "ns2.mcs.mail.ru."
-    ],
-    "tenant": "045b7132-28b5-11eb-9756-2bee881f7022"
+    "zone": "example.com.",
+    "status": "pending"
 }
 ```
 
@@ -90,28 +84,23 @@ GET /v2/dns/<dns-uuid>
 
 - 200 - успешный ответ.
 - 404 - DNS запись не найдена.
+- 429 - DNS запись уже существует.
 
 Тело ответа:
 
 ``` json
 {
-    "status_description": "",
-    "uuid": "66ecfe9e-532b-44f6-ba36-b0dc85ab3f8f",
-    "zone_ns_ttl": 3600,
+    "uuid": "a5ef043e-b517-4c45-a727-e8298f5d47d6",
+    "tenant": "7642b2c2-4162-4983-a7e7-b26de7cbdaf9",
+    "soa_primary_dns": "ns1.mcs.mail.ru.",
+    "soa_admin_email": "admin@example.com",
+    "soa_serial": 2020080304,
     "soa_refresh": 7200,
     "soa_retry": 3600,
-    "enabled": false,
     "soa_expire": 1209600,
-    "soa_primary_dns": "ns1.mcs.mail.ru.",
-    "zone": "example.com.",
     "soa_ttl": 3600,
-    "soa_serial": 2020080302,
-    "soa_admin_email": "admin@example.com",
-    "zone_ns": [
-        "ns1.mcs.mail.ru.",
-        "ns2.mcs.mail.ru."
-    ],
-    "tenant": "045b7132-28b5-11eb-9756-2bee881f7022"
+    "zone": "example.com.",
+    "status": "pending"
 }
 ```
 
@@ -134,23 +123,17 @@ GET /v2/dns/
 ``` json
 [
     {
-        "status_description": "",
-        "uuid": "66ecfe9e-532b-44f6-ba36-b0dc85ab3f8f",
-        "zone_ns_ttl": 3600,
+        "uuid": "a5ef043e-b517-4c45-a727-e8298f5d47d6",
+        "tenant": "7642b2c2-4162-4983-a7e7-b26de7cbdaf9",
+        "soa_primary_dns": "ns1.mcs.mail.ru.",
+        "soa_admin_email": "admin@example.com",
+        "soa_serial": 2020080304,
         "soa_refresh": 7200,
         "soa_retry": 3600,
-        "enabled": false,
         "soa_expire": 1209600,
-        "soa_primary_dns": "ns1.mcs.mail.ru.",
-        "zone": "example.com.",
         "soa_ttl": 3600,
-        "soa_serial": 2020080302,
-        "soa_admin_email": "admin@example.com",
-        "zone_ns": [
-            "ns1.mcs.mail.ru.",
-            "ns2.mcs.mail.ru."
-        ],
-        "tenant": "045b7132-28b5-11eb-9756-2bee881f7022"
+        "zone": "example.com.",
+        "status": "pending"
     }
 ]
 ```
@@ -171,7 +154,7 @@ PUT /v2/dns/<dns-uuid>
 
 ``` json
 {
-    "zone_ns_ttl": 5600,
+    "soa_ttl": 7200,
     "soa_serial": 2020120302
 }
 ```
@@ -187,23 +170,17 @@ PUT /v2/dns/<dns-uuid>
 
 ``` json
 {
-    "status_description": "",
-    "uuid": "66ecfe9e-532b-44f6-ba36-b0dc85ab3f8f",
-    "zone_ns_ttl": 5600,
+    "uuid": "a5ef043e-b517-4c45-a727-e8298f5d47d6",
+    "tenant": "7642b2c2-4162-4983-a7e7-b26de7cbdaf9",
+    "soa_primary_dns": "ns1.mcs.mail.ru.",
+    "soa_admin_email": "admin@example.com",
+    "soa_serial": 2020120302,
     "soa_refresh": 7200,
     "soa_retry": 3600,
-    "enabled": false,
     "soa_expire": 1209600,
-    "soa_primary_dns": "ns1.mcs.mail.ru.",
+    "soa_ttl": 7200,
     "zone": "example.com.",
-    "soa_ttl": 3600,
-    "soa_serial": 2020120302
-    "soa_admin_email": "admin@example.com",
-    "zone_ns": [
-        "ns1.mcs.mail.ru.",
-        "ns2.mcs.mail.ru."
-    ],
-    "tenant": "045b7132-28b5-11eb-9756-2bee881f7022"
+    "status": "pending"
 }
 ```
 
@@ -249,22 +226,23 @@ POST /v2/dns/<dns-uuid>/a/
 Заголовки:
 
 - Location:
-<https://mcs.mail.ru/public-dns/v2/dns/66ecfe9e-532b-44f6-ba36-b0dc85ab3f8f/a/efa4fb4e-a69f-49c7-a204-7b7fb15e592e>
+<https://mcs.mail.ru/public-dns/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6/a/631519fb-f2d3-43e0-ae9c-8f18adcf3b1a>
 - Content-Type: application/json; charset=UTF-8
 - Content-Length: 211
 
 Код ответа:
 
 - 201 - A запись создана успешно.
+- 409 - A запись уже существует.
 
 Тело ответа:
 
 ``` json
 {
-    "ipv4": "8.8.8.8",
-    "dns": "/v2/dns/66ecfe9e-532b-44f6-ba36-b0dc85ab3f8f",
-    "uuid": "efa4fb4e-a69f-49c7-a204-7b7fb15e592e",
+    "uuid": "631519fb-f2d3-43e0-ae9c-8f18adcf3b1a",
     "name": "google-dns-servers",
+    "dns": "/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6",
+    "ipv4": "8.8.8.8",
     "ttl": 60
 }
 ```
@@ -288,10 +266,10 @@ GET /v2/dns/<dns-uuid>/a/<a-uuid>
 
 ``` json
 {
-    "ipv4": "8.8.8.8",
-    "dns": "/v2/dns/66ecfe9e-532b-44f6-ba36-b0dc85ab3f8f",
-    "uuid": "efa4fb4e-a69f-49c7-a204-7b7fb15e592e",
+    "uuid": "631519fb-f2d3-43e0-ae9c-8f18adcf3b1a",
     "name": "google-dns-servers",
+    "dns": "/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6",
+    "ipv4": "8.8.8.8",
     "ttl": 60
 }
 ```
@@ -315,10 +293,10 @@ GET /v2/dns/<dns-uuid>/a/
 ``` json
 [
     {
-        "ipv4": "8.8.8.8",
-        "dns": "/v2/dns/66ecfe9e-532b-44f6-ba36-b0dc85ab3f8f",
-        "uuid": "efa4fb4e-a69f-49c7-a204-7b7fb15e592e",
+        "uuid": "631519fb-f2d3-43e0-ae9c-8f18adcf3b1a",
         "name": "google-dns-servers",
+        "dns": "/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6",
+        "ipv4": "8.8.8.8",
         "ttl": 60
     }
 ]
@@ -355,10 +333,10 @@ PUT /v2/dns/<dns-uuid>/a/<a-uuid>
 
 ``` json
 {
-    "ipv4": "8.8.4.4",
-    "dns": "/v2/dns/66ecfe9e-532b-44f6-ba36-b0dc85ab3f8f",
-    "uuid": "efa4fb4e-a69f-49c7-a204-7b7fb15e592e",
+    "uuid": "631519fb-f2d3-43e0-ae9c-8f18adcf3b1a",
     "name": "google-dns-servers",
+    "dns": "/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6",
+    "ipv4": "8.8.4.4",
     "ttl": 60
 }
 ```
@@ -397,7 +375,7 @@ GET /v2/dns/<dns-uuid>/<record-type>/<record-uuid>
 {
     "uuid": "00e52f77-2694-46de-b6e0-a37370bef2c5",
     "name": "@",
-    "dns": "/v2/dns/620d7c0f-0abc-49fc-acff-81924ec3ff73",
+    "dns": "/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6",
     "ipv6": "2001:0DB8:AA10:0001:0000:0000:0000:00FB",
     "ttl": 86400
 }
@@ -411,7 +389,7 @@ GET /v2/dns/<dns-uuid>/<record-type>/<record-uuid>
 {
     "uuid": "4f2a4306-1c17-4f84-b6c5-438d2eb3d2d3",
     "name": "@",
-    "dns": "/v2/dns/620d7c0f-0abc-49fc-acff-81924ec3ff73",
+    "dns": "/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6",
     "priority": 10,
     "content": "mx.example.com",
     "ttl": 86400
@@ -426,7 +404,7 @@ GET /v2/dns/<dns-uuid>/<record-type>/<record-uuid>
 {
     "uuid": "732d2f59-b5a3-429a-8013-5340dcebcbb6",
     "name": "@",
-    "dns": "/v2/dns/620d7c0f-0abc-49fc-acff-81924ec3ff73",
+    "dns": "/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6",
     "content": "example.com",
     "ttl": 86400,
 }
@@ -440,7 +418,7 @@ GET /v2/dns/<dns-uuid>/<record-type>/<record-uuid>
 {
     "uuid": "dccc755c-6f88-4e9c-9823-8589fa5c6d4e",
     "name": "@",
-    "dns": "/v2/dns/620d7c0f-0abc-49fc-acff-81924ec3ff73",
+    "dns": "/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6",
     "content": "ns2.mcs.mail.ru",
     "ttl": 86400
 }
@@ -454,7 +432,7 @@ GET /v2/dns/<dns-uuid>/<record-type>/<record-uuid>
 {
     "uuid": "545d152d-3cd1-4eba-946f-6931e8dd5874",
     "name": "_sip._udp",
-    "dns": "/v2/dns/620d7c0f-0abc-49fc-acff-81924ec3ff73",
+    "dns": "/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6",
     "priority": 10,
     "weight": 5,
     "port": 5060,
@@ -471,7 +449,7 @@ GET /v2/dns/<dns-uuid>/<record-type>/<record-uuid>
 {
     "uuid": "39186a66-e165-4069-8ab7-0934d1d69634",
     "name": "@",
-    "dns": "/v2/dns/620d7c0f-0abc-49fc-acff-81924ec3ff73",
+    "dns": "/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6",
     "content": "Text example",
     "ttl": 86400
 }
