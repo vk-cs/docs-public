@@ -1,0 +1,23 @@
+{
+    "meta": "Voice",
+    "path": "/services/machinelearning/voice",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                {
+                    "link": "docs/ml/cloud-voice"
+                },
+                {
+                    "link": "docs/ml/cloud-voice/speech-recognition"
+                },
+                {
+                    "link": "docs/ml/cloud-voice/text-to-speech"
+                },
+                {
+                    "link": "docs/ml/cloud-voice/pricing"
+                }
+            ]
+        }
+    ]
+}
