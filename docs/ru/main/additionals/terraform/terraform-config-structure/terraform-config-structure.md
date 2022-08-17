@@ -10,7 +10,7 @@
 Синтаксис языка Terraform состоит из нескольких базовых элементов:
 
 ```bash
-resource "mcs_kubernetes_cluster" "mycluster" {
+resource "vkcs_kubernetes_cluster" "mycluster" {
       name = "terracluster"
 }
 
