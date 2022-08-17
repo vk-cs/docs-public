@@ -1,0 +1,23 @@
+{
+    "meta": "Vision",
+    "path": "/services/machinelearning/vision",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                {
+                    "link": "docs/ru/ml/vision"
+                },
+                {
+                    "link": "docs/ru/ml/vision/vision-start"
+                },
+                {
+                    "link": "docs/ml/vision/vision-start/vision-rates"
+                },
+                {
+                    "link": "docs/ru/ml/vision/manage-vision"
+                }
+            ]
+        }
+    ]
+}
