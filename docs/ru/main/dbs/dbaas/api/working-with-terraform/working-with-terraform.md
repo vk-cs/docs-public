@@ -45,10 +45,12 @@ variable "public-key-file" {
   type    = string
   default = "~/.ssh/id_rsa.pub"
 }
+
 variable "db-instance-flavor" {
   type    = string
   default = "Basic-1-2-20"
 }
+
 data "vkcs_compute_flavor" "db" {
   name = var.db-instance-flavor
 }
@@ -65,7 +67,7 @@ resource "vkcs_networking_network" "db" {
 
 resource "vkcs_networking_subnet" "db-subnetwork" {
   name            = "db-subnet"
-  network_id      = vkcs_networking_network.mynet.id
+  network_id      = vkcs_networking_network.db.id
   cidr            = "10.100.0.0/16"
   ip_version      = 4
   dns_nameservers = ["8.8.8.8", "8.8.4.4"]
@@ -91,10 +93,10 @@ resource "vkcs_db_instance" "db-instance" {
 
   datastore {
     type    = "mysql"
-    version = "5.7"
+    version = "8.0"
   }
-  keypair     = vkcs_compute_keypair.mykeypair.id
-  flavor_id   = data.vkcs_compute_flavor.db_flavor.id
+  keypair     = vkcs_compute_keypair.keypair.id
+  flavor_id   = data.vkcs_compute_flavor.db.id
   size        = 8
   volume_type = "ceph-ssd"
   disk_autoexpand {
@@ -103,7 +105,7 @@ resource "vkcs_db_instance" "db-instance" {
   }
 
   network {
-    uuid = vkcs_networking_network.mynet.id
+    uuid = vkcs_networking_network.db.id
   }
 
   capabilities {
