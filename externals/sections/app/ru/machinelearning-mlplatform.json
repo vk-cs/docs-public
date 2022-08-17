@@ -1,0 +1,23 @@
+{
+    "meta": "ML Platform",
+    "path": "/services/machinelearning/mlplatform",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                {
+                    "link": "docs/ru/ml/mlplatform/start"
+                },
+                {
+                    "link": "docs/ru/ml/mlplatform/manage"
+                },
+                {
+                    "link": "docs/ru/ml/mlplatform/scenarios"
+                },
+                {
+                    "link": "docs/ru/ml/mlplatform/concepts"
+                }
+            ]
+        }
+    ]
+}
