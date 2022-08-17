@@ -1,3 +1,5 @@
+Вы можете узнать об установке и настройке провайдера Terraform в [разделе Terraform](../../../../additionals/terraform/).
+<!--
 ## Установка terraform
 
 Скачайте terraform по ссылке [https://www.terraform.io/downloads.html](https://www.terraform.io/downloads.html) и воспользуйтесь инструкцией [https://learn.hashicorp.com/terraform/getting-started/install.html](https://learn.hashicorp.com/terraform/getting-started/install.html) по его установке.
@@ -12,15 +14,19 @@
 - Перейдите в директорию "mcs_provider" и создайте в ней файл "main.tf". Для использования переменных при создании ресурсов также создайте файл "vars.tf".
 - Для инициализации openstack провайдера используйте "openrc" файл - скачать его можно по ссылке [https://mcs.mail.ru/app/project/keys/](https://mcs.mail.ru/app/project/keys/).
 
-![](./assets/1601594594299-1601594594299.png)Затем выполните:
+Затем выполните:
 
 ```
 source %your_openrc_name%.sh
 ```
 
+<warn>
+
 **Внимание**
 
 Для корректной работы обоих провайдеров убедитесь, что в переменных окружения не установлена переменная "OS_USER_DOMAIN_ID". Вы также можете убрать ее, выполнив команду "unset OS_USER_DOMAIN_ID".
+
+</warn>
 
 Также openstack провайдер может быть сконфигрурирован в файле "main.tf" (для подробного ознакомления воспользуйтесь документацией по ссылке [https://www.terraform.io/docs/providers/openstack/index.html](https://www.terraform.io/docs/providers/openstack/index.html)):
 
@@ -78,10 +84,13 @@ resource "mcs_kubernetes_node_group" "myng" {
   node_count = 1
 }
 ```
+<warn>
 
 **Внимание**
 
 Для удобства заполнения некоторых "id" можно использовать "data sources", они начинаются с метки "data" и читают уже существующие ресурсы.
+
+</warn>
 
 Для создания или использования keypair (ключевой пары):
 
