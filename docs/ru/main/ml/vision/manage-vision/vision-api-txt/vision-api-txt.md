@@ -17,7 +17,6 @@ ENDPOINT: /api/v1/text/recognize
 
 | **Провайдер** | **Значение oauth_provider** | **Получение токена**                                                                                     | **Проекты**               |
 | ------------- | --------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------- |
-| Mail.Ru       | mr                          | [https://help.mail.ru/biz/vision/api/v1/oauth_token](https://help.mail.ru/biz/vision/api/v1/oauth_token) | только внутренние проекты |
 | VK Cloud           | mcs                         | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token)   | все клиенты VK Cloud           |
 
 Параметры запроса передаются в формате `JSON` в теле запроса с `name="meta":`
@@ -25,11 +24,12 @@ ENDPOINT: /api/v1/text/recognize
 | **Параметр** | **Тип**        | **Значение**                                                 |
 | ------------ | -------------- | ------------------------------------------------------------ |
 | images       | `[]image_meta` | метаданные передаваемых изображений **(required non-empty)** |
+| mode         | `string`       | параметр-флаг: выдавать ли детализированный ответ, если "detailed", то детализированный (к ответу добавляются координаты bounding box текста и confidence), **(optional)** |
 
 image_meta
 
-| **Параметр** | **Тип** | **Значение**                                                                      |
-| ------------ | ------- | --------------------------------------------------------------------------------- |
+| **Параметр** | **Тип** | **Значение** |
+| ------------ | ------- | -------------|
 | name         | string  | имена файлов для сопоставления файлов в запросе и ответе **(required non-empty)** |
 
 Изображения передаются в теле запроса, значения поля `name` должны соответствовать переданным в `images.`
@@ -38,14 +38,38 @@ image_meta
 
 Пример запроса:
 
-<table border="1" cellpadding="0" cellspacing="0" style="color: rgb(0, 0, 0);border: none;"><tbody><tr><td style="border: 1pt solid windowtext;padding: 3.75pt;"><p style="margin-right: 0cm;margin-left: 0cm;font-size:16px;font-family: &quot;Times New Roman&quot;, serif;"><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">POST /api/v1/text/recognize?oauth_provider=mr&amp;oauth_token=123</span></code> <code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">HTTP/1.1</span></code><br><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">&nbsp;</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">------WebKitFormBoundaryfCqTBHeLZlsicvMp</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">Content-Disposition: form-data; name="file_0"; filename=""</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">Content-Type: image/jpeg</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">&nbsp;</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">000000000000000000000000000</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">000000000000000000000000000</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">000000000000000000000000000</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">------WebKitFormBoundaryfCqTBHeLZlsicvMp</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">Content-Disposition: form-data; name="file_1"; filename=""</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">Content-Type: image/jpeg</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">&nbsp;</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">111111111111111111111111111</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">111111111111111111111111111</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">111111111111111111111111111</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">------WebKitFormBoundaryfCqTBHeLZlsicvMp</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">Content-Disposition: form-data; name="meta"</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">&nbsp;</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">{"images":[{"name":"file_0"},{"name":"file_1"}]}</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">------WebKitFormBoundaryfCqTBHeLZlsicvMp--</span></code></p></td></tr></tbody></table>
+```
+POST /api/v1/text/recognize?oauth_provider=mcs&oauth_token=123 HTTP/1.1
+
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp
+ 
+------WebKitFormBoundaryfCqTBHeLZlsicvMp
+Content-Disposition: form-data; name="file_0"; filename=""
+Content-Type: image/jpeg
+ 
+000000000000000000000000000
+000000000000000000000000000
+000000000000000000000000000
+------WebKitFormBoundaryfCqTBHeLZlsicvMp
+Content-Disposition: form-data; name="file_1"; filename=""
+Content-Type: image/jpeg
+ 
+111111111111111111111111111
+111111111111111111111111111
+111111111111111111111111111
+------WebKitFormBoundaryfCqTBHeLZlsicvMp
+Content-Disposition: form-data; name="meta"
+ 
+{"images":[{"name":"file_0"},{"name":"file_1"}]}
+------WebKitFormBoundaryfCqTBHeLZlsicvMp--
+```
 
 ## Ответ
 
-| **Параметр** | **Тип**  | **Значение**                                              |
-| ------------ | -------- | --------------------------------------------------------- | ----------- |
-| `status`     | `int`    | 200 в случае успеха, иначе описание ошибки будет в `body` |
-| `body`       | `string` | response                                                  | тело ответа |
+| **Параметр** | **Тип**    | **Значение**                                              |
+| ------------ | --------   | --------------------------------------------------------- |
+| `status`     | `int`      | 200 в случае успешного взаимодействия с серверами Vision  |
+| `body`       | `response` | тело ответа                                               |
 
 ### `response`
 
@@ -60,9 +84,10 @@ image_meta
 | `status`     | `enum`   | результат выполнения                                  |
 | `error`      | `string` | текстовое описание ошибки **(optional)**              |
 | `name`       | `string` | имя файла для сопоставления файлов в запросе и ответе |
-| text         | `string` | распознанный текст                                    |
+| `text`       | `string` | распознанный текст                                    |
+| `results`    | `[]line` | если проставлен "mode":"detailed" - массив строк ответов по странице (текст, bounding box, confidence) |
 
-`**status**`
+### `status`
 
 | **Параметр** | **Значение**        |
 | ------------ | ------------------- |
@@ -70,15 +95,67 @@ image_meta
 | 1            | перманентная ошибка |
 | 2            | временная ошибка    |
 
+### `line`
+
+| **Параметр** | **Тип**        | **Значение**             |
+| ------------ | ------------------- | ------------------- |
+| `line_prob`    | `float32`   | уверенность распознавания строки          |
+| `line_coord`   | `[]float32` | координаты строки - x1,y1, x2, y2 - левый верхний и правый нижний точки охватывающего прямоугольника                                           |
+| `words`        | `[]word`    | массив распознанных слов ответов в строке |
+
+### `word`
+
+| **Параметр** | **Тип**        | **Значение**                                        |
+| ------------ | ------------------- | ---------------------------------------------- |
+| `prob`        | `float32`   | уверенность распознавания слова                           |
+| `coord`       | `[]float32` | координаты слова - x1,y1, x2, y2 - левый верхний и правый нижний точки охватывающего прямоугольника                                                          |
+| `text`        | `string`    | массив распознанных слов ответов в строке                 |
+| `lang_prob`   | `float32`   | уверенность распознавания языка                           |
+| `lang`        | `string`    | eng/rus/unknown. unknown когда не содержит букв алфавита  |
+
 Пример ответа:
 
-<table border="1" cellpadding="0" cellspacing="0" style="color: rgb(0, 0, 0);border: none;"><tbody><tr><td style="border: 1pt solid windowtext;padding: 3.75pt;"><pre style="margin: 0cm 0cm 0.0001pt;font-size:13px;font-family: &quot;Courier New&quot;;">{
- &nbsp;&nbsp;&nbsp;&nbsp;"status":200,
- &nbsp;&nbsp;&nbsp;&nbsp;"body":
- &nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </pre><pre style="margin: 0cm 0cm 0.0001pt;font-size:13px;font-family: &quot;Courier New&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"objects":[</pre><pre style="margin: 0cm 0cm 0.0001pt;font-size:13px;font-family: &quot;Courier New&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</pre><pre style="margin: 0cm 0cm 0.0001pt;font-size:13px;font-family: &quot;Courier New&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "status":0,
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "name":"file_0",
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "text":"some text"</pre><pre style="margin: 0cm 0cm 0.0001pt;font-size:13px;font-family: &quot;Courier New&quot;;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</pre><pre style="margin: 0cm 0cm 0.0001pt;font-size:13px;font-family: &quot;Courier New&quot;;">}</pre></td></tr></tbody></table>
+При отсутствии флага  "mode":"detailed":
+```
+{
+    "status":200,
+    "body":
+    {        
+     "objects":[
+     {
+         "status":0,
+         "name":"file_0",
+         "text":"some text"
+     }
+}
+```
+
+При наличии флага  "mode":"detailed":
+```
+{
+    "status":200,
+    "body":
+    {        
+     "objects":[
+     {
+         "status":0,
+         "name":"file_0",
+         "results":[{
+               "words":[{"coord":[201,159,291,204],"prob":0.9952,"text":"you!","lang_prob":0.9998,"lang":"eng"}, ...],
+               "line_prob":0.8123,
+               "line_coord":[18,155,291,201]
+                     }, ...]
+     }
+}
+```
 
 Пример ответа, когда не удалось выполнить запрос:
 
-<table border="1" cellpadding="0" cellspacing="0" style="color: rgb(0, 0, 0);border: none;"><tbody><tr><td style="border: 1pt solid windowtext;padding: 3.75pt;"><p style="margin-right: 0cm;margin-left: 0cm;font-size:16px;font-family: &quot;Times New Roman&quot;, serif;"><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">{</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">&nbsp; &nbsp; "status":500,</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">&nbsp; &nbsp; "body":"Internal Server Error",</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">&nbsp; &nbsp; "htmlencoded":false,</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">&nbsp; &nbsp; "last_modified":0</span></code><br><code style="font-family: &quot;Courier New&quot;;"><span style="font-size:13px;">}</span></code></p></td></tr></tbody></table>
+```
+{
+    "status":500,
+    "body":"Internal Server Error",
+    "htmlencoded":false,
+    "last_modified":0
+}
+```
