@@ -1,12 +1,13 @@
 {
-    "title": "Хранилище состояний",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Хранилище состояний - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Хранилище состояний",
-    "markdown": ".",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "Хранилище состояний",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Хранилище состояний - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Хранилище состояний",
+  "markdown": ".",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "3bf5da2c-2108-406c-b286-751df9285851"
+}

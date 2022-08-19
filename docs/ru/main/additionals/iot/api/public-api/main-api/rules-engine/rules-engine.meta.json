@@ -1,12 +1,13 @@
 {
-    "title": "Движок правил",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Движок правил - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Движок правил",
-    "markdown": ".",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "Движок правил",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Движок правил - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Движок правил",
+  "markdown": ".",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "e7693df6-a052-433c-8dbc-4522e0896308"
+}

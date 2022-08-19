@@ -1,12 +1,13 @@
 {
-    "title": "HTTP API",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "HTTP API - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "HTTP API",
-    "markdown": ".",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
-  }
+  "title": "HTTP API",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "HTTP API - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "HTTP API",
+  "markdown": ".",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "2e3e7de3-f7e9-4b84-acdb-353d8524e40b"
+}
