@@ -1,0 +1,539 @@
+{
+  "schemes": [
+    "http"
+  ],
+  "swagger": "2.0",
+  "info": {
+    "description": "HTTP API for Dispatcher (Lambda)",
+    "title": "COIIOT Dispatcher API",
+    "version": "1.0.0"
+  },
+  "host": "localhost",
+  "basePath": "/api/v1",
+  "paths": {
+    "/clients/{client_id}/rules/types/{type_id}/execute/code": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "rules"
+        ],
+        "summary": "Execute code",
+        "operationId": "executeCode",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/executeCodeResponse"
+            }
+          },
+          "400": {
+            "description": "Bad params supplied",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          }
+        }
+      },
+      "parameters": [
+        {
+          "type": "integer",
+          "description": "Client ID",
+          "name": "client_id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "type": "integer",
+          "description": "Type ID",
+          "name": "type_id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "description": "Params object.",
+          "name": "body",
+          "in": "body",
+          "required": true,
+          "schema": {
+            "$ref": "#/definitions/executeCodeRequest"
+          }
+        }
+      ]
+    },
+    "/clients/{client_id}/rules/types/{type_id}/templates/default/setup": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "templates"
+        ],
+        "summary": "Get setup template",
+        "operationId": "getSetUpTemplate",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/templateResponse"
+            }
+          },
+          "400": {
+            "description": "Bad params supplied",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          }
+        }
+      },
+      "parameters": [
+        {
+          "type": "integer",
+          "description": "Client ID",
+          "name": "client_id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "type": "integer",
+          "description": "Type ID",
+          "name": "type_id",
+          "in": "path",
+          "required": true
+        }
+      ]
+    },
+    "/clients/{client_id}/rules/types/{type_id}/templates/default/tear_down": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "templates"
+        ],
+        "summary": "Get tear down template",
+        "operationId": "getTearDownTemplate",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/templateResponse"
+            }
+          },
+          "400": {
+            "description": "Bad params supplied",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          }
+        }
+      },
+      "parameters": [
+        {
+          "type": "integer",
+          "description": "Client ID",
+          "name": "client_id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "type": "integer",
+          "description": "Type ID",
+          "name": "type_id",
+          "in": "path",
+          "required": true
+        }
+      ]
+    },
+    "/clients/{client_id}/rules/types/{type_id}/validate/code": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "rules"
+        ],
+        "summary": "Validate code",
+        "operationId": "validateCode",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/validateCodeResponse"
+            }
+          },
+          "400": {
+            "description": "Bad params supplied",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          }
+        }
+      },
+      "parameters": [
+        {
+          "type": "integer",
+          "description": "Client ID",
+          "name": "client_id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "type": "integer",
+          "description": "Type ID",
+          "name": "type_id",
+          "in": "path",
+          "required": true
+        },
+        {
+          "description": "Params object.",
+          "name": "body",
+          "in": "body",
+          "required": true,
+          "schema": {
+            "$ref": "#/definitions/validateCodeRequest"
+          }
+        }
+      ]
+    },
+    "/sdk/{version}": {
+      "get": {
+        "produces": [
+          "application/octet-stream"
+        ],
+        "tags": [
+          "sdk"
+        ],
+        "summary": "Download SDK",
+        "operationId": "downloadSDK",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          },
+          "400": {
+            "description": "Bad params supplied",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          }
+        }
+      },
+      "parameters": [
+        {
+          "pattern": "^\\d+\\.\\d+\\.\\d+$|^latest$",
+          "type": "string",
+          "description": "SDK version",
+          "name": "version",
+          "in": "path",
+          "required": true
+        }
+      ]
+    },
+    "/swagger.json": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "swagger"
+        ],
+        "summary": "Get swagger json",
+        "operationId": "getSwaggerJSON",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal server error",
+            "schema": {
+              "$ref": "#/definitions/errorResponse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "codeError": {
+      "type": "object",
+      "required": [
+        "type",
+        "description"
+      ],
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "traceback": {
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/definitions/errorType"
+        },
+        "where": {
+          "$ref": "#/definitions/partOfScript"
+        }
+      }
+    },
+    "errorResponse": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "example": 300
+        },
+        "message": {
+          "type": "string",
+          "example": "Something bad happened"
+        }
+      }
+    },
+    "errorType": {
+      "type": "string",
+      "enum": [
+        "syntax_error",
+        "runtime_error",
+        "timeout_error"
+      ]
+    },
+    "executeCodeRequest": {
+      "type": "object",
+      "required": [
+        "setup",
+        "code",
+        "tear_down"
+      ],
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "setup": {
+          "type": "string"
+        },
+        "tear_down": {
+          "type": "string"
+        }
+      }
+    },
+    "executeCodeResponse": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "error": {
+          "$ref": "#/definitions/codeError"
+        },
+        "logs": {
+          "$ref": "#/definitions/logs"
+        },
+        "status": {
+          "$ref": "#/definitions/resultStatus"
+        }
+      }
+    },
+    "logs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/logsRecord"
+      }
+    },
+    "logsRecord": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "partOfScript": {
+      "type": "string",
+      "enum": [
+        "setup",
+        "rule",
+        "tear_down"
+      ]
+    },
+    "resultStatus": {
+      "type": "string",
+      "enum": [
+        "ok",
+        "error"
+      ]
+    },
+    "templateResponse": {
+      "type": "object",
+      "required": [
+        "code"
+      ],
+      "properties": {
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "validateCodeRequest": {
+      "type": "object",
+      "required": [
+        "code"
+      ],
+      "properties": {
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "validateCodeResponse": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "error": {
+          "$ref": "#/definitions/codeError"
+        },
+        "status": {
+          "$ref": "#/definitions/resultStatus"
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "swagger"
+    },
+    {
+      "name": "rules"
+    },
+    {
+      "name": "templates"
+    },
+    {
+      "name": "sdk"
+    }
+  ]
+}
