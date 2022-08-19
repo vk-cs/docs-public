@@ -1,12 +1,13 @@
 {
-    "title": "Менеджер задач",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Менеджер задач - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Менеджер задач",
-    "markdown": ".",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "Менеджер задач",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Менеджер задач - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Менеджер задач",
+  "markdown": ".",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "8ac9438e-3ffc-4e2f-99cb-99db161d19df"
+}

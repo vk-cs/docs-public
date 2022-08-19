@@ -1,12 +1,13 @@
 {
-    "title": "Оперативное хранилище",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Оперативное хранилище - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Оперативное хранилище",
-    "markdown": ".",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "Оперативное хранилище",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Оперативное хранилище - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Оперативное хранилище",
+  "markdown": ".",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "d8c680ef-896d-4e65-b09f-eba38609288d"
+}

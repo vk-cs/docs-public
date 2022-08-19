@@ -1,12 +1,13 @@
 {
-    "title": "Основное API",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Основное API - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": " Основное API",
-    "markdown": ".",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
-  }
+  "title": "Основное API",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Основное API - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": " Основное API",
+  "markdown": ".",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "86545ab6-8c07-448c-a1db-678dca83e95c"
+}

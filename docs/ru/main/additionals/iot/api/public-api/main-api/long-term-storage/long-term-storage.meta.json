@@ -1,12 +1,13 @@
 {
-    "title": "Долговременное хранилище",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Долговременное хранилище - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Долговременное хранилище",
-    "markdown": ".",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "Долговременное хранилище",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Долговременное хранилище - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Долговременное хранилище",
+  "markdown": ".",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "aae7aa53-2eeb-447d-abf5-357930f62f8b"
+}
