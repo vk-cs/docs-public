@@ -1,6 +1,6 @@
 {
     "meta": "ML Platform",
-    "path": "/services/machinelearning/mlplatform",
+    "path": "/services/mlplatform",
     "groups": [
         {
             "title": "ИНФОРМАЦИЯ",
