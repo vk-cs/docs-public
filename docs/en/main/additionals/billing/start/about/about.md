@@ -10,23 +10,18 @@ You can view the cost details and set a monthly spending limit for each of your 
 
 Funds are debited every minute from working entities (virtual machines, clusters). If the entity data is determined that write-offs continue only for the use of licenses (Windows and RDS, if activated) and leased disk space, as well as for storing existing backups.
 
-## Disabling services
+## Disable services and delete project data
 
-When there is a zero balance on the account, the project resources will be automatically stopped until the project balance is replenished.
+If the project balance becomes negative, then its resources will be automatically stopped and placed in the deletion queue. The deletion queue is a mechanism for cleaning resources, in which data from the project and the VK Cloud platform are permanently deleted, without the possibility of recovery.
 
-After replenishing the balance, the billing tools allow you to use the services again, but you will need to manually launch each resource.
+If there was no payment for the entire period of the project's existence, then after 3 days all resources will be deleted. If there was a payment, then the resources will be queued for deletion 30 days after the services stop.
+
+After replenishing the balance, you will be able to use the services again, however, you will need to manually start each resource.
 
 <info>
 
-The activation of the project after the restoration of a positive balance is carried out by the billing system and can take up to 4 hours.
+**Note**
+
+Project activation is automatic and can take up to 4 hours.
 
 </info>
-
-## Deleting project data
-
-In the absence of restoring a positive balance, the project resources will be placed in a queue for deletion, depending on the availability of payments for the entire period of the project's existence.:
-
-- If there was no money in the project, then after 3 days all resources will be deleted.
-- If the payment was made, the resources will be placed in the queue for deletion after 30 days (or when the balance is equal to -1000r.) after the services are stopped.
-
-The deletion queue is a mechanism for cleaning resources, in which data from the project and the VK Cloud platform are permanently deleted, without any possibility of their recovery.
