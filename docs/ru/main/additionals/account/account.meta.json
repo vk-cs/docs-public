@@ -7,7 +7,7 @@
   "sectionTitle": "Личный кабинет",
   "markdown": "Личный кабинет содержит инструменты управления пользовательской инфраструктурой VK Cloud.",
   "icon": "",
-  "weight": 17,
+  "weight": 3,
   "infobarItems": null,
   "uuid": "1ea92b5f-1ea5-43e9-b1c5-9eddb24081d4"
 }
