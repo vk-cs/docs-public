@@ -12,7 +12,7 @@
 - record-type — тип записи: A, AAAA, CNAME, и т.д;
 - a-uuid — уникальный идентификатор А записи для DNS.
 
-## Create DNS Record
+## Create DNS zone
 
 ### Request
 
@@ -70,7 +70,7 @@ POST /v2/dns/
 }
 ```
 
-## Get DNS record
+## Get DNS zone
 
 ### Request
 
@@ -104,7 +104,7 @@ GET /v2/dns/<dns-uuid>
 }
 ```
 
-## List DNS records
+## List DNS zones
 
 ### Request
 
@@ -138,7 +138,7 @@ GET /v2/dns/
 ]
 ```
 
-## Update DNS record
+## Update DNS zone
 
 ### Request
 
@@ -184,7 +184,7 @@ PUT /v2/dns/<dns-uuid>
 }
 ```
 
-## Delete DNS record
+## Delete DNS zone
 
 ### Request
 
@@ -199,7 +199,7 @@ DELETE /v2/dns/<dns-uuid>
 - 204 - Удалено.
 - 404 - DNS запись не найдена.
 
-## Create A record for existing DNS
+## Create A record for existing DNS zone
 
 ### Request
 
@@ -247,7 +247,7 @@ POST /v2/dns/<dns-uuid>/a/
 }
 ```
 
-## Get A record for existing DNS
+## Get A record for existing DNS zone
 
 ### Request
 
@@ -274,7 +274,7 @@ GET /v2/dns/<dns-uuid>/a/<a-uuid>
 }
 ```
 
-## List A records for existing DNS
+## List A records for existing DNS zone
 
 ### Request
 
@@ -302,7 +302,7 @@ GET /v2/dns/<dns-uuid>/a/
 ]
 ```
 
-## Update A record for existing DNS
+## Update A record for existing DNS zone
 
 ### Request
 
@@ -341,7 +341,7 @@ PUT /v2/dns/<dns-uuid>/a/<a-uuid>
 }
 ```
 
-## Delete A record for existing DNS
+## Delete A record for existing DNS zone
 
 ### Request
 
