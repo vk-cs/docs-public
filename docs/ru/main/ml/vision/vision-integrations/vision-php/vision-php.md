@@ -1,20 +1,25 @@
 Подробный пример смотрите в статье «[Пример интеграции на Python](feedback:11789)». В этой статье мы выполним запросы persons/recognize, persons/set и persons/delete. Для этого потребуется:
 
-<table><tbody><tr><td><pre class="language-shell">sudo apt-get install php5-cli
-sudo apt-get install php5-curl</pre></td></tr></tbody></table>
+```
+sudo apt-get install php5-cli
+sudo apt-get install php5-curl
+```
 
-### Запрос на распознавание
+## Запрос на распознавание
 
 Скачайте файл [smarty.php](https://cloud.mail.ru/public/HqA7/ck6NPjotF).
 
-<table><tbody><tr><td><pre class="language-shell">php examples/php/smarty.php \
-"https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mr&amp;oauth_token="e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+```php
+php examples/php/smarty.php \
+"https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mr&oauth_token="e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
 examples/friends1.jpg \
-'{"space":"1", "images":[{"name":"examples/friends1.jpg"}]}'</pre></td></tr></tbody></table>
+'{"space":"1", "images":[{"name":"examples/friends1.jpg"}]}'
+```
 
 Ответ:
 
-<table><tbody><tr><td><pre class="language-shell">{
+```json
+{
 "status":200,
 "body":{
 "objects":[{
@@ -33,18 +38,22 @@ examples/friends1.jpg \
 },
 "htmlencoded":false,
 "last_modified":0
-}</pre></td></tr></tbody></table>
+}
+```
 
-### Запрос на добавление в базу данных
+## Запрос на добавление в базу данных
 
-<table><tbody><tr><td><pre class="language-shell">php examples/php/smarty.php \
-"https://smarty.mail.ru/api/v1/persons/set?oauth_provider=mr&amp;oauth_token="e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+```php
+php examples/php/smarty.php \
+"https://smarty.mail.ru/api/v1/persons/set?oauth_provider=mr&oauth_token="e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
 examples/rachel-green.jpg \
-'{"space":"1", "images":[{"name":"examples/rachel-green.jpg", "person_id":1}]}'</pre></td></tr></tbody></table>
+'{"space":"1", "images":[{"name":"examples/rachel-green.jpg", "person_id":1}]}'
+```
 
 Если запрос верный, ответ будет такой:
 
-<table><tbody><tr><td><pre class="language-shell">{
+```json
+{
 "status":200,
 "body":{
 "objects":[
@@ -53,20 +62,25 @@ examples/rachel-green.jpg \
 },
 "htmlencoded":false,
 "last_modified":0
-}</pre></td></tr></tbody></table>
+}
+```
 
-### Запрос на удаление из базы данных
+## Запрос на удаление из базы данных
 
 Для этого запроса файл не требуется, поэтому передаем пустую строку вместо пути:
 
-<table><tbody><tr><td><pre class="language-shell">php examples/php/smarty.php \
-"https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&amp;oauth_token="e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+```php
+php examples/php/smarty.php \
+"https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token="e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
 "" \
-'{"space":"1", "images":[{"name":"examples/rachel-green.jpg", "person_id":1}]}'</pre></td></tr></tbody></table>
+'{"space":"1", "images":[{"name":"examples/rachel-green.jpg", "person_id":1}]}'
+```
 
 Если запрос верный, ответ будет такой:
 
-<table><tbody><tr><td><pre class="language-shell">{
+```json
+
+{
 "status":200,
 "body":
 {
@@ -74,4 +88,5 @@ examples/rachel-green.jpg \
 },
 "htmlencoded":false,
 "last_modified":0
-}</pre></td></tr></tbody></table>
+}
+```

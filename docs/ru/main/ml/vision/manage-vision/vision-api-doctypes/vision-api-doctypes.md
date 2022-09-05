@@ -1,65 +1,204 @@
+Данный метод позволяет определить является ли фотография документом и возможный тип документа.
+
 HOST: https://smarty.mail.ru
 
 ENDPOINT: /api/v1/docs/detect
 
-Данный метод позволяет определить является ли фотография документом и возможный тип документа.
-
-## Запрос
+<tabs>
+<tablist>
+<tab>Запрос</tab>
+<tab>Ответ</tab>
+</tablist>
+<tabpanel>
 
 Авторизационные данные передаются в строке запроса:
 
-<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Тип</strong></td><td><strong>Значение</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">oauth_token</span></td><td><span style="font-family: 'courier new', courier;">string</span></td><td>OAuth2 access token <strong>(required non-empty)</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">oauth_provider</span></td><td><span style="font-family: 'courier new', courier;">string</span></td><td>провайдер OAuth2<strong>&nbsp;(required non-empty)</strong></td></tr></tbody></table>
+| Параметр       | Тип    | Значение                                 |
+|----------------|--------|------------------------------------------|
+| oauth_token    | string | OAuth2 access token (required non-empty) |
+| oauth_provider | string | Провайдер OAuth2 (required non-empty)    |
 
 Поддерживаемые провайдеры OAuth2:
 
-<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Провайдер</strong></td><td><strong>Значение oauth_provider</strong></td><td><strong>Получение токена</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">Mail.Ru</span></td><td><span style="font-family: 'courier new', courier;">mcs</span></td><td><p>Смотрите <a href="https://mcs.mail.ru/help/vision-api/oauth_token" title="">в статье</a></p></td></tr></tbody></table>
+| Провайдер | Значение oauth_provider | Получение токена  |
+|-----------|-------------------------|-------------------|
+| Mail.Ru   | mcs                     | Смотрите в [статье](https://mcs.mail.ru/help/vision-api/oauth_token) |
 
 Параметры запроса передаются в формате JSON в теле запроса с name="meta":
 
-<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Тип</strong></td><td><strong>Значение</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">images</span></td><td><span style="font-family: 'courier new', courier;">[]image_meta</span></td><td>метаданные передаваемых изображений<strong><span>&nbsp;</span><strong>(required non-empty)</strong><br></strong></td></tr></tbody></table>
+| Параметр | Тип          | Значение                                                 |
+|----------|--------------|----------------------------------------------------------|
+| images   | []image_meta | Метаданные передаваемых изображений (required non-empty) |
 
-image_meta
+### image_meta
 
-<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Тип</strong></td><td><strong>Значение</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">name<br></span></td><td><span style="font-family: 'courier new', courier;">string</span></td><td><span>имена файлов для сопоставления файлов в запросе и ответе</span><strong>&nbsp;(required non-empty)</strong></td></tr></tbody></table>
+| Параметр | Тип    | Значение                                            |
+|----------|--------|-----------------------------------------------------|
+| name     | string | Имена файлов для сопоставления файлов в запросе и ответе (required non-empty) |
 
 Изображения передаются в теле запроса, значения поля name должны соответствовать переданным в images. Максимальное количество изображений в одном запросе равняется 100. Максимальный размер каждого изображения не должен превышать 4 МБ.
 
-Пример запроса:
+<details>
+  <summary markdown="span">Пример запроса</summary>
+  
+```
+POST /api/v1/docs/detect?oauth_provider=mr&oauth_token=123 HTTP/1.1
 
-<table border="0"><tbody><tr><td style="background-color: rgb(239, 239, 239);"><p><span style="font-family: 'courier new', courier;">POST /api/v1/docs/detect?oauth_provider=mr&amp;oauth_token=123 HTTP/1.1</span></p><p><br><span style="font-family: 'courier new', courier;">Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp</span><br><br><span style="font-family: 'courier new', courier;">------WebKitFormBoundaryfCqTBHeLZlsicvMp</span><br><span style="font-family: 'courier new', courier;">Content-Disposition: form-data; name="file_0"; filename=""</span><br><span style="font-family: 'courier new', courier;">Content-Type: image/jpeg</span><br><br><span style="font-family: 'courier new', courier;">000000000000000000000000000</span><br><span style="font-family: 'courier new', courier;">000000000000000000000000000</span><br><span style="font-family: 'courier new', courier;">000000000000000000000000000</span><br><span style="font-family: 'courier new', courier;">------WebKitFormBoundaryfCqTBHeLZlsicvMp</span><br><span style="font-family: 'courier new', courier;">Content-Disposition: form-data; name="file_1"; filename=""</span><br><span style="font-family: 'courier new', courier;">Content-Type: image/jpeg</span><br><br><span style="font-family: 'courier new', courier;">111111111111111111111111111</span><br><span style="font-family: 'courier new', courier;">111111111111111111111111111</span><br><span style="font-family: 'courier new', courier;">111111111111111111111111111</span><br><span style="font-family: 'courier new', courier;">------WebKitFormBoundaryfCqTBHeLZlsicvMp</span><br><span style="font-family: 'courier new', courier;">Content-Disposition: form-data; name="meta"</span><br><br><span style="font-family: 'courier new', courier;">{"images":[{"name":"file_0"},{"name":"file_1"}]}</span><br><span style="font-family: 'courier new', courier;">------WebKitFormBoundaryfCqTBHeLZlsicvMp--</span></p></td></tr></tbody></table>
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp
 
-## Ответ
+------WebKitFormBoundaryfCqTBHeLZlsicvMp
+Content-Disposition: form-data; name="file_0"; filename=""
+Content-Type: image/jpeg
 
-<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Тип</strong></td><td><strong>Значение</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">status</span></td><td><span style="font-family: 'courier new', courier;">int</span></td><td>200 в случае успешного взаимодействия с серверами Vision</td></tr><tr><td><span style="font-family: 'courier new', courier;">body</span></td><td><span style="font-family: 'courier new', courier;">response&nbsp;</span></td><td>тело ответа</td></tr></tbody></table>
+000000000000000000000000000
+000000000000000000000000000
+000000000000000000000000000
+------WebKitFormBoundaryfCqTBHeLZlsicvMp
+Content-Disposition: form-data; name="file_1"; filename=""
+Content-Type: image/jpeg
+
+111111111111111111111111111
+111111111111111111111111111
+111111111111111111111111111
+------WebKitFormBoundaryfCqTBHeLZlsicvMp
+Content-Disposition: form-data; name="meta"
+
+{"images":[{"name":"file_0"},{"name":"file_1"}]}
+------WebKitFormBoundaryfCqTBHeLZlsicvMp--
+```
+</details>
+
+</tabpanel>
+<tabpanel>
+
+| Параметр | Тип      | Значение                                                 |
+|----------|----------|----------------------------------------------------------|
+| status   | int      | 200 в случае успешного взаимодействия с серверами Vision |
+| body     | string   | Тело ответа                                              |
 
 #### response
 
-<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Тип</strong></td><td><strong>Значение</strong></td></tr><tr><td>status</td><td><span style="font-family: 'courier new', courier;">enum</span></td><td>результат выполнения)&nbsp;</td></tr><tr><td><span style="font-family: 'courier new', courier;">error</span></td><td valign="middle"><span style="font-family: 'courier new', courier;">string</span></td><td>текстовое описание ошибки<strong>&nbsp;(optional)</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">name</span></td><td valign="middle"><span style="font-family: 'courier new', courier;">string</span></td><td>имя файла для сопоставления файлов в запросе и ответе</td></tr><tr><td><span style="font-family: 'courier new', courier;">pages</span></td><td valign="middle"><p><span style="font-family: 'courier new', courier;">[]page</span></p></td><td>список объектов (меток), найденных на изображении</td></tr></tbody></table>
+| Параметр | Тип    | Значение                                              |
+|----------|--------|-------------------------------------------------------|
+| status   | enum   | Результат выполнения)                                 |
+| error    | string | Текстовое описание ошибки (optional)                  |
+| name     | string | Имя файла для сопоставления файлов в запросе и ответе |
+| pages    | []page | Список объектов (меток), найденных на изображении     |
 
 #### status
 
-<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Значение</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">0</span></td><td>успешно</td></tr><tr><td><span style="font-family: 'courier new', courier;">1</span></td><td>массив найденных типов документов на странице</td></tr><tr><td><span style="font-family: 'courier new', courier;">2</span></td><td>номер страницы</td></tr></tbody></table>
+| Параметр | Значение                                      |
+| -------- | --------------------------------------------- |
+| 0        | Успешно                                       |
+| 1        | Массив найденных типов документов на странице |
+| 2        | Номер страницы                                |
 
 #### page
 
-<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Тип</strong></td><td><strong>Значение</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">index</span></td><td><span style="font-family: 'courier new', courier;"><span>int</span></span></td><td>номер страницы</td></tr><tr><td><span style="font-family: 'courier new', courier;">docs</span></td><td><span style="font-family: 'courier new', courier;">[]doc<span>&nbsp;</span></span></td><td>массив найденных типов документов на странице</td></tr></tbody></table>
+| Параметр | Тип   | Значение                                      |
+|----------|-------|-----------------------------------------------|
+| index    | int   | Номер страницы                                |
+| docs     | []doc | Массив найденных типов документов на странице |
 
 #### doc
 
-<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Параметр</strong></td><td><strong>Значение</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">eng</span></td><td>тип (название) документа на английском</td></tr><tr><td><span style="font-family: 'courier new', courier;">rus</span></td><td>тип (название) документа на русском</td></tr><tr><td><span style="font-family: 'courier new', courier;">prob</span></td><td>степень уверенности в том, что на изображении именно этот тип документа</td></tr></tbody></table>
+| Параметр | Значение                                                                |
+|----------|-------------------------------------------------------------------------|
+| eng      | Тип (название) документа на английском                                  |
+| rus      | Тип (название) документа на русском                                     |
+| prob     | Степень уверенности в том, что на изображении именно этот тип документа |
 
 Для каждого объекта (картинки) может быть несколько типов, с различной степенью уверенности. Метка «Документ» определяет является ли изображение документом и с какой вероятностью. На данный момент поддерживаются следующие типы документов:
 
-<table border="0"><tbody><tr style="background-color: #f0f0f0;"><td><strong>Eng метка</strong></td><td><strong>Rus метка</strong></td></tr><tr><td><span style="font-family: 'courier new', courier;">Akt&nbsp;</span></td><td><span style="font-family: 'courier new', courier;">Акт</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Akt_sverky</span></td><td><span style="font-family: 'courier new', courier;">Акт сверки</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Diplom</span></td><td><span style="font-family: 'courier new', courier;">Диплом</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Doc</span></td><td><span style="font-family: 'courier new', courier;">Документ</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Dogovor</span></td><td><span style="font-family: 'courier new', courier;">Договор</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Doverennost</span></td><td><span style="font-family: 'courier new', courier;">Доверенность</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Inn</span></td><td><span style="font-family: 'courier new', courier;">ИНН</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Logotip</span></td><td><span style="font-family: 'courier new', courier;">Логотип</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Pasport</span></td><td><span style="font-family: 'courier new', courier;">Паспорт</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Prais_list</span></td><td><span style="font-family: 'courier new', courier;">Прайс-лист</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Prikaz</span></td><td><span style="font-family: 'courier new', courier;">Приказ</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Protocol</span></td><td><span style="font-family: 'courier new', courier;">Протокол</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Pts</span></td><td><span style="font-family: 'courier new', courier;">ПТС</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Registraciya_ts</span></td><td><span style="font-family: 'courier new', courier;">Регистрация ТС</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Rekvizity</span></td><td><span style="font-family: 'courier new', courier;">Реквизиты</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Rezyume</span></td><td><span style="font-family: 'courier new', courier;">Резюме</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Schet</span></td><td><span style="font-family: 'courier new', courier;">Счет</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Sertifikat</span></td><td><span style="font-family: 'courier new', courier;">Сертификат</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Snils</span></td><td><span style="font-family: 'courier new', courier;">Снилс</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Spravka</span></td><td><span style="font-family: 'courier new', courier;">Справка</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Svidetelstvo</span></td><td><span style="font-family: 'courier new', courier;">Свидетельство</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Tabel</span></td><td><span style="font-family: 'courier new', courier;">Табель</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Ustav</span></td><td><span style="font-family: 'courier new', courier;">Устав</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Voditelskye_prava</span></td><td><span style="font-family: 'courier new', courier;">Водительские права</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Vypiska</span></td><td><span style="font-family: 'courier new', courier;">Выписка</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Zagranpasport</span></td><td><span style="font-family: 'courier new', courier;">Загранпаспорт</span></td></tr><tr><td><span style="font-family: 'courier new', courier;">Zayavlenie</span></td><td><span style="font-family: 'courier new', courier;">Заявление</span></td></tr></tbody></table>
+| Eng метка         | Rus метка          |
+|-------------------|--------------------|
+| Akt               | Акт                |
+| Akt_sverky        | Акт сверки         |
+| Diplom            | Диплом             |
+| Doc               | Документ           |
+| Dogovor           | Договор            |
+| Doverennost       | Доверенность       |
+| Inn               | ИНН                |
+| Logotip           | Логотип            |
+| Pasport           | Паспорт            |
+| Prais_list        | Прайс-лист         |
+| Prikaz            | Приказ             |
+| Protocol          | Протокол           |
+| Pts               | ПТС                |
+| Registraciya_ts   | Регистрация ТС     |
+| Rekvizity         | Реквизиты          |
+| Rezyume           | Резюме             |
+| Schet             | Счет               |
+| Sertifikat        | Сертификат         |
+| Snils             | Снилс              |
+| Spravka           | Справка            |
+| Svidetelstvo      | Свидетельство      |
+| Tabel             | Табель             |
+| Ustav             | Устав              |
+| Voditelskye_prava | Водительские права |
+| Vypiska           | Выписка            |
+| Zagranpasport     | Загранпаспорт      |
+| Zayavlenie        | Заявление          |
 
-Пример ответа:
+<details>
+  <summary markdown="span">Пример ответа</summary>
 
-<table border="0"><tbody><tr><td style="background-color: rgb(239, 239, 239);"><p><br></p><p><span style="font-family: 'courier new', courier;">{</span></p><p style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">"status":200,</span></p><p style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">"body":</span></p><p style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">{</span></p><p style="padding-left: 60px;"><span style="font-family: 'courier new', courier;">"status":0,</span></p><p style="padding-left: 60px;"><span style="font-family: 'courier new', courier;">"objects":[</span></p><p style="padding-left: 90px;"><span style="font-family: 'courier new', courier;">{</span></p><p style="padding-left: 120px;"><span style="font-family: 'courier new', courier;">"status":0,</span></p><p style="padding-left: 120px;"><span style="font-family: 'courier new', courier;">"name":"file_0",</span></p><p style="padding-left: 120px;"><span style="font-family: 'courier new', courier;">"pages":[</span></p><p style="padding-left: 150px;"><span style="font-family: 'courier new', courier;">{</span></p><p style="padding-left: 180px;"><span style="font-family: 'courier new', courier;">"index":0,</span></p><p style="padding-left: 180px;"><span style="font-family: 'courier new', courier;">"docs":[</span></p><p style="padding-left: 210px;"><span style="font-family: 'courier new', courier;">{</span></p><p style="padding-left: 240px;"><span style="font-family: 'courier new', courier;">"eng":"Pts",</span></p><p style="padding-left: 240px;"><span style="font-family: 'courier new', courier;">"rus":"Птс",</span></p><p style="padding-left: 240px;"><span style="font-family: 'courier new', courier;">"probabilty":0.56</span></p><p style="padding-left: 210px;"><span style="font-family: 'courier new', courier;">},</span></p><p style="padding-left: 210px;"><span style="font-family: 'courier new', courier;">{</span></p><p style="padding-left: 240px;"><span style="font-family: 'courier new', courier;">"eng":"Doc",</span></p><p style="padding-left: 240px;"><span style="font-family: 'courier new', courier;">"rus":"Документ",</span></p><p style="padding-left: 240px;"><span style="font-family: 'courier new', courier;">"probabilty":0.78</span></p><p style="padding-left: 240px;"><span style="font-family: 'courier new', courier;">}]</span></p><p style="padding-left: 180px;"><span style="font-family: 'courier new', courier;">}</span></p><p style="padding-left: 120px;"><span style="font-family: 'courier new', courier;">}]</span></p><p style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">}</span></p><p><span style="font-family: 'courier new', courier;">}</span></p></td></tr></tbody></table>
+```json
+{
+  "status": 200,
+  "body": {
+    "status": 0,
+    "objects": [
+      {
+        "status": 0,
+        "name": "file_0",
+        "pages": [
+          {
+            "index": 0,
+            "docs": [
+              {
+                "eng": "Pts",
+                "rus": "Птс",
+                "probabilty": 0.56
+              },
+              {
+                "eng": "Doc",
+                "rus": "Документ",
+                "probabilty": 0.78
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+```
+</details>
 
-Пример ответа, когда не удалось выполнить запрос:
+<details>
+  <summary markdown="span">Пример ответа, когда не удалось выполнить запрос</summary>
 
-<table border="0"><tbody><tr><td style="background-color: rgb(239, 239, 239);"><p><br></p><p><span style="font-family: 'courier new', courier;">{</span></p><p style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">"status":500,</span></p><p style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">"body":"Internal Server Error",</span></p><p style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">"htmlencoded":false,</span></p><p style="padding-left: 30px;"><span style="font-family: 'courier new', courier;">"last_modified":0</span></p><p><span style="font-family: 'courier new', courier;">}</span></p></td></tr></tbody></table>
+```json
+{
+"status":500,
+"body":"Internal Server Error",
+"htmlencoded":false,
+"last_modified":0
+}
+```
+</details>
 
-Пример Python:
+<details>
+  <summary markdown="span">Пример Python</summary>
 
-<table border="0"><tbody><tr><td style="background-color: rgb(239, 239, 239);"><p><br></p><p><span style="font-family: 'courier new', courier;">python examples/python/smarty.py \</span><br><span style="font-family: 'courier new', courier;">&nbsp;-u "https://smarty.mail.ru/api/v1/docs/detect?oauth_provider=mr&amp;oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \</span><br><span style="font-family: 'courier new', courier;">&nbsp;-p examples/passport.jpg \</span><br><span style="font-family: 'courier new', courier;">&nbsp;-v</span></p></td></tr></tbody></table>
+```python
+python examples/python/smarty.py \
+ -u "https://smarty.mail.ru/api/v1/docs/detect?oauth_provider=mr&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+ -p examples/passport.jpg \
+ -v
+```
+  Это подробный текст.
+</details>
+
+</tabpanel>
+</tabs>

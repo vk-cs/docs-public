@@ -1,7 +1,7 @@
 {
   "title": "Авторизация",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Авторизации клиента на платформе VK Cloud",
   "metaTitle": "Авторизация - VK Cloud",
   "metaDescription": "Для авторизации клиента на платформе VK Cloud Vision используется токен, который передается в параметре запроса: curl -k -v",
   "sectionTitle": "Авторизация",
