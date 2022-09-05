@@ -1,7 +1,7 @@
 {
   "title": "Методы обработки изображений",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Улучшение качества изображений",
   "metaTitle": "Методы обработки изображений - VK Cloud",
   "metaDescription": "Метод improve применяется для улучшения фотографий. Запрос Авторизационные данные передаются в строке запроса: Параметр Тип Значение oauth_token string OAu",
   "sectionTitle": "Методы обработки изображений",
