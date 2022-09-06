@@ -2,7 +2,7 @@ Storage classes are used in the dynamic creation of volumes (Persistent Volume C
 
 <info>
 
-Each Kubernetes VK Cloud cluster has [preconfigured storage classes](../k8s-concepts/working-with-pvc#predustanovlennye-klassy-hraneniya).
+Each Kubernetes VK Cloud cluster has [preconfigured storage classes](../../k8s-concepts/working-with-pvc#predustanovlennye-klassy-hraneniya).
 
 </info>
 
@@ -26,7 +26,7 @@ Run one of the commands:
 
 1. Decide with what parameters you want to create a new storage class.
 
-   To create a storage class using [OpenStack Cinder CSI Driver](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/cinder-csi-plugin/using-cinder-csi-plugin.md ) (which [integrates with VK Cloud storage services](../k8s-concepts/working-with-pvc)) you need to set the following parameters:
+   To create a storage class using [OpenStack Cinder CSI Driver](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/cinder-csi-plugin/using-cinder-csi-plugin.md ) (which [integrates with VK Cloud storage services](../../k8s-concepts/working-with-pvc)) you need to set the following parameters:
 
    1. **Provisioner:** driver name.
 
@@ -36,7 +36,7 @@ Run one of the commands:
 
       There are [many options] available for the driver(https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/cinder-csi-plugin/using-cinder-csi-plugin.md#supported-parameters) . To work with VK Cloud, you must set the following parameters:
 
-      - `availability`: availability zone. Availability zones depend on the [region](../../../additionals/account/concepts/regions) hosting the Kubernetes cluster:
+      - `availability`: availability zone. Availability zones depend on the [region](../../../../additionals/account/concepts/regions) hosting the Kubernetes cluster:
 
         - Moscow: `GZ1`, `MS1`.
         - Amsterdam: `AMS`.
@@ -49,7 +49,7 @@ Run one of the commands:
 
         </warn>
 
-      - `type`: [storage type](../k8s-concepts/working-with-pvc).
+      - `type`: [storage type](../../k8s-concepts/working-with-pvc).
         - `ceph-hdd`
         - `ceph-ssd`
         - `high-iops`
@@ -128,7 +128,7 @@ To avoid this, you can choose one of the available storage classes as the defaul
 
 <warn>
 
-Do not delete [predefined storage classes](../k8s-concepts/working-with-pvc#predustanovlennye-klassy-storage), as this may cause the cluster to become unusable or data to be lost.
+Do not delete [predefined storage classes](../../k8s-concepts/working-with-pvc#predustanovlennye-klassy-storage), as this may cause the cluster to become unusable or data to be lost.
 
 </warn>
 

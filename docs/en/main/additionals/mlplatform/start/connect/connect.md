@@ -1,4 +1,4 @@
-To connect to the ML Platform instance, you can use the instructions for connecting to a VM with [Windows](https://mcs.mail.ru/docs/en/base/iaas/vm-start/vm-connect/vm-connect-win) or [Linux](https://mcs.mail.ru/docs/en/base/iaas/vm-start/vm-connect/vm-connect-nix).
+To connect to the ML Platform instance, you can use the instructions for connecting to a VM with [Windows](/en/base/iaas/vm-start/vm-connect/vm-connect-win) or [Linux](/en/base/iaas/vm-start/vm-connect/vm-connect-nix).
 
 <warn>
 

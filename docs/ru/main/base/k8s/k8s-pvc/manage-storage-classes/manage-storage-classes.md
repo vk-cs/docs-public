@@ -2,7 +2,7 @@
 
 <info>
 
-В каждом кластере Kubernetes VK Cloud присутствуют [преднастроенные классы хранения](../k8s-concepts/working-with-pvc#predustanovlennye-klassy-hraneniya).
+В каждом кластере Kubernetes VK Cloud присутствуют [преднастроенные классы хранения](../../k8s-concepts/working-with-pvc#predustanovlennye-klassy-hraneniya).
 
 </info>
 
@@ -26,7 +26,7 @@
 
 1. Определитесь, с какими параметрами требуется создать новый класс хранения.
 
-   Для создания класса хранения с использованием [драйвера OpenStack Cinder CSI](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/cinder-csi-plugin/using-cinder-csi-plugin.md) (который [интегрируется с сервисами хранилища VK Cloud](../k8s-concepts/working-with-pvc)) необходимо задать следующие параметры:
+   Для создания класса хранения с использованием [драйвера OpenStack Cinder CSI](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/cinder-csi-plugin/using-cinder-csi-plugin.md) (который [интегрируется с сервисами хранилища VK Cloud](../../k8s-concepts/working-with-pvc)) необходимо задать следующие параметры:
 
    1. **Provisioner:** имя драйвера.
 
@@ -36,7 +36,7 @@
 
       Для драйвера доступно [множество параметров](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/cinder-csi-plugin/using-cinder-csi-plugin.md#supported-parameters). Для работы с VK Cloud необходимо задать следующие параметры:
 
-      - `availability`: зона доступности. Наличие зон доступности зависит от [региона](../../../additionals/account/concepts/regions), в котором размещен кластер Kubernetes:
+      - `availability`: зона доступности. Наличие зон доступности зависит от [региона](../../../../additionals/account/concepts/regions), в котором размещен кластер Kubernetes:
 
         - Москва: `GZ1`, `MS1`.
         - Амстердам: `AMS`.
@@ -49,7 +49,7 @@
 
         </warn>
 
-      - `type`: [тип хранилища](../k8s-concepts/working-with-pvc).
+      - `type`: [тип хранилища](../../k8s-concepts/working-with-pvc).
         - `ceph-hdd`
         - `ceph-ssd`
         - `high-iops`
@@ -130,7 +130,7 @@
 
 <warn>
 
-Не удаляйте [предустановленные классы хранения](../k8s-concepts/working-with-pvc#predustanovlennye-klassy-hraneniya), так как это может привести к неработоспособности кластера или потере данных.
+Не удаляйте [предустановленные классы хранения](../../k8s-concepts/working-with-pvc#predustanovlennye-klassy-hraneniya), так как это может привести к неработоспособности кластера или потере данных.
 
 </warn>
 

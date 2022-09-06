@@ -2,7 +2,7 @@
 
 <warn>
 
-Для каждого региона используется свой файл openrc. Подробнее о регионах вы можете узнать в статье [«Регионы»](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions).
+Для каждого региона используется свой файл openrc. Подробнее о регионах вы можете узнать в статье [«Регионы»](/ru/additionals/start/user-account/regions).
 
 </warn>
 

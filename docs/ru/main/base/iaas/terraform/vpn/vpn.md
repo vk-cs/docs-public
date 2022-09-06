@@ -1,6 +1,6 @@
 <warn>
 
-Прежде всего убедитесь, что вы [установили Terraform](https://mcs.mail.ru/docs/ru/additionals/terraform/terraform-installation) и [создали файл main.tf](https://mcs.mail.ru/docs/ru/additionals/terraform/terraform-provider-config) с необходимыми провайдерами.
+Прежде всего убедитесь, что вы [установили Terraform](/ru/additionals/terraform/terraform-installation) и [создали файл main.tf](/ru/additionals/terraform/terraform-provider-config) с необходимыми провайдерами.
 
 </warn>
 
@@ -8,7 +8,7 @@
 
 ### Создание виртуальной сети
 
-Для создания VPN соединения нам потребуются виртуальная сеть с роутером. Если у вас уже есть существующая сеть и роутер, то перейдите на шаг [Создание VPN соединения](../terraform/create). Создадим сеть со следующими объектами:
+Для создания VPN соединения нам потребуются виртуальная сеть с роутером. Если у вас уже есть существующая сеть и роутер, то перейдите на шаг [Создание VPN соединения](../../terraform/create). Создадим сеть со следующими объектами:
 
 1. Ресурсы (resource):
 

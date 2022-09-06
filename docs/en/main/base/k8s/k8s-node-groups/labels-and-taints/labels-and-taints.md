@@ -4,7 +4,7 @@ Taint allow you to protect nodes from running certain pods. Toleration applies t
 
 There are two ways to add Labels and Taints:
 
-- In the cluster creation wizard. Read about how to create a cluster [here](https://mcs.mail.ru/docs/ru/base/k8s/k8s-start/create-k8s).
+- In the cluster creation wizard. Read about how to create a cluster [here](/ru/base/k8s/k8s-start/create-k8s).
 - In the management of the cluster after its creation. To do this, in the node-group line:
   1.  Click on the menu and select «Labels и Taints».
   2.  Click «+ Add label» and enter the key/value.

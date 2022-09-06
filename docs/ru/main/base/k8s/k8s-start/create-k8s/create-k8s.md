@@ -47,4 +47,4 @@
 
 Для завершения создания кластера потребуется некоторое время.
 
-Все операции, перечисленные выше могут быть выполнены с помощью [VK Cloud Terraform Provider.](https://mcs.mail.ru/docs/ru/base/k8s/k8s-terraform/k8s-terraform-mcs)
+Все операции, перечисленные выше могут быть выполнены с помощью [VK Cloud Terraform Provider.](/ru/base/k8s/k8s-terraform/k8s-terraform-mcs)

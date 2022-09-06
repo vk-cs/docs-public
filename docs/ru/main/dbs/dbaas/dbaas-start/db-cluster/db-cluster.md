@@ -45,7 +45,7 @@
 
 <info>
 
-Для PostgreSQL в конфигурациях «Single» или «Master-Replica» по умолчанию включен [мониторинг](../db-monitoring/postgresql). При необходимости эту опцию можно отключить.
+Для PostgreSQL в конфигурациях «Single» или «Master-Replica» по умолчанию включен [мониторинг](../../db-monitoring/postgresql). При необходимости эту опцию можно отключить.
 
 </info>
 

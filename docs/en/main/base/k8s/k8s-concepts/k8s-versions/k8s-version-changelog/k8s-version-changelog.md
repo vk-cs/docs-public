@@ -3,7 +3,7 @@
 **Changes in Kubernetes aaS service:**
 
 - The operating system [AlmaLinux](https://wiki.almalinux.org) version 9 is used on the cluster nodes.
-- The default is [limit range for namespaces (namespace)](../../k8s-node-groups/pods).
+- The default is [limit range for namespaces (namespace)](../../../k8s-node-groups/pods).
 
 **Important changes in Kubernetes:**
 
@@ -39,7 +39,7 @@ To learn more about these and other changes, see the [official Kubernetes docume
 **Changes in Kubernetes aaS service:**
 
 - [Runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) (runtime) of the cluster is replaced by [CRI-O](https://cri-o.io/) .
-- Changed [log storage format](../../../../../additionals/cases/cases-logs/case-fluent-bit).
+- Changed [log storage format](../../../../../../additionals/cases/cases-logs/case-fluent-bit).
 
 **Important changes in Kubernetes:**
 

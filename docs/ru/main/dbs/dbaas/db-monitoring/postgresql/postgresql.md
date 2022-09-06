@@ -2,7 +2,7 @@
 
 <warn>
 
-Этот инструмент доступен только если кластер PostgreSQL был [создан](../../dbaas/dbaas-start/create-postresql-mysql) с активной опцией «Включить мониторинг» и [шаблоном конфигурации](../../dbaas/dbaas-start/db-config) «Single» или «Master-Replica».
+Этот инструмент доступен только если кластер PostgreSQL был [создан](../../../dbaas/dbaas-start/create-postresql-mysql) с активной опцией «Включить мониторинг» и [шаблоном конфигурации](../../../dbaas/dbaas-start/db-config) «Single» или «Master-Replica».
 
 </warn>
 
@@ -113,7 +113,7 @@
 
   В таком случае рекомендуется:
 
-  1. [Увеличить значение параметра](../../dbaas/manage-db/db-flags-options) `max_connections`.
+  1. [Увеличить значение параметра](../../../dbaas/manage-db/db-flags-options) `max_connections`.
   1. Оптимизировать запросы так, чтобы не было длинных транзакций.
 
 - Про устраненение проблем, связанных с отставанием реплики, см. документацию [Patroni](https://patroni.readthedocs.io/en/latest/replication_modes.html) и [PostgreSQL](https://www.postgresql.org/docs/current/warm-standby.html#STREAMING-REPLICATION).

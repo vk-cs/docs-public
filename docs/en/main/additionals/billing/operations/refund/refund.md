@@ -1,4 +1,4 @@
-If a refund is necessary, you should [contact technical support](https://mcs.mail.ru/docs/en/contacts).
+If a refund is necessary, you should [contact technical support](/en/contacts).
 
 <warn>
 
