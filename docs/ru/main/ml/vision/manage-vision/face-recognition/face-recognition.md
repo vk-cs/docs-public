@@ -169,7 +169,7 @@ Content-Disposition: form-data; name="meta"
 | create_new | bool         | false        | Добавлять ли новый person, если не было найдено совпадений |
 | images     | []image_meta | \--          | Метаданные передаваемых изображений (required non-empty) |
 
-Описание параметра space смотрите в разделе метода [Set](https://mcs.mail.ru/docs/ml/vision/manage-vision/face-recognition#set).
+Описание параметра space смотрите в разделе метода [Set](/ml/vision/manage-vision/face-recognition#set).
 
 ### image_meta
 
@@ -388,7 +388,7 @@ Content-Disposition: form-data; name="meta"
 | space    | string       | числовой идентификатор, используемый для избежания пересечений по персонам (required non-empty) |
 | images   | []image_meta | метаданные передаваемых изображений (required non-empty) |
 
-Описание параметра space смотрите в разделе метода [Set](https://mcs.mail.ru/docs/ml/vision/manage-vision/face-recognition#set).
+Описание параметра space смотрите в разделе метода [Set](/ml/vision/manage-vision/face-recognition#set).
 
 #### image_meta
 
@@ -505,7 +505,7 @@ curl "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token
 | -------- | ------ | -------- |
 | space    | string | Числовой идентификатор, используемый для избежания пересечений по персонам (required non-empty)|
 
-Описание параметра space смотрите в разделе метода [Set](https://mcs.mail.ru/docs/ml/vision/manage-vision/face-recognition#set).
+Описание параметра space смотрите в разделе метода [Set](/ml/vision/manage-vision/face-recognition#set).
 
 Данный запрос не требует передачи изображений.
 

@@ -3,7 +3,7 @@
 **Изменения в сервисе Kubernetes aaS:**
 
 -   На узлах кластера используется операционная система [AlmaLinux](https://wiki.almalinux.org) версии 9.
--   По умолчанию устанавливается [limit range для пространств имен (namespace)](../../k8s-node-groups/pods).
+-   По умолчанию устанавливается [limit range для пространств имен (namespace)](../../../k8s-node-groups/pods).
 
 **Важные изменения в Kubernetes:**
 
@@ -39,7 +39,7 @@
 **Изменения в сервисе Kubernetes aaS:**
 
 -   [Среда исполнения](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) (runtime) кластера заменена на [CRI-O](https://cri-o.io/).
--   Изменен [формат хранения логов](../../../../../additionals/cases/cases-logs/case-fluent-bit).
+-   Изменен [формат хранения логов](../../../../../../additionals/cases/cases-logs/case-fluent-bit).
 
 **Важные изменения в Kubernetes:**
 

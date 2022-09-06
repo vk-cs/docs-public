@@ -131,7 +131,7 @@ the statusTag configuration file, _ := sdk.FindTagByPath(cfg.Agent.Tag, sdk.Stat
 
 ### Virtual IoT Device Emulator
 
-As a debugging stand, you can use an IoT device emulator programmed to send certain data to the Platform. For more information about configuring the device through the VK Cloud IoT platform user's personal account, see [the IoT section on the VK Cloud documentation portal](https://mcs.mail.ru/docs/ru/additionals/iot/about-iot ).
+As a debugging stand, you can use an IoT device emulator programmed to send certain data to the Platform. For more information about configuring the device through the VK Cloud IoT platform user's personal account, see [the IoT section on the VK Cloud documentation portal](/ru/additionals/iot/about-iot ).
 
 You can import the emulator source code from [VK Cloud IoT Emulators repository](https://github.com/vk-cs/iot-emulators ), or [download the compiled binary file for your operating system](https://github.com/vk-cs/iot-emulators/releases ).
 

@@ -2,6 +2,6 @@ It is possible to integrate an ADH cluster with JDBC-compliant sources. More det
 
 <warn>
 
-This feature is only available in the ADH version with an Enterprise edition license. You can learn more about the availability of components in different license versions in the ["Licenses"](../concepts/enterprise/) section.
+This feature is only available in the ADH version with an Enterprise edition license. You can learn more about the availability of components in different license versions in the ["Licenses"](../../concepts/enterprise/) section.
 
 </warn>

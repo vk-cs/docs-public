@@ -28,4 +28,4 @@
 </tabpanel>
 </tabs>
 
-О том как пополнить счет, читайте [здесь](https://mcs.mail.ru/docs/ru/additionals/billing/operations/payment).
+О том как пополнить счет, читайте [здесь](/ru/additionals/billing/operations/payment).

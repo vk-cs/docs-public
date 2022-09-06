@@ -24,7 +24,7 @@ Then specify:
 
 <info>
 
-For PostgreSQL in "Single" or "Master-Replica" configurations, [monitoring](../db-monitoring/postgresql) is enabled by default. If necessary, this option can be disabled.
+For PostgreSQL in "Single" or "Master-Replica" configurations, [monitoring](../../db-monitoring/postgresql) is enabled by default. If necessary, this option can be disabled.
 
 </info>
 

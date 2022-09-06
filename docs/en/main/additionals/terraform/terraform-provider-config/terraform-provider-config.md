@@ -1,4 +1,4 @@
-Before you start configuring the Terraform provider, you need to [install the Terraform executables](https://mcs.mail.ru/docs/ru/additionals/terraform/terraform-installation ).
+Before you start configuring the Terraform provider, you need to [install the Terraform executables](/ru/additionals/terraform/terraform-installation ).
 
 To get started with Terraform, create a provider mirror file and place it in the directory.
 
@@ -62,6 +62,6 @@ provider "vkcs"  {
 
 After creating the file `main.tf` and its filling, you can proceed to the description of the creation of resources:
 
-- [Creating a Kubernetes Cluster](https://mcs.mail.ru/docs/ru/base/k8s/k8s-terraform/k8s-terraform-create );
-- [Creating a database instance with Terraform for DBaaS](https://mcs.mail.ru/docs/dbs/dbaas/api/working-with-terraform );
-- [Creating a database and a user with Terraform for DBaaS](https://mcs.mail.ru/docs/ru/dbs/dbaas/api/terraform-provider-vk-cs ).
+- [Creating a Kubernetes Cluster](/ru/base/k8s/k8s-terraform/k8s-terraform-create );
+- [Creating a database instance with Terraform for DBaaS](/dbs/dbaas/api/working-with-terraform );
+- [Creating a database and a user with Terraform for DBaaS](/ru/dbs/dbaas/api/terraform-provider-vk-cs ).

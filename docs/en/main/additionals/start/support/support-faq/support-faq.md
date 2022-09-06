@@ -53,4 +53,4 @@ If you don't receive an email response, try the following:
 
 ## What if I didn't find the answer to my question?
 
-We are constantly adding information to the Documentation portal. If you did not find the answer to your question on the portal, [send your question](https://mcs.mail.ru/docs/contacts) to our support.
+We are constantly adding information to the Documentation portal. If you did not find the answer to your question on the portal, [send your question](/en/contacts) to our support.

@@ -2,7 +2,7 @@ To manage VK Cloud platform resources, you can use the API to launch instances, 
 
 <warn>
 
-The list of endpoints varies depending on the selected region. You can learn more about regions in the article ["Regions"](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions).
+The list of endpoints varies depending on the selected region. You can learn more about regions in the article ["Regions"](/ru/additionals/start/user-account/regions).
 
 </warn>
 

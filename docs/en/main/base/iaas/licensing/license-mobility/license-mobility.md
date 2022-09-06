@@ -10,7 +10,7 @@ In the License Portability check form, there is a section for specifying data ab
 
 Microsoft will provide you and VK Cloud with confirmation that you have passed the verification process. You can deploy the application server software until the verification process is complete. In fact, you can deploy ten days before submitting the form. You are responsible for performing inspections and extensions in accordance with the requirements of the agreement.
 
-After passing the verification process, let us know about it to [support service](mhttps://mcs.mail.ru/docs/contacts), indicating the name of the project and the type of license used.
+After passing the verification process, let us know about it to [support service](/en/contacts), indicating the name of the project and the type of license used.
 
 ## Eligibility criteria
 
@@ -48,6 +48,6 @@ For a complete list of eligible software products, see the Microsoft Product Ter
 
 ## Contact us
 
-Are you planning to deploy a Microsoft Windows Server or a solution for it (for example, SQL or SharePoint) on the VK Cloud platform and want to discuss your IT project with a representative of the VK Cloud sales department? [Contact us](https://mcs.mail.ru/docs/contacts).
+Are you planning to deploy a Microsoft Windows Server or a solution for it (for example, SQL or SharePoint) on the VK Cloud platform and want to discuss your IT project with a representative of the VK Cloud sales department? [Contact us](/en/contacts).
 
 Also see [Microsoft Product Terms](https://www.microsoft.com/en-us/licensing/product-licensing/products).

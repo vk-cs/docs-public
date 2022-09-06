@@ -30,11 +30,11 @@ Rates may vary depending on the region. To get pricing information, select a reg
 
 ### Billing
 
-The Billing page is the same for all regions. You can learn more in the article [“Billing”](https://mcs.mail.ru/docs/ru/main/additionals/billing).
+The Billing page is the same for all regions. You can learn more in the article [“Billing”](/ru/main/additionals/billing).
 
 ### Quotas
 
-Depending on the region, project quotas may differ. To get information about available quotas, select a region and click "User -> Manage Quotas". For more information about the Quotas section, see the article [Quotas](https://mcs.mail.ru/docs/ru/additionals/start/user-account/quota-limits). To increase quotas [contact our support](https://help.devmcs.ru/docs/ru/contacts).
+Depending on the region, project quotas may differ. To get information about available quotas, select a region and click "User -> Manage Quotas". For more information about the Quotas section, see the article [Quotas](/ru/additionals/start/user-account/quota-limits). To increase quotas [contact our support](/en/contacts).
 
 ## Interfaces
 
@@ -54,14 +54,14 @@ The resource region is determined by the settings specified in the openrc file. 
 
 To get the openrc configuration file, select the region and click ["User -> Project Settings -> API Keys -> Download openrc version 3"](https://mcs.mail.ru/app/project/keys/).
 
-You can learn more about setting up the CLI in the [CLI section of the Management Interfaces article](https://mcs.mail.ru/docs/ru/additionals/start/user-account/mgmt-interfaces#cli).
+You can learn more about setting up the CLI in the [CLI section of the Management Interfaces article](/ru/additionals/start/user-account/mgmt-interfaces#cli).
 
 </tabpanel>
 <tabpanel>
 
 - **API**
 
-You can use the API to manage resources in any of the regions. To access the API in each region, you must use separate endpoints. You can learn more about working with the OpenStack API in the [API section of the Management Interfaces article](https://mcs.mail.ru/docs/ru/additionals/start/user-account/mgmt-interfaces#api) .
+You can use the API to manage resources in any of the regions. To access the API in each region, you must use separate endpoints. You can learn more about working with the OpenStack API in the [API section of the Management Interfaces article](/ru/additionals/start/user-account/mgmt-interfaces#api) .
 
 To get a list of endpoints for the selected region, click "User -> Project Settings -> API Endpoints".
 
@@ -74,7 +74,7 @@ You can use Terraform to create and customize resources in any of the regions.
 
 Each region has its own configuration file. To get the Terraform configuration file, select a region and click "User -> Project Settings -> Terraform -> Download File" of the Terraform configuration.
 
-More information about setting up Terraform can be found in the [Terraform section of the Management Interfaces article](https://mcs.mail.ru/docs/ru/additionals/start/user-account/mgmt-interfaces#terraform).
+More information about setting up Terraform can be found in the [Terraform section of the Management Interfaces article](/ru/additionals/start/user-account/mgmt-interfaces#terraform).
 
 </tabpanel>
 </tabs>
