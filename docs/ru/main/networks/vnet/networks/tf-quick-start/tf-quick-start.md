@@ -1,4 +1,4 @@
-Вы можете узнать об установке и настройке провайдера Terraform в [разделе Terraform](../../../../additionals/terraform/).
+Вы можете узнать об установке и настройке провайдера Terraform в [разделе Terraform](../../../../../additionals/terraform/).
 <!--
 ## Установка terraform
 

@@ -20,7 +20,7 @@ There are several groups of configurations (flavors) of virtual machines that ar
 | Heavy | From 16 vCPU <br/> From 64 GB RAM | A special group that characterizes individual productive configurations. |
 | Custom | Unlimited | A group of individual configurations created on request. |
 
-By default, Basic, Standard and Advanced configurations are available in the project. To create configurations of the Heavy or individual (Custom) type, you should [contact technical support](https://mcs.mail.ru/docs/contacts). The cost of the Heavy and Custom configurations is calculated individually for each request.
+By default, Basic, Standard and Advanced configurations are available in the project. To create configurations of the Heavy or individual (Custom) type, you should [contact technical support](/en/contacts). The cost of the Heavy and Custom configurations is calculated individually for each request.
 
 ## VM Performance
 
@@ -36,7 +36,7 @@ VK Cloud server hardware located in data centers hosting virtual machines has th
 
 By default, configurations are available in the project that allow you to create virtual machines on servers with processors of the "Standard" category: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz and Intel(R) Xeon(R) Gold 6238R CPU @ 2.20GHz. The guaranteed frequency of processors of the "Standard" category is 2.10GHz, but it may actually be higher.
 
-To get access to high-performance Intel(R) Xeon(R) Gold 6230 CPU @ 3.40GHz and Intel(R) Xeon(R) Gold 6238R CPU @ 3.70GHz processors, you must [contact technical support](https://mcs.mail.ru/docs/contacts). The cost of configuring a VM with a high-performance processor is calculated individually for each request. The guaranteed frequency of high-performance processors is 3.00GHz, but it may actually be higher.
+To get access to high-performance Intel(R) Xeon(R) Gold 6230 CPU @ 3.40GHz and Intel(R) Xeon(R) Gold 6238R CPU @ 3.70GHz processors, you must [contact technical support](/en/contacts). The cost of configuring a VM with a high-performance processor is calculated individually for each request. The guaranteed frequency of high-performance processors is 3.00GHz, but it may actually be higher.
 
 After gaining access, you can create a virtual machine with a high-performance processor in your personal account by checking the option "Show only high-performance CPUs" in the instance creation wizard.
 
@@ -59,11 +59,11 @@ Depending on the OS family of the machine being created, the information fields 
 | High-performance CPUs | If there are configurations with high-performance processors in the project, enabling the option will switch the list of VM types to display such configurations. |
 | Availability zone | Select the datacenter where the instance will be launched. |
 | Disk Size | Sets the size of the VM disk in GB. |
-| Disk type | Type of instance disk being created, [more details](https://mcs.mail.ru/docs/base/iaas/vm-volumes/volume-sla). |
+| Disk type | Type of instance disk being created, [more details](/base/iaas/vm-volumes/volume-sla). |
 | Operating system | Operating system image (version, revision). |
 | Network | Creating a VM in an external (ext-net) or private network. |
 | Subnet address | Appears when the "Create a new network" option is selected. Sets the CIDR of the new subnet. |
-| DNS name | Appears when a private network is selected. Sets the DNS name of the VM, [more info](https://mcs.mail.ru/docs/networks/vnet/networks/private-dns). |
+| DNS name | Appears when a private network is selected. Sets the DNS name of the VM, [more info](/networks/vnet/networks/private-dns). |
 | Virtual machine key | Appears when you select a private network. Used to decrypt the administrator password. |
 | Use the configuration disk | Enabling this option configures the network in the operating system when creating a VM in ext-net or a private network without a DHCP server. |
 | Firewall Settings | Selection of available security groups that include permissive traffic rules. |

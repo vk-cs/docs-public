@@ -82,4 +82,4 @@ A detailed description of these and other migration plan options can be found in
 
 Next, specify the name of the migration plan and click the "Save" button.
 
-After completing the creation and configuration of the migration plan, proceed to [start migration](/docs/en/additionals/hystax/migration/launch) of the protected infrastructure.
+After completing the creation and configuration of the migration plan, proceed to [start migration](/en/additionals/hystax/migration/launch) of the protected infrastructure.

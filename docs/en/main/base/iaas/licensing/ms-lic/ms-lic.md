@@ -51,7 +51,7 @@ When changing the type of virtual machine, the number of licenses will be change
 
 ### Key
 
-To activate Windows Server OS, you may need a license key, as evidenced by the inscription in the lower right corner of the screen. In this case, it is necessary to [contact technical support](https://mcs.mail.ru/docs/contacts) to fix the OS activation failure. Depending on the operating system, either an activation key or a command for self-activation of the licensed copy will be provided.
+To activate Windows Server OS, you may need a license key, as evidenced by the inscription in the lower right corner of the screen. In this case, it is necessary to [contact technical support](/en/contacts) to fix the OS activation failure. Depending on the operating system, either an activation key or a command for self-activation of the licensed copy will be provided.
 
 The presence of an activation failure does not affect the period of use of the license, since the VK Cloud platform does not provide a trial period for using Microsoft licenses.
 
@@ -76,7 +76,7 @@ Each operating system user who connects using the Remote Desktop Protocol (RDP) 
 
 Licenses for Remote Desktop Services can only be granted for a licensed copy of the instance's MS Windows operating system purchased from VK Cloud.
 
-To activate the license, you should [contact technical support](https://mcs.mail.ru/docs/contacts) and provide the data of the project, instance, the required number of licenses, as well as the parameters for connecting to the remote desktop of the instance to activate licenses.
+To activate the license, you should [contact technical support](/en/contacts) and provide the data of the project, instance, the required number of licenses, as well as the parameters for connecting to the remote desktop of the instance to activate licenses.
 
 </warn>
 

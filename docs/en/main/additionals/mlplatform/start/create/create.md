@@ -14,8 +14,8 @@ During the installation process, you need to enter the following settings:
 | Operating system | Operating system image (version, revision). |
 | Number of disks | The number of hard disks in the created instance.|
 | Disk size | Sets the size of the VM disk in GB. |
-| Disk type | Type of instance disk being created, [more details](https://mcs.mail.ru/docs/base/iaas/vm-volumes/volume-sla ). |
-| Choosing a domain name | Sets the DNS name of the instance, [more info](https://mcs.mail.ru/docs/networks/vnet/networks/private-dns ).|
+| Disk type | Type of instance disk being created, [more details](/base/iaas/vm-volumes/volume-sla ). |
+| Choosing a domain name | Sets the DNS name of the instance, [more info](/networks/vnet/networks/private-dns ).|
 | User Name | User name in the guest OS |
 | User password | User password in the guest OS. |
 

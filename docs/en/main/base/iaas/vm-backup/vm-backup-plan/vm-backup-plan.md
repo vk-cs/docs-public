@@ -4,7 +4,7 @@ Automatic backup is presented in the form of a "Backup Plan" and includes all in
 
 <info>
 
-Backups are placed in a shared data warehouse and are paid according to the tariff. Detailed information about the cost of storage can be seen in [cost details](https://mcs.mail.ru/docs/ru/additionals/billing/operations/detail) of the project.
+Backups are placed in a shared data warehouse and are paid according to the tariff. Detailed information about the cost of storage can be seen in [cost details](/ru/additionals/billing/operations/detail) of the project.
 
 </info>
 

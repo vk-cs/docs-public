@@ -1,4 +1,4 @@
-Перед тем как приступить к настройке провайдера Terraform, необходимо [установить исполняемые файлы Terraform](https://mcs.mail.ru/docs/ru/additionals/terraform/terraform-installation).
+Перед тем как приступить к настройке провайдера Terraform, необходимо [установить исполняемые файлы Terraform](/ru/additionals/terraform/terraform-installation).
 
 Для начала работы с Terraform создайте файл зеркала провайдера и разместите его в каталоге.
 
@@ -62,6 +62,6 @@ provider "vkcs"  {
 
 После создания файла `main.tf` и его заполнения, можно переходить к описанию создания ресурсов:
 
-- [Создание кластера Kubernetes](https://mcs.mail.ru/docs/ru/base/k8s/k8s-terraform/k8s-terraform-create);
-- [Создание инстанса БД с Terraform для DBaaS](https://mcs.mail.ru/docs/dbs/dbaas/api/working-with-terraform);
-- [Создание БД и пользователя с Terraform для DBaaS](https://mcs.mail.ru/docs/ru/dbs/dbaas/api/terraform-provider-vk-cs).
+- [Создание кластера Kubernetes](/ru/base/k8s/k8s-terraform/k8s-terraform-create);
+- [Создание инстанса БД с Terraform для DBaaS](/dbs/dbaas/api/working-with-terraform);
+- [Создание БД и пользователя с Terraform для DBaaS](/ru/dbs/dbaas/api/terraform-provider-vk-cs).

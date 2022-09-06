@@ -15,7 +15,7 @@ You can set a password for an instance after 15 minutes after its creation. At t
 
 ## No access to high-performance CPUs
 
-To get access to high-performance processors, you need to [contact technical support](https://mcs.mail.ru/docs/contacts).
+To get access to high-performance processors, you need to [contact technical support](/en/contacts).
 
 After gaining access, you can create a virtual machine with a high-performance processor in your personal account by checking the "High-performance CPUs" option in the instance creation wizard.
 
@@ -25,7 +25,7 @@ See the current prices for "Floating IP addresses" and "Floating IP" in the [pub
 
 ## I want to create an instance, but there is no suitable configuration
 
-All configurations (flavors) of virtual machines are available in your personal account in the Instance Creation wizard. For a non-standard configuration [contact support](https://mcs.mail.ru/docs/contacts) — we will provide it to you at standard prices if technically possible.
+All configurations (flavors) of virtual machines are available in your personal account in the Instance Creation wizard. For a non-standard configuration [contact support](/en/contacts) — we will provide it to you at standard prices if technically possible.
 
 It is not recommended to use configurations in which the CPU-RAM ratio is 1:1 or less than this value. Such configurations have performance bottlenecks and can be used to perform specific tasks. For example, for machine learning or object recognition.
 
@@ -37,11 +37,11 @@ It is also not recommended to create instances with a low amount of CPU and RAM 
 
 ## No instance is being created
 
-If an error occurred during the creation of the instance, you should pay attention to the pop-up window in the upper right corner of the VK Cloud panel, which displays an error message. If the message does not appear, and the creation wizard reports an error, we recommend [contacting technical support](https://mcs.mail.ru/docs/contacts).
+If an error occurred during the creation of the instance, you should pay attention to the pop-up window in the upper right corner of the VK Cloud panel, which displays an error message. If the message does not appear, and the creation wizard reports an error, we recommend [contacting technical support](/en/contacts).
 
 ## There are not enough quotas when creating a VM
 
-The VM creation mechanism requires a sufficient number of quotas in the project to successfully complete the creation operation. If quotas are not enough, you should [contact technical support](https://mcs.mail.ru/docs/contacts), informing the project data, account, as well as the amount of resources needed to be added to the project.
+The VM creation mechanism requires a sufficient number of quotas in the project to successfully complete the creation operation. If quotas are not enough, you should [contact technical support](/en/contacts), informing the project data, account, as well as the amount of resources needed to be added to the project.
 
 ## I can't create a VM with Windows 8 / 10
 
@@ -64,11 +64,11 @@ You also need to make sure that the instance is enabled and it has an assigned I
 
 ## Lost my private key
 
-If you lose the private key to access the server via SSH protocol, you must generate it again and add it to the instance manually. To perform the procedure, you can use the information in the article about [Restoring VM access](https://mcs.mail.ru/docs/ru/base/iaas/vm-scenarios/recover-access-vm).
+If you lose the private key to access the server via SSH protocol, you must generate it again and add it to the instance manually. To perform the procedure, you can use the information in the article about [Restoring VM access](/ru/base/iaas/vm-scenarios/recover-access-vm).
 
 ## Openstack CLI does not connect
 
-Access to the Openstack CLI is carried out using a configuration file (Linux) or a set of parameters from a file and a password. Information about installation, configuration and connection parameters can be found in the article about Using [Management Utilities (CLI)](https://mcs.mail.ru/docs/ru/base/iaas/vm-interfaces/vm-create-cli).
+Access to the Openstack CLI is carried out using a configuration file (Linux) or a set of parameters from a file and a password. Information about installation, configuration and connection parameters can be found in the article about Using [Management Utilities (CLI)](/ru/base/iaas/vm-interfaces/vm-create-cli).
 
 ## The instance console is not displayed in the VK Cloud panel
 

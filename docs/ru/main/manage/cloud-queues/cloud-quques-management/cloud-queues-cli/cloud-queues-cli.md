@@ -13,7 +13,7 @@
 - Как формировать команды в AWS CLI;
 - Примеры команд.
 
-Перед началом работы с сервисом Cloud Queues, ознакомьтесь с ограничениями сервиса в разделе [Важные ограничения](https://mcs.mail.ru/docs/ru/manage/cloud-queues/cloud-queues-limitations).
+Перед началом работы с сервисом Cloud Queues, ознакомьтесь с ограничениями сервиса в разделе [Важные ограничения](/ru/manage/cloud-queues/cloud-queues-limitations).
 
 ## Начало работы c Cloud Queues в AWS CLI
 

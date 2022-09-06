@@ -1,6 +1,6 @@
 <warn>
 
-Прежде всего убедитесь, что вы [установили Terraform](https://mcs.mail.ru/docs/ru/additionals/terraform/terraform-installation) и [создали файл main.tf](https://mcs.mail.ru/docs/ru/additionals/terraform/terraform-provider-config) с необходимыми провайдерами.
+Прежде всего убедитесь, что вы [установили Terraform](/ru/additionals/terraform/terraform-installation) и [создали файл main.tf](/ru/additionals/terraform/terraform-provider-config) с необходимыми провайдерами.
 
 </warn>
 

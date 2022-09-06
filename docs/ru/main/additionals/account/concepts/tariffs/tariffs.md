@@ -1,1 +1,1 @@
-Подробнее о тарификации вы можете узнать в разделе [«Биллинг»](https://mcs.mail.ru/docs/ru/additionals/billing/start/about).
+Подробнее о тарификации вы можете узнать в разделе [«Биллинг»](/ru/additionals/billing/start/about).

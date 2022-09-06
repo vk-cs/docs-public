@@ -3,7 +3,7 @@
 <warn>
 
 Для получения доступа к платформе у вас уже должен быть аккаунт VK Cloud.
-Если у вас нет аккаунта, следуйте инструкциям из [этой статьи](https://mcs.mail.ru/docs/ru/additionals/start/get-started/registration).
+Если у вас нет аккаунта, следуйте инструкциям из [этой статьи](/ru/additionals/start/get-started/registration).
 
 </warn>
 
