@@ -2,7 +2,7 @@
 
 Запрос:
 
-```
+```bash
 curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth_provider=mcs&oauth_token=xxx"       \
    -F file_0=@examples/car_number1.jpg                                                             \
    -F file_1=@examples/x5.png                                                                      \
@@ -15,12 +15,12 @@ curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth_provider=mcs&oaut
                    {                                                                               \
                       "name":"file_0"                                                              \
                    }]                                                                              \
-             }'                                                                                    \
+             }' 
 ```
 
 Ответ:
 
-```
+```json
 {
   "status":200,
   "body":
@@ -56,12 +56,12 @@ curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth_provider=mcs&oaut
 
 **2\. Объекты+сцены:**
 
-```
+```bash
 curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth_provider=mcs&oauth_token=xxx" -F file_0=@examples/car_number1.jpg  -F file_1=@examples/x5.png  -F meta='{"mode":["object", "scene"],"images":[{"name":"file_1"}, {"name":"file_0"}]}'
 ```
 
 **3\. Персоны:**
 
-```
+```bash
 curl -k -v "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mcs&oauth_token=xxx" -F file_0=@examples/friends1.jpg  -F file_1=@examples/rachel-green.jpg -F meta='{"images":[{"name":"file_1"}, {"name":"file_0"}], "space":"1"}'
 ```

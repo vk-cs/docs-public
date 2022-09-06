@@ -1,7 +1,7 @@
 {
   "title": "Использование Curl",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Запрос на распознавание с использованием Curl",
   "metaTitle": "Использование Curl - VK Cloud",
   "metaDescription": "1. Автономера: Запрос: curl -k -v",
   "sectionTitle": "Использование Curl",
