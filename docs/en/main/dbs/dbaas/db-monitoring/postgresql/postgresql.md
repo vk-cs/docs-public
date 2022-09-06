@@ -2,7 +2,7 @@ You can monitor the status of individual PostgreSQL hosts using the monitoring t
 
 <warn>
 
-This tool is only available if the PostgreSQL cluster was [created](../../dbaas/dbaas-start/create-postresql-mysql) with the "Enable monitoring" option enabled and [config template](../../dbaas /dbaas-start/db-config) "Single" or "Master-Replica".
+This tool is only available if the PostgreSQL cluster was [created](../../../dbaas/dbaas-start/create-postresql-mysql) with the "Enable monitoring" option enabled and [config template](../../../dbaas /dbaas-start/db-config) "Single" or "Master-Replica".
 
 </warn>
 
@@ -113,7 +113,7 @@ Load on the disk subsystem:
 
   In this case, it is recommended:
 
-  1. [Increase option value](../../dbaas/manage-db/db-flags-options) `max_connections`.
+  1. [Increase option value](../../../dbaas/manage-db/db-flags-options) `max_connections`.
   1. Optimize queries so that there are no long transactions.
 
 - For troubleshooting replica lagging issues, see the [Patroni](https://patroni.readthedocs.io/en/latest/replication_modes.html) and [PostgreSQL](https://www.postgresql.org/ docs/current/warm-standby.html#STREAMING-REPLICATION).

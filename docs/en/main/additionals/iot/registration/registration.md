@@ -3,7 +3,7 @@ To get access to the IoT platform from VK Cloud, you must leave a request for te
 <warn>
 
 To gain access to the platform, you must already have a VK Cloud account.
-If you don't have an account, follow the instructions from [this article](https://mcs.mail.ru/docs/ru/additionals/start/get-started/registration).
+If you don't have an account, follow the instructions from [this article](/ru/additionals/start/get-started/registration).
 
 </warn>
 

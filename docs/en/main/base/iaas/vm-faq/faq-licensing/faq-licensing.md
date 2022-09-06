@@ -1,12 +1,12 @@
 ## How do I get a Windows Server license?
 
-A licensed copy of the Windows Server operating system is preinstalled in the created instance of a Windows-based virtual machine. The license copy is activated automatically after the instance is created. If an OS activation error occurs, you should [contact technical support](https://mcs.mail.ru/docs/contacts ) and specify the virtual machine ID.
+A licensed copy of the Windows Server operating system is preinstalled in the created instance of a Windows-based virtual machine. The license copy is activated automatically after the instance is created. If an OS activation error occurs, you should [contact technical support](/en/contacts) and specify the virtual machine ID.
 
 ## What licenses can I get?
 
-The list of standard licenses provided is limited, but you can view the list of available ones [on the pricing page](https://mcs.mail.ru/app/project/prices /). To do this, you must be logged in.
+The list of standard licenses provided is limited, but you can view the list of available ones [on the pricing page](https://mcs.mail.ru/app/project/prices/). To do this, you must be logged in.
 
-If necessary, you can get a license for a software product that is not on this list. To do this, you need to [contact technical support](https://mcs.mail.ru/docs/contacts ) with information about the product and the period of use.
+If necessary, you can get a license for a software product that is not on this list. To do this, you need to [contact technical support](/en/contacts) with information about the product and the period of use.
 
 ## What types of licensing are there?
 

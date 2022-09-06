@@ -1,6 +1,6 @@
 <warn>
 
-Прежде всего убедитесь, что вы [установили Terraform](https://mcs.mail.ru/docs/ru/additionals/terraform/terraform-installation) и [создали файл main.tf](https://mcs.mail.ru/docs/ru/additionals/terraform/terraform-provider-config) с необходимыми провайдерами.
+Прежде всего убедитесь, что вы [установили Terraform](/ru/additionals/terraform/terraform-installation) и [создали файл main.tf](/ru/additionals/terraform/terraform-provider-config) с необходимыми провайдерами.
 
 </warn>
 
@@ -70,7 +70,7 @@ data "vkcs_compute_flavor" "k8s_worker" {
 Посмотреть список доступных версий можно:
 
 - В визарде при создании кластера через личный кабинет.
-- На странице «[Политика поддержки версий Kubernetes](../../k8s-concepts/k8s-versions/k8s-version-support/k8s-version-support.md)».
+- На странице «[Политика поддержки версий Kubernetes](../../../k8s-concepts/k8s-versions/k8s-version-support/k8s-version-support.md)».
 - Используя данные из vkcs_kubernetes_clustertemplates. Подробнее на [официальной странице](https://registry.terraform.io/providers/MailRuCloudSolutions/mcs/latest/docs/data-sources/mcs_kubernetes_clustertemplate).
 
 2. _vkcs_kubernetes_cluster_ — кластер Kubernetes. В этом ресурсе мы описываем кластер и используем ранее описанные ресурсы.

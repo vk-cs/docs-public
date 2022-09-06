@@ -64,4 +64,4 @@ VK Cloud allows you to organize access to services in any of the following ways:
 
    Instead of several balancers for each service, a deployed Ingress Controller is sufficient, which is already configured to work with a failover balancer and balance by DNS names. Then, multiple Ingress resources are simply created using this Ingress Controller - one resource for each service that needs to be granted access.
 
-   Read more about working with Ingress in [this article](../k8s-network/k8s-ingress).
+   Read more about working with Ingress in [this article](../../k8s-network/k8s-ingress).

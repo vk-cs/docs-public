@@ -31,10 +31,10 @@ For more information about Persistent Volumes, please visit the [official websit
 ## Predefined storage classes
 
 When using PVC, you must specify a storage class.
-See [here](../k8s-pvc/manage-storage-classes) for how to work with storage classes.
+See [here](../../k8s-pvc/manage-storage-classes) for how to work with storage classes.
 
 Each Kubernetes VK Cloud cluster has pre-configured storage classes that use Cinder CSI for block storage.
-The classes provide different types of storage in [multiple regions](../../../additionals/account/concepts/regions) and availability zones:<tabs>
+The classes provide different types of storage in [multiple regions](../../../../additionals/account/concepts/regions) and availability zones:<tabs>
 <tablist>
 <tab>Region: Moscow</tab>
 <tab>Region: Amsterdam</tab>
@@ -76,4 +76,4 @@ All mentioned storage classes:
 - Allow volume expansion (`allowVolumeExpansion: true`).
 - Use immediate volume binding and allocation (`volumeBindingMode: Immediate`).
 
-Read more about these parameters and the Reclaim Policy [here](../k8s-pvc/manage-storage-classes#parametry-klassov-hraneniya).
+Read more about these parameters and the Reclaim Policy [here](../../k8s-pvc/manage-storage-classes#parametry-klassov-hraneniya).

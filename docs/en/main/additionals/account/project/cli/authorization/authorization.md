@@ -2,7 +2,7 @@ Upload the openrc file for the CLI configuration in the [“API keys”] panel (
 
 <warn>
 
-Each region has its own openrc file. You can learn more about regions in the article ["Regions"](https://mcs.mail.ru/docs/ru/additionals/start/user-account/regions).
+Each region has its own openrc file. You can learn more about regions in the article ["Regions"](/ru/additionals/start/user-account/regions).
 
 </warn>
 

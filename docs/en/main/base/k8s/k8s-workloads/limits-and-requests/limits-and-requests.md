@@ -57,7 +57,7 @@ spec:
 
 ### Preparing for work
 
-To get started, you will need a Kubernetes cluster and the _kubectl_ command line tool that is configured to communicate with your cluster. If you don't have a cluster yet, you can [create it on the platform](https://mcs.mail.ru/docs/ru/base/k8s/k8s-start/create-k8s).
+To get started, you will need a Kubernetes cluster and the _kubectl_ command line tool that is configured to communicate with your cluster. If you don't have a cluster yet, you can [create it on the platform](/ru/base/k8s/k8s-start/create-k8s).
 
 To check the Kubernetes version, type:
 

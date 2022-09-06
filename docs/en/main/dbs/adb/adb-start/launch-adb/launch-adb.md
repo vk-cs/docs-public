@@ -1,6 +1,6 @@
 ## Connecting to an instance
 
-To connect to an ADB instance, use [Instructions for connecting to a database instance](https://mcs.mail.ru/docs/ru/dbs/dbaas/dbaas-start/db-connect).
+To connect to an ADB instance, use [Instructions for connecting to a database instance](/ru/dbs/dbaas/dbaas-start/db-connect).
 
 ## Loading data
 

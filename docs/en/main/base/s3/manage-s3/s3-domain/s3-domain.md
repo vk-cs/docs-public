@@ -28,7 +28,7 @@ When you create a bucket with a period (.) Character in the name, it will only b
 
 ## Installing an SSL Certificate
 
-To install a personal SSL certificate, you should [contact technical support](https://mcs.mail.ru/docs/contacts) , specifying the project, bucket data and providing an SSL certificate for installation.
+To install a personal SSL certificate, you should [contact technical support](/en/contacts) , specifying the project, bucket data and providing an SSL certificate for installation.
 
 After installing the certificate, the bucket will be available via a link of the form:
 

@@ -19,7 +19,7 @@ To create a disk [in VK Cloud personal account](https://mcs.mail.ru/app/services
 
 <info>
 
-You can create disks with the LL NVME type if you have access to high-performance virtual machine templates. You can get access to high-freq configurations with [help of technical support](https://mcs.mail.ru/docs/contacts).
+You can create disks with the LL NVME type if you have access to high-performance virtual machine templates. You can get access to high-freq configurations with [help of technical support](/en/contacts).
 
 </info>
 

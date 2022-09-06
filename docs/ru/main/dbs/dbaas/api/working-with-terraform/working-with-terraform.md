@@ -1,4 +1,4 @@
-Перед началом с работы с Terraform убедитесь, что вы [установили Terraform](https://mcs.mail.ru/docs/ru/additionals/terraform/terraform-installation) и [создали файл main.tf](https://mcs.mail.ru/docs/ru/dbs/dbaas/api/terraform-for-dbaas) с необходимыми провайдерами.
+Перед началом с работы с Terraform убедитесь, что вы [установили Terraform](/ru/additionals/terraform/terraform-installation) и [создали файл main.tf](/ru/dbs/dbaas/api/terraform-for-dbaas) с необходимыми провайдерами.
 
 ## Создание инстанса БД
 
