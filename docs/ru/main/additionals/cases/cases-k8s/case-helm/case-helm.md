@@ -1,11 +1,11 @@
 ## Конфигурация оборудования
 
 - Установленный и настроенный кластер Kubernetes.
-- При использовании Helm2 - установленный Tiller.
+- При использовании Helm2 — установленный Tiller.
 
 ## Что такое Cert-manager
 
-Cert-manager - нативное для Kubernetes средство управления сертификатами. Cert-manager может получать сертификаты из нескольких источников (например, [Let’s Encrypt](https://letsencrypt.org/), [HashiCorp Vault](https://www.vaultproject.io/), [Venafi](https://www.venafi.com/)), из локальных контейнеров, содержащих сертификат и ключ, либо может генерировать самоподписанные сертификаты, которые чаще всего используются для предоставления https-доступа к ingress-контроллерам. Кроме того, Cert-manager контролирует срок действия сертификатов и поддерживает автоматическое обновление сертификатов. Cхема организации Cert-manager (источник: [официальная документация](https://cert-manager.io/docs/)):
+Cert-manager — нативное для Kubernetes средство управления сертификатами. Cert-manager может получать сертификаты из нескольких источников (например, [Let’s Encrypt](https://letsencrypt.org/), [HashiCorp Vault](https://www.vaultproject.io/), [Venafi](https://www.venafi.com/)), из локальных контейнеров, содержащих сертификат и ключ, либо может генерировать самоподписанные сертификаты, которые чаще всего используются для предоставления https-доступа к ingress-контроллерам. Кроме того, Cert-manager контролирует срок действия сертификатов и поддерживает автоматическое обновление сертификатов. Cхема организации Cert-manager (источник: [официальная документация](https://cert-manager.io/docs/)):
 
 ![](./assets/1580395247227-1580395247227.png)
 
@@ -30,6 +30,9 @@ GoVersion:"go1.12.12", Compiler:"gc", Platform:"linux/amd64"
 2.  В зависимости от версии Kubernetes создайте CustomResouceDefinitions, необходимый для работы Cert-Manager, используя одну из команд:
 
 ```
+# Kubernetes 1.22.9
+kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.9.1/cert-manager.crds.yaml
+
 # Kubernetes 1.15+
 kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v0.16.0/cert-manager.crds.yaml
 
@@ -37,11 +40,11 @@ kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/relea
 kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v0.16.0/cert-manager-legacy.crds.yaml
 ```
 
-Поскольку мы используем Kubernetes 1.16.4, выполним команду:
+Поскольку мы используем Kubernetes 1.22.9, выполним команду:
 
 ```
 kubectl apply --validate=false -f
-https://github.com/jetstack/cert-manager/releases/download/v0.16.0/cert-manager.crds.yaml
+https://github.com/jetstack/cert-manager/releases/download/v1.9.1/cert-manager.crds.yaml
 
 customresourcedefinition.apiextensions.k8s.io/certificaterequests.cert-manager.io created
 customresourcedefinition.apiextensions.k8s.io/certificates.cert-manager.io created
@@ -142,7 +145,7 @@ kind: Namespace
 metadata:
     name: cert-manager-test
 ---
-apiVersion: cert-manager.io/v1alpha2
+apiVersion: cert-manager.io/v1
 kind: Issuer
 metadata:
     name: test-selfsigned
@@ -150,7 +153,7 @@ metadata:
 spec:
     selfSigned: {}
 ---
-apiVersion: cert-manager.io/v1alpha2
+apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
     name: selfsigned-cert
