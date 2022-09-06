@@ -4,15 +4,20 @@
 
 Скачайте файл [smarty.py](https://cloud.mail.ru/public/2xP1/vWgqf332Z).
 
-<table><tbody><tr><td><pre class="language-shell">python examples/python/smarty.py \
--u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider="mcs&amp;oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+```python
+
+python examples/python/smarty.py \
+-u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider="mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
 -p examples/friends1.jpg \
 --meta '{"space":"1", "create_new":false}' \
--v</pre></td></tr></tbody></table>
+-v
+```
 
 Получим ответ:
 
-<table><tbody><tr><td><pre class="language-shell">{
+```json
+
+{
 "status":200,
 "body":{
 "objects": [
@@ -33,29 +38,33 @@
 },
 "htmlencoded":false,
 "last_modified":0
-}</pre></td></tr></tbody></table>
+}
+```
 
 Как видим, на фотографии нашлось 6 лиц, но все они "undefined". Что значит "undefined"?Это значит, что в базе данных еще нет ни одной распознанной персоны.
 
-Обратите внимание на параметры "space":"1" и "create_new":false, их значение вскоре станетпонятно из примеров.
+Обратите внимание на параметры "space":"1" и "create_new":false, их значение вскоре станет понятно из примеров.
 
-### Добавление персоны в базу данных
+## Добавление персоны в базу данных
 
-Попробуем добавить в базу данных персону.На этой фотографии одна персона:
+Попробуем добавить в базу данных персону. На этой фотографии одна персона:
 
 ![](./assets/cac1f88286d6ae10c9abaf59abe8a944.jpeg)
 
 Мы установим, что эта персона имеет id=1 в базе данных. Сделаем это с помощью следующего запроса и параметра "person_id":1.
 
-<table><tbody><tr><td><pre class="language-shell">python examples/python/smarty.py \
--u "https://smarty.mail.ru/api/v1/persons/set?oauth_provider=mcs&amp;oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+```python
+python examples/python/smarty.py \
+-u "https://smarty.mail.ru/api/v1/persons/set?oauth_provider=mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
 -p examples/rachel-green.jpg \
 --meta '{"space":"1", "images":[{"person_id":1}]}' \
--v</pre></td></tr></tbody></table>
+-v
+```
 
 Если запрос верный, ответ будет такой:
 
-<table><tbody><tr><td><pre class="language-shell">{
+```json
+{
 "status":200,
 "body":{
 "objects":[
@@ -64,19 +73,23 @@
 },
 "htmlencoded":false,
 "last_modified":0
-}</pre></td></tr></tbody></table>
+}
+```
 
 Теперь попробуем поискать лица снова.Выполняем тот же запрос:
 
-<table><tbody><tr><td><pre class="language-shell">python examples/python/smarty.py \
--u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mcs&amp;oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+```python
+python examples/python/smarty.py \
+-u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
 -p examples/friends1.jpg \
 --meta '{"space":"1", "create_new":false}' \
--v</pre></td></tr></tbody></table>
+-v
+```
 
 На этот раз получим ответ:
 
-<table><tbody><tr><td><pre class="language-shell">{
+```json
+{
 "status":200,
 "body":{
 "objects": [
@@ -97,7 +110,8 @@
 },
 "htmlencoded":false,
 "last_modified":0
-}</pre></td></tr></tbody></table>
+}
+```
 
 Теперь на фотографии с шестью персонами мы находим персону, которую мы загрузили с помощью метода persons/set. Мы загружали в базу данных персону с id=1, и теперь она распознана:
 
@@ -107,15 +121,18 @@
 
 Теперь вернемся в самое начало и представим, что мы еще не загружали персоны в базу данных. Попробуем выполнить запрос с "create_new":true:
 
-<table><tbody><tr><td><pre class="language-shell">python examples/python/smarty.py \
--u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mcs&amp;oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+```python
+python examples/python/smarty.py \
+-u "https://smarty.mail.ru/api/v1/persons/recognize?oauth_provider=mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
 -p examples/friends1.jpg \
 --meta '{"space":"1", "create_new":true}' \
--v</pre></td></tr></tbody></table>
+-v
+```
 
 В ответе:
 
-<table><tbody><tr><td><pre class="language-shell">{
+```json
+{
 "status":200,
 "body":{
 "objects": [
@@ -136,7 +153,8 @@
 },
 "htmlencoded":false,
 "last_modified":0
-}</pre></td></tr></tbody></table>
+}
+```
 
 Видно, что все найденные персоны автоматически записались в базу данных, и им присвоены id. Если теперь поискать Рейчел методом persons/recognize, то теперь она будет распознана как "person6".
 
@@ -147,18 +165,22 @@
 - на голливудской киностудии стоит искать (вызывать persons/recognize) в "space":"1",
 - в московской—в "space":"2".
 
-### Удаление персон
+## Удаление персоны из базы данных
 
 Если нужно почистить спейс (space) или какую-то персону добавили в базу данных по ошибке, необходимо использовать запрос persons/delete.
 
-<table><tbody><tr><td><pre class="language-shell">python examples/python/smarty.py \
--u "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mcs&amp;oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
+```python
+python examples/python/smarty.py \
+-u "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
 --meta '{"space":"1", "images":[{"name":"myname", "person_id":1}]}' \
--v</pre></td></tr></tbody></table>
+-v
+```
 
 Если запрос верный, ответ будет такой:
 
-<table><tbody><tr><td><pre class="language-shell">{
+```json
+
+{
 "status":200,
 "body":
 {
@@ -166,7 +188,8 @@
 },
 "htmlencoded":false,
 "last_modified":0
-}</pre></td></tr></tbody></table>
+}
+```
 
 Для этого запроса не требуется передавать картинку, достаточно только мета-информации c указанием id персоны, которую надо удалить.
 

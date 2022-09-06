@@ -1,7 +1,7 @@
 {
   "title": "Распознавание данных с видео",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "API для распознавания данных с видео",
   "metaTitle": "Распознавание данных с видео - VK Cloud",
   "metaDescription": "Для распознавания данных с видео используются три метода API: Get\nSubscribe\nUnsubscribe Рассмотрим подробнее каждый из них. GET Данный метод позволяет полу",
   "sectionTitle": "Распознавание данных с видео",
