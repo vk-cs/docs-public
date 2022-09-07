@@ -1,12 +1,13 @@
 {
-    "title": "Установка плагина Fluent Bit",
-    "pageDescription": "",
-    "shortDescription": "Инструкция по установке плагина",
-    "metaTitle": "Установка плагина Fluent Bit - VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Установка плагина Fluent Bit",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 3
-  }
+  "title": "Установка плагина Fluent Bit",
+  "pageDescription": "",
+  "shortDescription": "Инструкция по установке плагина",
+  "metaTitle": "Установка плагина Fluent Bit - VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Установка плагина Fluent Bit",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "40bfc03f-0ceb-4338-81ae-44c3e7936ba3"
+}

@@ -8,5 +8,6 @@
   "markdown": "The section describes the capabilities of the service, its connection and methods of viewing logs.",
   "icon": "",
   "infobarItems": null,
-  "weight": 0
+  "weight": 0,
+  "uuid": "855a1c3c-8ffe-4edd-910f-888d78514f2e"
 }

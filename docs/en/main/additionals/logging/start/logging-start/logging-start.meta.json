@@ -1,12 +1,13 @@
 {
-    "title": "Fast start",
-    "pageDescription": "",
-    "shortDescription": "Steps that must be performed before starting work",
-    "metaTitle": "Fast start - VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Fast start",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
-  }
+  "title": "Fast start",
+  "pageDescription": "",
+  "shortDescription": "Steps that must be performed before starting work",
+  "metaTitle": "Fast start - VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Fast start",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "66721e11-9a49-45b8-9f69-5ba973d437c8"
+}
