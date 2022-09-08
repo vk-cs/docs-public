@@ -8,7 +8,7 @@ Connecting externally requires an ADB instance with external IP enabled. You can
 
 <warn>
 
-To connect to an ADB instance, use the [database instance connection instructions](../../../../dbaas/dbaas-start/db-connect/).
+To connect to an ADB instance, use the [database instance connection instructions](/docs/en/dbs/dbaas/dbaas-start/db-connect/).
 
 When using the examples, replace `<HOST>` with the external IP address of the instance.
 

@@ -1,6 +1,6 @@
 <warn>
 
-First of all, make sure you [installed Terraform](/ru/additionals/terraform/terraform-installation) and [created the main.tf file](/ru/additionals/terraform/terraform-provider-config "change-lang") with the necessary providers.
+First of all, make sure you [installed Terraform](/docs/en/additionals/terraform/terraform-installation) and [created the main.tf file](https://mcs.mail. ru/docs/ru/additionals/terraform/terraform-provider-config) with the necessary providers.
 
 </warn>
 
@@ -8,7 +8,7 @@ To create a VPN connection, create a vpn.tf file, which will describe the config
 
 ### Create a virtual network
 
-To create a VPN connection, we need a virtual network with a router. If you already have an existing network and router, then go to the [Creating a VPN connection](../../create) step. Let's create a network with the following objects:
+To create a VPN connection, we need a virtual network with a router. If you already have an existing network and router, then go to the [Creating a VPN connection](/docs/en/base/iaas/terraform/create) step. Let's create a network with the following objects:
 
 1. Resources (resource):
 
