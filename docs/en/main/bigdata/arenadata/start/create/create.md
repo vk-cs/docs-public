@@ -37,7 +37,7 @@ At this stage of creation, you must specify some cluster parameters. The creatio
 
 <warn>
 
-Some templates require access to a special VM flavor. To gain access, contact [support service](/en/contacts).
+Some templates require access to a special VM flavor. To gain access, contact [support service](/docs/en/contacts).
 
 </warn>
 
@@ -56,7 +56,7 @@ At this stage of creation, it is necessary to specify some parameters of the clu
 | Disk type | Disk type (HDD/SSD). |
 | Connect monitoring node | Connect Arenadata Monitoring bundle. More details about the functionality can be found on the [Arenadata website](https://docs.arenadata.io/mon/en/index.html). |
 | Connect edge node | Connect a node with UI services added to the cluster. |
-| HA Cluster | Connecting a High-Availability Cluster. This service is performed manually by VK Cloud technical support specialists. The request is made in the [support chat](/en/contacts). |
+| HA Cluster | Connecting a High-Availability Cluster. This service is performed manually by VK Cloud technical support specialists. The request is made in the [support chat](/docs/en/contacts). |
 | Disk autoscaling | Enabling automatic disk space expansion on cluster nodes. |
 
 After selection, click "Next step" to proceed to the selection of components to be installed on the cluster nodes.## Select components for Arenadata Hadoop cluster nodes
