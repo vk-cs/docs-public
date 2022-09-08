@@ -61,7 +61,7 @@ A node group can be added in several ways:
 
       1. **Percentage of Unavailable Nodes During Cluster Upgrade**: Percentage of nodes that are allowed to be temporarily decommissioned during a cluster upgrade that is [staged](/docs/en/base/k8s/k8s-clusters/update-k8s) under the rolling upgrade scheme.
 
-         For example, let's say there are four nodes in a node group, and the percentage is set to 50%. During the upgrade, two nodes will be decommissioned and upgraded one by one, then, after the upgraded units are returned to service, the remaining two. When calculating, the number of nodes is rounded up.
+         For example, let's say there are four nodes in a node group, and the percentage is set to 50%. During the upgrade, two nodes will be decommissioned and upgraded, then, after the upgraded units are returned to service, the remaining two.
 
       1. Add [Kubernetes Labels and Taints](labels-and-taints) as needed.
 
