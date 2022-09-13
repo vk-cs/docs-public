@@ -211,7 +211,7 @@ Connection: close
 ```
 ...
 DELETE /sammy.png HTTP/1.1
-Host: [my-test-bucket1.hb.bizmrg.com](//my-test-bucket1.hb.bizmrg.com)
+Host: my-test-bucket1.hb.bizmrg.com
 Content-Length: 176
 Content-MD5: 44c4dcd3d2f3645544a366ae481342fa
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
