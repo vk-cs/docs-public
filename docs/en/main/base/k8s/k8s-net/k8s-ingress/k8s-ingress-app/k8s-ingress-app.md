@@ -1,10 +1,10 @@
-In Kubernetes clusters, it is possible to organize access to services running over HTTP and HTTPS protocols using [Ingress](/docs/en/base/k8s/k8s-net/k8s-ingress), which may be more profitable than using individual load balancers for individual services. Read more here.
+In Kubernetes clusters, it is possible to organize access to services running over HTTP and HTTPS protocols using [Ingress](../../../k8s-net/k8s-ingress), which may be more profitable than using individual load balancers for individual services. Read more here.
 
 To organize access to services using Ingress, you need:
 
 1. Ingress controller.
 
-   You can [create a Kubernetes cluster](/docs/en/base/k8s/k8s-clusters/create-k8s) with a pre-installed NGINX-based Ingress controller or add an Ingress controller to the cluster later.
+   You can [create a Kubernetes cluster](../../../manage-k8s/create-k8s) with a pre-installed NGINX-based Ingress controller or add an Ingress controller to the cluster later.
    The controller integrates with VK Cloud, allowing you to provide access to your services using the same dedicated OpenStack load balancer.
 
 1. The ability to manage the DNS zone for the domain that will be used by Ingress.
@@ -28,14 +28,14 @@ The services from the example [Cafe from NGINX](https://github.com/nginxinc/kube
 
 ## 1. Preparation
 
-1. [Create a Kubernetes cluster](/docs/en/base/k8s/k8s-clusters/create-k8s).
+1. [Create a Kubernetes cluster](../../../manage-k8s/create-k8s).
 
    When creating a cluster:
 
    1. At step **Configuration**, make sure that an Ingress controller based on NGINX is selected in the list of pre-installed services.
    1. At step **Creating a cluster**, make sure that the "Assign external IP" option is enabled.
 
-1. [Make sure you can connect to the cluster](/docs/en/base/k8s/k8s-start/connect-k8s) using `kubectl'.
+1. [Make sure you can connect to the cluster](../../../k8s-start/connect-k8s) using `kubectl'.
 
 1. Find out the IP address of the load balancer for the Ingress controller in one of the ways:
 
@@ -98,7 +98,7 @@ The services from the example [Cafe from NGINX](https://github.com/nginxinc/kube
    kubectl apply -f ./cafe-secret.yaml
    ```
 
-   For more information about installing SSL certificates for Ingress, see [here](k8s-cert).
+   For more information about installing SSL certificates for Ingress, see [here](../../k8s-cert).
 
    <warn>
 
@@ -171,7 +171,8 @@ The services from the example [Cafe from NGINX](https://github.com/nginxinc/kube
 
    This will mean that the Ingress controller is routing traffic according to the Ingress resource settings.
 
-   To do this, run the command by specifying [Ingress Controller IP address](#1--preparation) instead of `NNN.NNN.NNN.NNN`:
+   <!-- TODO: Добавить якорь [Ingress Controller IP address](#1--preparation) -->
+   To do this, run the command by specifying Ingress Controller IP address instead of `NNN.NNN.NNN.NNN`:
 
    1. For the URL `/tea`:
 

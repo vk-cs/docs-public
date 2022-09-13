@@ -6,9 +6,9 @@
 
 Для решения проблемы необходимо выполнить следующие шаги:
 
-1. Установить и настроить kubectl согласно [инструкции](/docs/base/k8s/k8s-start/connect-k8s).
+1. Установить и настроить kubectl согласно [инструкции](../../k8s-start/connect-k8s).
 
-2. Сохранить в текущий каталог файл [dashboard-19-fix.yaml](/docs/docs/ru/main/base/k8s/k8s-troubleshooting/k8s-dashboard-error/assets/dashboard-19-fix.yaml "download").
+2. Сохранить в текущий каталог файл [dashboard-19-fix.yaml](./assets/dashboard-19-fix.yaml "download").
 3. Выполнить следующую последовательность команд:
 
 ```bash
