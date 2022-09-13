@@ -1,6 +1,7 @@
 Pods can access various information and components of a Kubernetes cluster. Also, with certain pod settings, the pods themselves and the Kubernetes cluster in which they run can be vulnerable to attacks.
 
-In a Kubernetes cluster using [installed Gatekeeper](/docs/en/base/k8s/k8s-addons/k8s-gatekeeper/k8s-opa) you can apply constraints (constraints). These constraints are created from constraint templates. You can [create your own patterns and restrictions](/docs/en/base/k8s/k8s-addons/k8s-gatekeeper/k8s-policy).
+<!-- TODO: Добавить ссылку на английскую версию [create your own patterns and restrictions](../../../../../../ru/main/base/k8s/k8s-addons/k8s-gatekeeper/k8s-policy).  -->
+In a Kubernetes cluster using [installed Gatekeeper](../../../../../../ru/main/base/k8s/k8s-addons/k8s-gatekeeper/k8s-opa) you can apply constraints (constraints). These constraints are created from constraint templates. You can create your own patterns and restrictions.
 
 In addition, Kubernetes VK Cloud clusters already contain [preconfigured templates and restrictions] (#prednastroennye-shablony-i-ogranicheniya-gatekeeper) aimed at improving the security of deployed workload operation.
 

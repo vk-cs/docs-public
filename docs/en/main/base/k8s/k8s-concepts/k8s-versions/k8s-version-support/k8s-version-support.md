@@ -6,9 +6,9 @@ At the moment, Kubernetes aaS from VK Cloud has a similar version of Kubernetes:
 - 1.21.4
 - 1.20.4
 
-[Creating a new cluster](/docs/en/base/k8s/k8s-clusters/create-k8s) maximizes [Kubernetes version](#k8s-versions-list) availability. We recommend [updating the cluster](/docs/en/base/k8s/k8s-clusters/update-k8s) to the latest version available, if possible.
+[Creating a new cluster](../../../manage-k8s/create-k8s) maximizes Kubernetes version availability. We recommend [updating the cluster](../../../manage-k8s/update-k8s) to the latest version available, if possible.
 
-If the cluster is created on [Kubernetes version](#k8s-versions-list), which is more implausible, then we cannot find it to work correctly. All emerging problems with the cluster should be solved by the user independently.
+If the cluster is created on Kubernetes version, which is more implausible, then we cannot find it to work correctly. All emerging problems with the cluster should be solved by the user independently.
 
 ## Kubernetes version support <a id="k8s-versions-list"></a>
 
@@ -25,7 +25,7 @@ A Kubernetes Version Support Consumption Report will be sent out via email and i
 |18.01.12|23 March 2020|23.12.2020|23.02.2022|
 |1.17.8|December 9, 2019|08/09/2020|12/09/2021|
 
-The history of version changes can be viewed [here](k8s-version-changelog).
+The history of version changes can be viewed [here](../k8s-version-changelog).
 
 ## Feature support service in Kubernetes version <a id="k8s-features-list"></a>
 
