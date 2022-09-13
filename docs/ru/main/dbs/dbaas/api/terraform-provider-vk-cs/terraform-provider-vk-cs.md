@@ -22,7 +22,7 @@ password = var.db_user_password
 Для того чтобы задать значение переменной можно использовать один их следующих вариантов. Подробнее об этом можно прочитать [здесь](https://learn.hashicorp.com/tutorials/terraform/sensitive-variables).
 
 - Создать файл `secret.tfvars`. Записать `db_user_password="YOUR_DB_PASSWORD"` в него и передать его в качестве аргумента команды `terraform apply -var-file="secret.tfvars"`. Таким образом, чувствительные данные будут храниться отдельно от остальной конфигурации.
-- Задать через переменную окружения с префиксом TF_VAR. Terrafrom автоматически их подхватит и применит в конфигурации:
+- Задать через переменную окружения с префиксом TF_VAR. Terraform автоматически их подхватит и применит в конфигурации:
   - **Mac or Linux**: `export TF_VAR_db_user_password=YOUR_DB_PASSWORD`
   - **Windows**: `$Env:TF_VAR_db_usernamedb_user_password = "YOUR_DB_PASSWORD"`
 
