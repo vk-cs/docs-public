@@ -18,13 +18,6 @@
 
 Чтобы подключиться к кластеру с помощью `kubectl`:
 
-<tabs>
-<tablist>
-<tab>Kubernetes v1.22 и ниже</tab>
-<tab>Kubernetes v1.23+</tab>
-</tablist>
-<tabpanel>
-
 1. [Установите](../../k8s-clusters/kubectl/kubectl.md) `kubectl`, если он еще не установлен.
 
    <warn>
@@ -110,7 +103,7 @@
    1. Укажите `kubectl` использовать этот файл конфигурации, задав переменную среды окружения:
 
       ```powershell
-      $Env:KUBECONFIG="$Env:KUBECONFIG;$HOME\.kube\config"
+      $Env:KUBECONFIG="$HOME\.kube\config"
       ```
 
    </tabpanel>
