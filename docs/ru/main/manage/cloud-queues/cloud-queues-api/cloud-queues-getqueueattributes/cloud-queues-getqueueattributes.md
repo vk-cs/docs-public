@@ -72,7 +72,7 @@ Attribute.N.Value (значение)
 #### Образец запроса
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=GetQueueAttributes
 &AttributeName.1=All
 &Expires=2020-10-18T22:52:43PST
@@ -135,7 +135,7 @@ https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
 #### Образец запроса
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=GetQueueAttributes
 &Action=GetQueueAttributes
 &AttributeName.1=VisibilityTimeout

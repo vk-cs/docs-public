@@ -27,7 +27,7 @@ URL-адреса и имена очередей чувствительны к р
 #### Образец запроса
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=RemovePermission
 &Label=MyLabel
 &Expires=2020-04-18T22:52:43PST
