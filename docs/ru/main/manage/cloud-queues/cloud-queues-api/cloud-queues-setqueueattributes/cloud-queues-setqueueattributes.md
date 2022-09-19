@@ -97,7 +97,7 @@ InvalidAttributeName
 #### Образец запроса
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=SetQueueAttributes
 &Attribute.Name=Policy
 &Attribute.Value={"Version":"2012-11-05","Id"
@@ -117,7 +117,7 @@ Queue"}]}
 #### Образец запроса
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=SetQueueAttributes
 &Attribute.Name=VisibilityTimeout
 &Attribute.Value=35
@@ -141,9 +141,9 @@ https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
 #### Образец запроса
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MySourceQueue/
+https://sqs.mcs.mail.ru/123456789012/MySourceQueue/
 ?Action=SetQueueAttributes
-&Attribute.1.Value={"maxReceiveCount":"5",+"deadLetterTargetArn":"arn:aws:sqs:us-east-2:123456789012:MyDeadLetterQueue"}
+&Attribute.1.Value={"maxReceiveCount":"5",+"deadLetterTargetArn":"arn:aws:sqs:123456789012:MyDeadLetterQueue"}
 &Attribute.1.Name=RedrivePolicy
 &Version=2012-11-05
 ```
@@ -163,7 +163,7 @@ https://sqs.ru-east-2.mcs.mail.ru/123456789012/MySourceQueue/
 #### Образец запроса
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=SetQueueAttributes
 &Attribute.Name=ReceiveMessageWaitTimeSeconds
 &Attribute.Value=20
@@ -177,7 +177,7 @@ https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
 #### Образец запроса
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=SetQueueAttributes
 &DelaySeconds=45
 &Expires=2020-12-20T22:52:43PST

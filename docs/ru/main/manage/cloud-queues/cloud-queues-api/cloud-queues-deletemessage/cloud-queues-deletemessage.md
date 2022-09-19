@@ -41,7 +41,7 @@ URL-адреса и имена очередей чувствительны к р
 #### Запрос образца
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=DeleteMessage
 &ReceiptHandle=MbZj6wDWli+JvwwJaBV+3dcjk2YW2vA3+STFFljT
 M8tJJg6HRG6PYSasuWXPJB+CwLj1FjgXUv1uSj1gUPAWV66FU/WeR4mq2OKpEGY

@@ -25,7 +25,7 @@ TagKey.N
 #### Запрос образца
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=TagQueue
 &TagKey=QueueType
 &Expires=2020-10-18T22:52:43PST

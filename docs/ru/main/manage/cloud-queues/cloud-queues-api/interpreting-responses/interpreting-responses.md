@@ -13,11 +13,11 @@
 
 ```
 <CreateQueueResponse
-   xmlns=https://sqs.ru-east-2.mcs.mail.ru/doc/2019-12-07/
+   xmlns=https://sqs.mcs.mail.ru/doc/2019-12-07/
    xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance
    xsi:type=CreateQueueResponse>
    <CreateQueueResult>
-      <QueueUrl>https://sqs.ru-east-2.mcs.mail.ru/770098461991/queue2</QueueUrl>
+      <QueueUrl>https://sqs.mcs.mail.ru/770098461991/queue2</QueueUrl>
    </CreateQueueResult>
    <ResponseMetadata>
       <RequestId>cb919c0a-9bce-4afe-9b48-9bdf2412bb67</RequestId>

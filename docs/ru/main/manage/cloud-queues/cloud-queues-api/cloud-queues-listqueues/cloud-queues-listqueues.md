@@ -97,7 +97,7 @@ ListQueues возвращает список ваших очередей в те
 Пример запроса:
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/
+https://sqs.mcs.mail.ru/
 ?Action=ListQueues
 &QueueNamePrefix=M
 &Expires=2020-04-18T22:52:43PST
@@ -112,8 +112,8 @@ https://sqs.ru-east-2.mcs.mail.ru/
 ```
 <ListQueuesResponse>
     <ListQueuesResult>
-        <QueueUrl>https://sqs.us-east-2.amazonaws.com/123456789012/MyQueue</QueueUrl>
-        <QueueUrl>https://sqs.us-east-2.amazonaws.ru/123456789012/MyQueue</QueueUrl>
+        <QueueUrl>https://sqs.mcs.mail.ru/123456789012/MyQueue</QueueUrl>
+        <QueueUrl>https://sqs.mcs.mail.ru/123456789012/MyQueue</QueueUrl>
     </ListQueuesResult>
     <ResponseMetadata>
         <RequestId>725275ae-0b9b-4762-b238-436d7c65a1ac</RequestId>

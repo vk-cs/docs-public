@@ -37,7 +37,7 @@ AWS.SimpleQueueService.PurgeQueueInProgress
 #### Запрос образца
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=PurgeQueue
 &Expires=2020-12-12T22:52:43PST
 &Version=2012-11-05
