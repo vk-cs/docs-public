@@ -93,7 +93,7 @@ AWS.SimpleQueueService.UnsupportedOperation
 #### Образец запроса
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=SendMessageBatch
 &SendMessageBatchRequestEntry.1.Id=test_msg_001
 &SendMessageBatchRequestEntry.1.MessageBody=test message body 1
@@ -136,7 +136,7 @@ https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
 #### Запрос образца
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=SendMessageBatch
 &SendMessageBatchRequestEntry.1.Id=test_msg_no_message_timer
 &SendMessageBatchRequestEntry.1.MessageBody=test message body 1
