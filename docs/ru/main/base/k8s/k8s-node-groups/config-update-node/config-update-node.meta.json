@@ -1,12 +1,13 @@
 {
-    "title": "Настройки обновления нод",
-    "pageDescription": "",
-    "shortDescription": "Изменение доли недоступных нод при обновление кластера",
-    "metaTitle": "Настройки обновления нод - VK Cloud Solutions",
-    "metaDescription": "Настройки обновления нод",
-    "sectionTitle": "Настройки обновления нод",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 4
-  }
+  "title": "Настройки обновления нод",
+  "pageDescription": "",
+  "shortDescription": "Изменение доли недоступных нод при обновление кластера",
+  "metaTitle": "Настройки обновления нод - VK Cloud Solutions",
+  "metaDescription": "Настройки обновления нод",
+  "sectionTitle": "Настройки обновления нод",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "ce718f01-c8d6-432d-b340-fc6a2bb1e40b"
+}
