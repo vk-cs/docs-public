@@ -49,7 +49,7 @@ URL-адреса и имена очередей чувствительны к р
 #### Образец запроса
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=ChangeMessageVisibility
 &VisibilityTimeout=60
 &ReceiptHandle=MbZj6wDWli+JvwwJaBV+3dcjk2YW2vA3+STFFljT
