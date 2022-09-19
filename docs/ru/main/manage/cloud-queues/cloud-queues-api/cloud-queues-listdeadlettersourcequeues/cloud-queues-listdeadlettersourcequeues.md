@@ -70,9 +70,9 @@ AWS.SimpleQueueService.NonExistentQueue
 #### Образец ответа
 
 ```
-<ListDeadLetterSourceQueuesResponse xmlns="https://queue.amazonaws.com/doc/2012-11-05/">
+<ListDeadLetterSourceQueuesResponse xmlns="https://sqs.mcs.mail.ru/doc/2012-11-05/">
     <ListDeadLetterSourceQueuesResult>
-        <QueueUrl>https://sqs.us-east-2.amazonaws.com/123456789012/MySourceQueue</QueueUrl>
+        <QueueUrl>https://sqs.mcs.mail.ru/123456789012/MySourceQueue</QueueUrl>
     </ListDeadLetterSourceQueuesResult>
     <ResponseMetadata>
         <RequestId>8ffb921f-b85e-53d9-abcf-d8d0057f38fc</RequestId>

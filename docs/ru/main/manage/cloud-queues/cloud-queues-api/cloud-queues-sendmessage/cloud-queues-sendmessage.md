@@ -158,7 +158,7 @@ InvalidMessageContents
 #### Образец запроса
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=SendMessage
 &MessageBody=This+is+a+test+message
 &MessageAttribute.1.Name=my_attribute_name_1
@@ -192,7 +192,7 @@ https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
 #### Запрос образца
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=SendMessage
 &MessageBody=This+is+a+test+message
 &DelaySeconds=45
