@@ -27,7 +27,7 @@ apt install python3-openstackclient
 ##### С помощью dnf (RHEL 8, CentOS 8,  Fedora):
 
 ```bash
-dnf install [https://www.rdoproject.org/repos/rdo-release.el8.rpm](https://www.rdoproject.org/repos/rdo-release.el8.rpm) 
+dnf install https://www.rdoproject.org/repos/rdo-release.el8.rpm
 dnf update
 dnf install python3-openstackclient
 ```
@@ -38,7 +38,7 @@ dnf install python3-openstackclient
 ##### С помощью yum (CentOS 7):
 
 ```bash
-yum install [https://rdoproject.org/repos/rdo-release.rpm](https://rdoproject.org/repos/rdo-release.rpm) 
+yum install https://rdoproject.org/repos/rdo-release.rpm
 yum update
 yum install python2-openstackclient
 ```
