@@ -1,12 +1,13 @@
 {
-    "title": "Установка kubectl",
-    "pageDescription": "",
-    "shortDescription": "Инструкция по установке Установка kubectl",
-    "metaTitle": "Установка Установка kubectl - VK Cloud Solutions",
-    "metaDescription": "Установка Установка kubectl",
-    "sectionTitle": "Установка Установка kubectl",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 6
-  }
+  "title": "Установка kubectl",
+  "pageDescription": "",
+  "shortDescription": "Инструкция по установке Установка kubectl",
+  "metaTitle": "Установка Установка kubectl - VK Cloud Solutions",
+  "metaDescription": "Установка Установка kubectl",
+  "sectionTitle": "Установка Установка kubectl",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 6,
+  "uuid": "aadd5bbf-41b8-4b6f-b01f-6aec1d199e5f"
+}
