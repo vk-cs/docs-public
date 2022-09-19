@@ -31,7 +31,7 @@ Tag.N.Value (значение)
 #### Образец запроса
 
 ```
-https://sqs.us-east-2.amazonaws.com/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=ListQueueTags
 &Expires=2020-10-18T22:52:43PST
 &Version=2012-11-05

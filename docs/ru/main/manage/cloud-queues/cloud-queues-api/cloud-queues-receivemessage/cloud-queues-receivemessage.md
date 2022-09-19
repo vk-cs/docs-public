@@ -140,7 +140,7 @@ OverLimit
 #### Образец запроса
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=ReceiveMessage
 &MaxNumberOfMessages=5
 &VisibilityTimeout=15
@@ -193,7 +193,7 @@ https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
 #### Образец запроса
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=ReceiveMessage
 &WaitTimeSeconds=10
 &MaxNumberOfMessages=5

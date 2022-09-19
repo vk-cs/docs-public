@@ -75,7 +75,7 @@ URL-адрес созданной очереди VK Cloud SQS.
 #### Образец запроса
 
 ```
-https://sqs.ru-east-2.mcs.mail.ru/
+https://sqs.mcs.mail.ru/
 ?Action=CreateQueue
 &QueueName=MyQueue
 &Tag.Key=QueueType
@@ -109,7 +109,7 @@ URL-адреса и имена очередей чувствительны к р
 #### Образец запроса
 
 ```
-https://sqs.us-east-2.mcs.mail.ru/123456789012/MyQueue/
+https://sqs.mcs.mail.ru/123456789012/MyQueue/
 ?Action=CreateQueue
 &QueueName=MyQueue
 &Attribute.1.Name=DelaySeconds
