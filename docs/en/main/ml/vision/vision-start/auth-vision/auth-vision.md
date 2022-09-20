@@ -1,113 +1,145 @@
-Для авторизации клиента на платформе VK Cloud Vision используется токен, который передается в параметре запроса:
+To authorize the client on the VK Cloud platform, a token is used, which is passed in the request parameter:
 
+```bash
+curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth\_provider="mcs&oauth\_token=qh9sdcsX4iuKGFa1sNhhcyBQiJtWrX5TewjPkPf867ad53oFd" -F file\_0=@examples/car\_number.jpg - F meta='{"mode":\["object"\],"images":\[ {"name":"file\_0"}\]}'
 ```
-curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth\_provider="mcs&oauth\_token=qh9sdcsX4iuKGFa1sNhhcyBQiJtWrX5TewjPkPf867ad53oFd" -F file\_0=@examples/car\_number.jpg -F meta='{"mode":\["object"\],"images":\[ {"name":"file\_0"}\]}'
-```
+Authorization parameters:
 
-## Параметры авторизации:
-
-<table><tbody><tr><td>oauth_provider</td><td>mcs</td></tr><tr><td>oauth_token</td><td>qh9sdcsX4iuKGFa1sNhhcyBQiJtWrX5TewjPkPf867ad53oFd</td></tr></tbody></table>
+| Parameter | Description |
+|---------------|-------------------------------- ----------------- |
+| oauth_provider | mcs |
+| oauth_token | qh9sdcsX4iuKGFa1sNhhcyBQiJtWrX5TewjPkPf867ad53oFd |
 
 ## oauth_provider
 
-Сервер авторизации. В Vision доступна авторизация через VK Cloud и OAUTH.MAIL.RU.
+authorization server. In Vision, authorization is available through VK Cloud and OAUTH.MAIL.RU.
 
-- oauth_provider=mcs - авторизация доступная всем клиентам mcs, у которых подключено Машинное обучение -> Vision API
-- oauth_provider=mr - авторизация через oauth.mail.ru, доступна только для внутренних проектов компании мейл.ру, подробнее о ней можно узнать на [https://o2.mail.ru/docs/](https://o2.mail.ru/docs/)
+- **oauth_provider=mcs** — authorization available to all mcs clients that have Machine Learning -> Vision API enabled.
+- **oauth_provider=mr** — authorization via oauth.mail.ru, available only for internal projects of the mail.ru company, you can learn more about it at [https://o2.mail.ru/docs/](https: //o2.mail.ru/docs/).
 
-## oauth_token:
+## oauth_token
 
-Токен для авторизации клиента на платформе VK Cloud Vision.
+Token for client authorization on the VK Cloud platform.
 
-## Получение токена в системе авторизации VK Cloud
+### Getting a token in the VK Cloud authorization system
 
-В рамках авторизации через mcs, поддерживаются 2 типа токена:
+As part of authorization through mcs, 2 types of token are supported:
 
-- service_token
-- access_token
+- service_token;
+- access_token.
 
-### service_token
+## service_token
 
-Токен, которые проще всего сгенерировать, он не имеет ограничений на время жизни и количество токенов данного вида.
+The token that is the easiest to generate, it has no restrictions on the lifetime and the number of tokens of this type.
 
-Токен генерируется на странице пользователя в личном кабинете: [https://mcs.mail.ru/app/services/machinelearning/vision/](https://mcs.mail.ru/app/services/machinelearning/vision/)
+The token is generated on the user's page in [personal account](https://mcs.mail.ru/app/services/machinelearning/vision/).
 
-![](./assets/static.helpjuice.com)
+## access_token
 
-### access_token
+To obtain this token, the [OAuth 2.0](https://ru.wikipedia.org/wiki/OAuth#OAuth_2.0) protocol is used.
 
-Для получения этого токена используется протокол [OAuth 2.0](https://ru.wikipedia.org/wiki/OAuth#OAuth_2.0).
+To get the first **access_token**, you need to send a request to the authorization server (see below) with the mcs client ID (client_id) and secret key (client_secret) from [personal account](https://mcs.mail.ru/app/ services/machinelearning/vision/).
 
-Для получения первого access_token необходимо отправить запрос на сервер авторизации (см. ниже) с идентификатором клиента mcs (client_id) и секретным ключом (client_secret) из личного кабинета пользователя [https://mcs.mail.ru/app/services/machinelearning/vision/](https://mcs.mail.ru/app/services/machinelearning/vision/).
+In response, 2 tokens will be received from the server:
 
-В ответе от сервера будет получено 2 токена:
+- access token (access_token);
+- a token for updating a “rotten” access token (refresh_token).
 
-- токен доступа (access_token)
-- токен для обновления “протухшего” токена доступа (refresh_token)
+The first **access_token** is reusable and short-lived, it is used for authorization in an image recognition request. The second one, **refresh_token**, is used to refresh the access token. **refresh_token** has two properties that are inverse to **access** tokens: they are long-lived, but not reusable.
 
-Первый access_token - многоразовый и короткоживущий, он используется для авторизации в запросе на распознавание картинок. Второй, refresh_token, используется для обновления access токена. У refresh_token есть два свойства, обратные access токену: он долгоживущий, но не многоразовый.
+In total, 25 refresh_tokens are available to the client (/auth/oauth/v1/token with grant_type="client_credentials").
 
-Всего клиенту доступно 25 refresh_token'ов (/auth/oauth/v1/token с grant_type="client_credentials);
+For every refresh_token, the client can get 25 access_tokens ( /auth/oauth/v1/token c" grant_type="refresh_token).
 
-На каждый refresh_token клиент может получить 25 access_token'ов ( /auth/oauth/v1/token c" grant_type="refresh_token);
+The usage scheme for tokens is as follows:
 
-Схема использования у токенов следующая:
+- The user logs in to the service by passing the identifier and secret key to the server. In response, it receives 2 tokens and a lifetime.
+- Application saves tokens and uses **access token** for subsequent image recognition requests.
+- When the access token lifetime comes to an end, requests for image recognition will stop passing:
 
-- Пользователь авторизуется на сервисе, передавая идентификатор и секретный ключ на сервер. В ответе получает 2 токена и время жизни.
-- Приложение сохраняет токены и использует access token для последующих запросов на распознавание картинок.
-- Когда время жизни access token подойдет к концу, перестанут проходить запросы на распознавание изображений:
-
+```
   "status":401,"body":"authorization failed, provider: mcs, token: vMA3Pjyno6tvCdo8MeDQ8xYT(...), reason: CONDITION/UNAUTHORIZED, Access Token invalid"
-
-- Необходимо будет обновить токен доступа access token с помощью refresh token
-
-## Получения первого токена
-
-Надо отправить запрос на сервер авторизации с идентификатором клиента и секретным ключом:
-
-```
-curl -X POST 'https://mcs.mail.ru/auth/oauth/v1/token'  -HContent-Type:application/json -d '{"client\_id":"mcs1017666666.ml.vision.f7kk1rmajnhfy", "client\_secret":"5FYLyJoex37xw45TJShx6dGifnouhdsOIndbsyg78ejnbs", "grant\_type":"client\_credentials"}'
 ```
 
-## Параметры запроса
+- You will need to refresh the **access token** with a **refresh token**.
 
-<table><tbody><tr><td>client_id</td><td>mcs1017666666.ml.vision.f7kk1rmajnhfy</td></tr><tr><td>client_secret</td><td>5FYLyJoex37xw45TJShx6dGifnouhdsOIndbsyg78ejnbs</td></tr><tr><td>grant_type</td><td>client_credentials</td></tr></tbody></table>
+### Getting the first token
 
-### client_id
+We need to send a request to the authorization server with the client ID and secret key:
 
-Идентификатор клиента на платформе mcs, берется со страницы личного кабинета пользователя [https://mcs.mail.ru/app/services/machinelearning/vision/](https://mcs.mail.ru/app/services/machinelearning/vision/)
-
-### client_secret
-
-Секретный ключ берется со страницы личного кабинета пользователя [https://mcs.mail.ru/app/services/machinelearning/vision/](https://mcs.mail.ru/app/services/machinelearning/vision/)
-
-### grant_type
-
-Тип токена, который надо сгенерировать:
-
-- "grant_type":"client_credentials" - генерация access_token и refresh_token по client_secret (только для первого раза)
-- "grant_type":"refresh_token" - генерация access_token через refresh_token, для обновления access token-а
-
-## Ответ на запрос
-
-```
-{"refresh\_token":"Q9fdfT49CZ19rfohBC4y8Du6PE89989898hghgh","access\_token":"vMA3Pjyno6tvCdo8MeDQ8xfgbibiubr9r","expired\_in":"3600","scope":{"objects":1,"video":1,"persons":1}}
+```bash
+curl -X POST 'https://mcs.mail.ru/auth/oauth/v1/token' -HContent-Type:application/json -d '{"client_id":"mcs1017666666.ml.vision.f7kk1rmajnhfy", " client_secret":"5FYLyJoex37xw45TJShx6dGifnouhdsOIndbsyg78ejnbs", "grant_type":"client_credentials"}'
 ```
 
-<table><tbody><tr><td>access_token</td><td>токен доступа для авторизации клиента в запросах на распознавание изображений и видео</td></tr><tr><td>refresh_token</td><td>токен для генерации access_token, когда закончится время жизни старого</td></tr><tr><td>expired_in</td><td>время жизни сгенерированного access_token в секундах</td></tr></tbody></table>
+### Query parameters
 
-## Обновление токена
+| Parameter | Description |
+|--------------|---------------------------------- ------------- |
+| client_id | mcs1017666666.ml.vision.f7kk1rmajnhfy |
+| client_secret | 5FYLyJoex37xw45TJShx6dGifnouhdsOIndbsyg78ejnbs |
+| grant_type | client_credentials |
 
-Для генерации access_token через refresh_token надо отправить запрос на сервер авторизации:
+## client_id
 
+The client ID on the mcs platform is taken from the [personal account] page (https://mcs.mail.ru/app/services/machinelearning/vision/).
+
+## client_secret
+
+The secret key is taken from the [personal account] page (https://mcs.mail.ru/app/services/machinelearning/vision/).
+
+## grant_type
+
+Type of token to generate:
+
+- **"grant_type":"client_credentials"** — generation of access_token and refresh_token by client_secret (only for the first time).
+- **"grant_type":"refresh_token"** — generation of access_token via refresh_token to update access token.
+
+### Response to request
+
+```json
+{
+  "refresh_token": "Q9fdfT49CZ19rfohBC4y8Du6PE89989898hghgh",
+  "access_token": "vMA3Pjyno6tvCdo8MeDQ8xfgbibiubr9r",
+  "expired_in": "3600",
+  scope: {
+    "objects": 1,
+    video: 1
+    "persons": 1
+  }
+}
 ```
-curl -X POST 'https://mcs.mail.ru/auth/oauth/v1/token' -HContent-Type:application/json -d '{"client\_id":"mcs1017666666.ml.vision.f7kk1rmajnhfy","refresh\_token":"Q9fdfT49CZ19rfohBC4y8Du6PE89989898hghgh", "grant\_type":"refresh\_token"}
+
+| Parameter | Description |
+|--------------|---------------------------------- -------------------------------------- |
+| access_token | Access token for client authorization in image and video recognition requests |
+| refresh_token | Token to generate access_token when the old one expires |
+| expired_in | Lifetime of the generated access_token in seconds |
+
+### Refresh token
+
+To generate *access_token* via *refresh_token*, send a request to the authorization server:
+
+```bash
+curl -X POST 'https://mcs.mail.ru/auth/oauth/v1/token' -HContent-Type:application/json -d '{"client_id":"mcs1017666666.ml.vision.f7kk1rmajnhfy"," refresh_token":"Q9fdfT49CZ19rfohBC4y8Du6PE89989898hghgh", "grant_type":"refresh_token"}
 ```
 
-## Ответ на запрос
+### Response to request
 
-```
-{"refresh\_token":"Q9fdfT49CZ19rfohBC4y8Du6PE89989898hghgh","access\_token":"vMA3Pjyno6tvCdo8MeDQ8xfgbibiubr9r","expired\_in":"3600","scope":{"objects":1,"video":1,"persons":1}}
+```json
+{
+  "refresh_token": "Q9fdfT49CZ19rfohBC4y8Du6PE89989898hghgh",
+  "access_token": "vMA3Pjyno6tvCdo8MeDQ8xfgbibiubr9r",
+  "expired_in": "3600",
+  scope: {
+    "objects": 1,
+    video: 1
+    "persons": 1
+  }
+}
 ```
 
-<table><tbody><tr><td>access_token</td><td>токен доступа для авторизации клиента в запросах на распознавание изображений и видео</td></tr><tr><td>refresh_token</td><td>токен для генерации access_token, когда закончится время жизни старого</td></tr><tr><td>expired_in</td><td>время жизни сгенерированногоaccess_tokenв секундах</td></tr></tbody></table>
+| Parameter | Description |
+|--------------|------------------------------------------------ |
+| access_token |Access token for client authorization in image and video recognition requests |
+| refresh_token |Token to generate an access_token when the old one expires|
+| expired_in |The lifetime of the generated access_token in seconds |
