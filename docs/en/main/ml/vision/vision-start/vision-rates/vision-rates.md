@@ -1,11 +1,26 @@
-## API Vision (фото)
+## API Vision (photo)
 
-Первые 5000 транзакций и 1000 лиц — бесплатно для тестирования
+<info>
 
-<table><tbody><tr><td>Уровень</td><td>Транзакций в месяц</td><td>Цена за транзакцию</td></tr><tr><td rowspan="4">Уровень «Стандарт»</td><td>1 — 1 000 000</td><td>0,06 ₽</td></tr><tr><td>1 000 001 — 10 000 000</td><td>0,05 ₽</td></tr><tr><td>10 000 001 — 100 000 000</td><td>0,04 ₽</td></tr><tr><td>от 100 000 001</td><td>0,03 ₽</td></tr></tbody></table>
+The first 5,000 transactions and 1,000 faces are free for testing.
 
-## API Vision (видео)
+</info>
 
-Первые 1000 транзакций — бесплатно для тестирования
+| Level | Transactions per month | Price per transaction |
+|----------------|--------------------|----------- ---------|
+| Standard | 1 - 1,000,000 | 0.06 ₽ |
+| Standard | 1,000,001 - 10,000,000 | 0.05 ₽ |
+| Standard | 10,000,001 - 100,000,000 | 0.04 ₽ |
+| Standard | from 100 000 001 | 0.03 ₽ |
 
-<table><tbody><tr><td>Уровень</strong><br></td><td>Цена за одну минуту</strong></td></tr><tr><td>Архивное / потоковое видео</td><td>6 ₽</td></tr></tbody></table>
+## Vision API (video)
+
+<info>
+
+The first 1000 transactions are free for testing.
+
+</info>
+
+|Level|Price per minute|
+|--- |--- |
+|Archived / streaming video|6 ₽|
