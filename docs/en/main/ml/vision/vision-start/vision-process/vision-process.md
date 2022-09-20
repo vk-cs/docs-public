@@ -1,8 +1,8 @@
-Three API methods are used to recognize data from video:
+Three API methods are used to recognize video data:
 
-- Get
-- Subscribe
-- Unsubscribe
+- get;
+- subscribe;
+- Unsubscribe.
 
 Let's take a closer look at each of them.
 
@@ -10,36 +10,41 @@ Let's take a closer look at each of them.
 
 This method allows you to get the results of the video processing task.
 
-### Request
+<tabs>
+<tablist>
+<tab>Request</tab>
+<tab>Answer</tab>
+</tablist>
+<tabpanel>
 
-Authorization data is transmitted in the request line:
+Authorization data is passed in the query string:
 
-| Parameter    | Type                                          | Value                                    |
-| -------------- | --------------------------------------------- | ---------------------------------------- |
-| oauth_token    | string                                        | OAuth2 access token (required non-empty) |
+| Parameter | Type | Meaning |
+| ------------- | ------ | ---------------------------------------- |
+| oauth_token | string | OAuth2 access token (required non-empty) |
 | oauth_provider | string | OAuth2 provider (required non-empty) |
 
 Supported OAuth2 providers:
 
-| Provider | Value of oauth_provider | Getting a token |
-| ------------------------------------ | --------------- | ---------------------------------------------- |
-| VK Cloud                                  | mcs             | [https://mcs.mail.ru /](https://mcs.mail.ru /) |
+| Provider | oauth_provider value | Getting a token |
+| --------- | ---------------------- | ------------------------------------------------ |
+| VK Cloud | mcs | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
 
 The request parameters are passed in JSON format in the body.
 
-| Parameter | Type         | Default                                                                  | Value |
-| ----------- | ------------ | ------------------------------------------------------------------------ | ----- |
-| video       | []video_meta | \-- | metadata for getting video processing results (required non-empty) |
+| Parameter | Type | Default | Meaning |
+| -------- | ------------ | ------------ | ----------- |
+| video | []video_meta | \-- | Metadata for getting video processing results (required non-empty) |
 
-video_meta
+### video_meta
 
-| Parameter | Type                                                                      | Value                                                                               |
-| ----------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| name        | string                                                                    | id returned to the client in the response to receiving results (required non-empty) |
-| id          | int                                                                       | task id (required)                                                                  |
-| from | int   | request results with timestamp (ms) from from (including from) (optional) |
-| to | int    | request results with timestamp (ms) to to (including to) (optional)       |
-| | limit     | int                                                                       | request number of results no more than limit (<=) (optional)                        |
+| Parameter | Type | Meaning |
+| -------- | ------ | -------------------- |
+| name | string | Identifier returned to the client in the response to get results (required non-empty) |
+| id | int | Task ID (required) |
+| from | int | Query results with timestamp (ms) from from (including from) (optional) |
+| to | int | Request results with timestamp (ms) up to to (including to) (optional) |
+| limit | int | Request number of results no more than limit (<=) (optional) |
 
 Request example:
 
@@ -47,231 +52,306 @@ Request example:
 POST /api/v1/video/get?oauth_provider=mcs&oauth_token=123 HTTP/1.1
 
 ....
-
 Content-Type: application/json
-
 {"video":[{"name":"test_name", "id":37, "from":1000, "to":2000, "limit":2}]}
 ```
 
-## Answer
+</tabpanel>
+<tabpanel>
 
-| Parameter | Type                     | Value                                                                |
-| ---------- | ------------------------ | -------------------------------------------------------------------- |
-| `status`   | 'int`| 200 if successful, otherwise the error description will be in`body` |
-| 'body`     | response | response body |
+| Parameter | Type | Meaning |
+| -------- | -------- | -------------------------------------------------- ------- |
+| status | int | 200 on success, otherwise the error description will be in body |
+| body | response | Response body |
 
-response
+### response
 
-| Parameter | Type                                       | Value |
-| ----------- | ------------------------------------------ | ----- |
-| results     | []result | array of responses with results |
+| Parameter | Type | Meaning |
+| -------- | -------- | ------------------------------ |
+| results | []result | Array of responses with results |
 
-result
+### result
 
-| Parameter | Type                                              | Value                                            |
-| ----------- | ------------------------------------------------- | ------------------------------------------------ |
-| status      | enum                                              | execution result                                 |
-| error       | string | text description of the error (optional) |
-| name        | string                                            | name for matching the request and response to it |
-| items       | result_item | array of results                    |
+| Parameter | Type | Meaning |
+| -------- | ----------- | ---------------------------------------- |
+| status | enum | Execution result |
+| error | string | Text description of the error (optional) |
+| name | string | Name to match the request and response to it |
+| items | result_item | Array of results |
 
-status
+### status
 
-| Parameter         | Value        |
-| ------------------- | ------------ |
-| 0                   | successfully |
-| 1                   | permanent error |
-| 2                   | temporary error |
+| Parameter | Meaning |
+| -------- | -------------------- |
+| 0 | Successfully |
+| 1 | Permanent error |
+| 2 | Temporary error |
 
-result_item
+### result_item
 
-| Parameter | Type                                                 | Value              |
-| ----------- | ---------------------------------------------------- | ------------------ |
-| timestamp   | int                                                  | timestamp (ms)     |
-| meta      | string | frame recognition result (meta information) |
-| action    | string                                               | recognition method |
+| Parameter | Type | Meaning |
+| --------- | ------ | ----------------------------------------------------- |
+| timestamp | int | Timestamp (ms) |
+| meta | string | Frame recognition result (meta information) |
+| action | string | Recognition method |
 
-Response example:
+Answer example:
 
-```
+```json
 {
-
-"status": 200,
-
-"body": {
-
-"results": [
-
-{
-
-"status": 0,
-
-"name": "test_name",
-
-"id": 40,
-
-"items": [ 
-
-{
-
-"timestamp": 4000,
-
-"meta": "{\"labels\":[{\"coord\":[64,0,576,511],\"eng\":\"Person\",\"eng_category\":\"\",\"prob\":0.0309,\"rus\":\"Person
-
-\",\"rus_category\":\"\"},{\"coord\":[64,0,576,511],\"eng\":\"Illustration\",\"eng_category\":\"\",\"prob\":0.4537,\"rus\":\"Illustration
-
-\",\"rus_category\":\"\"}],\"status\":0,\"timestamp\":4000}",
-
-"action": "od"
-
-},
-
-{
-
-"timestamp": 5000,
-
-"meta": "{\"labels\":[{\"coord\":[64,0,576,511],\"eng\":\"Person\",\"eng_category\":\"\",\"prob\":0.0309,\"rus\":\"Person
-
-\",\"rus_category\":\"\"},{\"coord\":[64,0,576,511],\"eng\":\"Illustration\",\"eng_category\":\"\",\"prob\":0.4538,\"rus\":\"Illustration
-
-\",\"rus_category\":\"\"}],\"status\":0,\"timestamp\":5000}",
-
-"action": "od"
-
-}
-
-]
-
-}
-
-]
-
-},
-
-"htmlencoded": false,
-
-"last_modified": 0
-
+  status: 200
+  body: {
+    "results": [
+      {
+        status: 0
+        "name": "test_name",
+        "id": 40,
+        "items": [
+          {
+            timestamp: 4000
+            "meta": "{\"labels\":[{\"coord\":[64,0,576,511],\"eng\":\"Person\",\"eng_category\":\"\",\ "prob\":0.0309,\"rus\":\"Person\n\n\",\"rus_category\":\"\"},{\"coord\":[64,0,576,511],\" eng\":\"Illustration\",\"eng_category\":\"\",\"prob\":0.4537,\"rus\":\"Illustration\n\n\",\"rus_category\" :\"\"}],\"status\":0,\"timestamp\":4000}",
+            "action": "od"
+          },
+          {
+            timestamp: 5000
+            "meta": "{\"labels\":[{\"coord\":[64,0,576,511],\"eng\":\"Person\",\"eng_category\":\"\",\ "prob\":0.0309,\"rus\":\"Person\n\n\",\"rus_category\":\"\"},{\"coord\":[64,0,576,511],\" eng\":\"Illustration\",\"eng_category\":\"\",\"prob\":0.4538,\"rus\":\"Illustration\n\n\",\"rus_category\" :\"\"}],\"status\":0,\"timestamp\":5000}",
+            "action": "od"
+          }
+        ]
+      }
+    ]
+  },
+  "htmlencoded": false
+  "last_modified": 0
 }
 ```
+
+</tabpanel>
+</tabs>
 
 ## Subscribe
 
-This method allows you to set a task for video processing by the vision recognition system.
+This method allows you to set the task of video processing by the Vision recognition system.
 
-### Request
+<tabs>
+<tablist>
+<tab>Request</tab>
+<tab>Answer</tab>
+</tablist>
+<tabpanel>
 
-Authorization data is transmitted in the request line:
+Authorization data is passed in the query string:
 
-| Parameter      | Type                                                | Value                                        |
-| ---------------- | --------------------------------------------------- | -------------------------------------------- |
-| `oauth_token`   | 'string`                                            | OAuth2 access token **(required non-empty)** |
-| `oauth_provider` | 'string` | OAuth2 provider **(required non-empty)** |
+| Parameter | Type | Meaning |
+| ---------------- -------- | -------------------------------------------------- |
+| oauth_token | string | OAuth2 access token (required non-empty) |
+| oauth_provider | string | OAuth2 provider (required non-empty) |
 
-Supported OAuth2 providers:
+### Supported OAuth2 providers:
 
-| / Provider / Value of oauth_provider | Getting a token |
-| ------------------------------------ | --------------- | -------------------------------------------- |
-| VK Cloud                                  | mcs             | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
+| Provider | oauth_provider value | Getting a token |
+| --------- | ---------------------- | -------------------------------------------------- |
+| VK Cloud | mcs | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
 
-The request parameters are passed in the `JSON` format in the body.
+The request parameters are passed in JSON format in the body.
 
-| Parameter | Type            | Default                                                       | Value |
-| ----------- | --------------- | ------------------------------------------------------------- | ----- |
-| `video`     | `[]video_meta` | -- | metadata of transmitted videos **(required non-empty)** |
+| Parameter | Type | Default | Meaning |
+| -------- | ------------ | ------------ | -------------------------------------------------- |
+| video | []video_meta | \-- | Transmitted video metadata (required non-empty) |
 
-### `video_meta`
+### video_meta
 
-|  Parameter   | Type                                                                                                          | Value              |
-| ------------- | ------------------------------------------------------------------------------------------------------------- | ------------------ |
-| name          | string | identifier returned to the client in response to the statement of this task **(required non-empty)** |
-| link          | string | link to video file (http://,https://) , rtsp stream (rtsp://) **(required non-empty)**               |
-| rtsp_login    | string                                                                                                        | rtsp authorization |
-| rtsp_password | string                                                                                                        |                    |
-| `actions` | `[]string` | list of visapi methods that will process the video                                               |
+| Parameter | Type | Meaning |
+| ------------- | ---------- | -------------------------------------------------- ---- |
+| name | string | Identifier returned to the client in response to setting this task (required non-empty) |
+| link | string | Link to video file (http://,https://) , rtsp stream (rtsp://) (required non-empty) |
+| rtsp_login | string | RTSP authorization |
+| rtsp_password | string | |
+| actions | []string | List of visapi methods that will process the video |
 
-**`actions`**
+### actions
 
-| Parameter            | Value                |
-| ---------------------- | -------------------- |
-| fd                     | Face detection       |
-|  sd | Scene detection |
-| od                     | Object detection     |
-| ad                     | Attraction detection |
-|  pd                   | Detecting people     |
+| Parameter | Meaning |
+| -------- | ------------------------------- |
+| fd | Face detection |
+| sd | Scene detection |
+| od | Object detection |
+| ad | Landmark detection |
+| pd | People detection |
 
-### Important!
+<warn>
 
-The maximum size of a video file is 2 Gb.
+**Important**
+
+The maximum video file size is 2 Gb.
+
+</warn>
 
 Request example:
 
-<table style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; background-color: transparent; border: none; empty-cells: show; max-width: 100%; width: 690px; margin-bottom: 20px;"><tbody style="box-sizing: border-box;"><tr style="box-sizing: border-box; line-height: 32px;"><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text; text-align: justify;"><p style="box-sizing: border-box; margin: 0px 0px 20px; color: rgb(56, 76, 96); font-size: 16px; font-weight: 400; line-height: 1.5;">POST /api/v1/video/subscribe?oauth_provider=mcs&amp;oauth_token=123 HTTP/1.1</p><p style="box-sizing: border-box; margin: 0px 0px 20px; color: rgb(56, 76, 96); font-size: 16px; font-weight: 400; line-height: 1.5;">....<br style="box-sizing: border-box;">Content-Type: application/json<br style="box-sizing: border-box;">{ "video":[{"name":"1", "link":"<a href="http://172.27.28.228/internal/hash/video.short.mp4" style="box-sizing: border-box; background-color: transparent; color: rgb(14, 104, 202); text-decoration: none; user-select: auto;">http://172.27.28.228/internal/hash/video.short.mp4</a>", "actions":["od"]}]}</p></td></tr></tbody></table>
+```
+POST /api/v1/video/subscribe?oauth_provider=mcs&oauth_token=123 HTTP/1.1
 
-## Answer
+....
+Content-Type: application/json
+{ "video":[{"name":"1", "link":"http://172.27.28.228/internal/hash/video.short.mp4", "actions":["od"]}] }
+```
 
-| Parameter | Type                     | Value                                                                |
-| ----------- | ------------------------ | -------------------------------------------------------------------- |
-| `status`   | 'int`| 200 if successful, otherwise the error description will be in`body` |
-| 'body`      | response | response body |
+</tabpanel>
+<tabpanel>
 
-### `response`
+| Parameter | Type | Meaning |
+| -------- | -------- | -------------------------------------------------- ------- |
+| status | int | 200 on success, otherwise the error description will be in body |
+| body | response | Response body |
 
-| Parameter | Type             | Value                               |
-| ----------- | ---------------- | ----------------------------------- |
-| subscribed  | `[]subscribed` | array of responses for each video |
+### response
+
+| Parameter | Type | Meaning |
+| ---------- | --------------------- | -------------------------------- |
+| subscribed | []subscribed | Array of responses for each video |
 
 ### subscribed
 
-| Parameter | Type                                                    | Value                                            |
-| ----------- | ------------------------------------------------------- | ------------------------------------------------ |
-| `status`   | `enum` | execution result                               |
-| `error`     | `string` | text description of the error **(optional)** |
-| name        | 'string`                                                | name for matching the request and response to it |
-| 'id` | int  | id of the video processing task                         |
+| Parameter | Type | Meaning |
+| -------- | -------- | ---------------------------------------- |
+| status | enum | Execution result |
+| error | string | Text description of the error (optional) |
+| name | string | Name to match the request and response to it |
+| id | int | Video Processing Task ID |
 
-### `status`
+### status
 
-| Parameter         | Value        |
-| ------------------- | ------------ |
-| 0                   | successfully |
-| 1  | permanent error |
-| 2  | temporary error |
+| Parameter | Meaning |
+| -------- | -------------------- |
+| 0 | Successfully |
+| 1 | Permanent error |
+| 2 | Temporary error |
 
-Response example:
+Answer example:
 
-<table data-macro-body-type="PLAIN_TEXT" data-macro-id="024ba49a-1b74-4d21-9477-8513d44cf88a" data-macro-name="code" data-macro-schema-version="1" style="box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; background-color: transparent; border: none; empty-cells: show; max-width: 100%; width: 683px; margin-bottom: 20px; margin-right: 6.89062px;"><tbody style="box-sizing: border-box;"><tr style="box-sizing: border-box; line-height: 32px;"><td style="box-sizing: border-box; padding: 5px 10px; min-width: 5px; border: 1px solid rgb(221, 221, 221); user-select: text; text-align: justify;"><pre style="box-sizing: border-box; overflow: visible; font-family: monospace, monospace; font-size: 13px; white-space: pre-wrap; overflow-wrap: break-word; display: block; padding: 9.5px; margin: 0px 0px 10px; line-height: 1.42857; word-break: break-all; color: rgb(51, 51, 51); background-color: rgb(245, 245, 245); border: 1px solid rgb(204, 204, 204); border-radius: 4px;">{<br style="box-sizing: border-box;">  "status": 200,<br style="box-sizing: border-box;">  "body": {<br style="box-sizing: border-box;">    "subscribed": [<br style="box-sizing: border-box;">      {<br style="box-sizing: border-box;">        "status": 0,<br style="box-sizing: border-box;">        "name": "1",<br style="box-sizing: border-box;">        "id": 39<br style="box-sizing: border-box;">      }<br style="box-sizing: border-box;">    ]<br style="box-sizing: border-box;">  },<br style="box-sizing: border-box;">  "htmlencoded": false,<br style="box-sizing: border-box;">  "last_modified": 0<br style="box-sizing: border-box;">}</pre></td></tr></tbody></table>
+```JSON
+{
+  status: 200
+  body: {
+    "subscribed": [
+      {
+        status: 0
+        "name": "1",
+        "id": 39
+      }
+    ]
+  },
+  "htmlencoded": false
+  "last_modified": 0
+}
+```
+
+</tabpanel>
+</tabs>
 
 ## Unsubscribe
 
 This method allows you to stop the video processing task.
 
-## Request
+<tabs>
+<tablist>
+<tab>Request</tab>
+<tab>Answer</tab>
+</tablist>
+<tabpanel>
 
-Authorization data is transmitted in the request line:
+Authorization data is passed in the query string:
 
-| Parameter      | Type                                                | Value                                        |
-| ---------------- | --------------------------------------------------- | -------------------------------------------- |
-| `oauth_token`   | `string`                                            | OAuth2 access token **(required non-empty)** |
-| `oauth_provider` | `string` | OAuth2 provider **(required non-empty)** |
+| Parameter | Type | Meaning |
+| ---------------- | -------- | -------------------------------------------------- |
+| oauth_token | string | OAuth2 access token (required non-empty) |
+| oauth_provider | string | OAuth2 provider (required non-empty) |
 
 Supported OAuth2 providers:
 
-| Provider | Value of oauth_provider | Getting a token |
-| ------------------------------------ | --------------- | -------------------------------------------- |
-| VK Cloud                                  | mcs             | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
+| Provider | oauth_provider value | Getting a token |
+| --------- | ---------------------- | -------------------------------------------------- |
+| VK Cloud | mcs | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
 
-The request parameters are passed in the `JSON` format in the body.
+The request parameters are passed in JSON format in the body.
 
-|  Parameter | Type            | Default                                                               | Value |
-| ----------- | --------------- | --------------------------------------------------------------------- | ----- |
-| `video`     | `[]video_meta` | metadata of transmitted videos to stop **(required non-empty)** |
+| Parameter | Type | Default | Meaning |
+| -------- | --------------- | ------------ | -------------------- |
+| vide | []video_met | \-- | Transmitted video metadata to stop (required non-empty) |
 
-### `video_meta`
+### video_meta
 
-| Parameter | Type                                                                                          | Value                  |
-| ----------- | --------------------------------------------------------------------------------------------- | ---------------------- |
-| name        | string | id returned to the client in response to stopping this task **(required non-empty)** |
-| id          | int                                                                                           | task id **(required)** |
+| Parameter | Type | Meaning |
+| -------- | ------ | -------------------- |
+| name | string | ID returned to the client in response to stopping this task (required non-empty) |
+| id | int | Task ID (required) |
 
 Request example:
+
+```
+POST /api/v1/video/unsubscribe?oauth_provider=mcs&oauth_token=123 HTTP/1.1
+
+....
+Content-Type: application/json
+{ "video":[{"name":"1", "id":6}, {"name":"2", "id":39}]}
+```
+
+</tabpanel>
+<tabpanel>
+
+| Parameter | Type | Meaning |
+| -------- | -------- | -------------------------------------------------- ------- |
+| status | int | 200 on success, otherwise the error description will be in body |
+| body | response | Response body |
+
+### response
+
+| Parameter | Type | Meaning |
+| ------------ | ---------------------- | -------------------------------- |
+| unsubscribed | []unsubscribed | Array of responses for each video |
+
+### unsubscribed
+
+| Parameter | Type | Meaning |
+| -------- | -------- | ---------------------------------------- |
+| status | enum | Execution result |
+| error | string | Text description of the error (optional) |
+| name | string | Name to match the request and response to it |
+| id | int | Video Processing Task ID |
+
+### status
+
+| Parameter | Meaning |
+| -------- | -------------------- |
+| 0 | Successfully |
+| 1 | Permanent error |
+| 2 | Temporary error |
+
+Answer example:
+
+```JSON
+{
+    status: 200
+    body: {
+        "unsubscribed": [
+            {
+                status: 1
+                "error": "already stopped task",
+                "name": "1",
+                "id": 6
+            },
+            {
+                status: 0
+                "name": "2",
+                "id": 39
+            }
+        ]
+    },
+    "htmlencoded": false
+    "last_modified": 0
+}
+```
+
+</tabpanel>
+</tabs>
