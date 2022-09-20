@@ -1,309 +1,363 @@
 This method allows you to find various objects in the photo.
 
-## Request
+HOST: `https://smarty.mail.ru`
 
-Authorization data is transmitted in the request line:
+ENDPOINT: `/api/v1/objects/detect`
 
-| / Parameter    | Type                                          | Value                                    |
-| -------------- | --------------------------------------------- | ---------------------------------------- |
-| oauth_token    | string                                        | OAuth2 access token (required non-empty) |
-| oauth_provider | string / OAuth2 provider (required non-empty) |
+<tabs>
+<tablist>
+<tab>Request</tab>
+<tab>Answer</tab>
+</tablist>
+<tabpanel>
 
-### Supported OAuth2 providers:
+Authorization data is passed in the query string:
 
-| / Provider / Value of oauth_provider | Getting a token |
-| ------------------------------------ | --------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Mail.Ru                              | mr              | [https://help.mail.ru/biz/vision/api/v1/oauth_token](https://help.mail.ru/biz/vision/api/v1/oauth_token)                 |
-| VK Cloud                                  | mcs             | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token) (all VK Cloud clients) |
+| Parameter | Type | Meaning |
+| ------------- | ------ | ---------------------------------------- |
+| oauth_token | string | OAuth2 access token (required non-empty) |
+| oauth_provider | string | OAuth2 provider (required non-empty) |
+
+Supported OAuth2 providers:
+
+| Provider | oauth_provider value | Getting a token |
+| --------- | ---------------------- | ------------------------------------------------ |
+| VK Cloud | mcs | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token) (all VK Cloud clients) |
 
 Request parameters are passed in JSON format in the request body with name="meta":
 
-| / Parameter | Type                                                               | Value                                                                          |
-| ----------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
-| mode        | []string                                                           | types of objects to be searched in the transmitted images (required non-empty) |
-| images      | []image_meta / metadata of transmitted images (required non-empty) |
+| Parameter | Type | Meaning |
+| -------- | ------------ | ------------------------------ |
+| mode | []string | Types of objects to be searched for in the passed images (required non-empty) |
+| images | []image_meta | Transferred image metadata (required non-empty) |
 
-Possible values of mode:
+Possible values ​​for mode:
 
-<table cellpadding="5" cellspacing="0" width="623"><colgroup><col width="87"> <col width="514"></colgroup><tbody><tr><td style="border: 1px solid #000000;" width="87"><p align="center" style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">Parameter</p></td><td style="border: 1px solid #000000;" width="514"><p align="center" style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">Value</p></td></tr><tr><td style="border: 1px solid #000000;" width="87"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">object</p></td><td style="border: 1px solid #000000;" width="514"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">search for objects in the image</p></td></tr><tr><td style="border: 1px solid #000000;" width="87"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">scene</p></td><td style="border: 1px solid #000000;" width="514"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">search on the scene image</p></td></tr><tr><td style="border: 1px solid #000000;" width="87"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">car_number</p></td><td style="border: 1px solid #000000;" width="514"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">search for car numbers on the image</p></td></tr><tr><td style="border: 1px solid #000000;" width="87"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">multiobject</p></td><td style="border: 1px solid #000000;" width="514"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">search the image for multiobjects - objects and the entire set of boxes of all found objects</p></td></tr><tr><td style="border: 1px solid #000000;" width="87"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">pedestrian</p></td><td style="border: 1px solid #000000;" width="514"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">search for people in the image (more accurately defines the set of boxes of all people in the image)</p></td></tr></tbody></table>
+| Parameter | Type |
+| ----------- | ---------------------------------- |
+| object | Search objects in the image |
+| scene | Search on scene image |
+| car_number | Search on the image for car numbers |
+| multiobject | Search the image for multi-objects — objects and the entire set of boxes of all found objects |
+| pedestrian | Search for people in the image (more precisely determines the set of boxes of all people in the image) |
 
 ### mode
 
-mode can contain one or more modes. For example:
+mode may contain one or more modes. For example:
 
-"mode":["object"] <-- search for objects only
+- "mode":["object"] <-- search for objects only;
 
-"mode":["scene"] <-- search for scenes only
+- "mode":["scene"] <-- search for scenes only;
 
-"mode":["object","scene"] <-- search for scenes and objects
+- "mode":["object","scene"] <-- search for scenes and objects.
 
 ### image_meta
 
-| / Parameter | Type   | Value                                                                          |
-| ----------- | ------ | ------------------------------------------------------------------------------ |
-| name        | string | file names for matching files in the request and response (required non-empty) |
+| Parameter | Type | Meaning |
+| -------- | ------ | --------------------- |
+| name | string | Filenames to match files in request and response (required non-empty) |
 
-Images are passed in the request body, the values of the name field must match those passed in images.
+Images are passed in the body of the request, the values ​​of the name field must match those passed in images.
 
-The maximum number of images per request is 100. The maximum size of each image should not exceed 4MB.
+The maximum number of images in one request is 100. The maximum size of each image must not exceed 4 MB.
 
-Request example:
+<details>
+  <summary markdown="span">Example request</summary>
 
-<table cellpadding="5" cellspacing="0" style="page-break-inside: avoid;" width="706"><colgroup><col width="694"></colgroup><tbody><tr><td style="border: 1px solid #000000;" width="694"><p style="margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background-position: initial initial; background-repeat: initial initial;">POST /api/v1/objects/detect?oauth_provider=mr&amp;oauth_token=123&nbsp;HTTP/1.1<br><br>Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp<br><br>------WebKitFormBoundaryfCqTBHeLZlsicvMp<br>Content-Disposition: form-data; name="file_0"; filename=""<br>Content-Type: image/jpeg<br><br>000000000000000000000000000<br>000000000000000000000000000<br>000000000000000000000000000<br>------WebKitFormBoundaryfCqTBHeLZlsicvMp<br>Content-Disposition: form-data; name="file_1"; filename=""<br>Content-Type: image/jpeg<br><br>111111111111111111111111111<br>111111111111111111111111111<br>111111111111111111111111111<br>------WebKitFormBoundaryfCqTBHeLZlsicvMp<br>Content-Disposition: form-data; name="meta"<br><br>{"mode":["object","scene","car_number"],"images":[{"name":"file_0"},{"name":"file_1"}]}<br>------WebKitFormBoundaryfCqTBHeLZlsicvMp--</p></td></tr></tbody></table>
+```
+POST /api/v1/objects/detect?oauth_provider=mr&oauth_token=123 HTTP/1.1
 
-## Answer
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp
 
-| / Parameter  | Type                                                               | Value                    |
-| ------------ | ------------------------------------------------------------------ | ------------------------ |
-| status / int | 200 if successful, otherwise the error description will be in body |
-| / body       | string                                                             | response / response body |
+------WebKitFormBoundaryfCqTBHeLZlsicvMp
+Content-Disposition: form-data; name="file_0"; filename=""
+Content-Type: image/jpeg
+
+000000000000000000000000000
+000000000000000000000000000
+000000000000000000000000000
+------WebKitFormBoundaryfCqTBHeLZlsicvMp
+Content-Disposition: form-data; name="file_1"; filename=""
+Content-Type: image/jpeg
+
+111111111111111111111111111
+111111111111111111111111111
+111111111111111111111111111
+------WebKitFormBoundaryfCqTBHeLZlsicvMp
+Content-Disposition: form-data; name="meta"
+
+{"mode":["object","scene","car_number"],"images":[{"name":"file_0"},{"name":"file_1"}]}
+------WebKitFormBoundaryfCqTBHeLZlsicvMp--
+```
+
+</details>
+
+</tabpanel>
+<tabpanel>
+
+| Parameter | Type | Meaning |
+| ------------- | -------- | -------------------------------------------------- ------ |
+| status | int | 200 in case of successful interaction with the Vision servers |
+| body | response | Response body |
 
 ### response
 
-| / Parameter         | Type                                                                              | Value |
-| ------------------- | --------------------------------------------------------------------------------- | ----- |
-| scene_labels        | []object / array of responses for each file with scenes (may be missing)          |
-| / object_labels     | []object / array of responses for each file with objects (may be missing)         |
-| car_number_labels   | []object / array of responses for each file with machine numbers (may be missing) |
-| multiobject_labels  | []object / array of responses for each file with multiobjects (may be missing)    |
-| / pedestrian_labels | []object / array of responses for each file with people (may be missing)          |
+| Parameter | Type | Meaning |
+| ------------------ | -------- | ------------------------ |
+| scene labels | [] object | Array of responses for each scene file (may be missing) |
+| object labels | [] object | Array of responses for each file with objects (may be missing) |
+| car_number_labels | [] object | Array of responses for each file with machine numbers (may be missing) |
+| multiobject labels | [] object | Array of responses for each file with multi-objects (may be missing) |
+| pedestrian labels | [] object | Array of responses for each file with people (may be missing) |
 
 ### object
 
-| / Parameter | Type                                                  | Value                                                |
-| ----------- | ----------------------------------------------------- | ---------------------------------------------------- |
-| status      | enum                                                  | execution result                                     |
-| error       | string / text description of the error (optional)     |
-| name        | string                                                | file name for matching files in request and response |
-| labels      | []label / list of objects (labels) found in the image |
+| Parameter | Type | Meaning |
+| ---------------- | -------- | -------------------------------------------------- --- |
+| status | enum | Execution result |
+| error | string | Text description of the error (optional) |
+| name | string | File name to match files in request and response |
+| labels | [] label | Listobjects (marks) found on the image |
+| count_by_density | int | The number of people in the frame, calculated using the density map (only for mode="pedestrian") |
 
-(only for pedestrian mode)
+### status
 
-| / Parameter         | Type  | Value                                                           |
-| ------------------- | ----- | --------------------------------------------------------------- |
-| count_by_density    | int   | number of people in the frame, calculated using the density map |
-| / Parameter         | Value |
-| 0 / successful      |
-| 1 / permanent error |
-| 2 / temporary error |
+| Parameter | Meaning |
+| ------------ | -------------------- |
+| 0 | Successfully |
+| 1 | Permanent error |
+| 2 | Temporary error |
 
 ### label
 
-| / Parameter                                                                                                                                                                                                                                                                                | Value                                                                         |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
-| eng / label (name) for the found object in English                                                                                                                                                                                                                                         |
-| rus / label (name) of the found object in Russian                                                                                                                                                                                                                                          |
-| / eng_categories                                                                                                                                                                                                                                                                           | list of categories (each category includes many labels) in English (optional) |
-| / rus_categories                                                                                                                                                                                                                                                                           | list of categories (each category includes many labels) in Russian (optional) |
-| / prob                                                                                                                                                                                                                                                                                     | the degree of confidence that this object is in the image                     |
-| coord / coordinates of the found object (optional)                                                                                                                                                                                                                                         |
-| types_prob / array of probabilities of license plate types. currently, the following types are supported: "rus" - all types of Russian numbers, "cis" - CIS numbers (except individual and military Ukrainian), "eu" - single-storey European numbers (optional, only for car_number mode) |
+| Parameter | Meaning |
+| ------------- | -------------------------------------------------- ------------- |
+| eng | Label (name) for the found object in English |
+| rus | Label (name) of the found object in Russian |
+| eng_categories | List of categories (each category includes many tags) in English (optional) |
+| eng_categories | List of categories (each category includes many tags) in Russian (optional) |
+| sample | Degree of confidence that this object is in the image |
+| coordinate | Found object coordinates (optional) |
+| types_prob | An array of license plate type probabilities. currently the following types are supported: <br>"rus" — all types of Russian numbers; <br>"cis" — numbers of the CIS (except individual and military Ukrainian ones); <br>"eu" — one-story plates of Europe (optional, only for car_number mode). |
 
-Response example:
+<details>
+  <summary markdown="span">Sample response</summary>
 
-```
+```json
 {
-    "status":200,
-    "body":
-    {
-        "object_labels":[
-            {
-                "status":0,
-                "name":"file_0",
-                "labels":[
-                    {
-                       "eng":"Person",
-                       "rus":"Man",
-                       "eng_categories":[],
-                       "rus_categories":[],
-                       "prob":0.6542,
-                       "coord":[0,63,518,656]
-                   },
-                   {
-                       "eng":"Face",
-                       "rus":"Face",
-                       "eng_categories":[],
-                       "rus_categories":[],
-                       "prob":0.6841,
-                       "coord":[0,63,518,571]
-                   }
-                ]
-            }
-        ],
-        "scene_labels":[
-            {
-                "name":"file_0",
-                "status":0,
-                "labels":[
-                    {
-                        "eng":"Beauty Salon",
-                        "rus":"Beauty salon",
-                        "eng_categories":[],
-                        "rus_categories":[],
-                        "prob":0.3457
-                    },
-                    {
-                        "eng":"Stage",
-                        "rus":"Scene",
-                        "eng_categories":["Concerts"],
-                        "rus_categories":["Concerts"],
-                        "prob":0.2651
-                    }
-                ]
-            }
-        ],
-        "car_number_labels":[
-            {
-               "name":"file_0",
-               "status":0,
-               "labels":[
-                    {
-                        "eng":"C606KY777",
-                        "rus":"C606KU777",
-                        "prob":0.9996,
-                        "coord":[250,281,334,302],
-                        "types_prob":[
-                            {
-                                 "type":"ru",
-                                 "prob":0.9820
-                            },
-                            {
-                                 "type":"cis",
-                                 "prob":0.9367
-                            },
-                            {
-                                 "type":"eu",
-                                 "prob":0.0026
-                            }
-                        ]
-                    },
-                    {
-                        "eng":"T820YO98",
+"status":200,
+body:
+{
+"object labels":[
+{
+status:0,
+"name":"file_0",
+labels:[
+{
+"eng":"Person",
+"rus":"Man",
+"eng_categories":[],
+"eng_categories":[],
+"prob":0.6542,
+"coord":[0,63,518,656]
+},
+{
+"eng":"Face",
+"rus":"Face",
+"eng_categories":[],
+"eng_categories":[],
+"prob":0.6841,
+"coord":[0,63,518,571]
+}
+]
+}
+],
+"scene_labels":[
+{
+"name":"file_0",
+status:0,
+labels:[
+{
+"eng":"Beauty Salon",
+"eng":"Beauty salon",
+"eng_categories":[],
+"eng_categories":[],
+"prob":0.3457
+},
+{
+"eng":"Stage",
+"rus":"Scene",
+"eng_categories":["Concerts"],
+"eng_categories":["Concerts"],
+"prob":0.2651
+}
+]
+}
+],
+"car_number_labels":[
+{
+"name":"file_0",
+status:0,
+labels:[
+{
+"eng":"C606KY777",
+"rus":"S606KU777",
+"prob":0.9996,
+"coord":[250,281,334,302],
+"types_prob":[
+{
+"type":"en",
+"prob":0.9820
+},
+{
+"type":"cis",
+"prob":0.9367
+},
+{
+"type":"eu",
+"test":0.0026
+}
+]
+},
+{
+"eng":"T820YO98",
 "rus":"T820UO98",
-                        "prob":0.4563,
-                        "coord":[250,281,334,302],
-                        "types_prob":[
-                            {
-                                 "type":"ru",
-                                 "prob":0.9220
-                            },
-                            {
-                                 "type":"cis",
-                                 "prob":0.9167
-                            },
-                            {
-                                 "type":"eu",
-                                 "prob":0.0026
-                            }
-                        ]
-                    }
-                ]
-            }
-         ]
-         "multiobject_labels":[
-            {
-                "status":0,
-                "name":"file_0",
-                "labels":[
-                    {
-                       "eng":"Person",
-                       "rus":"Man",
-                       "eng_categories":[],
-                       "rus_categories":[],
-                       "prob":0.9765,
-                       "coord":[308,107,1920,1153]
-                   },
-                   {
-                       "eng":"Person",
-                       "rus":"Man",
-                       "eng_categories":[],
-                       "rus_categories":[],
-                       "prob":0.9893,
-                       "coord":[423,72,634,479]
-                   }
-                ]
-            }
-        ],
-        "pedestrian_labels":[
-            {
-               "name":"file_0",
-               "status":0,
-               "labels":[
-                    {
-                        "eng":"Pedestrian",
-                        "rus":"Man",
-                        "prob":0.9996,
-                        "coord":[150,221,278,402]
-                    },
-                    {
-                        "eng":"Pedestrian",
-                        "rus":"Man",
-                        "prob":0.9863,
-                        "coord":[177,181,434,320]
-                    }
-                ],
-                "count_by_density":5
-            }
-         ]
-    },
-    "htmlencoded":false,
-    "last_modified":0
+"prob":0.4563,
+"coord":[250,281,334,302],
+"types_prob":[
+{
+"type":"en",
+"prob":0.9220
+},
+{
+"type":"cis",
+"prob":0.9167
+},
+{
+"type":"eu",
+"test":0.0026
+}
+]
+}
+]
+}
+]
+"multiobject_labels":[
+{
+status:0,
+"name":"file_0",
+labels:[
+{
+"eng":"Person",
+"rus":"Man",
+"eng_categories":[],
+"eng_categories":[],"prob":0.9765,
+"coord":[308,107,1920,1153]
+},
+{
+"eng":"Person",
+"rus":"Man",
+"eng_categories":[],
+"eng_categories":[],
+"prob":0.9893,
+"coord":[423,72,634,479]
+}
+]
+}
+],
+"pedestrian_labels":[
+{
+"name":"file_0",
+status:0,
+labels:[
+{
+"eng":"Pedestrian",
+"rus":"Man",
+"prob":0.9996,
+"coord":[150,221,278,402]
+},
+{
+"eng":"Pedestrian",
+"rus":"Man",
+"prob":0.9863,
+"coord":[177,181,434,320]
+}
+],
+"count_by_density":5
+}
+]
+},
+"htmlencoded":false
+"last_modified":0
 }
 ```
 
-Example of a response when one of the images was not processed:
+</details>
 
-```
+<details>
+  <summary markdown="span">An example of a response when one of the images was not processed</summary>
+
+```json
 {
-    "status":200,
-    "body":
-    {
-        "object_labels":[
-            {
-                "status":2,
-                "error":"internal error: image crc mismatch",
-                "name":"file_0"
-            },
-            {
-                "status":0,
-                "name":"file_1",
-                "labels":[
-                    {
-                        "eng":"Person",
-                        "rus":"Man",
-                        "eng_categories":[],
-                        "rus_categories":[],
-                        "prob":0.6542,
-                        "coord":[0,63,518,656]
-                    }
-             }
-        ]
-    },
-    "htmlencoded":false,
-    "last_modified":0
+"status":200,
+body:
+{
+"object labels":[
+{
+status:2,
+"error":"internal error: image crc mismatch",
+"name":"file_0"
+},
+{
+status:0,
+"name":"file_1",
+labels:[
+{
+"eng":"Person",
+"rus":"Man",
+"eng_categories":[],
+"eng_categories":[],
+"prob":0.6542,
+"coord":[0,63,518,656]
+}
+}
+]
+},
+"htmlencoded":false
+"last_modified":0
 }
 
-
 ```
 
-Example of a response when the request failed:
+</details>
 
-```
+<details>
+  <summary markdown="span">An example of a response when the request failed</summary>
+
+```json
 {
-    "status":500,
-    "body":"Internal Server Error",
-    "htmlencoded":false,
-    "last_modified":0
-}]
+"status":500,
+"body":"Internal Server Error",
+"htmlencoded":false
+"last_modified":0
+}
 ```
 
-Python example:
+</details>
 
-```
+<details>
+  <summary markdown="span">python example</summary>
+
+```python
 python
-examples/python/smarty.py \
+examples/python/smarty.py\
 -u "https://smarty.mail.ru/api/v1/objects/detect?oauth_provider=mr&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
 -p examples/friends1.jpg \
 --meta '{"mode":["scene"]}' \
 -v
 ```
+
+</details>
+
+</tabpanel>
+</tabs>
