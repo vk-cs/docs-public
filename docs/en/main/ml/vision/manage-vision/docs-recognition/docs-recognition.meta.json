@@ -1,7 +1,7 @@
 {
   "title": "Document recognition",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Determining the fields of documents in the photo",
   "metaTitle": "Document recognition - VK Cloud",
   "metaDescription": "The doc / recognize method is used to recognize document fields. This method allows you to recognize, for example, the fields of a passport in a photo. Let",
   "sectionTitle": "Document recognition",
