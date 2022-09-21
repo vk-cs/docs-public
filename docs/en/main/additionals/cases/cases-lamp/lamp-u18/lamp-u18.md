@@ -1,147 +1,148 @@
-Данная статья описывает установку стека LAMP на операционную систему семейства Linux - Ubuntu 18.04.
+This article describes how to install a LAMP stack on a Linux operating system - Ubuntu 18.04.
 
-Стек LAMP включает в себя операционную систему семейства Linux, веб-сервер Apache, систему управления базами данных MySQL и серверный язык сценариев для обработки динамического контента PHP. Все это необходимо для поддержки динамических сайтов и веб-приложений.
+The LAMP stack includes the Linux operating system, the Apache web server, the MySQL database management system, and a server-side scripting language for processing PHP dynamic content. All this is necessary to support dynamic sites and web applications.
 
-**Как сэкономить время на установке стека LAMP**
+## How to save time installing a LAMP stack
 
-\*\*
+You can get a ready-made LAMP stack on Ubuntu 18.04 as a [configured VK Cloud virtual machine](https://mcs.mail.ru/app/services/marketplace/). When registering, you get a free bonus account, which is enough to test the server for several days.
 
-Вы можете получить готовый стек LAMP на Ubuntu 18.04 в виде настроенной виртуальной машины VK Cloud. При регистрации вы получаете бесплатный бонусный счет, которого достаточно, чтобы тестировать сервер несколько дней.
+To learn more about LAMP in the app store, go to [Help Center](https://mcs.mail.ru/help/quick-start/-lamp-stack-apachephp).
 
-[[подключить машину LAMP](https://mcs.mail.ru/app/services/marketplace/)]
+#### Requirements
 
-Чтобы узнать больше о LAMP в магазине приложений, перейдите в [Центр помощи](https://mcs.mail.ru/help/quick-start/-lamp-stack-apachephp).
+- Operating system Ubuntu version 18.04.
+- A user with access to the sudo command.
 
-\*\*
+## Installing and configuring the Apache web server
 
-#### Требования
+To install and perform initial configuration of the Apache web server:
 
-- Операционная система Ubuntu версии 18.04.
-- Пользователь с доступом к команде sudo.
-
-## Установка и настройка веб-сервера Apache
-
-Чтобы установить и выполнить первичную настройку веб-сервера Apache:
-
-1.  Откройте окно терминала.
-2.  Обновите списки установочных пакетов до актуальных версий, выполнив команду:
+1. Open a terminal window.
+2. Update the lists of installation packages to the latest versions by running the command:
     ```
     sudo apt-get update
     ```
-3.  Установите последнюю версию веб-сервера Apache и дополнительных модулей, выполнив команду:
+3. Install the latest version of the Apache web server and additional modules by running the command:
 
     ```
     sudo apt install apache2 apache2-utils
     ```
 
-    Согласитесь с установкой веб-сервера Apache, ответив Y(es).
+    Agree to install the Apache web server by answering Y(es).
 
-4.  Откройте конфигурационный файл apache2.conf для редактирования, выполнив команду:
+4. Open the apache2.conf configuration file for editing by running the command:
     ```
     sudo nano /etc/apache2/apache2.conf
     ```
-5.  В файле apache2.conf:
-    - В конец добавьте строку ServerName <внешний IP-адрес веб-сервера>.
-    - Сохраните внесенные изменения, используя сочетание клавиш CTRL+O.
-    - Завершите редактирование, используя сочетание клавиш CTRL+X.
-6.  Для проверки конфигурации и текущего состояния веб-сервера Apache выполните команду:
+5. In the apache2.conf file:
+    - At the end, add the line ServerName <web server's external IP address>.
+    - Save your changes using the keyboard shortcut CTRL+O.
+    - Finish editing using the keyboard shortcut CTRL+X.
+6. To check the configuration and current state of the Apache web server, run the command:
 
     ```
     sudo apache2ctl configtest
     ```
 
-    В случае отсутствия ошибок отобразится строка:
+    If there are no errors, the following line will be displayed:
 
     ```
     Syntax OK
     ```
 
-7.  Для применения изменений перезагрузите веб-сервер Apache, выполнив команду:
+7. To apply the changes, restart the Apache web server by running the command:
     ```
     sudo systemctl restart apache2
     ```
-8.  Для проверки работы веб-сервера запустите веб-браузер и в адресной строке введите IP-адрес веб-сервера.
+8. To test the operation of the web server, launch a web browser and enter the IP address of the web server in the address bar.
 
-Если установка и конфигурирование веб-сервера Apache выполнены успешно, отобразится примерно следующая дефолтная страница веб-сервера:
+If the installation and configuration of the Apache web server is successful, the following web server default page will be displayed:
 
 ![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f4120-2fdirect-2f1552943724393-1552943724393.png)
 
-## Установка СУБД MySQL
+## MySQL database installation
 
-Чтобы установить и настроить СУБД MySQL:
+To install and configure MySQL DBMS:
 
-1.  Откройте окно терминала.
-2.  Установите сервер СУБД MySQL, выполнив команду:
+1. Open a terminal window.
+2. Install the MySQL DBMS server by running the command:
 
     ```
     sudo apt-get install mysql-server
     ```
 
-    Согласитесь с установкой сервера СУБД MySQL, ответив Y(es).
+    Agree with the installation of the MySQL DBMS server by answering Y(es).
 
-3.  Для внесения изменений в конфигурацию сервера СУБД MySQL используйте команду:
+3. To make changes to the MySQL DBMS server configuration, use the command:
 
 ```
 sudo mysql_secure_installation
 ```
 
-Данная команда запускает сценарий повышения безопасности сервера СУБД MySQL. Для настройки безопасности:
+This command runs the script to improve the security of the MySQL DBMS server. To set up security:
 
-- Введите пароль для учетной записи root, который был задан в начале установки сервера СУБД MySQL.
-- При необходимости выполните запуск плагина валидации паролей (VALIDATE PASSWORD PLUGIN):
+- Enter the password for the root account, which was set at the beginning of the installation of the MySQL DBMS server.
+- If necessary, run the password validation plugin (VALIDATE PASSWORD PLUGIN):
 
-- Ответьте Y(es) для включения плагина валидации.
-- Ответьте N(o), если валидация паролей не требуется.
+- Answer Y(es) to enable the validation plugin.
+- Answer N(o) if password validation is not required.
 
-**Примечание**
+<info>
 
-Плагин валидации паролей позволяет применять к паролям учетных записей СУБД MySQL критерии безопасности. Все пароли, не удовлетворяющие определенным критериям безопасности, признаются незащищенными. Это может привести к ошибкам при работе с программными пакетами, имеющими доступ к конфигурации учетных записей СУБД MySQL.
+**Note**
 
-Для плагина валидации паролей доступно три уровня надежности паролей:
+The password validation plugin allows you to apply security criteria to MySQL DBMS account passwords. All passwords that do not meet certain security criteria are considered insecure. This can lead to errors when working with software packages that have access to the MySQL DBMS account configuration.
 
-0 - простой (low) уровень надежности требует использовать в пароле не менее 8 букв;
+</info>
 
-1 - средний (medium) уровень надежности требует использовать в пароле не менее 8 символов, обязательно включающих цифры, буквы в верхнем и нижнем регистрах, а также специальные символы;
+There are three levels of password strength available for the password validation plugin:
 
-2 - высокий (strong) уровень надежности требует использовать в пароле не менее 8 символов, обязательно включающих цифры, буквы в верхнем и нижнем регистрах, специальные символы, а также запрещает использовать в качестве пароля распространенные слова, которые с высокой вероятностью могут быть подобраны по словарю.
+0 - simple (low) security level requires using at least 8 letters in the password;
 
-- При необходимости смените текущий пароль учетной записи root:
+1 - medium (medium) level of security requires the use of at least 8 characters in the password, which must include numbers, letters in upper and lower case, as well as special characters;
 
-- Ответьте Y(es) для смены текущего пароля.
-- Ответьте N(o), если смена пароля не требуется.
+2 - high (strong) level of reliability requires the use of at least 8 characters in the password, which must include numbers, uppercase and lowercase letters, special characters, and also prohibits the use of common words as a password that can be selected with a high probability from a dictionary .
 
-По умолчанию пароль не задан. Рекомендуется использовать надежный пароль.
+- If necessary, change the current root account password:
 
-**Внимание**
+- Answer Y(es) to change the current password.
+- Answer N(o) if password change is not required.
 
-Пользователь root в данном случае относится исключительно к СУБД MySQL и не является учетной записью ОС Ubuntu.
+By default, no password is set. It is recommended to use a strong password.
 
-- При необходимости удалите анонимные (anonymous) учетные записи, которые создаются при установке СУБД MySQL:
+<warn>
 
-- Ответьте Y(es) для удаления анонимных учетных записей.
-- Ответьте N(o), если удаление анонимных учетных записей не требуется.
+**Attention**
 
-Данные учетные записи предназначены только для тестирования БД и в большинстве случаев могут быть удалены.
+The root user in this case refers exclusively to the MySQL DBMS and is not an Ubuntu OS account.
 
-- При необходимости запретите удаленный доступ к СУБД MySQL для учетной записи root:
-  - Ответьте Y(es) для отключения возможности удаленного доступа.
-  - Ответьте N(o) для разрешения удаленного доступа.
-- При необходимости удалите тестовую базу (Test):
-  - Ответьте Y(es) для удаления базы Test.
-  - Ответьте N(o), если удаление базы Test не требуется.
+</warn>
+- If necessary, remove anonymous (anonymous) accounts that are created during installation of MySQL DBMS:
 
-Данная база создается при установке сервера СУБД MySQL и предназначена для тестирования. Удаление базы Test не влияет на работу системы.
+- Answer Y(es) to remove anonymous accounts.
+- Answer N(o) if deleting anonymous accounts is not required.
 
-- В ответ на запрос на внесение изменений в СУБД MySQL и перезагрузку привилегий доступа к таблицам:
-  - Ответьте Y(es) для внесения изменений и перезагрузки.
-  - Ответьте N(o), если внесение изменений и перезагрузка не требуются.
+These accounts are for database testing purposes only and can be deleted in most cases.
 
-## Установка PHP и дополнительных пакетов
+- If necessary, disable remote access to the MySQL DBMS for the root account:
+  - Answer Y(es) to disable remote access.
+  - Answer N(o) to allow remote access.
+- If necessary, delete the test base (Test):
+  - Answer Y(es) to remove the base Test.
+  - Answer N(o) if you don't want to remove the Test base.
 
-Чтобы установить PHP и дополнительные пакеты, которые могут потребоваться для работы и настройки WordPress:
+This database is created during installation of the MySQL DBMS server and is intended for testing purposes. Removing the Test database does not affect the operation of the system.
 
-1.  Откройте окно терминала.
-2.  Для установки PHP совместно с дополнительными пакетами используйте команду:
+- In response to a request to make changes to the MySQL DBMS and reload table access privileges:
+  - Answer Y(es) to make changes and reboot.
+  - Answer N(o) if changes and reboot are not required.
+
+## Install PHP and additional packages
+
+To install PHP and additional packages that may be required to run and set up WordPress:
+
+1. Open a terminal window.
+2. To install PHP along with additional packages, use the command:
 
     ```
     sudo apt-get install php libapache2-mod-php php-cli php-intl php-mysql php-curl php-gd php-soap php-xml php-zip php-readline php-opcache php-json
@@ -149,17 +150,17 @@ sudo mysql_secure_installation
 
     ```
 
-Чтобы выполнить установку, ответьте Y(es).
+Answer Y(es) to install.
 
-3.  Убедитесь, что веб-сервер Apache корректно отображает скрипты PHP. Для этого:
+3. Make sure the Apache web server renders PHP scripts correctly. For this:
 
-- Создайте файл info.php, выполнив команду:
+- Create an info.php file by running the command:
 
 ```
 sudo nano /var/www/html/info.php
 ```
 
-- В файл info.php поместите текст:
+- In the file info.php put the text:
 
 ```
 <?php
@@ -167,26 +168,30 @@ sudo nano /var/www/html/info.php
 ?>
 ```
 
-- Сохраните изменения, используя сочетание клавиш CTRL+O.
-- Завершите редактирование, используя сочетание клавиш CTRL+X.
-- В адресной строке браузера к адресу веб-сервера добавьте строку:
+- Save your changes using the keyboard shortcut CTRL+O.
+- Finish editing using the keyboard shortcut CTRL+X.
+- In the address bar of the browser, add the line to the web server address:
 
 ```
-/info.php 
+/info.php
 ```
 
-В результате должна отобразится примерно следующая страница:
+As a result, the following page should be displayed:
 
 ![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f4120-2fdirect-2f1552943725418-1552943725418.png)
 
-**Внимание**
+<warn>
 
-В целях безопасности после проверки системы рекомендуется удалить файл info.php, выполнив команду:
+**Attention**
+
+For security purposes, after checking the system, it is recommended to delete the info.php file by running the command:
 
 ```
 sudo rm /var/www/html/info.php
 ```
 
-**Обратная связь**
+</warn>
 
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
+## **Feedback**
+
+Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

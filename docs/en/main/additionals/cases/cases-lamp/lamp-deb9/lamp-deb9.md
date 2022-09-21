@@ -1,117 +1,119 @@
-Данная статья описывает установку стека LAMP на операционную систему семейства Linux - Debian 9.4.
+This article describes how to install the LAMP stack on a Linux operating system - Debian 9.4.
 
-Стек LAMP включает в себя операционную систему семейства Linux, веб-сервер Apache, систему управления базами данных MySQL и серверный язык сценариев для обработки динамического контента PHP. Все это необходимо для поддержки динамических сайтов и веб-приложений.
+The LAMP stack includes the Linux operating system, the Apache web server, the MySQL database management system, and a server-side scripting language for processing PHP dynamic content. All this is necessary to support dynamic sites and web applications.
 
-\*\*Как сэкономить время на установке стека LAMP
+## How to save time installing a LAMP stack
 
-\*\*
+You can get a ready-made LAMP stack on Ubuntu 18.04 as a [configured VK Cloud virtual machine](https://mcs.mail.ru/app/services/marketplace/). When registering, you get a free bonus account, which is enough to test the server for several days.
 
-\*\*
+To learn more about LAMP in the app store, go to [Help Center](https://mcs.mail.ru/help/quick-start/-lamp-stack-apachephp).
 
-Вы можете получить готовый стек LAMP на Ubuntu 18.04 в виде настроенной виртуальной машины VK Cloud. При регистрации вы получаете бесплатный бонусный счет, которого достаточно, чтобы тестировать сервер несколько дней.
+#### Requirements
 
-[[подключить машину LAMP](https://mcs.mail.ru/app/services/marketplace/)]
+- Operating system Debian version 9.4.
+- A user with access to the sudo command.
 
-Чтобы узнать больше о LAMP в магазине приложений, перейдите в [Центр помощи](https://mcs.mail.ru/help/quick-start/-lamp-stack-apachephp).
+## Installing and configuring the Apache web server
 
-\*\*
+To install and perform initial configuration of the Apache web server:
 
-#### Требования
+1. Open a terminal window.
+2. Update the lists of installation packages to the latest versions by running the command:
 
-- Операционная система Debian версии 9.4.
-- Пользователь с доступом к команде sudo.
-
-## Установка и настройка веб-сервера Apache
-
-Чтобы установить и выполнить первичную настройку веб-сервера Apache:
-
-1.  Откройте окно терминала.
-2.  Обновите списки установочных пакетов до актуальных версий, выполнив команду:
     ```
     sudo apt-get update
     ```
-3.  Установите последнюю версию веб-сервера Apache и дополнительных модулей, выполнив команду:
+
+3. Install the latest version of the Apache web server and additional modules by running the command:
 
     ```
     sudo apt install apache2 apache2-utils
     ```
 
-    Согласитесь с установкой веб-сервера Apache, ответив Y(es).
+    Agree to install the Apache web server by answering Y(es).
 
-4.  Откройте конфигурационный файл apache2.conf для редактирования, выполнив команду:
+4. Open the `apache2.conf` configuration file for editing by running the command:
+
     ```
     sudo nano /etc/apache2/apache2.conf
     ```
-5.  В файле apache2.conf:
-    - В конец добавьте строку ServerName <IP-адрес>, указав внешний IP-адрес веб-сервера.
-    - Сохраните внесенные изменения, используя сочетание клавиш CTRL+O.
-    - Завершите редактирование, используя сочетание клавиш CTRL+X.
-6.  Для проверки конфигурации и текущего состояния веб-сервера Apache выполните команду:
+
+5. In the `apache2.conf` file:
+    - At the end, add the line ServerName <IP address>, specifying the external IP address of the web server.
+    - Save your changes using the keyboard shortcut CTRL+O.
+    - Finish editing using the keyboard shortcut CTRL+X.
+6. To check the configuration and current state of the Apache web server, run the command:
 
     ```
     sudo apache2ctl configtest
     ```
 
-    В случае отсутствия ошибок отобразится строка:
+    If there are no errors, the following line will be displayed:
 
     ```
     Syntax OK
     ```
 
-7.  Для применения изменений перезагрузите веб-сервер Apache, выполнив команду:
+7. To apply the changes, restart the Apache web server by running the command:
+
     ```
     sudo systemctl restart apache2
     ```
-8.  Для проверки работы веб-сервера запустите веб-браузер и в адресной строке введите IP-адрес веб-сервера.
 
-Если установка и конфигурирование веб-сервера Apache выполнены успешно, отобразится примерно следующая дефолтная страница веб-сервера:
+8. To test the operation of the web server, launch a web browser and enter the IP address of the web server in the address bar.
+
+If the installation and configuration of the Apache web server is successful, the following web server default page will be displayed:
 
 ![](./assets/1552419689585-1552419689585.png)
 
-## Установка СУБД MySQL
+## MySQL database installation
 
-Чтобы установить и настроить СУБД MySQL:
+To install and configure MySQL DBMS:
 
-1.  Откройте окно терминала.
-2.  Установите сервер СУБД MySQL, выполнив команду:
+1. Open a terminal window.
+2. Install the MySQL DBMS server by running the command:
 
     ```
     sudo apt-get install mysql-server
     ```
 
-    Согласитесь с установкой сервера СУБД MySQL, ответив Y(es).
+    Agree with the installation of the MySQL DBMS server by answering Y(es).
 
-3.  Для внесения изменений в конфигурацию сервера СУБД MySQL используйте команду:
+3. To make changes to the MySQL DBMS server configuration, use the command:
 
 ```
 sudo mysql_secure_installation
 ```
 
-Данная команда запускает сценарий повышения безопасности сервера СУБД MySQL. Для настройки безопасности:
+This command runs the script to improve the security of the MySQL DBMS server. To set up security:
 
-- Задайте пароль для учетной записи root.
+- Set a password for the root account.
 
-Рекомендуется использовать надежный пароль.
+It is recommended to use a strong password.
 
-**Внимание**
+<warn>
 
-Пользователь root в данном случае относится исключительно к СУБД MySQL и не является учетной записью ОС Debian.
+**Attention**
 
-- При необходимости удалите анонимные (anonymous) учетные записи, которые создаются при установке СУБД MySQL:
+The root user in this case refers exclusively to the MySQL DBMS and is not a Debian OS account.
 
-- Ответьте Y(es) для удаления анонимных учетных записей.
-- Ответьте N(o), если удаление анонимных учетных записей не требуется.
+</warn>
 
-Данные учетные записи предназначены только для тестирования базы данных и в большинстве случаев могут быть удалены.
+- If necessary, remove anonymous (anonymous) accounts that are created during installation of MySQL DBMS:
 
-- При необходимости запретите удаленный доступ к СУБД MySQL для учетной записи root:
-  - Ответьте Y(es) для отключения возможности удаленного доступа.
-  - Ответьте N(o) для разрешения удаленного доступа.
-- При необходимости удалите тестовую базу (Test):
-  - Ответьте Y(es) для удаления базы Test.
-  - Ответьте N(o), если удаление базы Test не требуется.
+- Answer Y(es) to remove anonymous accounts.
+- Answer N(o) if deleting anonymous accounts is not required.
 
-Данная база создается при установке сервера СУБД MySQL и предназначена для тестирования. Удаление базы Test не влияет на работу системы.
+These accounts are for database testing purposes only and can be deleted in most cases.
+
+- If necessary, disable remote access to the MySQL DBMS for the root account:
+  - Answer Y(es) to disable remote access.
+  - Answer N(o) to allow remote access.
+- If necessary, delete the test base (Test):
+  - Answer Y(es) to remove the base Test.
+  - Answer N(o) if you don't want to remove the Test base.
+
+This database is created during installation of the MySQL DBMS server and is intended for testing purposes. Removing the Test database does not affect the operation of the system.
 
 - В ответ на запрос на внесение изменений в СУБД MySQL и перезагрузку привилегий доступа к таблицам:
   - Ответьте Y(es) для внесения изменений и перезагрузки.
@@ -132,13 +134,13 @@ sudo mysql_secure_installation
 
 3.  Убедитесь, что веб-сервер Apache корректно отображает скрипты PHP. Для этого:
 
-- Создайте файл info.php, выполнив команду:
+- Создайте файл `info.php`, выполнив команду:
 
 ```
 sudo nano /var/www/html/info.php
 ```
 
-- В файл info.php поместите текст:
+- В файл `info.php` поместите текст:
 
 ```
 <?php
@@ -158,6 +160,8 @@ sudo nano /var/www/html/info.php
 
 ![](./assets/1552945066673-1552945066673.png)
 
+<warn>
+
 **Внимание**
 
 В целях безопасности после проверки системы рекомендуется удалить файл _info.php_, выполнив команду:
@@ -166,6 +170,8 @@ sudo nano /var/www/html/info.php
 sudo rm /var/www/html/info.php
 ```
 
-**Обратная связь**
+</warn>
+
+## **Обратная связь**
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

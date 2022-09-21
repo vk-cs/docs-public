@@ -1,19 +1,19 @@
-После 27 мая 2020 года сервис авторизации и аутентификации переходит на новый способ идентификации проектов.
+After May 27, 2020, the authorization and authentication service will switch to a new way of identifying projects.
 
-Если вы используете API, клиент командной строки openstack-client или локальную утилиту для настройки инфраструктуры Terraform, вам нужно начать использовать идентификатор (OS_PROJECT_ID) проекта вместо его имени (OS_PROJECT_NAME) до 27 мая включительно.
+If you are using the API, the openstack-client command line client, or the local utility to configure the Terraform infrastructure, you need to start using the project ID (OS_PROJECT_ID) instead of the project name (OS_PROJECT_NAME) by May 27th.
 
-Значение OS_PROJECT_ID и других параметров проекта можно посмотреть внутри личного кабинета: [https://mcs.mail.ru/app/project/keys/](https://mcs.mail.ru/app/project/keys/%C2%A0)
+The value of OS_PROJECT_ID and other project parameters can be viewed inside your personal account: [https://mcs.mail.ru/app/project/keys/](https://mcs.mail.ru/app/project/keys/%C2% A0)
 
-Примеры корректного использования параметра:
+Examples of the correct use of the parameter:
 
-### **API**
+### API
 
 ```
 curl --location --request POST 'https://infra.mail.ru:5000/v3/auth/tokens' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "auth": {
-        "identity": {
+        identity: {
             "methods": [
                 "password"
             ],
@@ -27,7 +27,7 @@ curl --location --request POST 'https://infra.mail.ru:5000/v3/auth/tokens' \
                 }
             }
         },
-        "scope": {
+        scope: {
             "project": {
                 "id": "YOUR PROJECT ID"
             }
@@ -36,7 +36,7 @@ curl --location --request POST 'https://infra.mail.ru:5000/v3/auth/tokens' \
 }'
 ```
 
-### **Провайдер Terraform**
+### Terraform provider
 
 terraform.tf:
 
@@ -49,7 +49,7 @@ provider "openstack" {
     # the password to login with
     password = "YOUR PASSWORD"
 
-    # the identifier of project to login with
+    # the identifier of the project to login with
     tenant_id = "YOUR PROJECT ID"
 
     # the domain identifier where the user is located
@@ -65,7 +65,7 @@ provider "openstack" {
 
 ```
 
-### **Командная строка OpenStackClient**
+### OpenStackClient command line
 
 openrc.sh:
 

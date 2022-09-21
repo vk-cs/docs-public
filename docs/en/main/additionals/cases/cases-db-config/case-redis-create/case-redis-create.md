@@ -1,197 +1,202 @@
-В данной статье рассмотрим, как установить standalone [Redis](https://redis.io/), создать пользователя базы данных, настроить права и сетевой доступ.
+In this article, we will look at how to install standalone [Redis](https://redis.io/), create a database user, configure rights and network access.
 
-## Конфигурация оборудования
+## Hardware configuration
 
-Сервер Ubuntu 18.04 LTS x86_64.
+- Ubuntu Server 18.04 LTS x86_64.
 
-\*\*Как сэкономить время на установке Redis
+## How to save time installing Redis
 
-\*\*
+[Use](https://mcs.mail.ru/databases/) our turnkey cloud solution based on Redis DBMS. When you sign up, you get a free bonus account, which is enough to work for several days.
 
-Воспользуйтесь нашим готовым облачным решением на базе СУБД Redis. При регистрации вы получаете бесплатный бонусный счет, которого достаточно для работы в течение нескольких дней.
+## Install standalone Redis
 
-**[**[**попробовать облачную СУБД Redis**](https://mcs.mail.ru/databases/)**]**
+1. Log in to the Ubuntu 18.04 server.
+1. Update the repository lists:
 
-## Установка standalone Redis
+    ```
+    ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get update
+    ```
 
-1.  Авторизуйтесь на сервере Ubuntu 18.04.
-2.  Обновите списки репозиториев:
+1. Redis 4 is located in the repositories by default on Ubuntu 18.04. Do one of the following:
+
+    - If this version is sufficient, install it:
+
+        ```
+        ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get install redis-server
+        ```
+
+    - If an up-to-date version of Redis is required:
+        1. Add a PPA repository with a new version of Redis:
+
+            ```
+            ubuntu@ubuntu-standard-2-4-40gb:~$ sudo add-apt-repository ppa:chris-lea/redis-server
+            Redis is an open source, advanced key-value store. It is often referred to as a data structure server since keys can contain strings, hashes, lists, sets and sorted sets.
+            More info: https://launchpad.net/~chris-lea/+archive/ubuntu/redis-server
+            Press [ENTER] to continue or Ctrl-c to cancel adding it.
+            ```
+
+        1. Install the new version of Redis:
+
+            ```
+            ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get install redis-server
+            ```
+
+1. After installation, make sure the server is running:
+
+    ```
+    ubuntu@ubuntu-standard-2-4-40gb:~$ ps ax | grep redis
+    335? Ssl 0:00 /usr/bin/redis-server 127.0.0.1:6379
+    ```
+
+1. Check the connection to the base. By default, no password is required to access the database:
+
+    ```
+    ubuntu@ubuntu-standard-2-4-40gb:~$ redis-cli
+    127.0.0.1:6379> PING
+    PONG
+    127.0.0.1:6379>
+    ```
+
+1. Add the service to the list of applications that start automatically:
+
+    ```
+    ubuntu@ubuntu-standard-2-4-40gb:~$ sudo systemctl enable redis-server
+    Synchronizing state of redis-server.service with SysV service script with /lib/systemd/systemd-sysv-install.
+    Executing: /lib/systemd/systemd-sysv-install enable redis-server
+    Created symlink /etc/systemd/system/redis.service → /lib/systemd/system/redis-server.service.
+    ```
+
+Installation completed.
+
+## Setting permissions
+
+By default, no password is required to access Redis. To set permissions, edit the configuration file `/etc/redis/redis.conf`. According to the documentation, Redis is a high performance database that allows an attacker to check up to 150,000 passwords per second. Therefore, it is recommended to use a strong password:
+
+1. Generate a 32 character password:
+
+    ```
+    ubuntu@ubuntu-standard-2-4-40gb:~$ openssl rand 32 | openssl base64 -A
+    JvDoH6XbAaFHHYnHEH0O0voURJCd5XoZ64W2lf1hyXQ=
+    ```
+
+2. Specify this password in the `/etc/redis/redis.conf` file in the `SECURITY` section in the `requirepass` command:
+
+    ```
+    ################################## SECURITY ############### #####################
+
+    # Require clients to issue AUTH <PASSWORD> before processing any other
+    # commands. This might be useful in environments in which you do not trust
+    # others with access to the host running redis-server.
+    #
+    # This should stay commented out for backward compatibility and because most
+    # people do not need auth (e.g. they run their own servers).
+    #
+    # Warning: since Redis is pretty fast an outside user can try up to
+    # 150k passwords per second against a good box. This means that you should
+    # use a very strong password otherwise it will be very easy to break.
+    #
+    # requirepass foobared
+
+    requirepass JvDoH6XbAaFHHYnHEH0O0voURJCd5XoZ64W2lf1hyXQ=
+
+    ```
+
+To increase the level of security, you can use renaming commands or prohibiting the execution of commands for working with the database. For example:
 
 ```
-ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get update
-```
-
-3.  По умолчанию в Ubuntu 18.04 в репозиториях располагается Redis 4. Выполните одно из действий:
-
-- Если этой версии достаточно, установите ее:
-
-```
-ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get install redis-server
-```
-
-- Если требуется актуальная версия Redis, добавьте PPA-репозиторий с новой версией Redis:
-
-```
-ubuntu@ubuntu-standard-2-4-40gb:~$ sudo add-apt-repository ppa:chris-lea/redis-server
-Redis is an open source, advanced key-value store. It is often referred to as a data structure server since keys can contain strings, hashes, lists, sets and sorted sets.
-More info: https://launchpad.net/~chris-lea/+archive/ubuntu/redis-server
-Press [ENTER] to continue or Ctrl-c to cancel adding it.
-```
-
-Затем установите Redis новой версии:
-
-```
-ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get install redis-server
-```
-
-4.  После установки убедитесь, что сервер запущен:
-
-```
-ubuntu@ubuntu-standard-2-4-40gb:~$ ps ax | grep redis
-  335 ?        Ssl    0:00 /usr/bin/redis-server 127.0.0.1:6379
-```
-
-5.  Проверьте подключение к базе. По умолчанию для доступа к базе пароль не требуется:
-
-```
-ubuntu@ubuntu-standard-2-4-40gb:~$ redis-cli
-127.0.0.1:6379> PING
-PONG
-127.0.0.1:6379>
-```
-
-6.  Добавьте сервис в список приложений, запускаемых автоматически:
-
-```
-ubuntu@ubuntu-standard-2-4-40gb:~$ sudo systemctl enable redis-server
-Synchronizing state of redis-server.service with SysV service script with /lib/systemd/systemd-sysv-install.
-Executing: /lib/systemd/systemd-sysv-install enable redis-server
-Created symlink /etc/systemd/system/redis.service → /lib/systemd/system/redis-server.service.
-```
-
-Установка завершена.\*\*
-
-## Настройка прав доступа
-
-\*\*По умолчанию для доступа к Redis не требуется пароль. Для настройки прав доступа отредактируйте конфигурационный файл /etc/redis/redis.conf. В соответствии с документацией, Redis - высокопроизводительная база данных, которая позволяет злоумышленнику проверять до 150 000 паролей в секунду. Поэтому рекомендуется использовать надежный пароль. Например, сгенерируем пароль из 32 символов:
-
-```
-ubuntu@ubuntu-standard-2-4-40gb:~$ openssl rand 32 | openssl base64 -A
-JvDoH6XbAaFHHYnHEH0O0voURJCd5XoZ64W2lf1hyXQ=
-```
-
-Укажем этот пароль в файле /etc/redis/redis.conf в разделе SECURITY в команде requirepass:
-
-```
-################################## SECURITY ###################################
-
-# Require clients to issue AUTH <PASSWORD> before processing any other
-# commands. This might be useful in environments in which you do not trust
-# others with access to the host running redis-server.
+# Command renaming.
 #
-# This should stay commented out for backward compatibility and because most
-# people do not need auth (e.g. they run their own servers).
+# It is possible to change the name of dangerous commands in a shared
+#environment. For instance the CONFIG command may be renamed into something
+# hard to guess so that it will still be available for internal-use tools
+# but not available for general clients.
 #
-# Warning: since Redis is pretty fast an outside user can try up to
-# 150k passwords per second against a good box. This means that you should
-# use a very strong password otherwise it will be very easy to break.
+#Example:
 #
-# requirepass foobared
-
-requirepass JvDoH6XbAaFHHYnHEH0O0voURJCd5XoZ64W2lf1hyXQ=
-
-```
-
-Для повышения уровня безопасности можно использовать переименование команд либо запрет выполнения команд для работы с базой данных. Например:
-
-```
-# Command renaming.
+# rename-command CONFIG b840fc02d524045429941cc15f59e41cb7be6c52
 #
-# It is possible to change the name of dangerous commands in a shared
-# environment. For instance the CONFIG command may be renamed into something
-# hard to guess so that it will still be available for internal-use tools
-# but not available for general clients.
+# It is also possible to completely kill a command by renaming it into
+# an empty string:
 #
-# Example:
+# rename-command CONFIG ""
 #
-# rename-command CONFIG b840fc02d524045429941cc15f59e41cb7be6c52
-#
-# It is also possible to completely kill a command by renaming it into
-# an empty string:
-#
-# rename-command CONFIG ""
-#
-# Please note that changing the name of commands that are logged into the
-# AOF file or transmitted to replicas may cause problems.
+# Please note that changing the name of commands that are logged into the
+# AOF file or transmitted to replicas may cause problems.
 ```
 
-Перезагрузите сервер Redis:
+After changing the configuration file, check the availability of the database:
+
+1. Restart the Redis server:
+
+    ```
+    ubuntu@ubuntu-standard-2-4-40gb:~$ sudo systemctl restart redis-server.service
+    ```
+
+2. Connect to the server and check your settings:```
+    ubuntu@ubuntu-standard-2-4-40gb:~$ redis-cli
+    127.0.0.1:6379>ping
+    (error) NOAUTH Authentication required.
+    127.0.0.1:6379> auth JvDoH6XbAaFHHYnHEH0O0voURJCd5XoZ64W2lf1hyXQ=
+    OK
+    127.0.0.1:6379>ping
+    PONG
+    127.0.0.1:6379>
+    ```
+
+## Set up network access
+
+By default, Redis only listens on 127.0.0.1. To set up network access to the server, follow these steps:
+
+1. Edit the `_/etc/redis/redis.conf_` file. Find the line `_bind 127.0.0.1 ::1_` and comment it out:
+
+    ```
+    #IF YOU ARE SURE YOU WANT YOUR INSTANCE TO LISTEN TO ALL THE INTERFACES
+    # JUST COMMENT THE FOLLOWING LINE.
+    # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~
+    #bind 127.0.0.1 ::1
+    ```
+
+1. Restart Redis:
+
+    ```
+    ubuntu@ubuntu-standard-2-4-40gb:~$ sudo systemctl restart redis-server.service
+    ```
+
+1. Make sure Redis is listening on the network:
+
+    ```
+    ubuntu@ubuntu-standard-2-4-40gb:~$ sudo netstat -tulpn | grep redis
+    tcp 0 0 0.0.0.0:6379 0.0.0.0:\* LISTEN 1562/redis-server \*
+    tcp6 0 0 :::6379 1562/redis-server \*
+    ```
+
+1. Check the network connection to the database from another computer:
+
+    ```
+    root@ash:~# redis-cli -h <REDIS_SERVER_IP>
+    REDIS:6379> ping
+    (error) NOAUTH Authentication required.
+    REDIS:6379> auth JvDoH6XbAaFHHYnHEH0O0voURJCd5XoZ64W2lf1hyXQ=
+    OK
+    REDIS:6379> ping
+    PONG
+    REDIS:6379>
+    ```
+
+<warn>
+
+**Attention**
+
+Since Redis is not a secure database by default, use a strong password and also restrict access to the database with a firewall.
+
+</warn>
+
+## Interesting about Redis
+
+The following part of the configuration file defines the maximum amount of memory that can be used by the Redis server and the key eviction mechanism when this amount of memory is full:
 
 ```
-ubuntu@ubuntu-standard-2-4-40gb:~$ sudo systemctl restart redis-server.service
-```
-
-Подключитесь к серверу  и проверьте выполненные настройки:
-
-```
-ubuntu@ubuntu-standard-2-4-40gb:~$ redis-cli
-127.0.0.1:6379> ping
-(error) NOAUTH Authentication required.
-127.0.0.1:6379> auth JvDoH6XbAaFHHYnHEH0O0voURJCd5XoZ64W2lf1hyXQ=
-OK
-127.0.0.1:6379> ping
-PONG
-127.0.0.1:6379>
-```
-
-## Настройка сетевого доступа
-
-По умолчанию Redis слушает только 127.0.0.1. Чтобы настроить сетевой доступ к серверу, отредактируйте  файл _/etc/redis/redis.conf_ . Найдите строку _bind 127.0.0.1 ::1_ и закомментируйте ее:
-
-```
-# IF YOU ARE SURE YOU WANT YOUR INSTANCE TO LISTEN TO ALL THE INTERFACES
-# JUST COMMENT THE FOLLOWING LINE.
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#bind 127.0.0.1 ::1
-```
-
-Перезапустите Redis:
-
-```
-ubuntu@ubuntu-standard-2-4-40gb:~$ sudo systemctl restart redis-server.service
-```
-
-Убедитесь, что Redis слушает сеть:
-
-```
-ubuntu@ubuntu-standard-2-4-40gb:~$ sudo netstat -tulpn | grep redis
-tcp 0 0 0.0.0.0:6379 0.0.0.0:\* LISTEN 1562/redis-server \*
-tcp6       0      0 :::6379                 :::\*                    LISTEN      1562/redis-server \*
-```
-
-Проверьте сетевое подключение к базе данных с другого компьютера:
-
-```
-root@ash:~# redis-cli -h <REDIS_SERVER_IP>
-REDIS:6379> ping
-(error) NOAUTH Authentication required.
-REDIS:6379> auth JvDoH6XbAaFHHYnHEH0O0voURJCd5XoZ64W2lf1hyXQ=
-OK
-REDIS:6379> ping
-PONG
-REDIS:6379>
-```
-
-**Внимание**
-
-Поскольку Redis по умолчанию не является надежно защищенной базой данной, используйте надежный пароль, а также ограничьте доступ к базе данных с помощью firewall.
-
-## Интересное о Redis
-
-Следующая часть конфигурационного файла определяет предельный объем памяти, который может использоваться сервером Redis, и механизм вытеснения ключей при заполнении этого объема памяти:
-
-```
-############################## MEMORY MANAGEMENT ################################
+############################## MEMORY MANAGEMENT ################## ###############
 
 # Set a memory usage limit to the specified amount of bytes.
 # When the memory limit is reached Redis will try to remove keys
@@ -216,7 +221,7 @@ REDIS:6379>
 # limit for maxmemory so that there is some free RAM on the system for replica
 # output buffers (but this is not needed if the policy is 'noeviction').
 #
-# maxmemory <bytes>
+# maxmemory<bytes>
 
 # MAXMEMORY POLICY: how Redis will select what to remove when maxmemory
 # is reached. You can select among five behaviors:
@@ -250,23 +255,19 @@ REDIS:6379>
 # maxmemory-policy noeviction
 ```
 
-Параметр _maxmemory_ определяет максимальный объем памяти в байтах, который может использоваться Redis.
+- The `_maxmemory_` parameter specifies the maximum amount of memory in bytes that Redis can use.
 
-Параметр _maxmemory-policy_ определяет политику вытеснения ключей при заполнении этого объема памяти.
+- The `_maxmemory-policy_` parameter defines the key eviction policy when this amount of memory is full. Possible values:- _noeviction_ - do not force out data, that is, if the memory is over, give an error when trying to write to the database (by default);
+  - _volatile-lru_ — delete the least recently used keys with the expire setting;
+  - _allkeys-lru_ — delete the least recently used keys, regardless of the expire setting;
+  - _volatile-lfu_ - delete the least frequently used keys with the expire setting;
+  - _allkeys-lfu_ - delete the least frequently used keys, regardless of the expire setting;
+  - _volatile-random_ — delete random keys with expire setting;
+  - _allkeys-random_ — delete random keys regardless of the expire setting;
+  - _volatile-ttl_ - remove keys that expire faster than others (that is, the lifetime of which approaches expire).
 
-Возможные значения:
+Another interesting feature of Redis is single-threading. This makes it pointless to attempt to scale by increasing the processor core - as a result, under high loads, the performance of the Redis server can noticeably degrade. Official developers recommendation: to reduce the load, re-architect the application architecture that uses Redis. Since this solution is not suitable for everyone, a multi-threaded KeyDB server was created that is fully compatible with Redis and is gaining popularity at the present time. You can learn more about KeyDB at the [developer site](https://keydb.dev/).
 
-- _noeviction_ - не вытеснять данные, то есть если память закончилась, при попытке записи в базу данных выдавать ошибку (по умолчанию);
-- _volatile-lru_ - удалить наименее используемые в последнее время ключи с настройкой expire;
-- _allkeys-lru_ - удалить наименее используемые в последнее время ключи вне зависимости от настройки expire;
-- _volatile-lfu_ - удалить наименее часто используемые ключи с настройкой expire;
-- _allkeys-lfu_ - удалить наименее часто используемые ключи вне зависимости от настройки expire;
-- _volatile-random_ - удалить случайные ключи с настройкой expire;
-- _allkeys-random_ - удалить случайные ключи вне зависимости от настройки expire;
-- _volatile-ttl_ - удалить ключи, срок действия которых истекает быстрее остальных (то есть время жизни которых приближается к expire).
+## Feedback
 
-Еще одной интересной особенностью Redis является однопоточность. Это делает  бессмысленными попытки масштабирования путем наращивания ядра процессора - в результате при высоких нагрузках может заметно деградировать производительность сервера Redis. Официальная рекомендация разработчиков: для снижения нагрузки пересматривать архитектуру приложения, использующего Redis. Поскольку такое решение подходит не всем, был создан многопоточный сервер KeyDB, полностью совместимый с Redis и набирающий популярность в настоящее время. Подробнее о KeyDB [читайте тут](https://keydb.dev/).
-
-Обратная связь
-
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
+Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

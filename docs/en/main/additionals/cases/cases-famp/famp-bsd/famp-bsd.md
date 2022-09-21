@@ -1,297 +1,320 @@
-Данная статья описывает установку стека FAMP на операционную систему семейства Unix - FreeBSD 10.3.
+This article describes the installation of the FAMP stack on a Unix operating system - FreeBSD 10.3.
 
-Стек FAMP включает в себя операционную систему FreeBSD, веб-сервер Apache, систему управления базами данных MySQL (mariadb) и серверный язык сценариев для обработки динамического контента PHP. Все это необходимо для поддержки динамических сайтов и веб-приложений.
+The FAMP stack includes the FreeBSD operating system, the Apache web server, the MySQL database management system (mariadb), and a server-side scripting language for handling PHP dynamic content. All this is necessary to support dynamic sites and web applications.
 
-#### Требования
+## Requirements
 
-- Операционная система FreeBSD версии 10.3.
-- Пользователь с доступом к команде sudo.
+- Operating system FreeBSD version 10.3.
+- A user with access to the sudo command.
 
-## Подготовка к установке стека FAMP
+## Preparing to install the FAMP stack
 
-Перед установкой стека FAMP:
+Before installing the FAMP stack:
 
-1.  Откройте файл resolv.conf для редактирования, выполнив команду:
+1. Open the `resolv.conf` file for editing by running the command:
 
-```
-sudo ee /etc/resolv.conf
-```
+   ```
+   sudo ee /etc/resolv.conf
+   ```
 
-2.  В файле resolv.conf выполните следующее:
+1. In the resolv.conf file, do the following:
 
-- добавьте строку **nameserver <IP-адрес вашего DNS-сервера>**;
+   1. Add the line `nameserver <IP address of your DNS server>`;
 
-**Внимание**
+      <warn>
 
-Если вы используйте виртуальную машину, предоставляемую облачным сервисом [https://mcs.mail.ru/](https://mcs.mail.ru/), в строке **nameserver 8.8.8.8** просто удалите символ #.
+      **Attention**
 
-- строку **nameserver 127.0.0.1** оставьте без изменения;
-- cохраните изменения, выполнив следующее:
-  - откройте меню, используя сочетание клавиш CTRL+[;
-  - в меню выберите пункт **a**, затем снова выберите пункт **а**;
+      If you are using a virtual machine provided by the [VK CS](https://mcs.mail.ru/) cloud service, simply remove the `#` character in the `nameserver 8.8.8.8` line.
 
-**![](./assets/1557001052099-1557001052099.jpeg)**
+      </warn>
 
-![](./assets/1557000622996-1557000622996.jpeg)
+   1. Leave the line `nameserver 127.0.0.1` unchanged;
+   1. Save your changes by doing the following:
+      1. Open the menu using the keyboard shortcut `CTRL+[`;
+      1. Select **a** from the menu, then select **a** again;
 
-В результате содержимое файла resolv.conf должно выглядеть примерно так:
+         **![](./assets/1557001052099-1557001052099.jpeg)**
 
-**![](./assets/1557001090271-1557001090271.jpeg)**
+         ![](./assets/1557000622996-1557000622996.jpeg)
 
-3.  Для сетевого интерфейса укажите корректное значение параметра mtu. Для этого:
+   As a result, the contents of the `resolv.conf` file should look something like this:
 
-**Примечание**
+   **![](./assets/1557001090271-1557001090271.jpeg)**
 
-Чтобы узнать корректное значение mtu, обратитесь к вашему интернет-провайдеру
+1. Specify the correct value for the mtu parameter for the network interface. For this:
 
-- выполните команду:
+   <info>
 
-```
-ifconfig
-```
+   **Note**
 
-- для нужного сетевого интерфейса найдите параметр **mtu <значение>**, например:
+   To find out the correct mtu value, contact your ISP
 
-**![](./assets/1557001285314-1557001285314.jpeg)**
+   </info>
 
-- укажите новое значение mtu, выполнив команду:
+   1. Run the command:
 
-```
-sudo ifconfig <имя сетевого интерфейса> mtu <значение> up
-```
+      ```
+      ifconfig
+      ```
 
-**Примечание**
+   1. For the desired network interface, find the `mtu <value>` parameter, for example:
 
-Если вы используйте виртуальную машину, предоставляемую облачным сервисом [https://mcs.mail.ru/](https://mcs.mail.ru/), выполните команду:
+      **![](./assets/1557001285314-1557001285314.jpeg)**
 
-```
-sudo ifconfig vtnet0 mtu 1400 up
-```
+   1. Specify a new mtu value by running the command:
 
-- Для проверки внесенных изменений используйте команду:
+      ```
+      sudo ifconfig <network interface name> mtu <value> up
+      ```
 
-```
-ping cms.mail.ru
-```
+      <info>
 
-Убедитесь, что обмен запросами происходит успешно. Затем прервите выполнение команды, используя сочетание клавиш CTRL + C.
+      **Note**
 
-4.  Для отображения пакетов, доступных для обновления, и файлов, которые будут изменены в процессе обновления, выполните команду:
+      If you are using a virtual machine provided by the cloud service [VK CS](https://mcs.mail.ru/), run the command:
 
-```
-sudo freebsd-update fetch .
-```
+      ```
+      sudo ifconfig vtnet0 mtu 1400 up
+      ```
 
-5.  Запустите процесс обновления, выполнив команду:
+      </info>
 
-```
-sudo freebsd-update install
+   1. To check the changes made, use the command:
 
-```
+      ```
+      ping cms.mail.ru
+      ```
 
-## Установка и настройка веб-сервера Apache
+   Verify that the request exchange is successful. Then abort the command using the keyboard shortcut CTRL+C.
 
-Чтобы установить и выполнить первичную настройку веб-сервера Apache:
+1. To display the packages available for upgrade and the files that will be changed during the upgrade, run the command:
 
-1.  Проверьте доступные версии Apache, выполнив команду:
+   ```
+   sudo freebsd-update fetch .
+   ```
 
-```
-ls /usr/ports/www/ | grep apache
-```
+1. Start the update process by running the command:
 
-2.  Выберите версию Apache (например, **apache24**) и запустите установку, выполнив команду:
+   ```
+   sudo freebsd-update install
+   ```
 
-```
-sudo pkg install apache24
-```
+## Installing and configuring the Apache web server
 
-**Внимание**
+To install and perform initial configuration of the Apache web server:
 
-При установке сервера Apache может потребоваться обновление пакета установщика pkg. Для обновления ответьте **Y**(es).
+1. Check the available versions of Apache by running the command:
 
-3.  Чтобы при перезагрузке операционной системы сервис Apache запускался автоматически, выполните команду:
+   ```
+   ls /usr/ports/www/ | grep apache
+   ```
 
-```
-sudo sysrc apache24_enable="yes"
-```
+1. Select the version of Apache (for example, **apache24**) and start the installation by running the command:
 
-4.  Запустите сервер Apache, выполнив команду:
+   ```
+   sudo pkg install apache24
+   ```
 
-```
-sudo service apache24 start
-```
+   <warn>
 
-5.  Для проверки работы Apache в адресной строке веб-браузера введите:
+   **Attention**
 
-```
-<внешний IP-адрес веб-сервера>/index.html
-```
+   When installing the Apache server, the pkg installer package may need to be updated. Answer `Y` to update.
 
-Если установка веб-сервера Apache прошла успешно, загрузится страница веб-сервера, содержащая строку:
+   </warn>
 
-![](./assets/1557001866811-1557001866810.jpeg)
+1. To start the Apache service automatically when the operating system is restarted, run the command:
 
-## Установка СУБД MySQL (mariadb)
+   ```
+   sudo sysrc apache24_enable="yes"
+   ```
 
-В качестве базы данных рассматривается установка mariadb, которая является ответвлением от СУБД MySQL. Чтобы установить и настроить mariadb:
+1. Start the Apache server by running the command:
 
-1.  Откройте окно терминала.
+   ```
+   sudo service apache24 start
+   ```
 
-2.  Проверьте доступные версии mariadb, выполнив команду:
+1. To test Apache in the address bar of a web browser, type:
 
-```
-pkg search -o mariadb
-```
+   ```
+   <web server external IP address>/index.html
+   ```
 
-![](./assets/1557002384498-1557002384498.jpeg)
+If the installation of the Apache web server was successful, the web server page will load containing the line:
 
-3.  Выберите версию mariadb (например, **mariadb103**) и запустите установку, выполнив команду:
+   ![](./assets/1557001866811-1557001866810.jpeg)
 
-```
-sudo pkg install mariadb103-server mariadb103-client
-```
+## Install MySQL DBMS (mariadb)
 
-4.  Чтобы при перезагрузке операционной системы сервис mariadb запускался автоматически, выполните команду:
+The `mariadb` installation, which is a fork of the MySQL DBMS, is considered as the database. To install and configure `mariadb`:
 
-```
-sudo sysrc mysql_enable="yes"
-```
+1. Open a terminal window.
 
-5.  Запустите mariadb, выполнив команду:
+1. Check the available versions of `mariadb` by running the command:
 
-```
-sudo service mysql-server start
-```
+   ```
+   pkg search -o mariadb
+   ```
 
-6.  Для изменения конфигурации сервера mariadb используйте команду:
+   ![](./assets/1557002384498-1557002384498.jpeg)
 
-```
-sudo mysql_secure_installation
-```
+1. Select the version of `mariadb` (for example, **mariadb103**) and start the installation by running the command:
 
-Данная команда запускает сценарий повышения безопасности сервера СУБД mariadb. Для настройки безопасности:
+   ```
+   sudo pkg install mariadb103-server mariadb103-client
+   ```
 
-- Укажите пароль для учетной записи root.
+1. To start the `mariadb` service automatically when the operating system is rebooted, run the command:
 
-**Внимание**
+   ```
+   sudo sysrc mysql_enable="yes"
+   ```
 
-Рекомендуется указывать надежный пароль, который содержит не менее 8 символов, включающих по крайней мере одну заглавную букву, одну строчную букву, одну цифру и один специальный символ.
+1. Start `mariadb` by running the command:
 
-Пользователь root в данном случае относится исключительно к СУБД MySQL и не является учетной записью ОС CentOS.
+   ```
+   sudo service mysql-server start
+   ```
 
-- При необходимости удалите анонимные (anonymous) учетные записи, которые создаются при установке СУБД maridb:
-  - Ответьте Y(es) для удаления анонимных учетных записей.
-  - Ответьте N(o), если удаление анонимных учетных записей не требуется.
+1. To change the `mariadb` server configuration, use the command:
 
-Данные учетные записи предназначены только для тестирования БД и в большинстве случаев могут быть удалены.
+   ```
+   sudo mysql_secure_installation
+   ```
 
-- При необходимости запретите предоставление удаленного доступа к базам СУБД MySQL для учетной записи root:
-  - Ответьте Y(es) для отключения возможности удаленного доступа.
-  - Ответьте N(o), для разрешения удаленного доступа.
-- При необходимости удалите тестовую базу (Test):
-  - Ответьте Y(es) для удаления базы Test.
-  - Ответьте N(o), если удаление базы Test не требуется.
+   This command runs the mariadb database server hardening script. To set up security:
 
-Данная база создается при установке сервера СУБД MySQL и предназначена для тестирования. Удаление базы Test не влияет на работу системы.
+   1. Specify a password for the root account.
 
-- В ответ на запрос на внесение изменений в СУБД MySQL и перезагрузку привилегий доступа к таблицам:
-  - Ответьте Y(es) для внесения изменений и перезагрузки.
-  - Ответьте N(o), если внесение изменений и перезагрузка не требуются.
+      <warn>
 
-## Установка PHP
+      **Attention**
 
-Для установки PHP:
+      It is recommended that you provide a strong password that is at least 8 characters long and includes at least one uppercase letter, one lowercase letter, one number, and one special character.
 
-1.  Откройте окно терминала.
-2.  Проверьте доступные версии PHP, выполнив команду:
+      </warn>
 
-```
-ls /usr/ports/lang/ | grep php
-```
+      The root user in this case refers exclusively to the MySQL DBMS and is not a CentOS OS account.
 
-![](./assets/1557002843363-1557002843363.jpeg)
+   1. If necessary, remove the anonymous accounts that are created during the installation of the maridb DBMS:
+      - Answer `Y` to remove anonymous accounts.
+      - Answer `N` if deleting anonymous accounts is not required.
 
-3.  Для отображения всех доступных утилит PHP используйте команду:
+      These accounts are for database testing purposes only and can be deleted in most cases.
 
-```
-pkg search -o php
-```
+   1. If necessary, prohibit the provision of remote access to MySQL DBMS databases for the root account:
+      - Answer `Y` to disable remote access.
+      - Answer `N` to allow remote access.
 
-4.  Установите PHP и дополнительные утилиты, выполнив команду:
+   1. If necessary, delete the test database (Test):
+      - Answer `Y` to remove the base Test.
+      - Answer `N` if you don't want to remove the Test base.
 
-```
-sudo pkg install php56 mod_php56 php56-mbstring php56-mcrypt php56-zlib php56-curl php56-gd php56-json php56-mysqli
-```
+      This database is created during installation of the MySQL DBMS server and is intended for testing purposes. Removing the Test database does not affect the operation of the system.
 
-По завершении установки отобразится справочная информация, содержащая конфигурацию сервера Apache, например:
+   1. In response to a request to make changes to the MySQL DBMS and reload table access privileges:
+      - Answer `Y` to make changes and reboot.
+      - Answer `N` if changes and reboot are not required.
 
-**![](./assets/1557002984407-1557002984407.jpeg)**
+## Install PHP
 
-5.  Создайте файл php.conf, выполнив команду:
+To install PHP:
 
-```
-sudo ee /usr/local/etc/apache24/Includes/php.conf 
-```
+1. Open a terminal window.
+1. Check available PHP versions by running the command:
 
-6.  В файл php.conf добавьте следующие строки:
+   ```
+   ls /usr/ports/lang/ | grep php
+   ```
 
-```
-<IfModule dir_module>
-    DirectoryIndex index.php index.html
-    <FilesMatch "\.php$">
-        SetHandler application/x-httpd-php
-    </FilesMatch>
-    <FilesMatch "\.phps$">
-        SetHandler application/x-httpd-php-source
-    </FilesMatch>
-</IfModule>
-```
+   ![](./assets/1557002843363-1557002843363.jpeg)
 
-и сохраните внесенные изменения.
+1. To display all available PHP utilities, use the command:
 
-7.  Перезагрузите веб-сервер Apache, выполнив команду:
+   ```
+   pkg search -o php
+   ```
 
-```
-sudo service apache24 restart
-```
+1. Install PHP and additional utilities by running the command:
 
-8.  Убедитесь, что веб-сервер Apache корректно отображает скрипты PHP. Для этого:
+   ```
+   sudo pkg install php56 mod_php56 php56-mbstring php56-mcrypt php56-zlib php56-curl php56-gd php56-json php56-mysqli
+   ```
 
-- создайте файл info.php, выполнив команду:
+   When the installation is complete, help information will be displayed containing the configuration of the Apache server, for example:
 
-```
-sudo ee /usr/local/www/apache24/data/info.php
+   **![](./assets/1557002984407-1557002984407.jpeg)**
 
-```
+1. Create a `php.conf` file by running the command:```
+   sudo ee /usr/local/etc/apache24/Includes/php.conf
+   ```
 
-- в файл info.php поместите текст:
+1. Add the following lines to the `php.conf` file:
 
-```
-<?php
-    phpinfo();
-?>
-```
+   ```
+   <IfModule dir_module>
+   DirectoryIndex index.php index.html
+   <FilesMatch "\.php$">
+   SetHandler application/x-httpd-php
+   </FilesMatch>
+   <FilesMatch "\.phps$">
+   SetHandler application/x-httpd-php-source
+   </FilesMatch>
+   </IfModule>
+   ```
 
-- сохраните внесенные изменения и завершите редактирование;
-- в адресной строке браузера к адресу веб-сервера добавьте строку:
+   Save your changes.
 
-```
-/info.php
-```
+1. Restart the Apache web server by running the command:
 
-В результате должна отобразиться примерно следующая страница:
+   ```
+   sudo service apache24 restart
+   ```
 
-**![](./assets/1557003200841-1557003200841.jpeg)**
+1. Make sure the Apache web server renders PHP scripts correctly. For this:
 
-**Внимание**
+   1. Create the `info.php` file by running the command:
 
-В целях безопасности после проверки системы рекомендуется удалить файл info.php, выполнив команду:
+      ```
+      sudo ee /usr/local/www/apache24/data/info.php
 
-```
-sudo rm /usr/local/www/apache24/data/info.php
+      ```
 
-```
+   1. In the `info.php` file put the following text:
 
-**Обратная связь**
+      ```
+      <?php
+      phpinfo();
+      ?>
+      ```
 
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
+   1. Save your changes and finish editing;
+
+   1. In the address bar of the browser, add the line to the web server address:
+
+      ```
+      /info.php
+      ```
+
+      As a result, the following page should be displayed:
+
+      **![](./assets/1557003200841-1557003200841.jpeg)**
+
+   <warn>
+
+   **Attention**
+
+   For security purposes, after checking the system, it is recommended to delete the `info.php` file by running the command:
+
+   ```
+   sudo rm /usr/local/www/apache24/data/info.php
+
+   ```
+
+   </warn>
+
+## Feedback
+
+Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

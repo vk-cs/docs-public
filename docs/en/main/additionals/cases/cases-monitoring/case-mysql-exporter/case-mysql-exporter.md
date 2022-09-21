@@ -1,76 +1,92 @@
-## Конфигурация оборудования
+## Hardware configuration
 
-Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы c использованием следующего оборудования:
+To run this monitoring scenario, install and configure servers using the following hardware:
 
-- Prometheus 2.13 на ОС Ubuntu 18.04 LTS x86_64.
-- Grafana 6.4.2 на ОС Ubuntu 18.04 LTS x86_64.
-- PostgreSQL 10 на ОС Ubuntu 18.04 LTS x86_64.
+- Prometheus 2.13 on Ubuntu 18.04 LTS x86_64.
+- Grafana 6.4.2 on Ubuntu 18.04 LTS x86_64.
+- PostgreSQL 10 on Ubuntu 18.04 LTS x86_64.
 
-**Внимание**
+<warn>
 
-При использовании серверов и оборудования других версий некоторые шаги сценария могут отличаться от описанных ниже.
+**Attention**
 
-## Схема работы
+When using servers and hardware of other versions, some steps of the script may differ from those described below.
+
+</warn>
+
+## Scheme of work
 
 ![](./assets/1572212552143-1572212552143.png)
 
-Для мониторинга параметров MySQL и сбора метрик в Prometheus используется экспортер, который опрашивает сервер MySQL и передает данные серверу Prometheus. Данные можно визуализировать в Grafana с помощью Dashboard.
+To monitor MySQL parameters and collect metrics, Prometheus uses an exporter that queries the MySQL server and sends data to the Prometheus server. Data can be visualized in Grafana using Dashboard.
 
-## Установка mysqld_exporter
+## Install mysqld_exporter
 
-1.  Выполните логин на сервере MySQL c правами суперпользователя.
-2.  Укажите актуальную версию экспортера:
+1. Log in to the MySQL server with superuser rights.
+2. Specify the current version of the exporter:
 
 ```
-root@mysql:~# export VERSION="<версия>"
+root@mysql:~# export VERSION="<version>"
 ```
 
-**Примечание**
+<info>
 
-Актуальную версию mysqld_exporter можно [найти и скачать тут](https://prometheus.io/download/#mysqld_exporter).
+**Note**
 
-3.  Создайте пользователя prometheus и группу prometheus, от имени которых вы будете запускать mysqld_exporter:
+The current version of mysqld_exporter can be [find and downloaded here](https://prometheus.io/download/#mysqld_exporter).
+
+</info>
+
+3. Create a prometheus user and a prometheus group under which you will run mysqld_exporter:
 
 ```
 root@mysql:~# groupadd --system prometheus
 root@mysql:~# useradd --system -g prometheus -s /bin/false prometheus
 ```
 
-4.  Скачайте архив mysqld_exporter и распакуйте его в папку /tmp:
+4. Download the mysqld_exporter archive and extract it to the /tmp folder:
 
 ```
 root@mysql:~# wget https://github.com/prometheus/mysqld_exporter/releases/download/v$VERSION/mysqld_exporter-$VERSION.linux-amd64.tar.gz -O - | tar -xzv -C /tmp
 ```
 
-5.  Скопируйте содержимое распакованного архива в папку /usr/local/bin:
-    ```
-    root@mysql:~# cp /tmp/mysqld_exporter-$VERSION.linux-amd64/mysqld_exporter /usr/local/bin
-    ```
-6.  Удалите содержимое распакованного архива из папки /tmp:
+5. Copy the contents of the unpacked archive to the /usr/local/bin folder:
+
+```
+root@mysql:~# cp /tmp/mysqld_exporter-$VERSION.linux-amd64/mysqld_exporter /usr/local/bin
+```
+
+6. Delete the contents of the unpacked archive from the /tmp folder:
+
     ```
     root@mysql:~# rm -rf /tmp/mysqld_exporter-$VERSION.linux-amd64
     ```
-7.  Измените владельца mysqld_exporter на prometheus:
 
-```
-root@mysql:~# chown -R prometheus:prometheus /usr/local/bin/mysqld_exporter
-```
+7. Change the owner of mysqld_exporter to prometheus:
 
-8.  Для работы mysqld_exporter создайте пользователя mysql и дайте ему соответствующие права:
+    ```
+    root@mysql:~# chown -R prometheus:prometheus /usr/local/bin/mysqld_exporter
+    ```
 
-```
-MariaDB [(none)]> CREATE USER 'exporter'@'localhost' IDENTIFIED BY '<пароль>' WITH MAX_USER_CONNECTIONS 3;
-Query OK, 0 rows affected (0.001 sec)
+8. For mysqld_exporter to work, create a mysql user and give him the appropriate rights:
 
-MariaDB [(none)]> GRANT PROCESS, REPLICATION CLIENT, SELECT ON \*.\* TO 'exporter'@'localhost';
-Query OK, 0 rows affected (0.000 sec)
-```
+    ```
+    MariaDB [(none)]> CREATE USER 'exporter'@'localhost' IDENTIFIED BY '<password>' WITH MAX_USER_CONNECTIONS 3;
+    Query OK, 0 rows affected (0.001 sec)
 
-**Внимание**
+    MariaDB [(none)]> GRANT PROCESS, REPLICATION CLIENT, SELECT ON \*.\* TO 'exporter'@'localhost';
+    Query OK, 0 rows affected (0.000 sec)
+    ```
 
-Параметр WITH MAX_USER_CONNECTIONS 3 не поддерживается некоторыми версиями сервера MySQL. Если при создании пользователя вы получили ошибку, уберите этот параметр и выполните команду еще раз.
+<warn>
 
-9.  Создайте файл, содержащий правила доступа к mysqld_exporter:
+**Attention**
+
+The WITH MAX_USER_CONNECTIONS 3 option is not supported by some MySQL server versions. If you get an error while creating the user, clear this option and run the command again.
+
+</warn>
+
+9. Create a file containing mysqld_exporter access rules:
 
 ```
 root@mysql:~# cat <<EOF>>/usr/local/etc/.mysqld_exporter.cnf
@@ -78,10 +94,10 @@ EOF
 root@mysql:~# chown prometheus:prometheus /usr/local/etc/.mysqld_exporter.cnf
 ```
 
-10. Создайте сценарий запуска systemd сервиса mysqld_exporter. Для этого создайте файл /etc/systemd/system/mysqld_exporter.service со следующим содержимым:
+10. Create a script to start the systemd service mysqld_exporter. To do this, create a file /etc/systemd/system/mysqld_exporter.service with the following content:
 
 ```
-[Unit]
+[unit]
 Description=Prometheus MySQL Exporter
 After=network.target
 
@@ -91,35 +107,39 @@ Restart=always
 User=prometheus
 Group=prometheus
 ExecStart=/usr/local/bin/mysqld_exporter \
---config.my-cnf /usr/local/etc/.mysqld_exporter.cnf \
---collect.global_status \
---collect.info_schema.innodb_metrics \
---collect.auto_increment.columns \
---collect.info_schema.processlist \
---collect.binlog_size \
---collect.info_schema.tablestats \
---collect.global_variables \
---collect.info_schema.query_response_time \
---collect.info_schema.userstats \
---collect.info_schema.tables \
---collect.perf_schema.tablelocks \
---collect.perf_schema.file_events \
---collect.perf_schema.eventswaits \
---collect.perf_schema.indexiowaits \
---collect.perf_schema.tableiowaits \
---collect.slave_status \
+--config.my-cnf /usr/local/etc/.mysqld_exporter.cnf\
+--collect.global_status \
+--collect.info_schema.innodb_metrics \
+--collect.auto_increment.columns \
+--collect.info_schema.processlist \
+--collect.binlog_size \
+--collect.info_schema.tablestats \
+--collect.global_variables \
+--collect.info_schema.query_response_time \
+--collect.info_schema.userstats \
+--collect.info_schema.tables \
+--collect.perf_schema.tablelocks \
+--collect.perf_schema.file_events \
+--collect.perf_schema.eventswaits \
+--collect.perf_schema.indexiowaits \
+--collect.perf_schema.tableiowaits \
+--collect.slave_status \
 --web.listen-address=0.0.0.0:9104
 
 [Install]
 WantedBy=multi-user.target
 ```
 
-**Примечания**
+<info>
 
-- Параметры, начинающиеся с collect, отвечают за метрики, которые будут собираться с сервера MySQL. Подробное описание собираемых метрик [см. тут](https://github.com/prometheus/mysqld_exporter).
-- В параметре web.listen-address указываются адрес и порт, по которым будет доступен mysqld_exporter (0.0.0.0 означает любой адрес на сервере). Эти адрес и порт должны быть доступны с сервера Prometheus. Если порт недоступен, попробуйте изменить настройки межсетевого экрана на сервере с mysqld_exporter.
+**Notes**
 
-11. Запустите mysqld_exporter:
+- Parameters starting with collect are responsible for the metrics that will be collected from the MySQL server. A detailed description of the collected metrics [see. here](https://github.com/prometheus/mysqld_exporter).
+- The web.listen-address parameter specifies the address and port on which mysqld_exporter will be available (0.0.0.0 means any address on the server). This address and port must be accessible from the Prometheus server. If the port is not available, try changing the firewall settings on the server with mysqld_exporter.
+
+</info>
+
+11. Start mysqld_exporter:
 
 ```
 root@mysql:~# systemctl daemon-reload
@@ -128,7 +148,7 @@ root@mysql:~# systemctl enable mysqld_exporter.service
 Created symlink /etc/systemd/system/multi-user.target.wants/mysqld_exporter.service → /etc/systemd/system/mysqld_exporter.service.
 ```
 
-12. Убедитесь, что сервис запустился:
+12. Make sure the service has started:
 
 ```
 root@mysql:~# systemctl status mysqld_exporter.service
@@ -141,131 +161,129 @@ Memory: 6.4M
 CGroup: /system.slice/mysqld_exporter.service
 └─24617 /usr/local/bin/mysqld_exporter/mysqld_exporter --config.my-cnf /usr/local/etc/.mysqld_exporter.cnf --collect.global_status --collect.info_schema.innodb_metrics --collect.auto_increment.columns --collect.info_schema.processlist --collect.binlog_size --colle
 
-Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.perf_schema.tableiowaits" source="mysqld_exporter.go:273"
-Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.perf_schema.indexiowaits" source="mysqld_exporter.go:273"
-Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.perf_schema.tablelocks" source="mysqld_exporter.go:273"
-Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.info_schema.tablestats" source="mysqld_exporter.go:273"
-Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.perf_schema.file_events" source="mysqld_exporter.go:273"
-Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.info_schema.userstats" source="mysqld_exporter.go:273"
-Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.info_schema.innodb_cmp" source="mysqld_exporter.go:273"
-Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.info_schema.innodb_cmpmem" source="mysqld_exporter.go:273"
-Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.info_schema.query_response_time" source="mysqld_exporter.go:273"
-Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg="Listening on 0.0.0.0:9104" source="mysqld_exporter.go:283"
+Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.perf_schema.tableiowaits" source="mysqld_exporter.go :273"
+Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.perf_schema.indexiowaits" source="mysqld_exporter.go :273"
+Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.perf_schema.tablelocks" source="mysqld_exporter.go :273"
+Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.info_schema.tablestats" source="mysqld_exporter.go :273"
+Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.perf_schema.file_events" source="mysqld_exporter.go :273"
+Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.info_schema.userstats" source="mysqld_exporter.go :273"
+Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.info_schema.innodb_cmp" source="mysqld_exporter.go :273"
+Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.info_schema.innodb_cmpmem" source="mysqld_exporter.go :273"
+Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg=" --collect.info_schema.query_response_time" source="mysqld_exporter.go :273"
+Oct 01 10:26:30 mysql mysqld_exporter[24617]: time="2019-10-01T10:26:30+03:00" level=info msg="Listening on 0.0.0.0:9104" source="mysqld_exporter.go :283"
 ```
 
-## Настройка Prometheus для получения данных mysqld_exporter
+## Set up Prometheus to get mysqld_exporter data
 
-1.  На ноде Prometheus выполните логин.
-2.  В файле prometheus.yml для работы с mysqld_exporter:
-    - В scrape_configs добавьте следующую секцию:
+1. Login to the Prometheus node.
+2. In the prometheus.yml file for working with mysqld_exporter:
+    - In scrape_configs add the following section:
 
 ```
 scrape_configs:
-  - job_name: mysql
-    static_configs:
-      - targets: ['10.0.0.4:9104']
-        labels:
-          alias: mysql
+- job_name: mysql
+static_configs:
+-targets: ['10.0.0.4:9104']
+labels:
+alias: mysql
 
 ```
 
-- В секции targets впишите IP-адрес сервера mysql_exporter.
+- In the targets section, enter the IP address of the mysql_exporter server.
 
-3.  Перезапустите сервиc Prometheus:
+3. Restart the Prometheus service:
 
 ```
 root@prometheus:~# systemctl reload prometheus.service
 
 ```
 
-## Настройка Grafana
+## Setting up Grafana
 
-Для визуализации полученных данных установите соответствующий Dashboard (например, [базовый Dashboard](https://grafana.com/grafana/dashboards/6239) или [Dashboard Percona](https://grafana.com/grafana/dashboards/7362)).
+To visualize the received data, install the appropriate Dashboard (for example, [Basic Dashboard](https://grafana.com/grafana/dashboards/6239) or [Dashboard Percona](https://grafana.com/grafana/dashboards/7362)) .
 
-После установки и настройки получения данных с сервера Prometheus отобразится примерно следующее при использовании базового Dashboard:
+After installing and configuring to receive data from the Prometheus server, something like the following will be displayed when using the basic Dashboard:
 
 **![](./assets/1572208462067-1572208462067.png)**
 
-И примерно следующее при использовании Dashboard Percona:
+And something like the following when using Dashboard Percona:
 
-\*\*![](./assets/1572208930593-1572208930593.png)
+![](./assets/1572208930593-1572208930593.png)
 
-\*\*
+## Create test load
 
-## Создание тестовой нагрузки
+To see how the graphs change when the MySQL server is loaded, use the sysbench utility (for examples of use, see [here](https://ruhighload.com/%D0%A2%D0%B5%D1%81%D1%82%D0 %B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D0%BD%D0%B0%D0%B3%D1%80%D1%83 %D0%B7%D0%BA%D0%B8+mysql) and [here](https://github.com/akopytov/sysbench)).
 
-Чтобы посмотреть, как изменятся графики при нагрузке на сервер MySQL, воспользуйтесь утилитой sysbench (примеры использования см. [тут](https://ruhighload.com/%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D0%BD%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8+mysql) и [тут](https://github.com/akopytov/sysbench)).
+For this:
 
-Для этого:
-
-1.  Установите утилиту sysbench:
+1. Install the sysbench utility:
 
 ```
 root@mysql:~# apt-get install sysbench
 ```
 
-2.  На ноде MySQL запустите генерацию тестового набора :
+2. On the MySQL node, run the test suite generation:
 
 ```
 root@mysql:~# sysbench oltp_read_only --mysql-db=test --mysql-user=root --mysql-password --db-driver=mysql prepare
-sysbench 1.0.17 (using bundled LuaJIT 2.1.0-beta2)
-Creating table 'sbtest1'...
-Inserting 10000 records into 'sbtest1'
+sysbench 1.0.17 (using bundled LuaJIT 2.1.0-beta2)
+Creating table 'sbtest1'...
+Inserting 10000 records into 'sbtest1'
 Creating a secondary index on 'sbtest1'...
 ```
 
-3.  Запустите тест:
+3. Run the test:
 
-    ```
-    root@mysql:~# sysbench oltp_read_only --mysql-db=test --mysql-user=root --mysql-password --db-driver=mysql run
-    sysbench 1.0.17 (using bundled LuaJIT 2.1.0-beta2)
+```
+root@mysql:~# sysbench oltp_read_only --mysql-db=test --mysql-user=root --mysql-password --db-driver=mysql run
+sysbench 1.0.17 (using bundled LuaJIT 2.1.0-beta2)
 
-    Running the test with following options:
-    Number of threads: 1
-    Initializing random number generator from current time
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
 
-    Initializing worker threads...
+Initializing worker threads...
 
-    Threads started!
+Threads started!
 
-    SQL statistics:
-    queries performed:
-    read: 109340
-    write: 0
-    other: 15620
-    total: 124960
-    transactions: 7810 (780.72 per sec.)
-    queries: 124960 (12491.51 per sec.)
-    ignored errors: 0 (0.00 per sec.)
-    reconnects: 0 (0.00 per sec.)
+SQL statistics:
+queries performed:
+read: 109340
+write: 0
+other: 15620
+total: 124960
+transactions: 7810 (780.72 per sec.)
+queries: 124960 (12491.51 per sec.)
+ignored errors: 0 (0.00 per sec.)
+reconnects: 0 (0.00 per sec.)
 
-    General statistics:
-    total time: 10.0007s
-    total number of events: 7810
+General statistics:
+total time: 10.0007s
+total number of events: 7810
 
-    Latency (ms):
-    min: 0.59
-    avg: 1.28
-    max: 10.28
-    95th percentile: 2.26
-    sum: 9979.28
+Latency (ms):
+min: 0.59
+avg: 1.28
+max: 10.28
+95th percentile: 2.26
+sum: 9979.28
 
-    Threads fairness:
-    events (avg/stddev): 7810.0000/0.00
-        execution time (avg/stddev):   9.9793/0.00
-    ```
+thread fairness:
+events (avg/stddev): 7810.0000/0.00
+execution time (avg/stddev): 9.9793/0.00
+```
 
-В результате тестовой нагрузки графики в Grafana изменяться:
+As a result of the test load, graphics in Grafana change:
 
 **![](./assets/1572208984315-1572208984315.png)**
 
-## Удаление mysql_exporter
+## Remove mysql_exporter
 
-Чтобы удалить mysqld_exporter:
+To remove mysqld_exporter:
 
-1.  Удалите Dashboard из Grafana.
-2.  Из конфигурационного файла prometheus удалите секцию - job_name: mysql.
-3.  На ноде с mysqld_exporter выполните следующие команды:
+1. Remove Dashboard from Grafana.
+2. Remove the section - job_name: mysql from the prometheus configuration file.
+3. On the node with mysqld_exporter, run the following commands:
 
 ```
 root@mysql:~# systemctl stop mysqld_exporter.service
@@ -278,16 +296,16 @@ root@mysql:~# userdel prometheus
 root@mysql:~# groupdel prometheus
 ```
 
-4.  На ноде mysql в консоли mysql удалите пользователя:
+4. On the mysql node in the mysql console, delete the user:
 
 ```
 MariaDB [(none)]> drop user 'exporter'@'localhost';
-Query OK, 0 rows affected (0.020 sec)
+Query OK, 0 rows affected (0.020 sec)
 
 MariaDB [(none)]> flush privileges;
 Query OK, 0 rows affected (0.007 sec)
 ```
 
-**Обратная связь**
+## **Feedback**
 
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
+Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

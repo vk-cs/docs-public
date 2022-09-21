@@ -1,276 +1,274 @@
-Docker CE (Community Edition) – это  платформа для быстрой сборки, отладки и развертывания приложений. Docker CE позволяет быстро разворачивать приложения в любой среде, упаковывая программное обеспечение в конфигурируемые контейнеры.
+Docker CE (Community Edition) is a platform for quickly building, debugging and deploying applications. Docker CE allows you to quickly deploy applications in any environment by packaging software into configurable containers.
 
-Контейнеры включают все необходимое для работы приложения (библиотеки, системные инструменты, код и среду исполнения) и позволяют запускать приложения в процессах с изоляцией ресурсов. Они подобны виртуальным машинам, но являются более портируемыми, менее требовательными к ресурсам и более зависимыми от операционной системы хостовой машины.
+Containers include everything you need to run an application (libraries, system tools, code, and runtime) and allow applications to run in processes with resource isolation. They are similar to virtual machines, but are more portable, less resource intensive, and more dependent on the operating system of the host machine.
 
-**Как сэкономить время на установке Docker CE**
+**How ​​to save time installing Docker CE**
 
-Вы можете получить уже установленный Docker CE на Ubuntu 18.04 в виде настроенной виртуальной машины VK Cloud. При регистрации вы получаете бесплатный бонусный счет, которого достаточно, чтобы тестировать приложение несколько дней.
+You can get Docker CE already installed on Ubuntu 18.04 as a pre-configured VK Cloud virtual machine. Upon registration, you get a free bonus account, which is enough to test the application for several days.
 
-**[**[подключить машину Docker CE](https://mcs.mail.ru/app/services/marketplace/)**]**
+**[**[connect Docker CE machine](https://mcs.mail.ru/app/services/marketplace/)**]**
 
-Чтобы узнать больше о Docker CE в магазине приложений, перейдите в [Центр помощи](https://mcs.mail.ru/help/quick-start/docker-ce).
+To learn more about Docker CE in the app store, go to [Help Center](https://mcs.mail.ru/help/quick-start/docker-ce).
 
-**Требования**
+**Requirements**
 
-- Операционная система Ubuntu версии 18.04.
-- Пользователь с доступом к команде sudo.
+- Operating system Ubuntu version 18.04.
+- A user with access to the sudo command.
 
-## Установка Docker CE
+## Install Docker CE
 
-Чтобы установить Docker CE:
+To install Docker CE:
 
-1.  Откройте окно терминала.
-2.  Обновите индексы пакетов, выполнив команду:
+1. Open a terminal window.
+2. Update the package indexes by running the command:
 
 ```
 sudo apt update
 ```
 
-3.  Установите дополнительные программные пакеты, позволяющие установщику apt использовать пакеты по защищенному протоколу HTTPS, выполнив команду:
+3. Install additional software packages that allow the apt installer to use packages over secure HTTPS by running the command:
 
 ```
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
 ```
 
-4.  Установите доверенный ключ GPG репозитория Docker, выполнив команду:
+4. Install the trusted GPG key of the Docker repository by running the command:
 
 ```
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt key add -
 ```
 
-5.  Убедитесь, что ключ загружен, выполнив команду:
+5. Make sure the key is loaded by running the command:
 
 ```
-apt-key list
+apt key list
 ```
 
-В результате отобразится примерно следующий список:
+This will result in a list similar to the following:
 
 **![](./assets/1566330263739-1566330263739.png)**
 
-6.  Добавьте официальный репозиторий Docker в каталог системных репозиториев APT, выполнив команду:
+6. Add the official Docker repository to the APT system repositories directory by running the command:
 
 ```
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 ```
 
-7.  Обновите индексы пакетов, выполнив команду:
+7. Update the package indexes by running the command:
 
 ```
 sudo apt update
 ```
 
-8.  Убедитесь, что репозиторий Docker подключен в качестве источника установки Docker CE, выполнив команду:
+8. Verify that the Docker repository is connected as the Docker CE installation source by running the command:
 
 ```
 apt-cache policy docker-ce
 ```
 
-В результате отобразится примерно следующее:
+As a result, something like this will be displayed:
 
 **![](./assets/1566330588045-1566330588045.png)**
 
-9.  Установите Docker CE, выполнив команду:
+9. Install Docker CE by running the command:
 
 ```
 sudo apt install docker-ce -y
 ```
 
-10. Чтобы при запуске операционной системы Docker CE запускался автоматически, выполните команду:
+10. To start Docker CE automatically when the operating system starts, run the command:
 
 ```
 sudo systemctl enable docker
 ```
 
-11. Проверьте работу Docker CE, выполнив команду:
+11. Check the operation of Docker CE by running the command:
 
 ```
 sudo systemctl status docker --no-pager -l
 ```
 
-В результате отобразится примерно следующее:
+As a result, something like this will be displayed:
 
 **![](./assets/1566330685591-1566330685591.png)**
 
-## Использование Docker CE
+## Using Docker CE**Note**
 
-**Примечание**
-
-Синтаксис командной строки Docker CE состоит из  ключа (command) и опций (options):
+Docker CE command line syntax consists of a key (command) and options (options):
 
 ```
 docker [OPTIONS] COMMAND
 ```
 
-Для примера использования Docker CE:
+For an example using Docker CE:
 
-1.  Откройте окно терминала.
-2.  Для просмотра справочной информации по синтаксису командной строки Docker CE выполните команду:
+1. Open a terminal window.
+2. To view help information on the Docker CE command line syntax, run the command:
 
 ```
 docker --help
 ```
 
-3.  Для просмотра текущей информации о Docker CE выполните команду:
+3. To view the current information about Docker CE, run the command:
 
 ```
-sudo docker info
+sudo dockerinfo
 ```
 
-## Работа с образами Docker CE
+## Working with Docker CE images
 
-Контейнеры запускаются из образов Docker. По умолчанию Docker получает образы из Docker Hub, который представляет собой реестр образов.
+Containers are run from Docker images. By default, Docker gets images from Docker Hub, which is an image registry.
 
-Для примера работы с образами Docker CE:
+For an example of working with Docker CE images:
 
-1.  Откройте окно терминала.
-2.  Проверьте доступность образов на Docker Hub и возможность их загрузки, выполнив команду:
+1. Open a terminal window.
+2. Check the availability of images on Docker Hub and the ability to download them by running the command:
 
 ```
-sudo docker run hello-world
+sudo docker run hello world
 ```
 
-В результате отобразится примерно следующее:
+As a result, something like this will be displayed:
 
 **![](./assets/1566331064115-1566331064115.png)**
 
-**Примечание**
+**Note**
 
-Далее рассмотрим пример с образом ОС Ubuntu, так как он является более функциональным для демонстрации.
+Let's take a look at the Ubuntu OS image example below, as it is more functional to demonstrate.
 
-3.  Для просмотра доступных образов ОС Ubuntu в Docker Hub выполните команду:
+3. To view the available Ubuntu OS images in Docker Hub, run the command:
 
 ```
 sudo docker search ubuntu
 ```
 
-В результате возвращается список всех образов с подходящими под условия поиска именами:
+As a result, a list of all images with names matching the search conditions is returned:
 
 **![](./assets/1566331344852-1566331344851.png)**
 
-4.  Загрузите образ ОС Ubuntu, выполнив команду:
+4. Download the Ubuntu OS image by running the command:
 
 ```
 sudo docker pull ubuntu
 ```
 
-В результате отобразится примерно следующее:
+As a result, something like this will be displayed:
 
 **![](./assets/1566331489727-1566331489727.png)**
 
-5.  Для просмотра загруженных образов выполните команду:
+5. To view downloaded images, run the command:
 
 ```
 sudo docker images
 ```
 
-В результате отобразится примерно следующее:
+As a result, something like this will be displayed:
 
 **![](./assets/1566330966973-1566330966973.png)**
 
-## Запуск docker-образа
+## Run the docker image
 
-Команда docker run включает две команды:
+The docker run command includes two commands:
 
 ```
-docker pull
+docker-pull
 docker start
 ```
 
-Для получения дополнительной информации используйте команды:
+For more information, use the commands:
 
 ```
-docker run --help и docker start --help
+docker run --help and docker start --help
 ```
 
-Чтобы запустить docker-образ:
+To run the docker image:
 
-1.  Откройте окно терминала.
-2.  В качестве примера запустите docker-образ Ubuntu, выполнив команду:
+1. Open a terminal window.
+2. As an example, run the Ubuntu docker image by running the command:
 
 ```
 sudo docker run -it ubuntu
 ```
 
-В результате из docker-образа создается контейнер и выполняется запуск этого контейнера. Вы сможете начать работу с командной оболочкой контейнера. При этом командная строка будет иметь примерно следующий вид:
+As a result, a container is created from the docker image and this container is launched. You will be able to get started with a container shell. In this case, the command line will look something like this:
 
 ```
-root@f1d4ef1c3e97:/#, где f1d4ef1c3e97 - идентификатор контейнера Ubuntu
+root@f1d4ef1c3e97:/# where f1d4ef1c3e97 is the Ubuntu container ID
 ```
 
-**Примечание**
+**Note**
 
-Ключ -t назначает псевдо-TTY, подключенный к STDIN контейнера. Часто этот ключ используется с опцией -i (например, если для выполнения каких-либо действий нужно подключиться к оболочке (bash) внутри docker-контейнера).
+The -t switch assigns a pseudo-TTY attached to the container's STDIN. Often this switch is used with the -i option (for example, if you need to connect to a shell (bash) inside a docker container to perform some action).
 
-3.  Обновите индексы пакетов, выполнив команду:
+3. Update the package indexes by running the command:
 
 ```
 apt update
 ```
 
-4.  Для примера установите среду выполнения JavaScript - Node.js, выполнив команду:
+4. For example, install the JavaScript runtime - Node.js by running the command:
 
 ```
 apt install nodejs -y
 ```
 
-5.  Проверьте статус и версию установленного пакета Node.js, выполнив команду:
+5. Check the status and version of the installed Node.js package by running the command:
 
 ```
 node -v
 ```
 
-6.  Для выхода из командной оболочки, выполните команду:
+6. To exit the command shell, run the command:
 
 ```
 exit
 ```
 
-## Управление контейнерами Docker CE
+## Docker CE container management
 
-Для примера управления контейнерами Docker CE:
+For the Docker CE container management example:
 
-1.  Откройте окно терминала.
-2.  Для просмотра всех контейнеров выполните команду:
+1. Open a terminal window.
+2. To view all containers, run the command:
 
 ```
 sudo docker ps -a
 ```
 
-В результате отобразится примерно следующее:
+As a result, something like this will be displayed:
 
 **![](./assets/1566332069280-1566332069280.png)**
 
-3.  Для просмотра только активных контейнеров выполните команду:
+3. To view only active containers, run the command:
 
 ```
 sudo docker ps
 ```
 
-4.  Для запуска контейнера выполните команду:
+4. Run the command to start the container:
 
 ```
 sudo docker start <CONTAINER ID>
 ```
 
-Например, команда для запуска контейнера Ubuntu:
+For example, the command to start an Ubuntu container is:
 
 ```
 sudo docker start 9f38b06169dc
 ```
 
-5.  Для остановки контейнера выполните команду:
+5. To stop the container, run the command:
 
 ```
 sudo docker stop <CONTAINER ID>
 ```
 
-6.  Для удаления контейнера выполните команду:
+6. To remove the container, run the command:
 
 ```
 sudo docker rm <CONTAINER ID>
 ```
 
-**Обратная связь**
+**Feedback**
 
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
+Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

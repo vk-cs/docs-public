@@ -1,171 +1,179 @@
-В данной статье рассмотрим, как установить и настроить Standalone MongoDB на Ubuntu 18.04.
+In this article, we will look at how to install and configure Standalone MongoDB on Ubuntu 18.04.
 
-**Примечание.**
+<info>
 
-В описании далее используем следующие имена и IP-адреса серверов:
+**Note.**
 
-- сервер 1 - mongo1.testdomain.com (10.0.0.2);
-- сервер 2 - mongo2.testdomain.com (10.0.0.3);
-- сервер 3 - mongo1.testdomain.com (10.0.0.4).
+In the description below, we use the following server names and IP addresses:
 
-#### Конфигурация оборудования
+- server 1 - mongo1.testdomain.com (10.0.0.2);
+- server 2 - mongo2.testdomain.com (10.0.0.3);
+- server 3 - mongo1.testdomain.com (10.0.0.4).
 
-Рассмотрим установку MongoDB версии 4.0. Для сервера MongoDB нам потребуются три сервера Ubuntu 18.04 LTS x86_64.
+</info>
 
-Можно установить одиночный сервер MongoDB. Если необходимо установить replicaset MongoDB, нужно минимум три сервера: два - для primary и secondary, еще один - для арбитра (подробнее и настройке [читайте тут](https://mcs.mail.ru/help/databases-configuration/mongodb-replica)). Мощности серверов primary и secondary выбираются, исходя из емкости и нагруженности базы данных, сервер арбитра требует минимум ресурсов.
+## Hardware configuration
 
-Для хранения данных MongoDB рекомендует использовать файловую систему XFS, поэтому желательно подключить отдельный том XFS (подробнее см. [читайте тут](https://docs.mongodb.com/manual/administration/production-notes/#kernel-and-file-systems)).
+Consider installing MongoDB version 4.0. For the MongoDB server, we need three Ubuntu 18.04 LTS x86_64 servers.
 
-В качестве языка консоли MongoDB используется JavaScript.
+You can install a single MongoDB server. If you need to install MongoDB replicaset, you need at least three servers: two - for primary and secondary, one more - for the arbitrator (more details and settings can be found in the article [Replicating and updating MongoDB on Ubuntu](https://mcs.mail.ru/ help/databases-configuration/mongodb-replica)). The capacities of the primary and secondary servers are selected based on the capacity and load of the database, the arbiter server requires a minimum of resources.
 
-\*\*Как сэкономить время на установке MongoDB
+MongoDB recommends using the XFS file system for storing data, so it is advisable to mount a separate XFS volume (for more details, see the article [Kernel and File Systems](https://docs.mongodb.com/manual/administration/production-notes/#kernel-and -file-systems)).
 
-\*\*
+MongoDB uses JavaScript as its console language.
 
-Воспользуйтесь нашим готовым облачным решением на базе СУБД MongoDB. При регистрации вы получаете бесплатный бонусный счет, которого достаточно для работы в течение нескольких дней.
+## How to save time installing MongoDB
 
-**[**[**попробовать облачную СУБД MongoDB**](https://mcs.mail.ru/databases/)**]**
+[Use](https://mcs.mail.ru/databases/) our turnkey cloud solution based on MongoDB DBMS. When you sign up, you get a free bonus account, which is enough to work for several days.
 
-## Преимущества MongoDB
+## Benefits of MongoDB
 
-MongoDB (от англ. humongous — огромный) — [документоориентированная система управления базами данных](https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F_%D0%A1%D0%A3%D0%91%D0%94) [](https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%B1%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)(СУБД) с открытым исходным кодом, не требующая описания схемы таблиц. MongoDB классифицирована как NoSQL, использует JSON-подобные документы и схему базы данных, написана на языке C++ (подробнее см. [тут](https://ru.wikipedia.org/wiki/MongoDB)).
+[MongoDB](https://en.wikipedia.org/wiki/MongoDB) 94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%BE%D1%80%D0%B8%D0%B5% D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F_%D0%A1%D0% A3%D0%91%D0%94)(DBMS) is open source and does not require a description of the table schema. MongoDB is classified as NoSQL, uses JSON-like documents and a database schema, and is written in C++.
 
-MongoDB удобно использовать, когда структура документов постоянно меняется, что в традиционных СУБД требует ресурсоемкой смены модели данных. Кроме того, часто MongoDB используют для хранения файлов. Для этого реализована спецификация GridFS, позволяющая хранить и извлекать файлы любого размера и в любом количестве.
+MongoDB is convenient to use when the structure of documents is constantly changing, which in traditional DBMS requires a resource-intensive change in the data model. In addition, MongoDB is often used to store files. To do this, the GridFS specification has been implemented, which allows storing and retrieving files of any size and in any quantity.
 
-## Установка Standalone MongoDB
+## Install Standalone MongoDB
 
-1.  Авторизуйтесь на сервере mongo1.testdomain.com.
-2.  Импортируйте ключ репозитория MongoDB:
+1. Log in to the `mongo1.testdomain.com` server.
+2. Import the MongoDB repository key:
 
 ```
-root@mongo1:~# wget -qO - https://www.mongodb.org/static/pgp/server-4.0.asc | sudo apt-key add -
+root@mongo1:~# wget -qO - https://www.mongodb.org/static/pgp/server-4.0.asc | sudo apt key add -
 OK
 ```
 
-3.  Добавьте репозиторий MongoDB:
+3. Add the MongoDB repository:
 
 ```
-root@mongo1:~# echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
-deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse
+root@mongo1:~# echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse
 ```
 
-4.  Установите MongoDB:
+4. Install MongoDB:
 
 ```
-root@mongo1:~# apt-get update && apt-get -y install mongodb-org
+root@mongo1:~# apt-get update && apt-get -y install mongodb-org
 ```
 
-5.  Сгенерируйте корневой сертификат /etc/ssl/mongoCA.pem для настройки TLS в MongoDB:
+5. Generate a root certificate `/etc/ssl/mongoCA.pem` to set up TLS in MongoDB:
 
 ```
-root@mongo1:~# openssl genrsa -out /tmp/mongoCA.key 4096
-Generating RSA private key, 4096 bit long modulus (2 primes)
-..................................................................................................................++++
+root@mongo1:~# openssl genrsa -out /tmp/mongoCA.key 4096
+Generating RSA private key, 4096 bit long modulus (2 primes)
+................................................. ................................................. ..............++++
 .......++++
-e is 65537 (0x010001)
+e is 65537 (0x010001)
 
-root@mongo1:~# openssl req -x509 -new -key /tmp/mongoCA.key -days 10000 -out /tmp/mongoCA.crt
+root@mongo1:~# openssl req -x509 -new -key /tmp/mongoCA.key -days 10000 -out /tmp/mongoCA.crt
 -----
-Country Name (2 letter code) [AU]:
+Country Name (2 letter code) [AU]:
 State or Province Name (full name) [Some-State]:
 Locality Name (eg, city) []:
 Organization Name (eg, company) [Internet Widgits Pty Ltd]:
 Organizational Unit Name (eg, section) []:
 Common Name (e.g. server FQDN or YOUR name) []:
-Email Address []:
+Email Address[]:
 
 root@mongo1:~# cat /tmp/mongoCA.key /tmp/mongoCA.crt > /etc/ssl/mongoCA.pem
 root@mongo1:~# rm /tmp/mongoCA.key /tmp/mongoCA.crt
 ```
 
-6.  Сгенерируйте сертификат сервера /etc/ssl/mongo1.pem**:**
+6. Generate server certificate `/etc/ssl/mongo1.pem`:
 
 ```
-root@mongo1:~# openssl genrsa -out /tmp/mongo1.key 4096
-Generating RSA private key, 4096 bit long modulus (2 primes)
-..........................++++
-..............................................++++
-e is 65537 (0x010001)
+root@mongo1:~# openssl genrsa -out /tmp/mongo1.key 4096
+Generating RSA private key, 4096 bit long modulus (2 primes)
+.........................++++
+.............................................++++
+e is 65537 (0x010001)
 
 root@mongo1:~# openssl req -new -key /tmp/mongo1.key -out /tmp/mongo1.csr
 -----
-Country Name (2 letter code) [AU]:
+Country Name (2 letter code) [AU]:
 State or Province Name (full name) [Some-State]:
 Locality Name (eg, city) []:
 Organization Name (eg, company) [Internet Widgits Pty Ltd]:
 Organizational Unit Name (eg, section) []:
 Common Name (e.g. server FQDN or YOUR name) []:mongo1.testdomain.com
-Email Address []:
+Email Address[]:
 
-Please enter the following 'extra' attributes
-to be sent with your certificate request
-A challenge password []:
-An optional company name []:
+Please enter the following 'extra' attributes
+to be sent with your certificate request
+A challenge password[]:
+An optional company name[]:
 
-root@mongo1:~# openssl x509 -req -in /tmp/mongo1.csr -CA /etc/ssl/mongoCA.pem -CAcreateserial -out /tmp/mongo1.crt -days 10000
+root@mongo1:~# openssl x509 -req -in /tmp/mongo1.csr -CA /etc/ssl/mongoCA.pem -CAcreateserial -out /tmp/mongo1.crt -days 10000
 Signature ok
-subject=C = AU, ST = Some-State, O = Internet Widgits Pty Ltd, CN = mongo1
+subject=C=AU, ST=Some-State, O=Internet Widgits Pty Ltd, CN=mongo1
 Getting CA Private Key
 
 root@mongo1:~# cat /tmp/mongo1.key /tmp/mongo1.crt > /etc/ssl/mongo1.pem
 root@mongo1:~# rm /tmp/mongo1.key /tmp/mongo1.crt /tmp/mongo1.csr
 ```
 
-**Внимание**
+<warn>
 
-В поле CommonName укажите имя сервера (hostname).
+**Attention**
 
-7.  Сгенерируйте клиентский сертификат, который будет использоваться для mongo-консоли (см. предыдущий шаг), и поместите его в папку /etc/ssl/client.pem.
-8.  В текстовом редакторе откройте конфигурационный файл /etc/mongod.conf и приведите его к следующему виду:
+Enter the server name (hostname) in the CommonName field.
+
+</warn>
+
+7. Generate a client certificate to be used for the mongo console (see previous step) and place it in the `/etc/ssl/client.pem` folder.
+8. In a text editor, open the configuration file `/etc/mongod.conf` and make it look like this:
 
 ```
-# mongod.conf
+#mongod.conf
 # for documentation of all options, see:
 # http://docs.mongodb.org/manual/reference/configuration-options/
 
 # Where and how to store data.
 storage:
-    dbPath: /var/lib/mongodb
-    journal:
-        enabled: true
+dbPath: /var/lib/mongodb
+journal:
+enabled: true
 # engine:
-# mmapv1:
+#mmapv1:
 # wiredTiger:
 
 # where to write logging data.
 systemLog:
-    destination: file
-    logAppend: true
-    path: /var/log/mongodb/mongod.log
+destination:file
+logappend:true
+path: /var/log/mongodb/mongod.log
 
 # network interfaces
 net:
-    port: 27017
-    bindIp: 0.0.0.0
-    ssl:
-        mode: requireSSL
-        PEMKeyFile: /etc/ssl/mongo1.pem
-        CAFile: /etc/ssl/mongoCA.pem
+port: 27017
+bindIP: 0.0.0.0
+ssl:
+mode: requireSSL
+PEMKeyFile: /etc/ssl/mongo1.pem
+CAFile: /etc/ssl/mongoCA.pem
 # how the process runs
-processManagement:
-    timeZoneInfo: /usr/share/zoneinfo
+process management:
+timeZoneInfo: /usr/share/zoneinfo
 ```
 
-**Внимание**
+<warn>
 
-Важные параметры:
+**Attention**
 
-- bindIp указывает, по каким адресам будет доступен Mongod. Если указано 0.0.0.0, сервер слушает все интерфейсы. Если нужен только локальный доступ, вместо 0.0.0.0 укажите localhost.
-- dbPath указывает путь к базе данных. Рекомендуемая файловая система хранилища - XFS.
+Important parameters:
 
-9.  Запустите Mongod и добавьте его в список приложений, загружаемых автоматически:
+- bindIp specifies at what addresses Mongod will be available. If 0.0.0.0 is specified, the server listens on all interfaces. If you only want local access, replace 0.0.0.0 with localhost.
+- dbPath specifies the path to the database. The recommended storage file system is XFS.
+
+</warn>
+
+9. Start Mongod and add it to the list of apps to load automatically:
 
 ```
 root@mongo1:/etc# systemctl start mongod.service
 root@mongo1:/etc# systemctl enable mongod.service
 ```
 
-10. Проверьте соединение с сервером:
+10. Check the connection to the server:
 
 ```
 root@mongo1:/etc# mongo --ssl --sslPEMKeyFile /etc/ssl/client.pem --sslCAFile /etc/ssl/mongoCA.pem --host mongo1.testdomain.com
@@ -173,62 +181,62 @@ MongoDB shell version v4.0.14
 connecting to: mongodb://mongo1.testdomain.com:27017/?gssapiServiceName=mongodb
 Implicit session: session { "id" : UUID("7333b8fe-e378-48fa-87bb-d3dbd31c4b70") }
 MongoDB server version: 4.0.14
-Server has startup warnings:
-2019-12-26T07:28:18.556+0000 I STORAGE [initandlisten]
+Server has startup warnings:
+2019-12-26T07:28:18.556+0000 I STORAGE[initandlisten]
 2019-12-26T07:28:21.270+0000 I CONTROL [initandlisten]
 2019-12-26T07:28:21.270+0000 I CONTROL [initandlisten] \*\* WARNING: Access control is not enabled for the database.
 2019-12-26T07:28:21.270+0000 I CONTROL [initandlisten] \*\* Read and write access to data and configuration is unrestricted.
 2019-12-26T07:28:21.270+0000 I CONTROL [initandlisten]
 ---
-Enable MongoDB's free cloud-based monitoring service, which will then receive and display
-metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+metrics about your deployment (disk utilization, CPU, operation statistics, etc).
 
-The monitoring data will be available on a MongoDB website with a unique URL accessible to you
-and anyone you share the URL with. MongoDB may use this information to make product
-improvements and to suggest MongoDB products and deployment options to you.
+The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+and any one you share the URL with. MongoDB may use this information to make product
+improvements and to suggest MongoDB products and deployment options to you.
 
-To enable free monitoring, run the following command: db.enableFreeMonitoring()
-To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+To enable free monitoring, run the following command: db.enableFreeMonitoring()
+To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
 ---
 >
 ```
 
-11. В консоли mongo создайте пользователя admin с правами для создания других пользователей:
+11. In the mongo console, create an admin user with rights to create other users:
 
 ```
 \> use admin
-switched to db admin
+switched to db admin
 > db.createUser(
-    {
-        user: "admin",
-        pwd: "<пароль>",
-         roles: [
-             { role: "userAdminAnyDatabase", db: "admin" },
-             { role: "readWriteAnyDatabase", db: "admin" },
-             { role: "dbAdminAnyDatabase", db: "admin" },
-             { role: "clusterAdmin", db: "admin" }
-         ]
+{
+user: "admin",
+pwd: "<password>",
+ roles: [
+ { role: "userAdminAnyDatabase", db: "admin" },
+ { role: "readWriteAnyDatabase", db: "admin" },
+ { role: "dbAdminAnyDatabase", db: "admin" },
+ { role: "clusterAdmin", db: "admin" }
+ ]
  }
 )
 Successfully added user: {
  "user" : "admin",
  "roles" : [
-     {
-         "role" : "userAdminAnyDatabase",
-         "db" : "admin"
-     },
-     {
-         "role" : "readWriteAnyDatabase",
-         "db" : "admin"
-     },
-     {
-         "role" : "dbAdminAnyDatabase",
-         "db" : "admin"
-     },
-     {
-         "role" : "clusterAdmin",
-         "db" : "admin"
-     }
+ {
+ "role" : "userAdminAnyDatabase",
+ "db" : "admin"
+ },
+ {
+ "role" : "readWriteAnyDatabase",
+ "db" : "admin"
+ },
+ {
+ "role" : "dbAdminAnyDatabase",
+ "db" : "admin"
+ },
+ {
+ "role" : "clusterAdmin",
+ "db" : "admin"
+ }
  ]
 }
 >
@@ -236,7 +244,7 @@ Successfully added user: {
 
 Чтобы выйти из консоли, нажмите Ctrl+D.
 
-12. Отредактируйте конфигурационный файл /etc/mongod.conf, раскомментируйте секцию security и добавьте опцию authorization: enabled :
+12. Отредактируйте конфигурационный файл `/etc/mongod.conf`, раскомментируйте секцию `security` и добавьте опцию `authorization: enabled` :
 
 ```
 security:
@@ -261,7 +269,7 @@ MongoDB server version: 4.0.14
 > quit()
 ```
 
-Пример создания дополнительного пользователя с правами чтения/записи на коллекцию test и чтения на коллекцию reporting:
+Пример создания дополнительного пользователя с правами чтения/записи на коллекцию `test` и чтения на коллекцию `reporting`:
 
 ```
 use test
@@ -290,10 +298,14 @@ db.createUser(
 
 В результате вы получите URL для просмотра метрик сервера.
 
+<info>
+
 **Примечание**
 
 Как настроить репликацию и обновление MongoDB, [читайте тут](https://mcs.mail.ru/help/databases-configuration/mongodb-replica).
 
-**Обратная связь**
+</info>
+
+## Обратная связь
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

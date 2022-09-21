@@ -6,9 +6,13 @@
 - Grafana 6.4.2 на ОС Ubuntu 18.04 LTS x86_64.
 - Redis 5 на ОС Ubuntu 18.04 LTS x86_64.
 
+<warn>
+
 **Внимание**
 
 При использовании серверов и оборудования других версий некоторые шаги сценария могут отличаться, от описанных ниже.
+
+</warn>
 
 ## Схема работы
 
@@ -25,9 +29,13 @@
 root@redis:~# export VERSION="<версия>"
 ```
 
+<info>
+
 **Примечание**
 
-Актуальную версию redis_exporter можно [найти и скачать тут](https://github.com/oliver006/redis_exporter/releases) [](https://prometheus.io/download/#mysqld_exporter).
+Актуальную версию redis_exporter можно [найти и скачать тут](https://github.com/oliver006/redis_exporter/releases) [или тут](https://prometheus.io/download/#mysqld_exporter).
+
+</info>
 
 3.  Создайте пользователя prometheus и группу prometheus, от имени которых вы будете запускать redis_exporter:
 
@@ -77,9 +85,13 @@ ExecStart=/usr/local/bin/redis_exporter -include-system-metrics
 WantedBy=multi-user.target
 ```
 
+<warn>
+
 **Внимание**
 
 Адрес и порт, используемые redis_exporter, должны быть доступны с сервера Prometheus. Для этого [настройте политику firewall для сервера с redis_exporter](https://mcs.mail.ru/help/network/security).
+
+</warn>
 
 9.  Запустите redis_exporter:
 
@@ -110,6 +122,7 @@ Oct 11 07:10:00 redis redis_exporter[16236]: time="2019-10-11T07:10:00Z" level=i
 ## Настройка сервера Prometheus для получения данных redis_exporter
 
 1.  Выполните логин на сервере Prometheus.
+
 2.  В файле prometheus.yml для работы с redis_exporter:
 
 - В scrape_configs добавьте следующую секцию:
@@ -135,11 +148,9 @@ root@prometheuskit-11102019-instance-5bqp2hk6nrgk:~# systemctl reload prometheus
 
 Для визуализации полученных данных установите [соответствующий Dashboard](https://grafana.com/grafana/dashboards/763).
 
-После установки и настройки получения данных с сервера Prometheus отобразится примерно следующее:\*\*
+После установки и настройки получения данных с сервера Prometheus отобразится примерно следующее:
 
 **![](./assets/1572300537338-1572300537337.png)**
-
-\*\*
 
 ## Создание тестовой нагрузки
 
@@ -186,6 +197,6 @@ root@redis:~# userdel prometheus
 root@redis:~# groupdel prometheus
 ```
 
-**Обратная связь**
+## **Обратная связь**
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
