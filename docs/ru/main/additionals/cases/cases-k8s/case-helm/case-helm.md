@@ -27,7 +27,7 @@ GitTreeState:"clean", BuildDate:"2020-05-19T18:09:41Z",
 GoVersion:"go1.12.12", Compiler:"gc", Platform:"linux/amd64"
 ```
 
-2.  В зависимости от версии Kubernetes создайте CustomResouceDefinitions, необходимый для работы Cert-Manager, используя одну из команд:
+2.  В зависимости от версии Kubernetes создайте `CustomResouceDefinitions`, необходимый для работы Cert-Manager, используя одну из команд:
 
 ```
 # Kubernetes 1.22.9
@@ -108,6 +108,8 @@ documentation:
 
 ```
 
+<info>
+
 **Примечание**
 
 Если при установке Cert-Manager возникли ошибки типа "Forbidden: User ….", значит у вас нет прав для установки в данный namespace. Для получения прав:
@@ -119,6 +121,8 @@ kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-ad
 Затем повторите команду для  установки.
 
 Подробнее о настройке прав Helm см. [тут](https://mcs.mail.ru/help/ingress/helm).
+
+</info>
 
 ## Проверка Cert-manager
 
@@ -364,6 +368,6 @@ customresourcedefinition.apiextensions.k8s.io "issuers.cert-manager.io" delete
 customresourcedefinition.apiextensions.k8s.io "orders.acme.cert-manager.io"
 ```
 
-**Обратная связь**
+## Обратная связь
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us)

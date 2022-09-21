@@ -22,11 +22,15 @@ Gitlab-runner - среда для выполнения автосборки пр
 root@ubuntu-standard-2-4-40gb:~# docker exec -it gitlab-runner gitlab-runner register -n --url https://<SERVER_DNS_NAME>/ --executor docker --registration-token ua2k238fbMtAxMBBRf_z --description "shared-runner" --docker-image="docker:dind" --tag-list "shared_runner" --docker-privileged --docker-volumes /var/run/docker.sock:/var/run/docker.sock
 ```
 
+<warn>
+
 **Внимание**
 
 \--tag-list - указывает теги, которые будет принимать runner. Далее в проекте этот тег указывается, чтобы проект собирался этим runner.
 
 \--docker-privileged и --docker-volumes - необходимы, чтобы запущенный Docker-контейнер имел доступ к родительскому Docker для сбора образов (подробно [читайте тут](https://docs.gitlab.com/ee/ci/docker/using_docker_build.html)).
+
+</warn>
 
 В результате runner отобразится в веб-интерфейсе:
 
@@ -36,22 +40,22 @@ root@ubuntu-standard-2-4-40gb:~# docker exec -it gitlab-runner gitlab-runne
 
 ![](./assets/1583699032764-1583699032764.png)
 
-4.  Установите несколько переменных, которые будут использоваться затем в файле автосборки .gitlab-ci.yml:
+4.  Установите несколько переменных, которые будут использоваться затем в файле автосборки `.gitlab-ci.yml`:
 
 ![](./assets/1583699033010-1583699033010.png)
 
 Переменные:
 
-- DOCKER_USER - пользователь для доступа к репозиторию в Harbor. В нашем примере - k8s.
-- DOCKER_PASSWORD - пароль пользователя k8s, который вы ввели при создании пользователя в Harbor.
+- DOCKER_USER — пользователь для доступа к репозиторию в Harbor. В нашем примере — k8s.
+- DOCKER_PASSWORD — пароль пользователя k8s, который вы ввели при создании пользователя в Harbor.
 
-Обратите внимание, что для пароля включено Masked - благодаря этому при попытке вывода текста в переменной в скрипте он маскируется, и пароль не виден.
+Обратите внимание, что для пароля включено Masked — благодаря этому при попытке вывода текста в переменной в скрипте он маскируется, и пароль не виден.
 
-- DOCKER_REGISTRY - имя хоста, на котором расположен Harbor. В нашем примере - <SERVER_DNS_NAME>.
+- DOCKER_REGISTRY — имя хоста, на котором расположен Harbor. В нашем примере — <SERVER_DNS_NAME>.
 
 ## Настройка файла автосборки
 
-Перейдите в папку со скачанным репозиторием и в текстовом редакторе создайте файл .gitlab-ci.yml следующего содержания:
+Перейдите в папку со скачанным репозиторием и в текстовом редакторе создайте файл `.gitlab-ci.yml` следующего содержания:
 
 ```
 image: docker:latest
@@ -93,7 +97,7 @@ release:
 
 Переменные общего назначения:
 
-- image - указывает docker image, в котором будет запускаться сборка. Поскольку мы собираем Docker-образ, требуется image, содержащий нужные для сборки утилиты. Обычно используется image docker:latest.
+- image - указывает docker image, в котором будет запускаться сборка. Поскольку мы собираем Docker-образ, требуется image, содержащий нужные для сборки утилиты. Обычно используется `image docker:latest`.
 - stages - описывает стадии сборки образа. В нашем примере стадия test пропускается.
 
 Переменные, используемые для работы:
@@ -101,7 +105,13 @@ release:
 - before_script  - стадия, которая выполняется первой. Выполняем логин в регистри, используя переменные, которые прописаны в настройках Gitlab runner.
 - build - сборка образа. Стандартная сборка Docker-образа c использованием Dockerfile в репозитории.
 
-Важно!  tags: shared_runner - тег, который был указан при регистрации runner. Указание этого тега в файле .gitlab-ci.yml разрешает Gitlab-runner выполнять этот скрипт. После сборки вносим собранный образ в регистри с тегом CI_COMMIT_REF_NAME. Подробно о переменных, которые можно использовать при сборке [читайте тут](https://docs.gitlab.com/ee/ci/variables)). В нашем примере, поскольку коммитить будем в ветку master, имя образа будет k8s/k8s-conf-demo:master.
+<warn>
+
+**Важно!**
+
+`tags: shared_runner` — тег, который был указан при регистрации runner. Указание этого тега в файле `.gitlab-ci.yml` разрешает Gitlab-runner выполнять этот скрипт. После сборки вносится собранный образ в регистри с тегом `CI_COMMIT_REF_NAME`. Подробно о переменных, которые можно использовать при сборке [читайте в статье](https://docs.gitlab.com/ee/ci/variables)). В нашем примере, поскольку происходит коммит в ветку master, имя образа будет `k8s/k8s-conf-demo:master`.
+
+</warn>
 
 - release - секция формирования окончательного образа. В нашем примере просто берем образ, собранный на предыдущей стадии, добавляем ему тег latest и загружаем в репозиторий.
 
@@ -123,44 +133,40 @@ To testrom.ddns.net:ash/k8s-conf-demo.git
    7c91eab..55dd5fa  master -> master
 ```
 
-Как только файл .gitlab-ci.yml появится в репозитории, Gitlab автоматически запустит его сборку.
+Как только файл `.gitlab-ci.yml` появится в репозитории, Gitlab автоматически запустит его сборку.
 
 Посмотреть, как происходит сборка можно в веб-интерфейсе Gitlab в проекте, CI/CD / Pipelines:
 
-**![](./assets/1583700761304-1583700761304.png)**
+![](./assets/1583700761304-1583700761304.png)
 
 Нажав на running, можно посмотреть текущий прогресс выполнения сборки:
 
-\*\*![](./assets/1583700787348-1583700787348.png)
-
-\*\*
+![](./assets/1583700787348-1583700787348.png)
 
 Нажимая на стадии сборки, можно увидеть консоль сборки и что в ней происходит. Пример для стадии build:
 
-\*\*![](./assets/1583700831019-1583700831019.png)
-
-\*\*
+![](./assets/1583700831019-1583700831019.png)
 
 Пример для стадии release:
 
-\*\*![](./assets/1583700851963-1583700851963.png)
-
-\*\*
+![](./assets/1583700851963-1583700851963.png)
 
 В логах консоли видно, что и build и release завершились успешно. Собранный образ был выложен в репозитории Harbor, что можно увидеть в соответствующем веб-интерфейсе:
 
-**![](./assets/1583700204079-1583700204079.png)**
+![](./assets/1583700204079-1583700204079.png)
 
 ## Развертывание приложения в кластере Kubernetes
 
 После успешной сборки проекта настроим авторазвертывание приложения в кластер Kubernetes. Для примера используем [кластер Kubernetes от VK Cloud](https://mcs.mail.ru/containers/).
 
-После развертывания кластера в облаке на локальный компьютер загружается конфигурационный файл вида kubernetes-cluster-5011_kubeconfig.yaml, предназначенный для авторизации в кластер для утилит типа kubectl.
+После развертывания кластера в облаке на локальный компьютер загружается конфигурационный файл вида `kubernetes-cluster-5011_kubeconfig.yaml`, предназначенный для авторизации в кластер для утилит типа kubectl.
 
 1.  Подключите конфигурационный файл:
-    ```
-    ash-work:~ export KUBECONFIG=kubernetes-cluster-5011_kubeconfig.yaml
-    ```
+
+```
+ash-work:~ export KUBECONFIG=kubernetes-cluster-5011_kubeconfig.yaml
+```
+
 2.  Убедитесь, что авторизация  успешно выполнена, и кластер работоспособен:
 
 ```
@@ -173,7 +179,7 @@ To further debug and diagnose cluster problems, use 'kubectl cluster-info du
 
 Кластер отвечает.
 
-3.  Предоставьте кластеру права доступа к репозиторию образов Harbor.  Для этого создайте следующий secret:
+3.  Предоставьте кластеру права доступа к репозиторию образов Harbor. Для этого создайте следующий secret:
 
 ```
 ash-work:~ kubectl create secret docker-registry myprivateregistry --docker-server=https://<SERVER_DNS_NAME>:8443 --docker-username=k8s --docker-password=<PASSWORD>
@@ -189,7 +195,7 @@ ash-work:~ kubectl get secret myprivateregistry --output="jsonpath={.data.\.d
 {"auths":{"https://<SERVER_DNS_NAME>:8443":{"username":"k8s","password":"<PASSWORD>","auth":"sdasdsdsdsdsdsdsdsdssd=="}}}%
 ```
 
-5.  Создайте файл deployment.yml следующего содержания:
+5.  Создайте файл `deployment.yml` следующего содержания:
 
 ```
 apiVersion: apps/v1
@@ -233,7 +239,7 @@ NAME READY STATUS RESTARTS AGE 
 myapp-deployment-66d55bcbd5-s86m6   1/1     Running   0          39s
 ```
 
-8.  Создайте файл service.yml:
+8.  Создайте файл `service.yml`:
 
 ```
 apiVersion: v1
@@ -258,7 +264,7 @@ ash-work:~ kubectl create -f service.yaml 
 service/myapp-svc created
 ```
 
-10. Чтобы обеспечить доступ к приложению из внешней сети, настройте ingress-контроллер. Для этого создайте файл ingress.yaml:
+10. Чтобы обеспечить доступ к приложению из внешней сети, настройте ingress-контроллер. Для этого создайте файл `ingress.yaml`:
 
 ```
 apiVersion: extensions/v1beta1 
@@ -315,7 +321,7 @@ ash-work:~ curl --resolve echo.com:80:<INGRESS_EXTERNAL_IP> http://echo.com/ha
 OK%
 ```
 
-Опция --resolve отвечает за локальный резолв при запросе curl, так как домен мы придумали сами и настоящего резолва нет.
+Опция `--resolve` отвечает за локальный резолв при запросе curl, так как домен мы придумали сами и настоящего резолва нет.
 
 Таким образом, мы выполнили развертывание приложения в кластер Kubernetes вручную.
 
@@ -330,7 +336,7 @@ ash-work:~ kubectl delete -f deployment.yaml 
 deployment.apps "myapp" deleted
 ```
 
-## Развертывание приложения в кластере Kubernetes с использованием  Gitlab CI/CD
+## Развертывание приложения в кластере Kubernetes с использованием Gitlab CI/CD
 
 Gitlab по умолчанию поддерживает интеграцию с кластером Kubernetes. Чтобы настроить интеграцию, получите несколько параметров кластера.
 
@@ -378,7 +384,7 @@ GF9ONh9lDVttkFjaerKR4y4/E/X+e2Mi2dsyJmVHCrZTHozy8oZayC//JfzS+pK9
 -----END CERTIFICATE-----
 ```
 
-4.  Теперь создайте файл gitlab-admin-service-account.yaml, который описывает права доступа Gitlab к кластеру. Содержимое файла:
+4.  Теперь создайте файл `gitlab-admin-service-account.yaml`, который описывает права доступа Gitlab к кластеру. Содержимое файла:
 
 ```
 apiVersion: v1
@@ -437,80 +443,78 @@ token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZp
 
 ![](./assets/1583702333521-1583702333521.png)
 
-7.  Выберите вкладку Add Existing cluster, внесите ранее запомненные параметры (API URL, PEM, Token) и нажмите Add Kubernetes Cluster:\*\*
+7.  Выберите вкладку Add Existing cluster, внесите ранее запомненные параметры (API URL, PEM, Token) и нажмите Add Kubernetes Cluster:
 
-    **![](./assets/1583702864976-1583702864976.png)**
-
-    \*\*
+![](./assets/1583702864976-1583702864976.png)
 
 8.  Кластер добавлен:
 
-    ![](./assets/1583702901138-1583702901138.png)
+![](./assets/1583702901138-1583702901138.png)
 
-    Поместите файлы deployment.yaml, service.yaml, ingress.yaml в папку deployments проекта.
+Поместите файлы `deployment.yaml`, `service.yaml`, `ingress.yaml` в папку deployments проекта.
 
-    В файл .gitlab-ci.yml добавьте секцию deploy:
+В файл `.gitlab-ci.yml` добавьте секцию deploy:
 
-    ```
-    image: docker:latest
+```
+image: docker:latest
 
-    stages:
-    - build
-    - test
-    - release
-    - deploy
+stages:
+- build
+- test
+- release
+- deploy
 
-    variables:
-    REGISTRY_URL: https://$DOCKER_REGISTRY:8443
-    IMAGE: $DOCKER_REGISTRY:8443/$DOCKER_USER/$CI_PROJECT_NAME:$CI_COMMIT_REF_NAME
-    RELEASE: $DOCKER_REGISTRY:8443/$DOCKER_USER/$CI_PROJECT_NAME:latest
+variables:
+REGISTRY_URL: https://$DOCKER_REGISTRY:8443
+IMAGE: $DOCKER_REGISTRY:8443/$DOCKER_USER/$CI_PROJECT_NAME:$CI_COMMIT_REF_NAME
+RELEASE: $DOCKER_REGISTRY:8443/$DOCKER_USER/$CI_PROJECT_NAME:latest
 
 
-    before_script:
-    - docker login $REGISTRY_URL -u $DOCKER_USER -p $DOCKER_PASSWORD
+before_script:
+- docker login $REGISTRY_URL -u $DOCKER_USER -p $DOCKER_PASSWORD
 
-    build:
-    stage: build
-    tags:
-    - shared_runner
-    script:
-    - cd app && docker build --pull -t $IMAGE .
-    - docker push $IMAGE
+build:
+stage: build
+tags:
+- shared_runner
+script:
+- cd app && docker build --pull -t $IMAGE .
+- docker push $IMAGE
 
-    release:
-    stage: release
-    tags:
-    - shared_runner
-    script:
-    - docker pull $IMAGE
-    - docker tag $IMAGE $RELEASE
-    - docker push $RELEASE
-    only:
-    - master
+release:
+stage: release
+tags:
+- shared_runner
+script:
+- docker pull $IMAGE
+- docker tag $IMAGE $RELEASE
+- docker push $RELEASE
+only:
+- master
 
-    deploy:
-    stage: deploy
-    before_script:
-    - apk add --no-cache curl
-    - curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
-    - chmod +x ./kubectl
-    tags:
-    - shared_runner
-    environment:
-    name: production
-    script:
-    - echo $KUBECONFIG
-    - export KUBECONFIG=$KUBECONFIG
-        - ./kubectl create secret docker-registry myprivateregistry --docker-server=$REGISTRY_URL --docker-username=$DOCKER_USER --docker-password=$DOCKER_PASSWORD --dry-run -o yaml | ./kubectl apply -f -
-        - ./kubectl apply -f manifests/deployment.yaml
-    - ./kubectl apply -f manifests/service.yaml
-        - ./kubectl apply -f manifests/ingress.yaml
-        - ./kubectl rollout restart deployment
-    ```
+deploy:
+stage: deploy
+before_script:
+- apk add --no-cache curl
+- curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+- chmod +x ./kubectl
+tags:
+- shared_runner
+environment:
+name: production
+script:
+- echo $KUBECONFIG
+- export KUBECONFIG=$KUBECONFIG
+    - ./kubectl create secret docker-registry myprivateregistry --docker-server=$REGISTRY_URL --docker-username=$DOCKER_USER --docker-password=$DOCKER_PASSWORD --dry-run -o yaml | ./kubectl apply -f -
+    - ./kubectl apply -f manifests/deployment.yaml
+- ./kubectl apply -f manifests/service.yaml
+    - ./kubectl apply -f manifests/ingress.yaml
+    - ./kubectl rollout restart deployment
+```
 
-    Рассмотрим раздел deploy.
+Рассмотрим раздел deploy.
 
-В разделе before_script в систему ставится curl, с его помощью скачивается последняя стабильная версия kubectl.
+В разделе `before_script` в систему ставится curl, с его помощью скачивается последняя стабильная версия kubectl.
 
 Секция script: Так как кластер управляется Gitlab, есть предустановленные переменные - в KUBECONFIG хранится имя файла конфигурации доступа к кластеру.
 
@@ -520,25 +524,27 @@ token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZp
 
 Последняя команда перезапускает деплой для скачивания новой версии приложения.
 
-Результат выполнения секции deploy: **![](./assets/1583703066298-1583703066298.png)**
+Результат выполнения секции deploy:
+
+![](./assets/1583703066298-1583703066298.png)
 
 9.  Проверим, что было создано в кластере. Смотрим namespace:
 
-    ```
-    ash-work:~ kubectl get namespaces
-    NAME STATUS AGE
-    default Active 45h
-    gitlab-managed-apps Active 67m
-    ingress-nginx Active 45h
-    k8s-conf-demo-1-production Active 57m
-    kube-node-lease Active 45h
-    kube-public Active 45h
-    kube-system Active 45h
-    magnum-tiller Active 45h
+```
+ash-work:~ kubectl get namespaces
+NAME STATUS AGE
+default Active 45h
+gitlab-managed-apps Active 67m
+ingress-nginx Active 45h
+k8s-conf-demo-1-production Active 57m
+kube-node-lease Active 45h
+kube-public Active 45h
+kube-system Active 45h
+magnum-tiller Active 45h
 
-    ```
+```
 
-10. Наш namespace - k8s-conf-demo-1-production. Посмотрим поды, сервисы и ingress:
+10. Наш namespace - `k8s-conf-demo-1-production`. Посмотрим поды, сервисы и ingress:
 
 ```
 ash-work:~ kubectl get pods -n k8s-conf-demo-1-production
@@ -562,8 +568,7 @@ OK%
 
 12. Для тестирования авторазвертывания измените немного код приложения. В файле репозитория app/app.py исправим строку return ‘OK' на return 'HANDLER OK'.
 
-13.
-14. Выполните коммит изменений:
+13. Выполните коммит изменений:
 
 ```
 ash-work:k8s-conf-demo git add . && git commit -m "update" && git push
@@ -587,10 +592,14 @@ HANDLER OK%
 
 Авторазвертывание новой версии прошло успешно.
 
+<info>
+
 **Примечание**
 
 Конфигурационные файлы, приведенные в данной статье, являются тестовыми и предназначены для освоения механизмов работы Gitlab, регистри и развертывания образов в кластер на начальном уровне.
 
-**Обратная связь**
+</info>
+
+## Обратная связь
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

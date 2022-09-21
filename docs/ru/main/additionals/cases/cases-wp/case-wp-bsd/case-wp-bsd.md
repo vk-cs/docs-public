@@ -28,25 +28,44 @@ sudo mysql -u root -p
 
 ```
 CREATE DATABASE имя_базы;
-Например: CREATE DATABASE wordpress;
 ```
+
+Например:
+
+```
+CREATE DATABASE wordpress;
+```
+
+<warn>
 
 **Внимание**
 
 После всех команд СУБД MySQL должна ставиться точка с запятой.
 
+</warn>
+
 4.  Создайте пользователя с правами полного доступа к созданной базе данных и назначьте ему пароль, используя команду:
 
 ```
 CREATE USER имя_пользователя@localhost IDENTIFIED BY 'пароль';
-Например: CREATE USER wuser@localhost IDENTIFIED BY 'mypassword';
+```
+
+Например:
+
+```
+CREATE USER wuser@localhost IDENTIFIED BY 'mypassword';
 ```
 
 5.  Предоставьте пользователю необходимые привилегии для создания и изменения таблиц базы данных, выполнив команду:
 
 ```
 GRANT ALL PRIVILEGES ON  имя_базы.\* TO имя_пользователя@localhost;
-Например: GRANT ALL PRIVILEGES ON wordpress.\* TO wuser@localhost;
+```
+
+Например:
+
+```
+GRANT ALL PRIVILEGES ON wordpress.\* TO wuser@localhost;
 ```
 
 6.  Актуализируйте предоставление привилегий к таблицам базы данных, выполнив команду:
@@ -143,20 +162,33 @@ define( 'DB_PASSWORD', 'mypassword' );
 
 ```
 sudo chown -R имя_пользователя:www-data /var/www/html/wordpress/
-где имя_пользователя - имя пользователя, www-data - имя группы
-Например: sudo chown www:www /usr/local/www/apache24/data**/**
+```
+
+где `имя_пользователя` - имя пользователя, `www-data` - имя группы
+Например:
 
 ```
+sudo chown www:www /usr/local/www/apache24/data**/**
+```
+
+<info>
 
 **Примечание**
 
 Во избежание ошибок веб-сервера Apache при запуске скриптов используйте имя пользователя www и имя группы www по умолчанию.
 
+</info>
+
 14. Если необходимо предоставить доступ к файлам корневого каталога веб-сервера другому пользователю, включите этого пользователя в группу www, используя команду:
 
 ```
 sudo usermod -a -G www имя_пользователя
-Например: sudo usermod -a -G www wuser
+```
+
+Например:
+
+```
+sudo usermod -a -G www wuser
 ```
 
 15. Настройте права доступа к файлам и папкам корневого каталога, используя команду:
@@ -208,6 +240,6 @@ sudo service apache24 restart
 
 **![](./assets/1555705632823-1555705632823.png)**
 
-**Обратная связь**
+## **Обратная связь**
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
