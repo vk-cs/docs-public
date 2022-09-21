@@ -1,268 +1,316 @@
-WordPress — самая популярная система управления контентом веб-страниц (CMS). Для данной системы создано множество плагинов, её сообщество в мире очень обширное. Для работы с WordPress не нужны специальные знания, все понятно на интуитивном уровне.
+WordPress is the most popular web content management system (CMS). Many plug-ins have been created for this system, its community in the world is very extensive. To work with WordPress, you do not need special knowledge, everything is clear on an intuitive level.
 
-## Требования
+## Requirements
 
-- Операционная система Debian версии 9.4.
-- Пользователь с доступом к команде sudo.
-- Установленный стек LAMP.
+- Operating system Debian version 9.4.
+- A user with access to the sudo command.
+- Installed LAMP stack.
 
-Если у вас еще не установлен стек LAMP:
+If you don't already have the LAMP stack installed:
 
-- Вы можете получить готовый стек LAMP в облаке [в виде настроенной виртуальной машины](https://mcs.mail.ru/app/services/marketplace/) на Ubuntu 18.04 и [установить Wordpress на нем](https://mcs.mail.ru/help/wordpress-on-linux/wordpress-ubuntu-18). При регистрации вы получаете бесплатный бонусный счет, которого хватает, чтобы тестировать сервер несколько дней.
-- Вы можете установить стек LAMP самостоятельно. О том, как установить стек LAMP на Debian 9.4, [читайте тут](https://mcs.mail.ru/help/lamp-setup/lamp-debian-9).
+- You can get a ready-made LAMP stack in the cloud [as a configured virtual machine](https://mcs.mail.ru/app/services/marketplace/) on Ubuntu 18.04 and [install Wordpress on it](https://mcs .mail.ru/help/wordpress-on-linux/wordpress-ubuntu-18). When registering, you get a free bonus account, which is enough to test the server for several days.
+- You can install the LAMP stack yourself. For information on how to install the LAMP stack on Debian 9.4, [read here](https://mcs.mail.ru/help/lamp-setup/lamp-debian-9).
 
-## Подготовка к установке WordPress
+## Preparing to Install WordPress
 
-Перед установкой WordPress выполните следующее:
+Before installing WordPress, do the following:
 
-1.  Откройте окно терминала.
-2.  Перейдите в домашний каталог, выполнив команду:
-    ```
-    cd ~
-    ```
-3.  Создайте временный каталог tempWRС, выполнив команду:
+1. Open a terminal window.
+2. Change to your home directory by running the command:
 
 ```
-mkdir tempWP 
+cd ~
 ```
 
-4.  Перейдите в созданный каталог, выполнив команду:
+3. Create a temporary directory tempWRC by running the command:
+
+```
+mkdir tempWP
+```
+
+4. Change to the created directory by running the command:
 
 ```
 cd ~/tempWP
 ```
 
-5.  Обновите списки установочных пакетов до актуальных версий, выполнив команду:
+5. Update the lists of installation packages to the latest versions by running the command:
 
 ```
 sudo apt-get update
 ```
 
-6.  Установите консольную утилиту curl, выполнив команду:
+6.Install the curl console utility by running the command:
 
 ```
 sudo apt install curl
 ```
 
-7.  Скачайте архив WordPress, выполнив команду:
+7. Download the WordPress archive by running the command:
 
 ```
 curl -O [https://wordpress.org/latest.tar.gz](https://wordpress.org/latest.tar.gz)
 ```
 
-8.  Распакуйте и переместите файлы из текущего каталога в каталог /var/www/html/, выполнив команду:
+8. Unpack and move the files from the current directory to the /var/www/html/ directory by running the command:
 
 ```
 sudo tar zxvf ~/tempWP/latest.tar.gz -C /var/www/html
 ```
 
-9.  Удалите каталог tempWRС, выполнив команду:
+9. Remove the tempWRC directory by running the command:
 
 ```
 rm -Rf ~/tempWP
 ```
 
-## Настройка БД MySQL
+## MySQL database setup
 
-Чтобы начать работу с WordPress, необходимо создать и настроить выделенную базу данных MySQL. Для этого:
+To get started with WordPress, you need to create and set up a dedicated MySQL database. For this:
 
-1.  Откройте окно терминала.
-2.  Для перехода в оболочку MySQL выполните команду:
-
-```
-sudo mysql -u root -p 
-```
-
-Используйте аутентификацию учетной записи root, которая относится исключительно к СУБД MySQL
-
-3.  Создайте новую базу данных для WordPress, используя команду:
+1. Open a terminal window.
+2. To switch to the MySQL shell, run the command:
 
 ```
-CREATE DATABASE имя_базы;
-Например: CREATE DATABASE wordpress;
+sudo mysql -u root -p
 ```
 
-**Внимание**
+Use root authentication, which is exclusive to MySQL
 
-После всех команд СУБД MySQL должна ставиться точка с запятой.
-
-4.  Создайте пользователя с правами полного доступа к созданной базе данных и назначьте ему пароль, используя команду:
+3. Create a new WordPress database using the command:
 
 ```
-CREATE USER имя_пользователя@localhost IDENTIFIED BY 'пароль';
-Например: CREATE USER wuser@localhost IDENTIFIED BY 'mypassword';
+CREATE DATABASE database_name;
 ```
 
-5.  Предоставьте пользователю необходимые привилегии для создания и изменения таблиц базы данных, выполнив команду:
+For example:
 
 ```
-GRANT ALL PRIVILEGES ON  имя_базы.\* TO имя_пользователя@localhost;
-Например: GRANT ALL PRIVILEGES ON wordpress.\* TO wuser@localhost;
+CREATE DATABASE wordpress;
 ```
 
-6.  Актуализируйте предоставление привилегий к таблицам базы данных, выполнив команду:
+<warn>
+
+**Attention**
+
+All MySQL commands must be followed by a semicolon.
+
+</warn>
+
+4. Create a user with full access rights to the created database and assign a password to it using the command:
+
+```
+CREATE USER username@localhost IDENTIFIED BY 'password';
+```
+
+For example:
+
+```
+CREATE USER wuser@localhost IDENTIFIED BY 'mypassword';
+```
+
+5. Grant the user the necessary privileges to create and modify database tables by running the command:
+
+```
+GRANT ALL PRIVILEGES ON dbasename.\* TO username@localhost;
+```
+
+For example:
+
+```
+GRANT ALL PRIVILEGES ON wordpress.\* TO wuser@localhost;
+```
+
+6. Update the granting of privileges to database tables by running the command:
 
 ```
 FLUSH PRIVILEGES;
 ```
 
-7.  Выйдите из оболочки MySQL, выполнив команду:
+7. Exit the MySQL shell by running the command:
 
 ```
 exit
 ```
 
-## Настройка файлов конфигурации WordPress
+## Setting up WordPress configuration files
 
-Для первичной настройки конфигурационных файлов WordPress:
+To set up the WordPress configuration files for the first time:
 
-1.  Перейдите в каталог с конфигурационными файлами WordPress, выполнив команду:
+1. Navigate to the directory with the WordPress configuration files by running the command:
 
 ```
 cd /var/www/html/wordpress
 ```
 
-2.  Переименуйте файл wp-config-sample.php, используя команду:
+2. Rename the wp-config-sample.php file using the command:
 
 ```
-mv 
-Например: sudo mv wp-config-sample.php wp-config.php
+mv
 ```
 
-3.  Откройте файл wp-config.php для редактирования, используя команду:
+For example:
+
+```
+sudo mv wp-config-sample.php wp-config.php
+```
+
+3. Open the wp-config.php file for editing using the command:
 
 ```
 sudo nano wp-config.php
 ```
 
-4.  В файле wp-config.php найдите следующие строки:
+4. In the wp-config.php file, find the following lines:
 
 ![](./assets/1552420163702-1552420163702.png)
 
-5.  В файле wp-config.php:
+5. In the wp-config.php file:
 
-- Замените значения по умолчанию на значения, которые вы указали при настройке MySQL (см. предыдущий раздел):
+- Replace the default values ​​with the values ​​you specified when configuring MySQL (see previous section):
 
 ```
-Например:
+For example:
 define( 'DB_NAME', 'wordpress' );
 define( 'DB_USER', 'wuser' );
 define( 'DB_PASSWORD', 'mypassword' );
 ```
 
-- Сохраните изменения, используя сочетание клавиш CTRL+O.
-- Завершите редактирование, используя сочетание клавиш CTRL+X.
+- Save your changes using the keyboard shortcut CTRL+O.
+- Finish editing using the keyboard shortcut CTRL+X.
 
-6.  Замените владельца каталогов и файлов в корневом каталоге веб-сервера, используя команду:
-
-```
-sudo chown -R имя_пользователя:www-data /var/www/html/wordpress/
-где имя_пользователя - имя пользователя, www-data - имя группы
-Например: sudo chown -R www-data:www-data /var/www/html/wordpress/
-```
-
-**Примечание**
-
-Во избежание ошибок веб-сервера Apache при запуске скриптов используйте имя пользователя www-data и имя группы www-data по умолчанию.
-
-7.  Если необходимо предоставить доступ к файлам корневого каталога веб-сервера другому пользователю, включите этого пользователя в группу www-data, используя команду:
+6. Change the owner of directories and files in the root directory of the web server using the command:
 
 ```
-sudo usermod -a -G www-data имя_пользователя
-Например: sudo usermod -a -G www-data wuser
+sudo chown -R username:www-data /var/www/html/wordpress/
 ```
 
-8.  Настройте права доступа к файлам и папкам, выполнив команду:
+where `username` is the username, `www-data` is the group name
+For example:
+
+```
+sudo chown -R www-data:www-data /var/www/html/wordpress/
+```
+
+<info>
+
+**Note**
+
+To avoid Apache web server errors, use the default username www-data and the default group name www-data when running scripts.
+
+</info>
+
+7. If you need to grant access to the files of the web server root directory to another user, include this user in the www-data group using the command:
+
+```
+sudo usermod -a -G www-data username
+```
+
+For example:
+
+```
+sudo usermod -a -G www-data wuser
+```
+
+8. Set the permissions for files and folders by running the command:
 
 ```
 sudo chmod -R 755 /var/www
 ```
 
-9.  Для безопасной работы WordPress необходимо получить уникальные значения ключей. Для этого выполните команду:
+9. For WordPress to work securely, you need to get unique key values. To do this, run the command:
 
 ```
 curl -s https://api.wordpress.org/secret-key/1.1/salt/
 ```
 
-В результате на экран будет выведена информация, содержащая значения ключей, в следующем виде:
+As a result, information containing key values ​​will be displayed on the screen in the following form:
 
 ![](./assets/1552421305221-1552421305221.png)
 
-**Внимание**
+<warn>
 
-Значения ключей выше приведены в качестве примера. Далее используйте значения ключей, которые вы получили в результате выполнения команды curl.
+**Attention**
 
-10. Откройте файл wp-config.php для редактирования, выполнив команду:
+The key values ​​above are given as an example. Next, use the key values ​​that you got as a result of running the curl command.
+
+</warn>
+
+10. Open the wp-config.php file for editing by running the command:
 
 ```
 nano wp-config.php
 ```
 
-11. В файле wp-config.php:
+11. In the wp-config.php file:
 
-- Найдите раздел:
+- Find the section:
 
 ```
-define('AUTH_KEY',                'put your unique phrase here');
+define('AUTH_KEY',           'put your unique phrase here');
 define('SECURE_AUTH_KEY', 'put your unique phrase here');
 define('LOGGED_IN_KEY', 'put your unique phrase here');
 define('NONCE_KEY', 'put your unique phrase here');
 define('AUTH_SALT', 'put your unique phrase here');
 define('SECURE_AUTH_SALT', 'put your unique phrase here');
 define('LOGGED_IN_SALT', 'put your unique phrase here');
-define('NONCE_SALT',             'put your unique phrase here');
+define('NONCE_SALT',         'put your unique phrase here');
 ```
 
-- В соответствующие строки внесите уникальные значения ключей, полученные в результате выполнения команды curl:
+- In the appropriate lines, enter the unique key values ​​obtained as a result of the curl command:
 
 ![](./assets/1552421346163-1552421346163.png)
 
-- Сохраните внесенные изменения, используя сочетание клавиш CTRL+O.
-- Завершите редактирование, используя сочетание клавиш CTRL+X.
+- Save your changes using the keyboard shortcut CTRL+O.
+- Finish editing using the keyboard shortcut CTRL+X.
 
-12. Перезагрузите веб-сервер Apache, выполнив команду:
+12. Restart the Apache web server by running the command:
 
 ```
 sudo systemctl restart apache2
 ```
 
-## Установка WordPress
+## Install WordPress
 
-Чтобы установить WordPress:
+To install WordPress:
 
-1.  В адресной строке браузера к внешнему адресу веб-сервера добавьте строку:
+1. In the address bar of the browser, add the line to the external address of the web server:
 
 ```
 /wordpress/wp-admin/install.php
 ```
 
-2.  Выберите язык системы и нажмите кнопку **Продолжить**:
+2. Select the system language and click the **Continue** button:
 
 ![](./assets/1552420255568-1552420255568.png)
 
-3.  На странице настроек:
+3. On the settings page:
 
-- Выберите имя сайта WordPress и имя пользователя.
-- По умолчанию будет сгенерирован надежный пароль. Используйте этот пароль или введите новый.
+- Choose your WordPress site name and username.
+- A strong password will be generated by default. Use this password or enter a new one.
 
-**Внимание**
+<warn>
 
-Использование ненадежного пароля приводит к снижению сетевой безопасности сайта, поэтому задавать ненадежный пароль рекомендуется только при работе в тестовом или демонстрационном режимах.
+**Attention**
 
-- Введите адрес электронной почты.
-- При необходимости настройте видимость сайта для поисковых систем.
-- Нажмите кнопку **Установить WordPress**:
+Using a weak password leads to a decrease in the network security of the site, so it is recommended to set a weak password only when working in test or demo mode.
+
+</warn>
+
+- Enter your email address.
+- If necessary, adjust the visibility of the site for search engines.
+- Click the **Install WordPress** button:
 
 ![](./assets/1552420308119-1552420308119.png)
 
-4.  После установки Wordpress войдите в систему:
+4. Once Wordpress is installed, login:
 
 ![](./assets/1552418975948-1552418975948.png)
 
-В результате откроется главная страница WordPress:
+This will open the WordPress home page:
 
 ![](./assets/1552420341995-1552420341995.png)
 
-**Обратная связь**
+## **Feedback**
 
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
+Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

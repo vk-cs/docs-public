@@ -28,25 +28,44 @@ sudo mysql -u root -p 
 
 ```
 CREATE DATABASE имя_базы;
-Например: CREATE DATABASE modxdb;
 ```
+
+Например:
+
+```
+CREATE DATABASE modxdb;
+```
+
+<warn>
 
 **Внимание**
 
 После каждой команды СУБД MySQL должна ставиться точка с запятой.
 
+</warn>
+
 4.  Создайте пользователя с правами полного доступа к созданной базе данных и назначьте ему пароль, используя команду:
 
 ```
 CREATE USER имя_пользователя@localhost IDENTIFIED BY 'пароль';
-Например: CREATE USER mxuser@localhost IDENTIFIED BY 'mypassword';
+```
+
+Например:
+
+```
+CREATE USER mxuser@localhost IDENTIFIED BY 'mypassword';
 ```
 
 5.  Предоставьте пользователю привилегии, необходимые для создания и изменения таблиц базы данных, выполнив команду:
 
 ```
 GRANT ALL PRIVILEGES ON  имя_базы.\* TO имя_пользователя@localhost;
-Например: GRANT ALL PRIVILEGES ON modxdb.\* TO mxuser@localhost;
+```
+
+Например:
+
+```
+GRANT ALL PRIVILEGES ON modxdb.\* TO mxuser@localhost;
 ```
 
 6.  Актуализируйте предоставление привилегий к таблицам базы данных, выполнив команду:
@@ -67,7 +86,7 @@ exit
 
 1.  Перейдите на сайт [https://modx.com/download](https://modx.com/download) и запомните номер версии ModX:
 
-    ![](./assets/1558298095818-1558298095818.jpeg)
+![](./assets/1558298095818-1558298095818.jpeg)
 
 2.  Откройте окно терминала.
 3.  Установите архиватор ZIP, выполнив команду:
@@ -106,21 +125,36 @@ cd ~/tempMX
 
 ```
 wget https://modx.s3.amazonaws.com/releases/<версия>/modx-<версия>.zip
-Например: wget [https://modx.s3.amazonaws.com/releases/2.7.1/modx-2.7.1-p1.zip](https://modx.s3.amazonaws.com/releases/<Ð²ÐµÑÑÐ¸Ñ>/modx-<Ð²ÐµÑÑÐ¸Ñ>-pl.zip)
+```
+
+Например:
+
+```
+wget https://modx.s3.amazonaws.com/releases/2.7.1/modx-2.7.1-p1.zip
 ```
 
 9.  Распакуйте архив ModX, выполнив команду:
 
 ```
 sudo unzip modx-<версия>.zip
-Например: sudo unzip modx-2.7.1-pl.zip
+```
+
+Например:
+
+```
+sudo unzip modx-2.7.1-pl.zip
 ```
 
 10. Переместите файлы из текущего каталога в каталог /var/www/html/modx, выполнив команду:
 
 ```
 sudo cp -r modx-<версия> /var/www/html/modx
-Например: sudo cp -r modx-2.7.1-pl /var/www/html/modx
+```
+
+Например:
+
+```
+sudo cp -r modx-2.7.1-pl /var/www/html/modx
 ```
 
 11. Удалите временный каталог tempMX, выполнив команду:
@@ -133,19 +167,33 @@ sudo rm -Rf ~/tempMX
 
 ```
 sudo chown -R имя_пользователя:apache /var/www/html/modx
-где имя_пользователя - это имя пользователя sudo, www-data - имя группы
-Например: sudo chown -R apache:apache /var/www/html/modx
 ```
+
+где `имя_пользователя` - это имя пользователя sudo, `www-data` - имя группы
+Например:
+
+```
+sudo chown -R apache:apache /var/www/html/modx
+```
+
+<warn>
 
 **Внимание**
 
 Во избежание ошибок веб-сервера Apache при запуске скриптов используйте имя пользователя apache и имя группы apache по умолчанию.
 
+</warn>
+
 13. Если необходимо предоставить доступ к файлам корневого каталога веб-сервера другому пользователю, включите этого пользователя в группу www-data, используя команду:
 
 ```
 sudo usermod -a -G www-data имя_пользователя
-Например: sudo usermod -a -G apache mxuser
+```
+
+Например:
+
+```
+sudo usermod -a -G apache mxuser
 ```
 
 14. Настройте права доступа к файлам и папкам корневого каталога, используя команду:
@@ -291,7 +339,7 @@ sudo nano .htaccess
 
 - В файле .htaccess найдите параметр **IndexIgnore** и замените его на строки:\*\*
 
-  ![](./assets/1558298281980-1558298281980.jpeg)\*\*
+![](./assets/1558298281980-1558298281980.jpeg)\*\*
 
 Сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
 
@@ -301,6 +349,6 @@ sudo nano .htaccess
 sudo systemctl restart httpd.service
 ```
 
-**Обратная связь**
+## **Обратная связь**
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

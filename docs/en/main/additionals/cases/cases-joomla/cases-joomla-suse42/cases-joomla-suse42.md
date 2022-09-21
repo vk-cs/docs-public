@@ -1,173 +1,202 @@
-Joomla! - система управления содержимым (CMS), написанная на языках PHP и JavaScript и использующая в качестве хранилища базы данных СУБД MySQL. Joomla! предлагает нативный bootstrap, мультиязычную среду, множество всевозможных модулей расширений, а также высокую безопасность. Joomla! распространяется по лицензии GNU/GPL и может использоваться бесплатно.
+Joomla! is a content management system (CMS) written in PHP and JavaScript and using the MySQL DBMS as a database storage. Joomla! offers native bootstrap, multilingual environment, many different extension modules, as well as high security. Joomla! distributed under the GNU/GPL license and can be used free of charge.
 
-## Требования
+## Requirements
 
-- Операционная система openSUSE версии 42.3.
-- Пользователь с доступом к команде sudo.
-- Установленный стек LAMP.
+- Operating system openSUSE version 42.3.
+- A user with access to the sudo command.
+- Installed LAMP stack.
 
-Если у вас еще не установлен стек LAMP:
+If you don't already have the LAMP stack installed:
 
-- Вы можете получить готовый стек LAMP в облаке [в виде настроенной виртуальной машины](https://mcs.mail.ru/app/services/marketplace/) на Ubuntu 18.04 и [установить Joomla! на нем](https://mcs.mail.ru/help/joomla-on-linux/joomla-ubuntu-18). При регистрации вы получаете бесплатный бонусный счет, которого хватает, чтобы тестировать сервер несколько дней.
-- Вы можете установить стек LAMP самостоятельно. О том, как установить стек LAMP на OpenSUSE 42.3, [читайте тут](https://mcs.mail.ru/help/lamp-on-linux/lamp-opensuse-42).
+- You can get a ready-made LAMP stack in the cloud [as a configured virtual machine](https://mcs.mail.ru/app/services/marketplace/) on Ubuntu 18.04 and [install Joomla! on it](https://mcs.mail.ru/help/joomla-on-linux/joomla-ubuntu-18). When registering, you get a free bonus account, which is enough to test the server for several days.
+- You can install the LAMP stack yourself. For information on how to install the LAMP stack on OpenSUSE 42.3, [read here](https://mcs.mail.ru/help/lamp-on-linux/lamp-opensuse-42).
 
-## Настройка СУБД MySQL (mariadb)
+## Configuring the MySQL DBMS (mariadb)
 
-Чтобы начать работу с Joomla!, необходимо создать и настроить выделенную базу данных MySQL. Для этого:
+To get started with Joomla!, you need to create and set up a dedicated MySQL database. For this:
 
-1.  Откройте окно терминала.
-2.  Для перехода в оболочку MySQL (mariadb) выполните команду:
-
-```
-sudo mysql -u root -p 
-```
-
-Используйте аутентификацию учетной записи root, которая относится исключительно к СУБД MySQL.
-
-3.  Создайте базу данных для Joomla!, используя команду:
+1. Open a terminal window.
+2. To switch to the MySQL shell (mariadb), run the command:
 
 ```
-CREATE DATABASE имя_базы;
-Например: CREATE DATABASE joomla;
+sudo mysql -u root -p
 ```
 
-**Внимание**
+Use root authentication, which is exclusive to MySQL.
 
-После каждой команды СУБД MySQL должна ставиться точка с запятой.
-
-4.  Создайте пользователя с правами полного доступа к созданной базе данных и назначьте ему пароль, используя команду:
+3. Create a database for Joomla! using the command:
 
 ```
-CREATE USER имя_пользователя@localhost IDENTIFIED BY 'пароль';
-Например: CREATE USER [juser@localhost](mailto:juser@localhost) IDENTIFIED BY 'mypassword';
+CREATE DATABASE database_name;
 ```
 
-5.  Предоставьте пользователю необходимые привилегии для создания и изменения таблиц базы данных, выполнив команду:
+For example:
 
 ```
-GRANT ALL PRIVILEGES ON  имя_базы.\* TO имя_пользователя@localhost;
-Например: GRANT ALL PRIVILEGES ON joomla.\* TO [juser@localhost](mailto:juser@localhost);
+CREATE DATABASE joomla;
 ```
 
-6.  Актуализируйте предоставление привилегий к таблицам базы данных, выполнив команду:
+<warn>
+
+**Attention**
+
+Each MySQL DBMS command must be followed by a semicolon.
+
+</warn>
+
+4. Create a user with full access rights to the created database and assign a password to it using the command:
+
+```
+CREATE USER username@localhost IDENTIFIED BY 'password';
+```
+
+For example:
+
+```
+CREATE USER [juser@localhost](mailto:juser@localhost) IDENTIFIED BY 'mypassword';
+```
+
+5. Grant the user the necessary privileges to create and modify database tables by running the command:
+
+```
+GRANT ALL PRIVILEGES ON dbasename.\* TO username@localhost;
+```
+
+For example:
+
+```
+GRANT ALL PRIVILEGES ON joomla.\* TO [juser@localhost](mailto:juser@localhost);
+```
+
+6. Update the granting of privileges to database tables by running the command:
 
 ```
 FLUSH PRIVILEGES;
 ```
 
-7.  Выйдите из оболочки MySQL, выполнив команду:
+7. Exit the MySQL shell by running the command:
 
 ```
 exit
 ```
 
-## Подготовка к установке Joomla!
+## Preparing to install Joomla!
 
-Перед установкой Joomla!:
+Before installing Joomla!:
 
-1.  Перейдите на сайт [https://github.com/joomla/joomla-cms/releases](https://github.com/joomla/joomla-cms/releases) и запомните номер последней версии Joomla!
+1. Go to [website](https://github.com/joomla/joomla-cms/releases) and note the latest Joomla!
 
 **![](./assets/1558687212640-1558687212640.jpeg)**
 
-2.  Откройте окно терминала.
-3.  В брандмауэре ОС откройте сервису apache доступ к порту 80. Для этого измените конфигурацию брандмауэра:
+2. Open a terminal window.
+3. In the OS firewall, open the apache service access to port 80. To do this, change the firewall configuration:
 
-- Откройте файл SUSEfirewall2 для редактирования, выполнив команду:
+- Open the SUSEfirewall2 file for editing by running the command:
 
 ```
 sudo nano /etc/sysconfig/SuSEfirewall2
 
 ```
 
-- В файле SUSEfirewall2 найдите строку:
+- In the SUSEfirewall2 file, find the line:
 
 ```
 FW_CONFIGURATIONS_EXT=""
 
 ```
 
-и замените ее на строку:
+and replace it with the line:
 
 ```
 FW_CONFIGURATIONS_EXT="apache2"
 
 ```
 
-- Сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
+- Save changes using CTRL+O and finish editing using CTRL+X.
 
-4.  Перезагрузите брандмауэр SUSEfirewall2, выполнив команду:
+4. Restart the SUSEfirewall2 firewall by running the command:
 
 ```
 sudo systemctl restart SUSEfirewall2
 
 ```
 
-5.  Установите дополнительные пакеты PHP, выполнив команду:
+5. Install additional PHP packages by running the command:
 
 ```
 sudo zypper install php7-bz2 php7-curl php7-gd php7-gettext php7-mbstring php7-openssl php7-zip pwgen php7-zlib
 
 ```
 
-6.  Перейдите в домашний каталог, выполнив команду:
+6. Change to your home directory by running the command:
 
 ```
 cd ~
 ```
 
-7.  Создайте временный каталог tempJL, выполнив команду:
+7. Create a temporary directory `tempJL` by running the command:
 
 ```
 mkdir tempJL
 ```
 
-8.  Перейдите в созданный каталог, выполнив команду:
+8. Change to the created directory by running the command:
 
 ```
 cd ~/tempJL
 ```
 
-9.  Скачайте последнюю версию Joomla!, выполнив команду:
+9. Download the latest version of Joomla! by running the command:
 
 ```
-wget https://github.com/joomla/joomla-cms/releases/download/<номер версии>/Joomla_<номер версии>-Stable-Full_Package.tar.gz
-Например: wget [https://github.com/joomla/joomla-cms/releases/download/3.9.3/Joomla_3.9.3-Stable-Full_Package.tar.gz](https://github.com/joomla/joomla-cms/releases/download/3.9.3/Joomla_3.9.3-Stable-Full_Package.tar.gz)
+wget https://github.com/joomla/joomla-cms/releases/download/<version number>/Joomla_<version number>-Stable-Full_Package.tar.gz
 ```
 
-10. Создайте папку /var/www/html/joomla, выполнив команду:
+For example:
+
+```
+wget https://github.com/joomla/joomla-cms/releases/download/3.9.3/Joomla_3.9.3-Stable-Full_Package.tar.gz
+```
+
+10. Create a folder `/var/www/html/joomla` by running the command:
 
 ```
 sudo mkdir /var/www/html/joomla
 ```
 
-11. Распакуйте и переместите файлы из текущего каталога в каталог /var/www/html/Joomla, выполнив команду:
+11. Unpack and move the files from the current directory to the `/var/www/html/Joomla` directory by running the command:
 
 ```
-sudo tar -xvzf Joomla_<номер версии>-Stable-Full_Package.tar.gz -C /var/www/html/joomla
-Например: sudo tar -xvzf Joomla_3.9.3-Stable-Full_Package.tar.gz -C /var/www/html/joomla
+sudo tar -xvzf Joomla_<version number>-Stable-Full_Package.tar.gz -C /var/www/html/joomla
 ```
 
-12. Удалите временный каталог tempJL, выполнив команду:
+For example:
+
+```
+sudo tar -xvzf Joomla_3.9.3-Stable-Full_Package.tar.gz -C /var/www/html/joomla
+```
+
+12. Remove the temporary directory `tempJL` by running the command:
 
 ```
 rm -Rf ~/tempJL
 ```
 
-13. Сделайте пользователя wwwrun, от имени которого запускается сервис apache, владельцем корневого каталога, используя команду:
+13. Make the `wwwrun` user, under which the apache service runs, the owner of the root directory using the command:
 
 ```
 sudo chmod -R 775 /srv/www/htdocs/
 
 ```
 
-14. Чтобы настроить Joomla!, создайте конфигурационный файл /etc/apache2/conf.d/joomla.conf, выполнив команду:
+14. To configure Joomla!, create a configuration file `/etc/apache2/conf.d/joomla.conf` by running the command:
 
 ```
 sudo nano /etc/apache2/conf.d/joomla.conf
 
 ```
 
-15. В файл /etc/apache2/conf.d/joomla.conf добавьте следующие строки:
+15. В файл `/etc/apache2/conf.d/joomla.conf` добавьте следующие строки:
 
 ```
 <VirtualHost \*:80>
@@ -209,9 +238,13 @@ http://<внешний IP-адрес веб-сервера>/joomla
 
 **![](./assets/1558688313603-1558688313603.jpeg)**
 
-**Примечани**.
+<warn>
+
+**Примечание**
 
 В настройках базы данных укажите имя пользователя базы данных, пароль и имя базы данных, которые вы выбрали при настройке СУБД MySQL.
+
+</warn>
 
 3.  На последней странице проверьте выбранные параметры Joomla!, при необходимости отправьте их по электронной почте и нажмите кнопку **Установка**:
 
@@ -227,6 +260,6 @@ http://<внешний IP-адрес веб-сервера>/joomla
 
 **![](./assets/1558686971128-1558686971128.jpeg)**
 
-**Обратная связь**
+## Обратная связь
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

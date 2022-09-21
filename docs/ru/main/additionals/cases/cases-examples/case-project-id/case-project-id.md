@@ -6,7 +6,7 @@
 
 Примеры корректного использования параметра:
 
-### **API**
+### API
 
 ```
 curl --location --request POST 'https://infra.mail.ru:5000/v3/auth/tokens' \
@@ -36,7 +36,7 @@ curl --location --request POST 'https://infra.mail.ru:5000/v3/auth/tokens' \
 }'
 ```
 
-### **Провайдер Terraform**
+### Провайдер Terraform
 
 terraform.tf:
 
@@ -65,7 +65,7 @@ provider "openstack" {
 
 ```
 
-### **Командная строка OpenStackClient**
+### Командная строка OpenStackClient
 
 openrc.sh:
 

@@ -1,245 +1,245 @@
-Данная статья описывает установку стека LAMP на операционную систему семейства Linux - openSUSE 42.3.
+This article describes how to install a LAMP stack on a Linux operating system - openSUSE 42.3.
 
-Стек LAMP включает в себя операционную систему семейства Linux, веб-сервер Apache, систему управления базами данных MySQL и серверный язык сценариев для обработки динамического контента PHP. Все это необходимо для поддержки динамических сайтов и веб-приложений.
+The LAMP stack includes the Linux operating system, the Apache web server, the MySQL database management system, and a server-side scripting language for processing PHP dynamic content. All this is necessary to support dynamic sites and web applications.
 
-\*\*Как сэкономить время на установке стека LAMP
+## How to save time installing a LAMP stack
 
-\*\*
+You can get a ready-made LAMP stack on Ubuntu 18.04 as a [configured VK Cloud virtual machine](https://mcs.mail.ru/app/services/marketplace/). When registering, you get a free bonus account, which is enough to test the server for several days.
 
-\*\*
+To learn more about LAMP in the app store, go to [Help Center](https://mcs.mail.ru/help/quick-start/-lamp-stack-apachephp).
 
-Вы можете получить готовый стек LAMP на Ubuntu 18.04 в виде настроенной виртуальной машины VK Cloud. При регистрации вы получаете бесплатный бонусный счет, которого достаточно, чтобы тестировать сервер несколько дней.
+#### Requirements
 
-[[подключить машину LAMP](https://mcs.mail.ru/app/services/marketplace/)]
+- Operating system openSUSE version 42.3.
+- A user with access to the sudo command.
 
-Чтобы узнать больше о LAMP в магазине приложений, перейдите в [Центр помощи](https://mcs.mail.ru/help/quick-start/-lamp-stack-apachephp).
+## Preparing to install the LAMP stack
 
-\*\*
+Before installing the LAMP stack:
 
-#### Требования
-
-- Операционная система openSUSE версии 42.3.
-- Пользователь с доступом к команде sudo.
-
-## Подготовка к установке стека LAMP
-
-Перед установкой стека LAMP:
-
-1.  Откройте окно терминала.
-2.  Обновите репозиторий и установочные пакеты, выполнив команду:
+1. Open a terminal window.
+2. Update the repository and installation packages by running the command:
 
 ```
-sudo zypper update
+sudo zipper update
 ```
 
-В процессе выполнения данной команды введите дополнительный аргумент, отвечающий за метод доверия к подписанному ключу безопасности:
+During the execution of this command, enter an additional argument that is responsible for the trust method for the signed security key:
 
 ![](./assets/1554622498215-1554622498215.png)
 
-- Если вы по каким-либо причинам хотите отклонить данный ключ и отменить обновление, введите **r**.
-- Если вы доверяете данному ключу только на время текущего обновления, введите **t**.
-- Если данный ключ будет всегда использоваться при обновлении репозитория или установочных пакетов, введите **a** (в большинстве случаев данный вариант является предпочтительным).
+- If for some reason you want to reject this key and cancel the update, enter **r**.
+- If you trust this key only for the duration of the current update, enter **t**.
+- If this key will always be used when updating the repository or installation packages, enter **a** (in most cases, this option is preferred).
 
-Для запуска обновления, введите **y**:
+To start the update, enter **y**:
 
 ![](./assets/1554622498495-1554622498495.png)
 
-3.  Установите текстовый редактор Nano, выполнив команду:
+3. Install the Nano text editor by running the command:
 
 ```
 sudo zypper install nano
 ```
 
-Чтобы установить редактор, введите **y**.
+To install the editor, enter **y**.
 
-## Установка и настройка веб-сервера Apache
+## Installing and configuring the Apache web server
 
-Чтобы установить и выполнить первичную настройку веб-сервера Apache:
+To install and perform initial configuration of the Apache web server:
 
-1.  Откройте окно терминала.
-2.  Установите веб-сервер Apache, выполнив команду:
+1. Open a terminal window.
+2. Install the Apache web server by running the command:
 
 ```
 sudo zypper install apache2
 ```
 
-Чтобы установить веб-сервер, введите **y**.
+To install a web server, enter **y**.
 
-3.  Запустите веб-сервер Apache в качестве службы, выполнив команду:
+3. Start the Apache web server as a service by running the command:
 
 ```
 sudo systemctl start apache2
 ```
 
-4.  Чтобы при перезагрузке операционной системы запуск веб-сервера Apache в качестве службы выполнялся автоматически, выполните команду:
+4. To start the Apache web server as a service automatically when the operating system is restarted, run the command:
 
 ```
 sudo systemctl enable apache2
 ```
 
-5.  Для проверки конфигурации веб-сервера Apache выполните команду:
+5. To check the configuration of the Apache web server, run the command:
 
 ```
 sudo apachectl configtest
 ```
 
-В случае отсутствия ошибок отобразится строка:
+If there are no errors, the following line will be displayed:
 
 ```
 Syntax OK
 ```
 
-6.  Для проверки доступа к веб-серверу Apache:
+6. To test access to the Apache web server:
 
-- Создайте файл index.html, выполнив команду:
+- Create an index.html file by running the command:
 
 ```
 sudo nano /srv/www/htdocs/index.html
 ```
 
-- В файл index.html добавьте следующие строки:
+- In the index.html file, add the following lines:
 
 ```
-<html> 
-<body> 
-  <h1> Test access</h1> 
-</body> 
+<html>
+<body>
+<h1>Test access</h1>
+</body>
 </html>
 ```
 
-- Сохраните изменения в файле, используя сочетание клавиш CTRL+O.
-- Завершите редактирование, используя сочетание клавиш CTRL+X.
-- Запустите веб-браузер и в адресной строке введите внешний IP-адрес веб-сервера Apache.
+- Save changes to the file using the keyboard shortcut CTRL+O.
+- Finish editing using the keyboard shortcut CTRL+X.
+- Launch a web browser and enter the public IP address of the Apache web server in the address bar.
 
-Если установка веб-сервера Apache прошла успешно, откроется страница, содержащая следующую строку:
+If the installation of the Apache web server was successful, a page containing the following line will open:
 
 ![](./assets/1554625419224-1554625419224.png)
 
-## Установка СУБД MySQL (mariadb)
+## Install MySQL DBMS (mariadb)
 
-Чтобы установить и настроить СУБД MySQL:
+To install and configure MySQL DBMS:
 
-1.  Откройте окно терминала.
-2.  Установите сервер MySQL, выполнив команду:
+1. Open a terminal window.
+2. Install the MySQL server by running the command:
 
 ```
 sudo zypper install mariadb mariadb-client mariadb-tools
 ```
 
-Чтобы установить сервер MySQL, введите **y**.
+To install the MySQL server, enter **y**.
 
-3.  Чтобы просмотреть справочную информацию, по завершении установки сервера MySQL введите **y**:
+3. To view help information, when the MySQL server installation is complete, type **y**:
 
 ![](./assets/1554625522460-1554625522460.png)
 
-4.  Запустите MySQL в качестве службы, выполнив команду:
+4. Start MySQL as a service by running the command:
 
 ```
 sudo systemctl start mysql.service
 ```
 
-5.  Чтобы при перезагрузке операционной системы запуск MySQL в качестве службы выполнялся автоматически, выполните команду:
+5. To automatically start MySQL as a service when the operating system is restarted, run the command:
 
 ```
 sudo systemctl enable mysql.service
 ```
 
-6.  Для внесения изменений в конфигурацию сервера СУБД MySQL используйте команду:
+6. To make changes to the MySQL DBMS server configuration, use the command:
 
 ```
 sudo mysql_secure_installation
 ```
 
-Данная команда запускает сценарий повышения безопасности сервера СУБД MySQL. Для настройки безопасности:
+This command runs the script to improve the security of the MySQL DBMS server. To set up security:
 
-- Укажите пароль для учетной записи root.
+- Specify a password for the root account.
 
-**Внимание**
+<warn>
 
-Рекомендуется указывать надежный пароль, который содержит не менее 8 символов, включающих по крайней мере одну заглавную букву, одну строчную букву, одну цифру и один специальный символ.
+**Attention**
 
-Пользователь root в данном случае относится исключительно к СУБД MySQL и не является учетной записью ОС.
+It is recommended that you provide a strong password that is at least 8 characters long and includes at least one uppercase letter, one lowercase letter, one number, and one special character.
 
-- При необходимости удалите анонимные (anonymous) учетные записи, которые создаются при установке СУБД MySQL:
-  - Ответьте Y(es) для удаления анонимных учетных записей.
-  - Ответьте N(o), если удаление анонимных учетных записей не требуется.
+</warn>
 
-Данные учетные записи предназначены только для тестирования БД и в большинстве случаев могут быть удалены.
+The root user in this case refers exclusively to the MySQL DBMS and is not an OS account.
 
-- При необходимости запретите предоставление удаленного доступа к базам СУБД MySQL для учетной записи root:
-  - Ответьте Y(es) для отключения возможности удаленного доступа.
-  - Ответьте N(o), для разрешения удаленного доступа.
-- При необходимости удалите тестовую базу (Test):
-  - Ответьте Y(es) для удаления базы Test.
-  - Ответьте N(o), если удаление базы Test не требуется.
+- If necessary, remove anonymous (anonymous) accounts that are created during installation of MySQL DBMS:
+  - Answer Y(es) to remove anonymous accounts.
+  - Answer N(o) if deleting anonymous accounts is not required.
 
-Данная база создается при установке сервера СУБД MySQL и предназначена для тестирования. Удаление базы Test не влияет на работу системы.
+These accounts are for database testing purposes only and can be deleted in most cases.
 
-- В ответ на запрос на внесение изменений в СУБД MySQL и перезагрузку привилегий доступа к таблицам:
-  - Ответьте Y(es) для внесения изменений и перезагрузки.
-  - Ответьте N(o), если внесение изменений и перезагрузка не требуются.
+- If necessary, prohibit granting remote access to MySQL databases for the root account:
+  - Answer Y(es) to disable remote access.
+  - Answer N(o) to enable remote access.
+- If necessary, delete the test base (Test):
+  - Answer Y(es) to remove the base Test.
+  - Answer N(o) if you don't want to remove the Test base.
 
-## Установка PHP
+This database is created during installation of the MySQL DBMS server and is intended for testing purposes. Removing the Test database does not affect the operation of the system.
 
-Для установки PHP:
+- In response to a request to make changes to the MySQL DBMS and reload table access privileges:
+  - Answer Y(es) to make changes and reboot.
+  - Answer N(o) if changes and reboot are not required.
 
-1.  Откройте окно терминала.
-2.  Установите PHP, выполнив команду:
+## Install PHP
+
+To install PHP:
+
+1. Open a terminal window.
+2. Install PHP by running the command:
 
 ```
 sudo zypper install php7 php7-mysql apache2-mod_php7
 ```
 
-Чтобы установить PHP, введите **y**.
+To install PHP, enter **y**.
 
-3.  Aктивируйте модуль PHP, выполнив команду:
+3. Activate the PHP module by running the command:
 
 ```
 sudo a2enmod php7
 ```
 
-4.  Перезагрузите веб-сервер Apache, выполнив команду:
+4. Restart the Apache web server by running the command:
 
 ```
 sudo systemctl restart apache2
 ```
 
-5.  Убедитесь, что веб-сервер Apache корректно отображает скрипты PHP. Для этого:
+5. Make sure the Apache web server renders PHP scripts correctly. For this:
 
-- Создайте файл info.php, выполнив команду:
+- Create an info.php file by running the command:
 
 ```
 sudo nano /srv/www/htdocs/info.php
 ```
 
-- В файл info.php поместите текст:
+- In the file info.php put the text:
 
 ```
 <?php
-    phpinfo();
+phpinfo();
 ?>
 ```
 
-- Сохраните внесенные изменения, используя сочетание клавиш CTRL+O.
-- Завершите редактирование, используя сочетание клавиш CTRL+X.
-- В адресной строке браузера к адресу веб-сервера добавьте строку:
+- Save your changes using the keyboard shortcut CTRL+O.
+- Finish editing using the keyboard shortcut CTRL+X.
+- In the address bar of the browser, add the line to the web server address:
 
 ```
 /info.php
 ```
 
-В результате должна отобразиться примерно следующая страница:
+As a result, the following page should be displayed:
 
 ![](./assets/1554626348295-1554626348295.png)
 
-**Внимание**
+<warn>
 
-В целях безопасности после проверки системы рекомендуется удалить файл info.php, выполнив команду:
+**Attention**
+
+For security purposes, after checking the system, it is recommended to delete the info.php file by running the command:
 
 ```
 sudo rm /srv/www/htdocs/info.php
 ```
 
-**Обратная связь**
+</warn>
 
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
+## **Feedback**
+
+Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

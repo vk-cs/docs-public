@@ -1,285 +1,274 @@
-1С-Битрикс: Управление сайтом - профессиональная система управления интернет-ресурсами, с помощью которой можно создавать и поддерживать информационные порталы, интернет-магазины и корпоративные сайты.
+1C-Bitrix: Site Management is a professional Internet resource management system that can be used to create and maintain information portals, online stores and corporate websites.
 
-## Требования
+## Requirements
 
-- Операционная система Debian версии 9.4.
-- Пользователь с доступом к команде sudo.
-- Установленный стек LAMP.
+- Operating system Debian version 9.4.
+- A user with access to the sudo command.
+- Installed LAMP stack.
 
-Если у вас еще не установлен стек LAMP:
+If you don't already have the LAMP stack installed:
 
-- Вы можете получить готовый стек LAMP в облаке [в виде настроенной виртуальной машины](https://mcs.mail.ru/app/services/marketplace/) на Ubuntu 18.04 и установить [1С-Битрикс: Управление сайтом на нем](https://mcs.mail.ru/help/1c-bitrix-linux/bitrix-ubuntu-18). При регистрации вы получаете бесплатный бонусный счет, которого хватает, чтобы тестировать сервер несколько дней.
-- Вы можете установить стек LAMP самостоятельно. О том, как установить стек LAMP на Debian 9.4, [читайте тут](https://mcs.mail.ru/help/lamp-on-linux/lamp-debian-9).[](https://mcs.mail.ru/help/lamp-setup/lamp-ubuntu-18)
+- You can get a ready-made LAMP stack in the cloud [as a configured virtual machine](https://mcs.mail.ru/app/services/marketplace/) on Ubuntu 18.04 and install [1C-Bitrix: Site Management on it]( https://mcs.mail.ru/help/1c-bitrix-linux/bitrix-ubuntu-18). When registering, you get a free bonus account, which is enough to test the server for several days.
+- You can install the LAMP stack yourself. To learn how to install a LAMP stack on Debian 9.4, see the article [Installing a LAMP stack on a Debian 9.4 operating system](https://mcs.mail.ru/help/lamp-on-linux/lamp-debian-9).
 
-## Подготовка к установке 1С-Битрикс: Управление сайтом
+## Preparation for installation of 1C-Bitrix: Site management
 
-1.  Перейдите на сайт [https://www.1c-bitrix.ru/download/cms.php](https://www.1c-bitrix.ru/download/cms.php) и выберите нужный дистрибутив (например, Стандарт):
+1. Go to the site [download 1C Bitrix distribution](https://www.1c-bitrix.ru/download/cms.php) and select the required distribution (for example, Standard):
 
-**![](./assets/1560890754176-1560890754176.jpeg)**
+    ![](./assets/1560890754176-1560890754176.jpeg)
 
-2.  Откройте окно терминала.
-3.  Установите дополнительные пакеты PHP, выполнив команду:
-
-```
-sudo apt-get install php-common php-mbstring php-xmlrpc  -y
-```
-
-4.  Перейдите в домашний каталог, выполнив команду:
-
-```
-cd ~
-```
-
-5.  Создайте временный каталог tempBT, выполнив команду:
-
-```
-mkdir tempBT
-```
-
-6.  Перейдите в каталог tempBT, выполнив команду:
-
-```
-cd ~/tempBT
-```
-
-7.  Скачайте соответствующий выбранному дистрибутиву архив, выполнив команду:
-
-```
-wget https://www.1c-bitrix.ru/download/standard_encode.tar.gz
-```
-
-8.  Распакуйте архив в каталог /var/www/html, выполнив команду:
-
-```
-sudo tar xzvf standard_encode.tar.gz -C /var/www/html
-```
-
-9.  Удалите временный каталог tempBT, выполнив команду:
-
-```
-sudo rm -Rf ~/tempBT
-```
-
-10. Замените владельца каталогов и файлов в корневом каталоге веб-сервера, используя команду:
-
-```
-sudo chown -R имя_пользователя:www-data /var/www/html
-где имя_пользователя - это имя пользователя sudo, www-data - имя группы
-Например: sudo chown -R www-data:www-data /var/www/html
-```
-
-**Внимание**
-
-Во избежание ошибок веб-сервера Apache при запуске скриптов используйте имя пользователя www-data и имя группы www-data по умолчанию.
-
-11. Если необходимо предоставить доступ к файлам корневого каталога веб-сервера другому пользователю, включите этого пользователя в группу www-data, используя команду:
-
-```
-sudo usermod -a -G www-data имя_пользователя
-Например: sudo usermod -a -G www-data btuser
-```
-
-12. Настройте права доступа к файлам и папкам корневого каталога, используя команду:
-
-```
-sudo chmod -R 775 /var/www/html
-```
-
-13. В файле php.ini измените значения параметров, отвечающих за корректную работу 1С-Битрикс: Управление сайтом.
-
-**Примечание**
-
-Для быстрого поиска параметров в файле используйте сочетание клавиш CTRL+W.
-
-Для этого:
-
-- Откройте файл php.ini для редактирования, выполнив команду:
-
-```
-sudo nano /etc/php/7.0/apache2/php.ini
-```
-
-- Для параметра short_open_tag укажите значение On:
-
-```
-short_open_tag = On
-```
-
-**![](./assets/1560891031446-1560891031446.jpeg)**
-
-- Для параметра mbstring.func_overload укажите значение 2:
-
-```
-mbstring.func_overload = 2
-```
-
-**![](./assets/1560891075457-1560891075457.jpeg)**
-
-- Для параметра opcache.revalidate_freq укажите значение 0:
-
-```
-opcache.revalidate_freq=0
-```
-
-**![](./assets/1560891112462-1560891112462.jpeg)**
-
-- Для параметра date.timezone укажите значение Europe/Moscow:
-
-```
-date.timezone = Europe/Moscow
-```
-
-**![](./assets/1560891760614-1560891760614.jpeg)**
-
-- В строке:
-
-```
-;mbstring.func_overload = 2
-```
-
-уберите точку с запятой:
-
-```
-mbstring.func_overload = 2
-```
-
-\*\*![](./assets/1560891208464-1560891208464.jpeg)
-
-\*\*
-
-- Сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
-
-14. Создайте конфигурационный файл bitrix.conf, выполнив команду:
-
-```
-sudo nano /etc/apache2/sites-available/bitrix.conf
-```
-
-В этот файл добавьте следующие строки:
-
-```
-<VirtualHost \*:80>
-DocumentRoot /var/www/html/
-ServerName <внешний IP-адрес вашего веб-сервера>
-<Directory /var/www/html/>
-Options +FollowSymlinks
-AllowOverride All
-Require all granted
-</Directory>
-ErrorLog ${APACHE_LOG_DIR}/bitrix_error.log
-CustomLog ${APACHE_LOG_DIR}/bitrix_access.log combined
-</VirtualHost>
-```
-
-Сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
-
-15. Отключите сайт по умолчанию 000-default.conf, выполнив команду:
+1. Open a terminal window.
+1. Install additional PHP packages by running the command:
 
     ```
-    sudo a2dissite 000-default.conf  
+    sudo apt-get install php-common php-mbstring php-xmlrpc -y
     ```
 
-16. Подключите новый виртуальный хост, выполнив команду:
+1. Change to your home directory by running the command:
+
+    ```
+    cd ~
+    ```
+
+1. Create a temporary directory tempBT by running the command:
+
+    ```
+    mkdir tempBT
+    ```
+
+1. Change to the tempBT directory by running the command:
+
+    ```
+    cd ~/tempBT
+    ```
+
+1. Download the archive corresponding to the selected distribution by running the command:
+
+    ```
+    wget https://www.1c-bitrix.ru/download/standard_encode.tar.gz
+    ```
+
+1. Unzip the archive to the /var/www/html directory by running the command:
+
+    ```
+    sudo tar xzvf standard_encode.tar.gz -C /var/www/html
+    ```
+
+1. Remove the tempBT temporary directory by running the command:
+
+    ```
+    sudo rm -Rf ~/tempBT
+    ```
+
+1. Change the owner of directories and files in the root directory of the web server using the command:
+
+    ```
+    sudo chown -R username:www-data /var/www/html
+    where username is the sudo username, www-data is the group name
+    For example: sudo chown -R www-data:www-data /var/www/html
+    ```
+
+    <warn>
+
+    **Attention**
+
+    To avoid Apache web server errors, use the default username www-data and the default group name www-data when running scripts.
+
+    </warn>
+
+1. If you need to grant access to the files of the web server root directory to another user, include this user in the www-data group using the command:
+
+    ```
+    sudo usermod -a -G www-data username
+    For example: sudo usermod -a -G www-data btuser
+    ```
+
+1. Set the permissions for files and folders in the root directory using the command:
+
+    ```
+    sudo chmod -R 775 /var/www/html
+    ```1. In the php.ini file, change the values ​​of the parameters responsible for the correct operation of 1C-Bitrix: Site Management.
+
+    <info>
+
+    **Note**
+
+    To quickly search for parameters in a file, use the keyboard shortcut CTRL+W.
+
+    </info>
+
+    For this:
+    1. Open the php.ini file for editing by running the command:
+
+        ```
+        sudo nano /etc/php/7.0/apache2/php.ini
+        ```
+
+    1. Set the short_open_tag parameter to On:
+
+        ```
+        short_open_tag = On
+        ```
+
+    1. Set the mbstring.func_overload parameter to 2:
+
+        ```
+        mbstring.func_overload = 2
+        ```
+
+    1. Set the opcache.revalidate_freq parameter to 0:
+
+        ```
+        opcache.revalidate_freq=0
+        ```
+
+    1. Set the date.timezone parameter to Europe/Moscow:
+
+        ```
+        date.timezone = Europe/Moscow
+        ```
+
+    1. In the line `;mbstring.func_overload = 2` remove the semicolon:
+
+        ```
+        mbstring.func_overload = 2
+        ```
+
+    1. Save your changes using the keyboard shortcut CTRL+O and finish editing using the keyboard shortcut CTRL+X.
+
+1. Create the bitrix.conf configuration file by running the command:
+
+    ```
+    sudo nano /etc/apache2/sites-available/bitrix.conf
+    ```
+
+    Add the following lines to this file:
+
+    ```
+    <VirtualHost\*:80>
+    DocumentRoot /var/www/html/
+    ServerName <your web server's external IP address>
+    <Directory /var/www/html/>
+    Options +FollowSymlinks
+    AllowOverride All
+    Require all granted
+    </Directory>
+    ErrorLog ${APACHE_LOG_DIR}/bitrix_error.log
+    CustomLog ${APACHE_LOG_DIR}/bitrix_access.log combined
+    </VirtualHost>
+    ```
+
+    Save your changes using the keyboard shortcut CTRL+O and finish editing using the keyboard shortcut CTRL+X.1. Disable the default site 000-default.conf by running the command:
+
+    ```
+    sudo a2dissite 000-default.conf
+    ```
+
+1. Connect a new virtual host by running the command:
+
+    ```
+    sudo a2ensite bitrix.conf
+    ```
+
+1. Enable the Apache rewrite module by running the command:
+
+    ```
+    sudo a2enmod rewrite
+    ```
+
+1. Restart the Apache web server by running the command:
+
+    ```
+    sudo systemctl reload apache2
+    ```
+
+## MySQL database setup
+
+To get started with 1C-Bitrix: Site Management, you need to create and configure a dedicated MySQL database. For this:
+
+1. Open a terminal window.
+1. To switch to the MySQL shell, run the command:
+
+    ```
+    sudo mysql -u root -p
+    ```
+
+    Use the root account authentication, which is specific to the MySQL database.
+
+1. Create a new database for 1C-Bitrix: Site Management using the command:
+
+    ```
+    CREATE DATABASE database_name;
+    For example: CREATE DATABASE bitrixdb;
+    ```
+
+    <warn>
+
+    **Attention**
+
+    All MySQL commands must be followed by a semicolon.
+
+    </warn>
+
+1. Create a user with full access rights to the created database and assign a password to it using the command:
+
+    ```
+    CREATE USER username@localhost IDENTIFIED BY 'password';
+    For example: CREATE USER btuser@localhost IDENTIFIED BY 'mypassword';
+    ```
+
+1. Grant the user the privileges required to create and modify database tables by running the command:
+
+    ```
+    GRANT ALL PRIVILEGES ON dbasename.\* TO username@localhost;
+    For example: GRANT ALL PRIVILEGES ON bitrixdb.\* TO btuser@localhost;
+    ```
+
+1. Update the granting of privileges to database tables by running the command:
+
+    ```
+    FLUSH PRIVILEGES;
+    ```
+
+1. Exit the MySQL shell by running the command:
+
+    ```
+    exit
+    ```
+
+## Installing 1C-Bitrix: Site Management
+
+To install 1C-Bitrix: Site Management in the address bar of a web browser, enter:
 
 ```
-sudo a2ensite bitrix.conf
+http://<your web server's external IP address>
 ```
 
-17. Подключите модуль Apache rewrite, выполнив команду:
+As a result, the installation wizard will start, follow its instructions:
 
-```
-sudo a2enmod rewrite
-```
+1. Read the introductory information and click the "Next" button.
+1. Read the license agreement and click the "Next" button.
+1. If necessary, provide information to register your copy of the product. Then check the "Install in UTF-8 encoding" box and click the "Next" button.
 
-18. Перезагрузите веб-сервер Apache, выполнив команду:
+    ![](./assets/1560891417760-1560891417760.jpeg)
 
-```
-sudo systemctl reload apache2
-```
+1. Make sure all fields with "Current Value" are highlighted in green and click the "Next" button.
+1. Specify the database parameters.
 
-## **Настройка СУБД MySQL**
+    ![](./assets/1560891443760-1560891443760.jpeg)
 
-Чтобы начать работу с 1С-Битрикс: Управление сайтом, необходимо создать и настроить выделенную базу данных MySQL. Для этого:
+    Use the database username, password, and database name that you provided when setting up the MySQL database. Other options are recommended to be left at their default values. Then click the "Next" button and wait for the installation to complete.
 
-1.  Откройте окно терминала.
-2.  Для перехода в оболочку MySQL выполните команду:
+1. Specify the settings for creating an administrator account and click Next.
 
-```
-sudo mysql -u root -p 
-```
+    ![](./assets/1560891478357-1560891478357.jpeg)
 
-Используйте аутентификацию учетной записи root, относящуюся исключительно к СУБД MySQL.
+1. Select a typical configuration solution (for example, 1C-Bitrix: Personal Site) and click the "Next" button.
 
-3.  Создайте новую базу данных для 1С-Битрикс: Управление сайтом, используя команду:
+    As a result, you will proceed to the individual settings of the selected template. Select the solution you want to use for your site, enter the name and the name of the site owner. Then click the "Install" button.
 
-```
-CREATE DATABASE имя_базы;
-Например: CREATE DATABASE bitrixdb;
-```
+    The installation of the selected template will start. Once the installation is complete, click the "Go to website" button.
 
-**Внимание**
+## Feedback
 
-После всех команд СУБД MySQL должна ставиться точка с запятой.
-
-4.  Создайте пользователя с правами полного доступа к созданной базе данных и назначьте ему пароль, используя команду:
-
-```
-CREATE USER имя_пользователя@localhost IDENTIFIED BY 'пароль';
-Например: CREATE USER btuser@localhost IDENTIFIED BY 'mypassword';
-```
-
-5.  Предоставьте пользователю привилегии, необходимые для создания и изменения таблиц базы данных, выполнив команду:
-
-```
-GRANT ALL PRIVILEGES ON  имя_базы.\* TO имя_пользователя@localhost;
-Например: GRANT ALL PRIVILEGES ON bitrixdb.\* TO btuser@localhost;
-```
-
-6.  Актуализируйте предоставление привилегий к таблицам базы данных, выполнив команду:
-
-```
-FLUSH PRIVILEGES;
-```
-
-7.  Выйдите из оболочки MySQL, выполнив команду:
-
-```
-exit
-```
-
-## **Установка 1С-Битрикс: Управление сайтом**
-
-Для установки 1С-Битрикс: Управление сайтом в адресной строке веб-браузера введите:
-
-```
-http://<внешний IP-адрес вашего веб-сервера>
-```
-
-В результате будет запущен мастер установки, следуйте его указаниям:
-
-1.  Ознакомьтесь с вводной информацией и нажмите кнопку **Далее**.
-2.  Ознакомьтесь с лицензионным соглашением и нажмите кнопку **Далее**.
-3.  При необходимости укажите данные для регистрации своей копии продукта. Затем установите флажок **Установить в кодировке UTF-8** и нажмите кнопку **Далее**.
-
-**![](./assets/1560891417760-1560891417760.jpeg)**
-
-4.  Убедитесь, что все поля с элементом **Текущее значение** выделены зеленым, и нажмите кнопку **Далее**.
-5.  Укажите параметры базы данных.
-
-\*\*![](./assets/1560891443760-1560891443760.jpeg)
-
-\*\*
-
-Используйте имя пользователя базы данных, пароль и имя базы данных, которые вы указали при настройке БД MySQL [](https://docs.google.com/document/d/1jl_ugmDJOyott1UJb7h1rDTa0vFpH6GrcQ6A1aXpBKE/edit#heading=h.u2usy4a5aptn). Другим параметрам рекомендуется оставить значения по умолчанию. Затем нажмите кнопку **Далее** и дождитесь завершения установки.
-
-6.  Укажите параметры для создания учетной записи администратора и нажмите кнопку **Далее**. \***\*![](./assets/1560891478357-1560891478357.jpeg)\*\***
-
-7.  Выберите типовое решение для конфигурации (например, 1С-Битрикс: Персональный сайт) и нажмите кнопку **Далее**.
-
-В результате вы перейдете к индивидуальной настройке выбранного шаблона. Выберите решение, которое вы хотите использовать для вашего сайта, введите название и имя владельца сайта. Затем нажмите кнопку **Установить**.
-
-Будет запущена установка выбранного шаблона. По завершении установки нажмите кнопку **Перейти на сайт**.
-
-**Обратная связь**
-
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
+Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).
