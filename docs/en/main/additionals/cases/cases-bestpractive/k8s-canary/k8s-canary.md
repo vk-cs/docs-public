@@ -1,76 +1,67 @@
-Эта статья поможет вам развернуть кластер Kubernetes и настроить на нем Canary Deployment при помощи Nginx Ingress Annotations
+This article will help you deploy a Kubernetes cluster and set up Canary Deployment on it using Nginx Ingress Annotations
 
-**Canary Deployment** — это способ развертывания сетевых приложений и онлайн-сервисов для некоторого множества пользователей или серверов. Его часто используют для постепенного развертывания новых версий приложений с целью раннего выявления ошибок. Canary Deployment особенно полезен при проведении A/B-тестирований или настройки Blue/Green-развертывания приложений
+**Canary Deployment** is a way to deploy network applications and online services to a set of users or servers. It is often used to incrementally roll out new versions of applications to catch bugs early. Canary Deployment is especially useful when doing A/B testing or setting up Blue/Green application deployments
 
-Рассмотрим пример с тестовым приложением. Выполним сценарий Canary Deployment для простого echo-сервера и убедимся, что трафик распределяется в соответствии с конфигурационным файлом
+Let's consider an example with a test application. Let's execute the Canary Deployment script for a simple echo server and make sure that the traffic is distributed according to the configuration file
 
-**Ingress** – это набор правил внутри вашего кластера. Эти правила предназначены для того, чтобы входящие подключения могли достичь сервисов (Services) ваших приложений
+**Ingress** is a set of rules within your cluster. These rules are designed to allow incoming connections to reach the Services of your applications.
 
-Ingress решает следующие основные задачи:
+Ingress solves the following main tasks:
 
-- Организация для ваших приложений URL, доступных из-вне
-- Обеспечение балансировки трафика
-- Терминация SSL
-- Виртуальный хостинг на основе имен
+- Organization for your applications URLs accessible from outside
+- Ensuring traffic balancing
+- SSL termination
+- Shared hosting based on names
 
-Ingress Controller — это то, что позволяет набору правил Ingress работать. Если кратко, Ingress Controller представляет собой одну центральную точку в виде контейнера, который используется для проксирования всего трафика
+The Ingress Controller is what allows the Ingress ruleset to work. In short, the Ingress Controller is a single central point in the form of a container that is used to proxy all traffic
 
-В Nginx доступны следующие типы Canary-аннотаций:
+The following types of Canary annotations are available in Nginx:
 
-- nginx.ingress.kubernetes.io/canary-by-header — позволяет перенаправлять на Сanary-версию только запросы с определенным http-заголовком
-- nginx.ingress.kubernetes.io/canary-by-cookie — позволяет перенаправлять на Сanary-версию только запросы с определенным cookie
-- nginx.ingress.kubernetes.io/canary-weight — позволяет напрямую указать, сколько процентов запросов будет уходить на нашу Сanary-версию приложения. В нашем примере выполним балансировку по этому принципу
+- nginx.ingress.kubernetes.io/canary-by-header - allows you to redirect only requests with a specific http header to the Canary version
+- nginx.ingress.kubernetes.io/canary-by-cookie - allows you to redirect only requests with a specific cookie to the Canary version
+- nginx.ingress.kubernetes.io/canary-weight - allows you to directly specify what percentage of requests will go to our Canary version of the application. In our example, we will perform balancing according to this principle.
 
-**Примечание**
+**Note**
 
-Документацию по Canary Deployments на Kubernetes см. [тут](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/#canary)
+For documentation on Canary Deployments on Kubernetes, see [here](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/#canary)
 
-## **Схема стенда**
+## **Scheme of the booth**
 
 **![](./assets/1556575126475-1556575126475.png)**
 
-Ingress — это ресурс (объект), который содержит инструкции маршрутизации трафика в кластере, обычно используя HTTP. В данном случае Current и Canary являются конфигурациями Ingress для версий приложений, для которых мы настраиваем Canary Deployment.
+Ingress is a resource (object) that contains instructions for routing traffic in a cluster, typically using HTTP. In this case, Current and Canary are the Ingress configurations for the versions of the applications we are configuring Canary Deployment for.
 
-Ingress Controller отвечает за выполнение правил Ingress, как правило, с помощью балансировщика нагрузки, встроенного в K8S.
+The Ingress Controller is responsible for executing the Ingress rules, typically through a load balancer built into the K8S.
 
-## **Создание кластера Kubernetes в VK Cloud**
+## **Create a Kubernetes cluster in VK Cloud**
 
-Чтобы создать кластер Kubernets:
+To create a Kubernets cluster:
 
-1.  В боковом меню выберите раздел **Контейнеры**
-2.  Нажмите кнопку **Подключить**
-3.  В боковом меню выберите раздел **Кластеры Kubernetes**
-4.  Нажмите кнопку **Добавить** и выберите подходящие настройки
-
-**![](./assets/1587581000109-1587581000108.png)**
-
-5.  Нажмите кнопку **Следующий шаг** и выберите подходящую конфигурацию машин
-
-**![](./assets/1556575279004-1556575279004.png)**
-
-6.  Нажмите кнопку **Создать кластер** и дождитесь завершения операции. Создание кластера может занять от 5 до 20 минут, в зависимости от его размеров
-7.  По завершении создания кластера загрузится архив, содержащий файлы, необходимые для безопасного подключения к панели управления Kubernetes. Не закрывайте страницу с информацией о новом кластере, она понадобится для входа в Kubernetes Dashboard
-
-**![](./assets/1587581039562-1587581039562.png)**
-
-8.  Чтобы можно было подключаться к кластеру по kubectl, распакуйте архив, найдите файл config, который требуется для работы утилиты kubectl, и задайте переменную окружения KUBECONFIG:
+1. In the side menu, select the section **Containers**
+2. Click the **Connect** button
+3. Select **Kubernetes Clusters** from the sidebar
+4. Click the **Add** button and select the appropriate settings
+5. Click the **Next Step** button and select the appropriate machine configuration
+6. Click the **Create Cluster** button and wait for the operation to complete. Creating a cluster can take from 5 to 20 minutes, depending on its size
+7. Once the cluster is created, an archive will be downloaded containing the files needed to securely connect to the Kubernetes control panel. Don't close the new cluster information page, you'll need it to sign in to the Kubernetes Dashboard
+8. To be able to connect to the cluster via kubectl, unpack the archive, find the config file required for the kubectl utility to work, and set the KUBECONFIG environment variable:
 
 ```
-export KUBECONFIG=<путь до файла config>
+export KUBECONFIG=<path to config file>
 ```
 
-## **Создание приложения в production**
+## **Creating an application in production**
 
-Создадим приложение и покажем для этого приложения балансировку с помощью Nginx Canary. Для этого:
+Let's create an application and show balancing for this application using Nginx Canary. For this:
 
-1.  Создайте production namespace для проекта:
+1. Create a production namespace for the project:
 
 ```
 kubectl create ns echo-production
-< namespace "echo-production" created
+<namespace "echo-production" created
 ```
 
-2.  Разверните приложение. Мы используем пример из репозитория Kubernetes. Подключимся к кластеру и развернем тестовый echo-сервер в созданном namespace:
+2. Expand the application. We are using an example from the Kubernetes repository. Connect to the cluster and deploy a test echo server in the created namespace:
 
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/docs/examples/http-svc.yaml -n echo-production
@@ -79,153 +70,156 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/mast
 
 ```
 
-3.  Создайте файл конфигурации Ingress и примените его к namespace echo-production:
+3. Create an Ingress config file and apply it to namespace echo-production:
 
 ```
 http-svc.ingress
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: http-svc
-  annotations:
-    kubernetes.io/ingress.class: nginx
+name: http-svc
+annotations:
+kubernetes.io/ingress.class: nginx
 spec:
-  rules:
-  - host: echo.com
-    http:
-      paths:
-      - backend:
-          serviceName: http-svc
-          servicePort: 80
-```
+rules:
+host: echo.com
+http:
+paths:
+-backend:
+serviceName: http-svc
+servicePort: 80
+```As a result, the server will respond to all requests from the echo.com host (serviceName is the name of the service created in the previous step)
 
-В результате сервер будет реагировать на все запросы от хоста echo.com (serviceName — название сервиса, созданного на предыдущем шаге)
-
-Примените файл Ingress к namespace echo-production, используя команду:
+Apply the Ingress file to namespace echo-production using the command:
 
 ```
 kubectl apply -f http-svc.ingress -n echo-production
 < ingress.extensions "http-svc" created
 ```
 
-## **Создание тестовой копии приложения**
+## **Create a test copy of the application**
 
-Создадим копию приложения, на которую будем направлять часть запросов. Для этого:
+Let's create a copy of the application, to which we will direct part of the requests. For this:
 
-1.  Создайте Canary-версию namespace приложения:
+1. Create a Canary version of the application's namespace:
 
 ```
 kubectl create ns echo-canary
-< namespace "echo-canary" created
+<namespace "echo-canary" created
 ```
 
-2.  Разверните Canary-версию приложения:
+2. Deploy the Canary version of the application:
 
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/docs/examples/http-svc.yaml -n echo-canary
 < deployment.extensions "http-svc" created
 < service "http-svc" created
 ```
+<info>
 
-**Примечание**
+**Note**
 
-В реальных условиях Canary Deployment выполняется на разных версиях проекта, для упрощения мы используем одну и ту же версию
+In real conditions, Canary Deployment is performed on different versions of the project, for simplicity, we use the same version
 
-3.  Создайте Canary-версию файла конфигурации Ingress и примените его к namespace echo-canary:
+</info>
+
+3. Create a Canary version of the Ingress config file and apply it to namespace echo-canary:
 
 ```
 **http-svc.ingress.canary**
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: http-svc
-  annotations:
-    kubernetes.io/ingress.class: nginx
-    **nginx.ingress.kubernetes.io/canary: "true"
-    nginx.ingress.kubernetes.io/canary-weight: "10"**
+name: http-svc
+annotations:
+kubernetes.io/ingress.class: nginx
+**nginx.ingress.kubernetes.io/canary: "true"
+nginx.ingress.kubernetes.io/canary-weight: "10"**
 spec:
-  rules:
-  - host: echo.com
-    http:
-      paths:
-      - backend:
-          serviceName: http-svc
-          servicePort: 80
+rules:
+host: echo.com
+http:
+paths:
+-backend:
+serviceName: http-svc
+servicePort: 80
 ```
+<note>
 
-**Примечание**
+**Note**
 
-Мы реализуем вариант конфигурации canary-weight для указания распределения трафика в процентах. Обратите внимание на строки, выделенные жирным:
+We are implementing a canary-weight configuration option to specify the traffic distribution as a percentage. Notice the lines:
 
-\*\*
-
-- ```
+```
   nginx.ingress.kubernetes.io/canary: "true"
   ```
 
-Это означает, что Kubernetes не будет рассматривать этот Ingress как самостоятельный и пометит его как Canary, связав с основным Ingress
+This means that Kubernetes will not treat this Ingress as a standalone Ingress and will mark it as Canary by associating it with the main Ingress
 
-- ```
+```
   nginx.ingress.kubernetes.io/canary-weight: "10"
   ```
 
-"10" означает, что на Canary будет приходиться примерно 10% всех запросов
+"10" means that Canary will account for approximately 10% of all requests
 
-\*\*
+</note>
 
-4.  Примените изменения:
+4. Apply changes:
 
 ```
 kubectl apply -f http-svc.ingress.canary -n echo-canary
 < ingress.extensions "http-svc" created
 ```
 
-## **Проверка, что все работает**
+## Health check
 
-Зайдите Kubernetes Dashboard, используя токен, полученный после создания кластера:
+Login to the Kubernetes Dashboard using the token you received after creating the cluster:
 
 **![](./assets/1556659848510-1556659848510.png)**
 
-Чтобы просмотреть доступные Namespaces, в боковом меню нажмите соответствующую кнопку:
+To view the available Namespaces, click the appropriate button in the sidebar:
 
 **![](./assets/1556659872241-1556659872241.png)**
 
-Чтобы просмотреть список активных Ingress и получить их внешний IP-адрес, переключите текущий Namespace на All namespaces:
+To view a list of active Ingresses and get their external IP address, switch the current Namespace to All namespaces:
 
 **![](./assets/1556659898530-1556659898530.png)**
 
-Затем в нижней части бокового меню выберите Ingresses:
+Then, at the bottom of the sidebar, select Ingresses:
 
 **![](./assets/1556658145271-1556658145271.png)**
 
-В результате на экране отобразится список всех доступных Ingresses. У Canary и Production должен быть один IP-адрес:
+As a result, a list of all available Ingresses will be displayed on the screen. Canary and Production must have the same IP address:
 
 **![](./assets/1556659987463-1556659987463.png)**
 
-Проверим, что запросы распределяются в соответствии с  конфигурационным файлом. Для этого возьмем скрипт на Ruby:
+Check that the requests are distributed according to the configuration file. To do this, take a Ruby script:
 
 ```
 **count.rb**
 counts = Hash.new(0)
-1000.times do
-  output = \`curl -s -H "Host: echo.com" http://<внешний_ip_адрес> | grep 'pod namespace'\`
-  counts[output.strip.split.last] += 1
+1000 times do
+output = \`curl -s -H "Host: echo.com" http://<external_ip_address> | grep 'pod namespace'\`
+counts[output.strip.split.last] += 1
 end
-puts counts
+put counts
 ```
 
-И выполним его:
+And execute it:
 
 ```
 ruby count.rb
 ```
 
-Результат должен быть близок к следующему:
+The result should be close to the following:
 
 ```
 {"echo-production"=>896, "echo-canary"=>104}
 ```
+<warn>
 
-**Внимание**
+**Attention**
 
-Параметр nginx.ingress.kubernetes.io/canary-weight не гарантирует точного распределения по процентам. Он работает скорее как вероятность того, что запрос попадет на Canary, а не на Production
+The nginx.ingress.kubernetes.io/canary-weight setting does not guarantee an accurate percentage distribution. It works more like the probability that the request will hit Canary rather than Production
+
+</warn>

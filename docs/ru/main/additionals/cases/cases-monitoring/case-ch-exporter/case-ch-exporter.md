@@ -6,9 +6,13 @@
 - Grafana 6.4.2 на ОС Ubuntu 18.04 LTS x86_64.
 - Clickhouse 19.15.3.6 на ОС Ubuntu 18.04 LTS x86_64.
 
+<warn>
+
 **Внимание**
 
 При использовании серверов и оборудования других версий некоторые шаги сценария могут отличаться от описанных ниже.
+
+</warn>
 
 ## Схема работы
 
@@ -37,14 +41,14 @@ root@clickhouse:~# useradd --system -g prometheus -s /bin/false prometheus
 4.  Скачайте exporter:
 
 ```
-root@clickhouse:~# go get [github.com/percona-lab/clickhouse_exporter](https://github.com/percona-lab/clickhouse_exporter)
+root@clickhouse:~# go get github.com/percona-lab/clickhouse_exporter
 
 ```
 
 5.  Скомпилируйте exporter:
 
 ```
-root@clickhouse:~# go build [github.com/percona-lab/clickhouse_exporter](https://github.com/percona-lab/clickhouse_exporter)
+root@clickhouse:~# go build github.com/percona-lab/clickhouse_exporter
 
 ```
 
@@ -84,9 +88,13 @@ root@clickhouse:~# chown -R prometheus:prometheus /usr/local/bin/clickhouse_expo
 
 ```
 
+<info>
+
 **Примечание**
 
 Данный конфигурационный файл описывает пользователя Clickhouse с логином web и паролем web, с доступом только на чтение базы test и с разрешением на подключение только с localhost. Это необходимо для мониторинга.
+
+</info>
 
 9.  Запустите сервер Clickhouse:
 
@@ -115,9 +123,13 @@ root@clickhouse:~# systemctl restart clickhouse-server
 
     ```
 
+<warn>
+
 **Внимание**
 
 Адрес и порт (9116), используемые clickhouse_exporter, должны быть доступны с сервера Prometheus. Если порт недоступен, возможно, вам потребуется изменить настройки firewall на сервере с clickhouse_exporter.
+
+</warn>
 
 11. Запустите clickhouse_exporter:
 
@@ -208,9 +220,13 @@ root@clickhouse:/usr/share/clickhouse-test/performance# clickhouse performance-t
 
 ```
 
+<info>
+
 **Примечание**
 
 Выполнение всех тестов занимает продолжительное время.
+
+</info>
 
 В результате тестовой нагрузки графики в Grafana изменяться:
 
@@ -236,8 +252,6 @@ root@clickhouse:~# groupdel prometheus
 
 ```
 
-**Обратная связь**
+## **Обратная связь**
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады](https://mcs.mail.ru/help/contact-us)
-
-###  [](https://mcs.mail.ru/help/contact-us)

@@ -28,25 +28,44 @@ sudo mysql -u root -p 
 
 ```
 CREATE DATABASE имя_базы;
-Например: CREATE DATABASE joomla;
 ```
+
+Например:
+
+```
+CREATE DATABASE joomla;
+```
+
+<warn>
 
 **Внимание**
 
 После каждой команды СУБД MySQL должна ставиться точка с запятой.
 
+</warn>
+
 4.  Создайте пользователя с правами полного доступа к созданной базе данных и назначьте ему пароль, используя команду:
 
 ```
 CREATE USER имя_пользователя@localhost IDENTIFIED BY 'пароль';
-Например: CREATE USER [juser@localhost](mailto:juser@localhost) IDENTIFIED BY 'mypassword';
+```
+
+Например:
+
+```
+CREATE USER [juser@localhost](mailto:juser@localhost) IDENTIFIED BY 'mypassword';
 ```
 
 5.  Предоставьте пользователю необходимые привилегии для создания и изменения таблиц базы данных, выполнив команду:
 
 ```
 GRANT ALL PRIVILEGES ON  имя_базы.\* TO имя_пользователя@localhost;
-Например: GRANT ALL PRIVILEGES ON joomla.\* TO [juser@localhost](mailto:juser@localhost);
+```
+
+Например:
+
+```
+GRANT ALL PRIVILEGES ON joomla.\* TO [juser@localhost](mailto:juser@localhost);
 ```
 
 6.  Актуализируйте предоставление привилегий к таблицам базы данных, выполнив команду:
@@ -65,7 +84,7 @@ exit
 
 Перед установкой Joomla!:
 
-1.  Перейдите на сайт [https://github.com/joomla/joomla-cms/releases](https://github.com/joomla/joomla-cms/releases) и запомните номер последней версии Joomla!
+1.  Перейдите на [сайт](https://github.com/joomla/joomla-cms/releases) и запомните номер последней версии Joomla!
 
 **![](./assets/1558687212640-1558687212640.jpeg)**
 
@@ -115,7 +134,7 @@ sudo zypper install php7-bz2 php7-curl php7-gd php7-gettext php7-mbstring php7-o
 cd ~
 ```
 
-7.  Создайте временный каталог tempJL, выполнив команду:
+7.  Создайте временный каталог `tempJL`, выполнив команду:
 
 ```
 mkdir tempJL
@@ -131,43 +150,53 @@ cd ~/tempJL
 
 ```
 wget https://github.com/joomla/joomla-cms/releases/download/<номер версии>/Joomla_<номер версии>-Stable-Full_Package.tar.gz
-Например: wget [https://github.com/joomla/joomla-cms/releases/download/3.9.3/Joomla_3.9.3-Stable-Full_Package.tar.gz](https://github.com/joomla/joomla-cms/releases/download/3.9.3/Joomla_3.9.3-Stable-Full_Package.tar.gz)
 ```
 
-10. Создайте папку /var/www/html/joomla, выполнив команду:
+Например:
+
+```
+wget https://github.com/joomla/joomla-cms/releases/download/3.9.3/Joomla_3.9.3-Stable-Full_Package.tar.gz
+```
+
+10. Создайте папку `/var/www/html/joomla`, выполнив команду:
 
 ```
 sudo mkdir /var/www/html/joomla
 ```
 
-11. Распакуйте и переместите файлы из текущего каталога в каталог /var/www/html/Joomla, выполнив команду:
+11. Распакуйте и переместите файлы из текущего каталога в каталог `/var/www/html/Joomla`, выполнив команду:
 
 ```
 sudo tar -xvzf Joomla_<номер версии>-Stable-Full_Package.tar.gz -C /var/www/html/joomla
-Например: sudo tar -xvzf Joomla_3.9.3-Stable-Full_Package.tar.gz -C /var/www/html/joomla
 ```
 
-12. Удалите временный каталог tempJL, выполнив команду:
+Например:
+
+```
+sudo tar -xvzf Joomla_3.9.3-Stable-Full_Package.tar.gz -C /var/www/html/joomla
+```
+
+12. Удалите временный каталог `tempJL`, выполнив команду:
 
 ```
 rm -Rf ~/tempJL
 ```
 
-13. Сделайте пользователя wwwrun, от имени которого запускается сервис apache, владельцем корневого каталога, используя команду:
+13. Сделайте пользователя `wwwrun`, от имени которого запускается сервис apache, владельцем корневого каталога, используя команду:
 
 ```
 sudo chmod -R 775 /srv/www/htdocs/
 
 ```
 
-14. Чтобы настроить Joomla!, создайте конфигурационный файл /etc/apache2/conf.d/joomla.conf, выполнив команду:
+14. Чтобы настроить Joomla!, создайте конфигурационный файл `/etc/apache2/conf.d/joomla.conf`, выполнив команду:
 
 ```
 sudo nano /etc/apache2/conf.d/joomla.conf
 
 ```
 
-15. В файл /etc/apache2/conf.d/joomla.conf добавьте следующие строки:
+15. В файл `/etc/apache2/conf.d/joomla.conf` добавьте следующие строки:
 
 ```
 <VirtualHost \*:80>
@@ -209,9 +238,13 @@ http://<внешний IP-адрес веб-сервера>/joomla
 
 **![](./assets/1558688313603-1558688313603.jpeg)**
 
-**Примечани**.
+<warn>
+
+**Примечание**
 
 В настройках базы данных укажите имя пользователя базы данных, пароль и имя базы данных, которые вы выбрали при настройке СУБД MySQL.
+
+</warn>
 
 3.  На последней странице проверьте выбранные параметры Joomla!, при необходимости отправьте их по электронной почте и нажмите кнопку **Установка**:
 
@@ -227,6 +260,6 @@ http://<внешний IP-адрес веб-сервера>/joomla
 
 **![](./assets/1558686971128-1558686971128.jpeg)**
 
-**Обратная связь**
+## Обратная связь
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

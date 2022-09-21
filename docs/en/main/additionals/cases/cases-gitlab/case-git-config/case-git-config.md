@@ -1,23 +1,23 @@
-В данной статье рассмотрим схему работы и последовательность действий для настройки Gitlab, Harbor и авторазвертывание приложения в кластер Kubernetes.
+In this article, we will consider the scheme of work and the sequence of actions for setting up Gitlab, Harbor, and auto-deploying an application to a Kubernetes cluster.
 
-## Конфигурация оборудования
+## Hardware configuration
 
-- Сервер Ubuntu 18.04 LTS x86_64.
-- Установленный и настроенный кластер K8s ([например, в VK Cloud](https://mcs.mail.ru/app/services/containers/list/)).
+- Ubuntu Server 18.04 LTS x86_64.
+- Installed and configured K8s cluster ([for example, in VK Cloud](https://mcs.mail.ru/app/services/containers/list/)).
 
-## Схема работы
+## Scheme of work
 
 **![](./assets/1583483568224-1583483568224.png)**
 
-На сервере Ubuntu настроим Docker, в нем развернем Gitlab и Harbor. Gitlab - полнофункциональный Git-сервер с возможностью хранения репозиториев, управления ими, а также со средствами сборки (pipelines) и доставки (ci/cd). Harbor - регистри для хранения Docker-образов. K8s - кластер Kubernetes, в который настроим тестовое авторазвертывание приложения.
+Set up Docker on the Ubuntu server, deploy Gitlab and Harbor in it. Gitlab is a full-featured Git server with the ability to store and manage repositories, as well as build tools (pipelines) and delivery (ci / cd). Harbor - registers for storing Docker images. K8s is a Kubernetes cluster in which test application auto-deployment is configured.
 
-## Последовательность действий
+## Sequencing
 
-1.  [Установите и настройте Docker](https://mcs.mail.ru/help/gitlab-ci-cd/docker-installation).
-2.  [Установите и настройте Gitlab](https://mcs.mail.ru/help/gitlab-ci-cd/gitlab-installation).
-3.  [Установите и настройте Harbor](https://mcs.mail.ru/help/gitlab-ci-cd/harbor-installation).
-4.  [Настройте авторазвертывание приложения в кластер Kubernetes](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
+1. [Install and configure Docker](https://mcs.mail.ru/help/gitlab-ci-cd/docker-installation).
+2. [Install and configure Gitlab](https://mcs.mail.ru/help/gitlab-ci-cd/gitlab-installation).
+3. [Install and configure Harbor](https://mcs.mail.ru/help/gitlab-ci-cd/harbor-installation).
+4. [Configure auto-deployment of the application to the Kubernetes cluster](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
 
-### Обратная связь
+## Feedback
 
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
+Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

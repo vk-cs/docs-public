@@ -1,142 +1,138 @@
-Данная статья описывает установку стека LAMP на операционную систему семейства Linux - CentOS 7.4
+This article describes the installation of the LAMP stack on the operating system of the Linux family - CentOS 7.4
 
-Стек LAMP включает в себя операционную систему семейства Linux, веб-сервер Apache, систему управления базами данных MySQL и серверный язык сценариев для обработки динамического контента PHP. Все это необходимо для поддержки динамических сайтов и веб-приложений
+The LAMP stack includes the Linux operating system, the Apache web server, the MySQL database management system, and a server-side scripting language for processing PHP dynamic content. All this is necessary to support dynamic sites and web applications.
 
-\*\*Как сэкономить время на установке стека LAMP
+## How to save time installing a LAMP stack
 
-\*\*
+You can get a ready-made LAMP stack on Ubuntu 18.04 as a [configured VK Cloud virtual machine](https://mcs.mail.ru/app/services/marketplace/). When registering, you get a free bonus account, which is enough to test the server for several days.
 
-\*\*
+To learn more about LAMP in the app store, go to [Help Center](https://mcs.mail.ru/help/quick-start/-lamp-stack-apachephp).
 
-Вы можете получить готовый стек LAMP на Ubuntu 18.04 в виде настроенной виртуальной машины VK Cloud. При регистрации вы получаете бесплатный бонусный счет, которого достаточно, чтобы тестировать сервер несколько дней.
+#### Requirements
 
-[[подключить машину LAMP](https://mcs.mail.ru/app/services/marketplace/)]
+- Operating system CentOS 7.4
+- User with access to the sudo command
 
-Чтобы узнать больше о LAMP в магазине приложений, перейдите в [Центр помощи](https://mcs.mail.ru/help/quick-start/-lamp-stack-apachephp).
+## Preparing to install the LAMP stack
 
-\*\*
+Before installing the LAMP stack, do the following:
 
-#### Требования
-
-- Операционная система CentOS 7.4
-- Пользователь с доступом к команде sudo
-
-## Подготовка к установке стека LAMP
-
-Перед установкой стека LAMP выполните следующее:
-
-1.  Откройте окно терминала
-2.  Обновите систему, выполнив команду:
+1. Open a terminal window
+2. Update the system by running the command:
 
 ```
 sudo yum update -y
 ```
 
-Дождитесь завершения обновления системы
+Wait for the system update to complete
 
-3.  Установите консольную утилиту wget, выполнив команду:
+3. Install the wget console utility by running the command:
 
 ```
 sudo yum install wget -y
 ```
 
-4.  Установите текстовый редактор nano, выполнив команду:
+4. Install the nano text editor by running the command:
 
 ```
 sudo yum install nano -y
 ```
 
-## Установка и настройка веб-сервера Apache
+## Installing and configuring the Apache web server
 
-Чтобы установить и выполнить первичную настройку веб-сервера Apache:
+To install and perform initial configuration of the Apache web server:
 
-1.  Откройте окно терминала
+1. Open a terminal window
 
-2.  Установите веб-сервер Apache, выполнив команду:
+2. Install the Apache web server by running the command:
 
 ```
 sudo yum install httpd -y
 ```
 
-3.  Запустите веб-сервер Apache в качестве службы, выполнив команду:
+3. Start the Apache web server as a service by running the command:
 
 ```
 sudo systemctl start httpd.service
 ```
 
-4.  Чтобы при перезагрузке операционной системы запуск веб-сервера Apache в качестве службы выполнялся автоматически, выполните команду:
+4. To start the Apache web server as a service automatically when the operating system is restarted, run the command:
 
 ```
 sudo systemctl enable httpd.service
 ```
 
-5.  Для проверки конфигурации веб-сервера Apache выполните команду:
+5. To check the configuration of the Apache web server, run the command:
 
 ```
 apachectl configtest
 ```
 
-В случае отсутствия ошибок отобразится строка:
+If there are no errors, the following line will be displayed:
 
 ```
 Syntax OK
 ```
 
-6.  Для проверки работы веб-сервера запустите веб-браузер и в адресной строке введите IP-адрес веб-сервера
+6. To check the operation of the web server, launch a web browser and enter the IP address of the web server in the address bar
 
-Если установка и конфигурирование веб-сервера Apache выполнены успешно, отобразится примерно следующая дефолтная страница веб-сервера:
+If the installation and configuration of the Apache web server is successful, the following web server default page will be displayed:
 
 ![](./assets/1553802365047-1553802365046.png)
 
-## Установка СУБД MySQL
+## MySQL database installation
 
-Чтобы установить и настроить СУБД MySQL:
+To install and configure MySQL DBMS:
 
-1.  Откройте окно терминала
+1. Open a terminal window
 
-2.  Скачайте установочный пакет СУБД MySQL, выполнив команду:
+2. Download the MySQL DBMS installation package by running the command:
 
 ```
 wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
 ```
 
-3.  Добавьте пакет СУБД MySQL в репозиторий ОС CentOS, выполнив команду:
+3. Add the MySQL DBMS package to the CentOS OS repository by running the command:
 
 ```
 sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm
 ```
 
-4.  Установите сервер СУБД MySQL, выполнив команду:
+4. Install the MySQL DBMS server by running the command:
 
 ```
-sudo yum install mysql-server -y
+sudo yum install mysql server -y
 ```
 
-5.  Запустите MySQL в качестве службы, выполнив команду:
+5. Start MySQL as a service by running the command:
 
 ```
 sudo systemctl start mysqld.service
 ```
 
-6.  Чтобы при перезагрузке операционной системы запуск MySQL в качестве службы выполнялся автоматически, выполните команду:
+6. To automatically start MySQL as a service when the operating system is restarted, run the command:
 
 ```
 sudo systemctl enable mysqld.service
 ```
 
-7.  Для внесения изменений в конфигурацию сервера СУБД MySQL используйте команду:
+7. To make changes to the MySQL DBMS server configuration, use the command:
 
 ```
 sudo mysql_secure_installation
 ```
 
-Данная команда запускает сценарий повышения безопасности сервера СУБД MySQL. Для настройки безопасности:
+This command runs the script to improve the security of the MySQL DBMS server. To set up security:
 
-- Укажите пароль для учетной записи root
+- Specify a password for the root account
 
-**Внимание**
+<warn>
+
+**Attention**
 
 Рекомендуется указывать надежный пароль, который содержит не менее 8 символов, включающих по крайней мере одну заглавную букву, одну строчную букву, одну цифру и один специальный символ
+
+</warn>
 
 Пользователь root в данном случае относится исключительно к СУБД MySQL и не является учетной записью ОС CentOS
 
@@ -204,6 +200,8 @@ sudo nano /var/www/html/info.php
 
 ![](./assets/1553803585511-1553803585511.png)
 
+<warn>
+
 **Внимание**
 
 В целях безопасности после проверки системы рекомендуется удалить файл info.php, выполнив команду:
@@ -212,6 +210,8 @@ sudo nano /var/www/html/info.php
 sudo rm /var/www/html/info.php
 ```
 
-**Обратная связь**
+</warn>
+
+## **Обратная связь**
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us)!
