@@ -21,7 +21,7 @@ Restarting the k8s master node helps to solve the problem for a short time.
 
 #### Permanent
 
-You need to contact [VK Cloud Technical Support](http://mchs.mail.ru/help/contact-us) to update the certificates.
+You need to contact [VK Cloud Technical Support](http://mcs.mail.ru/help/contact-us) to update the certificates.
 
 ### Important
 
