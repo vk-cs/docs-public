@@ -1,293 +1,336 @@
-OpenCart - это платформа для создания интернет-магазина. OpenCart построена по принципу MVC и может быть установлена на любом веб-сервере с поддержкой PHP и MySQL.
+OpenCart is a platform for creating an online store. OpenCart is built on the MVC principle and can be installed on any web server with PHP and MySQL support.
 
-## Требования
+## Requirements
 
-- Операционная система Ubuntu версии 18.04.
-- Пользователь с доступом к команде sudo.
-- Установленный стек LAMP.
+- Operating system Ubuntu version 18.04.
+- A user with access to the sudo command.
+- Installed LAMP stack.
 
-Если у вас еще не установлен стек LAMP:
+If you don't already have the LAMP stack installed:
 
-- Вы можете получить готовый стек LAMP в облаке [в виде настроенной виртуальной машины](https://mcs.mail.ru/app/services/marketplace/) на Ubuntu 18.04. При регистрации вы получаете бесплатный бонусный счет, которого хватает, чтобы тестировать сервер несколько дней.
-- Вы можете установить стек LAMP самостоятельно. О том, как установить стек LAMP на Ubuntu 18.04, [читайте тут](https://mcs.mail.ru/help/lamp-setup/lamp-ubuntu-18).
+- You can get a ready-made LAMP stack in the cloud [as a configured virtual machine](https://mcs.mail.ru/app/services/marketplace/) on Ubuntu 18.04. When registering, you get a free bonus account, which is enough to test the server for several days.
+- You can install the LAMP stack yourself. For information on how to install the LAMP stack on Ubuntu 18.04, [read here](https://mcs.mail.ru/help/lamp-setup/lamp-ubuntu-18).
 
-## Подготовка к установке OpenCart
+## Preparing to install OpenCart
 
-Перед установкой OpenCart:
+Before installing OpenCart:
 
-1.  Перейдите на сайт [https://github.com/opencart/opencart/releases/](https://github.com/opencart/opencart/releases/) и запомните номер версии OpenCart:
+1. Go to [website](https://github.com/opencart/opencart/releases/) and note the OpenCart version number:
 
 ![](./assets/1554925430133-1554925430133.png)
 
-2.  Откройте окно терминала.
-3.  Установите архиватор ZIP, выполнив команду:
+2. Open a terminal window.
+3. Install the ZIP archiver by running the command:
 
 ```
 sudo apt install unzip -y
 ```
 
-3.  Установите дополнительные пакеты PHP, выполнив команду:
+3. Install additional PHP packages by running the command:
 
 ```
-sudo apt-get install php-common php-mbstring php-xmlrpc  -y
+sudo apt-get install php-common php-mbstring php-xmlrpc -y
 ```
 
-4.  Перейдите в домашний каталог, выполнив команду:
+4. Change to your home directory by running the command:
 
 ```
 cd ~
 ```
 
-5.  Создайте временный каталог tempOC, выполнив команду:
+5. Create a temporary directory tempOC by running the command:
 
 ```
 mkdir tempOC
 ```
 
-6.  Перейдите в каталог tempOC, выполнив команду:
+6. Change to the tempOC directory by running the command:
 
 ```
 cd ~/tempOC
 ```
 
-7.  Скачайте архив OpenCart, выполнив команду:
+7. Download the OpenCart archive by running the command:
 
 ```
-[https://github.com/opencart/opencart/releases/download/<версия>/opencart-<версия>.zip](https://github.com/opencart/opencart/releases/download/<Ð²ÐµÑÑÐ¸Ñ>/opencart-<Ð²ÐµÑÑÐ¸Ñ>.zip)
-Например: wget [https://github.com/opencart/opencart/releases/download/3.0.3.1/opencart-3.0.3.1.zip](https://github.com/opencart/opencart/releases/download/3.0.3.1/opencart-3.0.3.1.zip)
+https://github.com/opencart/opencart/releases/download/<version>/opencart-<version>.zip
 ```
 
-8.  Распакуйте архив OpenCart, выполнив команду:
+For example:
 
 ```
-sudo unzip opencart-<версия>.zip
-Например: sudo unzip opencart-3.0.3.1.zip
+wget https://github.com/opencart/opencart/releases/download/3.0.3.1/opencart-3.0.3.1.zip
 ```
 
-9.  Переместите файлы из текущего каталога в каталог /var/www/html/opencart, выполнив команду:
+8. Unpack the OpenCart archive by running the command:
+
+```
+sudo unzip opencart-<version>.zip
+```
+
+For example:
+
+```
+sudo unzip opencart-3.0.3.1.zip
+```
+
+9. Move the files from the current directory to the /var/www/html/opencart directory by running the command:
 
 ```
 sudo cp -r upload /var/www/html/opencart
 ```
 
-10. Удалите временный каталог tempOC, выполнив команду:
+10. Remove the tempOC temporary directory by running the command:
 
 ```
 sudo rm -Rf ~/tempOC
 ```
 
-11. Переименуйте файл opencart/config-dist.php, выполнив команду:
+11. Rename the opencart/config-dist.php file by running the command:
 
 ```
 sudo mv /var/www/html/opencart/config-dist.php /var/www/html/opencart/config.php
 ```
 
-12. Переименуйте файл opencart/admin/config-dist.php, выполнив команду:
+12. Rename the opencart/admin/config-dist.php file by running the command:
 
 ```
 sudo mv /var/www/html/opencart/admin/config-dist.php /var/www/html/opencart/admin/config.php
 ```
 
-13. Замените владельца каталогов и файлов в корневом каталоге веб-сервера, используя команду:
+13. Change the owner of directories and files in the root directory of the web server using the command:
 
 ```
-sudo chown -R имя_пользователя:www-data /var/www/html/opencart
-где имя_пользователя - это имя пользователя sudo, www-data - имя группы
-Например: sudo chown -R www-data:www-data /var/www/html/opencart
+sudo chown -R username:www-data /var/www/html/opencart
 ```
 
-**Внимание**
-
-Во избежание ошибок веб-сервера Apache при запуске скриптов используйте имя пользователя www-data и имя группы www-data по умолчанию.
-
-14. Если необходимо предоставить доступ к файлам корневого каталога веб-сервера другому пользователю, включите этого пользователя в группу www-data, используя команду:
+where `username` is the sudo username, `www-data` is the group name
+For example:
 
 ```
-sudo usermod -a -G www-data имя_пользователя
-Например: sudo usermod -a -G www-data ocuser
+sudo chown -R www-data:www-data /var/www/html/opencart
 ```
 
-15. Настройте права доступа к файлам и папкам корневого каталога, используя команду:
+<warn>
+
+**Attention**
+
+To avoid Apache web server errors, use the default username www-data and the default group name www-data when running scripts.
+
+</warn>
+
+14. If you need to grant access to the files of the web server root directory to another user, include this user in the www-data group using the command:
+
+```
+sudo usermod -a -G www-data username
+```
+
+For example:
+
+```
+sudo usermod -a -G www-data ocuser
+```
+
+15. Set the permissions for files and folders in the root directory using the command:
 
 ```
 sudo chmod -R 775 /var/www/html/opencart
 ```
 
-16. Подключите модуль Apache rewrite, выполнив команду:
+16. Enable the Apache rewrite module by running the command:
 
 ```
 sudo a2enmod rewrite
 ```
 
-17. Перезагрузите веб-сервер Apache, выполнив команду:
+17. Restart the Apache web server by running the command:
 
 ```
 sudo systemctl reload apache2
 ```
 
-## Настройка СУБД MySQL
+## MySQL database setup
 
-Чтобы начать работу с OpenCart, необходимо создать и настроить выделенную базу данных MySQL. Для этого:
+To get started with OpenCart, you need to create and configure a dedicated MySQL database. For this:
 
-1.  Откройте окно терминала.
-2.  Для перехода в оболочку MySQL выполните команду:
-
-```
-sudo mysql -u root -p 
-```
-
-Используйте аутентификацию учетной записи root, относящуюся исключительно к СУБД MySQL.
-
-3.  Создайте новую базу данных для OpenCart, используя команду:
+1. Open a terminal window.
+2. To switch to the MySQL shell, run the command:
 
 ```
-CREATE DATABASE имя_базы;
-Например: CREATE DATABASE opencartdb;
+sudo mysql -u root -p
 ```
 
-**Внимание**
+Use the root account authentication, which is specific to the MySQL database.
 
-После всех команд СУБД MySQL должна ставиться точка с запятой.
-
-4.  Создайте пользователя с правами полного доступа к созданной базе данных и назначьте ему пароль, используя команду:
+3. Create a new database for OpenCart using the command:
 
 ```
-CREATE USER имя_пользователя@localhost IDENTIFIED BY 'пароль';
-Например: CREATE USER ocuser@localhost IDENTIFIED BY 'mypassword';
+CREATE DATABASE database_name;
 ```
 
-5.  Предоставьте пользователю привилегии, необходимые для создания и изменения таблиц базы данных, выполнив команду:
+For example:
 
 ```
-GRANT ALL PRIVILEGES ON  имя_базы.\* TO имя_пользователя@localhost;
-Например: GRANT ALL PRIVILEGES ON opencartdb.\* TO ocuser@localhost;
+CREATE DATABASE opencartdb;
 ```
 
-6.  Актуализируйте предоставление привилегий к таблицам базы данных, выполнив команду:
+<warn>
+
+**Attention**
+
+All MySQL commands must be followed by a semicolon.
+
+</warn>
+
+4. Create a user with full access rights to the created database and assign a password to it using the command:
+
+```
+CREATE USER username@localhost IDENTIFIED BY 'password';
+```
+
+For example:
+
+```
+CREATE USER ocuser@localhost IDENTIFIED BY 'mypassword';
+```
+
+5. Grant the user the privileges required to create and modify database tables by running the command:
+
+```
+GRANT ALL PRIVILEGES ON dbasename.\* TO username@localhost;
+```
+
+For example:
+
+```
+GRANT ALL PRIVILEGES ON opencartdb.\* TO ocuser@localhost;
+```
+
+6. Update the granting of privileges to database tables by running the command:
 
 ```
 FLUSH PRIVILEGES;
 ```
 
-7.  Выйдите из оболочки MySQL, выполнив команду:
+7. Exit the MySQL shell by running the command:
 
 ```
 exit
 ```
 
-\*\*
+## Install OpenCart
 
-## Установка OpenCart
-
-Для установки OpenCart в адресной строке веб-браузера введите следующее:
-
-\*\*
+To install OpenCart, enter the following in the address bar of your web browser:
 
 ```
-http://<внешний IP-адрес вашего веб-сервера>/OpenCart
+http://<your web server's external IP address>/OpenCart
 ```
 
-\*\*
+As a result, the OpenCart installation wizard will be launched, follow its instructions:
 
-В результате будет запущен мастер установки OpenCart, следуйте его указаниям:
+1. Read the license agreement and click the **Continue** button.
+2. Check the configuration parameters of OpenCart. Make sure all fields with the **Status** element are highlighted in green and click the **Continue** button.
+3. Select a database configuration:
 
-\*\*
+![](./assets/1554927135638-1554927135638.png)
 
-1.  Ознакомьтесь с лицензионным соглашением и нажмите кнопку **Continue**.
-2.  Проверьте конфигурационные параметры OpenCart. Убедитесь, что все поля с элементом **Status** выделены зеленым, и нажмите кнопку **Continue**.
-3.  Выберите конфигурацию базы данных:\*\*
+Use the database username, password, and database name that you specified when setting up MySQL<!--[](https://docs.google.com/document/d/1rnpyTW7ZXIRdr5lmsYLyvWH3PcGEitDNetoq2mSyfTM/edit#heading=h.u2usy4a5aptn) -->. Other options are recommended to be left at their default values.
 
-    ![](./assets/1554927135638-1554927135638.png)
+4. Create an OpenCart administrator account:
 
-    \*\*Используйте имя пользователя базы данных, пароль и имя базы данных, которые вы указали при настройке СУБД MySQL [](https://docs.google.com/document/d/1rnpyTW7ZXIRdr5lmsYLyvWH3PcGEitDNetoq2mSyfTM/edit#heading=h.u2usy4a5aptn). Другим параметрам рекомендуется оставить значения по умолчанию.
+![](./assets/1554927175401-1554927175401.png)
 
-4.  Создайте учетную запись администратора OpenCart:\*\*
+**Press the button** Continue to start the installation.
 
-    ![](./assets/1554927175401-1554927175401.png)
+5. If the installation of OpenCart was successful, the following page will be displayed:
 
-    **Для запуска установки нажмите кнопку**Continue\*\*.
+![](./assets/1554927703953-1554927703953.png)
 
-5.  Если установка OpenCart прошла успешно, отобразится следующая страница:
+To get started, click the **Login to your administration** button.
 
-    \***\*![](./assets/1554927703953-1554927703953.png)\*\***Чтобы начать работу, нажмите кнопку **Login to your administration**.
+6. Authenticate using the username and password you provided when creating your OpenCart administrator account.<!--[](https://docs.google.com/document/d/1rnpyTW7ZXIRdr5lmsYLyvWH3PcGEitDNetoq2mSyfTM/edit#heading=h.2zc4fulm9yjh ):\*\*-->
 
-6.  Выполните аутентификацию, используя имя и пароль, которые вы указали при создании учетной записи администратора OpenCart [](https://docs.google.com/document/d/1rnpyTW7ZXIRdr5lmsYLyvWH3PcGEitDNetoq2mSyfTM/edit#heading=h.2zc4fulm9yjh):\*\*
+![](./assets/1554926936690-1554926936690.png)
 
-    ![](./assets/1554926936690-1554926936690.png)
-
-    \*\*
-
-7.  Если вы выполняете аутентификацию впервые, вам будет предложено переместить каталог Storage из веб-каталога:
+7. If you are authenticating for the first time, you will be prompted to move the Storage directory out of the web directory:
 
 **![](./assets/1554930627121-1554930627121.png)**
 
-**Внимание**
+<warn>
 
-Перемещение каталога Storage позволяет повысить уровень безопасности данных и не влияет на работоспособность OpenCart. В случае отсутствия необходимости можно не выполнять это действие и просто закрыть окно с сообщением о перемещении каталога Storage.
+**Attention**
 
-Для перемещения каталога Storage мы рекомендуем выбрать ручной метод (Manually Move) и выполнить следующее:
+Moving the Storage directory improves data security and does not affect the performance of OpenCart. If there is no need, you can skip this action and simply close the window with a message about moving the Storage directory.
 
-- Откройте окно терминала.
-- Переместите каталог Storage, выполнив команду:
+</warn>
+
+To move the Storage directory, we recommend choosing the Manually Move method and doing the following:
+
+- Open a terminal window.
+- Move the Storage directory by running the command:
 
 ```
-sudo mv /var/www/html/opencart/system/storage/ /var/www/storage/   
+sudo mv /var/www/html/opencart/system/storage/ /var/www/storage/
 ```
 
-- Откройте файл opencart/config.php для редактирования, выполнив команду:
+- Open the opencart/config.php file for editing by running the command:
 
 ```
 sudo nano /var/www/html/opencart/config.php
 ```
 
-- В этом файле найдите строку:
+- In this file, find the line:
 
 ```
 define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
 ```
 
-и замените ее на строку:
+and replace it with the line:
 
 ```
 define('DIR_STORAGE', '/var/www/storage/');
 ```
 
-Затем сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
+Then save your changes using the keyboard shortcut CTRL+O and finish editing using the keyboard shortcut CTRL+X.
 
-- Откройте файл opencart/admin/config.php для редактирования, выполнив команду:
+- Open the opencart/admin/config.php file for editing by running the command:
 
 ```
 sudo nano /var/www/html/opencart/admin/config.php
 ```
 
-- В этом файле найдите строку:
+- In this file, find the line:
 
 ```
 define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
 ```
 
-и замените ее на строку:
+and replace it with the line:
 
 ```
 define('DIR_STORAGE', '/var/www/storage/');
 ```
 
-Затем сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
+Then save your changes using the keyboard shortcut CTRL+O and finish editing using the keyboard shortcut CTRL+X.
 
-8.  Откройте веб-страницу Opencart, закройте информационное сообщение и обновите веб-страницу, нажав клавишу F5.
+8. Open the Opencart web page, close the information message and refresh the web page by pressing the F5 key.
 
-В результате должна отобразиться примерно следующая страница:
+As a result, the following page should be displayed:
 
 ![](./assets/1554928753836-1554928753836.png)
 
-**Примечание**
+<info>
 
-По завершении установки OpenCart удалите директорию с файлами установки. Для этого откройте терминал и выполните команду:
+**Note**
+
+After the installation of OpenCart is completed, delete the directory with the installation files. To do this, open a terminal and run the command:
 
 ```
 sudo rm -rf /var/www/html/opencart/install
 ```
 
-**Обратная связь**
+</info>
 
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
+## **Feedback**
+
+Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

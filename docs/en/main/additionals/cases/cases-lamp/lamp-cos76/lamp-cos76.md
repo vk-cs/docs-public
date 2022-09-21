@@ -1,17 +1,9 @@
-Стек LAMP включает в себя операционную систему семейства Linux, веб-сервер Apache, систему управления базами данных MySQL и серверный язык сценариев для обработки динамического контента PHP. Все это необходимо для поддержки динамических сайтов и веб-приложений.
+The LAMP stack includes the Linux operating system, the Apache web server, the MySQL database management system, and a server-side scripting language for processing PHP dynamic content. All this is necessary to support dynamic sites and web applications.
 
-Установка стека LAMP на операционную систему CentOS 7.6 выполняется аналогично установке стека LAMP на операционную систему CentOS 7.4 ([читайте, как установить стек LAMP на CentOS 7.4](https://mcs.mail.ru/help/lamp-on-linux/lamp-centos-7-4)).
+Installing a LAMP stack on a CentOS 7.6 operating system is similar to installing a LAMP stack on a CentOS 7.4 operating system ([read how to install a LAMP stack on CentOS 7.4](https://mcs.mail.ru/help/lamp-on-linux/lamp -centos-7-4)).
 
-\*\*Как сэкономить время на установке стека LAMP
+## How to save time installing a LAMP stack
 
-\*\*
+You can get a ready-made LAMP stack on Ubuntu 18.04 as a [configured VK Cloud virtual machine](https://mcs.mail.ru/app/services/marketplace/). When registering, you get a free bonus account, which is enough to test the server for several days.
 
-\*\*
-
-Вы можете получить готовый стек LAMP на Ubuntu 18.04 в виде настроенной виртуальной машины VK Cloud. При регистрации вы получаете бесплатный бонусный счет, которого достаточно, чтобы тестировать сервер несколько дней.
-
-[[подключить машину LAMP](https://mcs.mail.ru/app/services/marketplace/)]
-
-Чтобы узнать больше о LAMP в магазине приложений, перейдите в [Центр помощи](https://mcs.mail.ru/help/quick-start/-lamp-stack-apachephp).
-
-\*\*
+To learn more about LAMP in the app store, go to [Help Center](https://mcs.mail.ru/help/quick-start/-lamp-stack-apachephp).

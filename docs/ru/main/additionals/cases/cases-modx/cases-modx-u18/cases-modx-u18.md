@@ -17,7 +17,7 @@ ModX – это система управления контентом с отк
 
 1.  Перейдите на сайт [https://modx.com/download](https://modx.com/download) и запомните номер версии ModX:
 
-    ![](./assets/1554800077324-1554800077324.png)
+![](./assets/1554800077324-1554800077324.png)
 
 2.  Откройте окно терминала.
 3.  Установите архиватор ZIP, выполнив команду:
@@ -53,22 +53,36 @@ cd ~/tempMX
 8.  Скачайте архив ModX, выполнив команду:
 
 ```
-wget [https://modx.s3.amazonaws.com/releases/<версия>/modx-<версия>.zip](https://modx.s3.amazonaws.com/releases/<Ð²ÐµÑÑÐ¸Ñ>/modx-<Ð²ÐµÑÑÐ¸Ñ>-pl.zip)
-Например: wget [https://modx.s3.amazonaws.com/releases/2.7.1/modx-2.7.1-p1.zip](https://modx.s3.amazonaws.com/releases/<Ð²ÐµÑÑÐ¸Ñ>/modx-<Ð²ÐµÑÑÐ¸Ñ>-pl.zip)
+wget https://modx.s3.amazonaws.com/releases/<версия>/modx-<версия>.zip
+```
+
+Например:
+
+```
+wget https://modx.s3.amazonaws.com/releases/2.7.1/modx-2.7.1-p1.zip
 ```
 
 9.  Распакуйте архив ModX, выполнив команду:
 
 ```
 sudo unzip modx-<версия>.zip
-Например: sudo unzip modx-2.7.1-pl.zip
+```
+
+Например:
+
+```
+sudo unzip modx-2.7.1-pl.zip
 ```
 
 10. Переместите файлы из текущего каталога в каталог /var/www/html/modx, выполнив команду:
 
 ```
 sudo cp -r modx-<версия> /var/www/html/modx
-Например: sudo cp -r modx-2.7.1-pl /var/www/html/modx
+```
+Например:
+
+```
+sudo cp -r modx-2.7.1-pl /var/www/html/modx
 ```
 
 11. Удалите временный каталог tempMX, выполнив команду:
@@ -81,19 +95,33 @@ sudo rm -Rf ~/tempMX
 
 ```
 sudo chown -R имя_пользователя:www-data /var/www/html/modx
-где имя_пользователя - это имя пользователя sudo, www-data - имя группы
-Например: sudo chown -R www-data:www-data /var/www/html/modx
 ```
+
+где `имя_пользователя` - это имя пользователя sudo, `www-data` - имя группы
+Например:
+
+```
+sudo chown -R www-data:www-data /var/www/html/modx
+```
+
+<warn>
 
 **Внимание**
 
 Во избежание ошибок веб-сервера Apache при запуске скриптов используйте имя пользователя www-data и имя группы www-data по умолчанию.
 
+</warn>
+
 13. Если необходимо предоставить доступ к файлам корневого каталога веб-сервера другому пользователю, включите этого пользователя в группу www-data, используя команду:
 
 ```
 sudo usermod -a -G www-data имя_пользователя
-Например: sudo usermod -a -G www-data mxuser
+```
+
+Например:
+
+```
+sudo usermod -a -G www-data mxuser
 ```
 
 14. Настройте права доступа к файлам и папкам корневого каталога, используя команду:
@@ -167,25 +195,44 @@ sudo mysql -u root -p 
 
 ```
 CREATE DATABASE имя_базы;
-Например: CREATE DATABASE modxdb;
 ```
+
+Например:
+
+```
+CREATE DATABASE modxdb;
+```
+
+<warn>
 
 **Внимание**
 
 После всех команд СУБД MySQL должна ставиться точка с запятой.
 
+</warn>
+
 4.  Создайте пользователя с правами полного доступа к созданной базе данных и назначьте ему пароль, используя команду:
 
 ```
 CREATE USER имя_пользователя@localhost IDENTIFIED BY 'пароль';
-Например: CREATE USER mxuser@localhost IDENTIFIED BY 'mypassword';
+```
+
+Например:
+
+```
+CREATE USER mxuser@localhost IDENTIFIED BY 'mypassword';
 ```
 
 5.  Предоставьте пользователю привилегии, необходимые для создания и изменения таблиц базы данных, выполнив команду:
 
 ```
 GRANT ALL PRIVILEGES ON  имя_базы.\* TO имя_пользователя@localhost;
-Например: GRANT ALL PRIVILEGES ON modxdb.\* TO mxuser@localhost;
+```
+
+Например:
+
+```
+GRANT ALL PRIVILEGES ON modxdb.\* TO mxuser@localhost;
 ```
 
 6.  Актуализируйте предоставление привилегий к таблицам базы данных, выполнив команду:
@@ -252,7 +299,7 @@ Database check: Success!
 
 8.  Убедитесь, что все параметры проверки имеют статус **OK**, и нажмите кнопку **Install**:
 
-    ![](./assets/1554806612165-1554806612165.png)
+![](./assets/1554806612165-1554806612165.png)
 
 9.  Если установка ModX прошла успешно, откроется страница с отчетом об установке. Просмотрите сообщения или предупреждения, возникшие в процессе установки. Для завершения установки нажмите кнопку **Next**:
 
@@ -270,6 +317,6 @@ Database check: Success!
 
 ![](./assets/1554808550477-1554808550477.png)
 
-**Обратная связь**
+## **Обратная связь**
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

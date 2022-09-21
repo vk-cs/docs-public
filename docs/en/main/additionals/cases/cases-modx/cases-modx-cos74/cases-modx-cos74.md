@@ -1,309 +1,330 @@
-ModX - это система управления контентом с открытым кодом. ModX предназначена для создания, редактирования и управления содержимым сайтов.
+ModX is an open source content management system. ModX is designed to create, edit and manage website content.
 
-## Требования
+## Requirements
 
-- Операционная система CentOS версии 7.4.
-- Пользователь с доступом к команде sudo.
-- Установленный стек LAMP.
+- Operating system CentOS version 7.4.
+- A user with access to the sudo command.
+- Installed LAMP stack.
 
-Если у вас еще не установлен стек LAMP:
+If you don't already have the LAMP stack installed:
 
-- Вы можете получить готовый стек LAMP в облаке [в виде настроенной виртуальной машины](https://mcs.mail.ru/app/services/marketplace/) на Ubuntu 18.04 и [установить ModX на нем](https://mcs.mail.ru/help/modx-linux/modx-ubuntu-18). При регистрации вы получаете бесплатный бонусный счет, которого хватает, чтобы тестировать сервер несколько дней.
-- Вы можете установить стек LAMP самостоятельно. О том, как установить стек LAMP на CentOS 7.4, [читайте тут](https://mcs.mail.ru/help/lamp-on-linux/lamp-centos-7-4).
+- You can get a ready-made LAMP stack in the cloud [as a configured virtual machine](https://mcs.mail.ru/app/services/marketplace/) on Ubuntu 18.04 and [install ModX on it](https://mcs .mail.ru/help/modx-linux/modx-ubuntu-18). When registering, you get a free bonus account, which is enough to test the server for several days.
+- You can install the LAMP stack yourself. To learn how to install the LAMP stack on CentOS 7.4, [read here](https://mcs.mail.ru/help/lamp-on-linux/lamp-centos-7-4).
 
-## Настройка СУБД MySQL
+## MySQL database setup
 
-Чтобы начать работу с ModX, необходимо создать и настроить выделенную базу данных MySQL. Для этого:
+To get started with ModX, you need to create and configure a dedicated MySQL database. For this:
 
-1.  Откройте окно терминала.
-2.  Для перехода в оболочку MySQL выполните команду:
-
-```
-sudo mysql -u root -p 
-```
-
-Используйте аутентификацию учетной записи root, относящуюся исключительно к СУБД MySQL.
-
-3.  Создайте новую базу данных для ModX, используя команду:
+1. Open a terminal window.
+2. To switch to the MySQL shell, run the command:
 
 ```
-CREATE DATABASE имя_базы;
-Например: CREATE DATABASE modxdb;
+sudo mysql -u root -p
 ```
 
-**Внимание**
+Use the root account authentication, which is specific to the MySQL database.
 
-После каждой команды СУБД MySQL должна ставиться точка с запятой.
-
-4.  Создайте пользователя с правами полного доступа к созданной базе данных и назначьте ему пароль, используя команду:
+3. Create a new database for ModX using the command:
 
 ```
-CREATE USER имя_пользователя@localhost IDENTIFIED BY 'пароль';
-Например: CREATE USER mxuser@localhost IDENTIFIED BY 'mypassword';
+CREATE DATABASE database_name;
+For example: CREATE DATABASE modxdb;
 ```
 
-5.  Предоставьте пользователю привилегии, необходимые для создания и изменения таблиц базы данных, выполнив команду:
+<warn>
+
+**Attention**
+
+Each MySQL DBMS command must be followed by a semicolon.
+
+</warn>
+
+4. Create a user with full access rights to the created database and assign a password to it using the command:
 
 ```
-GRANT ALL PRIVILEGES ON  имя_базы.\* TO имя_пользователя@localhost;
-Например: GRANT ALL PRIVILEGES ON modxdb.\* TO mxuser@localhost;
+CREATE USER username@localhost IDENTIFIED BY 'password';
 ```
 
-6.  Актуализируйте предоставление привилегий к таблицам базы данных, выполнив команду:
+For example:
+
+```
+CREATE USER mxuser@localhost IDENTIFIED BY 'mypassword';
+```
+
+5. Grant the user the privileges required to create and modify database tables by running the command:
+
+```
+GRANT ALL PRIVILEGES ON dbasename.\* TO username@localhost;
+```
+
+For example:
+
+```
+GRANT ALL PRIVILEGES ON modxdb.\* TO mxuser@localhost;
+```
+
+6. Update the granting of privileges to database tables by running the command:
 
 ```
 FLUSH PRIVILEGES;
 ```
 
-7.  Выйдите из оболочки MySQL, выполнив команду:
+7. Exit the MySQL shell by running the command:
 
 ```
 exit
 ```
 
-## Подготовка к установке ModX
+## Preparing to install ModX
 
-Перед установкой ModX:
+Before installing ModX:
 
-1.  Перейдите на сайт [https://modx.com/download](https://modx.com/download) и запомните номер версии ModX:
+1. Go to [https://modx.com/download](https://modx.com/download) and note the ModX version number:
 
-    ![](./assets/1554800077324-1554800077324.png)
+![](./assets/1554800077324-1554800077324.png)
 
-2.  Откройте окно терминала.
-3.  Установите архиватор ZIP, выполнив команду:
+2. Open a terminal window.
+3. Install the ZIP archiver by running the command:
 
 ```
 sudo yum install unzip -y
 
 ```
 
-4.  Установите дополнительные пакеты PHP, выполнив команду:
+4. Install additional PHP packages by running the command:
 
 ```
 sudo yum install php-common php-mbstring php-xmlrpc php-ldap php-sqlite3 php-pdo -y
 
 ```
 
-5.  Перейдите в домашний каталог, выполнив команду:
+5. Change to your home directory by running the command:
 
 ```
 cd ~
 ```
 
-6.  Создайте временный каталог tempMX, выполнив команду:
+6. Create a temporary directory tempMX by running the command:
 
 ```
-mkdir tempMX 
+mkdir tempMX
 ```
 
-7.  Перейдите в каталог tempMX, выполнив команду:
+7. Change to the tempMX directory by running the command:
 
 ```
 cd ~/tempMX
 ```
 
-8.  Скачайте архив ModX, выполнив команду:
+8. Download the ModX archive by running the command:
 
 ```
-wget https://modx.s3.amazonaws.com/releases/<версия>/modx-<версия>.zip
-Например: wget https://modx.s3.amazonaws.com/releases/2.7.1/modx-2.7.1-p1.zip
+wget https://modx.s3.amazonaws.com/releases/<version>/modx-<version>.zip
+For example: wget https://modx.s3.amazonaws.com/releases/2.7.1/modx-2.7.1-p1.zip
 ```
 
-9.  Распакуйте архив ModX, выполнив команду:
+9. Unpack the ModX archive by running the command:
 
 ```
-sudo unzip modx-<версия>.zip
-Например: sudo unzip modx-2.7.1-pl.zip
+sudo unzip modx-<version>.zip
+For example: sudo unzip modx-2.7.1-pl.zip
 ```
 
-10. Переместите файлы из текущего каталога в каталог /var/www/html/modx, выполнив команду:
+10. Move the files from the current directory to the /var/www/html/modx directory by running the command:
 
 ```
-sudo cp -r modx-<версия> /var/www/html/modx
-Например: sudo cp -r modx-2.7.1-pl /var/www/html/modx
+sudo cp -r modx-<version> /var/www/html/modx
+For example: sudo cp -r modx-2.7.1-pl /var/www/html/modx
 ```
 
-11. Удалите временный каталог tempMX, выполнив команду:
+11. Remove the tempMX temporary directory by running the command:
 
 ```
 sudo rm -Rf ~/tempMX
 ```
 
-12. Замените владельца каталогов и файлов в корневом каталоге веб-сервера, используя команду:
+12. Change the owner of directories and files in the root directory of the web server using the command:
 
 ```
-sudo chown -R имя_пользователя:apache /var/www/html/modx
-где имя_пользователя - это имя пользователя sudo, www-data - имя группы
-Например: sudo chown -R apache:apache /var/www/html/modx
+sudo chown -R username:apache /var/www/html/modx
+where username is the sudo username, www-data is the group name
+For example: sudo chown -R apache:apache /var/www/html/modx
 ```
 
-**Внимание**
+<warn>
 
-Во избежание ошибок веб-сервера Apache при запуске скриптов используйте имя пользователя apache и имя группы apache по умолчанию.
+**Attention**
 
-13. Если необходимо предоставить доступ к файлам корневого каталога веб-сервера другому пользователю, включите этого пользователя в группу www-data, используя команду:
+To avoid Apache web server errors when running scripts, use the default apache username and the default apache group name.
+
+</warn>
+
+13. If you need to grant access to the files of the web server root directory to another user, include this user in the www-data group using the command:
 
 ```
-sudo usermod -a -G www-data имя_пользователя
-Например: sudo usermod -a -G apache mxuser
+sudo usermod -a -G www-data username
 ```
 
-14. Настройте права доступа к файлам и папкам корневого каталога, используя команду:
+For example:
+
+```
+sudo usermod -a -G apache mxuser
+```
+
+14. Set the permissions for files and folders in the root directory using the command:
 
 ```
 sudo chmod -R 775 /var/www/html/modx
 ```
 
-15. Разрешите сервису httpd запись в веб-директорию modx, выполнив команду:
+15. Allow the httpd service to write to the modx web directory by running the command:
 
 ```
 sudo chcon -R -t httpd_sys_rw_content_t /var/www/html/modx
 
 ```
 
-16. Откройте конфигурационный файл httpd.conf для редактирования, выполнив команду:
+16. Open the configuration file httpd.conf for editing by running the command:
 
 ```
 sudo nano /etc/httpd/conf/httpd.conf
 
 ```
 
-17. В файле httpd.conf:
+17. In the httpd.conf file:
 
-- Найдите строку:
+- Find the line:
 
 ```
 DocumentRoot "/var/www/html"
 ```
 
-и замените ее на строку:
+and replace it with the line:
 
 ```
 DocumentRoot "/var/www/html/modx"
 
 ```
 
-- Найдите раздел:
+- Find the section:
 
 **![](./assets/1558296815448-1558296815448.jpeg)**
 
-В этом разделе замените строку **AllowOverride None** на строку **AllowOverride All**.
+In this section, replace the line **AllowOverride None** with the line **AllowOverride All**.
 
-Сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
+Save your changes using the keyboard shortcut CTRL+O and finish editing using the keyboard shortcut CTRL+X.
 
-18. Перезагрузите веб-сервер Apache, выполнив команду:
+18. Restart the Apache web server by running the command:
 
 ```
 sudo systemctl restart httpd.service
 ```
 
-## Установка ModX
+## Install ModX
 
-Для установки ModX в адресной строке веб-браузера введите:
+To install ModX in the address bar of a web browser, type:
 
 ```
-http://<внешний IP-адрес вашего веб-сервера>/setup
+http://<your web server's external IP address>/setup
 ```
 
-В результате будет запущен мастер установки ModX, следуйте его указаниям:
+As a result, the ModX installation wizard will be launched, follow its instructions:
 
-1.  Выберите язык установки:
+1. Select the installation language:
 
 ![](./assets/1554806010157-1554806010157.png)
 
-Рекомендуется выбрать английский язык - **en**
+It is recommended to select English - **en**
 
-2.  Нажмите кнопку **Next**:
+2. Click the **Next** button:
 
 ![](./assets/1554806296501-1554806296501.png)
 
-3.  Выберите параметры установки и нажмите кнопку **Next**:
+3. Select installation options and click **Next**:
 
 ![](./assets/1554805874285-1554805874285.png)
 
-4.  Выполните конфигурацию базы данных:
+4. Configure the database:
 
 ![](./assets/1554806322914-1554806322914.png)
 
-Используйте имя пользователя базы данных, пароль и имя базы данных, которые вы указали при настройке БД MySQL . Другим параметрам рекомендуется оставить значения по умолчанию.
+Use the database username, password, and database name that you specified when setting up the MySQL DB. Other options are recommended to be left at their default values.
 
-5.  Проверьте параметры подключения к БД MySQL. При успешной проверке отобразится примерно следующая строка:
+5. Check your MySQL database connection settings. Upon successful verification, the following line will be displayed:
 
 ```
 Connecting to database server: Success!
 ```
 
-6.  Выберите кодировку подключения:
+6. Select connection encoding:
 
 ![](./assets/1554806432781-1554806432781.png)
 
-Рекомендуется использовать параметры, приведенные в примере. При успешном создании или выборке из БД отобразится строка:
+It is recommended to use the parameters given in the example. Upon successful creation or selection from the database, the following line will be displayed:
 
 ```
 Database check: Success!
 ```
 
-7.  Укажите данные для создания учетной записи администратора ModX и нажмите кнопку **Next**:
+7. Specify the data for creating a ModX administrator account and click the **Next** button:
 
 ![](./assets/1554806539101-1554806539101.png)
 
-8.  Убедитесь, что все параметры проверки имеют статус **OK**, и нажмите кнопку **Install**:
+8. Make sure that all verification options have the status **OK** and click the **Install** button:
 
-    ![](./assets/1554806612165-1554806612165.png)
+![](./assets/1554806612165-1554806612165.png)
 
-9.  Если установка ModX прошла успешно, откроется страница с отчетом об установке. Просмотрите сообщения или предупреждения, возникшие в процессе установки. Для завершения установки нажмите кнопку **Next**:
+9. If the ModX installation was successful, the installation report page will open. Review any messages or warnings that occurred during the installation process. Click the **Next** button to complete the installation:
 
 ![](./assets/1554806657027-1554806657027.png)
 
-10. Чтобы выполнить аутентификацию и начать работу, нажмите кнопку **Login**:
+10. To authenticate and get started, click the **Login** button:
 
 **![](./assets/1554808358007-1554808358007.png)**
 
-11. Введите имя пользователя и пароль, которые вы указали при создании учетной записи администратора ModX:
+11. Enter the username and password you provided when creating the ModX administrator account:
 
 **![](./assets/1558299327767-1558299327767.jpeg)**
 
-В результате откроется главная страница ModX:
+This will open the main ModX page:
 
 ![](./assets/1554808550477-1554808550477.png)
 
-12. Для повышения безопасности ModX выполните следующее:
+12. To increase the security of ModX, do the following:
 
-- Откройте окно терминала.
-- Перейдите в корневой каталог ModX, выполнив команду:
+- Open a terminal window.
+- Change to the ModX root directory by running the command:
 
 ```
 cd /var/www/html/modx/core
 
 ```
 
-- Переименуйте файл ht.access, выполнив команду:
+- Rename the ht.access file by running the command:
 
 ```
 sudo mv ht.access .htaccess
 
 ```
 
-- Откройте файл .htaccess для редактирования, выполнив команду:
+- Open the .htaccess file for editing by running the command:
 
 ```
 sudo nano .htaccess
 ```
 
-- В файле .htaccess найдите параметр **IndexIgnore** и замените его на строки:\*\*
+- In the .htaccess file, find the **IndexIgnore** parameter and replace it with the lines:
 
-  ![](./assets/1558297158082-1558297158082.jpeg)
+![](./assets/1558297158082-1558297158082.jpeg)
 
-  \*\*
+Save your changes using the keyboard shortcut CTRL+O and finish editing using the keyboard shortcut CTRL+X.
 
-Сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
-
-13. Перезагрузите веб-сервер Apache, выполнив команду:
+13. Restart the Apache web server by running the command:
 
 ```
 sudo systemctl restart httpd.service
 ```
 
-**Обратная связь**
+## **Feedback**
 
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
+Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

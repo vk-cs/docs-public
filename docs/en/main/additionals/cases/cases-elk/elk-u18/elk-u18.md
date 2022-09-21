@@ -1,546 +1,560 @@
-Данная статья описывает установку стека ELK на операционную систему семейства Linux - Ubuntu 18.04.
+This article describes the installation of the ELK stack on a Linux operating system - Ubuntu 18.04.
 
-Стек ELK — это мощный набор инструментов для эффективного решения широкого спектра задач сбора, хранения и анализа данных:
+The ELK stack is a powerful set of tools for efficiently solving a wide range of data collection, storage and analysis tasks:
 
-- Elasticsearch – решение для полнотекстового поиска, построенное поверх Apache Lucene и имеющее дополнительные удобства.
-- Logstash – утилита для сборки, фильтрации и последующего перенаправления в конечное хранилище данных. Этот механизм обеспечивает конвейер в реальном времени. Он может принимать данные из нескольких источников и преобразовывать их в документы JSON.
-- Kibana — приложение, позволяющее брать и искать данные из Elasticsearch и строить наглядные графики.
+- Elasticsearch is a full text search solution built on top of Apache Lucene with added convenience.
+- Logstash - a utility for collecting, filtering and then redirecting to the final data storage. This mechanism provides a real-time pipeline. It can take data from multiple sources and convert it into JSON documents.
+- Kibana is an application that allows you to take and search data from Elasticsearch and build visual graphs.
 
-\*\*Как сэкономить время на установке стека ELK
+## How to save time installing the ELK stack
 
-\*\*
+You can [attach ready-made ELK stack](https://mcs.mail.ru/app/services/marketplace/) on Ubuntu 18.04 as a configured VK Cloud virtual machine. When registering, you get a free bonus account, which is enough to test the server for several days.
 
-\*\*
+To learn more about ELK in the app store, go to [Help Center](https://mcs.mail.ru/help/quick-start/-elk-stack-elasticsearch-logstash-kibana).
 
-Вы можете получить готовый стек ELK на Ubuntu 18.04 в виде настроенной виртуальной машины VK Cloud. При регистрации вы получаете бесплатный бонусный счет, которого достаточно, чтобы тестировать сервер несколько дней.
+#### Requirements
 
-[[подключить машину ELK](https://mcs.mail.ru/app/services/marketplace/)]
+- Operating system Ubuntu version 18.04.
+- Installed Nginx web server.
+- Installed Java virtual machine.
+- User with access to the **sudo** command.
 
-\*\*
+## Installing the Nginx web server
 
-Чтобы узнать больше о ELK в магазине приложений, перейдите в [Центр помощи](https://mcs.mail.ru/help/quick-start/-elk-stack-elasticsearch-logstash-kibana) .
+Compared to the Apache web server, the Nginx web server uses fewer resources to host large, high-traffic sites. Thanks to the Nginx architecture, you can easily scale up to hundreds of thousands of concurrent connections.
 
-#### Требования
+To install and perform the initial configuration of the Nginx web server:
 
-- Операционная система Ubuntu версии 18.04.
-- Установленный веб-сервер Nginx.
-- Установленная виртуальная машина Java.
-- Пользователь с доступом к команде **sudo**.
+1. Open a terminal window.
+1. Update the package indexes by running the command:
 
-## Установка веб-сервера Nginx
+   ```
+   sudo apt update
+   ```
 
-По сравнению с веб-сервером Apache веб-сервер Nginx использует меньше ресурсов для размещения объемных сайтов с высоким трафиком. Благодаря архитектуре Nginx можно легко масштабироваться до сотен тысяч параллельных соединений.
+1. Install the Nginx web server by running the command:
 
-Чтобы установить и выполнить первичную настройку веб-сервера Nginx:
+   ```
+   sudo apt install nginx -y
+   ```
 
-1.  Откройте окно терминала.
-2.  Обновите индексы пакетов, выполнив команду:
+1. To test the operation of the web server, launch a web browser and enter the IP address of the web server in the address bar.
 
-```
-sudo apt update
-```
+   If the installation is successful, the following web server page will open:
 
-3.  Установите веб-сервер Nginx, выполнив команду:
+   **![](./assets/1559939150156-1559939150156.jpeg)**
 
-```
-sudo apt install nginx -y
-```
+## Installing the Java Virtual Machine
 
-4.  Для проверки работы веб-сервера запустите веб-браузер и в адресной строке введите IP-адрес веб-сервера.
+The ELK stack requires a Java virtual machine to run. To install JVM:
 
-Если установка выполнена успешно, откроется следующая страница веб-сервера:
+1. Open a terminal window.
+1. Install the JVM software package by running the command:
 
-**![](./assets/1559939150156-1559939150156.jpeg)**
+   ```
+   sudo apt install default-jre -y
+   ```
 
-## Установка виртуальной машины Java
+   This will install the Java Runtime Environment (JRE) package.
 
-Для работы стека ELK требуется виртуальная машина Java. Чтобы установить JVM:
+1. Install the JDK software package, which includes the Java compiler, standard Java class libraries, examples, documentation, and various utilities. To do this, run the command:
 
-1.  Откройте окно терминала.
-2.  Установите программный пакет JVM, выполнив команду:
+   ```
+   sudo apt install default-jdk -y
+   ```
 
-```
-sudo apt install default-jre -y
-```
+## Installing and configuring Elasticsearch
 
-В результате будет установлен пакет Java Runtime Environment (JRE).
+To install and perform the initial configuration of Elasticsearch:
 
-3.  Установите программный пакет JDK, включающий компилятор Java, стандартные библиотеки классов Java, примеры, документацию и различные утилиты. Для этого выполните команду:
+1. To check the current version of Elasticsearch, go to: [https://www.elastic.co/downloads/elasticsearch](https://www.elastic.co/downloads/elasticsearch).
 
-```
-sudo apt install default-jdk -y
-```
+1. Open a terminal window.
 
-## Установка и настройка Elasticsearch
+1. Import the GPG Elasticsearch public key, which is used to protect Elastic packages, by running the command:
 
-Чтобы установить и выполнить первичную настройку Elasticsearch:
+   ```
+   sudo wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt key add
+   ```
 
-1.  Для проверки текущей версии Elasticsearch, перейдите на страницу: [https://www.elastic.co/downloads/elasticsearch](https://www.elastic.co/downloads/elasticsearch).
-2.  Откройте окно терминала.
-3.  Импортируете открытый ключ GPG Elasticsearch, с использованием которого защищаются пакеты Elastic, выполнив команду:
+1. Add the Elastic packages to the sources.list.d system repositories directory by running the command:
 
-```
-sudo wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add 
-```
+   ```
+   sudo echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
+   ```
 
-4.  Добавьте пакеты Elastic в каталог системных репозиториев sources.list.d, выполнив команду:
+1. Update the package indexes by running the command:
 
-```
-sudo echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
-```
+   ```
+   sudo apt update
+   ```
 
-5.  Обновите индексы пакетов, выполнив команду:
+1. Install Elasticsearch by running the command:
 
-```
-sudo apt update
-```
+   ```
+   sudo apt install elasticsearch
+   ```
 
-6.  Установите Elasticsearch, выполнив команду:
+1. Make changes to the `elasticsearch.yml` configuration file. For this:
 
-```
-sudo apt install elasticsearch
-```
+   1. Open this file for editing by running the command:
 
-7.  Внесите изменения в конфигурационный файл elasticsearch.yml. Для этого:
+      ```
+      sudo nano /etc/elasticsearch/elasticsearch.yml```
 
-- Откройте этот файл для редактирования, выполнив команду:
+   1. Find the line:
 
-```
-sudo nano /etc/elasticsearch/elasticsearch.yml
-```
+      ```
+      #network.host: 192.168.0.1
+      ```
 
-- Найдите строку:
+      Replace it with the line:
 
-```
-#network.host: 192.168.0.1 
-```
+         ```
+         network.host: localhost
+         ```
 
-И замените ее на строку:
+         <info>
 
-```
-network.host: localhost
-```
+         **Note**
 
-**Примечание**
+         To search within a file, use the keyboard shortcut CTRL+W.
 
-Для поиска по файлу используйте сочетание клавиш CTRL+W.
+         </info>
 
-После редактирования конфигурационного файла \*.yml убедитесь, что в нем нет лишних пробелов и/или отступов!
+         After editing the `.yml` config file, make sure it doesn't have extra spaces and/or indents!
 
-- Сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
+   1. Save your changes using the keyboard shortcut CTRL+O and finish editing using the keyboard shortcut CTRL+X.
 
-8.  Запустите сервис Elasticsearch, выполнив команду:
+1. Start the Elasticsearch service by running the command:
 
-```
-sudo systemctl start elasticsearch
-```
+   ```
+   sudo systemctl start elasticsearch
+   ```
 
-9.  Проверьте статус запуска сервиса Elasticsearch, выполнив команду:
+1. Check the startup status of the Elasticsearch service by running the command:
 
-```
-sudo systemctl status elasticsearch
-```
+   ```
+   sudo systemctl status elasticsearch
+   ```
 
-10. Если отображается ошибка:
+1. If an error is displayed:
 
-**![](./assets/1559939328250-1559939328250.jpeg)**
+   **![](./assets/1559939328250-1559939328250.jpeg)**
 
-выполните следующее:
+   Do the following:
 
-- Откройте файл, содержащий параметры виртуальной машины Java, выполнив команду:
+      1. Open the file containing the Java virtual machine settings by running the command:
 
-```
-sudo nano /etc/elasticsearch/jvm.options
-```
+         ```
+         sudo nano /etc/elasticsearch/jvm.options
+         ```
 
-- Найдите параметры, определяющие минимальное и максимальное количество оперативной памяти для Java:
+      1. Find the parameters that define the minimum and maximum amount of RAM for Java:
 
-![](./assets/1559885194663-1559885194663.jpeg)
+         ![](./assets/1559885194663-1559885194663.jpeg)
 
-**Примечание**
+         <info>
 
-Подробно о параметрах Xms и Xmx [читайте тут](https://docs.oracle.com/cd/E15523_01/web.1111/e13814/jvm_tuning.htm#PERFM161). Для машин с небольшим объемом оперативной памяти мы рекомендуем ограничить объем памяти, используемый JVM.
+         **Note**
 
-- В параметрах -Xms1g и -Xmx1g укажите нужные значения. Например, для операционной системы с объемом оперативной памяти 1 ГБ, можно указать:
+         Details about Xms and Xmx parameters [read here](https://docs.oracle.com/cd/E15523_01/web.1111/e13814/jvm_tuning.htm#PERFM161). For machines with low RAM, we recommend limiting the amount of memory used by the JVM.
 
-```
--Xms128m
--Xmx128m
-```
+         </info>
 
-- Сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
-- Запустите сервис Elasticsearch и проверьте статус. В случае отсутствия ошибок отобразится следующее:
+      1. Specify the required values ​​in the `-Xms1g` and `-Xmx1g` parameters. For example, for an operating system with 1 GB of RAM, you can specify:
 
-**![](./assets/1559939373499-1559939373499.jpeg)**
+         ```
+         -Xms128m
+         -Xmx128m
+         ```
 
-11. Чтобы при перезагрузке операционной системы сервис Elasticsearch запускался автоматически, выполните команду:
+      1. Save your changes using the `CTRL+O` key combination and finish editing using the `CTRL+X` key combination.
+      1. Start the Elasticsearch service and check the status. If there are no errors, the following will be displayed:
 
-```
-sudo systemctl enable elasticsearch
-```
+         **![](./assets/1559939373499-1559939373499.jpeg)**
 
-12. Для проверки доступа к сервису Elasticsearch отправьте HTTP-запрос, выполнив команду:
+1. To start the Elasticsearch service automatically when the operating system is restarted, run the command:
 
-```
-curl -X GET localhost:9200
-```
+   ```
+   sudo systemctl enable elasticsearch
+   ```
 
-Если установка Elasticsearch выполнена успешно, отобразится следующая информация:
+1. To test access to the Elasticsearch service, send an HTTP request by running the command:
 
-**![](./assets/1559939398435-1559939398435.jpeg)**
+   ```
+   curl -X GET localhost:9200
+   ```
 
-## Установка и настройка Kibana
+   If the installation of Elasticsearch was successful, the following information will be displayed:
 
-Чтобы установить и выполнить первичную настройку Kibana, выполните следующее:
+      **![](./assets/1559939398435-1559939398435.jpeg)**
 
-1.  Убедитесь, что вы успешно установили Elasticsearch.
-2.  Откройте окно терминала.
-3.  Установите Kibana, выполнив команду:
-    ```
-    sudo apt install kibana
-    ```
-4.  Запустите Kibana, выполнив команду:
+## Installing and configuring Kibana
 
-```
-sudo systemctl start kibana
-```
+To install and perform the initial configuration of Kibana, do the following:
 
-5.  Чтобы при перезагрузке операционной системы сервис Kibana запускался автоматически, выполните команду:
+1. Make sure you have successfully installed Elasticsearch.
+1. Open a terminal window.
+1. Install Kibana by running the command:
 
-```
-sudo systemctl enable kibana
-```
+   ```
+   sudo apt install kibana
+   ```
 
-6.  Для проверки статуса работы Kibana, выполните команду:
+1. Start Kibana by running the command:
 
-```
-sudo systemctl status kibana
-```
+   ```
+   sudo systemctl start kibana
+   ```
 
-7.  Внесите изменения в конфигурационный файл kibana.yml. Для этого:
+1. To start the Kibana service automatically when the operating system is restarted, run the command:
 
-- Откройте этот файл, выполнив команду:
+   ```
+   sudo systemctl enable kibana
+   ```
 
-```
-sudo nano /etc/kibana/kibana.yml
-```
+1. To check the status of Kibana, run the command:
 
-- Найдите строку:
+   ```
+   sudo systemctl status kibana
+   ```
 
-```
-#server.port: 5601 
-```
+1. Make changes to the `kibana.yml` configuration file. For this:
 
-- И замените ее на строку:
+   1. Open this file by running the command:
 
-```
-server.port: 5601
-```
+      ```
+      sudo nano /etc/kibana/kibana.yml
+      ```
 
-- Найдите строку
+   1. Find the line:
 
-```
-#server.host: "localhost" 
-```
+      ```
+      #server.port: 5601
+      ```
 
-- и замените ее на строку:
+      And replace it with the line:
 
-```
-server.host: "localhost"
-```
+         ```
+         server.port: 5601
+         ```
 
-- Найдите строку:
+   1. Find the line
 
-```
-#elasticsearch.hosts: ["http://localhost:9200"] 
-```
+      ```
+      #server.host: "localhost"
+      ```
 
-- И замените ее на строку:
+      And replace it with the line:
 
-```
-elasticsearch.hosts: ["http://localhost:9200"]
-```
+         ```
+         server.host: "localhost"
+         ```
 
-- Сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X
+   1. Find the line:
 
-8.  Создайте учетную запись администратора для доступа к веб-интерфейсу Kibana. Для этого выполните команду:
+      ```
+      #elasticsearch.hosts: ["http://localhost:9200"]
+      ```
 
-```
-echo "mcskibadmin:\`openssl passwd -apr1\`" | sudo tee -a /etc/nginx/htpasswd.users
-```
+      And replace it with the line:
 
-где mcskibadmin - логин учетной записи администратора, htpasswd.users - файл, в котором хранятся учетные данные.
+         ```
+         elasticsearch.hosts: ["http://localhost:9200"]
+         ```
 
-Затем введите пароль.
+   1. Save changes using CTRL+O and finish editing using CTRL+X
 
-9.  Создайте файл с виртуальным сайтом для веб-сервера  Nginx, выполнив команду:
+1. Create an administrator account to access the Kibana web interface. To do this, run the command:
 
-```
-sudo nano /etc/nginx/sites-available/elk
-```
+   ```
+   echo "mcskibadmin:\`openssl passwd -apr1\`" | sudo tee -a /etc/nginx/htpasswd.users
+   ```
 
-10. В этот файл добавьте следующую информацию:
+   where `mcskibadmin` is the login of the administrator account, `htpasswd.users` is the file where credentials are stored.
 
-```
-server {
-    listen 80;
- 
-    server_name <внешний IP-адрес веб-сервера>;
- 
-    auth_basic "Restricted Access";
-    auth_basic_user_file /etc/nginx/htpasswd.users;
- 
-    location / {
-        proxy_pass http://localhost:5601;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-    }
-}
-```
+   Then enter the password.
 
-Сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
+1. Create a file with a virtual site for the Nginx web server by running the command:
 
-11. Активируйте новую конфигурацию Nginx, выполнив команду:
+   ```
+   sudo nano /etc/nginx/sites-available/elk
+   ```
 
-```
-sudo ln -s /etc/nginx/sites-available/elk /etc/nginx/sites-enabled/
-```
+1. Add the following information to this file:
 
-12. Перезагрузите Kibana, выполнив команду:
+   ```
+   server {
+   listen 80;
+   
+   server_name <web server external IP address>;
+   
+   auth_basic "Restricted Access";
+   auth_basic_user_file /etc/nginx/htpasswd.users;
+   
+   location / {
+   proxy_pass http://localhost:5601;
+   proxy_http_version 1.1;
+   proxy_set_header Upgrade $http_upgrade;
+   proxy_set_header Connection 'upgrade';
+   proxy_set_header Host $host;
+   proxy_cache_bypass $http_upgrade;
+   }
+   }
+   ```
 
-```
-sudo systemctl restart kibana
-```
+   Save your changes using the keyboard shortcut CTRL+O and finish editing using the keyboard shortcut CTRL+X.
 
-13. Перезагрузите веб-сервер Nginx, выполнив команду:
+1. Activate the new Nginx configuration by running the command:
 
-```
-sudo systemctl restart nginx 
-```
+   ```
+   sudo ln -s /etc/nginx/sites-available/elk /etc/nginx/sites-enabled/
+   ```
 
-14. Убедитесь, что синтаксис конфигурационного файла nginx не содержит ошибок, выполнив команду:
+1. Restart Kibana by running the command:
 
-```
-sudo nginx -t
-```
+   ```
+   sudo systemctl restart kibana
+   ```
 
-## Установка и настройка Logstash
+1. Restart the Nginx web server by running the command:
 
-Чтобы установить и выполнить первичную настройку Logstash:
+   ```
+   sudo systemctl restart nginx
+   ```
 
-1.  Установите Logstash, выполнив команду команду:
+1. Make sure that the syntax of the nginx configuration file does not contain errors by running the command:
 
-```
-sudo apt install logstash
-```
+   ```
+   sudo nginx -t
+   ```
 
-2.  Создайте и настройте конфигурационный файл, содержащий правила приема информации с beats-агентов. Для этого:
+## Installing and configuring Logstash
 
-**Примечание**
+To install and perform the initial setup of Logstash:
 
-Далее приведен один из возможных вариантов настройки. Дополнительную информацию [читайте тут](https://www.elastic.co/guide/en/logstash/7.2/logstash-config-for-filebeat-modules.html#parsing-system).
+1. Install Logstash by running the command:
 
-- Создайте файл 02-beats-input.conf, выполнив команду:
+   ```
+   sudo apt install logstash
+   ```
 
-```
-sudo nano /etc/logstash/conf.d/02-beats-input.conf
-```
+1. Create and configure a configuration file containing rules for receiving information from beats agents. For this:
 
-- В этот файл добавьте строки:
+   <info>
 
-```
-input {
-  beats {
-    port => 5044
-  }
-}
-```
+   **Note**
 
-Сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
+   The following is one of the possible settings. For more information [read here](https://www.elastic.co/guide/en/logstash/7.2/logstash-config-for-filebeat-modules.html#parsing-system).
 
-3.  Создайте и настройте конфигурационный файл 30-elasticsearch-output.conf, содержащий правила хранения beats в информации Elasticsearch. Для этого:
+   </info>
 
-- Создайте файл 30-elasticsearch-output.conf, выполнив команду:
+   1. Create the file `02-beats-input.conf` by running the command:
 
-```
-sudo nano /etc/logstash/conf.d/30-elasticsearch-output.conf
-```
+      ```
+      sudo nano /etc/logstash/conf.d/02-beats-input.conf
+      ```
 
-- В этот файл добавьте следующие строки:
+   1. Add the following lines to this file:
 
-```
-output {
-  elasticsearch {
-    hosts => ["localhost:9200"]
-    sniffing => true
-    manage_template => false
-    template_overwrite => true
-    index => "%{[@metadata][beat]}-%{+YYYY.MM.dd}"
-    document_type => "%{[@metadata][type]}"
-  }
-}
-```
+      ```
+      input {
+      beat {
+      port => 5044
+      }
+      }
+      ```
 
-Сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
+   1. Save your changes using the `CTRL+O` key combination and finish editing using the `CTRL+X` key combination.
 
-4.  Создайте файл, содержащий правила фильтрации и структуризации входящих данных. Для этого:
+1. Create and configure the `30-elasticsearch-output.conf` configuration file containing the rules for storing beats in Elasticsearch information. For this:
 
-- Создайте файл 10-system-filter.conf, выполнив команду:
+   1. Create the `30-elasticsearch-output.conf` file by running the command:
 
-```
-sudo nano /etc/logstash/conf.d/10-logstash-filter.conf
-```
+      ```
+      sudo nano /etc/logstash/conf.d/30-elasticsearch-output.conf
+      ```
 
-- В открывшийся файл поместите следующие строки:
+   1. Add the following lines to this file:
 
-```
-input { stdin { } }
-filter {
-  grok {
-    match => { "message" => "%{COMBINEDAPACHELOG}" }
-  }
-  date {
-    match => [ "timestamp" , "dd/MMM/yyyy:HH:mm:ss Z" ]
-  }
-}
-output {
-  elasticsearch { hosts => ["localhost:9200"] }
-  stdout { codec => rubydebug }
-}
-```
+      ```
+      output {
+      elasticsearch {
+      hosts => ["localhost:9200"]
+      sniffing => true
+      manage_template => false
+      template_overwrite => true
+      index => "%{[@metadata][beat]}-%{+YYYY.MM.dd}"
+      document_type => "%{[@metadata][type]}"
+      }
+      }
+      ```
 
-Сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
+   1. Save your changes using the `CTRL+O` key combination and finish editing using the `CTRL+X` key combination.
 
-5.  Проверьте конфигурацию Logstash, выполнив команду:
+1. Create a file containing rules for filtering and structuring incoming data. For this:
 
-    ```
-    sudo -u logstash /usr/share/logstash/bin/logstash --path.settings /etc/logstash -t
-    ```
+   1. Create the file `10-system-filter.conf` by running the command:
 
-6.  Запустите Logstash, выполнив команду:
+      ```
+      sudo nano /etc/logstash/conf.d/10-logstash-filter.conf
+      ```
 
-```
-sudo systemctl start logstash
-```
+   1. In the file that opens, place the following lines:
 
-7.  Чтобы при перезагрузке операционной системы сервис Logstash запускался автоматически, выполните команду:
+      ```
+      input { stdin { } }
+      filter {
+      grok {
+         match => { "message" => "%{COMBINEDAPACHELOG}" }
+      }
+      date {
+         match => [ "timestamp" , "dd/MMM/yyyy:HH:mm:ss Z" ]
+      }
+      }
+      output {
+      elasticsearch { hosts => ["localhost:9200"] }
+      stdout { codec => rubydebug }
+      }
+      ```
 
-```
-sudo systemctl enable logstash
-```
+   1. Save your changes using the `CTRL+O` key combination and finish editing using the `CTRL+X` key combination.
 
-## Установка и настройка Filebeat
+1. Check the Logstash configuration by running the command:```
+      sudo -u logstash /usr/share/logstash/bin/logstash --path.settings /etc/logstash -t
+      ```
 
-Filebeat позволяет собирать данные (beats) из различных источников и передавать их в Logstash или Elasticsearch в Linux-подобных системах.
+1. Start Logstash by running the command:
 
-Для установки Filebeat:
+   ```
+   sudo systemctl start logstash
+   ```
 
-1.  Откройте терминал.
-2.  Установите Filebeat, выполнив команду:
+1. To start the Logstash service automatically when the operating system is rebooted, run the command:
 
-```
-sudo apt install filebeat
-```
+   ```
+   sudo systemctl enable logstash
+   ```
 
-3.  Настройте конфигурационный файл filebeat.yml. Для этого:
+## Installing and configuring Filebeat
 
-- Откройте этот файл:
+Filebeat allows you to collect data (beats) from various sources and transfer them to Logstash or Elasticsearch on Linux-like systems.
 
-```
-sudo nano /etc/filebeat/filebeat.yml
-```
+To install Filebeat:
 
-- Запретите Filebeat отправлять данные напрямую в Elasticsearch. Для этого найдите строки:
+1. Open a terminal.
 
-```
-output.elasticsearch:
-  # Array of hosts to connect to.
-  hosts: ["localhost:9200"]
-```
+1. Install Filebeat by running the command:
 
-И замените их на строки:
+   ```
+   sudo apt install filebeat
+   ```
 
-```
-#output.elasticsearch:
-    # Array of hosts to connect to.
-    #hosts: ["localhost:9200"]
-```
+1. Set up the `filebeat.yml` configuration file. For this:
 
-- Укажите сервису Filebeat использовать Logstash в качестве сборщика логов. Для этого найдите строки:
+   1. Open this file:
 
-```
-#output.logstash:  
-    # The Logstash hosts  
-    #hosts: ["localhost:5044"]
-```
+      ```
+      sudo nano /etc/filebeat/filebeat.yml
+      ```
 
-И замените их на строки:
+   1. Prevent Filebeat from sending data directly to Elasticsearch. To do this, find the lines:
 
-```
-output.logstash:
-    # The Logstash hosts
-    hosts: ["localhost:5044"]
-```
+      ```
+      output.elasticsearch:
+      # Array of hosts to connect to.
+      hosts: ["localhost:9200"]
+      ```
 
-Сохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
+      And replace them with the lines:
 
-4.  Включите модуль Logstash. Для этого выполните команду:
+         ```
+         #output.elasticsearch:
+         # Array of hosts to connect to.
+         #hosts: ["localhost:9200"]
+         ```
 
-```
-sudo sudo filebeat modules enable logstash
-```
+   1. Tell the Filebeat service to use Logstash as a log collector. To do this, find the lines:
 
-**Примечание**
+      ```
+      #output.logstash:
+      # The Logstash hosts
+      #hosts: ["localhost:5044"]
+      ```
 
-Подробно о filebeat-модулях [читайте тут](https://www.elastic.co/guide/en/beats/filebeat/6.4/filebeat-module-system.html).
+      And replace them with the lines:
 
-5.  Для просмотра включенных модулей выполните команду:
+         ```
+         output.logstash:
+         # The Logstash hosts
+         hosts: ["localhost:5044"]
+         ```
 
-```
-sudo filebeat modules list
-```
+         Save your changes using the `CTRL+O` key combination and finish editing using the `CTRL+X` key combination.
 
-6.  Загрузите шаблон индекса Elasticsearch, выполнив команду:
+1. Enable the Logstash module. To do this, run the command:
 
-```
-sudo filebeat setup --template -E output.logstash.enabled=false -E 'output.elasticsearch.hosts=["localhost:9200"]'
-```
+   ```
+   sudo sudo filebeat modules enable logstash
+   ```
 
-**Примечание**
+   <info>
 
-Индексы Elasticsearch представляют собой набор документов, имеющих сходные характеристики. Они определяются по именам, которые используются для ссылок на индексы при выполнении различных операций с индексами. Шаблон индексов загружается автоматически при создании новых индексов.
+   **Note**
 
-7.  Дашборды позволяют визуализировать данные Filebeat отсылаемые в Kibana. Для включения дашборда выполните команду:
+   Learn more about filebeat modules [read here](https://www.elastic.co/guide/en/beats/filebeat/6.4/filebeat-module-system.html).
 
-```
-sudo filebeat setup -e -E output.logstash.enabled=false -E output.elasticsearch.hosts=['localhost:9200'] -E setup.kibana.host=localhost:5601
-```
+   </info>
 
-8.  Запустите Filebeat, выполнив команду:
+1. To view the included modules, run the command:
 
-```
-sudo systemctl start filebeat
-```
+   ```
+   sudo filebeat modules list
+   ```
 
-9.  Чтобы при перезагрузке операционной системы сервис filebeat запускался автоматически, выполните команду:
+1. Download the Elasticsearch index template by running the command:
 
-```
-sudo systemctl enable filebeat
-```
+   ```
+   sudo filebeat setup --template -E output.logstash.enabled=false -E 'output.elasticsearch.hosts=["localhost:9200"]'
+   ```
 
-10. Чтобы убедиться, что Elasticsearch получает данные, запросите индекс Filebeat с помощью команды:
+   <info>
 
-```
-curl -XGET 'http://localhost:9200/filebeat-\*/_search?pretty'
-```
+   **Note**
 
-Установка стека ELK завершена.
+   Elasticsearch indexes are a collection of documents that have similar characteristics. They are identified by names that are used to refer to indexes when performing various index operations. The index template is loaded automatically when new indexes are created.
 
-В адресной строке веб-браузера введите IP-адрес вашего Elastic-сервера. Для входа используйте учетные данные администратора . После успешной авторизации вы перейдете на основную страницу Kibana.
+   </info>
 
-**Обратная связь**
+1. Dashboards allow you to visualize the Filebeat data sent to Kibana. To enable the dashboard, run the command:
 
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
+   ```
+   sudo filebeat setup -e -E output.logstash.enabled=false -E output.elasticsearch.hosts=['localhost:9200'] -E setup.kibana.host=localhost:5601
+   ```
+
+1. Start Filebeat by running the command:
+
+   ```
+   sudo systemctl start filebeat
+   ```
+
+1. To start the filebeat service automatically when the operating system is rebooted, run the command:
+
+   ```
+   sudo systemctl enable filebeat
+   ```
+
+1. To verify that Elasticsearch is receiving data, query the Filebeat index with the command:
+
+   ```
+   curl -XGET 'http://localhost:9200/filebeat-\*/_search?pretty'
+   ```
+
+The installation of the ELK stack is complete.
+
+In the address bar of your web browser, enter the IP address of your Elastic server. Use your administrator credentials to sign in. After successful authorization, you will be redirected to the Kibana main page.
+
+## **Feedback**
+
+Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

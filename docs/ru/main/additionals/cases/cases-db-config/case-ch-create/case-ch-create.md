@@ -2,13 +2,11 @@
 
 ## Конфигурация оборудования
 
-Сервер Ubuntu 18.04 LTS x86_64.
+- Сервер Ubuntu 18.04 LTS x86_64.
 
-Как сэкономить время на установке ClickHouse
+## Как сэкономить время на установке ClickHouse
 
-Воспользуйтесь нашим готовым облачным решением на базе СУБД ClickHouse. При регистрации вы получаете бесплатный бонусный счет, которого достаточно для работы в течение нескольких дней.
-
-[[**попробовать облачную СУБД ClickHouse**](https://mcs.mail.ru/databases/)]
+[Воспользуйтесь](https://mcs.mail.ru/databases/) нашим готовым облачным решением на базе СУБД ClickHouse. При регистрации вы получаете бесплатный бонусный счет, которого достаточно для работы в течение нескольких дней.
 
 ## Установка Standalone ClickHouse
 
@@ -27,59 +25,59 @@ ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get install -y wget
 
 4.  Установите ClickHouse:
 
-- Скачайте ключ репозитория ClickHouse:
+    1. Скачайте ключ репозитория ClickHouse:
 
-```
-ubuntu@ubuntu-standard-2-4-40gb:~$ wget -O - https://repo.yandex.ru/clickhouse/CLICKHOUSE-KEY.GPG | sudo apt-key add -
-```
+    ```
+    ubuntu@ubuntu-standard-2-4-40gb:~$ wget -O - https://repo.yandex.ru/clickhouse/CLICKHOUSE-KEY.GPG | sudo apt-key add -
+    ```
 
-- В список репозиториев добавьте репозиторий ClickHouse:
+    1. В список репозиториев добавьте репозиторий ClickHouse:
 
-```
-ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-add-repository "deb http://repo.yandex.ru/clickhouse/deb/stable/ main/"
-Ign:1 http://repo.yandex.ru/clickhouse/deb/stable main/ InRelease
-Hit:2 http://repo.yandex.ru/clickhouse/deb/stable main/ Release
-Get:3 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
-Hit:5 http://MS1.clouds.archive.ubuntu.com/ubuntu bionic InRelease
-Get:6 http://MS1.clouds.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
-Get:7 http://MS1.clouds.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
-Fetched 252 kB in 1s (341 kB/s)
-Reading package lists... Done
-```
+    ```
+    ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-add-repository "deb http://repo.yandex.ru/clickhouse/deb/stable/ main/"
+    Ign:1 http://repo.yandex.ru/clickhouse/deb/stable main/ InRelease
+    Hit:2 http://repo.yandex.ru/clickhouse/deb/stable main/ Release
+    Get:3 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+    Hit:5 http://MS1.clouds.archive.ubuntu.com/ubuntu bionic InRelease
+    Get:6 http://MS1.clouds.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+    Get:7 http://MS1.clouds.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+    Fetched 252 kB in 1s (341 kB/s)
+    Reading package lists... Done
+    ```
 
-- Установите сервер ClickHouse:
+    1. Установите сервер ClickHouse:
 
-```
-ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get install clickhouse-client clickhouse-server
-```
+    ```
+    ubuntu@ubuntu-standard-2-4-40gb:~$ sudo apt-get install clickhouse-client clickhouse-server
+    ```
 
-При установке ClickHouse автоматически добавляется в список приложений, запускаемых автоматически.
+    При установке ClickHouse автоматически добавляется в список приложений, запускаемых автоматически.
 
-- Введите пароль пользователя по умолчанию.
-- Запустите сервер:
+    1. Введите пароль пользователя по умолчанию.
+    1. Запустите сервер:
 
-```
-ubuntu@ubuntu-standard-2-4-40gb:~$ sudo systemctl start clickhouse-server
-```
+    ```
+    ubuntu@ubuntu-standard-2-4-40gb:~$ sudo systemctl start clickhouse-server
+    ```
 
-- Убедитесь, что сервер запущен и слушает localhost:
+    1. Убедитесь, что сервер запущен и слушает localhost:
 
-```
-ubuntu@ubuntu-standard-2-4-40gb:~$ sudo netstat -tulpn  | grep clickhouse
-tcp 0 0 127.0.0.1:9000 0.0.0.0:\*
-LISTEN 21373/clickhouse-se
-tcp 0 0 127.0.0.1:9009 0.0.0.0:\*
-LISTEN 21373/clickhouse-se
-tcp 0 0 127.0.0.1:8123 0.0.0.0:\*
-LISTEN 21373/clickhouse-se
-tcp6 0 0 ::1:9000 :::\*
-LISTEN 21373/clickhouse-se
-tcp6 0 0 ::1:9009 :::\*
-LISTEN 21373/clickhouse-se
-tcp6       0      0 ::1:8123                :::\*            
-LISTEN      21373/clickhouse-se
+    ```
+    ubuntu@ubuntu-standard-2-4-40gb:~$ sudo netstat -tulpn  | grep clickhouse
+    tcp 0 0 127.0.0.1:9000 0.0.0.0:\*
+    LISTEN 21373/clickhouse-se
+    tcp 0 0 127.0.0.1:9009 0.0.0.0:\*
+    LISTEN 21373/clickhouse-se
+    tcp 0 0 127.0.0.1:8123 0.0.0.0:\*
+    LISTEN 21373/clickhouse-se
+    tcp6 0 0 ::1:9000 :::\*
+    LISTEN 21373/clickhouse-se
+    tcp6 0 0 ::1:9009 :::\*
+    LISTEN 21373/clickhouse-se
+    tcp6       0      0 ::1:8123                :::\*            
+    LISTEN      21373/clickhouse-se
 
-```
+    ```
 
 5.  Используя имя пользователя default и пароль, введенный при установке, проверьте подключение к базе данных:
 
@@ -117,7 +115,7 @@ Ok.
 ubuntu-standard-2-4-40gb :)
 ```
 
-2.  Для настройки прав доступа на созданную базу данных в папке _/etc/clickhouse-server/users.d_ создайте файл _myuser.xmlс_ описанием прав доступа:
+2. Для настройки прав доступа на созданную базу данных в папке _/etc/clickhouse-server/users.d_ создайте файл _myuser.xmlс_ описанием прав доступа:
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo cat /etc/clickhouse-server/users.d/myuser.xml
@@ -140,7 +138,7 @@ ubuntu@ubuntu-standard-2-4-40gb:~$ sudo cat /etc/clickhouse-server/users.d/myuse
 
 В этом файле описан пользователь myuser с паролем mypass и доступом к базе данных mybase с любого IP-адреса.
 
-3.  Проверьте подключение с правами пользователя ОС Ubuntu:
+3. Проверьте подключение с правами пользователя ОС Ubuntu:
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ clickhouse-client --user myuser --password --database mybase
@@ -180,6 +178,6 @@ tcp6 0 0 :::8123 :::\* LISTEN 22529/clickhouse-se
 
 Теперь к серверу можно подключиться из внешней сети.
 
-**Обратная связь**
+## Обратная связь
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

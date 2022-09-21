@@ -6,9 +6,13 @@
 - Grafana 6.4.2 на ОС Ubuntu 18.04 LTS x86_64.
 - PostgreSQL 10 на ОС Ubuntu 18.04 LTS x86_64.
 
+<warn>
+
 **Внимание**
 
 При использовании серверов и оборудования других версий некоторые шаги сценария могут отличаться от описанных ниже.
+
+</warn>
 
 ## Схема работы
 
@@ -25,9 +29,13 @@
 root@mysql:~# export VERSION="<версия>"
 ```
 
+<info>
+
 **Примечание**
 
 Актуальную версию mysqld_exporter можно [найти и скачать тут](https://prometheus.io/download/#mysqld_exporter).
+
+</info>
 
 3.  Создайте пользователя prometheus и группу prometheus, от имени которых вы будете запускать mysqld_exporter:
 
@@ -43,32 +51,40 @@ root@mysql:~# wget https://github.com/prometheus/mysqld_exporter/releases/downlo
 ```
 
 5.  Скопируйте содержимое распакованного архива в папку /usr/local/bin:
-    ```
-    root@mysql:~# cp /tmp/mysqld_exporter-$VERSION.linux-amd64/mysqld_exporter /usr/local/bin
-    ```
+
+```
+root@mysql:~# cp /tmp/mysqld_exporter-$VERSION.linux-amd64/mysqld_exporter /usr/local/bin
+```
+
 6.  Удалите содержимое распакованного архива из папки /tmp:
+
     ```
     root@mysql:~# rm -rf /tmp/mysqld_exporter-$VERSION.linux-amd64
     ```
+
 7.  Измените владельца mysqld_exporter на prometheus:
 
-```
-root@mysql:~# chown -R prometheus:prometheus /usr/local/bin/mysqld_exporter
-```
+    ```
+    root@mysql:~# chown -R prometheus:prometheus /usr/local/bin/mysqld_exporter
+    ```
 
 8.  Для работы mysqld_exporter создайте пользователя mysql и дайте ему соответствующие права:
 
-```
-MariaDB [(none)]> CREATE USER 'exporter'@'localhost' IDENTIFIED BY '<пароль>' WITH MAX_USER_CONNECTIONS 3;
-Query OK, 0 rows affected (0.001 sec)
+    ```
+    MariaDB [(none)]> CREATE USER 'exporter'@'localhost' IDENTIFIED BY '<пароль>' WITH MAX_USER_CONNECTIONS 3;
+    Query OK, 0 rows affected (0.001 sec)
 
-MariaDB [(none)]> GRANT PROCESS, REPLICATION CLIENT, SELECT ON \*.\* TO 'exporter'@'localhost';
-Query OK, 0 rows affected (0.000 sec)
-```
+    MariaDB [(none)]> GRANT PROCESS, REPLICATION CLIENT, SELECT ON \*.\* TO 'exporter'@'localhost';
+    Query OK, 0 rows affected (0.000 sec)
+    ```
+
+<warn>
 
 **Внимание**
 
 Параметр WITH MAX_USER_CONNECTIONS 3 не поддерживается некоторыми версиями сервера MySQL. Если при создании пользователя вы получили ошибку, уберите этот параметр и выполните команду еще раз.
+
+</warn>
 
 9.  Создайте файл, содержащий правила доступа к mysqld_exporter:
 
@@ -114,10 +130,14 @@ ExecStart=/usr/local/bin/mysqld_exporter \
 WantedBy=multi-user.target
 ```
 
+<info>
+
 **Примечания**
 
 - Параметры, начинающиеся с collect, отвечают за метрики, которые будут собираться с сервера MySQL. Подробное описание собираемых метрик [см. тут](https://github.com/prometheus/mysqld_exporter).
 - В параметре web.listen-address указываются адрес и порт, по которым будет доступен mysqld_exporter (0.0.0.0 означает любой адрес на сервере). Эти адрес и порт должны быть доступны с сервера Prometheus. Если порт недоступен, попробуйте изменить настройки межсетевого экрана на сервере с mysqld_exporter.
+
+</info>
 
 11. Запустите mysqld_exporter:
 
@@ -188,9 +208,7 @@ root@prometheus:~# systemctl reload prometheus.service
 
 И примерно следующее при использовании Dashboard Percona:
 
-\*\*![](./assets/1572208930593-1572208930593.png)
-
-\*\*
+![](./assets/1572208930593-1572208930593.png)
 
 ## Создание тестовой нагрузки
 
@@ -216,44 +234,44 @@ Creating a secondary index on 'sbtest1'...
 
 3.  Запустите тест:
 
-    ```
-    root@mysql:~# sysbench oltp_read_only --mysql-db=test --mysql-user=root --mysql-password --db-driver=mysql run
-    sysbench 1.0.17 (using bundled LuaJIT 2.1.0-beta2)
+```
+root@mysql:~# sysbench oltp_read_only --mysql-db=test --mysql-user=root --mysql-password --db-driver=mysql run
+sysbench 1.0.17 (using bundled LuaJIT 2.1.0-beta2)
 
-    Running the test with following options:
-    Number of threads: 1
-    Initializing random number generator from current time
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
 
-    Initializing worker threads...
+Initializing worker threads...
 
-    Threads started!
+Threads started!
 
-    SQL statistics:
-    queries performed:
-    read: 109340
-    write: 0
-    other: 15620
-    total: 124960
-    transactions: 7810 (780.72 per sec.)
-    queries: 124960 (12491.51 per sec.)
-    ignored errors: 0 (0.00 per sec.)
-    reconnects: 0 (0.00 per sec.)
+SQL statistics:
+queries performed:
+read: 109340
+write: 0
+other: 15620
+total: 124960
+transactions: 7810 (780.72 per sec.)
+queries: 124960 (12491.51 per sec.)
+ignored errors: 0 (0.00 per sec.)
+reconnects: 0 (0.00 per sec.)
 
-    General statistics:
-    total time: 10.0007s
-    total number of events: 7810
+General statistics:
+total time: 10.0007s
+total number of events: 7810
 
-    Latency (ms):
-    min: 0.59
-    avg: 1.28
-    max: 10.28
-    95th percentile: 2.26
-    sum: 9979.28
+Latency (ms):
+min: 0.59
+avg: 1.28
+max: 10.28
+95th percentile: 2.26
+sum: 9979.28
 
-    Threads fairness:
-    events (avg/stddev): 7810.0000/0.00
-        execution time (avg/stddev):   9.9793/0.00
-    ```
+Threads fairness:
+events (avg/stddev): 7810.0000/0.00
+    execution time (avg/stddev):   9.9793/0.00
+```
 
 В результате тестовой нагрузки графики в Grafana изменяться:
 
@@ -288,6 +306,6 @@ MariaDB [(none)]> flush privileges;
 Query OK, 0 rows affected (0.007 sec)
 ```
 
-**Обратная связь**
+## **Обратная связь**
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
