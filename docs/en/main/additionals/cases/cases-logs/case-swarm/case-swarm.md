@@ -1,211 +1,222 @@
-## Конфигурация оборудования
+## Hardware configuration
 
-Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы c использованием следующего оборудования:
+To run this monitoring scenario, install and configure servers using the following hardware:
 
-- Docker на ОС Ubuntu 18.04 LTS x86_64.
-- Elasticsearch и Kibana на ОС Ubuntu 18.04 LTS x86_64.
+- Docker on Ubuntu 18.04 LTS x86_64.
+- Elasticsearch and Kibana on Ubuntu 18.04 LTS x86_64.
 
-**Внимание**
+<warn>
 
-Elasticsearch и Kibana необходимо установить как [приложение в VK Cloud](https://mcs.mail.ru/app/services/marketplace/setup/elk_single_instance/).
+**Attention**
 
-При использовании других серверов и оборудования некоторые шаги сценария могут отличаться от описанных ниже.
+Elasticsearch and Kibana must be installed as [application in VK Cloud](https://mcs.mail.ru/app/services/marketplace/setup/elk_single_instance/).
 
-## Схема работы
+If you use other servers and hardware, some script steps may differ from those described below.
+
+</warn>
+
+## Scheme of work
 
 **![](./assets/1575015458286-1575015458286.png)**
 
-**Docker Swarm** - это Docker в кластерном режиме. Кластер может состоять из одной ноды или нескольких нод. Для данного сценария достаточно одной ноды.
+**Docker Swarm** is Docker in cluster mode. A cluster can consist of one node or several nodes. For this scenario, one node is enough.
 
-**Fluentd** - это программный комплекс, отвечающий за сбор, трансформацию логов и их передачу для хранения. Схожие функции имеет Logstash - стандартный компонент стека ELK. Однако Fluentd обладает более широкими возможностями по передаче логов для хранения (заявлено [более 40 data outputs](https://www.fluentd.org/dataoutputs)), а также более высокой скоростью работы и малой требовательностью к ресурсам (при потреблении оперативной памяти около 40 мегабайт обрабатывается 13 000 строк в секунду). В настоящий момент Fluentd используют и поддерживают такие крупные компании, как Atlassian, Microsoft и Amazon. Частью проекта Fluentd является Fluent-bit - легковесный коллектор/трансформатор логов (подробно [читай тут](https://logz.io/blog/fluentd-vs-fluent-bit/)). Кроме того, Fluentd наравне с такими проектами как Kubernetes и Prometheus (подробно [читай тут](https://www.cncf.io/projects/))) поддерживается компанией CNCF (Cloud Native Computing Foundation).
+**Fluentd** is a software package responsible for collecting, transforming logs and transferring them for storage. Logstash, a standard component of the ELK stack, has similar functions. However, Fluentd has more options for transferring logs for storage (claimed [more than 40 data outputs] (https://www.fluentd.org/dataoutputs)), as well as higher speed and low resource requirements (when consuming RAM about 40 megabytes processed 13,000 lines per second). Fluentd is currently used and supported by major companies such as Atlassian, Microsoft, and Amazon. Part of the Fluentd project is Fluent-bit, a lightweight log collector/transformer (details [read here](https://logz.io/blog/fluentd-vs-fluent-bit/)). In addition, Fluentd, along with projects such as Kubernetes and Prometheus (for details [read here] (https://www.cncf.io/projects/))), is supported by CNCF (Cloud Native Computing Foundation).
 
-Для выполнения сценария:
+To run a script:
 
-- Из стека ELK используем только Elasticsearсh для хранения логов, которые будет передавать Fluentd, и Kibana для их отображения.
-- В кластере Docker Swarm развернем простое приложение из нескольких контейнеров, настроим сбор логов из них, а также передачу и визуализацию логов в ELK. В качестве тестового приложения развернем блог Wordpress. Для прямой передачи логов в демон Fluentd используем лог-драйвер Fluentd. По умолчанию логи пишутся в файлы, которые можно читать демоном Fluent-bit, в результате чего снижается вероятность утери логов, так как их копия хранится в файле. Однако использование лог-драйвера является более стандартной практикой для кластеров Docker Swarm/k8s.
+- From the ELK stack, we use only Elasticsearch to store the logs that Fluentd will transmit, and Kibana to display them.
+- In the Docker Swarm cluster, we will deploy a simple application from several containers, set up the collection of logs from them, as well as the transfer and visualization of logs to ELK. Let's deploy a Wordpress blog as a test application. To directly pass logs to the Fluentd daemon, we use the Fluentd log driver. By default, logs are written to files that can be read by the Fluent-bit daemon, which reduces the chance of logs being lost, since a copy of them is stored in a file. However, using the log driver is more standard practice for Docker Swarm/k8s clusters.
 
-## Установка и настройка Docker Swarm
+## Installing and configuring Docker Swarm
 
-1.  Выполните логин на нодe Docker с правами суперпользователя.
-2.  Установите пакеты:
+1. Login to the Docker node as root.
+2. Install packages:
 
 ```
 root@ubuntu-basic-1-1-10gb:~# apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 ```
 
-3.  Добавьте ключ репозитория Docker:
+3. Add the Docker repository key:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+root@ubuntu-basic-1-1-10gb:~# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt key add-
 OK
 ```
 
-4.  Добавьте репозиторий Docker:
+4. Add the Docker repository:
 
 ```
 root@ubuntu-basic-1-1-10gb:~# add-apt-repository \
->    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
->    $(lsb_release -cs) \
->    stable"
+> "deb [arch=amd64] https://download.docker.com/linux/ubuntu\
+> $(lsb_release -cs) \
+> stable"
 ```
 
-5.  Установите Docker:
+5. Install Docker:
 
 ```
 root@ubuntu-basic-1-1-10gb:~# apt-get update && apt-get install -y docker-ce docker-ce-cli containerd.io
 ```
 
-6.  Выполните инициализацию кластера:
+6. Initialize the cluster:
 
 ```
 root@ubuntu-basic-1-1-10gb:~# docker swarm init
 ```
 
-## Запуск Wordpress в контейнере
+## Run Wordpress in a container
 
-1.  Создайте директорию /root/wordpress и положите туда файл docker-compose.yml следующего содержания:
+1. Create a directory /root/wordpress and place the following docker-compose.yml file there:
 
 ```
 version: '3'
 
 networks:
-   frontend:
-   backend:
+frontend:
+backend:
 
 volumes:
-     db_data: {}
-     wordpress_data: {}
+db_data: {}
+wordpress_data: {}
 
 services:
-    db:
-      image: mysql:5.7
-      volumes:
-        - db_data:/var/lib/mysql
-      environment:
-        MYSQL_RANDOM_ROOT_PASSWORD: '1'
-        MYSQL_DATABASE: wordpress
-        MYSQL_USER: wordpress
-        MYSQL_PASSWORD: wordpressPASS
-      networks:
-        - backend
-      logging:
-        driver: "fluentd"
-        options: 
-          fluentd-async-connect: "true"
-          tag: "mysql"
+db:
+image:mysql:5.7
+volumes:
+-db_data:/var/lib/mysql
+environment:
+MYSQL_RANDOM_ROOT_PASSWORD: '1'
+MYSQL_DATABASE: wordpress
+MYSQL_USER: wordpress
+MYSQL_PASSWORD: wordpressPASS
+networks:
+- backend
+logging:
+driver: "fluentd"
+options:
+fluentd-async-connect: "true"
+tag: "mysql"
 
-    wordpress:
-      depends_on:
-        - db
-      image: wordpress:latest
-      volumes:
-        - wordpress_data:/var/www/html/wp-content
-      environment:
-        WORDPRESS_DB_HOST: db:3306
-        WORDPRESS_DB_USER: wordpress
-        WORDPRESS_DB_PASSWORD: wordpressPASS
-        WORDPRESS_DB_NAME: wordpress
-      networks:
-        - frontend
-        - backend
-      logging:
-        driver: "fluentd"
-        options: 
-          fluentd-async-connect: "true"
-          tag: "wordpress"
+wordpress:
+depends_on:
+-db
+image:wordpress:latest
+volumes:
+- wordpress_data:/var/www/html/wp-content
+environment:
+WORDPRESS_DB_HOST:db:3306
+WORDPRESS_DB_USER: wordpress
+WORDPRESS_DB_PASSWORD: wordpressPASS
+WORDPRESS_DB_NAME: wordpress
+networks:
+- front end
+- backend
+logging:
+driver: "fluentd"
+options:
+fluentd-async-connect: "true"
+tag: "wordpress"
 
-    nginx:
-      depends_on:
-        - wordpress
-        - db
-      image: nginx:latest
-      volumes:
-        - ./nginx.conf:/etc/nginx/nginx.conf
-      ports:
-        - 80:80
-      networks:
-       - frontend
-      logging:
-        driver: "fluentd"
-        options: 
-          fluentd-async-connect: "true"
-          tag: "nginx"
+nginx:
+depends_on:
+- wordpress
+-db
+image:nginx:latest
+volumes:
+- ./nginx.conf:/etc/nginx/nginx.conf
+ports:
+- 80:80
+networks:
+- front end
+logging:
+driver: "fluentd"
+options:
+fluentd-async-connect: "true"
+tag: "nginx"
 
 
 ```
+<warn>
 
-**Внимание**
+**Attention**
 
-wordpressPASS смените на случайный пароль.
+change wordpressPASS to a random password.
 
-Для каждого контейнера описан лог-драйвер Fluentd, указано подключение в фоне к коллектору Fluentd, и проставлены дополнительные теги для дальнейшей обработки (если она необходима).
+</warn>
 
-2.  В директорию /root/wordpress поместите конфигурационный файл nginx.conf:
+For each container, the Fluentd log driver is described, the background connection to the Fluentd collector is indicated, and additional tags are affixed for further processing (if necessary).
+
+2. Place the nginx.conf configuration file in the /root/wordpress directory:
 
 ```
 events {
- 
- }
- 
- http {
-    client_max_body_size 20m;
-    proxy_cache_path /etc/nginx/cache keys_zone=one:32m max_size=64m;
-    server {
-      server_name _default;
-      listen 80;
-      proxy_cache one;
-      location / {
-        proxy_pass http://wordpress:80;
-         proxy_set_header Host $http_host;
-         proxy_set_header X-Forwarded-Host $http_host;
-         proxy_set_header X-Real-IP $remote_addr;
-         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-         proxy_set_header X-Forwarded-Proto $scheme;
-       }
-    }
- }
+
+}
+
+http {
+client_max_body_size 20m;
+proxy_cache_path /etc/nginx/cache keys_zone=one:32m max_size=64m;
+server {
+server_name_default;
+listen 80;
+proxy_cache one;
+location / {
+proxy_pass http://wordpress:80;
+proxy_set_header Host $http_host;
+proxy_set_header X-Forwarded-Host $http_host;
+proxy_set_header X-Real-IP $remote_addr;
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+proxy_set_header X-Forwarded-Proto $scheme;
+}
+}
+}
 ```
 
-3.  Запустите контейнеры:
+3. Run containers:
 
 ```
 root@ubuntu-basic-1-1-10gb:~# docker stack deploy -c /root/wordpress/docker-compose.yml blog
-Creating network blog_backend
-Creating network blog_frontend
-Creating service blog_wordpress
-Creating service blog_nginx
-Creating service blog_db
+Creating network blog_backend
+Creating network blog_frontend
+Creating service blog_wordpress
+Creating service blog_nginx
+Creating service blog_db
 ```
 
-4.  Убедитесь, что все запустилось успешно:
+4. Make sure everything started successfully:
 
 ```
 root@ubuntu-basic-1-1-10gb:~# docker service ls
-ID                  NAME                MODE                REPLICAS            IMAGE               PORTS
-12jo1tmdr8ni        blog_db             replicated          1/1                 mysql:5.7           
-rbdwd7oar6nv        blog_nginx          replicated          1/1                 nginx:latest        \*:80->80/tcp
-oejvg6xgzcwj        blog_wordpress      replicated          1/1                 wordpress:latest  
+ID . NAME . . . . . MODE . . . REPLICAS .
+12jo1tmdr8ni 1/1 mysql:5.7
+rbdwd7oar6nv . . blog_nginx . . . replicated . . 1/1 . . nginx:latest . . \*:80->80/tcp
+oejvg6xgzcwj . . blog_wordpress . . replicated . . 1/1 . . . wordpress:latest
 ```
 
-5.  В адресной строке браузера введите IP-адрес сервера и закончите настройку Wordpress:
+5. In the address bar of the browser, enter the IP address of the server and finish setting up Wordpress:
 
 [![](./assets/1575017648846-1575017648846.png)](https://hb.bizmrg.com/help-images/logging/wordpress_install_final.png)
 
-В результате получится система, состоящая из трех контейнеров: БД MySQL, Nginx в качестве frontend proxy и контейнер с Apache/Modphp для работы кодовой базы Wordpress. У каждого контейнера будут свои логи, которые мы добавим для сбора и обработки.
+The result is a system consisting of three containers: a MySQL database, Nginx as a frontend proxy, and an Apache/Modphp container for running the Wordpress codebase. Each container will have its own logs, which we will add for collection and processing.
 
-## Установка Fluentd
+## Install Fluentd
 
-**Примечание**
+<info>
 
-Используемая версия Fluentd - td-agent 3.5.1-0.
+**Note**
 
-1.  Установите fluentd:
+The Fluentd version being used is td-agent 3.5.1-0.
+
+</info>
+
+1. Install fluentd:
 
 ```
 root@ubuntu-basic-1-1-10gb:~# curl -L https://toolbelt.treasuredata.com/sh/install-ubuntu-bionic-td-agent3.sh | sh
 ```
 
-2.  Добавьте fluentd в автозагрузку:
+2. Add fluentd to startup:
 
 ```
 root@ubuntu-basic-1-1-10gb:~# systemctl enable td-agent
@@ -213,11 +224,11 @@ Synchronizing state of td-agent.service with SysV service script with /lib/syste
 Executing: /lib/systemd/systemd-sysv-install enable td-agent
 ```
 
-## Возможности конфигурирования Fluentd
+## Fluentd configuration options
 
-Конфигурационный файл fluentd расположен в папке /etc/td-agent/td-agent.conf. Он состоит из нескольких секций, рассмотрим их.
+The fluentd configuration file is located in the /etc/td-agent/td-agent.conf folder. It consists of several sections, consider them.
 
-**Секция sourcе** \- содержит описание источника логов. Лог-драйвер Docker Fluentd по умолчанию отправляет логи по адресу tcp://localhost:24224. Опишем секцию source для приема логов:
+**Source section** \- contains a description of the source of the logs. The Docker Fluentd log driver sends logs to tcp://localhost:24224 by default. Let's describe the source section for receiving logs:
 
 ```
 <source>
@@ -226,10 +237,9 @@ port 24224
 </source>
 ```
 
-@type forward - означает fluentd-протокол, который запускается поверх TCP-соединения и который используется Docker для отправки логов демону Fluentd.
+@type forward means the fluentd protocol that runs over a TCP connection and is used by Docker to send logs to the Fluentd daemon.
 
-**Секция вывода данных в elasticsearch:**
-
+**Data output section in elasticsearch:**
 ```
 <match \*\*>
 @type elasticsearch
@@ -239,11 +249,11 @@ logstash_format true
 </match>
 ```
 
-В <IP_ADDRESS_OF_ELK> укажите DNS-имя или IP-адрес сервера Elasticsearch.
+In <IP_ADDRESS_OF_ELK>, specify the DNS name or IP address of the Elasticsearch server.
 
-Такой конфигурационный файл является минимальным для отправки логов в Elasticsearh, но этим не ограничиваются возможности fluentd. Он имеет широкие возможности фильтрации, парсинга и форматирования данных.
+Such a configuration file is the minimum for sending logs to Elasticsearh, but fluentd's capabilities are not limited to this. It has extensive filtering, parsing and data formatting capabilities.
 
-Типовой пример фильтрации - настройка выборки по regexp:
+A typical example of filtering is setting up a selection by regexp:
 
 ```
 <filter foo.bar>
@@ -263,14 +273,14 @@ pattern /uncool/
 </filter>
 ```
 
-В этом примере из потока будут выбраны записи, содержащие в поле message слово cool, в поле hostname, например, www123.example.com, и не содержащие слова uncool в поле tag. Следующие данные пройдут проверку:
+This example will select records from the stream that contain the word cool in the message field, the hostname field, for example, www123.example.com, and do not contain the word uncool in the tag field. The following data will be verified:
 
 ```
 {"message":"It's cool outside today", "hostname":"web001.example.com"}
 {"message":"That's not cool", "hostname":"web1337.example.com"}
 ```
 
-А следующие нет:
+The following are not:
 
 ```
 {"message":"I am cool but you are uncool", "hostname":"db001.example.com"}
@@ -278,13 +288,13 @@ pattern /uncool/
 {"message":"It's cool outside today"}
 ```
 
-Этот пример взят из [руководства fluentd](https://docs.fluentd.org/filter/grep). Также наглядным примером использования фильтра является [добавление геоданных](https://docs.fluentd.org/filter/geoip).
+This example is taken from the [fluentd manual](https://docs.fluentd.org/filter/grep). Another good example of using a filter is [adding geodata](https://docs.fluentd.org/filter/geoip).
 
-Парсеры предназначены для разбора логов стандартной структуры (например, логов Nginx). Парсеры задаются в секции source:
+Parsers are designed to parse logs of a standard structure (for example, Nginx logs). Parsers are specified in the source section:
 
 ```
 <source>
-@type tail
+@typetail
 path /path/to/input/file
 <parse>
 @type nginx
@@ -293,40 +303,38 @@ keep_time_key true
 </source>
 ```
 
-Это типовой пример разбора логов Nginx. Форматирование данных применяется для изменения формата или структуры выводимых данных и описывается в секции вывода.
+This is a typical example of parsing Nginx logs. Data formatting is used to change the format or structure of output data and is described in the output section.
 
-Возможности fluentd очень широки, их описание выходит за границы формата данной статьи. Чтобы подробнее изучить возможности fluentd, см. [документацию](https://docs.fluentd.org/).
+The possibilities of fluentd are very wide, their description is beyond the scope of this article. To learn more about fluentd, see the [documentation](https://docs.fluentd.org/).
 
-## Просмотр логов
+## View logs
 
-При попадании в Elasticsearch логи будут складываться в индекс logstash-YYYY-MM-DD. Если необходима более сложная обработка логов, можно отправлять логи не напрямую в Elasticsearch, а в Logstash, и уже там разбирать и раскладывать.
+When entering Elasticsearch, the logs will be added to the logstash-YYYY-MM-DD index. If you need more complex processing of logs, you can send the logs not directly to Elasticsearch, but to Logstash, and parse and arrange them there.
 
-Для просмотра логов:
+To view logs:
 
-1.  В браузере перейдите в веб-консоль Kibana, затем щелкните ссылку Management / Index patterns.
+1. In a browser, go to the Kibana web console, then click on the Management / Index patterns link.
 
 [![](./assets/1575019843476-1575019843476.png)](https://hb.bizmrg.com/help-images/logging/Kibana1.png)
 
-2.  В окне ввода Index Pattern введите logstash-\* и нажмите Next Step.
+2. In the Index Pattern input window, enter logstash-\* and click Next Step.
 
 [![](./assets/1575019924909-1575019924909.png)](https://hb.bizmrg.com/help-images/logging/Kibana2.png)
 
-3.  В окне Time filter field name выберите  @timestamp и нажмите Create index pattern:
+3. In the Time filter field name window, select @timestamp and click Create index pattern:
 
 [![](./assets/1575019947600-1575019947600.png)](https://hb.bizmrg.com/help-images/logging/Kibana3.png)
 
-4.  Index pattern создан.
+4. Index pattern created.
 
 [![](./assets/1575019959612-1575019959612.png)](https://hb.bizmrg.com/help-images/logging/Kibana4.png)
 
-5.  Перейдите в Discover, выберите индекс. Там будут логи контейнеров:
+5. Go to Discover, select an index. There will be container logs:
 
 [![](./assets/1575019989698-1575019989698.png)](https://hb.bizmrg.com/help-images/logging/Kibana5.png)
 
-Далее попробуйте создать в Wordpress пару тестовых постов и посмотреть в Kibana на изменение логов.
+Next, try creating a couple of test posts in Wordpress and look in Kibana for changes in the logs.
 
-**Обратная связь**
+## Feedback**
 
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады](https://mcs.mail.ru/help/contact-us)
-
-###  [](https://mcs.mail.ru/help/contact-us)
+Any problems or questions? [Write to us, we will be happy](https://mcs.mail.ru/help/contact-us).

@@ -1,3 +1,3 @@
-WordPress — самая популярная система управления контентом веб-страниц (CMS). Для данной системы создано множество плагинов, её сообщество в мире очень обширное. Для работы с WordPress не нужны специальные знания, все понятно на интуитивном уровне.
+WordPress is the most popular web content management system (CMS). Many plug-ins have been created for this system, its community in the world is very extensive. To work with WordPress, you do not need special knowledge, everything is clear on an intuitive level.
 
-Установка Wordpress на операционную систему CentOS 7.6 выполняется аналогично установке Wordpress на операционную систему CentOS 7.4 ([читайте, как установить Wordpress на CentOS 7.4](https://mcs.mail.ru/help//wordpress-on-linux/wordpress-centos-7-4)).
+Installing Wordpress on CentOS 7.6 operating system is similar to installing Wordpress on CentOS 7.4 operating system ([read how to install Wordpress on CentOS 7.4](https://mcs.mail.ru/help//wordpress-on-linux/wordpress-centos-7-4)).

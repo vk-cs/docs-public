@@ -15,7 +15,7 @@ OpenCart - это платформа для создания интернет-м
 
 Перед установкой OpenCart:
 
-1.  Перейдите на сайт [https://github.com/opencart/opencart/releases/](https://github.com/opencart/opencart/releases/) и запомните номер версии OpenCart:
+1.  Перейдите на [сайт](https://github.com/opencart/opencart/releases/) и запомните номер версии OpenCart:
 
 ![](./assets/1554925430133-1554925430133.png)
 
@@ -53,15 +53,25 @@ cd ~/tempOC
 7.  Скачайте архив OpenCart, выполнив команду:
 
 ```
-[https://github.com/opencart/opencart/releases/download/<версия>/opencart-<версия>.zip](https://github.com/opencart/opencart/releases/download/<Ð²ÐµÑÑÐ¸Ñ>/opencart-<Ð²ÐµÑÑÐ¸Ñ>.zip)
-Например: wget [https://github.com/opencart/opencart/releases/download/3.0.3.1/opencart-3.0.3.1.zip](https://github.com/opencart/opencart/releases/download/3.0.3.1/opencart-3.0.3.1.zip)
+https://github.com/opencart/opencart/releases/download/<версия>/opencart-<версия>.zip
+```
+
+Например:
+
+```
+wget https://github.com/opencart/opencart/releases/download/3.0.3.1/opencart-3.0.3.1.zip
 ```
 
 8.  Распакуйте архив OpenCart, выполнив команду:
 
 ```
 sudo unzip opencart-<версия>.zip
-Например: sudo unzip opencart-3.0.3.1.zip
+```
+
+Например:
+
+```
+sudo unzip opencart-3.0.3.1.zip
 ```
 
 9.  Переместите файлы из текущего каталога в каталог /var/www/html/opencart, выполнив команду:
@@ -92,19 +102,33 @@ sudo mv /var/www/html/opencart/admin/config-dist.php /var/www/html/opencart/admi
 
 ```
 sudo chown -R имя_пользователя:www-data /var/www/html/opencart
-где имя_пользователя - это имя пользователя sudo, www-data - имя группы
-Например: sudo chown -R www-data:www-data /var/www/html/opencart
 ```
+
+где `имя_пользователя` - это имя пользователя sudo, `www-data` - имя группы
+Например:
+
+```
+sudo chown -R www-data:www-data /var/www/html/opencart
+```
+
+<warn>
 
 **Внимание**
 
 Во избежание ошибок веб-сервера Apache при запуске скриптов используйте имя пользователя www-data и имя группы www-data по умолчанию.
 
+</warn>
+
 14. Если необходимо предоставить доступ к файлам корневого каталога веб-сервера другому пользователю, включите этого пользователя в группу www-data, используя команду:
 
 ```
 sudo usermod -a -G www-data имя_пользователя
-Например: sudo usermod -a -G www-data ocuser
+```
+
+Например:
+
+```
+sudo usermod -a -G www-data ocuser
 ```
 
 15. Настройте права доступа к файлам и папкам корневого каталога, используя команду:
@@ -142,25 +166,44 @@ sudo mysql -u root -p 
 
 ```
 CREATE DATABASE имя_базы;
-Например: CREATE DATABASE opencartdb;
 ```
+
+Например:
+
+```
+CREATE DATABASE opencartdb;
+```
+
+<warn>
 
 **Внимание**
 
 После всех команд СУБД MySQL должна ставиться точка с запятой.
 
+</warn>
+
 4.  Создайте пользователя с правами полного доступа к созданной базе данных и назначьте ему пароль, используя команду:
 
 ```
 CREATE USER имя_пользователя@localhost IDENTIFIED BY 'пароль';
-Например: CREATE USER ocuser@localhost IDENTIFIED BY 'mypassword';
+```
+
+Например:
+
+```
+CREATE USER ocuser@localhost IDENTIFIED BY 'mypassword';
 ```
 
 5.  Предоставьте пользователю привилегии, необходимые для создания и изменения таблиц базы данных, выполнив команду:
 
 ```
 GRANT ALL PRIVILEGES ON  имя_базы.\* TO имя_пользователя@localhost;
-Например: GRANT ALL PRIVILEGES ON opencartdb.\* TO ocuser@localhost;
+```
+
+Например:
+
+```
+GRANT ALL PRIVILEGES ON opencartdb.\* TO ocuser@localhost;
 ```
 
 6.  Актуализируйте предоставление привилегий к таблицам базы данных, выполнив команду:
@@ -175,55 +218,51 @@ FLUSH PRIVILEGES;
 exit
 ```
 
-\*\*
-
 ## Установка OpenCart
 
 Для установки OpenCart в адресной строке веб-браузера введите следующее:
-
-\*\*
 
 ```
 http://<внешний IP-адрес вашего веб-сервера>/OpenCart
 ```
 
-\*\*
-
 В результате будет запущен мастер установки OpenCart, следуйте его указаниям:
-
-\*\*
 
 1.  Ознакомьтесь с лицензионным соглашением и нажмите кнопку **Continue**.
 2.  Проверьте конфигурационные параметры OpenCart. Убедитесь, что все поля с элементом **Status** выделены зеленым, и нажмите кнопку **Continue**.
-3.  Выберите конфигурацию базы данных:\*\*
+3.  Выберите конфигурацию базы данных:
 
-    ![](./assets/1554927135638-1554927135638.png)
+![](./assets/1554927135638-1554927135638.png)
 
-    \*\*Используйте имя пользователя базы данных, пароль и имя базы данных, которые вы указали при настройке СУБД MySQL [](https://docs.google.com/document/d/1rnpyTW7ZXIRdr5lmsYLyvWH3PcGEitDNetoq2mSyfTM/edit#heading=h.u2usy4a5aptn). Другим параметрам рекомендуется оставить значения по умолчанию.
+Используйте имя пользователя базы данных, пароль и имя базы данных, которые вы указали при настройке СУБД MySQL<!--[](https://docs.google.com/document/d/1rnpyTW7ZXIRdr5lmsYLyvWH3PcGEitDNetoq2mSyfTM/edit#heading=h.u2usy4a5aptn)-->. Другим параметрам рекомендуется оставить значения по умолчанию.
 
-4.  Создайте учетную запись администратора OpenCart:\*\*
+4.  Создайте учетную запись администратора OpenCart:
 
-    ![](./assets/1554927175401-1554927175401.png)
+![](./assets/1554927175401-1554927175401.png)
 
-    **Для запуска установки нажмите кнопку** Continue\*\*.
+**Для запуска установки нажмите кнопку** Continue.
 
 5.  Если установка OpenCart прошла успешно, отобразится следующая страница:
 
-    \***\*![](./assets/1554927703953-1554927703953.png)\*\***Чтобы начать работу, нажмите кнопку **Login to your administration**.
+![](./assets/1554927703953-1554927703953.png)
 
-6.  Выполните аутентификацию, используя имя и пароль, которые вы указали при создании учетной записи администратора OpenCart [](https://docs.google.com/document/d/1rnpyTW7ZXIRdr5lmsYLyvWH3PcGEitDNetoq2mSyfTM/edit#heading=h.2zc4fulm9yjh):\*\*
+Чтобы начать работу, нажмите кнопку **Login to your administration**.
 
-    ![](./assets/1554926936690-1554926936690.png)
+6.  Выполните аутентификацию, используя имя и пароль, которые вы указали при создании учетной записи администратора OpenCart.<!--[](https://docs.google.com/document/d/1rnpyTW7ZXIRdr5lmsYLyvWH3PcGEitDNetoq2mSyfTM/edit#heading=h.2zc4fulm9yjh):\*\*-->
 
-    \*\*
+![](./assets/1554926936690-1554926936690.png)
 
 7.  Если вы выполняете аутентификацию впервые, вам будет предложено переместить каталог Storage из веб-каталога:
 
 **![](./assets/1554930627121-1554930627121.png)**
 
+<warn>
+
 **Внимание**
 
 Перемещение каталога Storage позволяет повысить уровень безопасности данных и не влияет на работоспособность OpenCart. В случае отсутствия необходимости можно не выполнять это действие и просто закрыть окно с сообщением о перемещении каталога Storage.
+
+</warn>
 
 Для перемещения каталога Storage мы рекомендуем выбрать ручной метод (Manually Move) и выполнить следующее:
 
@@ -280,6 +319,8 @@ define('DIR_STORAGE', '/var/www/storage/');
 
 ![](./assets/1554928753836-1554928753836.png)
 
+<info>
+
 **Примечание**
 
 По завершении установки OpenCart удалите директорию с файлами установки. Для этого откройте терминал и выполните команду:
@@ -288,6 +329,8 @@ define('DIR_STORAGE', '/var/www/storage/');
 sudo rm -rf /var/www/html/opencart/install
 ```
 
-**Обратная связь**
+</info>
+
+## **Обратная связь**
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

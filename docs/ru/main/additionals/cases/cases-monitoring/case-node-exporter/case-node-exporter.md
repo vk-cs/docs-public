@@ -2,9 +2,13 @@
 
 Установленный и настроенный сервер ОС Ubuntu 18.04 LTS x86_64.
 
+<warn>
+
 **Внимание**
 
 При использовании серверов и оборудования других версий некоторые шаги сценария могут отличаться от описанных ниже.
+
+</warn>
 
 ## Схема работы
 
@@ -14,7 +18,7 @@
 
 **Prometheus** - центральный сервер, предназначенный для сбора и хранения данных. Данные постоянно изменяются во времени (например, уровень заполненности диска, трафик через сетевой интерфейс, время отклика сайта). Элементы данных называются метриками. Сервер Prometheus с заданной периодичностью считывает метрики и помещает полученные данные в Time Series DB. Time Series DB - это разновидность баз данных, предназначенная для хранения временных рядов (значений с привязкой ко времени). Кроме того, Prometheus предоставляет интерфейс для выполнения запросов и визуализации полученных данных. Язык запросов Prometheus называется PromQL. Prometheus работает по модели Pull, то есть он сам опрашивает endpoints с целью получения данных.
 
-**Exporters** \- процессы, обеспечивающие сбор и их передачу серверу Prometheus. Существует много разных exporters, например:
+**Exporters** — процессы, обеспечивающие сбор и их передачу серверу Prometheus. Существует много разных exporters, например:
 
 - Node_exporter - сбор системных метрик (процессор, память, и т.д.).
 - Mysqld_exporter - сбор метрик работы сервера MySQL.
@@ -22,7 +26,7 @@
 
 После запуска exporter начинает сбор соответствующих метрик и ожидает запросов от сервера Prometheus по заданному порту. Данных передаются в формате http.
 
-**Grafana** \- удобный frontend для визуализации накопленных данных, может использоваться для работы с данными сервера Prometheus, предоставляет различные преднастроенные Dashboard для отображения данных.
+**Grafana** — удобный frontend для визуализации накопленных данных, может использоваться для работы с данными сервера Prometheus, предоставляет различные преднастроенные Dashboard для отображения данных.
 
 Помимо функций сбора, анализа и визуализации данных, Prometheus и Grafana поддерживают настраиваемые оповещения. В Grafana этот механизм является встроенным, в Prometheus он реализуется отдельным компонентом (Alert_manager). Подробнее см. [тут](https://prometheus.io/docs/alerting/overview/).
 
@@ -35,9 +39,13 @@
 root@ubuntu-basic-1-1-10gb:~# export VERSION="<версия>"
 ```
 
+<info>
+
 **Примечание**
 
 Актуальную версию Prometheus можно [найти и скачать тут](https://prometheus.io/download/).[](https://prometheus.io/download/#mysqld_exporter)
+
+</info>
 
 3.  Создайте пользователя prometheus и группу prometheus, от имени которых вы будете запускать prometheus:
 
@@ -71,16 +79,20 @@ root@ubuntu-basic-1-1-10gb:~# mkdir /var/lib/prometheus
 ```
 
 8.  Скопируйте содержимое распакованного архива:
-    ```
-    root@ubuntu-basic-1-1-10gb:~# cp /tmp/prometheus-$VERSION.linux-amd64/prometheus /usr/local/bin
-    root@ubuntu-basic-1-1-10gb:~# cp /tmp/prometheus-$VERSION.linux-amd64/promtool /usr/local/bin
-    root@ubuntu-basic-1-1-10gb:~# cp /tmp/prometheus-$VERSION.linux-amd64/tsdb /usr/local/bin
-    root@ubuntu-basic-1-1-10gb:~# cp -r /tmp/prometheus-$VERSION.linux-amd64/console\* /etc/prometheus
-    ```
+
+```
+root@ubuntu-basic-1-1-10gb:~# cp /tmp/prometheus-$VERSION.linux-amd64/prometheus /usr/local/bin
+root@ubuntu-basic-1-1-10gb:~# cp /tmp/prometheus-$VERSION.linux-amd64/promtool /usr/local/bin
+root@ubuntu-basic-1-1-10gb:~# cp /tmp/prometheus-$VERSION.linux-amd64/tsdb /usr/local/bin
+root@ubuntu-basic-1-1-10gb:~# cp -r /tmp/prometheus-$VERSION.linux-amd64/console\* /etc/prometheus
+```
+
 9.  Удалите содержимое распакованного архива из папки /tmp:
-    ```
-    root@ubuntu-basic-1-1-10gb:~# rm -rf /tmp/prometheus-$VERSION.linux-amd64
-    ```
+
+```
+root@ubuntu-basic-1-1-10gb:~# rm -rf /tmp/prometheus-$VERSION.linux-amd64
+```
+
 10. Создайте конфигурационный файл /etc/prometheus/prometheus.yml со следующим содержимым:
 
 ```
@@ -167,9 +179,13 @@ Oct 16 07:26:46 ubuntu-basic-1-1-10gb prometheus[3980]: level=info ts=2019-10-16
 root@ubuntu-basic-1-1-10gb:~# export VERSION="0.18.1"
 ```
 
+<info>
+
 **Примечание**
 
 Актуальную версию node_exporter можно [найти и скачать тут](https://prometheus.io/download/) [](https://prometheus.io/download/#mysqld_exporter).
+
+</info>
 
 2.  Скачайте архив mysqld_exporter и распакуйте его в папку /tmp:
 
@@ -178,9 +194,11 @@ root@ubuntu-basic-1-1-10gb:~# wget  https://github.com/prometheus/node_exporter
 ```
 
 3.  Скопируйте содержимое распакованного архива в папку /usr/local/bin:
-    ```
-    root@ubuntu-basic-1-1-10gb:~# cp  /tmp/node_exporter-$VERSION.linux-amd64/node_exporter /usr/local/bin
-    ```
+
+```
+root@ubuntu-basic-1-1-10gb:~# cp  /tmp/node_exporter-$VERSION.linux-amd64/node_exporter /usr/local/bin
+```
+
 4.  Измените владельца созданных файлов:
 
 ```
@@ -250,9 +268,13 @@ static_configs:
       - targets: ['localhost:9100']
 ```
 
+<info>
+
 **Примечание**
 
 Секция scrape_configs предназначена для описания целей и средств мониторинга. Подробно о настройках см. в [документации](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_config).
+
+</info>
 
 В примере выше мы настроили сбор данных по адресу **localhost** и порту 9100, на котором запущен node_exporter, присвоили задаче имя node и указали, что сбор данных должен выполняться каждые 10 секунд.
 
@@ -341,9 +363,13 @@ access: proxy
 url: http://localhost:9090
 ```
 
+<info>
+
 **Примечание**
 
 Provisioning - новая возможность Grafana по преднастройке сервера. В данном случае мы настраиваем источник данных Prometheus в процессе установки, чтобы не делать это потом в веб-интерфейсе Grafana.
+
+</info>
 
 6.  Измените владельца файла /etc/grafana/provisioning/datasources/prometheus.yml:
 
@@ -351,9 +377,13 @@ Provisioning - новая возможность Grafana по преднастр
 root@ubuntu-basic-1-1-10gb:~# chown grafana:grafana /etc/grafana/provisioning/datasources/prometheus.yml
 ```
 
+<info>
+
 **Примечание**
 
 Мы подключили Prometheus к Grafana. Если Prometheus физически расположен на другом сервере, измените localhost на IP-адрес сервера Prometheus.
+
+</info>
 
 7.  Запустите Grafana:
 
@@ -404,9 +434,7 @@ Oct 16 13:28:23 ubuntu-basic-1-1-10gb grafana-server[6958]: t=2019-10-16T13:28:2
 
 11. Установите Dashboard для визуализации Node Exporter ([готовые Dashboard](https://grafana.com/grafana/dashboards), [популярный Dashboard для Node Exporter](https://grafana.com/grafana/dashboards/1860)). Для установки в веб-интерфейсе перейдите в Dashboards/Manage:
 
-    \*\*![](./assets/1572598970101-1572598970101.png)
-
-    \*\*
+![](./assets/1572598970101-1572598970101.png)
 
 12. Нажмите Import и в поле Grafana.com Dashboard введите [https://grafana.com/grafana/dashboards/1860:](https://grafana.com/grafana/dashboards/1860:)
 
@@ -416,11 +444,9 @@ Oct 16 13:28:23 ubuntu-basic-1-1-10gb grafana-server[6958]: t=2019-10-16T13:28:2
 
 **![](./assets/1572600758994-1572600758994.png)**
 
-13. Откроется Dashboard:\*\*
+13. Откроется Dashboard:
 
-    ![](./assets/1572600780117-1572600780117.png)
-
-    \*\*
+![](./assets/1572600780117-1572600780117.png)
 
 ## Создание тестовой нагрузки
 
@@ -436,18 +462,18 @@ root@ubuntu-basic-1-1-10gb:~# apt -y install sysbench
 
 2.  Запустите серию тестов:
 
-    ```
-    root@ubuntu-basic-1-1-10gb:~# sysbench cpu  --cpu-max-prime=2000000 --time=60 run
+```
+root@ubuntu-basic-1-1-10gb:~# sysbench cpu  --cpu-max-prime=2000000 --time=60 run
 
-    root@ubuntu-basic-1-1-10gb:~# sysbench memory --cpu-max-prime=2000000 --time=60 run
+root@ubuntu-basic-1-1-10gb:~# sysbench memory --cpu-max-prime=2000000 --time=60 run
 
-    root@ubuntu-basic-1-1-10gb:~# sysbench fileio --file-test-mode=rndrw --time=60 prepare
-    root@ubuntu-basic-1-1-10gb:~# sysbench fileio --file-test-mode=rndrw --time=60 run
+root@ubuntu-basic-1-1-10gb:~# sysbench fileio --file-test-mode=rndrw --time=60 prepare
+root@ubuntu-basic-1-1-10gb:~# sysbench fileio --file-test-mode=rndrw --time=60 run
 
-    root@ubuntu-basic-1-1-10gb:~# sysbench threads --time=60 run
+root@ubuntu-basic-1-1-10gb:~# sysbench threads --time=60 run
 
-    root@ubuntu-basic-1-1-10gb:~# sysbench mutex --time=60 run
-    ```
+root@ubuntu-basic-1-1-10gb:~# sysbench mutex --time=60 run
+```
 
 В результате тестовой нагрузки графики в Grafana изменяться:
 
@@ -490,6 +516,6 @@ root@ubuntu-basic-1-1-10gb:~# userdel prometheus
 root@ubuntu-basic-1-1-10gb:~# groupdel prometheus
 ```
 
-**Обратная связь**
+## **Обратная связь**
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

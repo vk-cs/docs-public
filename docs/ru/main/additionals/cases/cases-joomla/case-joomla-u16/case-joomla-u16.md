@@ -28,25 +28,44 @@ sudo mysql -u root -p 
 
 ```
 CREATE DATABASE имя_базы;
-Например: CREATE DATABASE joomla;
 ```
+
+Например:
+
+```
+CREATE DATABASE joomla;
+```
+
+<warn>
 
 **Внимание**
 
 После всех команд СУБД MySQL должна ставиться точка с запятой.
 
+</warn>
+
 4.  Создайте пользователя с правами полного доступа к созданной базе данных и назначьте ему пароль, используя команду:
 
 ```
 CREATE USER имя_пользователя@localhost IDENTIFIED BY 'пароль';
-Например: CREATE USER [juser@localhost](mailto:juser@localhost) IDENTIFIED BY 'mypassword';
+```
+
+Например:
+
+```
+CREATE USER [juser@localhost](mailto:juser@localhost) IDENTIFIED BY 'mypassword';
 ```
 
 5.  Предоставьте пользователю необходимые привилегии для создания и изменения таблиц базы данных, выполнив команду:
 
 ```
 GRANT ALL PRIVILEGES ON  имя_базы.\* TO имя_пользователя@localhost;
-Например: GRANT ALL PRIVILEGES ON joomla.\* TO [juser@localhost](mailto:juser@localhost);
+```
+
+Например:
+
+```
+GRANT ALL PRIVILEGES ON joomla.\* TO [juser@localhost](mailto:juser@localhost);
 ```
 
 6.  Актуализируйте предоставление привилегий к таблицам базы данных, выполнив команду:
@@ -65,9 +84,9 @@ exit
 
 Перед установкой Joomla!:
 
-1.  Перейдите на сайт [https://github.com/joomla/joomla-cms/releases](https://github.com/joomla/joomla-cms/releases) и запомните номер последней версии Joomla!:
+1.  Перейдите на [сайт](https://github.com/joomla/joomla-cms/releases) и запомните номер последней версии Joomla!:
 
-    ![](./assets/1553373673333-1553373673333.png)
+![](./assets/1553373673333-1553373673333.png)
 
 2.  Откройте окно терминала.
 3.  Перейдите в домашний каталог, выполнив команду:
@@ -76,7 +95,7 @@ exit
 cd ~
 ```
 
-3.  Создайте временный каталог tempJL, выполнив команду:
+3.  Создайте временный каталог `tempJL`, выполнив команду:
 
 ```
 mkdir tempJL
@@ -95,20 +114,20 @@ wget https://github.com/joomla/joomla-cms/releases/download/<номер верс
 Например: wget [https://github.com/joomla/joomla-cms/releases/download/3.9.3/Joomla_3.9.3-Stable-Full_Package.tar.gz](https://github.com/joomla/joomla-cms/releases/download/3.9.3/Joomla_3.9.3-Stable-Full_Package.tar.gz)
 ```
 
-6.  Создайте папку Joomla, выполнив команду:
+6.  Создайте папку `Joomla`, выполнив команду:
 
 ```
 sudo mkdir /var/www/html/joomla
 ```
 
-7.  Распакуйте и переместите файлы из текущего каталога в каталог /var/www/html/Joomla, выполнив команду:
+7.  Распакуйте и переместите файлы из текущего каталога в каталог `/var/www/html/Joomla`, выполнив команду:
 
 ```
 sudo tar -xvzf Joomla_<номер версии>-Stable-Full_Package.tar.gz -C /var/www/html/joomla
 Например: sudo tar -xvzf Joomla_3.9.3-Stable-Full_Package.tar.gz -C /var/www/html/joomla
 ```
 
-8.  Удалите временный каталог tempJL, выполнив команду:
+8.  Удалите временный каталог `tempJL`, выполнив команду:
 
 ```
 rm -Rf ~/tempJL
@@ -118,19 +137,33 @@ rm -Rf ~/tempJL
 
 ```
 sudo chown -R имя_пользователя:www-data /var/www/html/
-где имя_пользователя - имя пользователя sudo, www-data - имя группы
-Например: sudo chown -R www-data:www-data /var/www/html/joomla/
 ```
+
+где `имя_пользователя` - имя пользователя sudo, `www-data` - имя группы
+Например:
+
+```
+sudo chown -R www-data:www-data /var/www/html/joomla/
+```
+
+<info>
 
 **Примечание**
 
 Во избежание ошибок веб-сервера Apache при запуске скриптов используйте имя пользователя www-data и имя группы www-data по умолчанию.
 
+</info>
+
 10. Если необходимо предоставить доступ к файлам корневого каталога веб-сервера другому пользователю, включите этого пользователя в группу www-data, используя команду:
 
 ```
 sudo usermod -a -G www-data имя_пользователя
-Например: sudo usermod -a -G www-data wuser
+```
+
+Например:
+
+```
+sudo usermod -a -G www-data wuser
 ```
 
 11. Настройте права доступа к файлам и папкам, выполнив команду:
@@ -139,7 +172,7 @@ sudo usermod -a -G www-data имя_пользователя
 sudo chmod -R 755 /var/www
 ```
 
-12. Чтобы настроить Joomla!, создайте конфигурационный файл joomla.conf в директории /etc/apache2/sites-available/, выполнив команду:
+12. Чтобы настроить Joomla!, создайте конфигурационный файл `joomla.conf` в директории `/etc/apache2/sites-available/`, выполнив команду:
 
 ```
 sudo nano /etc/apache2/sites-available/joomla.conf
@@ -161,7 +194,7 @@ CustomLog /var/log/apache2/joomla-access_log common
 
 Cохраните изменения, используя сочетание клавиш CTRL+O, и завершите редактирование, используя сочетание клавиш CTRL+X.
 
-14. Отключите сайт по умолчанию 000-default.conf, используя команду:
+14. Отключите сайт по умолчанию `000-default.conf`, используя команду:
 
 ```
 sudo a2dissite 000-default.conf
@@ -189,9 +222,13 @@ sudo service apache2 reload
 
 2.  На странице **Конфигурация базы данных** укажите настройки базы данных и нажмите кнопку **Далее**:
 
+<info>
+
 **Примечание**
 
 В настройках базы данных укажите имя пользователя базы данных, пароль и имя базы данных, которые вы выбрали при настройке БД MySQL.
+
+</info>
 
 **![](./assets/1553375380629-1553375380629.png)**
 
@@ -208,6 +245,6 @@ sudo service apache2 reload
 
 **![](./assets/1553375486854-1553375486854.png)**
 
-**Обратная связь**
+## Обратная связь
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

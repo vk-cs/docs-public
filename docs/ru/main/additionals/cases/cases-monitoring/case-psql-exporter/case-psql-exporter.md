@@ -6,9 +6,13 @@
 - Grafana 6.4.2 на ОС Ubuntu 18.04 LTS x86_64.
 - PostgreSQL 10 на ОС Ubuntu 18.04 LTS x86_64.
 
+<warn>
+
 **Внимание**
 
 При использовании серверов и оборудования других версий некоторые шаги сценария могут отличаться, от описанных ниже.
+
+</warn>
 
 ## Схема работы
 
@@ -25,9 +29,13 @@
 root@postgresql:~# export VERSION="<версия>"
 ```
 
+<info>
+
 **Примечание**
 
 Актуальную версию postgres_exporter можно [найти и скачать тут](https://github.com/wrouesnel/postgres_exporter/releases).
+
+</info>
 
 3.  Скачайте архив postgres_exporter и распакуйте его в папку /tmp:
 
@@ -36,13 +44,17 @@ root@postgreql:~# wget https://github.com/wrouesnel/postgres_exporter/releases/d
 ```
 
 4.  Скопируйте содержимое распакованного архива в папку /usr/local/bin:
-    ```
-    root@postgresql:~# cp /tmp/postgres_exporter_v$VERSION_linux-amd64/postgres_exporter /usr/local/bin
-    ```
+
+```
+root@postgresql:~# cp /tmp/postgres_exporter_v$VERSION_linux-amd64/postgres_exporter /usr/local/bin
+```
+
 5.  Удалите содержимое распакованного архива из папки /tmp:
-    ```
-    root@postgresql:~# rm -rf /tmp/postgres_exporter_v$VERSION_linux-amd64
-    ```
+
+```
+root@postgresql:~# rm -rf /tmp/postgres_exporter_v$VERSION_linux-amd64
+```
+
 6.  Измените владельца postgres_exporter на postgres:
 
 ```
@@ -67,9 +79,13 @@ ExecStart=/usr/local/bin/postgres_exporter
 WantedBy=multi-user.target
 ```
 
+<info>
+
 **Примечание**
 
 Параметр Environment описывает передаваемые параметры доступа к серверу PostgreSQL. Если вы используете нестандартную инсталляцию PostgreSQL либо сервер и exporter расположены на разных нодах, [настройте этот параметр](https://godoc.org/github.com/lib/pq).
+
+</info>
 
 8.  Запустите postgres_exporter:
 
@@ -99,9 +115,13 @@ Oct 07 09:01:26 postgresql postgres_exporter[4144]: time="2019-10-07T09:01:26+0
 Oct 07 09:01:26 postgresql postgres_exporter[4144]: time="2019-10-07T09:01:26+03:00" level=info msg="Starting Server: :9187" source="postgres_exporter.go:1437"
 ```
 
+<warn>
+
 **Внимание**
 
 По умолчанию postgres_exporter запускается на порту 9187, который должен быть доступен серверу Prometheus. При необходимости настройте межсетевой экран соответствующим образом.
+
+</warn>
 
 ## Настройка Prometheus для получения данных postgres_exporter
 
@@ -202,6 +222,7 @@ number of transactions actually processed: 26183
 Чтобы удалить postgres_exporter:
 
 1.  Удалите Dashboard из Grafana.
+
 2.  Из конфигурационного файла prometheus удалите секцию - job_name: postgresql.
 
 3.  На сервере с postres_exporter выполните команды:
@@ -215,6 +236,6 @@ root@postgresql:~# systemctl daemon-reload
 root@postgresql:~# rm -f /usr/local/bin/postgres_exporter
 ```
 
-**Обратная связь**
+## **Обратная связь**
 
 Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

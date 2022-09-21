@@ -1,212 +1,254 @@
-Joomla! - система управления содержимым (CMS), написанная на языках PHP и JavaScript и использующая в качестве хранилища базы данных СУБД MySQL. Joomla! предлагает нативный bootstrap, мультиязычную среду, множество всевозможных модулей расширений, а также высокую безопасность. Joomla! распространяется по лицензии GNU/GPL и может использоваться бесплатно.
+Joomla! is a content management system (CMS) written in PHP and JavaScript and using the MySQL DBMS as a database storage. Joomla! offers native bootstrap, multilingual environment, many different extension modules, as well as high security. Joomla! distributed under the GNU/GPL license and can be used free of charge.
 
-## Требования
+## Requirements
 
-- Операционная система CentOS версии 7.5.
-- Пользователь с доступом к команде sudo.
-- Установленный стек LAMP.
+- Operating system CentOS version 7.5.
+- A user with access to the sudo command.
+- Installed LAMP stack.
 
-Если у вас еще не установлен стек LAMP:
+If you don't already have the LAMP stack installed:
 
-- Вы можете получить готовый стек LAMP в облаке [в виде настроенной виртуальной машины](https://mcs.mail.ru/app/services/marketplace/) на Ubuntu 18.04 и [установить Joomla! на нем](https://mcs.mail.ru/help/joomla-on-linux/joomla-ubuntu-18). При регистрации вы получаете бесплатный бонусный счет, которого хватает, чтобы тестировать сервер несколько дней.
-- Вы можете установить стек LAMP самостоятельно. О том, как установить стек LAMP на CentOS 7.5, [читайте тут](https://mcs.mail.ru/help/lamp-on-linux/lamp-centos-7-5).
+- You can get a ready-made LAMP stack in the cloud [as a configured virtual machine](https://mcs.mail.ru/app/services/marketplace/) on Ubuntu 18.04 and [install Joomla! on it](https://mcs.mail.ru/help/joomla-on-linux/joomla-ubuntu-18). When registering, you get a free bonus account, which is enough to test the server for several days.
+- You can install the LAMP stack yourself. For information on how to install the LAMP stack on CentOS 7.5, [read here](https://mcs.mail.ru/help/lamp-on-linux/lamp-centos-7-5).
 
-## Настройка СУБД MySQL
+## MySQL database setup
 
-Чтобы начать работу с Joomla!, необходимо создать и настроить выделенную базу данных MySQL. Для этого:
+To get started with Joomla!, you need to create and set up a dedicated MySQL database. For this:
 
-1.  Откройте окно терминала.
-2.  Для перехода в оболочку MySQL выполните команду:
-
-```
-sudo mysql -u root -p 
-```
-
-Используйте аутентификацию учетной записи root, которая относится исключительно к СУБД MySQL.
-
-3.  Создайте базу данных для Joomla!, используя команду:
+1. Open a terminal window.
+2. To switch to the MySQL shell, run the command:
 
 ```
-CREATE DATABASE имя_базы;
-Например: CREATE DATABASE joomla;
+sudo mysql -u root -p
 ```
 
-**Внимание**
+Use root authentication, which is exclusive to MySQL.
 
-После каждой команды СУБД MySQL должна ставиться точка с запятой.
-
-4.  Создайте пользователя с правами полного доступа к созданной базе данных и назначьте ему пароль, используя команду:
+3. Create a database for Joomla! using the command:
 
 ```
-CREATE USER имя_пользователя@localhost IDENTIFIED BY 'пароль';
-Например: CREATE USER [juser@localhost](mailto:juser@localhost) IDENTIFIED BY 'mypassword';
+CREATE DATABASE database_name;
 ```
 
-5.  Предоставьте пользователю необходимые привилегии для создания и изменения таблиц базы данных, выполнив команду:
+For example:
 
 ```
-GRANT ALL PRIVILEGES ON  имя_базы.\* TO имя_пользователя@localhost;
-Например: GRANT ALL PRIVILEGES ON joomla.\* TO [juser@localhost](mailto:juser@localhost);
+CREATE DATABASE joomla;
 ```
 
-6.  Актуализируйте предоставление привилегий к таблицам базы данных, выполнив команду:
+<warn>
+
+**Attention**
+
+Each MySQL DBMS command must be followed by a semicolon.
+
+</warn>
+
+4. Create a user with full access rights to the created database and assign a password to it using the command:
+
+```
+CREATE USER username@localhost IDENTIFIED BY 'password';
+```
+
+For example:
+
+```
+CREATE USER [juser@localhost](mailto:juser@localhost) IDENTIFIED BY 'mypassword';
+```
+
+5. Grant the user the necessary privileges to create and modify database tables by running the command:
+
+```
+GRANT ALL PRIVILEGES ON dbasename.\* TO username@localhost;
+```
+
+For example:
+
+```
+GRANT ALL PRIVILEGES ON joomla.\* TO [juser@localhost](mailto:juser@localhost);
+```
+
+6. Update the granting of privileges to database tables by running the command:
 
 ```
 FLUSH PRIVILEGES;
 ```
 
-7.  Выйдите из оболочки MySQL, выполнив команду:
+7. Exit the MySQL shell by running the command:
 
 ```
 exit
 ```
 
-## Подготовка к установке Joomla!
+## Preparing to install Joomla!
 
-Перед установкой Joomla!:
+Before installing Joomla!:
 
-1.  Перейдите на сайт [https://github.com/joomla/joomla-cms/releases](https://github.com/joomla/joomla-cms/releases) и запомните номер последней версии Joomla!:
+1. Go to [website](https://github.com/joomla/joomla-cms/releases) and note the latest Joomla! version number:
 
-    ![](./assets/1553373673333-1553373673333.png)
+![](./assets/1553373673333-1553373673333.png)
 
-2.  Откройте окно терминала.
-3.  Перейдите в домашний каталог, выполнив команду:
+2. Open a terminal window.
+3. Change to your home directory by running the command:
 
 ```
 cd ~
 ```
 
-4.  Создайте временный каталог tempJL, выполнив команду:
+4. Create a temporary directory `tempJL` by running the command:
 
 ```
 mkdir tempJL
 ```
 
-5.  Перейдите в созданный каталог, выполнив команду:
+5. Change to the created directory by running the command:
 
 ```
 cd ~/tempJL
 ```
 
-6.  Скачайте последнюю версию Joomla!, выполнив команду:
+6. Download the latest version of Joomla! by running the command:
 
 ```
-wget https://github.com/joomla/joomla-cms/releases/download/<номер версии>/Joomla_<номер версии>-Stable-Full_Package.tar.gz
-Например: wget [https://github.com/joomla/joomla-cms/releases/download/3.9.3/Joomla_3.9.3-Stable-Full_Package.tar.gz](https://github.com/joomla/joomla-cms/releases/download/3.9.3/Joomla_3.9.3-Stable-Full_Package.tar.gz)
+wget https://github.com/joomla/joomla-cms/releases/download/<version number>/Joomla_<version number>-Stable-Full_Package.tar.gz
+For example: wget [https://github.com/joomla/joomla-cms/releases/download/3.9.3/Joomla_3.9.3-Stable-Full_Package.tar.gz](https://github.com/joomla/joomla -cms/releases/download/3.9.3/Joomla_3.9.3-Stable-Full_Package.tar.gz)
 ```
 
-7.  Создайте папку Joomla, выполнив команду:
+7. Create the `Joomla` folder by running the command:
 
 ```
 sudo mkdir /var/www/html/joomla
 ```
 
-8.  Распакуйте и переместите файлы из текущего каталога в каталог /var/www/html/Joomla, выполнив команду:
+8. Unpack and move the files from the current directory to the `/var/www/html/Joomla` directory by running the command:
 
 ```
-sudo tar -xvzf Joomla_<номер версии>-Stable-Full_Package.tar.gz -C /var/www/html/joomla
-Например: sudo tar -xvzf Joomla_3.9.3-Stable-Full_Package.tar.gz -C /var/www/html/joomla
+sudo tar -xvzf Joomla_<version number>-Stable-Full_Package.tar.gz -C /var/www/html/joomla
 ```
 
-9.  Удалите временный каталог tempJL, выполнив команду:
+For example:
+
+```
+sudo tar -xvzf Joomla_3.9.3-Stable-Full_Package.tar.gz -C /var/www/html/joomla
+```
+
+9. Remove the temporary directory `tempJL` by running the command:
 
 ```
 rm -Rf ~/tempJL
 ```
 
-10. Замените владельца каталогов и файлов в корневом каталоге веб-сервера, используя команду:
+10. Change the owner of directories and files in the root directory of the web server using the command:
 
 ```
-sudo chown -R имя_пользователя:apache /var/www/html/joomla
-где имя_пользователя - имя пользователя sudo, apache - имя группы
-Например: sudo chown -R apache:apache /var/www/html/joomla
+sudo chown -R username:apache /var/www/html/joomla
 ```
 
-**Примечание**
-
-Во избежание ошибок веб-сервера Apache при запуске скриптов используйте имя пользователя apache и имя группы apache по умолчанию.
-
-11. Если необходимо предоставить доступ к файлам корневого каталога веб-сервера другому пользователю, включите этого пользователя в группу apache, используя команду:
+where `username` is the name of the sudo user, `apache` is the name of the group
+For example:
 
 ```
-sudo usermod -a -G apache имя_пользователя
-Например: sudo usermod -a -G apache user
+sudo chown -R apache:apache /var/www/html/joomla
 ```
 
-12. Настройте права доступа к файлам и папкам, выполнив команду:
+<info>
+
+**Note**
+
+To avoid Apache web server errors when running scripts, use the default apache username and the default apache group name.
+
+</info>
+
+11. If you need to grant access to the web server root directory files to another user, include this user in the apache group using the command:
+
+```
+sudo usermod -a -G apache username
+```
+
+For example:
+
+```
+sudo usermod -a -G apache user
+```
+
+12. Set the permissions for files and folders by running the command:
 
 ```
 sudo chmod -R 755 /var/www/
 ```
 
-13. Перезагрузите веб-сервер Apache, выполнив команду:
+13. Restart the Apache web server by running the command:
 
 ```
 sudo systemctl restart httpd.service
 ```
 
-## Установка Joomla!
+## Installing Joomla!
 
-Для установки Joomla! в адресной строке веб-браузера укажите:
+To install Joomla! in the address bar of your web browser enter:
 
 ```
-http://<внешний IP-адрес веб-сервера>/joomla
+http://<web server external IP address>/joomla
 ```
 
-Нажмите клавишу **Enter**. В результате будет запущен мастер установки Joomla!, следуйте его указаниям:
+Press the **Enter** key. This will launch the Joomla! installation wizard, follow its instructions:
 
-1.  На странице **Конфигурация сайта** укажите название сайта, информацию для учетной записи администратора и нажмите кнопку **Далее**.
+1. On the **Site Configuration** page, enter the site name, administrator account information, and click **Next**.
 
 **![](./assets/1556226179680-1556226179680.png)**
 
-2.  На странице **Конфигурация базы данных** укажите настройки базы данных и нажмите кнопку **Далее**.
+2. On the **Database Configuration** page, specify the database settings and click the **Next** button.
 
-**Примечание**
+<info>
 
-В настройках базы данных укажите имя пользователя базы данных, пароль и имя базы данных, которые вы выбрали при настройке СУБД MySQL.
+**Note**
+
+In the database settings, specify the database username, password, and database name that you chose when setting up the MySQL DBMS.
+
+</info>
 
 **![](./assets/1559854618176-1559854618176.jpeg)**
 
-3.  При необходимости на странице **Конфигурация FTP** настройте параметры доступа к сайту для протокола FTP и нажмите кнопку **Далее**.
+3. If necessary, on the **FTP Configuration** page, configure the site access settings for the FTP protocol and click the **Next** button.
 
 **![](./assets/1559854645953-1559854645953.jpeg)**
 
-4.  На последней странице проверьте выбранные параметры Joomla!, при необходимости отправьте их по электронной почте и нажмите кнопку **Установка**.
+4. On the last page, check the selected Joomla! options, email them if necessary, and click the **Install** button.
 
 **![](./assets/1556226327302-1556226327302.png)**
 
-5.  Когда Joomla! будет установлена, отобразится страница с соответствующей информацией:
+5. When Joomla! will be installed, a page with the relevant information will be displayed:
 
 ![](./assets/1553375460786-1553375460786.png)
 
-6.  Если отобразилось сообщение о проблеме создания конфигурационного файла:
+6. If a message about the problem of creating the configuration file is displayed:
 
 **![](./assets/1556227255049-1556227255049.png)**
 
-Выполните следующее:
+Do the following:
 
-- Скопируйте код, находящийся в окне сообщения, в буфер.
-- Откройте окно терминала.
-- Создайте файл configuration.php, выполнив команду:
+- Copy the code in the message box to the clipboard.
+- Open a terminal window.
+- Create a `configuration.php` file by running the command:
 
 ```
 sudo nano /var/www/html/joomla/configuration.php
 ```
 
-- В файл configuration.php вставьте код из буфера.
-- Сохраните изменения, используя сочетание клавиш CTRL+O.
-- Завершите редактирование, используя сочетание клавиш CTRL+X.
+- In the `configuration.php` file, paste the code from the clipboard.
+- Save your changes using the keyboard shortcut CTRL+O.
+- Finish editing using the keyboard shortcut CTRL+X.
 
-7.  Чтобы завершить установку Joomla!, удалите директорию Installation. Для этого откройте окно терминала и выполните команду:
+7. To complete the Joomla! installation, delete the Installation directory. To do this, open a terminal window and run the command:
 
 ```
 sudo rm -rf /var/www/html/joomla/installation/
 ```
 
-8.  Для перехода на главную страницу вашего сайта нажмите кнопку **Сайт**:
+8. To go to the main page of your site, click the **Site** button:
 
 **![](./assets/1553375486854-1553375486854.png)**
 
-**Обратная связь**
+## Feedback
 
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
+Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).
