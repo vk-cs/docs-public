@@ -2,9 +2,9 @@ In Kubernetes aaS from VK Cloud, a new version is added 1 month after the offici
 
 At the moment, Kubernetes aaS from VK Cloud has a similar version of Kubernetes:
 
+- 1.23.6
 - 1.22.6
 - 1.21.4
-- 1.20.4
 
 [Creating a new cluster](../../../manage-k8s/create-k8s) maximizes Kubernetes version availability. We recommend [updating the cluster](../../../manage-k8s/update-k8s) to the latest version available, if possible.
 
