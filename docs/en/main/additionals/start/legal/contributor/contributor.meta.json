@@ -1,12 +1,13 @@
 {
-    "title": "Contributor License Agreement",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Contributor License Agreement - VK Cloud",
-    "metaDescription": "Contributor License Agreement платформы «VK Cloud»",
-    "sectionTitle": "Contributor License Agreement",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 13
-  }
+  "title": "Contributor License Agreement",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Contributor License Agreement - VK Cloud",
+  "metaDescription": "Contributor License Agreement платформы «VK Cloud»",
+  "sectionTitle": "Contributor License Agreement",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 13,
+  "uuid": "73e42643-683d-4e6c-9575-4648f01f532e"
+}
