@@ -18,7 +18,15 @@ test_bucket_name = 'boto3-test-bucket-name'
 s3_client.create_bucket(Bucket=test_bucket_name)
 ```
 
-В [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.create_bucket) дано подробное описание команды CREATE_BICKET.
+<warn>
+
+**Внимание**
+
+Названия бакетов должны быть уникальны для всех проектов сервиса Объектное хранилище. Нельзя создать два бакета с одинаковыми именами даже в разных проектах.
+
+</warn>
+
+В [официальной документации к библиотеке boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.create_bucket) дано подробное описание команды CREATE_BUCKET.
 
 ## Получение списка бакетов
 
