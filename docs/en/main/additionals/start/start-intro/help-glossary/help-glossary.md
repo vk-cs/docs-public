@@ -30,7 +30,7 @@ The size and type of discs is set individually when creating them in accordance 
 
 ## Availability Zone
 
-Availability zone - logical division and combination of hypervisors for their physical isolation and fault tolerance. MS1 and DP1 are zones physically located in different data centers.
+Availability zone - logical division and combination of hypervisors for their physical isolation and fault tolerance. MS1 and GZ1 are zones physically located in different data centers.
 
 ## Key pair
 
