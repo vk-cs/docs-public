@@ -60,12 +60,11 @@ pip3 install -UI python-openstackclient
 
 #### Windows
 
-Прежде чем начать, следует установить последнюю версию [Python3](https://www.python.org/downloads/window) и [Microsoft Build Tools](https://visualstudio.microsoft.com/ru/visual-cpp-build-tools/). В установщике Visual Studio необходимо выбрать "Средства сборки C++" в разделе "Рабочие нагрузки", в компонентах установки отметить только пакет SDK для Windows 10 и MSVC - средства сборки C++.
+Прежде чем начать, следует установить последнюю версию [Python3](https://www.python.org/downloads/window).
 
 Далее, выполните следующие команды в командной строке:
 
 ```bash
-pip3 install -UI pbr setuptools pytz wheel
 pip3 install -UI python-openstackclient
 ```
 
