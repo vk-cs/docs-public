@@ -4,6 +4,12 @@ Sharing an image in several projects allows you to reproach the deployment of in
 
 When creating an image, select "Allow access to all projects".
 
+<warn>
+
+Sharing the image is required from the project owner account.
+
+</warn>
+
 In this case, the image will not appear in other projects automatically — but a suggestion will appear to add it to the project.
 
 ## OpenStack CLI
