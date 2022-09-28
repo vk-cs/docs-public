@@ -1,5 +1,5 @@
 C помощью Terraform можно управлять инфраструктурой в облаке как кодом (IaС). Это позволяет затрачивать меньше времени на рутинные операции и снижает риск возникновения ошибок за счет использования скриптов.
 
-Подробнее о работе с Terraform в инфраструктуре VK Cloud можно узнать [на портале документации Terraform](https://registry.terraform.io/providers/MailRuCloudSolutions/mcs/latest/docs).
+Подробнее о работе с Terraform в инфраструктуре VK Cloud можно узнать [на портале документации Terraform](https://mcs.mail.ru/docs/ru/additionals/terraform).
 
 Для использования Terraform необходимо загрузить файл конфигурации openrc в [настройках проекта в личном кабинете](https://mcs.mail.ru/app/project/terraform/). Для каждого региона существует свой файл конфигурации. Подробнее о регионах можно узнать в статье [Регионы](../../../../../additionals/account/concepts/regions).
