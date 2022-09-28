@@ -6,7 +6,7 @@ Quotas are organizational restrictions on the operational activity of each proje
 
 Quotas are enforced by granting or reserving resources when a request is made, such as when creating a new virtual machine. If resource allocation is not possible, the request to create the resource is denied. If the reservation succeeds, the operation continues until the reservation is either converted to use (the operation was successful) or rolled back (the operation failed).
 
-When a project is created, minimum quotas are assigned. Quotas differ depending on the region of the project. For more information about regions, see the article [Regions](/ru/additionals/start/user-account/regions)
+When a project is created, minimum quotas are assigned. Quotas differ depending on the region of the project. For more information about regions, see the article [Regions](/ru/additionals/start/user-account/regions).
 
 There are several types of message about insufficient quotas in a project: When creating a resource in the create request window for High-IOPS SSDs or (for some entities) when trying to create an entity.
 
@@ -14,7 +14,7 @@ There are several types of message about insufficient quotas in a project: When 
 
 When a project is created, it is assigned default resource quotas for all new projects. Each new project does not inherit the available number of quotas from existing projects.
 
-Quotas differ depending on the region of the project. For more information about regions, see the article [Regions](/ru/additionals/account/concepts/regions)
+Quotas differ depending on the region of the project. For more information about regions, see the article [Regions](/ru/additionals/account/concepts/regions).
 
 The display of basic quotas for resources is located at the top of the window of each service.
 
