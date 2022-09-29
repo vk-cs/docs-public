@@ -36,9 +36,9 @@ https://hb.bizmrg.com/<имя_бакета>/<имя_ключа>?
      X-Amz-Algorithm=AWS4-HMAC-SHA256
     &X-Amz-Expires=<интервал времени в секундах>
     &X-Amz-SignedHeaders=<список заголовков разделенный символами ";">
-    &X-Amz-Signature=<подпись>
     &X-Amz-Date=<время в формате ISO 8601>
     &X-Amz-Credential=<access-key-id>/<YYYYMMDD>/ru-msk/s3/aws4_request
+    &X-Amz-Signature=<подпись>
 ```
 
 Где:
