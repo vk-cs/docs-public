@@ -39,8 +39,8 @@ curl -i -H "Content-Type: application/json" -d '
 
 2. Запросите логи по токену:
 
-```
-curl -G -d"from=`date +%Y-%m-%dT00:00:00 --date=today`&to=`date +%Y-%m-%dT00:00:00 --date=tomorrow`"'https://mcs.mail.ru/cloudlogs/v1/logs'-H "X-Auth-Token: `cat token`"
+```bash
+curl -G -d"from=`date +%Y-%m-%dT00:00:00 --date=today`&to=`date +%Y-%m-%dT00:00:00 --date=tomorrow`" 'https://mcs.mail.ru/cloudlogs/v1/logs' -H "X-Auth-Token: `cat token`"
 ```
 
 </tabpanel>
