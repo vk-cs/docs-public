@@ -25,16 +25,18 @@ make
 
 | Параметр       | Значение                                                    | Где найти |
 | -------------- | ----------------------------------------------------------- | --- |
-| serverHostPort | Адрес сервиса логирования                                   | Указать cloudlogs.mcs.mail.ru:443 |
+| serverHostPort | Адрес сервиса логирования                                   | Нужно указать cloudlogs.mcs.mail.ru:443  |
 | project-id     | Идентификатор проекта в которым будут хранится логи         | Project ID [на странице](https://mcs.mail.ru/app/any/project/keys) |
 | auth-url       | Адрес сервиса авторизации                                   | Auth URL [на станице](https://mcs.mail.ru/app/any/project/keys) |
-| user-name      | Логин пользователя который пишет логи                       |  |
-| password       | Пароль пользователя который пишет логи                      |  |
+| user-name      | Логин пользователя, который пишет логи                    |  |
+| password       | Пароль пользователя, который пишет логи                   |  |
 
 <details>
   <summary markdown="span">Пример запуска</summary>
 
 ```bash
-/opt/fluent-bit/bin/fluent-bit -i dummy -e ./vkcloudlogs-fluent-bit.so -o vkcloudlogs -p"serverHostPort=cloudlogs.mcs.mail.ru:443" -p"auth-url=https://infra.mail.ru:35357/v3/" -p"user-name=<user name>" -p"password=<password>" -p"project-id=<project>"
+opt/fluent-bit/bin/fluent-bit -i dummy -e ./vkcloudlogs-fluent-bit.so -o vkcloudlogs -p"serverHostPort=cloudlogs.mcs.mail.ru:443" -p"auth-url=https://infra.mail.ru:35357/v3/" -p"user-name=<user name>" -p"password=<password>" -p"project-id=<project>"
 ```
 </details>
+
+Полную документацию о работе с Fluent Bit читайте [здесь](https://docs.fluentbit.io/manual).
