@@ -1,12 +1,13 @@
 {
-    "title": "Язык поисковых запросов",
-    "pageDescription": "",
-    "shortDescription": "Инструменты поиска",
-    "metaTitle": "Язык поисковых запросов - VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Язык поисковых запросов",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 5
-  }
+  "title": "Язык поисковых запросов",
+  "pageDescription": "",
+  "shortDescription": "Инструменты поиска",
+  "metaTitle": "Язык поисковых запросов - VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Язык поисковых запросов",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5,
+  "uuid": "42f45fdc-d745-4537-bcdb-c348ae54046b"
+}
