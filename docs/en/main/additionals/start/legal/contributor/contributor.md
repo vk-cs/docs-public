@@ -104,6 +104,6 @@ The Contributor agrees and acknowledges that VK unconditionally relies on the re
 
 9.2. If any provision of this Agreement shall be found invalid or unenforceable, such invalidity or unenforceability shall not affect the validity and unenforceability of other provision hereof or generally this Agreement.
 
-9.3. This Agreement is made in Russian and English languages. The Russian version is available at: _______________. The English version is available at: ______________. In the event of any discrepancy between the provisions of the Russian and English versions hereof, the Russian version shall prevail.
+9.3. This Agreement is made in Russian and English languages. The Russian version is available at: https://mcs.mail.ru/docs/additionals/start/legal/contributor. The English version is available at: https://mcs.mail.ru/docs/en/additionals/start/legal/contributor. In the event of any discrepancy between the provisions of the Russian and English versions hereof, the Russian version shall prevail.
 
 Revision: from 09.26.2022
