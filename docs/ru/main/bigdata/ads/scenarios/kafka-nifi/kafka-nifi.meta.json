@@ -1,12 +1,13 @@
 {
-    "title": "Создание кластера Kafka + NiFi",
-    "pageDescription": "Инструкция по подключению.",
-    "shortDescription": "Инструкции по работе с ADS в VK Cloud",
-    "metaTitle": "Создание кластера Kafka + NiFi - VK Cloud",
-    "metaDescription": "Создание кластера Kafka + NiFi",
-    "sectionTitle": "Создание кластера Kafka + NiFi",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "Создание кластера Kafka + NiFi",
+  "pageDescription": "Инструкция по подключению.",
+  "shortDescription": "Инструкции по работе с ADS в VK Cloud",
+  "metaTitle": "Создание кластера Kafka + NiFi - VK Cloud",
+  "metaDescription": "Создание кластера Kafka + NiFi",
+  "sectionTitle": "Создание кластера Kafka + NiFi",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "15f99f51-c59e-4da5-9a1e-a7565cfe8336"
+}
