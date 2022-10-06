@@ -1,12 +1,13 @@
 {
-    "title": "Проверка работоспособности",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Проверка работоспособности - VK Cloud",
-    "metaDescription": "Проверка работоспособности",
-    "sectionTitle": "Проверка работоспособности",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 4
-  }
+  "title": "Проверка работоспособности",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Проверка работоспособности - VK Cloud",
+  "metaDescription": "Проверка работоспособности",
+  "sectionTitle": "Проверка работоспособности",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "5f92e5ad-16fa-4ba0-a17f-c14eee9d8868"
+}
