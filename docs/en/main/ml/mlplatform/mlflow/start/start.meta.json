@@ -8,5 +8,6 @@
   "markdown": "MLflow is one of the main open source tools for solving MLOps tasks, such as: \n- tracking experiments and models;\n- reproducibility of experiments;\n- deployment of ml models;\n- ensuring interaction of commands during work on complex data science and machine learning tasks.",
   "icon": "",
   "weight": 0,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "331ea3bf-b0b0-4022-953b-102b4ad1567e"
 }

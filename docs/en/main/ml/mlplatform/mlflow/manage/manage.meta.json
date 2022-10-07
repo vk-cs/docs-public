@@ -8,5 +8,6 @@
   "markdown": "Description of how to manage the created MLflow instance.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "58d50c68-2c98-4186-9fe6-36f57b1b3032"
 }

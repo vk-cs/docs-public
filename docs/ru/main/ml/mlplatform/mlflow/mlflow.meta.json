@@ -1,12 +1,13 @@
 {
-    "title": "MLflow",
-    "pageDescription": "Этот раздел описывает создание и работу с инстансами Mlflow.",
-    "shortDescription": "MLflow — один из основных open source инструментов для решения задач MLOps",
-    "metaTitle": "MLflow - VK Cloud",
-    "metaDescription": "MLflow это сервис по созданию и работе с инстансами MLflow",
-    "sectionTitle": "MLflow",
-    "markdown": "Этот раздел описывает принципы работы с сервисом MLflow, созданию и работе с инстансами MLflow.",
-    "icon": "",
-    "weight": 1,
-    "infobarItems": null
-  }
+  "title": "MLflow",
+  "pageDescription": "Этот раздел описывает создание и работу с инстансами Mlflow.",
+  "shortDescription": "MLflow — один из основных open source инструментов для решения задач MLOps",
+  "metaTitle": "MLflow - VK Cloud",
+  "metaDescription": "MLflow это сервис по созданию и работе с инстансами MLflow",
+  "sectionTitle": "MLflow",
+  "markdown": "Этот раздел описывает принципы работы с сервисом MLflow, созданию и работе с инстансами MLflow.",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": null,
+  "uuid": "771f622f-35e9-407e-9379-c9143efe8886"
+}

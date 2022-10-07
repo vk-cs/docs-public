@@ -8,5 +8,6 @@
   "markdown": "This section describes how to work with the MLflow service, create and work with MLflow instances.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "18fe60a7-f606-4dec-92ff-2fea19521c86"
 }
