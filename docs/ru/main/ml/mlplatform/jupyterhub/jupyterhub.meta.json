@@ -1,12 +1,13 @@
 {
-    "title": "JupyterHub",
-    "pageDescription": "Этот раздел описывает принципы работы с сервисом JupyterHub, созданию и работе с инстансами JupyterHub.",
-    "shortDescription": "Платформа для полного цикла ML-разработки и совместной работы Data-команд",
-    "metaTitle": "JupyterHub - VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "JupyterHub",
-    "markdown": "Этот раздел описывает принципы работы с сервисом JupyterHub, созданию и работе с инстансами JupyterHub.",
-    "icon": "",
-    "weight": 0,
-    "infobarItems": null
-  }
+  "title": "JupyterHub",
+  "pageDescription": "Этот раздел описывает принципы работы с сервисом JupyterHub, созданию и работе с инстансами JupyterHub.",
+  "shortDescription": "Платформа для полного цикла ML-разработки и совместной работы Data-команд",
+  "metaTitle": "JupyterHub - VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "JupyterHub",
+  "markdown": "Этот раздел описывает принципы работы с сервисом JupyterHub, созданию и работе с инстансами JupyterHub.",
+  "icon": "",
+  "weight": 0,
+  "infobarItems": null,
+  "uuid": "99a3a152-c351-4405-8bee-bcf9563cc5b3"
+}
