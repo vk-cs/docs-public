@@ -1,0 +1,12 @@
+{
+  "title": "Quick start",
+  "pageDescription": "Getting started with MLflow.",
+  "shortDescription": "Getting Started with MLflow Service",
+  "metaTitle": "Quick start - VK Cloud",
+  "metaDescription": "Quick start",
+  "sectionTitle": "Quick start",
+  "markdown": "MLflow is one of the main open source tools for solving MLOps tasks, such as: \n- tracking experiments and models;\n- reproducibility of experiments;\n- deployment of ml models;\n- ensuring interaction of commands during work on complex data science and machine learning tasks.",
+  "icon": "",
+  "weight": 0,
+  "infobarItems": null
+}

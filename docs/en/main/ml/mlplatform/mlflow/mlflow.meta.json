@@ -1,0 +1,12 @@
+{
+  "title": "MLflow",
+  "pageDescription": "This section describes how to create and work with Mlflow instances.",
+  "shortDescription": "MLflow is one of the main open source tools for solving MLOps problems",
+  "metaTitle": "MLflow - VK Cloud",
+  "metaDescription": "MLflow is a service for creating and managing MLflow instances",
+  "sectionTitle": "MLflow",
+  "markdown": "This section describes how to work with the MLflow service, create and work with MLflow instances.",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": null
+}
