@@ -8,5 +8,6 @@
   "markdown": "Description of basic operations for working with Arenadata Streaming clusters.",
   "icon": "",
   "infobarItems": null,
-  "weight": 0
+  "weight": 0,
+  "uuid": "f8b6ee01-b83e-453f-94b4-46c3d0cadde0"
 }
