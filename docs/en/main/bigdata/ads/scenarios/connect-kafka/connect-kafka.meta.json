@@ -1,0 +1,12 @@
+{
+  "title": "Connecting to Kafka",
+  "pageDescription": "Instructions for connecting to the NiFi cluster UI.",
+  "shortDescription": "Instructions for connecting to the NiFi cluster UI",
+  "metaTitle": "Connecting to Kafka - VK Cloud",
+  "metaDescription": "Kafka connection",
+  "sectionTitle": "Connecting to Kafka",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0
+}
