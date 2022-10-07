@@ -1,0 +1,11 @@
+{
+  "title": "Arenadata Streaming",
+  "pageDescription": "",
+  "shortDescription": "Arenadata Streaming clusters for working with large datasets",
+  "metaTitle": "Arenadata Streaming - VK Cloud",
+  "metaDescription": "Arenadata Streaming",
+  "sectionTitle": "Arenadata Streaming",
+  "markdown": "A complete distribution based on Apache Kafka and Apache NiFi, adapted for enterprise use, designed to handle large data streams.",
+  "icon": "",
+  "weight": 0
+}
