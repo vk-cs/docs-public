@@ -8,5 +8,6 @@
   "markdown": "Описание возможностей управления созданным инстансом MLflow.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "f7377eab-9e4b-4b7c-8a75-d6594bbe005f"
 }
