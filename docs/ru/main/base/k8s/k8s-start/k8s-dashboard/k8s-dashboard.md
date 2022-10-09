@@ -40,13 +40,17 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 
 1. Установите client-keystone-auth по [инструкции](/ru/base/k8s/k8s-clusters/client-keystone-auth).
 2. Установите kauthproxy по [инструкции](https://github.com/int128/kauthproxy#getting-started).
+    2.1 Установите дашборд 
+    ```bash
+    kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+    ```
 3. Импортируйте [конфигурацию](/base/k8s/k8s-start/connect-k8s#import-konfiguracii).
 4. Откройте командную строку и запустите команду приведенную ниже:
 
 ### Linux
 
 ```bash
-kauthproxy --kubeconfig $KUBECONFIG -n kube-system https://kubernetes-dashboard.svc
+kubectl auth-proxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
 ```
 
 ### Windows
