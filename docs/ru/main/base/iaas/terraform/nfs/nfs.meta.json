@@ -1,12 +1,13 @@
 {
-    "title": "Создание NFS",
-    "pageDescription": "",
-    "shortDescription": "Создание NFS с использованием Terraform.",
-    "metaTitle": "Создание NFS - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Создание NFS",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 3
-  }
+  "title": "Создание NFS",
+  "pageDescription": "",
+  "shortDescription": "Создание NFS с использованием Terraform.",
+  "metaTitle": "Создание NFS - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Создание NFS",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "773cf349-8018-494f-9582-61dd8249abaf"
+}
