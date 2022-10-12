@@ -14,26 +14,26 @@ ENDPOINT: /api/v1/docs/detect
 Authorization data is passed in the query string:
 
 | Parameter | Type | Meaning |
-|----------------|--------|----------------------- --------------------|
+| ---------------- |-------- | ------------------------------------------- |
 | oauth_token | string | OAuth2 access token (required non-empty) |
 | oauth_provider | string | OAuth2 provider (required non-empty) |
 
 Supported OAuth2 providers:
 
 | Provider | oauth_provider value | Getting a token |
-|-----------|-------------------------|----------- --------|
+| ----------- | ------------------------- | ------------------- |
 | mail.ru | mcs | See [article](https://mcs.mail.ru/help/vision-api/oauth_token) |
 
 Request parameters are passed in JSON format in the request body with name="meta":
 
 | Parameter | Type | Meaning |
-|----------|--------------|----------------------- ------------------------------|
+| ---------- | -------------- | ----------------------------------------------------- |
 | images | []image_meta | Metadata of transmitted images (required non-empty) |
 
 ### image_meta
 
 | Parameter | Type | Meaning |
-|----------|--------|----------------------- -----------------------|
+| ---------- | -------- | ---------------------------------------------- |
 | name | string | Filenames to match files in request and response (required non-empty) |
 
 Images are passed in the body of the request, the values ​​of the name field must match those passed in images. The maximum number of images in one request is 100. The maximum size of each image must not exceed 4 MB.
@@ -72,14 +72,14 @@ Content-Disposition: form-data; name="meta"
 <tabpanel>
 
 | Parameter | Type | Meaning |
-|----------|----------|--------------------- -------------------------------|
+| ---------- | ---------- | ---------------------------------------------------- |
 | status | int | 200 in case of successful interaction with the Vision servers |
 | body | string | Response body |
 
 #### response
 
 | Parameter | Type | Meaning |
-|----------|--------|----------------------- --------------------|
+| ---------- | -------- | ------------------------------------------- |
 | status | enum | Execution result) |
 | error | string | Text description of the error (optional) |
 | name | string | File name to match files in request and response |
@@ -96,14 +96,14 @@ Content-Disposition: form-data; name="meta"
 #### page
 
 | Parameter | Type | Meaning |
-|----------|-------|------------------------------ -----------------|
+| ---------- | ------- | ----------------------------------------------- |
 | index | int | Page number |
 | docs | []doc | Array of found document types per page |
 
 #### doc
 
 | Parameter | Meaning |
-|----------|---------------------------------------------------- ------------------------------|
+| ---------- | ------------------------------------------------------------ |
 | eng | Type (name) of the document in English |
 | rus | Type (name) of the document in Russian |
 | sample | Degree of confidence that this type of document is in the image |
@@ -111,7 +111,7 @@ Content-Disposition: form-data; name="meta"
 For each object (picture) there can be several types, with varying degrees of certainty. The "Document" label determines whether the image is a document and with what probability. The following types of documents are currently supported:
 
 | Eng label | Russian label |
-|--------------------|--------------------|
+| -------------------- | -------------------- |
 | Akt | Act |
 | Akt_sverky | Reconciliation act |
 | diploma | Diploma |
