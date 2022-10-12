@@ -27,14 +27,14 @@ Supported OAuth2 providers:
 Request parameters are passed in JSON format in the request body with name="meta":
 
 | Parameter | Type | Meaning |
-| -------- | ------------ | -------------------------------------------------- ------ |
+| -------- | ------------ | -------------------------------------------------------- |
 | images | []image_meta | Transferred image metadata (required non-empty) |
 | mode | string | Flag parameter: whether to issue a detailed answer, if "detailed", then detailed (the coordinates of the bounding box of the text and confidence are added to the answer), (optional) |
 
 ### image_meta
 
 | Parameter | Type | Meaning |
-| ------------ | ------- | -------------|
+| ------------ | ------- | ------------- |
 | name | string | filenames to match files in request and response (required non-empty) |
 
 Images are passed in the body of the request, the values ​​of the name field must match those passed in images.
@@ -76,7 +76,7 @@ Content-Disposition: form-data; name="meta"
 <tabpanel>
 
 | Parameter | Type | Meaning |
-| ------------ | -------- | -------------------------------------------------- ------- |
+| ------------ | -------- | --------------------------------------------------------- |
 | status | int | 200 in case of successful interaction with the Vision servers |
 | body | response | Response body |
 
@@ -89,7 +89,7 @@ Content-Disposition: form-data; name="meta"
 ### object
 
 | Parameter | Type | Meaning |
-| ---------- | ------ | -------------------------------------------------- --- |
+| ---------- | ------ | ----------------------------------------------------- |
 | status | enum | Execution result |
 | error | string | Text description of the error (optional) |
 | name | string | File name to match files in request and response |
@@ -115,7 +115,7 @@ Content-Disposition: form-data; name="meta"
 ### word
 
 | Parameter | Type | Meaning |
-| ----------- | --------- | -------------------------------------------------- ------- |
+| ----------- | --------- | --------------------------------------------------------- |
 | sample | float32 | Word recognition confidence |
 | coordinate | []float32 | Word coordinates - x1,y1, x2, y2 - upper left and lower right points of the enclosing rectangle|
 | text | string | Array of recognized response words in a string |

@@ -33,7 +33,7 @@ Request parameters are passed in JSON format in the request body with name="meta
 Possible values ​​for mode:
 
 | Parameter | Meaning |
-|-------------|---------------------------------- ---------|
+|-------------|-------------------------------------------|
 | object | Search objects in the image |
 | scene | Search on scene image |
 | car_number | Search on the image for car numbers |
@@ -94,7 +94,7 @@ Content-Disposition: form-data; name="meta"
 <tabpanel>
 
 | Parameter | Type | Meaning |
-| ------------ | ------- | -------------------------------------------------- ----- |
+| ------------ | ------- | ------------------------------------------------------- |
 | status | int | 200 on success, otherwise the error description will be in body |
 | body | string | Response body |
 
@@ -111,7 +111,7 @@ Content-Disposition: form-data; name="meta"
 ### object
 
 | Parameter | Type | Meaning |
-| ---------| -------- | -------------------------------------------------- --- |
+| ---------| -------- | ----------------------------------------------------- |
 | status | enum | Execution result |
 | error | string | Text description of the error (optional) |
 | name | string | File name to match files in request and response |
@@ -129,7 +129,7 @@ Content-Disposition: form-data; name="meta"
 ### label
 
 | Parameter | Meaning |
-| ------------- | -------------------------------------------------- ---------------------- |
+| ------------- | ------------------------------------------------------------------------ |
 | eng | Label (name) for the found object in English |
 | rus | Label (name) of the found object in Russian |
 | eng_categories | List of categories (each category includes many tags) in English (optional) |
