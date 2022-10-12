@@ -80,7 +80,7 @@ Content-Disposition: form-data; name="meta"
 <tabpanel>
 
 | Parameter | Type | Meaning |
-| ------------ | ------- | -------------------------------------------------- ----- |
+| ------------ | ------- | ------------------------------------------------------- |
 | status | int | 200 on success, otherwise the error description will be in body |
 | body | string | Response body |
 
@@ -106,7 +106,7 @@ Content-Disposition: form-data; name="meta"
 ### resolution_object
 
 | Parameter | Type | Meaning |
-| ------------ | ------- | -------------------------------------------------- --------- |
+| ------------ | ------- | ----------------------------------------------------------- |
 | status | enum | Execution result |
 | error | string | Text description of the error (optional) |
 | name | string | File name to match files in request and response |

@@ -35,8 +35,8 @@ Supported OAuth2 providers:
 
 Request parameters are passed in JSON format in the request body with name="meta":
 
-| Parameter | Type | Meaning |
-| -------- | ------------- | -------------------------------------------------- ---- |
+| Parameter | Type         | Meaning                                                  |
+| --------- | ------------- | ------------------------------------------------------ |
 | space | string | Filenames to match files in request and response (required non-empty) |
 | images | []image_meta | ID matched to the person in the photo (required non-empty)|
 
@@ -85,7 +85,7 @@ Content-Disposition: form-data; name="meta"
 <tabpanel>
 
 | Parameter | Type | Meaning |
-| -------- | -------- | -------------------------------------------------- ----- |
+| -------- | -------- | ------------------------------------------------------- |
 | status | int | 200 in case of successful communication with the Vision|
 | body | response | Response body |
 
@@ -98,7 +98,7 @@ Content-Disposition: form-data; name="meta"
 ### object
 
 | Parameter | Type | Meaning |
-| -------- | ------ | -------------------------------------------------- --- |
+| -------- | ------ | ----------------------------------------------------- |
 | status | enum | Execution result |
 | error | string | Text description of the error (optional) |
 | name | string | File name to match files in request and response |
@@ -106,7 +106,7 @@ Content-Disposition: form-data; name="meta"
 ### status
 
 | Parameter | Meaning |
-|--------- |--------------------------------------- ------- |
+|--------- |---------------------------------------------- |
 | 0 | Successfully |
 | 1 | Array of found document types per page |
 | 2 | Temporary error |
@@ -157,7 +157,7 @@ AuthorizationThis data is passed in the query string:
 
 Supported OAuth2 providers:
 
-| Provider | oauth_provider value | Getting a token |
+| Provider  | oauth_provider value   | Getting a token  |
 | --------- | ---------------------- | -----------------|
 | VK Cloud | mcs | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token) (all VK Cloud clients) |
 
@@ -211,7 +211,7 @@ Content-Disposition: form-data; name="meta"
 <tabpanel>
 
 | Parameter | Type | Meaning |
-| ---------| -------- | -------------------------------------------------- -------|
+| ---------| -------- | ---------------------------------------------------------|
 | status | int | 200 in case of successful interaction with the Vision servers |
 | body | response | Response body |
 
@@ -254,7 +254,7 @@ Content-Disposition: form-data; name="meta"
 For the second model only:
 
 | Parameter | Type | Meaning |
-|------------ | ------- | -------------------------------------------------- - |
+|------------ | ------- | -------------------------------------------------- |
 | sex | string | Person's gender ["female", "male"] |
 | age | float | Person's age |
 | emotions | string | Person's emotions: "Neutral", "Happiness", "Sadness", "Surprise", "Fear", "Disgust", "Anger", "Contempt" |
@@ -384,7 +384,7 @@ Supported OAuth2 providers:
 Request parameters are passed in JSON format in the request body with name="meta":
 
 | Parameter | Type | Meaning |
-| -------- | ------------ | -------------------------------------------------- ------ |
+| -------- | ------------ | -------------------------------------------------------- |
 | space | string | numeric identifier used to avoid person collisions (required non-empty) |
 | images | []image_meta | metadata of transferred images (required non-empty) |
 
@@ -423,7 +423,7 @@ curl "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token
 <tabpanel>
 
 | Parameter | Type | Meaning |
-| -------- | -------- | -------------------------------------------------- ------ |
+| -------- | -------- | ------------------------------------------------------ |
 | status | int | 200 in case of successful interaction with the Vision servers |
 | body | response | Response body |
 
@@ -436,7 +436,7 @@ curl "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token
 ### object
 
 | Parameter | Type | Meaning |
-| -------- | ------ | -------------------------------------------------- --- |
+| -------- | ------ | ----------------------------------------------------- |
 | status | enum | Execution result |
 | error | string | Text description of the error (optional) |
 | name | string | File name to match files in request and response |
@@ -526,7 +526,7 @@ Content-Disposition: form-data; name="meta"
 <tabpanel>
 
 | Parameter | Type | Meaning |
-| -------- | -------- | -------------------------------------------------- ------ |
+| -------- | -------- | -------------------------------------------------------- |
 | status | int | 200 in case of successful interaction with the Vision servers |
 | body | response | Response body |
 
