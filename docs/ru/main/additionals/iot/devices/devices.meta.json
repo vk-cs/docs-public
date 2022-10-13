@@ -1,12 +1,13 @@
 {
-    "title": "Устройства",
-    "pageDescription": "",
-    "shortDescription": "Описание и способы подключения устройства",
-    "metaTitle": "Устройства - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Устройства",
-    "markdown": "Устройства — это совокупность источников данных и состояний, которые подключаются к платформе посредством агентов — специализированных программных сервисов.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 8
-  }
+  "title": "Устройства",
+  "pageDescription": "",
+  "shortDescription": "Описание и способы подключения устройства",
+  "metaTitle": "Устройства - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Устройства",
+  "markdown": "Устройства — это совокупность источников данных и состояний, которые подключаются к платформе посредством агентов — специализированных программных сервисов.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 8,
+  "uuid": "5579a23a-ce6f-41b8-bec6-7be44300cfaa"
+}

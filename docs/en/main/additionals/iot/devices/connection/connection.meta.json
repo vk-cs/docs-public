@@ -1,12 +1,13 @@
 {
-    "title": "Connection of the device",
-    "pageDescription": "",
-    "shortDescription": "Methods of connection",
-    "metaTitle": "Connection of the device - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Connection of the device",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "Connection of the device",
+  "pageDescription": "",
+  "shortDescription": "Methods of connection",
+  "metaTitle": "Connection of the device - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Connection of the device",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "64f1f635-68ed-4318-a318-9b61ab85c664"
+}

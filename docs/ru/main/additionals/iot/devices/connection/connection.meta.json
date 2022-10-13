@@ -1,12 +1,13 @@
 {
-    "title": "Подключение устройства",
-    "pageDescription": "",
-    "shortDescription": "Способы подключения",
-    "metaTitle": "Подключение устройства - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Подключение устройства",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "Подключение устройства",
+  "pageDescription": "",
+  "shortDescription": "Способы подключения",
+  "metaTitle": "Подключение устройства - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Подключение устройства",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "b0074a50-832f-4bee-b73b-6df8050d6bbc"
+}
