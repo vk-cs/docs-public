@@ -1,4 +1,4 @@
-The Instances tab lists the virtual hardware settings for cluster node instances. You can change them [on the General Information page](../info/) or via the cluster context menu [on the Clusters page](../../start/configure/).
+The Instances tab lists the virtual hardware settings for cluster node instances. You can change them [on the General Information page](../info/).
 
 The options include:
 
