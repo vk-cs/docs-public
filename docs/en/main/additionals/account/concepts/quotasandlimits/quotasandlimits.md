@@ -134,7 +134,7 @@ The current technical limits have the following meanings:
 | Parameter | Quantity / volume |
 |--------------------|--------------------|
 | Autobackup plans | 50 |
-| Number of backups | 200 |
+| Number of backups | 400 |
 | Backup size | 320 TB |
 | Snapshot size | unlimited |
 
