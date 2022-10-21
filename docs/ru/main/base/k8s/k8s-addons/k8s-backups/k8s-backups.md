@@ -45,13 +45,8 @@ velero --help
 
 Так как Velero сохраняет свои бэкапы в S3-хранилище, необходимо перед установкой сервера в кластер, предварительно создать бакет в S3-хранилище.
 
-Создайте бакет my-velero-backup в сервисе "Объектное хранилище", используя Панель VK Cloud.
-
-![](./assets/1635260240187-unnamed.png)
-
-Также необходимо создать аккаунт для доступа к бакету в сервисе «Объектное хранилище» и получить ключи доступа:
-
-![](./assets/1635260480209-unnamed-(1).png>)
+1. Создайте бакет my-velero-backup в сервисе "Объектное хранилище", используя Панель VK Cloud.
+2. Создайте аккаунт для доступа к бакету в сервисе «Объектное хранилище» и получить ключи доступа.
 
 Полученные ключи доступа запишите в файл s3_creds:
 
@@ -65,7 +60,13 @@ aws_secret_access_key=<Secret Key>
 
 Инсталляция Velero состоит из нескольких объектов Kubernetes, которые работают вместе над созданием, планированием и управлением резервными копиями.
 
-> **Важно**<br />Перед установкой Velero убедитесь, что node-узлы кластера имеют как минимум 2 CPU, либо, что включено автомасштабирование кластера. Подробнее об автомасштабировании кластера вы можете узнать в [статье](../../k8s-clusters/k8s-scale/scale-k8s#na_sozdannom_klastere).
+<warn>
+
+**Важно**
+
+Перед установкой Velero убедитесь, что node-узлы кластера имеют как минимум 2 CPU, либо, что включено автомасштабирование кластера. Подробнее об автомасштабировании кластера вы можете узнать в [статье](../../k8s-clusters/k8s-scale/scale-k8s#na_sozdannom_klastere).
+
+</warn>
 
 Команда `velero install` выполнит предварительные шаги по настройке вашего кластера, в частности:
 
@@ -83,7 +84,7 @@ velero install \
 --bucket my-velero-backup \
 --secret-file ./s3_creds \
 --use-volume-snapshots=false \
---backup-location-config region=mail,s3ForcePathStyle="true",s3Url=https://hb.bizmrg.com:443
+--backup-location-config region=ru-msk,s3ForcePathStyle="true",s3Url=https://hb.bizmrg.com:443
 ```
 
 Остановимся подробно на аргументах:
@@ -93,7 +94,7 @@ velero install \
 - \--bucket my-velero-backup — бакет для бэкапов.
 - \--secret-file ./s3_cred — файл с ключами подключения к S3 хранилищу.
 - \--use-volume-snapshots=false — отключим создание снапшотов PV для текущим провайдером. Для создания снапшотов будет использоваться плагин.
-- \--backup-location-config region=mail,s3ForcePathStyle="true",s3Url=https://hb.bizmrg.com:443 — конечная точка подключения к Объектному хранилищу VK Cloud.
+- \--backup-location-config region=ru-msk,s3ForcePathStyle="true",s3Url=https://hb.bizmrg.com:443 — конечная точка подключения к Объектному хранилищу VK Cloud.
 
 После выполнения команды можно увидеть подобный вывод:
 
