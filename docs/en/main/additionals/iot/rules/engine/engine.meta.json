@@ -1,12 +1,13 @@
 {
-    "title": "Business control engine",
-    "pageDescription": "",
-    "shortDescription": "Creation of business rules and verification of the result",
-    "metaTitle": "Business control engine - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Business control engine",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
-  }
+  "title": "Business control engine",
+  "pageDescription": "",
+  "shortDescription": "Creation of business rules and verification of the result",
+  "metaTitle": "Business control engine - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Business control engine",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "9275a523-a103-47ba-8b75-cd26e486b07e"
+}

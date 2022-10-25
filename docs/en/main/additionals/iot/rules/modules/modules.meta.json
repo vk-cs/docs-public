@@ -1,12 +1,13 @@
 {
-    "title": "Modules",
-    "pageDescription": "",
-    "shortDescription": "Description of many available modules",
-    "metaTitle": "Modules - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Modules",
-    "markdown": "Description of many available modules.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
-  }
+  "title": "Modules",
+  "pageDescription": "",
+  "shortDescription": "Description of many available modules",
+  "metaTitle": "Modules - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Modules",
+  "markdown": "Description of many available modules.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "5cb0a293-688e-4fe5-998d-1a76a465d4aa"
+}
