@@ -6,77 +6,53 @@ Kubernetes Dashboard is a universal web interface for Kubernetes clusters. It al
 
 <tabs>
 <tablist>
-<tab>kubectl version >v1.23</tab>
-<tab>kubectl version v1.23+</tab>
+<tab>Kubectl version less than v1.23</tab>
+<tab>Kubectl version v1.23+</tab>
 </tablist>
 <tabpanel>
 
-1. Get a Secret to access the Kubernetes Dashboard cluster in one of the following ways:
+1. Get the Secret to access the Kubernetes Dashboard of the cluster using one of the following methods:
 
-    1. Using the VK CS interface: navigate to the cluster, select "Get Secret to log in to Kubernetes dashboard" in the menu.
-    1. Using kubectl: execute the command and copy its output.
+    1. Using the VK Cloud interface: go to the cluster, select "Get Secret to enter the Kubernetes dashboard" in the menu.
+    1. With kubectl: run the command and copy its output.
 
         ```bash
         kubectl get secret $(kubectl get sa dashboard-sa -o jsonpath='{.secrets[0].name}') -o jsonpath='{.data.token}' | base64 --decode
         ```
 
-2. Launch kubectl proxy:
+2. Start kubectl proxy:
 
     ```bash
     kubectl proxy
     ```
 
-3. Open the browser and go to [link](http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/).
+3. Open a browser and navigate to [link](http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/).
 
     The Kubernetes Dashboard web interface will load.
 
 4. You will be prompted to log in. Select the "Token" option.
-5. Insert the token received in step 1 and click "Sign In".
+5. Paste the token obtained in step 1 and click "Sign In".
 
-    Kubernetes Dashboard opens with superadmin rights.
+    The Kubernetes Dashboard will open with super admin rights.
 
 </tabpanel>
 <tabpanel>
 
-To connect to the Kubernetes Dashboard cluster using kubectl version v.1.23 and higher, you need to install the client-keystone-auth utility.
+1. Install client-keystone-auth according to [instructions](../../manage-k8s/client-keystone-auth/).
+1. Import [configuration](../connect-k8s/).
+1. Open a command prompt and run the command below:
 
-#### Installation instructions for client-keystone-auth
+### Linux
+
+```bash
+kauthproxy --kubeconfig $KUBECONFIG -n kube-system https://kubernetes-dashboard.svc
+```
 
 ### Windows
 
-1. Run the command in PowerShell:
-
 ```bash
-iex (New-Object System.Net.WebClient).DownloadString('https://hub.mcs.mail.ru/repository/client-keystone-auth/latest/windows/client-install.ps1')
+kauthproxy --kubeconfig $Env:KUBECONFIG -n kube-system https://kubernetes-dashboard.svc
 ```
-
-2. During the installation process, you will be prompted to add the path to **client-keystone-auth** to the environment variables:
-
-```bash
-Add client-keystone-auth installation dir to your PATH? [Y/n]
-```
-
-3. Enter **Y**. After that, the installation will be completed.
-
-### Linux / MacOS
-
-1. Run the command:
-
-```bash
-curl -sSL https://hub.mcs.mail.ru/repository/client-keystone-auth/latest/linux/client-install.sh | bash
-```
-
-2. The script will install **client-keystone-auth** and automatically add the path to it to the environment variables.
-
-<note>
-
-If you are using a command shell other than Bash and Zsh, then you will have to add the path to **client-keystone-auth** to the environment variables yourself.
-
-</note>
-
-3. Restart the command shell.
-
-In case of problems, contact technical support.
 
 </tabpanel>
 </tabs>
