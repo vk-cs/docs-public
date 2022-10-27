@@ -503,7 +503,7 @@ spec:
 
     ![](./assets/1579692913755-1579692913755.png)
 
-3.  Нажмите кнопку Next Step и выберите Сreate Index Pattern:
+3.  Нажмите кнопку Next Step и выберите Create Index Pattern:
 
 ![](./assets/1579692965605-1579692965605.png)
 

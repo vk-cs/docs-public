@@ -185,7 +185,7 @@ kubectl delete pod cpu-demo --namespace=cpu-example
 
 ### Очистка
 
-Удилите созданное пространство имен командой:
+Удалите созданное пространство имен командой:
 
 ```bash
 kubectl delete namespace cpu-example

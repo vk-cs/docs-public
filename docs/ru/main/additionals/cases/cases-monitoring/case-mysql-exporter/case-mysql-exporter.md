@@ -22,7 +22,7 @@
 
 ## Установка mysqld_exporter
 
-1.  Выполните логин на сервере MySQL c правами суперпользователя.
+1.  Выполните логин на сервере MySQL с правами суперпользователя.
 2.  Укажите актуальную версию экспортера:
 
 ```
@@ -191,7 +191,7 @@ scrape_configs:
 
 - В секции targets впишите IP-адрес сервера mysql_exporter.
 
-3.  Перезапустите сервиc Prometheus:
+3.  Перезапустите сервис Prometheus:
 
 ```
 root@prometheus:~# systemctl reload prometheus.service
@@ -222,7 +222,7 @@ root@prometheus:~# systemctl reload prometheus.service
 root@mysql:~# apt-get install sysbench
 ```
 
-2.  На ноде MySQL запустите генерацию тестового набора :
+2.  На ноде MySQL запустите генерацию тестового набора:
 
 ```
 root@mysql:~# sysbench oltp_read_only --mysql-db=test --mysql-user=root --mysql-password --db-driver=mysql prepare

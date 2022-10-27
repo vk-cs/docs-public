@@ -185,7 +185,7 @@ Content-Disposition: form-data; name="meta"
 </details>
 
 <details>
-  <summary markdown="span">Пример сurl запроса</summary>
+  <summary markdown="span">Пример curl запроса</summary>
 
 ```bash
 curl -v "https://smarty.mail.ru/api/v1/photo/improve?oauth_provider=mcs&oauth_token=token" -F file_0=@test.jpeg -F meta='{"images":[{"name":"file_0"}], "mode":["resolution", "improve"], "rfactor":4, "rtype":"art"}'
