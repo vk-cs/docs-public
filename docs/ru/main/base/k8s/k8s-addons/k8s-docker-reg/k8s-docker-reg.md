@@ -46,8 +46,8 @@ cat ~/.docker/config.json
 
 kubectl create secret generic regcred \\     --from-file=".dockerconfigjson=<path/to/."docker/config.json> \\     -- необходимо внести какие-либо изменения (например, изменить имя нового секрета), то Вы можете внести изменения в Секрет перед тем, как сохранить его. Убедитесь, что:
 
-- указан typeдляkubernetes.io/dockerconfigjson
-- задано имя для элемента.dockerconfigjson
+- указан type для kubernetes.io/dockerconfigjson
+- задано имя для элемента .dockerconfigjson
 - base64 кодирует файл docker и вставляет эту строку, непрерывную как значение для данных поля data[".dockerconfigjson"]
 
 Например:

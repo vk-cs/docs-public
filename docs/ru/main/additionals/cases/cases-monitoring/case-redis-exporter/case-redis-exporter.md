@@ -1,6 +1,6 @@
 ## Конфигурация оборудования
 
-Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы c использованием следующего оборудования:
+Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы с использованием следующего оборудования:
 
 - Prometheus 2.13 на ОС Ubuntu 18.04 LTS x86_64.
 - Grafana 6.4.2 на ОС Ubuntu 18.04 LTS x86_64.
@@ -50,7 +50,7 @@ root@redis:~# useradd --system -g prometheus -s /bin/false prometheus
 root@redis:~# wget https://github.com/oliver006/redis_exporter/releases/download/v$VERSION/redis_exporter-v$VERSION.linux-amd64.tar.gz -O - | tar -xzv -C /tmp
 ```
 
-5.  Cкопируйте содержимое распакованного файла в папку /usr/local/bin:
+5.  Скопируйте содержимое распакованного файла в папку /usr/local/bin:
 
 ```
 root@redis:~# cp /tmp/redis_exporter-v$VERSION.linux-amd64/redis_exporter /usr/local/bin
@@ -138,7 +138,7 @@ scrape_configs:
 
 - В секции targets впишите IP-адрес сервера redis_exporter.
 
-3.  Перезапустите сервиc Prometheus:
+3.  Перезапустите сервис Prometheus:
 
 ```
 root@prometheuskit-11102019-instance-5bqp2hk6nrgk:~# systemctl reload prometheus.service

@@ -12,7 +12,7 @@
 -   Добавлена новая функциональность [API Server Tracing](https://github.com/kubernetes/enhancements/issues/647). Эта функциональность находится в статусе alpha.
 -   Добавлена новая функциональность [Generic data populators](https://github.com/kubernetes/enhancements/issues/1495) для постоянных томов (Persistent Volumes). Эта функциональность находится в статусе alpha.
 -   Добавлена новая версия формата конфигурации для kubeadm: [v1beta3](https://github.com/kubernetes/enhancements/issues/970).
--   Тперь Kubernetes control plane всегда использует [CronJobs-контроллер версии 2](https://github.com/kubernetes/enhancements/issues/19).
+-   Теперь Kubernetes control plane всегда использует [CronJobs-контроллер версии 2](https://github.com/kubernetes/enhancements/issues/19).
 -   Теперь все компоненты Kubernetes control plane на узлах (включая kubelet, kube-proxy и container runtime) [могут быть запущены от имени пользователей, которые не являются суперпользователями (non-root)](https://github.com/kubernetes/enhancements/issues/2033). Эта функциональность находится в статусе alpha.
 
 Подробнее об этих и других изменениях см. в [официальной документации Kubernetes](https://kubernetes.io/blog/2021/08/04/kubernetes-1-22-release-announcement/), посвященной этому релизу.

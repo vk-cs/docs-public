@@ -115,7 +115,7 @@ Ok.
 ubuntu-standard-2-4-40gb :)
 ```
 
-2. Для настройки прав доступа на созданную базу данных в папке _/etc/clickhouse-server/users.d_ создайте файл _myuser.xmlс_ описанием прав доступа:
+2. Для настройки прав доступа на созданную базу данных в папке _/etc/clickhouse-server/users.d_ создайте файл _myuser.xmlc_ описанием прав доступа:
 
 ```
 ubuntu@ubuntu-standard-2-4-40gb:~$ sudo cat /etc/clickhouse-server/users.d/myuser.xml
