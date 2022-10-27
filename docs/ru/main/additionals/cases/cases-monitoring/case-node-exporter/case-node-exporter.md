@@ -32,7 +32,7 @@
 
 ## Установка Prometheus
 
-1.  Выполните логин на сервере Prometheus c правами суперпользователя.
+1.  Выполните логин на сервере Prometheus с правами суперпользователя.
 2.  Укажите актуальную версию Prometheus:
 
 ```
@@ -284,7 +284,7 @@ static_configs:
 
 [](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_config)
 
-2.  Перезапустите сервиc Prometheus:
+2.  Перезапустите сервис Prometheus:
 
 ```
 root@ubuntu-basic-1-1-10gb:~# systemctl reload prometheus.service
