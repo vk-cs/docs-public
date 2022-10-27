@@ -14,7 +14,7 @@
 </tablist>
 <tabpanel>
 
-##### C помощью apt (Debian, Ubuntu):
+##### С помощью apt (Debian, Ubuntu):
 
 ```bash
 apt update
@@ -46,7 +46,7 @@ yum install python2-openstackclient
 </tabpanel>
 <tabpanel>
 
-##### C помощью pip3:
+##### С помощью pip3:
 
 Для установки с помощью pip3 в системе должны присутствовать пакеты: gcc, pyhton3-dev, python3-pip.
 

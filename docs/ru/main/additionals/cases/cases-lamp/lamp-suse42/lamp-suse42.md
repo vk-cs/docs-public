@@ -188,7 +188,7 @@ sudo zypper install php7 php7-mysql apache2-mod_php7
 
 Чтобы установить PHP, введите **y**.
 
-3.  Aктивируйте модуль PHP, выполнив команду:
+3.  Активируйте модуль PHP, выполнив команду:
 
 ```
 sudo a2enmod php7

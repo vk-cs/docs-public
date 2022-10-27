@@ -349,7 +349,7 @@ ash-work:~ kubectl cluster-info | grep 'Kubernetes master' | awk '/http/ {pri
 https://89.208.197.244:6443
 ```
 
-2.  Получите cписок секретов кластера:
+2.  Получите список секретов кластера:
 
 ```
 ash-work:~ kubectl get secrets
