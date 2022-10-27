@@ -33,4 +33,8 @@ Do not close the New Instance window.
 
 Upon completion of the instance setup, a page with server characteristics and instructions for connecting to it will open.
 
+After the installation of MLflow is completed, within 5-10 minutes, the JupyterHub instance will be automatically configured to work with MLflow.
+
+In order for the settings to take effect, you must restart the JupyterHub server. This can be done from JupyterHub in the Hub Control Panel, or restart the VM from JupyterHub in the [Cloud Computing -> Virtual Machines] section(https://mcs.mail.ru/docs/base/iaas/vm-start/manage-vm/ vm state).
+
 </warn>
