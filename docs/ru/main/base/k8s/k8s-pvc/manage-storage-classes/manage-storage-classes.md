@@ -82,7 +82,7 @@
    volumeBindingMode: Immediate
    ```
 
-1. Создайте класс хранения с помощью этого конфгурационного файла:
+1. Создайте класс хранения с помощью этого конфигурационного файла:
 
    ```bash
    kubectl apply -f custom-storage-class,yaml

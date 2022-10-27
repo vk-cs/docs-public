@@ -62,7 +62,7 @@ class Insert:
     def execute(self):
 		pass
 ```
-Метод `values(tag, value, timestamp)` предназанчен для вставки конкретного значения. Для вставки значения из сообщения можно использовать метод `msg(message)`:
+Метод `values(tag, value, timestamp)` предназначен для вставки конкретного значения. Для вставки значения из сообщения можно использовать метод `msg(message)`:
 ```python
 from coiiot_sdk import operational_storage as op_store, context
 
@@ -155,7 +155,7 @@ class Upsert:
     def execute(self):
 		pass
 ```
-Метод `values(tag, value, timestamp)` предназанчен для вставки или обновления конкретного значения. Для вставки значения из сообщения можно использовать метод `msg(message)`:
+Метод `values(tag, value, timestamp)` предназначен для вставки или обновления конкретного значения. Для вставки значения из сообщения можно использовать метод `msg(message)`:
 ```python
 from coiiot_sdk import operational_storage as op_store, context
 

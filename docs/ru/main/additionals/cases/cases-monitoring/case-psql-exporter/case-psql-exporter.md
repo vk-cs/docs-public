@@ -1,6 +1,6 @@
 ## Конфигурация оборудования
 
-Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы c использованием следующего оборудования:
+Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы с использованием следующего оборудования:
 
 - Prometheus 2.13 на ОС Ubuntu 18.04 LTS x86_64.
 - Grafana 6.4.2 на ОС Ubuntu 18.04 LTS x86_64.
@@ -142,7 +142,7 @@ scrape_configs:
 
 - В секции targets впишите IP-адрес сервера postgres_exporter.
 
-3.  Перезапустите сервиc Prometheus:
+3.  Перезапустите сервис Prometheus:
 
 ```
 root@prometheus:~# systemctl reload prometheus.service
@@ -225,7 +225,7 @@ number of transactions actually processed: 26183
 
 2.  Из конфигурационного файла prometheus удалите секцию - job_name: postgresql.
 
-3.  На сервере с postres_exporter выполните команды:
+3.  На сервере с postgres_exporter выполните команды:
 
 ```
 root@postgresql:~# systemctl stop postgres_exporter.service 
