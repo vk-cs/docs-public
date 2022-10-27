@@ -175,7 +175,7 @@ scrape_configs:
 
 ```
 
-3.  Перезапустите сервиc Prometheus:
+3.  Перезапустите сервис Prometheus:
 
 ```
 root@prometheus:~# systemctl reload prometheus.service

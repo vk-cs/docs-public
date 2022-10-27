@@ -161,13 +161,13 @@ Content-Type: application/json
 
 ### video_meta
 
-| Параметр      | Тип        | Значение                                               |
-| ------------- | ---------- | ------------------------------------------------------ |
-| name          | string     | Идентификатор, возвращаемый клиенту в ответе на постановку данной задачи (required non-empty)                                                           |
-| link          | string     | Ссылка на видео файл (http://,https://) , rtsp поток (rtsp://) (required non-empty)                                                                  |
-| rtsp_login    | string     | RTSP авторизация                                       |
-| rtsp_password | string     |                                                        |
-| actions       | []string   | Cписок методов visapi, которыми будет обработано видео |
+| Параметр      | Тип        | Значение                                                                                      |
+| ------------- | ---------- |-----------------------------------------------------------------------------------------------|
+| name          | string     | Идентификатор, возвращаемый клиенту в ответе на постановку данной задачи (required non-empty) |
+| link          | string     | Ссылка на видео файл (http://,https://) , rtsp поток (rtsp://) (required non-empty)           |
+| rtsp_login    | string     | RTSP авторизация                                                                              |
+| rtsp_password | string     |                                                                                               |
+| actions       | []string   | Список методов visapi, которыми будет обработано видео                                        |
 
 ### actions
 

@@ -26,7 +26,7 @@
     ```
 
     - Чтобы установить актуальную версию PostgreSQL:
-        - Cкачайте ключ репозитория PostgreSQL:
+        - Скачайте ключ репозитория PostgreSQL:
 
         ```
         ubuntu@ubuntu-standard-2-4-40gb:~$ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -

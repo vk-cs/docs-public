@@ -224,7 +224,7 @@ To remove postgres_exporter:
 
 2. Remove the section - job_name: postgresql from the prometheus configuration file.
 
-3. On the server with postres_exporter run the commands:
+3. On the server with postgres_exporter run the commands:
 
 ```
 root@postgresql:~# systemctl stop postgres_exporter.service
