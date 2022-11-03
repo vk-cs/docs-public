@@ -4,12 +4,7 @@ HOST: `https://smarty.mail.ru`
 
 ENDPOINT: `/api/v1/objects/detect`
 
-<tabs>
-<tablist>
-<tab>Request</tab>
-<tab>Answer</tab>
-</tablist>
-<tabpanel>
+### Request
 
 Authorization data is passed in the query string:
 
@@ -61,8 +56,7 @@ Images are passed in the body of the request, the values ​​of the name field
 
 The maximum number of images in one request is 100. The maximum size of each image must not exceed 4 MB.
 
-<details>
-  <summary markdown="span">Example request</summary>
+Example request:
 
 ```
 POST /api/v1/objects/detect?oauth_provider=mr&oauth_token=123 HTTP/1.1
@@ -90,10 +84,7 @@ Content-Disposition: form-data; name="meta"
 ------WebKitFormBoundaryfCqTBHeLZlsicvMp--
 ```
 
-</details>
-
-</tabpanel>
-<tabpanel>
+### Response
 
 | Parameter | Type | Meaning |
 | ------------- | -------- | -------------------------------------------------------- |
@@ -140,8 +131,7 @@ Content-Disposition: form-data; name="meta"
 | coordinate | Found object coordinates (optional) |
 | types_prob | An array of license plate type probabilities. currently the following types are supported: <br>"rus" — all types of Russian numbers; <br>"cis" — numbers of the CIS (except individual and military Ukrainian ones); <br>"eu" — one-story plates of Europe (optional, only for car_number mode). |
 
-<details>
-  <summary markdown="span">Sample response</summary>
+Sample response:
 
 ```json
 {
@@ -292,10 +282,7 @@ labels:[
 }
 ```
 
-</details>
-
-<details>
-  <summary markdown="span">An example of a response when one of the images was not processed</summary>
+An example of a response when one of the images was not processed:
 
 ```json
 {
@@ -329,10 +316,7 @@ labels:[
 
 ```
 
-</details>
-
-<details>
-  <summary markdown="span">An example of a response when the request failed</summary>
+An example of a response when the request failed:
 
 ```json
 {
@@ -343,10 +327,7 @@ labels:[
 }
 ```
 
-</details>
-
-<details>
-  <summary markdown="span">python example</summary>
+python example:
 
 ```python
 python
@@ -356,8 +337,3 @@ examples/python/smarty.py\
 --meta '{"mode":["scene"]}' \
 -v
 ```
-
-</details>
-
-</tabpanel>
-</tabs>

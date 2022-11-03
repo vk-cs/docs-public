@@ -13,12 +13,7 @@ HOST: `https://smarty.mail.ru`
 
 Данный метод позволяет установить связь между заданной фотографией и конкретным **person_id**.
 
-<tabs>
-<tablist>
-<tab>Запрос</tab>
-<tab>Ответ</tab>
-</tablist>
-<tabpanel>
+### Запрос
 
 Авторизационные данные передаются в строке запроса:
 
@@ -81,8 +76,7 @@ Content-Disposition: form-data; name="meta"
 ------WebKitFormBoundaryfCqTBHeLZlsicvMp--
 ```
 
-</tabpanel>
-<tabpanel>
+### Ответ
 
 | Параметр | Тип      | Значение                                                |
 | -------- | -------- | ------------------------------------------------------- |
@@ -134,19 +128,11 @@ Content-Disposition: form-data; name="meta"
   }
 ```
 
-</tabpanel>
-</tabs>
-
 ## Recognize
 
 Данный метод позволяет распознать person по заданной фотографии. В случае, если совпадение не найдено, будет добавлен новый person.
 
-<tabs>
-<tablist>
-<tab>Запрос</tab>
-<tab>Ответ</tab>
-</tablist>
-<tabpanel>
+### Запрос
 
 Авторизационные данные передаются в строке запроса:
 
@@ -207,8 +193,7 @@ Content-Disposition: form-data; name="meta"
 ------WebKitFormBoundaryfCqTBHeLZlsicvMp--
 ```
 
-</tabpanel>
-<tabpanel>
+### Ответ
 
 | Параметр | Тип      | Значение                                                 |
 | ---------| -------- | ---------------------------------------------------------|
@@ -354,19 +339,11 @@ Content-Disposition: form-data; name="meta"
 }
 ```
 
-</tabpanel>
-</tabs>
-
 ## Delete
 
 Данный метод позволяет удалить связь между фотографией и person_id.
 
-<tabs>
-<tablist>
-<tab>Запрос</tab>
-<tab>Ответ</tab>
-</tablist>
-<tabpanel>
+### Запрос
 
 Авторизационные данные передаются в строке запроса:
 
@@ -419,8 +396,7 @@ curl "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token
     -F meta='{"images":[{"name":"f1", "person_id":1},{"name":"f2", "person_id":2}], "space":"1"}'
 ```
 
-</tabpanel>
-<tabpanel>
+### Ответ
 
 | Параметр | Тип      | Значение                                                 |
 | -------- | -------- | -------------------------------------------------------- |
@@ -472,19 +448,11 @@ curl "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token
   }
 ```
 
-</tabpanel>
-</tabs>
-
 ## Truncate
 
 Данный метод позволяет полностью очистить space.
 
-<tabs>
-<tablist>
-<tab>Запрос</tab>
-<tab>Ответ</tab>
-</tablist>
-<tabpanel>
+### Запрос
 
 Авторизационные данные передаются в строке запроса:
 
@@ -522,8 +490,7 @@ Content-Disposition: form-data; name="meta"
 ------WebKitFormBoundaryfCqTBHeLZlsicvMp--
 ```
 
-</tabpanel>
-<tabpanel>
+### Ответ
 
 | Параметр | Тип      | Значение                                                 |
 | -------- | -------- | -------------------------------------------------------- |
@@ -546,6 +513,3 @@ Content-Disposition: form-data; name="meta"
 ```php
 php examples/php/smarty.php "https://smarty.mail.ru/api/v1/persons/truncate?oauth_provider=mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" "" '{"space":"1"}'
 ```
-
-</tabpanel>
-</tabs>
