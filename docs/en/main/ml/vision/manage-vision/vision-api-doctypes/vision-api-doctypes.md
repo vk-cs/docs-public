@@ -4,12 +4,7 @@ HOST: https://smarty.mail.ru
 
 ENDPOINT: /api/v1/docs/detect
 
-<tabs>
-<tablist>
-<tab>Request</tab>
-<tab>Answer</tab>
-</tablist>
-<tabpanel>
+### Request
 
 Authorization data is passed in the query string:
 
@@ -38,8 +33,7 @@ Request parameters are passed in JSON format in the request body with name="meta
 
 Images are passed in the body of the request, the values ​​of the name field must match those passed in images. The maximum number of images in one request is 100. The maximum size of each image must not exceed 4 MB.
 
-<details>
-  <summary markdown="span">Example request</summary>
+Example request:
   
 ```
 POST /api/v1/docs/detect?oauth_provider=mr&oauth_token=123 HTTP/1.1
@@ -66,10 +60,8 @@ Content-Disposition: form-data; name="meta"
 {"images":[{"name":"file_0"},{"name":"file_1"}]}
 ------WebKitFormBoundaryfCqTBHeLZlsicvMp--
 ```
-</details>
 
-</tabpanel>
-<tabpanel>
+### Response
 
 | Parameter | Type | Meaning |
 | ---------- | ---------- | ---------------------------------------------------- |
@@ -140,8 +132,7 @@ For each object (picture) there can be several types, with varying degrees of ce
 | foreign passport | Passport |
 | Application | Application |
 
-<details>
-  <summary markdown="span">Sample response</summary>
+Sample response:
 
 ```json
 {
@@ -173,10 +164,8 @@ For each object (picture) there can be several types, with varying degrees of ce
     }
   }
 ```
-</details>
 
-<details>
-  <summary markdown="span">An example of a response when the request failed</summary>
+An example of a response when the request failed:
 
 ```json
 {
@@ -186,10 +175,8 @@ For each object (picture) there can be several types, with varying degrees of ce
 "last_modified":0
 }
 ```
-</details>
 
-<details>
-  <summary markdown="span">Python example</summary>
+Python example:
 
 ```python
 python examples/python/smarty.py\
@@ -197,8 +184,3 @@ python examples/python/smarty.py\
  -p examples/passport.jpg \
  -v
 ```
-  This is detailed text.
-</details>
-
-</tabpanel>
-</tabs>
