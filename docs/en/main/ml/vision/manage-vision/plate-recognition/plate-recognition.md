@@ -2,12 +2,7 @@ License plate recognition is a special case of using the detect method — the m
 
 This method allows you to find various objects in the photo.
 
-<tabs>
-<tablist>
-<tab>Request</tab>
-<tab>Answer</tab>
-</tablist>
-<tabpanel>
+### Request
 
 Authorization data is passed in the query string:
 
@@ -60,8 +55,7 @@ Images are passed in the body of the request, the values ​​of the name field
 
 The maximum number of images in one request is 100. The maximum size of each image must not exceed 4MB.
 
-<details>
-  <summary markdown="span">Example request</summary>
+Example request:
 
 ```
 POST /api/v1/objects/detect?oauth_provider=mr&oauth_token=123 HTTP/1.1
@@ -88,10 +82,8 @@ Content-Disposition: form-data; name="meta"
 {"mode":["object","scene","car_number"],"images":[{"name":"file_0"},{"name":"file_1"}]}
 ------WebKitFormBoundaryfCqTBHeLZlsicvMp--
 ```
-</details>
 
-</tabpanel>
-<tabpanel>
+### Response
 
 | Parameter | Type | Meaning |
 | ------------ | ------- | ------------------------------------------------------- |
@@ -138,8 +130,7 @@ Content-Disposition: form-data; name="meta"
 | coordinate | Found object coordinates (optional) |
 | types_prob | An array of license plate type probabilities. currently the following types are supported: "rus" - all types of Russian license plates, "cis" - CIS license plates (except individual and Ukrainian military ones), "eu" - one-storey European license plates (optional, only for car_number mode) |
 
-<details>
-  <summary markdown="span">Sample response</summary>
+Sample response:
 
 ```json
 {
@@ -290,10 +281,8 @@ labels:[
 "last_modified":0
 }
 ```
-</details>
 
-<details>
-  <summary markdown="span">An example of a response when one of the images was not processed</summary>
+An example of a response when one of the images was not processed:
 
 ```json
 {
@@ -325,10 +314,8 @@ labels:[
 "last_modified":0
 }
 ```
-</details>
 
-<details>
-  <summary markdown="span">An example of a response when the request failed</summary>
+An example of a response when the request failed:
 
 ```json
 {
@@ -338,10 +325,8 @@ labels:[
 "last_modified":0
 }
 ```
-</details>
 
-<details>
-  <summary markdown="span">python example</summary>
+python example:
 
 ```python
 examples/python/smarty.py\
@@ -350,7 +335,3 @@ examples/python/smarty.py\
 --meta '{"mode":["scene"]}' \
 -v
 ```
-</details>
-
-</tabpanel>
-</tabs>

@@ -1,11 +1,6 @@
 The **improve** method is used to enhance photos.
 
-<tabs>
-<tablist>
-<tab>Request</tab>
-<tab>Answer</tab>
-</tablist>
-<tabpanel>
+### Request
 
 Authorization data is passed in the query string:
 
@@ -46,8 +41,7 @@ Images are passed in the body of the request, the values ​​of the name field
 
 The maximum number of images in one request is 48. The maximum size of each image must not exceed 8MB.
 
-<details>
-  <summary markdown="span">Example request</summary>
+Example request:
 
 ```
 POST /api/v1/photo/improve/?oauth_provider=mr&oauth_token=123 HTTP/1.1
@@ -74,10 +68,8 @@ Content-Disposition: form-data; name="meta"
 {"images":[{"name":"file_0"}, {"name":"file_1"}], "mode":["improve", "resolution"]}
 ------WebKitFormBoundaryfCqTBHeLZlsicvMp--
 ```
-</details>
 
-</tabpanel>
-<tabpanel>
+### Response
 
 | Parameter | Type | Meaning |
 | ------------ | ------- | ------------------------------------------------------- |
@@ -120,8 +112,7 @@ Content-Disposition: form-data; name="meta"
 | 1 | Permanent error |
 | 2 | Temporary error |
 
-<details>
-  <summary markdown="span">Sample response</summary>
+Sample response:
 
 ```json
 {
@@ -148,10 +139,8 @@ status:0,
 }
 }
 ```
-</details>
 
-<details>
-  <summary markdown="span">An example of a response when the request failed</summary>
+An example of a response when the request failed:
 
 ```json
 {
@@ -161,10 +150,8 @@ status:0,
 "last_modified":0
 }
 ```
-</details>
 
-<details>
-  <summary markdown="span">An example of a response if the image could not be loaded</summary>
+An example of a response if the image could not be loaded:
 
 ```json
 {
@@ -182,15 +169,9 @@ status:2,
 "last_modified":0
 }
 ```
-</details>
 
-<details>
-  <summary markdown="span">Curl request example</summary>
+Curl request example:
 
 ```bash
 curl -v "https://smarty.mail.ru/api/v1/photo/improve?oauth_provider=mcs&oauth_token=token" -F file_0=@test.jpeg -F meta='{"images":[{"name ":"file_0"}], "mode":["resolution", "improve"], "rfactor":4, "rtype":"art"}'
 ```
-</details>
-
-</tabpanel>
-</tabs>
