@@ -2,12 +2,7 @@
 
 This method allows you to set a task for video processing by the Vision recognition system.
 
-<tabs>
-<tablist>
-<tab>Request</tab>
-<tab>Response</tab>
-</tablist>
-<tabpanel>
+### Request
 
 Authorization data is transmitted in the request line:
 
@@ -50,8 +45,7 @@ The request parameters are passed in JSON format in the body.
 
 The maximum size of a video file is 2Gb.
 
-<details>
-  <summary markdown="span">Request example</summary>
+Request example:
 
 ```
 POST /api/v1/video/subscribe?oauth_provider="mcs&oauth_token=123 HTTP/1.1
@@ -60,10 +54,8 @@ POST /api/v1/video/subscribe?oauth_provider="mcs&oauth_token=123 HTTP/1.1
 Content-Type: application/json
 { "video":[{"name":"1", "link":"http://172.27.28.228/internal/hash/video.short.mp4", "actions":["od"]}]}
 ```
-</details>
 
-</tabpanel>
-<tabpanel>
+### Response
 
 | Parameter | Type | Value |
 | -------- | -------- | ------------- |
@@ -93,8 +85,7 @@ Content-Type: application/json
 | 1 | Permanent error |
 | 2 | Temporary error |
 
-<details>
-  <summary markdown="span">Sample response</summary>
+Sample response:
 
 ```json
 {
@@ -112,21 +103,12 @@ Content-Type: application/json
   "last_modified": 0
 }
 ```
-</details>
-
-</tabpanel>
-</tabs>
 
 ## Get
 
 This method allows you to get the results of the video processing task.
 
-<tabs>
-<tablist>
-<tab>Request</tab>
-<tab>Response</tab>
-</tablist>
-<tabpanel>
+### Request
 
 Authorization data is transmitted in the request line:
 
@@ -157,8 +139,7 @@ The request parameters are passed in JSON format in the body.
 | to | int | Request results with timestamp (ms) before to (including to) (optional)                                  |
 | limit | int | Request the number of results no more than limit (<=) (optional)                                  |
 
-<details>
-  <summary markdown="span">Request example</summary>
+Request example:
 
 ```
 POST /api/v1/video/get?oauth_provider="mcs&oauth_token=123 HTTP/1.1
@@ -166,10 +147,8 @@ POST /api/v1/video/get?oauth_provider="mcs&oauth_token=123 HTTP/1.1
 ....
 Content-Type: application/json {"video":[{"name":"test_name", "id":37, "from"":1000, "to":2000, "limit":2}]}
 ```
-</details>
 
-</tabpanel>
-<tabpanel>
+### Response
 
 | Parameter | Type | Value |
 | -------- | -------- | --------------------------------------------------------- |
@@ -207,8 +186,7 @@ Content-Type: application/json {"video":[{"name":"test_name", "id":37, "from"":1
 | meta | string | Frame recognition result (meta information) |
 | action | string | Recognition method |
 
-<details>
-  <summary markdown="span">Sample response</summary>
+Sample response:
 
 ```json
 {
@@ -237,117 +215,100 @@ Content-Type: application/json {"video":[{"name":"test_name", "id":37, "from"":1
   "last_modified": 0
 }
 ```
-</details>
 
-</tabpanel>
-</tabs>
+## unsubscribe
 
-## Abbestellen
+You can use this method to stop the video processing task.
 
-Mit dieser Methode können Sie die Videoverarbeitungsaufgabe stoppen.
+### request
 
-<Tabs>
-<Tabellenliste>
-<tab>Anfrage</tab>
-<tab>Antwort</tab>
-</tabliste>
-<Registerkarte>
+Authorization data is passed in the query string:
 
-Autorisierungsdaten werden in der Abfragezeichenfolge übergeben:
-
-| Parameter | Geben Sie | ein Bedeutung |
+| Parameters | Type | a meaning |
 | ---------------- | -------- | -------------------------------------------------- |
-| oauth_token | Zeichenfolge | OAuth2-Zugriffstoken (erforderlich, nicht leer) |
-| oauth_provider | Zeichenfolge | OAuth2-Anbieter (erforderlich, nicht leer) |
+| oauth_token | string | OAuth2 access token (required, not empty) |
+| oauth_provider | string | OAuth2 Provider (required, not empty) |
 
-Unterstützte OAuth2-Anbieter:
+Supported OAuth2 providers:
 
-| Anbieter | oauth_provider-Wert | Abrufen eines Tokens |
+| provider | oauth_provider value | Get a token |
 | --------- | ---------------------- | -------------------------------------------------- |
-| VK-Wolke | mcs | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
+| VK Cloud | mcs | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
 
-Die Anfrageparameter werden im Body im JSON-Format übergeben.
+The request parameters are passed in the body in JSON format.
 
-| Parameter | Geben Sie | ein Standard | Bedeutung |
+| Parameters | Type | a default | meaning |
 | -------- | --------------- | ------------ | ------------------------------------ |
-| Videos | []video_meta | \-— | Übertragene Videometadaten zum Stoppen (erforderlich, nicht leer) |
+| Videos | []video_meta | \-— | Transferred video metadata to stop (required, not empty) |
 
 ### video_meta
 
-| Parameter | Geben Sie | ein Bedeutung |
+| Parameters | Type | a meaning |
 | -------- | ------ | --------------------- |
-| Name | Zeichenfolge | ID, die als Antwort auf das Stoppen dieser Aufgabe an den Client zurückgegeben wird (erforderlich, nicht leer) |
-| ID | int | Aufgaben-ID (erforderlich) |
+| name | string | ID returned to the client in response to stopping this task (required, not empty) |
+| ID | int | Task ID (required) |
 
-<Details>
-  <summary markdown="span">Beispielanfrage</summary>
+Sample request:
 
 ```
 POST /api/v1/video/unsubscribe?oauth_provider="mcs&oauth_token=123 HTTP/1.1
 
 ....
-Inhaltstyp: application/json
+Content type: application/json
 { "video":[{"name":"1", "id":6}, {"name":"2", "id":39}]}
 ```
-</details>
 
-</tabpanel>
-<Registerkarte>
+### Response
 
-| Parameter | Geben Sie | ein Bedeutung |
+| Parameters | Type | a meaning |
 | -------- | -------- | -------------------------------------------------- ------- |
-| Zustand | int | 200 bei Erfolg, ansonsten steht die Fehlerbeschreibung in body |
-| Körper | Antwort | Antworttext |
+| state | int | 200 if successful, otherwise the error description is in body |
+| body | answer | Response body |
 
-### Antwort
+### Answer
 
-| Parameter | Geben Sie | ein Bedeutung |
+| Parameters | Type | a meaning |
 | ------------ | --------------- | --------------------------------- |
-| abgemeldet | []abgemeldet | Array von Antworten für jedes Video |
+| logged out | []logged out | array of responses for each video |
 
-### abgemeldet
+### signed out
 
-| Parameter | Geben Sie | ein Bedeutung |
+| Parameters | Type | a meaning |
 | -------- | -------- | ----------------------------------- |
-| Zustand | enum" | Ergebnis der Ausführung |
-| Fehler | Zeichenfolge | Textbeschreibung des Fehlers (optional) |
-| Name | Zeichenfolge | Name passend zur Anfrage und Antwort darauf |
-| ID | int | ID der Videoverarbeitungsaufgabe |
+| state | enum" | Result of execution |
+| error | string | Text description of the error (optional) |
+| name | string | Name matching the request and response to it |
+| ID | int | ID of video processing task |
 
-### Status
+### State
 
-| Parameter | Bedeutung |
-| -------- | -------------------- |
-| 0 | erfolgreich |
-| 1 | permanenter Fehler |
-| 2 | temporärer Fehler |
+| Parameters | meaning |
+| -------- | --------- |
+| 0 | successful       |
+| 1 | permanent error  |
+| 2 | temporary error  |
 
-<Details>
-  <summary markdown="span">Beispielantwort</summary>
+Example answer:
 
 ```json
 {
-  Zustand: 200
-  Karosserie: {
-    "abgemeldet": [
+  Condition: 200
+  Body: {
+    "logged out": [
       {
-        Zustand: 1
-        "error": "Aufgabe bereits angehalten",
+        Status: 1
+        "error": "Task already stopped",
         "name": "1",
         "id": 6
       },
       {
-        Zustand: 0
+        state: 0
         "name": "2",
         "id": 39
       }
     ]
   },
-  "htmlcodiert": falsch
+  "html encoded": wrong
   "last_modified": 0
 }
 ```
-</details>
-
-</tabpanel>
-</tabs>

@@ -1,11 +1,6 @@
 Метод **improve** применяется для улучшения фотографий.
 
-<tabs>
-<tablist>
-<tab>Запрос</tab>
-<tab>Ответ</tab>
-</tablist>
-<tabpanel>
+### Запрос
 
 Авторизационные данные передаются в строке запроса:
 
@@ -46,8 +41,7 @@
 
 Максимальное количество изображений в одном запросе равняется 48. Максимальный размер каждого изображения не должен превышать 8МБ.
 
-<details>
-  <summary markdown="span">Пример запроса</summary>
+Пример запроса:
 
 ```
 POST /api/v1/photo/improve/?oauth_provider=mr&oauth_token=123 HTTP/1.1
@@ -74,10 +68,8 @@ Content-Disposition: form-data; name="meta"
 {"images":[{"name":"file_0"}, {"name":"file_1"}], "mode":["improve", "resolution"]}
 ------WebKitFormBoundaryfCqTBHeLZlsicvMp--
 ```
-</details>
 
-</tabpanel>
-<tabpanel>
+### Ответ
 
 | Параметр     | Тип     | Значение                                                |
 | ------------ | ------- | ------------------------------------------------------- |
@@ -120,8 +112,7 @@ Content-Disposition: form-data; name="meta"
 | 1            | Перманентная ошибка |
 | 2            | Временная ошибка    |
 
-<details>
-  <summary markdown="span">Пример ответа</summary>
+Пример ответа:
 
 ```json
 {
@@ -148,10 +139,8 @@ Content-Disposition: form-data; name="meta"
    }
 }
 ```
-</details>
 
-<details>
-  <summary markdown="span">Пример ответа, когда не удалось выполнить запрос</summary>
+Пример ответа, когда не удалось выполнить запрос:
 
 ```json
 {
@@ -161,10 +150,8 @@ Content-Disposition: form-data; name="meta"
     "last_modified":0
 }
 ```
-</details>
 
-<details>
-  <summary markdown="span">Пример ответа, если не получилось загрузить картинку</summary>
+Пример ответа, если не получилось загрузить картинку:
 
 ```json
 {
@@ -182,15 +169,9 @@ Content-Disposition: form-data; name="meta"
    "last_modified":0
 }
 ```
-</details>
 
-<details>
-  <summary markdown="span">Пример curl запроса</summary>
+Пример curl запроса:
 
 ```bash
 curl -v "https://smarty.mail.ru/api/v1/photo/improve?oauth_provider=mcs&oauth_token=token" -F file_0=@test.jpeg -F meta='{"images":[{"name":"file_0"}], "mode":["resolution", "improve"], "rfactor":4, "rtype":"art"}'
 ```
-</details>
-
-</tabpanel>
-</tabs>
