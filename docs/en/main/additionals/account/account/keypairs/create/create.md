@@ -26,7 +26,7 @@ The key will automatically be saved to our computer.
 2. Run the `ssh-keygen` command to generate a new key:
 
 ```bash
-ssh-keygen -t rsa -b 2048
+ssh-keygen -t rsa -b 2048 -m pem -f "path to file"
 ```
 
 3. Specify the name of the file where the keys will be saved and enter the password.
@@ -40,7 +40,7 @@ The public part of the key will be saved in the `<key_name>.pub` file. Paste thi
 2. Create a new key by running the command:
 
 ```bash
-ssh-keygen -t ed25519 -C "Email_address"
+ssh-keygen -t rsa -b 2048 -m pem -f "path to file"
 ```
 
 3. When you are prompted to select a file to save the key, press Enter. Or specify the required file.
