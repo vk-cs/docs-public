@@ -2,12 +2,7 @@
 
 Данный метод позволяет поставить задачу на обработку видео системой распознавания Vision.
 
-<tabs>
-<tablist>
-<tab>Запрос</tab>
-<tab>Ответ</tab>
-</tablist>
-<tabpanel>
+### Запрос
 
 Авторизационные данные передаются в строке запроса:
 
@@ -50,8 +45,7 @@
 
 Максимальный размер видео файла - 2Gb.
 
-<details>
-  <summary markdown="span">Пример запроса</summary>
+Пример запроса:
 
 ```
 POST /api/v1/video/subscribe?oauth_provider="mcs&oauth_token=123 HTTP/1.1
@@ -60,10 +54,8 @@ POST /api/v1/video/subscribe?oauth_provider="mcs&oauth_token=123 HTTP/1.1
 Content-Type: application/json
 { "video":[{"name":"1", "link":"http://172.27.28.228/internal/hash/video.short.mp4", "actions":["od"]}]}
 ```
-</details>
 
-</tabpanel>
-<tabpanel>
+### Ответ
 
 | Параметр | Тип      | Значение                                                  |
 | -------- | -------- | --------------------------------------------------------- |
@@ -93,8 +85,7 @@ Content-Type: application/json
 | 1        | Перманентная ошибка |
 | 2        | Временная ошибка    |
 
-<details>
-  <summary markdown="span">Пример ответа</summary>
+Пример ответа:
 
 ```json
 {
@@ -112,7 +103,6 @@ Content-Type: application/json
   "last_modified": 0
 }
 ```
-</details>
 
 </tabpanel>
 </tabs>
@@ -121,12 +111,7 @@ Content-Type: application/json
 
 Данный метод позволяет получить результаты выполнения задачи по обработке видео.
 
-<tabs>
-<tablist>
-<tab>Запрос</tab>
-<tab>Ответ</tab>
-</tablist>
-<tabpanel>
+### Запрос
 
 Авторизационные данные передаются в строке запроса:
 
@@ -157,8 +142,7 @@ Content-Type: application/json
 | to       | int    | Запросить результаты с меткой времени (ms) до to (включая to) (optional)                                  |
 | limit    | int    | Запросить кол-во результатов не больше чем limit (<=) (optional)                                  |
 
-<details>
-  <summary markdown="span">Пример запроса</summary>
+Пример запроса:
 
 ```
 POST /api/v1/video/get?oauth_provider="mcs&oauth_token=123 HTTP/1.1
@@ -166,10 +150,8 @@ POST /api/v1/video/get?oauth_provider="mcs&oauth_token=123 HTTP/1.1
 ....
 Content-Type: application/json {"video":[{"name":"test_name", "id":37, "from"":1000, "to":2000, "limit":2}]}
 ```
-</details>
 
-</tabpanel>
-<tabpanel>
+### Ответ
 
 | Параметр | Тип      | Значение                                                  |
 | -------- | -------- | --------------------------------------------------------- |
@@ -207,8 +189,7 @@ Content-Type: application/json {"video":[{"name":"test_name", "id":37, "from"":1
 | meta      | string | Результат распознавания кадра (мета информация) |
 | action    | string | Метод распознавания                             |
 
-<details>
-  <summary markdown="span">Пример ответа</summary>
+Пример ответа:
 
 ```json
 {
@@ -237,21 +218,12 @@ Content-Type: application/json {"video":[{"name":"test_name", "id":37, "from"":1
   "last_modified": 0
 }
 ```
-</details>
-
-</tabpanel>
-</tabs>
 
 ## Unsubscribe
 
 Данный метод позволяет остановить задачу по обработке видео.
 
-<tabs>
-<tablist>
-<tab>Запрос</tab>
-<tab>Ответ</tab>
-</tablist>
-<tabpanel>
+### Запрос
 
 Авторизационные данные передаются в строке запроса:
 
@@ -279,8 +251,7 @@ Content-Type: application/json {"video":[{"name":"test_name", "id":37, "from"":1
 | name     | string | Идентификатор, возвращаемый клиенту в ответе на остановку данной задачи (required non-empty) |
 | id       | int    | ID задачи (required)  |
 
-<details>
-  <summary markdown="span">Пример запроса</summary>
+Пример запроса:
 
 ```
 POST /api/v1/video/unsubscribe?oauth_provider="mcs&oauth_token=123 HTTP/1.1
@@ -289,10 +260,8 @@ POST /api/v1/video/unsubscribe?oauth_provider="mcs&oauth_token=123 HTTP/1.1
 Content-Type: application/json
 { "video":[{"name":"1", "id":6}, {"name":"2", "id":39}]}
 ```
-</details>
 
-</tabpanel>
-<tabpanel>
+### Ответ
 
 | Параметр | Тип      | Значение                                                  |
 | -------- | -------- | --------------------------------------------------------- |
@@ -322,8 +291,7 @@ Content-Type: application/json
 | 1        | перманентная ошибка |
 | 2        | временная ошибка    |
 
-<details>
-  <summary markdown="span">Пример ответа</summary>
+Пример ответа:
 
 ```json
 {
@@ -347,7 +315,3 @@ Content-Type: application/json
   "last_modified": 0
 }
 ```
-</details>
-
-</tabpanel>
-</tabs>

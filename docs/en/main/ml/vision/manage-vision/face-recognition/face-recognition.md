@@ -13,12 +13,7 @@ Let's consider each of them in more detail.
 
 This method allows you to establish a link between a given photo and a specific **person_id**.
 
-<tabs>
-<tablist>
-<tab>Request</tab>
-<tab>Answer</tab>
-</tablist>
-<tabpanel>
+### Request
 
 Authorization data is passed in the query string:
 
@@ -81,8 +76,7 @@ Content-Disposition: form-data; name="meta"
 ------WebKitFormBoundaryfCqTBHeLZlsicvMp--
 ```
 
-</tabpanel>
-<tabpanel>
+### Response
 
 | Parameter | Type | Meaning |
 | -------- | -------- | ------------------------------------------------------- |
@@ -134,19 +128,11 @@ Answer example:
   }
 ```
 
-</tabpanel>
-</tabs>
-
 ## Recognize
 
 This method allows you to recognize a person from a given photo. If no match is found, a new person will be added.
 
-<tabs>
-<tablist>
-<tab>Request</tab>
-<tab>Answer</tab>
-</tablist>
-<tabpanel>
+### Request
 
 AuthorizationThis data is passed in the query string:
 
@@ -207,8 +193,7 @@ Content-Disposition: form-data; name="meta"
 ------WebKitFormBoundaryfCqTBHeLZlsicvMp--
 ```
 
-</tabpanel>
-<tabpanel>
+### Response
 
 | Parameter | Type | Meaning |
 | ---------| -------- | ---------------------------------------------------------|
@@ -354,19 +339,11 @@ Answer example:
 }
 ```
 
-</tabpanel>
-</tabs>
-
 ## Delete
 
 This method allows you to remove the association between a photo and person_id.
 
-<tabs>
-<tablist>
-<tab>Request</tab>
-<tab>Answer</tab>
-</tablist>
-<tabpanel>
+### Request
 
 Authorization data is passed in the query string:
 
@@ -419,8 +396,7 @@ curl "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token
     -F meta='{"images":[{"name":"f1", "person_id":1},{"name":"f2", "person_id":2}], "space":"1 "}'
 ```
 
-</tabpanel>
-<tabpanel>
+### Response
 
 | Parameter | Type | Meaning |
 | -------- | -------- | ------------------------------------------------------ |
@@ -479,12 +455,7 @@ Answer example:
 
 This method allows you to completely clear the space.
 
-<tabs>
-<tablist>
-<tab>Request</tab>
-<tab>Answer</tab>
-</tablist>
-<tabpanel>
+### Request
 
 Authorization data is passed in the query string:
 
@@ -522,8 +493,7 @@ Content-Disposition: form-data; name="meta"
 ------WebKitFormBoundaryfCqTBHeLZlsicvMp--
 ```
 
-</tabpanel>
-<tabpanel>
+### Response
 
 | Parameter | Type | Meaning |
 | -------- | -------- | -------------------------------------------------------- |
@@ -546,6 +516,3 @@ php example:
 ```php
 php examples/php/smarty.php "https://smarty.mail.ru/api/v1/persons/truncate?oauth_provider=mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" "" '{"space":"1"}'
 ```
-
-</tabpanel>
-</tabs>
