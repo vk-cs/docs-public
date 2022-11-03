@@ -4,12 +4,7 @@ HOST: https://smarty.mail.ru
 
 ENDPOINT: /api/v1/docs/detect
 
-<tabs>
-<tablist>
-<tab>Запрос</tab>
-<tab>Ответ</tab>
-</tablist>
-<tabpanel>
+### Запрос
 
 Авторизационные данные передаются в строке запроса:
 
@@ -38,8 +33,7 @@ ENDPOINT: /api/v1/docs/detect
 
 Изображения передаются в теле запроса, значения поля name должны соответствовать переданным в images. Максимальное количество изображений в одном запросе равняется 100. Максимальный размер каждого изображения не должен превышать 4 МБ.
 
-<details>
-  <summary markdown="span">Пример запроса</summary>
+Пример запроса:
   
 ```
 POST /api/v1/docs/detect?oauth_provider=mr&oauth_token=123 HTTP/1.1
@@ -66,10 +60,8 @@ Content-Disposition: form-data; name="meta"
 {"images":[{"name":"file_0"},{"name":"file_1"}]}
 ------WebKitFormBoundaryfCqTBHeLZlsicvMp--
 ```
-</details>
 
-</tabpanel>
-<tabpanel>
+### Ответ
 
 | Параметр | Тип      | Значение                                                 |
 |----------|----------|----------------------------------------------------------|
@@ -140,8 +132,7 @@ Content-Disposition: form-data; name="meta"
 | Zagranpasport     | Загранпаспорт      |
 | Zayavlenie        | Заявление          |
 
-<details>
-  <summary markdown="span">Пример ответа</summary>
+Пример ответа:
 
 ```json
 {
@@ -173,10 +164,8 @@ Content-Disposition: form-data; name="meta"
     }
   }
 ```
-</details>
 
-<details>
-  <summary markdown="span">Пример ответа, когда не удалось выполнить запрос</summary>
+Пример ответа, когда не удалось выполнить запрос:
 
 ```json
 {
@@ -186,10 +175,8 @@ Content-Disposition: form-data; name="meta"
 "last_modified":0
 }
 ```
-</details>
 
-<details>
-  <summary markdown="span">Пример Python</summary>
+Пример Python:
 
 ```python
 python examples/python/smarty.py \
@@ -197,8 +184,3 @@ python examples/python/smarty.py \
  -p examples/passport.jpg \
  -v
 ```
-  Это подробный текст.
-</details>
-
-</tabpanel>
-</tabs>

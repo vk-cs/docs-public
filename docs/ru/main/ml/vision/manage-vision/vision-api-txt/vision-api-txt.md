@@ -4,12 +4,7 @@ HOST: https://smarty.mail.ru
 
 ENDPOINT: /api/v1/text/recognize
 
-<tabs>
-<tablist>
-<tab>Запрос</tab>
-<tab>Ответ</tab>
-</tablist>
-<tabpanel>
+### Запрос
 
 Авторизационные данные передаются в строке запроса:
 
@@ -41,8 +36,7 @@ ENDPOINT: /api/v1/text/recognize
 
 Максимальное количество изображений в одном запросе равняется 100. Максимальный размер каждого изображения не должен превышать 4МБ.
 
-<details>
-  <summary markdown="span">Пример запроса</summary>
+Пример запроса:
 
 ```
 POST /api/v1/text/recognize?oauth_provider=mcs&oauth_token=123 HTTP/1.1
@@ -70,10 +64,8 @@ Content-Disposition: form-data; name="meta"
 ------WebKitFormBoundaryfCqTBHeLZlsicvMp--
 
 ```
-</details>
 
-</tabpanel>
-<tabpanel>
+### Ответ
 
 | Параметр | Тип    | Значение                                              |
 | ------------ | --------   | --------------------------------------------------------- |
@@ -122,8 +114,7 @@ Content-Disposition: form-data; name="meta"
 | lang_prob   | float32   | Уверенность распознавания языка                           |
 | lang        | string    | Eng/rus/unknown. Unknown когда не содержит букв алфавита  |
 
-<details>
-  <summary markdown="span">Пример ответа при отсутствии флага "mode":"detailed"</summary>
+Пример ответа при отсутствии флага "mode":"detailed":
 
 ```json
 {
@@ -138,10 +129,8 @@ Content-Disposition: form-data; name="meta"
      }
 }
 ```
-</details>
 
-<details>
-  <summary markdown="span">Пример ответа при наличии флага  "mode":"detailed"</summary>
+Пример ответа при наличии флага  "mode":"detailed":
 
 ```json
 {
@@ -160,10 +149,8 @@ Content-Disposition: form-data; name="meta"
      }
 }
 ```
-</details>
 
-<details>
-  <summary markdown="span">Пример ответа, когда не удалось выполнить запрос</summary>
+Пример ответа, когда не удалось выполнить запрос:
 
 ```json
 {
@@ -173,7 +160,3 @@ Content-Disposition: form-data; name="meta"
     "last_modified":0
 }
 ```
-</details>
-
-</tabpanel>
-</tabs>

@@ -2,12 +2,7 @@
 
 Данный метод позволяет найти различные объекты на фотографии.
 
-<tabs>
-<tablist>
-<tab>Запрос</tab>
-<tab>Ответ</tab>
-</tablist>
-<tabpanel>
+### Запрос
 
 Авторизационные данные передаются в строке запроса:
 
@@ -60,8 +55,7 @@ mode может содержать один или несколько режим
 
 Максимальное количество изображений в одном запросе равняется 100. Максимальный размер каждого изображения не должен превышать 4МБ.
 
-<details>
-  <summary markdown="span">Пример запроса</summary>
+Пример запроса:
 
 ```
 POST /api/v1/objects/detect?oauth_provider=mr&oauth_token=123 HTTP/1.1
@@ -88,10 +82,8 @@ Content-Disposition: form-data; name="meta"
 {"mode":["object","scene","car_number"],"images":[{"name":"file_0"},{"name":"file_1"}]}
 ------WebKitFormBoundaryfCqTBHeLZlsicvMp--
 ```
-</details>
 
-</tabpanel>
-<tabpanel>
+### Ответ
 
 | Параметр     | Тип     | Значение                                                |
 | ------------ | ------- | ------------------------------------------------------- |
@@ -138,8 +130,7 @@ Content-Disposition: form-data; name="meta"
 | coord          | Координаты найденного объекта (optional)                                  |
 | types_prob     | Массив вероятностей типов номерных знаков. на данный момент поддерживаются следующие типы: "rus" - все типы Российских номеров, "cis" - номера СНГ (кроме индивидуальных и военных украинских), "eu" - одноэтажные номера Европы (optional, only for car_number mode) |
 
-<details>
-  <summary markdown="span">Пример ответа</summary>
+Пример ответа:
 
 ```json
 {
@@ -290,10 +281,7 @@ Content-Disposition: form-data; name="meta"
     "last_modified":0
 }
 ```
-</details>
-
-<details>
-  <summary markdown="span">Пример ответа, когда одна из картинок не обработалась</summary>
+Пример ответа, когда одна из картинок не обработалась:
 
 ```json
 {
@@ -325,10 +313,7 @@ Content-Disposition: form-data; name="meta"
     "last_modified":0
 }
 ```
-</details>
-
-<details>
-  <summary markdown="span">Пример ответа, когда не удалось выполнить запрос</summary>
+Пример ответа, когда не удалось выполнить запрос:
 
 ```json
 {
@@ -338,10 +323,7 @@ Content-Disposition: form-data; name="meta"
     "last_modified":0
 }
 ```
-</details>
-
-<details>
-  <summary markdown="span">Пример python</summary>
+Пример python:
 
 ```python
 examples/python/smarty.py \
@@ -350,7 +332,3 @@ examples/python/smarty.py \
 --meta '{"mode":["scene"]}' \
 -v
 ```
-</details>
-
-</tabpanel>
-</tabs>

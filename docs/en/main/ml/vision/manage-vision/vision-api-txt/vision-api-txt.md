@@ -4,12 +4,7 @@ HOST: https://smarty.mail.ru
 
 ENDPOINT: /api/v1/text/recognize
 
-<tabs>
-<tablist>
-<tab>Request</tab>
-<tab>Answer</tab>
-</tablist>
-<tabpanel>
+### Request
 
 Authorization data is passed in the query string:
 
@@ -41,8 +36,7 @@ Images are passed in the body of the request, the values ​​of the name field
 
 The maximum number of images in one request is 100. The maximum size of each image must not exceed 4MB.
 
-<details>
-  <summary markdown="span">Example request</summary>
+Example request:
 
 ```
 POST /api/v1/text/recognize?oauth_provider=mcs&oauth_token=123 HTTP/1.1
@@ -70,10 +64,8 @@ Content-Disposition: form-data; name="meta"
 ------WebKitFormBoundaryfCqTBHeLZlsicvMp--
 
 ```
-</details>
 
-</tabpanel>
-<tabpanel>
+### Response
 
 | Parameter | Type | Meaning |
 | ------------ | -------- | --------------------------------------------------------- |
@@ -122,8 +114,7 @@ Content-Disposition: form-data; name="meta"
 | lang_prob | float32 | Language recognition confidence |
 | language | string | Eng/rus/unknown. Unknown when does not contain letters of the alphabet |
 
-<details>
-  <summary markdown="span">An example of a response when the "mode":"detailed" flag is missing</summary>
+An example of a response when the "mode":"detailed" flag is missing:
 
 ```json
 {
@@ -138,10 +129,8 @@ Content-Disposition: form-data; name="meta"
      }
 }
 ```
-</details>
 
-<details>
-  <summary markdown="span">An example of a response when the "mode":"detailed" flag is present</summary>
+An example of a response when the "mode":"detailed" flag is present:
 
 ```json
 {
@@ -160,10 +149,8 @@ Content-Disposition: form-data; name="meta"
      }
 }
 ```
-</details>
 
-<details>
-  <summary markdown="span">An example of a response when the request failed</summary>
+An example of a response when the request failed:
 
 ```json
 {
@@ -173,7 +160,3 @@ Content-Disposition: form-data; name="meta"
     "last_modified":0
 }
 ```
-</details>
-
-</tabpanel>
-</tabs>
