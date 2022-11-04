@@ -9,7 +9,7 @@
                     "link": "docs/ru/main/additionals/account/start"
                 },
                 {
-                    "link": "docs/ru/dbs/dbaas/db-backup/point-in-time-recovery-pitr"
+                    "link": "docs/ru/main/dbs/dbaas/db-backup/point-in-time-recovery-pitr"
                 },
                 {
                     "link": "docs/ru/main/base/iaas/vm-backup"

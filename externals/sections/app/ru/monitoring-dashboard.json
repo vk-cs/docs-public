@@ -48,7 +48,7 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "additionals/account/concepts/rolesandpermissions"
+                    "link": "docs/ru/main/additionals/account/concepts/rolesandpermissions"
                 },
                 {
                     "link": "docs/ru/main/dbs/dbaas/manage-db/backup-db"
