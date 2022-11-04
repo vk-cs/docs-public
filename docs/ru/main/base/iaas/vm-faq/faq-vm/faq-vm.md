@@ -1,9 +1,13 @@
 ## Где располагаются сервера
 
-Виртуальные машины можно создать в дата-центрах VK Cloud, находящихся в Российской Федерации:
+Виртуальные машины можно создать в нескольких дата-центрах VK Cloud, расположенных как на территории, так и за пределами РФ.
 
-- gz1 — дата-центр [Goznak](https://tech.goznak.ru/dc-goznak-moscow);
-- ms1 (ko1) — дата-центр [DataLine NORD4](https://www.dtln.ru/tsod-nord).
+Дата-центры, находящиеся на территории РФ:
+    - gz1 — дата-центр [Goznak](https://tech.goznak.ru/dc-goznak-moscow);
+    - ms1 (ko1) — дата-центр [DataLine NORD4](https://www.dtln.ru/tsod-nord).
+
+Дата-центры, находящиеся за пределами РФ:
+    - ams — дата-центр [AMS1](https://datacenter.com/datacenter/locations/data-center-amsterdam-ams1/).
 
 ## Какая гарантированная скорость соединения
 
