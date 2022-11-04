@@ -6,13 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/ml/mlplatform/start"
+                    "link": "docs/ru/main/ml/mlplatform"
                 },
                 {
-                    "link": "docs/ru/main/ml/mlplatform/manage"
+                    "link": "docs/ru/main/ml/mlplatform/mlflow"
                 },
                 {
-                    "link": "docs/ru/main/ml/mlplatform/scenarios"
+                    "link": "docs/ru/main/ml/mlplatform/jupyterhub"
                 },
                 {
                     "link": "docs/ru/main/ml/mlplatform/concepts"
