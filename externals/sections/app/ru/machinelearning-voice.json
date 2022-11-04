@@ -6,16 +6,16 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ml/cloud-voice"
+                    "link": "docs/ru/main/ml/cloud-voice"
                 },
                 {
-                    "link": "docs/ml/cloud-voice/speech-recognition"
+                    "link": "docs/ru/main/ml/cloud-voice/speech-recognition"
                 },
                 {
-                    "link": "docs/ml/cloud-voice/text-to-speech"
+                    "link": "docs/ru/main/ml/cloud-voice/text-to-speech"
                 },
                 {
-                    "link": "docs/ml/cloud-voice/pricing"
+                    "link": "docs/ru/main/ml/cloud-voice/pricing"
                 }
             ]
         }
