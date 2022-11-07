@@ -4,4 +4,7 @@
 2.  В контекстном меню инстанса выбрать пункт «Удалить».
 3.  Подтвердить проведение операции.
 
-Примечание: Если ранее инстанс JupyterHub был связан с MLflow, первоначально необходимо [удалить инстанс MLflow](https://mcs.mail.ru/docs/ru/ml/mlplatform/mlflow/manage/delete).
+<info>
+**Примечание**
+Если ранее инстанс JupyterHub был связан с MLflow, первоначально необходимо [удалить инстанс MLflow](https://mcs.mail.ru/docs/ru/ml/mlplatform/mlflow/manage/delete).
+</info>
