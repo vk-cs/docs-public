@@ -9,7 +9,7 @@ The VK Cloud platform supports the differentiation of access rights to project r
 List of roles and permissions:
 
 | Operation/Role | User admin (user_admin) | admin. billing | admin. project | Project owner | admin. networks | Observer | admin. internal networks | admin. network security | admin. VM | Super Administrator |
-|------------------------------------------------- -------------------------------------------------- --------------------|------------------------------ ------------------|-----------------|-------------- --|------------|-------------|-------------| ------------------------|------------------------ -----|-----------|--------------------|
+|--|-----------|-----------------|----------|------------|-------------|-------------| ------------------------|---------------------------|-----------|--------------------|
 | Adding a user to a project | x | - | - | x | - | - | - | - | - | X |
 | User Role Assignment | x | - | - | X | - | - | - | - | - | X |
 | Billing / changing payment details | - | X | X | X | - | - | - | - | - | X |
@@ -18,7 +18,8 @@ List of roles and permissions:
 | VM management (enable/disable/mount images/reboot/change resources//access to monitoring and logs) | - | - | X | X | - | - | - | - | X | X |
 | Virtual Disk Management (Create/Remove/Expand/Mount/Snapshots/Migrate) | - | - | X | X | - | - | - | - | X | X |
 | Image management (adding / removing VM images) | - | - | X | X | - | - | - | - | - | X |
-| Manage Shared Folders (Add/Remove/Resize) | - | - | X | X | - | - | - | - | - | X || Manage access rules for shared folders (add/delete/modify) | - | - | X | X | - | - | - | - | - | X |
+| Manage Shared Folders (Add/Remove/Resize) | - | - | X | X | - | - | - | - | - | X |
+| Manage access rules for shared folders (add/delete/modify) | - | - | X | X | - | - | - | - | - | X |
 | Creation modification removal of PaaS-services (K8S,DBaaS) | - | - | X | X | - | - | - | - | - | X |
 | Creation, removal, modification, virtual networks. Connecting to a virtual router | - | - | X| X | X | - | X | - | - | X |
 | Creating / deleting project virtual routers. | - | - | X | X | X | - | X | - | - | X |
@@ -32,7 +33,7 @@ List of roles and permissions:
 | Managingincomingrules for filtering traffic on external ports of the router (FWaaS) | - | - | X | X | X | - | - | - | - | X |
 | Adding virtual networks to the BGP address scope (operation required for routing virtual networks) | - | - | - | - | - | - | - | - | - | X |
 | Create zones and records in public DNS | - | - | x | x | x | - | - | - | - | X |
-| View information about all services within a project | - | - | - | X | | X | - | - | - | X |
+| View information about all services within a project | - | - | - | X |-| X | - | - | - | X |
 
 ## Deleting a member
 
