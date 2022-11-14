@@ -1,11 +1,11 @@
-Статья расскажет о том, как установить мониторинг в существующую виртуальную машину Linux.
+The article will tell you how to install monitoring in an existing Linux virtual machine.
 
-1.  Перейдите в панель VK Cloud
-2.  Найдите в списке целевую виртуальную машину
-3.  Кликните на нее
-4.  Перейдите на вкладку Информация -> Подключение мониторинга
-5.  Скопируйте команду, которая появляется на вкладке
-6.  Подключитесь к виртуальной машине по ssh
-7.  Выполните команду, скопированную на шаге 5
-8.  Агент инсталлирован и будет запускаться каждый раз, при старте виртуальной машиной
-9.  Метрики по этой виртуальной машине можно найти по label \`host\`, у которого значение = hostname ВМ
+1. Go to the VK Cloud panel.
+2. Find the target virtual machine in the list.
+3. Click on it.
+4. Go to the tab Information -> Monitoring settings.
+5. Copy the command that appears on the tab.
+6. Connect to the virtual machine via ssh.
+7. Run the command copied in step 5.
+8. The agent is installed and will be launched every time the virtual machine starts.
+9. Metrics for this virtual machine can be found by the label \`host\`, whose value is = hostname of the VM.
