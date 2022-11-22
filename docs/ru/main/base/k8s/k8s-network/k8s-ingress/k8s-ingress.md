@@ -58,15 +58,16 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: my-configmap
-  data:default.conf: |
-    server {
-      listen       80 default_server;
-      server_name  _;
-      default_type text/plain;
-      location / {
-        return 200 "\n'Hello World!'\n";
+  data:
+    default.conf: |
+      server {
+        listen 80 default_server;
+        server_name _;
+        default_type text/plain;
+        location / {
+          return 200 "\n'Hello World!'\n";
+        }
       }
-    }
 ---
 apiVersion: v1
 kind: Pod
