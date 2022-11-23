@@ -1,12 +1,13 @@
 {
-    "title": "Резервное копирование",
-    "pageDescription": "",
-    "shortDescription": "Swagger спецификация внешнего API сервиса Резервное копирование",
-    "metaTitle": "Резервное копирование - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Резервное копирование",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
-  }
+  "title": "Резервное копирование",
+  "pageDescription": "",
+  "shortDescription": "Swagger спецификация внешнего API сервиса Резервное копирование",
+  "metaTitle": "Резервное копирование - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Резервное копирование",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "b7710706-2554-40c7-b180-2015f9b4c15d"
+}
