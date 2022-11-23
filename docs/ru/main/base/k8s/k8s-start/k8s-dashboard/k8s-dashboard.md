@@ -45,7 +45,7 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 ### Linux
 
 ```bash
-kauthproxy --kubeconfig $KUBECONFIG -n kube-system https://kubernetes-dashboard.svc
+kubectl auth-proxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
 ```
 
 ### Windows
