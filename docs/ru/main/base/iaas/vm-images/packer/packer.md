@@ -5,8 +5,8 @@ Packer создаст и запустит виртуальную машину с
 ## Подготовка к работе с packer
 
 * [Установите](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli) Packer.
-* [Установите]((../../../../../additionals/account/project/cli/setup/)) OpenStack client.
-* [Авторизуйте](../../../../../additionals/account/project/cli/authorization/) клиент CLI.
+* [Установите](../../../../additionals/account/project/cli/setup/) OpenStack client.
+* [Авторизуйте](../../../../additionals/account/project/cli/authorization/) клиент CLI.
 
 ## Подготовка конфигурации образа
 
@@ -55,8 +55,6 @@ build {
 openstack network list
 ```
 
-или в веб интерфейсе в разделе "облачные вычисления/сети"
-
 В параметре flavor_name укажите название флейвора, с которым будет создана виртуальная машина. Имя флейвора можно посмотреть в мастере создания виртуальной машины или через Openstack CLI:
 
 ```bash
@@ -79,8 +77,6 @@ packer build nginx.pkr.hcl
 openstack image list
 ```
 
-или в веб интерфейсе в разделе "облачные вычисления/образы"
-
 ## Удаление образа
 
-Созданный образ можно [удалить](../../delete-image/) через личный кабинет.
+Созданный образ можно [удалить](../delete-image/) через личный кабинет.
