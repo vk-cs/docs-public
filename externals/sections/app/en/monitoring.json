@@ -6,21 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/en/main/base/iaas/vm-images/custom-image"
+                    "link": "docs/ru/main/manage/monitoring"
                 },
                 {
-                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
+                    "link": "docs/ru/main/manage/monitoring/monitoring-info/mon-architecture"
                 },
                 {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
-                },
-                {
-                    "link": "docs/en/main/additionals/billing",
-                    "hiddenForPartners": true
-                },
-                {
-                    "link": "docs/en/main/additionals/billing/operations/payment",
-                    "hiddenForPartners": true
+                    "link": "docs/ru/main/manage/monitoring/monitoring-info/mon-agent-sw"
                 }
             ]
         },
@@ -28,42 +20,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/en/main/base/iaas/vm-interfaces/vm-create-cli"
+                    "link": "docs/ru/main/manage/monitoring/monitoring-start/mon-setup-new"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-volumes/volume-sla"
-                },
-                {
-                    "link": "docs/en/main/base/iaas/vm-start/manage-vm"
-                },
-                {
-                    "link": "docs/en/main/base/iaas/fs"
-                },
-                {
-                    "link": "docs/en/main/additionals/mp"
-                }
-            ]
-        },
-        {
-            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
-            "links": [
-                {
-                    "link": "docs/en/main/additionals/start/user-account/project-roles-users"
-                },
-                {
-                    "link": "docs/en/main/dbs/dbaas/manage-db/backup-db"
-                },
-                {
-                    "link": "docs/en/main/networks/vnet"
-                },
-                {
-                    "link": "docs/en/main/networks/vnet/vpn"
-                },
-                {
-                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
-                },
-                {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/ru/main/manage/monitoring/monitoring-start/mon-setup-current"
                 }
             ]
         }
