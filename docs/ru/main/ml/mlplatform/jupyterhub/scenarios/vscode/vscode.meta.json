@@ -1,12 +1,13 @@
 {
-    "title": "Подключение к JupyterHub с помощью Visual Studio Code",
-    "pageDescription": "Инструкции по подключению к инстансу JupyterHub из Visual Studio Code.",
-    "shortDescription": "Подключение к серверу JupyterHub в облаке с использованием локального VS Code",
-    "metaTitle": "JupyterHub и Visual Studio Code - VK Cloud",
-    "metaDescription": "JupyterHub и Visual Studio Code.",
-    "sectionTitle": "JupyterHub и Visual Studio Code",
-    "markdown": "",
-    "icon": "",
-    "weight": 1,
-    "infobarItems": null
-  }
+  "title": "Подключение к JupyterHub с помощью Visual Studio Code",
+  "pageDescription": "Инструкции по подключению к инстансу JupyterHub из Visual Studio Code.",
+  "shortDescription": "Подключение к серверу JupyterHub в облаке с использованием локального VS Code",
+  "metaTitle": "JupyterHub и Visual Studio Code - VK Cloud",
+  "metaDescription": "JupyterHub и Visual Studio Code.",
+  "sectionTitle": "JupyterHub и Visual Studio Code",
+  "markdown": "",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": null,
+  "uuid": "f5362393-3787-440e-bf4c-b847bbcb086a"
+}
