@@ -2,7 +2,7 @@
   "title": "Публичное API платформы",
   "pageDescription": "",
   "shortDescription": "Набор отдельных сервисов с отдельными swagger спецификациями",
-  "metaTitle": "Публичное API платформы - VK Cloud Solutions",
+  "metaTitle": "Публичное API платформы - VK Cloud",
   "metaDescription": "",
   "sectionTitle": "Публичное API платформы",
   "markdown": "Публичное HTTP API состоит из набора отдельных сервисов на каждый из которых опубликована отдельная Swagger (Open API 2.0) спецификация.",
