@@ -8,7 +8,6 @@ Vision — это технология распознавания лиц, объ
 
 - [Распознавание лиц](/ml/vision/manage-vision/face-recognition);
 - [Определение сцен и объектов](/ml/vision/manage-vision/vision-api-obj);
-- [Отслеживание людей](/ml/vision/vision-video/vision-api-video);
 - [Классификация документов](/ml/vision/manage-vision/vision-api-doctypes);
 - [Распознавание полей документов](/ml/vision/manage-vision/docs-recognition);
 - Распознавание знаменитостей;
@@ -16,5 +15,4 @@ Vision — это технология распознавания лиц, объ
 - [Обнаружение автомобилей и их номеров](/ml/vision/manage-vision/plate-recognition);
 - [Определение номеров автомобилей](/ml/vision/manage-vision/plate-recognition);
 - [Увеличение разрешения](/ml/vision/manage-vision/vision-image-api);
-- [Поиск достопримечательностей](/ml/vision/vision-video/vision-api-video);
 - Выявление дефекта на производстве.
