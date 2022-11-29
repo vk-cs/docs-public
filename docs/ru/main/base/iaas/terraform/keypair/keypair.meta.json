@@ -1,12 +1,13 @@
 {
-    "title": "Создание ключевых пар",
-    "pageDescription": "",
-    "shortDescription": "Создание ключевых пар с использованием Terraform.",
-    "metaTitle": "Создание ключевых пар с помощью Terraform - VK Cloud Solutions",
-    "metaDescription": "",
-    "sectionTitle": "Создание ключевых пар с помощью Terraform",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 6
-  }
+  "title": "Создание ключевых пар",
+  "pageDescription": "",
+  "shortDescription": "Создание ключевых пар с использованием Terraform.",
+  "metaTitle": "Создание ключевых пар с помощью Terraform - VK Cloud Solutions",
+  "metaDescription": "",
+  "sectionTitle": "Создание ключевых пар с помощью Terraform",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 6,
+  "uuid": "42e0bc44-a89a-4bc8-820a-8f1ddeaa0a37"
+}
