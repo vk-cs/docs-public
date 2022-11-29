@@ -1,7 +1,7 @@
 {
     "title": "Packer",
     "pageDescription": "",
-    "shortDescription": "Создание образа виртуальной машины с нужными параметрами при помощи конфигурационного файла",
+    "shortDescription": "Virtual machine image creation with required parameters via configuration file",
     "metaTitle": "Packer - VK Cloud",
     "metaDescription": "",
     "sectionTitle": "Packer",
