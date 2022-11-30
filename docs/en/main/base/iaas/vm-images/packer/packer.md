@@ -61,7 +61,7 @@ In the parameter flavor_name set flavor's name with which virtual machine will b
 openstack flavor list
 ```
 
-## Image creation
+## Create image
 
 To create image run this command:
 
@@ -69,14 +69,14 @@ To create image run this command:
 packer build nginx.pkr.hcl
 ```
 
-## Created image check
+## Checking the created image
 
-Created image can be seen in web interface in Cloud computing → Images or in OpenStack CLI:
+You can find created image in your account in **Cloud computing → Images** section or in OpenStack CLI:
 
 ```bash
 openstack image list
 ```
 
-## Image deletion
+## Delete image
 
 Created image could be deleted [delete](../delete-image/) with user interface.
