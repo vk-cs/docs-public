@@ -1,6 +1,6 @@
 Packer allows to create virtual machine images with required parameters via configuration file.
 
-Packer will create and start virtual machine with Ubuntu-22.04 operating system from the list of basic images. Then packer will install nginx and create boot disk snapshot. After all operations, virtual machine and it's boot disk will be deleted.
+Packer will create and start Ubuntu-22.04 virtual machine from the list of basic images. Then Packer will install Nginx and create boot disk snapshot. After all operations, the virtual machine and its boot disk will be deleted.
 
 ## Preparing to work with Packer
 
@@ -10,7 +10,7 @@ Packer will create and start virtual machine with Ubuntu-22.04 operating system 
 
 ## Image configuration preparation
 
-Create a file with any name (for example, nginx.pkr.hcl) and copy this configuration:
+Create a file (for example, `nginx.pkr.hcl`) and copy this configuration:
 
 ```hcl
 variable "image_tag" {
@@ -49,13 +49,13 @@ build {
 }
 ```
 
-In the parameter network_ID set subnet's ID which created virtual machine will be connected to. You can find subnet ID with web interface in Virtual networks → Networks or via Openstack CLI:
+In the parameter `network_ID` set subnet's ID which the created virtual machine will be connected. You can find subnet IDs in your account in **Virtual networks → Networks** section or via Openstack CLI:
 
 ```bash
 openstack network list
 ```
 
-In the parameter flavor_name set flavor's name with which virtual machine will be created. You can find flavor's name in virtual machine creation wizard or via Openstack CLI:
+In the parameter `flavor_name` set flavor's name with which the virtual machine will be created. You can find flavor's name in the virtual machine creation wizard or via Openstack CLI:
 
 ```bash
 openstack flavor list
