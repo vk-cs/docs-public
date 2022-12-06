@@ -8,6 +8,9 @@ The VK Cloud platform supports the differentiation of access rights to project r
 
 List of roles and permissions:
 
+![](./assets/roles_and_permissions.png)
+
+<!-- prettier-ignore
 | Operation/Role | User admin (user_admin) | admin. billing | admin. project | Project owner | admin. networks | Observer | admin. internal networks | admin. network security | admin. VM | Super Administrator |
 |--|-----------|-----------------|----------|------------|-------------|-------------| ------------------------|---------------------------|-----------|--------------------|
 | Adding a user to a project | x | - | - | x | - | - | - | - | - | X |
@@ -34,6 +37,7 @@ List of roles and permissions:
 | Adding virtual networks to the BGP address scope (operation required for routing virtual networks) | - | - | - | - | - | - | - | - | - | X |
 | Create zones and records in public DNS | - | - | x | x | x | - | - | - | - | X |
 | View information about all services within a project | - | - | - | X |-| X | - | - | - | X |
+-->
 
 ## Deleting a member
 
