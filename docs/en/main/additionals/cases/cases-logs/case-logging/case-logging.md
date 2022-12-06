@@ -16,9 +16,9 @@ If you use other servers and hardware, some script steps may differ from those d
 
 The ELK stack consists of three components:
 
-- Elasticsearch - an engine for storing, indexing and processing data in a shared storage, as well as for full-text data search.
-- Logstash - a utility for collecting, filtering, aggregating, changing and then redirecting the source data to the final storage.
-- Kibana - a web interface for viewing and analyzing data from the repository.
+- Elasticsearch — an engine for storing, indexing and processing data in a shared storage, as well as for full-text data search.
+- Logstash — a utility for collecting, filtering, aggregating, changing and then redirecting the source data to the final storage.
+- Kibana — a web interface for viewing and analyzing data from the repository.
 
 ## Installing Elasticsearch, Logstash and Kibana
 
@@ -72,16 +72,16 @@ root@ubuntu-basic-1-1-10gb:~# apt-get install logstash
 
 Elasticsearch is configured using three configuration files:
 
-- **elasticsearch.yml - main configuration file;**
-- **jvm.options - file for configuring a Java machine to run Elasticsearch;**
-- **log4j2.properties - file to configure Elasticsearch logging.**
+- **elasticsearch.yml — main configuration file;**
+- **jvm.options — file for configuring a Java machine to run Elasticsearch;**
+- **log4j2.properties — file to configure Elasticsearch logging.**
 
 **jvm.options**
 
 The most important thing in this file is the setting of the memory allocated for the JVM (Heap Size). For Elasticsearch, this parameter directly affects how large data arrays it can process. Heap Size is determined by a couple of parameters:
 
-- Xms - initial value;
-- Xmx - maximum value.
+- Xms — initial value;
+- Xmx — maximum value.
 
 The default Heap Size is 1 GB. If the amount of memory on the server allows, increase this value ([more about Heap Size](https://www.elastic.co/guide/en/elasticsearch/reference/current/heap-size.html)). To do this, find the lines:
 
@@ -105,8 +105,8 @@ For convenience, you can change appender.rolling.policies.size.size, which speci
 
 Customize:
 
-- node.name: elasticsearch - specify the name of the node;
-- network.host: 127.0.0.1 - set to listen only to localhost.
+- `node.name: elasticsearch` — specify the name of the node;
+- `network.host: 127.0.0.1` — set to listen only to localhost.
 
 Start elasticsearch:
 
@@ -277,18 +277,18 @@ To get familiar with Kibana, you can use the test dataset:
 
 [![](./assets/1576047982336-1576047982336.png)](https://hb.bizmrg.com/help-images/logging/Kibana_Dashboard_3.png)
 
-## Install filebeat
+## Install Filebeat
 
 Beats is part of the Elasticsearch infrastructure, the so-called Data Shippers (data providers). These are lightweight agents that take data from various sources and transform it for transmission to Elasticsearch. The functionality of Beats partially duplicates Logstash, but Beats is lighter, easier to set up, works faster and does not require the Java stack to be installed. Typically, the nodes where the logs are generated have the appropriate Beats agents installed, which transfer the logs to Logstash. Logstash aggregates, transforms logs and passes them to Elasticsearch. There are many different Beats, the standard set includes the following agents:
 
-- Filebeat - collection of logs from various log files.
-- Packetbeat - collection of network statistics.
-- Winlogbeat - collection of logs on the Windows platform.
-- Metricbeat - collection of various metrics.
-- Heartbeat - collection of data on infrastructure availability.
-- Auditbeat - collection of system audit data.
-- Functionbeat - data collection from Serverless projects (AWS Lambda).
-- Journalbeat - collection of Journald logs.
+- Filebeat — collection of logs from various log files.
+- Packetbeat — collection of network statistics.
+- Winlogbeat — collection of logs on the Windows platform.
+- Metricbeat — collection of various metrics.
+- Heartbeat — collection of data on infrastructure availability.
+- Auditbeat — collection of system audit data.
+- Functionbeat — data collection from Serverless projects (AWS Lambda).
+- Journalbeat — collection of Journald logs.
 
 The most common agent is Filebeat, we use it to collect Nginx logs.
 
@@ -392,9 +392,9 @@ Before starting Filebeat, configure Logstash to accept logs.
 
 The Logstash configuration file generally consists of three sections:
 
-- input - description of the destination of the logs.
-- filter - transformation of logs.
-- output - description of the destination of the converted logs.
+- input — description of the destination of the logs.
+- filter — transformation of logs.
+- output — description of the destination of the converted logs.
 
 1. Create a file /etc/logstash/conf.d/input-beats.conf containing the port number on which Beats (in particular, Filebeat) sends its logs:
 
@@ -539,10 +539,10 @@ Let's build the first visualization - top 10 clients.
 
 5. Enter data:
 
-- Aggregation: Terms - returns the specified number of top values.
-- Field: clientip.keyword - select a client by IP address.
-- Size: 10 - 10 top values.
-- Custom Label: Top 10 clients - the name of the visualization.
+- Aggregation: Terms — returns the specified number of top values.
+- Field: clientip.keyword — select a client by IP address.
+- Size: 10 — 10 top values.
+- Custom Label: Top 10 clients — the name of the visualization.
 
 [![](./assets/1576065062374-1576065062374.png)](https://hb.bizmrg.com/help-images/logging/Visualisation-5.png)
 
@@ -564,10 +564,10 @@ Let's build a second visualization - a pie chart showing the top 5 countries fro
 
 1. Enter the following data:
 
-- Aggregation: Terms - select the top data value.
-- Field: geoip.country_code2.keyword - two-letter country code.
-- Size:5 - select top 5.
-- Custom label: Top 5 countries - chart title.
+- Aggregation: Terms — select the top data value.
+- Field: geoip.country_code2.keyword — two-letter country code.
+- Size:5 — select top 5.
+- Custom label: Top 5 countries — chart title.
 
 [![](./assets/1576065921656-1576065921656.png)](https://hb.bizmrg.com/help-images/logging/Visualisation_22.png)
 
@@ -609,6 +609,6 @@ Kibana Dashboard is a set of visualizations.
 
 [![](./assets/1576067332838-1576067332838.png)](https://hb.bizmrg.com/help-images/logging/Dashboard_4.png)
 
-## Feedback**
+## Feedback
 
-Any problems or questions? [Write to us, we will be happy](https://mcs.mail.ru/help/contact-us)
+Any problems or questions? [Write to us, we will be happy](https://mcs.mail.ru/help/contact-us).
