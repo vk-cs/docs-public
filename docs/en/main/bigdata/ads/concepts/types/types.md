@@ -2,7 +2,7 @@ Differences between Enterprise and Community edition include:
 
 ## Price of licenses
 
-Details can be found in the [Billing](.../billing) section.
+Details can be found in the [Billing](../../../../additionals/billing) section.
 
 ## Differences in components
 
