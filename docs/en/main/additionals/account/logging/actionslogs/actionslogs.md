@@ -1,6 +1,6 @@
-The Activity Log section is for monitoring and installing changes. To go to the section, at the top of the control panel, click on the username and select "Activity Log".
+The **Activity Log** section is for monitoring and installing changes.
 
-The page displays the history of user actions working with the project. Now the history of actions is recorded by 6 components of the VK Cloud cloud:
+Now the history of actions is recorded by 6 components of the VK Cloud cloud:
 
 1. Nova is a controller of computing resources.
 2. Cinder - a component responsible for working with disks.
@@ -9,29 +9,37 @@ The page displays the history of user actions working with the project. Now the 
 5. Glance is a component that is responsible for storing and working with images.
 6. Octavia is a component that manages load balancers.
 
-By default, the page displays user activity for the last month. If you are interested in a different period, specify a new time range and click "Generate another request". Then click "Show Report".
+## Account
 
-The generated report can be downloaded in xls format. To do this, click "Download report" and it will automatically be saved on your computer.
+In your account, click on the username and select **Activity Log**. The page displays the history of user actions working with the project.
+
+By default, the page displays user activity for the last month. If you are interested in a different period, specify a new time range and click **Create another request**. Then click **Show Logs**.
+
+The generated report can be downloaded in `xls` format. To do this, click **Download report**.
 
 ## API
 
-To automatically retrieve activity log entries, use the API request:
+To get activity log entries using an API request:
+
+1. [Get](../../../../additionals/cases/cases-examples/case-project-id/) access token `{auth_token}`.
+2. Find out `{project_id}` on the **Project Settings → API Access** page.
+3. Run request:
 
 ```http
-curl -i -X ​​GET "[https://infra.mail.ru](https://infra.mail.ru/):{port}/v1/{project_id}/logs?source=nova" -H " X-Auth-Token: {auth_token}"
+curl -i -X GET "https://mcs.mail.ru/auditlogs/v1/{project_id}/logs?source={source}" -H "X-Auth-Token:{auth_token}"
 ```
 
-You can see the current endpoint address on the "Project Settings" -> "API Endpoints" page.
+where `{source}` is the component name: `nova`, `cinder`, `karbor`, `neutron`, `glance`, `octavia`.
 
-| Request parameters | Values ​​| Description |
-| ----------------- | -------- | -------------------------------------------------- --------------------------------- |
-| From | RFC3339 | The start of the time range. |
-| To | RFC3339 | End of time range. |
-| source | string | Event source (component). |
-| marker | string | The token for requesting the next page, previously returned by the API. TTL markers - 1 hour. |
-| limit | Integer | The number of records to return. The default is 1000. |
+| Request parameters | Values   | Description                                                                                   |
+| -----------------  | -------- | --------------------------------------------------------------------------------------------- |
+| From               | RFC3339  | The start of the time range.                                                                  |
+| To                 | RFC3339  | End of time range.                                                                            |
+| source             | string   | Event source (component).                                                                     |
+| marker             | string   | The token for requesting the next page, previously returned by the API. TTL markers - 1 hour. |
+| limit              | Integer  | The number of records to return. The default is 1000.                                         |
 
-Answer:
+Response:
 
 ```yaml
 {
