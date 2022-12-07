@@ -6,13 +6,23 @@ Floating IP is associated to a "gray" address due to the 1: 1 NAT mechanism on t
 
 Floating addresses in your [VK Cloud account are](https://mcs.mail.ru/app/services/infra/routers/) managed on the "Floating IPs" page of the "Virtual Networks" service. This page displays the addresses allocated to the project:![](./assets/1598291459714-snimok-ekrana-2020-08-24-v-20.50.50.png)
 
+To add a floating IP address, click the "Add IP to Project" button.
+
+<info>
+
+The IP address is randomly selected and assigned automatically. You cannot select a specific IP address or change the assigned one.
+
+</info>
+
 ## Binding an address to an instance
 
 To assign a floating address to a private network port, select the "Bind" option in the line with IP, then select the required address in the drop-down list:![](./assets/1598291631383-snimok-ekrana-2020-08-24-v-20.53.06.png)
 
-**Note**
+<info>
 
 Floating IP binding can only be done if there is an instance with a connected port on the private network.
+
+</info>
 
 ## Releasing Floating IP
 
@@ -20,9 +30,11 @@ To remove an address from a project, select "Remove IP from project" in the addr
 
 ![](./assets/1598307738974-1598307738974.png)
 
-**Attention**
+<warn>
 
 When a floating IP address is deleted, it is released from the project and can be automatically assigned to another project.
+
+</warn>
 
 ## OpenStack CLI
 
