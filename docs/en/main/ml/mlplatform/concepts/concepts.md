@@ -10,7 +10,7 @@ The task of MLOps usually includes:
 - Monitoring the behavior of models in production;
 - Update of used ML-models.
 
-To solve MLOps tasks, VKontakte cloud solutions provide the opportunity to receive the following services:
+To solve MLOps tasks, VK Cloud provide the opportunity to receive the following services:
 
-- JupyterHub - a tool for working with Jupyter Notebook in multi-user mode;
+- JupyterHub — a tool for working with Jupyter Notebook in multi-user mode;
 - MLflow is a tool for solving problems of tracking and versioning experiments, ML models.
