@@ -64,7 +64,7 @@ To create a virtual machine, create an instance.tf file in the directory and add
     - **uuid** is a unique disk identifier.
     - **source_type** — OS boot source.
     - **destination_type** is the destination of the boot image.
-    - **volume_type** is the volume type of the boot image target.
+    - **volume_type** is the volume type of the boot image target. To get a list of available types, run the command `openstack volume type list`.
     - **volume_size** - volume block size of the boot image target.
     - **boot_index** - disk location in boot order.
     - **delete_on_termination** - If True, the disk will be deleted when the VM is deleted.
