@@ -27,9 +27,17 @@ Distribution channel. You can become our partner and submit your application to 
 
 1.  Select the desired cloud service in the store in the catalog.
 2.  Set the amount of resources to allocate for the service.
-3.  Click the "Install" button
+3.  Click the "Install" button.
 
-The application with the desired topology will automatically deploy to the cloud. In the future, the configuration of the nodes can be changed on the fly.
+The application with the desired topology will automatically deploy to the cloud.
+
+<warn>
+
+A separate VM is created with the selected pre-installed application. Installing multiple applications on one VM is not provided.
+
+</warn>
+
+In the future, the configuration of the nodes can be changed on the fly.
 
 ## Service connection
 
