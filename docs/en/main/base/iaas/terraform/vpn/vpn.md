@@ -1,6 +1,6 @@
 <warn>
 
-First of all, make sure you [installed Terraform](/docs/en/additionals/terraform/terraform-installation) and [created the main.tf file](https://mcs.mail. ru/docs/ru/additionals/terraform/terraform-provider-config) with the necessary providers.
+First of all, make sure you [installed Terraform](/docs/en/additionals/terraform/terraform-installation) and [created the main.tf file](/docs/en/additionals/terraform/terraform-provider-config) with the necessary providers.
 
 </warn>
 
