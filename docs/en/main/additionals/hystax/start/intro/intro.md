@@ -2,6 +2,6 @@ Cloud Disaster Recovery is a cloud service for restoring IT infrastructure and d
 
 ### Capabilities
 
-- Migration - creation and debugging is planned to ensure privacy. You can learn more about this step in the [Migration](docs/en/additionals/hystax/migration) section.
-- Disaster recovery - improving reliability, restoring access to infrastructure and its functionality after bad weather.
-- Backup - backup execution and data recovery according to a specified schedule. Backup works on the basis of a disaster recovery scheme.
+- Migration — creation and debugging is planned to ensure privacy. You can learn more about this step in the [Migration](../../migration/) section.
+- Disaster recovery — improving reliability, restoring access to infrastructure and its functionality after bad weather.
+- Backup — backup execution and data recovery according to a specified schedule. Backup works on the basis of a disaster recovery scheme.
