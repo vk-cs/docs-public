@@ -1,12 +1,13 @@
 {
-    "title": "Тарификация",
-    "pageDescription": "",
-    "shortDescription": "Стоимость сервиса и особенности его тарификации",
-    "metaTitle": "Тарификация - VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Тарификация",
-    "markdown": "",
-    "icon": "",
-    "weight": 2,
-    "infobarItems": null
-  }
+  "title": "Тарификация",
+  "pageDescription": "",
+  "shortDescription": "Стоимость сервиса и особенности его тарификации",
+  "metaTitle": "Тарификация - VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Тарификация",
+  "markdown": "",
+  "icon": "",
+  "weight": 2,
+  "infobarItems": null,
+  "uuid": "805c94d0-da2d-4e0a-ae92-352ad58eac65"
+}

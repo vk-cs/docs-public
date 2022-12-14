@@ -1,12 +1,13 @@
 {
-    "title": "Запуск Terraform",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Запуск Terraform - VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Запуск Terraform",
-    "markdown": "",
-    "icon": "",
-    "weight": 3,
-    "infobarItems": null
-  }
+  "title": "Запуск Terraform",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Запуск Terraform - VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Запуск Terraform",
+  "markdown": "",
+  "icon": "",
+  "weight": 3,
+  "infobarItems": null,
+  "uuid": "9aae42e9-ff34-4d15-a68a-9463e888e95a"
+}
