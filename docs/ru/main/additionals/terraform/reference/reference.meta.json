@@ -1,12 +1,13 @@
 {
-    "title": "Справка",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Быстрый старт - VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Быстрый старт",
-    "markdown": "",
-    "icon": "",
-    "weight": 3,
-    "infobarItems": null
-  }
+  "title": "Справка",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Быстрый старт - VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Быстрый старт",
+  "markdown": "",
+  "icon": "",
+  "weight": 3,
+  "infobarItems": null,
+  "uuid": "7765e74c-eb74-45cb-a87d-ee2c47617abc"
+}
