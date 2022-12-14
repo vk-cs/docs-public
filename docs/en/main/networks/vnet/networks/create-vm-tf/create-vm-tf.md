@@ -1,6 +1,6 @@
 This article will tell you how to create a virtual machine in VK Cloud through Terraform.
 
-We assume that you have already installed and prepared Terraform according to this [instruction](/ru/additionals/terraform/terraform-installation).
+We assume that you have already installed and prepared Terraform according to this [instruction](/ru/additionals/terraform/quick-start/preparation).
 
 <warn>
 

@@ -1,6 +1,6 @@
 <warn>
 
-Прежде всего убедитесь, что вы [установили Terraform](../../../../additionals/terraform/terraform-installation/) и [создали файл main.tf](../../../../additionals/terraform/terraform-provider-config/) с необходимыми провайдерами.
+Прежде всего убедитесь, что вы [установили Terraform](/ru/additionals/terraform/quick-start/preparation) и [создали файл main.tf](/ru/additionals/terraform/quick-start/configuration) с необходимыми провайдерами.
 
 </warn>
 
