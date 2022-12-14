@@ -1,4 +1,4 @@
-Before you start configuring the Terraform provider, you need to [install the Terraform executables](/ru/additionals/terraform/terraform-installation ).
+Before you start configuring the Terraform provider, you need to [install the Terraform executables](/en/additionals/terraform/terraform-config-structure).
 
 To get started with Terraform, create a provider mirror file and place it in the directory.
 
