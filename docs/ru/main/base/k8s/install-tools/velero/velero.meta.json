@@ -1,12 +1,13 @@
 {
-    "title": "Установка Velero",
-    "pageDescription": "Как установить Velero в кластер Kubernetes.",
-    "shortDescription": "Как установить утилиту Velero",
-    "metaTitle": "Установка Velero — VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Установка Velero",
-    "markdown": "Как установить контроллер Velero в кластер Kubernetes.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 3
+  "title": "Установка Velero",
+  "pageDescription": "Как установить Velero в кластер Kubernetes.",
+  "shortDescription": "Как установить утилиту Velero",
+  "metaTitle": "Установка Velero — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Установка Velero",
+  "markdown": "Как установить контроллер Velero в кластер Kubernetes.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "b8d2816e-dc8a-4e6e-97d2-c8296a9f71b0"
 }

@@ -1,12 +1,13 @@
 {
-    "title": "Обновление версии кластера",
-    "pageDescription": "Как устроена процедура обновления кластера Kubernetes.",
-    "shortDescription": "Как устроена процедура обновления кластера Kubernetes",
-    "metaTitle": "Обновление версии кластера — VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Обновление версии кластера",
-    "markdown": "Как устроена процедура обновления кластера Kubernetes.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 7
+  "title": "Обновление версии кластера",
+  "pageDescription": "Как устроена процедура обновления кластера Kubernetes.",
+  "shortDescription": "Как устроена процедура обновления кластера Kubernetes",
+  "metaTitle": "Обновление версии кластера — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Обновление версии кластера",
+  "markdown": "Как устроена процедура обновления кластера Kubernetes.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 7,
+  "uuid": "d41e9669-7bb3-4343-b629-53a815288a9f"
 }

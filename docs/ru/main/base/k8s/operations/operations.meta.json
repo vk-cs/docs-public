@@ -8,5 +8,6 @@
   "markdown": "Кластер Kubernetes состоит из master-узлов и групп worker-узлов. Здесь рассказывается об операциях, которые можно выполнить с кластером и его узлами.",
   "icon": "",
   "infobarItems": null,
-  "weight": 2
+  "weight": 2,
+  "uuid": "894f25df-89f5-47ac-84a2-519d541edc6b"
 }
