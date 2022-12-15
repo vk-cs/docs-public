@@ -1,0 +1,13 @@
+{
+  "title": "Доступные версии Kubernetes и политика поддержки версий",
+  "pageDescription": "Здесь содержится информация о доступных версиях Kubernetes, которые можно развернуть в VK Cloud. Также приводится политика поддержки версий.",
+  "shortDescription": "Политика поддержки доступных версий Kubernetes в кластерах VK Cloud и история изменений",
+  "metaTitle": "Доступные версии Kubernetes и политика поддержки версий — VK Cloud",
+  "metaDescription": "Kubernetes,K8S,версия,история,политика,поддержка",
+  "sectionTitle": "Доступные версии Kubernetes и политика поддержки версий",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 8,
+  "uuid": "fb66c4cd-8cb7-429e-a503-eb5d39e5c20e"
+}

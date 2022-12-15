@@ -1,0 +1,13 @@
+{
+  "title": "Gatekeeper",
+  "pageDescription": "Как пользоваться Gatekeeper для создания ограничений и контроля за их соблюдением для ресурсов Kubernetes.",
+  "shortDescription": "Как использовать Gatekeeper в кластере для создания ограничений и контроля за ними",
+  "metaTitle": "Gatekeeper — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Gatekeeper",
+  "markdown": "Как пользоваться Gatekeeper для создания ограничений и контроля за их соблюдением для ресурсов Kubernetes.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "6cd0ed60-ab5c-4435-b51f-9021bb7f6ae1"
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Подключение к реестру Docker",
+  "pageDescription": "Если в кластере Kubernetes включен реестр Docker, то к реестру можно подключиться, используя описанную здесь процедуру.",
+  "shortDescription": "Как подключиться к реестру Docker",
+  "metaTitle": "Подключение к реестру Docker — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Подключение к реестру Docker",
+  "markdown": "Если в кластере Kubernetes включен реестр Docker, то к реестру можно подключиться, используя описанную здесь процедуру.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "565cffc7-68b7-47f1-83f8-92cc2764ae60"
+}

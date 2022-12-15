@@ -1,0 +1,13 @@
+{
+    "title": "Создание кластера",
+    "pageDescription": "Различные способы создания кластера Kubernetes.",
+    "shortDescription": "Здесь перечислены различные способы создания кластера",
+    "metaTitle": "Создание кластера — VK Cloud",
+    "metaDescription": "",
+    "sectionTitle": "Создание кластера",
+    "markdown": "Различные способы создания кластера Kubernetes.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "ba93926b-b177-44ff-a5c0-b82cd844847e"
+}

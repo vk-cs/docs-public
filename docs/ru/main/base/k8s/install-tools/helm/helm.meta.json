@@ -1,0 +1,13 @@
+{
+    "title": "Установка Helm",
+    "pageDescription": "Как установить пакетный менеджер Helm в кластер Kubernetes.",
+    "shortDescription": "Как установить пакетный менеджер Helm",
+    "metaTitle": "Установка Helm — VK Cloud",
+    "metaDescription": "",
+    "sectionTitle": "Установка Helm",
+    "markdown": "Как установить пакетный менеджер Helm в кластер Kubernetes.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "b01d16cb-660d-4aae-bdd2-ca10086ead6f"
+}

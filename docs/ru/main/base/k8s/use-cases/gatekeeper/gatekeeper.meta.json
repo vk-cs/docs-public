@@ -1,0 +1,13 @@
+{
+  "title": "Использование Gatekeeper",
+  "pageDescription": "Как накладывать ограничения Gatekeeper на ресурсы Kubernetes для соблюдения корпоративных политик.",
+  "shortDescription": "Как накладывать ограничения Gatekeeper на ресурсы Kubernetes для соблюдения корпоративных политик",
+  "metaTitle": "Использование Gatekeeper — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Использование Gatekeeper",
+  "markdown": "Как накладывать ограничения Gatekeeper на ресурсы Kubernetes для соблюдения корпоративных политик.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "e799adfd-c57a-4170-b3a8-15d283c0060e"
+}
