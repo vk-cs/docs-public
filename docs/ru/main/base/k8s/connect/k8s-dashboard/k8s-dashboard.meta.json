@@ -1,0 +1,13 @@
+{
+    "title": "Подключение к кластеру с помощью Kubernetes Dashboard",
+    "pageDescription": "Как подключиться к кластеру Kubernetes с помощью Kubernetes Dashboard.",
+    "shortDescription": "Как подключиться к кластеру Kubernetes с помощью Kubernetes Dashboard",
+    "metaTitle": "Подключение к кластеру с помощью Kubernetes Dashboard — VK Cloud",
+    "metaDescription": "",
+    "sectionTitle": "Подключение к кластеру (Kubernetes Dashboard)",
+    "markdown": "Как подключиться к кластеру Kubernetes с помощью Kubernetes Dashboard.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "2c07e5de-6bf8-4272-b68b-12680ad1eb00"
+}
