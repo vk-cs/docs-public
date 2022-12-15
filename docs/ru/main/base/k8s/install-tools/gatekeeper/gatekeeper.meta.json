@@ -1,0 +1,13 @@
+{
+    "title": "Установка Gatekeeper",
+    "pageDescription": "Как установить контроллер Gatekeeper в кластер Kubernetes.",
+    "shortDescription": "Как установить контроллер Gatekeeper",
+    "metaTitle": "Установка Gatekeeper — VK Cloud",
+    "metaDescription": "",
+    "sectionTitle": "Установка Gatekeeper",
+    "markdown": "Как установить контроллер Gatekeeper в кластер Kubernetes.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "17b0603f-05ef-4b3a-b672-cc4c40eadc95"
+}

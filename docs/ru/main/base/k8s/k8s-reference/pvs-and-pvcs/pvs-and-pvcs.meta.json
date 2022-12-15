@@ -1,0 +1,12 @@
+{
+    "title": "Persistent Volume Claim и постоянные тома",
+    "pageDescription": "Общие сведения о работе с постоянными томами с помощью Persistent Volume Claim.",
+    "shortDescription": "Как использовать Persistent Volume Claim разных типов для работы с постоянными томами",
+    "metaTitle": "Persistent Volume Claim и постоянные тома — VK Cloud",
+    "metaDescription": "",
+    "sectionTitle": "Persistent Volume Claim и постоянные тома",
+    "markdown": "Общие сведения о работе с постоянными томами с помощью Persistent Volume Claim.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 5
+}
