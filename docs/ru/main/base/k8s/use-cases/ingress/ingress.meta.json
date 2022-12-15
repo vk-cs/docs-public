@@ -1,0 +1,13 @@
+{
+  "title": "Использование Ingress",
+  "pageDescription": "Как предоставить доступ к развернутым в кластере сервисам с помощью Ingress.",
+  "shortDescription": "Как предоставить доступ к развернутым в кластере сервисам с помощью Ingress",
+  "metaTitle": "Использование Ingress - VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Использование Ingress",
+  "markdown": "Как предоставить доступ к развернутым в кластере сервисам с помощью Ingress.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "58421e85-7c64-4f39-bebc-7d7f89534bbf"
+}

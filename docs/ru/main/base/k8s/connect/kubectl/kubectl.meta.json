@@ -1,0 +1,13 @@
+{
+  "title": "Подключение к кластеру с помощью kubectl",
+  "pageDescription": "Как подключиться к кластеру Kubernetes с помощью kubectl.",
+  "shortDescription": "Как подключиться к кластеру Kubernetes с помощью kubectl",
+  "metaTitle": "Подключение к кластеру с помощью kubectl — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Подключение к кластеру с помощью kubectl",
+  "markdown": "Как подключиться к кластеру Kubernetes с помощью kubectl.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "aadd5bbf-41b8-4b6f-b01f-6aec1d199e5f"
+}

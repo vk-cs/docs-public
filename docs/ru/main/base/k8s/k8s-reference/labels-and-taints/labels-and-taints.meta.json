@@ -1,0 +1,13 @@
+{
+    "title": "Метки и ограничения",
+    "pageDescription": "Общие сведения о метках (labels) и ограничениях (taints) в Kubernetes.",
+    "shortDescription": "Общие сведения о метках (labels) и ограничениях (taints) в Kubernetes",
+    "metaTitle": "Метки и ограничения — VK Cloud",
+    "metaDescription": "",
+    "sectionTitle": "Метки и ограничения",
+    "markdown": "Общие сведения о метках (labels) и ограничениях (taints) в Kubernetes.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "ab082882-2802-491f-ae6c-f9f736a92aed"
+}

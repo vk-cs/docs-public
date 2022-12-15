@@ -1,0 +1,12 @@
+{
+  "title": "Справочник Kubernetes",
+  "pageDescription": "Справочник, описывающий основные понятия и объекты Kubernetes. Более подробную информацию можно найти в официальной документации Kubernetes.",
+  "shortDescription": "Основные понятия и объекты Kubernetes, примеры взаимодействия с ними",
+  "metaTitle": "Справочник Kubernetes — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Справочник Kubernetes",
+  "markdown": "Справочник, описывающий основные понятия и объекты Kubernetes. Более подробную информацию можно найти в [официальной документации Kubernetes](https://kubernetes.io/docs/home/).",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 10
+}
