@@ -8,5 +8,6 @@
   "markdown": "Справочник, описывающий основные понятия и объекты Kubernetes. Более подробную информацию можно найти в [официальной документации Kubernetes](https://kubernetes.io/docs/home/).",
   "icon": "",
   "infobarItems": null,
-  "weight": 10
+  "weight": 10,
+  "uuid": "1fd56110-a935-43d9-8c17-b6b62b77337c"
 }
