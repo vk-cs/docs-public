@@ -1,18 +1,12 @@
-This article describes the installation of the ELK stack on a Linux operating system - Ubuntu 18.04.
+This article describes the installation of the ELK stack on a Linux operating system — Ubuntu 18.04.
 
 The ELK stack is a powerful set of tools for efficiently solving a wide range of data collection, storage and analysis tasks:
 
 - Elasticsearch is a full text search solution built on top of Apache Lucene with added convenience.
-- Logstash - a utility for collecting, filtering and then redirecting to the final data storage. This mechanism provides a real-time pipeline. It can take data from multiple sources and convert it into JSON documents.
+- Logstash is a utility for collecting, filtering and then redirecting to the final data storage. This mechanism provides a real-time pipeline. It can take data from multiple sources and convert it into JSON documents.
 - Kibana is an application that allows you to take and search data from Elasticsearch and build visual graphs.
 
-## How to save time installing the ELK stack
-
-You can [attach ready-made ELK stack](https://mcs.mail.ru/app/services/marketplace/) on Ubuntu 18.04 as a configured VK Cloud virtual machine. When registering, you get a free bonus account, which is enough to test the server for several days.
-
-To learn more about ELK in the app store, go to [Help Center](https://mcs.mail.ru/help/quick-start/-elk-stack-elasticsearch-logstash-kibana).
-
-#### Requirements
+## Requirements
 
 - Operating system Ubuntu version 18.04.
 - Installed Nginx web server.
@@ -555,6 +549,6 @@ The installation of the ELK stack is complete.
 
 In the address bar of your web browser, enter the IP address of your Elastic server. Use your administrator credentials to sign in. After successful authorization, you will be redirected to the Kibana main page.
 
-## **Feedback**
+## Feedback
 
 Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).
