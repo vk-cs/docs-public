@@ -187,7 +187,7 @@ Velero — это клиент-серверная утилита для резе
 1. Создайте расположение снапшотов по умолчанию, выполнив команду:
 
    ```bash
-   velero snapshot-location create default --provider openstack --config region=mail
+   velero snapshot-location create default --provider openstack --config region=ru-msk
    ```
 
 ## Проверка работоспособности
