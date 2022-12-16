@@ -1,0 +1,12 @@
+{
+  "title": "Распознавание контента 18+",
+  "pageDescription": "",
+  "shortDescription": "Методы API для распознавания контента 18+ на фотографии",
+  "metaTitle": "Распознавание контента 18+ — VK Cloud",
+  "metaDescription": "Метод позволяет определить, есть ли на фотографии контент NSFW (18+)",
+  "sectionTitle": "Распознавание контента 18+",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 8
+}
