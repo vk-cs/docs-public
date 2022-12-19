@@ -26,7 +26,7 @@ terraform {
 
 ```
 
-The `provider "openstack"` block specifies the settings for the `openstack` provider. The VK Cloud Solutions infrastructure is built on `openstack`. This provider is used to create networks, balancers and other components. Specify `user_name` and `password` for your personal account, leave the rest of the fields unchanged.
+The `provider "openstack"` block specifies the settings for the `openstack` provider. The VK Cloud infrastructure is built on `openstack`. This provider is used to create networks, balancers and other components. Specify `user_name` and `password` for your personal account, leave the rest of the fields unchanged.
 
 ``` bash
 provider "openstack" {
@@ -40,7 +40,7 @@ provider "openstack" {
 }
 ```
 
-The `provider "mcs"` block describes the settings for the provider from VK Cloud Solutions. All required fields have already been filled in. Specify `user_name` and `password` for your personal account, leave the rest of the fields unchanged.
+The `provider "mcs"` block describes the settings for the provider from VK Cloud. All required fields have already been filled in. Specify `user_name` and `password` for your personal account, leave the rest of the fields unchanged.
 
 ``` bash
 provider "mcs" {
