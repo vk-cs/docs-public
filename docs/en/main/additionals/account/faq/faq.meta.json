@@ -1,12 +1,13 @@
 {
-    "title": "FAQ",
-    "pageDescription": "Answers to frequently asked questions about VK Cloud personal account",
-    "shortDescription": "Answers to frequently asked questions",
-    "metaTitle": "FAQ — VK Cloud",
-    "metaDescription": "Answers to frequently asked questions about VK Cloud personal account",
-    "sectionTitle": "FAQ",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 7
-  }
+  "title": "FAQ",
+  "pageDescription": "Answers to frequently asked questions about VK Cloud personal account",
+  "shortDescription": "Answers to frequently asked questions",
+  "metaTitle": "FAQ — VK Cloud",
+  "metaDescription": "Answers to frequently asked questions about VK Cloud personal account",
+  "sectionTitle": "FAQ",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 7,
+  "uuid": "d1de9952-9fa7-411f-a846-cdf596729e0c"
+}
