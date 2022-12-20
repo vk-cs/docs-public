@@ -8,5 +8,6 @@
   "markdown": "Управление деплоем ML-моделей осуществляется через MLflow Client.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "327277eb-e5b3-4fd9-a04c-76ba466105c8"
 }

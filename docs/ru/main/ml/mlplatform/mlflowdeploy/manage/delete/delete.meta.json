@@ -8,5 +8,6 @@
   "markdown": "Описание процедуры удаления инстанса MLflow Deploy.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "0362dd86-b424-48ae-a1ad-9b7f90c6427e"
 }

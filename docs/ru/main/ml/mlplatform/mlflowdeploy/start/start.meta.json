@@ -8,5 +8,6 @@
   "markdown": "Начало работы с сервисом MLflow Deploy. Создание инстансов MLflow Deploy доступно как через UI, так и через [MLflow Client](../manage/manage-mlflow-client).",
   "icon": "",
   "weight": 0,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "c9c37ee4-c998-46ef-ba96-decf1accccf6"
 }
