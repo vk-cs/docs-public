@@ -8,5 +8,6 @@
   "markdown": "Описание возможностей управления созданным инстансом MLflow Deploy.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "242d1607-916e-408d-ba6b-b3b79887ab7c"
 }
