@@ -8,5 +8,6 @@
   "markdown": "Этот раздел описывает как создать и управлять инстансом MLflow Deploy.",
   "icon": "",
   "weight": 3,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "77116544-82da-41b3-a40a-863f8cd124f9"
 }
