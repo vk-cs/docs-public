@@ -7,7 +7,7 @@
   "sectionTitle": "JupyterHub",
   "markdown": "Этот раздел описывает принципы работы с сервисом JupyterHub, созданию и работе с инстансами JupyterHub.",
   "icon": "",
-  "weight": 0,
+  "weight": 1,
   "infobarItems": null,
   "uuid": "99a3a152-c351-4405-8bee-bcf9563cc5b3"
 }
