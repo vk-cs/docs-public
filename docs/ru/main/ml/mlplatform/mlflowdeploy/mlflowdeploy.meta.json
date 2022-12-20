@@ -1,0 +1,12 @@
+{
+  "title": "MLflow Deploy",
+  "pageDescription": "Этот раздел описывает как создать и управлять инстансом MLflow Deploy.",
+  "shortDescription": "Собирает ML-модели в Docker-контейнеры и делает их доступными по REST API",
+  "metaTitle": "MLflow Deploy — VK Cloud",
+  "metaDescription": "Собирает ML-модели в Docker-контейнеры и делает их доступными по REST API",
+  "sectionTitle": "MLflow Deploy",
+  "markdown": "Этот раздел описывает как создать и управлять инстансом MLflow Deploy.",
+  "icon": "",
+  "weight": 3,
+  "infobarItems": null
+}
