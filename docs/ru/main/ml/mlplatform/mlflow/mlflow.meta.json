@@ -7,7 +7,7 @@
   "sectionTitle": "MLflow",
   "markdown": "Этот раздел описывает принципы работы с сервисом MLflow, созданию и работе с инстансами MLflow.",
   "icon": "",
-  "weight": 1,
+  "weight": 2,
   "infobarItems": null,
   "uuid": "771f622f-35e9-407e-9379-c9143efe8886"
 }
