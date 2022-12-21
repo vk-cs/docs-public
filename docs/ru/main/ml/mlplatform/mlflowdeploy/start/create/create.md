@@ -6,7 +6,7 @@
 
 ## Перед началом работы
 
-1. [Создайте](../../../jupyterhub/start/create/) инстанс JupiterHub.
+1. [Создайте](../../../jupyterhub/start/create/) инстанс JupyterHub.
 2. [Создайте](../../../mlflow/start/create/) инстанс MLflow.
 
 ## Основные шаги
