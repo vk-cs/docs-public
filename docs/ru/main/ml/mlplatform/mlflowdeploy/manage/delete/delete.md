@@ -5,4 +5,4 @@
 3. Выберите нужный инстанс и нажмите кнопку **Удалить**.
 4. Подтвердите совершение операции.
 
-Также доступно удаление с помощью [MLflow Deployment Client](../manage-mLflow-client/).
+Также доступно удаление с помощью [MLflow Deployment Client](../manage-mlflow-client/).

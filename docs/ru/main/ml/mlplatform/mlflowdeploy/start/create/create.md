@@ -2,11 +2,11 @@
 
 Сервис интегрирован с компонентами ML Platform: JupyterHub и MLflow.
 
-Создание инстансов MLflow Deploy доступно как через личный кабинет VK Cloud, так и через [MLflow Client](../../manage/manage-mLflow-client/).
+Создание инстансов MLflow Deploy доступно как через личный кабинет VK Cloud, так и через [MLflow Client](../../manage/manage-mlflow-client/).
 
 ## Перед началом работы
 
-1. [Создайте](../../../jupyterhub/start/create/) инстанс JupiterHub.
+1. [Создайте](../../../jupyterhub/start/create/) инстанс JupyterHub.
 2. [Создайте](../../../mlflow/start/create/) инстанс MLflow.
 
 ## Основные шаги
