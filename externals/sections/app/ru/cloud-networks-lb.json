@@ -1,12 +1,12 @@
 {
-    "meta": "Лоад балансеры",
+    "meta": "Балансировщики нагрузки",
     "path": "/services/infra/balancers",
     "groups": [
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/account/start"
+                    "link": "docs/ru/main/base/account/start"
                 },
                 {
                     "link": "docs/ru/main/networks/vnet/vnet-lb/about-lb"
@@ -29,7 +29,7 @@
                     "link": "docs/ru/main/networks/vnet/networks/create-net"
                 },
                 {
-                    "link": "docs/ru/main/additionals/account/concepts/quotasandlimits"
+                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
                 }
             ]
         }

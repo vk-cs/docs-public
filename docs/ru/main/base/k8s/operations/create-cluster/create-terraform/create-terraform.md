@@ -6,7 +6,7 @@
 
 ## Перед созданием кластера
 
-1. Ознакомьтесь с доступными ресурсами и [квотами](../../../../../additionals/account/concepts/quotasandlimits/) для [региона](../../../../../additionals/account/concepts/regions/), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
+1. Ознакомьтесь с доступными ресурсами и [квотами](../../../../../base/account/concepts/quotasandlimits/) для [региона](../../../../../base/account/concepts/regions/), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
 
    Если вы хотите увеличить квоты, напишите в [техническую поддержку](../../../../../../contacts).
 
@@ -14,7 +14,7 @@
 
 1. [Установите Terraform и настройте провайдер](../../../../../additionals/terraform/quick-start/preparation/), если этого еще не сделано.
 
-1. [Установите OpenStack CLI](../../../../../additionals/account/project/cli/setup/) и [пройдите авторизацию](../../../../../additionals/account/project/cli/authorization/), если этого еще не сделано.
+1. [Установите OpenStack CLI](../../../../../base/account/project/cli/setup/) и [пройдите авторизацию](../../../../../base/account/project/cli/authorization/), если этого еще не сделано.
 
 1. Создайте конфигурационный файл Terraform.
 

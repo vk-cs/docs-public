@@ -8,7 +8,7 @@ Velero — это клиент-серверная утилита для резе
    - либо [включено автоматическое масштабирование](../../operations/scale#nastroit-avtomaticheskoe-masshtabirovanie--tolko-dlya-grupp-worker-uzlov-).
 
 1. [Убедитесь](../../connect/kubectl#proverka-podklyucheniya-k-klasteru), что вы можете подключиться к кластеру с помощью `kubectl`.
-1. [Установите](../../../../additionals/account/project/cli/setup) OpenStack CLI, если он еще не установлен. [Убедитесь](../../../../additionals/account/project/cli/authorization), что вы можете авторизоваться в облаке с его помощью.
+1. [Установите](../../../../base/account/project/cli/setup) OpenStack CLI, если он еще не установлен. [Убедитесь](../../../../base/account/project/cli/authorization), что вы можете авторизоваться в облаке с его помощью.
 1. [Создайте hotbox-бакет](../../../s3/buckets/bucket#sozdanie-baketa) для хранения резервных копий в сервисе [Объектное хранилище](../../../s3).
 1. [Создайте аккаунт](../../../s3/access-management/s3-account) в сервисе [Объектное хранилище](../../../s3).
 

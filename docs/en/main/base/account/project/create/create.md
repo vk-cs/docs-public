@@ -1,6 +1,6 @@
 Projects are organizational units in the cloud to which users can be assigned. A user can be a member of one or more projects.
 
-During registration, a user with the "Project Owner" role and the project itself are created. You can assign one or more projects to a user, and change or remove an assignment. You can learn more about roles and their capabilities [here](https://mcstest.mail.ru/docs/additionals/account/concepts/rolesandpermissions).
+During registration, a user with the "Project Owner" role and the project itself are created. You can assign one or more projects to a user, and change or remove an assignment. You can learn more about roles and their capabilities [here](/ru/docs/base/account/concepts/rolesandpermissions).
 
 Additional projects can be created to separate resources, roles, or other architectural features of the tasks being implemented.
 

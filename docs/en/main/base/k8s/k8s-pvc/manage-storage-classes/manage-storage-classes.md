@@ -36,7 +36,7 @@ Run one of the commands:
 
       There are [many options] available for the driver(https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/cinder-csi-plugin/using-cinder-csi-plugin.md#supported-parameters) . To work with VK Cloud, you must set the following parameters:
 
-      - `availability`: availability zone. Availability zones depend on the [region](../../../../additionals/account/concepts/regions) hosting the Kubernetes cluster:
+      - `availability`: availability zone. Availability zones depend on the [region](../../../../base/account/concepts/regions) hosting the Kubernetes cluster:
 
         - Moscow: `GZ1`, `MS1`.
         - Amsterdam: `AMS`.
