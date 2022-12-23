@@ -35,7 +35,7 @@
 </tabpanel>
 <tabpanel>
 
-1. [Установите OpenStack CLI](../../../../../additionals/account/project/cli/setup/) и [пройдите авторизацию](../../../../../additionals/account/project/cli/authorization/), если этого еще не сделано.
+1. [Установите OpenStack CLI](../../../../../base/account/project/cli/setup/) и [пройдите авторизацию](../../../../../base/account/project/cli/authorization/), если этого еще не сделано.
 
 1. Определите новый тип виртуальной машины, который будет использоваться для master-узлов кластера:
 
