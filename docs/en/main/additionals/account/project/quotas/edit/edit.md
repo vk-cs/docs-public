@@ -5,8 +5,10 @@ Let's use virtual processor quotas as an example. To request a vCPU quota increa
 - quota type;
 How much increase is needed.
 
+Information for [GeekBrains program participants request an increase in quotas](../../../faq/).
+
 <info>
 
-If you would like to increase the limit or quota above the default limit, please submit a support request.
+If you would like to increase the limit or quota above the default limit, please [submit a support request](/en/contacts).
 
 </info>
