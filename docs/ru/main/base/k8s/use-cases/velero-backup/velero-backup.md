@@ -10,7 +10,7 @@
 
 1. Убедитесь, что вы можете [подключиться к кластеру](../../connect/kubectl) с помощью `kubectl`.
 1. Убедитесь, что [Velero установлен и настроен](../../install-tools/velero).
-1. [Установите](../../../../additionals/account/project/cli/setup) OpenStack CLI, если он еще не установлен. Убедитесь, что вы можете [авторизоваться](../../../../additionals/account/project/cli/authorization) в облаке с его помощью.
+1. [Установите](../../../../base/account/project/cli/setup) OpenStack CLI, если он еще не установлен. Убедитесь, что вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в облаке с его помощью.
 
 ## 1. Создайте приложение
 
