@@ -24,8 +24,8 @@
 ### 1.1. Создайте кластер
 
 1. Перейдите в [личный кабинет](https://mcs.mail.ru/app/) VK Cloud.
-1. Выберите [проект](../../../additionals/account/concepts/projects), где будет размещен кластер.
-1. Выберите [регион](../../../additionals/account/concepts/regions#upravlenie-regionami-v-lichnom-kabinete) `Москва`.
+1. Выберите [проект](../../../base/account/concepts/projects), где будет размещен кластер.
+1. Выберите [регион](../../../base/account/concepts/regions#upravlenie-regionami-v-lichnom-kabinete) `Москва`.
 1. Перейдите в раздел **Контейнеры** → **Кластеры Kubernetes**.
 1. Если в выбранном регионе пока нет ни одного кластера, нажмите кнопку **Создать кластер**.
 

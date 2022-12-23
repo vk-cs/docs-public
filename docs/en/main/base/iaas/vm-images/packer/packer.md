@@ -5,8 +5,8 @@ Packer will create and start Ubuntu-22.04 virtual machine from the list of basic
 ## Preparing to work with Packer
 
 * [Install](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli) Packer.
-* [Install](../../../../additionals/account/project/cli/setup/) OpenStack client.
-* [Authorize](../../../../additionals/account/project/cli/authorization/) CLI client.
+* [Install](../../../../base/account/project/cli/setup/) OpenStack client.
+* [Authorize](../../../../base/account/project/cli/authorization/) CLI client.
 
 ## Image configuration preparation
 

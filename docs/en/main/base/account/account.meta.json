@@ -7,7 +7,7 @@
   "sectionTitle": "My Account",
   "markdown": "Personal account contains VK Cloud user infrastructure management tools.",
   "icon": "",
-  "weight": 17,
+  "weight": 2,
   "infobarItems": null,
   "uuid": "a5510c80-93ca-46d3-80db-4bacee5d0f5c"
 }

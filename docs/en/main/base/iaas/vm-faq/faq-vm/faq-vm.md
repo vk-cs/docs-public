@@ -73,7 +73,7 @@ If you lose your private key to access the server via the SSH protocol, you must
 
 ## Openstack CLI not connecting
 
-Access to the Openstack CLI is done using a configuration file (Linux) or a set of options from a file and a password. Information about installation, configuration and connection parameters can be found in the article on Using [management utilities (CLI)](https://mcs.mail.ru/docs/ru/additionals/account/project/cli).
+Access to the Openstack CLI is done using a configuration file (Linux) or a set of options from a file and a password. Information about installation, configuration and connection parameters can be found in the article on Using [management utilities (CLI)](/ru/base/account/project/cli).
 
 ## The instance console is not displayed in the VK Cloud panel
 

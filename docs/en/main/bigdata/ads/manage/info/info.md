@@ -7,7 +7,7 @@ The page provides information about the cluster that is useful for administratio
 | Parameter name | Description |
 | --- | --- |
 | Name | The name of the cluster on the VK Cloud platform. |
-| Project ID | ID of the VK Cloud project in which this cluster was created. You can learn more about projects in the article [“Projects”](../../../../additionals/account/concepts/projects/). |
+| Project ID | ID of the VK Cloud project in which this cluster was created. You can learn more about projects in the article [“Projects”](../../../../base/account/concepts/projects/). |
 | ID | Cluster ID on the VK Cloud platform. |
 | Creation date | Timestamp of cluster creation in the VK Cloud project. |
 | Description | Description of the cluster on the VK Cloud platform. |

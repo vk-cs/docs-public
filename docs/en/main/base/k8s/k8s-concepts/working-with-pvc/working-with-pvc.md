@@ -34,7 +34,7 @@ When using PVC, you must specify a storage class.
 See [here](../../k8s-pvc/manage-storage-classes) for how to work with storage classes.
 
 Each Kubernetes VK Cloud cluster has pre-configured storage classes that use Cinder CSI for block storage.
-The classes provide different types of storage in [multiple regions](../../../../additionals/account/concepts/regions) and availability zones:<tabs>
+The classes provide different types of storage in [multiple regions](../../../../base/account/concepts/regions) and availability zones:<tabs>
 <tablist>
 <tab>Region: Moscow</tab>
 <tab>Region: Amsterdam</tab>
