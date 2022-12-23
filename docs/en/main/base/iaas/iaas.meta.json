@@ -7,7 +7,7 @@
   "sectionTitle": "Cloud Compute",
   "markdown": "VK Cloud Servers is a cloud computing service that allows you to manage virtual machines on the VK Cloud platform. Includes management of configurations of instances, disks, images, backups, allows you to create file storage.",
   "icon": "",
-  "weight": 13,
+  "weight": 1,
   "infobarItems": null,
   "uuid": "10d14d5d-951f-4ed0-ac2a-c3d706ab1a55"
 }

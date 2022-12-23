@@ -14,7 +14,7 @@ There are several types of message about insufficient quotas in a project: When 
 
 When a project is created, it is assigned default resource quotas for all new projects. Each new project does not inherit the available number of quotas from existing projects.
 
-Quotas differ depending on the region of the project. For more information about regions, see the article [Regions](/ru/additionals/account/concepts/regions).
+Quotas differ depending on the region of the project. For more information about regions, see the article [Regions](/ru/base/account/concepts/regions).
 
 The display of basic quotas for resources is located at the top of the window of each service.
 
