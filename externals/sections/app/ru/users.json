@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/account/start"
+                    "link": "docs/ru/main/base/account/start"
                 },
                 {
-                    "link": "docs/ru/main/additionals/account/concepts/rolesandpermissions"
+                    "link": "docs/ru/main/base/account/concepts/rolesandpermissions"
                 }
             ]
         }

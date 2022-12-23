@@ -5,8 +5,8 @@ Packer создаст и запустит виртуальную машину с
 ## Подготовка к работе с Packer
 
 * [Установите](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli) Packer.
-* [Установите](../../../../additionals/account/project/cli/setup/) OpenStack client.
-* [Авторизуйте](../../../../additionals/account/project/cli/authorization/) клиент CLI.
+* [Установите](../../../../base/account/project/cli/setup/) OpenStack client.
+* [Авторизуйте](../../../../base/account/project/cli/authorization/) клиент CLI.
 
 ## Подготовка конфигурации образа
 

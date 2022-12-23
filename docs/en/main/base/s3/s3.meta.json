@@ -7,7 +7,7 @@
   "sectionTitle": "Object storage",
   "markdown": "VK Cloud Storage is an object storage with support for S3 API, which provides reliable scalable storage and a stable speed of distribution of any objects, regardless of the number of simultaneous requests. Examples of using the storage: streaming multimedia, hosting sites, storing transaction logs, electronic documents, storing big data, storing backups and archives.",
   "icon": "",
-  "weight": 1,
+  "weight": 3,
   "infobarItems": null,
   "uuid": "7ad8c56f-b8e0-4e78-ae24-3abb0bac4df9"
 }

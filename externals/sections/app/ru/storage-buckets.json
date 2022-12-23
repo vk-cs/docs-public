@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/account/start"
+                    "link": "docs/ru/main/base/account/start"
                 },
                 {
                     "link": "docs/ru/main/additionals/billing",
@@ -30,7 +30,7 @@
                     "link": "docs/ru/main/base/s3/dev/s3-sdk"
                 },
                 {
-                    "link": "docs/ru/main/additionals/account/concepts/quotasandlimits"
+                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
                 }
             ]
         }
