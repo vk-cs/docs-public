@@ -9,7 +9,7 @@
                     "link": "docs/ru/main/base/account/start"
                 },
                 {
-                    "link": "docs/ru/main/base/gpu/gpu-start/gpu-info"
+                    "link": "docs/ru/main/ml/gpu/gpu-start/gpu-info"
                 }
             ]
         },
@@ -17,7 +17,7 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/gpu/gpu-start/gpu-create"
+                    "link": "docs/ru/main/ml/gpu/gpu-start/gpu-create"
                 },
                 {
                     "link": "docs/ru/main/base/iaas/vm-start"

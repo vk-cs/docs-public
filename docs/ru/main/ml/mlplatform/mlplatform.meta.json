@@ -7,7 +7,7 @@
   "sectionTitle": "ML Platform",
   "markdown": "Этот раздел описывает принципы работы с сервисом ML Platform, созданию и работе с инстансами JupyterHub и MLflow.",
   "icon": "",
-  "weight": 16,
+  "weight": 1,
   "infobarItems": null,
   "uuid": "ab24a318-2169-471e-9f86-b5e68361cfdb"
 }
