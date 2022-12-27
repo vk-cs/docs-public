@@ -16,7 +16,7 @@
 
 ## Security Recommendations
 
-- Use different [private networks](/ru/networks/vnet/networks) for different applications within the same project, or deploy each application in its own project.
+- Use different [private networks](/en/networks/vnet/networks) for different applications within the same project, or deploy each application in its own project.
 - Use [security groups](/en/networks/vnet/firewall#). Open only those ports that are necessary for your application's components to communicate, as well as ports used for the maintenance and maintenance tasks of your infrastructure and application.
 - Expose only endpoints (entry points) of your applications to the Internet. Close access to the infrastructure of your service from the Internet.
 - Use a secure VPN channel to network your local resources with resources in the cloud. More information can be found on the [VPN documentation] page(https://mcs.mail.ru/help/network/vpn).
