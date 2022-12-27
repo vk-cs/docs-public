@@ -1,10 +1,10 @@
-### Before starting work
+### Перед началом работы
 
-1. Create a VM from a public Linux image.
-2. Connect to the VM via SSH.
-3. Install on the VM:
+1. Создайте ВМ из публичного образа Linux. В пример образ Ubuntu 18.04.
+2. Подключитесь к ВМ по SSH.
+3. Установите на ВМ:
 
-- [Go at least version 1.17](https://go.dev/doc/install):
+- [Go не ниже версии 1.17](https://go.dev/doc/install):
 
 ```yaml
 wget https://go.dev/dl/go1.17.6.linux-amd64.tar.gz
@@ -27,4 +27,4 @@ Build-essential
 sudo apt install build-essential
 ```
 
-4. [Connect fluent-bit plugin](/additionals/logging/start/connect-plugin).
+4. [Подключите fluent-bit плагин](/manage/logging/start/connect-plugin).
