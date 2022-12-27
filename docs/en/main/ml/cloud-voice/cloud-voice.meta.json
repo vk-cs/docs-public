@@ -1,13 +1,13 @@
 {
   "title": "Cloud Voice",
-  "pageDescription": "Cloud Voice - the service contains and synthesizes speech based on the technologies of Marusya's voice assistant. The service provides speech recognition from audio files and streaming audio, as well as speech generation from text with voice control of your choice.",
+  "pageDescription": "Cloud Voice — the service contains and synthesizes speech based on the technologies of Marusya's voice assistant. The service provides speech recognition from audio files and streaming audio, as well as speech generation from text with voice control of your choice.",
   "shortDescription": "Cloud Voice is a speech recognition and synthesis service based on Marusya voice assistant technologies",
-  "metaTitle": "Cloud Voice - VK Cloud",
+  "metaTitle": "Cloud Voice — VK Cloud",
   "metaDescription": "Cloud Voice - the service contains and synthesizes speech based on the technologies of Marusya's voice assistant. The service provides speech recognition from audio files and streaming audio, as well as speech generation from text with voice control of your choice.",
   "sectionTitle": "Cloud Voice",
-  "markdown": "Cloud Voice - the service contains and synthesizes speech based on the technologies of Marusya's voice assistant. The service provides speech recognition from audio files and streaming audio, as well as speech generation from text with voice control of your choice.",
+  "markdown": "Cloud Voice — the service contains and synthesizes speech based on the technologies of Marusya's voice assistant. The service provides speech recognition from audio files and streaming audio, as well as speech generation from text with voice control of your choice.",
   "icon": "",
-  "weight": 17,
+  "weight": 3,
   "infobarItems": null,
   "uuid": "6d2017d0-06e7-4f61-a11a-43f1faca036f"
 }
