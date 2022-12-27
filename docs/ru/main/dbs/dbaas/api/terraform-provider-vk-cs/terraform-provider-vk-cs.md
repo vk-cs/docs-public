@@ -1,4 +1,4 @@
-Для начала работы с Terraform убедитесь, что вы [установили Terraform](/ru/additionals/terraform/quick-start/preparation) и [создали файл main.tf](/ru/dbs/dbaas/api/terraform-for-dbaas) с необходимыми Terraform провайдерами.
+Для начала работы с Terraform убедитесь, что вы [установили Terraform](/ru/manage/terraform/quick-start/preparation) и [создали файл main.tf](/ru/dbs/dbaas/api/terraform-for-dbaas) с необходимыми Terraform провайдерами.
 
 Если у вас не создан инстанс базы данных, то следуйте [инструкции](/ru/dbs/dbaas/api/working-with-terraform) и подготовьте файл `database_instance.tf`.
 
