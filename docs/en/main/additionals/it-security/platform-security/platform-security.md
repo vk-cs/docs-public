@@ -10,14 +10,16 @@ Availability Zones can be used to separate applications and provide uninterrupte
 
 VK Cloud platform resources are located in two data centers located in Moscow:
 
-- gz1 - Goznak data center;
-- ms1 (ko1) - DataLine NORD4 data center;
+- gz1 — Goznak data center;
+- ms1 (ko1) — DataLine NORD4 data center;
 
 You can choose the optimal region according to technical considerations.
 
-Note
+<info>
 
-There are also global resources that do not have AZs, such as an S3 bucket or a virtual network
+There are also global resources that do not have AZs, such as an S3 bucket or a virtual network.
+
+</info>
 
 ## Automigration
 
@@ -32,4 +34,4 @@ The main goals of live migration include:
 
 ## VK Cloud certification
 
-VK Cloud brings together all the best practices from 20 years of experience in creating public services and uses the infrastructure that has been tested on other VK Cloud services with a multi-million audience. Guaranteed reliability can be confirmed by VK Cloud certificates, which are available [here](https://mcs.mail.ru/cloud-platform/certificates/) .
+VK Cloud brings together all the best practices from 20 years of experience in creating public services and uses the infrastructure that has been tested on other VK Cloud services with a multi-million audience. Guaranteed reliability can be confirmed by VK Cloud certificates, which are available [here](https://mcs.mail.ru/cloud-platform/certificates/).
