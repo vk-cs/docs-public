@@ -7,7 +7,7 @@
   "sectionTitle": "Use cases",
   "markdown": "VK Cloud provides tools and software packages for implementing a variety of tasks facing system administrators: from using basic services to high-load environments and landscapes. Experienced experts share the most interesting ways to deploy the services necessary to implement the tasks.",
   "icon": "",
-  "weight": 16,
+  "weight": 3,
   "infobarItems": null,
   "uuid": "66fc6df5-0858-4595-b2d3-46cd2b8502fe"
 }
