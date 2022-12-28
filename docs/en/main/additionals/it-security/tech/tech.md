@@ -30,10 +30,10 @@ If you are an active user of the services, then technical support will definitel
 
 In order not to encounter a situation of suspicious activity conducted from a virtual machine, you should follow the security rules:
 
-- Do not set simple passwords for accounts
-- Do not provide uncontrolled access to your created resources
-- Pay attention to downloaded and installed software
-- Scan instances for malware or code
+- do not set simple passwords for accounts;
+- do not provide uncontrolled access to your created resources;
+- pay attention to downloaded and installed software;
+- scan instances for malware or code.
 
 </warn>
 
@@ -41,6 +41,6 @@ In order not to encounter a situation of suspicious activity conducted from a vi
 
 DoS (Denial of Service) is a hacker attack on a computer system with the aim of bringing it to failure, that is, the creation of such conditions under which conscientious users of the system will not be able to access the provided system resources (servers), or this access will be difficult. The failure of the attacked system can also be a step towards mastering the system (if, in an emergency situation, the software gives out any critical information - for example, version, part of the program code, etc.).
 
-VK Cloud provides DDoS protection service. For more detailed information, as well as the calculation of the cost, you should send a request through your personal account in the "Special Services" section.
+VK Cloud provides DDoS protection service. For more detailed information, as well as the calculation of the cost, you should send a request through your [personal account](https://mcs.mail.ru/app/) in the **Special Services** section.
 
 The cost of services for services "Protection from DDoS" is calculated individually.
