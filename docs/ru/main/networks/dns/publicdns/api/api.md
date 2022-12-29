@@ -1,28 +1,25 @@
-## Authentication and authorization
+## Аутентификация и авторизация
 
-Как и для любого OpenStack сервиса для авторизации и аутентификации
-используется keystone.
+Перед выполнением запросов [получите токен доступа](/ru/ml/cloud-voice/get-voice-token).<!--todo вставить ссылку на отдельное получение токена, не в рамках ML-->
 
-## VARS
+## Параметры запросов и ответов
 
-- tenant — OpenStack project uuid. Стандартный номер проекта,
-который можно найти в личном кабинете MCS.
-Отличие от OpenStack - в uuid используются дефисы;
-- dns-uuid — уникальный идентификатор DNS записи;
-- record-type — тип записи: A, AAAA, CNAME, и т.д;
-- a-uuid — уникальный идентификатор А записи для DNS.
+Для всех методов API используются параметры:
 
-## Create DNS zone
+- `tenant` — номер проекта, который можно найти в [личном кабинете](https://mcs.mail.ru/app/project/project/keys) VK Cloud.
+- `dns-uuid` — уникальный идентификатор DNS-записи;
+- `record-type` — тип записи: `A`, `AAAA`, `CNAME`, и т.д;
+- `a-uuid` — уникальный идентификатор `А` записи для DNS.
 
-### Request
+<!-- todo для всех методов добавить полноценный пример запроса и ответа -->
+
+## Создать зону DNS
+
+### Запрос
 
 ```
 POST /v2/dns/
 ```
-
-Заголовки:
-
-- Content-Type: application/json
 
 Тело запроса:
 
@@ -39,18 +36,13 @@ POST /v2/dns/
 }
 ```
 
-### Response
+<!-- todo добавить пример запроса через curl с Content-Type: application/json -->
 
-Заголовки:
-
-- Location:
-<https://mcs.mail.ru/public-dns/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6>
-- Content-Type: application/json; charset=UTF-8
-- Content-Length: 441
+### Ответ
 
 Код ответа:
 
-- 201 - DNS запись создана успешно.
+- `201` — DNS запись создана успешно.
 
 Тело ответа:
 
@@ -70,21 +62,21 @@ POST /v2/dns/
 }
 ```
 
-## Get DNS zone
+## Получить информацию о записи DNS
 
-### Request
+### Запрос
 
 ```
 GET /v2/dns/<dns-uuid>
 ```
 
-### Response
+### Ответ
 
 Код ответа:
 
-- 200 - успешный ответ.
-- 404 - DNS запись не найдена.
-- 409 - DNS запись уже существует.
+- `200` — успешный ответ.
+- `404` — DNS запись не найдена.
+- `409` — DNS запись уже существует.
 
 Тело ответа:
 
@@ -104,9 +96,9 @@ GET /v2/dns/<dns-uuid>
 }
 ```
 
-## List DNS zones
+## Получить список зон DNS
 
-### Request
+### Запрос
 
 ```
 GET /v2/dns/
@@ -116,7 +108,7 @@ GET /v2/dns/
 
 Код ответа:
 
-- 200 - успешный ответ.
+- `200` — успешный ответ.
 
 Тело ответа:
 
@@ -138,17 +130,17 @@ GET /v2/dns/
 ]
 ```
 
-## Update DNS zone
+## Обновить информацию о зоне DNS
 
-### Request
+### Запрос
 
 ```
 PUT /v2/dns/<dns-uuid>
 ```
 
-Заголовки:
+<!--Заголовки:
 
-- Content-Type: application/json
+- Content-Type: application/json -->
 
 Тело запроса:
 
@@ -159,12 +151,12 @@ PUT /v2/dns/<dns-uuid>
 }
 ```
 
-### Response
+### Ответ
 
 Код ответа:
 
-- 200 - успешный ответ.
-- 404 - DNS запись не найдена.
+- `200` — успешный ответ.
+- `404` — DNS-запись не найдена.
 
 Тело ответа:
 
@@ -184,9 +176,9 @@ PUT /v2/dns/<dns-uuid>
 }
 ```
 
-## Delete DNS zone
+## Удалить зону DNS
 
-### Request
+### Запрос
 
 ```
 DELETE /v2/dns/<dns-uuid>
@@ -196,20 +188,20 @@ DELETE /v2/dns/<dns-uuid>
 
 Код ответа:
 
-- 204 - Удалено.
-- 404 - DNS запись не найдена.
+- `204` — удалено успешно.
+- `404` — DNS-запись не найдена.
 
-## Create A record for existing DNS zone
+## Создать запись типа A
 
-### Request
+### Запрос
 
 ```
 POST /v2/dns/<dns-uuid>/a/
 ```
 
-Заголовки:
+<!--Заголовки:
 
-- Content-Type: application/json
+- Content-Type: application/json -->
 
 Тело запроса:
 
@@ -221,19 +213,19 @@ POST /v2/dns/<dns-uuid>/a/
 }
 ```
 
-### Response
+### Ответ
 
 Заголовки:
 
-- Location:
-<https://mcs.mail.ru/public-dns/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6/a/631519fb-f2d3-43e0-ae9c-8f18adcf3b1a>
-- Content-Type: application/json; charset=UTF-8
-- Content-Length: 211
+- `Location:
+<https://mcs.mail.ru/public-dns/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6/a/631519fb-f2d3-43e0-ae9c-8f18adcf3b1a>`
+- `Content-Type: application/json; charset=UTF-8`
+- `Content-Length: 211`
 
 Код ответа:
 
-- 201 - A запись создана успешно.
-- 409 - A запись уже существует.
+- `201` — A-запись создана успешно.
+- `409` — A-запись уже существует.
 
 Тело ответа:
 
@@ -247,20 +239,20 @@ POST /v2/dns/<dns-uuid>/a/
 }
 ```
 
-## Get A record for existing DNS zone
+## Отобразить информацию о записи типа A
 
-### Request
+### Запрос
 
 ```
 GET /v2/dns/<dns-uuid>/a/<a-uuid>
 ```
 
-### Response
+### Ответ
 
 Код ответа:
 
-- 200 - успешный ответ.
-- 404 - A запись не найдена.
+- `200` — успешный ответ.
+- `404` — A-запись не найдена.
 
 Тело ответа:
 
@@ -274,19 +266,19 @@ GET /v2/dns/<dns-uuid>/a/<a-uuid>
 }
 ```
 
-## List A records for existing DNS zone
+## Список записей типа А в зоне DNS
 
-### Request
+### Запрос
 
 ```
 GET /v2/dns/<dns-uuid>/a/
 ```
 
-### Response
+### Ответ
 
 Код ответа:
 
-- 200 - успешный ответ.
+- `200` — успешный ответ.
 
 Тело ответа:
 
@@ -302,17 +294,17 @@ GET /v2/dns/<dns-uuid>/a/
 ]
 ```
 
-## Update A record for existing DNS zone
+## Обновить существующую запись типа A
 
-### Request
+### Запрос
 
 ```
 PUT /v2/dns/<dns-uuid>/a/<a-uuid>
 ```
 
-Заголовки:
+<!--Заголовки:
 
-- Content-Type: application/json
+- Content-Type: application/json -->
 
 Тело запроса:
 
@@ -322,12 +314,12 @@ PUT /v2/dns/<dns-uuid>/a/<a-uuid>
 }
 ```
 
-### Response
+### Ответ
 
 Код ответа:
 
-- 200 - успешный ответ.
-- 404 - A запись не найдена.
+- `200` — успешный ответ.
+- `404` — A-запись не найдена.
 
 Тело ответа:
 
@@ -341,35 +333,32 @@ PUT /v2/dns/<dns-uuid>/a/<a-uuid>
 }
 ```
 
-## Delete A record for existing DNS zone
+## Удалить запись типа A
 
-### Request
+### Запрос
 
 ```
 DELETE /v2/dns/<dns-uuid>/a/<a-uuid>
 ```
 
-### Response
+### Ответ
 
 Код ответа:
 
-- 202 - Удалено.
-- 404 - A запись не найдена.
+- `202` — удалено успешно.
+- `404` — A-запись не найдена.
 
-## AAAA, CNAME, MX, NS, SRV, TXT records
+## Методы для записей типа AAAA, CNAME, MX, NS, SRV, TXT
 
-Все операции абсолютно аналогичны A-записи, за исключением полей. Ниже
-примеры ответов.
+Все операции абсолютно аналогичны A-записи, за исключением полей. Ниже приведены примеры ответов.
 
-### URL
+### Пример запроса
 
 ```
 GET /v2/dns/<dns-uuid>/<record-type>/<record-uuid>
 ```
 
 ### AAAA
-
-Тело ответа:
 
 ``` json
 {
@@ -382,8 +371,6 @@ GET /v2/dns/<dns-uuid>/<record-type>/<record-uuid>
 ```
 
 ### MX
-
-Тело ответа:
 
 ``` json
 {
@@ -398,8 +385,6 @@ GET /v2/dns/<dns-uuid>/<record-type>/<record-uuid>
 
 ### CNAME
 
-Тело ответа:
-
 ``` json
 {
     "uuid": "732d2f59-b5a3-429a-8013-5340dcebcbb6",
@@ -412,8 +397,6 @@ GET /v2/dns/<dns-uuid>/<record-type>/<record-uuid>
 
 ### NS
 
-Тело ответа:
-
 ``` json
 {
     "uuid": "dccc755c-6f88-4e9c-9823-8589fa5c6d4e",
@@ -425,8 +408,6 @@ GET /v2/dns/<dns-uuid>/<record-type>/<record-uuid>
 ```
 
 ### SRV
-
-Тело ответа:
 
 ``` json
 {
@@ -442,8 +423,6 @@ GET /v2/dns/<dns-uuid>/<record-type>/<record-uuid>
 ```
 
 ### TXT
-
-Тело ответа:
 
 ``` json
 {
