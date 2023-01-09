@@ -40,7 +40,7 @@ The disaster recovery plan should be adjusted to suit your deployment requiremen
         "default_all"
       ],
       "availability_zone": "MS1",
-      "rank": 0
+      "rank": 0,
       "flavor": "Standard-4-8-80",
       "ports": [
         {
@@ -57,7 +57,7 @@ The disaster recovery plan should be adjusted to suit your deployment requiremen
         "default_all"
       ],
       "availability_zone": "DP1",
-      "rank": 0
+      "rank": 0,
       "flavor": "Standard-4-8-80",
       "ports": [
         {
@@ -84,4 +84,4 @@ An extended description of these and other disaster recovery plan options can be
 
 Next, specify the name of the disaster recovery plan and click the "Save" button.
 
-After completing the creation and configuration of the disaster recovery plan, proceed to the [disaster recovery launch](docs/en/additionals/hystax/disaster-recovery/launch) of the protected infrastructure.
+After completing the creation and configuration of the disaster recovery plan, proceed to the [disaster recovery launch](/docs/en/additionals/hystax/disaster-recovery/launch) of the protected infrastructure.
