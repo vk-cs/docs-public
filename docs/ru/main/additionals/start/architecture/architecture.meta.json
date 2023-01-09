@@ -2,12 +2,12 @@
   "title": "Архитектура платформы",
   "pageDescription": "Описание основных архитектурных преимуществ платформы VK Cloud.",
   "shortDescription": "Описание основных архитектурных преимуществ платформы VK Cloud",
-  "metaTitle": "Архитектура платформы - VK Cloud",
+  "metaTitle": "Архитектура платформы — VK Cloud",
   "metaDescription": "Описание основных архитектурных преимуществ платформы VK Cloud",
   "sectionTitle": "Архитектура платформы",
   "markdown": "Описание основных архитектурных преимуществ платформы VK Cloud.",
   "icon": "",
-  "weight": 0,
+  "weight": 2,
   "infobarItems": null,
   "uuid": "767e44a6-d657-4d6f-8db0-e22f0700f208"
 }
