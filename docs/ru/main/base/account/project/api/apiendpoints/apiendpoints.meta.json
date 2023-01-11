@@ -2,12 +2,12 @@
   "title": "API эндпоинты",
   "pageDescription": "Описание использования эндпоинтов для работы с платформой VK Cloud.",
   "shortDescription": "Описание использования эндпоинтов для работы с платформой VK Cloud",
-  "metaTitle": "API эндпоинты - VK Cloud",
+  "metaTitle": "API эндпоинты — VK Cloud",
   "metaDescription": "Описание использования эндпоинтов для работы с платформой VK Cloud",
   "sectionTitle": "API эндпоинты",
   "markdown": "Описание использования эндпоинтов для работы с платформой VK Cloud.",
   "icon": "",
-  "weight": 1,
+  "weight": 3,
   "infobarItems": null,
   "uuid": "ac5e4ffc-e19b-43c9-8654-105e1205aae7"
 }
