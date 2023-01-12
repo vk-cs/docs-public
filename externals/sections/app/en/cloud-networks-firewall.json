@@ -3,11 +3,8 @@
     "path": "/services/infra/firewall",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
-                {
-                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
-                },
                 {
                     "link": "docs/en/main/networks/vnet/firewall"
                 },
@@ -17,7 +14,7 @@
             ]
         },
         {
-            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "title": "MORE",
             "links": [
                 {
                     "link": "docs/en/main/networks/vnet/networks/fip"

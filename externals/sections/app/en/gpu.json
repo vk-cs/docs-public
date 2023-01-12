@@ -3,18 +3,15 @@
     "path": "/services/gpu",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
-                {
-                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
-                },
                 {
                     "link": "docs/en/main/ml/gpu/gpu-start/gpu-info"
                 }
             ]
         },
         {
-            "title": "БЫСТРЫЙ СТАРТ",
+            "title": "QUICK START",
             "links": [
                 {
                     "link": "docs/en/main/ml/gpu/gpu-start/gpu-create"
@@ -25,7 +22,7 @@
             ]
         },
         {
-            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "title": "MORE",
             "links": [
                 {
                     "link": "docs/en/main/base/iaas/vm-faq"

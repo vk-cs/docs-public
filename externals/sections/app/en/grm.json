@@ -3,7 +3,7 @@
     "path": "/services/grm",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
                 {
                     "link": "docs/en/main/additionals/special/1cgrm/1cgrm-about"

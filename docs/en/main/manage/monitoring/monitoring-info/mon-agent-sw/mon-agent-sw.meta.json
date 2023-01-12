@@ -1,10 +1,10 @@
 {
-  "title": "Настройка агента мониторинга для стандартного ПО",
+  "title": "Configuring the monitoring agent for standard software",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Настройка агента мониторинга для стандартного ПО - VK Cloud",
+  "metaTitle": "Configuring the monitoring agent for standard software — VK Cloud",
   "metaDescription": "Статья расскажет о том, как настроить агент мониторинга в виртуальной машине произвольной конфигурации. Стандартные агенты мониторинга базируются на ПО аге",
-  "sectionTitle": "Настройка агента мониторинга для стандартного ПО",
+  "sectionTitle": "Configuring the monitoring agent for standard software",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
