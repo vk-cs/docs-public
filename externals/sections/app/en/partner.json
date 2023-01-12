@@ -3,7 +3,7 @@
     "path": "/partner/app*clients",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
                 {
                     "link": "docs/en/main/additionals/start/partners/about-partners"

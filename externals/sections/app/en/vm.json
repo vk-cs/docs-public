@@ -3,16 +3,13 @@
     "path": "/services/infra",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
                 {
                     "link" : "docs/en/main/base/iaas/vm-start/vm-quick-create"
                 },
                 {
                     "link": "docs/en/main/base/iaas/vm-images/custom-image"
-                },
-                {
-                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
                 },
                 {
                     "link": "docs/en/main/additionals/start/user-account/quota-limits"
@@ -28,7 +25,7 @@
             ]
         },
         {
-            "title": "БЫСТРЫЙ СТАРТ",
+            "title": "QUICK START",
             "links": [
                 {
                     "link": "docs/en/main/base/iaas/vm-interfaces/vm-create-cli"
@@ -48,7 +45,7 @@
             ]
         },
         {
-            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "title": "MORE",
             "links": [
                 {
                     "link": "docs/en/main/additionals/start/user-account/project-roles-users"
@@ -61,9 +58,6 @@
                 },
                 {
                     "link": "docs/en/main/networks/vnet/vpn"
-                },
-                {
-                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
                 },
                 {
                     "link": "docs/en/main/additionals/start/user-account/quota-limits"

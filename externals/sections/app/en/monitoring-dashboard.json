@@ -3,7 +3,7 @@
     "path": "/services/monitoring/dashboards",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
                 {
                     "link": "docs/en/main/manage/monitoring/monitoring-dash/mon-metrics"
