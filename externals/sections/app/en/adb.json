@@ -3,11 +3,8 @@
     "path": "/services/analytic-databases",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
-                {
-                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
-                },
                 {
                     "link": "docs/en/main/dbs/adb/adb-start"
                 },
@@ -21,7 +18,7 @@
             ]
         },
         {
-            "title": "БЫСТРЫЙ СТАРТ",
+            "title": "QUICK START",
             "links": [
                 {
                     "link": "docs/en/main/dbs/adb/adb-start/create-adb"
@@ -35,7 +32,7 @@
             ]
         },
         {
-            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "title": "MORE",
             "links": [
                 {
                     "link": "docs/en/main/dbs/dbaas/db-replica/create-db-replica"

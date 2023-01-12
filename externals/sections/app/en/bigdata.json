@@ -3,11 +3,8 @@
     "path": "/services/bigdata",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
-                {
-                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
-                },
                 {
                     "link": "docs/en/main/base/bigdata/bigdata-info/bigdata-architecture"
                 },
@@ -17,7 +14,7 @@
             ]
         },
         {
-            "title": "БЫСТРЫЙ СТАРТ",
+            "title": "QUICK START",
             "links": [
                 {
                     "link": "docs/en/main/base/bigdata/bigdata-start"
@@ -28,7 +25,7 @@
             ]
         },
         {
-            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "title": "MORE",
             "links": [
                 {
                     "link": "docs/en/main/base/bigdata"
