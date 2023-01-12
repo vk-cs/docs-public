@@ -22,6 +22,7 @@ Velero — это клиент-серверная утилита для резе
 
 1. Определите, какая версия Velero [совместима с версией кластера](https://github.com/vmware-tanzu/velero#velero-compatibility-matrix) Kubernetes, в который нужно установить Velero.
 1. [Загрузите нужную версию](https://github.com/vmware-tanzu/velero/releases) клиента Velero.
+1. Определите версию плагина aws, [соответствующую](https://github.com/vmware-tanzu/velero-plugin-for-aws#compatibility) используемой версии Velero.
 1. Добавьте путь до клиента в переменную среды окружения:
 
    - `Path` для Windows.
@@ -39,7 +40,7 @@ Velero — это клиент-серверная утилита для резе
    ```bash
    velero install \
    --plugins \
-     velero/velero-plugin-for-aws:v1.0.0,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.0 \
+     velero/velero-plugin-for-aws:v<выбранная версия плагина aws>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.1 \
    --provider aws \
    --bucket <имя бакета для Velero> \
    --secret-file <путь к файлу s3_creds> \
@@ -92,7 +93,7 @@ Velero — это клиент-серверная утилита для резе
      --from-literal OS_USERNAME=$OS_USERNAME \
      --from-literal OS_INTERFACE=$OS_INTERFACE \
      --from-literal OS_FILE_OPERATION_TIMEOUT=$OS_FILE_OPERATION_TIMEOUT \
-     --from-literal OS_DOMAIN_NAME=$OS_DOMAIN_NAME \
+     --from-literal OS_DOMAIN_NAME=$OS_USER_DOMAIN_NAME \
      -o yaml
 
    ```
