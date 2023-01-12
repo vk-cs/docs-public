@@ -1,10 +1,10 @@
 {
-  "title": "Чтение метрик",
+  "title": "Reading metrics",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Чтение метрик - VK Cloud",
+  "metaTitle": "Reading metrics — VK Cloud",
   "metaDescription": "VK Cloud Monitoring предоставляет API для получения значения метрик. Сейчас реализована поддержка подмножества языка PromQL для работы с метриками на осно",
-  "sectionTitle": "Чтение метрик",
+  "sectionTitle": "Reading metrics",
   "markdown": "",
   "icon": "",
   "infobarItems": null,

@@ -3,7 +3,7 @@
     "path": "/services/cdn",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
                 {
                     "link": "docs/en/main/networks/cdn/about-cdn"

@@ -3,7 +3,7 @@
     "path": "/services/monitoring/alerting/triggers",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
                 {
                     "link": "docs/en/main/manage/alerting/alerting-about"

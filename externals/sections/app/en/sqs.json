@@ -3,7 +3,7 @@
     "path": "/services/sqs",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
                 {
                     "link": "docs/en/main/manage/cloud-queues/cloud-queues-quick-start/cloud-queues-about"

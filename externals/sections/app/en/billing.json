@@ -3,11 +3,8 @@
     "path": "/services/billing",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
-                {
-                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
-                },
                 {
                     "link": "docs/en/main/additionals/billing",
                     "hiddenForPartners": true

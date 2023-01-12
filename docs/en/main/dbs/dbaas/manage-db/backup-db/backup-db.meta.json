@@ -1,10 +1,10 @@
 {
-  "title": "Резервное копирование",
+  "title": "Backup",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Резервное копирование - VK Cloud",
+  "metaTitle": "Backup — VK Cloud",
   "metaDescription": "Создание бэкапов\nДля создания резервной копии инстанса перейдите в список инстансов, кликните на знак в конце строки и в контекстном меню выберите «Создать",
-  "sectionTitle": "Резервное копирование",
+  "sectionTitle": "Backup",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
