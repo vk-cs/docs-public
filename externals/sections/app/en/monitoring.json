@@ -3,27 +3,27 @@
     "path": "/services/monitoring",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/ru/main/manage/monitoring"
+                    "link": "docs/en/main/manage/monitoring"
                 },
                 {
-                    "link": "docs/ru/main/manage/monitoring/monitoring-info/mon-architecture"
+                    "link": "docs/en/main/manage/monitoring/monitoring-info/mon-architecture"
                 },
                 {
-                    "link": "docs/ru/main/manage/monitoring/monitoring-info/mon-agent-sw"
+                    "link": "docs/en/main/manage/monitoring/monitoring-info/mon-agent-sw"
                 }
             ]
         },
         {
-            "title": "БЫСТРЫЙ СТАРТ",
+            "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/ru/main/manage/monitoring/monitoring-start/mon-setup-new"
+                    "link": "docs/en/main/manage/monitoring/monitoring-start/mon-setup-new"
                 },
                 {
-                    "link": "docs/ru/main/manage/monitoring/monitoring-start/mon-setup-current"
+                    "link": "docs/en/main/manage/monitoring/monitoring-start/mon-setup-current"
                 }
             ]
         }

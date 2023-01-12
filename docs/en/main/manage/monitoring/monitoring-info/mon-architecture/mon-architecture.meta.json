@@ -1,10 +1,10 @@
 {
-  "title": "Архитектура",
+  "title": "Architecture",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Архитектура - VK Cloud",
+  "metaTitle": "Architecture — VK Cloud",
   "metaDescription": "Концепции Сервис мониторинга VK Cloud состоит из нескольких частей: Масштабируемый API по приему метрик\nРаспределенное хранилище метрик\nМасштабируемый API по чт",
-  "sectionTitle": "Архитектура",
+  "sectionTitle": "Architecture",
   "markdown": "",
   "icon": "",
   "infobarItems": null,

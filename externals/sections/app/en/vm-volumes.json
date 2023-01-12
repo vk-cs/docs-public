@@ -3,11 +3,8 @@
     "path": "/services/infra/volumes",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
-                {
-                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
-                },
                 {
                     "link": "docs/en/main/base/iaas/vm-volumes"
                 },
@@ -18,7 +15,7 @@
             ]
         },
         {
-            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "title": "MORE",
             "links": [
                 {
                     "link": "docs/en/main/base/iaas/vm-volumes/volume-create"
@@ -31,9 +28,6 @@
                 },
                 {
                     "link": "docs/en/main/base/iaas/vm-faq/faq-vm-backup"
-                },
-                {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
                 }
             ]
         }
