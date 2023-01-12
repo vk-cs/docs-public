@@ -3,11 +3,8 @@
     "path": "/services/storage",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
-                {
-                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
-                },
                 {
                     "link": "docs/en/main/base/s3/intro"
                 },
@@ -21,7 +18,7 @@
             ]
         },
         {
-            "title": "БЫСТРЫЙ СТАРТ",
+            "title": "QUICK START",
             "links": [
                 {
                     "link": "docs/en/main/base/s3/quick-start/create-bucket"
@@ -32,7 +29,7 @@
             ]
         },
         {
-            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "title": "MORE",
             "links": [
                 {
                     "link": "docs/en/main/base/s3/objects/s3-lifecycle"
@@ -45,9 +42,6 @@
                 },
                 {
                     "link": "docs/en/main/base/s3/dev/s3-rest-api/acl-api"
-                },
-                {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
                 }
             ]
         }

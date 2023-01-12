@@ -3,11 +3,8 @@
     "path": "/services/marketplace",
     "groups": [
         {
-            "title": "ИНФОРМАЦИЯ",
+            "title": "INFORMATION",
             "links": [
-                {
-                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
-                },
                 {
                     "link": "docs/en/main/additionals/mp/mp-info/about-mp"
                 },
@@ -17,13 +14,10 @@
             ]
         },
         {
-            "title": "БЫСТРЫЙ СТАРТ",
+            "title": "QUICK START",
             "links": [
                 {
                     "link": "docs/en/main/additionals/mp"
-                },
-                {
-                    "link": "docs/en/main/additionals/start/user-account/mgmt-interfaces"
                 },
                 {
                     "link": "docs/en/main/additionals/mp/mp-faq/mp-connect-faq"

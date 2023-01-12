@@ -1,10 +1,10 @@
 {
-  "title": "Стандартные метрики",
+  "title": "Standard metrics",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Стандартные метрики - VK Cloud",
+  "metaTitle": "Standard metrics — VK Cloud",
   "metaDescription": "Статья описывает стандартные метрики, которые собираются и отображаются в сервисах VK Cloud. По умолчанию стандартный агент мониторинга VK Cloud собирает следующую и",
-  "sectionTitle": "Стандартные метрики",
+  "sectionTitle": "Standard metrics",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
