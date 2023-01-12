@@ -9,15 +9,15 @@ The ways to top up your account depend on your legal status:
 </tablist>
 <tabpanel>
 
-- By bank card
-- Electronic money (SberPay, Qiwi, ЮMoney)
-- Via phone
+- By bank card: physical or virtual; supported payment system: MIR, VISA, Mastercard.
+- Electronic money (SberPay, Qiwi, ЮMoney).
+- Via phone.
 
 </tabpanel>
 <tabpanel>
 
-- By bank card
-- By bank transfer
+- By bank card: physical or virtual; supported payment system: MIR, VISA, Mastercard.
+- By bank transfer.
 
 <warn>
 
@@ -28,4 +28,4 @@ Funds replenished with a bank card do not get into the closing documents after t
 </tabpanel>
 </tabs>
 
-About how to top up your account, read [here](https://mcs.mail.en/docs/en/additionals/billing/operations/payment).
+Read the steps for adding funds to your account in the article [Top up balance](/en/additionals/billing/operations/payment).
