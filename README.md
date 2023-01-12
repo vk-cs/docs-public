@@ -18,4 +18,4 @@
 
 ## Лицензии
 
-© VK LLC, 2022. Licensed under GNU General Public License v3.0. See LICENSE file for more details.
+© VK LLC, 2022. Под Международной Публичной Лицензией Creative Commons Attribution 4.0. Ознакомьтесь с файлом LICENSE для получения детальной информации.
