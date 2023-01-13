@@ -178,7 +178,6 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
       name       = "default_subnet"
       network_id = vkcs_networking_network.k8s-network.id
       cidr       = "<Адрес подсети вида 192.168.0.0/24>"
-      ip_version = 4
   }
   ...
   resource "vkcs_kubernetes_cluster" "k8s-cluster" {

@@ -13,7 +13,7 @@
 - Ресурсы (resource):
 
   - **vkcs_networking_network** — сеть, в которой будет создана ВМ. В примере ниже сеть создается с именем «lb».
-  - **vkcs_networking_subnet** — подсеть из сети. В примере: lb.
+  - **vkcs_networking_subnet** — подсеть из сети. В примере: `lb`.
 
 ```hcl
 resource "vkcs_networking_network" "lb" {
@@ -23,7 +23,6 @@ resource "vkcs_networking_network" "lb" {
 resource "vkcs_networking_subnet" "lb" {
   name = "subnet"
   cidr = "192.168.199.0/24"
-  ip_version = 4
   network_id = "${vkcs_networking_network.lb.id}"
 }
 ```
