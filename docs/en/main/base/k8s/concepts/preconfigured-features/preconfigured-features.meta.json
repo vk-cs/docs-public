@@ -1,0 +1,13 @@
+{
+  "title": "Pre-configured features",
+  "pageDescription": "Each VK Cloud Kubernetes cluster is already pre-configured for your convenience. This section describes the software and settings used in the cluster.",
+  "shortDescription": "Additional services and settings available with Kubernetes Cluster.",
+  "metaTitle": "Pre-configured features — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Pre-configured features",
+  "markdown": "Each VK Cloud Kubernetes cluster is already pre-configured for your convenience. This section describes the software and settings used in the cluster.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "c79491d9-6a34-4797-8396-67d0369308c6"
+}
