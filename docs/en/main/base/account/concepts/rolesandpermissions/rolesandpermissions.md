@@ -18,7 +18,7 @@ List of roles and permissions:
 | Billing / changing payment details | - | X | X | X | - | - | - | - | - | X |
 | Create / delete VM | - | - | X | X | - | - | - | - | - | X |
 | Connecting / disconnecting VMs, PaaS services, shared folders to a virtual network | - | - | X | X | - | - | - | - | - | X |
-| VM management (enable/disable/mount images/reboot/change resources//access to monitoring and logs) | - | - | X | X | - | - | - | - | X | X |
+| VM management (enable/disable/mount images/reboot/change resources/access to monitoring and logs) | - | - | X | X | - | - | - | - | X | X |
 | Virtual Disk Management (Create/Remove/Expand/Mount/Snapshots/Migrate) | - | - | X | X | - | - | - | - | X | X |
 | Image management (adding / removing VM images) | - | - | X | X | - | - | - | - | - | X |
 | Manage Shared Folders (Add/Remove/Resize) | - | - | X | X | - | - | - | - | - | X |
@@ -38,6 +38,41 @@ List of roles and permissions:
 | Create zones and records in public DNS | - | - | x | x | x | - | - | - | - | X |
 | View information about all services within a project | - | - | - | X |-| X | - | - | - | X |
 -->
+
+## Role matrix for container service
+
+In addition to the standard roles, the container service has its own special roles.
+
+The personal account roles assigned to users affect:
+
+- Rights in Kubernetes clusters.
+
+  <info>
+
+  This is true for Kubernetes clusters of version 1.23 and above. Clusters of older versions can be upgraded for the same capabilities.
+
+  </info>
+
+- The availability of cluster operations in the personal account listed in the table below.
+
+<!-- prettier-ignore -->
+| Operation/Role | Project owner<br>Project administrator<br>Superadministrator | Kubernetes<br>Administrator | Kubernetes<br>operator | Kubernetes<br>Auditor |
+| --------------| --------------------------------------------------------------- | --------------------------- | ---------------------- | --------------------- |
+| Create cluster                                            | X  | X  | -  | -                |
+| Delete cluster                                            | X  | X  | -  | -                |
+| Start cluster                                             | X  | X  | X  | -                |
+| Stop cluster                                              | X  | X  | X  | -                |
+| Show information about<br>cluster and node groups         | X  | X  | X  | X                |
+| Get kubeconfig                                            | X  | X  | X  | X                |
+| Get the secret to access<br>the Kubernetes Dashboard      | X  | X  | X  | X                |
+| Update version                                            | X  | X  | X  | -                |
+| Change virtual machine type                               | X  | X  | X  | -                |
+| Change the size of the Prometheus disk                    | X  | X  | X  | -                |
+| Add node group                                            | X  | X  | X  | -                |
+| Delete node group                                         | X  | X  | X  | -                |
+| Change scaling settings                                   | X  | X  | X  | Read<br>only     |
+| Change Labels and Taints                                  | X  | X  | X  | Read<br>only     |
+<!-- prettier-ignore -->
 
 ## Deleting a member
 

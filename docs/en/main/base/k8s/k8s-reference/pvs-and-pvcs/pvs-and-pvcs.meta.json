@@ -1,0 +1,13 @@
+{
+  "title": "Persistent Volume Claim and persistent volumes",
+  "pageDescription": "General information about working with Persistent Volumes with use of Persistent Volume Claim.",
+  "shortDescription": "How to use Persistent Volume Claim of different types to work with persistent volumes",
+  "metaTitle": "Persistent Volume Claim and persistent volumes — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Persistent Volume Claim and persistent volumes",
+  "markdown": "General information about working with Persistent Volumes with use of Persistent Volume Claim.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5,
+  "uuid": "e7e0a184-d730-4593-80fe-af2bd453ddeb"
+}

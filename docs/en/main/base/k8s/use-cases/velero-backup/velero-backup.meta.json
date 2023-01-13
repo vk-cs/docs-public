@@ -1,0 +1,13 @@
+{
+  "title": "Backup with Velero",
+  "pageDescription": "How to use Velero to back up and restore Kubernetes cluster resources.",
+  "shortDescription": "How to use Velero to back up and restore Kubernetes cluster resources",
+  "metaTitle": "Backup with Velero — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Backup with Velero",
+  "markdown": "How to use Velero to back up and restore Kubernetes cluster resources.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 6,
+  "uuid": "9e12acd2-4d24-4b59-8eb4-73a642a19312"
+}

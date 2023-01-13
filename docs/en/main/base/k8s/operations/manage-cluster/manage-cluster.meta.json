@@ -1,0 +1,13 @@
+{
+  "title": "Managing cluster",
+  "pageDescription": "This section describes the operations that can be used to manage a Kubernetes cluster. Each operation is accompanied by step-by-step instructions.",
+  "shortDescription": "How to manage a Kubernetes cluster using a personal account or Terraform",
+  "metaTitle": "Managing cluster — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Managing cluster",
+  "markdown": "This section describes the operations that can be used to manage a Kubernetes cluster. Each operation is accompanied by step-by-step instructions.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "1d9dae9f-b231-4be6-818d-4b4422548001"
+}

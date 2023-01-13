@@ -1,0 +1,13 @@
+{
+  "title": "Step-by-step instructions",
+  "pageDescription": "A Kubernetes cluster consists of master nodes and groups of worker nodes. This section explains the operations that can be performed on the cluster and its nodes.",
+  "shortDescription": "Supported operations with the cluster and its nodes",
+  "metaTitle": "Step-by-Step instructions — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Step-by-step instructions",
+  "markdown": "A Kubernetes cluster consists of master nodes and groups of worker nodes. This section explains the operations that can be performed on the cluster and its nodes.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "8f225e5a-fc0a-41a8-a492-cc6a83afe012"
+}
