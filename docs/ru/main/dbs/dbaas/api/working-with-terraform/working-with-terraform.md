@@ -69,7 +69,6 @@ resource "vkcs_networking_subnet" "db-subnetwork" {
   name            = "db-subnet"
   network_id      = vkcs_networking_network.db.id
   cidr            = "10.100.0.0/16"
-  ip_version      = 4
   dns_nameservers = ["8.8.8.8", "8.8.4.4"]
 }
 
