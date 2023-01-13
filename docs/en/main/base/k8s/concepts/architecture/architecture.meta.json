@@ -1,0 +1,13 @@
+{
+  "title": "Architecture",
+  "pageDescription": "Service architecture details: Kubernetes cluster topologies and environment, integration with Kubernetes API and VK Cloud platform.",
+  "shortDescription": "Kubernetes cluster topologies and environment, integration with Kubernetes API and VK Cloud platform.",
+  "metaTitle": "Architecture - VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Architecture",
+  "markdown": "Service architecture details: Kubernetes cluster topologies and environment, integration with Kubernetes API and VK Cloud platform.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "28a5cb50-e090-4cd1-9d80-9bc978ee8780"
+}

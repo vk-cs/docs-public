@@ -1,0 +1,13 @@
+{
+  "title": "Using Ingress",
+  "pageDescription": "How to provide access to services deployed in a cluster via Ingress.",
+  "shortDescription": "How to provide access to services deployed in a cluster via Ingress",
+  "metaTitle": "Using Ingress — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Using Ingress",
+  "markdown": "How to provide access to services deployed in a cluster via Ingress.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "1bccdc14-a097-41da-873d-f612c1ba5df6"
+}

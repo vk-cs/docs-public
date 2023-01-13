@@ -1,0 +1,13 @@
+{
+  "title": "Network in cluster",
+  "pageDescription": "Each Kubernetes VK Cloud cluster is tightly integrated with VK Cloud network services. The section shows how this integration works.",
+  "shortDescription": "Kubernetes clusters integration with VK Cloud network services",
+  "metaTitle": "Network in cluster — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Network in cluster",
+  "markdown": "Each Kubernetes VK Cloud cluster is tightly integrated with VK Cloud network services. The section shows how this integration works.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "25f0d71c-4e77-4597-83ae-9fb455a189f0"
+}

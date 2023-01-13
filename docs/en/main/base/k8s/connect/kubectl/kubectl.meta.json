@@ -1,0 +1,13 @@
+{
+  "title": "Connecting to cluster using kubectl",
+  "pageDescription": "How to connect to a Kubernetes cluster using kubectl.",
+  "shortDescription": "How to connect to a Kubernetes cluster using kubectl",
+  "metaTitle": "Connecting to cluster using kubectl — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Connecting to cluster using kubectl",
+  "markdown": "How to connect to a Kubernetes cluster using kubectl.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "ed3fa2bc-5a3e-4760-8492-2c33d13532b3"
+}
