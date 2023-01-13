@@ -1,0 +1,13 @@
+{
+    "title": "Labels and taints",
+    "pageDescription": "General information about labels and taints in Kubernetes.",
+    "shortDescription": "General information about labels and taints in Kubernetes",
+    "metaTitle": "Labels and taints — VK Cloud",
+    "metaDescription": "",
+    "sectionTitle": "Labels and taints",
+    "markdown": "General information about labels and taints in Kubernetes.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "1c39dfa6-5cbb-4364-83cc-c35b3de2e844"
+}

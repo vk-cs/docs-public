@@ -1,0 +1,13 @@
+{
+  "title": "Configuring mandatory labels",
+  "pageDescription": "Using Gatekeeper to enforce constraints that will check mandatory labels on Kubernetes resources.",
+  "shortDescription": "How to create a Gatekeeper constraint that checks mandatory labels",
+  "metaTitle": "Configuring mandatory labels — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Configuring mandatory labels",
+  "markdown": "Using Gatekeeper to enforce constraints that will check mandatory labels on Kubernetes resources.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "f0b66c19-8370-4dee-a8d8-4451caf200da"
+}

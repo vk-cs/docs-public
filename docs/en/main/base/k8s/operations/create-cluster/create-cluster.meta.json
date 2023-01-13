@@ -1,0 +1,13 @@
+{
+    "title": "Creating cluster",
+    "pageDescription": "Different ways to create a Kubernetes cluster.",
+    "shortDescription": "The different ways to create a cluster.",
+    "metaTitle": "Creating cluster — VK Cloud",
+    "metaDescription": "",
+    "sectionTitle": "Creating cluster",
+    "markdown": "Different ways to create a Kubernetes cluster.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "42a7cde9-fe73-4ffd-8589-b880148af9b0"
+}

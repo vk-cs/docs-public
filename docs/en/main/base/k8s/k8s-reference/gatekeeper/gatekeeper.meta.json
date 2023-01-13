@@ -1,0 +1,13 @@
+{
+  "title": "Gatekeeper",  
+  "pageDescription": "How to use Gatekeeper to create and enforce constraints for Kubernetes resources.",
+  "shortDescription": "How to use Gatekeeper in the cluster to create and enforce constraints.",
+  "metaTitle": "Gatekeeper — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Gatekeeper",
+  "markdown": "How to use Gatekeeper to create and enforce constraints for Kubernetes resources.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "e032a1cc-3c3a-473b-a696-3e0d779608ab"
+}

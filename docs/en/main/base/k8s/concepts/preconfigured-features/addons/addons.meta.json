@@ -1,0 +1,13 @@
+{
+  "title": "Available services",
+  "pageDescription": "Services that can be automatically installed in the cluster to extend its functionality.",
+  "shortDescription": "Services available for installation when the cluster is created.",
+  "metaTitle": "Available services — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Available Services",
+  "markdown": "Services that can be automatically installed in the cluster to extend its functionality.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "dc21e4b3-faff-4d3a-b639-2a6b9847898a"
+}
