@@ -1,0 +1,13 @@
+{
+  "title": "Installing Velero",
+  "pageDescription": "How to install Velero in the Kubernetes cluster.",
+  "shortDescription": "How to install Velero utility",
+  "metaTitle": "Installing Velero — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Installing Velero",
+  "markdown": "How to install Velero in the Kubernetes cluster.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "ddc9a7ce-1cc7-498c-b64f-fd4e0e9f879b"
+}
