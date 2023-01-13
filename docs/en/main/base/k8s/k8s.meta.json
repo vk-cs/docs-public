@@ -1,13 +1,12 @@
 {
   "title": "Containers",
-  "pageDescription": "VK Cloud Containers - Kubernetes as a cloud service. The service is CNCF certified and compatible with the standard Kubernetes API. Thanks to automatic scaling (autoscaling), applications on Cloud Containers instantly receive additional capacity at the time of peak load and reduce consumption when it falls. Autoscaling saves up to 60% on computations.",
-  "shortDescription": "Automatic scaling of services and applications for workloads based on Docker and Kubernetes",
-  "metaTitle": "Containers - VK Cloud",
-  "metaDescription": "VK Cloud Containers - Kubernetes as a cloud service. The service is CNCF certified and compatible with the standard Kubernetes API. Thanks to automati",
+  "pageDescription": "Kubernetes as a cloud service. The service is CNCF-certified and compatible with the standard Kubernetes API. Thanks to autoscaling, applications on Cloud Containers get extra capacity instantly when load peaks and reduce consumption when load drops. Autoscaling saves up to 60% on computation.",
+  "shortDescription": "Auto-scaling services and applications under Kubernetes-based workloads.",
+  "metaTitle": "Containers — VK Cloud",
+  "metaDescription": "",
   "sectionTitle": "Containers",
-  "markdown": "VK Cloud Containers - Kubernetes as a cloud service. The service is CNCF certified and compatible with the standard Kubernetes API. Thanks to automatic scaling (autoscaling), applications on Cloud Containers instantly receive additional capacity at the time of peak load and reduce consumption when it falls. Autoscaling saves up to 60% on computations.",
+  "markdown": "The service has CNCF certification and is compatible with the standard Kubernetes API. Thanks to autoscaling, applications on Cloud Containers get additional power instantly during peak loads and reduce consumption when loads drop. Autoscaling saves up to 60% on computation.",
   "icon": "",
-  "weight": 4,
   "infobarItems": null,
   "uuid": "0f729ff3-2aa9-47e6-a577-2cb415acdfc9"
 }

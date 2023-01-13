@@ -1,0 +1,13 @@
+{
+    "title": "Resource limiting",
+    "pageDescription": "How to control the use of computing resources by containers that are part of pods and workloads.",
+    "shortDescription": "How to control the use of computing resources by containers.",
+    "metaTitle": "Resource limiting — VK Cloud",
+    "metaDescription": "",
+    "sectionTitle": "Resource limiting",
+    "markdown": "How to control the use of computing resources by containers that are part of pods and workloads.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "479cf863-74f7-4abf-bd1a-b91bab0b111d"
+}
