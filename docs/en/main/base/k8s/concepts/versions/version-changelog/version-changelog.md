@@ -1,3 +1,36 @@
+## Kubernetes 1.23.13 <a id="v1-23-13"></a>
+
+**Important changes in Kubernetes:** Kubernetes is now built on Golang 1.17.13.
+
+**Vulnerability fixes:**
+
+- [CVE-2022-3172](https://bugzilla.redhat.com/show_bug.cgi?id=2127804): the aggregated `kube-apiserver` API server can cause client redirects.
+- [CVE-2021-25749](https://bugzilla.redhat.com/show_bug.cgi?id=2127808): the `runAsNonRoot` logic is skipped for Windows containers.
+
+Read more about these and other changes in [official Kubernetes documentation](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.23.md#v12313).
+
+## Kubernetes 1.23.6 <a id="v1-23-6"></a>
+
+**Changes in Kubernetes aaS service:** Added [integration with VK Cloud IAM](/en/base/k8s/concepts/access-management).
+
+**Important changes in Kubernetes:**
+
+- The [FlexVolume](https://github.com/kubernetes/community/blob/master/sig-storage/volume-plugin-faq.md#flexvolume) functionality has been moved to deprecated status.
+- Functionality specific [flags for klog](https://kubernetes.io/docs/concepts/cluster-administration/system-logs/#klog) has been moved to deprecated status.
+- The [IPv4/IPv6 dual-stack networking](https://github.com/kubernetes/enhancements/tree/master/keps/sig-network/563-dual-stack) functionality has been moved to general availability status.
+- HorizontalPodAutoscaler v2 functionality has been moved to general availability status.
+- Generic Ephemeral Volume functionality has been moved to general availability status.
+- Skip Volume Ownership change functionality has been moved to general availability status.
+- The functionality allowing CSI drivers to opt-in to volume ownership and permission changes has been moved to general availability status.
+- The [PodSecurity](https://kubernetes.io/docs/concepts/security/pod-security-admission/) functionality has been moved to beta status.
+- Kubelet now supports CRI v1 API.
+- Logging structuring functionality has been moved to beta status.
+- ServerSideFieldValidation function returns warning if Kubernetes object in request contains unknown or duplicated fields.
+- Expression language checking for CRD has been moved to alpha status.
+- The OpenAPI v3 functionality has been moved to alpha status.
+
+Read more about these and other changes in [official Kubernetes documentation](https://kubernetes.io/blog/2021/12/07/kubernetes-1-23-release-announcement/).
+
 ## Kubernetes 1.22.6 <a id="v1-22-6"></a>
 
 **Changes in Kubernetes aaS service:**
@@ -9,8 +42,8 @@
 
 - The PodSecurityPolicy component is replaced by [alpha version of PodSecurity](https://github.com/kubernetes/enhancements/issues/2579).
 - The [Memory Manager](https://github.com/kubernetes/enhancements/issues/1769) component has been moved to beta status.
-- New [API Server Tracing] functionality added (https://github.com/kubernetes/enhancements/issues/647), now in alpha status.
-- New [Generic data populators] functionality added (https://github.com/kubernetes/enhancements/issues/1495) for Persistent Volumes, currently alpha.
+- New [API Server Tracing](https://github.com/kubernetes/enhancements/issues/647) functionality added, now in alpha status.
+- New [Generic data populators](https://github.com/kubernetes/enhancements/issues/1495) functionality added for Persistent Volumes, currently alpha.
 - A new version of the configuration format for kubeadm has been added: [v1beta3](https://github.com/kubernetes/enhancements/issues/970).
 - Kubernetes control plane now always uses [CronJobs controller version 2](https://github.com/kubernetes/enhancements/issues/19).
 - All Kubernetes control plane components on nodes (including kubelet, kube-proxy and container runtime) [can now be run as non-root users](https://github.com/kubernetes/enhancements/issues/2033). This functionality is in alpha stage.
