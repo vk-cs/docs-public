@@ -1,3 +1,36 @@
+## Kubernetes 1.23.13 <a id="v1-23-13"></a>
+
+**Важные изменения в Kubernetes:** теперь Kubernetes собран на Golang 1.17.13.
+
+**Исправлены уязвимости:**
+
+- [CVE-2022-3172](https://bugzilla.redhat.com/show_bug.cgi?id=2127804): агрегированный сервер API `kube-apiserver` может привести к перенаправлению клиентов.
+- [CVE-2021-25749](https://bugzilla.redhat.com/show_bug.cgi?id=2127808): логика `runAsNonRoot` пропускается для Windows-контейнеров.
+
+Подробнее об этих и других изменениях в [официальной документации Kubernetes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.23.md#v12313).
+
+## Kubernetes 1.23.6 <a id="v1-23-6"></a>
+
+**Изменения в сервисе Kubernetes aaS:** добавлена [интеграция с IAM облака VK Cloud](https://mcs.mail.ru/docs/ru/base/k8s/concepts/access-management).
+
+**Важные изменения в Kubernetes:**
+
+- Функциональность [FlexVolume](https://github.com/kubernetes/community/blob/master/sig-storage/volume-plugin-faq.md#flexvolume) переведена в статус deprecated (устаревшая).
+- Функциональность специфичных [флагов для klog](https://kubernetes.io/docs/concepts/cluster-administration/system-logs/#klog) переведена в статус deprecated (устаревшая).
+- Функциональность [IPv4/IPv6 dual-stack networking](https://github.com/kubernetes/enhancements/tree/master/keps/sig-network/563-dual-stack) переведена в статус general availability (публичный доступ).
+- Функциональность HorizontalPodAutoscaler v2 переведена в статус general availability (публичный доступ).
+- Функциональность Generic Ephemeral Volume переведена в статус general availability (публичный доступ).
+- Функциональность Skip Volume Ownership change переведена в статус general availability (публичный доступ).
+- Функциональность Allow CSI drivers to opt-in to volume ownership and permission change переведена в статус general availability (публичный доступ).
+- Функциональность [PodSecurity](https://kubernetes.io/docs/concepts/security/pod-security-admission/) переведена в статус beta.
+- `kubelet` теперь поддерживает CRI v1 API.
+- Функциональность структурирования логирования переведена в статус beta.
+- Функция ServerSideFieldValidation возвращает предупреждение, если объект Kubernetes в запросе содержит неизвестные или дублированные поля.
+- Проверка языка выражений для CRD переведена в статус alpha.
+- Функциональность OpenAPI v3 переведена в статус alpha.
+
+Подробнее об этих и других изменениях в [официальной документации Kubernetes](https://kubernetes.io/blog/2021/12/07/kubernetes-1-23-release-announcement/).
+
 ## Kubernetes 1.22.6 <a id="v1-22-6"></a>
 
 **Изменения в сервисе Kubernetes aaS:**
