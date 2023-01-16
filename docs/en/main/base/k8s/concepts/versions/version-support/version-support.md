@@ -35,12 +35,13 @@ The version history can be viewed at [Kubernetes version history](../version-cha
 
 New features are added to all versions of Kubernetes, unless a feature and version are incompatible.
 
-| Feature                                  | 1.17.8 | 1.18.12 | 1.19.4 | 1.20.4 | 1.21.4 | 1.22.x | 1.23.x |
-| ---------------------------------------- | ------ | ------- | ------ | ------ | ------ | ------ | ------ |
-| Node group scaling settings              | +      | +       | +      | +      | +      | +      | +      |
-| Invalidate the key pair                  | +      | +       | +      | +      | +      | +      | -      |
-| Change the size of the Prometheus disk   | +      | +       | +      | +      | +      | +      | +      |
-| Change the type of Master virtual machine| +      | +       | +      | +      | +      | +      | +      |
-| Update cluster version                   | +      | +       | +      | +      | +      | +      | +      |
-| Label & Taints                           | +      | +       | +      | +      | +      | +      | +      |
-| Cluster nodes on AlmaLinux               | -      | -       | -      | -      | +      | +      | +      |
+| Feature                                  | 1.17.x–1.20.x | 1.21.4 | 1.22.x | 1.23.x |
+| ---------------------------------------- | ------------- | ------ | ------ | ------ |
+| Node group scaling settings              | +             | +      | +      | +      |
+| Invalidate the key pair                  | +             | +      | +      | -      |
+| Change the size of the Prometheus disk   | +             | +      | +      | +      |
+| Change the type of Master virtual machine| +             | +      | +      | +      |
+| Update cluster version                   | +             | +      | +      | +      |
+| Label & Taints                           | +             | +      | +      | +      |
+| Cluster nodes on AlmaLinux               | -             | +      | +      | +      |
+| Integration with VK Cloud IAM            | -             | -      | -      | +      |
