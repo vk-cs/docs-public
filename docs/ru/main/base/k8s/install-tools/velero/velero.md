@@ -40,7 +40,7 @@ Velero — это клиент-серверная утилита для резе
    ```bash
    velero install \
    --plugins \
-     velero/velero-plugin-for-aws:v<выбранная версия плагина aws>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.1 \
+     velero/velero-plugin-for-aws:v<выбранная версия плагина AWS>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.1 \
    --provider aws \
    --bucket <имя бакета для Velero> \
    --secret-file <путь к файлу s3_creds> \
@@ -56,7 +56,7 @@ Velero — это клиент-серверная утилита для резе
    ```powershell
    velero install `
    --plugins `
-     velero/velero-plugin-for-aws:v1.0.0,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.0 `
+     velero/velero-plugin-for-aws:v<выбранная версия плагина AWS>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.1 `
    --provider aws `
    --bucket <имя бакета для Velero> `
    --secret-file <путь к файлу s3_creds> `
@@ -111,7 +111,7 @@ Velero — это клиент-серверная утилита для резе
      --from-literal OS_USERNAME=$env:OS_USERNAME `
      --from-literal OS_INTERFACE=$env:OS_INTERFACE `
      --from-literal OS_FILE_OPERATION_TIMEOUT=$env:OS_FILE_OPERATION_TIMEOUT `
-     --from-literal OS_DOMAIN_NAME=$env:OS_DOMAIN_NAME `
+     --from-literal OS_DOMAIN_NAME=$env:OS_USER_DOMAIN_NAME `
      -o yaml
    ```
 

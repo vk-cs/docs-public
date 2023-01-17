@@ -22,6 +22,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
 
 1. Determine which version of Velero [is compatible with the Kubernetes cluster version](https://github.com/vmware-tanzu/velero#velero-compatibility-matrix) you want to install Velero in.
 1. [Download the correct version](https://github.com/vmware-tanzu/velero/releases) of the Velero client.
+1. Determine the version of the AWS plugin that [is compatible](https://github.com/vmware-tanzu/velero-plugin-for-aws#compatibility) with Velero version.
 1. Add the path to the client to the environment variable:
 
    - `Path` for Windows.
@@ -39,7 +40,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
    ```bash
    velero install \
    --plugins \
-     velero/velero-plugin-for-aws:v1.0.0,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.0 \
+     velero/velero-plugin-for-aws:v<selected AWS plugin version>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.1 \
    --provider aws \
    --bucket <Velero bucket name> \
    --secret-file <path to s3_creds file> \
@@ -55,7 +56,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
    ```powershell
    velero install `
    --plugins `
-     velero/velero-plugin-for-aws:v1.0.0,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.0 `
+     velero/velero-plugin-for-aws:v<selected AWS plugin version>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.1 `
    --provider aws `
    --bucket <Velero bucket name> `
    --secret-file <path to s3_creds file> `
@@ -92,7 +93,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
      --from-literal OS_USERNAME=$OS_USERNAME \
      --from-literal OS_INTERFACE=$OS_INTERFACE \
      --from-literal OS_FILE_OPERATION_TIMEOUT=$OS_FILE_OPERATION_TIMEOUT \
-     --from-literal OS_DOMAIN_NAME=$OS_DOMAIN_NAME \
+     --from-literal OS_DOMAIN_NAME=$OS_USER_DOMAIN_NAME \
      -o yaml
 
    ```
@@ -110,7 +111,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
      --from-literal OS_USERNAME=$env:OS_USERNAME `
      --from-literal OS_INTERFACE=$env:OS_INTERFACE `
      --from-literal OS_FILE_OPERATION_TIMEOUT=$env:OS_FILE_OPERATION_TIMEOUT `
-     --from-literal OS_DOMAIN_NAME=$env:OS_DOMAIN_NAME `
+     --from-literal OS_DOMAIN_NAME=$env:OS_USER_DOMAIN_NAME `
      -o yaml
    ```
 
