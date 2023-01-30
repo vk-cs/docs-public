@@ -78,7 +78,7 @@ The Contractor has the right to monitor the Content in order to verify that the 
 
 3.3.2. On a regular basis, independently familiarize yourself with the current version of the Applicable Rules and comply with them in full.
 
-3.2.3. Be responsible for your actions and / or inactions on the use of the Contractor's Service.
+3.3.3. Be responsible for your actions and / or inactions on the use of the Contractor's Service.
 
 ## 4\. Cost of services and payment procedure
 
