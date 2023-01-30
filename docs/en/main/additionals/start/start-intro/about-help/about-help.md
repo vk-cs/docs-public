@@ -1,47 +1,63 @@
-Several typographic conventions are used throughout the VK Cloud documentation.
+This section describes different ways VK Cloud Documentation highlights information.
 
-## Notes
+## Info boxes
 
-Notes are formatted as follows.
+There are three types of info boxes:
 
-### Note
+<info>A hint or additional information that may be helpful.</info>
 
-Commentary with additional information explaining part of the text.
+<warn>Information that is important to know before proceeding.</warn>
 
-### Important
+<err>Critical information related to possible security issues or data loss.</err>
 
-Information you need to know before proceeding.
+## Executable commands and code
 
-### Advice
+Executable commands and code can be copied by clicking on the icon on the right.
 
-Optional, but very helpful advice.
-
-### Warning
-
-Critical information about the risk of data loss or security issues.
-
-## Command requests
-
+```bash
+command
 ```
- command
+Code boxes have highlighted syntax.
+
+```javascript
+// sample JavaScript code
+console.log('Hello World');
 ```
-
-Any user, including the root user, can execute commands starting with "$".
-
-```
- # command
-```
-
-Commands starting with "#" must be executed by the root user. Alternatively, you can start these commands with the sudo command (if available) to run them.
-
-Each block of code can be copied, and you can also see what language the code is written in.
-
-![](./assets/1595591662397-1595591662397.png)
 
 ## Hidden text
 
-In order not to overwhelm the article with information, it can be hidden in blocks of drop-down texts, when selected, information is displayed. Clicking on the corresponding block will display the hidden text.
+Large blocks of code and text are often hidden.
 
-![](./assets/1595593151241-1595593151241.png)
+<details>
+<summary>A closed block looks like this.</summary>
+An example of hidden text.
+</details>
 
-The VK Cloud support team welcomes requests and additions, as well as bug reports in the Documentation. [Let us know](/en/contacts) and we will make changes.
+Click on the block to see its contents. Click again if you want to hide the text back.
+
+## Tabs
+
+Tabs are used for alternate instructions like commands for different operating systems terminals.
+
+<tabs>
+<tablist>
+<tab>First tab</tab>
+<tab>Second tab</tab>
+</tablist>
+<tabpanel>
+
+This is what the text looks like on the first tab.
+
+Click on the second tab to switch to it.
+
+</tabpanel>
+<tabpanel>
+
+This is what the text looks like on the second tab.
+
+Click on the first tab to switch to it.
+
+</tabpanel>
+</tabs>
+
+Numbered tabs contain instructions that must be followed consecutively.
