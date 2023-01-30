@@ -4,45 +4,25 @@
 
 ## Файлы настройки провайдеров
 
-Для начала работы с Terraform создайте файл `main.tf` и опишите в нем необходимые terraform-провайдеры. Это описание указывает Terraform, куда и с какими учетными данными подключаться для создания необходимых ресурсов
+Для начала работы с Terraform создайте файл `main.tf` и опишите в нем необходимые terraform-провайдеры. Это описание указывает Terraform, куда и с какими учетными данными подключаться для создания необходимых ресурсов.
 
 Вы можете скачать уже заполненный `main.tf` в [личном кабинете](https://mcs.mail.ru/app/project/terraform/).
-Первый блок terraform описывает какие провайдеры нужны (`required_providers`). Внутри указаны два провайдера `openstack` и `mcs`, их источник и версии. Если вы собираетесь использовать дополнительные провайдеры, добавьте их в данном блоке.
+Первый блок terraform описывает какие провайдеры нужны (`required_providers`). Внутри указан провайдер `vkcs`, его источник и версии. Если вы собираетесь использовать дополнительные провайдеры, добавьте их в данном блоке.
 
-``` bash
+```bash
 terraform {
     required_providers {
-        openstack = {
-            source = "terraform-provider-openstack/openstack"
-            version = "1.33.0"
-        }
-        
-        mcs = {
-            source = "MailRuCloudSolutions/mcs"
+        vkcs = {
+            source = "vk-cs/vkcs"
         }
     }
 }
-
 ```
 
-В блоке `provider "openstack"` указаны настройки для провайдера `openstack`. Инфраструктура VK Cloud построена на `openstack`. Этот провайдер используется для создания сетей, балансеров и других компонентов. Укажите `user_name` и `password` для личного кабинета, остальные поля оставьте без изменений.
+Блок `provider "vkcs"` описывает настройки для провайдера от VK Cloud. Все необходимые поля уже заполнены. Укажите `user_name` и `password` для личного кабинета, остальные поля оставьте без изменений.
 
-``` bash
-provider "openstack" {
-    user_name = "USER_NAME"
-    password = "YOUR_PASSWORD"
-    tenant_id = "111111111111111111111111111"
-    user_domain_id = "users"
-    auth_url = "https://infra.mail.ru:35357/v3/"
-    use_octavia = true
-    region = "RegionOne"
-}
-```
-
-Блок `provider "mcs"` описывает настройки для провайдера от VK Cloud. Все необходимые поля уже заполнены. Укажите `user_name` и `password` для личного кабинета, остальные поля оставьте без изменений.
-
-``` bash
-provider "mcs" {
+```bash
+provider "vkcs" {
     username = "USER_NAME"
     password = "YOUR_PASSWORD"
     project_id = " 111111111111111111111111111"
