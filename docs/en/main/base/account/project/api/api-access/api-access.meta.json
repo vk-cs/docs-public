@@ -1,12 +1,13 @@
 {
-    "title": "Accessing API",
-    "pageDescription": "Activate access to the VK Cloud public API.",
-    "shortDescription": "Activate access to the VK Cloud public API",
-    "metaTitle": "Accessing API — VK Cloud",
-    "metaDescription": "Activate access to the VK Cloud public API.",
-    "sectionTitle": "Accessing API",
-    "markdown": "",
-    "icon": "",
-    "weight": 1,
-    "infobarItems": null
+  "title": "Accessing API",
+  "pageDescription": "Activate access to the VK Cloud public API.",
+  "shortDescription": "Activate access to the VK Cloud public API",
+  "metaTitle": "Accessing API — VK Cloud",
+  "metaDescription": "Activate access to the VK Cloud public API.",
+  "sectionTitle": "Accessing API",
+  "markdown": "",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": null,
+  "uuid": "f758c8e2-8fbc-4e94-ae08-208eee3e5b75"
 }
