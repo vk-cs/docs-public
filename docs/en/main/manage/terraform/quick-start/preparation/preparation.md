@@ -8,45 +8,25 @@ To get started with Terraform, create a `main.tf` file and describe the necessar
 
 You can download the already completed `main.tf` in [personal account](https://mcs.mail.ru/app/project/terraform/).
 
-The first terraform block describes which providers are required (`required_providers`). Inside are two providers `openstack` and `mcs`, their source and versions. If you are going to use additional providers, add them in this block.
+The first terraform block describes which providers are required (`required_providers`). Inside is `vkcs` provider source and its versions. If you are going to use additional providers, add them in this block.
 
-``` bash
+```bash
 terraform {
-     required_providers {
-         open stack = {
-             source="terraform-provider-openstack/openstack"
-             version="1.33.0"
-         }
-        
-         mcs = {
-             source = "MailRuCloudSolutions/mcs"
-         }
-     }
-}
-
-```
-
-The `provider "openstack"` block specifies the settings for the `openstack` provider. The VK Cloud infrastructure is built on `openstack`. This provider is used to create networks, balancers and other components. Specify `user_name` and `password` for your personal account, leave the rest of the fields unchanged.
-
-``` bash
-provider "openstack" {
-     user_name = "USER_NAME"
-     password = "YOUR_PASSWORD"
-     tenant_id = "111111111111111111111111111"
-     user_domain_id = "users"
-     auth_url = "https://infra.mail.ru:35357/v3/"
-     use_octavia = true
-     region = "RegionOne"
+    required_providers {
+        vkcs = {
+            source = "vk-cs/vkcs"
+        }
+    }
 }
 ```
 
-The `provider "mcs"` block describes the settings for the provider from VK Cloud. All required fields have already been filled in. Specify `user_name` and `password` for your personal account, leave the rest of the fields unchanged.
+The `provider "vkcs"` block describes the settings for the provider from VK Cloud. All required fields have already been filled in. Specify `user_name` and `password` for your personal account, leave the rest of the fields unchanged.
 
-``` bash
-provider "mcs" {
-     username="USER_NAME"
-     password = "YOUR_PASSWORD"
-     project_id = "111111111111111111111111111"
-     region = "RegionOne"
+```bash
+provider "vkcs" {
+    username="USER_NAME"
+    password = "YOUR_PASSWORD"
+    project_id = "111111111111111111111111111"
+    region = "RegionOne"
 }
 ```
