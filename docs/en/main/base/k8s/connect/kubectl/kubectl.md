@@ -255,7 +255,10 @@ The `kubectl` utility allows you to perform the full range of Kubernetes cluster
       </tabpanel>
       </tabs>
 
-   1. [Add](../../../../additionals/account/account/adduser) in your personal account [required role](../../concepts/access-management) for the user on whose behalf the connection to the cluster will be performed.
+   1. Determine on behalf of which user you want to connect to the cluster. Then:
+
+      - [Assign](../../../../base/account/account/adduser) necessary [role](../../concepts/access-management) to this user.
+      - [Activate API access](/en/main/base/account/project/api/api-access#activate-api-access) for this user.
 
 ## Connecting to the cluster
 
