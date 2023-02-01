@@ -59,7 +59,19 @@
    openstack port show <идентификатор или имя порта>
    ```
 
-Подробная информация о командах и их аргументах в [справке OpenStack CLI](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/port.html).
+Для получения подробной информации о поддерживаемых параметрах воспользуйтесь одной из команд:
+
+```bash
+openstack port list --help
+```
+
+```bash
+openstack subnet list --help
+```
+
+```bash
+openstack port show --help
+```
 
 </tabpanel>
 </tabs>
@@ -98,7 +110,11 @@
    openstack port create <имя порта> --network <имя или идентификатор сети> --fixed-ip subnet=<имя или идентификатор подсети>,ip-address=<IP-адрес порта>
    ```
 
-Подробная информация о команде и ее аргументах в [справке OpenStack CLI](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/port.html).
+Для получения подробной информации о поддерживаемых параметрах воспользуйтесь командой:
+
+```bash
+openstack port create --help
+```
 
 </tabpanel>
 </tabs>
@@ -147,7 +163,11 @@
    openstack port set <имя или идентификатор порта> --enable
    ```
 
-Подробная информация о команде и ее аргументах в [справке OpenStack CLI](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/port.html).
+Для получения подробной информации о поддерживаемых параметрах воспользуйтесь командой:
+
+```bash
+openstack port set --help
+```
 
 </tabpanel>
 </tabs>
@@ -196,7 +216,11 @@
    openstack port set <имя или идентификатор порта> --disable
    ```
 
-Подробная информация о команде и ее аргументах в [справке OpenStack CLI](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/port.html).
+Для получения подробной информации о поддерживаемых параметрах воспользуйтесь командой:
+
+```bash
+openstack port set --help
+```
 
 </tabpanel>
 </tabs>
@@ -251,7 +275,11 @@
      openstack port set <имя или идентификатор порта> --no-fixed-ip --fixed-ip subnet=<имя или идентификатор подсети>,ip-address=<новый IP-адрес порта>
      ```
 
-Подробная информация о командах и их аргументах в [справке OpenStack CLI](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/port.html).
+Для получения подробной информации о поддерживаемых параметрах воспользуйтесь командой:
+
+```bash
+openstack port set --help
+```
 
 </tabpanel>
 </tabs>
@@ -286,7 +314,15 @@
 
    Если необходимо удалить еще несколько IP-адресов, повторите эту команду для каждого их них.
 
-Подробная информация о командах и их аргументах в [справке OpenStack CLI](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/port.html).
+Для получения подробной информации о поддерживаемых параметрах воспользуйтесь одной из команд:
+
+```bash
+openstack port set --help
+```
+
+```bash
+openstack subnet unset --help
+```
 
 </tabpanel>
 </tabs>
@@ -339,7 +375,11 @@
    openstack port delete <имя или идентификатор порта>
    ```
 
-Подробная информация о команде и ее аргументах в [справке OpenStack CLI](https://docs.openstack.org/python-openstackclient/latest/cli/command-objects/port.html).
+Для получения подробной информации о поддерживаемых параметрах воспользуйтесь командой:
+
+```bash
+openstack port delete --help
+```
 
 </tabpanel>
 </tabs>
