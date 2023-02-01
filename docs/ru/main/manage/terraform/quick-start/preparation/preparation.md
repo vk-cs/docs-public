@@ -1,6 +1,44 @@
 ## Установка Terraform
 
-Для установки исполняемых файлов Terraform, используйте официальное [зеркало](https://hub.mcs.mail.ru/repository/terraform-binary/mirror/latest/) от VK Cloud.
+Для установки исполняемых файлов Terraform используйте официальное [зеркало](https://hub.mcs.mail.ru/repository/terraform-binary/mirror/latest/) от VK Cloud.
+
+## Настройка зеркала провайдера
+
+Создайте файл зеркала провайдера и разместите его в каталоге.
+
+<tabs>
+<tablist>
+<tab>Windows</tab>
+<tab>Другие ОС</tab>
+</tablist>
+<tabpanel>
+
+1. Создайте файл `terraform.rc`.
+1. Добавьте в него нижеприведенный код.
+1. Скопируйте файл в каталог `%APPDATA%`.
+1. Откройте каталог, вставив `%APPDATA%` в адресную строку проводника Windows.
+
+</tabpanel>
+<tabpanel>
+
+1. Создайте файл `.terraformrc`.
+1. Добавьте в него нижеприведенный код.
+1. Скопируйте файл в корень директории пользователя.
+
+</tabpanel>
+</tabs>
+
+```yaml
+provider_installation {
+    network_mirror {
+        url = "https://hub.mcs.mail.ru/repository/terraform-providers/"
+        include = ["vk-cs/*"]
+    }
+    direct {
+        exclude = ["vk-cs/*"]
+    }
+}
+```
 
 ## Файлы настройки провайдеров
 
