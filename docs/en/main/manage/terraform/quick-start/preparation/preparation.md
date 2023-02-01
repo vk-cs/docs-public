@@ -2,6 +2,44 @@
 
 To install Terraform binaries, use the official [mirror](https://hub.mcs.mail.ru/repository/terraform-binary/mirror/latest/) from VK Cloud.
 
+## Provider mirror installation
+
+Create a provider mirror file and paste it in the directory.
+
+<tabs>
+<tablist>
+<tab>Windows</tab>
+<tab>Other OS</tab>
+</tablist>
+<tabpanel>
+
+1. Create the `terraform.rc` file.
+1. Add the following code to it.
+1. Copy file to the `%APPDATA%` directory.
+1. Open the directory by inserting `%APPDATA%` into the address bar of Windows.
+
+</tabpanel>
+<tabpanel>
+
+1. Create the `.terraformrc` file.
+1. Add the following code to it.
+1. Copy the file to the root of the user directory.
+
+</tabpanel>
+</tabs>
+
+```yaml
+provider_installation {
+    network_mirror {
+        url = "https://hub.mcs.mail.ru/repository/terraform-providers/"
+        include = ["vk-cs/*"]
+    }
+    direct {
+        exclude = ["vk-cs/*"]
+    }
+}
+```
+
 ## Provider configuration files
 
 To get started with Terraform, create a `main.tf` file and describe the necessary terraform providers in it. This description tells Terraform where and with what credentials to connect to create the required resources.
