@@ -6,17 +6,17 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/additionals/special/1cgrm/1cgrm-about"
+                    "link": "docs/en/additionals/special/1cgrm/1cgrm-about"
                 },
                 {
-                    "link": "docs/en/main/additionals/special/1cgrm/1cgrm-rates",
+                    "link": "docs/en/additionals/special/1cgrm/1cgrm-rates",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/main/additionals/special/1cgrm/1cgrm-start"
+                    "link": "docs/en/additionals/special/1cgrm/1cgrm-start"
                 },
                 {
-                    "link": "docs/en/main/additionals/special/1cgrm/1cgrm-faq"
+                    "link": "docs/en/additionals/special/1cgrm/1cgrm-faq"
                 }
             ]
         }

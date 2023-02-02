@@ -6,13 +6,13 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/dbs/dbaas/dbaas-start"
+                    "link": "docs/en/dbs/dbaas/dbaas-start"
                 },
                 {
-                    "link": "docs/en/main/dbs/dbaas"
+                    "link": "docs/en/dbs/dbaas"
                 },
                 {
-                    "link": "docs/en/main/additionals/billing",
+                    "link": "docs/en/additionals/billing",
                     "hiddenForPartners": true
                 }
             ]
@@ -21,10 +21,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/dbs/dbaas/dbaas-start/db-connect"
+                    "link": "docs/en/dbs/dbaas/dbaas-start/db-connect"
                 },
                 {
-                    "link": "docs/en/main/dbs/dbaas/dbaas-start/db-cluster"
+                    "link": "docs/en/dbs/dbaas/dbaas-start/db-cluster"
                 }
             ]
         },
@@ -32,13 +32,13 @@
             "title": "MORE",
             "links": [
                 {
-                    "link": "docs/en/main/dbs/dbaas/db-replica/create-db-replica"
+                    "link": "docs/en/dbs/dbaas/db-replica/create-db-replica"
                 },
                 {
-                    "link": "docs/en/main/dbs/dbaas/db-backup"
+                    "link": "docs/en/dbs/dbaas/db-backup"
                 },
                 {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/en/additionals/start/user-account/quota-limits"
                 }
             ]
         }

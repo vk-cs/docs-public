@@ -6,16 +6,16 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/networks/vnet/networks/private-dns"
+                    "link": "docs/en/networks/vnet/networks/private-dns"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet/vpn/create-vpn"
+                    "link": "docs/en/networks/vnet/vpn/create-vpn"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet"
+                    "link": "docs/en/networks/vnet"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet/networks/create-net"
+                    "link": "docs/en/networks/vnet/networks/create-net"
                 }
             ]
         }

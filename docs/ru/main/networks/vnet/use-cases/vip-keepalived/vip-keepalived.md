@@ -12,7 +12,7 @@
 
 ## 1. Подготовительные шаги
 
-1. Убедитесь, что OpenStack CLI [установлен](/ru/main/base/account/project/cli/setup/) и вы можете [авторизоваться](/ru/main/base/account/project/cli/authorization/) в нем.
+1. Убедитесь, что OpenStack CLI [установлен](/ru/base/account/project/cli/setup/) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization/) в нем.
 
 1. Выберите подсеть, в которой будут размещены виртуальные машины и виртуальный IP-адрес. Они должны размещаться в одной подсети.
 
