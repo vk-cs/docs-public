@@ -6,16 +6,16 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/start"
+                    "link": "docs/ru/base/account/start"
                 },
                 {
-                    "link": "docs/ru/main/dbs/dbaas/dbaas-start"
+                    "link": "docs/ru/dbs/dbaas/dbaas-start"
                 },
                 {
-                    "link": "docs/ru/main/dbs/dbaas"
+                    "link": "docs/ru/dbs/dbaas"
                 },
                 {
-                    "link": "docs/ru/main/additionals/billing",
+                    "link": "docs/ru/additionals/billing",
                     "hiddenForPartners": true
                 }
             ]
@@ -24,10 +24,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/main/dbs/dbaas/dbaas-start/db-connect"
+                    "link": "docs/ru/dbs/dbaas/dbaas-start/db-connect"
                 },
                 {
-                    "link": "docs/ru/main/dbs/dbaas/dbaas-start/db-cluster"
+                    "link": "docs/ru/dbs/dbaas/dbaas-start/db-cluster"
                 }
             ]
         },
@@ -35,13 +35,13 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/dbs/dbaas/db-replica/create-db-replica"
+                    "link": "docs/ru/dbs/dbaas/db-replica/create-db-replica"
                 },
                 {
-                    "link": "docs/ru/main/dbs/dbaas/db-backup"
+                    "link": "docs/ru/dbs/dbaas/db-backup"
                 },
                 {
-                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/base/account/concepts/quotasandlimits"
                 }
             ]
         }

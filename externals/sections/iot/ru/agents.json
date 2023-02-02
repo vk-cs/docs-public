@@ -6,13 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/iot"
+                    "link": "docs/ru/additionals/iot"
                 },
                 {
-                    "link": "docs/ru/main/additionals/iot/agents"
+                    "link": "docs/ru/additionals/iot/agents"
                 },
                 {
-                    "link": "docs/ru/main/additionals/iot/agents/protocol"
+                    "link": "docs/ru/additionals/iot/agents/protocol"
                 }
             ]
         }

@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/iot"
+                    "link": "docs/ru/additionals/iot"
                 },
                 {
-                    "link": "docs/ru/main/additionals/iot/rules"
+                    "link": "docs/ru/additionals/iot/rules"
                 }
             ]
         },
@@ -17,16 +17,16 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/iot/rules/connectors"
+                    "link": "docs/ru/additionals/iot/rules/connectors"
                 },
                 {
-                    "link": "docs/ru/main/additionals/iot/rules/constants"
+                    "link": "docs/ru/additionals/iot/rules/constants"
                 },
                 {
-                    "link": "docs/ru/main/additionals/iot/rules/context"
+                    "link": "docs/ru/additionals/iot/rules/context"
                 },
                 {
-                    "link": "docs/ru/main/additionals/iot/rules/cron_context"
+                    "link": "docs/ru/additionals/iot/rules/cron_context"
                 }
             ]
         }
