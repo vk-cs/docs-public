@@ -6,13 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/start"
+                    "link": "docs/ru/base/account/start"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/vm-volumes"
+                    "link": "docs/ru/base/iaas/vm-volumes"
                 },
                 {
-                    "link": "docs/ru/main/additionals/billing",
+                    "link": "docs/ru/additionals/billing",
                     "hiddenForPartners": true
                 }
             ]
@@ -21,19 +21,19 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/iaas/vm-volumes/volume-create"
+                    "link": "docs/ru/base/iaas/vm-volumes/volume-create"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/vm-volumes/volume-resize"
+                    "link": "docs/ru/base/iaas/vm-volumes/volume-resize"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/vm-volumes/volume-convert"
+                    "link": "docs/ru/base/iaas/vm-volumes/volume-convert"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/vm-faq/faq-vm-backup"
+                    "link": "docs/ru/base/iaas/vm-faq/faq-vm-backup"
                 },
                 {
-                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/base/account/concepts/quotasandlimits"
                 }
             ]
         }

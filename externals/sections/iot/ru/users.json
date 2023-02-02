@@ -7,17 +7,17 @@
             "links": [
                 {
                     "link": {
-                        "link": "docs/ru/main/additionals/iot"
+                        "link": "docs/ru/additionals/iot"
                     }
                 },
                 {
                     "link": {
-                        "link": "docs/ru/main/additionals/iot/about-iot"
+                        "link": "docs/ru/additionals/iot/about-iot"
                     }
                 },
                 {
                     "link": {
-                        "link": "docs/ru/main/additionals/iot/registration"
+                        "link": "docs/ru/additionals/iot/registration"
                     }
                 }
             ]

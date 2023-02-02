@@ -6,13 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/iot"
+                    "link": "docs/ru/additionals/iot"
                 },
                 {
-                    "link": "docs/ru/main/additionals/iot/iot-start/create-device"
+                    "link": "docs/ru/additionals/iot/iot-start/create-device"
                 },
                 {
-                    "link": "docs/ru/main/additionals/iot/iot-start/connect-device"
+                    "link": "docs/ru/additionals/iot/iot-start/connect-device"
                 }
             ]
         }

@@ -6,14 +6,14 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/start"
+                    "link": "docs/ru/base/account/start"
                 },
                 {
-                    "link": "docs/ru/main/additionals/billing",
+                    "link": "docs/ru/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/main/base/s3/quick-start"
+                    "link": "docs/ru/base/s3/quick-start"
                 }
             ]
         },
@@ -21,16 +21,16 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/s3/quick-start/create-bucket"
+                    "link": "docs/ru/base/s3/quick-start/create-bucket"
                 },
                 {
-                    "link": "docs/ru/main/base/s3/dev/s3-rest-api/about-s3-api"
+                    "link": "docs/ru/base/s3/dev/s3-rest-api/about-s3-api"
                 },
                 {
-                    "link": "docs/ru/main/base/s3/dev/s3-sdk"
+                    "link": "docs/ru/base/s3/dev/s3-sdk"
                 },
                 {
-                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/base/account/concepts/quotasandlimits"
                 }
             ]
         }

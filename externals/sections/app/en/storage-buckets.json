@@ -6,11 +6,11 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/additionals/billing",
+                    "link": "docs/en/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/main/base/s3/quick-start"
+                    "link": "docs/en/base/s3/quick-start"
                 }
             ]
         },
@@ -18,16 +18,16 @@
             "title": "MORE",
             "links": [
                 {
-                    "link": "docs/en/main/base/s3/quick-start/create-bucket"
+                    "link": "docs/en/base/s3/quick-start/create-bucket"
                 },
                 {
-                    "link": "docs/en/main/base/s3/dev/s3-rest-api/about-s3-api"
+                    "link": "docs/en/base/s3/dev/s3-rest-api/about-s3-api"
                 },
                 {
-                    "link": "docs/en/main/base/s3/dev/s3-sdk"
+                    "link": "docs/en/base/s3/dev/s3-sdk"
                 },
                 {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/en/additionals/start/user-account/quota-limits"
                 }
             ]
         }
