@@ -1,0 +1,12 @@
+{
+    "title": "Cloud Voice",
+    "pageDescription": "Публичное API сервиса Cloud Voice.",
+    "shortDescription": "API для генерации токена и распознавания речи",
+    "metaTitle": "Cloud Voice - VK Cloud",
+    "metaDescription": "",
+    "sectionTitle": "Cloud Voice",
+    "markdown": "Публичное API сервиса Cloud Voice.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2
+  }
