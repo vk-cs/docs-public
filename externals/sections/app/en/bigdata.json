@@ -6,10 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/base/bigdata/bigdata-info/bigdata-architecture"
+                    "link": "docs/en/base/bigdata/bigdata-info/bigdata-architecture"
                 },
                 {
-                    "link": "docs/en/main/additionals/cases"
+                    "link": "docs/en/additionals/cases"
                 }
             ]
         },
@@ -17,10 +17,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/base/bigdata/bigdata-start"
+                    "link": "docs/en/base/bigdata/bigdata-start"
                 },
                 {
-                    "link": "docs/en/main/base/bigdata/bigdata-start/create-bigdata"
+                    "link": "docs/en/base/bigdata/bigdata-start/create-bigdata"
                 }
             ]
         },
@@ -28,13 +28,13 @@
             "title": "MORE",
             "links": [
                 {
-                    "link": "docs/en/main/base/bigdata"
+                    "link": "docs/en/base/bigdata"
                 },
                 {
-                    "link": "docs/en/main/base/bigdata/bigdata-scale"
+                    "link": "docs/en/base/bigdata/bigdata-scale"
                 },
                 {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/en/additionals/start/user-account/quota-limits"
                 }
             ]
         }

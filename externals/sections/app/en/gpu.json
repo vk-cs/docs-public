@@ -6,7 +6,7 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/ml/gpu/gpu-start/gpu-info"
+                    "link": "docs/en/ml/gpu/gpu-start/gpu-info"
                 }
             ]
         },
@@ -14,10 +14,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/ml/gpu/gpu-start/gpu-create"
+                    "link": "docs/en/ml/gpu/gpu-start/gpu-create"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-start"
+                    "link": "docs/en/base/iaas/vm-start"
                 }
             ]
         },
@@ -25,10 +25,10 @@
             "title": "MORE",
             "links": [
                 {
-                    "link": "docs/en/main/base/iaas/vm-faq"
+                    "link": "docs/en/base/iaas/vm-faq"
                 },
                 {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/en/additionals/start/user-account/quota-limits"
                 }
             ]
         }

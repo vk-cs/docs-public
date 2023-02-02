@@ -6,13 +6,13 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/manage/monitoring"
+                    "link": "docs/en/manage/monitoring"
                 },
                 {
-                    "link": "docs/en/main/manage/monitoring/monitoring-info/mon-architecture"
+                    "link": "docs/en/manage/monitoring/monitoring-info/mon-architecture"
                 },
                 {
-                    "link": "docs/en/main/manage/monitoring/monitoring-info/mon-agent-sw"
+                    "link": "docs/en/manage/monitoring/monitoring-info/mon-agent-sw"
                 }
             ]
         },
@@ -20,10 +20,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/manage/monitoring/monitoring-start/mon-setup-new"
+                    "link": "docs/en/manage/monitoring/monitoring-start/mon-setup-new"
                 },
                 {
-                    "link": "docs/en/main/manage/monitoring/monitoring-start/mon-setup-current"
+                    "link": "docs/en/manage/monitoring/monitoring-start/mon-setup-current"
                 }
             ]
         }

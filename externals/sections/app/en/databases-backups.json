@@ -6,13 +6,13 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/dbs/dbaas/db-backup"
+                    "link": "docs/en/dbs/dbaas/db-backup"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-backup"
+                    "link": "docs/en/base/iaas/vm-backup"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-faq/faq-vm-backup"
+                    "link": "docs/en/base/iaas/vm-faq/faq-vm-backup"
                 }
             ]
         }
