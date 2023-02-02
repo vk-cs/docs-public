@@ -1,12 +1,13 @@
 {
-    "title": "Cloud Logging",
-    "pageDescription": "",
-    "shortDescription": "Просмотр логов с помощью API",
-    "metaTitle": "Cloud Logging — VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Cloud Logging",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 8
-  }
+  "title": "Cloud Logging",
+  "pageDescription": "",
+  "shortDescription": "Просмотр логов с помощью API",
+  "metaTitle": "Cloud Logging — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Cloud Logging",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 8,
+  "uuid": "851591de-d4d7-4bda-a483-d33e45ea7f62"
+}
