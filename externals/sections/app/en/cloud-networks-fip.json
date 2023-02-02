@@ -6,7 +6,7 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/networks/vnet/networks"
+                    "link": "docs/en/networks/vnet/networks"
                 }
             ]
         },
@@ -14,22 +14,22 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/networks/vnet/networks/create-net"
+                    "link": "docs/en/networks/vnet/networks/create-net"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet/vnet-lb"
+                    "link": "docs/en/networks/vnet/vnet-lb"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet/vpn"
+                    "link": "docs/en/networks/vnet/vpn"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet/firewall"
+                    "link": "docs/en/networks/vnet/firewall"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet/networks/private-dns"
+                    "link": "docs/en/networks/vnet/networks/private-dns"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet/networks/publicdns"
+                    "link": "docs/en/networks/vnet/networks/publicdns"
                 }
             ]
         }

@@ -26,7 +26,7 @@ Url страниц генерируется на основе пути до па
 ### Страницы разделов
 
 Папки вложенные в папку main являются страницами разделов, разделы могут содержать любое количество подразделов или страниц статей.
-Пример страницы разделов [../docs/ru/main/bigdata](../docs/ru/main/bigdata), там же есть .meta.json
+Пример страницы разделов [../docs/ru/bigdata](../docs/ru/bigdata), там же есть .meta.json
 
 Описание свойств этого файла:
 
@@ -43,12 +43,12 @@ Url страниц генерируется на основе пути до па
 
 Если в папку не вложены другие папки (кроме папки assets), то страница считается статьей, такая папка кроме .meta.json должна содержать .md-файл с разметкой статьи, если в статье есть какие-то медиа-файлы, то можно создать папку assets и положить их туда.
 
-Пример статьи [../docs/ru/main//base/iaas/vm-volumes//volume-resize/](../docs/ru/main//base/iaas/vm-volumes//volume-resize/)
+Пример статьи [../docs/ru/base/iaas/vm-volumes/volume-resize/](../docs/ru/base/iaas/vm-volumes/volume-resize/)
 
 Важно, что путь до страницы в документации генерируется на основе файловой системы, т.е. статья
-[../docs/ru/main/base/iaas/vm-volumes/volume-resize/](../docs/ru/main/base/iaas/vm-volumes/volume-resize/)
+[../docs/ru/base/iaas/vm-volumes/volume-resize/](../docs/ru/base/iaas/vm-volumes/volume-resize/)
 
-будет доступна по адресу [mcs.mail.ru/docs/ru/main/base/iaas/vm-volumes/volume-resize](https://mcs.mail.ru/docs/ru/main/base/iaas/vm-volumes/volume-resize), а так же по более короткому варианту [mcs.mail.ru/docs/base/iaas/vm-volumes/volume-resize/](https://mcs.mail.ru/docs/ru/base/iaas/vm-volumes/volume-resize)
+будет доступна по адресу [mcs.mail.ru/docs/ru/base/iaas/vm-volumes/volume-resize](https://mcs.mail.ru/docs/ru/base/iaas/vm-volumes/volume-resize), а так же по более короткому варианту [mcs.mail.ru/docs/base/iaas/vm-volumes/volume-resize/](https://mcs.mail.ru/docs/ru/base/iaas/vm-volumes/volume-resize)
 
 ## Автосоздание редиректов
 
@@ -80,16 +80,16 @@ Url страниц генерируется на основе пути до па
         {
             "title": "Информация",
             "links": [
-                "docs/ru/main/additionals/start/get-started",
-                "docs/ru/main/networks/vnet",
+                "docs/ru/additionals/start/get-started",
+                "docs/ru/networks/vnet",
                 ...любое количество ссылок на страницы
             ]
         },
         {
             "title": "Продвинутые настройки",
             "links": [
-                "docs/ru/main/base/iaas/fs",
-                "docs/ru/main/additionals/mp"
+                "docs/ru/base/iaas/fs",
+                "docs/ru/additionals/mp"
                 ...может быть любое количество элементов
             ]
         }

@@ -6,17 +6,17 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/start"
+                    "link": "docs/ru/base/account/start"
                 },
                 {
-                    "link": "docs/ru/main/base/k8s"
+                    "link": "docs/ru/base/k8s"
                 },
                 {
-                    "link": "docs/ru/main/additionals/billing",
+                    "link": "docs/ru/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/base/account/concepts/quotasandlimits"
                 }
             ]
         },
@@ -24,13 +24,13 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/k8s/k8s-start/create-k8s"
+                    "link": "docs/ru/base/k8s/k8s-start/create-k8s"
                 },
                 {
-                    "link": "docs/ru/main/base/k8s/k8s-start/k8s-dashboard"
+                    "link": "docs/ru/base/k8s/k8s-start/k8s-dashboard"
                 },
                 {
-                    "link": "docs/ru/main/base/k8s/k8s-start/connect-k8s"
+                    "link": "docs/ru/base/k8s/k8s-start/connect-k8s"
                 }
             ]
         }

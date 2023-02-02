@@ -6,13 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/iot"
+                    "link": "docs/ru/additionals/iot"
                 },
                 {
-                    "link": "docs/ru/main/additionals/iot/rules"
+                    "link": "docs/ru/additionals/iot/rules"
                 },
                 {
-                    "link": "docs/ru/main/additionals/iot/rules/exporters"
+                    "link": "docs/ru/additionals/iot/rules/exporters"
                 }
             ]
         }
