@@ -30,7 +30,7 @@ Rates may vary depending on the region. To get pricing information, select a reg
 
 ### Billing
 
-The Billing page is the same for all regions. You can learn more in the article [“Billing”](/ru/main/additionals/billing).
+The Billing page is the same for all regions. You can learn more in the article [“Billing”](/ru/additionals/billing).
 
 ### Quotas
 

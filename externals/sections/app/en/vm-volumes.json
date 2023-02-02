@@ -6,10 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/base/iaas/vm-volumes"
+                    "link": "docs/en/base/iaas/vm-volumes"
                 },
                 {
-                    "link": "docs/en/main/additionals/billing",
+                    "link": "docs/en/additionals/billing",
                     "hiddenForPartners": true
                 }
             ]
@@ -18,16 +18,16 @@
             "title": "MORE",
             "links": [
                 {
-                    "link": "docs/en/main/base/iaas/vm-volumes/volume-create"
+                    "link": "docs/en/base/iaas/vm-volumes/volume-create"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-volumes/volume-resize"
+                    "link": "docs/en/base/iaas/vm-volumes/volume-resize"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-volumes/volume-convert"
+                    "link": "docs/en/base/iaas/vm-volumes/volume-convert"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-faq/faq-vm-backup"
+                    "link": "docs/en/base/iaas/vm-faq/faq-vm-backup"
                 }
             ]
         }
