@@ -13,3 +13,7 @@ Cloud Voice — сервис, который позволяет распозна
 [Распознавание речи](https://mcs.mail.ru/help/ru_RU/cloud-voice/speech-recognition)
 
 [Синтез речи](https://mcs.mail.ru/help/ru_RU/cloud-voice/text-to-speech)
+
+<!--Добавить ссылку на API в meta.json сервиса-->
+
+[API](../../../additionals/api/cloud-voice-api)

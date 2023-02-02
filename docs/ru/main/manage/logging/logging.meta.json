@@ -8,6 +8,11 @@
   "markdown": "Сервис для работы с логами пользовательских приложений на ВМ и в облаке VK Cloud. Сбор, хранение, чтение, отображение и обработка логов в едином интерфейсе в облаке.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null,
+  "infobarItems": [
+    {
+      "text": "Справка API",
+      "icon": "/docs/_docs/ru/main/manage/logging/assets/icon.svg",
+      "link": "../../../../additionals/api/logging"
+    }],  
   "uuid": "4271db39-4e48-4408-9f51-c69cfc6a4e8c"
 }
