@@ -6,11 +6,11 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/additionals/billing",
+                    "link": "docs/en/main/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/base/iaas/fs"
+                    "link": "docs/en/main/base/iaas/fs"
                 }
             ]
         }

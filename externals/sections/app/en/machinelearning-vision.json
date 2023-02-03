@@ -6,16 +6,16 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/ml/vision"
+                    "link": "docs/en/main/ml/vision"
                 },
                 {
-                    "link": "docs/en/ml/vision/vision-start"
+                    "link": "docs/en/main/ml/vision/vision-start"
                 },
                 {
-                    "link": "docs/en/ml/vision/vision-start/vision-rates"
+                    "link": "docs/en/main/ml/vision/vision-start/vision-rates"
                 },
                 {
-                    "link": "docs/en/ml/vision/manage-vision"
+                    "link": "docs/en/main/ml/vision/manage-vision"
                 }
             ]
         }

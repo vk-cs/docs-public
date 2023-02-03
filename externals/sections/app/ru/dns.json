@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/base/account/start"
+                    "link": "docs/ru/main/base/account/start"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/networks"
+                    "link": "docs/ru/main/networks/vnet/networks"
                 }
             ]
         },
@@ -17,22 +17,22 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/networks/vnet/networks/create-net"
+                    "link": "docs/ru/main/networks/vnet/networks/create-net"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/vnet-lb"
+                    "link": "docs/ru/main/networks/vnet/vnet-lb"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/vpn"
+                    "link": "docs/ru/main/networks/vnet/vpn"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/firewall"
+                    "link": "docs/ru/main/networks/vnet/firewall"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/networks/private-dns"
+                    "link": "docs/ru/main/networks/vnet/networks/private-dns"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/networks/publicdns"
+                    "link": "docs/ru/main/networks/vnet/networks/publicdns"
                 }
             ]
         }

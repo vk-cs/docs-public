@@ -6,10 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/networks/vnet/firewall"
+                    "link": "docs/en/main/networks/vnet/firewall"
                 },
                 {
-                    "link": "docs/en/networks/vnet"
+                    "link": "docs/en/main/networks/vnet"
                 }
             ]
         },
@@ -17,16 +17,16 @@
             "title": "MORE",
             "links": [
                 {
-                    "link": "docs/en/networks/vnet/networks/fip"
+                    "link": "docs/en/main/networks/vnet/networks/fip"
                 },
                 {
-                    "link": "docs/en/networks/vnet/vnet-lb/about-lb"
+                    "link": "docs/en/main/networks/vnet/vnet-lb/about-lb"
                 },
                 {
-                    "link": "docs/en/networks/vnet/networks/create-net"
+                    "link": "docs/en/main/networks/vnet/networks/create-net"
                 },
                 {
-                    "link": "docs/en/additionals/start/user-account/quota-limits"
+                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
                 }
             ]
         }

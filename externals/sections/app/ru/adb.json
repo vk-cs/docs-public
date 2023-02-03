@@ -6,16 +6,16 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/base/account/start"
+                    "link": "docs/ru/main/base/account/start"
                 },
                 {
-                    "link": "docs/ru/dbs/adb/adb-start"
+                    "link": "docs/ru/main/dbs/adb/adb-start"
                 },
                 {
-                    "link": "docs/ru/dbs/adb"
+                    "link": "docs/ru/main/dbs/adb"
                 },
                 {
-                    "link": "docs/ru/additionals/billing",
+                    "link": "docs/ru/main/additionals/billing",
                     "hiddenForPartners": true
                 }
             ]
@@ -24,13 +24,13 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/dbs/adb/adb-start/create-adb"
+                    "link": "docs/ru/main/dbs/adb/adb-start/create-adb"
                 },
                 {
-                    "link": "docs/ru/dbs/adb/adb-start/launch-adb"
+                    "link": "docs/ru/main/dbs/adb/adb-start/launch-adb"
                 },
                 {
-                    "link": "docs/ru/dbs/adb/adb-start/delete-adb"
+                    "link": "docs/ru/main/dbs/adb/adb-start/delete-adb"
                 }
             ]
         },
@@ -38,13 +38,13 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/dbs/dbaas/db-replica/create-db-replica"
+                    "link": "docs/ru/main/dbs/dbaas/db-replica/create-db-replica"
                 },
                 {
-                    "link": "docs/ru/dbs/dbaas/db-backup"
+                    "link": "docs/ru/main/dbs/dbaas/db-backup"
                 },
                 {
-                    "link": "docs/ru/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
                 }
             ]
         }
