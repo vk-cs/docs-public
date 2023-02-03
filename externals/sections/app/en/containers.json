@@ -6,14 +6,14 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/base/k8s"
+                    "link": "docs/en/main/base/k8s"
                 },
                 {
-                    "link": "docs/en/additionals/billing",
+                    "link": "docs/en/main/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/additionals/start/user-account/quota-limits"
+                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
                 }
             ]
         },
@@ -21,10 +21,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/base/k8s/k8s-start/create-k8s"
+                    "link": "docs/en/main/base/k8s/k8s-start/create-k8s"
                 },
                 {
-                    "link": "docs/en/base/k8s/k8s-start/k8s-dashboard"
+                    "link": "docs/en/main/base/k8s/k8s-start/k8s-dashboard"
                 }
             ]
         }

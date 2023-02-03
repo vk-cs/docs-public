@@ -6,10 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/manage/monitoring/monitoring-dash/mon-metrics"
+                    "link": "docs/en/main/manage/monitoring/monitoring-dash/mon-metrics"
                 },
                 {
-                    "link": "docs/en/manage/monitoring/monitoring-dash/mon-read-metrics"
+                    "link": "docs/en/main/manage/monitoring/monitoring-dash/mon-read-metrics"
                 }
             ]
         }

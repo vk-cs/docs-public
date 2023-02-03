@@ -6,13 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/base/account/start"
+                    "link": "docs/ru/main/base/account/start"
                 },
                 {
-                    "link": "docs/ru/base/bigdata/bigdata-info/bigdata-architecture"
+                    "link": "docs/ru/main/base/bigdata/bigdata-info/bigdata-architecture"
                 },
                 {
-                    "link": "docs/ru/additionals/cases"
+                    "link": "docs/ru/main/additionals/cases"
                 }
             ]
         },
@@ -20,10 +20,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/base/bigdata/bigdata-start"
+                    "link": "docs/ru/main/base/bigdata/bigdata-start"
                 },
                 {
-                    "link": "docs/ru/base/bigdata/bigdata-start/create-bigdata"
+                    "link": "docs/ru/main/base/bigdata/bigdata-start/create-bigdata"
                 }
             ]
         },
@@ -31,13 +31,13 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/base/bigdata"
+                    "link": "docs/ru/main/base/bigdata"
                 },
                 {
-                    "link": "docs/ru/base/bigdata/bigdata-scale"
+                    "link": "docs/ru/main/base/bigdata/bigdata-scale"
                 },
                 {
-                    "link": "docs/ru/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
                 }
             ]
         }
