@@ -8,6 +8,7 @@
   "markdown": "",
   "icon": "",
   "infobarItems": null,
+  "disableGithub": true,
   "weight": 2,
   "uuid": "dad7c7fe-9825-406e-bd91-1b1c796d5b7d"
 }
