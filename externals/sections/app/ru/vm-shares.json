@@ -6,14 +6,14 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/base/account/start"
+                    "link": "docs/ru/main/base/account/start"
                 },
                 {
-                    "link": "docs/ru/additionals/billing",
+                    "link": "docs/ru/main/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/base/iaas/fs"
+                    "link": "docs/ru/main/base/iaas/fs"
                 }
             ]
         }

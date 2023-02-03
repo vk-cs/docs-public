@@ -6,19 +6,19 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/base/account/start"
+                    "link": "docs/ru/main/base/account/start"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/networks/private-dns"
+                    "link": "docs/ru/main/networks/vnet/networks/private-dns"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/vpn/create-vpn"
+                    "link": "docs/ru/main/networks/vnet/vpn/create-vpn"
                 },
                 {
-                    "link": "docs/ru/networks/vnet"
+                    "link": "docs/ru/main/networks/vnet"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/networks/create-net"
+                    "link": "docs/ru/main/networks/vnet/networks/create-net"
                 }
             ]
         }
