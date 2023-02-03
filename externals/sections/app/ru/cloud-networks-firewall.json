@@ -6,13 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/base/account/start"
+                    "link": "docs/ru/main/base/account/start"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/firewall"
+                    "link": "docs/ru/main/networks/vnet/firewall"
                 },
                 {
-                    "link": "docs/ru/networks/vnet"
+                    "link": "docs/ru/main/networks/vnet"
                 }
             ]
         },
@@ -20,16 +20,16 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/networks/vnet/networks/fip"
+                    "link": "docs/ru/main/networks/vnet/networks/fip"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/vnet-lb/about-lb"
+                    "link": "docs/ru/main/networks/vnet/vnet-lb/about-lb"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/networks/create-net"
+                    "link": "docs/ru/main/networks/vnet/networks/create-net"
                 },
                 {
-                    "link": "docs/ru/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
                 }
             ]
         }

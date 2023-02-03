@@ -6,20 +6,20 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/base/iaas/vm-images/custom-image"
+                    "link": "docs/ru/main/base/iaas/vm-images/custom-image"
                 },
                 {
-                    "link": "docs/ru/base/account/start"
+                    "link": "docs/ru/main/base/account/start"
                 },
                 {
-                    "link": "docs/ru/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
                 },
                 {
-                    "link": "docs/ru/additionals/billing",
+                    "link": "docs/ru/main/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/additionals/billing/operations/payment",
+                    "link": "docs/ru/main/additionals/billing/operations/payment",
                     "hiddenForPartners": true
                 }
             ]
@@ -28,19 +28,19 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/base/iaas/vm-interfaces/vm-create-cli"
+                    "link": "docs/ru/main/base/iaas/vm-interfaces/vm-create-cli"
                 },
                 {
-                    "link": "docs/ru/base/iaas/vm-volumes/volume-sla"
+                    "link": "docs/ru/main/base/iaas/vm-volumes/volume-sla"
                 },
                 {
-                    "link": "docs/ru/base/iaas/vm-start/manage-vm"
+                    "link": "docs/ru/main/base/iaas/vm-start/manage-vm"
                 },
                 {
-                    "link": "docs/ru/base/iaas/fs"
+                    "link": "docs/ru/main/base/iaas/fs"
                 },
                 {
-                    "link": "docs/ru/additionals/mp"
+                    "link": "docs/ru/main/additionals/mp"
                 }
             ]
         },
@@ -48,22 +48,22 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/base/account/concepts/rolesandpermissions"
+                    "link": "docs/ru/main/base/account/concepts/rolesandpermissions"
                 },
                 {
-                    "link": "docs/ru/dbs/dbaas/manage-db/backup-db"
+                    "link": "docs/ru/main/dbs/dbaas/manage-db/backup-db"
                 },
                 {
-                    "link": "docs/ru/networks/vnet"
+                    "link": "docs/ru/main/networks/vnet"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/vpn"
+                    "link": "docs/ru/main/networks/vnet/vpn"
                 },
                 {
-                    "link": "docs/ru/base/account/start"
+                    "link": "docs/ru/main/base/account/start"
                 },
                 {
-                    "link": "docs/ru/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
                 }
             ]
         }

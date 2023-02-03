@@ -6,10 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/additionals/mp/mp-info/about-mp"
+                    "link": "docs/en/main/additionals/mp/mp-info/about-mp"
                 },
                 {
-                    "link": "docs/en/additionals/cases"
+                    "link": "docs/en/main/additionals/cases"
                 }
             ]
         },
@@ -17,28 +17,28 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/additionals/mp"
+                    "link": "docs/en/main/additionals/mp"
                 },
                 {
-                    "link": "docs/en/additionals/mp/mp-faq/mp-connect-faq"
+                    "link": "docs/en/main/additionals/mp/mp-faq/mp-connect-faq"
                 },
                 {
-                    "link": "docs/en/additionals/mp/mp-apps/mp-gitlab-ce"
+                    "link": "docs/en/main/additionals/mp/mp-apps/mp-gitlab-ce"
                 },
                 {
-                    "link": "docs/en/additionals/mp/mp-apps/mp-docker-ce"
+                    "link": "docs/en/main/additionals/mp/mp-apps/mp-docker-ce"
                 },
                 {
-                    "link": "docs/en/additionals/mp/mp-apps/mp-lemp-stack"
+                    "link": "docs/en/main/additionals/mp/mp-apps/mp-lemp-stack"
                 },
                 {
-                    "link": "docs/en/additionals/mp/mp-apps/mp-lamp-stack"
+                    "link": "docs/en/main/additionals/mp/mp-apps/mp-lamp-stack"
                 },
                 {
-                    "link": "docs/en/additionals/mp/mp-apps/mp-jenkins"
+                    "link": "docs/en/main/additionals/mp/mp-apps/mp-jenkins"
                 },
                 {
-                    "link": "docs/en/additionals/mp/mp-apps/mp-docker-registry"
+                    "link": "docs/en/main/additionals/mp/mp-apps/mp-docker-registry"
                 }
             ]
         }
