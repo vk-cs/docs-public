@@ -155,7 +155,7 @@ openstack port create --help
 
 1. Убедитесь, что OpenStack CLI [установлен](../../../../base/account/project/cli/setup) и вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в нем.
 
-1. [Получите имя или идентификатор](#posmotret-spisok-portov-i-informaciyu-o-nih) нужного порта.
+1. [Получите имя или идентификатор](#prosmotr-spiska-portov-i-informacii-o-nih) нужного порта.
 
 1. Выполните команду:
 
@@ -208,7 +208,7 @@ openstack port set --help
 
 1. Убедитесь, что OpenStack CLI [установлен](../../../../base/account/project/cli/setup) и вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в нем.
 
-1. [Получите имя или идентификатор](#posmotret-spisok-portov-i-informaciyu-o-nih) нужного порта.
+1. [Получите имя или идентификатор](#prosmotr-spiska-portov-i-informacii-o-nih) нужного порта.
 
 1. Выполните команду:
 
@@ -253,7 +253,7 @@ openstack port set --help
 
 1. Убедитесь, что OpenStack CLI [установлен](../../../../base/account/project/cli/setup) и вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в нем.
 
-1. [Получите имя или идентификатор](#posmotret-spisok-portov-i-informaciyu-o-nih) нужного порта.
+1. [Получите имя или идентификатор](#prosmotr-spiska-portov-i-informacii-o-nih) нужного порта.
 
 1. Измените параметры порта:
 
@@ -296,7 +296,7 @@ openstack port set --help
 
 1. Убедитесь, что OpenStack CLI [установлен](../../../../base/account/project/cli/setup) и вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в нем.
 
-1. [Получите имя или идентификатор](#posmotret-spisok-portov-i-informaciyu-o-nih) нужного порта.
+1. [Получите имя или идентификатор](#prosmotr-spiska-portov-i-informacii-o-nih) нужного порта.
 
 1. Чтобы добавить один IP-адрес источника, выполните команду:
 
@@ -367,7 +367,7 @@ openstack subnet unset --help
 
 1. Убедитесь, что OpenStack CLI [установлен](../../../../base/account/project/cli/setup) и вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в нем.
 
-1. [Получите имя или идентификатор](#posmotret-spisok-portov-i-informaciyu-o-nih) нужного порта.
+1. [Получите имя или идентификатор](#prosmotr-spiska-portov-i-informacii-o-nih) нужного порта.
 
 1. Выполните команду:
 
