@@ -45,8 +45,6 @@ openstack network create <название сети>
 openstack network list
 ```
 
-Результат:
-
 </tabpanel>
 </tabs>
 
@@ -86,7 +84,7 @@ openstack network list
 </tablist>
 <tabpanel>
 
-Чтобы создать облачную сеть:
+Чтобы создать подсеть:
 
 1. В личном кабинете перейдите в раздел **Виртуальные сети** → **Сети**.
 2. Нажмите на имя облачной сети.
