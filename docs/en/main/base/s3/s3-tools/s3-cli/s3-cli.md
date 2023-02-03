@@ -12,7 +12,7 @@ The S3 CLI is available in two versions, and the information in this guide appli
 - Version 2.x is the current generally available version of the S3 CLI for use in production environments.
 - Version 1.x is the previous version of the AWS CLI available for backward compatibility.
 
-Full information about the set of commands and additional CLI settings is available on [the developer's website](https://docs.aws.amazon.com/cli/index.html) .
+Full information about the set of commands and additional CLI settings is available on [the developer's website](https://docs.aws.amazon.com/cli/index.html).
 
 ## CLI installation
 
@@ -87,9 +87,7 @@ Access keys consist of an access key identifier and a secret access key, which a
 
 The only time the private access key can be viewed or downloaded is when the keys are generated. It will be impossible to restore them later. However, you can create new access keys at any time.
 
-In the VK Cloud panel, in the "Accounts" menu of the "Object Storage" service, you need to add an account, and save the received keys for future use:
-
-![](./assets/1598234121428-1598234121428.png)
+In the VK Cloud panel, in the "Accounts" menu of the "Object Storage" service, you need to add an account, and save the received keys for future use.
 
 ## CLI setup
 
@@ -104,7 +102,13 @@ When you enter this command, the AWS CLI prompts for four pieces of information:
 - Access key identifier - the received key identifier data is used when adding an account.
 - Secret access key - the received secret key data is used when adding an account.
 - AWS region - the region where the S3 service is located, by default it is ru-msk.
-- Output Format - Determines how to format the output of the command being used. If no output format is specified, it will use json by default. Available options are json, yaml, text, and table.
+- Output Format - Determines how to format the output of the command being used. If no output format is specified, it will use `json` by default. [Available options](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html):
+
+  - `json` – The output is formatted as a JSON string.
+  - `yaml` – The output is formatted as a YAML string.
+  - `yaml-stream` – The output is streamed and formatted as a YAML string. Streaming allows for faster handling of large data types.
+  - `text` – The output is formatted as multiple lines of tab-separated string values. This can be useful to pass the output to a text processor, like grep, sed, or awk.
+  - `table` – The output is formatted as a table using the characters `+|-` to form the cell borders. It typically presents the information in a "human-friendly" format that is much easier to read than the others, but not as programmatically useful.
 
 The AWS CLI stores this information in a profile (set of settings) called default in the credentials file. By default, the information in this profile is used when you run an AWS CLI command that does not explicitly specify the profile to use.
 
@@ -113,10 +117,10 @@ The AWS CLI stores this information in a profile (set of settings) called defaul
 When using the AWS CLI to work with Object Storage, there are a few things to keep in mind:
 
 - The AWS CLI treats VK Cloud S3 as a hierarchical file system and object keys are in the form of a file path.
-- When running the aws command to work with VK Cloud S3, the --endpoint-url parameter is required because the client is configured by default to work with Amazon servers.
-- Bucket creation should be done using the appropriate --endpoint-url - [http://hb.bizmrg.com](http://hb.bizmrg.com) for the Hotbox bucket and [http://ib.bizmrg.com](http://ib.bizmrg.com) for the Icebox bucket.
+- When running the aws command to work with VK Cloud S3, the `--endpoint-url` parameter is required because the client is configured by default to work with Amazon servers.
+- Bucket creation should be done using the appropriate `--endpoint-url` - [http://hb.bizmrg.com](http://hb.bizmrg.com) for the Hotbox bucket and [http://ib.bizmrg.com](http://ib.bizmrg.com) for the Icebox bucket.
 - Any operations cannot be performed using the CLI with the Backup bucket class.
-- When using the storage classes --storage-class, the STANDARD values for Hotbox and STANDARD_IA for Icebox apply.
+- When using the storage classes `--storage-class`, the `STANDARD` values for Hotbox and `STANDARD_IA` for Icebox apply.
 - When working in MacOS, in some cases it is required to run the following view:
 
 ```
