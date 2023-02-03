@@ -6,14 +6,14 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/base/s3/intro"
+                    "link": "docs/en/main/base/s3/intro"
                 },
                 {
-                    "link": "docs/en/base/s3/rates-and-limits/s3-rates",
+                    "link": "docs/en/main/base/s3/rates-and-limits/s3-rates",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/base/s3/quick-start"
+                    "link": "docs/en/main/base/s3/quick-start"
                 }
             ]
         },
@@ -21,10 +21,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/base/s3/quick-start/create-bucket"
+                    "link": "docs/en/main/base/s3/quick-start/create-bucket"
                 },
                 {
-                    "link": "docs/en/base/s3/access-management/s3-account"
+                    "link": "docs/en/main/base/s3/access-management/s3-account"
                 }
             ]
         },
@@ -32,16 +32,16 @@
             "title": "MORE",
             "links": [
                 {
-                    "link": "docs/en/base/s3/objects/s3-lifecycle"
+                    "link": "docs/en/main/base/s3/objects/s3-lifecycle"
                 },
                 {
-                    "link": "docs/en/base/s3/dev/s3-rest-api/bucket-api"
+                    "link": "docs/en/main/base/s3/dev/s3-rest-api/bucket-api"
                 },
                 {
-                    "link": "docs/en/base/s3/dev/s3-rest-api/object-api"
+                    "link": "docs/en/main/base/s3/dev/s3-rest-api/object-api"
                 },
                 {
-                    "link": "docs/en/base/s3/dev/s3-rest-api/acl-api"
+                    "link": "docs/en/main/base/s3/dev/s3-rest-api/acl-api"
                 }
             ]
         }
