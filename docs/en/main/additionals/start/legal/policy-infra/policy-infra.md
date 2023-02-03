@@ -1,27 +1,27 @@
-This document is an official offer of Mail.ru LLC (hereinafter referred to as the "Contractor") to conclude a user agreement (hereinafter referred to as the "Agreement") with you (hereinafter referred to as the "Customer") on the provision of services for providing access to the Infra virtual infrastructure Service within the Platform "VK Cloud" (hereinafter referred to as the "Platform"), on the terms set out in this Agreement, which is available on the Internet at: [https://mcs.mail.ru/infra](https://mcs.mail.ru/infra) .
+This document is an official offer of Mail.ru LLC (hereinafter referred to as the "Contractor") to conclude a user agreement (hereinafter referred to as the "Agreement") with you (hereinafter referred to as the "Customer") on the provision of services for providing access to the Infra virtual infrastructure Service within the Platform "VK Cloud" (hereinafter referred to as the "Platform"), on the terms set out in this Agreement, which is available on the Internet at: [https://mcs.mail.ru/infra](https://mcs.mail.ru/infra).
 
 ## 1\. Terms and definitions
 
-**Site** - an Internet site located at [https://mcs.mail.ru/](https://mcs.mail.ru/) , providing the Customer with access to the Service. The Contractor posts on the Site information that is binding on the Customer.
+**Site** — an Internet site located at [https://mcs.mail.ru/](https://mcs.mail.ru/) , providing the Customer with access to the Service. The Contractor posts on the Site information that is binding on the Customer.
 
 **The VK Cloud** **Platform (Platform)** is a computer program available to the Customer through the Website and operated by the Contractor, which provides the Customer with access to the selected Services.
 
-**Virtual Infrastructure Service (Service)** - a service of the Contractor, known under the name "Virtual Infrastructure Service" (Infra), consisting in presenting the Customer with the possibility of creating virtual servers and virtual disks on the Contractor's servers.
+**Virtual Infrastructure Service (Service)** — a service of the Contractor, known under the name "Virtual Infrastructure Service" (Infra), consisting in presenting the Customer with the possibility of creating virtual servers and virtual disks on the Contractor's servers.
 
-**Content** - electronic documents, graphics, photographs, scripts, texts, videos, music, sounds, computer programs and other objects (files) uploaded by the Customer posted on the Service.
+**Content** — electronic documents, graphics, photographs, scripts, texts, videos, music, sounds, computer programs and other objects (files) uploaded by the Customer posted on the Service.
 
-**Prohibited Content** - any Content described in clause 2.8. of this Agreement, as well as other materials, the use of which is prohibited by the Applicable Rules.
+**Prohibited Content** — any Content described in clause 2.8. of this Agreement, as well as other materials, the use of which is prohibited by the Applicable Rules.
 
-**Service unavailability (Downtime)** - the time interval from the moment the Customer sent a message to the Contractor's support service by e-mail to [support@mcs.mail.ru](mailto:support@mcs.mail.ru) or through the feedback form in the personal account, the fact of which was subsequently confirmed by the Contractor, and the moment the Service was resumed after the completion of the restoration work by the Contractor.
+**Service unavailability (Downtime)** — the time interval from the moment the Customer sent a message to the Contractor's support service by e-mail to [support@mcs.mail.ru](mailto:support@mcs.mail.ru) or through the feedback form in the personal account, the fact of which was subsequently confirmed by the Contractor, and the moment the Service was resumed after the completion of the restoration work by the Contractor.
 
-**Compensation** - the amount to be credited to the Customer's Personal account in the case of Downtime in the manner prescribed by this Agreement. Compensation does not imply payment of funds to the Customer.
+**Compensation** — the amount to be credited to the Customer's Personal account in the case of Downtime in the manner prescribed by this Agreement. Compensation does not imply payment of funds to the Customer.
 
 **The reporting period** is a calendar month.
 
-**Applicable rules** - the rules for using the Contractor's Service, available on the Internet at: https://mcs.mail.ru/infra, containing the conditions for access and use of the Service and set out in the following documents:
+**Applicable rules** — the rules for using the Contractor's Service, available on the Internet at: https://mcs.mail.ru/infra, containing the conditions for access and use of the Service and set out in the following documents:
 
-- Terms of use of the VK Cloud Platform ( [https://help.mail.ru/mcs/legal/termofuse](https://help.mail.ru/mcs/legal/termofuse) );
-- Contractor's privacy policy ( [https://help.mail.ru/mcs/legal/privacy/](https://help.mail.ru/mcs/legal/privacy) ).
+- Terms of use of the VK Cloud Platform ([https://help.mail.ru/mcs/legal/termofuse](https://help.mail.ru/mcs/legal/termofuse));
+- Contractor's privacy policy ([https://help.mail.ru/mcs/legal/privacy/](https://help.mail.ru/mcs/legal/privacy)).
 
 In the event that this Agreement uses terms that are not defined in Section 2 of this Agreement, the definitions of these terms of the Applicable Rules are used.
 
@@ -84,9 +84,9 @@ The Contractor has the right to monitor the Content in order to verify that the 
 
 4.1. The use of the Services is paid. The Contractor, in order to determine the cost of using the Service, sets the price and the corresponding list of services in accordance with the Tariffs.
 
-4.2. The tariff is set by the Contractor and communicated to the Customer. The current Tariffs are posted on the following pages: [https://mcs.mail.ru/infra/](https://mcs.mail.ru/infra/) , [https://mcs.mail.ru/containers/](https://mcs.mail.ru/containers/) [https://mcs.mail.ru/bigdata/](https://mcs.mail.ru/bigdata/) . The tariff can be changed by the Contractor unilaterally, which is brought to the attention of the Customer by updating the information on the pages: [https://mcs.mail.ru/infra/](https://mcs.mail.ru/infra/) , [https://mcs.mail.ru/containers/](https://mcs.mail.ru/containers/) [https: // mcs.mail.ru/bigdata/](https://mcs.mail.ru/bigdata/) . The Contractor can unilaterally change the Tariffs that are applied from the Reporting period following the period in which the Tariffs were changed.
+4.2. The tariff is set by the Contractor and communicated to the Customer. The current Tariffs are posted on the following pages: [https://mcs.mail.ru/infra/](https://mcs.mail.ru/infra/), [https://mcs.mail.ru/containers/](https://mcs.mail.ru/containers/) [https://mcs.mail.ru/bigdata/](https://mcs.mail.ru/bigdata/). The tariff can be changed by the Contractor unilaterally, which is brought to the attention of the Customer by updating the information on the pages: [https://mcs.mail.ru/infra/](https://mcs.mail.ru/infra/), [https://mcs.mail.ru/containers/](https://mcs.mail.ru/containers/), [https://mcs.mail.ru/bigdata/](https://mcs.mail.ru/bigdata/). The Contractor can unilaterally change the Tariffs that are applied from the Reporting period following the period in which the Tariffs were changed.
 
-In the absence of funds on the Personal balance (account) of the Customer to write off the cost of services for providing access to the Service (hereinafter - Zero balance), the Customer's access to the Service and files is terminated.
+4.3. In the absence of funds on the Personal balance (account) of the Customer to write off the cost of services for providing access to the Service (hereinafter — Zero balance), the Customer's access to the Service and files is terminated.
 
 4.4. If the Customer has a Zero balance, the Contractor has the right to delete files that occupy disk space with prior notification of the Customer by e-mail to which the Project is registered.
 
@@ -94,7 +94,7 @@ In the absence of funds on the Personal balance (account) of the Customer to wri
 
 ## 5\. Responsibility of the Parties
 
-5.1. The extent of the Contractor's liability is limited solely by the relevant Applicable rules posted on the Site in the section [https://help.mail.ru/mcs/legal/](https://help.mail.ru/mcs/legal/) .
+5.1. The extent of the Contractor's liability is limited solely by the relevant Applicable rules posted on the Site in the section [https://help.mail.ru/mcs/legal/](https://help.mail.ru/mcs/legal/).
 
 5.2. The lost profit of the Customer is not subject to compensation by the Contractor.
 
@@ -114,9 +114,9 @@ In the absence of funds on the Personal balance (account) of the Customer to wri
 
 6.5. The Contractor reserves the right to interrupt the work of the Service to carry out the necessary maintenance work, including on weekdays. Such cases will not be considered interruptions in the provision of services if the Contractor notifies the Customer in advance 24 (twenty four) hours before the start of preventive work, entailing interruptions in the operation of the Service, by publishing relevant information on the Site (including the duration of preventive work). The time of unavailability of the Service associated with the maintenance work is not subject to compensation according to the rules of clause 6.6. Agreements.
 
-6.6. The unavailability of the Service ("Downtime") is defined as the time interval from the moment the Customer sends a message to the Contractor's support service through the feedback form available in the Personal Account containing a notification about the unavailability of the Service, or by e-mail to the address: [support@mcs.mail. ru](mailto:support@mcs.mail.ru) , the fact of which was subsequently confirmed by the Contractor, and the moment the Service was resumed after the completion of the restoration work by the Contractor. If the Contractor has his own data on the beginning of Downtime, indicating an earlier start time of the Service's unavailability than the time of sending an e-mail message to [support@mcs.mail.ru](mailto:support@mcs.mail.ru) or the feedback form in his personal account, the Contractor may use such data. Disagreements about the start and end times of Downtime are resolved through negotiations between the Parties. If Downtime began in one Reporting Period and ended in the next Reporting Period, then the unavailability of the Service fully refers to the Reporting Period in which most of Downtime took place.
+6.6. The unavailability of the Service ("Downtime") is defined as the time interval from the moment the Customer sends a message to the Contractor's support service through the feedback form available in the Personal Account containing a notification about the unavailability of the Service, or by e-mail to the address: [support@mcs.mail. ru](mailto:support@mcs.mail.ru), the fact of which was subsequently confirmed by the Contractor, and the moment the Service was resumed after the completion of the restoration work by the Contractor. If the Contractor has his own data on the beginning of Downtime, indicating an earlier start time of the Service's unavailability than the time of sending an e-mail message to [support@mcs.mail.ru](mailto:support@mcs.mail.ru) or the feedback form in his personal account, the Contractor may use such data. Disagreements about the start and end times of Downtime are resolved through negotiations between the Parties. If Downtime began in one Reporting Period and ended in the next Reporting Period, then the unavailability of the Service fully refers to the Reporting Period in which most of Downtime took place.
 
-6.7 If the Service is unavailable, the Contractor undertakes to transfer Compensation to the Customer (credited to the Personal Balance (account)), the amount of which is determined on the basis of the table below (hereinafter - Table No. 1):
+6.7 If the Service is unavailable, the Contractor undertakes to transfer Compensation to the Customer (credited to the Personal Balance (account)), the amount of which is determined on the basis of the table below (hereinafter — Table No. 1):
 
 <table border="0" style="box-sizing: border-box; outline: 0px; border: 1px solid rgb(221, 221, 221); text-align: left; border-collapse: collapse; width: 739.2px;"><tbody><tr><td><strong>Availability time (in%) *</strong></td><td><strong><strong>Unavailability time (min. Or hour) in one Reporting period in total</strong></strong></td><td><strong>Compensation Amount</strong></td></tr><tr><td>99.95% and above</td><td><p>less than 22 minutes</p></td><td><p>not paid</p></td></tr><tr><td>99.9% -99.95%</td><td>from 22 to 45 minutes</td><td>3% of the amount debited from the Personal Balance for the Reporting Period in which Downtime was</td></tr><tr><td>99.0% - 99.9%</td><td>from 45 minutes to 7.5 hours</td><td>10% of the amount debited from the Personal Balance for the Reporting Period in which Downtime was</td></tr><tr><td>95.0% -99.0%</td><td>from 7.5 hours to 36 hours</td><td>20% of the amount debited from the Personal Balance for the Reporting Period in which Downtime was</td></tr><tr><td>90.0% - 95.0%</td><td>from 36 hours to 73 hours</td><td>25% of the amount debited from the Personal Balance for the Reporting Period in which Downtime was</td></tr><tr><td>less than 90%</td><td>more than 73 hours</td><td>50% of the amount debited from the Personal Balance for the Reporting Period in which Downtime was</td></tr></tbody></table>
 
