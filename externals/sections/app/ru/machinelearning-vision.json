@@ -16,6 +16,9 @@
                 },
                 {
                     "link": "docs/ru/main/ml/vision/manage-vision"
+                },
+                {
+                    "link": "docs/ru/main/additionals/api/vision-api"
                 }
             ]
         }
