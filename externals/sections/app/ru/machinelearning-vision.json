@@ -16,7 +16,12 @@
                 },
                 {
                     "link": "docs/ru/main/ml/vision/manage-vision"
-                },
+                }
+            ]
+        },
+        {
+            "title": "API",
+            "links": [
                 {
                     "link": "docs/ru/main/additionals/api/vision-api"
                 }
