@@ -39,7 +39,7 @@ yum install python-openstackclient
 </tabpanel>
 <tabpanel>
 
-Before you start, you should install the [Python3](https://www.python.org/downloads/window) and [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
+Before you start, you should install the [Python3](https://www.python.org/downloads/windows/) and [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
 
 Next, run the command at the command prompt:
 
