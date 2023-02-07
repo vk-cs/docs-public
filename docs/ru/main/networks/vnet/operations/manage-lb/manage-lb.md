@@ -5,6 +5,7 @@
 <tabs>
 <tablist>
 <tab>Личный кабинет</tab>
+<tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
@@ -19,6 +20,54 @@
    Откроется страница с подробной информацией о нем. На этой странице можно также [редактировать](#redaktirovanie-balansirovshchika-nagruzki) параметры балансировщика.
 
 </tabpanel>
+<tabpanel>
+
+1. Убедитесь, что:
+
+   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
+   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+
+1. Чтобы посмотреть список балансировщиков нагрузки и их идентификаторы, выполните команду:
+
+   ```bash
+   openstack loadbalancer list
+   ```
+
+1. Чтобы посмотреть детальную информацию о балансировщике нагрузки, выполните команду:
+
+   ```bash
+   openstack loadbalancer show <идентификатор балансировщика>
+   ```
+
+   Будет выведена общая информация о балансировщике нагрузки и идентификаторы:
+
+   - `vip_port_id` — идентификатор порта, который используется в качестве Virtual IP на балансировщике нагрузки. На этот порт можно назначить плавающий IP-адрес.
+
+   - `listeners` — список идентификаторов listener-объектов. Эти объекты слушают входящие соединения к балансировщику нагрузки и служат точкой входа для трафика.
+
+   - `pools` — список идентификаторов пулов (pools). Эти объекты служат для группировки конечных потребителей трафика. Потребители выступают участниками (members) пула. Трафик от listener-объекта балансируется между несколькими участниками, входящими в пул, сконфигурированный для listener-объекта.
+
+1. Чтобы посмотреть настройки listener-объектов и их связь с пулами, выполните команду:
+
+   ```bash
+   openstack loadbalancer listener show <идентификатор listener-объекта>
+   ```
+
+1. Чтобы посмотреть настройки пула и список участников этого пула, выполните команду:
+
+   ```bash
+   openstack loadbalancer pool show <идентификатор пула>
+   ```
+
+1. Чтобы посмотреть настройки отдельного участника из пула, выполните команду:
+
+   ```bash
+   openstack loadbalancer member show <идентификатор пула> <идентификатор участника>
+   ```
+
+   Для участника будет выведена информация, в том числе порт назначения трафика.
+
+</tabpanel>
 </tabs>
 
 ## Добавление балансировщика нагрузки
@@ -26,6 +75,7 @@
 <tabs>
 <tablist>
 <tab>Личный кабинет</tab>
+<tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
@@ -56,6 +106,47 @@
 1. Нажмите кнопку **Добавить балансировщик**.
 
 </tabpanel>
+<tabpanel>
+
+1. Убедитесь, что:
+
+   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
+   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+
+1. Выберите сеть и подсеть, в которых будет размещен балансировщик. [Получите идентификатор](../manage-net#prosmotr-spiska-setey-i-podsetey--a-takzhe-informacii-o-nih) подсети.
+
+1. Создайте балансировщик:
+
+   <tabs>
+   <tablist>
+   <tab>Linux/macOS (bash, zsh)</tab>
+   <tab>Windows (PowerShell)</tab>
+   </tablist>
+   <tabpanel>
+
+   ```bash
+   openstack loadbalancer create \
+     --name <имя балансировщика> \
+     --vip-subnet-id <идентификатор подсети>
+   ```
+
+   </tabpanel>
+   <tabpanel>
+
+   ```powershell
+   openstack loadbalancer create `
+     --name <имя балансировщика> `
+     --vip-subnet-id <идентификатор подсети>
+   ```
+
+   </tabpanel>
+   </tabs>
+
+1. (Опционально) [назначьте балансировщику внешний IP-адрес](#upravlenie-publichnymi-ip-adresami). Через этот адрес он будет доступен из интернета. В противном случае балансировщик будет выступать в качестве внутреннего балансировщика нагрузки.
+
+   Адрес требуется назначить, если планируется размещать за балансировщиком сервисы, которые должны быть доступны из интернета. Назначить адрес можно только при условии, что сеть для подсети, выбранной ранее, находится за маршрутизатором, который имеет доступ в интернет.
+
+</tabpanel>
 </tabs>
 
 ## Редактирование имени балансировщика нагрузки
@@ -63,6 +154,7 @@
 <tabs>
 <tablist>
 <tab>Личный кабинет</tab>
+<tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
@@ -83,6 +175,41 @@
    1. Нажмите кнопку **Переименовать**.
 
 </tabpanel>
+<tabpanel>
+
+1. Убедитесь, что:
+
+   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
+   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+
+1. [Получите идентификатор](#prosmotr-spiska-balansirovshchikov-nagruzki-i-informacii-o-nih) нужного балансировщика нагрузки.
+
+1. Измените имя балансировщика:
+
+   <tabs>
+   <tablist>
+   <tab>Linux/macOS (bash, zsh)</tab>
+   <tab>Windows (PowerShell)</tab>
+   </tablist>
+   <tabpanel>
+
+   ```bash
+   openstack loadbalancer <идентификатор балансировщика> \
+     --name <новое имя>
+   ```
+
+   </tabpanel>
+   <tabpanel>
+
+   ```powershell
+   openstack loadbalancer <идентификатор балансировщика> `
+     --name <новое имя>
+   ```
+
+   </tabpanel>
+   </tabs>
+
+</tabpanel>
 </tabs>
 
 ## Управление публичными IP-адресами
@@ -94,6 +221,7 @@
 <tabs>
 <tablist>
 <tab>Личный кабинет</tab>
+<tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
@@ -112,6 +240,17 @@
 1. Нажмите кнопку **Подтвердить**.
 
 </tabpanel>
+<tabpanel>
+
+1. Убедитесь, что:
+
+   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
+   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+
+1. [Получите идентификатор порта](../manage-ports#prosmotr-spiska-portov-i-informacii-o-nih) с Virtual IP для нужного балансировщика нагрузки.
+1. [Привяжите плавающий IP-адрес](../manage-floating-ip#privyazka-plavayushchego-ip-adresa) к порту с этим идентификатором.
+
+</tabpanel>
 </tabs>
 
 ### Отвязать публичный IP-адрес
@@ -121,6 +260,7 @@
 <tabs>
 <tablist>
 <tab>Личный кабинет</tab>
+<tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
@@ -138,6 +278,17 @@
 1. Нажмите кнопку **Подтвердить**.
 
 </tabpanel>
+<tabpanel>
+
+1. Убедитесь, что:
+
+   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
+   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+
+1. [Получите идентификатор порта](../manage-ports#prosmotr-spiska-portov-i-informacii-o-nih) с Virtual IP для нужного балансировщика нагрузки.
+1. [Отвяжите плавающий IP-адрес](../manage-floating-ip#otvyazka-plavayushchego-ip-adresa) от порта с этим идентификатором.
+
+</tabpanel>
 </tabs>
 
 ## Управление правилами балансировки
@@ -145,6 +296,7 @@
 <tabs>
 <tablist>
 <tab>Личный кабинет</tab>
+<tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
@@ -220,6 +372,197 @@
    - **Путь запроса**: путь, по которому надо обратиться для проверки доступности.
 
 </tabpanel>
+<tabpanel>
+
+<info>
+
+Здесь приведены только основные аргументы команд. Подробнее о командах и их аргументах читайте в справке OpenStack CLI:
+
+```bash
+openstack loadbalancer --help
+openstack loadbalancer <команда> --help
+```
+
+</info>
+
+1. Убедитесь, что:
+
+   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
+   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+
+1. Чтобы создать правило балансировки:
+
+   1. [Получите идентификатор балансировщика нагрузки](#prosmotr-spiska-balansirovshchikov-nagruzki-i-informacii-o-nih), для которого нужно создать правило.
+
+   1. Создайте пул, в котором будут размещены потребители трафика:
+
+      <tabs>
+      <tablist>
+      <tab>Linux/macOS (bash, zsh)</tab>
+      <tab>Windows (PowerShell)</tab>
+      </tablist>
+      <tabpanel>
+
+      ```bash
+      openstack loadbalancer pool create \
+        --loadbalancer <идентификатор балансировщика> \
+        --name <имя пула> \
+        --protocol <протокол назначения> \
+        --lb-algorithm <алгоритм балансировки>
+      ```
+
+      </tabpanel>
+      <tabpanel>
+
+      ```powershell
+      openstack loadbalancer pool create `
+        --loadbalancer <идентификатор балансировщика> `
+        --name <имя пула> `
+        --protocol <протокол назначения> `
+        --lb-algorithm <алгоритм балансировки>
+      ```
+
+      </tabpanel>
+      </tabs>
+
+      Запишите идентификатор созданного пула (`id`).
+
+   1. Определите IP-адреса виртуальных машин, которые будут участниками (members) пула. Также [определите идентификатор](../manage-net#prosmotr-spiska-setey-i-podsetey--a-takzhe-informacii-o-nih) подсети, в которой находятся виртуальные машины.
+
+      Эти виртуальные машины должны быть либо размещены в подсети, где находится балансировщик, для которого создается правило балансировки, либо доступны из этой подсети.
+
+   1. Для каждой такой виртуальной машины создайте member-объект, который будет участником созданного пула:
+
+      <tabs>
+      <tablist>
+      <tab>Linux/macOS (bash, zsh)</tab>
+      <tab>Windows (PowerShell)</tab>
+      </tablist>
+      <tabpanel>
+
+      ```bash
+      openstack loadbalancer member create <идентификатор пула> \
+        --name <имя участника> \
+        --address <IP-адрес виртуальной машины> \
+        --subnet-id <идентификатор подсети> \
+        --protocol-port <номер порта назначения>
+      ```
+
+      </tabpanel>
+      <tabpanel>
+
+      ```powershell
+      openstack loadbalancer member create <идентификатор пула> `
+        --name <имя участника> `
+        --address <IP-адрес виртуальной машины> `
+        --subnet-id <идентификатор подсети> `
+        --protocol-port <номер порта назначения>
+      ```
+
+      </tabpanel>
+      </tabs>
+
+      <warn>
+
+      Все member-объекты в рамках одного пула должны использовать один и тот же порт.
+
+      </warn>
+
+   1. Создайте для пула healthcheck-объект. Он будет проверять состояние и доступность участников (members) пула.
+
+      <tabs>
+      <tablist>
+      <tab>Linux/macOS (bash, zsh)</tab>
+      <tab>Windows (PowerShell)</tab>
+      </tablist>
+      <tabpanel>
+
+      ```bash
+      openstack loadbalancer healthmonitor create <идентификатор пула> \
+        --name <имя healthcheck-объекта> \
+        --delay <задержка, сек> \
+        --timeout <таймаут, сек> \
+        --max-retries <количество успешных попыток> \
+        --max-retries-down <количество неуспешных попыток> \
+        --type <тип проверки>
+      ```
+
+      </tabpanel>
+      <tabpanel>
+
+      ```powershell
+      openstack loadbalancer healthmonitor create <идентификатор пула> `
+        --name <имя healthcheck-объекта> `
+        --delay <задержка, сек> `
+        --timeout <таймаут, сек> `
+        --max-retries <количество успешных попыток> `
+        --max-retries-down <количество неуспешных попыток> `
+        --type <тип проверки>
+      ```
+
+      </tabpanel>
+      </tabs>
+
+   1. Создайте listener-объект, который будет обрабатывать входящие соединения:
+
+      <tabs>
+      <tablist>
+      <tab>Linux/macOS (bash, zsh)</tab>
+      <tab>Windows (PowerShell)</tab>
+      </tablist>
+      <tabpanel>
+
+      ```bash
+      openstack loadbalancer listener create <идентификатор балансировщика> \
+        --name <имя listener-объекта> \
+        --protocol <протокол балансировки> \
+        --default-pool <идентификатор пула> \
+        --protocol-port <номер порта>
+      ```
+
+      </tabpanel>
+      <tabpanel>
+
+      ```powershell
+      openstack loadbalancer listener create <идентификатор балансировщика> `
+        --name <имя listener-объекта> `
+        --protocol <протокол балансировки> `
+        --default-pool <идентификатор пула> `
+        --protocol-port <номер порта>
+      ```
+
+      </tabpanel>
+      </tabs>
+
+1. Чтобы применить (`set`) нужные настройки к объектам, которые входят в правило балансировки, или отменить настройки (`unset`), используйте соответствующие команды (например, `openstack loadbalancer pool set`).
+
+1. Чтобы удалить правило балансировки:
+
+   1. Найдите идентификатор нужного listener-объекта.
+
+   1. Определите идентификатор пула, используемого этим listener-объектом:
+
+      1. Выполните команду:
+
+         ```bash
+         openstack loadbalancer listener show <идентификатор listener-объекта>
+         ```
+
+      1. Идентификатор пула будет содержаться в поле `default_pool_id`.
+
+   1. Удалите listener-объект:
+
+      ```bash
+      openstack loadbalancer listener delete <идентификатор listener-объекта>
+      ```
+
+   1. Удалите пул:
+
+      ```bash
+      openstack loadbalancer pool delete <идентификатор пула>
+      ```
+
+</tabpanel>
 </tabs>
 
 ## Удаление балансировщика нагрузки
@@ -227,6 +570,7 @@
 <tabs>
 <tablist>
 <tab>Личный кабинет</tab>
+<tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
@@ -243,6 +587,22 @@
    - Раскройте меню балансировщика и выберите пункт **Удалить балансировщик**.
 
 1. Подтвердите удаление балансировщика.
+
+</tabpanel>
+<tabpanel>
+
+1. Убедитесь, что:
+
+   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
+   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+
+1. [Получите идентификатор](#prosmotr-spiska-balansirovshchikov-nagruzki-i-informacii-o-nih) балансировщика нагрузки.
+
+1. Удалите балансировщик:
+
+   ```bash
+   openstack loadbalancer delete <идентификатор балансировщика>
+   ```
 
 </tabpanel>
 </tabs>
