@@ -29,7 +29,7 @@ The Terraform language is declarative; it describes the intended goal, not the s
 
 Usually in the configuration are used:
 
-- `terraform and required_providers` — Terraform providers required for operation. More details in the section [Preparation for work](../../quick-start/preparation/).
+- `terraform and required_providers` — Terraform providers required for operation. More details in the section [Quick start](../../quick-start).
 - `resource "resource_type" "resource_name" {}` — describes the [resource](https://www.terraform.io/language/resources/syntax) being created, such as a network, subnet, Kubernetes cluster, or database cluster.
 - `data "data_type" "data_name"` — allows you to use [data](https://www.terraform.io/language/data-sources) specified outside the Terraform configuration that exists in the cloud or locally. For example, VM configuration, cluster template/version, etc.
 - `variable "image_id" {}` — [input variables](https://www.terraform.io/language/values/variables). Used to move the parameters of the created resources outside the main configuration.

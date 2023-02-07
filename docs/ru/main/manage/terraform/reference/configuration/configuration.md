@@ -29,7 +29,7 @@ resource "vkcs_kubernetes_cluster" "mycluster" {
 
 Обычно в конфигурации используются:
 
-- `terraform и required_providers` — необходимые для работы Terraform-провайдеры. Подробнее в разделе [Подготовка к работе](../../quick-start/preparation/).
+- `terraform и required_providers` — необходимые для работы Terraform-провайдеры. Подробнее в разделе [Быстрый старт](../../quick-start/).
 - `resource "resource_type" "resource_name" {}` — описывает создаваемый [ресурс](https://www.terraform.io/language/resources/syntax), например, сеть, подсеть, кластер Kubernetes или кластер базы данных.
 - `data "data_type" "data_name"` — позволяет использовать [данные](https://www.terraform.io/language/data-sources), указанные вне конфигурации Terraform, которые существуют в облаке или локально. Например, конфигурацию ВМ, шаблон/версию кластера и т.д.
 - `variable "image_id" {}` — [входные переменные](https://www.terraform.io/language/values/variables). Используются для вынесения параметров создаваемых ресурсов вне основной конфигурации.
