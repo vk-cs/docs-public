@@ -1,6 +1,6 @@
 ## How to start using Terraform
 
-1. [Install Terraform and configure the provider](../../../../../manage/terraform/quick-start/preparation).
+1. [Install Terraform and configure the provider](../../../../../manage/terraform/quick-start).
 1. [Create](../../create-cluster/create-terraform/) a new cluster with one or more worker node groups.
 1. Manage the created resources using Terraform.
 

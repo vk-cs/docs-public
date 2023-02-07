@@ -12,7 +12,7 @@
 
 1. Ознакомьтесь с [особенностями использования Terraform](../../helpers/terraform-howto/) в сервисе контейнеров.
 
-1. [Установите Terraform и настройте провайдер](../../../../../manage/terraform/quick-start/preparation/), если этого еще не сделано.
+1. [Установите Terraform и настройте провайдер](../../../../../manage/terraform/quick-start/), если этого еще не сделано.
 
 1. [Установите OpenStack CLI](../../../../../base/account/project/cli/setup/) и [пройдите авторизацию](../../../../../base/account/project/cli/authorization/), если этого еще не сделано.
 

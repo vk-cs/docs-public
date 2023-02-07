@@ -1,6 +1,6 @@
 <warn>
 
-Прежде всего убедитесь, что вы [установили Terraform](../../quick-start/preparation) и [создали файл main.tf](../../quick-start/configuration) с необходимыми провайдерами.
+Прежде всего убедитесь, что вы [установили Terraform](../../quick-start) и [создали файл main.tf](../../quick-start/configuration) с необходимыми провайдерами.
 
 </warn>
 
