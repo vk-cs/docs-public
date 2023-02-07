@@ -1,13 +1,13 @@
 {
   "title": "FAQ",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "FAQ - VK Cloud",
+  "pageDescription": "Frequently asked questions.",
+  "shortDescription": "Frequently asked questions",
+  "metaTitle": "FAQ — VK Cloud",
   "metaDescription": "How do I contact support? Technical support can be contacted through the following communication channels: Channel\nInformation\nWorking hours mail support@m",
   "sectionTitle": "FAQ",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
-  "weight": 2,
+  "weight": 9,
   "uuid": "4809fc3b-1228-43ea-a4d0-3c2014cc060e"
 }
