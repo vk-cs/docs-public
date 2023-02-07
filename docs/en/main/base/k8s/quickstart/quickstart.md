@@ -149,6 +149,8 @@ In the next steps, replace these values with those relevant to your cluster.
    1. Select the **Kubernetes Administrator** role from the drop-down list.
    1. Save your changes.
 
+1. [Activate API access](https://mcs.mail.ru/docs/en/base/account/project/api/api-access#activate-api-access) for this user.
+
 1. Get kubeconfig for the cluster in [VK Cloud personal account](https://mcs.mail.ru/app/):
 
    1. Go to **Containers → Kubernetes Clusters**.
