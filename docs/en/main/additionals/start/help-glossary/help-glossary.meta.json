@@ -1,13 +1,13 @@
 {
   "title": "Terminology",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Terminology - VK Cloud",
+  "pageDescription": "Terms specific to cloud infrastructure.",
+  "shortDescription": "Terms specific to cloud infrastructure",
+  "metaTitle": "Terminology — VK Cloud",
   "metaDescription": "There are many cloud-specific terms that are often poorly defined. This article provides some details on terminology aspects as well as some concepts for b",
   "sectionTitle": "Terminology",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
-  "weight": 3,
+  "weight": 1,
   "uuid": "6b71ccab-d440-4758-aa1c-fc6023f198f0"
 }
