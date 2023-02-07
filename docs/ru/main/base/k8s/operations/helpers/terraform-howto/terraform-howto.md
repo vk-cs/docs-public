@@ -1,6 +1,6 @@
 ## Как начать пользоваться Terraform
 
-1. [Установите Terraform и настройте провайдер](../../../../../manage/terraform/quick-start/preparation).
+1. [Установите Terraform и настройте провайдер](../../../../../manage/terraform/quick-start).
 1. [Создайте](../../create-cluster/create-terraform/) новый кластер с одной или несколькими группами worker-узлов.
 1. Управляйте созданными ресурсами с помощью Terraform.
 

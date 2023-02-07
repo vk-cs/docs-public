@@ -10,7 +10,7 @@ It is also possible to create a cluster [via VK Cloud personal account](../creat
 
 1. Familiarize yourself with [Terraform features](../../helpers/terraform-howto/) in the container service.
 
-1. [Install Terraform and configure the provider](../../../../../manage/terraform/quick-start/preparation/) if not already done.
+1. [Install Terraform and configure the provider](../../../../../manage/terraform/quick-start) if not already done.
 
 1. [Install the OpenStack CLI](../../../../account/project/cli/setup/) and [authorize](../../../../account/project/cli/authorization/), if not already done.
 
