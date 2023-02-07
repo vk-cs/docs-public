@@ -12,5 +12,6 @@
 - manila – Shared file systems API файлового хранилища
 - neutron – API сетей
 - nova – API облачных вычислений (ВМ) и расширений
+- octavia — API балансировщика нагрузки
 - sahara – API обработки больших данных
 - trove – API баз данных

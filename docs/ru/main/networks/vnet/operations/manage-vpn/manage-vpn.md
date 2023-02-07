@@ -22,7 +22,10 @@
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-neutronclient`. Также проверьте, что вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+1. Убедитесь, что:
+
+   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-neutronclient`.
+   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
 1. Чтобы посмотреть список VPN-туннелей, выполните команду:
 
@@ -196,7 +199,10 @@
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-neutronclient`. Также проверьте, что вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+1. Убедитесь, что:
+
+   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-neutronclient`.
+   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
 1. Настройте IKE:
 
@@ -210,33 +216,42 @@
       openstack vpn ike policy show <идентификатор политики>
       ```
 
-      Запишите идентификатор политики, которая будет использоваться VPN-туннелем.
+      Запишите идентификатор политики (`id`), которая будет использоваться VPN-туннелем.
 
    1. Если подходящей IKE-политики на предыдущем шаге не нашлось, создайте ее:
 
-      - Linux/macOS (bash, zsh)
+      <tabs>
+      <tablist>
+      <tab>Linux/macOS (bash, zsh)</tab>
+      <tab>Windows (PowerShell)</tab>
+      </tablist>
+      <tabpanel>
 
-        ```bash
-        openstack vpn ike policy create <имя политики> \
-          --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> \
-          --auth-algorithm <Алгоритм авторизации: sha1, sha256> \
-          --encryption-algorithm <Алгоритм шифрования: 3des, aes-128, aes-192, aes-256> \
-          --ike-version <Версия IKE: v1, v2> \
-          --pfs <Группа Диффи-Хеллмана: group5, group2, group14>
-        ```
+      ```bash
+      openstack vpn ike policy create <имя политики> \
+        --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> \
+        --auth-algorithm <Алгоритм авторизации: sha1, sha256> \
+        --encryption-algorithm <Алгоритм шифрования: 3des, aes-128, aes-192, aes-256> \
+        --ike-version <Версия IKE: v1, v2> \
+        --pfs <Группа Диффи-Хеллмана: group5, group2, group14>
+      ```
 
-      - Windows (PowerShell)
+      </tabpanel>
+      <tabpanel>
 
-        ```powershell
-        openstack vpn ike policy create <имя политики> `
-          --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> `
-          --auth-algorithm <Алгоритм авторизации: sha1, sha256> `
-          --encryption-algorithm <Алгоритм шифрования: 3des, aes-128, aes-192, aes-256> `
-          --ike-version <Версия IKE: v1, v2> `
-          --pfs <Группа Диффи-Хеллмана: group5, group2, group14>
-        ```
+      ```powershell
+      openstack vpn ike policy create <имя политики> `
+        --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> `
+        --auth-algorithm <Алгоритм авторизации: sha1, sha256> `
+        --encryption-algorithm <Алгоритм шифрования: 3des, aes-128, aes-192, aes-256> `
+        --ike-version <Версия IKE: v1, v2> `
+        --pfs <Группа Диффи-Хеллмана: group5, group2, group14>
+      ```
 
-      После создания будет выведена информация о созданном объекте, включающая его идентификатор. Запишите идентификатор политики, которая будет использоваться VPN-туннелем.
+      </tabpanel>
+      </tabs>
+
+      После создания будет выведена информация о созданном объекте, включающая его идентификатор. Запишите идентификатор политики (`id`), которая будет использоваться VPN-туннелем.
 
 1. Настройте IPsec:
 
@@ -254,25 +269,34 @@
 
    1. Если подходящей IPsec-политики на предыдущем шаге не нашлось, создайте ее:
 
-      - Linux/macOS (bash, zsh)
+      <tabs>
+      <tablist>
+      <tab>Linux/macOS (bash, zsh)</tab>
+      <tab>Windows (PowerShell)</tab>
+      </tablist>
+      <tabpanel>
 
-        ```bash
-        openstack vpn ipsec policy create <имя политики> \
-          --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> \
-          --auth-algorithm <Алгоритм авторизации: sha1, sha256> \
-          --encryption-algorithm <Алгоритм шифрования: 3des, aes-128, aes-192, aes-256> \
-          --pfs <Группа Диффи-Хеллмана: group5, group2, group14>
-        ```
+      ```bash
+      openstack vpn ipsec policy create <имя политики> \
+        --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> \
+        --auth-algorithm <Алгоритм авторизации: sha1, sha256> \
+        --encryption-algorithm <Алгоритм шифрования: 3des, aes-128, aes-192, aes-256> \
+        --pfs <Группа Диффи-Хеллмана: group5, group2, group14>
+      ```
 
-      - Windows (PowerShell)
+      </tabpanel>
+      <tabpanel>
 
-        ```powershell
-        openstack vpn ipsec policy create <имя политики> `
-          --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> `
-          --auth-algorithm <Алгоритм авторизации: sha1, sha256> `
-          --encryption-algorithm <Алгоритм шифрования: 3des, aes-128, aes-192, aes-256> `
-          --pfs <Группа Диффи-Хеллмана: group5, group2, group14>
-        ```
+      ```powershell
+      openstack vpn ipsec policy create <имя политики> `
+        --lifetime units=<единицы измерения, по умолчанию seconds>,value=<время жизни ключа, по умолчанию 3600> `
+        --auth-algorithm <Алгоритм авторизации: sha1, sha256> `
+        --encryption-algorithm <Алгоритм шифрования: 3des, aes-128, aes-192, aes-256> `
+        --pfs <Группа Диффи-Хеллмана: group5, group2, group14>
+      ```
+
+      </tabpanel>
+      </tabs>
 
       После создания будет выведена информация о созданном объекте, включающая его идентификатор. Запишите идентификатор политики, которая будет использоваться VPN-туннелем.
 
@@ -285,7 +309,7 @@
       ```
 
       ```bash
-      openstack router show <идентификатор роутера>
+      openstack router show <идентификатор марщрутизатора>
       ```
 
       Запишите идентификатор маршрутизатора, чьи подсети нужно сделать доступными через VPN-туннель.
@@ -294,21 +318,30 @@
 
    1. Создайте VPN-сервис, использующий этот маршрутизатор:
 
-      - Linux/macOS (bash, zsh)
+      <tabs>
+      <tablist>
+      <tab>Linux/macOS (bash, zsh)</tab>
+      <tab>Windows (PowerShell)</tab>
+      </tablist>
+      <tabpanel>
 
-        ```bash
-        openstack vpn service create <имя VPN-сервиса> \
-          --router <идентификатор маршрутизатора, полученный на предыдущем шаге> \
-          --enable
-        ```
+      ```bash
+      openstack vpn service create <имя VPN-сервиса> \
+        --router <идентификатор маршрутизатора, полученный на предыдущем шаге> \
+        --enable
+      ```
 
-      - Windows (PowerShell)
+      </tabpanel>
+      <tabpanel>
 
-        ```powershell
-        openstack vpn service create <имя VPN-сервиса> `
-          --router <идентификатор маршрутизатора, полученный на предыдущем шаге> `
-          --enable
-        ```
+      ```powershell
+      openstack vpn service create <имя VPN-сервиса> `
+        --router <идентификатор маршрутизатора, полученный на предыдущем шаге> `
+        --enable
+      ```
+
+      </tabpanel>
+      </tabs>
 
       После создания будет выведена информация о созданном объекте, включающая его идентификатор. Запишите идентификатор VPN-сервиса, который будет использоваться VPN-туннелем.
 
@@ -333,107 +366,114 @@
 
    1. Если подходящей локальной endpoint-группы не нашлось, создайте ее:
 
-      - Linux/macOS (bash, zsh)
+      <tabs>
+      <tablist>
+      <tab>Linux/macOS (bash, zsh)</tab>
+      <tab>Windows (PowerShell)</tab>
+      </tablist>
+      <tabpanel>
 
-        ```bash
-        openstack vpn endpoint group create <имя локальной endpoint-группы> \
-          --type subnet \
-          --value <идентификатор подсети платформы VK Cloud, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> \
-          ...
-          --value <идентификатор дополнительной подсети>
-        ```
+      ```bash
+      openstack vpn endpoint group create <имя локальной endpoint-группы> \
+        --type subnet \
+        --value <идентификатор подсети, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> \
+        ...
+        --value <идентификатор дополнительной подсети>
+      ```
 
-      - Windows (PowerShell)
+      </tabpanel>
+      <tabpanel>
 
-        ```powershell
-        openstack vpn endpoint group create <имя локальной endpoint-группы> `
-          --type subnet `
-          --value <идентификатор подсети платформы VK Cloud, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> `
-          ...
-          --value <идентификатор дополнительной подсети>
-        ```
+      ```powershell
+      openstack vpn endpoint group create <имя локальной endpoint-группы> `
+        --type subnet `
+        --value <идентификатор подсети, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> `
+        ...
+        --value <идентификатор дополнительной подсети>
+      ```
+
+      </tabpanel>
+      </tabs>
 
       После создания будет выведена информация о созданном объекте, включающая его идентификатор. Запишите идентификатор локальной endpoint-группы, которая будет использоваться VPN-туннелем.
 
    1. Если подходящей удаленной endpoint-группы не нашлось, создайте ее:
 
-      - Linux/macOS (bash, zsh)
+      <tabs>
+      <tablist>
+      <tab>Linux/macOS (bash, zsh)</tab>
+      <tab>Windows (PowerShell)</tab>
+      </tablist>
+      <tabpanel>
 
-        ```bash
-        openstack vpn endpoint group create <имя удаленной endpoint-группы> \
-          --type cidr \
-          --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" \
-          ...
-          --value "<дополнительная удаленная подсеть>"
-        ```
+      ```bash
+      openstack vpn endpoint group create <имя удаленной endpoint-группы> \
+        --type cidr \
+        --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" \
+        ...
+        --value "<дополнительная удаленная подсеть>"
+      ```
 
-      - Windows (PowerShell)
+      </tabpanel>
+      <tabpanel>
 
-        ```powershell
-        openstack vpn endpoint group create <имя удаленной endpoint-группы> `
-          --type cidr `
-          --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" `
-          ...
-          --value "<дополнительная удаленная подсеть>"
-        ```
+      ```powershell
+      openstack vpn endpoint group create <имя удаленной endpoint-группы> `
+        --type cidr `
+        --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" `
+        ...
+        --value "<дополнительная удаленная подсеть>"
+      ```
+
+      </tabpanel>
+      </tabs>
 
       После создания будет выведена информация о созданном объекте, включающая его идентификатор. Запишите идентификатор удаленной endpoint-группы, которая будет использоваться VPN-туннелем.
 
 1. Создайте VPN-туннель:
 
-   - Linux/macOS (bash, zsh)
+   <tabs>
+   <tablist>
+   <tab>Linux/macOS (bash, zsh)</tab>
+   <tab>Windows (PowerShell)</tab>
+   </tablist>
+   <tabpanel>
 
-     ```bash
-     openstack vpn ipsec site connection create <имя VPN-туннеля> \
-       --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <таймаут проверки> \
-       --initiator <поведение при установке IPsec-соединения: bi-directional, response-only> \
-       --peer-address "<адрес пира VPN>" \
-       --peer-id "<идентификатор пира VPN>" \
-       --ikepolicy <идентификатор IKE-политики> \
-       --ipsecpolicy <идентификатор IPsec-политики> \
-       --vpnservice <идентификатор VPN-сервиса> \
-       --local-endpoint-group <идентификатор локальной endpoint-группы> \
-       --peer-endpoint-group идентификатор удаленной endpoint-группы \
-       --psk "ключ PSK" \
-       --enable
-     ```
+   ```bash
+   openstack vpn ipsec site connection create <имя VPN-туннеля> \
+     --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <таймаут проверки> \
+     --initiator <поведение при установке IPsec-соединения: bi-directional, response-only> \
+     --peer-address "<адрес пира VPN>" \
+     --peer-id "<идентификатор пира VPN>" \
+     --ikepolicy <идентификатор IKE-политики> \
+     --ipsecpolicy <идентификатор IPsec-политики> \
+     --vpnservice <идентификатор VPN-сервиса> \
+     --local-endpoint-group <идентификатор локальной endpoint-группы> \
+     --peer-endpoint-group <идентификатор удаленной endpoint-группы> \
+     --psk "<ключ PSK>" \
+     --enable
+   ```
   
-   - Windows (PowerShell)
+   </tabpanel>
+   <tabpanel>
 
-     ```powershell
-     openstack vpn ipsec site connection create <имя VPN-туннеля> `
-       --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <таймаут проверки> `
-       --initiator <поведение при установке IPsec-соединения> `
-       --peer-address "<адрес пира VPN>" `
-       --peer-id "<идентификатор пира VPN>" `
-       --ikepolicy <идентификатор IKE-политики> `
-       --ipsecpolicy <идентификатор IPsec-политики> `
-       --vpnservice <идентификатор VPN-сервиса> `
-       --local-endpoint-group <идентификатор локальной endpoint-группы> `
-       --peer-endpoint-group идентификатор удаленной endpoint-группы `
-       --psk "ключ PSK" `
-       --enable
-     ```
+   ```powershell
+   openstack vpn ipsec site connection create <имя VPN-туннеля> `
+     --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <таймаут проверки> `
+     --initiator <поведение при установке IPsec-соединения> `
+     --peer-address "<адрес пира VPN>" `
+     --peer-id "<идентификатор пира VPN>" `
+     --ikepolicy <идентификатор IKE-политики> `
+     --ipsecpolicy <идентификатор IPsec-политики> `
+     --vpnservice <идентификатор VPN-сервиса> `
+     --local-endpoint-group <идентификатор локальной endpoint-группы> `
+     --peer-endpoint-group <идентификатор удаленной endpoint-группы> `
+     --psk "<ключ PSK>" `
+     --enable
+   ```
 
-   Здесь:
-
-   - `--dpd` — настройки обнаружения недоступности удаленного пира (Dead Peer Detection, DPD):
-
-     - `action` — определяет поведение платформы VK Cloud, если удаленный пир недоступен:
-
-       - `hold` (по умолчанию) — при обнаружении недоступности IPsec-соединение разрывается. Соединение может быть переустановлено только удаленным пиром.
-       - `clear` — при обнаружении недоступности IPsec-соединение разрывается. Соединение не будет переустановлено, даже если удаленный пир будет пытаться это сделать.
-       - `restart` — при обнаружении недоступности IPsec-соединение разрывается. Платформа VK Cloud будет пытаться переустановить соединение с удаленным пиром.
-
-     - `interval` — с каким интервалом (в секундах) отправлять проверочные DPD-сообщения. По умолчанию — `30` секунд.
-     - `timeout` — если по истечении этого таймаута (в секундах) не было получено ни одного проверочного DPD-сообщения от удаленного пира, то он признается недоступным (dead). По умолчанию значение этого параметра в четыре раза больше, чем `interval` (`120` секунд).
-
-   - `--initiator` — поведение при установке IPsec-соединения:
-
-     - `bi-directional` (по умолчанию) — со стороны платформы VK Cloud будут производиться попытки установления соединения с удаленным пиром (remote peer).
-     - `response-only` — платформа ожидает, что VPN-соединение будет инициировано удаленным пиром, и не пытается установить его самостоятельно.
-
-   - `--peer-id` — идентификатор пира, по умолчанию совпадает с адресом пира.
+   </tabpanel>
+   </tabs>
 
 </tabpanel>
 </tabs>
@@ -520,7 +560,10 @@
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-neutronclient`. Также проверьте, что вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+1. Убедитесь, что:
+
+   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-neutronclient`.
+   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
 1. Посмотрите детальную информацию о VPN-туннеле, который нужно отредактировать.
 
@@ -545,101 +588,108 @@
 
    1. Если подходящей локальной endpoint-группы не нашлось, создайте ее:
 
-      - Linux/macOS (bash, zsh)
+      <tabs>
+      <tablist>
+      <tab>Linux/macOS (bash, zsh)</tab>
+      <tab>Windows (PowerShell)</tab>
+      </tablist>
+      <tabpanel>
 
-        ```bash
-        openstack vpn endpoint group create <имя локальной endpoint-группы> \
-          --type subnet \
-          --value <идентификатор подсети платформы VK Cloud, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> \
-          ...
-          --value <идентификатор дополнительной подсети>
-        ```
+      ```bash
+      openstack vpn endpoint group create <имя локальной endpoint-группы> \
+        --type subnet \
+        --value <идентификатор подсети платформы VK Cloud, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> \
+        ...
+        --value <идентификатор дополнительной подсети>
+      ```
 
-      - Windows (PowerShell)
+      </tabpanel>
+      <tabpanel>
 
-        ```powershell
-        openstack vpn endpoint group create <имя локальной endpoint-группы> `
-          --type subnet `
-          --value <идентификатор подсети платформы VK Cloud, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> `
-          ...
-          --value <идентификатор дополнительной подсети>
-        ```
+      ```powershell
+      openstack vpn endpoint group create <имя локальной endpoint-группы> `
+        --type subnet `
+        --value <идентификатор подсети платформы VK Cloud, подключенной к маршрутизатору, которая должна быть доступна через VPN-туннель> `
+        ...
+        --value <идентификатор дополнительной подсети>
+      ```
+
+      </tabpanel>
+      </tabs>
 
       После создания будет выведена информация о созданном объекте, включающая его идентификатор. Запишите идентификатор локальной endpoint-группы, которая будет использоваться VPN-туннелем.
 
    1. Если подходящей удаленной endpoint-группы не нашлось, создайте ее:
 
-      - Linux/macOS (bash, zsh)
+      <tabs>
+      <tablist>
+      <tab>Linux/macOS (bash, zsh)</tab>
+      <tab>Windows (PowerShell)</tab>
+      </tablist>
+      <tabpanel>
 
-        ```bash
-        openstack vpn endpoint group create <имя удаленной endpoint-группы> \
-          --type cidr \
-          --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" \
-          ...
-          --value "<дополнительная удаленная подсеть>"
-        ```
+      ```bash
+      openstack vpn endpoint group create <имя удаленной endpoint-группы> \
+        --type cidr \
+        --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" \
+        ...
+        --value "<дополнительная удаленная подсеть>"
+      ```
 
-      - Windows (PowerShell)
+      </tabpanel>
+      <tabpanel>
 
-        ```powershell
-        openstack vpn endpoint group create <имя удаленной endpoint-группы> `
-          --type cidr `
-          --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" `
-          ...
-          --value "<дополнительная удаленная подсеть>"
-        ```
+      ```powershell
+      openstack vpn endpoint group create <имя удаленной endpoint-группы> `
+        --type cidr `
+        --value "<удаленная подсеть в формате 10.0.0.0/24, которая должна быть доступна через VPN-туннель>" `
+        ...
+        --value "<дополнительная удаленная подсеть>"
+      ```
+
+      </tabpanel>
+      </tabs>
 
       После создания будет выведена информация о созданном объекте, включающая его идентификатор. Запишите идентификатор удаленной endpoint-группы, которая будет использоваться VPN-туннелем.
 
 1. Отредактируйте настройки VPN-туннеля:
 
-   - Linux/macOS (bash, zsh)
+   <tabs>
+   <tablist>
+   <tab>Linux/macOS (bash, zsh)</tab>
+   <tab>Windows (PowerShell)</tab>
+   </tablist>
+   <tabpanel>
 
-     ```bash
-     openstack vpn ipsec site connection set <идентификатор VPN-туннеля> \
-       --name <новое имя VPN-туннеля> \
-       --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <таймаут проверки> \
-       --initiator <поведение при установке IPsec-соединения: bi-directional, response-only> \
-       --peer-address "<адрес пира VPN>" \
-       --peer-id "<идентификатор пира VPN>" \
-       --local-endpoint-group <идентификатор локальной endpoint-группы> \
-       --peer-endpoint-group идентификатор удаленной endpoint-группы \
-       --enable
-     ```
+   ```bash
+   openstack vpn ipsec site connection set <идентификатор VPN-туннеля> \
+     --name <новое имя VPN-туннеля> \
+     --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <таймаут проверки> \
+     --initiator <поведение при установке IPsec-соединения: bi-directional, response-only> \
+     --peer-address "<адрес пира VPN>" \
+     --peer-id "<идентификатор пира VPN>" \
+     --local-endpoint-group <идентификатор локальной endpoint-группы> \
+     --peer-endpoint-group <идентификатор удаленной endpoint-группы> \
+     --enable
+   ```
   
-   - Windows (PowerShell)
+   </tabpanel>
+   <tabpanel>
 
-     ```powershell
-     openstack vpn ipsec site connection set <идентификатор VPN-туннеля> `
-       --name <новое имя VPN-туннеля> `
-       --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <таймаут проверки> `
-       --initiator <поведение при установке IPsec-соединения> `
-       --peer-address "<адрес пира VPN>" `
-       --peer-id "<идентификатор пира VPN>" `
-       --local-endpoint-group <идентификатор локальной endpoint-группы> `
-       --peer-endpoint-group идентификатор удаленной endpoint-группы `
-       --enable
-     ```
+   ```powershell
+   openstack vpn ipsec site connection set <идентификатор VPN-туннеля> `
+     --name <новое имя VPN-туннеля> `
+     --dpd action=<действие при недоступности пира>,interval=<интервал проверки>,timeout <таймаут проверки> `
+     --initiator <поведение при установке IPsec-соединения> `
+     --peer-address "<адрес пира VPN>" `
+     --peer-id "<идентификатор пира VPN>" `
+     --local-endpoint-group <идентификатор локальной endpoint-группы> `
+     --peer-endpoint-group <идентификатор удаленной endpoint-группы> `
+     --enable
+   ```
 
-   Здесь:
-
-   - `--dpd` — настройки обнаружения недоступности удаленного пира (Dead Peer Detection, DPD):
-
-     - `action` — определяет поведение платформы VK Cloud, если удаленный пир недоступен:
-
-       - `hold` (по умолчанию) — при обнаружении недоступности IPsec-соединение разрывается. Соединение может быть переустановлено только удаленным пиром.
-       - `clear` — при обнаружении недоступности IPsec-соединение разрывается. Соединение не будет переустановлено, даже если удаленный пир будет пытаться это сделать.
-       - `restart` — при обнаружении недоступности IPsec-соединение разрывается. Платформа VK Cloud будет пытаться переустановить соединение с удаленным пиром.
-
-     - `interval` — с каким интервалом (в секундах) отправлять проверочные DPD-сообщения. По умолчанию — `30` секунд.
-     - `timeout` — если по истечении этого таймаута (в секундах) не было получено ни одного проверочного DPD-сообщения от удаленного пира, то он признается недоступным (dead). По умолчанию значение этого параметра в четыре раза больше, чем `interval` (`120` секунд).
-
-   - `--initiator` — поведение при установке IPsec-соединения:
-
-     - `bi-directional` (по умолчанию) — со стороны платформы VK Cloud будут производиться попытки установления соединения с удаленным пиром (remote peer).
-     - `response-only` — платформа ожидает, что VPN-соединение будет инициировано удаленным пиром, и не пытается установить его самостоятельно.
-
-   - `--peer-id` — идентификатор пира, по умолчанию совпадает с адресом пира.
+   </tabpanel>
+   </tabs>
 
 </tabpanel>
 </tabs>
@@ -663,23 +713,35 @@
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-neutronclient`. Также проверьте, что вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+1. Убедитесь, что:
+
+   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-neutronclient`.
+   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
 1. Посмотрите детальную информацию о VPN-туннеле, который нужно перезапустить.
 
 1. Выполните команду:
 
-   - Linux/macOS (bash, zsh)
+   <tabs>
+   <tablist>
+   <tab>Linux/macOS (bash, zsh)</tab>
+   <tab>Windows (PowerShell)</tab>
+   </tablist>
+   <tabpanel>
 
-     ```bash
-     openstack vpn service <идентификатор VPN-сервиса> --disable && openstack vpn service <идентификатор VPN-сервиса> --enable
-     ```
+   ```bash
+   openstack vpn service <идентификатор VPN-сервиса> --disable && openstack vpn service <идентификатор VPN-сервиса> --enable
+   ```
   
-   - Windows (PowerShell)
+   </tabpanel>
+   <tabpanel>
 
-     ```powershell
-     openstack vpn service <идентификатор VPN-сервиса> --disable; openstack vpn service <идентификатор VPN-сервиса> --enable
-     ```
+   ```powershell
+   openstack vpn service <идентификатор VPN-сервиса> --disable; openstack vpn service <идентификатор VPN-сервиса> --enable
+   ```
+
+   </tabpanel>
+   </tabs>
 
 </tabpanel>
 </tabs>
@@ -710,7 +772,10 @@
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-neutronclient`. Также проверьте, что вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+1. Убедитесь, что:
+
+   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-neutronclient`.
+   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
 1. Посмотрите список VPN-туннелей и найдите идентификатор туннеля, который нужно удалить.
 
@@ -732,28 +797,37 @@
 
 1. Чтобы удалить VPN-туннель и все связанные с ним объекты, выполните команду:
 
-   - Linux/macOS (bash, zsh)
+   <tabs>
+   <tablist>
+   <tab>Linux/macOS (bash, zsh)</tab>
+   <tab>Windows (PowerShell)</tab>
+   </tablist>
+   <tabpanel>
 
-     ```bash
-     openstack vpn ipsec site connection delete <идентификатор VPN-туннеля>
-     openstack vpn ike policy delete <идентификатор IKE-политики>
-     openstack vpn ipsec policy delete <идентификатор IPsec-политики>
-     openstack vpn endpoint group delete <идентификатор локальной endpoint-группы>
-     openstack vpn endpoint group delete <идентификатор удаленной (peer) endpoint-группы>
-     openstack vpn service delete <идентификатор VPN-сервиса, который обслуживает этот VPN-туннель>
+   ```bash
+   openstack vpn ipsec site connection delete <идентификатор VPN-туннеля>
+   openstack vpn ike policy delete <идентификатор IKE-политики>
+   openstack vpn ipsec policy delete <идентификатор IPsec-политики>
+   openstack vpn endpoint group delete <идентификатор локальной endpoint-группы>
+   openstack vpn endpoint group delete <идентификатор удаленной (peer) endpoint-группы>
+   openstack vpn service delete <идентификатор VPN-сервиса, который обслуживает этот VPN-туннель 
+   
+   ```
 
-     ```
+   </tabpanel>
+   <tabpanel>
 
-   - Windows (PowerShell)
+   ```powershell
+   openstack vpn ipsec site connection delete <идентификатор VPN-туннеля>; `
+   openstack vpn ike policy delete <идентификатор IKE-политики>; `
+   openstack vpn ipsec policy delete <идентификатор IPsec-политики>; `
+   openstack vpn endpoint group delete <идентификатор локальной endpoint-группы>; `
+   openstack vpn endpoint group delete <идентификатор удаленной (peer) endpoint-группы>; `
+   openstack vpn service delete <идентификатор VPN-сервиса, который обслуживает этот VPN-туннель>
+   ```
 
-     ```powershell
-     openstack vpn ipsec site connection delete <идентификатор VPN-туннеля>; `
-     openstack vpn ike policy delete <идентификатор IKE-политики>; `
-     openstack vpn ipsec policy delete <идентификатор IPsec-политики>; `
-     openstack vpn endpoint group delete <идентификатор локальной endpoint-группы>; `
-     openstack vpn endpoint group delete <идентификатор удаленной (peer) endpoint-группы>; `
-     openstack vpn service delete <идентификатор VPN-сервиса, который обслуживает этот VPN-туннель>
-     ```
+   </tabpanel>
+   </tabs>
 
 </tabpanel>
 </tabs>
