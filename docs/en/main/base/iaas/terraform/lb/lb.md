@@ -1,6 +1,6 @@
 <warn>
 
-First of all, make sure you [installed Terraform](/docs/en/manage/terraform/quick-start/preparation) and [created the main.tf file](/docs/en/manage/terraform/quick-start/configuration) with the necessary providers.
+First of all, make sure you [installed Terraform](/docs/en/manage/terraform/quick-start) and [created the main.tf file](/docs/en/manage/terraform/quick-start/configuration) with the necessary providers.
 
 </warn>
 
