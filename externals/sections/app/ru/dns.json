@@ -6,33 +6,18 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/start"
+                    "link": "docs/ru/main/networks/dns/private-dns"
                 },
                 {
-                    "link": "docs/ru/main/networks/vnet/networks"
+                    "link": "docs/ru/main/networks/dns/publicdns"
                 }
             ]
         },
         {
-            "title": "БЫСТРЫЙ СТАРТ",
+            "title": "API",
             "links": [
                 {
-                    "link": "docs/ru/main/networks/vnet/networks/create-net"
-                },
-                {
-                    "link": "docs/ru/main/networks/vnet/vnet-lb"
-                },
-                {
-                    "link": "docs/ru/main/networks/vnet/vpn"
-                },
-                {
-                    "link": "docs/ru/main/networks/vnet/firewall"
-                },
-                {
-                    "link": "docs/ru/main/networks/vnet/networks/private-dns"
-                },
-                {
-                    "link": "docs/ru/main/networks/vnet/networks/publicdns"
+                    "link": "docs/ru/main/additionals/api/api-dns"
                 }
             ]
         }
