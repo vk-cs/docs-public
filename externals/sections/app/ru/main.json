@@ -6,10 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/iaas/vm-images/custom-image"
+                    "link": "docs/ru"
                 },
                 {
                     "link": "docs/ru/main/base/account/start"
+                },
+                {
+                    "link": "docs/ru/main/additionals/start/get-started/corporate"
                 },
                 {
                     "link": "docs/ru/main/base/account/concepts/quotasandlimits"
@@ -25,45 +28,39 @@
             ]
         },
         {
-            "title": "БЫСТРЫЙ СТАРТ",
-            "links": [
-                {
-                    "link": "docs/ru/main/base/iaas/vm-interfaces/vm-create-cli"
-                },
-                {
-                    "link": "docs/ru/main/base/iaas/vm-volumes/volume-sla"
-                },
-                {
-                    "link": "docs/ru/main/base/iaas/vm-start/manage-vm"
-                },
-                {
-                    "link": "docs/ru/main/base/iaas/fs"
-                },
-                {
-                    "link": "docs/ru/main/additionals/mp"
-                }
-            ]
-        },
-        {
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/concepts/rolesandpermissions"
-                },
-                {
-                    "link": "docs/ru/main/dbs/dbaas/manage-db/backup-db"
+                    "link": "docs/ru/main/base/iaas"
                 },
                 {
                     "link": "docs/ru/main/networks/vnet"
                 },
                 {
-                    "link": "docs/ru/main/networks/vnet/vpn"
+                    "link": "docs/ru/manage/monitoring"
                 },
                 {
-                    "link": "docs/ru/main/base/account/start"
+                    "link": "docs/ru/main/networks/cdn"
                 },
                 {
-                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/main/networks/dns"
+                },
+                {
+                    "link": "docs/ru/main/base/s3"
+                },
+                {
+                    "link": "docs/ru/main/base/k8s"
+                },
+                {
+                    "link": "docs/ru/main/dbs/dbaas"
+                },
+                {
+                    "link": "docs/ru/main/dbs/adb"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp"
+                },{
+                    "link": "docs/ru/main/ml"
                 }
             ]
         }
