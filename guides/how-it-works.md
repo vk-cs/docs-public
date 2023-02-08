@@ -80,16 +80,16 @@ Url страниц генерируется на основе пути до па
         {
             "title": "Информация",
             "links": [
-                "docs/ru/additionals/start/get-started",
-                "docs/ru/networks/vnet",
+                "docs/ru/main/additionals/start/get-started",
+                "docs/ru/main/networks/vnet",
                 ...любое количество ссылок на страницы
             ]
         },
         {
             "title": "Продвинутые настройки",
             "links": [
-                "docs/ru/base/iaas/fs",
-                "docs/ru/additionals/mp"
+                "docs/ru/main/base/iaas/fs",
+                "docs/ru/main/additionals/mp"
                 ...может быть любое количество элементов
             ]
         }
