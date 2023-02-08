@@ -9,10 +9,10 @@
                     "link": "docs/ru/main/base/account/start"
                 },
                 {
-                    "link": "docs/ru/main/networks/vnet/vnet-lb/about-lb"
+                    "link": "docs/ru/main/networks/vnet"
                 },
                 {
-                    "link": "docs/ru/main/networks/vnet"
+                    "link": "docs/ru/main/networks/vnet/tariffs"
                 }
             ]
         },
@@ -20,16 +20,7 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/networks/vnet/networks/fip"
-                },
-                {
-                    "link": "docs/ru/main/networks/vnet/firewall"
-                },
-                {
-                    "link": "docs/ru/main/networks/vnet/networks/create-net"
-                },
-                {
-                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/main/networks/vnet/operations/manage-lb"
                 }
             ]
         }

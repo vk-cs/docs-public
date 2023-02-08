@@ -9,30 +9,18 @@
                     "link": "docs/ru/main/base/account/start"
                 },
                 {
-                    "link": "docs/ru/main/networks/vnet/networks"
+                    "link": "docs/ru/main/networks/vnet"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet/tariffs"
                 }
             ]
         },
         {
-            "title": "БЫСТРЫЙ СТАРТ",
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/networks/vnet/networks/create-net"
-                },
-                {
-                    "link": "docs/ru/main/networks/vnet/vnet-lb"
-                },
-                {
-                    "link": "docs/ru/main/networks/vnet/vpn"
-                },
-                {
-                    "link": "docs/ru/main/networks/vnet/firewall"
-                },
-                {
-                    "link": "docs/ru/main/networks/vnet/networks/private-dns"
-                },
-                {
-                    "link": "docs/ru/main/networks/vnet/networks/publicdns"
+                    "link": "docs/ru/main/networks/vnet/operations/manage-router"
                 }
             ]
         }
