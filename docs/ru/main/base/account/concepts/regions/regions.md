@@ -54,7 +54,7 @@
 
 Для получения файла конфигурации openrc, выберите регион и нажмите [«Пользователь -> Настройки проекта -> API ключи -> Скачать openrc версии 3»](https://mcs.mail.ru/app/project/keys/).
 
-Подробнее об настройке CLI вы можете узнать в [разделе «CLI» статьи «Интерфейсы управления»](/ru/additionals/start/user-account/mgmt-interfaces#cli).
+Подробнее о настройке CLI вы можете узнать в [разделе «CLI»](/ru/additionals/account/project/cli).
 
 </tabpanel>
 <tabpanel>
