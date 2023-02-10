@@ -8,6 +8,11 @@
   "markdown": "VK Cloud Servers — сервис облачных вычислений, с помощью которого вы управляете виртуальными машинами на платформе VK Cloud. Включает управление конфигурациями инстансов, дисками, образами, резервным копированием, позволяет создать файловое хранилище.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null,
+  "infobarItems": [
+    {
+      "text": "Использование Terraform",
+      "icon": "/docs/_docs/ru/main/manage/terraform/assets/icon.svg",
+      "link": "../../manage/terraform/scenarios/iaas"
+    }],
   "uuid": "f18cbbc6-353d-4989-84a8-152fedc68060"
 }
