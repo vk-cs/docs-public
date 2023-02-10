@@ -1,0 +1,13 @@
+{
+    "title": "Облачные вычисления",
+    "pageDescription": "Работа с сервисом облачных вычислений с использованием Terraform.",
+    "shortDescription": "Как использовать Terraform для управления объектами сервиса облачных вычислений",
+    "metaTitle": "Облачные вычисления — VK Cloud",
+    "metaDescription": "",
+    "sectionTitle": "Облачные вычисления",
+    "markdown": "Работа с [сервисом облачных вычислений](/ru/main/base/iaas) с использованием Terraform.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "3cf2376e-bb9d-4961-bc9e-d7576069ddd6"
+}
