@@ -379,7 +379,7 @@
    </tabpanel>
    </tabs>
 
-1. Если статический публичный IP-адрес, который был назначен сервису `coffee-svc-public-static-ip`, вам больше не нужен, [удалите его](../../../../networks/vnet/networks/fip#osvobozhdenie-plavayushchego-ip).
+1. Если статический публичный IP-адрес, который был назначен сервису `coffee-svc-public-static-ip`, вам больше не нужен, [удалите его](../../../../networks/vnet/operations/manage-floating-ip#udalenie-plavayushchego-ip-adresa-iz-proekta).
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
