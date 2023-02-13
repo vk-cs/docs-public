@@ -1,0 +1,1110 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "API партнерской программы VK Cloud",
+    "version": "1.0.0",
+    "title": "API партнерской программы"
+  },
+  "tags": [
+    {
+      "name": "partners",
+      "description": "Доступные операции для партнеров"
+    }
+  ],
+  "paths": {
+    "/api/v1/partners/{pid}/invites/{id}": {
+      "put": {
+        "tags": [
+          "partners"
+        ],
+        "summary": "Обновить приглашение для клиента",
+        "description": "Обновить существующее приглашение для клиента, например, если для старого приглашения вышел срок годности",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "pid",
+            "description": "PID проекта",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Идентификатор предыдущего приглашения",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-req-id",
+            "description": "Идентификатор запроса",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "content-type",
+            "description": "Тип контента (text, json)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "cookie",
+            "description": "Идентификатор сессии",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-csrf-token",
+            "description": "Токен аутентификации",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "client_id": {
+                    "type": "string"
+                  },
+                  "infra": {
+                    "type": "boolean"
+                  },
+                  "quota": {
+                    "$ref": "#/components/schemas/Quota"
+                  },
+                  "phone": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Данные о приглашении",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SerializedInvite"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные входные параметры"
+          },
+          "403": {
+            "description": "Недостаточно прав для получения данных"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "partners"
+        ],
+        "summary": "Выслать приглашение для клиента повторно",
+        "description": "Повторно выслать приглашение для клиента",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "pid",
+            "description": "PID проекта",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Идентификатор предыдущего приглашения",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-req-id",
+            "description": "Идентификатор запроса",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "content-type",
+            "description": "Тип контента (text, json)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "cookie",
+            "description": "Идентификатор сессии",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-csrf-token",
+            "description": "Токен аутентификации",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешный ответ (пустой JSON-объект)"
+          },
+          "400": {
+            "description": "Некорректные входные параметры"
+          },
+          "403": {
+            "description": "Недостаточно прав для получения данных"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "partners"
+        ],
+        "summary": "Удалить приглашение",
+        "description": "Удалить приглашение в проект для клиента",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "pid",
+            "description": "PID проекта",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Идентификатор приглашения",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-req-id",
+            "description": "Идентификатор запроса",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "content-type",
+            "description": "Тип контента (text, json)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "cookie",
+            "description": "Идентификатор сессии",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-csrf-token",
+            "description": "Токен аутентификации",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Данные об удаленном приглашении",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SerializedInvite"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные входные параметры"
+          },
+          "403": {
+            "description": "Недостаточно прав для получения данных"
+          }
+        }
+      }
+    },
+    "/api/v1/partners/{pid}/clients/": {
+      "get": {
+        "tags": [
+          "partners"
+        ],
+        "summary": "Отобразить список клиентов",
+        "description": "Отобразить общий список клиентов партнера",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "pid",
+            "description": "PID проекта",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-req-id",
+            "description": "Идентификатор запроса",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "content-type",
+            "description": "Тип контента (text, json)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "cookie",
+            "description": "Идентификатор сессии",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-csrf-token",
+            "description": "Токен аутентификации",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Список клиентов проекта",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SerializedProject"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные входные параметры"
+          },
+          "403": {
+            "description": "Недостаточно прав для получения данных"
+          }
+        }
+      }
+    },
+    "/api/v1/partners/{pid}/clients/{client_pid}": {
+      "get": {
+        "tags": [
+          "partners"
+        ],
+        "summary": "Получить информацию о клиенте",
+        "description": "Получить информацию о клиенте в проекте по id",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "pid",
+            "description": "PID проекта",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "client_pid",
+            "description": "PID клиента",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-req-id",
+            "description": "Идентификатор запроса",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "content-type",
+            "description": "Тип контента (text, json)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "cookie",
+            "description": "Идентификатор сессии",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-csrf-token",
+            "description": "Токен аутентификации",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Информация о клиенте",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SerializedProject"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные входные параметры"
+          },
+          "403": {
+            "description": "Недостаточно прав для получения данных"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "partners"
+        ],
+        "summary": "Изменить идентификатор клиента",
+        "description": "Изменить идентификатор существующего клиента",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "pid",
+            "description": "PID проекта",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "client_pid",
+            "description": "PID клиента",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-req-id",
+            "description": "Идентификатор запроса",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "content-type",
+            "description": "Тип контента (text, json)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "cookie",
+            "description": "Идентификатор сессии",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-csrf-token",
+            "description": "Токен аутентификации",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "client_id": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Обновленные данные о клиенте",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SerializedProject"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные входные параметры"
+          },
+          "403": {
+            "description": "Недостаточно прав для получения данных"
+          }
+        }
+      }
+    },
+    "/api/v1/partners/{pid}/clients/{client_pid}/billing": {
+      "get": {
+        "tags": [
+          "partners"
+        ],
+        "summary": "Получить информацию о затратах на проект клиента",
+        "description": "Получить информацию о затратах на проект (списания, начисления) для клиента",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "pid",
+            "description": "PID проекта",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "path",
+            "name": "client_pid",
+            "description": "PID клиента",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-req-id",
+            "description": "Идентификатор запроса",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "content-type",
+            "description": "Тип контента (text, json)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "cookie",
+            "description": "Идентификатор сессии",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "in": "header",
+            "name": "x-csrf-token",
+            "description": "Токен аутентификации",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Список проектов клиента с детализацией",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectBillingInfo"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные входные параметры"
+          },
+          "403": {
+            "description": "Недостаточно прав для получения данных"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SerializedInvite": {
+        "type": "object",
+        "properties": {
+          "iid": {
+            "type": "string",
+            "example": "deb32f104f1546a486aa53a425e4f93c"
+          },
+          "type": {
+            "type": "string",
+            "example": "pclient"
+          },
+          "pid": {
+            "type": "string",
+            "example": "mcs6838234314"
+          },
+          "email": {
+            "type": "string",
+            "example": "ex@mail.ru"
+          },
+          "ctime": {
+            "oneOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "example": 1559826127
+          },
+          "initiator": {
+            "type": "string",
+            "example": "ex2@mail.ru"
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "example": "Vanya"
+              },
+              "phone": {
+                "oneOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ],
+                "example": 89262755887
+              },
+              "company": {
+                "type": "string",
+                "example": "Mail.RU Group"
+              },
+              "uid": {
+                "oneOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ],
+                "example": 3388821122
+              },
+              "client_id": {
+                "type": "string",
+                "example": "MyBestClient"
+              },
+              "infra": {
+                "type": "boolean",
+                "example": false
+              },
+              "quota": {
+                "$ref": "#/components/schemas/Quota"
+              }
+            }
+          }
+        }
+      },
+      "Quota": {
+        "type": "object",
+        "properties": {
+          "routers": {
+            "oneOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "example": 1
+          },
+          "volumes": {
+            "oneOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "example": 4
+          },
+          "instances": {
+            "oneOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "example": 4
+          },
+          "floating_ips": {
+            "oneOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "example": 4
+          },
+          "gigabytes": {
+            "oneOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "example": 1000
+          },
+          "cores": {
+            "oneOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "example": 8
+          },
+          "ram": {
+            "oneOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "example": 16723
+          },
+          "white_label_tag": {
+            "type": "string",
+            "example": "1c"
+          }
+        }
+      },
+      "SerializedProject": {
+        "type": "object",
+        "properties": {
+          "pid": {
+            "type": "string",
+            "example": "mcs6838234314"
+          },
+          "is_partner": {
+            "type": "boolean",
+            "example": false
+          },
+          "enabled": {
+            "type": "boolean",
+            "example": true
+          },
+          "phone": {
+            "type": "number",
+            "example": 81234567890
+          },
+          "ctime": {
+            "oneOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "example": 1559826127.435
+          },
+          "verified": {
+            "type": "object",
+            "properties": {
+              "fraud": {
+                "type": "object",
+                "properties": {
+                  "status": {
+                    "type": "string",
+                    "example": "APPROVE"
+                  }
+                }
+              }
+            }
+          },
+          "title": {
+            "type": "string",
+            "example": "mcs6838234314"
+          },
+          "attr": {
+            "type": "object",
+            "properties": {
+              "partner_approved": {
+                "type": "boolean",
+                "example": false
+              },
+              "trusted": {
+                "type": "boolean",
+                "example": false
+              },
+              "client_id": {
+                "type": "string",
+                "example": "MyClient"
+              }
+            }
+          },
+          "owner": {
+            "type": "object",
+            "properties": {
+              "email": {
+                "type": "string",
+                "example": "owner@mail.ru"
+              },
+              "uid": {
+                "oneOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ],
+                "example": 94349234239
+              },
+              "name": {
+                "type": "string",
+                "example": "Vasya"
+              },
+              "company": {
+                "type": "string",
+                "example": "MailRu"
+              }
+            }
+          },
+          "partner": {
+            "type": "object",
+            "properties": {
+              "pid": {
+                "type": "string",
+                "example": "mcs6838234315"
+              },
+              "title": {
+                "type": "string",
+                "example": "mcs6838234315"
+              },
+              "attr": {
+                "type": "object",
+                "properties": {
+                  "white_label": {
+                    "type": "object",
+                    "properties": {
+                      "available_services": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "example": [
+                            "infra",
+                            "hotbox"
+                          ]
+                        }
+                      },
+                      "billing_settings": {
+                        "type": "object",
+                        "properties": {
+                          "available_payment_methods": {
+                            "type": "array",
+                            "items": {
+                              "type": "string",
+                              "example": [
+                                "dmr",
+                                "invoice"
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      "ui_settings": {
+                        "type": "object",
+                        "properties": {
+                          "page_title": {
+                            "type": "string",
+                            "example": "Сервис партнера"
+                          },
+                          "logotype_url": {
+                            "type": "string",
+                            "example": "https://mcs-static.hb.bizmrg.com/white-label/logotypes/vk.svg"
+                          },
+                          "theme": {
+                            "type": "string",
+                            "example": "vk"
+                          }
+                        }
+                      },
+                      "support_contacts": {
+                        "type": "object",
+                        "properties": {
+                          "question_form_url": {
+                            "type": "string",
+                            "example": "https://help.mail.ru/mcs/support"
+                          },
+                          "phone": {
+                            "type": "string",
+                            "example": "+74993509703"
+                          },
+                          "email": {
+                            "type": "string",
+                            "example": "support@mcs.mail.ru"
+                          }
+                        }
+                      },
+                      "tag": {
+                        "type": "string",
+                        "example": "vk"
+                      }
+                    }
+                  },
+                  "partner_approved": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "trusted": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "start_services": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "example": [
+                        "infra",
+                        "hotbox"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "ProjectBillingInfo": {
+        "type": "object",
+        "properties": {
+          "pid": {
+            "type": "string",
+            "example": "mcs123456789"
+          },
+          "domain": {
+            "type": "string",
+            "example": "example@corp.mail.ru"
+          },
+          "verified": {
+            "type": "boolean",
+            "example": false
+          },
+          "balance": {
+            "oneOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "example": -40
+          },
+          "bonus": {
+            "oneOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "example": 1410
+          },
+          "ballance": {
+            "oneOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "example": 1410
+          },
+          "currency": {
+            "oneOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "example": 1410
+          },
+          "legal_form": {
+            "type": "string",
+            "example": "legal"
+          },
+          "bind": {
+            "type": "boolean",
+            "example": false
+          },
+          "autopay": {
+            "type": "boolean",
+            "example": false
+          },
+          "extra": {
+            "type": "object",
+            "properties": {
+              "ctime": {
+                "oneOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ],
+                "example": 1559826127
+              },
+              "reg_notified": {
+                "type": "boolean",
+                "example": false
+              },
+              "bind": {
+                "type": "string",
+                "example": "mcs12345"
+              },
+              "sum4payment": {
+                "oneOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ],
+                "example": 1559826127
+              },
+              "limit2life": {
+                "oneOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ],
+                "example": 2500
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
