@@ -1,8 +1,15 @@
-<info>
+Далее описывается создание кластера из личного кабинета. Также возможно создать кластер [с помощью Terraform](../create-terraform/).
 
-Создать кластер возможно также [с помощью Terraform](../create-terraform/).
+<warn>
 
-</info>
+Учитывайте, что:
+
+- При создании кластера для него будет создан [сервисный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+- При выборе [предустановленного сервиса](../../../concepts/preconfigured-features/addons) NGINX Ingress Controller для него будет создан [стандартный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+
+Использование балансировщиков [тарифицируется](/ru/main/networks/vnet/tariffs).
+
+</warn>
 
 ## Перед созданием кластера
 
