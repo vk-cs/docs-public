@@ -1,5 +1,18 @@
 Перед началом с работы с Terraform убедитесь, что вы [установили Terraform](/ru/manage/terraform/quick-start) и [создали файл main.tf](/ru/dbs/dbaas/api/terraform-for-dbaas) с необходимыми провайдерами.
 
+<warn>
+
+При создании инстансов следующих типов в **кластерной конфигурации** для инстанса будет создан [сервисный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki):
+
+- MySQL;
+- PostgreSQL;
+- Postgres Pro Enterprise;
+- Postgres Pro Enterprise 1С.
+
+Использование балансировщика [тарифицируется](/ru/main/networks/vnet/tariffs).
+
+</warn>
+
 ## Создание инстанса БД
 
 Создайте файл _database_instance.tf_ в рабочей папке, где лежит _main.tf_.
