@@ -26,6 +26,14 @@
 
 ## Ingress Controller (NGINX)
 
+<warn>
+
+При выборе предустановленного сервиса NGINX Ingress Controller для него будет создан [стандартный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+
+Использование балансировщика [тарифицируется](/ru/main/networks/vnet/tariffs).
+
+</warn>
+
 [Ingress-контроллер](https://kubernetes.io/docs/concepts/services-networking/ingress/) на базе [NGINX](https://docs.nginx.com/nginx-ingress-controller/intro/overview/) работает в качестве обратного прокси (reverse proxy) и позволяет организовать единую точку входа для сервисов в кластере, которые работают по HTTP или HTTPS.
 
 При наличии контроллера достаточно создать [ресурс Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/), чтобы такие сервисы стали доступны извне кластера Kubernetes.
