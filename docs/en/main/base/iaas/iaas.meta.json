@@ -8,6 +8,11 @@
   "markdown": "VK Cloud Servers is a cloud computing service that allows you to manage virtual machines on the VK Cloud platform. Includes management of configurations of instances, disks, images, backups, allows you to create file storage.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null,
+  "infobarItems": [
+    {
+      "text": "Using Terraform",
+      "icon": "/docs/_docs/en/main/manage/terraform/assets/icon.svg",
+      "link": "../../manage/terraform/scenarios/iaas"
+    }],
   "uuid": "10d14d5d-951f-4ed0-ac2a-c3d706ab1a55"
 }
