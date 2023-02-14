@@ -1,0 +1,13 @@
+{
+    "title": "Cloud computing",
+    "pageDescription": "Working with cloud computing service using Terraform.",
+    "shortDescription": "How to use Terraform to manage cloud computing service objects",
+    "metaTitle": "Cloud computing — VK Cloud",
+    "metaDescription": "",
+    "sectionTitle": "Cloud computing",
+    "markdown": "Working with [cloud computing service](/en/main/base/iaas) using Terraform.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "03c064ea-f496-4468-9286-2196733efc90"
+}
