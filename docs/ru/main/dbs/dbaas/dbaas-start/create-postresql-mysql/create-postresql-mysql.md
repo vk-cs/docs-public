@@ -3,6 +3,19 @@
 - Тип и версию базы данных.
 - Конфигурацию: Single, Master-Replica или Кластер. Для тестирования возможностей мы рекомендуем конфигурацию Single.
 
+<warn>
+
+При создании инстансов следующих типов в **кластерной конфигурации** для инстанса будет создан [сервисный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki):
+
+- MySQL;
+- PostgreSQL;
+- Postgres Pro Enterprise;
+- Postgres Pro Enterprise 1С.
+
+Использование балансировщика [тарифицируется](/ru/main/networks/vnet/tariffs).
+
+</warn>
+
 ## Поддерживаемые версии
 
 VK Cloud предоставляет все актуальные версии БД.
