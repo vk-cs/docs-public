@@ -1,13 +1,13 @@
 {
-  "title": "Подключение устройства",
+  "title": "Варианты подключения устройства",
   "pageDescription": "",
-  "shortDescription": "Способы подключения",
-  "metaTitle": "Подключение устройства - VK Cloud",
+  "shortDescription": "Способы подключения к созданному устройству",
+  "metaTitle": "Варианты подключения устройства — VK Cloud",
   "metaDescription": "",
-  "sectionTitle": "Подключение устройства",
+  "sectionTitle": "Варианты подключения устройства",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
-  "weight": 0,
+  "weight": 2,
   "uuid": "b0074a50-832f-4bee-b73b-6df8050d6bbc"
 }
