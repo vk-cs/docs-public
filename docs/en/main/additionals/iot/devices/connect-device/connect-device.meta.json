@@ -1,10 +1,10 @@
 {
-  "title": "Device connection",
+  "title": "Device connection via agent",
   "pageDescription": "",
   "shortDescription": "Create an agent template and connect the device to the platform",
-  "metaTitle": "Device connection - VK Cloud",
+  "metaTitle": "Device connection via agent — VK Cloud",
   "metaDescription": "",
-  "sectionTitle": "Device connection",
+  "sectionTitle": "Device connection via agent",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
