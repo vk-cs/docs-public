@@ -2,16 +2,16 @@
 
 ## Файл настройки values.yaml
 
-В качестве values.yaml для хелма стоит использовать файл по ссылке ниже — в нем уже настроены необходимые фильтры и парсеры.
+В качестве `values.yaml` для Helm стоит использовать файл по ссылке ниже — в нем уже настроены необходимые фильтры и парсеры.
 
 [Файл values.yaml](./assets/values.yaml "download").
 
-В приложенном values.yaml необходимо поправить параметры для [OUTPUT] — в примере для хранения логов используется PostgreSQL с двумя таблицами в одной базе:
+В приложенном `values.yaml` необходимо поправить параметры для `[OUTPUT]` — в примере для хранения логов используется PostgreSQL с двумя таблицами в одной базе:
 
-- Таблица fluentbit_21_host — для хранения логов хостовых сервисов(kublet.service, docker.service, crio.service)
-- Таблица fluentbit_21_kube — хранит логи непосредственно логи подов.
+- Таблица `fluentbit_21_host` — для хранения логов хостовых сервисов (`kublet.service`, `docker.service`, `crio.service`).
+- Таблица `fluentbit_21_kube` — хранит логи непосредственно логи подов.
 
-Аналогичным способом логи можно сохранять, например в Elasticsearch. Полный список поддерживаемых типов хранилищ можно посмотреть по [ссылке.](https://docs.fluentbit.io/manual/pipeline/outputs)
+Аналогичным способом логи можно сохранять, например, в ElasticSearch. Полный список поддерживаемых типов хранилищ можно посмотреть по [ссылке.](https://docs.fluentbit.io/manual/pipeline/outputs)
 
 Разделение сделано намерено, чтобы показать возможность использования разных таблиц в базе данных (индексов в Elasticsearch).
 
@@ -68,4 +68,4 @@ helm install fluent-bit fluent/fluent-bit --values values.yaml
 }
 ```
 
-Различные парсеры, доступные из коробки можно посмотреть здесь – https://github.com/fluent/fluent-bit/blob/master/conf/parsers.conf
+Различные парсеры, доступные из коробки, можно посмотреть здесь – https://github.com/fluent/fluent-bit/blob/master/conf/parsers.conf
