@@ -2,14 +2,14 @@ To unify the collection of logs from nodes with docker-runtime and crio-runtime,
 
 ## Settings file values.yaml
 
-As values.yaml for the helm, you should use the file from the link below - the necessary filters and parsers are already configured in it.
+As `values.yaml` for the Helm, you should use the file from the link below - the necessary filters and parsers are already configured in it.
 
 [File values.yaml](./assets/values.yaml "download").
 
-In the attached values.yaml, you need to correct the parameters for [OUTPUT] - in the example, PostgreSQL is used for storing logs with two tables in one database:
+In the attached values.yaml, you need to correct the parameters for `[OUTPUT]` - in the example, PostgreSQL is used for storing logs with two tables in one database:
 
-- Table fluentbit_21_host - for storing logs of host services (kublet.service, docker.service, crio.service)
-- Table fluentbit_21_kube - stores logs directly from pod logs.
+- Table `fluentbit_21_host` - for storing logs of host services (`kublet.service`, `docker.service`, `crio.service`).
+- Table `fluentbit_21_kube` - stores logs directly from pod logs.
 
 In a similar way, logs can be saved, for example, in Elasticsearch. For a complete list of supported storage types, see [link.](https://docs.fluentbit.io/manual/pipeline/outputs)
 
