@@ -15,7 +15,7 @@
 
 ```bash
 sudo apt update
-sudo apt install python-openstackclient 
+sudo apt install python3-openstackclient 
 ```
 
 </tabpanel>
