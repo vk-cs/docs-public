@@ -4,10 +4,11 @@ The VK Cloud team provides technical support to clients using VK Cloud services.
 
 You can apply to technical support through the following available communication channels:
 
-| Channel | Information | Working time<br> |
-|--------------|-----------------------------|-------------------|
-| Mail | support@mcs.mail.ru | around the clock |
-| Phone | +7 (499) 350-97-03 | around the clock |
+| Channel | Information                 | Working hours    |
+|---------|-----------------------------|------------------|
+| Portal  | https://support.mcs.mail.ru | around the clock |
+| Mail    | support@mcs.mail.ru         | around the clock |
+| Phone   | +7 (499) 350-97-03          | around the clock |
 
 <note>
 
