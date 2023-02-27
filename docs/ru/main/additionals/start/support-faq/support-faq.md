@@ -2,7 +2,11 @@
 
 Обращения в техническую поддержку возможны по следующим каналам связи:
 
-<table><tbody><tr><td>Канал</td><td>Информация</td><td>Время работы</td></tr><tr><td>Почта</td><td><a href="mailto:support@mcs.mail.ru">support@mcs.mail.ru</a></td><td>круглосуточно</td></tr><tr><td>Форма обратной связи</td><td><a href="https://help.mail.ru/mcs/support">https://help.mail.ru/mcs/support</a></td><td>круглосуточно</td></tr><tr><td>Чат Telegram</td><td><a href="https://t.me/vkcloud_assistant" title="">https://t.me/vkcloud_assistant</a></td><td>круглосуточно</td></tr><tr><td>Vkontakte</td><td><a href="https://vk.com/mrgcloud">https://vk.com/mrgcloud</a></td><td>круглосуточно</td></tr><tr><td>Телефон</td><td><a href="tel://+7(499)350-97-03" title="">+7 (499) 350-97-03</a></td><td>круглосуточно</td></tr></tbody></table>
+| Канал        | Информация                  | Время<br>работы |
+|--------------|-----------------------------|-----------------|
+| Портал       | https://support.mcs.mail.ru | круглосуточно   |
+| Почта        | support@mcs.mail.ru         | круглосуточно   |
+| Телефон      | +7 (499) 350-97-03          | круглосуточно   |
 
 <info>
 
