@@ -1,13 +1,43 @@
 {
-  "title": "Базы данных",
-  "pageDescription": "VK Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Postgres Pro, Greenplum. Базы доступны в single, master-slave и кластерных конфигурациях. Использование сервиса снимает с вас нагрузку по администрированию баз данных.",
-  "shortDescription": "Управляемые и масштабируемые облачные базы данных",
-  "metaTitle": "Базы данных - VK Cloud",
-  "metaDescription": "VK Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB,",
-  "sectionTitle": "Базы данных",
-  "markdown": "VK Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Postgres Pro, Greenplum. Базы доступны в single, master-slave и кластерных конфигурациях. Использование сервиса снимает с вас нагрузку по администрированию баз данных.",
-  "icon": "",
-  "weight": 7,
-  "infobarItems": null,
-  "uuid": "93dd09ce-09eb-4af0-807e-ea909d8c6588"
+    "title": "Базы данных",
+    "pageDescription": "VK Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Postgres Pro, Greenplum. Базы доступны в single, master-slave и кластерных конфигурациях. Использование сервиса снимает с вас нагрузку по администрированию баз данных.",
+    "shortDescription": "Управляемые и масштабируемые облачные базы данных",
+    "metaTitle": "Базы данных — VK Cloud",
+    "metaDescription": "VK Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB,",
+    "sectionTitle": "Базы данных",
+    "markdown": "VK Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Postgres Pro, Greenplum. Базы доступны в single, master-slave и кластерных конфигурациях. Использование сервиса снимает с вас нагрузку по администрированию баз данных.",
+    "icon": "",
+    "weight": 7,
+    "infobarItems": [
+      {
+        "text": "ClickHouse",
+        "icon": "/docs/_docs/ru/main/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/clickhouse"
+      },
+      {
+        "text": "MongoDB",
+        "icon": "/docs/_docs/ru/main/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/mongodb"
+      },
+      {
+        "text": "MySQL",
+        "icon": "/docs/_docs/ru/main/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/mysql"
+      },
+      {
+        "text": "PostgreSQL",
+        "icon": "/docs/_docs/ru/main/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/postgresql"
+      },
+      {
+        "text": "Postgres Pro",
+        "icon": "/docs/_docs/ru/main/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/postgrespro"
+      },
+      {
+        "text": "Redis",
+        "icon": "/docs/_docs/ru/main/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/redis"
+      }],
+    "uuid": "93dd09ce-09eb-4af0-807e-ea909d8c6588"
 }
