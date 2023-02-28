@@ -1,12 +1,13 @@
 {
-    "title": "Patroni",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Patroni — VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Patroni",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
-  }
+  "title": "Patroni",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Patroni — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Patroni",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "4df18c20-6c7a-4a56-8a3d-5bc2652244d8"
+}

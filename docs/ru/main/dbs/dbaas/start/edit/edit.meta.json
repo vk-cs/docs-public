@@ -1,12 +1,13 @@
 {
-    "title": "Изменение настроек инстанса БД",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Изменение настроек инстанса БД — VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Изменение настроек инстанса БД",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
-  }
+  "title": "Изменение настроек инстанса БД",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Изменение настроек инстанса БД — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Изменение настроек инстанса БД",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "4243efe6-1946-4104-99e0-ea4e10797b8b"
+}

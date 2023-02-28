@@ -1,12 +1,13 @@
 {
-    "title": "High Availability",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "High Availability — VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "High Availability",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 3
-  }
+  "title": "High Availability",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "High Availability — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "High Availability",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "58c2f22a-5bf1-4815-b6d8-d4ecdc036cfe"
+}
