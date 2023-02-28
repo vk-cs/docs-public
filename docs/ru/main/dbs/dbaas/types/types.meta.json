@@ -1,12 +1,13 @@
 {
-    "title": "Типы СУБД",
-    "pageDescription": "",
-    "shortDescription": "Поддерживаемые типы СУБД, которые можно использовать в сервисе",
-    "metaTitle": "Типы СУБД — VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Типы СУБД",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
-  }
+  "title": "Типы СУБД",
+  "pageDescription": "",
+  "shortDescription": "Поддерживаемые типы СУБД, которые можно использовать в сервисе",
+  "metaTitle": "Типы СУБД — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Типы СУБД",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "d549727d-00d0-4964-a2f1-aa6ee74ea5dc"
+}

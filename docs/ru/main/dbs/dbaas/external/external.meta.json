@@ -1,12 +1,13 @@
 {
-    "title": "Внешнее управление инстансом БД",
-    "pageDescription": "",
-    "shortDescription": "Как управлять инстансами БД с помощью Terraform",
-    "metaTitle": "Внешнее управление инстансом БД — VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Внешнее управление инстансом БД",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 7
-  }
+  "title": "Внешнее управление инстансом БД",
+  "pageDescription": "",
+  "shortDescription": "Как управлять инстансами БД с помощью Terraform",
+  "metaTitle": "Внешнее управление инстансом БД — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Внешнее управление инстансом БД",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 7,
+  "uuid": "3b96e92e-b2ab-484d-8da7-35e874ec6a98"
+}
