@@ -1,12 +1,13 @@
 {
-    "title": "Шардирование инстанса БД",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Шардирование инстанса БД — VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Шардирование инстанса БД",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 4
-  }
+  "title": "Шардирование инстанса БД",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Шардирование инстанса БД — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Шардирование инстанса БД",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "7ff17b62-9804-4552-852e-bfc046a2b558"
+}

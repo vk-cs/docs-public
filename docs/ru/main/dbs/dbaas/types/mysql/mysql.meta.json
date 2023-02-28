@@ -1,12 +1,13 @@
 {
-    "title": "MySQL",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "MySQL — VK Cloud",
-    "metaDescription": "MySQL — это колоночная аналитическая СУБД с открытым кодом, позволяющая выполнять аналитические запросы в режиме реального времени на структу",
-    "sectionTitle": "MySQL",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 3
-  }
+  "title": "MySQL",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "MySQL — VK Cloud",
+  "metaDescription": "MySQL — это колоночная аналитическая СУБД с открытым кодом, позволяющая выполнять аналитические запросы в режиме реального времени на структу",
+  "sectionTitle": "MySQL",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "2d915a85-5f41-4574-950e-98cfb801fbf4"
+}

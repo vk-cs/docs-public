@@ -1,12 +1,13 @@
 {
-    "title": "Подключение к БД",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Подключение к БД — VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
-  }
+  "title": "Подключение к БД",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Подключение к БД — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "8b46516f-0525-45e9-a7e5-22cbd740be41"
+}
