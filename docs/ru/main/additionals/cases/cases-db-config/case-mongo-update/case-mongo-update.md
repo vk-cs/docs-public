@@ -87,7 +87,7 @@ rs0:PRIMARY> rs.reconfig(cfg)
 rs0:PRIMARY>
 ```
 
-7.  Авторизуйтесь на сервере `mongo2`, импортируйте ключ репозитория MongoDB, добавьте репозиторий MongoDB и установите MongoDB (как это сделать, читайте в статье [Установка и настройка MongoDB на Ubuntu](https://mcs.mail.ru/help/databases-configuration/mongodb-installation).
+7.  Авторизуйтесь на сервере `mongo2`, импортируйте ключ репозитория MongoDB, добавьте репозиторий MongoDB и установите MongoDB (как это сделать, читайте в статье [Установка и настройка MongoDB на Ubuntu](https://mcs.mail.ru/help/databases-configuration/mongodb-installation)).
 8.  Если вы правили файл `/etc/hosts` на сервере `mongo1`, на текущем сервере сделайте то же самое.
 9.  С сервера mongo1 скопируйте конфигурационный файл `/etc/mongod.conf` на текущий сервер, поменяйте в файле название ключа `PEMKeyFile:` с `/etc/ssl/mongo1.pem` на `PEMKeyFile: /etc/ssl/mongo2.pem`.
 10. На текущий сервер скопируйте ключ `/etc/ssl/mongoCA.pem`.
@@ -362,7 +362,7 @@ root@mongo1:~# apt-get update
 
 ```
 
-4.  Исходя из [документации](https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority), в конфигурационный файл [/etc/mongod.conf](../case-mongo-update/assets/mongod.conf_4 "download") добавьте опцию `enableMajorityReadConcern: false` и замените `net:ssl` на `net:tls` (пример для арбитра):
+4.  Исходя из [документации](https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority), в конфигурационный файл [/etc/mongod.conf](../case-mongo-update/assets/mongod.conf_4 "download")добавьте опцию `enableMajorityReadConcern: false` и замените `net:ssl` на `net:tls` (пример для арбитра):
 
 ```
 net:
