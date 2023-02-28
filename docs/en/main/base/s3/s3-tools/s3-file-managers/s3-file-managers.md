@@ -22,8 +22,8 @@ Installation is performed using [the product distribution kit](https://cyberduck
 
 To connect, specify:
 
-- Connection type: Amazon S3
-- Server and Port: hb.bizmrg.com:443
+- Connection type: `Amazon S3`
+- Server and Port: `hb.bizmrg.com:443`
 - Access Key ID: Key identifier obtained when creating an Object Storage account
 - Secret access key: the secret key obtained when creating an Object Storage account
 
@@ -39,9 +39,9 @@ WinSCP is an open source graphical SFTP (SSH File Transfer Protocol) client for 
 
 To configure, enter the following data:
 
-- Transfer protocol: Amazon S3
-- Hostname: hb.bizmrg.com
-- Port: 443
+- Transfer protocol: `Amazon S3`
+- Hostname: `hb.bizmrg.com`
+- Port: `443`
 - Access Key ID: Key ID obtained when creating an Object Storage account
 - Secret Access Key: The secret key obtained when creating an Object Storage account
 
@@ -114,7 +114,7 @@ brew install s3fs
 
 To mount a bucket in an operating system, you should:
 
-1.  Save the key ID and private key in the ~ / .passwd-s3fs file in the format <key_identifier>: <secret_key>, and also restrict access to the ~ / .passwd-s3fs file:
+1.  Save the key ID and private key in the `~/.passwd-s3fs` file in the format `<key_identifier>: <secret_key>`, and also restrict access to the `~/.passwd-s3fs` file:
     ```
      echo <key_identifier>: <secret_key>> ~ / .passwd-s3fs
     chmod 600 ~ / .passwd-s3fs
