@@ -39,7 +39,7 @@
 </tabpanel>
 <tabpanel>
 
-Создать бизнес-правило для IoT можно с помощью [API](../../../../additionals/api/api-iot/public-api/main-api/mi-storage).
+Создать бизнес-правило для IoT можно с помощью [API](../../../../../additionals/api/api-iot/public-api/main-api/mi-storage).
 
 </tabpanel>
 </tabs>
