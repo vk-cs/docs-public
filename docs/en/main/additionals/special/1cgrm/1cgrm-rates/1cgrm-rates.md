@@ -34,7 +34,7 @@ Demo access is provided only for the first application of each type in the proje
 
 Based on the result of using the 1C: GRM service, the project owner will be invoiced for payment according to the actual time and volume of service use.
 
-If you need to deposit funds and make a prepayment for the service, you should [contact the 1C: GRM service support](mailto:support.1c.grm@mcs.mail.ru).
+If you need to deposit funds and make a prepayment for the service, you should contact the 1C: GRM service support: `support.1c.grm@mcs.mail.ru`.
 
 At the end of the billing period, the project owner will be sent closing documents, reflecting the period and volume of use of services.
 
