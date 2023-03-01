@@ -1,0 +1,13 @@
+{
+  "title": "Базы данных",
+  "pageDescription": "Как использовать Terraform для управления объектами сервиса СУБД.",
+  "shortDescription": "Как использовать Terraform для управления объектами сервиса СУБД",
+  "metaTitle": "Базы данных — VK Cloud",
+  "metaDescription": "Как использовать Terraform для управления объектами сервиса СУБД",
+  "sectionTitle": "Базы данных",
+  "markdown": "Работа с [сервисом СУБД](/ru/dbs/dbaas) с использованием Terraform.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5,
+  "uuid": "806b42d8-3f18-4777-8aa5-8ff492a572f8"
+}
