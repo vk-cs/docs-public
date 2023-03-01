@@ -6,13 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/iot"
+                    "link": "docs/ru/main/additionals/special/iot"
                 },
                 {
-                    "link": "docs/ru/main/additionals/iot/rules"
+                    "link": "docs/ru/main/additionals/special/iot/rules"
                 },
                 {
-                    "link": "docs/ru/main/additionals/iot/rules/constants"
+                    "link": "docs/ru/main/additionals/special/iot/rules/constants"
                 }
             ]
         }
