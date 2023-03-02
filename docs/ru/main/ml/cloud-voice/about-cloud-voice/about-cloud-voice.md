@@ -4,16 +4,12 @@ Cloud Voice — сервис, который позволяет распозна
 
 Для начала использования сервиса перейдите на страницу [Cloud Voice](https://mcs.mail.ru/app/services/machinelearning/voice/methods/). Для этого вы должны быть авторизованы.
 
-Чтобы воспользоваться сервисом, необходимо получить токен доступа. О том как получить токен доступа, читайте [здесь](https://mcs.mail.ru/help/ru_RU/cloud-voice/get-voice-token).
+Чтобы воспользоваться сервисом, необходимо получить токен доступа. О том как получить токен доступа, читайте в [статье](../get-voice-token).
 
 ### Смотрите также
 
-[Получение токена доступа](https://mcs.mail.ru/help/ru_RU/cloud-voice/get-voice-token)
+[Получение токена доступа](../get-voice-token)
 
-[Распознавание речи](https://mcs.mail.ru/help/ru_RU/cloud-voice/speech-recognition)
+[Распознавание речи](../speech-recognition)
 
-[Синтез речи](https://mcs.mail.ru/help/ru_RU/cloud-voice/text-to-speech)
-
-<!--Добавить ссылку на API в meta.json сервиса-->
-
-[API](../../../additionals/api/cloud-voice-api)
+[Синтез речи](../text-to-speech)
