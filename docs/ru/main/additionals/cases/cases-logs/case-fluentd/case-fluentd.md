@@ -457,8 +457,6 @@ spec:
           readOnly: true
         - name: config-volume
           mountPath: /fluentd/etc/conf.d
-        - name: main-config
-          mountPath: /fluentd/etc
       terminationGracePeriodSeconds: 3
       volumes:
       - name: varlog
@@ -470,12 +468,6 @@ spec:
       - name: config-volume
         configMap:
             name: fluentd-es-config-v0.1.1
-      - name: main-config
-        configMap:
-            name: fluentd-es-main-config-v0.1.1
-            items:
-              - key: fluent.conf
-                path: fluent.conf
 ```
 
 6.  Примените манифест в kubernetes:
