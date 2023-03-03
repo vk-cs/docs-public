@@ -323,9 +323,16 @@
 
 Если созданные ресурсы вам больше не нужны, удалите их:
 
-1. Удалите виртуальные машины.
-1. Удалите VPN на платформе VK Cloud.
-1. Удалите прописанные статические маршруты.
-1. Удалите маршрутизаторы.
-1. Удалите сети и подсети.
-1. Удалите плавающие IP-адреса.
+1. [Удалите](/ru/base/iaas/vm-start/manage-vm/vm-delete) виртуальные машины.
+1. [Удалите](../../operations/manage-vpn#udalenie-vpn-tunnelya) VPN-туннель.
+1. [Удалите](../../operations/manage-router#upravlenie-staticheskimi-marshrutami) статические маршруты, прописанные на стороне клиентской сети.
+
+   <info>
+
+   Статические маршруты на стороне облачной сети будут удалены вместе с подсетью, для которой они были прописаны.
+
+   </info>
+
+1. [Удалите](../../operations/manage-router#udalenie-marshrutizatora) маршрутизаторы клиентской и облачной сетей.
+1. Удалите клиентскую и облачную [подсети](../../operations/manage-net#udalenie-podseti) и [сети](../../operations/manage-net#udalenie-seti).
+1. [Удалите](../../operations/manage-floating-ip#udalenie-plavayushchego-ip-adresa-iz-proekta) плавающие IP-адреса.
