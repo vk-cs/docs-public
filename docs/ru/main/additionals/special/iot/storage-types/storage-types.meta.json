@@ -1,12 +1,13 @@
 {
-    "title": "Работа с данными",
-    "pageDescription": "Типы хранилищ данных в платформе IoT и примеры работы с ними.",
-    "shortDescription": "Типы хранилищ данных в платформе IoT и работа с ними",
-    "metaTitle": "Работа с данными — VK Cloud",
-    "metaDescription": "Типы хранилищ данных в платформе IoT и работа с ними",
-    "sectionTitle": "Работа с данными",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 10
-  }
+  "title": "Работа с данными",
+  "pageDescription": "Типы хранилищ данных в платформе IoT и примеры работы с ними.",
+  "shortDescription": "Типы хранилищ данных в платформе IoT и работа с ними",
+  "metaTitle": "Работа с данными — VK Cloud",
+  "metaDescription": "Типы хранилищ данных в платформе IoT и работа с ними",
+  "sectionTitle": "Работа с данными",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 10,
+  "uuid": "de3b69b6-a130-45ab-a42b-a93138b6b037"
+}
