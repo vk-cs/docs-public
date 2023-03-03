@@ -11,11 +11,38 @@
 - Таблица `fluentbit_21_host` — для хранения логов хостовых сервисов (`kublet.service`, `docker.service`, `crio.service`).
 - Таблица `fluentbit_21_kube` — хранит логи непосредственно логи подов.
 
-Аналогичным способом логи можно сохранять, например, в ElasticSearch. Полный список поддерживаемых типов хранилищ можно посмотреть по [ссылке.](https://docs.fluentbit.io/manual/pipeline/outputs)
+Аналогичным способом логи можно сохранять, например, в ElasticSearch. Полный список поддерживаемых типов хранилищ можно посмотреть по [ссылке](https://docs.fluentbit.io/manual/pipeline/outputs).
 
 Разделение сделано намерено, чтобы показать возможность использования разных таблиц в базе данных (индексов в Elasticsearch).
 
 ## Установка Fluent Bit с помощью Helm 3
+
+Перед установкой Fluent Bit внесите изменения в ограничение (constraint) для Gatekeeper. Эти изменения позволят читать логи с нод:
+
+1. Создайте файл `fluentbit_patch.yaml` в кластере и наполните его содержимым:
+
+    ```yaml
+    spec: 
+    match: 
+        kinds: 
+        - apiGroups: 
+        - ""
+        kinds: 
+        - Pod
+    parameters: 
+        allowedHostPaths: 
+        - pathPrefix: /psp
+            readOnly: true
+        - pathPrefix: /var/log
+            readOnly: true
+        - pathPrefix: /var/log/containers
+            readOnly: true
+    ```
+2. Примените изменения, выполнив команду:
+
+    ```bash
+    kubectl patch k8spsphostfilesystem.constraints.gatekeeper.sh/psp-host-filesystem --patch-file fluentbit_patch.yaml --type merge
+    ```
 
 Установить Fluent Bit с файлом настройки можно следующими командами:
 
@@ -24,7 +51,7 @@ helm repo add fluent https://fluent.github.io/helm-charts
 helm install fluent-bit fluent/fluent-bit --values values.yaml
 ```
 
-Больше информации об установке Fluent Bit вы можете найти в официальной документации Fluent Bit: https://docs.fluentbit.io/manual/installation/kubernetes#installing-with-helm-chart
+Больше информации об установке Fluent Bit вы можете найти в [официальной документации](https://docs.fluentbit.io/manual/installation/kubernetes#installing-with-helm-chart) Fluent Bit.
 
 ## Примеры логов
 
