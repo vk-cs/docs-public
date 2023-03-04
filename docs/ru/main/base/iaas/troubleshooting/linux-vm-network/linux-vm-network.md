@@ -265,7 +265,7 @@
 1. Выполните команду:
 
     ```bash
-    sudo systemctl status ssh
+    sudo systemctl status sshd
     ```
 
     По выводу команды определите, запущен ли сервис:
@@ -325,7 +325,7 @@
         1. Посмотрите логи сервиса SSH:
 
             ```bash
-            sudo journalctl -xeu ssh
+            sudo journalctl -xeu sshd
             ```
 
         Если в логах есть подобная строка, то это значит, что порт сервиса SSH используется другим процессом:
@@ -416,7 +416,7 @@
             Для получения дополнительной информации о проблемах в работе сервиса посмотрите логи:
 
             ```bash
-            sudo journalctl -xeu ssh
+            sudo journalctl -xeu sshd
             ```
 
         1. Проверьте наличие доступа по SSH к виртуальной машине. Если доступ не появился, [перейдите к проверке настроек файервола ВМ](#3--proverte-nastroyki-fayervola-virtualnoy-mashiny).
