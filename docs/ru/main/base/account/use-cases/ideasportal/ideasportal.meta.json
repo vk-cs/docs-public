@@ -1,13 +1,13 @@
 {
-  "title": "Портал идей",
+  "title": "Создание идеи на портале идей",
   "pageDescription": "Отправка и просмотр предложений по улучшению платформы VK Cloud.",
   "shortDescription": "Отправка и просмотр предложений по улучшению платформы VK Cloud",
-  "metaTitle": "Портал идей - VK Cloud",
+  "metaTitle": "Создание идеи на портале идей — VK Cloud",
   "metaDescription": "Отправка и просмотр предложений по улучшению платформы VK Cloud",
-  "sectionTitle": "Портал идей",
+  "sectionTitle": "Создание идеи на портале идей",
   "markdown": "Отправка и просмотр предложений по улучшению платформы VK Cloud.",
   "icon": "",
-  "weight": 3,
+  "weight": 8,
   "infobarItems": null,
   "uuid": "ab1486af-0c0a-4aa3-b328-383da74395fc"
 }
