@@ -5,7 +5,7 @@ Let's use virtual processor quotas as an example. To request a vCPU quota increa
 - quota type;
 How much increase is needed.
 
-Information for [GeekBrains program participants request an increase in quotas](../../../faq/).
+Information for [GeekBrains program participants request an increase in quotas](../../faq/).
 
 <info>
 
