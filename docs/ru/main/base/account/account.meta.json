@@ -5,14 +5,9 @@
   "metaTitle": "Личный кабинет — VK Cloud",
   "metaDescription": "Личный кабинет содержит инструменты управления пользовательской инфраструктурой VK Cloud",
   "sectionTitle": "Личный кабинет",
-  "markdown": "Личный кабинет содержит инструменты управления пользовательской инфраструктурой VK Cloud. </warn>",
+  "markdown": "Личный кабинет содержит инструменты управления пользовательской инфраструктурой VK Cloud.",
   "icon": "",
   "weight": 2,
-  "infobarItems": [
-    {
-      "text": "Справка API",
-      "icon": "/docs/_docs/ru/main/base/account/assets/icon.svg",
-      "link": "../../../../../additionals/api/api-account"
-    }],  
+  "infobarItems": null,  
   "uuid": "1ea92b5f-1ea5-43e9-b1c5-9eddb24081d4"
 }
