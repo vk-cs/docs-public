@@ -1,10 +1,10 @@
 {
-  "title": "Личный кабинет",
+  "title": "API",
   "pageDescription": "Описание управления функциями платформы VK Cloud с помощью API.",
   "shortDescription": "Инструменты управления функциями платформы с помощью API",
-  "metaTitle": "Личный кабинет - VK Cloud",
+  "metaTitle": "API — VK Cloud",
   "metaDescription": "Инструменты управления функциями платформы VK Cloud с помощью API",
-  "sectionTitle": "Личный кабинет",
+  "sectionTitle": "API",
   "markdown": "Описание управления функциями платформы VK Cloud с помощью API.",
   "icon": "",
   "weight": 7,
