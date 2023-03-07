@@ -1,3 +1,21 @@
+## Kubernetes 1.24.9 <a id="v1-24-9"></a>
+
+**Changes in Kubernetes aaS service:** Calico updated to version 3.25.0.
+
+**Important changes in Kubernetes:**
+
+- Dockershim [deleted from kubelet](https://kubernetes.io/docs/setup/production-environment/container-runtimes/).
+- Beta APIs are [off by default](https://github.com/kubernetes/enhancements/issues/3136).
+- Kubernetes 1.24 offers beta support for [publishing its APIs in the OpenAPI v3 format](https://github.com/kubernetes/enhancements/issues/2896).
+- Secrets for service accounts are not created by default.
+
+**Vulnerability fixes:**
+
+- [CVE-2022-3294](https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2022-3294): node address isn't always verified when proxying.
+- [CVE-2022-3162](https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2022-3162): unauthorized read of custom resources.
+
+Read more about these and other changes in [official Kubernetes documentation](https://kubernetes.io/blog/2022/05/03/kubernetes-1-24-release-announcement/).
+
 ## Kubernetes 1.23.13 <a id="v1-23-13"></a>
 
 **Important changes in Kubernetes:** Kubernetes is now built on Golang 1.17.13.

@@ -2,9 +2,9 @@ New versions of Kubernetes aaS from VK Cloud are usually added 1 month after the
 
 The following versions of Kubernetes aaS from VK Cloud are currently available:
 
+- 1.24.9
 - 1.23.13
 - 1.22.9
-- 1.21.4
 
 When [creating a new cluster](../../../operations/create-cluster), choose the latest available [version of Kubernetes](#k8s-versions-list). If possible, [update the cluster](../../../operations/update) to the latest available version. The update procedure is described in [relevant concept section](../../update).
 
@@ -21,6 +21,7 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 
 |Version of Kubernetes|Official release date|VK Kubernetes aaS release date|VK Kubernetes aaS end of support date|
 |------|------|------|-------|
+|1.24.x|8 December 2022|6.03.2023|6.05.2024|
 |1.23.x|13 April 2022|15.08.2022|15.10.2023|
 |1.22.x|19 January 2022|18.02.2022|18.04.2023|
 |1.21.4|8 April 2021|12.10.2021|12.12.2022|
@@ -35,13 +36,13 @@ The version history can be viewed at [Kubernetes version history](../version-cha
 
 New features are added to all versions of Kubernetes, unless a feature and version are incompatible.
 
-| Feature                                  | 1.17.x–1.20.x | 1.21.4 | 1.22.x | 1.23.x |
-| ---------------------------------------- | ------------- | ------ | ------ | ------ |
-| Node group scaling settings              | +             | +      | +      | +      |
-| Invalidate the key pair                  | +             | +      | +      | -      |
-| Change the size of the Prometheus disk   | +             | +      | +      | +      |
-| Change the type of Master virtual machine| +             | +      | +      | +      |
-| Update cluster version                   | +             | +      | +      | +      |
-| Label & Taints                           | +             | +      | +      | +      |
-| Cluster nodes on AlmaLinux               | -             | +      | +      | +      |
-| Integration with VK Cloud IAM            | -             | -      | -      | +      |
+| Feature                                  | 1.17.x–1.20.x | 1.21.4–1.22.х | 1.23.x–1.24.х |
+| ---------------------------------------- | ------------- | ------------- | ------ |
+| Node group scaling settings              | +             | +             | +      |
+| Invalidate the key pair                  | +             | +             | -      |
+| Change the size of the Prometheus disk   | +             | +             | +      |
+| Change the type of Master virtual machine| +             | +             | +      |
+| Update cluster version                   | +             | +             | +      |
+| Label & Taints                           | +             | +             | +      |
+| Cluster nodes on AlmaLinux               | -             | +             | +      |
+| Integration with VK Cloud IAM            | -             | -             | +      |
