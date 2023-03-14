@@ -1,6 +1,6 @@
 {
-    "meta": "Коннекторы",
-    "path": "/connectors",
+    "meta": "Шаблоны устройств",
+    "path": "/device-templates",
     "groups": [
         {
             "title": "ИНФОРМАЦИЯ",
@@ -9,10 +9,21 @@
                     "link": "docs/ru/main/additionals/special/iot/about-iot"
                 },
                 {
-                    "link": "docs/ru/main/additionals/special/iot/rules/modules"
+                    "link": "docs/ru/main/additionals/special/iot/devices/connection"
+                }
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                {
+                    "link": "docs/ru/main/additionals/special/iot/quick-start"
                 },
                 {
-                    "link": "docs/ru/main/additionals/special/iot/rules/modules/connectors"
+                    "link": "docs/ru/main/additionals/special/iot/devices/create-device"
+                },
+                {
+                    "link": "docs/ru/main/additionals/special/iot/devices/connect-device"
                 }
             ]
         },
