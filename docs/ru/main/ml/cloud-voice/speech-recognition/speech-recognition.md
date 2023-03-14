@@ -14,39 +14,25 @@ curl -L --request POST 'https://voice.mcs.mail.ru/asr' \
 --header 'Content-Type: audio/ogg; codecs=opus' \
 --header 'Authorization: Bearer xxxxxxxxxx'  \
 --data-binary '@/Users/User/tts.ogg'
-````
+```
 
 Пример ответа:
 
 ```json
 {
-  "qid": "feee44764aef4d658033c9d5c7051835",
-  "result": {
-    "texts": [
-      {
-        "text": "      ",
-        "confidence": 0.9998627976592401,
-        "punctuated_text": "     , ?"
-      },
-      {
-        "text": "      ",
-        "confidence": 0.00011370451545257528,
-        "punctuated_text": "      ?"
-      },
-      {
-        "text": "     ",
-        "confidence": 6.99038930802672e-06,
-        "punctuated_text": "     ?"
-      },
-      {
-        "text": "     ",
-        "confidence": 6.484244242468498e-06,
-        "punctuated_text": "     ?"
-      }
-    ]
-  }
+	"qid": "0ac6294a351d42ad859404ecd349e4b9",
+	"result": {
+		"texts": [
+			{
+				"text": "привет алиса",
+				"confidence": 1.0,
+				"punctuated_text": "Привет, Алиса."
+			}
+		],
+		"phrase_id": "20220921-1515-4d75-92b4-24b6c101ba6a"
+	}
 }
-````
+```
 
 ### Поддерживаемые форматы аудио
 
@@ -90,7 +76,7 @@ curl -L --request POST 'https://voice.mcs.mail.ru/asr' \
 curl --request POST \
   --url https://voice.mcs.mail.ru/asr_stream/create_task \
   --header 'Authorization: Bearer access_tokenxxxxxxxx'
-````
+```
 
 Пример ответа:
 
@@ -102,16 +88,18 @@ curl --request POST \
     "task_token": "040b2fcfc3d9b9806b691070e873125dfc0450a8251887ba91b19be08eb3951c"
   }
 }
-````
+```
 
 ### Запрос на отправку чанка
 
+Чанк представляет из себя аудиофрагмент выбранного формата, соответственно, в каждом чанке должны присутствовать заголовки.
+
 Чтобы отправить чанк, достаточно:
 
-- отправить POST запрос на https://voice.mcs.mail.ru/asr_stream/add_chunk, передав в заголовке `Authorization- task_token`;
-- в GET параметрах передать `task_id` и `chunk_num` (нумерация начинается с 1);
+- отправить POST-запрос на https://voice.mcs.mail.ru/asr_stream/add_chunk, передав в заголовке `Authorization- task_token`;
+- в GET-параметрах передать `task_id` и `chunk_num` (нумерация начинается с `0`);
 - указать корректный `Content-Type` в заголовке запроса.
-- в теле запроса передается чанк, который представляет собой массив байт в формате *wav* или *ogg*.
+- в теле запроса передается чанк, который представляет собой массив байт в формате `wav` или `ogg`.
 
 В ответе придет результат распознавания чанков.
 
@@ -123,7 +111,7 @@ curl --request POST \
   --header 'Authorization: Bearer task_tokenxxxxxxxx' \
   --header 'Content-Type: audio/wave' \
   --data 'xxxxxxxxxx'
-````
+```
 
 Пример ответа:
 
@@ -131,115 +119,48 @@ curl --request POST \
 {
   "qid": "4d44cb0eb81f4e7f84a7997ec4f2f3c4",
   "result": {
-    "text": "привет маруся",
-    "punctuated_text": "Привет, Маруся."
+    "text": "привет маруся"
   }
 }
-````
-
-> **Важно**
-> Интервал между отправкой чанков не должен превышать 5 секунд, после этого задача переходит в статус *done* и продолжать отправлять чанки будет нельзя. Так же невозможно отправлять следующий чанк, не дожидаясь результатов обработки предыдущего.
-
-#### Поддерживаемые форматы аудио
-
-<table style="width: 100%;">
-	<tbody>
-		<tr>
-			<td style="width: 33.3333%; background-color: rgb(239, 239, 239); text-align: center;">Контейнер</td>
-			<td style="width: 33.3333%; background-color: rgb(239, 239, 239); text-align: center;">Кодек</td>
-			<td style="width: 33.3333%; background-color: rgb(239, 239, 239); text-align: center;">Content-Type
-				<br>
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 33.3333%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">WAV</span>
-				<br>
-			</td>
-			<td style="width: 33.3333%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">&mdash;</span>
-				<br>
-			</td>
-			<td style="width: 33.3333%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">audio/wave</span>
-				<br>
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 33.3333%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">OGG</span>
-				<br>
-			</td>
-			<td style="width: 33.3333%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Opus</span>
-				<br>
-			</td>
-			<td style="width: 33.3333%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">audio/ogg; codecs=opus</span>
-				<br>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-## Ограничения
-
-<table style="width: 100%;">
-	<tbody>
-		<tr>
-			<td style="width: 50%; text-align: center; background-color: rgb(239, 239, 239);">Ограничение</td>
-			<td style="width: 50%; text-align: center; background-color: rgb(239, 239, 239);">Значение</td>
-		</tr>
-		<tr>
-			<td style="width: 50.0000%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Максимальный размер аудио файла</span>
-				<br>
-			</td>
-			<td style="width: 50.0000%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">32100 Б</span>
-				<br>
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 50.0000%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Максимальная длительность аудио</span>
-				<br>
-			</td>
-			<td style="width: 50.0000%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">1 с</span>
-				<br>
-			</td>
-		</tr>
-		<tr>
-			<td style="width: 50.0000%;"><span id="isPasted" style="font-size:11.5pt;font-family:Arial;color:#333333;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;">Максимальное количество каналов</span>
-				<br>
-			</td>
-			<td style="width: 50.0000%;">1</td>
-		</tr>
-	</tbody>
-</table>
-
-### Запрос на получение конечного результата задачи
-
-В любой момент после отправки чанков можно получить результат, для этого необходимо отправить GET запрос на https://voice.mcs.mail.ru/asr_stream/get_result, передав в заголовке Authorization- task_token, в GET параметрах — task_id.
-В ответе придет результат распознавания с текущим статусом задачи.
+```
 
 <warn>
 
-Интервал между отправкой чанков не должен превышать 5 секунд, после этого задача переходит в статус *done* и продолжать отправлять чанки будет нельзя.
-
-Также невозможно отправлять следующий чанк, не дожидаясь результатов обработки предыдущего.
+Интервал между отправкой чанков не должен превышать 5 секунд, после этого задача переходит в статус `done` и продолжать отправлять чанки будет нельзя. Сами чанки необходимо отправлять последовательно и синхронно.
 
 </warn>
 
+<err>
+
+Для последнего чанка необходимо передать GET-параметр со значением `last=1`.
+
+</err>
+
 #### Поддерживаемые форматы аудио
 
-| Контейнер | Кодек | Content-Type |
-| --- | --- | --- |
-| WAV | — | audio/wave |
-| OGG | Opus | audio/ogg; codecs=opus |
+| Контейнер | Кодек | Content-type          |
+| --------- | ----- | --------------------- |
+| WAV       | —     | audio/wave            |
+| OGG       | Opus  | audio/ogg codecs=opus |
 
 ## Ограничения
 
-| Ограничение | Значение |
-| --- | --- |
-| Максимальный размер чанка | 32100 Б |
-| Максимальная длительность чанка | 1 с |
-| Максимальное количество каналов | 1 |
+| Ограничение                     | Значение |
+| ------------------------------- | -------- |
+| Максимальный размер аудиофайла  | 32100 Б  |
+| Максимальная длительность аудио | 1 с      |
+| Максимальное количество каналов | 1        |
+| Минимальное количество чанков   | 5        |
+
+<info>
+
+Рекомендуемая длина чанка 0.08 секунды.
+
+</info>
 
 ### Запрос на получение конечного результата задачи
 
-В любой момент после отправки чанков можно получить результат, для этого необходимо отправить GET запрос на https://voice.mcs.mail.ru/asr_stream/get_result, передав в заголовке `Authorization- task_token`, в GET параметрах — `task_id`.
+В любой момент после отправки чанков можно получить результат, для этого необходимо отправить GET-запрос на https://voice.mcs.mail.ru/asr_stream/get_result, передав в заголовке `Authorization- task_token`, в GET параметрах — `task_id`.
 
 В ответе придет результат распознавания с текущим статусом задачи.
 
@@ -249,7 +170,7 @@ curl --request POST \
 curl --request GET \
   --url 'https://voice.mcs.mail.ru/asr_stream/get_result?task_id=xxxxx' \
   --header 'Authorization: Bearer task_tokenxxxxxxxx' \
-````
+```
 
 Пример ответа:
 
@@ -258,8 +179,7 @@ curl --request GET \
   "qid": "517e5ba9f4a9465c9d73778bedac0808",
   "result": {
     "text": "привет маруся привет маруся",
-    "punctuated_text": "Привет, Маруся. Привет, Маруся.",
     "status": "done"
   }
 }
-````
+```

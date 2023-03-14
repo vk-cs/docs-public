@@ -20,31 +20,17 @@ Answer example:
 
 ```json
 {
-  "qid": "feee44764aef4d658033c9d5c7051835",
-  "result": {
-    "texts": [
-      {
-        "text": " ",
-        "confidence": 0.9998627976592401,
-        "punctuated_text": " , ?"
-      },
-      {
-        "text": " ",
-        "confidence": 0.00011370451545257528,
-        "punctuated_text": "?"
-      },
-      {
-        "text": " ",
-        "confidence": 6.99038930802672e-6,
-        "punctuated_text": "?"
-      },
-      {
-        "text": " ",
-        "confidence": 6.484244242468498e-6,
-        "punctuated_text": "?"
-      }
-    ]
-  }
+	"qid": "0ac6294a351d42ad859404ecd349e4b9",
+	"result": {
+		"texts": [
+			{
+				"text": "hello alice",
+				"confidence": 1.0,
+				"punctuated_text": "Hello, Alice."
+			}
+		],
+		"phrase_id": "20220921-1515-4d75-92b4-24b6c101ba6a"
+	}
 }
 ```
 
@@ -106,12 +92,14 @@ Answer example:
 
 ### Request to send a chunk
 
+A chunk is an audio fragment of the selected format, respectively, headers must be present in each chunk.
+
 To send a chunk, all you need to do is:
 
 - send a POST request to https://voice.mcs.mail.ru/asr_stream/add_chunk, passing in the `Authorization-task_token` header;
-- pass `task_id` and `chunk_num` in GET parameters (numbering starts from 1);
+- pass `task_id` and `chunk_num` in GET parameters (numbering starts from `0`);
 - specify the correct `Content-Type` in the request header.
-- a chunk is sent in the request body, which is an array of bytes in _wav_ or _ogg_ format.
+- a chunk is sent in the request body, which is an array of bytes in `wav` or `ogg` format.
 
 The response will be the result of chunk recognition.
 
@@ -131,23 +119,28 @@ Answer example:
 {
   "qid": "4d44cb0eb81f4e7f84a7997ec4f2f3c4",
   "result": {
-    "text": "hello marusya",
-    "punctuated_text": "Hello Marusya."
+    "text": "hello marusya"
   }
 }
 ```
 
 <warn>
 
-The interval between sending chunks should not exceed 5 seconds, after that the task goes into _done_ status and it will be impossible to continue sending chunks.
+The interval between sending chunks should not exceed 5 seconds, after that the task goes into `done` status and it will be impossible to continue sending chunks.
 
-It is also impossible to send the next chunk without waiting for the results of processing the previous one.
+Chunks themselves must be sent sequentially and synchronously.
 
 </warn>
 
+<err>
+
+For the last chunk, you need to pass a GET-parameter with the value `last=1`.
+
+</err>
+
 #### Supported audio formats
 
-| container | Codec | content type          |
+| Container | Codek | Content type          |
 | --------- | ----- | --------------------- |
 | WAV       | —     | audio/wave            |
 | ogg       | Opus  | audio/ogg codecs=opus |
@@ -159,6 +152,13 @@ It is also impossible to send the next chunk without waiting for the results of 
 | Maximum chunk size         | 32100 B |
 | Maximum chunk duration     | 1 s     |
 | Maximum number of channels | 1       |
+| Minimum number of chunks   | 5       |
+
+<info>
+
+The recommended chunk length is 0.08 seconds.
+
+</info>
 
 ### Request to get the end result of the task
 
@@ -181,5 +181,7 @@ Answer example:
   "qid": "517e5ba9f4a9465c9d73778bedac0808",
   "result": {
     "text": "hello marusya hello marusya",
-    "punctuated_text": "Hello Marusya.
+    "status": "done"
+  }
+}
 ```
