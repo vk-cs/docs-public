@@ -6,13 +6,46 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/special/iot"
-                },
-                {
-                    "link": "docs/ru/main/additionals/special/iot/rules"
+                    "link": "docs/ru/main/additionals/special/iot/about-iot"
                 },
                 {
                     "link": "docs/ru/main/additionals/special/iot/rules/cron_context"
+                }
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                {
+                    "link": "docs/ru/main/additionals/special/iot/quick-start"
+                },
+                {
+                    "link": "docs/ru/main/additionals/special/iot/schedulers/add"
+                }
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                {
+                    "link": "docs/ru/main/additionals/special/iot/rules"
+                }
+            ]
+        },
+        {
+            "title": "API",
+            "links": [
+                {
+                    "link": "docs/ru/main/additionals/api/api-iot/signin-signup"
+                },
+                {
+                    "link": "docs/ru/main/additionals/api/api-iot/public-api/main-api"
+                },
+                {
+                    "link": "docs/ru/main/additionals/api/api-iot/public-api/api-devices"
+                },
+                {
+                    "link": "docs/ru/main/additionals/special/iot/storage-types"
                 }
             ]
         }
