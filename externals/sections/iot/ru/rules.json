@@ -6,10 +6,18 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/special/iot"
+                    "link": "docs/ru/main/additionals/special/iot/about-iot"
+                }
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                {
+                    "link": "docs/ru/main/additionals/special/iot/quick-start"
                 },
                 {
-                    "link": "docs/ru/main/additionals/special/iot/rules"
+                    "link": "docs/ru/main/additionals/special/iot/rules/engine"
                 }
             ]
         },
@@ -17,16 +25,27 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/special/iot/rules/connectors"
+                    "link": "docs/ru/main/additionals/special/iot/rules"
                 },
                 {
-                    "link": "docs/ru/main/additionals/special/iot/rules/constants"
+                    "link": "docs/ru/main/additionals/special/iot/rules/modules"
+                }
+            ]
+        },
+        {
+            "title": "API",
+            "links": [
+                {
+                    "link": "docs/ru/main/additionals/api/api-iot/signin-signup"
                 },
                 {
-                    "link": "docs/ru/main/additionals/special/iot/rules/context"
+                    "link": "docs/ru/main/additionals/api/api-iot/public-api/main-api"
                 },
                 {
-                    "link": "docs/ru/main/additionals/special/iot/rules/cron_context"
+                    "link": "docs/ru/main/additionals/api/api-iot/public-api/api-devices"
+                },
+                {
+                    "link": "docs/ru/main/additionals/special/iot/storage-types"
                 }
             ]
         }
