@@ -1,26 +1,29 @@
 {
-    "title": "Резервное копирование",
-    "pageDescription": "Особенности работы сервисов резервного копирования в VK Cloud.",
-    "shortDescription": "Особенности работы сервисов резервного копирования",
-    "metaTitle": "Резервное копирование — VK Cloud",
-    "metaDescription": "Концепции резервного копирования",
-    "sectionTitle": "Резервное копирование",
-    "markdown": "Особенности работы резервного копирования в VK Cloud.",
-    "icon": "",
-    "infobarItems": [
-      {
-        "text": "Резервные копии ВМ",
-        "link": "../../../base/iaas/vm-backup"
-      },
-      {
-        "text": "Резервные копии СУБД",
-        "link": "../../../dbs/dbaas/db-backup"
-      },
-      {
-        "text": "Справка API",
-        "link": "../../../additionals/api/backup-api"
-      }],
-    "weight": 1,
-    "uuid": "",
-    "additionalUuids": ["32918039-cfc5-49f5-9300-a6b2422af0f5"]
-  }
+  "title": "Резервное копирование",
+  "pageDescription": "Особенности работы сервисов резервного копирования в VK Cloud.",
+  "shortDescription": "Особенности работы сервисов резервного копирования",
+  "metaTitle": "Резервное копирование — VK Cloud",
+  "metaDescription": "Концепции резервного копирования",
+  "sectionTitle": "Резервное копирование",
+  "markdown": "Особенности работы резервного копирования в VK Cloud.",
+  "icon": "",
+  "infobarItems": [
+    {
+      "text": "Резервные копии ВМ",
+      "link": "../../../base/iaas/vm-backup"
+    },
+    {
+      "text": "Резервные копии СУБД",
+      "link": "../../../dbs/dbaas/db-backup"
+    },
+    {
+      "text": "Справка API",
+      "link": "../../../additionals/api/backup-api"
+    }
+  ],
+  "weight": 1,
+  "uuid": "c5585342-538a-4fa5-862d-bce351c96daf",
+  "additionalUuids": [
+    "32918039-cfc5-49f5-9300-a6b2422af0f5"
+  ]
+}
