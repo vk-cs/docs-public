@@ -1,6 +1,6 @@
 Метод **improve** применяется для улучшения фотографий.
 
-### Запрос
+## Запрос
 
 Авторизационные данные передаются в строке запроса:
 
@@ -11,11 +11,11 @@
 
 Поддерживаемые провайдеры OAuth2:
 
-| Провайдер     | Значение oauth_provider     | Получение токена                             |
-| ------------- | --------------------------- | -------------------------------------------- |
-| VK Cloud      | mcs                         | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
+| Провайдер | Значение `oauth_provider` | Получение токена                                    |
+|  -------- |  ------------------------ | --------------------------------------------------- |
+| VK Cloud  | mcs                       | Смотрите в [статье](../../vision-start/auth-vision/)|
 
-Параметры запроса передаются в формате JSON в теле запроса с name="meta":
+Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 
 | Параметр     | Тип          | Значение                            |
 | ------------ | ------------ | ----------------------------------- |
@@ -24,14 +24,14 @@
 | rfactor      | int          | Коэффициент увеличения разрешения, может принимать значения либо 2, либо 4  (required non-empty for resolution mode) |
 | ftype        | string       | Тип изображения, "art" или "photo"  (required non-empty for resolution mode)                                         |
 
-Возможные значения mode:
+Возможные значения `mode`:
 
 | Параметр     | Значение                  |
 | ------------ | ------------------------- |
 | improve      | Восстановление фотографий |
 | resolution   | Увеличение разрешения     |
 
-### image_meta
+Параметры `image_meta`:
 
 | Параметр     | Тип     | Значение                                     |
 | ------------ | ------- | -------------------------------------------- |
@@ -41,49 +41,38 @@
 
 Максимальное количество изображений в одном запросе равняется 48. Максимальный размер каждого изображения не должен превышать 8МБ.
 
-Пример запроса:
+## Пример запроса
 
-```
-POST /api/v1/photo/improve/?oauth_provider=mr&oauth_token=123 HTTP/1.1
+Окрашивание и улучшение качества ч/б изображения:
 
-Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp
-
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="file_0"; filename=""
-Content-Type: image/jpeg
-
-000000000000000000000000000
-000000000000000000000000000
-000000000000000000000000000
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="file_1"; filename=""
-Content-Type: image/jpeg
-
-111111111111111111111111111
-111111111111111111111111111
-111111111111111111111111111
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="meta"
-
-{"images":[{"name":"file_0"}, {"name":"file_1"}], "mode":["improve", "resolution"]}
-------WebKitFormBoundaryfCqTBHeLZlsicvMp--
+```curl
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@photo_imrove_improve_ok.jpg;type=image/jpeg'   -F 'meta={
+  "mode": [
+    "improve"
+  ],
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
 ```
 
-### Ответ
+## Ответ
 
 | Параметр     | Тип     | Значение                                                |
 | ------------ | ------- | ------------------------------------------------------- |
-| status       | int     | 200 в случае успеха, иначе описание ошибки будет в body |
+| status       | int     | `200` в случае успеха, иначе описание ошибки будет в body |
 | body         | string  | Тело ответа |
 
-### response
+Параметры `response`:
 
 | Параметр     | Тип                 | Значение                           |
 | ------------ | ------------------- | ---------------------------------- |
 | improve      | []improve_object    | Массив ответов для improve mode    |
 | resolution   | []resolution_object | Массив ответов для resolution mode |
 
-### improve_object
+Параметры `improve_object`:
 
 | Параметр           | Тип     | Значение                                       |
 | ------------------ | ------- | ---------------------------------------------- |
@@ -95,83 +84,168 @@ Content-Disposition: form-data; name="meta"
 | colorized          | string  | Jpeg картинка фотографии с восстановленным цветом (base64)             |
 | bw                 | bool    | True — алгоритм считает, что ему дали на вход чёрно-белую фотографию, false — алгоритм считает, что ему дали на вход цветную фотографию    |
 
-### resolution_object
+Параметры `resolution_object`:
 
 | Параметр     | Тип     | Значение                                                    |
 | ------------ | ------- | ----------------------------------------------------------- |
-| status       | enum    | Результат выполнения                                        |
+| status       | enum    | Результат выполнения:<br>- `0` — успешно;<br>- `1` — перманентная ошибка;<br>- `2` — временная ошибка |
 | error        | string  | Текстовое описание ошибки (optional)                        |
 | name         | string  | Имя файла для сопоставления файлов в запросе и ответе       |
 | resolved     | string  | Jpeg картинка фотографии с увеличенным разрешением (base64) |
 
-### status
+## Пример ответа
 
-| Параметр     | Значение            |
-| ------------ | ------------------- |
-| 0            | Успешно             |
-| 1            | Перманентная ошибка |
-| 2            | Временная ошибка    |
+```json
+{
+  "status": 200,
+  "body": {
+    "improve": [
+      {
+        "status": 0,
+        "name": "file",
+        "improved": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgrdN6OW4fD17xGW9rNFH51rZO6fc/wBJl/eVinwtrWeShPc10C/8gt6wK8CGx3H/2Q==",
+        "colorized_improved": "/9j/4AAQSkZJRgABAQAAAQABAAD/8AXKOs6NWdR22KdVvT+ugy3tZoo/OtbJ3T7n+ky/vKxT4W1rPJQnua6Bf+QW9YFelTWhnY/9k=",
+        "colorized": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/XQZb2s0UfnWtk7p9z/SZf3lYp8La1nkoT3NdAv/ILesCvUpK6IP/Z",
+        "bw": true
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+## Дополнительные примеры
+
+### Увеличение разрешения изображения
+
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@photo_imrove_resolution_ok.jpeg;type=image/jpeg' \
+  -F 'meta={
+  "mode": [
+    "resolution"
+  ],
+  "rfactor": 2,
+  "rtype": "photo",
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
 
 Пример ответа:
 
 ```json
 {
-   "status":200,
-   "body":{
-      "status":0,
-      "improve":[
-         {
-            "status":0,
-            "name":"file_0",
-            "improved":"base64",
-            "colorized_improved":"base64",
-            "colorized":"base64",
-            "bw":true
-         }
-      ],
-      "resolution":[
-          {
-            "status":0,
-            "name":"file_0",
-            "resolved":"base64"
-         }
-      ]
-   }
+  "status": 200,
+  "body": {
+    "resolution": [
+      {
+        "status": 0,
+        "name": "file",
+        "resolved": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/6a+9FFZSSUj0MPqf/9k="
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
 }
 ```
 
-Пример ответа, когда не удалось выполнить запрос:
+### Некорректный rfactor
+
+Пример запроса:
+
+```curl
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@photo_imrove_resolution_ok.jpeg;type=image/jpeg'   -F 'meta={
+  "mode": [
+    "resolution"
+  ],
+  "rfactor": 1010,
+  "rtype": "photo",
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
+Пример ответа:
 
 ```json
 {
-    "status":500,
-    "body":"Internal Server Error",
-    "htmlencoded":false,
-    "last_modified":0
+  "status": 400,
+  "body": "rfactor must be 2 or 4",
+  "htmlencoded": false,
+  "last_modified": 0
 }
 ```
 
-Пример ответа, если не получилось загрузить картинку:
+### Невалидное изображение
+
+Пример запроса:
+
+```curl
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@empty.jpg;type=image/jpeg'   -F 'meta={
+  "mode": [
+    "resolution"
+  ],
+  "rfactor": 2,
+  "rtype": "photo",
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
+Пример ответа:
 
 ```json
 {
-   "status":200,
-   "body":{
-      "improve":[
-       {
-           "status":2,
-           "error":"unable decode input image",
-           "name":"file_0"
-       }
-     ]
-   },
-   "htmlencoded":false,
-   "last_modified":0
+  "status": 400,
+  "body": "empty image",
+  "htmlencoded": false,
+  "last_modified": 0
 }
 ```
 
-Пример curl запроса:
+### Невалидный параметр meta
 
-```bash
-curl -v "https://smarty.mail.ru/api/v1/photo/improve?oauth_provider=mcs&oauth_token=token" -F file_0=@test.jpeg -F meta='{"images":[{"name":"file_0"}], "mode":["resolution", "improve"], "rfactor":4, "rtype":"art"}'
+Пример запроса:
+
+```curl
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@photo_imrove_resolution_ok.jpeg;type=image/jpeg'   -F 'meta={
+  "mode": [
+    "resolution"
+  ],
+  "rfactor": 2,
+  "rtype": "photo",
+  "images": [
+    {
+      "name": "file1"
+    }
+  ]
+}'
+```
+
+Пример ответа:
+
+```json
+{
+  "status": 400,
+  "body": "could not get image by name file1: http: no such file",
+  "htmlencoded": false,
+  "last_modified": 0
+}
 ```

@@ -14,7 +14,7 @@ curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth\_provider="mcs&oa
 
 Сервер авторизации. В Vision доступна авторизация через VK Cloud и OAUTH.MAIL.RU.
 
-- **oauth_provider=mcs** — авторизация доступная всем клиентам mcs, у которых подключено Машинное обучение -> Vision API.
+- **oauth_provider=mcs** — авторизация доступная всем клиентам mcs, у которых подключено **Машинное обучение** -> **Vision API**.
 - **oauth_provider=mr** — авторизация через oauth.mail.ru, доступна только для внутренних проектов компании мейл.ру, подробнее о ней можно узнать на [https://o2.mail.ru/docs/](https://o2.mail.ru/docs/).
 
 ## oauth_token
