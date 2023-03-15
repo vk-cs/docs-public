@@ -2,10 +2,10 @@ HOST: `https://smarty.mail.ru`
 
 Для распознавания лиц используются четыре метода API:
 
-- Set (/api/v1/persons/set)
-- Recognize (/api/v1/persons/recognize)
-- Delete (/api/v1/persons/delete)
-- Truncate (/api/v1/persons/truncate)
+- set (`/api/v1/persons/set`);
+- recognize (`/api/v1/persons/recognize`);
+- delete (`/api/v1/persons/delete`);
+- truncate (`/api/v1/persons/truncate`).
 
 Рассмотрим каждый из них подробнее.
 
@@ -24,56 +24,46 @@ HOST: `https://smarty.mail.ru`
 
 Поддерживаемые провайдеры OAuth2:
 
-| Провайдер | Значение oauth_provider | Получение токена                         |
-|  -------- |  ---------------------- |  --------------------------------------- |
-| Mail.Ru   | mcs                     | Смотрите в [статье](https://mcs.mail.ru/)|
+| Провайдер | Значение `oauth_provider` | Получение токена                                    |
+|  -------- |  ------------------------ | --------------------------------------------------- |
+| VK Cloud  | mcs                       | Смотрите в [статье](../../vision-start/auth-vision/)|
 
-Параметры запроса передаются в формате JSON в теле запроса с name="meta":
+Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 
 | Параметр | Тип           | Значение                                               |
 | -------- | ------------- | ------------------------------------------------------ |
 | space    | string        | Имена файлов для сопоставления файлов в запросе и ответе (required non-empty) |
 | images   | []image_meta  | ID, сопоставляемый персоне на фото (required non-empty)|
 
-Параметр space используется для избежания пересечений по person. Таким образом, person1 из space 0 и person1 из space 1 разные. Для приложений, решающих различные задачи, имеет смысл использовать различные значения space.
+Параметр `space` используется для избежания пересечений по `person`. Таким образом, `person1` из `space 0` и `person1` из `space 1` разные. Для приложений, решающих различные задачи, имеет смысл использовать различные значения `space`.
 
-Клиент может иметь до 10 различных space. Значения space изменяются от 0 до 9. В случае превышения лимита вернется ошибка.
+Клиент может иметь до 10 различных `space`. Значения `space` изменяются от `0` до `9`. В случае превышения лимита вернется ошибка.
 
-### image_meta
+Параметры `image_meta`:
 
 | Параметр  | Тип    | Значение |
 | --------- | ------ | -------- |
-| name      | string | Имена файлов для сопоставления файлов в запросе и ответе (required non-empty |
+| name      | string | Имена файлов для сопоставления файлов в запросе и ответе (required non-empty) |
 | person_id | int    | ID, сопоставляемый персоне на фото (required non-empty) |
 
-Изображения передаются в теле запроса, значения поля name должны соответствовать переданным в images. Максимальное количество изображений в одном запросе равняется 100. Максимальный размер каждого изображения не должен превышать 4 МБ.
+Изображения передаются в теле запроса, значения поля `name` должны соответствовать переданным в `images`. Максимальное количество изображений в одном запросе равняется 100. Максимальный размер каждого изображения не должен превышать 4 МБ.
 
-Пример запроса:
+### Пример запроса
 
-```
-POST /api/v1/persons/set?oauth_provider=mcs&oauth_token=123 HTTP/1.1
-
-Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp
-
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="file_0"; filename=""
-Content-Type: image/jpeg
-
-000000000000000000000000000
-000000000000000000000000000
-000000000000000000000000000
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="file_1"; filename=""
-Content-Type: image/jpeg
-
-111111111111111111111111111
-111111111111111111111111111
-111111111111111111111111111
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="meta"
-
-{"space":"0", "images":[{"name":"file_0", "person_id":1},{"name":"file_1", "person_id":2}]}
-------WebKitFormBoundaryfCqTBHeLZlsicvMp--
+```curl
+curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs"      \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@persons_set_ok.jpg;type=image/jpeg' \
+  -F 'meta={
+  "space": "5",
+  "images": [
+    {
+      "name": "file",
+      "person_id": 1
+    }
+  ]
+}'
 ```
 
 ### Ответ
@@ -83,50 +73,197 @@ Content-Disposition: form-data; name="meta"
 | status   | int      | 200 в случае успешного взаимодействия с серверами Vision|
 | body     | response | Тело ответа                                             |
 
-### response
+Параметры `response`:
 
 | Параметр | Тип      | Значение                         |
 | -------- | -------- | -------------------------------- |
 | objects  | []object | массив ответов для каждого файла |
 
-### object
+Параметры `object`:
 
 | Параметр | Тип    | Значение                                              |
 | -------- | ------ | ----------------------------------------------------- |
-| status   | enum   | Результат выполнения                                  |
+| status   | enum   | Результат выполнения:<br>- `0` — успешно;<br>- `1` — массив найденных типов документов на странице;<br>- `2` — временная ошибка |
 | error    | string | Текстовое описание ошибки (optional)                  |
 | name     | string | Имя файла для сопоставления файлов в запросе и ответе |
 
-### status
+### Пример ответа
 
-| Параметр | Значение                                      |
-|--------- |---------------------------------------------- |
-| 0        | Успешно                                       |
-| 1        | Массив найденных типов документов на странице |
-| 2        | Временная ошибка                              |
+```json
+{
+  "status": 200,
+  "body": {
+    "objects": [
+      {
+        "status": 0,
+        "name": "file"
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+### Дополнительные примеры
+
+<details>
+  <summary>Ошибка валидации полей (несовпадение имен файлов с формой)</summary>
+
+Пример запроса (используется любое изображение):
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@persons_set_ok.jpg;type=image/jpeg' \
+  -F 'meta={
+  "space": "5",
+  "images": [
+    {
+      "name": "file_10",
+      "person_id": 12
+    }
+  ]
+}'
+```
 
 Пример ответа:
 
 ```json
 {
-  "status":200,
-  "body":{
-  "objects":[
-     {
-     "status":0,
-     "name":"file_0"
-     },
-     {
-     "status":1,
-     "name":"file_1",
-     "error":"The memory contains data of an unknown image type"
-     }
-     ]
-  },
-  "htmlencoded":false,
-  "last_modified":0
-  }
+  "status": 400,
+  "body": "could not get image by name file_10: http: no such file",
+  "htmlencoded": false,
+  "last_modified": 0
+}
 ```
+
+</details>
+
+<details>
+  <summary>Изображение не содержит лицо человека</summary>
+
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@persons_set_error_no_face.jpg;type=image/jpeg' \
+  -F 'meta={
+  "space": "5",
+  "images": [
+    {
+      "name": "file",
+      "person_id": 12
+    }
+  ]
+}'
+```
+
+Пример ответа:
+
+```json
+{
+  "status": 200,
+  "body": {
+    "objects": [
+      {
+        "status": 1,
+        "error": "face set required only one face per image",
+        "name": "file"
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+</details>
+
+<details>
+  <summary>Изображение с несколькими лицами</summary>
+
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@persons_set_error_many_people.jpg;type=image/jpeg' \
+  -F 'meta={
+  "space": "5",
+  "images": [
+    {
+      "name": "file",
+      "person_id": 12
+    }
+  ]
+}'
+```
+
+Пример ответа:
+
+```json
+{
+  "status": 200,
+  "body": {
+    "objects": [
+      {
+        "status": 1,
+        "error": "face set required only one face per image",
+        "name": "file"
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+</details>
+
+<details>
+  <summary>Пустое изображение</summary>
+
+В качестве примера можно использовать любой пустой файл с расширением JPG.
+
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@empty.jpg;type=image/jpeg' \
+  -F 'meta={
+  "space": "5",
+  "images": [
+    {
+      "name": "file",
+      "person_id": 12
+    }
+  ]
+}'
+```
+
+Пример ответа:
+
+```json
+{
+  "status": 400,
+  "body": "empty image",
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+</details>
 
 ## Recognize
 
@@ -143,11 +280,11 @@ Content-Disposition: form-data; name="meta"
 
 Поддерживаемые провайдеры OAuth2:
 
-| Провайдер | Значение oauth_provider | Получение токена |
-| --------- | ----------------------- | -----------------|
-| VK Cloud  | mcs                     | [https://mcs.mail.ru/help/vision-auth/vision-token](https://mcs.mail.ru/help/vision-auth/vision-token) (все клиенты VK Cloud) |
+| Провайдер | Значение `oauth_provider` | Получение токена                                    |
+|  -------- |  ------------------------ | --------------------------------------------------- |
+| VK Cloud  | mcs                       | Смотрите в [статье](../../vision-start/auth-vision/)|
 
-Параметры запроса передаются в формате JSON в теле запроса с name="meta":
+Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 
 | Параметр   | Тип          | По умолчанию | Значение              |
 | ---------- | ------------ | ------------ | --------------------------- |
@@ -156,79 +293,62 @@ Content-Disposition: form-data; name="meta"
 | images     | []image_meta | \--          | Метаданные передаваемых изображений (required non-empty) |
 | update_embedding | bool         | true        | Обновлять ли embedding для новой персоны |
 
-Каждый раз когда распознается известная персона происходит обновление векторного представления лица (embedding) для лучшего распознания этой персоны в будущем. Однако в некоторых случаях лучше отключать автообновление с помощью параметра update_embedding, например когда заведомо известно что фотографии плохого качества.
+Каждый раз, когда распознается известная персона, происходит обновление векторного представления лица (embedding) для лучшего распознания этой персоны в будущем. Однако в некоторых случаях лучше отключать автообновление с помощью параметра `update_embedding`, например, когда заведомо известно, что фотографии плохого качества.
 
-Описание параметра space смотрите в разделе метода [Set](/ml/vision/manage-vision/face-recognition#set).
+Описание параметра `space` смотрите в разделе метода [Set](/ml/vision/manage-vision/face-recognition#set).
 
-### image_meta
+Параметры `image_meta`:
 
 | Параметр | Тип    | Значение       |
 | -------- | ------ | -------------- |
 | name     | string | Имена файлов для сопоставления файлов в запросе и ответе (required non-empty)                           |
 
-Изображения передаются в теле запроса, значения поля name должны соответствовать переданным в images. Максимальное количество изображений в одном запросе равняется 100. Максимальный размер каждого изображения не должен превышать 4 МБ.
+Изображения передаются в теле запроса, значения поля name должны соответствовать переданным в `images`. Максимальное количество изображений в одном запросе равняется 100. Максимальный размер каждого изображения не должен превышать 4 МБ.
 
-Пример запроса:
+### Пример запроса
 
-```
-POST /api/v1/objects/detect?oauth_provider=mr&oauth_token=123 HTTP/1.1
-
-Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp
-
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="file_0"; filename=""
-Content-Type: image/jpeg
-
-000000000000000000000000000
-000000000000000000000000000
-000000000000000000000000000
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="file_1"; filename=""
-Content-Type: image/jpeg
-
-111111111111111111111111111
-111111111111111111111111111
-111111111111111111111111111
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="meta"
-
-{"mode":["object","scene","car_number"],"images":[{"name":"file_0"},{"name":"file_1"}]}
-------WebKitFormBoundaryfCqTBHeLZlsicvMp--
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@persons_recognize_ok_person_in_db.jpg;type=image/jpeg' \
+  -F 'meta={
+  "space": "5",
+  "create_new": false,
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
 ```
 
 ### Ответ
 
 | Параметр | Тип      | Значение                                                 |
 | ---------| -------- | ---------------------------------------------------------|
-| status   | int      | 200 в случае успешного взаимодействия с серверами Vision |
+| status   | int      | `200` в случае успешного взаимодействия с серверами Vision |
 | body     | response | Тело ответа                                              |
 
-### response
+Параметры `response`:
 
 | Параметр        | Тип  | Значение                             |
 | --------------- | -------- | -------------------------------- |
 | objects         | []object | Массив ответов для каждого файла |
 | aliases_changed | bool     | Изменились ли алиасы             |
 
-### object
+Параметры `object`:
 
 | Параметр         | Тип      | Значение |
 | ---------------- | -------- | ------- |
-| status           | enum     | Результат выполнения |
+| status           | enum     | Результат выполнения:<br>- `0` — успешно;<br>- `1` — перманентная ошибка;<br>- `2` — временная ошибка |
 | error            | string   | Текстовое описание ошибки (optional) |
 | name             | string   | Имя файла для сопоставления файлов в запросе и ответе |
 | labels           | []label  | Список объектов (меток), найденных на изображении |
 | count_by_density | int      | Количество людей в кадре, подсчитанное с помощью карты плотности  (только для mode=”pedestrian”) |
 
-### status
-
-| Параметр     | Значение        |
-| ------------ | ------------------- |
-| 0            | успешно             |
-| 1            | перманентная ошибка |
-| 2            | временная ошибка    |
-
-### person
+Параметры `person`:
 
 | Параметр     | Тип      | Значение                                  |
 | ------------ | -------- | ----------------------------------------- |
@@ -249,102 +369,296 @@ Content-Disposition: form-data; name="meta"
 | valence      | float   | Уровень одобрения человеком ситуации, в которой он находится [-1;1]                                   |
 | arousal      | float   | Уровень вовлеченности человека [-1 - сонный, не активный человек; 1 - активный человек]               |
 
-Значение **tag** может равняться "**undefined**" в случае, если значение create_new  в запросе равнялось false, и по предоставленному изображению в базе не был найден соответствующий person.
+Значение `tag` может равняться `undefined` в случае, если значение `create_new` в запросе равнялось `false`, и по предоставленному изображению в базе не был найден соответствующий person.
+
+### Пример ответа
+
+```json
+{
+  "status": 200,
+  "body": {
+    "objects": [
+      {
+        "status": 0,
+        "name": "file",
+        "persons": [
+          {
+            "tag": "person1",
+            "coord": [
+              567,
+              376,
+              992,
+              931
+            ],
+            "confidence": 0.99917,
+            "awesomeness": 0.4894,
+            "similarity": 0.9721,
+            "sex": "male",
+            "emotion": "Neutral",
+            "age": 34,
+            "valence": -0.3236,
+            "arousal": 0.185,
+            "frontality": 0.8921,
+            "visibility": 0.9985
+          }
+        ]
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+### Дополнительные примеры
+
+<details>
+  <summary>Лица на изображении нет в базе и create_new=true</summary>
+
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@persons_recognize_ok_create_new.jpg;type=image/jpeg' \
+  -F 'meta={
+  "space": "5",
+  "create_new": true,
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
 
 Пример ответа:
 
 ```json
 {
-  "status":200,
-  "body":{
-     "objects":[
-        {
-           "status":0,
-           "name":"file_0"
-        },
-        {
-           "status":1,
-           "name":"file_1",
-           "error":"The memory contains data of an unknown image type"
-        },
-        {
-           "status":0,
-           "name":"file_2",
-           "persons":[
-              {
-                 "tag":"person9",
-                 "coord":[149,60,234,181],
-                 "confidence":0.9999,
-                 "similarity":0.9987,
-                 "awesomeness":0.45,
-                           "sex":"female",
-                           "emotion":"Sadness",
-                           "age":30.0,
-                           "valence":-0.6184,
-                         "arousal":-0.0578
-              },
-              {
-                 "tag":"person10",
-                 "coord":[159,70,224,171],
-                 "confidence":0.9998,
-                 "similarity":0.9987,
-                 "awesomeness":0.32,
-               "sex":"male",
-               "emotion":"Sadness",
-               "age":22.0,
-               "valence":-0.8184,
-               "arousal":-0.0578
-              }
-           ]
-        },
-        {
-           "status":0,
-           "name":"file_3",
-           "persons":[
-              {
-                 "tag":"person11",
-                 "coord":[157,60,232,111],
-                 "aliases":["person12", "person13"],
-                 "confidence":0.9998,
-                 "similarity":0.9987,
-                 "awesomeness":0.32,
-               "sex":"female",
-               "emotion":"Sadness",
-               "age":12.0,
-               "valence":-0.8184,
-               "arousal":-0.0578
-              }
-           ]
-        },
-        {
-           "status":0,
-           "name":"file_4",
-           "persons":[
-              {
-                 "tag":"undefined",
-                 "coord":[147,50,222,121],
-                 "confidence":0.9997,
-                 "similarity":0.9987,
-                 "awesomeness":0.26,
-               "sex":"male",
-               "emotion":"Sadness",
-               "age":27.0,
-               "valence":0.3184,
-               "arousal":0.1518
-              }
-           ]
-        }
-     ],
-     "aliases_changed":false
+  "status": 200,
+  "body": {
+    "objects": [
+      {
+        "status": 0,
+        "name": "file",
+        "persons": [
+          {
+            "tag": "person2",
+            "coord": [
+              842,
+              242,
+              1340,
+              908
+            ],
+            "confidence": 0.99957,
+            "awesomeness": 0.6065,
+            "similarity": 1,
+            "sex": "female",
+            "emotion": "Happiness",
+            "age": 28,
+            "valence": 0.6829,
+            "arousal": 0.0757,
+            "frontality": 0.9857,
+            "visibility": 0.9989
+          }
+        ]
+      }
+    ]
   },
-  "htmlencoded":false,
-  "last_modified":0
+  "htmlencoded": false,
+  "last_modified": 0
 }
 ```
 
+</details>
+
+<details>
+  <summary>На изображении нет лица</summary>
+
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@persons_set_error_no_face.jpg;type=image/jpeg' \
+  -F 'meta={
+  "space": "5",
+  "create_new": false,
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
+Пример ответа:
+
+```json
+{
+  "status": 200,
+  "body": {
+    "objects": [
+      {
+        "status": 0,
+        "name": "file"
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+</details>
+
+<details>
+  <summary>Лица на изображении нет в базе и create_new=false</summary>
+
+Предполагается, что лицо с изображения не добавлено в базу при помощи метода `/api/v1/persons/set`.
+
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@persons_recognize_error_no_face_in_db.jpg;type=image/jpeg' \
+  -F 'meta={
+  "space": "5",
+  "create_new": false,
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
+Пример ответа:
+
+```curl
+{
+  "status": 200,
+  "body": {
+    "objects": [
+      {
+        "status": 0,
+        "name": "file",
+        "persons": [
+          {
+            "tag": "undefined",
+            "coord": [
+              349,
+              45,
+              543,
+              308
+            ],
+            "confidence": 0.99977,
+            "awesomeness": 0.5002,
+            "similarity": 1,
+            "sex": "female",
+            "emotion": "Surprise",
+            "age": 31,
+            "valence": -0.1527,
+            "arousal": 0.3299,
+            "frontality": 0.8228,
+            "visibility": 0.997
+          }
+        ]
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+</details>
+
+<details>
+  <summary>Ошибка формирования JSON</summary>
+
+В качестве примера можно использовать любой файл с расширением JPG.
+
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@persons_recognize_ok_create_new.jpg;type=image/jpeg' \
+  -F 'meta={
+  "space": "5",
+  "create_new": false,
+  "images": [
+    {
+      "name": "file1"
+    }
+  ]
+}'
+```
+
+Пример ответа:
+
+```json
+{
+  "status": 400,
+  "body": "could not get image by name file1: http: no such file",
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+</details>
+
+<details>
+  <summary>Невалидное изображение</summary>
+
+В качестве примера можно использовать любой пустой файл с расширением JPG.
+
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@empty.jpg;type=image/jpeg' \
+  -F 'meta={
+  "space": "5",
+  "create_new": false,
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
+Пример ответа:
+
+```json
+{
+  "status": 400,
+  "body": "empty image",
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+</details>
+
 ## Delete
 
-Данный метод позволяет удалить связь между фотографией и person_id.
+Данный метод позволяет удалить связь между фотографией и `person_id`.
 
 ### Запрос
 
@@ -357,11 +671,11 @@ Content-Disposition: form-data; name="meta"
 
 Поддерживаемые провайдеры OAuth2:
 
-| Провайдер | Значение oauth_provider | Получение токена  |
-| --------- | ----------------------- | ----------------- |
-| Mail.Ru   | mcs                     | Смотрите в статье |
+| Провайдер | Значение `oauth_provider` | Получение токена                                    |
+|  -------- |  ------------------------ | --------------------------------------------------- |
+| VK Cloud  | mcs                       | Смотрите в [статье](../../vision-start/auth-vision/)|
 
-Параметры запроса передаются в формате JSON в теле запроса с name="meta":
+Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 
 | Параметр | Тип          | Значение                                                 |
 | -------- | ------------ | -------------------------------------------------------- |
@@ -370,86 +684,108 @@ Content-Disposition: form-data; name="meta"
 
 Описание параметра space смотрите в разделе метода [Set](/ml/vision/manage-vision/face-recognition#set).
 
-#### image_meta
+Параметры `image_meta`:
 
 |Параметр   | Тип    | Значение |
 |---------- | ------ | -------- |
 | name      | string | Имена файлов для сопоставления файлов в запросе и ответе (required non-empty) |
 | person_id | int    | ID, сопоставляемый персоне на фото (required non-empty) |
 
-Изображения передаются в теле запроса, значения поля name должны соответствовать переданным в images. Максимальное количество изображений в одном запросе равняется 100. Максимальный размер каждого изображения не должен превышать 4МБ.
+Изображения передаются в теле запроса, значения поля name должны соответствовать переданным в `images`. Максимальное количество изображений в одном запросе равняется 100. Максимальный размер каждого изображения не должен превышать 4МБ.
 
-Пример запроса:
+### Пример запроса
 
-```
-POST /api/v1/persons/delete?oauth_provider=mr&oauth_token=123 HTTP/1.1
-ConContent-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp
- 
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="meta"
- 
-{"space":"0", "images":[{"name":"file_0", "person_id":1},{"name":"file_1", "person_id":2}]}
-------WebKitFormBoundaryfCqTBHeLZlsicvMp--
-```
-
-Пример с curl:
-
-```bash
-curl "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token=123" \
-    -F meta='{"images":[{"name":"f1", "person_id":1},{"name":"f2", "person_id":2}], "space":"1"}'
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'meta={
+  "space": "5",
+  "images": [
+    {
+      "name": "aaa",
+      "person_id": 1
+    }
+  ]
+}'
 ```
 
 ### Ответ
 
 | Параметр | Тип      | Значение                                                 |
 | -------- | -------- | -------------------------------------------------------- |
-| status   | int      | 200 в случае успешного взаимодействия с серверами Vision |
+| status   | int      | `200` в случае успешного взаимодействия с серверами Vision |
 | body     | response | Тело ответа                                              |
 
-### response
+Параметры `response`:
 
 | Параметр | Тип      | Значение                         |
 | -------- | -------- | -------------------------------- |
 | objects  | []object | Массив ответов для каждого файла |
 
-### object
+Параметры `object`:
 
 | Параметр | Тип    | Значение                                              |
 | -------- | ------ | ----------------------------------------------------- |
-| status   | enum   | Результат выполнения                                  |
+| status   | enum   | Результат выполнения:<br>- `0` — успешно;<br>- `1` — перманентная ошибка;<br>- `2` — временная ошибка |
 | error    | string | Текстовое описание ошибки (optional)                  |
 | name     | string | Имя файла для сопоставления файлов в запросе и ответе |
 
-### status
+### Пример ответа
 
-| Параметр | Значение            |
-| -------- | ------------------- |
-| 0        | Успешно             |
-| 1        | Перманентная ошибка |
-| 2        | Временная ошибка    |
+```json
+{
+  "status": 200,
+  "body": {
+    "objects": [
+      {
+        "status": 0,
+        "name": "aaa"
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+### Дополнительные примеры
+
+<details>
+  <summary>Ошибка валидации JSON (нет person_id)</summary>
+
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@persons_recognize_error_no_face_in_db.jpg;type=image/jpeg' \
+  -F 'meta={
+  "space": "5",
+  "images": [
+    {
+      "name": "aaa",
+      "person_i": 1
+    }
+  ]
+}'
+```
 
 Пример ответа:
 
 ```json
 {
-  "status":200,
-  "body":{
-  "objects":[
-     {
-    "status":0,
-    "name":"file_0"
-     },
-     {
-     "status":1,
-     "name":"file_1",
-     "error":"The memory contains data of an unknown image type"
-     }
-  ]
-  },
-  "htmlencoded":false,
-  "last_modified":0
-  }
+  "status": 400,
+  "body": "no person_id has been provided",
+  "htmlencoded": false,
+  "last_modified": 0
+}
 ```
+
+</details>
 
 ## Truncate
 
@@ -466,11 +802,11 @@ curl "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token
 
 Поддерживаемые провайдеры OAuth2:
 
-| Провайдер | Значение oauth_provider | Получение токена                          |
-| --------- | ----------------------- | ----------------------------------------- |
-| Mail.Ru   | mcs                     | Смотрите в [статье](https://mcs.mail.ru/) |
+| Провайдер | Значение `oauth_provider` | Получение токена                                    |
+|  -------- |  ------------------------ | --------------------------------------------------- |
+| VK Cloud  | mcs                       | Смотрите в [статье](../../vision-start/auth-vision/)|
 
-Параметры запроса передаются в формате JSON в теле запроса с name="meta":
+Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 
 | Параметр | Тип    | Значение |
 | -------- | ------ | -------- |
@@ -480,39 +816,62 @@ curl "https://smarty.mail.ru/api/v1/persons/delete?oauth_provider=mr&oauth_token
 
 Данный запрос не требует передачи изображений.
 
-Пример запроса:
+### Пример запроса
 
-```
-POST /api/v1/persons/truncate?oauth_provider=mcs&oauth_token=123 HTTP/1.1
-Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp
-
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="meta"
-
-{"space":"1"}
-------WebKitFormBoundaryfCqTBHeLZlsicvMp--
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'meta={
+  "space": "5"
+}'
 ```
 
 ### Ответ
 
 | Параметр | Тип      | Значение                                                 |
 | -------- | -------- | -------------------------------------------------------- |
-| status   | int      | 200 в случае успешного взаимодействия с серверами Vision |
+| status   | int      | `200` в случае успешного взаимодействия с серверами Vision |
 | body     | response | Тело ответа                                              |
+
+### Пример ответа
+
+```json
+{
+  "status": 200,
+  "body": {},
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+### Дополнительные примеры
+
+<details>
+  <summary>Ошибка валидации JSON (нет поля space)</summary>
+
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'meta={
+  "azaza": "5"
+}'
+```
 
 Пример ответа:
 
 ```json
 {
-"status":200,
-"body":{},
-"htmlencoded":false,
-"last_modified":0
+  "status": 400,
+  "body": "wrong space param : strconv.Atoi: parsing \"\": invalid syntax",
+  "htmlencoded": false,
+  "last_modified": 0
 }
 ```
 
-Пример php:
-
-```php
-php examples/php/smarty.php "https://smarty.mail.ru/api/v1/persons/truncate?oauth_provider=mcs&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" "" '{"space":"1"}'
-```
+</details>

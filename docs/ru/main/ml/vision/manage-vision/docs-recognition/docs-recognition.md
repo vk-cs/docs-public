@@ -4,92 +4,234 @@ HOST: `https://smarty.mail.ru`
 
 ENDPOINT: `/api/v1/docs/recognize`
 
-## Пример запроса
+## Запрос
 
-```
-POST /v1/docs/recognize HTTP/1.1
-...
-{"project": "ci_test", "img": [{"link": "http://localhost:7799/normal/v1_text_recognize/pas_90.png", "name": "pas_90.png"}]}
-```
+Авторизационные данные передаются в строке запроса:
 
-### Параметры
+| Параметр       | Тип    | Значение                                |
+| -------------- | ------ | --------------------------------------- |
+| oauth_token    | string | OAuth2 access token (required non-empty)|
+| oauth_provider | string | Провайдер OAuth2 (required non-empty)   |
 
-- project — идентификатор проекта, использующего рекогнайзер, используется для избежания пересечений по uid между проектами (обязателен для данного запроса);
-- img — массив с информацией о каждой персоне (обязателен для данного запроса);
-- img.name — имя объекта, чтобы можно было сопоставить с ответом (обязателен);
-- img.link — если задано, то бекенд скачает файл по ссылке (http или https), иначе - будет искать содержимое изображение в теле запроса.
-- callback — если задан, то API ответит немедленно кодом 200 (если с запросом все ок), а после выполнения запроса дернет урл (post'ом), указанный в поле callback, с результатами;
+Поддерживаемые провайдеры OAuth2:
+
+| Провайдер | Значение `oauth_provider` | Получение токена                                    |
+|  -------- |  ------------------------ | --------------------------------------------------- |
+| VK Cloud  | mcs                       | Смотрите в [статье](../../vision-start/auth-vision/)|
+
+Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
+
+| Параметр | Тип | Значение |
+| --- | --- | ---|
+| images | `[]image_meta` | Метаданные передаваемых изображений (required non-empty)
+
+Параметры `image_meta`:
+
+| Параметр | Тип | Значение |
+| --- | --- | ---|
+| name | string | Имена файлов для сопоставления файлов в запросе и ответе (required non-empty) |
+
+Изображения передаются в теле запроса, значения поля `name` должны соответствовать переданным в `images`.
 
 ### Ограничения
 
-Общие ограничения API.
+Максимальное количество изображений в одном запросе равняется `100`. Максимальный размер каждого изображения не должен превышать 4МБ.
 
-## Пример запроса с callback
+## Пример запроса
 
-```
-POST /v1/docs/recognize HTTP/1.1
-...
-{"project": "ci_test", "callback":"https://ololo.com", "img": [{"link": "http://localhost:7799/normal/v1_text_recognize/pas_90.png", "name": "pas_90.png"}]}
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@docs_recognize_ok.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
 ```
 
 ## Ответ
 
-### Ответ: запрос успешен
+| Параметр | Тип | Значение |
+| --- | --- | ---|
+| status | int | `200` в случае успеха, иначе описание ошибки будет приведено в `body` |
+| body | string \| response | Тело ответа |
+
+Параметры `response`:
+
+| Параметр | Тип | Значение |
+| --- | --- | ---|
+| objects | `[]object` | Массив ответов для каждого файла |
+
+Параметры `object`:
+
+| Параметр | Тип | Значение |
+| --- | --- | ---|
+| status | enum | Результат выполнения:<br>- `0` — успешно;<br>- `1` — перманентная ошибка;<br>- `2` — временная ошибка |
+| error | string | Текстовое описание ошибки (опционально) |
+| name | string | Имя файла для сопоставления файлов в запросе и ответе |
+| text | string | Распознанный текст
+
+## Пример ответа
 
 ```json
-HTTP/1.1 200 OK
-Content-Length: 9866
-Content-Type: application/json
-Access-Control-Allow-Origin: \*
 {
-"status": 0,
-"objects": [{
-"name": "pas_90.png",
-"status": 0,
-"labels": {
-"birthday": ["14.02.1990"],
-"birthplace": [".",""],
-"code_of_issue": ["100-106"],
-"date_of_issue": ["12.12.2012"],
-"first_name": [""],
-"last_name": [""],
-"middle_name": [""],
-"number": ["645382","645382"],
-"place_of_issue": ["","",""],
-"series_number": ["0909","0909"],
-"sex": ["."]
-}
-}
-]
+  "status": 200,
+  "body": {
+    "objects": [
+      {
+        "status": 0,
+        "name": "file",
+        "labels": {
+          "birthday": [
+            "10.04.1990"
+          ],
+          "birthplace": [
+            "ГОР.",
+            "МОСКВА"
+          ],
+          "code_of_issue": [
+            "459-653"
+          ],
+          "date_of_issue": [
+            "11.11.1995"
+          ],
+          "first_name": [
+            "ФОМА"
+          ],
+          "last_name": [
+            "КИНЯЕВ"
+          ],
+          "middle_name": [
+            "СЕМЕНОВИЧ"
+          ],
+          "number": [
+            "233675"
+          ],
+          "place_of_issue": [
+            "ГОРОДА",
+            "МОСКВЫ",
+            "ОДИНЦОВСКОГО",
+            "РАЙОНА",
+            "ОТДЕЛОМ",
+            "ВНУТРЕННИХ",
+            "ДЕЛ"
+          ],
+          "series_number": [
+            "560Р"
+          ],
+          "sex": [
+            "МУЖ."
+          ]
+        }
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
 }
 ```
 
-### Ответ: возникли ошибки при обработке некоторых объектов
+## Дополнительные примеры
+
+### Поля на изображении не распознаны
+
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@docs_recognize_not_doc.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
+Пример ответа:
 
 ```json
-HTTP/1.1 200 OK
-Content-Length: 91
-Content-Type: application/json
-Access-Control-Allow-Origin: \*
-{"status":0,"objects":[{"name":"plane.jpg","status":2,"error":"error read image by link"}]}
+{
+  "status": 200,
+  "body": {
+    "objects": [
+      {
+        "status": 0,
+        "name": "file",
+        "labels": {}
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
+}
 ```
 
-### Ответ: возникла ошибка при обработке
+### Невалидное изображение
+
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@empty.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
+Пример ответа:
 
 ```json
-HTTP/1.1 400 Bad Request
-Content-Length: 61
-Content-Type: application/json
-Access-Control-Allow-Origin: \*
-{"status":1,"error":"link or content is required","names":[]}
+{
+  "status": 400,
+  "body": "could not get image by name file1: http: no such file",
+  "htmlencoded": false,
+  "last_modified": 0
+}
 ```
 
-### Параметры ответа
+### Некорректный JSON (несовпадение имени в meta и изображении)
 
-- status — если 0, значит все ок, иначе - ошибка, описание ошибки будет в поле "error";
-- objects — информация по каждому загруженному объекту;
-- objects.name — имя объекта, которые было указано в запросе;
-- objects.status — если 0, значит все ок, 1 - перманентная ошибка на сервере (например, ошибки графических библиотек), 2 - временная;
-- ошибка (запрос с этой картинкой стоит повторить). описание ошибки в поле objects.error;
-- objects.error — если при обработке картинки возникла ошибка, то тут будет ее описание;
-- objects.text — текст с фото.
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@persons_set_ok.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file1"
+    }
+  ]
+}'
+```
+
+Пример ответа:
+
+```json
+{
+  "status": 400,
+  "body": "could not get image by name file1: http: no such file",
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```

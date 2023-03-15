@@ -1,6 +1,6 @@
 The **improve** method is used to enhance photos.
 
-### Request
+## Request
 
 Authorization data is passed in the query string:
 
@@ -13,9 +13,9 @@ Supported OAuth2 providers:
 
 | Provider | oauth_provider value | Getting a token |
 | ------------- | --------------------- | -------------------------------------------------- |
-| VK Cloud | mcs | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
+| VK Cloud | mcs | See in the [article](../../vision-start/auth-vision/) |
 
-Request parameters are passed in JSON format in the request body with name="meta":
+Request parameters are passed in JSON format in the request body with `name="meta"`:
 
 | Parameter | Type | Meaning |
 | ------------ | ------------ | ------------------------------------ |
@@ -24,14 +24,14 @@ Request parameters are passed in JSON format in the request body with name="meta
 | rfactor | int | Resolution increase factor, can be either 2 or 4 (required non-empty for resolution mode) |
 | ftype | string | Image type, "art" or "photo" (required non-empty for resolution mode) |
 
-Possible values ​​for mode:
+Possible values ​​for `mode`:
 
 | Parameter | Meaning |
 | ------------ | ------------------------ |
 | improve | Photo recovery |
 | resolution | Resolution increase |
 
-### image_meta
+`image_meta` parameters:
 
 | Parameter | Type | Meaning |
 | ------------ | ------- | -------------------------------------------------- |
@@ -41,49 +41,36 @@ Images are passed in the body of the request, the values ​​of the name field
 
 The maximum number of images in one request is 48. The maximum size of each image must not exceed 8MB.
 
-Example request:
+## Request example
 
-```
-POST /api/v1/photo/improve/?oauth_provider=mr&oauth_token=123 HTTP/1.1
-
-Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp
-
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="file_0"; filename=""
-Content-Type: image/jpeg
-
-000000000000000000000000000
-000000000000000000000000000
-000000000000000000000000000
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="file_1"; filename=""
-Content-Type: image/jpeg
-
-111111111111111111111111111
-111111111111111111111111111
-111111111111111111111111111
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="meta"
-
-{"images":[{"name":"file_0"}, {"name":"file_1"}], "mode":["improve", "resolution"]}
-------WebKitFormBoundaryfCqTBHeLZlsicvMp--
+```curl
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@photo_imrove_improve_ok.jpg;type=image/jpeg'   -F 'meta={
+  "mode": [
+    "improve"
+  ],
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
 ```
 
-### Response
+## Response
 
 | Parameter | Type | Meaning |
 | ------------ | ------- | ------------------------------------------------------- |
 | status | int | 200 on success, otherwise the error description will be in body |
 | body | string | Response body |
 
-### response
+`response` parameters:
 
 | Parameter | Type | Meaning |
 | ------------ | -------------------- | ---------------------------------- |
 | improve | []improve_object | Array of responses for improve mode |
 | resolution | []resolution_object | Array of responses for resolution mode |
 
-### improve_object
+`improve_object` parameters:
 
 | Parameter | Type | Meaning |
 | ------------------ | ------- | ---------------------------------------- |
@@ -95,7 +82,7 @@ Content-Disposition: form-data; name="meta"
 | colored | string | Jpeg picture of a photo with restored color (base64) |
 | bw | bool | True - the algorithm considers that it was given a black-and-white photo as input, false - algoritm believes that he was given a color photo at the entrance |
 
-### resolution_object
+`resolution_object` parameters:
 
 | Parameter | Type | Meaning |
 | ------------ | ------- | ----------------------------------------------------------- |
@@ -104,7 +91,7 @@ Content-Disposition: form-data; name="meta"
 | name | string | File name to match files in request and response |
 | resolved | string | Jpeg picture of a photo with increased resolution (base64) |
 
-### status
+`status` parameters:
 
 | Parameter | Meaning |
 | ------------ | -------------------- |
@@ -112,66 +99,159 @@ Content-Disposition: form-data; name="meta"
 | 1 | Permanent error |
 | 2 | Temporary error |
 
-Sample response:
+## Response example
 
 ```json
 {
-"status":200,
-"body":{
-status:0,
-"improve":[
-{
-status:0,
-"name":"file_0",
-"improved":"base64",
-"colorized_improved":"base64",
-"colorized":"base64",
-bw:true
-}
-],
-"resolution":[
-{
-status:0,
-"name":"file_0",
-"resolved":"base64"
-}
-]
-}
+  "status": 200,
+  "body": {
+    "improve": [
+      {
+        "status": 0,
+        "name": "file",
+        "improved": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgrdN6OW4fD17xGW9rNFH51rZO6fc/wBJl/eVinwtrWeShPc10C/8gt6wK8CGx3H/2Q==",
+        "colorized_improved": "/9j/4AAQSkZJRgABAQAAAQABAAD/8AXKOs6NWdR22KdVvT+ugy3tZoo/OtbJ3T7n+ky/vKxT4W1rPJQnua6Bf+QW9YFelTWhnY/9k=",
+        "colorized": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/XQZb2s0UfnWtk7p9z/SZf3lYp8La1nkoT3NdAv/ILesCvUpK6IP/Z",
+        "bw": true
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
 }
 ```
 
-An example of a response when the request failed:
+## Additional examples
+
+### Increasing the image resolution
+
+Request example:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@photo_imrove_resolution_ok.jpeg;type=image/jpeg' \
+  -F 'meta={
+  "mode": [
+    "resolution"
+  ],
+  "rfactor": 2,
+  "rtype": "photo",
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
+Response example:
 
 ```json
 {
-"status":500,
-"body":"Internal Server Error",
-"htmlencoded":false
-"last_modified":0
+  "status": 200,
+  "body": {
+    "resolution": [
+      {
+        "status": 0,
+        "name": "file",
+        "resolved": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/6a+9FFZSSUj0MPqf/9k="
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
 }
 ```
 
-An example of a response if the image could not be loaded:
+### Incorrect rfactor
+
+Request example:
+
+```curl
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@photo_imrove_resolution_ok.jpeg;type=image/jpeg'   -F 'meta={
+  "mode": [
+    "resolution"
+  ],
+  "rfactor": 1010,
+  "rtype": "photo",
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
+Response example:
 
 ```json
 {
-"status":200,
-"body":{
-"improve":[
-{
-status:2,
-"error":"unable to decode input image",
-"name":"file_0"
-}
-]
-},
-"htmlencoded":false
-"last_modified":0
+  "status": 400,
+  "body": "rfactor must be 2 or 4",
+  "htmlencoded": false,
+  "last_modified": 0
 }
 ```
 
-Curl request example:
+### Invalid image
 
-```bash
-curl -v "https://smarty.mail.ru/api/v1/photo/improve?oauth_provider=mcs&oauth_token=token" -F file_0=@test.jpeg -F meta='{"images":[{"name ":"file_0"}], "mode":["resolution", "improve"], "rfactor":4, "rtype":"art"}'
+Request example:
+
+```curl
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@empty.jpg;type=image/jpeg'   -F 'meta={
+  "mode": [
+    "resolution"
+  ],
+  "rfactor": 2,
+  "rtype": "photo",
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
+Response example:
+
+```json
+{
+  "status": 400,
+  "body": "empty image",
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+### Invalid meta parameter
+
+Request example:
+
+```curl
+curl -X 'POST'   'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@photo_imrove_resolution_ok.jpeg;type=image/jpeg'   -F 'meta={
+  "mode": [
+    "resolution"
+  ],
+  "rfactor": 2,
+  "rtype": "photo",
+  "images": [
+    {
+      "name": "file1"
+    }
+  ]
+}'
+```
+
+Response example:
+
+```json
+{
+  "status": 400,
+  "body": "could not get image by name file1: http: no such file",
+  "htmlencoded": false,
+  "last_modified": 0
+}
 ```
