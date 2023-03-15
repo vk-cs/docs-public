@@ -1,8 +1,8 @@
 This method allows you to determine whether a photograph is a document and the possible type of document.
 
-HOST: https://smarty.mail.ru
+HOST: `https://smarty.mail.ru`
 
-ENDPOINT: /api/v1/docs/detect
+ENDPOINT: `/api/v1/docs/detect`
 
 ### Request
 
@@ -17,15 +17,15 @@ Supported OAuth2 providers:
 
 | Provider | oauth_provider value | Getting a token |
 | ----------- | ------------------------- | ------------------- |
-| mail.ru | mcs | See [article](https://mcs.mail.ru/help/vision-api/oauth_token) |
+| mail.ru | mcs | See [article](../../vision-start/auth-vision/) |
 
-Request parameters are passed in JSON format in the request body with name="meta":
+Request parameters are passed in JSON format in the request body with `name="meta"`:
 
 | Parameter | Type | Meaning |
 | ---------- | -------------- | ----------------------------------------------------- |
 | images | []image_meta | Metadata of transmitted images (required non-empty) |
 
-### image_meta
+`image_meta` parameters:
 
 | Parameter | Type | Meaning |
 | ---------- | -------- | ---------------------------------------------- |
@@ -33,42 +33,31 @@ Request parameters are passed in JSON format in the request body with name="meta
 
 Images are passed in the body of the request, the values ​​of the name field must match those passed in images. The maximum number of images in one request is 100. The maximum size of each image must not exceed 4 MB.
 
-Example request:
+## Request example
   
-```
-POST /api/v1/docs/detect?oauth_provider=mr&oauth_token=123 HTTP/1.1
-
-Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp
-
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="file_0"; filename=""
-Content-Type: image/jpeg
-
-000000000000000000000000000
-000000000000000000000000000
-000000000000000000000000000
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="file_1"; filename=""
-Content-Type: image/jpeg
-
-111111111111111111111111111
-111111111111111111111111111
-111111111111111111111111111
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="meta"
-
-{"images":[{"name":"file_0"},{"name":"file_1"}]}
-------WebKitFormBoundaryfCqTBHeLZlsicvMp--
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@docs_recognize_ok.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
 ```
 
-### Response
+## Response
 
 | Parameter | Type | Meaning |
 | ---------- | ---------- | ---------------------------------------------------- |
 | status | int | 200 in case of successful interaction with the Vision servers |
 | body | string | Response body |
 
-#### response
+`response` parameters:
 
 | Parameter | Type | Meaning |
 | ---------- | -------- | ------------------------------------------- |
@@ -77,7 +66,7 @@ Content-Disposition: form-data; name="meta"
 | name | string | File name to match files in request and response |
 | pages | []page | List of objects (marks) found on the image |
 
-#### status
+`status` parameters:
 
 | Parameter | Meaning |
 | -------- | ---------------------------------------------------- |
@@ -85,14 +74,14 @@ Content-Disposition: form-data; name="meta"
 | 1 | Array of found document types per page |
 | 2 | Page number |
 
-#### page
+`page` parameters:
 
 | Parameter | Type | Meaning |
 | ---------- | ------- | ----------------------------------------------- |
 | index | int | Page number |
 | docs | []doc | Array of found document types per page |
 
-#### doc
+`doc` parameters:
 
 | Parameter | Meaning |
 | ---------- | ------------------------------------------------------------ |
@@ -132,55 +121,159 @@ For each object (picture) there can be several types, with varying degrees of ce
 | foreign passport | Passport |
 | Application | Application |
 
-Sample response:
+## Response example
 
 ```json
 {
-  status: 200
-  body: {
-    status: 0
+  "status": 200,
+  "body": {
+    "status": 0,
     "objects": [
       {
-        status: 0
-        "name": "file_0",
+        "status": 0,
+        "name": "file",
         "pages": [
           {
-            "index": 0
+            "index": 0,
             "docs": [
               {
-                "eng": "pts",
-                "rus": "Pts",
-                probability: 0.56
-              },
-              {
-                "eng": "doc",
-                "rus": "Document",
-                probability: 0.78
+                "eng": "Pasport",
+                "rus": "Паспорт",
+                "probability": 0.475
               }
             ]
           }
-        }
-      ]
-    }
-  }
-```
-
-An example of a response when the request failed:
-
-```json
-{
-"status":500,
-"body":"Internal Server Error",
-"htmlencoded":false
-"last_modified":0
+        ]
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
 }
 ```
 
-Python example:
+## Additional example
 
-```python
-python examples/python/smarty.py\
- -u "https://smarty.mail.ru/api/v1/docs/detect?oauth_provider=mr&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
- -p examples/passport.jpg \
- -v
+### Driver's license recognition
+
+Request example:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@docs_detect_ok_prava.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
+Response example:
+
+```json
+{
+  "status": 200,
+  "body": {
+    "status": 0,
+    "objects": [
+      {
+        "status": 0,
+        "name": "file",
+        "pages": [
+          {
+            "index": 0,
+            "docs": [
+              {
+                "eng": "Voditelskye_prava",
+                "rus": "Водительские права",
+                "probability": 0.8387
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+### There is no document in the image
+
+Request example:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@persons_set_error_no_face.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
+Response example:
+
+```json
+{
+  "status": 200,
+  "body": {
+    "status": 0,
+    "objects": [
+      {
+        "status": 0,
+        "name": "file",
+        "pages": [
+          {
+            "index": 0,
+            "docs": []
+          }
+        ]
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+### Error in JSON generation (name mismatch in meta and image)
+
+Request example:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@docs_detect_ok_prava.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file1"
+    }
+  ]
+}'
+```
+
+Response example:
+
+```json
+{
+  "status": 400,
+  "body": "could not get image by name file1: http: no such file",
+  "htmlencoded": false,
+  "last_modified": 0
+}
 ```
