@@ -4,92 +4,212 @@ HOST: `https://smarty.mail.ru`
 
 ENDPOINT: `/api/v1/docs/recognize`
 
+## Request
+
+Authorization data is passed in the query string:
+
+| Parameter | Type | Meaning |
+| ------------- | ------ | ------------------------------------ |
+| oauth_token | string | OAuth2 access token (required non-empty)|
+| oauth_provider | string | OAuth2 provider (required non-empty) |
+
+Supported OAuth2 providers:
+
+| Provider | oauth_provider value | Getting a token |
+| -------- | ---------------------- | ------------------------------------ |
+| VK Cloud | mcs | See in [article](../../vision-start/auth-vision/)|
+
+Request parameters are passed in JSON format in the request body with `name="meta"`:
+
+| Parameter | Type         | Meaning                                                  |
+| --------- | ------------- | ------------------------------------------------------ |
+| images | []image_meta | ID matched to the person in the photo (required non-empty)|
+
+`image_meta` parameters:
+
+| Parameter | Type | Meaning |
+| --------- | ------ | -------- |
+| name | string | Filenames to match files in request and response (required non-empty) |
+
+Images are passed in the body of the request, the values ​​of the name field must match those passed in `images`. The maximum number of images in one request is 100. The maximum size of each image must not exceed 4 MB.
+
 ## Request example
 
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@docs_recognize_ok.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
 ```
-POST /v1/docs/recognize HTTP/1.1
-...
-{"project": "ci_test", "img": [{"link": "http://localhost:7799/normal/v1_text_recognize/pas_90.png", "name": "pas_90.png"}]}
-```
-
-### Options
-
-- project — identifier of the project using the recognizer, used to avoid uid overlaps between projects (mandatory for this request);
-- img — an array with information about each person (mandatory for this request);
-- img.name — the name of the object so that it can be compared with the answer (mandatory);
-- img.link — if set, then the backend will download the file from the link (http or https), otherwise it will look for the content of the image in the request body.
-- callback — if set, then the API will immediately respond with code 200 (if everything is OK with the request), and after the request is completed, it will pull the url (post'om) specified in the callback field with the results;
 
 ### Restrictions
 
-General API restrictions.
+The maximum number of images per request is `100`. The maximum size of each image should not exceed 4MB.
 
-## Example request with callback
-
-```
-POST /v1/docs/recognize HTTP/1.1
-...
-{"project": "ci_test", "callback":"https://ololo.com", "img": [{"link": "http://localhost:7799/normal/v1_text_recognize/pas_90.png" , "name": "pas_90.png"}]}
-```
-
-## Answer
-
-### Response: request successful
+## Response example
 
 ```json
-HTTP/1.1 200 OK
-Content-Length: 9866
-Content-Type: application/json
-Access-Control-Allow-Origin: \*
 {
-"status": 0,
-"objects": [{
-"name": "pas_90.png",
-"status": 0,
-"labels": {
-"birthday": ["14.02.1990"],
-"birthplace": [".",""],
-"code_of_issue": ["100-106"],
-"date_of_issue": ["12.12.2012"],
-"first_name": [""],
-"last_name": [""],
-"middle_name": [""],
-"number": ["645382","645382"],
-"place_of_issue": ["","",""],
-"series_number": ["0909","0909"],
-"sex": ["."]
-}
-}
-]
+  "status": 200,
+  "body": {
+    "objects": [
+      {
+        "status": 0,
+        "name": "file",
+        "labels": {
+          "birthday": [
+            "10.04.1990"
+          ],
+          "birthplace": [
+            "ГОР.",
+            "МОСКВА"
+          ],
+          "code_of_issue": [
+            "459-653"
+          ],
+          "date_of_issue": [
+            "11.11.1995"
+          ],
+          "first_name": [
+            "ФОМА"
+          ],
+          "last_name": [
+            "КИНЯЕВ"
+          ],
+          "middle_name": [
+            "СЕМЕНОВИЧ"
+          ],
+          "number": [
+            "233675"
+          ],
+          "place_of_issue": [
+            "ГОРОДА",
+            "МОСКВЫ",
+            "ОДИНЦОВСКОГО",
+            "РАЙОНА",
+            "ОТДЕЛОМ",
+            "ВНУТРЕННИХ",
+            "ДЕЛ"
+          ],
+          "series_number": [
+            "560Р"
+          ],
+          "sex": [
+            "МУЖ."
+          ]
+        }
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
 }
 ```
 
-### Response: Errors occurred while processing some objects
+## Additional examples
+
+### The fields in the image are not recognized
+
+Request example:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@docs_recognize_not_doc.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
+Response example:
 
 ```json
-HTTP/1.1 200 OK
-Content Length: 91
-Content-Type: application/json
-Access-Control-Allow-Origin: \*
-{"status":0,"objects":[{"name":"plane.jpg","status":2,"error":"error read image by link"}]}
+{
+  "status": 200,
+  "body": {
+    "objects": [
+      {
+        "status": 0,
+        "name": "file",
+        "labels": {}
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
+}
 ```
 
-### Response: an error occurred while processing
+### Invalid image
+
+Request example:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@empty.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
+Response example:
 
 ```json
-HTTP/1.1 400 Bad Request
-Content Length: 61
-Content-Type: application/json
-Access-Control-Allow-Origin: \*
-{"status":1,"error":"link or content is required","names":[]}
+{
+  "status": 400,
+  "body": "could not get image by name file1: http: no such file",
+  "htmlencoded": false,
+  "last_modified": 0
+}
 ```
 
-### Response options
+### Incorrect JSON (name mismatch in meta and image)
 
-- status — if 0, then everything is OK, otherwise - an error, the description of the error will be in the "error" field;
-- objects — information on each loaded object;
-- objects.name — the name of the object that was specified in the request;
-- objects.status — if 0, then everything is OK, 1 - permanent error on the server (for example, graphics library errors), 2 - temporary;
-- error (request with this picture should be repeated). description of the error in the objects.error field;
-- objects.error — if an error occurred while processing the image, then its description will be here;
-- objects.text — text with photo.
+Request example:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@persons_set_ok.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file1"
+    }
+  ]
+}'
+```
+
+Response example:
+
+```json
+{
+  "status": 400,
+  "body": "could not get image by name file1: http: no such file",
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```

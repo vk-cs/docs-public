@@ -23,7 +23,7 @@ The request parameters are passed in JSON format in the body.
 | -------- | --------------- | ------------ | ---------------- |
 | video | []video_meta | \-- | Metadata of transmitted videos (required non-empty) |
 
-### video_meta
+`video_meta` parameters:
 
 | Parameter | Type | Value |
 | ------------- | ---------- | --------------------------------- |
@@ -33,7 +33,7 @@ The request parameters are passed in JSON format in the body.
 | rtsp_password | string     |                                   |
 | actions | []string | List of visapi methods that will process the video |
 
-### actions
+`actions` parameters:
 
 | Parameter | Value |
 | -------- | ------------------------------------- |
@@ -45,7 +45,7 @@ The request parameters are passed in JSON format in the body.
 
 The maximum size of a video file is 2Gb.
 
-Request example:
+### Request example
 
 ```
 POST /api/v1/video/subscribe?oauth_provider="mcs&oauth_token=123 HTTP/1.1
@@ -62,13 +62,13 @@ Content-Type: application/json
 | status | int |200 if successful, otherwise the error description will be in body |
 | body | response | Response body |
 
-### response
+`response` parameters:
 
 | Parameter | Type | Value |
 | ---------- | --------------------- | -------------------------------- |
 | subscribed | []subscribed | array of responses for each video |
 
-### subscribed
+`subscribed` parameters:
 
 | Parameter | Type | Value |
 | -------- | -------- | ---------------------------------------------- |
@@ -77,7 +77,7 @@ Content-Type: application/json
 | name | string | Name for matching the request and response to it |
 | id | int | ID of the video processing task |
 
-### status
+`status` parameters:
 
 | Parameter | Value |
 | -------- | ------------------- |
@@ -85,7 +85,7 @@ Content-Type: application/json
 | 1 | Permanent error |
 | 2 | Temporary error |
 
-Sample response:
+### Response example
 
 ```json
 {
@@ -121,7 +121,7 @@ Supported OAuth2 providers:
 
 | Provider | Value of oauth_provider | Getting a token |
 | --------- | ----------------------- | -------------------------------------------- |
-| VK Cloud  | mcs                     | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
+| VK Cloud  | mcs                     | See in the [article](../../vision-start/auth-vision/) |
 
 The request parameters are passed in JSON format in the body.
 
@@ -129,7 +129,7 @@ The request parameters are passed in JSON format in the body.
 | -------- | ------------ | ------------ | ------------- |
 | video | []video_meta | \-- | Metadata for getting video processing results (required non-empty) |
 
-### video_meta
+`video_meta` parameters:
 
 | Parameter | Type | Value |
 | -------- | ------ | --------------------- |
@@ -139,7 +139,7 @@ The request parameters are passed in JSON format in the body.
 | to | int | Request results with timestamp (ms) before to (including to) (optional)                                  |
 | limit | int | Request the number of results no more than limit (<=) (optional)                                  |
 
-Request example:
+### Request example
 
 ```
 POST /api/v1/video/get?oauth_provider="mcs&oauth_token=123 HTTP/1.1
@@ -155,13 +155,13 @@ Content-Type: application/json {"video":[{"name":"test_name", "id":37, "from"":1
 | status | int |200 if successful, otherwise the error description will be in body |
 | body | response | Response body |
 
-### response
+`response` parameters:
 
 | Parameter | Type | Value |
 | -------- | -------- | ----------------------------- |
 | results  | []result | Array of responses with results |
 
-### result
+`result` parameters:
 
 | Parameter | Type | Value |
 | -------- | ----------- | ---------------------------------------------- |
@@ -170,7 +170,7 @@ Content-Type: application/json {"video":[{"name":"test_name", "id":37, "from"":1
 | name | string | Name for matching the request and response to it |
 | items    | result_item | Array of results |
 
-### status
+`status` parameters:
 
 | Parameter | Value |
 | -------- | ------------------- |
@@ -178,7 +178,7 @@ Content-Type: application/json {"video":[{"name":"test_name", "id":37, "from"":1
 | 1 | Permanent error |
 | 2 | Temporary error |
 
-### result_item
+`result_item` parameters:
 
 | Parameter | Type | Value |
 | --------- | ------ | ----------------------------------------------- |
@@ -186,7 +186,7 @@ Content-Type: application/json {"video":[{"name":"test_name", "id":37, "from"":1
 | meta | string | Frame recognition result (meta information) |
 | action | string | Recognition method |
 
-Sample response:
+### Response example
 
 ```json
 {
@@ -216,11 +216,11 @@ Sample response:
 }
 ```
 
-## unsubscribe
+## Unsubscribe
 
 You can use this method to stop the video processing task.
 
-### request
+### Request
 
 Authorization data is passed in the query string:
 
@@ -233,7 +233,7 @@ Supported OAuth2 providers:
 
 | provider | oauth_provider value | Get a token |
 | --------- | ---------------------- | -------------------------------------------------- |
-| VK Cloud | mcs | [https://mcs.mail.ru/](https://mcs.mail.ru/) |
+| VK Cloud | mcs | See in the [article](../../vision-start/auth-vision/) |
 
 The request parameters are passed in the body in JSON format.
 
@@ -241,14 +241,14 @@ The request parameters are passed in the body in JSON format.
 | -------- | --------------- | ------------ | ------------------------------------ |
 | Videos | []video_meta | \-— | Transferred video metadata to stop (required, not empty) |
 
-### video_meta
+`video_meta` parameters:
 
 | Parameters | Type | a meaning |
 | -------- | ------ | --------------------- |
 | name | string | ID returned to the client in response to stopping this task (required, not empty) |
 | ID | int | Task ID (required) |
 
-Sample request:
+### Request example
 
 ```
 POST /api/v1/video/unsubscribe?oauth_provider="mcs&oauth_token=123 HTTP/1.1
@@ -265,13 +265,13 @@ Content type: application/json
 | state | int | 200 if successful, otherwise the error description is in body |
 | body | answer | Response body |
 
-### Answer
+`answer` parameters:
 
 | Parameters | Type | a meaning |
 | ------------ | --------------- | --------------------------------- |
 | logged out | []logged out | array of responses for each video |
 
-### signed out
+`signed out` parameters:
 
 | Parameters | Type | a meaning |
 | -------- | -------- | ----------------------------------- |
@@ -280,7 +280,7 @@ Content type: application/json
 | name | string | Name matching the request and response to it |
 | ID | int | ID of video processing task |
 
-### State
+`state` parameters:
 
 | Parameters | meaning |
 | -------- | --------- |
@@ -288,7 +288,7 @@ Content type: application/json
 | 1 | permanent error  |
 | 2 | temporary error  |
 
-Example answer:
+### Response example
 
 ```json
 {

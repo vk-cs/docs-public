@@ -1,10 +1,10 @@
 Данный метод позволяет определить является ли фотография документом и возможный тип документа.
 
-HOST: https://smarty.mail.ru
+HOST: `https://smarty.mail.ru`
 
-ENDPOINT: /api/v1/docs/detect
+ENDPOINT: `/api/v1/docs/detect`
 
-### Запрос
+## Запрос
 
 Авторизационные данные передаются в строке запроса:
 
@@ -15,17 +15,17 @@ ENDPOINT: /api/v1/docs/detect
 
 Поддерживаемые провайдеры OAuth2:
 
-| Провайдер | Значение oauth_provider | Получение токена  |
-|-----------|-------------------------|-------------------|
-| Mail.Ru   | mcs                     | Смотрите в [статье](https://mcs.mail.ru/help/vision-api/oauth_token) |
+| Провайдер | Значение `oauth_provider` | Получение токена                                    |
+|  -------- |  ------------------------ | --------------------------------------------------- |
+| VK Cloud  | mcs                       | Смотрите в [статье](../../vision-start/auth-vision/)|
 
-Параметры запроса передаются в формате JSON в теле запроса с name="meta":
+Параметры запроса передаются в формате JSON в теле запроса с `name="meta"`:
 
 | Параметр | Тип          | Значение                                                 |
 |----------|--------------|----------------------------------------------------------|
 | images   | []image_meta | Метаданные передаваемых изображений (required non-empty) |
 
-### image_meta
+Параметры `image_meta`:
 
 | Параметр | Тип    | Значение                                            |
 |----------|--------|-----------------------------------------------------|
@@ -33,66 +33,47 @@ ENDPOINT: /api/v1/docs/detect
 
 Изображения передаются в теле запроса, значения поля name должны соответствовать переданным в images. Максимальное количество изображений в одном запросе равняется 100. Максимальный размер каждого изображения не должен превышать 4 МБ.
 
-Пример запроса:
+## Пример запроса
   
-```
-POST /api/v1/docs/detect?oauth_provider=mr&oauth_token=123 HTTP/1.1
-
-Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfCqTBHeLZlsicvMp
-
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="file_0"; filename=""
-Content-Type: image/jpeg
-
-000000000000000000000000000
-000000000000000000000000000
-000000000000000000000000000
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="file_1"; filename=""
-Content-Type: image/jpeg
-
-111111111111111111111111111
-111111111111111111111111111
-111111111111111111111111111
-------WebKitFormBoundaryfCqTBHeLZlsicvMp
-Content-Disposition: form-data; name="meta"
-
-{"images":[{"name":"file_0"},{"name":"file_1"}]}
-------WebKitFormBoundaryfCqTBHeLZlsicvMp--
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@docs_recognize_ok.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
 ```
 
-### Ответ
+## Ответ
 
 | Параметр | Тип      | Значение                                                 |
 |----------|----------|----------------------------------------------------------|
-| status   | int      | 200 в случае успешного взаимодействия с серверами Vision |
+| status   | int      | `200` в случае успешного взаимодействия с серверами Vision |
 | body     | string   | Тело ответа                                              |
 
-#### response
+Параметры `response`:
 
 | Параметр | Тип    | Значение                                              |
 |----------|--------|-------------------------------------------------------|
-| status   | enum   | Результат выполнения)                                 |
+| status   | enum   | Результат выполнения:<br>- `0` — успешно;<br>- `1` — перманентная ошибка;<br>- `2` — временная ошибка |
 | error    | string | Текстовое описание ошибки (optional)                  |
 | name     | string | Имя файла для сопоставления файлов в запросе и ответе |
 | pages    | []page | Список объектов (меток), найденных на изображении     |
 
-#### status
-
-| Параметр | Значение                                      |
-| -------- | --------------------------------------------- |
-| 0        | Успешно                                       |
-| 1        | Массив найденных типов документов на странице |
-| 2        | Номер страницы                                |
-
-#### page
+Параметры `page`:
 
 | Параметр | Тип   | Значение                                      |
 |----------|-------|-----------------------------------------------|
 | index    | int   | Номер страницы                                |
 | docs     | []doc | Массив найденных типов документов на странице |
 
-#### doc
+Параметры `doc`:
 
 | Параметр | Значение                                                                |
 |----------|-------------------------------------------------------------------------|
@@ -132,6 +113,58 @@ Content-Disposition: form-data; name="meta"
 | Zagranpasport     | Загранпаспорт      |
 | Zayavlenie        | Заявление          |
 
+## Пример ответа
+
+```json
+{
+  "status": 200,
+  "body": {
+    "status": 0,
+    "objects": [
+      {
+        "status": 0,
+        "name": "file",
+        "pages": [
+          {
+            "index": 0,
+            "docs": [
+              {
+                "eng": "Pasport",
+                "rus": "Паспорт",
+                "probability": 0.475
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+## Дополнительные примеры
+
+### Распознавание водительского удостоверения
+
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@docs_detect_ok_prava.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
 Пример ответа:
 
 ```json
@@ -142,45 +175,97 @@ Content-Disposition: form-data; name="meta"
     "objects": [
       {
         "status": 0,
-        "name": "file_0",
+        "name": "file",
         "pages": [
           {
             "index": 0,
             "docs": [
               {
-                "eng": "Pts",
-                "rus": "Птс",
-                "probabilty": 0.56
-              },
-              {
-                "eng": "Doc",
-                "rus": "Документ",
-                "probabilty": 0.78
+                "eng": "Voditelskye_prava",
+                "rus": "Водительские права",
+                "probability": 0.8387
               }
             ]
           }
-        }
-      ]
-    }
-  }
-```
-
-Пример ответа, когда не удалось выполнить запрос:
-
-```json
-{
-"status":500,
-"body":"Internal Server Error",
-"htmlencoded":false,
-"last_modified":0
+        ]
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
 }
 ```
 
-Пример Python:
+### На изображении нет документа
 
-```python
-python examples/python/smarty.py \
- -u "https://smarty.mail.ru/api/v1/docs/detect?oauth_provider=mr&oauth_token=e50b000614a371ce99c01a80a4558d8ed93b313737363830" \
- -p examples/passport.jpg \
- -v
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@persons_set_error_no_face.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file"
+    }
+  ]
+}'
+```
+
+Пример ответа:
+
+```json
+{
+  "status": 200,
+  "body": {
+    "status": 0,
+    "objects": [
+      {
+        "status": 0,
+        "name": "file",
+        "pages": [
+          {
+            "index": 0,
+            "docs": []
+          }
+        ]
+      }
+    ]
+  },
+  "htmlencoded": false,
+  "last_modified": 0
+}
+```
+
+### Ошибка в формировании JSON (несовпадение имени в meta и изображении)
+
+Пример запроса:
+
+```curl
+curl -X 'POST' \
+  'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: multipart/form-data' \
+  -F 'file=@docs_detect_ok_prava.jpg;type=image/jpeg' \
+  -F 'meta={
+  "images": [
+    {
+      "name": "file1"
+    }
+  ]
+}'
+```
+
+Пример ответа:
+
+```json
+{
+  "status": 400,
+  "body": "could not get image by name file1: http: no such file",
+  "htmlencoded": false,
+  "last_modified": 0
+}
 ```
