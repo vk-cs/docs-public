@@ -1,6 +1,6 @@
 ## Terms of use of the platform "VK Cloud"
 
-This document is an agreement (hereinafter referred to as the "Agreement") governing the relationship between Mail.ru LLC (hereinafter referred to as the "Company") and you (hereinafter referred to as the "Customer") in connection with the provision of various types of services, access to which is provided through the VK Cloud Platform (hereinafter referred to as the Platform), on the terms set forth below:
+This document is an agreement (hereinafter referred to as the "Agreement") governing the relationship between VK LLC (hereinafter referred to as the "Company") and you (hereinafter referred to as the "Customer") in connection with the provision of various types of services, access to which is provided through the VK Cloud (hereinafter referred to as the Platform), on the terms set forth below:
 
 ## 1\. REGULATION OF THE PLATFORM USE ISSUES. PROCEDURE FOR CONCLUDING AGREEMENT
 
@@ -90,7 +90,7 @@ Authorization and entry to the Platform is carried out through the Site. A perso
 - grant the rights of the Project Administrator to another person, change the scope of the granted rights, up to the deprivation of the right to manage the Project.
 - carry out other actions not prohibited by the legislation of the Russian Federation and the Applicable Rules related to the use of the Platform and the Services.
 
-  4.4. When using the Platform and Services, the Customer undertakes:
+4.4. When using the Platform and Services, the Customer undertakes:
 
 - comply with the provisions of the Applicable Rules without any restrictions;
 - independently take appropriate measures to ensure the security of his Personal Account and prevent unauthorized access to it by third parties (in particular, to ensure that the password is not saved in the browser, including when using cookies technology, if third parties may use the Customer's computer device) ... The customer is responsible for illegal actions carried out using his Personal Account as for his own.
@@ -99,6 +99,12 @@ Authorization and entry to the Platform is carried out through the Site. A perso
 - periodically review the content and monitor for changes to the Applicable Rules.
 - ensure that Project Users are familiar with the End User Guidelines and comply with their provisions. The Customer is responsible for illegal actions committed using the User's Personal Account as for his own.
 - comply with other requirements and fulfill other obligations provided for by the Applicable Rules.
+
+4.5. The Company shall not be liable for the information security of the Customer's infrastructure designed using the Company's Services.
+
+4.6. The Services shall be provided to the Customer in accordance with the internationally accepted AS IS principle. This means that the Company shall not be held liable for the issues, errors, failures arising during the use of Services, including any issues connected with compatibility of the Services with any other software products, issues arising out of an ambiguous interpretation of the Services documentation, inconsistency between the results of use of the Services and the expectations of the Customer, etc.
+
+4.7. The Company shall not administer and support operating systems and other services created using the Platform Services, unless otherwise agreed upon by the Parties in a separate agreement.
 
 ## 5\. CONDITIONS AND ORDER OF USE OF THE PLATFORM BY THE USER
 
@@ -178,7 +184,7 @@ After the receipt of funds to the Company's current account, the status of the C
 
 8.5. A customer who is a legal entity or an individual entrepreneur, subject to payment for services by transferring funds to a bank account, undertakes, at the end of the Reporting Period, during which the Company provided him with services to provide him with access to the Services, to sign the Acceptance Certificate of the Services Rendered (hereinafter - " Act ") and an invoice (or a universal transfer document (hereinafter referred to as" UPD "). The Company sends the FRTD to the Customer through the electronic document management system (hereinafter referred to as" EDM "). signature (hereinafter referred to as "ES").
 
-8.6 The Customer undertakes to sign one copy of the Act / UPD and send it to the Company within 10 working days from the date of its receipt, or sign the UPD via EDM using electronic signature within the same time frame.
+8.6 The Customer undertakes to sign one copy of the Act / UPD and send it to the Company within 10 working days from the date of its receipt, or sign the UPD via EDM using electronic signature within the same time frame. Otherwise, the services shall be considered rendered, and the Certificate/UTD shall be considered executed.
 
 ## 9\. TERRITORY AND DURATION OF THE AGREEMENT
 
@@ -209,4 +215,4 @@ After the receipt of funds to the Company's current account, the status of the C
 
 10.5. For questions related to the execution of the Agreement, please contact the Company's location: Russian Federation, 125167 Moscow, Leningradsky prospect, 39, bldg. 79, or by email at [support@mcs.mail.ru](mailto:support@mcs.mail.ru).
 
-Revision: from 10/22/2021
+Revision: from 03/16/2023
