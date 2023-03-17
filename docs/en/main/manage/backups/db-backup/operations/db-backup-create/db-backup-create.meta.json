@@ -1,0 +1,16 @@
+{
+  "title": "Creating, deleting and configuring a backup plan",
+  "pageDescription": "",
+  "shortDescription": "Description of working with instance backups",
+  "metaTitle": "Creating, deleting and configuring a backup plan — VK Cloud",
+  "metaDescription": "When creating a database, a backup plan is created in the VK Cloud panel, which can be managed in the",
+  "sectionTitle": "Creating, deleting and configuring a backup plan",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "additionalUuids": [
+    "87f6b148-a068-4ac5-b0b4-021bbb720797"
+  ],
+  "uuid": "5ede036c-195a-43fb-9205-fa6a8b9912a4"
+}
