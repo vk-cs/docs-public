@@ -13,17 +13,10 @@
       "link": "../../../base/iaas/vm-backup"
     },
     {
-      "text": "Резервные копии СУБД",
-      "link": "../../../dbs/dbaas/db-backup"
-    },
-    {
       "text": "Справка API",
       "link": "../../../additionals/api/backup-api"
     }
   ],
   "weight": 1,
-  "uuid": "c5585342-538a-4fa5-862d-bce351c96daf",
-  "additionalUuids": [
-    "32918039-cfc5-49f5-9300-a6b2422af0f5"
-  ]
+  "uuid": "c5585342-538a-4fa5-862d-bce351c96daf"
 }

@@ -9,4 +9,4 @@
 - Оптимизация процессов ежедневного администрирования — удобство работы с управлением данных.
 - Параллелизация очистки (vacuuming).
 
-Еще больше о PostgreSQL 13, вы можете прочитать [здесь](https://www.postgresql.org/docs/13/release-13.html).
+Еще больше о PostgreSQL 13 вы можете прочитать [здесь](https://www.postgresql.org/docs/13/release-13.html).
