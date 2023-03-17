@@ -44,7 +44,7 @@ Other terms are defined in the Terms of Use of the Platform.
 
 3.4. The Service user who has gained access to the Bucket can use the files included in such Bucket to the extent of the rights granted to him.
 
-4\. Rights and obligations of the Parties in connection with the use of the Content (https://mcs.mail.ru/help/ru_RU/legal/policy-hotbox#section-3)
+## 4\. Rights and obligations of the Parties in connection with the use of the Content
 
 4.1. The placement of Content on the servers of the Company and its use must not violate any applicable law, in particular, the Customer and / or Users are not entitled to:
 

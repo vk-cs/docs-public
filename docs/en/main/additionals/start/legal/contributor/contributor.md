@@ -78,6 +78,7 @@ Moscow, Russian Federation
 4.1.3.The Contributions are not encumbered with any rights of third parties, including the rights of the Contributor's employer;
 
 4.1.4.The Contributor has the consent of the authors and Rightholders of the results of intellectual activity included in the Contributions, to use them in all the ways specified in this Agreement; and VK is not prevented from the use of the Contributions which include such intellectual property;
+
 4.1.5.the use of the Contributions under this Agreement shall not infringe any intellectual property rights or other rights or legitimate interests of third parties, including the Contributor employers.
 
 The Contributor agrees and acknowledges that VK unconditionally relies on the representations and warranties given by the Contributor in Section 4.1 hereof, and such representations and warranties are material for VK.
