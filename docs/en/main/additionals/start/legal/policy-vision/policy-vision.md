@@ -1,6 +1,6 @@
 This License Agreement (hereinafter the "Agreement") governs the relationship between Mail.Ru LLC (OGRN 1027739850962, Russia, 125167, Moscow, Leningradsky Prospekt 39, p. 79), hereinafter referred to as the "Licensor", and you , hereinafter referred to as the "Licensee", by using the computer program "Vision" (hereinafter referred to as the "Program"), on the following conditions:
 
-### 1\. Terms and definitions
+## 1\. Terms and definitions
 
 Licensor - Mail.Ru limited liability company, which is a party to this Agreement, which grants the Licensees the right to use the Program under the terms of a non-exclusive license.
 
@@ -12,9 +12,9 @@ Program - A computer program developed by the Licensor using machine learning me
 
 Other applicable terms and definitions are contained in the Terms of Use.
 
-### 2\. Terms of accession to this Agreement
+## 2\. Terms of accession to this Agreement
 
-2.1. The condition for using the Program is full and unconditional acceptance by the Licensee of the provisions of this Agreement. Access to the Program is carried out within the Platform, and therefore the condition for obtaining a license is the Licensee's consent to the Terms of Use of the VK Cloud platform (hereinafter referred to as the Terms of Use and the Platform), which are available at https: // help. mail.ru/mcs/legal/vision_termofuse, as well as the Licensor's Privacy Policy available at https://help.mail.ru/mcs/legal/privacy (hereinafter collectively referred to as the "Applicable Rules"). In the event of a conflict between the provisions of the Terms of Use and this Agreement, the provisions of this Agreement shall prevail. The Terms of Use apply to the relations of the Parties that are not regulated by this Agreement.
+2.1. The condition for using the Program is full and unconditional acceptance by the Licensee of the provisions of this Agreement. Access to the Program is carried out within the Platform, and therefore the condition for obtaining a license is the Licensee's consent to the Terms of Use of the VK Cloud platform (hereinafter referred to as the Terms of Use and the Platform), which are available at https://help.mail.ru/mcs/legal/vision_termofuse, as well as the Licensor's Privacy Policy available at https://help.mail.ru/mcs/legal/privacy (hereinafter collectively referred to as the "Applicable Rules"). In the event of a conflict between the provisions of the Terms of Use and this Agreement, the provisions of this Agreement shall prevail. The Terms of Use apply to the relations of the Parties that are not regulated by this Agreement.
 
 2.2. With each access and / or actual use of the Program, the Licensee agrees with the provisions of this Agreement, as well as with other
 
@@ -24,7 +24,7 @@ Applicable rules, as amended, which were in effect at the time of the actual use
 
 2.4. To use the Program and gain access to it through the API, the Licensee undertakes to ensure that the hardware and software of the Licensee comply with the requirements of the Licensor, which are available on the page at the link https://help.mail.ru/vision/api and may be updated by the Licensor from time to time.
 
-### 3\. Subject of the agreement
+## 3\. Subject of the agreement
 
 3.1. Under the terms of this Agreement, the Licensor grants the Licensee, on the terms of a paid simple non-exclusive license, the right to use the Program, as well as the API, within the limits specified in this Agreement, and the Licensee undertakes to pay the Licensor a license fee in the amount and in the manner established by the Licensor.
 
@@ -40,13 +40,13 @@ Applicable rules, as amended, which were in effect at the time of the actual use
 
 3.6. The Licensee is granted a license under the conditions described in this section, provided that the Licensee complies with all licensing requirements and restrictions, including the requirements for the software and hardware of the Licensee, specified in this Agreement and on the Site.
 
-### 4\. Software capabilities of the Program and the order of their use
+## 4\. Software capabilities of the Program and the order of their use
 
 4.1. The Program is a computer program developed by the Licensor using machine learning methods, which provides Licensees with the ability to use computer vision technology.
 
 4.2. To gain access to the Program, the Licensor provides the Licensee with an API by issuing authorization keys by e-mail or in the Licensee's Personal Account.
 
-### 5\. Rights and obligations of the Licensee
+## 5\. Rights and obligations of the Licensee
 
 5.1. The licensee has the right:
 
@@ -62,17 +62,17 @@ Applicable rules, as amended, which were in effect at the time of the actual use
 
 end users using the Licensee's Personal Account as their own.
 
-5.2.2. follow all instructions and instructions of the Licensor. If the Licensee fails to comply with such instructions, the Licensor has the right to suspend, limit, terminate the granting of the Licensee the rights to use the Program or its individual functions;
+5.2.3. follow all instructions and instructions of the Licensor. If the Licensee fails to comply with such instructions, the Licensor has the right to suspend, limit, terminate the granting of the Licensee the rights to use the Program or its individual functions;
 
-5.2.3. periodically get acquainted with the content of this Agreement in the "Vision" section in the Licensee's Personal Account and follow the changes made to it;
+5.2.4. periodically get acquainted with the content of this Agreement in the "Vision" section in the Licensee's Personal Account and follow the changes made to it;
 
-5.2.4. pay the Licensor the license fee in the amount established by the Licensor and in the manner provided for in section 8 of the Terms of Use;
+5.2.5. pay the Licensor the license fee in the amount established by the Licensor and in the manner provided for in section 8 of the Terms of Use;
 
-5.2.5. not to provide third parties with the right to use the Program (not to conclude sub-license agreements), except for cases when such third parties are employees of the Licensee;
+5.2.6. not to provide third parties with the right to use the Program (not to conclude sub-license agreements), except for cases when such third parties are employees of the Licensee;
 
-5.2.6. not to violate the intellectual property rights of the Licensor in relation to the Program, API or any of their elements, in particular, the Licensee has no right to copy, disassemble, reverse-engineer, modify the source code of the Program, unless otherwise provided by applicable law;
+5.2.7. not to violate the intellectual property rights of the Licensor in relation to the Program, API or any of their elements, in particular, the Licensee has no right to copy, disassemble, reverse-engineer, modify the source code of the Program, unless otherwise provided by applicable law;
 
-5.2.7. not to carry out any other actions that contradict the goals of creating the Program or violate the current legislation of the Russian Federation.
+5.2.8. not to carry out any other actions that contradict the goals of creating the Program or violate the current legislation of the Russian Federation.
 
 5.3. The Licensee warrants that it has all the necessary powers to enter into this Agreement.
 
@@ -80,7 +80,7 @@ end users using the Licensee's Personal Account as their own.
 
 5.5. The Licensee has the right to use the Program only for purposes not prohibited by applicable law. If the Licensor suspects that the Program is being used by the Licensee for illegal purposes, the Licensor has the right to immediately suspend the Licensee's use of the Program and demand the provision of documents and explanations confirming the legality of using the Program.
 
-### 6\. Rights and obligations of the Licensor, limitation of liability of the Licensor
+## 6\. Rights and obligations of the Licensor, limitation of liability of the Licensor
 
 6.1. The licensor has the right:
 
@@ -104,7 +104,7 @@ end users using the Licensee's Personal Account as their own.
 
 6.5. The Licensor is not responsible for the loss of the Licensee's data, including due to possible errors or malfunctions in the hardware of the Licensee or third parties involved by him. The Company is not responsible for any types of losses incurred as a result of the use or inability of the Licensee to use the Program or its individual parts / functions, including due to possible errors or malfunctions, except as expressly provided for by law.
 
-### 7\. Final provisions
+## 7\. Final provisions
 
 7.1. This Agreement may be changed by the Licensor at any time without any prior notice to the Licensee. Any changes to the Agreement made by the Licensor unilaterally come into force on the day following the day of publication of such changes on the Site. The Licensee undertakes to independently check the Agreement for changes. Failure by the Licensee to take steps to familiarize himself with the Agreement and / or the amended version of the Agreement cannot serve as a basis for the Licensee's failure to fulfill its obligations and the Licensee's failure to comply with the restrictions established by the Agreement.
 
