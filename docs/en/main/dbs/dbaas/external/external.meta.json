@@ -5,6 +5,10 @@
   "metaTitle": "External DB instance management — VK Cloud",
   "metaDescription": "The use of DBaaS management software on the VK Cloud platform reduces the time for processing and performing DBMS deployment and management operations.",
   "sectionTitle": "External DB instance management",
-  "additionalUuids": ["f9aa4299-804d-4817-8bf9-48a042dcbbbe", "6c4ab9d0-004a-46dc-ab6c-bd8d97266b73"],
-  "weight": 7
+  "additionalUuids": [
+    "f9aa4299-804d-4817-8bf9-48a042dcbbbe",
+    "6c4ab9d0-004a-46dc-ab6c-bd8d97266b73"
+  ],
+  "weight": 7,
+  "uuid": "d22ac25b-b6f1-49f5-8b80-0ff064c1add9"
 }
