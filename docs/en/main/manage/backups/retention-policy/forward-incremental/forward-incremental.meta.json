@@ -1,0 +1,12 @@
+{
+  "title": "Forward Incremental Backups",
+  "pageDescription": "",
+  "shortDescription": "Storing and deleting backups, if the maximum number of full copies is set",
+  "metaTitle": "Forward Incremental Backups — VK Cloud",
+  "metaDescription": "The article describes a strategy for deleting backups when the maximum number of stored backups is exceeded.",
+  "sectionTitle": "Forward Incremental Backups",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0
+}
