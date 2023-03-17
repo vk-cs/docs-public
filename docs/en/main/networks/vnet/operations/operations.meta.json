@@ -1,12 +1,13 @@
 {
-    "title": "Step by step instructions",
-    "pageDescription": "Brief step-by-step instructions for performing basic operations in the service.",
-    "shortDescription": "How to perform basic operations in a service",
-    "metaTitle": "Step by step instructions — VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Step by step instructions",
-    "markdown": "Brief step-by-step instructions for performing basic operations in the service.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
+  "title": "Step by step instructions",
+  "pageDescription": "Brief step-by-step instructions for performing basic operations in the service.",
+  "shortDescription": "How to perform basic operations in a service",
+  "metaTitle": "Step by step instructions — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Step by step instructions",
+  "markdown": "Brief step-by-step instructions for performing basic operations in the service.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "a54ede1b-5b49-42e3-a85d-6bf73078f005"
 }
