@@ -75,7 +75,6 @@ ClickHouse использует собственный диалект SQL, бл�
 
 ## Дополнительная документация
 
-- [](https://ru.wikipedia.org/wiki/ClickHouse)[Wikipedia](https://ru.wikipedia.org/wiki/ClickHouse)
 - [Официальная документация по ClickHouse](https://clickhouse.yandex/docs/ru/)
 - [Хайлоад-документация](https://ruhighload.com/doc/clickhouse/)
 - [Национальная библиотека имени Баумана](https://ru.bmstu.wiki/ClickHouse)
