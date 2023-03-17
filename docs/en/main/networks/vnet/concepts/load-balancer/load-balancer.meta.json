@@ -1,12 +1,13 @@
 {
-    "title": "Load balancer",
-    "pageDescription": "How to use a load balancer to distribute incoming traffic between multiple servers.",
-    "shortDescription": "How to distribute network traffic between servers",
-    "metaTitle": "Load balancer — VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Load balancer",
-    "markdown": "How to use a load balancer to distribute incoming traffic between multiple servers.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 5
+  "title": "Load balancer",
+  "pageDescription": "How to use a load balancer to distribute incoming traffic between multiple servers.",
+  "shortDescription": "How to distribute network traffic between servers",
+  "metaTitle": "Load balancer — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Load balancer",
+  "markdown": "How to use a load balancer to distribute incoming traffic between multiple servers.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5,
+  "uuid": "9d234375-730b-446b-b9c4-dc86bbf5f85e"
 }
