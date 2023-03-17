@@ -1,0 +1,12 @@
+{
+  "title": "SDK",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "SDK — VK Cloud",
+  "metaDescription": "Описание Статья приводит примеры подключения (с помощью разных приложений) к установленной вами облачной базе данных. PHP $conn = pg_connect(",
+  "sectionTitle": "SDK",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "uuid": "d2ca299d-f20e-4618-9fbc-3fb3bb7ad386"
+}
