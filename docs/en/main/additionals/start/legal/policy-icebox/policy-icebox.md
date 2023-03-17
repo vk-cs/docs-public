@@ -1,6 +1,6 @@
-This document is an official offer of Mail.ru LLC (hereinafter referred to as the "Company") to conclude a user agreement (hereinafter referred to as the "Agreement") with you (hereinafter referred to as the "Customer") on the provision of services for providing access to the Cloud for Cold Data Service within the framework of the VK Cloud Platform (hereinafter referred to as the Platform), on the terms set forth in this Agreement, which is available on the Internet at: [https://mcs.mail.ru/help/ru_RU/legal/policy-%20icebox](https://mcs.mail.ru/help/ru_RU/legal/policy-%20icebox).
+This document is an official offer of Mail.ru LLC (hereinafter referred to as the "Company") to conclude a user agreement (hereinafter referred to as the "Agreement") with you (hereinafter referred to as the "Customer") on the provision of services for providing access to the Cloud for Cold Data Service within the framework of the VK Cloud Platform (hereinafter referred to as the Platform), on the terms set forth in this Agreement, which is available on the Internet at: [https://mcs.mail.ru/help/ru_RU/legal/policy-icebox](https://mcs.mail.ru/help/ru_RU/legal/policy-icebox).
 
-### 1\. Terms and definitions
+## 1\. Terms and definitions
 
 **Site** - an Internet site located at [https://mcs.mail.ru/](https://mcs.mail.ru/), which provides the Customer with access to the Platform and the Service. The Company places information on the Site that is mandatory for Customers.
 
@@ -22,7 +22,7 @@ The Company's services may include the provision by the Company of the rights to
 
 Other terms are defined in the Terms of Use of the Platform.
 
-### 2\. Subject of the agreement, conditions for obtaining access to the Service
+## 2\. Subject of the agreement, conditions for obtaining access to the Service
 
 2.1. Under the terms of this Agreement, the Company provides the Customer around the clock, with an Internet connection, the Cloud for Hot Data Service (hereinafter referred to as the Service), which allows the Customer to place Content on the disk space of the Company's servers by using computer programs, including viewing, changing, deleting Content, manage access to it by other persons (Project Users, third parties) and perform other actions with the Content provided for by the functionality of the Service, and the Customer undertakes to pay for the Company's services for using the provision of access to the Service in the amount and in the manner determined by the Applicable Rules.
 
@@ -34,7 +34,7 @@ Other terms are defined in the Terms of Use of the Platform.
 
 2.5. To use the Service, the Customer undertakes to ensure that the technical and software capacities of the Customer comply with the Company's requirements, which are available on the page at the link mcs.mail.ru/icebox and may be updated from time to time.
 
-### 3\. Functionality of the Service, use of the Service
+## 3\. Functionality of the Service, use of the Service
 
 3.1. The Customer can use the Service in any way that is acceptable by the functionality of the Platform and the Service, with the exception of methods expressly prohibited by the Terms of Use of the Platform and the Agreement, as well as by applicable law. In particular, the Customer can place the Content on the disk space of the Company's servers, view, modify, delete the Content, create Buckets and manage access to it for other persons (Project Users, third parties) and perform other actions with the Content provided for by the functionality of the Service.
 
@@ -44,7 +44,7 @@ Other terms are defined in the Terms of Use of the Platform.
 
 3.4. The Service user who has gained access to the Bucket can use the files included in such Bucket to the extent of the rights granted to him.
 
-### 4\. Rights and obligations of the Parties in connection with the use of the Content
+## 4\. Rights and obligations of the Parties in connection with the use of the Content
 
 4.1. The placement of Content on the servers of the Company and its use must not violate any applicable law, in particular, the Customer and / or Users are not entitled to:
 
@@ -59,13 +59,13 @@ The Company has the right to monitor the Content in order to verify that the Cus
 
 4.3. The Company has the right to block or remove Prohibited Content on its own initiative, as well as at the request of authorized government agencies. Any losses caused to the Customer in connection with the removal of the Prohibited Content by the Company will not be reimbursed by the Company.
 
-### 5\. Cost of services
+## 5\. Cost of services
 
 5.1. The use of the Service within the Platform is Paid. In order to determine the cost of using the Service, the Company sets the price and the corresponding list of services in accordance with the Tariffs.
 
 5.2. The tariff is set by the Company and communicated to the Customer. The current Tariffs are posted on the page: [mcs.mail.ru/icebox](https://mcs.mail.ru/icebox). The tariff can be changed by the Company unilaterally, which is brought to the attention of the Customer by updating the information on the page: [mcs.mail.ru/icebox](https://mcs.mail.ru/icebox). The Company may unilaterally change the Tariffs that are applied from the Reporting Period following the period in which the Tariffs were changed.
 
-### 6\. End of service and consequences of violation of payment terms
+## 6\. End of service and consequences of violation of payment terms
 
 6.1. In the absence of bonuses / funds on the Bonus and / or Personal balance (account) of the Customer to write off the cost of services for providing access to the Service (hereinafter - Zero balance), the access of the Users of the Service / Platform to Buckets and files is terminated.
 
@@ -73,7 +73,7 @@ The Company has the right to monitor the Content in order to verify that the Cus
 
 6.3. To restore access to the Service, the Customer must replenish funds on his Personal balance (account) for the amount necessary to pay for services in the amount required for the Customer in accordance with the Tariffs in force at the time of the payment.
 
-### 7\. Responsibility for interruptions in the operation of the Service (guarantees of the level of the Service)
+## 7\. Responsibility for interruptions in the operation of the Service (guarantees of the level of the Service)
 
 7.1. The Company guarantees to the User that the services for providing access to the Service are provided 24 (twenty four) hours a day, 7 (seven) days a week.
 

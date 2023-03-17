@@ -1,8 +1,8 @@
 ## Terms of use of the platform "VK Cloud"
 
-This document is an agreement (hereinafter referred to as the "Agreement") governing the relationship between VK LLC (hereinafter referred to as the "Company") and you (hereinafter referred to as the "Customer") in connection with the provision of various types of services, access to which is provided through the VK Cloud (hereinafter referred to as the Platform), on the terms set forth below:
+This document is an agreement (hereinafter referred to as the "Agreement") governing the relationship between VK LLC (hereinafter referred to as the "Company") and you (hereinafter referred to as the "Customer") in connection with the provision of various types of services, access to which is provided through the VK Cloud (hereinafter referred to as the "Platform"), on the terms set forth below:
 
-## 1\. REGULATION OF THE PLATFORM USE ISSUES. PROCEDURE FOR CONCLUDING AGREEMENT
+## 1\. Regulation of the Platform use issues. Procedure for concluding Agreement
 
 1.1. The rules for using the Platform and the Services available through the Platform are set out in the following documents:
 
@@ -20,7 +20,7 @@ The provisions of this Agreement apply to the relations between the Parties on t
 
 1.4. The applicable rules can be changed by the Company at any time without any prior notice to the Customer. Any such changes will take effect on the day following the day such changes are posted on the Site. The Customer undertakes to independently check the Applicable Rules for changes. Failure by the Customer to take steps to familiarize himself with the Applicable Rules and / or the revised edition cannot serve as a basis for the Customer's failure to fulfill his obligations related to the Use of the Platform and individual Services. The Customer has the right to refuse to accept changes and additions to the Applicable Rules, which means the Customer's refusal to use the Platform and / or the relevant Services.
 
-## 2\. TERMS AND DEFINITIONS
+## 2\. Terms and definitions
 
 **Site** - an Internet site located at [https://mcs.mail.ru](https://mcs.mail.ru/) , which provides the User with access to the Platform and various services. The Company places information on the Site that is mandatory for Users.
 
@@ -34,7 +34,7 @@ The provisions of this Agreement apply to the relations between the Parties on t
 
 **Customer** - a person with the necessary legal capacity and legal capacity to conclude the Agreement, who created an Account on the Platform.
 
-Customer account - information provided by the Customer (the presence of which is a prerequisite) for registration and subsequent authorization of the Customer on the Platform in the process of rendering services to him by the Company, which is the name (login), password for access to the Personal Account (password), and also other information. Access to the Account is carried out through the Personal Account.
+**Customer account** - information provided by the Customer (the presence of which is a prerequisite) for registration and subsequent authorization of the Customer on the Platform in the process of rendering services to him by the Company, which is the name (login), password for access to the Personal Account (password), and also other information. Access to the Account is carried out through the Personal Account.
 
 **The Customer's personal account** is a closed area of the Platform, which allows the Customer to manage settings, edit the Customer's account, gain access to statistics data, as well as perform other actions necessary to implement the functionality of the Platform and individual Services.
 
@@ -58,7 +58,7 @@ Customer account - information provided by the Customer (the presence of which i
 
 **Reporting period** - the period of time during which the Customer is provided with services for the use of the Service. The duration of the Reporting Period is established by the corresponding agreements on the use of individual services.
 
-## 3\. SUBJECT OF THE AGREEMENT
+## 3\. Subject of the Agreement
 
 3.1. Under the terms of the Agreement, the Company provides the Customer with access to the Platform, which allows the Customer around the clock with an Internet connection, unless otherwise provided by the Applicable Rules, to use the Personal Account to gain access to the Platform Services.
 
@@ -72,7 +72,7 @@ Customer account - information provided by the Customer (the presence of which i
 
 3.6. The functions of the Platform, Services, including all scripts, content, individual elements and design of the Platform and Services are provided "as is". The Company does not provide any guarantees that the Platform, Services or their elements may be suitable for specific purposes of use. The Company cannot guarantee and does not promise any specific results from the use of the Platform, Services and their individual elements.
 
-## 4\. CONDITIONS AND PROCEDURE FOR USE OF THE PLATFORM BY THE CUSTOMER
+## 4\. Conditions and procedure for use of the Platform by the Customer
 
 4.1. To use the Platform, the Customer must register on the Platform and create an Account. When creating an Account on the Platform, the Customer, in a special window with fields, enters his login (his email address) and twice a password, and also confirms his agreement with this Agreement, the Platform's Privacy Policy and Applicable Rules. To confirm registration, a letter is sent to the e-mail address specified by the Customer, which contains a link to confirm the creation of an Account on the Platform.
 
@@ -106,7 +106,7 @@ Authorization and entry to the Platform is carried out through the Site. A perso
 
 4.7. The Company shall not administer and support operating systems and other services created using the Platform Services, unless otherwise agreed upon by the Parties in a separate agreement.
 
-## 5\. CONDITIONS AND ORDER OF USE OF THE PLATFORM BY THE USER
+## 5\. Conditions and order of use of the Platform by the User
 
 5.1. The User of the Project gets access to the Platform after the Administrator of the Project opens for him an account linked to the Project. The creation of a User account is carried out by specifying the e-mail address of the Project User as a login and the User following the link received by his e-mail to confirm the creation of the account. The User is authorized on the Platform within the framework of the Project by entering a login (his email address) and a password received from the Project Administrator.
 
@@ -129,7 +129,7 @@ Authorization and entry to the Platform is carried out through the Site. A perso
 - periodically review the content and monitor changes to the Rules for end users.
 - comply with other requirements and fulfill other obligations provided for by the Rules for End Users.
 
-## 6\. LIMITS OF USE OF THE PLATFORM AND INDIVIDUAL SERVICES
+## 6\. Limits of use of the Platform and individual Services
 
 6.1. When using the Platform and certain Services, the Customer and Users are prohibited from:
 
@@ -146,7 +146,7 @@ Authorization and entry to the Platform is carried out through the Site. A perso
 - take actions to create new structures (including blocks in the blockchain) using the functionality of the Platform and Services to ensure the functioning of cryptocurrency platforms or for mining cryptocurrencies in any other way;
 - carry out any other actions that contradict the policy and goals of creating the Platform and Services or violate the current legislation of the Russian Federation.
 
-## 7\. RIGHTS AND OBLIGATIONS OF THE COMPANY
+## 7\. Rights and obligations of the Company
 
 7.1. The Company carries out the current management of the Platform, independently determines the structure, appearance, allows or restricts the access of Customers, Users to the Platform and the Services provided by the Company in case of violation of the Applicable Rules and Rules for end users by the specified persons.
 
@@ -166,7 +166,7 @@ Authorization and entry to the Platform is carried out through the Site. A perso
 
   7.5. The Company undertakes, on the terms set forth in the Agreement, to provide the Customer with services for providing access to the Platform.
 
-## 8\. PAYMENT FOR COMPANY SERVICES
+## 8\. Payment for Company Services
 
 8.1. In cases stipulated by agreements on the use of certain Services, the services of the Company or Partners to provide access to the Services are paid and are provided on a prepaid basis.
 
@@ -182,11 +182,11 @@ After the receipt of funds to the Company's current account, the status of the C
 
 8.4. The Customer agrees that if, at the time of termination of the obligations of the Parties or termination of the Agreement, the amount of the prepayment made by the Customer for services exceeds the cost of the actually rendered services, the difference between these amounts is recognized as an advance payment of the Customer for other services provided by the Company under other (including future) contracts , except for the cases of written agreement on the terms of termination of obligations or termination of the concluded Agreement on other terms.
 
-8.5. A customer who is a legal entity or an individual entrepreneur, subject to payment for services by transferring funds to a bank account, undertakes, at the end of the Reporting Period, during which the Company provided him with services to provide him with access to the Services, to sign the Acceptance Certificate of the Services Rendered (hereinafter - " Act ") and an invoice (or a universal transfer document (hereinafter referred to as" UPD "). The Company sends the FRTD to the Customer through the electronic document management system (hereinafter referred to as" EDM "). signature (hereinafter referred to as "ES").
+8.5. A customer who is a legal entity or an individual entrepreneur, subject to payment for services by transferring funds to a bank account, undertakes, at the end of the Reporting Period, during which the Company provided him with services to provide him with access to the Services, to sign the Acceptance Certificate of the Services Rendered (hereinafter - "Act") and an invoice (or a universal transfer document (hereinafter referred to as "UPD"). The Company sends the FRTD to the Customer through the electronic document management system (hereinafter referred to as "EDM"). signature (hereinafter referred to as "ES").
 
 8.6 The Customer undertakes to sign one copy of the Act / UPD and send it to the Company within 10 working days from the date of its receipt, or sign the UPD via EDM using electronic signature within the same time frame. Otherwise, the services shall be considered rendered, and the Certificate/UTD shall be considered executed.
 
-## 9\. TERRITORY AND DURATION OF THE AGREEMENT
+## 9\. Territory and duration of the Agreement
 
 9.1. The Customer has the right to use the Platform and Services in the ways described in this Agreement throughout the Russian Federation, as well as other territories where they are available using standard computer tools and programs.
 
@@ -197,13 +197,13 @@ After the receipt of funds to the Company's current account, the status of the C
 1.  The Company will decide to change the terms of this Agreement, the need to conclude a new agreement with the Customers, terminate this Agreement in relation to the Customer, terminate the administration and maintenance of the Platform and terminate access to it or terminate access to the use of the Platform in relation to the Customer.
 2.  The Company has the right at any time without notifying the Customer and without giving reasons to terminate the Agreement unilaterally out of court with immediate termination of access and the ability to use the Platform and without reimbursement of any costs, losses or return received under the Agreement, including, but not limited to, in case:
 
-- closure or termination of the Platform;
-- any, including one-time, violation by the Customer or the User of the Project created by the Customer, the terms of the Applicable Rules and / or the Rules for end users;
-- on other grounds that, in the opinion of the Company, are sufficient to make a decision to terminate the Agreement.
+    - closure or termination of the Platform;
+    - any, including one-time, violation by the Customer or the User of the Project created by the Customer, the terms of the Applicable Rules and / or the Rules for end users;
+    - on other grounds that, in the opinion of the Company, are sufficient to make a decision to terminate the Agreement.
 
   9.4. This Agreement does not provide for the assignment of any exclusive rights or the issuance of an exclusive license from the Company to the Customer for any components of the Platform and Services.
 
-## 10\. FINAL PROVISIONS
+## 10\. Final provisions
 
 10.1. The invalidity of one or several provisions of the Agreement, recognized in the prescribed manner by a court decision that has entered into force, does not entail the invalidity of the Agreement as a whole for the Parties. In the event that one or several provisions of the Agreement are recognized as invalid in the prescribed manner, the Parties undertake to fulfill their obligations under the Agreement as close as possible to those implied by the Parties when concluding and / or agreeing to amend the Agreement in a manner.
 
