@@ -1,12 +1,13 @@
 {
-    "title": "Setting up a VPN tunnel",
-    "pageDescription": "VPN allows you to connect the VK Cloud cloud network with an external (client) network. An example will be shown here on how to organize the interaction of a cloud network with a client network via a VPN.",
-    "shortDescription": "How to set up a VPN tunnel connecting the VK Cloud cloud network with the client network",
-    "metaTitle": "Setting up a VPN tunnel — VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Setting up a VPN tunnel",
-    "markdown": "VPN allows you to connect the VK Cloud cloud network with an external (client) network. An example will be shown here on how to organize the interaction of a cloud network with a client network via a VPN.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
+  "title": "Setting up a VPN tunnel",
+  "pageDescription": "VPN allows you to connect the VK Cloud cloud network with an external (client) network. An example will be shown here on how to organize the interaction of a cloud network with a client network via a VPN.",
+  "shortDescription": "How to set up a VPN tunnel connecting the VK Cloud cloud network with the client network",
+  "metaTitle": "Setting up a VPN tunnel — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Setting up a VPN tunnel",
+  "markdown": "VPN allows you to connect the VK Cloud cloud network with an external (client) network. An example will be shown here on how to organize the interaction of a cloud network with a client network via a VPN.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "7d8999cb-fc52-4d53-b715-18b4c5e8e49d"
 }
