@@ -1,0 +1,12 @@
+{
+  "title": "DNS",
+  "pageDescription": "Public and private DNS, which provides name resolution for VK Cloud platform services according to zone settings. The private DNS server works in private networks.",
+  "shortDescription": "Public and private DNS, providing name resolution for VK Cloud platform services",
+  "metaTitle": "DNS — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "DNS",
+  "markdown": "DNS is a hierarchical distributed database that allows storing IP addresses and other data, and viewing DNS names information. VK Cloud allows publishing DNS zones and records, requiring no deployment of on-premise DNS service. VK Cloud offers:<br>- Public DNS: allows to manage publicly visible DNS zones, available on the internet.<br>- Private DNS that exists within a private networks. Zones, created with Private DNS are not available on the internet.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5
+}

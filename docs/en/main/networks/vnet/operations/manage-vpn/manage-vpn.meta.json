@@ -1,0 +1,14 @@
+{
+    "title": "Managing VPN tunnels",
+    "pageDescription": "Manage VPN tunnels in a virtual network service.",
+    "shortDescription": "Adding, deleting, editing VPN tunnels and other operations",
+    "metaTitle": "Managing VPN tunnels — VK Cloud",
+    "metaDescription": "",
+    "sectionTitle": "Managing VPN tunnels",
+    "markdown": "Manage VPN tunnels in a virtual network service.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 6,
+    "uuid": "834200cc-51b4-4196-9af3-3f6175872e20",
+    "additionalUuids": ["36c6e375-f576-4fe5-b8d2-7a4debf9753a", "58179144-06a1-413e-b740-86419d73d15d", "d4dbb759-f455-44b1-86b0-a67016cbc72b", "a1ffb24a-2b31-41af-84fd-8e530b5dad9d"]
+}
