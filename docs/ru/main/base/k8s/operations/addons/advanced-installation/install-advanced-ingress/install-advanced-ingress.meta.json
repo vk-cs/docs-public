@@ -1,12 +1,13 @@
 {
-    "title": "Ingress NGINX",
-    "pageDescription": "Здесь описана продвинутая установка аддона Ingress-контроллера, включающая редактирование кода аддона.",
-    "shortDescription": "",
-    "metaTitle": "Ingress NGINX — VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Ingress NGINX",
-    "markdown": "Здесь описана продвинутая установка аддона Ingress-контроллера, включающая редактирование кода аддона.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 3
+  "title": "Ingress NGINX",
+  "pageDescription": "Здесь описана продвинутая установка аддона Ingress-контроллера, включающая редактирование кода аддона.",
+  "shortDescription": "",
+  "metaTitle": "Ingress NGINX — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Ingress NGINX",
+  "markdown": "Здесь описана продвинутая установка аддона Ingress-контроллера, включающая редактирование кода аддона.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "5ffee9e3-63ea-49f2-96b9-b9cc25fa0be4"
 }
