@@ -1,3 +1,21 @@
 ## Requisites for the conclusion of contracts and invoicing
 
-<table style="box-sizing: border-box; outline: 0px; border: 1px solid rgb(221, 221, 221); text-align: left; border-collapse: collapse; width: 739.2px;"><tbody><tr><td>Full name</td><td>Limited Liability Company "Mail.Ru"</td></tr><tr><td>OGRN</td><td>1027739850962 dated 20.12.2002</td></tr><tr><td>Legal address</td><td>125167, Moscow, Leningradsky prospect, 39, building 79</td></tr><tr><td>Address for correspondence</td><td>Russian Federation, 125167, Moscow, Leningradsky prospect, 39, building 79, BC "SkyLight"</td></tr><tr><td>INN</td><td>7743001840</td></tr><tr><td>Checkpoint</td><td>997750001</td></tr><tr><td>Checking account</td><td>40702810600000009222<br></td></tr><tr><td>Name of the bank</td><td>Bank Raiffeisenbank JSC, Moscow<br>Bank address: 129090, Moscow, st. Troitskaya, 17, bldg. 1</td></tr><tr><td>Correspondent account</td><td>30101810200000000700<br></td></tr><tr><td>BIK</td><td>044525700<br></td></tr><tr><td>OKPO code</td><td>52685881</td></tr><tr><td>OKATO</td><td>45277598000</td></tr><tr><td>OKVED</td><td>72.40</td></tr><tr><td>Telephones</td><td>(495) 725-63-57</td></tr><tr><td>fax machine</td><td>(495) 725-63-59</td></tr><tr><td>Representative of the Management Company</td><td>General Director of the managing organization LLC Mail.Ru Group Elena Bagudina</td></tr><tr><td>Chief Accountant</td><td>Glukhikh Elena Alexandrovna</td></tr></tbody></table>
+| Full name                  | Limited Liability Company «VK»                                                                         |
+|----------------------------|------------------------------------------------------------------------------------------------------- |
+| Abbreviated name           | LLC «VK»                                                                                               |
+| OGRN                       | 1027739850962 от 20.12.2002                                                                            |
+| Legal address              | 125167, Moscow, Leningradsky prospect, 39, building 79                                                 |
+| Address for correspondence | Russian Federation, 125167, Moscow, Leningradsky prospect, 39, building 79, BC «SkyLight»              |
+| INN                        | 7743001840                                                                                             |
+| KPP                        | 997750001                                                                                              |
+| Checking account           | 40702810100000003759                                                                                   |
+| Name of the bank           | Gazprombank (Joint Stock Company)                                                                      |
+| Correspondent account      | 30101810200000000823                                                                                   |
+| BIK                        | 044525823                                                                                              |
+| OKPO code                  | 52685881                                                                                               |
+| OKATO                      | 45277598000                                                                                            |
+| OKVED                      | 72.40                                                                                                  |
+| Telephones                 | (495) 725-63-57                                                                                        |
+| Fax number                 | (495) 725-63-59                                                                                        |
+| Head of the organization   | General Director of the managing organization «VK Management Company» LLC<br>Bagudina Elena Gennadevna |
+| Chief Accountant           | Glukhikh Elena Alexandrovna                                                                            |
