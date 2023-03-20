@@ -2,7 +2,7 @@ Gatekeeper — это контроллер, встраиваемый между 
 
 <warn>
 
-Используйте эту инструкцию, если ваш кластер версии 1.20 или ниже. Начиная с Kubernetes 1.21, Gatekeeper [уже установлен](../../concepts/architecture) в кластере вместе с [преднастроенными шаблонами и ограничениями](../../concepts/preconfigured-features/settings).
+Используйте эту инструкцию, если ваш кластер версии 1.20 или ниже. Начиная с Kubernetes 1.21, Gatekeeper [уже установлен](../../concepts/architecture) в кластере вместе с [преднастроенными шаблонами и ограничениями](../../concepts/addons-and-settings/settings).
 
 </warn>
 
