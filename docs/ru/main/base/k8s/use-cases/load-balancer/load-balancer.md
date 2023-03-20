@@ -16,7 +16,7 @@
 
   - Случайный выбор реплики (по умолчанию).
 
-    Балансировщик ведет себя так, потому что `kube-proxy` в кластерах Kubernetes VK Cloud [работает](../../concepts/preconfigured-features/settings#rezhim-raboty-kube-proxy) в режиме `iptables`.
+    Балансировщик ведет себя так, потому что `kube-proxy` в кластерах Kubernetes VK Cloud [работает](../../concepts/addons-and-settings/settings#rezhim-raboty-kube-proxy) в режиме `iptables`.
     Подробнее в [официальной документации Kubernetes](https://kubernetes.io/docs/concepts/services-networking/service/#proxy-mode-iptables).
 
   - Закрепление реплики за конкретным IP-адресом.

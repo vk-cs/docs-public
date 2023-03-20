@@ -1,0 +1,12 @@
+{
+    "title": "Kube Prometheus Stack",
+    "pageDescription": "Здесь описана продвинутая установка аддона со средствами мониторинга, включающая редактирование кода аддона.",
+    "shortDescription": "",
+    "metaTitle": "Kube Prometheus Stack — VK Cloud",
+    "metaDescription": "",
+    "sectionTitle": "Kube Prometheus Stack",
+    "markdown": "Здесь описана продвинутая установка аддона со средствами мониторинга, включающая редактирование кода аддона.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2
+}
