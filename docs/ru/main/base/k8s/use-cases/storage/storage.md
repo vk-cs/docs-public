@@ -6,22 +6,22 @@
 
    При создании кластера:
 
-   - Выберите предустановленный сервис NGINX Ingress Controller. Он потребуется для обеспечения доступа к демо-приложениям.
-
-     <warn>
-
-     При развертывании Ingress-контроллера для него будет создан [стандартный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
-
-     Использование балансировщика [тарифицируется](/ru/main/networks/vnet/tariffs).
-
-     </warn>
-
    - Выберите опцию **Назначить внешний IP**.
    - Создайте одну группу узлов с типом виртуальной машины `Standard-2-8` в зоне доступности `MS1` с суммарными вычислительными ресурсами: 2 vCPU, 8 ГБ RAM (или можно выбрать более производительный тип). Это необходимо, чтобы можно было разместить все создаваемые далее объекты.
 
      Например, можно создать одну группу узлов с типом виртуальной машины `Standard-2-8`.
 
    Прочие параметры кластера выберите на свое усмотрение.
+
+1. [Убедитесь](../../operations/addons/manage-addons#prosmotr-addonov), что аддон NGINX Ingress (`ingress-nginx`) [установлен](../../operations/addons/advanced-installation/install-advanced-ingress/) в кластере с параметрами по умолчанию. Он потребуется для обеспечения доступа к демо-приложениям.
+
+    <warn>
+
+    При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+
+    Использование балансировщика [тарифицируется](/ru/main/networks/vnet/tariffs).
+
+    </warn>
 
 1. [Убедитесь](../../connect/kubectl), что вы можете подключиться к кластеру с помощью `kubectl`.
 
@@ -713,13 +713,7 @@
    kubectl apply -f ./cafe-ingress.yaml
    ```
 
-1. Определите публичный IP-адрес Ingress-контроллера, выполнив команду:
-
-   ```bash
-   kubectl get svc ingress-nginx-controller -n ingress-nginx
-   ```
-
-   В столбце `EXTERNAL-IP` будет указан нужный IP-адрес.
+1. [Определите](../../operations/addons/advanced-installation/install-advanced-ingress#poluchenie-ip-adresa-balansirovshchika) публичный IP-адрес Ingress-контроллера.
 
 1. Проверьте доступность приложений с помощью `curl`, используя IP-адрес Ingress-контроллера.
 
