@@ -1,12 +1,13 @@
 {
-    "title": "Docker Registry",
-    "pageDescription": "Здесь описана продвинутая установка аддона реестра Docker, включающая редактирование кода аддона.",
-    "shortDescription": "",
-    "metaTitle": "Docker Registry — VK Cloud",
-    "metaDescription": "",
-    "sectionTitle": "Docker Registry",
-    "markdown": "Здесь описана продвинутая установка аддона реестра Docker, включающая редактирование кода аддона.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
+  "title": "Docker Registry",
+  "pageDescription": "Здесь описана продвинутая установка аддона реестра Docker, включающая редактирование кода аддона.",
+  "shortDescription": "",
+  "metaTitle": "Docker Registry — VK Cloud",
+  "metaDescription": "",
+  "sectionTitle": "Docker Registry",
+  "markdown": "Здесь описана продвинутая установка аддона реестра Docker, включающая редактирование кода аддона.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "26b744ec-cca5-47e2-8ade-1fd1ad250f5e"
 }
