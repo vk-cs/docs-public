@@ -2,10 +2,7 @@
 
 <warn>
 
-Учитывайте, что:
-
-- При создании кластера для него будет создан [сервисный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
-- При выборе [предустановленного сервиса](../../../concepts/preconfigured-features/addons) NGINX Ingress Controller для него будет создан [стандартный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+При создании кластера для него будет создан [сервисный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki). При выборе [аддона](../../../concepts/addons-and-settings/addons/) NGINX Ingress Controller для него будет создан [стандартный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
 
 Использование балансировщиков [тарифицируется](/ru/main/networks/vnet/tariffs).
 
@@ -110,7 +107,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   availability_zone   = "<зона доступности>"
   floating_ip_enabled = <true или false: назначить ли публичный IP-адрес для API-кластера>
   labels = {
-    # Требуемые предустановленные сервисы
+    # Нужные аддоны
     docker_registry_enabled = true
     prometheus_monitoring = true
     ingress_controller="nginx"
@@ -202,7 +199,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
 - Рекомендуется при создании кластера назначить ему публичный IP-адрес, чтобы можно было получить доступ к кластеру из интернета (`floating_ip_enabled = true`).
 
-- Если какие-то из предустановленных сервисов не нужны, удалите соответствующие им строки из блока `labels`. Подробнее в разделе [Доступные сервисы](../../../concepts/preconfigured-features/addons/).
+- Если какие-то из аддонов не нужны, удалите соответствующие им строки из блока `labels`. Подробнее в разделе [Аддоны](../../../concepts/addons-and-settings/addons/).
 
 ## 3. Опишите конфигурацию одной или нескольких групп worker-узлов
 

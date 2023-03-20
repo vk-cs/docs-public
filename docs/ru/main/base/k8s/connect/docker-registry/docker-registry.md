@@ -1,18 +1,6 @@
-<info>
+1. [Убедитесь](../../operations/addons/manage-addons#prosmotr-addonov), что аддон реестра Docker (`docker-registry`) [установлен](../../operations/addons/advanced-installation/install-advanced-registry/) в кластере.
 
-Подключение возможно, только если при создании кластера был выбран [предустановленный сервис](../../concepts/preconfigured-features/addons#docker-registry) Docker Registry.
-
-</info>
-
-1. Получите необходимую информацию для использования реестра:
-
-   1. Перейдите в [личный кабинет](https://mcs.mail.ru/app/) VK Cloud.
-   1. Выберите проект и регион, где находится нужный кластер.
-   1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
-   1. Нажмите на имя нужного кластера. Откроется страница с информацией.
-   1. Откройте вкладку **Доступ к Docker Registry** в конце страницы.
-
-      Скопируйте значения `URL`, `username` и `password`.
+1. [Получите данные](../../operations/addons/advanced-installation/install-advanced-registry#poluchenie-dannyh-dlya-dostupa-k-reestru) для доступа к реестру Docker.
 
 1. [Установите Docker Engine](https://docs.docker.com/engine/install/), если он еще не установлен. Доступны на выбор либо Docker Desktop, либо серверный вариант Docker Engine без графического интерфейса.
 
@@ -76,7 +64,7 @@
 1. Войдите в реестр:
 
    ```bash
-   docker login <URL реестра Docker> --username <username для реестра Docker>
+   docker login <URL реестра Docker> --username <логин для реестра Docker>
    ```
 
    Введите пароль для реестра Docker.
