@@ -1,6 +1,6 @@
 To facilitate the process of replenishing the balance with a bank card, you can link it to the current project. The card is linked during registration or this function is available in the "Balance" section and is activated by the "Link card" button.
 
-In the payment settings window, specify the card number, expiration date and CV\* code, then confirm the data entry with the "Add card" button. To check the card, 1 ruble will be debited and credited to the VK Cloud project account.
+In the payment settings window, specify the card number, expiration date and CV\* code, then confirm the data entry with the "Add card" button. To check the card, 500 ruble will be debited and credited to the VK Cloud project account.
 
 ## Auto-completion
 
