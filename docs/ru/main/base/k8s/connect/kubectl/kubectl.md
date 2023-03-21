@@ -177,7 +177,7 @@
       Пример команды для загрузки утилиты `kubectl`, совместимой с кластером версии 1.23.6:
 
       ```powershell
-      curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/bin/windows/amd64/kubectl.exe).
+      curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/bin/windows/amd64/kubectl.exe
       ```
 
    1. В переменной окружения `PATH` укажите директорию, куда был загружен файл `kubectl.exe`:
