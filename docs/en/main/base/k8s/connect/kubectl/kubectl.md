@@ -177,7 +177,7 @@ The `kubectl` utility allows you to perform the full range of Kubernetes cluster
       An example command to download the `kubectl` utility which is compatible with cluster version 1.23.6:
 
       ```powershell
-      curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/bin/windows/amd64/kubectl.exe).
+      curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.23.6/bin/windows/amd64/kubectl.exe
       ```
 
    1. In the `PATH` environment variable, specify the directory where the `kubectl.exe` file was downloaded:
