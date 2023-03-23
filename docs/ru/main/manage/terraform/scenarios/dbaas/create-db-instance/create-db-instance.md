@@ -2,12 +2,7 @@
 
 <warn>
 
-При создании инстансов следующих типов в **кластерной конфигурации** для инстанса будет создан [сервисный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki):
-
-- MySQL;
-- PostgreSQL;
-- Postgres Pro Enterprise;
-- Postgres Pro Enterprise 1С.
+При создании инстансов БД MySQL, PostgreSQL, Postgres Pro Enterprise, Postgres Pro Enterprise 1С в **кластерной конфигурации** будет создан [сервисный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
 
 Использование балансировщика [тарифицируется](/ru/main/networks/vnet/tariffs).
 

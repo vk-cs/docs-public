@@ -3,6 +3,14 @@ To create a database, go to the "[Database instances](https://mcs.mail.ru/app/se
 - Database type and version.
 - Configuration: Single, Master-Replica or Cluster. For feature testing, we recommend the Single configuration.
 
+<warn>
+
+When creating the MySQL, PostgreSQL, Postgres Pro Enterprise, Postgres Pro Enterprise 1C database instances in **the cluster configuration**, a [service load balancer](/en/main/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created.
+
+Usage of this load balancer is [charged](/en/main/networks/vnet/tariffs).
+
+</warn>
+
 ## Supported Versions
 
 VK Cloud provides all current database versions.
