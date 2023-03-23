@@ -16,12 +16,6 @@ Charged:
 
 - [Standard and service](../concepts/load-balancer#types-of-load-balancers) load balancers.
 
-  <info>
-
-  Load balancers will begin being charged on March 13, 2023.
-
-  </info>
-
 ## What is not charged
 
 - The public IP address assigned to the router when you select the **External network connection** option.
