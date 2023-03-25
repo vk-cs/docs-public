@@ -161,7 +161,7 @@ Fluend in the Kubernetes cluster can collect logs of hearths, services and hosts
 
 The fluentd configuration contains information about the sources for collecting logs, methods of parsing and filtering useful information, consumers of this information (in our case, such a consumer is elasticsearch).
 
-In the fluentd configuration file, sources for collecting logs are specified within the <source> elements. The configmap below states that fluentd will collect information from application container logs, from kubernetes container logs and kubernetes node system logs.
+In the fluentd configuration file, sources for collecting logs are specified within the `<source>` elements. The configmap below states that fluentd will collect information from application container logs, from kubernetes container logs and kubernetes node system logs.
 
 1. Create a configmap for fluentd with the following content:
 

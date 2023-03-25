@@ -14,7 +14,7 @@ To install Gitlab:
 1. Assign a DNS name to the server that will be used to access Git in one of the following ways:
 
 - If you have a domain for this, add your server to it.
-- If you do not have a free domain, use, for example, the [NoIP](https://www.noip.com/) service, which provides dynamic DNS. To do this, register on the server, select a name and install the client on the server (read more <!--[here](https://youtu.be/8xp4kkbsZi0) and--> [in the article of the NoIP service developer](https:// www.noip.com/support/knowledgebase/installing-the-linux-dynamic-update-client/)).
+- If you do not have a free domain, use, for example, the [NoIP](https://www.noip.com/) service, which provides dynamic DNS. To do this, register on the server, select a name and install the client on the server (read more [in the article of the NoIP service developer](https://www.noip.com/support/knowledgebase/installing-the-linux-dynamic-update-client/)).
 
 2. Create a file `/root/docker-compose.yml` and add the following to it:
 

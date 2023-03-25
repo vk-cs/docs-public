@@ -59,10 +59,10 @@ sudo apt install nginx
 
     \*\*
 
-- <es_url> — IP-адрес elasticsearch с номером порта 9200
-- <kibana_url> — IP-адрес инстанса с Kibana
+- `<es_url>` — IP-адрес elasticsearch с номером порта 9200
+- `<kibana_url>` — IP-адрес инстанса с Kibana
 
-Примеры для <es_url>:
+Примеры для `<es_url>`:
 
 - прямой адрес:
 
