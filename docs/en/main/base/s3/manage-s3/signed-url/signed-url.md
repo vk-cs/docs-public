@@ -44,7 +44,7 @@ Where
 - **X-Amz-SignedHeaders** - Request headers to be signed. It is mandatory to sign the host header and any x-amz- \* headers used in the request.
 - **X-Amz-Signature** - Request signature.
 - **X-Amz-Date** - Time in ISO8601 format, for example 20180719T000000Z. The date must be the same as the date in the X-Amz-Credential parameter.
-- **X-Amz-Credential** - Identifier for signing the format <access-key-id> / <YYYYMMDD> / ru-msk / s3 / aws4_request, where <YYYYMMDD> must match the date set in the X-Amz-Date header.
+- **X-Amz-Credential** - Identifier for signing the format `<access-key-id>` / `<YYYYMMDD>` / `ru-msk` / `s3` / `aws4_request`, where `<YYYYMMDD>` must match the date set in the X-Amz-Date header.
 
 ## Composing a signed URL
 
