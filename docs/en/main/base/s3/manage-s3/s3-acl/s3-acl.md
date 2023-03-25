@@ -28,10 +28,10 @@ xsi: type = "Canonical User">
 </AccessControlPolicy>
 ```
 
-- The < **Owner** > element identifies the owner by the canonical user ID of the VK Cloud account.
-- The < **Grant** > element identifies the recipient (VK Cloud account or predefined group) and grants permission.
+- The `<Owner>` element identifies the owner by the canonical user ID of the VK Cloud account.
+- The `<Grant>` element identifies the recipient (VK Cloud account or predefined group) and grants permission.
 
-The base ACL shown as an example defaults to one Grant element per owner. To grant permission, <Grant> elements are added, each <Grant> element must specify the grantor and permission options.
+The base ACL shown as an example defaults to one Grant element per owner. To grant permission, `<Grant>` elements are added, each `<Grant>` element must specify the grantor and permission options.
 
 **Note**
 

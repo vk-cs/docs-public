@@ -186,7 +186,7 @@ ash-work:~ kubectl create secret docker-registry myprivateregistry --docker-s
 secret/myprivateregistry created.
 ```
 
-где <SERVER_DNS_NAME> - имя сервера Harbor, <PASSWORD>  - пароль пользователя k8s в Harbor.
+где `<SERVER_DNS_NAME>` - имя сервера Harbor, `<PASSWORD>`  - пароль пользователя k8s в Harbor.
 
 4.  Убедитесь, что secret успешно создан:
 
