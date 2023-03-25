@@ -184,7 +184,7 @@ The cluster responds.
 ash-work:~ kubectl create secret docker-registry myprivateregistry --docker-server=https://<SERVER_DNS_NAME>:8443 --docker-username=k8s --docker-password=<PASSWORD>
 secret/myprivateregistry created.
 ```
-where <SERVER_DNS_NAME> is the Harbor server name, <PASSWORD> is the Harbor user k8s password.
+where `<SERVER_DNS_NAME>` is the Harbor server name, `<PASSWORD>` is the Harbor user k8s password.
 
 4. Verify that the secret was successfully created:
 

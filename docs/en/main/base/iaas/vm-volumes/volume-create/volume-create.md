@@ -47,13 +47,13 @@ openstack volume create --type <disk type ID> --size <size> <disk name>
 
 It is also possible to use the following parameters:
 
-- \--image <image ID> — specifying the image from which the disk will be created;
-- \--snapshot <snapshot ID> — specifying the snapshot from which the disk will be created;
-- \--source <disk ID> — specifying the disk based on which the disk will be created (disk cloning);
-- \--description <description> — any description of the disk;
-- \--availability-zone <zone> — specifying the disk availability zone;
-- \--property <key=value> — specifying arbitrary disk properties;
--\--bootable - creates a bootable disk.
+- `--image <image ID>` — specifying the image from which the disk will be created;
+- `--snapshot <snapshot ID>` — specifying the snapshot from which the disk will be created;
+- `--source <disk ID>` — specifying the disk based on which the disk will be created (disk cloning);
+- `--description <description>` — any description of the disk;
+- `--availability-zone <zone>` — specifying the disk availability zone;
+- `--property <key=value>` — specifying arbitrary disk properties;
+- `--bootable` — creates a bootable disk.
 
 To delete a disk in the OpenStack client, you should:
 
