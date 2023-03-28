@@ -1,18 +1,35 @@
 {
-    "meta": "Бекапы баз данных",
+    "meta": "Резервное копирование баз данных",
     "path": "/services/databases/backups",
     "groups": [
         {
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/dbs/dbaas/db-backup"
+                    "link": "docs/en/main/base/account/start"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-backup"
+                    "link": "docs/en/main/manage/backups/db-backup"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-faq/faq-vm-backup"
+                    "link": "docs/en/main/manage/backups/retention-policy"
+                }
+            ]
+        },
+        {
+            "title": "MORE",
+            "links": [
+                {
+                    "link": "docs/en/main/manage/backups/db-backup/operations/db-backup-create"
+                },
+                {
+                    "link": "docs/en/main/manage/backups/db-backup/operations/manage-db-backups"
+                },
+                {
+                    "link": "docs/en/main/manage/backups/db-backup/operations/db-recover-backup"
+                },
+                {
+                    "link": "docs/en/main/manage/backups/db-backup/operations/point-in-time-recovery-pitr"
                 }
             ]
         }
