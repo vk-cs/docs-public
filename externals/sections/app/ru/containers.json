@@ -24,13 +24,19 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/k8s/k8s-start/create-k8s"
+                    "link": "docs/ru/main/base/k8s/quickstart"
                 },
                 {
-                    "link": "docs/ru/main/base/k8s/k8s-start/k8s-dashboard"
+                    "link": "docs/ru/main/base/k8s/operations/create-cluster"
                 },
                 {
-                    "link": "docs/ru/main/base/k8s/k8s-start/connect-k8s"
+                    "link": "docs/ru/main/base/k8s/connect/k8s-dashboard"
+                },
+                {
+                    "link": "docs/ru/main/base/k8s/connect/kubectl"
+                },
+                {
+                    "link": "docs/ru/main/base/k8s/connect/docker-registry"
                 }
             ]
         }

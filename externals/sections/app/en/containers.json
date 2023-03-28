@@ -6,6 +6,9 @@
             "title": "INFORMATION",
             "links": [
                 {
+                    "link": "docs/en/main/base/account/start"
+                },
+                {
                     "link": "docs/en/main/base/k8s"
                 },
                 {
@@ -13,7 +16,7 @@
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/en/main/base/account/concepts/quotasandlimits"
                 }
             ]
         },
@@ -21,10 +24,19 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/base/k8s/k8s-start/create-k8s"
+                    "link": "docs/en/main/base/k8s/quickstart"
                 },
                 {
-                    "link": "docs/en/main/base/k8s/k8s-start/k8s-dashboard"
+                    "link": "docs/en/main/base/k8s/operations/create-cluster"
+                },
+                {
+                    "link": "docs/en/main/base/k8s/connect/k8s-dashboard"
+                },
+                {
+                    "link": "docs/en/main/base/k8s/connect/kubectl"
+                },
+                {
+                    "link": "docs/en/main/base/k8s/connect/docker-registry"
                 }
             ]
         }
