@@ -1,5 +1,5 @@
 {
-    "meta": "Бекапы баз данных",
+    "meta": "Резервное копирование баз данных",
     "path": "/services/databases/backups",
     "groups": [
         {
@@ -9,13 +9,27 @@
                     "link": "docs/ru/main/base/account/start"
                 },
                 {
-                    "link": "docs/ru/main/dbs/dbaas/db-backup/point-in-time-recovery-pitr"
+                    "link": "docs/ru/main/manage/backups/db-backup"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/vm-backup"
+                    "link": "docs/ru/main/manage/backups/retention-policy"
+                }
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                {
+                    "link": "docs/ru/main/manage/backups/db-backup/operations/db-backup-create"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/vm-faq/faq-vm-backup"
+                    "link": "docs/ru/main/manage/backups/db-backup/operations/manage-db-backups"
+                },
+                {
+                    "link": "docs/ru/main/manage/backups/db-backup/operations/db-recover-backup"
+                },
+                {
+                    "link": "docs/ru/main/manage/backups/db-backup/operations/point-in-time-recovery-pitr"
                 }
             ]
         }
