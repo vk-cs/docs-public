@@ -1,9 +1,9 @@
 {
   "title": "GitLab CE",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "GitLab CE - VK Cloud",
-  "metaDescription": "Что такое GitLab CE GitLab CE: система управления репозиториями кода для Git. Имеет собственную справочную WiKi-подобную систему и система отслеживания оши",
+  "pageDescription": "GitLab CE — система управления репозиториями кода для Git. Имеет собственную справочную WiKi-подобную систему и систему отслеживания ошибок.",
+  "shortDescription": "GitLab CE — система управления репозиториями кода для Git. Имеет собственную справочную WiKi-подобную систему и систему отслеживания ошибок",
+  "metaTitle": "GitLab CE — VK Cloud",
+  "metaDescription": "GitLab CE — система управления репозиториями кода для Git. Имеет собственную справочную WiKi-подобную систему и систему отслеживания ошибок.",
   "sectionTitle": "GitLab CE",
   "markdown": "",
   "icon": "",
