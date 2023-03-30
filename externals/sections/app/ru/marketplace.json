@@ -13,6 +13,9 @@
                 },
                 {
                     "link": "docs/ru/main/additionals/cases"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-faq"
                 }
             ]
         },
@@ -20,13 +23,7 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/mp"
-                },
-                {
-                    "link": "docs/ru/main/base/account/start"
-                },
-                {
-                    "link": "docs/ru/main/additionals/mp/mp-faq/mp-connect-faq"
+                    "link": "docs/ru/main/additionals/mp/mp-start"
                 },
                 {
                     "link": "docs/ru/main/additionals/mp/mp-apps/mp-gitlab-ce"
