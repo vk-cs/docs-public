@@ -1,9 +1,9 @@
 {
   "title": "Docker Registry",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Docker Registry - VK Cloud",
-  "metaDescription": "Docker — программное обеспечение для автоматизации развёртывания и управления приложениями в среде виртуализации на уровне операционной системы. Позволяет",
+  "pageDescription": "Docker Registry — масштабируемое серверное приложение без сохранения состояния, которое хранит образы Docker и позволяет вам распространять их.",
+  "shortDescription": "Docker Registry — масштабируемое серверное приложение без сохранения состояния, которое хранит образы Docker и позволяет вам распространять их. В составе данного стека есть графический интерфейс Portainer",
+  "metaTitle": "Docker Registry — VK Cloud",
+  "metaDescription": "Docker Registry — масштабируемое серверное приложение без сохранения состояния, которое хранит образы Docker и позволяет вам распространять их.",
   "sectionTitle": "Docker Registry",
   "markdown": "",
   "icon": "",

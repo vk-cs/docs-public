@@ -1,9 +1,9 @@
 {
   "title": "LAMP stack (Apache+PHP)",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "LAMP stack (Apache+PHP) - VK Cloud",
-  "metaDescription": "LAMP —акроним, обозначающий набор (комплекс)серверного программного обеспечения, широко используемый воВсемирной паутине. LAMP назван по первым буквам вход",
+  "pageDescription": "LAMP — стек программного обеспечения: Linux, Apache, MariaDB / MySQL, PHP. Используется для создания, размещения и поддержки веб-контента.",
+  "shortDescription": "LAMP — стек программного обеспечения: Linux, Apache, MariaDB / MySQL, PHP. Используется для создания, размещения и поддержки веб-контента",
+  "metaTitle": "LAMP stack (Apache+PHP) — VK Cloud",
+  "metaDescription": "LAMP — стек программного обеспечения: Linux, Apache, MariaDB / MySQL, PHP. Используется для создания, размещения и поддержки веб-контента.",
   "sectionTitle": "LAMP stack (Apache+PHP)",
   "markdown": "",
   "icon": "",
