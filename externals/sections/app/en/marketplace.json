@@ -20,7 +20,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/additionals/mp/mp-start/create-app"
+                    "link": "docs/en/main/additionals/mp/mp-start"
+                },
+                {
+                    "link": "docs/en/main/additionals/mp/mp-apps/mp-gitlab-ce"
                 },
                 {
                     "link": "docs/en/main/additionals/mp/mp-apps/mp-openvpn"
