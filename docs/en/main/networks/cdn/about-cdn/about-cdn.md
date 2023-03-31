@@ -8,14 +8,12 @@ The speed of loading a web page and its content is greatly influenced by how far
 
 CDN technology is able to prevent delays in data transmission, possible interruptions in communication, and losses on congested channels and the joints between them. Load management during the transmission of network traffic allows you to unload the backbone and network nodes by distributing the resulting load between remote servers.
 
-![](./assets/1600919110398-1600919110398.png)
-
-## CDN service pricing
+## Service pricing
 
 The service is being provided on a pay-as-you-go basis with the base price of **₽0.60/GB** (VAT inclusive).
 
 In other words, you will only pay for what you consume.
 
-#### in case you need to distribute larger amounts of data and these amounts are above 10TB per month, please reach out to us at: [support@mcs.mail.ru](mailto:support@mcs.mail.ru).
+in case you need to distribute larger amounts of data and these amounts are above 10TB per month, please contact to [technical support](/en/contacts).
 
 The service is being provided on a pay-as-you-go basis. You will only pay for what you consume.
