@@ -1,12 +1,13 @@
 {
-    "title": "Using Docker CE",
-    "pageDescription": "How to use installed Docker CE.",
-    "shortDescription": "",
-    "metaTitle": "Using Docker CE",
-    "metaDescription": "",
-    "sectionTitle": "Using Docker CE",
-    "markdown": "How to use installed Docker CE.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
+  "title": "Using Docker CE",
+  "pageDescription": "How to use installed Docker CE.",
+  "shortDescription": "",
+  "metaTitle": "Using Docker CE",
+  "metaDescription": "",
+  "sectionTitle": "Using Docker CE",
+  "markdown": "How to use installed Docker CE.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "aa6c17ed-fc38-4ef6-b16a-5fd9d99388c2"
 }
