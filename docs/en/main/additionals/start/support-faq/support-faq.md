@@ -1,12 +1,6 @@
 ## How do I contact support?
 
-Technical support can be contacted through the following communication channels:
-
-| Channel | Information                 | Working hours    |
-|---------|-----------------------------|------------------|
-| Portal  | https://support.mcs.mail.ru | around the clock |
-| Mail    | support@mcs.mail.ru         | around the clock |
-| Phone   | +7 (499) 350-97-03          | around the clock |
+Technical support can be contacted through the communication channels listed at [Terms of support](../support/support-info/).
 
 <info>
 
