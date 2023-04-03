@@ -1,7 +1,7 @@
 {
   "title": "Обратная связь",
-  "pageDescription": "Contacts",
-  "markdown": "Если вы не нашли ответа на интересующий вас вопрос или у вас появились дополнительные вопросы, вы можете задать их по каналам связи:<br><br><table><tbody><tr><td>Канал</td><td>Информация</td><td>Время работы</td></tr><tr><td>Портал</td><td>https://support.mcs.mail.ru</td><td>круглосуточно</td></tr><tr><td>Почта</td><td>support@mcs.mail.ru</td><td>круглосуточно</td></tr><tr><td>Телефон</td><td>+7 (499) 350-97-03</td><td>круглосуточно</td></tr></tbody></table>",
+  "pageDescription": "Контакты технической поддержки и обратной связи VK Cloud.",
+  "markdown": "Если вы не нашли ответа на интересующий вас вопрос или у вас появились дополнительные вопросы, вы можете задать их по каналам связи:<br><br><table><thead><tr><td>Канал</td><td>Информация</td><td>Время работы</td></tr></thead><tbody><tr><td>Портал</td><td>https://support.mcs.mail.ru</td><td>круглосуточно</td></tr><tr><td>tg-бот</td><td>@vk_tech_support_bot</td><td>круглосуточно</td></tr><tr><td>Почта</td><td>support@mcs.mail.ru</td><td>круглосуточно</td></tr><tr><td>Телефон</td><td>+7 (499) 350-97-03</td><td>круглосуточно</td></tr></tbody></table>",
   "sectionTitle": "Возможно, у нас уже есть ответ на ваш вопрос",
   "uuid": "f3fbe832-cd6c-4435-b51b-c5c9728a95e3"
 }

@@ -7,6 +7,7 @@ You can apply to technical support through the following available communication
 | Channel | Information                 | Working hours    |
 |---------|-----------------------------|------------------|
 | Portal  | https://support.mcs.mail.ru | around the clock |
+| Telegram bot | `@vk_tech_support_bot` | around the clock |
 | Mail    | support@mcs.mail.ru         | around the clock |
 | Phone   | +7 (499) 350-97-03          | around the clock |
 

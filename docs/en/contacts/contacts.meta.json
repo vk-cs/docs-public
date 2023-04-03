@@ -1,7 +1,7 @@
 {
   "title": "Contacts",
   "pageDescription": "Contacts",
-  "markdown": "If you did not find the answer to your question or you have additional questions, you can ask them by: portal https://support.mcs.mail.ru, e-mail support@mcs.mail.ru.",
+  "markdown": "If you did not find the answer to your question or you have additional questions, you can ask them by:<br><br><table><thead><tr><td>Channel</td><td>Information</td><td>Working hours</td></tr></thead><tbody><tr><td>Portal</td><td>https://support.mcs.mail.ru</td><td>around the clock</td></tr><tr><td>Telegram bot</td><td>@vk_tech_support_bot</td><td>around the clock</td></tr><tr><td>Mail</td><td>support@mcs.mail.ru</td><td>around the clock</td></tr><tr><td>Phone</td><td>+7 (499) 350-97-03</td><td>around the clock</td></tr></tbody></table>",
   "sectionTitle": "We may already have the answer to your question.",
   "uuid": "4748e3fa-81fb-49e2-a58e-9e831fe43409"
 }
