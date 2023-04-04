@@ -1,0 +1,13 @@
+{
+  "title": "API VK Cloud S3",
+  "pageDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers.",
+  "shortDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers",
+  "metaTitle": "API VK Cloud S3 — VK Cloud",
+  "metaDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers.",
+  "sectionTitle": "API VK Cloud S3",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 6,
+  "uuid": "cbb6aafe-ab11-47de-a5f2-9f2d2cee8cf4"
+}
