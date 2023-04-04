@@ -8,5 +8,6 @@
   "markdown": "Performing operations with buckets and S3 objects using the SDK, Python and REST API.",
   "icon": "",
   "infobarItems": null,
-  "weight": 7
+  "weight": 7,
+  "uuid": "1aa27b08-b7cc-4783-8065-d5ebc5b8b642"
 }
