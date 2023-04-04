@@ -1,6 +1,6 @@
 {
   "title": "Разработка",
-  "pageDescription": "Выполнение операций с бакетами и объектами S3 при помощи SDK, Python и REST API. Подробнее о REST API читайте в разделе [Объектное хранилище](../../../additionals/api/s3-rest-api).",
+  "pageDescription": "Выполнение операций с бакетами и объектами S3 при помощи SDK, Python и REST API.",
   "shortDescription": "Инструменты разработки для объектного хранилища VK Cloud.",
   "metaTitle": "Разработка - VK Cloud",
   "metaDescription": "Инструменты разработки для объектного хранилища VK Cloud.",
