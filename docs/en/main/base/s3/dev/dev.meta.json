@@ -1,0 +1,12 @@
+{
+  "title": "Development",
+  "pageDescription": "Performing operations with buckets and S3 objects using the SDK, Python and REST API.",
+  "shortDescription": "Development tools for VK Cloud Object Storage",
+  "metaTitle": "Development - VK Cloud",
+  "metaDescription": "Development tools for VK Cloud Object Storage.",
+  "sectionTitle": "Development",
+  "markdown": "Performing operations with buckets and S3 objects using the SDK, Python and REST API.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 7
+}
