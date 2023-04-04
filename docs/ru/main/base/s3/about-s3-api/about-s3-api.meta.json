@@ -1,0 +1,13 @@
+{
+  "title": "API VK Cloud S3",
+  "pageDescription": "Информация об API сервиса: совместимость с API Amazon AWS S3, аутентификация, общие заголовки запросов.",
+  "shortDescription": "Информация об API сервиса: совместимость с API Amazon AWS S3, аутентификация, общие заголовки запросов",
+  "metaTitle": "API VK Cloud S3 — VK Cloud",
+  "metaDescription": "Информация об API сервиса: совместимость с API Amazon AWS S3, аутентификация, общие заголовки запросов.",
+  "sectionTitle": "API VK Cloud S3",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 6,
+  "uuid": "4801a6f5-5a82-4c45-81d4-5cada60392ab"
+}
