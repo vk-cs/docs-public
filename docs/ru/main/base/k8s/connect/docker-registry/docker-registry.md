@@ -1,6 +1,15 @@
-1. [Убедитесь](../../operations/addons/manage-addons#prosmotr-addonov), что аддон реестра Docker (`docker-registry`) [установлен](../../operations/addons/advanced-installation/install-advanced-registry/) в кластере.
+Вы можете подключиться к реестру Docker, если в кластере установлен соответствующий [аддон](../../concepts/addons-and-settings/addons).
 
+При [установке](../../operations/addons/advanced-installation/install-advanced-registry/) аддона для него создается стандартный балансировщик нагрузки с плавающим IP-адресом. Поэтому к реестру Docker можно подключиться с любого хоста, имеющего доступ в интернет.
+
+## Подготовительные шаги
+
+1. [Убедитесь](../../operations/addons/manage-addons#prosmotr-addonov), что аддон реестра Docker (`docker-registry`) установлен в кластере.
 1. [Получите данные](../../operations/addons/advanced-installation/install-advanced-registry#poluchenie-dannyh-dlya-dostupa-k-reestru) для доступа к реестру Docker.
+
+## Подключение к реестру Docker
+
+На хосте, с которого планируется подключаться к реестру:
 
 1. [Установите Docker Engine](https://docs.docker.com/engine/install/), если он еще не установлен. Доступны на выбор либо Docker Desktop, либо серверный вариант Docker Engine без графического интерфейса.
 
