@@ -1,8 +1,13 @@
 The `kubectl` utility allows you to perform the full range of Kubernetes cluster management operations from the command line. See [official Kubernetes documentation](https://kubernetes.io/docs/reference/kubectl/) for details.
 
+The way to connect to the cluster depends on its IP address:
+
+- If an external IP address is assigned to the cluster, then you can connect to it from any host with Internet access.
+- If the cluster is assigned only an internal IP address, then you can connect to it only from a host in VK Cloud — a virtual machine that is located in the same subnet as the cluster.
+
 ## Preparatory steps
 
-1. Install `kubectl` if the utility is not already installed.
+1. On the host from which you plan to connect to the cluster, install `kubectl` if the utility is not already installed.
 
    <warn>
 
@@ -207,7 +212,7 @@ The `kubectl` utility allows you to perform the full range of Kubernetes cluster
 
 1. If you plan to connect to a Kubernetes cluster version 1.23 or higher, prepare everything you need to connect using [Single Sign-On (SSO)](../../concepts/access-management).
 
-   1. Install `keystone-auth` if the utility is not already installed:
+   1. On the host from which you plan to connect to the cluster, install `keystone-auth` if the utility is not already installed:
 
       <tabs>
       <tablist>
@@ -261,6 +266,8 @@ The `kubectl` utility allows you to perform the full range of Kubernetes cluster
       - [Activate API access](/en/base/account/project/api/api-access#activate-api-access) for this user.
 
 ## Connecting to the cluster
+
+On the host from which you plan to connect to the cluster:
 
 1. Download the configuration file of the cluster you want to connect to to the local computer:
 
@@ -336,7 +343,7 @@ The `kubectl` utility allows you to perform the full range of Kubernetes cluster
 </tablist>
 <tabpanel>
 
-Run the command:
+Run the command on the host:
 
 ```bash
 kubectl cluster-info
@@ -344,6 +351,8 @@ kubectl cluster-info
 
 </tabpanel>
 <tabpanel>
+
+On the host:
 
 1. Run the command:
 
