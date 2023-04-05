@@ -1,18 +1,15 @@
-<info>
+You can connect to the Docker registry if the appropriate addon is installed in the cluster.
 
-Connection is only possible if [pre-configured Docker Registry service](../../concepts/preconfigured-features/addons#docker-registry) was selected during cluster creation.
+When installing an addon, a standard load balancer with a floating IP address is created for it. Therefore, you can connect to the Docker registry from any host that has Internet access.
 
-</info>
+## Preparatory steps
 
-1. Get the necessary information to use the registry:
+1. Make sure that the Docker registry addon (`docker-registry`) is installed in the cluster.
+1. Get the data to access the Docker registry.
 
-   1. Go to [personal account](https://mcs.mail.ru/app/) VK Cloud.
-   1. Select the project and region where the desired cluster is located.
-   1. Go to **Containers → Kubernetes Clusters**.
-   1. Click the name of the cluster you want. A page with information will open.
-   1. Open the **Docker Registry access** tab at the end of the page.
+## Connecting to the Docker Registry
 
-      Copy the values of `URL`, `username` and `password`.
+On the host from which you plan to connect to the registry:
 
 1. [Install Docker Engine](https://docs.docker.com/engine/install/) if not already installed. There is a choice of either Docker Desktop or a server-side version of Docker Engine without a GUI.
 
