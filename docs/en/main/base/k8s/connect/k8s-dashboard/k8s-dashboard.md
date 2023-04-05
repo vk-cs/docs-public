@@ -1,10 +1,17 @@
-Kubernetes Dashboard is a universal web interface for Kubernetes clusters. It allows users to manage both the cluster itself and the applications running in it. Read more in [official Kubernetes documentation](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
+Kubernetes Dashboard is a universal web interface for Kubernetes clusters available into all VK Cloud clusters. It allows users to manage both the cluster itself and the applications running in it. Read more in [official Kubernetes documentation](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
+
+The way to connect to Kubernetes Dashboard depends on the IP address of the cluster:
+
+- If an external IP address is assigned to the cluster, then you can connect from any host with Internet access.
+- If the cluster is assigned only an internal IP address, then you can connect only from a host in VK Cloud — a virtual machine that is located in the same subnet as the cluster.
+
+To connect to Kubernetes Dashboard, a browser must be installed on the host.
 
 ## Preparatory steps
 
 1. [Make sure](../kubectl#checking-the-connection-to-the-cluster) that you can connect to the cluster using `kubectl`.
 
-1. Install `kauthproxy` if the utility is not already installed:
+1. On the host from which you plan to connect to the cluster, install `kauthproxy` if the utility is not already installed:
 
    1. Download the archive of the correct version from [release page](https://github.com/int128/kauthproxy/releases):
 
@@ -38,15 +45,7 @@ Kubernetes Dashboard is a universal web interface for Kubernetes clusters. It al
 
       The secret will be copied to the clipboard.
 
-1. In a separate terminal session, run the command:
-
-   - For Kubernetes 1.22:
-
-     ```bash.
-     kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
-     ```
-
-   - For Kubernetes 1.21 and below:
+1. On the host in a separate terminal session, run the command:
 
      ```bash
      kauthproxy -n kube-system https://kubernetes-dashboard.svc
@@ -69,7 +68,7 @@ Kubernetes Dashboard is a universal web interface for Kubernetes clusters. It al
 </tabpanel>
 <tabpanel>
 
-1. In a separate terminal session, run the command:
+1. On the host in a separate terminal session, run the command:
 
    ```bash
    kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
