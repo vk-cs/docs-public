@@ -1,10 +1,17 @@
-Kubernetes Dashboard — это универсальный веб-интерфейс для кластеров Kubernetes. Он позволяет пользователям управлять как самим кластером, так и работающими в нем приложениями. Подробнее в [официальной документации Kubernetes](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
+Kubernetes Dashboard — это универсальный веб-интерфейс для кластеров Kubernetes, который доступен во всех кластерах VK Cloud. Он позволяет пользователям управлять как самим кластером, так и работающими в нем приложениями. Подробнее в [официальной документации Kubernetes](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/).
+
+Способ подключения к Kubernetes Dashboard зависит от IP-адреса кластера:
+
+- Если кластеру назначен внешний IP-адрес, то можно подключиться с любого хоста, имеющего доступ в интернет.
+- Если кластеру назначен только внутренний IP-адрес, то можно подключиться только с хоста в VK Cloud — виртуальной машины, которая находится в той же подсети, что и кластер.
+
+Для подключения к Kubernetes Dashboard на хосте должен быть установлен браузер.
 
 ## Подготовительные шаги
 
 1. [Убедитесь](../kubectl#proverka-podklyucheniya-k-klasteru), что вы можете подключаться к кластеру с помощью `kubectl`.
 
-1. Установите `kauthproxy`, если утилита еще не установлена:
+1. На хосте, с которого планируется подключаться к кластеру, установите `kauthproxy`, если утилита еще не установлена:
 
    1. Загрузите архив нужной версии со [страницы релизов](https://github.com/int128/kauthproxy/releases):
 
@@ -38,19 +45,11 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 
       Секрет будет скопирован в буфер обмена.
 
-1. В отдельной сессии терминала выполните команду:
+1. На хосте в отдельной сессии терминала выполните команду:
 
-   - Для Kubernetes 1.22:
-
-     ```bash
-     kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
-     ```
-
-   - Для Kubernetes 1.21 и ниже:
-
-     ```bash
-     kauthproxy -n kube-system https://kubernetes-dashboard.svc
-     ```
+   ```bash
+   kauthproxy -n kube-system https://kubernetes-dashboard.svc
+   ```
 
    <warn>
 
@@ -69,7 +68,7 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 </tabpanel>
 <tabpanel>
 
-1. В отдельной сессии терминала выполните команду:
+1. На хосте в отдельной сессии терминала выполните команду:
 
    ```bash
    kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
