@@ -89,7 +89,7 @@ The current technical limits have the following meanings:
 **General**
 
 | Parameter | Quantity / volume |
-|-------------------------------------|----------- -------------|
+|-------------------------------------|------------------------|
 | Administrators in the project | 50 |
 | Instances in the project | 1000 |
 | Single instance size in GB | depends on (Disk)+(RAM) |
@@ -102,7 +102,7 @@ The current technical limits have the following meanings:
 **Kubernetes containers**
 
 | Parameter | Quantity / volume |
-|---------------------------------|--------- ------------|
+|---------------------------------|---------------------|
 | Nod | 100 |
 | Pods at the node | 110 |
 | Entities at the cluster | 3000 |
@@ -121,7 +121,7 @@ The current technical limits have the following meanings:
 **Net**
 
 | Parameter | Quantity / volume |
-|-------------------------------|----------------- ---|
+|-------------------------------|--------------------|
 | Firewall groups | 200 |
 | Firewall rules inside the group | 50 |
 | Networks near the project | 10 |
@@ -141,9 +141,9 @@ The current technical limits have the following meanings:
 **S3 buckets**
 
 | Parameter | Quantity / volume |
-|-------------|----------------------------------- ------------------------|
+|-------------|-----------------------------------------------------------|
 | Accounts | 25 |
-| Buckets | 25 |
+| Buckets | 100 |
 | Objects in bucket | unlimited |
 | File size | 32 GB for regular file, 320 TB for multipart |
 | Bucket size | unlimited |

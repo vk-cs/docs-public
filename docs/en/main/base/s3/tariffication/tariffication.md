@@ -20,7 +20,3 @@ The cost for "cold" and "hot" data varies.
 
 - Incoming traffic.
 - [API](../about-s3-api/) usage.
-
-## Limits
-
-VK Cloud S3 cloud storage has no restrictions on the amount of data or the number of objects stored.
