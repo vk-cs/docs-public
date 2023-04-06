@@ -1,0 +1,12 @@
+{
+    "title": "Routing traffic between networks",
+    "pageDescription": "How to set up traffic routing between networks using Terraform.",
+    "shortDescription": "",
+    "metaTitle": "Routing traffic between networks — VK Cloud",
+    "metaDescription": "How to set up traffic routing between networks using Terraform.",
+    "sectionTitle": "Routing traffic between networks",
+    "markdown": "How to set up traffic routing between networks using Terraform.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4
+}
