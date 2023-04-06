@@ -1,4 +1,4 @@
-## Accessibility zones
+## Availability zones
 
 VK Cloud platform resources are globally available to provide optimal cloud service levels. Each Availability Zone can consist of one or more datacenters with independent power, cooling, and network configurations.
 

@@ -2,7 +2,7 @@
   "title": "Virtual networks",
   "pageDescription": "VK Cloud Networks manages the network access of virtual machines, allows you to add load balancers to them, combine them in networks and subnets, configure routers and firewalls. You can set up VPN, CDN, Private DNS. Visualization of the network topology is available.",
   "shortDescription": "Servers consolidation into local networks, private DNS, VPN, traffic balancing and filtering",
-  "metaTitle": "Virtual networks - VK Cloud",
+  "metaTitle": "Virtual networks — VK Cloud",
   "metaDescription": "VK Cloud Networks manages the network access of virtual machines, allows you to add load balancers to them, combine them in networks and subnets, conf",
   "sectionTitle": "Virtual networks",
   "markdown": "VK Cloud Networks manages the network access of virtual machines, allows you to add load balancers to them, combine them in networks and subnets, configure routers and firewalls. You can set up VPN, CDN, Private DNS. Visualization of the network topology is available.",
