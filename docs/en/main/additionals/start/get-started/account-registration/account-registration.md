@@ -111,8 +111,8 @@ A message about the successful services activation appears, and your VK Cloud pe
 
 If you will work with the platform not only through your personal account (for example, using OpenStack CLI or kubectl), [activate](/en/base/account/project/api/api-access) API access.
 
-## What's next
+## What's next?
 
 - [Complete](../corporate/) the registration of a legal entity.
-- [Read](../trial/) about the trial period of using the platform.
+- [Read](/en/base/account/concepts/quotasandlimits) information about the quotas and limits in VK Cloud projects.
 - [View](/en/base/account) the personal account features.
