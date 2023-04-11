@@ -1,10 +1,10 @@
 ## Bonus points
 
-At the first registration in VK Cloud and activation of services, 150 points are automatically credited as a bonus for familiarization with the VK Cloud platform, as well as the services and services provided.
+At the first registration in VK Cloud and activation of services, [bonus points](/en/additionals/billing/concepts/bonus) are credited to your account.
 
 Within a few working days after registering a phone number in your personal account, VK Cloud employees contact to confirm the phone number, as well as help in obtaining the necessary information about the services.
 
-Based on the results of providing information about the tasks that are planned to be solved using the VK Cloud platform, our colleagues can extend the testing period by adding 300 bonus points.
+Based on the results of providing information about the tasks that are planned to be solved using the VK Cloud platform, our colleagues can extend the trial period.
 
 <info>
 
@@ -12,7 +12,7 @@ Based on the results of providing information about the tasks that are planned t
 
 </info>
 
-The decision to extend the testing period is made based on the provision of information on the purposes of using the platform and tasks.
+The decision to extend the trial period is made based on the provision of information on the purposes of using the platform and tasks.
 
 ## Starting quotas
 
