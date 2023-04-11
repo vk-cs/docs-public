@@ -39,9 +39,14 @@ yum install python-openstackclient
 </tabpanel>
 <tabpanel>
 
-Before you start, you should install the [Python3](https://www.python.org/downloads/windows/) and [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
+1. Install the [Python3](https://www.python.org/downloads/windows/).
+1. Install the [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/) packets. When installing on the tab with individual components choose packets from the list:
 
-Next, run the command at the command prompt:
+    - MSVC v142 — VS 2019 C++ x64/x86 Spectre-mitigated libs (v14.29-16.11).
+    - MSVC v142 — VS 2019 C++ x64/x86 build tools (v14.29-16.11).
+    - Windows 10 or 11 SDK.
+
+1. Run the command:
 
 ```bash
 pip install -UI python-openstackclient
