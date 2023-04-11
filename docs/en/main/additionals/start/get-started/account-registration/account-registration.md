@@ -3,66 +3,116 @@
 1. Go to [VK Cloud main page](https://mcs.mail.ru/en/) and click **Create a VK Cloud Account** in the upper right corner.
 1. In the window that appears, fill in the fields:
 
-    - **Work email**: your work email.
-    - **Password**: new password.
+    - **Work email**: your email address.
+
+    <info>
+
+    For some corporate accounts, special registration conditions are available. Therefore, specifying a work email is recommended.
+
+    </info>
+
+    - **Password**: a new password.
 
     <warn>
 
-    The minimum password length is 8 symbols. The password must contain uppercase and lowercase Latin letters, as well as numbers or symbols: ``? ! ~ @ # $ % ^ & _ - + * = ; : , . / \ | ` [ ] { } ( )``
+    The minimum password length is 8 symbols. The password must contain:
+
+    - uppercase and lowercase Latin letters;
+    - at least one number or symbol from the following range: ``? ! ~ @ # $ % ^ & _ - + * = ; : , . / \ | ` [ ] { } ( )``.
+
+    The password must not contain repeating groups of characters, such as ``aaa123123123``.
 
     </warn>
 
-1. Click the **Create an account** button.
+1. Click **Create an account**.
 
-The main page of the VK Cloud personal account opens. A link to confirm the account will be sent to the specified email address.
+The account confirmation window opens. A confirmation email is sent to the specified email address.
 
 ## Account Confirmation
 
-It is impossible to activate the services and start working in your personal account without confirming your account. To verify your account:
+To complete your registration with VK Cloud, confirm your account details: validate your email and phone number and link a payment card.
 
-1. Open the mail from `noreply@mcs.mail.ru`.
+After the registration is completed, sign-up [bonus points](../../../billing/concepts/bonus) will be credited to your balance.
 
-    <warn>
+If you close the confirmation window before completing the registration, your personal account in VK Cloud is still available. However, when you try to perform an action (for example, create an object or [activate services](/en/base/account/start/activation)), the confirmation will continue from the step where it was stopped.
 
-    If the email is not in the **Inbox**, check the **Spam** folder. If the email has not arrived, request it again through your personal account.
+<tabs>
+<tablist>
+<tab>1. Email validation</tab>
+<tab>2. Phone validation</tab>
+<tab>3. Payment card
+</tablist>
+<tabpanel>
 
-    </warn>
+1. Go to your mailbox and open the email from the address `noreply@mcs.mail.ru`.
 
-1. Follow the link from the email. VK Cloud personal account opens with a message about successful account confirmation.
+    If the email cannot be found in **Inbox**, check the **Spam** folder.
 
-The structure of the personal account services will be displayed.
+1. Follow the link in the email.
 
-## Activation of services
+    If the email has not arrived or has expired, request it again by clicking **Send confirmation again** in the confirmation window.
 
-To make the services in your personal account active, link a phone number to your account:
+The confirmation window opens on step **2. Phone validation**.
 
-1. To the personal account [main page](https://mcs.mail.ru/app/en/main) enter your phone number.
+</tabpanel>
+<tabpanel>
 
-    <warn>
+Phone validation becomes available after successful email validation. Only phone numbers registered in the Russian Federation (starting with +7) are accepted. One phone number can be linked to no more than two accounts.
 
-    A phone number can only be linked to one account, and it cannot be reused for another account.
+1. Enter your number in the **Phone number** field and click **Request a confirmation code**.
 
-    </warn>
+1. Enter the SMS code into the provided field and click **Confirm number**.
 
-1. Enter the code from the SMS in the field of the same name.
-1. Submit form data.
+    If the SMS doesn't arrive or has expired, request it again by clicking **The code didn't arrive?** button which appears in 60 seconds.
 
-    In case of successful confirmation of the phone number, a message will appear about the possibility of activating the services.
+The confirmation window opens on step **3. Payment card**.
 
-1. Click the button to on the services.
+<info>
+
+If after your phone is confirmed you see a message about the successful services activation, and your personal account page opens, this means that step **3. Payment card** is not required for your account. You can [link](../../../billing/operations/add-card) a payment card later.
+
+</info>
+
+</tabpanel>
+
+<tabpanel>
+
+Linking a card becomes available after successful phone validation. The payment card will be used for adding funds to your VK Cloud [balance](../../../billing/start/balance). The list of supported payment systems can be found in the [Payment methods](../../../billing/start/payment-methods) article.
+
+<warn>
+
+The amount specified in the confirmation window (up to 500 rubles) will be debited from your card and credited to your VK Cloud balance. The amount is [non-refundable](/en/base/account/start/activation#linking-a-bank-card).
+
+</warn>
+
+To link a card:
+
+1. Enter the card details into the provided fields and click **Add card**.
+
+1. In the payment confirmation window, enter the SMS code provided by your bank.
+
+1. (Optional) In the window that opens, configure the autopayment settings:
+
+    - **Auto-top-up amount**: specify the amount to be automatically credited to your balance after the minimum balance threshold amount is reached. The range of the credited amount is from 100 to 20 000 rubles.
+
+    - **Top-up with remaining balance**: specify the minimum balance threshold — a value from 0 to 9 999 999 rubles.
+
+    You can configure the autopayment [later](../../../billing/operations/add-card#auto-completion).
+
+1. Click **Get started with VK Cloud**.
+
+A message about the successful services activation appears, and your VK Cloud personal account page opens.
+
+</tabpanel>
+
+</tabs>
 
 ## Activation of API access
 
-Activate API access if you will work with the platform's virtual resources not through your personal account (for example, OpenStackCLI or kubectl).
-
-1. [Enable](/en/base/account/account/security/2faon) two-factor authorization.
-1. Click on the user's login in the upper right corner of VK Cloud [personal account](https://maps.mail.ru/app/en/.
-1. In the drop-down menu, select **Account settings**.
-1. Click the **Security** tab.
-1. In the **API access** chapter click **Activate API access**.
+If you will work with the platform not only through your personal account (for example, using OpenStack CLI or kubectl), [activate](/en/base/account/project/api/api-access) API access.
 
 ## What's next
 
-- [Complete](../corporate/) registration of a legal entity.
-- [Explore](../trial/) with a trial period of using the platform.
+- [Complete](../corporate/) the registration of a legal entity.
+- [Read](../trial/) about the trial period of using the platform.
 - [View](/en/base/account) the personal account features.
