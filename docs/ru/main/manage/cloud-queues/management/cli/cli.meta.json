@@ -1,0 +1,13 @@
+{
+  "title": "Работа с Cloud Queues в AWS CLI",
+  "pageDescription": "Полностью управляемый сервис управления очередями сообщений. Совместимый с Amazon SQS API.",
+  "shortDescription": "Полностью управляемый сервис управления очередями сообщений, совместимый с Amazon SQS API",
+  "metaTitle": "Работа с Cloud Queues в AWS CLI — VK Cloud",
+  "metaDescription": "Полностью управляемый сервис управления очередями сообщений. Совместимый с Amazon SQS API.",
+  "sectionTitle": "Работа с Cloud Queues в AWS CLI",
+  "markdown": "Полностью управляемый сервис управления очередями сообщений. Совместимый с Amazon SQS API.",
+  "icon": "",
+  "weight": 5,
+  "infobarItems": null,
+  "uuid": "6df9959d-cb33-47fc-bd88-e19971b94639"
+}
