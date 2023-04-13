@@ -1,0 +1,13 @@
+{
+  "title": "Миграция ВМ Hyper-V в VK Cloud",
+  "sectionTitle": "Миграция ВМ Hyper-V в VK Cloud",
+  "metaTitle": "Миграция ВМ Hyper-V в VK Cloud — VK Cloud",
+  "pageDescription": "Миграция виртуальной машины Hyper-V в VK Cloud.",
+  "shortDescription": "Как импортировать образ виртуальной машины Hyper-V в VK Cloud",
+  "metaDescription": "Миграция виртуальной машины Hyper-V в VK Cloud",
+  "markdown": "Миграция виртуальной машины Hyper-V в VK Cloud.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "6ff11bf6-89df-4ddd-a982-1e8beeb16bc8"
+}

@@ -59,17 +59,17 @@ Depending on the OS family of the machine being created, the information fields 
 | High-performance CPUs | If there are configurations with high-performance processors in the project, enabling the option will switch the list of VM types to display such configurations. |
 | Availability zone | Select the datacenter where the instance will be launched. |
 | Disk Size | Sets the size of the VM disk in GB. |
-| Disk type | Type of instance disk being created, [more details](/base/iaas/vm-volumes/volume-sla). |
+| Disk type | Type of instance disk being created, [more details](/en/base/iaas/vm-volumes/volume-sla). |
 | Operating system | Operating system image (version, revision). |
 | Network | Creating a VM in an external (ext-net) or private network. |
 | Subnet address | Appears when the "Create a new network" option is selected. Sets the CIDR of the new subnet. |
-| DNS name | Appears when a private network is selected. Sets the DNS name of the VM, [more info](/networks/vnet/networks/private-dns). |
+| DNS name | Appears when a private network is selected. Sets the DNS name of the VM, [more info](/en/networks/vnet/networks/private-dns-en/). |
 | Virtual machine key | Appears when you select a private network. Used to decrypt the administrator password. |
 | Use the configuration disk | Enabling this option configures the network in the operating system when creating a VM in ext-net or a private network without a DHCP server. |
 | Firewall Settings | Selection of available security groups that include permissive traffic rules. |
 | Assign an external IP | Appears when you select a private network. Assigns a floating IP. |
 
-In the next step, the virtual network is configured. You can select an existing network or create a new one. You can read more in the article "[Creating and deleting networks](https://mcs.mail.ru/help/ru_RU/networks/create-net)". Also note in parentheses that the "shadowport" network type can only be selected for the "shadowport" VM configuration.
+In the next step, the virtual network is configured. You can select an existing network or create a new one. You can read more in the article "[Creating and deleting networks](/en/networks/vnet/networks/create-net/)". Also note in parentheses that the "shadowport" network type can only be selected for the "shadowport" VM configuration.
 
 The next step sets up an automatic VM backup plan. After that, go to the creation stage with the "Add virtual Machine" button.
 
