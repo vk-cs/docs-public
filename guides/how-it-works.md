@@ -46,7 +46,7 @@ Url страниц генерируется на основе пути до па
 Пример статьи [../docs/ru/base/iaas/vm-volumes/volume-resize/](../docs/ru/base/iaas/vm-volumes/volume-resize/)
 
 Важно, что путь до страницы в документации генерируется на основе файловой системы, т.е. статья
-[../docs/ru/base/iaas/vm-volumes/volume-resize/](../docs/ru/base/iaas/vm-volumes/volume-resize/)
+[../docs/ru/main/base/iaas/vm-volumes/volume-resize/](../docs/ru/main/base/iaas/instructions/vm-volumes/volume-resize/)
 
 будет доступна по адресу [mcs.mail.ru/docs/ru/base/iaas/vm-volumes/volume-resize](https://mcs.mail.ru/docs/ru/base/iaas/vm-volumes/volume-resize), а так же по более короткому варианту [mcs.mail.ru/docs/base/iaas/vm-volumes/volume-resize/](https://mcs.mail.ru/docs/ru/base/iaas/vm-volumes/volume-resize)
 

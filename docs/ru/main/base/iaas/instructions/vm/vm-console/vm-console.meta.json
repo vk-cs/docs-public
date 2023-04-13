@@ -1,0 +1,13 @@
+{
+  "title": "Диагностика ВМ",
+  "pageDescription": "VK Cloud – Удаленный доступ к ВМ Windows или Linux с помощью VNC-консоли. Диагностика ВМ.",
+  "shortDescription": "Управление виртуальной машиной с помощью VNC-консоли. Просмотр логов сообщений ВМ",
+  "metaTitle": "Диагностика ВМ — VK Cloud",
+  "metaDescription": "VK Cloud – OpenStack Console, VNC-консоль, журнал сообщений ВМ, логи сообщений ВМ",
+  "sectionTitle": "Диагностика ВМ",
+  "markdown": "VK Cloud – Удаленный доступ к ВМ Windows или Linux с помощью VNC-консоли. Диагностика ВМ.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5,
+  "uuid": "eb2300a9-171d-4a9e-862f-a237b30b60e3"
+}
