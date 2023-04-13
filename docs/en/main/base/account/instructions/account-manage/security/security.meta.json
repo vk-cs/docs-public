@@ -1,0 +1,20 @@
+{
+  "title": "Security",
+  "pageDescription": "Description of security tools for accessing the VK Cloud account.",
+  "shortDescription": "Account Access Security",
+  "metaTitle": "Security — VK Cloud",
+  "metaDescription": "VK Cloud account access security tools",
+  "sectionTitle": "Security",
+  "markdown": "Description of security tools for accessing the VK Cloud account.",
+  "icon": "",
+  "weight": 2,
+  "infobarItems": null,
+  "additionalUuids": [
+    "f758c8e2-8fbc-4e94-ae08-208eee3e5b75",
+    "0e36e0a0-d522-453f-8a19-1154e955bac9",
+    "4d036613-3c16-4d12-9282-748355c85580",
+    "ec40cf29-145d-4b4b-a445-4e618e53d9f1",
+    "ca10584f-6492-44b3-87e9-ee6472d91440"
+  ],
+  "uuid": "9a35a60a-87f1-4967-a61c-fe704739f69b"
+}
