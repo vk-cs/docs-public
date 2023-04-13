@@ -1,1 +1,0 @@
-To delete a key pair, go to Project Settings → Key Pairs. In the key pair row, click "Delete". Or select the necessary key pairs with checkboxes and click "Delete" at the top of the panel. Confirm deletion.
