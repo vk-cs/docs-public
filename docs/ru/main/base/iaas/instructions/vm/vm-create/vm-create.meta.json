@@ -1,0 +1,16 @@
+{
+  "title": "Создание ВМ",
+  "sectionTitle": "Создание ВМ",
+  "metaTitle": "Создание ВМ — VK Cloud",
+  "pageDescription": "Создание ВМ",
+  "shortDescription": "Особенности создания и настройки ВМ",
+  "metaDescription": "Создание виртуальной машины на базе ОС Linux или Windows",
+  "markdown": "Создание ВМ",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "additionalUuids": [
+    "0fd2ecb3-1aab-44c8-9fbc-6b57b937f80d"
+  ],
+  "uuid": "fb0302a1-b34c-4cd6-be42-4c8a25de630a"
+}
