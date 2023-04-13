@@ -1,0 +1,13 @@
+{
+  "title": "Шифрование диска при помощи cryptsetup",
+  "sectionTitle": "Шифрование диска при помощи cryptsetup",
+  "metaTitle": "Шифрование диска при помощи cryptsetup — VK Cloud",
+  "pageDescription": "Шифрование диска при помощи cryptsetup.",
+  "shortDescription": "Как настроить шифрование диска виртуальной машины с помощью cryptsetup для Linux",
+  "metaDescription": "Шифрование диска при помощи cryptsetup",
+  "markdown": "Шифрование диска при помощи `cryptsetup`.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "0ff2fce6-0f50-45f0-aa8e-4f28289397e2"
+}

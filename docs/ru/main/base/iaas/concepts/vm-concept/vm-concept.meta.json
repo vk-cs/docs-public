@@ -1,0 +1,12 @@
+{
+  "title": "Обзор сервиса VK Cloud Servers",
+  "pageDescription": "Концепция VK Cloud Servers — основные понятия, связанные с виртуальными машинами.",
+  "shortDescription": "Основные понятия, связанные с виртуальными машинами",
+  "metaTitle": "Концепция VK Cloud Servers — VK Cloud",
+  "metaDescription": "VK Cloud Servers — виртуальные машины, диски, зона доступности, операционная система, образ, файловое хранилище, резервная копия, лицензии",
+  "sectionTitle": "Концепция VK Cloud Servers",
+  "markdown": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "bd2e96b3-5691-42ce-ae50-b24df740d6d7"
+}
