@@ -1,0 +1,19 @@
+{
+  "title": "Key Pairs",
+  "pageDescription": "Description of working with SSH keys on the VK Cloud platform.",
+  "shortDescription": "SSH keys on the VK Cloud platform",
+  "metaTitle": "Key pairs — VK Cloud",
+  "metaDescription": "SSH keys on the VK Cloud platform",
+  "sectionTitle": "Key Pairs",
+  "markdown": "Description of working with SSH keys on the VK Cloud platform.",
+  "icon": "",
+  "weight": 3,
+  "infobarItems": null,
+  "additionalUuids": [
+    "3f879362-d6d1-4d2f-8421-5c5a283d9747",
+    "b1c50aab-d315-4694-8b89-82824c520778",
+    "2e77b8a2-59b2-4048-ac6b-5b74cea1ad53",
+    "0f58395e-0dfb-4dc8-976a-69b253e15497"
+  ],
+  "uuid": "03eb6789-2dac-4d45-b4ed-cd769e480880"
+}
