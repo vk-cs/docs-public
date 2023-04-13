@@ -14,12 +14,12 @@ During the installation process, you need to enter the following settings:
 | Operating system | Operating system image (version, edition). |
 | Number of discs | The number of hard drives in the created instance. Only one disk per JupyterHub instance is currently supported. More than one default drive cannot be selected.|
 | Disk size | Specifies the size of the VM disk in GB. Growth or shrinkage of the disk size of a JupyterHub instance is currently not supported. We recommend storing large amounts of data in external storage, for example, in [S3 object storage](/ru/base/s3).|
-| Disk type | Type of instance disk being created, [more](/base/iaas/vm-volumes/volume-sla). |
+| Disk type | Type of instance disk being created, [more](/en/base/iaas/vm-volumes/volume-sla). |
 | Choosing a domain name | Specifies the DNS name of the instance.|
 | Username | Guest OS username |
 | User password | User password in the guest OS. |
 
-The next step is to configure the virtual network. You can select an existing network or create a new one (for more details, see the article "[Creating and deleting networks](/ru/networks/vnet/networks/create-net)".
+The next step is to configure the virtual network. You can select an existing network or create a new one (for more details, see the article "[Creating and deleting networks](/en/networks/vnet/networks/create-net)".
 
 | Parameter | Description |
 | --- | --- |
