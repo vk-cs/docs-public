@@ -1,12 +1,13 @@
 {
-    "title": "Creating Kubernetes cluster",
-    "pageDescription": "Example of creating a Kubernetes cluster using Terraform.",
-    "shortDescription": "",
-    "metaTitle": "Creating Kubernetes cluster — VK Cloud",
-    "metaDescription": "Example of creating a Kubernetes cluster using Terraform",
-    "sectionTitle": "Creating Kubernetes cluster",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
+  "title": "Creating Kubernetes cluster",
+  "pageDescription": "Example of creating a Kubernetes cluster using Terraform.",
+  "shortDescription": "",
+  "metaTitle": "Creating Kubernetes cluster — VK Cloud",
+  "metaDescription": "Example of creating a Kubernetes cluster using Terraform",
+  "sectionTitle": "Creating Kubernetes cluster",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "5c8c4163-6f78-4bab-ae4d-383dc6c00a47"
 }

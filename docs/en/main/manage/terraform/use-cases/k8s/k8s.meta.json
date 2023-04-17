@@ -1,12 +1,13 @@
 {
-    "title": "Containers",
-    "pageDescription": "Working with Containers service using Terraform.",
-    "shortDescription": "How to use Terraform to manage containers service objects",
-    "metaTitle": "Containers — VK Cloud",
-    "metaDescription": "Working with Containers service using Terraform",
-    "sectionTitle": "Containers",
-    "markdown": "Working with [Containers](/en/base/k8s) service using Terraform.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 3
+  "title": "Containers",
+  "pageDescription": "Working with Containers service using Terraform.",
+  "shortDescription": "How to use Terraform to manage containers service objects",
+  "metaTitle": "Containers — VK Cloud",
+  "metaDescription": "Working with Containers service using Terraform",
+  "sectionTitle": "Containers",
+  "markdown": "Working with [Containers](/en/base/k8s) service using Terraform.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "ca85cd22-0768-49ac-be8f-417b0f276045"
 }
