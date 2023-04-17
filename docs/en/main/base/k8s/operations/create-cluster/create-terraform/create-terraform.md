@@ -1,8 +1,8 @@
-<info>
+Description of how to create a cluster using Terraform is provided below. It is also possible to create a cluster [via VK Cloud personal account](../create-webui/).
 
-It is also possible to create a cluster [via VK Cloud personal account](../create-webui/).
+Ready-to-use examples of configuration files to create different clusters are listed in the [Terraform](/en/manage/terraform/use-cases/k8s/create) section.
 
-</info>
+## Before creating cluster
 
 1. Familiarize yourself with the available resources and [quotas](../../../../account/concepts/quotasandlimits/) for the [region](../../../../account/concepts/regions/) in which you plan to create the cluster. Different quotas may be configured for different regions.
 
@@ -191,7 +191,7 @@ Some clarification:
 
 - For the `Moscow` region, specify one of two availability zones in the `availability_zone` parameter: `MS1` or `GZ1`.
 
-- It is recommended to assign a public IP address to the cluster when creating it, so that you can access the cluster from the Internet (`floating_ip_enabled = true`).
+- It is recommended to assign a public IP address to the cluster when creating it, so that you can access the cluster from the Internet (`floating_ip_enabled = true`). To assing such an IP address, it is necessary for the subnet with the `subnet_id` identifier to be [connected](/en/networks/vnet/concepts/ips-and-inet#organizing-internet-access) to the router which has access to the external network.
 
 - If some of the pre-configured services are not needed, delete the corresponding lines from the `labels` block. See [Available services](../../../concepts/preconfigured-features/addons/) for details.
 
