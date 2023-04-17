@@ -1,0 +1,12 @@
+{
+    "title": "Creating Kubernetes cluster",
+    "pageDescription": "Example of creating a Kubernetes cluster using Terraform.",
+    "shortDescription": "",
+    "metaTitle": "Creating Kubernetes cluster — VK Cloud",
+    "metaDescription": "Example of creating a Kubernetes cluster using Terraform",
+    "sectionTitle": "Creating Kubernetes cluster",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1
+}
