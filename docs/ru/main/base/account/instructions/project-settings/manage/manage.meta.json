@@ -1,0 +1,16 @@
+{
+  "title": "Управление проектом",
+  "pageDescription": "Описание процесса изменения данных проекта на платформе VK Cloud.",
+  "shortDescription": "Изменение данных проекта",
+  "metaTitle": "Управление проектом — VK Cloud",
+  "metaDescription": "Изменение данных проекта на платформе VK Cloud",
+  "sectionTitle": "Управление проектом",
+  "markdown": "Описание процесса изменения данных проекта на платформе VK Cloud.",
+  "icon": "",
+  "weight": 3,
+  "infobarItems": null,
+  "additionalUuids": [
+    "d02917d4-1252-48e3-bc2d-401b6332f7df"
+  ],
+  "uuid": "f30c82d5-44ad-40ad-9bf7-682abd6d0144"
+}
