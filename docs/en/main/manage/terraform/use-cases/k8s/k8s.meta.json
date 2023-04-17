@@ -1,0 +1,12 @@
+{
+    "title": "Containers",
+    "pageDescription": "Working with Containers service using Terraform.",
+    "shortDescription": "How to use Terraform to manage containers service objects",
+    "metaTitle": "Containers — VK Cloud",
+    "metaDescription": "Working with Containers service using Terraform",
+    "sectionTitle": "Containers",
+    "markdown": "Working with [Containers](/en/base/k8s) service using Terraform.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3
+}
