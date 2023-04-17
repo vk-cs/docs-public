@@ -1,0 +1,19 @@
+{
+  "title": "Просмотр данных проекта",
+  "pageDescription": "Описание процедуры просмотра данных проекта на платформе VK Cloud.",
+  "shortDescription": "Доступные настройки проекта для пользователей с соответствующими полномочиями",
+  "metaTitle": "Просмотр данных проекта — VK Cloud",
+  "metaDescription": "Просмотр данных проекта на платформе VK Cloud",
+  "sectionTitle": "Просмотр данных проекта",
+  "markdown": "Описание процедуры просмотра данных проекта на платформе VK Cloud.",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": null,
+  "additionalUuids": [
+    "79303dec-22d4-4afa-a425-72ccece47b6a",
+    "bbc77a62-385d-4918-a916-db3f6a0dabb0",
+    "ac5e4ffc-e19b-43c9-8654-105e1205aae7",
+    "1db3249e-e258-4eb3-affb-72c7d732a872"
+  ],
+  "uuid": "8cfb317b-616e-44b7-bec4-18b09236c047"
+}
