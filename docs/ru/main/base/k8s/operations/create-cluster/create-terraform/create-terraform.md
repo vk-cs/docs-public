@@ -1,10 +1,12 @@
 Далее описывается создание кластера с помощью Terraform. Также возможно создать кластер [с помощью личного кабинета VK Cloud](../create-webui/).
 
+Готовые примеры конфигурационных файлов для создания разных кластеров [приведены](/ru/manage/terraform/use-cases/k8s/create) в разделе Terraform.
+
 <warn>
 
-При создании кластера для него будет создан [сервисный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki). При выборе [аддона](../../../concepts/addons-and-settings/addons/) NGINX Ingress Controller для него будет создан [стандартный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+При создании кластера для него будет создан [сервисный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki). При выборе [аддона](../../../concepts/addons-and-settings/addons/) NGINX Ingress Controller для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
 
-Использование балансировщиков [тарифицируется](/ru/main/networks/vnet/tariffs).
+Использование балансировщиков [тарифицируется](/ru/networks/vnet/tariffs).
 
 </warn>
 
@@ -132,7 +134,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   Если нужные сети и подсети уже существуют и вам известны их идентификаторы, укажите идентификаторы явно.
 
   Пример:
-  
+
   ```hcl
   resource "vkcs_kubernetes_cluster" "k8s-cluster" {
     name                = "k8s-cluster"
@@ -142,13 +144,14 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
     ...
   }
   ```
+
   </tabpanel>
   <tabpanel>
-  
+
   Если нужные сети и подсети уже существуют, но вам неизвестны их идентификаторы, укажите соответствующие источники данных и получите идентификаторы.
-  
+
   Пример:
-  
+
   ```hcl
   ...
   data "vkcs_networking_network" "k8s-network" {
@@ -167,9 +170,10 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
     ...
   }
   ```
+
   </tabpanel>
   <tabpanel>
-  
+
   Если нужные сети и подсети еще не существуют, создайте их и получите идентификаторы:
 
   ```hcl
@@ -192,12 +196,13 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
     ...
   }
   ```
+
   </tabpanel>
   </tabs>
 
 - Для региона `Москва` укажите одну из двух зон доступности `availability_zone`: `MS1` или `GZ1`.
 
-- Рекомендуется при создании кластера назначить ему публичный IP-адрес, чтобы можно было получить доступ к кластеру из интернета (`floating_ip_enabled = true`).
+- Рекомендуется при создании кластера назначить ему публичный IP-адрес, чтобы можно было получить доступ к кластеру из интернета (`floating_ip_enabled = true`). Для назначения такого IP-адреса необходимо, чтобы подсеть кластера с идентификатором `subnet_id` была [подключена](/ru/networks/vnet/concepts/ips-and-inet#organizaciya-dostupa-v-internet) к маршрутизатору c доступом к внешней сети.
 
 - Если какие-то из аддонов не нужны, удалите соответствующие им строки из блока `labels`. Подробнее в разделе [Аддоны](../../../concepts/addons-and-settings/addons/).
 
