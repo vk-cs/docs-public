@@ -1,12 +1,13 @@
 {
-    "title": "Создание кластера Kubernetes",
-    "pageDescription": "Пример создания кластера Kubernetes с использованием Terraform.",
-    "shortDescription": "",
-    "metaTitle": "Создание кластера Kubernetes — VK Cloud",
-    "metaDescription": "Пример создания кластера Kubernetes с использованием Terraform",
-    "sectionTitle": "Создание кластера Kubernetes",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
+  "title": "Создание кластера Kubernetes",
+  "pageDescription": "Пример создания кластера Kubernetes с использованием Terraform.",
+  "shortDescription": "",
+  "metaTitle": "Создание кластера Kubernetes — VK Cloud",
+  "metaDescription": "Пример создания кластера Kubernetes с использованием Terraform",
+  "sectionTitle": "Создание кластера Kubernetes",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "aad57e44-a3e2-41ff-8a70-b8546cee5142"
 }
