@@ -1,5 +1,11 @@
 The balance is the current state of funds on the VK Cloud project account. The balance status is reflected in the upper part of the personal account, and is also available in the "Balance and payments" section. To go to the section at the top of the control panel, click on the username and select "Balance and Payments". A window with the balance details will be displayed on the page.
 
+<info>
+
+The "Balance and Payments" section is available if [services are activated](/en/base/account/start/activation) in the project.
+
+</info>
+
 The balance change details contain information not only on transactions, but also on the regions of paid resources. Balance and Payments page contains information on projects in all regions where resources were created. You can learn more about the regions in the article [Regions](../../../account/concepts/regions).
 
 ## Main account
