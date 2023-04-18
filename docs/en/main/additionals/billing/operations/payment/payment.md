@@ -1,6 +1,8 @@
-You can monitor the balance in your personal account in the "Balance and payments" section.
+You can monitor the balance in your personal account in the "Balance and payments" section. The section is available if [services are activated](/en/base/account/start/activation) in the project.
 
-The method of replenishment of the balance depends on your legal status: funds can be credited from both an individual and a legal entity. Replenishment is carried out in the "Balance and payments" section of the personal account by clicking on the "Top up balance" button.
+The method of replenishment of the balance depends on your legal status: funds can be credited from both an individual and a legal entity. Replenishment is carried out in the "Balance and payments" section of the personal account by clicking the "Make a payment" button.
+
+Making a payment is available to users with the [roles](/en/base/account/concepts/rolesandpermissions): Project owner, Superadministrator, or Billing administrator.
 
 <info>
 
