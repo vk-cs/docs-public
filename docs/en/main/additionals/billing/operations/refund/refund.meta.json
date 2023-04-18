@@ -1,13 +1,13 @@
 {
   "title": "Refund of funds",
-  "pageDescription": "",
-  "shortDescription": "Return methods and conditions",
-  "metaTitle": "Refund of funds - VK Cloud",
-  "metaDescription": "",
+  "pageDescription": "Methods and conditions for the refund of funds from the main account of the VK Cloud project.",
+  "shortDescription": "Methods and conditions for the refund of funds from the main account of the project",
+  "metaTitle": "Refund of funds — VK Cloud",
+  "metaDescription": "Methods and conditions for the refund of funds from the main account of the VK Cloud project.",
   "sectionTitle": "Refund of funds",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
-  "weight": 3,
+  "weight": 5,
   "uuid": "70f4757d-306b-40d8-bd91-415b601ed4f9"
 }
