@@ -1,10 +1,29 @@
-If a refund is necessary, you should [contact technical support](/en/contacts).
+Unspent funds in your personal account can be returned by contacting [technical support](/en/contacts). The refund is made within 30 days.
 
-<warn>
+## Terms of return
 
-The money can only be refunded from the main account.
+- The money can only be refunded from the [main account](../../start/balance/) of the project.
+- The money will be refunded:
 
-</warn>
+  - for individuals — to the specified bank card on the basis of a receipt for replenishment of the project balance;
+  - for legal entities — to the specified settlement account of the legal entity on the basis of an application for a refund.
+
+- The refund is made in the project currency.
+- Before making a refund, [make sure](../detail/) that there are no paid resources left on the project:
+
+  - [stop](/en/base/iaas/vm-start/manage-vm/vm-state) VM with free licenses;
+  - [delete](/en/base/iaas/vm-start/manage-vm/vm-delete) VMs with paid licenses;
+  - [delete](/en/networks/vnet/operations/manage-lb#removing-the-load-balancer) load balancers;
+  - make sure that there are no floating IP addresses left on the project;
+  - stop or delete other paid resources.
+
+<info>
+
+Funds from the project account can be returned for any period of use of the account.
+
+</info>
+
+## Data for contacting technical support
 
 <tabs>
 <tablist>
@@ -13,34 +32,22 @@ The money can only be refunded from the main account.
 </tablist>
 <tabpanel>
 
-The refund is made to a bank card and can be made on the basis of the provided receipt for payment of services.
-
-The amount to be refunded cannot be more than the amount paid. It is possible to form a request for a refund for several checks if the amount to be refunded exceeds the amount of funds of one check.
-
-When contacting support, you must specify the following data:
-
-- Account name
-- Project name
-- The amount to be refunded
-- The reason for the return
-- Details for the refund: the first 6 digits and the last 4 digits of the bank card
-- A link to the received electronic receipt or its screenshot
-
-The refund takes place within 30 days.
+- Account name.
+- Project ID.
+- The amount to be refunded.
+- The reason for the return.
+- Details for the refund. If the bank card was linked to the project, the first 6 and last 4 digits are enough.
+- Link or screenshot of the electronic receipt / receipts about the replenishment of the project balance.
 
 </tabpanel>
 <tabpanel>
 
-A refund can be made to the settlement account of a legal entity if the following information is provided in the request for technical support:
-
-- Account Name
-- Project name
-- The amount to be refunded
-- The reason for the return
-- Bank details of a legal entity
-- An application for a refund, certified by the signature and seal of the General Director or an authorized Power of Attorney
-
-The refund takes place within 30 days.
+- Account name.
+- Project ID.
+- The amount to be refunded.
+- The reason for the return.
+- Bank details of the legal entity.
+- An application for a refund, certified by the signature and seal of the General director or an authorized power of attorney.
 
 </tabpanel>
 </tabs>
