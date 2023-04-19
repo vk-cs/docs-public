@@ -103,7 +103,7 @@
 
    1. Для виртуальной машины `kld-vm-1`:
 
-      1. [Подключитесь](/ru/base/iaas/vm-start/vm-connect/vm-connect-nix) к виртуальной машине `kld-jumphost-vm` по SSH.
+      1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) к виртуальной машине `kld-jumphost-vm` по SSH.
       1. Подключитесь к виртуальной машине `kld-vm-1` по SSH.
       1. Выполните команду:
 
@@ -168,7 +168,7 @@
 
    1. Для виртуальной машины `kld-vm-1`:
 
-      1. [Подключитесь](/ru/base/iaas/vm-start/vm-connect/vm-connect-nix) к виртуальной машине `kld-jumphost-vm` по SSH.
+      1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) к виртуальной машине `kld-jumphost-vm` по SSH.
       1. Подключитесь к виртуальной машине `kld-vm-1` по SSH.
       1. Выполните команды:
 
@@ -325,7 +325,7 @@
 Откройте две сессии терминала:
 
 1. В первой сессии:
-   1. [Подключитесь](/ru/base/iaas/vm-start/vm-connect/vm-connect-nix) к виртуальной машине `kld-jumphost-vm` по SSH.
+   1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) к виртуальной машине `kld-jumphost-vm` по SSH.
    1. Запустите непрерывный пинг виртуального IP-адреса:
 
       ```bash
@@ -377,7 +377,7 @@
 
 Если созданные ресурсы вам больше не нужны, удалите их:
 
-1. [Удалите](/ru/base/iaas/vm-start/manage-vm/vm-delete) виртуальные машины.
+1. [Удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie-vm) виртуальные машины.
 1. [Удалите](../../operations/manage-floating-ip#udalenie-plavayushchego-ip-adresa-iz-proekta) плавающий IP-адрес, назначенный виртуальной машине `kld-jumphost-vm`.
 1. [Удалите](../../operations/manage-ports#udalenie-porta) порт, которому назначен виртуальный IP-адрес.
 1. Удалите [подсеть](../../operations/manage-net#udalenie-podseti) и [сеть](../../operations/manage-net#udalenie-seti), в которых были размещены виртуальные машины.
