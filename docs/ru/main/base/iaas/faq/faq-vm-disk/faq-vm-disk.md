@@ -2,7 +2,7 @@
 
 Увеличить диск можно при помощи панели VK Cloud в разделе **Виртуальные машины** или **Диски** сервиса **Облачные вычисления**.
 
-Полная информация доступна в статье о [расширении диска](../../instructions/vm-volumes#izmenenie-razmera-diska).
+Полная информация доступна в статье [Управление дисками](../../instructions/vm-volumes#uvelichenie-razmera-diska).
 
 ## Не удается уменьшить диск
 
@@ -26,7 +26,7 @@
 
 <info>
 
-Чтобы увеличить производительность, можно [увеличить размер](../../instructions/vm-volumes#izmenenie-razmera-diska) или [изменить тип](../../instructions/vm-volumes#izmenenie-tipa-diska) диска.
+Чтобы увеличить производительность, можно [увеличить размер](../../instructions/vm-volumes#uvelichenie-razmera-diska) или [изменить тип](../../instructions/vm-volumes#izmenenie-tipa-diska) диска.
 
 </info>
 
@@ -52,7 +52,7 @@
 
 ## Можно ли создать снимок диска?
 
-Создание снимка диска доступно из [панели VK Cloud или OpenStack CLI](../../instructions/vm-volumes#snimki-diska). Созданный снимок будет храниться до момента удаления самого диска.
+Создание снимка диска доступно [в личном кабинете или через OpenStack CLI](../../instructions/vm-volumes#snimki-diska). Созданный снимок будет храниться до момента удаления самого диска.
 
 ## Как восстановить диск из снимка?
 
