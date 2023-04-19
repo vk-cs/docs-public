@@ -323,7 +323,7 @@
 
 Если созданные ресурсы вам больше не нужны, удалите их:
 
-1. [Удалите](/ru/base/iaas/vm-start/manage-vm/vm-delete) виртуальные машины.
+1. [Удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie-vm) виртуальные машины.
 1. [Удалите](../../operations/manage-vpn#udalenie-vpn-tunnelya) VPN-туннель.
 1. [Удалите](../../operations/manage-router#upravlenie-staticheskimi-marshrutami) статические маршруты, прописанные на стороне клиентской сети.
 
