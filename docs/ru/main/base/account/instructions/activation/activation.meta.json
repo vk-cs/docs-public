@@ -7,7 +7,7 @@
   "sectionTitle": "Активация сервисов",
   "markdown": "Подтверждение номера телефона для активации сервисов.",
   "icon": "",
-  "weight": 3,
+  "weight": 1,
   "infobarItems": null,
   "uuid": "9349e09c-e7c0-4fe9-b592-f46785a081ac"
 }
