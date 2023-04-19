@@ -5,7 +5,7 @@
 - High-IOPS SSD;
 - Low Latency NVME.
 
-Подробнее — в статье [Обзор сервиса VK Cloud Servers](/base/iaas/concepts/vm-concept#diski).
+Подробнее — в статье [Обзор сервиса VK Cloud Servers](../vm-concept#diski).
 
 Для каждого типа диска гарантируются определенные характеристики производительности.
 
