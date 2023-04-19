@@ -2,7 +2,7 @@
 
 ## Создание диска
 
-Создание HDD и SSD-дисков доступно по умолчанию во всех конфигурациях. Для создания дисков LL NVME [обратитесь в техподдержку](/ru/contacts) и запросите доступ к [высокопроизводительным конфигурациям](/base/iaas/concepts/vm-concept#cpu-i-ram) и дискам. Подробнее о [типах дисков](/base/iaas/concepts/vm-concept#diski) — в статье [Обзор сервиса VK Cloud Servers](/base/iaas/concepts/vm-concept).
+Создание HDD и SSD-дисков доступно по умолчанию во всех конфигурациях. Для создания дисков LL NVME [обратитесь в техподдержку](/ru/contacts) и запросите доступ к [высокопроизводительным конфигурациям](../../concepts/vm-concept#cpu-i-ram) и дискам. Подробнее о [типах дисков](../../concepts/vm-concept#diski) — в статье [Обзор сервиса VK Cloud Servers](../../concepts/vm-concept).
 
 <tabs>
 
@@ -162,7 +162,7 @@
 
 ## Изменение типа диска
 
-Диски с типом HDD и SSD доступны по умолчанию во всех конфигурациях. Для использования дисков LL NVME [обратитесь в техподдержку](/ru/contacts) и запросите доступ к [высокопроизводительным конфигурациям](/base/iaas/concepts/vm-concept#cpu-i-ram) и дискам. Подробнее о [типах дисков](/base/iaas/concepts/vm-concept#diski) — в статье [Обзор сервиса VK Cloud Servers](/base/iaas/concepts/vm-concept).
+Диски с типом HDD и SSD доступны по умолчанию во всех конфигурациях. Для использования дисков LL NVME [обратитесь в техподдержку](/ru/contacts) и запросите доступ к [высокопроизводительным конфигурациям](../../concepts/vm-concept#cpu-i-ram) и дискам. Подробнее о [типах дисков](../../concepts/vm-concept#diski) — в статье [Обзор сервиса VK Cloud Servers](../../concepts/vm-concept).
 
 <tabs>
 
