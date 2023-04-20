@@ -328,7 +328,7 @@ On the host from which you plan to connect to the cluster:
    <tabpanel>
 
    ```bash
-   export KUBECONFIG = /home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
+   export KUBECONFIG=/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml
    ```
 
    </tabpanel>
