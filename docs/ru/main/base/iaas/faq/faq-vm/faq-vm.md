@@ -54,7 +54,7 @@ sudo sh -c "apt update; apt install -y qemu-guest-agent; systemctl enable qemu-g
 
 ## Как восстановить приватный ключ?
 
-При утрате приватного ключа, который использовался для доступа к ВМ по протоколу SSH, необходимо создать новую ключевую пару и добавить публичный ключ на ВМ вручную. Подробнее — в статье [Управление ВМ](../../instructions/vm/vm-manage#vosstanovlenie-dostupa-k-vm-po-klyuchu).
+Если утрачен приватный ключ, который использовался для доступа к ВМ по протоколу SSH, создайте новую ключевую пару и добавьте публичный ключ на ВМ вручную. Подробнее — в статье [Управление ВМ](../../instructions/vm/vm-manage#vosstanovlenie-dostupa-k-vm-po-klyuchu).
 
 ## Не подключается Openstack CLI
 
