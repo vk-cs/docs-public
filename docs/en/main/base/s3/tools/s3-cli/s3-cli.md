@@ -124,7 +124,7 @@ When using the AWS CLI to work with Object Storage, there are a few things to ke
 - When working in MacOS, in some cases it is required to run the following view:
 
 ```
- export PYTHONPATH = / Library / Python / 2.7 / site-packages; aws s3 <command> --endpoint-url = http: //hb.bizmrg.com
+ export PYTHONPATH =/Library/Python/2.7/site-packages; aws s3 <command> --endpoint-url=http://hb.bizmrg.com
 ```
 
 ## Examples of using
