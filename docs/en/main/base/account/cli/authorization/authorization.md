@@ -71,10 +71,17 @@ Test the CLI with a command such as:
 open stack flavor list
 ```
 
-The result will be a list of available instance configurations.
-
-Or:
+Upon successful authentication, a list of available instance configurations will be received:
 
 ```bash
-aws --version
++--------------------------------------+-------------------+-------+------+-----------+-------+-----------+
+| ID                                   | Name              |   RAM | Disk | Ephemeral | VCPUs | Is Public |
++--------------------------------------+-------------------+-------+------+-----------+-------+-----------+
+| 09dc3eb9-fc46-44b1-8928-acd42f723747 | Standard-4-12     | 12288 |    0 |         0 |     4 | True      |
+| 12dc66d3-828c-4495-a5ca-ea1710c33174 | Advanced-12-24    | 24576 |    0 |         0 |    12 | True      |
+| 19b38715-48cd-495b-9391-4c4e9d424518 | Basic-1-2-40      |  2048 |   40 |         0 |     1 | True      |
+| 25ae869c-be29-4840-8e12-99e046d2dbd4 | Basic-1-2-20      |  2048 |   20 |         0 |     1 | True      |
+| 283fa444-8d59-4e83-b6f4-90613c52a5a4 | Advanced-8-16-100 | 16384 |  100 |         0 |     8 | True      |
+| 2c7c3f57-b5a4-4139-af7d-d5f05d70c703 | Standard-6-24     | 24576 |    0 |         0 |     6 | True      |
+| 4e115a9b-0ac2-440d-a120-95cf130d63c7 | Standard-2-2      |  2048 |    0 |         0 |     2 | True      |
 ```
