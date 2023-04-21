@@ -1,6 +1,6 @@
 ## Prepare for work
 
-1. Install Terraform binaries from the official VK Cloud [mirror](https://hub.mcs.mail.ru/repository/terraform-binary/mirror/latest/).
+1. Install Terraform binaries from the official VK Cloud [mirror](https://hashicorp-releases.mcs.mail.ru/terraform).
 1. Create a provider mirror file and paste it in the directory.
 
     <tabs>
@@ -11,31 +11,44 @@
     <tabpanel>
 
     1. Create the `terraform.rc` file.
-    1. Add the following code to it.
-    1. Copy file to the `%APPDATA%` directory.
-    1. Open the directory by inserting `%APPDATA%` into the address bar of Windows.
+    1. Add the code to it.
+
+       ```yaml
+        provider_installation {
+            network_mirror {
+                url = "https://terraform-mirror.mcs.mail.ru"
+                include = ["registry.terraform.io/*/*"]
+            }
+            direct {
+                exclude = ["registry.terraform.io/*/*"]
+            }
+        }
+        ```
+
+    1. Paste `%APPDATA%` into the address bar of Windows Explorer and copy the file `terraform.rc` to the directory that opens.
 
     </tabpanel>
     <tabpanel>
 
     1. Create the `.terraformrc` file.
-    1. Add the following code to it.
+    1. Add the code to it.
+
+       ```yaml
+        provider_installation {
+            network_mirror {
+                url = "https://terraform-mirror.mcs.mail.ru"
+                include = ["registry.terraform.io/*/*"]
+            }
+            direct {
+                exclude = ["registry.terraform.io/*/*"]
+            }
+        }
+        ```
+
     1. Copy the file to the root of the user directory.
 
     </tabpanel>
     </tabs>
-
-    ```yaml
-    provider_installation {
-        network_mirror {
-            url = "https://hub.mcs.mail.ru/repository/terraform-providers/"
-            include = ["vk-cs/*"]
-        }
-        direct {
-            exclude = ["vk-cs/*"]
-        }
-    }
-    ```
 
 1. Create a `main.tf` file and describe the necessary terraform providers in it. File consists from the blocks:
 
