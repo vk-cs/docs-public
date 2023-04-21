@@ -44,7 +44,6 @@ The classes provide different types of storage in [multiple regions](../../../ac
 <tabs>
 <tablist>
 <tab>Moscow region</tab>
-<tab>Amsterdam region</tab>
 </tablist>
 <tabpanel>
 
@@ -62,18 +61,6 @@ The classes provide different types of storage in [multiple regions](../../../ac
 | csi-high-iops-gz1-retain        | `high-iops`                 | GZ1                 | Retain            |
 | csi-high-iops-ms1               | `high-iops`                 | MS1                 | Delete            |
 | csi-high-iops-ms1-retain        | `high-iops`                 | MS1                 | Retain            |
-
-</tabpanel>
-<tabpanel>
-
-| Storage class<br>name           | Cinder CSI<br>storage type  | Availability<br>zone | Reclaim<br>Policy |
-| ------------------------------- | --------------------------- | ------------------- | ----------------- |
-| csi-ceph-hdd-ams                | `ceph-hdd`                  | AMS                 | Delete            |
-| csi-ceph-hdd-ams-retain         | `ceph-hdd`                  | AMS                 | Retain            |
-| csi-ceph-ssd-ams                | `ceph-ssd`                  | AMS                 | Delete            |
-| csi-ceph-ssd-ams-retain         | `ceph-ssd`                  | AMS                 | Retain            |
-| csi-high-iops-ams               | `high-iops`                 | AMS                 | Delete            |
-| csi-high-iops-ams-retain        | `high-iops`                 | AMS                 | Retain            |
 
 </tabpanel>
 </tabs>
