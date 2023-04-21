@@ -1,6 +1,6 @@
 ## Подготовка к работе
 
-1. Установите Terraform c официального [зеркала](https://hub.mcs.mail.ru/repository/terraform-binary/mirror/latest/) от VK Cloud.
+1. Установите Terraform c официального [зеркала](https://hashicorp-releases.mcs.mail.ru/terraform) от VK Cloud.
 1. Создайте конфигурационный файл зеркала провайдера и разместите его в каталоге.
 
     <tabs>
@@ -16,11 +16,11 @@
         ```yaml
         provider_installation {
             network_mirror {
-                url = "https://hub.mcs.mail.ru/repository/terraform-providers/"
-                include = ["vk-cs/*"]
+                url = "https://terraform-mirror.mcs.mail.ru"
+                include = ["registry.terraform.io/*/*"]
             }
             direct {
-                exclude = ["vk-cs/*"]
+                exclude = ["registry.terraform.io/*/*"]
             }
         }
         ```
@@ -36,11 +36,11 @@
         ```yaml
         provider_installation {
             network_mirror {
-                url = "https://hub.mcs.mail.ru/repository/terraform-providers/"
-                include = ["vk-cs/*"]
+                url = "https://terraform-mirror.mcs.mail.ru"
+                include = ["registry.terraform.io/*/*"]
             }
             direct {
-                exclude = ["vk-cs/*"]
+                exclude = ["registry.terraform.io/*/*"]
             }
         }
         ```
