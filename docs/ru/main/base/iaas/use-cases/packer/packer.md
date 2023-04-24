@@ -6,7 +6,7 @@ Packer позволяет создавать образы виртуальных
 1. [Установите](../../../../base/account/project/cli/setup) OpenStack CLI, если он еще не установлен. Убедитесь, что вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в облаке с его помощью.
 1. [Загрузите образ](http://ftp.altlinux.org/pub/distributions/ALTLinux/p9/images/cloud/x86_64/alt-p9-cloud-x86_64.qcow2) ОС Alt Linux P9 локально (файл `alt-p9-cloud-x86_64.qcow2`).
 
-## 1. Конвертируйте образа в формат RAW
+## 1. Конвертируйте образ в формат RAW
 
 Используйте утилиту `qemu-img`:
 
@@ -58,10 +58,10 @@ Packer позволяет создавать образы виртуальных
         export NETWORK_ID=f19e1e54-bce9-4c25-XXXX-e0f40e2cff14
         ```
 
-1. Создайте файл `nginx.pkr.hcl`:
+1. Создайте файл `altlinux.pkr.hcl`:
 
     <details>
-        <summary>nginx.pkr.hcl</summary>
+        <summary>altlinux.pkr.hcl</summary>
 
       ```hcl
       variable "network_id" {
@@ -122,7 +122,7 @@ Packer позволяет создавать образы виртуальных
 1. Запустите создание образа с помощью команды:
 
     ```bash
-    packer build nginx.pkr.hcl
+    packer build altlinux.pkr.hcl
     ```
 
 1. Дождитесь появления сообщения об успешной загрузке:

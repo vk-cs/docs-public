@@ -122,7 +122,7 @@
 2. Экспортируйте образ:
 
    ```bash
-   openstack image save --file <путь к файлу образа> <ID образа>
+   openstack image save --file <название файла образа>.raw <ID образа>
    ```
 
 </tabpanel>
@@ -132,7 +132,7 @@
 1. Выполните команду:
 
    ```bash
-   curl -H "X-Auth-Token:{токен}" "https://infra.mail.ru:9292/v2/images/{ID образа}/file" --output <путь к файлу образа>
+   curl -H "X-Auth-Token:{токен}" "https://infra.mail.ru:9292/v2/images/{ID образа}/file" --output <название файла образа>.raw
    ```
 
 </tabpanel>

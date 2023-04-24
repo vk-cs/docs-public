@@ -1,0 +1,18 @@
+{
+  "title": "File storage management",
+  "pageDescription": "How to create file storages, connect them to instances, configure access rules and take snapshots.",
+  "shortDescription": "How to create file storages, connect them to instances, configure access rules and take snapshots",
+  "metaTitle": "File storage management — VK Cloud",
+  "metaDescription": "How to create file storages, connect them to instances, configure access rules and take snapshots",
+  "sectionTitle": "File storage management",
+  "markdown": "How to create file storages, connect them to instances, configure access rules and take snapshots.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "a8a4975a-156f-4c36-8275-6ffe95546c1e",
+  "additionalUuids": [
+    "31674d3c-e25c-41d1-b9d0-370b15eb2160",
+    "98740a96-b3a1-4735-8408-bd4f1527ea97",
+    "2fd98a79-90ba-4067-80d3-4ff38ec65bba"
+  ]
+}

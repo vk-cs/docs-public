@@ -1,0 +1,16 @@
+{
+    "title": "Virtual machines",
+    "pageDescription": "Standard operations for working with VK Cloud VMs.",
+    "shortDescription": "Creating Linux and Windows virtual machines. Connecting to VMs, managing their resources and status. VM diagnostics",
+    "metaTitle": "Virtual machines — VK Cloud",
+    "metaDescription": "Creating Linux and Windows virtual machines. Connecting to the VM via SSH and RDP, managing the resources and state of the virtual machine. VM diagnostics. VNC console.",
+    "sectionTitle": "Virtual machines",
+    "markdown": "Standard operations for working with VK Cloud VMs.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "additionalUuids": [
+        "979bea50-9f58-4fcf-b1ec-72b24c9a7150"
+    ],
+    "uuid": "ad5abab0-a5c8-4a81-928b-5dbe4d81fdb2"
+  }

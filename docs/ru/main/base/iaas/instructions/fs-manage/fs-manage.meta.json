@@ -10,5 +10,11 @@
   "infobarItems": null,
   "weight": 4,
   "uuid": "35c44665-488e-4873-923b-1a6d58ecb1aa",
-  "additionalUuids": ["9c3f8cb3-c760-4edc-82b1-6d9054521593", "cbf225d0-dbb2-48bd-9348-cbef595cd17c", "fdfd78a5-cd5e-4767-89c5-650ebf64a7ac", "c5585342-538a-4fa5-862d-bce351c96daf", "79e62e19-4e0f-4703-8170-57e06d783f43", "7e67a953-d197-4629-b912-29dc3f99dd31"]
+  "additionalUuids": [
+    "9c3f8cb3-c760-4edc-82b1-6d9054521593",
+    "cbf225d0-dbb2-48bd-9348-cbef595cd17c",
+    "fdfd78a5-cd5e-4767-89c5-650ebf64a7ac",
+    "c5585342-538a-4fa5-862d-bce351c96daf",
+    "79e62e19-4e0f-4703-8170-57e06d783f43",
+    "7e67a953-d197-4629-b912-29dc3f99dd31"]
 }

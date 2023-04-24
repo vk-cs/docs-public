@@ -1,16 +1,8 @@
-В VK Cloud поддерживается миграция ОС Windows серверных версий:
+<info>
 
-- Windows Server 2008 / 2008 R2;
-- Windows Server 2012 / 2012 R2;
-- Windows Server 2016;
-- Windows Server 2019;
-- Windows Server 2022.
+Список поддерживаемых ОС Windows для миграции перечислен в разделе [Операционная система](../../concepts/vm-concept#operacionnaya-sistema).
 
-<warn>
-
-VK Cloud не поддерживает миграцию ОС Windows версий 7 / 8 / 8.1 / 10 / 11.
-
-</warn>
+</info>
 
 В качестве примера использован образ Windows Server 2016 редакции CORE.
 
