@@ -163,7 +163,7 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
       sudo cryptsetup open /dev/vdb vdb_crypt
       ```
 
-   2. Введите ключевую фазу и нажмите *Enter*.
+   2. Введите ключевую фразу и нажмите *Enter*.
 
 9. Расширьте файловую систему до размера диска:
 
@@ -243,6 +243,6 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
    Please enter passphrase for disk vdb_crypt on /volumes/disk1:
    ```
 
-2. Введите ключевую фазу и нажмите *Enter*.
+2. Введите ключевую фразу и нажмите *Enter*.
 
 Ключевая фраза для дешифрования диска будет запрашиваться каждый раз при загрузке ОС. После ввода ключевой фразы диск будет примонтирован и с файловой системой можно будет работать, как и до шифрования.
