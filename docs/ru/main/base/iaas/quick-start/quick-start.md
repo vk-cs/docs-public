@@ -84,7 +84,7 @@ ECDSA key fingerprint is SHA256:aYZIWs9N6KRtfFOuic6eoWcluhSp6+jha/DSBgd9McI.
 Are you sure you want to continue connecting (yes/no)?
  ```
 
-Введите в терминале `yes` и нажмите **Enter**.
+Введите в терминале `yes` и нажмите _Enter_.
 
 </tabpanel>
 <tabpanel>
@@ -111,7 +111,7 @@ ECDSA key fingerprint is SHA256:aYZIWs9N6KRtfFOuic6eoWcluhSp6+jha/DSBgd9McI.
 Are you sure you want to continue connecting (yes/no)?
 ```
 
-Введите в командной строке `yes` и нажмите **Enter**.
+Введите в командной строке `yes` и нажмите _Enter_.
 
 </tabpanel>
 <tabpanel>
@@ -159,5 +159,5 @@ Are you sure you want to continue connecting (yes/no)?
 
 Работающая ВМ потребляет вычислительные ресурсы. Если она вам больше не нужна:
 
-- остановите ее, чтобы воспользоваться ею позже;
-- удалите ее навсегда.
+- [остановите](../instructions/vm/vm-manage#zapusk--ostanovka--perezagruzka-vm) ее, чтобы воспользоваться ею позже;
+- [удалите](../instructions/vm/vm-manage#udalenie-vm) ее навсегда.
