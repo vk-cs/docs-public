@@ -5,5 +5,6 @@
   "metaTitle": "File storage — VK Cloud",
   "metaDescription": "Storage types, storage access options, maximum volume and availability zones",
   "sectionTitle": "File storage",
-  "weight": 5
+  "weight": 5,
+  "uuid": "411bd59b-068e-4179-9fd1-825f118cba9a"
 }
