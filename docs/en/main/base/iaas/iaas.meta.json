@@ -1,18 +1,18 @@
 {
-  "title": "Cloud Compute",
-  "pageDescription": "VK Cloud Servers is a cloud computing service that allows you to manage virtual machines on the VK Cloud platform. Includes management of configurations of instances, disks, images, backups, allows you to create file storage.",
-  "shortDescription": "Cloud server, file and block storage, unlimited support for applications and services",
-  "metaTitle": "Cloud Compute - VK Cloud",
-  "metaDescription": "VK Cloud Servers is a cloud computing service that allows you to manage virtual machines on the VK Cloud platform. Includes management",
-  "sectionTitle": "Cloud Compute",
-  "markdown": "VK Cloud Servers is a cloud computing service that allows you to manage virtual machines on the VK Cloud platform. Includes management of configurations of instances, disks, images, backups, allows you to create file storage.",
+  "title": "Cloud Computing",
+  "pageDescription": "VK Cloud Servers is a cloud computing service for managing virtual machines on the VK Cloud platform. Includes management of VM configurations, disks, images, backups, allows you to create a file storage.",
+  "shortDescription": "Rent a cloud server, file and block storage, unlimited support for applications and services",
+  "metaTitle": "Cloud Computing — VK Cloud",
+  "metaDescription": "VK Cloud Servers is a cloud computing service for managing virtual machines on the VK Cloud",
+  "sectionTitle": "Cloud Computing",
+  "markdown": "VK Cloud Servers is a cloud computing service for managing virtual machines on the VK Cloud platform. Includes management of VM configurations, disks, images, backups, allows you to create a file storage.",
   "icon": "",
   "weight": 1,
   "infobarItems": [
     {
       "text": "Using Terraform",
       "icon": "/docs/_docs/en/main/manage/terraform/assets/icon.svg",
-      "link": "../../manage/terraform/scenarios/iaas"
+      "link": "../../manage/terraform/use-cases/iaas"
     }],
   "uuid": "10d14d5d-951f-4ed0-ac2a-c3d706ab1a55"
 }
