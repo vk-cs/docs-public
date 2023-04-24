@@ -1,0 +1,15 @@
+{
+  "title": "Creating a VM",
+  "sectionTitle": "Creating a VM",
+  "metaTitle": "Creating a VM — VK Cloud",
+  "pageDescription": "Creating a virtual machine based on Linux or Windows OS.",
+  "shortDescription": "Features of creating and configuring a VM",
+  "metaDescription": "Создание виртуальной машины на базе ОС Linux или Windows",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "946b9f5a-abf1-4214-8865-e01d6ea8755f",
+  "additionalUuids": [
+    "a1a6c19d-1f3f-4d90-9880-78dddcf7267a"
+  ]
+}

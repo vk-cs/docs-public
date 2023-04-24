@@ -1,0 +1,13 @@
+{
+  "title": "Creating an image using Packer",
+  "pageDescription": "Creating a virtual machine image with the necessary parameters using the Packer configuration file.",
+  "shortDescription": "How to create an image of a virtual machine with the necessary parameters using a configuration file",
+  "metaTitle": "Creating an image using Packer — VK Cloud",
+  "metaDescription": "Creating a virtual machine image with the necessary parameters using the Packer configuration file",
+  "sectionTitle": "Creating an image using Packer",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 6,
+  "uuid": "333fcebe-51de-49ac-a2c4-a8f3b4cdb91f"
+}
