@@ -1,0 +1,19 @@
+{
+  "title": "VM management",
+  "pageDescription": "Description of the possibilities of managing a virtual machine, its state and resources.",
+  "shortDescription": "Description of the possibilities of managing a virtual machine, its state and resources",
+  "metaTitle": "VM management — VK Cloud",
+  "metaDescription": "Description of the possibilities of managing a virtual machine, its state and resources.",
+  "sectionTitle": "VM management",
+  "markdown": "Description of the possibilities of managing a virtual machine, its state and resources.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "3e93d14e-0b97-44cb-ab2b-bae12eeb188d",
+  "additionalUuids": [
+    "360fea69-fa7b-4bd5-9177-b6abc9ddad0a",
+    "ab9d2b5c-4f99-4029-8174-219aec0c0969",
+    "a82f89f6-575e-42a4-9e3b-4785fb00459a",
+    "0a3ef260-ef54-4f25-a5a7-788bd4a1edfb"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Managing backups",
+  "sectionTitle": "Managing backups",
+  "metaTitle": "Managing backups — VK Cloud",
+  "pageDescription": "Managing backup plans and backups.",
+  "shortDescription": "Restoring a VM from a backup. Changing backup plans and managing backups",
+  "metaDescription": "Managing backup plans and backups",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "7173c73f-f340-4e7b-ba4c-bf1bd48f7da5",
+  "additionalUuids": ["5f22b583-7b3e-499c-80b1-3998b51075e9"]
+}
