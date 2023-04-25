@@ -6,21 +6,16 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link" : "docs/en/main/base/iaas/vm-start/vm-quick-create"
+                    "link": "docs/en/main/base/iaas/concepts"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-images/custom-image"
+                    "link": "docs/en/main/base/iaas/license"
                 },
                 {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/en/main/base/iaas/pricing"
                 },
                 {
-                    "link": "docs/en/main/additionals/billing",
-                    "hiddenForPartners": true
-                },
-                {
-                    "link": "docs/en/main/additionals/billing/operations/payment",
-                    "hiddenForPartners": true
+                    "link": "docs/en/main/base/iaas/faq"
                 }
             ]
         },
@@ -28,19 +23,19 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/base/iaas/vm-interfaces/vm-create-cli"
+                    "link": "docs/en/main/base/iaas/quick-start"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-volumes/volume-sla"
+                    "link": "docs/en/main/base/iaas/instructions/vm/vm-create"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-start/manage-vm"
+                    "link": "docs/en/main/base/iaas/instructions/vm/vm-connect"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/fs"
+                    "link": "docs/en/main/base/iaas/instructions/vm/vm-manage"
                 },
                 {
-                    "link": "docs/en/main/additionals/mp"
+                    "link": "docs/en/main/base/iaas/instructions/vm/vm-add-net"
                 }
             ]
         },
@@ -48,19 +43,25 @@
             "title": "MORE",
             "links": [
                 {
-                    "link": "docs/en/main/additionals/start/user-account/project-roles-users"
+                    "link": "docs/en/main/base/iaas/instructions/vm/vm-console"
                 },
                 {
-                    "link": "docs/en/main/dbs/dbaas/manage-db/backup-db"
+                    "link": "docs/en/main/base/iaas/troubleshooting"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet"
+                    "link": "docs/en/main/base/iaas/use-cases/disk-encrypt"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet/vpn"
+                    "link": "docs/en/main/base/iaas/use-cases/win-image"
                 },
                 {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/en/main/base/iaas/use-cases/packer"
+                },
+                {
+                    "link": "docs/en/main/base/iaas/use-cases/vm-multiqueue"
+                },
+                {
+                    "link": "docs/en/main/base/iaas/use-cases/managing-node"
                 }
             ]
         }
