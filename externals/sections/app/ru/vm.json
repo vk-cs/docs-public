@@ -6,27 +6,62 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/iaas/vm-start/vm-quick-create"
+                    "link": "docs/ru/main/base/iaas/concepts"
                 },
                 {
-                    "link" : "docs/ru/main/base/iaas/vm-backup"
+                    "link": "docs/ru/main/base/iaas/license"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/vm-volumes"
+                    "link": "docs/ru/main/base/iaas/pricing"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/vm-images"
+                    "link": "docs/ru/main/base/iaas/faq"
+                }
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                {
+                    "link": "docs/ru/main/base/iaas/quick-start"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/fs"
+                    "link": "docs/ru/main/base/iaas/instructions/vm/vm-create"
                 },
                 {
-                    "link": "docs/ru/main/additionals/billing",
-                    "hiddenForPartners": true
+                    "link": "docs/ru/main/base/iaas/instructions/vm/vm-connect"
                 },
                 {
-                    "link": "docs/ru/main/additionals/billing/operations/payment",
-                    "hiddenForPartners": true
+                    "link": "docs/ru/main/base/iaas/instructions/vm/vm-manage"
+                },
+                {
+                    "link": "docs/ru/main/base/iaas/instructions/vm/vm-add-net"
+                }
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                {
+                    "link": "docs/ru/main/base/iaas/instructions/vm/vm-console"
+                },
+                {
+                    "link": "docs/ru/main/base/iaas/troubleshooting"
+                },
+                {
+                    "link": "docs/ru/main/base/iaas/use-cases/disk-encrypt"
+                },
+                {
+                    "link": "docs/ru/main/base/iaas/use-cases/win-image"
+                },
+                {
+                    "link": "docs/ru/main/base/iaas/use-cases/packer"
+                },
+                {
+                    "link": "docs/ru/main/base/iaas/use-cases/vm-multiqueue"
+                },
+                {
+                    "link": "docs/ru/main/base/iaas/use-cases/managing-node"
                 }
             ]
         }
