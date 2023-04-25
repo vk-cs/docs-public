@@ -6,11 +6,27 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/base/iaas/vm-volumes"
+                    "link": "docs/en/main/base/iaas/concepts"
                 },
                 {
-                    "link": "docs/en/main/additionals/billing",
-                    "hiddenForPartners": true
+                    "link": "docs/en/main/base/iaas/license"
+                },
+                {
+                    "link": "docs/en/main/base/iaas/pricing"
+                },
+                {
+                    "link": "docs/en/main/base/iaas/faq"
+                }
+            ]
+        },
+        {
+            "title": "QUICK START",
+            "links": [
+                {
+                    "link": "docs/en/main/base/iaas/quick-start"
+                },
+                {
+                    "link": "docs/en/main/base/iaas/instructions/vm-volumes"
                 }
             ]
         },
@@ -18,16 +34,25 @@
             "title": "MORE",
             "links": [
                 {
-                    "link": "docs/en/main/base/iaas/vm-volumes/volume-create"
+                    "link": "docs/en/main/base/iaas/instructions/vm/vm-console"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-volumes/volume-resize"
+                    "link": "docs/en/main/base/iaas/troubleshooting"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-volumes/volume-convert"
+                    "link": "docs/en/main/base/iaas/use-cases/disk-encrypt"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-faq/faq-vm-backup"
+                    "link": "docs/en/main/base/iaas/use-cases/win-image"
+                },
+                {
+                    "link": "docs/en/main/base/iaas/use-cases/packer"
+                },
+                {
+                    "link": "docs/en/main/base/iaas/use-cases/vm-multiqueue"
+                },
+                {
+                    "link": "docs/en/main/base/iaas/use-cases/managing-node"
                 }
             ]
         }
