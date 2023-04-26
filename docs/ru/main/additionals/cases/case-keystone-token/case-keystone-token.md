@@ -1,140 +1,142 @@
-Токен доступа используется для аутентификации в сервисах VK Cloud через REST API с использованием Keystone. Примеры использования токена:
+Токен Keystone нужен для доступа к API и ресурсам VK Cloud.
 
-<!-- todo переделать ссылки после переноса API VKCSDOCS-582-->
-
-- [просмотр логов](/ru/manage/logging/start/view-logs) в сервисе Cloud Logging;
-- [работа](/ru/networks/dns/publicdns/api) с публичным DNS.
-
-Чтобы получить токен доступа:<!-- todo поставить на ссылки на раздел ЛК, когда он будет переделан-->
+Чтобы получить токен:
 
 1. Перейдите в [личный кабинет](https://mcs.mail.ru/app/) VK Cloud.
-1. Убедитесь, что [включена](/ru/base/account/account/security/2faon) двухфакторная аутентификация и [активирован](/ru/base/account/project/api/api-access) доступ по API.
+1. Убедитесь, что [включена](/ru/base/account/instructions/account-manage/security#vklyuchenie-2fa) двухфакторная аутентификация и [активирован](/ru/base/account/instructions/account-manage/security#dostup-po-api) доступ по API.
 1. Выберите проект, в котором планируется использовать токен.
 1. Получите данные проекта и пользователя, для которого генерируется токен:
 
-    1. В личном кабинете перейдите в раздел [Настройки проекта](https://mcs.mail.ru/app/project/keys/).
-    1. Нажмите кнопку **Скачать openrc версии 3**. Будет загружен файл вида `<название проекта>-openrc.sh`.
+   1. В личном кабинете перейдите в раздел [Настройки проекта](https://mcs.mail.ru/app/project/keys/).
+   1. Нажмите кнопку **Скачать openrc версии 3**. Будет загружен файл вида `<название проекта>-openrc.sh`.
 
-1. Загрузите данные, полученные на предыдущем шаге, в переменные окружения.
+1. Загрузите полученные данные в переменные окружения.
 
-    <tabs>
-    <tablist>
-    <tab>Linux</tab>
-    <tab>Windows</tab>
-    </tablist>
-    <tabpanel>
+   <tabs>
+   <tablist>
+   <tab>Linux</tab>
+   <tab>Windows</tab>
+   </tablist>
+   <tabpanel>
 
-    1. Запустите скачанный файл:
+   1. Запустите скачанный файл:
 
-    ```bash
-    source <название проекта>-openrc.sh
-    ```
+      ```bash
+      source <название проекта>-openrc.sh
+      ```
 
-    1. Введите пароль для пользователя в появившемся окне.
+   1. Введите пароль пользователя проекта.
 
-    </tabpanel>
-    <tabpanel>
+   </tabpanel>
+   <tabpanel>
 
-    1. Откройте скаченный файл в текстовом редакторе и скопируйте значения параметров из него.
-    2. Загрузите скопированные параметры в переменные окружения. Также загрузите переменную `OS_PASSWORD`.
+   1. Откройте скачанный файл в текстовом редакторе и скопируйте значения параметров из него.
+   2. Загрузите скопированные параметры в переменные окружения. Также загрузите переменную `OS_PASSWORD`.
 
-    ```powershell
-    set OS_PROJECT_ID=<OS_PROJECT_ID>
-    set OS_REGION_NAME=<OS_REGION_NAME>
-    set OS_USER_DOMAIN_NAME=<OS_USER_DOMAIN_NAME>
-    set OS_USERNAME=<OS_USERNAME>
-    set OS_PASSWORD=<пароль пользователя>
-    ```
+      ```powershell
+      set OS_PROJECT_ID=<OS_PROJECT_ID>
+      set OS_REGION_NAME=<OS_REGION_NAME>
+      set OS_USER_DOMAIN_NAME=<OS_USER_DOMAIN_NAME>
+      set OS_USERNAME=<OS_USERNAME>
+      set OS_PASSWORD=<пароль пользователя>
+      ```
 
-    </tabpanel>
-    </tabs>
+   </tabpanel>
+   </tabs>
 
-1. Выполните команду с помощью [утилиты](https://github.com/curl/curl/blob/master/docs/INSTALL.md) `curl`:
+1. Получите токен одним из способов.
 
-    <tabs>
-    <tablist>
-    <tab>Linux</tab>
-    <tab>Windows</tab>
-    </tablist>
-    <tabpanel>
+   - С помощью OpenStack CLI:
 
-    ```bash
-    curl -X POST \
-    -H "Content-Type: application/json" \
-    -d '{
-        "auth": {
-            "identity": {
-                "methods": [
-                    "password"
-                ],
-                "password": {
-                    "user": {
-                        "domain": {
-                            "id": "'$OS_USER_DOMAIN_NAME'"
-                        },
-                        "name": "'$OS_USERNAME'",
-                        "password": "'$OS_PASSWORD'"
-                    }
-                }
-            },
-            "scope": {
-                "project": {
-                    "id": "'$OS_PROJECT_ID'",
-                    "region": "'$OS_REGION_NAME'"
-                }
-            }
-        }
-    }' \
-    -i "https://infra.mail.ru:35357/v3/auth/tokens"
-    ```
+      1. Убедитесь, что у вас [установлен](/ru/base/account/project/cli/setup) клиент OpenStack.
+      2. Выполните команду:
 
-    </tabpanel>
-    <tabpanel>
+         ```
+         openstack token issue -c id -f value
+         ```
 
-    ```bash
-    curl -X POST ^
-    -H "Content-Type: application/json" ^
-    -d "{\"auth\": {\"identity\": {\"methods\": [\"password\"], \"password\": {\"user\": {\"domain\": {\"id\": \"%OS_USER_DOMAIN_NAME%\"}, \"name\": \"%OS_USERNAME%\",\"password\": \"%OS_PASSWORD%\"}}}, \"scope\": {\"project\": {\"id\": \"%OS_PROJECT_ID%\"}}}}" ^
-    -i "https://infra.mail.ru:35357/v3/auth/tokens"
-    ```
+         Значение токена будет выведено в консоль.
 
-    </tabpanel>
-    </tabs>
+   - Используйте [утилиту](https://github.com/curl/curl/blob/master/docs/INSTALL.md) cURL:
 
-<info>
+      <tabs>
+      <tablist>
+      <tab>Linux</tab>
+      <tab>Windows</tab>
+      </tablist>
+      <tabpanel>
 
-Кроме `curl` вы можете использовать и другие инструменты для получения токена.
+      ```bash
+      curl -X POST \
+      -H "Content-Type: application/json" \
+      -d '{
+          "auth": {
+              "identity": {
+                  "methods": [
+                      "password"
+                  ],
+                  "password": {
+                      "user": {
+                          "domain": {
+                              "id": "'$OS_USER_DOMAIN_NAME'"
+                          },
+                          "name": "'$OS_USERNAME'",
+                          "password": "'$OS_PASSWORD'"
+                      }
+                  }
+              },
+              "scope": {
+                  "project": {
+                      "id": "'$OS_PROJECT_ID'",
+                      "region": "'$OS_REGION_NAME'"
+                  }
+              }
+          }
+      }' \
+      -i "https://infra.mail.ru:35357/v3/auth/tokens"
+      ```
 
-</info>
+      </tabpanel>
+      <tabpanel>
 
-<details>
-  <summary markdown="span">Пример ответа на запрос получения токена</summary>
-  
-  ```bash
-  HTTP/1.1 201 Created
-  
-  date: Wed, 18 Jan 2023 15:02:04 GMT
-  server: Apache/2.4.6 (CentOS) mod_wsgi/3.4 Python/2.7.5
-  
-  X-Subject-Token: XXXXXXXXXnsH_iUvos_UFSveInsHgPAKnBefJn_TghGVIBjDEDo4vLYU9xWnDrVIBp3el87i5vtrknja14Gcgc9uTgXdRyr3hm8isz8iAPp5FEq27-WLZQAwfhCfGB4sNdlpAjWYZrNYmUbglgqzoTqqwQXXXXXXX
-  
-  vary: X-Auth-Token
-  x-openstack-request-id: req-7de8bc92-0000-0000-0000-906e6e63f956
-  content-length: 322
-  content-type: application/json
-  set-cookie: PROXYSRV_ADMIN=acadfd0285XXXXXX|XXXXX|XXXXX; path=/; Secure
-  connection: close
-  
-  {"token": {"issued_at": "2023-01-18T15:02:04.000000Z", "audit_ids": ["XXXX-iu5TeiUOU66VNO_-g"], "methods": ["password"], "expires_at": "2023-01-18T16:02:04.000000Z", "user": {"password_expires_at": null, "domain": {"id": "users", "name": "users"}, "id": "00000000000000XXX", "name": "example@example.ex"}}}
-  ```
+      ```bash
+      curl -X POST ^
+      -H "Content-Type: application/json" ^
+      -d "{\"auth\": {\"identity\": {\"methods\": [\"password\"], \"password\": {\"user\": {\"domain\": {\"id\": \"%OS_USER_DOMAIN_NAME%\"}, \"name\": \"%OS_USERNAME%\",\"password\": \"%OS_PASSWORD%\"}}}, \"scope\": {\"project\": {\"id\": \"%OS_PROJECT_ID%\"}}}}" ^
+      -i "https://infra.mail.ru:35357/v3/auth/tokens"
+      ```
 
-</details>
+      </tabpanel>
+      </tabs>
 
-Для выполнения дальнейших HTTP-запросов через REST API на платформе VK Cloud используйте значение параметра `X-Subject-Token`.
+      Значение токена будет выведено в параметре `X-Subject-Token`.
+
+      <details>
+      <summary markdown="span">Пример ответа на запрос для получения токена</summary>
+
+      ```bash
+      HTTP/1.1 201 Created
+
+      date: Wed, 18 Jan 2023 15:02:04 GMT
+      server: Apache/2.4.6 (CentOS) mod_wsgi/3.4 Python/2.7.5
+
+      X-Subject-Token: XXXXXXXXXnsH_iUvos_UFSveInsHgPAKnBefJn_TghGVIBjDEDo4vLYU9xWnDrVIBp3el87i5vtrknja14Gcgc9uTgXdRyr3hm8isz8iAPp5FEq27-WLZQAwfhCfGB4sNdlpAjWYZrNYmUbglgqzoTqqwQXXXXXXX
+
+      vary: X-Auth-Token
+      x-openstack-request-id: req-7de8bc92-0000-0000-0000-906e6e63f956
+      content-length: 322
+      content-type: application/json
+      set-cookie: PROXYSRV_ADMIN=acadfd0285XXXXXX|XXXXX|XXXXX; path=/; Secure
+      connection: close
+
+      {"token": {"issued_at": "2023-01-18T15:02:04.000000Z", "audit_ids": ["XXXX-iu5TeiUOU66VNO_-g"], "methods": ["password"], "expires_at": "2023-01-18T16:02:04.000000Z", "user": {"password_expires_at": null, "domain": {"id": "users", "name": "users"}, "id": "00000000000000XXX", "name": "example@example.ex"}}}
+      ```
+
+      </details>
 
 <warn>
 
-Сгенерированный токен действителен в течение одного часа.
+Полученный токен действителен в течение одного часа.
 
 </warn>
 
@@ -143,18 +145,18 @@
 Задача: получить список сетей через REST API (сервис Neutron).
 
 1. В личном кабинете [посмотрите](https://mcs.mail.ru/app/project/endpoints) эндпоинт, по которому выполняется запрос к сервису Neutron. В данном примере это `https://infra.mail.ru:9696`.
-1. Сгенерируйте токен и скопируйте значение параметра `X-Subject-Token`.
-1. Выполните команду с помощью утилиты `curl`:
+1. Получите токен и скопируйте его значение.
+1. Выполните команду с помощью утилиты cURL:
 
-    ```bash
-    curl https://infra.mail.ru:9696/v2.0/networks -H "Accept: application/json" -H "X-Auth-Token: <токен, сгенерированный на предыдущем шаге>"
-    ```
+   ```bash
+   curl https://infra.mail.ru:9696/v2.0/networks -H "Accept: application/json" -H "X-Auth-Token: <токен, сгенерированный на предыдущем шаге>"
+   ```
 
-    <details>
-    <summary markdown="span">Пример результата</summary>
+   <details>
+   <summary markdown="span">Пример результата</summary>
 
-    ```json
-    {
+   ```json
+   {
         "networks": [
             {
                 "ipv6_address_scope": null,
@@ -187,6 +189,11 @@
             },
         ]
     }
-    ```
+   ```
 
-    </details>
+   </details>
+
+Другие примеры использования токена:
+
+- [просмотр логов](/ru/manage/logging/start/view-logs) в сервисе Cloud Logging;
+- [работа](/ru/additionals/api/api-dns) с публичным DNS.
