@@ -1,0 +1,13 @@
+{
+  "title": "RemovePermission",
+  "pageDescription": "Примеры запроса и ответа для метода RemovePermission.",
+  "shortDescription": "",
+  "metaTitle": "RemovePermission — VK Cloud",
+  "metaDescription": "Отменяет все разрешения в политике очереди, соответствующие указанному Label параметру. Примеры запроса и ответа для метода RemovePermission.",
+  "sectionTitle": "RemovePermission",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 16,
+  "uuid": "dd63f37f-d7df-4ac1-8536-956346f4ffc3"
+}

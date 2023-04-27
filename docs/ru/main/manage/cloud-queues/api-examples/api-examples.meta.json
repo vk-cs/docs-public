@@ -1,0 +1,13 @@
+{
+  "title": "Примеры использования API",
+  "pageDescription": "Примеры использования методов API для сервиса Cloud Queues.",
+  "shortDescription": "",
+  "metaTitle": "Примеры использования API — VK Cloud",
+  "metaDescription": "Примеры использования методов API для сервиса Cloud Queues",
+  "sectionTitle": "Сервис очередей сообщений",
+  "markdown": "Примеры использования [методов API](/ru/additionals/api/cloud-queues-api) для сервиса.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "e31e6440-7c9c-4aa3-905a-d043a2435d24"
+}

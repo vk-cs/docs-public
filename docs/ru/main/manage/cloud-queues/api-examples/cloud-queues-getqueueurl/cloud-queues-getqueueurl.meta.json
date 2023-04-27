@@ -1,0 +1,13 @@
+{
+  "title": "GetQueueUrl",
+  "pageDescription": "Примеры запроса и ответа для метода GetQueueUrl.",
+  "shortDescription": "",
+  "metaTitle": "GetQueueUrl — VK Cloud",
+  "metaDescription": "Запрос возвращает URL-адрес существующей очереди Cloud Queues. Примеры запроса и ответа для метода GetQueueUrl.",
+  "sectionTitle": "GetQueueUrl",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 10,
+  "uuid": "35c3385f-e8fd-4dde-8cb7-1d5b5502754a"
+}
