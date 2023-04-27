@@ -2,12 +2,11 @@
   "title": "Сервис очередей сообщений",
   "pageDescription": "Методы API, входные и выходные параметры, коды ошибок.",
   "shortDescription": "Методы API, входные и выходные параметры, коды ошибок",
-  "metaTitle": "Сервис очередей сообщений - VK Cloud",
-  "metaDescription": "",
+  "metaTitle": "Примеры использования API — VK Cloud",
+  "metaDescription": "Методы API, входные и выходные параметры, коды ошибок для сервиса Cloud Queues",
   "sectionTitle": "Сервис очередей сообщений",
   "markdown": "Методы API, входные и выходные параметры, коды ошибок.",
   "icon": "",
   "infobarItems": null,
-  "weight": 3,
-  "uuid": "e31e6440-7c9c-4aa3-905a-d043a2435d24"
+  "weight": 3
 }

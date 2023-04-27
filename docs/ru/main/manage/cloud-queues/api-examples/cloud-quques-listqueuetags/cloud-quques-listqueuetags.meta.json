@@ -1,0 +1,13 @@
+{
+  "title": "ListQueueTags",
+  "pageDescription": "Примеры запроса и ответа для метода ListQueueTags.",
+  "shortDescription": "",
+  "metaTitle": "ListQueueTags — VK Cloud",
+  "metaDescription": "Список всех тегов распределения затрат, добавленных в указанную очередь Amazon SQS. Примеры запроса и ответа для метода ListQueueTags.",
+  "sectionTitle": "ListQueueTags",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 13,
+  "uuid": "2948cc65-1eae-4a52-9aa0-63f4e0449f06"
+}

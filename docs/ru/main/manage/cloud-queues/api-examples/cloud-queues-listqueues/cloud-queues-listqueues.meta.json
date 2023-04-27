@@ -1,0 +1,13 @@
+{
+  "title": "ListQueues",
+  "pageDescription": "Примеры запроса и ответа для метода ListQueues.",
+  "shortDescription": "",
+  "metaTitle": "ListQueues — VK Cloud",
+  "metaDescription": "Возвращает список ваших очередей в текущем регионе. Примеры запроса и ответа для метода ListQueues.",
+  "sectionTitle": "ListQueues",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 12,
+  "uuid": "1d2c976b-f518-4883-9b86-8392b6b84784"
+}
