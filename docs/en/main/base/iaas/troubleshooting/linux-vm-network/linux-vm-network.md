@@ -157,7 +157,7 @@ Check that the network interface is configured correctly:
                     addresses:
                         - 10.0.0.5/24 # Private IP address + prefix from CIDR
                     routes:
-                        - to: default
+                        - to: 0.0.0.0/0
                           via: 10.0.0.1 # Gateway address
                     nameservers:
                         addresses:
