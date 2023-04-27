@@ -157,7 +157,7 @@
                     addresses:
                         - 10.0.0.5/24 # Приватный IP-адрес + префикс из CIDR
                     routes:
-                        - to: default
+                        - to: 0.0.0.0/0
                           via: 10.0.0.1 # Адрес шлюза
                     nameservers:
                         addresses:
