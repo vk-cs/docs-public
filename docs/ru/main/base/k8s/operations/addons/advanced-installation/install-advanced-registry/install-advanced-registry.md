@@ -2,9 +2,9 @@
 
 <warn>
 
-При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
 
-Использование балансировщика [тарифицируется](/ru/main/networks/vnet/tariffs).
+Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffs).
 
 </warn>
 
@@ -46,7 +46,7 @@
 
    Запишите вывод команды (в формате `<логин>:<зашифрованный пароль>`).
 
-1. [Добавьте](/ru/main/networks/vnet/operations/manage-floating-ip#dobavlenie-plavayushchego-ip-adresa-v-proekt) плавающий IP-адрес или [найдите](/ru/main/networks/vnet/operations/manage-floating-ip#prosmotr-spiska-plavayushchih-ip-adresov) существующий непривязанный плавающий IP-адрес.
+1. [Добавьте](/ru/networks/vnet/operations/manage-floating-ip#dobavlenie-plavayushchego-ip-adresa-v-proekt) плавающий IP-адрес или [найдите](/ru/networks/vnet/operations/manage-floating-ip#prosmotr-spiska-plavayushchih-ip-adresov) существующий непривязанный плавающий IP-адрес.
 
    Запишите этот IP-адрес. Он будет использоваться для доступа к реестру Docker.
 

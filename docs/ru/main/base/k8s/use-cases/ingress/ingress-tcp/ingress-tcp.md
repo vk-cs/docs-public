@@ -1,8 +1,8 @@
 <warn>
 
-При развертывании Ingress-контроллера для него будет создан [стандартный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+При развертывании Ingress-контроллера для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
 
-Использование балансировщика [тарифицируется](/ru/main/networks/vnet/tariffs).
+Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffs).
 
 </warn>
 
