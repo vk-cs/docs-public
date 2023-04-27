@@ -2,9 +2,9 @@
 
 <warn>
 
-При развертывании для каждого из сервисов будет создан [стандартный балансировщик нагрузки](/ru/main/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+При развертывании для каждого из сервисов будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
 
-Использование балансировщиков [тарифицируется](/ru/main/networks/vnet/tariffs).
+Использование балансировщиков [тарифицируется](/ru/networks/vnet/tariffs).
 
 </warn>
 
