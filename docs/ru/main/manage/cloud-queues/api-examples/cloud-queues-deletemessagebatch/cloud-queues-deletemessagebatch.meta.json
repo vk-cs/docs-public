@@ -1,0 +1,13 @@
+{
+  "title": "DeleteMessageBatch",
+  "pageDescription": "Примеры запроса и ответа для метода DeleteMessageBatch.",
+  "shortDescription": "",
+  "metaTitle": "DeleteMessageBatch — VK Cloud",
+  "metaDescription": "Запрос удаляет до десяти сообщений из указанной очереди. Примеры запроса и ответа для метода DeleteMessageBatch.",
+  "sectionTitle": "DeleteMessageBatch",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 7,
+  "uuid": "d1e5a595-4f63-4660-b7c2-500738537394"
+}
