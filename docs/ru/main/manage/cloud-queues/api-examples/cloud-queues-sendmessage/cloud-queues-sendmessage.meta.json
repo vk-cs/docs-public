@@ -1,0 +1,13 @@
+{
+  "title": "SendMessage",
+  "pageDescription": "Примеры запроса и ответа для метода SendMessage.",
+  "shortDescription": "",
+  "metaTitle": "SendMessage — VK Cloud",
+  "metaDescription": "Доставляет сообщение в указанную очередь. Примеры запроса и ответа для метода SendMessage.",
+  "sectionTitle": "SendMessage",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 17,
+  "uuid": "801d162d-ba66-4160-a23e-1666260e53c2"
+}
