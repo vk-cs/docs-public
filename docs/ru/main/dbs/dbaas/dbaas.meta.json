@@ -1,11 +1,11 @@
 {
     "title": "Базы данных",
-    "pageDescription": "VK Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Postgres Pro, Greenplum. Базы доступны в single, master-slave и кластерных конфигурациях. Использование сервиса снимает с вас нагрузку по администрированию баз данных.",
+    "pageDescription": "VK Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Postgres Pro, Tarantool, Greenplum. Базы доступны в single, master-slave и кластерных конфигурациях. Использование сервиса снимает с вас нагрузку по администрированию баз данных.",
     "shortDescription": "Управляемые и масштабируемые облачные базы данных",
     "metaTitle": "Базы данных — VK Cloud",
-    "metaDescription": "VK Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB,",
+    "metaDescription": "VK Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Tarantool",
     "sectionTitle": "Базы данных",
-    "markdown": "VK Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Postgres Pro, Greenplum. Базы доступны в single, master-slave и кластерных конфигурациях. Использование сервиса снимает с вас нагрузку по администрированию баз данных.",
+    "markdown": "VK Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Postgres Pro,Tarantool, Greenplum. Базы доступны в single, master-slave и кластерных конфигурациях. Использование сервиса снимает с вас нагрузку по администрированию баз данных.",
     "icon": "",
     "weight": 7,
     "infobarItems": [
@@ -38,6 +38,11 @@
         "text": "Redis",
         "icon": "/docs/_docs/ru/main/dbs/dbaas/assets/icon.svg",
         "link": "../../dbs/dbaas/types/redis"
+      },
+      {
+        "text": "Tarantool",
+        "icon": "/docs/_docs/ru/main/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/tarantool"
       }],
     "uuid": "93dd09ce-09eb-4af0-807e-ea909d8c6588"
 }
