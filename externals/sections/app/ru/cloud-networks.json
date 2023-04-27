@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/networks/vnet/start"
+                    "link": "docs/ru/main/networks/vnet/quick-start"
                 },
                 {
                     "link": "docs/ru/main/networks/vnet"
