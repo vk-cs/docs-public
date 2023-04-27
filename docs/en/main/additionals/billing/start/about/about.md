@@ -8,7 +8,12 @@ You can view the cost details and set a monthly spending limit for each of your 
 
 ## Billing of disabled VMs
 
-Funds are debited every minute from working entities (virtual machines, clusters). If the entity data is determined that write-offs continue only for the use of licenses (Windows and RDS, if activated) and leased disk space, as well as for storing existing backups.
+Money is debited on a per-minute basis for the working entities (virtual machines, clusters). If these entities are stopped, charges continue only for:
+
+- license usage (Windows and RDS, if activated);
+- leased disk space;
+- storage of existing backups;
+- [public IP addresses](/en/networks/vnet/tariffs#what-is-charged).
 
 ## Disable services and delete project data
 
