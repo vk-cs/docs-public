@@ -5,9 +5,9 @@ To create a database, go to the "[Database instances](https://mcs.mail.ru/app/se
 
 <warn>
 
-When creating the MySQL, PostgreSQL, Postgres Pro Enterprise, Postgres Pro Enterprise 1C database instances in **the cluster configuration**, a [service load balancer](/en/main/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created.
+When creating the MySQL, PostgreSQL, Postgres Pro Enterprise, Postgres Pro Enterprise 1C database instances in **the cluster configuration**, a [service load balancer](/en/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created.
 
-Usage of this load balancer is [charged](/en/main/networks/vnet/tariffs).
+Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
 </warn>
 
