@@ -1,0 +1,13 @@
+{
+  "title": "CreateQueue",
+  "pageDescription": "Примеры запроса и ответа для метода CreateQueue.",
+  "shortDescription": "",
+  "metaTitle": "CreateQueue — VK Cloud",
+  "metaDescription": "Запрос создает новую стандартную очередь или очередь FIFO. Примеры запроса и ответа для метода CreateQueue.",
+  "sectionTitle": "CreateQueue",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5,
+  "uuid": "76b4e05e-ee69-477a-8101-fd57002699e3"
+}

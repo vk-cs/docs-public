@@ -1,0 +1,13 @@
+{
+  "title": "AddPermission",
+  "pageDescription": "Примеры запроса и ответа для метода AddPermission",
+  "shortDescription": "",
+  "metaTitle": "AddPermission — VK Cloud",
+  "metaDescription": "Примеры запроса и ответа для метода AddPermission. Добавляет разрешение в очередь для определенного участника.",
+  "sectionTitle": "AddPermission",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "07b7bfb5-4231-466e-af01-5ec6b2780bac"
+}

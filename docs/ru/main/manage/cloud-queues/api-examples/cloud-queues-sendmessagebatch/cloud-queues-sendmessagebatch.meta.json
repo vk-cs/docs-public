@@ -1,0 +1,13 @@
+{
+  "title": "SendMessageBatch",
+  "pageDescription": "Примеры запроса и ответа для метода SendMessageBatch.",
+  "shortDescription": "",
+  "metaTitle": "SendMessageBatch — VK Cloud",
+  "metaDescription": "Доставляет до десяти сообщений в указанную очередь. Примеры запроса и ответа для метода SendMessageBatch.",
+  "sectionTitle": "SendMessageBatch",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 18,
+  "uuid": "b0e2ac3f-5bd1-45cb-afae-e00bb9708598"
+}

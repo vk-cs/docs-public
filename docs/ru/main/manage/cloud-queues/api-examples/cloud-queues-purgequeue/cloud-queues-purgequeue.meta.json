@@ -1,0 +1,13 @@
+{
+  "title": "PurgeQueue",
+  "pageDescription": "Примеры запроса и ответа для метода PurgeQueue.",
+  "shortDescription": "",
+  "metaTitle": "PurgeQueue — VK Cloud",
+  "metaDescription": "Удаляет сообщения из очереди, указанной параметром QueueURL. Примеры запроса и ответа для метода PurgeQueue.",
+  "sectionTitle": "PurgeQueue",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 14,
+  "uuid": "e011bfc0-9bd6-4288-a69f-63f85d509a2e"
+}

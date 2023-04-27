@@ -1,0 +1,13 @@
+{
+  "title": "ChangeMessageVisibilityBatch",
+  "pageDescription": "Примеры запроса и ответа для метода ChangeMessageVisibilityBatch.",
+  "shortDescription": "",
+  "metaTitle": "ChangeMessageVisibilityBatch — VK Cloud",
+  "metaDescription": "Запрос изменяет тайм-аут видимости сразу нескольких сообщений. Примеры запроса и ответа для метода ChangeMessageVisibilityBatch.",
+  "sectionTitle": "ChangeMessageVisibilityBatch",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "05ab043b-1d48-48cd-9904-6417a1dc06b6"
+}

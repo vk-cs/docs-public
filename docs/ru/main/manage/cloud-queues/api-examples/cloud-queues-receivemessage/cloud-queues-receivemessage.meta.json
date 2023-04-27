@@ -1,0 +1,13 @@
+{
+  "title": "ReceiveMessage",
+  "pageDescription": "Примеры запроса и ответа для метода ReceiveMessage.",
+  "shortDescription": "",
+  "metaTitle": "ReceiveMessage — VK Cloud",
+  "metaDescription": "Извлекает одно или несколько сообщений (до 10) из указанной очереди. Примеры запроса и ответа для метода ReceiveMessage.",
+  "sectionTitle": "ReceiveMessage",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 15,
+  "uuid": "519e60bc-5700-420c-b503-1a9e97bc6da0"
+}
