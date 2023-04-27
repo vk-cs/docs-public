@@ -1,0 +1,13 @@
+{
+  "title": "SetQueueAttributes",
+  "pageDescription": "Примеры запроса и ответа для метода SetQueueAttributes.",
+  "shortDescription": "",
+  "metaTitle": "SetQueueAttributes — VK Cloud",
+  "metaDescription": "Устанавливает значение одного или нескольких атрибутов очереди. Примеры запроса и ответа для метода SetQueueAttributes.",
+  "sectionTitle": "SetQueueAttributes",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 19,
+  "uuid": "a67cbff2-e496-4c83-ac8b-6b6fc580e8e4"
+}
