@@ -25,6 +25,11 @@
         "link": "../../dbs/dbaas/types/mysql"
       },
       {
+        "text": "OpenSearch",
+        "icon": "/docs/_docs/ru/main/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/opensearch"
+      },
+      {
         "text": "PostgreSQL",
         "icon": "/docs/_docs/ru/main/dbs/dbaas/assets/icon.svg",
         "link": "../../dbs/dbaas/types/postgresql"
