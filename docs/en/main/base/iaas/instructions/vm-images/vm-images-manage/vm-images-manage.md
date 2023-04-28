@@ -99,7 +99,7 @@ The parameters of the image import command depend on the need for backup support
    openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <image file path> <image name>
    ```
 
-- If support is needed, add the parameter `--property hw_qemu_guest_agent=yes` to the command above.
+- If support is needed, add parameters `--property hw_qemu_guest_agent=yes --property os_require_quiesce=yes` to the command above.
 
 </tabpanel>
 </tabs>
