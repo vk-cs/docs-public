@@ -18,7 +18,7 @@ VM image tags are divided into:
 | `os_version` | Version of the guest OS inside the VM | |
 | `mcs_os_version` | The version of the guest OS inside the VM. Used for sorting in the personal account | |
 | `os_admin_user` | The user is inside the guest OS with administrator rights; the password can be set via [personal account](../../vm/vm-connect) | If `os_type: windows` then value is `Administrator`, `root` otherwise |
-| `os_require_quiesce` | The flag responsible for freezing the file system before taking snapshots of attached disks. If `True`, then if the file system freezes unsuccessfully, the snapshot creation operation will be canceled | `False` |
+| `os_require_quiesce` | The flag responsible for freezing the file system before taking snapshots of attached disks. If `yes`, then if the file system freezes unsuccessfully, the snapshot creation operation will be canceled | `no` |
 | `hw_qemu_guest_agent` | A sign of the presence of a QEMU agent inside the guest OS. If `True`, it makes available the possibility of changing the user's password and freezing the file system for backup | `False` |
 | `mcs_name` | The name of the image that is displayed to the user of the personal account | |
 
@@ -450,7 +450,7 @@ If the required OS is not in the table, use the library [libosinfo](https://libo
      Example:
   
      ```shell
-     openstack image set --property os_type="windows" --property os_distro="win2k16" --property os_require_quiesce="yes" --property  hw_vif_model="virtio" 7c81ffd7-199d-4428-8767-8120fa1b3aae
+     openstack image set --property os_type="windows" --property os_distro="win2k16" --property os_require_quiesce="yes" --property hw_vif_model="virtio" 7c81ffd7-199d-4428-8767-8120fa1b3aae
      ```
   
   5. Check the image information:
