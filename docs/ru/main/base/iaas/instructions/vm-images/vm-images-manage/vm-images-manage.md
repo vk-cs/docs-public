@@ -99,7 +99,7 @@
    openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <путь к файлу образа> <название образа>
    ```
 
-- Если поддержка нужна, добавьте параметр `--property hw_qemu_guest_agent=yes` в команду выше.
+- Если поддержка нужна, добавьте параметры `--property hw_qemu_guest_agent=yes --property os_require_quiesce=yes` в команду выше.
 
 </tabpanel>
 </tabs>
