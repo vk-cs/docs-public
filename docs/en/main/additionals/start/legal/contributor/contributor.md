@@ -3,21 +3,21 @@ Moscow, Russian Federation
 
 ## 1. Terms and Definitions
 
-1.“VK” means VK LLC, a legal entity registered under the laws of the Russian Federation, OGRN 1027739850962, located at: 39 Leningradsky Avenue, bldg. 79, Moscow, 125167.
+1. “VK” means VK LLC, a legal entity registered under the laws of the Russian Federation, OGRN 1027739850962, located at: 39 Leningradsky Avenue, bldg. 79, Moscow, 125167.
 
-2.“GitHub” is an Internet service, available at https://github.com/, used for hosting and joint development of IT projects.
+2. “GitHub” is an Internet service, available at https://github.com/, used for hosting and joint development of IT projects.
 
-3.“Contributions” mean the independent results of intellectual activity (including, but not limited to, source code, libraries, design objects, computer programs, databases or components thereof, texts, documentation, user instructions) provided by the Contributor to VK hereunder.
+3. “Contributions” mean the independent results of intellectual activity (including, but not limited to, source code, libraries, design objects, computer programs, databases or components thereof, texts, documentation, user instructions) provided by the Contributor to VK hereunder.
 
-4.“Contributor” means, where the Contributor is an individual acting on his/her own behalf, an individual who has the necessary legal capacity to enter into and perform this Agreement; and where the Contribution is provided by an individual on behalf of a legal entity or an individual entrepreneur (including on behalf of the employer) the respective legal entity or individual entrepreneur.
+4. “Contributor” means, where the Contributor is an individual acting on his/her own behalf, an individual who has the necessary legal capacity to enter into and perform this Agreement; and where the Contribution is provided by an individual on behalf of a legal entity or an individual entrepreneur (including on behalf of the employer) the respective legal entity or individual entrepreneur.
 
-5.“Derivative Work” means any modification, improvement of, work that is based on (or derived from) the Contribution (including translation) made by VK or a third party for VK.
+5. “Derivative Work” means any modification, improvement of, work that is based on (or derived from) the Contribution (including translation) made by VK or a third party for VK.
 
-6.“Affiliates” mean legal entities who can directly or indirectly control the operations of VK or other members of the VK group, or legal entities whose operations VK can control directly or indirectly.
+6. “Affiliates” mean legal entities who can directly or indirectly control the operations of VK or other members of the VK group, or legal entities whose operations VK can control directly or indirectly.
 
-7.“Agreement” means this license agreement entered into as set out in Section 2 hereof.
+7. “Agreement” means this license agreement entered into as set out in Section 2 hereof.
 
-8.“Party” means either party to this Agreement.
+8. “Party” means either party to this Agreement.
 
 ## 2. Entry into Force
 
@@ -37,25 +37,25 @@ Moscow, Russian Federation
 
 3.4. VK may use the Contributions at its own discretion and without any prior approval by the Contributor or any third party, in whole or in part, in any way not contrary to law, in particular, but not limited to:
 
-3.4.1.reproduce the Contributions in any way, including but not limited to by recording to the computer; install, copy, or launch the Contributions;
+3.4.1. reproduce the Contributions in any way, including but not limited to by recording to the computer; install, copy, or launch the Contributions;
 
-3.4.2.remake, update or modify the Contributions without any limitations, create other intellectual property objects based on or by using the Contributions, including derivative works or composite works; translate the Contributions into other languages, including other programming languages;
+3.4.2. remake, update or modify the Contributions without any limitations, create other intellectual property objects based on or by using the Contributions, including derivative works or composite works; translate the Contributions into other languages, including other programming languages;
 
-3.4.3.use the Contributions with the business name, any trademark (service mark) or logo of VK or its Affiliates or other designation at VK’s discretion;
+3.4.3. use the Contributions with the business name, any trademark (service mark) or logo of VK or its Affiliates or other designation at VK’s discretion;
 
-3.4.4.provide the Contributions and the right to use the Contributions (sublicense) to any third party, either directly or as part of any other product/service;
+3.4.4. provide the Contributions and the right to use the Contributions (sublicense) to any third party, either directly or as part of any other product/service;
 
-3.4.5.distribute the Contributions through sale, distribute the Contributions in any other way not contrary to law, including to import the Contributions;
+3.4.5. distribute the Contributions through sale, distribute the Contributions in any other way not contrary to law, including to import the Contributions;
 
-3.4.6.display in public and make the Contributions available to public;
+3.4.6. display in public and make the Contributions available to public;
 
-3.4.7.disassemble, decompile (convert object code into source code) or reverse engineer the Contributions or their components (if the Contribution is a computer program, database, software package or similar object);
+3.4.7. disassemble, decompile (convert object code into source code) or reverse engineer the Contributions or their components (if the Contribution is a computer program, database, software package or similar object);
 
-3.4.8.make alterations, deletions or additions to the Contributions, add commentary, illustrations or any explanations when using the Contributions, including those affecting the integrity of perception;
+3.4.8. make alterations, deletions or additions to the Contributions, add commentary, illustrations or any explanations when using the Contributions, including those affecting the integrity of perception;
 
-3.4.9.use the Contributions without mentioning the author’s name and/or pseudonym (anonymously);
+3.4.9. use the Contributions without mentioning the author’s name and/or pseudonym (anonymously);
 
-3.4.10.make the Contributions public, i.e. take or consent to the actions that make the Contributions available to public for the first time.
+3.4.10. make the Contributions public, i.e. take or consent to the actions that make the Contributions available to public for the first time.
 
 3.5. The Parties agree that VK shall have a full exclusive right to the Derivative Works and may use them in any way, for any purpose and in any form without any limitations or the consent of the Contributor or any third party.
 
@@ -71,15 +71,15 @@ Moscow, Russian Federation
 
 4.1. The Contributor hereby represents and warrant to VK that as at the date of this Agreement and each date of the Contribution provision:
 
-4.1.1.The Contributor has full legal capacity and has all the rights required to execute and perform this Agreement. Where the Contributor is a legal entity or an individual entrepreneur, the Contributor warrants to VK that the individual who acts on its behalf to execute and performs this Agreement has all the required powers and authorities to execute and perform this Agreement.
+4.1.1. The Contributor has full legal capacity and has all the rights required to execute and perform this Agreement. Where the Contributor is a legal entity or an individual entrepreneur, the Contributor warrants to VK that the individual who acts on its behalf to execute and performs this Agreement has all the required powers and authorities to execute and perform this Agreement.
 
-4.1.2.The Contributions provided by the Contributor to VK are developed (created) by the Contributor, except for the Contributions or parts of Contributions, the exclusive rights to which belong to other parties (the Rightholders), but which, by the direct expression of will of such Rightholders, may be distributed freely without the Rightholders approval or payment of fees (free libraries, etc.), and the Contributor uses (and provides to VK) such Contributions legally;
+4.1.2. The Contributions provided by the Contributor to VK are developed (created) by the Contributor, except for the Contributions or parts of Contributions, the exclusive rights to which belong to other parties (the Rightholders), but which, by the direct expression of will of such Rightholders, may be distributed freely without the Rightholders approval or payment of fees (free libraries, etc.), and the Contributor uses (and provides to VK) such Contributions legally;
 
-4.1.3.The Contributions are not encumbered with any rights of third parties, including the rights of the Contributor's employer;
+4.1.3. The Contributions are not encumbered with any rights of third parties, including the rights of the Contributor's employer;
 
-4.1.4.The Contributor has the consent of the authors and Rightholders of the results of intellectual activity included in the Contributions, to use them in all the ways specified in this Agreement; and VK is not prevented from the use of the Contributions which include such intellectual property;
+4.1.4. The Contributor has the consent of the authors and Rightholders of the results of intellectual activity included in the Contributions, to use them in all the ways specified in this Agreement; and VK is not prevented from the use of the Contributions which include such intellectual property;
 
-4.1.5.the use of the Contributions under this Agreement shall not infringe any intellectual property rights or other rights or legitimate interests of third parties, including the Contributor employers.
+4.1.5. the use of the Contributions under this Agreement shall not infringe any intellectual property rights or other rights or legitimate interests of third parties, including the Contributor employers.
 
 The Contributor agrees and acknowledges that VK unconditionally relies on the representations and warranties given by the Contributor in Section 4.1 hereof, and such representations and warranties are material for VK.
 
@@ -105,6 +105,6 @@ The Contributor agrees and acknowledges that VK unconditionally relies on the re
 
 9.2. If any provision of this Agreement shall be found invalid or unenforceable, such invalidity or unenforceability shall not affect the validity and unenforceability of other provision hereof or generally this Agreement.
 
-9.3. This Agreement is made in Russian and English languages. The Russian version is available at: https://mcs.mail.ru/docs/additionals/start/legal/contributor. The English version is available at: https://mcs.mail.ru/docs/en/additionals/start/legal/contributor. In the event of any discrepancy between the provisions of the Russian and English versions hereof, the Russian version shall prevail.
+9.3. This Agreement is made in Russian and English languages. The Russian version is available at: [https://mcs.mail.ru/docs/additionals/start/legal/contributor](/ru/additionals/start/legal/contributor "change-lang"). The English version is available at: [https://mcs.mail.ru/docs/en/additionals/start/legal/contributor](/en/additionals/start/legal/contributor). In the event of any discrepancy between the provisions of the Russian and English versions hereof, the Russian version shall prevail.
 
 Revision: from 09.26.2022
