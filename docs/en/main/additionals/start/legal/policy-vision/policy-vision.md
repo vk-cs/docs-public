@@ -1,20 +1,20 @@
-This License Agreement (hereinafter the "Agreement") governs the relationship between Mail.Ru LLC (OGRN 1027739850962, Russia, 125167, Moscow, Leningradsky Prospekt 39, p. 79), hereinafter referred to as the "Licensor", and you , hereinafter referred to as the "Licensee", by using the computer program "Vision" (hereinafter referred to as the "Program"), on the following conditions:
+This License Agreement (hereinafter the "Agreement") governs the relationship between Mail.Ru LLC (OGRN 1027739850962, Russia, 125167, Moscow, Leningradsky Prospekt 39, p. 79), hereinafter referred to as the "Licensor", and you, hereinafter referred to as the "Licensee", by using the computer program "Vision" (hereinafter referred to as the "Program"), on the following conditions:
 
 ## 1\. Terms and definitions
 
-Licensor - Mail.Ru limited liability company, which is a party to this Agreement, which grants the Licensees the right to use the Program under the terms of a non-exclusive license.
+**Licensor** — Mail.Ru limited liability company, which is a party to this Agreement, which grants the Licensees the right to use the Program under the terms of a non-exclusive license.
 
-Licensee is a person who has the necessary legal capacity to enter into this Agreement, who has a sufficient scope of rights, who, in accordance with this Agreement, is granted the right to use the Program within the limits provided for in this Agreement. The Licensee is a Party to this Agreement.
+**Licensee** is a person who has the necessary legal capacity to enter into this Agreement, who has a sufficient scope of rights, who, in accordance with this Agreement, is granted the right to use the Program within the limits provided for in this Agreement. The Licensee is a Party to this Agreement.
 
-API is an application programming interface that allows you to receive the Licensor's Program and continue to use it by the Licensee on the terms set forth in this Agreement.
+**API** is an application programming interface that allows you to receive the Licensor's Program and continue to use it by the Licensee on the terms set forth in this Agreement.
 
-Program - A computer program developed by the Licensor using machine learning methods.
+**Program** — a computer program developed by the Licensor using machine learning methods.
 
 Other applicable terms and definitions are contained in the Terms of Use.
 
 ## 2\. Terms of accession to this Agreement
 
-2.1. The condition for using the Program is full and unconditional acceptance by the Licensee of the provisions of this Agreement. Access to the Program is carried out within the Platform, and therefore the condition for obtaining a license is the Licensee's consent to the Terms of Use of the VK Cloud platform (hereinafter referred to as the Terms of Use and the Platform), which are available at https://help.mail.ru/mcs/legal/vision_termofuse, as well as the Licensor's Privacy Policy available at https://help.mail.ru/mcs/legal/privacy (hereinafter collectively referred to as the "Applicable Rules"). In the event of a conflict between the provisions of the Terms of Use and this Agreement, the provisions of this Agreement shall prevail. The Terms of Use apply to the relations of the Parties that are not regulated by this Agreement.
+2.1. The condition for using the Program is full and unconditional acceptance by the Licensee of the provisions of this Agreement. Access to the Program is carried out within the Platform, and therefore the condition for obtaining a license is the Licensee's consent to the Terms of Use of the VK Cloud platform (hereinafter referred to as the Terms of Use and the Platform), which are available at [https://help.mail.ru/mcs/legal/vision_termofuse](/en//additionals/start/legal/policy-vision), as well as the Licensor's Privacy Policy available at [https://help.mail.ru/mcs/legal/privacy](/en/additionals/start/legal/policy-privacy) (hereinafter collectively referred to as the "Applicable Rules"). In the event of a conflict between the provisions of the Terms of Use and this Agreement, the provisions of this Agreement shall prevail. The Terms of Use apply to the relations of the Parties that are not regulated by this Agreement.
 
 2.2. With each access and / or actual use of the Program, the Licensee agrees with the provisions of this Agreement, as well as with other
 
@@ -22,7 +22,7 @@ Applicable rules, as amended, which were in effect at the time of the actual use
 
 2.3. The applicable rules, including this Agreement, may be changed by the Licensor at any time without any prior notice to the Licensee. Any such changes come into force on the day following the day of publication of such changes in the "Vision" section of the Licensee's Personal Account. Licensee agrees to independently check the Applicable Rules for changes. Failure by the Licensee to familiarize himself with the Applicable Rules and / or the revised edition cannot serve as a basis for the Licensee's failure to fulfill his obligations related to the use of the Platform and / or the Program. The Licensee has the right to refuse to accept the changes and additions made by the Licensor to the Applicable Rules, which means the Licensee's refusal to use the Platform and / or the Program.
 
-2.4. To use the Program and gain access to it through the API, the Licensee undertakes to ensure that the hardware and software of the Licensee comply with the requirements of the Licensor, which are available on the page at the link https://help.mail.ru/vision/api and may be updated by the Licensor from time to time.
+2.4. To use the Program and gain access to it through the API, the Licensee undertakes to ensure that the hardware and software of the Licensee comply with the requirements of the Licensor, which are available on the page at the link [https://help.mail.ru/vision/api](/en/ml/vision) and may be updated by the Licensor from time to time.
 
 ## 3\. Subject of the agreement
 
@@ -58,9 +58,7 @@ Applicable rules, as amended, which were in effect at the time of the actual use
 
 5.2.1. comply with the terms of this Agreement without any restrictions;
 
-5.2.2. ensure that only individuals who are employees of the Licensee or persons who have entered into civil contracts with the Licensee who need access to the Program solely for the purpose of performing labor functions or obligations under a civil law contract (hereinafter - end users) have access to the Program. At the same time, the Licensee guarantees that end users have been familiar with the terms of this Agreement and undertake to comply with their provisions. The licensee is responsible for illegal actions committed
-
-end users using the Licensee's Personal Account as their own.
+5.2.2. ensure that only individuals who are employees of the Licensee or persons who have entered into civil contracts with the Licensee who need access to the Program solely for the purpose of performing labor functions or obligations under a civil law contract (hereinafter — end users) have access to the Program. At the same time, the Licensee guarantees that end users have been familiar with the terms of this Agreement and undertake to comply with their provisions. The licensee is responsible for illegal actions committed end users using the Licensee's Personal Account as their own.
 
 5.2.3. follow all instructions and instructions of the Licensor. If the Licensee fails to comply with such instructions, the Licensor has the right to suspend, limit, terminate the granting of the Licensee the rights to use the Program or its individual functions;
 
