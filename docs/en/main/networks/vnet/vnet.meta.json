@@ -8,8 +8,16 @@
   "markdown": "VK Cloud Networks manages the network access of virtual machines, allows you to add load balancers to them, combine them in networks and subnets, configure routers and firewalls. You can set up VPN, CDN, Private DNS. Visualization of the network topology is available.",
   "icon": "",
   "weight": 12,
-  "infobarItems": null,
+  "infobarItems": [
+    {
+      "text": "Managing with Terraform",
+      "icon": "/docs/_docs/en/main/manage/terraform/assets/icon.svg",
+      "link": "../../manage/terraform/use-cases/vnet"
+    }],
   "uuid": "1899f5d0-4906-43a2-9757-9e9e2f0e6b2e",
-  "additionalUuids": ["35abc61a-c75c-4162-82b0-fb2f6b162a33", "f9dfbf71-7e47-4eaf-bc5a-5b31fc4a259c"]
+  "additionalUuids": [
+    "35abc61a-c75c-4162-82b0-fb2f6b162a33",
+    "f9dfbf71-7e47-4eaf-bc5a-5b31fc4a259c"
+  ]
 
 }

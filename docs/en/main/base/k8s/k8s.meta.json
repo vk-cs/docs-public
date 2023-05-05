@@ -7,6 +7,11 @@
   "sectionTitle": "Containers",
   "markdown": "The service has CNCF certification and is compatible with the standard Kubernetes API. Thanks to autoscaling, applications on Cloud Containers get additional power instantly during peak loads and reduce consumption when loads drop. Autoscaling saves up to 60% on computation.",
   "icon": "",
-  "infobarItems": null,
+  "infobarItems": [
+    {
+      "text": "Managing with Terraform",
+      "icon": "/docs/_docs/en/main/manage/terraform/assets/icon.svg",
+      "link": "../../manage/terraform/use-cases/k8s"
+    }],
   "uuid": "0f729ff3-2aa9-47e6-a577-2cb415acdfc9"
 }

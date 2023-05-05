@@ -10,7 +10,7 @@
   "weight": 1,
   "infobarItems": [
     {
-      "text": "Использование Terraform",
+      "text": "Управление с помощью Terraform",
       "icon": "/docs/_docs/ru/main/manage/terraform/assets/icon.svg",
       "link": "../../manage/terraform/use-cases/iaas"
     }],

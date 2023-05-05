@@ -10,7 +10,7 @@
   "weight": 1,
   "infobarItems": [
     {
-      "text": "Using Terraform",
+      "text": "Managing with Terraform",
       "icon": "/docs/_docs/en/main/manage/terraform/assets/icon.svg",
       "link": "../../manage/terraform/use-cases/iaas"
     }],
