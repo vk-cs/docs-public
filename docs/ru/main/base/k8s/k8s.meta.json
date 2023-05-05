@@ -8,6 +8,11 @@
   "markdown": "Сервис имеет сертификацию CNCF и совместим со стандартным Kubernetes API. Благодаря автоматическому масштабированию (autoscaling), приложения на Cloud Containers моментально получают дополнительные мощности в момент пиковых нагрузки и снижают потребление при ее падении. Автомасштабирование позволяет экономить до 60% на вычислениях.",
   "icon": "",
   "weight": 4,
-  "infobarItems": null,
+  "infobarItems": [
+    {
+      "text": "Управление с помощью Terraform",
+      "icon": "/docs/_docs/ru/main/manage/terraform/assets/icon.svg",
+      "link": "../../manage/terraform/use-cases/k8s"
+    }],
   "uuid": "61da57b5-e215-4762-9f78-46e7445560da"
 }
