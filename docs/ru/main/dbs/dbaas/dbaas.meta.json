@@ -48,6 +48,11 @@
         "text": "Tarantool",
         "icon": "/docs/_docs/ru/main/dbs/dbaas/assets/icon.svg",
         "link": "../../dbs/dbaas/types/tarantool"
+      },
+      {
+        "text": "Управление с помощью Terraform",
+        "icon": "/docs/_docs/ru/main/manage/terraform/assets/icon.svg",
+        "link": "../../manage/terraform/use-cases/dbaas"
       }],
     "uuid": "93dd09ce-09eb-4af0-807e-ea909d8c6588"
 }
