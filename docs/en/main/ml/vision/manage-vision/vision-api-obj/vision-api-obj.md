@@ -50,7 +50,11 @@ Possible values ​​for `mode`:
 
 Images are passed in the body of the request, the values ​​of the name field must match those passed in images.
 
-The maximum number of images in one request is 100. The maximum size of each image must not exceed 4 MB.
+<warn>
+
+The method is subject to [restrictions](../../vision-limits#image-processing)
+
+</warn>
 
 ## Request example
 
@@ -124,7 +128,7 @@ curl -X 'POST' \
 ## Response example
 
 <details>
-  <summary>Ответ в формате JSON</summary>
+  <summary>JSON response</summary>
 
 ```json
 {
