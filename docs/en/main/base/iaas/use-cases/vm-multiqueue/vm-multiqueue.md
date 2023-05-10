@@ -49,7 +49,7 @@ This option is used when the VM has already been created at the time of enabling
 
 1. [Get the VM UUID](../../instructions/vm/vm-manage#getting-a-virtual-machine-id) через CLI или личный кабинет VK Cloud.
 1. Contact [technical support](/en/contacts) with a request to connect multiqueue and specifying the UUID of the target VM.
-1. After successfully processing the request from technical support [reboot](../../instructions/vm/vm-manage#starting-stopping-reboot-the-vm) VM.
+1. After successfully processing the request from technical support, perform a [forced VM reboot](../../instructions/vm/vm-manage#forced-vm-reboot).
 
 </tabpanel>
 </tabs>
