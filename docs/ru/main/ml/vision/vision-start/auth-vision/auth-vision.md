@@ -14,8 +14,8 @@ curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth\_provider="mcs&oa
 
 Сервер авторизации. В Vision доступна авторизация через VK Cloud и OAUTH.MAIL.RU.
 
-- **oauth_provider=mcs** — авторизация доступная всем клиентам mcs, у которых подключено **Машинное обучение** -> **Vision API**.
-- **oauth_provider=mr** — авторизация через oauth.mail.ru, доступна только для внутренних проектов компании мейл.ру, подробнее о ней можно узнать на [https://o2.mail.ru/docs/](https://o2.mail.ru/docs/).
+- `oauth_provider=mcs` — авторизация доступная всем клиентам mcs, у которых подключено **Машинное обучение** -> **Vision API**.
+- `oauth_provider=mr` — авторизация через oauth.mail.ru, доступна только для внутренних проектов компании VK, подробнее о ней можно узнать на [https://o2.mail.ru/docs/](https://o2.mail.ru/docs/).
 
 ## oauth_token
 
@@ -38,12 +38,12 @@ curl -k -v "https://smarty.mail.ru/api/v1/objects/detect?oauth\_provider="mcs&oa
 
 Для получения этого токена используется протокол [OAuth 2.0](https://ru.wikipedia.org/wiki/OAuth#OAuth_2.0).
 
-Для получения первого **access_token** необходимо отправить запрос на сервер авторизации (см. ниже) с идентификатором клиента mcs (client_id) и секретным ключом (client_secret) из [личного кабинета](https://mcs.mail.ru/app/services/machinelearning/vision/).
+Для получения первого **access_token** необходимо отправить запрос на сервер авторизации (см. ниже) с идентификатором клиента mcs (`client_id`) и секретным ключом (`client_secret`) из [личного кабинета](https://mcs.mail.ru/app/services/machinelearning/vision/).
 
 В ответе от сервера будет получено 2 токена:
 
-- токен доступа (access_token);
-- токен для обновления “протухшего” токена доступа (refresh_token).
+- токен доступа (`access_token`);
+- токен для обновления “протухшего” токена доступа (`refresh_token`).
 
 Первый **access_token** — многоразовый и короткоживущий, он используется для авторизации в запросе на распознавание картинок. Второй, **refresh_token**, используется для обновления access токена. У **refresh_token** есть два свойства, обратные **access** токену: он долгоживущий, но не многоразовый.
 

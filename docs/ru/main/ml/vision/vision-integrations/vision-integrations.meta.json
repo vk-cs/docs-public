@@ -2,12 +2,12 @@
   "title": "Интеграции",
   "pageDescription": "",
   "shortDescription": "Примеры интеграции на Python и PHP",
-  "metaTitle": "Интеграции - VK Cloud",
+  "metaTitle": "Интеграции — VK Cloud",
   "metaDescription": "",
   "sectionTitle": "Интеграции",
   "markdown": "Примеры интеграции на Python и PHP.",
   "icon": "",
   "infobarItems": null,
-  "weight": 3,
+  "weight": 5,
   "uuid": "df5b6a0d-0894-406e-8d91-9ecb41b170e5"
 }
