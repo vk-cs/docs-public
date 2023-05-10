@@ -46,7 +46,11 @@ A client can have up to 10 different spaces. `Space` values ​​range from `0`
 | name | string | Filenames to match files in request and response (required non-empty) |
 | person_id | int | ID associated with the person in the photo (required non-empty) |
 
-Images are passed in the body of the request, the values ​​of the name field must match those passed in `images`. The maximum number of images in one request is 100. The maximum size of each image must not exceed 4 MB.
+<warn>
+
+The method is subject to [restrictions](../../vision-limits#image-processing)
+
+</warn>
 
 ### Request example
 
@@ -308,7 +312,13 @@ For a description of the space parameter, see the section of the [Set](/ml/visio
 | -------- | ------ | ------------- |
 | name | string | Filenames to match files in request and response (required non-empty) |
 
-Images are passed in the body of the request, the values ​​of the name field must match those passed in `images`. The maximum number of images in one request is 100. The maximum size of each image must not exceed 4 MB.
+Images are passed in the body of the request, the values ​​of the name field must match those passed in `images`.
+
+<warn>
+
+The method is subject to [restrictions](../../vision-limits#image-processing)
+
+</warn>
 
 ### Request example
 
@@ -704,7 +714,13 @@ For a description of the space parameter, see the section of the [Set](/ml/visio
 | name | string | Filenames to match files in request and response (required non-empty) |
 | person_id | int | ID associated with the person in the photo (required non-empty) |
 
-Images are passed in the body of the request, the values ​​of the name field must match those passed in `images`. The maximum number of images in one request is100. The maximum size of each image must not exceed 4MB.
+Images are passed in the body of the request, the values ​​of the name field must match those passed in `images`.
+
+<warn>
+
+The method is subject to [restrictions](../../vision-limits#image-processing)
+
+</warn>
 
 ### Request example
 
