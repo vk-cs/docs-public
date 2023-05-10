@@ -34,7 +34,11 @@ Request parameters are passed in JSON format in the request body with `name="met
 
 Images are passed in the body of the request, the values ​​of the name field must match those passed in images.
 
-The maximum number of images in one request is 100. The maximum size of each image must not exceed 4MB.
+<warn>
+
+The method is subject to [restrictions](../../vision-limits#image-processing)
+
+</warn>
 
 ## Request example
 
@@ -819,7 +823,7 @@ Request example:
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/text/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/text/recognize?oauth_token=<token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_error_no_face.jpg;type=image/jpeg' \
@@ -857,7 +861,7 @@ Request example:
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/text/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/text/recognize?oauth_token=<token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@empty.jpg;type=image/jpeg' \
@@ -888,7 +892,7 @@ Request example:
 
 ```curl
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/text/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/text/recognize?oauth_token=<token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_ok.jpg;type=image/jpeg' \

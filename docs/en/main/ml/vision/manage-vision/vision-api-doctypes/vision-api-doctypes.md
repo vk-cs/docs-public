@@ -31,7 +31,13 @@ Request parameters are passed in JSON format in the request body with `name="met
 | ---------- | -------- | ---------------------------------------------- |
 | name | string | Filenames to match files in request and response (required non-empty) |
 
-Images are passed in the body of the request, the values ​​of the name field must match those passed in images. The maximum number of images in one request is 100. The maximum size of each image must not exceed 4 MB.
+Images are passed in the body of the request, the values ​​of the name field must match those passed in images.
+
+<warn>
+
+The method is subject to [restrictions](../../vision-limits#image-processing)
+
+</warn>
 
 ## Request example
   

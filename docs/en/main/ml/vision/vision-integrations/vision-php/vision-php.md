@@ -1,4 +1,4 @@
-For a detailed example, see the article "[Python integration example](feedback:11789)". In this article, we will execute persons/recognize, persons/set, and persons/delete requests. This will require:
+For a detailed example, see the article "[Python integration example](../vision-py/)". In this article, we will execute persons/recognize, persons/set, and persons/delete requests. This will require:
 
 ```
 sudo apt-get install php5-cli
