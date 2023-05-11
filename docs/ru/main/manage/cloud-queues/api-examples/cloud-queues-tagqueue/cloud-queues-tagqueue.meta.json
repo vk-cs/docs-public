@@ -2,7 +2,7 @@
   "title": "TagQueue",
   "pageDescription": "Примеры запроса и ответа для метода TagQueue.",
   "shortDescription": "",
-  "metaTitle": "TagQueue — VK Cloud",
+  "metaTitle": "TagQueue",
   "metaDescription": "Добавьте теги распределения затрат в указанную очередь VK Cloud SQS. Примеры запроса и ответа для метода TagQueue.",
   "sectionTitle": "TagQueue",
   "markdown": "",

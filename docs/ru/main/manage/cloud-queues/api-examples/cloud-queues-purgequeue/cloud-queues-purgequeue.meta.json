@@ -2,7 +2,7 @@
   "title": "PurgeQueue",
   "pageDescription": "Примеры запроса и ответа для метода PurgeQueue.",
   "shortDescription": "",
-  "metaTitle": "PurgeQueue — VK Cloud",
+  "metaTitle": "PurgeQueue",
   "metaDescription": "Удаляет сообщения из очереди, указанной параметром QueueURL. Примеры запроса и ответа для метода PurgeQueue.",
   "sectionTitle": "PurgeQueue",
   "markdown": "",

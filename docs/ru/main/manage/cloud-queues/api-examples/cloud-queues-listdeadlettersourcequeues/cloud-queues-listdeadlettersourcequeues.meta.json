@@ -2,7 +2,7 @@
   "title": "ListDeadLetterSourceQueues",
   "pageDescription": "Примеры запроса и ответа для метода ListDeadLetterSourceQueues.",
   "shortDescription": "",
-  "metaTitle": "ListDeadLetterSourceQueues — VK Cloud",
+  "metaTitle": "ListDeadLetterSourceQueues",
   "metaDescription": "Запрос возвращает список ваших очередей, для которых RedrivePolicy атрибут очереди настроен с помощью очереди недоставленных сообщений. Примеры запроса и ответа для метода ListDeadLetterSourceQueues.",
   "sectionTitle": "ListDeadLetterSourceQueues",
   "markdown": "",

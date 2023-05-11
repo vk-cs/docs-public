@@ -2,7 +2,7 @@
   "title": "LEMP stack (Nginx)",
   "pageDescription": "LEMP — стек технологий по аналогии с LAMP, где вместо Apache используется сервер Nginx.",
   "shortDescription": "LEMP — стек технологий по аналогии с LAMP, где вместо Apache используется сервер Nginx.",
-  "metaTitle": "LEMP stack (Nginx) — VK Cloud",
+  "metaTitle": "LEMP stack (Nginx)",
   "metaDescription": "Nginx [engine x] — это HTTP-сервер и обратный прокси-сервер, почтовый прокси-сервер, а также TCP/UDP прокси-сервер общего назначения",
   "sectionTitle": "LEMP stack (Nginx)",
   "markdown": "",

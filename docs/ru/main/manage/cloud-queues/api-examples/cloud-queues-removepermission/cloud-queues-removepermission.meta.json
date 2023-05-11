@@ -2,7 +2,7 @@
   "title": "RemovePermission",
   "pageDescription": "Примеры запроса и ответа для метода RemovePermission.",
   "shortDescription": "",
-  "metaTitle": "RemovePermission — VK Cloud",
+  "metaTitle": "RemovePermission",
   "metaDescription": "Отменяет все разрешения в политике очереди, соответствующие указанному Label параметру. Примеры запроса и ответа для метода RemovePermission.",
   "sectionTitle": "RemovePermission",
   "markdown": "",

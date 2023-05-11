@@ -1,5 +1,5 @@
 {
-  "title": "Документация по сервисам",
+  "title": "Документация",
   "faqLinks": [
     "docs/ru/main/additionals/start",
     "docs/ru/main/additionals/billing",
@@ -7,5 +7,9 @@
     "docs/ru/main/additionals/start/it-security"
   ],
   "serviceGroupLinks": [],
-  "uuid": "8039e837-cbc5-4f10-8185-59be352f986e"
+  "uuid": "8039e837-cbc5-4f10-8185-59be352f986e",
+  "default": {
+    "metaTitle": "Документация",
+    "metaDescription": "Документация VK Cloud поможет вам с ответом на часто задаваемые вопросы. Здесь вы найдете практические руководства и пошаговые инструкции по работе с облачной платформой."
+  }
 }

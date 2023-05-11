@@ -2,7 +2,7 @@
   "title": "Backup Storage Policies",
   "pageDescription": "This section describes storing and deleting backups on the VK CLoud.",
   "shortDescription": "Storing and deleting backups on the VK CLoud",
-  "metaTitle": "Backup Storage Policies — VK Cloud",
+  "metaTitle": "Backup Storage Policies",
   "metaDescription": "",
   "sectionTitle": "Backup Storage Policies",
   "markdown": "As part of the VK Cloud backup plan, two approaches to storing backups are available: the GFS strategy or limiting the number of backups. The backup strategy can be selected when creating an automatic backup plan or changed in the settings.",

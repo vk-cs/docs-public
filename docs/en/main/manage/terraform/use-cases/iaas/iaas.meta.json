@@ -2,7 +2,7 @@
     "title": "Cloud computing",
     "pageDescription": "Working with cloud computing service using Terraform.",
     "shortDescription": "How to use Terraform to manage cloud computing service objects",
-    "metaTitle": "Cloud computing — VK Cloud",
+    "metaTitle": "Cloud computing",
     "metaDescription": "",
     "sectionTitle": "Cloud computing",
     "markdown": "Working with [cloud computing service](/en/main/base/iaas) using Terraform.",

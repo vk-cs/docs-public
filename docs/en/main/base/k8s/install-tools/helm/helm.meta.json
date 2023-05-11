@@ -2,7 +2,7 @@
     "title": "Installing Helm",
     "pageDescription": "How to install the Helm package manager in the Kubernetes cluster.",
     "shortDescription": "How to install the Helm package manager",
-    "metaTitle": "Installing Helm — VK Cloud",
+    "metaTitle": "Installing Helm",
     "metaDescription": "",
     "sectionTitle": "Installing Helm",
     "markdown": "How to install the Helm package manager in the Kubernetes cluster.",
