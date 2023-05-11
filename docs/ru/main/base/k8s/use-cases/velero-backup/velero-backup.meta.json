@@ -2,7 +2,7 @@
   "title": "Резервное копирование с помощью Velero",
   "pageDescription": "Как использовать Velero для резервного копирования и восстановления ресурсов кластера Kubernetes.",
   "shortDescription": "Как использовать Velero для резервного копирования и восстановления ресурсов кластера Kubernetes",
-  "metaTitle": "Резервное копирование с помощью Velero — VK Cloud",
+  "metaTitle": "Резервное копирование с помощью Velero",
   "metaDescription": "",
   "sectionTitle": "Резервное копирование с помощью Velero",
   "markdown": "Как использовать Velero для резервного копирования и восстановления ресурсов кластера Kubernetes.",

@@ -2,7 +2,7 @@
   "title": "Cluster monitoring",
   "pageDescription": "A Kubernetes cluster can be monitored to track its status. This can help prevent a possible shortage of computing resources or track an incorrect cluster configuration.",
   "shortDescription": "How to track the state of a Kubernetes cluster",
-  "metaTitle": "Cluster monitoring — VK Cloud",
+  "metaTitle": "Cluster monitoring",
   "metaDescription": "",
   "sectionTitle": "Cluster monitoring",
   "markdown": "A Kubernetes cluster can be monitored to track its status. This can help prevent a possible shortage of computing resources or track an incorrect cluster configuration.",

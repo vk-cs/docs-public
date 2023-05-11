@@ -2,7 +2,7 @@
   "title": "Using Gatekeeper",
   "pageDescription": "How to enforce Gatekeeper constraints on Kubernetes resources to comply with corporate policies.",
   "shortDescription": "How to enforce Gatekeeper constraints on Kubernetes resources to comply with corporate policies",
-  "metaTitle": "Using Gatekeeper — VK Cloud",
+  "metaTitle": "Using Gatekeeper",
   "metaDescription": "",
   "sectionTitle": "Using Gatekeeper",
   "markdown": "How to enforce Gatekeeper constraints on Kubernetes resources to comply with corporate policies.",

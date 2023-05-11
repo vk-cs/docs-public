@@ -2,7 +2,7 @@
   "title": "ML Platform",
   "pageDescription": "Этот раздел описывает принципы работы с сервисом ML Platform, созданию и работе с инстансами JupyterHub и MLflow.",
   "shortDescription": "Платформа для полного цикла ML-разработки и совместной работы Data-команд",
-  "metaTitle": "ML Platform — VK Cloud",
+  "metaTitle": "ML Platform",
   "metaDescription": "ML Platform это сервис по созданию и работе с инстансами JupyterHub",
   "sectionTitle": "ML Platform",
   "markdown": "Этот раздел описывает принципы работы с сервисом ML Platform, созданию и работе с инстансами JupyterHub и MLflow.",

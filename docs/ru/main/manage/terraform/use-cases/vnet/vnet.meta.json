@@ -2,7 +2,7 @@
   "title": "Виртуальные сети",
   "pageDescription": "Работа с сервисом виртуальных сетей с использованием Terraform.",
   "shortDescription": "Как использовать Terraform для управления объектами сервиса виртуальных сетей",
-  "metaTitle": "Виртуальные сети — VK Cloud",
+  "metaTitle": "Виртуальные сети",
   "metaDescription": "",
   "sectionTitle": "Виртуальные сети",
   "markdown": "Работа с [сервисом виртуальных сетей](/ru/main/networks/vnet) с использованием Terraform.",

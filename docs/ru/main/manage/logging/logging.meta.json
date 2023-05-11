@@ -2,7 +2,7 @@
   "title": "Cloud Logging",
   "pageDescription": "Сервис для работы с логами пользовательских приложений на ВМ и в облаке VK Cloud. Сбор, хранение, чтение, отображение и обработка логов в едином интерфейсе в облаке.",
   "shortDescription": "Сервис для сбора и анализа логов",
-  "metaTitle": "Cloud Logging — VK Cloud",
+  "metaTitle": "Cloud Logging",
   "metaDescription": "Cloud Logging: сбор, хранение и обработка логов в облаке VK Cloud",
   "sectionTitle": "Cloud Logging",
   "markdown": "Сервис для работы с логами пользовательских приложений на ВМ и в облаке VK Cloud. Сбор, хранение, чтение, отображение и обработка логов в едином интерфейсе в облаке.",

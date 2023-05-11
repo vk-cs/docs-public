@@ -2,7 +2,7 @@
   "title": "Using Ingress",
   "pageDescription": "How to provide access to services deployed in a cluster via Ingress.",
   "shortDescription": "How to provide access to services deployed in a cluster via Ingress",
-  "metaTitle": "Using Ingress — VK Cloud",
+  "metaTitle": "Using Ingress",
   "metaDescription": "",
   "sectionTitle": "Using Ingress",
   "markdown": "How to provide access to services deployed in a cluster via Ingress.",

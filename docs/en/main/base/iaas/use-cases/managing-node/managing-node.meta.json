@@ -2,7 +2,7 @@
   "title": "Server group binding policy",
   "pageDescription": "Placing servers in different groups for high availability or in the same group to speed up interaction between servers.",
   "shortDescription": "How to adapt the server placement policy to the tasks being solved",
-  "metaTitle": "Server group binding policy — VK Cloud",
+  "metaTitle": "Server group binding policy",
   "metaDescription": "Placing servers in different groups for high availability or in the same group to speed up interaction between servers.",
   "sectionTitle": "Server group binding policy",
   "weight": 3,

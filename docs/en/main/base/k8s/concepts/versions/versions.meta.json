@@ -2,7 +2,7 @@
   "title": "Available Kubernetes versions and version support policy",
   "pageDescription": "Here is information about the available Kubernetes versions that can be deployed in VK Cloud. The version support policy is also provided.",
   "shortDescription": "Support policy for available Kubernetes versions in VK Cloud clusters and change history.",
-  "metaTitle": "Available Kubernetes versions and version support policy — VK Cloud",
+  "metaTitle": "Available Kubernetes versions and version support policy",
   "metaDescription": "Kubernetes,K8S,version,history,policy,support",
   "sectionTitle": "Available Kubernetes versions and version support policy",
   "markdown": "",

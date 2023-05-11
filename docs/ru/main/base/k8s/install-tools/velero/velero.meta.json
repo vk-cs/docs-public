@@ -2,7 +2,7 @@
   "title": "Установка Velero",
   "pageDescription": "Как установить Velero в кластер Kubernetes.",
   "shortDescription": "Как установить утилиту Velero",
-  "metaTitle": "Установка Velero — VK Cloud",
+  "metaTitle": "Установка Velero",
   "metaDescription": "",
   "sectionTitle": "Установка Velero",
   "markdown": "Как установить контроллер Velero в кластер Kubernetes.",

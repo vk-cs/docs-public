@@ -2,7 +2,7 @@
   "title": "Создание кластера Kubernetes",
   "pageDescription": "Пример создания кластера Kubernetes с использованием Terraform.",
   "shortDescription": "",
-  "metaTitle": "Создание кластера Kubernetes — VK Cloud",
+  "metaTitle": "Создание кластера Kubernetes",
   "metaDescription": "Пример создания кластера Kubernetes с использованием Terraform",
   "sectionTitle": "Создание кластера Kubernetes",
   "markdown": "",
