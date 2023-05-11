@@ -2,7 +2,7 @@
   "title": "Получение токена доступа Keystone",
   "pageDescription": "Получение токена доступа в сервисах VK Cloud",
   "shortDescription": "",
-  "metaTitle": "Получение токена доступа Keystone — VK Cloud",
+  "metaTitle": "Получение токена доступа Keystone",
   "metaDescription": "После 27 мая 2020 года сервис авторизации и аутентификации переходит на новый способ идентификации проектов",
   "sectionTitle": "Получение токена доступа Keystone",
   "weight": 6,

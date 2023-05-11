@@ -2,7 +2,7 @@
   "title": "Kubernetes reference",
   "pageDescription": "A reference describing basic Kubernetes concepts and objects. For more information, see official Kubernetes documentation.",
   "shortDescription": "Basic Kubernetes concepts and objects, and examples of how to interact with them.",
-  "metaTitle": "Kubernetes reference — VK Cloud",
+  "metaTitle": "Kubernetes reference",
   "metaDescription": "",
   "sectionTitle": "Kubernetes reference",
   "markdown": "A reference describing basic Kubernetes concepts and objects. For more information, see [official Kubernetes documentation](https://kubernetes.io/docs/home/).",

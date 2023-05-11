@@ -2,7 +2,7 @@
     "title": "Установка Gatekeeper",
     "pageDescription": "Как установить контроллер Gatekeeper в кластер Kubernetes.",
     "shortDescription": "Как установить контроллер Gatekeeper",
-    "metaTitle": "Установка Gatekeeper — VK Cloud",
+    "metaTitle": "Установка Gatekeeper",
     "metaDescription": "",
     "sectionTitle": "Установка Gatekeeper",
     "markdown": "Как установить контроллер Gatekeeper в кластер Kubernetes.",

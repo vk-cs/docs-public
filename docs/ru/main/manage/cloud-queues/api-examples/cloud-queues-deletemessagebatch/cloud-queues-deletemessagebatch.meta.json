@@ -2,7 +2,7 @@
   "title": "DeleteMessageBatch",
   "pageDescription": "Примеры запроса и ответа для метода DeleteMessageBatch.",
   "shortDescription": "",
-  "metaTitle": "DeleteMessageBatch — VK Cloud",
+  "metaTitle": "DeleteMessageBatch",
   "metaDescription": "Запрос удаляет до десяти сообщений из указанной очереди. Примеры запроса и ответа для метода DeleteMessageBatch.",
   "sectionTitle": "DeleteMessageBatch",
   "markdown": "",

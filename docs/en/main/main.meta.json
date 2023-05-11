@@ -1,5 +1,5 @@
 {
-  "title": "Service Documentation",
+  "title": "Documentation",
   "faqLinks": [
     "docs/en/main/additionals/start",
     "docs/en/main/additionals/billing",
@@ -7,7 +7,11 @@
     "docs/en/main/additionals/start/it-security"
   ],
   "serviceGroupLinks": [],
-  "uuid": "301ac9a0-a82e-406d-b707-702fa2154727"
+  "uuid": "301ac9a0-a82e-406d-b707-702fa2154727",
+  "default": {
+    "metaTitle": "Documentation",
+    "metaDescription": "VK Cloud Support Center helps you to find FAQ, how-to guides and step-by-step tutorials."
+  }
 }
 
 

@@ -2,7 +2,7 @@
   "title": "Migration from local databases",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Migration from local databases — VK Cloud",
+  "metaTitle": "Migration from local databases",
   "metaDescription": "Для миграции данных из локальной базы в облачную нужно выполнить три шага: Выбрать тип коннектора к базе\nПодключиться к инстансу\nЗагрузить свои данные Выбо",
   "sectionTitle": "Migration from local databases",
   "markdown": "",

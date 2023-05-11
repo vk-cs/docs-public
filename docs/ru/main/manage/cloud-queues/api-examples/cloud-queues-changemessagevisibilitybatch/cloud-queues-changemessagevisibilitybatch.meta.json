@@ -2,7 +2,7 @@
   "title": "ChangeMessageVisibilityBatch",
   "pageDescription": "Примеры запроса и ответа для метода ChangeMessageVisibilityBatch.",
   "shortDescription": "",
-  "metaTitle": "ChangeMessageVisibilityBatch — VK Cloud",
+  "metaTitle": "ChangeMessageVisibilityBatch",
   "metaDescription": "Запрос изменяет тайм-аут видимости сразу нескольких сообщений. Примеры запроса и ответа для метода ChangeMessageVisibilityBatch.",
   "sectionTitle": "ChangeMessageVisibilityBatch",
   "markdown": "",

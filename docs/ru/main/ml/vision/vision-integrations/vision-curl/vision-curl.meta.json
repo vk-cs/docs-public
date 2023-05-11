@@ -2,7 +2,7 @@
   "title": "Использование Curl",
   "pageDescription": "",
   "shortDescription": "Запрос на распознавание с использованием Curl",
-  "metaTitle": "Использование Curl — VK Cloud",
+  "metaTitle": "Использование Curl",
   "metaDescription": "1. Автономера: Запрос: curl -k -v",
   "sectionTitle": "Использование Curl",
   "markdown": "",

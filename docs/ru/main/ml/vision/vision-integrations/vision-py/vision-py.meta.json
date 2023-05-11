@@ -2,7 +2,7 @@
   "title": "Пример интеграции на Python",
   "pageDescription": "",
   "shortDescription": "Распознавание лиц с помощью добавления персоны в базу данных",
-  "metaTitle": "Пример интеграции на Python — VK Cloud",
+  "metaTitle": "Пример интеграции на Python",
   "metaDescription": "Попробуем распознать лица на фотографии: Скачайте файл smarty.py. python examples/python/smarty.py \\ -u",
   "sectionTitle": "Пример интеграции на Python",
   "markdown": "",

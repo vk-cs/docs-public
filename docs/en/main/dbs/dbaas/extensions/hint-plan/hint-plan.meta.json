@@ -2,7 +2,7 @@
   "title": "Hint plan for PostgreSQL",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Hint plan for PostgreSQL — VK Cloud",
+  "metaTitle": "Hint plan for PostgreSQL",
   "metaDescription": "Что такое pg_hint_plan? pg_hint_plan - управление планом выполнения запроса с помощью указаний, записываемых в комментариях особого вида.  Подробнее о расш",
   "sectionTitle": "Hint plan for PostgreSQL",
   "markdown": "",

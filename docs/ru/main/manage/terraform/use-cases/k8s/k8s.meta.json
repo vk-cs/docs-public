@@ -2,7 +2,7 @@
   "title": "Контейнеры",
   "pageDescription": "Работа с сервисом контейнеров с использованием Terraform.",
   "shortDescription": "Как использовать Terraform для управления объектами сервиса контейнеров",
-  "metaTitle": "Контейнеры — VK Cloud",
+  "metaTitle": "Контейнеры",
   "metaDescription": "Работа с сервисом контейнеров с использованием Terraform",
   "sectionTitle": "Контейнеры",
   "markdown": "Работа с [сервисом контейнеров](/ru/main/base/k8s) с использованием Terraform.",

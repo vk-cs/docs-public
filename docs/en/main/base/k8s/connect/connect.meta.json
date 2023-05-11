@@ -2,7 +2,7 @@
   "title": "Connecting",
   "pageDescription": "There are several ways to connect to the Kubernetes cluster and its components. All available connection options are discussed here.",
   "shortDescription": "Ways to connect to a Kubernetes cluster.",
-  "metaTitle": "Connecting — VK Cloud",
+  "metaTitle": "Connecting",
   "metaDescription": "",
   "sectionTitle": "Connecting",
   "markdown": "There are several ways to connect to the Kubernetes cluster and its components. All available connection options are discussed here.",

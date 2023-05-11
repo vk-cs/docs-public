@@ -2,7 +2,7 @@
   "title": "Connecting to cluster using kubectl",
   "pageDescription": "How to connect to a Kubernetes cluster using kubectl.",
   "shortDescription": "How to connect to a Kubernetes cluster using kubectl",
-  "metaTitle": "Connecting to cluster using kubectl — VK Cloud",
+  "metaTitle": "Connecting to cluster using kubectl",
   "metaDescription": "",
   "sectionTitle": "Connecting to cluster using kubectl",
   "markdown": "How to connect to a Kubernetes cluster using kubectl.",

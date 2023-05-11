@@ -2,7 +2,7 @@
   "title": "DeleteMessage",
   "pageDescription": "Примеры запроса и ответа для метода DeleteMessage.",
   "shortDescription": "",
-  "metaTitle": "DeleteMessage — VK Cloud",
+  "metaTitle": "DeleteMessage",
   "metaDescription": "Запрос удаляет указанное сообщение из указанной очереди. Примеры запроса и ответа для метода DeleteMessage.",
   "sectionTitle": "DeleteMessage",
   "markdown": "",

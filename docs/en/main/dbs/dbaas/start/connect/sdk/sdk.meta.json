@@ -2,7 +2,7 @@
   "title": "SDK",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "SDK — VK Cloud",
+  "metaTitle": "SDK",
   "metaDescription": "Описание Статья приводит примеры подключения (с помощью разных приложений) к установленной вами облачной базе данных. PHP $conn = pg_connect(",
   "sectionTitle": "SDK",
   "markdown": "",

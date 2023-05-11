@@ -2,7 +2,7 @@
   "title": "Управление инстансом с помощью MLflow Client",
   "pageDescription": "Управление деплоем ML-моделей осуществляется через MLflow Client.",
   "shortDescription": "",
-  "metaTitle": "Управление инстансом с помощью MLflow Client — VK Cloud",
+  "metaTitle": "Управление инстансом с помощью MLflow Client",
   "metaDescription": "Управление инстансом с помощью MLflow Client",
   "sectionTitle": "Управление инстансом с помощью MLflow Client",
   "markdown": "Управление деплоем ML-моделей осуществляется через MLflow Client.",
