@@ -2,7 +2,7 @@
   "title": "Local DNS cache configuration",
   "pageDescription": "How to configure a local DNS cache on each cluster node to reduce the load on kube-dns and improve the speed and stability of DNS queries processing.",
   "shortDescription": "How to configure a local DNS cache on each cluster node to improve the speed and stability of DNS queries processing",
-  "metaTitle": "Local DNS cache configuration — VK Cloud",
+  "metaTitle": "Local DNS cache configuration",
   "metaDescription": "",
   "sectionTitle": "Local DNS cache configuration",
   "markdown": "How to configure a local DNS cache on each cluster node to reduce the load on kube-dns and improve the speed and stability of DNS queries processing.",

@@ -2,7 +2,7 @@
   "title": "ListQueues",
   "pageDescription": "Примеры запроса и ответа для метода ListQueues.",
   "shortDescription": "",
-  "metaTitle": "ListQueues — VK Cloud",
+  "metaTitle": "ListQueues",
   "metaDescription": "Возвращает список ваших очередей в текущем регионе. Примеры запроса и ответа для метода ListQueues.",
   "sectionTitle": "ListQueues",
   "markdown": "",

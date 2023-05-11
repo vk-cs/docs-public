@@ -2,7 +2,7 @@
     "title": "Управление доступом",
     "pageDescription": "Как управлять доступом к кластеру Kubernetes, используя роли пользователей в личном кабинете VK Cloud.",
     "shortDescription": "Как устроена ролевая модель доступа к кластеру Kubernetes",
-    "metaTitle": "Управление доступом — VK Cloud",
+    "metaTitle": "Управление доступом",
     "metaDescription": "",
     "sectionTitle": "Управление доступом",
     "markdown": "Как управлять доступом к кластеру Kubernetes, используя роли пользователей в личном кабинете VK Cloud.",

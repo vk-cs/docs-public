@@ -2,7 +2,7 @@
   "title": "Мониторинг PostgreSQL",
   "pageDescription": "Мониторинг состояния инстансов PostgreSQL c предоставлением подробной информации о метриках отдельных хостов (как мастеров, так и реплик).",
   "shortDescription": "Мониторинг развернутых инстансов PostgreSQL",
-  "metaTitle": "Мониторинг PostgreSQL — VK Cloud",
+  "metaTitle": "Мониторинг PostgreSQL",
   "metaDescription": "",
   "sectionTitle": "Мониторинг PostgreSQL",
   "markdown": "",

@@ -2,7 +2,7 @@
   "title": "Deploying Ingress controller with TCP load balancer",
   "pageDescription": "Demonstration of Ingress controller interaction with VK Cloud platform TCP load balancer.",
   "shortDescription": "How to configure an Ingress controller in conjunction with TCP load balancer.",
-  "metaTitle": "Deploying Ingress Controller with TCP load balancer — VK Cloud",
+  "metaTitle": "Deploying Ingress Controller with TCP load balancer",
   "metaDescription": "",
   "sectionTitle": "Deploying Ingress controller with TCP load balancer",
   "markdown": "Demonstration of Ingress controller interaction with VK Cloud platform TCP load balancer.",

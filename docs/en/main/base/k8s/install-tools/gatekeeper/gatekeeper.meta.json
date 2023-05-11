@@ -2,7 +2,7 @@
     "title": "Installing Gatekeeper",
     "pageDescription": "How to install a Gatekeeper controller in the Kubernetes cluster.",
     "shortDescription": "How to install a Gatekeeper controller",
-    "metaTitle": "Installing Gatekeeper — VK Cloud",
+    "metaTitle": "Installing Gatekeeper",
     "metaDescription": "",
     "sectionTitle": "Installing Gatekeeper",
     "markdown": "How to install a Gatekeeper controller in the Kubernetes cluster.",

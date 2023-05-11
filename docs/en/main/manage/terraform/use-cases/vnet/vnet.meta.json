@@ -2,7 +2,7 @@
   "title": "Virtual networks",
   "pageDescription": "Working with Virtual network service using Terraform.",
   "shortDescription": "How to use Terraform to manage virtual network service objects",
-  "metaTitle": "Virtual networks — VK Cloud",
+  "metaTitle": "Virtual networks",
   "metaDescription": "",
   "sectionTitle": "Virtual networks",
   "markdown": "Working with [Virtual networks](/en/networks/vnet) service using Terraform.",

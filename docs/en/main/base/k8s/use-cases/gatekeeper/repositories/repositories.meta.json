@@ -2,7 +2,7 @@
     "title": "Configuring allowed repositories",
     "pageDescription": "Using Gatekeeper to enforce constraints that will check that images are downloaded only from allowed repositories.",
     "shortDescription": "How to create a Gatekeeper constraint that checks that images are downloaded only from allowed repositories",
-    "metaTitle": "Configuring allowed repositories — VK Cloud",
+    "metaTitle": "Configuring allowed repositories",
     "metaDescription": "",
     "sectionTitle": "Configuring allowed repositories",
     "markdown": "Using Gatekeeper to enforce constraints that will check that images are downloaded only from allowed repositories.",

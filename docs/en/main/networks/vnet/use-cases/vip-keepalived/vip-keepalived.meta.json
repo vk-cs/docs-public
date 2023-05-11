@@ -2,7 +2,7 @@
   "title": "Organizing a virtual IP address",
   "pageDescription": "Multiple virtual machines can share the same clustered IP address using the VRRP protocol. When using a configuration with this IP address, if the virtual machine that processes traffic from this address fails, the traffic will be redirected to one of the remaining virtual machines.",
   "shortDescription": "How to create a failover clustered virtual IP address for multiple virtual machines using keepalived and VRRP",
-  "metaTitle": "Organizing a virtual IP address — VK Cloud",
+  "metaTitle": "Organizing a virtual IP address",
   "metaDescription": "Failover Highly Available (HA) Clustered Virtual IP (VIP) for VM with keepalived and VRRP",
   "sectionTitle": "Organizing a virtual IP address",
   "markdown": "Multiple virtual machines can share the same clustered IP address using the VRRP protocol. When using a configuration with this IP address, if the virtual machine that processes traffic from this address fails, the traffic will be redirected to one of the remaining virtual machines.",

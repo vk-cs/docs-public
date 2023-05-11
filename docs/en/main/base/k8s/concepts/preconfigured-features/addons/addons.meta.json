@@ -2,7 +2,7 @@
   "title": "Available services",
   "pageDescription": "Services that can be automatically installed in the cluster to extend its functionality.",
   "shortDescription": "Services available for installation when the cluster is created.",
-  "metaTitle": "Available services — VK Cloud",
+  "metaTitle": "Available services",
   "metaDescription": "",
   "sectionTitle": "Available Services",
   "markdown": "Services that can be automatically installed in the cluster to extend its functionality.",
