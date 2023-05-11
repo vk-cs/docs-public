@@ -1,4 +1,4 @@
-An invitation email contains the identifier of the [project](../../concepts/projects) to which you were invited and a list of [roles](../../concepts/rolesandpermissions#roles) assigned to you. If you are invited to several projects, a separate email arrives for each project.
+An invitation email contains the identifier of the [project](../../concepts/projects) to which you were invited and a list of [roles](../../concepts/rolesandpermissions) assigned to you. If you are invited to several projects, a separate email arrives for each project.
 
 If you don't see the invitation in your **Inbox**, check the **Spam** folder.
 

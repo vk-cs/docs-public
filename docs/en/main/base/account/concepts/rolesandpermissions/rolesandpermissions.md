@@ -1,87 +1,148 @@
-## Roles
+When a user is invited to a [project](../projects), he or she is assigned with a role. The role defines the scope of [permissions](#roles-and-their-permissions) available to the user when working with the personal account and with the cloud services.
 
-In the personal account of VK Cloud, you can add additional project participants who will have access to working with cloud services. When adding, the role of the participant is indicated.
+The same user can be a member of several projects and have different roles in each of them. The same user can be assigned with several roles in one project; in this case, the permissions of all assigned roles are summarized.
 
-## Role matrix
+You can [view](../../instructions/project-settings/access-manage) the list of project members and their roles on the **Manage access** page of the personal account.
 
-The VK Cloud platform supports the differentiation of access rights to project resources based on the role model. Following is the list of roles and their respective permission.
+## General project management roles
 
-List of roles and permissions:
+### Project owner
 
-![](./assets/roles_and_permissions.png)
+A user with the widest set of permissions.
 
-<!-- prettier-ignore
-| Operation/Role | User admin (user_admin) | admin. billing | admin. project | Project owner | admin. networks | Observer | admin. internal networks | admin. network security | admin. VM | Super Administrator |
-|--|-----------|-----------------|----------|------------|-------------|-------------| ------------------------|---------------------------|-----------|--------------------|
-| Adding a user to a project | x | - | - | x | - | - | - | - | - | X |
-| User Role Assignment | x | - | - | X | - | - | - | - | - | X |
-| Billing / changing payment details | - | X | X | X | - | - | - | - | - | X |
-| Create / delete VM | - | - | X | X | - | - | - | - | - | X |
-| Connecting / disconnecting VMs, PaaS services, shared folders to a virtual network | - | - | X | X | - | - | - | - | - | X |
-| VM management (enable/disable/mount images/reboot/change resources/access to monitoring and logs) | - | - | X | X | - | - | - | - | X | X |
-| Virtual Disk Management (Create/Remove/Expand/Mount/Snapshots/Migrate) | - | - | X | X | - | - | - | - | X | X |
-| Image management (adding / removing VM images) | - | - | X | X | - | - | - | - | - | X |
-| Manage Shared Folders (Add/Remove/Resize) | - | - | X | X | - | - | - | - | - | X |
-| Manage access rules for shared folders (add/delete/modify) | - | - | X | X | - | - | - | - | - | X |
-| Creation modification removal of PaaS-services (K8S,DBaaS) | - | - | X | X | - | - | - | - | - | X |
-| Creation, removal, modification, virtual networks. Connecting to a virtual router | - | - | X| X | X | - | X | - | - | X |
-| Creating / deleting project virtual routers. | - | - | X | X | X | - | X | - | - | X |
-| Connecting tenant routers to the ext-net network | - | - | X | X | X | - | X | - | - | X |
-| Management of load balancers and rules in them (adding / removing / adjusting) | - | - | X | X | X | - | X | - | - | X |
-| Working with the Security Group within the tenant (adding/removing groups/access rules) | - | - | X | X | X | - | - | X | - | X |
-| Mapping Security groups to VM interfaces | - | - | X | X | X | - | - | X | - | X |
-| VPN Management | - | - | X | X | X | - | - | - | - | X |
-| FIP management | - | - | X | X | X | - | - | - | - | X |
-| Managingoutboundrules for filtering traffic on external ports of the router (FWaaS) | - | - | - | - | - | - | - | - | - | X |
-| Managingincomingrules for filtering traffic on external ports of the router (FWaaS) | - | - | X | X | X | - | - | - | - | X |
-| Adding virtual networks to the BGP address scope (operation required for routing virtual networks) | - | - | - | - | - | - | - | - | - | X |
-| Create zones and records in public DNS | - | - | x | x | x | - | - | - | - | X |
-| View information about all services within a project | - | - | - | X |-| X | - | - | - | X |
--->
+A Project owner is a user who created the project or for whom it was created automatically by the platform during the account registration.
 
-## Role matrix for container service
+There can be only one Project owner in a project. This role cannot be assigned to an existing user or to a member that is being invited.
 
-In addition to the standard roles, the container service has its own special roles.
+### Superadministrator
 
-The personal account roles assigned to users affect:
+A user with the same permissions as the Project owner, including linking a card and making payments.
 
-- Rights in Kubernetes clusters.
+Superadministrator is the only role, besides the Project owner, who can [activate services](../../instructions/activation) in the project.
 
-  <info>
+### Project administrator
 
-  This is true for Kubernetes clusters of version 1.23 and above. Clusters of older versions can be upgraded for the same capabilities.
+A user who can create and edit objects in all services.
 
-  </info>
+A Project administrator cannot:
 
-- The availability of cluster operations in the personal account listed in the table below.
+- activate services;
+- make payments (can only view the project balance);
+- invite members to the project.
+
+### User access administrator
+
+A role intended for [working with project members](../../instructions/project-settings/access-manage) on the access management page.
+
+A User access administrator can invite, delete project members, and change the roles assigned to them.
+
+This role has no access to services and to project balance information.
+
+### Billing administrator
+
+A role intended for project balance management.
+
+A billing administrator can:
+
+- [link](../../../../additionals/billing/operations/add-card) a card to the project, if not linked yet;
+- make a [payment](../../../../additionals/billing/operations/payment) or configure balance auto-completion.
+
+This role has no access to services and to the list of project members.
+
+### Viewer
+
+A user who has read access to all project information, including the members list, services, project balance, and expenses details.
+
+A viewer cannot create any objects or edit any settings, except the settings of their account.
+
+## Specialized roles
+
+Each of the roles below is intended for working with one of the platform services only. There roles have permissions:
+
+- in their target service;
+- in adjacent services, to an extent that is necessary for working with their target service.
+
+All these roles have no access to the project members list and to project balance information.
+
+For detailed information about the permissions of these roles, see section [Roles and their permissions: the full matrix](#roles-and-their-permissions--the-full-matrix).
+
+All operations available to specialized roles are also available to Project owner, Superadministrator, and Project administrator.
+
+### Virtual machine administrator
+
+A user with this role can perform basic operations in the Cloud computing service.
+
+However, this role has only read permissions for:
+
+- backup plans;
+- file storages.
+
+This user can also create and edit rule groups (firewalls) in the Virtual networks service.
+
+### Network administrator
+
+A user with this role can perform a full set of operations in the Virtual networks and DNS services.
+
+### Network security administrator
+
+A user with this role has read access to the Virtual networks and DNS services.
+
+He can create and edit only rule groups (firewalls).
+
+### Internal network administrator
+
+A user with this role:
+
+- has read access to the Virtual networks and DNS services;
+- can create and edit virtual networks and subnets, routers;
+- can add floating IP addresses to the project.
+
+### Kubernetes administrator, operator, and auditor
+
+For detailed information about the permissions of these roles, see section [Roles for the Containers service and their permissions](#roles-for-the-containers-service-and-their-permissions).
+
+## Roles and their permissions: the full matrix
+
+Permissions are the privileges for viewing (**R** in the table below) or editing ( **RW** ) of certain objects. An editing permission includes the privilege of creating and deleting an object, and also includes the permission for viewing. A dash ( **—** ) indicates no access to a service or functionality.
+
+![](./assets/roles_and_permissions_en.png)
+
+## Roles for the Containers service and their permissions
+
+The following user roles are intended for working with the Сontainers service:
+
+- Kubernetes administrator,
+- Kubernetes operator,
+- Kubernetes auditor.
+
+The operations available to Kubernetes administrator are also available to Project owner, Superadministrator, and Project administrator.
+
+For other roles these operations are unavailable.
+
+For Kubernetes clusters of version 1.23 and later, the role of a Kubernetes administrator, operator, or auditor also defines the internal [Kubernetes role](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles) (`admin`, `edit`, or `view`) assigned to the user.
+
+<info>
+
+Some of the actions below are available only in the certain state of a cluster. For example, installing or deleting an addon is possible only when a cluster is running.
+
+</info>
 
 <!-- prettier-ignore -->
-| Operation/Role | Project owner<br>Project administrator<br>Superadministrator | Kubernetes<br>Administrator | Kubernetes<br>operator | Kubernetes<br>Auditor |
-| --------------| --------------------------------------------------------------- | --------------------------- | ---------------------- | --------------------- |
-| Create cluster                                            | X  | X  | -  | -                |
-| Delete cluster                                            | X  | X  | -  | -                |
-| Start cluster                                             | X  | X  | X  | -                |
-| Stop cluster                                              | X  | X  | X  | -                |
-| Show information about<br>cluster and node groups         | X  | X  | X  | X                |
-| Get kubeconfig                                            | X  | X  | X  | X                |
-| Get the secret to access<br>the Kubernetes Dashboard      | X  | X  | X  | X                |
-| Update version                                            | X  | X  | X  | -                |
-| Change virtual machine type                               | X  | X  | X  | -                |
-| Change the size of the Prometheus disk                    | X  | X  | X  | -                |
-| Add node group                                            | X  | X  | X  | -                |
-| Delete node group                                         | X  | X  | X  | -                |
-| Change scaling settings                                   | X  | X  | X  | Read<br>only     |
-| Change Labels and Taints                                  | X  | X  | X  | Read<br>only     |
+| Operation/Role |  Kubernetes<br>administrator | Kubernetes<br>operator | Kubernetes<br>auditor |
+| --------------| --------------------------- | ---------------------- | --------------------- |
+| Create a cluster                                            | &#10003;  | —  | —                |
+| Delete a cluster                                            | &#10003;  | —  | —                |
+| Start a cluster                                             | &#10003;  | &#10003;  | —                |
+| Stop a cluster                                              | &#10003;  | &#10003;  | —                |
+| Show information about<br>a cluster and node groups         | &#10003;  | &#10003;  | &#10003;                |
+| Get kubeconfig                                            | &#10003;  | &#10003;  | &#10003;                |
+| Get the secret to access<br>the Kubernetes Dashboard      | &#10003;  | &#10003;  | &#10003;                |
+| Update version                                            | &#10003;  | &#10003;  | —                |
+| Change the virtual machine type                               | &#10003;  | &#10003;  | —                |
+| Change the size of the Prometheus disk                    | &#10003;  | &#10003;  | —                |
+| Add a node group                                            | &#10003;  | &#10003;  | —                |
+| Delete a node group                                         | &#10003;  | &#10003;  | —                |
+| Change scaling settings                                   | &#10003;  | &#10003;  | —     |
+| Change Labels and Taints                                  | &#10003;  | &#10003;  | —     |
+| Install / delete an addon | &#10003; | &#10003; | — |
 <!-- prettier-ignore -->
-
-## Deleting a member
-
-In your personal account in the "Users" and "Roles" tab, you can not only add, but also remove participants.
-
-Select the desired member and click "Remove", then confirm your choice.
-
-<warn>
-
-Deleting the user under which the Kubernetes cluster was created will result in a health issue after the cluster is restarted. To restore the work of the added user, on behalf of which the cluster was created, restart the cluster.
-
-</warn>
