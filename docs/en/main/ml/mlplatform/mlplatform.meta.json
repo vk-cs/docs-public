@@ -2,7 +2,7 @@
   "title": "ML Platform",
   "pageDescription": "This section describes how to work with the ML Platform service, create and work with JupyterHub instances.",
   "shortDescription": "Platform for the full cycle of ML development and collaboration of Data teams",
-  "metaTitle": "ML Platform — VK Cloud",
+  "metaTitle": "ML Platform",
   "metaDescription": "ML Platform is a service for creating and managing JupyterHub instances",
   "sectionTitle": "ML Platform",
   "markdown": "This section describes how to work with the ML Platform service, create and work with JupyterHub instances.",

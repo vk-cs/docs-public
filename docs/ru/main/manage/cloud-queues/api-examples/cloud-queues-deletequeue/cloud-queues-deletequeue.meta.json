@@ -2,7 +2,7 @@
   "title": "DeleteQueue",
   "pageDescription": "Примеры запроса и ответа для метода DeleteQueue.",
   "shortDescription": "",
-  "metaTitle": "DeleteQueue — VK Cloud",
+  "metaTitle": "DeleteQueue",
   "metaDescription": "Запрос удаляет очередь, указанную в QueueUrl, независимо от ее содержимого. Примеры запроса и ответа для метода DeleteQueue.",
   "sectionTitle": "DeleteQueue",
   "markdown": "",

@@ -2,7 +2,7 @@
   "title": "Базы данных",
   "pageDescription": "Как использовать Terraform для управления объектами сервиса СУБД.",
   "shortDescription": "Как использовать Terraform для управления объектами сервиса СУБД",
-  "metaTitle": "Базы данных — VK Cloud",
+  "metaTitle": "Базы данных",
   "metaDescription": "Как использовать Terraform для управления объектами сервиса СУБД",
   "sectionTitle": "Базы данных",
   "markdown": "Работа с [сервисом СУБД](/ru/dbs/dbaas) с использованием Terraform.",

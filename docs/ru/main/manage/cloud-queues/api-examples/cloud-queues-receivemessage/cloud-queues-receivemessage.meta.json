@@ -2,7 +2,7 @@
   "title": "ReceiveMessage",
   "pageDescription": "Примеры запроса и ответа для метода ReceiveMessage.",
   "shortDescription": "",
-  "metaTitle": "ReceiveMessage — VK Cloud",
+  "metaTitle": "ReceiveMessage",
   "metaDescription": "Извлекает одно или несколько сообщений (до 10) из указанной очереди. Примеры запроса и ответа для метода ReceiveMessage.",
   "sectionTitle": "ReceiveMessage",
   "markdown": "",

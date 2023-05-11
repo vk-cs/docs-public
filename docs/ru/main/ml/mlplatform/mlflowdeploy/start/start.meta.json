@@ -2,7 +2,7 @@
   "title": "Быстрый старт",
   "pageDescription": "Начало работы с MLflow Deploy.",
   "shortDescription": "",
-  "metaTitle": "Быстрый старт — VK Cloud",
+  "metaTitle": "Быстрый старт",
   "metaDescription": "Быстрый старт",
   "sectionTitle": "Быстрый старт",
   "markdown": "Начало работы с сервисом MLflow Deploy. Создание инстансов MLflow Deploy доступно как через UI, так и через [MLflow Client](../manage/manage-mlflow-client).",

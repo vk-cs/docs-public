@@ -2,7 +2,7 @@
   "title": "Docker Registry",
   "pageDescription": "Docker Registry — масштабируемое серверное приложение без сохранения состояния, которое хранит образы Docker и позволяет вам распространять их.",
   "shortDescription": "Docker Registry — масштабируемое серверное приложение без сохранения состояния, которое хранит образы Docker и позволяет вам распространять их. В составе данного стека есть графический интерфейс Portainer",
-  "metaTitle": "Docker Registry — VK Cloud",
+  "metaTitle": "Docker Registry",
   "metaDescription": "Docker Registry — масштабируемое серверное приложение без сохранения состояния, которое хранит образы Docker и позволяет вам распространять их.",
   "sectionTitle": "Docker Registry",
   "markdown": "",

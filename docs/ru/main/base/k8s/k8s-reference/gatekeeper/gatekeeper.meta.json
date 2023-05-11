@@ -2,7 +2,7 @@
   "title": "Gatekeeper",
   "pageDescription": "Как пользоваться Gatekeeper для создания ограничений и контроля за их соблюдением для ресурсов Kubernetes.",
   "shortDescription": "Как использовать Gatekeeper в кластере для создания ограничений и контроля за ними",
-  "metaTitle": "Gatekeeper — VK Cloud",
+  "metaTitle": "Gatekeeper",
   "metaDescription": "",
   "sectionTitle": "Gatekeeper",
   "markdown": "Как пользоваться Gatekeeper для создания ограничений и контроля за их соблюдением для ресурсов Kubernetes.",
