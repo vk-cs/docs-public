@@ -8,12 +8,13 @@
 
 - Роли пользователя в личном кабинете влияют на:
 
-  - [Доступные операции с кластерами в личном кабинете](../../../../base/account/concepts/rolesandpermissions#matrica-roley-dlya-servisa-konteynerov).
+  - [Доступные операции с кластерами в личном кабинете](../../../../base/account/concepts/rolesandpermissions#razresheniya-roley-servisa-konteynerov).
+
   - [Доступные действия в кластере](#vzaimosvyaz-roley-lichnogo-kabineta-i-kubernetes).
 
     Пользователю с определенной ролью личного кабинета назначается соответствующая [роль Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles). Роль Kubernetes определяет, какие объекты кластера доступны пользователю, а также какие действия разрешено выполнять над этими объектами.
 
-- Суперадминистратор и администратор Kubernetes управляют доступом к кластерам, назначая пользователям роли в личном кабинете.
+- Aдминистратор Kubernetes управляет доступом к кластерам, назначая пользователям роли в личном кабинете.
 
   Нет необходимости конфигурировать права пользователей отдельно для личного кабинета и для кластеров Kubernetes. Например, отключение учетной записи пользователя или отзыв роли в личном кабинете приводит к отзыву прав на доступ к кластерам Kubernetes.
 
@@ -29,7 +30,7 @@
 <tablist>
 <tab>Аудитор Kubernetes</tab>
 <tab>Оператор Kubernetes</tab>
-<tab>Владелец проекта<br>Администратор проекта<br>Суперадминистратор<br>Администратор Kubernetes</tab>
+<tab>Администратор Kubernetes</tab>
 </tablist>
 <tabpanel>
 
@@ -76,6 +77,12 @@
 
 - Доступ на запись к ресурсной квоте (resource quota) или к самому пространству имен.
 - [Доступ на запись к эндпоинтам](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#write-access-for-endpoints) кластеров Kubernetes версии 1.22 и выше.
+
+<info>
+
+Кроме администратора Kubernetes, привилегии роли `admin` доступны владельцу проекта, суперадминистратору и администратору проекта.
+
+</info>
 
 </tabpanel>
 </tabs>
