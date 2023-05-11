@@ -2,7 +2,7 @@
   "title": "CreateQueue",
   "pageDescription": "Примеры запроса и ответа для метода CreateQueue.",
   "shortDescription": "",
-  "metaTitle": "CreateQueue — VK Cloud",
+  "metaTitle": "CreateQueue",
   "metaDescription": "Запрос создает новую стандартную очередь или очередь FIFO. Примеры запроса и ответа для метода CreateQueue.",
   "sectionTitle": "CreateQueue",
   "markdown": "",

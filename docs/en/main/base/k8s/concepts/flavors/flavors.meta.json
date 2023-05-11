@@ -2,7 +2,7 @@
   "title": "Available computing resources",
   "pageDescription": "When creating Kubernetes VK Cloud cluster nodes, multiple virtual machine configurations with different compute resources can be used. This section lists available configuration templates and recommendations for selecting a cluster template.",
   "shortDescription": "Available configuration templates and recommendations for selecting a cluster template.",
-  "metaTitle": "Available computing resources — VK Cloud",
+  "metaTitle": "Available computing resources",
   "metaDescription": "",
   "sectionTitle": "Available computing resources",
   "markdown": "When creating Kubernetes VK Cloud cluster nodes, multiple virtual machine configurations with different computing resources can be used. This section lists available configuration templates and recommendations for selecting a cluster template.",

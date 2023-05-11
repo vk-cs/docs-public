@@ -2,7 +2,7 @@
   "title": "Архитектура",
   "pageDescription": "Архитектура сервиса Cloud Queues.",
   "shortDescription": "Архитектура сервиса Cloud Queues",
-  "metaTitle": "Архитектура — VK Cloud",
+  "metaTitle": "Архитектура",
   "metaDescription": "В этом разделе описываются части распределенной системы обмена сообщениями и объясняется жизненный цикл сообщения Cloud Queues. Распределенные очереди Расп",
   "sectionTitle": "Архитектура",
   "markdown": "",

@@ -2,7 +2,7 @@
   "title": "SendMessageBatch",
   "pageDescription": "Примеры запроса и ответа для метода SendMessageBatch.",
   "shortDescription": "",
-  "metaTitle": "SendMessageBatch — VK Cloud",
+  "metaTitle": "SendMessageBatch",
   "metaDescription": "Доставляет до десяти сообщений в указанную очередь. Примеры запроса и ответа для метода SendMessageBatch.",
   "sectionTitle": "SendMessageBatch",
   "markdown": "",

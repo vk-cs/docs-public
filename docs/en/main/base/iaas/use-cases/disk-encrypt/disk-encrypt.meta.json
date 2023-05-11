@@ -1,7 +1,7 @@
 {
   "title": "Disk encryption using cryptsetup",
   "sectionTitle": "Disk encryption using cryptsetup",
-  "metaTitle": "Disk encryption using cryptsetup — VK Cloud",
+  "metaTitle": "Disk encryption using cryptsetup",
   "pageDescription": "Disk encryption using cryptsetup.",
   "shortDescription": "How to set up virtual Machine disk encryption using cryptsetup for Linux",
   "metaDescription": "Disk encryption using cryptsetup",

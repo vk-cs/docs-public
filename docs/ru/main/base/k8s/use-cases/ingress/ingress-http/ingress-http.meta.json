@@ -2,7 +2,7 @@
   "title": "Развертывание Ingress-контроллера с HTTP-балансировщиком",
   "pageDescription": "Демонстрация взаимодействия Ingress-контроллера с HTTP-балансировщиком нагрузки платформы VK Cloud.",
   "shortDescription": "Как настроить Ingress-контроллер в связке с HTTP-балансировщиком",
-  "metaTitle": "Развертывание Ingress-контроллера с HTTP-балансировщиком — VK Cloud",
+  "metaTitle": "Развертывание Ingress-контроллера с HTTP-балансировщиком",
   "metaDescription": "",
   "sectionTitle": "Развертывание Ingress-контроллера с HTTP-балансировщиком",
   "markdown": "Демонстрация взаимодействия Ingress-контроллера с HTTP-балансировщиком нагрузки платформы VK Cloud",

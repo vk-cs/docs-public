@@ -2,7 +2,7 @@
   "title": "Построение запросов API",
   "pageDescription": "Перечень параметров, необходимых для построения API-запросов к сервису.",
   "shortDescription": "Перечень параметров, необходимых для построения API-запросов к сервису",
-  "metaTitle": "Построение запросов API — VK Cloud",
+  "metaTitle": "Построение запросов API",
   "metaDescription": "Чтобы работать с очередями Cloud Queues, необходимо использовать endpoint https://sqs.mcs.mail.ru/ Региональные конечные точки Ка",
   "sectionTitle": "Построение запросов API",
   "markdown": "",
