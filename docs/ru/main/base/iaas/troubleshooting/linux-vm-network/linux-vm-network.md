@@ -144,6 +144,7 @@
     <tab>Ubuntu</tab>
     <tab>Debian</tab>
     <tab>AlmaLinux, CentOS</tab>
+    <tab>openSUSE</tab>
     </tablist>
     <tabpanel>
 
@@ -241,6 +242,43 @@
 
         ```bash
         sudo nmcli con up "System eth0"
+        ```
+
+    </tabpanel>
+    <tabpanel>
+
+    1. Отредактируйте файл `/etc/sysconfig/network/ifcfg-<имя интерфейса>` и приведите его к следующему виду:
+
+       ```ini
+       IPADDR='10.0.0.5/24' # Приватный IP-адрес + префикс из CIDR
+       BOOTPROTO='static'
+       STARTMODE='hotplug'
+       ```
+
+    1. Отредактируйте файл `/etc/sysconfig/network/routes` и укажите адрес шлюза:
+
+       ```ini
+       default 10.0.0.1 - -
+       ```
+
+    1. Отредактируйте файл `/etc/sysconfig/network/config` и укажите адреса DNS-серверов:
+
+       ```ini
+       NETCONFIG_DNS_STATIC_SERVERS="5.61.237.120 5.61.237.127"
+       ```
+
+       При необходимости укажите другие DNS-серверы.
+
+    1. Примените настройки DNS-серверов:
+
+       ```bash
+       sudo netconfig update
+       ```
+
+    1. Перезапустите сетевое соединение, выполнив команду:
+
+        ```bash
+        sudo systemctl restart network
         ```
 
     </tabpanel>

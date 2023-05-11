@@ -144,6 +144,7 @@ Check that the network interface is configured correctly:
     <tab>Ubuntu</tab>
     <tab>Debian</tab>
     <tab>AlmaLinux, CentOS</tab>
+    <tab>openSUSE</tab>
     </tablist>
     <tabpanel>
 
@@ -242,6 +243,43 @@ Check that the network interface is configured correctly:
         ```bash
         sudo nmcli con up "System eth0"
         ```
+
+    </tabpanel>
+    <tabpanel>
+
+    1. Edit the `/etc/sysconfig/network/ifcfg-<interface name>` file and make it look like:
+
+       ```ini
+       IPADDR='10.0.0.5/24' # Private IP address + prefix from CIDR
+       BOOTPROTO='static'
+       STARTMODE='hotplug'
+       ```
+
+    1. Edit the `/etc/sysconfig/network/routes` file and specify the gateway address in it:
+
+       ```ini
+       default 10.0.0.1 - -
+       ```
+
+    1. Edit the `/etc/sysconfig/network/config` and specify the DNS servers' adresses in it:
+
+       ```ini
+       NETCONFIG_DNS_STATIC_SERVERS="5.61.237.120 5.61.237.127"
+       ```
+
+       If necessary, specify other DNS servers.
+
+    1. Apply the DNS servers' settings:
+
+       ```bash
+       sudo netconfig update
+       ```
+
+    1. Restart the network connection by running the command:
+
+       ```bash
+       sudo systemctl restart network
+       ```
 
     </tabpanel>
     </tabs>
