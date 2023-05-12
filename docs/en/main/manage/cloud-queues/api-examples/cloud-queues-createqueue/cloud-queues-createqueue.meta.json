@@ -2,7 +2,7 @@
   "title": "CreateQueue",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "CreateQueue - VK Cloud",
+  "metaTitle": "CreateQueue",
   "metaDescription": "The request creates a new standard queue or FIFO queue. One or more attributes can be passed in the request. Request Parameters Attribute Attribute.N.Nam",
   "sectionTitle": "CreateQueue",
   "markdown": "",

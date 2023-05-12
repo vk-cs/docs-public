@@ -2,7 +2,7 @@
   "title": "How to Set Up Centralized Logging for Docker Swarm with Fluentd",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "How to set up centralized logging for Docker Swarm using Fluentd - VK Cloud",
+  "metaTitle": "How to set up centralized logging for Docker Swarm using Fluentd",
   "metaDescription": "Hardware configuration To run this monitoring scenario, install and configure servers using the following hardware: Docker on",
   "sectionTitle": "How to set up centralized logging for Docker Swarm using Fluentd",
   "markdown": "",

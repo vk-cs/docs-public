@@ -2,7 +2,7 @@
   "title": "Webhooks",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Webhooks - VK Cloud",
+  "metaTitle": "Webhooks",
   "metaDescription": "Webhooks для S3 - это возможность настраивать отправку HTTP/S запросов по событиям для бакета, используя API. Например, можно: настроить обработку и конвер",
   "sectionTitle": "Webhooks",
   "markdown": "",

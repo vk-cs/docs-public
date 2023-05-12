@@ -2,7 +2,7 @@
   "title": "Настройка Canary Deployment Ingress",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Настройка Canary Deployment Ingress - VK Cloud",
+  "metaTitle": "Настройка Canary Deployment Ingress",
   "metaDescription": "Эта статья поможет вам развернуть кластер Kubernetes и настроить на нем Canary Deployment при помощи Nginx Ingress Annotations Canary Deployment — это спос",
   "sectionTitle": "Настройка Canary Deployment Ingress",
   "markdown": "",

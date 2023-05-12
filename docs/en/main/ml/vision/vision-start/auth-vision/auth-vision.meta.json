@@ -2,7 +2,7 @@
   "title": "Authorization",
   "pageDescription": "",
   "shortDescription": "Authorization of the client on the VK Cloud platform",
-  "metaTitle": "Authorization - VK Cloud",
+  "metaTitle": "Authorization",
   "metaDescription": "To authorize the client on the VK Cloud Vision platform, a token is used, which is transmitted in the request parameter: CURL -K -V",
   "sectionTitle": "Authorization",
   "markdown": "",
