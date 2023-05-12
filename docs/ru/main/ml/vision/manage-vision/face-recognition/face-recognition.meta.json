@@ -2,7 +2,7 @@
   "title": "Распознавание лиц",
   "pageDescription": "",
   "shortDescription": "Методы API для распознавания лиц",
-  "metaTitle": "Распознавание лиц - VK Cloud",
+  "metaTitle": "Распознавание лиц",
   "metaDescription": "Для распознавания лиц используются четыре метода API: Set\nRecognize\nDelete\nTruncate Рассмотрим каждый из них подробнее. Set Данный метод позволяет установи",
   "sectionTitle": "Распознавание лиц",
   "markdown": "",

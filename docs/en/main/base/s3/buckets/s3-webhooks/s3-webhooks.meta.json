@@ -2,7 +2,7 @@
   "title": "Webhooks",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Webhooks - VK Cloud",
+  "metaTitle": "Webhooks",
   "metaDescription": "general information The VK Cloud S3 webhook feature allows you to receive notifications when certain events occur in the bucket. To enable notifications, you mu",
   "sectionTitle": "Webhooks",
   "markdown": "",

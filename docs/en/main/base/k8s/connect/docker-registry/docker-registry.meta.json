@@ -2,7 +2,7 @@
   "title": "Connecting to Docker Registry",
   "pageDescription": "If the Kubernetes cluster has the Docker registry enabled, you can connect to the registry using the procedure described here.",
   "shortDescription": "How to connect to the Docker registry",
-  "metaTitle": "Connecting to Docker Registry - VK Cloud",
+  "metaTitle": "Connecting to Docker Registry",
   "metaDescription": "",
   "sectionTitle": "Connecting to Docker Registry",
   "markdown": "If the Kubernetes cluster has the Docker registry enabled, you can connect to the registry using the procedure described here.",

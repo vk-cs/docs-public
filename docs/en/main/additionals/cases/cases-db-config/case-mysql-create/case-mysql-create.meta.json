@@ -2,7 +2,7 @@
   "title": "Installing and configuring MySQL on Ubuntu",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Installing and configuring MySQL on Ubuntu - VK Cloud",
+  "metaTitle": "Installing and configuring MySQL on Ubuntu",
   "metaDescription": "In this article, we'll look at how to install standalone MySQL, create a database user and configure its rights. Hardware Configuration Ubuntu Server",
   "sectionTitle": "Installing and configuring MySQL on Ubuntu",
   "markdown": "",

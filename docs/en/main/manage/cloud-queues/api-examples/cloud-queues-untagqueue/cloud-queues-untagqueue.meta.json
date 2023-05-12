@@ -2,7 +2,7 @@
   "title": "UntagQueue",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "UntagQueue - VK Cloud",
+  "metaTitle": "UntagQueue",
   "metaDescription": "Remove the cost allocation tags from the specified VK Cloud SQS queue.  Request Parameters Queue Url The URL of the queue.\type: String\required: Yes TagKey.List",
   "sectionTitle": "UntagQueue",
   "markdown": "",

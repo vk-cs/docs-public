@@ -2,7 +2,7 @@
   "title": "Bucket",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Bucket - VK Cloud",
+  "metaTitle": "Bucket",
   "metaDescription": "Operations with Buckets: Create - Create bucket\nListBuckets - Get a list of buckets\nHeadBucket - Check if a bucket exists and has access to it\nListObjects",
   "sectionTitle": "Bucket",
   "markdown": "",
