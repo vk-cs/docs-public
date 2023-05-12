@@ -2,7 +2,7 @@
   "title": "DeleteMessageBatch",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "DeleteMessageBatch - VK Cloud",
+  "metaTitle": "DeleteMessageBatch",
   "metaDescription": "The request deletes up to ten messages from the specified queue. The result of the action for each message in the response is reported separately.  DeleteMe Request Parameters",
   "sectionTitle": "DeleteMessageBatch",
   "markdown": "",

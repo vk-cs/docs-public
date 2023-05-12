@@ -2,7 +2,7 @@
   "title": "Как настроить централизованное логирование для Docker Swarm с помощью Fluentd",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Как настроить централизованное логирование для Docker Swarm с помощью Fluentd  - VK Cloud",
+  "metaTitle": "Как настроить централизованное логирование для Docker Swarm с помощью Fluentd",
   "metaDescription": "Конфигурация оборудования Чтобы выполнить данный сценарий мониторинга, установите и настройте серверы c использованием следующего оборудования:  Docker на",
   "sectionTitle": "Как настроить централизованное логирование для Docker Swarm с помощью Fluentd",
   "markdown": "",

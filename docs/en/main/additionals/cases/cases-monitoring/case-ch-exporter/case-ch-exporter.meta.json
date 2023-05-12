@@ -2,7 +2,7 @@
   "title": "Database Monitoring: Clickhouse Exporter",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Database Monitoring: Clickhouse Exporter - VK Cloud",
+  "metaTitle": "Database Monitoring: Clickhouse Exporter",
   "metaDescription": "Hardware Configuration To run this monitoring script, install and configure servers using the following hardware: Prometheus",
   "sectionTitle": "Database Monitoring: Clickhouse Exporter",
   "markdown": "",

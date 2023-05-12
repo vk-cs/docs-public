@@ -2,7 +2,7 @@
   "title": "Быстрый старт",
   "pageDescription": "Начало работы с MLflow.",
   "shortDescription": "Начало работы с сервисом MLflow",
-  "metaTitle": "Быстрый старт - VK Cloud",
+  "metaTitle": "Быстрый старт",
   "metaDescription": "Быстрый старт",
   "sectionTitle": "Быстрый старт",
   "markdown": "MLflow - один из основных open source инструментов для решения задач MLOps, таких как: \n- трекинг экспериментов и моделей;\n- воспроизводимость экспериментов;\n- деплой ml моделей;\n- обеспечение взаимодействия команд при работе над комплексными data science и machine learning задачами.",

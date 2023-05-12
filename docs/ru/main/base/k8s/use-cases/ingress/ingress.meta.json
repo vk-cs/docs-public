@@ -2,7 +2,7 @@
   "title": "Использование Ingress",
   "pageDescription": "Как предоставить доступ к развернутым в кластере сервисам с помощью Ingress.",
   "shortDescription": "Как предоставить доступ к развернутым в кластере сервисам с помощью Ingress",
-  "metaTitle": "Использование Ingress - VK Cloud",
+  "metaTitle": "Использование Ingress",
   "metaDescription": "",
   "sectionTitle": "Использование Ingress",
   "markdown": "Как предоставить доступ к развернутым в кластере сервисам с помощью Ingress.",

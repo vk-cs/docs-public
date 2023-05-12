@@ -2,7 +2,7 @@
   "title": "Installing and configuring ELK, collecting, analyzing and visualizing logs",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Install and configure ELK, collect, analyze and visualize logs - VK Cloud",
+  "metaTitle": "Install and configure ELK, collect, analyze and visualize logs",
   "metaDescription": "Hardware Configuration To run this scenario, you need an ELK server installed and configured on Ubuntu 18.04 LTS x86_64. Warning\nRev",
   "sectionTitle": "Installing and configuring ELK, collecting, analyzing and visualizing logs",
   "markdown": "",

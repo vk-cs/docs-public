@@ -2,7 +2,7 @@
   "title": "Installing and configuring Redis on Ubuntu",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Installing and configuring Redis on Ubuntu - VK Cloud",
+  "metaTitle": "Installing and configuring Redis on Ubuntu",
   "metaDescription": "In this article, we'll look at how to install standalone Redis, create a database user, configure permissions and network access. Hardware configuration",
   "sectionTitle": "Installing and configuring Redis on Ubuntu",
   "markdown": "",

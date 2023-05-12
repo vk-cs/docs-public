@@ -2,7 +2,7 @@
   "title": "Installing and configuring Harbor",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Installing and configuring Harbor - VK Cloud",
+  "metaTitle": "Installing and configuring Harbor",
   "metaDescription": "In this article, we'll see how to install and configure the Harbor repositories. After that, you can set up auto-deployment of the application in the cluster",
   "sectionTitle": "Installing and configuring Harbor",
   "markdown": "",

@@ -2,7 +2,7 @@
   "title": "API",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "API - VK Cloud",
+  "metaTitle": "API",
   "metaDescription": "Cluster creation All instructions when working with the API are executed in the console. To create a Big Data cluster, do the following: curl -s -H",
   "sectionTitle": "API",
   "markdown": "",
