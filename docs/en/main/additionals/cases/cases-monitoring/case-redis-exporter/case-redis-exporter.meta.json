@@ -2,7 +2,7 @@
   "title": "Database Monitoring: Redis Exporter",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Database monitoring: Redis Exporter - VK Cloud",
+  "metaTitle": "Database monitoring: Redis Exporter",
   "metaDescription": "Hardware Configuration To run this monitoring script, install and configure servers using the following hardware: Prometheus",
   "sectionTitle": "Database Monitoring: Redis Exporter",
   "markdown": "",

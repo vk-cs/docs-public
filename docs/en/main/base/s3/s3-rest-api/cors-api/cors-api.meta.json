@@ -2,7 +2,7 @@
   "title": "CORS",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "CORS - VK Cloud",
+  "metaTitle": "CORS",
   "metaDescription": "The VK Cloud Object Storage service allows you to manage the CORS bucket configuration. To load the CORS configuration, you need to generate an XML document. Li",
   "sectionTitle": "CORS",
   "markdown": "",

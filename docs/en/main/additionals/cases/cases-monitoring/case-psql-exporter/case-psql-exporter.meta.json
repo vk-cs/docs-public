@@ -2,7 +2,7 @@
   "title": "Database Monitoring: PostgreSQL Exporter",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Database Monitoring: PostgreSQL Exporter - VK Cloud",
+  "metaTitle": "Database Monitoring: PostgreSQL Exporter",
   "metaDescription": "Hardware Configuration To run this monitoring script, install and configure servers using the following hardware: Prometheus",
   "sectionTitle": "Database monitoring: PostgreSQL Exporter",
   "markdown": "",

@@ -2,7 +2,7 @@
   "title": "Interpreting API responses",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Interpreting API responses - VK Cloud",
+  "metaTitle": "Interpreting API responses",
   "metaDescription": "In response to a request via the VK API, CS SQS returns an XML data structure containing the results of the request.  Structure of a successful response If the request is successful, the main",
   "sectionTitle": "Interpreting API responses",
   "markdown": "",

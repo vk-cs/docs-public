@@ -2,7 +2,7 @@
   "title": "API",
   "pageDescription": "Публичное HTTP API состоит из набора отдельных сервисов на каждый из которых опубликована отдельная OpenAPI-спецификация (OpenAPI 2.0).",
   "shortDescription": "Набор отдельных сервисов с отдельными OpenAPI-спецификациями",
-  "metaTitle": "API - VK Cloud",
+  "metaTitle": "API",
   "metaDescription": "",
   "sectionTitle": "API",
   "markdown": "Публичное HTTP API состоит из набора отдельных сервисов на каждый из которых опубликована отдельная OpenAPI-спецификация (OpenAPI 2.0).",

@@ -2,7 +2,7 @@
   "title": "Text Recognition",
   "pageDescription": "",
   "shortDescription": "Determination of the text in the image",
-  "metaTitle": "Text Recognition - VK Cloud",
+  "metaTitle": "Text Recognition",
   "metaDescription": "This method allows you to recognize text in an image. The authorization data is passed in the request string: Parameter Value Type oauth_token string",
   "sectionTitle": "Text Recognition",
   "markdown": "",

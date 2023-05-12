@@ -2,7 +2,7 @@
   "title": "Cert-Manager + Helm in Kubernetes",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Cert-Manager + Helm in Kubernetes - VK Cloud",
+  "metaTitle": "Cert-Manager + Helm in Kubernetes",
   "metaDescription": "Hardware configuration Installed and configured Kubernetes cluster.\nWhen using Helm2, installed Tiller. What is Cert-manager Cert-manag",
   "sectionTitle": "Cert-Manager + Helm in Kubernetes",
   "markdown": "",

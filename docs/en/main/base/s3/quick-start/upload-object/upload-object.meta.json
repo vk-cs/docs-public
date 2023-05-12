@@ -2,7 +2,7 @@
   "title": "Uploading objects to bucket",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Uploading objects to bucket - VK Cloud",
+  "metaTitle": "Uploading objects to bucket",
   "metaDescription": "The created bucket can be loaded with files that are saved as an S3 object. Objects are composed of file data and metadata describing the object. The bucke",
   "sectionTitle": "Uploading objects to bucket",
   "markdown": "",

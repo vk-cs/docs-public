@@ -2,7 +2,7 @@
   "title": "Scaling cluster",
   "pageDescription": "A Kubernetes cluster consists of master nodes and groups of worker nodes. Cluster scaling is supported in both manual and automatic (depending on the load) modes. Scaling is done by manipulating the size of groups of worker nodes.",
   "shortDescription": "Manual and automatic scaling of Kubernetes cluster nodes depending on load.",
-  "metaTitle": "Scaling cluster - VK Cloud",
+  "metaTitle": "Scaling cluster",
   "metaDescription": "",
   "sectionTitle": "Scaling cluster",
   "markdown": "A Kubernetes cluster consists of master nodes and groups of worker nodes. Cluster scaling is supported in both manual and automatic (depending on the load) modes. Scaling is done by manipulating the size of groups of worker nodes.",
