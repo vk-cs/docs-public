@@ -2,7 +2,7 @@
   "title": "Working with Cloud Queues in AWS CLI",
   "pageDescription": "A fully managed message queue management service. Compatible with Amazon SQS API.",
   "shortDescription": "A fully managed message queue management service. Compatible with Amazon SQS API.",
-  "metaTitle": "Working with Cloud Queues in AWS CLI - VK Cloud",
+  "metaTitle": "Working with Cloud Queues in AWS CLI",
   "metaDescription": "The Cloud Queues service from VK Cloud is compatible with the Amazon SQS API. To work with the queue service, you can use the [AWS CLI] tool",
   "sectionTitle": "Working with Cloud Queues in AWS CLI",
   "markdown": "A fully managed message queue management service. Compatible with Amazon SQS API.",

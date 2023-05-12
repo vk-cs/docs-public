@@ -2,7 +2,7 @@
   "title": "Arenadata Streaming",
   "pageDescription": "",
   "shortDescription": "Кластеры Arenadata Streaming для работы с большими массивами данных",
-  "metaTitle": "Arenadata Streaming - VK Cloud",
+  "metaTitle": "Arenadata Streaming",
   "metaDescription": "Arenadata Streaming",
   "sectionTitle": "Arenadata Streaming",
   "markdown": "Полноценный дистрибутив на базе Apache Kafka и Apache NiFi, адаптированный для корпоративного использования, предназначенный для обработки потоков большого объема данных.",

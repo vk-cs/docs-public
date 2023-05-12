@@ -2,7 +2,7 @@
   "title": "ListQueueTags",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "ListQueueTags - VK Cloud",
+  "metaTitle": "ListQueueTags",
   "metaDescription": "A list of all cost allocation tags added to the specified Amazon SQS queue.  Request Parameters Queue Url The URL of the queue.\n Type: String\required:",
   "sectionTitle": "ListQueueTags",
   "markdown": "",

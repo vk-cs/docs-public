@@ -2,7 +2,7 @@
   "title": "RemovePermission",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "RemovePermission - VK Cloud",
+  "metaTitle": "RemovePermission",
   "metaDescription": "Cancels all permissions in the queue policy corresponding to the specified Label parameter. Request parameters label Identification of deletion permission. This",
   "sectionTitle": "RemovePermission",
   "markdown": "",

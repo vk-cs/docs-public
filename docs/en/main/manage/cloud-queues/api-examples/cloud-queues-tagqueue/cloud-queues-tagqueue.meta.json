@@ -2,7 +2,7 @@
   "title": "TagQueue",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "TagQueue - VK Cloud",
+  "metaTitle": "TagQueue",
   "metaDescription": "Add cost allocation tags to the specified VK Cloud SQS queue.  When using queue tags, consider the following recommendations: It is not recommended to add",
   "sectionTitle": "TagQueue",
   "markdown": "",

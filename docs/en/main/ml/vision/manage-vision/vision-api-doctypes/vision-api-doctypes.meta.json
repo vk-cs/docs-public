@@ -2,7 +2,7 @@
   "title": "Recognition of types of documents",
   "pageDescription": "",
   "shortDescription": "Determining the document and its type",
-  "metaTitle": "Recognition of types of documents - VK Cloud",
+  "metaTitle": "Recognition of types of documents",
   "metaDescription": "This method allows you to determine whether the photograph is a document and a possible type of document.Request Authorization data is transmitted in the query line: p",
   "sectionTitle": "Recognition of types of documents",
   "markdown": "",

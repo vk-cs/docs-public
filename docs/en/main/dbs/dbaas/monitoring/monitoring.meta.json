@@ -2,7 +2,7 @@
   "title": "Monitoring",
   "pageDescription": "Monitor the health of your database instances with detailed metrics for individual hosts.",
   "shortDescription": "Monitoring of database instances deployed in VK Cloud",
-  "metaTitle": "Monitoring - VK Cloud",
+  "metaTitle": "Monitoring",
   "metaDescription": "",
   "sectionTitle": "Monitoring",
   "markdown": "Monitor the status of database instances with detailed information about individual host metrics.",
