@@ -7,7 +7,7 @@
   "sectionTitle": "Тарификация",
   "markdown": "Тарифы получения услуг платформы VK Cloud.",
   "icon": "",
-  "weight": 1,
+  "weight": 5,
   "infobarItems": null,
   "uuid": "98fdfc99-2f59-4b30-befc-1adfdadf6ee1"
 }
