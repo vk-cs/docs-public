@@ -2,7 +2,7 @@
   "title": "SetQueueAttributes",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "SetQueueAttributes - VK Cloud",
+  "metaTitle": "SetQueueAttributes",
   "metaDescription": "Sets the value of one or more queue attributes. When you change queue attributes, this change can take up to 60 seconds before fighting",
   "sectionTitle": "SetQueueAttributes",
   "markdown": "",

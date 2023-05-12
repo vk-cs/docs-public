@@ -2,7 +2,7 @@
   "title": "Multipart upload",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Multipart upload - VK Cloud",
+  "metaTitle": "Multipart upload",
   "metaDescription": "VK Cloud provides a mechanism for working with large files that might be too large to upload a file to a bucket one time using the GUI or CLI. Multiple (multipa",
   "sectionTitle": "Multipart upload",
   "markdown": "",

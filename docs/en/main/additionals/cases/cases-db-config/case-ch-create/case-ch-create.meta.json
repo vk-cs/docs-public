@@ -2,7 +2,7 @@
   "title": "Installing and configuring ClickHouse on Ubuntu",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Installing and configuring ClickHouse on Ubuntu - VK Cloud",
+  "metaTitle": "Installing and configuring ClickHouse on Ubuntu",
   "metaDescription": "In this article, we will look at how to install standalone ClickHouse, create a database user, configure rights and network access. Hardware configuration",
   "sectionTitle": "Installing and configuring ClickHouse on Ubuntu",
   "markdown": "",

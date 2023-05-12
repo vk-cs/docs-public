@@ -2,7 +2,7 @@
   "title": "ChangeMessageVisibility",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "ChangeMessageVisibility - VK Cloud",
+  "metaTitle": "ChangeMessageVisibility",
   "metaDescription": "The request changes the visibility timeout of the specified message in the queue to a new value. The default message visibility timeout is 30 seconds (minimum",
   "sectionTitle": "ChangeMessageVisibility",
   "markdown": "",

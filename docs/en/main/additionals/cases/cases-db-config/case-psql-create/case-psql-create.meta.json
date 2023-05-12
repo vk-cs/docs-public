@@ -2,7 +2,7 @@
   "title": "Installing and configuring PostgreSQL on Ubuntu",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Installing and configuring PostgreSQL on Ubuntu - VK Cloud",
+  "metaTitle": "Installing and configuring PostgreSQL on Ubuntu",
   "metaDescription": "This article will show you how to install standalone PostgreSQL , create a database user, configure permissions and network access. Hardware configuration",
   "sectionTitle": "Installing and configuring PostgreSQL on Ubuntu",
   "markdown": "",

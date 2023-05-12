@@ -2,7 +2,7 @@
   "title": "Image processing methods",
   "pageDescription": "",
   "shortDescription": "Improving the quality of images",
-  "metaTitle": "Image processing methods - VK Cloud",
+  "metaTitle": "Image processing methods",
   "metaDescription": "The improve method is used to improve photos. Request Authorization data is passed in the request string: Parameter Value Type oauth_token string OAu",
   "sectionTitle": "Image processing methods",
   "markdown": "",
