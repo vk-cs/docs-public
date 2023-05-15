@@ -1,11 +1,19 @@
-Перед тем как импортировать виртуальную машину из VMware, убедитесь, что она соответствует следующим требованиям:
+## 1. Проверьте возможность миграции
 
-- Операционная система ВМ имеет 64-битную архитектуру.
+Виртуальная машина VMware должна соответствовать следующим требованиям:
+
+- операционная система ВМ имеет 64-битную архитектуру;
+- текущий пользователь обладает правами администратора;
+- к ВМ подключен хотя бы один диск;
 - ВМ использует эмуляцию BIOS.
-- Текущий пользователь обладает правами администратора.
-- К ВМ подключен хотя бы один диск.
 
-## 1. Подготовьте ВМ к миграции
+<info>
+
+Для миграции ВМ с эмуляцией UEFI используйте [Hystax](/ru/additionals/hystax/migration) или перенесите данные на новую виртуальную машину VMware с эмуляцией BIOS.
+
+</info>
+
+## 2. Подготовьте ВМ к миграции
 
 <tabs>
 <tablist>
@@ -15,59 +23,145 @@
 <tabpanel>
 
 1. [Проверьте](https://www.tencentcloud.com/document/product/213/9929) наличие драйверов VirtIO в системе.
-2. Проверьте наличие QEMU Guest Agent:
+2. Проверьте наличие гостевого агента QEMU:
 
    ```bash
    systemctl status qemu-guest-agent
    ```
 
-   При необходимости [установите](https://pve.proxmox.com/wiki/Qemu-guest-agent) QEMU Guest Agent.
+   Если гостевой агент QEMU отсутствует, [установите](https://pve.proxmox.com/wiki/Qemu-guest-agent) его.
+3. Проверьте, установлена ли утилита Cloud-Init:
 
-3. [Удалите](https://docs.vmware.com/en/VMware-Tools/12.0.0/com.vmware.vsphere.vmwaretools.doc/GUID-6F7BE33A-3B8A-4C57-9C35-656CE05BE22D.html) VMware Tools, если это ПО установлено.
+   ```bash
+   cloud-init --version
+   ```
+
+   Если утилита отсутствует, [установите](https://www.tencentcloud.com/document/product/213/12587) ее.
+4. Создайте файл `/etc/netplan/50-cloud-init.yaml` со следующим содержимым:
+
+   ```yaml
+   network:
+       ethernets:
+           ens3:
+               dhcp4: true
+       version: 2
+   ```
+
+5. [Удалите](https://docs.vmware.com/en/VMware-Tools/12.0.0/com.vmware.vsphere.vmwaretools.doc/GUID-6F7BE33A-3B8A-4C57-9C35-656CE05BE22D.html) VMware Tools, если это ПО установлено.
 
 </tabpanel>
 <tabpanel>
 
-1. [Установите](https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md) драйверы VirtIO.
-2. [Установите](https://pve.proxmox.com/wiki/Qemu-guest-agent) QEMU Guest Agent.
-3. Добавьте информацию о драйверах в реестр Windows:
+1. Проверьте, что обновления операционной системы установлены, и перезагрузите ВМ.
+2. [Установите](https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md) драйверы VirtIO.
+3. [Установите](https://pve.proxmox.com/wiki/Qemu-guest-agent) QEMU Guest Agent.
+4. Добавьте информацию о драйверах в реестр Windows:
 
-    1. [Скачайте](http://migration.platform9.com.s3-us-west-1.amazonaws.com/virtio.reg) Virtio Registry File.
-    2. Запустите файл и разрешите внести изменения в реестр.
+   1. [Скачайте](http://migration.platform9.com.s3-us-west-1.amazonaws.com/virtio.reg) Virtio Registry File.
+   2. Запустите файл и разрешите внести изменения в реестр.
 
 5. [Удалите](https://docs.vmware.com/en/VMware-Tools/12.0.0/com.vmware.vsphere.vmwaretools.doc/GUID-6F7BE33A-3B8A-4C57-9C35-656CE05BE22D.html) VMware Tools, если это ПО установлено.
 
 </tabpanel>
 </tabs>
 
-## 2. Экспортируйте виртуальную машину
+## 3. Экспортируйте виртуальную машину
 
 1. Остановите виртуальную машину.
-2. Выберите нужную ВМ и выполните экспорт в формат `.ovf`.
 
-Будет создано несколько файлов `.ovf` и `.vmdk` — для дальнейшей работы понадобится второй файл.
+   <info>
 
-## 3. Импортируйте образ ВМ в VK Cloud
+   Если после удаления VMware Tools подключение к ВМ по SSH или RDP не работает, используйте консоль VMware.
+
+   </info>
+2. Выберите нужную ВМ и выполните экспорт в OVF.
+
+   Будут созданы файлы с расширением `.ovf` и `.vmdk` — для дальнейшей работы понадобится файл `.vmdk`.
+
+## 4. Импортируйте образ ВМ в VK Cloud
 
 Для загрузки образа виртуальной машины используйте OpenStack CLI, чтобы избежать возможных ошибок при обработке веб-интерфейсом файлов большого размера.
 
-1. Перед началом работы убедитесь, что OpenStack CLI [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем.
-2. Загрузите полученный в результате экспорта файл `.vmdk` в существующий проект VK Cloud:
+1. Убедитесь, что клиент OpenStack [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем.
+2. Конвертируйте файл диска из формата VMDK в RAW:
 
    ```bash
-   openstack image create --private --container-format bare --disk-format vmdk --property store=s3 --file <файл.vmdk> <название_образа>
+   qemu-img convert -f vmdk -O raw <путь_к_файлу.vmdk> <путь_к_файлу.raw>
    ```
 
-   Если виртуальная машина должна поддерживать резервное копирование, загрузите файл `.vmdk` с указанием метаданных наличия гостевого агента:
+3. Загрузите полученный файл образа `.raw` в существующий проект VK Cloud.
+
+   <tabs>
+   <tablist>
+   <tab>Linux</tab>
+   <tab>Windows</tab>
+   </tablist>
+
+   <tabpanel>
 
    ```bash
-   openstack image create --private --container-format bare --disk-format vmdk --file <файл.vmdk> --property hw_qemu_guest_agent=yes --property store=s3 --property os_require_quiesce=yes <название_образа>
+   openstack image create --private --container-format bare --disk-format raw --property store=s3 --file <путь_к_файлу.raw> <название образа>
    ```
 
-3. Проверьте загрузку образа в [личном кабинете](https://mcs.mail.ru/app/) VK Cloud в разделе **Облачные вычисления → Образы** или через CLI:
+   </tabpanel>
+   <tabpanel>
+
+   При импорте образа Windows укажите тип шины диска — IDE (параметр `hw_disk_bus`):
+
+   ```bash
+   openstack image create --progress --private --container-format bare --disk-format raw <путь_к_файлу.raw> --property store=s3 --property os_type=windows --property hw_disk_bus=ide --min-disk 40 <название образа>
+   ```
+
+   </tabpanel>
+   </tabs>
+
+   Если виртуальная машина должна поддерживать резервное копирование, добавьте в команду параметры:
+
+   ```--property hw_qemu_guest_agent=yes --property os_require_quiesce=yes```
+
+4. Проверьте, что образ появился в проекте и имеет статус `ACTIVE`:
 
    ```bash
    openstack image list
    ```
 
-   Образ должен появиться в списке и иметь статус `ACTIVE`.
+   В [личном кабинете](https://mcs.mail.ru/app/) VK Cloud список образов находится в разделе **Облачные вычисления → Образы**.
+
+## 5. Создайте виртуальную машину
+
+<tabs>
+<tablist>
+<tab>Linux</tab>
+<tab>Windows</tab>
+</tablist>
+
+<tabpanel>
+
+Используйте импортированный образ для [создания ВМ Linux](../../instructions/vm/vm-create#sozdayte-vm):
+
+- при создании ВМ в личном кабинете выберите образ из списка;
+- при создании через OpenStack CLI укажите ID образа в соответствующей команде.
+
+</tabpanel>
+
+<tabpanel>
+
+1. Используйте импортированный образ для [создания промежуточной ВМ Windows](../../instructions/vm/vm-create#sozdayte-vm).
+2. Добавьте драйвер VirtIO HBA в загрузку Windows.
+
+   1. [Создайте диск](../../instructions/vm-volumes#sozdanie-diska) минимального размера и [подключите](../../instructions/vm-volumes#podklyuchenie-diska-k-vm) его к ВМ.
+   2. [Запустите](../../instructions/vm/vm-manage#zapusk--ostanovka--perezagruzka-vm) виртуальную машину.
+   3. Запустите установщик VirtIO в режиме `repair`.
+   4. [Остановите](../../instructions/vm/vm-manage#zapusk--ostanovka--perezagruzka-vm) виртуальную машину.
+3. [Создайте образ](../../instructions/vm-images/vm-images-manage#sozdanie-obraza) из загрузочного диска ВМ.
+4. Измените тип шины диска нового образа:
+
+   ```bash
+   openstack image set --property hw_disk_bus=virtio <ID нового образа>
+   ```
+
+5. [Создайте целевую ВМ Windows](../../instructions/vm/vm-create#sozdayte-vm) из нового образа.
+6. Удалите промежуточную виртуальную машину, созданную на шаге 1, а также импортированный образ.
+
+</tabpanel>
+</tabs>
