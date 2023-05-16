@@ -17,7 +17,13 @@
 Пример запроса для генерации токена:
 
 ```bash
-curl -L -w '\n' -X POST 'https://mcs.mail.ru/auth/oauth/v1/token' -D - -HContent-Type:application/json -d '{"client_id":"mcs5719255887.voice.6Wg9D18XPZN28DWy4wEba", "client_secret":"1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ", "grant_type":"client_credentials"}'
+curl -L -w '\n' -X POST 'https://mcs.mail.ru/auth/oauth/v1/token' -D - \
+-H Content-Type:application/json \
+-d '{
+  "client_id":"mcs5719255887.voice.6Wg9D18XPZN28DWy4wEba",
+  "client_secret":"1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "grant_type":"client_credentials"
+  }'
 ```
 
 Пример ответа:
@@ -43,8 +49,8 @@ curl -L -w '\n' -X POST 'https://mcs.mail.ru/auth/oauth/v1/token' -D - -HContent
 Пример запроса на обновление токена:
 
 ```bash
-curl -X POST 'https://mcs.mail.ru/auth/oauth/v1/token'
--H Content-Type:application/json
+curl -X POST 'https://mcs.mail.ru/auth/oauth/v1/token' \
+-H Content-Type:application/json \
 -d '{
 "client_id":"mcs5719255887.voice.6Wg9D18XPZN28DWy4wEba",
 "refresh_token":"ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890", "grant_type":"refresh_token"
