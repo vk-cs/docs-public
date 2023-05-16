@@ -1,11 +1,11 @@
 {
   "title": "Docker Registry",
-  "pageDescription": "Здесь описана продвинутая установка аддона реестра Docker, включающая редактирование кода аддона.",
+  "pageDescription": "Здесь описана настройка и установка аддона реестра Docker.",
   "shortDescription": "",
   "metaTitle": "Docker Registry",
   "metaDescription": "",
   "sectionTitle": "Docker Registry",
-  "markdown": "Здесь описана продвинутая установка аддона реестра Docker, включающая редактирование кода аддона.",
+  "markdown": "Здесь описана настройка и установка аддона реестра Docker.",
   "icon": "",
   "infobarItems": null,
   "weight": 1,
