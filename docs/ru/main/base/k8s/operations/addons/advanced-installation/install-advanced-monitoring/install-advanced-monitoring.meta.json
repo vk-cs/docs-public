@@ -1,13 +1,13 @@
 {
   "title": "Kube Prometheus Stack",
-  "pageDescription": "Здесь описана продвинутая установка аддона со средствами мониторинга, включающая редактирование кода аддона.",
+  "pageDescription": "Здесь описана настройка и установка аддона со средствами мониторинга.",
   "shortDescription": "",
   "metaTitle": "Kube Prometheus Stack",
   "metaDescription": "",
   "sectionTitle": "Kube Prometheus Stack",
-  "markdown": "Здесь описана продвинутая установка аддона со средствами мониторинга, включающая редактирование кода аддона.",
+  "markdown": "Здесь описана настройка и установка аддона со средствами мониторинга.",
   "icon": "",
   "infobarItems": null,
-  "weight": 2,
+  "weight": 3,
   "uuid": "8cf4a3e8-dc20-4b43-ae50-830b9d3d41fa"
 }
