@@ -1,47 +1,76 @@
-To synthesize speech, use a POST or GET request to [https://voice.mcs.mail.ru/tts](https://voice.mcs.mail.ru/tts).
+The speech synthesis function allows you to voice strings of text. To synthesize speech, use a POST or GET request to `https://voice.mcs.mail.ru/tts`.
 
-To synthesize speech using a GET request, you need to send it in the `text` parameter:
+## The Request
+
+<tabs>
+<tablist>
+<tab>GET</tab>
+<tab>POST</tab>
+</tablist>
+<tabpanel>
+
+To synthesize speech using a GET request, send the text in the `text` parameter.
+
+Request example:
 
 ```bash
 curl -L --request GET \
-    --url 'https://voice.mcs.mail.ru/tts?text=%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D1%82'
-    --header 'Authorization: Bearer xxxxxxxxxxxx'
- > ~/Downloads/tts.mp3
+    --url 'https://voice.mcs.mail.ru/tts?text=<text to voice>' \
+    --output <file name>
+    --header 'Authorization: Bearer <access token>'
 ```
 
-To synthesize speech using a POST request, you need to send it in the body:
+</tabpanel>
+<tabpanel>
+
+To synthesize speech using a POST request, send the text in the body of the request.
+
+Request example:
 
 ```bash
 curl -L --request POST \
-  --url 'https://voice.mcs.mail.ru/tts?encoder=mp3'
-  --header 'Authorization: Bearer xxxxxxxxxxxx'
-  --output tts.mp3
+  --url 'https://voice.mcs.mail.ru/tts?encoder=mp3' \
+  --header 'Authorization: Bearer <access token>' \
+  --header 'Content-Type: text/plain' \
+  --data '<text to voice>' \
+  --output <file name>
 ```
 
-## Extra options
+</tabpanel>
+</tabs>
 
-The following parameters are allowed in POST and GET requests:
+Request parameters:
 
-| Parameter  | Description             | Valid values ​​                                                                               |
-| ---------- | ----------------------- | --------------------------------------------------------------------------------------------- |
-| model_name | Name of the voice model | katherine (or katherine-hifigan) - default maria (or maria-serious); pavel (or pavel-hifigan) |
-| encoder    | Encoder type            | pcm - default mp3; opus                                                                       |
-| tempo      | Speech rate             | from 0.75 to 1.75                                                                             |
+| Parameter | Description | Transmission method | Accepted values |
+| --- | --- | --- | --- |
+| `model_name` | Name of the voice model | URL |katherine (or katherine-hifigan) — by default; maria (or maria-serious); pavel (or pavel-hifigan) |
+| `encoder` | Encoder type | URL | pcm — by default; mp3; opus |
+| `tempo` | Speech rate | URL | 0.75 to 1.75 |
+| `text` | Text for voiceover (GET request)| URL | Up to 2000 symbols in UTF-8 |
+| `<text to voice>` | Text for voiceover (POST request) | Option `data`| Up to 2000 symbols in UTF-8|
+| `<file name>` | File name with extention | Option `output` | — |
+| `<access token>`| Access token for authorization. Read more about authorization in the section [Getting an access token](../get-voice-token/) | Option `header`| — |
 
-In both cases, the response will be an audio stream, the format of which is specified in Content-Type.
+### Restrictions
 
-## Error codes
+The text passed in the request must be encoded in UTF-8 and contain no more than 20,000 characters.
 
-| Code | Status | Description            |
-| ---- | ------ | ---------------------- |
-| 4048 | 400    | Invalid token          |
-| 4049 | 400    | Inactive project VK Cloud |
-| 4051 | 14001  | Incorrect text format  |
+## Response
 
-### See also
+The response contains an audio file of the selected format. By default, a PCM file is created.
 
-[Description of the Cloud Voice service](https://mcs.mail.ru/help/ru_RU/cloud-voice/about-cloud-voice)
+## Erro codes
 
-[Getting an access token](https://mcs.mail.ru/help/ru_RU/cloud-voice/get-token)
+| Code  | State | Description                   |
+| ---- | ------ | -------------------------- |
+| 4048 | 400    | Invalid token       |
+| 4049 | 400    | Inactive VK Cloud project   |
+| 4051 | 14001  | Invalid text format |
 
-[Speech recognition](https://mcs.mail.ru/help/ru_RU/cloud-voice/speech-recognition)
+## See also
+
+[About Cloud Voice](../about-cloud-voice/)
+
+[Getting an access token](../get-voice-token/)
+
+[Speech recognition](../speech-recognition/)

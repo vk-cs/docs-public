@@ -1,34 +1,63 @@
-Для того чтобы синтезировать речь, воспользуйтесь POST или GET-запросом в [https://voice.mcs.mail.ru/tts](https://voice.mcs.mail.ru/tts).
+Функция синтеза речи позволяет озвучивать строки текста. Чтобы синтезировать речь, воспользуйтесь POST- или GET-запросом в `https://voice.mcs.mail.ru/tts`.
 
-Для синтеза речи с помощью GET-запроса, нужно отправить его в параметре `text`:
+## Запрос
+
+<tabs>
+<tablist>
+<tab>GET</tab>
+<tab>POST</tab>
+</tablist>
+<tabpanel>
+
+Для синтеза речи с помощью GET-запроса отправьте текст в параметре `text`.
+
+Пример запроса:
 
 ```bash
 curl -L --request GET \
-    --url 'https://voice.mcs.mail.ru/tts?text=%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D1%82' \
-    --header 'Authorization: Bearer xxxxxxxxxxxx'
- > ~/Downloads/tts.mp3
+    --url 'https://voice.mcs.mail.ru/tts?text=<текст для озвучивания>' \
+    --output <имя файла>
+    --header 'Authorization: Bearer <токен доступа>'
 ```
 
-Для синтеза речи с помощью POST-запроса нужно отправить его в теле:
+</tabpanel>
+<tabpanel>
+
+Для синтеза речи с помощью POST-запроса отправьте текст в теле запроса.
+
+Пример запроса:
 
 ```bash
 curl -L --request POST \
   --url 'https://voice.mcs.mail.ru/tts?encoder=mp3' \
-  --header 'Authorization: Bearer xxxxxxxxxxxx' \
-  --output tts.mp3
+  --header 'Authorization: Bearer <токен доступа>' \
+  --header 'Content-Type: text/plain' \
+  --data '<текст для озвучивания>' \
+  --output <имя файла>
 ```
 
-## Дополнительные параметры
+</tabpanel>
+</tabs>
 
-В POST и GET-запросах допускаются следующие параметры:
+Параметры запроса:
 
-| Параметр | Описание | Допустимые значения |
-| --- | --- | --- |
-| model_name | Название модели голоса | katherine (или katherine-hifigan) — по умолчанию; maria (или maria-serious); pavel (или pavel-hifigan) |
-| encoder | Тип энкодера | pcm — по умолчанию; mp3; opus |
-| tempo | Скорость речи | от 0.75 до 1.75 |
+| Параметр | Описание | Способ передачи | Допустимые значения |
+| --- | --- | --- | --- |
+| `model_name` | Название модели голоса | URL | katherine (или katherine-hifigan) — по умолчанию; maria (или maria-serious); pavel (или pavel-hifigan) |
+| `encoder` | Тип энкодера | URL | pcm — по умолчанию; mp3; opus |
+| `tempo` | Скорость речи | URL | от 0.75 до 1.75 |
+| `text` | Текст для озвучивания (GET-запрос)| URL | До 2000 символов в формате UTF-8 |
+| `<текст для озвучивания>` | Текст для озвучивания (POST-запрос) | Опция `data`| До 2000 символов в формате UTF-8 |
+| `<имя файла>` | Имя аудиофайла с расширением | Опция `output` | — |
+| `<токен доступа>`| Токен доступа для авторизации. Подробнее об авторизации в разделе [Получение токена доступа](../get-voice-token/) | Опция `header`| — |
 
-В обоих случаях в ответе будет аудиопоток, формат которого указан в Content-Type.
+### Ограничения
+
+Передаваемый в запросе текст должен быть в кодировке UTF-8 и содержать не больше 20000 символов.
+
+## Ответ
+
+В ответе содержится аудиофайл выбранного формата. По умолчанию создается PCM-файл.
 
 ## Коды ошибок
 
@@ -38,10 +67,10 @@ curl -L --request POST \
 | 4049 | 400    | Неактивный проект VK Cloud    |
 | 4051 | 14001  | Некорректный формат текста |
 
-### Смотрите также
+## Смотрите также
 
-[Описание сервиса Cloud Voice](https://mcs.mail.ru/help/ru_RU/cloud-voice/about-cloud-voice)
+[Описание сервиса Cloud Voice](../about-cloud-voice/)
 
-[Получение токена доступа](https://mcs.mail.ru/help/ru_RU/cloud-voice/get-token)
+[Получение токена доступа](../get-voice-token/)
 
-[Распознавание речи](https://mcs.mail.ru/help/ru_RU/cloud-voice/speech-recognition)
+[Распознавание речи](../speech-recognition/)
