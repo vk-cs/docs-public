@@ -786,7 +786,7 @@ curl -X 'POST' \
   "images": [
     {
       "name": "aaa",
-      "person_i": 1
+      "person_id": 1
     }
   ]
 }'
