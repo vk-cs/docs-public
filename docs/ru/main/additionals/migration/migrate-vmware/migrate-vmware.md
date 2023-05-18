@@ -117,7 +117,9 @@
 
    Если виртуальная машина должна поддерживать резервное копирование, добавьте в команду параметры:
 
-   ```--property hw_qemu_guest_agent=yes --property os_require_quiesce=yes```
+   ```bash
+   --property hw_qemu_guest_agent=yes --property os_require_quiesce=yes
+   ```
 
 4. Проверьте, что образ появился в проекте и имеет статус `ACTIVE`:
 
@@ -137,7 +139,7 @@
 
 <tabpanel>
 
-Используйте импортированный образ для [создания ВМ Linux](../../instructions/vm/vm-create#sozdayte-vm):
+Используйте импортированный образ для [создания ВМ Linux](/ru/base/iaas/instructions/vm/vm-create#sozdayte-vm):
 
 - при создании ВМ в личном кабинете выберите образ из списка;
 - при создании через OpenStack CLI укажите ID образа в соответствующей команде.
@@ -146,21 +148,21 @@
 
 <tabpanel>
 
-1. Используйте импортированный образ для [создания промежуточной ВМ Windows](../../instructions/vm/vm-create#sozdayte-vm).
+1. Используйте импортированный образ для [создания промежуточной ВМ Windows](/ru/base/iaas/instructions/vm/vm-create#sozdayte-vm).
 2. Добавьте драйвер VirtIO HBA в загрузку Windows.
 
-   1. [Создайте диск](../../instructions/vm-volumes#sozdanie-diska) минимального размера и [подключите](../../instructions/vm-volumes#podklyuchenie-diska-k-vm) его к ВМ.
-   2. [Запустите](../../instructions/vm/vm-manage#zapusk--ostanovka--perezagruzka-vm) виртуальную машину.
+   1. [Создайте диск](/ru/base/iaas/instructions/vm-volumes#sozdanie-diska) минимального размера и [подключите](/ru/base/iaas/instructions/vm-volumes#podklyuchenie-diska-k-vm) его к ВМ.
+   2. [Запустите](/ru/base/iaas/instructions/vm/vm-manage#zapusk--ostanovka--perezagruzka-vm) виртуальную машину.
    3. Запустите установщик VirtIO в режиме `repair`.
-   4. [Остановите](../../instructions/vm/vm-manage#zapusk--ostanovka--perezagruzka-vm) виртуальную машину.
-3. [Создайте образ](../../instructions/vm-images/vm-images-manage#sozdanie-obraza) из загрузочного диска ВМ.
+   4. [Остановите](/ru/base/iaas/instructions/vm/vm-manage#zapusk--ostanovka--perezagruzka-vm) виртуальную машину.
+3. [Создайте образ](/ru/base/iaas/instructions/vm-images/vm-images-manage#sozdanie-obraza) из загрузочного диска ВМ.
 4. Измените тип шины диска нового образа:
 
    ```bash
    openstack image set --property hw_disk_bus=virtio <ID нового образа>
    ```
 
-5. [Создайте целевую ВМ Windows](../../instructions/vm/vm-create#sozdayte-vm) из нового образа.
+5. [Создайте целевую ВМ Windows](/ru/base/iaas/instructions/vm/vm-create#sozdayte-vm) из нового образа.
 6. Удалите промежуточную виртуальную машину, созданную на шаге 1, а также импортированный образ.
 
 </tabpanel>

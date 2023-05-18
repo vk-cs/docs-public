@@ -2,8 +2,8 @@
   "title": "Документация",
   "faqLinks": [
     "docs/ru/main/additionals/start",
+    "docs/ru/main/additionals/migration",
     "docs/ru/main/additionals/billing",
-    "docs/ru/main/additionals/cases",
     "docs/ru/main/additionals/start/it-security"
   ],
   "serviceGroupLinks": [],

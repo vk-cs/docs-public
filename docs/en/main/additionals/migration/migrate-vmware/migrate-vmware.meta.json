@@ -8,7 +8,7 @@
   "markdown": "Migration of a VMware virtual machine to VK Cloud.",
   "icon": "",
   "infobarItems": null,
-  "weight": 2,
+  "weight": 3,
   "additionalUuids": [
     "0feb81b2-9fd4-43ec-b982-5c1414a809bf"
   ],
