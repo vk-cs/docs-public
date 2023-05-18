@@ -1,41 +1,80 @@
-Private DNS in VK Cloud is a functionality of a DNS server that operates in project networks and allows accessing instances by DNS names.
+Private DNS in VK Cloud is the functionality of a DNS server running in the project networks of the platform. Allows you to access instances by DNS names.
 
-The service supports configuring the private zone and port names of virtual machines. The DNS server responds with the same addresses as the DHCP ports on the network. For private DNS to work, a DHCP server must be enabled on the network.
+The service supports configuring the private zone and port names of virtual machines. The DNS server responds to the same addresses as the DHCP ports on the network. For private DNS to work on the network, a DHCP server must be enabled.
 
-**Note**
+<warn>
 
-Currently, the private DNS forwarding servers are 8.8.8.8, 8.8.4.4, changing these addresses is not supported.
+At the moment, the private DNS request forwarding servers are `8.8.8.8`, `8.8.4.4`. Changing these addresses is not supported.
 
-## Enabling Private DNS
+</warn>
 
-You can enable the service for a specific network in the "Networks" section of the "Cloud Computing" service [in your VK Cloud account](https://mcs.mail.ru/app/services/server/networks/) . On the page of the required network, on the "Network Settings" tab, select the "Private DNS" option and enter the zone name:![](./assets/1598286541418-snimok-ekrana-2020-08-24-v-19.28.34.png)
+## Editing a zone name for a network
 
-**Attention**
+1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Select the project and region.
+1. Go to **Virtual networks** → **Networks**.
+1. Open the network page by clicking on its name in the general list.
+1. Go to tab **Network settings**.
+1. Enter the zone name in the **Zone** field.
+1. Click the button **Save changes**.
 
-The maximum length for a zone name is 253 characters. Consists of blocks like "[a-z0-9 -] + \\." The maximum block length is 63 characters. The block cannot start and end with "-".
+<warn>
 
-## DNS name setting
+The maximum length of the zone name is 253 characters. Consists of blocks of the form `[a-z0-9-]+\\.`. The maximum block length is 63 characters. A block cannot start and end with `-`.
 
-When creating a virtual machine on a private network, it is possible to enter a DNS name:
+</warn>
 
-![](./assets/1598306492093-1598306492093.png) It is also possible to change the name in the connection settings on the instance page by selecting the "Edit connection" option in the port context menu:![](./assets/1598306656792-1598306656792.png)
+## Configuring the DNS name
 
-**Attention**
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+<tab>OpenStack CLI</tab>
+</tablist>
+<tabpanel>
 
-The maximum name length is 63 characters. Only numbers, small latin letters and dash "-" are allowed.
+There are several ways to configure the DNS name:
 
-## OpenStack CLI
+Via VM:
 
-To edit the DNS name of a VM in the OpenStack client:
+1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Select the project and region.
+1. Start to [create new virtual machine](/en/base/iaas/instructions/vm/vm-create). In the “Network Settings” step, enter the name in the **DNS-name** field.
 
-Get a list of ports for an instance:
+Via port settings:
 
-```
- openstack port list --server <server ID>
-```
+1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Select the project and region.
+1. Go to **Virtual networks** → **Networks**.
+1. Open the network card by clicking on its name in the general list.
+1. Open the subnet card by clicking on its name in the general list.
+1. Go to the **Ports** tab.
+1. Expand the menu of the desired port and select **Edit port**.
+1. Enter the name in the field **DNS-name**.
+1. Click the button **Save Changes**.
 
-Specify DNS name for port:
+</tabpanel>
+<tabpanel>
 
-```
- openstack port set --dns-name <DNS name> <port ID>
-```
+1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+
+1. Get a list of instance ports by running the command:
+
+   ```bash
+   openstack port list --server <instance ID>
+   ```
+
+1. Run the command:
+
+   ```bash
+   openstack port set --dns-name <DNS name> <port ID>
+   ```
+
+</tabpanel>
+</tabs>
+
+<warn>
+
+The maximum length of the name is 63 characters. Only numbers, small Latin letters and dashes `-` are allowed.
+
+</warn>

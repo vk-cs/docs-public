@@ -166,8 +166,6 @@ Once a network is created, it will appear in the list of networks.
 
 <warn>
 
-**Attention**
-
 All the network's subnets and ports will be deleted along with the network.
 
 </warn>
