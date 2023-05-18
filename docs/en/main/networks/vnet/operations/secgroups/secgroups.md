@@ -11,7 +11,7 @@ A security group is a set of custom traffic rules that can be assigned to instan
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
 1. Select the project and region.
-1. Go to **Virtual networks** → **Firewall settings** .
+1. Go to **Virtual networks** → **Firewall settings**.
 
 A list of security groups will be displayed.
 
@@ -22,7 +22,7 @@ A page with detailed information about it will open.
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed]( ../../../../additionals/account/project/cli/setup ). Also check that you can [log in]( ../../../../additionals/account/project/cli/authorization ) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
 
 1. To view the list of security groups, run the command:
 
@@ -56,16 +56,16 @@ openstack security group rule list --long <security group ID>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
 1. Select the project and region.
-1. Go to **Virtual networks** → **Firewall settings** .
-1. Click the **Add** button .
+1. Go to **Virtual networks** → **Firewall settings**.
+1. Click the **Add** button.
 1. Enter a name for the security group.
 1. Add a description.
-1. Click **Create Group** .
+1. Click **Create Group**.
 
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed]( ../../../../additionals/account/project/cli/setup ). Also check that you can [log in]( ../../../../additionals/account/project/cli/authorization ) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
 
 1. View the security groups in the project:
 
@@ -99,7 +99,7 @@ openstack security group create --description <group description> <new group nam
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
 1. Select the project and region.
-1. Go to **Virtual networks** → **Firewall settings** .
+1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
 
 A page with detailed information about it will open.
@@ -108,12 +108,12 @@ A page with detailed information about it will open.
 
 Edit the name and (if necessary) the name of the security group.
 
-1. Click the **Save** button .
+1. Click the **Save** button.
 
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed]( ../../../../additionals/account/project/cli/setup ). Also check that you can [log in]( ../../../../additionals/account/project/cli/authorization ) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
 
 1. To change the description and name of a security group, run the command:
 
@@ -137,9 +137,9 @@ A security group rule is a set of parameters that define the conditions for traf
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
 1. Select the project and region.
-1. Go to **Virtual networks** → **Firewall settings** .
+1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
-1. In the **Incoming traffic** and **Outgoing traffic** section , click **+ Add rule** .
+1. In the **Incoming traffic** and **Outgoing traffic** section , click **+ Add rule**.
 1. Select the type of traffic (SSH, HTTP, HTTPS, etc.)
 1. Select the required protocol.
 1. In the **Remote address** section , specify the address for which the selected type of traffic will be allowed:
@@ -149,12 +149,12 @@ A security group rule is a set of parameters that define the conditions for traf
    - Security team.
 
 1. Click **Add description** and in the field that appears, describe the new rule.
-1. Click **Save Rule** .
+1. Click **Save Rule**.
 
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed]( ../../../../additionals/account/project/cli/setup ). Also check that you can [log in]( ../../../../additionals/account/project/cli/authorization ) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
 
 1. View the list of group rules:
 
@@ -195,17 +195,17 @@ Available arguments for the rule creation command:
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
 1. Select the project and region.
-1. Go to **Virtual networks** → **Firewall settings** .
+1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
 1. Click the trash icon in the line with the required rule.
 1. Click the menu icon on the row of the rule you want to delete.
-1. In the menu that opens, click the **Delete** button .
-1. Press the **Confirm** button .
+1. In the menu that opens, click the **Delete** button.
+1. Press the **Confirm** button.
 
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed]( ../../../../additionals/account/project/cli/setup ). Also check that you can [log in]( ../../../../additionals/account/project/cli/authorization ) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
 
 1. To view detailed information for a rule, run the command:
 
@@ -235,16 +235,16 @@ To apply a rule set to a virtual machine, the security group that contains the r
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
 1. Select the project and region.
-1. Go to **Virtual networks** → **Firewall settings** .
+1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
-1. In the **Virtual machines with rule group** section , click **Add virtual machine** .
+1. In the **Virtual machines with rule group** section , click **Add virtual machine**.
 1. Select the instances to which the group will be added.
-1. Click **Add Rule Group** .
+1. Click **Add Rule Group**.
 
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed]( ../../../../additionals/account/project/cli/setup ). Also check that you can [log in]( ../../../../additionals/account/project/cli/authorization ) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
 
 1. Run the command:
 
@@ -266,16 +266,16 @@ openstack server add security group <instance ID> <security group ID>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
 1. Select the project and region.
-1. Go to **Virtual networks** → **Firewall settings** .
+1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
 1. In the **Virtual Machines with Rule Group** section , hover your mouse over the instance row.
 1. Click the trash can icon.
-1. Press the **Confirm** button .
+1. Press the **Confirm** button.
 
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed]( ../../../../additionals/account/project/cli/setup ). Also check that you can [log in]( ../../../../additionals/account/project/cli/authorization ) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
 
 1. Run the command:
 
@@ -297,9 +297,7 @@ openstack server remove security group <instance ID> <security group ID>
 
 <warn>
 
-**Attention**
-
-A group cannot be removed as long as there are ports that use this group. Also, the `default` security group and other preset groups cannot be removed .
+A group cannot be removed as long as there are ports that use this group. Also, the `default` security group and other preset groups cannot be removed.
 
 </warn>
 
@@ -307,14 +305,14 @@ This is a group operation: if necessary, you can delete several security groups 
 
 1. Go to [personal account](https://mcs.mail.ru/app/) VK Cloud.
 1. Select a project and a region.
-1. Go to **Virtual networks** → **Firewall settings** .
+1. Go to **Virtual networks** → **Firewall settings**.
 1. Click the menu icon on the row of the security group you want to delete.
-1. In the menu that opens, click the **Delete** button .
+1. In the menu that opens, click the **Delete** button.
 
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed]( ../../../../additionals/account/project/cli/setup ). Also check that you can [log in]( ../../../../additionals/account/project/cli/authorization ) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
 
 1. Run the command:
 
