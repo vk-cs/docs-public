@@ -120,7 +120,9 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
 
    If the VM needs to support backup, add parameters to the command:
 
-   ```--property hw_qemu_guest_agent=yes --property os_require_quiesce=yes```
+   ```bash
+   --property hw_qemu_guest_agent=yes --property os_require_quiesce=yes
+   ```
 
 4. Check the image download in [personal account](https://mcs.mail.ru/app/en/) VK Cloud in section **Cloud Computing → Images** or via CLI:
 
@@ -140,7 +142,7 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
 
 <tabpanel>
 
-Use the imported image to [create a Linux VM](../../instructions/vm/vm-create#create-a-vm):
+Use the imported image to [create a Linux VM](/en/base/iaas/instructions/vm/vm-create#create-a-vm):
 
 - when creating a VM in your personal account, select an image from the list;
 - when creating via the OpenStack CLI, specify the image ID in the appropriate command.
@@ -149,22 +151,22 @@ Use the imported image to [create a Linux VM](../../instructions/vm/vm-create#cr
 
 <tabpanel>
 
-1. Use the imported image to [create an intermediate Windows VM](../../instructions/vm/vm-create#create-a-vm).
+1. Use the imported image to [create an intermediate Windows VM](/en/base/iaas/instructions/vm/vm-create#create-a-vm).
 2. Add the VirtIO HBA driver to the Windows boot.
 
-   1. [Create a disk](../../instructions/vm-volumes#creating-a-disk) minimum size and [connect](../../instructions/vm-volumes#connecting-a-disk-to-a-vm) it to VM.
-   2. [Run](../../instructions/vm/vm-manage#starting--stopping--reboot-the-vm) the virtual machine.
+   1. [Create a disk](/en/base/iaas/instructions/vm-volumes#creating-a-disk) minimum size and [connect](/en/base/iaas/instructions/vm-volumes#connecting-a-disk-to-a-vm) it to VM.
+   2. [Run](/en/base/iaas/instructions/vm/vm-manage#starting--stopping--reboot-the-vm) the virtual machine.
    3. Run the VirtIO installer in `repair` mode.
-   4. [Stop](../../instructions/vm/vm-manage#starting--stopping--reboot-the-vm) the virtual machine.
+   4. [Stop](/en/base/iaas/instructions/vm/vm-manage#starting--stopping--reboot-the-vm) the virtual machine.
 
-3. [Create a image](../../instructions/vm-images/vm-images-manage#creating-an-image) from the VM's boot disk.
+3. [Create a image](/en/base/iaas/instructions/vm-images/vm-images-manage#creating-an-image) from the VM's boot disk.
 4. Change the disk bus type of the new image:
 
    ```bash
    openstack image set --property hw_disk_bus=virtio <new image ID>
    ```
 
-5. [Create a target Windows VM](../../instructions/vm/vm-create#create-a-vm) from a new image.
+5. [Create a target Windows VM](/en/base/iaas/instructions/vm/vm-create#create-a-vm) from a new image.
 6. Delete the intermediate VM created in step 1, as well as the imported image.
 
 </tabpanel>
