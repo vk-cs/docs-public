@@ -3,6 +3,13 @@ Packer позволяет создавать образы виртуальных
 ## Подготовительные шаги
 
 1. [Установите](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli) последнюю версию Packer.
+
+   <info>
+
+   Вы можете скачать Packer с [зеркала](https://hashicorp-releases.mcs.mail.ru/packer/) VK Cloud.
+
+   </info>
+
 1. [Установите](../../../../base/account/project/cli/setup) OpenStack CLI, если он еще не установлен. Убедитесь, что вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в облаке с его помощью.
 1. [Загрузите образ](http://ftp.altlinux.org/pub/distributions/ALTLinux/p9/images/cloud/x86_64/alt-p9-cloud-x86_64.qcow2) ОС Alt Linux P9 локально (файл `alt-p9-cloud-x86_64.qcow2`).
 
