@@ -3,6 +3,13 @@ Packer allows you to create virtual machine images with the necessary parameters
 ## Preparatory steps
 
 1. [Install](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli) the latest version of Packer.
+
+   <info>
+
+   You can download Packer from the VK Cloud [mirror](https://hashicorp-releases.mcs.mail.ru/packer/).
+
+   </info>
+
 1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
 1. [Load the image](http://ftp.altlinux.org/pub/distributions/ALTLinux/p9/images/cloud/x86_64/alt-p9-cloud-x86_64.qcow2) OS Alt Linux P9 to your computer (file `alt-p9-cloud-x86_64.qcow2`).
 
