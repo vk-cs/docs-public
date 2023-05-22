@@ -4,7 +4,7 @@ After activating your account, we will contact you and add 3000 rubles to your V
 
 ### How long does the unblocking of services take place after the replenishment of the balance?
 
-Within 10 minutes.
+Unblocking services can take up to 4 hours.
 
 ### How to make a refund when paying with a card?
 
