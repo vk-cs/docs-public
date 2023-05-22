@@ -8,6 +8,9 @@
   "markdown": "Replication and backup of DB instances in automatic and manual modes.",
   "icon": "",
   "infobarItems": null,
-  "weight": 5,
-  "uuid": "9b7b474f-41e5-449f-a78f-8ebc737522d5"
+  "weight": 2,
+  "uuid": "9b7b474f-41e5-449f-a78f-8ebc737522d5",
+  "additionalUuids": [
+    "818c1c11-8aea-4c6b-9cc3-ca1ba55e4e86"
+  ]
 }

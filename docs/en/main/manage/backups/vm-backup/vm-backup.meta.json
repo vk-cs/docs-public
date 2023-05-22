@@ -1,7 +1,7 @@
 {
-  "title": "Backup",
-  "sectionTitle": "Backup",
-  "metaTitle": "Backup",
+  "title": "VM backup",
+  "sectionTitle": "VM backup",
+  "metaTitle": "VM backup",
   "pageDescription": "Backups allow you to restore the state of a virtual machine that was saved at a certain moment. On the VK Cloud platform, backups can be created manually or automatically, according to the plan.",
   "shortDescription": "Creation of backups in manual and automatic mode. Setting up a backup plan. Restoring a VM from a backup",
   "metaDescription": "Backups allow you to restore the state of a virtual machine that was saved at a certain moment. On the VK Cloud platform, backups can be created manually or automatically, according to the plan.",
