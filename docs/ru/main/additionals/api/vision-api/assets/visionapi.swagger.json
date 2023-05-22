@@ -8,7 +8,7 @@
       "name": "Apache 2.0",
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "version": "1.0.2"
+    "version": "1.0.3"
   },
   "externalDocs": {
     "description": "Узнать больше о Vision",
@@ -102,7 +102,14 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/persons_set_response"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/persons_set_response"
+                    },
+                    {
+                      "$ref": "#/components/schemas/error_response"
+                    }
+                  ]
                 }
               }
             }
@@ -142,7 +149,14 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/persons_delete_response"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/persons_delete_response"
+                    },
+                    {
+                      "$ref": "#/components/schemas/error_response"
+                    }
+                  ]
                 }
               }
             }
@@ -182,7 +196,14 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/persons_truncate_response"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/persons_truncate_response"
+                    },
+                    {
+                      "$ref": "#/components/schemas/error_response"
+                    }
+                  ]
                 }
               }
             }
@@ -222,7 +243,14 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/persons_recognize_response"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/persons_recognize_response"
+                    },
+                    {
+                      "$ref": "#/components/schemas/error_response"
+                    }
+                  ]
                 }
               }
             }
@@ -262,7 +290,14 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/objects_detect_response"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/objects_detect_response"
+                    },
+                    {
+                      "$ref": "#/components/schemas/error_response"
+                    }
+                  ]
                 }
               }
             }
@@ -302,7 +337,14 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/docs_detect_response"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/docs_detect_response"
+                    },
+                    {
+                      "$ref": "#/components/schemas/error_response"
+                    }
+                  ]
                 }
               }
             }
@@ -342,7 +384,14 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/docs_recognize_response"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/docs_recognize_response"
+                    },
+                    {
+                      "$ref": "#/components/schemas/error_response"
+                    }
+                  ]
                 }
               }
             }
@@ -355,8 +404,8 @@
         "tags": [
           "text"
         ],
-        "summary": "Распознать текст на изображении",
-        "description": "Позволяет распознавать текст на изображении",
+        "summary": "Распознать текст в документе",
+        "description": "Позволяет распознавать текст в документе",
         "operationId": "textRecognize",
         "parameters": [
           {
@@ -382,7 +431,61 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/text_recognize_response"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/text_recognize_response"
+                    },
+                    {
+                      "$ref": "#/components/schemas/error_response"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/scene_text/recognize": {
+      "post": {
+        "tags": [
+          "text"
+        ],
+        "summary": "Распознать текст на фотографии",
+        "description": "Позволяет распознавать текст на фотографии, которая получена на улице. См.: https://en.wikipedia.org/wiki/Scene_text",
+        "operationId": "sceneTextRecognize",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/oauth_token"
+          },
+          {
+            "$ref": "#/components/parameters/oauth_provider"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/scene_text_recognize_request"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/scene_text_recognize_response"
+                    },
+                    {
+                      "$ref": "#/components/schemas/error_response"
+                    }
+                  ]
                 }
               }
             }
@@ -422,7 +525,14 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/photo_improve_response"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/photo_improve_response"
+                    },
+                    {
+                      "$ref": "#/components/schemas/error_response"
+                    }
+                  ]
                 }
               }
             }
@@ -462,7 +572,14 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/adult_detect_response"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/adult_detect_response"
+                    },
+                    {
+                      "$ref": "#/components/schemas/error_response"
+                    }
+                  ]
                 }
               }
             }
@@ -512,44 +629,37 @@
         "example": "5",
         "description": "Числовой идентификатор, используемый для избежания пересечений по персонам, например, «person1» из «space0» и «person1» из «space1» разные. Для приложений, решающих различные задачи, имеет смысл использовать различные значения «space». Клиент может иметь до 10 различных «space». Значения «space» изменяются от 0 до 9. В случае превышения лимита вернется ошибка"
       },
-      "images_property": {
-        "type": "array",
-        "description": "Метаданные передаваемых изображений",
-        "items": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string",
-              "minLength": 1,
-              "example": "file",
-              "description": "Имена файлов для сопоставления файлов в запросе и ответе"
-            }
-          },
-          "required": [
-            "name"
-          ]
-        }
+      "image_property": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "example": "file",
+            "description": "Имя файла для сопоставления файлов в запросе и ответе"
+          }
+        },
+        "required": [
+          "name"
+        ]
       },
-      "person_images_property": {
+      "person_image_property": {
         "allOf": [
           {
-            "$ref": "#/components/schemas/images_property"
+            "$ref": "#/components/schemas/image_property"
           },
           {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "person_id": {
-                  "type": "integer",
-                  "example": 1,
-                  "description": "ID, сопоставляемый персоне на фото"
-                }
-              },
-              "required": [
-                "person_id"
-              ]
-            }
+            "type": "object",
+            "properties": {
+              "person_id": {
+                "type": "integer",
+                "example": 1,
+                "description": "ID, сопоставляемый персоне на фото"
+              }
+            },
+            "required": [
+              "person_id"
+            ]
           }
         ]
       },
@@ -567,7 +677,10 @@
                 "$ref": "#/components/schemas/space_property"
               },
               "images": {
-                "$ref": "#/components/schemas/person_images_property"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/person_image_property"
+                }
               }
             },
             "required": [
@@ -581,28 +694,26 @@
           "meta"
         ]
       },
-      "global_response": {
+      "success_response": {
         "type": "object",
         "properties": {
           "status": {
             "type": "integer",
             "enum": [
-              200,
-              400,
-              403,
-              500
+              200
             ],
-            "example": 400,
-            "description": "200 в случае успеха, иначе описание ошибки будет в «body» (200 — успешно, 400 — плохой запрос, 403 — доступ запрещен, 500 — внутренняя ошибка сервера)"
+            "example": 200,
+            "description": "Код ошибки: 200 — успешно."
           },
           "body": {
             "type": "object",
             "description": "Тело ответа"
           }
         },
-        "xml": {
-          "name": "##default"
-        }
+        "required": [
+          "status",
+          "body"
+        ]
       },
       "status_property": {
         "type": "integer",
@@ -645,7 +756,7 @@
       "persons_set_response": {
         "allOf": [
           {
-            "$ref": "#/components/schemas/global_response"
+            "$ref": "#/components/schemas/success_response"
           },
           {
             "type": "object",
@@ -670,6 +781,25 @@
           }
         ]
       },
+      "error_response": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "integer",
+            "enum": [
+              400,
+              403,
+              500
+            ],
+            "example": 400,
+            "description": "Статус при ошибке (400 — плохой запрос, 403 — доступ запрещен, 500 — внутренняя ошибка сервера)"
+          },
+          "body": {
+            "type": "string",
+            "description": "Описание ошибки"
+          }
+        }
+      },
       "persons_delete_request": {
         "type": "object",
         "properties": {
@@ -681,7 +811,10 @@
                 "$ref": "#/components/schemas/space_property"
               },
               "images": {
-                "$ref": "#/components/schemas/person_images_property"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/person_image_property"
+                }
               }
             },
             "required": [
@@ -698,7 +831,7 @@
       "persons_delete_response": {
         "allOf": [
           {
-            "$ref": "#/components/schemas/global_response"
+            "$ref": "#/components/schemas/success_response"
           },
           {
             "type": "object",
@@ -747,7 +880,7 @@
       "persons_truncate_response": {
         "allOf": [
           {
-            "$ref": "#/components/schemas/global_response"
+            "$ref": "#/components/schemas/success_response"
           },
           {
             "type": "object",
@@ -783,10 +916,13 @@
               "update_embedding": {
                 "type": "boolean",
                 "default": true,
-                "description": "Обновлять ли векторное представление (embedding) для найденной персоны.  Каждый раз, когда распознаётся уже известная персона, происходит обновление векторного представления (embedding) лица, для лучшего распознания этой персоны в дальнейшем.  Но в некоторых случаях лучше отключать автообновление с помощью этого параметра, например, когда заведомо известно, что фотографии плохого качества или фотографии с какого-нибудь спортивного мероприятия"
+                "description": "Обновлять ли векторное представление (embedding) для найденной персоны. Каждый раз, когда распознаётся уже известная персона, происходит обновление векторного представления (embedding) лица, для лучшего распознания этой персоны в дальнейшем. Но в некоторых случаях лучше отключать автообновление с помощью этого параметра, например, когда заведомо известно, что фотографии плохого качества или фотографии с какого-нибудь спортивного мероприятия"
               },
               "images": {
-                "$ref": "#/components/schemas/images_property"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/image_property"
+                }
               }
             },
             "required": [
@@ -924,7 +1060,7 @@
       "persons_recognize_response": {
         "allOf": [
           {
-            "$ref": "#/components/schemas/global_response"
+            "$ref": "#/components/schemas/success_response"
           },
           {
             "type": "object",
@@ -999,7 +1135,10 @@
                 }
               },
               "images": {
-                "$ref": "#/components/schemas/images_property"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/image_property"
+                }
               }
             },
             "required": [
@@ -1204,7 +1343,7 @@
       "objects_detect_response": {
         "allOf": [
           {
-            "$ref": "#/components/schemas/global_response"
+            "$ref": "#/components/schemas/success_response"
           },
           {
             "type": "object",
@@ -1271,7 +1410,10 @@
             "description": "Параметры запроса",
             "properties": {
               "images": {
-                "$ref": "#/components/schemas/images_property"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/image_property"
+                }
               }
             },
             "required": [
@@ -1392,7 +1534,7 @@
       "docs_detect_response": {
         "allOf": [
           {
-            "$ref": "#/components/schemas/global_response"
+            "$ref": "#/components/schemas/success_response"
           },
           {
             "type": "object",
@@ -1434,7 +1576,10 @@
             "description": "Параметры запроса",
             "properties": {
               "images": {
-                "$ref": "#/components/schemas/images_property"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/image_property"
+                }
               }
             },
             "required": [
@@ -1513,7 +1658,7 @@
       "docs_recognize_response": {
         "allOf": [
           {
-            "$ref": "#/components/schemas/global_response"
+            "$ref": "#/components/schemas/success_response"
           },
           {
             "type": "object",
@@ -1552,7 +1697,10 @@
                 ]
               },
               "images": {
-                "$ref": "#/components/schemas/images_property"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/image_property"
+                }
               }
             },
             "required": [
@@ -1691,7 +1839,7 @@
       "text_recognize_response": {
         "allOf": [
           {
-            "$ref": "#/components/schemas/global_response"
+            "$ref": "#/components/schemas/success_response"
           },
           {
             "type": "object",
@@ -1704,6 +1852,137 @@
                     "description": "Массив результатов для каждого файла",
                     "items": {
                       "$ref": "#/components/schemas/text_recognize_result_property"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "images_property": {
+        "type": "array",
+        "description": "Метаданные передаваемых изображений",
+        "items": {
+          "$ref": "#/components/schemas/image_property"
+        }
+      },
+      "scene_text_recognize_request": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "$ref": "#/components/schemas/file_property"
+          },
+          "meta": {
+            "type": "object",
+            "description": "Параметры запроса",
+            "properties": {
+              "images": {
+                "$ref": "#/components/schemas/images_property"
+              }
+            },
+            "required": [
+              "images"
+            ]
+          }
+        },
+        "required": [
+          "file",
+          "meta"
+        ]
+      },
+      "scene_text_recognize_word_property": {
+        "type": "object",
+        "properties": {
+          "prob": {
+            "type": "number",
+            "format": "float",
+            "description": "Уверенность распознавания слова",
+            "example": 0.87
+          },
+          "coord": {
+            "type": "array",
+            "description": "Координаты слова — [[x1, y1], [x2, y2], [x3, y3], [x4, y4]]",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "format": "float",
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "minItems": 4,
+              "maxItems": 4
+            },
+            "example": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0.5
+              ],
+              [
+                0.5,
+                0.5
+              ],
+              [
+                0.5,
+                0
+              ]
+            ]
+          },
+          "text": {
+            "type": "string",
+            "description": "Распознанное слово ответа",
+            "example": "you!"
+          }
+        },
+        "required": [
+          "prob",
+          "coord",
+          "text"
+        ]
+      },
+      "scene_text_recognize_result_property": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/base_work_result_property"
+          },
+          {
+            "type": "object"
+          }
+        ],
+        "properties": {
+          "words": {
+            "type": "array",
+            "description": "Массив распознанных слов ответов в строке",
+            "items": {
+              "$ref": "#/components/schemas/scene_text_recognize_word_property"
+            }
+          }
+        },
+        "required": [
+          "words"
+        ]
+      },
+      "scene_text_recognize_response": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/success_response"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "body": {
+                "type": "object",
+                "properties": {
+                  "objects": {
+                    "type": "array",
+                    "description": "Массив результатов для каждого файла",
+                    "items": {
+                      "$ref": "#/components/schemas/scene_text_recognize_result_property"
                     }
                   }
                 }
@@ -1750,7 +2029,10 @@
                 ]
               },
               "images": {
-                "$ref": "#/components/schemas/images_property"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/image_property"
+                }
               }
             },
             "required": [
@@ -1776,7 +2058,7 @@
               "colorized_improved": {
                 "type": "string",
                 "example": "base64",
-                "description": "jpeg-картинка фотографии с исправленными дефектами и восстановленным цветом (base64). Поле может отсутствовать или быть пустым, если по мнению алгоритма фотографию нет смысла восстанавливать и закрашивать"
+                "description": "jpeg-картинка фотографии с исправленными дефектами и восстановленным цветом (base64).  Поле может отсутствовать или быть пустым, если по мнению алгоритма фотографию нет смысла восстанавливать и закрашивать"
               },
               "colorized": {
                 "type": "string",
@@ -1818,7 +2100,7 @@
       "photo_improve_response": {
         "allOf": [
           {
-            "$ref": "#/components/schemas/global_response"
+            "$ref": "#/components/schemas/success_response"
           },
           {
             "type": "object",
@@ -1856,7 +2138,10 @@
             "type": "object",
             "properties": {
               "images": {
-                "$ref": "#/components/schemas/images_property"
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/image_property"
+                }
               }
             },
             "required": [
@@ -1879,7 +2164,7 @@
             "properties": {
               "safe": {
                 "type": "number",
-                "format": "float",
+                "format": "double",
                 "minimum": 0,
                 "maximum": 1,
                 "description": "Степень уверенности в том, что на картинке нет NSFW-контента",
@@ -1892,25 +2177,28 @@
           }
         ]
       },
+      "adult_detect_response_body": {
+        "type": "object",
+        "properties": {
+          "objects": {
+            "type": "array",
+            "description": "Массив результатов для каждого файла",
+            "items": {
+              "$ref": "#/components/schemas/adult_detect_result_property"
+            }
+          }
+        }
+      },
       "adult_detect_response": {
         "allOf": [
           {
-            "$ref": "#/components/schemas/global_response"
+            "$ref": "#/components/schemas/success_response"
           },
           {
             "type": "object",
             "properties": {
               "body": {
-                "type": "object",
-                "properties": {
-                  "objects": {
-                    "type": "array",
-                    "description": "Массив результатов для каждого файла",
-                    "items": {
-                      "$ref": "#/components/schemas/adult_detect_result_property"
-                    }
-                  }
-                }
+                "$ref": "#/components/schemas/adult_detect_response_body"
               }
             }
           }
