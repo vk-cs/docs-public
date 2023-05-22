@@ -8,6 +8,9 @@
   "markdown": "Репликация и резервное копирование инстансов БД в автоматическом и ручном режимах.",
   "icon": "",
   "infobarItems": null,
-  "weight": 5,
-  "uuid": "30fde4e9-d370-43bc-b75d-14ab7a6e61f6"
+  "weight": 2,
+  "uuid": "30fde4e9-d370-43bc-b75d-14ab7a6e61f6",
+  "additionalUuids": [
+    "3e4d2992-ad22-4b56-bc18-a8522e3ada27"
+  ]
 }

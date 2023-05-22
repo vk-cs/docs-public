@@ -10,8 +10,8 @@ The current status of the plan can be seen by hovering over the colored status i
 
     - **Name of plan**.
     - **Backup schedule**: select a period from the list.
-    - **Enable GFS**: select the option if you want to configure backup by [GFS strategy](../../../retention-policy/gfs-backup/).
-    - **Maximum number of full backups**: specify the maximum number of backups stored. Old backups will [be deleted](../../../retention-policy/forward-incremental/).
+    - **Enable GFS**: select the option if you want to configure backup by [GFS strategy](../../retention-policy/gfs-backup/).
+    - **Maximum number of full backups**: specify the maximum number of backups stored. Old backups will [be deleted](../../retention-policy/forward-incremental/).
     - **Databases**: select the DB instances from the list for which you want to create a backup.
 
 1. Click the **Save plan** button.

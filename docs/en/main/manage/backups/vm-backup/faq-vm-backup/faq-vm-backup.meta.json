@@ -1,11 +1,11 @@
 {
-  "title": "Backups",
+  "title": "Backups FAQ",
   "pageDescription": "Answers to questions about the time of creation of backups, their total number, distribution by availability zones",
   "shortDescription": "Answers to questions about the time of creation of backups, their total number, distribution by availability zones",
-  "metaTitle": "Backups",
+  "metaTitle": "Backups FAQ",
   "metaDescription": "Answers to questions about the time of creation of backups, their total number, distribution by availability zones",
-  "sectionTitle": "Backups",
-  "weight": 1,
+  "sectionTitle": "Backups FAQ",
+  "weight": 4,
   "additionalUuids": [
     "7bfec1bd-a446-49d2-978f-dda353ddfd5d"
   ],
