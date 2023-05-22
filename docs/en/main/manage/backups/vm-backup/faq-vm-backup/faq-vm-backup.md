@@ -1,6 +1,6 @@
 ## How do I make a VM backup?
 
-You can create a VM backup manually or using a backup plan, for more information, see [Managing backups](../../instructions/vm-backup/vm-backup-manage/).
+You can create a VM backup manually or using a backup plan, for more information, see [Managing backups](../vm-backup-manage/).
 
 ## How many backups can be stored?
 
@@ -18,7 +18,7 @@ The time to create a backup depends on the amount of data on the disk of the VM 
 
 ## How do I delete a backup?
 
-You can delete a backup in the section **Cloud Computing → Backup**, for more information in the article [Managing backups](../../instructions/vm-backup/vm-backup-manage#deleting-backups).
+You can delete a backup in the section **Cloud Computing → Backup**, for more information in the article [Managing backups](../vm-backup-manage#deleting-backups).
 
 ## Where is the next backup copy recorded when the limit on their number is exceeded?
 

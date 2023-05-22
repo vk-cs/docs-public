@@ -9,10 +9,6 @@
   "icon": "",
   "infobarItems": [
     {
-      "text": "Резервные копии ВМ",
-      "link": "../../../base/iaas/vm-backup"
-    },
-    {
       "text": "Справка API",
       "link": "../../../additionals/api/backup-api"
     }
