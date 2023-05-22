@@ -1,10 +1,10 @@
 {
-  "title": "Text Recognition",
+  "title": "Text recognition in documents",
   "pageDescription": "",
   "shortDescription": "Determination of the text in the image",
-  "metaTitle": "Text Recognition",
+  "metaTitle": "Text recognition in documents",
   "metaDescription": "This method allows you to recognize text in an image. The authorization data is passed in the request string: Parameter Value Type oauth_token string",
-  "sectionTitle": "Text Recognition",
+  "sectionTitle": "Text recognition in documents",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
