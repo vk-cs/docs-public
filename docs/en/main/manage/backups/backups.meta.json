@@ -7,12 +7,7 @@
   "sectionTitle": "Backup",
   "markdown": "Features of backup services in VK Cloud.",
   "icon": "",
-  "infobarItems": [
-    {
-      "text": "Virtual machine backups",
-      "link": "../../../base/iaas/vm-backup"
-    }
-  ],
+  "infobarItems": null,
   "weight": 3,
   "uuid": "e89737a7-8f41-439d-9e57-62a02553a1b8"
 }
