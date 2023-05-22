@@ -1,0 +1,1406 @@
+openapi: 3.0.3
+info:
+  title: Vision
+  description: Vision — технология распознавания лиц и объектов на базе машинного обучения. Используя компьютерное зрение, можно разработать систему распознавания лиц, автомобильных номеров и любых других объектов и образов, организовать модерацию изображений, анализировать фото- и видеозаписи
+  termsOfService: https://mcs.mail.ru/docs/additionals/start/legal/policy-vision
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.3
+externalDocs:
+  description: Узнать больше о Vision
+  url: https://mcs.mail.ru/docs/ru/ml/vision
+servers:
+  - url: https://smarty.mail.ru/api
+tags:
+  - name: persons
+    description: Распознавание лиц
+    externalDocs:
+      description: ''
+      url: ''
+  - name: objects
+    description: Распознавание объектов
+    externalDocs:
+      description: ''
+      url: ''
+  - name: docs
+    description: Распознавание документов
+    externalDocs:
+      description: ''
+      url: ''
+  - name: photo
+    description: Работа с изображениями
+    externalDocs:
+      description: ''
+      url: ''
+  - name: text
+    description: Распознавание текста
+    externalDocs:
+      description: ''
+      url: ''
+  - name: adult
+    description: NSFW контент
+    externalDocs:
+      description: ''
+      url: ''
+paths:
+  /v1/persons/set:
+    post:
+      tags:
+        - persons
+      summary: Установить связь между фотографией и person_id
+      description: Позволяет установить связь между заданной фотографией и конкретным person_id
+      operationId: personsSet
+      parameters:
+        - $ref: '#/components/parameters/oauth_token'
+        - $ref: '#/components/parameters/oauth_provider'
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/persons_set_request'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/persons_set_response'
+                  - $ref: '#/components/schemas/error_response'
+  /v1/persons/delete:
+    post:
+      tags:
+        - persons
+      summary: Удалить связь между фотографией и person_id
+      description: Позволяет удалить связь между фотографией и person_id
+      operationId: personsDelete
+      parameters:
+        - $ref: '#/components/parameters/oauth_token'
+        - $ref: '#/components/parameters/oauth_provider'
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/persons_delete_request'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/persons_delete_response'
+                  - $ref: '#/components/schemas/error_response'
+  /v1/persons/truncate:
+    post:
+      tags:
+        - persons
+      summary: Очистить пространство
+      description: Позволяет полностью очистить пространство (space)
+      operationId: personsTruncate
+      parameters:
+        - $ref: '#/components/parameters/oauth_token'
+        - $ref: '#/components/parameters/oauth_provider'
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/persons_truncate_request'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/persons_truncate_response'
+                  - $ref: '#/components/schemas/error_response'
+  /v1/persons/recognize:
+    post:
+      tags:
+        - persons
+      summary: Распознать человека на фотографии
+      description: Позволяет распознать человека по заданной фотографии. Если совпадение не найдено, в базу будет добавлен новый человек
+      operationId: personsRecognize
+      parameters:
+        - $ref: '#/components/parameters/oauth_token'
+        - $ref: '#/components/parameters/oauth_provider'
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/persons_recognize_request'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/persons_recognize_response'
+                  - $ref: '#/components/schemas/error_response'
+  /v1/objects/detect:
+    post:
+      tags:
+        - objects
+      summary: Найти объекты на фотографии
+      description: Позволяет найти различные объекты на фотографии
+      operationId: objectsDetect
+      parameters:
+        - $ref: '#/components/parameters/oauth_token'
+        - $ref: '#/components/parameters/oauth_provider'
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/objects_detect_request'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/objects_detect_response'
+                  - $ref: '#/components/schemas/error_response'
+  /v1/docs/detect:
+    post:
+      tags:
+        - docs
+      summary: Распознать документ и его возможный тип
+      description: Позволяет определить, является ли фотография документом, а также возможный тип документа
+      operationId: docsDetect
+      parameters:
+        - $ref: '#/components/parameters/oauth_token'
+        - $ref: '#/components/parameters/oauth_provider'
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/docs_detect_request'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/docs_detect_response'
+                  - $ref: '#/components/schemas/error_response'
+  /v1/docs/recognize:
+    post:
+      tags:
+        - docs
+      summary: Распознать поля документов
+      description: Позволяет распознавать поля документов
+      operationId: docsRecognize
+      parameters:
+        - $ref: '#/components/parameters/oauth_token'
+        - $ref: '#/components/parameters/oauth_provider'
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/docs_recognize_request'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/docs_recognize_response'
+                  - $ref: '#/components/schemas/error_response'
+  /v1/text/recognize:
+    post:
+      tags:
+        - text
+      summary: Распознать текст в документе
+      description: Позволяет распознавать текст в документе
+      operationId: textRecognize
+      parameters:
+        - $ref: '#/components/parameters/oauth_token'
+        - $ref: '#/components/parameters/oauth_provider'
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/text_recognize_request'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/text_recognize_response'
+                  - $ref: '#/components/schemas/error_response'
+  /v1/scene_text/recognize:
+    post:
+      tags:
+        - text
+      summary: Распознать текст на фотографии
+      description: 'Позволяет распознавать текст на фотографии, которая получена на улице. См.: https://en.wikipedia.org/wiki/Scene_text'
+      operationId: sceneTextRecognize
+      parameters:
+        - $ref: '#/components/parameters/oauth_token'
+        - $ref: '#/components/parameters/oauth_provider'
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/scene_text_recognize_request'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/scene_text_recognize_response'
+                  - $ref: '#/components/schemas/error_response'
+  /v1/photo/improve:
+    post:
+      tags:
+        - photo
+      summary: Улучшить фотографию
+      description: Позволяет улучшить качество фотографии, например, увеличение разрешения
+      operationId: photoImprove
+      parameters:
+        - $ref: '#/components/parameters/oauth_token'
+        - $ref: '#/components/parameters/oauth_provider'
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/photo_improve_request'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/photo_improve_response'
+                  - $ref: '#/components/schemas/error_response'
+  /v1/adult/detect:
+    post:
+      tags:
+        - adult
+      summary: Определить контент 18+
+      description: Позволяет узнать, есть ли на фото NSFW-контент
+      operationId: adultDetect
+      parameters:
+        - $ref: '#/components/parameters/oauth_token'
+        - $ref: '#/components/parameters/oauth_provider'
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/adult_detect_request'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/adult_detect_response'
+                  - $ref: '#/components/schemas/error_response'
+components:
+  parameters:
+    oauth_token:
+      name: oauth_token
+      in: query
+      schema:
+        type: string
+      description: OAuth2 access token
+      required: true
+    oauth_provider:
+      name: oauth_provider
+      in: query
+      schema:
+        type: string
+        example: mcs
+        enum:
+          - mr
+          - mcs
+      required: true
+      description: Провайдер OAuth2
+  schemas:
+    file_property:
+      type: array
+      description: Массив файлов. Имена файлов должны отличаться. Максимальное количество изображений в одном запросе равняется 100 (для photo/improve — 48). Максимальный размер каждого изображения не должен превышать 15 МБ (для photo/improve — 8 МБ)
+      items:
+        type: string
+        format: binary
+      minItems: 1
+    space_property:
+      type: string
+      example: '5'
+      description: Числовой идентификатор, используемый для избежания пересечений по персонам, например, «person1» из «space0» и «person1» из «space1» разные. Для приложений, решающих различные задачи, имеет смысл использовать различные значения «space». Клиент может иметь до 10 различных «space». Значения «space» изменяются от 0 до 9. В случае превышения лимита вернется ошибка
+    image_property:
+      type: object
+      properties:
+        name:
+          type: string
+          minLength: 1
+          example: file
+          description: Имя файла для сопоставления файлов в запросе и ответе
+      required:
+        - name
+    person_image_property:
+      allOf:
+        - $ref: '#/components/schemas/image_property'
+        - type: object
+          properties:
+            person_id:
+              type: integer
+              example: 1
+              description: ID, сопоставляемый персоне на фото
+          required:
+            - person_id
+    persons_set_request:
+      type: object
+      properties:
+        file:
+          $ref: '#/components/schemas/file_property'
+        meta:
+          type: object
+          description: Параметры запроса
+          properties:
+            space:
+              $ref: '#/components/schemas/space_property'
+            images:
+              type: array
+              items:
+                $ref: '#/components/schemas/person_image_property'
+          required:
+            - space
+            - images
+      required:
+        - file
+        - meta
+    success_response:
+      type: object
+      properties:
+        status:
+          type: integer
+          enum:
+            - 200
+          example: 200
+          description: 'Код ошибки: 200 — успешно.'
+        body:
+          type: object
+          description: Тело ответа
+      required:
+        - status
+        - body
+    status_property:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+      example: 1
+      description: Результат выполнения операции (0 — успешно, 1 — перманентная ошибка, 2 — временная ошибка)
+    error_property:
+      type: string
+      description: Текстовое описание ошибки (опционально)
+      example: The memory contains data of an unknown image type
+    file_name_property:
+      type: string
+      description: Имя файла для сопоставления файлов в запросе и ответе
+      example: file_0
+    base_work_result_property:
+      type: object
+      properties:
+        status:
+          $ref: '#/components/schemas/status_property'
+        error:
+          $ref: '#/components/schemas/error_property'
+        name:
+          $ref: '#/components/schemas/file_name_property'
+      required:
+        - status
+        - name
+    persons_set_response:
+      allOf:
+        - $ref: '#/components/schemas/success_response'
+        - type: object
+          properties:
+            body:
+              type: object
+              properties:
+                objects:
+                  type: array
+                  description: Массив результатов для каждого файла
+                  items:
+                    allOf:
+                      - $ref: '#/components/schemas/base_work_result_property'
+    error_response:
+      type: object
+      properties:
+        status:
+          type: integer
+          enum:
+            - 400
+            - 403
+            - 500
+          example: 400
+          description: Статус при ошибке (400 — плохой запрос, 403 — доступ запрещен, 500 — внутренняя ошибка сервера)
+        body:
+          type: string
+          description: Описание ошибки
+    persons_delete_request:
+      type: object
+      properties:
+        meta:
+          type: object
+          description: Параметры запроса
+          properties:
+            space:
+              $ref: '#/components/schemas/space_property'
+            images:
+              type: array
+              items:
+                $ref: '#/components/schemas/person_image_property'
+          required:
+            - space
+            - images
+      required:
+        - file
+        - meta
+    persons_delete_response:
+      allOf:
+        - $ref: '#/components/schemas/success_response'
+        - type: object
+          properties:
+            body:
+              type: object
+              properties:
+                objects:
+                  type: array
+                  description: Массив результатов для каждого файла
+                  items:
+                    allOf:
+                      - $ref: '#/components/schemas/base_work_result_property'
+    persons_truncate_request:
+      type: object
+      properties:
+        meta:
+          type: object
+          description: Параметры запроса
+          properties:
+            space:
+              $ref: '#/components/schemas/space_property'
+          required:
+            - space
+      required:
+        - file
+        - meta
+    persons_truncate_response:
+      allOf:
+        - $ref: '#/components/schemas/success_response'
+        - type: object
+          properties:
+            body:
+              type: object
+              additionalProperties: false
+              minProperties: 0
+              maxProperties: 0
+    persons_recognize_request:
+      type: object
+      properties:
+        file:
+          $ref: '#/components/schemas/file_property'
+        meta:
+          type: object
+          description: Параметры запроса
+          properties:
+            space:
+              $ref: '#/components/schemas/space_property'
+            create_new:
+              type: boolean
+              default: false
+              description: Добавлять ли новую персону, если не было найдено совпадений
+            update_embedding:
+              type: boolean
+              default: true
+              description: Обновлять ли векторное представление (embedding) для найденной персоны. Каждый раз, когда распознаётся уже известная персона, происходит обновление векторного представления (embedding) лица, для лучшего распознания этой персоны в дальнейшем. Но в некоторых случаях лучше отключать автообновление с помощью этого параметра, например, когда заведомо известно, что фотографии плохого качества или фотографии с какого-нибудь спортивного мероприятия
+            images:
+              type: array
+              items:
+                $ref: '#/components/schemas/image_property'
+          required:
+            - space
+            - images
+      required:
+        - file
+        - meta
+    face_property:
+      type: object
+      properties:
+        coord:
+          type: array
+          minItems: 4
+          maxItems: 4
+          items:
+            type: integer
+            description: Координаты найденного лица [left x, top y, right x, bottom y]
+          example:
+            - 0
+            - 300
+            - 100
+            - 0
+        confidence:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 1
+          description: Степень уверенности детектора лиц в том, что найденное изображение — лицо
+    person_property:
+      allOf:
+        - $ref: '#/components/schemas/face_property'
+        - type: object
+          properties:
+            tag:
+              type: string
+              example: person_1
+              description: Идентификатор найденной персоны. Значение tag может равняться \"undefined\" в случае, если значение \"create_new\" в запросе равнялось false, и по предоставленному изображению в базе не была найдена соответствующая персона
+            aliases:
+              type: array
+              description: Массив похожих персон
+              items:
+                type: string
+                example: person_2
+            awesomeness:
+              type: number
+              format: float
+              minimum: 0
+              maximum: 1
+              description: Условная степень привлекательности фотографии для окружающих. Лежит в интервале [0,1]
+            similarity:
+              type: number
+              format: float
+              minimum: 0
+              maximum: 1
+              description: Степень похожести найденного лица с персоной в базе
+            sex:
+              type: string
+              enum:
+                - female
+                - male
+              description: Пол персоны
+            emotion:
+              type: string
+              enum:
+                - Neutral
+                - Happiness
+                - Sadness
+                - Surprise
+                - Fear
+                - Disgust
+                - Anger
+                - Contempt
+              description: Эмоции персоны
+            age:
+              type: number
+              example: 10
+              description: Возраст персоны
+            valence:
+              type: number
+              format: float
+              minimum: -1
+              maximum: 1
+              description: Уровень одобрения человеком ситуации, в которой он находится [-1;1]
+            arousal:
+              type: number
+              format: float
+              minimum: -1
+              maximum: 1
+              description: Уровень вовлеченности человека [-1 — сонный, не активный человек; 1 — активный человек]
+            frontality:
+              type: number
+              format: float
+              minimum: -1
+              maximum: 1
+              description: Фронтальность лица. [-1 — максимально повернутое лицо; 1 — фронтальное]
+            visibility:
+              type: number
+              format: float
+              minimum: 0
+              maximum: 1
+              description: Видимость лица
+    persons_recognize_response:
+      allOf:
+        - $ref: '#/components/schemas/success_response'
+        - type: object
+          properties:
+            body:
+              type: object
+              properties:
+                objects:
+                  type: array
+                  description: Массив результатов для каждого файла
+                  items:
+                    allOf:
+                      - $ref: '#/components/schemas/base_work_result_property'
+                      - type: object
+                        properties:
+                          persons:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/person_property'
+                aliases_changed:
+                  type: boolean
+                  description: Изменились ли алиасы
+                  example: true
+              required:
+                - objects
+                - aliases_changed
+      xml:
+        name: '##default'
+    objects_detect_request:
+      type: object
+      properties:
+        file:
+          $ref: '#/components/schemas/file_property'
+        meta:
+          type: object
+          description: Параметры запроса
+          properties:
+            mode:
+              type: array
+              minLength: 1
+              description: Типы объектов, которые требуется искать на переданных изображениях ("object" — искать на изображении объекты, "scene" - искать на изображении сцены, "car_number" — искать на изображении номера машин, "multiobject" — искать на изображении мультиобъекты (объекты и все множество боксов всех найденных объектов), "pedestrian" — искать на изображении людей (более точно определяет множество боксов всех людей на изображении), "selfie" — проверить, есть ли на изображении селфи). Может содержать один или несколько режимов
+              items:
+                type: string
+                enum:
+                  - object
+                  - scene
+                  - car_number
+                  - multiobject
+                  - pedestrian
+                  - selfie
+            images:
+              type: array
+              items:
+                $ref: '#/components/schemas/image_property'
+          required:
+            - mode
+            - images
+      required:
+        - file
+        - meta
+    object_detect_label_property:
+      type: object
+      properties:
+        eng:
+          type: string
+          example: Person
+          description: Метка (название) для найденного объекта на английском
+        rus:
+          type: string
+          example: Человек
+          description: Метка (название) найденного объекта на русском
+        eng_categories:
+          type: array
+          description: Список категорий (каждая категория включает в себя множество меток) на английском
+          items:
+            type: string
+            example: Concerts
+        rus_categories:
+          type: array
+          description: Список категорий (каждая категория включает в себя множество меток) на русском
+          items:
+            type: string
+            example: Концерты
+        prob:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 1
+          example: 0.026
+          description: Степень уверенности в том, что на изображении именно этот объект
+        coord:
+          type: array
+          description: Координаты найденного объекта [left x, top y, right x, bottom y]
+          minLength: 4
+          maxLength: 4
+          items:
+            type: integer
+          example:
+            - 0
+            - 300
+            - 100
+            - 0
+      required:
+        - eng
+        - rus
+        - prob
+    object_detect_result_property:
+      allOf:
+        - $ref: '#/components/schemas/base_work_result_property'
+        - type: object
+          properties:
+            labels:
+              type: array
+              description: Список объектов (меток), найденных на изображении
+              items:
+                $ref: '#/components/schemas/object_detect_label_property'
+          required:
+            - labels
+    car_number_detect_label_property:
+      allOf:
+        - $ref: '#/components/schemas/object_detect_label_property'
+        - type: object
+          properties:
+            types_prob:
+              type: array
+              description: Массив степеней уверенности системы в типе номерных знаков
+              items:
+                type: object
+                properties:
+                  type:
+                    type: string
+                    description: 'Возможные варианты: "rus" — все типы российских номеров, "cis" — номера СНГ (кроме индивидуальных и военных украинских), "eu" — одноэтажные номера Европы'
+                    enum:
+                      - rus
+                      - cis
+                      - eu
+                  prob:
+                    type: number
+                    format: float
+                    description: Степень уверенности в том, что распознан указанный тип номера
+                    example: 0.67
+                    minimum: 0
+                    maximum: 1
+    car_number_detect_result_property:
+      allOf:
+        - $ref: '#/components/schemas/base_work_result_property'
+        - type: object
+          properties:
+            labels:
+              type: array
+              description: Список объектов (меток), найденных на изображении
+              items:
+                $ref: '#/components/schemas/car_number_detect_label_property'
+          required:
+            - labels
+    pedestrian_detect_result_property:
+      allOf:
+        - $ref: '#/components/schemas/object_detect_result_property'
+        - type: object
+          properties:
+            count_by_density:
+              type: integer
+              example: 2
+              description: Количество людей в кадре, подсчитанное с помощью карты плотности
+          required:
+            - count_by_density
+    selfie_detect_result_property:
+      allOf:
+        - $ref: '#/components/schemas/base_work_result_property'
+        - type: object
+          properties:
+            prob:
+              type: number
+              format: float
+              example: 0.7
+              description: Степень уверенности того, что на фото селфи
+            is_selfie:
+              type: boolean
+              example: true
+              description: Есть ли на фото селфи
+          required:
+            - prob
+            - is_selfie
+    objects_detect_response:
+      allOf:
+        - $ref: '#/components/schemas/success_response'
+        - type: object
+          properties:
+            body:
+              type: object
+              properties:
+                scene_labels:
+                  type: array
+                  description: Массив ответов для каждого файла со сценами (может отсутствовать)
+                  items:
+                    $ref: '#/components/schemas/object_detect_result_property'
+                object_labels:
+                  type: array
+                  description: Массив ответов для каждого файла с объектами (может отсутствовать)
+                  items:
+                    $ref: '#/components/schemas/object_detect_result_property'
+                car_number_labels:
+                  type: array
+                  description: Массив ответов для каждого файла с номерам машин (может отсутствовать)
+                  items:
+                    $ref: '#/components/schemas/car_number_detect_result_property'
+                multiobject_labels:
+                  type: array
+                  description: Массив ответов для каждого файла с мультиобъектами (может отсутствовать)
+                  items:
+                    $ref: '#/components/schemas/object_detect_result_property'
+                pedestrian_labels:
+                  type: array
+                  description: Массив ответов для каждого файла с людьми (может отсутствовать)
+                  items:
+                    $ref: '#/components/schemas/pedestrian_detect_result_property'
+                selfie_labels:
+                  type: array
+                  description: Массив ответов для каждого файла (может отсутствовать)
+                  items:
+                    $ref: '#/components/schemas/selfie_detect_result_property'
+    docs_detect_request:
+      type: object
+      properties:
+        file:
+          $ref: '#/components/schemas/file_property'
+        meta:
+          type: object
+          description: Параметры запроса
+          properties:
+            images:
+              type: array
+              items:
+                $ref: '#/components/schemas/image_property'
+          required:
+            - images
+      required:
+        - file
+        - meta
+    docs_detect_doc_property:
+      type: object
+      properties:
+        eng:
+          type: string
+          description: Тип (название) документа на английском в транслитерации
+          enum:
+            - Doc
+            - Akt
+            - Akt_sverky
+            - Voditelskye_prava
+            - Vypiska
+            - Diplom
+            - Doverennost
+            - Dogovor
+            - Zagranpasport
+            - Zayavlenie
+            - Inn
+            - Logotip
+            - Pasport
+            - Prais_list
+            - Prikaz
+            - Protocol
+            - Pts
+            - Registraciya_ts
+            - Rezyume
+            - Rekvizity
+            - Svidetelstvo
+            - Sertifikat
+            - Snils
+            - Spravka
+            - Schet
+            - Tabel
+            - Ustav
+        rus:
+          type: string
+          description: Тип (название) документа на русском
+          enum:
+            - Документ
+            - Акт
+            - Акт сверки
+            - Водительские права
+            - Выписка
+            - Диплом
+            - Доверенность
+            - Договор
+            - Загранпаспорт
+            - Заявление
+            - Инн
+            - Логотип
+            - Паспорт
+            - Прайс лист
+            - Приказ
+            - Протокол
+            - Птс
+            - Регистрация тс
+            - Резюме
+            - Реквизиты
+            - Свидетельство
+            - Сертификат
+            - Снилс
+            - Справка
+            - Счет
+            - Табель
+            - Устав
+        prob:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 1
+          example: 0.78
+          description: Степень уверенности в том, что на изображении именно этот тип документа
+      required:
+        - eng
+        - rus
+        - prob
+    docs_detect_page_property:
+      type: object
+      properties:
+        index:
+          type: integer
+          description: Номер страницы
+          example: 1
+        docs:
+          type: array
+          description: Массив найденных типов документов на странице. Для каждого объекта (картинки) может быть несколько типов, с различной степенью уверенности. Метка «Документ» определяет является ли изображение документом и с какой степенью уверенности
+          items:
+            $ref: '#/components/schemas/docs_detect_doc_property'
+      required:
+        - index
+        - docs
+    docs_detect_response:
+      allOf:
+        - $ref: '#/components/schemas/success_response'
+        - type: object
+          properties:
+            body:
+              allOf:
+                - $ref: '#/components/schemas/base_work_result_property'
+                - type: object
+                  properties:
+                    pages:
+                      description: Список объектов (меток), найденных на изображении
+                      type: array
+                      items:
+                        $ref: '#/components/schemas/docs_detect_page_property'
+                  required:
+                    - pages
+    docs_recognize_request:
+      type: object
+      properties:
+        file:
+          $ref: '#/components/schemas/file_property'
+        meta:
+          type: object
+          description: Параметры запроса
+          properties:
+            images:
+              type: array
+              items:
+                $ref: '#/components/schemas/image_property'
+          required:
+            - images
+      required:
+        - file
+        - meta
+    docs_recognize_result_property:
+      allOf:
+        - $ref: '#/components/schemas/base_work_result_property'
+        - type: object
+          properties:
+            labels:
+              type: object
+              description: Распознанный текст
+              additionalProperties:
+                type: array
+                description: '"Поле документа": "текст поля"'
+                items:
+                  type: string
+              example:
+                birthday:
+                  - 14.02.1990
+                birthplace:
+                  - ПОС.
+                  - ВОДНЫЙ
+                code_of_issue:
+                  - 100-106
+                date_of_issue:
+                  - 12.12.2012
+                first_name:
+                  - АЛЕКСАНДР
+                last_name:
+                  - ИВАНОВ
+                middle_name:
+                  - ИГОРЕВИЧ
+                number:
+                  - '645382'
+                  - '645382'
+                place_of_issue:
+                  - ОТДЕЛОМ
+                  - УФМС
+                  - РОССИИ
+                series_number:
+                  - '0909'
+                  - '0909'
+                sex:
+                  - МУЖ.
+    docs_recognize_response:
+      allOf:
+        - $ref: '#/components/schemas/success_response'
+        - type: object
+          properties:
+            body:
+              type: object
+              properties:
+                objects:
+                  type: array
+                  description: Массив результатов для каждого файла
+                  items:
+                    $ref: '#/components/schemas/docs_recognize_result_property'
+    text_recognize_request:
+      type: object
+      properties:
+        file:
+          $ref: '#/components/schemas/file_property'
+        meta:
+          type: object
+          description: Параметры запроса
+          properties:
+            mode:
+              type: string
+              description: 'Параметр-флаг: выдавать ли детализированный ответ, если "detailed", то детализированный (к ответу добавляются координаты "bounding box" текста и "confidence"), (опционально)'
+              enum:
+                - detailed
+            images:
+              type: array
+              items:
+                $ref: '#/components/schemas/image_property'
+          required:
+            - images
+      required:
+        - file
+        - meta
+    text_recognize_word_property:
+      type: object
+      properties:
+        prob:
+          type: number
+          format: float
+          description: Уверенность распознавания слова
+          example: 0.87
+        coord:
+          type: array
+          description: Координаты слова — x1, y1, x2, y2 — левый верхний и правый нижний точки охватывающего прямоугольника
+          items:
+            type: number
+            format: float
+          example:
+            - 0
+            - 0
+            - 0.5
+            - 0.5
+        text:
+          type: string
+          description: Распознанное слово ответа
+          example: you!
+        lang_prob:
+          type: number
+          format: float
+          description: Уверенность распознавания языка
+          example: 0.89
+        lang:
+          type: string
+          description: Язык (eng/rus/unknown. Вариант "unknown", когда текст не содержит букв алфавита)
+          enum:
+            - eng
+            - rus
+            - unknown
+      required:
+        - prob
+        - coord
+        - text
+        - lang_prob
+        - lang
+    text_recognize_line_property:
+      type: object
+      properties:
+        line_prob:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 1
+          example: 0.87
+          description: Уверенность распознавания строки
+        line_coord:
+          type: array
+          description: Координаты строки — x1, y1, x2, y2 — левый верхний и правый нижний точки охватывающего прямоугольника
+          items:
+            type: number
+            format: float
+          example:
+            - 0
+            - 0
+            - 0.5
+            - 0.5
+        words:
+          type: array
+          description: Массив распознанных слов ответов в строке
+          items:
+            $ref: '#/components/schemas/text_recognize_word_property'
+      required:
+        - line_prob
+        - line_coord
+        - words
+    text_recognize_result_property:
+      allOf:
+        - $ref: '#/components/schemas/base_work_result_property'
+        - oneOf:
+            - type: object
+              properties:
+                text:
+                  type: string
+                  example: some text
+                  description: Распознанный текст (только если ответ не детализирован)
+            - type: object
+              properties:
+                results:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/text_recognize_line_property'
+    text_recognize_response:
+      allOf:
+        - $ref: '#/components/schemas/success_response'
+        - type: object
+          properties:
+            body:
+              type: object
+              properties:
+                objects:
+                  type: array
+                  description: Массив результатов для каждого файла
+                  items:
+                    $ref: '#/components/schemas/text_recognize_result_property'
+    images_property:
+      type: array
+      description: Метаданные передаваемых изображений
+      items:
+        $ref: '#/components/schemas/image_property'
+    scene_text_recognize_request:
+      type: object
+      properties:
+        file:
+          $ref: '#/components/schemas/file_property'
+        meta:
+          type: object
+          description: Параметры запроса
+          properties:
+            images:
+              $ref: '#/components/schemas/images_property'
+          required:
+            - images
+      required:
+        - file
+        - meta
+    scene_text_recognize_word_property:
+      type: object
+      properties:
+        prob:
+          type: number
+          format: float
+          description: Уверенность распознавания слова
+          example: 0.87
+        coord:
+          type: array
+          description: Координаты слова — [[x1, y1], [x2, y2], [x3, y3], [x4, y4]]
+          items:
+            type: array
+            items:
+              type: number
+              format: float
+              minItems: 2
+              maxItems: 2
+            minItems: 4
+            maxItems: 4
+          example:
+            - - 0
+              - 0
+            - - 0
+              - 0.5
+            - - 0.5
+              - 0.5
+            - - 0.5
+              - 0
+        text:
+          type: string
+          description: Распознанное слово ответа
+          example: you!
+      required:
+        - prob
+        - coord
+        - text
+    scene_text_recognize_result_property:
+      allOf:
+        - $ref: '#/components/schemas/base_work_result_property'
+        - type: object
+      properties:
+        words:
+          type: array
+          description: Массив распознанных слов ответов в строке
+          items:
+            $ref: '#/components/schemas/scene_text_recognize_word_property'
+      required:
+        - words
+    scene_text_recognize_response:
+      allOf:
+        - $ref: '#/components/schemas/success_response'
+        - type: object
+          properties:
+            body:
+              type: object
+              properties:
+                objects:
+                  type: array
+                  description: Массив результатов для каждого файла
+                  items:
+                    $ref: '#/components/schemas/scene_text_recognize_result_property'
+    photo_improve_request:
+      type: object
+      properties:
+        file:
+          $ref: '#/components/schemas/file_property'
+        meta:
+          type: object
+          description: Параметры запроса
+          properties:
+            mode:
+              type: array
+              description: Типы объектов, которые требуется искать на переданных изображениях ("improve" — восстановление фотографий, "resolution" — увеличение разрешения)
+              items:
+                type: string
+                enum:
+                  - improve
+                  - resolution
+            rfactor:
+              type: integer
+              description: Коэффициент увеличения разрешения, может принимать значения либо "2", либо "4" (обязательно, если есть "resolution mode")
+              enum:
+                - 2
+                - 4
+            rtype:
+              type: string
+              description: Тип изображения, "art" или "photo" (обязательно, если есть "resolution mode")
+              enum:
+                - art
+                - photo
+            images:
+              type: array
+              items:
+                $ref: '#/components/schemas/image_property'
+          required:
+            - mode
+            - images
+    photo_improve_improve_object_property:
+      allOf:
+        - $ref: '#/components/schemas/base_work_result_property'
+        - type: object
+          properties:
+            improved:
+              type: string
+              example: base64
+              description: jpeg-картинка фотографии с исправленными дефектами (base64). Поле может отсутствовать или быть пустым, если по мнению алгоритма фотографию нет смысла восстанавливать (она и так хороша)
+            colorized_improved:
+              type: string
+              example: base64
+              description: jpeg-картинка фотографии с исправленными дефектами и восстановленным цветом (base64).  Поле может отсутствовать или быть пустым, если по мнению алгоритма фотографию нет смысла восстанавливать и закрашивать
+            colorized:
+              type: string
+              example: base64
+              description: jpeg-картинка фотографии с восстановленным цветом (base64)
+            bw:
+              type: boolean
+              description: true — алгоритм считает, что ему дали на вход чёрно-белую фотографию. false — алгоритм считает, что ему дали на вход цветную фотографию
+          required:
+            - colorized
+            - bw
+    photo_improve_resolution_object_property:
+      allOf:
+        - $ref: '#/components/schemas/base_work_result_property'
+        - type: object
+          properties:
+            resolved:
+              type: string
+              description: jpeg-картинка фотографии с увеличенным разрешением (base64)
+              example: base64
+          required:
+            - resolved
+    photo_improve_response:
+      allOf:
+        - $ref: '#/components/schemas/success_response'
+        - type: object
+          properties:
+            body:
+              type: object
+              properties:
+                improve:
+                  type: array
+                  description: Массив ответов для режима "improve"
+                  items:
+                    $ref: '#/components/schemas/photo_improve_improve_object_property'
+                resolution:
+                  type: array
+                  description: Массив ответов для режима "resolution"
+                  items:
+                    $ref: '#/components/schemas/photo_improve_resolution_object_property'
+    adult_detect_request:
+      type: object
+      properties:
+        file:
+          $ref: '#/components/schemas/file_property'
+        meta:
+          type: object
+          properties:
+            images:
+              type: array
+              items:
+                $ref: '#/components/schemas/image_property'
+          required:
+            - images
+      required:
+        - file
+        - meta
+    adult_detect_result_property:
+      allOf:
+        - $ref: '#/components/schemas/base_work_result_property'
+        - type: object
+          properties:
+            safe:
+              type: number
+              format: double
+              minimum: 0
+              maximum: 1
+              description: Степень уверенности в том, что на картинке нет NSFW-контента
+              example: 0.55
+          required:
+            - safe
+    adult_detect_response_body:
+      type: object
+      properties:
+        objects:
+          type: array
+          description: Массив результатов для каждого файла
+          items:
+            $ref: '#/components/schemas/adult_detect_result_property'
+    adult_detect_response:
+      allOf:
+        - $ref: '#/components/schemas/success_response'
+        - type: object
+          properties:
+            body:
+              $ref: '#/components/schemas/adult_detect_response_body'
