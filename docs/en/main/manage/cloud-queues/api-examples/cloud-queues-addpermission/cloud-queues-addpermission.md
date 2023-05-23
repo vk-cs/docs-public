@@ -50,9 +50,7 @@ HTTP Status Code: 403
 
 ## Examples
 
-### [](https://docs.aws.amazon.com/general/latest/gr/sigv4-signed-request-examples.html)
-
-#### Sample request
+### Sample request
 
 ```
 https://sqs.mcs.mail.ru/123456789012/MyQueue/
@@ -67,7 +65,7 @@ https://sqs.mcs.mail.ru/123456789012/MyQueue/
 &AUTHPARAMS
 ```
 
-#### Sample response
+### Sample response
 
 ```
 <AddPermissionResponse\>    
