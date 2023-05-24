@@ -1,6 +1,6 @@
 ## Аутентификация и авторизация
 
-Перед выполнением запросов [получите токен доступа](/ru/additionals/cases/case-keystone-token) `OS_AUTH_TOKEN`.
+Перед выполнением запросов [получите токен доступа](/ru/additionals/cases/case-keystone-token) `X-Subject-Token` и запишите его в переменную `OS_AUTH_TOKEN`.
 
 ## Параметры запросов и ответов
 
