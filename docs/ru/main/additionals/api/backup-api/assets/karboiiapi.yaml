@@ -1,0 +1,1556 @@
+swagger: "2.0"
+info:
+  description: 'karboii_karti'
+  version: 0.0.1
+  title: 'karboii server'
+host: stage.infra.devmail.ru:8799
+schemes:
+  - https
+basePath: /v1/
+
+
+securityDefinitions:
+  keystone:
+    type: apiKey
+    in: header
+    name: X-Auth-Token
+security:
+  - keystone: [ ]
+
+paths:
+
+  /{project_id}/plans:
+
+    post:
+      tags:
+        - plans
+      summary: Create a plan.
+      operationId: createPlan
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: plan
+          in: body
+          schema:
+            $ref: '#/definitions/postPlanRequest'
+          required: true
+          description: "`postPlanRequest` object in JSON format."
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/planResponse'
+        '400':
+          description: Unacceptable parameters.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '401':
+          description: User must authenticate before making a request.
+        '403':
+          description: Policy does not allow current user to do this operation.
+        '500':
+          description: Unable to create plan
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+    get:
+      tags:
+        - plans
+      summary: List plans.
+      operationId: listPlans
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: sort
+          in: query
+          type: string
+          description: Coma separated list of sort keys.
+        - name: limit
+          in: query
+          type: integer
+          description: Items page size.
+        - name: offset
+          in: query
+          type: integer
+          description: Number of items to skip.
+        - name: scheduled
+          in: query
+          type: integer
+          description: Whether to show manual or automatic backups. 0 is to show manual ones.
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/listPlanResponse'
+        '400':
+          description: Unacceptable parameters.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '401':
+          description: User must authenticate before making a request.
+        '403':
+          description: Policy does not allow current user to do this operation.
+        '500':
+          description: Unable to list plans
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+  /{project_id}/plans/{plan_id}:
+
+    get:
+      tags:
+        - plans
+      summary: Get the plan.
+      operationId: getPlan
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: plan_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the plan in UUID format.
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/planResponse'
+        '400':
+          description: Unacceptable parameters.
+        '401':
+          description: User must authenticate before making a request.
+        '403':
+          description: Policy does not allow current user to do this operation.
+        '404':
+          description: Provided plan ID is not found.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '500':
+          description: Unable to get plan
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+    put:
+      tags:
+        - plans
+      summary: Update the plan.
+      operationId: putPlan
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: plan_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the plan in UUID format.
+        - name: plan
+          in: body
+          schema:
+            $ref: '#/definitions/putPlanRequest'
+          description: "`putPlanRequest` object in JSON format."
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/planResponse'
+        '400':
+          description: Unacceptable parameters.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '404':
+          description: Provided plan ID is not found.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '500':
+          description: Unable to update the plan.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+    delete:
+      tags:
+        - plans
+      summary: Delete the plan.
+      operationId: deletePlan
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: plan_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the plan in UUID format.
+      responses:
+        '204':
+          description: OK
+        '404':
+          description: Provided plan ID is not found.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '400':
+          description: error
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '500':
+          description: Unable to delete the plan.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+  /{project_id}/triggers:
+
+    post:
+      tags:
+        - triggers
+      summary: Create a trigger.
+      operationId: postTrigger
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: trigger
+          in: body
+          schema:
+            $ref: '#/definitions/triggerRequest'
+          required: true
+          description: "`triggerRequest` object in JSON format."
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/triggerResponse'
+        '400':
+          description: Unacceptable parameters.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '404':
+          description: Provided plan ID is not found.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '500':
+          description: Unable to create the trigger.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+    get:
+      tags:
+        - triggers
+      summary: List triggers.
+      operationId: listTriggers
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: sort
+          in: query
+          type: string
+          description: Coma separated list of sort keys.
+        - name: limit
+          in: query
+          type: integer
+          description: Items page size.
+        - name: offset
+          in: query
+          type: integer
+          description: Number of items to skip.
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/listTriggersResponse'
+        '400':
+          description: Unacceptable parameters.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '500':
+          description: Unable to get the trigger.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+  /{project_id}/triggers/{trigger_id}:
+
+    get:
+      tags:
+        - triggers
+      summary: Get the trigger.
+      operationId: getTrigger
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: trigger_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the trigger in UUID format.
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/triggerResponse'
+        '400':
+          description: Unacceptable parameters.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '404':
+          description: Provided trigger ID is not found.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '500':
+          description: Unable to get the trigger.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+    put:
+      tags:
+        - triggers
+      summary: Update the trigger.
+      operationId: putTrigger
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: trigger_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the trigger in UUID format.
+        - name: trigger
+          in: body
+          schema:
+            $ref: '#/definitions/updateTriggerRequest'
+          required: true
+          description: "`updateTriggerRequest` object is JSON format."
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/triggerResponse'
+        '400':
+          description: Unacceptable parameters.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '404':
+          description: Provided trigger ID is not found.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '500':
+          description: Unable to update the trigger.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+  /{project_id}/providers/{provider_id}/checkpoints:
+
+    post:
+      tags:
+        - checkpoints
+      summary: Create a checkpoint.
+      operationId: postCheckpoint
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: provider_id
+          in: path
+          format: uuid
+          type: string
+          required: true
+          description: "ID of the provider. Hardcoded Nova and Trove are supported:
+          Nova:  37997f75-0637-4a69-bf7e-49ff2ff11fa5
+          Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3"
+        - name: checkpoint
+          in: body
+          schema:
+            $ref: '#/definitions/checkpointRequestObject'
+          required: true
+          description: "`checkpointRequestObject` in JSON format."
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/checkpointResponseObject'
+        '400':
+          description: Unacceptable parameters.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '500':
+          description: Internal server error.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+    get:
+      tags:
+        - checkpoints
+      summary: List checkpoints.
+      operationId: listCheckpoints
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: provider_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: "ID of the provider. Hardcoded Nova and Trove are supported:
+          Nova:  37997f75-0637-4a69-bf7e-49ff2ff11fa5
+          Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3"
+        - name: plan_id
+          in: query
+          type: string
+          format: uuid
+          description: Filter checkpoints by plan ID.
+        - name: sort
+          in: query
+          type: string
+          description: Coma separated list of sort keys.
+        - name: limit
+          in: query
+          type: integer
+          description: Items page size.
+        - name: offset
+          in: query
+          type: integer
+          description: Number of items to skip.
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/listCheckpointsResponse'
+        '400':
+          description: Unacceptable parameters.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '500':
+          description: Internal server error.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+  /{project_id}/providers/{provider_id}/checkpoints/{checkpoint_id}:
+
+    get:
+      tags:
+        - checkpoints
+      summary: Get the checkpoint.
+      operationId: getCheckpoint
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: provider_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: "ID of the provider. Hardcoded Nova and Trove are supported:
+          Nova:  37997f75-0637-4a69-bf7e-49ff2ff11fa5
+          Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3"
+        - name: checkpoint_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the checkpoint in UUID format.
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/checkpointResponseObject'
+        '404':
+          description: Checkpoint is not found.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '500':
+          description: Internal server error.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+    delete:
+      tags:
+        - checkpoints
+      summary: Delete the checkpoint.
+      operationId: deleteCheckpoint
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: provider_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: "ID of the provider. Hardcoded Nova and Trove are supported:
+          Nova:  37997f75-0637-4a69-bf7e-49ff2ff11fa5
+          Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3"
+        - name: checkpoint_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the checkpoint in UUID format.
+      responses:
+        '204':
+          description: OK
+        '404':
+          description: The checkpoint is not found.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '500':
+          description: Internal server error.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+  /{project_id}/providers/{provider_id}/checkpoints/{checkpoint_id}/resource_metadata/{resource_id}:
+
+    get:
+      tags:
+        - checkpoints
+      summary: Get the checkpoint's metadata.
+      operationId: getCheckpointMeta
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: provider_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: "ID of the provider. Hardcoded Nova and Trove are supported:
+          Nova:  37997f75-0637-4a69-bf7e-49ff2ff11fa5
+          Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3"
+        - name: checkpoint_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the checkpoint in UUID format.
+        - name: resource_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the checkpoint resource in UUID format.
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/checkpointMetadataObject'
+        '400':
+          description: Unacceptable parameters.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '500':
+          description: Internal error.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+  /{project_id}/restores:
+
+    post:
+      tags:
+        - restores
+      summary: create a restore
+      operationId: postRestore
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: restore
+          in: body
+          schema:
+            $ref: '#/definitions/restoreApiObject'
+          required: true
+          description: "`restoreApiObject` in JSON format."
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/restoreApiObject'
+        '400':
+          description: Unacceptable parameters.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '500':
+          description: Internal error.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+    get:
+      tags:
+        - restores
+      summary: list restores
+      operationId: listRestores
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: sort
+          in: query
+          type: string
+          description: Coma separated list of sort keys.
+        - name: limit
+          in: query
+          type: integer
+          description: Items page size.
+        - name: offset
+          in: query
+          type: integer
+          description: Number of items to skip.
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/listRestoreResponse'
+        '400':
+          description: Unacceptable parameters.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '500':
+          description: Internal error.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+  /{project_id}/restores/{restore_id}:
+
+    get:
+      tags:
+        - restores
+      summary: get restore
+      operationId: getRestore
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: restore_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the restore in UUID format.
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/restoreApiObject'
+        '404':
+          description: Restore is not found.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '500':
+          description: Unacceptable parameters.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+  /{project_id}/providers:
+
+    get:
+      tags:
+        - providers
+      summary: list providers
+      operationId: listProviders
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/providerListResponse'
+        '400':
+          description: Unacceptable parameters.
+        '401':
+          description: User must authenticate before making a request.
+        '403':
+          description: Policy does not allow current user to do this operation.
+
+  /{project_id}/providers/{provider_id}:
+
+    get:
+      tags:
+        - providers
+      summary: get provider info
+      operationId: getProvider
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: provider_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: "ID of the provider. Hardcoded Nova and Trove are supported:
+          Nova:  37997f75-0637-4a69-bf7e-49ff2ff11fa5
+          Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3"
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/providerResponse'
+        '400':
+          description: Unacceptable parameters.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '401':
+          description: User must authenticate before making a request.
+        '403':
+          description: Policy does not allow current user to do this operation.
+
+  /{project_id}/resources/{provider_id}/in-use:
+    get:
+      tags:
+        - resources
+      summary: "List the project's resources in use which have `protecting` or `restoring` statuses."
+      operationId: getInUseResources
+      parameters:
+        - name: project_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+        - name: provider_id
+          in: path
+          type: string
+          format: uuid
+          required: true
+          description: "ID of the provider. Hardcoded Nova and Trove are supported:
+          Nova:  37997f75-0637-4a69-bf7e-49ff2ff11fa5
+          Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3"
+      responses:
+        '200':
+          description: OK
+          schema:
+            $ref: '#/definitions/InUseResources'
+        '400':
+          description: Unacceptable parameters.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+        '401':
+          description: User must authenticate before making a request.
+        '403':
+          description: Policy does not allow current user to do this operation.
+        '500':
+          description: Unable to fetch in-use resources.
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+  /health:
+    get:
+      tags:
+        - healthchecker
+      summary: "Health check"
+      operationId: HealthCheck
+      responses:
+        '200':
+          description: OK
+      security: []
+
+definitions:
+
+  resources:
+    type: object
+    properties:
+      id:
+        type: string
+        description: Resource ID.
+      type:
+        type: string
+        description: "Resource type. 4 of them are allowed: `OS::Nova::Server`, `OS::Cinder::Volume`,
+        `OS::Trove::Instance`, `OS::Trove::Cluster`."
+      name:
+        type: string
+        description: "Resource name. By default it's an instance name (+ `_restored` if it was restored from the 
+        backup)."
+    required:
+      - id
+      - type
+      - name
+
+  checkpointResources:
+    type: object
+    properties:
+      id:
+        type: string
+        description: ID of checkpoint resource
+      original_id:
+        type: string
+        description: ID of the original instance (VM, DB, DB Cluster or Drive).
+      external_id:
+        type: string
+        description: The backup ID in Cinder service.
+      type:
+        type: string
+        description: "Type of the checkpoint resource. 4 of them are allowed: `OS::Nova::Server`, `OS::Cinder::Volume`,
+        `OS::Trove::Instance`, `OS::Trove::Cluster`."
+      status:
+        type: string
+        description: "Status of the checkpoint resource. 6 are presented: `available`, `protecting`, `deleting`, 
+        `deleted`, `error`, `error-deleting`"
+      parent_id:
+        type: string
+        x-nullable: true
+        description: "ONLY FOR NOVA: ID of the VM resource in the volume(s)."
+      name:
+        type: string
+        description: Name of the checkpoint resource.
+    required:
+      - name
+      - original_id
+      - type
+      - id
+
+  planParameters:
+    type: object
+    additionalProperties:
+      type: object
+      additionalProperties:
+        type: string
+    description: "DEPRECATED. Left to support types for old karbor versions in the private cloud."
+
+  planStatusObject:
+    type: string
+    enum: [ running, suspended, deleted ]
+
+  shortPlanObject:
+    type: object
+    properties:
+      status:
+        $ref: '#/definitions/planStatusObject'
+      name:
+        type: string
+        minLength: 1
+        maxLength: 100
+      full_day:
+        type: integer
+        x-nullable: true
+        maximum: 6
+        minimum: 0
+        description: "NULL - full backups plan, 0-6 - incremental backups plan, the number represents the full backup
+         day of the week."
+      retention_type:
+        $ref: '#/definitions/retentionType'
+      gfs:
+        $ref: '#/definitions/gfsRequest'
+      resources:
+        type: array
+        minItems: 1
+        maxItems: 100
+        items:
+          $ref: '#/definitions/resources'
+
+  planObject:
+    type: object
+    properties:
+      id:
+        type: string
+        description: ID of the plan in UUID format.
+      project_id:
+        type: string
+        description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+      name:
+        type: string
+        description: Name of the plan.
+      resources:
+        type: array
+        items:
+          $ref: '#/definitions/resources'
+      provider_id:
+        type: string
+        description: "ID of the provider. Hardcoded Nova and Trove are supported:
+        Nova:  37997f75-0637-4a69-bf7e-49ff2ff11fa5
+        Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3"
+      status:
+        $ref: '#/definitions/planStatusObject'
+        description: "Status of the plan.
+        running: the plan is active
+        suspended: the plan is stopped
+        deleted: the plan is deleted"
+      parameters:
+        $ref: '#/definitions/planParameters'
+        description: "DEPRECATED. Left to support types for old karbor versions in the private cloud."
+        x-nullable: true
+      full_day:
+        description: "NULL - full backup, 0-6 - incremental backup, the number represents the full backup day of the 
+        week."
+        type: integer
+      retention_type:
+        $ref: '#/definitions/retentionType'
+        description: Type of the retention policy.
+      gfs:
+        $ref: '#/definitions/gfsResponse'
+    required:
+      - name
+      - id
+      - resources
+      - full_day
+
+  putPlanRequest:
+    type: object
+    properties:
+      plan:
+        $ref: '#/definitions/shortPlanObject'
+
+  postPlanRequest:
+    type: object
+    properties:
+      plan:
+        type: object
+        properties:
+          name:
+            type: string
+            minLength: 1
+            maxLength: 100
+            description: Name of the plan.
+          resources:
+            type: array
+            items:
+              $ref: '#/definitions/resources'
+          provider_id:
+            type: string
+            description: "ID of the provider. Hardcoded Nova and Trove are supported:
+            Nova:  37997f75-0637-4a69-bf7e-49ff2ff11fa5
+            Trove: 7ab9410c-edda-4623-a51a-1bb806666cb3"
+          parameters:
+            $ref: '#/definitions/planParameters'
+            description: "DEPRECATED. Left to support types for old karbor versions in the private cloud."
+            x-nullable: true
+          full_day:
+            type: integer
+            x-nullable: true
+            maximum: 6
+            minimum: 0
+            description: "NULL - full backup, 0-6 - incremental backup, the number represents the full backup day of the 
+            week."
+          retention_type:
+            $ref: '#/definitions/retentionType'
+            description: Type of the retention policy.
+          gfs:
+            $ref: '#/definitions/gfsRequest'
+            description: "`gfsRequest` object in JSON format while using GFS retention policy."
+        required:
+          - name
+          - resources
+          - provider_id
+
+  planResponse:
+    type: object
+    properties:
+      plan:
+        $ref: '#/definitions/planObject'
+
+  listPlanResponse:
+    type: object
+    properties:
+      plans:
+        type: array
+        items:
+          $ref: '#/definitions/planObject'
+
+  listTriggersResponse:
+    type: object
+    properties:
+      triggers:
+        type: array
+        items:
+          $ref: '#/definitions/triggerObject'
+
+  triggerResponse:
+    type: object
+    properties:
+      trigger_info:
+        $ref: '#/definitions/triggerObject'
+
+  triggerRequest:
+    type: object
+    properties:
+      trigger_info:
+        $ref: '#/definitions/shortTriggerObject'
+
+  updateTriggerRequest:
+    type: object
+    properties:
+      trigger_info:
+        type: object
+        properties:
+          max_backups:
+            type: integer
+            maximum: 200
+            minimum: 1
+            description: Max backups amount stored in the plan.
+          pattern:
+            type: string
+            description: "Pattern represents the cron rule for a backup.
+            Note: for DB or DB cluster, if they have a time period less than 1 day, there are only available 3, 6, 12 
+            periods of time."
+          name:
+            type: string
+            minLength: 3
+            maxLength: 100
+            description: Name of the trigger.
+    required:
+      - trigger_info
+
+  shortTriggerObject:
+    type: object
+    properties:
+      name:
+        type: string
+        minLength: 3
+        maxLength: 100
+        description: Name of the trigger.
+      plan_id:
+        type: string
+        description: ID of the plan.
+      properties:
+        $ref: '#/definitions/triggerProperties'
+        description: "Different properties of the trigger. See `triggerProperties` object description for more info."
+    required:
+      - name
+      - properties
+      - plan_id
+
+  triggerObject:
+    type: object
+    properties:
+      id:
+        type: string
+        description: ID of the trigger.
+      plan_id:
+        type: string
+        description: ID of the plan.
+      name:
+        type: string
+        description: Name of the trigger.
+      properties:
+        $ref: '#/definitions/triggerProperties'
+        description: "Different properties of the trigger. See `triggerProperties` object description for more info."
+      project_id:
+        type: string
+        description: ID of the project. It can be found on VKCS in project settings under Terraform tab.
+    required:
+      - name
+      - id
+      - plan_id
+      - properties
+      - project_id
+    description: The object by default is created only in automatic backup plans.
+
+  triggerProperties:
+    type: object
+    properties:
+      pattern:
+        type: string
+        description: "Pattern represents the cron rule for a backup.
+        Note: for DB or DB cluster, if they have a time period less than 1 day, there are only available 3, 6, 12 hours
+        periods of time."
+      max_backups:
+        type: integer
+        maximum: 200
+        minimum: 1
+        description: Max backups amount stored in the plan.
+      next_time:
+        type: integer
+        description: Shows the time when the next backup will be created.
+    required:
+      - pattern
+
+  retentionType:
+    type: string
+    enum: [ max_backups, gfs ]
+
+  gfsRequest:
+    type: object
+    properties:
+      grandfather:
+        type: integer
+        maximum: 10
+        minimum: 0
+        x-nullable: false
+        description: How much yearly backups to keep.
+      father:
+        type: integer
+        maximum: 120
+        minimum: 0
+        x-nullable: false
+        description: How much monthly backups to keep.
+      son:
+        type: integer
+        maximum: 53
+        minimum: 1
+        x-nullable: false
+        description: How much daily backups to keep.
+    required:
+      - son
+
+  gfsResponse:
+    type: object
+    properties:
+      grandfather:
+        type: integer
+        maximum: 10
+        minimum: 0
+        x-nullable: false
+        description: How much yearly backups to keep.
+      father:
+        type: integer
+        maximum: 120
+        minimum: 0
+        x-nullable: false
+        description: How much monthly backups to keep.
+      son:
+        type: integer
+        maximum: 53
+        minimum: 1
+        x-nullable: false
+        description: How much daily backups to keep.
+    required:
+      - grandfather
+      - father
+      - son
+
+  listCheckpointsResponse:
+    type: object
+    properties:
+      checkpoints:
+        type: array
+        items:
+          $ref: '#/definitions/checkpointObject'
+
+  checkpointStatus:
+    type: string
+    enum: [ error, protecting, available, deleting, deleted, error-deleting, new, restoring ]
+
+  checkpointRequestObject:
+    type: object
+    properties:
+      checkpoint:
+        $ref: '#/definitions/checkpointShortObject'
+    required:
+      - checkpoint
+
+  checkpointResponseObject:
+    type: object
+    properties:
+      checkpoint:
+        $ref: '#/definitions/checkpointObject'
+
+  checkpointMetadataObject:
+    type: object
+    properties:
+      resource_metadata:
+        type: object
+        properties:
+          server_metadata:
+            $ref: '#/definitions/checkpointServerMetadata'
+          boot_metadata:
+            $ref: '#/definitions/checkpointBootMetadata'
+          attach_metadata:
+            type: object
+            additionalProperties:
+              $ref: '#/definitions/bootAttachMetadata'
+          database_metadata:
+            $ref: '#/definitions/databaseMetadata'
+
+  databaseMetadata:
+    type: object
+    properties:
+      meta:
+        type: string
+      datastore:
+        type: object
+        properties:
+          type:
+            type: string
+          version:
+            type: string
+      flavor:
+        type: string
+      size:
+        type: integer
+
+  checkpointServerMetadata:
+    type: object
+    properties:
+      availability_zone:
+        type: string
+      key_name:
+        type: string
+      floating_ips:
+        type: array
+        items:
+          type: string
+      flavor:
+        type: string
+      networks:
+        type: array
+        items:
+          type: string
+      security_groups:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+
+  bootAttachMetadata:
+    type: object
+    properties:
+      volume_image_metadata:
+        type: object
+        properties:
+          os_distro:
+            type: string
+          os_require_quiesce:
+            type: string
+          image_id:
+            type: string
+          container_format:
+            type: string
+          hw_qemu_guest_agent:
+            type: string
+          disk_format:
+            type: string
+          os_admin_user:
+            type: string
+          image_name:
+            type: string
+          os_version:
+            type: string
+          hw_boot_menu:
+            type: string
+          hw_rng_model:
+            type: string
+          min_disk:
+            type: string
+          checksum:
+            type: string
+          min_ram:
+            type: string
+          size:
+            type: string
+      server_id:
+        type: string
+      attachment_id:
+        type: string
+      availability_zone:
+        type: string
+      bootable:
+        type: string
+      attached_at:
+        type: string
+      volume_type:
+        type: string
+      volume_type_id:
+        type: string
+      host_name:
+        type: string
+      volume_id:
+        type: string
+      device:
+        type: string
+      id:
+        type: string
+      size:
+        type: integer
+
+  checkpointBootMetadata:
+    type: object
+    properties:
+      boot_attach_metadata:
+        $ref: '#/definitions/bootAttachMetadata'
+      boot_volume_id:
+        type: string
+      boot_device_type:
+        type: string
+
+  checkpointShortObject:
+    type: object
+    properties:
+      plan_id:
+        type: string
+      extra_info:
+        type: object
+        additionalProperties:
+          type: string
+    required:
+      - plan_id
+
+  checkpointObject:
+    type: object
+    properties:
+      id:
+        type: string
+        description: ID of the checkpoint.
+      project_id:
+        type: string
+      status:
+        $ref: '#/definitions/checkpointStatus'
+        description: Status of the checkpoint.
+      protection_plan:
+        type: object
+        $ref: '#/definitions/checkpointPlanObject'
+      resources:
+        type: array
+        items:
+          $ref: '#/definitions/checkpointResources'
+        description: Resource of the checkpoint.
+      size:
+        type: integer
+        description: Size of the checkpoint. Represents the sum of its resources sizes (the maximum capacity of each
+          is counted).
+      timestamp:
+        type: integer
+        description: When the checkpoint was created in Unix Timestamp (service field).
+      created_at:
+        type: string
+        description: When the checkpoint was created in ISO 8601 standard.
+      link_id:
+        type: string
+        description: NULL if the backup is full, UUID if the backup is incremental.
+      extra_info:
+        type: object
+        additionalProperties:
+          type: string
+      external_ids:
+        type: array
+        items:
+          type: string
+        description: "IDs of the external resources.
+        A VM has by default 2 external IDs: the Nova instance and its boot drive in Cinder.
+        A DB and a DB cluster have only 1 external ID."
+    required:
+      - id
+      - timestamp
+      - status
+      - size
+      - protection_plan
+      - created_at
+      - external_ids
+
+  checkpointPlanObject:
+    type: object
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+      resources:
+        type: array
+        items:
+          $ref: '#/definitions/resources'
+    required:
+      - id
+      - resources
+
+  restoreApiObject:
+    type: object
+    properties:
+      restore:
+        $ref: '#/definitions/restoreObject'
+
+  listRestoreResponse:
+    type: object
+    properties:
+      restores:
+        type: array
+        items:
+          $ref: '#/definitions/restoreObject'
+
+  restoreObject:
+    type: object
+    properties:
+      id:
+        type: string
+        description: ID of the restore.
+      provider_id:
+        type: string
+      checkpoint_id:
+        type: string
+        description: ID of the checkpoint related to the restore.
+      parameters:
+        type: object
+        additionalProperties:
+          $ref: '#/definitions/restoreParameters'
+        description: "Parameters necessary for `restoreObject` to be restored."
+      resources_reason:
+        type: object
+        additionalProperties:
+          type: string
+        description: Reasons of the erroneous resources that could not be restored.
+      resources_status:
+        type: object
+        additionalProperties:
+          type: string
+        description: Statuses of the resources.
+    required:
+      - provider_id
+      - checkpoint_id
+      - parameters
+
+  restoreParameters:
+    type: object
+    properties:
+      restore_name:
+        type: string
+      restore_keypair:
+        type: string
+      availability_zone:
+        type: string
+      restore_net_id:
+        type: string
+      destination:
+        type: string
+      volume_type:
+        type: string
+      enable_fip:
+        type: boolean
+      enable_geo_replication:
+        type: boolean
+      flavor:
+        type: string
+      volume_target_vm_id:
+        type: string
+    required:
+      - restore_name
+
+  providerResponse:
+    type: object
+    properties:
+      provider:
+        $ref: '#/definitions/providerObject'
+
+  providerListResponse:
+    type: object
+    properties:
+      providers:
+        type: array
+        items:
+          $ref: '#/definitions/providerObject'
+
+  providerObject:
+    type: object
+    properties:
+      id:
+        type: string
+        description: ID of the provider.
+      name:
+        type: string
+        description: Name of the provider.
+
+  InUseResources:
+    type: object
+    properties:
+      resources:
+        type: array
+        items:
+          $ref: '#/definitions/InUseResource'
+
+  InUseResource:
+    type: object
+    properties:
+      external_id:
+        type: string
+      status:
+        type: string
+        enum: [ protecting, restoring ]
+
+  User:
+    type: object
+    properties:
+      project_id:
+        type: string
+      token:
+        type: string
+      is_admin:
+        type: boolean
+      roles:
+        type: array
+        items:
+          type: string
+      user_id:
+        type: string
+
+  ErrorResponse:
+    type: object
+    properties:
+      message:
+        type: string
+      code:
+        type: integer
+
+  protectableTypes:
+    type: string
+    enum: [ OS::Cinder::Volume, OS::Glance::Image, OS::Nova::Server, OS::Trove::Instance, OS::Trove::Cluster ]
+
+
