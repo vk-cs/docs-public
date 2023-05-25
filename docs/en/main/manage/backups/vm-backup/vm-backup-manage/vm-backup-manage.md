@@ -72,6 +72,67 @@ VM recovery speed from backup is affected by:
 
 </info>
 
+## Restoring a VM disk from a backup
+
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+</tablist>
+<tabpanel>
+
+1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+2. Go to the **Backup** section in one of the ways.
+
+   - Through the services menu: **Cloud Computing → Backup**.
+
+   - Through the context menu of the virtual machine:
+
+      1. Go to **Cloud Computing → Virtual machines**.
+      2. Expand the VM context menu.
+      3. Click **Restore from backup**.
+
+3. Open the desired backup list.
+
+   - Copies created automatically:
+
+      1. Go to the **Automatic** tab.
+      2. In the list of plans, find the desired plan.
+      3. Click on the name of the plan or expand the context menu of the plan and click **View backups**.
+
+   - Copies created manually:
+
+      1. Go to the **Manual** tab.
+      2. In the list of virtual machines, find the VM you need.
+      3. Click on the number of recovery points in the row of the desired VM.
+
+4. Select the backup to restore.
+
+   - In the list of backups created automatically:
+
+      1. Expand the context menu of the desired copy.
+      2. Click **Restore instance**.
+      3. In the window that opens, select the backup.
+      4. Click **Restore Volume**.
+
+   - In the list of manually created backups:
+
+      1. Expand the context menu of the desired copy.
+      2. Click **Restore Volume**.
+
+5. To the form **Select a backup to restore the volume** select the disk for which you plan to restore.
+6. Click **Restore a volume form backup**.
+7. In the window that appears:
+
+   - **Instance**: select the VM from the backups for which the disk is being restored.
+   - **Recovery Volume**: specify the disk of the selected VM to restore.
+   - **Disk Name**: if necessary, specify the name of the new disk.
+   - **Availability zone**: select the data center where the VM will be launched.
+   - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [VK Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#disks).
+   - **Attach a volume to a VM**: enable the option if you want to connect the disk to an existing VM from the list **Virtual machine**.
+
+</tabpanel>
+</tabs>
+
 ## Deleting backups
 
 <tabs>
