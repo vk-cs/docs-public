@@ -1,0 +1,23 @@
+{
+  "title": "Tools for working with services",
+  "pageDescription": "The main management of platform resources is performed through the VK Cloud personal account. In addition to the web interface, management can be performed using tools: OpenStack CLI, REST API, Terraform.",
+  "shortDescription": "IaC-tools for managing VK Cloud platform resources: OpenStack CLI, REST API, Terraform",
+  "metaTitle": "Tools for working with services",
+  "metaDescription": "The main management of platform resources is performed through the VK Cloud personal account. In addition to the web interface, management can be performed using tools: OpenStack CLI, REST API, Terraform.",
+  "sectionTitle": "Tools for working with services",
+  "markdown": "You can work with VK Cloud services not only through [personal account](/en/base/account), but also with the help of additional tools: [OpenStack CLI](/en/manage/tools-for-using-services/openstack-cli), [REST API](/en/manage/tools-for-using-services/rest-api), [Terraform](/en/manage/tools-for-using-services/terraform). These tools allow you to automate cloud resource management workflows using the Infrastructure as Code (IaC) approach.",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": [
+    {
+      "text": "S3 CLI",
+      "icon": "/docs/_docs/ru/main/base/s3/assets/icon.svg",
+      "link": "../../base/s3/tools/s3-cli"
+    },
+    {
+      "text": "Personal account",
+      "icon": "/docs/_docs/ru/main/base/account/assets/icon.svg",
+      "link": "../../base/account"
+    }
+  ]
+}

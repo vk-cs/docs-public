@@ -1,0 +1,23 @@
+{
+  "title": "Инструменты для работы с сервисами",
+  "pageDescription": "Основное управление ресурсами платформы выполняется через личный кабинет VK Cloud. Помимо веб-интерфейса, управление может производиться с использованием инструментов: OpenStack CLI, REST API, Terraform.",
+  "shortDescription": "IaC-инструменты для управления ресурсами платформы VK Cloud: OpenStack CLI, REST API, Terraform",
+  "metaTitle": "Инструменты для работы с сервисами",
+  "metaDescription": "Основное управление ресурсами платформы выполняется через личный кабинет VK Cloud. Помимо веб-интерфейса, управление может производиться с использованием инструментов: OpenStack CLI, REST API, Terraform.",
+  "sectionTitle": "Инструменты для работы с сервисами",
+  "markdown": "С сервисами VK Cloud можно работать не только через [личный кабинет](/ru/base/account), но и при помощи дополнительных инструментов: [OpenStack CLI](/ru/manage/tools-for-using-services/openstack-cli), [REST API](/ru/manage/tools-for-using-services/rest-api), [Terraform](/ru/manage/tools-for-using-services/terraform). Эти инструменты позволяют автоматизировать рабочие процессы управления облачными ресурсами с использованием подхода Infrastructure as Code (IaC).",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": [
+    {
+      "text": "S3 CLI",
+      "icon": "/docs/_docs/ru/main/base/s3/assets/icon.svg",
+      "link": "../../base/s3/tools/s3-cli"
+    },
+    {
+      "text": "Личный кабинет",
+      "icon": "/docs/_docs/ru/main/base/account/assets/icon.svg",
+      "link": "../../base/account"
+    }
+  ]
+}
