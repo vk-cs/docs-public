@@ -7,7 +7,7 @@
   "sectionTitle": "Сервис очередей сообщений",
   "markdown": "Полностью управляемый сервис управления очередями сообщений. Совместимый с Amazon SQS API.",
   "icon": "",
-  "weight": 3,
+  "weight": 4,
   "infobarItems": [
     {
       "text": "Справка API",

@@ -1,0 +1,12 @@
+{
+  "title": "REST API",
+  "pageDescription": "Interaction with VK Cloud API is performed through endpoints. In some cases, a token will be required for authentication.",
+  "shortDescription": "Endpoints for connecting and generating an authentication token to the VK Cloud Services API",
+  "metaTitle": "REST API",
+  "metaDescription": "Interaction with VK Cloud API is performed through endpoints. In some cases, a token will be required for authentication.",
+  "sectionTitle": "REST API",
+  "markdown": "Interaction with VK Cloud API is performed through endpoints. In some cases, a token will be required for authentication.",
+  "icon": "",
+  "weight": 2,
+  "infobarItems": null
+}
