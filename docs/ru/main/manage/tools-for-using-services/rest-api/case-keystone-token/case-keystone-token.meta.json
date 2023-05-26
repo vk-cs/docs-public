@@ -1,0 +1,10 @@
+{
+  "title": "Получение токена доступа Keystone",
+  "pageDescription": "Получение токена доступа в сервисах VK Cloud",
+  "shortDescription": "Генерация токена X-Subject-Token для доступа к сервисам по REST API",
+  "metaTitle": "Получение токена доступа Keystone",
+  "metaDescription": "Генерация токена X-Subject-Token для доступа к сервисам по REST API.",
+  "sectionTitle": "Получение токена доступа Keystone",
+  "weight": 2,
+  "uuid": "70123755-37ab-4024-a5c6-fc56967933d7"
+}
