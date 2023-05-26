@@ -8,5 +8,6 @@
   "markdown": "Interaction with VK Cloud API is performed through endpoints. In some cases, a token will be required for authentication.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "24b79cd4-3139-47dc-bc92-457a745a2b6d"
 }
