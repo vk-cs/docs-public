@@ -1,0 +1,13 @@
+{
+  "title": "Terraform",
+  "pageDescription": "Terraform — это программное обеспечение с открытым исходным кодом, использующее подход «инфраструктура как код» (Infrastructure as code, IaC), созданное HashiCorp. Оно позволяет пользователям определять инфраструктуру, используя декларативный язык конфигурации на основе JSON.",
+  "shortDescription": "Использование Terraform-провайдера VK Cloud для управления платформой, быстрый старт и примеры манифестов",
+  "metaTitle": "Terraform",
+  "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой, быстрый старт и примеры манифестов.",
+  "sectionTitle": "Terraform",
+  "markdown": "Использование Terraform-провайдера VK Cloud для управления платформой, быстрый старт и примеры манифестов.",
+  "icon": "",
+  "weight": 3,
+  "infobarItems": null,
+  "uuid": "409caeaa-b3cf-4fb3-a690-0a262c0383da"
+}
