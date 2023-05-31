@@ -40,7 +40,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
    ```bash
    velero install \
    --plugins \
-     velero/velero-plugin-for-aws:v<selected AWS plugin version>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.1 \
+     velero/velero-plugin-for-aws:v<selected AWS plugin version>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.2 \
    --provider aws \
    --bucket <Velero bucket name> \
    --secret-file <path to s3_creds file> \
@@ -56,7 +56,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
    ```powershell
    velero install `
    --plugins `
-     velero/velero-plugin-for-aws:v<selected AWS plugin version>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.1 `
+     velero/velero-plugin-for-aws:v<selected AWS plugin version>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.2 `
    --provider aws `
    --bucket <Velero bucket name> `
    --secret-file <path to s3_creds file> `
