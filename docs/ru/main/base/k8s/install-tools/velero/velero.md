@@ -40,7 +40,7 @@ Velero — это клиент-серверная утилита для резе
    ```bash
    velero install \
    --plugins \
-     velero/velero-plugin-for-aws:v<выбранная версия плагина AWS>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.1 \
+     velero/velero-plugin-for-aws:v<выбранная версия плагина AWS>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.2 \
    --provider aws \
    --bucket <имя бакета для Velero> \
    --secret-file <путь к файлу s3_creds> \
@@ -56,7 +56,7 @@ Velero — это клиент-серверная утилита для резе
    ```powershell
    velero install `
    --plugins `
-     velero/velero-plugin-for-aws:v<выбранная версия плагина AWS>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.1 `
+     velero/velero-plugin-for-aws:v<выбранная версия плагина AWS>,registry.infra.mail.ru:5010/velero/velero-plugin-mcs:v1.2.2 `
    --provider aws `
    --bucket <имя бакета для Velero> `
    --secret-file <путь к файлу s3_creds> `
