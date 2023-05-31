@@ -1,0 +1,12 @@
+{
+  "title": "Cloud Streams",
+  "pageDescription": "",
+  "shortDescription": "Cloud Streams clusters for working with large datasets",
+  "metaTitle": "Cloud Streams",
+  "metaDescription": "Cloud Streams",
+  "sectionTitle": "Cloud Streams",
+  "markdown": "A complete distribution based on Apache Kafka and Apache NiFi, adapted for enterprise use, designed to handle large data streams.",
+  "icon": "",
+  "weight": 0,
+  "uuid": "8d5737cb-660e-4458-ad2d-710eae19e96d"
+}
