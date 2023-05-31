@@ -1,0 +1,13 @@
+{
+  "title": "Delete Cloud Streams Cluster",
+  "pageDescription": "Delete Cloud Streams Cluster",
+  "shortDescription": "Description of the steps to remove the cluster",
+  "metaTitle": "Deleting an Cloud Streams cluster",
+  "metaDescription": "Delete Cloud Streams Cluster",
+  "sectionTitle": "Deleting an Cloud Streams cluster",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "455aaae9-09c2-4c6c-bc93-42cab9271fb3"
+}
