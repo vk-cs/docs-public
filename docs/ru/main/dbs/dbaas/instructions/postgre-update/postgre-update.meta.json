@@ -1,0 +1,12 @@
+{
+  "title": "Обновление версии PostgreSQL",
+  "pageDescription": "Обновление версии PostgreSQL на инстансах в конфигурациях Single, Master-Replica, Кластер.",
+  "shortDescription": "Как обновить версию PostgreSQL на инстансах в конфигурациях Single, Master-Replica, Кластер",
+  "metaTitle": "Обновление версии PostgreSQL",
+  "metaDescription": "Обновление версии PostgreSQL на инстансах в конфигурациях Single, Master-Replica, Кластер.",
+  "sectionTitle": "Обновление версии PostgreSQL",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "64fab3ed-9e18-488f-9ef4-ee09eb5c4417"
+}
