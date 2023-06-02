@@ -1,12 +1,13 @@
 {
-    "title": "MySQL",
-    "pageDescription": "Управление инстансами MySQL.",
-    "shortDescription": "",
-    "metaTitle": "MySQL",
-    "metaDescription": "Базы данных VK Cloud: управление инстансами MySQL.",
-    "sectionTitle": "MySQL",
-    "markdown": "Управление инстансами MySQL.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 3
+  "title": "MySQL",
+  "pageDescription": "Управление инстансами MySQL.",
+  "shortDescription": "",
+  "metaTitle": "MySQL",
+  "metaDescription": "Базы данных VK Cloud: управление инстансами MySQL.",
+  "sectionTitle": "MySQL",
+  "markdown": "Управление инстансами MySQL.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "fad02954-3633-435b-a864-e0ff96c17c51"
 }
