@@ -1,0 +1,13 @@
+{
+  "title": "Using replicated and distributed ClickHouse tables",
+  "pageDescription": "Configuring data replication for Clickhouse at the table level.",
+  "shortDescription": "How to set up data replication for the Clickhouse DBMS",
+  "metaTitle": "Using replicated and distributed ClickHouse tables",
+  "metaDescription": "Configuring data replication for Clickhouse at the table level.",
+  "sectionTitle": "Using replicated and distributed ClickHouse tables",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5,
+  "additionalUuids": ["0a980896-60f5-4fe1-8a82-04dd28103766"],
+  "uuid": "f096c6fd-8dcb-4841-b248-f04ed11fa1a8"
+}
