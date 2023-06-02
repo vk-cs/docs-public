@@ -87,7 +87,7 @@ rs0:PRIMARY> rs.reconfig(cfg)
 rs0:PRIMARY>
 ```
 
-7. Log in to the `mongo2` server, import the MongoDB repository key, add the MongoDB repository and install MongoDB (how to do this, see the article [Installing and configuring MongoDB on Ubuntu](https://mcs.mail.ru/help/databases -configuration/mongodb-installation)).
+7. Log in to the `mongo2` server, import the MongoDB repository key, add the MongoDB repository and install MongoDB (how to do this, see the article [Installing and configuring MongoDB on Ubuntu](https://mcs.mail.ru/help/databases-configuration/mongodb-installation)).
 8. If you edited the `/etc/hosts` file on the `mongo1` server, do the same on the current server.
 9. From the mongo1 server, copy the configuration file `/etc/mongod.conf` to the current server, change the key name in the file `PEMKeyFile:` from `/etc/ssl/mongo1.pem` to `PEMKeyFile: /etc/ssl/mongo2 .pem`.
 10. Copy the `/etc/ssl/mongoCA.pem` key to the current server.
@@ -357,7 +357,7 @@ root@mongo1:~# apt-get update
 
 ```
 
-4. Based on [documentation](https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority), into the configuration file [/etc/mongod.conf]( ../case-mongo-update/assets/mongod.conf_4 "download") add the option `enableMajorityReadConcern: false` and replace `net:ssl` with `net:tls` (arbiter example):
+4. Based on [documentation](https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority), into the configuration file [/etc/mongod.conf](./assets/mongod.conf_4 "download") add the option `enableMajorityReadConcern: false` and replace `net:ssl` with `net:tls` (arbiter example):
 
 ```
 net:
