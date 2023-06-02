@@ -2,8 +2,6 @@
 
 <info>
 
-**Примечание**
-
 О конфигурации оборудования, а также о том, как установить и настроить MongoDB, вы можете узнать в статье [Установка и настройка MongoDB на Ubuntu](https://mcs.mail.ru/help/databases-configuration/mongodb-installation).
 
 </info>
@@ -362,7 +360,7 @@ root@mongo1:~# apt-get update
 
 ```
 
-4.  Исходя из [документации](https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority), в конфигурационный файл [/etc/mongod.conf](../case-mongo-update/assets/mongod.conf_4 "download")добавьте опцию `enableMajorityReadConcern: false` и замените `net:ssl` на `net:tls` (пример для арбитра):
+4.  Исходя из [документации](https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority), в конфигурационный файл [/etc/mongod.conf](../case-mongo-update/assets/mongod.conf_4 "download") добавьте опцию `enableMajorityReadConcern: false` и замените `net:ssl` на `net:tls` (пример для арбитра):
 
 ```
 net:
@@ -550,7 +548,3 @@ rs.stepDown()
 Мы выполнили обновление без вывода кластера из работы, то есть бесшовно.
 
 В случае обновления одиночного сервера MongoDB обновите параметр `feature compatibility version`, подключите репозиторий с новой версией `mongodb` , поправьте конфигурационный файл сервера и обновите сервер `mongodb` на новую версию, как описано выше. В этом случае потребуется останов сервера.
-
-## Обратная связь
-
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
