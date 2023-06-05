@@ -1,0 +1,12 @@
+{
+  "title": "Docker Registry",
+  "pageDescription": "Docker Registry is a scalable stateless server application that stores Docker images and allows you to distribute them.",
+  "shortDescription": "Docker Registry is a scalable stateless server application that stores Docker images and allows you to distribute them. As part of this stack there is a graphical Portainer interface",
+  "metaTitle": "Docker Registry",
+  "metaDescription": "Docker Registry is a scalable stateless server application that stores Docker images and allows you to distribute them.",
+  "sectionTitle": "Docker Registry",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 7
+}
