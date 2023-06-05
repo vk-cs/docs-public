@@ -1,10 +1,10 @@
 {
-  "title": "LAMP stack (Apache+PHP)",
+  "title": "LAMP stack",
   "pageDescription": "LAMP — стек программного обеспечения: Linux, Apache, MariaDB / MySQL, PHP. Используется для создания, размещения и поддержки веб-контента.",
   "shortDescription": "LAMP — стек программного обеспечения: Linux, Apache, MariaDB / MySQL, PHP. Используется для создания, размещения и поддержки веб-контента",
-  "metaTitle": "LAMP stack (Apache+PHP)",
+  "metaTitle": "LAMP stack",
   "metaDescription": "LAMP — стек программного обеспечения: Linux, Apache, MariaDB / MySQL, PHP. Используется для создания, размещения и поддержки веб-контента.",
-  "sectionTitle": "LAMP stack (Apache+PHP)",
+  "sectionTitle": "LAMP stack",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
