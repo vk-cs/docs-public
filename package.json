@@ -1,0 +1,24 @@
+{
+  "name": "docs-public",
+  "version": "1.0.0",
+  "description": "Публичная документация VK Cloud",
+  "main": "index.js",
+  "scripts": {
+    "prep": "vkhelp-preparation",
+    "build": "vkhelp-build",
+    "start": "vkhelp-start",
+    "healthcheck": "vkhelp-healthcheck",
+    "updateRedirect": "vkhelp-update-redirect",
+    "lint": "vkhelp-lint",
+    "dev": "vkhelp-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.corp.mail.ru:infra/front/tech-writers/docs-public.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vk-cloud-solutions/help": "1.8.0"
+  }
+}
