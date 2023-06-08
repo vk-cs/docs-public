@@ -1,5 +1,13 @@
 /README.md
+/LICENSE
+/CONTRIBUTING.md
 .git*
 /devops/
+/configs/devops/
 Dockerfile
 .dockerignore
+docker-compose.yml
+/README.md
+.markdownlint.json
+node_modules
+.vkhelp
