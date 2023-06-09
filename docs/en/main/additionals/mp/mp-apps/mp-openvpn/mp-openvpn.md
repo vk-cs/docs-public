@@ -3,7 +3,7 @@
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
 1. Go to **App store**.
 1. In the block with the OpenVPN application, click **Install**.
-1. At the “Install application” step, specify the parameters according to [instructions](../../mp-start/).
+1. At the “Install application” step, specify the parameters according to [instructions](../../quick-start/).
 1. At the “Additional parameters” step, specify:
 
    - **Логин OpenVPN клиента**: it will be used as the first client in the OpenVPN network being created.
