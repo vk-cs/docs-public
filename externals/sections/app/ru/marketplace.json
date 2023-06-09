@@ -6,16 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/start"
+                    "link": "docs/ru/main/additionals/mp/concepts/about-mp"
                 },
                 {
-                    "link": "docs/ru/main/additionals/mp/mp-info/about-mp"
-                },
-                {
-                    "link": "docs/ru/main/additionals/cases"
-                },
-                {
-                    "link": "docs/ru/main/additionals/mp/mp-faq"
+                    "link": "docs/ru/main/additionals/mp/faq"
                 }
             ]
         },
@@ -23,25 +17,46 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/mp/mp-start"
-                },
-                {
-                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-gitlab-ce"
+                    "link": "docs/ru/main/additionals/mp/quick-start"
                 },
                 {
                     "link": "docs/ru/main/additionals/mp/mp-apps/mp-docker-ce"
                 },
                 {
-                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-lemp-stack"
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-docker-registry"
                 },
                 {
-                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-lamp-stack"
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-gitlab-ce"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-harbor"
                 },
                 {
                     "link": "docs/ru/main/additionals/mp/mp-apps/mp-jenkins"
                 },
                 {
-                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-docker-registry"
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-lamp-stack"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-lemp-stack"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-mean-stack"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-monitoring"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-nexus-2-3"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-openvpn"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-tomcat"
+                },
+                {
+                    "link": "docs/ru/main/additionals/mp/mp-apps/mp-wordpress"
                 }
             ]
         }

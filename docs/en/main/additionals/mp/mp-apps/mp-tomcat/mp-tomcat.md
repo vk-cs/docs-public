@@ -1,6 +1,6 @@
 ## Installation
 
-Deploy the VM with the application according to [instruction](../../mp-start/).
+Deploy the VM with the application according to [instruction](../../quick-start/).
 
 ## Connection
 
