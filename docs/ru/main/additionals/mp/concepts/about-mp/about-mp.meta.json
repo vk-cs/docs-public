@@ -1,0 +1,15 @@
+{
+  "title": "О сервисе",
+  "pageDescription": "Описание возможностей сервиса Магазин приложений VK Cloud.",
+  "shortDescription": "Возможности сервиса и список приложений",
+  "metaTitle": "О сервисе",
+  "metaDescription": "Описание возможностей сервиса Магазин приложений VK Cloud.",
+  "sectionTitle": "О сервисе",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "55002a6f-06dd-4b83-be86-1342ed69d7d0",
+  "additionalUuids": [
+    "28e35693-a7e9-4445-9e9a-4fba06152841"
+  ]
+}
