@@ -2,7 +2,6 @@ module.exports = {
     main: {
         projectName: 'VK Cloud',
         defaultLocale: 'ru',
-        useNativeSupportUrl: false
     },
     url: {
         rootSitename: '/',
