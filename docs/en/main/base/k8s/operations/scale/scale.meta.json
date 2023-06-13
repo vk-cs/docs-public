@@ -8,6 +8,6 @@
   "markdown": "A Kubernetes cluster consists of master nodes and groups of worker nodes. Cluster scaling is supported in both manual and automatic (depending on the load) modes. Scaling is done by manipulating the size of groups of worker nodes.",
   "icon": "",
   "infobarItems": null,
-  "weight": 5,
+  "weight": 6,
   "uuid": "5920466e-99d4-474a-b19a-d9a286815876"
 }

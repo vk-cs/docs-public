@@ -43,7 +43,7 @@
 Такой балансировщик создается пользователем и может использоваться для обеспечения отказоустойчивости и гибкого масштабирования приложений:
 
 - При работе с [сервисом облачных вычислений](/ru/base/iaas) для распределения входящего трафика между виртуальными серверами.
-- При работе с [сервисом контейнеров](/ru/base/k8s/), например при использовании [Ingress-контроллеров](/ru/base/k8s/use-cases/ingress) (в том числе [предустановленного](/ru/base/k8s/concepts/preconfigured-features/addons#ingress-controller--nginx-)) или сервисов типа [Load Balancer](/ru/base/k8s/use-cases/load-balancer).
+- При работе с [сервисом контейнеров](/ru/base/k8s/), например при использовании [Ingress-контроллеров](/ru/base/k8s/use-cases/ingress) (в том числе [предустановленного](/ru/base/k8s/concepts/addons-and-settings/addons#ingress-controller--nginx-)) или сервисов типа [Load Balancer](/ru/base/k8s/use-cases/load-balancer).
 
 </tabpanel>
 <tabpanel>
