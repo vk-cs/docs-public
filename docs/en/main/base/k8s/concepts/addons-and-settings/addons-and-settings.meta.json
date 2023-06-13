@@ -1,0 +1,13 @@
+{
+  "title": "Addons and settings",
+  "pageDescription": "Each Kubernetes VK Cloud cluster is already pre-configured for your convenience. This section describes the settings used in the cluster, as well as addons that can be installed in the cluster.",
+  "shortDescription": "Services to extend the functionality of the cluster and settings available with the Kubernetes cluster",
+  "metaTitle": "Addons and settings",
+  "metaDescription": "Each Kubernetes VK Cloud cluster is already pre-configured for your convenience. This section describes the settings used in the cluster, as well as addons that can be installed in the cluster.",
+  "sectionTitle": "Addons and settings",
+  "markdown": "Each Kubernetes VK Cloud cluster is already pre-configured for your convenience. This section describes the settings used in the cluster, as well as addons that can be installed in the cluster.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "c79491d9-6a34-4797-8396-67d0369308c6"
+}

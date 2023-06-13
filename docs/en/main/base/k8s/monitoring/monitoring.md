@@ -4,20 +4,12 @@ The following tools are available for monitoring the status of a Kubernetes clus
 
   They provide basic monitoring capabilities, allowing you to view information about Kubernetes resources.
 
-- Pre-configured [monitoring service](../concepts/preconfigured-features/addons#monitoring) (must be selected during cluster creation).
+- [Monitoring addon](../concepts/addons-and-settings/addons#kube-prometheus-stack).
 
   It provides advanced cluster monitoring capabilities, allowing you to view metrics for multiple Kubernetes resources, down to individual pods.
   It is also possible to configure alerts when specified thresholds for metrics are exceeded. For example, you can monitor if the cluster resources are not available or if the computing power of the worker nodes is insufficient.
 
-  To find out whether a monitoring service is available in a cluster:
-  1. Make sure that you can [connect to the cluster](../connect/kubectl) with `kubectl`.
-  1. Run the command:
-
-     ```bash
-     kubectl get namespaces
-     ```
-
-     If the output of the command contains the namespace `prometheus-monitoring`, the service is installed and available.
+  To find out if the monitoring addon is installed in the cluster, [see the list of installed addons](../operations/addons/manage-addons#viewing-addons).
 
 ## Using Kubernetes Dashboard
 
@@ -29,6 +21,7 @@ The following tools are available for monitoring the status of a Kubernetes clus
 
 ## Using Grafana
 
+1. [Make sure](../operations/addons/manage-addons#viewing-addons) that the monitoring addon (`kube-prometheus-stack`) [is installed](../operations/addons/advanced-installation/install-advanced-monitoring/) in a cluster.
 1. [Make sure](../connect/kubectl#checking-the-connection-to-the-cluster) that you can connect to the cluster using `kubectl`.
 
 1. Access the Grafana web interface:
@@ -62,15 +55,10 @@ The following tools are available for monitoring the status of a Kubernetes clus
 
       The Grafana login page will appear.
 
-1. Log in to Grafana:
+1. Log in to Grafana. Depending on the parameters with which the addon was [installed](../operations/addons/advanced-installation/install-advanced-monitoring/), use:
 
-   - If you are logging in for the first time:
-
-     1. Use the login `admin` and the password `admin` to log in.
-     1. Set a new password instead of the default password.
-     1. Click the **Submit** button.
-
-   - If you've already logged into Grafana, use the `admin' login and the password you have set.
+   - Login `admin` and temporary password. The password will need to be changed after the first login.
+   - Login `admin` and a permanent password from the Kubernetes secret.
 
 Now you can work with Grafana. For example, it is possible to create and view dashboards. Preconfigured dashboards with information about various Kubernetes resources are available in the **Dashboards → Browse** side menu.
 

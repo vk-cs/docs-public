@@ -1,4 +1,4 @@
-If the cluster is not using the most current version of Kubernetes from [the list](../../concepts/versions/version-support/), it can be upgraded to a newer version of Kubernetes.
+If the cluster is not using the most current version of Kubernetes from [the list](../../concepts/versions/version-support/), it can be upgraded to a newer version of Kubernetes. When updating a cluster, its [components and installed addons](../../concepts/versions/components) are also updated.
 
 <warn>
 

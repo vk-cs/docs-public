@@ -20,7 +20,7 @@ Sprut is in the beta testing phase. Contact [technical support](../../../../../c
 
 ## Integration with load balancers
 
-Kubernetes cluster integrates with the load balancers of the VK Cloud platform. This applies to both regular Kubernetes load balancers (`LoadBalancer`) and Ingress controllers (`IngressController`): both will have a dedicated VK Cloud TCP balancer attached to them both when created. This includes the [preconfigured VK Cloud Ingress Controller](../preconfigured-features/addons/).
+Kubernetes cluster integrates with the load balancers of the VK Cloud platform. This applies to both regular Kubernetes load balancers (`LoadBalancer`) and Ingress controllers (`IngressController`): both will have a dedicated VK Cloud TCP balancer attached to them both when created. This also applies to the Ingress controller, which is installed as an [addon](../addons-and-settings/addons/).
 
 If necessary, you can use the HTTP load balancer. See [example for Ingress controller](../../use-cases/ingress/ingress-http) for details.
 
@@ -42,7 +42,7 @@ To allow a pod that is placed behind the Ingress controller to see the user's re
 
   If you plan to handle HTTPS traffic, configure SSL connection termination on this Ingress controller because the TCP balancer that will be created for the controller cannot terminate SSL connections itself.
 
-  The [NGINX-based Ingress Controller](../preconfigured-features/addons/) provided by VK Cloud supports the proxy protocol and is already configured to work with it.
+  The [NGINX-based Ingress Controller](../addons-and-settings/addons/) provided by VK Cloud supports the proxy protocol and is already configured to work with it.
 
 - [Separate HTTP\HTTPS balancer with additional settings](../../use-cases/ingress/ingress-http):
 

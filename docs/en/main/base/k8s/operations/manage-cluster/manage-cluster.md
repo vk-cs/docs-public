@@ -123,30 +123,6 @@ After performing this operation, the existing public keys on the cluster will be
 </tabpanel>
 </tabs>
 
-## Change the size of the Prometheus disk
-
-This operation is available if [pre-configured monitoring service](../../concepts/preconfigured-features/addons/) was selected when the cluster was created.
-
-The Prometheus disk stores the cluster monitoring data. If there is not enough space for them, or if you want to increase the performance of the Prometheus disk, increase the disk size.
-
-The operation can only be performed when the cluster is running.
-
-<tabs>
-<tablist>
-<tab>Personal account</tab>
-</tablist>
-<tabpanel>
-
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project and the region where the necessary cluster is located.
-1. Go to **Containers** → **Kubernetes Clusters**.
-1. Expand the menu of the necessary cluster and select **Change Prometheus disk size**.
-1. Set the desired disk size. The operation only works in the upward direction.
-1. Click the **Confirm** button.
-
-</tabpanel>
-</tabs>
-
 ## Change virtual machine type for master nodes
 
 This operation is described in detail in [Cluster node scaling](../scale/).
