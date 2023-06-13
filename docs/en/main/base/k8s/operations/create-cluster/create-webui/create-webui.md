@@ -1,8 +1,12 @@
-<info>
+The following describes how to create a cluster from your personal account. It is also possible to create a cluster [with Terraform](../create-terraform/).
 
-It is also possible to create a cluster [with Terraform](../create-terraform/).
+<warn>
 
-</info>
+When installing the cluster, a [service load balancer](/en/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created.
+
+Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
+
+</warn>
 
 ## Before you create a cluster
 
@@ -15,7 +19,7 @@ It is also possible to create a cluster [with Terraform](../create-terraform/).
    1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
    1. Select [project](../../../../account/concepts/projects), where the cluster will be placed.
    1. Select the region where the cluster will be placed.
-   1. Go to **Containers** → **Kubernetes lusters**.
+   1. Go to **Containers** → **Kubernetes clusters**.
    1. If there are no clusters in the selected region, click the **Create cluster** button.
 
       Otherwise, click the **Add** button.
@@ -42,10 +46,9 @@ It is also possible to create a cluster [with Terraform](../create-terraform/).
    A configuration of one master node and one worker node:
 
    - Minimum number of master nodes: one;
-   - Minimum disk size for the master nodes: 20 GB;
-   - selected [preconfigured services](../../../concepts/preconfigured-features/addons/): Docker Registry, Ingress Controller.
+   - Minimum disk size for the master nodes: 20 GB.
 
-   This cluster is suitable for use in application development. It allows you to deploy applications from the Docker Registry and provide access to them via Ingress.
+   This cluster is suitable for use in application development.
 
    </tabpanel>
    <tabpanel>
@@ -53,10 +56,9 @@ It is also possible to create a cluster [with Terraform](../create-terraform/).
    A configuration of one master node and one worker node:
 
    - minimum number of master nodes: one;
-   - minimum disk size for the master nodes: 40 GB;
-   - selected [preconfigured services](../../../concepts/preconfigured-features/addons/): Monitoring, Ingress Controller.
+   - minimum disk size for the master nodes: 40 GB.
 
-   This cluster is suitable for use when testing or piloting applications. It allows you to monitor deployed applications and provide access to them via Ingress.
+   This cluster is suitable for use when testing or piloting applications.
 
    </tabpanel>
    <tabpanel>
@@ -64,10 +66,9 @@ It is also possible to create a cluster [with Terraform](../create-terraform/).
    A configuration of multiple master nodes and one worker node:
 
    - Minimum number of master nodes: three;
-   - Minimum disk size for the master nodes: 40 GB;
-   - selected [preconfigured services](../../../concepts/preconfigured-features/addons/): Monitoring, Docker Registry, Ingress Controller.
+   - Minimum disk size for the master nodes: 40 GB.
 
-   Such a cluster is suitable for any task, including the routine operation of applications in a production environment. It allows you to deploy applications from the Docker Registry, monitor them and provide access to them via Ingress.
+   Such a cluster is suitable for any task, including the routine operation of applications in a production environment.
 
    </tabpanel>
    <tabpanel>
@@ -75,8 +76,7 @@ It is also possible to create a cluster [with Terraform](../create-terraform/).
    Configuration of your choice:
 
    - minimum number of master nodes: one;
-   - Minimal size of the disk for the master nodes: 20 GB;
-   - selected [preconfigured services](../../../concepts/preconfigured-features/addons/): Ingress Controller.
+   - Minimal size of the disk for the master nodes: 20 GB.
 
    Select this option to manually configure all settings for the cluster you are creating.
 
@@ -84,8 +84,6 @@ It is also possible to create a cluster [with Terraform](../create-terraform/).
    </tabs>
 
    For more information about cluster topologies, see [Architecture](../../../concepts/architecture#cluster-topologies).
-
-1. Select additional [preconfigured services](../../../concepts/preconfigured-features/addons/) if necessary.
 
 1. Click the **Next step** button.
 
