@@ -8,5 +8,6 @@
   "markdown": "Which versions of components and addons are supported in VK Cloud clusters.",
   "icon": "",
   "infobarItems": null,
-  "weight": 3
+  "weight": 3,
+  "uuid": "ebe13293-8fbf-4467-bafe-1389f856c610"
 }
