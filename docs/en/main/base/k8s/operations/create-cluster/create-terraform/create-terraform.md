@@ -2,6 +2,14 @@ Description of how to create a cluster using Terraform is provided below. It is 
 
 Ready-to-use examples of configuration files to create different clusters are listed in the [Terraform](/en/manage/terraform/use-cases/k8s/create) section.
 
+<warn>
+
+When installing the cluster, a [service load balancer](/en/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created. When you select [addon](../../../concepts/addons-and-settings/addons/) NGINX Ingress Controller, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created for it.
+
+Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
+
+</warn>
+
 ## Before creating cluster
 
 1. Familiarize yourself with the available resources and [quotas](../../../../account/concepts/quotasandlimits/) for the [region](../../../../account/concepts/regions/) in which you plan to create the cluster. Different quotas may be configured for different regions.
@@ -101,7 +109,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   availability_zone   = "<availability zone>"
   floating_ip_enabled = <true or false: whether to assign public IP address to the cluster's API endpoint>
   labels = {
-    # Required pre-configured services
+    # Necessary addons
     docker_registry_enabled = true
     prometheus_monitoring = true
     ingress_controller="nginx"
@@ -193,7 +201,7 @@ Some clarification:
 
 - It is recommended to assign a public IP address to the cluster when creating it, so that you can access the cluster from the Internet (`floating_ip_enabled = true`). To assing such an IP address, it is necessary for the subnet with the `subnet_id` identifier to be [connected](/en/networks/vnet/concepts/ips-and-inet#organizing-internet-access) to the router which has access to the external network.
 
-- If some of the pre-configured services are not needed, delete the corresponding lines from the `labels` block. See [Available services](../../../concepts/preconfigured-features/addons/) for details.
+- If some of the addons are not needed, delete the corresponding lines from the `labels` block. See [Addons](../../../concepts/addons-and-settings/addons/) for details.
 
 ## 3. Describe the configuration of one or more worker node groups
 

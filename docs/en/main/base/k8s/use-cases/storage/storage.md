@@ -6,13 +6,22 @@ Persistent volumes can be connected to simple demo applications in various ways.
 
    When creating the cluster:
 
-   - Select the preinstalled NGINX Ingress Controller service. You will need it to provide access to demo applications.
    - Select the **Assign external IP** option.
    - Create one group of worker nodes with virtual machine type `Standard-2-8` in the `MS1` availability area with total computing resources: 2 vCPU, 8 GB RAM (or more). This is necessary to be able to schedule all the required objects.
 
-     For example, you can create one group of nodes with virtual machine type `Standard-2-8`.
+    For example, you can create one group of nodes with virtual machine type `Standard-2-8`.
 
    Other cluster parameters are at your discretion.
+
+1. [Make sure](../../operations/addons/manage-addons#viewing-addons) that the NGINX Ingress addon (`ingress-nginx`) [is installed](../../operations/addons/advanced-installation/install-advanced-ingress/) in a cluster with default parameters. It will be required to provide access to demo applications.
+
+    <warn>
+
+    When installing the addon, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created.
+
+    Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
+
+    </warn>
 
 1. [Make sure](../../connect/kubectl) that you can connect to the cluster using `kubectl`.
 
@@ -704,13 +713,7 @@ To connect an NFS persistent volume using a static PVC:
    kubectl apply -f ./cafe-ingress.yaml
    ```
 
-1. Find the public IP address of the Ingress controller by running the command:
-
-   ```bash
-   kubectl get svc ingress-nginx-controller -n ingress-nginx
-   ```
-
-   The `EXTERNAL-IP` column will contain the necessary IP address.
+1. [Define](../../operations/addons/advanced-installation/install-advanced-ingress#-getting-the-ip-address-of-the-load-balancer) the public IP address of the Ingress controller.
 
 1. Check the availability of the applications with `curl` using the IP address of the Ingress controller.
 
