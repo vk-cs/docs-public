@@ -8,5 +8,6 @@
   "markdown": "This section describes the available actions on addons and the procedure for advanced installation of addons.",
   "icon": "",
   "infobarItems": null,
-  "weight": 5
+  "weight": 5,
+  "uuid": "15db7d64-6883-4799-921c-d848d2f90df9"
 }
