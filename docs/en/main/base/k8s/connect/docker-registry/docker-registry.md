@@ -1,11 +1,11 @@
-You can connect to the Docker registry if the appropriate addon is installed in the cluster.
+You can connect to the Docker registry if the appropriate [addon](../../concepts/addons-and-settings/addons) is installed in the cluster.
 
-When installing an addon, a standard load balancer with a floating IP address is created for it. Therefore, you can connect to the Docker registry from any host that has Internet access.
+When [installing](../../operations/addons/advanced-installation/install-advanced-registry/) an addon, a standard load balancer with a floating IP address is created for it. Therefore, you can connect to the Docker registry from any host that has Internet access.
 
 ## Preparatory steps
 
-1. Make sure that the Docker registry addon (`docker-registry`) is installed in the cluster.
-1. Get the data to access the Docker registry.
+1. [Make sure](../../operations/addons/manage-addons#viewing-addons) that the Docker registry addon (`docker-registry`) is installed in the cluster.
+1. [Get the data](../../operations/addons/advanced-installation/install-advanced-registry#getting-data-to-access-the-registry) to access the Docker registry.
 
 ## Connecting to the Docker Registry
 
@@ -73,7 +73,7 @@ On the host from which you plan to connect to the registry:
 1. Log in into the registry:
 
    ```bash
-   docker login <URL of Docker registry> --username <username for Docker registry>
+   docker login <URL of Docker registry> --username <login for Docker registry>
    ```
 
    Enter the password for the Docker registry.
