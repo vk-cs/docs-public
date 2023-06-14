@@ -109,6 +109,7 @@ pip install python-<Название сервиса>client
       set OS_REGION_NAME=<OS_REGION_NAME>
       set OS_USER_DOMAIN_NAME=<OS_USER_DOMAIN_NAME>
       set OS_USERNAME=<OS_USERNAME>
+      set OS_AUTH_URL=<OS_AUTH_URL>
       ```
 
    2. Укажите пароль, выполнив команду:
@@ -196,7 +197,7 @@ pip install python-<Название сервиса>client
    ```
 
    <details>
-   <summary>Пример результата выполнения команды</summary>
+   <summary>Пример результата выполнения команды (сокращенный вывод)</summary>
 
     ```bash
     +------------------+------------------------------------------------------+
@@ -212,7 +213,7 @@ pip install python-<Название сервиса>client
     | min_ram          | 0                                                    |
     | name             | Alt-Linux-P9-Starter-Kit                             |
     | owner            | b5b7ffd4ef0547e5b222f44555dfXXXX                     |
-    | properties       | base_image_ref='1a8aa332-d8ef-4c40-XXXX-cade8b59aea3', boot_roles='mcs_owner', direct_url='s3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', hw_qemu_guest_agent='True', hw_video_model='qxl', hw_vif_multiqueue_enabled='True', hw_watchdog_action='reset', image_location='snapshot', image_state='available', image_type='image', instance_uuid='f19e1e54-bce9-4c25-XXXX-e0f40e2cff14', is_ephemeral_root='True', locations='[{'url': 's3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', 'metadata': {}}]', mcs_name='Alt Linux P9 Starter Kit', mcs_os_distro='debian', mcs_os_type='linux', mcs_os_version='P9', os_admin_user='altlinux', os_distro='altlinux-p9', os_require_quiesce='True', os_type='linux', os_version='p9', owner_project_name='mcsXXXX', owner_specified.openstack.md5='XXXX', owner_specified.openstack.object='images/alt-p9-cloud-x86_64', owner_specified.openstack.sha256='XXXX', owner_user_name='test@vk.team', self='/v2/images/c6320138-035f-40d8-XXXX-e814edb2ce5f', store='s3', user_id='5f48556ef89444dbab8fa82669dXXXX' |
+    | properties       | base_image_ref='1a8aa332-d8ef-4c40-XXXX-cade8b59aea3'|
     | protected        | False                                                |
     | schema           | /v2/schemas/image                                    |
     | size             | 1653604352                                           |
