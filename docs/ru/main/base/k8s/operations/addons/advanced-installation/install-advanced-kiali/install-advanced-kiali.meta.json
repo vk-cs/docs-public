@@ -1,12 +1,13 @@
 {
-    "title": "Kiali",
-    "pageDescription": "Здесь описана настройка и установка аддона Kiali.",
-    "shortDescription": "",
-    "metaTitle": "Kiali",
-    "metaDescription": "Сервис контейнеров VK Cloud: настройка и установка аддона Kiali.",
-    "sectionTitle": "Kiali",
-    "markdown": "Здесь описана настройка и установка аддона Kiali.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 5
+  "title": "Kiali",
+  "pageDescription": "Здесь описана настройка и установка аддона Kiali.",
+  "shortDescription": "",
+  "metaTitle": "Kiali",
+  "metaDescription": "Сервис контейнеров VK Cloud: настройка и установка аддона Kiali.",
+  "sectionTitle": "Kiali",
+  "markdown": "Здесь описана настройка и установка аддона Kiali.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5,
+  "uuid": "d6d7d4fc-62ef-4410-a700-2a7db9cdf5ee"
 }
