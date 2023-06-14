@@ -75,7 +75,7 @@ Integration with the VK Cloud platform is achieved through standard Kubernetes i
 
 Since Kubernetes version 1.21, [Open Policy Agent Gatekeeper](../../k8s-reference/gatekeeper/) is built into the cluster to increase the cluster's resistance to attacks. It allows you to apply constraints, which help to increase the security of deployed workload.
 
-These constraints are created based on constraint templates. Kubernetes VK Cloud clusters already contain [preconfigured templates and constraints](../preconfigured-features/settings#pre-configured-gatekeeper-templates-and-constraints). You can create your own templates and constraints.
+These constraints are created based on constraint templates. Kubernetes VK Cloud clusters already contain [preconfigured templates and constraints](../addons-and-settings/settings#pre-configured-gatekeeper-templates-and-constraints). You can create your own templates and constraints.
 
 For clusters below version 1.21 it is recommended to [install Gatekeeper](../../install-tools/gatekeeper) manually or upgrade the cluster to the current version.
 

@@ -1,0 +1,254 @@
+## Preparatory steps
+
+1. [Create](/en/base/s3/quick-start/create-bucket) in the object storage bucket, which will be used to store Docker images.
+
+   When creating, select:
+
+   - **Storage class:** `Hotbox`.
+   - **Default ACL:** `private`.
+
+   Write down the bucket's name.
+
+1. Add a key to access this bucket:
+
+   <tabs>
+   <tablist>
+   <tab>Personal account</tab>
+   </tablist>
+   <tabpanel>
+
+   1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+   1. Select [project](/en/base/account/concepts/projects).
+   1. Go to **Object storage → Buckets**.
+   1. Click on the name of the created bucket.
+   1. Go to **Keys** tab.
+   1. Click the **Add key** button.
+   1. Specify any key name.
+   1. Leave the other settings unchanged.
+   1. Click the **Create** button.
+
+   </tabpanel>
+   </tabs>
+
+   Write down the values **Access Key ID** and **Secret Key**.
+
+1. Create an encrypted login/password pair for authorization in the Docker registry by running the command:
+
+   ```bash
+   docker run --entrypoint htpasswd registry:2.7.0 -Bbn <login> <password>
+   ```
+
+   Write down the output of the command (in the format `<login>:<encrypted password>`).
+
+1. [Add](/en/networks/vnet/operations/manage-floating-ip#adding-floating-ip-address-to-the-project) floating IP or [find](/en/networks/vnet/operations/manage-floating-ip#viewing-a-list-of-floating-ip-addresses) an existing unbound floating IP address.
+
+   Write down this IP address. It will be used to access the Docker registry.
+
+## Installing the addon
+
+<warn>
+
+When installing the addon, [standard load balancers](/en/main/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created for them.
+
+Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
+
+</warn>
+
+[Several installation options](../../../../concepts/addons-and-settings/addons#features-of-installing-addons) are available for the addon:
+
+- standard installation;
+- installation on dedicated worker nodes.
+
+Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#do-manual-scaling) for groups of worker nodes or [configure automatic scaling](../../../scale#configure-automatic-scaling--only-for-worker-node-groups-) before install.
+
+<tabs>
+<tablist>
+<tab>Standard installation</tab>
+<tab>Installation on dedicated worker nodes</tab>
+</tablist>
+<tabpanel>
+
+1. Install the addon:
+
+   <tabs>
+   <tablist>
+   <tab>Personal account</tab>
+   </tablist>
+   <tabpanel>
+
+   1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Go to **Containers** → **Kubernetes clusters**.
+   1. Click on the name of the desired cluster.
+   1. Go to **Addons** tab.
+   1. If there are already installed addons in the cluster, click on the **Add addon** button.
+   1. Click the **Install addon** button on the `docker-registry` addon card.
+   1. Edit if necessary:
+
+      - application name;
+      - the name of the namespace where the addon will be installed.
+
+   1. Edit the [addon setup code](#editing-the-addon-setup-code-during-installation).
+
+      <warn>
+
+      An incorrectly set configuration code can lead to errors during installation or the addon is inoperable.
+
+      </warn>
+
+   1. Click the **Install addon** button.
+
+      The installation of the addon in the cluster will begin. This process can take a long time.
+
+1. [Get the data to access the registry](#getting-data-to-access-the-registry).
+
+</tabpanel>
+<tabpanel>
+
+1. Prepare a dedicated group of worker nodes to install the addon, if it has not already been done:
+
+   <tabs>
+   <tablist>
+   <tab>Personal account</tab>
+   </tablist>
+   <tabpanel>
+
+   1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Go to **Containers** → **Kubernetes clusters**.
+   1. Find the cluster you need in the list.
+
+   1. Make sure that the cluster has a dedicated group of worker nodes that will host addons.
+
+      If there is no such group — [add it](../../../manage-node-group#add-worker-node-group).
+
+   1. [Customise](../../../manage-node-group#customise-labels-and-taints) for this node group, if it hasn't already been done:
+
+      - **Kubernetes labels**: key `addonNodes`, value `dedicated`.
+      - **Node taints**: effect `NoSchedule`, key `addonNodes`, value `dedicated`.
+
+   </tabpanel>
+   </tabs>
+
+1. Install the addon:
+
+   <tabs>
+   <tablist>
+   <tab>Personal account</tab>
+   </tablist>
+   <tabpanel>
+
+   1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Go to **Containers** → **Kubernetes clusters**.
+   1. Click on the name of the desired cluster.
+   1. Go to **Addons** tab.
+   1. If there are already installed addons in the cluster, click on the **Add addon** button.
+   1. Click the **Install addon** button on the `docker-registry` addon card.
+   1. Edit if necessary:
+
+      - application name;
+      - the name of the namespace where the addon will be installed.
+
+   1. Edit the [addon setup code](#editing-the-addon-setup-code-during-installation).
+
+   1. Set the necessary tolerations and nodeSelector in the addon setup code:
+
+      <tabs>
+      <tablist>
+      <tab>Tolerations</tab>
+      <tab>nodeSelector</tab>
+      </tablist>
+      <tabpanel>
+
+      ```yaml
+      tolerations:
+        - key: "addonNodes"
+          operator: "Equal"
+          value: "dedicated"
+          effect: "NoSchedule"
+      ```
+
+      Set this exception for the `tolerations` field.
+
+      </tabpanel>
+      <tabpanel>
+
+      ```yaml
+      nodeSelector:
+        addonNodes: dedicated
+      ```
+
+      Set this selector for the `nodeSelector` field.
+
+      </tabpanel>
+      </tabs>
+
+      <warn>
+
+      An incorrectly set configuration code can lead to errors during installation or the addon is inoperable.
+
+      </warn>
+
+   1. Click the **Install addon** button.
+
+      The installation of the addon in the cluster will begin. This process can take a long time.
+
+1. [Get the data to access the registry](#getting-data-to-access-the-registry).
+
+</tabpanel>
+</tabs>
+
+## Editing the addon setup code during installation
+
+<info>
+
+- When editing the addon setup code, use the information [obtained earlier](#preparatory-steps).
+- The full addon setup code along with the description of the fields is available on [GitHub](https://github.com/twuni/docker-registry.helm/blob/main/values.yaml).
+
+</info>
+
+Specify:
+
+1. Details for authorization in the Docker registry:
+
+   ```yaml
+   secrets:
+     htpasswd: "<login>:<encrypted password>"
+   ```
+
+1. Details for accessing the bucket for storing Docker images:
+
+   ```yaml
+   secrets:
+     s3:
+       secretRef: ""
+       accessKey: "<Access Key ID>"
+       secretKey: "<Secret Key>"
+   ```
+
+   ```yaml
+   s3:
+     bucket: <bucket name>
+   ```
+
+1. IP address for the load balancer through which access to the service will be provided:
+
+   ```yaml
+   service:
+     name: registry
+     type: LoadBalancer
+     loadBalancerIP: <selected floating IP address>
+   ```
+
+After editing the addon code [continue installing the addon](#installing-the-addon).
+
+## Getting data to access the registry
+
+To access the registry, write down the data that was used in the addon setup code when installing it:
+
+- Login.
+- Password.
+- The IP address of the registry. The Docker registry URL will look like this: `<IP address>:5000`.
+
+To learn how to connect to the registry, read the section [Connecting to Docker Registry](../../../../connect/docker-registry).

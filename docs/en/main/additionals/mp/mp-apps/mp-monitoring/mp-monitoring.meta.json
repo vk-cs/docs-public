@@ -1,0 +1,13 @@
+{
+  "title": "Prometheus Kit",
+  "pageDescription": "The Prometheus, Alertmanager and Grafana stack is designed for building monitoring systems.",
+  "shortDescription": "The Prometheus, Alertmanager and Grafana stack is designed for building monitoring systems",
+  "metaTitle": "Prometheus Kit",
+  "metaDescription": "The Prometheus, Alertmanager and Grafana stack is designed for building monitoring systems.",
+  "sectionTitle": "Prometheus Kit",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 5,
+  "uuid": "384aff1e-83b5-4275-81e6-e3c6530c5777"
+}

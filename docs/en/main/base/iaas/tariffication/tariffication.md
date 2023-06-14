@@ -14,11 +14,11 @@ Charged:
 * Disks — for each 1 GB of disk space, the price depends on the type of disk (SSD, HDD, High-IOPS, Low Latency NVME).
 * File storage (NFS/CIFS) — for every 1 GB of disk space.
 * Disk snapshot (backup) — for every 1 GB of snapshot size.
+* Disk images — for each 1 GB of image size (for the price of an HDD).
 * IP addresses — for more information, see [Virtual networks](/en/networks/vnet/tariffs).
 
 ## What is not charged
 
-* Automatic backup creation and image management.
 * Incoming and outgoing traffic.
 * Monitoring.
 

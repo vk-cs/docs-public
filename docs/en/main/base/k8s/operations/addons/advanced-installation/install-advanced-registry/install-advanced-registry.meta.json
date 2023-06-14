@@ -1,0 +1,13 @@
+{
+  "title": "Docker Registry",
+  "pageDescription": "This describes how to configure and install the Docker Registry addon.",
+  "shortDescription": "",
+  "metaTitle": "Docker Registry",
+  "metaDescription": "Configuring and installing the Docker Registry addon",
+  "sectionTitle": "Docker Registry",
+  "markdown": "This describes how to configure and install the Docker Registry addon.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "c5ff4587-e97f-4ac5-9e6b-7e8c96181f30"
+}

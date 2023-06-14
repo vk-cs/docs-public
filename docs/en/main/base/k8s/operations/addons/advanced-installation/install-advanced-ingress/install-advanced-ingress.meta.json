@@ -1,0 +1,13 @@
+{
+  "title": "Ingress NGINX",
+  "pageDescription": "The configuration and installation of the Ingress controller addon is described here.",
+  "shortDescription": "",
+  "metaTitle": "Ingress NGINX",
+  "metaDescription": "Configuring and installing the Ingress controller addon",
+  "sectionTitle": "Ingress NGINX",
+  "markdown": "The configuration and installation of the Ingress controller addon is described here.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "2b6ffc85-38a5-4a34-8021-13ac4fafc0b5"
+}

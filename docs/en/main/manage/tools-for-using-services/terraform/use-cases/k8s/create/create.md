@@ -217,7 +217,7 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 </tabpanel>
 <tabpanel>
 
-The `labels = { docker_registry_enabled }` setting of the `vkcs_kubernetes_cluster` resource is used to install the [service](/en/base/k8s/concepts/preconfigured-features/addons).
+The `labels = { docker_registry_enabled }` setting of the `vkcs_kubernetes_cluster` resource is used to install the [service](/en/base/k8s/concepts/addons-and-settings/addons).
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {

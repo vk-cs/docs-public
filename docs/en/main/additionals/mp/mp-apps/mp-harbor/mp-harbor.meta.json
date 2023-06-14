@@ -1,0 +1,13 @@
+{
+  "title": "Docker Registry with Harbor",
+  "pageDescription": "Installing and configuring Harbor. Harbor is an open source Docker and Helm registry that provides access to artifacts using role-based policies and access control, with the ability to scan images for vulnerabilities.",
+  "shortDescription": "Harbor is an open source Docker and Helm registry that provides access to artifacts using role-based policies and access control, with the ability to scan images for vulnerabilities",
+  "metaTitle": "Docker Registry with Harbor",
+  "metaDescription": "Harbor is an open source Docker and Helm registry that provides access to artifacts using role-based policies and access control, with the ability to scan images for vulnerabilities.",
+  "sectionTitle": "Docker Registry with Harbor",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 11,
+  "uuid": "0522d2dc-e1ab-42c6-a78f-574e6332e14b"
+}

@@ -1,102 +1,50 @@
-OpenVPN is a system that allows you to create encrypted tunnels between computers using VPN technology.
+## Installation
 
-## Install OpenVPN
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to **App store**.
+1. In the block with the OpenVPN application, click **Install**.
+1. At the “Install application” step, specify the parameters according to [instructions](../../quick-start/).
+1. At the “Additional parameters” step, specify:
 
-1. Go to App Store → Networks.
-2. Click Install.
-3. Specify the required virtual machine settings - application name, virtual machine type, disk type and size, availability zone.
-4. Select a key for SSH access.
+   - **Логин OpenVPN клиента**: it will be used as the first client in the OpenVPN network being created.
+   - **Маршрутизируемая подсеть OpenVPN**.
+   - **Подсеть OpenVPN**.
 
-<warn>
+1. Click the **Install** button.
+1. Wait for the VM to be created. This process may take some time. When the creation is completed, a page opens with instructions on connecting to the VM and getting started with the application.
 
-Make sure you have the SSH key you created and saved on your computer earlier. If not, then select "Create a new key". A file with the *.pem extension will be downloaded to your computer.
+## Connection
 
-</warn>
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to **App store** → **My VM applications**.
+1. Click on the name of the installed application. It's page will open.
+1. [Connect to the VM](/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix), on which the application is deployed using the parameter value **SSH доступа к Openvpn**.
 
-5. Click Next Step.
-6. Specify additional OpenVPN server configuration parameters:
+## Advanced Configuration
 
-- Client login;
-- Routed subnet;
-- OpenVPN subnet.
-
-7. Click Install.
-
-## Setting up OpenVPN
-
-After installation, an application card with connection parameters will open:
-
-- URL to access the OpenVPN server via SSH;
-- Client's password;
-- Client configuration file.
+For an extended application configuration, use the [official OpenVPN documentation](https://openvpn.net/community-resources/).
 
 <info>
 
-For security, we recommend that you change your password immediately.
+Useful materials for application administration can be found on the **Beginning of work** tab of the installed application.
 
 </info>
 
-### Connecting to an instance
-
-First you need to connect to the instance with the OpenVPN server via SSH. "SSH access to Openvpn" is specified in the application options, copy it and run the command:
-
-```bash
-ssh -i /path/to/key ubuntu@addressofserver
-```
-
-### A change of the pin code
-
-To change the password of an existing user, use the command:
-
-```bash
-sudo passwd client_name
-```
-
-Next, enter the new password twice.
-
-### Adding a user
-
-To add a new user, use the command:
-
-```bash
-sudo useradd newuser
-```
-Change the password with the command in the paragraph above.
-
-Be sure to add the new user to the openvpn group by running the command:
-
-```bash
-sudo usermod -a -G openvpn newuser
-```
-
-### Deleting a user
-
-To delete a user, use the command:
-
-```bash
-sudo userdel usertodelete
-```
-
-More information on changing the OpenVPN server configuration [here](https://openvpn.net/community-resources/expanding-the-scope-of-the-vpn-to-include-additional-machines-on-either-the-client-or-server-subnet/).
-
 ## Using OpenVPN
 
-Install an OpenVPN client application such as [OpenVPN Connect](https://openvpn.net/vpn-client/).
-Installation instructions:
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to **App store** → **My VM applications**.
+1. Click on the name of the installed application. It's page will open.
+1. On the tab **Application setting** copy the parameters:
 
-- [Windows](https://openvpn.net/client-connect-vpn-for-windows/)
-- [MacOS](https://openvpn.net/client-connect-vpn-for-mac-os/)
-- [Linux](https://openvpn.net/openvpn-client-for-linux/)
+    - **Пароль первого клиента OpenVPN**.
+    - **Логин первого клиента OpenVPN**.
 
-If you are using MacOS or Linux, copy the value of the "Client Configuration File" parameter and save it in the /etc/openvpn/ directory. If you are using Windows OS, then save it in the \Program Files\OpenVPN\config\/ directory.
+1. Save the parameter value **Сертификат клиентов OpenVPN** locally with the extension `.ovpn`.
+1. Install the OpenVPN client application, for example, [OpenVPN Connect](https://openvpn.net/vpn-client/).
+1. Copy the saved file with the extension `.ovpn` to the directory with OpenVPN:
 
-The file name can be anything, but it must have the .ovpn postfix, for example, mcs_openvpn_client.ovpn.
+   - `/etc/openvpn/`: for MacOS or Linux.
+   - `\Program Files\OpenVPN\config\`: for Windows.
 
-This file stores the OpenVPN client configuration and also contains:
-
-- certificate of the certification center;
-- client certificate;
-- client key;
-- session start encryption key.
-
-To connect to the OpenVPN server with this configuration file, you will need to enter a username and password.
+1. Connect via OpenVPN Connect using the username and password copied in step 4.
