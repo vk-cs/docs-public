@@ -124,6 +124,10 @@ From the user's point of view, servers in the cloud are no different from a dedi
 
 To get full control over the cost of the service, it is better to rent a VPS/VDS. You can create or destroy VMs in minutes, depending on current needs, increase or decrease their power without stopping (without downtime). Dedicated servers do not have the flexibility that a cloud VPS/VDS has, which leads to underutilization of resources and the risk of applications crashing at peak loads.
 
+## Why can't my VMs in VK Cloud see my network outside the cloud?
+
+Network connection (VPN) must be configured between the networks. Learn more about creating a VPN between the VK Cloud network and an external network in the article [Setting up a VPN tunnel](/en/networks/vnet/use-cases/vpn-tunnel).
+
 ## How many times can I create and delete virtual machines?
 
 The operation of creating and deleting resources can be performed an unlimited number of times.
