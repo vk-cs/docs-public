@@ -2,7 +2,7 @@ Gatekeeper is a controller embedded between the Kubernetes API and the Open Poli
 
 <warn>
 
-Use these instructions if your cluster is version 1.20 or lower. Starting with Kubernetes 1.21, Gatekeeper is [already installed](../../concepts/architecture) in the cluster along with [preconfigured templates and restrictions](../../concepts/preconfigured-features/settings).
+Use these instructions if your cluster is version 1.20 or lower. Starting with Kubernetes 1.21, Gatekeeper is [already installed](../../concepts/architecture) in the cluster along with [preconfigured templates and restrictions](../../concepts/addons-and-settings/settings).
 
 </warn>
 

@@ -1,0 +1,13 @@
+{
+  "title": "Tomcat",
+  "pageDescription": "Apache Tomcat — контейнер, который позволяет использовать интернет-приложения, например, Java сервлеты и серверные страницы Java (JSP).",
+  "shortDescription": "Apache Tomcat — контейнер, который позволяет использовать интернет-приложения, например, Java сервлеты и серверные страницы Java (JSP)",
+  "metaTitle": "Tomcat",
+  "metaDescription": "Apache Tomcat — контейнер, который позволяет использовать интернет-приложения, например, Java сервлеты и серверные страницы Java (JSP).",
+  "sectionTitle": "Tomcat",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 7,
+  "uuid": "47b95287-0dcc-45a7-81a1-6d41a968e8a3"
+}

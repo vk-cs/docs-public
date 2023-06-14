@@ -6,7 +6,7 @@ For all Kubernetes services of the `spec.type: LoadBalancer` type, the VK Cloud 
 
   - Selecting random replica (default).
 
-    The balancer behaves this way because `kube-proxy` in Kubernetes VK Cloud clusters [works](../../concepts/preconfigured-features/settings#kube-proxy-operation-mode) in `iptables` mode.
+    The balancer behaves this way because `kube-proxy` in Kubernetes VK Cloud clusters [works](../../concepts/addons-and-settings/settings#kube-proxy-operation-mode) in `iptables` mode.
     See [official Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/service/#proxy-mode-iptables) for details.
 
   - Bounding a replica to a specific IP address.

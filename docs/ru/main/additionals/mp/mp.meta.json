@@ -1,10 +1,10 @@
 {
-  "title": "Магазин приложений (Marketplace)",
+  "title": "Магазин приложений",
   "pageDescription": "Cloud Marketplace — магазин облачных приложений от VK Cloud. Установите из готовых образов приложения для разработки и бизнеса: Docker CE, Docker Registry, Nexus 3, GitLab CE, Nexus 2, Tomcat и другие решения. Приложения не тарифицируются, оплата списывается только за использование виртуальных машин.",
   "shortDescription": "Магазин облачных приложений от VK Cloud",
   "metaTitle": "Магазин приложений",
   "metaDescription": "Cloud Marketplace —  это магазин облачных приложений от VK Cloud. Установите из готовых образов приложения для разработки и бизнеса: Docker",
-  "sectionTitle": "Магазин приложений (Marketplace)",
+  "sectionTitle": "Магазин приложений",
   "markdown": "Cloud Marketplace — это магазин облачных приложений от VK Cloud. Установите из готовых образов приложения для разработки и бизнеса: Docker CE, Docker Registry, Nexus 3, GitLab CE, Nexus 2, Tomcat и другие решения. Приложения не тарифицируются, оплата списывается только за использование виртуальных машин.",
   "icon": "",
   "weight": 9,

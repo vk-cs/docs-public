@@ -12,12 +12,11 @@ The Ingress controller can be deployed [in conjunction with the HTTP load balanc
 
 1. [Create](../../../operations/create-cluster) a Kubernetes cluster of the most current version.
 
-   When creating the cluster:
-
-   - Unselect the pre-installed NGINX Ingress Controller service. For demonstration purposes, the Ingress Controller will be installed manually.
-   - Select the **Assign external IP** option.
+   When creating the cluster select the **Assign external IP** option.
 
    Select other cluster settings at your discretion.
+
+1. [Make sure](../../../operations/addons/manage-addons#viewing-addons) that the NGINX Ingress addon (`ingress-nginx`) **is not installed** in the cluster. For demonstration purposes, the Ingress controller will be installed manually.
 
 1. [Make sure](../../../connect/kubectl) that you can connect to the cluster using `kubectl'.
 
