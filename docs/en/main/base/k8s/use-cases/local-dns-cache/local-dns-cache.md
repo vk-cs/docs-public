@@ -44,7 +44,7 @@ The DNS server will be deployed in the following configuration:
   - A local `169.254.0.10` IP address on each node. This link-local address is specifically chosen so that there is no overlap with addresses from other subnets used by the cluster.
   - The IP address of the `kube-dns` service. In Kubernetes VK Cloud clusters, this is always `10.254.0.10`.
 
-  This configuration is used because `kube-proxy` in Kubernetes VK Cloud clusters [operates](../../concepts/preconfigured-features/settings#kube-proxy-operation-mode) in `iptables` mode.
+  This configuration is used because `kube-proxy` in Kubernetes VK Cloud clusters [operates](../../concepts/addons-and-settings/settings#kube-proxy-operation-mode) in `iptables` mode.
 
 - The port to which Prometheus will connect to collect metrics: `9153`.
 - Label for service selection: `kube-dns`: `coredns`.

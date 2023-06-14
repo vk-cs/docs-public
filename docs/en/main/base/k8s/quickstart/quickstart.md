@@ -4,20 +4,20 @@ After going through all the steps of the quickstart, you will:
 
 1. Create a small Kubernetes cluster.
 1. Learn how to connect to it.
-1. Become familiar with Kubernetes and [pre-configured cluster features](../concepts/preconfigured-features/addons/):
+1. Become familiar with Kubernetes and [addons for it](../concepts/addons-and-settings/addons/):
    1. Connect management and monitoring tools.
    1. Load the Docker images into the Docker registry.
    1. Deploy simple applications based on the downloaded images, with the ability to use VK Cloud storage.
    1. Provide access to the deployed applications using the Ingress controller.
    1. Make sure that these applications actually work.
 
-<info>
+<warn>
 
 A running Kubernetes cluster consumes computing resources.
 
 After completing a quickstart, stop or delete the cluster if you no longer need it.
 
-</info>
+</warn>
 
 ## 1. Preparatory steps
 
@@ -40,12 +40,6 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
       Note the version of Kubernetes selected. This is important for further installation of `kubectl`.
 
       </info>
-
-   1. Select all services in the [pre-installed services](../concepts/preconfigured-features/addons) list:
-
-      - **Monitoring**.
-      - **Docker Registry**.
-      - **NGINX Ingress Controller**.
 
    1. Click the **Next Step** button.
 
@@ -86,7 +80,39 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
 
 Wait for the cluster to complete, this process may take a while.
 
-### 1.2. Configure the environment to work with the cluster from
+### 1.2. Install addons in the cluster
+
+<warn>
+
+When installing the Docker Registry and Ingress NGINX addons, [standard load balancers](/en/main/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created for them.
+
+Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
+
+</warn>
+
+1. [Install](../operations/addons/advanced-installation/install-advanced-registry) the `docker-registry` addon.
+
+   Write down the data for accessing the Docker registry.
+
+1. [Install](../operations/addons/advanced-installation/install-advanced-monitoring/) the `kube-prometheus-stack` addon.
+
+   Write down the password to access the Grafana web interface.
+
+1. [Install](../operations/addons/advanced-installation/install-advanced-ingress/) the `ingress-nginx` addon with default parameters.
+
+   Write down the floating IP address for the load balancer.
+
+Further, the following values will be used in the commands and configuration files for the example. Replace them with the ones that are relevant to you.
+
+| Parameter                                                   | Value                      |
+| ----------------------------------------------------------- | -------------------------- |
+| IP address of the load balancer<br>for the Ingress controller | `192.0.2.2`              |
+| URL of the Docker registry endpoint                         | `192.0.2.22:5000`          |
+| Login of the Docker registry user                           | `registry`                 |
+| Password of the Docker registry user                        | `registry-password-123456` |
+| The password of the user `admin` for Grafana                | `grafana-password-123456`  |
+
+### 1.3. Configure the environment to work with the cluster from
 
 Set up the host from which you will work with the cluster.
 This can be a real computer or a virtual machine.
@@ -112,31 +138,6 @@ Install the following tools on the host:
 - [Docker Engine](https://docs.docker.com/engine/install/):
   - For Windows and macOS: Docker Desktop.
   - For Linux, Docker Desktop is also recommended, but you can install and use Docker from the command line.
-
-### 1.3. Collect information about the cluster
-
-Collect the following information from the [cluster information page](../operations/manage-cluster#get-cluster-information):
-
-- IP address of the load balancer for the Ingress controller.
-- Data to access the Docker registry:
-  
-  1. Select the **Access Docker Registry** tab
-  1. Copy the `URL`, `username` and `password` values.
-
-In the commands and configuration files for the example, the following values will be used:
-
-| Parameter                                                   | Value                      |
-| ----------------------------------------------------------- | -------------------------- |
-| IP address of the load balancer<br>for the Ingress Controller | `192.0.2.2`                |
-| Docker registry endpoint URL                                  | `192.0.2.22:5000`          |
-| Docker registry username                                      | `registry`                 |
-| Docker registry password                                      | `registry-password-123456` |
-
-<warn>
-
-In the next steps, replace these values with those relevant to your cluster.
-
-</warn>
 
 ### 1.4. Connect to the cluster
 
@@ -202,9 +203,9 @@ In the next steps, replace these values with those relevant to your cluster.
    To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
    ```
 
-## 2. Enable cluster monitoring tools
+## 2. Get access to cluster monitoring tools
 
-When creating a Kubernetes cluster in VK Cloud, [monitoring tools](../monitoring) based on Prometheus and Grafana have been enabled. Also [Kubernetes Dashboard](../connect/k8s-dashboard/) is available for all Kubernetes VK Cloud clusters, which allows you to not only manage the cluster, but also monitor it.
+An addon with [monitoring tools](../monitoring) was installed in the cluster based on Prometheus and Grafana have been enabled. Also [Kubernetes Dashboard](../connect/k8s-dashboard/) is available for all Kubernetes VK Cloud clusters, which allows you to not only manage the cluster, but also monitor it.
 
 <tabs>
 <tablist>
@@ -229,8 +230,8 @@ When creating a Kubernetes cluster in VK Cloud, [monitoring tools](../monitoring
 1. Open the Grafana web interface:
 
    1. In your browser, go to the URL `http://127.0.0.1:8001/`.
-   1. Authorize with the login/password pair `admin`/`admin`.
-   1. For security reasons, change the password.
+   1. Authorize with the login/password pair `admin`/`grafana-password-123456`.
+   1. If a password change is requested, change it.
 
 1. Select **Dashboards → Browse** from the side menu of any pre-configured dashboard to get information about the cluster resources.
 
@@ -256,9 +257,9 @@ The browser will be opened and you will be redirected to the Kubernetes Dashboar
 </tabpanel>
 </tabs>
 
-## 3. Load the required images into the Docker registry
+## 3. Upload the necessary images to the Docker registry
 
-When creating the Kubernetes cluster in VK Cloud, [Docker registry](../connect/docker-registry/) was included, which will store the Docker images.
+The [Docker Registry addon](../connect/docker-registry/) was installed in the cluster which will store the Docker images.
 
 <info>
 
@@ -395,7 +396,7 @@ To put your own images in the Docker cluster registry:
    1. Run the build process:
 
       ```bash
-      docker build . -t 192.0.2.22:5000/vk-cloud-demo/nginx-k8s-demo:latest
+      docker build . -t 192.0.2.22:5000/nginx-k8s-demo:latest
       ```
 
    Wait until the image build is complete.
@@ -411,7 +412,7 @@ To put your own images in the Docker cluster registry:
    1. Push the image to the registry:
 
       ```bash
-      docker push 192.0.2.22:5000/vk-cloud-demo/nginx-k8s-demo:latest
+      docker push 192.0.2.22:5000/nginx-k8s-demo:latest
       ```
 
    1. Check that the image is in the registry:
@@ -423,7 +424,7 @@ To put your own images in the Docker cluster registry:
       Output should give you the similar information:
 
       ```text
-      {"repositories":["vk-cloud-demo/nginx-k8s-demo"]}
+      {"repositories":["nginx-k8s-demo"]}
       ```
 
    1. Create a Kubernetes secret so you can access the uploaded image from Kubernetes:
@@ -434,7 +435,7 @@ To put your own images in the Docker cluster registry:
 
 ## 4. Deploy demo applications
 
-Based on the `vk-cloud-demo/nginx-k8s-demo` image loaded in the Docker registry, two applications will be deployed: `tea` and `coffee`.
+Based on the `nginx-k8s-demo` image loaded in the Docker registry, two applications will be deployed: `tea` and `coffee`.
 For each of the applications the following will be created:
 
 - [Persistent Volume Claim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/), so that data volumes can be mounted inside the application.
@@ -509,7 +510,7 @@ To deploy the applications:
            - name: k8s-registry-creds
          containers:
            - name: coffee
-             image: 192.0.2.22:5000/vk-cloud-demo/nginx-k8s-demo:latest
+             image: 192.0.2.22:5000/nginx-k8s-demo:latest
              imagePullPolicy: Always
              ports:
                - containerPort: 8080
@@ -573,7 +574,7 @@ To deploy the applications:
            - name: k8s-registry-creds
          containers:
            - name: tea
-             image: 192.0.2.22:5000/vk-cloud-demo/nginx-k8s-demo:latest
+             image: 192.0.2.22:5000/nginx-k8s-demo:latest
              imagePullPolicy: Always
              ports:
                - containerPort: 8080
@@ -673,7 +674,7 @@ To deploy the applications:
 
 ## 5. Configure Ingress for demo applications
 
-When creating the Kubernetes cluster in VK Cloud, [Ingress Controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/) NGINX was enabled to route incoming user requests to the applications deployed in the cluster.
+The [Ingress Controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/) addon was installed in the cluster NGINX was enabled to route incoming user requests to the applications deployed in the cluster.
 
 For Ingress controller to route requests to the corresponding Service resources, through which the `tea` and `coffee` demo applications were published, do the following:
 

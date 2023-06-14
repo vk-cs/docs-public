@@ -1,112 +1,163 @@
-<warn>
+С помощью Terraform можно создавать виртуальные машины. В качестве примера будет создана ВМ, доступная из внешней сети. Для доступа к ВМ будет использоваться уже существующая в проекте пара SSH-ключей.
 
-Прежде всего убедитесь, что вы [установили Terraform и создали файл main.tf](/ru/manage/terraform/quick-start) с необходимыми провайдерами.
+Будет рассмотрено два варианта конфигурации ВМ: без дополнительных настроек и с подключенным дополнительным диском.
 
-</warn>
+## Подготовительные шаги
 
-### Создание виртуальной сети для ВМ
+1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/base/account/concepts/quotasandlimits) для [региона](/ru/base/account/concepts/regions), в котором планируется создать ВМ. Для разных регионов могут быть настроены разные квоты.
 
-Чтобы создать виртуальную машину, необходимо описать ресурсы виртуальной сети, в которой ВМ будет работать. Для этого:
+    Если вы хотите увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
 
-1. Создайте файл `network.tf`, где будет описана конфигурация создаваемой сети.
-2. Добавьте текст из примера ниже, и исправьте значения настроек для вашей сети. Для создания ВМ вам потребуются следующие объекты сети:
+1. [Установите Terraform и настройте провайдер](../../../quick-start), если это еще не сделано.
 
-   - Ресурсы (resource):
+    Поместите настройки провайдера в файл конфигурации Terraform `provider.tf`.
 
-     - **vkcs_networking_network** — сеть, в которой будет создана ВМ. В примере ниже сеть создается с именем «compute-net».
-     - **vkcs_networking_subnet** — подсеть из сети. В примере: subnet_1.
-     - **vkcs_networking_router** — роутер для внешней сети и взаимодействия с внешним миром. В примере: vm_router.
-     - **vkcs_networking_router_interface** — подключить роутер к внутренней сети.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/base/account/project/cli/setup) и [пройдите аутентификацию](/ru/base/account/project/cli/authorization) в проекте.
 
-   - Источники данных (data source):
+1. Создайте файл конфигурации Terraform `variables.tf` с переменными:
 
-     - **vkcs_networking_network** – внешняя сеть для получения публичного IP (Floating IP).
+   ```hcl
+   variable "image_flavor" {
+     type = string
+     default = "Ubuntu-22.04-202208"
+   }
 
-Пример файла `network.tf`:
+   variable "compute_flavor" {
+     type = string
+     default = "Basic-1-2-20"
+   }
 
-```hcl
-data "vkcs_networking_network" "extnet" {
-  name = "ext-net"
-}
+   variable "key_pair_name" {
+     type = string
+     default = "keypair-terraform"
+   }
 
-resource "vkcs_networking_network" "compute" {
-  name = "compute-net"
-}
+   variable "availability_zone_name" {
+     type = string
+     default = "MS1"
+   }
+   ```
 
-resource "vkcs_networking_subnet" "compute" {
-  name       = "subnet_1"
-  network_id = vkcs_networking_network.compute.id
-  cidr       = "192.168.199.0/24"
-}
+   В этом файле объявляются следующие переменные:
 
-resource "vkcs_networking_router" "compute" {
-  name                = "vm-router"
-  admin_state_up      = true
-  external_network_id = data.vkcs_networking_network.extnet.id
-}
+   - `image_flavor`: имя образа виртуальной машины;
+   - `compute_flavor`: имя шаблона конфигурации виртуальной машины;
+   - `key_pair_name`: имя ключевой пары, которая будет использоваться для подключения к виртуальной машине по SSH;
+   - `availability_zone_name`: имя зоны доступности, где будет размещена виртуальная машина.
 
-resource "vkcs_networking_router_interface" "compute" {
-  router_id = vkcs_networking_router.compute.id
-  subnet_id = vkcs_networking_subnet.compute.id
-}
-```
+   При необходимости скорректируйте значения переменных, уточнив их допустимые значения:
 
-### Создание виртуальной машины
+   <tabs>
+   <tablist>
+   <tab>image_flavor</tab>
+   <tab>compute_flavor</tab>
+   <tab>key_pair_name</tab>
+   <tab>availability_zone_name</tab>
+   </tablist>
+   <tabpanel>
 
-Для создания виртуальной машины, создайте в каталоге файл `instance.tf` и добавьте следующий текст примера. Исправьте значения настроек в примере в соответствии с вашей ВМ.
+   C помощью OpenStack CLI:
 
-- Ресурсы (resource):
+   ```bash
+   openstack image list
+   ```
 
-  - **vkcs_compute_instance** — информация о создаваемом инстансе ВМ. В этом ресурсе описывается ВМ и используются ранее описанные ресурсы сети:
+   </tabpanel>
+   <tabpanel>
 
-    - **name** — имя ВМ.
-    - **flavor_id** — флейвор ВМ, используемый при создании.
-    - **security_groups** — перечень имен security group, приписанных этой ВМ.
-    - **availability_zone** — зона доступности этой ВМ.
-    - **block_device** — виртуальный диск для создаваемой ВМ. В данном примере создается два диска: один из загрузчного образа, другой — пустой. Ресурс `block_device` описывается следующими параметрами:
+   C помощью OpenStack CLI:
 
-      - **uuid** — уникальный идентификатор диска.
-      - **source_type** — источник загрузки ОС.
-      - **destination_type** — конечная цель загрузочного образа.
-      - **volume_type** — тип тома цели загрузочного образа. Чтобы получить список доступных типов, выполните команду `openstack volume type list`.
-      - **volume_size** — размер блока тома цели загрузочного образа.
-      - **boot_index** — место диска в порядке загрузки *boot*.
-      - **delete_on_termination** — Если указано значение `True`, диск будет удален при удалении ВМ.
+   ```bash
+   openstack flavor list
+   ```
+   </tabpanel>
+   <tabpanel>
 
-    - **network** — сеть, подключаемая при создании ВМ.
-    - **depends_on** — ВМ не запустится прежде чем не будет выполнено создание указанных ресурсов.
+   Воспользуйтесь одним из способов:
 
-  - **vkcs_networking_floatingip** — получает ID доступного плавающего IP от VK Cloud. Включает в себя следующий ресурс:
+    - Через личный кабинет:
 
-    - **pool** — имя пула, к которому принадлежит плавающий IP.
+      1. Перейдите в [личный кабинет](https://mcs.mail.ru/app/) VK Cloud.
 
-  - **vkcs_compute_floatingip_associate** — присваивает плавающий IP созданной ВМ. Включается в себя следующие ресурсы:
+      1. Нажмите на имя пользователя в шапке страницы.
 
-    - **floating_ip** — ID плавающего IP, который будет присвоен ВМ.
-    - **instance_id** — ID ВМ, которой будет присвоен плавающий IP.
+      1. Из выпадающего списка выберите **Ключевые пары**.
 
-- Источники данных (data source):
+        Откроется вкладка **Ключевые пары** страницы **Информация об аккаунте**.
 
-  - **vkcs_images_image** — установочный образ для создаваемого инстанса.
-  - **vkcs_compute_flavor** – флейвор (CPU, RAM, Disk) ВМ. Можно посмотреть в визарде создания ВМ через личный кабинет.
-  - **output "instance_fip"** - выводит в консоль плавающий IP присвоенный ВМ.
+        Имена ключевых пар отображаются под заголовком **Имя ключа**.
 
-Пример файла `instance.tf`:
+    - С помощью OpenStack CLI:
+
+      1. Выполните команду:
+
+        ```bash
+        openstack keypair list
+        ```
+
+      2. Скопируйте имя нужной ключевой пары из списка.
+
+   </tabpanel>
+   <tabpanel>
+
+   В статье о [зонах доступности](/ru/additionals/start/it-security/platform-security#zony-dostupnosti).
+
+   </tabpanel>
+   </tabs>
+
+## 1. Создайте файл с описанием базовой сетевой инфраструктуры
+
+1. [Создайте файл `network.tf`](../../vnet/network).
+
+    В файле описаны ресурсы виртуальной сети, в которой будет работать ВМ.
+
+2. Убедитесь, что в `network.tf` присутствуют следующие ресурсы:
+
+   - `vkcs_networking_network`,
+   - `vkcs_networking_subnet`,
+   - `vkcs_networking_router`,
+   - `vkcs_networking_router_interface`.
+
+    Настройка дополнительных групп безопасности не требуется.
+
+Описание параметров приводится в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs/data-sources).
+
+## 2. Создайте файл с описанием ВМ
+
+Создайте файл `main.tf`.
+
+В зависимости от требуемого варианта конфигурации (ВМ без дополнительных настроек или ВМ с дополнительным диском), поместите в файл содержимое одной из вкладок ниже.
+
+<tabs>
+<tablist>
+<tab>ВМ без дополнительных настроек</tab>
+<tab>ВМ с дополнительным диском</tab>
+</tablist>
+<tabpanel>
+
+В файле описаны:
+
+- параметры ВМ;
+- присваиваемые ВМ ресурсы, необходимые для доступа из внешней сети:
+  - плавающий IP-адрес;
+  - пара SSH-ключей, которая будет использоваться для доступа;
+  - группы безопасности, в которые необходимо добавить ВМ: `default` и `ssh` (обе группы настроены в VK Cloud по умолчанию).
 
 ```hcl
 data "vkcs_compute_flavor" "compute" {
-  name = "Basic-1-2-20"
+  name = var.compute_flavor
 }
 
 data "vkcs_images_image" "compute" {
-  name = "Ubuntu-18.04-Standard"
+  name = var.image_flavor
 }
 
 resource "vkcs_compute_instance" "compute" {
   name                    = "compute-instance"
   flavor_id               = data.vkcs_compute_flavor.compute.id
-  security_groups         = ["default"]
-  availability_zone       = "GZ1"
+  key_pair                = var.key_pair_name
+  security_groups         = ["default","ssh"]
+  availability_zone       = var.availability_zone_name
 
   block_device {
     uuid                  = data.vkcs_images_image.compute.id
@@ -118,22 +169,13 @@ resource "vkcs_compute_instance" "compute" {
     delete_on_termination = true
   }
 
-  block_device {
-    source_type           = "blank"
-    destination_type      = "volume"
-    volume_type           = "ceph-ssd"
-    volume_size           = 8
-    boot_index            = 1
-    delete_on_termination = true
-  }
-
   network {
-    uuid = vkcs_networking_network.compute.id
+    uuid = vkcs_networking_network.network.id
   }
 
   depends_on = [
-    vkcs_networking_network.compute,
-    vkcs_networking_subnet.compute
+    vkcs_networking_network.network,
+    vkcs_networking_subnet.subnetwork
   ]
 }
 
@@ -150,14 +192,149 @@ output "instance_fip" {
   value = vkcs_networking_floatingip.fip.address
 }
 ```
+</tabpanel>
+<tabpanel>
 
-### Применение изменений
+В файле описаны:
 
-Чтобы применить изменения добавьте файлы `network.tf` и `instance.tf` в рабочий каталог и выполните следующие команды:
+- параметры ВМ;
+- присваиваемые ВМ ресурсы, необходимые для доступа из внешней сети:
+  - плавающий IP-адрес;
+  - пара SSH-ключей, которая будет использоваться для доступа;
+  - группы безопасности, в которые необходимо добавить ВМ: `default` и `ssh` (обе группы настроены в VK Cloud по умолчанию);
+- дополнительное блочное устройство размером 50 ГБ;
+- синтетический ресурс `vkcs_compute_volume_attach` для подключения блочного устройства к ВМ.
+
+```hcl
+data "vkcs_compute_flavor" "compute" {
+  name = var.compute_flavor
+}
+
+data "vkcs_images_image" "compute" {
+  name = var.image_flavor
+}
+
+resource "vkcs_compute_instance" "compute" {
+  name                    = "compute-instance"
+  flavor_id               = data.vkcs_compute_flavor.compute.id
+  key_pair                = var.key_pair_name
+  security_groups         = ["default","ssh"]
+  availability_zone       = var.availability_zone_name
+
+  block_device {
+    uuid                  = data.vkcs_images_image.compute.id
+    source_type           = "image"
+    destination_type      = "volume"
+    volume_type           = "ceph-ssd"
+    volume_size           = 8
+    boot_index            = 0
+    delete_on_termination = true
+  }
+
+  network {
+    uuid = vkcs_networking_network.network.id
+  }
+
+  depends_on = [
+    vkcs_networking_network.network,
+    vkcs_networking_subnet.subnetwork
+  ]
+}
+
+resource "vkcs_blockstorage_volume" "compute-volume" {
+  name                  = "myVolume"
+  description           = "Additional volume for my app"
+  size                  = 50
+  availability_zone     = var.availability_zone_name
+  volume_type           = "ceph-ssd"
+}
+
+resource "vkcs_compute_volume_attach" "compute-volume-attached" {
+  instance_id = vkcs_compute_instance.compute.id
+  volume_id   = vkcs_blockstorage_volume.compute-volume.id
+  }
+
+resource "vkcs_networking_floatingip" "fip" {
+  pool = data.vkcs_networking_network.extnet.name
+}
+
+resource "vkcs_compute_floatingip_associate" "fip" {
+  floating_ip = vkcs_networking_floatingip.fip.address
+  instance_id = vkcs_compute_instance.compute.id
+}
+
+output "instance_fip" {
+  value = vkcs_networking_floatingip.fip.address
+}
+```
+  </tabpanel>
+  </tabs>
+
+Описание параметров приводится в [документации провайдера Terraform](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources).
+
+## 3. Создайте ресурсы при помощи Terraform
+
+1. Поместите файлы конфигурации Terraform `provider.tf`, `variables.tf`, `network.tf` и `main.tf` в одну директорию.
+
+1. Перейдите в эту директорию.
+
+1. Выполните команду:
+
+    ```bash
+    terraform init
+    ```
+
+1. Выполните команду:
+
+    ```bash
+    terraform apply
+    ```
+
+    При запросе подтверждения введите `yes`.
+
+1. Дождитесь завершения операции.
+
+После завершения создания ресурсов в выводе Terraform `instance_fip` будет показан назначенный ВМ плавающий IP-адрес.
+
+## 4. Проверьте работоспособность примера
+
+[Подключитесь по SSH](/ru/base/iaas/vm-start/vm-connect/vm-connect-nix#) к виртуальной машине `compute-instance`.
+
+Для подключения используйте:
+
+- IP-адрес из вывода `instance_fip`;
+- приватный SSH-ключ из пары ключей с именем `keypair-terraform`.
+
+Если пример отработал успешно, в консоли будет показан типовой вывод Ubuntu:
 
 ```bash
-terraform init
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-46-generic x86_64)
+
+* Documentation: https://help.ubuntu.com
+* Management: https://landscape.canonical.com
+* Support: https://ubuntu.com/advantage
+
+System information as of Wed May 10 18:05:44 UTC 2023
+
+System load: 0.0078125 Processes: 98
+Usage of /: 35.2% of 7.42GB Users logged in: 0
+Memory usage: 9% IPv4 address for ens3: 192.168.199.20
+Swap usage: 0%
+...
 ```
-```bash
-terraform apply
-```
+
+## Удалите неиспользуемые ресурсы
+
+Некоторые объекты, созданные в этом сценарии, потребляют ресурсы. Если они вам больше не нужны, удалите их:
+
+1. Перейдите в директорию с файлами конфигурации Terraform.
+
+1. Выполните команду:
+
+    ```bash
+    terraform destroy
+    ```
+
+    При запросе подтверждения введите `yes`.
+
+1. Дождитесь завершения операции.
