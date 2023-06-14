@@ -1,3 +1,12 @@
+## Kubernetes 1.25.1 <a id="v1-25-1"></a>
+
+**Важные изменения в Kubernetes:**
+
+- Удален PodSecurityPolicy. После вывода из поддержки в версии Kubernetes 1.21 у пользователей была возможность перейти на Pod Security Admission. Если вы используете PodSecurityPolicy, то следуйте [инструкции по миграции](https://kubernetes.io/docs/tasks/configure-pod-container/migrate-from-psp/).
+- Плагины дисков GlusterFS и Portworx сняты с поддержки. Flocker, Quobyte, и StorageOS удалены из Kubernetes.
+- Прекращается поддержка vSphere ниже 7.0u2.
+- Начиная с версии 1.25 Kubelet не будет создавать iptables chains в таблицах NAT: `KUBE-MARK-DROP`, `KUBE-MARK-MASQ`, `KUBE-POSTROUTING`.
+
 ## Kubernetes 1.24.9 <a id="v1-24-9"></a>
 
 **Изменения в сервисе Kubernetes aaS:** Calico обновлено до 3.25.0.
