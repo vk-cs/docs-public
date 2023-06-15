@@ -65,7 +65,7 @@ func main() {
 }
 ```
 
-Подробное описание PutObject дано в [официальной документации библиотеки aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.PutObject)
+Подробное описание PutObject дано в [официальной документации библиотеки aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.PutObject).
 
 ## Копирование объектов между бакетами
 
