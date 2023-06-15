@@ -160,7 +160,7 @@ func main() {
 }
 ```
 
-Подробное описание команды GetObject дано в [официальной документации библиотеки aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.GetObject)
+Подробное описание команды GetObject дано в [официальной документации библиотеки aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.GetObject).
 
 ## Получение списка объектов
 
