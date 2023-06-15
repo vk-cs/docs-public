@@ -83,4 +83,4 @@ func main() {
 }
 ```
 
-В [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.ListBuckets) дано подробное описание команды ListBuckets.
+В [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.ListBuckets) дано подробное описание команды `ListBuckets`.
