@@ -11,8 +11,8 @@
   "infobarItems": [
     {
       "text": "Managing with Terraform",
-      "icon": "/docs/_docs/en/main/manage/terraform/assets/icon.svg",
-      "link": "../../manage/terraform/use-cases/iaas"
+      "icon": "/docs/_docs/en/main/manage/tools-for-using-services/terraform/assets/icon.svg",
+      "link": "../../manage/tools-for-using-services/terraform/use-cases/iaas"
     }],
   "uuid": "10d14d5d-951f-4ed0-ac2a-c3d706ab1a55"
 }
