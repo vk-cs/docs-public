@@ -1,12 +1,13 @@
 {
-  "title": "Масштабирование кластера",
+  "title": "Scaling the cluster",
   "pageDescription": "",
   "shortDescription": "",
-  "metaTitle": "Масштабирование кластера",
-  "metaDescription": "В интерфейсе Horizon перейдите в раздел «Большие данные» →«Кластеры» и кликните «Масштабировать кластер». В появившемся окне укажите новое количество рабоч",
-  "sectionTitle": "Масштабирование кластера",
+  "metaTitle": "Scaling the cluster",
+  "metaDescription": "Vertical and horizontal scaling of VK Cloud cluster nodes.",
+  "sectionTitle": "Scaling the cluster",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
-  "uuid": "31907aa6-1167-4915-88ce-ce6ad7149698"
+  "uuid": "31907aa6-1167-4915-88ce-ce6ad7149698",
+  "additionalUuids": ["30329517-fedd-450a-afd9-63b68214f988"]
 }
