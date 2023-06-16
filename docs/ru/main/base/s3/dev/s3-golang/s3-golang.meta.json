@@ -1,12 +1,13 @@
 {
-    "title": "Golang S3",
-    "pageDescription": "Выполнение операций с бакетами и объектами S3 при помощи Golang",
-    "shortDescription": "Выполнение операций с бакетами и объектами S3 при помощи Golang",
-    "metaTitle": "Golang S3",
-    "metaDescription": "Выполнение операций с бакетами и объектами S3 при помощи Golang",
-    "sectionTitle": "Golang S3",
-    "markdown": "Выполнение операций с бакетами и объектами S3 при помощи Golang.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 3
-  }
+  "title": "Golang S3",
+  "pageDescription": "Выполнение операций с бакетами и объектами S3 при помощи Golang",
+  "shortDescription": "Выполнение операций с бакетами и объектами S3 при помощи Golang",
+  "metaTitle": "Golang S3",
+  "metaDescription": "Выполнение операций с бакетами и объектами S3 при помощи Golang",
+  "sectionTitle": "Golang S3",
+  "markdown": "Выполнение операций с бакетами и объектами S3 при помощи Golang.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "4fb3cc66-1ff1-4178-ad5a-5ca3767ac669"
+}
