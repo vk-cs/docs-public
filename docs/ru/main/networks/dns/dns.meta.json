@@ -11,7 +11,7 @@
     {
       "text": "Справка API",
       "icon": "/docs/_docs/ru/main/networks/dns/assets/icon.svg",
-      "link": "../../../../additionals/api/api-dns"
+      "link": "../../additionals/api/api-dns"
     }],  
   "weight": 5,
   "uuid": "980c061c-5e1b-48ec-aff0-351b6972bab5"

@@ -10,6 +10,7 @@
   "infobarItems": [
     {
       "text": "Справка API",
+      "icon": "/docs/_docs/ru/main/manage/backups/assets/icon.svg",
       "link": "../../../additionals/api/backup-api"
     }
   ],
