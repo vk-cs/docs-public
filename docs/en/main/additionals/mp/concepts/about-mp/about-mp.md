@@ -6,7 +6,7 @@ Installing multiple applications on one VM is not provided.
 
 </warn>
 
-By using the services from the app store, you agree to the [user Agreement](/ru/additionals/start/legal/marketplace).
+By using the services from the app store, you agree to the [user Agreement](/ru/additionals/start/legal/marketplace "change-lang").
 
 ## List of applications
 
@@ -16,7 +16,7 @@ In the app store, you can deploy cloud services for development:
 
   - [VK Testers](https://mcs.mail.ru/vk-testers/);
   - [Кибер Бэкап Облачный](https://cyberprotect.ru/products/cloud-backup/);
-  - [Hystax Acura Migration](/ru/additionals/migration/migrate-hystax);
+  - [Hystax Acura Migration](/ru/additionals/migration/migrate-hystax "change-lang");
 
 - Docker:
 

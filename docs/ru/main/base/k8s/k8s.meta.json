@@ -11,8 +11,8 @@
   "infobarItems": [
     {
       "text": "Управление с помощью Terraform",
-      "icon": "/docs/_docs/ru/main/manage/terraform/assets/icon.svg",
-      "link": "../../manage/terraform/use-cases/k8s"
+      "icon": "/docs/_docs/ru/main/manage/tools-for-using-services/terraform/assets/icon.svg",
+      "link": "../../manage/tools-for-using-services/terraform/use-cases/k8s"
     }],
   "uuid": "61da57b5-e215-4762-9f78-46e7445560da"
 }

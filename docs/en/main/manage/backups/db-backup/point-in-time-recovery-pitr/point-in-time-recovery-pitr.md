@@ -1,71 +1,87 @@
-## Prepare to PITR
-
-Point-in-time-recovery (PITR) provides continuous backup of PostgreSQL table data. You can restore a table at a certain point in time during the creation of a virtual machine or through the recovery interface from a backup. During the recovery process, the saved table is restored to a new virtual machine at a certain point in time. Read more about backup and recovery in PostgreSQL [here](https://postgrespro.ru/docs/postgresql/9.6/continuous-archiving).
-
 <warn>
 
 The PITR function is only available for databases running PostgreSQL.
 
 </warn>
 
-To set the schedule, you need:
+## Creating a schedule
 
-- Schedule name;
-- Backup interval (3, 4, 6, 8, 12, 24 hours);
-- Start of the backup (specified in UTC in the API);
-- The number of backups stored.
+When creating a PITR schedule, DBMS logs will be copied.
 
-For example, the interval is 3 hours, and the start time is 01:30. Therefore backups will be executed in 01:30, 04:30, 07:30, 10:30, 13:30, 16:30, 19:30 and 22:30 every day.
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+</tablist>
+<tabpanel>
 
-If the interval is 24 hours, and the start time is 05:07, backups will be performed every day at 05:07.
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to **Databases** → **Backup**.
+1. Go to the **Point-in-time recovery** tab.
+1. Click the **Add**.
+1. In the window that opens, specify:
 
-The execution time is not exact; the backup will start being created in 5 minutes from the specified time.
+   1. **Schedule Name**: the name for the schedule being created.
+   1. **Start time**: specify the start time of the backup in the GMT+03:00 time zone.
+   1. **Store, number of copies**: specify the number of backups stored.
+   1. **Backup interval**: select the appropriate backup interval.
+   1. **Database**: select a deployed instance with a PostgreSQL DBMS.
 
-The system will also copy DBMS logs for PITR capability regardless of regular backups. This process cannot be controlled.
+1. Click the **Save schedule**.
 
-## Setting up a backup schedule
+</tabpanel>
+</tabs>
 
-You can enable the backup schedule:
+## Editing an existing schedule
 
-- in the process of creating an instance or cluster;
-- in the settings of an already created instance or cluster.
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+</tablist>
+<tabpanel>
 
-### Enabling the backup schedule when creating an instance
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to **Databases** → **Backup**.
+1. Go to the **Point-in-time recovery** tab.
+1. Expand the menu of the desired schedule and select the **Edit schedule** option.
+1. Make the necessary changes and click the **Save schedule**.
 
-To enable the backup schedule when creating an instance, you must:
+</tabpanel>
+</tabs>
 
-1. In the "Backup" section, select the "Scheduled" option.
-2. In the fields that appear, enter the first backup time and select the interval between subsequent increments.
-3. Click "Next Step" to accept the changes.
+## Viewing schedule backups
 
-### Enabling backup schedules for existing instances
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+</tablist>
+<tabpanel>
 
-To enable the backup schedule for existing instances, it is necessary:
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to **Databases** → **Backup**.
+1. Go to the **Point-in-time recovery** tab.
+1. Click on the name of the desired schedule.
 
-1. On the Backup tab or the Backups, click "Add."
-2. In the step "Create instance," in the section "Backup," select "schedule."
-3. In the provided fields, enter the first backup time, select the interval between successive increments, and select database instance.
-4. Click "Add Plan" to accept the changes.
+A list of backups for the selected schedule will be displayed.
 
-## Recovery
+</tabpanel>
+</tabs>
 
-You can restore an instance from a backup at a certain point in time:
+## Restore from backup
 
-- From the list of backups;
-- when creating an instance.
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+</tablist>
+<tabpanel>
 
-### Restoring from the backup list
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to **Databases** → **Backup**.
+1. Go to the **Point-in-time recovery** tab.
+1. Click on the name of the desired schedule.
+1. Expand the menu of the desired backup and select the **Restore from backup** option.
+1. On “Create instance” step specify the necessary parameters and click the **Next step**.
+1. (Optional) Specify the date and time of the required backup in the field of the same name. If you leave the field empty, the last backup created will be automatically selected.
+1. Click the **Create database**.
 
-To restore an instance, follow these steps:
-
-1. Open the "Backups" section of the "Databases" service.
-2. In the "Scheduled Backups" tab, find the backup plan of the desired instance and select the backup for the required time.
-3. In the context menu of the selected backup, click "Restore from backup."
-
-### Restoring when creating an instance
-
-To create a new instance from a backup at a specific point in time, follow these steps:
-
-1. When creating an instance, in the "Configuration" section, select the "Restore" option.
-2. In the window that opens, find the list of backups of the desired instance and select the backup for the required time.
-3. Click "Next Step" to accept the changes and continue creating the instance.
+</tabpanel>
+</tabs>

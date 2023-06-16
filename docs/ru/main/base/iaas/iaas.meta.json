@@ -11,8 +11,8 @@
   "infobarItems": [
     {
       "text": "Управление с помощью Terraform",
-      "icon": "/docs/_docs/ru/main/manage/terraform/assets/icon.svg",
-      "link": "../../manage/terraform/use-cases/iaas"
+      "icon": "/docs/_docs/ru/main/manage/tools-for-using-services/terraform/assets/icon.svg",
+      "link": "../../manage/tools-for-using-services/terraform/use-cases/iaas"
     }],
   "uuid": "f18cbbc6-353d-4989-84a8-152fedc68060"
 }

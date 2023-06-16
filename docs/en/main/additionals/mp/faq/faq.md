@@ -8,7 +8,7 @@ You can view the current list of applications in the VK Cloud personal account i
 
 ## How much does it cost to use apps from the Cloud Marketplace?
 
-The applications themselves are not charged, the payment is charged only for [using virtual machines](/ru/base/iaas/tariffication).
+The applications themselves are not charged, the payment is charged only for [using virtual machines](/en/base/iaas/tariffication).
 
 ## Is Docker presented as a service?
 

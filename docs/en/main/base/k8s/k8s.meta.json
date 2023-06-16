@@ -10,8 +10,8 @@
   "infobarItems": [
     {
       "text": "Managing with Terraform",
-      "icon": "/docs/_docs/en/main/manage/terraform/assets/icon.svg",
-      "link": "../../manage/terraform/use-cases/k8s"
+      "icon": "/docs/_docs/en/main/manage/tools-for-using-services/terraform/assets/icon.svg",
+      "link": "../../manage/tools-for-using-services/terraform/use-cases/k8s"
     }],
   "uuid": "0f729ff3-2aa9-47e6-a577-2cb415acdfc9"
 }
