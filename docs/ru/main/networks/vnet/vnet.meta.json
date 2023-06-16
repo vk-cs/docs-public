@@ -11,8 +11,8 @@
   "infobarItems": [
     {
       "text": "Управление с помощью Terraform",
-      "icon": "/docs/_docs/ru/main/manage/terraform/assets/icon.svg",
-      "link": "../../manage/terraform/use-cases/vnet"
+      "icon": "/docs/_docs/ru/main/manage/tools-for-using-services/terraform/assets/icon.svg",
+      "link": "../../manage/tools-for-using-services/terraform/use-cases/vnet"
     }],
   "uuid": "b3b0ec80-fb75-46e5-8efd-f6c80dce5da8"
 }

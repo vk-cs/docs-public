@@ -2,7 +2,7 @@ In addition to automatic backups, you can create database backups manually in yo
 
 ## Creating a backup
 
-1. Go to [personal account](https://mcs.mail.ru/app) VK Cloud.
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
 1. Create a backup using one of the following methods:
 
 <tabs>
@@ -36,18 +36,38 @@ Backups are made to the object storage.
 
 ## Viewing a list of backups
 
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+</tablist>
+<tabpanel>
+
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
 1. Go to **Databases** → **Backup**.
 1. Go to the **Manual** tab.
 1. Click on the link in the column **Restore points**.
 
 A list of recovery points for the selected backup will be displayed.
 
+</tabpanel>
+</tabs>
+
 ## Deleting backups
 
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+</tablist>
+<tabpanel>
+
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
 1. Go to **Databases** → **Backup**.
 1. Go to the **Manual** tab.
-1. Open the backup context menu and select the option **Delete**.
+1. Expand the menu of the desired backup and select the **Delete** option.
 1. In the window that appears, confirm the operation.
+
+</tabpanel>
+</tabs>
 
 <info>
 

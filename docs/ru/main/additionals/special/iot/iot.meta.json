@@ -12,7 +12,7 @@
     {
       "text": "Справка API",
       "icon": "/docs/_docs/ru/main/additionals/special/iot/assets/icon.svg",
-      "link": "../../../additionals/api/api-iot"
+      "link": "../../api/api-iot"
     }],  
   "uuid": "b3f92ce8-83ce-4647-82d9-6ce8d1356b12"
 }
