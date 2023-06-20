@@ -4,4 +4,3 @@ Cloud Disaster Recovery is a cloud service for restoring IT infrastructure and d
 
 - Migration — creation and debugging is planned to ensure privacy. You can learn more about this step in the [Migration](../../migration/) section.
 - Disaster recovery — improving reliability, restoring access to infrastructure and its functionality after bad weather.
-- Backup — backup execution and data recovery according to a specified schedule. Backup works on the basis of a disaster recovery scheme.
