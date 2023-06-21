@@ -1,16 +1,10 @@
 {
-    "meta": "Общие статьи о ВМ",
+    "meta": "Главная",
     "path": "/",
     "groups": [
         {
             "title": "ИНФОРМАЦИЯ",
             "links": [
-                {
-                    "link": "docs/ru"
-                },
-                {
-                    "link": "docs/ru/main/base/account/start"
-                },
                 {
                     "link": "docs/ru/main/additionals/start/get-started/corporate"
                 },
@@ -18,8 +12,31 @@
                     "link": "docs/ru/main/base/account/concepts/quotasandlimits"
                 },
                 {
+                    "link": "docs/ru/main/base/account/concepts/rolesandpermissions"
+                },
+                {
                     "link": "docs/ru/main/additionals/billing",
                     "hiddenForPartners": true
+                },
+                {
+                    "link": "docs/ru/main/additionals/start/legal"
+                },
+                {
+                    "link": "docs/ru/main/additionals/start/support"
+                },
+                {
+                    "link": "docs/ru/main/base/account/faq"
+                }
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                {
+                    "link": "docs/ru/main/base/account/quick-start"
+                },
+                {
+                    "link": "docs/ru/main/base/account/instructions/activation"
                 },
                 {
                     "link": "docs/ru/main/additionals/billing/operations/payment",
@@ -31,36 +48,25 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/iaas"
+                    "link": "docs/ru/main/base/account/instructions/project-settings"
                 },
                 {
-                    "link": "docs/ru/main/networks/vnet"
+                    "link": "docs/ru/main/base/account/instructions/account-manage"
                 },
                 {
-                    "link": "docs/ru/main/manage/monitoring"
+                    "link": "docs/ru/main/manage/tools-for-using-services"
                 },
                 {
-                    "link": "docs/ru/main/networks/cdn"
+                    "link": "docs/ru/main/base/account/instructions/actionslogs"
                 },
                 {
-                    "link": "docs/ru/main/networks/dns"
+                    "link": "docs/ru/main/base/account/use-cases/systemstate"
                 },
                 {
-                    "link": "docs/ru/main/base/s3"
+                    "link": "docs/ru/main/base/account/use-cases/ideasportal"
                 },
                 {
-                    "link": "docs/ru/main/base/k8s"
-                },
-                {
-                    "link": "docs/ru/main/dbs/dbaas"
-                },
-                {
-                    "link": "docs/ru/main/dbs/adb"
-                },
-                {
-                    "link": "docs/ru/main/additionals/mp"
-                },{
-                    "link": "docs/ru/main/ml"
+                    "link": "docs/ru/main/base/account/use-cases/account-delete"
                 }
             ]
         }
