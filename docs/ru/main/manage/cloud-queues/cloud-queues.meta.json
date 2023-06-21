@@ -12,7 +12,7 @@
     {
       "text": "Справка API",
       "icon": "/docs/_docs/ru/main/manage/cloud-queues/assets/icon.svg",
-      "link": "../../../additionals/api/cloud-queues-api"
+      "link": "../../additionals/api/cloud-queues-api"
     }],  
   "uuid": "f3a09cea-8105-4284-b94a-398356ae7955"
 }

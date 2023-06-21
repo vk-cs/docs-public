@@ -12,7 +12,7 @@
     {
       "text": "Справка API",
       "icon": "/docs/_docs/ru/main/base/s3/assets/icon.svg",
-      "link": "../../../additionals/api/s3-rest-api"
+      "link": "../../additionals/api/s3-rest-api"
     }],  
   "uuid": "b4b73ce5-4e87-4159-b682-67b0fa2c0457"
 }
