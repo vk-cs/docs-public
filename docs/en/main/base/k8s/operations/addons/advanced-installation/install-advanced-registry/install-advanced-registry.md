@@ -251,4 +251,4 @@ To access the registry, write down the data that was used in the addon setup cod
 - Password.
 - The IP address of the registry. The Docker registry URL will look like this: `<IP address>:5000`.
 
-To learn how to connect to the registry, read the section [Connecting to Docker Registry](../../../../connect/docker-registry).
+To learn how to connect to the registry and use it in a Kubernetes cluster, read the section [Connecting to Docker Registry](../../../../connect/docker-registry).
