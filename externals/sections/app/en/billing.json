@@ -8,6 +8,10 @@
                 {
                     "link": "docs/en/main/additionals/billing",
                     "hiddenForPartners": true
+                },
+                {
+                    "link": "docs/en/main/additionals/billing/operations/payment",
+                    "hiddenForPartners": true
                 }
             ]
         }
