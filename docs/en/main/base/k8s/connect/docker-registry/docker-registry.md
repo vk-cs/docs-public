@@ -5,6 +5,7 @@ When [installing](../../operations/addons/advanced-installation/install-advanced
 ## Preparatory steps
 
 1. [Make sure](../../operations/addons/manage-addons#viewing-addons) that the Docker registry addon (`docker-registry`) is installed in the cluster.
+1. [Make sure](../kubectl#checking-the-connection-to-the-cluster) that you can connect to the cluster using `kubectl`.
 1. [Get the data](../../operations/addons/advanced-installation/install-advanced-registry#getting-data-to-access-the-registry) to access the Docker registry.
 
 ## Connecting to the Docker Registry
@@ -81,3 +82,195 @@ On the host from which you plan to connect to the registry:
 Now you can do any operations with the registry, for example, to push Docker images there.
 
 Read more about registry operations in [official Docker documentation](https://docs.docker.com/registry/).
+
+## Using Docker registry in Kubernetes cluster
+
+In order to deploy workloads in a cluster using images from the Docker registry:
+
+1. Create the `k8s-registry-creds` secret which contains the data to access the registry:
+
+   If the `--namespace` parameter is not provided, then the secret will be created in the default namespace (`default`).
+
+   <warn>
+
+   The secret must reside in the same namespace the workload is planned to be deployed in.
+
+   </warn>
+
+   <tabs>
+   <tablist>
+   <tab>Linux (bash) / macOS (zsh)</tab>
+   <tab>Windows (PowerShell)</tab>
+   </tablist>
+   <tabpanel>
+
+   ```bash
+   kubectl create secret docker-registry k8s-registry-creds \ 
+     --docker-server=<registry IP address>:5000 \
+     --docker-username=<login> \
+     --docker-password=<password> \
+     --namespace=<namespace>
+   ```
+
+   </tabpanel>
+   <tabpanel>
+
+   ```powershell
+   kubectl create secret docker-registry k8s-registry-creds ` 
+     --docker-server=<registry IP address>:5000 `
+     --docker-username=<login> `
+     --docker-password=<password> `
+     --namespace=<namespace>
+   ```
+
+   </tabpanel>
+   </tabs>
+
+1. Specify in the workload manifest:
+
+   - Name of the created secret in the `ìmagePullSecrets` parameter.
+
+   - Path to the image from the registry in the `containers.image` parameter.
+
+     The path should be specified in the `<registry IP address>:5000/<image directory>/<image name>:<tag>` format.
+
+   Examples of manifests:
+
+   <tabs>
+   <tablist>
+   <tab>Pod</tab>
+   <tab>Deployment</tab>
+   <tab>ReplicaSet</tab>
+   <tab>StatefulSet</tab>
+   <tab>DaemonSet</tab>
+   <tab>Job</tab>
+   <tab>CronJob</tab>
+   </tablist>
+   <tabpanel>
+
+   ```yaml
+   apiVersion: v1
+   kind: Pod
+   metadata:
+     name: my-app
+   spec:
+     imagePullSecrets:
+     - name: k8s-registry-creds
+     containers:
+     - name: my-app
+       image: <registry IP address>:5000/<image directory>/<image name>:<tag>
+   ```
+
+   </tabpanel>
+   <tabpanel>
+
+   ```yaml
+   apiVersion: apps/v1
+   kind: Deployment
+   metadata:
+     name: my-app
+   spec:
+     template:
+       spec:
+         imagePullSecrets:
+         - name: k8s-registry-creds
+         containers:
+         - name: my-app
+           image: <registry IP address>:5000/<image directory>/<image name>:<tag>
+   
+   ```
+
+   </tabpanel>
+   <tabpanel>
+
+   ```yaml
+   apiVersion: apps/v1
+   kind: ReplicaSet
+   metadata:
+     name: my-app
+   spec:
+     template:
+       spec:
+         imagePullSecrets:
+         - name: k8s-registry-creds
+         containers:
+         - name: my-app
+           image: <registry IP address>:5000/<image directory>/<image name>:<tag>
+   ```
+
+   </tabpanel>
+   <tabpanel>
+
+   ```yaml
+   apiVersion: apps/v1
+   kind: StatefulSet
+   metadata:
+     name: my-app
+   spec:
+     template:
+       spec:
+         imagePullSecrets:
+         - name: k8s-registry-creds
+         containers:
+         - name: my-app
+           image: <registry IP address>:5000/<image directory>/<image name>:<tag>
+   ```
+
+   </tabpanel>
+   <tabpanel>
+
+   ```yaml
+   apiVersion: apps/v1
+   kind: DaemonSet
+   metadata:
+     name: my-app
+   spec:
+     template:
+       spec:
+         imagePullSecrets:
+         - name: k8s-registry-creds
+         containers:
+         - name: my-app
+           image: <registry IP address>:5000/<image directory>/<image name>:<tag>
+   ```
+
+   </tabpanel>
+   <tabpanel>
+
+   ```yaml
+   apiVersion: batch/v1
+   kind: Job
+   metadata:
+     name: my-app
+   spec:
+     template:
+       spec:
+         imagePullSecrets:
+         - name: k8s-registry-creds
+         containers:
+         - name: my-app
+           image: <registry IP address>:5000/<image directory>/<image name>:<tag>
+   ```
+
+   </tabpanel>
+   <tabpanel>
+
+   ```yaml
+   apiVersion: batch/v1
+   kind: CronJob
+   metadata:
+     name: my-app
+   spec:
+     jobTemplate:
+       spec:
+         template:
+           spec:
+             imagePullSecrets:
+             - name: k8s-registry-creds
+             containers:
+             - name: my-app
+               image: <registry IP address>:5000/<image directory>/<image name>:<tag>
+   ```
+
+   </tabpanel>
+   </tabs>
