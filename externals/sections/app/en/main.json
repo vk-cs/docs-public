@@ -1,19 +1,42 @@
 {
-    "meta": "Общие статьи о ВМ",
+    "meta": "Главная",
     "path": "/",
     "groups": [
         {
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/base/iaas/vm-images/custom-image"
+                    "link": "docs/en/main/additionals/start/get-started/corporate"
                 },
                 {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/en/main/base/account/concepts/quotasandlimits"
+                },
+                {
+                    "link": "docs/en/main/base/account/concepts/rolesandpermissions"
                 },
                 {
                     "link": "docs/en/main/additionals/billing",
                     "hiddenForPartners": true
+                },
+                {
+                    "link": "docs/en/main/additionals/start/legal"
+                },
+                {
+                    "link": "docs/en/main/additionals/start/support"
+                },
+                {
+                    "link": "docs/en/main/base/account/faq"
+                }
+            ]
+        },
+        {
+            "title": "QUICK START",
+            "links": [
+                {
+                    "link": "docs/en/main/base/account/quick-start"
+                },
+                {
+                    "link": "docs/en/main/base/account/instructions/activation"
                 },
                 {
                     "link": "docs/en/main/additionals/billing/operations/payment",
@@ -22,42 +45,28 @@
             ]
         },
         {
-            "title": "QUICK START",
-            "links": [
-                {
-                    "link": "docs/en/main/base/iaas/vm-interfaces/vm-create-cli"
-                },
-                {
-                    "link": "docs/en/main/base/iaas/vm-volumes/volume-sla"
-                },
-                {
-                    "link": "docs/en/main/base/iaas/vm-start/manage-vm"
-                },
-                {
-                    "link": "docs/en/main/base/iaas/fs"
-                },
-                {
-                    "link": "docs/en/main/additionals/mp"
-                }
-            ]
-        },
-        {
             "title": "MORE",
             "links": [
                 {
-                    "link": "docs/en/main/additionals/start/user-account/project-roles-users"
+                    "link": "docs/en/main/base/account/instructions/project-settings"
                 },
                 {
-                    "link": "docs/en/main/dbs/dbaas/manage-db/backup-db"
+                    "link": "docs/en/main/base/account/instructions/account-manage"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet"
+                    "link": "docs/en/main/manage/tools-for-using-services"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet/vpn"
+                    "link": "docs/en/main/base/account/instructions/actionslogs"
                 },
                 {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/en/main/base/account/use-cases/systemstate"
+                },
+                {
+                    "link": "docs/en/main/base/account/use-cases/ideasportal"
+                },
+                {
+                    "link": "docs/en/main/base/account/use-cases/account-delete"
                 }
             ]
         }
