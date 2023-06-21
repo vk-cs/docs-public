@@ -6,10 +6,11 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/start"
+                    "link": "docs/ru/main/additionals/billing",
+                    "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/main/additionals/billing",
+                    "link": "docs/ru/main/additionals/billing/operations/payment",
                     "hiddenForPartners": true
                 }
             ]
