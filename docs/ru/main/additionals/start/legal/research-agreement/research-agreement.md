@@ -1,4 +1,4 @@
-Настоящее Соглашение об участии в исследовании (тестировании) (далее — Соглашение) размещается в сети Интернет по адресу: [https://mcs.mail.ru/docs/ru/additionals/start/legal/research_agreement](/ru/additionals/start/legal/research_agreement) (далее — ссылка) и доступно на странице формы по ссылке https://mcs.mail.ru/uxlab/research_form/ и заключается только с теми лицами, которым предварительно от имени ООО «ВК» была предоставлена указанная ссылка.
+Настоящее Соглашение об участии в исследовании (тестировании) (далее — Соглашение) размещается в сети Интернет по адресу: [https://mcs.mail.ru/docs/ru/additionals/start/legal/research-agreement](/ru/additionals/start/legal/research-agreement) (далее — ссылка) и доступно на странице формы по ссылке https://mcs.mail.ru/uxlab/research_form/ и заключается только с теми лицами, которым предварительно от имени ООО «ВК» была предоставлена указанная ссылка.
 
 Принимая во внимание, что:  
 
