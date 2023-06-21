@@ -11,7 +11,7 @@
     {
       "text": "Справка API",
       "icon": "/docs/_docs/ru/main/base/iaas/assets/icon.svg",
-      "link": "../../../../additionals/api/backup-api"
+      "link": "../../../additionals/api/backup-api"
     }],  
   "weight": 1,
   "uuid": "fcda97f7-6a73-4b05-a112-c4a8680fe291"

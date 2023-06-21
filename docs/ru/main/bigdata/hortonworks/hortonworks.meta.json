@@ -12,7 +12,7 @@
     {
       "text": "Справка API",
       "icon": "/docs/_docs/ru/main/bigdata/hortonworks/assets/icon.svg",
-      "link": "../../../additionals/api/bigdata-api"
+      "link": "../../additionals/api/bigdata-api"
     }],  
   "uuid": "bd23711e-6ce4-4c13-8d37-c6050abc71b4"
 }
