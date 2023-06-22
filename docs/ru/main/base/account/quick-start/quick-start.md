@@ -51,6 +51,8 @@
     openstack configuration show
     ```
 
+    При успешном подключении будет показана текущая конфигурация клиента OpenStack.
+
 ## Что дальше?
 
 - Изучите [квоты и лимиты](/ru/base/account/concepts/quotasandlimits) проектов.
