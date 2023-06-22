@@ -93,7 +93,7 @@ To link a card:
 
 1. (Optional) In the window that opens, configure the autopayment settings:
 
-    - **Auto-top-up amount**: specify the amount to be automatically credited to your balance after the minimum balance threshold amount is reached. The range of the credited amount is from 100 to 20 000 rubles.
+    - **Auto-top-up amount**: specify the amount to be automatically credited to your balance after the minimum balance threshold amount is reached. The range of the credited amount is from 100 to 10 000 rubles.
 
     - **Top-up with remaining balance**: specify the minimum balance threshold — a value from 0 to 9 999 999 rubles.
 
