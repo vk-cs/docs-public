@@ -114,6 +114,176 @@
 
 Чтобы перенести другие типы объектов, обратитесь в [техническую поддержку](/ru/contacts).
 
+## Просмотр квот проекта
+
+<tabs>
+<tablist>
+<tab>В личном кабинете</tab>
+<tab>Через OpenStack CLI (расширенный список)</tab>
+</tablist>
+<tabpanel>
+
+Квоты на наиболее часто используемые ресурсы отображаются на главной странице [личного кабинета](https://mcs.mail.ru/app/).
+
+Чтобы увидеть более полный список квот и узнать подробную информацию о каждой квоте из списка:
+
+1. Нажмите на имя пользователя в шапке страницы личного кабинета, из выпадающего списка выберите **Управление квотами**. Откроется страница квот.
+
+    Эта же страница доступна, если выбрать **Настройки проекта** и перейти на вкладку **Квоты**.
+
+1. Нажмите на значок ![Информация](./assets/i-icon.svg "inline") справа от нужной квоты. Отобразится информация о том, какими объектами и в каких сервисах расходуется квота.
+
+Расширенный список квот для проекта можно получить через OpenStack CLI. Информация обо всех квотах и возможностях их увеличения в разделе [Квоты и Лимиты](../../../concepts/quotasandlimits).
+
+</tabpanel>
+<tabpanel>
+
+Чтобы получить расширенный список квот для проекта:
+
+1. Убедитесь, что клиент OpenStack [установлен](../../../cli/setup), и [пройдите аутентификацию](../../../cli/authorization) в проекте.
+1. Введите в консоли команду:
+
+    ```bash
+    openstack quota show
+    ```
+
+    <details><summary>Пример вывода команды для региона Москва</summary>
+
+    ```bash
+    +----------------------------+--------------------------------------------------+
+    | Field                      | Value                                            |
+    +----------------------------+--------------------------------------------------+
+    | backup-gigabytes           | -1                                               |
+    | backups                    | 400                                              |
+    | cores                      | 9                                                |
+    | fixed-ips                  | -1                                               |
+    | floating-ips               | 6                                                |
+    | gigabytes                  | 200                                              |
+    | gigabytes_ceph             | -1                                               |
+    | gigabytes_ceph-hdd         | -1                                               |
+    | gigabytes_ceph-ssd         | -1                                               |
+    | gigabytes_dev-ceph         | -1                                               |
+    | gigabytes_dp1              | -1                                               |
+    | gigabytes_dp1-high-iops    | 200                                              |
+    | gigabytes_dp1-local-ssd    | -1                                               |
+    | gigabytes_dp1-ssd          | -1                                               |
+    | gigabytes_ef-nvme          | -1                                               |
+    | gigabytes_high-iops        | 200                                              |
+    | gigabytes_ko1-high-iops    | 200                                              |
+    | gigabytes_ko1-local-ssd    | -1                                               |
+    | gigabytes_ko1-local-ssd-g2 | -1                                               |
+    | gigabytes_ko1-ssd          | -1                                               |
+    | gigabytes_local-ssd        | -1                                               |
+    | gigabytes_manila           | -1                                               |
+    | gigabytes_ms1              | -1                                               |
+    | gigabytes_octavia-hdd      | -1                                               |
+    | gigabytes_octavia-ssd      | -1                                               |
+    | gigabytes_perf-test        | -1                                               |
+    | gigabytes_ssd              | -1                                               |
+    | health_monitors            | -1                                               |
+    | injected-file-size         | 10240                                            |
+    | injected-files             | 5                                                |
+    | injected-path-size         | 255                                              |
+    | instances                  | 6                                                |
+    | key-pairs                  | 100                                              |
+    | l7_policies                | -1                                               |
+    | listeners                  | -1                                               |
+    | load_balancers             | 12                                               |
+    | location                   | ...                                              |
+    | networks                   | 10                                               |
+    | per-volume-gigabytes       | -1                                               |
+    | pools                      | 30                                               |
+    | ports                      | 120                                              |
+    | project                    | b5b7ffd4ef0547e5b222f44555df8f67                 |
+    | project_name               | mcsXXXXXXXXXX                                    |
+    | properties                 | 128                                              |
+    | ram                        | 10240                                            |
+    | rbac_policies              | 10                                               |
+    | routers                    | 12                                               |
+    | secgroup-rules             | 200                                              |
+    | secgroups                  | 12                                               |
+    | server-group-members       | 100                                              |
+    | server-groups              | 50                                               |
+    | snapshots                  | 200                                              |
+    | snapshots_ceph             | -1                                               |
+    | snapshots_ceph-hdd         | -1                                               |
+    | snapshots_ceph-ssd         | -1                                               |
+    | snapshots_dev-ceph         | -1                                               |
+    | snapshots_dp1              | -1                                               |
+    | snapshots_dp1-high-iops    | -1                                               |
+    | snapshots_dp1-local-ssd    | -1                                               |
+    | snapshots_dp1-ssd          | -1                                               |
+    | snapshots_ef-nvme          | -1                                               |
+    | snapshots_high-iops        | -1                                               |
+    | snapshots_ko1-high-iops    | -1                                               |
+    | snapshots_ko1-local-ssd    | -1                                               |
+    | snapshots_ko1-local-ssd-g2 | -1                                               |
+    | snapshots_ko1-ssd          | -1                                               |
+    | snapshots_local-ssd        | -1                                               |
+    | snapshots_manila           | -1                                               |
+    | snapshots_ms1              | -1                                               |
+    | snapshots_octavia-hdd      | -1                                               |
+    | snapshots_octavia-ssd      | -1                                               |
+    | snapshots_perf-test        | -1                                               |
+    | snapshots_ssd              | -1                                               |
+    | subnet_pools               | -1                                               |
+    | subnets                    | 10                                               |
+    | volumes                    | 10                                               |
+    | volumes_ceph               | -1                                               |
+    | volumes_ceph-hdd           | -1                                               |
+    | volumes_ceph-ssd           | -1                                               |
+    | volumes_dev-ceph           | -1                                               |
+    | volumes_dp1                | -1                                               |
+    | volumes_dp1-high-iops      | 10                                               |
+    | volumes_dp1-local-ssd      | -1                                               |
+    | volumes_dp1-ssd            | -1                                               |
+    | volumes_ef-nvme            | -1                                               |
+    | volumes_high-iops          | 10                                               |
+    | volumes_ko1-high-iops      | 10                                               |
+    | volumes_ko1-local-ssd      | -1                                               |
+    | volumes_ko1-local-ssd-g2   | -1                                               |
+    | volumes_ko1-ssd            | -1                                               |
+    | volumes_local-ssd          | -1                                               |
+    | volumes_manila             | -1                                               |
+    | volumes_ms1                | -1                                               |
+    | volumes_octavia-hdd        | -1                                               |
+    | volumes_octavia-ssd        | -1                                               |
+    | volumes_perf-test          | -1                                               |
+    | volumes_ssd                | -1                                               |
+    +----------------------------+--------------------------------------------------+
+    ```
+    </details>
+
+    Значение `-1` для квоты означает «не ограничено». О том, каким ресурсам соответствуют квоты из списка, читайте в разделе [Квоты и Лимиты](../../../concepts/quotasandlimits).
+
+    Вы можете вывести квоты отдельно для компонентов `nova` и `cinder`:
+
+    <tabs>
+    <tablist>
+    <tab>nova</tab>
+    <tab>cinder</tab>
+    </tablist>
+    <tabpanel>
+
+    ```bash
+    nova quota-show
+    ```
+
+    </tabpanel>
+    <tabpanel>
+
+    ```bash
+    cinder quota-show <project_id>
+    ```
+
+    </tabpanel>
+    </tabs>
+
+    Чтобы посмотреть квоты по другим компонентам OpenStack, [установите](../../../cli/packagessetup) соответствующие пакеты клиента OpenStack (`manila`, `neutron` и другие) и используйте команду, специфичную для пакета. Чтобы узнать синтаксис команды, установите соответствующий пакет и выполните `<component> help quota-show`, например, `manila help quota-show`.
+
+</tabpanel>
+</tabs>
+
 ## Увеличение квот проекта
 
 Если проекту не хватает [квот](../../../concepts/quotasandlimits), обратитесь в [техническую поддержку](/ru/contacts) от имени владельца проекта и предоставьте информацию:
