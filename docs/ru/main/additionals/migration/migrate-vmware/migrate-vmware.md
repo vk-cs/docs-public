@@ -36,7 +36,7 @@
    cloud-init --version
    ```
 
-   Если утилита отсутствует, [установите](https://www.tencentcloud.com/document/product/213/12587) ее.
+   Если утилита отсутствует, [установите](https://cloud-init.io/) ее.
 4. Создайте файл `/etc/netplan/50-cloud-init.yaml` со следующим содержимым:
 
    ```yaml
