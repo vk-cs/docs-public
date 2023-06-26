@@ -37,7 +37,7 @@ To migrate a VM with EFI emulation, use [Hystax](/en/additionals/hystax/migratio
    cloud-init --version
    ```
 
-   If the utility is missing, [install](https://www.tencentcloud.com/document/product/213/12587) it.
+   If the utility is missing, [install](https://www.ibm.com/docs/en/powervc-cloud/2.0.0?topic=init-installing-configuring-cloud-linux) it.
 
 4. Create a file `/etc/netplan/50-cloud-init.yaml` with the following contents:
 
