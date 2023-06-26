@@ -1,0 +1,12 @@
+{
+  "title": "DB instance configurations",
+  "pageDescription": "Available configurations of deployed database instances in VK Cloud.",
+  "shortDescription": "Available DB instance configurations in the cloud",
+  "metaTitle": "DB instance configurations",
+  "metaDescription": "Available configurations of deployed database instances in VK Cloud.",
+  "sectionTitle": "DB instance configurations",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3,
+  "uuid": "4520d8b0-b0bd-4d5e-8765-670ea47938d3"
+}
