@@ -1,10 +1,10 @@
 {
-  "title": "Включение доступа по API",
-  "pageDescription": "Включение доступа к VK Cloud API",
-  "shortDescription": "Как активировать доступ к VK Cloud API",
-  "metaTitle": "Включение доступа по API",
+  "title": "Управление доступом по API",
+  "pageDescription": "Включение или отключение доступа к VK Cloud API.",
+  "shortDescription": "Как включить или выключить доступ к VK Cloud API",
+  "metaTitle": "Управление доступом по API",
   "metaDescription": "Статья описывает как активировать доступ к VK Cloud API.",
-  "sectionTitle": "Включение доступа по API",
+  "sectionTitle": "Управление доступом по API",
   "weight": 1,
   "uuid": "c4d3c021-3c20-4aeb-bc97-388452c40c6d"
 }

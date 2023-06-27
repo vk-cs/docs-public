@@ -50,7 +50,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что OpenStack [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 2. Выберите в [таблице](../../concepts/vm-concept#diski) тип диска, определите его название в API и зону доступности, подходящую для размещения.
 
@@ -212,7 +212,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что OpenStack [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 2. Выберите в [таблице](../../concepts/vm-concept#diski) новый тип диска и определите его название в API.
 
@@ -341,7 +341,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что OpenStack [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 2. Выведите список дисков и скопируйте ID диска:
 
@@ -496,7 +496,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что OpenStack [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 2. Получите [токен доступа](/additionals/cases/case-keystone-token).
 3. Просмотрите список виртуальных машин и скопируйте ID виртуальной машины, основной диск которой нужно заменить:
@@ -652,7 +652,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что OpenStack [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 2. Выведите список дисков с помощью команды `openstack volume list` и проверьте его статус: если диск подключен к ВМ (`Status`: `in-use`), [отключите его](#otklyuchenie-diska-ot-vm).
 
@@ -794,7 +794,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что OpenStack [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 2. Выполните нужную команду.
 

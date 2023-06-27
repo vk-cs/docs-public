@@ -1,0 +1,12 @@
+{
+  "title": "Working with the action log",
+  "pageDescription": "Description of working with the user activity log.",
+  "shortDescription": "Viewing records and uploading data from the log",
+  "metaTitle": "Working with the action log",
+  "metaDescription": "Basic operations with the log of user actions: viewing records, selecting a range, unloading records from the log.",
+  "sectionTitle": "Working with the action log",
+  "icon": "",
+  "weight": 6,
+  "infobarItems": null,
+  "uuid": "1983f0c6-f588-4088-bbbe-2213de48628c"
+}

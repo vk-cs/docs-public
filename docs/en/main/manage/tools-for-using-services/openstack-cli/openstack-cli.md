@@ -72,13 +72,12 @@ Service names:
 - `neutron` – network API;
 - `nova` – cloud computing (VM) and extensions API;
 - `octavia` — load balancer API;
-- `sahara` – Big Data processing API;
-- `trove` – databases API.
+- `sahara` – Big Data processing API.
 
 ## 3. Complete authentication
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Make sure that [two-factor authentication](/en/base/account/instructions/account-manage/security#vklyuchenie-2fa) and [API access](/en/base/account/instructions/account-manage/security#dostup-po-api) are enabled.
+1. Make sure that [two-factor authentication](/en/base/account/instructions/account-manage/manage-2fa) and [API access](/en/manage/tools-for-using-services/rest-api/enable-api) are enabled.
 3. Select a project.
 4. On the page **Project settings** [go to the tab](https://mcs.mail.ru/app/project/keys/) **API access**.
 5. Click **Download openrc version 3**. A file `<project name>-openrc.sh` will be uploaded.

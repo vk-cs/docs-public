@@ -72,13 +72,12 @@ pip install python-<Название сервиса>client
 - `neutron` – API сетей;
 - `nova` – API облачных вычислений (ВМ) и расширений;
 - `octavia` — API балансировщика нагрузки;
-- `sahara` – API обработки больших данных;
-- `trove` – API баз данных.
+- `sahara` – API обработки больших данных.
 
 ## 3. Пройдите аутентификацию
 
 1. Перейдите в [личный кабинет](https://mcs.mail.ru/app/) VK Cloud.
-2. Убедитесь, что [включена](/ru/base/account/instructions/account-manage/security#vklyuchenie-2fa) двухфакторная аутентификация и [активирован](/ru/base/account/instructions/account-manage/security#dostup-po-api) доступ по API.
+2. Убедитесь, что [включена](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
 3. Выберите проект.
 4. На странице **Настроки проекта** [перейдите на вкладку](https://mcs.mail.ru/app/project/keys/) **Доступ по API**.
 5. Нажмите кнопку **Скачать openrc версии 3**. Будет загружен файл с именем `<название проекта>-openrc.sh`.

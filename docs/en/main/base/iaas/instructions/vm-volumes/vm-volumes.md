@@ -50,7 +50,7 @@ Creating HDD and SSD drives is available by default in all configurations. To cr
 
 <tabpanel>
 
-1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 2. Select in the [table](../../concepts/vm-concept#disks) the type of disk, determine its name in the API and the availability zone suitable for placement.
 
@@ -132,7 +132,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
 <tabpanel>
 
-1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 2. Output a list of disks:
 
@@ -212,7 +212,7 @@ Creating HDD and SSD drives is available by default in all configurations. To us
 
 <tabpanel>
 
-1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 2. Select in the [table](../../concepts/vm-concept#disks) a new disk type and define its name in the API.
 
@@ -282,7 +282,7 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 
 <tabpanel>
 
-1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 2. Run the appropriate command.
 
@@ -341,7 +341,7 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 
 <tabpanel>
 
-1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 2. Output a list of disks and copy the disk ID:
 
@@ -417,7 +417,7 @@ To disable the VM's main (root) disk, use the option [Replacing the root disk](#
 
 <tabpanel>
 
-1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 2. Output a list of disks and copy the disk ID:
 
@@ -496,7 +496,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#starting--stopping-
 
 <tabpanel>
 
-1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 2. Get [access token](/en/additionals/cases/case-keystone-token).
 3. View the list of virtual machines and copy the ID of the virtual machine whose main disk needs to be replaced:
@@ -543,7 +543,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#starting--stopping-
 
 <tabpanel>
 
-1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it (to both projects).
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to it (to both projects).
 
 2. Log in to the project you want to move the disk from.
 3. [Disconnect from VM](#disconnecting-a-disk-from-a-vm) the disk to be moved.
@@ -652,7 +652,7 @@ When you delete a disk, all its snapshots will be deleted.
 
 <tabpanel>
 
-1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 2. Output a list of disks using the `openstack volume list` command and check its status: if the disk is connected to the VM (`Status`: `in-use`), [disconnect it](#disconnecting-a-disk-from-a-vm).
 
@@ -717,7 +717,7 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 
 <tabpanel>
 
-1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 2. Output a list of disks:
 
@@ -794,7 +794,7 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 
 <tabpanel>
 
-1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 2. Run the appropriate command.
 
