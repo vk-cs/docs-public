@@ -15,7 +15,7 @@ The Windows Server 2016 CORE edition image is used as an example.
 1. Configure Hyper-V if this has not been done before.
 1. [Download and install](https://learn.microsoft.com/ru-ru/windows-hardware/get-started/adk-install) Windows ADK.
 1. Download the ISO image of the operating system for which you plan to migrate to VK Cloud. It is recommended to use the en-US version of the image.
-1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 ## 1. Prepare the OS installation WIM file
 

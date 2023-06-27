@@ -87,7 +87,7 @@ terraform init
 
 ## 2FA и доступ по API
 
-[Настройте двухфакторную аутентификацию и активируйте доступ по API](https://mcs.mail.ru/app/account/security).
+[Настройте](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию и [активируйте доступ по API](/ru/manage/tools-for-using-services/rest-api/enable-api).
 
 ## Запуск
 

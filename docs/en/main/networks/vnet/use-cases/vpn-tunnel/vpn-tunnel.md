@@ -6,9 +6,9 @@ Next, a VPN tunnel will be built to another network of the VK Cloud platform, an
 
 </info>
 
-## 1. Preparatory Steps
+## 1. Preparatory steps
 
-1. Make sure that OpenStack CLI [is installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 1. Create networks.
 

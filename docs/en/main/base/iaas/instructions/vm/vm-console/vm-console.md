@@ -30,7 +30,7 @@ Open the console in the VK Cloud personal account or use the address obtained th
 
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
 2. Go to **Cloud Computing → Virtual machines**.
 3. In the list of virtual machines, click on the name of the VM you need.
 4. On the VM page, go to the tab **Console**.
@@ -46,7 +46,7 @@ Use the VNC console on the tab or click **Open in new window**.
 
 <tabpanel>
 
-1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 2. Get a link to the VNC console page.
 
@@ -98,7 +98,7 @@ console=tty0 console=ttyS0,115200n8
 
 <tabpanel>
 
-Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 - Output all log entries:
 

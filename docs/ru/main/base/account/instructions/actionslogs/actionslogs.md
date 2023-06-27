@@ -34,7 +34,7 @@
 </tabpanel>
 <tabpanel>
 
-1. [Включите](/ru/base/account/instructions/account-manage/security#vklyuchenie-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
+1. [Включите](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
 1. [Получите](/ru/additionals/cases/case-keystone-token) токен доступа `X-Auth-Token`.
 1. [Узнайте](https://mcs.mail.ru/app/project/endpoints) адрес эндпоинта `Audit`.
 1. Выполните запрос:

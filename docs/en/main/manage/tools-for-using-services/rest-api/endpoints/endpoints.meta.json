@@ -1,0 +1,16 @@
+{
+  "title": "API endpoints",
+  "pageDescription": "List of VK Cloud API endpoints for the current region.",
+  "shortDescription": "List of VK Cloud API endpoints for the current region",
+  "metaTitle": "API endpoints",
+  "metaDescription": "List of VK Cloud API endpoints for the current region",
+  "sectionTitle": "API endpoints",
+  "markdown": "List of VK Cloud API endpoints for the current region.",
+  "icon": "",
+  "weight": 3,
+  "infobarItems": null,
+  "additionalUuids": [
+    "bd6955a8-8c76-45b7-a140-0503d8288a13"
+  ],
+  "uuid": "9e50195c-7ba1-4e88-9536-caa872a52df9"
+}

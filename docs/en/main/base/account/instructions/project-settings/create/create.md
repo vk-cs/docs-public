@@ -1,13 +1,42 @@
-Projects are organizational units in the cloud to which users can be assigned. A user can be a member of one or more projects.
+You can create your own [projects](../../../concepts/projects) to VK Cloud. By creating a project, you become its [owner](../../../concepts/rolesandpermissions).
 
-During registration, a user with the "Project Owner" role and the project itself are created. You can assign one or more projects to a user, and change or remove an assignment. You can learn more about roles and their capabilities [here](../../../concepts/rolesandpermissions/).
+<info>
 
-Additional projects can be created to separate resources, roles, or other architectural features of the tasks being implemented.
+Within the framework of [basic quotas](../../../concepts/quotasandlimits) one user can create no more than 5 projects. This number can be increased within the existing [limit](../../../concepts/quotasandlimits) upon request to [technical support](/en/contacts).
 
-You can create a project in your personal account in the header of the page. For this:
+</info>
 
-1. Click "+ Add New Project".
-2. Enter a name for the project. The name should consist only of lowercase Latin letters and numbers, from 4 to 60 characters long. It is allowed to use the characters ".", "_", "-" (except for the first and last characters).
-3. Click Save.
+To create a project:
 
-When creating a new project, the user receives the role of "Owner" regardless of his role in the current project.
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+
+1. In the header of your personal account, click on the name of the project.
+
+    A list of projects in which you are a member will open.
+
+1. At the end of the list, click **Create a new project**.
+
+    If your phone was not linked to your account, [link](../../../instructions/activation#linking-a-phone-number) it.
+
+1. Enter the project name.
+
+    Name requirements:
+
+   - length from 4 to 63 characters;
+   - only lowercase Latin letters, numbers and special characters are allowed:
+      - `_`, `-` – except for the last character;
+      - `.`, `+`, `@`, `#` — except for the first and last characters.
+
+1. Click the **Save** button.
+
+## Additional configuration of the project
+
+1. Activate the services: click the **Enable services** button in the section of any service.
+
+1. [Link](../../../instructions/activation#linking-a-bank-card) the payment card if it is not already linked.
+
+1. [Top up](/en/additionals/billing/operations/payment) the project balance to start using the services.
+
+    Projects created by users have [balance](/en/additionals/billing/start/balance) initially it is 0 rubles. [Welcome bonuses](/en/additionals/billing/concepts/bonus) are not awarded for such projects.
+
+   Learn more about the cost of services in the [article on pricing](../../../tariffication).
