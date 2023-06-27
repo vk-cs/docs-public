@@ -41,7 +41,7 @@ Learn more about networks and ports in the sections [Managing networks and subne
 </tabpanel>
 <tabpanel>
 
-Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 ### Connecting to an existing port
 
@@ -169,7 +169,7 @@ The network connection to the VM will be deleted, but the previously created por
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 2. Get the VM ID:
 
    ```bash

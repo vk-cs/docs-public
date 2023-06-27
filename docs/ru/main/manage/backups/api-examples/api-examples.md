@@ -4,8 +4,8 @@
 
 Чтобы выполнить приведенные примеры:
 
-1. Убедитесь, что [включена](/ru/base/account/instructions/account-manage/security#vklyuchenie-2fa) двухфакторная аутентификация и [активирован](/ru/base/account/instructions/account-manage/security#dostup-po-api) доступ по API.
-1. Убедитесь, что клиент OpenStack [установлен](/ru/base/account/project/cli/setup), и [пройдите аутентификацию](/ru/base/account/project/cli/authorization) в проекте.
+1. Убедитесь, что [включена](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 1. [Получите токен доступа](/ru/additionals/cases/case-keystone-token) `X-Subject-Token`.
 1. [Узнайте](https://mcs.mail.ru/app/project/endpoints) эндпоинт для сервиса Karboii.
 

@@ -1,13 +1,12 @@
 {
-  "title": "System Status",
+  "title": "Checking the system status",
   "pageDescription": "Description of the process of obtaining information about the operation of user resources in real time.",
-  "shortDescription": "Getting real-time information about the operation of user resources",
-  "metaTitle": "System Status",
-  "metaDescription": "Getting real-time information about the operation of user resources",
-  "sectionTitle": "System Status",
-  "markdown": "Description of the process of obtaining information about the operation of user resources in real time.",
+  "shortDescription": "Getting information about the operation of user resources in real time",
+  "metaTitle": "Checking the system status",
+  "metaDescription": "Getting information about the operation of user resources in real time.",
+  "sectionTitle": "Checking the system status",
   "icon": "",
-  "weight": 1,
+  "weight": 5,
   "infobarItems": null,
   "uuid": "973d9006-c8dd-4695-9f26-28a37fc3b227"
 }

@@ -74,9 +74,9 @@ The available fields may differ for different operating systems.
 
 1. Get ready to work with the OpenStack CLI:
 
-   1. [Enable](/en/base/account/instructions/account-manage/security#2faon) two-factor authentication.
-   2. [Activate](/en/base/account/instructions/account-manage/security#accessing-api) API access.
-   3. Make sure that OpenStack CLI is [installed](/en/base/account/cli/setup) and you can [authorize](/en/base/account/cli/authorization) to it.
+   1. [Enable](/en/base/account/instructions/account-manage/manage-2fa/) two-factor authentication.
+   2. [Activate](/en/manage/tools-for-using-services/rest-api/enable-api) API access.
+   3. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 2. Collect the data:
 

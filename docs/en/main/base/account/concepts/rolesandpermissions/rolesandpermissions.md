@@ -1,4 +1,4 @@
-When a user is invited to a [project](../projects), he or she is assigned with a role. The role defines the scope of [permissions](#roles-and-their-permissions) available to the user when working with the personal account and with the cloud services.
+When a user is invited to a [project](../projects), he or she is assigned with a role. The role defines the scope of [permissions](#roles-and-their-permissions--the-full-matrix) available to the user when working with the personal account and with the cloud services.
 
 The same user can be a member of several projects and have different roles in each of them. The same user can be assigned with several roles in one project; in this case, the permissions of all assigned roles are summarized.
 
@@ -103,13 +103,13 @@ For detailed information about the permissions of these roles, see section [Role
 
 ## Roles and their permissions: the full matrix
 
-Permissions are the privileges for viewing (**R** in the table below) or editing ( **RW** ) of certain objects. An editing permission includes the privilege of creating and deleting an object, and also includes the permission for viewing. A dash ( **—** ) indicates no access to a service or functionality.
+Permissions are the privileges for viewing (**R** in the table below) or editing (**RW**) of certain objects. An editing permission includes the privilege of creating and deleting an object, and also includes the permission for viewing. A dash (**—**) indicates no access to a service or functionality.
 
 ![](./assets/roles_and_permissions_en.png)
 
 ## Roles for the Containers service and their permissions
 
-The following user roles are intended for working with the Сontainers service:
+The following user roles are intended for working with the [Сontainers service](/en/base/k8s):
 
 - Kubernetes administrator,
 - Kubernetes operator,
