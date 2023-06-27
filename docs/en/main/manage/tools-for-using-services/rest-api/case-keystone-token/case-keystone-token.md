@@ -3,7 +3,7 @@ A Keystone token is required to access the API and resources of the VK Cloud pla
 To get an access token:
 
 1. Go to your VK Cloud [personal account](https://mcs.mail.ru/app/en/main).
-1. Make sure that [two-factor authentication](/en/base/account/instructions/account-manage/security#vklyuchenie-2fa) and [API access](/en/base/account/instructions/account-manage/security#dostup-po-api) are enabled.
+1. Make sure that [two-factor authentication](/en/base/account/instructions/account-manage/manage-2fa) and [API access](/en/manage/tools-for-using-services/rest-api/enable-api) are enabled.
 1. Select the project where you need to use the token.
 1. Get the project and user data for whom the token should be generated
 

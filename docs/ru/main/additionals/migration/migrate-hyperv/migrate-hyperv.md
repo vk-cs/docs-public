@@ -76,7 +76,7 @@
 
 Для загрузки образа виртуальной машины используйте OpenStack CLI, чтобы избежать возможных ошибок при обработке веб-интерфейсом файлов большого размера.
 
-1. Перед началом работы убедитесь, что OpenStack CLI [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 1. [Конвертируйте](/ru/base/iaas/use-cases/packer#1--konvertiruyte-obraz-v-format-raw) полученный в результате экспорта файл `.vhdx` в формат RAW.
 1. Загрузите файл в существующий проект VK Cloud:
 

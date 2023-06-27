@@ -4,7 +4,7 @@
 
 1. [Зарегистрируйтесь](/ru/additionals/start/get-started/account-registration#registraciya-v-lichnom-kabinete) в личном кабинете VK Cloud.
 1. [Подтвердите](/ru/additionals/start/get-started/account-registration#podtverzhdenie-uchetnoy-zapisi) учетную запись.
-1. (Опционально) [Настройте](/ru/base/account/instructions/account-manage/security#vklyuchenie-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
+1. (Опционально) [Настройте](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
 1. Перейдите в раздел **Магазин приложений**.
 1. Нажмите кнопку **Подробнее** под пунктом **Hystax Acura Migration**.
 1. Ознакомьтесь с поддерживаемыми платформами. Убедитесь, что в проекте достаточно квот.

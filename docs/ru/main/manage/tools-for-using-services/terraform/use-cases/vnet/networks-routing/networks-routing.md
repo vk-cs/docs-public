@@ -19,7 +19,7 @@
 
    Если вы хотите увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
 
-1. Убедитесь, что OpenStack CLI [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 1. [Установите Terraform и настройте провайдер](../../../quick-start), если этого еще не сделано.
 

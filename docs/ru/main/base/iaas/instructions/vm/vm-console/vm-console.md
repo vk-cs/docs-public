@@ -46,8 +46,7 @@ VNC-консоль — инструмент диагностики и управ
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) для его использования.
-
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 2. Получите ссылку на страницу с VNC-консолью.
 
    ```bash
@@ -98,7 +97,7 @@ console=tty0 console=ttyS0,115200n8
 
 <tabpanel>
 
-Убедитесь, что клиент OpenStack [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) для его использования.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 - Вывести все записи логов:
 
