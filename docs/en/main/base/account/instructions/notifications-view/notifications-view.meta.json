@@ -7,5 +7,6 @@
   "sectionTitle": "Viewing notifications",
   "icon": "",
   "weight": 5,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "c8bc0d3a-565e-4b5f-8557-37bd59e7fdbc"
 }
