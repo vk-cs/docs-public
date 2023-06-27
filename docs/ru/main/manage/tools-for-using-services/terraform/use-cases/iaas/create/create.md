@@ -12,7 +12,7 @@
 
     Поместите настройки провайдера в файл конфигурации Terraform `provider.tf`.
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/base/account/project/cli/setup) и [пройдите аутентификацию](/ru/base/account/project/cli/authorization) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 1. Создайте файл конфигурации Terraform `variables.tf` с переменными:
 

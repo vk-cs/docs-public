@@ -19,7 +19,7 @@ Example Infrastructure:
 
    If you want to increase quotas, contact [technical support](/en/contacts).
 
-1. Make sure that the OpenStack CLI is [installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) in it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 
 1. [Install Terraform and configure the provider](../../../quick-start), if this has not already been done.
 

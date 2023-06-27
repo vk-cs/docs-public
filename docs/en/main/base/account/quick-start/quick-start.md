@@ -22,7 +22,7 @@ After the account confirmation, services in the project are activated, and welco
 
 ## 2. Enable two-factor authentication for your account
 
-[Configure](/en/base/account/instructions/account-manage/security#enable-2fa) two-factor authentication (2FA) for your account.
+[Configure](/en/base/account/instructions/account-manage/manage-2fa/) two-factor authentication (2FA) for your account.
 
 2FA is required for working with the platform via API, OpenStack CLI, Terraform, and other tools.
 
@@ -44,8 +44,8 @@ Mandatory 2FA can be turned on and off at any moment. After the option is turned
 
 Before you begin:
 
-- [enable](/en/base/account/instructions/account-manage/security#enable-2fa) 2FA for account, if not enabled yet;
-- [activate](/en/base/account/instructions/account-manage/security#accessing-api) API access.
+- [enable](/en/base/account/instructions/account-manage/manage-2fa/) 2FA for account, if not enabled yet;
+- [activate](/en/manage/tools-for-using-services/rest-api/enable-api) API access.
 
 To connect via CLI:
 
@@ -56,6 +56,8 @@ To connect via CLI:
     ```bash
     openstack configuration show
     ```
+
+    Upon successful connection, the current configuration of the OpenStack client will be shown.
 
 ## What's next?
 

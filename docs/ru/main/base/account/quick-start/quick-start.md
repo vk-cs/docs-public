@@ -22,7 +22,7 @@
 
 ## 2. Настройте двухфакторную аутентификацию для аккаунта
 
-[Настройте](/ru/base/account/instructions/account-manage/security#vklyuchenie-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
+[Настройте](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
 
 2FA необходима, чтобы работать с платформой при помощи API, OpenStack CLI, Terraform и других инструментов.
 
@@ -38,8 +38,8 @@
 
 Для работы через OpenStack CLI необходимо:
 
-- [включить](/ru/base/account/instructions/account-manage/security#vklyuchenie-2fa) 2FA для вашего аккаунта, если она еще не включена;
-- [активировать](/ru/base/account/instructions/account-manage/security#dostup-po-api) доступ по API.
+- [включить](/ru/base/account/instructions/account-manage/manage-2fa) 2FA для вашего аккаунта, если она еще не включена;
+- [активировать](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
 
 Чтобы подключиться к проекту:
 

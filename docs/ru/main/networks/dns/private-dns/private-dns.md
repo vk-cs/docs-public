@@ -56,7 +56,7 @@
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что OpenStack CLI [установлен](../../../../base/account/project/cli/setup) и вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в нем.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 1. Получите список портов инстанса, выполнив команду:
 

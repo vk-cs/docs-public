@@ -17,7 +17,7 @@
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/base/account/project/cli/setup), и [пройдите аутентификацию](/ru/base/account/project/cli/authorization) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 1. Выполните команду:
 
    ```bash
@@ -38,7 +38,7 @@
 <tabs>
 <tablist>
 <tab>Личный кабинет</tab>
-<tab>CLI</tab>
+<tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
@@ -53,7 +53,7 @@
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/base/account/project/cli/setup), и [пройдите аутентификацию](/ru/base/account/project/cli/authorization) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 1. Выполните команду:
 
    ```bash
@@ -89,7 +89,7 @@
 <tabpanel>
 
 1. Воспользуйтесь [официальной документацией](https://github.com/gitlabhq/gitlabhq/blob/master/doc/user/ssh.md#generate-an-ssh-key-pair) Gitlab для локальной генерации ключевой пары.
-1. Убедитесь, что клиент OpenStack [установлен](/ru/base/account/project/cli/setup), и [пройдите аутентификацию](/ru/base/account/project/cli/authorization) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 1. Выполните команду:
 
    ```bash
@@ -129,7 +129,7 @@
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/base/account/project/cli/setup), и [пройдите аутентификацию](/ru/base/account/project/cli/authorization) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 1. Выполните команду:
 
    ```bash

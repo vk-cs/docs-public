@@ -118,8 +118,8 @@
 
 <tabs>
 <tablist>
-<tab>В личном кабинете</tab>
-<tab>Через OpenStack CLI (расширенный список)</tab>
+<tab>Личный кабинет</tab>
+<tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
@@ -133,14 +133,14 @@
 
 1. Нажмите на значок ![Информация](./assets/i-icon.svg "inline") справа от нужной квоты. Отобразится информация о том, какими объектами и в каких сервисах расходуется квота.
 
-Расширенный список квот для проекта можно получить через OpenStack CLI. Информация обо всех квотах и возможностях их увеличения в разделе [Квоты и Лимиты](../../../concepts/quotasandlimits).
+Расширенный список квот для проекта можно получить через OpenStack CLI. Информация обо всех квотах и возможностях их увеличения в разделе [Квоты и лимиты](../../../concepts/quotasandlimits).
 
 </tabpanel>
 <tabpanel>
 
 Чтобы получить расширенный список квот для проекта:
 
-1. Убедитесь, что клиент OpenStack [установлен](../../../cli/setup), и [пройдите аутентификацию](../../../cli/authorization) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 1. Введите в консоли команду:
 
     ```bash
@@ -194,7 +194,7 @@
     | per-volume-gigabytes       | -1                                               |
     | pools                      | 30                                               |
     | ports                      | 120                                              |
-    | project                    | b5b7ffd4ef0547e5b222f44555df8f67                 |
+    | project                    | b5b7ffd4ef0547e5b222f44555dfXXXX                 |
     | project_name               | mcsXXXXXXXXXX                                    |
     | properties                 | 128                                              |
     | ram                        | 10240                                            |
@@ -254,7 +254,7 @@
     ```
     </details>
 
-    Значение `-1` для квоты означает «не ограничено». О том, каким ресурсам соответствуют квоты из списка, читайте в разделе [Квоты и Лимиты](../../../concepts/quotasandlimits).
+    Значение `-1` для квоты означает «не ограничено». О том, каким ресурсам соответствуют квоты из списка, читайте в разделе [Квоты и лимиты](../../../concepts/quotasandlimits).
 
     Вы можете вывести квоты отдельно для компонентов `nova` и `cinder`:
 
@@ -279,7 +279,7 @@
     </tabpanel>
     </tabs>
 
-    Чтобы посмотреть квоты по другим компонентам OpenStack, [установите](../../../cli/packagessetup) соответствующие пакеты клиента OpenStack (`manila`, `neutron` и другие) и используйте команду, специфичную для пакета. Чтобы узнать синтаксис команды, установите соответствующий пакет и выполните `<component> help quota-show`, например, `manila help quota-show`.
+    Чтобы посмотреть квоты по другим компонентам OpenStack, [установите](/ru/manage/tools-for-using-services/openstack-cli#2--ustanovite-dopolnitelnye-pakety) соответствующие пакеты клиента OpenStack (`manila`, `neutron` и другие) и используйте команду, специфичную для пакета. Чтобы узнать синтаксис команды, установите соответствующий пакет и выполните `<component> help quota-show`, например, `manila help quota-show`.
 
 </tabpanel>
 </tabs>
@@ -305,7 +305,7 @@
 
 1. Обратитесь в [техническую поддержку](/ru/contacts/) от имени владельца проекта, сообщите в запросе [идентификатор](#poluchenie-identifikatora-proekta) (PID) и [регион](../../../concepts/regions) удаляемого проекта.
 
-1. (Для юридических лиц) Укажите, за какой период вам требуются [закрывающие документы](/ru/additionals/billing/operations/report#5).
+1. (Для юридических лиц) Укажите, за какой период вам требуются [закрывающие документы](/ru/additionals/billing/operations/report#74-5).
 
     С вами свяжутся для подтверждения удаления.
 

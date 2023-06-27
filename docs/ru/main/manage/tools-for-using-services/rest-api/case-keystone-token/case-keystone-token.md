@@ -3,7 +3,7 @@
 Чтобы получить токен:
 
 1. Перейдите в [личный кабинет](https://mcs.mail.ru/app/) VK Cloud.
-1. Убедитесь, что [включена](/ru/base/account/instructions/account-manage/security#vklyuchenie-2fa) двухфакторная аутентификация и [активирован](/ru/base/account/instructions/account-manage/security#dostup-po-api) доступ по API.
+1. Убедитесь, что [включена](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
 1. Выберите проект, в котором планируется использовать токен.
 1. Получите данные проекта и пользователя, для которого генерируется токен:
 
