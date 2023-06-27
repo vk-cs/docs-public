@@ -277,7 +277,7 @@ GET /v2/dns/<dns-uuid>/a/
 Пример ответа:
 
 ```curl
-curl -X GET "https://mcs.mail.ru/public-dns/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6/a" -H "X-Auth-Token: $OS_AUTH_TOKEN" -H "Content-Type: application/json"
+curl -X GET "https://mcs.mail.ru/public-dns/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6/a/" -H "X-Auth-Token: $OS_AUTH_TOKEN" -H "Content-Type: application/json"
 ```
 
 ### Ответ
