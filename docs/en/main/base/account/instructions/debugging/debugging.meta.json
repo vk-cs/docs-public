@@ -5,5 +5,6 @@
   "metaTitle": "Working with the actions log",
   "metaDescription": "Viewing and preparing records with the help of log entries for logging metrics, events and errors when contacting technical support.",
   "sectionTitle": "Working with the actions log",
-  "weight": 6
+  "weight": 6,
+  "uuid": "f88d725e-fdbc-419d-8fad-64ca5cbdd75b"
 }
