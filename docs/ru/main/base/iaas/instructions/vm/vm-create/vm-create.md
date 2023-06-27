@@ -74,9 +74,9 @@
 
 1. Подготовьтесь к работе с OpenStack CLI:
 
-   1. [Включите](/ru/base/account/instructions/account-manage/security#2faon) двухфакторную аутентификацию.
-   2. [Активируйте](/ru/base/account/instructions/account-manage/security#2faon) доступ по API для текущего пользователя.
-   3. Убедитесь, что OpenStack CLI [установлен](/ru/base/account/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем.
+   1. [Включите](/ru/base/account/instructions/account-manage/manage-2fa/) двухфакторную аутентификацию.
+   2. [Активируйте](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API для текущего пользователя.
+   3. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 2. Соберите данные:
 

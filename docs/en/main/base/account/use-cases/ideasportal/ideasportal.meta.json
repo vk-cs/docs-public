@@ -1,13 +1,12 @@
 {
-  "title": "Idea Portal",
-  "pageDescription": "Submit and view suggestions for improving the VK Cloud platform.",
-  "shortDescription": "Submit and view suggestions to improve the VK Cloud platform",
-  "metaTitle": "Ideas Portal",
-  "metaDescription": "Submit and view suggestions to improve the VK Cloud platform",
-  "sectionTitle": "Ideas Portal",
-  "markdown": "Submit and view suggestions to improve the VK Cloud platform.",
+  "title": "Creating an idea on the Ideas portal",
+  "pageDescription": "Sending and viewing suggestions for improving the VK Cloud platform.",
+  "shortDescription": "Sending and viewing suggestions for improving the VK Cloud platform",
+  "metaTitle": "Creating an idea on the Ideas portal",
+  "metaDescription": "Sending and viewing suggestions for improving the VK Cloud platform.",
+  "sectionTitle": "Creating an idea on the Ideas portal",
   "icon": "",
-  "weight": 3,
+  "weight": 8,
   "infobarItems": null,
   "uuid": "7153a6a3-19af-4a7d-906c-dd88aad569a8"
 }

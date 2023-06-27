@@ -1,88 +1,140 @@
-## Creating a key pair
+Key pairs are used to [connect to a VM via SSH](/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix). The key pair consists of public and private keys: the public key is placed on the VM, the private key is stored by the user.
 
-To connect to a virtual machine via SSH, you must use a key pair: the public key is hosted on the virtual machine, while the private key is stored by the user.
-
-You can create a new key pair during the instance creation step or in the Key Pairs section.
-
-To create a new key pair:
+## Viewing information about a key pair
 
 <tabs>
 <tablist>
-<tab>On the VK Cloud platform</tab>
-<tab>Linux/Mac</tab>
-<tab>Windows 10</tab>
+<tab>Personal account</tab>
+<tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to Account Settings → Key Pairs.
-2. Click "+ Generate Key".
-3. Enter a name for the key.
-4. Confirm creation.
-
-The key will automatically be saved to our computer.
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Click on the user's name in the header of the page.
+1. Select **Key pairs** from the drop-down list.
+1. Click on the name of the desired key pair. Information about it will be displayed.
 
 </tabpanel>
 <tabpanel>
 
-1. Open a terminal.
-2. Run the `ssh-keygen` command to generate a new key:
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Run the command:
 
-```bash
-ssh-keygen -t rsa -b 2048 -m pem -f "path to file"
-```
+   ```bash
+   openstack keypair show <key pair name>
+   ```
 
-3. Specify the name of the file where the keys will be saved and enter the password.
+<info>
 
-The public part of the key will be saved in the `<key_name>.pub` file. Paste this part of the key into the SSH key field when creating a new virtual machine.
+To display data only about the public key, add the `--public-key` option to the command.
 
-</tabpanel>
-<tabpanel>
-
-1. Open a terminal.
-2. Create a new key by running the command:
-
-```bash
-ssh-keygen -t rsa -b 2048 -m pem -f "path to file"
-```
-
-3. When you are prompted to select a file to save the key, press Enter. Or specify the required file.
-4. Enter a password.
+</info>
 
 </tabpanel>
 </tabs>
 
-## Import and export key
+## Creating a key pair
 
-### Import key
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+<tab>OpenStack CLI</tab>
+</tablist>
+<tabpanel>
 
-You can import SSH keys from your computer. To do this, in your personal account VK Cloud:
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Click on the user's name in the header of the page.
+1. Select **Key pairs** from the drop-down list.
+1. Click the **Create key** button.
+1. Enter the name of the key and click **Create key**.
 
-1. Go to Project Settings → Key Pairs.
-2. Click Import Key.
-3. Enter a name for the key.
-4. Attach the public key file.
-5. Enter the name of the public key. The key must be in the "ssh-rsa" format.
-6. Click Import Key.
+   The private key will be downloaded to the local device.
 
-### Export key
+</tabpanel>
+<tabpanel>
 
-During the creation of the key pair, the key is automatically exported to our computer.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Run the command:
 
-## Key pair recovery
+   ```bash
+   openstack keypair create 
+   ```
 
-If the key pair has been lost, then with a password, access to the instance can be restored.
+1. Save the private key that appears on the screen to a file with the extension `.pem`.
 
-The private key cannot be recovered. You need to recreate the key pair and upload the public key to the instance.
+</tabpanel>
+</tabs>
 
-To restore access, you will need to add a new key pair using the CLI and VNC console:
+## Importing an existing key
 
-1. Create a new key pair in the project using the Openstack CLI and store it locally: `openstack keypair create --private-key <filename_and_location> <keyname>`
-2. Copy the contents of the public key to a local file: `openstack keypair show --public-key >> <path_to_file>`
-3. Upload the created file to any external resource or cloud.
-4. Save the file to the virtual machine with the command: `wget <your_file>`
-5. Copy the contents of the new key to the authorized_keys file: `cat <your_file> >> ~/.ssh/authorized_keys`
-6. Check access to the instance with a new key pair: `ssh -i <path_to_key> login@IP_address`
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+<tab>OpenStack CLI</tab>
+</tablist>
+<tabpanel>
 
-## Delete key pair
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Click on the user's name in the header of the page.
+1. Select **Key pairs** from the drop-down list.
+1. Click the **Import key** button.
+1. In the window that opens, fill in the fields:
 
-To delete a key pair, go to Project Settings → Key Pairs. In the key pair row, click "Delete". Or select the necessary key pairs with checkboxes and click "Delete" at the top of the panel. Confirm deletion.
+   - **Name of key**: specify the name of the created key pair.
+   - **Public key**: insert the contents of the `ssh-rsa` public key.
+
+1. Click the **Import key** button.
+
+</tabpanel>
+<tabpanel>
+
+1. Use the Gitlab [official documentation](https://github.com/gitlabhq/gitlabhq/blob/master/doc/user/ssh.md#generate-an-ssh-key-pair) for local generation of a key pair.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Run the command:
+
+   ```bash
+   openstack keypair create --public-key <path to the public key file> <key pair name>
+   ```
+
+</tabpanel>
+</tabs>
+
+## Recovery of the key pair
+
+<err>
+
+The private key cannot be restored! Create a new key pair and upload the public key to the VM.
+
+</err>
+
+To restore access to a Linux virtual machine via SSH using a key pair, use the instructions from the article [VM management](/en/base/iaas/instructions/vm/vm-manage#restoring-vm-access-by-key).
+
+## Deleting a key pair
+
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+<tab>OpenStack CLI</tab>
+</tablist>
+<tabpanel>
+
+This is a group operation: if necessary, you can delete several key pairs at once by selecting them using the checkboxes.
+
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Click on the user's name in the header of the page.
+1. Select **Key pairs** from the drop-down list.
+1. Click on the icon ![Trash](./assets/trash-icon.svg "inline") in the line with the object being deleted.
+1. Confirm the deletion.
+
+</tabpanel>
+<tabpanel>
+
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Run the command:
+
+   ```bash
+   openstack keypair delete <key pair name>
+   ```
+
+</tabpanel>
+</tabs>

@@ -1,3 +1,3 @@
-Tariffication is based on the "pay as you go" principle: you are charged only for the resources you consume to the nearest minute. Additional services (OS licenses, AI API, applications) are paid separately. The use of a personal account is not charged.
+The use of a personal account is not charged.
 
-Prices for services are given in [price list](https://mcs.mail.ru/pricelist) and in [project settings](https://mcs.mail.ru/app/project/prices). To calculate the cost of the selected service configuration, use the [calculator](https://mcs.mail.ru/en/pricing/). Read about the tools related to payment for services in the [Billing](/en/additionals/billing) section.
+Prices for services are given in [price list](https://mcs.mail.ru/pricelist) and in [project settings](https://mcs.mail.ru/app/project/prices). To calculate the cost of the selected service configuration, use the [calculator](https://mcs.mail.ru/en/pricing/). To learn how to pay for the Platform's services, read the [Billing](/en/additionals/billing) section.

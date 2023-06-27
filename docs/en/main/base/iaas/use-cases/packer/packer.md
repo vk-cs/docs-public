@@ -10,7 +10,7 @@ Packer allows you to create virtual machine images with the necessary parameters
 
    </info>
 
-1. Make sure that the OpenStack CLI [is installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
 1. [Load the image](http://ftp.altlinux.org/pub/distributions/ALTLinux/p9/images/cloud/x86_64/alt-p9-cloud-x86_64.qcow2) OS Alt Linux P9 to your computer (file `alt-p9-cloud-x86_64.qcow2`).
 
 ## 1. Convert image to RAW format
