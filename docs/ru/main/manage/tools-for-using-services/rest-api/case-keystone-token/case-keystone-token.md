@@ -1,155 +1,153 @@
-Токен Keystone нужен для доступа к API и ресурсам VK Cloud.
+Токен Keystone необходим для работы с некоторыми сервисами и компонентами VK Cloud через их API — например, с сервисом виртуальных сетей (Neutron) и подсистемой резервного копирования (Karboii) в сервисе Облачные вычисления.
 
-Чтобы получить токен:
+## Подготовительные шаги
 
 1. Перейдите в [личный кабинет](https://mcs.mail.ru/app/) VK Cloud.
 1. Убедитесь, что [включена](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
-1. Выберите проект, в котором планируется использовать токен.
-1. Получите данные проекта и пользователя, для которого генерируется токен:
+1. В шапке страницы личного кабинета выберите проект, в котором планируете использовать токен.
 
-   1. В личном кабинете перейдите в раздел [Настройки проекта](https://mcs.mail.ru/app/project/keys/).
-   1. Нажмите кнопку **Скачать openrc версии 3**. Будет загружен файл вида `<название проекта>-openrc.sh`.
-
-1. Загрузите полученные данные в переменные окружения.
-
-   <tabs>
-   <tablist>
-   <tab>Linux</tab>
-   <tab>Windows</tab>
-   </tablist>
-   <tabpanel>
-
-   1. Запустите скачанный файл:
-
-      ```bash
-      source <название проекта>-openrc.sh
-      ```
-
-   1. Введите пароль пользователя проекта.
-
-   </tabpanel>
-   <tabpanel>
-
-   1. Откройте скачанный файл в текстовом редакторе и скопируйте значения параметров из него.
-   2. Загрузите скопированные параметры в переменные окружения. Также загрузите переменную `OS_PASSWORD`.
-
-      ```powershell
-      set OS_PROJECT_ID=<OS_PROJECT_ID>
-      set OS_REGION_NAME=<OS_REGION_NAME>
-      set OS_USER_DOMAIN_NAME=<OS_USER_DOMAIN_NAME>
-      set OS_USERNAME=<OS_USERNAME>
-      set OS_PASSWORD=<пароль пользователя>
-      ```
-
-   </tabpanel>
-   </tabs>
-
-1. Получите токен одним из способов.
-
-   - С помощью OpenStack CLI:
-
-      1. Убедитесь, что у вас [установлен](/ru/base/account/project/cli/setup) клиент OpenStack.
-      2. Выполните команду:
-
-         ```
-         openstack token issue -c id -f value
-         ```
-
-         Значение токена будет выведено в консоль.
-
-   - Используйте [утилиту](https://github.com/curl/curl/blob/master/docs/INSTALL.md) cURL:
-
-      <tabs>
-      <tablist>
-      <tab>Linux</tab>
-      <tab>Windows</tab>
-      </tablist>
-      <tabpanel>
-
-      ```bash
-      curl -X POST \
-      -H "Content-Type: application/json" \
-      -d '{
-          "auth": {
-              "identity": {
-                  "methods": [
-                      "password"
-                  ],
-                  "password": {
-                      "user": {
-                          "domain": {
-                              "id": "'$OS_USER_DOMAIN_NAME'"
-                          },
-                          "name": "'$OS_USERNAME'",
-                          "password": "'$OS_PASSWORD'"
-                      }
-                  }
-              },
-              "scope": {
-                  "project": {
-                      "id": "'$OS_PROJECT_ID'",
-                      "region": "'$OS_REGION_NAME'"
-                  }
-              }
-          }
-      }' \
-      -i "https://infra.mail.ru:35357/v3/auth/tokens"
-      ```
-
-      </tabpanel>
-      <tabpanel>
-
-      ```bash
-      curl -X POST ^
-      -H "Content-Type: application/json" ^
-      -d "{\"auth\": {\"identity\": {\"methods\": [\"password\"], \"password\": {\"user\": {\"domain\": {\"id\": \"%OS_USER_DOMAIN_NAME%\"}, \"name\": \"%OS_USERNAME%\",\"password\": \"%OS_PASSWORD%\"}}}, \"scope\": {\"project\": {\"id\": \"%OS_PROJECT_ID%\"}}}}" ^
-      -i "https://infra.mail.ru:35357/v3/auth/tokens"
-      ```
-
-      </tabpanel>
-      </tabs>
-
-      Значение токена будет выведено в параметре `X-Subject-Token`.
-
-      <details>
-      <summary markdown="span">Пример ответа на запрос для получения токена</summary>
-
-      ```bash
-      HTTP/1.1 201 Created
-
-      date: Wed, 18 Jan 2023 15:02:04 GMT
-      server: Apache/2.4.6 (CentOS) mod_wsgi/3.4 Python/2.7.5
-
-      X-Subject-Token: XXXXXXXXXnsH_iUvos_UFSveInsHgPAKnBefJn_TghGVIBjDEDo4vLYU9xWnDrVIBp3el87i5vtrknja14Gcgc9uTgXdRyr3hm8isz8iAPp5FEq27-WLZQAwfhCfGB4sNdlpAjWYZrNYmUbglgqzoTqqwQXXXXXXX
-
-      vary: X-Auth-Token
-      x-openstack-request-id: req-7de8bc92-0000-0000-0000-906e6e63f956
-      content-length: 322
-      content-type: application/json
-      set-cookie: PROXYSRV_ADMIN=acadfd0285XXXXXX|XXXXX|XXXXX; path=/; Secure
-      connection: close
-
-      {"token": {"issued_at": "2023-01-18T15:02:04.000000Z", "audit_ids": ["XXXX-iu5TeiUOU66VNO_-g"], "methods": ["password"], "expires_at": "2023-01-18T16:02:04.000000Z", "user": {"password_expires_at": null, "domain": {"id": "users", "name": "users"}, "id": "00000000000000XXX", "name": "example@example.ex"}}}
-      ```
-
-      </details>
+## Генерация токена
 
 <warn>
 
-Полученный токен действителен в течение одного часа.
+Сгенерированный токен действителен в течение одного часа. Все выпущенные токены остаются действительными до конца их срока жизни.
 
 </warn>
+
+Получите токен одним из доступных способов:
+
+<tabs>
+<tablist>
+<tab>Через личный кабинет</tab>
+<tab>С помощью OpenStack CLI</tab>
+<tab>С помощью утилиты cURL</tab>
+</tablist>
+<tabpanel>
+
+1. В разделе [Настройки проекта](https://mcs.mail.ru/app/project/keys/) перейдите на вкладку **Доступ по API**.
+
+    При открытии страницы будет автоматически сгенерирован новый токен. Если страница остается открытой, раз в час генерируется новый токен.
+
+1. В нижней части страницы найдите параметр **Токен для доступа к API** и нажмите на значок ![Копировать](./assets/copy-icon.svg "inline") рядом с ним. Токен будет скопирован.
+
+    Срок действия токена отображается при наведении мыши на значок ![Копировать](./assets/copy-icon.svg "inline"). Если токен скоро просрочится, воспользуйтесь кнопкой **Перевыпустить**.
+
+</tabpanel>
+<tabpanel>
+
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack) и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Выполните команду:
+
+    ```
+    openstack token issue -c id -f value
+    ```
+
+    Значение токена будет выведено в консоль.
+
+</tabpanel>
+<tabpanel>
+
+1. Установите утилиту [cURL](https://github.com/curl/curl/blob/master/docs/INSTALL.md), если она еще не установлена.
+1. [Пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте. Для работы с клиентом OpenStack и с утилитой cURL процедура аутентификации одинакова.
+1. Выполните команду для вашей операционной системы:
+
+    <tabs>
+    <tablist>
+    <tab>Linux</tab>
+    <tab>Windows</tab>
+    </tablist>
+    <tabpanel>
+
+    ```bash
+    curl -X POST \
+    -H "Content-Type: application/json" \
+    -d '{
+        "auth": {
+            "identity": {
+                "methods": [
+                    "password"
+                ],
+                "password": {
+                    "user": {
+                        "domain": {
+                            "id": "'$OS_USER_DOMAIN_NAME'"
+                        },
+                        "name": "'$OS_USERNAME'",
+                        "password": "'$OS_PASSWORD'"
+                    }
+                }
+            },
+            "scope": {
+                "project": {
+                    "id": "'$OS_PROJECT_ID'",
+                    "region": "'$OS_REGION_NAME'"
+                }
+            }
+        }
+    }' \
+    -i "https://infra.mail.ru:35357/v3/auth/tokens" | grep '^X-Subject-Token'| cut -d ':' -f 1,2
+    ```
+    </tabpanel>
+    <tabpanel>
+
+    ```bash
+    curl -X POST ^
+    -H "Content-Type: application/json" ^
+    -d "{\"auth\": {\"identity\": {\"methods\": [\"password\"], \"password\": {\"user\": {\"domain\": {\"id\": \"%OS_USER_DOMAIN_NAME%\"}, \"name\": \"%OS_USERNAME%\",\"password\": \"%OS_PASSWORD%\"}}}, \"scope\": {\"project\": {\"id\": \"%OS_PROJECT_ID%\"}}}}" ^
+    -i "https://infra.mail.ru:35357/v3/auth/tokens" | findstr /B X-Subject-Token | findstr X-Subject-Token
+    ```
+    </tabpanel>
+    </tabs>
+
+Значение токена будет выведено в параметре `X-Subject-Token`.
+
+<details>
+<summary markdown="span">Примеры ответов на запрос получения токена</summary>
+
+<tabs>
+<tablist>
+<tab>Linux (CentOS)</tab>
+<tab>Windows (Windows 10)</tab>
+</tablist>
+<tabpanel>
+
+```bash
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 27038  100 26470  100   568  99259   2129 --:--:-- --:--:-- --:--:-- 99138
+X-Subject-Token: gAAAAABkirBWYerPg-2A_W0blpcg_qcmTck9K3cC1zf4JUnP3lnpq-bf3W_AXbMx8wDd7PNO704lf00QX3--BRvFB-UcI5IQq5GtVNVzkHoqem4Ocg_-fmRgCdtSSrKvw_KqjpxoksOi2EocauqogKJebeYgAoheSMEnrSz4G70OrTHwUmhI4z0
+```
+</tabpanel>
+<tabpanel>
+
+```bash
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   230    0     0  100   230      0    920 --:--:-- --:--:-- --:--:--   923FINDSTR: Слишком длинная строка 12.
+FINDSTR: Слишком длинная строка 12.
+100 26700  100 26470  100   230  49114    426 --:--:-- --:--:-- --:--:-- 49628
+FINDSTR: Слишком длинная строка 12.
+X-Subject-Token: gAAAAABkirQja1Lgr9psuyf6fC6e3Sy5WMYubpmwMNPXuT6APQkf-BPRRAySTBGP2h9Iq2U533pi13h_ZIHa0viga7HxmSsEeCZ_Fq1CEy0m75lmpDtZYd8SAazmjqbV5Kf4ygGnp77kPadkL0hAgC0b7vKjgNGoZ9bLZDBQmlEivNMlptyZKcQ
+```
+
+</tabpanel>
+</tabs>
+
+</details>
+
+</tabpanel>
+</tabs>
 
 ## Пример использования токена
 
 Задача: получить список сетей через REST API (сервис Neutron).
 
-1. В личном кабинете [посмотрите](https://mcs.mail.ru/app/project/endpoints) эндпоинт, по которому выполняется запрос к сервису Neutron. В данном примере это `https://infra.mail.ru:9696`.
-1. Получите токен и скопируйте его значение.
+1. В личном кабинете [посмотрите](https://mcs.mail.ru/app/project/endpoints) эндпоинт, по которому выполняется запрос к сервису Neutron. В этом примере: `https://infra.mail.ru:9696`.
+1. [Получите токен](#generaciya-tokena): сгенерируйте новый токен или скопируйте значение действующего токена.
 1. Выполните команду с помощью утилиты cURL:
 
    ```bash
-   curl https://infra.mail.ru:9696/v2.0/networks -H "Accept: application/json" -H "X-Auth-Token: <токен, сгенерированный на предыдущем шаге>"
+   curl https://infra.mail.ru:9696/v2.0/networks -H "Accept: application/json" -H "X-Auth-Token: <токен, полученный на предыдущем шаге>"
    ```
 
    <details>
