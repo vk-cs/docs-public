@@ -4,10 +4,13 @@
   "shortDescription": "How to connect to the database via SSH or SDK",
   "metaTitle": "Connecting to the database",
   "metaDescription": "Connecting to databases via SSH or using the SDK.",
-  "sectionTitle": "onnecting to the database",
+  "sectionTitle": "Connecting to the database",
   "markdown": "Connecting to databases via SSH or using the SDK.",
   "icon": "",
   "infobarItems": null,
   "weight": 2,
-  "uuid": "0429ed53-28a0-4f82-baa9-6170e547a992"
+  "uuid": "0429ed53-28a0-4f82-baa9-6170e547a992",
+  "additionalUuids": [
+    "d2ca299d-f20e-4618-9fbc-3fb3bb7ad386"
+  ]
 }
