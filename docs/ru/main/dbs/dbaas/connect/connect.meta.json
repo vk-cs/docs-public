@@ -1,13 +1,15 @@
 {
   "title": "Подключение к БД",
-  "pageDescription": "Подключение к базам данных по SSH или с помощью SDK.",
-  "shortDescription": "Как подключиться к БД по SSH или с помощью SDK",
+  "pageDescription": "Подключение к базам данных VK Cloud с помощью SDK.",
+  "shortDescription": "Как подключиться к БД с помощью SDK",
   "metaTitle": "Подключение к БД",
-  "metaDescription": "Подключение к базам данных по SSH или с помощью SDK.",
+  "metaDescription": "Подключение к базам данных VK Cloud с помощью SDK.",
   "sectionTitle": "Подключение к БД",
-  "markdown": "Подключение к базам данных по SSH или с помощью SDK.",
   "icon": "",
   "infobarItems": null,
-  "weight": 2,
-  "uuid": "8b46516f-0525-45e9-a7e5-22cbd740be41"
+  "weight": 3,
+  "uuid": "8b46516f-0525-45e9-a7e5-22cbd740be41",
+  "additionalUuids": [
+    "18b34048-85c5-4386-915c-893adc5977ad"
+  ]
 }
