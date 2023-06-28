@@ -1,4 +1,4 @@
-The VK Cloud platform allows you to create virtual machines with pre-installed licensed copies of Microsoft Windows Server operating systems, as well as use additional Microsoft software products — the full list is available in the [price list](https://mcs.mail.ru/pricelist). If you have not found a suitable product, contact [technical support](/en/contacts).
+The VK Cloud platform allows you to create virtual machines with pre-installed licensed copies of Microsoft Windows Server operating systems, as well as use additional Microsoft software products — the full list is available in the [price list](https://mcs.mail.ru/pricelist).
 
 <warn>
 
