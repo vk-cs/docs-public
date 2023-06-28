@@ -5,7 +5,6 @@ The data storage system on the VK Cloud platform is organized using network driv
 Creating HDD and SSD drives is available by default in all configurations. To create LL NVME discs [contact technical support](/en/contacts) and request access to [high-performance configurations](../../concepts/vm-concept#cpu-and-ram) and disks. Learn more about [disk types](../../concepts/vm-concept#disks) — to the article [VK Cloud Servers overview](../../concepts/vm-concept/).
 
 <tabs>
-
 <tablist>
 <tab>Personal account</tab>
 <tab>OpenStack CLI</tab>
@@ -46,6 +45,8 @@ Creating HDD and SSD drives is available by default in all configurations. To cr
 
    - **Connect disk to instance**: if you need to connect a disk to a VM immediately after creation, enable this option and select the VM you need in the field **Choose instance**.
 
+5. Click the **Create disk** button.
+
 </tabpanel>
 
 <tabpanel>
@@ -76,7 +77,6 @@ Creating HDD and SSD drives is available by default in all configurations. To cr
 
    - `--image <image ID>` — ID of the image from which the disk will be created;
    - `--snapshot <snapshot ID>` — ID of the snapshot from which the disk will be created;
-   - `--source <disk ID>` — ID of the disk on which the disk will be created (disk cloning);
    - `--description <description>` — custom disk description;
    - `--property <key=value>` — custom disk properties;
    - `--bootable` — create a boot disk.
@@ -146,7 +146,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
 5. Increase the disk by specifying the new size in gigabytes.
 
-   - If the disk is disconnected from the VM(`Status`: `available`):
+   - If the disk is disconnected from the VM (`Status`: `available`):
 
       ```bash
          openstack volume set --size <new size> <disk ID>
@@ -159,6 +159,72 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
       ```
 
 6. [Reboot](../vm/vm-manage#starting--stopping--reboot-the-vm) the VM.
+
+</tabpanel>
+</tabs>
+
+## Cloning disk
+
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+<tab>OpenStack CLI</tab>
+</tablist>
+<tabpanel>
+
+1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+2. Open the page with the desired list of disks.
+
+   - All disks: go to **Cloud Computing** → **Disks**.
+   - Disks of a specific virtual machine:
+
+      1. Go to **Cloud Computing** → **Virtual machines**.
+      2. In the list of virtual machines, click on the name of the VM whose disk size you want to increase.
+      3. On the VM page, go to the **Disks** tab.
+
+3. Use one of the methods to open the disk cloning window.
+
+   - Via the disk context menu:
+
+      1. Expand the disk context menu.
+      2. Click the **Clone disk**.
+
+   - On the disk page:
+
+      1. Click on the name of the disk whose size you want to change.
+      2. On the disk page, go to the tab **General information**.
+      3. Above the table with the disk parameters, click the **More** and choose **Clone disk** option.
+
+4. On the page that opens, specify the parameters of the new disk.
+5. Click the **Create disk** button.
+
+</tabpanel>
+<tabpanel>
+
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. [Define](../../concepts/vm-concept#disks-types):
+
+   - the desired type of disk;
+   - its name in the API;
+   - an accessibility zone suitable for accommodation.
+
+1. View the available disk types and copy the type ID corresponding to the name in the API.
+
+   ```bash
+   openstack volume type list
+   ```
+
+1. View the availability zones and copy the name of the desired zone:
+
+   ```bash
+   openstack availability zone list --volume
+   ```
+
+1. Clone a disk based on an existing one:
+
+   ```bash
+   openstack volume create --type <type disk ID> --size <disk size> --availability-zone <availability zone> --source <disk ID> <disk name>
+   ```
 
 </tabpanel>
 </tabs>
@@ -461,7 +527,8 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#starting--stopping-
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
 2. [Disconnect from VM](#disconnecting-a-disk-from-a-vm) the disk that will be used to replace the main one.
-3. Open the page with the desired list of disks.
+3. [Clone](#cloning-disk) the target disk if necessary.
+4. Open the page with the desired list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
 
@@ -471,7 +538,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#starting--stopping-
       2. In the list of virtual machines, click on the name of the VM whose main disk you want to replace.
       3. On the VM page, go to the **Disks** tab.
 
-4. Use one of the methods to open the disk replacement window.
+5. Use one of the methods to open the disk replacement window.
 
    - Via the disk context menu:
 
@@ -484,7 +551,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#starting--stopping-
       2. On the disk page, go to the **General Information** tab.
       3. Above the list of disks, click **More** and select **Replace root disk**.
 
-5. In the window that opens, select **New root disk** and click **Replace**.
+6. In the window that opens, select **New root disk** and click **Replace**.
 
    <warn>
 
