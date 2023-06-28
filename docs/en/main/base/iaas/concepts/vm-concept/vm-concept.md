@@ -83,6 +83,18 @@ Network drives can be partitioned and formatted in the same way as regular local
 
 Low Latency NVME local disks are available in high-performance configurations. To create such a configuration [contact technical support](/en/contacts).
 
+After creating a disk, you can change its size, type, and availability zone. The disk can be renamed, connected or disconnected from the VM, cloned or deleted. The boot disk can be made non-bootable and vice versa.
+
+Multiple disks can be attached to a VM, but at least one of them must be bootable and contain the installed operating system.
+
+<info>
+
+If the VM and disk are located in different availability zones, the disk access speed may be reduced.
+
+</info>
+
+### Disks types
+
 The VK Cloud platform supports various types of disks:
 
 | Disk Type | Name in the API | Availability zones | Description |
@@ -116,16 +128,6 @@ Unavailable disk types:
 | Network SSD with geo-replication | ssd    | nova    |
 
 </details>
-
-After creating a disk, you can change its size, type, and availability zone. The disk can be renamed, connected or disconnected from the VM, cloned or deleted. The boot disk can be made non-bootable and vice versa.
-
-Multiple disks can be attached to a VM, but at least one of them must be bootable and contain the installed operating system.
-
-<info>
-
-If the VM and disk are located in different availability zones, the disk access speed may be reduced.
-
-</info>
 
 ## Availability zone
 

@@ -5,7 +5,6 @@
 Создание HDD и SSD-дисков доступно по умолчанию во всех конфигурациях. Для создания дисков LL NVME [обратитесь в техподдержку](/ru/contacts) и запросите доступ к [высокопроизводительным конфигурациям](../../concepts/vm-concept#cpu-i-ram) и дискам. Подробнее о [типах дисков](../../concepts/vm-concept#diski) — в статье [Обзор сервиса VK Cloud Servers](../../concepts/vm-concept).
 
 <tabs>
-
 <tablist>
 <tab>Личный кабинет</tab>
 <tab>OpenStack CLI</tab>
@@ -46,6 +45,8 @@
 
    - **Подключить диск к инстансу**: если сразу после создания необходимо подключить диск к виртуальной машине, включите эту опцию и выберите нужную ВМ в поле **Выберите инстанс**.
 
+5. Нажмите кнопку **Создать диск**.
+
 </tabpanel>
 
 <tabpanel>
@@ -76,7 +77,6 @@
 
    - `--image <ID образа>` — ID образа, из которого будет создан диск;
    - `--snapshot <ID снимка>` — ID снимка, из которого будет создан диск;
-   - `--source <ID диска>` — ID диска, на основе которого будет создан диск (клонирование диска);
    - `--description <Описание>` — произвольное описание диска;
    - `--property <Ключ=Значение>` — пользовательские свойства диска;
    - `--bootable` — создать загрузочный диск.
@@ -132,7 +132,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что OpenStack [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 2. Выведите список дисков:
 
@@ -159,6 +159,72 @@
       ```
 
 6. [Перезагрузите](../vm/vm-manage#zapusk--ostanovka--perezagruzka-vm) ВМ.
+
+</tabpanel>
+</tabs>
+
+## Клонирование диска
+
+<tabs>
+<tablist>
+<tab>Личный кабинет</tab>
+<tab>OpenStack CLI</tab>
+</tablist>
+<tabpanel>
+
+1. Перейдите в [личный кабинет](https://mcs.mail.ru/app/) VK Cloud.
+2. Откройте страницу с нужным списком дисков.
+
+   - Все диски: перейдите в раздел **Облачные вычисления** → **Диски**.
+   - Диски определенной виртуальной машины:
+
+      1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
+      2. В списке виртуальных машин нажмите на имя ВМ, для которой нужно клонировать диск.
+      3. На странице ВМ перейдите на вкладку **Диски**.
+
+3. Используйте один из способов, чтобы открыть окно клонирования диска.
+
+   - Через контекстное меню диска:
+
+      1. Раскройте контекстное меню нужного диска.
+      2. Нажмите **Клонировать диск**.
+
+   - На странице диска:
+
+      1. Нажмите на имя диска, который нужно клонировать.
+      2. На странице диска перейдите на вкладку **Общая информация**.
+      3. Над таблицей с параметрами диска нажмите **Еще** и выберите опцию **Клонировать диск**.
+
+4. На открывшейся странице укажите параметры нового диска.
+5. Нажмите кнопку **Создать диск**.
+
+</tabpanel>
+<tabpanel>
+
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. [Определите](../../concepts/vm-concept#tipy-diskov):
+
+   - нужный тип диска;
+   - его название в API;
+   - зону доступности, подходящую для размещения.
+
+1. Просмотрите доступные типы дисков и скопируйте ID типа, соответствующий названию в API.
+
+   ```bash
+   openstack volume type list
+   ```
+
+1. Просмотрите зоны доступности и скопируйте имя нужной зоны:
+
+   ```bash
+   openstack availability zone list --volume
+   ```
+
+1. Клонируйте диск на основе существующего:
+
+   ```bash
+   openstack volume create --type <ID типа диска> --size <Размер> --availability-zone <Зона доступности диска> --source <ID диска> <Название диска>
+   ```
 
 </tabpanel>
 </tabs>
@@ -282,7 +348,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что OpenStack [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 2. Выполните нужную команду.
 
@@ -417,7 +483,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что OpenStack [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 2. Выведите список дисков и скопируйте ID диска:
 
@@ -461,7 +527,8 @@
 
 1. Перейдите в [личный кабинет](https://mcs.mail.ru/app/) VK Cloud.
 2. [Отключите от ВМ](#otklyuchenie-diska-ot-vm) диск, который будет использован для замены основного.
-3. Откройте страницу с нужным списком дисков.
+3. При необходимости [клонируйте](#klonirovanie-diska) целевой диск.
+4. Откройте страницу с нужным списком дисков.
 
    - Все диски: перейдите в раздел **Облачные вычисления → Диски**.
 
@@ -471,7 +538,7 @@
       2. В списке виртуальных машин нажмите на имя ВМ, основной диск которой нужно заменить.
       3. На странице ВМ перейдите на вкладку **Диски**.
 
-4. Используйте один из способов, чтобы открыть окно замены диска.
+5. Используйте один из способов, чтобы открыть окно замены диска.
 
    - Через контекстное меню диска:
 
@@ -484,7 +551,7 @@
       2. На странице диска перейдите на вкладку **Общая информация**.
       3. Над списком дисков нажмите кнопку **Еще** и выберите **Заменить root-диск**.
 
-5. В открывшемся окне выберите **Новый root-диск** и нажмите кнопку **Заменить**.
+6. В открывшемся окне выберите **Новый root-диск** и нажмите кнопку **Заменить**.
 
    <warn>
 
@@ -543,7 +610,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что OpenStack [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем (в обоих проектах).
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 2. Авторизуйтесь в проекте, из которого нужно переместить диск.
 3. [Отключите от ВМ](#otklyuchenie-diska-ot-vm) диск, который нужно переместить.
@@ -717,7 +784,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что OpenStack [установлен](/ru/base/account/project/cli/setup) и вы можете [авторизоваться](/ru/base/account/project/cli/authorization) в нем.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 
 2. Выведите список дисков:
 
