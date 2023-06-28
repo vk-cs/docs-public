@@ -6,8 +6,6 @@ A licensed copy of the Windows Server operating system is preinstalled in the Wi
 
 The list of standard licenses provided is limited, you can see the list available in the [price list](https://mcs.mail.ru/pricelist).
 
-If necessary, you can get a license for a software product that is not on this list — contact [technical support](/en/contacts) with information about the product and the period of use.
-
 ## What types of licensing are there?
 
 Microsoft provides several licensing models that allow you to make the most optimal use of your budget:
