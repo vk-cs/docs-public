@@ -1,4 +1,4 @@
-Статья приводит примеры подключений к инстансам баз данных с помощью SDK.
+К БД развернутых в VK Cloud инстансов можно подключиться с помощью SDK.
 
 ## PostgreSQL
 
@@ -23,10 +23,10 @@
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 Подробнее о подключении к PostgreSQL в PHP читайте в [документации](https://www.php.net/manual/ru/book.pgsql.php).
 
@@ -38,19 +38,17 @@
 1. Подключитесь к базе данных с помощью функции `connect()`:
 
    ```python
-
    import psycopg2
 
    conn = psycopg2.connect("host=<IP-ADDRESS> dbname=<DATABASE> user=<USERNAME> password=<PASSWORD>")
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -60,19 +58,17 @@
 1. Подключитесь к БД с помощью функции `PGconn.connect()`:
 
    ```ruby
-
    require "pg"
 
    conn = PGconn.connect(:host => '<IP-ADDRESS>', :dbname => '<DATABASE>', :user='<USERNAME>', :password => '<PASSWORD>')
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -82,41 +78,36 @@
 1. Подключитесь к базе данных с помощью функции `DriverManager.getConnection()`:
 
    ```java
-
    import java.sql.*;
 
    Connection conn = DriverManager.getConnection("jdbc:postgresql://<IP-ADDRESS>/<DATABASE>", "<USERNAME>", "<PASSWORD>");
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
 
 1. Убедитесь, что Node.js [установлен](https://nodejs.org/ru/download).
-1. [Установите](https://node-postgres.com/) `node-postgres` модули.
+1. [Установите](https://node-postgres.com/) модули `node-postgres`.
 1. Подключитесь к базе данных с помощью функции `pg.Client()`:
 
    ```javascript
-
    var pg = require('pg');
-
    var conn = new pg.Client("postgres://<USERNAME>:<PASSWORD>@<IP-ADDRESS>/<DATABASE>");
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -130,10 +121,10 @@
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 </tabs>
@@ -156,20 +147,18 @@
 1. Подключитесь к базе данных с помощью функции `mysqli_real_connect()`:
 
    ```php
-
    $conn = mysqli_init();
 
    mysqli_real_connect($conn, "<IP-ADDRESS>", "<USERNAME>", "<PASSWORD>", "<DATABASE>", <PORT>);
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<PORT>` — порт подключения, стандартный — `3306`;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<PORT>` — порт подключения, стандартный — `3306`;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 Подробнее о подключении к MySQL в PHP читайте в [документации](https://www.php.net/manual/ru/set.mysqlinfo.php).
 
@@ -177,24 +166,22 @@
 <tabpanel>
 
 1. Убедитесь, что Python [установлен](https://wiki.python.org/moin/BeginnersGuide/Download).
-1. [Установите]((https://dev.mysql.com/doc/connector-python/en/)) модуль `mysql.connector`.
+1. [Установите](https://dev.mysql.com/doc/connector-python/en/) модуль `mysql.connector`.
 1. Подключитесь к базе данных с помощью функции `mysql.connector.connect()`:
 
    ```python
-
    import mysql.connector
 
    conn = mysql.connector.connect(user="<USERNAME>", password="<PASSWORD>", host="<IP-ADDRESS>", port=<PORT>, database="<DATABASE>")
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<PORT>` — порт подключения, стандартный — `3306`;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<PORT>` — порт подключения, стандартный — `3306`;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -204,20 +191,18 @@
 1. Создайте подключение с помощью класса `Mysql2::Client`:
 
    ```ruby
-
    require "mysql2"
 
    conn = Mysql2::Client.new(username: "<USERNAME>", password: "<PASSWORD>", database: "<DATABASE>", host: "<IP-ADDRESS>", port: <PORT>)
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<PORT>` — порт подключения, стандартный — `3306`;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<PORT>` — порт подключения, стандартный — `3306`;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -227,19 +212,18 @@
 1. Подключитесь к базе данных с помощью функции `DriverManager.getConnection()`:
 
    ```java
-
    import java.sql.*;
 
-   Connection conn = DriverManager.getConnection("<IP-ADDRESS>", "<USERNAME>", "<PASSWORD>");
-
+   DriverManager.getConnection("jdbc:mysql://<IP-ADRESS>:<PORT>/<DATABASE>", <USERNAME>, <PASSWORD>);
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<PORT>` — порт подключения, стандартный — `3306`;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -249,9 +233,7 @@
 1. Создайте подключение к базе данных с помощью метода `mysql.createConnection`:
 
    ```javascript
-
    var mysql = require('mysql')
-
    var conn = mysql.createConnection({
        host: "<IP-ADDRESS>",
        user: "<USERNAME>",
@@ -259,16 +241,15 @@
        database: "<DATABASE>",
        port: <PORT>
    });
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<PORT>` — порт подключения, стандартный — `3306`;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<PORT>` — порт подключения, стандартный — `3306`;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -282,11 +263,11 @@
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<PORT>` — порт подключения, стандартный — `3306`;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<PORT>` — порт подключения, стандартный — `3306`;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 </tabs>
@@ -295,7 +276,7 @@
 
 <info>
 
-К БД Tarantool можно подключиться как гостевой пользователь. Для этого достаточно указать при подключении только IP-адрес инстанса.
+К БД Tarantool можно подключиться как гостевой пользователь.
 
 </info>
 
@@ -314,20 +295,17 @@
 1. Подключитесь к базе данных с помощью метода `Client::fromDsn`:
 
    ```php
-
    require_once __DIR__ . '/vendor/autoload.php';
 
    use Tarantool\Client\Client;
-
    $client = Client::fromDsn('tcp://<USERNAME>:PASSWORD>@<IP-ADDRESS>');
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 Подробнее о подключении к Tarantool в PHP читайте в [документации](https://www.tarantool.io/ru/doc/latest/how-to/getting_started_php/).
 
@@ -339,19 +317,17 @@
 1. Подключитесь к базе данных с помощью функции `tarantool.connect()`:
 
    ```python
-
    import tarantool
-        
-   connection = tarantool.connect("<IP-ADDRESS>", <PORT>, user=<USERNAME>, password=<PASSWORD>)
 
+   connection = tarantool.connect("<IP-ADDRESS>", <PORT>, user=<USERNAME>, password=<PASSWORD>)
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<PORT>` — порт подключения, стандартный — `3301`;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<PORT>` — порт подключения, стандартный — `3301`;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 Подробнее о подключении к Tarantool в Python читайте в [документации](https://www.tarantool.io/ru/doc/latest/how-to/getting_started_python/).
 
@@ -363,19 +339,17 @@
 1. Подключитесь к базе данных с помощью функции `TarantoolClientFactory.createClient()`:
 
    ```java
-
    TarantoolClient<TarantoolTuple, TarantoolResult<TarantoolTuple>> client = TarantoolClientFactory.createClient()
        .withAddress("<IP-ADDRESS>")
        .withCredentials(container.getUsername("<USERNAME>"), container.getPassword("<PASSWORD>"))
        .build();
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -389,19 +363,18 @@
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что Go [установлен]((https://go.dev/doc/install)).
+1. Убедитесь, что Go [установлен](https://go.dev/doc/install).
 1. [Установите](https://github.com/tarantool/go-tarantool#installation) библиотеку `go-tarantool`.
 1. Подключитесь к базе данных с помощью функции `tarantool.Connect()`:
 
    ```go
-
    import (
        "github.com/tarantool/go-tarantool"
    )
@@ -411,14 +384,13 @@
        Pass: "<PASSWORD>",
    }
    connection, err := tarantool.Connect("<IP-ADDRESS>", opts)
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 Подробнее о подключении к Tarantool в Go читайте в [документации](https://www.tarantool.io/ru/doc/latest/how-to/getting_started_go/).
 
@@ -444,7 +416,6 @@
 1. Подключитесь к базе данных:
 
    ```php
-
    require_once __DIR__ . '/vendor/autoload.php';
 
    $config = [
@@ -455,16 +426,15 @@
    ];
    $db = new ClickHouseDB\Client($config);
    $db->database('<DATABASE>');
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<PORT>` — порт подключения, стандартный — `8123`;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<PORT>` — порт подключения, стандартный — `8123`;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -474,19 +444,17 @@
 1. Подключитесь к базе данных с помощью класса `Connection`:
 
    ```python
-
    from clickhouse_driver.connection import Connection
 
    conn = Connection('<IP-ADDRESS>', port=8123, database='<DATABASE>', user='<USERNAME>', password='<PASSWORD>')
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -503,10 +471,10 @@
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -516,22 +484,20 @@
 1. Создайте подключение с помощью класса `ClickHouseDataSource`:
 
    ```java
-
    import ru.yandex.clickhouse.ClickHouseDataSource;
    import ru.yandex.clickhouse.settings.ClickHouseProperties;
 
    ClickHouseProperties properties = new ClickHouseProperties().withCredentials(<USERNAME>, <PASSWORD>);
    ClickHouseDataSource ds = new ClickHouseDataSource(String.format("jdbc:clickhouse://%s:%s/%s", “<IP-ADDRESS>”, <PORT>, <DATABASE>), properties);
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<PORT>` — порт подключения, стандартный — `8123`;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<PORT>` — порт подключения, стандартный — `8123`;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -541,7 +507,6 @@
 1. Создайте объект подключения к БД:
 
    ```javascript
-
    const { ClickHouse } = require('clickhouse');
 
    const clickhouse = new ClickHouse({
@@ -553,16 +518,15 @@
            password: '<PASSWORD>',
        }
    });
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<PORT>` — порт подключения, стандартный — `8123`;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<PORT>` — порт подключения, стандартный — `8123`;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -571,18 +535,16 @@
 1. Подключитесь к базе данных:
 
    ```bash
-
    Driver={PATH_OF_CLICKHOUSE_ODBC_SO}; Server="<IP-ADDRESS>"; Port=<PORT>; Database="<DATABASE>"; Uid="<USERNAME>"; Pwd="<PASSWORD>";
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<PORT>` — порт подключения, стандартный — `8123`;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<PORT>` — порт подключения, стандартный — `8123`;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 </tabs>
@@ -603,17 +565,15 @@
 1. Подключитесь к базе данных:
 
    ```php
-
-   $manager = new MongoDB\Driver\Manager("mongodb://<IP-ADDRESS>/<DATABASE>", array("username" => <USERNAME>, "password" => <PASSWORD>);
-
+   $manager = new MongoDB\Driver\Manager("mongodb://<IP-ADDRESS>/<DATABASE>", array("username" => <USERNAME>, "password" => <PASSWORD>));
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -623,20 +583,18 @@
 1. Подключитесь к базе данных с помощью функции `MongoClient`:
 
    ```python
-
    from pymongo import MongoClient
 
    client = MongoClient("mongodb://<USERNAME>:<PASSWORD>@<IP-ADDRESS>")
 
    db = client[<DATABASE>]
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -646,21 +604,19 @@
 1. Создайте подключение:
 
    ```java
-
    MongoCredential credential = MongoCredential.createCredential(<USERNAME>, <DATABASE>, <PASSWORD>.toCharArray());
 
    MongoClient mongoClient = new MongoClient(new ServerAddress(“<IP-ADDRESS>”), Arrays.asList(credential));
 
    MongoDatabase db = mongoClient.getDatabase(<DATABASE>);
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -670,7 +626,6 @@
 1. Создайте объект подключения к БД:
 
    ```javascript
-
    var MongoClient = require('mongodb').MongoClient;
 
    MongoClient.connect("mongodb://<USERNAME>:<PASSWORD>@<IP-ADDRESS>/<DATABASE>", function(err, db) {
@@ -679,15 +634,14 @@
        };
        db.close();
    });
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 </tabs>
@@ -709,21 +663,19 @@
 1. Подключитесь к базе данных:
 
    ```php
-
    require_once __DIR__ . '/vendor/autoload.php';
 
    Predis\Autoloader::register();
 
    $client = new Predis\Client('tcp://<IP-ADDRESS>');
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<DATABASE>` — имя БД;
-   * `<USERNAME>` — имя пользователя БД;
-   * `<PASSWORD>` — пароль пользователя БД.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<DATABASE>` — имя БД;
+   - `<USERNAME>` — имя пользователя БД;
+   - `<PASSWORD>` — пароль пользователя БД.
 
 </tabpanel>
 <tabpanel>
@@ -742,8 +694,8 @@
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<PORT>` — порт подключения, стандартный — `6379`.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<PORT>` — порт подключения, стандартный — `6379`.
 
 Подробнее о подключении к Redis в Python читайте в [документации](https://redis.io/docs/clients/python/).
 
@@ -755,17 +707,15 @@
 1. Подключитесь к базе данных с помощью функции `Redis.new`:
 
    ```ruby
-
    require "redis"
 
    conn = Redis.new(host: "<IP-ADDRESS>", port: <PORT>, db: 0)
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<PORT>` — порт подключения, стандартный — `6379`.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<PORT>` — порт подключения, стандартный — `6379`.
 
 </tabpanel>
 <tabpanel>
@@ -775,11 +725,9 @@
 1. Создайте подключение с помощью функции `Jedis`:
 
    ```java
-
    import redis.clients.jedis.Jedis;
 
    Jedis jedis = new Jedis("<IP-ADDRESS>");
-
    ```
 
    Здесь `<IP-ADDRESS>` — внешний IP-адрес инстанса БД.
@@ -792,17 +740,15 @@
 1. Подключитесь к БД с помощью функции `redis.createClient()`:
 
    ```javascript
-
    var redis = require("redis"),
 
    client = redis.createClient(<PORT>, "<IP-ADDRESS>");
-
    ```
 
    Здесь:
 
-   * `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
-   * `<PORT>` — порт подключения, стандартный — `6379`.
+   - `<IP-ADDRESS>` — внешний IP-адрес инстанса БД;
+   - `<PORT>` — порт подключения, стандартный — `6379`.
 
 Подробнее о подключении к Redis в Node.js читайте в [документации](https://redis.io/docs/clients/nodejs/).
 
