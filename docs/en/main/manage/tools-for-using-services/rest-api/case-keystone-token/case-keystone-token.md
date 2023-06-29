@@ -14,13 +14,13 @@ A generated token is valid for one hour. All generated tokens remain valid for t
 
 </warn>
 
-Get a token using one of the following methods:
+Get a token:
 
 <tabs>
 <tablist>
-<tab>In the personal account</tab>
-<tab>Via OpenStack CLI</tab>
-<tab>Via cURL utility</tab>
+<tab>Personal account</tab>
+<tab>OpenStack CLI</tab>
+<tab>cURL</tab>
 </tablist>
 <tabpanel>
 
@@ -110,8 +110,8 @@ The token value will be output in the `X-Subject-Token` parameter.
 
 <tabs>
 <tablist>
-<tab>Linux (CentOS)</tab>
-<tab>Windows (Windows 10)</tab>
+<tab>Linux</tab>
+<tab>Windows</tab>
 </tablist>
 <tabpanel>
 
