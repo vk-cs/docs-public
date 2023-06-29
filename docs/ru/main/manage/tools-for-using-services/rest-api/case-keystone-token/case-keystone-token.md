@@ -14,13 +14,13 @@
 
 </warn>
 
-Получите токен одним из доступных способов:
+Получите токен:
 
 <tabs>
 <tablist>
-<tab>Через личный кабинет</tab>
-<tab>С помощью OpenStack CLI</tab>
-<tab>С помощью утилиты cURL</tab>
+<tab>Личный кабинет</tab>
+<tab>OpenStack CLI</tab>
+<tab>cURL</tab>
 </tablist>
 <tabpanel>
 
@@ -35,7 +35,7 @@
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack) и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
 1. Выполните команду:
 
     ```
@@ -106,8 +106,8 @@
 
 <tabs>
 <tablist>
-<tab>Linux (CentOS)</tab>
-<tab>Windows (Windows 10)</tab>
+<tab>Linux</tab>
+<tab>Windows</tab>
 </tablist>
 <tabpanel>
 
