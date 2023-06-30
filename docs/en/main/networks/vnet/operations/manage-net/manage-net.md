@@ -1,5 +1,11 @@
 In addition to the cloud network, you can create subnets. By default, one network with several subnets is already created in the project. Once a network and subnets are created, they become available to all virtual machines in the project at once.
 
+<warn>
+
+[Shared networks](../../concepts/net-types#shared-network) can be managed only from the owner project.
+
+</warn>
+
 ## Viewing the list of networks and subnets and information about them
 
 <tabs>
@@ -167,6 +173,8 @@ Once a network is created, it will appear in the list of networks.
 <warn>
 
 All the network's subnets and ports will be deleted along with the network.
+
+[A shared network](../../concepts/net-types#shared-network) can be deleted only via the support request.
 
 </warn>
 
