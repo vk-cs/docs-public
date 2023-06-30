@@ -21,22 +21,29 @@ If possible, attach any available diagnostic information: screenshots, logs and 
 
 SLA indicators are given in the article [SLA](../sla/).
 
-## Support Competencies
+## Stages of service readiness
 
-The list of issues that technical support can solve includes:
+| Stage | Description  |
+|----------------------|----------------------------------------------------------------------------------------|
+| Preview  | Services at the Preview stage are suitable for developers who are ready to use them in the development of their applications or in a test environment.<br>There is no Service Level Agreement (SLA) for Preview services and their use is not charged|
+| General Availability | Public versions of the services are available to all users and can be fully used to solve problems.<br>These services are subject to billing and [service level agreement](../sla/) (SLA)|
 
-- Architectural consultations on the use of VK Cloud services
-- Diagnostics of problems in the operation of resources on the project
-- Issues of restoring access to the account
-- Informing about the work of billing
-- Recommendations for troubleshooting
-- Help in setting up VK Cloud services
+## Support competencies
 
-<info>
+Technical support:
 
-The VK Cloud technical support team does not solve problems related to software development, debugging its own program code, as well as consulting on the work of third-party solutions.
+- Provides architectural advice regarding the use of VK Cloud services.
+- Performs diagnostics of malfunctions in the operation of resources on the project.
+- Deals with issues of restoring access to [account](https://mcs.mail.ru/docs/ru/base/account/faq).
+- Informs about the work of billing.
+- Advises on troubleshooting issues in the platform.
+- Helps in setting up VK Cloud services.
 
-</info>
+<warn>
+
+The VK Cloud Technical Support team does not administer and support operating systems and other services created using the Platform, unless this is agreed in a separate agreement.
+
+</warn>
 
 ## Notifications from technical support
 
@@ -50,25 +57,25 @@ The list of VK Cloud platform services includes the possibility of providing pri
 
 This service includes extended support for all issues of implementation, maintenance and troubleshooting in the client's projects:
 
-24/7 system administration
+- 24/7 system administration:
 
-- Outsourcing of IT infrastructure and cloud services
-- Technical support
-- Monitoring and availability support
-- Incident response
-- Crash recovery
+  - outsourcing of IT infrastructure and cloud services;
+  - technical support;
+  - monitoring and availability support;
+  - Incident response;
+  - crash recovery;
 
-Audit and consulting
+- Audit and consulting:
 
-- Architecture consulting
-- Infrastructure audit
-- Performance audit
+  - architecture consulting;
+  - infrastructure audit;
+  - performance audit.
 
-Configuration and implementation
+- Configuration and implementation:
 
-- Monitoring settings
-- Setting up backup, high availability (HA), crash recovery systems
-- Software update of PaaS services
-- Migration of data and information systems
+  - monitoring settings;
+  - setting up backup, high availability (HA), crash recovery systems;
+  - software update of PaaS services;
+  - migration of data and information systems.
 
-To learn more about the service and submit a request for cost calculation, follow the link https://mcs.mail.ru/managed-services/.
+To learn more about the service and submit a request for cost calculation, follow the [link](https://mcs.mail.ru/managed-services/).
