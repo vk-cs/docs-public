@@ -1,7 +1,25 @@
-When you first register on the platform and activate the services, you can be credited with 3000 points as a bonus to get acquainted with the platform, as well as the services provided.
-
-If no bonuses are credited within 3 working days, please contact [technical support](/en/contacts).
+Bonuses, or bonus points are virtual funds credited by the platform to the dedicated [bonus account](../../start/balance#bonus-account) of a project. Bonus points can be used to pay for services. No funds are debited from the main project account until there are still funds on the bonus account; for details, see the article [Balance](../../start/balance#accounts-usage).
 
 <info>
-1 bonus point = 1 ruble.
+
+One bonus point for [region](/ru/base/account/concepts/regions) Moscow equals one ruble, for region Kazakhstan — one tenge.
+
 </info>
+
+ Bonus points are credited:
+
+- When a new account is [registered](../../../start/get-started/account-registration) on the platform. These sign-up bonus points are credited only once, after services are activated in the [project](/en/base/account/concepts/projects) that is created for the account. The amount of bonuses depends on the region of the project:
+
+  - Moscow — 3000 bonuses;
+  - Kazakhstan — 24000 bonuses;
+
+  <err>
+
+  Unspent sign-up bonuses expire in 60 calendar days after the account registration.
+
+  </err>
+
+- During advertising campaigns;
+- When paying refunds for the technical failures that occurred through the fault of VK Cloud.
+
+Bonus points are not returned during a [refund](../../operations/refund).
