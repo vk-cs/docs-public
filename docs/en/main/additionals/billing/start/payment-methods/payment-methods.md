@@ -1,6 +1,6 @@
-Payment of resources — crediting funds to the main or bonus account.
+Payment for resources is made by crediting funds to the [main account](../balance#main-account) of the project.
 
-The ways to top up your account depend on your legal status:
+The ways to top up your balance depend on your legal status:
 
 <tabs>
 <tablist>
@@ -9,19 +9,25 @@ The ways to top up your account depend on your legal status:
 </tablist>
 <tabpanel>
 
-- By bank card: physical or virtual; supported payment system: MIR, VISA, Mastercard.
-- Electronic money (SberPay, Qiwi, ЮMoney).
-- Via phone.
+- bank card, physical or virtual (supported payment systems: MIR, VISA, Mastercard);
+- electronic money (supported: SberPay, Qiwi, ЮMoney);
+- mobile payments.
+
+<info>
+
+For projects in the Kazakhstan [region](/en/base/account/concepts/regions) only one payment method is available — bank card.
+
+</info>
 
 </tabpanel>
 <tabpanel>
 
-- By bank card: physical or virtual; supported payment system: MIR, VISA, Mastercard.
-- By bank transfer.
+- bank card, physical or virtual (supported payment systems: MIR, VISA, Mastercard);
+- bank transfer.
 
 <warn>
 
-Funds replenished with a bank card do not get into the closing documents after the end of the reporting period.
+Funds replenished with a bank card are not included into the closing documents after the end of the reporting period. Only payments made by legal entities via bank transfer are included into the closing documents.
 
 </warn>
 

@@ -1,17 +1,26 @@
-The balance is the current state of funds on the VK Cloud project account. The balance status is reflected in the upper part of the personal account, and is also available in the "Balance and payments" section. To go to the section at the top of the control panel, click on the username and select "Balance and Payments". A window with the balance details will be displayed on the page.
+The balance is the current state of funds on the VK Cloud [project](/en/base/account/concepts/projects) accounts. For each new project, two accounts are created automatically: the main and the bonus account.
+
+The balance state can be seen in the [personal account](https://mcs.mail.ru/app/):
+
+- the balance amount — in the upper part of the personal account page;
+- balance details, with statistics for each account and [detailed expenses](../../operations/detail) — on the separate Balance page.
+
+    For details, see section [Top up balance](/en/additionals/billing/operations/payment#viewing-the-balance).
 
 <info>
 
-The "Balance and Payments" section is available if [services are activated](/en/base/account/start/activation) in the project.
+The Balance page is available if [services are activated](/en/base/account/start/activation) in the project.
 
 </info>
 
-The balance change details contain information not only on transactions, but also on the regions of paid resources. Balance and Payments page contains information on projects in all regions where resources were created. You can learn more about the regions in the article [Regions](../../../account/concepts/regions).
-
 ## Main account
 
-The main account is an account in the project that is used to pay for resources to which the card is linked. The account is created automatically at the time of registration on the platform. When paying for resources, money is credited to the Main Account.
+The main account is a project account that a user can replenish using one of the available [payment methods](../payment-methods). Money from this account can be [refunded](../../operations/refund) if necessary.
 
 ## Bonus account
 
-The bonus account is designed to earn bonus points. Bonus points can be obtained for registration. When debiting funds for services, the money will be debited first from the Bonus Account, then from the Main Account.
+The bonus account is a project account that is used for storing [bonuses](../../concepts/bonus). A user cannot replenish a bonus account, bonuses can be credited by the platform only. Bonuses cannot be refunded.
+
+## Accounts Usage
+
+Services can be paid from both accounts. Funds are first debited from the bonus account, and then from the main account.
