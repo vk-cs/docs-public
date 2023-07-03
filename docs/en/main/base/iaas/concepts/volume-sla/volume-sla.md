@@ -617,7 +617,7 @@ Detailed performance characteristics for local Low Latency NVME of different vol
             --name=randread \
             --ioengine=libaio \
             --iodepth=32 \
-            --rw=randwrite \
+            --rw=randread \
             --bs=4k \
             --direct=1 \
             --size=512M \
