@@ -1,0 +1,12 @@
+{
+  "title": "Content recognition 18+",
+  "pageDescription": "Vision API methods for recognizing 18+ content in a photo",
+  "shortDescription": "API methods for recognizing 18+ content in a photo",
+  "metaTitle": "Content recognition 18+",
+  "metaDescription": "The method allows you to determine if there is NSFW content in the photo (18+)",
+  "sectionTitle": "Content recognition 18+",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 8
+}
