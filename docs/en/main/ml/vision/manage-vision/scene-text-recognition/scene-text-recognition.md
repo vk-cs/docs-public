@@ -1,4 +1,7 @@
-The method allows you to recognize text in an photos taken on the street (scene_text).
+The method allows you to recognize:
+
+- text in an photos taken on the street (scene_text).
+- handwritten text.
 
 HOST: `https://smarty.mail.ru`
 
