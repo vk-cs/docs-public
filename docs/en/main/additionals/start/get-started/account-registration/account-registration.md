@@ -32,8 +32,6 @@ The account confirmation window opens. A confirmation email is sent to the speci
 
 To complete your registration with VK Cloud, confirm your account details: validate your email and phone number and link a payment card.
 
-After the registration is completed, sign-up [bonus points](../../../billing/concepts/bonus) will be credited to your balance.
-
 If you close the confirmation window before completing the registration, your personal account in VK Cloud is still available. However, when you try to perform an action (for example, create an object or [activate services](/en/base/account/start/activation)), the confirmation will continue from the step where it was stopped.
 
 <tabs>
@@ -104,8 +102,9 @@ To link a card:
 A message about the successful services activation appears, and your VK Cloud personal account page opens.
 
 </tabpanel>
-
 </tabs>
+
+After the registration is completed, sign-up [bonus points](../../../billing/concepts/bonus) will be credited to your balance. These bonus points are credited only once after the registration of each new account. If no bonus points are credited within 3 working days, contact [technical support](/en/contacts).
 
 ## Activation of API access
 
