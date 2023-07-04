@@ -1,7 +1,7 @@
 {
   "title": "Получение токена доступа Keystone",
   "pageDescription": "Получение токена доступа в сервисах VK Cloud",
-  "shortDescription": "Генерация токена X-Subject-Token для доступа к сервисам по REST API",
+  "shortDescription": "Как сгенерировать токен X-Subject-Token для доступа к сервисам по REST API",
   "metaTitle": "Получение токена доступа Keystone",
   "metaDescription": "Генерация токена X-Subject-Token для доступа к сервисам по REST API.",
   "sectionTitle": "Получение токена доступа Keystone",
