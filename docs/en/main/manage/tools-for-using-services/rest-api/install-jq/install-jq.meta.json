@@ -1,0 +1,9 @@
+{
+  "title": "Installing jq",
+  "pageDescription": "Installing the jq utility for automatic output of structured JSON in the console. It can be used to output OpenStack and API commands.",
+  "shortDescription": "How to install the jq utility for automatic output of structured JSON in the console",
+  "metaTitle": "Installing jq",
+  "metaDescription": "Installing the jq utility for automatic output of structured JSON in the console. It can be used to output OpenStack and API commands.",
+  "sectionTitle": "Installing jq",
+  "weight": 4
+}

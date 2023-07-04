@@ -1,7 +1,7 @@
 {
   "title": "Getting a Keystone access token",
   "pageDescription": "Getting an access token in VK Cloud services",
-  "shortDescription": "Generating an X-Subject-Token for access to services via the REST API",
+  "shortDescription": "How to generate an X-Subject-Token for access to services via the REST API",
   "metaTitle": "Getting a Keystone access token",
   "metaDescription": "Generating an X-Subject-Token for access to services via the REST API.",
   "sectionTitle": "Getting a Keystone access token",
