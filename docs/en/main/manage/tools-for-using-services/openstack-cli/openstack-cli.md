@@ -86,7 +86,8 @@ Service names:
    <tabs>
    <tablist>
    <tab>Linux</tab>
-   <tab>Windows</tab>
+   <tab>Windows (cmd)</tab>
+   <tab>Windows (PowerShell)</tab>
    </tablist>
    <tabpanel>
 
@@ -104,17 +105,40 @@ Service names:
    1. Copy the data from the file `<project name>-openrc.sh` and run commands:
 
       ```powershell
-      set OS_PROJECT_ID=<OS_PROJECT_ID>
-      set OS_REGION_NAME=<OS_REGION_NAME>
-      set OS_USER_DOMAIN_NAME=<OS_USER_DOMAIN_NAME>
-      set OS_USERNAME=<OS_USERNAME>
-      set OS_AUTH_URL=<OS_AUTH_URL>
+      set OS_INTERFACE="<OS_INTERFACE>"
+      set OS_IDENTITY_API_VERSION="<OS_IDENTITY_API_VERSION>"
+      set OS_PROJECT_ID="<OS_PROJECT_ID>"
+      set OS_REGION_NAME="<OS_REGION_NAME>"
+      set OS_USER_DOMAIN_NAME="<OS_USER_DOMAIN_NAME>"
+      set OS_USERNAME="<OS_USERNAME>"
+      set OS_AUTH_URL="<OS_AUTH_URL>"
       ```
 
    2. Specify the password by running the command:
 
       ```powershell
-      set OS_PASSWORD=<project user password>
+      set OS_PASSWORD="<project user password>"
+      ```
+
+   </tabpanel>
+   <tabpanel>
+
+   1. Copy the data from the file `<project name>-openrc.sh` and run commands:
+
+      ```powershell
+      $env:OS_INTERFACE = "<OS_INTERFACE>"
+      $env:OS_IDENTITY_API_VERSION = "<OS_IDENTITY_API_VERSION>"
+      $env:OS_PROJECT_ID = "<OS_PROJECT_ID>"
+      $env:OS_REGION_NAME = "<OS_REGION_NAME>"
+      $env:OS_USER_DOMAIN_NAME = "<OS_USER_DOMAIN_NAME>"
+      $env:OS_USERNAME = "<OS_USERNAME>"
+      $env:OS_AUTH_URL = "<OS_AUTH_URL>"
+      ```
+
+   2. Specify the password by running the command:
+
+      ```powershell
+      $env:OS_PASSWORD = "<project user password>"
       ```
 
    </tabpanel>
@@ -135,7 +159,8 @@ Service names:
    <tabs>
    <tablist>
    <tab>Linux</tab>
-   <tab>Windows</tab>
+   <tab>Windows (cmd)</tab>
+   <tab>Windows (PowerShell)</tab>
    </tablist>
    <tabpanel>
 
@@ -148,6 +173,12 @@ Service names:
 
    ```bash
    set | findstr OS_
+   ```
+   </tabpanel>
+   <tabpanel>
+
+   ```bash
+   gci env: | where name -like 'OS_*'
    ```
 
    </tabpanel>
