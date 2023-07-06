@@ -86,7 +86,8 @@ pip install python-<Название сервиса>client
    <tabs>
    <tablist>
    <tab>Linux</tab>
-   <tab>Windows</tab>
+   <tab>Windows (cmd)</tab>
+   <tab>Windows (PowerShell)</tab>
    </tablist>
    <tabpanel>
 
@@ -104,17 +105,40 @@ pip install python-<Название сервиса>client
    1. Скопируйте данные из файла `<название проекта>-openrc.sh` и выполните команды:
 
       ```powershell
-      set OS_PROJECT_ID=<OS_PROJECT_ID>
-      set OS_REGION_NAME=<OS_REGION_NAME>
-      set OS_USER_DOMAIN_NAME=<OS_USER_DOMAIN_NAME>
-      set OS_USERNAME=<OS_USERNAME>
-      set OS_AUTH_URL=<OS_AUTH_URL>
+      set OS_INTERFACE="<OS_INTERFACE>"
+      set OS_IDENTITY_API_VERSION="<OS_IDENTITY_API_VERSION>"
+      set OS_PROJECT_ID="<OS_PROJECT_ID>"
+      set OS_REGION_NAME="<OS_REGION_NAME>"
+      set OS_USER_DOMAIN_NAME="<OS_USER_DOMAIN_NAME>"
+      set OS_USERNAME="<OS_USERNAME>"
+      set OS_AUTH_URL="<OS_AUTH_URL>"
       ```
 
    2. Укажите пароль, выполнив команду:
 
       ```powershell
-      set OS_PASSWORD=<пароль пользователя проекта>
+      set OS_PASSWORD="<пароль пользователя проекта>"
+      ```
+
+   </tabpanel>
+   <tabpanel>
+
+   1. Скопируйте данные из файла `<название проекта>-openrc.sh` и выполните команды:
+
+      ```powershell
+      $env:OS_INTERFACE = "<OS_INTERFACE>"
+      $env:OS_IDENTITY_API_VERSION = "<OS_IDENTITY_API_VERSION>"
+      $env:OS_PROJECT_ID = "<OS_PROJECT_ID>"
+      $env:OS_REGION_NAME = "<OS_REGION_NAME>"
+      $env:OS_USER_DOMAIN_NAME = "<OS_USER_DOMAIN_NAME>"
+      $env:OS_USERNAME = "<OS_USERNAME>"
+      $env:OS_AUTH_URL = "<OS_AUTH_URL>"
+      ```
+
+   2. Укажите пароль, выполнив команду:
+
+      ```powershell
+      $env:OS_PASSWORD = "<пароль пользователя проекта>"
       ```
 
    </tabpanel>
@@ -135,7 +159,8 @@ pip install python-<Название сервиса>client
    <tabs>
    <tablist>
    <tab>Linux</tab>
-   <tab>Windows</tab>
+   <tab>Windows (cmd)</tab>
+   <tab>Windows (PowerShell)</tab>
    </tablist>
    <tabpanel>
 
@@ -148,6 +173,13 @@ pip install python-<Название сервиса>client
 
    ```bash
    set | findstr OS_
+   ```
+
+   </tabpanel>
+   <tabpanel>
+
+   ```bash
+   gci env: | where name -like 'OS_*'
    ```
 
    </tabpanel>
