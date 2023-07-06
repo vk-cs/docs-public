@@ -8,6 +8,6 @@
   "markdown": "This section describes the operations that can be used to manage a Kubernetes cluster. Each operation is accompanied by step-by-step instructions.",
   "icon": "",
   "infobarItems": null,
-  "weight": 3,
+  "weight": 2,
   "uuid": "1d9dae9f-b231-4be6-818d-4b4422548001"
 }
