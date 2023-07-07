@@ -116,3 +116,51 @@ The pre-installed Ingress controller integrates tightly with the VK Cloud platfo
 
 </tabpanel>
 </tabs>
+
+### Istio
+
+<tabs>
+<tablist>
+<tab>Description</tab>
+<tab>System requirements</tab>
+</tablist>
+<tabpanel>
+
+[Istio](https://istio.io/latest/) is a framework that implements the [service mesh](https://istio.io/latest/about/service-mesh/#what-is-a-service-mesh) concept, which allocates a separate layer for interaction between application services. Using Istio provides traffic management for services without changing the code of the services (sidecar containers are used). Istio benefits:
+
+- Expanded secure traffic transfer capabilities:
+
+  - Traffic policies can be configured.
+  - TLS can be used to communicate between services.
+
+- Expanded traffic monitoring capabilities.
+- Complex routing and balancing of traffic between services can be done.
+
+</tabpanel>
+<tabpanel>
+
+- **CPU**: 500m.
+- **RAM**: 2Gi.
+
+</tabpanel>
+</tabs>
+
+### Kiali
+
+<tabs>
+<tablist>
+<tab>Description</tab>
+<tab>System requirements</tab>
+</tablist>
+<tabpanel>
+
+[Kiali](https://kiali.io/) is a web interface for working with [Istio](#istio). It allows to manage, monitor and visualize a service mesh.
+
+</tabpanel>
+<tabpanel>
+
+- **CPU**: 10m—500m.
+- **RAM**: 64Mi—1Gi.
+
+</tabpanel>
+</tabs>

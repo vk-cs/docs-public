@@ -1,0 +1,12 @@
+{
+  "title": "Istio",
+  "pageDescription": "The configuration and installation of the Istio addon is described here.",
+  "shortDescription": "",
+  "metaTitle": "Istio",
+  "metaDescription": "VK Cloud containers service: configuring and installing the Istio addon.",
+  "sectionTitle": "Istio",
+  "markdown": "The configuration and installation of the Istio addon is described here.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4
+}
