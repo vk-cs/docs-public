@@ -8,5 +8,6 @@
   "markdown": "If the Kiali addon is installed in the Kubernetes cluster, you can connect to the Kiali using the procedure described here.",
   "icon": "",
   "infobarItems": null,
-  "weight": 4
+  "weight": 4,
+  "uuid": "134eb80d-6ee7-4b57-ad87-4d00080c521e"
 }
