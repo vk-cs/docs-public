@@ -8,5 +8,6 @@
   "markdown": "The configuration and installation of the Istio addon is described here.",
   "icon": "",
   "infobarItems": null,
-  "weight": 4
+  "weight": 4,
+  "uuid": "ca36f6da-245d-4916-ab63-454216b11c22"
 }
