@@ -28,6 +28,12 @@ A group of virtual machines with installed DBMS servers of the selected type tha
 
 When increasing the disk size or scaling vertically, the changes are applied to all instances of the cluster.
 
+<info>
+
+To ensure high availability of the PostgreSQL cluster, the [Patroni](https://patroni.readthedocs.io/en/latest/index.html) service is used.
+
+</info>
+
 An instance in the **Cluster** configuration cannot be started, restarted, or stopped.
 
 ## Available configurations for DBMS types
