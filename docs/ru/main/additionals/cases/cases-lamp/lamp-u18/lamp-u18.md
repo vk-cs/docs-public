@@ -58,7 +58,7 @@
 
 Если установка и конфигурирование веб-сервера Apache выполнены успешно, отобразится примерно следующая дефолтная страница веб-сервера:
 
-![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f4120-2fdirect-2f1552943724393-1552943724393.png)
+![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f4120-2fdirect-2f1552943724393-1552943724393-png)
 
 ## Установка СУБД MySQL
 
@@ -179,7 +179,7 @@ sudo nano /var/www/html/info.php
 
 В результате должна отобразится примерно следующая страница:
 
-![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f4120-2fdirect-2f1552943725418-1552943725418.png)
+![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f4120-2fdirect-2f1552943725418-1552943725418-png)
 
 <warn>
 

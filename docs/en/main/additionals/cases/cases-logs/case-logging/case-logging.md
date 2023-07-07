@@ -12,7 +12,7 @@ If you use other servers and hardware, some script steps may differ from those d
 
 ## Scheme of work
 
-**![](./assets/1575925083095-1575925083095.png)**
+**![](./assets/1575925083095-1575925083095-png)**
 
 The ELK stack consists of three components:
 
@@ -184,7 +184,7 @@ Executing: /lib/systemd/systemd-sysv-install enable kibana
 
 If Kibana is running, the following will be displayed:
 
-![](./assets/1576044633830-1576044633830.png)
+![](./assets/1576044633830-1576044633830-png)
 
 ## Configuring Kibana and Elasticsearch Security
 
@@ -273,9 +273,9 @@ Similarly configure Nginx as a reverse proxy for Elasticsearh (port 9200) and Lo
 
 To get familiar with Kibana, you can use the test dataset:
 
-[![](./assets/1576047965286-1576047965286.png)](https://hb.bizmrg.com/help-images/logging/Kibana_Dashboard_2.png)
+[![](./assets/1576047965286-1576047965286-png)](https://hb.bizmrg.com/help-images/logging/Kibana_Dashboard_2.png)
 
-[![](./assets/1576047982336-1576047982336.png)](https://hb.bizmrg.com/help-images/logging/Kibana_Dashboard_3.png)
+[![](./assets/1576047982336-1576047982336-png)](https://hb.bizmrg.com/help-images/logging/Kibana_Dashboard_3.png)
 
 ## Install Filebeat
 
@@ -499,19 +499,19 @@ After starting Filebeat, Kibana access logs go to Logstash, then to Elasticsearc
 
 1. Go to Kibana, click the gear in the left menu, select Kibana > Index Patterns and click Create Index Pattern.
 
-[![](./assets/1576061057996-1576061057996.png)](https://hb.bizmrg.com/help-images/logging/Template-1.png)
+[![](./assets/1576061057996-1576061057996-png)](https://hb.bizmrg.com/help-images/logging/Template-1.png)
 
 2. To select all entries, enter nginx-\* in the Index pattern field and click Next step.
 
-[![](./assets/1576061025693-1576061025693.png)](https://hb.bizmrg.com/help-images/logging/Template-2.png)
+[![](./assets/1576061025693-1576061025693-png)](https://hb.bizmrg.com/help-images/logging/Template-2.png)
 
 3. To use timestamps from log files, select @timestamp in the Time Filter field name and click Create index pattern.
 
-[![](./assets/1576060887959-1576060887959.png)](https://hb.bizmrg.com/help-images/logging/Template-3.png)
+[![](./assets/1576060887959-1576060887959-png)](https://hb.bizmrg.com/help-images/logging/Template-3.png)
 
 An index pattern will be created.
 
-[![](./assets/1576063973675-1576063973675.png)](https://hb.bizmrg.com/help-images/logging/Template-4.png)
+[![](./assets/1576063973675-1576063973675-png)](https://hb.bizmrg.com/help-images/logging/Template-4.png)
 
 To see the logs that got into Elasticsearch, go to Discover.
 
@@ -523,19 +523,19 @@ Let's build the first visualization - top 10 clients.
 
 1. Select Visualizations from the left menu and click the Create new visualization button.
 
-[![](./assets/1576064128640-1576064128640.png)](https://hb.bizmrg.com/help-images/logging/Visualisation_1.png)
+[![](./assets/1576064128640-1576064128640-png)](https://hb.bizmrg.com/help-images/logging/Visualisation_1.png)
 
 2. Select Vertical bar.
 
-![](./assets/1576064583763-1576064583763.png)
+![](./assets/1576064583763-1576064583763-png)
 
 3. Select the nginx-\* template.
 
-![](./assets/1576065003535-1576065003535.png)
+![](./assets/1576065003535-1576065003535-png)
 
 4. Add an X axis.
 
-[![](./assets/1576065045921-1576065045921.png)](https://hb.bizmrg.com/help-images/logging/Visualisation-4.png)
+[![](./assets/1576065045921-1576065045921-png)](https://hb.bizmrg.com/help-images/logging/Visualisation-4.png)
 
 5. Enter data:
 
@@ -544,11 +544,11 @@ Let's build the first visualization - top 10 clients.
 - Size: 10 — 10 top values.
 - Custom Label: Top 10 clients — the name of the visualization.
 
-[![](./assets/1576065062374-1576065062374.png)](https://hb.bizmrg.com/help-images/logging/Visualisation-5.png)
+[![](./assets/1576065062374-1576065062374-png)](https://hb.bizmrg.com/help-images/logging/Visualisation-5.png)
 
 6. Run the query and save the visualization.
 
-[![](./assets/1576065262380-1576065262380.png)](https://hb.bizmrg.com/help-images/logging/Visualisation-6.png)
+[![](./assets/1576065262380-1576065262380-png)](https://hb.bizmrg.com/help-images/logging/Visualisation-6.png)
 
 As a result, the visualization shows the top 10 IP addresses from which requests were made.
 
@@ -560,7 +560,7 @@ Let's build a second visualization - a pie chart showing the top 5 countries fro
 4. Add an X axis.
 5. To display data in slices, select Add bucket / Split slices.
 
-[![](./assets/1576065754486-1576065754486.png)](https://hb.bizmrg.com/help-images/logging/Visualisation_21.png)
+[![](./assets/1576065754486-1576065754486-png)](https://hb.bizmrg.com/help-images/logging/Visualisation_21.png)
 
 1. Enter the following data:
 
@@ -569,11 +569,11 @@ Let's build a second visualization - a pie chart showing the top 5 countries fro
 - Size:5 — select top 5.
 - Custom label: Top 5 countries — chart title.
 
-[![](./assets/1576065921656-1576065921656.png)](https://hb.bizmrg.com/help-images/logging/Visualisation_22.png)
+[![](./assets/1576065921656-1576065921656-png)](https://hb.bizmrg.com/help-images/logging/Visualisation_22.png)
 
 9. Run the query and save the visualization.
 
-[![](./assets/1576065939964-1576065939964.png)](https://hb.bizmrg.com/help-images/logging/Visualisation_23.png)
+[![](./assets/1576065939964-1576065939964-png)](https://hb.bizmrg.com/help-images/logging/Visualisation_23.png)
 
 The graph will display the top 5 countries from which there was access.
 
@@ -587,7 +587,7 @@ Let's build the third visualization - a graph of the number of requests, divided
 6. To get a sample of the number of server responses "200 OK" per unit of time on the second chart, click "+", select a different color, specify Responce:200 in the title, response:200 in the query string.
 7. Click "+" and add the 302 response code in the same way. Then save the visualization.
 
-[![](./assets/1576067043735-1576067043735.png)](https://hb.bizmrg.com/help-images/logging/Visualisation_32.png)
+[![](./assets/1576067043735-1576067043735-png)](https://hb.bizmrg.com/help-images/logging/Visualisation_32.png)
 
 ## Kibana Dashboard setup
 
@@ -595,19 +595,19 @@ Kibana Dashboard is a set of visualizations.
 
 1. Click Dashboards, then Create New Dashboard.
 
-[![](./assets/1576067237826-1576067237826.png)](https://hb.bizmrg.com/help-images/logging/Dashboard_1.png)
+[![](./assets/1576067237826-1576067237826-png)](https://hb.bizmrg.com/help-images/logging/Dashboard_1.png)
 
 2. On the top menu, click Add.
 
-[![](./assets/1576067256219-1576067256219.png)](https://hb.bizmrg.com/help-images/logging/Dashboard_2.png)
+[![](./assets/1576067256219-1576067256219-png)](https://hb.bizmrg.com/help-images/logging/Dashboard_2.png)
 
 3. In the window that opens, select the visualizations you created.
 
-[![](./assets/1576067130968-1576067130968.png)](https://hb.bizmrg.com/help-images/logging/Dashboard_3.png)
+[![](./assets/1576067130968-1576067130968-png)](https://hb.bizmrg.com/help-images/logging/Dashboard_3.png)
 
 4. Reorder and resize the visualizations as needed, then click Save.
 
-[![](./assets/1576067332838-1576067332838.png)](https://hb.bizmrg.com/help-images/logging/Dashboard_4.png)
+[![](./assets/1576067332838-1576067332838-png)](https://hb.bizmrg.com/help-images/logging/Dashboard_4.png)
 
 ## Feedback
 

@@ -146,7 +146,7 @@ sudo nano wp-config.php
 
 4. In the wp-config.php file, find the following lines:
 
-![](./assets/1552420163702-1552420163702.png)
+![](./assets/1552420163702-1552420163702-png)
 
 5. In the wp-config.php file:
 
@@ -220,7 +220,7 @@ To install WordPress:
 
 2. Select the system language and click the **Continue** button:
 
-![](./assets/1552420255568-1552420255568.png)
+![](./assets/1552420255568-1552420255568-png)
 
 3. On the settings page:
 
@@ -239,15 +239,15 @@ Using a weak password leads to a decrease in the network security of the site, s
 - If necessary, adjust the visibility of the site for search engines.
 - Click the **Install WordPress** button:
 
-![](./assets/1552420308119-1552420308119.png)
+![](./assets/1552420308119-1552420308119-png)
 
 4. Once Wordpress is installed, login:
 
-![](./assets/1552418975948-1552418975948.png)
+![](./assets/1552418975948-1552418975948-png)
 
 This will open the WordPress home page:
 
-![](./assets/1552420341995-1552420341995.png)
+![](./assets/1552420341995-1552420341995-png)
 
 ## **Feedback**
 

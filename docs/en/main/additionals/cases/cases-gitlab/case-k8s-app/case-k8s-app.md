@@ -14,7 +14,7 @@ For this:
 
 1. Log in to the Gitlab web interface with administrator rights:
 
-![](./assets/1583699032662-1583699032662.png)
+![](./assets/1583699032662-1583699032662-png)
 
 2. Copy the registration token and run the following in the console on the server where Gitlab-runner is installed:
 
@@ -34,15 +34,15 @@ root@ubuntu-standard-2-4-40gb:~# docker exec -it gitlab-runner gitlab-runner reg
 
 As a result, runner will be displayed in the web interface:
 
-![](./assets/1583699032286-1583699032286.png)
+![](./assets/1583699032286-1583699032286-png)
 
 3. Set the runtime variables. To do this, select Settings / CI CD and next to Variables click Expand:
 
-![](./assets/1583699032764-1583699032764.png)
+![](./assets/1583699032764-1583699032764-png)
 
 4. Set a few variables that will be used later in the autobuild file `.gitlab-ci.yml`:
 
-![](./assets/1583699033010-1583699033010.png)
+![](./assets/1583699033010-1583699033010-png)
 
 Variables:
 
@@ -136,23 +136,23 @@ As soon as the `.gitlab-ci.yml` file appears in the repository, Gitlab will auto
 
 You can see how the build is going in the Gitlab web interface in the project, CI / CD / Pipelines:
 
-![](./assets/1583700761304-1583700761304.png)
+![](./assets/1583700761304-1583700761304-png)
 
 By clicking on running, you can see the current progress of the build:
 
-![](./assets/1583700787348-1583700787348.png)
+![](./assets/1583700787348-1583700787348-png)
 
 By clicking on the build stage, you can see the build console and what is happening in it. Example for the build stage:
 
-![](./assets/1583700831019-1583700831019.png)
+![](./assets/1583700831019-1583700831019-png)
 
 Example for the release stage:
 
-![](./assets/1583700851963-1583700851963.png)
+![](./assets/1583700851963-1583700851963-png)
 
 The console logs show that both build and release completed successfully. The assembled image was posted in the Harbor repository, which can be seen in the corresponding web interface:
 
-![](./assets/1583700204079-1583700204079.png)
+![](./assets/1583700204079-1583700204079-png)
 
 ## Deploying an application to a Kubernetes cluster
 
@@ -439,15 +439,15 @@ token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZp
 
 6. Go to the Gitlab admin interface and click Add Kubernetes Cluster:
 
-![](./assets/1583702333521-1583702333521.png)
+![](./assets/1583702333521-1583702333521-png)
 
 7. Select the Add Existing cluster tab, enter the previously remembered parameters (API URL, PEM, Token) and click Add Kubernetes Cluster:
 
-![](./assets/1583702864976-1583702864976.png)
+![](./assets/1583702864976-1583702864976-png)
 
 8. Cluster added:
 
-![](./assets/1583702901138-1583702901138.png)
+![](./assets/1583702901138-1583702901138-png)
 
 Place the files `deployment.yaml`, `service.yaml`, `ingress.yaml` in the deployments folder of the project.
 
@@ -522,7 +522,7 @@ The last command restarts the deployment to download the new version of the appl
 
 The result of executing the deploy section:
 
-![](./assets/1583703066298-1583703066298.png)
+![](./assets/1583703066298-1583703066298-png)
 
 9. Check what was created in the cluster. We look at the namespace:
 

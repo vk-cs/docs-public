@@ -11,7 +11,7 @@ To view the network topology of an individual project:
 1. Select the project and region.
 1. Go to **Virtual networks** → **Network topology**.
 
-![](./assets/view-topology.png)
+![](./assets/view-topology-png)
 
 ## Topology management
 

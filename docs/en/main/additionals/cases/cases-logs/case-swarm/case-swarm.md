@@ -17,7 +17,7 @@ If you use other servers and hardware, some script steps may differ from those d
 
 ## Scheme of work
 
-**![](./assets/1575015458286-1575015458286.png)**
+**![](./assets/1575015458286-1575015458286-png)**
 
 **Docker Swarm** is Docker in cluster mode. A cluster can consist of one node or several nodes. For this scenario, one node is enough.
 
@@ -196,7 +196,7 @@ oejvg6xgzcwj . . blog_wordpress . . replicated . . 1/1 . . . wordpress:latest
 
 5. In the address bar of the browser, enter the IP address of the server and finish setting up Wordpress:
 
-[![](./assets/1575017648846-1575017648846.png)](https://hb.bizmrg.com/help-images/logging/wordpress_install_final.png)
+[![](./assets/1575017648846-1575017648846-png)](https://hb.bizmrg.com/help-images/logging/wordpress_install_final.png)
 
 The result is a system consisting of three containers: a MySQL database, Nginx as a frontend proxy, and an Apache/Modphp container for running the Wordpress codebase. Each container will have its own logs, which we will add for collection and processing.
 
@@ -315,23 +315,23 @@ To view logs:
 
 1. In a browser, go to the Kibana web console, then click on the Management / Index patterns link.
 
-[![](./assets/1575019843476-1575019843476.png)](https://hb.bizmrg.com/help-images/logging/Kibana1.png)
+[![](./assets/1575019843476-1575019843476-png)](https://hb.bizmrg.com/help-images/logging/Kibana1.png)
 
 2. In the Index Pattern input window, enter logstash-\* and click Next Step.
 
-[![](./assets/1575019924909-1575019924909.png)](https://hb.bizmrg.com/help-images/logging/Kibana2.png)
+[![](./assets/1575019924909-1575019924909-png)](https://hb.bizmrg.com/help-images/logging/Kibana2.png)
 
 3. In the Time filter field name window, select @timestamp and click Create index pattern:
 
-[![](./assets/1575019947600-1575019947600.png)](https://hb.bizmrg.com/help-images/logging/Kibana3.png)
+[![](./assets/1575019947600-1575019947600-png)](https://hb.bizmrg.com/help-images/logging/Kibana3.png)
 
 4. Index pattern created.
 
-[![](./assets/1575019959612-1575019959612.png)](https://hb.bizmrg.com/help-images/logging/Kibana4.png)
+[![](./assets/1575019959612-1575019959612-png)](https://hb.bizmrg.com/help-images/logging/Kibana4.png)
 
 5. Go to Discover, select an index. There will be container logs:
 
-[![](./assets/1575019989698-1575019989698.png)](https://hb.bizmrg.com/help-images/logging/Kibana5.png)
+[![](./assets/1575019989698-1575019989698-png)](https://hb.bizmrg.com/help-images/logging/Kibana5.png)
 
 Next, try creating a couple of test posts in Wordpress and look in Kibana for changes in the logs.
 

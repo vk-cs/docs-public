@@ -15,7 +15,7 @@ This framework can work both in the Hadoop cluster environment under YARN contro
 
 Supports multiple distributed storage systems - HDFS, OpenStack Swift, NoSQL, Cassandra, Amazon S3.
 
-![](./assets/1598910639790-cluster-overview.png)
+![](./assets/1598910639790-cluster-overview-png)
 
 Spark consists of 4 functional modules working within one data cluster and simultaneously distributed horizontally across the entire cluster of computers running Hadoop.
 
@@ -45,11 +45,11 @@ Applications running on HDFS need streaming access to their datasets. HDFS is mo
 
 HDFS has a master / slave architecture. An HDFS cluster consists of a single NameNode, the master server that manages the file system namespace and regulates client file access. In addition, there are several DataNodes that manage the storage connected to the nodes. HDFS provides a file system namespace and allows you to store user data in files. Internally, the file is split into one or more blocks, and these blocks are stored in a set of nodes. The NameNode performs file system namespace operations such as opening, closing, renaming files and directories. DataNodes are responsible for serving read and write requests from file system clients. DataNodes also perform block creation, deletion, and replication on the NameNode command.
 
-![](./assets/1598866522501-hdfsarchitecture.png)
+![](./assets/1598866522501-hdfsarchitecture-png)
 
 In the Ambari interface, to manage the HDFS component, open the appropriate tab and open the drop-down menu "Service Actions":
 
-![](./assets/1601848095842-sp1.png)
+![](./assets/1601848095842-sp1-png)
 
 **YARN**
 
@@ -57,7 +57,7 @@ The fundamental idea behind YARN is to separate resource management and job sche
 
 ResourseManager and NodeManager form the data computation structure. ResouresManager has the highest status and allocates resources among all applications in the system. NodeManager is an infrastructure agent for each machine that is responsible for containers, monitors their resource use (processor, memory, disk, network) and reports this to RM.
 
-![](./assets/1598883322017-yarn_architecture.gif)
+![](./assets/1598883322017-yarn_architecture-gif)
 
 RM has two main components: Scheduler and ApplicationManager.
 
@@ -67,7 +67,7 @@ The ApplicationManager is responsible for accepting submitted jobs, negotiating 
 
 To control the YARN component in the Ambari interface, open the appropriate tab and open the drop-down menu "Service Actions":
 
-![](./assets/1601848129042-sp2.png)
+![](./assets/1601848129042-sp2-png)
 
 **MapReduce2**
 
@@ -79,7 +79,7 @@ Typically, compute and storage nodes are the same, that is, the MapReduce infras
 
 To control the MapReduce2 component in the Ambari interface, open the appropriate tab and open the "Service Actions" drop-down menu:
 
-![](./assets/1601848162623-sp3.png)
+![](./assets/1601848162623-sp3-png)
 
 **Hive**
 
@@ -89,7 +89,7 @@ Hive queries are written in the HiveQL query language, which is based on the SQL
 
 To control the Hive component in the Ambari interface, open the appropriate tab and open the drop-down menu "Service Actions":
 
-![](./assets/1601848663087-sp4.png)
+![](./assets/1601848663087-sp4-png)
 
 **Pig**
 
@@ -103,7 +103,7 @@ Apache Pig provides many built-in operators to support data operations like join
 
 In the Ambari interface, to control the Pig component, open the appropriate tab and open the drop-down menu "Service Actions":
 
-![](./assets/1601849134112-cg5.png)
+![](./assets/1601849134112-cg5-png)
 
 **Sqoop**
 
@@ -115,7 +115,7 @@ Sqoop supports incremental loading of a single table or freeform SQL query, as w
 
 In the Ambari interface, to control the Sqoop component, open the appropriate tab and open the drop-down menu "Service Actions":
 
-![](./assets/1601849569381-sp6.png)
+![](./assets/1601849569381-sp6-png)
 
 **Oozie**
 
@@ -123,7 +123,7 @@ Apache Oozie is an open source project based on Java ™ technology that makes i
 
 To control the Oozie component in the Ambari interface, open the appropriate tab and open the drop-down menu "Service Actions":
 
-![](./assets/1601850448167-ozi.png)
+![](./assets/1601850448167-ozi-png)
 
 **ZooKeeper**
 
@@ -135,7 +135,7 @@ ZooKeeper simulates a virtual tree-like file system of interconnected nodes, whi
 
 To control the Zookeeper component in the Ambari interface, open the appropriate tab and open the "Service Actions" drop-down menu:
 
-![](./assets/1601845440719-sp11.png)
+![](./assets/1601845440719-sp11-png)
 
 **AmbariMetrics**
 
@@ -148,7 +148,7 @@ Ambari Metrics System (AMS) - Collects, aggregates and maintains system metrics 
 
 In the Ambari interface, to control the Ambari Metrics component, open the appropriate tab and open the "Actions" drop-down menu:
 
-![](./assets/1601847857955-s12.png)
+![](./assets/1601847857955-s12-png)
 
 **Zeppelin Notebook**
 
@@ -158,4 +158,4 @@ In terms of working with big data, the built-in integration with Apache Spark de
 
 To control the Zeppelin Notebook component in the Ambari interface, open the appropriate tab and open the drop-down menu "Service Actions":
 
-![](./assets/1601850415891-ceppelin.png)
+![](./assets/1601850415891-ceppelin-png)

@@ -12,7 +12,7 @@ ZooKeeper simulates a virtual tree-like file system of interconnected nodes, whi
 
 In the Ambari interface, to control the Zookeeper component, open the appropriate tab and open the "Actions" drop-down menu:
 
-![](./assets/1601845501406-d11.png)
+![](./assets/1601845501406-d11-png)
 
 ## Storm
 
@@ -24,11 +24,11 @@ Apache Storm is a free open source distributed real-time computing system . Stor
 
 Apache Storm reads a stream of raw data at the input, passes it through a series of small handlers, and then feeds the output to the output. The diagram below illustrates the basic concepts of Apache Storm:
 
-![](./assets/1601850108811-apache_shtorm_core_concept.png)
+![](./assets/1601850108811-apache_shtorm_core_concept-png)
 
 In the Ambari interface, to control the Storm component, open the appropriate tab and open the "Actions" drop-down menu:
 
-![](./assets/1601850213507-d14.png)
+![](./assets/1601850213507-d14-png)
 
 ## Infra solr
 
@@ -38,7 +38,7 @@ Solr operates as a stand-alone full text search engine. It uses the Lucene Java 
 
 To control the Solr component in the Ambari interface, open the corresponding tab and open the "Actions" drop-down menu:
 
-![](./assets/1601849912980-d13.png)
+![](./assets/1601849912980-d13-png)
 
 ## AmbariMetrics
 
@@ -51,7 +51,7 @@ Ambari Metrics System (AMS) - Collects, aggregates and maintains system metrics 
 
 In the Ambari interface, to control the Ambari Metrics component, open the appropriate tab and open the "Actions" drop-down menu:
 
-![](./assets/1601847822967-d12.png)
+![](./assets/1601847822967-d12-png)
 
 ## Kafka
 
@@ -68,7 +68,7 @@ Kafka is typically used as an event handling system for two classes of applicati
 
 To control the Kafka component in the Ambari interface, open the appropriate tab and open the "Actions" drop-down menu:
 
-![](./assets/1601851797294-kafka.png)
+![](./assets/1601851797294-kafka-png)
 
 ## NiFi
 
@@ -78,4 +78,4 @@ Apache NiFi uses the concept of flow, which is seen as a sequence of operations:
 
 In the Ambari interface, to control the NiFi component, open the appropriate tab and open the "Actions" drop-down menu:
 
-![](./assets/1601852027253-nifi.png)
+![](./assets/1601852027253-nifi-png)

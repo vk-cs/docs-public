@@ -86,7 +86,7 @@ Before installing ModX:
 
 1. Go to [https://modx.com/download](https://modx.com/download) and note the ModX version number:
 
-![](./assets/1558298095818-1558298095818.jpeg)
+![](./assets/1558298095818-1558298095818-jpeg)
 
 2. Open a terminal window.
 3. Install the ZIP archiver by running the command:
@@ -233,7 +233,7 @@ DocumentRoot "/var/www/html/modx"
 
 - Find the section:
 
-**![](./assets/1558298095707-1558298095707.jpeg)**
+**![](./assets/1558298095707-1558298095707-jpeg)**
 
 - In this section, replace the line **AllowOverride None** with the line **AllowOverride All**.
 - Save changes using CTRL+O and finish editing using CTRL+X.
@@ -256,21 +256,21 @@ As a result, the ModX installation wizard will be launched, follow its instructi
 
 1. Select the installation language:
 
-![](./assets/1558298095979-1558298095979.jpeg)
+![](./assets/1558298095979-1558298095979-jpeg)
 
 It is recommended to select English - **en**.
 
 2. Click the **Next** button:
 
-![](./assets/1558298096388-1558298096388.jpeg)
+![](./assets/1558298096388-1558298096388-jpeg)
 
 3. Select installation options and click **Next**:
 
-**![](./assets/1558298613572-1558298613572.jpeg)**
+**![](./assets/1558298613572-1558298613572-jpeg)**
 
 4. Configure the database:
 
-**![](./assets/1558298627040-1558298627040.jpeg)**
+**![](./assets/1558298627040-1558298627040-jpeg)**
 
 Use the database username, password, and database name that you specified when setting up the MySQL DB. Other options are recommended to be left at their default values.
 
@@ -282,7 +282,7 @@ Connecting to database server: Success!
 
 6. Select connection encoding:
 
-**![](./assets/1558298639674-1558298639674.jpeg)**
+**![](./assets/1558298639674-1558298639674-jpeg)**
 
 It is recommended to use the parameters given in the example. Upon successful creation or selection from the database, the following line will be displayed:
 
@@ -292,27 +292,27 @@ Database check: Success!
 
 7. Specify the data for creating a ModX administrator account and click the **Next** button:
 
-**![](./assets/1558298650045-1558298650045.jpeg)**
+**![](./assets/1558298650045-1558298650045-jpeg)**
 
 8. Make sure that all verification options have the status **OK** and click the **Install** button:
 
-**![](./assets/1558298665701-1558298665701.jpeg)**
+**![](./assets/1558298665701-1558298665701-jpeg)**
 
 9. If the ModX installation was successful, the installation report page will open. Review any messages or warnings that occurred during the installation process. Click the **Next** button to complete the installation:
 
-**![](./assets/1558298684351-1558298684351.jpeg)**
+**![](./assets/1558298684351-1558298684351-jpeg)**
 
 10. To authenticate and get started, click the **Login** button:
 
-**![](./assets/1558298694059-1558298694059.jpeg)**
+**![](./assets/1558298694059-1558298694059-jpeg)**
 
 11. Enter the username and password you provided when creating the ModX administrator account:
 
-**![](./assets/1558298712940-1558298712939.jpeg)**
+**![](./assets/1558298712940-1558298712939-jpeg)**
 
 This will open the main ModX page:
 
-**![](./assets/1558298722317-1558298722317.jpeg)**
+**![](./assets/1558298722317-1558298722317-jpeg)**
 
 12. To increase the security of ModX, do the following:
 
@@ -339,7 +339,7 @@ sudo nano .htaccess
 
 - In the .htaccess file, find the **IndexIgnore** parameter and replace it with the lines:\*\*
 
-![](./assets/1558298281980-1558298281980.jpeg)\*\*
+![](./assets/1558298281980-1558298281980-jpeg)\*\*
 
 Save your changes using the keyboard shortcut CTRL+O and finish editing using the keyboard shortcut CTRL+X.
 

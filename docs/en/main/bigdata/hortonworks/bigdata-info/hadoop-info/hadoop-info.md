@@ -19,7 +19,7 @@ Applications running on HDFS need streaming access to their datasets. HDFS is mo
 
 HDFS has a master / slave architecture. An HDFS cluster consists of a single NameNode, the master server that manages the file system namespace and regulates client file access. In addition, there are several DataNodes that manage the storage connected to the nodes. HDFS provides a file system namespace and allows you to store user data in files. Internally, the file is split into one or more blocks, and these blocks are stored in a set of nodes. The NameNode performs file system namespace operations such as opening, closing, renaming files and directories. DataNodes are responsible for serving read and write requests from file system clients. DataNodes also perform block creation, deletion, and replication on the NameNode command.
 
-![](./assets/1598866522501-hdfsarchitecture.png)
+![](./assets/1598866522501-hdfsarchitecture-png)
 
 ## Hadoop YARN
 
@@ -27,7 +27,7 @@ The fundamental idea behind YARN is to separate resource management and job sche
 
 ResourseManager and NodeManager form the data computation structure. ResouresManager has the highest status and allocates resources among all applications in the system. NodeManager is an infrastructure agent for each machine that is responsible for containers, monitors their resource use (processor, memory, disk, network) and reports this to RM.
 
-![](./assets/1598883322017-yarn_architecture.gif)
+![](./assets/1598883322017-yarn_architecture-gif)
 
 RM has two main components: Scheduler and ApplicationManager.
 

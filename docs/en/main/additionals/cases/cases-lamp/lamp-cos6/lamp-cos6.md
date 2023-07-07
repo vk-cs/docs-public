@@ -108,7 +108,7 @@ sudo chkconfig httpd on
 
 If the installation of the Apache web server was successful, you will see a web server test page similar to the following:
 
-**![](./assets/1557695489851-1557695489851.jpeg)**
+**![](./assets/1557695489851-1557695489851-jpeg)**
 
 ## MySQL database installation
 
@@ -220,7 +220,7 @@ phpinfo();
 
 As a result, the following page should be displayed:
 
-**![](./assets/1557695836526-1557695836526.jpeg)**
+**![](./assets/1557695836526-1557695836526-jpeg)**
 
 <warn>
 

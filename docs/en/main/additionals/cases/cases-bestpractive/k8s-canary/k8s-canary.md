@@ -27,7 +27,7 @@ For documentation on Canary Deployments on Kubernetes, see [here](https://kubern
 
 ## **Scheme of the booth**
 
-**![](./assets/1556575126475-1556575126475.png)**
+**![](./assets/1556575126475-1556575126475-png)**
 
 Ingress is a resource (object) that contains instructions for routing traffic in a cluster, typically using HTTP. In this case, Current and Canary are the Ingress configurations for the versions of the applications we are configuring Canary Deployment for.
 
@@ -175,23 +175,23 @@ kubectl apply -f http-svc.ingress.canary -n echo-canary
 
 Login to the Kubernetes Dashboard using the token you received after creating the cluster:
 
-**![](./assets/1556659848510-1556659848510.png)**
+**![](./assets/1556659848510-1556659848510-png)**
 
 To view the available Namespaces, click the appropriate button in the sidebar:
 
-**![](./assets/1556659872241-1556659872241.png)**
+**![](./assets/1556659872241-1556659872241-png)**
 
 To view a list of active Ingresses and get their external IP address, switch the current Namespace to All namespaces:
 
-**![](./assets/1556659898530-1556659898530.png)**
+**![](./assets/1556659898530-1556659898530-png)**
 
 Then, at the bottom of the sidebar, select Ingresses:
 
-**![](./assets/1556658145271-1556658145271.png)**
+**![](./assets/1556658145271-1556658145271-png)**
 
 As a result, a list of all available Ingresses will be displayed on the screen. Canary and Production must have the same IP address:
 
-**![](./assets/1556659987463-1556659987463.png)**
+**![](./assets/1556659987463-1556659987463-png)**
 
 Check that the requests are distributed according to the configuration file. To do this, take a Ruby script:
 

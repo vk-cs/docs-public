@@ -86,7 +86,7 @@ Before installing Joomla!:
 
 1. Go to [website](https://github.com/joomla/joomla-cms/releases) and note the latest Joomla! version number:
 
-![](./assets/1553373673333-1553373673333.png)
+![](./assets/1553373673333-1553373673333-png)
 
 2. Open a terminal window.
 3. Change to your home directory by running the command:
@@ -228,7 +228,7 @@ To install Joomla! in the address bar of the web browser, enter the external IP 
 
 1. On the **Site Configuration** page, specify the site name, administrator account information, and click the **Next** button:
 
-**![](./assets/1553375315348-1553375315348.png)**
+**![](./assets/1553375315348-1553375315348-png)**
 
 2. On the **Database Configuration** page, specify the database settings and click the **Next** button:
 
@@ -240,20 +240,20 @@ In the database settings, enter the database username, password, and database na
 
 </info>
 
-**![](./assets/1553375380629-1553375380629.png)**
+**![](./assets/1553375380629-1553375380629-png)**
 
 3. On the last page, check the selected Joomla! options, email them if necessary, and click the **Install** button:
 
-![](./assets/1553375420845-1553375420845.png)
+![](./assets/1553375420845-1553375420845-png)
 
 4. When Joomla! will be installed, a page with the relevant information will be displayed:
 
-![](./assets/1553375460786-1553375460786.png)
+![](./assets/1553375460786-1553375460786-png)
 
 5. To complete the installation, click the **Remove Installation Directory** button.
 6. To go to the main page of your site, click the **Site** button:
 
-**![](./assets/1553375486854-1553375486854.png)**
+**![](./assets/1553375486854-1553375486854-png)**
 
 ## Feedback
 

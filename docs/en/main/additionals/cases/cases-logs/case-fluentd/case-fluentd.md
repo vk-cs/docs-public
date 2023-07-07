@@ -29,7 +29,7 @@ Therefore, to work with application logs in Kubernetes, a system is needed to co
 
 The scheme of the logging system in the Kubernetes cluster:
 
-![](./assets/1579529210340-1579529210340.png)
+![](./assets/1579529210340-1579529210340-png)
 
 Depending on the amount of information required in Elasticsearch processing, you can choose different ways to install the EFK stack:
 
@@ -153,7 +153,7 @@ kubectl port-forward --namespace kube-logging kibana-pod_hash_id 5601:5601
 localhost:5601
 ```
 
-![](./assets/1579689925674-1579689925674.png)
+![](./assets/1579689925674-1579689925674-png)
 
 ## Installing fluentd log aggregators in kubernetes cluster
 

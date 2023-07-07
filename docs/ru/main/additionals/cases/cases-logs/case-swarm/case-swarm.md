@@ -17,7 +17,7 @@ Elasticsearch и Kibana необходимо установить как [при
 
 ## Схема работы
 
-**![](./assets/1575015458286-1575015458286.png)**
+**![](./assets/1575015458286-1575015458286-png)**
 
 **Docker Swarm** - это Docker в кластерном режиме. Кластер может состоять из одной ноды или нескольких нод. Для данного сценария достаточно одной ноды.
 
@@ -197,7 +197,7 @@ oejvg6xgzcwj        blog_wordpress      replicated          1/1   �
 
 5.  В адресной строке браузера введите IP-адрес сервера и закончите настройку Wordpress:
 
-[![](./assets/1575017648846-1575017648846.png)](https://hb.bizmrg.com/help-images/logging/wordpress_install_final.png)
+[![](./assets/1575017648846-1575017648846-png)](https://hb.bizmrg.com/help-images/logging/wordpress_install_final.png)
 
 В результате получится система, состоящая из трех контейнеров: БД MySQL, Nginx в качестве frontend proxy и контейнер с Apache/Modphp для работы кодовой базы Wordpress. У каждого контейнера будут свои логи, которые мы добавим для сбора и обработки.
 
@@ -317,23 +317,23 @@ keep_time_key true
 
 1.  В браузере перейдите в веб-консоль Kibana, затем щелкните ссылку Management / Index patterns.
 
-[![](./assets/1575019843476-1575019843476.png)](https://hb.bizmrg.com/help-images/logging/Kibana1.png)
+[![](./assets/1575019843476-1575019843476-png)](https://hb.bizmrg.com/help-images/logging/Kibana1.png)
 
 2.  В окне ввода Index Pattern введите logstash-\* и нажмите Next Step.
 
-[![](./assets/1575019924909-1575019924909.png)](https://hb.bizmrg.com/help-images/logging/Kibana2.png)
+[![](./assets/1575019924909-1575019924909-png)](https://hb.bizmrg.com/help-images/logging/Kibana2.png)
 
 3.  В окне Time filter field name выберите  @timestamp и нажмите Create index pattern:
 
-[![](./assets/1575019947600-1575019947600.png)](https://hb.bizmrg.com/help-images/logging/Kibana3.png)
+[![](./assets/1575019947600-1575019947600-png)](https://hb.bizmrg.com/help-images/logging/Kibana3.png)
 
 4.  Index pattern создан.
 
-[![](./assets/1575019959612-1575019959612.png)](https://hb.bizmrg.com/help-images/logging/Kibana4.png)
+[![](./assets/1575019959612-1575019959612-png)](https://hb.bizmrg.com/help-images/logging/Kibana4.png)
 
 5.  Перейдите в Discover, выберите индекс. Там будут логи контейнеров:
 
-[![](./assets/1575019989698-1575019989698.png)](https://hb.bizmrg.com/help-images/logging/Kibana5.png)
+[![](./assets/1575019989698-1575019989698-png)](https://hb.bizmrg.com/help-images/logging/Kibana5.png)
 
 Далее попробуйте создать в Wordpress пару тестовых постов и посмотреть в Kibana на изменение логов.
 

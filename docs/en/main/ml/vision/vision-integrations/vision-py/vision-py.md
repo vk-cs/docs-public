@@ -1,6 +1,6 @@
 Let's try to recognize the faces in the photo:
 
-![](./assets/7e4c7656324f75320702af5205b1b817.jpeg)
+![](./assets/7e4c7656324f75320702af5205b1b817-jpeg)
 
 Download the file [smarty.py](https://cloud.mail.ru/public/2xP1/vWgqf332Z).
 
@@ -49,7 +49,7 @@ Pay attention to the parameters "space":"1" and "create_new":false, their meanin
 
 Let's try to add a person to the database. There is one person in this photo:
 
-![](./assets/cac1f88286d6ae10c9abaf59abe8a944.jpeg)
+![](./assets/cac1f88286d6ae10c9abaf59abe8a944-jpeg)
 
 We will establish that this person has id=1 in the database. Let's do this with the following request and the "person_id":1 parameter.
 

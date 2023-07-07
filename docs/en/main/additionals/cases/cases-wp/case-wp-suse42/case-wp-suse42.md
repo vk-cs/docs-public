@@ -180,7 +180,7 @@ sudo nano wp-config.php
 
 14. In the wp-config.php file, find the following lines:
 
-![](./assets/1555704465550-1555704465550.png)
+![](./assets/1555704465550-1555704465550-png)
 
 15. Replace the default values ​​with the values ​​that you specified when configuring the MySQL DBMS
 
@@ -224,7 +224,7 @@ To install WordPress:
 
 2. Select the system language and click the **Continue** button:
 
-**![](./assets/1555705461526-1555705461526.png)**
+**![](./assets/1555705461526-1555705461526-png)**
 
 3. On the settings page:
 
@@ -243,15 +243,15 @@ Using a weak password leads to a decrease in the network security of the site, s
 - If necessary, adjust the visibility of the site for search engines.
 - Click the **Install** **WordPress** button:
 
-**![](./assets/1555705531629-1555705531629.png)**
+**![](./assets/1555705531629-1555705531629-png)**
 
 4. Once Wordpress is installed, login:
 
-**![](./assets/1555705599355-1555705599355.png)**
+**![](./assets/1555705599355-1555705599355-png)**
 
 This will open the WordPress home page:
 
-**![](./assets/1555705632823-1555705632823.png)**
+**![](./assets/1555705632823-1555705632823-png)**
 
 ## Feedback
 
