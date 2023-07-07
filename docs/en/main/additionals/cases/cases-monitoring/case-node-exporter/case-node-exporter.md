@@ -12,7 +12,7 @@ When using servers and hardware of other versions, some steps of the script may 
 
 ## Scheme of work
 
-![](./assets/1572591796604-1572591796604.png)
+![](./assets/1572591796604-1572591796604-png)
 
 ## Description of components
 
@@ -169,7 +169,7 @@ Oct 16 07:26:46 ubuntu-basic-1-1-10gb prometheus[3980]: level=info ts=2019-10-16
 
 15. Log in to the Prometheus web console on port 9090:
 
-![](./assets/1572596206027-1572596206027.png)
+![](./assets/1572596206027-1572596206027-png)
 
 ## Install Node_exporter
 
@@ -279,7 +279,7 @@ In the example above, we configured data collection on **localhost** and port 91
 
 If you created a database with Internet access, instead of **localhost** specify the IP address of the database, for example:
 
-![](./assets/1580736225041-1580736225040.png)
+![](./assets/1580736225041-1580736225040-png)
 
 [](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_config)
 
@@ -297,7 +297,7 @@ root@ubuntu-basic-1-1-10gb:~# systemctl reload prometheus.service
 http://<IP address of your PROMETHEUS server>:9090/graph?g0.range_input=1h&g0.expr=rate(node_cpu_seconds_total{mode="system"}[1m])&g0.tab=1
 ```
 
-![](./assets/1572597542956-1572597542956.png)
+![](./assets/1572597542956-1572597542956-png)
 
 5. To view the disk space available to users in a browser, follow the link:
 
@@ -305,7 +305,7 @@ http://<IP address of your PROMETHEUS server>:9090/graph?g0.range_input=1h&g0.ex
 http://<IP address of your PROMETHEUS server>:9090/graph?g0.range_input=1h&g0.expr=node_filesystem_avail_bytes&g0.tab=1
 ```
 
-![](./assets/1572598340837-1572598340837.png)
+![](./assets/1572598340837-1572598340837-png)
 
 6. To view the average incoming traffic through network interfaces (bytes/second) in a browser, follow the link:
 
@@ -321,7 +321,7 @@ http://<IP address of your PROMETHEUS server>:9090/consoles/index.html.example
 
 You will see two links - Node and Prometheus. Node console chart example:
 
-![](./assets/1572598726113-1572598726113.png)
+![](./assets/1572598726113-1572598726113-png)
 
 ## Install Grafana
 
@@ -425,27 +425,27 @@ After launch, Grafana will be available via the http protocol, port 3000. The lo
 
 9. Go to the Grafana web interface under the path Configuration/Data Sources and make sure Datasource Prometheus is active:
 
-**![](./assets/1572600416821-1572600416821.png)**
+**![](./assets/1572600416821-1572600416821-png)**
 
 10. Click Datasource Prometheus, then Test:
 
-**![](./assets/1572600507125-1572600507125.png)**
+**![](./assets/1572600507125-1572600507125-png)**
 
 11. Install Dashboard for Node Exporter visualization ([pre-built Dashboards](https://grafana.com/grafana/dashboards), [popular Dashboard for Node Exporter](https://grafana.com/grafana/dashboards/1860)) . To install in the web interface, go to Dashboards/Manage:
 
-![](./assets/1572598970101-1572598970101.png)
+![](./assets/1572598970101-1572598970101-png)
 
 12. Click Import and in the Grafana.com Dashboard field enter [https://grafana.com/grafana/dashboards/1860:](https://grafana.com/grafana/dashboards/1860:)
 
-**![](./assets/1572600711766-1572600711765.png)**
+**![](./assets/1572600711766-1572600711765-png)**
 
 Click Load, select Datasource Prometheus and click Import:
 
-**![](./assets/1572600758994-1572600758994.png)**
+**![](./assets/1572600758994-1572600758994-png)**
 
 13. Dashboard will open:
 
-![](./assets/1572600780117-1572600780117.png)
+![](./assets/1572600780117-1572600780117-png)
 
 ## Create test load
 
@@ -476,7 +476,7 @@ root@ubuntu-basic-1-1-10gb:~# sysbench mutex --time=60 run
 
 As a result of the test load, graphics in Grafana change:
 
-**![](./assets/1572600938427-1572600938427.png)**
+**![](./assets/1572600938427-1572600938427-png)**
 
 ## Delete
 

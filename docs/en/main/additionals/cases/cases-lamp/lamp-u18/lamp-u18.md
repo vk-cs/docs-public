@@ -58,7 +58,7 @@ To install and perform initial configuration of the Apache web server:
 
 If the installation and configuration of the Apache web server is successful, the following web server default page will be displayed:
 
-![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f4120-2fdirect-2f1552943724393-1552943724393.png)
+![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f4120-2fdirect-2f1552943724393-1552943724393-png)
 
 ## MySQL database installation
 
@@ -178,7 +178,7 @@ sudo nano /var/www/html/info.php
 
 As a result, the following page should be displayed:
 
-![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f4120-2fdirect-2f1552943725418-1552943725418.png)
+![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f4120-2fdirect-2f1552943725418-1552943725418-png)
 
 <warn>
 

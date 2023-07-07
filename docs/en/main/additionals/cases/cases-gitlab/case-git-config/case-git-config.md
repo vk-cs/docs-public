@@ -7,7 +7,7 @@ In this article, we will consider the scheme of work and the sequence of actions
 
 ## Scheme of work
 
-**![](./assets/1583483568224-1583483568224.png)**
+**![](./assets/1583483568224-1583483568224-png)**
 
 Set up Docker on the Ubuntu server, deploy Gitlab and Harbor in it. Gitlab is a full-featured Git server with the ability to store and manage repositories, as well as build tools (pipelines) and delivery (ci / cd). Harbor - registers for storing Docker images. K8s is a Kubernetes cluster in which test application auto-deployment is configured.
 
