@@ -5,9 +5,11 @@
     "metaTitle": "Работа с сетью",
     "metaDescription": "",
     "sectionTitle": "Работа с сетью",
-    "markdown": "",
     "icon": "",
     "infobarItems": null,
-    "weight": 2,
-    "uuid": "a688895b-a9da-412b-8ea3-b7ebbbbfd25e"
+    "weight": 4,
+    "uuid": "a688895b-a9da-412b-8ea3-b7ebbbbfd25e",
+    "additionalUuids": [
+      "328aea81-13b1-4879-932d-4f3d3be77a58"
+    ]
   }
