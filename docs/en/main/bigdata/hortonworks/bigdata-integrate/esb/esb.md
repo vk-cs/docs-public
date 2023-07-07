@@ -26,7 +26,7 @@ Let's say there is a cluster of connected machines that can:
 - ordinal reading of data. Let's say message m1 is received by the cluster at time t1; and message m2 at time T1 + 5. The consumer will read message m1 before m2.
 - provides one-time data delivery. This means that a message sent to the cluster will be guaranteed to the consumer at least once.
 
-![](./assets/1598824864788-simple_kafka.png)
+![](./assets/1598824864788-simple_kafka-png)
 
 ## Scaling
 
@@ -34,4 +34,4 @@ Like most components in the Hadoop ecosystem, a Kafka cluster can scale to an in
 
 Scaling to multiple nodes works in Kafka by dividing topics into multiple sections. For example, when a topic is split into 2 sections, it means that the workload of one topic is split into 2 nodes in the cluster. Thus, it becomes possible not only to select a node for a topic; but also split the topic into multiple nodes.
 
-![](./assets/1598826231363-kafkapatitions.jpg)
+![](./assets/1598826231363-kafkapatitions-jpg)

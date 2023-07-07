@@ -64,7 +64,7 @@ To install and perform initial configuration of the Apache web server:
 
 If the installation and configuration of the Apache web server is successful, the following web server default page will be displayed:
 
-![](./assets/1552419689585-1552419689585.png)
+![](./assets/1552419689585-1552419689585-png)
 
 ## MySQL database installation
 
@@ -158,7 +158,7 @@ sudo nano /var/www/html/info.php
 
 В результате должна отобразится примерно следующая страница:
 
-![](./assets/1552945066673-1552945066673.png)
+![](./assets/1552945066673-1552945066673-png)
 
 <warn>
 

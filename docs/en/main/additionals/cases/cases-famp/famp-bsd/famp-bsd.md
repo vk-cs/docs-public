@@ -34,13 +34,13 @@ Before installing the FAMP stack:
       1. Open the menu using the keyboard shortcut `CTRL+[`;
       1. Select **a** from the menu, then select **a** again;
 
-         **![](./assets/1557001052099-1557001052099.jpeg)**
+         **![](./assets/1557001052099-1557001052099-jpeg)**
 
-         ![](./assets/1557000622996-1557000622996.jpeg)
+         ![](./assets/1557000622996-1557000622996-jpeg)
 
    As a result, the contents of the `resolv.conf` file should look something like this:
 
-   **![](./assets/1557001090271-1557001090271.jpeg)**
+   **![](./assets/1557001090271-1557001090271-jpeg)**
 
 1. Specify the correct value for the mtu parameter for the network interface. For this:
 
@@ -60,7 +60,7 @@ Before installing the FAMP stack:
 
    1. For the desired network interface, find the `mtu <value>` parameter, for example:
 
-      **![](./assets/1557001285314-1557001285314.jpeg)**
+      **![](./assets/1557001285314-1557001285314-jpeg)**
 
    1. Specify a new mtu value by running the command:
 
@@ -144,7 +144,7 @@ To install and perform initial configuration of the Apache web server:
 
 If the installation of the Apache web server was successful, the web server page will load containing the line:
 
-   ![](./assets/1557001866811-1557001866810.jpeg)
+   ![](./assets/1557001866811-1557001866810-jpeg)
 
 ## Install MySQL DBMS (mariadb)
 
@@ -158,7 +158,7 @@ The `mariadb` installation, which is a fork of the MySQL DBMS, is considered as 
    pkg search -o mariadb
    ```
 
-   ![](./assets/1557002384498-1557002384498.jpeg)
+   ![](./assets/1557002384498-1557002384498-jpeg)
 
 1. Select the version of `mariadb` (for example, **mariadb103**) and start the installation by running the command:
 
@@ -229,7 +229,7 @@ To install PHP:
    ls /usr/ports/lang/ | grep php
    ```
 
-   ![](./assets/1557002843363-1557002843363.jpeg)
+   ![](./assets/1557002843363-1557002843363-jpeg)
 
 1. To display all available PHP utilities, use the command:
 
@@ -245,7 +245,7 @@ To install PHP:
 
    When the installation is complete, help information will be displayed containing the configuration of the Apache server, for example:
 
-   **![](./assets/1557002984407-1557002984407.jpeg)**
+   **![](./assets/1557002984407-1557002984407-jpeg)**
 
 1. Create a `php.conf` file by running the command:```
    sudo ee /usr/local/etc/apache24/Includes/php.conf
@@ -300,7 +300,7 @@ To install PHP:
 
       As a result, the following page should be displayed:
 
-      **![](./assets/1557003200841-1557003200841.jpeg)**
+      **![](./assets/1557003200841-1557003200841-jpeg)**
 
    <warn>
 

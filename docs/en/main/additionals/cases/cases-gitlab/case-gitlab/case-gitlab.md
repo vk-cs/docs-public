@@ -178,19 +178,19 @@ At the time of writing, the LetsEncrypt certificate issuance mechanism was not w
 
 3. In the browser, in the search bar, enter the name of the Gitlab server and create an administrator (root) password:
 
-**![](./assets/1583504218728-1583504218728.png)**
+**![](./assets/1583504218728-1583504218728-png)**
 
 Then login:
 
-![](./assets/1583505011617-1583505011617.png)
+![](./assets/1583505011617-1583505011617-png)
 
 4. Go to the administrator zone and choose to create a new user:
 
-**![](./assets/1583505111095-1583505111095.png)**
+**![](./assets/1583505111095-1583505111095-png)**
 
 5. Enter user parameters:
 
-![](./assets/1583505158838-1583505158838.png)
+![](./assets/1583505158838-1583505158838-png)
 
 6. You will receive an email, follow the link and enter your password. Then log in as the new user.
 
@@ -204,19 +204,19 @@ For this:
 
 1. Click Create a project:
 
-![](./assets/1583505808334-1583505808333.png)
+![](./assets/1583505808334-1583505808333-png)
 
 2. Select Import Project, Repo by URL:
 
-![](./assets/1583505908500-1583505908500.png)
+![](./assets/1583505908500-1583505908500-png)
 
 3. Enter the repository name, source repository URL, project slug and create a project:
 
-![](./assets/1583505963970-1583505963970.png)
+![](./assets/1583505963970-1583505963970-png)
 
 4. After a while, the project will be imported:
 
-![](./assets/1583506008973-1583506008973.png)
+![](./assets/1583506008973-1583506008973-png)
 
 5. Create an ssh key to access the repository via Git. To do this, on your workstation in the console, do the following:
 
@@ -246,19 +246,19 @@ The key's randomart image is:
 6. In your home directory in the .ssh folder, a pair of myrepo keys will be created: public and private. Upload the public key to Gitlab. For this:
 1. Go to the Gitlab web interface, click on the icon in the upper right corner, and select Settings:
 
-    **![](./assets/1583505449607-1583505449606.png)**
+    **![](./assets/1583505449607-1583505449606-png)**
 
     2. Select SSH Keys:
 
-    **![](./assets/1583506380799-1583506380799.png)**
+    **![](./assets/1583506380799-1583506380799-png)**
 
     3. In the input field, paste the contents of the `myrepo.pub` file and click Add key:
 
-    **![](./assets/1583506456250-1583506456249.png)**
+    **![](./assets/1583506456250-1583506456249-png)**
 
     As a result, the key will be added:
 
-    ![](./assets/1583506465014-1583506465014.png)
+    ![](./assets/1583506465014-1583506465014-png)
 
 Now with the private key you can access the repository. To make things easier, add the following section to `~/.ssh/config`:
 

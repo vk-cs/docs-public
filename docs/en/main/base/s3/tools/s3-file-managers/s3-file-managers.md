@@ -131,7 +131,7 @@ The program should be installed using the standard user interface of the operati
 
 To connect, add the Cloud Storage service, then enter the account and bucket data:
 
-![](./assets/1598241269853-1598241269853.png)![](./assets/1598241303899-1598241303899.png)![](./assets/1598241345195-1598241345195.png)
+![](./assets/1598241269853-1598241269853-png)![](./assets/1598241303899-1598241303899-png)![](./assets/1598241345195-1598241345195-png)
 
 Where:
 

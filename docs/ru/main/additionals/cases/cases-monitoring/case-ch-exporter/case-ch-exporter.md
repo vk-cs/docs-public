@@ -16,7 +16,7 @@
 
 ## Схема работы
 
-**![](./assets/1573248708605-1573248708605.png)**
+**![](./assets/1573248708605-1573248708605-png)**
 
 Для мониторинга параметров Clickhouse и сбора метрик в Prometheus используется экспортер, который опрашивает сервер Clickhouse и передает данные серверу Prometheus. Данные визуализируются в Grafana с помощью Dashboard.
 
@@ -188,7 +188,7 @@ root@prometheus:~# systemctl reload prometheus.service
 
 После установки и настройки получения данных с сервера Prometheus отобразится примерно следующее:
 
-**[![](./assets/1573251451606-1573251451606.png)](https://hb.bizmrg.com/help-images/monitoring-with-prometheus/clickhouse-exporter/Grafana1.png)**
+**[![](./assets/1573251451606-1573251451606-png)](https://hb.bizmrg.com/help-images/monitoring-with-prometheus/clickhouse-exporter/Grafana1.png)**
 
 ## Создание тестовой нагрузки
 
@@ -230,7 +230,7 @@ root@clickhouse:/usr/share/clickhouse-test/performance# clickhouse performance-t
 
 В результате тестовой нагрузки графики в Grafana изменяться:
 
-**[![](./assets/1573251830540-1573251830540.png)](https://hb.bizmrg.com/help-images/monitoring-with-prometheus/clickhouse-exporter/Grafana_performance.png)**
+**[![](./assets/1573251830540-1573251830540-png)](https://hb.bizmrg.com/help-images/monitoring-with-prometheus/clickhouse-exporter/Grafana_performance.png)**
 
 ## Удаление clickhouse_exporter
 

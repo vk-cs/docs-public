@@ -26,7 +26,7 @@ sudo zipper update
 
 During the execution of this command, enter an additional argument that is responsible for the trust method for the signed security key:
 
-![](./assets/1554622498215-1554622498215.png)
+![](./assets/1554622498215-1554622498215-png)
 
 - If for some reason you want to reject this key and cancel the update, enter **r**.
 - If you trust this key only for the duration of the current update, enter **t**.
@@ -34,7 +34,7 @@ During the execution of this command, enter an additional argument that is respo
 
 To start the update, enter **y**:
 
-![](./assets/1554622498495-1554622498495.png)
+![](./assets/1554622498495-1554622498495-png)
 
 3. Install the Nano text editor by running the command:
 
@@ -105,7 +105,7 @@ sudo nano /srv/www/htdocs/index.html
 
 If the installation of the Apache web server was successful, a page containing the following line will open:
 
-![](./assets/1554625419224-1554625419224.png)
+![](./assets/1554625419224-1554625419224-png)
 
 ## Install MySQL DBMS (mariadb)
 
@@ -122,7 +122,7 @@ To install the MySQL server, enter **y**.
 
 3. To view help information, when the MySQL server installation is complete, type **y**:
 
-![](./assets/1554625522460-1554625522460.png)
+![](./assets/1554625522460-1554625522460-png)
 
 4. Start MySQL as a service by running the command:
 
@@ -226,7 +226,7 @@ phpinfo();
 
 As a result, the following page should be displayed:
 
-![](./assets/1554626348295-1554626348295.png)
+![](./assets/1554626348295-1554626348295-png)
 
 <warn>
 

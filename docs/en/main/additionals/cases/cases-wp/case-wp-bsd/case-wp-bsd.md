@@ -144,7 +144,7 @@ sudo wp-config.php
 
 11. In the wp-config.php file, find the following lines:
 
-**![](./assets/1556975940008-1556975940008.jpeg)**
+**![](./assets/1556975940008-1556975940008-jpeg)**
 
 12. Replace the default values ​​with the values ​​you specified when configuring mariadb
 
@@ -228,17 +228,17 @@ Using a weak password leads to a decrease in the network security of the site, t
 - If necessary, adjust the visibility of the site for search engines.
 - Click the **Install** **WordPress** button:
 
-**![](./assets/1555705531629-1555705531629.png)**
+**![](./assets/1555705531629-1555705531629-png)**
 
 3. After installing Wordpress, log in. To do this, click the **Log In** button, then enter your username and password:
 
-**![](./assets/1555705599355-1555705599355.png)**
+**![](./assets/1555705599355-1555705599355-png)**
 
-**![](./assets/1556999801042-1556999801042.jpeg)**
+**![](./assets/1556999801042-1556999801042-jpeg)**
 
 This will open the WordPress home page:
 
-**![](./assets/1555705632823-1555705632823.png)**
+**![](./assets/1555705632823-1555705632823-png)**
 
 ## **Feedback**
 

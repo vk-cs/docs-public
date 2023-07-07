@@ -16,7 +16,7 @@ When using servers and hardware of other versions, some steps of the script may 
 
 ## Scheme of work
 
-**![](./assets/1573248708605-1573248708605.png)**
+**![](./assets/1573248708605-1573248708605-png)**
 
 To monitor Clickhouse parameters and collect metrics, Prometheus uses an exporter that queries the Clickhouse server and sends data to the Prometheus server. Data is visualized in Grafana using Dashboard.
 
@@ -188,7 +188,7 @@ To visualize the received data, install the appropriate Dashboard (for example, 
 
 After installing and configuring receiving data from the Prometheus server, something like the following will be displayed:
 
-**[![](./assets/1573251451606-1573251451606.png)](https://hb.bizmrg.com/help-images/monitoring-with-prometheus/clickhouse-exporter/Grafana1.png)**
+**[![](./assets/1573251451606-1573251451606-png)](https://hb.bizmrg.com/help-images/monitoring-with-prometheus/clickhouse-exporter/Grafana1.png)**
 
 ## Create test load
 
@@ -230,7 +230,7 @@ All tests take a long time to complete.
 
 As a result of the test load, graphics in Grafana change:
 
-**[![](./assets/1573251830540-1573251830540.png)](https://hb.bizmrg.com/help-images/monitoring-with-prometheus/clickhouse-exporter/Grafana_performance.png)**
+**[![](./assets/1573251830540-1573251830540-png)](https://hb.bizmrg.com/help-images/monitoring-with-prometheus/clickhouse-exporter/Grafana_performance.png)**
 
 ## Remove clickhouse_exporter
 

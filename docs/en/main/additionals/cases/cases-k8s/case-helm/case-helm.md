@@ -7,7 +7,7 @@
 
 Cert-manager is a native Kubernetes certificate management tool. Cert-manager can obtain certificates from multiple sources (e.g. [Let's Encrypt](https://letsencrypt.org/), [HashiCorp Vault](https://www.vaultproject.io/), [Venafi](https: //www.venafi.com/)), from local containers containing a certificate and a key, or it can generate self-signed certificates, which are most often used to provide https access to ingress controllers. In addition, Cert-manager controls the validity of certificates and supports automatic renewal of certificates. Cert-manager organization scheme (source: [official documentation](https://cert-manager.io/docs/)):
 
-![](./assets/1580395247227-1580395247227.png)
+![](./assets/1580395247227-1580395247227-png)
 
 ## Install Cert-manager
 

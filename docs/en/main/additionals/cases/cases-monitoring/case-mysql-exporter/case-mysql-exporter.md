@@ -16,7 +16,7 @@ When using servers and hardware of other versions, some steps of the script may 
 
 ## Scheme of work
 
-![](./assets/1572212552143-1572212552143.png)
+![](./assets/1572212552143-1572212552143-png)
 
 To monitor MySQL parameters and collect metrics, Prometheus uses an exporter that queries the MySQL server and sends data to the Prometheus server. Data can be visualized in Grafana using Dashboard.
 
@@ -204,11 +204,11 @@ To visualize the received data, install the appropriate Dashboard (for example, 
 
 After installing and configuring to receive data from the Prometheus server, something like the following will be displayed when using the basic Dashboard:
 
-**![](./assets/1572208462067-1572208462067.png)**
+**![](./assets/1572208462067-1572208462067-png)**
 
 And something like the following when using Dashboard Percona:
 
-![](./assets/1572208930593-1572208930593.png)
+![](./assets/1572208930593-1572208930593-png)
 
 ## Create test load
 
@@ -275,7 +275,7 @@ execution time (avg/stddev): 9.9793/0.00
 
 As a result of the test load, graphics in Grafana change:
 
-**![](./assets/1572208984315-1572208984315.png)**
+**![](./assets/1572208984315-1572208984315-png)**
 
 ## Remove mysql_exporter
 
