@@ -128,7 +128,7 @@
          2. Загрузите ключ:
 
             ```bash
-            ssh-keygen -q -N ""
+            openstack keypair create --public-key ~/.ssh/id_rsa.pub --type ssh <keypair_name>
             ```
 
 3. Создайте загрузочный диск:
