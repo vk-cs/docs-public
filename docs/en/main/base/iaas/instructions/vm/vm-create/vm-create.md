@@ -128,7 +128,7 @@ The available fields may differ for different operating systems.
          2. Upload the key:
 
             ```bash
-            ssh-keygen -q -N ""
+            openstack keypair create --public-key ~/.ssh/id_rsa.pub --type ssh <keypair_name>
             ```
 
 3. Create a boot disk:
