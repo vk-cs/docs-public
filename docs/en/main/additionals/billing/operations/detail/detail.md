@@ -2,9 +2,9 @@ All deductions and additions for projects are recorded in the VK Cloud personal 
 
 <warn>
 
-When displaying the details, deductions and additions are calculated based on the Moscow Time Zone (UTC+3).
+Deductions and additions for projects in the Moscow [region](/en/base/account/concepts/regions) are calculated based on the Moscow Time Zone (GMT+3), in the Kazakhstan region —  based on the Astana Time Zone (GMT+6).
 
-A similar principle applies to [the formation of accounting documents](../report/).
+The same principle applies to [the formation of accounting documents](../report/).
 
 </warn>
 
