@@ -1,12 +1,13 @@
 {
-    "title": "Loading large-volume images",
-    "pageDescription": "How to upload a large-volume VM image to VK Cloud.",
-    "shortDescription": "How to upload a VM image with a volume of more than 500 GB to VK Cloud",
-    "metaTitle": "Loading large-volume images",
-    "metaDescription": "How to upload a large-volume VM image to VK Cloud.",
-    "sectionTitle": "Loading large-volume images",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
-  }
+  "title": "Loading large-volume images",
+  "pageDescription": "How to upload a large-volume VM image to VK Cloud.",
+  "shortDescription": "How to upload a VM image with a volume of more than 500 GB to VK Cloud",
+  "metaTitle": "Loading large-volume images",
+  "metaDescription": "How to upload a large-volume VM image to VK Cloud.",
+  "sectionTitle": "Loading large-volume images",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "8f2f61c3-5ffd-496f-9f55-7006c314a2b8"
+}
