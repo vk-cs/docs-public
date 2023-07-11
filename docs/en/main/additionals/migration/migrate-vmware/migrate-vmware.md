@@ -9,7 +9,7 @@ The VMware virtual machine must meet the following requirements:
 
 <info>
 
-To migrate a VM with EFI emulation, use [Hystax](/en/additionals/hystax/migration) or transfer data to a new VMware VM with BIOS emulation.
+To migrate a VM with UEFI emulation, use [Hystax](/en/additionals/hystax/migration) or transfer data to a new VMware VM with BIOS emulation.
 
 </info>
 
