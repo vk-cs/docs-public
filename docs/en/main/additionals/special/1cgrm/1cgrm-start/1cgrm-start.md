@@ -1,6 +1,6 @@
 To activate the 1C: GRM service, you must have a registered account and an active project. If necessary, you should confirm the account and activate the phone number, after which the VK Cloud panel will inform you about the availability of creating an application:
 
-![](./assets/1598868682430-1598868682429-png)
+![](./assets/1598868682430-1598868682429.png)
 
 Adding a 1C application consists of several stages, which are accompanied by the application creation wizard.
 
@@ -14,7 +14,7 @@ User account data is not entered into the 1C application database and the organi
 
 To create it, at the first step, select the appropriate item "Create a new user":
 
-![](./assets/1598870898164-1598870898164-png)
+![](./assets/1598870898164-1598870898164.png)
 
 ## User creation
 
@@ -25,7 +25,7 @@ In the wizard for creating a new user, you need to fill in the card with his dat
 - Email. The current mailing address of the representative to which notifications will be sent
 - INN. Taxpayer identification number
 
-![](./assets/1597996050267-1597996050267-png)
+![](./assets/1597996050267-1597996050267.png)
 
 **Attention**
 
@@ -39,7 +39,7 @@ The registered user will be sent a message to the specified email address contai
 
 Remote access to the application via the web interface is possible if there is a sufficient number of licenses that grant the user the right to access the created application.
 
-![](./assets/1598874986818-1598874986818-png)
+![](./assets/1598874986818-1598874986818.png)
 
 For 1C applications, the maximum value of possible remote access licenses is provided:
 
@@ -62,17 +62,17 @@ Once the application has been successfully created, it will appear in the list o
 
 The application creation process can take up to 15 minutes. At this time, a virtual infrastructure is created and the 1C application is deployed. During this period, activities with the application will be unavailable.
 
-![](./assets/1598881500890-1598881500890-png)
+![](./assets/1598881500890-1598881500890.png)
 
 ## Editing an application
 
 Managing installed applications is available in the [section of your personal account](https://mcs.mail.ru/app/services/grm/apps/) in the context menu of each application.
 
-![](./assets/1598881691615-1598881691615-png)
+![](./assets/1598881691615-1598881691615.png)
 
 Editing is possible only for the number of licenses that provide remote access to users to the application:
 
-![](./assets/1597996712818-1597996712818-png)
+![](./assets/1597996712818-1597996712818.png)
 
 ## Connect to app
 

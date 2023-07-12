@@ -17,7 +17,7 @@ Before installing OpenCart:
 
 1. Go to [website](https://github.com/opencart/opencart/releases/) and note the OpenCart version number:
 
-![](./assets/1554925430133-1554925430133-png)
+![](./assets/1554925430133-1554925430133.png)
 
 2. Open a terminal window.
 3. Install the ZIP archiver by running the command:
@@ -232,29 +232,29 @@ As a result, the OpenCart installation wizard will be launched, follow its instr
 2. Check the configuration parameters of OpenCart. Make sure all fields with the **Status** element are highlighted in green and click the **Continue** button.
 3. Select a database configuration:
 
-![](./assets/1554927135638-1554927135638-png)
+![](./assets/1554927135638-1554927135638.png)
 
 Use the database username, password, and database name that you specified when setting up MySQL<!--[](https://docs.google.com/document/d/1rnpyTW7ZXIRdr5lmsYLyvWH3PcGEitDNetoq2mSyfTM/edit#heading=h.u2usy4a5aptn) -->. Other options are recommended to be left at their default values.
 
 4. Create an OpenCart administrator account:
 
-![](./assets/1554927175401-1554927175401-png)
+![](./assets/1554927175401-1554927175401.png)
 
 **Press the button** Continue to start the installation.
 
 5. If the installation of OpenCart was successful, the following page will be displayed:
 
-![](./assets/1554927703953-1554927703953-png)
+![](./assets/1554927703953-1554927703953.png)
 
 To get started, click the **Login to your administration** button.
 
 6. Authenticate using the username and password you provided when creating your OpenCart administrator account.<!--[](https://docs.google.com/document/d/1rnpyTW7ZXIRdr5lmsYLyvWH3PcGEitDNetoq2mSyfTM/edit#heading=h.2zc4fulm9yjh ):\*\*-->
 
-![](./assets/1554926936690-1554926936690-png)
+![](./assets/1554926936690-1554926936690.png)
 
 7. If you are authenticating for the first time, you will be prompted to move the Storage directory out of the web directory:
 
-**![](./assets/1554930627121-1554930627121-png)**
+**![](./assets/1554930627121-1554930627121.png)**
 
 <warn>
 
@@ -317,7 +317,7 @@ Then save your changes using the keyboard shortcut CTRL+O and finish editing usi
 
 As a result, the following page should be displayed:
 
-![](./assets/1554928753836-1554928753836-png)
+![](./assets/1554928753836-1554928753836.png)
 
 <info>
 

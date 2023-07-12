@@ -2,15 +2,15 @@
 
 To add a resource, go to the "CDN resources" tab (on the left) and click on the "Add CDN" button:
 
-![](./assets/1600280133595-1600280133595-png)
+![](./assets/1600280133595-1600280133595.png)
 
 Then fill in the fields as described:
 
-![](./assets/1600280560074-1600280560074-png)
+![](./assets/1600280560074-1600280560074.png)
 
 Resource created:
 
-![](./assets/1600280655123-1600280655123-png)
+![](./assets/1600280655123-1600280655123.png)
 
 ## Uploading files to a resource
 
@@ -18,17 +18,17 @@ Via CDN panel:
 
 Select the "Upload to CDN" option in the context menu of the CDN resource:
 
-![](./assets/1600919295192-1600919295191-png)
+![](./assets/1600919295192-1600919295191.png)
 
 Via bucket:
 
 When creating a bucket, select the "Use CDN" checkbox:
 
-![](./assets/1600280741676-1600280741676-png)
+![](./assets/1600280741676-1600280741676.png)
 
 And on the "CDN" tab of the bucket, set the recommended value for the cache lifetime:
 
-![](./assets/1600280760673-1600280760673-png)
+![](./assets/1600280760673-1600280760673.png)
 
 ## Caching
 
@@ -36,7 +36,7 @@ Resource caching is necessary for fast content delivery - for example, if the co
 
 In the CDN resource settings, you can set the desired caching values:
 
-![](./assets/1600919489315-1600919489315-png)
+![](./assets/1600919489315-1600919489315.png)
 
 ## HTTP headers
 
@@ -46,13 +46,13 @@ The server responds with the requested resource, but it also sends response head
 
 In the settings of the CDN resource, you can configure the required headers with the required parameters:
 
-![](./assets/1600920047295-1600920047295-png)
+![](./assets/1600920047295-1600920047295.png)
 
 ## Content settings
 
 In the settings of the CDN resource, you can set the necessary content settings, including the HTTP response code and URL for the redirect:
 
-![](./assets/1600920123530-1600920123530-png)
+![](./assets/1600920123530-1600920123530.png)
 
 ## Source groups
 
@@ -60,9 +60,9 @@ In case there is a need to distribute content from different sources, the VK Clo
 
 To add a source group, click the corresponding button:
 
-![](./assets/1600939257168-1600939257168-png) And then fill in the fields with the required data:
+![](./assets/1600939257168-1600939257168.png) And then fill in the fields with the required data:
 
-![](./assets/1600920348314-1600920348314-png)
+![](./assets/1600920348314-1600920348314.png)
 
 ## DNS setup
 

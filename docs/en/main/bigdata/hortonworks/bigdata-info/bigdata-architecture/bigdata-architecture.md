@@ -21,7 +21,7 @@ All machines in the internal network of the VK Cloud cloud are connected to each
 
 All virtual machines of the cluster are united into a common network based on VXLAN technology. Each node has an internal (private) IP address that is used for communication between cluster nodes. At the same time, by default, after starting the cluster, full access is allowed between the cluster nodes within the internal network. The headend also has a floating IP that can be used to access the Ambari web interface and connect to the machine over SSH. If necessary, SSH access to the worker nodes is through the head node.
 
-![](./assets/1598477914744-1598477914744-png)
+![](./assets/1598477914744-1598477914744.png)
 
 ## Cluster templates and layout
 

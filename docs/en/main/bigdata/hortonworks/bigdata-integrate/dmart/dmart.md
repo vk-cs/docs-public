@@ -24,17 +24,17 @@ A convenient and affordable way to work with Hive is to use the Hive View interf
 
 To open Hive View, click on the button in the upper right corner of the menu bar and select Hive View 2.0 from the drop-down list. To simplify migration from older Ambari versions, the service also uses the previous version of Hive View (1.0). It has fewer features, but has a familiar interface.
 
-![](./assets/1598948545183-21-png)
+![](./assets/1598948545183.21-png)
 
 The QUERY tab allows you to run queries interactively.
 
-![](./assets/1598948631254-22-png)
+![](./assets/1598948631254.22-png)
 
 ## Loading data
 
 For more complex queries, you must first create tables and load data.
 
-![](./assets/1602271366835-download-png)
+![](./assets/1602271366835-download.png)
 
 In the Tables tab, pressing the "+" button and then "UPLOAD TABLE" opens the interface for creating a table by loading a .csv file.
 
@@ -50,10 +50,10 @@ If the downloaded data has a different format, then you should set the appropria
 
 Below you need to select "Upload from Local", click on the text "Drag file to upload or click to browse" and upload the required file.
 
-![](./assets/1598949546507-1533046820411-463e6865756aad41a1e9f8ca705d7d1c-png)
+![](./assets/1598949546507-1533046820411-463e6865756aad41a1e9f8ca705d7d1c.png)
 
 You can also check the correctness of the entered data and, if necessary, change them:
 
-![](./assets/1604000644700-h1-png)
+![](./assets/1604000644700.h1-png)
 
 Then press the "Create" button. Hive View first loads the CSV file into a temporary table and, if successful, moves it to the backname table.

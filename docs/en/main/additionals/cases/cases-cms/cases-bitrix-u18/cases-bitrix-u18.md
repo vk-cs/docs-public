@@ -15,7 +15,7 @@ If you don't already have the LAMP stack installed:
 
 1. Go to the site [download 1C Bitrix distribution](https://www.1c-bitrix.ru/download/cms.php) and select the required distribution (for example, Standard):
 
-    ![](./assets/1555096968861-1555096968861-png)
+    ![](./assets/1555096968861-1555096968861.png)
 
 1. Open a terminal window.
 1. Install additional PHP packages by running the command:
@@ -109,7 +109,7 @@ If you don't already have the LAMP stack installed:
         short_open_tag = On
         ```
 
-        ![](./assets/1555186596100-1555186596100-png)
+        ![](./assets/1555186596100-1555186596100.png)
 
     1. Set the mbstring.func_overload parameter to 2:
 
@@ -117,7 +117,7 @@ If you don't already have the LAMP stack installed:
         mbstring.func_overload = 2
         ```
 
-        ![](./assets/1555186289518-1555186289518-png)
+        ![](./assets/1555186289518-1555186289518.png)
 
     1. Set the opcache.revalidate_freq parameter to 0:
 
@@ -125,7 +125,7 @@ If you don't already have the LAMP stack installed:
         opcache.revalidate_freq=0
         ```
 
-        ![](./assets/1555186345784-1555186345784-png)
+        ![](./assets/1555186345784-1555186345784.png)
 
     1. Set the date.timezone parameter to Europe/Moscow:
 
@@ -133,7 +133,7 @@ If you don't already have the LAMP stack installed:
         date.timezone = Europe/Moscow
         ```
 
-        ![](./assets/1560892300973-1560892300973-jpeg)
+        ![](./assets/1560892300973-1560892300973.jpeg)
 
     1. Save your changes using the keyboard shortcut CTRL+O and finish editing using the keyboard shortcut CTRL+X.
 
@@ -249,18 +249,18 @@ As a result, the installation wizard will start, follow its instructions:
 1. Read the license agreement and click the "Next" button.
 1. If necessary, provide information to register your copy of the product. Then check the "Install in UTF-8 encoding" box and click the "Next" button.
 
-    ![](./assets/1555098766319-1555098766319-png)
+    ![](./assets/1555098766319-1555098766319.png)
 
 1. Make sure all fields with "Current Value" are highlighted in green and click the "Next" button.
 1. Specify the database parameters.
 
-    ![](./assets/1555098873042-1555098873042-png)
+    ![](./assets/1555098873042-1555098873042.png)
 
     Use the database username, password, and database name that you provided when setting up the MySQL database. Other options are recommended to be left at their default values. Then click the "Next" button and wait for the installation to complete.
 
 1. Specify the settings for creating an administrator account and click Next.
 
-    ![](./assets/1555099021857-1555099021857-png)
+    ![](./assets/1555099021857-1555099021857.png)
 
 1. Select a typical configuration solution (for example, 1C-Bitrix: Personal Site) and click the "Next" button.
 
