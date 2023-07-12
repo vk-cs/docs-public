@@ -51,10 +51,10 @@ The filesystem under path '/user/admin/data.csv' is HEALTHY 
 
 Для изменения фактора репликации для всех новых файлов, зайдите в интерфейс Ambari, секция HDFS, вкладка Configs, вкладка Advanced:
 
-![](./assets/1533046115824-2ce07976e68515d9bfdbe5924ef79276-png)
+![](./assets/1533046115824-2ce07976e68515d9bfdbe5924ef79276.png)
 
 В секции General поменяйте значение «Blocks Replication» (dfs.replication) на необходимое и примените конфигурацию:
 
-![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f4120-2fdirect-2f1533046135432-b26e6beccf2edf95b143bde26456885d-png)
+![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f4120-2fdirect-2f1533046135432-b26e6beccf2edf95b143bde26456885d.png)
 
 При необходимости изменить значение фактора репликации по умолчанию для всех новых кластеров, обратитесь в [службу поддержки](https://help.mail.ru/infra/support).

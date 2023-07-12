@@ -80,23 +80,23 @@ https://<SERVER_DNS_NAME>:8443
 
 The default login is `admin`. The primary password is set in the `harbor.yml` file (default is `Harbor12345`).
 
-**![](./assets/1583617538207-1583617538207-png)**
+**![](./assets/1583617538207-1583617538207.png)**
 
 2. Change the password for the admin user. To do this, click on admin in the upper right corner and select Change Password:
 
-**![](./assets/1583618632237-1583618632237-png)**
+**![](./assets/1583618632237-1583618632237.png)**
 
 3. Specify the current and new passwords:
 
-**![](./assets/1583617032537-1583617032537-png)**
+**![](./assets/1583617032537-1583617032537.png)**
 
 4. Create a user under which Gitlab will work with Harbor. To do this, select Users on the left:
 
-![](./assets/1583617595313-1583617595313-png)
+![](./assets/1583617595313-1583617595313.png)
 
 5. Specify the data of the new user:
 
-![](./assets/1583617032764-1583617032764-png)
+![](./assets/1583617032764-1583617032764.png)
 
 <warn>
 
@@ -108,19 +108,19 @@ Remember the password entered for the user, it will be required for integration 
 
 6. Create a new project that will contain the built images from Gitlab. To do this, select Projects on the left:
 
-![](./assets/1583617765191-1583617765191-png)
+![](./assets/1583617765191-1583617765191.png)
 
 7. Enter the details of the new project:
 
-![](./assets/1583617822394-1583617822394-png)
+![](./assets/1583617822394-1583617822394.png)
 
 8. Add a user to the project:
 
-**![](./assets/1583617874990-1583617874990-png)**
+**![](./assets/1583617874990-1583617874990.png)**
 
 9. Specify a name and role for the user:
 
-![](./assets/1583617528394-1583617528394-png)
+![](./assets/1583617528394-1583617528394.png)
 
 Now [set up auto-deployment of the application to the Kubernetes cluster](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
 
