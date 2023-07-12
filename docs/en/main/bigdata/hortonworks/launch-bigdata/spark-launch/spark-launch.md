@@ -6,27 +6,27 @@ To create a Spark cluster, follow the instructions, setting the required paramet
 
 Step 1.
 
-![](./assets/1601759512534-s1-png)
+![](./assets/1601759512534.s1-png)
 
 Step 2.
 
-![](./assets/1601759637880-s1-1-png)
+![](./assets/1601759637880.s1-1-png)
 
 Step 3.
 
-![](./assets/1601759529322-s2-png)
+![](./assets/1601759529322.s2-png)
 
 After creation in the cluster, in the "General information" tab, a link, login and password to the Ambari interface for managing the cluster will be published:
 
-![](./assets/1601759739989-s3-png)
+![](./assets/1601759739989.s3-png)
 
 To enter the Ambari interface, you need to enter Web UI in the browser search bar, enter your login and password in the window that opens:
 
-![](./assets/1601759908251-s4-png)
+![](./assets/1601759908251.s4-png)
 
 This will open the Ambari interface for managing the Spark cluster and its components:
 
-![](./assets/1601759974519-s5-png)
+![](./assets/1601759974519.s5-png)
 
 ## Working with Spark in Zeppelin
 
@@ -113,7 +113,7 @@ So, to organize access to Zeppelin, you need to use the following data:
 
 Use the control bar in the upper right corner of a cell to execute code within that cell. The result is displayed immediately below the executable code:
 
-![](./assets/1598817768185-zeppelin-png)
+![](./assets/1598817768185-zeppelin.png)
 
 ## Working with Spark in the console
 

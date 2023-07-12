@@ -36,7 +36,7 @@ To install and perform the initial configuration of the Nginx web server:
 
    If the installation is successful, the following web server page will open:
 
-   **![](./assets/1559939150156-1559939150156-jpeg)**
+   **![](./assets/1559939150156-1559939150156.jpeg)**
 
 ## Installing the Java Virtual Machine
 
@@ -134,7 +134,7 @@ To install and perform the initial configuration of Elasticsearch:
 
 1. If an error is displayed:
 
-   **![](./assets/1559939328250-1559939328250-jpeg)**
+   **![](./assets/1559939328250-1559939328250.jpeg)**
 
    Do the following:
 
@@ -146,7 +146,7 @@ To install and perform the initial configuration of Elasticsearch:
 
       1. Find the parameters that define the minimum and maximum amount of RAM for Java:
 
-         ![](./assets/1559885194663-1559885194663-jpeg)
+         ![](./assets/1559885194663-1559885194663.jpeg)
 
          <info>
 
@@ -166,7 +166,7 @@ To install and perform the initial configuration of Elasticsearch:
       1. Save your changes using the `CTRL+O` key combination and finish editing using the `CTRL+X` key combination.
       1. Start the Elasticsearch service and check the status. If there are no errors, the following will be displayed:
 
-         **![](./assets/1559939373499-1559939373499-jpeg)**
+         **![](./assets/1559939373499-1559939373499.jpeg)**
 
 1. To start the Elasticsearch service automatically when the operating system is restarted, run the command:
 
@@ -182,7 +182,7 @@ To install and perform the initial configuration of Elasticsearch:
 
    If the installation of Elasticsearch was successful, the following information will be displayed:
 
-      **![](./assets/1559939398435-1559939398435-jpeg)**
+      **![](./assets/1559939398435-1559939398435.jpeg)**
 
 ## Installing and configuring Kibana
 
