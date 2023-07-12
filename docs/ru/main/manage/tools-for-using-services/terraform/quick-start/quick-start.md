@@ -1,102 +1,69 @@
-## Подготовка к работе
+## Подготовительные шаги
 
 1. Установите Terraform c официального [зеркала](https://hashicorp-releases.mcs.mail.ru/terraform) от VK Cloud.
-1. Создайте конфигурационный файл зеркала провайдера и разместите его в каталоге.
+1. Перейдите в [личный кабинет](https://mcs.mail.ru/app/) VK Cloud.
+1. [Настройте двухфакторную аутентификацию](/ru/base/account/instructions/account-manage/manage-2fa) и [активируйте доступ по API](/ru/manage/tools-for-using-services/rest-api/enable-api), если это еще не сделано.
 
-    <tabs>
-    <tablist>
-    <tab>Windows</tab>
-    <tab>Другие ОС</tab>
-    </tablist>
-    <tabpanel>
+1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Настройки проекта**.
 
-    1. Создайте файл `terraform.rc`.
-    1. Добавьте в него блок кода.
+1. Перейдите на вкладку **Terraform**. Скачайте основной [файл конфигурации Terraform](../reference/configuration#fayl-konfiguracii-provaydera-terraform) и [файл конфигурации зеркала Terraform](../reference/configuration#fayl-konfiguracii-zerkala-terraform), нажав одноименные кнопки.
 
-        ```yaml
-        provider_installation {
-            network_mirror {
-                url = "https://terraform-mirror.mcs.mail.ru"
-                include = ["registry.terraform.io/*/*"]
-            }
-            direct {
-                exclude = ["registry.terraform.io/*/*"]
-            }
-        }
-        ```
+    Будут скачаны файлы с именами  `vkcs_provider.tf` и  `terraform.rc`.
 
-    1. Вставьте `%APPDATA%` в адресную строку проводника Windows и скопируйте в открывшийся каталог файл `terraform.rc`.
+1. Выполните с файлами следующие действия:
 
-    </tabpanel>
-    <tabpanel>
+   <tabs>
+   <tablist>
+   <tab>Windows</tab>
+   <tab>Другие ОС</tab>
+   </tablist>
+   <tabpanel>
 
-    1. Создайте файл `.terraformrc`.
-    1. Добавьте в него блок кода.
+    1. Вставьте `%APPDATA%` в адресную строку проводника Windows и скопируйте в открывшуюся директорию `terraform.rc`.
+    1. Скопируйте файл `vkcs_provider.tf` в рабочую директорию, из которой вы планируете работать с платформой.
 
-        ```yaml
-        provider_installation {
-            network_mirror {
-                url = "https://terraform-mirror.mcs.mail.ru"
-                include = ["registry.terraform.io/*/*"]
-            }
-            direct {
-                exclude = ["registry.terraform.io/*/*"]
-            }
-        }
-        ```
+        Под каждый проект VK Cloud рекомендуется создавать отдельную рабочую директорию.
 
-    1. Скопируйте файл в корень директории пользователя.
+   </tabpanel>
+   <tabpanel>
 
-    </tabpanel>
-    </tabs>
+    1. Переименуйте файл конфигурации зеркала Terraform из `terraform.rc` в `.terraformrc`.
+    1. Скопируйте файл `.terraformrc` в корень домашней директории пользователя.
+    1. Скопируйте файл `vkcs_provider.tf` в рабочую директорию, из которой вы планируете работать с платформой.
 
-1. Создайте файл `main.tf` и опишите в нем необходимые terraform-провайдеры. Файл состоит из блоков:
+        Под каждый проект VK Cloud рекомендуется создавать отдельную рабочую директорию.
 
-    - `required_providers` — список используемых провайдеров. Укажите провайдер `vkcs`, его источник и версии. Если вы собираетесь использовать дополнительные провайдеры, добавьте их в данном блоке.
+   </tabpanel>
+   </tabs>
 
-    ```bash
-    terraform {
-        required_providers {
-            vkcs = {
-                source = "vk-cs/vkcs"
-            }
-        }
-    }
-    ```
+    <info>
 
-    - `provider "vkcs"` — настройки для провайдера от VK Cloud. Укажите значения параметров из [Настроек проекта](https://mcs.mail.ru/app/project/keys) личного кабинета. В поле `password` укажите пароль от вашей учетной записи.
+    Вы можете создать оба конфигурационных файла самостоятельно. Вы также можете отредактировать скачанные файлы — например, чтобы добавить дополнительного Terraform-провайдера. Содержимое файлов описано в статье [Файлы конфигурации](../reference/configuration).
 
-    ```bash
-    provider "vkcs" {
-        username = "USER_NAME"
-        password = "YOUR_PASSWORD"
-        project_id = " 111111111111111111111111111"
-        region = "RegionOne"
-    }
-    ```
+    </info>
 
-## Настройка рабочей директории
+## Инициализация Terraform
 
-В директории с файлом `main.tf` выполните команду:
+В директории, из которой вы планируете работать с проектом, выполните команду:
 
 ```bash
 terraform init
 ```
 
-Будут созданы дополнительные файлы, необходимые для работы с Terraform.
+Будут созданы дополнительные файлы, необходимые для работы Terraform.
 
-## 2FA и доступ по API
+## Создание ресурсов с помощью Terraform
 
-[Настройте](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию и [активируйте доступ по API](/ru/manage/tools-for-using-services/rest-api/enable-api).
-
-## Запуск
+1. Создайте конфигурацию ресурсов в рабочей директории — например, конфигурацию для [создания виртуальной машины](../use-cases/iaas/create).
 
 1. Выполните команду:
 
-  ```bash
-  terraform apply
-  ```
+    ```bash
+    terraform apply
+    ```
 
-  Команда `apply` применит вашу конфигурацию Terraform к ресурсам VK Cloud, указанным в файле `main.tf`.
+    При запросе подтверждения введите `yes`.
 
-2. Подтвердите создание ресурса, введя `yes` в окне терминала.
+1. Дождитесь завершения операции.
+
+Созданные ресурсы появятся в вашем личном кабинете.
