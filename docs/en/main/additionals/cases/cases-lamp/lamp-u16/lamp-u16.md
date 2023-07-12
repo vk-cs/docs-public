@@ -58,7 +58,7 @@ To install and perform initial configuration of the Apache web server:
 
 If the installation and configuration of the Apache web server is successful, the following web server default page will be displayed:
 
-![](./assets/1552419689585-1552419689585-png)
+![](./assets/1552419689585-1552419689585.png)
 
 ## MySQL database installation
 
@@ -81,7 +81,7 @@ To install and configure the MySQ DBMS:
 
     </warn>
 
-    ![](./assets/1552339550072-1552339550072-png)
+    ![](./assets/1552339550072-1552339550072.png)
 
 3. To make changes to the MySQL DBMS server configuration, use the command:
 
@@ -178,7 +178,7 @@ sudo nano /var/www/html/info.php
 
 As a result, the following page should be displayed:
 
-![](./assets/1552419790086-1552419790086-png)
+![](./assets/1552419790086-1552419790086.png)
 
 <warn>
 

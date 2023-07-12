@@ -7,7 +7,7 @@ Devices can be connected to the platform in three ways:
 
 ### Device connection diagram
 
-![](./assets/diagram-png)
+![](./assets/diagram.png)
 
 #### Connecting directly
 

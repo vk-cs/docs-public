@@ -105,7 +105,7 @@ For detailed information about the permissions of these roles, see section [Role
 
 Permissions are the privileges for viewing (**R** in the table below) or editing (**RW**) of certain objects. An editing permission includes the privilege of creating and deleting an object, and also includes the permission for viewing. A dash (**—**) indicates no access to a service or functionality.
 
-![](./assets/roles_and_permissions_en-png)
+![](./assets/roles_and_permissions_en.png)
 
 ## Roles for the Containers service and their permissions
 
