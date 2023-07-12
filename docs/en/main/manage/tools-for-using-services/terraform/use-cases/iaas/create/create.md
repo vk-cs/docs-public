@@ -1,6 +1,6 @@
 <warn>
 
-First of all, make sure you [installed Terraform and created a main.tf file](../../../quick-start) with the required providers.
+First of all, make sure you [installed and configured Terraform](../../../quick-start).
 
 </warn>
 
@@ -53,7 +53,7 @@ resource "vkcs_networking_router_interface" "compute" {
 
 ### Create a virtual machine
 
-To create a virtual machine, create an `instance.tf` file in the directory and add the following example text. Correct the setting values in the example according to your VM.
+To create a virtual machine, create an `main.tf` file in the directory and add the following example text. Correct the setting values in the example according to your VM.
 
 - Resources:
 
@@ -153,7 +153,7 @@ output "instance_fip" {
 
 ### Apply changes
 
-To apply the changes, add the `network.tf` and `instance.tf` files to your working directory and run the following commands:
+To apply the changes, add the `network.tf` and `main.tf` files to your working directory and run the following commands:
 
 ```bash
 terraform init
