@@ -1,7 +1,17 @@
-## Prepare for work
+## Preparatory steps
 
-1. Install Terraform binaries from the official VK Cloud [mirror](https://hashicorp-releases.mcs.mail.ru/terraform).
-1. Create a provider mirror file and paste it in the directory.
+1. Install Terraform from the official VK Cloud [mirror](https://hashicorp-releases.mcs.mail.ru/terraform).
+1. Open your VK CLoud [personal account](https://mcs.mail.ru/app/).
+
+1. Enable [two-factor authentication](/en/base/account/instructions/account-manage/security#enable-2fa) and [API access](/en/base/account/instructions/account-manage/security#accessing-api), if not enabled yet.
+
+1. Click on your login at the top of the page, select **Project settings** from the drop-down menu.
+
+1. Go to the **Terraform** tab. Download the main [Terraform config](../reference/configuration#the-terraform-provider-config-file) and the [Terraform mirror config](../reference/configuration#the-terraform-mirror-config-file) files by clicking on the corresponding buttons.
+
+    Files named `vkcs_provider.tf` and `terraform.rc` will be downloaded.
+
+1. Perform the following actions with the files:
 
     <tabs>
     <tablist>
@@ -10,93 +20,52 @@
     </tablist>
     <tabpanel>
 
-    1. Create the `terraform.rc` file.
-    1. Add the code to it.
+    1. Paste `%APPDATA%` into the address bar of Windows Explorer and copy the `terraform.rc` file to the directory that opens.
 
-       ```yaml
-        provider_installation {
-            network_mirror {
-                url = "https://terraform-mirror.mcs.mail.ru"
-                include = ["registry.terraform.io/*/*"]
-            }
-            direct {
-                exclude = ["registry.terraform.io/*/*"]
-            }
-        }
-        ```
+    1. Copy the `vkcs_provider.tf` file into the working directory from which you are going to work with the platform.
 
-    1. Paste `%APPDATA%` into the address bar of Windows Explorer and copy the file `terraform.rc` to the directory that opens.
+        Typically a separate working directory is created for each VK Cloud project.
 
     </tabpanel>
     <tabpanel>
 
-    1. Create the `.terraformrc` file.
-    1. Add the code to it.
+    1. Rename the Terraform mirror configuration file from `terraform.rc` to `.terraformrc`.
+    1. Copy the `.terraformrc` file to the user's home directory root.
+    1. Copy the `vkcs_provider.tf` file into the working directory from which you are going to work with the platform.
 
-       ```yaml
-        provider_installation {
-            network_mirror {
-                url = "https://terraform-mirror.mcs.mail.ru"
-                include = ["registry.terraform.io/*/*"]
-            }
-            direct {
-                exclude = ["registry.terraform.io/*/*"]
-            }
-        }
-        ```
-
-    1. Copy the file to the root of the user directory.
+        Typically a separate working directory is created for each VK Cloud project.
 
     </tabpanel>
     </tabs>
 
-1. Create a `main.tf` file and describe the necessary terraform providers in it. File consists from the blocks:
+    <info>
 
-    - The first terraform block describes which providers are required (`required_providers`). Inside is `vkcs` provider source and its versions. If you are going to use additional providers, add them in this block.
+    You can create both configuration files yourself. You can also edit the downloaded files — for example, add other Terraform providers. The contents of the files are described in section [Configuration files](../reference/configuration).
 
-    ```bash
-    terraform {
-        required_providers {
-            vkcs = {
-                source = "vk-cs/vkcs"
-            }
-        }
-    }
-    ```
+    </info>
 
-    - The `provider "vkcs"` block describes the settings for the provider from VK Cloud. Specify `user_name` and `password` for your personal account, also fill your account password to `password` parameter.
+## Terraform initialization
 
-    ```bash
-    provider "vkcs" {
-        username="USER_NAME"
-        password = "YOUR_PASSWORD"
-        project_id = "111111111111111111111111111"
-        region = "RegionOne"
-    }
-    ```
-
-## Setting working directory
-
-In the directory with the file `main.tf` run the command:
+In the directory from which you are going to work with the project, run the command:
 
 ```bash
 terraform init
 ```
 
-Additional files necessary for working with Terraform will be created.
+Supplementary files necessary for working with Terraform will be created.
 
-## 2FA and API access
+## Creating resources via Terraform
 
-[Enable two-factor authentication and enable](https://mcs.mail.ru/app/en/account/security) API access.
-
-## Apply
+1. Create a configuration of resources in the working directory — for example, a configuration for [creating a virtual machine](../use-cases/iaas/create).
 
 1. Run the command:
 
-    ```
+    ```bash
     terraform apply
     ```
 
-    The `apply` command applies your Terraform configuration (plan) to VK Cloud resources specified in the file `main.tf`.
+    Confirm the creation by typing `yes` in the terminal window.
 
-2. Confirm the creation by typing `yes` in the terminal window.
+1. Wait until the operation is completed.
+
+The created resources will be available in your personal account.
