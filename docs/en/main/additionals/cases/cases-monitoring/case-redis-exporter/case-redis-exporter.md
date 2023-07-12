@@ -16,7 +16,7 @@ When using servers and hardware of other versions, some steps of the script may 
 
 ## Scheme of work
 
-**![](./assets/1572296721838-1572296721838-png)**
+**![](./assets/1572296721838-1572296721838.png)**
 
 To monitor Redis settings and collect metrics, Prometheus uses an exporter that queries the Redis server and sends data to the Prometheus server. Data can be visualized in Grafana using Dashboard.
 
@@ -159,7 +159,7 @@ To visualize the received data, install the [appropriate Dashboard](https://graf
 
 After installing and configuring receiving data from the Prometheus server, something like the following will be displayed:
 
-**![](./assets/1572300537338-1572300537337-png)**
+**![](./assets/1572300537338-1572300537337.png)**
 
 ## Create test load
 
@@ -187,7 +187,7 @@ LRANGE_600 (first 600 elements): 4037.40 requests per second
 MSET (10 keys): 24537.47 requests per second
 ```
 
-Now look at how graphs have changed as a result of the load test in Grafana:**![](./assets/1572300626800-1572300626800-png)**
+Now look at how graphs have changed as a result of the load test in Grafana:**![](./assets/1572300626800-1572300626800.png)**
 
 ## Remove redis_exporter
 

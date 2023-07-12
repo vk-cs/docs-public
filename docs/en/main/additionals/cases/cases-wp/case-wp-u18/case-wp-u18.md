@@ -150,7 +150,7 @@ sudo nano wp-config.php
 
 4. In the wp-config.php file, find the following lines:
 
-![](./assets/1553022422698-1553022422698-png)
+![](./assets/1553022422698-1553022422698.png)
 
 5. In the wp-config.php file:
 
@@ -213,7 +213,7 @@ curl -s https://api.wordpress.org/secret-key/1.1/salt/
 
 As a result, information containing key values ​​will be displayed on the screen in the following form:
 
-![](./assets/1553022423161-1553022423161-png)
+![](./assets/1553022423161-1553022423161.png)
 
 <warn>
 
@@ -246,7 +246,7 @@ define('NONCE_SALT',         'put your unique phrase here');
 
 - In the appropriate lines, enter the unique key values ​​obtained as a result of the curl command:
 
-![](./assets/1553022423621-1553022423621-png)
+![](./assets/1553022423621-1553022423621.png)
 
 - Save your changes using the keyboard shortcut CTRL+O.
 - Finish editing using the keyboard shortcut CTRL+X.
@@ -269,7 +269,7 @@ To install WordPress:
 
 2. Select the system language and click the **Continue** button:
 
-![](./assets/1553022523657-1553022523657-png)
+![](./assets/1553022523657-1553022523657.png)
 
 3. On the settings page:
 
@@ -288,15 +288,15 @@ Using a weak password leads to a decrease in the network security of the site, s
 - If necessary, adjust the visibility of the site for search engines.
 - Click the **Install WordPress** button:
 
-![](./assets/1553022424497-1553022424497-png)
+![](./assets/1553022424497-1553022424497.png)
 
 4. Once Wordpress is installed, login:
 
-![](./assets/1553022523753-1553022523753-png)
+![](./assets/1553022523753-1553022523753.png)
 
 This will open the WordPress home page:
 
-![](./assets/1553026677643-1553026677643-png)
+![](./assets/1553026677643-1553026677643.png)
 
 ## **Feedback**
 

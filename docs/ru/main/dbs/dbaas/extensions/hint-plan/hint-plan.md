@@ -9,9 +9,9 @@ pg_hint_plan - управление планом выполнения запро
 - установить расширение ( [в этой статье приведён пример установки любого расширения](https://mcs.mail.ru/help/ru_RU/db-extensions/postgis-pgcrypto) )
 - установить параметр базы данных ( [в этой статье написано, как это можно сделать](https://mcs.mail.ru/help/ru_RU/manage-db/db-flags-options) ) **shared_preload_libraries** = pg_hint_plan
 
-![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f7055-2fdirect-2f1624538710450-1624538710450-png)
+![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f7055-2fdirect-2f1624538710450-1624538710450.png)
 
-![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f7055-2fdirect-2f1624455467480-1624455467480-png)
+![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f7055-2fdirect-2f1624455467480-1624455467480.png)
 
 Если БД восстанавливается из резервной копии, то будет нужно снова установить параметр базы данных **shared_preload_libraries** = pg_hint_plan.
 

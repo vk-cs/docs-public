@@ -16,7 +16,7 @@ When using servers and hardware of other versions, some steps of the script may 
 
 ## Scheme of work
 
-![](./assets/1572590876768-1572590876768-png)
+![](./assets/1572590876768-1572590876768.png)
 
 To monitor PostreSQL parameters and collect metrics, Prometheus uses an exporter that queries the PostgreSQL server and sends data to the Prometheus server. Data can be visualized in Grafana using Dashboard.
 
@@ -154,11 +154,11 @@ To visualize the received data, install the appropriate Dashboard (for example, 
 
 After installing and configuring to receive data from the Prometheus server, something like the following will be displayed when using Dashboard 1:
 
-![](./assets/1572590118820-1572590118820-png)
+![](./assets/1572590118820-1572590118820.png)
 
 And something like the following when using Dashboard 2:
 
-**![](./assets/1572590138354-1572590138354-png)**
+**![](./assets/1572590138354-1572590138354.png)**
 
 ## Create test load
 
@@ -214,7 +214,7 @@ number of transactions actually processed: 26183
 
 As a result of the test load, graphics in Grafana change:
 
-**![](./assets/1572590394406-1572590394406-png)**
+**![](./assets/1572590394406-1572590394406.png)**
 
 ## Remove postgres_exporter
 
