@@ -15,7 +15,7 @@ If you don't already have the LAMP stack installed:
 
 1. Go to the site [download 1C Bitrix distribution](https://www.1c-bitrix.ru/download/cms.php) and select the required distribution (for example, Standard):
 
-    ![](./assets/1560890754176-1560890754176-jpeg)
+    ![](./assets/1560890754176-1560890754176.jpeg)
 
 1. Open a terminal window.
 1. Install additional PHP packages by running the command:
@@ -250,18 +250,18 @@ As a result, the installation wizard will start, follow its instructions:
 1. Read the license agreement and click the "Next" button.
 1. If necessary, provide information to register your copy of the product. Then check the "Install in UTF-8 encoding" box and click the "Next" button.
 
-    ![](./assets/1560891417760-1560891417760-jpeg)
+    ![](./assets/1560891417760-1560891417760.jpeg)
 
 1. Make sure all fields with "Current Value" are highlighted in green and click the "Next" button.
 1. Specify the database parameters.
 
-    ![](./assets/1560891443760-1560891443760-jpeg)
+    ![](./assets/1560891443760-1560891443760.jpeg)
 
     Use the database username, password, and database name that you provided when setting up the MySQL database. Other options are recommended to be left at their default values. Then click the "Next" button and wait for the installation to complete.
 
 1. Specify the settings for creating an administrator account and click Next.
 
-    ![](./assets/1560891478357-1560891478357-jpeg)
+    ![](./assets/1560891478357-1560891478357.jpeg)
 
 1. Select a typical configuration solution (for example, 1C-Bitrix: Personal Site) and click the "Next" button.
 

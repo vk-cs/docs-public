@@ -86,7 +86,7 @@ Before installing Joomla!:
 
 1. Go to [website](https://github.com/joomla/joomla-cms/releases) and note the latest Joomla! version number:
 
-![](./assets/1553373673333-1553373673333-png)
+![](./assets/1553373673333-1553373673333.png)
 
 2. Open a terminal window.
 3. Change to your home directory by running the command:
@@ -195,7 +195,7 @@ Press the **Enter** key. This will launch the Joomla! installation wizard, follo
 
 1. On the **Site Configuration** page, enter the site name, administrator account information, and click **Next**.
 
-**![](./assets/1556226179680-1556226179680-png)**
+**![](./assets/1556226179680-1556226179680.png)**
 
 2. On the **Database Configuration** page, specify the database settings and click the **Next** button.
 
@@ -207,23 +207,23 @@ In the database settings, specify the database username, password, and database 
 
 </info>
 
-**![](./assets/1559854618176-1559854618176-jpeg)**
+**![](./assets/1559854618176-1559854618176.jpeg)**
 
 3. If necessary, on the **FTP Configuration** page, configure the site access settings for the FTP protocol and click the **Next** button.
 
-**![](./assets/1559854645953-1559854645953-jpeg)**
+**![](./assets/1559854645953-1559854645953.jpeg)**
 
 4. On the last page, check the selected Joomla! options, email them if necessary, and click the **Install** button.
 
-**![](./assets/1556226327302-1556226327302-png)**
+**![](./assets/1556226327302-1556226327302.png)**
 
 5. When Joomla! will be installed, a page with the relevant information will be displayed:
 
-![](./assets/1553375460786-1553375460786-png)
+![](./assets/1553375460786-1553375460786.png)
 
 6. If a message about the problem of creating the configuration file is displayed:
 
-**![](./assets/1556227255049-1556227255049-png)**
+**![](./assets/1556227255049-1556227255049.png)**
 
 Do the following:
 
@@ -247,7 +247,7 @@ sudo rm -rf /var/www/html/joomla/installation/
 
 8. To go to the main page of your site, click the **Site** button:
 
-**![](./assets/1553375486854-1553375486854-png)**
+**![](./assets/1553375486854-1553375486854.png)**
 
 ## Feedback
 
