@@ -1,6 +1,23 @@
-For Kubernetes clusters with version 1.17.8 and higher, a Kubernetes version update operation to one of [supported versions](../versions/version-support/) is available in VK Cloud. You cannot downgrade versions. When updating a cluster, its [components and installed addons](../versions/components) are also updated.
+For Kubernetes clusters with version 1.17.8 and higher, a Kubernetes version update operation to one of [supported versions](../versions/version-support/) is available in VK Cloud. You cannot downgrade versions.
 
 Clusters of versions 1.16 and lower can only be updated by transferring a backup of data to a new cluster of the desired version, for example, using [Velero](https://velero.io/docs).
+
+During a cluster update the following entities also are updated:
+
+- Installed [addons](../versions/components).
+- Part of the cluster [components](../versions/components):
+
+  - CoreDNS.
+
+    When CoreDNS is updating, the current [Corefile](https://coredns.io/2017/07/23/corefile-explained/) is overwritten with the new one with default settings.
+
+    If the cluster uses a modified Corefile, then back it up prior to updating the cluster.
+
+  - Gatekeeper.
+  - Shell Operator.
+  - Kubernetes Dashboard.
+
+  If a component, that is to be updated with the cluster, is deleted, then it will be restored during the next cluster update.
 
 Updating is done as follows:
 
