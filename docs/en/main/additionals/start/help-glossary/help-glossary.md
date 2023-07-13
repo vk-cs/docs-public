@@ -1,45 +1,51 @@
-There are many cloud-specific terms that are often poorly defined. This article provides some details on terminology aspects as well as some concepts for better understanding.
+<info>
 
-## Instance
+More terms can be found in the corresponding section:
 
-The term "instance" is often used to simply talk about servers in a cloud service being used as a service.
+- [Cloud computing](/en/base/iaas/concepts/vm-concept).
+- [Virtual networks](/en/networks/vnet/concepts).
+- [Containers](/en/base/k8s/k8s-reference).
 
-An instance is a cloud server created from an operating system image and a virtual machine configuration ("Flavor") (see below).
+</info>
+
+## Instances
+
+A virtual machine (VM) is a collection of resources that emulate the behavior of a real computer. For its operation, the virtual machine uses the resources of a physical server (host). Multiple VMs can be hosted on the same host.
+
+## Flavors
+
+On the VK Cloud platform, the number of processors and the amount of RAM of the VM are set using flavors. Ready-made flavors are available to users, as well as individual (on request).
+
+By default, [configurations](/en/base/iaas/concepts/vm-concept) Basic, Standard и Advanced are available in the project.
+
+## Volumes
+
+A disk on the VK Cloud platform is a network block storage device that connects to a VM. The amount of stored data and the speed of access to it depends on the size and type of disk.
+
+The VK Cloud disk subsystem uses network drives. Disk fault tolerance, continuous access to data and their safety are ensured by replication.
+
+Network drives can be partitioned and formatted in the same way as regular locally connected drives. The advantage of network drives: they can be “moved” between VMs located in the same data center.
+
+Multiple disks can be attached to a VM, but at least one of them must be bootable and contain the installed operating system.
+
+## Availability zone
+
+An availability zone is one or more data centers in which components of the cloud infrastructure can be placed. In VK Cloud, the availability zone corresponds to a separate Tier III data center.
+
+Each zone is isolated from failures in other availability zones. Placing virtual resources in multiple zones provides fault tolerance and reduces the likelihood of data loss.
 
 ## Image
 
-An image is a pre-installed, ready-to-use operating system. It can be a Linux distribution, a Windows operating system, or any other system designed to run on a cloud computing platform.
+The configuration and data of the virtual machine are stored as one or more files. These files can be used as an image to run a VM in a local environment or to create a new VM.
 
-These images can be “minimal,” meaning the operating system is reduced to what is strictly necessary for standard use. They can also come with preinstalled apps so that the user can avoid reinstalling them every time they reboot the instance.
+On the VK Cloud platform, you can create an image based on a VM disk or upload an image file. The resulting image can be used to create a new virtual machine.
 
-Typically, images used for the cloud include some post-launch configuration tools that you can use to set information unique to an instance, such as its hostname.
+## Load balancer
 
-There are public images provided by VK Cloud and private images created and uploaded individually in each cloud project.
+The load balancer allows you to distribute incoming traffic between multiple virtual backend servers and thereby ensure high availability for the services provided by those servers. If one or more servers fail, traffic will be redirected to the remaining servers. Also the separate type of load balancer is used to power other VK Cloud platform services.
 
-## Flavor or Virtual Machine Configuration
+The VK Cloud platform load balancer is based on [OpenStack Octavia](https://docs.openstack.org/octavia/latest/), which has [HAProxy](http://www.haproxy.org/) at its core.
 
-Flavor is an instance model that defines its characteristics in terms of resources. The flavor determines the amount of CPU and RAM of the virtual machine.
+## Security group
 
-For example, the "Standard-4-8" flavor in the VK Cloud cloud defines 4 vCPUs and 8 GB of RAM.
-
-## Disk (Volume)
-
-Disk is a block storage device that attaches to instances. There are several different types of disks in VK Cloud: ssd, hdd, and high-iops ssd.
-
-The size and type of discs is set individually when creating them in accordance with the needs. Expand, attach, convert, snapshot or delete operations are available for disks.
-
-## Availability Zone
-
-Availability zone - logical division and combination of hypervisors for their physical isolation and fault tolerance. MS1 and GZ1 are zones physically located in different data centers.
-
-## Key pair
-
-The key pair is used to log into a Linux virtual machine using the ssh protocol or to decrypt the Windows instance password. A key pair can be created at the time of launching an instance or import an existing one.
-
-## Security Group
-
-These are sets of configurable permissive rules that regulate network access rights (logging in via a specific protocol, through a specific port) for specific IP addresses or security groups.
-
-## Hypervisor
-
-A hypervisor is software that creates and runs virtual machines (VMs). A hypervisor, sometimes called a virtual machine monitor (VMM), that isolates the operating system and hypervisor resources from virtual machines and allows you to create and manage these virtual machines
+Security group is a sets of configurable permissive rules that regulate network access rights (login via a specific protocol, through a specific port) for certain IP addresses or other security groups.
