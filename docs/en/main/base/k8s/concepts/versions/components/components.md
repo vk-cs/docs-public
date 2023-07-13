@@ -1,6 +1,6 @@
 The supported versions of components and [addons](../../addons-and-settings/addons) depend on the version of the Kubernetes VK Cloud cluster.
 
-When [updating a cluster](../../../operations/update), its components and installed addons are also updated.
+When [updating a cluster](../../../operations/update), part of its components are also updated, as well the installed addons. If a component, that is to be updated with the cluster, is deleted, then it will be restored during the next cluster update.
 
 ## Components
 
@@ -9,6 +9,7 @@ These components are present in all Kubernetes VK Cloud clusters.
 <!-- prettier-ignore -->
 | Component                                                             | Kubernetes 1.21.4–1.22.x  | Kubernetes 1.23.x–1.25.x  |
 | --------------------------------------------------------------------- | ------------------------- | ------------------------- |
+| [CoreDNS](https://github.com/coredns/coredns)                         | 1.2.4     | 1.10.1    |
 | [Calico](https://github.com/projectcalico/calico)                     | 3.20.2    | 3.25.0    |
 | [Gatekeeper](https://github.com/open-policy-agent/gatekeeper)         | 3.7.0     | 3.11.0    |
 | [Kubernetes Dashboard](https://github.com/kubernetes/dashboard)       | 2.3.1     | 2.7.0     |
