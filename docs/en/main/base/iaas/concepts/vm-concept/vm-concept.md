@@ -79,6 +79,7 @@ To get access to high-performance processors [contact technical support](/en/con
 A disk on the VK Cloud platform is a network block storage device that connects to a VM. The amount of stored data and the speed of access to it depends on the size and type of disk.
 
 The VK Cloud disk subsystem uses network drives. Disk fault tolerance, continuous access to data and their safety are ensured by replication.
+
 Network drives can be partitioned and formatted in the same way as regular locally connected drives. The advantage of network drives: they can be “moved” between VMs located in the same data center.
 
 Low Latency NVME local disks are available in high-performance configurations. To create such a configuration [contact technical support](/en/contacts).
