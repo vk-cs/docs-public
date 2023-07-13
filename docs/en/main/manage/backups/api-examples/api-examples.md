@@ -5,7 +5,6 @@ The following are some examples of using the VK Cloud [Karboii API](/ru/addition
 To follow the examples given:
 
 1. Make sure that [two-factor authentication](/en/base/account/instructions/account-manage/manage-2fa) and [API access](/en/manage/tools-for-using-services/rest-api/enable-api) are enabled.
-1. Make sure that the OpenStack client [is installed](/en/base/account/project/cli/setup) and [authenticate](/en/base/account/project/cli/authorization) to the project.
 1. [Get an access token](/ru/additionals/cases/case-keystone-token) `X-Subject-Token`.
 1. [Find out](https://mcs.mail.ru/app/en/project/endpoints) the endpoint for the Karboii service.
 
