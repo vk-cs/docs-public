@@ -1,14 +1,15 @@
 {
-    "title": "Вопросы и ответы",
-    "pageDescription": "Ответы на часто задаваемые вопросы о сервисе Базы данных.",
-    "shortDescription": "Ответы на часто задаваемые вопросы о сервисе Базы данных",
-    "metaTitle": "Вопросы и ответы",
-    "metaDescription": "Ответы на часто задаваемые вопросы о сервисе Базы данных",
-    "sectionTitle": "Вопросы и ответы",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 9,
-    "additionalUuids": [
-        "5cdb68ba-77f9-456f-b682-c11cca483492"
-    ]
+  "title": "Вопросы и ответы",
+  "pageDescription": "Ответы на часто задаваемые вопросы о сервисе Базы данных.",
+  "shortDescription": "Ответы на часто задаваемые вопросы о сервисе Базы данных",
+  "metaTitle": "Вопросы и ответы",
+  "metaDescription": "Ответы на часто задаваемые вопросы о сервисе Базы данных",
+  "sectionTitle": "Вопросы и ответы",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 9,
+  "additionalUuids": [
+    "5cdb68ba-77f9-456f-b682-c11cca483492"
+  ],
+  "uuid": "54f4c8c2-a1e9-4c7f-8186-978a2ca4d976"
 }
