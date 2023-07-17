@@ -34,7 +34,7 @@ Regardless of which method is used, S3 stores the notification configuration as 
 By default, notifications are not enabled for any events. Thus, initially, the notification sub-resource stores an empty configuration.
 
 ```
- <NotificationConfiguration xmlns = "http: // <batch_name> .hb.bizmrg.com / image / 01.jpg /"> 
+ <NotificationConfiguration xmlns = "http: // <batch_name> .hb.vkcs.cloud / image / 01.jpg /"> 
 </NotificationConfiguration>
 ```
 

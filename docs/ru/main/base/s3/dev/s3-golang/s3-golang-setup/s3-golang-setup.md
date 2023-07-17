@@ -6,8 +6,9 @@
 
 Список endpoint url:
 
-1.  https://hb.bizmrg.com — для класса хранения Hotbox.
-2.  https://ib.bizmrg.com — для класса хранения Icebox.
+- Общий домен (ведет в в Московский регион): `https://hb.vkcs.cloud`.
+- Домен Москвы: `https://hb.ru-msk.vkcs.cloud`.
+- Домен Казахстана: `https://hb.kz-ast.vkcs.cloud`.
 
 Учетные данные для доступа к S3: secret key и access key можно хранить:
 
@@ -43,7 +44,7 @@ import (
 )
 
 const (
-	vkCloudHotboxEndpoint = "https://hb.bizmrg.com"
+	vkCloudHotboxEndpoint = "https://hb.vkcs.cloud"
 	// клиент sdk не может определить регион, поэтому необходимо указать регион по умолчанию
 	// достаточно указать любой регион, например us-east-1, он не повлияет на работу эндпоинта
 	defaultRegion = "us-east-1"
