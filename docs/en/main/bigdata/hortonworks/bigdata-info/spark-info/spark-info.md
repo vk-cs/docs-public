@@ -49,7 +49,7 @@ HDFS has a master / slave architecture. An HDFS cluster consists of a single Nam
 
 In the Ambari interface, to manage the HDFS component, open the appropriate tab and open the drop-down menu "Service Actions":
 
-![](./assets/1601848095842.sp1-png)
+![](./assets/1601848095842-sp1.png)
 
 **YARN**
 
@@ -67,7 +67,7 @@ The ApplicationManager is responsible for accepting submitted jobs, negotiating 
 
 To control the YARN component in the Ambari interface, open the appropriate tab and open the drop-down menu "Service Actions":
 
-![](./assets/1601848129042.sp2-png)
+![](./assets/1601848129042-sp2.png)
 
 **MapReduce2**
 
@@ -79,7 +79,7 @@ Typically, compute and storage nodes are the same, that is, the MapReduce infras
 
 To control the MapReduce2 component in the Ambari interface, open the appropriate tab and open the "Service Actions" drop-down menu:
 
-![](./assets/1601848162623.sp3-png)
+![](./assets/1601848162623-sp3.png)
 
 **Hive**
 
@@ -89,7 +89,7 @@ Hive queries are written in the HiveQL query language, which is based on the SQL
 
 To control the Hive component in the Ambari interface, open the appropriate tab and open the drop-down menu "Service Actions":
 
-![](./assets/1601848663087.sp4-png)
+![](./assets/1601848663087-sp4.png)
 
 **Pig**
 
@@ -103,7 +103,7 @@ Apache Pig provides many built-in operators to support data operations like join
 
 In the Ambari interface, to control the Pig component, open the appropriate tab and open the drop-down menu "Service Actions":
 
-![](./assets/1601849134112.cg5-png)
+![](./assets/1601849134112-cg5.png)
 
 **Sqoop**
 
@@ -115,7 +115,7 @@ Sqoop supports incremental loading of a single table or freeform SQL query, as w
 
 In the Ambari interface, to control the Sqoop component, open the appropriate tab and open the drop-down menu "Service Actions":
 
-![](./assets/1601849569381.sp6-png)
+![](./assets/1601849569381-sp6.png)
 
 **Oozie**
 
@@ -123,7 +123,7 @@ Apache Oozie is an open source project based on Java ™ technology that makes i
 
 To control the Oozie component in the Ambari interface, open the appropriate tab and open the drop-down menu "Service Actions":
 
-![](./assets/1601850448167.ozi-png)
+![](./assets/1601850448167-ozi.png)
 
 **ZooKeeper**
 
@@ -135,7 +135,7 @@ ZooKeeper simulates a virtual tree-like file system of interconnected nodes, whi
 
 To control the Zookeeper component in the Ambari interface, open the appropriate tab and open the "Service Actions" drop-down menu:
 
-![](./assets/1601845440719.sp11-png)
+![](./assets/1601845440719-sp11.png)
 
 **AmbariMetrics**
 
@@ -148,7 +148,7 @@ Ambari Metrics System (AMS) - Collects, aggregates and maintains system metrics 
 
 In the Ambari interface, to control the Ambari Metrics component, open the appropriate tab and open the "Actions" drop-down menu:
 
-![](./assets/1601847857955.s12-png)
+![](./assets/1601847857955-s12.png)
 
 **Zeppelin Notebook**
 
