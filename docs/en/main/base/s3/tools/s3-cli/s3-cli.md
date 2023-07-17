@@ -118,27 +118,21 @@ When using the AWS CLI to work with Object Storage, there are a few things to ke
 
 - The AWS CLI treats VK Cloud S3 as a hierarchical file system and object keys are in the form of a file path.
 - When running the aws command to work with VK Cloud S3, the `--endpoint-url` parameter is required because the client is configured by default to work with Amazon servers.
-- Bucket creation should be done using the appropriate `--endpoint-url` - [http://hb.bizmrg.com](http://hb.bizmrg.com) for the Hotbox bucket and [http://ib.bizmrg.com](http://ib.bizmrg.com) for the Icebox bucket.
+- Bucket creation should be done using the appropriate `--endpoint-url` - [http://hb.vkcs.cloud](http://hb.vkcs.cloud).
 - Any operations cannot be performed using the CLI with the Backup bucket class.
 - When using the storage classes `--storage-class`, the `STANDARD` values for Hotbox and `STANDARD_IA` for Icebox apply.
 - When working in MacOS, in some cases it is required to run the following view:
 
 ```
- export PYTHONPATH =/Library/Python/2.7/site-packages; aws s3 <command> --endpoint-url=http://hb.bizmrg.com
+ export PYTHONPATH =/Library/Python/2.7/site-packages; aws s3 <command> --endpoint-url=http://hb.vkcs.cloud
 ```
 
 ## Examples of using
 
-Create a hotbox bucket:
+Create a bucket:
 
 ```
- aws s3 mb s3: // <bucket_name> --endpoint-url http://hb.bizmrg.com
-```
-
-Creating an icebox bucket:
-
-```
- aws s3 mb s3: // <packet_name> --endpoint-url http://ib.bizmrg.com
+ aws s3 mb s3: //<bucket_name> --endpoint-url http://hb.vkcs.cloud
 ```
 
 Changing the bucket storage class:
@@ -150,41 +144,41 @@ Changing the bucket storage class:
 File upload
 
 ```
- aws s3 cp <path_to_local_file> s3: // <packet_name> --endpoint-url http://hb.bizmrg.com
+ aws s3 cp <path_to_local_file> s3: // <packet_name> --endpoint-url http://hb.vkcs.cloud
 ```
 
 Downloading an object
 
 ```
- aws s3 cp s3: // <batch_name> / <key_name> <path_to_local_file> --endpoint-url http://hb.bizmrg.com
+ aws s3 cp s3: // <batch_name> / <key_name> <path_to_local_file> --endpoint-url http://hb.vkcs.cloud
 ```
 
 Synchronizing a local directory with a bucket
 
 ```
- aws s3 sync <local_directory> s3: // <package_name> --endpoint-url http://hb.bizmrg.com
+ aws s3 sync <local_directory> s3: // <package_name> --endpoint-url http://hb.vkcs.cloud
 ```
 
 Moving an object
 
 ```
- aws s3 mv s3: // <batch_name> / <source_key_name> s3: // <bucket_name> / <destination_key_name> --endpoint-url http://hb.bizmrg.com
+ aws s3 mv s3: // <batch_name> / <source_key_name> s3: // <bucket_name> / <destination_key_name> --endpoint-url http://hb.vkcs.cloud
 ```
 
 Getting a list of objects
 
 ```
- aws s3 ls s3: // <bucket_name> --endpoint-url http://hb.bizmrg.com
+ aws s3 ls s3: // <bucket_name> --endpoint-url http://hb.vkcs.cloud
 ```
 
 Deleting an Object
 
 ```
- aws s3 rm s3: // <bucket_name> / <key_name> --endpoint-url http://hb.bizmrg.com
+ aws s3 rm s3: // <bucket_name> / <key_name> --endpoint-url http://hb.vkcs.cloud
 ```
 
 Removing a multi-component object
 
 ```
- aws s3api abort-multipart-upload --bucket <bucket_name> --endpoint-url http://hb.bizmrg.com --key large_test_file --upload-id <multipart_upload_object_ID>
+ aws s3api abort-multipart-upload --bucket <bucket_name> --endpoint-url http://hb.vkcs.cloud --key large_test_file --upload-id <multipart_upload_object_ID>
 ```

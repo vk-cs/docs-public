@@ -9,7 +9,7 @@ import boto3
 session = boto3.session.Session()
 s3_client = session.client(
     service_name='s3',
-    endpoint_url='https://hb.bizmrg.com'
+    endpoint_url='https://hb.vkcs.cloud'
 )
 
 
@@ -39,7 +39,7 @@ import boto3
 session = boto3.session.Session()
 s3_client = session.client(
     service_name='s3',
-    endpoint_url='https://hb.bizmrg.com'
+    endpoint_url='https://hb.vkcs.cloud'
 )
 
 
@@ -69,7 +69,7 @@ import boto3
 session = boto3.session.Session()
 s3_client = session.client(
     service_name='s3',
-    endpoint_url='https://hb.bizmrg.com'
+    endpoint_url='https://hb.vkcs.cloud'
 )
 
 
@@ -89,7 +89,7 @@ import boto3
 session = boto3.session.Session()
 s3_client = session.client(
     service_name='s3',
-    endpoint_url='https://hb.bizmrg.com'
+    endpoint_url='https://hb.vkcs.cloud'
 )
 
 
@@ -111,7 +111,7 @@ import boto3
 session = boto3.session.Session()
 s3_client = session.client(
     service_name='s3',
-    endpoint_url='https://hb.bizmrg.com'
+    endpoint_url='https://hb.vkcs.cloud'
 )
 
 

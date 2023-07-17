@@ -23,7 +23,7 @@ S3 CLI provides several options for loading objects:
 The following command copies the file to the specified bucket and sets the key:
 
 ```
- aws s3 cp test.txt s3: //mybucket/test2.txt --endpoint-url https://hb.bizmrg.com
+ aws s3 cp test.txt s3: //mybucket/test2.txt --endpoint-url https://hb.vkcs.cloud
 ```
 
 For the convenience of loading files from a local directory, you can apply synchronization of objects, the keys of which will be automatically generated after the completion of loading objects into the specified bucket.
@@ -35,7 +35,7 @@ If objects already exist in the bucket, then the files are subject to synchroniz
 - Local file does not exist in the specified bucket
 
 ```
- aws s3 sync <local_path> s3: // <package_name> --endpoint-url https://hb.bizmrg.com
+ aws s3 sync <local_path> s3: // <package_name> --endpoint-url https://hb.vkcs.cloud
 ```
 
 A complete description of copying and moving objects and files is available in the [official S3 CLI documentation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html#synopsis).
