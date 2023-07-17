@@ -23,7 +23,7 @@ Inquiry:
 ```
  POST /multipart-file.tar.gz?uploads HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T174652Z
 Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / ru-msk / s3 / aws4_request, SignedHeaders = host; x-amz-content-sha256; x-amz-date, Signature = e356964d19e38cd5d44
@@ -61,7 +61,7 @@ Inquiry:
 ```
  PUT /multipart-file.tar.gz?partNumber=1&uploadId=2~iCw_lDY8VoBhoRrIJbPMrUqnE3Z-3Qh HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 Content-Length: 5242880
 x-amz-content-sha256: 6ab0931e613fd0cd39af0fa4733edb6ad942df0ad33e057713d44df7195b6ecf
 x-amz-date: 20200831T184459Z
@@ -92,7 +92,7 @@ Inquiry:
 ```
  POST /multipart-file.tar.gz?uploadId=2~iCw_lDY8VoBhoRrIJbPMrUqnE3Z-3Qh HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 Content-Length: 5242880
 x-amz-content-sha256: 6ab0931e613fd0cd39af0fa4733edb6ad942df0ad33e057713d44df7195b6ecf
 x-amz-date: 20200831T184459Z
@@ -127,7 +127,7 @@ Connection: close
 
 <? xml version = "1.0" encoding = "UTF-8"?>
 <CompleteMultipartUploadResult xmlns = "http://s3.amazonaws.com/doc/2006-03-01/">
-<Location> my-test-bucket1.hb.bizmrg.com </Location>
+<Location> my-test-bucket1.hb.vkcs.cloud </Location>
 <Bucket> my-test-bucket1 </Bucket>
 <Key> multipart-file.tar.gz </Key>
 <ETag> f935869350d7cbfcdd219df3f377531b-3 </ETag>
@@ -143,7 +143,7 @@ Inquiry:
 ```
  DELETE /multipart-file.tar.gz?uploadId=2~iCw_lDY8VoBhoRrIJbPMrUqnE3Z-3Qh HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 Content-Length: 5242880
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T202611Z
@@ -169,7 +169,7 @@ Inquiry:
 ```
  PUT /multipart-file.tar.gz?partNumber=1&uploadId=2~iCw_lDY8VoBhoRrIJbPMrUqnE3Z-3Qh HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 Content-Length: 5242880
 x-amz-content-sha256: 6ab0931e613fd0cd39af0fa4733edb6ad942df0ad33e057713d44df7195b6ecf
 x-amz-date: 20200831T184459Z

@@ -24,7 +24,7 @@
 
 ```
 PUT /?pak&username=examplename&prefix=exampleprefix HTTP/1.1
-Host: bucketName.hb.bizmrg.com
+Host: bucketName.hb.vkcs.cloud
 Date: Wed, 14 Feb 2018 11:21:57 GMT
 Authorization: authorization string
 Connection: close
@@ -73,7 +73,7 @@ GET /?pak&marker=prefix&max-keys=2&name-prefix=prefix HTTP/1.1
 Authorization: authorization string
 Connection: close
 Date: Wed, 14 Feb 2018 12:28:10 GMT
-Host: bucketName.hb.bizmrg.com
+Host: bucketName.hb.vkcs.cloud
 ```
 
 **Параметры запроса**
@@ -132,7 +132,7 @@ DELETE /?pak&prefix=prefix/for1&username=prefixusers/prefix/for1 HTTP/1.1
 Authorization: authorization string
 Connection: close
 Date: Wed, 14 Feb 2018 13:05:31 GMT
-Host:  bucketName.hb.bizmrg.com
+Host:  bucketName.hb.vkcs.cloud
 ```
 
 **Параметры запроса**

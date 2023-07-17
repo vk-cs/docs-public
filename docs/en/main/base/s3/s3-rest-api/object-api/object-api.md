@@ -22,7 +22,7 @@ Inquiry:
 ```
  GET /example.txt HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T190539Z
 Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20170710 / ru-msk / s3 / aws4_request, SignedHeaders = host; x-amz-content-sha256; x-amz-date, Signature = e912de558677884f08b83d3bd3d558677884f07d8bd3bd3d8687884f08d4d4d1d3d1d3d2c8d8c884f04d4d4d4d1c4d4d4d4d4d4d4d4d4d4d4f4d4f4d4f4d4f4d4f8244f07104f07104f07104f07104f07104f07104f0710
@@ -62,7 +62,7 @@ Inquiry:
 
 Content-Length: 14
 Content-Type: text / plain
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: 003f0e5fe338b17be8be93fec537764ce199ac50f4e50f2685a753c4cc781747
 x-amz-date: 20200831T194605Z
 x-amz-meta-s3cmd-attrs: uid: 1000 / gname: asb / uname: asb / gid: 1000 / mode: 33204 / mtime: 1499727909 / atime: 1499727909 / md5: fb08934ef619f205f272b0adfd6c099713 / c405time: 1499727909
@@ -102,7 +102,7 @@ Inquiry:
 ```
  PUT /copied-example.txt HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-copy-source: /static-images/example.txt
 x-amz-date: 20200831T202253Z
@@ -142,7 +142,7 @@ Inquiry:
 ```
  HEAD /example.txt HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T185156Z
 Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20170710 / ru-msk / s3 / aws4_request, SignedHeaders = host; x-amz-content-sha256; x-amz-date, Signature = e3b4998b249278fc34
@@ -172,7 +172,7 @@ Inquiry:
 ```
  DELETE /sammy.png HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T194408Z
 Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20170710 / ru-msk / s3 / aws4_request, SignedHeaders = host; x-amz-content-sha256; x-amz-date, Signature = c2a46b21e2e885cd, Signature = c2a46b21b504e858cfd9fdb10b8b21b2e2e85c
@@ -199,7 +199,7 @@ Inquiry:
 ```
  DELETE /sammy.png HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T194408Z
 Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20170710 / ru-msk / s3 / aws4_request, SignedHeaders = host; x-amz-content-sha256; x-amz-date, Signature = c2a46b21e2e885cd, Signature = c2a46b21b504e858cfd9fdb10b8b21b2e2e85c
