@@ -4,11 +4,11 @@ The Big Data cluster is created in the web interface of the VK Cloud control pan
 
 In the personal account of the VK Cloud control panel, in the "Big Data" tab, there is a menu for creating a Big Data cluster.
 
-![](./assets/1601643470213.1-png)
+![](./assets/1601643470213-1.png)
 
 Further, by clicking the "Add cluster" button, a menu will open with the choice of the required configuration and version:
 
-![](./assets/1601646274414.2-png)
+![](./assets/1601646274414-2.png)
 
 _Airflow_ is a set of libraries for running and monitoring tasks written in Python. Already configured to run tasks on worker nodes, you only need to independently decompose the task code into nodes. Can be installed as a component on Hadoop and Spark clusters.
 
@@ -27,7 +27,7 @@ _Spark-HDP-v31_ is an extended set of components. Additionally available Spark, 
 
 At the next stage of creating a cluster, enter a description of the cluster:
 
-![](./assets/1601646393598.6-png)
+![](./assets/1601646393598-6.png)
 
 _Cluster_ name - the name can contain only lowercase Latin letters, numbers or signs "." and "-". Cyrillic and other symbols cannot be used.
 
@@ -43,11 +43,11 @@ Clustering on ext-net is currently not possible. It is worth using a private net
 
 Then also specify the parameters of the nodes - head and worker:
 
-![](./assets/1601646586298.7-png)
+![](./assets/1601646586298-7.png)
 
 After filling in the fields and pressing the "Next" button, an information window appears about the time of cluster creation and access to the Ambari interface.
 
-![](./assets/1601647566872.8-png)
+![](./assets/1601647566872-8.png)
 
 Initializing the cluster and installing the Hadoop components takes 25-30 minutes.
 
