@@ -26,7 +26,7 @@ ZooKeeper simulates a virtual tree-like file system of interconnected nodes, whi
 
 In the Ambari interface, to control the Zookeeper component, open the appropriate tab and open the "Actions" drop-down menu:
 
-![](./assets/1601845265329.a11-png)
+![](./assets/1601845265329-a11.png)
 
 **Ambari Metrics**
 
@@ -39,4 +39,4 @@ Ambari Metrics System (AMS) - Collects, aggregates and maintains system metrics 
 
 In the Ambari interface, to control the Ambari Metrics component, open the appropriate tab and open the "Actions" drop-down menu:
 
-<>![](./assets/1601847487779.a12-png)
+<>![](./assets/1601847487779-a12.png)
