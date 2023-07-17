@@ -27,7 +27,7 @@
 Следующая команда копирует файл в указанный бакет и задает ключ:
 
 ```bash
-aws s3 cp test.txt s3://mybucket/test2.txt --endpoint-url https://hb.bizmrg.com
+aws s3 cp test.txt s3://mybucket/test2.txt --endpoint-url https://hb.vkcs.cloud
 ```
 
 Для удобства загрузки файлов из локального каталога можно применить синхронизацию объектов, ключи которых будут автоматически созданы после завершения загрузки объектов в указанный бакет.
@@ -39,7 +39,7 @@ aws s3 cp test.txt s3://mybucket/test2.txt --endpoint-url https://hb.bizmrg.com
 - Локальный файл не существует в указанном бакете.
 
 ```bash
-aws s3 sync <локальный_путь> s3://<имя_бакета> --endpoint-url https://hb.bizmrg.com
+aws s3 sync <локальный_путь> s3://<имя_бакета> --endpoint-url https://hb.vkcs.cloud
 ```
 
 Полное описание операций копирования и перемещения объектов и файлов доступно в [официальной документации S3 CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/index.html#synopsis).

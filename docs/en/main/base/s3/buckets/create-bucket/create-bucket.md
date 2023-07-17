@@ -94,8 +94,9 @@ aws s3 mb s3://<unique package name> --endpoint-url <endpoint-url>
 
 Where endpoint is the url:
 
-1. [https://hb.bizmrg.com](https://hb.bizmrg.com ) - for the Hotbox storage class
-2. [https://ib.bizmrg.com](https://ib.bizmrg.com ) - for the Icebox storage class
+- Common domain (points to the Moscow region): https://hb.vkcs.cloud
+- Moscow domain: https://hb.ru-msk.vkcs.cloud
+- Kazakhstan domain: https://hb.kz-ast.vkcs.cloud
 
 The following output will appear as a result of the correct execution of the command:
 

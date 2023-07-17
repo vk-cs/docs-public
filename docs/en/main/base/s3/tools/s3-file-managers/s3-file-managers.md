@@ -19,7 +19,7 @@ Installation is performed using [the product distribution kit](https://cyberduck
 To connect, specify:
 
 - Connection type: `Amazon S3`
-- Server and Port: `hb.bizmrg.com:443`
+- Server and Port: `hb.vkcs.cloud:443`
 - Access Key ID: Key identifier obtained when creating an Object Storage account
 - Secret access key: the secret key obtained when creating an Object Storage account
 
@@ -36,7 +36,7 @@ WinSCP is an open source graphical SFTP (SSH File Transfer Protocol) client for 
 To configure, enter the following data:
 
 - Transfer protocol: `Amazon S3`
-- Hostname: `hb.bizmrg.com`
+- Hostname: `hb.vkcs.cloud`
 - Port: `443`
 - Access Key ID: Key ID obtained when creating an Object Storage account
 - Secret Access Key: The secret key obtained when creating an Object Storage account
@@ -118,7 +118,7 @@ To mount a bucket in an operating system, you should:
 2.  Select the directory where the bucket will be mounted and make sure you have permission for the mount operation.
 3.  Run a command of the form:
     ```
-     s3fs <package_name> / mount / <path_to_folder> -o passwd_file = ~ / .passwd-s3fs -o url = http: //hb.bizmrg.com -o use_path_request_style
+     s3fs <package_name> / mount / <path_to_folder> -o passwd_file = ~ / .passwd-s3fs -o url = http: //hb.vkcs.cloud -o use_path_request_style
     ```
 
 ## Disk-O:

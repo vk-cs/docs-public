@@ -24,7 +24,7 @@
 ```
 ...
 PUT / HTTP/1.1
-Host: my-test-bucket1.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-acl: public-read
 x-amz-content-sha256: c6f1fc479f5f690c443b73a258aacc06ddad09eca0b001e9640ff2cd56fe5710
 x-amz-date: 20200831T173143Z
@@ -57,7 +57,7 @@ Connection: close
 ```
 ...
 GET / HTTP/1.1
-Host: hb.bizmrg.com
+Host: hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T183940Z
 Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=245e867a6a653b7b88cbb71a734dacf2cbb4ba927d9aa5fdce57c85ab4f2b40b
@@ -107,7 +107,7 @@ Connection: close
 ```
 ...
 GET / HTTP/1.1
-Host: my-test-bucket1.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T172613Z
 Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=de1bf8931e315c0576edb81a7d8be98874e847548fc70682f6c646e1cfd9177a
@@ -166,7 +166,7 @@ Connection: close
 ```
 ...
 HEAD / HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20170714T185156Z
 Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -197,7 +197,7 @@ Connection: close
 ```
 ...
 DELETE / HTTP/1.1
-Host: my-test-bucket1.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20170710T181321Z
 Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=b0558a25e794bced1ca9b620b4318bb8eb62ddbd34e2b9c1921034bc5acd597b

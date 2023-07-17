@@ -24,7 +24,7 @@ Create user examplename with prefix keys to access the path exampleprefix. One s
 
 ```
 PUT /? Pak & username = examplename & prefix = exampleprefix HTTP / 1.1
-Host: bucketName.hb.bizmrg.com
+Host: bucketName.hb.vkcs.cloud
 Date: Wed, 14 Feb 2018 11:21:57 GMT
 Authorization: authorization string
 Connection: close
@@ -74,7 +74,7 @@ GET /? Pak & marker = prefix & max-keys = 2 & name-prefix = prefix HTTP / 1.1
 Authorization: authorization string
 Connection: close
 Date: Wed, 14 Feb 2018 12:28:10 GMT
-Host: bucketName.hb.bizmrg.com
+Host: bucketName.hb.vkcs.cloud
 ```
 
 **Request parameters**
@@ -133,7 +133,7 @@ DELETE /? Pak & prefix = prefix% 2Ffor1 & username = prefixusers% 2Fprefix% 2Ffo
 Authorization: authorization string
 Connection: close
 Date: Wed, 14 Feb 2018 13:05:31 GMT
-Host: bucketName.hb.bizmrg.com
+Host: bucketName.hb.vkcs.cloud
 ```
 
 **Request parameters**
