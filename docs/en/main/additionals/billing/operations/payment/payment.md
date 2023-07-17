@@ -1,74 +1,82 @@
-You can monitor the [balance](../../start/balance) of the [project](/en/base/account/concepts/projects) in your VK Cloud [personal account](https://mcs.mail.ru/app/). The balance is available if [services are activated](/en/base/account/start/activation) in the project.
+Information about the project [balance](../../start/balance) is available if [services are activated](/en/base/account/start/activation) in the project.
 
 <info>
 
-Viewing project expenses details and making payments is available to users with the [roles](/en/base/account/concepts/rolesandpermissions) of Project owner, Superadministrator, or Billing administrator.
+Viewing project expenses details and making payments is available to users whose [role](/en/base/account/concepts/rolesandpermissions) in the [project](/en/base/account/concepts/projects) is Project owner, Superadministrator, or Billing administrator.
 
 </info>
 
 ## Viewing the balance
 
-The balance information is available:
+At the top of the personal account page, the balance total is displayed: the sum of funds on both project [accounts](../../start/balance).
 
-- At the top of the personal account page;
+To view the balance:
 
-  Near the project name, the balance total is displayed: the sum of funds on both project [accounts](../../start/balance).
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/en/).
 
-- On the separate project balance page. To open the balance page, use one of these options:
+1. Open the balance page using one of these options:
 
-  - click on your user name in the top part of the personal account page and select **Balance and payments** from the drop-down list;
-  - select the **Balance** option in the side menu.
+   - Click on your user name in the top part of the personal account page and select **Balance and payments** from the drop-down list.
+   - Select the **Balance** section in the side menu.
 
-   The page displays the total balance and, separately, the amount of bonuses on the [bonus account](../../start/balance#bonus-account). [Detailed expenses](../detail) information is available, with a possibility of filtering by time period, project, and other criteria.
-
-## Making a payment
+   The page displays the balance of main and bonus funds.
 
 <info>
 
-It is possible to credit funds to the [main account](../../start/balance#main-account) of the project only.
+The page also displays [detailed expenses](../detail) on all projects in which your [role](/en/base/account/concepts/rolesandpermissions) is Owner, Superadministrator, or Billing Administrator. The data on the **Details** и **Expenses on services** tabs are by default pre-filtered by the current project.
 
 </info>
 
+## Making a payment
+
+It is possible to credit funds to the [main account](../../start/balance#main-account) of the project only and in the project currency only.
+
 To make a payment:
 
-<tabs>
-<tablist>
-<tab>Individuals</tab>
-<tab>Legal entities</tab>
-</tablist>
-<tabpanel>
-
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/en/).
 1. Click on the ![Make a payment](./assets/icon_plus.svg "inline") icon at the top of the personal account page or click on the **Make a payment** button on the [balance page](#viewing-the-balance).
-
 1. Specify the amount of the deposit.
 
    The minimum amount that can be credited is 10 rubles for projects in the Moscow [region](/en/base/account/concepts/regions) and 100 tenge for projects in the Kazakhstan region.
 
-1. Make payment using one of the available [payment methods](../../start/payment-methods).
+1. Select one of the [payment methods](../../start/payment-methods).
 
-Payment operations are carried out with the support of the [Деньги.Мэйл.Ру](https://money.mail.ru/oferta/payfast).
+   Two options are available for paying via a bank card:
 
-The payment takes place in real time and is credited within 10 minutes.
+   - **Card**: for paying with a card that is [linked](../add-card) to the project.
 
-</tabpanel>
-<tabpanel>
+      When this option is selected, it is not necessary to enter the card details.
 
-For legal entities, residents of the Russian Federation, it is possible to create and upload a payment document (invoice) for subsequent payment by bank transfer.
+   - **Bank card**: for paying with a card that is not linked to the project.
 
-1. Enter the payment amount.
-2. Select the payment method - bank transfer. A file with an invoice will be automatically generated and uploaded, in the purpose of payment of which the necessary data will be specified:
-   - Details of the organization of the payee;
-   - Account number;
-   - Purpose of payment;
-   - Payment amount.
+   For region Kazakhstan only these two options are available: **Card** and **Bank card**.
 
-<warn>
+   <info>
 
-Before making a payment, make sure that the information about the purpose of the payment and the details are correct. The absence of the project in the purpose of payment, as well as payment from the settlement account of a legal entity whose details are different from those specified in the project settings, may lead to a refusal to transfer funds to the project balance.
+   For legal entities, the recommended payment method is **Bank transfer**. Payments made using other methods are not included in the [financial documents](../report) for legal entities.
 
-</warn>
+   </info>
 
-Funds will be credited to the balance after checking the receipt of the transfer to the payee's account. The processing time of the transaction depends on the bank and can take up to three days.
+## Expenses notifications
 
-</tabpanel>
-</tabs>
+You can set up a monthly expenses limit for each of your projects. When an expenses total for the current calendar month exceeds the limitation, a notification is sent to the project Owner email.
+
+To set up an expenses limitation and notifications:
+
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/en/).
+
+1. Open the balance page using one of these options:
+
+   - Click on your user name in the top part of the personal account page and select **Balance and payments** from the drop-down list.
+   - Select the **Balance** section in the side menu.
+
+1. On the balance page, go to the **Limitation** tab.
+
+   The tab displays a list of all projects in which your [role](/en/base/account/concepts/rolesandpermissions) is Owner or Superadminitrator.
+
+1. Click on the ![Settings](./assets/filter_icon.svg "inline") icon opposite to the project.
+
+   The limit configuration window opens.
+
+1. Enable the **Notify of excess costs** option.
+1. Specify the limit value (from `1` to `999999999` in the currency of the project) and click **Save changes**.
