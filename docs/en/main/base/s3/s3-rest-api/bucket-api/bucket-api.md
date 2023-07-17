@@ -12,7 +12,7 @@ All operations with buckets are characterized by typical error messages, request
 
 The PUT operation creates a new bucket. To create a bucket, you need to register on the VK Cloud platform and obtain an access key to authorize requests. Bucket creation using anonymous requests is not possible. The initiator of the bucket creation request automatically becomes its owner.
 
-When using the operation to create a bucket, you can specify projects or groups that need to be granted certain rights to the bucket, and also specify the storage class: hotbox or icebox. There are two ways to grant rights using request headers:
+When using the operation to create a bucket, you can specify projects or groups that need to be granted certain rights to the bucket. There are two ways to grant rights using request headers:
 
 - Specifying the prepared ACL in the request using the x-amz-acl request header.
 - Explicitly specifying access rights using the x-amz-grant-read, x-amz-grant-write, x-amz-grant-read-acp, x-amz-grant-write-acp, x-amz-grant- headers full-control.
@@ -24,7 +24,7 @@ Inquiry:
 ```
  PUT / HTTP / 1.1
 
-Host: my-test-bucket1.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-acl: public-read
 x-amz-content-sha256: c6f1fc479f5f690c443b73a258aacc06ddad09eca0b001e9640ff2cd56fe5710
 x-amz-date: 20200831T173143Z
@@ -55,7 +55,7 @@ Inquiry:
 ```
  GET / HTTP / 1.1
 
-Host: hb.bizmrg.com
+Host: hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T183940Z
 Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / ru-msk / s3 / aws4_request, SignedHeaders = host; x-amz-content-sha256; x-amz-date, Signature = 245eb867ab4dba65c71
@@ -103,7 +103,7 @@ Inquiry:
 ```
  GET / HTTP / 1.1
 
-Host: my-test-bucket1.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T172613Z
 Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / ru-msk / s3 / aws4_request, SignedHeaders = host; x-amz-content-sha256; x-amz-date, Signature = de1bf77684d915c74
@@ -160,7 +160,7 @@ Inquiry:
 ```
  HEAD / HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20170714T185156Z
 Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / ru-msk / s3 / aws4_request, SignedHeaders = host; x-amz-content-sha256; x-amz-date, Signature = e3b4551b249278fc34ae
@@ -189,7 +189,7 @@ Inquiry:
 ```
  DELETE / HTTP / 1.1
 
-Host: my-test-bucket1.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20170710T181321Z
 Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / ru-msk / s3 / aws4_request, SignedHeaders = host; x-amz-content-sha256; x-amz-date, Signature = b0558a259d9dbbcdate, Signature = b0558a259d9794

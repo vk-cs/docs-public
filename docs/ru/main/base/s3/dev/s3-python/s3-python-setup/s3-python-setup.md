@@ -6,8 +6,9 @@
 
 Список endpoint url:
 
-1.  https://hb.bizmrg.com — для класса хранения Hotbox.
-2.  https://ib.bizmrg.com — для класса хранения Icebox.
+- Общий домен (ведет в в Московский регион): `https://hb.vkcs.cloud`.
+- Домен Москвы: `https://hb.ru-msk.vkcs.cloud`.
+- Домен Казахстана: `https://hb.kz-ast.vkcs.cloud`.
 
 Учетные данные для доступа к S3: secret key и access key можно хранить:
 
@@ -31,7 +32,7 @@ import boto3
 session = boto3.session.Session()
 s3_client = session.client(
     service_name='s3',
-    endpoint_url='https://hb.bizmrg.com'
+    endpoint_url='https://hb.vkcs.cloud'
 )
 ```
 
@@ -44,7 +45,7 @@ import boto3
 session = boto3.session.Session()
 s3_client = session.client(
     service_name = 's3',
-    endpoint_url = 'https://hb.bizmrg.com',
+    endpoint_url = 'https://hb.vkcs.cloud',
     aws_access_key_id = 'YOUR_ACCESS_KEY',
     aws_secret_access_key = 'YOUR_SECRET_KEY'
 )
