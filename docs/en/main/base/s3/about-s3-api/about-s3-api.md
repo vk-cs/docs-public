@@ -8,7 +8,7 @@ SOAP over HTTP support has been deprecated but is still available over HTTPS. Ho
 
 ## S3 compatible
 
-The VK Cloud S3 API is designed to interact with the Amazon AWS S3 API. In most cases, when using the client library, setting the "endpoint" or "base" URL hb.bizmrg.com and creating the VK Cloud S3 key pair will allow the VK Cloud Object Storage service.
+The VK Cloud S3 API is designed to interact with the Amazon AWS S3 API. In most cases, when using the client library, setting the "endpoint" or "base" URL hb.vkcs.cloud and creating the VK Cloud S3 key pair will allow the VK Cloud Object Storage service.
 
 VK Cloud S3 provides support for create, read, update, and delete operations for both buckets and objects, as well as the ability to define access control lists (ACLs). Some S3 features are not supported, as shown in the table below:
 
@@ -25,7 +25,7 @@ from botocore.client import Config
 session = boto3.session.Session ()
 client = session.client ('s3',
 region_name = 'ru-msk',
-endpoint_url = 'https: //hb.bizmrg.com',
+endpoint_url = 'https: //hb.vkcs.cloud',
 aws_access_key_id = 'urvt4LXPwoSL9s6ieGTLT5',
 aws_secret_access_key = '5JogfQUsWzzBE9xG1mbBkMkgW7pxY4TGyHgefSC9n2Xx')
 # Create a new bucket.
@@ -51,7 +51,7 @@ import (
 func main () {
 accessKey: = os.Getenv ("VK Cloud_KEY")
 secKey: = os.Getenv ("VK Cloud_SECRET")
-endpoint: = "hb.bizmrg.com"
+endpoint: = "hb.vkcs.cloud"
 bucketName: = "my-test-bucket1" // Bucket names must be unique for all VK Cloud projects
 ssl: = true
 if accessKey == "" || secKey == "" {
@@ -138,7 +138,7 @@ For example, for the following query:
 
 ```
 GET /? Acl HTTP / 1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T221549Z
 ```
@@ -149,7 +149,7 @@ This is the canonical query:
 GET
 /
 acl =
-host: my-test-bucket1.hb.bizmrg.com
+host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T221549Z
 host; x-amz-content-sha256; x-amz-date
@@ -160,7 +160,7 @@ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 Common headers that can be used in most requests:
 
-<table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(0%); width: 100%;" width="195"><tbody><tr><td height="19" style="width: 20%; background-color: rgb(239, 239, 239);" width="56.41025641025641%">Name</td><td style="width: 79.7468%; background-color: rgb(239, 239, 239);" width="43.58974358974359%">Description</td></tr><tr><td height="19" style="width: 20%;">Authorization</td><td style="width: 79.7468%;">Authorization details for request in AWS Signature Version 4 or AWS Signature Version 2 format</td></tr><tr><td height="19" style="width: 20%;">Content-Length</td><td style="width: 79.7468%;">The length of the request body in bytes. Required for PUT requests containing an XML body.</td></tr><tr><td height="19" style="width: 20%;">Content-Type</td><td style="width: 79.7468%;">The MIME type of the request body (e.g. text / plain)</td></tr><tr><td height="19" style="width: 20%;">Date</td><td style="width: 79.7468%;">Current date and time in Coordinated Universal Time (UTC) format in RFC 2822 format. Example: Mon, 10 Jul 2017 19:05:09 +0000</td></tr><tr><td height="19" style="width: 20%;">Host</td><td style="width: 79.7468%;">The target host for the request (for example, my-test-bucket1.hb.bizmrg.com).</td></tr><tr><td height="19" style="width: 20%;">x-amz-content-sha256</td><td style="width: 79.7468%;">The SHA256 hash of the request payload. Required when using AWS Signature Version 4 for authentication.</td></tr><tr><td height="19" style="width: 20%;">x-amz-date</td><td style="width: 79.7468%;">The current date and time in Coordinated Universal Time (UTC) using the ISO 8601 format:% Y% m% dT% H% M% SZ (for example 20200831T172753Z). If provided, it takes precedence over the Date heading.</td></tr></tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" style="margin-right: calc(0%); width: 100%;" width="195"><tbody><tr><td height="19" style="width: 20%; background-color: rgb(239, 239, 239);" width="56.41025641025641%">Name</td><td style="width: 79.7468%; background-color: rgb(239, 239, 239);" width="43.58974358974359%">Description</td></tr><tr><td height="19" style="width: 20%;">Authorization</td><td style="width: 79.7468%;">Authorization details for request in AWS Signature Version 4 or AWS Signature Version 2 format</td></tr><tr><td height="19" style="width: 20%;">Content-Length</td><td style="width: 79.7468%;">The length of the request body in bytes. Required for PUT requests containing an XML body.</td></tr><tr><td height="19" style="width: 20%;">Content-Type</td><td style="width: 79.7468%;">The MIME type of the request body (e.g. text / plain)</td></tr><tr><td height="19" style="width: 20%;">Date</td><td style="width: 79.7468%;">Current date and time in Coordinated Universal Time (UTC) format in RFC 2822 format. Example: Mon, 10 Jul 2017 19:05:09 +0000</td></tr><tr><td height="19" style="width: 20%;">Host</td><td style="width: 79.7468%;">The target host for the request (for example, my-test-bucket1.hb.vkcs.cloud).</td></tr><tr><td height="19" style="width: 20%;">x-amz-content-sha256</td><td style="width: 79.7468%;">The SHA256 hash of the request payload. Required when using AWS Signature Version 4 for authentication.</td></tr><tr><td height="19" style="width: 20%;">x-amz-date</td><td style="width: 79.7468%;">The current date and time in Coordinated Universal Time (UTC) using the ISO 8601 format:% Y% m% dT% H% M% SZ (for example 20200831T172753Z). If provided, it takes precedence over the Date heading.</td></tr></tbody></table>
 
 These general headers can also be found in most of the answers:
 

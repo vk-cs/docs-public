@@ -15,7 +15,7 @@ import (
 )
 
 const (
-	vkCloudHotboxEndpoint = "https://hb.bizmrg.com"
+	vkCloudHotboxEndpoint = "https://hb.vkcs.cloud"
 	defaultRegion         = "us-east-1"
 )
 
@@ -62,7 +62,7 @@ import (
 )
 
 const (
-	vkCloudHotboxEndpoint = "https://hb.bizmrg.com"
+	vkCloudHotboxEndpoint = "https://hb.vkcs.cloud"
 	defaultRegion = "us-east-1"
 )
 

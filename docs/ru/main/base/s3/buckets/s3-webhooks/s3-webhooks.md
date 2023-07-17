@@ -40,7 +40,7 @@
 По умолчанию уведомления не включены ни для каких событий. Таким образом, изначально подресурс уведомления хранит пустую конфигурацию.
 
 ```xml
-<NotificationConfiguration xmlns="http://<имя_бакета>.hb.bizmrg.com/image/01.jpg/"> 
+<NotificationConfiguration xmlns="http://<имя_бакета>.hb.vkcs.cloud/image/01.jpg/"> 
 </NotificationConfiguration>
 ```
 

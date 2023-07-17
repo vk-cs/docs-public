@@ -38,7 +38,7 @@ ACL (Access Control List) позволяет контролировать, ка�
 
 ```
 GET /?acl HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T174434Z
 Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=71dfa4666fb740d40d05307a29321c65cc620cdb17e8a9cb83d4f0e1b1b9d236
@@ -95,7 +95,7 @@ Connection: close
 PUT /?acl HTTP/1.1
 Content-Type: application/xml
 Content-Length: 675
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: 724483e3830b19d6960345c484fb7904b26e8f2fb34a6c002fa779353b68c8d8
 x-amz-date: 20200831T183709Z
 Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/s3/aws4_request,SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date,Signature=1cf3f7771a4086375e5b6597026db6d55d84fbc86e3c3a86ec420ea9123e3163
@@ -141,7 +141,7 @@ Connection: close
 
 ```
 GET /sammy.png?acl HTTP/1.1
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T191224Z
 Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/s3/aws4_request,SignedHeaders=host;x-amz-content-sha256;x-amz-date,Signature=950e133849cd19d626291fd2937d927957cf3e97a36707d30d51a9b61ac08a8e
@@ -198,7 +198,7 @@ Connection: close
 PUT /sammy.png?acl HTTP/1.1
 Сontent-Type: application/xml
 Content-Length: 443
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256:c0bd9ba784be78d4f38bbc1e3b0da2de2e7a8f4ee259b3b840369cf00a78dad2
 x-amz-date:20200831T192142Z
 Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/s3/aws4_request,SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date,Signature=dfeeb2386f76b29097adadb35ac15f7d5f244f18cc95f082b0ac6d14ced48b10

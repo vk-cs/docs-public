@@ -3,14 +3,14 @@
 ACL (Access Control List) позволяет контролировать, какие операции разрешены каким пользователям. ACL может стоять как и на уровне всего бакета, так и на уровне конкретного объекта. Установить и прочесть ACL можно через приведенные методы ниже. По умолчанию, создаваемый бакет или объект максимально ограничен в доступе — только владелец бакета/объекта может работать с ним. У остальных пользователей — запрет доступа. ACL указывается в XML формате. Где в поле Owner ID нужно указать свой канонический идентификатор в системе VK Cloud. Получить его можно разными способами. Один из них:
 
 ```bash
-aws s3api list-buckets --query Owner.ID --output text --endpoint-url https://hb.bizmrg.com
+aws s3api list-buckets --query Owner.ID --output text --endpoint-url https://hb.vkcs.cloud
 ```
 
 Пример ACL, который дает те же права, что и по умолчанию (только владелец имеет полный доступ, никто больше):
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<AccessControlPolicy xmlns="http://<имя_бакета>.hb.bizmrg.com/images/01.jpg/">
+<AccessControlPolicy xmlns="http://<имя_бакета>.hb.vkcs.cloud/images/01.jpg/">
   <Owner>
     <ID>fcd68908-6c76-42d1-968b-82ae2a5a251d</ID>
     <DisplayName>owner-display-name</DisplayName>
@@ -181,7 +181,7 @@ ACL допускает только конечный набор разрешен
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<AccessControlPolicy xmlns="http://<имя_бакета>.hb.bizmrg.com/images/01.jpg/">
+<AccessControlPolicy xmlns="http://<имя_бакета>.hb.vkcs.cloud/images/01.jpg/">
   <Owner>
     <ID>Owner-canonical-user-ID</ID>
     <DisplayName>display-name</DisplayName>
@@ -261,7 +261,7 @@ Hotbox предоставляет возможность управлять до
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<AccessControlPolicy xmlns="http://BucketName.hb.bizmrg.com/doc/2006-03-01/">
+<AccessControlPolicy xmlns="http://BucketName.hb.vkcs.cloud/doc/2006-03-01/">
   <Owner>
     <ID>***Owner-Canonical-User-ID***</ID>
     <DisplayName>owner-display-name</DisplayName>
@@ -415,7 +415,7 @@ API-сервис позволяет вам установить ACL при со�
  Authorization: authorization string
  Connection: close
  Date: Wed, 02 Aug 2017 09:53:13 GMT
- Host: bucketname.hb.bizmrg.com
+ Host: bucketname.hb.vkcs.cloud
  X-amz-content-sha256: UNSIGNED-PAYLOAD
  X-amz-acl: public-read
 ```
@@ -469,7 +469,7 @@ API-сервис позволяет вам установить ACL при со�
  Connection: close
  Content-Length: 417
  Date: Wed, 02 Aug 2017 09:53:13 GMT
- Host: bucketname.hb.bizmrg.com
+ Host: bucketname.hb.vkcs.cloud
  X-amz-content-sha256: UNSIGNED-PAYLOAD
 
 ```

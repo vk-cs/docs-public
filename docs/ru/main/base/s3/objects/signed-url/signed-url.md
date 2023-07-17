@@ -30,7 +30,7 @@
 ## Общий вид подписанного URL
 
 ```
-https://hb.bizmrg.com/<имя_бакета>/<имя_ключа>?
+https://hb.vkcs.cloud/<имя_бакета>/<имя_ключа>?
      X-Amz-Algorithm=AWS4-HMAC-SHA256
     &X-Amz-Expires=<интервал времени в секундах>
     &X-Amz-SignedHeaders=<список заголовков разделенный символами ";">
@@ -66,5 +66,5 @@ https://hb.bizmrg.com/<имя_бакета>/<имя_ключа>?
 С помощью S3 CLI можно сгенерировать предварительно подписанную ссылку следующей командой:
 
 ```bash
-aws s3 presign s3://<имя_бакета>/<название_ключа> --endpoint-url http://hb.bizmrg.com --expires-in <время_в_секундах>
+aws s3 presign s3://<имя_бакета>/<название_ключа> --endpoint-url https://hb.vkcs.cloud --expires-in <время_в_секундах>
 ```

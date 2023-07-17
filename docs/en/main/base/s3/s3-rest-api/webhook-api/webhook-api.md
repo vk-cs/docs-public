@@ -22,7 +22,7 @@ The following methods are available for working with WebHooks:
 
 ```
  PUT /? Notification HTTP / 1.1
-Host: Bucket.hb.bizmrg.com
+Host: Bucket.hb.vkcs.cloud
 
 <? xml version = "1.0" encoding = "UTF-8"?>
 <NotificationConfiguration xmlns = "http://s3.amazonaws.com/doc/2006-03-01/">
@@ -58,7 +58,7 @@ Inquiry:
 ```
  PUT /? Notification HTTP / 1.1
 
-Host: bucketA.hb.bizmrg.com
+Host: bucketA.hb.vkcs.cloud
 Content-Length: 456
 Content-Type: application / xml
 x-amz-content-sha256: 34850007f92ec3331486b48fd7db15f48315fe73c4a9b135e6d9fd629276c1e7
@@ -108,7 +108,7 @@ Inquiry:
 ```
  GET /? Notification HTTP / 1.1
 
-Host: my-test-bucket1.hb.bizmrg.com
+Host: my-test-bucket1.hb.vkcs.cloud
 Content-Length: 456
 Content-Type: application / xml
 x-amz-content-sha256: 34850007f92ec3331486b48fd7db15f48315fe73c4a9b135e6d9fd629276c1e7
