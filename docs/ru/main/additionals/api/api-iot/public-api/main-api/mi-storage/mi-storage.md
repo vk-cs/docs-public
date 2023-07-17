@@ -1,4 +1,4 @@
-![{swagger}](./assets/registry.swagger.json)
+![{swagger}](./assets/registry-swagger.json)
 
 Пример получения списка бизнес правил из HTTP API платформы:
 ```bash
