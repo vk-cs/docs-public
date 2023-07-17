@@ -8,4 +8,4 @@
 
 [Спецификация в формате YAML](./assets/visionapi.yaml "download")
 
-![{swagger}](./assets/visionapi.swagger.json)
+![{swagger}](./assets/visionapi-swagger.json)
