@@ -51,7 +51,7 @@ The way to connect to the cluster depends on its IP address:
    1. Check the `kubectl` version by running the command:
 
       ```bash
-      kubectl version --client
+      kubectl version --short
       ```
 
    </tabpanel>
@@ -84,7 +84,7 @@ The way to connect to the cluster depends on its IP address:
    1. Check the `kubectl` version by running the command:
 
       ```bash
-      kubectl version --client
+      kubectl version --short
       ```
 
    </tabpanel>
@@ -121,7 +121,7 @@ The way to connect to the cluster depends on its IP address:
    1. Check the `kubectl` version by running the command:
 
       ```bash
-      kubectl version --client
+      kubectl version --short
       ```
 
    </tabpanel>
@@ -150,7 +150,7 @@ The way to connect to the cluster depends on its IP address:
    1. Check the `kubectl` version by running the command:
 
       ```bash
-      kubectl version --client
+      kubectl version --short
       ```
 
    </tabpanel>
@@ -171,7 +171,7 @@ The way to connect to the cluster depends on its IP address:
    1. Check the `kubectl` version by running the command:
 
       ```bash
-      kubectl version --client
+      kubectl version --short
       ```
 
    </tabpanel>
@@ -204,7 +204,7 @@ The way to connect to the cluster depends on its IP address:
    1. Check the `kubectl` version by running the command:
 
       ```powershell
-      kubectl version --client
+      kubectl version --short
       ```
 
    </tabpanel>
