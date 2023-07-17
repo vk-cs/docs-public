@@ -51,7 +51,7 @@
    1. Проверьте версию `kubectl`, выполнив команду:
 
       ```bash
-      kubectl version --client
+      kubectl version --short
       ```
 
    </tabpanel>
@@ -84,7 +84,7 @@
    1. Проверьте версию `kubectl`, выполнив команду:
 
       ```bash
-      kubectl version --client
+      kubectl version --short
       ```
 
    </tabpanel>
@@ -121,7 +121,7 @@
    1. Проверьте версию `kubectl`, выполнив команду:
 
       ```bash
-      kubectl version --client
+      kubectl version --short
       ```
 
    </tabpanel>
@@ -150,7 +150,7 @@
    1. Проверьте версию `kubectl`, выполнив команду:
 
       ```bash
-      kubectl version --client
+      kubectl version --short
       ```
 
    </tabpanel>
@@ -171,7 +171,7 @@
    1. Проверьте версию `kubectl`, выполнив команду:
 
       ```bash
-      kubectl version --client
+      kubectl version --short
       ```
 
    </tabpanel>
@@ -204,7 +204,7 @@
    1. Проверьте версию `kubectl`, выполнив команду:
 
       ```powershell
-      kubectl version --client
+      kubectl version --short
       ```
 
    </tabpanel>
