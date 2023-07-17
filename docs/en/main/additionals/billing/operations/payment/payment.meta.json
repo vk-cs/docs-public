@@ -1,13 +1,14 @@
 {
-  "title": "Top up balance",
-  "pageDescription": "",
-  "shortDescription": "How to replenish the balance of the account of individuals and legal entities",
-  "metaTitle": "Top up balance",
-  "metaDescription": "",
-  "sectionTitle": "Top up balance",
-  "markdown": "",
+  "title": "Balance management",
+  "pageDescription": "How to view, replenish the project balance and set up notifications.",
+  "shortDescription": "How to view, replenish the project balance and set up notifications",
+  "metaTitle": "Balance management",
+  "metaDescription": "How to view, replenish the project balance and set up notifications",
+  "sectionTitle": "Balance management",
+  "markdown": "How to view, replenish the project balance and set up notifications.",
   "icon": "",
   "infobarItems": null,
   "weight": 1,
-  "uuid": "133535c8-339f-4d8d-b209-136c3f119a6f"
+  "uuid": "133535c8-339f-4d8d-b209-136c3f119a6f",
+  "additionalUuids": ["6051f833-f3d5-4485-9f2f-b3807ec70dd8"]
 }
