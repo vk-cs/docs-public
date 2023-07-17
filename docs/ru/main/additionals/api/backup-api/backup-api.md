@@ -17,4 +17,4 @@
 
 </warn>
 
-![{swagger}](./assets/karboiiapi.swagger.json)
+![{swagger}](./assets/karboiiapi-swagger.json)

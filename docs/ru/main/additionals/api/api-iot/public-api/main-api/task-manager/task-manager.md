@@ -1,1 +1,1 @@
-![{swagger}](./assets/registry.swagger.json)
+![{swagger}](./assets/registry-swagger.json)
