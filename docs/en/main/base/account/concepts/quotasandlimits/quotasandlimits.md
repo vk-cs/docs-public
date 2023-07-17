@@ -121,7 +121,7 @@ Quotas for the total number of disks in the project take into account all types 
 
 The limit on the number of disks per instance (28 pcs.) is associated with PCI bus limitations.
 
-The limit on the size of one image (500 GB) is a hard limit for the Glance service. If you need to download a larger image, contact [technical support](/en/contacts).
+The limit on the size of one image (500 GB) is a hard limit for the Glance service. If you need to download a larger image, use the [instruction](/en/base/s3/use-cases/load-large-image).
 
 The limit on the size of one SSD-HIGH-IOPS disk (5 TB) is due to operational requirements, it can be exceeded without contacting technical support. A disk created over the limit is no different in performance, but restoring or migrating such a disk will take considerable time and will involve risks.
 
