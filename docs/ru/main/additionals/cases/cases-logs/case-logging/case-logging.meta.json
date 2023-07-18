@@ -9,5 +9,7 @@
   "icon": "",
   "infobarItems": null,
   "weight": 1,
-  "uuid": "a2bd57cb-84ec-47b0-96c3-200b02875dac"
+  "uuid": "a2bd57cb-84ec-47b0-96c3-200b02875dac",
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-12T14:33:00.000Z"
 }

@@ -6,6 +6,10 @@
   "metaDescription": "Лицензирование продуктов Microsoft, используемых в виртуальных машинах VK Cloud",
   "sectionTitle": "Microsoft",
   "weight": 0,
-  "additionalUuids": ["90d8ed1a-3b82-40bc-ad81-0abcc0a071cf"],
-  "uuid": "ae8f5d79-114e-4643-bc2c-6f40c78ea719"
+  "additionalUuids": [
+    "90d8ed1a-3b82-40bc-ad81-0abcc0a071cf"
+  ],
+  "uuid": "ae8f5d79-114e-4643-bc2c-6f40c78ea719",
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
 }

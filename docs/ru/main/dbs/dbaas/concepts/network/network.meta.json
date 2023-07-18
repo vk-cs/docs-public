@@ -1,15 +1,17 @@
 {
-    "title": "Работа с сетью",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Работа с сетью",
-    "metaDescription": "",
-    "sectionTitle": "Работа с сетью",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 4,
-    "uuid": "a688895b-a9da-412b-8ea3-b7ebbbbfd25e",
-    "additionalUuids": [
-      "328aea81-13b1-4879-932d-4f3d3be77a58"
-    ]
-  }
+  "title": "Работа с сетью",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Работа с сетью",
+  "metaDescription": "",
+  "sectionTitle": "Работа с сетью",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "a688895b-a9da-412b-8ea3-b7ebbbbfd25e",
+  "additionalUuids": [
+    "328aea81-13b1-4879-932d-4f3d3be77a58"
+  ],
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
+}

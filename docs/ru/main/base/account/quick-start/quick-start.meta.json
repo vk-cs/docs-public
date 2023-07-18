@@ -9,6 +9,11 @@
   "icon": "",
   "weight": 0,
   "infobarItems": null,
-  "additionalUuids": ["0229974e-c0aa-46d3-8c6b-2b41b8c12bb4", "48b35b2c-c63f-4ba5-91d4-10cd5c06833d"],
-  "uuid": "a92c50e0-701c-4aca-869e-0bd73370d7bd"
+  "additionalUuids": [
+    "0229974e-c0aa-46d3-8c6b-2b41b8c12bb4",
+    "48b35b2c-c63f-4ba5-91d4-10cd5c06833d"
+  ],
+  "uuid": "a92c50e0-701c-4aca-869e-0bd73370d7bd",
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
 }

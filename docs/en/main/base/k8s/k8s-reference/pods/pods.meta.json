@@ -1,13 +1,15 @@
 {
-    "title": "Pods",
-    "pageDescription": "General information about pods in Kubernetes.",
-    "shortDescription": "General information about pods in Kubernetes",
-    "metaTitle": "Pods",
-    "metaDescription": "",
-    "sectionTitle": "Pods",
-    "markdown": "General information about pods in Kubernetes.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1,
-    "uuid": "07d0022d-ad51-4b35-8ccd-f9ed5dc58b65"
+  "title": "Pods",
+  "pageDescription": "General information about pods in Kubernetes.",
+  "shortDescription": "General information about pods in Kubernetes",
+  "metaTitle": "Pods",
+  "metaDescription": "",
+  "sectionTitle": "Pods",
+  "markdown": "General information about pods in Kubernetes.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "07d0022d-ad51-4b35-8ccd-f9ed5dc58b65",
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
 }

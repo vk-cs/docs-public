@@ -1,13 +1,15 @@
 {
-    "title": "Connecting to cluster using Kubernetes Dashboard",
-    "pageDescription": "How to connect to a Kubernetes cluster using Kubernetes Dashboard.",
-    "shortDescription": "How to connect to a Kubernetes cluster using Kubernetes Dashboard",
-    "metaTitle": "Connecting to cluster using Kubernetes Dashboard",
-    "metaDescription": "",
-    "sectionTitle": "Connecting to cluster using Kubernetes Dashboard",
-    "markdown": "How to connect to a Kubernetes cluster using Kubernetes Dashboard.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2,
-    "uuid": "a7d4320e-5761-4af2-9551-6d41244bb0db"
+  "title": "Connecting to cluster using Kubernetes Dashboard",
+  "pageDescription": "How to connect to a Kubernetes cluster using Kubernetes Dashboard.",
+  "shortDescription": "How to connect to a Kubernetes cluster using Kubernetes Dashboard",
+  "metaTitle": "Connecting to cluster using Kubernetes Dashboard",
+  "metaDescription": "",
+  "sectionTitle": "Connecting to cluster using Kubernetes Dashboard",
+  "markdown": "How to connect to a Kubernetes cluster using Kubernetes Dashboard.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "a7d4320e-5761-4af2-9551-6d41244bb0db",
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
 }
