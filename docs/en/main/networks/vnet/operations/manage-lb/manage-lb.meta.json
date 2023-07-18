@@ -1,14 +1,21 @@
 {
-    "title": "Managing load balancers",
-    "pageDescription": "Managing load balancers in the virtual networks service.",
-    "shortDescription": "Working with a load balancer, configuring balancing rules",
-    "metaTitle": "Managing load balancers",
-    "metaDescription": "",
-    "sectionTitle": "Managing load balancers",
-    "markdown": "Managing load balancers in the virtual networks service.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 4,
-    "uuid": "0211098f-0a9c-45df-b260-5cdeeabaa1a1",
-    "additionalUuids": ["1329fe9d-2ad8-42cb-b0ce-9d442e2e4eec", "8709cbdb-897d-4291-9ca0-5e65ca725a93", "b0bef568-08ac-4617-ad49-3cef49b26074", "6f233a96-2079-4730-8e9c-70c33cf856fe"]
+  "title": "Managing load balancers",
+  "pageDescription": "Managing load balancers in the virtual networks service.",
+  "shortDescription": "Working with a load balancer, configuring balancing rules",
+  "metaTitle": "Managing load balancers",
+  "metaDescription": "",
+  "sectionTitle": "Managing load balancers",
+  "markdown": "Managing load balancers in the virtual networks service.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "0211098f-0a9c-45df-b260-5cdeeabaa1a1",
+  "additionalUuids": [
+    "1329fe9d-2ad8-42cb-b0ce-9d442e2e4eec",
+    "8709cbdb-897d-4291-9ca0-5e65ca725a93",
+    "b0bef568-08ac-4617-ad49-3cef49b26074",
+    "6f233a96-2079-4730-8e9c-70c33cf856fe"
+  ],
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
 }

@@ -1,13 +1,15 @@
 {
-    "title": "Стоимость сервиса",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Стоимость сервиса",
-    "metaDescription": "",
-    "sectionTitle": "Стоимость сервиса",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2,
-    "uuid": "40f79521-079e-4cd1-a1ed-75dc51ab0a76"
+  "title": "Стоимость сервиса",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Стоимость сервиса",
+  "metaDescription": "",
+  "sectionTitle": "Стоимость сервиса",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "40f79521-079e-4cd1-a1ed-75dc51ab0a76",
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
 }

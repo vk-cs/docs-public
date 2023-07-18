@@ -9,5 +9,9 @@
   "icon": "",
   "infobarItems": null,
   "uuid": "31907aa6-1167-4915-88ce-ce6ad7149698",
-  "additionalUuids": ["30329517-fedd-450a-afd9-63b68214f988"]
+  "additionalUuids": [
+    "30329517-fedd-450a-afd9-63b68214f988"
+  ],
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
 }

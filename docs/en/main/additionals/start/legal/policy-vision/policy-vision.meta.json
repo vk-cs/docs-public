@@ -10,5 +10,7 @@
   "infobarItems": null,
   "disableGithub": true,
   "weight": 4,
-  "uuid": "6d272412-04c5-4c83-8ab7-528ae36f75aa"
+  "uuid": "6d272412-04c5-4c83-8ab7-528ae36f75aa",
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
 }

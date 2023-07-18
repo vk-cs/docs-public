@@ -1,13 +1,15 @@
 {
-    "title": "Access management",
-    "pageDescription": "How to manage access to the Kubernetes cluster, using the user roles in the VK Cloud account.",
-    "shortDescription": "How the Kubernetes cluster access role model works",
-    "metaTitle": "Access management",
-    "metaDescription": "",
-    "sectionTitle": "Access management",
-    "markdown": "How to manage access to the Kubernetes cluster, using the user roles in the VK Cloud account.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 9,
-    "uuid": "5e2f7148-41a2-45fe-830f-b5a7acaa20ae"
+  "title": "Access management",
+  "pageDescription": "How to manage access to the Kubernetes cluster, using the user roles in the VK Cloud account.",
+  "shortDescription": "How the Kubernetes cluster access role model works",
+  "metaTitle": "Access management",
+  "metaDescription": "",
+  "sectionTitle": "Access management",
+  "markdown": "How to manage access to the Kubernetes cluster, using the user roles in the VK Cloud account.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 9,
+  "uuid": "5e2f7148-41a2-45fe-830f-b5a7acaa20ae",
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
 }

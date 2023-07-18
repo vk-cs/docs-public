@@ -6,5 +6,7 @@
   "metaDescription": "Storage types, storage access options, maximum volume and availability zones",
   "sectionTitle": "File storage",
   "weight": 5,
-  "uuid": "411bd59b-068e-4179-9fd1-825f118cba9a"
+  "uuid": "411bd59b-068e-4179-9fd1-825f118cba9a",
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
 }
