@@ -21,7 +21,7 @@ The requests will use:
 - token:
 
   ```bash
-  gAAAAABkZ6hiZJYbnwzHTwXyNT124LYj6wQDHpGnk59IC2hhRqVNHPQbjhtyhOOitNgx5W_taKP_STsaIKO9ysCndjfb9wRV8DptCbSp8uTaYVdZ4T4hbCz9eGHcN-CKdloUnGYSuSAdKD-6eHQ9YYmJBI6dQeT4DlOR7YyG9FwcpudBlnyXXXX
+  gBkZhRqVNHSuSAJBI6duyXXXX
   ```
 - virtual machine:
 
@@ -43,7 +43,7 @@ Request example:
 ```bash
 curl -X GET \
 -H "Accept: application/json" \
--H "X-Auth-Token: gAAAAABkZ6hiZJYbnwzHTwXyNT124LYj6wQDHpGnk59IC2hhRqVNHPQbjhtyhOOitNgx5W_taKP_STsaIKO9ysCndjfb9wRV8DptCbSp8uTaYVdZ4T4hbCz9eGHcN-CKdloUnGYSuSAdKD-6eHQ9YYmJBI6dQeT4DlOR7YyG9FwcpudBlnyXXXX" \
+-H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
 https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/plans
 ```
 
@@ -82,7 +82,7 @@ Request example:
 ```bash
 curl -X GET \
     -H "Accept: application/json" \
-    -H "X-Auth-Token: gAAAAABkZ6hiZJYbnwzHTwXyNT124LYj6wQDHpGnk59IC2hhRqVNHPQbjhtyhOOitNgx5W_taKP_STsaIKO9ysCndjfb9wRV8DptCbSp8uTaYVdZ4T4hbCz9eGHcN-CKdloUnGYSuSAdKD-6eHQ9YYmJBI6dQeT4DlOR7YyG9FwcpudBlnyXXXX" \
+    -H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
     https://mcs.mail.ru/infra/karboii/v1/${OS_PROJECT_ID}/providers
 ```
 
@@ -114,7 +114,7 @@ Request example:
 curl -X POST \
     -H "Accept: application/json" \
     -H "Content-type: application/json" \
-    -H "X-Auth-Token: gAAAAABkZ6hiZJYbnwzHTwXyNT124LYj6wQDHpGnk59IC2hhRqVNHPQbjhtyhOOitNgx5W_taKP_STsaIKO9ysCndjfb9wRV8DptCbSp8uTaYVdZ4T4hbCz9eGHcN-CKdloUnGYSuSAdKD-6eHQ9YYmJBI6dQeT4DlOR7YyG9FwcpudBlnyXXXX" \
+    -H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
     -d '{
       "plan": {
         "name": "example-plan",
@@ -166,7 +166,7 @@ Request example:
 curl -s -X POST \
     -H "Accept: application/json" \
     -H "Content-type: application/json" \
-    -H "X-Auth-Token: gAAAAABkZ6hiZJYbnwzHTwXyNT124LYj6wQDHpGnk59IC2hhRqVNHPQbjhtyhOOitNgx5W_taKP_STsaIKO9ysCndjfb9wRV8DptCbSp8uTaYVdZ4T4hbCz9eGHcN-CKdloUnGYSuSAdKD-6eHQ9YYmJBI6dQeT4DlOR7YyG9FwcpudBlnyXXXX" \
+    -H "X-Auth-Token: gBkZhRqVNHSuSAJBI6duyXXXX" \
     -d '{
       "trigger_info": {
         "name": "example-plan",
