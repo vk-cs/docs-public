@@ -8,7 +8,6 @@
     "build": "vkhelp-build",
     "start": "vkhelp-start",
     "healthcheck": "vkhelp-healthcheck",
-    "updateRedirect": "vkhelp-update-redirect",
     "lint": "vkhelp-lint",
     "dev": "vkhelp-dev"
   },
@@ -19,6 +18,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vk-cloud-solutions/help": "^1.14.2"
+    "@vk-cloud-solutions/help": "1.15.0"
   }
 }
