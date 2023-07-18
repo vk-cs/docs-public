@@ -27,8 +27,7 @@ ARG SENTRY_AUTH_TOKEN=""
 ENV SENTRY_RELEASE=$IMAGE_TAG
 
 RUN npm run prep \
-    && npm cache clean --force \
-    && npm run updateRedirect
+    && npm cache clean --force
 
 EXPOSE 3000
 
