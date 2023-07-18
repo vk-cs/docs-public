@@ -7,5 +7,9 @@
   "sectionTitle": "Часто задаваемые вопросы",
   "weight": 4,
   "uuid": "964dd48b-a5f2-4ad6-93ad-60508f22f895",
-  "additionalUuids": ["37e97879-48d7-42e6-9086-0f11d91c97df"]
+  "additionalUuids": [
+    "37e97879-48d7-42e6-9086-0f11d91c97df"
+  ],
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
 }

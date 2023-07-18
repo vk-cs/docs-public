@@ -1,13 +1,15 @@
 {
-    "title": "Создание инстанса БД",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Создание инстанса БД",
-    "metaDescription": "Базы данных VK Cloud: создание инстанса БД",
-    "sectionTitle": "Создание инстанса БД",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0,
-    "uuid": "6ef83224-6ce8-4a60-a2e7-f931c8f2279a"
-  }
+  "title": "Создание инстанса БД",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Создание инстанса БД",
+  "metaDescription": "Базы данных VK Cloud: создание инстанса БД",
+  "sectionTitle": "Создание инстанса БД",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "6ef83224-6ce8-4a60-a2e7-f931c8f2279a",
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
+}

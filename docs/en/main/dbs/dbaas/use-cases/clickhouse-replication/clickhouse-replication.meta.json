@@ -8,6 +8,10 @@
   "icon": "",
   "infobarItems": null,
   "weight": 5,
-  "additionalUuids": ["0a980896-60f5-4fe1-8a82-04dd28103766"],
-  "uuid": "f096c6fd-8dcb-4841-b248-f04ed11fa1a8"
+  "additionalUuids": [
+    "0a980896-60f5-4fe1-8a82-04dd28103766"
+  ],
+  "uuid": "f096c6fd-8dcb-4841-b248-f04ed11fa1a8",
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
 }

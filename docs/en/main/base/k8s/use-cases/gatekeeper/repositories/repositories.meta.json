@@ -1,13 +1,15 @@
 {
-    "title": "Configuring allowed repositories",
-    "pageDescription": "Using Gatekeeper to enforce constraints that will check that images are downloaded only from allowed repositories.",
-    "shortDescription": "How to create a Gatekeeper constraint that checks that images are downloaded only from allowed repositories",
-    "metaTitle": "Configuring allowed repositories",
-    "metaDescription": "",
-    "sectionTitle": "Configuring allowed repositories",
-    "markdown": "Using Gatekeeper to enforce constraints that will check that images are downloaded only from allowed repositories.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2,
-    "uuid": "9aad2849-1640-4016-9dcb-d588c5d27e90"
+  "title": "Configuring allowed repositories",
+  "pageDescription": "Using Gatekeeper to enforce constraints that will check that images are downloaded only from allowed repositories.",
+  "shortDescription": "How to create a Gatekeeper constraint that checks that images are downloaded only from allowed repositories",
+  "metaTitle": "Configuring allowed repositories",
+  "metaDescription": "",
+  "sectionTitle": "Configuring allowed repositories",
+  "markdown": "Using Gatekeeper to enforce constraints that will check that images are downloaded only from allowed repositories.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "9aad2849-1640-4016-9dcb-d588c5d27e90",
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
 }

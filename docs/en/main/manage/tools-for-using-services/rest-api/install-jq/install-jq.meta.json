@@ -6,5 +6,7 @@
   "metaDescription": "Installing the jq utility for automatic output of structured JSON in the console. It can be used to output OpenStack and API commands.",
   "sectionTitle": "Installing jq",
   "weight": 4,
-  "uuid": "e4e9f881-50e0-4342-acee-9170162fe15e"
+  "uuid": "e4e9f881-50e0-4342-acee-9170162fe15e",
+  "createdAt": "2023-07-11T13:09:59.000Z",
+  "updatedAt": "2023-07-11T13:09:59.000Z"
 }
