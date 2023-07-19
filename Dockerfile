@@ -16,6 +16,7 @@ ARG SENTRYCLI_CDNURL=https://downloads.sentry-cdn.com/sentry-cli
 RUN npm ci \
     && npm cache clean --force
 
+COPY .git/ .git/
 COPY configs/sentry* ./
 COPY vkdocs.config.js ./
 COPY configs/.data/ .data/
