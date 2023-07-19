@@ -1,7 +1,6 @@
 /README.md
 /LICENSE
 /CONTRIBUTING.md
-.git*
 /devops/
 /configs/devops/
 Dockerfile
