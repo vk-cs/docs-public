@@ -6,17 +6,20 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/start"
+                    "link": "docs/ru/main/dbs/dbaas/types"
                 },
                 {
-                    "link": "docs/ru/main/dbs/dbaas/dbaas-start"
+                    "link": "docs/ru/main/dbs/dbaas/concepts/work-configs"
                 },
                 {
-                    "link": "docs/ru/main/dbs/dbaas"
-                },
-                {
-                    "link": "docs/ru/main/additionals/billing",
+                    "link": "docs/ru/main/dbs/dbaas/tariffication",
                     "hiddenForPartners": true
+                },
+                {
+                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
+                },
+                {
+                    "link": "docs/ru/main/dbs/dbaas/faq"
                 }
             ]
         },
@@ -24,10 +27,13 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/main/dbs/dbaas/dbaas-start/db-connect"
+                    "link": "docs/ru/main/dbs/dbaas/quick-start"
                 },
                 {
-                    "link": "docs/ru/main/dbs/dbaas/dbaas-start/db-cluster"
+                    "link": "docs/ru/main/dbs/dbaas/connect"
+                },
+                {
+                    "link": "docs/ru/main/dbs/dbaas/instructions/manage-instance"
                 }
             ]
         },
@@ -35,13 +41,13 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/dbs/dbaas/db-replica/create-db-replica"
+                    "link": "docs/ru/main/dbs/dbaas/use-cases/db-migration"
                 },
                 {
-                    "link": "docs/ru/main/dbs/dbaas/db-backup"
+                    "link": "docs/ru/main/dbs/dbaas/extensions"
                 },
                 {
-                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/main/manage/backups/db-backup"
                 }
             ]
         }

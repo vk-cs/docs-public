@@ -6,10 +6,16 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/networks/vnet/quick-start"
+                    "link": "docs/ru/main/networks/vnet/concepts/overview"
                 },
                 {
-                    "link": "docs/ru/main/networks/vnet"
+                    "link": "docs/ru/main/networks/vnet/concepts/architecture"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet/concepts/net-types"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet/concepts/ips-and-inet"
                 },
                 {
                     "link": "docs/ru/main/networks/vnet/tariffs"
@@ -17,16 +23,24 @@
             ]
         },
         {
-            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/main/networks/vnet/operations/manage-net"
+                    "link": "docs/ru/main/networks/vnet/quick-start"
                 },
                 {
                     "link": "docs/ru/main/networks/vnet/operations"
+                }
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                {
+                    "link": "docs/ru/main/networks/vnet/use-cases/vpn-tunnel"
                 },
                 {
-                    "link": "docs/ru/main/networks/vnet/use-cases"
+                    "link": "docs/ru/main/networks/vnet/use-cases/vip-keepalived"
                 }
             ]
         }

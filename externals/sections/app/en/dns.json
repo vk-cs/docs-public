@@ -12,6 +12,14 @@
                     "link": "docs/en/main/networks/dns/publicdns"
                 }
             ]
+        },
+        {
+            "title": "API",
+            "links": [
+                {
+                    "link": "docs/ru/main/additionals/api/api-dns"
+                }
+            ]
         }
     ]
 }
