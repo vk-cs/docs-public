@@ -6,10 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/start"
+                    "link": "docs/ru/main/ml/gpu/gpu-start/gpu-info"
                 },
                 {
-                    "link": "docs/ru/main/ml/gpu/gpu-start/gpu-info"
+                    "link": "docs/ru/main/base/iaas/faq"
+                },
+                {
+                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
                 }
             ]
         },
@@ -20,18 +23,7 @@
                     "link": "docs/ru/main/ml/gpu/gpu-start/gpu-create"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/vm-start"
-                }
-            ]
-        },
-        {
-            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
-            "links": [
-                {
-                    "link": "docs/ru/main/base/iaas/vm-faq"
-                },
-                {
-                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/main/base/iaas/instructions/vm/vm-connect"
                 }
             ]
         }

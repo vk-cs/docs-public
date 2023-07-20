@@ -12,7 +12,8 @@
                     "link": "docs/ru/main/base/iaas/license"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/pricing"
+                    "link": "docs/ru/main/base/iaas/tariffication",
+                    "hiddenForPartners": true
                 },
                 {
                     "link": "docs/ru/main/base/iaas/faq"

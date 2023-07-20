@@ -6,10 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/networks/cdn/about-cdn"
+                    "link": "docs/ru/main/networks/cdn/concepts/about-cdn"
                 },
                 {
-                    "link": "docs/ru/main/networks/cdn/connect-cdn"
+                    "link": "docs/ru/main/networks/cdn/concepts/http2-support"
+                },
+                {
+                    "link": "docs/ru/main/networks/cdn/tariffs"
                 }
             ]
         }

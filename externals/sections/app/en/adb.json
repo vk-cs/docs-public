@@ -6,10 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/dbs/adb/adb-start"
+                    "link": "docs/en/main/dbs/adb/adb-info/arenadata"
                 },
                 {
-                    "link": "docs/en/main/dbs/adb"
+                    "link": "docs/en/main/dbs/adb/adb-limits/adb-limits-perf"
                 },
                 {
                     "link": "docs/en/main/additionals/billing",
@@ -27,21 +27,10 @@
                     "link": "docs/en/main/dbs/adb/adb-start/launch-adb"
                 },
                 {
+                    "link": "docs/en/main/dbs/adb/adb-connect"
+                },
+                {
                     "link": "docs/en/main/dbs/adb/adb-start/delete-adb"
-                }
-            ]
-        },
-        {
-            "title": "MORE",
-            "links": [
-                {
-                    "link": "docs/en/main/dbs/dbaas/db-replica/create-db-replica"
-                },
-                {
-                    "link": "docs/en/main/dbs/dbaas/db-backup"
-                },
-                {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
                 }
             ]
         }

@@ -6,16 +6,46 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/ml/vision"
+                    "link": "docs/en/main/ml/vision/about-vision"
                 },
                 {
-                    "link": "docs/en/main/ml/vision/vision-start"
+                    "link": "docs/en/main/ml/vision/vision-limits"
                 },
                 {
-                    "link": "docs/en/main/ml/vision/vision-start/vision-rates"
+                    "link": "docs/en/main/ml/vision/changelog"
+                }
+            ]
+        },
+        {
+            "title": "QUICK START",
+            "links": [
+                {
+                    "link": "docs/en/main/ml/vision/vision-start/auth-vision"
                 },
                 {
                     "link": "docs/en/main/ml/vision/manage-vision"
+                }
+            ]
+        },
+        {
+            "title": "ADVANCED SETTINGS",
+            "links": [
+                {
+                    "link": "docs/en/main/ml/vision/vision-integrations/vision-py"
+                },
+                {
+                    "link": "docs/en/main/ml/vision/vision-integrations/vision-php"
+                },
+                {
+                    "link": "docs/en/main/ml/vision/vision-integrations/vision-curl"
+                }
+            ]
+        },
+        {
+            "title": "API",
+            "links": [
+                {
+                    "link": "docs/ru/main/additionals/api/vision-api"
                 }
             ]
         }
