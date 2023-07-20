@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/start"
+                    "link": "docs/ru/main/base/k8s/concepts"
                 },
                 {
-                    "link": "docs/ru/main/base/k8s"
+                    "link": "docs/ru/main/base/k8s/k8s-reference"
                 },
                 {
                     "link": "docs/ru/main/additionals/billing",
@@ -37,6 +37,29 @@
                 },
                 {
                     "link": "docs/ru/main/base/k8s/connect/docker-registry"
+                }
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                {
+                    "link": "docs/ru/main/base/k8s/monitoring"
+                },
+                {
+                    "link": "docs/ru/main/base/k8s/install-tools"
+                },
+                {
+                    "link": "docs/ru/main/base/k8s/operations/addons"
+                },
+                {
+                    "link": "docs/ru/main/base/k8s/use-cases/ingress"
+                },
+                {
+                    "link": "docs/ru/main/base/k8s/use-cases/local-dns-cache"
+                },
+                {
+                    "link": "docs/ru/main/base/k8s/use-cases/velero-backup"
                 }
             ]
         }

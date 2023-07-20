@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/ml/cloud-voice"
+                    "link": "docs/ru/main/ml/cloud-voice/get-voice-token"
                 },
                 {
                     "link": "docs/ru/main/ml/cloud-voice/speech-recognition"

@@ -12,10 +12,11 @@
                     "link": "docs/en/main/base/iaas/license"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/pricing"
+                    "link": "docs/en/main/base/iaas/tariffication",
+                    "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/main/base/iaas/faq"
+                    "link": "docs/en/main/manage/backups/vm-backup/faq-vm-backup"
                 }
             ]
         },
@@ -26,15 +27,15 @@
                     "link": "docs/en/main/base/iaas/quick-start"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/instructions/vm-backup/vm-backup-create"
+                    "link": "docs/en/main/manage/backups/vm-backup/vm-backup-create"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/instructions/vm-backup/vm-backup-manage"
+                    "link": "docs/en/main/manage/backups/vm-backup/vm-backup-manage"
                 }
             ]
         },
         {
-            "title": "MORE",
+            "title": "ADVANCED SETTINGS",
             "links": [
                 {
                     "link": "docs/en/main/base/iaas/instructions/vm/vm-console"

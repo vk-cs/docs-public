@@ -6,14 +6,20 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/dbs/dbaas/dbaas-start"
+                    "link": "docs/en/main/dbs/dbaas/types"
                 },
                 {
-                    "link": "docs/en/main/dbs/dbaas"
+                    "link": "docs/en/main/dbs/dbaas/concepts/work-configs"
                 },
                 {
-                    "link": "docs/en/main/additionals/billing",
+                    "link": "docs/en/main/dbs/dbaas/tariffication",
                     "hiddenForPartners": true
+                },
+                {
+                    "link": "docs/en/main/base/account/concepts/quotasandlimits"
+                },
+                {
+                    "link": "docs/en/main/dbs/dbaas/faq"
                 }
             ]
         },
@@ -21,24 +27,24 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/dbs/dbaas/dbaas-start/db-connect"
+                    "link": "docs/en/main/dbs/dbaas/quick-start"
                 },
                 {
-                    "link": "docs/en/main/dbs/dbaas/dbaas-start/db-cluster"
+                    "link": "docs/en/main/dbs/dbaas/connect"
                 }
             ]
         },
         {
-            "title": "MORE",
+            "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/main/dbs/dbaas/db-replica/create-db-replica"
+                    "link": "docs/en/main/dbs/dbaas/use-cases/db-migration"
                 },
                 {
-                    "link": "docs/en/main/dbs/dbaas/db-backup"
+                    "link": "docs/en/main/dbs/dbaas/extensions"
                 },
                 {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/en/main/manage/backups/db-backup"
                 }
             ]
         }
