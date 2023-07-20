@@ -6,10 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/additionals/start/user-account"
+                    "link": "docs/en/main/base/account/concepts/rolesandpermissions"
                 },
                 {
-                    "link": "docs/en/main/additionals/start/user-account/project-roles-users"
+                    "link": "docs/en/main/base/account/instructions/project-settings/access-manage"
                 }
             ]
         }

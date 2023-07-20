@@ -6,11 +6,17 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/base/s3/s3-start/about-s3"
+                    "link": "docs/en/main/base/s3/intro"
                 },
                 {
-                    "link": "docs/en/main/base/s3/s3-start/s3-rates",
+                    "link": "docs/en/main/base/s3/tariffication",
                     "hiddenForPartners": true
+                },
+                {
+                    "link": "docs/en/main/base/account/concepts/quotasandlimits"
+                },
+                {
+                    "link": "docs/en/main/base/s3/about-s3-api"
                 }
             ]
         },
@@ -18,30 +24,32 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/base/s3/s3-start/create-bucket"
-                },
-                {
-                    "link": "docs/en/main/base/s3/s3-start/object-access"
-                },
-                {
-                    "link": "docs/en/main/base/s3/s3-start/upload-object"
+                    "link": "docs/en/main/base/s3/quick-start"
                 }
             ]
         },
         {
-            "title": "MORE",
+            "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/main/base/s3/manage-s3/s3-lifecycle"
+                    "link": "docs/en/main/base/s3/tools/s3-cli"
                 },
                 {
-                    "link": "docs/en/main/base/s3/s3-tools"
+                    "link": "docs/en/main/base/s3/use-cases/load-large-image"
                 },
                 {
-                    "link": "docs/en/main/base/s3/s3-rest-api"
+                    "link": "docs/en/main/base/s3/use-cases/s3-domain"
                 },
                 {
-                    "link": "docs/en/main/base/s3/s3-start/s3-rates"
+                    "link": "docs/en/main/base/s3/dev"
+                }
+            ]
+        },
+        {
+            "title": "API",
+            "links": [
+                {
+                    "link": "docs/ru/main/additionals/api/s3-rest-api"
                 }
             ]
         }

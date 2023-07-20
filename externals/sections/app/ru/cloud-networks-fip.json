@@ -6,13 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/start"
-                },
-                {
                     "link": "docs/ru/main/networks/vnet/concepts"
                 },
                 {
-                    "link": "docs/ru/main/networks/dns"
+                    "link": "docs/ru/main/networks/vnet/tariffs"
                 }
             ]
         },
@@ -21,6 +18,20 @@
             "links": [
                 {
                     "link": "docs/ru/main/networks/vnet/quick-start"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet/operations/manage-floating-ip"
+                }
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                {
+                    "link": "docs/ru/main/networks/vnet/use-cases/vpn-tunnel"
+                },
+                {
+                    "link": "docs/ru/main/networks/vnet/use-cases/vip-keepalived"
                 }
             ]
         }

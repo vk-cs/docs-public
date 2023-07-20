@@ -6,22 +6,40 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/manage/cloud-queues/cloud-queues-quick-start/cloud-queues-about"
+                    "link": "docs/ru/main/manage/cloud-queues/architecture"
                 },
                 {
-                    "link": "docs/en/main/manage/cloud-queues/cloud-queues-quick-start/cloud-queues-create-delete"
+                    "link": "docs/ru/main/manage/cloud-queues/limitations"
+                }
+            ]
+        },
+        {
+            "title": "QUICK START",
+            "links": [
+                {
+                    "link": "docs/ru/main/manage/cloud-queues/quick-start"
+                }
+            ]
+        },
+        {
+            "title": "ADVANCED SETTINGS",
+            "links": [
+                {
+                    "link": "docs/en/main/manage/cloud-queues/management/cli"
+                }
+            ]
+        },
+        {
+            "title": "API",
+            "links": [
+                {
+                    "link": "docs/en/main/manage/cloud-queues/api-examples"
                 },
                 {
-                    "link": "docs/en/main/manage/cloud-queues/cloud-queues-architecture/based-architecture"
+                    "link": "docs/en/main/manage/cloud-queues/management/request-api"
                 },
                 {
-                    "link": "docs/en/main/manage/cloud-queues/cloud-quques-management/cloud-queues-access-keys"
-                },
-                {
-                    "link": "docs/en/main/manage/cloud-queues/cloud-queues-api"
-                },
-                {
-                    "link": "docs/en/main/manage/cloud-queues/cloud-queues-limitations/limits"
+                    "link": "docs/en/main/manage/cloud-queues/management/interpreting-responses"
                 }
             ]
         }
