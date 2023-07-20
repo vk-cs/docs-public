@@ -12,7 +12,8 @@
                     "link": "docs/en/main/base/iaas/license"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/pricing"
+                    "link": "docs/en/main/base/iaas/tariffication",
+                    "hiddenForPartners": true
                 },
                 {
                     "link": "docs/en/main/base/iaas/faq"
@@ -31,7 +32,7 @@
             ]
         },
         {
-            "title": "MORE",
+            "title": "ADVANCED SETTINGS",
             "links": [
                 {
                     "link": "docs/en/main/base/iaas/instructions/vm/vm-console"

@@ -6,9 +6,6 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/base/account/start"
-                },
-                {
                     "link": "docs/en/main/manage/backups/db-backup"
                 },
                 {
@@ -17,19 +14,30 @@
             ]
         },
         {
-            "title": "MORE",
+            "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/main/manage/backups/db-backup/operations/db-backup-create"
+                    "link": "docs/en/main/manage/backups/db-backup/db-backup-create"
                 },
                 {
-                    "link": "docs/en/main/manage/backups/db-backup/operations/manage-db-backups"
+                    "link": "docs/en/main/manage/backups/db-backup/manage-db-backups"
                 },
                 {
-                    "link": "docs/en/main/manage/backups/db-backup/operations/db-recover-backup"
+                    "link": "docs/en/main/manage/backups/db-backup/db-recover-backup"
                 },
                 {
-                    "link": "docs/en/main/manage/backups/db-backup/operations/point-in-time-recovery-pitr"
+                    "link": "docs/en/main/manage/backups/db-backup/point-in-time-recovery-pitr"
+                }
+            ]
+        },
+        {
+            "title": "API",
+            "links": [
+                {
+                    "link": "docs/ru/main/additionals/api/backup-api"
+                },
+                {
+                    "link": "docs/en/main/manage/backups/api-examples"
                 }
             ]
         }

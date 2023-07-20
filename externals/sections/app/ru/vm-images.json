@@ -12,7 +12,8 @@
                     "link": "docs/ru/main/base/iaas/license"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/pricing"
+                    "link": "docs/ru/main/base/iaas/tariffication",
+                    "hiddenForPartners": true
                 },
                 {
                     "link": "docs/ru/main/base/iaas/faq"
@@ -37,10 +38,10 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/iaas/use-cases/migrate-hyperv"
+                    "link": "docs/ru/main/additionals/migration/migrate-hyperv"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/use-cases/migrate-vmware"
+                    "link": "docs/ru/main/additionals/migration/migrate-vmware"
                 },
                 {
                     "link": "docs/ru/main/base/iaas/instructions/vm/vm-console"

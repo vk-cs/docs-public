@@ -6,25 +6,50 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/base/s3/s3-start"
+                    "link": "docs/en/main/base/s3/tariffication",
+                    "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/main/additionals/billing",
-                    "hiddenForPartners": true
+                    "link": "docs/en/main/base/account/concepts/quotasandlimits"
+                },
+                {
+                    "link": "docs/en/main/base/s3/about-s3-api"
                 }
             ]
         },
         {
-            "title": "MORE",
+            "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/base/s3/s3-start/create-bucket"
+                    "link": "docs/en/main/base/s3/quick-start"
                 },
                 {
-                    "link": "docs/en/main/base/s3/s3-rest-api"
+                    "link": "docs/en/main/base/s3/buckets/object-access"
+                }
+            ]
+        },
+        {
+            "title": "ADVANCED SETTINGS",
+            "links": [
+                {
+                    "link": "docs/en/main/base/s3/tools/s3-cli"
                 },
                 {
-                    "link": "docs/en/main/base/s3/s3-start/s3-rates"
+                    "link": "docs/en/main/base/s3/use-cases/load-large-image"
+                },
+                {
+                    "link": "docs/en/main/base/s3/use-cases/s3-domain"
+                },
+                {
+                    "link": "docs/en/main/base/s3/dev"
+                }
+            ]
+        },
+        {
+            "title": "API",
+            "links": [
+                {
+                    "link": "docs/ru/main/additionals/api/s3-rest-api"
                 }
             ]
         }

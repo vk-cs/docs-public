@@ -6,10 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/base/bigdata/bigdata-info/bigdata-architecture"
+                    "link": "docs/en/main/bigdata/hortonworks/bigdata-info/bigdata-architecture"
                 },
                 {
-                    "link": "docs/en/main/additionals/cases"
+                    "link": "docs/en/main/bigdata/hortonworks/bigdata-limits/bigdata-perf"
                 }
             ]
         },
@@ -17,24 +17,24 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/base/bigdata/bigdata-start"
+                    "link": "docs/en/main/bigdata/hortonworks/bigdata-start/create-bigdata"
                 },
                 {
-                    "link": "docs/en/main/base/bigdata/bigdata-start/create-bigdata"
+                    "link": "docs/en/main/bigdata/hortonworks/bigdata-start/delete-bigdata"
                 }
             ]
         },
         {
-            "title": "MORE",
+            "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/main/base/bigdata"
+                    "link": "docs/en/main/bigdata/hortonworks/bigdata-scale/scale-bigdata-cluster"
                 },
                 {
-                    "link": "docs/en/main/base/bigdata/bigdata-scale"
+                    "link": "docs/en/main/bigdata/hortonworks/launch-bigdata/access-bigdata-web"
                 },
                 {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/en/main/bigdata/hortonworks/bigdata-integrate"
                 }
             ]
         }
