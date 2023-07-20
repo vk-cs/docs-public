@@ -6,30 +6,41 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/networks/vnet"
+                    "link": "docs/en/main/networks/vnet/concepts/overview"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet/networks/create-net"
+                    "link": "docs/en/main/networks/vnet/concepts/architecture"
+                },
+                {
+                    "link": "docs/en/main/networks/vnet/concepts/net-types"
+                },
+                {
+                    "link": "docs/en/main/networks/vnet/concepts/ips-and-inet"
+                },
+                {
+                    "link": "docs/en/main/networks/vnet/tariffs"
                 }
             ]
         },
         {
-            "title": "MORE",
+            "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/networks/vnet/networks/fip"
+                    "link": "docs/en/main/networks/vnet/quick-start"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet/vnet-lb/about-lb"
+                    "link": "docs/en/main/networks/vnet/operations"
+                }
+            ]
+        },
+        {
+            "title": "ADVANCED SETTINGS",
+            "links": [
+                {
+                    "link": "docs/en/main/networks/vnet/use-cases/vpn-tunnel"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet/firewall"
-                },
-                {
-                    "link": "docs/en/main/networks/vnet/networks/create-net"
-                },
-                {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/en/main/networks/vnet/use-cases/vip-keepalived"
                 }
             ]
         }

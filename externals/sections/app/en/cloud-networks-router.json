@@ -6,7 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/networks/vnet/networks"
+                    "link": "docs/en/main/networks/vnet/concepts/router"
+                },
+                {
+                    "link": "docs/en/main/networks/vnet/tariffs"
                 }
             ]
         },
@@ -14,22 +17,21 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/networks/vnet/networks/create-net"
+                    "link": "docs/en/main/networks/vnet/quick-start"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet/vnet-lb"
+                    "link": "docs/en/main/networks/vnet/operations/manage-router"
+                }
+            ]
+        },
+        {
+            "title": "ADVANCED SETTINGS",
+            "links": [
+                {
+                    "link": "docs/en/main/networks/vnet/use-cases/vpn-tunnel"
                 },
                 {
-                    "link": "docs/en/main/networks/vnet/vpn"
-                },
-                {
-                    "link": "docs/en/main/networks/vnet/firewall"
-                },
-                {
-                    "link": "docs/en/main/networks/vnet/networks/private-dns"
-                },
-                {
-                    "link": "docs/en/main/networks/vnet/networks/publicdns"
+                    "link": "docs/en/main/networks/vnet/use-cases/vip-keepalived"
                 }
             ]
         }

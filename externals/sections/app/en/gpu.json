@@ -7,6 +7,12 @@
             "links": [
                 {
                     "link": "docs/en/main/ml/gpu/gpu-start/gpu-info"
+                },
+                {
+                    "link": "docs/en/main/base/iaas/faq"
+                },
+                {
+                    "link": "docs/en/main/base/account/concepts/quotasandlimits"
                 }
             ]
         },
@@ -17,18 +23,7 @@
                     "link": "docs/en/main/ml/gpu/gpu-start/gpu-create"
                 },
                 {
-                    "link": "docs/en/main/base/iaas/vm-start"
-                }
-            ]
-        },
-        {
-            "title": "MORE",
-            "links": [
-                {
-                    "link": "docs/en/main/base/iaas/vm-faq"
-                },
-                {
-                    "link": "docs/en/main/additionals/start/user-account/quota-limits"
+                    "link": "docs/en/main/base/iaas/instructions/vm/vm-connect"
                 }
             ]
         }

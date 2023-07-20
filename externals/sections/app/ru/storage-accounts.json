@@ -6,14 +6,25 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/start"
-                },
-                {
-                    "link": "docs/ru/main/additionals/billing",
+                    "link": "docs/ru/main/base/s3/tariffication",
                     "hiddenForPartners": true
                 },
                 {
+                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
+                },
+                {
+                    "link": "docs/ru/main/base/s3/about-s3-api"
+                }
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                {
                     "link": "docs/ru/main/base/s3/quick-start"
+                },
+                {
+                    "link": "docs/ru/main/base/s3/access-management"
                 }
             ]
         },
@@ -21,19 +32,24 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/s3/access-management/s3-account"
+                    "link": "docs/ru/main/base/s3/tools/s3-cli"
                 },
                 {
-                    "link": "docs/ru/main/base/s3/dev/s3-rest-api/acl-api"
+                    "link": "docs/ru/main/base/s3/use-cases/load-large-image"
                 },
                 {
-                    "link": "docs/ru/main/base/s3/dev/s3-rest-api/about-s3-api"
+                    "link": "docs/ru/main/base/s3/use-cases/s3-domain"
                 },
                 {
-                    "link": "docs/ru/main/base/s3/dev/s3-sdk"
-                },
+                    "link": "docs/ru/main/base/s3/dev"
+                }
+            ]
+        },
+        {
+            "title": "API",
+            "links": [
                 {
-                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/main/additionals/api/s3-rest-api"
                 }
             ]
         }

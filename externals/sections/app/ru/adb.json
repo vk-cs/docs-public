@@ -6,13 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/start"
+                    "link": "docs/ru/main/dbs/adb/adb-info/arenadata"
                 },
                 {
-                    "link": "docs/ru/main/dbs/adb/adb-start"
-                },
-                {
-                    "link": "docs/ru/main/dbs/adb"
+                    "link": "docs/ru/main/dbs/adb/adb-limits/adb-limits-perf"
                 },
                 {
                     "link": "docs/ru/main/additionals/billing",
@@ -30,21 +27,10 @@
                     "link": "docs/ru/main/dbs/adb/adb-start/launch-adb"
                 },
                 {
+                    "link": "docs/ru/main/dbs/adb/adb-connect"
+                },
+                {
                     "link": "docs/ru/main/dbs/adb/adb-start/delete-adb"
-                }
-            ]
-        },
-        {
-            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
-            "links": [
-                {
-                    "link": "docs/ru/main/dbs/dbaas/db-replica/create-db-replica"
-                },
-                {
-                    "link": "docs/ru/main/dbs/dbaas/db-backup"
-                },
-                {
-                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
                 }
             ]
         }
