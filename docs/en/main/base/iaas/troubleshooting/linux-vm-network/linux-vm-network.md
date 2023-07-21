@@ -31,7 +31,7 @@ The described approaches can also be used when access is lost to another applica
 1. Get information about the configuration of the virtual machine network interface:
 
    1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-   1. Select the project and region where the necessary VM is located.
+   1. Select the project where the necessary VM is located.
    1. Go to **Cloud Computing → Virtual machines**.
    1. Click on the name of the desired VM.
    1. Go to the tab **Networks**.
@@ -579,7 +579,7 @@ After the SSH connection problem is localized, re-configure the firewall rules (
 To check the firewall settings:
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region where the necessary VM is located.
+1. Select the project where the necessary VM is located.
 1. Go to **Cloud Computing → Virtual machines**.
 1. Click on the name of the desired VM.
 1. Go to the tab **Networks**.
@@ -602,7 +602,7 @@ To check the firewall settings:
 To configure firewall rules again:
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region where the necessary VM is located.
+1. Select the project where the necessary VM is located.
 1. Go to **Cloud Computing → Virtual machines**.
 1. Click on the name of the desired VM.
 1. Go to the tab **Networks**.

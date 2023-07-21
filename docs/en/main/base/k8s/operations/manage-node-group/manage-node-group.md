@@ -14,7 +14,7 @@ Before performing any operation on a cluster from Terraform, read the informatio
 <tabpanel>
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project and region where the necessary cluster is located.
+1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Expand the menu of the necessary cluster and select **Add node group**.
 1. Set [settings](../helpers/node-group-settings/) for the node group.
@@ -108,7 +108,7 @@ Labels and taints can be set both with the interfaces supported by the VK Cloud 
 <tabpanel>
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project and the region where the necessary cluster is located.
+1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.
 1. Expand the menu of the necessary node group and select **Labels and Taints**.
@@ -213,7 +213,7 @@ To increase update speed, the container service updates multiple nodes in a grou
 <tabpanel>
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project and the region where the necessary cluster is located.
+1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.
 1. Expand the menu of the necessary node group and select **Node update**.
@@ -278,7 +278,7 @@ The single cluster node group cannot be deleted from the personal account. Howev
 <tabpanel>
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project and the region where the necessary cluster is located.
+1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.
 1. Expand the menu of the necessary node group and select **Delete**.
