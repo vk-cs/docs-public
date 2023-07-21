@@ -18,7 +18,7 @@ File storage is available only from virtual machines inside the VK Cloud project
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and the region where you want to create the file storage.
+1. Select the project where you want to create the file storage.
 1. Go to **Cloud computing** → **File share**.
 1. Click to the **Create storage** or **Create** button.
 1. Set the file storage parameters:
@@ -217,7 +217,7 @@ The instructions are given for Ubuntu Linux. For information about connecting to
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and the region where the desired file storage is located.
+1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**. A list of file repositories will be displayed.
 
 </tabpanel>
@@ -246,7 +246,7 @@ The instructions are given for Ubuntu Linux. For information about connecting to
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and the region where the desired file storage is located.
+1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**.
 1. Click on the name of the desired file storage. Information about it will be displayed.
 
@@ -276,7 +276,7 @@ The instructions are given for Ubuntu Linux. For information about connecting to
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and the region where the desired file storage is located.
+1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**.
 1. Expand the menu of the desired storage and select **Change size**.
 1. Enter a value and click **Confirm**.
@@ -313,7 +313,7 @@ The size of the file storage cannot be reduced.
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and the region where the desired file storage is located.
+1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**.
 1. Expand the menu of the desired storage and select **Create snapshot**.
 1. (Optional) Change the name of the snapshot and add a description.
@@ -345,7 +345,7 @@ The size of the file storage cannot be reduced.
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and the region where the desired file storage is located.
+1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**.
 1. Expand the menu of the desired storage and select **List of snapshots**. Information about the images will be displayed.
 
@@ -375,7 +375,7 @@ The size of the file storage cannot be reduced.
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and the region where the desired file storage is located.
+1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**.
 1. Expand the menu of the desired storage and select **List of snapshots**.
 1. Expand the menu of the desired image and select **Restore file storage**.
@@ -407,7 +407,7 @@ The size of the file storage cannot be reduced.
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and the region where the desired file storage is located.
+1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**.
 1. Click on the name of the desired file storage.
 1. Go to the **Access rules** tab.
@@ -449,7 +449,7 @@ To delete a file storage, you must first dismantle it on virtual machines.
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and the region where the desired file storage is located.
+1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**.
 1. Expand the menu of the desired storage and select **Delete**.
 1. Click the **Confirm** button.

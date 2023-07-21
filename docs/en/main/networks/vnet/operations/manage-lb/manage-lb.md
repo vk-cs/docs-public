@@ -10,7 +10,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Load balancers**.
 
    A list of load balancers will be displayed.
@@ -80,7 +80,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Load balancers**.
 1. Click **Add balancer** or **Add**.
 1. Set the balancer parameters:
@@ -159,7 +159,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Load balancers**.
 1. Perform one of the actions for the load balancer you want to edit:
 
@@ -226,7 +226,7 @@ If the balancer network is connected to a router with Internet access, you can a
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Load balancers**.
 1. Do one of the following:
 
@@ -265,7 +265,7 @@ If the balancer network is connected to a router with Internet access, and a pub
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual Networks** → **Load balancers**.
 1. Do one of the following:
 
@@ -579,7 +579,7 @@ This is a group operation: if necessary, you can remove multiple load balancers 
 To remove a load balancer:
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region where the necessary load balancer is located.
+1. Select the project where the necessary load balancer is located.
 1. Go to **Virtual networks** → **Load balancers**.
 1. Perform one of the actions for the necessary load balancer:
 

@@ -11,7 +11,7 @@ At the moment, the private DNS request forwarding servers are `8.8.8.8`, `8.8.4.
 ## Editing a zone name for a network
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Open the network page by clicking on its name in the general list.
 1. Go to tab **Network settings**.
@@ -38,13 +38,13 @@ There are several ways to configure the DNS name:
 Via VM:
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region.
+1. Select the project.
 1. Start to [create new virtual machine](/en/base/iaas/instructions/vm/vm-create). In the “Network Settings” step, enter the name in the **DNS-name** field.
 
 Via port settings:
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Open the network card by clicking on its name in the general list.
 1. Open the subnet card by clicking on its name in the general list.

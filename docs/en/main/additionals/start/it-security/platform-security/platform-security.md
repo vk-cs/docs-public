@@ -8,16 +8,22 @@ The performance of this network is sufficient for synchronous replication betwee
 
 Availability Zones can be used to separate applications and provide uninterrupted access to them.
 
-VK Cloud platform resources are located in two data centers located in Moscow:
+VK Cloud platform resources are located in the following data centers:
 
-- gz1 — Goznak data center;
-- ms1 (ko1) — DataLine NORD4 data center;
+- in the Moscow [region](/en/base/account/concepts/regions):
 
-You can choose the optimal region according to technical considerations.
+  - GZ1 — the [Goznak](https://tech.goznak.ru/dc-goznak-moscow) data center. Address: Moscow, Prospekt Mira, 105, building 6.
+  - MS1 (ko1) — the [DataLine NORD4](https://www.dtln.ru/tsod-nord) data center. Address: Moscow, Korovinskoe highway, 41.
+
+- in the Kazakhstan region:
+
+  - QAZ — the [QazCloud](https://qazcloud.kz) data center. Address: Republic of Kazakhstan, Akmola region, Kosshy, Republic str. 1.
+
+For projects in the Moscow region, you can choose the optimal data center according to technical considerations.
 
 <info>
 
-There are also global resources that do not have AZs, such as an S3 bucket or a virtual network.
+There are also resources that do not have AZs, such as an S3 bucket or a virtual network. For projects in the Moscow region, these resources are global (not bound to a zone).
 
 </info>
 

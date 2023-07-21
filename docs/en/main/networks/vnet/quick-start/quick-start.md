@@ -9,7 +9,7 @@ After completing all the quick start steps, you will:
 ## Step 1: Create a network and subnet
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Click the **Create** button.
 1. Specify a network name, for example, `test-network`.

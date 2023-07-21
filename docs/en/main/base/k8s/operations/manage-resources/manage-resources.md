@@ -3,7 +3,7 @@ It is possible to manage Kubernetes resources in Kubernetes cluster via VK Cloud
 ## Viewing information about cluster resources
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en/).
-1. Select the project and region where the necessary cluster is located.
+1. Select the project where the necessary cluster is located.
 1. Go to **Containers → Kubernetes Clusters**.
 1. Click on the name of the desired cluster.
 1. Go to the **Cluster resources** tab.

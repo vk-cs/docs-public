@@ -179,9 +179,8 @@ The DB instance is charged and consumes computational resources. After completin
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en/).
 1. Select [project](/en/base/account/concepts/projects), where the instance will be placed.
-1. Select the `Moscow` [region](/en/base/account/concepts/regions).
 1. Go to **Databases → Database instances**.
-1. If there are no instances in the selected region, click the **Create database** button.
+1. If there are no instances in the selected project, click the **Create database** button.
 
    Otherwise, click the **Add** button.
 
@@ -245,7 +244,7 @@ The DB instance is charged and consumes computational resources. After completin
 ## 2. Get the external IP address of the DB instance
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en/).
-1. Select the project and region where the DB instance is located.
+1. Select the project where the DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Click on the name of the DB instance. A page with information will open.
 1. Navigate to the **Information** tab.
@@ -315,7 +314,7 @@ The DB instance is charged and consumes computational resources. After completin
 ## 4. Install the TimescaleDB extension
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en/).
-1. Select the project and region where the DB instance is located.
+1. Select the project where the DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Click on the name of the DB instance. A page with information will open.
 1. Navigate to the **Extensions** tab.
@@ -584,7 +583,7 @@ Output of query results similar to the above ones indicates that PostgreSQL and 
 The monitoring feature [was enabled during the instance creation](#1--create-postgresql-db-instance). Familiarize yourself with gathered monitoring data:
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en/).
-1. Select the project and region where the DB instance is located.
+1. Select the project where the DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Click on the name of the DB instance. A page with information will open.
 1. Navigate to the **Monitoring** tab.
