@@ -272,7 +272,7 @@ On the host from which you plan to connect to the cluster:
 1. Download the configuration file of the cluster you want to connect to to the local computer:
 
    1. Go to [personal account](https://mcs.mail.ru/app/) VK Cloud under the account of the user who will connect to the cluster.
-   1. Select the project and the region where the necessary cluster is located.
+   1. Select the project where the necessary cluster is located.
    1. Go to **Containers → Kubernetes Clusters**.
    1. Expand the menu of the necessary cluster and select **Get Kubeconfig to access the cluster**.
 

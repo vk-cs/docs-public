@@ -11,7 +11,7 @@ After going through all the steps of the quickstart, you will:
 1. Go to [personal account](https://mcs.mail.ru/app/en/) VK Cloud.
 1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
 1. Go to **Big Data → Clusters**.
-1. If there are no clusters in the selected region yet, click **Create cluster**.
+1. If there are no clusters in the selected project yet, click **Create cluster**.
 
    Otherwise, click **Add**.
 
