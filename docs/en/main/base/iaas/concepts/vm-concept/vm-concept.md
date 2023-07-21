@@ -152,6 +152,12 @@ VK Cloud distributes the following virtual resources across availability zones:
 
 Networks and routers are not tied to availability zones.
 
+<info>
+
+A network created in the QAZ availability zone cannot be united with networks in other availability zones, since QAZ zone is located in the Kazakhstan [region](../../../account/concepts/regions). In this case, networks can be connected over [VPN](/en/networks/vnet/use-cases/vpn-tunnel).
+
+</info>
+
 ## Operating system
 
 On the VK Cloud platform, when creating a virtual machine, you can choose an operating system of the Microsoft Windows or Linux family. To create a VM with an operating system that is not in the platform list, use the VM image file with the desired OS.

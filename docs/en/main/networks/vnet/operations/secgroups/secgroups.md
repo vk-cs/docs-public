@@ -10,7 +10,7 @@ A security group is a set of custom traffic rules that can be assigned to instan
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 
 A list of security groups will be displayed.
@@ -55,7 +55,7 @@ openstack security group rule list --long <security group ID>
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click the **Add** button.
 1. Enter a name for the security group.
@@ -98,7 +98,7 @@ openstack security group create --description <group description> <new group nam
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
 
@@ -136,7 +136,7 @@ A security group rule is a set of parameters that define the conditions for traf
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
 1. In the **Incoming traffic** and **Outgoing traffic** section , click **+ Add rule**.
@@ -194,7 +194,7 @@ Available arguments for the rule creation command:
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
 1. Click the trash icon in the line with the required rule.
@@ -234,7 +234,7 @@ To apply a rule set to a virtual machine, the security group that contains the r
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
 1. In the **Virtual machines with rule group** section , click **Add virtual machine**.
@@ -265,7 +265,7 @@ openstack server add security group <instance ID> <security group ID>
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
 1. In the **Virtual Machines with Rule Group** section , hover your mouse over the instance row.
@@ -304,7 +304,7 @@ A group cannot be removed as long as there are ports that use this group. Also, 
 This is a group operation: if necessary, you can delete several security groups at once by selecting them using the checkboxes.
 
 1. Go to [personal account](https://mcs.mail.ru/app/) VK Cloud.
-1. Select a project and a region.
+1. Select a project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click the menu icon on the row of the security group you want to delete.
 1. In the menu that opens, click the **Delete** button.

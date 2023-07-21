@@ -18,7 +18,7 @@ You can manage OpenStack ports: view ports, add, edit and delete them.
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Click the name of the necessary network, then the name of the necessary subnet.
 1. Navigate to the **Ports** tab.
@@ -87,7 +87,7 @@ openstack port show --help
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Click the name of the necessary network, then the name of the necessary subnet.
 1. Navigate to the **Ports** tab.
@@ -134,7 +134,7 @@ openstack port create --help
 This is a group operation: you can enable multiple disabled ports at once, if necessary, by selecting them using the checkboxes.
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Click the name of the necessary network, then the name of the necessary subnet.
 1. Navigate to the **Ports** tab.
@@ -187,7 +187,7 @@ A disabled port does not allow any traffic to pass through.
 This is a group operation: you can disable multiple enabled ports at once, if necessary, by selecting them using the checkboxes.
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Click the name of the necessary network, then the name of the necessary subnet.
 1. Navigate to the **Ports** tab.
@@ -236,7 +236,7 @@ openstack port set --help
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Click the name of the necessary network, then the name of the necessary subnet.
 1. Navigate to the **Ports** tab.
@@ -346,7 +346,7 @@ It is not possible to delete a port if it is in use by the router.
 This is a group operation: you can delete multiple ports at once, if necessary, by selecting them using the checkboxes.
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Click the name of the necessary network, then the name of the necessary subnet.
 1. Navigate to the **Ports** tab.

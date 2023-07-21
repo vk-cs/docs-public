@@ -17,7 +17,7 @@
 <tabpanel>
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project and region where the necessary cluster is located.
+1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Expand the menu of the necessary cluster and select **Change type of master virtual machine**.
 1. Choose the virtual machine type.
@@ -99,7 +99,7 @@
 <tabpanel>
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project and the region where the necessary cluster is located.
+1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.
 1. Expand the menu of the necessary node group and select **Scaling settings**.
@@ -170,7 +170,7 @@ Once automatic scaling is enabled, the manual scaling settings are no longer in 
 <tabpanel>
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project and the region where the necessary cluster is located.
+1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.
 1. Expand the menu of the necessary node group and select **Scaling settings**.
