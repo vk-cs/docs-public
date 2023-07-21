@@ -27,7 +27,7 @@ To work with public DNS, configure [roles](/en/base/account/concepts/rolesandper
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region.
+1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 
 </tabpanel>
@@ -50,7 +50,7 @@ DNS zone is a logical association of domain names of your resources, containing 
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region.
+1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click the button **Add zone**.
 1. Set DNS zone parameters:
@@ -96,7 +96,7 @@ For most providers, it is possible to delegate zone management independently. If
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region.
+1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Expand the menu of the desired zone and select **Edit**.
 1. Make the changes and click **Save changes**.
@@ -146,7 +146,7 @@ After creating NS records, you can create a zone for a delegated subdomain.
 This is a group operation: if necessary, you can delete several zones at once by selecting them using the checkboxes.
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region.
+1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Expand the menu of the desired zone and select **Delete**.
 1. Confirm the action.
@@ -183,7 +183,7 @@ To add a resource record:
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region.
+1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click on the name of the zone for which you want to add a resource record.
 1. Click the button **Add record**.
@@ -307,7 +307,7 @@ Use the methods from the specification in [API documentation](/ru/additionals/ap
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region.
+1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click on the name of the zone for which you want to change the resource record.
 1. Expand the menu of the desired entry and select **Edit**.
@@ -333,7 +333,7 @@ Use the methods from the specification in [API documentation](/ru/additionals/ap
 This is a group operation: if necessary, you can delete several records at once by selecting them using the checkboxes.
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-1. Select the project and region.
+1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click on the name of the zone for which you want to delete the resource record.
 1. Expand the menu of the desired entry and select **Delete**.

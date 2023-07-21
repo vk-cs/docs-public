@@ -19,7 +19,7 @@ This is a group operation: if necessary, you can start several stopped clusters 
 To start a cluster:
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project and region where the necessary cluster is located.
+1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Use the checkbox to select the necessary cluster.
 1. Click the **Launch** button.
@@ -41,7 +41,7 @@ This is a group operation: if necessary, you can stop several started clusters a
 To stop a cluster:
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project and region where the necessary cluster is located.
+1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Use the checkbox to select the necessary cluster.
 1. Click the **Stop** button.
@@ -62,7 +62,7 @@ Different information is available for running and stopped clusters. Terraform a
 <tabpanel>
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project and the region where the necessary cluster is located.
+1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Click on the name of the necessary cluster. A page with information will open.
 
@@ -112,7 +112,7 @@ After performing this operation, the existing public keys on the cluster will be
 <tabpanel>
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project and the region where the necessary cluster is located.
+1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Expand the menu of the necessary cluster and select **Invalidate**.
 1. In the window that appears, perform one of the following actions:
@@ -142,7 +142,7 @@ This is a group operation: if necessary, you can delete multiple clusters at onc
 To delete a cluster:
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project and the region where the necessary cluster is located.
+1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Perform one of the actions for the necessary cluster:
    - Select the cluster using the checkbox, then click **Delete**.
