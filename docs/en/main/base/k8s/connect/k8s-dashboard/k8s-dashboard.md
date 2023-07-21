@@ -38,7 +38,7 @@ To connect to Kubernetes Dashboard, a browser must be installed on the host.
 1. Get the secret:
 
    1. Go to [personal account](https://mcs.mail.ru/app/) VK Cloud under the account of the user who will connect to the cluster.
-   1. Select the project and region where the desired cluster is located.
+   1. Select the project where the desired cluster is located.
    1. Go to **Containers → Kubernetes Clusters**.
    1. Expand the menu of the desired cluster and select **Get Secret to enter Kubernetes Dashboard**.
    1. Click the **Copy** button.

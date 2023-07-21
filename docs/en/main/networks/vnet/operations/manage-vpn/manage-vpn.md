@@ -10,7 +10,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **VPN**.
 
    A list of VPN tunnels will appear.
@@ -84,7 +84,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **VPN**.
 1. Click the **Add VPN** or **Add** button.
 
@@ -488,7 +488,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **VPN**.
 1. Expand the menu of the desired VPN tunnel and select **Edit VPN**.
 1. If necessary, edit the local or remote endpoint group:
@@ -703,7 +703,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **VPN**.
 1. Expand the menu of the desired VPN tunnel and select **Restart VPN**.
 1. Read the warning.
@@ -755,7 +755,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **VPN**.
 1. Expand the menu of the desired VPN tunnel and select **Remove VPN**.
 1. Review the list of objects to be deleted.

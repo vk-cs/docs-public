@@ -10,7 +10,7 @@ You can manage routers: view, edit and delete them.
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Routers**.
 
    A list of routers will be displayed.
@@ -59,7 +59,7 @@ You can manage routers: view, edit and delete them.
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Routers**.
 1. Click the **Add router** button.
 1. Set the router parameters:
@@ -121,7 +121,7 @@ You can manage routers: view, edit and delete them.
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Select the project and region.
+1. Select the project.
 1. Go to **Virtual networks** → **Routers**.
 1. Perform one of the actions for the router you want to edit:
 
@@ -392,7 +392,7 @@ This is a group operation: if necessary, you can delete several routers at once 
 To remove a router:
 
 1. Go to [personal account](https://mcs.mail.ru/app/) VK Cloud.
-1. Select the project and region where the required balancer is located.
+1. Select the project where the required balancer is located.
 1. Go to **Virtual networks** → **Routers**.
 1. Do one of the following for the desired router:
 
