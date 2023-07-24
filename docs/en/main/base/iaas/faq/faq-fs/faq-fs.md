@@ -6,7 +6,7 @@ This service allows you to create a remote file system, mount the file system on
 
 ## Is it possible to use an SSD drive instead of HDD when creating an NFS file storage?
 
-Yes, you can use an SSD drive in the file storage. To enable this feature, contact [technical support](/en/contacts/).
+No, such possibility is not provided.
 
 ## Is it possible to use file storage between projects?
 
