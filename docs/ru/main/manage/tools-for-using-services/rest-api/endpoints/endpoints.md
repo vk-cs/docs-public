@@ -4,7 +4,7 @@
 
 ## Просмотр списка эндпоинтов
 
-Список доступен всем пользователям, вне зависимости от их [роли](/ru/base/account/concepts/rolesandpermissions), если в проекте [включены сервисы](/ru/base/account/instructions/activation).
+Список доступен всем пользователям, вне зависимости от их [роли](/ru/base/account/concepts/rolesandpermissions), если в проекте [активированы сервисы](/ru/base/account/instructions/activation).
 
 Чтобы увидеть список эндпоинтов для вашего региона:
 
@@ -14,63 +14,79 @@
 
 ## Эндпоинты региона Москва
 
-Четыре ключевых эндпоинта для сервисов OpenStack:
+### Облачные вычисления
 
-| Эндпоинт                            | Адрес                   |
-|-------------------------------------|-------------------------|
-| Nova              | https://infra.mail.ru:8774/v2.1                     |
-| Cinder            | https://public.infra.mail.ru:8776/v3/<project_id>   |
-| Neutron           | https://infra.mail.ru:9696                          |
-| Heat              | https://infra.mail.ru:8004/v1/<project_id>          |
+| Эндпоинт                            | Адрес                   | Назначение |
+|-------------------------------------|-------------------------|-----------------|
+| Nova              | https://infra.mail.ru:8774/v2.1                     | Управление [виртуальными машинами](/ru/base/iaas/instructions/vm) |
+| Cinder            | https://public.infra.mail.ru:8776/v3/<project_id>   | Управление [дисками](/ru/base/iaas/instructions/vm-volumes) и их снимками |
+| Glance            | https://infra.mail.ru:9292                          | Управление [образами ВМ](/ru/base/iaas/instructions/vm-images) |
+| Karboii           | https://mcs.mail.ru/infra/karboii/v1                | Управление [резервным копированием](/ru/additionals/api/backup-api) ВМ и инстансов баз данных |
+| Manila            | https://public.infra.mail.ru:8786/v2/<project_id>   | Управление [файловыми хранилищами](/ru/base/iaas/instructions/fs-manage) |
+
+<info>
+
+В личном кабинете не отражен эндпоинт Cloudlogs (https://mcs.mail.ru/cloudlogs/v1/logs) — он позволяет [собирать логи ВМ](/ru/additionals/api/logging).
+
+</info>
 
 <details><summary>Остальные эндпоинты</summary>
 
-**Эндпоинты сервисов OpenStack**
+### Контейнеры
 
-| Эндпоинт                            | Адрес                   |
-|-------------------------------------|-------------------------|
-| Audit             | https://mcs.mail.ru/auditlogs/v1/<project_id>       |
-| Barbican          | https://public.infra.mail.ru:9311                   |
-| Glance            | https://infra.mail.ru:9292                          |
-| Gnocchi           | https://infra.mail.ru:8041                          |
-| Karboii           | https://mcs.mail.ru/infra/karboii/v1                |
-| Keystone          | https://infra.mail.ru:35357/v3/                     |
-| Magnum            | https://infra.mail.ru:9511/v1                       |
-| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          |
-| Manila            | https://public.infra.mail.ru:8786/v2/<project_id>   |
-| Octavia           | https://public.infra.mail.ru:9876                   |
-| Publicdns         | https://mcs.mail.ru/public-dns                      |
-| Quota-manager     | https://mcs.mail.ru/quota-manager                   |
-| Sahara            | https://infra.mail.ru:8386/v1.1/<project_id>        |
-| Trove             | https://infra.mail.ru:8779/v1.0/<project_id>        |
-<br />
-<hr color="#D3D3D3" width="90%">
-<br />
+| Эндпоинт                            | Адрес                   | Назначение |
+|-------------------------------------|-------------------------|-----------------|
+| Magnum            | https://infra.mail.ru:9511/v1                       | Управление [контейнерами](/ru/base/k8s) |
+| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Управление [аддонами](/ru/base/k8s/operations/addons) контейнеров |
 
-**Эндпоинты сервиса Объектное хранилище (S3)**
+### Виртуальные сети
 
-| Эндпоинт                            | Адрес                            |
-|-------------------------------------|----------------------------------|
-| Домен S3                            | https://hb.ru-msk.vkcs.cloud/    |
-<br />
-<hr color="#D3D3D3" width="90%">
-<br />
+| Эндпоинт                            | Адрес                   | Назначение |
+|-------------------------------------|-------------------------|-----------------|
+| Neutron           | https://infra.mail.ru:9696                          | Управление всеми объектами [сетевой инфраструктуры](/ru/networks/vnet), кроме публичных DNS-зон и балансировщиков нагрузки |
+| Octavia           | https://public.infra.mail.ru:9876                   | Управление [балансировщиками нагрузки](/ru/networks/vnet/operations/manage-lb) |
+| Publicdns         | https://mcs.mail.ru/public-dns                      | Управление публичными [DNS-зонами](/ru/networks/dns/publicdns) |
 
-**Эндпоинты AI API**
+### Большие данные
 
-| Эндпоинт                              | Адрес                     |
-|---------------------------------------|---------------------------|
-| Vision для распознавания изображений  | https://smarty.mail.ru/   |
-| Vision для распознавания видео        | https://smarty.mail.ru/   |
-<br />
-<hr color="#D3D3D3" width="90%">
-<br />
+| Эндпоинт                            | Адрес                   | Назначение |
+|-------------------------------------|-------------------------|-----------------|
+| Sahara            | https://infra.mail.ru:8386/v1.1/<project_id>        | Управление кластерами [больших данных](/ru/additionals/api/bigdata-api) |
 
-**Эндпоинты сервиса Очереди сообщений**
+### Базы данных
 
-| Эндпоинт                            | Адрес                            |
-|-------------------------------------|----------------------------------|
-| Endpoint URL                        | https://sqs.mcs.mail.ru          |
+| Эндпоинт                            | Адрес                   | Назначение |
+|-------------------------------------|-------------------------|-----------------|
+| Trove             | https://infra.mail.ru:8779/v1.0/<project_id>        | Управление [базами данных](/ru/dbs/dbaas) |
+
+### Объектное хранилище (S3)
+
+| Эндпоинт                            | Адрес                            | Назначение |
+|-------------------------------------|----------------------------------| -----------------|
+| Домен S3                            | https://hb.ru-msk.vkcs.cloud/    | Управление [объектным хранилищем](/ru/additionals/api/s3-rest-api) |
+
+### AI API
+
+| Эндпоинт                              | Адрес                     | Назначение |
+|---------------------------------------|---------------------------| -----------------|
+| Vision для распознавания изображений и видео | https://smarty.mail.ru/   | [Распознавание объектов](/ru/additionals/api/vision-api) |
+
+### Очереди сообщений
+
+| Эндпоинт                            | Адрес                            | Назначение |
+|-------------------------------------|----------------------------------|-----------------|
+| Cloud Queues | https://sqs.mcs.mail.ru | Управление [очередями сообщений](/ru/additionals/api/cloud-queues-api) |
+
+### Эндпоинты, не привязанные к сервисам
+
+| Эндпоинт                            | Адрес                   | Назначение |
+|-------------------------------------|-------------------------|-----------------|
+| Audit             | https://mcs.mail.ru/auditlogs/v1/<project_id>       | Сбор статистики действий пользователей в проекте |
+| Barbican          | https://public.infra.mail.ru:9311                   | Защищенное хранение секретов (SSH-ключей, токенов Keystone, сертификатов TLS) |
+| Gnocchi           | https://infra.mail.ru:8041                          | Сбор метрик ВМ (примеры метрик: объем ресурсов, доступный инстансу, использование ресурсов инстансом) |
+| Keystone          | https://infra.mail.ru:35357/v3/                     | Управление пользователями проекта, авторизация пользователей на основе [токенов](../case-keystone-token) |
+| Quota-manager     | https://mcs.mail.ru/quota-manager                   | Просмотр [квот](/ru/base/account/concepts/quotasandlimits) проекта |
+| Heat              | https://infra.mail.ru:8004/v1/<project_id>          | Оркестрация облачных сервисов (эндпоинт устарел) |
 
 </details>
 
