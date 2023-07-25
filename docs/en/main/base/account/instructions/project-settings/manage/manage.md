@@ -109,7 +109,10 @@ Disk transfer is possible only within one region. If the projects are located in
 
 Currently, transferring PaaS service objects between projects is not supported. For example, the virtual machine on which the database was deployed can be moved to another project only as a regular virtual machine. It is not possible to transfer such a virtual machine as a database instance or create a database instance with a disk transferred from another project.
 
-To transfer other types of objects, contact [technical support](/en/contacts).
+By contacting [technical support](/en/contacts), it is possible to transfer objects:
+
+- floating IP addresses;
+- addresses of the `ext-net` network.
 
 ## Viewing project quotas
 
