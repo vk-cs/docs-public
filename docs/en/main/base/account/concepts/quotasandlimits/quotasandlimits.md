@@ -118,6 +118,7 @@ Quotas for the total number of disks in the project take into account all types 
 | Size of one High-IOPS SSD disk    | 2 TБ via VK Cloud personal account, 5 TB via OpenStack CLI | — |
 | Size of a single image                 | 500 GB | — |
 | Total volume of images                  | 2 TB | — |
+| Total number of disks snapshots         | 200 pcs. | — |
 
 The limit on the number of disks per instance (28 pcs.) is associated with PCI bus limitations.
 
@@ -126,6 +127,8 @@ The limit on the size of one image (500 GB) is a hard limit for the Glance servi
 The limit on the size of one SSD-HIGH-IOPS disk (5 TB) is due to operational requirements, it can be exceeded without contacting technical support. A disk created over the limit is no different in performance, but restoring or migrating such a disk will take considerable time and will involve risks.
 
 The limit on the total volume of images (2 TB) can be exceeded by contacting [technical support](/en/contacts).
+
+The limit on the number of disks snapshots (200 pcs.) can be exceeded by contacting [technical support](/en/contacts).
 
 ### File storage
 
