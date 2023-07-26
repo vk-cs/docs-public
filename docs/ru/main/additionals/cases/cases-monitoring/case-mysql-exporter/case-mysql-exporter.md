@@ -4,7 +4,7 @@
 
 - Prometheus 2.13 на ОС Ubuntu 18.04 LTS x86_64.
 - Grafana 6.4.2 на ОС Ubuntu 18.04 LTS x86_64.
-- PostgreSQL 10 на ОС Ubuntu 18.04 LTS x86_64.
+- MySQL 5.7 на ОС Ubuntu 18.04 LTS x86_64.
 
 <warn>
 
@@ -71,11 +71,11 @@ root@mysql:~# cp /tmp/mysqld_exporter-$VERSION.linux-amd64/mysqld_exporter /usr/
 8.  Для работы mysqld_exporter создайте пользователя mysql и дайте ему соответствующие права:
 
     ```
-    MariaDB [(none)]> CREATE USER 'exporter'@'localhost' IDENTIFIED BY '<пароль>' WITH MAX_USER_CONNECTIONS 3;
-    Query OK, 0 rows affected (0.001 sec)
+    mysql> CREATE USER 'exporter'@'localhost' IDENTIFIED BY '<пароль>' WITH MAX_USER_CONNECTIONS 3;
+    Query OK, 0 rows affected (0.001 sec)
 
-    MariaDB [(none)]> GRANT PROCESS, REPLICATION CLIENT, SELECT ON \*.\* TO 'exporter'@'localhost';
-    Query OK, 0 rows affected (0.000 sec)
+    mysql> GRANT PROCESS, REPLICATION CLIENT, SELECT ON *.* TO 'exporter'@'localhost';
+    Query OK, 0 rows affected (0.000 sec)
     ```
 
 <warn>
@@ -86,11 +86,15 @@ root@mysql:~# cp /tmp/mysqld_exporter-$VERSION.linux-amd64/mysqld_exporter /usr/
 
 </warn>
 
-9.  Создайте файл, содержащий правила доступа к mysqld_exporter:
+9.  Создайте файл, содержащий правила доступа к mysqld_exporter, и добавьте туда настройки аутетинтификации пользователя mysql, созданного на предыдушем шаге:
 
 ```
 root@mysql:~# cat <<EOF>>/usr/local/etc/.mysqld_exporter.cnf
+[client]
+user=exporter
+password=<пароль>
 EOF
+
 root@mysql:~# chown prometheus:prometheus /usr/local/etc/.mysqld_exporter.cnf
 ```
 
@@ -189,7 +193,7 @@ scrape_configs:
 
 ```
 
-- В секции targets впишите IP-адрес сервера mysql_exporter.
+- В секции targets впишите IP-адрес сервера MySQL, где установлен mysqld_exporter.
 
 3.  Перезапустите сервис Prometheus:
 
@@ -273,7 +277,7 @@ events (avg/stddev): 7810.0000/0.00
     execution time (avg/stddev):   9.9793/0.00
 ```
 
-В результате тестовой нагрузки графики в Grafana изменяться:
+В результате тестовой нагрузки графики в Grafana изменятся:
 
 **![](./assets/1572208984315-1572208984315.png)**
 
@@ -299,10 +303,10 @@ root@mysql:~# groupdel prometheus
 4.  На ноде mysql в консоли mysql удалите пользователя:
 
 ```
-MariaDB [(none)]> drop user 'exporter'@'localhost';
+mysql> drop user 'exporter'@'localhost';
 Query OK, 0 rows affected (0.020 sec)
 
-MariaDB [(none)]> flush privileges;
+mysql> flush privileges;
 Query OK, 0 rows affected (0.007 sec)
 ```
 
