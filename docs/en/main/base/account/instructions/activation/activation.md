@@ -37,3 +37,5 @@ Up to 500 rubles can be debited as a starting amount. This amount is credited to
 The first (test) debit from the card cannot be refunded.
 
 </err>
+
+You cannot use a virtual card to activate services.
