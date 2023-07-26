@@ -38,7 +38,7 @@ If you close the confirmation window before completing the registration, your pe
 <tablist>
 <tab>1. Email validation</tab>
 <tab>2. Phone validation</tab>
-<tab>3. Payment card
+<tab>3. Linking a card</tab>
 </tablist>
 <tabpanel>
 
@@ -55,10 +55,9 @@ The confirmation window opens on step **2. Phone validation**.
 </tabpanel>
 <tabpanel>
 
-Phone validation becomes available after successful email validation. Only phone numbers registered in the Russian Federation (starting with +7) are accepted. One phone number can be linked to no more than two accounts.
+Phone validation becomes available after successful email validation. For the [region](/en/base/account/concepts/regions) Moscow, only phone numbers registered in the Russian Federation (starting with +7) are accepted. One phone number can be linked to no more than two accounts.
 
 1. Enter your number in the **Phone number** field and click **Request a confirmation code**.
-
 1. Enter the SMS code into the provided field and click **Confirm number**.
 
     If the SMS doesn't arrive or has expired, request it again by clicking **The code didn't arrive?** button which appears in 60 seconds.
@@ -67,44 +66,78 @@ The confirmation window opens on step **3. Payment card**.
 
 <info>
 
-If after your phone is confirmed you see a message about the successful services activation, and your personal account page opens, this means that step **3. Payment card** is not required for your account. You can [link](../../../billing/operations/add-card) a payment card later.
+If after your phone is confirmed you see a message about the successful services activation, and your personal account page opens, the last confirmation step is not required for your account. You can [link](../../../billing/operations/add-card) a payment card later.
 
 </info>
 
 </tabpanel>
-
 <tabpanel>
 
-Linking a card becomes available after successful phone validation. The payment card will be used for adding funds to your VK Cloud [balance](../../../billing/start/balance). The list of supported payment systems can be found in the [Payment methods](../../../billing/start/payment-methods) article.
+As the last step of account confirmation, you will be asked to link a payment card to the project in order to [activate](/en/base/account/instructions/activation) the services.
 
-<warn>
+VK Cloud platform automatically [validates the security status](../../it-security/tech#antifraud) of the account. Depending on the results of the check, one of these options is offered:
 
-The amount specified in the confirmation window (up to 500 rubles) will be debited from your card and credited to your VK Cloud balance. The amount is [non-refundable](/en/base/account/start/activation#linking-a-bank-card).
+- Link a card right away — the **Payment card** tab opens.
+- Send a request to technical support — the **Account activation** tab opens. Linking a card becomes available after the request is processed by technical support.
 
-</warn>
+To confirm your account and activate the services:
 
-To link a card:
+1. Follow the instructions on the tab:
 
-1. Enter the card details into the provided fields and click **Add card**.
+    <tabs>
+    <tablist>
+    <tab>Payment card</tab>
+    <tab>Account activation</tab>
+    </tablist>
+    <tabpanel>
 
-1. In the payment confirmation window, enter the SMS code provided by your bank.
+    1. [Link](/en/base/account/instructions/activation#linking_a_bank_card) a card. The specified amount will be debited from your card and credited to your project balance.
 
-1. (Optional) In the window that opens, configure the autopayment settings:
+        The list of supported payment systems can be found in the [Payment methods](../../../billing/start/payment-methods) article. One card can be linked to one project only. You can unlink the card from the project later by contacting [technical support](/en/contacts).
 
-    - **Auto-top-up amount**: specify the amount to be automatically credited to your balance after the minimum balance threshold amount is reached. The range of the credited amount is from 100 to 10 000 rubles.
+        <info>
 
-    - **Top-up with remaining balance**: specify the minimum balance threshold — a value from 0 to 9 999 999 rubles.
+        You cannot use a virtual card for account confirmation.
 
-    You can configure the autopayment [later](../../../billing/operations/add-card#auto-completion).
+        </info>
 
-1. Click **Get started with VK Cloud**.
+    1. (Optional) On the **Autopayment** tab that opens, configure the [autopayment](../../../billing/operations/add-card#auto-completion) settings.
+    1. Click **Get started with VK Cloud**.
 
-A message about the successful services activation appears, and your VK Cloud personal account page opens.
+    </tabpanel>
+    <tabpanel>
+
+    1. Copy the [identifier (PID)](/en/base/account/instructions/project-settings/manage#getting_the_project_id) of your project from the VK Cloud site URL.
+
+        An example for the region Moscow: `https://mcs.mail.ru/app/mcs123456789/main`, where `mcs123456789` is the project identifier (PID).
+
+    1. Click **Contact support**.
+
+        The [technical support portal](https://support.mcs.mail.ru) opens in the new browser tab.
+
+    1. Create a request for account activation. In the fields of the request, specify the project region (**Moscow** or **Kazakhstan**) and the project identifier (PID).
+    1. After your request is processed, linking a card becomes available. [Link](/en/base/account/instructions/activation#linking_a_bank_card) a card. The specified amount will be debited from your card and credited to your project balance.
+
+        The list of supported payment systems can be found in the [Payment methods](../../../billing/start/payment-methods) article. One card can be linked to one project only. You can unlink the card from the project later by contacting [technical support](/en/contacts).
+
+        <info>
+
+        You cannot use a virtual card for account confirmation.
+
+        </info>
+
+    1. (Optional) On the **Autopayment** tab that opens, configure the [autopayment](../../../billing/operations/add-card#auto-completion) settings.
+    1. Click **Get started with VK Cloud**.
+
+    </tabpanel>
+    </tabs>
+
+1. Wait for your personal account page to open. A message about successful services activation appears.
 
 </tabpanel>
 </tabs>
 
-After the registration is completed, sign-up [bonus points](../../../billing/concepts/bonus) will be credited to your balance. These bonus points are credited only once after the registration of each new account. If no bonus points are credited within 3 working days, contact [technical support](/en/contacts).
+A [project](/ru/base/account/concepts/projects) is automatically created for your account. After the services activation, sign-up [bonuses](../../../billing/concepts/bonus) are credited to your balance. These bonuses are credited only once after the registration of each new account. If no bonus points are credited within 3 working days, contact [technical support](/en/contacts).
 
 ## Activation of API access
 
