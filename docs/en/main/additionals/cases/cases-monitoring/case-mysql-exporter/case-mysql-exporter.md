@@ -4,7 +4,7 @@ To run this monitoring scenario, install and configure servers using the followi
 
 - Prometheus 2.13 on Ubuntu 18.04 LTS x86_64.
 - Grafana 6.4.2 on Ubuntu 18.04 LTS x86_64.
-- PostgreSQL 10 on Ubuntu 18.04 LTS x86_64.
+- MySQL 5.7 on Ubuntu 18.04 LTS x86_64.
 
 <warn>
 
@@ -71,10 +71,10 @@ root@mysql:~# cp /tmp/mysqld_exporter-$VERSION.linux-amd64/mysqld_exporter /usr/
 8. For mysqld_exporter to work, create a mysql user and give him the appropriate rights:
 
     ```
-    MariaDB [(none)]> CREATE USER 'exporter'@'localhost' IDENTIFIED BY '<password>' WITH MAX_USER_CONNECTIONS 3;
+    mysql> CREATE USER 'exporter'@'localhost' IDENTIFIED BY '<password>' WITH MAX_USER_CONNECTIONS 3;
     Query OK, 0 rows affected (0.001 sec)
 
-    MariaDB [(none)]> GRANT PROCESS, REPLICATION CLIENT, SELECT ON \*.\* TO 'exporter'@'localhost';
+    mysql> GRANT PROCESS, REPLICATION CLIENT, SELECT ON *.* TO 'exporter'@'localhost';
     Query OK, 0 rows affected (0.000 sec)
     ```
 
@@ -86,11 +86,15 @@ The WITH MAX_USER_CONNECTIONS 3 option is not supported by some MySQL server ver
 
 </warn>
 
-9. Create a file containing mysqld_exporter access rules:
+9. Create a file containing mysqld_exporter access rules and specify the credentials of the mysql user created on the previous step:
 
 ```
 root@mysql:~# cat <<EOF>>/usr/local/etc/.mysqld_exporter.cnf
+[client]
+user=exporter
+password=<password>
 EOF
+
 root@mysql:~# chown prometheus:prometheus /usr/local/etc/.mysqld_exporter.cnf
 ```
 
@@ -189,7 +193,7 @@ alias: mysql
 
 ```
 
-- In the targets section, enter the IP address of the mysql_exporter server.
+- In the targets section, enter the IP address of the MySQL server where mysqld_exporter is installed.
 
 3. Restart the Prometheus service:
 
@@ -299,10 +303,10 @@ root@mysql:~# groupdel prometheus
 4. On the mysql node in the mysql console, delete the user:
 
 ```
-MariaDB [(none)]> drop user 'exporter'@'localhost';
+mysql> drop user 'exporter'@'localhost';
 Query OK, 0 rows affected (0.020 sec)
 
-MariaDB [(none)]> flush privileges;
+mysql> flush privileges;
 Query OK, 0 rows affected (0.007 sec)
 ```
 
