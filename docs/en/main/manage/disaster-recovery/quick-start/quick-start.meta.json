@@ -1,0 +1,17 @@
+{
+  "title": "Quick start",
+  "pageDescription": "Quick start of the Cloud Disaster Recovery service: connecting the service, creating and launching a disaster recovery plan.",
+  "shortDescription": "Connecting the service, creating a plan and launching a disaster recovery",
+  "metaTitle": "Quick start",
+  "metaDescription": "Quick start of the Cloud Disaster Recovery service: connecting the service, creating and launching a disaster recovery plan.",
+  "sectionTitle": "Quick start",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "549f73f0-90ae-48d6-8cea-3976f56f3ff4",
+  "additionalUuids": [
+    "635e43b8-48fd-4434-92cf-4ca1d7ccb548",
+    "94893810-2182-4d91-8d8c-9c5754e13d15",
+    "af35e291-bed6-42cb-8c0d-ae5d3635e791"
+  ]
+}
