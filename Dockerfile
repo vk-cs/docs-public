@@ -18,9 +18,10 @@ RUN npm ci \
 
 COPY .git/ .git/
 COPY configs/sentry* ./
-COPY vkdocs.config.js ./
+COPY docs.config.js ./
 COPY configs/.data/ .data/
 COPY docs/ docs/
+COPY public/ public/
 COPY externals/ externals/
 COPY guides/ guides/
 
