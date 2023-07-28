@@ -1,11 +1,14 @@
 {
-    "title": "Available extensions",
-    "pageDescription": "Extensions for database instances in VK Cloud.",
-    "shortDescription": "Additional features in a deployed DB instance",
-    "metaTitle": "Available extensions",
-    "metaDescription": "Extensions for database instances in VK Cloud.",
-    "sectionTitle": "Available extensions",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 4
-  }
+  "title": "Available extensions",
+  "pageDescription": "Extensions for database instances in VK Cloud.",
+  "shortDescription": "Additional features in a deployed DB instance",
+  "metaTitle": "Available extensions",
+  "metaDescription": "Extensions for database instances in VK Cloud.",
+  "sectionTitle": "Available extensions",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "createdAt": "2023-07-28T13:42:25.000Z",
+  "updatedAt": "2023-07-28T13:42:25.000Z",
+  "uuid": "0c7d5499-cd89-4002-b92e-47b16d171dae"
+}
