@@ -1,11 +1,14 @@
 {
-    "title": "Доступные расширения",
-    "pageDescription": "Расширения для инстансов баз данных в VK Cloud.",
-    "shortDescription": "Дополнительные возможности в развернутом инстансе БД",
-    "metaTitle": "Доступные расширения",
-    "metaDescription": "Расширения для инстансов баз данных в VK Cloud.",
-    "sectionTitle": "Доступные расширения",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 4
-  }
+  "title": "Доступные расширения",
+  "pageDescription": "Расширения для инстансов баз данных в VK Cloud.",
+  "shortDescription": "Дополнительные возможности в развернутом инстансе БД",
+  "metaTitle": "Доступные расширения",
+  "metaDescription": "Расширения для инстансов баз данных в VK Cloud.",
+  "sectionTitle": "Доступные расширения",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "createdAt": "2023-07-28T13:42:25.000Z",
+  "updatedAt": "2023-07-28T13:42:25.000Z",
+  "uuid": "13b93b76-97fc-4138-8cb0-37a5610f2f8b"
+}
