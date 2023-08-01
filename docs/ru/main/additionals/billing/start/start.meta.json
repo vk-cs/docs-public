@@ -1,13 +1,14 @@
 {
   "title": "Введение",
-  "pageDescription": "",
+  "pageDescription": "Информация о балансе и оплате.",
   "shortDescription": "Информация о балансе и оплате",
   "metaTitle": "Введение",
-  "metaDescription": "",
+  "metaDescription": "Информация о балансе и оплате",
   "sectionTitle": "Введение",
-  "markdown": "",
+  "markdown": "Информация о балансе и оплате.",
   "icon": "",
   "weight": 0,
   "infobarItems": null,
-  "uuid": "0a957b04-92aa-4eeb-bc04-16f473bcfa6a"
+  "uuid": "0a957b04-92aa-4eeb-bc04-16f473bcfa6a",
+  "additionalUuids": ["9b742e9c-bef0-432e-8d74-7b65aee3a14c"]
 }
