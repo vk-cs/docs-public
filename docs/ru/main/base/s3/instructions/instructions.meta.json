@@ -7,5 +7,6 @@
   "sectionTitle": "Пошаговые инструкции",
   "markdown": "Стандартные операции для управления объектным хранилищем VK Cloud и его ресурсами.",
   "infobarItems": null,
-  "weight": 5
+  "weight": 5,
+  "uuid": "1909d1c5-2d67-413f-ba43-d722bccb2b66"
 }
