@@ -26,12 +26,12 @@
 
     1. Выберите пункт «Python: Specify local or remote Jupyter server for connections».
 
-    1. Сгенерируйте URL сервера вида `https://<your-hub-url>/user/<your-hub-user-name>/?token=<your-token>`.
+    1. Сгенерируйте URL сервера вида `https://<your-hub-url>/jh/user/<your-hub-user-name>/?token=<your-token>`.
 
         Пример:
 
         ```
-        https://ml-platform-3b41794bce02ae.ml.msk.vkcs.cloud/user/admin/?token=752f83bdf7d34fbd8904322c3306ebfd
+        https://ml-platform-3c000000000000.ml.msk.vkcs.cloud/jh/user/admin/?token=000f00bdf7d00fbd0000000c0006ebfd
         ```
 
         <warn>
@@ -41,11 +41,12 @@
         В нашем примере это `admin`:
 
         ```
-        https://ml-platform-3b41794bce02ae.ml.msk.vkcs.cloud/user/admin/lab
+        https://ml-platform-3c000000000000.ml.msk.vkcs.cloud/jh/user/admin/lab
         ```
 
         </warn>
 
+1. (Опционально) Установите расширение [Jupyter Extension](https://devblogs.microsoft.com/python/introducing-the-jupyter-extension-for-vs-code/) для VS Code.
 1. Проверьте созданное подключение.
 
     Создайте или откройте новый Notebook в VS Code. Kernel для него теперь будет запущен на вашем облачном JupyterHub.
@@ -73,3 +74,9 @@
     Локальная установка пакетов `pip` или `conda` не даст никакого эффекта, так как ваш ​​​​Python kernel работает на вашем удаленном сервере JupyterHub в облаке. Нужные пакеты можно установить в окружении в JupyteHub в облаке, используя `pip` или `conda`.
 
     </warn>
+
+<info>
+
+Дополнительная информация по подключению к серверу JupyterHub в [официальной документации VS Code](code.visualstudio.com/docs/datascience/jupyter-notebooks#_connect-to-a-remote-jupyter-server).
+
+</info>
