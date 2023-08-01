@@ -1,15 +1,16 @@
 {
-  "title": "Balance",
-  "pageDescription": "",
-  "shortDescription": "Viewing the status of the balance on the project account",
-  "metaTitle": "Balance",
-  "metaDescription": "",
-  "sectionTitle": "Balance",
-  "markdown": "",
+  "title": "Project balance",
+  "pageDescription": "What is a project balance, what are bonuses and when they are credited.",
+  "shortDescription": "What is a project balance, what are bonuses and when they are credited",
+  "metaTitle": "Project balance",
+  "metaDescription": "What is a project balance, what are bonuses and when they are credited",
+  "sectionTitle": "Project balance",
+  "markdown": "What is a project balance, what are bonuses and when they are credited.",
   "icon": "",
   "infobarItems": null,
   "weight": 1,
   "uuid": "59055898-aabb-4021-b64e-a7a215720010",
+  "additionalUuids": ["94b4b3ad-fa96-4d3f-ade7-cfe72e7ce10d"],
   "createdAt": "2022-04-07T07:18:11.000Z",
   "updatedAt": "2023-07-18T17:14:49.000Z"
 }

@@ -1,15 +1,16 @@
 {
-  "title": "Баланс",
-  "pageDescription": "",
-  "shortDescription": "Просмотр состояния баланса на счете проекта",
-  "metaTitle": "Баланс",
-  "metaDescription": "",
-  "sectionTitle": "Баланс",
-  "markdown": "",
+  "title": "Баланс проекта",
+  "pageDescription": "Что такое баланс проекта, что такое бонусы и когда они начисляются.",
+  "shortDescription": "Что такое баланс проекта, что такое бонусы и когда они начисляются",
+  "metaTitle": "Баланс проекта",
+  "metaDescription": "Что такое баланс проекта, что такое бонусы и когда они начисляются",
+  "sectionTitle": "Баланс проекта",
+  "markdown": "Что такое баланс проекта, что такое бонусы и когда они начисляются.",
   "icon": "",
   "infobarItems": null,
   "weight": 1,
   "uuid": "3378a248-913d-4fb8-838a-df54e886336a",
+  "additionalUuids": ["d7246dbe-31eb-43ce-ac4c-a01af1f85b81"],
   "createdAt": "2022-04-06T12:29:56.000Z",
   "updatedAt": "2023-07-18T17:14:49.000Z"
 }
