@@ -1,13 +1,14 @@
 {
   "title": "Introduction",
-  "pageDescription": "",
+  "pageDescription": "Information about balance and payment.",
   "shortDescription": "Information about balance and payment",
   "metaTitle": "Introduction",
-  "metaDescription": "",
+  "metaDescription": "Information about balance and payment",
   "sectionTitle": "Introduction",
-  "markdown": "",
+  "markdown": "Information about balance and payment.",
   "icon": "",
   "weight": 0,
   "infobarItems": null,
-  "uuid": "3d8d7e17-6c52-492d-9ccb-43f874e8a931"
+  "uuid": "3d8d7e17-6c52-492d-9ccb-43f874e8a931",
+  "additionalUuids": ["0ce2c721-85db-414a-a3b7-9318f1e4acbb"]
 }
