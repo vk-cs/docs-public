@@ -1,26 +1,45 @@
-The balance is the current state of funds on the VK Cloud [project](/en/base/account/concepts/projects) accounts. For each new project, two accounts are created automatically: the main and the bonus account.
+The balance of a [project](/en/base/account/concepts/projects) is the overall sum of funds on the project accounts, the main and the bonus ones.
 
-The balance state can be seen in the [personal account](https://mcs.mail.ru/app/):
+You can [view](../../operations/payment) the project balance in the [personal account](https://mcs.mail.ru/app/en/).
 
-- the balance amount — in the upper part of the personal account page;
-- balance details, with statistics for each account and [detailed expenses](../../operations/detail) — on the separate Balance page.
+## The main and the bonus account
 
-    For details, see section [Top up balance](/en/additionals/billing/operations/payment#viewing-the-balance).
+For each new project, two accounts are created automatically:
 
-<info>
+- The main account:
 
-The Balance page is available if [services are activated](/en/base/account/start/activation) in the project.
+  - you can replenish it using one of the available [payment methods](../payment-methods);
+  - funds on it can be [refunded](../../operations/refund);
+  - funds on it never expire.
 
-</info>
+- The bonus account — a dedicated account for storing bonuses:
 
-## Main account
+  - you cannot replenish this account, funds can be credited to it by the platform only;
+  - funds on it cannot be refunded;
+  - funds on it can sometimes expire.
 
-The main account is a project account that a user can replenish using one of the available [payment methods](../payment-methods). Money from this account can be [refunded](../../operations/refund) if necessary.
+    See details in subsection Bonuses.
 
-## Bonus account
+You can pay for services from both accounts. Funds are first debited from the bonus account, and after all funds on the bonus account are spent  from the main account.
 
-The bonus account is a project account that is used for storing [bonuses](../../concepts/bonus). A user cannot replenish a bonus account, bonuses can be credited by the platform only. Bonuses cannot be refunded.
+## Bonuses
 
-## Accounts Usage
+Bonuses, or bonus points, are virtual funds credited to the project balance by the VK Cloud platform itself. When paying for services, bonuses are the same as real funds.
 
-Services can be paid from both accounts. Funds are first debited from the bonus account, and then from the main account.
+ Bonuses are credited:
+
+- When a new account is [registered](../../../start/get-started/account-registration) on the platform. These sign-up bonuses are credited only once, after services are activated in the [project](/en/base/account/concepts/projects) that is created for the account. The amount of bonuses depends on the region of the project:
+
+  - Moscow — 3000 bonuses;
+  - Kazakhstan — 24000 bonuses.
+
+  One bonus point for [region](/en/base/account/concepts/regions) Moscow equals one ruble, for region Kazakhstan — one tenge.
+
+  <err>
+
+  Unspent sign-up bonuses expire in 60 calendar days after the account registration.
+
+  </err>
+
+- During some advertising campaigns.
+- When paying refunds for the technical failures that occurred through the fault of VK Cloud.
