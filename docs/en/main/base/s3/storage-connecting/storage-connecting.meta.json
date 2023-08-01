@@ -1,0 +1,13 @@
+{
+  "title": "Connecting to storage",
+  "pageDescription": "Connecting to S3 VK Cloud object storage using S3 CLI, File managers, SDK.",
+  "shortDescription": "Connecting to object storage using S3 CLI, File managers, SDK",
+  "metaTitle": "Connecting to storage",
+  "metaDescription": "Connecting to S3 VK Cloud object storage using S3 CLI, File managers, SDK.",
+  "sectionTitle": "Connecting to storage",
+  "markdown": "Connecting to S3 VK Cloud object storage using S3 CLI, File managers, SDK.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4,
+  "uuid": "56fae007-5cd4-438a-a5d4-3e4603ce9a75"
+}
