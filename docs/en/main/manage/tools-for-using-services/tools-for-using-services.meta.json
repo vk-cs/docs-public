@@ -12,7 +12,7 @@
     {
       "text": "S3 CLI",
       "icon": "/docs/_docs/ru/main/base/s3/assets/icon.svg",
-      "link": "../../base/s3/tools/s3-cli"
+      "link": "../../base/s3/storage-connecting/s3-cli"
     },
     {
       "text": "Personal account",
