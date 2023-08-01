@@ -8,5 +8,6 @@
   "markdown": "Detailed description of the principles of operation and device of the S3 VK Cloud object storage.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "d6a483e9-6d8c-42d5-88d4-fe7f26358f7c"
 }
