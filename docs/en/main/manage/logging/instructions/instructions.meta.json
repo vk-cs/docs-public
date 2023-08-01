@@ -8,5 +8,6 @@
   "markdown": "Brief step-by-step instructions for performing basic operations in the service.",
   "icon": "",
   "infobarItems": null,
-  "weight": 3
+  "weight": 3,
+  "uuid": "b5561f7a-bd41-4b4b-b55f-36d59410bfdc"
 }

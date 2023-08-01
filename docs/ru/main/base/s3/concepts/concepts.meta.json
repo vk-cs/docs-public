@@ -8,5 +8,6 @@
   "markdown": "Подробное описание принципов функционирования и устройства объектного хранилища S3 VK Cloud.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null
+  "infobarItems": null,
+  "uuid": "724b7ee6-2d30-4e0f-a9ce-1c29572f21a5"
 }
