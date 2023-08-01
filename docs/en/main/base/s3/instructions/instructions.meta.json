@@ -1,0 +1,14 @@
+{
+  "title": "Step-by-step instructions",
+  "pageDescription": "Standard operations for managing VK Cloud Object storage and its resources.",
+  "shortDescription": "Creating and managing object storage resources: accounts, buckets, objects",
+  "metaTitle": "Step-by-step instructions",
+  "metaDescription": "Creating an account. Creating and managing a bucket. Adding objects to the bucket. Configuring access to the bucket and bucket objects",
+  "sectionTitle": "Step-by-step instructions",
+  "markdown": "Standard operations for managing VK Cloud Object storage and its resources.",
+  "infobarItems": null,
+  "weight": 5,
+  "additionalUuids": [
+    "1aa27b08-b7cc-4783-8065-d5ebc5b8b642"
+  ]
+}
