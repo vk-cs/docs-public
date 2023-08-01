@@ -1,0 +1,498 @@
+{
+  "schemes": [
+    "http"
+  ],
+  "swagger": "2.0",
+  "info": {
+    "description": "HTTP API for Cloudlogs",
+    "title": "Cloudlogs API",
+    "version": "1.0.0"
+  },
+  "securityDefinitions": {
+    "key": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "X-Auth-Token"
+    }
+  },
+  "security": [
+    {
+      "key": [
+
+      ]
+    }
+  ],
+  "host": "cloudlogs.mcs.mail.ru:443",
+  "basePath": "/v1",
+  "paths": {
+    "/swagger.json": {
+      "get": {
+        "tags": [
+          "swagger"
+        ],
+        "summary": "Получить спецификацию в формате Swagger",
+        "security": [
+
+        ],
+        "description": "",
+        "operationId": "getSwaggerJSON",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    },
+    "/healthz": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "health"
+        ],
+        "summary": "Проверить работоспособность сервиса (healthcheck)",
+        "security": [
+
+        ],
+        "operationId": "healthz",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/readyz": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "health"
+        ],
+        "summary": "Проверить готовность сервиса",
+        "security": [
+
+        ],
+        "operationId": "readyz",
+        "responses": {
+          "200": {
+            "description": "Сервис готов к использованию"
+          },
+          "500": {
+            "description": "Сервис не готов к использованию"
+          }
+        }
+      }
+    },
+    "/logs": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "logs"
+        ],
+        "summary": "Получить логи",
+        "operationId": "listLogs",
+        "parameters": [
+          {
+            "$ref": "#/parameters/projectIdParam"
+          },
+          {
+            "$ref": "#/parameters/serviceIdParam"
+          },
+          {
+            "$ref": "#/parameters/groupIdParam"
+          },
+          {
+            "$ref": "#/parameters/streamIdParam"
+          },
+          {
+            "$ref": "#/parameters/fromParam"
+          },
+          {
+            "$ref": "#/parameters/toParam"
+          },
+          {
+            "$ref": "#/parameters/orderParam"
+          },
+          {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/markerParam"
+          },
+          {
+            "$ref": "#/parameters/likeParam"
+          },
+          {
+            "$ref": "#/parameters/queryParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "required": [
+                "items"
+              ],
+              "properties": {
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/logRecord"
+                  }
+                },
+                "marker": {
+                  "type": "object",
+                  "properties": {
+                    "prev": {
+                      "type": "string"
+                    },
+                    "next": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "422": {
+            "$ref": "#/responses/422"
+          },
+          "429": {
+            "$ref": "#/responses/429"
+          },
+          "500": {
+            "$ref": "#/responses/500"
+          }
+        }
+      }
+    },
+    "/tsv": {
+      "get": {
+        "produces": [
+          "text/tab-separated-values"
+        ],
+        "tags": [
+          "logs"
+        ],
+        "summary": "Получить логи в TSV-файл",
+        "operationId": "tsvLogs",
+        "parameters": [
+          {
+            "$ref": "#/parameters/projectIdParam"
+          },
+          {
+            "$ref": "#/parameters/serviceIdParam"
+          },
+          {
+            "$ref": "#/parameters/groupIdParam"
+          },
+          {
+            "$ref": "#/parameters/streamIdParam"
+          },
+          {
+            "$ref": "#/parameters/fromParam"
+          },
+          {
+            "$ref": "#/parameters/toParam"
+          },
+          {
+            "$ref": "#/parameters/orderParam"
+          },
+          {
+            "$ref": "#/parameters/limitParam"
+          },
+          {
+            "$ref": "#/parameters/markerParam"
+          },
+          {
+            "$ref": "#/parameters/likeParam"
+          },
+          {
+            "$ref": "#/parameters/queryParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string",
+              "format": "binary"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "422": {
+            "$ref": "#/responses/422"
+          },
+          "429": {
+            "$ref": "#/responses/429"
+          },
+          "500": {
+            "$ref": "#/responses/500"
+          }
+        }
+      }
+    }
+  },
+  "parameters": {
+    "projectIdParam": {
+      "name": "project_id",
+      "in": "query",
+      "type": "string",
+      "pattern": "([a-zA-Z0-9-]+)",
+      "minLength": 1,
+      "maxLength": 32,
+      "description": "PID проекта в OpenStack"
+    },
+    "serviceIdParam": {
+      "name": "service_id",
+      "in": "query",
+      "type": "string",
+      "pattern": "([a-zA-Z0-9-]+)",
+      "minLength": 1,
+      "maxLength": 32,
+      "description": "Идентификатор сервиса"
+    },
+    "groupIdParam": {
+      "name": "group_id",
+      "in": "query",
+      "type": "string",
+      "pattern": "([a-zA-Z0-9-_]+)",
+      "minLength": 1,
+      "maxLength": 84,
+      "description": "Идентификатор группы логов. По умолчанию — значение Tag из Fluent Bit"
+    },
+    "streamIdParam": {
+      "name": "stream_id",
+      "in": "query",
+      "type": "string",
+      "pattern": "([a-zA-Z0-9-]+)",
+      "minLength": 1,
+      "maxLength": 84,
+      "description": "Идентификатор источника логов (instance_id, vm_id)"
+    },
+    "fromParam": {
+      "name": "from",
+      "required": true,
+      "in": "query",
+      "type": "string",
+      "format": "date-time",
+      "description": "Временная метка начала сбора логов (>=)"
+    },
+    "toParam": {
+      "name": "to",
+      "required": true,
+      "in": "query",
+      "type": "string",
+      "format": "date-time",
+      "description": "Временная метка окончания сбора логов (<=)"
+    },
+    "orderParam": {
+      "name": "order",
+      "in": "query",
+      "type": "string",
+      "enum": [
+        "asc",
+        "desc"
+      ],
+      "default": "asc",
+      "description": "Сортировка записей (по возрастанию или убыванию)"
+    },
+    "limitParam": {
+      "name": "limit",
+      "in": "query",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000,
+      "default": 100,
+      "description": "Максимальное количество записей на странице"
+    },
+    "markerParam": {
+      "name": "marker",
+      "in": "query",
+      "type": "string",
+      "maxLength": 100,
+      "description": "Уникальный маркер страницы"
+    },
+    "likeParam": {
+      "name": "like",
+      "in": "query",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 1000,
+      "description": "LIKE-поддерживаемый фильтр для поля message"
+    },
+    "queryParam": {
+      "name": "query",
+      "in": "query",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 1000,
+      "description": "Строка расширенного запроса для фильтра"
+    }
+  },
+  "responses": {
+    "400": {
+      "description": "Некорректные параметры",
+      "schema": {
+        "type": "object",
+        "required": [
+          "message"
+        ],
+        "properties": {
+          "message": {
+            "type": "string",
+            "example": "from in query is required"
+          }
+        }
+      }
+    },
+    "401": {
+      "description": "Ошибка авторизации",
+      "schema": {
+        "type": "object",
+        "required": [
+          "message"
+        ],
+        "properties": {
+          "message": {
+            "type": "string",
+            "example": "Unauthorized"
+          }
+        }
+      }
+    },
+    "422": {
+      "description": "Ошибка валидации",
+      "schema": {
+        "type": "object",
+        "required": [
+          "message"
+        ],
+        "properties": {
+          "message": {
+            "type": "string",
+            "example": "Validation error"
+          }
+        }
+      }
+    },
+    "429": {
+      "description": "Превышен лимит запросов",
+      "schema": {
+        "type": "object",
+        "required": [
+          "message"
+        ],
+        "properties": {
+          "message": {
+            "type": "string",
+            "example": "Too many logs requests per second"
+          }
+        }
+      }
+    },
+    "500": {
+      "description": "Ошибка сервера",
+      "schema": {
+        "type": "object",
+        "required": [
+          "message"
+        ],
+        "properties": {
+          "message": {
+            "type": "string",
+            "example": "Internal server error"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "logRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "timestamp",
+        "level",
+        "message",
+        "json_payload",
+        "service_id",
+        "stream_id",
+        "group_id",
+        "project_id"
+      ],
+      "properties": {
+        "timestamp": {
+          "type": "string",
+          "example": "2006-01-02T15:04:05.999999Z"
+        },
+        "level": {
+          "type": "string",
+          "enum": [
+            "debug",
+            "info",
+            "warn",
+            "error",
+            "fatal"
+          ],
+          "example": "info"
+        },
+        "message": {
+          "type": "string",
+          "example": "column \\\"a\\\" does not exist at character 27"
+        },
+        "json_payload": {
+          "type": "string",
+          "example": "{\"foo\": 123}"
+        },
+        "service_id": {
+          "type": "string",
+          "example": "databases"
+        },
+        "stream_id": {
+          "type": "string",
+          "example": "XXXX5c2ff393460f9c79d887bfXXXXXX"
+        },
+        "group_id": {
+          "type": "string",
+          "example": "postgresql"
+        },
+        "project_id": {
+          "type": "string",
+          "example": "ef2303ac79ba4a7d9dbbdfb28ecXXXXX"
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "swagger"
+    },
+    {
+      "name": "logs"
+    }
+  ]
+}
