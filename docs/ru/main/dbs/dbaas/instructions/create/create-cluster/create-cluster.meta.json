@@ -1,12 +1,15 @@
 {
-    "title": "Конфигурация Кластер",
-    "pageDescription": "Создание инстанса БД в конфигурации Кластер",
-    "shortDescription": "",
-    "metaTitle": "Конфигурация Кластер",
-    "metaDescription": "Базы данных VK Cloud: создание инстанса БД в конфигурации Кластер",
-    "sectionTitle": "Конфигурация Кластер",
-    "markdown": "Создание инстанса БД в конфигурации Кластер",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
+  "title": "Конфигурация Кластер",
+  "pageDescription": "Создание инстанса БД в конфигурации Кластер",
+  "shortDescription": "",
+  "metaTitle": "Конфигурация Кластер",
+  "metaDescription": "Базы данных VK Cloud: создание инстанса БД в конфигурации Кластер",
+  "sectionTitle": "Конфигурация Кластер",
+  "markdown": "Создание инстанса БД в конфигурации Кластер",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "createdAt": "2023-08-02T08:33:55.000Z",
+  "updatedAt": "2023-08-02T08:33:55.000Z",
+  "uuid": "c7067e25-8eae-40c1-81c4-d5787bfda578"
 }
