@@ -57,7 +57,7 @@ Get a token:
     <tabs>
     <tablist>
     <tab>Linux</tab>
-    <tab>Windows</tab>
+    <tab>Windows (cmd)</tab>
     </tablist>
     <tabpanel>
 
@@ -88,7 +88,7 @@ Get a token:
             }
         }
     }' \
-    -i "https://infra.mail.ru:35357/v3/auth/tokens" | grep '^X-Subject-Token'| cut -d ':' -f 1,2
+    -i "https://infra.mail.ru:35357/v3/auth/tokens" | grep -i '^x-subject-token'| cut -d ':' -f 1,2
     ```
 
     </tabpanel>
@@ -98,12 +98,12 @@ Get a token:
     curl -X POST ^
     -H "Content-Type: application/json" ^
     -d "{\"auth\": {\"identity\": {\"methods\": [\"password\"], \"password\": {\"user\": {\"domain\": {\"id\": \"%OS_USER_DOMAIN_NAME%\"}, \"name\": \"%OS_USERNAME%\",\"password\": \"%OS_PASSWORD%\"}}}, \"scope\": {\"project\": {\"id\": \"%OS_PROJECT_ID%\"}}}}" ^
-    -i "https://infra.mail.ru:35357/v3/auth/tokens" | findstr /B X-Subject-Token | findstr X-Subject-Token
+    -i "https://infra.mail.ru:35357/v3/auth/tokens" | findstr /B x-subject-token | findstr x-subject-token
     ```
     </tabpanel>
     </tabs>
 
-The token value will be output in the `X-Subject-Token` parameter.
+The token value will be output in the `x-subject-token` parameter.
 
 <details>
 <summary markdown="span">Examples of responses to a token generation request</summary>
@@ -111,7 +111,7 @@ The token value will be output in the `X-Subject-Token` parameter.
 <tabs>
 <tablist>
 <tab>Linux</tab>
-<tab>Windows</tab>
+<tab>Windows (cmd)</tab>
 </tablist>
 <tabpanel>
 
@@ -119,7 +119,7 @@ The token value will be output in the `X-Subject-Token` parameter.
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100 27038  100 26470  100   568  99259   2129 --:--:-- --:--:-- --:--:-- 99138
-X-Subject-Token: gAAAAABkirBWYerPg-2A_W0blpcg_qcmTck9K3cC1zf4JUnP3lnpq-bf3W_AXbMx8wDd7PNO704lf00QX3--BRvFB-UcI5IQq5GtVNVzkHoqem4Ocg_-fmRgCdtSSrKvw_KqjpxoksOi2EocauqogKJebeYgAoheSMEnrSz4G70OrTHwUmhI4z0
+x-subject-token: gAAAAABkirBWYerPg-2A_W0blpcg_qcmTck9K3cC1zf4JUnP3lnpq-bf3W_AXbMx8wDd7PNO704lf00QX3--BRvFB-UcI5IQq5GtVNVzkHoqem4Ocg_-fmRgCdtSSrKvw_KqjpxoksOi2EocauqogKJebeYgAoheSMEnrSz4G70OrTHwUmhI4z0
 ```
 </tabpanel>
 <tabpanel>
@@ -131,7 +131,7 @@ X-Subject-Token: gAAAAABkirBWYerPg-2A_W0blpcg_qcmTck9K3cC1zf4JUnP3lnpq-bf3W_AXbM
 FINDSTR: Line 12 is too long.
 100 26700  100 26470  100   230  49114    426 --:--:-- --:--:-- --:--:-- 49628
 FINDSTR: Line 12 is too long.
-X-Subject-Token: gAAAAABkirQja1Lgr9psuyf6fC6e3Sy5WMYubpmwMNPXuT6APQkf-BPRRAySTBGP2h9Iq2U533pi13h_ZIHa0viga7HxmSsEeCZ_Fq1CEy0m75lmpDtZYd8SAazmjqbV5Kf4ygGnp77kPadkL0hAgC0b7vKjgNGoZ9bLZDBQmlEivNMlptyZKcQ
+x-subject-token: gAAAAABkirQja1Lgr9psuyf6fC6e3Sy5WMYubpmwMNPXuT6APQkf-BPRRAySTBGP2h9Iq2U533pi13h_ZIHa0viga7HxmSsEeCZ_Fq1CEy0m75lmpDtZYd8SAazmjqbV5Kf4ygGnp77kPadkL0hAgC0b7vKjgNGoZ9bLZDBQmlEivNMlptyZKcQ
 ```
 </tabpanel>
 </tabs>
@@ -198,4 +198,4 @@ Other examples of token usage:
 
 - [viewing logs](/en/manage/logging/start/view-logs) in the Cloud Logging service;
 <!-- @TODO change for EN version -->
-- [working](/ru/additionals/api/api-dns) with public DNS.
+- [working](/ru/additionals/api/api-dns "change-lang") with public DNS.
