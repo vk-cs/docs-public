@@ -11,7 +11,7 @@ Packer allows you to create virtual machine images with the necessary parameters
    </info>
 
 1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
-1. [Load the image](http://ftp.altlinux.org/pub/distributions/ALTLinux/p9/images/cloud/x86_64/alt-p9-cloud-x86_64.qcow2) OS Alt Linux P9 to your computer (file `alt-p9-cloud-x86_64.qcow2`).
+1. [Load the image](http://ftp.altlinux.org/pub/distributions/ALTLinux/p9/images/cloud/x86_64/) OS Alt Linux P9 to your computer (file `alt-p9-cloud-x86_64.qcow2`).
 
 ## 1. Convert image to RAW format
 
@@ -101,6 +101,8 @@ Import the image according to [instructions](../../instructions/vm-images/vm-ima
         networks = ["${var.network_id}"]
         security_groups = ["default", "ssh"]
         ssh_username = "altlinux"
+        use_blockstorage_volume = "false"
+        volume_availability_zone = MS1
       }
 
       build {
@@ -115,6 +117,12 @@ Import the image according to [instructions](../../instructions/vm-images/vm-ima
         }
       }
       ```
+
+      <info>
+
+      When creating a VM, specify the availability zone in which the disk should be created. Detailed information about the syntax of the configuration file in the [official Packer documentation](https://developer.hashicorp.com/packer/docs/templates/hcl_templates).
+
+      </info>
 
     </details>
 
