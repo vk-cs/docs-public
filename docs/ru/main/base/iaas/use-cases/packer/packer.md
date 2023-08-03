@@ -11,7 +11,7 @@ Packer позволяет создавать образы виртуальных
    </info>
 
 1. [Установите](../../../../base/account/project/cli/setup) OpenStack CLI, если он еще не установлен. Убедитесь, что вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в облаке с его помощью.
-1. [Загрузите образ](http://ftp.altlinux.org/pub/distributions/ALTLinux/p9/images/cloud/x86_64/alt-p9-cloud-x86_64.qcow2) ОС Alt Linux P9 локально (файл `alt-p9-cloud-x86_64.qcow2`).
+1. [Загрузите образ](http://ftp.altlinux.org/pub/distributions/ALTLinux/p9/images/cloud/x86_64/) ОС Alt Linux P9 локально (файл `alt-p9-cloud-x86_64.qcow2`).
 
 ## 1. Конвертируйте образ в формат RAW
 
@@ -101,6 +101,8 @@ Packer позволяет создавать образы виртуальных
         networks = ["${var.network_id}"]
         security_groups = ["default", "ssh"]
         ssh_username = "altlinux"
+        use_blockstorage_volume = "false"
+        volume_availability_zone = "MS1"
       }
 
       build {
@@ -115,6 +117,12 @@ Packer позволяет создавать образы виртуальных
         }
       }
       ```
+
+      <info>
+
+      При создании ВМ указывайте зону доступности, в которой должен быть создан диск. Подробная информация о синтаксисе конфигурационного файла в [официальной документации Packer](https://developer.hashicorp.com/packer/docs/templates/hcl_templates).
+
+      </info>
 
     </details>
 
