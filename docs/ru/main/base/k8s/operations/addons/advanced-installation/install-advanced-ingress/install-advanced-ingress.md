@@ -25,6 +25,7 @@
    <tabs>
    <tablist>
    <tab>Личный кабинет</tab>
+   <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
@@ -50,6 +51,52 @@
    1. Нажмите кнопку **Установить аддон**.
 
       Начнется установка аддона в кластер. Этот процесс может занять длительное время.
+
+   </tabpanel>
+   <tabpanel>
+
+   1. [Установите Terraform и настройте провайдер](/ru/manage/tools-for-using-services/terraform/quick-start), если этого еще не сделано.
+   1. Создайте конфигурационный файл Terraform с данными об устанавливаемом аддоне в блоке `vkcs_kubernetes_addon`:
+
+      - [Получите](../../manage-addons#dostupnye_dlya_ustanovki_addony_7c850197) список доступных для установки аддонов.
+      - Получите настройки аддона из параметра `configuration_values`, используя источник данных [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md).
+      - (Опционально) Чтобы динамически изменять параметры аддона (например, через CI), добавьте настройки аддона в отдельный yaml-файл. Используйте функцию [templatefile](https://developer.hashicorp.com/terraform/language/functions/templatefile), чтобы добавить нужные значения.
+
+      <details>
+         <summary>Пример указания аддона</summary>
+
+         ```hcl
+         resource "vkcs_kubernetes_addon" "kube-ingress" {
+            cluster_id = vkcs_kubernetes_cluster.k8s-cluster.id
+            addon_id = data.vkcs_kubernetes_addon.kube-ingress.id
+            namespace = "kube-ingress"
+            configuration_values = templatefile("./ingress-all.yaml",{openstack-internal-load-balancer= "false"})
+         
+            depends_on = [
+               vkcs_kubernetes_node_group.default_ng
+            ]
+         }
+         ```
+
+      </details>
+
+   1. Проверьте конфигурационный файл Terraform на корректность:
+
+      ```bash
+      terraform validate
+      ```
+
+   1. Ознакомьтесь с планируемыми изменениями:
+
+      ```bash
+      terraform plan
+      ```
+
+   1. Примените изменения:
+
+      ```bash
+      terraform apply
+      ```
 
    </tabpanel>
    </tabs>
@@ -89,6 +136,7 @@
    <tabs>
    <tablist>
    <tab>Личный кабинет</tab>
+   <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
@@ -154,6 +202,11 @@
       Начнется установка аддона в кластер. Этот процесс может занять длительное время.
 
    </tabpanel>
+   <tabpanel>
+
+   Воспользуйтесь инструкцией из стандартной установки аддона. В настройках аддона задайте нужные исключения (tolerations) и селекторы узлов (nodeSelector).
+
+   </tabpanel>
    </tabs>
 
 1. [Получите IP-адрес балансировщика](#poluchenie-ip-adresa-balansirovshchika).
@@ -174,6 +227,7 @@
    <tabs>
    <tablist>
    <tab>Личный кабинет</tab>
+   <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
@@ -192,6 +246,11 @@
    1. Нажмите кнопку **Установить аддон**.
 
       Начнется установка аддона в кластер. Этот процесс может занять длительное время.
+
+   </tabpanel>
+   <tabpanel>
+
+   Воспользуйтесь инструкцией из стандартной установки аддона.
 
    </tabpanel>
    </tabs>
