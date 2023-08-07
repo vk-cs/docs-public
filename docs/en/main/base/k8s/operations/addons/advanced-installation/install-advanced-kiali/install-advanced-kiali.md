@@ -21,6 +21,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    <tabs>
    <tablist>
    <tab>Personal account</tab>
+   <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
@@ -46,6 +47,52 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    1. Click the **Install addon** button.
 
       The installation of the addon in the cluster will begin. This process can take a long time.
+
+   </tabpanel>
+   <tabpanel>
+
+   1. [Install Terraform and configure the provider](/en/manage/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
+   1. Create a Terraform configuration file with data about the addon being installed in the `vkcs_kubernetes_addon` block:
+
+      - [Get](../../manage-addons#addons_available_for_installation_467c6636) list of addons available for installation.
+      - Get the addon settings from the `configuration_values` parameter using the data source [vcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md).
+      - (Optional) To dynamically change the addon parameters (for example, via CI), add the addon settings to a separate yaml file. Use the [templatefile](https://developer.hashicorp.com/terraform/language/functions/templatefile) function to add the desired values.
+
+      <details>
+         <summary>Example of specifying an addon</summary>
+
+         ```hcl
+         resource "vkcs_kubernetes_addon" "kiali-server" {
+            cluster_id = vkcs_kubernetes_cluster.k8s-cluster.id
+            addon_id = data.vkcs_kubernetes_addon.kiali-server.id
+            namespace = "istio-system"
+            configuration_values = templatefile("./kiali-server-all.yaml",{grafana_username = "<username for Grafana addon>", grafana_password = "<user password for Grafana addon>", istio_namespace = "istio-system"})
+         
+            depends_on = [
+               vkcs_kubernetes_node_group.default_ng
+            ]
+         }
+         ```
+
+      </details>
+
+   1. Check the Terraform configuration file for correctness:
+
+      ```bash
+      terraform validate
+      ```
+
+   1. Check out the planned changes:
+
+      ```bash
+      terraform plan
+      ```
+
+   1. Apply the changes:
+
+      ```bash
+      terraform apply
+      ```
 
    </tabpanel>
    </tabs>
@@ -85,6 +132,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    <tabs>
    <tablist>
    <tab>Personal account</tab>
+   <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
@@ -144,6 +192,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       The installation of the addon in the cluster will begin. This process can take a long time.
 
    </tabpanel>
+   <tabpanel>
+
+   Use the instructions from the standard addon installation. In the addon settings, set the necessary exceptions (tolerations) and node selectors (nodeSelector).
+
+   </tabpanel>
    </tabs>
 
 1. [Connect to Kiali](../../../../connect/kiali-server).
@@ -164,6 +217,7 @@ To allow such integration and to specify an authentication password for Grafana,
    <tabs>
    <tablist>
    <tab>Personal account</tab>
+   <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
@@ -182,6 +236,11 @@ To allow such integration and to specify an authentication password for Grafana,
    1. Click the **Install addon** button.
 
       The installation of the addon in the cluster will begin. This process can take a long time.
+
+   </tabpanel>
+   <tabpanel>
+
+   Use the instructions from the standard addon installation.
 
    </tabpanel>
    </tabs>

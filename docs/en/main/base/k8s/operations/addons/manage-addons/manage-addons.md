@@ -7,6 +7,7 @@
 <tabs>
 <tablist>
 <tab>Personal account</tab>
+<tab>Terraform</tab>
 </tablist>
 <tabpanel>
 
@@ -22,6 +23,25 @@
 1. Click to the icon ![Information](./assets/info_icon.svg "inline") on the addon card to view detailed information about it.
 
 </tabpanel>
+<tabpanel>
+
+1. [Install Terraform and configure the provider](/en/manage/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
+1. Create a Terraform configuration file by specifying the cluster ID in the [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) block.
+1. Apply the configuration for the `vcs_kubernetes_addons` data source using the command:
+
+   ```bash
+   terraform apply -target="data.vkcs_kubernetes_addons.<the name of the cluster resource in the Terraform configuration file>"
+   ```
+
+1. Run the command:
+
+   ```bash
+   terraform state show data.vkcs_kubernetes_addons.<the name of the cluster resource in the Terraform configuration file>
+   ```
+
+1. See the available information in the output of the command.
+
+</tabpanel>
 </tabs>
 
 ### Installed addons
@@ -29,6 +49,7 @@
 <tabs>
 <tablist>
 <tab>Personal account</tab>
+<tab>Terraform</tab>
 </tablist>
 <tabpanel>
 
@@ -42,6 +63,25 @@
 
    - Addon status information: `Installing`, `Installed`, `Error`, `Deleting`.
    - Additional information about the addon.
+
+</tabpanel>
+<tabpanel>
+
+1. [Install Terraform and configure the provider](/en/manage/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
+1. Create a Terraform configuration file by specifying the cluster ID in the [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) block.
+1. Apply the configuration for the `vcs_kubernetes_addon` data source using the command:
+
+   ```bash
+   terraform apply -target="data.vkcs_kubernetes_addon.<the name of the cluster resource in the Terraform configuration file>"
+   ```
+
+1. Run the command:
+
+   ```bash
+   terraform state show data.vkcs_kubernetes_addon.<the name of the cluster resource in the Terraform configuration file>
+   ```
+
+1. See the available information in the output of the command.
 
 </tabpanel>
 </tabs>
@@ -63,6 +103,7 @@ The procedure for installing addons is discussed in the [relevant section](../ad
 <tabs>
 <tablist>
 <tab>Personal account</tab>
+<tab>Terraform</tab>
 </tablist>
 <tabpanel>
 
@@ -81,6 +122,23 @@ To remove the addon:
    - Expand the menu of the desired addon and select **Remove addon**.
 
 1. Confirm the deletion.
+
+</tabpanel>
+<tabpanel>
+
+1. [Install Terraform and configure the provider](/en/manage/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
+1. In the Terraform configuration file, delete or comment out the block with the addons to be deleted.
+1. Check out the planned changes:
+
+   ```bash
+   terraform plan
+   ```
+
+1. Apply the changes:
+
+   ```bash
+   terraform apply
+   ```
 
 </tabpanel>
 </tabs>
