@@ -1,221 +1,179 @@
-### Важно
+VK Cloud поддерживает логирование для инстансов БД:
 
-Логи баз данных доступны только для БД, созданных после 1 декабря 2020 года.
+- PostgreSQL / PostgresPro;
+- MySQL;
+- Redis;
+- MongoBD.
 
-В настоящее время реализована возможность получения логов для следующих Баз данных:
+<warn>
 
-- MySQL
-- PostgreSQL/PostgresPro
-- ClickHouse
-- Redis
-- MongoBD
+Логи доступны только для инстансов БД, созданных после 1 декабря 2020 года.
 
-Отметим, что для реализации получения логов необходимо [подключиться к БД по SSH](https://mcs.mail.ru/help/ru_RU/dbaas-start/dbaas-connect).
+</warn>
 
-Ниже представлено детальное описание получения логов из каждого типа БД.
+Чтобы вывести логи БД:
 
-## MySQL
+1. [Подключитесь к ВМ](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) по SSH под учетной записью `admin`.
 
-Для получения логов необходимо подключиться по SSH и ввести следующую команду:
+   <info>
 
-```
-[admin@mysql-8658 ~]journalctl -u mysqld
-```
+   При кластерной конфигурации подключитесь к ВМ типа `Master`.
 
-Далее, ответом будут выведены логи:
+   </info>
 
-```
--- Logs begin at Fri 2020-12-25 08:35:15 UTC, end at Mon 2021-01-11 18:41:34 UTC. --
-Dec 25 08:35:21 mysql-v5dot6-2020-11-30.novalocal systemd[1]: Starting MySQL Community Server...
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 0 [Warning] TIMESTAMP with implicit D
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 0 [Note] Ignoring --secure-file-priv
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 0 [Note] /usr/sbin/mysqld (mysqld 5.6
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 1276 [Note] InnoDB: Using atomics to
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 1276 [Note] InnoDB: The InnoDB memory
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 1276 [Note] InnoDB: Mutexes and rw_lo
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 1276 [Note] InnoDB: Memory barrier is
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 1276 [Note] InnoDB: Compressed tables
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 1276 [Note] InnoDB: Using Linux nativ
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 1276 [Note] InnoDB: Using CPU crc32 i
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 1276 [Note] InnoDB: Initializing buff
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 1276 [Note] InnoDB: Completed initial
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 1276 [Note] InnoDB: The first specifi
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 1276 [Note] InnoDB: Setting file ./ib
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 1276 [Note] InnoDB: Database physical
-Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:25 1276 [Note] InnoDB: Setting log file
-Dec 25 08:35:26 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:26 1276 [Note] InnoDB: Setting log file
-Dec 25 08:35:26 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:26 1276 [Note] InnoDB: Renaming log file
-Dec 25 08:35:26 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:26 1276 [Warning] InnoDB: New log files
-Dec 25 08:35:26 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:26 1276 [Note] InnoDB: Doublewrite buffe
-Dec 25 08:35:26 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:26 1276 [Note] InnoDB: Doublewrite buffe
-Dec 25 08:35:26 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:26 1276 [Note] InnoDB: 128 rollback segm
-Dec 25 08:35:26 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:26 1276 [Warning] InnoDB: Creating forei
-Dec 25 08:35:26 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:26 1276 [Note] InnoDB: Foreign key const
-Dec 25 08:35:26 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:26 1276 [Note] InnoDB: Creating tablespa
-Dec 25 08:35:26 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:26 1276 [Note] InnoDB: Tablespace and da
-Dec 25 08:35:26 mysql-8658.novalocal mysql-systemd-start[867]: 2020-12-25 08:35:26 1276 [Note] InnoDB: Waiting for purge
-lines 1-29
-```
+1. Введите команду отображения логов в зависимости от типа СУБД:
 
-## PostgreSQL/PostgresPro
+   <tabs>
+   <tablist>
+   <tab>PostgreSQL / PostgresPro</tab>
+   <tab>MySQL</tab>
+   <tab>Redis</tab>
+   <tab>MongoBD</tab>
+   </tablist>
+   <tabpanel>
 
-Для получения логов необходимо подключиться по SSH и ввести следующую команду:
+   ```bash
+   journalctl -u postgresql
+   ```
 
-```
-[admin@postgresql-9641 ~]journalctl -u postgresql
-```
+   <details>
+    <summary>Пример вывода</summary>
 
-Далее, ответом будут выведены логи:
+   ```bash
+   -- Logs begin at Wed 2023-07-12 10:04:48 UTC, end at Wed 2023-07-12 10:32:29 UTC. --
+   Jul 12 10:04:55 by-postgresql-4429.novalocal systemd[1]: Starting PostgreSQL 14 database server...
+   Jul 12 10:04:55 by-postgresql-4429.novalocal postmaster[994]: 2023-07-12 10:04:55.350 UTC [994] LOG:  redirecting log output to logging collector process
+   Jul 12 10:04:55 by-postgresql-4429.novalocal postmaster[994]: 2023-07-12 10:04:55.350 UTC [994] HINT:  Future log output will appear in directory "log".
+   Jul 12 10:04:55 by-postgresql-4429.novalocal systemd[1]: Started PostgreSQL 14 database server.
+   Jul 12 10:05:32 by-postgresql-4429.novalocal systemd[1]: Stopping PostgreSQL 14 database server...
+   Jul 12 10:05:32 by-postgresql-4429.novalocal systemd[1]: postgresql.service: Succeeded.
+   Jul 12 10:05:32 by-postgresql-4429.novalocal systemd[1]: Stopped PostgreSQL 14 database server.
+   Jul 12 10:05:46 by-postgresql-4429.novalocal systemd[1]: Starting PostgreSQL 14 database server...
+   Jul 12 10:05:46 by-postgresql-4429.novalocal postmaster[1847]: 2023-07-12 10:05:46.505 GMT [1847] LOG:  starting PostgreSQL 14.8 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.5.0 20210514 (Red Hat 8.5>
+   Jul 12 10:05:46 by-postgresql-4429.novalocal postmaster[1847]: 2023-07-12 10:05:46.505 GMT [1847] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+   Jul 12 10:05:46 by-postgresql-4429.novalocal postmaster[1847]: 2023-07-12 10:05:46.505 GMT [1847] LOG:  listening on IPv6 address "::", port 5432
+   Jul 12 10:05:46 by-postgresql-4429.novalocal postmaster[1847]: 2023-07-12 10:05:46.510 GMT [1847] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+   Jul 12 10:05:46 by-postgresql-4429.novalocal postmaster[1848]: 2023-07-12 10:05:46.522 GMT [1848] LOG:  database system was shut down at 2023-07-12 10:05:32 GMT
+   Jul 12 10:05:46 by-postgresql-4429.novalocal postmaster[1847]: 2023-07-12 10:05:46.565 GMT [1847] LOG:  database system is ready to accept connections
+   Jul 12 10:05:46 by-postgresql-4429.novalocal systemd[1]: Started PostgreSQL 14 database server.
+   ```
 
-```
--- Logs begin at Fri 2020-12-25 07:48:19 UTC, end at Mon 2021-01-11 18:46:16 UTC. --
-Dec 25 07:48:25 postgresql-12-2020-12-11.novalocal systemd[1]: Starting PostgreSQL 12 database server...
-Dec 25 07:48:25 postgresql-12-2020-12-11.novalocal postmaster[883]: 2020-12-25 07:48:25.309 UTC [883] LOG:  starting Pos
-Dec 25 07:48:25 postgresql-12-2020-12-11.novalocal postmaster[883]: 2020-12-25 07:48:25.310 UTC [883] LOG:  listening on
-Dec 25 07:48:25 postgresql-12-2020-12-11.novalocal postmaster[883]: 2020-12-25 07:48:25.310 UTC [883] LOG:  listening on
-Dec 25 07:48:25 postgresql-12-2020-12-11.novalocal postmaster[883]: 2020-12-25 07:48:25.315 UTC [883] LOG:  listening on
-Dec 25 07:48:25 postgresql-12-2020-12-11.novalocal postmaster[883]: 2020-12-25 07:48:25.364 UTC [883] LOG:  listening on
-Dec 25 07:48:25 postgresql-12-2020-12-11.novalocal postmaster[883]: 2020-12-25 07:48:25.414 UTC [883] LOG:  redirecting
-Dec 25 07:48:25 postgresql-12-2020-12-11.novalocal postmaster[883]: 2020-12-25 07:48:25.414 UTC [883] HINT:  Future log
-Dec 25 07:48:25 postgresql-12-2020-12-11.novalocal systemd[1]: Started PostgreSQL 12 database server.
-Dec 25 07:48:32 postgresql-9641.novalocal systemd[1]: Stopping PostgreSQL 12 database server...
-Dec 25 07:48:32 postgresql-9641.novalocal systemd[1]: Stopped PostgreSQL 12 database server.
-Dec 25 07:48:40 postgresql-9641.novalocal systemd[1]: Starting PostgreSQL 12 database server...
-Dec 25 07:48:40 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 07:48:40.885 GMT [1660] LOG:  starting PostgreSQL
-Dec 25 07:48:40 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 07:48:40.885 GMT [1660] LOG:  listening on IPv4 a
-Dec 25 07:48:40 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 07:48:40.885 GMT [1660] LOG:  listening on IPv6 a
-Dec 25 07:48:40 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 07:48:40.905 GMT [1660] LOG:  listening on Unix s
-Dec 25 07:48:40 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 07:48:40.962 GMT [1662] LOG:  database system was
-Dec 25 07:48:40 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 07:48:40.998 GMT [1660] LOG:  database system is
-Dec 25 07:48:41 postgresql-9641.novalocal systemd[1]: Started PostgreSQL 12 database server.
-Dec 25 07:48:41 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 07:48:41.023 GMT [1671] FATAL:  role "os_admin" d
-Dec 25 07:48:41 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 07:48:41.039 GMT [1673] FATAL:  role "os_admin" d
-Dec 25 07:48:41 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 07:48:41.082 GMT [1677] FATAL:  role "os_admin" d
-Dec 25 13:20:10 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 13:20:10.575 GMT [16971] FATAL:  unsupported fron
-Dec 25 13:20:10 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 13:20:10.833 GMT [16972] FATAL:  unsupported fron
-Dec 25 13:20:11 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 13:20:11.086 GMT [16973] FATAL:  no PostgreSQL us
-Dec 25 16:16:02 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 16:16:02.956 GMT [19980] FATAL:  unsupported fron
-Dec 25 16:16:03 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 16:16:03.333 GMT [19981] FATAL:  unsupported fron
-Dec 25 16:16:03 postgresql-9641.novalocal postmaster[1660]: 2020-12-25 16:16:03.711 GMT [19982] FATAL:  no PostgreSQL us
-lines 1-29
-```
+   </details>
 
-## ClickHouse
+   </tabpanel>
+   <tabpanel>
 
-Для получения логов необходимо подключиться по SSH и ввести следующую команду:
+   ```bash
+   journalctl -u mysqld
+   ```
 
-```
-[admin@clickhouse5992 ~]less /var/log/clickhouse-server/clickhouse-server.log
-```
+   <details>
+    <summary>Пример вывода</summary>
 
-Далее, ответом будут выведены логи:
+   ```bash
+   -- Logs begin at Wed 2023-07-12 10:44:42 UTC, end at Wed 2023-07-12 10:46:52 UTC. --
+   Jul 12 10:44:48 by-mysql-4691.novalocal systemd[1]: Starting MySQL Server...
+   Jul 12 10:45:20 by-mysql-4691.novalocal mysqld_pre_systemd[1225]: 2023-07-12T10:45:20.775688Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.26) initializing of server in progress as proce>
+   Jul 12 10:45:20 by-mysql-4691.novalocal mysqld_pre_systemd[1225]: 2023-07-12T10:45:20.820334Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+   Jul 12 10:45:21 by-mysql-4691.novalocal mysqld_pre_systemd[1225]: 2023-07-12T10:45:21.964529Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+   Jul 12 10:45:24 by-mysql-4691.novalocal mysqld_pre_systemd[1225]: 2023-07-12T10:45:24.148187Z 0 [Warning] [MY-013746] [Server] A deprecated TLS version TLSv1 is enabled for channel mysql_main
+   Jul 12 10:45:24 by-mysql-4691.novalocal mysqld_pre_systemd[1225]: 2023-07-12T10:45:24.148576Z 0 [Warning] [MY-013746] [Server] A deprecated TLS version TLSv1.1 is enabled for channel mysql_main
+   Jul 12 10:45:24 by-mysql-4691.novalocal mysqld_pre_systemd[1225]: 2023-07-12T10:45:24.260630Z 6 [Note] [MY-010454] [Server] A temporary password is generated for root@localhost: V9Gh)CQOvMCr
+   Jul 12 10:45:30 by-mysql-4691.novalocal sudo[1274]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/cloud-init status --wait
+   Jul 12 10:45:30 by-mysql-4691.novalocal sudo[1274]: pam_unix(sudo:session): session opened for user root by (uid=0)
+   Jul 12 10:45:30 by-mysql-4691.novalocal sudo[1274]: pam_unix(sudo:session): session closed for user root
+   Jul 12 10:45:30 by-mysql-4691.novalocal mysqld[1284]: 2023-07-12T10:45:30.957682Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.26) starting as process 1284
+   Jul 12 10:45:30 by-mysql-4691.novalocal mysqld[1284]: 2023-07-12T10:45:30.982071Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+   Jul 12 10:45:31 by-mysql-4691.novalocal mysqld[1284]: 2023-07-12T10:45:31.476840Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+   Jul 12 10:45:31 by-mysql-4691.novalocal mysqld[1284]: 2023-07-12T10:45:31.874610Z 0 [Warning] [MY-013746] [Server] A deprecated TLS version TLSv1 is enabled for channel mysql_main
+   Jul 12 10:45:31 by-mysql-4691.novalocal mysqld[1284]: 2023-07-12T10:45:31.874757Z 0 [Warning] [MY-013746] [Server] A deprecated TLS version TLSv1.1 is enabled for channel mysql_main
+   Jul 12 10:45:31 by-mysql-4691.novalocal mysqld[1284]: 2023-07-12T10:45:31.875883Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+   Jul 12 10:45:31 by-mysql-4691.novalocal mysqld[1284]: 2023-07-12T10:45:31.876062Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported fo>
+   Jul 12 10:45:31 by-mysql-4691.novalocal mysqld[1284]: 2023-07-12T10:45:31.903615Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.26'  socket: '/var/lib/mysql/mysq>
+   Jul 12 10:45:31 by-mysql-4691.novalocal mysqld[1284]: 2023-07-12T10:45:31.903758Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/>
+   Jul 12 10:45:31 by-mysql-4691.novalocal systemd[1]: Started MySQL Server.
+   Jul 12 10:45:32 by-mysql-4691.novalocal systemd[1]: Stopping MySQL Server...
+   Jul 12 10:45:32 by-mysql-4691.novalocal mysqld[1284]: 2023-07-12T10:45:32.122896Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.26).
+   Jul 12 10:45:33 by-mysql-4691.novalocal mysqld[1284]: 2023-07-12T10:45:33.486543Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.26)  MySQL Community Server - GPL.
+   Jul 12 10:45:33 by-mysql-4691.novalocal systemd[1]: mysqld.service: Succeeded.
+   Jul 12 10:45:33 by-mysql-4691.novalocal systemd[1]: Stopped MySQL Server.
+   Jul 12 10:45:40 by-mysql-4691.novalocal systemd[1]: Starting MySQL Server...
+   Jul 12 10:45:42 by-mysql-4691.novalocal sudo[1557]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/cloud-init status --wait
+   Jul 12 10:45:42 by-mysql-4691.novalocal sudo[1557]: pam_unix(sudo:session): session opened for user root by (uid=0)
+   ```
 
-```
-2020.12.25 20:27:13.406404 [ 1025 ] {} <Information> SentryWriter: Sending crash reports is disabled
-2020.12.25 20:27:13.433539 [ 1025 ] {} <Trace> Pipe: Pipe capacity is 1.00 MiB
-2020.12.25 20:27:13.583904 [ 1025 ] {} <Information> : Starting ClickHouse 20.8.4.11 with revision 54438, no build id, PID 1025
-2020.12.25 20:27:13.584058 [ 1025 ] {} <Information> Application: starting up
-2020.12.25 20:27:13.823630 [ 1025 ] {} <Trace> Application: Will mlockall to prevent executable memory from being paged out. It may take a few seconds.
-2020.12.25 20:27:14.690702 [ 1025 ] {} <Trace> Application: The memory map of clickhouse executable has been mlock'ed
-2020.12.25 20:27:14.691026 [ 1025 ] {} <Debug> Application: rlimit on number of file descriptors is 500000
-2020.12.25 20:27:14.691049 [ 1025 ] {} <Debug> Application: Initializing DateLUT.
-2020.12.25 20:27:14.691056 [ 1025 ] {} <Trace> Application: Initialized DateLUT with time zone 'UTC'.
-2020.12.25 20:27:14.691101 [ 1025 ] {} <Debug> Application: Setting up /var/lib/clickhouse/tmp/ to store temporary data in it
-2020.12.25 20:27:14.770070 [ 1025 ] {} <Debug> Application: Configuration parameter 'interserver_http_host' doesn't exist or exists and empty. Will use 'clickhouse5992.novalocal' as replica host.
-2020.12.25 20:27:14.771874 [ 1025 ] {} <Debug> ConfigReloader: Loading config '/etc/clickhouse-server/users.xml'
-2020.12.25 20:27:14.773718 [ 1025 ] {} <Debug> ConfigReloader: Loaded config '/etc/clickhouse-server/users.xml', performing update on configuration
-2020.12.25 20:27:14.774576 [ 1025 ] {} <Debug> ConfigReloader: Loaded config '/etc/clickhouse-server/users.xml', performed update on configuration
-2020.12.25 20:27:14.775142 [ 1025 ] {} <Warning> Access(local directory): File /var/lib/clickhouse/access/users.list doesn't exist
-2020.12.25 20:27:14.775180 [ 1025 ] {} <Warning> Access(local directory): Recovering lists in directory /var/lib/clickhouse/access/
-2020.12.25 20:27:14.775619 [ 1025 ] {} <Information> Application: Uncompressed cache size was lowered to 1.85 GiB because the system has low amount of memory
-2020.12.25 20:27:14.775701 [ 1025 ] {} <Information> Application: Mark cache size was lowered to 1.85 GiB because the system has low amount of memory
-2020.12.25 20:27:14.775850 [ 1025 ] {} <Information> Application: Setting max_server_memory_usage was set to 3.33 GiB (3/var/log/clickhouse-server/clickhouse-server.log
-```
+   </details>
 
-## Redis
+   </tabpanel>
+   <tabpanel>
 
-Для получения логов необходимо подключиться по SSH и ввести следующую команду:
+   ```bash
+   journalctl -u redis
+   ```
 
-```
- [admin@redis-4275 ~]journalctl -u redis
-```
+   <details>
+    <summary>Пример вывода</summary>
 
-Далее, ответом будут выведены логи:
+   ```bash
+   -- Logs begin at Wed 2023-07-12 10:54:08 UTC, end at Wed 2023-07-12 11:16:13 UTC. --
+   Jul 12 10:54:11 by-redis-8145.novalocal systemd[1]: Starting Redis persistent key-value database...
+   Jul 12 10:54:11 by-redis-8145.novalocal systemd[1]: Started Redis persistent key-value database.
+   Jul 12 10:54:33 by-redis-8145.novalocal systemd[1]: Stopping Redis persistent key-value database...
+   Jul 12 10:54:33 by-redis-8145.novalocal systemd[1]: redis.service: Succeeded.
+   Jul 12 10:54:33 by-redis-8145.novalocal systemd[1]: Stopped Redis persistent key-value database.
+   Jul 12 10:54:33 by-redis-8145.novalocal systemd[1]: Starting Redis persistent key-value database...
+   Jul 12 10:54:33 by-redis-8145.novalocal redis-server[1355]: 1355:C 12 Jul 2023 10:54:33.384 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+   Jul 12 10:54:33 by-redis-8145.novalocal redis-server[1355]: 1355:C 12 Jul 2023 10:54:33.384 # Redis version=5.0.3, bits=64, commit=00000000, modified=0, pid=1355, just started
+   Jul 12 10:54:33 by-redis-8145.novalocal redis-server[1355]: 1355:C 12 Jul 2023 10:54:33.384 # Configuration loaded
+   Jul 12 10:54:33 by-redis-8145.novalocal redis-server[1355]: 1355:C 12 Jul 2023 10:54:33.384 * supervised by systemd, will signal readiness
+   Jul 12 10:54:33 by-redis-8145.novalocal redis-server[1355]: oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+   Jul 12 10:54:33 by-redis-8145.novalocal redis-server[1355]: Redis version=5.0.3, bits=64, commit=00000000, modified=0, pid=1355, just started
+   Jul 12 10:54:33 by-redis-8145.novalocal redis-server[1355]: Configuration loaded
+   Jul 12 10:54:33 by-redis-8145.novalocal redis-server[1355]: supervised by systemd, will signal readiness
+   Jul 12 10:54:33 by-redis-8145.novalocal systemd[1]: Started Redis persistent key-value database.
+   Jul 12 10:54:33 by-redis-8145.novalocal redis[1355]: Running mode=standalone, port=6379.
+   Jul 12 10:54:33 by-redis-8145.novalocal redis-server[1355]: 1355:M 12 Jul 2023 10:54:33.385 * Running mode=standalone, port=6379.
+   Jul 12 10:54:33 by-redis-8145.novalocal redis-server[1355]: 1355:M 12 Jul 2023 10:54:33.385 # Server initialized
+   ```
 
-```
--- Logs begin at Mon 2021-01-11 15:45:47 UTC, end at Mon 2021-01-11 19:06:17 UTC. --
-Jan 11 15:45:47 redis-4275.novalocal redis-server[1440]: 1440:S 11 Jan 2021 15:45:47.013 \* MASTER <-> REPLICA sync start
-Jan 11 15:45:47 redis-4275.novalocal redis[1440]: MASTER <-> REPLICA sync started
-Jan 11 15:45:47 redis-4275.novalocal redis[1440]: Non blocking connect for SYNC fired the event.
-Jan 11 15:45:47 redis-4275.novalocal redis-server[1440]: 1440:S 11 Jan 2021 15:45:47.034 \* Non blocking connect for SYNC
-Jan 11 15:45:47 redis-4275.novalocal redis[1440]: Error reply to PING from master: '-Reading from master: Resource tempo
-Jan 11 15:45:47 redis-4275.novalocal redis-server[1440]: 1440:S 11 Jan 2021 15:45:47.050 # Error reply to PING from mast
-Jan 11 15:45:48 redis-4275.novalocal redis[1440]: Connecting to MASTER 194.40.243.61:8886
-Jan 11 15:45:48 redis-4275.novalocal redis-server[1440]: 1440:S 11 Jan 2021 15:45:48.016 \* Connecting to MASTER 194.40.2
-Jan 11 15:45:48 redis-4275.novalocal redis-server[1440]: 1440:S 11 Jan 2021 15:45:48.016 \* MASTER <-> REPLICA sync start
-Jan 11 15:45:48 redis-4275.novalocal redis[1440]: MASTER <-> REPLICA sync started
-Jan 11 15:45:48 redis-4275.novalocal redis[1440]: Non blocking connect for SYNC fired the event.
-Jan 11 15:45:48 redis-4275.novalocal redis-server[1440]: 1440:S 11 Jan 2021 15:45:48.035 \* Non blocking connect for SYNC
-Jan 11 15:45:48 redis-4275.novalocal redis[1440]: Master replied to PING, replication can continue...
-Jan 11 15:45:48 redis-4275.novalocal redis-server[1440]: 1440:S 11 Jan 2021 15:45:48.053 \* Master replied to PING, repli
-Jan 11 15:45:48 redis-4275.novalocal redis[1440]: Partial resynchronization not possible (no cached master)
-Jan 11 15:45:48 redis-4275.novalocal redis-server[1440]: 1440:S 11 Jan 2021 15:45:48.089 \* Partial resynchronization not
-Jan 11 15:45:48 redis-4275.novalocal redis[1440]: Full resync from master: ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ:1
-Jan 11 15:45:48 redis-4275.novalocal redis-server[1440]: 1440:S 11 Jan 2021 15:45:48.108 \* Full resync from master: ZZZZ
-Jan 11 15:45:48 redis-4275.novalocal redis-server[1440]: 1440:S 11 Jan 2021 15:45:48.108 \* MASTER <-> REPLICA sync: rece
-Jan 11 15:45:48 redis-4275.novalocal redis[1440]: MASTER <-> REPLICA sync: receiving 55648 bytes from master
-Jan 11 15:45:48 redis-4275.novalocal redis[1440]: MASTER <-> REPLICA sync: Flushing old data
-Jan 11 15:45:48 redis-4275.novalocal redis-server[1440]: 1440:S 11 Jan 2021 15:45:48.181 \* MASTER <-> REPLICA sync: Flus
-Jan 11 15:45:48 redis-4275.novalocal redis-server[1440]: 1440:S 11 Jan 2021 15:45:48.182 \* MASTER <-> REPLICA sync: Load
-Jan 11 15:45:48 redis-4275.novalocal redis-server[1440]: 1440:S 11 Jan 2021 15:45:48.182 # Wrong signature trying to loa
-Jan 11 15:45:48 redis-4275.novalocal redis-server[1440]: 1440:S 11 Jan 2021 15:45:48.182 # Failed trying to load the MAS
-Jan 11 15:45:48 redis-4275.novalocal redis[1440]: MASTER <-> REPLICA sync: Loading DB in memory
-Jan 11 15:45:48 redis-4275.novalocal redis[1440]: Wrong signature trying to load DB from file
-Jan 11 15:45:48 redis-4275.novalocal redis[1440]: Failed trying to load the MASTER synchronization DB from disk
-lines 1-29
-```
+   </details>
 
-## MongoBD
+   </tabpanel>
+   <tabpanel>
 
-Для получения логов необходимо подключиться по SSH и ввести следующую команду:
+   ```bash
+   journalctl -u mongod
+   ```
 
-```
-[admin@mongodb-5604 ~]$ journalctl -u mongod
-```
+   <details>
+    <summary>Пример вывода</summary>
 
-Далее, ответом будут выведены логи:
+   ```bash
+   -- Logs begin at Wed 2023-07-12 11:23:00 UTC, end at Wed 2023-07-12 11:36:53 UTC. --
+   Jul 12 11:23:07 by-mongodb-2687.novalocal systemd[1]: Starting High-performance, schema-free document-oriented database...
+   Jul 12 11:23:07 by-mongodb-2687.novalocal sudo[984]:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/usr/bin/cloud-init status --wait
+   Jul 12 11:23:07 by-mongodb-2687.novalocal sudo[984]: pam_unix(sudo:session): session opened for user root by (uid=0)
+   Jul 12 11:23:09 by-mongodb-2687.novalocal sudo[984]: pam_unix(sudo:session): session closed for user root
+   Jul 12 11:23:09 by-mongodb-2687.novalocal systemd[1]: Started High-performance, schema-free document-oriented database.
+   Jul 12 11:23:09 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:09.719+0000 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+   Jul 12 11:23:10 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:10.644+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1049 port=27017 dbpath=/var/lib/mongodb 64-bit host=by-mongod>
+   Jul 12 11:23:10 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:10.644+0000 I CONTROL  [initandlisten] db version v4.0.28
+   Jul 12 11:23:10 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:10.644+0000 I CONTROL  [initandlisten] git version: af1a9dc12adcfa83cc19571cb3faba26eeddac92
+   Jul 12 11:23:10 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:10.644+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1k  FIPS 25 Mar 2021
+   Jul 12 11:23:10 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:10.644+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+   Jul 12 11:23:10 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:10.644+0000 I CONTROL  [initandlisten] modules: none
+   Jul 12 11:23:10 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:10.644+0000 I CONTROL  [initandlisten] build environment:
+   Jul 12 11:23:10 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:10.644+0000 I CONTROL  [initandlisten]     distmod: rhel80
+   Jul 12 11:23:10 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:10.644+0000 I CONTROL  [initandlisten]     distarch: x86_64
+   Jul 12 11:23:10 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:10.644+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+   Jul 12 11:23:10 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:10.644+0000 I CONTROL  [initandlisten] options: { config: "/etc/mongod.conf", net: { bindIp: "127.0.0.1", port: 27017 }, pr>
+   Jul 12 11:23:10 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:10.645+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3464M,cache_overflow=(file_max=0M),session>
+   Jul 12 11:23:11 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:11.487+0000 I STORAGE  [initandlisten] WiredTiger message [1689160991:487904][1049:0x7fb4fe25eb40], txn-recover: Set global>
+   Jul 12 11:23:11 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:11.503+0000 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+   Jul 12 11:23:11 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:11.528+0000 I STORAGE  [initandlisten] Starting to check the table logging settings for existing WiredTiger tables
+   ```
 
-```
--- Logs begin at Thu 2020-12-31 03:20:03 UTC, end at Mon 2021-01-11 19:09:03 UTC. --
-Dec 31 03:20:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:20:16.602+0000 I NETWORK  [listener] connection
-Dec 31 03:20:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:20:16.602+0000 I NETWORK  [conn49341] received
-Dec 31 03:20:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:20:16.605+0000 I NETWORK  [listener] connection
-Dec 31 03:20:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:20:16.605+0000 I NETWORK  [conn49342] received
-Dec 31 03:20:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:20:16.608+0000 I NETWORK  [conn49341] end conne
-Dec 31 03:20:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:20:16.608+0000 I NETWORK  [conn49342] end conne
-Dec 31 03:21:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:21:16.604+0000 I NETWORK  [listener] connection
-Dec 31 03:21:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:21:16.605+0000 I NETWORK  [conn49343] received
-Dec 31 03:21:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:21:16.606+0000 I NETWORK  [listener] connection
-Dec 31 03:21:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:21:16.607+0000 I NETWORK  [conn49344] received
-Dec 31 03:21:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:21:16.609+0000 I NETWORK  [conn49343] end conne
-Dec 31 03:21:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:21:16.610+0000 I NETWORK  [conn49344] end conne
-Dec 31 03:22:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:22:16.607+0000 I NETWORK  [listener] connection
-Dec 31 03:22:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:22:16.608+0000 I NETWORK  [conn49345] received
-Dec 31 03:22:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:22:16.609+0000 I NETWORK  [listener] connection
-Dec 31 03:22:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:22:16.609+0000 I NETWORK  [conn49346] received
-Dec 31 03:22:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:22:16.611+0000 I NETWORK  [conn49345] end conne
-Dec 31 03:22:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:22:16.612+0000 I NETWORK  [conn49346] end conne
-Dec 31 03:23:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:23:16.612+0000 I NETWORK  [listener] connection
-Dec 31 03:23:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:23:16.613+0000 I NETWORK  [conn49347] received
-Dec 31 03:23:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:23:16.613+0000 I NETWORK  [listener] connection
-Dec 31 03:23:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:23:16.614+0000 I NETWORK  [conn49348] received
-Dec 31 03:23:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:23:16.615+0000 I NETWORK  [conn49347] end conne
-Dec 31 03:23:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:23:16.616+0000 I NETWORK  [conn49348] end conne
-Dec 31 03:24:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:24:16.611+0000 I NETWORK  [listener] connection
-Dec 31 03:24:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:24:16.611+0000 I NETWORK  [conn49349] received
-Dec 31 03:24:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:24:16.612+0000 I NETWORK  [listener] connection
-Dec 31 03:24:16 mongodb-5604.novalocal mongod.27017[1718]: 2020-12-31T03:24:16.613+0000 I NETWORK  [conn49350] received
-lines 1-29
-```
+   </details>
 
---
+   </tabpanel>
+   </tabs>
