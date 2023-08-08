@@ -33,7 +33,7 @@ To work with public DNS, configure [roles](/en/base/account/concepts/rolesandper
 </tabpanel>
 <tabpanel>
 
-Use the method `GET /v2/dns/` from the specification in [API documentation](/ru/additionals/api/api-dns).
+Use the method `GET /v2/dns/` from the specification in [API documentation](/ru/additionals/api/api-dns "change-lang").
 
 </tabpanel>
 </tabs>
@@ -75,7 +75,7 @@ DNS zone is a logical association of domain names of your resources, containing 
 </tabpanel>
 <tabpanel>
 
-Use the method `POST /v2/dns/` from the specification in [API documentation](/ru/additionals/api/api-dns).
+Use the method `POST /v2/dns/` from the specification in [API documentation](/ru/additionals/api/api-dns "change-lang").
 
 </tabpanel>
 </tabs>
@@ -104,7 +104,7 @@ For most providers, it is possible to delegate zone management independently. If
 </tabpanel>
 <tabpanel>
 
-Use the method `PUT /v2/dns/<dns-uuid>` from the specification in [API documentation](/ru/additionals/api/api-dns).
+Use the method `PUT /v2/dns/<dns-uuid>` from the specification in [API documentation](/ru/additionals/api/api-dns "change-lang").
 
 </tabpanel>
 </tabs>
@@ -154,7 +154,7 @@ This is a group operation: if necessary, you can delete several zones at once by
 </tabpanel>
 <tabpanel>
 
-Use the method `DELETE /v2/dns/<dns-uuid>` from the specification in [API documentation](/ru/additionals/api/api-dns).
+Use the method `DELETE /v2/dns/<dns-uuid>` from the specification in [API documentation](/ru/additionals/api/api-dns "change-lang").
 
 </tabpanel>
 </tabs>
@@ -292,7 +292,7 @@ To add a resource record:
 </tabpanel>
 <tabpanel>
 
-Use the methods from the specification in [API documentation](/ru/additionals/api/api-dns).
+Use the methods from the specification in [API documentation](/ru/additionals/api/api-dns "change-lang").
 
 </tabpanel>
 </tabs>
@@ -316,7 +316,7 @@ Use the methods from the specification in [API documentation](/ru/additionals/ap
 </tabpanel>
 <tabpanel>
 
-Use the methods from the specification in [API documentation](/ru/additionals/api/api-dns).
+Use the methods from the specification in [API documentation](/ru/additionals/api/api-dns "change-lang").
 
 </tabpanel>
 </tabs>
@@ -342,7 +342,7 @@ This is a group operation: if necessary, you can delete several records at once 
 </tabpanel>
 <tabpanel>
 
-Use the methods from the specification in [API documentation](/ru/additionals/api/api-dns).
+Use the methods from the specification in [API documentation](/ru/additionals/api/api-dns "change-lang").
 
 </tabpanel>
 </tabs>
