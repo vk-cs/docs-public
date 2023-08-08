@@ -211,10 +211,12 @@ curl -X POST "https://mcs.mail.ru/public-dns/v2/dns/a5ef043e-b517-4c45-a727-e829
 
 Заголовки:
 
-- `Location:
-<https://mcs.mail.ru/public-dns/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6/a/631519fb-f2d3-43e0-ae9c-8f18adcf3b1a>`
-- `Content-Type: application/json; charset=UTF-8`
-- `Content-Length: 211`
+```json
+Location:
+<https://mcs.mail.ru/public-dns/v2/dns/a5ef043e-b517-4c45-a727-e8298f5d47d6/a/631519fb-f2d3-43e0-ae9c-8f18adcf3b1a>
+Content-Type: application/json; charset=UTF-8
+Content-Length: 211
+```
 
 Код ответа:
 
