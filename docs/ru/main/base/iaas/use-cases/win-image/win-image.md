@@ -4,7 +4,7 @@
 
 </info>
 
-В качестве примера использован образ Windows Server 2016 редакции CORE.
+В качестве примера использован образ Windows Server 2016 редакции CORE, команды приведены на языке PowerShell.
 
 ## Подготовительные шаги
 
@@ -51,13 +51,13 @@
 1. Экспортируйте редакцию с `ImageIndex` = `1` с помощью команды:
 
     ```powershell
-    dism /
-    export-image /
-    SourceImageFile:E:\sources\Install.wim /
-    SourceIndex:1 /
-    DestinationImageFile:D:\Temp\install.wim /
-    Compress:max /
-    CheckIntegrity
+    dism `
+    /export-image `
+    /SourceImageFile:E:\sources\Install.wim `
+    /SourceIndex:1 `
+    /DestinationImageFile:D:\Temp\install.wim `
+    /Compress:max `
+    /CheckIntegrity
     ```
 
     Здесь:
