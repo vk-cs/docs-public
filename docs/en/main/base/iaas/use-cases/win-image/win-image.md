@@ -4,7 +4,7 @@ The list of supported Windows OS for migration is listed in the section [Operati
 
 </info>
 
-The Windows Server 2016 CORE edition image is used as an example.
+The Windows Server 2016 CORE edition image is used as an example, the commands are given in PowerShell.
 
 ## Preparatory steps
 
@@ -51,13 +51,13 @@ The installation image may contain several editions of the operating system. Sin
 1. Export the revision with `ImageIndex` = `1` using the command:
 
     ```powershell
-    dism /
-    export-image /
-    SourceImageFile:E:\sources\Install.wim /
-    SourceIndex:1 /
-    DestinationImageFile:D:\Temp\install.wim /
-    Compress:max /
-    CheckIntegrity
+    dism `
+    /export-image `
+    /SourceImageFile:E:\sources\Install.wim `
+    /SourceIndex:1 `
+    /DestinationImageFile:D:\Temp\install.wim `
+    /Compress:max `
+    /CheckIntegrity
     ```
 
     Here:
