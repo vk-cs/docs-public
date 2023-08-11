@@ -168,7 +168,13 @@ The instructions are given for Ubuntu Linux. For information about connecting to
     sudo apt-get install nfs-common
     ```
 
-2. Use the command specified in [properties](#viewing-a-list-of-file-storages) of the created NFS storage:
+2. Create a folder to mount the storage:
+
+    ```bash
+    mkdir <Directory name>
+    ```
+
+3. Use the command specified in [properties](#viewing-a-list-of-file-storages) of the created NFS storage:
 
     ```bash
     mount -t nfs <Mount point> /<Directory name>
