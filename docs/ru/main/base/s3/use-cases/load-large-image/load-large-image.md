@@ -1,4 +1,4 @@
-В VK Cloud [действуют ограничения](/ru/base/account/concepts/quotasandlimits) на размер загружаемых образов. При превышении лимита появляется сообщение вида:
+В VK Cloud [действуют ограничения](/ru/base/account/concepts/quotasandlimits) на размер загружаемых образов операционных систем. При превышении лимита появляется сообщение вида:
 
 ```txt
 An error occurred (InvalidArgument) when calling the UploadPart operation: Part number must be an integer between 1 and 10000, inclusive
