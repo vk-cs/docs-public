@@ -1,4 +1,4 @@
-VK Cloud [has restrictions](/en/base/account/concepts/quotasandlimits) on the size of uploaded images. If the limit is exceeded, a message appears like:
+VK Cloud [has restrictions](/en/base/account/concepts/quotasandlimits) on the size of uploaded images of operating systems. If the limit is exceeded, a message appears like:
 
 ```txt
 An error occurred (InvalidArgument) when calling the UploadPart operation: Part number must be an integer between 1 and 10000, inclusive
