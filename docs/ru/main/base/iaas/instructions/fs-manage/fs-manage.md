@@ -168,7 +168,13 @@ net use <Имя диска>: <Точка подключения>
     sudo apt-get install nfs-common
     ```
 
-2. Используйте команду, указанную в [свойствах](#prosmotr-informacii-o-faylovom-hranilishche) созданного NFS хранилища:
+2. Создайте папку для монтирования хранилища:
+
+    ```bash
+    mkdir <Имя каталога>
+    ```
+
+3. Используйте команду, указанную в [свойствах](#prosmotr-informacii-o-faylovom-hranilishche) созданного NFS хранилища:
 
     ```bash
     mount -t nfs <Точка подключения> /<Имя каталога>
