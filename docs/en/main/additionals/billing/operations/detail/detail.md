@@ -19,7 +19,14 @@ The same principle applies to [the formation of accounting documents](../report/
    - Select the **Balance** section in the side menu.
 
 1. Go to **Detail** tab.
-1. If necessary, set filters on the displayed records:
+
+<warn>
+
+Amounts on the tab are rounded to **two decimal places**. A similar principle applies for [services cost calculation](../../tariffication/) and [accounting documents](../report/).
+
+</warn>
+
+4. If necessary, set filters on the displayed records:
 
    - Set the date, if necessary, use the details for the period.
    - Specify the type of funds movement: deductions or additions.

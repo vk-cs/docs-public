@@ -14,6 +14,6 @@ The total cost will be displayed in the line **Final calculation**.
 
 <warn>
 
-The total cost is rounded to **two decimal places**. A similar principle applies for [detailing](../operations/detail/) and for [accounting documents](../operations/report/).
+The total cost is rounded to **two decimal places**. A similar principle applies for [detailing](../operations/detail/) and  [accounting documents](../operations/report/).
 
 </warn>
