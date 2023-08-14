@@ -5,7 +5,7 @@
   "metaTitle": "Контейнеры",
   "metaDescription": "Работа с сервисом контейнеров с использованием Terraform",
   "sectionTitle": "Контейнеры",
-  "markdown": "Работа с [сервисом контейнеров](/ru/main/base/k8s) с использованием Terraform.",
+  "markdown": "Работа с [сервисом контейнеров](/ru/base/k8s) с использованием Terraform.",
   "icon": "",
   "infobarItems": null,
   "weight": 6,
