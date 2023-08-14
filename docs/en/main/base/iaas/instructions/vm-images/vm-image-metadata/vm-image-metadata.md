@@ -444,7 +444,7 @@ If the required OS is not in the table, use the library [libosinfo](https://libo
   4. Set meta tags:
   
      ```shell
-     openstack image set --tag <tag name and value> <image ID>
+     openstack image set --property <tag name and value> <image ID>
      ```
   
      Example:

@@ -444,7 +444,7 @@
   4. Установите метатеги:
   
      ```shell
-     openstack image set --tag <имя и значение тега> <ID образа>
+     openstack image set --property <имя и значение тега> <ID образа>
      ```
   
      Пример:
