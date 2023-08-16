@@ -1,12 +1,19 @@
 {
   "title": "Cloud Streams",
-  "pageDescription": "",
+  "pageDescription": "Cloud Streams на базе решения Arenadata Streaming.",
   "shortDescription": "Кластеры Cloud Streams для работы с большими массивами данных",
   "metaTitle": "Cloud Streams",
   "metaDescription": "Cloud Streams",
   "sectionTitle": "Cloud Streams",
-  "markdown": "Полноценный дистрибутив на базе Apache Kafka и Apache NiFi, адаптированный для корпоративного использования, предназначенный для обработки потоков большого объема данных.",
+  "markdown": "Cloud Streams построен в облаке на базе решения [Arenadata Streaming](https://arenadata.tech/products/arenadata-streaming/). В его основе инструменты с открытым исходным кодом: Apache Kafka и Apache NiFi. Подходит для решения задач, связанных с потоковой обработкой данных. Можно подключить Kafka и Nifi в качестве Managed-сервисов в облаке.<br><br><warn>Чтобы подключить сервис и создать кластер, обратитесь в [техническую поддержку](/ru/contacts) или оставьте заявку на [сайте сервиса](https://mcs.mail.ru/cloud-streams/).</warn>",
   "icon": "",
   "weight": 0,
-  "uuid": "a4ba4b1f-94cf-4be4-b7e1-34237290efbc"
+  "uuid": "a4ba4b1f-94cf-4be4-b7e1-34237290efbc",
+  "additionalUuids": [
+    "9f1e537e-2315-45cf-abfe-41d3c0cb5b00",
+    "1943b135-68a7-4cf7-b89e-eded00f26457",
+    "0f57f727-f2cd-4ea1-848b-f22ef28c2f0b",
+    "15f99f51-c59e-4da5-9a1e-a7565cfe8336",
+    "88be6dd3-ecc1-4b8b-8144-62ac758dbf00"
+  ]
 }
