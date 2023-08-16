@@ -1,4 +1,4 @@
-When a user is invited to a [project](../projects), he or she is assigned with a role. The role defines the scope of [permissions](#roles-and-their-permissions--the-full-matrix) available to the user when working with the personal account and with the cloud services.
+When a user is invited to a [project](../projects), he or she is assigned with a role. The role defines the scope of [permissions](#roles_and_their_permissions-_the_full_matrix) available to the user when working with the personal account and with the cloud services.
 
 The same user can be a member of several projects and have different roles in each of them. The same user can be assigned with several roles in one project; in this case, the permissions of all assigned roles are summarized.
 
@@ -64,7 +64,7 @@ Each of the roles below is intended for working with one of the platform service
 
 All these roles have no access to the project members list and to project balance information.
 
-For detailed information about the permissions of these roles, see section [Roles and their permissions: the full matrix](#roles-and-their-permissions--the-full-matrix).
+For detailed information about the permissions of these roles, see section [Roles and their permissions: the full matrix](#roles_and_their_permissions-_the_full_matrix).
 
 All operations available to specialized roles are also available to Project owner, Superadministrator, and Project administrator.
 
@@ -99,7 +99,7 @@ A user with this role:
 
 ### Kubernetes administrator, operator, and auditor
 
-For detailed information about the permissions of these roles, see section [Roles for the Containers service and their permissions](#roles-for-the-containers-service-and-their-permissions).
+For detailed information about the permissions of these roles, see section [Roles for the Containers service and their permissions](#roles_for_the_containers_service_and_their_permissions).
 
 ## Roles and their permissions: the full matrix
 
@@ -119,7 +119,7 @@ The operations available to Kubernetes administrator are also available to Proje
 
 For other roles these operations are unavailable.
 
-For Kubernetes clusters of version 1.23 and later, the role of a Kubernetes administrator, operator, or auditor also defines the internal [Kubernetes role](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles) (`admin`, `edit`, or `view`) assigned to the user.
+For Kubernetes clusters of version 1.23 and later, the role of a Kubernetes administrator, operator, or auditor also defines the internal [Kubernetes role](/en/base/k8s/concepts/access-management#relationship_between_the_roles_of_personal_account_and_kubernetes) (`admin`, `edit`, or `view`) assigned to the user.
 
 <info>
 
@@ -128,21 +128,21 @@ Some of the actions below are available only in the certain state of a cluster. 
 </info>
 
 <!-- prettier-ignore -->
-| Operation/Role |  Kubernetes<br>administrator | Kubernetes<br>operator | Kubernetes<br>auditor |
-| --------------| --------------------------- | ---------------------- | --------------------- |
-| Create a cluster                                            | &#10003;  | —  | —                |
-| Delete a cluster                                            | &#10003;  | —  | —                |
-| Start a cluster                                             | &#10003;  | &#10003;  | —                |
-| Stop a cluster                                              | &#10003;  | &#10003;  | —                |
-| Show information about<br>a cluster and node groups         | &#10003;  | &#10003;  | &#10003;                |
-| Get kubeconfig                                            | &#10003;  | &#10003;  | &#10003;                |
-| Get the secret to access<br>the Kubernetes Dashboard      | &#10003;  | &#10003;  | &#10003;                |
-| Update version                                            | &#10003;  | &#10003;  | —                |
-| Change the virtual machine type                               | &#10003;  | &#10003;  | —                |
-| Change the size of the Prometheus disk                    | &#10003;  | &#10003;  | —                |
-| Add a node group                                            | &#10003;  | &#10003;  | —                |
-| Delete a node group                                         | &#10003;  | &#10003;  | —                |
-| Change scaling settings                                   | &#10003;  | &#10003;  | —     |
-| Change Labels and Taints                                  | &#10003;  | &#10003;  | —     |
-| Install / delete an addon | &#10003; | &#10003; | — |
+| Operation/Role |  Kubernetes<br>administrator | Kubernetes<br>operator | Kubernetes<br>auditor | Viewer |
+| -------------- | ---------------------------  | ---------------------- | --------------------- | ------ |
+| Create a cluster                                      | &#10003; | —        | —        | — |
+| Delete a cluster                                      | &#10003; | —        | —        | — |
+| Start a cluster                                       | &#10003; | &#10003; | —        | — |
+| Stop a cluster                                        | &#10003; | &#10003; | —        | — |
+| Show information about<br>a cluster and node groups   | &#10003; | &#10003; | &#10003; | &#10003; |
+| Get kubeconfig                                        | &#10003; | &#10003; | &#10003; | — |
+| Get the secret to access<br>the Kubernetes Dashboard  | &#10003; | &#10003; | &#10003; | &#10003; |
+| Update version                                        | &#10003; | &#10003; | —        | — |
+| Change the virtual machine type                       | &#10003; | &#10003; | —        | — |
+| Change the size of the Prometheus disk                | &#10003; | &#10003; | —        | — |
+| Add a node group                                      | &#10003; | &#10003; | —        | — |
+| Delete a node group                                   | &#10003; | &#10003; | —        | — |
+| Change scaling settings                               | &#10003; | &#10003; | —        | — |
+| Change Labels and Taints                              | &#10003; | &#10003; | —        | — |
+| Install / delete an addon                             | &#10003; | &#10003; | —        | — |
 <!-- prettier-ignore -->
