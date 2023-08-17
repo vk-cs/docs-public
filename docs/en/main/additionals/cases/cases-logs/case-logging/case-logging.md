@@ -608,7 +608,3 @@ Kibana Dashboard is a set of visualizations.
 4. Reorder and resize the visualizations as needed, then click Save.
 
 [![](./assets/1576067332838-1576067332838.png)](https://hb.bizmrg.com/help-images/logging/Dashboard_4.png)
-
-## Feedback
-
-Any problems or questions? [Write to us, we will be happy](https://mcs.mail.ru/help/contact-us).

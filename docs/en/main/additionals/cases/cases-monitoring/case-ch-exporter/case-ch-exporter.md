@@ -251,7 +251,3 @@ root@clickhouse:~# userdel prometheus
 root@clickhouse:~# groupdel prometheus
 
 ```
-
-## **Feedback**
-
-Any problems or questions? [Write to us, we will be happy](https://mcs.mail.ru/help/contact-us)

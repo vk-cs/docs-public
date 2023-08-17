@@ -595,7 +595,3 @@ The auto-deployment of the new version was successful.
 The configuration files given in this article are test files and are intended for mastering the mechanisms of Gitlab, registering and deploying images to a cluster at an initial level.
 
 </info>
-
-## Feedback
-
-Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

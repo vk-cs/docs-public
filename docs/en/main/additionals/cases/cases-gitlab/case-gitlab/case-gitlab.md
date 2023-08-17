@@ -290,7 +290,3 @@ Change detection: 100% (3/3), done.
 ```
 
 Now [install and configure the Harbor repository](https://mcs.mail.ru/help/gitlab-ci-cd/harbor-installation), which will contain the collected images.
-
-## Feedback
-
-Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).
