@@ -196,7 +196,3 @@ root@redis:~# rm -f /usr/local/bin/redis_exporter
 root@redis:~# userdel prometheus
 root@redis:~# groupdel prometheus
 ```
-
-## **Обратная связь**
-
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

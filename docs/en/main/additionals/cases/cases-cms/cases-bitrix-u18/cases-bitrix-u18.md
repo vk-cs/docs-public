@@ -267,7 +267,3 @@ As a result, the installation wizard will start, follow its instructions:
 As a result, you will proceed to the individual settings of the selected template. Select the solution you want to use for your site, enter the name and the name of the site owner. Then click the "Install" button.
 
 The installation of the selected template will start. Once the installation is complete, click the "Go to website" button.
-
-## Feedback
-
-Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

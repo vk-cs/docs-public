@@ -123,7 +123,3 @@ Remember the password entered for the user, it will be required for integration 
 ![](./assets/1583617528394-1583617528394.png)
 
 Now [set up auto-deployment of the application to the Kubernetes cluster](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
-
-## Feedback
-
-Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

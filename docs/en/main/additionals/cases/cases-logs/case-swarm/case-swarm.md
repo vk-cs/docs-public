@@ -334,7 +334,3 @@ To view logs:
 [![](./assets/1575019989698-1575019989698.png)](https://hb.bizmrg.com/help-images/logging/Kibana5.png)
 
 Next, try creating a couple of test posts in Wordpress and look in Kibana for changes in the logs.
-
-## Feedback**
-
-Any problems or questions? [Write to us, we will be happy](https://mcs.mail.ru/help/contact-us).

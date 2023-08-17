@@ -309,7 +309,3 @@ Query OK, 0 rows affected (0.020 sec)
 mysql> flush privileges;
 Query OK, 0 rows affected (0.007 sec)
 ```
-
-## **Обратная связь**
-
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

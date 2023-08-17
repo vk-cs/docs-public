@@ -267,7 +267,3 @@ The following part of the configuration file defines the maximum amount of memor
   - _volatile-ttl_ - remove keys that expire faster than others (that is, the lifetime of which approaches expire).
 
 Another interesting feature of Redis is single-threading. This makes it pointless to attempt to scale by increasing the processor core - as a result, under high loads, the performance of the Redis server can noticeably degrade. Official developers recommendation: to reduce the load, re-architect the application architecture that uses Redis. Since this solution is not suitable for everyone, a multi-threaded KeyDB server was created that is fully compatible with Redis and is gaining popularity at the present time. You can learn more about KeyDB at the [developer site](https://keydb.dev/).
-
-## Feedback
-
-Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

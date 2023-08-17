@@ -123,7 +123,3 @@ https://<SERVER_DNS_NAME>:8443
 ![](./assets/1583617528394-1583617528394.png)
 
 Теперь [настройте авторазвертывание приложения в кластер Kubernetes](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
-
-## Обратная связь
-
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
