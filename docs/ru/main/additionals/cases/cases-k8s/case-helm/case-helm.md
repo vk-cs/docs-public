@@ -367,7 +367,3 @@ customresourcedefinition.apiextensions.k8s.io "clusterissuers.cert-manager.io"�
 customresourcedefinition.apiextensions.k8s.io "issuers.cert-manager.io" deleted
 customresourcedefinition.apiextensions.k8s.io "orders.acme.cert-manager.io"
 ```
-
-## Обратная связь
-
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us)

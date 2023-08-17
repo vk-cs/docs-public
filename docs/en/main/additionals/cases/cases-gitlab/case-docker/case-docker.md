@@ -44,7 +44,3 @@ chmod +x /usr/local/bin/docker-compose
 ```
 
 Now [install and configure Gitlab](https://mcs.mail.ru/help/gitlab-ci-cd/gitlab-installation).
-
-## Feedback
-
-Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

@@ -244,7 +244,3 @@ In the database settings, enter the database username, password, and database na
 6. To go to the main page of your site, click the **Site** button:
 
 **![](./assets/1553375486854-1553375486854.png)**
-
-## Feedback
-
-Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

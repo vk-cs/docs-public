@@ -514,7 +514,3 @@ root@ubuntu-basic-1-1-10gb:~# rm -rf /opt/prometheus
 root@ubuntu-basic-1-1-10gb:~# userdel prometheus
 root@ubuntu-basic-1-1-10gb:~# groupdel prometheus
 ```
-
-## **Feedback**
-
-Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

@@ -235,7 +235,3 @@ root@postgresql:~# rm /etc/systemd/system/postgres_exporter.service
 root@postgresql:~# systemctl daemon-reload
 root@postgresql:~# rm -f /usr/local/bin/postgres_exporter
 ```
-
-## **Обратная связь**
-
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

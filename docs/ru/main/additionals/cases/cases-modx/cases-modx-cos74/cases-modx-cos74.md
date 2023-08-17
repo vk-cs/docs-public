@@ -324,7 +324,3 @@ sudo nano .htaccess
 ```
 sudo systemctl restart httpd.service
 ```
-
-## **Обратная связь**
-
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

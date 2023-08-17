@@ -248,7 +248,3 @@ Using a weak password leads to a decrease in the network security of the site, s
 This will open the WordPress home page:
 
 ![](./assets/1552420341995-1552420341995.png)
-
-## **Feedback**
-
-Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).
