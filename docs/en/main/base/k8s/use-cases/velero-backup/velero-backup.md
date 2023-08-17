@@ -145,7 +145,7 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
    1. Get detailed information about the disk with this ID using the OpenStack CLI:
 
       ```
-      openstack volume show <disk ID>
+      openstack volume show <disk ID> --fit-width
       ```
 
 1. Wait until the load balancer is assigned a public IP address.
