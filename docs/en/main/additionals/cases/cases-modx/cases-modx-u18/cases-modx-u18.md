@@ -315,7 +315,3 @@ Database check: Success!
 This will open the main ModX page:
 
 ![](./assets/1554808550477-1554808550477.png)
-
-## **Feedback**
-
-Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

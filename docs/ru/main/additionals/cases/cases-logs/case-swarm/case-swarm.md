@@ -336,7 +336,3 @@ keep_time_key true
 [![](./assets/1575019989698-1575019989698.png)](https://hb.bizmrg.com/help-images/logging/Kibana5.png)
 
 Далее попробуйте создать в Wordpress пару тестовых постов и посмотреть в Kibana на изменение логов.
-
-## Обратная связь**
-
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады](https://mcs.mail.ru/help/contact-us).

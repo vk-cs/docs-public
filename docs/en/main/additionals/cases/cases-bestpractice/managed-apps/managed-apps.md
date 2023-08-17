@@ -12,7 +12,6 @@
 - For your application components deployed in [Kubernetes](https://mcs.mail.ru/help/kubernetes/scaling), configure autoscaling. This will ensure that the necessary computing resources are provided during periods of increased load on the application.
 - When developing applications, apply The Twelve-Factor App methodology (for more information, see [12Factor](https://12factor.net/)).
 - Examine the documentation for the functionality, capabilities and limitations of the cloud provider.
-- Write to us using the [feedback form](https://mcs.mail.ru/help/contact-us) if you have any questions.
 
 ## Security Recommendations
 
