@@ -548,7 +548,3 @@ To install Filebeat:
 The installation of the ELK stack is complete.
 
 In the address bar of your web browser, enter the IP address of your Elastic server. Use your administrator credentials to sign in. After successful authorization, you will be redirected to the Kibana main page.
-
-## Feedback
-
-Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

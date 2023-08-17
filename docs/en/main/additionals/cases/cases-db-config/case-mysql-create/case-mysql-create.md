@@ -249,7 +249,3 @@ tcp 0 0 127.0.0.1:3306 0.0.0.0:\* LISTEN8319/mysqld
 tcp 0 127.0.0.1:33060 0.0.0.0:\* 8319/mysqld
 
 ```
-
-## Feedback
-
-Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

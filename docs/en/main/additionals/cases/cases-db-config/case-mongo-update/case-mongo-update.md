@@ -545,7 +545,3 @@ The node will become `secondary`, the `primary` node will become `mongo1`, as it
 We performed the upgrade without taking the cluster out of service, that is, seamlessly.
 
 If upgrading a single MongoDB server, update the `feature compatibility version` parameter, link the repository with the new `mongodb` version, fix the server configuration file, and upgrade the `mongodb` server to the new version as described above. In this case, a server shutdown will be required.
-
-## Feedback
-
-Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).

@@ -305,7 +305,3 @@ db.createUser(
 Как настроить репликацию и обновление MongoDB, [читайте тут](https://mcs.mail.ru/help/databases-configuration/mongodb-replica).
 
 </info>
-
-## Обратная связь
-
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).
