@@ -292,7 +292,3 @@ remote: Total 23 (delta 3), reused 0 (delta 0)
 ```
 
 Теперь [установите и настройте хранилище Harbor](https://mcs.mail.ru/help/gitlab-ci-cd/harbor-installation), в которое будут складываться собранные образы.
-
-## Обратная связь
-
-Возникли проблемы или остались вопросы? [Напишите нам, мы будем рады вам помочь](https://mcs.mail.ru/help/contact-us).

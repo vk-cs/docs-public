@@ -239,7 +239,3 @@ sudo rm /srv/www/htdocs/info.php
 ```
 
 </warn>
-
-## **Feedback**
-
-Any problems or questions? [Write to us, we will be happy to help you](https://mcs.mail.ru/help/contact-us).
