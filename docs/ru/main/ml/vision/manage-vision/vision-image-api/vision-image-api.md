@@ -22,7 +22,7 @@
 | mode         | []string     | Типы объектов, которые требуется искать на переданных изображениях (required non-empty)                              |
 | images       | []image_meta | Метаданные передаваемых изображений (required non-empty)                                                             |
 | rfactor      | int          | Коэффициент увеличения разрешения, может принимать значения либо 2, либо 4  (required non-empty for resolution mode) |
-| ftype        | string       | Тип изображения, "art" или "photo"  (required non-empty for resolution mode)                                         |
+| rtype        | string       | Тип изображения, `art` или `photo`  (required non-empty for resolution mode)                                         |
 
 Возможные значения `mode`:
 
