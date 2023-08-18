@@ -338,18 +338,9 @@ On the host from which you plan to connect to the cluster:
 
 <tabs>
 <tablist>
-<tab>Version of Kubernetes 1.22 and lower</tab>
 <tab>Version of Kubernetes 1.23 and higher</tab>
+<tab>Version of Kubernetes 1.22 and lower</tab>
 </tablist>
-<tabpanel>
-
-Run the command on the host:
-
-```bash
-kubectl cluster-info
-```
-
-</tabpanel>
 <tabpanel>
 
 On the host:
@@ -368,6 +359,15 @@ On the host:
    - name: "OS_PASSWORD"
      value: "put your password here"
    ```
+
+</tabpanel>
+<tabpanel>
+
+Run the command on the host:
+
+```bash
+kubectl cluster-info
+```
 
 </tabpanel>
 </tabs>

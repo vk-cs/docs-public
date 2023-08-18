@@ -30,9 +30,30 @@ To connect to Kubernetes Dashboard, a browser must be installed on the host.
 
 <tabs>
 <tablist>
-<tab>Version of Kubernetes 1.22 and lower</tab>
 <tab>Version of Kubernetes 1.23 and higher</tab>
+<tab>Version of Kubernetes 1.22 and lower</tab>
 </tablist>
+<tabpanel>
+
+1. On the host in a separate terminal session, run the command:
+
+   ```bash
+   kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
+   ```
+
+   <warn>
+
+   Do not close this terminal session, or you will lose access to the Kubernetes Dashboard web interface.
+
+   </warn>
+
+1. Enter the password for your personal VK Cloud account, if it is not present in the kubeconfig configuration file.
+
+   `kauthproxy` will periodically ask for this password again.
+
+   The browser will open and you will be directed to the Kubernetes Dashboard web interface.
+
+</tabpanel>
 <tabpanel>
 
 1. Get the secret:
@@ -64,27 +85,6 @@ To connect to Kubernetes Dashboard, a browser must be installed on the host.
 1. Click the **Sign In** button.
 
    The Kubernetes Dashboard web interface will open.
-
-</tabpanel>
-<tabpanel>
-
-1. On the host in a separate terminal session, run the command:
-
-   ```bash
-   kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
-   ```
-
-   <warn>
-
-   Do not close this terminal session, or you will lose access to the Kubernetes Dashboard web interface.
-
-   </warn>
-
-1. Enter the password for your personal VK Cloud account, if it is not present in the kubeconfig configuration file.
-
-   `kauthproxy` will periodically ask for this password again.
-
-   The browser will open and you will be directed to the Kubernetes Dashboard web interface.
 
 </tabpanel>
 </tabs>
