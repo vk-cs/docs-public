@@ -4,7 +4,7 @@
 
 <warn>
 
-При создании кластера для него будет создан [сервисный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki). При выборе [аддона](../../../concepts/addons-and-settings/addons/) NGINX Ingress Controller для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+При создании кластера для него будет создан [сервисный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki). При выборе [аддона](../../../concepts/addons-and-settings/addons/) NGINX Ingress Controller для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
 Использование балансировщиков [тарифицируется](/ru/networks/vnet/tariffs).
 
@@ -74,7 +74,7 @@
 
 1. Добавьте в конфигурационный файл источники данных:
 
-   1. [Шаблон виртуальной машины](../../../concepts/flavors#dostupnye-shablony-konfiguracii) для master-узлов. Пример:
+   1. [Шаблон виртуальной машины](../../../concepts/flavors#shablony_konfiguracii) для master-узлов. Пример:
 
       ```hcl
       data "vkcs_compute_flavor" "k8s-master-flavor" {
@@ -202,7 +202,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
 - Для региона `Москва` укажите одну из двух зон доступности `availability_zone`: `MS1` или `GZ1`.
 
-- Рекомендуется при создании кластера назначить ему публичный IP-адрес, чтобы можно было получить доступ к кластеру из интернета (`floating_ip_enabled = true`). Для назначения такого IP-адреса необходимо, чтобы подсеть кластера с идентификатором `subnet_id` была [подключена](/ru/networks/vnet/concepts/ips-and-inet#organizaciya-dostupa-v-internet) к маршрутизатору c доступом к внешней сети.
+- Рекомендуется при создании кластера назначить ему публичный IP-адрес, чтобы можно было получить доступ к кластеру из интернета (`floating_ip_enabled = true`). Для назначения такого IP-адреса необходимо, чтобы подсеть кластера с идентификатором `subnet_id` была [подключена](/ru/networks/vnet/concepts/ips-and-inet#organizaciya_dostupa_v_internet) к маршрутизатору c доступом к внешней сети.
 
 - Если какие-то из аддонов не нужны, удалите соответствующие им строки из блока `labels`. Подробнее в разделе [Аддоны](../../../concepts/addons-and-settings/addons/).
 

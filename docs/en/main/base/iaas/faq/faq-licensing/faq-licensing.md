@@ -21,7 +21,7 @@ There are no discounts on licensing.
 
 ## Can I use my license?
 
-Yes, learn more about [using your own licenses](../../license/ms-lic#migration-previously-purchased-licenses-to-vk-cloud).
+Yes, learn more about [using your own licenses](../../license/ms-lic#migration_previously_purchased_licenses_to_vk_cloud).
 
 ## Can I buy a license on an indefinite basis?
 

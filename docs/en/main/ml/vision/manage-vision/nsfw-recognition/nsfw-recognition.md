@@ -30,7 +30,7 @@ Request parameters are passed in JSON format in the request body:
 
 <warn>
 
-The method is subject to [restrictions](../../vision-limits#image-processing).
+The method is subject to [restrictions](../../vision-limits#image_processing).
 
 </warn>
 

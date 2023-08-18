@@ -13,11 +13,11 @@
 
    Прочие параметры кластера выберите на свое усмотрение.
 
-1. [Убедитесь](../../operations/addons/manage-addons#prosmotr-addonov), что аддон NGINX Ingress (`ingress-nginx`) [установлен](../../operations/addons/advanced-installation/install-advanced-ingress/) в кластере с параметрами по умолчанию. Он потребуется для обеспечения доступа к демо-приложениям.
+1. [Убедитесь](../../operations/addons/manage-addons#prosmotr_addonov), что аддон NGINX Ingress (`ingress-nginx`) [установлен](../../operations/addons/advanced-installation/install-advanced-ingress/) в кластере с параметрами по умолчанию. Он потребуется для обеспечения доступа к демо-приложениям.
 
     <warn>
 
-    При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+    При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
     Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffs).
 
@@ -445,7 +445,7 @@
 
 Чтобы подключить постоянный том NFS с помощью статического PVC:
 
-1. [Создайте файловое хранилище](/ru/base/iaas/instructions/fs-manage#sozdanie-faylovogo-hranilishcha).
+1. [Создайте файловое хранилище](/ru/base/iaas/instructions/fs-manage#sozdanie_faylovogo_hranilishcha).
 
    При создании укажите:
 
@@ -455,7 +455,7 @@
    - **Cеть:** сеть и подсеть, в которых размещен кластер Kubernetes. Эту информацию можно узнать на странице кластера.
    - **Cеть файлового хранилища:** существующая сеть. Если подходящей сети нет в списке, выберите пункт `Создать новую сеть`.
 
-1. [Посмотрите информацию](/ru/base/iaas/instructions/fs-manage#prosmotr-informacii-o-faylovom-hranilishche) о созданном файловом хранилище.
+1. [Посмотрите информацию](/ru/base/iaas/instructions/fs-manage#prosmotr_informacii_o_faylovom_hranilishche) о созданном файловом хранилище.
 
    Сохраните значение параметра **Точка подключения**.
 
@@ -713,7 +713,7 @@
    kubectl apply -f ./cafe-ingress.yaml
    ```
 
-1. [Определите](../../operations/addons/advanced-installation/install-advanced-ingress#poluchenie-ip-adresa-balansirovshchika) публичный IP-адрес Ingress-контроллера.
+1. [Определите](../../operations/addons/advanced-installation/install-advanced-ingress#poluchenie_ip_adresa_balansirovshchika) публичный IP-адрес Ingress-контроллера.
 
 1. Проверьте доступность приложений с помощью `curl`, используя IP-адрес Ingress-контроллера.
 
@@ -840,5 +840,5 @@
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-   - [остановите](../../operations/manage-cluster#zapustit-ili-ostanovit-klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../operations/manage-cluster#udalit-klaster) его навсегда.
+   - [остановите](../../operations/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+   - [удалите](../../operations/manage-cluster#udalit_klaster) его навсегда.

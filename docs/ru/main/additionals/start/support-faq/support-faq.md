@@ -71,7 +71,7 @@
 
 На платформе VK Cloud можно подключить сервис приоритетной поддержки (Managed Services) от экспертов VK Cloud. Чтобы воспользоваться этим сервисом, [оставьте заявку](https://mcs.mail.ru/managed-services/).
 
-Также ознакомьтесь с [полным перечнем услуг Managed Services](/ru/additionals/start/support/support-info#individualnaya-podderzhka).
+Также ознакомьтесь с [полным перечнем услуг Managed Services](/ru/additionals/start/support/support-info#individualnaya_podderzhka).
 
 ## У вас есть партнерская программа?
 

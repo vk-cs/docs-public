@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. [Make sure](../../connect/kubectl#checking-the-connection-to-the-cluster) that you can connect to the cluster using `kubectl` from the host on which you plan to install the Helm client.
+1. [Make sure](../../connect/kubectl#checking_the_connection_to_the_cluster) that you can connect to the cluster using `kubectl` from the host on which you plan to install the Helm client.
 1. Install the Helm client on the host in any of the ways described in the [official Helm documentation](https://helm.sh/docs/intro/install/).
 
    Choose the most current version of Helm that is compatible with the cluster in which you plan to use the client. See the Helm and Kubernetes version compatibility table in [official Helm documentation](https://helm.sh/docs/topics/version_skew/#supported-version-skew).

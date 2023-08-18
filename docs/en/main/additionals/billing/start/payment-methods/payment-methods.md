@@ -1,4 +1,4 @@
-Payment for resources is made by crediting funds to the [main account](../balance#main-account) of the project.
+Payment for resources is made by crediting funds to the [main account](../balance#the_main_and_the_bonus_account) of the project.
 
 The ways to top up your balance depend on your legal status:
 

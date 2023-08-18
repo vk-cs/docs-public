@@ -1,7 +1,7 @@
 <warn>
 
 - [Scaling](../../concepts/architecture/) can only be performed when the cluster is running.
-- Before performing scaling from Terraform, read the information in [Using Terraform](../helpers/terraform-howto#features-of-using-terraform-to-manage-the-container-service).
+- Before performing scaling from Terraform, read the information in [Using Terraform](../helpers/terraform-howto#features_of_using_terraform_to_manage_the_container_service).
 
 </warn>
 
@@ -27,7 +27,7 @@
 
    Templates with high-performance CPUs are available upon request to support. To take advantage of these templates, select the "Show high performance CPUs only" option.
 
-   See [Available computing resources](../../concepts/flavors#configuration-templates) for details.
+   See [Available computing resources](../../concepts/flavors#configuration_templates) for details.
 
    </info>
 

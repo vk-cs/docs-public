@@ -261,7 +261,7 @@
    1. Определите, от имени какого пользователя будет выполняться подключение к кластеру. Затем:
 
       - [Добавьте](../../../../base/account/account/adduser) этому пользователю [необходимую роль](../../concepts/access-management).
-      - [Активируйте доступ по API](/ru/base/account/project/api/api-access#aktivaciya-dostupa-po-api) для этого пользователя.
+      - [Активируйте доступ по API](/ru/manage/tools-for-using-services/rest-api/enable-api#aktivaciya_dostupa_po_api) для этого пользователя.
 
 ## Подключение к кластеру
 

@@ -2,7 +2,7 @@
 
 ## Создание диска
 
-Создание HDD и SSD-дисков доступно по умолчанию во всех конфигурациях. Для создания дисков LL NVME [обратитесь в техподдержку](/ru/contacts) и запросите доступ к [высокопроизводительным конфигурациям](../../concepts/vm-concept#cpu-i-ram) и дискам. Подробнее о [типах дисков](../../concepts/vm-concept#diski) — в статье [Обзор сервиса VK Cloud Servers](../../concepts/vm-concept).
+Создание HDD и SSD-дисков доступно по умолчанию во всех конфигурациях. Для создания дисков LL NVME [обратитесь в техподдержку](/ru/contacts) и запросите доступ к [высокопроизводительным конфигурациям](../../concepts/vm-concept#cpu_i_ram) и дискам. Подробнее о [типах дисков](../../concepts/vm-concept#diski) — в статье [Обзор сервиса VK Cloud Servers](../../concepts/vm-concept).
 
 <tabs>
 <tablist>
@@ -51,7 +51,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 2. Выберите в [таблице](../../concepts/vm-concept#diski) тип диска, определите его название в API и зону доступности, подходящую для размещения.
 
@@ -126,13 +126,13 @@
 
 3. В открывшемся окне укажите **Размер диска**.
 4. Нажмите кнопку **Сохранить**.
-5. [Перезагрузите](../vm/vm-manage#zapusk--ostanovka--perezagruzka-vm) ВМ.
+5. [Перезагрузите](../vm/vm-manage#zapusk_ostanovka_perezagruzka_vm) ВМ.
 
 </tabpanel>
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 2. Выведите список дисков:
 
@@ -158,7 +158,7 @@
          cinder extend <ID диска> <Размер>
       ```
 
-6. [Перезагрузите](../vm/vm-manage#zapusk--ostanovka--perezagruzka-vm) ВМ.
+6. [Перезагрузите](../vm/vm-manage#zapusk_ostanovka_perezagruzka_vm) ВМ.
 
 </tabpanel>
 </tabs>
@@ -201,8 +201,8 @@
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
-1. [Определите](../../concepts/vm-concept#tipy-diskov):
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. [Определите](../../concepts/vm-concept#tipy_diskov_c23be93f):
 
    - нужный тип диска;
    - его название в API;
@@ -231,7 +231,7 @@
 
 ## Изменение типа диска
 
-Диски с типом HDD и SSD доступны по умолчанию во всех конфигурациях. Для использования дисков LL NVME [обратитесь в техподдержку](/ru/contacts) и запросите доступ к [высокопроизводительным конфигурациям](../../concepts/vm-concept#cpu-i-ram) и дискам. Подробнее о [типах дисков](../../concepts/vm-concept#diski) — в статье [Обзор сервиса VK Cloud Servers](../../concepts/vm-concept).
+Диски с типом HDD и SSD доступны по умолчанию во всех конфигурациях. Для использования дисков LL NVME [обратитесь в техподдержку](/ru/contacts) и запросите доступ к [высокопроизводительным конфигурациям](../../concepts/vm-concept#cpu_i_ram) и дискам. Подробнее о [типах дисков](../../concepts/vm-concept#diski) — в статье [Обзор сервиса VK Cloud Servers](../../concepts/vm-concept).
 
 <tabs>
 
@@ -278,7 +278,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 2. Выберите в [таблице](../../concepts/vm-concept#diski) новый тип диска и определите его название в API.
 
@@ -348,7 +348,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 2. Выполните нужную команду.
 
@@ -407,7 +407,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 2. Выведите список дисков и скопируйте ID диска:
 
@@ -483,7 +483,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 2. Выведите список дисков и скопируйте ID диска:
 
@@ -514,7 +514,7 @@
 
 ## Замена основного (root) диска
 
-Перед заменой основного диска [остановите ВМ](../vm/vm-manage#zapusk--ostanovka--perezagruzka-vm).
+Перед заменой основного диска [остановите ВМ](../vm/vm-manage#zapusk_ostanovka_perezagruzka_vm).
 
 <tabs>
 
@@ -563,7 +563,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 2. Получите [токен доступа](/additionals/cases/case-keystone-token).
 3. Просмотрите список виртуальных машин и скопируйте ID виртуальной машины, основной диск которой нужно заменить:
@@ -610,7 +610,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 2. Авторизуйтесь в проекте, из которого нужно переместить диск.
 3. [Отключите от ВМ](#otklyuchenie-diska-ot-vm) диск, который нужно переместить.
@@ -719,7 +719,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 2. Выведите список дисков с помощью команды `openstack volume list` и проверьте его статус: если диск подключен к ВМ (`Status`: `in-use`), [отключите его](#otklyuchenie-diska-ot-vm).
 
@@ -784,7 +784,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 2. Выведите список дисков:
 
@@ -861,7 +861,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 2. Выполните нужную команду.
 

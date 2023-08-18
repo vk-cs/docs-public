@@ -13,11 +13,11 @@ Persistent volumes can be connected to simple demo applications in various ways.
 
    Other cluster parameters are at your discretion.
 
-1. [Make sure](../../operations/addons/manage-addons#viewing-addons) that the NGINX Ingress addon (`ingress-nginx`) [is installed](../../operations/addons/advanced-installation/install-advanced-ingress/) in a cluster with default parameters. It will be required to provide access to demo applications.
+1. [Make sure](../../operations/addons/manage-addons#viewing_addons) that the NGINX Ingress addon (`ingress-nginx`) [is installed](../../operations/addons/advanced-installation/install-advanced-ingress/) in a cluster with default parameters. It will be required to provide access to demo applications.
 
     <warn>
 
-    When installing the addon, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created.
+    When installing the addon, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created.
 
     Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
@@ -455,7 +455,7 @@ To connect an NFS persistent volume using a static PVC:
    - **Network:** network and subnet where the Kubernetes cluster is located. This information can be found on the cluster page.
    - **File storage network:** existing network. If a suitable network is not on the list, select `Create new network`.
 
-1. [View information](../../../iaas/fs/manage-fs#view-information) about the created file storage.
+1. [View information](../../../iaas/fs/manage-fs#viewing_information_about_file_storage) about the created file storage.
 
    Save the value of the **Connection point** parameter.
 
@@ -713,7 +713,7 @@ To connect an NFS persistent volume using a static PVC:
    kubectl apply -f ./cafe-ingress.yaml
    ```
 
-1. [Define](../../operations/addons/advanced-installation/install-advanced-ingress#-getting-the-ip-address-of-the-load-balancer) the public IP address of the Ingress controller.
+1. [Define](../../operations/addons/advanced-installation/install-advanced-ingress#getting_the_ip_address_of_the_load_balancer) the public IP address of the Ingress controller.
 
 1. Check the availability of the applications with `curl` using the IP address of the Ingress controller.
 
@@ -840,5 +840,5 @@ To connect an NFS persistent volume using a static PVC:
 
 1. A running cluster consumes computing resources. If you no longer need it:
 
-   - [stop](../../operations/manage-cluster#start-or-stop-the-cluster) it to use it later;
-   - [delete](../../operations/manage-cluster#delete-cluster) it permanently.
+   - [stop](../../operations/manage-cluster#start_or_stop_the_cluster) it to use it later;
+   - [delete](../../operations/manage-cluster#delete_cluster) it permanently.

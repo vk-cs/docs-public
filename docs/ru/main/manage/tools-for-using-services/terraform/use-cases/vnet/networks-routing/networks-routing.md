@@ -19,7 +19,7 @@
 
    Если вы хотите увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 1. [Установите Terraform и настройте провайдер](../../../quick-start), если этого еще не сделано.
 
@@ -94,7 +94,7 @@
    </tabpanel>
    <tabpanel>
 
-   Из документа, посвященного [зонам доступности](/ru/additionals/start/it-security/platform-security#zony-dostupnosti).
+   Из документа, посвященного [зонам доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti).
 
    </tabpanel>
    </tabs>
@@ -417,7 +417,7 @@ output "common-instance-private-ip" {
 
 ## 5. Проверьте работоспособность примера
 
-1. [Подключитесь по SSH](/ru/base/iaas/vm-start/vm-connect/vm-connect-nix#) к виртуальной машине `common-instance-public`.
+1. [Подключитесь по SSH](/ru/base/iaas/vm-start/vm-connect/vm-connect-nix) к виртуальной машине `common-instance-public`.
 
    Для подключения используйте:
 

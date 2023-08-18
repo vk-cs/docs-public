@@ -10,7 +10,7 @@ Packer allows you to create virtual machine images with the necessary parameters
 
    </info>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 1. [Load the image](http://ftp.altlinux.org/pub/distributions/ALTLinux/p9/images/cloud/x86_64/) OS Alt Linux P9 to your computer (file `alt-p9-cloud-x86_64.qcow2`).
 
 ## 1. Convert image to RAW format
@@ -50,13 +50,13 @@ Use the utility `qemu-img`:
 
 ## 2. Upload the base image to the cloud
 
-Import the image according to [instructions](../../instructions/vm-images/vm-images-manage#importing-an-image).
+Import the image according to [instructions](../../instructions/vm-images/vm-images-manage#importing_an_image).
 
 ## 3. Create a Packer configuration file
 
 1. Determine the details of the network and the downloaded image:
 
-    1. [Get](/en/networks/vnet/operations/manage-net#viewing-the-list-of-networks-and-subnets-and-information-about-them) id of the external network to which the virtual machine being created will be connected.
+    1. [Get](/en/networks/vnet/operations/manage-net#viewing_the_list_of_networks_and_subnets_and_information_about_them) id of the external network to which the virtual machine being created will be connected.
     1. Copy the name of the downloaded image, getting a list of images using the command `openstack image list`.
     1. Write the received values into variables:
 
@@ -225,4 +225,4 @@ Import the image according to [instructions](../../instructions/vm-images/vm-ima
 
 ## Monitor resource usage
 
-If you no longer need the image, [delete it](../../instructions/vm-images/vm-images-manage#deleting-an-image).
+If you no longer need the image, [delete it](../../instructions/vm-images/vm-images-manage#deleting_an_image).

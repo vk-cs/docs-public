@@ -1,6 +1,6 @@
 ## Where are the servers located?
 
-The servers are located in [several VK Cloud data centers](../../concepts/vm-concept#availability-zone) both on the territory and outside the Russian Federation.
+The servers are located in [several VK Cloud data centers](../../concepts/vm-concept#availability_zone) both on the territory and outside the Russian Federation.
 
 ## What is the guaranteed connection speed?
 
@@ -8,7 +8,7 @@ VK Cloud provides virtual machines with an incoming and outgoing Internet connec
 
 ## How do I set a new password for a VM?
 
-Use the [instructions](../../instructions/vm/vm-manage#setting-and-changing-a-password).
+Use the [instructions](../../instructions/vm/vm-manage#setting_and_changing_a_password).
 
 ## When I change my VM password, I get an error in my personal account
 
@@ -54,7 +54,7 @@ In the virtualization system, CPU resources are used for graphics processing, wh
 
 ## How do I recover my private key?
 
-If you lose the private key that was used to access the VM over SSH, you need to create a new key pair and add the public key to the VM manually. For more information, see the article [VM Management](../../instructions/vm/vm-manage#restoring-vm-access-by-key).
+If you lose the private key that was used to access the VM over SSH, you need to create a new key pair and add the public key to the VM manually. For more information, see the article [VM Management](../../instructions/vm/vm-manage#restoring_vm_access_by_key).
 
 ## Openstack CLI does not connect
 
@@ -62,7 +62,7 @@ You can connect to the Openstack CLI using the configuration file. Information a
 
 ## How do I go to the virtual server console?
 
-The VNC console is available on the virtual machine page in the section **Cloud Computing → Virtual Machines**. For more information, see the article [VM diagnostics](../../instructions/vm/vm-console#the-vnc-console).
+The VNC console is available on the virtual machine page in the section **Cloud Computing → Virtual Machines**. For more information, see the article [VM diagnostics](../../instructions/vm/vm-console#the_vnc_console).
 
 ## The instance console is not displayed in the VK Cloud panel
 
@@ -76,7 +76,7 @@ The usual keyboard shortcuts, audio transmission and clipboard are not available
 
 ## Is it possible to increase CPU or RAM?
 
-Yes. If the machine has already been created, [change its type](../../instructions/vm/vm-manage#renaming-and-changing-the-vm-type).
+Yes. If the machine has already been created, [change its type](../../instructions/vm/vm-manage#renaming_and_changing_the_vm_type).
 
 ## How to track VM performance?
 

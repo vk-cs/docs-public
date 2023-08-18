@@ -1,13 +1,13 @@
-These settings are set when [creating a cluster](../../create-cluster) or when [adding a worker node group](../../manage-node-group#add-worker-node-group) to an existing cluster:
+These settings are set when [creating a cluster](../../create-cluster) or when [adding a worker node group](../../manage-node-group#add_worker_node_group) to an existing cluster:
 
 - **Name groups:** must start with a letter. Can only consist of lowercase Latin letters, numbers, and hyphens `-` as a separator.
 - Worker node settings:
 
-  - **Node type:** [virtual machine template](../../../concepts/flavors#configuration-templates) for worker-nodes.
+  - **Node type:** [virtual machine template](../../../concepts/flavors#configuration_templates) for worker-nodes.
 
     Templates with high-performance CPUs are available upon request to support. To take advantage of these templates, select the "Show high performance CPUs only" option.
 
-    See [Available computing resources](../../../concepts/flavors#configuration-templates) for details.
+    See [Available computing resources](../../../concepts/flavors#configuration_templates) for details.
 
   - **Availability zone:** [availability zone](../../../../account/concepts/regions) for nodes.
 
@@ -15,7 +15,7 @@ These settings are set when [creating a cluster](../../create-cluster) or when [
 
   - Storage settings:
 
-    - **Disk type:** [storage type](../../../concepts/storage#supported-vk-cloud-storage-types) to be used by nodes.
+    - **Disk type:** [storage type](../../../concepts/storage#supported_vk_cloud_storage_types) to be used by nodes.
 
       <warn>
 
@@ -27,7 +27,7 @@ These settings are set when [creating a cluster](../../create-cluster) or when [
 
   - **Number of nodes:** at least one node. One node does not provide high availability on the level of an individual group of nodes, two nodes or more do.
 
-  - **Enable autoscaling:** enable this option to allow [auto-scaling](../../../concepts/architecture/#vozmozhnosti-masshtabirovaniya-klastera) the number of nodes in the group. Then set the minimum and maximum number of nodes. Within these limits the scaling will be performed.
+  - **Enable autoscaling:** enable this option to allow [auto-scaling](../../../concepts/architecture/#cluster_scaling_options) the number of nodes in the group. Then set the minimum and maximum number of nodes. Within these limits the scaling will be performed.
 
   - **Percentage of unavailable nodes when updating the cluster version:** the percentage number of nodes that can be taken out of the node group when [cluster update procedure](../../update/) is performed.
 

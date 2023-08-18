@@ -18,7 +18,7 @@ The role model of the project participants is described in the article [Personal
 
 ## How do I add an additional participant to the project?
 
-The procedure is described in the article [Access management](../instructions/project-settings/access-manage#inviting-a-new-participant-to-the-project). When adding, specify the role, focusing on the [role matrix](../concepts/rolesandpermissions/).
+The procedure is described in the article [Access management](../instructions/project-settings/access-manage#inviting_a_new_member_to_the_project). When adding, specify the role, focusing on the [role matrix](../concepts/rolesandpermissions/).
 
 ## How do I recover my account password?
 
@@ -42,7 +42,7 @@ The number will be changed after successful confirmation of the user's identity.
 
 ## How do I change the owner of the VK Cloud account?
 
-Use the instructions from the article [Project management](../instructions/project-settings/manage#change-of-the-project-owner).
+Use the instructions from the article [Project management](../instructions/project-settings/manage#change_of_the_project_owner).
 
 ## Can a GeekBrains program participants request an increase in quotas on VK Cloud?
 
