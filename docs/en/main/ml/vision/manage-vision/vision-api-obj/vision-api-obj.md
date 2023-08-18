@@ -30,7 +30,8 @@ Possible values ​​for `mode`:
 
 | Parameter | Type |
 | ----------- | ---------------------------------- |
-| object | Search objects in the image |
+| object  | Search objects in the image |
+| object2 | Search for objects in the image (v2 model version — recognizes objects belonging to more classes) |
 | scene | Search on scene image |
 | car_number | Search on the image for car numbers |
 | multiobject | Search the image for multi-objects — objects and the entire set of boxes of all found objects |

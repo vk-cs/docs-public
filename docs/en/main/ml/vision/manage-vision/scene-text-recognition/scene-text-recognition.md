@@ -33,7 +33,8 @@ The remaining parameters are passed to `name="meta"`:
 
 | Parameter      | Type   | Required | Description                                               |
 | -------------- | ------ | ---------| --------------------------------------------------------- |
-| images        | `[]image_meta`  | Yes      | Metadata of transmitted images                            |
+| images        | `[]image_meta`  | Yes      | Metadata of transmitted images                    |
+| lang          | string          | No       | The expected language of the text in the photo: `rus` — Russian, `eng` — English. When specifying a parameter, the recognition accuracy increases |
 
 Parameters of `image_meta`:
 
@@ -51,14 +52,15 @@ The method is subject to [restrictions](../../vision-limits#image_processing).
 
 ```curl
 curl -X 'POST' \
-curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<token>&oauth_provider=mcs" \
+curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<ваш токен>&oauth_provider=mcs" \
  -H "Accept: application/json" \
  -H "Content-Type: multipart/form-data" \
  -F "file=@image3.jpg" \
  -F "meta={
   "images": [
     {
-      "name": "file"
+      "name": "file",
+      "lang": "eng"
     }
   ]
 }"
@@ -92,7 +94,7 @@ Parameters of `words`:
 | Parameter     | Type     | Required | Description                                                 |
 | ------------- | -------- |--------- | ----------------------------------------------------------- |
 | prob          | float    | Yes      | String Recognition Confidence                                |
-| coord         | [][]float| Yes      | Coordinates of the word — [[x1, y1], [x2, y2], [x3, y3], [x4, y4]] |
+| coord         | [][]int64| Yes      | Coordinates of the word — [[x1, y1], [x2, y2], [x3, y3], [x4, y4]] |
 | text          | string   | Yes      | Recognized response word                                     |
 
 ## Response example

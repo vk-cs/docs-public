@@ -98,7 +98,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Операция выполнена успешно",
             "content": {
               "application/json": {
                 "schema": {
@@ -145,7 +145,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Операция выполнена успешно",
             "content": {
               "application/json": {
                 "schema": {
@@ -192,7 +192,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Операция выполнена успешно",
             "content": {
               "application/json": {
                 "schema": {
@@ -239,7 +239,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Операция выполнена успешно",
             "content": {
               "application/json": {
                 "schema": {
@@ -286,7 +286,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Операция выполнена успешно",
             "content": {
               "application/json": {
                 "schema": {
@@ -333,7 +333,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Операция выполнена успешно",
             "content": {
               "application/json": {
                 "schema": {
@@ -380,7 +380,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Операция выполнена успешно",
             "content": {
               "application/json": {
                 "schema": {
@@ -427,7 +427,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Операция выполнена успешно",
             "content": {
               "application/json": {
                 "schema": {
@@ -451,7 +451,7 @@
         "tags": [
           "text"
         ],
-        "summary": "Распознать текст на фотографии",
+        "summary": "Распознать текст на фотографиях",
         "description": "Позволяет распознавать текст на фотографии, которая получена на улице. См.: https://en.wikipedia.org/wiki/Scene_text",
         "operationId": "sceneTextRecognize",
         "parameters": [
@@ -474,7 +474,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Операция выполнена успешно",
             "content": {
               "application/json": {
                 "schema": {
@@ -521,7 +521,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Операция выполнена успешно",
             "content": {
               "application/json": {
                 "schema": {
@@ -568,7 +568,7 @@
         },
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Операция выполнена успешно",
             "content": {
               "application/json": {
                 "schema": {
@@ -596,7 +596,7 @@
         "schema": {
           "type": "string"
         },
-        "description": "OAuth2 access token",
+        "description": "Токен доступа OAuth2",
         "required": true
       },
       "oauth_provider": {
@@ -703,7 +703,7 @@
               200
             ],
             "example": 200,
-            "description": "Код ошибки: 200 — успешно."
+            "description": "Операция выполнена успешно"
           },
           "body": {
             "type": "object",
@@ -1121,18 +1121,20 @@
               "mode": {
                 "type": "array",
                 "minLength": 1,
-                "description": "Типы объектов, которые требуется искать на переданных изображениях (\"object\" — искать на изображении объекты, \"scene\" - искать на изображении сцены, \"car_number\" — искать на изображении номера машин, \"multiobject\" — искать на изображении мультиобъекты (объекты и все множество боксов всех найденных объектов), \"pedestrian\" — искать на изображении людей (более точно определяет множество боксов всех людей на изображении), \"selfie\" — проверить, есть ли на изображении селфи). Может содержать один или несколько режимов",
+                "description": "Типы запрашиваемых объектов для поиска на изображении: \"object\" — объекты (версия модели v1), \"object2\" — объекты (версия модели v2 — распознает объекты, принадлежащие большему количеству классов), \"scene\" — сцены, \"car_number\" — номера машин, \"multiobject\" — мультиобъекты (объекты и все множество боксов всех найденных объектов), \"pedestrian\" — людей, \"selfie\" — селфи. Допустимо указание нескольких режимов",
                 "items": {
                   "type": "string",
                   "enum": [
                     "object",
+                    "object2",
                     "scene",
                     "car_number",
                     "multiobject",
                     "pedestrian",
                     "selfie"
                   ]
-                }
+                },
+                "example": "object2"
               },
               "images": {
                 "type": "array",
@@ -1860,6 +1862,15 @@
           }
         ]
       },
+      "lang_property": {
+        "type": "string",
+        "description": "Ожидаемый язык текста на фото. При указании параметра повышается точность распознавания",
+        "enum": [
+          "rus",
+          "eng"
+        ],
+        "example": "rus"
+      },
       "images_property": {
         "type": "array",
         "description": "Метаданные передаваемых изображений",
@@ -1877,6 +1888,9 @@
             "type": "object",
             "description": "Параметры запроса",
             "properties": {
+              "lang": {
+                "$ref": "#/components/schemas/lang_property"
+              },
               "images": {
                 "$ref": "#/components/schemas/images_property"
               }
@@ -1907,31 +1921,14 @@
               "type": "array",
               "items": {
                 "type": "number",
-                "format": "float",
+                "format": "int64",
                 "minItems": 2,
                 "maxItems": 2
               },
               "minItems": 4,
               "maxItems": 4
             },
-            "example": [
-              [
-                0,
-                0
-              ],
-              [
-                0,
-                0.5
-              ],
-              [
-                0.5,
-                0.5
-              ],
-              [
-                0.5,
-                0
-              ]
-            ]
+            "example": [[0, 0], [0, 5], [5, 5], [5, 0]]
           },
           "text": {
             "type": "string",
@@ -2136,6 +2133,7 @@
           },
           "meta": {
             "type": "object",
+            "description": "Параметры запроса",
             "properties": {
               "images": {
                 "type": "array",

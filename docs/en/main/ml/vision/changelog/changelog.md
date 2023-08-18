@@ -1,3 +1,10 @@
+## 03.08.23
+
+- Added automatic text language detection for the `scene_text/recognize` method. Manual indication of the text language is available when adding the `lang` parameter to the request.
+- Expanded the selection list of object detection models for the `objects/detect` method. The `object2` option for the `mode` parameter has been added to the API.
+
+For more details, see [API specifications](/ru/additionals/api/vision-api "change-lang").
+
 ## 15.06.23
 
 Added handwriting recognition support for the `scene_text/recognize` method.

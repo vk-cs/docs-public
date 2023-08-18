@@ -360,8 +360,7 @@ curl -X 'POST' \
 | status | enum | Execution result |
 | error | string | Text description of the error (optional) |
 | name | string | File name to match files in request and response |
-| labels | [] label | List of objects (marks) found on the image |
-| count_by_density | int | The number of people in the frame, calculated using the density map (only for mode="pedestrian") |
+| persons | []person | List of persons found in the photo |
 
 `status` parameters:
 
