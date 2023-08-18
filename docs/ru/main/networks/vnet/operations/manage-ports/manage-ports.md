@@ -2,7 +2,7 @@
 
 <warn>
 
-- В [общих сетях](../../concepts/net-types#obshchaya-set) из зависимого проекта портами можно управлять только через OpenStack CLI. Для проекта-владельца таких ограничений нет.
+- В [общих сетях](../../concepts/net-types#obshchaya_set) из зависимого проекта портами можно управлять только через OpenStack CLI. Для проекта-владельца таких ограничений нет.
 - Все перечисленные ниже операции недоступны в сети `ext-net`.
 - Нельзя управлять портами устройства `SNAT`.
 
@@ -32,7 +32,7 @@
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 1. Чтобы посмотреть список всех портов, выполните команду:
 
@@ -103,7 +103,7 @@ openstack port show --help
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 1. Выполните команду:
 
@@ -154,7 +154,7 @@ openstack port create --help
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 1. [Получите имя или идентификатор](#prosmotr-spiska-portov-i-informacii-o-nih) нужного порта.
 
@@ -207,7 +207,7 @@ openstack port set --help
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 1. [Получите имя или идентификатор](#prosmotr-spiska-portov-i-informacii-o-nih) нужного порта.
 
@@ -252,7 +252,7 @@ openstack port set --help
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 1. [Получите имя или идентификатор](#prosmotr-spiska-portov-i-informacii-o-nih) нужного порта.
 
@@ -295,7 +295,7 @@ openstack port set --help
 </tablist>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 1. [Получите имя или идентификатор](#prosmotr-spiska-portov-i-informacii-o-nih) нужного порта.
 
@@ -366,7 +366,7 @@ openstack subnet unset --help
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 1. [Получите имя или идентификатор](#prosmotr-spiska-portov-i-informacii-o-nih) нужного порта.
 

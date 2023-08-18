@@ -50,7 +50,7 @@ HOST: `https://smarty.mail.ru`
 
 <warn>
 
-Для метода действуют [ограничения](../../vision-limits#obrabotka-izobrazenii).
+Для метода действуют [ограничения](../../vision-limits#obrabotka_izobrazheniy).
 
 </warn>
 
@@ -313,7 +313,7 @@ curl -X 'POST' \
 
 <warn>
 
-Для метода действуют [ограничения](../../vision-limits#obrabotka-izobrazenii).
+Для метода действуют [ограничения](../../vision-limits#obrabotka_izobrazheniy).
 
 </warn>
 
@@ -707,7 +707,7 @@ curl -X 'POST' \
 
 <warn>
 
-Для метода действуют [ограничения](../../vision-limits#obrabotka-izobrazenii).
+Для метода действуют [ограничения](../../vision-limits#obrabotka_izobrazheniy).
 
 </warn>
 

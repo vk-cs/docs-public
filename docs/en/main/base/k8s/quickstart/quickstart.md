@@ -83,7 +83,7 @@ Wait for the cluster to complete, this process may take a while.
 
 <warn>
 
-When installing the Docker Registry and Ingress NGINX addons, [standard load balancers](/en/main/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created for them.
+When installing the Docker Registry and Ingress NGINX addons, [standard load balancers](/en/main/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created for them.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
@@ -790,8 +790,8 @@ This result demonstrates that:
 
 A running cluster consumes computing resources. If you no longer need it:
 
-- [stop](../operations/manage-cluster#start-or-stop-the-cluster) it to use it later;
-- [delete](../operations/manage-cluster#delete-cluster) it permanently.
+- [stop](../operations/manage-cluster#start_or_stop_the_cluster) it to use it later;
+- [delete](../operations/manage-cluster#delete_cluster) it permanently.
 
 ## What's next?
 

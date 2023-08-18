@@ -8,7 +8,7 @@ Next, a VPN tunnel will be built to another network of the VK Cloud platform, an
 
 ## 1. Preparatory steps
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
 1. Create networks.
 
@@ -323,8 +323,8 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
 If you no longer need the created resources, delete them:
 
 1. [Delete](/ru/base/iaas/vm-start/manage-vm/vm-delete) virtual machines.
-1. [Delete](../../operations/manage-vpn#udalenie-vpn-tunnelya) VPN tunnel.
-1. [Delete](../../operations/manage-router#upravlenie-staticheskimi-marshrutami) static routes defined on the side of the client network.
+1. [Delete](../../operations/manage-vpn#removing_a_vpn_tunnel) VPN tunnel.
+1. [Delete](../../operations/manage-router#managing_static_routes) static routes defined on the side of the client network.
 
    <info>
 
@@ -332,6 +332,6 @@ If you no longer need the created resources, delete them:
 
    </info>
 
-1. [Delete](../../operations/manage-router#udalenie-marshrutizatora) client and cloud network routers.
-1. Delete the client and cloud [subnets](../../operations/manage-net#udalenie-podseti) and [networks](../../operations/manage-net#udalenie-seti).
-1. [Delete](../../operations/manage-floating-ip#udalenie-plavayushchego-ip-adresa-iz-proekta) floating IP addresses.
+1. [Delete](../../operations/manage-router#removing_the_router) client and cloud network routers.
+1. Delete the client and cloud [subnets](../../operations/manage-net#deleting_a_subnet) and [networks](../../operations/manage-net#deleting_a_network).
+1. [Delete](../../operations/manage-floating-ip#removing_floating_ip_address_from_the_project) floating IP addresses.

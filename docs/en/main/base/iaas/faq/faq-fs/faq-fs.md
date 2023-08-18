@@ -16,7 +16,7 @@ No, such functionality is not provided.
 
 Yes, there is such a possibility. In this case, the storage will be restored to a separate VM, this will require additional quotas.
 
-Learn more about creating snapshots in the article [File Storage management](../../instructions/fs-manage#creating-a-snapshot).
+Learn more about creating snapshots in the article [File Storage management](../../instructions/fs-manage#creating_a_snapshot).
 
 ## Is it possible to create snapshots of the file storage on a schedule?
 
@@ -46,4 +46,4 @@ Repositories are created independently of availability zones.
 
 ## Is it possible to configure simultaneous access from different VMs to the file storage?
 
-Yes, you can, for more information, see the article [File Storage management](../../instructions/fs-manage#connecting-file-storage).
+Yes, you can, for more information, see the article [File Storage management](../../instructions/fs-manage#connecting_file_storage).

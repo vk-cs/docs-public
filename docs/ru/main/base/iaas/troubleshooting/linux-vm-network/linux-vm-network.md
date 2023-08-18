@@ -17,16 +17,16 @@
 1. Выполните принудительную перезагрузку.
 
    Эта операция может помочь, если виртуальная машина не отвечает или ее сетевой интерфейс инициализируется некорректно:
-   1. [Остановите](../../instructions/vm/vm-manage#zapusk--ostanovka--perezagruzka-vm) виртуальную машину.
-   1. Для остановленной виртуальной машины [выполните](../../instructions/vm/vm-manage#prinuditelnyy-perezapusk-vm) принудительный перезапуск.
+   1. [Остановите](../../instructions/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm) виртуальную машину.
+   1. Для остановленной виртуальной машины [выполните](../../instructions/vm/vm-manage#prinuditelnyy_perezapusk_vm) принудительный перезапуск.
 
    Если это не решило проблему, выполните остальные шаги и перейдите к диагностике.
 
-1. [Убедитесь](../../instructions/vm/vm-manage#zapusk--ostanovka--perezagruzka-vm), что виртуальная машина запущена.
+1. [Убедитесь](../../instructions/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm), что виртуальная машина запущена.
 
-1. [Убедитесь](../../instructions/vm/vm-console#vnc-konsol), что вы можете получить доступ к VNC-консоли виртуальной машины и авторизоваться в ней по [преднастроенному логину](../../instructions/vm/vm-connect/vm-connect-nix#2--vyberite-imya-polzovatelya).
+1. [Убедитесь](../../instructions/vm/vm-console#vnc_konsol), что вы можете получить доступ к VNC-консоли виртуальной машины и авторизоваться в ней по [преднастроенному логину](../../instructions/vm/vm-connect/vm-connect-nix#2_vyberite_imya_polzovatelya).
 
-   Если это необходимо, [восстановите пароль](../../instructions/vm/vm-manage#vosstanovlenie-parolya) для логина.
+   Если это необходимо, [восстановите пароль](../../instructions/vm/vm-manage#vosstanovlenie_parolya) для логина.
 
 1. Получите информацию о конфигурации сетевого интерфейса виртуальной машины:
 

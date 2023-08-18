@@ -101,7 +101,7 @@ To confirm your account and activate the services:
 
         </info>
 
-    1. (Optional) On the **Autopayment** tab that opens, configure the [autopayment](../../../billing/operations/add-card#auto-completion) settings.
+    1. (Optional) On the **Autopayment** tab that opens, configure the [autopayment](../../../billing/operations/add-card#auto_completion) settings.
     1. Click **Get started with VK Cloud**.
 
     </tabpanel>
@@ -126,7 +126,7 @@ To confirm your account and activate the services:
 
         </info>
 
-    1. (Optional) On the **Autopayment** tab that opens, configure the [autopayment](../../../billing/operations/add-card#auto-completion) settings.
+    1. (Optional) On the **Autopayment** tab that opens, configure the [autopayment](../../../billing/operations/add-card#auto_completion) settings.
     1. Click **Get started with VK Cloud**.
 
     </tabpanel>

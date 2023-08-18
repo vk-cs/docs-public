@@ -14,7 +14,7 @@
 
 Для использования VPN с кластером Hadoop необходимо сделать следующее:
 
-1. Создать в рамках проекта [новую внутреннюю сеть](/ru/networks/vnet/operations/manage-net#sozdanie-seti) и [маршрутизатор](/ru/networks/vnet/operations/manage-router#dobavlenie-marshrutizatora).
+1. Создать в рамках проекта [новую внутреннюю сеть](/ru/networks/vnet/operations/manage-net#sozdanie_seti) и [маршрутизатор](/ru/networks/vnet/operations/manage-router#dobavlenie_marshrutizatora).
 2. [Запустить кластер Hadoop](../../bigdata-start/create-bigdata/), используя созданную сеть в качестве внутренней сети кластера.
 3. [Настроить VPN-подключение](/ru/networks/vnet/use-cases/vpn-tunnel) к сервисам VK Cloud.
 

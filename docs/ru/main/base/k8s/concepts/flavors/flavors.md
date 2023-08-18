@@ -24,8 +24,8 @@
 
   Чтобы воспользоваться такими шаблонами, при создании кластера или группы узлов выберите опцию «Показывать только высокопроизводительные CPU». Опцию можно выбрать:
   - [при создании кластера](../../operations/create-cluster);
-  - [при добавлении группы worker-узлов](../../operations/manage-node-group#dobavit-gruppu-worker-uzlov);
-  - [при изменении типа виртуальной машины для master-узлов](../../operations/manage-cluster#izmenit-tip-virtualnoy-mashiny-dlya-master-uzlov).
+  - [при добавлении группы worker-узлов](../../operations/manage-node-group#dobavit_gruppu_worker_uzlov);
+  - [при изменении типа виртуальной машины для master-узлов](../../operations/manage-cluster#izmenit_tip_virtualnoy_mashiny_dlya_master_uzlov).
 
 - Индивидуальные шаблоны конфигурации **Custom** под особые потребности.
 

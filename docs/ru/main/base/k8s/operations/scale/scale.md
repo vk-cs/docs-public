@@ -1,7 +1,7 @@
 <warn>
 
 - [Масштабирование](../../concepts/architecture/) можно выполнить только когда кластер запущен.
-- Перед выполнением масштабирования из Terraform ознакомьтесь с информацией в разделе [Использование Terraform](../helpers/terraform-howto#osobennosti-ispolzovaniya-terraform-dlya-upravleniya-servisom-konteynerov).
+- Перед выполнением масштабирования из Terraform ознакомьтесь с информацией в разделе [Использование Terraform](../helpers/terraform-howto#osobennosti_ispolzovaniya_terraform_dlya_upravleniya_servisom_konteynerov).
 
 </warn>
 
@@ -20,13 +20,13 @@
 1. Выберите проект, где находится нужный кластер.
 1. Перейдите в раздел **Контейнеры** → **Кластеры Kubernetes**.
 1. Раскройте меню нужного кластера и выберите пункт **Изменить тип виртуальной машины Master**.
-1. Выберите нужный [шаблон виртуальной машины](../../concepts/flavors#shablony-konfiguracii) из выпадающего списка.
+1. Выберите нужный [шаблон виртуальной машины](../../concepts/flavors#shablony_konfiguracii) из выпадающего списка.
 
    <info>
 
    Шаблоны с высокопроизводительными CPU доступны по запросу в службу поддержки. Чтобы воспользоваться этими шаблонами, выберите опцию «Показывать только высокопроизводительные CPU».
 
-   Подробнее в разделе [Доступные вычислительные ресурсы](../../concepts/flavors#shablony-konfiguracii).
+   Подробнее в разделе [Доступные вычислительные ресурсы](../../concepts/flavors#shablony_konfiguracii).
 
    </info>
 

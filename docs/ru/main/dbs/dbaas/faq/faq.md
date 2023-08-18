@@ -77,8 +77,8 @@
 
 При использовании кластера баз данных при недоступности мастера переключение на другие узлы будет настроено автоматически. При использовании [конфигурации](../instructions/work-modes/work-configs/) **Master-Replica** переключение потребуется делать вручную:
 
-- [MySQL](../instructions/manage-instance/mysql#pereklyuchenie-mastera);
-- [PostgreSQL, Postgres Pro](../instructions/manage-instance/postgresql#pereklyuchenie-mastera).
+- [MySQL](../instructions/manage-instance/mysql#pereklyuchenie_mastera);
+- [PostgreSQL, Postgres Pro](../instructions/manage-instance/postgresql#pereklyuchenie_mastera).
 
 ## Какой максимальный объем данных можно хранить в СУБД?
 

@@ -71,13 +71,13 @@ A change of ownership is possible in any state of the project balance.
 
 <info>
 
-The new owner may need to [link a payment card](../../activation#linking-a-bank-card), if the project does not have a linked card, and [confirm phone number](../../activation).
+The new owner may need to [link a payment card](../../activation#linking_a_bank_card), if the project does not have a linked card, and [confirm phone number](../../activation).
 
 </info>
 
 ## Project conservation
 
-If you want to suspend work on a project, mothball the project to stop debiting funds. If the project goes into negative territory, it will be [frozen](../../../concepts/projects#automatic-freezing-of-the-project) with subsequent deletion of objects and data.
+If you want to suspend work on a project, mothball the project to stop debiting funds. If the project goes into negative territory, it will be [frozen](../../../concepts/projects#automatic_freezing_of_the_project) with subsequent deletion of objects and data.
 
 To preserve the project:
 
@@ -89,13 +89,13 @@ To preserve the project:
 1. Stop all the VMs that you want to save data from.
 1. Transfer or copy all the necessary data.
 
-    For example, [create](/en/base/iaas/instructions/vm-images/vm-images-manage#creating-an-image) and [export](/en/base/iaas/instructions/vm-images/vm-images-manage#exporting-an-image) disk images of the virtual machines stopped in the previous step.
+    For example, [create](/en/base/iaas/instructions/vm-images/vm-images-manage#creating_an_image) and [export](/en/base/iaas/instructions/vm-images/vm-images-manage#exporting_an_image) disk images of the virtual machines stopped in the previous step.
 
 1. Delete all objects that are charged or occupy disk space — floating IP addresses, disks, buckets, load balancers, and others.
 
     The full list of such objects is also on the page **Balance and payments**.
 
-    Since the boot disks of virtual machines cannot be deleted separately, [delete](/en/base/iaas/instructions/vm/vm-manage#deleting-a-vm) VMs.
+    Since the boot disks of virtual machines cannot be deleted separately, [delete](/en/base/iaas/instructions/vm/vm-manage#deleting_a_vm) VMs.
 
     Objects that do not consume resources — for example, networks and subnets — can be left in the project.
 
@@ -103,9 +103,9 @@ You will be able to reactivate the project after any period of time by uploading
 
 ## Transferring objects between projects
 
-You can [transfer disks](/en/base/iaas/instructions/vm-volumes#transfer-disks-between-projects) between projects. This allows you to transfer virtual machines between projects.
+You can [transfer disks](/en/base/iaas/instructions/vm-volumes#transfer_disks_between_projects) between projects. This allows you to transfer virtual machines between projects.
 
-Disk transfer is possible only within one region. If the projects are located in different regions, [upload](/en/base/iaas/instructions/vm-images/vm-images-manage#exporting-an-image) locally the disk image and [download](/en/base/iaas/instructions/vm-images/vm-images-manage#importing-an-image) it to the new project.
+Disk transfer is possible only within one region. If the projects are located in different regions, [upload](/en/base/iaas/instructions/vm-images/vm-images-manage#exporting_an_image) locally the disk image and [download](/en/base/iaas/instructions/vm-images/vm-images-manage#importing_an_image) it to the new project.
 
 Currently, transferring PaaS service objects between projects is not supported. For example, the virtual machine on which the database was deployed can be moved to another project only as a regular virtual machine. It is not possible to transfer such a virtual machine as a database instance or create a database instance with a disk transferred from another project.
 
@@ -140,7 +140,7 @@ An extended list of quotas for the project can be obtained through the OpenStack
 
 To get an extended list of quotas for a project:
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 1. Run the command:
 
     ```bash
@@ -279,7 +279,7 @@ To get an extended list of quotas for a project:
     </tabpanel>
     </tabs>
 
-    To view quotas for other OpenStack components, [install](/en/manage/tools-for-using-services/openstack-cli#2--install-additional-packages) appropriate OpenStack client packages (`manila`, `neutron` and others) and use a package-specific command. To find out the syntax of the command, install the appropriate package and run `<component> help quota-show`, for example, `manila help quota-show`.
+    To view quotas for other OpenStack components, [install](/en/manage/tools-for-using-services/openstack-cli#2_install_additional_packages) appropriate OpenStack client packages (`manila`, `neutron` and others) and use a package-specific command. To find out the syntax of the command, install the appropriate package and run `<component> help quota-show`, for example, `manila help quota-show`.
 
 </tabpanel>
 </tabs>
@@ -293,7 +293,7 @@ If the project lacks [quotas](../../../concepts/quotasandlimits), contact [techn
 
 <info>
 
-Information about increasing quotas [for GeekBrains program participants](../../../faq#can-a-geekbrains-program-participants-request-an-increase-in-quotas-on-vk-cloud-).
+Information about increasing quotas [for GeekBrains program participants](../../../faq#can_a_geekbrains_program_participants_request_an_increase_in_quotas_on_vk_cloud).
 
 </info>
 
