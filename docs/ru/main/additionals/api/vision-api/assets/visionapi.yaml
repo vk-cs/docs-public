@@ -62,7 +62,7 @@ paths:
               $ref: '#/components/schemas/persons_set_request'
       responses:
         '200':
-          description: successful operation
+          description: Операция выполнена успешно
           content:
             application/json:
               schema:
@@ -87,7 +87,7 @@ paths:
               $ref: '#/components/schemas/persons_delete_request'
       responses:
         '200':
-          description: successful operation
+          description: Операция выполнена успешно
           content:
             application/json:
               schema:
@@ -112,7 +112,7 @@ paths:
               $ref: '#/components/schemas/persons_truncate_request'
       responses:
         '200':
-          description: successful operation
+          description: Операция выполнена успешно
           content:
             application/json:
               schema:
@@ -137,7 +137,7 @@ paths:
               $ref: '#/components/schemas/persons_recognize_request'
       responses:
         '200':
-          description: successful operation
+          description: Операция выполнена успешно
           content:
             application/json:
               schema:
@@ -162,7 +162,7 @@ paths:
               $ref: '#/components/schemas/objects_detect_request'
       responses:
         '200':
-          description: successful operation
+          description: Операция выполнена успешно
           content:
             application/json:
               schema:
@@ -187,7 +187,7 @@ paths:
               $ref: '#/components/schemas/docs_detect_request'
       responses:
         '200':
-          description: successful operation
+          description: Операция выполнена успешно
           content:
             application/json:
               schema:
@@ -212,7 +212,7 @@ paths:
               $ref: '#/components/schemas/docs_recognize_request'
       responses:
         '200':
-          description: successful operation
+          description: Операция выполнена успешно
           content:
             application/json:
               schema:
@@ -237,7 +237,7 @@ paths:
               $ref: '#/components/schemas/text_recognize_request'
       responses:
         '200':
-          description: successful operation
+          description: Операция выполнена успешно
           content:
             application/json:
               schema:
@@ -248,7 +248,7 @@ paths:
     post:
       tags:
         - text
-      summary: Распознать текст на фотографии
+      summary: Распознать текст на фотографиях
       description: 'Позволяет распознавать текст на фотографии, которая получена на улице. См.: https://en.wikipedia.org/wiki/Scene_text'
       operationId: sceneTextRecognize
       parameters:
@@ -262,7 +262,7 @@ paths:
               $ref: '#/components/schemas/scene_text_recognize_request'
       responses:
         '200':
-          description: successful operation
+          description: Операция выполнена успешно
           content:
             application/json:
               schema:
@@ -287,7 +287,7 @@ paths:
               $ref: '#/components/schemas/photo_improve_request'
       responses:
         '200':
-          description: successful operation
+          description: Операция выполнена успешно
           content:
             application/json:
               schema:
@@ -312,7 +312,7 @@ paths:
               $ref: '#/components/schemas/adult_detect_request'
       responses:
         '200':
-          description: successful operation
+          description: Операция выполнена успешно
           content:
             application/json:
               schema:
@@ -326,7 +326,7 @@ components:
       in: query
       schema:
         type: string
-      description: OAuth2 access token
+      description: Токен доступа OAuth2
       required: true
     oauth_provider:
       name: oauth_provider
@@ -401,7 +401,7 @@ components:
           enum:
             - 200
           example: 200
-          description: 'Код ошибки: 200 — успешно.'
+          description: 'Операция выполнена успешно'
         body:
           type: object
           description: Тело ответа
@@ -685,16 +685,18 @@ components:
             mode:
               type: array
               minLength: 1
-              description: Типы объектов, которые требуется искать на переданных изображениях ("object" — искать на изображении объекты, "scene" - искать на изображении сцены, "car_number" — искать на изображении номера машин, "multiobject" — искать на изображении мультиобъекты (объекты и все множество боксов всех найденных объектов), "pedestrian" — искать на изображении людей (более точно определяет множество боксов всех людей на изображении), "selfie" — проверить, есть ли на изображении селфи). Может содержать один или несколько режимов
+              description: 'Типы запрашиваемых объектов для поиска на изображении: "object" — объекты (версия модели v1), "object2" — объекты (версия модели v2 — распознает объекты, принадлежащие большему количеству классов), "scene" — сцены, "car_number" — номера машин, "multiobject" — мультиобъекты (объекты и все множество боксов всех найденных объектов), "pedestrian" — людей, "selfie" — селфи. Допустимо указание нескольких режимов'
               items:
                 type: string
                 enum:
                   - object
+                  - object2
                   - scene
                   - car_number
                   - multiobject
                   - pedestrian
                   - selfie
+              example: object2
             images:
               type: array
               items:
@@ -1187,6 +1189,13 @@ components:
                   description: Массив результатов для каждого файла
                   items:
                     $ref: '#/components/schemas/text_recognize_result_property'
+    lang_property:
+      type: string
+      description: Ожидаемый язык текста на фото. При указании параметра повышается точность распознавания
+      enum:
+        - rus
+        - eng
+      example: rus
     images_property:
       type: array
       description: Метаданные передаваемых изображений
@@ -1201,6 +1210,8 @@ components:
           type: object
           description: Параметры запроса
           properties:
+            lang:
+              $ref: '#/components/schemas/lang_property'
             images:
               $ref: '#/components/schemas/images_property'
           required:
@@ -1223,20 +1234,13 @@ components:
             type: array
             items:
               type: number
-              format: float
+              format: int64
               minItems: 2
               maxItems: 2
             minItems: 4
             maxItems: 4
           example:
-            - - 0
-              - 0
-            - - 0
-              - 0.5
-            - - 0.5
-              - 0.5
-            - - 0.5
-              - 0
+            [[0, 0], [0, 5], [5, 5], [5, 0]]
         text:
           type: string
           description: Распознанное слово ответа
@@ -1365,6 +1369,7 @@ components:
           $ref: '#/components/schemas/file_property'
         meta:
           type: object
+          description: Параметры запроса
           properties:
             images:
               type: array
