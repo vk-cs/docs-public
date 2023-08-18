@@ -2,7 +2,7 @@ Any Kubernetes workload resource creates and runs a number of containers. These 
 
 You should limit resource consumption for any workload that runs in the cluster. Then workload containers cannot exhaust all available worker node resources (for example, if there is a memory leak).
 
-Although VK Cloud Kubernetes clusters already contain [preconfigured limits](../../concepts/addons-and-settings/settings#nastroyki-limitov-dlya-podov), it is a good practice to limit resources manually. For example, preconfigured limits may not be appropriate for resource-intensive workloads.
+Although VK Cloud Kubernetes clusters already contain [preconfigured limits](../../concepts/addons-and-settings/settings#limits_settings_for_pods), it is a good practice to limit resources manually. For example, preconfigured limits may not be appropriate for resource-intensive workloads.
 
 For a container in Kubernetes, you can set:
 

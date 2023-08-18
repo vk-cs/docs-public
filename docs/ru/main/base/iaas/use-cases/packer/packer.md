@@ -50,13 +50,13 @@ Packer позволяет создавать образы виртуальных
 
 ## 2. Загрузите базовый образ в облако
 
-Импортируйте образ по [инструкции](../../instructions/vm-images/vm-images-manage#import-obraza).
+Импортируйте образ по [инструкции](../../instructions/vm-images/vm-images-manage#import_obraza).
 
 ## 3. Создайте конфигурационный Packer-файл
 
 1. Определите реквизиты сети и загруженного образа:
 
-    1. [Получите](/ru/networks/vnet/operations/manage-net#prosmotr-spiska-setey-i-podsetey--a-takzhe-informacii-o-nih) идентификатор внешней сети, к которой будет подключена создаваемая виртуальная машина.
+    1. [Получите](/ru/networks/vnet/operations/manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) идентификатор внешней сети, к которой будет подключена создаваемая виртуальная машина.
     1. Скопируйте название загруженного образа, получив список образов с помощью команды `openstack image list`.
     1. Запишите полученные значения в переменные:
 
@@ -225,4 +225,4 @@ Packer позволяет создавать образы виртуальных
 
 ## Проконтролируйте использование ресурсов
 
-Если образ вам больше не нужен, [удалите его](../../instructions/vm-images/vm-images-manage#udalenie-obraza).
+Если образ вам больше не нужен, [удалите его](../../instructions/vm-images/vm-images-manage#udalenie_obraza).

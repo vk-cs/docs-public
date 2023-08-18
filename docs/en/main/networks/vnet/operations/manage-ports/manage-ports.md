@@ -2,7 +2,7 @@ You can manage OpenStack ports: view ports, add, edit and delete them.
 
 <warn>
 
-- [A shared network's](../../concepts/net-types#shared-network) ports can be managed only via OpenStack CLI from a dependent project. There is not such a restriction for an owner project.
+- [A shared network's](../../concepts/net-types#shared_network) ports can be managed only via OpenStack CLI from a dependent project. There is not such a restriction for an owner project.
 - All of the following operations are not available on the `ext-net` network.
 - You cannot manage `SNAT` device ports.
 

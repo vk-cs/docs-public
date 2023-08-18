@@ -12,9 +12,9 @@
 
 ## 1. Зарегистрируйтесь в VK Cloud
 
-1. [Зарегистрируйтесь](/ru/additionals/start/get-started/account-registration#registraciya-v-lichnom-kabinete) в личном кабинете.
+1. [Зарегистрируйтесь](/ru/additionals/start/get-started/account-registration#registraciya_v_lichnom_kabinete) в личном кабинете.
 
-1. [Подтвердите](/ru/additionals/start/get-started/account-registration#podtverzhdenie-uchetnoy-zapisi) учетную запись.
+1. [Подтвердите](/ru/additionals/start/get-started/account-registration#podtverzhdenie_uchetnoy_zapisi) учетную запись.
 
 После регистрации аккаунта для него будет создан [проект](/ru/base/account/concepts/projects) VK Cloud. Откроется личный кабинет, в нем вы сможете создавать и подключать нужные объекты: виртуальные машины, базы данных и т. д.
 
@@ -32,7 +32,7 @@
 
 ## 4. (Опционально) Настройте 2FA для проекта
 
-[Включите](../instructions/project-settings/access-manage#vklyuchenie-v-proekte-obyazatelnoy-2fa) обязательную 2FA для всех участников проекта, чтобы снизить риск несанкционированного доступа.
+[Включите](../instructions/project-settings/access-manage#vklyuchenie_v_proekte_obyazatelnoy_2fa) обязательную 2FA для всех участников проекта, чтобы снизить риск несанкционированного доступа.
 
 ## 5. Подключитесь к проекту через OpenStack CLI
 

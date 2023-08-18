@@ -113,7 +113,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
    1. OpenStack CLI [installed](../../../../base/account/project/cli/setup) along with [optional package](.../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
    1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
 
-1. Select the network and subnet where the balancer will be hosted. [Get ID](../manage-net#prosmotr-spiska-setey-i-podsetey--a-takzhe-informacii-o-nih) of the subnet.
+1. Select the network and subnet where the balancer will be hosted. [Get ID](../manage-net#viewing_the_list_of_networks_and_subnets_and_information_about_them) of the subnet.
 
 1. Create a balancer:
 
@@ -247,8 +247,8 @@ If the balancer network is connected to a router with Internet access, you can a
    1. OpenStack CLI [installed](../../../../base/account/project/cli/setup) along with [add-on package](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
    1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
 
-1. [Get port ID](../manage-ports#prosmotr-spiska-portov-i-informacii-o-nih) with Virtual IP for the necessary load balancer.
-1. [Assign a floating IP address](../manage-floating-ip#privyazka-plavayushchego-ip-adresa) to a port with this ID.
+1. [Get port ID](../manage-ports#viewing_a_list_of_ports_and_port_information) with Virtual IP for the necessary load balancer.
+1. [Assign a floating IP address](../manage-floating-ip#bindind_a_floating_ip_address) to a port with this ID.
 
 </tabpanel>
 </tabs>
@@ -285,8 +285,8 @@ If the balancer network is connected to a router with Internet access, and a pub
    1. OpenStack CLI [installed](../../../../base/account/project/cli/setup) along with [add-on package](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
    1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
 
-1. [Get port ID](../manage-ports#prosmotr-spiska-portov-i-informacii-o-nih) with Virtual IP for the necessary load balancer.
-1. [Unlink floating IP address](../manage-floating-ip#otvyazka-plavayushchego-ip-adresa) from the port with this ID.
+1. [Get port ID](../manage-ports#viewing_a_list_of_ports_and_port_information) with Virtual IP for the necessary load balancer.
+1. [Unlink floating IP address](../manage-floating-ip#unbinding_floating_ip_address) from the port with this ID.
 
 </tabpanel>
 </tabs>
@@ -427,7 +427,7 @@ openstack loadbalancer <command> --help
 
       Write down the identifier of the created pool (`id`).
 
-   1. Find the IP addresses of the virtual machines that will be members of the pool. Also [find the ID](../manage-net#prosmotr-spiska-setey-i-podsetey--a-takzhe-informacii-o-nih) subnet where the virtual machines are located.
+   1. Find the IP addresses of the virtual machines that will be members of the pool. Also [find the ID](../manage-net#viewing_the_list_of_networks_and_subnets_and_information_about_them) subnet where the virtual machines are located.
 
       These virtual machines must either be located on the subnet where the balancer for which the balancing rule is being created is located, or be accessible from that subnet.
 

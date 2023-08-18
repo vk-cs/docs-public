@@ -8,7 +8,7 @@
 - Improve your application's Observability: Set up end-to-end application monitoring from the infrastructure and operating system level down to the application itself to accurately and quickly identify problems and bottlenecks in the application (more information can be found on the page [What is Observability]( https://www.dynatrace.com/news/blog/what-is-observability-2/)).
 - Fault tolerance of virtual infrastructure instances (virtual machines, disks, networks) is already implemented at the platform level. It makes no sense to independently increase the fault tolerance of a virtual infrastructure using the methods used in the physical infrastructure.
 - Use domain names to communicate between your application nodes. This way you won't be tied to IP addresses.
-- Use S3 storage for long-term storage of large amounts of information or static content ([Cloud Storage](https://mcs.mail.ru/docs/en/base/s3#) or [Cloud Data Platform] services(https:/ /mcs.mail.ru/bigdata/)).
+- Use S3 storage for long-term storage of large amounts of information or static content ([Cloud Storage](https://mcs.mail.ru/docs/en/base/s3) or [Cloud Data Platform] services(https:/ /mcs.mail.ru/bigdata/)).
 - For your application components deployed in [Kubernetes](https://mcs.mail.ru/help/kubernetes/scaling), configure autoscaling. This will ensure that the necessary computing resources are provided during periods of increased load on the application.
 - When developing applications, apply The Twelve-Factor App methodology (for more information, see [12Factor](https://12factor.net/)).
 - Examine the documentation for the functionality, capabilities and limitations of the cloud provider.
@@ -16,7 +16,7 @@
 ## Security Recommendations
 
 - Use different [private networks](/en/networks/vnet/networks) for different applications within the same project, or deploy each application in its own project.
-- Use [security groups](/en/networks/vnet/firewall#). Open only those ports that are necessary for your application's components to communicate, as well as ports used for the maintenance and maintenance tasks of your infrastructure and application.
+- Use [security groups](/en/networks/vnet/firewall). Open only those ports that are necessary for your application's components to communicate, as well as ports used for the maintenance and maintenance tasks of your infrastructure and application.
 - Expose only endpoints (entry points) of your applications to the Internet. Close access to the infrastructure of your service from the Internet.
 - Use a secure VPN channel to network your local resources with resources in the cloud. More information can be found on the [VPN documentation] page(https://mcs.mail.ru/help/network/vpn).
 - Use backup for critical components of your application. Check the integrity of your backups.
@@ -38,7 +38,7 @@ The VK Cloud platform also has a Low Latency NVME disk type, which is characteri
 
 Disk types differ in the number of IOPS and latency. When choosing a type, start from the IOPS and latency requirements for the specific application that will use this drive. For example, you should not choose the "network HDD" type for busy databases, or choose High-IOPS SSD or Low Latency NVME for unloaded environments. We also do not recommend creating a disk that is significantly larger than the amount of data stored. Otherwise, you will overpay for unused space and performance. If necessary, you can always change the type of an existing disk and increase its size.
 
-You can view the available disk types in VK Cloud and SLA using them [in the article Types of disks and SLA](https://mcs.mail.ru/docs/base/iaas/vm-volumes/volume-sla#tipy_diskov).
+You can view the available disk types in VK Cloud and SLA using them [in the article Types of disks and SLA](https://mcs.mail.ru/docs/base/iaas/vm-volumes/volume-sla#disks_types_b7c586e).
 
 ## Improving DBMS fault tolerance
 

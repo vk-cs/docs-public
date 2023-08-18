@@ -14,7 +14,7 @@ Charged:
   - The public IP address assigned to the port if the port is connected to the `ext-net' network.
   - Existing floating public IP addresses (even if not assigned to any port).
 
-- [Standard and service](../concepts/load-balancer#types-of-load-balancers) load balancers.
+- [Standard and service](../concepts/load-balancer#types_of_load_balancers) load balancers.
 
 ## What is not charged
 

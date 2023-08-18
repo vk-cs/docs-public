@@ -6,7 +6,7 @@
 
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Настройки проекта**.
 
-1. Перейдите на вкладку **Terraform**. Скачайте основной [файл конфигурации Terraform](../reference/configuration#fayl-konfiguracii-provaydera-terraform) и [файл конфигурации зеркала Terraform](../reference/configuration#fayl-konfiguracii-zerkala-terraform), нажав одноименные кнопки.
+1. Перейдите на вкладку **Terraform**. Скачайте основной [файл конфигурации Terraform](../reference/configuration#fayl_konfiguracii_provaydera_terraform) и [файл конфигурации зеркала Terraform](../reference/configuration#fayl_konfiguracii_zerkala_terraform), нажав одноименные кнопки.
 
     Будут скачаны файлы с именами  `vkcs_provider.tf` и  `terraform.rc`.
 

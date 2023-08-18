@@ -8,7 +8,7 @@
 
 ## 1. Подготовительные шаги
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 1. Создайте сети.
 
@@ -323,9 +323,9 @@
 
 Если созданные ресурсы вам больше не нужны, удалите их:
 
-1. [Удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie-vm) виртуальные машины.
-1. [Удалите](../../operations/manage-vpn#udalenie-vpn-tunnelya) VPN-туннель.
-1. [Удалите](../../operations/manage-router#upravlenie-staticheskimi-marshrutami) статические маршруты, прописанные на стороне клиентской сети.
+1. [Удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie_vm) виртуальные машины.
+1. [Удалите](../../operations/manage-vpn#udalenie_vpn_tunnelya) VPN-туннель.
+1. [Удалите](../../operations/manage-router#upravlenie_staticheskimi_marshrutami) статические маршруты, прописанные на стороне клиентской сети.
 
    <info>
 
@@ -333,6 +333,6 @@
 
    </info>
 
-1. [Удалите](../../operations/manage-router#udalenie-marshrutizatora) маршрутизаторы клиентской и облачной сетей.
-1. Удалите клиентскую и облачную [подсети](../../operations/manage-net#udalenie-podseti) и [сети](../../operations/manage-net#udalenie-seti).
-1. [Удалите](../../operations/manage-floating-ip#udalenie-plavayushchego-ip-adresa-iz-proekta) плавающие IP-адреса.
+1. [Удалите](../../operations/manage-router#udalenie_marshrutizatora) маршрутизаторы клиентской и облачной сетей.
+1. Удалите клиентскую и облачную [подсети](../../operations/manage-net#udalenie_podseti) и [сети](../../operations/manage-net#udalenie_seti).
+1. [Удалите](../../operations/manage-floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающие IP-адреса.

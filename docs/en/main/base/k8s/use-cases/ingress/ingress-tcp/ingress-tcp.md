@@ -14,7 +14,7 @@ It is assumed throughout the document that the NGINX Ingress Controller will be 
 
    Select other cluster settings at your discretion.
 
-1. [Make sure](../../../operations/addons/manage-addons#viewing-addons) that the NGINX Ingress addon (`ingress-nginx`) **is not installed** in the cluster. For demonstration purposes, the Ingress controller will be installed manually.
+1. [Make sure](../../../operations/addons/manage-addons#viewing_addons) that the NGINX Ingress addon (`ingress-nginx`) **is not installed** in the cluster. For demonstration purposes, the Ingress controller will be installed manually.
 
 1. [Make sure](../../../connect/kubectl) that you can connect to the cluster using `kubectl'.
 
@@ -295,5 +295,5 @@ To create an Ingress resource:
 
 1. A running cluster consumes computing resources. If you no longer need it:
 
-   - [stop](../../../operations/manage-cluster#start-or-stop-the-cluster) it to use it later;
-   - [delete](../../../operations/manage-cluster#delete-cluster) it permanently.
+   - [stop](../../../operations/manage-cluster#start_or_stop_the_cluster) it to use it later;
+   - [delete](../../../operations/manage-cluster#delete_cluster) it permanently.

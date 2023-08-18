@@ -9,8 +9,8 @@
 
 ## 1. Подготовительные шаги
 
-1. [Зарегистрируйтесь](/ru/additionals/start/get-started/account-registration#registraciya-v-lichnom-kabinete) в личном кабинете VK Cloud.
-1. [Подтвердите](/ru/additionals/start/get-started/account-registration#podtverzhdenie-uchetnoy-zapisi) учетную запись.
+1. [Зарегистрируйтесь](/ru/additionals/start/get-started/account-registration#registraciya_v_lichnom_kabinete) в личном кабинете VK Cloud.
+1. [Подтвердите](/ru/additionals/start/get-started/account-registration#podtverzhdenie_uchetnoy_zapisi) учетную запись.
 1. [Настройте](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута восстановленная инфраструктура.
 1. [Создайте ВМ](/ru/base/iaas/instructions/vm/vm-create), для которой будет применяться восстановление. В рамках быстрого старта будет использоваться ВМ `Ubuntu-DR` с операционной системой Ubuntu 18.04.
 1. Разверните сервис Cloud Disaster Recovery:
@@ -244,4 +244,4 @@
 
 - [Удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie_vm) ВМ `Ubuntu-DR`.
 - Удалите резервную инфраструктуру `VK-Cloud-infra` через [личный кабинет](https://dr.mcs-cloud.ru) Hystax Acura.
-- [Удалите](/ru/networks/vnet/operations/manage-floating-ip#udalenie_plavayushchego_ip-adresa_iz_proekta) плавающий IP-адрес, если он был создан во время восстановления.
+- [Удалите](/ru/networks/vnet/operations/manage-floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, если он был создан во время восстановления.

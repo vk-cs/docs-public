@@ -12,7 +12,7 @@
 
     Поместите настройки провайдера в файл конфигурации Terraform `provider.tf`.
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 1. Создайте файл конфигурации Terraform `variables.tf` с переменными:
 
@@ -100,7 +100,7 @@
    </tabpanel>
    <tabpanel>
 
-   В статье о [зонах доступности](/ru/additionals/start/it-security/platform-security#zony-dostupnosti).
+   В статье о [зонах доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti).
 
    </tabpanel>
    </tabs>
@@ -298,7 +298,7 @@ output "instance_fip" {
 
 ## 4. Проверьте работоспособность примера
 
-[Подключитесь по SSH](/ru/base/iaas/vm-start/vm-connect/vm-connect-nix#) к виртуальной машине `compute-instance`.
+[Подключитесь по SSH](/ru/base/iaas/vm-start/vm-connect/vm-connect-nix) к виртуальной машине `compute-instance`.
 
 Для подключения используйте:
 

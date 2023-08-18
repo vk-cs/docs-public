@@ -12,11 +12,11 @@
 
 ## 1. Подготовительные шаги
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 1. Выберите подсеть, в которой будут размещены виртуальные машины и виртуальный IP-адрес. Они должны размещаться в одной подсети.
 
-   Если нужной подсети нет, [создайте ее](../../operations/manage-net#sozdanie-podseti).
+   Если нужной подсети нет, [создайте ее](../../operations/manage-net#sozdanie_podseti).
 
    Запишите следующую информацию:
    - имя подсети;
@@ -306,7 +306,7 @@
 
 ## 3. Настройте IP Source Guard
 
-Установленный на виртуальных машинах `keepalived` должен иметь возможность отправлять трафик не только с IP-адресов `192.168.0.11` и `192.168.0.22`, но и с виртуального IP-адреса `192.168.0.254`. Поскольку на портах OpenStack в VK Cloud используется [механизм IP Source Guard](../../concepts/traffic-limiting#ispolzovanie-ip-source-guard), разрешите трафик с виртуального IP-адреса для портов виртуальных машин:
+Установленный на виртуальных машинах `keepalived` должен иметь возможность отправлять трафик не только с IP-адресов `192.168.0.11` и `192.168.0.22`, но и с виртуального IP-адреса `192.168.0.254`. Поскольку на портах OpenStack в VK Cloud используется [механизм IP Source Guard](../../concepts/traffic-limiting#ispolzovanie_ip_source_guard), разрешите трафик с виртуального IP-адреса для портов виртуальных машин:
 
 1. Для `kld-vm-1`:
 
@@ -377,7 +377,7 @@
 
 Если созданные ресурсы вам больше не нужны, удалите их:
 
-1. [Удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie-vm) виртуальные машины.
-1. [Удалите](../../operations/manage-floating-ip#udalenie-plavayushchego-ip-adresa-iz-proekta) плавающий IP-адрес, назначенный виртуальной машине `kld-jumphost-vm`.
-1. [Удалите](../../operations/manage-ports#udalenie-porta) порт, которому назначен виртуальный IP-адрес.
-1. Удалите [подсеть](../../operations/manage-net#udalenie-podseti) и [сеть](../../operations/manage-net#udalenie-seti), в которых были размещены виртуальные машины.
+1. [Удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie_vm) виртуальные машины.
+1. [Удалите](../../operations/manage-floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, назначенный виртуальной машине `kld-jumphost-vm`.
+1. [Удалите](../../operations/manage-ports#udalenie_porta) порт, которому назначен виртуальный IP-адрес.
+1. Удалите [подсеть](../../operations/manage-net#udalenie_podseti) и [сеть](../../operations/manage-net#udalenie_seti), в которых были размещены виртуальные машины.

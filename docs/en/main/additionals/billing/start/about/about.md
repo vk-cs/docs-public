@@ -13,7 +13,7 @@ Money is debited on a per-minute basis for the working entities (virtual machine
 - license usage (Windows and RDS, if activated);
 - leased disk space;
 - storage of existing backups;
-- [public IP addresses](/en/networks/vnet/tariffs#what-is-charged).
+- [public IP addresses](/en/networks/vnet/tariffs#what_is_charged).
 
 ## Disable services and delete project data
 

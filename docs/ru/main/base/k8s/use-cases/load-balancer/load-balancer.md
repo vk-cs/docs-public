@@ -2,7 +2,7 @@
 
 <warn>
 
-При развертывании для каждого из сервисов будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+При развертывании для каждого из сервисов будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
 Использование балансировщиков [тарифицируется](/ru/networks/vnet/tariffs).
 
@@ -16,7 +16,7 @@
 
   - Случайный выбор реплики (по умолчанию).
 
-    Балансировщик ведет себя так, потому что `kube-proxy` в кластерах Kubernetes VK Cloud [работает](../../concepts/addons-and-settings/settings#rezhim-raboty-kube-proxy) в режиме `iptables`.
+    Балансировщик ведет себя так, потому что `kube-proxy` в кластерах Kubernetes VK Cloud [работает](../../concepts/addons-and-settings/settings#rezhim_raboty_kube_proxy) в режиме `iptables`.
     Подробнее в [официальной документации Kubernetes](https://kubernetes.io/docs/concepts/services-networking/service/#proxy-mode-iptables).
 
   - Закрепление реплики за конкретным IP-адресом.
@@ -389,9 +389,9 @@
    </tabpanel>
    </tabs>
 
-1. Если статический публичный IP-адрес, который был назначен сервису `coffee-svc-public-static-ip`, вам больше не нужен, [удалите его](../../../../networks/vnet/operations/manage-floating-ip#udalenie-plavayushchego-ip-adresa-iz-proekta).
+1. Если статический публичный IP-адрес, который был назначен сервису `coffee-svc-public-static-ip`, вам больше не нужен, [удалите его](../../../../networks/vnet/operations/manage-floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta).
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-   - [остановите](../../operations/manage-cluster#zapustit-ili-ostanovit-klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../operations/manage-cluster#udalit-klaster) его навсегда.
+   - [остановите](../../operations/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+   - [удалите](../../operations/manage-cluster#udalit_klaster) его навсегда.

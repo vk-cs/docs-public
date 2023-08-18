@@ -24,8 +24,8 @@ The following templates becomes available upon request to [technical support](..
 
   To use such templates, when creating a cluster or a group of nodes, select the "Show only high-performance CPUs" option. You can select the option:
   - [when creating a cluster](../../operations/create-cluster);
-  - [when adding a worker-node group](../../operations/manage-node-group#add-worker-node-group);
-  - [when changing the virtual machine type for master nodes](../../operations/manage-cluster#change-virtual-machine-type-for-master-nodes).
+  - [when adding a worker-node group](../../operations/manage-node-group#add_worker_node_group);
+  - [when changing the virtual machine type for master nodes](../../operations/manage-cluster#change_virtual_machine_type_for_master_nodes).
 
 - Customized **Custom** configuration templates for special needs.
 

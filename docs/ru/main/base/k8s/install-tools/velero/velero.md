@@ -5,11 +5,11 @@ Velero — это клиент-серверная утилита для резе
 1. Убедитесь, что:
 
    - либо в группах worker-узлов есть минимум 2 свободных vCPU;
-   - либо [включено автоматическое масштабирование](../../operations/scale#nastroit-avtomaticheskoe-masshtabirovanie--tolko-dlya-grupp-worker-uzlov-).
+   - либо [включено автоматическое масштабирование](../../operations/scale#nastroit_avtomaticheskoe_masshtabirovanie_tolko_dlya_grupp_worker_uzlov).
 
-1. [Убедитесь](../../connect/kubectl#proverka-podklyucheniya-k-klasteru), что вы можете подключиться к кластеру с помощью `kubectl`.
+1. [Убедитесь](../../connect/kubectl#proverka_podklyucheniya_k_klasteru), что вы можете подключиться к кластеру с помощью `kubectl`.
 1. [Установите](../../../../base/account/project/cli/setup) OpenStack CLI, если он еще не установлен. [Убедитесь](../../../../base/account/project/cli/authorization), что вы можете авторизоваться в облаке с его помощью.
-1. [Создайте hotbox-бакет](../../../s3/buckets/bucket#sozdanie-baketa) для хранения резервных копий в сервисе [Объектное хранилище](../../../s3).
+1. [Создайте hotbox-бакет](../../../s3/buckets/bucket#sozdanie_baketa) для хранения резервных копий в сервисе [Объектное хранилище](../../../s3).
 1. [Создайте аккаунт](../../../s3/access-management/s3-account) в сервисе [Объектное хранилище](../../../s3).
 
    Выведенные идентификатор ключа и секрет сохраните в файл `s3_creds`:

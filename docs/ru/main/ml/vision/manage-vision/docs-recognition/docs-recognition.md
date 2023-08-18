@@ -35,7 +35,7 @@ ENDPOINT: `/api/v1/docs/recognize`
 
 <warn>
 
-Для метода действуют [ограничения](../../vision-limits#obrabotka-izobrazenii).
+Для метода действуют [ограничения](../../vision-limits#obrabotka_izobrazheniy).
 
 </warn>
 

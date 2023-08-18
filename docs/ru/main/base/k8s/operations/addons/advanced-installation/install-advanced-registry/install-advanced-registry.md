@@ -40,7 +40,7 @@
 
    Запишите вывод команды (в формате `<логин>:<зашифрованный пароль>`).
 
-1. [Добавьте](/ru/networks/vnet/operations/manage-floating-ip#dobavlenie-plavayushchego-ip-adresa-v-proekt) плавающий IP-адрес или [найдите](/ru/networks/vnet/operations/manage-floating-ip#prosmotr-spiska-plavayushchih-ip-adresov) существующий непривязанный плавающий IP-адрес.
+1. [Добавьте](/ru/networks/vnet/operations/manage-floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt) плавающий IP-адрес или [найдите](/ru/networks/vnet/operations/manage-floating-ip#prosmotr_spiska_plavayushchih_ip_adresov) существующий непривязанный плавающий IP-адрес.
 
    Запишите этот IP-адрес. Он будет использоваться для доступа к реестру Docker.
 
@@ -48,18 +48,18 @@
 
 <warn>
 
-При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
 Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffs).
 
 </warn>
 
-Для аддона доступно [несколько вариантов установки](../../../../concepts/addons-and-settings/addons#osobennosti-ustanovki-addonov):
+Для аддона доступно [несколько вариантов установки](../../../../concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov):
 
 - стандартная установка;
 - установка на выделенные worker-узлы.
 
-Примите во внимание суммарные [максимальные системные требования](../../../../concepts/addons-and-settings/addons) аддонов, которые будут размещены на группах worker-узлов. При необходимости [выполните ручное масштабирование](../../../scale#vypolnit-ruchnoe-masshtabirovanie) групп worker-узлов или [настройте автоматическое масштабирование](../../../scale#nastroit-avtomaticheskoe-masshtabirovanie--tolko-dlya-grupp-worker-uzlov-) перед установкой.
+Примите во внимание суммарные [максимальные системные требования](../../../../concepts/addons-and-settings/addons) аддонов, которые будут размещены на группах worker-узлов. При необходимости [выполните ручное масштабирование](../../../scale#vypolnit_ruchnoe_masshtabirovanie) групп worker-узлов или [настройте автоматическое масштабирование](../../../scale#nastroit_avtomaticheskoe_masshtabirovanie_tolko_dlya_grupp_worker_uzlov) перед установкой.
 
 <tabs>
 <tablist>
@@ -170,9 +170,9 @@
 
    1. Убедитесь, что в кластере есть выделенная группа worker-узлов, на которых будут размещаться аддоны.
 
-      Если такой группы нет — [добавьте ее](../../../manage-node-group#dobavit-gruppu-worker-uzlov).
+      Если такой группы нет — [добавьте ее](../../../manage-node-group#dobavit_gruppu_worker_uzlov).
 
-   1. [Задайте](../../../manage-node-group#nastroit-metki-i-ogranicheniya) для этой группы узлов, если это еще не сделано:
+   1. [Задайте](../../../manage-node-group#nastroit_metki_i_ogranicheniya) для этой группы узлов, если это еще не сделано:
 
       - **Метку (label)**: ключ `addonNodes`, значение `dedicated`.
       - **Ограничение (taint)**: эффект `NoSchedule`, ключ `addonNodes`, значение `dedicated`.

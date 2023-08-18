@@ -5,12 +5,12 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
 1. Make sure that:
 
    - Either the worker node groups have at least 2 vCPUs available;
-   - Or [automatic scaling is enabled](../../operations/scale#configure-automatic-scaling--only-for-worker-node-groups).
+   - Or [automatic scaling is enabled](../../operations/scale#configure_automatic_scaling_only_for_worker_node_groups).
 
-1. [Make sure](../../connect/kubectl#checking-the-connection-to-the-cluster) that you can connect to the cluster with `kubectl`.
+1. [Make sure](../../connect/kubectl#checking_the_connection_to_the_cluster) that you can connect to the cluster with `kubectl`.
 1. [Install](../../../account/project/cli/setup) OpenStack CLI if it is not already installed. [Make sure](../../../account/project/cli/authorization) that you can authorize in the cloud using it.
-1. [Create a Hotbox bucket](/en/base/s3/buckets/bucket#bucket-creation) to store backups in the [Object Storage](../../../s3) service.
-1. [Create an account](/en/base/s3/access-management/s3-account#create-an-account) in the [Object Storage](/en/base/s3) service.
+1. [Create a Hotbox bucket](/en/base/s3/buckets/bucket#bucket_creation) to store backups in the [Object Storage](../../../s3) service.
+1. [Create an account](/en/base/s3/access-management/s3-account#create_an_account) in the [Object Storage](/en/base/s3) service.
 
     Save the account's key ID and secret to the `s3_creds` file:
 

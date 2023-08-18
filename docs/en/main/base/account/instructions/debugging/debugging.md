@@ -2,7 +2,7 @@ Information about events and errors that occurred during the operation of the se
 
 <info>
 
-If there are failures in the running VM, provide technical support with [VM message logs](/en/base/iaas/instructions/vm/vm-console#vm-message-logs).
+If there are failures in the running VM, provide technical support with [VM message logs](/en/base/iaas/instructions/vm/vm-console#vm_message_logs).
 
 </info>
 

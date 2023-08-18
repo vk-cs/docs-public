@@ -4,9 +4,9 @@
 
 ## Installing the addon
 
-[Several installation options](../../../../concepts/addons-and-settings/addons#features-of-installing-addons) are available for the addon.
+[Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the addon.
 
-Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#do-manual-scaling) for groups of worker nodes or [configure automatic scaling](../../../scale#configure-automatic-scaling--only-for-worker-node-groups-) before install.
+Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#do_manual_scaling) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_only_for_worker_node_groups) before install.
 
 <tabs>
 <tablist>
@@ -117,9 +117,9 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    1. Make sure that the cluster has a dedicated group of worker nodes that will host addons.
 
-      If there is no such group — [add it](../../../manage-node-group#add-worker-node-group).
+      If there is no such group — [add it](../../../manage-node-group#add_worker_node_group).
 
-   1. [Customise](../../../manage-node-group#customise-labels-and-taints) for this node group, if it hasn't already been done:
+   1. [Customise](../../../manage-node-group#customise_labels_and_taints) for this node group, if it hasn't already been done:
 
       - **Kubernetes labels**: key `addonNodes`, value `dedicated`.
       - **Node taints**: effect `NoSchedule`, key `addonNodes`, value `dedicated`.

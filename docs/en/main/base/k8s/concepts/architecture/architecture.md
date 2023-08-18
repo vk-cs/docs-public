@@ -6,7 +6,7 @@ A Kubernetes cluster consists of two types of nodes, master nodes and worker nod
 
 - Master nodes store cluster-wide state information and manage workload distribution across worker nodes.
 
-- Worker nodes perform the workload ([workload](https://kubernetes.io/docs/concepts/workloads/)). They can be organized into groups of worker nodes. Place groups in different [availability zones](../../../../additionals/it-security/platform-security#accessibility-zones) to improve fault tolerance.
+- Worker nodes perform the workload ([workload](https://kubernetes.io/docs/concepts/workloads/)). They can be organized into groups of worker nodes. Place groups in different [availability zones](../../../../additionals/it-security/platform-security#availability_zones) to improve fault tolerance.
 
 Cluster high availablity depends on the number of master nodes. Possible configurations:
 
@@ -75,7 +75,7 @@ Integration with the VK Cloud platform is achieved through standard Kubernetes i
 
 Since Kubernetes version 1.21, [Open Policy Agent Gatekeeper](../../k8s-reference/gatekeeper/) is built into the cluster to increase the cluster's resistance to attacks. It allows you to apply constraints, which help to increase the security of deployed workload.
 
-These constraints are created based on constraint templates. Kubernetes VK Cloud clusters already contain [preconfigured templates and constraints](../addons-and-settings/settings#pre-configured-gatekeeper-templates-and-constraints). You can create your own templates and constraints.
+These constraints are created based on constraint templates. Kubernetes VK Cloud clusters already contain [preconfigured templates and constraints](../addons-and-settings/settings#pre_configured_gatekeeper_templates_and_constraints). You can create your own templates and constraints.
 
 For clusters below version 1.21 it is recommended to [install Gatekeeper](../../install-tools/gatekeeper) manually or upgrade the cluster to the current version.
 

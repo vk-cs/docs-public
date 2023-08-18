@@ -108,7 +108,7 @@
     </tabpanel>
     <tabpanel>
 
-    1. Скопируйте [идентификатор (PID)](/ru/base/account/instructions/project-settings/manage#poluchenie-identifikatora-proekta) вашего проекта из URL сайта VK Cloud.
+    1. Скопируйте [идентификатор (PID)](/ru/base/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) вашего проекта из URL сайта VK Cloud.
 
         Пример URL для региона Москва: `https://mcs.mail.ru/app/mcs123456789/main`, где `mcs123456789` — идентификатор (PID) проекта.
 
