@@ -30,9 +30,30 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 
 <tabs>
 <tablist>
+<tab>Версия Kubernetes 1.23 и выше</tab>
 <tab>Версия Kubernetes 1.22 и ниже</tab>
-<tab>Версия Kubernetes 1.23 и выше<tab>
 </tablist>
+<tabpanel>
+
+1. На хосте в отдельной сессии терминала выполните команду:
+
+   ```bash
+   kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
+   ```
+
+   <warn>
+
+   Не закрывайте эту сессию терминала, иначе доступ к веб-интерфейсу Kubernetes Dashboard пропадет.
+
+   </warn>
+
+1. Введите пароль от личного кабинета VK Cloud, если он не вписан в файл конфигурации kubeconfig.
+
+   `kauthproxy` будет периодически повторно запрашивать этот пароль.
+
+   Откроется браузер, и вы будете направлены в веб-интерфейс Kubernetes Dashboard.
+
+</tabpanel>
 <tabpanel>
 
 1. Получите секрет:
@@ -64,27 +85,6 @@ Kubernetes Dashboard — это универсальный веб-интерфе
 1. Нажмите кнопку **Sign In**.
 
    Откроется веб-интерфейс Kubernetes Dashboard.
-
-</tabpanel>
-<tabpanel>
-
-1. На хосте в отдельной сессии терминала выполните команду:
-
-   ```bash
-   kauthproxy -n kubernetes-dashboard https://kubernetes-dashboard.svc
-   ```
-
-   <warn>
-
-   Не закрывайте эту сессию терминала, иначе доступ к веб-интерфейсу Kubernetes Dashboard пропадет.
-
-   </warn>
-
-1. Введите пароль от личного кабинета VK Cloud, если он не вписан в файл конфигурации kubeconfig.
-
-   `kauthproxy` будет периодически повторно запрашивать этот пароль.
-
-   Откроется браузер, и вы будете направлены в веб-интерфейс Kubernetes Dashboard.
 
 </tabpanel>
 </tabs>
