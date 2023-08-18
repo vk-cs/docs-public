@@ -1,8 +1,8 @@
-Вы можете создавать собственные [проекты](../../../concepts/projects) в VK Cloud. Создав проект, вы становитесь его [владельцем](../../../concepts/rolesandpermissions#roli-dlya-obshchego-upravleniya-proektom).
+Вы можете создавать собственные [проекты](../../../concepts/projects) в VK Cloud. Создав проект, вы становитесь его [владельцем](../../../concepts/rolesandpermissions#roli_dlya_obshchego_upravleniya_proektom).
 
 <info>
 
-В рамках [базовых квот](../../../concepts/quotasandlimits#bazovye-kvoty) один пользователь может создать не более 5 проектов. Это число можно увеличить в пределах существующего [лимита](../../../concepts/quotasandlimits#tehnicheskie-limity) по запросу в [техническую поддержку](/ru/contacts).
+В рамках [базовых квот](../../../concepts/quotasandlimits#obshchie_d4f726f4) один пользователь может создать не более 5 проектов. Это число можно увеличить в пределах существующего [лимита](../../../concepts/quotasandlimits#kvoty_i_tehnicheskie_limity) по запросу в [техническую поддержку](/ru/contacts).
 
 </info>
 
@@ -16,7 +16,7 @@
 
 1. В конце списка нажмите кнопку **Создать новый проект**.
 
-    Если к вашей учетной записи не был привязан телефон, [привяжите](../../../instructions/activation#privyazka-nomera-telefona) его.
+    Если к вашей учетной записи не был привязан телефон, [привяжите](../../../instructions/activation#privyazka_nomera_telefona) его.
 
 1. Введите имя проекта.
 
@@ -33,7 +33,7 @@
 
 1. Активируйте сервисы: нажмите кнопку **Включить сервисы** в разделе любого сервиса.
 
-1. [Привяжите](../../../instructions/activation#privyazka-bankovskoy-karty) карту оплаты, если она еще не привязана.
+1. [Привяжите](../../../instructions/activation#privyazka_bankovskoy_karty) карту оплаты, если она еще не привязана.
 
 1. [Пополните](/ru/additionals/billing/operations/payment) баланс проекта, чтобы начать пользоваться сервисами.
 

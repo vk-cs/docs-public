@@ -8,7 +8,7 @@
 
 <warn>
 
-Выполнение запросов возможно только для проектов с `is_partner=true`. Чтобы узнать список таких проектов, используйте метод `/api/v1/partners/{pid}/clients/`, где `{pid}` — [идентификатор проекта](/ru/base/account/instructions/project-settings/manage#poluchenie-identifikatora-proekta).
+Выполнение запросов возможно только для проектов с `is_partner=true`. Чтобы узнать список таких проектов, используйте метод `/api/v1/partners/{pid}/clients/`, где `{pid}` — [идентификатор проекта](/ru/base/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta).
 
 </warn>
 

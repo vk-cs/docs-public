@@ -71,7 +71,7 @@ To fill in the data about the legal entity, go to [personal account](https://mcs
 
 On the VK Cloud you can connect the priority support service (Managed Services) from VK Cloud experts. To use this service, [leave a request](https://mcs.mail.ru/managed-services/).
 
-Also check out the [full list of Managed Services](/en/additionals/start/support/support-info#individual-support).
+Also check out the [full list of Managed Services](/en/additionals/start/support/support-info#individual_support).
 
 ## Do you have an affiliate program?
 

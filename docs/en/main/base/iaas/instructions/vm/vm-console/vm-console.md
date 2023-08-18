@@ -1,8 +1,8 @@
-In emergency situations and when there is no [connection to the VM](../vm-connect/vm-connect-nix#4--connect-to-the-vm) over the network, use [VNC console](#the-vnc-console) or view [VM message logs](#vm-message-logs).
+In emergency situations and when there is no [connection to the VM](../vm-connect/vm-connect-nix#4_connect_to_the_vm) over the network, use [VNC console](#the-vnc-console) or view [VM message logs](#vm-message-logs).
 
 <info>
 
-Information about the user's actions with the VM and about changes in its state is contained in the [event log](../vm-manage#viewing-the-event-log) OpenStack.
+Information about the user's actions with the VM and about changes in its state is contained in the [event log](../vm-manage#viewing_the_event_log) OpenStack.
 
 </info>
 
@@ -46,7 +46,7 @@ Use the VNC console on the tab or click **Open in new window**.
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
 2. Get a link to the VNC console page.
 
@@ -98,7 +98,7 @@ console=tty0 console=ttyS0,115200n8
 
 <tabpanel>
 
-Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
 - Output all log entries:
 

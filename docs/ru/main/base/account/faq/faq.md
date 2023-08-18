@@ -18,7 +18,7 @@
 
 ## Как добавить дополнительного участника в проект?
 
-Процедура описана в статье [Управление доступами](../instructions/project-settings/access-manage#priglashenie-v-proekt-novogo-uchastnika). При добавлении укажите роль, ориентируясь на [матрицу ролей](../concepts/rolesandpermissions/).
+Процедура описана в статье [Управление доступами](../instructions/project-settings/access-manage#priglashenie_v_proekt_novogo_uchastnika). При добавлении укажите роль, ориентируясь на [матрицу ролей](../concepts/rolesandpermissions/).
 
 ## Как восстановить пароль от учетной записи?
 
@@ -42,7 +42,7 @@
 
 ## Как сменить владельца учетной записи VK Cloud?
 
-Воспользуйтесь инструкцией из статьи [Управление проектом](../instructions/project-settings/manage#smena-vladelca-proekta).
+Воспользуйтесь инструкцией из статьи [Управление проектом](../instructions/project-settings/manage#smena_vladelca_proekta).
 
 ## Может ли участник программы GeekBrains запросить увеличение квот на платформе VK Cloud?
 

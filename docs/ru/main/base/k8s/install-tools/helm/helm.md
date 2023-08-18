@@ -2,7 +2,7 @@
 
 ## Установка
 
-1. [Убедитесь](../../connect/kubectl#proverka-podklyucheniya-k-klasteru), что вы можете подключаться к кластеру с помощью `kubectl` с хоста, на который планируется установить клиент Helm.
+1. [Убедитесь](../../connect/kubectl#proverka_podklyucheniya_k_klasteru), что вы можете подключаться к кластеру с помощью `kubectl` с хоста, на который планируется установить клиент Helm.
 1. Установите клиент Helm на хост любым из способов, описанных в [официальной документации Helm](https://helm.sh/docs/intro/install/).
 
    Выберите наиболее актуальную версию Helm, совместимую с кластером, в котором вы планируете использовать клиент. Таблица совместимости версий Helm и Kubernetes приведена в [официальной документации Helm](https://helm.sh/docs/topics/version_skew/#supported-version-skew).

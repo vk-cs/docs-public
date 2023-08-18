@@ -13,7 +13,7 @@ Unspent funds in your personal account can be returned by contacting [technical 
 
   - [stop](/en/base/iaas/vm-start/manage-vm/vm-state) VM with free licenses;
   - [delete](/en/base/iaas/vm-start/manage-vm/vm-delete) VMs with paid licenses;
-  - [delete](/en/networks/vnet/operations/manage-lb#removing-the-load-balancer) load balancers;
+  - [delete](/en/networks/vnet/operations/manage-lb#removing_the_load_balancer) load balancers;
   - make sure that there are no floating IP addresses left on the project;
   - stop or delete other paid resources.
 

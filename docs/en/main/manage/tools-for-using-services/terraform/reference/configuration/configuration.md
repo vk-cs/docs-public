@@ -15,7 +15,7 @@ The file can have any name. It is recommended to name it `provider.tf`, to highl
 
 The file must be present in all Terraform working directories.
 
-The file is available for [download](../../quick-start#preparatory-steps) in the personal account, on the [Project settings](https://mcs.mail.ru/app/project/terraform) page, on the **Terraform** tab. The downloaded file has the name `vkcs_provider.tf` and contains the settings of one provider (`vkcs`). After downloading the file, edit it — specify your account password in the `password` parameter.
+The file is available for [download](../../quick-start#preparatory_steps) in the personal account, on the [Project settings](https://mcs.mail.ru/app/project/terraform) page, on the **Terraform** tab. The downloaded file has the name `vkcs_provider.tf` and contains the settings of one provider (`vkcs`). After downloading the file, edit it — specify your account password in the `password` parameter.
 
 An example of the file contents:
 
@@ -102,7 +102,7 @@ A typical configuration contains:
 
 The file is required for Terraform startup, it contains the address of the VK Cloud Terraform mirror. The file must be named `terraform.rc` on Windows and `.terraformrc` on other OS. The contents of the file is the same for all projects and regions.
 
-The file is available for [download](../../quick-start#preparatory-steps) on the [Project settings](https://mcs.mail.ru/app/project/terraform) page in the personal account, on the **Terraform** tab. After download, the file can be used as is.
+The file is available for [download](../../quick-start#preparatory_steps) on the [Project settings](https://mcs.mail.ru/app/project/terraform) page in the personal account, on the **Terraform** tab. After download, the file can be used as is.
 
 The file must be located:
 

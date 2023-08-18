@@ -15,7 +15,7 @@ To show the virtual IP address setting:
 
 1. Select the subnet where the virtual machines and virtual IP address will be placed. They must be on the same subnet.
 
-    If the required subnet does not exist, [create it](../../operations/manage-net#sozdanie-podseti).
+    If the required subnet does not exist, [create it](../../operations/manage-net#creating_a_subnet).
 
     Write down the following information:
     - subnet name;
@@ -305,7 +305,7 @@ Write down all received data. Result for the given example:
 
 ## 3. Configure IP Source Guard
 
-The `keepalived` installed on virtual machines should be able to send traffic not only from the IP addresses `192.168.0.11` and `192.168.0.22`, but also from the virtual IP address `192.168.0.254`. Since OpenStack ports in VK Cloud use the [IP Source Guard mechanism](../../concepts/traffic-limiting#ispolzovanie-ip-source-guard), allow traffic from the virtual IP address for virtual machine ports:
+The `keepalived` installed on virtual machines should be able to send traffic not only from the IP addresses `192.168.0.11` and `192.168.0.22`, but also from the virtual IP address `192.168.0.254`. Since OpenStack ports in VK Cloud use the [IP Source Guard mechanism](../../concepts/traffic-limiting#using_ip_source_guard), allow traffic from the virtual IP address for virtual machine ports:
 
 1. For `kld-vm-1`:
 
@@ -377,6 +377,6 @@ Open two terminal sessions:
 If you no longer need the created resources, delete them:
 
 1. [Delete](/ru/base/iaas/vm-start/manage-vm/vm-delete) virtual machines.
-1. [Remove](../../operations/manage-floating-ip#udalenie-plavayushchego-ip-adresa-iz-proekta) the floating IP address assigned to the `kld-jumphost-vm` virtual machine.
-1. [Delete](../../operations/manage-ports#udalenie-porta) the port that has been assigned a virtual IP address.
-1. Delete the [subnet](../../operations/manage-net#udalenie-podseti) and [network](../../operations/manage-net#udalenie-seti) where the virtual cars.
+1. [Remove](../../operations/manage-floating-ip#removing_floating_ip_address_from_the_project) the floating IP address assigned to the `kld-jumphost-vm` virtual machine.
+1. [Delete](../../operations/manage-ports#deleting_a_port) the port that has been assigned a virtual IP address.
+1. Delete the [subnet](../../operations/manage-net#deleting_a_subnet) and [network](../../operations/manage-net#deleting_a_network) where the virtual cars.

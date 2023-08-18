@@ -29,7 +29,7 @@ The page also displays [detailed expenses](../detail) on all projects in which y
 
 ## Making a payment
 
-It is possible to credit funds to the [main account](../../start/balance#main-account) of the project only and in the project currency only.
+It is possible to credit funds to the [main account](../../start/balance#the_main_and_the_bonus_account) of the project only and in the project currency only.
 
 To make a payment:
 

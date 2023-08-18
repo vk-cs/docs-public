@@ -16,7 +16,7 @@ The Ingress controller can be deployed [in conjunction with the HTTP load balanc
 
    Select other cluster settings at your discretion.
 
-1. [Make sure](../../../operations/addons/manage-addons#viewing-addons) that the NGINX Ingress addon (`ingress-nginx`) **is not installed** in the cluster. For demonstration purposes, the Ingress controller will be installed manually.
+1. [Make sure](../../../operations/addons/manage-addons#viewing_addons) that the NGINX Ingress addon (`ingress-nginx`) **is not installed** in the cluster. For demonstration purposes, the Ingress controller will be installed manually.
 
 1. [Make sure](../../../connect/kubectl) that you can connect to the cluster using `kubectl'.
 
@@ -452,5 +452,5 @@ The following will demonstrate how to create an Ingress resource that works excl
 
 1. A running cluster consumes computing resources. If you no longer need it:
 
-   - [stop](../../../operations/manage-cluster#start-or-stop-the-cluster) it to use it later;
-   - [delete](../../../operations/manage-cluster#delete-cluster) it permanently.
+   - [stop](../../../operations/manage-cluster#start_or_stop_the_cluster) it to use it later;
+   - [delete](../../../operations/manage-cluster#delete_cluster) it permanently.

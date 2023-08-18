@@ -11,7 +11,7 @@ The account balance should be positive, and [quotas](/en/base/account/concepts/q
 
 The VK Cloud team has prepared images of some operating systems. The list of ready-made images is available in your personal account in the [window for creating a new instance](https://mcs.mail.ru/app/en/services/infra/servers/add).
 
-If necessary, you can [import an OS image](../../vm-images/vm-images-manage#exporting-an-image) by yourself.
+If necessary, you can [import an OS image](../../vm-images/vm-images-manage#exporting_an_image) by yourself.
 
 ## Create a VM
 
@@ -40,7 +40,7 @@ The available fields may differ for different operating systems.
      - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [VK Cloud Servers service overview](../../../concepts/vm-concept#disks).
      - **Operating system**: select the operating system version or [previously created image](../../vm-images/vm-images-manage/).
      - **Enable monitoring**: enable to use [monitoring tools](/en/manage/monitoring/monitoring-info).
-     - **Tags**: if necessary, [specify the tag](../vm-manage#assigning-tags) for the VM or create a new one.
+     - **Tags**: if necessary, [specify the tag](../vm-manage#assigning_tags) for the VM or create a new one.
 5. Click **Next step**.
 6. Configure the VM connection to the network:
    - **Network**: select an existing network or create a new one. Depending on the choice of network type, the list of available fields will change.
@@ -76,7 +76,7 @@ The available fields may differ for different operating systems.
 
    1. [Enable](/en/base/account/instructions/account-manage/manage-2fa/) two-factor authentication.
    2. [Activate](/en/manage/tools-for-using-services/rest-api/enable-api) API access.
-   3. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+   3. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
 2. Collect the data:
 

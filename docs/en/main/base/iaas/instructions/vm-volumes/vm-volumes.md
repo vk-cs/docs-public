@@ -2,7 +2,7 @@ The data storage system on the VK Cloud platform is organized using network driv
 
 ## Creating a disk
 
-Creating HDD and SSD drives is available by default in all configurations. To create LL NVME discs [contact technical support](/en/contacts) and request access to [high-performance configurations](../../concepts/vm-concept#cpu-and-ram) and disks. Learn more about [disk types](../../concepts/vm-concept#disks) — to the article [VK Cloud Servers overview](../../concepts/vm-concept/).
+Creating HDD and SSD drives is available by default in all configurations. To create LL NVME discs [contact technical support](/en/contacts) and request access to [high-performance configurations](../../concepts/vm-concept#cpu_and_ram) and disks. Learn more about [disk types](../../concepts/vm-concept#disks) — to the article [VK Cloud Servers overview](../../concepts/vm-concept/).
 
 <tabs>
 <tablist>
@@ -51,7 +51,7 @@ Creating HDD and SSD drives is available by default in all configurations. To cr
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
 2. Select in the [table](../../concepts/vm-concept#disks) the type of disk, determine its name in the API and the availability zone suitable for placement.
 
@@ -126,13 +126,13 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
 3. In the window that opens, specify **Disk size**.
 4. Click the button **Save**.
-5. [Reboot](../vm/vm-manage#starting--stopping--reboot-the-vm) the VM.
+5. [Reboot](../vm/vm-manage#starting_stopping_reboot_the_vm) the VM.
 
 </tabpanel>
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
 2. Output a list of disks:
 
@@ -158,7 +158,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
          cinder extend <disk ID> <new size>
       ```
 
-6. [Reboot](../vm/vm-manage#starting--stopping--reboot-the-vm) the VM.
+6. [Reboot](../vm/vm-manage#starting_stopping_reboot_the_vm) the VM.
 
 </tabpanel>
 </tabs>
@@ -201,8 +201,8 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 </tabpanel>
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
-1. [Define](../../concepts/vm-concept#disks-types):
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. [Define](../../concepts/vm-concept#disks_types_b7c586e):
 
    - the desired type of disk;
    - its name in the API;
@@ -231,7 +231,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
 ## Changing the disk type
 
-Creating HDD and SSD drives is available by default in all configurations. To use LL NVME discs [contact technical support](/en/contacts) and request access to [high-performance configurations](../../concepts/vm-concept#cpu-and-ram) and disks. Learn more about [disk types](../../concepts/vm-concept#disks) — to the article [VK Cloud Servers overview](../../concepts/vm-concept/).
+Creating HDD and SSD drives is available by default in all configurations. To use LL NVME discs [contact technical support](/en/contacts) and request access to [high-performance configurations](../../concepts/vm-concept#cpu_and_ram) and disks. Learn more about [disk types](../../concepts/vm-concept#disks) — to the article [VK Cloud Servers overview](../../concepts/vm-concept/).
 
 <tabs>
 
@@ -278,7 +278,7 @@ Creating HDD and SSD drives is available by default in all configurations. To us
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
 2. Select in the [table](../../concepts/vm-concept#disks) a new disk type and define its name in the API.
 
@@ -348,7 +348,7 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
 2. Run the appropriate command.
 
@@ -407,7 +407,7 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
 2. Output a list of disks and copy the disk ID:
 
@@ -483,7 +483,7 @@ To disable the VM's main (root) disk, use the option [Replacing the root disk](#
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
 2. Output a list of disks and copy the disk ID:
 
@@ -514,7 +514,7 @@ To disable the VM's main (root) disk, use the option [Replacing the root disk](#
 
 ## Replacing the root disk
 
-Before replacing the main disk [stop the VM](../vm/vm-manage#starting--stopping--reboot-the-vm).
+Before replacing the main disk [stop the VM](../vm/vm-manage#starting_stopping_reboot_the_vm).
 
 <tabs>
 
@@ -563,7 +563,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#starting--stopping-
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
 2. Get [access token](/en/additionals/cases/case-keystone-token).
 3. View the list of virtual machines and copy the ID of the virtual machine whose main disk needs to be replaced:
@@ -610,7 +610,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#starting--stopping-
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to it (to both projects).
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to it (to both projects).
 
 2. Log in to the project you want to move the disk from.
 3. [Disconnect from VM](#disconnecting-a-disk-from-a-vm) the disk to be moved.
@@ -719,7 +719,7 @@ When you delete a disk, all its snapshots will be deleted.
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
 2. Output a list of disks using the `openstack volume list` command and check its status: if the disk is connected to the VM (`Status`: `in-use`), [disconnect it](#disconnecting-a-disk-from-a-vm).
 
@@ -784,7 +784,7 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
 2. Output a list of disks:
 
@@ -861,7 +861,7 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
 2. Run the appropriate command.
 

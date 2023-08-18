@@ -52,7 +52,7 @@ Images are passed in the body of the request, the values ​​of the name field
 
 <warn>
 
-The method is subject to [restrictions](../../vision-limits#image-processing)
+The method is subject to [restrictions](../../vision-limits#image_processing)
 
 </warn>
 

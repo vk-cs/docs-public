@@ -1,6 +1,6 @@
 <info>
 
-The list of supported Windows OS for migration is listed in the section [Operating system](../../concepts/vm-concept#operating-system).
+The list of supported Windows OS for migration is listed in the section [Operating system](../../concepts/vm-concept#operating_system).
 
 </info>
 
@@ -15,7 +15,7 @@ The Windows Server 2016 CORE edition image is used as an example, the commands a
 1. Configure Hyper-V if this has not been done before.
 1. [Download and install](https://learn.microsoft.com/ru-ru/windows-hardware/get-started/adk-install) Windows ADK.
 1. Download the ISO image of the operating system for which you plan to migrate to VK Cloud. It is recommended to use the en-US version of the image.
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1--install-the-openstack-client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3--complete-authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
 ## 1. Prepare the OS installation WIM file
 
@@ -122,7 +122,7 @@ The installation image may contain several editions of the operating system. Sin
 
 ## 4. Import the image to the VK Cloud
 
-[Use the CLI](../../instructions/vm-images/vm-images-manage#import-obraza) to import an image:
+[Use the CLI](../../instructions/vm-images/vm-images-manage#importing_an_image) to import an image:
 
 ```bash
 openstack image create --private --container-format bare --disk-format qcow2 --file D:\Win_Server_2016_img.qcow2 --property hw_qemu_guest_agent=yes --property store=s3 --property min_ram=2048 --property os_require_quiesce=yes --property min_disk=40 --property os_type=windows --property os_admin_user=Administrator --property mcs:lic:mswinsrv=true --property mcs_name='Windows Server 2016 Standard (en)' --property mcs_os_distro='server' --property mcs_os_edition='std' --property mcs_os_type='windows' --property mcs_os_lang='en' --property mcs_os_type='windows' --property mcs_os_version='2016' --property os_distro='win2k16' <image name>
@@ -132,4 +132,4 @@ Wait for the operation to complete. After downloading the image, you will be abl
 
 ## Monitor resource usage
 
-If you no longer need the imported image, [delete it](../../instructions/vm-images/vm-images-manage#deleting-an-image).
+If you no longer need the imported image, [delete it](../../instructions/vm-images/vm-images-manage#deleting_an_image).

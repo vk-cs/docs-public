@@ -26,7 +26,7 @@ VK Cloud provides [DNS servers](/en/networks/dns/publicdns) to which you can del
 
 The virtual machines that were created from the FreeBSD and Bitrix images offered by the VK Cloud platform do not support working with an external `ext-net` network. To connect via SSH to such a VM, it is necessary that it is on a private network with DHCP enabled.
 
-If SSH connection to the VM is not possible or unavailable, use the [VNC console](../../vm-console#the-vnc-console).
+If SSH connection to the VM is not possible or unavailable, use the [VNC console](../../vm-console#the_vnc_console).
 
 ## 2. Select the user name
 
@@ -57,7 +57,7 @@ If the VM was created on the VK Cloud platform:
 - the public key was saved on the VM automatically;
 - when selecting the option **Create a new key**, the private key in the file with the extension `.pem` was downloaded to the computer from which the VM was created.
 
-If one or both of the keys from the pair are lost, follow the [recovery instructions](../../vm-manage#restoring-vm-access-by-key).
+If one or both of the keys from the pair are lost, follow the [recovery instructions](../../vm-manage#restoring_vm_access_by_key).
 
 ## 4. Connect to the VM
 

@@ -113,7 +113,7 @@
    1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
    1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
-1. Выберите сеть и подсеть, в которых будет размещен балансировщик. [Получите идентификатор](../manage-net#prosmotr-spiska-setey-i-podsetey--a-takzhe-informacii-o-nih) подсети.
+1. Выберите сеть и подсеть, в которых будет размещен балансировщик. [Получите идентификатор](../manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) подсети.
 
 1. Создайте балансировщик:
 
@@ -247,8 +247,8 @@
    1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
    1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
-1. [Получите идентификатор порта](../manage-ports#prosmotr-spiska-portov-i-informacii-o-nih) с Virtual IP для нужного балансировщика нагрузки.
-1. [Привяжите плавающий IP-адрес](../manage-floating-ip#privyazka-plavayushchego-ip-adresa) к порту с этим идентификатором.
+1. [Получите идентификатор порта](../manage-ports#prosmotr_spiska_portov_i_informacii_o_nih) с Virtual IP для нужного балансировщика нагрузки.
+1. [Привяжите плавающий IP-адрес](../manage-floating-ip#privyazka_plavayushchego_ip_adresa) к порту с этим идентификатором.
 
 </tabpanel>
 </tabs>
@@ -285,8 +285,8 @@
    1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
    1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
-1. [Получите идентификатор порта](../manage-ports#prosmotr-spiska-portov-i-informacii-o-nih) с Virtual IP для нужного балансировщика нагрузки.
-1. [Отвяжите плавающий IP-адрес](../manage-floating-ip#otvyazka-plavayushchego-ip-adresa) от порта с этим идентификатором.
+1. [Получите идентификатор порта](../manage-ports#prosmotr_spiska_portov_i_informacii_o_nih) с Virtual IP для нужного балансировщика нагрузки.
+1. [Отвяжите плавающий IP-адрес](../manage-floating-ip#otvyazka_plavayushchego_ip_adresa) от порта с этим идентификатором.
 
 </tabpanel>
 </tabs>
@@ -427,7 +427,7 @@ openstack loadbalancer <команда> --help
 
       Запишите идентификатор созданного пула (`id`).
 
-   1. Определите IP-адреса виртуальных машин, которые будут участниками (members) пула. Также [определите идентификатор](../manage-net#prosmotr-spiska-setey-i-podsetey--a-takzhe-informacii-o-nih) подсети, в которой находятся виртуальные машины.
+   1. Определите IP-адреса виртуальных машин, которые будут участниками (members) пула. Также [определите идентификатор](../manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) подсети, в которой находятся виртуальные машины.
 
       Эти виртуальные машины должны быть либо размещены в подсети, где находится балансировщик, для которого создается правило балансировки, либо доступны из этой подсети.
 

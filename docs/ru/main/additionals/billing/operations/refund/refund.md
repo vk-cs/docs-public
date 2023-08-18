@@ -9,11 +9,11 @@
   - для юридических лиц — на указанный расчетный счет юридического лица на основании заявления на возврат.
 
 - Возврат выполняется в валюте проекта.
-- Если проект [не заморожен](/ru/base/account/concepts/projects#avtomaticheskaya-zamorozka-proekta), то [убедитесь](../detail/), что на нем не осталось платных ресурсов:
+- Если проект [не заморожен](/ru/base/account/concepts/projects#avtomaticheskaya_zamorozka_proekta), то [убедитесь](../detail/), что на нем не осталось платных ресурсов:
 
   - [остановите](/ru/base/iaas/vm-start/manage-vm/vm-state) ВМ с бесплатными лицензиями;
   - [удалите](/ru/base/iaas/vm-start/manage-vm/vm-delete) ВМ с платными лицензиями;
-  - [удалите](/ru/networks/vnet/operations/manage-lb#udalenie-balansirovshchika-nagruzki) балансировщики нагрузки;
+  - [удалите](/ru/networks/vnet/operations/manage-lb#udalenie_balansirovshchika_nagruzki) балансировщики нагрузки;
   - убедитесь, что на проекте не осталось плавающих IP;
   - остановите или удалите другие платные ресурсы.
 

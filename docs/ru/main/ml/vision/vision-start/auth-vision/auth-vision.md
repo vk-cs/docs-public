@@ -56,7 +56,7 @@ curl -X POST '<https://mcs.mail.ru/auth/oauth/v1/token>' \ 
   }'
 ```
 
-Здесь `client_id` и `refresh_token` получены на этапе генерации [OAuth-токенов](../auth-vision#poluchenie-oauth-tokenov).
+Здесь `client_id` и `refresh_token` получены на этапе генерации [OAuth-токенов](../auth-vision#poluchenie_oauth_tokenov).
 
 ## Получение  сервисного токена
 

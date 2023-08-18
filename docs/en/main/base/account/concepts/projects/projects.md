@@ -24,7 +24,7 @@ Some of the objects remain readable, making it possible to transfer data from th
 
 <err>
 
-After the project is frozen, funds continue to be debited in it for data storage and the use of chargeable resources — for example, floating IP addresses. The balance of the project goes further into the negative. You can [preserve the project](../../instructions/project-settings/manage#project-conservation) to stop debiting funds.
+After the project is frozen, funds continue to be debited in it for data storage and the use of chargeable resources — for example, floating IP addresses. The balance of the project goes further into the negative. You can [preserve the project](../../instructions/project-settings/manage#project_conservation) to stop debiting funds.
 
 </err>
 

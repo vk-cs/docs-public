@@ -390,7 +390,7 @@ Detailed performance characteristics for local Low Latency NVME of different vol
 
 1. Before testing, make sure that the following conditions are met:
 
-   - the disk is [non-bootable](../../instructions/vm-volumes#replacing-the-root-disk);
+   - the disk is [non-bootable](../../instructions/vm-volumes#replacing_the_root_disk);
    - there is no load on the disk from the operating system.
 
    When these conditions are met, the IOPS measurement results must correspond to the following values:

@@ -2,7 +2,7 @@ The following describes how to create a cluster from your personal account. It i
 
 <warn>
 
-When installing the cluster, a [service load balancer](/en/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created.
+When installing the cluster, a [service load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
@@ -82,7 +82,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
    </tabpanel>
    </tabs>
 
-   For more information about cluster topologies, see [Architecture](../../../concepts/architecture#cluster-topologies).
+   For more information about cluster topologies, see [Architecture](../../../concepts/architecture#cluster_topologies).
 
 1. Click the **Next step** button.
 
@@ -94,14 +94,14 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
    - Master node settings:
 
-     - **Virtual machine type - Master:** [virtual machine template](../../../concepts/flavors#configuration-templates) for master nodes.
+     - **Virtual machine type - Master:** [virtual machine template](../../../concepts/flavors#configuration_templates) for master nodes.
 
        Templates with high-performance CPUs are available upon request to support. To take advantage of these templates, select the "Show only high performance CPUs" option.
 
-       See [Available computing resources](../../../concepts/flavors#configuration-templates) for details.
+       See [Available computing resources](../../../concepts/flavors#configuration_templates) for details.
 
      - **Availability zone:** [availability zone](../../../../account/concepts/regions) for nodes.
-     - **Master disk type:** [storage type](../../../concepts/storage#supported-vk-cloud-storage-types) which will be used by nodes.
+     - **Master disk type:** [storage type](../../../concepts/storage#supported_vk_cloud_storage_types) which will be used by nodes.
 
        <warn>
 
@@ -111,7 +111,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
      - **Number of Master nodes:** must be an odd number. One node does not provide cluster high availability at the master node level, three nodes or more do.
 
-       For more information about cluster topologies, see [Architecture](../../../concepts/architecture#cluster-topologies).
+       For more information about cluster topologies, see [Architecture](../../../concepts/architecture#cluster_topologies).
 
      - **Disk size on Master node:** the larger the disk size, the better its performance in some disk operations.
 
@@ -119,7 +119,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
      - **Network:** select the network and subnet where the cluster's master and worker nodes will be located. If the desired network and subnet are not on the list, [create](../../../../../networks/vnet/networks/create-net) them.
 
-     - **Use load balancer network**: enable this option to use a separate subnet on the selected network for load balancers created by the cluster. If the desired subnet is not on the list, [create](../../../../../networks/vnet/networks/create-net#subnetting) it.
+     - **Use load balancer network**: enable this option to use a separate subnet on the selected network for load balancers created by the cluster. If the desired subnet is not on the list, [create](../../../../../networks/vnet/networks/create-net#creating_a_subnet) it.
 
        By default, the option is disabled and the load balancers use the same subnet as the cluster nodes.
 

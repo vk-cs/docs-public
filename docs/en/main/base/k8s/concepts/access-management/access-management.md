@@ -8,7 +8,7 @@ Kubernetes clusters version 1.23 and higher are tightly integrated with the VK C
 
 - The user's roles in the personal account affect:
 
-  - [Available operations with clusters in the personal account](../../../../additionals/account/concepts/rolesandpermissions#roles-for-the-containers-service-and-their-permissions).
+  - [Available operations with clusters in the personal account](../../../../additionals/account/concepts/rolesandpermissions#roles_for_the_containers_service_and_their_permissions).
   - [Available actions in the cluster](#relationship-between-the-roles-of-personal-account-and-kubernetes).
 
     A user with a specific personal account role is assigned an appropriate [Kubernetes role](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles). The Kubernetes role defines which cluster objects are available to the user and what actions are allowed to be performed on these objects.

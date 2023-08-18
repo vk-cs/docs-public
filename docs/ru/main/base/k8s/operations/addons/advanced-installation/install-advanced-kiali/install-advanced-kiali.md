@@ -4,9 +4,9 @@
 
 ## Установка аддона
 
-Для аддона доступно [несколько вариантов установки](../../../../concepts/addons-and-settings/addons#osobennosti-ustanovki-addonov).
+Для аддона доступно [несколько вариантов установки](../../../../concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov).
 
-Примите во внимание суммарные [максимальные системные требования](../../../../concepts/addons-and-settings/addons) аддонов, которые будут размещены на группах worker-узлов. При необходимости [выполните ручное масштабирование](../../../scale#vypolnit-ruchnoe-masshtabirovanie) групп worker-узлов или [настройте автоматическое масштабирование](../../../scale#nastroit-avtomaticheskoe-masshtabirovanie--tolko-dlya-grupp-worker-uzlov-) перед установкой.
+Примите во внимание суммарные [максимальные системные требования](../../../../concepts/addons-and-settings/addons) аддонов, которые будут размещены на группах worker-узлов. При необходимости [выполните ручное масштабирование](../../../scale#vypolnit_ruchnoe_masshtabirovanie) групп worker-узлов или [настройте автоматическое масштабирование](../../../scale#nastroit_avtomaticheskoe_masshtabirovanie_tolko_dlya_grupp_worker_uzlov) перед установкой.
 
 <tabs>
 <tablist>
@@ -117,9 +117,9 @@
 
    1. Убедитесь, что в кластере есть выделенная группа worker-узлов, на которых будут размещаться аддоны.
 
-      Если такой группы нет — [добавьте ее](../../../manage-node-group#dobavit-gruppu-worker-uzlov).
+      Если такой группы нет — [добавьте ее](../../../manage-node-group#dobavit_gruppu_worker_uzlov).
 
-   1. [Задайте](../../../manage-node-group#nastroit-metki-i-ogranicheniya) для этой группы узлов, если это еще не сделано:
+   1. [Задайте](../../../manage-node-group#nastroit_metki_i_ogranicheniya) для этой группы узлов, если это еще не сделано:
 
       - **Метку (label)**: ключ `addonNodes`, значение `dedicated`.
       - **Ограничение (taint)**: эффект `NoSchedule`, ключ `addonNodes`, значение `dedicated`.

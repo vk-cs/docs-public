@@ -3,7 +3,7 @@ The distribution of server groups of a single service or application on a cluste
 - If the service has several groups of servers (VMs, DB instances) with the same role, for example, several application servers, distribute them across different physical servers to increase fault tolerance.
 - If there are groups of servers with different roles in the service for which communication latency is critical (for example, an application server and a database server), place them on the same computing node so that traffic passes within the same physical server.
 
-VK Cloud supports [four server group allocation policies](../../concepts/vm-concept#server-group), for `soft` policies, support for the `compute-api` version above 2.15 is required.
+VK Cloud supports [four server group allocation policies](../../concepts/vm-concept#server_group), for `soft` policies, support for the `compute-api` version above 2.15 is required.
 
 <warn>
 
