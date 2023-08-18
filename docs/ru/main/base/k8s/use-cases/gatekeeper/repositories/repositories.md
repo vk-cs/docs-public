@@ -199,5 +199,5 @@
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-   - [остановите](../../../operations/manage-cluster#zapustit-ili-ostanovit-klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../../operations/manage-cluster#udalit-klaster) его навсегда.
+   - [остановите](../../../operations/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+   - [удалите](../../../operations/manage-cluster#udalit_klaster) его навсегда.

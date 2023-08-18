@@ -47,9 +47,9 @@ The option includes multiqueue at the image level and will work for all VMs crea
 
 This option is used when the VM has already been created at the time of enabling multiqueue.
 
-1. [Get the VM UUID](../../instructions/vm/vm-manage#getting-a-virtual-machine-id) через CLI или личный кабинет VK Cloud.
+1. [Get the VM UUID](../../instructions/vm/vm-manage#getting_a_virtual_machine_id) через CLI или личный кабинет VK Cloud.
 1. Contact [technical support](/en/contacts) with a request to connect multiqueue and specifying the UUID of the target VM.
-1. After successfully processing the request from technical support, perform a [forced VM reboot](../../instructions/vm/vm-manage#forced-vm-reboot).
+1. After successfully processing the request from technical support, perform a [forced VM reboot](../../instructions/vm/vm-manage#forced_vm_reboot).
 
 </tabpanel>
 </tabs>

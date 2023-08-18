@@ -48,8 +48,8 @@
 - Обеспечение безопасности на всех этапах работы с кластером:
 
   - При сетевом взаимодействии в кластере все соединения шифруются, используются сертификаты.
-  - Можно применять [сетевые политики](../network#rabota-s-container-network-interface--cni-) ([network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)) Calico.
-  - Можно применять [ограничительные политики](../architecture#vstroennaya-podderzhka-open-policy-agent) ([constraint policies](https://open-policy-agent.github.io/gatekeeper/website/docs/howto)) Gatekeeper.
+  - Можно применять [сетевые политики](../network#rabota_s_container_network_interface_cni) ([network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)) Calico.
+  - Можно применять [ограничительные политики](../architecture#vstroennaya_podderzhka_open_policy_agent) ([constraint policies](https://open-policy-agent.github.io/gatekeeper/website/docs/howto)) Gatekeeper.
   - Доступна интеграция [ролевой модели безопасности Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) с ролями платформы VK Cloud. Подробнее читайте в разделе [Управление доступом](../../concepts/access-management).
 
 - [Резервное копирование](../../use-cases/velero-backup) кластеров Kubernetes VK Cloud с помощью Velero.

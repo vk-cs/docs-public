@@ -1,6 +1,6 @@
 <warn>
 
-При развертывании Ingress-контроллера для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+При развертывании Ingress-контроллера для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
 Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffs).
 
@@ -16,7 +16,7 @@ Ingress-контроллер можно развернуть [в связке с
 
    Прочие параметры кластера выберите на свое усмотрение.
 
-1. [Убедитесь](../../../operations/addons/manage-addons#prosmotr-addonov), что аддон NGINX Ingress (`ingress-nginx`) **не установлен** в кластере. В демонстрационных целях Ingress-контроллер будет установлен вручную.
+1. [Убедитесь](../../../operations/addons/manage-addons#prosmotr_addonov), что аддон NGINX Ingress (`ingress-nginx`) **не установлен** в кластере. В демонстрационных целях Ingress-контроллер будет установлен вручную.
 
 1. [Убедитесь](../../../connect/kubectl), что вы можете подключиться к кластеру с помощью `kubectl`.
 
@@ -297,5 +297,5 @@ deployment.apps/tea      3/3     3            3           ...
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
-   - [остановите](../../../operations/manage-cluster#zapustit-ili-ostanovit-klaster) его, чтобы воспользоваться им позже;
-   - [удалите](../../../operations/manage-cluster#udalit-klaster) его навсегда.
+   - [остановите](../../../operations/manage-cluster#zapustit_ili_ostanovit_klaster) его, чтобы воспользоваться им позже;
+   - [удалите](../../../operations/manage-cluster#udalit_klaster) его навсегда.

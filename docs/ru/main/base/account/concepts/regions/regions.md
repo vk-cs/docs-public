@@ -1,4 +1,4 @@
-Регион — географическая область, объединяющая [зоны доступности](/ru/additionals/start/it-security/platform-security#zony-dostupnosti). В каждой зоне доступности находится один или несколько центров обработки данных (ЦОДов), где физически размещены объекты облачной инфраструктуры.
+Регион — географическая область, объединяющая [зоны доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti). В каждой зоне доступности находится один или несколько центров обработки данных (ЦОДов), где физически размещены объекты облачной инфраструктуры.
 
 Регион назначается каждому [проекту](../projects) автоматически и зависит от URL сайта, на котором владелец проекта [зарегистрировал](/ru/additionals/start/get-started/account-registration) свой аккаунт.
 
@@ -23,7 +23,7 @@
 - набор доступных сервисов;
 - набор [квот](../../concepts/quotasandlimits);
 - адреса [эндпоинтов VK Cloud API](/ru/manage/tools-for-using-services/rest-api);
-- имя региона в файлах конфигурации [openrc](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) и [Terraform](/ru/manage/tools-for-using-services/terraform/quick-start).
+- имя региона в файлах конфигурации [openrc](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) и [Terraform](/ru/manage/tools-for-using-services/terraform/quick-start).
 
 <warn>
 

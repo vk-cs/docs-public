@@ -1,6 +1,6 @@
 <warn>
 
-Before performing any operation on a cluster from Terraform, read the information in [Using Terraform](../helpers/terraform-howto#features-of-using-terraform-to-manage-the-container-service).
+Before performing any operation on a cluster from Terraform, read the information in [Using Terraform](../helpers/terraform-howto#features_of_using_terraform_to_manage_the_container_service).
 
 </warn>
 

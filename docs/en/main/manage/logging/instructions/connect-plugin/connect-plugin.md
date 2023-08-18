@@ -26,7 +26,7 @@ To install and configure Fluent Bit:
    Здесь:
 
    - `auth_url` — Keystone [endpoint](/ru/manage/tools-for-using-services/rest-api/endpoints); required parameter;
-   - `project_id` — project [OpenStack ID](/ru/manage/tools-for-using-services/rest-api/endpoints#getting_project_id); required parameter;
+   - `project_id` — project [OpenStack ID](/en/manage/tools-for-using-services/rest-api/endpoints#getting_project_id); required parameter;
    - `server_host_port` — address of the Cloud Logging service (`cloudlogs.mcs.mail.ru:443`);
    - `user_id` — the name of the user on whose behalf the logs will be recorded;
    - `password` — the password of the specified user.

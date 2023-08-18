@@ -1,4 +1,4 @@
-Various addons (additional services) are available for Kubernetes VK Cloud clusters. They can be selected in any combination and installed either when [creating a cluster using Terraform](../../../operations/create-cluster/create-terraform), or [later](../../../operations/addons/manage-addons#installing-the-addon) in already an existing cluster. The installation process is automated and requires minimal user intervention.
+Various addons (additional services) are available for Kubernetes VK Cloud clusters. They can be selected in any combination and installed either when [creating a cluster using Terraform](../../../operations/create-cluster/create-terraform), or [later](../../../operations/addons/manage-addons#installing_the_addon) in already an existing cluster. The installation process is automated and requires minimal user intervention.
 
 ## Features of installing addons
 
@@ -37,7 +37,7 @@ The availability of specific addons depends on the [region](/en/base/account/con
 
 The system for monitoring the status of the cluster and the services deployed in it is implemented on the basis of [Prometheus](https://prometheus.io/) and visualization tool [Grafana](https://grafana.com/).
 
-See [Cluster Monitoring](../../../monitoring#using-grafana) for details.
+See [Cluster Monitoring](../../../monitoring#using_grafana) for details.
 
 </tabpanel>
 <tabpanel>
@@ -54,7 +54,7 @@ See [Cluster Monitoring](../../../monitoring#using-grafana) for details.
 
 <warn>
 
-When installing the addon, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created.
+When installing the addon, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
@@ -87,7 +87,7 @@ See [Connecting to the Docker registry](../../../connect/docker-registry/) for d
 
 <warn>
 
-When installing the addon, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created.
+When installing the addon, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
@@ -112,7 +112,7 @@ The pre-installed Ingress controller integrates tightly with the VK Cloud platfo
 - **CPU**: 210m–610m.
 - **RAM**: 238Mi–660Mi.
 - **Standard load balancer**: one piece.
-- **Floating IP**: one piece. (when installed with [default settings](../../../operations/addons/advanced-installation/install-advanced-ingress#installing-the-addon)).
+- **Floating IP**: one piece. (when installed with [default settings](../../../operations/addons/advanced-installation/install-advanced-ingress#installing_the_addon)).
 
 </tabpanel>
 </tabs>

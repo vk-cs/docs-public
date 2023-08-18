@@ -2,7 +2,7 @@
 
 VK Cloud is not responsible for the correct operation of third-party software.
 
-[Make a backup copy of the VM](../../instructions/vm-backup/vm-backup-create#manual-backup) before encrypting the disk.
+[Make a backup copy of the VM](../../instructions/vm-backup/vm-backup-create#manual_backup) before encrypting the disk.
 
 </err>
 
@@ -13,7 +13,7 @@ Configure virtual machine disk encryption using [cryptsetup](https://manpages.ub
 Follow the preparatory steps to create a test Linux VM running CentOS 7.9, as well as an additional disk that will be encrypted.
 
 1. [Create the Linux VM](../../instructions/vm/vm-create/) from CentOS 7.9 image.
-2. [Create](../../instructions/vm-volumes#creating-a-disk) and [connect](../../instructions/vm-volumes#connecting-a-disk-to-a-vm) disk to VM.
+2. [Create](../../instructions/vm-volumes#creating_a_disk) and [connect](../../instructions/vm-volumes#connecting_a_disk_to_a_vm) disk to VM.
 3. [Connect to VM](../../instructions/vm/vm-connect/vm-connect-nix/).
 4. Output a list of disks and find the name of the desired disk (for example, `/dev/vdb`):
 
@@ -90,7 +90,7 @@ Restarting the VM before [bootloader configuration](#3--change-the-loader-parame
 
 </err>
 
-1. Make the disk [non-bootable](../../instructions/vm-volumes#replacing-the-root-disk).
+1. Make the disk [non-bootable](../../instructions/vm-volumes#replacing_the_root_disk).
 2. Stop all processes using the disk:
 
    ```bash
@@ -213,7 +213,7 @@ Restarting the VM before the bootloader configuration is completed will result i
 
 </err>
 
-Configure the bootloader so that the passphrase for decrypting the disk is requested when the system boots. To enter a passphrase, use the [VNC console](../../instructions/vm/vm-console#the-vnc-console) of the VM.
+Configure the bootloader so that the passphrase for decrypting the disk is requested when the system boots. To enter a passphrase, use the [VNC console](../../instructions/vm/vm-console#the_vnc_console) of the VM.
 
 1. Change the settings of the `grub` loader. Remove the `console=ttyS0,115200` setting in the bootloader parameters:
 
@@ -237,7 +237,7 @@ Configure the bootloader so that the passphrase for decrypting the disk is reque
 
 ## 4. Get access to the VM
 
-1. Go to the [VNC Console](../../instructions/vm/vm-console#the-vnc-console) virtual machine. In the console output, when the operating system boots, you will be prompted to enter a keyword:
+1. Go to the [VNC Console](../../instructions/vm/vm-console#the_vnc_console) virtual machine. In the console output, when the operating system boots, you will be prompted to enter a keyword:
 
    ```bash
    Please enter passphrase for disk vdb_crypt on /volumes/disk1:

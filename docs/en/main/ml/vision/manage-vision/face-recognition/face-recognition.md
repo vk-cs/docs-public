@@ -48,7 +48,7 @@ A client can have up to 10 different spaces. `Space` values ​​range from `0`
 
 <warn>
 
-The method is subject to [restrictions](../../vision-limits#image-processing)
+The method is subject to [restrictions](../../vision-limits#image_processing)
 
 </warn>
 
@@ -316,7 +316,7 @@ Images are passed in the body of the request, the values ​​of the name field
 
 <warn>
 
-The method is subject to [restrictions](../../vision-limits#image-processing)
+The method is subject to [restrictions](../../vision-limits#image_processing)
 
 </warn>
 
@@ -718,7 +718,7 @@ Images are passed in the body of the request, the values ​​of the name field
 
 <warn>
 
-The method is subject to [restrictions](../../vision-limits#image-processing)
+The method is subject to [restrictions](../../vision-limits#image_processing)
 
 </warn>
 

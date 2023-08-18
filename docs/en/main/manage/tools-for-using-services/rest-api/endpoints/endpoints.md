@@ -26,7 +26,7 @@ To see the list of endpoints for your region:
 
 <info>
 
-The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown in the personal account allows [viewing VM logs](/en/manage/logging/start/view-logs#34-5).
+The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown in the personal account allows [viewing VM logs](/en/manage/logging/start/view-logs).
 
 </info>
 
@@ -94,7 +94,7 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 
 The addresses of some endpoints contain the variable `<project_id>`. When creating a request, replace this variable with the Project ID of the current project.
 
-The Project ID does not match the [project ID](/en/base/account/instructions/project-settings/manage#getting-the-project-id) to VK Cloud personal account. This is another identifier that is used in configuration files:
+The Project ID does not match the [project ID](/en/base/account/instructions/project-settings/manage#getting_the_project_id) to VK Cloud personal account. This is another identifier that is used in configuration files:
 
 - In `openrc.sh`, as the value of the variable `OS_PROJECT_ID`. This file is required to work with additional tools such as the OpenStack CLI or cURL.
 - In `vkcs_provider.tf`, as the value of the `project_id` parameter. This file is required to work through Terraform.

@@ -167,7 +167,7 @@ yum install jq -y
 
 ## Пример использования
 
-[Получить список](/ru/manage/backups/api-examples#poluchit-spisok-sozdannyh-planov-rezervnogo-kopirovaniya) планов через Karboii API в отформатированном JSON.
+[Получить список](/ru/manage/backups/api-examples#poluchit_spisok_sozdannyh_planov_rezervnogo_kopirovaniya) планов через Karboii API в отформатированном JSON.
 
 Команда:
 

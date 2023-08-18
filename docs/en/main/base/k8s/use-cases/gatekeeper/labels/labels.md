@@ -196,5 +196,5 @@ To demonstrate how Gatekeeper works, the following will be created:
 
 1. A running cluster consumes computing resources. If you no longer need it:
 
-   - [stop](../../../operations/manage-cluster#start-or-stop-the-cluster) it to use it later;
-   - [delete](../../../operations/manage-cluster#delete-cluster) it permanently.
+   - [stop](../../../operations/manage-cluster#start_or_stop_the_cluster) it to use it later;
+   - [delete](../../../operations/manage-cluster#delete_cluster) it permanently.

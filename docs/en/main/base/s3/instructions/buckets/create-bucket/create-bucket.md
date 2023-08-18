@@ -18,7 +18,7 @@ You can create a bucket both in the VK Cloud Panel and using the S3 CLI.
 
 <warn>
 
-There is a limit on the number of buckets in one project, for more information, see the article [Quotas and limits](/en/base/account/concepts/quotasandlimits#technical-limits)
+There is a limit on the number of buckets in one project, for more information, see the article [Quotas and limits](/en/base/account/concepts/quotasandlimits#object_storage_s3_eab9d41b)
 
 </warn>
 

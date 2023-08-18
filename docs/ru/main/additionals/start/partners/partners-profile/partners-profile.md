@@ -31,7 +31,7 @@
 
 <warn>
 
-Если с вами не связались в течение 48 часов, обратитесь, пожалуйста, в службу поддержки по [указанным контактам](/additionals/start/support/support-info#sposoby-obrashcheniya).
+Если с вами не связались в течение 48 часов, обратитесь, пожалуйста, в службу поддержки по [указанным контактам](/additionals/start/support/support-info#sposoby_obrashcheniya).
 
 </warn>
 

@@ -164,5 +164,5 @@ Create a VM by selecting the downloaded image as the operating system, according
 The created resources are charged and consume computing resources. If you don't need them anymore:
 
 - [Delete](/en/base/iaas/instructions/vm-images/vm-images-manage#deleting_an_image) загруженный образ из объектного хранилища.
-- [Delete](/en/base/iaas/instructions/vm/vm-manage#deleting_a_vm) or [stop](/en/base/iaas/instructions/vm/vm-manage#starting-_stopping-_reboot_the_vm) VM.
+- [Delete](/en/base/iaas/instructions/vm/vm-manage#deleting_a_vm) or [stop](/en/base/iaas/instructions/vm/vm-manage#starting_stopping_reboot_the_vm) VM.
 - [Delete](/en/base/iaas/instructions/vm-volumes#deleting_a_disk) диск.

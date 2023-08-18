@@ -594,4 +594,4 @@ The monitoring feature [was enabled during the instance creation](#1--create-pos
 The DB instance [is charged](../tariffication) and consumes computational resources. If you no longer need it, then:
 
 1. [Delete DB instance](../instructions/delete).
-1. If necessary, [delete floating IP address](/en/networks/vnet/operations/manage-floating-ip#removing-floating-ip-address-from-the-project), that was assigned to the DB instance. Floating IP addresses, that exist in the project, [are charged](/en/networks/vnet/tariffs).
+1. If necessary, [delete floating IP address](/en/networks/vnet/operations/manage-floating-ip#removing_floating_ip_address_from_the_project), that was assigned to the DB instance. Floating IP addresses, that exist in the project, [are charged](/en/networks/vnet/tariffs).

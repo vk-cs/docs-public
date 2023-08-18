@@ -12,9 +12,9 @@ To join an existing VK Cloud project, follow the instructions in article [Join a
 
 ## 1. Register an account
 
-1. [Create](/en/additionals/start/get-started/account-registration#registration-in-the-personal-account) a VK Cloud account.
+1. [Create](/en/additionals/start/get-started/account-registration#registration_in_the_personal_account) a VK Cloud account.
 
-1. [Confirm](/en/additionals/start/get-started/account-registration#account-confirmation) your account.
+1. [Confirm](/en/additionals/start/get-started/account-registration#account_confirmation) your account.
 
 During the registration, a new VK Cloud [project](/en/base/account/concepts/projects) is created for your account. In the personal account page that opens, you can create and connect the necessary objects: virtual machines, databases, etc.
 

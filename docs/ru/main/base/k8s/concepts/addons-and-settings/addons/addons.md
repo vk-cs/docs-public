@@ -1,4 +1,4 @@
-Для кластеров Kubernetes VK Cloud доступны различные аддоны (дополнительные сервисы). Их можно выбрать в любой комбинации и установить либо при [создании кластера с помощью Terraform](../../../operations/create-cluster/create-terraform), либо [позднее](../../../operations/addons/manage-addons#ustanovka-addona) в уже существующий кластер. Процесс установки автоматизирован и требует минимального вмешательства пользователя.
+Для кластеров Kubernetes VK Cloud доступны различные аддоны (дополнительные сервисы). Их можно выбрать в любой комбинации и установить либо при [создании кластера с помощью Terraform](../../../operations/create-cluster/create-terraform), либо [позднее](../../../operations/addons/manage-addons#ustanovka_addona) в уже существующий кластер. Процесс установки автоматизирован и требует минимального вмешательства пользователя.
 
 ## Особенности установки аддонов
 
@@ -37,7 +37,7 @@
 
 Система мониторинга состояния кластера и развернутых в нем сервисов реализована на базе [Prometheus](https://prometheus.io/) и инструмента визуализации [Grafana](https://grafana.com/).
 
-Подробнее в разделе [Мониторинг кластера](../../../monitoring#ispolzovanie-grafana).
+Подробнее в разделе [Мониторинг кластера](../../../monitoring#ispolzovanie_grafana).
 
 </tabpanel>
 <tabpanel>
@@ -54,7 +54,7 @@
 
 <warn>
 
-При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
 Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffs).
 
@@ -87,7 +87,7 @@
 
 <warn>
 
-При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy-balansirovshchikov-nagruzki).
+При установке аддона для него будет создан [стандартный балансировщик нагрузки](/ru/networks/vnet/concepts/load-balancer#tipy_balansirovshchikov_nagruzki).
 
 Использование балансировщика [тарифицируется](/ru/networks/vnet/tariffs).
 
@@ -112,7 +112,7 @@ Ingress-контроллер тесно интегрируется с платф
 - **CPU**: 210m–610m.
 - **RAM**: 238Mi–660Mi.
 - **Стандартный балансировщик нагрузки**: одна штука.
-- **Плавающий IP**: одна штука (при установке с [настройками по умолчанию](../../../operations/addons/advanced-installation/install-advanced-ingress#ustanovka-addona)).
+- **Плавающий IP**: одна штука (при установке с [настройками по умолчанию](../../../operations/addons/advanced-installation/install-advanced-ingress#ustanovka_addona)).
 
 </tabpanel>
 </tabs>
