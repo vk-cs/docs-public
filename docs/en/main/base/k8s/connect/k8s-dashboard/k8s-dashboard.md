@@ -9,7 +9,7 @@ To connect to Kubernetes Dashboard, a browser must be installed on the host.
 
 ## Preparatory steps
 
-1. [Make sure](../kubectl#checking-the-connection-to-the-cluster) that you can connect to the cluster using `kubectl`.
+1. [Make sure](../kubectl#checking_the_connection_to_the_cluster) that you can connect to the cluster using `kubectl`.
 
 1. On the host from which you plan to connect to the cluster, install `kauthproxy` if the utility is not already installed:
 

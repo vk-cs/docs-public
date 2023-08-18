@@ -2,7 +2,7 @@
 
 You can enlarge the disk using the VK Cloud panel in the **Virtual Machines** or **Disks** section of the **Cloud Computing** service.
 
-Full information is available in the article about [disk expansion](../../instructions/vm-volumes#increasing-the-disk-size).
+Full information is available in the article about [disk expansion](../../instructions/vm-volumes#increasing_the_disk_size).
 
 ## Unable to shrink disk
 
@@ -26,7 +26,7 @@ Compare the obtained indicators with the [guaranteed disk performance](../../con
 
 <info>
 
-To increase performance, you can [increase the size](../../instructions/vm-volumes#increasing-the-disk-size) or [change](../../instructions/vm-volumes#changing-the-disk-type) disk type.
+To increase performance, you can [increase the size](../../instructions/vm-volumes#increasing_the_disk_size) or [change](../../instructions/vm-volumes#changing_the_disk_type) disk type.
 
 </info>
 
@@ -36,11 +36,11 @@ At the time of migration, there may be a decrease in read-only performance, but 
 
 ## I can't delete a disk
 
-Make sure that the disk [is disabled](../../instructions/vm-volumes#disconnecting-a-disk-from-a-VM) from VM — after that, delete the disk in the **Cloud Computing** → **Disks** section.
+Make sure that the disk [is disabled](../../instructions/vm-volumes#disconnecting_a_disk_from_a_vm) from VM — after that, delete the disk in the **Cloud Computing** → **Disks** section.
 
 ## How do I transfer a VM disk to another project?
 
-Use the [instructions](../../instructions/vm-volumes#transfer-disks-between-projects).
+Use the [instructions](../../instructions/vm-volumes#transfer_disks_between_projects).
 
 ## How do I upload my OS image?
 
@@ -48,15 +48,15 @@ The VK Cloud platform allows the creation of virtual machines from previously pr
 
 ## How do I change the VM's root disk?
 
-Replacement of the root disk is possible only if another disk has already been created in the VK Cloud project. It can be either an empty disk or a boot disk containing the operating system. Instructions are given in the article about [replacing the root disk](../../instructions/vm-volumes#replacing-the-root-disk).
+Replacement of the root disk is possible only if another disk has already been created in the VK Cloud project. It can be either an empty disk or a boot disk containing the operating system. Instructions are given in the article about [replacing the root disk](../../instructions/vm-volumes#replacing_the_root_disk).
 
 ## Is it possible to create a disk snapshot?
 
-Creating a disk snapshot is available from [VK Cloud personal account or OpenStack CLI](../../instructions/vm-volumes#disk-snapshots). The created snapshot will be stored until the disk itself is deleted.
+Creating a disk snapshot is available from [VK Cloud personal account or OpenStack CLI](../../instructions/vm-volumes#disk_snapshots). The created snapshot will be stored until the disk itself is deleted.
 
 ## How do I restore a disk from a snapshot?
 
-Use the [instructions](../../instructions/vm-volumes#disk-snapshots).
+Use the [instructions](../../instructions/vm-volumes#disk_snapshots).
 
 ## How fast does the disk type change?
 

@@ -39,7 +39,7 @@ An error occurred (InvalidArgument) when calling the UploadPart operation: Part 
 
 1. [Создайте](/ru/base/iaas/instructions/vm/vm-create) ВМ Ubuntu 22.04 в облаке VK Cloud.
 1. Установите на ВМ утилиту [gzip](https://www.gnu.org/software/gzip/manual/gzip.html).
-1. [Создайте](/ru/base/iaas/instructions/vm-volumes#sozdanie-diska) диск размером не менее 600 ГБ и [подключите](/ru/base/iaas/instructions/vm-volumes#podklyuchenie-diska-k-vm) его к ВМ.
+1. [Создайте](/ru/base/iaas/instructions/vm-volumes#sozdanie_diska) диск размером не менее 600 ГБ и [подключите](/ru/base/iaas/instructions/vm-volumes#podklyuchenie_diska_k_vm) его к ВМ.
 
 ## 2. Загрузите образ в объектное хранилище
 
@@ -153,7 +153,7 @@ An error occurred (InvalidArgument) when calling the UploadPart operation: Part 
 
 ## 4. Создайте образ из диска
 
-Воспользуйтесь [инструкцией](/ru/base/iaas/instructions/vm-images/vm-images-manage#sozdanie-obraza).
+Воспользуйтесь [инструкцией](/ru/base/iaas/instructions/vm-images/vm-images-manage#sozdanie_obraza).
 
 ## 5. Проверьте работоспособность образа
 
@@ -163,6 +163,6 @@ An error occurred (InvalidArgument) when calling the UploadPart operation: Part 
 
 Созданные ресурсы тарифицируются и потребляют вычислительные ресурсы. Если они вам больше не нужны:
 
-- [Удалите](/ru/base/iaas/instructions/vm-images/vm-images-manage#udalenie-obraza) загруженный образ из объектного хранилища.
-- [Удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie-vm) или [остановите](/ru/base/iaas/instructions/vm/vm-manage#zapusk--ostanovka--perezagruzka-vm) ВМ.
-- [Удалите](/ru/base/iaas/instructions/vm-volumes#udalenie-diska) диск.
+- [Удалите](/ru/base/iaas/instructions/vm-images/vm-images-manage#udalenie_obraza) загруженный образ из объектного хранилища.
+- [Удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie_vm) или [остановите](/ru/base/iaas/instructions/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm) ВМ.
+- [Удалите](/ru/base/iaas/instructions/vm-volumes#udalenie_diska) диск.

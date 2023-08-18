@@ -6,7 +6,7 @@ For all Kubernetes services of the `spec.type: LoadBalancer` type, the VK Cloud 
 
   - Selecting random replica (default).
 
-    The balancer behaves this way because `kube-proxy` in Kubernetes VK Cloud clusters [works](../../concepts/addons-and-settings/settings#kube-proxy-operation-mode) in `iptables` mode.
+    The balancer behaves this way because `kube-proxy` in Kubernetes VK Cloud clusters [works](../../concepts/addons-and-settings/settings#kube_proxy_operation_mode) in `iptables` mode.
     See [official Kubernetes documentation](https://kubernetes.io/docs/concepts/services-networking/service/#proxy-mode-iptables) for details.
 
   - Bounding a replica to a specific IP address.
@@ -381,9 +381,9 @@ Read more about services and load balancers in [official Kubernetes documentatio
    </tabpanel>
    </tabs>
 
-1. If you no longer need the static public IP address that was assigned to the `coffee-svc-public-static-ip` service, [delete it](../../../../networks/vnet/networks/fip#releasing-floating-ip).
+1. If you no longer need the static public IP address that was assigned to the `coffee-svc-public-static-ip` service, [delete it](../../../../networks/vnet/networks/fip#removing_floating_ip_address_from_the_project).
 
 1. A running cluster consumes computing resources. If you no longer need it:
 
-   - [stop](../../operations/manage-cluster#start-or-stop-the-cluster) it to use it later;
-   - [delete](../../operations/manage-cluster#delete-cluster) it permanently.
+   - [stop](../../operations/manage-cluster#start_or_stop_the_cluster) it to use it later;
+   - [delete](../../operations/manage-cluster#delete_cluster) it permanently.

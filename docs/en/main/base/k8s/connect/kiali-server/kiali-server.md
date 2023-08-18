@@ -1,4 +1,4 @@
-Kiali is a web interface for working with Istio. You can connect to Kiali if the appropriate [addon](../../concepts/addons-and-settings/addons#kiali) is installed in the cluster.
+Kiali is a web interface for working with Istio. You can connect to Kiali if the appropriate [addon](../../concepts/addons-and-settings/addons#kiali_4a5be2e9) is installed in the cluster.
 
 The way to connect to Kubernetes Dashboard depends on the IP address of the cluster:
 
@@ -9,7 +9,7 @@ To connect to Kiali, a browser must be installed on the host.
 
 ## Preparatory steps
 
-[Make sure](../kubectl#checking-the-connection-to-the-cluster) that you can connect to the cluster using `kubectl` from the host that is planned to be used to connect to Kiali.
+[Make sure](../kubectl#checking_the_connection_to_the_cluster) that you can connect to the cluster using `kubectl` from the host that is planned to be used to connect to Kiali.
 
 1. On the same host install `kauthproxy` if the utility is not already installed:
 
@@ -28,7 +28,7 @@ To connect to Kiali, a browser must be installed on the host.
 
 ## Connecting to Kiali
 
-1. [Make sure](../../operations/addons/manage-addons#viewing-addons) that the Kiali addon (`kiali`) [is installed](../../operations/addons/advanced-installation/install-advanced-kiali) in the cluster.
+1. [Make sure](../../operations/addons/manage-addons#viewing_addons) that the Kiali addon (`kiali`) [is installed](../../operations/addons/advanced-installation/install-advanced-kiali) in the cluster.
 
    <info>
 

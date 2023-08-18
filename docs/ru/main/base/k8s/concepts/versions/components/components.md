@@ -18,7 +18,7 @@
 
 ## Аддоны
 
-Необходимые аддоны могут быть [установлены](../../../operations/addons/manage-addons#ustanovka-addona) в кластер отдельно.
+Необходимые аддоны могут быть [установлены](../../../operations/addons/manage-addons#ustanovka_addona) в кластер отдельно.
 
 <!-- prettier-ignore -->
 | Аддон                                                                             | Kubernetes 1.21.4–1.22.x  | Kubernetes 1.23.x–1.25.x  |

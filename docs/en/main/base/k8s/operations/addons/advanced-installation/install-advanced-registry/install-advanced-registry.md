@@ -40,7 +40,7 @@
 
    Write down the output of the command (in the format `<login>:<encrypted password>`).
 
-1. [Add](/en/networks/vnet/operations/manage-floating-ip#adding-floating-ip-address-to-the-project) floating IP or [find](/en/networks/vnet/operations/manage-floating-ip#viewing-a-list-of-floating-ip-addresses) an existing unbound floating IP address.
+1. [Add](/en/networks/vnet/operations/manage-floating-ip#adding_floating_ip_address_to_the_project) floating IP or [find](/en/networks/vnet/operations/manage-floating-ip#viewing_a_list_of_floating_ip_addresses) an existing unbound floating IP address.
 
    Write down this IP address. It will be used to access the Docker registry.
 
@@ -48,18 +48,18 @@
 
 <warn>
 
-When installing the addon, [standard load balancers](/en/main/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created for them.
+When installing the addon, [standard load balancers](/en/main/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created for them.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
 </warn>
 
-[Several installation options](../../../../concepts/addons-and-settings/addons#features-of-installing-addons) are available for the addon:
+[Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the addon:
 
 - standard installation;
 - installation on dedicated worker nodes.
 
-Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#do-manual-scaling) for groups of worker nodes or [configure automatic scaling](../../../scale#configure-automatic-scaling--only-for-worker-node-groups-) before install.
+Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#do_manual_scaling) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_only_for_worker_node_groups) before install.
 
 <tabs>
 <tablist>
@@ -170,9 +170,9 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    1. Make sure that the cluster has a dedicated group of worker nodes that will host addons.
 
-      If there is no such group — [add it](../../../manage-node-group#add-worker-node-group).
+      If there is no such group — [add it](../../../manage-node-group#add_worker_node_group).
 
-   1. [Customise](../../../manage-node-group#customise-labels-and-taints) for this node group, if it hasn't already been done:
+   1. [Customise](../../../manage-node-group#customise_labels_and_taints) for this node group, if it hasn't already been done:
 
       - **Kubernetes labels**: key `addonNodes`, value `dedicated`.
       - **Node taints**: effect `NoSchedule`, key `addonNodes`, value `dedicated`.

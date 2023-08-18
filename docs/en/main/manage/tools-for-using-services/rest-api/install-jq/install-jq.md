@@ -167,7 +167,7 @@ Use the package manager that is convenient for you:
 
 ## Usage example
 
-[Get the list](/en/manage/backups/api-examples#get-a-list-of-created-backup-plans) plans via Karboii API in formatted JSON.
+[Get the list](/en/manage/backups/api-examples#get_a_list_of_created_backup_plans) plans via Karboii API in formatted JSON.
 
 Command:
 

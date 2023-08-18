@@ -4,7 +4,7 @@ Ready-to-use examples of configuration files to create different clusters are li
 
 <warn>
 
-When installing the cluster, a [service load balancer](/en/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created. When you select [addon](../../../concepts/addons-and-settings/addons/) NGINX Ingress Controller, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types-of-load-balancers) will be created for it.
+When installing the cluster, a [service load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created. When you select [addon](../../../concepts/addons-and-settings/addons/) NGINX Ingress Controller, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created for it.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
@@ -74,7 +74,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
 1. Add data sources to the configuration file:
 
-   1. [Virtual machine template](../../../concepts/flavors#configuration-templates) for master nodes. Example:
+   1. [Virtual machine template](../../../concepts/flavors#configuration_templates) for master nodes. Example:
 
       ```hcl
       data "vkcs_compute_flavor" "k8s-master-flavor" {
@@ -199,7 +199,7 @@ Some clarification:
 
 - For the `Moscow` region, specify one of two availability zones in the `availability_zone` parameter: `MS1` or `GZ1`.
 
-- It is recommended to assign a public IP address to the cluster when creating it, so that you can access the cluster from the Internet (`floating_ip_enabled = true`). To assing such an IP address, it is necessary for the subnet with the `subnet_id` identifier to be [connected](/en/networks/vnet/concepts/ips-and-inet#organizing-internet-access) to the router which has access to the external network.
+- It is recommended to assign a public IP address to the cluster when creating it, so that you can access the cluster from the Internet (`floating_ip_enabled = true`). To assing such an IP address, it is necessary for the subnet with the `subnet_id` identifier to be [connected](/en/networks/vnet/concepts/ips-and-inet#organizing_internet_access) to the router which has access to the external network.
 
 - If some of the addons are not needed, delete the corresponding lines from the `labels` block. See [Addons](../../../concepts/addons-and-settings/addons/) for details.
 

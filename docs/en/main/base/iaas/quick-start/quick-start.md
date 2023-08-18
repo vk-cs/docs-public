@@ -159,5 +159,5 @@ In Windows 7/8, use the PuTTY application to connect via SSH.
 
 A running VM consumes computing resources. If you don't need it anymore:
 
-- [stop](../instructions/vm/vm-manage#starting--stopping--reboot-the-vm) it to use it later;
-- [delete](../instructions/vm/vm-manage#deleting-a-vm) it.
+- [stop](../instructions/vm/vm-manage#starting_stopping_reboot_the_vm) it to use it later;
+- [delete](../instructions/vm/vm-manage#deleting_a_vm) it.

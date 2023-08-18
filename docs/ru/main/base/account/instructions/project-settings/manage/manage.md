@@ -73,13 +73,13 @@
 
 <info>
 
-Новому владельцу может потребоваться [привязать карту оплаты](../../activation#privyazka-bankovskoy-karty), если у проекта нет привязанной карты, и [подтвердить номер телефона](../../activation).
+Новому владельцу может потребоваться [привязать карту оплаты](../../activation#privyazka_bankovskoy_karty), если у проекта нет привязанной карты, и [подтвердить номер телефона](../../activation).
 
 </info>
 
 ## Консервация проекта
 
-Если вы хотите приостановить работу в проекте, законсервируйте проект, чтобы прекратить списание средств. Если проект уйдет в минус, он будет [заморожен](../../../concepts/projects#avtomaticheskaya-zamorozka-proekta) с последующим удалением объектов и данных.
+Если вы хотите приостановить работу в проекте, законсервируйте проект, чтобы прекратить списание средств. Если проект уйдет в минус, он будет [заморожен](../../../concepts/projects#avtomaticheskaya_zamorozka_proekta) с последующим удалением объектов и данных.
 
 Чтобы законсервировать проект:
 
@@ -92,13 +92,13 @@
 
 1. Перенесите или скопируйте все необходимые данные.
 
-    Например, [создайте](/ru/base/iaas/instructions/vm-images/vm-images-manage#sozdanie-obraza) и [экспортируйте](/ru/base/iaas/instructions/vm-images/vm-images-manage#eksport-obraza) образы дисков виртуальных машин, остановленных на предыдущем шаге.
+    Например, [создайте](/ru/base/iaas/instructions/vm-images/vm-images-manage#sozdanie_obraza) и [экспортируйте](/ru/base/iaas/instructions/vm-images/vm-images-manage#eksport_obraza) образы дисков виртуальных машин, остановленных на предыдущем шаге.
 
 1. Удалите все объекты, которые тарифицируются или занимают дисковое пространство — плавающие IP-адреса, диски, бакеты, балансировщики нагрузки и другие.
 
     Полный список таких объектов — также на странице **Баланс и платежи**.
 
-    Так как загрузочные диски виртуальных машин нельзя удалить отдельно, [удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie-vm) виртуальные машины.
+    Так как загрузочные диски виртуальных машин нельзя удалить отдельно, [удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie_vm) виртуальные машины.
 
     Объекты, которые не потребляют ресурсы — например, сети и подсети — можно оставить в проекте.
 
@@ -106,9 +106,9 @@
 
 ## Передача объектов между проектами
 
-Вы можете [переносить диски](/ru/base/iaas/instructions/vm-volumes#peremeshchenie-diskov-mezhdu-proektami) из проекта в проект. Это позволяет переносить между проектами виртуальные машины.
+Вы можете [переносить диски](/ru/base/iaas/instructions/vm-volumes#peremeshchenie_diskov_mezhdu_proektami) из проекта в проект. Это позволяет переносить между проектами виртуальные машины.
 
-Перенос дисков возможен только в рамках одного региона. Если проекты находятся в разных регионах, [выгрузите](/ru/base/iaas/instructions/vm-images/vm-images-manage#eksport-obraza) локально образ диска и [загрузите](/ru/base/iaas/instructions/vm-images/vm-images-manage#import-obraza) его в новый проект.
+Перенос дисков возможен только в рамках одного региона. Если проекты находятся в разных регионах, [выгрузите](/ru/base/iaas/instructions/vm-images/vm-images-manage#eksport_obraza) локально образ диска и [загрузите](/ru/base/iaas/instructions/vm-images/vm-images-manage#import_obraza) его в новый проект.
 
 В настоящее время перенос объектов PaaS-сервисов между проектами не поддерживается. Например, виртуальная машина, на которой была развернута база данных, может быть перенесена в другой проект только как обычная виртуальная машина. Перенести такую виртуальную машину как инстанс базы данных или создать инстанс базы данных с диском, перенесенным из другого проекта, невозможно.
 
@@ -143,7 +143,7 @@
 
 Чтобы получить расширенный список квот для проекта:
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Введите в консоли команду:
 
     ```bash
@@ -282,7 +282,7 @@
     </tabpanel>
     </tabs>
 
-    Чтобы посмотреть квоты по другим компонентам OpenStack, [установите](/ru/manage/tools-for-using-services/openstack-cli#2--ustanovite-dopolnitelnye-pakety) соответствующие пакеты клиента OpenStack (`manila`, `neutron` и другие) и используйте команду, специфичную для пакета. Чтобы узнать синтаксис команды, установите соответствующий пакет и выполните `<component> help quota-show`, например, `manila help quota-show`.
+    Чтобы посмотреть квоты по другим компонентам OpenStack, [установите](/ru/manage/tools-for-using-services/openstack-cli#2_ustanovite_dopolnitelnye_pakety) соответствующие пакеты клиента OpenStack (`manila`, `neutron` и другие) и используйте команду, специфичную для пакета. Чтобы узнать синтаксис команды, установите соответствующий пакет и выполните `<component> help quota-show`, например, `manila help quota-show`.
 
 </tabpanel>
 </tabs>
@@ -296,7 +296,7 @@
 
 <info>
 
-Информация об увеличении квот [для участников программы GeekBrains](../../../faq#mozhet-li-uchastnik-programmy-geekbrains-zaprosit-uvelichenie-kvot-na-platforme-vk-cloud-).
+Информация об увеличении квот [для участников программы GeekBrains](../../../faq#mozhet_li_uchastnik_programmy_geekbrains_zaprosit_uvelichenie_kvot_na_platforme_vk_cloud).
 
 </info>
 

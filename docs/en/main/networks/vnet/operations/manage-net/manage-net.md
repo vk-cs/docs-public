@@ -2,7 +2,7 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
 <warn>
 
-[Shared networks](../../concepts/net-types#shared-network) can be managed only from the owner project.
+[Shared networks](../../concepts/net-types#shared_network) can be managed only from the owner project.
 
 </warn>
 
@@ -174,7 +174,7 @@ Once a network is created, it will appear in the list of networks.
 
 All the network's subnets and ports will be deleted along with the network.
 
-[A shared network](../../concepts/net-types#shared-network) can be deleted only via the support request.
+[A shared network](../../concepts/net-types#shared_network) can be deleted only via the support request.
 
 </warn>
 

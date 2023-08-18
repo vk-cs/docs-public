@@ -4,12 +4,12 @@
 
   Они обеспечивают базовые возможности мониторинга, позволяя посмотреть информацию о ресурсах Kubernetes.
 
-- [Аддон мониторинга](../concepts/addons-and-settings/addons#kube-prometheus-stack).
+- [Аддон мониторинга](../concepts/addons-and-settings/addons#kube_prometheus_stack_2926e986).
 
   Он обеспечивает расширенные возможности мониторинга кластера, позволяя посмотреть метрики по множеству ресурсов Kubernetes, вплоть до индивидуальных подов.
   Также возможно настроить оповещения (alerts) при превышении заданных порогов для метрик. Например, можно отследить недоступность ресурсов кластера или нехватку вычислительных мощностей worker-узлов.
 
-  Чтобы узнать, установлен ли аддон мониторинга в кластере, [посмотрите список установленных аддонов](../operations/addons/manage-addons#prosmotr-addonov).
+  Чтобы узнать, установлен ли аддон мониторинга в кластере, [посмотрите список установленных аддонов](../operations/addons/manage-addons#prosmotr_addonov).
 
 ## Использование Kubernetes Dashboard
 
@@ -21,9 +21,9 @@
 
 ## Использование Grafana
 
-1. [Убедитесь](../operations/addons/manage-addons#prosmotr-addonov), что аддон мониторинга (`kube-prometheus-stack`) [установлен](../operations/addons/advanced-installation/install-advanced-monitoring/) в кластере.
+1. [Убедитесь](../operations/addons/manage-addons#prosmotr_addonov), что аддон мониторинга (`kube-prometheus-stack`) [установлен](../operations/addons/advanced-installation/install-advanced-monitoring/) в кластере.
 
-1. [Убедитесь](../connect/kubectl#proverka-podklyucheniya-k-klasteru), что вы можете подключиться к кластеру с помощью `kubectl`.
+1. [Убедитесь](../connect/kubectl#proverka_podklyucheniya_k_klasteru), что вы можете подключиться к кластеру с помощью `kubectl`.
 
 1. Получите доступ к веб-интерфейсу Grafana:
 

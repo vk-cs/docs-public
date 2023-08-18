@@ -29,7 +29,7 @@ Under these conditions, the balancer can reach the peak performance, handling 1 
 
 ## Types of load balancers
 
-There are two types of load balancers in VK Cloud. You can [see](../../operations/manage-lb#viewing-a-list-of-load-balancers-and-information-about-them) the type in personal account.
+There are two types of load balancers in VK Cloud. You can [see](../../operations/manage-lb#viewing_a_list_of_load_balancers_and_information_about_them) the type in personal account.
 
 Different types of balancers [are charged](../../tariffs) differently.
 
@@ -43,7 +43,7 @@ Different types of balancers [are charged](../../tariffs) differently.
 This balancer is user-created and can be used to provide fault tolerance and flexible application scaling:
 
 - When working with [cloud computing service](/en/base/iaas) to distribute incoming traffic between virtual servers.
-- When working with [container service](/en/base/k8s/), such as when using [Ingress controllers](/en/base/k8s/use-cases/ingress) (including [the preconfigured one](/en/base/k8s/concepts/addons-and-settings/addons#ingress-controller--nginx-)) or services like [Load Balancer](/en/base/k8s/use-cases/load-balancer).
+- When working with [container service](/en/base/k8s/), such as when using [Ingress controllers](/en/base/k8s/use-cases/ingress) (including [the preconfigured one](/en/base/k8s/concepts/addons-and-settings/addons#ingress_controller_nginx_d11d1bb3)) or services like [Load Balancer](/en/base/k8s/use-cases/load-balancer).
 
 </tabpanel>
 <tabpanel>

@@ -55,11 +55,11 @@ The disk to create the image must be disconnected from the VM and have the statu
 
 ## Importing an image
 
-The VK Cloud service supports uploading your own virtual machine images with [some restrictions](../../../concepts/vm-concept#operating-system) by operating systems.
+The VK Cloud service supports uploading your own virtual machine images with [some restrictions](../../../concepts/vm-concept#operating_system) by operating systems.
 
 <info>
 
-Only RAW images are supported. If your image is in a different format, [convert it](../../../use-cases/packer#1--convert-image-to-raw-format).
+Only RAW images are supported. If your image is in a different format, [convert it](../../../use-cases/packer#1_convert_image_to_raw_format).
 
 </info>
 

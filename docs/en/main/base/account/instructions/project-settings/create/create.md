@@ -16,7 +16,7 @@ To create a project:
 
 1. At the end of the list, click **Create a new project**.
 
-    If your phone was not linked to your account, [link](../../../instructions/activation#linking-a-phone-number) it.
+    If your phone was not linked to your account, [link](../../../instructions/activation#linking_a_phone_number) it.
 
 1. Enter the project name.
 
@@ -33,7 +33,7 @@ To create a project:
 
 1. Activate the services: click the **Enable services** button in the section of any service.
 
-1. [Link](../../../instructions/activation#linking-a-bank-card) the payment card if it is not already linked.
+1. [Link](../../../instructions/activation#linking_a_bank_card) the payment card if it is not already linked.
 
 1. [Top up](/en/additionals/billing/operations/payment) the project balance to start using the services.
 

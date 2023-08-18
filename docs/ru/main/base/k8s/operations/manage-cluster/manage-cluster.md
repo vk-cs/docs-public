@@ -1,6 +1,6 @@
 <warn>
 
-Перед выполнением любой операции с кластером из Terraform ознакомьтесь с информацией в разделе [Использование Terraform](../helpers/terraform-howto#osobennosti-ispolzovaniya-terraform-dlya-upravleniya-servisom-konteynerov).
+Перед выполнением любой операции с кластером из Terraform ознакомьтесь с информацией в разделе [Использование Terraform](../helpers/terraform-howto#osobennosti_ispolzovaniya_terraform_dlya_upravleniya_servisom_konteynerov).
 
 </warn>
 

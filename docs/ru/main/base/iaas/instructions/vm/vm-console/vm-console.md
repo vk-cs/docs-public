@@ -1,8 +1,8 @@
-В аварийных ситуациях и при отсутствии [подключения к виртуальной машине](../vm-connect/vm-connect-nix#4--podklyuchites-k-vm) по сети используйте [VNC-консоль](#vnc-konsol) или просмотрите [логи сообщений ВМ](#logi-soobshcheniy-vm).
+В аварийных ситуациях и при отсутствии [подключения к виртуальной машине](../vm-connect/vm-connect-nix#4_podklyuchites_k_vm) по сети используйте [VNC-консоль](#vnc-konsol) или просмотрите [логи сообщений ВМ](#logi-soobshcheniy-vm).
 
 <info>
 
-Информация о действиях пользователя с ВМ и об изменении ее состояния содержится в [журнале событий](../vm-manage#prosmotr-zhurnala-sobytiy) OpenStack.
+Информация о действиях пользователя с ВМ и об изменении ее состояния содержится в [журнале событий](../vm-manage#prosmotr_zhurnala_sobytiy) OpenStack.
 
 </info>
 
@@ -46,7 +46,7 @@ VNC-консоль — инструмент диагностики и управ
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 2. Получите ссылку на страницу с VNC-консолью.
 
    ```bash
@@ -97,7 +97,7 @@ console=tty0 console=ttyS0,115200n8
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1--ustanovite-klient-openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3--proydite-autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 - Вывести все записи логов:
 

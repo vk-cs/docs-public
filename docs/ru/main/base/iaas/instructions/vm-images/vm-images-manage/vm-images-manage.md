@@ -55,11 +55,11 @@
 
 ## Импорт образа
 
-Сервис VK Cloud поддерживает загрузку собственных образов виртуальных машин с [некоторыми ограничениями](/ru/base/iaas/concepts/vm-concept#operacionnaya-sistema) по операционным системам.
+Сервис VK Cloud поддерживает загрузку собственных образов виртуальных машин с [некоторыми ограничениями](/ru/base/iaas/concepts/vm-concept#operacionnaya_sistema) по операционным системам.
 
 <info>
 
-Поддерживаются только образы в формате RAW. Если ваш образ в другом формате, [выполните его конвертацию](../../../use-cases/packer#1--vypolnite-konvertaciyu-obraza-v-format-raw).
+Поддерживаются только образы в формате RAW. Если ваш образ в другом формате, [выполните его конвертацию](../../../use-cases/packer#1_konvertiruyte_obraz_v_format_raw).
 
 </info>
 

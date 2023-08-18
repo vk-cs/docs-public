@@ -18,7 +18,7 @@ These components are present in all Kubernetes VK Cloud clusters.
 
 ## Addons
 
-The necessary addons can be [installed](../../../operations/addons/manage-addons#installing-the-addon) in the cluster individually.
+The necessary addons can be [installed](../../../operations/addons/manage-addons#installing_the_addon) in the cluster individually.
 
 <!-- prettier-ignore -->
 | Addon                                                                             | Kubernetes 1.21.4–1.22.x  | Kubernetes 1.23.x–1.25.x  |
