@@ -192,8 +192,6 @@
 
       <info>
 
-      **Примечание**
-
       Docker Desktop for Windows добавляет собственную версию `kubectl` в переменную окружения `PATH`. Если установлен Docker Desktop:
 
       - либо укажите путь к загруженному файлу перед записью, добавленной установщиком Docker Desktop;
@@ -338,18 +336,9 @@
 
 <tabs>
 <tablist>
-<tab>Версия Kubernetes 1.22 и ниже</tab>
 <tab>Версия Kubernetes 1.23 и выше</tab>
+<tab>Версия Kubernetes 1.22 и ниже</tab>
 </tablist>
-<tabpanel>
-
-Выполните команду на хосте:
-
-```bash
-kubectl cluster-info
-```
-
-</tabpanel>
 <tabpanel>
 
 На хосте:
@@ -368,6 +357,15 @@ kubectl cluster-info
    - name: "OS_PASSWORD"
      value: "put your password here"
    ```
+
+</tabpanel>
+<tabpanel>
+
+Выполните команду на хосте:
+
+```bash
+kubectl cluster-info
+```
 
 </tabpanel>
 </tabs>
