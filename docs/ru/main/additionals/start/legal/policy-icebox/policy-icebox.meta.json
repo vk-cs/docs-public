@@ -9,6 +9,7 @@
   "icon": "",
   "infobarItems": null,
   "disableGithub": true,
+  "disableDateInformation": true,
   "weight": 2,
   "uuid": "571b7578-c012-422e-9b6c-b0f7f5eba8dd",
   "createdAt": "2022-03-26T14:10:44.000Z",
