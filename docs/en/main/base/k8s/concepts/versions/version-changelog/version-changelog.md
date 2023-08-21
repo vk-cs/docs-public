@@ -1,3 +1,18 @@
+## Kubernetes 1.26.5 <a id="v1-26-5"></a>
+
+**Important changes in Kubernetes:**
+
+- Outdated APIs in beta status [removed and not supported](https://kubernetes.io/docs/reference/using-api/deprecation-guide/#v1-26).
+- The GlusterFS driver is completely removed in release 1.26. If you still have disks with such a driver, perform the migration.
+- The CLI flag `pod-eviction-timeout` has been moved to the deprecated status and will be removed in v1.27.
+- The CLI flag `--master-service-namespace` in Kube-apiserver has been moved to deprecated status and will be removed in v1.27.
+
+**Vulnerability fixes:**
+
+- [CVE-2023-27561](https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2023-27561), [CVE-2023-25809](https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2023-25809), [CVE-2023-28642](https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2023-28642): changing the runc version from v1.1.4 to v1.1.5, fixed the error of deleting `cgroup` when using runc version higher than 1.1.6.
+
+Read more about these and other changes in [official Kubernetes documentation](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.26.md#v1265).
+
 ## Kubernetes 1.25.1 <a id="v1-25-1"></a>
 
 **Important changes in Kubernetes:**
@@ -6,6 +21,8 @@
 - The GlusterFS and Portworx disk plugins have been removed from support. Flocker, Quobyte, and StorageOS removed from Kubernetes.
 - vSphere support below 7.0u2 is discontinued.
 - Starting from version 1.25 Kubelet will not create iptables chains in NAT tables: `KUBE-MARK-DROP`, `KUBE-MARK-MASQ`, `KUBE-POSTROUTING`.
+
+Read more about these and other changes in [official Kubernetes documentation](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.25.md#v12510).
 
 ## Kubernetes 1.24.9 <a id="v1-24-9"></a>
 

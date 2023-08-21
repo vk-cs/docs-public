@@ -2,6 +2,7 @@ New versions of Kubernetes aaS from VK Cloud are usually added 1 month after the
 
 The following versions of Kubernetes aaS from VK Cloud are currently available:
 
+- 1.26.5
 - 1.25.10
 - 1.24.9
 - 1.23.13
@@ -21,7 +22,8 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 
 |Version of Kubernetes|Official release date|VK Kubernetes aaS release date|VK Kubernetes aaS end of support date|
 |------|------|------|-------|
-| 1.25.x | 17 May 2023     | 14.06.2023 | 14.08.2023 |
+| 1.26.x  | 17 May 2023     | 14.08.2023 | 17.10.2024 |
+| 1.25.x  | 17 May 2023     | 14.06.2023 | 14.08.2024 |
 | 1.24.x  | 8 December 2022 | 6.03.2023  | 6.05.2024  |
 | 1.23.x  | 13 April 2022   | 15.08.2022 | 15.10.2023 |
 | 1.22.x  | 19 January 2022 | 18.02.2022 | 18.04.2023 |
@@ -37,7 +39,7 @@ The version history can be viewed at [Kubernetes version history](../version-cha
 
 New features are added to all versions of Kubernetes, unless a feature and version are incompatible.
 
-| Feature                                  | 1.17.x–1.20.x | 1.21.4–1.22.х | 1.23.x–1.25.х |
+| Feature                                  | 1.17.x–1.20.x | 1.21.4–1.22.х | 1.23.x–1.26.х |
 | ---------------------------------------- | ------------- | ------------- | ------ |
 | Node group scaling settings              | +             | +             | +      |
 | Invalidate the key pair                  | +             | +             | -      |
