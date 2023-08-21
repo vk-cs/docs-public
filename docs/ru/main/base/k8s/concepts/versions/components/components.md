@@ -7,7 +7,7 @@
 Эти компоненты присутствуют во всех кластерах Kubernetes VK Cloud.
 
 <!-- prettier-ignore -->
-| Компонент                                                             | Kubernetes 1.21.4–1.22.x  | Kubernetes 1.23.x–1.25.x  |
+| Компонент                                                             | Kubernetes 1.21.4–1.22.x  | Kubernetes 1.23.x–1.26.x  |
 | --------------------------------------------------------------------- | ------------------------- | ------------------------- |
 | [CoreDNS](https://github.com/coredns/coredns)                         | 1.2.4     | 1.10.1    |
 | [Calico](https://github.com/projectcalico/calico)                     | 3.20.2    | 3.25.0    |
@@ -21,7 +21,7 @@
 Необходимые аддоны могут быть [установлены](../../../operations/addons/manage-addons#ustanovka_addona) в кластер отдельно.
 
 <!-- prettier-ignore -->
-| Аддон                                                                             | Kubernetes 1.21.4–1.22.x  | Kubernetes 1.23.x–1.25.x  |
+| Аддон                                                                             | Kubernetes 1.21.4–1.22.x  | Kubernetes 1.23.x–1.26.x  |
 | --------------------------------------------------------------------------------- | ------------------------- | ------------------------- |
 | [Docker Registry](https://github.com/twuni/docker-registry.helm)                  | 2.2.2     | 2.2.2     |
 | [Ingress NGINX](https://github.com/kubernetes/ingress-nginx)                      | 4.1.4     | 4.1.4     |
