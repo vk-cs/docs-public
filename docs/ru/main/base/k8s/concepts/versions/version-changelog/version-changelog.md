@@ -1,3 +1,18 @@
+## Kubernetes 1.26.5 <a id="v1-26-5"></a>
+
+**Важные изменения в Kubernetes:**
+
+- Устаревшие API в статусе beta [удалены и не поддерживаются](https://kubernetes.io/docs/reference/using-api/deprecation-guide/#v1-26).
+- Драйвер GlusterFS полностью удален в релизе 1.26. Если у вас остались диски с таким драйвером, выполните миграцию.
+- CLI-флаг `pod-eviction-timeout` переведен в статус deprecated (устаревший) и будет удален в v1.27.
+- CLI-флаг `--master-service-namespace` в Kube-apiserver переведен в статус deprecated (устаревший) и будет удален в v1.27.
+
+**Исправлены уязвимости:**
+
+- [CVE-2023-27561](https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2023-27561), [CVE-2023-25809](https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2023-25809), [CVE-2023-28642](https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2023-28642): изменение версии runc с v1.1.4 на v1.1.5, исправлена ошибка удаления `cgroup` при использовании runc версии выше 1.1.6.
+
+Подробнее об этих и других изменениях в [официальной документации Kubernetes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.26.md#v1265).
+
 ## Kubernetes 1.25.1 <a id="v1-25-1"></a>
 
 **Важные изменения в Kubernetes:**
@@ -6,6 +21,8 @@
 - Плагины дисков GlusterFS и Portworx сняты с поддержки. Flocker, Quobyte, и StorageOS удалены из Kubernetes.
 - Прекращается поддержка vSphere ниже 7.0u2.
 - Начиная с версии 1.25 Kubelet не будет создавать iptables chains в таблицах NAT: `KUBE-MARK-DROP`, `KUBE-MARK-MASQ`, `KUBE-POSTROUTING`.
+
+Подробнее об этих и других изменениях в [официальной документации Kubernetes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.25.md#v12510).
 
 ## Kubernetes 1.24.9 <a id="v1-24-9"></a>
 
@@ -62,18 +79,18 @@
 
 **Изменения в сервисе Kubernetes aaS:**
 
--   На узлах кластера используется операционная система [AlmaLinux](https://wiki.almalinux.org) версии 9.
--   По умолчанию устанавливается ограничение на потребляемые вычислительные ресурсы ([limit ranges](https://kubernetes.io/docs/concepts/policy/limit-range/)) для пространств имен (namespace).
+- На узлах кластера используется операционная система [AlmaLinux](https://wiki.almalinux.org) версии 9.
+- По умолчанию устанавливается ограничение на потребляемые вычислительные ресурсы ([limit ranges](https://kubernetes.io/docs/concepts/policy/limit-range/)) для пространств имен (namespace).
 
 **Важные изменения в Kubernetes:**
 
--   Компонент PodSecurityPolicy заменен на [alpha-версию PodSecurity](https://github.com/kubernetes/enhancements/issues/2579).
--   Компонент [Memory Manager](https://github.com/kubernetes/enhancements/issues/1769) переведен в статус beta.
--   Добавлена новая функциональность [API Server Tracing](https://github.com/kubernetes/enhancements/issues/647), находится в статусе alpha.
--   Добавлена новая функциональность [Generic data populators](https://github.com/kubernetes/enhancements/issues/1495) для постоянных томов (Persistent Volumes), находится в статусе alpha.
--   Добавлена новая версия формата конфигурации для kubeadm: [v1beta3](https://github.com/kubernetes/enhancements/issues/970).
--   Тперь Kubernetes control plane всегда использует [CronJobs-контроллер версии 2](https://github.com/kubernetes/enhancements/issues/19).
--   Теперь все компоненты Kubernetes control plane на узлах (включая kubelet, kube-proxy и container runtime) [могут быть запущены от имени пользователей, которые не являются суперпользователями (non-root)](https://github.com/kubernetes/enhancements/issues/2033). Эта функциональность находится в статусе alpha.
+- Компонент PodSecurityPolicy заменен на [alpha-версию PodSecurity](https://github.com/kubernetes/enhancements/issues/2579).
+- Компонент [Memory Manager](https://github.com/kubernetes/enhancements/issues/1769) переведен в статус beta.
+- Добавлена новая функциональность [API Server Tracing](https://github.com/kubernetes/enhancements/issues/647), находится в статусе alpha.
+- Добавлена новая функциональность [Generic data populators](https://github.com/kubernetes/enhancements/issues/1495) для постоянных томов (Persistent Volumes), находится в статусе alpha.
+- Добавлена новая версия формата конфигурации для kubeadm: [v1beta3](https://github.com/kubernetes/enhancements/issues/970).
+- Тперь Kubernetes control plane всегда использует [CronJobs-контроллер версии 2](https://github.com/kubernetes/enhancements/issues/19).
+- Теперь все компоненты Kubernetes control plane на узлах (включая kubelet, kube-proxy и container runtime) [могут быть запущены от имени пользователей, которые не являются суперпользователями (non-root)](https://github.com/kubernetes/enhancements/issues/2033). Эта функциональность находится в статусе alpha.
 
 Подробнее об этих и других изменениях в [официальной документации Kubernetes](https://kubernetes.io/blog/2021/08/04/kubernetes-1-22-release-announcement/).
 
@@ -83,14 +100,14 @@
 
 **Важные изменения в Kubernetes:**
 
--   Функциональность [CronJob](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/) переведена в статус stable.
--   Добавлена поддержка неизменяемых (immutable) [Secret](https://kubernetes.io/docs/concepts/configuration/secret/#secret-immutable) and [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/#configmap-immutable).
--   Добавлена поддержка [IPv4/IPv6 Dual-Stack](https://kubernetes.io/docs/concepts/services-networking/dual-stack/).
--   Добавлена поддержка [Graceful Node Shutdown](https://kubernetes.io/docs/concepts/architecture/nodes/#graceful-node-shutdown).
--   Добавлена поддержка [PersistentVolume Health Monitor](https://kubernetes.io/docs/concepts/storage/volume-health-monitoring).
--   Упрощена процедура поддержки системы сборки Kubernetes.
--   Функциональность PodSecurityPolicy [переведена в статус deprecated](https://kubernetes.io/blog/2021/04/06/podsecuritypolicy-deprecation-past-present-and-future) (устаревшая).
--   Параметр topologyKeys для Service переведен в статус deprecated (устаревший).
+- Функциональность [CronJob](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/) переведена в статус stable.
+- Добавлена поддержка неизменяемых (immutable) [Secret](https://kubernetes.io/docs/concepts/configuration/secret/#secret-immutable) and [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/#configmap-immutable).
+- Добавлена поддержка [IPv4/IPv6 Dual-Stack](https://kubernetes.io/docs/concepts/services-networking/dual-stack/).
+- Добавлена поддержка [Graceful Node Shutdown](https://kubernetes.io/docs/concepts/architecture/nodes/#graceful-node-shutdown).
+- Добавлена поддержка [PersistentVolume Health Monitor](https://kubernetes.io/docs/concepts/storage/volume-health-monitoring).
+- Упрощена процедура поддержки системы сборки Kubernetes.
+- Функциональность PodSecurityPolicy [переведена в статус deprecated](https://kubernetes.io/blog/2021/04/06/podsecuritypolicy-deprecation-past-present-and-future) (устаревшая).
+- Параметр `topologyKeys` для Service переведен в статус deprecated (устаревший).
 
 Подробнее об этих и других изменениях в [официальной документации Kubernetes](https://kubernetes.io/blog/2021/04/08/kubernetes-1-21-release-announcement/).
 
@@ -98,14 +115,14 @@
 
 **Изменения в сервисе Kubernetes aaS:**
 
--   [Среда исполнения](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) (runtime) кластера заменена на [CRI-O](https://cri-o.io/).
--   Изменен [формат хранения логов](../../../../../additionals/cases/cases-logs/case-fluent-bit).
+- [Среда исполнения](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) (runtime) кластера заменена на [CRI-O](https://cri-o.io/).
+- Изменен [формат хранения логов](../../../../../additionals/cases/cases-logs/case-fluent-bit).
 
 **Важные изменения в Kubernetes:**
 
--   Компонент среды исполнения [Dockershim](https://kubernetes.io/blog/2022/05/03/dockershim-historical-context/) переведен в статус deprecated (устаревший).
--   Функциональность [Volume Snapshot](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) Operations переведена в статус stable.
--   Функциональность [API Priority and Fairness](https://kubernetes.io/docs/concepts/cluster-administration/flow-control/) (APF) теперь включена по умолчанию.
--   Команда `kubectl alpha debug` [переведена в статус beta](https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/) и становится `kubectl debug`.
+- Компонент среды исполнения [Dockershim](https://kubernetes.io/blog/2022/05/03/dockershim-historical-context/) переведен в статус deprecated (устаревший).
+- Функциональность [Volume Snapshot](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) Operations переведена в статус stable.
+- Функциональность [API Priority and Fairness](https://kubernetes.io/docs/concepts/cluster-administration/flow-control/) (APF) теперь включена по умолчанию.
+- Команда `kubectl alpha debug` [переведена в статус beta](https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/) и становится `kubectl debug`.
 
 Подробнее об этих и других изменениях в [официальной документации Kubernetes](https://kubernetes.io/blog/2020/12/08/kubernetes-1-20-release-announcement/).
