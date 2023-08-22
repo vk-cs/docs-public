@@ -22,33 +22,34 @@
 1. Создайте файл `fluentbit_patch.yaml` в кластере и наполните его содержимым:
 
     ```yaml
-    spec: 
-    match: 
-        kinds: 
-        - apiGroups: 
-        - ""
-        kinds: 
-        - Pod
-    parameters: 
-        allowedHostPaths: 
+    spec:
+      match:
+        excludedNamespaces:
+        - logging
+        kinds:
+        - apiGroups:
+          - ""
+          kinds:
+          - Pod
+      parameters:
+        allowedHostPaths:
         - pathPrefix: /psp
-            readOnly: true
-        - pathPrefix: /var/log
-            readOnly: true
-        - pathPrefix: /var/log/containers
-            readOnly: true
+          readOnly: true
     ```
 2. Примените изменения, выполнив команду:
-
     ```bash
+    # старые кластера
     kubectl patch k8spsphostfilesystem.constraints.gatekeeper.sh/psp-host-filesystem --patch-file fluentbit_patch.yaml --type merge
+    # новые кластера
+    kubectl patch k8spsphostfilesystem.constraints.gatekeeper.sh/psphostfilesystem --patch-file fluentbit_patch.yaml --type merge
     ```
 
+    
 Установить Fluent Bit с файлом настройки можно следующими командами:
 
 ```
 helm repo add fluent https://fluent.github.io/helm-charts
-helm install fluent-bit fluent/fluent-bit --values values.yaml
+helm install --create-namespace --namespace logging fluent-bit fluent/fluent-bit --values values.yaml
 ```
 
 Больше информации об установке Fluent Bit вы можете найти в [официальной документации](https://docs.fluentbit.io/manual/installation/kubernetes#installing-with-helm-chart) Fluent Bit.
