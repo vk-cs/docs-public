@@ -145,12 +145,6 @@ export PYTHONPATH=/Library/Python/2.7/site-packages; aws s3 <команда> --e
 aws s3 mb s3://<имя_бакета> --endpoint-url http://hb.vkcs.cloud
 ```
 
-Изменение класса хранения бакета:
-
-```bash
-aws s3api create-bucket --bucket <имя_бакета> --endpoint-url <URL класса хранения назначения> --cli-input-json "{\"Bucket\": {\"storage-class\": \"<значение_класса_назначения>\"}}"
-```
-
 Загрузка файла:
 
 ```bash
