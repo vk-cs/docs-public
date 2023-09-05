@@ -1,0 +1,15 @@
+{
+  "title": "Working with cert-manager using Helm 3",
+  "pageDescription": "Installing and upgrading cert-manager using Helm 3 in Kubernetes clusters.",
+  "shortDescription": "How to install and upgrade cert-manager",
+  "metaTitle": "Working with cert-manager using Helm 3",
+  "metaDescription": "Use cases: installing and upgrading cert-manager using Helm 3 in Kubernetes clusters.",
+  "sectionTitle": "Working with cert-manager using Helm 3",
+  "markdown": "Installing and upgrading cert-manager using Helm 3 in Kubernetes clusters.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "uuid": "931afbb1-a3dc-49b9-8be8-55492fbe0756",
+  "createdAt": "2022-03-26T14:10:44.000Z",
+  "updatedAt": "2023-08-17T07:01:18.000Z"
+}
