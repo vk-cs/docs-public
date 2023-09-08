@@ -219,7 +219,6 @@ data:
       tag etcd
     </source>
 
-
     <source>
       @type tail
       format multiline
@@ -255,7 +254,6 @@ data:
       pos_file /var/log/es-kube-apiserver.log.pos
       tag kube-apiserver
     </source>
-
 
     <source>
       @type tail
@@ -376,14 +374,14 @@ metadata:
         app: fluentd
     rules:
     - apiGroups:
-      - ""
-      resources:
-      - pods
-      - namespaces
-      verbs:
-      - get
-      - list
-      - watch
+        - ""
+        resources:
+          - pods
+          - namespaces
+        verbs:
+          - get
+          - list
+          - watch
     ---
     kind: ClusterRoleBinding
     apiVersion: rbac.authorization.k8s.io/v1
@@ -394,9 +392,9 @@ metadata:
       name: fluentd
       apiGroup: rbac.authorization.k8s.io
     subjects:
-    - kind: ServiceAccount
-      name: fluentd
-      namespace: kube-logging
+      - kind: ServiceAccount
+        name: fluentd
+        namespace: kube-logging
     ```
 4.  Задеплойте ресурсы в кластер:
 
@@ -414,32 +412,32 @@ clusterrolebinding.rbac.authorization.k8s.io/fluentd created
 
 5. Создайте файл `fluent_patch.yaml` в кластере и наполните его содержимым:
 
-    ```yaml
-    spec: 
-    match: 
-        kinds: 
-        - apiGroups: 
-        - ""
-        kinds: 
-        - Pod
-    parameters: 
-        allowedHostPaths: 
-        - pathPrefix: /psp
-            readOnly: true
-        - pathPrefix: /var/log
-            readOnly: true
-        - pathPrefix: /var/log/containers
-            readOnly: true
-    ```
+   ```yaml
+   spec: 
+     match: 
+       kinds: 
+       - apiGroups: 
+         - ""
+         kinds: 
+         - Pod
+     parameters: 
+       allowedHostPaths: 
+         - pathPrefix: /k8spsp
+           readOnly: true
+         - pathPrefix: /var/log
+           readOnly: true
+         - pathPrefix: /var/log/containers
+           readOnly: true
+   ```
 6. Примените изменения, выполнив команду:
 
     ```bash
-    kubectl patch k8spsphostfilesystem.constraints.gatekeeper.sh/psp-host-filesystem --patch-file fluent_patch.yaml --type merge
+    kubectl patch k8spsphostfilesystem.constraints.gatekeeper.sh k8spsphostfilesystem --patch-file fluent_patch.yaml --type merge
     ```
 
 Установите fluentd. Поскольку fluentd необходимо установить на все ноды кластера, в качестве ресурса kubernetes выберите тип `DaemonSet`.
 
-7.  Создайте манифест `fluentd-daemonset.yaml` со следующим содержанием (подходит для версии kubernetes ниже 1.22):
+7. Создайте манифест `fluentd-daemonset.yaml` со следующим содержанием (подходит для версии kubernetes ниже 1.22):
 
 ```yaml
 apiVersion: apps/v1

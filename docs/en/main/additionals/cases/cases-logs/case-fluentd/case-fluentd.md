@@ -5,8 +5,11 @@ It is inconvenient to write logs to containers because:
 - data generated in containerized applications exist as long as the container exists. When the docker container is restarted, data, including application logs, is deleted;
 - logs cannot be rotated in a container since rotation is an additional process in addition to the logged one, and more than one process cannot be started in one container.
 
-> **Note**<br>
-> Log rotation is the process of processing, cleaning, archiving, and sending logs using utilities.
+<info>
+
+Log rotation is the process of processing, cleaning, archiving, and sending logs using utilities.
+
+</info>
 
 To access the logs of containerized applications in Kubernetes, Docker containers must transfer their logs to standard output streams (stdout) and errors (stderr). By default, Docker logging driver writes logs to a JSON file on the node, from where they can be obtained using the command:
 
@@ -14,8 +17,11 @@ To access the logs of containerized applications in Kubernetes, Docker container
 kubectl logs pod_name
 ```
 
-> **Note**<br>
-> Docker logging driver is a log collection mechanism built into the Docker engine and supports many [log rotation tools](https://docs.docker.com/config/containers/logging/configure /).
+<info>
+
+Docker logging driver is a log collection mechanism built into the Docker engine and supports many [log rotation tools](https://docs.docker.com/config/containers/logging/configure /).
+
+</info>
 
 When the Kubernetes orchestrator manages the lifecycle of Docker containers, pods with containers are often and unpredictably created, reloaded and deleted. If the settings of the Docker logging driver allow this, you can access the last logs of the pod before the reboot using the --previous argument:
 
@@ -48,8 +54,11 @@ We organize a centralized logging system for Kubernetes.
 kubectl create ns kube-logging
 ```
 
-> **Note**<br>
-> When installing from helm, you will need to set the storage-class for the application.
+<info>
+
+When installing from helm, you will need to set the storage-class for the application.
+
+</info>
 
 2. Find out the storage class available in the Kubernetes cluster:
 
@@ -63,6 +72,7 @@ ssd-retain      kubernetes.io/cinder   103d
 ```
 
 3. Install Elasticsearch in the Kubernetes cluster with the specified variables:
+
    ```
    helm install stable/elasticsearch \
          --name elastic \
@@ -78,57 +88,62 @@ ssd-retain      kubernetes.io/cinder   103d
          --set cluster.env.EXPECTED_MASTER_NODES=1 \
          --namespace kube-logging
    ```
+
    As a result, an Elasticsearch cluster will be installed, consisting of one master node, one data storage node, and one client node.
 4. Make sure that all the pods are ready to work:
-   ```
+
+   ```bash
    kubectl get po -n kube-logging
    ```
+
    ```
    NAME                                           READY   STATUS    RESTARTS   AGE
    elastic-elasticsearch-client-c74598797-9m7pm   1/1     Running  
    elastic-elasticsearch-data-0                   1/1     Running  
    elastic-elasticsearch-master-0                 1/1     Running  
    ```
+
 5. Find out the name of the services in kube-logging:
+
    ```
    kubectl get svc -n kube-logging
    ```
 
-```
-NAME                              TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
-elastic-elasticsearch-client      ClusterIP   10.233.8.213   <none>        9200/TCP   11m
-elastic-elasticsearch-discovery   ClusterIP   None           <none>        9300/TCP   11m
-```
+   ```
+   NAME                              TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
+   elastic-elasticsearch-client      ClusterIP   10.233.8.213   <none>        9200/TCP   11m
+   elastic-elasticsearch-discovery   ClusterIP   None           <none>        9300/TCP   11m
+   ```
 
 The elastic-elasticsearch-client service will be used for linking with kibana and fluentd. The Kibana dashboard will also be installed using helm, but we will write the name of the elastic-elasticsearch-client service in the variables of its helm chart.
 
 6. Download kibana helm chart variables for editing:
 
-```
+```bash
 helm fetch --untar stable/kibana
 ```
 
 7. Go to the kibana directory and edit the values file.yaml:
 
-```
+```bash
 cd kibana/ && vim values.yaml
 ```
 
 8. Enter the name of the elastic-elasticsearch-client service in the elasticsearch hosts section:
 
-```
-35 files:
-36   kibana.yml:
-37     ## Default Kibana configuration from kibana-docker.
-38     server.name: kibana
-39     server.host: "0"
-40     ## For kibana < 6.6, use elasticsearch.url instead
-41     elasticsearch.hosts: http://elastic-elasticsearch-client:9200
+```txt
+files:
+  kibana.yml:
+    ## Default Kibana configuration from kibana-docker.
+    server.name: kibana
+    server.host: "0"
+    ## For kibana < 6.6, use elasticsearch.url instead
+    elasticsearch.hosts: http://elastic-elasticsearch-client:9200
 ```
 
 9. Install Kibana with modified parameters:
 
-```
+```bash
 helm install stable/kibana \
      --name kibana \
      --namespace kube-logging \
@@ -137,19 +152,19 @@ helm install stable/kibana \
 
 10. Make sure that the pod has started, and send port 5601 of the Kibana pod to your local machine to access the dashboard:
 
-```
+```bash
 kubectl get pod -n kube-logging 
 ```
 
 Enter in the following command the full name of the pod for kibana, obtained from the output of the previous command, instead of kibana-pod_hash_id:
 
-```
+```bash
 kubectl port-forward --namespace kube-logging kibana-pod_hash_id 5601:5601
 ```
 
 11. In the browser address bar, specify the connection string to the abandoned Kibana dashboard:
 
-```
+```bash
 localhost:5601
 ```
 
@@ -165,7 +180,7 @@ In the fluentd configuration file, sources for collecting logs are specified wit
 
 1. Create a configmap for fluentd with the following content:
 
-```
+```yaml
 **kind: ConfigMap
 apiVersion: v1
 data:
@@ -205,7 +220,6 @@ data:
       tag etcd
     </source>
 
-
     <source>
       @type tail
       format multiline
@@ -241,7 +255,6 @@ data:
       pos_file /var/log/es-kube-apiserver.log.pos
       tag kube-apiserver
     </source>
-
 
     <source>
       @type tail
