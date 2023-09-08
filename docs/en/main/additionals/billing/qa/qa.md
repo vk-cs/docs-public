@@ -1,16 +1,16 @@
-### How do I get a bonus 3000 rubles for registering in my personal account?
+## How do I get a bonus 3000 rubles for registering in my personal account?
 
 After activating your account, we will contact you and add 3000 rubles to your VK Cloud account.
 
-### How long does the unblocking of services take place after the replenishment of the balance?
+## How long does the unblocking of services take place after the replenishment of the balance?
 
 Unblocking services can take up to 4 hours.
 
-### How to make a refund when paying with a card?
+## How to make a refund when paying with a card?
 
 Contact [technical support](/en/contacts). For more information about the refund conditions, see the article [Refund of funds](../../billing/operations/refund).
 
-### How do I get the accounting documents after paying the invoice?
+## How do I get the accounting documents after paying the invoice?
 
 <tabs>
 <tablist>
@@ -31,6 +31,6 @@ After you make the payment, we will send you a receipt to the email address of t
 </tabpanel>
 </tabs>
 
-### How long does it take to replenish the balance when paying from a legal entity?
+## How long does it take to replenish the balance when paying from a legal entity?
 
 Up to 3 banking days.
