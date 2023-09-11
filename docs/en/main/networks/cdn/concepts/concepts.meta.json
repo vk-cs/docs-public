@@ -8,5 +8,6 @@
   "markdown": "Detailed description of the principles of operation and device of the CDN VK Cloud service.",
   "icon": "",
   "infobarItems": null,
-  "weight": 1
+  "weight": 1,
+  "uuid": "1b9dc998-746c-4ced-a6b7-fc362ca2748e"
 }
