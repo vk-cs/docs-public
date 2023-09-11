@@ -1,23 +1,26 @@
 {
-    "title": "Расширения PostgreSQL",
-    "pageDescription": "Перечень доступных расширений PostgreSQL и их параметров.",
-    "shortDescription": "Перечень доступных расширений PostgreSQL и их параметров",
-    "metaTitle": "Расширения PostgreSQL",
-    "metaDescription": "Базы данных VK Cloud: перечень доступных расширений PostgreSQL и их параметров.",
-    "sectionTitle": "Расширения PostgreSQL",
-    "markdown": "Перечень доступных расширений PostgreSQL и их параметров.",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1,
-    "additionalUuids": [
-        "72e70640-64fc-42e0-96b1-0f7a3ce8a548",
-        "81c5c3c7-c133-4a3c-b89a-13e939f1977e",
-        "0f47d965-5957-4c93-8667-1e6d1457a367",
-        "2f9ebd4c-bd8d-48d6-af4c-92242193d0db",
-        "04097001-dcd7-42f6-b482-65cca0b38406",
-        "082f5a0a-3e52-48f4-9535-2adadb36504a",
-        "f433bf15-4a4a-4721-ba49-b2142aa6324b",
-        "1d93a663-899d-469a-811e-357249aa5387",
-        "61cd4612-b241-4d3e-9261-3f3490b2832f"
-    ]
+  "title": "Расширения PostgreSQL",
+  "pageDescription": "Перечень доступных расширений PostgreSQL и их параметров.",
+  "shortDescription": "Перечень доступных расширений PostgreSQL и их параметров",
+  "metaTitle": "Расширения PostgreSQL",
+  "metaDescription": "Базы данных VK Cloud: перечень доступных расширений PostgreSQL и их параметров.",
+  "sectionTitle": "Расширения PostgreSQL",
+  "markdown": "Перечень доступных расширений PostgreSQL и их параметров.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "additionalUuids": [
+    "72e70640-64fc-42e0-96b1-0f7a3ce8a548",
+    "81c5c3c7-c133-4a3c-b89a-13e939f1977e",
+    "0f47d965-5957-4c93-8667-1e6d1457a367",
+    "2f9ebd4c-bd8d-48d6-af4c-92242193d0db",
+    "04097001-dcd7-42f6-b482-65cca0b38406",
+    "082f5a0a-3e52-48f4-9535-2adadb36504a",
+    "f433bf15-4a4a-4721-ba49-b2142aa6324b",
+    "1d93a663-899d-469a-811e-357249aa5387",
+    "61cd4612-b241-4d3e-9261-3f3490b2832f"
+  ],
+  "createdAt": "2023-09-05T09:12:49.000Z",
+  "updatedAt": "2023-09-05T09:12:49.000Z",
+  "uuid": "d0eaa2e7-c20d-4f04-b855-395178641911"
 }
