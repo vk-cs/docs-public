@@ -1,5 +1,20 @@
 К БД развернутых в VK Cloud инстансов можно подключиться с помощью SDK.
 
+Вы можете подключиться к БД как обычный [пользователь](../instructions/users) или как администратор инстанса — пользователь с максимально широкими полномочиями во всех БД инстанса.
+
+Для входа с правами администратора указывайте следующее имя пользователя:
+
+| Тип СУБД | Имя пользователя | Комментарий
+|--|--|--|
+| ClickHouse | `root` | |
+| MongoDB | `root` | При подключении от имени администратора необходимо дополнительно указывать параметр `authSource=admin`, подробнее в [документации MongoDB](https://www.mongodb.com/docs/manual/reference/connection-string/#mongodb-urioption-urioption.authSource) |
+| MySQL | `root` | |
+| OpenSearch | `root` | Все созданные через VK Cloud пользователи получают права администратора |
+| PostgreSQL<br>PostgresPro | `postgres` | |
+| Redis 5 | `default` | Используется, если включена опция `requirepass`. Можно не задавать имя пользователя при подключении (эквивалентно `default`) |
+| Redis 6 | `root` | |
+| Tarantool | `admin` | |
+
 ## PostgreSQL
 
 <tabs>
