@@ -3,7 +3,8 @@ VK Cloud поддерживает логирование для инстансо
 - PostgreSQL / PostgresPro;
 - MySQL;
 - Redis;
-- MongoBD.
+- MongoDB;
+- ClickHouse.
 
 <warn>
 
@@ -28,7 +29,8 @@ VK Cloud поддерживает логирование для инстансо
    <tab>PostgreSQL / PostgresPro</tab>
    <tab>MySQL</tab>
    <tab>Redis</tab>
-   <tab>MongoBD</tab>
+   <tab>MongoDB</tab>
+   <tab>ClickHouse</tab>
    </tablist>
    <tabpanel>
 
@@ -171,6 +173,50 @@ VK Cloud поддерживает логирование для инстансо
    Jul 12 11:23:11 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:11.487+0000 I STORAGE  [initandlisten] WiredTiger message [1689160991:487904][1049:0x7fb4fe25eb40], txn-recover: Set global>
    Jul 12 11:23:11 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:11.503+0000 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
    Jul 12 11:23:11 by-mongodb-2687.novalocal mongod.27017[1049]: 2023-07-12T11:23:11.528+0000 I STORAGE  [initandlisten] Starting to check the table logging settings for existing WiredTiger tables
+   ```
+
+   </details>
+
+   </tabpanel>
+   <tabpanel>
+
+   ```bash
+   journalctl -u clickhouse-server
+   ```
+
+   <details>
+    <summary>Пример вывода</summary>
+
+   ```bash
+   -- Logs begin at Tue 2023-09-12 07:16:05 UTC, end at Tue 2023-09-12 10:17:56 UTC. --
+   Sep 12 07:16:14 clickhouse4030.novalocal systemd[1]: Starting ClickHouse Server (analytic DBMS for big data)...
+   Sep 12 07:16:15 clickhouse4030.novalocal cloud-init[978]: .....
+   Sep 12 07:16:15 clickhouse4030.novalocal cloud-init[978]: status: done
+   Sep 12 07:16:15 clickhouse4030.novalocal systemd[1]: Started ClickHouse Server (analytic DBMS for big data).
+   Sep 12 07:16:17 clickhouse4030.novalocal clickhouse-server[1023]: Processing configuration file '/etc/clickhouse-server>
+   Sep 12 07:16:17 clickhouse4030.novalocal clickhouse-server[1023]: Logging trace to /var/log/clickhouse-server/clickhous>
+   Sep 12 07:16:17 clickhouse4030.novalocal clickhouse-server[1023]: Logging errors to /var/log/clickhouse-server/clickhou>
+   Sep 12 07:16:18 clickhouse4030.novalocal clickhouse-server[1052]: Processing configuration file '/etc/clickhouse-server>
+   Sep 12 07:16:18 clickhouse4030.novalocal clickhouse-server[1052]: Saved preprocessed configuration to '/var/lib/clickho>
+   Sep 12 07:16:18 clickhouse4030.novalocal clickhouse-server[1052]: Processing configuration file '/etc/clickhouse-server>
+   Sep 12 07:16:18 clickhouse4030.novalocal clickhouse-server[1052]: Saved preprocessed configuration to '/var/lib/clickho>
+   Sep 12 07:16:40 clickhouse4030.novalocal systemd[1]: Stopping ClickHouse Server (analytic DBMS for big data)...
+   Sep 12 07:16:44 clickhouse4030.novalocal systemd[1]: clickhouse-server.service: Succeeded.
+   Sep 12 07:16:44 clickhouse4030.novalocal systemd[1]: Stopped ClickHouse Server (analytic DBMS for big data).
+   Sep 12 07:16:48 clickhouse4030.novalocal systemd[1]: Starting ClickHouse Server (analytic DBMS for big data)...
+   Sep 12 07:16:49 clickhouse4030.novalocal cloud-init[1502]: status: done
+   Sep 12 07:16:49 clickhouse4030.novalocal systemd[1]: Started ClickHouse Server (analytic DBMS for big data).
+   Sep 12 07:16:49 clickhouse4030.novalocal clickhouse-server[1509]: Processing configuration file '/etc/clickhouse-server>
+   Sep 12 07:16:49 clickhouse4030.novalocal clickhouse-server[1509]: Logging information to /var/log/clickhouse-server/cli>
+   Sep 12 07:16:49 clickhouse4030.novalocal clickhouse-server[1509]: Logging errors to /var/log/clickhouse-server/clickhou>
+   Sep 12 08:42:56 clickhouse4030.novalocal systemd[1]: Stopping ClickHouse Server (analytic DBMS for big data)...
+   Sep 12 08:42:57 clickhouse4030.novalocal systemd[1]: clickhouse-server.service: Succeeded.
+   Sep 12 08:42:57 clickhouse4030.novalocal systemd[1]: Stopped ClickHouse Server (analytic DBMS for big data).
+   Sep 12 08:42:57 clickhouse4030.novalocal systemd[1]: Starting ClickHouse Server (analytic DBMS for big data)...
+   Sep 12 08:42:58 clickhouse4030.novalocal cloud-init[3661]: status: done
+   Sep 12 08:42:58 clickhouse4030.novalocal systemd[1]: Started ClickHouse Server (analytic DBMS for big data).
+   Sep 12 08:42:58 clickhouse4030.novalocal clickhouse-server[3666]: Processing configuration file '/etc/clickhouse-server>
+   Sep 12 08:42:58 clickhouse4030.novalocal clickhouse-server[3666]: Logging information to /var/log/clickhouse-server/cli>
    ```
 
    </details>
