@@ -22,13 +22,13 @@
 1. Сгенерируйте токены:
 
    ```bash
-   curl -X POST 'https://mcs.mail.ru/auth/oauth/v1/token' \ 
-   -H Content-Type:application/json \
-   -d '{
-     "client_id":"<OAuth Идентификатор клиента>",
-     "client_secret":"<OAuth Секретный ключ>",
-     "grant_type":"client_credentials"
-     }'
+   curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
+   --header 'Content-Type: application/json' \
+   --data '{
+   "client_id":"<OAuth Идентификатор клиента>",
+   "client_secret": "<OAuth Секретный ключ>",
+   "grant_type":"client_credentials"
+   }'
    ```
 
 В ответе сервера будут два токена:
@@ -47,13 +47,13 @@
 Чтобы сгенерировать новый токен доступа с помощью токена обновления, выполните команду:
 
 ```bash
-curl -X POST '<https://mcs.mail.ru/auth/oauth/v1/token>' \ 
--H Content-Type:application/json \
--d '{
-  "client_id":"<OAuth Идентификатор клиента>",
-  "refresh_token":"<токен обновления>",
-  "grant_type":"refresh_token"
-  }'
+curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
+--header 'Content-Type: application/json' \
+--data '{
+"client_id":"<OAuth Идентификатор клиента>",
+"refresh_token":"<токен обновления>",
+"grant_type":"refresh_token"
+}'
 ```
 
 Здесь `client_id` и `refresh_token` получены на этапе генерации [OAuth-токенов](../auth-vision#poluchenie_oauth_tokenov).

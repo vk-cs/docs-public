@@ -68,7 +68,13 @@ The usage scheme for tokens is as follows:
 We need to send a request to the authorization server with the client ID and secret key:
 
 ```bash
-curl -X POST 'https://mcs.mail.ru/auth/oauth/v1/token' -HContent-Type:application/json -d '{"client_id":"mcs1017666666.ml.vision.f7kk1rmajnhfy", " client_secret":"5FYLyJoex37xw45TJShx6dGifnouhdsOIndbsyg78ejnbs", "grant_type":"client_credentials"}'
+curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
+   --header 'Content-Type: application/json' \
+   --data '{
+   "client_id":"<OAuth client ID>",
+   "client_secret": "<OAuth secret key>",
+   "grant_type":"client_credentials"
+   }'
 ```
 
 ### Query parameters
@@ -117,10 +123,16 @@ Type of token to generate:
 
 ### Refresh token
 
-To generate *access_token* via *refresh_token*, send a request to the authorization server:
+To generate `access_token` via `refresh_token`, send a request to the authorization server:
 
 ```bash
-curl -X POST 'https://mcs.mail.ru/auth/oauth/v1/token' -HContent-Type:application/json -d '{"client_id":"mcs1017666666.ml.vision.f7kk1rmajnhfy"," refresh_token":"Q9fdfT49CZ19rfohBC4y8Du6PE89989898hghgh", "grant_type":"refresh_token"}
+curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
+--header 'Content-Type: application/json' \
+--data '{
+"client_id":"<OAuth client ID>",
+"refresh_token":"<refresh token>",
+"grant_type":"refresh_token"
+}'
 ```
 
 ### Response to request

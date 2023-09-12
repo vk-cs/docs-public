@@ -11,7 +11,13 @@ There are two ways to get a token:
 An example of a request to generate a token:
 
 ```bash
-curl -L -w '\n' -X POST 'https://mcs.mail.ru/auth/oauth/v1/token' -D - -HContent-Type:application/json -d '{"client_id": "mcs5719255887.voice.6Wg9D18XPZN28DWy4wEba", "client_secret":"1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ", "grant_type":"client_credentials"}'
+curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
+--header 'Content-Type: application/json' \
+--data '{
+"client_id":"mcs5719255887.voice.6Wg9D18XPZN28DWy4wEba",
+"client_secret": "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+"grant_type":"client_credentials"
+}'
 ```
 
 Answer example:
@@ -37,11 +43,12 @@ In response from the server, you will receive 2 tokens:
 Example of a token refresh request:
 
 ```bash
-curl -X POST 'https://mcs.mail.ru/auth/oauth/v1/token'
--H Content-Type:application/json
--d '{
+curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
+--header 'Content-Type: application/json' \
+--data '{
 "client_id":"mcs5719255887.voice.6Wg9D18XPZN28DWy4wEba",
-"refresh_token":"ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890", "grant_type":"refresh_token"
+"refresh_token":"ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
+"grant_type":"refresh_token"
 }'
 ```
 
