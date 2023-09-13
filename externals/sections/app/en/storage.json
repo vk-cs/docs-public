@@ -6,7 +6,7 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/base/s3/intro"
+                    "link": "docs/en/main/base/s3/concepts/intro"
                 },
                 {
                     "link": "docs/en/main/base/s3/tariffication",
@@ -16,7 +16,7 @@
                     "link": "docs/en/main/base/account/concepts/quotasandlimits"
                 },
                 {
-                    "link": "docs/en/main/base/s3/about-s3-api"
+                    "link": "docs/en/main/base/s3/concepts/about-s3-api"
                 }
             ]
         },
@@ -32,7 +32,7 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/main/base/s3/tools/s3-cli"
+                    "link": "docs/en/main/base/s3/storage-connecting/s3-cli"
                 },
                 {
                     "link": "docs/en/main/base/s3/use-cases/load-large-image"
@@ -41,7 +41,7 @@
                     "link": "docs/en/main/base/s3/use-cases/s3-domain"
                 },
                 {
-                    "link": "docs/en/main/base/s3/dev"
+                    "link": "docs/en/main/base/s3/storage-connecting/s3-sdk"
                 }
             ]
         },
