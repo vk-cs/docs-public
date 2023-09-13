@@ -89,7 +89,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - application name;
       - the name of the namespace where the addon will be installed.
 
-   1. Edit the [addon setup code](#editing-the-addon-setup-code-during-installation).
+   1. Edit the [addon setup code](#editing_the_addon_setup_code_during_installation).
 
       <warn>
 
@@ -150,7 +150,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. [Get the data to access the registry](#getting-data-to-access-the-registry).
+1. [Get the data to access the registry](#connecting_to_registry).
 
 </tabpanel>
 <tabpanel>
@@ -201,7 +201,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - application name;
       - the name of the namespace where the addon will be installed.
 
-   1. Edit the [addon setup code](#editing-the-addon-setup-code-during-installation).
+   1. Edit the [addon setup code](#editing_the_addon_setup_code_during_installation).
 
    1. Set the necessary tolerations and nodeSelector in the addon setup code:
 
@@ -253,7 +253,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. [Get the data to access the registry](#getting-data-to-access-the-registry).
+1. [Get the data to access the registry](#connecting_to_registry).
 
 </tabpanel>
 </tabs>
@@ -262,7 +262,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 <info>
 
-- When editing the addon setup code, use the information [obtained earlier](#preparatory-steps).
+- When editing the addon setup code, use the information [obtained earlier](#preparatory_steps).
 - The full addon setup code along with the description of the fields is available on [GitHub](https://github.com/twuni/docker-registry.helm/blob/main/values.yaml).
 
 </info>
@@ -300,14 +300,14 @@ Specify:
      loadBalancerIP: <selected floating IP address>
    ```
 
-After editing the addon code [continue installing the addon](#installing-the-addon).
+After editing the addon code [continue installing the addon](#installing_the_addon).
 
-## Getting data to access the registry
+## Connecting to registry
 
-To access the registry, write down the data that was used in the addon setup code when installing it:
+1. Write down the data that was used in the addon setup code when installing it:
 
-- Login.
-- Password.
-- The IP address of the registry. The Docker registry URL will look like this: `<IP address>:5000`.
+   - Login.
+   - Password.
+   - The IP address of the registry. The Docker registry URL will look like this: `<IP address>:5000`.
 
-To learn how to connect to the registry and use it in a Kubernetes cluster, read the section [Connecting to Docker Registry](../../../../connect/docker-registry).
+1. [Connect](../../../../connect/docker-registry) to Docker Registry.

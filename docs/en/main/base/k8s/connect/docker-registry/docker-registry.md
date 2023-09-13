@@ -6,7 +6,7 @@ When [installing](../../operations/addons/advanced-installation/install-advanced
 
 1. [Make sure](../../operations/addons/manage-addons#viewing_addons) that the Docker registry addon (`docker-registry`) is installed in the cluster.
 1. [Make sure](../kubectl#checking_the_connection_to_the_cluster) that you can connect to the cluster using `kubectl`.
-1. [Get the data](../../operations/addons/advanced-installation/install-advanced-registry#getting_data_to_access_the_registry) to access the Docker registry.
+1. [Get the data](../../operations/addons/advanced-installation/install-advanced-registry#connecting_to_registry) to access the Docker registry.
 
 ## Connecting to the Docker Registry
 
