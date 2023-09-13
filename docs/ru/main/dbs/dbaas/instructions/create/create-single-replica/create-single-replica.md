@@ -16,10 +16,10 @@
 
       Конфигурация **Master-Replica** доступна для следующих [типов СУБД](../../../types):
 
-      - MySQL
-      - PostgreSQL
-      - PostgresPro Enterprise
-      - PostgresPro Enterprise 1C
+      - MySQL,
+      - PostgreSQL,
+      - PostgresPro Enterprise,
+      - PostgresPro Enterprise 1C.
 
    1. Нажмите кнопку **Следующий шаг**.
 
@@ -63,10 +63,10 @@
 
         Опция доступна для следующих типов СУБД:
 
-        - MySQL
-        - PostgreSQL
-        - PostgresPro Enterprise
-        - PostgresPro Enterprise 1C
+        - MySQL,
+        - PostgreSQL,
+        - PostgresPro Enterprise,
+        - PostgresPro Enterprise 1C.
 
         Опция действует так:
 
