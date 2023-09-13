@@ -6,7 +6,7 @@
 
 1. [Убедитесь](../../operations/addons/manage-addons#prosmotr_addonov), что аддон реестра Docker (`docker-registry`) установлен в кластере.
 1. [Убедитесь](../kubectl#proverka_podklyucheniya_k_klasteru), что вы можете подключаться к кластеру с помощью `kubectl`.
-1. [Получите данные](../../operations/addons/advanced-installation/install-advanced-registry#poluchenie_dannyh_dlya_dostupa_k_reestru) для доступа к реестру Docker.
+1. [Получите данные](../../operations/addons/advanced-installation/install-advanced-registry#podklyuchenie_k_reestru) для доступа к реестру Docker.
 
 ## Подключение к реестру Docker
 
