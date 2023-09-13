@@ -13,7 +13,7 @@
                     "link": "docs/ru/main/base/account/concepts/quotasandlimits"
                 },
                 {
-                    "link": "docs/ru/main/base/s3/about-s3-api"
+                    "link": "docs/ru/main/base/s3/concepts/about-s3-api"
                 }
             ]
         },
@@ -24,7 +24,7 @@
                     "link": "docs/ru/main/base/s3/quick-start"
                 },
                 {
-                    "link": "docs/ru/main/base/s3/buckets/object-access"
+                    "link": "docs/ru/main/base/s3/instructions/buckets/object-access"
                 }
             ]
         },
@@ -32,7 +32,7 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/s3/tools/s3-cli"
+                    "link": "docs/ru/main/base/s3/storage-connecting/s3-cli"
                 },
                 {
                     "link": "docs/ru/main/base/s3/use-cases/load-large-image"
