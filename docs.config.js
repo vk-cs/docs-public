@@ -37,4 +37,13 @@ export const config = {
         editOnGithub: true,
         telegramSupport: true,
     },
+    translations: {
+        en: {
+            'LeftNavMenu.backLink.title': 'Go to main page',
+        },
+        ru: {
+            'LeftNavMenu.backLink.title': 'На главную',
+        },
+    },
+
 };
