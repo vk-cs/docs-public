@@ -100,7 +100,7 @@ Next, a VPN tunnel will be built to another network of the VK Cloud platform, an
    | Cloud VPN Gateway Virtual Subnet                                     | `10.0.0.0/29`   |
    | IP address of the `SNAT` port in the cloud subnet                    | `10.0.0.5`      |
 
-![Example Infrastructure](./assets/vpn-diagram.png)
+![Example Infrastructure](./assets/vpn-tunnel.png)
 
 ## 2. Set up a VPN tunnel on the cloud side
 
