@@ -17,7 +17,7 @@
 
 ## Оформление возврата
 
-1. Войдите в [личный кабинет](https://mcs.mail.ru/app/) VK Cloud под учетной записью владельца проекта.
+1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет VK Cloud под учетной записью владельца проекта.
 1. [Законсервируйте](/ru/base/account/instructions/project-settings/manage#konservaciya_proekta) проект, чтобы прекратить списание средств.
 1. Скопируйте [идентификатор (PID)](/ru/base/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) проекта из URL сайта VK Cloud.
 
