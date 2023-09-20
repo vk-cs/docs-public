@@ -76,7 +76,7 @@ pip install python-<Название сервиса>client
 
 ## 3. Пройдите аутентификацию
 
-1. Перейдите в [личный кабинет](https://mcs.mail.ru/app/) VK Cloud.
+1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет VK Cloud.
 2. Убедитесь, что [включена](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
 3. Выберите проект.
 4. На странице **Настроки проекта** [перейдите на вкладку](https://mcs.mail.ru/app/project/keys/) **Доступ по API**.
