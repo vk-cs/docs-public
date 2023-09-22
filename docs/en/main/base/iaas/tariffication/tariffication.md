@@ -10,7 +10,7 @@ Charged:
 
 * CPU (vCPU) — for each core. 1 vCPU corresponds to 1 physical core of the virtualization server.
 * Random access memory (RAM) — for each 1 GB of RAM.
-* Licenses (for example, on Windows OS) — for each day of license use, regardless of whether the license is activated or not.
+* Licenses (for example, on Windows OS) — for each of license, regardless of whether the license is activated or not.
 * Disks — for each 1 GB of disk space, the price depends on the type of disk (SSD, HDD, High-IOPS, Low Latency NVME).
 * File storage (NFS/CIFS) — for every 1 GB of disk space.
 * Disk snapshot (backup) — for every 1 GB of snapshot size.
