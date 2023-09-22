@@ -6,7 +6,7 @@
 
 - Master-узлы хранят информацию о состоянии всего кластера и управляют распределением рабочей нагрузки по worker-узлам.
 
-- Worker-узлы выполняют рабочую нагрузку ([workload](https://kubernetes.io/docs/concepts/workloads/)). Они могут быть организованы в группы worker-узлов. Для повышения отказоустойчивости разместите группы в разных [зонах доступности](../../../../additionals/start/start-intro/platform-security#zony_dostupnosti).
+- Worker-узлы выполняют рабочую нагрузку ([workload](https://kubernetes.io/docs/concepts/workloads/)). Они могут быть организованы в группы worker-узлов. Для повышения отказоустойчивости разместите группы в разных [зонах доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93).
 
 Отказоустойчивость кластера зависит от количества master-узлов. Возможные конфигурации:
 

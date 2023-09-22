@@ -61,7 +61,7 @@
 
         Шаблоны с высокопроизводительными CPU доступны [по запросу в службу поддержки](/ru/contacts). Чтобы воспользоваться этими шаблонами, выберите опцию **Показывать только высокопроизводительные CPU**.
 
-      - **Зона доступности:** [зона доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti) для кластера.
+      - **Зона доступности:** [зона доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93) для кластера.
 
       - **Тип диска:** [тип диска](/ru/base/iaas/concepts/vm-concept#diski) для кластера.
 
@@ -93,7 +93,7 @@
 
         Шаблоны с высокопроизводительными CPU доступны [по запросу в службу поддержки](/ru/contacts). Чтобы воспользоваться этими шаблонами, выберите опцию **Показывать только высокопроизводительные CPU**.
 
-      - **Зона доступности:** [зона доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti) для кластера.
+      - **Зона доступности:** [зона доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93) для кластера.
 
       - **Тип диска:** [тип диска](/ru/base/iaas/concepts/vm-concept#diski) для кластера.
 
@@ -109,7 +109,7 @@
 
         Шаблоны с высокопроизводительными CPU доступны [по запросу в службу поддержки](/ru/contacts). Чтобы воспользоваться этими шаблонами, выберите опцию **Показывать только высокопроизводительные CPU**.
 
-      - **Зона доступности:** [зона доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti) для кластера.
+      - **Зона доступности:** [зона доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93) для кластера.
 
       - **Тип диска:** [тип диска](/ru/base/iaas/concepts/vm-concept#diski) для кластера.
 
@@ -204,7 +204,7 @@
 
         Шаблоны с высокопроизводительными CPU доступны [по запросу в службу поддержки](/ru/contacts). Чтобы воспользоваться этими шаблонами, выберите опцию **Показывать только высокопроизводительные CPU**.
 
-      - **Зона доступности:** [зона доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti) для кластера.
+      - **Зона доступности:** [зона доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93) для кластера.
 
       - **Тип диска:** [тип диска](/ru/base/iaas/concepts/vm-concept#diski) для кластера.
 
@@ -355,7 +355,7 @@
 
         Шаблоны с высокопроизводительными CPU доступны [по запросу в службу поддержки](/ru/contacts). Чтобы воспользоваться этими шаблонами, выберите опцию **Показывать только высокопроизводительные CPU**.
 
-      - **Зона доступности:** [зона доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti) для кластера.
+      - **Зона доступности:** [зона доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93) для кластера.
 
       - **Тип диска:** [тип диска](/ru/base/iaas/concepts/vm-concept#diski) для кластера.
 
@@ -505,7 +505,7 @@
 
         Шаблоны с высокопроизводительными CPU доступны [по запросу в службу поддержки](/ru/contacts). Чтобы воспользоваться этими шаблонами, выберите опцию **Показывать только высокопроизводительные CPU**.
 
-      - **Зона доступности:** [зона доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti) для хостов шарда.
+      - **Зона доступности:** [зона доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93) для хостов шарда.
 
       - **Тип диска:** [тип диска](/ru/base/iaas/concepts/vm-concept#diski) для хостов шарда.
 
