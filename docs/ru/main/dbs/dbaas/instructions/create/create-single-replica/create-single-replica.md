@@ -33,7 +33,7 @@
 
         Шаблоны с высокопроизводительными CPU доступны [по запросу в службу поддержки](/ru/contacts). Чтобы воспользоваться этими шаблонами, выберите опцию **Показывать только высокопроизводительные CPU**.
 
-      - **Зона доступности:** [зона доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti) для инстанса БД.
+      - **Зона доступности:** [зона доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93) для инстанса БД.
 
       - **Тип диска:** [тип диска](/ru/base/iaas/concepts/vm-concept#diski) для инстанса БД.
 
