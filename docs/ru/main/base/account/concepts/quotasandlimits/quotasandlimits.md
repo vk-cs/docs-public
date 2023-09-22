@@ -92,8 +92,8 @@
 |---------------------------|---------------------------------|-------|---------|
 | Общий объем дисков в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Размер дисков** в личном кабинете, `gigabytes` в расширенном списке | 200 ГБ | не ограничено |
 | Общий объем дисков High-IOPS SSD | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Размер High-IOPS SSD** в личном кабинете, `gigabytes_high-iops` в расширенном списке  | 200 ГБ | не ограничено |
-| Общий объем дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti) DP1 | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Размер High-IOPS SSD в зоне - (DP1)** в личном кабинете, `gigabytes_dp1-high-iops` в расширенном списке | 200 ГБ | не ограничено |
-| Общий объем дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti) MS1 | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Размер High-IOPS SSD в зоне Москва (MS1)** в личном кабинете, `gigabytes_ko1-high-iops` в расширенном списке | 200 ГБ | не ограничено |
+| Общий объем дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93) GZ1 | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Размер High-IOPS SSD в зоне - (DP1)** в личном кабинете, `gigabytes_dp1-high-iops` в расширенном списке | 200 ГБ | не ограничено |
+| Общий объем дисков High-IOPS SSD в зоне доступности MS1 | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Размер High-IOPS SSD в зоне Москва (MS1)** в личном кабинете, `gigabytes_ko1-high-iops` в расширенном списке | 200 ГБ | не ограничено |
 
 Квоты на общий объем дисков в проекте учитывают диски всех типов, в том числе High-IOPS SSD. Квоты на общий объем дисков High-IOPS SSD учитывают диски, созданные в обеих зонах доступности. Если вы запрашиваете через [техническую поддержку](/ru/contacts) увеличение квоты, включенной в другую квоту, квота более высокого уровня будет увеличена пропорционально.
 
@@ -103,8 +103,8 @@
 |---------------------------|---------------------------------|-------|---------|
 | Количество дисков в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Диски** в личном кабинете, `volumes` в расширенном списке | 10 шт. | не ограничено |
 | Количество дисков High-IOPS SSD в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Диски High-IOPS SSD** в личном кабинете, `volumes_high-iops` в расширенном списке | 10 шт. | не ограничено |
-| Количество дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti) DP1 | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Диски High-IOPS SSD в зоне - (DP1)** в личном кабинете, `volumes_dp1-high-iops` в расширенном списке | 10 шт. | не ограничено |
-| Количество дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti) MS1 | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Диски High-IOPS SSD в зоне Москва (MS1)** в личном кабинете, `volumes_ko1-high-iops` в расширенном списке | 10 шт.  | не ограничено |
+| Количество дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93) GZ1 | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Диски High-IOPS SSD в зоне - (DP1)** в личном кабинете, `volumes_dp1-high-iops` в расширенном списке | 10 шт. | не ограничено |
+| Количество дисков High-IOPS SSD в зоне доступности MS1 | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Диски High-IOPS SSD в зоне Москва (MS1)** в личном кабинете, `volumes_ko1-high-iops` в расширенном списке | 10 шт.  | не ограничено |
 
 Квоты на общее количество дисков в проекте учитывают диски всех типов, в том числе High-IOPS SSD. Квоты на общее количество дисков High-IOPS SSD учитывают диски, созданные в обеих зонах доступности. Если вы запрашиваете через [техническую поддержку](/ru/contacts) увеличение квоты, включенной в другую квоту, квота более высокого уровня будет увеличена пропорционально.
 

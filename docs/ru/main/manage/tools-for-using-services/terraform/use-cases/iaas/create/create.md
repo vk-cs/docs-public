@@ -100,7 +100,7 @@
    </tabpanel>
    <tabpanel>
 
-   В статье о [зонах доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti).
+   В статье о [зонах доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93).
 
    </tabpanel>
    </tabs>

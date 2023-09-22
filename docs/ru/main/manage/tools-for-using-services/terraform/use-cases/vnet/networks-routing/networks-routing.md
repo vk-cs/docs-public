@@ -94,7 +94,7 @@
    </tabpanel>
    <tabpanel>
 
-   Из документа, посвященного [зонам доступности](/ru/additionals/start/it-security/platform-security#zony_dostupnosti).
+   Из документа, посвященного [зонам доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93).
 
    </tabpanel>
    </tabs>
