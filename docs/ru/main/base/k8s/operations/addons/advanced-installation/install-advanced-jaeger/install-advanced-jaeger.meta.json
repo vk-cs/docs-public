@@ -8,5 +8,8 @@
   "markdown": "Здесь описана настройка и установка аддона Jaeger.",
   "icon": "",
   "infobarItems": null,
-  "weight": 6
+  "weight": 6,
+  "createdAt": "2023-09-25T14:41:59.000Z",
+  "updatedAt": "2023-09-25T14:41:59.000Z",
+  "uuid": "52869a3d-5da5-40ee-a624-8e185ceb0fee"
 }
