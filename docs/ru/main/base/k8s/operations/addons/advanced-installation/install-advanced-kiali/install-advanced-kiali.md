@@ -97,7 +97,7 @@
    </tabpanel>
    </tabs>
 
-1. [Подключитесь к Kiali](../../../../connect/kiali-server).
+1. [Подключитесь к Kiali](../../../../connect/addons-ui).
 
 </tabpanel>
 <tabpanel>
@@ -199,7 +199,7 @@
    </tabpanel>
    </tabs>
 
-1. [Подключитесь к Kiali](../../../../connect/kiali-server).
+1. [Подключитесь к Kiali](../../../../connect/addons-ui).
 
 </tabpanel>
 <tabpanel>
@@ -245,7 +245,7 @@
    </tabpanel>
    </tabs>
 
-1. [Подключитесь к Kiali](../../../../connect/kiali-server).
+1. [Подключитесь к Kiali](../../../../connect/addons-ui).
 
 </tabpanel>
 </tabs>
