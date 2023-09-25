@@ -12,10 +12,10 @@ Manifest listing for creating **Virtual Machines** service group resources:
 ```hcl
 terraform {
   required_providers {
-  vkcs = {
-  source="vk-cs/vkcs"
-  version="~>0.1.12"
-  }
+    vkcs = {
+      source="vk-cs/vkcs"
+      version=" ~> 0.1.12"
+    }
   }
 }
 ```
@@ -35,8 +35,7 @@ resource "vkcs_compute_instance" "instance1" {
   name="terraform-test"
   # The flavor ID for the instance. You can find out with the command: openstack flavor list
   flavor_id = "dc84b839-a97b-4074-83d6-233531ffd8b3"
-  # The name of the key pair for the instance. You can find out with the command: openstack keypair
-list
+  # The name of the key pair for the instance. You can find out with the command: openstack keypair list
   key_pair = "some_keypair"
   # SG for instance
   security_groups = ["default"]
