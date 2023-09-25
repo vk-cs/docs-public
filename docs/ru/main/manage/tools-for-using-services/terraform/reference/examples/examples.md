@@ -11,12 +11,12 @@
 
 ```hcl
 terraform {
- required_providers {
- vkcs = {
- source = "vk-cs/vkcs"
- version = "~> 0.1.12"
- }
- }
+  required_providers {
+    vkcs = {
+      source="vk-cs/vkcs"
+      version=" ~> 0.1.12"
+    }
+  }
 }
 ```
 
@@ -35,8 +35,7 @@ resource "vkcs_compute_instance" "instance1" {
  name = "terraform-test"
  # ID флейвора для инстанса. Можно узнать с помощью команды: openstack flavor list
  flavor_id = "dc84b839-a97b-4074-83d6-233531ffd8b3"
- # Имя ключевой пары для инстанса. Можно узнать с помощью команды: openstack keypair 
-list
+ # Имя ключевой пары для инстанса. Можно узнать с помощью команды: openstack keypair list
  key_pair = "some_keypair"
  # SG для инстанса
  security_groups = ["default"]
