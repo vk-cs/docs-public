@@ -1,14 +1,14 @@
 {
-  "title": "Управление доступом",
+  "title": "Управление доступом (ACL)",
   "pageDescription": "",
   "shortDescription": "Список управления доступом",
-  "metaTitle": "Управление доступом",
+  "metaTitle": "Управление доступом (ACL)",
   "metaDescription": "Общая информация ACL (Access Control List) позволяет контроллировать, какие операции разрешены каким пользователям. ACL может стоять как и на уровне всего",
-  "sectionTitle": "Управление доступом",
+  "sectionTitle": "Управление доступом (ACL)",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
-  "weight": 2,
+  "weight": 3,
   "uuid": "b2f12498-ac0c-431a-889a-82d6de54b206",
   "createdAt": "2022-03-26T14:10:44.000Z",
   "updatedAt": "2023-09-11T14:47:43.000Z"
