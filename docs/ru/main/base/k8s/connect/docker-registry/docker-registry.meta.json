@@ -1,7 +1,7 @@
 {
   "title": "Подключение к реестру Docker",
   "pageDescription": "Если в кластере Kubernetes включен реестр Docker, то к реестру можно подключиться, используя описанную здесь процедуру.",
-  "shortDescription": "Как подключиться к реестру Docker",
+  "shortDescription": "",
   "metaTitle": "Подключение к реестру Docker",
   "metaDescription": "",
   "sectionTitle": "Подключение к реестру Docker",
