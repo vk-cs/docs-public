@@ -25,6 +25,7 @@
 | --------------------------------------------------------------------------------- | ------------------------- | ------------------------- |
 | [Docker Registry](https://github.com/twuni/docker-registry.helm)                  | 2.2.2     | 2.2.2     |
 | [Ingress NGINX](https://github.com/kubernetes/ingress-nginx)                      | 4.1.4     | 4.1.4     |
-| [Kube Prometheus Stack](https://github.com/prometheus-operator/kube-prometheus)   | 36.2.0    | 36.2.0    |
 | [Istio](https://github.com/istio/istio)                                           | —         | 1.16.4    |
-| [Kiali](https://github.com/kiali/kiali)                                           | –         | 1.59.1    |
+| [Jaeger](https://github.com/jaegertracing/jaeger)                                 | —         | 0.71.4    |
+| [Kiali](https://github.com/kiali/kiali)                                           | —         | 1.59.1    |
+| [Kube Prometheus Stack](https://github.com/prometheus-operator/kube-prometheus)   | 36.2.0    | 36.2.0    |
