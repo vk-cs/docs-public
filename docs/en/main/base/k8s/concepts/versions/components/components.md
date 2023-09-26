@@ -7,14 +7,15 @@ When [updating a cluster](../../../operations/update), part of its components ar
 These components are present in all Kubernetes VK Cloud clusters.
 
 <!-- prettier-ignore -->
-| Component                                                             | Kubernetes 1.21.4–1.22.x  | Kubernetes 1.23.x–1.26.x  |
-| --------------------------------------------------------------------- | ------------------------- | ------------------------- |
-| [CoreDNS](https://github.com/coredns/coredns)                         | 1.2.4     | 1.10.1    |
-| [Calico](https://github.com/projectcalico/calico)                     | 3.20.2    | 3.25.0    |
-| [Gatekeeper](https://github.com/open-policy-agent/gatekeeper)         | 3.7.0     | 3.11.0    |
-| [Kubernetes Dashboard](https://github.com/kubernetes/dashboard)       | 2.3.1     | 2.7.0     |
-| [Metrics Server](https://github.com/kubernetes-sigs/metrics-server)   | 0.5.0     | 0.6.1     |
-| [Shell-operator](https://github.com/flant/shell-operator)             | 1.0.9     | 1.0.9     |
+| Component                                                           | Kubernetes 1.21.4–1.22.x  | Kubernetes 1.23.x–1.25.x  | Kubernetes 1.26.x |
+| ------------------------------------------------------------------- | ------------------------- | ------------------------- | ----------------- |
+| [CoreDNS](https://github.com/coredns/coredns)                         | 1.2.4     | 1.10.1    | 1.10.1 |
+| [Calico](https://github.com/projectcalico/calico)                     | 3.20.2    | 3.25.0    | 3.26.1 |
+| [Gatekeeper](https://github.com/open-policy-agent/gatekeeper)         | 3.7.0     | 3.11.0    | 3.12.0 |
+| [Kubernetes Dashboard](https://github.com/kubernetes/dashboard)       | 2.3.1     | 2.7.0     | 2.7.0  |
+| [Metrics Server](https://github.com/kubernetes-sigs/metrics-server)   | 0.5.0     | 0.6.1     | 0.6.1  |
+| [Shell-operator](https://github.com/flant/shell-operator)             | 1.0.9     | 1.0.9     | 1.0.9  |
+| [Helm](https://github.com/helm/helm)                                  | 3.11.3    | 3.11.3    | 3.12.2 |
 
 ## Addons
 
