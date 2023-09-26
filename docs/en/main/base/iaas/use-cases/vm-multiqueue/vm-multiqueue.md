@@ -1,4 +1,4 @@
-VK Cloud supports multiqueue (multiple queues) for a VM image and a separate VM.
+VK Cloud supports multiple queues (multiqueue) for a VM image and a separate VM for Linux operational systems.
 
 ## Constraints
 
@@ -29,14 +29,14 @@ On the VK Cloud platform, it is not enough to enable multiqueue only at the imag
 The option includes multiqueue at the image level and will work for all VMs created after executing the instruction.
 
 1. [Create](../../instructions/vm-images/vm-images-manage) image VM.
-2. Get a list of available images:
+1. Get a list of available images:
 
     ```bash
     openstack image list
     ```
 
-3. Copy the ID of the desired image.
-4. Enable multiqueue:
+1. Copy the ID of the desired image.
+1. Enable multiqueue:
 
     ```bash
     openstack image set <IMG_ID> --property hw_vif_multiqueue_enabled=true
@@ -57,13 +57,14 @@ This option is used when the VM has already been created at the time of enabling
 ## 2. Check the multiqueue connection
 
 1. [Create](../../instructions/vm/vm-create) a VM with more than one CPU, and [connect](../../instructions/vm/vm-connect) to it.
-2. View all network interfaces:
+1. View all network interfaces:
 
     ```bash
     sudo ip link show
     ```
 
-    Example output:
+    <details>
+     <summary>Example output</summary>
 
     ```bash
     ubuntu@dm-test:~$ sudo ip link show
@@ -76,13 +77,16 @@ This option is used when the VM has already been created at the time of enabling
 
     Here `ens3` is the name of the network interface for which you need to check the multiqueue connection.
 
-3. See the current number of queues:
+    </details>
+
+1. See the current number of queues:
 
     ```bash
     ethtool -l <network interface name>
     ```
 
-    Example output:
+    <details>
+     <summary>Example output</summary>
 
     ```bash
     ubuntu@dm-test:~$ ethtool -l ens3
@@ -98,6 +102,8 @@ This option is used when the VM has already been created at the time of enabling
     Other:          n/a
     Combined:       1
     ```
+
+    </details>
 
 ## 3. Set the desired number of queues for the VM
 
@@ -119,7 +125,8 @@ The number of queues cannot be greater than the number of virtual CPUs.
     ethtool -l <network interface name>
     ```
 
-Example of installing queues:
+<details>
+  <summary>Example of installing queues</summary>
 
 ```bash
 ubuntu@dm-test:~$ sudo ethtool -L ens3 combined 2
@@ -136,3 +143,5 @@ TX:             n/a
 Other:          n/a
 Combined:       2
 ```
+
+</details>
