@@ -1,5 +1,11 @@
 ## Kubernetes 1.26.5 <a id="v1-26-5"></a>
 
+**Изменения в сервисе Kubernetes aaS:**
+
+- Calico обновлено до 3.26.1.
+- Helm обновлен до 3.12.2.
+- Gatekeeper обновлен до 3.12.0.
+
 **Важные изменения в Kubernetes:**
 
 - Устаревшие API в статусе beta [удалены и не поддерживаются](https://kubernetes.io/docs/reference/using-api/deprecation-guide/#v1-26).
