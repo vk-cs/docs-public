@@ -8,8 +8,8 @@ WordPress is the most popular web content management system (CMS). Many plug-ins
 
 If you don't already have the LAMP stack installed:
 
-- You can get a ready-made LAMP stack in the cloud [as a configured virtual machine](https://mcs.mail.ru/app/services/marketplace/) on Ubuntu 18.04 and [install Wordpress on it](https://mcs .mail.ru/help/wordpress-on-linux/wordpress-ubuntu-18). When registering, you get a free bonus account, which is enough to test the server for several days.
-- You can install the LAMP stack yourself. For information on how to install the LAMP stack on CentOS 6.9, [read here](https://mcs.mail.ru/help/lamp-on-linux/lamp-centos-6-9).
+- You can get a ready-made LAMP stack in the cloud [as a configured virtual machine](https://mcs.mail.ru/app/services/marketplace/) on Ubuntu 18.04 and [install Wordpress on it](/en/additionals/cases/cases-wp/case-wp-u18). When registering, you get a free bonus account, which is enough to test the server for several days.
+- You can install the LAMP stack yourself. For information on how to install the LAMP stack on CentOS 6.9, [read here](/en/additionals/cases/cases-lamp/lamp-cos6).
 
 ## Preparing to Install WordPress
 

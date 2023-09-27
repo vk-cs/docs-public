@@ -9,7 +9,7 @@
 If you don't already have the LAMP stack installed:
 
 - You can get a ready-made LAMP stack in the cloud [as a configured virtual machine](https://mcs.mail.ru/app/services/marketplace/) on Ubuntu 18.04. When registering, you get a free bonus account, which is enough to test the server for several days.
-- You can install the LAMP stack yourself. For information on how to install a LAMP stack on Ubuntu 18.04, [Installing a LAMP stack on an Ubuntu operating system](https://mcs.mail.ru/help/lamp-setup/lamp-ubuntu-18).
+- You can install the LAMP stack yourself. For information on how to install a LAMP stack on Ubuntu 18.04, [Installing a LAMP stack on an Ubuntu operating system](/en/additionals/cases/cases-lamp/lamp-deb9).
 
 ## Preparation for installation of 1C-Bitrix: Site management
 

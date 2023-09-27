@@ -2,12 +2,12 @@ In this article, we will look at how to install and configure Gitlab.
 
 After that you can:
 
-- [Install and configure Harbor](https://mcs.mail.ru/help/gitlab-ci-cd/harbor-installation);
-- [Configure application auto-deployment to Kubernetes cluster](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
+- [Install and configure Harbor](/en/additionals/cases/cases-gitlab/case-harbor);
+- [Configure application auto-deployment to Kubernetes cluster](/en/additionals/cases/cases-gitlab/case-k8s-app).
 
 ## Gitlab installation
 
-Before installing Gitlab, [install and configure Docker](https://mcs.mail.ru/help/gitlab-ci-cd/docker-installation).
+Before installing Gitlab, [install and configure Docker](/en/additionals/cases/cases-gitlab/case-docker).
 
 To install Gitlab:
 
@@ -289,4 +289,4 @@ Object Receipt: 100% (23/23), 6.33 KiB | 6.33 MiB/s, done.
 Change detection: 100% (3/3), done.
 ```
 
-Now [install and configure the Harbor repository](https://mcs.mail.ru/help/gitlab-ci-cd/harbor-installation), which will contain the collected images.
+Now [install and configure the Harbor repository](/en/additionals/cases/cases-gitlab/case-harbor), which will contain the collected images.

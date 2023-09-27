@@ -13,7 +13,7 @@ Set up Docker on the Ubuntu server, deploy Gitlab and Harbor in it. Gitlab is a 
 
 ## Sequencing
 
-1. [Install and configure Docker](https://mcs.mail.ru/help/gitlab-ci-cd/docker-installation).
-2. [Install and configure Gitlab](https://mcs.mail.ru/help/gitlab-ci-cd/gitlab-installation).
-3. [Install and configure Harbor](https://mcs.mail.ru/help/gitlab-ci-cd/harbor-installation).
-4. [Configure auto-deployment of the application to the Kubernetes cluster](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
+1. [Install and configure Docker](/en/additionals/cases/cases-gitlab/case-docker).
+2. [Install and configure Gitlab](/en/additionals/cases/cases-gitlab/case-gitlab).
+3. [Install and configure Harbor](/en/additionals/cases/cases-gitlab/case-harbor).
+4. [Configure auto-deployment of the application to the Kubernetes cluster](/en/additionals/cases/cases-gitlab/case-k8s-app).
