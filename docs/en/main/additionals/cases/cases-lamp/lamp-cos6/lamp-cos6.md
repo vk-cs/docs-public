@@ -2,11 +2,11 @@ This article describes the installation of the LAMP stack on a Linux operating s
 
 The LAMP stack includes the Linux operating system, the Apache web server, the MySQL database management system, and a server-side scripting language for processing PHP dynamic content. All this is necessary to support dynamic sites and web applications.
 
-## **How ​​to save time installing a LAMP stack**
+## How ​​to save time installing a LAMP stack
 
 You can get a ready-made LAMP stack on Ubuntu 18.04 as a [configured VK Cloud virtual machine](https://mcs.mail.ru/app/services/marketplace/). When registering, you get a free bonus account, which is enough to test the server for several days.
 
-To learn more about LAMP in the app store, go to [Help Center](https://mcs.mail.ru/help/quick-start/-lamp-stack-apachephp).
+To learn more about LAMP in the app store, go to [Help Center](/en/additionals/mp/mp-apps/mp-lamp-stack).
 
 #### Requirements
 
@@ -223,8 +223,6 @@ As a result, the following page should be displayed:
 **![](./assets/1557695836526-1557695836526.jpeg)**
 
 <warn>
-
-**Attention**
 
 For security purposes, after checking the system, it is recommended to delete the info.php file by running the command:
 

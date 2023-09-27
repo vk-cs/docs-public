@@ -2,9 +2,7 @@ In this article, we will look at how to replicate and upgrade MongoDB on Ubuntu 
 
 <info>
 
-**Note**
-
-You can learn about the hardware configuration, as well as how to install and configure MongoDB in the article [Installing and configuring MongoDB on Ubuntu](https://mcs.mail.ru/help/databases-configuration/mongodb-installation).
+You can learn about the hardware configuration, as well as how to install and configure MongoDB in the article [Installing and configuring MongoDB on Ubuntu](/en/additionals/cases/cases-db-config/case-mongo-create).
 
 </info>
 
@@ -87,7 +85,7 @@ rs0:PRIMARY> rs.reconfig(cfg)
 rs0:PRIMARY>
 ```
 
-7. Log in to the `mongo2` server, import the MongoDB repository key, add the MongoDB repository and install MongoDB (how to do this, see the article [Installing and configuring MongoDB on Ubuntu](https://mcs.mail.ru/help/databases-configuration/mongodb-installation)).
+7. Log in to the `mongo2` server, import the MongoDB repository key, add the MongoDB repository and install MongoDB (how to do this, see the article [Installing and configuring MongoDB on Ubuntu](/en/additionals/cases/cases-db-config/case-mongo-create)).
 8. If you edited the `/etc/hosts` file on the `mongo1` server, do the same on the current server.
 9. From the mongo1 server, copy the configuration file `/etc/mongod.conf` to the current server, change the key name in the file `PEMKeyFile:` from `/etc/ssl/mongo1.pem` to `PEMKeyFile: /etc/ssl/mongo2 .pem`.
 10. Copy the `/etc/ssl/mongoCA.pem` key to the current server.

@@ -1,11 +1,11 @@
-In this article, we will look at how to install and configure Harbor repository repositories. After that, you can [configure application auto-deployment to a Kubernetes cluster](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
+In this article, we will look at how to install and configure Harbor repository repositories. After that, you can [configure application auto-deployment to a Kubernetes cluster](/en/additionals/cases/cases-gitlab/case-k8s-app).
 
 ## Installing the Harbor repository repository
 
 Before installing Harbor:
 
-1. [Install and configure Docker](https://mcs.mail.ru/help/gitlab-ci-cd/docker-installation).
-2. [Install and configure Gitlab](https://mcs.mail.ru/help/gitlab-ci-cd/gitlab-installation).
+1. [Install and configure Docker](/en/additionals/cases/cases-gitlab/case-docker).
+2. [Install and configure Gitlab](/en/additionals/cases/cases-gitlab/case-gitlab).
 
 Harbor is installed as a Docker image using the online installer.
 
@@ -122,4 +122,4 @@ Remember the password entered for the user, it will be required for integration 
 
 ![](./assets/1583617528394-1583617528394.png)
 
-Now [set up auto-deployment of the application to the Kubernetes cluster](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
+Now [set up auto-deployment of the application to the Kubernetes cluster](/en/additionals/cases/cases-gitlab/case-k8s-app).

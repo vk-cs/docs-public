@@ -8,8 +8,8 @@ ModX is an open source content management system. ModX is designed to create, ed
 
 If you don't already have the LAMP stack installed:
 
-- You can get a ready-made LAMP stack in the cloud [as a configured virtual machine](https://mcs.mail.ru/app/services/marketplace/) on Ubuntu 18.04 and [install ModX on it](https://mcs .mail.ru/help/modx-linux/modx-ubuntu-18). When registering, you get a free bonus account, which is enough to test the server for several days.
-- You can install the LAMP stack yourself. To learn how to install the LAMP stack on CentOS 7.4, [read here](https://mcs.mail.ru/help/lamp-on-linux/lamp-centos-7-4).
+- You can get a ready-made LAMP stack in the cloud [as a configured virtual machine](https://mcs.mail.ru/app/services/marketplace/) on Ubuntu 18.04 and [install ModX on it](/en/additionals/cases/cases-modx/cases-modx-u18). When registering, you get a free bonus account, which is enough to test the server for several days.
+- You can install the LAMP stack yourself. To learn how to install the LAMP stack on CentOS 7.4, [read here](/en/additionals/cases/cases-lamp/lamp-cos74).
 
 ## MySQL database setup
 
@@ -32,8 +32,6 @@ For example: CREATE DATABASE modxdb;
 ```
 
 <warn>
-
-**Attention**
 
 Each MySQL DBMS command must be followed by a semicolon.
 
@@ -152,8 +150,6 @@ For example: sudo chown -R apache:apache /var/www/html/modx
 ```
 
 <warn>
-
-**Attention**
 
 To avoid Apache web server errors when running scripts, use the default apache username and the default apache group name.
 

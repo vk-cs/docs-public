@@ -22,8 +22,6 @@ Applicable rules, as amended, which were in effect at the time of the actual use
 
 2.3. The applicable rules, including this Agreement, may be changed by the Licensor at any time without any prior notice to the Licensee. Any such changes come into force on the day following the day of publication of such changes in the "Vision" section of the Licensee's Personal Account. Licensee agrees to independently check the Applicable Rules for changes. Failure by the Licensee to familiarize himself with the Applicable Rules and / or the revised edition cannot serve as a basis for the Licensee's failure to fulfill his obligations related to the use of the Platform and / or the Program. The Licensee has the right to refuse to accept the changes and additions made by the Licensor to the Applicable Rules, which means the Licensee's refusal to use the Platform and / or the Program.
 
-2.4. To use the Program and gain access to it through the API, the Licensee undertakes to ensure that the hardware and software of the Licensee comply with the requirements of the Licensor, which are available on the page at the link [https://help.mail.ru/vision/api](/en/ml/vision) and may be updated by the Licensor from time to time.
-
 ## 3\. Subject of the agreement
 
 3.1. Under the terms of this Agreement, the Licensor grants the Licensee, on the terms of a paid simple non-exclusive license, the right to use the Program, as well as the API, within the limits specified in this Agreement, and the Licensee undertakes to pay the Licensor a license fee in the amount and in the manner established by the Licensor.
