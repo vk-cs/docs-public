@@ -13,7 +13,7 @@
 
 ## Последовательность действий
 
-1.  [Установите и настройте Docker](https://mcs.mail.ru/help/gitlab-ci-cd/docker-installation).
-2.  [Установите и настройте Gitlab](https://mcs.mail.ru/help/gitlab-ci-cd/gitlab-installation).
-3.  [Установите и настройте Harbor](https://mcs.mail.ru/help/gitlab-ci-cd/harbor-installation).
-4.  [Настройте авторазвертывание приложения в кластер Kubernetes](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
+1. [Установите и настройте Docker](/ru/additionals/cases/cases-gitlab/case-docker).
+2. [Установите и настройте Gitlab](/ru/additionals/cases/cases-gitlab/case-gitlab).
+3. [Установите и настройте Harbor](/ru/additionals/cases/cases-gitlab/case-harbor).
+4. [Настройте авторазвертывание приложения в кластер Kubernetes](/ru/additionals/cases/cases-gitlab/case-k8s-app).

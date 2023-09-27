@@ -16,7 +16,7 @@
 
 Рассмотрим установку MongoDB версии 4.0. Для сервера MongoDB нам потребуются три сервера Ubuntu 18.04 LTS x86_64.
 
-Можно установить одиночный сервер MongoDB. Если необходимо установить replicaset MongoDB, нужно минимум три сервера: два - для primary и secondary, еще один - для арбитра (подробнее и настройке можно узнать в статье [Репликация и обновление MongoDB на Ubuntu](https://mcs.mail.ru/help/databases-configuration/mongodb-replica)). Мощности серверов primary и secondary выбираются, исходя из емкости и нагруженности базы данных, сервер арбитра требует минимум ресурсов.
+Можно установить одиночный сервер MongoDB. Если необходимо установить replicaset MongoDB, нужно минимум три сервера: два - для primary и secondary, еще один - для арбитра (подробнее и настройке можно узнать в статье [Репликация и обновление MongoDB на Ubuntu](/ru/additionals/cases/cases-db-config/case-mongo-update)). Мощности серверов primary и secondary выбираются, исходя из емкости и нагруженности базы данных, сервер арбитра требует минимум ресурсов.
 
 Для хранения данных MongoDB рекомендует использовать файловую систему XFS, поэтому желательно подключить отдельный том XFS (подробнее смотрите в статье [Kernel and File Systems](https://docs.mongodb.com/manual/administration/production-notes/#kernel-and-file-systems)).
 
@@ -300,8 +300,6 @@ db.createUser(
 
 <info>
 
-**Примечание**
-
-Как настроить репликацию и обновление MongoDB, [читайте тут](https://mcs.mail.ru/help/databases-configuration/mongodb-replica).
+Как настроить репликацию и обновление MongoDB, [читайте тут](/ru/additionals/cases/cases-db-config/case-mongo-update).
 
 </info>

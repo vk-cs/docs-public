@@ -57,4 +57,4 @@ The filesystem under path '/user/admin/data.csv' is HEALTHY 
 
 ![](./assets/helpjuice_production-2fuploads-2fupload-2fimage-2f4120-2fdirect-2f1533046135432-b26e6beccf2edf95b143bde26456885d.png)
 
-При необходимости изменить значение фактора репликации по умолчанию для всех новых кластеров, обратитесь в [службу поддержки](https://help.mail.ru/infra/support).
+При необходимости изменить значение фактора репликации по умолчанию для всех новых кластеров, обратитесь в [техническую поддержку](/ru/contacts).

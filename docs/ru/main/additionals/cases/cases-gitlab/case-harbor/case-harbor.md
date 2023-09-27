@@ -1,11 +1,11 @@
-В данной статье рассмотрим, как установить и настроить хранилища репозиториев Harbor. После этого вы можете [настроить авторазвертывание приложения в кластер Kubernetes](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
+В данной статье рассмотрим, как установить и настроить хранилища репозиториев Harbor. После этого вы можете [настроить авторазвертывание приложения в кластер Kubernetes](/ru/additionals/cases/cases-gitlab/case-k8s-app).
 
 ## Установка хранилища репозиториев Harbor
 
 Перед установкой Harbor:
 
-1. [Установите и настройте Docker](https://mcs.mail.ru/help/gitlab-ci-cd/docker-installation).
-2. [Установите и настройте Gitlab](https://mcs.mail.ru/help/gitlab-ci-cd/gitlab-installation).
+1. [Установите и настройте Docker](/ru/additionals/cases/cases-gitlab/case-docker).
+2. [Установите и настройте Gitlab](/ru/additionals/cases/cases-gitlab/case-gitlab).
 
 Harbor устанавливается как Docker-образ с помощью online installer.
 
@@ -122,4 +122,4 @@ https://<SERVER_DNS_NAME>:8443
 
 ![](./assets/1583617528394-1583617528394.png)
 
-Теперь [настройте авторазвертывание приложения в кластер Kubernetes](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
+Теперь [настройте авторазвертывание приложения в кластер Kubernetes](/ru/additionals/cases/cases-gitlab/case-k8s-app).

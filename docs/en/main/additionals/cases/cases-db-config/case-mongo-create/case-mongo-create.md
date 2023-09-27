@@ -300,8 +300,6 @@ db.createUser(
 
 <info>
 
-**Примечание**
-
-Как настроить репликацию и обновление MongoDB, [читайте тут](https://mcs.mail.ru/help/databases-configuration/mongodb-replica).
+Как настроить репликацию и обновление MongoDB, [читайте тут](/en/additionals/cases/cases-db-config/case-mongo-update).
 
 </info>

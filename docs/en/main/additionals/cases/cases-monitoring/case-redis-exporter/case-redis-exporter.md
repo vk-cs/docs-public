@@ -87,9 +87,7 @@ WantedBy=multi-user.target
 
 <warn>
 
-**Attention**
-
-The address and port used by redis_exporter must be accessible from the Prometheus server. To do this, [configure the firewall policy for the server with redis_exporter](https://mcs.mail.ru/help/network/security).
+The address and port used by redis_exporter must be accessible from the Prometheus server. To do this, [configure the firewall policy for the server with redis_exporter](/en/networks/vnet/operations/secgroups).
 
 </warn>
 
