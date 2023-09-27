@@ -32,7 +32,7 @@ The application user can be a representative of an existing organization. To cla
 
 ## Can I order application customization
 
-Technical support for 1C: GRM is already included in the cost of the monthly rental of the application. It also includes requests for consulting and customization of the deployed application. To do this, you should send a request to the technical support of 1C: GRM [by mail](mailto:support.1c.grm@mcs.mail.ru) or through the [feedback form](https://mcs.mail.ru/help/1c-support) .
+Technical support for 1C: GRM is already included in the cost of the monthly rental of the application. It also includes requests for consulting and customization of the deployed application. To do this, you should send a request to the technical support of 1C: GRM [by mail](mailto:support.1c.grm@mcs.mail.ru) or through the [feedback form](/en/contacts).
 
 ## What happens when demo access ends
 
@@ -40,8 +40,8 @@ At the end of the trial period, in the absence of a positive account balance of 
 
 ## Why I don't see charges for the timing service in the Billing section
 
-Financial transactions with the 1C: GRM application are carried out by 1C: GRM technical support and you can request the current balance, as well as an invoice for payment or closing documents by [contacting the 1C: GRM technical support](support.1c.grm@mcs.mail.ru) .
+Financial transactions with the 1C: GRM application are carried out by 1C: GRM technical support and you can request the current balance, as well as an invoice for payment or closing documents by [contacting the 1C: GRM technical support](support.1c.grm@mcs.mail.ru).
 
 ## How to get back unused money
 
-To return unused funds from the account, you should [contact the technical support of 1C: GRM](https://mcs.mail.ru/help/1c-support) and inform the reason for the end of the work, as well as the details for the refund.
+To return unused funds from the account, you should [contact the technical support of 1C: GRM](mailto:support.1c.grm@mcs.mail.ru) and inform the reason for the end of the work, as well as the details for the refund.

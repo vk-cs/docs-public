@@ -53,4 +53,4 @@ To change the replication factor for all new files, go to the Ambari interface, 
 
 In the General section, change the "Blocks Replication" (dfs.replication) value to what you need and apply the configuration:
 
-If you need to change the default replication factor for all new clusters, please contact [support](https://help.mail.ru/infra/support).
+If you need to change the default replication factor for all new clusters, please contact [technical support](/en/contacts).

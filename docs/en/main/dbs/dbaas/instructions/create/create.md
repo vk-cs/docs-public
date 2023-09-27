@@ -47,5 +47,3 @@ If you click on the name of the database, you can get into its card with additio
 When creating a PostgreSQL/PostgresPRO cluster, we recommend using a configuration no lower than: 4 CPU cores, 8 GB of RAM.
 
 </warn>
-
-More details about performance in different configurations [read this article](https://mcs.mail.ru/help/ru_RU/dbaas-start/postgresql-disk-performance).

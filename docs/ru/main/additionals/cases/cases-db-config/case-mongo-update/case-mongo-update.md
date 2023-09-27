@@ -2,7 +2,7 @@
 
 <info>
 
-О конфигурации оборудования, а также о том, как установить и настроить MongoDB, вы можете узнать в статье [Установка и настройка MongoDB на Ubuntu](https://mcs.mail.ru/help/databases-configuration/mongodb-installation).
+О конфигурации оборудования, а также о том, как установить и настроить MongoDB, вы можете узнать в статье [Установка и настройка MongoDB на Ubuntu](/ru/additionals/cases/cases-db-config/case-mongo-create).
 
 </info>
 
@@ -85,7 +85,7 @@ rs0:PRIMARY> rs.reconfig(cfg)
 rs0:PRIMARY>
 ```
 
-7.  Авторизуйтесь на сервере `mongo2`, импортируйте ключ репозитория MongoDB, добавьте репозиторий MongoDB и установите MongoDB (как это сделать, читайте в статье [Установка и настройка MongoDB на Ubuntu](https://mcs.mail.ru/help/databases-configuration/mongodb-installation)).
+7.  Авторизуйтесь на сервере `mongo2`, импортируйте ключ репозитория MongoDB, добавьте репозиторий MongoDB и установите MongoDB (как это сделать, читайте в статье [Установка и настройка MongoDB на Ubuntu](/ru/additionals/cases/cases-db-config/case-mongo-create)).
 8.  Если вы правили файл `/etc/hosts` на сервере `mongo1`, на текущем сервере сделайте то же самое.
 9.  С сервера mongo1 скопируйте конфигурационный файл `/etc/mongod.conf` на текущий сервер, поменяйте в файле название ключа `PEMKeyFile:` с `/etc/ssl/mongo1.pem` на `PEMKeyFile: /etc/ssl/mongo2.pem`.
 10. На текущий сервер скопируйте ключ `/etc/ssl/mongoCA.pem`.

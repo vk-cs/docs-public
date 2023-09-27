@@ -85,8 +85,6 @@ The received access token must be sent in all HTTP requests in the Bearer Token 
 
 ### See also
 
-[Description of the Cloud Voice service](https://mcs.mail.ru/help/ru_RU/cloud-voice/about-cloud-voice)
+[Speech recognition](../speech-recognition/)
 
-[Speech recognition](https://mcs.mail.ru/help/ru_RU/cloud-voice/speech-recognition)
-
-[Speech synthesis](https://mcs.mail.ru/help/ru_RU/cloud-voice/text-to-speech)
+[Speech synthesis](../text-to-speech/)

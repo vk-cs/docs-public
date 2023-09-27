@@ -2,12 +2,12 @@
 
 После этого вы можете:
 
-- [Установить и настроить Harbor](https://mcs.mail.ru/help/gitlab-ci-cd/harbor-installation);
-- [Настроить авторазвертывание приложения в кластер Kubernetes](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
+- [Установить и настроить Harbor](/ru/additionals/cases/cases-gitlab/case-harbor);
+- [Настроить авторазвертывание приложения в кластер Kubernetes](/ru/additionals/cases/cases-gitlab/case-k8s-app).
 
 ## Установка Gitlab
 
-Перед установкой Gitlab [установите и настройте Docker](https://mcs.mail.ru/help/gitlab-ci-cd/docker-installation).
+Перед установкой Gitlab [установите и настройте Docker](/ru/additionals/cases/cases-gitlab/case-docker).
 
 Чтобы установить Gitlab:
 
@@ -171,8 +171,6 @@ root@testrom:/# gitlab-ctl reconfigure
 
 <info>
 
-**Примечание**
-
 На момент написания статьи механизм выпуска сертификатов LetsEncrypt работал некорректно из-за изменений в API LetsEncrypt (подробности читайте в кейсах [38255](https://gitlab.com/gitlab-org/gitlab/issues/38255) и [4900](https://gitlab.com/gitlab-org/omnibus-gitlab/issues/4900)). Для решения этой проблемы в файле `/opt/gitlab/embedded/cookbooks/letsencrypt/resources/certificate.rb` закомментируйте секцию `acme_certificate 'staging' do [...] end`.
 
 </info>
@@ -291,4 +289,4 @@ remote: Total 23 (delta 3), reused 0 (delta 0)
 Определение изменений: 100% (3/3), готово.
 ```
 
-Теперь [установите и настройте хранилище Harbor](https://mcs.mail.ru/help/gitlab-ci-cd/harbor-installation), в которое будут складываться собранные образы.
+Теперь [установите и настройте хранилище Harbor](/ru/additionals/cases/cases-gitlab/case-harbor), в которое будут складываться собранные образы.

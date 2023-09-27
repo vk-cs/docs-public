@@ -2,9 +2,9 @@ In this article, we will look at how to install and configure Docker.
 
 After that you can:
 
-- [install and configure Gitlab](https://mcs.mail.ru/help/gitlab-ci-cd/gitlab-installation);
-- [install and configure Harbor](https://mcs.mail.ru/help/gitlab-ci-cd/harbor-installation);
-- [set up auto-deployment of the application to the Kubernetes cluster](https://mcs.mail.ru/help/gitlab-ci-cd/k8s-autodeploy).
+- [install and configure Gitlab](/en/additionals/cases/cases-gitlab/case-gitlab);
+- [install and configure Harbor](/en/additionals/cases/cases-gitlab/case-harbor);
+- [set up auto-deployment of the application to the Kubernetes cluster](/en/additionals/cases/cases-gitlab/case-k8s-app).
 
 To install and configure Docker:
 
@@ -43,4 +43,4 @@ curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compo
 chmod +x /usr/local/bin/docker-compose
 ```
 
-Now [install and configure Gitlab](https://mcs.mail.ru/help/gitlab-ci-cd/gitlab-installation).
+Now [install and configure Gitlab](/en/additionals/cases/cases-gitlab/case-gitlab).

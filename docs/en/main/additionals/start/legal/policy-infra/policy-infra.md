@@ -35,13 +35,11 @@ In the event that this Agreement uses terms that are not defined in Section 2 of
 
 2.4. The applicable rules, including this Agreement, may be changed by the Contractor at any time without any prior notice to the Customer. Any such changes take effect on the day following the day such changes are posted on the Site. The Customer undertakes to independently check the Applicable Rules for changes. Failure by the Customer to take steps to familiarize himself with the Applicable Rules and / or the revised edition cannot serve as a reason for the Customer's failure to fulfill his obligations related to the use of the Platform and the Service. The Customer has the right to refuse to accept changes and additions to the Applicable Rules, which means the Customer's refusal to use the Platform and / or the Service.
 
-2.5. To use the Service, the Customer undertakes to ensure that the technical and software capabilities of the Customer comply with the requirements of the Contractor, which are available on the page at the link https://help.mail.ru/mcs and may be updated from time to time.
-
-2.6. Functionality of the Service, use of the Service:
+2.5. Functionality of the Service, use of the Service:
 
 The Customer can use the Service to the extent of the rights granted to him by the Platform and Service Administrator, in any way that is acceptable by the functionality of the Platform and Service, with the exception of methods expressly prohibited by the Terms of Use of the Platform and the Agreement, as well as by applicable law. In particular, the Customer can place the Content on virtual disks located on the disk space of the Contractor's servers, download computer programs to virtual disks, execute them, view, modify, delete the Content and perform other actions with the Content provided for by the functionality of the Service.
 
-2.7. The placement of the Content on the Contractor's servers and its use must not violate any applicable law, in particular, the Customer is not entitled to:
+2.6. The placement of the Content on the Contractor's servers and its use must not violate any applicable law, in particular, the Customer is not entitled to:
 
 - upload, store, transfer, provide access to other persons or otherwise bring to the public knowledge (post on the Service) Content and other results of intellectual activity of rightholders in the absence of the explicit consent of these persons and / or the required amount of rights to such actions;
 - upload, store, transfer, provide access to other persons to the Content prohibited by applicable law, or the Content, the storage or use of which requires obtaining special permissions from authorized bodies or persons, if the Customer does not have the appropriate permissions.
