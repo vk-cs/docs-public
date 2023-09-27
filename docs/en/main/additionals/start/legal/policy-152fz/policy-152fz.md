@@ -46,18 +46,16 @@ Other terms are defined in the Terms of Use of the VK Cloud Platform.
 
 2.5. The applicable rules and this Agreement may be changed by the Company at any time without any prior notice to the Customer. Any such changes will take effect on the day following the day such changes are posted on the Site. The Customer undertakes to independently check the Applicable Rules for changes. Failure by the Customer to take steps to familiarize himself with the Applicable Rules and the Agreement and / or their amended version cannot serve as a basis for the Customer's failure to fulfill his obligations related to the use of the Service. The Customer has the right to refuse to accept changes and additions to the Applicable Rules and / or the Agreement, which means the Customer's refusal to use the Service.
 
-2.6. To use the Service, the Customer undertakes to ensure that the technical and software capacities of the Customer comply with the requirements of the Contractor, which are available on the Internet at: [https://help.mail.ru/mcs](https://help.mail.ru/mcs) and may be updated from time to time.
-
-2.7. Functionality of the Service, use of the Service:
+2.6. Functionality of the Service, use of the Service:
 
 The Customer can use the Service to the extent of the rights granted to him by the Company in any way that is acceptable by the functionality of the Service, with the exception of methods expressly prohibited by the Terms of Use of the Platform and the Agreement, as well as by applicable law. In particular, the Customer can place the Content on virtual disks located on the disk space of the Contractor's servers, download computer programs to virtual disks, execute them, view, modify, delete the Content and perform other actions with the Content provided for by the functionality of the Service.
 
-2.8. The placement of Content on the Contractor's servers and its use must not violate any applicable law, in particular, the Customer is not entitled to:
+2.7. The placement of Content on the Contractor's servers and its use must not violate any applicable law, in particular, the Customer is not entitled to:
 
 - upload, store, transfer, provide access to other persons or otherwise bring to the public knowledge (post on the Service) Content, including incl. intellectual property objects of rightholders in the absence of sufficient legal grounds for such actions;
 - upload, store, transfer, provide access to other persons to the Content prohibited by applicable law, or the Content, storage or use of which requires obtaining special permissions from authorized bodies or persons, if the Customer does not have the appropriate permissions.
 
-2.9. The Contractor has the right to monitor the Content solely in order to verify that the Customer complies with the requirements of this Agreement for the Content and to prevent the use of Prohibited Content. The Customer undertakes not to create obstacles for the Contractor in the implementation of such monitoring, while the Customer has the right to use tools to preserve the confidentiality of the Content (such as encryption, firewalls). 2.11. The Customer instructs the Company to process the List of Personal Data of Subjects with a Purpose using automation tools in the following ways: access, storage, destruction to the extent that allows the Customer to provide the Service under the terms of the Agreement.
+2.8. The Contractor has the right to monitor the Content solely in order to verify that the Customer complies with the requirements of this Agreement for the Content and to prevent the use of Prohibited Content. The Customer undertakes not to create obstacles for the Contractor in the implementation of such monitoring, while the Customer has the right to use tools to preserve the confidentiality of the Content (such as encryption, firewalls). 2.11. The Customer instructs the Company to process the List of Personal Data of Subjects with a Purpose using automation tools in the following ways: access, storage, destruction to the extent that allows the Customer to provide the Service under the terms of the Agreement.
 
 ## 3\. Customer guarantees
 

@@ -9,7 +9,7 @@ Joomla! is a content management system (CMS) written in PHP and JavaScript and u
 If you don't already have the LAMP stack installed:
 
 - You can get a ready-made LAMP stack in the cloud [as a configured virtual machine](https://mcs.mail.ru/app/services/marketplace/) on Ubuntu 18.04. When registering, you get a free bonus account, which is enough to test the server for several days.
-- You can install the LAMP stack yourself. For information on how to install the LAMP stack on Ubuntu 18.04, [read here](https://mcs.mail.ru/help/lamp-setup/lamp-ubuntu-18).
+- You can install the LAMP stack yourself. For information on how to install the LAMP stack on Ubuntu 18.04, [read here](/en/additionals/cases/cases-lamp/lamp-u18).
 
 ## MySQL database setup
 

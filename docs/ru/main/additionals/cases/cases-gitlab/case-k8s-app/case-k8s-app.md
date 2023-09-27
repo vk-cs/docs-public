@@ -2,9 +2,9 @@
 
 Перед этим:
 
-1.  [Установите и настройте Docker](https://mcs.mail.ru/help/gitlab-ci-cd/docker-installation).
-2.  [Установите и настройте Gitlab](https://mcs.mail.ru/help/gitlab-ci-cd/gitlab-installation).
-3.  [Установите и настройте Harbor](https://mcs.mail.ru/help/gitlab-ci-cd/harbor-installation).
+1. [Установите и настройте Docker](/ru/additionals/cases/cases-gitlab/case-docker).
+2. [Установите и настройте Gitlab](/ru/additionals/cases/cases-gitlab/case-gitlab).
+3. [Установите и настройте Harbor](/ru/additionals/cases/cases-gitlab/case-harbor).
 
 ## Настройка Gitlab-runner
 
@@ -23,8 +23,6 @@ root@ubuntu-standard-2-4-40gb:~# docker exec -it gitlab-runner gitlab-runne
 ```
 
 <warn>
-
-**Внимание**
 
 \--tag-list - указывает теги, которые будет принимать runner. Далее в проекте этот тег указывается, чтобы проект собирался этим runner.
 
@@ -593,8 +591,6 @@ HANDLER OK%
 Авторазвертывание новой версии прошло успешно.
 
 <info>
-
-**Примечание**
 
 Конфигурационные файлы, приведенные в данной статье, являются тестовыми и предназначены для освоения механизмов работы Gitlab, регистри и развертывания образов в кластер на начальном уровне.
 
