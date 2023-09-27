@@ -8,8 +8,8 @@ Joomla! - система управления содержимым (CMS), нап
 
 Если у вас еще не установлен стек LAMP:
 
-- Вы можете получить готовый стек LAMP в облаке [в виде настроенной виртуальной машины](https://mcs.mail.ru/app/services/marketplace/) на Ubuntu 18.04 и [установить Joomla! на нем](https://mcs.mail.ru/help/joomla-on-linux/joomla-ubuntu-18). При регистрации вы получаете бесплатный бонусный счет, которого хватает, чтобы тестировать сервер несколько дней.
-- Вы можете установить стек LAMP самостоятельно. О том, как установить стек LAMP на OpenSUSE 42.3, [читайте тут](https://mcs.mail.ru/help/lamp-on-linux/lamp-opensuse-42).
+- Вы можете получить готовый стек LAMP в облаке [в виде настроенной виртуальной машины](https://mcs.mail.ru/app/services/marketplace/) на Ubuntu 18.04 и [установить Joomla! на нем](/ru/additionals/cases/cases-joomla/case-joomla-u18). При регистрации вы получаете бесплатный бонусный счет, которого хватает, чтобы тестировать сервер несколько дней.
+- Вы можете установить стек LAMP самостоятельно. О том, как установить стек LAMP на OpenSUSE 42.3, [читайте тут](/ru/additionals/cases/cases-lamp/lamp-suse42).
 
 ## Настройка СУБД MySQL (mariadb)
 

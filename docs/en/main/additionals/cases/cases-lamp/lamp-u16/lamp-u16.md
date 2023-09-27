@@ -6,7 +6,7 @@ The LAMP stack includes the Linux operating system, the Apache web server, the M
 
 You can get a ready-made LAMP stack on Ubuntu 18.04 as a [configured VK Cloud virtual machine](https://mcs.mail.ru/app/services/marketplace/). When registering, you get a free bonus account, which is enough to test the server for several days.
 
-To learn more about LAMP in the app store, go to [Help Center](https://mcs.mail.ru/help/quick-start/-lamp-stack-apachephp).
+To learn more about LAMP in the app store, go to [Help Center](/en/additionals/mp/mp-apps/mp-lamp-stack).
 
 #### Requirements
 

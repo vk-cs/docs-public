@@ -602,7 +602,7 @@ components:
                       properties:
                         question_form_url:
                           type: string
-                          example: "https://help.mail.ru/mcs/support"
+                          example: "https://support.mcs.mail.ru"
                         phone:
                           type: string
                           example: "+74993509703"

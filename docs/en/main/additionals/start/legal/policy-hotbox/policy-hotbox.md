@@ -32,8 +32,6 @@ Other terms are defined in the Terms of Use of the Platform.
 
 2.4. The applicable rules, including this Agreement, may be changed by the Company at any time without any prior notice to the Customer. Any such changes will take effect on the day following the day such changes are posted on the Site. The Customer undertakes to independently check the Applicable Rules for changes. Failure by the Customer to take steps to familiarize himself with the Applicable Rules and / or the revised edition cannot serve as a basis for the Customer's failure to fulfill his obligations related to the Use of the Platform and individual Services. The Customer has the right to refuse to accept changes and additions to the Applicable Rules, which means the Customer's refusal to use the Platform and / or the relevant Services.
 
-2.5. To use the Service, the Customer undertakes to ensure that the technical and software capacities of the Customer comply with the Company's requirements, which are available on the page at the link [https://help.mail.ru/hotbox-help/](/en/base/s3) and may be updated from time to time.
-
 ## 3\. Functionality of the Service, use of the Service
 
 3.1. The Customer can use the Service in any way that is acceptable by the functionality of the Platform and the Service, with the exception of methods expressly prohibited by the Terms of Use of the Platform and the Agreement, as well as by applicable law. In particular, the Customer can place the Content on the disk space of the Company's servers, view, modify, delete the Content, create Buckets and manage access to it for other persons (Project Users, third parties) and perform other actions with the Content provided for by the functionality of the Service.
