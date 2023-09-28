@@ -2,7 +2,7 @@ The Cloud Queues service from VK Cloud is compatible with the Amazon SQS API. To
 
 With the AWS CLI, you can do the following:
 
-- Creating and deleting message queues;
+- Deleting message queues;
 - Sending, viewing, and deleting messages in queues;
 - Editing message and queue attributes;
 - Changing the rights of users who have access to editing queues.
@@ -108,7 +108,7 @@ aws --version
 
 ## Getting Cloud Queues Access Keys
 
-Access keys consist of an access key identifier and a secret access key used to sign program requests sent to VK Cloud. You can create access keys in the VK Cloud panel in the "Access Keys" menu.
+Access keys consist of an access key identifier and a secret access key used to sign program requests sent to VK Cloud. You can create access keys in the VK Cloud panel in the **Access Keys** menu.
 
 You can only view or download a secret access key when the keys are created, and it will be impossible to restore them later. However, you can create new access keys at any time.
 
@@ -153,33 +153,17 @@ aws sqs --endpoint-url https://sqs.mcs.mail.ru <command name> [options and param
 
 - `--endpoint-url https://sqs.mcs.mail.ru` – for all commands, the `--endpoint-url` parameter must be specified with the value `https://sqs.mcs.mail.ru` for the normal operation of the service;
 
-- `[options and parameters]' – additional parameters of the operation being performed.
+- `[options and parameters]` – additional parameters of the operation being performed.
 
-You can use the 'aws sqs help' command to call help for available commands.
+You can use the `aws sqs help` command to call help for available commands.
 
 A complete list of all commands available in the AWS CLI for working with Cloud Queues can also be seen on [website Amazon](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/index.html#available-commands).
 
 ## Examples of commands
 
-### Creating standard and FIFO message queues
-
-The following examples show how to create a standard and FIFO message queue via the AWS CLI.
-
-- Creating a standard queue called "test-queue":
-
-```
-aws sqs create-queue --endpoint-url https://sqs.mcs.mail.ru --queue-name test-queue
-```
-
-- Creating a FIFO queue called "test-queue":
-
-```
-aws sqs create-queue --endpoint-url https://sqs.mcs.mail.ru --queue-name test-queue --attributes FifoQueue
-```
-
 ### Creating a message in a queue
 
-The following command will create a message in the "test-queue" message queue:
+The following command will create a message in the `test-queue` message queue:
 
 ```
 aws sqs send-message --endpoint-url https://sqs.mcs.mail.ru --queue-url sqs.mcs.mail.ru/mcsprojectid/test-queue --message-body "test message body"
@@ -187,14 +171,14 @@ aws sqs send-message --endpoint-url https://sqs.mcs.mail.ru --queue-url sqs.mcs.
 
 ### Receiving messages in the queue
 
-The following command will return the text of the messages in the "test-queue" queue:
+The following command will return the text of the messages in the `test-queue` queue:
 
 ```
 aws sqs receive-message --endpoint-url https://sqs.mcs.mail.ru --queue-url sqs.mcs.mail.ru/mcsprojectid/test-queue
 "'
 ### Deleting a message in the queue
 
-The following command will delete the message with the `Receipt-handle AQEB6nR4' parameter... HzlvZQ==' in the "test-queue" queue:
+The following command will delete the message with the `Receipt-handle AQEB6nR4' parameter... HzlvZQ==' in the `test-queue` queue:
 
 ```
 
