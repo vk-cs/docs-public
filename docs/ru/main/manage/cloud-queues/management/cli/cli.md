@@ -2,7 +2,7 @@
 
 С помощью AWS CLI, вы можете выполнять следующие действия:
 
-- Создание и удаление очередей сообщений;
+- Удаление очередей сообщений;
 - Отправка, просмотр и удаление сообщений в очередях;
 - Редактирование атрибутов сообщений и очередей;
 - Изменение прав пользователей, имеющих доступ к редактированию очередей.
@@ -148,25 +148,9 @@ aws sqs --endpoint-url https://sqs.mcs.mail.ru <имя команды> [опци
 
 ## Примеры команд
 
-### Создание стандартной и FIFO очередей сообщений
-
-Следующие примеры показывают как создать стандартную и FIFO очередь сообщений через AWS CLI.
-
-- Создание стандартной очереди под названием "test-queue":
-
-```
-aws sqs create-queue --endpoint-url https://sqs.mcs.mail.ru   --queue-name test-queue
-```
-
-- Создание FIFO очереди под названием "test-queue":
-
-```
-aws sqs create-queue --endpoint-url https://sqs.mcs.mail.ru --queue-name test-queue --attributes FifoQueue
-```
-
 ### Создание сообщения в очереди
 
-Следующая команда создаст сообщение в очереди сообщений “test-queue”:
+Следующая команда создаст сообщение в очереди сообщений `test-queue`:
 
 ```
 aws sqs send-message --endpoint-url https://sqs.mcs.mail.ru --queue-url sqs.mcs.mail.ru/mcsprojectid/test-queue --message-body "test message body"
@@ -174,7 +158,7 @@ aws sqs send-message --endpoint-url https://sqs.mcs.mail.ru --queue-url sqs.mcs.
 
 ### Получение сообщений в очереди
 
-Следующая команда вернет текст сообщений в очереди “test-queue”:
+Следующая команда вернет текст сообщений в очереди `test-queue`:
 
 ```
 aws sqs receive-message --endpoint-url https://sqs.mcs.mail.ru --queue-url sqs.mcs.mail.ru/mcsprojectid/test-queue
@@ -182,7 +166,7 @@ aws sqs receive-message --endpoint-url https://sqs.mcs.mail.ru --queue-url sqs.m
 
 ### Удаление сообщения в очереди
 
-Следующая команда удалит сообщение c параметром `Receipt-handle AQEB6nR4...HzlvZQ==` в очереди “test-queue”:
+Следующая команда удалит сообщение c параметром `Receipt-handle AQEB6nR4...HzlvZQ==` в очереди `test-queue`:
 
 ```
 aws sqs delete-message --endpoint-url https://sqs.mcs.mail.ru --queue-url sqs.mcs.mail.ru/mcsprojectid/test-queue --receipt-handle AQEB6nR4...HzlvZQ==
