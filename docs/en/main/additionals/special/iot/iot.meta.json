@@ -1,10 +1,10 @@
 {
-  "title": "IoT Platform (Deprecated)",
+  "title": "[Deprecated] IoT Platform",
   "pageDescription": "IoT platform for rapid creation of IoT solutions",
   "shortDescription": "IoT platform for rapid creation of IoT solutions",
-  "metaTitle": "IoT Platform (Deprecated)",
+  "metaTitle": "[Deprecated] IoT Platform",
   "metaDescription": "IoT platform for rapid creation of IoT solutions (Deprecated)",
-  "sectionTitle": "IoT Platform (Deprecated)",
+  "sectionTitle": "[Deprecated] IoT Platform",
   "markdown": "IoT platform for rapid creation of IoT solutions. <br><err>The service is deprecated and is no longer used in VK Cloud.</err>",
   "icon": "",
   "weight": 6,
