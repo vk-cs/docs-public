@@ -48,7 +48,7 @@
 
 - Банковский перевод.
 
-    Эта опция недоступна в личном кабинете. Для оплаты этим способом обратитесь в [техническую поддержку](/ru/additionals/start/support/support-info) и запросите счет, сообщив реквизиты организации, [идентификатор (PID) проекта](/ru/base/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) и сумму в тенге.
+    Эта опция недоступна в личном кабинете. Для оплаты этим способом обратитесь в [техническую поддержку](/ru/contacts) и запросите счет, сообщив реквизиты организации, [идентификатор (PID) проекта](/ru/base/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) и сумму в тенге.
 
 </tabpanel>
 </tabs>
