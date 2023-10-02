@@ -1,0 +1,12 @@
+{
+  "title": "Cloud Spark",
+  "pageDescription": "Решение Spark в Kubernetes для обработки больших данных.",
+  "shortDescription": "Кластеры Spark в Kubernetes для обработки больших данных",
+  "metaTitle": "Cloud Spark",
+  "metaDescription": "Сервис Cloud Spark в VK Cloud: решение Spark для обработки больших данных",
+  "sectionTitle": "Cloud Spark",
+  "isBeta": true,
+  "markdown": "Cloud Spark — решение на базе [Apache Spark Operator](https://github.com/GoogleCloudPlatform/spark-on-k8s-operator) и [PaaS Kubernetes](/ru/base/k8s) от VK Cloud. Оно позволяет развернуть Spark внутри Kubernetes с помощью образа из Docker Registry, без использования Hadoop-кластера.",
+  "icon": "",
+  "weight": 4
+}
