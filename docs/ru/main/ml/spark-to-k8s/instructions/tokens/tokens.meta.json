@@ -1,12 +1,15 @@
 {
-    "title": "Работа с токенами",
-    "pageDescription": "Как создавать различные токены и управлять ими.",
-    "shortDescription": "Как создавать различные токены и управлять ими",
-    "metaTitle": "Работа с токенами",
-    "metaDescription": "Как создавать различные токены и управлять ими",
-    "sectionTitle": "Работа с токенами",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
+  "title": "Работа с токенами",
+  "pageDescription": "Как создавать различные токены и управлять ими.",
+  "shortDescription": "Как создавать различные токены и управлять ими",
+  "metaTitle": "Работа с токенами",
+  "metaDescription": "Как создавать различные токены и управлять ими",
+  "sectionTitle": "Работа с токенами",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "createdAt": "2023-10-02T13:09:02.000Z",
+  "updatedAt": "2023-10-02T13:09:02.000Z",
+  "uuid": "f89d06e9-b04f-47fa-9fa5-63b43af50c95"
 }

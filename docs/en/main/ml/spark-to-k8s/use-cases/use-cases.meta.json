@@ -8,5 +8,6 @@
   "markdown": "Here are the most popular scenarios for using Spark in Kubernetes.",
   "icon": "",
   "infobarItems": null,
-  "weight": 2
+  "weight": 2,
+  "uuid": "7abead36-6cc2-4cd5-9911-dcfd878c19ad"
 }

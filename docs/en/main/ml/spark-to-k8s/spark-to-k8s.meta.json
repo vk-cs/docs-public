@@ -8,5 +8,6 @@
   "isBeta": true,
   "markdown": "Cloud Spark — a solution based on [Apache Spark Operator](https://github.com/GoogleCloudPlatform/spark-on-k8s-operator) and [PaaS Kubernetes](/en/base/k8s) from VK Cloud. It allows you to deploy Spark inside Kubernetes using an image from Docker Registry, without using a Hadoop cluster.",
   "icon": "",
-  "weight": 4
+  "weight": 4,
+  "uuid": "4e18d3d5-845f-4735-944d-a3e1c3234617"
 }
