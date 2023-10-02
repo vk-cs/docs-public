@@ -1,11 +1,14 @@
 {
-    "title": "Создание кластера Spark",
-    "pageDescription": "Создание нового кластера Cloud Spark.",
-    "shortDescription": "Как развернуть кластер Spark в VK Cloud",
-    "metaTitle": "Создание кластера Spark",
-    "metaDescription": "Spark VK Cloud: создание нового кластера.",
-    "sectionTitle": "Создание кластера Spark",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 0
+  "title": "Создание кластера Spark",
+  "pageDescription": "Создание нового кластера Cloud Spark.",
+  "shortDescription": "Как развернуть кластер Spark в VK Cloud",
+  "metaTitle": "Создание кластера Spark",
+  "metaDescription": "Spark VK Cloud: создание нового кластера.",
+  "sectionTitle": "Создание кластера Spark",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0,
+  "createdAt": "2023-10-02T13:09:02.000Z",
+  "updatedAt": "2023-10-02T13:09:02.000Z",
+  "uuid": "5e3d42fa-638d-4528-848e-7d3bedde0ae0"
 }

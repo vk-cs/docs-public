@@ -8,5 +8,6 @@
   "markdown": "Description of the basic concepts when working with the Cloud Spark service.",
   "icon": "",
   "infobarItems": null,
-  "weight": 1
+  "weight": 1,
+  "uuid": "5ccdfae6-21c3-4091-ba1a-d448491f8d91"
 }

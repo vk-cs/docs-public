@@ -1,12 +1,15 @@
 {
-    "title": "Calculating the Pi",
-    "pageDescription": "Basics of working with Spark tasks on a simple example.",
-    "shortDescription": "Basics of working with Spark tasks on a simple example",
-    "metaTitle": "Calculating the Pi",
-    "metaDescription": "Basics of working with Spark tasks on a simple example.",
-    "sectionTitle": "Calculating the Pi",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
+  "title": "Calculating the Pi",
+  "pageDescription": "Basics of working with Spark tasks on a simple example.",
+  "shortDescription": "Basics of working with Spark tasks on a simple example",
+  "metaTitle": "Calculating the Pi",
+  "metaDescription": "Basics of working with Spark tasks on a simple example.",
+  "sectionTitle": "Calculating the Pi",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "createdAt": "2023-10-02T13:09:02.000Z",
+  "updatedAt": "2023-10-02T13:09:02.000Z",
+  "uuid": "edd4b89b-9592-4def-a7f0-4af3e2e87fba"
 }
