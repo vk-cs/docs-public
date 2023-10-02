@@ -7,5 +7,8 @@
   "sectionTitle": "О сервисе",
   "icon": "",
   "infobarItems": null,
-  "weight": 0
+  "weight": 0,
+  "createdAt": "2023-10-02T13:09:02.000Z",
+  "updatedAt": "2023-10-02T13:09:02.000Z",
+  "uuid": "a5e681a5-e32c-4052-abbc-d0cfbf4b4539"
 }

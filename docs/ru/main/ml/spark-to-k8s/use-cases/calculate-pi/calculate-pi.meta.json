@@ -1,12 +1,15 @@
 {
-    "title": "Вычисление числа Pi",
-    "pageDescription": "Основы работы с заданиями Spark на простом примере.",
-    "shortDescription": "Основы работы с заданиями Spark на простом примере",
-    "metaTitle": "Вычисление числа Pi",
-    "metaDescription": "Основы работы с заданиями Spark на простом примере.",
-    "sectionTitle": "Вычисление числа Pi",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1
+  "title": "Вычисление числа Pi",
+  "pageDescription": "Основы работы с заданиями Spark на простом примере.",
+  "shortDescription": "Основы работы с заданиями Spark на простом примере",
+  "metaTitle": "Вычисление числа Pi",
+  "metaDescription": "Основы работы с заданиями Spark на простом примере.",
+  "sectionTitle": "Вычисление числа Pi",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "createdAt": "2023-10-02T13:09:02.000Z",
+  "updatedAt": "2023-10-02T13:09:02.000Z",
+  "uuid": "9a91b9c3-070a-4feb-8ebc-2fa218830b7f"
 }

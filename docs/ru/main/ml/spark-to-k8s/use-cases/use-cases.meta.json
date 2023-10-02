@@ -8,5 +8,6 @@
   "markdown": "Здесь приведены наиболее популярные сценарии использования Spark в Kubernetes.",
   "icon": "",
   "infobarItems": null,
-  "weight": 2
+  "weight": 2,
+  "uuid": "a148e51c-5a30-47d7-87c0-f7296d1804a7"
 }
