@@ -1,0 +1,12 @@
+{
+  "title": "Cloud Spark",
+  "pageDescription": "Kubernetes Spark solution for big data processing.",
+  "shortDescription": "Spark clusters in Kubernetes for big data processing",
+  "metaTitle": "Cloud Spark",
+  "metaDescription": "Cloud Spark service in VK Cloud: Spark solution for big data processing",
+  "sectionTitle": "Cloud Spark",
+  "isBeta": true,
+  "markdown": "Cloud Spark — a solution based on [Apache Spark Operator](https://github.com/GoogleCloudPlatform/spark-on-k8s-operator) and [PaaS Kubernetes](/en/base/k8s) from VK Cloud. It allows you to deploy Spark inside Kubernetes using an image from Docker Registry, without using a Hadoop cluster.",
+  "icon": "",
+  "weight": 4
+}
