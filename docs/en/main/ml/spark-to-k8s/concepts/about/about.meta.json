@@ -1,0 +1,11 @@
+{
+  "title": "About the service",
+  "pageDescription": "Overview of Spark service capabilities in Kubernetes implemented on VK Cloud.",
+  "shortDescription": "Overview of the service's capabilities and tasks to be solved",
+  "metaTitle": "About the service",
+  "metaDescription": "Overview of Spark service capabilities in Kubernetes implemented on VK Cloud",
+  "sectionTitle": "About the service",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 0
+}
