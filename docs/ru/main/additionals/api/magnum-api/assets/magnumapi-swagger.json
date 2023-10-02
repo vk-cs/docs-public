@@ -1,0 +1,5112 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "",
+    "version": "1.0.5",
+    "title": "Container as a service API"
+  },
+  "servers": [
+    {
+      "url": "https://infra.mail.ru:9511/v1",
+      "description": "prod"
+    },
+    {
+      "url": "https://stage.infra.devmail.ru:9511/v1",
+      "description": "omega"
+    }
+  ],
+  "paths": {
+    "/clusters": {
+      "post": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Create cluster",
+        "operationId": "createCluster",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/addClusterRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/postClusterResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Get list of clusters",
+        "operationId": "getClusterList",
+        "parameters": [
+          {
+            "name": "marker",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "pagination marker for large data sets."
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "required": false,
+            "description": "maximum number of resources to return in a single result."
+          },
+          {
+            "name": "sort_key",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "column to sort results by. Default is id."
+          },
+          {
+            "name": "sort_dir",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "direction to sort. \"asc\" or \"desc\". Default is asc."
+          },
+          {
+            "name": "all_tenants",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            },
+            "required": false,
+            "description": "a flag to indicate all or current tenant."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAllClusters"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_ident}": {
+      "patch": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Update an existing Cluster.",
+        "operationId": "patchCluster",
+        "parameters": [
+          {
+            "name": "cluster_ident",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "description": "UUID or logical name of a cluster.",
+            "required": true
+          },
+          {
+            "name": "rollback",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "whether to rollback cluster on update failure."
+          }
+        ],
+        "requestBody": {
+          "description": "a json PATCH document to apply to this cluster.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/patchRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/postClusterResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Delete cluster",
+        "operationId": "deleteCluster",
+        "parameters": [
+          {
+            "name": "cluster_ident",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "description": "UUID of cluster or logical name of the cluster.",
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/clusters/detail": {
+      "get": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Get list of clusters with details",
+        "operationId": "getDetailedClusterList",
+        "parameters": [
+          {
+            "name": "marker",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "pagination marker for large data sets."
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "required": false,
+            "description": "maximum number of resources to return in a single result."
+          },
+          {
+            "name": "sort_key",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "column to sort results by. Default is id."
+          },
+          {
+            "name": "sort_dir",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "direction to sort. \"asc\" or \"desc\". Default is asc."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAllClustersDetail"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_ident}/registry_params": {
+      "get": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Get docker registry secret for cluster.",
+        "operationId": "getRegistryParams",
+        "parameters": [
+          {
+            "name": "cluster_ident",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID of cluster or logical name of the cluster."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getRegistryParams"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_ident}/cluster_security_policies": {
+      "get": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Get cluster security policies for the cluster",
+        "operationId": "getClusterSecurityPolicies",
+        "parameters": [
+          {
+            "name": "cluster_ident",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID of cluster."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/clusterSecurityPolicyList"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized"
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_ident}/upgrade_params": {
+      "get": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Get available update versions for cluster.",
+        "operationId": "getUpgradeParams",
+        "parameters": [
+          {
+            "name": "cluster_ident",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID of cluster or logical name of the cluster."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getUpgradeParams"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}": {
+      "get": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Get cluster",
+        "operationId": "getCluster",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Cluster UUID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/full_cluster"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "The requested resource could not be found."
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}/kube_config": {
+      "get": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Generate kubeconfig for cluster",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Cluster UUID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "yaml": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}/jobs/{job_uuid}": {
+      "patch": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Update cluster job.",
+        "operationId": "updateJob",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Cluster ID"
+          },
+          {
+            "name": "job_uuid",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Job UUID"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/updateJob"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/patchJobResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Some content in the request was invalid."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Policy does not allow current user to do this operation."
+          },
+          "404": {
+            "description": "Not Found."
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Get job for specified cluster.",
+        "operationId": "getJob",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Cluster UUID"
+          },
+          {
+            "name": "job_uuid",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Job UUID"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getJobs"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Some content in the request was invalid."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Policy does not allow current user to do this operation."
+          },
+          "404": {
+            "description": "Not Found."
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}/tasks": {
+      "get": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Get tasks for specified cluster.",
+        "operationId": "getTasks",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Cluster UUID"
+          },
+          {
+            "name": "include_all",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            },
+            "required": false,
+            "description": "Whether to include success/failure tasks or not."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getTasks"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}/actions/upgrade": {
+      "patch": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Upgrade cluster to new version.",
+        "operationId": "upgradeCluster",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Cluster ID"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/upgradeCluster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/patchUpgradeResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Some content in the request was invalid or alpha features are enabled for this cluster."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Policy does not allow current user to do this operation."
+          },
+          "404": {
+            "description": "Not Found."
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}/actions/": {
+      "post": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Apply an action to the cluster.",
+        "operationId": "applyClusterAction",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/batchNodesDelete"
+                  },
+                  {
+                    "$ref": "#/components/schemas/ResizeMasters"
+                  },
+                  {
+                    "$ref": "#/components/schemas/turnOffCluster"
+                  },
+                  {
+                    "$ref": "#/components/schemas/turnOnCluster"
+                  },
+                  {
+                    "$ref": "#/components/schemas/deleteBatchNodeGroupRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/addBatchNodeGroupRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/updateAgent"
+                  },
+                  {
+                    "$ref": "#/components/schemas/syncConfigurationRequest"
+                  },
+                  {
+                    "$ref": "#/components/schemas/invalidateSARequest"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Cluster ID"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/clusterUUID"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Some content in the request was invalid."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Policy does not allow current user to do this operation."
+          },
+          "404": {
+            "description": "Not Found."
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}/node_info/{node_name}": {
+      "get": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Get desired labels and taints for a node.",
+        "operationId": "getNodeLabels",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Cluster ID"
+          },
+          {
+            "name": "node_name",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Node name inside the cluster"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/nodeinfoResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Some content in the request was invalid."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Policy does not allow current user to do this operation."
+          },
+          "404": {
+            "description": "Not Found."
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Report that node labels and taints are actually synced (at the current moment).",
+        "operationId": "reportLabelsSynced",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/reportLabelsSyncedRequest"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Cluster ID"
+          },
+          {
+            "name": "node_name",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Node name inside the cluster"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Policy does not allow current user to do this operation."
+          },
+          "404": {
+            "description": "Not Found."
+          }
+        }
+      }
+    },
+    "/clustermigrations": {
+      "get": {
+        "tags": [
+          "cluster_migration"
+        ],
+        "summary": "Get list of cluster migrations",
+        "operationId": "getClusterMigrations",
+        "parameters": [
+          {
+            "name": "marker",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "pagination marker for large data sets."
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "required": false,
+            "description": "maximum number of resources to return in a single result."
+          },
+          {
+            "name": "sort_key",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "column to sort results by. Default is id."
+          },
+          {
+            "name": "sort_dir",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "direction to sort. \"asc\" or \"desc\". Default is asc."
+          },
+          {
+            "name": "src_template",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "UUID of cluster template we want to migrate from."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/clusterMigrations"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "cluster_migration"
+        ],
+        "summary": "Create a new ClusterMigration.",
+        "operationId": "postClusterMigration",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/clusterMigration"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/clusterMigration"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      }
+    },
+    "/clustermigrations/{cluster_migration_ident}": {
+      "delete": {
+        "tags": [
+          "cluster_migration"
+        ],
+        "summary": "Delete a ClusterMigration.",
+        "operationId": "deleteClusterMigration",
+        "parameters": [
+          {
+            "name": "cluster_migration_ident",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      }
+    },
+    "/health_status": {
+      "get": {
+        "tags": [
+          "health_status"
+        ],
+        "summary": "Check for health status of API and Conductor",
+        "operationId": "healthStatus",
+        "responses": {
+          "204": {
+            "description": "OK"
+          },
+          "5XX": {
+            "description": "bad service status"
+          }
+        }
+      }
+    },
+    "/clustertemplates": {
+      "get": {
+        "tags": [
+          "cluster_template"
+        ],
+        "summary": "Retrieve a list of ClusterTemplates.",
+        "operationId": "getClusterTemplates",
+        "parameters": [
+          {
+            "name": "marker",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "pagination marker for large data sets."
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "required": false,
+            "description": "maximum number of resources to return in a single result."
+          },
+          {
+            "name": "sort_key",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "column to sort results by. Default is id."
+          },
+          {
+            "name": "sort_dir",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "direction to sort. \"asc\" or \"desc\". Default is asc."
+          },
+          {
+            "name": "list_all",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            },
+            "required": false,
+            "description": "whether to show both deprecated and actual CT or not."
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "the version of cluster template."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "clustertemplates": {
+                      "$ref": "#/components/schemas/clusterTemplates"
+                    },
+                    "next": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "cluster_template"
+        ],
+        "summary": "Create a new ClusterTemplate.",
+        "operationId": "postClusterTemplate",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/clusterTemplate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "clustertemplates": {
+                      "$ref": "#/components/schemas/clusterTemplate"
+                    },
+                    "next": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      }
+    },
+    "/clustertemplates/{cluster_template_ident}": {
+      "patch": {
+        "tags": [
+          "cluster_template"
+        ],
+        "summary": "Update an existing ClusterTemplate.",
+        "operationId": "patchClusterTemplate",
+        "parameters": [
+          {
+            "name": "cluster_template_ident",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "description": "UUID or logic name of a ClusterTemplate."
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/patchRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "clustertemplates": {
+                      "$ref": "#/components/schemas/clusterTemplate"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "Not found."
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "cluster_template"
+        ],
+        "summary": "Delete a ClusterTemplate.",
+        "operationId": "deleteClusterTemplate",
+        "parameters": [
+          {
+            "name": "cluster_template_ident",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "description": "UUID or logic name of a ClusterTemplate."
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "Not found."
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "cluster_template"
+        ],
+        "summary": "Retrieve a single ClusterTemplate.",
+        "operationId": "getClusterTemplate",
+        "parameters": [
+          {
+            "name": "cluster_template_ident",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID or logical name of a ClusterTemplate."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "clustertemplates": {
+                      "$ref": "#/components/schemas/clusterTemplate"
+                    },
+                    "next": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "Not found."
+          }
+        }
+      }
+    },
+    "/clustertemplates/detail": {
+      "get": {
+        "tags": [
+          "cluster_template"
+        ],
+        "summary": "Retrieve a list of ClusterTemplates with details.",
+        "operationId": "getClusterTemplatesDetails",
+        "parameters": [
+          {
+            "name": "marker",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "pagination marker for large data sets."
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "required": false,
+            "description": "maximum number of resources to return in a single result."
+          },
+          {
+            "name": "sort_key",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "column to sort results by. Default is id."
+          },
+          {
+            "name": "sort_dir",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "direction to sort. \"asc\" or \"desc\". Default is asc."
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "the version of cluster template."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "clustertemplates": {
+                      "$ref": "#/components/schemas/clusterTemplates"
+                    },
+                    "next": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      }
+    },
+    "/kubeconfig": {
+      "post": {
+        "tags": [
+          "kubeconfig"
+        ],
+        "summary": "Sign a new certificate by the CA.",
+        "operationId": "kubeConfig",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "cluster_uuid": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "Not found."
+          }
+        }
+      }
+    },
+    "/stats": {
+      "get": {
+        "tags": [
+          "stats"
+        ],
+        "summary": "Retrieve magnum stats.",
+        "operationId": "getStats",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "cluster"
+              ],
+              "default": "cluster"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "clusters": {
+                      "type": "integer"
+                    },
+                    "nodes": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "Not found."
+          }
+        }
+      }
+    },
+    "/secrets/{cluster_uuid}": {
+      "get": {
+        "tags": [
+          "secrets"
+        ],
+        "summary": "Get k8s dashboard secret",
+        "operationId": "getSecret",
+        "parameters": [
+          {
+            "name": "cluster_uuid",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "secret": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "Not found."
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "secrets"
+        ],
+        "summary": "Update dashboard token",
+        "operationId": "patchSecret",
+        "parameters": [
+          {
+            "name": "cluster_uuid",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "token": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "Not found."
+          }
+        }
+      }
+    },
+    "/certificates": {
+      "post": {
+        "tags": [
+          "CA"
+        ],
+        "summary": "Sign a new certificate by the CA.",
+        "operationId": "postCert",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/certificate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/certificate"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "Not found."
+          }
+        }
+      }
+    },
+    "/certificates/{cluster_uuid}": {
+      "get": {
+        "tags": [
+          "CA"
+        ],
+        "summary": "Retrieve CA information about the given cluster.",
+        "operationId": "getCert",
+        "parameters": [
+          {
+            "name": "cluster_uuid",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/certificate"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "Not found."
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "CA"
+        ],
+        "summary": "Rotate certificate by the CA",
+        "operationId": "patchCert",
+        "parameters": [
+          {
+            "name": "cluster_uuid",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Unacceptable parameters or non-TLS cluster."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "Not found."
+          }
+        }
+      }
+    },
+    "/nodegroups": {
+      "get": {
+        "tags": [
+          "nodegroups"
+        ],
+        "summary": "Lists nodegroups.",
+        "operationId": "getNodegroupList",
+        "parameters": [
+          {
+            "name": "expand",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            },
+            "required": false,
+            "description": "Return nodegroups with additional fields"
+          },
+          {
+            "name": "marker",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "pagination marker for large data sets."
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "required": false,
+            "description": "maximum number of resources to return in a single result."
+          },
+          {
+            "name": "sort_key",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "column to sort results by. Default is id."
+          },
+          {
+            "name": "sort_dir",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "direction to sort. \"asc\" or \"desc\". Default is asc."
+          },
+          {
+            "name": "cluster_id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "UUID or logical name of the Cluster."
+          },
+          {
+            "name": "autoscaling_enabled",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            },
+            "required": false,
+            "description": "If enabled, return nodegroups which are managed by autoscaler."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/nodegroups"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "nodegroups"
+        ],
+        "summary": "Add nodegroup to existing cluster",
+        "operationId": "addNodegroup",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/addNodeGroupRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/full_nodegroup"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Cluster with specified UUID not found."
+          },
+          "409": {
+            "description": "Cluster is in inappropriate state for this operation."
+          }
+        }
+      }
+    },
+    "/nodegroups/{nodegroup}": {
+      "get": {
+        "tags": [
+          "nodegroups"
+        ],
+        "summary": "Shows details for a nodegroup.",
+        "operationId": "getNodegroupById",
+        "parameters": [
+          {
+            "name": "nodegroup",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "required": true,
+            "description": "Nodegroup ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/full_nodegroup"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "nodegroups"
+        ],
+        "summary": "Scale nodegroup.",
+        "operationId": "scaleNodegroup",
+        "parameters": [
+          {
+            "name": "nodegroup",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "required": true,
+            "description": "Nodegroup ID"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/patchNodeGroup"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/patchNodegroupResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Some content in the request was invalid."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Policy does not allow current user to do this operation."
+          },
+          "404": {
+            "description": "Not Found."
+          },
+          "409": {
+            "description": "Node Group is in inappropriate state for this operation."
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "nodegroups"
+        ],
+        "summary": "Delete nodegroup.",
+        "operationId": "deleteNodeGroupById",
+        "parameters": [
+          {
+            "name": "nodegroup",
+            "in": "path",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "required": true,
+            "description": "Nodegroup ID"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/nodegroups/{nodegroup}/actions/": {
+      "post": {
+        "tags": [
+          "nodegroups"
+        ],
+        "summary": "Apply an action to the node group.",
+        "operationId": "applyNogeGroupAction",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/turnOffNodeGroup"
+                  },
+                  {
+                    "$ref": "#/components/schemas/turnOnNodeGroup"
+                  }
+                ]
+              },
+              "example": {
+                "turn_off_ng": {
+                  "action": "turn_off_ng",
+                  "payload": {
+                  }
+                },
+                "turn_on_ng": {
+                  "action": "turn_on_ng",
+                  "payload": {
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "nodegroup",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Node group id"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Some content in the request was invalid."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Policy does not allow current user to do this operation."
+          },
+          "404": {
+            "description": "Not Found."
+          },
+          "409": {
+            "description": "Conflict."
+          }
+        }
+      }
+    },
+    "/nodegroups/{nodegroup}/actions/scale": {
+      "patch": {
+        "tags": [
+          "nodegroups"
+        ],
+        "summary": "Scale nodegroup.",
+        "operationId": "scaleNodegroupById",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/scaleRequest"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "nodegroup",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Nodegroup ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/full_nodegroup"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Node group size should be within min/max limits."
+          },
+          "404": {
+            "description": "Not Found."
+          },
+          "409": {
+            "description": "Cluster is in inappropriate state for this operation."
+          }
+        }
+      }
+    },
+    "/nodegroups/{nodegroup}/node/{nodeid}": {
+      "delete": {
+        "tags": [
+          "nodes"
+        ],
+        "summary": "Delete node from nodegroup.",
+        "operationId": "deleteNodeFromNodegroupById",
+        "parameters": [
+          {
+            "name": "nodegroup",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Nodegroup ID"
+          },
+          {
+            "name": "nodeid",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Node ID"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Node group size should be within min/max limits."
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "409": {
+            "description": "Cluster is in inappropriate state for this operation."
+          }
+        }
+      }
+    },
+    "/nodegroups/{nodegroup}/node/{nodeid}/recreate": {
+      "post": {
+        "tags": [
+          "nodes"
+        ],
+        "summary": "Recreate selected node.",
+        "operationId": "recreateNodeFromNodegroupById",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "payload": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "nodegroup",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Nodegroup ID"
+          },
+          {
+            "name": "nodeid",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Node ID"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "409": {
+            "description": "Cluster is in inappropriate state for this operation."
+          }
+        }
+      }
+    },
+    "/journal": {
+      "get": {
+        "tags": [
+          "journal"
+        ],
+        "summary": "Get event's list for clusters",
+        "operationId": "getEventsList",
+        "parameters": [
+          {
+            "name": "marker",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "pagination marker for large data sets."
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "required": false,
+            "description": "maximum number of resources to return in a single result."
+          },
+          {
+            "name": "resource_type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "filter by resource_type"
+          },
+          {
+            "name": "resource_id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "filter by resource_id"
+          },
+          {
+            "name": "resource_name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "filter by resource_name"
+          },
+          {
+            "name": "action",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "filter by action"
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "filter by status"
+          },
+          {
+            "name": "sort_dir",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "direction to sort. \"asc\" or \"desc\". Default is asc."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/events"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "journal"
+        ],
+        "summary": "Add new event to cluster's journal",
+        "operationId": "addClusterEvent",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/addClusterEvent"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/event"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Authorization required to put new event in action_log"
+          },
+          "404": {
+            "description": "Cluster with specified UUID not found."
+          }
+        }
+      }
+    },
+    "/journal/{cluster_id}": {
+      "get": {
+        "tags": [
+          "journal"
+        ],
+        "summary": "Get event's list for specific cluster",
+        "operationId": "getClusterEventsList",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Cluster UUID"
+          },
+          {
+            "name": "marker",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "pagination marker for large data sets."
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "required": false,
+            "description": "maximum number of resources to return in a single result."
+          },
+          {
+            "name": "resource_type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "filter by resource_type"
+          },
+          {
+            "name": "resource_id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "filter by resource_id"
+          },
+          {
+            "name": "resource_name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "filter by resource_name"
+          },
+          {
+            "name": "action",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "filter by action"
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "filter by status"
+          },
+          {
+            "name": "sort_dir",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "direction to sort. \"asc\" or \"desc\". Default is asc."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/events"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/clusterparams/{cluster_ident}": {
+      "get": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Get cluster params.",
+        "operationId": "getClusterParams",
+        "parameters": [
+          {
+            "name": "cluster_ident",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID of cluster or logical name of the cluster."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getClusterParams"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      }
+    },
+    "/security_policy": {
+      "get": {
+        "tags": [
+          "security_policy"
+        ],
+        "summary": "Get list of security policies",
+        "operationId": "getSecurityPolicyList",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "required": false,
+            "description": "maximum number of resources to return in a single result."
+          },
+          {
+            "name": "sort_key",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "column to sort results by. Default is id."
+          },
+          {
+            "name": "sort_dir",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "direction to sort. \"asc\" or \"desc\". Default is asc."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/securityPolicyList"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "security_policy"
+        ],
+        "summary": "Create security policy",
+        "operationId": "postSecurityPolicy",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/securityPolicyRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/securityPolicy"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      }
+    },
+    "/security_policy/{security_policy_ident}": {
+      "get": {
+        "tags": [
+          "security_policy"
+        ],
+        "summary": "Get security policy",
+        "operationId": "getSecurityPolicy",
+        "parameters": [
+          {
+            "name": "security_policy_ident",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Security policy UUID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/securityPolicy"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "The requested resource could not be found."
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "security_policy"
+        ],
+        "summary": "Patch security policy",
+        "operationId": "patchSecurityPolicy",
+        "parameters": [
+          {
+            "name": "security_policy_ident",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Security policy UUID"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/securityPolicyRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/securityPolicy"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "The requested resource could not be found."
+          }
+        }
+      }
+    },
+    "/ct_security_policy": {
+      "get": {
+        "tags": [
+          "ct_security_policy"
+        ],
+        "summary": "Get list of cluster template security policies",
+        "operationId": "getCTSecurityPolicyList",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "required": false,
+            "description": "maximum number of resources to return in a single result."
+          },
+          {
+            "name": "sort_key",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "column to sort results by. Default is id."
+          },
+          {
+            "name": "sort_dir",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "direction to sort. \"asc\" or \"desc\". Default is asc."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ctSecurityPolicyList"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ct_security_policy"
+        ],
+        "summary": "Create cluster template security policy",
+        "operationId": "postCTSecurityPolicy",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ctSecurityPolicyRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ctSecurityPolicy"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      }
+    },
+    "/ct_security_policy/{ct_security_policy_ident}": {
+      "get": {
+        "tags": [
+          "ct_security_policy"
+        ],
+        "summary": "Get cluster template security policy",
+        "operationId": "getCTSecurityPolicy",
+        "parameters": [
+          {
+            "name": "ct_security_policy_ident",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Cluster template security policy UUID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ctSecurityPolicy"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "The requested resource could not be found."
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "ct_security_policy"
+        ],
+        "summary": "Patch cluster template security policy",
+        "operationId": "patchCTSecurityPolicy",
+        "parameters": [
+          {
+            "name": "ct_security_policy_ident",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Cluster template security policy UUID"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ctSecurityPolicyRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ctSecurityPolicy"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "The requested resource could not be found."
+          }
+        }
+      }
+    },
+    "/cluster_security_policy": {
+      "get": {
+        "tags": [
+          "cluster_security_policy"
+        ],
+        "summary": "Get list of cluster security policies",
+        "operationId": "getClusterSecurityPolicyList",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "required": false,
+            "description": "maximum number of resources to return in a single result."
+          },
+          {
+            "name": "sort_key",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "column to sort results by. Default is id."
+          },
+          {
+            "name": "sort_dir",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "direction to sort. \"asc\" or \"desc\". Default is asc."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/clusterSecurityPolicyList"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "cluster_security_policy"
+        ],
+        "summary": "Create cluster security policy",
+        "operationId": "postClusterSecurityPolicy",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/clusterSecurityPolicyPost"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/clusterSecurityPolicy"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Unacceptable parameters."
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          }
+        }
+      }
+    },
+    "/cluster_security_policy/{cluster_security_policy_ident}": {
+      "get": {
+        "tags": [
+          "cluster_security_policy"
+        ],
+        "summary": "Get cluster security policy",
+        "operationId": "getClusterSecurityPolicy",
+        "parameters": [
+          {
+            "name": "cluster_security_policy_ident",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Cluster security policy UUID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/clusterSecurityPolicy"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "The requested resource could not be found."
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "cluster_security_policy"
+        ],
+        "summary": "Patch cluster security policy",
+        "operationId": "patchClusterSecurityPolicy",
+        "parameters": [
+          {
+            "name": "cluster_security_policy_ident",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Cluster security policy UUID"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/clusterSecurityPolicyPatch"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/clusterSecurityPolicy"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "User must authenticate before making a request."
+          },
+          "403": {
+            "description": "Not authorized."
+          },
+          "404": {
+            "description": "The requested resource could not be found."
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "cluster_security_policy"
+        ],
+        "summary": "Delete cluster security policy",
+        "operationId": "deleteClusterSecurityPolicy",
+        "parameters": [
+          {
+            "name": "cluster_security_policy_ident",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "Cluster security policy UUID"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "409": {
+            "description": "Cluster is in inappropriate state for this operation."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "nodegroups": {
+        "type": "object",
+        "properties": {
+          "node_groups": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/short_nodegroup"
+            }
+          }
+        }
+      },
+      "nodegroup_label": {
+        "type": "object",
+        "description": "Nodegroup label",
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "key"
+        ]
+      },
+      "internal_nodegroup_label": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/nodegroup_label"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "to_delete": {
+                "type": "boolean"
+              }
+            }
+          }
+        ]
+      },
+      "nodegroup_taint": {
+        "type": "object",
+        "description": "Nodegroup taint",
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          },
+          "effect": {
+            "type": "string",
+            "enum": [
+              "NoSchedule",
+              "PreferNoSchedule",
+              "NoExecute"
+            ]
+          }
+        },
+        "required": [
+          "key",
+          "effect"
+        ]
+      },
+      "internal_nodegroup_taint": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/nodegroup_taint"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "to_delete": {
+                "type": "boolean"
+              }
+            }
+          }
+        ]
+      },
+      "short_nodegroup": {
+        "type": "object",
+        "description": "Nodegroup object",
+        "properties": {
+          "uuid": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "node_count": {
+            "type": "integer"
+          },
+          "availability_zones": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "volume_size": {
+            "type": "integer"
+          },
+          "volume_type": {
+            "type": "string"
+          },
+          "max_nodes": {
+            "type": "integer"
+          },
+          "min_nodes": {
+            "type": "integer"
+          },
+          "image_id": {
+            "type": "string"
+          },
+          "flavor_id": {
+            "type": "string"
+          },
+          "autoscaling_enabled": {
+            "type": "boolean"
+          },
+          "state": {
+            "$ref": "#/components/schemas/node_group_state"
+          },
+          "max_node_unavailable": {
+            "type": "integer"
+          }
+        }
+      },
+      "full_nodegroup": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/short_nodegroup"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "created_at": {
+                "type": "string"
+              },
+              "updated_at": {
+                "type": "string"
+              },
+              "cluster_id": {
+                "type": "string"
+              },
+              "nodes": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/node"
+                }
+              },
+              "labels": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/nodegroup_label"
+                }
+              },
+              "taints": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/nodegroup_taint"
+                }
+              },
+              "labels_version": {
+                "type": "integer"
+              }
+            }
+          }
+        ]
+      },
+      "events": {
+        "type": "object",
+        "description": "List of cluster events",
+        "properties": {
+          "events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/event"
+            }
+          }
+        }
+      },
+      "event": {
+        "type": "object",
+        "description": "Cluster Event object",
+        "properties": {
+          "uuid": {
+            "type": "string"
+          },
+          "cluster_id": {
+            "type": "string"
+          },
+          "resource_type": {
+            "type": "string",
+            "enum": [
+              "minion",
+              "master",
+              "cluster"
+            ]
+          },
+          "resource_id": {
+            "type": "string"
+          },
+          "resource_name": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "integer"
+          },
+          "duration": {
+            "type": "number"
+          },
+          "action": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "start",
+              "end",
+              "fail"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "string"
+          }
+        }
+      },
+      "patchNodeGroup": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/patchNGroup"
+        }
+      },
+      "patchNGroup": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "example": "/max_nodes"
+          },
+          "value": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              {
+                "type": "object"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            ]
+          },
+          "op": {
+            "enum": [
+              "add",
+              "replace",
+              "remove"
+            ]
+          }
+        }
+      },
+      "postClusterResponse": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "uuid": "06d8755b-1641-449e-8499-22de62c5a70b"
+        }
+      },
+      "patchJobResponse": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "uuid": "9fe3bb90-261e-42f9-a091-c6f6f704fdd7"
+        }
+      },
+      "patchUpgradeResponse": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "uuid": "06d8755b-1641-449e-8499-22de62c5a70b"
+        }
+      },
+      "clusterUUID": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "uuid": "06d8755b-1641-449e-8499-22de62c5a70b"
+        }
+      },
+      "patchNodegroupResponse": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "uuid": "06d8755b-1641-449e-8499-22de62c5a70b"
+        }
+      },
+      "node": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "uuid": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "updated_at": {
+            "type": "string"
+          },
+          "labels_version": {
+            "type": "integer"
+          },
+          "deploy_status": {
+            "$ref": "#/components/schemas/deploy_status"
+          },
+          "node_group_id": {
+            "type": "string"
+          },
+          "heartbeat": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "cluster_uuid": {
+            "type": "string"
+          },
+          "is_master": {
+            "type": "boolean"
+          },
+          "magnum_agent_tag": {
+            "type": "string"
+          }
+        }
+      },
+      "scaleRequest": {
+        "type": "object",
+        "properties": {
+          "delta": {
+            "type": "integer"
+          },
+          "rollback": {
+            "type": "boolean"
+          }
+        }
+      },
+      "deleteBatchNodeGroupRequest": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        },
+        "required": [
+          "action",
+          "payload"
+        ],
+        "example": {
+          "action": "batch_delete_ng",
+          "payload": [
+            "06d8755b-1641-449e-8499-22de62c5a70b"
+          ]
+        }
+      },
+      "addBatchNodeGroupRequest": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/addNodeGroupRequest"
+            }
+          }
+        },
+        "required": [
+          "action",
+          "payload"
+        ],
+        "example": {
+          "action": "batch_add_ng",
+          "payload": [
+            {
+              "name": "test",
+              "node_count": 2
+            }
+          ]
+        }
+      },
+      "syncConfigurationRequest": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "object",
+            "properties": {
+              "target_tag": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "required": [
+          "action",
+          "payload"
+        ],
+        "example": {
+          "action": "sync_configuration",
+          "payload": {
+            "target_tag": "foobar.2"
+          }
+        }
+      },
+      "invalidateSARequest": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "action",
+          "payload"
+        ],
+        "example": {
+          "action": "invalidate_sa",
+          "payload": {
+          }
+        }
+      },
+      "updateAgent": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "object",
+            "properties": {
+              "version": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "required": [
+          "action",
+          "payload"
+        ],
+        "example": {
+          "action": "update_agent",
+          "payload": {
+            "version": "1.0.2"
+          }
+        }
+      },
+      "addNodeGroupRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "node_count": {
+            "type": "integer"
+          },
+          "availability_zones": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "volume_size": {
+            "type": "integer"
+          },
+          "volume_type": {
+            "type": "string"
+          },
+          "max_nodes": {
+            "type": "integer"
+          },
+          "min_nodes": {
+            "type": "integer"
+          },
+          "image_id": {
+            "type": "string"
+          },
+          "flavor_id": {
+            "type": "string"
+          },
+          "autoscaling_enabled": {
+            "type": "boolean"
+          },
+          "cluster_id": {
+            "type": "string"
+          },
+          "labels": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/nodegroup_label"
+            }
+          },
+          "taints": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/nodegroup_taint"
+            }
+          }
+        },
+        "required": [
+          "name",
+          "cluster_id"
+        ]
+      },
+      "patchRequest": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "op": {
+              "type": "string"
+            },
+            "path": {
+              "type": "string"
+            },
+            "value": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "addClusterRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "node_count": {
+            "type": "integer"
+          },
+          "master_count": {
+            "type": "integer"
+          },
+          "master_flavor_id": {
+            "type": "string"
+          },
+          "keypair": {
+            "type": "string"
+          },
+          "floating_ip_enabled": {
+            "type": "boolean"
+          },
+          "labels": {
+            "type": "object",
+            "items": {
+              "type": "string"
+            }
+          },
+          "create_timeout": {
+            "type": "integer"
+          },
+          "cluster_template_id": {
+            "type": "string"
+          },
+          "network_id": {
+            "type": "string"
+          },
+          "subnet_id": {
+            "type": "string"
+          },
+          "node_groups": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "node_count": {
+                  "type": "integer"
+                },
+                "availability_zones": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "volume_size": {
+                  "type": "integer"
+                },
+                "volume_type": {
+                  "type": "string"
+                },
+                "max_nodes": {
+                  "type": "integer"
+                },
+                "min_nodes": {
+                  "type": "integer"
+                },
+                "image_id": {
+                  "type": "string"
+                },
+                "flavor_id": {
+                  "type": "string"
+                },
+                "autoscaling_enabled": {
+                  "type": "boolean"
+                },
+                "cluster_id": {
+                  "type": "string"
+                },
+                "labels": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/nodegroup_label"
+                  }
+                },
+                "taints": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/nodegroup_taint"
+                  }
+                }
+              },
+              "required": [
+                "name",
+                "volume_size"
+              ]
+            }
+          },
+          "alpha_features_enabled": {
+            "type": "boolean"
+          },
+          "coe": {
+            "type": "string"
+          },
+          "insecure_registries": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "availability_zone": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "floating_ip_enabled",
+          "cluster_template_id",
+          "availability_zone",
+          "network_id",
+          "subnet_id",
+          "labels"
+        ]
+      },
+      "upgradeCluster": {
+        "type": "object",
+        "properties": {
+          "cluster_template_id": {
+            "type": "string"
+          },
+          "rolling_enabled": {
+            "type": "boolean"
+          }
+        }
+      },
+      "getRegistryParams": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "username": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      },
+      "getUpgradeParams": {
+        "type": "object",
+        "properties": {
+          "UNKNOWN": {
+            "type": "string"
+          }
+        }
+      },
+      "getAllClusters": {
+        "type": "object",
+        "properties": {
+          "clusters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/short_cluster"
+            }
+          },
+          "next": {
+            "type": "string"
+          }
+        }
+      },
+      "getAllClustersDetail": {
+        "type": "object",
+        "properties": {
+          "clusters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/full_cluster"
+            }
+          },
+          "next": {
+            "type": "string"
+          }
+        }
+      },
+      "short_cluster": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "$ref": "#/components/schemas/status"
+          },
+          "cluster_template_id": {
+            "type": "string"
+          },
+          "uuid": {
+            "type": "string"
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/links"
+            }
+          },
+          "stack_id": {
+            "type": "string"
+          },
+          "keypair": {
+            "type": "string"
+          },
+          "master_count": {
+            "type": "integer"
+          },
+          "create_timeout": {
+            "type": "integer"
+          },
+          "node_count": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "labels": {
+            "$ref": "#/components/schemas/labels"
+          },
+          "new_status": {
+            "$ref": "#/components/schemas/new_status"
+          },
+          "flavor_id": {
+            "type": "string"
+          },
+          "master_flavor_id": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "project_id": {
+            "type": "string"
+          },
+          "capabilities": {
+            "additionalProperties": {
+              "type": "boolean"
+            }
+          },
+          "insecure_registries": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "full_cluster": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/short_cluster"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "updated_at": {
+                "type": "string"
+              },
+              "discovery_url": {
+                "type": "string"
+              },
+              "network_id": {
+                "type": "string"
+              },
+              "subnet_id": {
+                "type": "string"
+              },
+              "loadbalancer_subnet_id": {
+                "type": "string"
+              },
+              "pods_network_cidr": {
+                "type": "string"
+              },
+              "floating_ip_enabled": {
+                "type": "boolean"
+              },
+              "container_version": {
+                "type": "string"
+              },
+              "coe_version": {
+                "type": "string"
+              },
+              "status_reason": {
+                "type": "string"
+              },
+              "node_addresses": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "master_addresses": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "api_address": {
+                "type": "string"
+              },
+              "executor_image_tag": {
+                "type": "string"
+              },
+              "alpha_features_enabled": {
+                "type": "boolean"
+              },
+              "api_lb_vip": {
+                "type": "string"
+              },
+              "api_lb_fip": {
+                "type": "string"
+              },
+              "ingress_floating_ip": {
+                "type": "string"
+              },
+              "registry_auth_password": {
+                "type": "string"
+              },
+              "coe": {
+                "type": "string"
+              },
+              "availability_zone": {
+                "type": "string"
+              },
+              "events": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "links": {
+        "type": "object",
+        "properties": {
+          "rel": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string"
+          }
+        }
+      },
+      "labels": {
+        "type": "object",
+        "properties": {
+          "docker_registry_enabled": {
+            "type": "string"
+          },
+          "calico_cni_tag": {
+            "type": "string"
+          },
+          "task_support": {
+            "type": "string"
+          },
+          "cluster_node_volume_type": {
+            "type": "string"
+          },
+          "ingress_controller": {
+            "type": "string"
+          },
+          "calico_kube_controllers_tag": {
+            "type": "string"
+          },
+          "etcd_volume_size": {
+            "type": "string"
+          },
+          "master_volume_size": {
+            "type": "string"
+          },
+          "etcd_tag": {
+            "type": "string"
+          },
+          "config_drive": {
+            "type": "string"
+          },
+          "grafana_monitoring_volume_type": {
+            "type": "string"
+          },
+          "prometheus_monitoring_volume_type": {
+            "type": "string"
+          },
+          "kube_core_tag": {
+            "type": "string"
+          },
+          "use_ccm": {
+            "type": "string"
+          },
+          "calico_tag": {
+            "type": "string"
+          },
+          "central_logging_enabled": {
+            "type": "string"
+          },
+          "autoscaling_enabled": {
+            "type": "string"
+          },
+          "magnum_agent_tag": {
+            "type": "string"
+          },
+          "kube_autoscaler_tag": {
+            "type": "string"
+          },
+          "prometheus_monitoring": {
+            "type": "string"
+          },
+          "calico_ipv4pool": {
+            "type": "string"
+          },
+          "kube_ccm_tag": {
+            "type": "string"
+          },
+          "container_infra_prefix": {
+            "type": "string"
+          }
+        }
+      },
+      "new_status": {
+        "type": "string",
+        "enum": [
+          "RUNNING",
+          "ERROR",
+          "PROVISIONING",
+          "RECONCILING",
+          "SHUTOFF",
+          "DELETING",
+          "DELETED"
+        ]
+      },
+      "deploy_status": {
+        "type": "string",
+        "enum": [
+          "BOOTING",
+          "DEPLOYING",
+          "DEPLOYED",
+          "FAILED",
+          "DRAINED"
+        ]
+      },
+      "node_group_state": {
+        "type": "string",
+        "enum": [
+          "SHUTOFF",
+          "ERROR",
+          "RUNNING"
+        ]
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "CREATE_COMPLETE",
+          "CREATE_FAILED",
+          "CREATE_IN_PROGRESS",
+          "DELETE_COMPLETE",
+          "DELETE_FAILED",
+          "DELETE_IN_PROGRESS",
+          "TURNED_OFF",
+          "TURNED_ON",
+          "TURNING_OFF",
+          "TURNING_ON",
+          "UPDATE_COMPLETE",
+          "UPDATE_FAILED",
+          "UPDATE_IN_PROGRESS",
+          "UPGRADE_COMPLETE",
+          "UPGRADE_FAILED",
+          "UPGRADE_IN_PROGRESS"
+        ]
+      },
+      "getCluster": {
+        "$ref": "#/components/schemas/full_cluster"
+      },
+      "updateJob": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          }
+        }
+      },
+      "getJobs": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "uuid": {
+            "type": "string"
+          },
+          "prev_job": {
+            "type": "string"
+          },
+          "nodename": {
+            "type": "string"
+          },
+          "task_id": {
+            "type": "string"
+          },
+          "cmd": {
+            "type": "string"
+          }
+        }
+      },
+      "getTasks": {
+        "type": "object",
+        "properties": {
+          "tasks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/getTask"
+            }
+          }
+        }
+      },
+      "getTask": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "uuid": {
+            "type": "string"
+          },
+          "timeout": {
+            "type": "integer"
+          },
+          "topology_type": {
+            "type": "string"
+          },
+          "cluster_uuid": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "jobs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/getJobs"
+            }
+          }
+        }
+      },
+      "batchNodesDelete": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "object",
+            "properties": {
+              "node_group_uuid": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "example": {
+          "action": "batch_delete_nodes",
+          "payload": {
+            "node_group_uuid": [
+              "node_uuid_1"
+            ]
+          }
+        }
+      },
+      "turnOffCluster": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "object"
+          }
+        },
+        "example": {
+          "action": "turn_off_cluster",
+          "payload": {
+          }
+        }
+      },
+      "turnOnCluster": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "object"
+          }
+        },
+        "example": {
+          "action": "turn_on_cluster",
+          "payload": {
+          }
+        }
+      },
+      "turnOffNodeGroup": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "object"
+          }
+        },
+        "example": {
+          "action": "turn_off_ng",
+          "payload": {
+          }
+        }
+      },
+      "turnOnNodeGroup": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "object"
+          }
+        },
+        "example": {
+          "action": "turn_on_ng",
+          "payload": {
+          }
+        }
+      },
+      "ResizeMasters": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "object",
+            "properties": {
+              "flavor": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "example": {
+          "action": "resize_masters",
+          "payload": {
+            "flavor": "flavor_ident"
+          }
+        }
+      },
+      "addClusterEvent": {
+        "type": "object",
+        "properties": {
+          "cluster_uuid": {
+            "type": "string"
+          },
+          "resource_type": {
+            "type": "string",
+            "enum": [
+              "minion",
+              "master",
+              "cluster"
+            ]
+          },
+          "resource_id": {
+            "type": "string"
+          },
+          "resource_name": {
+            "type": "string"
+          },
+          "attempt_id": {
+            "type": "string",
+            "description": "some identifier, to trace start, end and fail events"
+          },
+          "timestamp": {
+            "type": "integer"
+          },
+          "duration": {
+            "type": "number"
+          },
+          "action": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "start",
+              "end",
+              "fail"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "meta": {
+            "type": "string",
+            "description": "Some JSON string to dump extra info if needed"
+          }
+        },
+        "required": [
+          "cluster_uuid",
+          "resource_type",
+          "resource_name",
+          "resource_id",
+          "attempt_id",
+          "action",
+          "status"
+        ],
+        "example": {
+          "resource_type": "master",
+          "resource_name": "mycluster-master-0",
+          "resource_id": "c4e2398f-b6ff-4f1f-9e5f-06e1ff0af3aa",
+          "attempt_id": "a47daccb-4d6b-4805-8a09-a71c1d415a70",
+          "duration": 0.001,
+          "action": "update_etc_hosts",
+          "status": "fail",
+          "reason": "/etc/hosts: Permission denied",
+          "meta": "{\"some_extra_info\":\"foo\",\"some_extra_info2\":2}"
+        }
+      },
+      "clusterMigration": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string"
+          },
+          "src_template": {
+            "type": "string"
+          },
+          "dst_template": {
+            "type": "string"
+          },
+          "public": {
+            "type": "boolean"
+          },
+          "comment": {
+            "type": "string"
+          }
+        }
+      },
+      "clusterMigrations": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/clusterMigration"
+        }
+      },
+      "clusterTemplate": {
+        "type": "object",
+        "properties": {
+          "labels": {
+            "$ref": "#/components/schemas/labels"
+          },
+          "insecure_registry": {
+            "type": "string"
+          },
+          "links": {
+            "$ref": "#/components/schemas/links"
+          },
+          "executor_image_tag": {
+            "type": "string"
+          },
+          "floating_ip_enabled": {
+            "type": "boolean"
+          },
+          "fixed_subnet": {
+            "type": "string"
+          },
+          "mastet_flavor_id": {
+            "type": "string"
+          },
+          "uuid": {
+            "type": "string"
+          },
+          "tls_disabled": {
+            "type": "boolean"
+          },
+          "version": {
+            "type": "string"
+          },
+          "keypair_id": {
+            "type": "string"
+          },
+          "public": {
+            "type": "string"
+          },
+          "docker_volume_size": {
+            "type": "string"
+          },
+          "server_type": {
+            "type": "string"
+          },
+          "external_network_id": {
+            "type": "string"
+          },
+          "cluster_distro": {
+            "type": "string"
+          },
+          "image_id": {
+            "type": "string"
+          },
+          "volume_driver": {
+            "type": "string"
+          },
+          "registry_enabled": {
+            "type": "boolean"
+          },
+          "docker_storage_driver": {
+            "type": "string"
+          },
+          "apiserver_port": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "network_driver": {
+            "type": "string"
+          },
+          "fixed_network": {
+            "type": "string"
+          },
+          "is_deprecated": {
+            "type": "boolean"
+          },
+          "coe": {
+            "type": "string"
+          },
+          "flavor_id": {
+            "type": "string"
+          },
+          "master_lb_enabled": {
+            "type": "boolean"
+          },
+          "dns_nameserver": {
+            "type": "string"
+          },
+          "alpha_features_list": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "capabilities": {
+            "additionalProperties": {
+              "type": "boolean"
+            }
+          },
+          "deprecated_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "clusterTemplates": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/clusterTemplate"
+        }
+      },
+      "certificate": {
+        "type": "object",
+        "properties": {
+          "links": {
+            "$ref": "#/components/schemas/links"
+          },
+          "cluster_uuid": {
+            "type": "string"
+          },
+          "pem": {
+            "type": "string"
+          }
+        }
+      },
+      "nodeinfoResponse": {
+        "type": "object",
+        "properties": {
+          "labels": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/internal_nodegroup_label"
+            }
+          },
+          "taints": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/internal_nodegroup_taint"
+            }
+          },
+          "labels_version": {
+            "type": "integer"
+          }
+        }
+      },
+      "reportLabelsSyncedRequest": {
+        "type": "object",
+        "properties": {
+          "synced": {
+            "type": "boolean"
+          }
+        }
+      },
+      "getClusterParams": {
+        "type": "object",
+        "properties": {
+          "cluster_name": {
+            "type": "string"
+          },
+          "cluster_template_id": {
+            "type": "string"
+          },
+          "master_flavor_info": {
+            "type": "object",
+            "properties": {
+              "links": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "href": {
+                      "type": "string"
+                    },
+                    "rel": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "ram": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "OS-FLV-DISABLED:disabled": {
+                "type": "boolean"
+              },
+              "extra_specs": {
+                "type": "object",
+                "properties": {
+                  "mcs:cpu_type": {
+                    "type": "string"
+                  },
+                  "agg_common": {
+                    "type": "string"
+                  },
+                  "hw:cpu_sockets": {
+                    "type": "string"
+                  }
+                }
+              },
+              "os-flavor-access:is_public": {
+                "type": "boolean"
+              },
+              "rxtx_factor": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "disk": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "vcpus": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "swap": {
+                "type": "string"
+              },
+              "OS-FLV-EXT-DATA:ephemeral": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          },
+          "node_groups_flavor_info": {
+            "type": "object",
+            "properties": {
+              "default-group": {
+                "type": "object",
+                "properties": {
+                  "links": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "href": {
+                          "type": "string"
+                        },
+                        "rel": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "ram": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "OS-FLV-DISABLED:disabled": {
+                    "type": "boolean"
+                  },
+                  "extra_specs": {
+                    "type": "object",
+                    "properties": {
+                      "mcs:cpu_type": {
+                        "type": "string"
+                      },
+                      "agg_common": {
+                        "type": "string"
+                      },
+                      "hw:cpu_sockets": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "os-flavor-access:is_public": {
+                    "type": "boolean"
+                  },
+                  "rxtx_factor": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "disk": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "vcpus": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "swap": {
+                    "type": "string"
+                  },
+                  "OS-FLV-EXT-DATA:ephemeral": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              }
+            }
+          },
+          "params": {
+            "type": "object",
+            "properties": {
+              "cpu_reserved": {
+                "type": "string"
+              },
+              "ram_reserved": {
+                "type": "string"
+              },
+              "disc_reserved": {
+                "type": "string"
+              },
+              "prometheus_monitoring_volume_type": {
+                "type": "string"
+              },
+              "grafana_monitoring_volume_type": {
+                "type": "string"
+              },
+              "docker_registry_enabled": {
+                "type": "boolean"
+              },
+              "docker_registry_s3_regionendpoint": {
+                "type": "string"
+              },
+              "docker_registry_s3_secure": {
+                "type": "string"
+              },
+              "docker_registry_s3_bucket": {
+                "type": "string"
+              },
+              "cinder_hdd_volume_type": {
+                "type": "string"
+              },
+              "cluster_name": {
+                "type": "string"
+              },
+              "loadbalancer_subnet_id": {
+                "type": "string"
+              },
+              "volume_sid": {
+                "type": "string"
+              },
+              "helm_stable_repo": {
+                "type": "string"
+              },
+              "auth_webhook_endpoint": {
+                "type": "string"
+              },
+              "ingress_controller_replicas": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "coredns_replicas": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "autoscaler_replicas": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "admission_control_list": {
+                "type": "string"
+              },
+              "cloud_volume_types": {
+                "type": "string"
+              },
+              "etcd_volume_size": {
+                "type": "string"
+              },
+              "kube_dashboard_enabled": {
+                "type": "boolean"
+              },
+              "shell_operator_enabled": {
+                "type": "boolean"
+              },
+              "opa_gatekeeper_enabled": {
+                "type": "boolean"
+              },
+              "metrics_server_enabled": {
+                "type": "boolean"
+              },
+              "ingress_controller": {
+                "type": "string"
+              },
+              "proxy_source_ip": {
+                "type": "boolean"
+              },
+              "cert_manager_api": {
+                "type": "boolean"
+              },
+              "prometheus_storage_size": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "shadow_port_ip": {
+                "type": "string"
+              },
+              "floating_ip_enabled": {
+                "type": "boolean"
+              },
+              "service_account_id": {
+                "type": "string"
+              },
+              "service_account_username": {
+                "type": "string"
+              },
+              "service_account_domain": {
+                "type": "string"
+              },
+              "magnum_agent_tag": {
+                "type": "string"
+              },
+              "keypair_public_key": {
+                "type": "string"
+              },
+              "availability_zone": {
+                "type": "string"
+              },
+              "insecure_registries": {
+                "type": "string"
+              },
+              "auth_url_hosts_entry": {
+                "type": "string"
+              },
+              "mcs_routing": {
+                "type": "string"
+              },
+              "shadow_port_dns_names": {
+                "type": "string"
+              },
+              "supported_availability_zones": {
+                "type": "string"
+              },
+              "region_name": {
+                "type": "string"
+              },
+              "rapid_endpoint": {
+                "type": "string"
+              },
+              "tenant_id": {
+                "type": "string"
+              },
+              "central_logging_endpoint": {
+                "type": "string"
+              },
+              "magnum_url": {
+                "type": "string"
+              },
+              "pods_network_cidr": {
+                "type": "string"
+              },
+              "prometheus_monitoring": {
+                "type": "string"
+              },
+              "kube_core_tag": {
+                "type": "string"
+              },
+              "cgroup_driver": {
+                "type": "string"
+              },
+              "central_logging_enabled": {
+                "type": "boolean"
+              },
+              "journal_enabled": {
+                "type": "boolean"
+              },
+              "cloud_monitoring": {
+                "type": "string"
+              },
+              "kube_log_level": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "volume_driver": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "securityPolicyList": {
+        "type": "object",
+        "properties": {
+          "security_policy": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/securityPolicy"
+            }
+          }
+        }
+      },
+      "securityPolicy": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "settings_description": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "updated_at": {
+            "type": "string"
+          }
+        }
+      },
+      "securityPolicyRequest": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 255
+          },
+          "settings_description": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "version"
+        ]
+      },
+      "ctSecurityPolicyList": {
+        "type": "object",
+        "properties": {
+          "ct_security_policy": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ctSecurityPolicy"
+            }
+          }
+        }
+      },
+      "ctSecurityPolicy": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string"
+          },
+          "cluster_template_uuid": {
+            "type": "string"
+          },
+          "security_policy_uuid": {
+            "type": "string"
+          }
+        }
+      },
+      "ctSecurityPolicyRequest": {
+        "type": "object",
+        "properties": {
+          "cluster_template_uuid": {
+            "type": "string"
+          },
+          "security_policy_uuid": {
+            "type": "string"
+          }
+        }
+      },
+      "clusterSecurityPolicyList": {
+        "type": "object",
+        "properties": {
+          "cluster_security_policy": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/clusterSecurityPolicy"
+            }
+          }
+        }
+      },
+      "clusterSecurityPolicy": {
+        "type": "object",
+        "properties": {
+          "uuid": {
+            "type": "string"
+          },
+          "cluster_uuid": {
+            "type": "string"
+          },
+          "security_policy_uuid": {
+            "type": "string"
+          },
+          "policy": {
+            "type": "object",
+            "properties": {
+              "uuid": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "settings_description": {
+                "type": "string"
+              },
+              "version": {
+                "type": "string"
+              },
+              "created_at": {
+                "type": "string"
+              }
+            }
+          },
+          "policy_settings": {
+            "type": "string"
+          },
+          "namespace": {
+            "type": "string"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "updated_at": {
+            "type": "string"
+          }
+        }
+      },
+      "clusterSecurityPolicyPost": {
+        "type": "object",
+        "properties": {
+          "cluster_uuid": {
+            "type": "string"
+          },
+          "security_policy_uuid": {
+            "type": "string"
+          },
+          "policy_settings": {
+            "type": "string"
+          },
+          "namespace": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 63,
+            "default": "*"
+          },
+          "enabled": {
+            "type": "boolean",
+            "default": true
+          }
+        },
+        "required": [
+          "cluster_uuid",
+          "security_policy_uuid"
+        ]
+      },
+      "clusterSecurityPolicyPatch": {
+        "type": "object",
+        "properties": {
+          "policy_settings": {
+            "type": "string"
+          },
+          "namespace": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 63,
+            "default": "*"
+          },
+          "enabled": {
+            "type": "boolean",
+            "default": true
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "KeystoneAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-Auth-Token",
+        "description": "Authorization token"
+      },
+      "McsApiVersion": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Mcs-Api-Version",
+        "description": "Version of API"
+      }
+    }
+  },
+  "security": [
+    {
+      "KeystoneAuth": [
+        "read",
+        "write",
+        "delete",
+        "update"
+      ]
+    },
+    {
+      "McsApiVersion": [
+
+      ]
+    }
+  ]
+}
