@@ -493,7 +493,7 @@ systemctl status qemu-guest-agent
 
 <warn>
 
-Если после создания ВМ пароль был изменен или ВМ была создана в сети `ext-net`, [установите новый пароль](#ustanovka-i-izmenenie-parolya).
+Если после создания ВМ пароль был изменен или ВМ была создана в сети `ext-net`, [установите новый пароль](#ustanovka_i_izmenenie_parolya).
 
 </warn>
 

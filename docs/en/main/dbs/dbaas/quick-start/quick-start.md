@@ -4,7 +4,7 @@ After going through all the steps of the quick start, you will:
 
 1. Create a single host PostgreSQL DB instance.
 1. Install the [TimescaleDB](https://docs.timescale.com) extension to the instance.
-1. Learn how to connect to the instance for both [viewing logs](#3---optional--view-db-instance-logs) and [executing SQL queries](#5--connect-to-the-database).
+1. Learn how to connect to the instance for both [viewing logs](#3_optional_view_db_instance_logs) and [executing SQL queries](#5_connect_to_the_database).
 1. Create test data and quieries for TimescaleDB to make sure that the extension operates correctly.
 
    An automatically generated test dataset will be used in this quick start. It comprises the information from the IoT sensors: temperature and CPU utilization.
@@ -16,7 +16,7 @@ After going through all the steps of the quick start, you will:
 
 <warn>
 
-The DB instance is charged and consumes computational resources. After completing the quick start [delete both the instance and the floating IP address assigned to it](#delete-unused-resources) if you no longer need them.
+The DB instance is charged and consumes computational resources. After completing the quick start [delete both the instance and the floating IP address assigned to it](#delete_unused_resources) if you no longer need them.
 
 </warn>
 
@@ -213,7 +213,7 @@ The DB instance is charged and consumes computational resources. After completin
 
      With this option enabled, a private SSH key will be downloaded to your computer. Save it.
 
-     This key is required to connect to the instance via SSH, for example, for [viewing the logs](#3---optional--view-db-instance-logs).
+     This key is required to connect to the instance via SSH, for example, for [viewing the logs](#3_optional_view_db_instance_logs).
 
      </info>
 
@@ -253,7 +253,7 @@ The DB instance is charged and consumes computational resources. After completin
 
 ## 3. (Optional) View DB instance logs
 
-1. Connect to DB instace via SSH. Use private SSH key, [obtained during the instance creation](#1--create-postgresql-db-instance):
+1. Connect to DB instace via SSH. Use private SSH key, [obtained during the instance creation](#1_create_postgresql_db_instance):
 
    <tabs>
    <tablist>
@@ -334,7 +334,7 @@ Connect to the `tsdb1` database via the `psql` utility:
    psql -h <DB instance external IP address> -d tsdb1 -U tsuser1
    ```
 
-1. Enter the `tsuser1` user's password, [specified during the instance creation](#1--create-postgresql-db-instance).
+1. Enter the `tsuser1` user's password, [specified during the instance creation](#1_create_postgresql_db_instance).
 
 If the connection is successful, the following prompt will be displayed:
 
@@ -580,7 +580,7 @@ Output of query results similar to the above ones indicates that PostgreSQL and 
 
 ## 9. (Optional) Familiarize yourself with the DB instance monitoring data
 
-The monitoring feature [was enabled during the instance creation](#1--create-postgresql-db-instance). Familiarize yourself with gathered monitoring data:
+The monitoring feature [was enabled during the instance creation](#1_create_postgresql_db_instance). Familiarize yourself with gathered monitoring data:
 
 1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en/).
 1. Select the project where the DB instance is located.

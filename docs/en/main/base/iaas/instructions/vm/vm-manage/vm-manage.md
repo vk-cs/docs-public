@@ -493,7 +493,7 @@ Password recovery generated for the default user is available only for Windows v
 
 <warn>
 
-If the password was changed after the VM was created or the VM was created on the `ext-net` network, [set a new password](#setting-and-changing-a-password).
+If the password was changed after the VM was created or the VM was created on the `ext-net` network, [set a new password](#setting_and_changing_a_password).
 
 </warn>
 

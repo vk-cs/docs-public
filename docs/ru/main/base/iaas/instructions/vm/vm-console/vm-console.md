@@ -1,4 +1,4 @@
-В аварийных ситуациях и при отсутствии [подключения к виртуальной машине](../vm-connect/vm-connect-nix#4_podklyuchites_k_vm) по сети используйте [VNC-консоль](#vnc-konsol) или просмотрите [логи сообщений ВМ](#logi-soobshcheniy-vm).
+В аварийных ситуациях и при отсутствии [подключения к виртуальной машине](../vm-connect/vm-connect-nix#4_podklyuchites_k_vm) по сети используйте [VNC-консоль](#vnc-konsol) или просмотрите [логи сообщений ВМ](#logi_soobshcheniy_vm).
 
 <info>
 

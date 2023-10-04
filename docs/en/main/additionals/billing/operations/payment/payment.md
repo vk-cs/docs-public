@@ -34,7 +34,7 @@ It is possible to credit funds to the [main account](../../start/balance#the_mai
 To make a payment:
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/en/).
-1. Click on the ![Make a payment](./assets/icon_plus.svg "inline") icon at the top of the personal account page or click on the **Make a payment** button on the [balance page](#viewing-the-balance).
+1. Click on the ![Make a payment](./assets/icon_plus.svg "inline") icon at the top of the personal account page or click on the **Make a payment** button on the [balance page](#viewing_the_balance).
 1. Specify the amount of the deposit.
 
    The minimum amount that can be credited is 10 rubles for projects in the Moscow [region](/en/base/account/concepts/regions) and 100 tenge for projects in the Kazakhstan region.

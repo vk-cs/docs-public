@@ -80,7 +80,7 @@ You can manage floating IP addresses: view, add and remove them from a project, 
 
 1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
 
-1. [Get list of floating IP addresses](#viewing-a-list-of-floating-ip-addresses). Find in the list the ID of the floating IP address for which you want to edit the description.
+1. [Get list of floating IP addresses](#viewing_a_list_of_floating_ip_addresses). Find in the list the ID of the floating IP address for which you want to edit the description.
 
 1. Run the command:
 
@@ -109,7 +109,7 @@ You can manage floating IP addresses: view, add and remove them from a project, 
 
    Unbound IP addresses also contain a link to the binding in the adjacent column.
 
-   To bind a floating IP to another internal IP, first [unbind](#unbinding-floating-ip-address) it from the current one.
+   To bind a floating IP to another internal IP, first [unbind](#unbinding_floating_ip_address) it from the current one.
 
    </info>
 
@@ -121,7 +121,7 @@ You can manage floating IP addresses: view, add and remove them from a project, 
 
 1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
 
-1. [Get list of floating IP addresses](#viewing-a-list-of-floating-ip-addresses). Find in the list the ID of the floating IP address that you want to bind to the port.
+1. [Get list of floating IP addresses](#viewing_a_list_of_floating_ip_addresses). Find in the list the ID of the floating IP address that you want to bind to the port.
 1. Get the list of ports. Find in the list the port ID of the port to which you want to bind the floating IP address.
 1. Run the command:
 
@@ -152,7 +152,7 @@ You can manage floating IP addresses: view, add and remove them from a project, 
 
 1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
 
-1. [Get list of floating IP addresses](#viewing-a-list-of-floating-ip-addresses). Find in the list the ID of the floating IP address that you want to unbind from the port.
+1. [Get list of floating IP addresses](#viewing_a_list_of_floating_ip_addresses). Find in the list the ID of the floating IP address that you want to unbind from the port.
 
 1. Run the command:
 
@@ -183,7 +183,7 @@ You can manage floating IP addresses: view, add and remove them from a project, 
 
 1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
 
-1. [Get list of floating IP addresses](#viewing-a-list-of-floating-ip-addresses). Find in the list the ID of the floating IP address that you want to remove from the project.
+1. [Get list of floating IP addresses](#viewing_a_list_of_floating_ip_addresses). Find in the list the ID of the floating IP address that you want to remove from the project.
 
 1. Execute the command:
 

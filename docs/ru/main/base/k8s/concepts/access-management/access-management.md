@@ -10,7 +10,7 @@
 
   - [Доступные операции с кластерами в личном кабинете](../../../../base/account/concepts/rolesandpermissions#razresheniya_roley_servisa_konteynerov).
 
-  - [Доступные действия в кластере](#vzaimosvyaz-roley-lichnogo-kabineta-i-kubernetes).
+  - [Доступные действия в кластере](#vzaimosvyaz_roley_lichnogo_kabineta_i_kubernetes).
 
     Пользователю с определенной ролью личного кабинета назначается соответствующая [роль Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles). Роль Kubernetes определяет, какие объекты кластера доступны пользователю, а также какие действия разрешено выполнять над этими объектами.
 

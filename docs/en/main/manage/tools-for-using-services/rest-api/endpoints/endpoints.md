@@ -37,7 +37,7 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
 | Magnum            | https://infra.mail.ru:9511/v1                       | Managing [containers](/en/base/k8s) |
-| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Managing container [addons](base/k8s/operations/addons) |
+| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Managing container [addons](/en/base/k8s/operations/addons) |
 
 ### Virtual networks
 

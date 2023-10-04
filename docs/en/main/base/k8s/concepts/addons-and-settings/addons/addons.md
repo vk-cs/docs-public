@@ -154,7 +154,7 @@ The pre-installed Ingress controller integrates tightly with the VK Cloud platfo
 </tablist>
 <tabpanel>
 
-[Kiali](https://kiali.io/) is a web interface for working with [Istio](#istio). It allows to manage, monitor and visualize a service mesh.
+[Kiali](https://kiali.io/) is a web interface for working with [Istio](#istio_1d312d07). It allows to manage, monitor and visualize a service mesh.
 
 </tabpanel>
 <tabpanel>

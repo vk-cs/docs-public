@@ -36,7 +36,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       - application name;
       - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing-the-addon-setup-code-during-installation).
+      - [addon settings code](#editing_the_addon_setup_code_during_installation).
 
         <warn>
 
@@ -147,7 +147,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       - application name;
       - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing-the-addon-setup-code-during-installation).
+      - [addon settings code](#editing_the_addon_setup_code_during_installation).
 
    1. Set the necessary tolerations and nodeSelector in the addon setup code:
 
@@ -271,4 +271,4 @@ external_services:
       password: "<password for the admin Grafana user>"
 ```
 
-After editing the addon code [continue installing the addon](#installing-the-addon).
+After editing the addon code [continue installing the addon](#installing_the_addon).

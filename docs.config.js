@@ -45,5 +45,4 @@ export const config = {
             'LeftNavMenu.backLink.title': 'На главную',
         },
     },
-
 };
