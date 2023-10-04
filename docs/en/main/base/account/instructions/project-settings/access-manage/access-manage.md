@@ -81,7 +81,7 @@ After [logging in to the project](../../project-invitation/) the new member's st
 
 <info>
 
-The member's email is not editable, and the invitation cannot be resent to it. If you have entered an incorrect email address or the invitation has expired, [delete](#deleting-member) the member and invite him again.
+The member's email is not editable, and the invitation cannot be resent to it. If you have entered an incorrect email address or the invitation has expired, [delete](#deleting_member) the member and invite him again.
 
 </info>
 

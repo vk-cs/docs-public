@@ -31,7 +31,7 @@ For security groups to work correctly:
 
 <warn>
 
-Groups **ssh**, **ssh+www** and **all** become available after [creating virtual machine](.../.../.../base/iaas/vm-start/vm-quick-create) with these groups.
+Groups **ssh**, **ssh+www** and **all** become available after [creating virtual machine](/en/base/iaas/instructions/vm/vm-create) with these groups.
 
 </warn>
 

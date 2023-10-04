@@ -1,4 +1,4 @@
-The OpenStack Command line interface (OpenStack CLI) allows you to work with VK Cloud platform services via the console. To use the OpenStack CLI, [install](#1-install-the-openstack-client) the OpenStack client and [authenticate](#3-complete-authentication).
+The OpenStack Command line interface (OpenStack CLI) allows you to work with VK Cloud platform services via the console. To use the OpenStack CLI, [install](#1-install-the-openstack-client) the OpenStack client and [authenticate](#3_complete_authentication).
 
 ## 1. Install the OpenStack client
 

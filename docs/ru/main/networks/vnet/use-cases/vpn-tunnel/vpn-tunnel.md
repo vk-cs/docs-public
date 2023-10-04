@@ -202,7 +202,7 @@
 
    ```
 
-1. Добавьте параметры VPN-соединения со стороны клиентской сети в файл `/etc/ipsec.conf`. Эти параметры — зеркальное отражение настроек туннеля, сделанных на [предыдущем шаге](#2--nastroyte-vpn-tunnel-na-storone-oblachnoy-seti).
+1. Добавьте параметры VPN-соединения со стороны клиентской сети в файл `/etc/ipsec.conf`. Эти параметры — зеркальное отражение настроек туннеля, сделанных на [предыдущем шаге](#2_nastroyte_vpn_tunnel_na_storone_oblachnoy_seti).
 
    ```ini
    conn client-vkcloud-vpn
@@ -229,7 +229,7 @@
 
    </info>
 
-1. Укажите в файле `/etc/ipsec.secret` ключ совместного использования (PSK). Ключ должен совпадать с ключом, указанным [ранее](#2--nastroyte-vpn-tunnel-na-storone-oblachnoy-seti):
+1. Укажите в файле `/etc/ipsec.secret` ключ совместного использования (PSK). Ключ должен совпадать с ключом, указанным [ранее](#2_nastroyte_vpn_tunnel_na_storone_oblachnoy_seti):
 
    ```ini
    192.0.2.200 192.0.2.100 : PSK "<pre-shared key, заданный ранее>"

@@ -1,4 +1,4 @@
-Интерфейс командной строки OpenStack (OpenStack CLI) позволяет работать с сервисами платформы VK Cloud через консоль. Для использования OpenStack CLI [установите](#ustanovka-klienta-openstack) клиент OpenStack и [пройдите](#autentifikaciya) аутентификацию.
+Интерфейс командной строки OpenStack (OpenStack CLI) позволяет работать с сервисами платформы VK Cloud через консоль.
 
 ## 1. Установите клиент OpenStack
 

@@ -11,17 +11,17 @@ Quotas are not shared between several projects of the same owner and are not inh
 
 After activating the services, basic quotas become available to the project. They have default values that apply to all new projects in the region.
 
-Quotas can be [viewed](../../instructions/project-settings/manage#viewing_project_quotas) in personal account (short list) and via the OpenStack CLI (extended list). There are implicit quotas that cannot be seen in any way, they manifest themselves as error messages when trying to create a new object. An example of an implicit quota is [quota for the number of projects](#common), which can be created by a single user.
+Quotas can be [viewed](../../instructions/project-settings/manage#viewing_project_quotas) in personal account (short list) and via the OpenStack CLI (extended list). There are implicit quotas that cannot be seen in any way, they manifest themselves as error messages when trying to create a new object. An example of an implicit quota is [quota for the number of projects](#common_4cc7e93b), which can be created by a single user.
 
-Quotas are closely related to [technical limits](#quotas-and-technical-limits).
+Quotas are closely related to [technical limits](#quotas_and_technical_limits).
 
 ## Quotas and technical limits
 
 Technical limits are the limitations of the platform due to the features of the VK Cloud architecture.
 
-Some of the limits are strict, they cannot be exceeded physically. For example, the limit on [4 GPUs per instance](#virtual-machines) is related to the limitation of KVM technology, which does not allow connecting more than 4 video cards to one virtual machine.
+Some of the limits are strict, they cannot be exceeded physically. For example, the limit on [4 GPUs per instance](#virtual_machines_9c2b1861) is related to the limitation of KVM technology, which does not allow connecting more than 4 video cards to one virtual machine.
 
-Other limits are not related to physical limitations and are based on the operational requirements of the services. For example, [network restrictions](#networks-neutron) are introduced to ensure optimal network performance and stable operation.
+Other limits are not related to physical limitations and are based on the operational requirements of the services. For example, [network restrictions](#networks_neutron_af1ca443) are introduced to ensure optimal network performance and stable operation.
 
 There are no corresponding quotas for some technical limits.
 

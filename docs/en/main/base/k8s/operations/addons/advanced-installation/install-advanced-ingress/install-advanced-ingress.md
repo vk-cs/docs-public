@@ -2,7 +2,7 @@
 
 <warn>
 
-When installing the addon, [standard load balancers](/en/main/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created for them.
+When installing the addon, [standard load balancers](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created for them.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
@@ -40,7 +40,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       - application name;
       - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing-the-addon-setup-code-during-installation).
+      - [addon settings code](#editing_the_addon_setup_code_during_installation).
 
         <warn>
 
@@ -101,7 +101,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. [Get the IP address of the load balancer](#getting-the-ip-address-of-the-load-balancer).
+1. [Get the IP address of the load balancer](#getting_the_ip_address_of_the_load_balancer).
 
 </tabpanel>
 <tabpanel>
@@ -151,7 +151,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       - application name;
       - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing-the-addon-setup-code-during-installation).
+      - [addon settings code](#editing_the_addon_setup_code_during_installation).
 
    1. Set the necessary tolerations and nodeSelector in the addon setup code:
 
@@ -209,7 +209,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. [Get the IP address of the load balancer](#getting-the-ip-address-of-the-load-balancer).
+1. [Get the IP address of the load balancer](#getting_the_ip_address_of_the_load_balancer).
 
 </tabpanel>
 <tabpanel>
@@ -218,7 +218,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 When the addon is installed quickly, a load balancer with a floating IP address is created, and the Ingress controller will be accessible from the Internet.
 
-If it is necessary that the Ingress controller is not accessible from the Internet, perform a **standard installation** or **installation on dedicated worker nodes**. During the installation process, [change](#editing-the-addon-setup-code-during-installation) load balancer type for Ingress controller.
+If it is necessary that the Ingress controller is not accessible from the Internet, perform a **standard installation** or **installation on dedicated worker nodes**. During the installation process, [change](#editing_the_addon_setup_code_during_installation) load balancer type for Ingress controller.
 
 </info>
 
@@ -255,7 +255,7 @@ If it is necessary that the Ingress controller is not accessible from the Intern
    </tabpanel>
    </tabs>
 
-1. [Get the IP address of the load balancer](#getting-the-ip-address-of-the-load-balancer).
+1. [Get the IP address of the load balancer](#getting_the_ip_address_of_the_load_balancer).
 
 </tabpanel>
 </tabs>
@@ -285,13 +285,13 @@ service:
     }
 ```
 
-After editing the addon code [continue installing the addon](#installing-the-addon).
+After editing the addon code [continue installing the addon](#installing_the_addon).
 
 ## Getting the IP address of the load balancer
 
 <info>
 
-If you [selected](#installing-the-addon) a service name other than `ingress-nginx` or a namespace other than `ingress-nginx` when installing the addon, adjust the steps below.
+If you [selected](#installing_the_addon) a service name other than `ingress-nginx` or a namespace other than `ingress-nginx` when installing the addon, adjust the steps below.
 
 </info>
 

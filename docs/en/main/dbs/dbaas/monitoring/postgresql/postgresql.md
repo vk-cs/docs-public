@@ -2,7 +2,7 @@ You can monitor the status of individual PostgreSQL hosts using the monitoring t
 
 <warn>
 
-This tool is only available if the PostgreSQL cluster was [created](../../../dbaas/dbaas-start/create-postresql-mysql) with the "Enable monitoring" option enabled and [config template](../../../dbaas /dbaas-start/db-config) "Single" or "Master-Replica".
+This tool is only available if the PostgreSQL cluster was [created](../../../dbaas/dbaas-start/create-postresql-mysql) with the "Enable monitoring" option enabled and [config template](../../../dbaas/dbaas-start/db-config) "Single" or "Master-Replica".
 
 </warn>
 
@@ -16,7 +16,7 @@ To view monitoring data:
 1. Click on the instance host for which you want to view monitoring data.
 1. Go to the "Monitoring" card.
 
-Several [counters and graphs](#dostupnye-metrici-monitoringa) will be displayed:
+Several [counters and graphs](#available_monitoring_metrics) will be displayed:
 
 - Counters reflect the current value of the metrics.
 - Graphs reflect the dynamics of changes in metric values ​​within a certain time period.
@@ -116,4 +116,4 @@ Load on the disk subsystem:
   1. [Increase option value](../../../dbaas/manage-db/db-flags-options) `max_connections`.
   1. Optimize queries so that there are no long transactions.
 
-- For troubleshooting replica lagging issues, see the [Patroni](https://patroni.readthedocs.io/en/latest/replication_modes.html) and [PostgreSQL](https://www.postgresql.org/ docs/current/warm-standby.html#STREAMING-REPLICATION).
+- For troubleshooting replica lagging issues, see the [Patroni](https://patroni.readthedocs.io/en/latest/replication_modes.html) and [PostgreSQL](https://www.postgresql.org/docs/current/warm-standby.html#STREAMING-REPLICATION).

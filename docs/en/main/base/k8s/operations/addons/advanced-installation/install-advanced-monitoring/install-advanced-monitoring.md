@@ -32,7 +32,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       - application name;
       - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing-the-addon-setup-code-during-installation).
+      - [addon settings code](#editing_the_addon_setup_code_during_installation).
 
         <warn>
 
@@ -93,8 +93,8 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. If necessary [change the Prometheus disk size](#changing-the-prometheus-disk-size).
-1. If necessary [get the password for Grafana from the Kubernetes secret](#getting-the-password-for-grafana-from-the-kubernetes-secret).
+1. If necessary [change the Prometheus disk size](#changing_the_prometheus_disk_size).
+1. If necessary [get the password for Grafana from the Kubernetes secret](#getting_the_password_for_grafana_from_the_kubernetes_secret).
 
 </tabpanel>
 <tabpanel>
@@ -144,7 +144,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       - application name;
       - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing-the-addon-setup-code-during-installation).
+      - [addon settings code](#editing_the_addon_setup_code_during_installation).
 
    1. Set the necessary tolerations and nodeSelector in the addon setup code:
 
@@ -210,8 +210,8 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. If necessary [change the Prometheus disk size](#changing-the-prometheus-disk-size).
-1. If necessary [get the password for Grafana from the Kubernetes secret](#getting-the-password-for-grafana-from-the-kubernetes-secret).
+1. If necessary [change the Prometheus disk size](#changing_the_prometheus_disk_size).
+1. If necessary [get the password for Grafana from the Kubernetes secret](#getting_the_password_for_grafana_from_the_kubernetes_secret).
 
 </tabpanel>
 <tabpanel>
@@ -220,7 +220,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 A quick installation will create a Kubernetes secret containing a permanent password to log in to the Grafana web interface.
 
-To [specify a temporary password](#setting-a-temporary-password-for-the-grafana-web-interface) instead of a permanent one, perform **a standard installation** or **installation on dedicated worker nodes**.
+To [specify a temporary password](#setting_a_temporary_password_for_the_grafana_web_interface_72c82a8d) instead of a permanent one, perform **a standard installation** or **installation on dedicated worker nodes**.
 
 </info>
 
@@ -257,8 +257,8 @@ To [specify a temporary password](#setting-a-temporary-password-for-the-grafana-
    </tabpanel>
    </tabs>
 
-1. If necessary [change the Prometheus disk size](#changing-the-prometheus-disk-size).
-1. [Get the password for Grafana from the Kubernetes secret](#getting-the-password-for-grafana-from-the-kubernetes-secret).
+1. If necessary [change the Prometheus disk size](#changing_the_prometheus_disk_size).
+1. [Get the password for Grafana from the Kubernetes secret](#getting_the_password_for_grafana_from_the_kubernetes_secret).
 
 </tabpanel>
 </tabs>
@@ -283,11 +283,11 @@ grafana:
   adminPassword: "<temporary user password>"
 ```
 
-After editing the addon code [continue installing the addon](#installing-the-addon).
+After editing the addon code [continue installing the addon](#installing_the_addon).
 
 ## Changing the Prometheus disk size
 
-This operation is [available](#installing-the-addon) if the monitoring addon `kube-prometheus-stack` is installed in the cluster.
+This operation is [available](#installing_the_addon) if the monitoring addon `kube-prometheus-stack` is installed in the cluster.
 
 The Prometheus disk stores cluster monitoring data. If there is not enough space for them, or you want to increase the performance of the Prometheus disk, increase the disk size.
 
