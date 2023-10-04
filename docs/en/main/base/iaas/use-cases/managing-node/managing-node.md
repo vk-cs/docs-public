@@ -33,10 +33,16 @@ To define the rules for distributing server groups, specify the group in the ins
     ​openstack server group create <name of the server group> --policy <policy name>
     ```
 
+1. Create bootable disks for future VMs. Example for three disks:
+
+   ```bash
+   for i in 1 2 3;do openstack volume create --size 10 --image 98af6254-XXXX-XXXX-XXXX-81858ce9302a --availability-zone MS1 --bootable root-volume-$i;done
+   ```
+
 1. Create the necessary virtual machines specifying the server group. Example for three VMs:
 
     ```bash
-    for i in 1 2 3;do openstack --insecure server create --image <image ID> --flavor Basic-1-1 --hint group=<politic group ID> --nic net-id=<network ID> vm-affinity-$i;done
+    for i in 1 2 3;do openstack --insecure server create --flavor Basic-1-1 --volume root-volume-$i --hint group=<politic group ID> --nic net-id=<network ID> vm-affinity-$i;done
     ```
 
 1. Wait for the VM creation to finish. Make sure that the deployed VMs have been successfully created and are in the status `ACTIVE`.
