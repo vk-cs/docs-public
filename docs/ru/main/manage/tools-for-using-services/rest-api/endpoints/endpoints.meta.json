@@ -1,18 +1,18 @@
 {
-  "title": "Эндпоинты API",
-  "pageDescription": "Список эндпоинтов VK Cloud API для текущего региона.",
-  "shortDescription": "Список эндпоинтов VK Cloud API для текущего региона",
-  "metaTitle": "Эндпоинты API",
-  "metaDescription": "Список эндпоинтов VK Cloud API для текущего региона",
-  "sectionTitle": "Эндпоинты API",
-  "markdown": "Список эндпоинтов VK Cloud API для текущего региона.",
-  "icon": "",
-  "weight": 3,
-  "infobarItems": null,
-  "additionalUuids": [
-    "ac5e4ffc-e19b-43c9-8654-105e1205aae7"
-  ],
-  "uuid": "8cfb317b-616e-44b7-bec4-18b09236c047",
-  "createdAt": "2023-06-22T08:46:22.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Эндпоинты API",
+    "pageDescription": "Список эндпоинтов VK Cloud API для текущего региона.",
+    "shortDescription": "Список эндпоинтов VK Cloud API для текущего региона",
+    "metaTitle": "Эндпоинты API",
+    "metaDescription": "Список эндпоинтов VK Cloud API для текущего региона",
+    "sectionTitle": "Эндпоинты API",
+    "markdown": "Список эндпоинтов VK Cloud API для текущего региона.",
+    "icon": "",
+    "weight": 3,
+    "infobarItems": null,
+    "additionalUuids": [
+        "ac5e4ffc-e19b-43c9-8654-105e1205aae7"
+    ],
+    "uuid": "8cfb317b-616e-44b7-bec4-18b09236c047",
+    "createdAt": "2023-06-22T08:46:22.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

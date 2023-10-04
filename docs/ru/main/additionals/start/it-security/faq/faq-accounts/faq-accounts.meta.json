@@ -1,14 +1,14 @@
 {
-  "title": "Аккаунты",
-  "pageDescription": "Вопросы про аккаунты.",
-  "shortDescription": "",
-  "metaTitle": "Аккаунты",
-  "metaDescription": "Вопросы и ответы по информационной безопасности VK Cloud: аккаунты.",
-  "sectionTitle": "Аккаунты",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "createdAt": "2023-09-22T11:28:40.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z",
-  "uuid": "cf123175-2b56-437c-af7b-76b0bbef63e0"
+    "title": "Аккаунты",
+    "pageDescription": "Вопросы про аккаунты.",
+    "shortDescription": "",
+    "metaTitle": "Аккаунты",
+    "metaDescription": "Вопросы и ответы по информационной безопасности VK Cloud: аккаунты.",
+    "sectionTitle": "Аккаунты",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "createdAt": "2023-09-22T11:28:40.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z",
+    "uuid": "cf123175-2b56-437c-af7b-76b0bbef63e0"
 }

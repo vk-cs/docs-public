@@ -1,18 +1,18 @@
 {
-  "title": "API endpoints",
-  "pageDescription": "List of VK Cloud API endpoints for the current region.",
-  "shortDescription": "List of VK Cloud API endpoints for the current region",
-  "metaTitle": "API endpoints",
-  "metaDescription": "List of VK Cloud API endpoints for the current region",
-  "sectionTitle": "API endpoints",
-  "markdown": "List of VK Cloud API endpoints for the current region.",
-  "icon": "",
-  "weight": 3,
-  "infobarItems": null,
-  "additionalUuids": [
-    "bd6955a8-8c76-45b7-a140-0503d8288a13"
-  ],
-  "uuid": "9e50195c-7ba1-4e88-9536-caa872a52df9",
-  "createdAt": "2023-06-27T09:37:12.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "API endpoints",
+    "pageDescription": "List of VK Cloud API endpoints for the current region.",
+    "shortDescription": "List of VK Cloud API endpoints for the current region",
+    "metaTitle": "API endpoints",
+    "metaDescription": "List of VK Cloud API endpoints for the current region",
+    "sectionTitle": "API endpoints",
+    "markdown": "List of VK Cloud API endpoints for the current region.",
+    "icon": "",
+    "weight": 3,
+    "infobarItems": null,
+    "additionalUuids": [
+        "bd6955a8-8c76-45b7-a140-0503d8288a13"
+    ],
+    "uuid": "9e50195c-7ba1-4e88-9536-caa872a52df9",
+    "createdAt": "2023-06-27T09:37:12.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

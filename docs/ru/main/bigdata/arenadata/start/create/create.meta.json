@@ -1,15 +1,15 @@
 {
-  "title": "Создание кластера",
-  "pageDescription": "Создание кластера ADH",
-  "shortDescription": "Описание процедуры создания кластера",
-  "metaTitle": "Создание кластера ADH",
-  "metaDescription": "Создание кластера ADH",
-  "sectionTitle": "Создание кластера ADH",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "8be77a37-c189-4df7-bbd4-6550f8ffa34d",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Создание кластера",
+    "pageDescription": "Создание кластера ADH",
+    "shortDescription": "Описание процедуры создания кластера",
+    "metaTitle": "Создание кластера ADH",
+    "metaDescription": "Создание кластера ADH",
+    "sectionTitle": "Создание кластера ADH",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "8be77a37-c189-4df7-bbd4-6550f8ffa34d",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

@@ -1,17 +1,17 @@
 {
-  "title": "Scaling the cluster",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Scaling the cluster",
-  "metaDescription": "Vertical and horizontal scaling of VK Cloud cluster nodes.",
-  "sectionTitle": "Scaling the cluster",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "uuid": "31907aa6-1167-4915-88ce-ce6ad7149698",
-  "additionalUuids": [
-    "30329517-fedd-450a-afd9-63b68214f988"
-  ],
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Scaling the cluster",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Scaling the cluster",
+    "metaDescription": "Vertical and horizontal scaling of VK Cloud cluster nodes.",
+    "sectionTitle": "Scaling the cluster",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "uuid": "31907aa6-1167-4915-88ce-ce6ad7149698",
+    "additionalUuids": [
+        "30329517-fedd-450a-afd9-63b68214f988"
+    ],
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

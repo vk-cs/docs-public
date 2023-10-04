@@ -1,15 +1,15 @@
 {
-  "title": "Resource limiting",
-  "pageDescription": "How to control the use of computing resources by containers that are part of pods and workloads.",
-  "shortDescription": "How to control the use of computing resources by containers.",
-  "metaTitle": "Resource limiting",
-  "metaDescription": "",
-  "sectionTitle": "Resource limiting",
-  "markdown": "How to control the use of computing resources by containers that are part of pods and workloads.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "479cf863-74f7-4abf-bd1a-b91bab0b111d",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Resource limiting",
+    "pageDescription": "How to control the use of computing resources by containers that are part of pods and workloads.",
+    "shortDescription": "How to control the use of computing resources by containers.",
+    "metaTitle": "Resource limiting",
+    "metaDescription": "",
+    "sectionTitle": "Resource limiting",
+    "markdown": "How to control the use of computing resources by containers that are part of pods and workloads.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "479cf863-74f7-4abf-bd1a-b91bab0b111d",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

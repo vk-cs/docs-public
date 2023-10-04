@@ -1,15 +1,15 @@
 {
-  "title": "Private DNS",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Private DNS",
-  "metaDescription": "Private DNS in VK Cloud is a functionality of a DNS server that operates in project networks and allows accessing instances by DNS names. The service supports c",
-  "sectionTitle": "Private DNS",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "ee5db9e5-1514-49f8-941e-b803b57b6b89",
-  "createdAt": "2023-03-17T04:38:48.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Private DNS",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Private DNS",
+    "metaDescription": "Private DNS in VK Cloud is a functionality of a DNS server that operates in project networks and allows accessing instances by DNS names. The service supports c",
+    "sectionTitle": "Private DNS",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "ee5db9e5-1514-49f8-941e-b803b57b6b89",
+    "createdAt": "2023-03-17T04:38:48.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

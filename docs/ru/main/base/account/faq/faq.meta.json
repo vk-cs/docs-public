@@ -1,15 +1,15 @@
 {
-  "title": "Вопросы и ответы",
-  "pageDescription": "Ответы на часто задаваемые вопросы по личному кабинету VK Cloud.",
-  "shortDescription": "Ответы на часто задаваемые вопросы по работе в личном кабинете VK Cloud",
-  "metaTitle": "Вопросы и ответы",
-  "metaDescription": "Ответы на часто задаваемые вопросы по личному кабинету VK Cloud.",
-  "sectionTitle": "Вопросы и ответы",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 7,
-  "uuid": "04ce27e6-83da-437c-aa4a-7e5ad20c6f9b",
-  "createdAt": "2022-12-23T10:06:30.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Вопросы и ответы",
+    "pageDescription": "Ответы на часто задаваемые вопросы по личному кабинету VK Cloud.",
+    "shortDescription": "Ответы на часто задаваемые вопросы по работе в личном кабинете VK Cloud",
+    "metaTitle": "Вопросы и ответы",
+    "metaDescription": "Ответы на часто задаваемые вопросы по личному кабинету VK Cloud.",
+    "sectionTitle": "Вопросы и ответы",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 7,
+    "uuid": "04ce27e6-83da-437c-aa4a-7e5ad20c6f9b",
+    "createdAt": "2022-12-23T10:06:30.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

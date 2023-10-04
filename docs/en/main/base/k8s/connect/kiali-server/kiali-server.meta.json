@@ -1,15 +1,15 @@
 {
-  "title": "Connecting to Kiali",
-  "pageDescription": "If the Kiali addon is installed in the Kubernetes cluster, you can connect to the Kiali using the procedure described here.",
-  "shortDescription": "How to connect to the Kiali",
-  "metaTitle": "Connecting to Kiali",
-  "metaDescription": "VK Cloud containers: connecting to Kiali",
-  "sectionTitle": "Connecting to Kiali",
-  "markdown": "If the Kiali addon is installed in the Kubernetes cluster, you can connect to the Kiali using the procedure described here.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "134eb80d-6ee7-4b57-ad87-4d00080c521e",
-  "createdAt": "2023-07-07T09:58:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Connecting to Kiali",
+    "pageDescription": "If the Kiali addon is installed in the Kubernetes cluster, you can connect to the Kiali using the procedure described here.",
+    "shortDescription": "How to connect to the Kiali",
+    "metaTitle": "Connecting to Kiali",
+    "metaDescription": "VK Cloud containers: connecting to Kiali",
+    "sectionTitle": "Connecting to Kiali",
+    "markdown": "If the Kiali addon is installed in the Kubernetes cluster, you can connect to the Kiali using the procedure described here.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "134eb80d-6ee7-4b57-ad87-4d00080c521e",
+    "createdAt": "2023-07-07T09:58:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

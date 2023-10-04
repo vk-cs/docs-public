@@ -1,15 +1,15 @@
 {
-  "title": "VPN",
-  "pageDescription": "How to use VPN to establish a secure tunnel to VK Cloud private network.",
-  "shortDescription": "How to organize a secure tunnel to VK Cloud private network",
-  "metaTitle": "VPN",
-  "metaDescription": "",
-  "sectionTitle": "VPN",
-  "markdown": "How to use VPN to establish a secure tunnel to VK Cloud private network.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 6,
-  "uuid": "69c143c1-559c-4eb5-b82d-4a6261f4adf8",
-  "createdAt": "2023-03-17T04:38:48.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "VPN",
+    "pageDescription": "How to use VPN to establish a secure tunnel to VK Cloud private network.",
+    "shortDescription": "How to organize a secure tunnel to VK Cloud private network",
+    "metaTitle": "VPN",
+    "metaDescription": "",
+    "sectionTitle": "VPN",
+    "markdown": "How to use VPN to establish a secure tunnel to VK Cloud private network.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 6,
+    "uuid": "69c143c1-559c-4eb5-b82d-4a6261f4adf8",
+    "createdAt": "2023-03-17T04:38:48.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

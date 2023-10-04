@@ -1,14 +1,14 @@
 {
-  "title": "Загрузка контента в CDN",
-  "pageDescription": "Загрузка контента в CDN через личный кабинет VK Cloud.",
-  "shortDescription": "Как через личный кабинет загрузить контент в CDN",
-  "metaTitle": "Загрузка контента в CDN",
-  "metaDescription": "CDN VK Cloud: загрузка контента в CDN через личный кабинет.",
-  "sectionTitle": "Загрузка контента в CDN",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "createdAt": "2023-09-07T06:58:50.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z",
-  "uuid": "2a95e84d-88b0-4166-8c46-b1ff2528edbb"
+    "title": "Загрузка контента в CDN",
+    "pageDescription": "Загрузка контента в CDN через личный кабинет VK Cloud.",
+    "shortDescription": "Как через личный кабинет загрузить контент в CDN",
+    "metaTitle": "Загрузка контента в CDN",
+    "metaDescription": "CDN VK Cloud: загрузка контента в CDN через личный кабинет.",
+    "sectionTitle": "Загрузка контента в CDN",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "createdAt": "2023-09-07T06:58:50.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z",
+    "uuid": "2a95e84d-88b0-4166-8c46-b1ff2528edbb"
 }

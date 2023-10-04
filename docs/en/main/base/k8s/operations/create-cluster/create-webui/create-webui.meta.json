@@ -1,15 +1,15 @@
 {
-  "title": "Creating a cluster from personal account",
-  "pageDescription": "How to create a cluster from VK Cloud personal account.",
-  "shortDescription": "How to create a cluster from personal account",
-  "metaTitle": "Creating a cluster from personal account",
-  "metaDescription": "",
-  "sectionTitle": "Creating a cluster from personal account",
-  "markdown": "How to create a cluster from VK Cloud personal account.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "43cacb8f-b9de-4108-9011-85e2bc24335b",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Creating a cluster from personal account",
+    "pageDescription": "How to create a cluster from VK Cloud personal account.",
+    "shortDescription": "How to create a cluster from personal account",
+    "metaTitle": "Creating a cluster from personal account",
+    "metaDescription": "",
+    "sectionTitle": "Creating a cluster from personal account",
+    "markdown": "How to create a cluster from VK Cloud personal account.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "43cacb8f-b9de-4108-9011-85e2bc24335b",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

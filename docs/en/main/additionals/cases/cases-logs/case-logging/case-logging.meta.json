@@ -1,15 +1,15 @@
 {
-  "title": "Installing and configuring ELK, collecting, analyzing and visualizing logs",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Install and configure ELK, collect, analyze and visualize logs",
-  "metaDescription": "Hardware Configuration To run this scenario, you need an ELK server installed and configured on Ubuntu 18.04 LTS x86_64. Warning\nRev",
-  "sectionTitle": "Installing and configuring ELK, collecting, analyzing and visualizing logs",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "1b73b6f0-c36e-42a8-a2be-d5c0803402b2",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Installing and configuring ELK, collecting, analyzing and visualizing logs",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Install and configure ELK, collect, analyze and visualize logs",
+    "metaDescription": "Hardware Configuration To run this scenario, you need an ELK server installed and configured on Ubuntu 18.04 LTS x86_64. Warning\nRev",
+    "sectionTitle": "Installing and configuring ELK, collecting, analyzing and visualizing logs",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "1b73b6f0-c36e-42a8-a2be-d5c0803402b2",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

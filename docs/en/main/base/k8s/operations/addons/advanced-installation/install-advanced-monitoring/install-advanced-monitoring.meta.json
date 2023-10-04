@@ -1,15 +1,15 @@
 {
-  "title": "Kube Prometheus Stack",
-  "pageDescription": "It describes the configuration and installation of an addon with monitoring tools.",
-  "shortDescription": "",
-  "metaTitle": "Kube Prometheus Stack",
-  "metaDescription": "Configuring and installing an addon with monitoring tools",
-  "sectionTitle": "Kube Prometheus Stack",
-  "markdown": "It describes the configuration and installation of an addon with monitoring tools.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "28fa4aa2-45fb-4d94-b6f2-aa1d1d556b4e",
-  "createdAt": "2023-06-13T06:58:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Kube Prometheus Stack",
+    "pageDescription": "It describes the configuration and installation of an addon with monitoring tools.",
+    "shortDescription": "",
+    "metaTitle": "Kube Prometheus Stack",
+    "metaDescription": "Configuring and installing an addon with monitoring tools",
+    "sectionTitle": "Kube Prometheus Stack",
+    "markdown": "It describes the configuration and installation of an addon with monitoring tools.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "28fa4aa2-45fb-4d94-b6f2-aa1d1d556b4e",
+    "createdAt": "2023-06-13T06:58:16.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

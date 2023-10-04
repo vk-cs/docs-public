@@ -1,15 +1,15 @@
 {
-  "title": "RemovePermission",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "RemovePermission",
-  "metaDescription": "Cancels all permissions in the queue policy corresponding to the specified Label parameter. Request parameters label Identification of deletion permission. This",
-  "sectionTitle": "RemovePermission",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 16,
-  "uuid": "ded4ef77-9b01-4798-b3d3-f90c91127b0d",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "RemovePermission",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "RemovePermission",
+    "metaDescription": "Cancels all permissions in the queue policy corresponding to the specified Label parameter. Request parameters label Identification of deletion permission. This",
+    "sectionTitle": "RemovePermission",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 16,
+    "uuid": "ded4ef77-9b01-4798-b3d3-f90c91127b0d",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

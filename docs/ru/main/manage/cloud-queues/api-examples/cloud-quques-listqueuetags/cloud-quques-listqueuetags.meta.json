@@ -1,15 +1,15 @@
 {
-  "title": "ListQueueTags",
-  "pageDescription": "Примеры запроса и ответа для метода ListQueueTags.",
-  "shortDescription": "",
-  "metaTitle": "ListQueueTags",
-  "metaDescription": "Список всех тегов распределения затрат, добавленных в указанную очередь Amazon SQS. Примеры запроса и ответа для метода ListQueueTags.",
-  "sectionTitle": "ListQueueTags",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 13,
-  "uuid": "2948cc65-1eae-4a52-9aa0-63f4e0449f06",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "ListQueueTags",
+    "pageDescription": "Примеры запроса и ответа для метода ListQueueTags.",
+    "shortDescription": "",
+    "metaTitle": "ListQueueTags",
+    "metaDescription": "Список всех тегов распределения затрат, добавленных в указанную очередь Amazon SQS. Примеры запроса и ответа для метода ListQueueTags.",
+    "sectionTitle": "ListQueueTags",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 13,
+    "uuid": "2948cc65-1eae-4a52-9aa0-63f4e0449f06",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

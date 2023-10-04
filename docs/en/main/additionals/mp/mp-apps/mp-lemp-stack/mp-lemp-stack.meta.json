@@ -1,15 +1,15 @@
 {
-  "title": "LEMP stack",
-  "pageDescription": "LEMP is a stack of technologies similar to LAMP, where an Nginx server is used instead of Apache.",
-  "shortDescription": "LEMP is a stack of technologies similar to LAMP, where an Nginx server is used instead of Apache",
-  "metaTitle": "LEMP stack",
-  "metaDescription": "LEMP is a stack of technologies similar to LAMP, where an Nginx server is used instead of Apache",
-  "sectionTitle": "LEMP stack",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "7eaa7dfd-02e0-4522-82dc-56c442a765c6",
-  "createdAt": "2023-06-05T11:17:25.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "LEMP stack",
+    "pageDescription": "LEMP is a stack of technologies similar to LAMP, where an Nginx server is used instead of Apache.",
+    "shortDescription": "LEMP is a stack of technologies similar to LAMP, where an Nginx server is used instead of Apache",
+    "metaTitle": "LEMP stack",
+    "metaDescription": "LEMP is a stack of technologies similar to LAMP, where an Nginx server is used instead of Apache",
+    "sectionTitle": "LEMP stack",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "7eaa7dfd-02e0-4522-82dc-56c442a765c6",
+    "createdAt": "2023-06-05T11:17:25.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

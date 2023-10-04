@@ -1,19 +1,19 @@
 {
-  "title": "Users management",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Users management",
-  "metaDescription": "",
-  "sectionTitle": "Users management",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "additionalUuids": [
-    "c6b88de7-4d48-4fff-9ab3-ded191130fc9",
-    "2ce4c8c6-ac3c-4c55-a594-777796756ce4"
-  ],
-  "uuid": "a0a3d85d-1d1b-41b7-90bb-59019b6910a7",
-  "createdAt": "2023-05-05T09:02:32.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Users management",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Users management",
+    "metaDescription": "",
+    "sectionTitle": "Users management",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "additionalUuids": [
+        "c6b88de7-4d48-4fff-9ab3-ded191130fc9",
+        "2ce4c8c6-ac3c-4c55-a594-777796756ce4"
+    ],
+    "uuid": "a0a3d85d-1d1b-41b7-90bb-59019b6910a7",
+    "createdAt": "2023-05-05T09:02:32.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

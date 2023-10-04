@@ -1,15 +1,15 @@
 {
-  "title": "Поддержка HTTP/2",
-  "pageDescription": "Обзор особенностей поддержки HTTP/2.",
-  "shortDescription": "Обзор особенностей поддержки HTTP/2",
-  "metaTitle": "Поддержка HTTP/2",
-  "metaDescription": "CDN VK Cloud: обзор особенностей поддержки HTTP/2.",
-  "sectionTitle": "Поддержка HTTP/2",
-  "markdown": "Обзор особенностей поддержки HTTP/2.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "831ddf79-cc0e-4ebf-9e20-42079890ed9d",
-  "createdAt": "2023-07-05T11:04:29.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Поддержка HTTP/2",
+    "pageDescription": "Обзор особенностей поддержки HTTP/2.",
+    "shortDescription": "Обзор особенностей поддержки HTTP/2",
+    "metaTitle": "Поддержка HTTP/2",
+    "metaDescription": "CDN VK Cloud: обзор особенностей поддержки HTTP/2.",
+    "sectionTitle": "Поддержка HTTP/2",
+    "markdown": "Обзор особенностей поддержки HTTP/2.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "831ddf79-cc0e-4ebf-9e20-42079890ed9d",
+    "createdAt": "2023-07-05T11:04:29.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

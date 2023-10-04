@@ -1,15 +1,15 @@
 {
-  "title": "Connect to service",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Connect to service",
-  "metaDescription": "To activate the 1C: GRM service, you must have a registered account and an active project. If necessary, you should confirm the account and activate the ph",
-  "sectionTitle": "Connect to service",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "2303fdfd-1ff3-4c0b-9b2f-4a801f1c35c7",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Connect to service",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Connect to service",
+    "metaDescription": "To activate the 1C: GRM service, you must have a registered account and an active project. If necessary, you should confirm the account and activate the ph",
+    "sectionTitle": "Connect to service",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "2303fdfd-1ff3-4c0b-9b2f-4a801f1c35c7",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

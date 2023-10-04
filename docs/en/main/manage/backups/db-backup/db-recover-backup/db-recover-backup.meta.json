@@ -1,14 +1,14 @@
 {
-  "title": "Restoring from backup",
-  "pageDescription": "Restoring from backup",
-  "shortDescription": "Restore a DB instance from a backup",
-  "metaTitle": "Restoring from backup",
-  "metaDescription": "Steps to restore a DB instance from a backup",
-  "sectionTitle": "Restoring from backup",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "uuid": "d133f96e-8893-4fd2-bb57-e445a1a37b01",
-  "createdAt": "2023-05-22T15:07:55.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Restoring from backup",
+    "pageDescription": "Restoring from backup",
+    "shortDescription": "Restore a DB instance from a backup",
+    "metaTitle": "Restoring from backup",
+    "metaDescription": "Steps to restore a DB instance from a backup",
+    "sectionTitle": "Restoring from backup",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "uuid": "d133f96e-8893-4fd2-bb57-e445a1a37b01",
+    "createdAt": "2023-05-22T15:07:55.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

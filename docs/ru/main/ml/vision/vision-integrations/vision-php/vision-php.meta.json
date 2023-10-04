@@ -1,15 +1,15 @@
 {
-  "title": "Пример интеграции на PHP",
-  "pageDescription": "",
-  "shortDescription": "Запрос на распознавание на PHP",
-  "metaTitle": "Пример интеграции на PHP",
-  "metaDescription": "Подробный пример смотрите в статье «Пример интеграции на Python». В этой статье мы выполним запросы persons/recognize, persons/set и persons/delete. Для эт",
-  "sectionTitle": "Пример интеграции на PHP",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "551b7ce9-707d-498c-9438-9aedeb27009e",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Пример интеграции на PHP",
+    "pageDescription": "",
+    "shortDescription": "Запрос на распознавание на PHP",
+    "metaTitle": "Пример интеграции на PHP",
+    "metaDescription": "Подробный пример смотрите в статье «Пример интеграции на Python». В этой статье мы выполним запросы persons/recognize, persons/set и persons/delete. Для эт",
+    "sectionTitle": "Пример интеграции на PHP",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "551b7ce9-707d-498c-9438-9aedeb27009e",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

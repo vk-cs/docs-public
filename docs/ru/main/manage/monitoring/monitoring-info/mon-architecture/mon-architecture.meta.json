@@ -1,15 +1,15 @@
 {
-  "title": "Архитектура",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Архитектура",
-  "metaDescription": "Концепции Сервис мониторинга VK Cloud состоит из нескольких частей: Масштабируемый API по приему метрик\nРаспределенное хранилище метрик\nМасштабируемый API по чт",
-  "sectionTitle": "Архитектура",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "59e2c434-13b0-4d10-9fd1-7c1a922dbe00",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Архитектура",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Архитектура",
+    "metaDescription": "Концепции Сервис мониторинга VK Cloud состоит из нескольких частей: Масштабируемый API по приему метрик\nРаспределенное хранилище метрик\nМасштабируемый API по чт",
+    "sectionTitle": "Архитектура",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "59e2c434-13b0-4d10-9fd1-7c1a922dbe00",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

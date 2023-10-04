@@ -1,14 +1,14 @@
 {
-  "title": "CORS",
-  "pageDescription": "Scenarios using and creation of the CORS Rules",
-  "shortDescription": "Scenarios using and creation of the CORS Rules",
-  "metaTitle": "CORS",
-  "metaDescription": "",
-  "sectionTitle": "CORS",
-  "markdown": "Scenarios using and creation of the CORS Rules",
-  "icon": "",
-  "infobarItems": null,
-  "uuid": "e99900d8-2e5c-487b-9c53-73d9e5e2c7ad",
-  "createdAt": "2023-04-04T08:48:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "CORS",
+    "pageDescription": "Scenarios using and creation of the CORS Rules",
+    "shortDescription": "Scenarios using and creation of the CORS Rules",
+    "metaTitle": "CORS",
+    "metaDescription": "",
+    "sectionTitle": "CORS",
+    "markdown": "Scenarios using and creation of the CORS Rules",
+    "icon": "",
+    "infobarItems": null,
+    "uuid": "e99900d8-2e5c-487b-9c53-73d9e5e2c7ad",
+    "createdAt": "2023-04-04T08:48:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,20 +1,20 @@
 {
-  "title": "Managing key pairs",
-  "pageDescription": "Available operations with SSH keys on the VK Cloud platform.",
-  "shortDescription": "Available operations with SSH keys on the platform",
-  "metaTitle": "Managing key pairs",
-  "metaDescription": "Available operations with SSH keys on the VK Cloud platform.",
-  "sectionTitle": "Managing key pairs",
-  "icon": "",
-  "weight": 3,
-  "infobarItems": null,
-  "additionalUuids": [
-    "3f879362-d6d1-4d2f-8421-5c5a283d9747",
-    "b1c50aab-d315-4694-8b89-82824c520778",
-    "2e77b8a2-59b2-4048-ac6b-5b74cea1ad53",
-    "0f58395e-0dfb-4dc8-976a-69b253e15497"
-  ],
-  "uuid": "03eb6789-2dac-4d45-b4ed-cd769e480880",
-  "createdAt": "2023-04-13T13:49:17.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Managing key pairs",
+    "pageDescription": "Available operations with SSH keys on the VK Cloud platform.",
+    "shortDescription": "Available operations with SSH keys on the platform",
+    "metaTitle": "Managing key pairs",
+    "metaDescription": "Available operations with SSH keys on the VK Cloud platform.",
+    "sectionTitle": "Managing key pairs",
+    "icon": "",
+    "weight": 3,
+    "infobarItems": null,
+    "additionalUuids": [
+        "3f879362-d6d1-4d2f-8421-5c5a283d9747",
+        "b1c50aab-d315-4694-8b89-82824c520778",
+        "2e77b8a2-59b2-4048-ac6b-5b74cea1ad53",
+        "0f58395e-0dfb-4dc8-976a-69b253e15497"
+    ],
+    "uuid": "03eb6789-2dac-4d45-b4ed-cd769e480880",
+    "createdAt": "2023-04-13T13:49:17.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

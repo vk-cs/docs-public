@@ -1,18 +1,18 @@
 {
-  "title": "Репликации",
-  "pageDescription": "Управление масштабированием баз данных при помощи создания реплик позволяет добиться равномерного распределения нагрузки.",
-  "shortDescription": "Добавление реплики БД",
-  "metaTitle": "Репликации",
-  "metaDescription": "Добавление реплики БД",
-  "sectionTitle": "Репликации",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "additionalUuids": [
-    "8acf0e6d-6c56-494a-8e8f-6b689283fce9",
-    "7f73cea5-4dd2-4a2e-b643-a8441c334880"
-  ],
-  "uuid": "6e3c6a3d-944e-4fa2-a7d4-ee426529fb61",
-  "createdAt": "2023-05-22T15:07:55.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Репликации",
+    "pageDescription": "Управление масштабированием баз данных при помощи создания реплик позволяет добиться равномерного распределения нагрузки.",
+    "shortDescription": "Добавление реплики БД",
+    "metaTitle": "Репликации",
+    "metaDescription": "Добавление реплики БД",
+    "sectionTitle": "Репликации",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "additionalUuids": [
+        "8acf0e6d-6c56-494a-8e8f-6b689283fce9",
+        "7f73cea5-4dd2-4a2e-b643-a8441c334880"
+    ],
+    "uuid": "6e3c6a3d-944e-4fa2-a7d4-ee426529fb61",
+    "createdAt": "2023-05-22T15:07:55.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

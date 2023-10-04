@@ -1,14 +1,14 @@
 {
-  "title": "Connecting the network to the VM",
-  "sectionTitle": "Connecting the network to the VM",
-  "metaTitle": "Connecting the network to the VM",
-  "pageDescription": "Connecting the network to the VM.",
-  "shortDescription": "How to create a port and connect a network to a virtual machine",
-  "metaDescription": "Connecting the network to the VM",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "be312143-10d6-4d7a-88c9-f5414a131e07",
-  "createdAt": "2023-04-24T13:06:27.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Connecting the network to the VM",
+    "sectionTitle": "Connecting the network to the VM",
+    "metaTitle": "Connecting the network to the VM",
+    "pageDescription": "Connecting the network to the VM.",
+    "shortDescription": "How to create a port and connect a network to a virtual machine",
+    "metaDescription": "Connecting the network to the VM",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "be312143-10d6-4d7a-88c9-f5414a131e07",
+    "createdAt": "2023-04-24T13:06:27.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

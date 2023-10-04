@@ -1,15 +1,15 @@
 {
-  "title": "Создание канала уведомления",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Создание канала уведомления",
-  "metaDescription": "",
-  "sectionTitle": "Создание канала уведомления",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "77d665f1-825b-4bff-91b8-a76972513332",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Создание канала уведомления",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Создание канала уведомления",
+    "metaDescription": "",
+    "sectionTitle": "Создание канала уведомления",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "77d665f1-825b-4bff-91b8-a76972513332",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

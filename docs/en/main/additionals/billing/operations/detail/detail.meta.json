@@ -1,14 +1,14 @@
 {
-  "title": "Detailing expenses",
-  "pageDescription": "Viewing statistics of resource consumption and balance changes on VK Cloud projects.",
-  "shortDescription": "Statistics on resource consumption and balance changes",
-  "metaTitle": "Detailing expenses",
-  "metaDescription": "Viewing statistics of resource consumption and balance changes on VK Cloud projects.",
-  "sectionTitle": "Detailing expenses",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "507a6d31-137c-4cd1-88ec-0716d91bc7fb",
-  "createdAt": "2022-04-07T07:18:11.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Detailing expenses",
+    "pageDescription": "Viewing statistics of resource consumption and balance changes on VK Cloud projects.",
+    "shortDescription": "Statistics on resource consumption and balance changes",
+    "metaTitle": "Detailing expenses",
+    "metaDescription": "Viewing statistics of resource consumption and balance changes on VK Cloud projects.",
+    "sectionTitle": "Detailing expenses",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "507a6d31-137c-4cd1-88ec-0716d91bc7fb",
+    "createdAt": "2022-04-07T07:18:11.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Creating a JupyterHub Instance",
-  "pageDescription": "Description of how to create a JupyterHub instance.",
-  "shortDescription": "Creating a new JupyterHub instance",
-  "metaTitle": "Creating a JupyterHub instance",
-  "metaDescription": "Creating a JupyterHub instance",
-  "sectionTitle": "Creating a JupyterHub instance",
-  "markdown": "Creating a JupyterHub instance",
-  "icon": "",
-  "weight": 0,
-  "infobarItems": null,
-  "uuid": "13c22d91-b876-4e78-9bef-883c6e0ffa8b",
-  "createdAt": "2022-10-07T09:38:12.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Creating a JupyterHub Instance",
+    "pageDescription": "Description of how to create a JupyterHub instance.",
+    "shortDescription": "Creating a new JupyterHub instance",
+    "metaTitle": "Creating a JupyterHub instance",
+    "metaDescription": "Creating a JupyterHub instance",
+    "sectionTitle": "Creating a JupyterHub instance",
+    "markdown": "Creating a JupyterHub instance",
+    "icon": "",
+    "weight": 0,
+    "infobarItems": null,
+    "uuid": "13c22d91-b876-4e78-9bef-883c6e0ffa8b",
+    "createdAt": "2022-10-07T09:38:12.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

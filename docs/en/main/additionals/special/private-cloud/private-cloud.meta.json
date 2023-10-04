@@ -1,15 +1,15 @@
 {
-  "title": "Private cloud",
-  "pageDescription": "Private cloud integrates all VK Cloud cloud services powered by Openstack products. Also referred to as an internal or enterprise cloud, a private cloud provides companies with many of the benefits of a public cloud, including self-service, scalability, and elasticity, as well as additional control and customization of the hosted on-premises computing infrastructure available from dedicated resources. In addition, private clouds provide a high level of security and privacy through the use of company firewalls and internal hosting, which prevents third-party providers from accessing operations and sensitive data.",
-  "shortDescription": "Private cloud integrates all VK Cloud cloud services powered by Openstack products. Also referred to as an internal or enterprise cloud, a private cloud provides companies with many of the benefits of a public cloud, including self-service, scalability, and elasticity, as well as additional control and customization of the hosted on-premises computing infrastructure available from dedicated resources. In addition, private clouds provide a high level of security and privacy through the use of company firewalls and internal hosting, which prevents third-party providers from accessing operations and sensitive data.",
-  "metaTitle": "Private cloud",
-  "metaDescription": "Private cloud integrates all VK Cloud cloud services powered by Openstack products. Also referred to as an internal or enterprise cloud, a private cloud provide",
-  "sectionTitle": "Private cloud",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "125aa37a-8daf-40fe-a862-4b4a0dd6052b",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Private cloud",
+    "pageDescription": "Private cloud integrates all VK Cloud cloud services powered by Openstack products. Also referred to as an internal or enterprise cloud, a private cloud provides companies with many of the benefits of a public cloud, including self-service, scalability, and elasticity, as well as additional control and customization of the hosted on-premises computing infrastructure available from dedicated resources. In addition, private clouds provide a high level of security and privacy through the use of company firewalls and internal hosting, which prevents third-party providers from accessing operations and sensitive data.",
+    "shortDescription": "Private cloud integrates all VK Cloud cloud services powered by Openstack products. Also referred to as an internal or enterprise cloud, a private cloud provides companies with many of the benefits of a public cloud, including self-service, scalability, and elasticity, as well as additional control and customization of the hosted on-premises computing infrastructure available from dedicated resources. In addition, private clouds provide a high level of security and privacy through the use of company firewalls and internal hosting, which prevents third-party providers from accessing operations and sensitive data.",
+    "metaTitle": "Private cloud",
+    "metaDescription": "Private cloud integrates all VK Cloud cloud services powered by Openstack products. Also referred to as an internal or enterprise cloud, a private cloud provide",
+    "sectionTitle": "Private cloud",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "125aa37a-8daf-40fe-a862-4b4a0dd6052b",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

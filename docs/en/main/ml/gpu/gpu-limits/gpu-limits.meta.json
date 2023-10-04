@@ -1,15 +1,15 @@
 {
-  "title": "Limitations",
-  "pageDescription": "Technical and technological limits of the VK Cloud platform, which should be taken into account when using graphics accelerators.",
-  "shortDescription": "Technical and technological limits of the VK Cloud platform, which should be taken into account when using graphics accelerators.",
-  "metaTitle": "Limitations",
-  "metaDescription": "Technical and technological limits of the VK Cloud platform, which should be taken into account when using graphics accelerators.",
-  "sectionTitle": "Limitations",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "b6907a4d-22a9-4de1-b6a8-b29fe8d91880",
-  "createdAt": "2022-12-27T14:46:55.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Limitations",
+    "pageDescription": "Technical and technological limits of the VK Cloud platform, which should be taken into account when using graphics accelerators.",
+    "shortDescription": "Technical and technological limits of the VK Cloud platform, which should be taken into account when using graphics accelerators.",
+    "metaTitle": "Limitations",
+    "metaDescription": "Technical and technological limits of the VK Cloud platform, which should be taken into account when using graphics accelerators.",
+    "sectionTitle": "Limitations",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "b6907a4d-22a9-4de1-b6a8-b29fe8d91880",
+    "createdAt": "2022-12-27T14:46:55.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

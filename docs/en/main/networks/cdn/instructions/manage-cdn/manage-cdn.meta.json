@@ -1,15 +1,15 @@
 {
-  "title": "Managing features",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Managing features",
-  "metaDescription": "Adding a resource To add a resource, go to the",
-  "sectionTitle": "Managing features",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "2cedd8f4-8c66-463f-9e0f-bed6b59e5c0e",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Managing features",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Managing features",
+    "metaDescription": "Adding a resource To add a resource, go to the",
+    "sectionTitle": "Managing features",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "2cedd8f4-8c66-463f-9e0f-bed6b59e5c0e",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Configuring the monitoring agent for standard software",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Configuring the monitoring agent for standard software",
-  "metaDescription": "Статья расскажет о том, как настроить агент мониторинга в виртуальной машине произвольной конфигурации. Стандартные агенты мониторинга базируются на ПО аге",
-  "sectionTitle": "Configuring the monitoring agent for standard software",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "f2bfe4d3-3c27-4408-96ac-5390fd3eae4c",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Configuring the monitoring agent for standard software",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Configuring the monitoring agent for standard software",
+    "metaDescription": "Статья расскажет о том, как настроить агент мониторинга в виртуальной машине произвольной конфигурации. Стандартные агенты мониторинга базируются на ПО аге",
+    "sectionTitle": "Configuring the monitoring agent for standard software",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "f2bfe4d3-3c27-4408-96ac-5390fd3eae4c",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,14 +1,14 @@
 {
-  "title": "Connecting to a Windows VM",
-  "sectionTitle": "Connecting to a Windows VM",
-  "metaTitle": "Connecting to a Windows VM",
-  "pageDescription": "Connecting to a Windows VM.",
-  "shortDescription": "",
-  "metaDescription": "Connecting to a Windows VM",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "a6fcdab8-4551-43c3-9e2c-1e08674d6df9",
-  "createdAt": "2023-04-24T13:06:27.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Connecting to a Windows VM",
+    "sectionTitle": "Connecting to a Windows VM",
+    "metaTitle": "Connecting to a Windows VM",
+    "pageDescription": "Connecting to a Windows VM.",
+    "shortDescription": "",
+    "metaDescription": "Connecting to a Windows VM",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "a6fcdab8-4551-43c3-9e2c-1e08674d6df9",
+    "createdAt": "2023-04-24T13:06:27.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

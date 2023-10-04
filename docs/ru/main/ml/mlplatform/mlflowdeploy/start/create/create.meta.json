@@ -1,15 +1,15 @@
 {
-  "title": "Создание инстанса MLflow Deploy",
-  "pageDescription": "Описание процедуры создания инстанса MLflow Deploy.",
-  "shortDescription": "",
-  "metaTitle": "Создание инстанса MLflow Deploy",
-  "metaDescription": "Создание инстанса MLflow Deploy",
-  "sectionTitle": "Создание инстанса MLflow Deploy",
-  "markdown": "Создание инстанса MLflow Deploy",
-  "icon": "",
-  "weight": 0,
-  "infobarItems": null,
-  "uuid": "c67d6d8f-118e-41a0-81e9-7d771bd50460",
-  "createdAt": "2022-12-20T16:13:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Создание инстанса MLflow Deploy",
+    "pageDescription": "Описание процедуры создания инстанса MLflow Deploy.",
+    "shortDescription": "",
+    "metaTitle": "Создание инстанса MLflow Deploy",
+    "metaDescription": "Создание инстанса MLflow Deploy",
+    "sectionTitle": "Создание инстанса MLflow Deploy",
+    "markdown": "Создание инстанса MLflow Deploy",
+    "icon": "",
+    "weight": 0,
+    "infobarItems": null,
+    "uuid": "c67d6d8f-118e-41a0-81e9-7d771bd50460",
+    "createdAt": "2022-12-20T16:13:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

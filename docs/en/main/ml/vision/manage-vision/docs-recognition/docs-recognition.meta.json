@@ -1,15 +1,15 @@
 {
-  "title": "Document recognition",
-  "pageDescription": "",
-  "shortDescription": "Determining the fields of documents in the photo",
-  "metaTitle": "Document recognition",
-  "metaDescription": "The doc / recognize method is used to recognize document fields. This method allows you to recognize, for example, the fields of a passport in a photo. Let",
-  "sectionTitle": "Document recognition",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "e317a657-2b44-4cc2-80fb-810e2ef21ece",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Document recognition",
+    "pageDescription": "",
+    "shortDescription": "Determining the fields of documents in the photo",
+    "metaTitle": "Document recognition",
+    "metaDescription": "The doc / recognize method is used to recognize document fields. This method allows you to recognize, for example, the fields of a passport in a photo. Let",
+    "sectionTitle": "Document recognition",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "e317a657-2b44-4cc2-80fb-810e2ef21ece",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

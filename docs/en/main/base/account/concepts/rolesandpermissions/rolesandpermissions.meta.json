@@ -1,14 +1,14 @@
 {
-  "title": "Personal account roles and their permissions",
-  "pageDescription": "Role model in VK Cloud personal account.",
-  "shortDescription": "Role model in VK Cloud personal account",
-  "metaTitle": "Personal account roles and their permissions",
-  "metaDescription": "Role model in VK Cloud personal account.",
-  "sectionTitle": "Personal account roles and their permissions",
-  "icon": "",
-  "weight": 1,
-  "infobarItems": null,
-  "uuid": "4b933b3a-93fe-4cef-af82-4a42434c9923",
-  "createdAt": "2022-12-23T10:06:30.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Personal account roles and their permissions",
+    "pageDescription": "Role model in VK Cloud personal account.",
+    "shortDescription": "Role model in VK Cloud personal account",
+    "metaTitle": "Personal account roles and their permissions",
+    "metaDescription": "Role model in VK Cloud personal account.",
+    "sectionTitle": "Personal account roles and their permissions",
+    "icon": "",
+    "weight": 1,
+    "infobarItems": null,
+    "uuid": "4b933b3a-93fe-4cef-af82-4a42434c9923",
+    "createdAt": "2022-12-23T10:06:30.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Addons",
-  "pageDescription": "Services that can be automatically installed in the cluster to extend its functionality.",
-  "shortDescription": "Services to extend the functionality of the cluster",
-  "metaTitle": "Addons",
-  "metaDescription": "Services that can be automatically installed in the cluster to extend its functionality.",
-  "sectionTitle": "Addons",
-  "markdown": "Services that can be automatically installed in the cluster to extend its functionality.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "dc21e4b3-faff-4d3a-b639-2a6b9847898a",
-  "createdAt": "2023-06-13T06:58:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Addons",
+    "pageDescription": "Services that can be automatically installed in the cluster to extend its functionality.",
+    "shortDescription": "Services to extend the functionality of the cluster",
+    "metaTitle": "Addons",
+    "metaDescription": "Services that can be automatically installed in the cluster to extend its functionality.",
+    "sectionTitle": "Addons",
+    "markdown": "Services that can be automatically installed in the cluster to extend its functionality.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "dc21e4b3-faff-4d3a-b639-2a6b9847898a",
+    "createdAt": "2023-06-13T06:58:16.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

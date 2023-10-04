@@ -1,25 +1,25 @@
 {
-  "title": "Disks management",
-  "pageDescription": "Creating disks and changing their parameters. Connecting and disconnecting disks, moving between projects. Creating and using disk snapshots. Deleting disks.",
-  "shortDescription": "Creating disks and changing their parameters. Connecting and disconnecting disks, moving between projects. Creating and using disk snapshots. Deleting disks",
-  "metaTitle": "Disks management",
-  "metaDescription": "Creating disks and changing their parameters. Connecting and disconnecting disks, moving between projects. Creating and using disk snapshots. Deleting disks",
-  "sectionTitle": "Disks management",
-  "markdown": "Creating disks and changing their parameters. Connecting and disconnecting disks, moving between projects. Creating and using disk snapshots. Deleting disks.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "additionalUuids": [
-    "e567da37-109c-4218-b8c0-45f46d06c4c1",
-    "1a3dd11e-0ecb-427d-86e7-cdc53b5728ac",
-    "aaa74285-3b66-417e-95ba-9be2c02e8e61",
-    "56978357-edf2-40e7-9ab0-39b291c28ed7",
-    "7fd1c702-a206-4cd9-a474-bbeb981b4301",
-    "1f3f61cb-ba30-41b8-8440-0aa0a9112e23",
-    "197b2cd0-d6fa-47eb-b654-506d7dac2ee4",
-    "35758067-90a2-4ca0-86b9-ed6f0d0b5ff1"
-  ],
-  "uuid": "a7580d16-9b75-4d26-bebd-bcf391328655",
-  "createdAt": "2023-04-24T13:06:27.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Disks management",
+    "pageDescription": "Creating disks and changing their parameters. Connecting and disconnecting disks, moving between projects. Creating and using disk snapshots. Deleting disks.",
+    "shortDescription": "Creating disks and changing their parameters. Connecting and disconnecting disks, moving between projects. Creating and using disk snapshots. Deleting disks",
+    "metaTitle": "Disks management",
+    "metaDescription": "Creating disks and changing their parameters. Connecting and disconnecting disks, moving between projects. Creating and using disk snapshots. Deleting disks",
+    "sectionTitle": "Disks management",
+    "markdown": "Creating disks and changing their parameters. Connecting and disconnecting disks, moving between projects. Creating and using disk snapshots. Deleting disks.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "additionalUuids": [
+        "e567da37-109c-4218-b8c0-45f46d06c4c1",
+        "1a3dd11e-0ecb-427d-86e7-cdc53b5728ac",
+        "aaa74285-3b66-417e-95ba-9be2c02e8e61",
+        "56978357-edf2-40e7-9ab0-39b291c28ed7",
+        "7fd1c702-a206-4cd9-a474-bbeb981b4301",
+        "1f3f61cb-ba30-41b8-8440-0aa0a9112e23",
+        "197b2cd0-d6fa-47eb-b654-506d7dac2ee4",
+        "35758067-90a2-4ca0-86b9-ed6f0d0b5ff1"
+    ],
+    "uuid": "a7580d16-9b75-4d26-bebd-bcf391328655",
+    "createdAt": "2023-04-24T13:06:27.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

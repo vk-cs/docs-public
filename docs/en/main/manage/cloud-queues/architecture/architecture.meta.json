@@ -1,19 +1,19 @@
 {
-  "title": "Architecture",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Architecture",
-  "metaDescription": "",
-  "sectionTitle": "Architecture",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "64c728fa-e258-4c60-a193-1b3bd77ed20a",
-  "additionalUuids": [
-    "d6e0a04c-a3dd-4a71-939d-f25cd53b2ff7",
-    "594d1925-b6f3-4ee1-b8fc-c2c9f2731682"
-  ],
-  "createdAt": "2023-04-12T09:23:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Architecture",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Architecture",
+    "metaDescription": "",
+    "sectionTitle": "Architecture",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "64c728fa-e258-4c60-a193-1b3bd77ed20a",
+    "additionalUuids": [
+        "d6e0a04c-a3dd-4a71-939d-f25cd53b2ff7",
+        "594d1925-b6f3-4ee1-b8fc-c2c9f2731682"
+    ],
+    "createdAt": "2023-04-12T09:23:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

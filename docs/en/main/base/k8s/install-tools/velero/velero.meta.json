@@ -1,15 +1,15 @@
 {
-  "title": "Installing Velero",
-  "pageDescription": "How to install Velero in the Kubernetes cluster.",
-  "shortDescription": "How to install Velero utility",
-  "metaTitle": "Installing Velero",
-  "metaDescription": "",
-  "sectionTitle": "Installing Velero",
-  "markdown": "How to install Velero in the Kubernetes cluster.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "ddc9a7ce-1cc7-498c-b64f-fd4e0e9f879b",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Installing Velero",
+    "pageDescription": "How to install Velero in the Kubernetes cluster.",
+    "shortDescription": "How to install Velero utility",
+    "metaTitle": "Installing Velero",
+    "metaDescription": "",
+    "sectionTitle": "Installing Velero",
+    "markdown": "How to install Velero in the Kubernetes cluster.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "ddc9a7ce-1cc7-498c-b64f-fd4e0e9f879b",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

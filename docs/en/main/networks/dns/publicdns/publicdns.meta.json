@@ -1,14 +1,14 @@
 {
-  "title": "Public DNS",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Public DNS",
-  "metaDescription": "DNS as a service DNS is a hierarchical distributed database that allows you to store IP addresses and other data, as well as view information on",
-  "sectionTitle": "Public DNS",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "uuid": "0cc58071-0258-4726-89e5-2d3986a51f66",
-  "createdAt": "2023-03-17T04:38:48.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Public DNS",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Public DNS",
+    "metaDescription": "DNS as a service DNS is a hierarchical distributed database that allows you to store IP addresses and other data, as well as view information on",
+    "sectionTitle": "Public DNS",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "uuid": "0cc58071-0258-4726-89e5-2d3986a51f66",
+    "createdAt": "2023-03-17T04:38:48.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

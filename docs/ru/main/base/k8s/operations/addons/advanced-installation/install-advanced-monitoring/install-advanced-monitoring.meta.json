@@ -1,15 +1,15 @@
 {
-  "title": "Kube Prometheus Stack",
-  "pageDescription": "Здесь описана настройка и установка аддона со средствами мониторинга.",
-  "shortDescription": "",
-  "metaTitle": "Kube Prometheus Stack",
-  "metaDescription": "Настройка и установка аддона со средствами мониторинга.",
-  "sectionTitle": "Kube Prometheus Stack",
-  "markdown": "Здесь описана настройка и установка аддона со средствами мониторинга.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "8cf4a3e8-dc20-4b43-ae50-830b9d3d41fa",
-  "createdAt": "2023-03-20T07:46:50.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Kube Prometheus Stack",
+    "pageDescription": "Здесь описана настройка и установка аддона со средствами мониторинга.",
+    "shortDescription": "",
+    "metaTitle": "Kube Prometheus Stack",
+    "metaDescription": "Настройка и установка аддона со средствами мониторинга.",
+    "sectionTitle": "Kube Prometheus Stack",
+    "markdown": "Здесь описана настройка и установка аддона со средствами мониторинга.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "8cf4a3e8-dc20-4b43-ae50-830b9d3d41fa",
+    "createdAt": "2023-03-20T07:46:50.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

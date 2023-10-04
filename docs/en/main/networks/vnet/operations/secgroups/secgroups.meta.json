@@ -1,18 +1,18 @@
 {
-  "title": "Managing firewall rules",
-  "pageDescription": "A security group is a set of custom permissive traffic rules that can be assigned to instance ports. The firewall uses these groups to control traffic.",
-  "shortDescription": "How to create and delete security groups and more",
-  "metaTitle": "Managing firewall rules",
-  "metaDescription": "",
-  "sectionTitle": "Managing firewall rules",
-  "markdown": "A security group is a set of custom permissive traffic rules that can be assigned to instance ports. The firewall uses these groups to control traffic.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "749d3f26-cda0-4379-a807-3f4df4e7acc3",
-  "additionalUuids": [
-    "267a104a-7b16-4295-b009-7aca075dcf17"
-  ],
-  "createdAt": "2023-03-17T04:38:48.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Managing firewall rules",
+    "pageDescription": "A security group is a set of custom permissive traffic rules that can be assigned to instance ports. The firewall uses these groups to control traffic.",
+    "shortDescription": "How to create and delete security groups and more",
+    "metaTitle": "Managing firewall rules",
+    "metaDescription": "",
+    "sectionTitle": "Managing firewall rules",
+    "markdown": "A security group is a set of custom permissive traffic rules that can be assigned to instance ports. The firewall uses these groups to control traffic.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "749d3f26-cda0-4379-a807-3f4df4e7acc3",
+    "additionalUuids": [
+        "267a104a-7b16-4295-b009-7aca075dcf17"
+    ],
+    "createdAt": "2023-03-17T04:38:48.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

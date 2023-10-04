@@ -1,18 +1,18 @@
 {
-  "title": "OpenStack CLI",
-  "pageDescription": "Using the OpenStack CLI to manage resources on the VK Cloud platform.",
-  "shortDescription": "Installation of the OpenStack client and additional packages, authentication in the project",
-  "metaTitle": "OpenStack CLI",
-  "metaDescription": "Using the OpenStack CLI to manage resources on the VK Cloud platform.",
-  "sectionTitle": "OpenStack CLI",
-  "weight": 1,
-  "uuid": "aa7db855-805c-400d-b71a-30e1112121d1",
-  "additionalUuids": [
-    "72548886-6a9b-4ef9-a848-e854d2d71e0e",
-    "fe507a2d-8a30-4683-8366-1c18050a15c9",
-    "9e425340-2c55-4074-a3e5-1ca43b98a306",
-    "49aa78cb-6855-4c3d-af24-cf1011b92510"
-  ],
-  "createdAt": "2023-05-26T16:45:20.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "OpenStack CLI",
+    "pageDescription": "Using the OpenStack CLI to manage resources on the VK Cloud platform.",
+    "shortDescription": "Installation of the OpenStack client and additional packages, authentication in the project",
+    "metaTitle": "OpenStack CLI",
+    "metaDescription": "Using the OpenStack CLI to manage resources on the VK Cloud platform.",
+    "sectionTitle": "OpenStack CLI",
+    "weight": 1,
+    "uuid": "aa7db855-805c-400d-b71a-30e1112121d1",
+    "additionalUuids": [
+        "72548886-6a9b-4ef9-a848-e854d2d71e0e",
+        "fe507a2d-8a30-4683-8366-1c18050a15c9",
+        "9e425340-2c55-4074-a3e5-1ca43b98a306",
+        "49aa78cb-6855-4c3d-af24-cf1011b92510"
+    ],
+    "createdAt": "2023-05-26T16:45:20.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Arenadata DB Community",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Arenadata DB Community",
-  "metaDescription": "Description Arenadata DB (ADB) is a distributed DBMS that uses the MPP (massively parallel processing) concept and is based on an open source DBMS - Greenp",
-  "sectionTitle": "Arenadata DB Community",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "d79c3b19-e66a-44be-8fd8-f2f5955d1420",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Arenadata DB Community",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Arenadata DB Community",
+    "metaDescription": "Description Arenadata DB (ADB) is a distributed DBMS that uses the MPP (massively parallel processing) concept and is based on an open source DBMS - Greenp",
+    "sectionTitle": "Arenadata DB Community",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "d79c3b19-e66a-44be-8fd8-f2f5955d1420",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

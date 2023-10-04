@@ -1,15 +1,15 @@
 {
-  "title": "PostgreSQL, Postgres Pro",
-  "pageDescription": "Управление инстансами PostgreSQL, Postgres Pro.",
-  "shortDescription": "",
-  "metaTitle": "PostgreSQL, Postgres Pro",
-  "metaDescription": "Базы данных VK Cloud: управление инстансами PostgreSQL, Postgres Pro.",
-  "sectionTitle": "PostgreSQL, Postgres Pro",
-  "markdown": "Управление инстансами PostgreSQL, Postgres Pro.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "e13af8aa-1db2-40af-969e-e392f362a873",
-  "createdAt": "2023-06-02T07:32:11.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "PostgreSQL, Postgres Pro",
+    "pageDescription": "Управление инстансами PostgreSQL, Postgres Pro.",
+    "shortDescription": "",
+    "metaTitle": "PostgreSQL, Postgres Pro",
+    "metaDescription": "Базы данных VK Cloud: управление инстансами PostgreSQL, Postgres Pro.",
+    "sectionTitle": "PostgreSQL, Postgres Pro",
+    "markdown": "Управление инстансами PostgreSQL, Postgres Pro.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "e13af8aa-1db2-40af-969e-e392f362a873",
+    "createdAt": "2023-06-02T07:32:11.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

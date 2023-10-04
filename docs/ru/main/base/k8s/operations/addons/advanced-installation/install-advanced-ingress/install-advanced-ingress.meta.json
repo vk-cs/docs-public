@@ -1,15 +1,15 @@
 {
-  "title": "Ingress NGINX",
-  "pageDescription": "Здесь описана настройка и установка аддона Ingress-контроллера.",
-  "shortDescription": "",
-  "metaTitle": "Ingress NGINX",
-  "metaDescription": "Настройка и установка аддона Ingress-контроллера.",
-  "sectionTitle": "Ingress NGINX",
-  "markdown": "Здесь описана настройка и установка аддона Ingress-контроллера.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "5ffee9e3-63ea-49f2-96b9-b9cc25fa0be4",
-  "createdAt": "2023-03-20T07:46:50.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Ingress NGINX",
+    "pageDescription": "Здесь описана настройка и установка аддона Ingress-контроллера.",
+    "shortDescription": "",
+    "metaTitle": "Ingress NGINX",
+    "metaDescription": "Настройка и установка аддона Ingress-контроллера.",
+    "sectionTitle": "Ingress NGINX",
+    "markdown": "Здесь описана настройка и установка аддона Ingress-контроллера.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "5ffee9e3-63ea-49f2-96b9-b9cc25fa0be4",
+    "createdAt": "2023-03-20T07:46:50.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

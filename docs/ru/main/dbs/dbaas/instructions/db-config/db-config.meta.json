@@ -1,18 +1,18 @@
 {
-  "title": "Изменение параметров инстанса БД",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Изменение параметров инстанса БД",
-  "metaDescription": "",
-  "sectionTitle": "Изменение параметров инстанса БД",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "81e89b48-9623-42c3-ba70-16dbf554d153",
-  "additionalUuids": [
-    "4243efe6-1946-4104-99e0-ea4e10797b8b"
-  ],
-  "createdAt": "2023-05-05T09:02:32.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Изменение параметров инстанса БД",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Изменение параметров инстанса БД",
+    "metaDescription": "",
+    "sectionTitle": "Изменение параметров инстанса БД",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "81e89b48-9623-42c3-ba70-16dbf554d153",
+    "additionalUuids": [
+        "4243efe6-1946-4104-99e0-ea4e10797b8b"
+    ],
+    "createdAt": "2023-05-05T09:02:32.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

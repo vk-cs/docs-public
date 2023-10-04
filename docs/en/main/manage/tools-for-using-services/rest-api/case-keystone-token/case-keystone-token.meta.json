@@ -1,12 +1,12 @@
 {
-  "title": "Getting a Keystone access token",
-  "pageDescription": "Getting an access token in VK Cloud services",
-  "shortDescription": "How to generate an X-Subject-Token for access to services via the REST API",
-  "metaTitle": "Getting a Keystone access token",
-  "metaDescription": "Generating an X-Subject-Token for access to services via the REST API.",
-  "sectionTitle": "Getting a Keystone access token",
-  "weight": 1,
-  "uuid": "449c7801-b300-44e3-9f11-3d3bd5e1b7d1",
-  "createdAt": "2023-05-26T16:45:20.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Getting a Keystone access token",
+    "pageDescription": "Getting an access token in VK Cloud services",
+    "shortDescription": "How to generate an X-Subject-Token for access to services via the REST API",
+    "metaTitle": "Getting a Keystone access token",
+    "metaDescription": "Generating an X-Subject-Token for access to services via the REST API.",
+    "sectionTitle": "Getting a Keystone access token",
+    "weight": 1,
+    "uuid": "449c7801-b300-44e3-9f11-3d3bd5e1b7d1",
+    "createdAt": "2023-05-26T16:45:20.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

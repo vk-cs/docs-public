@@ -1,15 +1,15 @@
 {
-  "title": "External connections",
-  "pageDescription": "",
-  "shortDescription": "Description of connection settings from external networks",
-  "metaTitle": "External connections",
-  "metaDescription": "Connecting to an instance You can see how to connect to the database by clicking on the instance name in the list or by hovering over the information icon.",
-  "sectionTitle": "External connections",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "f195b39d-32b6-4198-af62-3150e5afacfa",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "External connections",
+    "pageDescription": "",
+    "shortDescription": "Description of connection settings from external networks",
+    "metaTitle": "External connections",
+    "metaDescription": "Connecting to an instance You can see how to connect to the database by clicking on the instance name in the list or by hovering over the information icon.",
+    "sectionTitle": "External connections",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "f195b39d-32b6-4198-af62-3150e5afacfa",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

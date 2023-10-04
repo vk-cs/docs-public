@@ -1,15 +1,15 @@
 {
-  "title": "Tomcat",
-  "pageDescription": "Apache Tomcat is a container that allows you to use Internet applications, for example, Java servlets and Java server pages (JSP).",
-  "shortDescription": "Apache Tomcat is a container that allows you to use Internet applications, for example, Java servlets and Java server pages (JSP)",
-  "metaTitle": "Tomcat",
-  "metaDescription": "Apache Tomcat is a container that allows you to use Internet applications, for example, Java servlets and Java server pages (JSP).",
-  "sectionTitle": "Tomcat",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 7,
-  "uuid": "eb14fbe8-b73c-4ecc-9bdc-28b9d223fba0",
-  "createdAt": "2023-06-05T11:17:25.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Tomcat",
+    "pageDescription": "Apache Tomcat is a container that allows you to use Internet applications, for example, Java servlets and Java server pages (JSP).",
+    "shortDescription": "Apache Tomcat is a container that allows you to use Internet applications, for example, Java servlets and Java server pages (JSP)",
+    "metaTitle": "Tomcat",
+    "metaDescription": "Apache Tomcat is a container that allows you to use Internet applications, for example, Java servlets and Java server pages (JSP).",
+    "sectionTitle": "Tomcat",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 7,
+    "uuid": "eb14fbe8-b73c-4ecc-9bdc-28b9d223fba0",
+    "createdAt": "2023-06-05T11:17:25.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

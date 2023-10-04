@@ -1,15 +1,15 @@
 {
-  "title": "Быстрый старт",
-  "pageDescription": "",
-  "shortDescription": "Шаги, которые необходимо выполнить перед началом работы",
-  "metaTitle": "Быстрый старт",
-  "metaDescription": "",
-  "sectionTitle": "Быстрый старт",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "f986abab-86e8-4a95-be84-884771c7eba4",
-  "createdAt": "2022-12-27T15:32:39.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Быстрый старт",
+    "pageDescription": "",
+    "shortDescription": "Шаги, которые необходимо выполнить перед началом работы",
+    "metaTitle": "Быстрый старт",
+    "metaDescription": "",
+    "sectionTitle": "Быстрый старт",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "f986abab-86e8-4a95-be84-884771c7eba4",
+    "createdAt": "2022-12-27T15:32:39.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

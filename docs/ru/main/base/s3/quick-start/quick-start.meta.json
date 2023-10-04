@@ -1,15 +1,15 @@
 {
-  "title": "Быстрый старт",
-  "pageDescription": "Как начать работу с сервисом.",
-  "shortDescription": "Как начать работу с сервисом",
-  "metaTitle": "Быстрый старт",
-  "metaDescription": "Объектное хранилище VK Cloud: как начать работу с сервисом.",
-  "sectionTitle": "Быстрый старт",
-  "markdown": "Как начать работу с сервисом.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "cbd9851b-2dca-4ce7-8e70-206329780b0e",
-  "createdAt": "2023-05-29T09:21:30.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Быстрый старт",
+    "pageDescription": "Как начать работу с сервисом.",
+    "shortDescription": "Как начать работу с сервисом",
+    "metaTitle": "Быстрый старт",
+    "metaDescription": "Объектное хранилище VK Cloud: как начать работу с сервисом.",
+    "sectionTitle": "Быстрый старт",
+    "markdown": "Как начать работу с сервисом.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "cbd9851b-2dca-4ce7-8e70-206329780b0e",
+    "createdAt": "2023-05-29T09:21:30.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

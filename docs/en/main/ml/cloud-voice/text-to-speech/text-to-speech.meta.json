@@ -1,15 +1,15 @@
 {
-  "title": "Speech synthesis",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Speech synthesis",
-  "metaDescription": "",
-  "sectionTitle": "Speech synthesis",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "6efeac71-0667-448e-b932-2e039e3322ae",
-  "createdAt": "2022-07-29T01:42:00.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Speech synthesis",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Speech synthesis",
+    "metaDescription": "",
+    "sectionTitle": "Speech synthesis",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "6efeac71-0667-448e-b932-2e039e3322ae",
+    "createdAt": "2022-07-29T01:42:00.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

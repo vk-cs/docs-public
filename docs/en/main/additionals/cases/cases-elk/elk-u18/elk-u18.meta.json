@@ -1,15 +1,15 @@
 {
-  "title": "Installing the ELK Stack on Ubuntu 18.04",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Installing ELK stack on Ubuntu 18.04",
-  "metaDescription": "This article describes how to install the ELK stack on a Linux operating system - Ubuntu 18.04. The ELK stack is a powerful set of tools for efficient",
-  "sectionTitle": "Installing the ELK stack on Ubuntu 18.04",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "d2e2c045-1b01-46a5-b488-399f3f58f0b4",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Installing the ELK Stack on Ubuntu 18.04",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Installing ELK stack on Ubuntu 18.04",
+    "metaDescription": "This article describes how to install the ELK stack on a Linux operating system - Ubuntu 18.04. The ELK stack is a powerful set of tools for efficient",
+    "sectionTitle": "Installing the ELK stack on Ubuntu 18.04",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "d2e2c045-1b01-46a5-b488-399f3f58f0b4",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

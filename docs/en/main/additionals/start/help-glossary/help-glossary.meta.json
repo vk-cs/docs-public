@@ -1,15 +1,15 @@
 {
-  "title": "Terminology",
-  "pageDescription": "Terms specific to cloud infrastructure.",
-  "shortDescription": "Terms specific to cloud infrastructure",
-  "metaTitle": "Terminology",
-  "metaDescription": "There are many cloud-specific terms that are often poorly defined. This article provides some details on terminology aspects as well as some concepts for b",
-  "sectionTitle": "Terminology",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "6b71ccab-d440-4758-aa1c-fc6023f198f0",
-  "createdAt": "2023-02-07T17:15:50.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Terminology",
+    "pageDescription": "Terms specific to cloud infrastructure.",
+    "shortDescription": "Terms specific to cloud infrastructure",
+    "metaTitle": "Terminology",
+    "metaDescription": "There are many cloud-specific terms that are often poorly defined. This article provides some details on terminology aspects as well as some concepts for b",
+    "sectionTitle": "Terminology",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "6b71ccab-d440-4758-aa1c-fc6023f198f0",
+    "createdAt": "2023-02-07T17:15:50.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Creating a custom kernel",
-  "pageDescription": "Description of how to create a custom kernel on a JupyterHub instance.",
-  "shortDescription": "Description of the procedure for creating an individual kernel",
-  "metaTitle": "Creating a custom kernel",
-  "metaDescription": "Creating a custom JupyterHub kernel",
-  "sectionTitle": "Creating a custom kernel",
-  "markdown": "",
-  "icon": "",
-  "weight": 0,
-  "infobarItems": null,
-  "uuid": "d94f380b-fa77-46d2-a403-fcad09759dd0",
-  "createdAt": "2022-10-07T09:38:12.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Creating a custom kernel",
+    "pageDescription": "Description of how to create a custom kernel on a JupyterHub instance.",
+    "shortDescription": "Description of the procedure for creating an individual kernel",
+    "metaTitle": "Creating a custom kernel",
+    "metaDescription": "Creating a custom JupyterHub kernel",
+    "sectionTitle": "Creating a custom kernel",
+    "markdown": "",
+    "icon": "",
+    "weight": 0,
+    "infobarItems": null,
+    "uuid": "d94f380b-fa77-46d2-a403-fcad09759dd0",
+    "createdAt": "2022-10-07T09:38:12.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Вопросы и ответы",
-  "pageDescription": "Ответы на часто задаваемые вопросы",
-  "shortDescription": "Ответы на часто задаваемые вопросы",
-  "metaTitle": "Вопросы и ответы",
-  "metaDescription": "Каналы связи технической поддержки и ответы на часто задаваемые вопросы",
-  "sectionTitle": "Вопросы и ответы",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 9,
-  "uuid": "04381ae7-c4ad-4d23-8b46-224fc197b944",
-  "createdAt": "2023-02-07T17:15:50.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Вопросы и ответы",
+    "pageDescription": "Ответы на часто задаваемые вопросы",
+    "shortDescription": "Ответы на часто задаваемые вопросы",
+    "metaTitle": "Вопросы и ответы",
+    "metaDescription": "Каналы связи технической поддержки и ответы на часто задаваемые вопросы",
+    "sectionTitle": "Вопросы и ответы",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 9,
+    "uuid": "04381ae7-c4ad-4d23-8b46-224fc197b944",
+    "createdAt": "2023-02-07T17:15:50.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

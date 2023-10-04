@@ -1,15 +1,15 @@
 {
-  "title": "Configuring Canary Deployment Ingress",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Configuring Canary Deployment Ingress",
-  "metaDescription": "",
-  "sectionTitle": "Configuring Canary Deployment Ingress",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "6f0a2aef-cf60-456d-92ec-d20dcf43c31d",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Configuring Canary Deployment Ingress",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Configuring Canary Deployment Ingress",
+    "metaDescription": "",
+    "sectionTitle": "Configuring Canary Deployment Ingress",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "6f0a2aef-cf60-456d-92ec-d20dcf43c31d",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

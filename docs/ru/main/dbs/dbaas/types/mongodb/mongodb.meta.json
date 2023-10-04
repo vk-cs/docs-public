@@ -1,15 +1,15 @@
 {
-  "title": "MongoDB",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "MongoDB",
-  "metaDescription": "",
-  "sectionTitle": "MongoDB",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "23d45a44-5ed3-45db-aff1-322c8cf07c79",
-  "createdAt": "2023-02-28T12:19:42.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "MongoDB",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "MongoDB",
+    "metaDescription": "",
+    "sectionTitle": "MongoDB",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "23d45a44-5ed3-45db-aff1-322c8cf07c79",
+    "createdAt": "2023-02-28T12:19:42.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

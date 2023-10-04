@@ -1,15 +1,15 @@
 {
-  "title": "Installing and configuring ClickHouse on Ubuntu",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Installing and configuring ClickHouse on Ubuntu",
-  "metaDescription": "In this article, we will look at how to install standalone ClickHouse, create a database user, configure rights and network access. Hardware configuration",
-  "sectionTitle": "Installing and configuring ClickHouse on Ubuntu",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "ba17e863-0051-43d5-8557-5337d25d4ea5",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Installing and configuring ClickHouse on Ubuntu",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Installing and configuring ClickHouse on Ubuntu",
+    "metaDescription": "In this article, we will look at how to install standalone ClickHouse, create a database user, configure rights and network access. Hardware configuration",
+    "sectionTitle": "Installing and configuring ClickHouse on Ubuntu",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "ba17e863-0051-43d5-8557-5337d25d4ea5",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

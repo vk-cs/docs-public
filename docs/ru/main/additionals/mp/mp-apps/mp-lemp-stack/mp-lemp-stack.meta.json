@@ -1,15 +1,15 @@
 {
-  "title": "LEMP stack",
-  "pageDescription": "LEMP — стек технологий по аналогии с LAMP, где вместо Apache используется сервер Nginx.",
-  "shortDescription": "LEMP — стек технологий по аналогии с LAMP, где вместо Apache используется сервер Nginx",
-  "metaTitle": "LEMP stack",
-  "metaDescription": "LEMP — стек технологий по аналогии с LAMP, где вместо Apache используется сервер Nginx",
-  "sectionTitle": "LEMP stack",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "093da2f2-3431-4e77-a433-03b5527cb709",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "LEMP stack",
+    "pageDescription": "LEMP — стек технологий по аналогии с LAMP, где вместо Apache используется сервер Nginx.",
+    "shortDescription": "LEMP — стек технологий по аналогии с LAMP, где вместо Apache используется сервер Nginx",
+    "metaTitle": "LEMP stack",
+    "metaDescription": "LEMP — стек технологий по аналогии с LAMP, где вместо Apache используется сервер Nginx",
+    "sectionTitle": "LEMP stack",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "093da2f2-3431-4e77-a433-03b5527cb709",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

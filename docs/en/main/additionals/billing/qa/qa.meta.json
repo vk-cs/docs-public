@@ -1,15 +1,15 @@
 {
-  "title": "Questions and answer",
-  "pageDescription": "",
-  "shortDescription": "Answers to the most frequently asked questions",
-  "metaTitle": "Questions and answer",
-  "metaDescription": "",
-  "sectionTitle": "Questions and answer",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "732e19ed-0900-4af0-b265-662acf16caf9",
-  "createdAt": "2022-04-07T07:18:11.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Questions and answer",
+    "pageDescription": "",
+    "shortDescription": "Answers to the most frequently asked questions",
+    "metaTitle": "Questions and answer",
+    "metaDescription": "",
+    "sectionTitle": "Questions and answer",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "732e19ed-0900-4af0-b265-662acf16caf9",
+    "createdAt": "2022-04-07T07:18:11.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

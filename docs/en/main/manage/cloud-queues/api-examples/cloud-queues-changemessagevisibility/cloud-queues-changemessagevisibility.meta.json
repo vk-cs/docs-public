@@ -1,15 +1,15 @@
 {
-  "title": "ChangeMessageVisibility",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "ChangeMessageVisibility",
-  "metaDescription": "The request changes the visibility timeout of the specified message in the queue to a new value. The default message visibility timeout is 30 seconds (minimum",
-  "sectionTitle": "ChangeMessageVisibility",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "5ef55300-3fc4-450e-b05b-511a2d880ee6",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "ChangeMessageVisibility",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "ChangeMessageVisibility",
+    "metaDescription": "The request changes the visibility timeout of the specified message in the queue to a new value. The default message visibility timeout is 30 seconds (minimum",
+    "sectionTitle": "ChangeMessageVisibility",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "5ef55300-3fc4-450e-b05b-511a2d880ee6",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

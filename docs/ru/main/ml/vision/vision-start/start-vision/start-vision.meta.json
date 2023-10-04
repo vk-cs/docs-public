@@ -1,15 +1,15 @@
 {
-  "title": "Подключение к сервису",
-  "pageDescription": "",
-  "shortDescription": "Способы подключения к сервису",
-  "metaTitle": "Создание и подключение к сервису",
-  "metaDescription": "Сервис машинного обучения по умолчанию включен в проектах VK Cloud. Подключиться к сервису можно двумя разными способами, описанными ниже. API Endpoint API Endp",
-  "sectionTitle": "Создание и подключение к сервису",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "a4ce7c87-5e5b-4206-b8c4-b625f18d19e7",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Подключение к сервису",
+    "pageDescription": "",
+    "shortDescription": "Способы подключения к сервису",
+    "metaTitle": "Создание и подключение к сервису",
+    "metaDescription": "Сервис машинного обучения по умолчанию включен в проектах VK Cloud. Подключиться к сервису можно двумя разными способами, описанными ниже. API Endpoint API Endp",
+    "sectionTitle": "Создание и подключение к сервису",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "a4ce7c87-5e5b-4206-b8c4-b625f18d19e7",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

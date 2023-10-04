@@ -1,14 +1,14 @@
 {
-  "title": "Удаление кластера Cloud Streams",
-  "pageDescription": "Удаление кластера Cloud Streams",
-  "shortDescription": "Описание действий для удаления кластера",
-  "metaTitle": "Удаление кластера Cloud Streams",
-  "metaDescription": "Удаление кластера Cloud Streams",
-  "sectionTitle": "Удаление кластера Cloud Streams",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "6bea2b04-e475-42d8-8403-3e0ded301bfb",
-  "createdAt": "2023-05-31T09:51:29.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Удаление кластера Cloud Streams",
+    "pageDescription": "Удаление кластера Cloud Streams",
+    "shortDescription": "Описание действий для удаления кластера",
+    "metaTitle": "Удаление кластера Cloud Streams",
+    "metaDescription": "Удаление кластера Cloud Streams",
+    "sectionTitle": "Удаление кластера Cloud Streams",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "6bea2b04-e475-42d8-8403-3e0ded301bfb",
+    "createdAt": "2023-05-31T09:51:29.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

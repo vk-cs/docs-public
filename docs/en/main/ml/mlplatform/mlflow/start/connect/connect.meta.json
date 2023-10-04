@@ -1,15 +1,15 @@
 {
-  "title": "Connecting to MLflow",
-  "pageDescription": "Description of the process for connecting to an MLflow instance.",
-  "shortDescription": "Connecting to an MLflow instance",
-  "metaTitle": "Connecting to MLflow",
-  "metaDescription": "MLflow connection",
-  "sectionTitle": "Connection to MLflow",
-  "markdown": "Connecting to MLflow",
-  "icon": "",
-  "weight": 1,
-  "infobarItems": null,
-  "uuid": "a6b42ffc-f03e-4bfc-9f59-f01001b6a4dd",
-  "createdAt": "2022-10-07T09:38:12.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Connecting to MLflow",
+    "pageDescription": "Description of the process for connecting to an MLflow instance.",
+    "shortDescription": "Connecting to an MLflow instance",
+    "metaTitle": "Connecting to MLflow",
+    "metaDescription": "MLflow connection",
+    "sectionTitle": "Connection to MLflow",
+    "markdown": "Connecting to MLflow",
+    "icon": "",
+    "weight": 1,
+    "infobarItems": null,
+    "uuid": "a6b42ffc-f03e-4bfc-9f59-f01001b6a4dd",
+    "createdAt": "2022-10-07T09:38:12.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

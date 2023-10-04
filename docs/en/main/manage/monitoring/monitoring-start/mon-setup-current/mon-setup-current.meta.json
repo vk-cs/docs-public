@@ -1,15 +1,15 @@
 {
-  "title": "Installation in existing VMs",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Installation in existing VMs",
-  "metaDescription": "The article will tell you how to install monitoring in an existing Linux virtual machine. Go to the VK Cloud panel\nFind the target virtual",
-  "sectionTitle": "Installation in existing VMs",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "10c24b18-afb6-4975-bde7-db9005bac771",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Installation in existing VMs",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Installation in existing VMs",
+    "metaDescription": "The article will tell you how to install monitoring in an existing Linux virtual machine. Go to the VK Cloud panel\nFind the target virtual",
+    "sectionTitle": "Installation in existing VMs",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "10c24b18-afb6-4975-bde7-db9005bac771",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

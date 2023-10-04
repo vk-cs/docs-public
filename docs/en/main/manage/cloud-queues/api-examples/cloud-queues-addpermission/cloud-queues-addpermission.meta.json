@@ -1,15 +1,15 @@
 {
-  "title": "AddPermission",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "AddPermission",
-  "metaDescription": "Adds a permission to the queue for a specific participant. This allows you to share access to the queue. When you create a queue, you have full rights",
-  "sectionTitle": "AddPermission",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "dfcee8df-6a9d-4af0-a021-b71457dca8e1",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "AddPermission",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "AddPermission",
+    "metaDescription": "Adds a permission to the queue for a specific participant. This allows you to share access to the queue. When you create a queue, you have full rights",
+    "sectionTitle": "AddPermission",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "dfcee8df-6a9d-4af0-a021-b71457dca8e1",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

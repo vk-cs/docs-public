@@ -1,15 +1,15 @@
 {
-  "title": "ListQueues",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "ListQueues",
-  "metaDescription": "Returns a list of your queues in the current region. The answer includes no more than 1000 results. If you specify a value for the optional Queue Name Prefix",
-  "sectionTitle": "ListQueues",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 12,
-  "uuid": "559b05fd-39ec-4b26-9367-1f1b5fb681ce",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "ListQueues",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "ListQueues",
+    "metaDescription": "Returns a list of your queues in the current region. The answer includes no more than 1000 results. If you specify a value for the optional Queue Name Prefix",
+    "sectionTitle": "ListQueues",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 12,
+    "uuid": "559b05fd-39ec-4b26-9367-1f1b5fb681ce",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

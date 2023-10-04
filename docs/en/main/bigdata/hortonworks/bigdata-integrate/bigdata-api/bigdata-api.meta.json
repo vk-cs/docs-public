@@ -1,15 +1,15 @@
 {
-  "title": "API",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "API",
-  "metaDescription": "Cluster creation All instructions when working with the API are executed in the console. To create a Big Data cluster, do the following: curl -s -H",
-  "sectionTitle": "API",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "56b84926-73ec-4d10-8a32-703fdffdd5b4",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "API",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "API",
+    "metaDescription": "Cluster creation All instructions when working with the API are executed in the console. To create a Big Data cluster, do the following: curl -s -H",
+    "sectionTitle": "API",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "56b84926-73ec-4d10-8a32-703fdffdd5b4",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

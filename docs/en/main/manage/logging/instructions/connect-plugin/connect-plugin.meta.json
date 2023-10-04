@@ -1,14 +1,14 @@
 {
-  "title": "Installation of the plugin Fluent Bit",
-  "pageDescription": "How to install and configure the Fluent Bit plugin to send logs to VK Cloud.",
-  "shortDescription": "How to install and configure the Fluent Bit plugin to send logs",
-  "metaTitle": "Installation of the plugin Fluent Bit",
-  "metaDescription": "How to install and configure the Fluent Bit plugin to send logs to VK Cloud.",
-  "sectionTitle": "Installation of the plugin Fluent Bit",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "fd16f5be-7753-4a6b-99ed-975f209dd85e",
-  "createdAt": "2022-12-27T15:32:39.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Installation of the plugin Fluent Bit",
+    "pageDescription": "How to install and configure the Fluent Bit plugin to send logs to VK Cloud.",
+    "shortDescription": "How to install and configure the Fluent Bit plugin to send logs",
+    "metaTitle": "Installation of the plugin Fluent Bit",
+    "metaDescription": "How to install and configure the Fluent Bit plugin to send logs to VK Cloud.",
+    "sectionTitle": "Installation of the plugin Fluent Bit",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "fd16f5be-7753-4a6b-99ed-975f209dd85e",
+    "createdAt": "2022-12-27T15:32:39.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

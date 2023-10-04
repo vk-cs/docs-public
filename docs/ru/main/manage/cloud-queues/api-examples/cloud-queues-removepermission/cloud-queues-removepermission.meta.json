@@ -1,15 +1,15 @@
 {
-  "title": "RemovePermission",
-  "pageDescription": "Примеры запроса и ответа для метода RemovePermission.",
-  "shortDescription": "",
-  "metaTitle": "RemovePermission",
-  "metaDescription": "Отменяет все разрешения в политике очереди, соответствующие указанному Label параметру. Примеры запроса и ответа для метода RemovePermission.",
-  "sectionTitle": "RemovePermission",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 16,
-  "uuid": "dd63f37f-d7df-4ac1-8536-956346f4ffc3",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "RemovePermission",
+    "pageDescription": "Примеры запроса и ответа для метода RemovePermission.",
+    "shortDescription": "",
+    "metaTitle": "RemovePermission",
+    "metaDescription": "Отменяет все разрешения в политике очереди, соответствующие указанному Label параметру. Примеры запроса и ответа для метода RemovePermission.",
+    "sectionTitle": "RemovePermission",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 16,
+    "uuid": "dd63f37f-d7df-4ac1-8536-956346f4ffc3",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

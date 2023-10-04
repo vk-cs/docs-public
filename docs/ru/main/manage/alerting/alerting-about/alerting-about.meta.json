@@ -1,15 +1,15 @@
 {
-  "title": "О сервисе Cloud Alerting",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "О сервисе Cloud Alerting",
-  "metaDescription": "",
-  "sectionTitle": "О сервисе Cloud Alerting",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "7621e89d-51f2-4d6e-b264-2d3b8deacf5d",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "О сервисе Cloud Alerting",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "О сервисе Cloud Alerting",
+    "metaDescription": "",
+    "sectionTitle": "О сервисе Cloud Alerting",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "7621e89d-51f2-4d6e-b264-2d3b8deacf5d",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,18 +1,18 @@
 {
-  "title": "Backup by GFS strategy",
-  "pageDescription": "Strategy for long-term storage of GFS backups",
-  "shortDescription": "Strategy for long-term storage of GFS backups",
-  "metaTitle": "Backup by GFS strategy",
-  "metaDescription": "The article describes the strategy of long-term storage of GFS backups.",
-  "sectionTitle": "Backup by GFS strategy",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "additionalUuids": [
-    "829593e2-da2b-4fe9-89fb-1d11d8006038"
-  ],
-  "uuid": "22e28394-c473-4865-ba9b-5a92eaff3bfd",
-  "createdAt": "2023-03-17T13:58:06.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Backup by GFS strategy",
+    "pageDescription": "Strategy for long-term storage of GFS backups",
+    "shortDescription": "Strategy for long-term storage of GFS backups",
+    "metaTitle": "Backup by GFS strategy",
+    "metaDescription": "The article describes the strategy of long-term storage of GFS backups.",
+    "sectionTitle": "Backup by GFS strategy",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "additionalUuids": [
+        "829593e2-da2b-4fe9-89fb-1d11d8006038"
+    ],
+    "uuid": "22e28394-c473-4865-ba9b-5a92eaff3bfd",
+    "createdAt": "2023-03-17T13:58:06.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

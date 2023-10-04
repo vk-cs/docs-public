@@ -1,15 +1,15 @@
 {
-  "title": "Витрины данных",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Витрины данных",
-  "metaDescription": "Описание Витрина данных (Data Mart) это срез базы данных, который призван представлять собой массив узкоспециализированной тематической информации, ориенти",
-  "sectionTitle": "Витрины данных",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "9fc3e324-a4ce-4a3e-a3ec-b3818de15e24",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Витрины данных",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Витрины данных",
+    "metaDescription": "Описание Витрина данных (Data Mart) это срез базы данных, который призван представлять собой массив узкоспециализированной тематической информации, ориенти",
+    "sectionTitle": "Витрины данных",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "9fc3e324-a4ce-4a3e-a3ec-b3818de15e24",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }
