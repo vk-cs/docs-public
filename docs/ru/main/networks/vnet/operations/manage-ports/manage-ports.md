@@ -156,7 +156,7 @@ openstack port create --help
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. [Получите имя или идентификатор](#prosmotr-spiska-portov-i-informacii-o-nih) нужного порта.
+1. [Получите имя или идентификатор](#prosmotr_spiska_portov_i_informacii_o_nih) нужного порта.
 
 1. Выполните команду:
 
@@ -209,7 +209,7 @@ openstack port set --help
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. [Получите имя или идентификатор](#prosmotr-spiska-portov-i-informacii-o-nih) нужного порта.
+1. [Получите имя или идентификатор](#prosmotr_spiska_portov_i_informacii_o_nih) нужного порта.
 
 1. Выполните команду:
 
@@ -254,7 +254,7 @@ openstack port set --help
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. [Получите имя или идентификатор](#prosmotr-spiska-portov-i-informacii-o-nih) нужного порта.
+1. [Получите имя или идентификатор](#prosmotr_spiska_portov_i_informacii_o_nih) нужного порта.
 
 1. Измените параметры порта:
 
@@ -297,7 +297,7 @@ openstack port set --help
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. [Получите имя или идентификатор](#prosmotr-spiska-portov-i-informacii-o-nih) нужного порта.
+1. [Получите имя или идентификатор](#prosmotr_spiska_portov_i_informacii_o_nih) нужного порта.
 
 1. Чтобы добавить один IP-адрес источника, выполните команду:
 
@@ -368,7 +368,7 @@ openstack subnet unset --help
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. [Получите имя или идентификатор](#prosmotr-spiska-portov-i-informacii-o-nih) нужного порта.
+1. [Получите имя или идентификатор](#prosmotr_spiska_portov_i_informacii_o_nih) нужного порта.
 
 1. Выполните команду:
 

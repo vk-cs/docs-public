@@ -86,7 +86,7 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
 
 <err>
 
-Restarting the VM before [bootloader configuration](#3--change-the-loader-parameters) is completed will result in loss of access to the VM.
+Restarting the VM before [bootloader configuration](#3_change_the_loader_parameters) is completed will result in loss of access to the VM.
 
 </err>
 

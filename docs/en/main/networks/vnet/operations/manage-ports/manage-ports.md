@@ -156,7 +156,7 @@ This is a group operation: you can enable multiple disabled ports at once, if ne
 
 1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
 
-1. [Get the name or ID](#viewing-a-list-of-ports-and-port-information) of the necessary port.
+1. [Get the name or ID](#viewing_a_list_of_ports_and_port_information) of the necessary port.
 
 1. Run the command:
 
@@ -209,7 +209,7 @@ This is a group operation: you can disable multiple enabled ports at once, if ne
 
 1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
 
-1. [Get the name or ID](#viewing-a-list-of-ports-and-port-information) of the necessary port.
+1. [Get the name or ID](#viewing_a_list_of_ports_and_port_information) of the necessary port.
 
 1. Run the command:
 
@@ -254,7 +254,7 @@ openstack port set --help
 
 1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
 
-1. [Get the name or ID](#viewing-a-list-of-ports-and-port-information) of the necessary port.
+1. [Get the name or ID](#viewing_a_list_of_ports_and_port_information) of the necessary port.
 
 1. Change the parameters of the port:
 
@@ -297,7 +297,7 @@ This mechanism allows only traffic for which the source IP address is in the `al
 
 1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
 
-1. [Get the name or ID](#viewing-a-list-of-ports-and-port-information) of the necessary port.
+1. [Get the name or ID](#viewing_a_list_of_ports_and_port_information) of the necessary port.
 
 1. To add a single source IP address, run the command:
 
@@ -368,7 +368,7 @@ This is a group operation: you can delete multiple ports at once, if necessary, 
 
 1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
 
-1. [Get the name or ID](#viewing-a-list-of-ports-and-port-information) of the necessary port.
+1. [Get the name or ID](#viewing_a_list_of_ports_and_port_information) of the necessary port.
 
 1. Run the command:
 

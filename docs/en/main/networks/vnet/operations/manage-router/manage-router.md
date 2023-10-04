@@ -17,7 +17,7 @@ You can manage routers: view, edit and delete them.
 
 1. Click on the name of the necessary router.
 
-   A page with detailed information about the router will open. You can also [edit](#editing-a-router) router parameters on this page.
+   A page with detailed information about the router will open. You can also [edit](#editing_a_router) router parameters on this page.
 
 </tabpanel>
 <tabpanel>
@@ -43,8 +43,8 @@ You can manage routers: view, edit and delete them.
 
    - `id`: the router's ID.
    - `external_gateway_info`: information on connection to external network. A blank field means that connection to the external network is not configured.
-   - `interfaces_info`: information about [interfaces of the router](#managing-an-interface). A blank field means that no interfaces have been added.
-   - `routes`: information about [static router routes](#managing-static-routes). An empty field means no static routes were added.
+   - `interfaces_info`: information about [interfaces of the router](#managing_an_interface). A blank field means that no interfaces have been added.
+   - `routes`: information about [static router routes](#managing_static_routes). An empty field means no static routes were added.
 
 </tabpanel>
 </tabs>
@@ -106,7 +106,7 @@ You can manage routers: view, edit and delete them.
 
    A router with an external network connection will have Internet access and a public IP address. Create this type of router if you plan to assign floating IP addresses to ports on subnets connected to the router and provide Internet access from those subnets.
 
-1. Learn how to connect one or more interfaces to the router by either [editing the router](#editing-a-router) or [managing its interfaces](#managing-an-interface) directly.
+1. Learn how to connect one or more interfaces to the router by either [editing the router](#editing_a_router) or [managing its interfaces](#managing_an_interface) directly.
 
 </tabpanel>
 </tabs>
@@ -152,7 +152,7 @@ You can manage routers: view, edit and delete them.
 
    1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
    1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
-1. [Get the ID](#viewing-a-list-of-routers-and-information-about-them) of the necessary router.
+1. [Get the ID](#viewing_a_list_of_routers_and_information_about_them) of the necessary router.
 1. Perform one of the available actions:
 
    - Change the name of the router:
@@ -227,7 +227,7 @@ You can manage routers: view, edit and delete them.
 
      <info>
 
-     You can also add or remove a subnet by [changing the interface](#managing-an-interface) of the router.
+     You can also add or remove a subnet by [changing the interface](#managing_an_interface) of the router.
 
      </info>
 
@@ -236,7 +236,7 @@ You can manage routers: view, edit and delete them.
 
 ## Managing an interface
 
-Router interface management is an alternative to [managing subnets](#editing-a-router) connected to it.
+Router interface management is an alternative to [managing subnets](#editing_a_router) connected to it.
 
 <tabs>
 <tablist>
@@ -245,7 +245,7 @@ Router interface management is an alternative to [managing subnets](#editing-a-r
 </tablist>
 <tabpanel>
 
-1. [Go to](#viewing-a-list-of-routers-and-information-about-them) the router page and select tab **Interfaces**.
+1. [Go to](#viewing_a_list_of_routers_and_information_about_them) the router page and select tab **Interfaces**.
 
 1. To add an interface:
 
@@ -276,7 +276,7 @@ Router interface management is an alternative to [managing subnets](#editing-a-r
    1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
    1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
   
-1. [Get the ID](#viewing-a-list-of-routers-and-information-about-them) of the necessary router.
+1. [Get the ID](#viewing_a_list_of_routers_and_information_about_them) of the necessary router.
 
 1. To add an interface:
 
@@ -294,13 +294,13 @@ Router interface management is an alternative to [managing subnets](#editing-a-r
 
    <info>
   
-   To get a list of interfaces, [see router details](#viewing-a-list-of-routers-and-information-about-them) using the OpenStack CLI.
+   To get a list of interfaces, [see router details](#viewing_a_list_of_routers_and_information_about_them) using the OpenStack CLI.
 
    </info>
 
 1. To remove an interface:
 
-    1. [Look at the interfaces (ports)](#viewing-a-list-of-routers-and-information-about-them) configured on the router.
+    1. [Look at the interfaces (ports)](#viewing_a_list_of_routers_and_information_about_them) configured on the router.
     1. Run the command:
 
        ```bash
@@ -327,7 +327,7 @@ Router interface management is an alternative to [managing subnets](#editing-a-r
 </tablist>
 <tabpanel>
 
-1. [Go to](#viewing-a-list-of-routers-and-information-about-them) the router page, then select the **Static Routes** tab.
+1. [Go to](#viewing_a_list_of_routers_and_information_about_them) the router page, then select the **Static Routes** tab.
 
 1. To add a static route:
 
@@ -346,7 +346,7 @@ Router interface management is an alternative to [managing subnets](#editing-a-r
    1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
    1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
   
-1. [Get the ID](#viewing-a-list-of-routers-and-information-about-them) of the necessary router.
+1. [Get the ID](#viewing_a_list_of_routers_and_information_about_them) of the necessary router.
 
 1. To add a static route, run the command:
 
@@ -356,7 +356,7 @@ Router interface management is an alternative to [managing subnets](#editing-a-r
 
 1. To remove a static route:
 
-    1. [Look up the static routes](#viewing-a-list-of-routers-and-information-about-them) configured on the router.
+    1. [Look up the static routes](#viewing_a_list_of_routers_and_information_about_them) configured on the router.
     1. Run the command:
 
        ```bash
@@ -376,7 +376,7 @@ Router interface management is an alternative to [managing subnets](#editing-a-r
 
 <warn>
 
-Before deleting the router, delete the [static routes](#managing-static-routes) and the configured [interfaces](#managing-an-interface) (if any) one by one before deleting the router.
+Before deleting the router, delete the [static routes](#managing-static-routes) and the configured [interfaces](#managing_an_interface) (if any) one by one before deleting the router.
 
 </warn>
 
@@ -410,7 +410,7 @@ To remove a router:
    1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
    1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
   
-1. [Get the ID](#viewing-a-list-of-routers-and-information-about-them) of the necessary router.
+1. [Get the ID](#viewing_a_list_of_routers_and_information_about_them) of the necessary router.
 
 1. Run the command:
 

@@ -124,7 +124,7 @@ To change the client settings, use the Server Manager:
    1. Select **Client for NFS** and click on the icon **Display the properties**.
    1. Set the desired settings.
 
-Connect the NFS storage using the command described in its [properties](#viewing-a-list-of-file-storages).
+Connect the NFS storage using the command described in its [properties](#viewing_a_list_of_file_storages).
 
 The command to connect the storage looks like this:
 
@@ -139,7 +139,7 @@ There is:
 
 #### CIFS
 
-To connect the file storage, run the command specified in its [properties](#viewing-a-list-of-file-storages).
+To connect the file storage, run the command specified in its [properties](#viewing_a_list_of_file_storages).
 
 The command to connect the storage looks like this:
 
@@ -174,7 +174,7 @@ The instructions are given for Ubuntu Linux. For information about connecting to
     mkdir <Directory name>
     ```
 
-3. Use the command specified in [properties](#viewing-a-list-of-file-storages) of the created NFS storage:
+3. Use the command specified in [properties](#viewing_a_list_of_file_storages) of the created NFS storage:
 
     ```bash
     mount -t nfs <Mount point> /<Directory name>
@@ -199,7 +199,7 @@ The instructions are given for Ubuntu Linux. For information about connecting to
     mkdir <Directory name>
     ```
 
-3. Use the command specified in [properties](#viewing-a-list-of-file-storages) of the repository:
+3. Use the command specified in [properties](#viewing_a_list_of_file_storages) of the repository:
 
     ```bash
     sudo mount -o user=,password= -t cifs <Mount point> ./<Directory name>

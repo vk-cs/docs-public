@@ -1,8 +1,8 @@
 Automatic and manual modes of creating backups of virtual machines are available on the VK Cloud platform.
 
-- Use [automatic mode](#automatic-backup) to create backups regularly.
+- Use [automatic mode](#automatic_backup) to create backups regularly.
 
-- Use [manual mode](#manual-backup) to create backups before operations involving the risk of data loss.
+- Use [manual mode](#manual_backup) to create backups before operations involving the risk of data loss.
 
 <info>
 

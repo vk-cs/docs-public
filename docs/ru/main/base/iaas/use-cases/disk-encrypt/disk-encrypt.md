@@ -86,7 +86,7 @@ sudo yum install -y cryptsetup cryptsetup-reencrypt
 
 <err>
 
-Перезапуск виртуальной машины до завершения [настройки загрузчика](#3--izmenite-parametry-zagruzchika) приведет к утрате доступа к ВМ.
+Перезапуск виртуальной машины до завершения [настройки загрузчика](#3_izmenite_parametry_zagruzchika) приведет к утрате доступа к ВМ.
 
 </err>
 

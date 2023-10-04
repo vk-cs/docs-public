@@ -40,7 +40,7 @@ At the end of the trial period, in the absence of a positive account balance of 
 
 ## Why I don't see charges for the timing service in the Billing section
 
-Financial transactions with the 1C: GRM application are carried out by 1C: GRM technical support and you can request the current balance, as well as an invoice for payment or closing documents by [contacting the 1C: GRM technical support](support.1c.grm@mcs.mail.ru).
+Financial transactions with the 1C: GRM application are carried out by 1C: GRM technical support and you can request the current balance, as well as an invoice for payment or closing documents by [contacting the 1C: GRM technical support](mailto:support.1c.grm@mcs.mail.ru).
 
 ## How to get back unused money
 
