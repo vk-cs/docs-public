@@ -1,15 +1,15 @@
 {
-  "title": "Traffic restriction",
-  "pageDescription": "How to use IP Source Guard and firewall to restrict traffic in virtual networks.",
-  "shortDescription": "How to restrict network traffic with IP Source Guard and firewall",
-  "metaTitle": "Traffic restriction",
-  "metaDescription": "",
-  "sectionTitle": "Traffic restriction",
-  "markdown": "How to use IP Source Guard and firewall to restrict traffic in virtual networks.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "cb778b44-2c4c-46fe-b945-cf6fd5968fab",
-  "createdAt": "2023-03-17T04:38:48.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Traffic restriction",
+    "pageDescription": "How to use IP Source Guard and firewall to restrict traffic in virtual networks.",
+    "shortDescription": "How to restrict network traffic with IP Source Guard and firewall",
+    "metaTitle": "Traffic restriction",
+    "metaDescription": "",
+    "sectionTitle": "Traffic restriction",
+    "markdown": "How to use IP Source Guard and firewall to restrict traffic in virtual networks.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "cb778b44-2c4c-46fe-b945-cf6fd5968fab",
+    "createdAt": "2023-03-17T04:38:48.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Delete ADH Cluster",
-  "pageDescription": "Delete ADH Cluster",
-  "shortDescription": "Description of the steps to remove the cluster",
-  "metaTitle": "Deleting an ADH Cluster",
-  "metaDescription": "Delete ADH Cluster",
-  "sectionTitle": "Delete ADH Cluster",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "b0351979-6320-4893-bec8-c80fa253d828",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Delete ADH Cluster",
+    "pageDescription": "Delete ADH Cluster",
+    "shortDescription": "Description of the steps to remove the cluster",
+    "metaTitle": "Deleting an ADH Cluster",
+    "metaDescription": "Delete ADH Cluster",
+    "sectionTitle": "Delete ADH Cluster",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "b0351979-6320-4893-bec8-c80fa253d828",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

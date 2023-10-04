@@ -1,15 +1,15 @@
 {
-  "title": "Большие данные",
-  "pageDescription": "",
-  "shortDescription": "Управление кластерами с помощью API",
-  "metaTitle": "Большие данные",
-  "metaDescription": "Создание кластера Все инструкции при работе с API выполняются в консоли. Для создания кластера Больших Данных необходимо выполнить следующее: curl -s -H",
-  "sectionTitle": "Большие данные",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "976e246d-959d-4f56-99ee-6604e10c294a",
-  "createdAt": "2023-02-02T15:05:34.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Большие данные",
+    "pageDescription": "",
+    "shortDescription": "Управление кластерами с помощью API",
+    "metaTitle": "Большие данные",
+    "metaDescription": "Создание кластера Все инструкции при работе с API выполняются в консоли. Для создания кластера Больших Данных необходимо выполнить следующее: curl -s -H",
+    "sectionTitle": "Большие данные",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "976e246d-959d-4f56-99ee-6604e10c294a",
+    "createdAt": "2023-02-02T15:05:34.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

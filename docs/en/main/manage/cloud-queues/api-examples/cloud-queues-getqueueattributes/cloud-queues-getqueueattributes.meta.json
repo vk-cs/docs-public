@@ -1,15 +1,15 @@
 {
-  "title": "GetQueueAttributes",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "GetQueueAttributes",
-  "metaDescription": "The request gets attributes for the specified queue.  Parameters of the Attribute Name request.N A list of attributes to get information for.supported",
-  "sectionTitle": "GetQueueAttributes",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 9,
-  "uuid": "da600b96-fe99-42a9-8760-4a48e8e8d598",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "GetQueueAttributes",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "GetQueueAttributes",
+    "metaDescription": "The request gets attributes for the specified queue.  Parameters of the Attribute Name request.N A list of attributes to get information for.supported",
+    "sectionTitle": "GetQueueAttributes",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 9,
+    "uuid": "da600b96-fe99-42a9-8760-4a48e8e8d598",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

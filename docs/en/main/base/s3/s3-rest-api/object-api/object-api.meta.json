@@ -1,15 +1,15 @@
 {
-  "title": "Object",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Object",
-  "metaDescription": "Operations with Objects: Get - Download an object from a bucket\nUpload - Upload an object to a bucket\nCopy - Copy an object in the bucket\nHeadObject - Get",
-  "sectionTitle": "Object",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "44c3a879-7fa3-4e76-9f59-145a2a30bdba",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Object",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Object",
+    "metaDescription": "Operations with Objects: Get - Download an object from a bucket\nUpload - Upload an object to a bucket\nCopy - Copy an object in the bucket\nHeadObject - Get",
+    "sectionTitle": "Object",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "44c3a879-7fa3-4e76-9f59-145a2a30bdba",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,20 +1,20 @@
 {
-  "title": "Project management",
-  "pageDescription": "Change of owner, increase of quotas, transfer of objects and other operations.",
-  "shortDescription": "Change of owner, increase of quotas, transfer of objects and other operations",
-  "metaTitle": "Project management",
-  "metaDescription": "Change of owner, increase of quotas, transfer of objects and other operations",
-  "sectionTitle": "Project management",
-  "icon": "",
-  "weight": 3,
-  "infobarItems": null,
-  "additionalUuids": [
-    "7b80e780-7934-405c-95d5-ca63b57a78ea",
-    "ca52dea4-484c-4fc0-aca7-8dcc7bcc3e4a",
-    "81277133-fcef-41c1-b899-c74a09c0cf3b",
-    "329740e0-8f15-4417-9362-1989d341b13e"
-  ],
-  "uuid": "add6e526-5ddf-4a95-814d-3a080aaa9aee",
-  "createdAt": "2023-04-17T13:29:08.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Project management",
+    "pageDescription": "Change of owner, increase of quotas, transfer of objects and other operations.",
+    "shortDescription": "Change of owner, increase of quotas, transfer of objects and other operations",
+    "metaTitle": "Project management",
+    "metaDescription": "Change of owner, increase of quotas, transfer of objects and other operations",
+    "sectionTitle": "Project management",
+    "icon": "",
+    "weight": 3,
+    "infobarItems": null,
+    "additionalUuids": [
+        "7b80e780-7934-405c-95d5-ca63b57a78ea",
+        "ca52dea4-484c-4fc0-aca7-8dcc7bcc3e4a",
+        "81277133-fcef-41c1-b899-c74a09c0cf3b",
+        "329740e0-8f15-4417-9362-1989d341b13e"
+    ],
+    "uuid": "add6e526-5ddf-4a95-814d-3a080aaa9aee",
+    "createdAt": "2023-04-17T13:29:08.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

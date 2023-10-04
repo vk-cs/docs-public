@@ -1,15 +1,15 @@
 {
-  "title": "Installing Docker CE on Ubuntu 18.04",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Installing Docker CE on Ubuntu 18.04",
-  "metaDescription": "Docker CE (Community Edition) is a platform for quickly building, debugging, and deploying applications. Docker CE allows you to quickly deploy applications",
-  "sectionTitle": "Installing Docker CE on Ubuntu 18.04",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "f919d208-35dd-4d62-b32b-e0b76ec76dde",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Installing Docker CE on Ubuntu 18.04",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Installing Docker CE on Ubuntu 18.04",
+    "metaDescription": "Docker CE (Community Edition) is a platform for quickly building, debugging, and deploying applications. Docker CE allows you to quickly deploy applications",
+    "sectionTitle": "Installing Docker CE on Ubuntu 18.04",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "f919d208-35dd-4d62-b32b-e0b76ec76dde",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

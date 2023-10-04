@@ -1,15 +1,15 @@
 {
-  "title": "Storage in cluster",
-  "pageDescription": "Each Kubernetes VK Cloud cluster is tightly integrated with VK Cloud storage services and allows you to create persistent volumes based on them. Here's how that integration works.",
-  "shortDescription": "Integration of Kubernetes clusters with VK Cloud storage services",
-  "metaTitle": "Storage in cluster",
-  "metaDescription": "",
-  "sectionTitle": "Storage in cluster",
-  "markdown": "Each Kubernetes VK Cloud cluster is tightly integrated with VK Cloud storage services and allows you to create persistent volumes based on them. Here's how that integration works.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 5,
-  "uuid": "00d84a35-fd8d-49cc-87bc-20e6347bfb84",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Storage in cluster",
+    "pageDescription": "Each Kubernetes VK Cloud cluster is tightly integrated with VK Cloud storage services and allows you to create persistent volumes based on them. Here's how that integration works.",
+    "shortDescription": "Integration of Kubernetes clusters with VK Cloud storage services",
+    "metaTitle": "Storage in cluster",
+    "metaDescription": "",
+    "sectionTitle": "Storage in cluster",
+    "markdown": "Each Kubernetes VK Cloud cluster is tightly integrated with VK Cloud storage services and allows you to create persistent volumes based on them. Here's how that integration works.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 5,
+    "uuid": "00d84a35-fd8d-49cc-87bc-20e6347bfb84",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

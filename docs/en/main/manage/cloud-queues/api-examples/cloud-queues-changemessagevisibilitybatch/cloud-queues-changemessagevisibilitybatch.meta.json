@@ -1,15 +1,15 @@
 {
-  "title": "ChangeMessageVisibilityBatch",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "ChangeMessageVisibilityBatch",
-  "metaDescription": "The request changes the visibility timeout of several messages at once. The result of the action for each message is reported separately in the response, and you can send",
-  "sectionTitle": "ChangeMessageVisibilityBatch",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "1c1de778-c8e1-4641-9a00-2f53a26126ec",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "ChangeMessageVisibilityBatch",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "ChangeMessageVisibilityBatch",
+    "metaDescription": "The request changes the visibility timeout of several messages at once. The result of the action for each message is reported separately in the response, and you can send",
+    "sectionTitle": "ChangeMessageVisibilityBatch",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "1c1de778-c8e1-4641-9a00-2f53a26126ec",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

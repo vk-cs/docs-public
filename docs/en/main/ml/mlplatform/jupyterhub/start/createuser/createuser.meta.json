@@ -1,15 +1,15 @@
 {
-  "title": "Creating new users",
-  "pageDescription": "Creating new users.",
-  "shortDescription": "Description of how to create a new JupyterHub user",
-  "metaTitle": "Creating new users",
-  "metaDescription": "Creating new users",
-  "sectionTitle": "Creating new users",
-  "markdown": "Creating new users",
-  "icon": "",
-  "weight": 0,
-  "infobarItems": null,
-  "uuid": "a5311849-6bbd-4e88-8022-4f85638a5c01",
-  "createdAt": "2022-10-13T08:25:04.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Creating new users",
+    "pageDescription": "Creating new users.",
+    "shortDescription": "Description of how to create a new JupyterHub user",
+    "metaTitle": "Creating new users",
+    "metaDescription": "Creating new users",
+    "sectionTitle": "Creating new users",
+    "markdown": "Creating new users",
+    "icon": "",
+    "weight": 0,
+    "infobarItems": null,
+    "uuid": "a5311849-6bbd-4e88-8022-4f85638a5c01",
+    "createdAt": "2022-10-13T08:25:04.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

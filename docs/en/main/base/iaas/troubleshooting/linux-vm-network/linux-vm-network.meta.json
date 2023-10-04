@@ -1,15 +1,15 @@
 {
-  "title": "Network in a Linux VM",
-  "pageDescription": "Diagnostics and elimination of typical network problems on Linux virtual machines.",
-  "shortDescription": "Diagnostics and assistance in troubleshooting typical network problems in Linux virtual machines",
-  "metaTitle": "Network in a Linux VM",
-  "metaDescription": "Diagnostics and elimination of typical network problems on Linux virtual machines.",
-  "sectionTitle": "Network in a Linux VM",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "39505792-9082-4c48-b2dc-00301b2d219d",
-  "createdAt": "2023-04-24T13:06:27.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Network in a Linux VM",
+    "pageDescription": "Diagnostics and elimination of typical network problems on Linux virtual machines.",
+    "shortDescription": "Diagnostics and assistance in troubleshooting typical network problems in Linux virtual machines",
+    "metaTitle": "Network in a Linux VM",
+    "metaDescription": "Diagnostics and elimination of typical network problems on Linux virtual machines.",
+    "sectionTitle": "Network in a Linux VM",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "39505792-9082-4c48-b2dc-00301b2d219d",
+    "createdAt": "2023-04-24T13:06:27.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

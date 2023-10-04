@@ -1,15 +1,15 @@
 {
-  "title": "ListQueues",
-  "pageDescription": "Примеры запроса и ответа для метода ListQueues.",
-  "shortDescription": "",
-  "metaTitle": "ListQueues",
-  "metaDescription": "Возвращает список ваших очередей в текущем регионе. Примеры запроса и ответа для метода ListQueues.",
-  "sectionTitle": "ListQueues",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 12,
-  "uuid": "1d2c976b-f518-4883-9b86-8392b6b84784",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "ListQueues",
+    "pageDescription": "Примеры запроса и ответа для метода ListQueues.",
+    "shortDescription": "",
+    "metaTitle": "ListQueues",
+    "metaDescription": "Возвращает список ваших очередей в текущем регионе. Примеры запроса и ответа для метода ListQueues.",
+    "sectionTitle": "ListQueues",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 12,
+    "uuid": "1d2c976b-f518-4883-9b86-8392b6b84784",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

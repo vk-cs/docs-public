@@ -1,15 +1,15 @@
 {
-  "title": "Connecting to NiFi",
-  "pageDescription": "Instructions for connecting to the NiFi cluster UI.",
-  "shortDescription": "Instructions for connecting to the NiFi cluster UI",
-  "metaTitle": "Connection",
-  "metaDescription": "Instructions for connecting to the NiFi cluster UI",
-  "sectionTitle": "Connecting to NiFi",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "cc0353b6-2d56-4725-ab26-b980bbfc69bd",
-  "createdAt": "2023-05-31T09:51:29.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Connecting to NiFi",
+    "pageDescription": "Instructions for connecting to the NiFi cluster UI.",
+    "shortDescription": "Instructions for connecting to the NiFi cluster UI",
+    "metaTitle": "Connection",
+    "metaDescription": "Instructions for connecting to the NiFi cluster UI",
+    "sectionTitle": "Connecting to NiFi",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "cc0353b6-2d56-4725-ab26-b980bbfc69bd",
+    "createdAt": "2023-05-31T09:51:29.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

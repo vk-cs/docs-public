@@ -1,15 +1,15 @@
 {
-  "title": "Database Monitoring: PostgreSQL Exporter",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Database Monitoring: PostgreSQL Exporter",
-  "metaDescription": "Hardware Configuration To run this monitoring script, install and configure servers using the following hardware: Prometheus",
-  "sectionTitle": "Database monitoring: PostgreSQL Exporter",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "fda4a0b5-6018-4308-aff0-993813ea9cc9",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Database Monitoring: PostgreSQL Exporter",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Database Monitoring: PostgreSQL Exporter",
+    "metaDescription": "Hardware Configuration To run this monitoring script, install and configure servers using the following hardware: Prometheus",
+    "sectionTitle": "Database monitoring: PostgreSQL Exporter",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "fda4a0b5-6018-4308-aff0-993813ea9cc9",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

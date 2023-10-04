@@ -1,15 +1,15 @@
 {
-  "title": "Установка Gatekeeper",
-  "pageDescription": "Как установить контроллер Gatekeeper в кластер Kubernetes.",
-  "shortDescription": "Как установить контроллер Gatekeeper",
-  "metaTitle": "Установка Gatekeeper",
-  "metaDescription": "",
-  "sectionTitle": "Установка Gatekeeper",
-  "markdown": "Как установить контроллер Gatekeeper в кластер Kubernetes.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "17b0603f-05ef-4b3a-b672-cc4c40eadc95",
-  "createdAt": "2022-12-15T08:05:18.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Установка Gatekeeper",
+    "pageDescription": "Как установить контроллер Gatekeeper в кластер Kubernetes.",
+    "shortDescription": "Как установить контроллер Gatekeeper",
+    "metaTitle": "Установка Gatekeeper",
+    "metaDescription": "",
+    "sectionTitle": "Установка Gatekeeper",
+    "markdown": "Как установить контроллер Gatekeeper в кластер Kubernetes.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "17b0603f-05ef-4b3a-b672-cc4c40eadc95",
+    "createdAt": "2022-12-15T08:05:18.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

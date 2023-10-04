@@ -1,15 +1,15 @@
 {
-  "title": "About the Object storage service",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "About the Object storage service",
-  "metaDescription": "Description Object Storage or S3 can be used to store and retrieve any amount of data anytime from anywhere on the Internet. These tasks can be accomplishe",
-  "sectionTitle": "About the Object storage service",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "5c3782e9-d62e-4b75-876e-e5b29e72afd1",
-  "createdAt": "2023-04-04T08:48:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "About the Object storage service",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "About the Object storage service",
+    "metaDescription": "Description Object Storage or S3 can be used to store and retrieve any amount of data anytime from anywhere on the Internet. These tasks can be accomplishe",
+    "sectionTitle": "About the Object storage service",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "5c3782e9-d62e-4b75-876e-e5b29e72afd1",
+    "createdAt": "2023-04-04T08:48:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

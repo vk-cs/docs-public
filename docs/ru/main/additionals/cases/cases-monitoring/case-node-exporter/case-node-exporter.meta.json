@@ -1,15 +1,15 @@
 {
-  "title": "Мониторинг серверов на основе Prometheus+Grafana+Node_exporter",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Мониторинг серверов на основе Prometheus+Grafana+Node_exporter",
-  "metaDescription": "Конфигурация оборудования Установленный и настроенный сервер ОС Ubuntu 18.04 LTS x86_64. Внимание При использовании серверов и оборудования других версий н",
-  "sectionTitle": "Мониторинг серверов на основе Prometheus+Grafana+Node_exporter",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "b5de25a5-f6c6-4c8f-9dec-375bb0e2d0cb",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Мониторинг серверов на основе Prometheus+Grafana+Node_exporter",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Мониторинг серверов на основе Prometheus+Grafana+Node_exporter",
+    "metaDescription": "Конфигурация оборудования Установленный и настроенный сервер ОС Ubuntu 18.04 LTS x86_64. Внимание При использовании серверов и оборудования других версий н",
+    "sectionTitle": "Мониторинг серверов на основе Prometheus+Grafana+Node_exporter",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "b5de25a5-f6c6-4c8f-9dec-375bb0e2d0cb",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

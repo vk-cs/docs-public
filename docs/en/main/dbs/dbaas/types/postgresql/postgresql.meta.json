@@ -1,14 +1,14 @@
 {
-  "title": "Postgres",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Postgres",
-  "metaDescription": "Описание PostgreSQL — это объектно-реляционная система управления базами данных (ОРСУБД, ORDBMS), основанная на POSTGRES. PostgreSQL — СУБД с открытым исхо",
-  "sectionTitle": "Postgres",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "uuid": "a1e20628-5910-4fbe-82ec-26b45dd34f88",
-  "createdAt": "2023-03-17T13:58:06.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Postgres",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Postgres",
+    "metaDescription": "Описание PostgreSQL — это объектно-реляционная система управления базами данных (ОРСУБД, ORDBMS), основанная на POSTGRES. PostgreSQL — СУБД с открытым исхо",
+    "sectionTitle": "Postgres",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "uuid": "a1e20628-5910-4fbe-82ec-26b45dd34f88",
+    "createdAt": "2023-03-17T13:58:06.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

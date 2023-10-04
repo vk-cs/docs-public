@@ -1,15 +1,15 @@
 {
-  "title": "TagQueue",
-  "pageDescription": "Примеры запроса и ответа для метода TagQueue.",
-  "shortDescription": "",
-  "metaTitle": "TagQueue",
-  "metaDescription": "Добавьте теги распределения затрат в указанную очередь VK Cloud SQS. Примеры запроса и ответа для метода TagQueue.",
-  "sectionTitle": "TagQueue",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 20,
-  "uuid": "115e810b-23d0-4500-8c39-688a3d684150",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "TagQueue",
+    "pageDescription": "Примеры запроса и ответа для метода TagQueue.",
+    "shortDescription": "",
+    "metaTitle": "TagQueue",
+    "metaDescription": "Добавьте теги распределения затрат в указанную очередь VK Cloud SQS. Примеры запроса и ответа для метода TagQueue.",
+    "sectionTitle": "TagQueue",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 20,
+    "uuid": "115e810b-23d0-4500-8c39-688a3d684150",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

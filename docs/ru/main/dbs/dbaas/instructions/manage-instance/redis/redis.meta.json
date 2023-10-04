@@ -1,15 +1,15 @@
 {
-  "title": "Redis",
-  "pageDescription": "Управление инстансами Redis.",
-  "shortDescription": "",
-  "metaTitle": "Redis",
-  "metaDescription": "Базы данных VK Cloud: управление инстансами Redis.",
-  "sectionTitle": "Redis",
-  "markdown": "Управление инстансами Redis.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 5,
-  "uuid": "1d9427ef-74a5-49df-86dc-e61b95afd3fa",
-  "createdAt": "2023-06-02T07:32:11.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Redis",
+    "pageDescription": "Управление инстансами Redis.",
+    "shortDescription": "",
+    "metaTitle": "Redis",
+    "metaDescription": "Базы данных VK Cloud: управление инстансами Redis.",
+    "sectionTitle": "Redis",
+    "markdown": "Управление инстансами Redis.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 5,
+    "uuid": "1d9427ef-74a5-49df-86dc-e61b95afd3fa",
+    "createdAt": "2023-06-02T07:32:11.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

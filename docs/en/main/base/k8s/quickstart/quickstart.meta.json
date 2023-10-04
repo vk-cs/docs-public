@@ -1,15 +1,15 @@
 {
-  "title": "Quick start",
-  "pageDescription": "Getting started with the Kubernetes cluster and getting acquainted with its main features.",
-  "shortDescription": "Getting started with Kubernetes",
-  "metaTitle": "Quick start",
-  "metaDescription": "",
-  "sectionTitle": "Quick start",
-  "markdown": "Getting started with the Kubernetes cluster and getting acquainted with its main features.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "b601c190-7aaf-4419-a976-ecd52f7c7caf",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Quick start",
+    "pageDescription": "Getting started with the Kubernetes cluster and getting acquainted with its main features.",
+    "shortDescription": "Getting started with Kubernetes",
+    "metaTitle": "Quick start",
+    "metaDescription": "",
+    "sectionTitle": "Quick start",
+    "markdown": "Getting started with the Kubernetes cluster and getting acquainted with its main features.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "b601c190-7aaf-4419-a976-ecd52f7c7caf",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

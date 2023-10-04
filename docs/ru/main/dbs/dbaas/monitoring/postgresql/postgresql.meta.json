@@ -1,14 +1,14 @@
 {
-  "title": "Мониторинг PostgreSQL",
-  "pageDescription": "Мониторинг состояния инстансов PostgreSQL c предоставлением подробной информации о метриках отдельных хостов (как мастеров, так и реплик).",
-  "shortDescription": "Мониторинг развернутых инстансов PostgreSQL",
-  "metaTitle": "Мониторинг PostgreSQL",
-  "metaDescription": "",
-  "sectionTitle": "Мониторинг PostgreSQL",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "uuid": "27d26b64-a0c0-495b-9d03-bff1068b8b15",
-  "createdAt": "2023-02-28T12:19:42.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Мониторинг PostgreSQL",
+    "pageDescription": "Мониторинг состояния инстансов PostgreSQL c предоставлением подробной информации о метриках отдельных хостов (как мастеров, так и реплик).",
+    "shortDescription": "Мониторинг развернутых инстансов PostgreSQL",
+    "metaTitle": "Мониторинг PostgreSQL",
+    "metaDescription": "",
+    "sectionTitle": "Мониторинг PostgreSQL",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "uuid": "27d26b64-a0c0-495b-9d03-bff1068b8b15",
+    "createdAt": "2023-02-28T12:19:42.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

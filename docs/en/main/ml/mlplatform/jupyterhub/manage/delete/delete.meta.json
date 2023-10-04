@@ -1,15 +1,15 @@
 {
-  "title": "Deleting an instance",
-  "pageDescription": "Description of how to remove a JupyterHub instance.",
-  "shortDescription": "Delete JupyterHub instance",
-  "metaTitle": "Deleting an instance",
-  "metaDescription": "Deleting a JupyterHub instance",
-  "sectionTitle": "Deleting an instance",
-  "markdown": "Deleting an instance",
-  "icon": "",
-  "weight": 1,
-  "infobarItems": null,
-  "uuid": "81547dc2-62dd-4677-a7f3-caf30053b322",
-  "createdAt": "2022-10-07T09:38:12.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Deleting an instance",
+    "pageDescription": "Description of how to remove a JupyterHub instance.",
+    "shortDescription": "Delete JupyterHub instance",
+    "metaTitle": "Deleting an instance",
+    "metaDescription": "Deleting a JupyterHub instance",
+    "sectionTitle": "Deleting an instance",
+    "markdown": "Deleting an instance",
+    "icon": "",
+    "weight": 1,
+    "infobarItems": null,
+    "uuid": "81547dc2-62dd-4677-a7f3-caf30053b322",
+    "createdAt": "2022-10-07T09:38:12.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

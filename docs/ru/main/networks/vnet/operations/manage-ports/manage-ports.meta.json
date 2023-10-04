@@ -1,15 +1,15 @@
 {
-  "title": "Управление портами",
-  "pageDescription": "Управление портами OpenStack в сервисе виртуальных сетей.",
-  "shortDescription": "Базовые операции с портами OpenStack",
-  "metaTitle": "Управление портами",
-  "metaDescription": "",
-  "sectionTitle": "Управление портами",
-  "markdown": "Управление портами OpenStack в сервисе виртуальных сетей.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "41005c76-6d04-4731-af40-02e70dc3c86f",
-  "createdAt": "2022-12-27T09:51:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Управление портами",
+    "pageDescription": "Управление портами OpenStack в сервисе виртуальных сетей.",
+    "shortDescription": "Базовые операции с портами OpenStack",
+    "metaTitle": "Управление портами",
+    "metaDescription": "",
+    "sectionTitle": "Управление портами",
+    "markdown": "Управление портами OpenStack в сервисе виртуальных сетей.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "41005c76-6d04-4731-af40-02e70dc3c86f",
+    "createdAt": "2022-12-27T09:51:35.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

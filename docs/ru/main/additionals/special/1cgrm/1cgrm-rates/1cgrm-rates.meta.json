@@ -1,15 +1,15 @@
 {
-  "title": "Тарифы и условия",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Тарифы и условия",
-  "metaDescription": "Стоимость Для всех программных продуктов сервиса 1С: ГРМ действует общий принцип расчет стоимости, вне зависимости от типа приложения, состоящий из 3 базов",
-  "sectionTitle": "Тарифы и условия",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "e4449ce8-8cf8-480b-bb6d-bd7ff0f726c3",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Тарифы и условия",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Тарифы и условия",
+    "metaDescription": "Стоимость Для всех программных продуктов сервиса 1С: ГРМ действует общий принцип расчет стоимости, вне зависимости от типа приложения, состоящий из 3 базов",
+    "sectionTitle": "Тарифы и условия",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "e4449ce8-8cf8-480b-bb6d-bd7ff0f726c3",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

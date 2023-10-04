@@ -1,15 +1,15 @@
 {
-  "title": "Резервное копирование",
-  "pageDescription": "",
-  "shortDescription": "OpenAPI-спецификация сервиса Резервное копирование",
-  "metaTitle": "Резервное копирование",
-  "metaDescription": "",
-  "sectionTitle": "Резервное копирование",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "b7710706-2554-40c7-b180-2015f9b4c15d",
-  "createdAt": "2022-12-15T13:23:52.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Резервное копирование",
+    "pageDescription": "",
+    "shortDescription": "OpenAPI-спецификация сервиса Резервное копирование",
+    "metaTitle": "Резервное копирование",
+    "metaDescription": "",
+    "sectionTitle": "Резервное копирование",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "b7710706-2554-40c7-b180-2015f9b4c15d",
+    "createdAt": "2022-12-15T13:23:52.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

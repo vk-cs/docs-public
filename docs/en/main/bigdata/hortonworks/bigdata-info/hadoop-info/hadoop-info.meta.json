@@ -1,15 +1,15 @@
 {
-  "title": "Hadoop",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Hadoop",
-  "metaDescription": "The Apache Hadoop project develops open source software for reliable, scalable distributed computing. The Apache Hadoop software library is a platform that",
-  "sectionTitle": "Hadoop",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "377d67cd-f41a-4ea2-9a4f-b4638e708726",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Hadoop",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Hadoop",
+    "metaDescription": "The Apache Hadoop project develops open source software for reliable, scalable distributed computing. The Apache Hadoop software library is a platform that",
+    "sectionTitle": "Hadoop",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "377d67cd-f41a-4ea2-9a4f-b4638e708726",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

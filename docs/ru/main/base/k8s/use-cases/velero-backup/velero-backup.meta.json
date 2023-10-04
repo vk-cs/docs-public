@@ -1,15 +1,15 @@
 {
-  "title": "Резервное копирование с помощью Velero",
-  "pageDescription": "Как использовать Velero для резервного копирования и восстановления ресурсов кластера Kubernetes.",
-  "shortDescription": "Как использовать Velero для резервного копирования и восстановления ресурсов кластера Kubernetes",
-  "metaTitle": "Резервное копирование с помощью Velero",
-  "metaDescription": "",
-  "sectionTitle": "Резервное копирование с помощью Velero",
-  "markdown": "Как использовать Velero для резервного копирования и восстановления ресурсов кластера Kubernetes.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 6,
-  "uuid": "f63b1d07-3c96-4910-9867-dfa1a6e7df66",
-  "createdAt": "2022-12-15T08:05:18.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Резервное копирование с помощью Velero",
+    "pageDescription": "Как использовать Velero для резервного копирования и восстановления ресурсов кластера Kubernetes.",
+    "shortDescription": "Как использовать Velero для резервного копирования и восстановления ресурсов кластера Kubernetes",
+    "metaTitle": "Резервное копирование с помощью Velero",
+    "metaDescription": "",
+    "sectionTitle": "Резервное копирование с помощью Velero",
+    "markdown": "Как использовать Velero для резервного копирования и восстановления ресурсов кластера Kubernetes.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 6,
+    "uuid": "f63b1d07-3c96-4910-9867-dfa1a6e7df66",
+    "createdAt": "2022-12-15T08:05:18.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

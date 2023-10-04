@@ -1,15 +1,15 @@
 {
-  "title": "Prometheus Kit",
-  "pageDescription": "Стек Prometheus, Alertmanager и Grafana предназначен для построения систем мониторинга.",
-  "shortDescription": "Стек Prometheus, Alertmanager и Grafana предназначен для построения систем мониторинга",
-  "metaTitle": "Prometheus Kit",
-  "metaDescription": "Стек Prometheus, Alertmanager и Grafana предназначен для построения систем мониторинга.",
-  "sectionTitle": "Prometheus Kit",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 5,
-  "uuid": "2a9dd393-ad10-4606-ac2b-3fa5557844b3",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Prometheus Kit",
+    "pageDescription": "Стек Prometheus, Alertmanager и Grafana предназначен для построения систем мониторинга.",
+    "shortDescription": "Стек Prometheus, Alertmanager и Grafana предназначен для построения систем мониторинга",
+    "metaTitle": "Prometheus Kit",
+    "metaDescription": "Стек Prometheus, Alertmanager и Grafana предназначен для построения систем мониторинга.",
+    "sectionTitle": "Prometheus Kit",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 5,
+    "uuid": "2a9dd393-ad10-4606-ac2b-3fa5557844b3",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Istio",
-  "pageDescription": "The configuration and installation of the Istio addon is described here.",
-  "shortDescription": "",
-  "metaTitle": "Istio",
-  "metaDescription": "VK Cloud containers service: configuring and installing the Istio addon.",
-  "sectionTitle": "Istio",
-  "markdown": "The configuration and installation of the Istio addon is described here.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "ca36f6da-245d-4916-ab63-454216b11c22",
-  "createdAt": "2023-07-07T09:58:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Istio",
+    "pageDescription": "The configuration and installation of the Istio addon is described here.",
+    "shortDescription": "",
+    "metaTitle": "Istio",
+    "metaDescription": "VK Cloud containers service: configuring and installing the Istio addon.",
+    "sectionTitle": "Istio",
+    "markdown": "The configuration and installation of the Istio addon is described here.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "ca36f6da-245d-4916-ab63-454216b11c22",
+    "createdAt": "2023-07-07T09:58:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

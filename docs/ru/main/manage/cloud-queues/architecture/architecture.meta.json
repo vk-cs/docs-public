@@ -1,19 +1,19 @@
 {
-  "title": "Архитектура",
-  "pageDescription": "Архитектура сервиса Cloud Queues.",
-  "shortDescription": "Архитектура сервиса Cloud Queues",
-  "metaTitle": "Архитектура",
-  "metaDescription": "В этом разделе описываются части распределенной системы обмена сообщениями и объясняется жизненный цикл сообщения Cloud Queues. Распределенные очереди Расп",
-  "sectionTitle": "Архитектура",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "d1227978-7c37-46ae-a57e-2e5dd6d7abc0",
-  "additionalUuids": [
-    "010bf8bc-d94a-4098-8a9f-423f3c090eed",
-    "525e9258-365b-4dde-86f8-f63592c39f95"
-  ],
-  "createdAt": "2023-04-12T09:23:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Архитектура",
+    "pageDescription": "Архитектура сервиса Cloud Queues.",
+    "shortDescription": "Архитектура сервиса Cloud Queues",
+    "metaTitle": "Архитектура",
+    "metaDescription": "В этом разделе описываются части распределенной системы обмена сообщениями и объясняется жизненный цикл сообщения Cloud Queues. Распределенные очереди Расп",
+    "sectionTitle": "Архитектура",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "d1227978-7c37-46ae-a57e-2e5dd6d7abc0",
+    "additionalUuids": [
+        "010bf8bc-d94a-4098-8a9f-423f3c090eed",
+        "525e9258-365b-4dde-86f8-f63592c39f95"
+    ],
+    "createdAt": "2023-04-12T09:23:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

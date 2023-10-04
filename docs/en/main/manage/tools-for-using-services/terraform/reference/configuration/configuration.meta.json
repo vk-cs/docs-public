@@ -1,15 +1,15 @@
 {
-  "title": "Configuration files",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Configuration files",
-  "metaDescription": "",
-  "sectionTitle": "Configuration files",
-  "markdown": "",
-  "icon": "",
-  "weight": 2,
-  "infobarItems": null,
-  "uuid": "de47c0fe-6e0d-4d2f-b932-d7f400bb881f",
-  "createdAt": "2023-05-26T16:45:20.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Configuration files",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Configuration files",
+    "metaDescription": "",
+    "sectionTitle": "Configuration files",
+    "markdown": "",
+    "icon": "",
+    "weight": 2,
+    "infobarItems": null,
+    "uuid": "de47c0fe-6e0d-4d2f-b932-d7f400bb881f",
+    "createdAt": "2023-05-26T16:45:20.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

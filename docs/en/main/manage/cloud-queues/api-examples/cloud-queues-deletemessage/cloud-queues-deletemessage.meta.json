@@ -1,15 +1,15 @@
 {
-  "title": "DeleteMessage",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "DeleteMessage",
-  "metaDescription": "The request deletes the specified message from the specified queue. To select a message to delete, use the recipthandle character of the message (not the one, Message",
-  "sectionTitle": "DeleteMessage",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 6,
-  "uuid": "007f6c88-a862-4486-b51a-632d47d0b121",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "DeleteMessage",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "DeleteMessage",
+    "metaDescription": "The request deletes the specified message from the specified queue. To select a message to delete, use the recipthandle character of the message (not the one, Message",
+    "sectionTitle": "DeleteMessage",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 6,
+    "uuid": "007f6c88-a862-4486-b51a-632d47d0b121",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Connecting to Kafka",
-  "pageDescription": "Instructions for connecting to the NiFi cluster UI.",
-  "shortDescription": "Instructions for connecting to the NiFi cluster UI",
-  "metaTitle": "Connecting to Kafka",
-  "metaDescription": "Kafka connection",
-  "sectionTitle": "Connecting to Kafka",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "ffe36397-af75-4ef6-9105-d3155fe1a8ac",
-  "createdAt": "2023-05-31T09:51:29.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Connecting to Kafka",
+    "pageDescription": "Instructions for connecting to the NiFi cluster UI.",
+    "shortDescription": "Instructions for connecting to the NiFi cluster UI",
+    "metaTitle": "Connecting to Kafka",
+    "metaDescription": "Kafka connection",
+    "sectionTitle": "Connecting to Kafka",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "ffe36397-af75-4ef6-9105-d3155fe1a8ac",
+    "createdAt": "2023-05-31T09:51:29.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

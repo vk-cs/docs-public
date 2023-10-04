@@ -1,15 +1,15 @@
 {
-  "title": "Удаление инстанса",
-  "pageDescription": "Описание процедуры удаления инстанса MLflow Deploy.",
-  "shortDescription": "",
-  "metaTitle": "Удаление инстанса",
-  "metaDescription": "Удаление инстанса MLflow Deploy",
-  "sectionTitle": "Удаление инстанса",
-  "markdown": "Описание процедуры удаления инстанса MLflow Deploy.",
-  "icon": "",
-  "weight": 2,
-  "infobarItems": null,
-  "uuid": "0362dd86-b424-48ae-a1ad-9b7f90c6427e",
-  "createdAt": "2022-12-20T16:13:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Удаление инстанса",
+    "pageDescription": "Описание процедуры удаления инстанса MLflow Deploy.",
+    "shortDescription": "",
+    "metaTitle": "Удаление инстанса",
+    "metaDescription": "Удаление инстанса MLflow Deploy",
+    "sectionTitle": "Удаление инстанса",
+    "markdown": "Описание процедуры удаления инстанса MLflow Deploy.",
+    "icon": "",
+    "weight": 2,
+    "infobarItems": null,
+    "uuid": "0362dd86-b424-48ae-a1ad-9b7f90c6427e",
+    "createdAt": "2022-12-20T16:13:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

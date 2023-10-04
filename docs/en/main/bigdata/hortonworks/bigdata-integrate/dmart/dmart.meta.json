@@ -1,15 +1,15 @@
 {
-  "title": "Data marts",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Data marts",
-  "metaDescription": "Description Data Mart is a slice of the database, which is designed to represent an array of highly specialized thematic information, focused on specific q",
-  "sectionTitle": "Data marts",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "524e479f-0522-4bff-8bdb-66e66cf272f7",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Data marts",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Data marts",
+    "metaDescription": "Description Data Mart is a slice of the database, which is designed to represent an array of highly specialized thematic information, focused on specific q",
+    "sectionTitle": "Data marts",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "524e479f-0522-4bff-8bdb-66e66cf272f7",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

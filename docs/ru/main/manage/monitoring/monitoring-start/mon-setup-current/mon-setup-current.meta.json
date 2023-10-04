@@ -1,15 +1,15 @@
 {
-  "title": "Установка в существующие ВМ",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Установка в существующие ВМ",
-  "metaDescription": "Статья расскажет о том, как установить мониторинг в существующую виртуальную машину Linux. Перейдите в панель VK Cloud\nНайдите в списке целевую виртуальную маши",
-  "sectionTitle": "Установка в существующие ВМ",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "7f1efbce-d7a9-40f7-8af6-e9d7f29fdd62",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Установка в существующие ВМ",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Установка в существующие ВМ",
+    "metaDescription": "Статья расскажет о том, как установить мониторинг в существующую виртуальную машину Linux. Перейдите в панель VK Cloud\nНайдите в списке целевую виртуальную маши",
+    "sectionTitle": "Установка в существующие ВМ",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "7f1efbce-d7a9-40f7-8af6-e9d7f29fdd62",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

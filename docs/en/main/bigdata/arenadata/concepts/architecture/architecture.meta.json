@@ -1,15 +1,15 @@
 {
-  "title": "Architecture",
-  "pageDescription": "Architecture",
-  "shortDescription": "Architecture of the Arenadata Hadoop solution",
-  "metaTitle": "Architecture",
-  "metaDescription": "Architecture",
-  "sectionTitle": "Architecture",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "ef359ce8-9e9d-486f-a5f0-d6878086b0b9",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Architecture",
+    "pageDescription": "Architecture",
+    "shortDescription": "Architecture of the Arenadata Hadoop solution",
+    "metaTitle": "Architecture",
+    "metaDescription": "Architecture",
+    "sectionTitle": "Architecture",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "ef359ce8-9e9d-486f-a5f0-d6878086b0b9",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

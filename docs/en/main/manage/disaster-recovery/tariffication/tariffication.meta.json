@@ -1,14 +1,14 @@
 {
-  "title": "Tariffication",
-  "pageDescription": "Features of the VK Cloud Disaster Recovery service billing, cost calculation.",
-  "shortDescription": "Rules of service charging, how to calculate the cost of using the service",
-  "metaTitle": "Tariffication",
-  "metaDescription": "Features of the VK Cloud Disaster Recovery service billing, cost calculation",
-  "sectionTitle": "Tariffication",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "3a2a66f7-907b-4d3f-9bbb-d2fa5fcde780",
-  "createdAt": "2022-07-18T13:31:33.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Tariffication",
+    "pageDescription": "Features of the VK Cloud Disaster Recovery service billing, cost calculation.",
+    "shortDescription": "Rules of service charging, how to calculate the cost of using the service",
+    "metaTitle": "Tariffication",
+    "metaDescription": "Features of the VK Cloud Disaster Recovery service billing, cost calculation",
+    "sectionTitle": "Tariffication",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "3a2a66f7-907b-4d3f-9bbb-d2fa5fcde780",
+    "createdAt": "2022-07-18T13:31:33.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

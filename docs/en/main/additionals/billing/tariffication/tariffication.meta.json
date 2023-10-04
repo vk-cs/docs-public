@@ -1,17 +1,17 @@
 {
-  "title": "Tariffication",
-  "pageDescription": "Calculation of the cost of using VK Cloud services: manually using a price list or using an online calculator.",
-  "shortDescription": "Calculation of the cost of VK Cloud services",
-  "metaTitle": "Tariffication",
-  "metaDescription": "Calculation of the cost of using VK Cloud services: manually using a price list or using an online calculator.",
-  "sectionTitle": "Tariffication",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "f1ced811-f6c4-4183-ab37-7540f6fbe1f3",
-  "additionalUuids": [
-    "5f3d9a45-20c9-430f-82a4-26796052fb44"
-  ],
-  "createdAt": "2023-05-22T13:23:03.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Tariffication",
+    "pageDescription": "Calculation of the cost of using VK Cloud services: manually using a price list or using an online calculator.",
+    "shortDescription": "Calculation of the cost of VK Cloud services",
+    "metaTitle": "Tariffication",
+    "metaDescription": "Calculation of the cost of using VK Cloud services: manually using a price list or using an online calculator.",
+    "sectionTitle": "Tariffication",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "f1ced811-f6c4-4183-ab37-7540f6fbe1f3",
+    "additionalUuids": [
+        "5f3d9a45-20c9-430f-82a4-26796052fb44"
+    ],
+    "createdAt": "2023-05-22T13:23:03.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

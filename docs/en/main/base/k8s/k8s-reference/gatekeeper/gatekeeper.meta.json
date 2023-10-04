@@ -1,15 +1,15 @@
 {
-  "title": "Gatekeeper",
-  "pageDescription": "How to use Gatekeeper to create and enforce constraints for Kubernetes resources.",
-  "shortDescription": "How to use Gatekeeper in the cluster to create and enforce constraints.",
-  "metaTitle": "Gatekeeper",
-  "metaDescription": "",
-  "sectionTitle": "Gatekeeper",
-  "markdown": "How to use Gatekeeper to create and enforce constraints for Kubernetes resources.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "e032a1cc-3c3a-473b-a696-3e0d779608ab",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Gatekeeper",
+    "pageDescription": "How to use Gatekeeper to create and enforce constraints for Kubernetes resources.",
+    "shortDescription": "How to use Gatekeeper in the cluster to create and enforce constraints.",
+    "metaTitle": "Gatekeeper",
+    "metaDescription": "",
+    "sectionTitle": "Gatekeeper",
+    "markdown": "How to use Gatekeeper to create and enforce constraints for Kubernetes resources.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "e032a1cc-3c3a-473b-a696-3e0d779608ab",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

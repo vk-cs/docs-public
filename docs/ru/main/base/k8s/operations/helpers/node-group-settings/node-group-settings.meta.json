@@ -1,15 +1,15 @@
 {
-  "title": "Настройки групп worker-узлов",
-  "pageDescription": "Перечень всех настроек групп worker-узлов.",
-  "shortDescription": "Перечень всех настроек групп worker-узлов",
-  "metaTitle": "Настройки групп worker-узлов",
-  "metaDescription": "",
-  "sectionTitle": "Настройки групп worker-узлов",
-  "markdown": "Перечень всех настроек групп worker-узлов.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "28f82307-4c0d-4591-99c8-6c32a919c8db",
-  "createdAt": "2022-12-15T08:05:18.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Настройки групп worker-узлов",
+    "pageDescription": "Перечень всех настроек групп worker-узлов.",
+    "shortDescription": "Перечень всех настроек групп worker-узлов",
+    "metaTitle": "Настройки групп worker-узлов",
+    "metaDescription": "",
+    "sectionTitle": "Настройки групп worker-узлов",
+    "markdown": "Перечень всех настроек групп worker-узлов.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "28f82307-4c0d-4591-99c8-6c32a919c8db",
+    "createdAt": "2022-12-15T08:05:18.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "ClickHouse",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "ClickHouse",
-  "metaDescription": "Описание ClickHouse — это колоночная аналитическая СУБД с открытым кодом, позволяющая выполнять аналитические запросы в режиме реального времени на структу",
-  "sectionTitle": "ClickHouse",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "4490f5cd-3c8b-4105-9151-78a48199dc21",
-  "createdAt": "2023-02-28T12:19:42.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "ClickHouse",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "ClickHouse",
+    "metaDescription": "Описание ClickHouse — это колоночная аналитическая СУБД с открытым кодом, позволяющая выполнять аналитические запросы в режиме реального времени на структу",
+    "sectionTitle": "ClickHouse",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "4490f5cd-3c8b-4105-9151-78a48199dc21",
+    "createdAt": "2023-02-28T12:19:42.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

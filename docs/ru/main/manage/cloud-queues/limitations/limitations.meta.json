@@ -1,18 +1,18 @@
 {
-  "title": "Ограничения",
-  "pageDescription": "Ограничения по использованию сервиса Cloud Queues.",
-  "shortDescription": "Ограничения по использованию сервиса",
-  "metaTitle": "Ограничения",
-  "metaDescription": "Ограничения по использованию сервиса Cloud Queues.",
-  "sectionTitle": "Ограничения",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "b0dd83ae-84b9-4a59-99df-174f0742fb0d",
-  "additionalUuids": [
-    "eb4ff2e4-c68f-4b21-b29a-46abb2b82f96"
-  ],
-  "createdAt": "2023-04-12T09:23:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Ограничения",
+    "pageDescription": "Ограничения по использованию сервиса Cloud Queues.",
+    "shortDescription": "Ограничения по использованию сервиса",
+    "metaTitle": "Ограничения",
+    "metaDescription": "Ограничения по использованию сервиса Cloud Queues.",
+    "sectionTitle": "Ограничения",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "b0dd83ae-84b9-4a59-99df-174f0742fb0d",
+    "additionalUuids": [
+        "eb4ff2e4-c68f-4b21-b29a-46abb2b82f96"
+    ],
+    "createdAt": "2023-04-12T09:23:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Signed URLs",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Signed URLs",
-  "metaDescription": "A pre-signed URL grants access to the object specified in the URL, provided that the creator of the pre-signed URL has permission to access that object. Pr",
-  "sectionTitle": "Signed URLs",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 6,
-  "uuid": "ea6eeb0b-3ef1-49dc-91f7-f1c7e5f820b6",
-  "createdAt": "2023-04-04T08:48:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Signed URLs",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Signed URLs",
+    "metaDescription": "A pre-signed URL grants access to the object specified in the URL, provided that the creator of the pre-signed URL has permission to access that object. Pr",
+    "sectionTitle": "Signed URLs",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 6,
+    "uuid": "ea6eeb0b-3ef1-49dc-91f7-f1c7e5f820b6",
+    "createdAt": "2023-04-04T08:48:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Images meta tags",
-  "sectionTitle": "Images meta tags",
-  "metaTitle": "Images meta tags",
-  "pageDescription": "Clarifying infrastructure settings",
-  "shortDescription": "Clarifying settings for infrastructure",
-  "metaDescription": "Clarifying settings for infrastructure",
-  "markdown": "Clarifying infrastructure settings",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "87876f2a-95b5-476f-9324-35bc1006cca4",
-  "createdAt": "2023-04-24T13:06:27.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Images meta tags",
+    "sectionTitle": "Images meta tags",
+    "metaTitle": "Images meta tags",
+    "pageDescription": "Clarifying infrastructure settings",
+    "shortDescription": "Clarifying settings for infrastructure",
+    "metaDescription": "Clarifying settings for infrastructure",
+    "markdown": "Clarifying infrastructure settings",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "87876f2a-95b5-476f-9324-35bc1006cca4",
+    "createdAt": "2023-04-24T13:06:27.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

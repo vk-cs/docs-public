@@ -1,18 +1,18 @@
 {
-  "title": "Резервное копирование по стратегии GFS",
-  "pageDescription": "",
-  "shortDescription": "Стратегия долгосрочного хранения резервных копий GFS",
-  "metaTitle": "Резервное копирование по стратегии GFS",
-  "metaDescription": "Статья описывает стратегию долгосрочного хранения бекапов GFS.",
-  "sectionTitle": "Резервное копирование по стратегии GFS",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "additionalUuids": [
-    "32918039-cfc5-49f5-9300-a6b2422af0f5"
-  ],
-  "uuid": "66461ab8-763a-4442-bc7d-67d5160c07c5",
-  "createdAt": "2023-03-15T12:06:39.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Резервное копирование по стратегии GFS",
+    "pageDescription": "",
+    "shortDescription": "Стратегия долгосрочного хранения резервных копий GFS",
+    "metaTitle": "Резервное копирование по стратегии GFS",
+    "metaDescription": "Статья описывает стратегию долгосрочного хранения бекапов GFS.",
+    "sectionTitle": "Резервное копирование по стратегии GFS",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "additionalUuids": [
+        "32918039-cfc5-49f5-9300-a6b2422af0f5"
+    ],
+    "uuid": "66461ab8-763a-4442-bc7d-67d5160c07c5",
+    "createdAt": "2023-03-15T12:06:39.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

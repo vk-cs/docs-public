@@ -1,15 +1,15 @@
 {
-  "title": "Creating a cluster",
-  "pageDescription": "Creating an ADH Cluster",
-  "shortDescription": "Description of the cluster creation procedure",
-  "metaTitle": "Creating an ADH Cluster",
-  "metaDescription": "Creating an ADH Cluster",
-  "sectionTitle": "Creating an ADH Cluster",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "0e9bed0b-e96d-40ca-8281-c60fcb7e0955",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Creating a cluster",
+    "pageDescription": "Creating an ADH Cluster",
+    "shortDescription": "Description of the cluster creation procedure",
+    "metaTitle": "Creating an ADH Cluster",
+    "metaDescription": "Creating an ADH Cluster",
+    "sectionTitle": "Creating an ADH Cluster",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "0e9bed0b-e96d-40ca-8281-c60fcb7e0955",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

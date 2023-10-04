@@ -1,14 +1,14 @@
 {
-  "title": "Tariffs",
-  "pageDescription": "",
-  "shortDescription": "Tariffs and cost",
-  "metaTitle": "Tariffs",
-  "metaDescription": "API Vision (фото) Первые 5000 транзакций и 1000 лиц — бесплатно для тестирования Уровень\nТранзакций в месяц\nЦена за транзакцию Уровень «Стандарт»\n1 — 1 000",
-  "sectionTitle": "Tariffs",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "uuid": "d4a7f2a7-dac7-4acd-9d97-4e13535b4631",
-  "createdAt": "2023-05-10T07:33:28.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Tariffs",
+    "pageDescription": "",
+    "shortDescription": "Tariffs and cost",
+    "metaTitle": "Tariffs",
+    "metaDescription": "API Vision (фото) Первые 5000 транзакций и 1000 лиц — бесплатно для тестирования Уровень\nТранзакций в месяц\nЦена за транзакцию Уровень «Стандарт»\n1 — 1 000",
+    "sectionTitle": "Tariffs",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "uuid": "d4a7f2a7-dac7-4acd-9d97-4e13535b4631",
+    "createdAt": "2023-05-10T07:33:28.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

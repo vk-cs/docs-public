@@ -1,15 +1,15 @@
 {
-  "title": "Политика поддержки версий Kubernetes",
-  "pageDescription": "Платформа VK Cloud предоставляет несколько версий Kubernetes, которые можно использовать в облачных кластерах. Здесь вы найдете подробную информацию о политике поддержки версий Kubernetes в кластерах.",
-  "shortDescription": "Какие версии Kubernetes поддерживаются в кластерах VK Cloud и по каким принципам",
-  "metaTitle": "Политика поддержки версий Kubernetes",
-  "metaDescription": "Kubernetes,K8S,версия,политика,поддержка",
-  "sectionTitle": "Политика поддержки версий Kubernetes",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "7b243c33-d7e4-4de1-bead-1c69d8ed2589",
-  "createdAt": "2022-12-15T08:05:18.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Политика поддержки версий Kubernetes",
+    "pageDescription": "Платформа VK Cloud предоставляет несколько версий Kubernetes, которые можно использовать в облачных кластерах. Здесь вы найдете подробную информацию о политике поддержки версий Kubernetes в кластерах.",
+    "shortDescription": "Какие версии Kubernetes поддерживаются в кластерах VK Cloud и по каким принципам",
+    "metaTitle": "Политика поддержки версий Kubernetes",
+    "metaDescription": "Kubernetes,K8S,версия,политика,поддержка",
+    "sectionTitle": "Политика поддержки версий Kubernetes",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "7b243c33-d7e4-4de1-bead-1c69d8ed2589",
+    "createdAt": "2022-12-15T08:05:18.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

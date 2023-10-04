@@ -1,14 +1,14 @@
 {
-  "title": "VM diagnostics",
-  "pageDescription": "Remote access to a Windows or Linux VM using a VNC console. VM diagnostics.",
-  "shortDescription": "Managing a virtual machine using the VNC console. Viewing VM message logs",
-  "metaTitle": "VM diagnostics",
-  "metaDescription": "OpenStack Console, VNC console, VM message log, VM message logs",
-  "sectionTitle": "VM diagnostics",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 5,
-  "uuid": "0bb60b95-8bb4-4b70-9088-2e86d87cb3fe",
-  "createdAt": "2023-04-24T13:06:27.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "VM diagnostics",
+    "pageDescription": "Remote access to a Windows or Linux VM using a VNC console. VM diagnostics.",
+    "shortDescription": "Managing a virtual machine using the VNC console. Viewing VM message logs",
+    "metaTitle": "VM diagnostics",
+    "metaDescription": "OpenStack Console, VNC console, VM message log, VM message logs",
+    "sectionTitle": "VM diagnostics",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 5,
+    "uuid": "0bb60b95-8bb4-4b70-9088-2e86d87cb3fe",
+    "createdAt": "2023-04-24T13:06:27.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

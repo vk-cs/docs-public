@@ -1,14 +1,14 @@
 {
-  "title": "Настройка параметров Java Memory Heap",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Настройка параметров Java Memory Heap",
-  "metaDescription": "Оптимальные параметры виртуальной машины Java подбираются автоматически при установке и настройке кластера, в зависимости от типа виртуальной машины. Если",
-  "sectionTitle": "Настройка параметров Java Memory Heap",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "uuid": "70b872db-0eb3-4d98-ba2e-2ce3a288fd43",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Настройка параметров Java Memory Heap",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Настройка параметров Java Memory Heap",
+    "metaDescription": "Оптимальные параметры виртуальной машины Java подбираются автоматически при установке и настройке кластера, в зависимости от типа виртуальной машины. Если",
+    "sectionTitle": "Настройка параметров Java Memory Heap",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "uuid": "70b872db-0eb3-4d98-ba2e-2ce3a288fd43",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

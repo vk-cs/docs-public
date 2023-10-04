@@ -1,15 +1,15 @@
 {
-  "title": "Управление сетями и подсетями",
-  "pageDescription": "",
-  "shortDescription": "Как создавать, редактировать, удалять сети и подсети",
-  "metaTitle": "Управление сетями и подсетями",
-  "metaDescription": "В личном кабинете раздел",
-  "sectionTitle": "Управление сетями и подсетями",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "636bde86-a655-4a24-84e7-680e5a77fb31",
-  "createdAt": "2022-12-27T09:51:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Управление сетями и подсетями",
+    "pageDescription": "",
+    "shortDescription": "Как создавать, редактировать, удалять сети и подсети",
+    "metaTitle": "Управление сетями и подсетями",
+    "metaDescription": "В личном кабинете раздел",
+    "sectionTitle": "Управление сетями и подсетями",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "636bde86-a655-4a24-84e7-680e5a77fb31",
+    "createdAt": "2022-12-27T09:51:35.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

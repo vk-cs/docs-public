@@ -1,15 +1,15 @@
 {
-  "title": "Redis",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Redis",
-  "metaDescription": "Почему Redis? Redis (Remote Dictionary Server) – это быстрое хранилище данных типа «ключ‑значение» в памяти с открытым исходным кодом для использования в к",
-  "sectionTitle": "Redis",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 7,
-  "uuid": "32e4448f-d824-473c-8c01-06a9ec6d4eeb",
-  "createdAt": "2023-02-28T12:19:42.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Redis",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Redis",
+    "metaDescription": "Почему Redis? Redis (Remote Dictionary Server) – это быстрое хранилище данных типа «ключ‑значение» в памяти с открытым исходным кодом для использования в к",
+    "sectionTitle": "Redis",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 7,
+    "uuid": "32e4448f-d824-473c-8c01-06a9ec6d4eeb",
+    "createdAt": "2023-02-28T12:19:42.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

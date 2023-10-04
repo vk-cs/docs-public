@@ -1,15 +1,15 @@
 {
-  "title": "Bucket",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Bucket",
-  "metaDescription": "Buckets are containers for objects. A project can have one or more buckets. Access to each bucket can be controlled: specify which users can create and del",
-  "sectionTitle": "Bucket",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "7655459d-49fc-455a-b0e0-6fdd04f97da9",
-  "createdAt": "2023-04-04T08:48:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Bucket",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Bucket",
+    "metaDescription": "Buckets are containers for objects. A project can have one or more buckets. Access to each bucket can be controlled: specify which users can create and del",
+    "sectionTitle": "Bucket",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "7655459d-49fc-455a-b0e0-6fdd04f97da9",
+    "createdAt": "2023-04-04T08:48:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

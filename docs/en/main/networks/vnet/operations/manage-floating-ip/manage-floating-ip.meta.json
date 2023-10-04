@@ -1,15 +1,15 @@
 {
-  "title": "Managing floating IP addresses",
-  "pageDescription": "Managing floating IP addresses in the virtual networks service.",
-  "shortDescription": "Adding, removing, binding floating IP addresses and other operations",
-  "metaTitle": "Managing floating IP addresses",
-  "metaDescription": "",
-  "sectionTitle": "Managing floating IP addresses",
-  "markdown": "Managing floating IP addresses in the virtual networks service.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "4fd1aa43-3e2f-4d80-8541-996083376d4d",
-  "createdAt": "2023-03-17T04:38:48.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Managing floating IP addresses",
+    "pageDescription": "Managing floating IP addresses in the virtual networks service.",
+    "shortDescription": "Adding, removing, binding floating IP addresses and other operations",
+    "metaTitle": "Managing floating IP addresses",
+    "metaDescription": "",
+    "sectionTitle": "Managing floating IP addresses",
+    "markdown": "Managing floating IP addresses in the virtual networks service.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "4fd1aa43-3e2f-4d80-8541-996083376d4d",
+    "createdAt": "2023-03-17T04:38:48.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

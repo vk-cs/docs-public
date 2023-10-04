@@ -1,14 +1,14 @@
 {
-  "title": "Прочее",
-  "pageDescription": "Прочие вопросы.",
-  "shortDescription": "",
-  "metaTitle": "Прочее",
-  "metaDescription": "Вопросы и ответы по информационной безопасности VK Cloud: прочее.",
-  "sectionTitle": "Прочее",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 5,
-  "createdAt": "2023-09-22T11:28:40.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z",
-  "uuid": "8602851d-f844-4f5d-b12b-d7beecb8c194"
+    "title": "Прочее",
+    "pageDescription": "Прочие вопросы.",
+    "shortDescription": "",
+    "metaTitle": "Прочее",
+    "metaDescription": "Вопросы и ответы по информационной безопасности VK Cloud: прочее.",
+    "sectionTitle": "Прочее",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 5,
+    "createdAt": "2023-09-22T11:28:40.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z",
+    "uuid": "8602851d-f844-4f5d-b12b-d7beecb8c194"
 }

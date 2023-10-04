@@ -1,15 +1,15 @@
 {
-  "title": "Speech recognition",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Speech recognition",
-  "metaDescription": "",
-  "sectionTitle": "Speech recognition",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "b7004cb9-462c-40cf-a471-1163246ec17c",
-  "createdAt": "2022-07-29T01:42:00.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Speech recognition",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Speech recognition",
+    "metaDescription": "",
+    "sectionTitle": "Speech recognition",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "b7004cb9-462c-40cf-a471-1163246ec17c",
+    "createdAt": "2022-07-29T01:42:00.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

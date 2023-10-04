@@ -1,15 +1,15 @@
 {
-  "title": "Удаление кластера ADH",
-  "pageDescription": "Удаление кластера ADH",
-  "shortDescription": "Описание действий для удаления кластера",
-  "metaTitle": "Удаление кластера ADH",
-  "metaDescription": "Удаление кластера ADH",
-  "sectionTitle": "Удаление кластера ADH",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "3477b2f5-e93c-4839-a5fa-98162becc64b",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Удаление кластера ADH",
+    "pageDescription": "Удаление кластера ADH",
+    "shortDescription": "Описание действий для удаления кластера",
+    "metaTitle": "Удаление кластера ADH",
+    "metaDescription": "Удаление кластера ADH",
+    "sectionTitle": "Удаление кластера ADH",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "3477b2f5-e93c-4839-a5fa-98162becc64b",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

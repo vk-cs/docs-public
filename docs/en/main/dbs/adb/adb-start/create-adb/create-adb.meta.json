@@ -1,15 +1,15 @@
 {
-  "title": "Create",
-  "pageDescription": "",
-  "shortDescription": "Description of creating a DB Instance",
-  "metaTitle": "Create",
-  "metaDescription": "To create a database, go to the",
-  "sectionTitle": "Create",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "f74c1da7-47d8-4301-b952-9e8ad387a781",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Create",
+    "pageDescription": "",
+    "shortDescription": "Description of creating a DB Instance",
+    "metaTitle": "Create",
+    "metaDescription": "To create a database, go to the",
+    "sectionTitle": "Create",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "f74c1da7-47d8-4301-b952-9e8ad387a781",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,12 +1,12 @@
 {
-  "title": "Server group binding policy",
-  "pageDescription": "Placing servers in different groups for high availability or in the same group to speed up interaction between servers.",
-  "shortDescription": "How to adapt the server placement policy to the tasks being solved",
-  "metaTitle": "Server group binding policy",
-  "metaDescription": "Placing servers in different groups for high availability or in the same group to speed up interaction between servers.",
-  "sectionTitle": "Server group binding policy",
-  "weight": 3,
-  "uuid": "88f8656a-c5f7-45a9-b469-aa5f846ea5dc",
-  "createdAt": "2023-04-24T13:06:27.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Server group binding policy",
+    "pageDescription": "Placing servers in different groups for high availability or in the same group to speed up interaction between servers.",
+    "shortDescription": "How to adapt the server placement policy to the tasks being solved",
+    "metaTitle": "Server group binding policy",
+    "metaDescription": "Placing servers in different groups for high availability or in the same group to speed up interaction between servers.",
+    "sectionTitle": "Server group binding policy",
+    "weight": 3,
+    "uuid": "88f8656a-c5f7-45a9-b469-aa5f846ea5dc",
+    "createdAt": "2023-04-24T13:06:27.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

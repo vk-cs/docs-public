@@ -1,15 +1,15 @@
 {
-  "title": "UntagQueue",
-  "pageDescription": "Примеры запроса и ответа для метода UntagQueue.",
-  "shortDescription": "",
-  "metaTitle": "UntagQueue",
-  "metaDescription": "Удалите теги распределения затрат из указанной очереди VK Cloud SQS. Примеры запроса и ответа для метода UntagQueue.",
-  "sectionTitle": "UntagQueue",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 21,
-  "uuid": "1b370b10-b82c-429c-b15d-ec920402087e",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "UntagQueue",
+    "pageDescription": "Примеры запроса и ответа для метода UntagQueue.",
+    "shortDescription": "",
+    "metaTitle": "UntagQueue",
+    "metaDescription": "Удалите теги распределения затрат из указанной очереди VK Cloud SQS. Примеры запроса и ответа для метода UntagQueue.",
+    "sectionTitle": "UntagQueue",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 21,
+    "uuid": "1b370b10-b82c-429c-b15d-ec920402087e",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

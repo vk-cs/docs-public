@@ -1,15 +1,15 @@
 {
-  "title": "Регионы",
-  "pageDescription": "Что такое регион, какие регионы существуют в VK Cloud.",
-  "shortDescription": "Что такое регион, какие регионы существуют в VK Cloud",
-  "metaTitle": "Регионы",
-  "metaDescription": "Что такое регион, какие регионы существуют в VK Cloud.",
-  "sectionTitle": "Регионы",
-  "markdown": "Что такое регион, какие регионы существуют в VK Cloud.",
-  "icon": "",
-  "weight": 3,
-  "infobarItems": null,
-  "uuid": "a4cebc65-8858-4df4-833e-c21f601bf2a8",
-  "createdAt": "2022-12-23T10:06:30.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Регионы",
+    "pageDescription": "Что такое регион, какие регионы существуют в VK Cloud.",
+    "shortDescription": "Что такое регион, какие регионы существуют в VK Cloud",
+    "metaTitle": "Регионы",
+    "metaDescription": "Что такое регион, какие регионы существуют в VK Cloud.",
+    "sectionTitle": "Регионы",
+    "markdown": "Что такое регион, какие регионы существуют в VK Cloud.",
+    "icon": "",
+    "weight": 3,
+    "infobarItems": null,
+    "uuid": "a4cebc65-8858-4df4-833e-c21f601bf2a8",
+    "createdAt": "2022-12-23T10:06:30.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

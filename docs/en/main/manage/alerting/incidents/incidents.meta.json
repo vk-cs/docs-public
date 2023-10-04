@@ -1,15 +1,15 @@
 {
-  "title": "Changing the status of an incident",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Changing the status of an incident",
-  "metaDescription": "",
-  "sectionTitle": "Changing the status of an incident",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "dcfa65ca-3849-43d7-8a3a-5d912f35c2d1",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Changing the status of an incident",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Changing the status of an incident",
+    "metaDescription": "",
+    "sectionTitle": "Changing the status of an incident",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "dcfa65ca-3849-43d7-8a3a-5d912f35c2d1",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

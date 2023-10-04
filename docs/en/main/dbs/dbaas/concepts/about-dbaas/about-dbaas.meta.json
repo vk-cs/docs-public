@@ -1,14 +1,14 @@
 {
-  "title": "About the service",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "About the service",
-  "metaDescription": "О сервисе Cloud Database – это сервис для создания облачных баз данных. Перенесите базу данных в облако, избавьтесь от рутинной поддержки инфраструктуры и",
-  "sectionTitle": "About the service",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "uuid": "09846f16-d910-4ec9-b5ba-bafd3c7ec201",
-  "createdAt": "2023-05-12T11:53:23.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "About the service",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "About the service",
+    "metaDescription": "О сервисе Cloud Database – это сервис для создания облачных баз данных. Перенесите базу данных в облако, избавьтесь от рутинной поддержки инфраструктуры и",
+    "sectionTitle": "About the service",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "uuid": "09846f16-d910-4ec9-b5ba-bafd3c7ec201",
+    "createdAt": "2023-05-12T11:53:23.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

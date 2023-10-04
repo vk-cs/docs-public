@@ -1,15 +1,15 @@
 {
-  "title": "Установка и настройка MySQL на Ubuntu",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Установка и настройка MySQL на Ubuntu",
-  "metaDescription": "В данной статье рассмотрим, как установить standalone MySQL, создать пользователя базы данных и настроить его права. Конфигурация оборудования Сервер Ubunt",
-  "sectionTitle": "Установка и настройка MySQL на Ubuntu",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "3649f5e1-045d-4d54-889e-aa8c06e27706",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Установка и настройка MySQL на Ubuntu",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Установка и настройка MySQL на Ubuntu",
+    "metaDescription": "В данной статье рассмотрим, как установить standalone MySQL, создать пользователя базы данных и настроить его права. Конфигурация оборудования Сервер Ubunt",
+    "sectionTitle": "Установка и настройка MySQL на Ubuntu",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "3649f5e1-045d-4d54-889e-aa8c06e27706",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

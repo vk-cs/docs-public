@@ -1,12 +1,12 @@
 {
-  "title": "Release notes",
-  "pageDescription": "Release notes for Vision.",
-  "shortDescription": "Release notes for the service",
-  "metaTitle": "Release notes",
-  "metaDescription": "Release notes for Vision.",
-  "sectionTitle": "Release notes",
-  "weight": 6,
-  "uuid": "06d9d61f-758a-45da-9f75-c947b3dec47f",
-  "createdAt": "2023-07-03T05:49:27.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Release notes",
+    "pageDescription": "Release notes for Vision.",
+    "shortDescription": "Release notes for the service",
+    "metaTitle": "Release notes",
+    "metaDescription": "Release notes for Vision.",
+    "sectionTitle": "Release notes",
+    "weight": 6,
+    "uuid": "06d9d61f-758a-45da-9f75-c947b3dec47f",
+    "createdAt": "2023-07-03T05:49:27.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "SLA",
-  "pageDescription": "Agreement on the level of service provided between VK Cloud and the client organization.",
-  "shortDescription": "Service level agreement between VK Cloud and users",
-  "metaTitle": "SLA",
-  "metaDescription": "Agreement on the level of service provided between VK Cloud and the client organization",
-  "sectionTitle": "SLA",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "061d2442-574c-4d2e-827a-be03375571f8",
-  "createdAt": "2023-02-07T17:15:50.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "SLA",
+    "pageDescription": "Agreement on the level of service provided between VK Cloud and the client organization.",
+    "shortDescription": "Service level agreement between VK Cloud and users",
+    "metaTitle": "SLA",
+    "metaDescription": "Agreement on the level of service provided between VK Cloud and the client organization",
+    "sectionTitle": "SLA",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "061d2442-574c-4d2e-827a-be03375571f8",
+    "createdAt": "2023-02-07T17:15:50.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

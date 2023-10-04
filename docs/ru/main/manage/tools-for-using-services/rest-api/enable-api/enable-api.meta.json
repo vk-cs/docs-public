@@ -1,12 +1,12 @@
 {
-  "title": "Управление доступом по API",
-  "pageDescription": "Включение или отключение доступа к VK Cloud API.",
-  "shortDescription": "Как включить или выключить доступ к VK Cloud API",
-  "metaTitle": "Управление доступом по API",
-  "metaDescription": "Статья описывает как активировать доступ к VK Cloud API.",
-  "sectionTitle": "Управление доступом по API",
-  "weight": 1,
-  "uuid": "c4d3c021-3c20-4aeb-bc97-388452c40c6d",
-  "createdAt": "2023-06-13T13:37:58.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Управление доступом по API",
+    "pageDescription": "Включение или отключение доступа к VK Cloud API.",
+    "shortDescription": "Как включить или выключить доступ к VK Cloud API",
+    "metaTitle": "Управление доступом по API",
+    "metaDescription": "Статья описывает как активировать доступ к VK Cloud API.",
+    "sectionTitle": "Управление доступом по API",
+    "weight": 1,
+    "uuid": "c4d3c021-3c20-4aeb-bc97-388452c40c6d",
+    "createdAt": "2023-06-13T13:37:58.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

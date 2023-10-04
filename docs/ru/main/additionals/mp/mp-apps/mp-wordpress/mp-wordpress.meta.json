@@ -1,15 +1,15 @@
 {
-  "title": "Wordpress",
-  "pageDescription": "Wordpress — система управления содержимым сайта.",
-  "shortDescription": "Wordpress — система управления содержимым сайта",
-  "metaTitle": "Wordpress",
-  "metaDescription": "Wordpress — система управления содержимым сайта.",
-  "sectionTitle": "Wordpress",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 10,
-  "uuid": "f45e0302-9397-474e-930d-84accbd5e49d",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Wordpress",
+    "pageDescription": "Wordpress — система управления содержимым сайта.",
+    "shortDescription": "Wordpress — система управления содержимым сайта",
+    "metaTitle": "Wordpress",
+    "metaDescription": "Wordpress — система управления содержимым сайта.",
+    "sectionTitle": "Wordpress",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 10,
+    "uuid": "f45e0302-9397-474e-930d-84accbd5e49d",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Connections from internal networks",
-  "pageDescription": "",
-  "shortDescription": "Description of setting up connection to the instance from the internal network",
-  "metaTitle": "Connections from internal networks",
-  "metaDescription": "Connecting to an instance You can see how to connect to the database by clicking on the instance name in the list or by hovering over the information icon.",
-  "sectionTitle": "Connections from internal networks",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "9c723882-5ac4-46cb-b6b9-fd36d99ff493",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Connections from internal networks",
+    "pageDescription": "",
+    "shortDescription": "Description of setting up connection to the instance from the internal network",
+    "metaTitle": "Connections from internal networks",
+    "metaDescription": "Connecting to an instance You can see how to connect to the database by clicking on the instance name in the list or by hovering over the information icon.",
+    "sectionTitle": "Connections from internal networks",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "9c723882-5ac4-46cb-b6b9-fd36d99ff493",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

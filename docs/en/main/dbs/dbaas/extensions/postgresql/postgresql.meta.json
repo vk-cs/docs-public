@@ -1,25 +1,25 @@
 {
-  "title": "PostgreSQL extensions",
-  "pageDescription": "The list of available PostgreSQL extensions and their parameters.",
-  "shortDescription": "The list of available PostgreSQL extensions and their parameters",
-  "metaTitle": "PostgreSQL extensions",
-  "metaDescription": "VK Cloud databases: the list of available PostgreSQL extensions and their parameters.",
-  "sectionTitle": "PostgreSQL extensions",
-  "markdown": "The list of available PostgreSQL extensions and their parameters.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "additionalUuids": [
-    "4f6c61d7-8b8d-40b3-a65a-9dc536661b0e",
-    "a31a6f2f-2238-499a-bf89-ad420fbd2ff3",
-    "89cadd14-ca2e-4a46-a35a-b551735994fd",
-    "1d02ba9b-f444-4087-b224-f01f6bd41881",
-    "ccadaaac-1a92-4b2c-a473-cd6fca2701bb",
-    "e4e2b944-6704-419b-ba57-0115e4fe5a42",
-    "efa400a0-f6b2-49cb-bb8c-83d7dc94326b",
-    "372e427f-4a7b-40b6-9da9-503170e75da6"
-  ],
-  "createdAt": "2023-09-05T09:12:49.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z",
-  "uuid": "ff7ebc03-df4c-4ace-b84f-21d60d0a0ffd"
+    "title": "PostgreSQL extensions",
+    "pageDescription": "The list of available PostgreSQL extensions and their parameters.",
+    "shortDescription": "The list of available PostgreSQL extensions and their parameters",
+    "metaTitle": "PostgreSQL extensions",
+    "metaDescription": "VK Cloud databases: the list of available PostgreSQL extensions and their parameters.",
+    "sectionTitle": "PostgreSQL extensions",
+    "markdown": "The list of available PostgreSQL extensions and their parameters.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "additionalUuids": [
+        "4f6c61d7-8b8d-40b3-a65a-9dc536661b0e",
+        "a31a6f2f-2238-499a-bf89-ad420fbd2ff3",
+        "89cadd14-ca2e-4a46-a35a-b551735994fd",
+        "1d02ba9b-f444-4087-b224-f01f6bd41881",
+        "ccadaaac-1a92-4b2c-a473-cd6fca2701bb",
+        "e4e2b944-6704-419b-ba57-0115e4fe5a42",
+        "efa400a0-f6b2-49cb-bb8c-83d7dc94326b",
+        "372e427f-4a7b-40b6-9da9-503170e75da6"
+    ],
+    "createdAt": "2023-09-05T09:12:49.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z",
+    "uuid": "ff7ebc03-df4c-4ace-b84f-21d60d0a0ffd"
 }

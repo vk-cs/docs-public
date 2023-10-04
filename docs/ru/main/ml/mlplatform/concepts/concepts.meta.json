@@ -1,15 +1,15 @@
 {
-  "title": "Концепции",
-  "pageDescription": "Дополнительная информация о сервисе ML Platform.",
-  "shortDescription": "Дополнительная информация о сервисе ML Platform",
-  "metaTitle": "Концепции",
-  "metaDescription": "Концепции",
-  "sectionTitle": "Концепции",
-  "markdown": "Концепции",
-  "icon": "",
-  "weight": 0,
-  "infobarItems": null,
-  "uuid": "1cd95bde-349c-48a8-8741-e850a897bf8b",
-  "createdAt": "2022-07-27T15:05:41.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Концепции",
+    "pageDescription": "Дополнительная информация о сервисе ML Platform.",
+    "shortDescription": "Дополнительная информация о сервисе ML Platform",
+    "metaTitle": "Концепции",
+    "metaDescription": "Концепции",
+    "sectionTitle": "Концепции",
+    "markdown": "Концепции",
+    "icon": "",
+    "weight": 0,
+    "infobarItems": null,
+    "uuid": "1cd95bde-349c-48a8-8741-e850a897bf8b",
+    "createdAt": "2022-07-27T15:05:41.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Installing Gatekeeper",
-  "pageDescription": "How to install a Gatekeeper controller in the Kubernetes cluster.",
-  "shortDescription": "How to install a Gatekeeper controller",
-  "metaTitle": "Installing Gatekeeper",
-  "metaDescription": "",
-  "sectionTitle": "Installing Gatekeeper",
-  "markdown": "How to install a Gatekeeper controller in the Kubernetes cluster.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "090dd7f7-3f53-4058-90cb-b306e6b53c3c",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Installing Gatekeeper",
+    "pageDescription": "How to install a Gatekeeper controller in the Kubernetes cluster.",
+    "shortDescription": "How to install a Gatekeeper controller",
+    "metaTitle": "Installing Gatekeeper",
+    "metaDescription": "",
+    "sectionTitle": "Installing Gatekeeper",
+    "markdown": "How to install a Gatekeeper controller in the Kubernetes cluster.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "090dd7f7-3f53-4058-90cb-b306e6b53c3c",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

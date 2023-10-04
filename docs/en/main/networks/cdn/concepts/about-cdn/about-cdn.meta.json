@@ -1,15 +1,15 @@
 {
-  "title": "CDN service description",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "CDN service description",
-  "metaDescription": "Description CDN stands for Content-Delivery Network and is a geographically distributed network infrastructure that optimizes the delivery and distribution",
-  "sectionTitle": "CDN service description",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "54ed68ba-31ab-402a-8769-02351d939a84",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "CDN service description",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "CDN service description",
+    "metaDescription": "Description CDN stands for Content-Delivery Network and is a geographically distributed network infrastructure that optimizes the delivery and distribution",
+    "sectionTitle": "CDN service description",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "54ed68ba-31ab-402a-8769-02351d939a84",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

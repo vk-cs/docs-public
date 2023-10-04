@@ -1,17 +1,17 @@
 {
-  "title": "Postgres Pro",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Postgres Pro",
-  "metaDescription": "Описание Postgres Pro Standard — это объектно-реляционная система управления базами данных (ОРСУБД, ORDBMS), разработанная компанией Postgres. Postgres Pro",
-  "sectionTitle": "Postgres Pro",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "additionalUuids": [
-    "4310d344-c386-4c77-9acd-f38ea2af691e"
-  ],
-  "uuid": "06d2c38c-da96-41fb-b471-61ccb2c98ed0",
-  "createdAt": "2023-03-17T13:58:06.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Postgres Pro",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Postgres Pro",
+    "metaDescription": "Описание Postgres Pro Standard — это объектно-реляционная система управления базами данных (ОРСУБД, ORDBMS), разработанная компанией Postgres. Postgres Pro",
+    "sectionTitle": "Postgres Pro",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "additionalUuids": [
+        "4310d344-c386-4c77-9acd-f38ea2af691e"
+    ],
+    "uuid": "06d2c38c-da96-41fb-b471-61ccb2c98ed0",
+    "createdAt": "2023-03-17T13:58:06.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

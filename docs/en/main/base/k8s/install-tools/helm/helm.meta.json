@@ -1,15 +1,15 @@
 {
-  "title": "Installing Helm",
-  "pageDescription": "How to install the Helm package manager in the Kubernetes cluster.",
-  "shortDescription": "How to install the Helm package manager",
-  "metaTitle": "Installing Helm",
-  "metaDescription": "",
-  "sectionTitle": "Installing Helm",
-  "markdown": "How to install the Helm package manager in the Kubernetes cluster.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "b1c04296-66d0-483c-80ea-f3e9cbda8762",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Installing Helm",
+    "pageDescription": "How to install the Helm package manager in the Kubernetes cluster.",
+    "shortDescription": "How to install the Helm package manager",
+    "metaTitle": "Installing Helm",
+    "metaDescription": "",
+    "sectionTitle": "Installing Helm",
+    "markdown": "How to install the Helm package manager in the Kubernetes cluster.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "b1c04296-66d0-483c-80ea-f3e9cbda8762",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

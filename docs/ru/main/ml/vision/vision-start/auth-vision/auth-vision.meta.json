@@ -1,15 +1,15 @@
 {
-  "title": "Авторизация",
-  "pageDescription": "Получение токена доступа для использования сервиса Vision API.",
-  "shortDescription": "Получение токена доступа для Vision API",
-  "metaTitle": "Авторизация",
-  "metaDescription": "Статья описывает авторизацию в платформе для использования сервиса Vision API.",
-  "sectionTitle": "Авторизация",
-  "markdown": "Получение токена доступа для использования сервиса Vision API.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "56851a4a-fd03-4fa7-9a5b-6098d76b1376",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Авторизация",
+    "pageDescription": "Получение токена доступа для использования сервиса Vision API.",
+    "shortDescription": "Получение токена доступа для Vision API",
+    "metaTitle": "Авторизация",
+    "metaDescription": "Статья описывает авторизацию в платформе для использования сервиса Vision API.",
+    "sectionTitle": "Авторизация",
+    "markdown": "Получение токена доступа для использования сервиса Vision API.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "56851a4a-fd03-4fa7-9a5b-6098d76b1376",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Example integration on PHP",
-  "pageDescription": "",
-  "shortDescription": "Request for PHP recognition",
-  "metaTitle": "Example integration on PHP",
-  "metaDescription": "",
-  "sectionTitle": "Example integration on PHP",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "0123e019-bba7-41ae-9385-a16b63d7002f",
-  "createdAt": "2022-09-20T07:30:20.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Example integration on PHP",
+    "pageDescription": "",
+    "shortDescription": "Request for PHP recognition",
+    "metaTitle": "Example integration on PHP",
+    "metaDescription": "",
+    "sectionTitle": "Example integration on PHP",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "0123e019-bba7-41ae-9385-a16b63d7002f",
+    "createdAt": "2022-09-20T07:30:20.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

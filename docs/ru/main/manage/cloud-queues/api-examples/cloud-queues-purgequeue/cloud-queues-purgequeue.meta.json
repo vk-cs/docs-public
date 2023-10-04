@@ -1,15 +1,15 @@
 {
-  "title": "PurgeQueue",
-  "pageDescription": "Примеры запроса и ответа для метода PurgeQueue.",
-  "shortDescription": "",
-  "metaTitle": "PurgeQueue",
-  "metaDescription": "Удаляет сообщения из очереди, указанной параметром QueueURL. Примеры запроса и ответа для метода PurgeQueue.",
-  "sectionTitle": "PurgeQueue",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 14,
-  "uuid": "e011bfc0-9bd6-4288-a69f-63f85d509a2e",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "PurgeQueue",
+    "pageDescription": "Примеры запроса и ответа для метода PurgeQueue.",
+    "shortDescription": "",
+    "metaTitle": "PurgeQueue",
+    "metaDescription": "Удаляет сообщения из очереди, указанной параметром QueueURL. Примеры запроса и ответа для метода PurgeQueue.",
+    "sectionTitle": "PurgeQueue",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 14,
+    "uuid": "e011bfc0-9bd6-4288-a69f-63f85d509a2e",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

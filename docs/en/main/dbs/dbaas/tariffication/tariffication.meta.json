@@ -1,15 +1,15 @@
 {
-  "title": "Tariffication",
-  "pageDescription": "Rates for receiving VK Cloud services.",
-  "shortDescription": "Rates for receiving VK Cloud services",
-  "metaTitle": "Tariffication",
-  "metaDescription": "Rates for receiving VK Cloud services",
-  "sectionTitle": "Tariffication",
-  "markdown": "Rates for receiving VK Cloud services.",
-  "icon": "",
-  "weight": 5,
-  "infobarItems": null,
-  "uuid": "f00a4006-6500-4ad7-951c-9e8e0f225139",
-  "createdAt": "2023-05-12T11:53:23.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Tariffication",
+    "pageDescription": "Rates for receiving VK Cloud services.",
+    "shortDescription": "Rates for receiving VK Cloud services",
+    "metaTitle": "Tariffication",
+    "metaDescription": "Rates for receiving VK Cloud services",
+    "sectionTitle": "Tariffication",
+    "markdown": "Rates for receiving VK Cloud services.",
+    "icon": "",
+    "weight": 5,
+    "infobarItems": null,
+    "uuid": "f00a4006-6500-4ad7-951c-9e8e0f225139",
+    "createdAt": "2023-05-12T11:53:23.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

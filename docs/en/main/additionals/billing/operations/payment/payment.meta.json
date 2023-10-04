@@ -1,18 +1,18 @@
 {
-  "title": "Balance management",
-  "pageDescription": "How to view, replenish the project balance and set up notifications.",
-  "shortDescription": "How to view, replenish the project balance and set up notifications",
-  "metaTitle": "Balance management",
-  "metaDescription": "How to view, replenish the project balance and set up notifications",
-  "sectionTitle": "Balance management",
-  "markdown": "How to view, replenish the project balance and set up notifications.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "133535c8-339f-4d8d-b209-136c3f119a6f",
-  "additionalUuids": [
-    "6051f833-f3d5-4485-9f2f-b3807ec70dd8"
-  ],
-  "createdAt": "2022-04-07T07:18:11.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Balance management",
+    "pageDescription": "How to view, replenish the project balance and set up notifications.",
+    "shortDescription": "How to view, replenish the project balance and set up notifications",
+    "metaTitle": "Balance management",
+    "metaDescription": "How to view, replenish the project balance and set up notifications",
+    "sectionTitle": "Balance management",
+    "markdown": "How to view, replenish the project balance and set up notifications.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "133535c8-339f-4d8d-b209-136c3f119a6f",
+    "additionalUuids": [
+        "6051f833-f3d5-4485-9f2f-b3807ec70dd8"
+    ],
+    "createdAt": "2022-04-07T07:18:11.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

@@ -1,20 +1,20 @@
 {
-  "title": "General information",
-  "pageDescription": "Connection instructions.",
-  "shortDescription": "Instructions for working with Cloud Streams in VK Cloud",
-  "metaTitle": "Connection",
-  "metaDescription": "Connection",
-  "sectionTitle": "Connection",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "f0d5d42f-4d4e-4c6d-bf93-6b540d0c2d50",
-  "additionalUuids": [
-    "58cf929f-6973-4882-929a-86ba835173f0",
-    "ffd39c8b-17ca-4c9d-bb22-21cb4a3482f7",
-    "a6d2583a-33bf-47e5-a1d5-f8258b24c41a"
-  ],
-  "createdAt": "2023-05-31T09:51:29.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "General information",
+    "pageDescription": "Connection instructions.",
+    "shortDescription": "Instructions for working with Cloud Streams in VK Cloud",
+    "metaTitle": "Connection",
+    "metaDescription": "Connection",
+    "sectionTitle": "Connection",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "f0d5d42f-4d4e-4c6d-bf93-6b540d0c2d50",
+    "additionalUuids": [
+        "58cf929f-6973-4882-929a-86ba835173f0",
+        "ffd39c8b-17ca-4c9d-bb22-21cb4a3482f7",
+        "a6d2583a-33bf-47e5-a1d5-f8258b24c41a"
+    ],
+    "createdAt": "2023-05-31T09:51:29.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

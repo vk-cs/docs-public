@@ -1,15 +1,15 @@
 {
-  "title": "Connecting to Docker Registry",
-  "pageDescription": "If the Kubernetes cluster has the Docker registry enabled, you can connect to the registry using the procedure described here.",
-  "shortDescription": "How to connect to the Docker registry",
-  "metaTitle": "Connecting to Docker Registry",
-  "metaDescription": "",
-  "sectionTitle": "Connecting to Docker Registry",
-  "markdown": "If the Kubernetes cluster has the Docker registry enabled, you can connect to the registry using the procedure described here.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "816df8dd-1bcb-424d-bf87-f451d47d4a1d",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Connecting to Docker Registry",
+    "pageDescription": "If the Kubernetes cluster has the Docker registry enabled, you can connect to the registry using the procedure described here.",
+    "shortDescription": "How to connect to the Docker registry",
+    "metaTitle": "Connecting to Docker Registry",
+    "metaDescription": "",
+    "sectionTitle": "Connecting to Docker Registry",
+    "markdown": "If the Kubernetes cluster has the Docker registry enabled, you can connect to the registry using the procedure described here.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "816df8dd-1bcb-424d-bf87-f451d47d4a1d",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

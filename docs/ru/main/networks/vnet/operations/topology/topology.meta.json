@@ -1,15 +1,15 @@
 {
-  "title": "Просмотр топологии",
-  "pageDescription": "Просмотр топологии виртуальных сетей с помощью инструментов VK Cloud.",
-  "shortDescription": "Просмотр топологии виртуальных сетей с помощью инструментов VK Cloud",
-  "metaTitle": "Просмотр топологии",
-  "metaDescription": "Описание топологии сети",
-  "sectionTitle": "Просмотр топологии",
-  "markdown": "Просмотр топологии виртуальных сетей с помощью инструментов VK Cloud.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 7,
-  "uuid": "f388615e-cffc-4ebf-be62-50c34b03da0d",
-  "createdAt": "2022-12-27T09:51:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Просмотр топологии",
+    "pageDescription": "Просмотр топологии виртуальных сетей с помощью инструментов VK Cloud.",
+    "shortDescription": "Просмотр топологии виртуальных сетей с помощью инструментов VK Cloud",
+    "metaTitle": "Просмотр топологии",
+    "metaDescription": "Описание топологии сети",
+    "sectionTitle": "Просмотр топологии",
+    "markdown": "Просмотр топологии виртуальных сетей с помощью инструментов VK Cloud.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 7,
+    "uuid": "f388615e-cffc-4ebf-be62-50c34b03da0d",
+    "createdAt": "2022-12-27T09:51:35.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

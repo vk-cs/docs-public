@@ -1,15 +1,15 @@
 {
-  "title": "Использование Docker CE",
-  "pageDescription": "Как использовать установленный Docker CE.",
-  "shortDescription": "",
-  "metaTitle": "Использование Docker CE",
-  "metaDescription": "",
-  "sectionTitle": "Использование Docker CE",
-  "markdown": "Как использовать установленный Docker CE.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "3d812d3b-bdec-4034-8267-466a8fdde666",
-  "createdAt": "2023-03-31T09:37:59.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Использование Docker CE",
+    "pageDescription": "Как использовать установленный Docker CE.",
+    "shortDescription": "",
+    "metaTitle": "Использование Docker CE",
+    "metaDescription": "",
+    "sectionTitle": "Использование Docker CE",
+    "markdown": "Как использовать установленный Docker CE.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "3d812d3b-bdec-4034-8267-466a8fdde666",
+    "createdAt": "2023-03-31T09:37:59.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

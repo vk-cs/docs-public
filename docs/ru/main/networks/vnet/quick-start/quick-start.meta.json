@@ -1,14 +1,14 @@
 {
-  "title": "Быстрый старт",
-  "pageDescription": "Начало работы с сервисом виртуальных сетей VK Cloud.",
-  "shortDescription": "Начало работы с виртуальными сетями",
-  "metaTitle": "Быстрый старт",
-  "metaDescription": "Начало работы с сервисом виртуальных сетей VK Cloud.",
-  "sectionTitle": "Быстрый старт",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "b6ede6dc-bd8b-415b-8a55-fbcd067d6e03",
-  "createdAt": "2023-04-27T06:51:50.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Быстрый старт",
+    "pageDescription": "Начало работы с сервисом виртуальных сетей VK Cloud.",
+    "shortDescription": "Начало работы с виртуальными сетями",
+    "metaTitle": "Быстрый старт",
+    "metaDescription": "Начало работы с сервисом виртуальных сетей VK Cloud.",
+    "sectionTitle": "Быстрый старт",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "b6ede6dc-bd8b-415b-8a55-fbcd067d6e03",
+    "createdAt": "2023-04-27T06:51:50.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

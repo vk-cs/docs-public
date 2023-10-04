@@ -1,15 +1,15 @@
 {
-  "title": "Tariffication",
-  "pageDescription": "How the service is charged, cost calculation.",
-  "shortDescription": "Rules of service charging, how to calculate the cost of using the service",
-  "metaTitle": "Tariffication",
-  "metaDescription": "",
-  "sectionTitle": "Tariffication",
-  "markdown": "How the service is charged, cost calculation.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 101,
-  "uuid": "67484dfe-8bd0-4103-82f0-922e3c47e7cf",
-  "createdAt": "2023-03-17T04:38:48.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Tariffication",
+    "pageDescription": "How the service is charged, cost calculation.",
+    "shortDescription": "Rules of service charging, how to calculate the cost of using the service",
+    "metaTitle": "Tariffication",
+    "metaDescription": "",
+    "sectionTitle": "Tariffication",
+    "markdown": "How the service is charged, cost calculation.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 101,
+    "uuid": "67484dfe-8bd0-4103-82f0-922e3c47e7cf",
+    "createdAt": "2023-03-17T04:38:48.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Microsoft",
-  "pageDescription": "Лицензирование продуктов Microsoft, используемых в виртуальных машинах VK Cloud.",
-  "shortDescription": "Лицензии продуктов от компании Microsoft",
-  "metaTitle": "Microsoft",
-  "metaDescription": "Лицензирование продуктов Microsoft, используемых в виртуальных машинах VK Cloud",
-  "sectionTitle": "Microsoft",
-  "weight": 0,
-  "additionalUuids": [
-    "90d8ed1a-3b82-40bc-ad81-0abcc0a071cf"
-  ],
-  "uuid": "ae8f5d79-114e-4643-bc2c-6f40c78ea719",
-  "createdAt": "2023-04-13T15:57:13.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Microsoft",
+    "pageDescription": "Лицензирование продуктов Microsoft, используемых в виртуальных машинах VK Cloud.",
+    "shortDescription": "Лицензии продуктов от компании Microsoft",
+    "metaTitle": "Microsoft",
+    "metaDescription": "Лицензирование продуктов Microsoft, используемых в виртуальных машинах VK Cloud",
+    "sectionTitle": "Microsoft",
+    "weight": 0,
+    "additionalUuids": [
+        "90d8ed1a-3b82-40bc-ad81-0abcc0a071cf"
+    ],
+    "uuid": "ae8f5d79-114e-4643-bc2c-6f40c78ea719",
+    "createdAt": "2023-04-13T15:57:13.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

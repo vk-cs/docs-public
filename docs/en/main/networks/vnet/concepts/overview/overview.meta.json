@@ -1,15 +1,15 @@
 {
-  "title": "Overview",
-  "pageDescription": "Overview of VK Cloud virtual network service.",
-  "shortDescription": "Brief description of the service's features",
-  "metaTitle": "Overview",
-  "metaDescription": "",
-  "sectionTitle": "Overview",
-  "markdown": "Overview of VK Cloud virtual network service.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "9f16e939-edb5-4c3b-9747-e1a5981820d1",
-  "createdAt": "2023-03-17T04:38:48.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Overview",
+    "pageDescription": "Overview of VK Cloud virtual network service.",
+    "shortDescription": "Brief description of the service's features",
+    "metaTitle": "Overview",
+    "metaDescription": "",
+    "sectionTitle": "Overview",
+    "markdown": "Overview of VK Cloud virtual network service.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "9f16e939-edb5-4c3b-9747-e1a5981820d1",
+    "createdAt": "2023-03-17T04:38:48.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

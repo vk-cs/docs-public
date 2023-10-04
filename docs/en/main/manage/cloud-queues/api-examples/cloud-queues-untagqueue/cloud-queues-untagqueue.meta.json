@@ -1,15 +1,15 @@
 {
-  "title": "UntagQueue",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "UntagQueue",
-  "metaDescription": "Remove the cost allocation tags from the specified VK Cloud SQS queue.  Request Parameters Queue Url The URL of the queue.\type: String\required: Yes TagKey.List",
-  "sectionTitle": "UntagQueue",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 21,
-  "uuid": "5c3ed9b9-fd80-4d6a-82db-e3984baaece9",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "UntagQueue",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "UntagQueue",
+    "metaDescription": "Remove the cost allocation tags from the specified VK Cloud SQS queue.  Request Parameters Queue Url The URL of the queue.\type: String\required: Yes TagKey.List",
+    "sectionTitle": "UntagQueue",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 21,
+    "uuid": "5c3ed9b9-fd80-4d6a-82db-e3984baaece9",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }
