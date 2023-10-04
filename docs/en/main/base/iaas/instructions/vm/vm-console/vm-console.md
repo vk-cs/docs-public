@@ -1,4 +1,4 @@
-In emergency situations and when there is no [connection to the VM](../vm-connect/vm-connect-nix#4_connect_to_the_vm) over the network, use [VNC console](#the-vnc-console) or view [VM message logs](#vm-message-logs).
+In emergency situations and when there is no [connection to the VM](../vm-connect/vm-connect-nix#4_connect_to_the_vm) over the network, use [VNC console](#the-vnc-console) or view [VM message logs](#vm_message_logs).
 
 <info>
 

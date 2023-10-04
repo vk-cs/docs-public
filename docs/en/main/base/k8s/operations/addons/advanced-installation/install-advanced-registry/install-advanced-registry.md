@@ -48,7 +48,7 @@
 
 <warn>
 
-When installing the addon, [standard load balancers](/en/main/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created for them.
+When installing the addon, [standard load balancers](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created for them.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 

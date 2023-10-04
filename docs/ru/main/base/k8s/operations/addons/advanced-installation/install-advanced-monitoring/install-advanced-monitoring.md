@@ -32,7 +32,7 @@
 
       - название приложения;
       - название пространства имен, куда будет установлен аддон;
-      - [код настройки аддона](#redaktirovanie-koda-nastroyki-addona-pri-ustanovke).
+      - [код настройки аддона](#redaktirovanie_koda_nastroyki_addona_pri_ustanovke).
 
         <warn>
 
@@ -93,8 +93,8 @@
    </tabpanel>
    </tabs>
 
-1. При необходимости [измените размер диска Prometheus](#izmenenie-razmera-diska-prometheus).
-1. При необходимости [получите пароль для Grafana из секрета Kubernetes](#poluchenie-parolya-dlya-grafana-iz-sekreta-kubernetes).
+1. При необходимости [измените размер диска Prometheus](#izmenenie_razmera_diska_prometheus).
+1. При необходимости [получите пароль для Grafana из секрета Kubernetes](#poluchenie_parolya_dlya_grafana_iz_sekreta_kubernetes).
 
 </tabpanel>
 <tabpanel>
@@ -144,7 +144,7 @@
 
       - название приложения;
       - название пространства имен, куда будет установлен аддон;
-      - [код настройки аддона](#redaktirovanie-koda-nastroyki-addona-pri-ustanovke).
+      - [код настройки аддона](#redaktirovanie_koda_nastroyki_addona_pri_ustanovke).
 
    1. Задайте нужные исключения (tolerations) и селекторы узлов (nodeSelector) в коде настройки аддона:
 
@@ -210,8 +210,8 @@
    </tabpanel>
    </tabs>
 
-1. При необходимости [измените размер диска Prometheus](#izmenenie-razmera-diska-prometheus).
-1. При необходимости [получите пароль для Grafana из секрета Kubernetes](#poluchenie-parolya-dlya-grafana-iz-sekreta-kubernetes).
+1. При необходимости [измените размер диска Prometheus](#izmenenie_razmera_diska_prometheus).
+1. При необходимости [получите пароль для Grafana из секрета Kubernetes](#poluchenie_parolya_dlya_grafana_iz_sekreta_kubernetes).
 
 </tabpanel>
 <tabpanel>
@@ -220,7 +220,7 @@
 
 При быстрой установке будет создан секрет Kubernetes, содержащий постоянный пароль для входа в веб-интерфейс Grafana.
 
-Чтобы [указать временный пароль](#redaktirovanie-koda-nastroyki-addona-pri-ustanovke) вместо постоянного, выполните **стандартную установку** или **установку на выделенные worker-узлы**.
+Чтобы [указать временный пароль](#redaktirovanie_koda_nastroyki_addona_pri_ustanovke) вместо постоянного, выполните **стандартную установку** или **установку на выделенные worker-узлы**.
 
 </info>
 
@@ -257,8 +257,8 @@
    </tabpanel>
    </tabs>
 
-1. При необходимости [измените размер диска Prometheus](#izmenenie-razmera-diska-prometheus).
-1. [Получите пароль для Grafana из секрета Kubernetes](#poluchenie-parolya-dlya-grafana-iz-sekreta-kubernetes).
+1. При необходимости [измените размер диска Prometheus](#izmenenie_razmera_diska_prometheus).
+1. [Получите пароль для Grafana из секрета Kubernetes](#poluchenie_parolya_dlya_grafana_iz_sekreta_kubernetes).
 
 </tabpanel>
 </tabs>
@@ -283,11 +283,11 @@ grafana:
   adminPassword: "<временный пароль>"
 ```
 
-После редактирования кода [продолжите установку аддона](#ustanovka-addona).
+После редактирования кода [продолжите установку аддона](#ustanovka_addona).
 
 ## Изменение размера диска Prometheus
 
-Эта операция доступна, если в кластере [установлен](#ustanovka-addona) аддон мониторинга `kube-prometheus-stack`.
+Эта операция доступна, если в кластере [установлен](#ustanovka_addona) аддон мониторинга `kube-prometheus-stack`.
 
 На диске Prometheus хранятся данные мониторинга кластера. Если для них недостаточно места, или вы хотите увеличить производительность диска Prometheus, увеличьте размер диска.
 
