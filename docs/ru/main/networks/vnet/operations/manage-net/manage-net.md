@@ -128,7 +128,7 @@
    1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
    1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
-1. [Получите идентификатор](#prosmotr-spiska-setey-i-podsetey--a-takzhe-informacii-o-nih) сети, которую нужно отредактировать.
+1. [Получите идентификатор](#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) сети, которую нужно отредактировать.
 
 1. Познакомьтесь со справкой команды.
 
@@ -198,7 +198,7 @@
    1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
    1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
-1. [Получите идентификатор](#prosmotr-spiska-setey-i-podsetey--a-takzhe-informacii-o-nih) сети, которую нужно удалить.
+1. [Получите идентификатор](#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) сети, которую нужно удалить.
 
 1. Выполните команду:
 
@@ -237,7 +237,7 @@
    1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
    1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
-1. [Получите идентификатор](#prosmotr-spiska-setey-i-podsetey--a-takzhe-informacii-o-nih) сети, в которой нужно создать подсеть.
+1. [Получите идентификатор](#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) сети, в которой нужно создать подсеть.
 
 1. Познакомьтесь со справкой команды.
 
@@ -305,7 +305,7 @@
    1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
    1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
-1. [Получите идентификатор](#prosmotr-spiska-setey-i-podsetey--a-takzhe-informacii-o-nih) подсети, которую нужно отредактировать.
+1. [Получите идентификатор](#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) подсети, которую нужно отредактировать.
 
 1. Чтобы применить (`set`) нужные настройки к подсети или отменить их (`unset`):
 
@@ -383,7 +383,7 @@
    1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
    1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
-1. [Получите идентификатор](#prosmotr-spiska-setey-i-podsetey--a-takzhe-informacii-o-nih) подсети, которую нужно удалить.
+1. [Получите идентификатор](#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) подсети, которую нужно удалить.
 
 1. Выполните команду:
 

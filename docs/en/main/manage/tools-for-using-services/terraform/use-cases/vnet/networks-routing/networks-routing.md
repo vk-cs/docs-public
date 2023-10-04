@@ -9,7 +9,7 @@ Example Infrastructure:
 - The routers have static routes configured leading to another subnet through the virtual machine port.
 - A virtual machine has been created in each subnet. A virtual machine on a public network has a floating IP address.
 
-  These machines are used to [check the routing settings between networks](#5--check-the-performance-of-the-example): a successful ping between them will indicate the correct configuration.
+  These machines are used to [check the routing settings between networks](#5_check_the_performance_of_the_example): a successful ping between them will indicate the correct configuration.
 
 ![Example Infrastructure Scheme](./assets/infrastructure-scheme.svg)
 
@@ -286,7 +286,7 @@ Create a Terraform configuration file `test-vms.tf`. It describes:
   - `common-instance-public` in a public subnet with a floating address. You can connect to such a virtual machine via SSH from the Internet.
   - `common-instance-private` in a private subnet. You can connect to such a virtual machine via SSH from another virtual machine.
 
-  These virtual machines will be used for [verifying the health of routing between two networks](#5--check-the-performance-of-the-example).
+  These virtual machines will be used for [verifying the health of routing between two networks](#5_check_the_performance_of_the_example).
 
 - Terraform ([output](https://developer.hashicorp.com/terraform/language/values/outputs)) with VMs IP addresses.
 
@@ -413,7 +413,7 @@ output "common-instance-private-ip" {
    - `common-instance-public-ip`: the IP address of the virtual machine in the public subnet.
    - `common-instance-public-floating-ip`: floating IP address of the virtual machine in the public subnet.
 
-   Use these IP addresses when [checking the health of the example](#5--check-the-performance-of-the-example).
+   Use these IP addresses when [checking the health of the example](#5_check_the_performance_of_the_example).
 
 ## 5. Check the performance of the example
 

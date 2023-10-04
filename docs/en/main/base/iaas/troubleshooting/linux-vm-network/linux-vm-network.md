@@ -133,7 +133,7 @@ Check that the network interface is configured correctly:
     - Interface name received earlier (`dev ens3`).
     - The private IP address of the virtual machine (`src 10.0.0.5`).
 
-    If the output of the commands `ip address show` and `ip route show` contains the given information, then the network interface settings are correct. Go to [application verification](#2--make-sure-that-the-necessary-applications-are-running-on-the-vm).
+    If the output of the commands `ip address show` and `ip route show` contains the given information, then the network interface settings are correct. Go to [application verification](#2_make_sure_that_the_necessary_applications_are_running_on_the_vm).
 
     If the output of the commands `ip address show` and `ip route show` if it does not contain the above information, then the network interface settings are incorrect.
 
@@ -290,7 +290,7 @@ Check that the network interface is configured correctly:
     echo 'network: {config: disabled}' | sudo tee /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
     ```
 
-7. Check for SSH access to the VM. If access does not appear, [go to the application check](#2--make-sure-that-the-necessary-applications-are-running-on-the-vm).
+7. Check for SSH access to the VM. If access does not appear, [go to the application check](#2_make_sure_that_the_necessary_applications_are_running_on_the_vm).
 
 ## 2. Make sure that the necessary applications are running on the VM
 
@@ -332,7 +332,7 @@ Check the SSH operation:
        Port 22
        ```
 
-        If the service is running on a standard port `22` — [go to checking the settings of the VM firewall](#3--check-the-settings-of-the-virtual-machine-firewall). Otherwise, proceed to the next step.
+        If the service is running on a standard port `22` — [go to checking the settings of the VM firewall](#3_check_the_settings_of_the_virtual_machine_firewall). Otherwise, proceed to the next step.
 
     1. Connect using a non-standard port number. For example, if the SSH service is running on a port `222`:
 
@@ -340,7 +340,7 @@ Check the SSH operation:
         ssh -i /path/to/private_key_file username@192.0.2.22 -p 222
         ```
 
-    1. Check for SSH access to the VM. If access has not appeared, [proceed to checking the settings of the VM firewall](#3--check-the-settings-of-the-virtual-machine-firewall).
+    1. Check for SSH access to the VM. If access has not appeared, [proceed to checking the settings of the VM firewall](#3_check_the_settings_of_the_virtual_machine_firewall).
 
     </tabpanel>
     <tabpanel>
@@ -369,7 +369,7 @@ Check the SSH operation:
         error: Bind to port 22 on 0.0.0.0 failed: Address already in use.
         ```
 
-        If there is no such line in the logs, [proceed to checking the settings of the VM firewall](#3--check-the-settings-of-the-virtual-machine-firewall).
+        If there is no such line in the logs, [proceed to checking the settings of the VM firewall](#3_check_the_settings_of_the_virtual_machine_firewall).
 
     1. Determine which process took up the port:
 
@@ -456,7 +456,7 @@ Check the SSH operation:
         sudo journalctl -xeu ssh
         ```
 
-    1. Check for SSH access to the VM. If access has not appeared, [proceed to checking the settings of the VM firewall](#3--check-the-settings-of-the-virtual-machine-firewall).
+    1. Check for SSH access to the VM. If access has not appeared, [proceed to checking the settings of the VM firewall](#3_check_the_settings_of_the_virtual_machine_firewall).
 
     </tabpanel>
     </tabs>
@@ -527,7 +527,7 @@ To check the firewall settings:
 
    If access has appeared, adjust the firewall rules and enable it again.
 
-   If access does not appear, turn on the firewall again and [check the settings of the VK Cloud firewall security groups](#4--check-the-settings-of-the-vk-cloud-firewall-security-groups).
+   If access does not appear, turn on the firewall again and [check the settings of the VK Cloud firewall security groups](#4_check_the_settings_of_the_vk_cloud_firewall_security_groups).
 
 To turn on the firewall again:
 
@@ -597,7 +597,7 @@ To check the firewall settings:
 
     If access has appeared, adjust the firewall security groups and add them again instead of the `all` group.
 
-    If access does not appear, go back to the original firewall settings and [contact technical support](#5--contact-technical-support).
+    If access does not appear, go back to the original firewall settings and [contact technical support](#5_contact_technical_support).
 
 To configure firewall rules again:
 

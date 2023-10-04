@@ -64,7 +64,7 @@ A change of ownership is possible in any state of the project balance.
 
 1. Contact [technical support](/en/contacts/) on behalf of the current owner, provide the following information:
 
-    - [project](#getting-the-project-id) id (PID);
+    - [project](#getting_the_project_id) id (PID);
     - the new owner's email address.
 
 1. (Optional) Check the role change in the [list of project members](../access-manage).

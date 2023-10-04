@@ -1,4 +1,4 @@
-The data storage system on the VK Cloud platform is organized using network drives. The configuration of the main disk is set at the stage of [creating a virtual machine](../vm/vm-create), additional disks can be [created](#creating-a-disk), later [connect](#connecting-a-disk-to-a-vm) to the necessary VMs. For created disks, the [resizing](#increasing-the-disk-size) and [changing](#changing-the-disk-type) disk type operations are available. Disks can be [shared between projects](#transfer-disks-between-projects) and virtual machines, [disconnect from VM](#disconnecting-a-disk-from-a-vm), [make bootable](#changing-the-bootable-attribute) and not bootable. Disks that are no longer in use can be [deleted](#deleting-a-disk).
+The data storage system on the VK Cloud platform is organized using network drives. The configuration of the main disk is set at the stage of [creating a virtual machine](../vm/vm-create), additional disks can be [created](#creating-a-disk), later [connect](#connecting-a-disk-to-a-vm) to the necessary VMs. For created disks, the [resizing](#increasing-the-disk-size) and [changing](#changing-the-disk-type) disk type operations are available. Disks can be [shared between projects](#transfer-disks-between-projects) and virtual machines, [disconnect from VM](#disconnecting_a_disk_from_a_vm), [make bootable](#changing_the_bootable_attribute) and not bootable. Disks that are no longer in use can be [deleted](#deleting_a_disk).
 
 ## Creating a disk
 
@@ -268,7 +268,7 @@ Creating HDD and SSD drives is available by default in all configurations. To us
 
    <info>
 
-   If the **Change disk type** option is not active, [disconnect the disk](#disconnecting-a-disk-from-a-vm) from the VM.
+   If the **Change disk type** option is not active, [disconnect the disk](#disconnecting_a_disk_from_a_vm) from the VM.
 
    </info>
 
@@ -440,7 +440,7 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 
 <warn>
 
-To disable the VM's main (root) disk, use the option [Replacing the root disk](#replacing-the-root-disk).
+To disable the VM's main (root) disk, use the option [Replacing the root disk](#replacing_the_root_disk).
 
 </warn>
 
@@ -526,8 +526,8 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#starting_stopping_r
 <tabpanel>
 
 1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
-2. [Disconnect from VM](#disconnecting-a-disk-from-a-vm) the disk that will be used to replace the main one.
-3. [Clone](#cloning-disk) the target disk if necessary.
+2. [Disconnect from VM](#disconnecting_a_disk_from_a_vm) the disk that will be used to replace the main one.
+3. [Clone](#cloning_disk) the target disk if necessary.
 4. Open the page with the desired list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
@@ -555,7 +555,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#starting_stopping_r
 
    <warn>
 
-   If the desired disk is not in the list, check that it is [disconnected from the VM](#disconnecting-a-disk-from-a-vm).
+   If the desired disk is not in the list, check that it is [disconnected from the VM](#disconnecting_a_disk_from_a_vm).
 
    </warn>
 
@@ -580,8 +580,8 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#starting_stopping_r
 
 4. Check the parameters of the disk that is selected to replace the main one:
 
-   - The disk is disconnected from the VM (`Status`: `available`). If not, [disconnect the disk](#disconnecting-a-disk-from-a-vm).
-   - The disk is bootable (`Bootable`: `true`). If not, [make it bootable](#changing-the-bootable-attribute).
+   - The disk is disconnected from the VM (`Status`: `available`). If not, [disconnect the disk](#disconnecting_a_disk_from_a_vm).
+   - The disk is bootable (`Bootable`: `true`). If not, [make it bootable](#changing_the_bootable_attribute).
 
 5. Copy the ID of the selected disk.
 6. Run the command to replace the main disk:
@@ -613,7 +613,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#starting_stopping_r
 1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to it (to both projects).
 
 2. Log in to the project you want to move the disk from.
-3. [Disconnect from VM](#disconnecting-a-disk-from-a-vm) the disk to be moved.
+3. [Disconnect from VM](#disconnecting_a_disk_from_a_vm) the disk to be moved.
 4. View the list of disks:
 
    ```bash
@@ -667,7 +667,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#starting_stopping_r
 
 ## Deleting a disk
 
-Before deleting [disconnect the disk](#disconnecting-a-disk-from-a-vm) from the VM.
+Before deleting [disconnect the disk](#disconnecting_a_disk_from_a_vm) from the VM.
 
 <err>
 
@@ -721,7 +721,7 @@ When you delete a disk, all its snapshots will be deleted.
 
 1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
-2. Output a list of disks using the `openstack volume list` command and check its status: if the disk is connected to the VM (`Status`: `in-use`), [disconnect it](#disconnecting-a-disk-from-a-vm).
+2. Output a list of disks using the `openstack volume list` command and check its status: if the disk is connected to the VM (`Status`: `in-use`), [disconnect it](#disconnecting_a_disk_from_a_vm).
 
 3. Copy the disk ID.
 

@@ -124,7 +124,7 @@ You cannot create a sub-zone for a zone in another project.
 
 </warn>
 
-To create a subzone in the VK Cloud project, [create](#adding-resource-records) two NS resource records with the name of the subzone, re-delegating the subzone to the VK Cloud DNS servers.
+To create a subzone in the VK Cloud project, [create](#adding_resource_records) two NS resource records with the name of the subzone, re-delegating the subzone to the VK Cloud DNS servers.
 
 <info>
 
