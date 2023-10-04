@@ -17,7 +17,7 @@
 
 1. Нажмите на имя нужного маршрутизатора.
 
-   Откроется страница с подробной информацией о нем. На этой странице можно также [редактировать](#redaktirovanie-marshrutizatora) параметры маршрутизатора.
+   Откроется страница с подробной информацией о нем. На этой странице можно также [редактировать](#redaktirovanie_marshrutizatora) параметры маршрутизатора.
 
 </tabpanel>
 <tabpanel>
@@ -43,8 +43,8 @@
 
    - `id` — идентификатор маршрутизатора.
    - `external_gateway_info` — информация о подключении к внешней сети. Пустое поле означает, что подключение к внешней сети не настроено.
-   - `interfaces_info` — информация об [интерфейсах маршрутизатора](#upravlenie-interfeysami). Пустое поле означает, что интерфейсы не добавлены.
-   - `routes` — информация о [статических маршрутах маршрутизатора](#upravlenie-staticheskimi-marshrutami). Пустое поле означает, что статические маршруты не добавлены.
+   - `interfaces_info` — информация об [интерфейсах маршрутизатора](#upravlenie_interfeysami). Пустое поле означает, что интерфейсы не добавлены.
+   - `routes` — информация о [статических маршрутах маршрутизатора](#upravlenie_staticheskimi_marshrutami). Пустое поле означает, что статические маршруты не добавлены.
 
 </tabpanel>
 </tabs>
@@ -106,7 +106,7 @@
 
    Маршрутизатор с подключением к внешней сети будет иметь доступ в интернет и публичный IP-адрес. Создайте маршрутизатор такого типа, если планируется назначать плавающие IP-адреса портам в подсетях, подключенных к маршрутизатору, и обеспечивать доступ в интернет из этих подсетей.
 
-1. О том, как подключить один или несколько интерфейсов к маршрутизатору, читайте далее. Это можно сделать либо путем [редактирования маршрутизатора](#redaktirovanie-marshrutizatora) либо [работой с его интерфейсами](#upravlenie-interfeysami) напрямую.
+1. О том, как подключить один или несколько интерфейсов к маршрутизатору, читайте далее. Это можно сделать либо путем [редактирования маршрутизатора](#redaktirovanie_marshrutizatora) либо [работой с его интерфейсами](#upravlenie_interfeysami) напрямую.
 
 </tabpanel>
 </tabs>
@@ -152,7 +152,7 @@
 
    1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
    1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
-1. [Получите идентификатор](#prosmotr-spiska-marshrutizatorov-i-informacii-o-nih) нужного маршрутизатора.
+1. [Получите идентификатор](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) нужного маршрутизатора.
 1. Выполните одно из доступных действий:
 
    - Измените имя маршрутизатора:
@@ -227,7 +227,7 @@
 
      <info>
 
-     Добавить или удалить подсеть также можно, [изменив интерфейс](#upravlenie-interfeysami) маршрутизатора.
+     Добавить или удалить подсеть также можно, [изменив интерфейс](#upravlenie_interfeysami) маршрутизатора.
 
      </info>
 
@@ -236,7 +236,7 @@
 
 ## Управление интерфейсами
 
-Управление интерфейсами маршрутизатора — альтернативный способ [управления подсетями](#redaktirovanie-marshrutizatora), которые подключены к нему.
+Управление интерфейсами маршрутизатора — альтернативный способ [управления подсетями](#redaktirovanie_marshrutizatora), которые подключены к нему.
 
 <tabs>
 <tablist>
@@ -245,7 +245,7 @@
 </tablist>
 <tabpanel>
 
-1. [Перейдите](#prosmotr-spiska-marshrutizatorov-i-informacii-o-nih) на страницу маршрутизатора, затем выберите вкладку **Интерфейсы**.
+1. [Перейдите](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) на страницу маршрутизатора, затем выберите вкладку **Интерфейсы**.
 
 1. Чтобы добавить интерфейс:
 
@@ -276,7 +276,7 @@
    1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
    1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
-1. [Получите идентификатор](#prosmotr-spiska-marshrutizatorov-i-informacii-o-nih) нужного маршрутизатора.
+1. [Получите идентификатор](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) нужного маршрутизатора.
 
 1. Чтобы добавить интерфейс:
 
@@ -294,13 +294,13 @@
 
    <info>
 
-   Чтобы получить список интерфейсов, [посмотрите детальную информацию о маршрутизаторе](#prosmotr-spiska-marshrutizatorov-i-informacii-o-nih) с помощью OpenStack CLI.
+   Чтобы получить список интерфейсов, [посмотрите детальную информацию о маршрутизаторе](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) с помощью OpenStack CLI.
 
    </info>
 
 1. Чтобы удалить интерфейс:
 
-   1. [Посмотрите интерфейсы (порты)](#prosmotr-spiska-marshrutizatorov-i-informacii-o-nih), настроенные на маршрутизаторе.
+   1. [Посмотрите интерфейсы (порты)](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih), настроенные на маршрутизаторе.
    1. Выполните команду:
 
       ```bash
@@ -327,7 +327,7 @@
 </tablist>
 <tabpanel>
 
-1. [Перейдите](#prosmotr-spiska-marshrutizatorov-i-informacii-o-nih) на страницу маршрутизатора, затем выберите вкладку **Статические маршруты**.
+1. [Перейдите](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) на страницу маршрутизатора, затем выберите вкладку **Статические маршруты**.
 
 1. Чтобы добавить статический маршрут:
 
@@ -346,7 +346,7 @@
    1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
    1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
-1. [Получите идентификатор](#prosmotr-spiska-marshrutizatorov-i-informacii-o-nih) нужного маршрутизатора.
+1. [Получите идентификатор](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) нужного маршрутизатора.
 
 1. Чтобы добавить статический маршрут, выполните команду:
 
@@ -356,7 +356,7 @@
 
 1. Чтобы удалить статический маршрут:
 
-   1. [Посмотрите статические маршруты](#prosmotr-spiska-marshrutizatorov-i-informacii-o-nih), настроенные на маршрутизаторе.
+   1. [Посмотрите статические маршруты](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih), настроенные на маршрутизаторе.
    1. Выполните команду:
 
       ```bash
@@ -376,7 +376,7 @@
 
 <warn>
 
-Перед удалением маршрутизатора последовательно удалите [статические маршруты](#upravlenie-staticheskimi-marshrutami) и настроенные [интерфейсы](#upravlenie-interfeysami) (если они есть).
+Перед удалением маршрутизатора последовательно удалите [статические маршруты](#upravlenie-staticheskimi-marshrutami) и настроенные [интерфейсы](#upravlenie_interfeysami) (если они есть).
 
 </warn>
 
@@ -410,7 +410,7 @@
    1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
    1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
 
-1. [Получите идентификатор](#prosmotr-spiska-marshrutizatorov-i-informacii-o-nih) нужного маршрутизатора.
+1. [Получите идентификатор](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) нужного маршрутизатора.
 
 1. Выполните команду:
 

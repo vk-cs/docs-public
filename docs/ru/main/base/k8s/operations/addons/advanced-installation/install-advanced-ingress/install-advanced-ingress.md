@@ -40,7 +40,7 @@
 
       - название приложения;
       - название пространства имен, куда будет установлен аддон;
-      - [код настройки аддона](#redaktirovanie-koda-nastroyki-addona-pri-ustanovke).
+      - [код настройки аддона](#redaktirovanie_koda_nastroyki_addona_pri_ustanovke).
 
         <warn>
 
@@ -101,7 +101,7 @@
    </tabpanel>
    </tabs>
 
-1. [Получите IP-адрес балансировщика](#poluchenie-ip-adresa-balansirovshchika).
+1. [Получите IP-адрес балансировщика](#poluchenie_ip_adresa_balansirovshchika).
 
 </tabpanel>
 <tabpanel>
@@ -151,7 +151,7 @@
 
       - название приложения;
       - название пространства имен, куда будет установлен аддон;
-      - [код настройки аддона](#redaktirovanie-koda-nastroyki-addona-pri-ustanovke).
+      - [код настройки аддона](#redaktirovanie_koda_nastroyki_addona_pri_ustanovke).
 
    1. Задайте нужные исключения (tolerations) и селекторы узлов (nodeSelector) в коде настройки аддона:
 
@@ -209,7 +209,7 @@
    </tabpanel>
    </tabs>
 
-1. [Получите IP-адрес балансировщика](#poluchenie-ip-adresa-balansirovshchika).
+1. [Получите IP-адрес балансировщика](#poluchenie_ip_adresa_balansirovshchika).
 
 </tabpanel>
 <tabpanel>
@@ -218,7 +218,7 @@
 
 При быстрой установке аддона создается балансировщик нагрузки с плавающим IP-адресом, и Ingress-контроллер будет доступен из интернета.
 
-Если необходимо, чтобы Ingress-контроллер не был доступен из интернета, выполните **стандартную установку** или **установку на выделенные worker-узлы**. В процессе установки [измените](#redaktirovanie-koda-nastroyki-addona-pri-ustanovke) тип балансировщика для Ingress-контроллера.
+Если необходимо, чтобы Ingress-контроллер не был доступен из интернета, выполните **стандартную установку** или **установку на выделенные worker-узлы**. В процессе установки [измените](#redaktirovanie_koda_nastroyki_addona_pri_ustanovke) тип балансировщика для Ingress-контроллера.
 
 </info>
 
@@ -255,7 +255,7 @@
    </tabpanel>
    </tabs>
 
-1. [Получите IP-адрес балансировщика](#poluchenie-ip-adresa-balansirovshchika).
+1. [Получите IP-адрес балансировщика](#poluchenie_ip_adresa_balansirovshchika).
 
 </tabpanel>
 </tabs>
@@ -285,13 +285,13 @@ service:
     }
 ```
 
-После редактирования кода [продолжите установку аддона](#ustanovka-addona).
+После редактирования кода [продолжите установку аддона](#ustanovka_addona).
 
 ## Получение IP-адреса балансировщика
 
 <info>
 
-Если при [установке](#ustanovka-addona) аддона были выбраны имя сервиса, отличное от `ingress-nginx`, или пространство имен, отличное от `ingress-nginx`, скорректируйте приведенные ниже шаги.
+Если при [установке](#ustanovka_addona) аддона были выбраны имя сервиса, отличное от `ingress-nginx`, или пространство имен, отличное от `ingress-nginx`, скорректируйте приведенные ниже шаги.
 
 </info>
 

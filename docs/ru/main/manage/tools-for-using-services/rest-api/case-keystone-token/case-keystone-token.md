@@ -143,7 +143,7 @@ x-subject-token: gAAAAABkirQja1Lgr9psuyf6fC6e3Sy5WMYubpmwMNPXuT6APQkf-BPRRAySTBG
 Задача: получить список сетей через REST API (сервис Neutron).
 
 1. В личном кабинете [посмотрите](https://mcs.mail.ru/app/project/endpoints) эндпоинт, по которому выполняется запрос к сервису Neutron. В этом примере: `https://infra.mail.ru:9696`.
-1. [Получите токен](#generaciya-tokena): сгенерируйте новый токен или скопируйте значение действующего токена.
+1. [Получите токен](#generaciya_tokena): сгенерируйте новый токен или скопируйте значение действующего токена.
 1. Выполните команду с помощью утилиты cURL:
 
    ```bash

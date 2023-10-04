@@ -77,6 +77,6 @@
 
 <info>
 
-Дополнительная информация по подключению к серверу JupyterHub в [официальной документации VS Code](code.visualstudio.com/docs/datascience/jupyter-notebooks#_connect-to-a-remote-jupyter-server).
+Дополнительная информация по подключению к серверу JupyterHub в [официальной документации VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_connect-to-a-remote-jupyter-server).
 
 </info>

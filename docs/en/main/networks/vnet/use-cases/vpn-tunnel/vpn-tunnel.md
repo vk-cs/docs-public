@@ -201,7 +201,7 @@ Select **Settings** - `Basic`, and set:
 
    ```
 
-1. Add VPN connection settings from the client network side to the `/etc/ipsec.conf` file. These settings are a mirror image of the tunnel settings made in the [previous step](#2-set-up-a-vpn-tunnel-on-the-cloud-side).
+1. Add VPN connection settings from the client network side to the `/etc/ipsec.conf` file. These settings are a mirror image of the tunnel settings made in the [previous step](#2_set_up_a_vpn_tunnel_on_the_cloud_side).
 
    ```ini
    conn client-vkcloud-vpn
@@ -228,7 +228,7 @@ Select **Settings** - `Basic`, and set:
 
    </info>
 
-1. Specify the shared key (PSK) in the `/etc/ipsec.secret` file. The key must match the key specified [previously](#2-set-up-a-vpn-tunnel-on-the-cloud-side):
+1. Specify the shared key (PSK) in the `/etc/ipsec.secret` file. The key must match the key specified [previously](#2_set_up_a_vpn_tunnel_on_the_cloud_side):
 
    ```ini
    192.0.2.200 192.0.2.100 : PSK "<pre-shared key, specified previously>"

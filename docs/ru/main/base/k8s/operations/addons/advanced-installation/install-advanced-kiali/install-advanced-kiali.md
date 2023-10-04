@@ -36,7 +36,7 @@
 
       - название приложения;
       - название пространства имен, куда будет установлен аддон;
-      - [код настройки аддона](#redaktirovanie-koda-nastroyki-addona-pri-ustanovke).
+      - [код настройки аддона](#redaktirovanie_koda_nastroyki_addona_pri_ustanovke).
 
         <warn>
 
@@ -147,7 +147,7 @@
 
       - название приложения;
       - название пространства имен, куда будет установлен аддон;
-      - [код настройки аддона](#redaktirovanie-koda-nastroyki-addona-pri-ustanovke).
+      - [код настройки аддона](#redaktirovanie_koda_nastroyki_addona_pri_ustanovke).
 
    1. Задайте нужные исключения (tolerations) и селекторы узлов (nodeSelector) в коде настройки аддона:
 
@@ -271,4 +271,4 @@ external_services:
       password: "<пароль пользователя admin Grafana>"
 ```
 
-После редактирования кода [продолжите установку аддона](#ustanovka-addona).
+После редактирования кода [продолжите установку аддона](#ustanovka_addona).

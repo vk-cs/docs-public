@@ -1,4 +1,4 @@
-When a user is invited to a [project](../projects), he or she is assigned with a role. The role defines the scope of [permissions](#roles_and_their_permissions-_the_full_matrix) available to the user when working with the personal account and with the cloud services.
+When a user is invited to a [project](../projects), he or she is assigned with a role. The role defines the scope of [permissions](#roles_and_their_permissions_the_full_matrix) available to the user when working with the personal account and with the cloud services.
 
 The same user can be a member of several projects and have different roles in each of them. The same user can be assigned with several roles in one project; in this case, the permissions of all assigned roles are summarized.
 
@@ -64,7 +64,7 @@ Each of the roles below is intended for working with one of the platform service
 
 All these roles have no access to the project members list and to project balance information.
 
-For detailed information about the permissions of these roles, see section [Roles and their permissions: the full matrix](#roles_and_their_permissions-_the_full_matrix).
+For detailed information about the permissions of these roles, see section [Roles and their permissions: the full matrix](#roles_and_their_permissions_the_full_matrix).
 
 All operations available to specialized roles are also available to Project owner, Superadministrator, and Project administrator.
 
