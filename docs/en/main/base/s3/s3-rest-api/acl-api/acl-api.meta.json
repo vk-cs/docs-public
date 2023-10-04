@@ -1,15 +1,15 @@
 {
-  "title": "ACL",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "ACL",
-  "metaDescription": "ACL (Access Control List) позволяет контролировать, какие операции разрешены каким пользователям. ACL может стоять как и на уровне всего бакета, так и на у",
-  "sectionTitle": "ACL",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "ba217534-cf76-4910-a890-e87b51664e18",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "ACL",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "ACL",
+    "metaDescription": "ACL (Access Control List) позволяет контролировать, какие операции разрешены каким пользователям. ACL может стоять как и на уровне всего бакета, так и на у",
+    "sectionTitle": "ACL",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "ba217534-cf76-4910-a890-e87b51664e18",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

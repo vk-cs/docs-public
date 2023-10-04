@@ -1,15 +1,15 @@
 {
-  "title": "Bucket",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Bucket",
-  "metaDescription": "Операции с Бакетами: Create - Создать бакет\nListBuckets - Получить список бакетов\nHeadBucket - Проверка наличия бакета и доступа к нему \nListObjects - Полу",
-  "sectionTitle": "Bucket",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "39c13f94-8b85-44c7-8b5a-99fe9913faaa",
-  "createdAt": "2023-02-02T15:05:34.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Bucket",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Bucket",
+    "metaDescription": "Операции с Бакетами: Create - Создать бакет\nListBuckets - Получить список бакетов\nHeadBucket - Проверка наличия бакета и доступа к нему \nListObjects - Полу",
+    "sectionTitle": "Bucket",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "39c13f94-8b85-44c7-8b5a-99fe9913faaa",
+    "createdAt": "2023-02-02T15:05:34.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

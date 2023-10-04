@@ -1,17 +1,17 @@
 {
-  "title": "Working with the network",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Working with the network",
-  "metaDescription": "Какой вариант создания сети лучше? При выборе",
-  "sectionTitle": "Working with the network",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "uuid": "b198a646-1db8-41a9-a455-5ee981c4121d",
-  "additionalUuids": [
-    "2b74947a-8e4a-4106-b12b-1de0121aa584"
-  ],
-  "createdAt": "2023-07-07T10:46:13.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Working with the network",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Working with the network",
+    "metaDescription": "Какой вариант создания сети лучше? При выборе",
+    "sectionTitle": "Working with the network",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "uuid": "b198a646-1db8-41a9-a455-5ee981c4121d",
+    "additionalUuids": [
+        "2b74947a-8e4a-4106-b12b-1de0121aa584"
+    ],
+    "createdAt": "2023-07-07T10:46:13.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

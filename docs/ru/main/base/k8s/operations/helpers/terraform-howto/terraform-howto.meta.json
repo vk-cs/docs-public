@@ -1,15 +1,15 @@
 {
-  "title": "Использование Terraform",
-  "pageDescription": "Как использовать Terraform при выполнении базовых операций.",
-  "shortDescription": "Как использовать Terraform при выполнении базовых операций",
-  "metaTitle": "Использование Terraform",
-  "metaDescription": "",
-  "sectionTitle": "Использование Terraform",
-  "markdown": "Как использовать Terraform при выполнении базовых операций.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "67dd6366-d306-494b-9efd-2b8cc10ffe7d",
-  "createdAt": "2022-12-15T08:05:18.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Использование Terraform",
+    "pageDescription": "Как использовать Terraform при выполнении базовых операций.",
+    "shortDescription": "Как использовать Terraform при выполнении базовых операций",
+    "metaTitle": "Использование Terraform",
+    "metaDescription": "",
+    "sectionTitle": "Использование Terraform",
+    "markdown": "Как использовать Terraform при выполнении базовых операций.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "67dd6366-d306-494b-9efd-2b8cc10ffe7d",
+    "createdAt": "2022-12-15T08:05:18.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "About service",
-  "pageDescription": "Arenadata Hadoop Benefits",
-  "shortDescription": "Arenadata Hadoop Distribution Benefits",
-  "metaTitle": "About the service",
-  "metaDescription": "Arenadata Hadoop Benefits",
-  "sectionTitle": "About the service",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "7464d86d-1823-40b0-a750-6fdb177e9469",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "About service",
+    "pageDescription": "Arenadata Hadoop Benefits",
+    "shortDescription": "Arenadata Hadoop Distribution Benefits",
+    "metaTitle": "About the service",
+    "metaDescription": "Arenadata Hadoop Benefits",
+    "sectionTitle": "About the service",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "7464d86d-1823-40b0-a750-6fdb177e9469",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

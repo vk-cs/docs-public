@@ -1,15 +1,15 @@
 {
-  "title": "Creature",
-  "pageDescription": "",
-  "shortDescription": "Instructions for connecting the service",
-  "metaTitle": "Creature",
-  "metaDescription": "Before using it, you must leave a request. You can do this in your personal account, in the",
-  "sectionTitle": "Creature",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "1c885b81-01fb-4939-a28c-26f19383fb15",
-  "createdAt": "2022-12-27T14:46:55.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Creature",
+    "pageDescription": "",
+    "shortDescription": "Instructions for connecting the service",
+    "metaTitle": "Creature",
+    "metaDescription": "Before using it, you must leave a request. You can do this in your personal account, in the",
+    "sectionTitle": "Creature",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "1c885b81-01fb-4939-a28c-26f19383fb15",
+    "createdAt": "2022-12-27T14:46:55.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

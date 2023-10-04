@@ -1,15 +1,15 @@
 {
-  "title": "Обзор сервиса",
-  "pageDescription": "Обзор сервиса контейнеров (Kubernetes) VK Cloud.",
-  "shortDescription": "Краткое описание возможностей сервиса и примеры задач, которые можно решить с его помощью",
-  "metaTitle": "Обзор сервиса контейнеров",
-  "metaDescription": "",
-  "sectionTitle": "Обзор сервиса",
-  "markdown": "Обзор сервиса контейнеров (Kubernetes) VK Cloud.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "f723bcfc-ae94-42c5-8e11-d400649e7cef",
-  "createdAt": "2022-12-15T08:05:18.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Обзор сервиса",
+    "pageDescription": "Обзор сервиса контейнеров (Kubernetes) VK Cloud.",
+    "shortDescription": "Краткое описание возможностей сервиса и примеры задач, которые можно решить с его помощью",
+    "metaTitle": "Обзор сервиса контейнеров",
+    "metaDescription": "",
+    "sectionTitle": "Обзор сервиса",
+    "markdown": "Обзор сервиса контейнеров (Kubernetes) VK Cloud.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "f723bcfc-ae94-42c5-8e11-d400649e7cef",
+    "createdAt": "2022-12-15T08:05:18.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

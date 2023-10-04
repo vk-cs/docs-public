@@ -1,15 +1,15 @@
 {
-  "title": "Метатеги образов",
-  "sectionTitle": "Метатеги образов",
-  "metaTitle": "Метатеги образов",
-  "pageDescription": "Уточняющие настройки работы инфраструктуры",
-  "shortDescription": "Уточняющие настройки для инфраструктуры",
-  "metaDescription": "Метатеги образов",
-  "markdown": "Уточняющие настройки работы инфраструктуры",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "714ccba2-8fef-478d-b499-bfdaa0d43fec",
-  "createdAt": "2023-04-13T15:57:13.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Метатеги образов",
+    "sectionTitle": "Метатеги образов",
+    "metaTitle": "Метатеги образов",
+    "pageDescription": "Уточняющие настройки работы инфраструктуры",
+    "shortDescription": "Уточняющие настройки для инфраструктуры",
+    "metaDescription": "Метатеги образов",
+    "markdown": "Уточняющие настройки работы инфраструктуры",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "714ccba2-8fef-478d-b499-bfdaa0d43fec",
+    "createdAt": "2023-04-13T15:57:13.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

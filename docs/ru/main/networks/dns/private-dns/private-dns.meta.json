@@ -1,15 +1,15 @@
 {
-  "title": "Приватный DNS",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Приватный DNS",
-  "metaDescription": "Приватный DNS в VK Cloud — функциональность DNS-сервера, работающего в проектных сетях платформы",
-  "sectionTitle": "Приватный DNS",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "3f8770b2-9c18-40ae-b60f-69d73d2ba926",
-  "createdAt": "2022-12-27T09:51:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Приватный DNS",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Приватный DNS",
+    "metaDescription": "Приватный DNS в VK Cloud — функциональность DNS-сервера, работающего в проектных сетях платформы",
+    "sectionTitle": "Приватный DNS",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "3f8770b2-9c18-40ae-b60f-69d73d2ba926",
+    "createdAt": "2022-12-27T09:51:35.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

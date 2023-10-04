@@ -1,15 +1,15 @@
 {
-  "title": "Cluster version update",
-  "pageDescription": "How the Kubernetes cluster update procedure is arranged.",
-  "shortDescription": "How the Kubernetes cluster update procedure is arranged",
-  "metaTitle": "Cluster version update",
-  "metaDescription": "",
-  "sectionTitle": "Cluster version update",
-  "markdown": "How the Kubernetes cluster update procedure is arranged.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 7,
-  "uuid": "4c3df781-0296-4176-a968-28af79bf14f3",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Cluster version update",
+    "pageDescription": "How the Kubernetes cluster update procedure is arranged.",
+    "shortDescription": "How the Kubernetes cluster update procedure is arranged",
+    "metaTitle": "Cluster version update",
+    "metaDescription": "",
+    "sectionTitle": "Cluster version update",
+    "markdown": "How the Kubernetes cluster update procedure is arranged.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 7,
+    "uuid": "4c3df781-0296-4176-a968-28af79bf14f3",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

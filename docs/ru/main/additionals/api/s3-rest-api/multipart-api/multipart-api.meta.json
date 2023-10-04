@@ -1,15 +1,15 @@
 {
-  "title": "Multipart",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Multipart",
-  "metaDescription": "Составная или многокомпонентная загрузка позволяет сохранять объекты в Объектном хранилище VK Cloud S3 по частям. Это может пригодиться при загрузке или копиров",
-  "sectionTitle": "Multipart",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "3d0433a6-158a-4d61-a25f-dc74d3839fc6",
-  "createdAt": "2023-02-02T15:05:34.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Multipart",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Multipart",
+    "metaDescription": "Составная или многокомпонентная загрузка позволяет сохранять объекты в Объектном хранилище VK Cloud S3 по частям. Это может пригодиться при загрузке или копиров",
+    "sectionTitle": "Multipart",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "3d0433a6-158a-4d61-a25f-dc74d3839fc6",
+    "createdAt": "2023-02-02T15:05:34.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

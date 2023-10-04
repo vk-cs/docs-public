@@ -1,15 +1,15 @@
 {
-  "title": "Deleting an instance",
-  "pageDescription": "Description of how to delete an MLflow instance.",
-  "shortDescription": "Delete MLflow Instance",
-  "metaTitle": "Deleting Instance",
-  "metaDescription": "Delete MLflow Instance",
-  "sectionTitle": "Deleting an instance",
-  "markdown": "Deleting an instance",
-  "icon": "",
-  "weight": 1,
-  "infobarItems": null,
-  "uuid": "0492cf8a-2c61-4e7e-a0b0-2e0031324764",
-  "createdAt": "2022-10-07T09:38:12.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Deleting an instance",
+    "pageDescription": "Description of how to delete an MLflow instance.",
+    "shortDescription": "Delete MLflow Instance",
+    "metaTitle": "Deleting Instance",
+    "metaDescription": "Delete MLflow Instance",
+    "sectionTitle": "Deleting an instance",
+    "markdown": "Deleting an instance",
+    "icon": "",
+    "weight": 1,
+    "infobarItems": null,
+    "uuid": "0492cf8a-2c61-4e7e-a0b0-2e0031324764",
+    "createdAt": "2022-10-07T09:38:12.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

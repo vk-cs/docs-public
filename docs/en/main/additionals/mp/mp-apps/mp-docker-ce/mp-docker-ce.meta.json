@@ -1,15 +1,15 @@
 {
-  "title": "Docker CE",
-  "pageDescription": "Installing and configuring Docker. Docker is software for automating the deployment and management of applications in a virtualization environment at the operating system level.",
-  "shortDescription": "Docker is software for automating the deployment and management of applications in a virtualization environment at the operating system level",
-  "metaTitle": "Docker CE",
-  "metaDescription": "Docker is software for automating the deployment and management of applications in a virtualization environment at the operating system level.",
-  "sectionTitle": "Docker CE",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "cbdb50d6-e176-40c6-ae42-8b038965cd4d",
-  "createdAt": "2023-06-05T11:17:25.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Docker CE",
+    "pageDescription": "Installing and configuring Docker. Docker is software for automating the deployment and management of applications in a virtualization environment at the operating system level.",
+    "shortDescription": "Docker is software for automating the deployment and management of applications in a virtualization environment at the operating system level",
+    "metaTitle": "Docker CE",
+    "metaDescription": "Docker is software for automating the deployment and management of applications in a virtualization environment at the operating system level.",
+    "sectionTitle": "Docker CE",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "cbdb50d6-e176-40c6-ae42-8b038965cd4d",
+    "createdAt": "2023-06-05T11:17:25.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

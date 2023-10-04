@@ -1,15 +1,15 @@
 {
-  "title": "Forward Incremental Backups",
-  "pageDescription": "",
-  "shortDescription": "Storing and deleting backups, if the maximum number of full copies is set",
-  "metaTitle": "Forward Incremental Backups",
-  "metaDescription": "The article describes a strategy for deleting backups when the maximum number of stored backups is exceeded.",
-  "sectionTitle": "Forward Incremental Backups",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "6f457a9a-ac52-407d-98e9-1a6e6f9c7311",
-  "createdAt": "2023-03-17T13:58:06.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Forward Incremental Backups",
+    "pageDescription": "",
+    "shortDescription": "Storing and deleting backups, if the maximum number of full copies is set",
+    "metaTitle": "Forward Incremental Backups",
+    "metaDescription": "The article describes a strategy for deleting backups when the maximum number of stored backups is exceeded.",
+    "sectionTitle": "Forward Incremental Backups",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "6f457a9a-ac52-407d-98e9-1a6e6f9c7311",
+    "createdAt": "2023-03-17T13:58:06.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

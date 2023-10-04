@@ -1,15 +1,15 @@
 {
-  "title": "Trigger launch",
-  "pageDescription": "Solving the problem of turning off the trigger and starting it.",
-  "shortDescription": "Trigger launch after turning it off",
-  "metaTitle": "Trigger launch",
-  "metaDescription": "",
-  "sectionTitle": "Trigger launch",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "c5da9205-cc53-40af-b7df-d3c58d248c3c",
-  "createdAt": "2022-07-21T08:32:08.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Trigger launch",
+    "pageDescription": "Solving the problem of turning off the trigger and starting it.",
+    "shortDescription": "Trigger launch after turning it off",
+    "metaTitle": "Trigger launch",
+    "metaDescription": "",
+    "sectionTitle": "Trigger launch",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "c5da9205-cc53-40af-b7df-d3c58d248c3c",
+    "createdAt": "2022-07-21T08:32:08.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

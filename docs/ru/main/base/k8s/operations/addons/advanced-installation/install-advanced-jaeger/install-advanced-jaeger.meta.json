@@ -1,15 +1,15 @@
 {
-  "title": "Jaeger",
-  "pageDescription": "Здесь описана настройка и установка аддона Jaeger.",
-  "shortDescription": "",
-  "metaTitle": "Jaeger",
-  "metaDescription": "Сервис контейнеров VK Cloud: настройка и установка аддона Jaeger.",
-  "sectionTitle": "Jaeger",
-  "markdown": "Здесь описана настройка и установка аддона Jaeger.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 6,
-  "createdAt": "2023-09-25T14:41:59.000Z",
-  "updatedAt": "2023-09-25T14:41:59.000Z",
-  "uuid": "52869a3d-5da5-40ee-a624-8e185ceb0fee"
+    "title": "Jaeger",
+    "pageDescription": "Здесь описана настройка и установка аддона Jaeger.",
+    "shortDescription": "",
+    "metaTitle": "Jaeger",
+    "metaDescription": "Сервис контейнеров VK Cloud: настройка и установка аддона Jaeger.",
+    "sectionTitle": "Jaeger",
+    "markdown": "Здесь описана настройка и установка аддона Jaeger.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 6,
+    "createdAt": "2023-09-25T14:41:59.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z",
+    "uuid": "52869a3d-5da5-40ee-a624-8e185ceb0fee"
 }

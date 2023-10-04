@@ -1,15 +1,15 @@
 {
-  "title": "Creating a VM",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Creating a VM",
-  "metaDescription": "",
-  "sectionTitle": "Creating a VM",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "2085f47a-a039-47e5-9f33-1e3fa3f62e0a",
-  "createdAt": "2023-05-26T16:45:20.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Creating a VM",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Creating a VM",
+    "metaDescription": "",
+    "sectionTitle": "Creating a VM",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "2085f47a-a039-47e5-9f33-1e3fa3f62e0a",
+    "createdAt": "2023-05-26T16:45:20.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

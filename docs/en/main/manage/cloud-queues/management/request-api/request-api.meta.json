@@ -1,15 +1,15 @@
 {
-  "title": "Building API requests",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Building API requests",
-  "metaDescription": "Building an endpoint To work with Cloud Queues, you need to use endpoint https://sqs.mcs.mail.ru / Regional Endpoints As",
-  "sectionTitle": "Building API requests",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "9c31f549-f3d4-4ef6-abeb-87b7bbabd99b",
-  "createdAt": "2023-04-12T09:23:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Building API requests",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Building API requests",
+    "metaDescription": "Building an endpoint To work with Cloud Queues, you need to use endpoint https://sqs.mcs.mail.ru / Regional Endpoints As",
+    "sectionTitle": "Building API requests",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "9c31f549-f3d4-4ef6-abeb-87b7bbabd99b",
+    "createdAt": "2023-04-12T09:23:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

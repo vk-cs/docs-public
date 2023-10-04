@@ -1,14 +1,14 @@
 {
-  "title": "Object recognition",
-  "pageDescription": "",
-  "shortDescription": "API methods to search for objects in the photo",
-  "metaTitle": "Object recognition",
-  "metaDescription": "",
-  "sectionTitle": "Object recognition",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "uuid": "477cbf32-5880-47d9-8146-e8d5f46c6fae",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Object recognition",
+    "pageDescription": "",
+    "shortDescription": "API methods to search for objects in the photo",
+    "metaTitle": "Object recognition",
+    "metaDescription": "",
+    "sectionTitle": "Object recognition",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "uuid": "477cbf32-5880-47d9-8146-e8d5f46c6fae",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

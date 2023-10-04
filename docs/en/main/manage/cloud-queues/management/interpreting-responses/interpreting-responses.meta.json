@@ -1,15 +1,15 @@
 {
-  "title": "Interpreting API responses",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Interpreting API responses",
-  "metaDescription": "In response to a request via the VK API, CS SQS returns an XML data structure containing the results of the request.  Structure of a successful response If the request is successful, the main",
-  "sectionTitle": "Interpreting API responses",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "028e36ea-9ec5-4111-add8-62b86b29b26b",
-  "createdAt": "2023-04-12T09:23:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Interpreting API responses",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Interpreting API responses",
+    "metaDescription": "In response to a request via the VK API, CS SQS returns an XML data structure containing the results of the request.  Structure of a successful response If the request is successful, the main",
+    "sectionTitle": "Interpreting API responses",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "028e36ea-9ec5-4111-add8-62b86b29b26b",
+    "createdAt": "2023-04-12T09:23:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Метки и ограничения",
-  "pageDescription": "Общие сведения о метках (labels) и ограничениях (taints) в Kubernetes.",
-  "shortDescription": "Общие сведения о метках (labels) и ограничениях (taints) в Kubernetes",
-  "metaTitle": "Метки и ограничения",
-  "metaDescription": "",
-  "sectionTitle": "Метки и ограничения",
-  "markdown": "Общие сведения о метках (labels) и ограничениях (taints) в Kubernetes.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "ab082882-2802-491f-ae6c-f9f736a92aed",
-  "createdAt": "2022-12-15T08:05:18.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Метки и ограничения",
+    "pageDescription": "Общие сведения о метках (labels) и ограничениях (taints) в Kubernetes.",
+    "shortDescription": "Общие сведения о метках (labels) и ограничениях (taints) в Kubernetes",
+    "metaTitle": "Метки и ограничения",
+    "metaDescription": "",
+    "sectionTitle": "Метки и ограничения",
+    "markdown": "Общие сведения о метках (labels) и ограничениях (taints) в Kubernetes.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "ab082882-2802-491f-ae6c-f9f736a92aed",
+    "createdAt": "2022-12-15T08:05:18.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

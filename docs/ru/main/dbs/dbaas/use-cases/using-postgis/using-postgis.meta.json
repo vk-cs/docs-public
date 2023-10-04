@@ -1,15 +1,15 @@
 {
-  "title": "Использование расширения PostGIS в PostgreSQL и PostgresPro",
-  "pageDescription": "Начало работы с расширением PostGIS в PostgreSQL и PostgresPro.",
-  "shortDescription": "Как начать работу с расширением PostGIS",
-  "metaTitle": "Использование расширения PostGIS в PostgreSQL и PostgresPro",
-  "metaDescription": "Базы данных VK Cloud: начало работы с расширением PostGIS в PostgreSQL и PostgresPro.",
-  "sectionTitle": "Использование расширения PostGIS в PostgreSQL и PostgresPro",
-  "markdown": "Начало работы с расширением PostGIS в PostgreSQL и PostgresPro.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "createdAt": "2023-09-05T09:12:49.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z",
-  "uuid": "9e674494-e182-45df-b5b6-7cfa14b2e916"
+    "title": "Использование расширения PostGIS в PostgreSQL и PostgresPro",
+    "pageDescription": "Начало работы с расширением PostGIS в PostgreSQL и PostgresPro.",
+    "shortDescription": "Как начать работу с расширением PostGIS",
+    "metaTitle": "Использование расширения PostGIS в PostgreSQL и PostgresPro",
+    "metaDescription": "Базы данных VK Cloud: начало работы с расширением PostGIS в PostgreSQL и PostgresPro.",
+    "sectionTitle": "Использование расширения PostGIS в PostgreSQL и PostgresPro",
+    "markdown": "Начало работы с расширением PostGIS в PostgreSQL и PostgresPro.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "createdAt": "2023-09-05T09:12:49.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z",
+    "uuid": "9e674494-e182-45df-b5b6-7cfa14b2e916"
 }

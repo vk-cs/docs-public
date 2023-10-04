@@ -1,15 +1,15 @@
 {
-  "title": "ListDeadLetterSourceQueues",
-  "pageDescription": "Примеры запроса и ответа для метода ListDeadLetterSourceQueues.",
-  "shortDescription": "",
-  "metaTitle": "ListDeadLetterSourceQueues",
-  "metaDescription": "Запрос возвращает список ваших очередей, для которых RedrivePolicy атрибут очереди настроен с помощью очереди недоставленных сообщений. Примеры запроса и ответа для метода ListDeadLetterSourceQueues.",
-  "sectionTitle": "ListDeadLetterSourceQueues",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 11,
-  "uuid": "30b217f4-222f-4b10-998f-74d27cd23a81",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "ListDeadLetterSourceQueues",
+    "pageDescription": "Примеры запроса и ответа для метода ListDeadLetterSourceQueues.",
+    "shortDescription": "",
+    "metaTitle": "ListDeadLetterSourceQueues",
+    "metaDescription": "Запрос возвращает список ваших очередей, для которых RedrivePolicy атрибут очереди настроен с помощью очереди недоставленных сообщений. Примеры запроса и ответа для метода ListDeadLetterSourceQueues.",
+    "sectionTitle": "ListDeadLetterSourceQueues",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 11,
+    "uuid": "30b217f4-222f-4b10-998f-74d27cd23a81",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

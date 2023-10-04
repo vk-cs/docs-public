@@ -1,15 +1,15 @@
 {
-  "title": "Подключение к NiFi",
-  "pageDescription": "Инструкция по подключению к UI кластера NiFi.",
-  "shortDescription": "Инструкция по подключению к UI кластера NiFi",
-  "metaTitle": "Подключение",
-  "metaDescription": "Инструкция по подключению к UI кластера NiFi",
-  "sectionTitle": "Подключение к NiFi",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "3d7dea00-514a-46d4-88f0-942040eb4e84",
-  "createdAt": "2023-05-31T09:51:29.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Подключение к NiFi",
+    "pageDescription": "Инструкция по подключению к UI кластера NiFi.",
+    "shortDescription": "Инструкция по подключению к UI кластера NiFi",
+    "metaTitle": "Подключение",
+    "metaDescription": "Инструкция по подключению к UI кластера NiFi",
+    "sectionTitle": "Подключение к NiFi",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "3d7dea00-514a-46d4-88f0-942040eb4e84",
+    "createdAt": "2023-05-31T09:51:29.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

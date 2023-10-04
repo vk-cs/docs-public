@@ -1,15 +1,15 @@
 {
-  "title": "Hosting static websites",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Hosting static websites",
-  "metaDescription": "The Object Storage service allows you to use resources for hosting static sites based on HTML, CSS and JavaScript technologies. The store can also be used",
-  "sectionTitle": "Hosting static websites",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 5,
-  "uuid": "3a85479b-d4d1-4d53-8cc3-326559bf4c2a",
-  "createdAt": "2023-07-11T12:47:03.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Hosting static websites",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Hosting static websites",
+    "metaDescription": "The Object Storage service allows you to use resources for hosting static sites based on HTML, CSS and JavaScript technologies. The store can also be used",
+    "sectionTitle": "Hosting static websites",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 5,
+    "uuid": "3a85479b-d4d1-4d53-8cc3-326559bf4c2a",
+    "createdAt": "2023-07-11T12:47:03.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

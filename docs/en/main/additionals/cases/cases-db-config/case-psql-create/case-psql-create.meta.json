@@ -1,15 +1,15 @@
 {
-  "title": "Installing and configuring PostgreSQL on Ubuntu",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Installing and configuring PostgreSQL on Ubuntu",
-  "metaDescription": "This article will show you how to install standalone PostgreSQL , create a database user, configure permissions and network access. Hardware configuration",
-  "sectionTitle": "Installing and configuring PostgreSQL on Ubuntu",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 6,
-  "uuid": "c0a53861-bc65-478a-98cb-54c9cda6ba19",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Installing and configuring PostgreSQL on Ubuntu",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Installing and configuring PostgreSQL on Ubuntu",
+    "metaDescription": "This article will show you how to install standalone PostgreSQL , create a database user, configure permissions and network access. Hardware configuration",
+    "sectionTitle": "Installing and configuring PostgreSQL on Ubuntu",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 6,
+    "uuid": "c0a53861-bc65-478a-98cb-54c9cda6ba19",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

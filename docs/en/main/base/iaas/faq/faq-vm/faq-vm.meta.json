@@ -1,12 +1,12 @@
 {
-  "title": "Virtual machines",
-  "pageDescription": "VM placement, connection speed, solving problems with VM access, virtualization and fault tolerance",
-  "shortDescription": "VM placement, connection speed, solving problems with VM access, virtualization and fault tolerance",
-  "metaTitle": "Virtual machines",
-  "metaDescription": "VM placement, connection speed, solving problems with VM access, virtualization and fault tolerance",
-  "sectionTitle": "Virtual machines",
-  "weight": 0,
-  "uuid": "09d59eb1-1a1f-48ca-92b8-11d78bf290ad",
-  "createdAt": "2023-04-24T13:06:27.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Virtual machines",
+    "pageDescription": "VM placement, connection speed, solving problems with VM access, virtualization and fault tolerance",
+    "shortDescription": "VM placement, connection speed, solving problems with VM access, virtualization and fault tolerance",
+    "metaTitle": "Virtual machines",
+    "metaDescription": "VM placement, connection speed, solving problems with VM access, virtualization and fault tolerance",
+    "sectionTitle": "Virtual machines",
+    "weight": 0,
+    "uuid": "09d59eb1-1a1f-48ca-92b8-11d78bf290ad",
+    "createdAt": "2023-04-24T13:06:27.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "ReceiveMessage",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "ReceiveMessage",
-  "metaDescription": "Retrieves one or more messages (up to 10) from the specified queue. Using the WaitTimeSeconds parameter enables support for long polling.  Short",
-  "sectionTitle": "ReceiveMessage",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 15,
-  "uuid": "3e6bc19b-8ec2-4cff-aeb6-ee09cbc1c06a",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "ReceiveMessage",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "ReceiveMessage",
+    "metaDescription": "Retrieves one or more messages (up to 10) from the specified queue. Using the WaitTimeSeconds parameter enables support for long polling.  Short",
+    "sectionTitle": "ReceiveMessage",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 15,
+    "uuid": "3e6bc19b-8ec2-4cff-aeb6-ee09cbc1c06a",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

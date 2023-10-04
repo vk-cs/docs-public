@@ -1,15 +1,15 @@
 {
-  "title": "Deleting objects from bucket",
-  "pageDescription": "How to delete objects from the object storage bucket.",
-  "shortDescription": "How to delete objects from the object storage bucket",
-  "metaTitle": "Deleting objects from bucket",
-  "metaDescription": "VK Cloud object storage: how to delete objects from a bucket.",
-  "sectionTitle": "Deleting objects from bucket",
-  "markdown": "How to delete objects from the object storage bucket.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "1a089ded-2908-4cce-a8bd-5e6d0775ee4a",
-  "createdAt": "2023-05-29T09:21:30.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Deleting objects from bucket",
+    "pageDescription": "How to delete objects from the object storage bucket.",
+    "shortDescription": "How to delete objects from the object storage bucket",
+    "metaTitle": "Deleting objects from bucket",
+    "metaDescription": "VK Cloud object storage: how to delete objects from a bucket.",
+    "sectionTitle": "Deleting objects from bucket",
+    "markdown": "How to delete objects from the object storage bucket.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "1a089ded-2908-4cce-a8bd-5e6d0775ee4a",
+    "createdAt": "2023-05-29T09:21:30.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

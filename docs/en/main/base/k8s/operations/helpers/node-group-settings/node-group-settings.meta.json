@@ -1,15 +1,15 @@
 {
-  "title": "Worker node group settings",
-  "pageDescription": "List of all worker node group settings.",
-  "shortDescription": "List of all worker node group settings",
-  "metaTitle": "Worker node group settings",
-  "metaDescription": "",
-  "sectionTitle": "Worker node group settings",
-  "markdown": "List of all worker node group settings.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "25670d2d-c331-4ae0-a577-0949c153988a",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Worker node group settings",
+    "pageDescription": "List of all worker node group settings.",
+    "shortDescription": "List of all worker node group settings",
+    "metaTitle": "Worker node group settings",
+    "metaDescription": "",
+    "sectionTitle": "Worker node group settings",
+    "markdown": "List of all worker node group settings.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "25670d2d-c331-4ae0-a577-0949c153988a",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

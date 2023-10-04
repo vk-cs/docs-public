@@ -1,18 +1,18 @@
 {
-  "title": "Connecting to a Linux VM",
-  "sectionTitle": "Connecting to a Linux VM",
-  "metaTitle": "Connecting to a Linux VM",
-  "pageDescription": "Connecting to a Linux VM.",
-  "shortDescription": "",
-  "metaDescription": "Connecting to a Linux VM",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "additionalUuids": [
-    "23b02aed-a0ab-4bdd-8d5c-8ef189c2797e",
-    "f304ca64-1f13-48d4-8cae-2df395592e42"
-  ],
-  "uuid": "2df95ef2-6b27-4ad6-974a-6d43350c0f00",
-  "createdAt": "2023-04-24T13:06:27.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Connecting to a Linux VM",
+    "sectionTitle": "Connecting to a Linux VM",
+    "metaTitle": "Connecting to a Linux VM",
+    "pageDescription": "Connecting to a Linux VM.",
+    "shortDescription": "",
+    "metaDescription": "Connecting to a Linux VM",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "additionalUuids": [
+        "23b02aed-a0ab-4bdd-8d5c-8ef189c2797e",
+        "f304ca64-1f13-48d4-8cae-2df395592e42"
+    ],
+    "uuid": "2df95ef2-6b27-4ad6-974a-6d43350c0f00",
+    "createdAt": "2023-04-24T13:06:27.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

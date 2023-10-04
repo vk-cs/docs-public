@@ -1,12 +1,12 @@
 {
-  "title": "Working with the actions log",
-  "pageDescription": "Viewing and preparing records with the help of log entries for logging metrics, events and errors when contacting technical support.",
-  "shortDescription": "Viewing and preparing logs for contacting technical support",
-  "metaTitle": "Working with the actions log",
-  "metaDescription": "Viewing and preparing records with the help of log entries for logging metrics, events and errors when contacting technical support.",
-  "sectionTitle": "Working with the actions log",
-  "weight": 6,
-  "uuid": "f88d725e-fdbc-419d-8fad-64ca5cbdd75b",
-  "createdAt": "2023-06-27T09:37:12.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Working with the actions log",
+    "pageDescription": "Viewing and preparing records with the help of log entries for logging metrics, events and errors when contacting technical support.",
+    "shortDescription": "Viewing and preparing logs for contacting technical support",
+    "metaTitle": "Working with the actions log",
+    "metaDescription": "Viewing and preparing records with the help of log entries for logging metrics, events and errors when contacting technical support.",
+    "sectionTitle": "Working with the actions log",
+    "weight": 6,
+    "uuid": "f88d725e-fdbc-419d-8fad-64ca5cbdd75b",
+    "createdAt": "2023-06-27T09:37:12.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Установка и настройка ClickHouse на Ubuntu",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Установка и настройка ClickHouse на Ubuntu",
-  "metaDescription": "В данной статье рассмотрим, как установить standalone ClickHouse, создать пользователя базы данных, настроить права и сетевой доступ. Конфигурация оборудов",
-  "sectionTitle": "Установка и настройка ClickHouse на Ubuntu",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "d45a20f1-0449-4831-96c2-d2b43cea6d7c",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Установка и настройка ClickHouse на Ubuntu",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Установка и настройка ClickHouse на Ubuntu",
+    "metaDescription": "В данной статье рассмотрим, как установить standalone ClickHouse, создать пользователя базы данных, настроить права и сетевой доступ. Конфигурация оборудов",
+    "sectionTitle": "Установка и настройка ClickHouse на Ubuntu",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "d45a20f1-0449-4831-96c2-d2b43cea6d7c",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

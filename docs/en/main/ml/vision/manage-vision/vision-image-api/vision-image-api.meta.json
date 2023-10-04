@@ -1,17 +1,17 @@
 {
-  "title": "Image processing methods",
-  "pageDescription": "",
-  "shortDescription": "Improving the quality of images",
-  "metaTitle": "Image processing methods",
-  "metaDescription": "The improve method is used to improve photos. Request Authorization data is passed in the request string: Parameter Value Type oauth_token string OAu",
-  "sectionTitle": "Image processing methods",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "additionalUuids": [
-    "5dcafd7d-4268-42ba-8724-dc787501dd61"
-  ],
-  "uuid": "6a8f8a26-ae07-4da4-8948-126a7acb0344",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Image processing methods",
+    "pageDescription": "",
+    "shortDescription": "Improving the quality of images",
+    "metaTitle": "Image processing methods",
+    "metaDescription": "The improve method is used to improve photos. Request Authorization data is passed in the request string: Parameter Value Type oauth_token string OAu",
+    "sectionTitle": "Image processing methods",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "additionalUuids": [
+        "5dcafd7d-4268-42ba-8724-dc787501dd61"
+    ],
+    "uuid": "6a8f8a26-ae07-4da4-8948-126a7acb0344",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

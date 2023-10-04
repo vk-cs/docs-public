@@ -1,15 +1,15 @@
 {
-  "title": "Hyper-V VM Migration to VK Cloud",
-  "sectionTitle": "Hyper-V VM Migration to VK Cloud",
-  "metaTitle": "Hyper-V VM Migration to VK Cloud",
-  "pageDescription": "Migration of a Hyper-V VM to VK Cloud.",
-  "shortDescription": "How to import a Hyper-V VM image to VK Cloud",
-  "metaDescription": "Migration of a Hyper-V VM to VK Cloud",
-  "markdown": "Migration of a Hyper-V VM to VK Cloud.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "5ca8afdc-504a-402b-8a32-52557ff8c120",
-  "createdAt": "2023-05-18T11:25:25.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Hyper-V VM Migration to VK Cloud",
+    "sectionTitle": "Hyper-V VM Migration to VK Cloud",
+    "metaTitle": "Hyper-V VM Migration to VK Cloud",
+    "pageDescription": "Migration of a Hyper-V VM to VK Cloud.",
+    "shortDescription": "How to import a Hyper-V VM image to VK Cloud",
+    "metaDescription": "Migration of a Hyper-V VM to VK Cloud",
+    "markdown": "Migration of a Hyper-V VM to VK Cloud.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "5ca8afdc-504a-402b-8a32-52557ff8c120",
+    "createdAt": "2023-05-18T11:25:25.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,20 +1,20 @@
 {
-  "title": "Управление ключевыми парами",
-  "pageDescription": "Доступные операции с SSH ключами на платформе VK Cloud.",
-  "shortDescription": "Доступные операции с SSH-ключами на платформе",
-  "metaTitle": "Управление ключевыми парами",
-  "metaDescription": "Доступные операции с SSH ключами на платформе VK Cloud.",
-  "sectionTitle": "Управление ключевыми парами",
-  "icon": "",
-  "weight": 3,
-  "infobarItems": null,
-  "additionalUuids": [
-    "e7b447ad-858b-4f35-bcbf-e64363907738",
-    "13df04e2-5257-4a29-91c2-348b7f72aedf",
-    "59c4033e-1dff-42bf-a840-d042f830f780",
-    "478f425d-94f6-490f-bb2e-12b705d3eba4"
-  ],
-  "uuid": "babf647d-74c4-4e2e-82fc-63e8ff8c0793",
-  "createdAt": "2023-04-13T13:49:17.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Управление ключевыми парами",
+    "pageDescription": "Доступные операции с SSH ключами на платформе VK Cloud.",
+    "shortDescription": "Доступные операции с SSH-ключами на платформе",
+    "metaTitle": "Управление ключевыми парами",
+    "metaDescription": "Доступные операции с SSH ключами на платформе VK Cloud.",
+    "sectionTitle": "Управление ключевыми парами",
+    "icon": "",
+    "weight": 3,
+    "infobarItems": null,
+    "additionalUuids": [
+        "e7b447ad-858b-4f35-bcbf-e64363907738",
+        "13df04e2-5257-4a29-91c2-348b7f72aedf",
+        "59c4033e-1dff-42bf-a840-d042f830f780",
+        "478f425d-94f6-490f-bb2e-12b705d3eba4"
+    ],
+    "uuid": "babf647d-74c4-4e2e-82fc-63e8ff8c0793",
+    "createdAt": "2023-04-13T13:49:17.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

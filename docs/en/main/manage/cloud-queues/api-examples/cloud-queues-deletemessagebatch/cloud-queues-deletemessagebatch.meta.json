@@ -1,15 +1,15 @@
 {
-  "title": "DeleteMessageBatch",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "DeleteMessageBatch",
-  "metaDescription": "The request deletes up to ten messages from the specified queue. The result of the action for each message in the response is reported separately.  DeleteMe Request Parameters",
-  "sectionTitle": "DeleteMessageBatch",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 7,
-  "uuid": "54f68d2f-0486-43b7-aeb6-043c1d04b01e",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "DeleteMessageBatch",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "DeleteMessageBatch",
+    "metaDescription": "The request deletes up to ten messages from the specified queue. The result of the action for each message in the response is reported separately.  DeleteMe Request Parameters",
+    "sectionTitle": "DeleteMessageBatch",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 7,
+    "uuid": "54f68d2f-0486-43b7-aeb6-043c1d04b01e",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

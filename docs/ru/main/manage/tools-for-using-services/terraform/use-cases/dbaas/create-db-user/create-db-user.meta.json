@@ -1,15 +1,15 @@
 {
-  "title": "Создание БД и пользователя с Terraform для DBaaS",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Создание БД и пользователя с Terraform для DBaaS",
-  "metaDescription": "",
-  "sectionTitle": "Создание БД и пользователя с Terraform для DBaaS",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "c6332d21-771e-4916-a8b5-2496ac480960",
-  "createdAt": "2023-05-26T16:45:20.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Создание БД и пользователя с Terraform для DBaaS",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Создание БД и пользователя с Terraform для DBaaS",
+    "metaDescription": "",
+    "sectionTitle": "Создание БД и пользователя с Terraform для DBaaS",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "c6332d21-771e-4916-a8b5-2496ac480960",
+    "createdAt": "2023-05-26T16:45:20.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

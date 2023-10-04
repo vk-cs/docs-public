@@ -1,15 +1,15 @@
 {
-  "title": "VK Cloud Disk Performance",
-  "pageDescription": "Performance characteristics of different types of disks on the platform.",
-  "shortDescription": "Performance characteristics of different types of disks on the VK Cloud platform",
-  "metaTitle": "VK Cloud Disk Performance",
-  "metaDescription": "SLA for VK Cloud platform disks. Disk Performance Characteristics",
-  "sectionTitle": "VK Cloud Disk Performance",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "813812a2-369d-429e-bf56-e865f9f57a1d",
-  "createdAt": "2023-04-24T13:06:27.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "VK Cloud Disk Performance",
+    "pageDescription": "Performance characteristics of different types of disks on the platform.",
+    "shortDescription": "Performance characteristics of different types of disks on the VK Cloud platform",
+    "metaTitle": "VK Cloud Disk Performance",
+    "metaDescription": "SLA for VK Cloud platform disks. Disk Performance Characteristics",
+    "sectionTitle": "VK Cloud Disk Performance",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "813812a2-369d-429e-bf56-e865f9f57a1d",
+    "createdAt": "2023-04-24T13:06:27.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

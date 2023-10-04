@@ -1,15 +1,15 @@
 {
-  "title": "Spark",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Spark",
-  "metaDescription": "Apache Spark is an open source Big Data framework for distributed batching and streaming of unstructured and semi-structured data, part of the Hadoop ecosy",
-  "sectionTitle": "Spark",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "8388135f-fe0b-4a95-97fa-796755da704f",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Spark",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Spark",
+    "metaDescription": "Apache Spark is an open source Big Data framework for distributed batching and streaming of unstructured and semi-structured data, part of the Hadoop ecosy",
+    "sectionTitle": "Spark",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "8388135f-fe0b-4a95-97fa-796755da704f",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

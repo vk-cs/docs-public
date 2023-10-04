@@ -1,15 +1,15 @@
 {
-  "title": "Standard metrics",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Standard metrics",
-  "metaDescription": "Статья описывает стандартные метрики, которые собираются и отображаются в сервисах VK Cloud. По умолчанию стандартный агент мониторинга VK Cloud собирает следующую и",
-  "sectionTitle": "Standard metrics",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "2687400f-3cf7-4640-b1c0-813b974ca6f4",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Standard metrics",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Standard metrics",
+    "metaDescription": "Статья описывает стандартные метрики, которые собираются и отображаются в сервисах VK Cloud. По умолчанию стандартный агент мониторинга VK Cloud собирает следующую и",
+    "sectionTitle": "Standard metrics",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "2687400f-3cf7-4640-b1c0-813b974ca6f4",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

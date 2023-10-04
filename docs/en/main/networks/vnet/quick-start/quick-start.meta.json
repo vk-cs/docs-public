@@ -1,19 +1,19 @@
 {
-  "title": "Quick start",
-  "pageDescription": "Getting started with Virtual Networks.",
-  "shortDescription": "Getting started with Virtual Networks",
-  "metaTitle": "Quick start",
-  "metaDescription": "Getting started with Virtual Networks",
-  "sectionTitle": "Quick start",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "additionalUuids": [
-    "b9c76dba-2bf0-45ce-b2bf-f0778dd31548",
-    "5815e582-3798-41e2-9bc0-14cf20a22206"
-  ],
-  "uuid": "c59e996c-7a61-4e35-b66d-47e4a7ad65dc",
-  "createdAt": "2023-04-27T06:51:50.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Quick start",
+    "pageDescription": "Getting started with Virtual Networks.",
+    "shortDescription": "Getting started with Virtual Networks",
+    "metaTitle": "Quick start",
+    "metaDescription": "Getting started with Virtual Networks",
+    "sectionTitle": "Quick start",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "additionalUuids": [
+        "b9c76dba-2bf0-45ce-b2bf-f0778dd31548",
+        "5815e582-3798-41e2-9bc0-14cf20a22206"
+    ],
+    "uuid": "c59e996c-7a61-4e35-b66d-47e4a7ad65dc",
+    "createdAt": "2023-04-27T06:51:50.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

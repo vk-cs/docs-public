@@ -1,15 +1,15 @@
 {
-  "title": "Kubernetes version support policy",
-  "pageDescription": "The VK Cloud platform provides several versions of Kubernetes that can be used in cloud clusters. Here you will find detailed information about the policy for supporting Kubernetes versions in clusters.",
-  "shortDescription": "Which versions of Kubernetes are supported in VK Cloud clusters and under what policies.",
-  "metaTitle": "Kubernetes version support policy",
-  "metaDescription": "Kubernetes,K8S,version,policy,support",
-  "sectionTitle": "Kubernetes version support policy",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "2b68d53f-6843-41ab-98be-f9e078644aca",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Kubernetes version support policy",
+    "pageDescription": "The VK Cloud platform provides several versions of Kubernetes that can be used in cloud clusters. Here you will find detailed information about the policy for supporting Kubernetes versions in clusters.",
+    "shortDescription": "Which versions of Kubernetes are supported in VK Cloud clusters and under what policies.",
+    "metaTitle": "Kubernetes version support policy",
+    "metaDescription": "Kubernetes,K8S,version,policy,support",
+    "sectionTitle": "Kubernetes version support policy",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "2b68d53f-6843-41ab-98be-f9e078644aca",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

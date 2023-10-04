@@ -1,15 +1,15 @@
 {
-  "title": "Тарифы",
-  "pageDescription": "Тарификация услуг сервиса.",
-  "shortDescription": "Тарифы и стоимость",
-  "metaTitle": "Тарифы",
-  "metaDescription": "Тарификация услуг сервиса.",
-  "sectionTitle": "Тарифы",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 6,
-  "uuid": "fb11ff41-83cf-47e4-b5b4-5f1dd26f0c3c",
-  "createdAt": "2023-05-10T07:33:28.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Тарифы",
+    "pageDescription": "Тарификация услуг сервиса.",
+    "shortDescription": "Тарифы и стоимость",
+    "metaTitle": "Тарифы",
+    "metaDescription": "Тарификация услуг сервиса.",
+    "sectionTitle": "Тарифы",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 6,
+    "uuid": "fb11ff41-83cf-47e4-b5b4-5f1dd26f0c3c",
+    "createdAt": "2023-05-10T07:33:28.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

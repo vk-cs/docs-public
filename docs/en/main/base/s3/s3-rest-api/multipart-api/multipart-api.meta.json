@@ -1,15 +1,15 @@
 {
-  "title": "Multipart",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Multipart",
-  "metaDescription": "Composite or multipart loading allows you to save objects in VK Cloud S3 Object Storage in parts. This can be useful when loading or copying large objects. We r",
-  "sectionTitle": "Multipart",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "137af533-914e-4a3a-b99e-c3608e9f54fe",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Multipart",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Multipart",
+    "metaDescription": "Composite or multipart loading allows you to save objects in VK Cloud S3 Object Storage in parts. This can be useful when loading or copying large objects. We r",
+    "sectionTitle": "Multipart",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "137af533-914e-4a3a-b99e-c3608e9f54fe",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

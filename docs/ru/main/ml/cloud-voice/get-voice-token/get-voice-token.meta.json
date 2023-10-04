@@ -1,15 +1,15 @@
 {
-  "title": "Получение токена доступа",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Получение токена доступа",
-  "metaDescription": "",
-  "sectionTitle": "Получение токена доступа",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "172a885a-72a6-4631-bb0f-98d1174c834a",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Получение токена доступа",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Получение токена доступа",
+    "metaDescription": "",
+    "sectionTitle": "Получение токена доступа",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "172a885a-72a6-4631-bb0f-98d1174c834a",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

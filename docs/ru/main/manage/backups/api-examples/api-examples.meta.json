@@ -1,14 +1,14 @@
 {
-  "title": "Примеры использования API",
-  "pageDescription": "Примеры запросов Karboii API для создания плана резервного копирования.",
-  "shortDescription": "Примеры запросов Karboii API для создания плана резервного копирования",
-  "metaTitle": "Примеры использования API",
-  "metaDescription": "Примеры запросов Karboii API для создания плана резервного копирования.",
-  "sectionTitle": "Примеры использования API",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 5,
-  "uuid": "4150f7d2-2523-4de4-8455-21c1642eb7df",
-  "createdAt": "2023-05-24T12:09:49.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Примеры использования API",
+    "pageDescription": "Примеры запросов Karboii API для создания плана резервного копирования.",
+    "shortDescription": "Примеры запросов Karboii API для создания плана резервного копирования",
+    "metaTitle": "Примеры использования API",
+    "metaDescription": "Примеры запросов Karboii API для создания плана резервного копирования.",
+    "sectionTitle": "Примеры использования API",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 5,
+    "uuid": "4150f7d2-2523-4de4-8455-21c1642eb7df",
+    "createdAt": "2023-05-24T12:09:49.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

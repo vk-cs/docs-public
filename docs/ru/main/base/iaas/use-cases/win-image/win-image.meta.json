@@ -1,14 +1,14 @@
 {
-  "title": "Подготовка образа ОС Windows для создания ВМ",
-  "pageDescription": "Загрузка образов Windows 2008 / 2008 R2, 2012 / 2012 R2, 2016, 2019, 2022 в VK Cloud.",
-  "shortDescription": "Как загрузить образы Windows 2008 / 2008 R2, 2012 / 2012 R2, 2016, 2019, 2022 в VK Cloud",
-  "metaTitle": "Подготовка образа ОС Windows для создания ВМ",
-  "metaDescription": "Загрузка образов Windows 2008 / 2008 R2, 2012 / 2012 R2, 2016, 2019, 2022 в VK Cloud.",
-  "sectionTitle": "Подготовка образа ОС Windows для создания ВМ",
-  "markdown": "",
-  "infobarItems": null,
-  "weight": 5,
-  "uuid": "33120e35-bc4f-439f-a5e9-efbe874d750c",
-  "createdAt": "2023-04-13T15:57:13.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Подготовка образа ОС Windows для создания ВМ",
+    "pageDescription": "Загрузка образов Windows 2008 / 2008 R2, 2012 / 2012 R2, 2016, 2019, 2022 в VK Cloud.",
+    "shortDescription": "Как загрузить образы Windows 2008 / 2008 R2, 2012 / 2012 R2, 2016, 2019, 2022 в VK Cloud",
+    "metaTitle": "Подготовка образа ОС Windows для создания ВМ",
+    "metaDescription": "Загрузка образов Windows 2008 / 2008 R2, 2012 / 2012 R2, 2016, 2019, 2022 в VK Cloud.",
+    "sectionTitle": "Подготовка образа ОС Windows для создания ВМ",
+    "markdown": "",
+    "infobarItems": null,
+    "weight": 5,
+    "uuid": "33120e35-bc4f-439f-a5e9-efbe874d750c",
+    "createdAt": "2023-04-13T15:57:13.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

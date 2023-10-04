@@ -1,15 +1,15 @@
 {
-  "title": "Creating a Big Data cluster",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Creating a Big Data cluster",
-  "metaDescription": "Cluster creation The Big Data cluster is created in the web interface of the VK Cloud control panel. In the personal account of the VK Cloud control panel, in the",
-  "sectionTitle": "Creating a Big Data cluster",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "c4324c86-0e53-4da0-b371-79d089985ad7",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Creating a Big Data cluster",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Creating a Big Data cluster",
+    "metaDescription": "Cluster creation The Big Data cluster is created in the web interface of the VK Cloud control panel. In the personal account of the VK Cloud control panel, in the",
+    "sectionTitle": "Creating a Big Data cluster",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "c4324c86-0e53-4da0-b371-79d089985ad7",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

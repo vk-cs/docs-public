@@ -1,15 +1,15 @@
 {
-  "title": "License plate recognition",
-  "pageDescription": "",
-  "shortDescription": "Search for various objects in the photo",
-  "metaTitle": "License plate recognition",
-  "metaDescription": "License plate recognition is a special case of using the detect method - the method allows you to find various objects in a photograph. This method allows",
-  "sectionTitle": "License plate recognition",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "b68d8f4f-d74a-4b9f-972f-08e26782d630",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "License plate recognition",
+    "pageDescription": "",
+    "shortDescription": "Search for various objects in the photo",
+    "metaTitle": "License plate recognition",
+    "metaDescription": "License plate recognition is a special case of using the detect method - the method allows you to find various objects in a photograph. This method allows",
+    "sectionTitle": "License plate recognition",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "b68d8f4f-d74a-4b9f-972f-08e26782d630",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

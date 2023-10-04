@@ -1,15 +1,15 @@
 {
-  "title": "Installing monitoring in a new VM",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Installing monitoring in a new VM",
-  "metaDescription": "The article will tell you how to install monitoring in a new virtual machine. When creating a VM, activate the item “Enable monitoring”",
-  "sectionTitle": "Installing monitoring in a new VM",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "01bc5adc-1356-46c6-bd50-5368cadf5cc1",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Installing monitoring in a new VM",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Installing monitoring in a new VM",
+    "metaDescription": "The article will tell you how to install monitoring in a new virtual machine. When creating a VM, activate the item “Enable monitoring”",
+    "sectionTitle": "Installing monitoring in a new VM",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "01bc5adc-1356-46c6-bd50-5368cadf5cc1",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

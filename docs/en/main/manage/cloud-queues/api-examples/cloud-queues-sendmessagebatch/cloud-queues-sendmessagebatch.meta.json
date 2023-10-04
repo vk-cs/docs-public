@@ -1,15 +1,15 @@
 {
-  "title": "SendMessageBatch",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "SendMessageBatch",
-  "metaDescription": "Delivers up to ten messages to the specified queue. For a FIFO queue, multiple messages in a single packet are queued in the order they are sent.  Result",
-  "sectionTitle": "SendMessageBatch",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 18,
-  "uuid": "acc1b13f-f0b6-45c8-ac82-df50ead245c6",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "SendMessageBatch",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "SendMessageBatch",
+    "metaDescription": "Delivers up to ten messages to the specified queue. For a FIFO queue, multiple messages in a single packet are queued in the order they are sent.  Result",
+    "sectionTitle": "SendMessageBatch",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 18,
+    "uuid": "acc1b13f-f0b6-45c8-ac82-df50ead245c6",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

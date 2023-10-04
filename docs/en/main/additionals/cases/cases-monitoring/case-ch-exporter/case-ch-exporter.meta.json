@@ -1,15 +1,15 @@
 {
-  "title": "Database Monitoring: Clickhouse Exporter",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Database Monitoring: Clickhouse Exporter",
-  "metaDescription": "Hardware Configuration To run this monitoring script, install and configure servers using the following hardware: Prometheus",
-  "sectionTitle": "Database Monitoring: Clickhouse Exporter",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "8764d38d-f35c-41ad-b0e3-7fc6d998c94b",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Database Monitoring: Clickhouse Exporter",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Database Monitoring: Clickhouse Exporter",
+    "metaDescription": "Hardware Configuration To run this monitoring script, install and configure servers using the following hardware: Prometheus",
+    "sectionTitle": "Database Monitoring: Clickhouse Exporter",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "8764d38d-f35c-41ad-b0e3-7fc6d998c94b",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

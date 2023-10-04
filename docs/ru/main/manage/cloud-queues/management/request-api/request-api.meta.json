@@ -1,15 +1,15 @@
 {
-  "title": "Построение запросов API",
-  "pageDescription": "Перечень параметров, необходимых для построения API-запросов к сервису.",
-  "shortDescription": "Перечень параметров, необходимых для построения API-запросов к сервису",
-  "metaTitle": "Построение запросов API",
-  "metaDescription": "Чтобы работать с очередями Cloud Queues, необходимо использовать endpoint https://sqs.mcs.mail.ru/ Региональные конечные точки Ка",
-  "sectionTitle": "Построение запросов API",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "0bee6778-748b-4eb2-b289-8eb1cb91a39f",
-  "createdAt": "2023-04-12T09:23:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Построение запросов API",
+    "pageDescription": "Перечень параметров, необходимых для построения API-запросов к сервису.",
+    "shortDescription": "Перечень параметров, необходимых для построения API-запросов к сервису",
+    "metaTitle": "Построение запросов API",
+    "metaDescription": "Чтобы работать с очередями Cloud Queues, необходимо использовать endpoint https://sqs.mcs.mail.ru/ Региональные конечные точки Ка",
+    "sectionTitle": "Построение запросов API",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "0bee6778-748b-4eb2-b289-8eb1cb91a39f",
+    "createdAt": "2023-04-12T09:23:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

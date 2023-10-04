@@ -1,12 +1,12 @@
 {
-  "title": "Получение токена доступа Keystone",
-  "pageDescription": "Получение токена доступа в сервисах VK Cloud",
-  "shortDescription": "Как сгенерировать токен X-Subject-Token для доступа к сервисам по REST API",
-  "metaTitle": "Получение токена доступа Keystone",
-  "metaDescription": "Генерация токена X-Subject-Token для доступа к сервисам по REST API.",
-  "sectionTitle": "Получение токена доступа Keystone",
-  "weight": 2,
-  "uuid": "70123755-37ab-4024-a5c6-fc56967933d7",
-  "createdAt": "2023-05-26T16:45:20.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Получение токена доступа Keystone",
+    "pageDescription": "Получение токена доступа в сервисах VK Cloud",
+    "shortDescription": "Как сгенерировать токен X-Subject-Token для доступа к сервисам по REST API",
+    "metaTitle": "Получение токена доступа Keystone",
+    "metaDescription": "Генерация токена X-Subject-Token для доступа к сервисам по REST API.",
+    "sectionTitle": "Получение токена доступа Keystone",
+    "weight": 2,
+    "uuid": "70123755-37ab-4024-a5c6-fc56967933d7",
+    "createdAt": "2023-05-26T16:45:20.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z"
 }

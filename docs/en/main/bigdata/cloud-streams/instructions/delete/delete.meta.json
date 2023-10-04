@@ -1,15 +1,15 @@
 {
-  "title": "Delete Cloud Streams Cluster",
-  "pageDescription": "Delete Cloud Streams Cluster",
-  "shortDescription": "Description of the steps to remove the cluster",
-  "metaTitle": "Deleting an Cloud Streams cluster",
-  "metaDescription": "Delete Cloud Streams Cluster",
-  "sectionTitle": "Deleting an Cloud Streams cluster",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "455aaae9-09c2-4c6c-bc93-42cab9271fb3",
-  "createdAt": "2023-05-31T09:51:29.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Delete Cloud Streams Cluster",
+    "pageDescription": "Delete Cloud Streams Cluster",
+    "shortDescription": "Description of the steps to remove the cluster",
+    "metaTitle": "Deleting an Cloud Streams cluster",
+    "metaDescription": "Delete Cloud Streams Cluster",
+    "sectionTitle": "Deleting an Cloud Streams cluster",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "455aaae9-09c2-4c6c-bc93-42cab9271fb3",
+    "createdAt": "2023-05-31T09:51:29.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

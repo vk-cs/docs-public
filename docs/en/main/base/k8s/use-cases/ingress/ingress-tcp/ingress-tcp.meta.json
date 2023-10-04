@@ -1,15 +1,15 @@
 {
-  "title": "Deploying Ingress controller with TCP load balancer",
-  "pageDescription": "Demonstration of Ingress controller interaction with VK Cloud platform TCP load balancer.",
-  "shortDescription": "How to configure an Ingress controller in conjunction with TCP load balancer.",
-  "metaTitle": "Deploying Ingress Controller with TCP load balancer",
-  "metaDescription": "",
-  "sectionTitle": "Deploying Ingress controller with TCP load balancer",
-  "markdown": "Demonstration of Ingress controller interaction with VK Cloud platform TCP load balancer.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "4f192b57-fd6e-427e-a304-1910904dee8a",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Deploying Ingress controller with TCP load balancer",
+    "pageDescription": "Demonstration of Ingress controller interaction with VK Cloud platform TCP load balancer.",
+    "shortDescription": "How to configure an Ingress controller in conjunction with TCP load balancer.",
+    "metaTitle": "Deploying Ingress Controller with TCP load balancer",
+    "metaDescription": "",
+    "sectionTitle": "Deploying Ingress controller with TCP load balancer",
+    "markdown": "Demonstration of Ingress controller interaction with VK Cloud platform TCP load balancer.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "4f192b57-fd6e-427e-a304-1910904dee8a",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

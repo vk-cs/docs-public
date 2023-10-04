@@ -1,15 +1,15 @@
 {
-  "title": "Connecting to JupyterHub",
-  "pageDescription": "Description of the process for connecting to a JupyterHub instance.",
-  "shortDescription": "Connecting to a JupyterHub instance",
-  "metaTitle": "Connecting to JupyterHub",
-  "metaDescription": "Connecting to JupyterHub",
-  "sectionTitle": "Connecting to JupyterHub",
-  "markdown": "Connecting to JupyterHub",
-  "icon": "",
-  "weight": 1,
-  "infobarItems": null,
-  "uuid": "edbad91d-ada5-4150-9493-f219828a4647",
-  "createdAt": "2022-10-07T09:38:12.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Connecting to JupyterHub",
+    "pageDescription": "Description of the process for connecting to a JupyterHub instance.",
+    "shortDescription": "Connecting to a JupyterHub instance",
+    "metaTitle": "Connecting to JupyterHub",
+    "metaDescription": "Connecting to JupyterHub",
+    "sectionTitle": "Connecting to JupyterHub",
+    "markdown": "Connecting to JupyterHub",
+    "icon": "",
+    "weight": 1,
+    "infobarItems": null,
+    "uuid": "edbad91d-ada5-4150-9493-f219828a4647",
+    "createdAt": "2022-10-07T09:38:12.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

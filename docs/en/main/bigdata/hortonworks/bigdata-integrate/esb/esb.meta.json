@@ -1,15 +1,15 @@
 {
-  "title": "Data buses",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Data buses",
-  "metaDescription": "Description Apache Kafka is used as a data bus in VK Cloud Big Data. Apache Kafka is a distributed streaming platform today. In this case, a bus with",
-  "sectionTitle": "Data buses",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "13c22e1d-997a-4558-a513-88b61c334af3",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Data buses",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Data buses",
+    "metaDescription": "Description Apache Kafka is used as a data bus in VK Cloud Big Data. Apache Kafka is a distributed streaming platform today. In this case, a bus with",
+    "sectionTitle": "Data buses",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "13c22e1d-997a-4558-a513-88b61c334af3",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

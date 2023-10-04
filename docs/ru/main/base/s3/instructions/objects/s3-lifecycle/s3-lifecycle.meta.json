@@ -1,15 +1,15 @@
 {
-  "title": "Жизненный цикл",
-  "pageDescription": "",
-  "shortDescription": "Управление правилами жизненного цикла",
-  "metaTitle": "Жизненный цикл",
-  "metaDescription": "Описание Сервис",
-  "sectionTitle": "Жизненный цикл",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 6,
-  "uuid": "4abf1896-b89a-49c3-b365-5836f3e2be94",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Жизненный цикл",
+    "pageDescription": "",
+    "shortDescription": "Управление правилами жизненного цикла",
+    "metaTitle": "Жизненный цикл",
+    "metaDescription": "Описание Сервис",
+    "sectionTitle": "Жизненный цикл",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 6,
+    "uuid": "4abf1896-b89a-49c3-b365-5836f3e2be94",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

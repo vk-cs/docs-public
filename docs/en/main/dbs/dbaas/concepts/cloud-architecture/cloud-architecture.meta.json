@@ -1,14 +1,14 @@
 {
-  "title": "Architecture",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Architecture",
-  "metaDescription": "В упрощённом виде архитектура DBaaS (база данных как сервис) представлена на картинке ниже: В панели управления VK Cloud разворачивается виртуальная машина или",
-  "sectionTitle": "Architecture",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "uuid": "82509a15-93de-4093-8538-efcda2109b73",
-  "createdAt": "2023-05-12T11:53:23.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Architecture",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Architecture",
+    "metaDescription": "В упрощённом виде архитектура DBaaS (база данных как сервис) представлена на картинке ниже: В панели управления VK Cloud разворачивается виртуальная машина или",
+    "sectionTitle": "Architecture",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "uuid": "82509a15-93de-4093-8538-efcda2109b73",
+    "createdAt": "2023-05-12T11:53:23.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

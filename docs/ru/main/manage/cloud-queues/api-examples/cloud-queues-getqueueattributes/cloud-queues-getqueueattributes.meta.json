@@ -1,15 +1,15 @@
 {
-  "title": "GetQueueAttributes",
-  "pageDescription": "Примеры запроса и ответа для метода GetQueueAttributes.",
-  "shortDescription": "",
-  "metaTitle": "GetQueueAttributes",
-  "metaDescription": "Запрос получает атрибуты для указанной очереди. Примеры запроса и ответа для метода GetQueueAttributes.",
-  "sectionTitle": "GetQueueAttributes",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 9,
-  "uuid": "4d3218cb-e74e-490a-bf3b-0518f0814b05",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "GetQueueAttributes",
+    "pageDescription": "Примеры запроса и ответа для метода GetQueueAttributes.",
+    "shortDescription": "",
+    "metaTitle": "GetQueueAttributes",
+    "metaDescription": "Запрос получает атрибуты для указанной очереди. Примеры запроса и ответа для метода GetQueueAttributes.",
+    "sectionTitle": "GetQueueAttributes",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 9,
+    "uuid": "4d3218cb-e74e-490a-bf3b-0518f0814b05",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

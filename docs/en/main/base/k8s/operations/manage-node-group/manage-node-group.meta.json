@@ -1,15 +1,15 @@
 {
-  "title": "Managing worker node group",
-  "pageDescription": "This section lists operations that can be used to manage Kubernetes worker node groups. Each operation is accompanied by step-by-step instructions.",
-  "shortDescription": "How to manage Kubernetes worker node groups using personal account or Terraform",
-  "metaTitle": "Managing worker node group",
-  "metaDescription": "",
-  "sectionTitle": "Managing worker node group",
-  "markdown": "This section lists operations that can be used to manage Kubernetes worker node groups. Each operation is accompanied by step-by-step instructions.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3,
-  "uuid": "a45f5d9a-12a5-43d3-a073-c604c1c90be2",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Managing worker node group",
+    "pageDescription": "This section lists operations that can be used to manage Kubernetes worker node groups. Each operation is accompanied by step-by-step instructions.",
+    "shortDescription": "How to manage Kubernetes worker node groups using personal account or Terraform",
+    "metaTitle": "Managing worker node group",
+    "metaDescription": "",
+    "sectionTitle": "Managing worker node group",
+    "markdown": "This section lists operations that can be used to manage Kubernetes worker node groups. Each operation is accompanied by step-by-step instructions.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "a45f5d9a-12a5-43d3-a073-c604c1c90be2",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

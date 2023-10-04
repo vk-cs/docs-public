@@ -1,15 +1,15 @@
 {
-  "title": "Spark",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Spark",
-  "metaDescription": "Описание Apache Spark - это Big Data фрэймворк с открытым исходным кодом для распределенной пакетной и потоковой обработки неструктурированных и слабострук",
-  "sectionTitle": "Spark",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "428d690f-d610-446c-89a1-cd334670b7b0",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Spark",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Spark",
+    "metaDescription": "Описание Apache Spark - это Big Data фрэймворк с открытым исходным кодом для распределенной пакетной и потоковой обработки неструктурированных и слабострук",
+    "sectionTitle": "Spark",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "428d690f-d610-446c-89a1-cd334670b7b0",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

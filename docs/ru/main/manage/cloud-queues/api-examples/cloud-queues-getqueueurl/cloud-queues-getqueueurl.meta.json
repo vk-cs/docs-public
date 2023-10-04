@@ -1,15 +1,15 @@
 {
-  "title": "GetQueueUrl",
-  "pageDescription": "Примеры запроса и ответа для метода GetQueueUrl.",
-  "shortDescription": "",
-  "metaTitle": "GetQueueUrl",
-  "metaDescription": "Запрос возвращает URL-адрес существующей очереди Cloud Queues. Примеры запроса и ответа для метода GetQueueUrl.",
-  "sectionTitle": "GetQueueUrl",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 10,
-  "uuid": "35c3385f-e8fd-4dde-8cb7-1d5b5502754a",
-  "createdAt": "2023-04-27T08:36:16.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "GetQueueUrl",
+    "pageDescription": "Примеры запроса и ответа для метода GetQueueUrl.",
+    "shortDescription": "",
+    "metaTitle": "GetQueueUrl",
+    "metaDescription": "Запрос возвращает URL-адрес существующей очереди Cloud Queues. Примеры запроса и ответа для метода GetQueueUrl.",
+    "sectionTitle": "GetQueueUrl",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 10,
+    "uuid": "35c3385f-e8fd-4dde-8cb7-1d5b5502754a",
+    "createdAt": "2023-04-27T08:36:16.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

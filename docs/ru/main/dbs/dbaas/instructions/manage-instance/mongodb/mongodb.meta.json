@@ -1,15 +1,15 @@
 {
-  "title": "MongoDB",
-  "pageDescription": "Управление инстансами MongoDB.",
-  "shortDescription": "",
-  "metaTitle": "MongoDB",
-  "metaDescription": "Базы данных VK Cloud: управление инстансами MongoDB.",
-  "sectionTitle": "MongoDB",
-  "markdown": "Управление инстансами MongoDB.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "ff1062d9-2b17-4311-9dde-237a472673a1",
-  "createdAt": "2023-06-02T07:32:11.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "MongoDB",
+    "pageDescription": "Управление инстансами MongoDB.",
+    "shortDescription": "",
+    "metaTitle": "MongoDB",
+    "metaDescription": "Базы данных VK Cloud: управление инстансами MongoDB.",
+    "sectionTitle": "MongoDB",
+    "markdown": "Управление инстансами MongoDB.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "ff1062d9-2b17-4311-9dde-237a472673a1",
+    "createdAt": "2023-06-02T07:32:11.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

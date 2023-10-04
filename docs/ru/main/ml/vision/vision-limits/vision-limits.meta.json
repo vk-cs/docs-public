@@ -1,15 +1,15 @@
 {
-  "title": "Ограничения",
-  "pageDescription": "",
-  "shortDescription": "Важные ограничения",
-  "metaTitle": "Ограничения",
-  "metaDescription": "Сервис в целом В настоящий момент сервис",
-  "sectionTitle": "Ограничения",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 4,
-  "uuid": "1c45f062-3e56-459b-a44f-baab69905080",
-  "createdAt": "2023-05-10T07:33:28.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Ограничения",
+    "pageDescription": "",
+    "shortDescription": "Важные ограничения",
+    "metaTitle": "Ограничения",
+    "metaDescription": "Сервис в целом В настоящий момент сервис",
+    "sectionTitle": "Ограничения",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "uuid": "1c45f062-3e56-459b-a44f-baab69905080",
+    "createdAt": "2023-05-10T07:33:28.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Collecting logs from nodes with docker-runtime and crio-runtime using Fluent Bit",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Collecting logs from nodes with docker-runtime and crio-runtime using Fluent Bit",
-  "metaDescription": "Collecting logs from nodes with docker-runtime and crio-runtime using Fluent Bit",
-  "sectionTitle": "Collecting logs from nodes with docker-runtime and crio-runtime using Fluent Bit",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "4300e020-2d5f-47c2-838c-c49d1c863152",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Collecting logs from nodes with docker-runtime and crio-runtime using Fluent Bit",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Collecting logs from nodes with docker-runtime and crio-runtime using Fluent Bit",
+    "metaDescription": "Collecting logs from nodes with docker-runtime and crio-runtime using Fluent Bit",
+    "sectionTitle": "Collecting logs from nodes with docker-runtime and crio-runtime using Fluent Bit",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "4300e020-2d5f-47c2-838c-c49d1c863152",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

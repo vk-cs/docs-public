@@ -1,15 +1,15 @@
 {
-  "title": "Шины данных",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Шины данных",
-  "metaDescription": "Описание В качестве шины данных в VK Cloud Big Data используется Apache Kafka. На сегодняшний день Apache Kafka - это распределенная потоковая платфор",
-  "sectionTitle": "Шины данных",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "8888c8be-2621-4ffd-8d22-f4cc9c0025ca",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Шины данных",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Шины данных",
+    "metaDescription": "Описание В качестве шины данных в VK Cloud Big Data используется Apache Kafka. На сегодняшний день Apache Kafka - это распределенная потоковая платфор",
+    "sectionTitle": "Шины данных",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "8888c8be-2621-4ffd-8d22-f4cc9c0025ca",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

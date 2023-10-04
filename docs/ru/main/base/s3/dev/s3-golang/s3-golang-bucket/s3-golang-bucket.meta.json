@@ -1,15 +1,15 @@
 {
-  "title": "Операции с бакетами",
-  "pageDescription": "",
-  "shortDescription": "Работа с бакетами S3",
-  "metaTitle": "Операции с бакетами",
-  "metaDescription": "Проведя предварительные настройки, можно приступить к работе с бакетами S3. Создание бакета Создание бакета инициализируется следующей командой: import github.com/aws/aws-sdk-go/service/s3",
-  "sectionTitle": "Операции с бакетами",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "75f5fbd8-eb4e-41e4-a478-1bdad98be935",
-  "createdAt": "2023-05-31T13:12:29.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Операции с бакетами",
+    "pageDescription": "",
+    "shortDescription": "Работа с бакетами S3",
+    "metaTitle": "Операции с бакетами",
+    "metaDescription": "Проведя предварительные настройки, можно приступить к работе с бакетами S3. Создание бакета Создание бакета инициализируется следующей командой: import github.com/aws/aws-sdk-go/service/s3",
+    "sectionTitle": "Операции с бакетами",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "75f5fbd8-eb4e-41e4-a478-1bdad98be935",
+    "createdAt": "2023-05-31T13:12:29.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Описание сервиса Cloud Voice",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Описание сервиса Cloud Voice",
-  "metaDescription": "👉 Для начала использования сервиса перейдите на страницуCloud Voice: https://mcs.mail.ru/cloud-voice/ Cloud Voice — сервис, который позволяет распознавать",
-  "sectionTitle": "Описание сервиса Cloud Voice",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "f69bddf2-79b2-4bc3-81af-234399a07470",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Описание сервиса Cloud Voice",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Описание сервиса Cloud Voice",
+    "metaDescription": "👉 Для начала использования сервиса перейдите на страницуCloud Voice: https://mcs.mail.ru/cloud-voice/ Cloud Voice — сервис, который позволяет распознавать",
+    "sectionTitle": "Описание сервиса Cloud Voice",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "f69bddf2-79b2-4bc3-81af-234399a07470",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

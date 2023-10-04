@@ -1,14 +1,14 @@
 {
-  "title": "Node Exporter",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Node Exporter",
-  "metaDescription": "Описание Расширения увеличивают функциональность баз данных и могут быть установлены в любое время.\nPrometheus - центральный сервер, предназначенный для сб",
-  "sectionTitle": "Node Exporter",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "uuid": "fda46cf0-2c4d-408f-875a-5b8578ffff4e",
-  "createdAt": "2023-03-17T13:58:06.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Node Exporter",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Node Exporter",
+    "metaDescription": "Описание Расширения увеличивают функциональность баз данных и могут быть установлены в любое время.\nPrometheus - центральный сервер, предназначенный для сб",
+    "sectionTitle": "Node Exporter",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "uuid": "fda46cf0-2c4d-408f-875a-5b8578ffff4e",
+    "createdAt": "2023-03-17T13:58:06.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }

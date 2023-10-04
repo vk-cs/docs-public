@@ -1,15 +1,15 @@
 {
-  "title": "Managing cluster",
-  "pageDescription": "This section describes the operations that can be used to manage a Kubernetes cluster. Each operation is accompanied by step-by-step instructions.",
-  "shortDescription": "How to manage a Kubernetes cluster using a personal account or Terraform",
-  "metaTitle": "Managing cluster",
-  "metaDescription": "",
-  "sectionTitle": "Managing cluster",
-  "markdown": "This section describes the operations that can be used to manage a Kubernetes cluster. Each operation is accompanied by step-by-step instructions.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "1d9dae9f-b231-4be6-818d-4b4422548001",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Managing cluster",
+    "pageDescription": "This section describes the operations that can be used to manage a Kubernetes cluster. Each operation is accompanied by step-by-step instructions.",
+    "shortDescription": "How to manage a Kubernetes cluster using a personal account or Terraform",
+    "metaTitle": "Managing cluster",
+    "metaDescription": "",
+    "sectionTitle": "Managing cluster",
+    "markdown": "This section describes the operations that can be used to manage a Kubernetes cluster. Each operation is accompanied by step-by-step instructions.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "1d9dae9f-b231-4be6-818d-4b4422548001",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2023-09-25T15:01:12.000Z"
 }
