@@ -1,15 +1,17 @@
 {
-    "title": "Platform Architecture",
-    "pageDescription": "Description of the main architectural advantages of the VK Cloud platform.",
-    "shortDescription": "Description of the main architectural advantages of the VK Cloud platform",
-    "metaTitle": "Platform Architecture",
-    "metaDescription": "Description of the main architectural advantages of the VK Cloud platform",
-    "sectionTitle": "Platform Architecture",
-    "markdown": "Description of the main architectural advantages of the VK Cloud platform.",
-    "icon": "",
-    "weight": 2,
-    "infobarItems": null,
-    "uuid": "159ca4db-a57f-4f84-ad84-f96f4504388e",
-    "createdAt": "2023-01-09T16:18:32.000Z",
-    "updatedAt": "2023-09-26T05:45:29.000Z"
+  "title": "Platform architecture",
+  "pageDescription": "Description of VK Cloud architecture, security and fault tolerance of the platform, migration to VK Cloud.",
+  "shortDescription": "List of VK Cloud components and services, security and fault tolerance mechanisms",
+  "metaTitle": "Platform architecture",
+  "metaDescription": "Description of VK Cloud architecture, security and fault tolerance of the platform, migration to VK Cloud",
+  "sectionTitle": "Platform architecture",
+  "icon": "",
+  "weight": 2,
+  "infobarItems": null,
+  "uuid": "159ca4db-a57f-4f84-ad84-f96f4504388e",
+  "additionalUuids": [
+    "4a176079-5479-4af3-bb8f-7d717f8f90b8"
+  ],
+  "createdAt": "2023-01-09T16:18:32.000Z",
+  "updatedAt": "2023-09-25T12:13:49.000Z"
 }
