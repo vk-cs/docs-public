@@ -1,15 +1,15 @@
 {
-  "title": "Конфигурации Single и Master-Replica",
-  "pageDescription": "Создание инстанса БД в конфигурациях Single и Master-Replica",
-  "shortDescription": "",
-  "metaTitle": "Конфигурации Single и Master-Replica",
-  "metaDescription": "Базы данных VK Cloud: создание инстанса БД в конфигурациях Single и Master-Replica",
-  "sectionTitle": "Конфигурации Single и Master-Replica",
-  "markdown": "Создание инстанса БД в конфигурациях Single и Master-Replica",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "createdAt": "2023-08-02T08:33:55.000Z",
-  "updatedAt": "2023-09-26T08:12:51.000Z",
-  "uuid": "2056b007-59ca-4d66-a6f7-63faa1425f9b"
+    "title": "Конфигурации Single и Master-Replica",
+    "pageDescription": "Создание инстанса БД в конфигурациях Single и Master-Replica",
+    "shortDescription": "",
+    "metaTitle": "Конфигурации Single и Master-Replica",
+    "metaDescription": "Базы данных VK Cloud: создание инстанса БД в конфигурациях Single и Master-Replica",
+    "sectionTitle": "Конфигурации Single и Master-Replica",
+    "markdown": "Создание инстанса БД в конфигурациях Single и Master-Replica",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "createdAt": "2023-08-02T08:33:55.000Z",
+    "updatedAt": "2023-09-26T08:32:27.000Z",
+    "uuid": "2056b007-59ca-4d66-a6f7-63faa1425f9b"
 }
