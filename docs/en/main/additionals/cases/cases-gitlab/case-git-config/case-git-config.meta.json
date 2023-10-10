@@ -1,15 +1,15 @@
 {
-  "title": "How to set up Gitlab, Harbor and auto-deploy an application to a Kubernetes cluster",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "How to set up Gitlab, Harbor and auto-deploy an application to a Kubernetes cluster",
-  "metaDescription": "In this article, we will consider the scheme of work and the sequence of actions for setting up Gitlab, Harbor, and auto-deploying an application to a Kubernetes cluster. Kon",
-  "sectionTitle": "How to set up Gitlab, Harbor and auto-deploy an application to a Kubernetes cluster",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "549f68fc-be39-44cf-a2f1-7cf7729bde23",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-27T13:18:03.000Z"
+    "title": "How to set up Gitlab, Harbor and auto-deploy an application to a Kubernetes cluster",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "How to set up Gitlab, Harbor and auto-deploy an application to a Kubernetes cluster",
+    "metaDescription": "In this article, we will consider the scheme of work and the sequence of actions for setting up Gitlab, Harbor, and auto-deploying an application to a Kubernetes cluster. Kon",
+    "sectionTitle": "How to set up Gitlab, Harbor and auto-deploy an application to a Kubernetes cluster",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "549f68fc-be39-44cf-a2f1-7cf7729bde23",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-28T04:20:46.000Z"
 }
