@@ -1,15 +1,15 @@
 {
-  "title": "Installing the LAMP stack on CentOS 7.5",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Installing LAMP stack on CentOS 7.5",
-  "metaDescription": "The LAMP stack includes the Linux operating system, the Apache web server, the MySQL database management system, and a server-side scripting language",
-  "sectionTitle": "Installing the LAMP stack on CentOS 7.5",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 7,
-  "uuid": "8d492f45-8e71-4385-9eeb-66533e0bfeb6",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-27T13:18:03.000Z"
+    "title": "Installing the LAMP stack on CentOS 7.5",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Installing LAMP stack on CentOS 7.5",
+    "metaDescription": "The LAMP stack includes the Linux operating system, the Apache web server, the MySQL database management system, and a server-side scripting language",
+    "sectionTitle": "Installing the LAMP stack on CentOS 7.5",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 7,
+    "uuid": "8d492f45-8e71-4385-9eeb-66533e0bfeb6",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-28T04:20:46.000Z"
 }

@@ -1,15 +1,15 @@
 {
-  "title": "Installing ModX on CentOS 7.6",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Installing ModX on CentOS 7.6",
-  "metaDescription": "ModX is an open source content management system. ModX is designed to create, edit and manage website content. Operation Requirements",
-  "sectionTitle": "Installing ModX on CentOS 7.6",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "cdb62482-c519-44bc-a251-8a43a93842ab",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-27T13:18:03.000Z"
+    "title": "Installing ModX on CentOS 7.6",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Installing ModX on CentOS 7.6",
+    "metaDescription": "ModX is an open source content management system. ModX is designed to create, edit and manage website content. Operation Requirements",
+    "sectionTitle": "Installing ModX on CentOS 7.6",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "cdb62482-c519-44bc-a251-8a43a93842ab",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-28T04:20:46.000Z"
 }

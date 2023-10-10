@@ -1,15 +1,15 @@
 {
-  "title": "Установка стека LAMP на операционную систему CentOS 7.5",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Установка стека LAMP на операционную систему CentOS 7.5",
-  "metaDescription": "Стек LAMP включает в себя операционную систему семейства Linux, веб-сервер Apache, систему управления базами данных MySQL и серверный язык сценариев для об",
-  "sectionTitle": "Установка стека LAMP на операционную систему CentOS 7.5",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 7,
-  "uuid": "5370ab8e-fdac-4fca-afc0-ae220e1596bb",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-27T13:18:03.000Z"
+    "title": "Установка стека LAMP на операционную систему CentOS 7.5",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Установка стека LAMP на операционную систему CentOS 7.5",
+    "metaDescription": "Стек LAMP включает в себя операционную систему семейства Linux, веб-сервер Apache, систему управления базами данных MySQL и серверный язык сценариев для об",
+    "sectionTitle": "Установка стека LAMP на операционную систему CentOS 7.5",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 7,
+    "uuid": "5370ab8e-fdac-4fca-afc0-ae220e1596bb",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-28T04:20:46.000Z"
 }

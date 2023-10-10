@@ -1,15 +1,15 @@
 {
-  "title": "Установка OpenCart на операционную систему Ubuntu 18.04",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Установка OpenCart на операционную систему Ubuntu 18.04",
-  "metaDescription": "OpenCart - это платформа для создания интернет-магазина. OpenCart построена по принципу MVC и может быть установлена на любом веб-сервере с поддержкой PHP",
-  "sectionTitle": "Установка OpenCart на операционную систему Ubuntu 18.04",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "uuid": "b2969304-7ff1-4fc5-a755-d7ec6fec0ccd",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-27T13:18:03.000Z"
+    "title": "Установка OpenCart на операционную систему Ubuntu 18.04",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Установка OpenCart на операционную систему Ubuntu 18.04",
+    "metaDescription": "OpenCart - это платформа для создания интернет-магазина. OpenCart построена по принципу MVC и может быть установлена на любом веб-сервере с поддержкой PHP",
+    "sectionTitle": "Установка OpenCart на операционную систему Ubuntu 18.04",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "uuid": "b2969304-7ff1-4fc5-a755-d7ec6fec0ccd",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-28T04:20:46.000Z"
 }

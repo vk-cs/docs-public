@@ -1,15 +1,15 @@
 {
-  "title": "Firewall и защита от DDoS",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Firewall и защита от DDoS",
-  "metaDescription": "Что это такое Специальные сервисы - это сервисы, которые напрямую не связаны с основной функциональностью Платформы VK Cloud (виртуальные машины). Но при исполь",
-  "sectionTitle": "Firewall и защита от DDoS",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "0bc64199-d59d-4118-b7ec-0690b51a941c",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-27T13:18:03.000Z"
+    "title": "Firewall и защита от DDoS",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Firewall и защита от DDoS",
+    "metaDescription": "Что это такое Специальные сервисы - это сервисы, которые напрямую не связаны с основной функциональностью Платформы VK Cloud (виртуальные машины). Но при исполь",
+    "sectionTitle": "Firewall и защита от DDoS",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "0bc64199-d59d-4118-b7ec-0690b51a941c",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-28T04:20:46.000Z"
 }

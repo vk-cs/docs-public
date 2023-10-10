@@ -1,15 +1,15 @@
 {
-  "title": "Installing a LAMP stack on a Debian 9.4 operating system",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Installing LAMP stack on Debian 9.4 operating system",
-  "metaDescription": "This article describes how to install a LAMP stack on an operating system of the Linux family - Debian 9.4. The LAMP stack includes an operating system of the family",
-  "sectionTitle": "Installing the LAMP stack on a Debian 9.4 operating system",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "c084f1e1-3d4b-4615-a7ce-5333c98b880a",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-27T13:18:03.000Z"
+    "title": "Installing a LAMP stack on a Debian 9.4 operating system",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Installing LAMP stack on Debian 9.4 operating system",
+    "metaDescription": "This article describes how to install a LAMP stack on an operating system of the Linux family - Debian 9.4. The LAMP stack includes an operating system of the family",
+    "sectionTitle": "Installing the LAMP stack on a Debian 9.4 operating system",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "c084f1e1-3d4b-4615-a7ce-5333c98b880a",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-28T04:20:46.000Z"
 }
