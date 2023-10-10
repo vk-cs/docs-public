@@ -1,13 +1,21 @@
 {
   "title": "Installing Joomla! on Linux",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Installing Joomla 4.3.4 on Almalinux 9 operating system",
+  "shortDescription": "How to install and configure Joomla! 4.3.4 on Almalinux 9",
   "metaTitle": "Installing Joomla! on Linux",
-  "metaDescription": "",
+  "metaDescription": "VK Cloud: how to install Joomla! 4.3.4 on Almalinux 9",
   "sectionTitle": "Installing Joomla! on Linux",
-  "markdown": "",
   "icon": "",
   "infobarItems": null,
   "weight": 12,
-  "uuid": "fd069161-e077-45d4-8df1-c4b5472cf314"
+  "uuid": "fd069161-e077-45d4-8df1-c4b5472cf314",
+  "additionalUuids": [
+    "c83d7557-b140-4379-8951-c7dee003e380",
+    "db9882f7-51a6-4726-8c1b-1fb539aa03b2",
+    "09e0753e-ebb9-4c74-82f3-05617816412e",
+    "89dbdc17-f7be-4ddb-84af-e1ba569702b8",
+    "7973be11-3d7b-4a19-a8b9-dae6bda033cc",
+    "5c0c26a4-6fc3-4508-a0ad-ee3dd9fbce90",
+    "09925cf8-4335-4781-a2e5-f40f451750a8"
+  ]
 }
