@@ -1,15 +1,15 @@
 {
-  "title": "Installing and configuring Gitlab",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Installing and configuring Gitlab",
-  "metaDescription": "In this article, we'll look at how to install and configure Gitlab. After that, you can: install and configure Harbor; configure auto-deployment of the application",
-  "sectionTitle": "Installing and configuring Gitlab",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "107a346d-053e-48c3-b85b-9b35d1e3c7be",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-27T13:18:03.000Z"
+    "title": "Installing and configuring Gitlab",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Installing and configuring Gitlab",
+    "metaDescription": "In this article, we'll look at how to install and configure Gitlab. After that, you can: install and configure Harbor; configure auto-deployment of the application",
+    "sectionTitle": "Installing and configuring Gitlab",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "107a346d-053e-48c3-b85b-9b35d1e3c7be",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-28T04:20:46.000Z"
 }

@@ -1,14 +1,14 @@
 {
-  "title": "Репликация и обновление MongoDB на Ubuntu",
-  "pageDescription": "Создание реплик СУБД MongoDB, обновление версии.",
-  "shortDescription": "Как реплицировать и обновить MongoDB на Ubuntu 18.04",
-  "metaTitle": "Репликация и обновление MongoDB на Ubuntu",
-  "metaDescription": "Как реплицировать и обновить MongoDB на Ubuntu 18.04.",
-  "sectionTitle": "Репликация и обновление MongoDB на Ubuntu",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "0bf25d80-a329-42b6-9699-429d74bc4d8b",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-27T13:18:03.000Z"
+    "title": "Репликация и обновление MongoDB на Ubuntu",
+    "pageDescription": "Создание реплик СУБД MongoDB, обновление версии.",
+    "shortDescription": "Как реплицировать и обновить MongoDB на Ubuntu 18.04",
+    "metaTitle": "Репликация и обновление MongoDB на Ubuntu",
+    "metaDescription": "Как реплицировать и обновить MongoDB на Ubuntu 18.04.",
+    "sectionTitle": "Репликация и обновление MongoDB на Ubuntu",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "0bf25d80-a329-42b6-9699-429d74bc4d8b",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-28T04:20:46.000Z"
 }

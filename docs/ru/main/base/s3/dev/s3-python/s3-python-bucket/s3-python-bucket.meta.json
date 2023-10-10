@@ -1,15 +1,15 @@
 {
-  "title": "Операции с бакетами",
-  "pageDescription": "",
-  "shortDescription": "Работа с бакетами S3",
-  "metaTitle": "Операции с бакетами",
-  "metaDescription": "Проведя предварительные настройки, можно приступить к работе с бакетами S3. Создание бакета Создание бакета инициализируется следующей командой: import bot",
-  "sectionTitle": "Операции с бакетами",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "deec752b-1cf7-4bb3-8b23-85f5b99434a7",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-27T13:18:03.000Z"
+    "title": "Операции с бакетами",
+    "pageDescription": "",
+    "shortDescription": "Работа с бакетами S3",
+    "metaTitle": "Операции с бакетами",
+    "metaDescription": "Проведя предварительные настройки, можно приступить к работе с бакетами S3. Создание бакета Создание бакета инициализируется следующей командой: import bot",
+    "sectionTitle": "Операции с бакетами",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "deec752b-1cf7-4bb3-8b23-85f5b99434a7",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-28T04:20:46.000Z"
 }

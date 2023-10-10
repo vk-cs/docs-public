@@ -1,17 +1,17 @@
 {
-  "title": "Creating a DB instance",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Creating a DB instance",
-  "metaDescription": "To create a database, go to the personal account section",
-  "sectionTitle": "Creating a DB instance",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "additionalUuids": [
-    "3a4c6616-d8d5-4811-883f-6f521e60174e"
-  ],
-  "uuid": "41409cd9-320e-451c-b156-32888ae79e87",
-  "createdAt": "2023-06-05T06:11:57.000Z",
-  "updatedAt": "2023-09-27T13:18:03.000Z"
+    "title": "Creating a DB instance",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Creating a DB instance",
+    "metaDescription": "To create a database, go to the personal account section",
+    "sectionTitle": "Creating a DB instance",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "additionalUuids": [
+        "3a4c6616-d8d5-4811-883f-6f521e60174e"
+    ],
+    "uuid": "41409cd9-320e-451c-b156-32888ae79e87",
+    "createdAt": "2023-06-05T06:11:57.000Z",
+    "updatedAt": "2023-09-28T04:20:46.000Z"
 }

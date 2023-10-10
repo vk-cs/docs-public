@@ -1,15 +1,15 @@
 {
-  "title": "Installing and configuring Docker",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Install and configure Docker",
-  "metaDescription": "In this article, we'll walk you through how to install and configure Docker. After that, you can: install and configure Gitlab; install and configure Harbor; configure",
-  "sectionTitle": "Installing and configuring Docker",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "cbb216a0-af08-411b-9179-e0a948eafd18",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-27T13:18:03.000Z"
+    "title": "Installing and configuring Docker",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Install and configure Docker",
+    "metaDescription": "In this article, we'll walk you through how to install and configure Docker. After that, you can: install and configure Gitlab; install and configure Harbor; configure",
+    "sectionTitle": "Installing and configuring Docker",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "cbb216a0-af08-411b-9179-e0a948eafd18",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-28T04:20:46.000Z"
 }

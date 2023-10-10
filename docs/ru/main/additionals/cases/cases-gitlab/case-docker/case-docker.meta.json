@@ -1,15 +1,15 @@
 {
-  "title": "Установка и настройка Docker",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Установка и настройка Docker",
-  "metaDescription": "В данной статье рассмотрим, как установить и настроить Docker. После этого вы можете: установить и настроить Gitlab; установить и настроить Harbor; настрои",
-  "sectionTitle": "Установка и настройка Docker",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "ef3e7351-c7a8-4527-a831-d9bfb1eadfb3",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2023-09-27T13:18:03.000Z"
+    "title": "Установка и настройка Docker",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Установка и настройка Docker",
+    "metaDescription": "В данной статье рассмотрим, как установить и настроить Docker. После этого вы можете: установить и настроить Gitlab; установить и настроить Harbor; настрои",
+    "sectionTitle": "Установка и настройка Docker",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "ef3e7351-c7a8-4527-a831-d9bfb1eadfb3",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2023-09-28T04:20:46.000Z"
 }
