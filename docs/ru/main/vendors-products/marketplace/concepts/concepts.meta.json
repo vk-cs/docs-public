@@ -1,0 +1,16 @@
+{
+  "title": "Концепции",
+  "pageDescription": "Marketplace: типы сервисов, доступные для подключения сервисы, детали по отдельным сервисам.",
+  "shortDescription": "Особенности работы магазина приложений",
+  "metaTitle": "Концепции",
+  "metaDescription": "Marketplace: типы сервисов, детали по отдельным сервисам.",
+  "sectionTitle": "Концепции",
+  "markdown": "Устройство и особенности Marketplace: типы сервисов, ключевые различия типов.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "0148bc95-8368-439e-8a92-1c5981454c18",
+  "additionalUuids": [
+    "7ea69c91-9758-4489-95dd-241e9b805841"
+  ]
+}

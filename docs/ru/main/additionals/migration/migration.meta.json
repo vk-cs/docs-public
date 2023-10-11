@@ -2,12 +2,18 @@
   "title": "Миграция",
   "pageDescription": "Перенос существующей виртуальной инфраструктуры в облако VK Cloud.",
   "shortDescription": "Перенос существующей виртуальной инфраструктуры в облако VK Cloud",
-  "metaTitle": "Миграция — VK Cloud",
+  "metaTitle": "Миграция",
   "metaDescription": "Перенос существующей виртуальной инфраструктуры в облако VK Cloud.",
   "sectionTitle": "Миграция",
-  "markdown": "VK Cloud поддерживает миграцию как отдельных ВМ, так и инфраструктуры в целом. Для первого рекомендуется использовать внешние инструменты (VM Ware, Hyper-V), для второго — программное обеспечение Hystax, функционирующего на базе VK Cloud.",
+  "markdown": "VK Cloud поддерживает миграцию как отдельных ВМ, так и инфраструктуры в целом. Для первого рекомендуется использовать внешние инструменты (VM Ware, Hyper-V), для второго — [программное обеспечение Hystax](/ru/additionals/xaas/use-cases/migrate-hystax), функционирующего на базе VK Cloud.",
   "icon": "",
-  "infobarItems": null,
+  "infobarItems": [
+    {
+    "text": "Миграция с помощью Hystax Acura",
+    "icon": "/docs/_docs/ru/main/additionals/migration/assets/icon.svg",
+    "link": "../../vendors-products/marketplace/initial-configuration/migrate-hystax"
+    }
+  ],
   "weight": 3,
   "uuid": "1e8c5df7-0956-4cda-b1d6-6dbc2a0e1907",
   "additionalUuids": [

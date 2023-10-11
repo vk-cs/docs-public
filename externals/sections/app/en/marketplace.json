@@ -6,10 +6,14 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/additionals/mp/concepts/about-mp"
+                    "link": "docs/en/main/vendors-products/marketplace/concepts/about"
                 },
                 {
-                    "link": "docs/en/main/additionals/mp/faq"
+                    "link": "docs/en/main/vendors-products/marketplace/tariffication",
+                    "hiddenForPartners": true
+                },
+                {
+                    "link": "docs/en/main/vendors-products/marketplace/faq"
                 }
             ]
         },
@@ -17,46 +21,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/additionals/mp/quick-start"
+                    "link": "docs/en/main/vendors-products/marketplace/initial-configuration/dr-quick-start"
                 },
                 {
-                    "link": "docs/en/main/additionals/mp/mp-apps/mp-docker-ce"
-                },
-                {
-                    "link": "docs/en/main/additionals/mp/mp-apps/mp-docker-registry"
-                },
-                {
-                    "link": "docs/en/main/additionals/mp/mp-apps/mp-gitlab-ce"
-                },
-                {
-                    "link": "docs/en/main/additionals/mp/mp-apps/mp-harbor"
-                },
-                {
-                    "link": "docs/en/main/additionals/mp/mp-apps/mp-jenkins"
-                },
-                {
-                    "link": "docs/en/main/additionals/mp/mp-apps/mp-lamp-stack"
-                },
-                {
-                    "link": "docs/en/main/additionals/mp/mp-apps/mp-lemp-stack"
-                },
-                {
-                    "link": "docs/en/main/additionals/mp/mp-apps/mp-mean-stack"
-                },
-                {
-                    "link": "docs/en/main/additionals/mp/mp-apps/mp-monitoring"
-                },
-                {
-                    "link": "docs/en/main/additionals/mp/mp-apps/mp-nexus-2-3"
-                },
-                {
-                    "link": "docs/en/main/additionals/mp/mp-apps/mp-openvpn"
-                },
-                {
-                    "link": "docs/en/main/additionals/mp/mp-apps/mp-tomcat"
-                },
-                {
-                    "link": "docs/en/main/additionals/mp/mp-apps/mp-wordpress"
+                    "link": "docs/en/main/vendors-products/marketplace/initial-configuration/migrate-hystax"
                 }
             ]
         }
