@@ -1,0 +1,17 @@
+{
+  "title": "Marketplace",
+  "pageDescription": "XaaS services for working in the cloud based on VK Cloud resources.",
+  "shortDescription": "XaaS services for working in the cloud based on VK Cloud resources",
+  "metaTitle": "Marketplace",
+  "metaDescription": "Services for working in the cloud based on VK Cloud resources",
+  "sectionTitle": "Marketplace",
+  "markdown": "",
+  "icon": "",
+  "weight": 8,
+  "infobarItems": null,
+  "additionalUuids": [
+    "386d5183-76df-4393-b605-c479f1529e09",
+    "fcd5be1f-7037-440a-8e78-f3396c82e896"
+  ],
+  "uuid": "7be585e3-a68b-414c-a8ac-ec148273afba"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Step-by-step instructions",
+  "pageDescription": "Standard operations for managing SaaS and Image Based services of the VK Cloud marketplace.",
+  "shortDescription": "Connecting services in your personal account and managing service instances",
+  "metaTitle": "Step-by-step instructions",
+  "metaDescription": "Marketplace VK Cloud: standard operations for managing SaaS and Image Based services",
+  "markdown": "How to connect the service from the app store and how to manage service instances via [personal account](https://mcs.mail.ru/app/en/) VK Cloud. The initial configuration of specific services is described in the section [Configuring Marketplace services](/en/vendors-products/marketplace/initial-configuration)",
+  "sectionTitle": "Step-by-step instructions",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3
+}

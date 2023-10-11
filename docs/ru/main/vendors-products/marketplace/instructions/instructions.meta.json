@@ -1,0 +1,12 @@
+{
+  "title": "Пошаговые инструкции",
+  "pageDescription": "Стандартные операции для управления SaaS и Image Based сервисами магазина приложений VK Cloud.",
+  "shortDescription": "Подключение сервисов в личном кабинете и управление инстансами сервиса",
+  "metaTitle": "Пошаговые инструкции",
+  "metaDescription": "Marketplace VK Cloud: стандартные операции для управления SaaS и Image Based-сервисами",
+  "markdown": "Как подключить сервис из магазина приложений и как управлять инстансами сервисов через [личный кабинет](https://mcs.mail.ru/app/) VK Cloud. Первоначальная настройка конкретных сервисов описана в разделе [Настройка сервисов магазина приложений](/ru/vendors-products/marketplace/initial-configuration)",
+  "sectionTitle": "Пошаговые инструкции",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3
+}

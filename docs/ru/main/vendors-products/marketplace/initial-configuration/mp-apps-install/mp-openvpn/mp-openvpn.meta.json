@@ -1,0 +1,15 @@
+{
+  "title": "OpenVPN",
+  "pageDescription": "OpenVPN — это система, позволяющая создавать шифрованные туннели между компьютерами с использованием технологии VPN.",
+  "shortDescription": "Создание шифрованных туннелей между компьютерами с использованием технологии VPN",
+  "metaTitle": "OpenVPN",
+  "metaDescription": "OpenVPN — это система, позволяющая создавать шифрованные туннели между компьютерами с использованием технологии VPN.",
+  "sectionTitle": "OpenVPN",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "b89a3a66-c4e6-41d7-874a-f124ab944853",
+  "createdAt": "2022-04-04T11:11:16.000Z",
+  "updatedAt": "2023-09-25T12:13:49.000Z"
+}
