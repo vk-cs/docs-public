@@ -1,0 +1,17 @@
+{
+    "title": "Install",
+    "pageDescription": "Deploying applications of the old version of Marketplace VK Cloud.",
+    "shortDescription": "Initial installation of applications of the old version. Used for most of the store's apps",
+    "metaTitle": "Install",
+    "metaDescription": "Marketplace VK Cloud: deploying applications of the old version",
+    "sectionTitle": "Install",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "additionalUuids": [
+        "bc79bb69-c0b7-4ea6-82a1-cb65138737af"
+    ],
+    "uuid": "c8f47303-92bf-4bb1-9b4b-721a323f5647",
+    "createdAt": "2023-06-09T16:17:26.000Z",
+    "updatedAt": "2023-09-28T04:20:46.000Z"
+}

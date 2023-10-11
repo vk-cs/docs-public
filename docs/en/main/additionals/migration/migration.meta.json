@@ -7,7 +7,13 @@
   "sectionTitle": "Migration",
   "markdown": "VK Cloud supports migration of both individual VMs and the infrastructure as a whole. For the first, it is recommended to use external tools (VM Ware, Hyper-V), for the second — Hystax software, operating on the basis of VK Cloud.",
   "icon": "",
-  "infobarItems": null,
+  "infobarItems": [
+    {
+    "text": "Migration using Hystax Migration",
+    "icon": "/docs/_docs/en/main/additionals/migration/assets/icon.svg",
+    "link": "../../vendors-products/marketplace/initial-configuration/migrate-hystax"
+    }
+  ],
   "weight": 3,
   "uuid": "d01d4bc0-6858-45e1-9f5a-5e848d037637",
   "additionalUuids": [

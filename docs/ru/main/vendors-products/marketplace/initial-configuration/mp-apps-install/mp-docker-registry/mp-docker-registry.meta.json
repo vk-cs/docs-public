@@ -1,0 +1,15 @@
+{
+  "title": "Docker Registry",
+  "pageDescription": "Docker Registry — масштабируемое серверное приложение без сохранения состояния, которое хранит образы Docker и позволяет вам распространять их.",
+  "shortDescription": "Масштабируемое серверное приложение для хранения образов Docker. Управляется через UI Portainer",
+  "metaTitle": "Docker Registry",
+  "metaDescription": "Docker Registry — масштабируемое серверное приложение без сохранения состояния, которое хранит образы Docker и позволяет вам распространять их.",
+  "sectionTitle": "Docker Registry",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 7,
+  "uuid": "bda405fb-d8ed-4362-aa8e-ad1cfca31ce5",
+  "createdAt": "2022-03-26T14:10:44.000Z",
+  "updatedAt": "2023-09-25T12:13:49.000Z"
+}
