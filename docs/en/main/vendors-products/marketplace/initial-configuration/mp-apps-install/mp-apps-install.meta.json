@@ -1,0 +1,13 @@
+{
+  "title": "Installing applications of the old version",
+  "pageDescription": "Installation and initial configuration of old version applications in Marketplace VK Cloud.",
+  "shortDescription": "Installation and initial configuration of applications of the old version of the Marketplace",
+  "metaTitle": "Installing applications of the old version",
+  "metaDescription": "Marketplace VK Cloud: installation and initial configuration of basic applications",
+  "sectionTitle": "Installing applications of the old version",
+  "markdown": "The list of applications available for deployment of the old version in the Marketplace.<br><warn>VK Cloud guarantees the correct operation of only third-party software pre-installed in the VM by default. There are no consultations on configuration, modification, documentation of pre-installed third-party software of this service.</warn>",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 8,
+  "uuid": "03df46df-8367-4597-b347-b4860022472b"
+}
