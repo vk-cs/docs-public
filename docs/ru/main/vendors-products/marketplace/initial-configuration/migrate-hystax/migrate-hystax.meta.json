@@ -1,17 +1,17 @@
 {
-  "title": "Миграция с использованием Hystax Migration",
-  "pageDescription": "Шаги по переносу инфраструктуры клиента в целевой проект VK Cloud с использованием Hystax Acura Migration.",
-  "shortDescription": "Шаги по переносу инфраструктуры клиента в целевой проект VK Cloud с помощью Hystax Acura Migration",
-  "metaTitle": "Миграция с использованием Hystax Migration",
-  "metaDescription": "Шаги по переносу инфраструктуры клиента в целевой проект VK Cloud с использованием [Hystax Acura](https://hystax.com/documentation/live-migration)",
-  "sectionTitle": "Миграция с использованием Hystax Migration",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "ea85eeef-cf87-4638-94ee-ccf00cb1f3ac",
-  "additionalUuids": [
-    "db7f6c29-c80c-4955-a4ce-b7f31d80f25c"
-  ],
-  "createdAt": "2023-05-18T11:25:25.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "Миграция с использованием Hystax Migration",
+    "pageDescription": "Шаги по переносу инфраструктуры клиента в целевой проект VK Cloud с использованием Hystax Acura Migration.",
+    "shortDescription": "Шаги по переносу инфраструктуры клиента в целевой проект VK Cloud с помощью Hystax Acura Migration",
+    "metaTitle": "Миграция с использованием Hystax Migration",
+    "metaDescription": "Шаги по переносу инфраструктуры клиента в целевой проект VK Cloud с использованием [Hystax Acura](https://hystax.com/documentation/live-migration)",
+    "sectionTitle": "Миграция с использованием Hystax Migration",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "ea85eeef-cf87-4638-94ee-ccf00cb1f3ac",
+    "additionalUuids": [
+        "db7f6c29-c80c-4955-a4ce-b7f31d80f25c"
+    ],
+    "createdAt": "2023-05-18T11:25:25.000Z",
+    "updatedAt": "2023-10-11T12:54:44.000Z"
 }

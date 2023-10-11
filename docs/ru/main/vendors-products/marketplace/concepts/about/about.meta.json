@@ -1,18 +1,18 @@
 {
-  "title": "О сервисе",
-  "pageDescription": "Описание возможностей сервиса Marketplace в VK Cloud.",
-  "shortDescription": "Возможности магазина приложений, типы сервисов и их ключевые различия",
-  "metaTitle": "О сервисе",
-  "metaDescription": "Описание возможностей сервиса Marketplace в VK Cloud.",
-  "sectionTitle": "О сервисе",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "55002a6f-06dd-4b83-be86-1342ed69d7d0",
-  "additionalUuids": [
-    "28e35693-a7e9-4445-9e9a-4fba06152841",
-    "b022ac01-f047-44f7-b87a-167d1274cb0d"
-  ],
-  "createdAt": "2023-06-09T16:17:26.000Z",
-  "updatedAt": "2023-09-25T12:13:49.000Z"
+    "title": "О сервисе",
+    "pageDescription": "Описание возможностей сервиса Marketplace в VK Cloud.",
+    "shortDescription": "Возможности магазина приложений, типы сервисов и их ключевые различия",
+    "metaTitle": "О сервисе",
+    "metaDescription": "Описание возможностей сервиса Marketplace в VK Cloud.",
+    "sectionTitle": "О сервисе",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "55002a6f-06dd-4b83-be86-1342ed69d7d0",
+    "additionalUuids": [
+        "28e35693-a7e9-4445-9e9a-4fba06152841",
+        "b022ac01-f047-44f7-b87a-167d1274cb0d"
+    ],
+    "createdAt": "2023-06-09T16:17:26.000Z",
+    "updatedAt": "2023-10-11T12:54:44.000Z"
 }
