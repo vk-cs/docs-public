@@ -1,20 +1,20 @@
 {
-  "title": "Установка и настройка Hystax DR",
-  "pageDescription": "Развертывание сервиса Hystax Acura Disaster Recovery, создание плана и запуск аварийного восстановления.",
-  "shortDescription": "Развертывание сервиса Hystax Acura Disaster Recovery, создание плана и запуск аварийного восстановления",
-  "metaTitle": "Установка и настройка Hystax DR",
-  "metaDescription": "Hystax Acura Disaster Recovery в Marketplace: развертывание сервиса, создание плана и запуск аварийного восстановления",
-  "sectionTitle": "Установка и настройка Hystax DR",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "ba4939ff-df5d-451e-a39f-4cd8cb9da3a0",
-  "additionalUuids": [
-    "b8461439-5d6e-4c66-9196-79cb8e1eaa32",
-    "52213940-7ee1-4f27-86db-71dcebc9b928",
-    "f07e8553-32fa-4d16-ad82-f0085d1fc2c9",
-    "8dd52807-f494-4045-b6cc-1c3e52cea50f"
-  ],
-  "createdAt": "2023-07-28T11:19:26.000Z",
-  "updatedAt": "2023-08-18T12:48:36.000Z"
+    "title": "Установка и настройка Hystax DR",
+    "pageDescription": "Развертывание сервиса Hystax Acura Disaster Recovery, создание плана и запуск аварийного восстановления.",
+    "shortDescription": "Развертывание сервиса Hystax Acura Disaster Recovery, создание плана и запуск аварийного восстановления",
+    "metaTitle": "Установка и настройка Hystax DR",
+    "metaDescription": "Hystax Acura Disaster Recovery в Marketplace: развертывание сервиса, создание плана и запуск аварийного восстановления",
+    "sectionTitle": "Установка и настройка Hystax DR",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "ba4939ff-df5d-451e-a39f-4cd8cb9da3a0",
+    "additionalUuids": [
+        "b8461439-5d6e-4c66-9196-79cb8e1eaa32",
+        "52213940-7ee1-4f27-86db-71dcebc9b928",
+        "f07e8553-32fa-4d16-ad82-f0085d1fc2c9",
+        "8dd52807-f494-4045-b6cc-1c3e52cea50f"
+    ],
+    "createdAt": "2023-07-28T11:19:26.000Z",
+    "updatedAt": "2023-10-11T12:54:44.000Z"
 }
