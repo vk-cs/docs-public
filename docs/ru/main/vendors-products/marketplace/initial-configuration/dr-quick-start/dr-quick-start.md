@@ -21,7 +21,7 @@
 1. Создадите резервную инфраструктуру с использованием плана резервного восстановления.
 1. Восстановите резервируемую инфраструктуру в VK Cloud.
 
-Используя сервис Hystax Acura Disaster Recovery, вы соглашаетесь с лицензионными соглашениями [Магазина приложений](/ru/additionals/start/legal/marketplace) и [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use/).
+Используя сервис Hystax Acura Disaster Recovery, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/additionals/start/legal/marketplace) и [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use/).
 
 ## 1. Подготовительные шаги
 
