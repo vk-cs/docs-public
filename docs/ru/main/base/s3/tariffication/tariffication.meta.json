@@ -1,15 +1,15 @@
 {
-  "title": "Тарификация",
-  "pageDescription": "Особенности тарификации сервиса и расчет стоимости.",
-  "shortDescription": "Особенности тарификации сервиса и расчет стоимости",
-  "metaTitle": "Тарификация",
-  "metaDescription": "Особенности тарификации сервиса, расчет стоимости.",
-  "sectionTitle": "Тарификация",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 7,
-  "uuid": "f693dd9c-bc4c-4c8b-828b-a2343a0b92a4",
-  "createdAt": "2023-04-04T08:48:21.000Z",
-  "updatedAt": "2023-09-28T06:05:13.000Z"
+    "title": "Тарификация",
+    "pageDescription": "Особенности тарификации сервиса и расчет стоимости.",
+    "shortDescription": "Особенности тарификации сервиса и расчет стоимости",
+    "metaTitle": "Тарификация",
+    "metaDescription": "Особенности тарификации сервиса, расчет стоимости.",
+    "sectionTitle": "Тарификация",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 7,
+    "uuid": "f693dd9c-bc4c-4c8b-828b-a2343a0b92a4",
+    "createdAt": "2023-04-04T08:48:21.000Z",
+    "updatedAt": "2023-09-28T06:24:36.000Z"
 }
