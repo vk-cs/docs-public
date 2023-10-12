@@ -1,19 +1,19 @@
 {
-  "title": "Быстрый старт",
-  "pageDescription": "",
-  "shortDescription": "Начало работы с сервисом",
-  "metaTitle": "Быстрый старт",
-  "metaDescription": "",
-  "sectionTitle": "Быстрый старт",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "852b53c0-0b5d-4572-973d-503aa1e60f2b",
-  "additionalUuids": [
-    "128ba39c-bc2d-4ab8-836d-45056606d628",
-    "76b4e05e-ee69-477a-8101-fd57002699e3"
-  ],
-  "createdAt": "2023-04-12T09:23:44.000Z",
-  "updatedAt": "2023-09-28T07:42:51.000Z"
+    "title": "Быстрый старт",
+    "pageDescription": "",
+    "shortDescription": "Начало работы с сервисом",
+    "metaTitle": "Быстрый старт",
+    "metaDescription": "",
+    "sectionTitle": "Быстрый старт",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "852b53c0-0b5d-4572-973d-503aa1e60f2b",
+    "additionalUuids": [
+        "128ba39c-bc2d-4ab8-836d-45056606d628",
+        "76b4e05e-ee69-477a-8101-fd57002699e3"
+    ],
+    "createdAt": "2023-04-12T09:23:44.000Z",
+    "updatedAt": "2023-09-28T08:02:00.000Z"
 }
