@@ -13,7 +13,7 @@
 
 Данная инструкция поможет мигрировать ваши ресурсы в VK Cloud с помощью сервиса Hystax Acura Migration на примере ВМ `Ubuntu-MR` с операционной системой Ubuntu 18.04.
 
-Используя сервис Hystax Acura Migration, вы соглашаетесь с лицензионными соглашениями [Магазина приложений](/ru/additionals/start/legal/marketplace) и [Hystax Acura Migration](https://хст.рф/terms-of-use/).
+Используя сервис Hystax Acura Migration, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/additionals/start/legal/marketplace) и [Hystax Acura Migration](https://хст.рф/terms-of-use/).
 
 ## 1. Подготовительные шаги
 
