@@ -1,15 +1,17 @@
 {
-  "title": "Installing OpenCart on Linux",
-  "pageDescription": "Installing OpenCart 4.0.2.3 on Ubuntu 22.04 operating system in VK Cloud.",
-  "shortDescription": "How to install and configure OpenCart 4.0.2.3 on Ubuntu 22.04",
-  "metaTitle": "Installing OpenCart on Linux",
-  "metaDescription": "VK Cloud: How to install OpenCart 4.0.2.3 on Ubuntu 22.04 operating system",
-  "sectionTitle": "Installing OpenCart on Linux",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 14,
-  "uuid": "4d1c1424-e0c8-43fa-85ef-791ff9b0f4b4",
-  "additionalUuids": [
-    "eae6d95b-e72c-4a18-b9c4-efa138f70624"
-  ]
+    "title": "Installing OpenCart on Linux",
+    "pageDescription": "Installing OpenCart 4.0.2.3 on Ubuntu 22.04 operating system in VK Cloud.",
+    "shortDescription": "How to install and configure OpenCart 4.0.2.3 on Ubuntu 22.04",
+    "metaTitle": "Installing OpenCart on Linux",
+    "metaDescription": "VK Cloud: How to install OpenCart 4.0.2.3 on Ubuntu 22.04 operating system",
+    "sectionTitle": "Installing OpenCart on Linux",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 14,
+    "uuid": "4d1c1424-e0c8-43fa-85ef-791ff9b0f4b4",
+    "additionalUuids": [
+        "eae6d95b-e72c-4a18-b9c4-efa138f70624"
+    ],
+    "createdAt": "2023-10-12T12:57:48.000Z",
+    "updatedAt": "2023-10-12T12:57:48.000Z"
 }
