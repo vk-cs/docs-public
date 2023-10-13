@@ -1,14 +1,14 @@
 {
-  "title": "О сервисе",
-  "pageDescription": "Обзор возможностей сервиса Spark в Kubernetes, реализованном на VK Cloud.",
-  "shortDescription": "Обзор возможностей сервиса и решаемых задач",
-  "metaTitle": "О сервисе",
-  "metaDescription": "Обзор возможностей сервиса Spark в Kubernetes, реализованном на VK Cloud",
-  "sectionTitle": "О сервисе",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 0,
-  "createdAt": "2023-10-02T13:09:02.000Z",
-  "updatedAt": "2023-10-02T13:09:02.000Z",
-  "uuid": "a5e681a5-e32c-4052-abbc-d0cfbf4b4539"
+    "title": "О сервисе",
+    "pageDescription": "Обзор возможностей сервиса Spark в Kubernetes, реализованном на VK Cloud.",
+    "shortDescription": "Обзор возможностей сервиса и решаемых задач",
+    "metaTitle": "О сервисе",
+    "metaDescription": "Обзор возможностей сервиса Spark в Kubernetes, реализованном на VK Cloud",
+    "sectionTitle": "О сервисе",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 0,
+    "createdAt": "2023-10-02T13:09:02.000Z",
+    "updatedAt": "2023-10-04T06:06:00.000Z",
+    "uuid": "a5e681a5-e32c-4052-abbc-d0cfbf4b4539"
 }
