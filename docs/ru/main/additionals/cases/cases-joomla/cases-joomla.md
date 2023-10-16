@@ -6,7 +6,7 @@
 
 1. [Зарегистрируйтесь](/ru/additionals/start/get-started/account-registration#registraciya_v_lichnom_kabinete) в личном кабинете VK Cloud.
 1. [Подтвердите](/ru/additionals/start/get-started/account-registration#podtverzhdenie_uchetnoy_zapisi) учетную запись.
-1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью с адресом `10.0.0.0/24`.
+1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
 1. [Создайте ВМ](/ru/base/iaas/instructions/vm/vm-create):
 
    - имя: `Almalinux_9_Joomla`;
@@ -92,7 +92,7 @@
    sudo setsebool -P httpd_can_network_connect on
    ```
 
-1. В браузере введите публичный IP-адрес ВМ с `/joomla`. В текущей инструкции это `87.239.105.44/joomla`.
+1. В браузере введите публичный IP-адрес ВМ с `/joomla`. В текущей инструкции это `site-joomla.example.vk.cloud/joomla`.
 1. В мастере установки укажите русский язык и название сайта — `site-joomla.example.vk.cloud`.
 1. На шаге «Параметры учетной записи» укажите учетные данные администратора CMS.
 1. На шаге «Параметры базы данных» БД укажите параметры `MySQL-7313`:
