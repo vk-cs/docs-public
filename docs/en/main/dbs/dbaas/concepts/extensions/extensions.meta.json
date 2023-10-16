@@ -1,10 +1,10 @@
 {
-    "title": "Available extensions",
+    "title": "Available extensions and plugins",
     "pageDescription": "Extensions for database instances in VK Cloud.",
     "shortDescription": "Additional features in a deployed DB instance",
-    "metaTitle": "Available extensions",
+    "metaTitle": "Available extensions and plugins",
     "metaDescription": "Extensions for database instances in VK Cloud.",
-    "sectionTitle": "Available extensions",
+    "sectionTitle": "Available extensions and plugins",
     "icon": "",
     "infobarItems": null,
     "weight": 4,
