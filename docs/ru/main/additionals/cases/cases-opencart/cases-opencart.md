@@ -6,7 +6,7 @@
 
 1. [Зарегистрируйтесь](/ru/additionals/start/get-started/account-registration#registraciya_v_lichnom_kabinete) в личном кабинете VK Cloud.
 1. [Подтвердите](/ru/additionals/start/get-started/account-registration#podtverzhdenie_uchetnoy_zapisi) учетную запись.
-1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью с адресом `10.0.0.0/24`.
+1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
 1. [Создайте ВМ](/ru/base/iaas/instructions/vm/vm-create):
 
    - имя: `Ubuntu_22_04_OpenCart`;
@@ -79,7 +79,7 @@
    sudo mv /var/www/html/opencart/admin/config-dist.php /var/www/html/opencart/admin/config.php
    ```
 
-1. В браузере введите публичный IP-адрес ВМ с `/opencart`. В текущей инструкции это `87.239.106.48/opencart`.
+1. В браузере введите публичный IP-адрес ВМ с `/opencart`. В текущей инструкции это `site-opencart.example.vk.cloud/opencart`.
 1. В мастере установки ознакомьтесь и примите условия лицензионного соглашения OpenCart.
 1. На шаге «Pre-Installation» проверьте готовность ВМ к установке OpenCart — все проверки должны быть выполнены успешно.
 1. На шаге «Configuration» укажите параметры `MySQL-9341`:
