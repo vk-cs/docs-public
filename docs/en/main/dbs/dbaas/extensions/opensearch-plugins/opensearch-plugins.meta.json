@@ -1,15 +1,15 @@
 {
-  "title": "OpenSearch plugins",
-  "pageDescription": "Available OpenSearch plugins.",
-  "shortDescription": "Available OpenSearch plugins",
-  "metaTitle": "OpenSearch plugins",
-  "metaDescription": "Available OpenSearch plugins.",
-  "sectionTitle": "OpenSearch plugins",
-  "markdown": "Available OpenSearch plugins.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "createdAt": "",
-  "updatedAt": "",
-  "uuid": ""
+    "title": "OpenSearch plugins",
+    "pageDescription": "Available OpenSearch plugins.",
+    "shortDescription": "Available OpenSearch plugins",
+    "metaTitle": "OpenSearch plugins",
+    "metaDescription": "Available OpenSearch plugins.",
+    "sectionTitle": "OpenSearch plugins",
+    "markdown": "Available OpenSearch plugins.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "createdAt": "",
+    "updatedAt": "2023-10-16T08:12:37.000Z",
+    "uuid": "17f6b92f-f031-4850-8d56-76e684867966"
 }
