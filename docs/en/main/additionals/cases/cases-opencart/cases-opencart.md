@@ -79,7 +79,7 @@ This instruction will help you deploy OpenCart version 4.0.2.3 in the Ubuntu 22.
    sudo mv /var/www/html/opencart/admin/config-dist.php /var/www/html/opencart/admin/config.php
    ```
 
-1. In the browser, enter the VM's public IP address with `/opencart`. In the current instruction it is `87.239.106.48/opencart`.
+1. In the browser, enter the VM's public IP address with `/opencart`. In the current instruction it is `site-opencart.example.vk.cloud/opencart`.
 1. In the installation wizard, read and accept the terms of the OpenCart license agreement.
 1. At the “Pre-Installation” step, check that the VM is ready to install OpenCart — all checks must be completed successfully.
 1. At the “Configuration” step, specify the parameters `MySQL-9341`:
