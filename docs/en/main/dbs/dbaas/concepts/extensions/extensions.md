@@ -20,32 +20,6 @@ Available extensions:
 
 For some extensions, mandatory parameters must be added — without them, the installation will fail with an error. [Learn more](../../extensions/) about extensions and their parameters.
 
-<details>
-    <summary>Supported OpenSearch plugins</summary>
-
-- analysis-icu,
-- analysis-nori,
-- analysis-phonetic,
-- analysis-smartcn,
-- discovery-gce,
-- mapper-murmur3,
-- repository-gcs,
-- mapper-size,
-- analysis-kuromoji,
-- analysis-ukrainian,
-- discovery-ec2,
-- ingest-attachment,
-- repository-hdfs,
-- store-smb,
-- transport-nio,
-- analysis-stempel,
-- discovery-azure-classic,
-- mapper-annotated-text,
-- repository-azure,
-- repository-s3.
-
-</details>
-
 The number of extensions installed per DB instance is limited and depends on the type of DBMS.
 
 Learn more about working with extensions in VK Cloud in the article [Managing extensions](../../instructions/managing-extensions/).
