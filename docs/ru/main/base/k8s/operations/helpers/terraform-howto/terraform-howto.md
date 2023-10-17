@@ -12,7 +12,7 @@
 
 - Изменение некоторых параметров уже существующего кластера приведет к созданию **нового кластера**. В документации сервиса контейнеров приводятся только те операции, которые можно выполнить над существующим кластером, не создавая при этом новый.
 
-  Подробнее в [документации Terraform-провайдера](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_cluster.md#argument-reference).
+  Подробнее в [документации Terraform-провайдера](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_cluster.md#argument-reference).
 
 - Если изменить в личном кабинете настройки кластера, который управляется с помощью Terraform, то эти изменения не будут отражены в конфигурационном файле Terraform.
 
@@ -32,4 +32,4 @@
 
      1. Если вас устраивают эти изменения, подтвердите их.
 
-  1. Актуализируйте файл конфигурации, чтобы он соответствовал состоянию Terraform. Эта процедура подробно описана в разделе [Create confiuguration](https://learn.hashicorp.com/tutorials/terraform/state-import?in=terraform/state#create-configuration) документации Terraform.
+  1. Актуализируйте файл конфигурации, чтобы он соответствовал состоянию Terraform. Эта процедура подробно описана в разделе [Create configuration](https://learn.hashicorp.com/tutorials/terraform/state-import?in=terraform/state#create-configuration) документации Terraform.
