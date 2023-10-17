@@ -12,7 +12,7 @@ See the [Terraform provider documentation](https://github.com/vk-cs/terraform-pr
 
 - Changing some parameters of an existing cluster will create a **new cluster**. The container service documentation lists only operations that can be performed on an existing cluster without creating a new cluster.
 
-  See [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_cluster.md#argument-reference) for details.
+  See [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_cluster.md#argument-reference) for details.
 
 - If you change the settings of a cluster that is managed by Terraform in your personal account, those changes will not be reflected in the Terraform configuration file.
 
@@ -32,4 +32,4 @@ See the [Terraform provider documentation](https://github.com/vk-cs/terraform-pr
 
      1. If you are satisfied with these changes, confirm them.
 
-  1. Update the configuration file to match the Terraform state. This procedure is described in detail in the [Create confiuguration](https://learn.hashicorp.com/tutorials/terraform/state-import?in=terraform/state#create-configuration) section of the Terraform documentation.
+  1. Update the configuration file to match the Terraform state. This procedure is described in detail in the [Create configuration](https://learn.hashicorp.com/tutorials/terraform/state-import?in=terraform/state#create-configuration) section of the Terraform documentation.
