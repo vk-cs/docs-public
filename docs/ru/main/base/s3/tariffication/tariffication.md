@@ -8,7 +8,7 @@
 
 ## Тарифицируется
 
-Тарификация услуг в Объектном хранилище VK Cloud зависит от [класса хранения](../concepts/intro#klassy_hraneniya_baketa) данных.
+Тарификация услуг в Cloud Storage зависит от [класса хранения](../concepts/intro#klassy_hraneniya_baketa) данных.
 
 В Hotbox и Icebox тарифицируется:
 

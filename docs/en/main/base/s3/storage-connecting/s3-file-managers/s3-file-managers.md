@@ -10,7 +10,7 @@ When you create an account, you will be provided with data that you want to save
 
 ## CyberDuck
 
-Cyberduck is a free cloud storage browser for Mac and Windows with support for Object Storage S3 as well as many other cloud platforms.
+Cyberduck is a free cloud storage browser for Mac and Windows with support for Cloud Storage as well as many other cloud platforms.
 
 Installation is performed using [the product distribution kit](https://cyberduck.io/download) from the official website, as well as the classic user interface of the operating system.
 
@@ -25,7 +25,7 @@ To connect, specify:
 
 <info>
 
-CyberDuck works with VK Cloud Object Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
+CyberDuck works with Cloud Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
 
 </info>
 
@@ -43,13 +43,13 @@ To configure, enter the following data:
 
 <info>
 
-CyberDuck works with VK Cloud Object Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
+CyberDuck works with Cloud Storage as a hierarchical file system. This means that the keys of objects uploaded via CyberDuck will look like a path to a file, for example: prefix / subprefix / image.png.
 
 </info>
 
 ## S3FS
 
-s3fs allows Linux and macOS to mount an S3 bucket via FUSE. s3fs maintains its own object format for files, allowing you to use other tools such as the AWS CLI.
+s3fs allows Linux and macOS to mount an Cloud Storage bucket via FUSE. s3fs maintains its own object format for files, allowing you to use other tools such as the AWS CLI.
 
 **Installation**
 
@@ -123,7 +123,7 @@ To mount a bucket in an operating system, you should:
 
 ## Disk-O:
 
-Disk-O: - a program that allows you to work with clouds in one place - on your computer. At the same time, files do not take up space on the device, because they are stored only in the clouds. The program works with VK Cloud Object Storage, as well as platforms such as: Cloud Mail.ru, Yandex.Disk, Google Drive, Dropbox and other storages.
+Disk-O: - a program that allows you to work with clouds in one place - on your computer. At the same time, files do not take up space on the device, because they are stored only in the clouds. The program works with Cloud Storage, as well as platforms such as: Cloud Mail.ru, Yandex.Disk, Google Drive, Dropbox and other storages.
 
 The program should be installed using the standard user interface of the operating system, as well as the installation file from the [official website](https://disk-o.cloud/ru/) .
 

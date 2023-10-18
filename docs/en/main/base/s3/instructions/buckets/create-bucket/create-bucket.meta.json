@@ -1,10 +1,10 @@
 {
-    "title": "Creating an S3 bucket",
+    "title": "Creating an bucket",
     "pageDescription": "",
     "shortDescription": "",
-    "metaTitle": "Creating an S3 bucket",
+    "metaTitle": "Creating an bucket",
     "metaDescription": "When registering on the VK Cloud platform and activating an account, the user gets full access to the Object Storage service. Before uploading an object to stor",
-    "sectionTitle": "Creating an S3 bucket",
+    "sectionTitle": "Creating an bucket",
     "markdown": "",
     "icon": "",
     "infobarItems": null,

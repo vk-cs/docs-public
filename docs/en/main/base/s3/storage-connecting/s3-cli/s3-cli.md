@@ -1,22 +1,22 @@
-The S3 CLI, or S3 Command Line Interface, is a single tool for managing S3 services based on the AWS S3 toolkit. With just one tool downloaded, it is possible to control many VK Cloud S3 services from the command line and automate them with scripts.
+The AWS CLI, or AWS Command Line Interface, is a single tool for managing Cloud Storage service based on the AWS S3 toolkit. With just one tool downloaded, it is possible to control many Cloud Storage services from the command line and automate them with scripts.
 
-The S3 CLI introduces a new set of simple commands to efficiently receive and send files to VK Cloud S3.
+The AWS CLI introduces a new set of simple commands to efficiently receive and send files to Cloud Storage.
 
-With minimal configuration, the S3 CLI allows you to run commands from the command line in a terminal program:
+With minimal configuration, the AWS CLI allows you to run commands from the command line in a terminal program:
 
 - Linux shells are common shell programs such as bash, zsh, and tcsh for executing commands on Linux or macOS.
 - Windows Command Prompt - On Windows, you run commands from the Windows Command Prompt or PowerShell.
 
-The S3 CLI is available in two versions, and the information in this guide applies to both, unless otherwise noted.
+The AWS CLI is available in two versions, and the information in this guide applies to both, unless otherwise noted.
 
-- Version 2.x is the current generally available version of the S3 CLI for use in production environments.
+- Version 2.x is the current generally available version of the AWS CLI for use in production environments.
 - Version 1.x is the previous version of the AWS CLI available for backward compatibility.
 
 Full information about the set of commands and additional CLI settings is available on [the developer's website](https://docs.aws.amazon.com/cli/index.html).
 
 ## CLI installation
 
-To install S3 CLI v2 in the operating system, you must install the appropriate package:
+To install AWS CLI v2 in the operating system, you must install the appropriate package:
 
 **Linux**
 
@@ -101,7 +101,7 @@ When you enter this command, the AWS CLI prompts for four pieces of information:
 
 - Access key identifier - the received key identifier data is used when adding an account.
 - Secret access key - the received secret key data is used when adding an account.
-- AWS region - the region where the S3 service is located, by default it is ru-msk.
+- AWS region - the region where the Cloud Storage service is located, by default it is ru-msk.
 - Output Format - Determines how to format the output of the command being used. If no output format is specified, it will use `json` by default. [Available options](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html):
 
   - `json` – The output is formatted as a JSON string.
@@ -116,8 +116,8 @@ The AWS CLI stores this information in a profile (set of settings) called defaul
 
 When using the AWS CLI to work with Object Storage, there are a few things to keep in mind:
 
-- The AWS CLI treats VK Cloud S3 as a hierarchical file system and object keys are in the form of a file path.
-- When running the aws command to work with VK Cloud S3, the `--endpoint-url` parameter is required because the client is configured by default to work with Amazon servers.
+- The AWS CLI treats Cloud Storage as a hierarchical file system and object keys are in the form of a file path.
+- When running the aws command to work with Cloud Storage, the `--endpoint-url` parameter is required because the client is configured by default to work with Amazon servers.
 - Bucket creation should be done using the appropriate `--endpoint-url` - [http://hb.vkcs.cloud](http://hb.vkcs.cloud).
 - Any operations cannot be performed using the CLI with the Backup bucket class.
 - When using the storage classes `--storage-class`, the `STANDARD` values for Hotbox and `STANDARD_IA` for Icebox apply.

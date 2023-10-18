@@ -1,4 +1,4 @@
-Cloud Database is a service for creating cloud databases, read more in [article](https://mcs.mail.ru/databases/).
+Cloud Databases is a service for creating cloud databases, read more in [article](https://mcs.mail.ru/databases/).
 
 Running PostgreSQL, MySQL, MongoDB and ClickHouse DBMS in a couple of minutes.
 

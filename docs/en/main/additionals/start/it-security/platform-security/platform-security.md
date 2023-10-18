@@ -23,7 +23,7 @@ For projects in the Moscow region, you can choose the optimal data center accord
 
 <info>
 
-There are also resources that do not have AZs, such as an S3 bucket or a virtual network. For projects in the Moscow region, these resources are global (not bound to a zone).
+There are also resources that do not have AZs, such as an Cloud Storage bucket or a virtual network. For projects in the Moscow region, these resources are global (not bound to a zone).
 
 </info>
 

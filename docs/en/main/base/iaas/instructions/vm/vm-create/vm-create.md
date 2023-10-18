@@ -1,4 +1,4 @@
-In VK Cloud Servers, you can create virtual machines through your personal account, OpenStack CLI or Terraform. To create a VM using Terraform, use the [VM creation instructions](/en/manage/terraform/scenarios/create) in the Terraform section.
+In Cloud Servers, you can create virtual machines through your personal account, OpenStack CLI or Terraform. To create a VM using Terraform, use the [VM creation instructions](/en/manage/terraform/scenarios/create) in the Terraform section.
 
 ## Before starting work
 
@@ -33,11 +33,11 @@ The available fields may differ for different operating systems.
 3. Click the **Create instance** or **Add** button.
 4. Set VM parameters:
      - **Name of virtual machine**: use only Latin letters, numbers, or symbols `-`, `_` and `.`.
-     - **Type of virtual machine**: select the preset VM configuration (CPU and RAM). For more information, see [VK Cloud Servers service overview](../../../concepts/vm-concept).
+     - **Type of virtual machine**: select the preset VM configuration (CPU and RAM). For more information, see [Cloud Servers service overview](../../../concepts/vm-concept).
      - **Availability zone**: select the data center where the VM will be launched.
      - **Number of machines in configuration**: specify the desired number of VM.
      - **Disk size**: specify the desired VM disk size in gigabytes.
-     - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [VK Cloud Servers service overview](../../../concepts/vm-concept#disks).
+     - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](../../../concepts/vm-concept#disks).
      - **Operating system**: select the operating system version or [previously created image](../../vm-images/vm-images-manage/).
      - **Enable monitoring**: enable to use [monitoring tools](/en/manage/monitoring/monitoring-info).
      - **Tags**: if necessary, [specify the tag](../vm-manage#assigning_tags) for the VM or create a new one.

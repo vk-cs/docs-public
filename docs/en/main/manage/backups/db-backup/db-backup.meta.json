@@ -1,10 +1,10 @@
 {
-  "title": "DBMS Backup",
+  "title": "DBMS backup",
   "pageDescription": "Replication and backup of DB instances in automatic and manual modes.",
   "shortDescription": "Replication and backup of DB instances in automatic and manual modes",
-  "metaTitle": "DBMS Backup",
+  "metaTitle": "DBMS backup",
   "metaDescription": "Backup instances in both automatic and manual mode will help to protect yourself from data loss.",
-  "sectionTitle": "DBMS Backup",
+  "sectionTitle": "DBMS backup",
   "markdown": "Replication and backup of DB instances in automatic and manual modes.",
   "icon": "",
   "infobarItems": null,

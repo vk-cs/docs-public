@@ -1,4 +1,4 @@
-Проведя [предварительные настройки](../s3-golang-setup/), можно приступить к работе с бакетами S3.
+Проведя [предварительные настройки](../s3-golang-setup/), можно приступить к работе с бакетами Cloud Storage.
 
 ## Получение списка бакетов
 
@@ -23,7 +23,7 @@ func main() {
 	// Создание сессии
 	sess, _ := session.NewSession()
 
-	// Подключение к сервису S3
+	// Подключение к сервису Cloud Storage
 	svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	if res, err := svc.ListBuckets(nil); err != nil {

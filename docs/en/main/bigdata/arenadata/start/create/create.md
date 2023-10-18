@@ -8,7 +8,7 @@ Creating an Arenadata Hadoop cluster includes the following steps:
 
 ## Select the Arenadata Hadoop distribution version
 
-To create an Arenadata Hadoop cluster, go to Big Data → Clusters. Click Add Cluster.
+To create an Arenadata Hadoop cluster, go to **Big Data → Clusters**. Click **Add Cluster**.
 
 When you click on the button, the cluster configurator will open in the window, consisting of several stages, as a result of which it determines the parameters of the cluster being created.
 

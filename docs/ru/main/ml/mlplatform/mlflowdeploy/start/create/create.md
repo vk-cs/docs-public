@@ -1,6 +1,6 @@
 Сервис MLflow Deploy предоставляет возможность автоматически упаковывать ML модели в Docker-контейнеры и делать их доступными по REST API для решения задач обслуживания в реальном времени.
 
-Сервис интегрирован с компонентами ML Platform: JupyterHub и MLflow.
+Сервис интегрирован с компонентами Cloud ML Platform: JupyterHub и MLflow.
 
 Создание инстансов MLflow Deploy доступно как через личный кабинет VK Cloud, так и через [MLflow Client](../../manage/manage-mlflow-client/).
 

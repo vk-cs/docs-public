@@ -25,7 +25,7 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
 
 - Management of [cluster](../../operations/manage-cluster) and [groups of nodes](../../operations/manage-node-group) using VK Cloud personal account and VK Cloud own Terraform provider.
 
-- Manage Kubernetes objects and resources after [connecting to the cluster](../../connect/) using `kubectl` or Kubernetes Dashboard.
+- Manage Cloud Containers objects and resources after [connecting to the cluster](../../connect/) using `kubectl` or Kubernetes Dashboard.
 
 - Automatic and manual [cluster scaling](../../operations/scale).
 
@@ -52,9 +52,9 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
   - You can [apply](../architecture#built_in_support_for_the_open_policy_agent) Gatekeeper [constraint policies](https://open-policy-agent.github.io/gatekeeper/website/docs/howto).
   - Integration of [Kubernetes security role model](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) with VK Cloud platform roles is available. Read more in [Access management](../../concepts/access-management).
 
-- [Backup](../../use-cases/velero-backup) Kubernetes VK Cloud clusters with Velero.
+- [Backup](../../use-cases/velero-backup) Cloud Containers clusters with Velero.
 
-- Migration of other Kubernetes clusters to Kubernetes VK Cloud using Velero.
+- Migration of other Kubernetes clusters to Cloud Containers using Velero.
 
 - A set of [preconfigured addons](../addons-and-settings/addons/) which can be selected when [creating a cluster using Terraform](../../operations/create-cluster) or [install](../../operations/addons/manage-addons) into an existing cluster, saving time on their manual deployment.
 - A set of [preconfigured settings](../addons-and-settings/settings/), which help improve cluster stability and security.

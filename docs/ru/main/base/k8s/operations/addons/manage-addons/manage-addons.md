@@ -1,4 +1,4 @@
-[Аддоны](../../../concepts/addons-and-settings/addons) для кластеров Kubernetes VK Cloud можно установить и при [создании кластера с помощью Terraform](../../create-cluster/create-terraform), и в уже существующий кластер. Установленные аддоны можно просматривать и удалять.
+[Аддоны](../../../concepts/addons-and-settings/addons) для кластеров Kubernetes сервиса Cloud Containers можно установить и при [создании кластера с помощью Terraform](../../create-cluster/create-terraform), и в уже существующий кластер. Установленные аддоны можно просматривать и удалять.
 
 ## Просмотр аддонов
 

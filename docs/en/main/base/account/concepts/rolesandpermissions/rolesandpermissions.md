@@ -70,7 +70,7 @@ All operations available to specialized roles are also available to Project owne
 
 ### Virtual machine administrator
 
-A user with this role can perform basic operations in the Cloud computing service.
+A user with this role can perform basic operations in the Cloud Servers service.
 
 However, this role has only read permissions for:
 
@@ -99,7 +99,7 @@ A user with this role:
 
 ### Kubernetes administrator, operator, and auditor
 
-For detailed information about the permissions of these roles, see section [Roles for the Containers service and their permissions](#roles_for_the_containers_service_and_their_permissions).
+For detailed information about the permissions of these roles, see section [Roles for the Cloud Containers service and their permissions](#roles_for_the_containers_service_and_their_permissions).
 
 ## Roles and their permissions: the full matrix
 

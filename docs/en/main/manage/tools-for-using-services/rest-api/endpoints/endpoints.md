@@ -14,7 +14,7 @@ To see the list of endpoints for your region:
 
 ## Endpoints of the Moscow region
 
-### Cloud computing
+### Cloud Servers
 
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
@@ -47,11 +47,11 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 | Octavia           | https://public.infra.mail.ru:9876                   | Managing [load balancers](/en/networks/vnet/operations/manage-lb) |
 | Publicdns         | https://mcs.mail.ru/public-dns                      | Managing [public DNS zones](/en/networks/dns/publicdns) |
 
-### Big Data
+### Cloud Big Data
 
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
-| Sahara            | https://infra.mail.ru:8386/v1.1/<project_id>        | Managing [Big Data](/en/bigdata/hortonworks/bigdata-integrate/bigdata-api) clusters |
+| Sahara            | https://infra.mail.ru:8386/v1.1/<project_id>        | Managing [Cloud Big Data](/en/bigdata/hortonworks/bigdata-integrate/bigdata-api) clusters |
 
 ### Databases
 
@@ -63,7 +63,7 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 
 | Endpoint                            | Address                          | Purpose |
 |-------------------------------------|----------------------------------|--|
-| Домен S3                            | https://hb.ru-msk.vkcs.cloud/    | Managing [Object storage](/en/base/s3) |
+| Домен Cloud Storage                 | https://hb.ru-msk.vkcs.cloud/    | Managing [Object storage](/en/base/s3) |
 
 ### AI API
 

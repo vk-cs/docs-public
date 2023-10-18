@@ -49,9 +49,9 @@ Example text.
 
 The PUT operation adds an object to the bucket. To perform the operation, you must have WRITE rights to the bucket.
 
-VK Cloud S3 adds partial objects if the object size exceeds 50MB. If a successful response is received, then the entire object has been added to the bucket.
+Cloud Storage adds partial objects if the object size exceeds 50MB. If a successful response is received, then the entire object has been added to the bucket.
 
-When performing concurrent PUT operations and when there are identical loadable objects, S3 overwrites everything except the last written object.
+When performing concurrent PUT operations and when there are identical loadable objects, Cloud Storage overwrites everything except the last written object.
 
 To prevent data corruption while traversing the network, it is recommended to use the Content-MD5 header, which checks the object against the provided MD5 value and returns an error if it does not match. Alternatively, you can compute MD5 by placing an object in a bucket and compare the returned ETag with the computed MD5.
 

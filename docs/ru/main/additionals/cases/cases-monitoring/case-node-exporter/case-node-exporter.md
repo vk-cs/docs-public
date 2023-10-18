@@ -4,8 +4,6 @@
 
 <warn>
 
-**Внимание**
-
 При использовании серверов и оборудования других версий некоторые шаги сценария могут отличаться от описанных ниже.
 
 </warn>
@@ -40,8 +38,6 @@ root@ubuntu-basic-1-1-10gb:~# export VERSION="<версия>"
 ```
 
 <info>
-
-**Примечание**
 
 Актуальную версию Prometheus можно [найти и скачать тут](https://prometheus.io/download/).[](https://prometheus.io/download/#mysqld_exporter)
 
@@ -181,8 +177,6 @@ root@ubuntu-basic-1-1-10gb:~# export VERSION="0.18.1"
 
 <info>
 
-**Примечание**
-
 Актуальную версию node_exporter можно [найти и скачать тут](https://prometheus.io/download/) [](https://prometheus.io/download/#mysqld_exporter).
 
 </info>
@@ -269,8 +263,6 @@ static_configs:
 ```
 
 <info>
-
-**Примечание**
 
 Секция scrape_configs предназначена для описания целей и средств мониторинга. Подробно о настройках см. в [документации](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_config).
 
@@ -365,9 +357,7 @@ url: http://localhost:9090
 
 <info>
 
-**Примечание**
-
-Provisioning - новая возможность Grafana по преднастройке сервера. В данном случае мы настраиваем источник данных Prometheus в процессе установки, чтобы не делать это потом в веб-интерфейсе Grafana.
+Provisioning — новая возможность Grafana по преднастройке сервера. В данном случае мы настраиваем источник данных Prometheus в процессе установки, чтобы не делать это потом в веб-интерфейсе Grafana.
 
 </info>
 
@@ -378,8 +368,6 @@ root@ubuntu-basic-1-1-10gb:~# chown grafana:grafana /etc/grafana/provisioning/da
 ```
 
 <info>
-
-**Примечание**
 
 Мы подключили Prometheus к Grafana. Если Prometheus физически расположен на другом сервере, измените localhost на IP-адрес сервера Prometheus.
 
