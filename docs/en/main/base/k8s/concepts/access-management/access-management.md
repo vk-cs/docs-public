@@ -1,8 +1,8 @@
-Kubernetes clusters version 1.23 and higher are tightly integrated with the VK Cloud platform:
+Cloud Containers clusters version 1.23 and higher are tightly integrated with the VK Cloud platform:
 
 - Single Sign-On (SSO) technology is used.
 
-  The user logs in to the Kubernetes cluster with the same credentials as when logging in to the VK Cloud [personal account](../../../../additionals/account).
+  The user logs in to the Cloud Containers cluster with the same credentials as when logging in to the VK Cloud [personal account](../../../../additionals/account).
 
   SSO functionality cannot be disabled.
 
@@ -58,7 +58,7 @@ Role provides:
 The role does not provide:
 
 - Ability to view or change roles and role bindings.
-- Write access to Kubernetes cluster [endpoints](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#write-access-for-endpoints) version 1.22 and higher.
+- Write access to Cloud Containers cluster [endpoints](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#write-access-for-endpoints) version 1.22 and higher.
 
 </tabpanel>
 <tabpanel>
@@ -75,7 +75,7 @@ Role provides:
 The role does not provide:
 
 - Write access to the resource quota or to the namespace itself.
-- Write access to Kubernetes cluster [endpoints](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#write-access-for-endpoints) version 1.22 and higher.
+- Write access to Cloud Containers cluster [endpoints](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#write-access-for-endpoints) version 1.22 and higher.
 
 </tabpanel>
 </tabs>
@@ -83,5 +83,5 @@ The role does not provide:
 To view a list of available resources for a role, connect to the cluster and run the command:
 
 ``` bash
-kubectl describe clusterrole <role in Kubernetes>
+kubectl describe clusterrole <role in Kubernetes Cloud Containers>
 ```

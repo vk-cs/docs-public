@@ -1,11 +1,11 @@
 {
     "title": "Сеть в кластере",
-    "pageDescription": "Каждый кластер Kubernetes VK Cloud тесно интегрирован с сетевыми сервисами VK Cloud. Раздел показывает, как работает эта интеграция.",
+    "pageDescription": "Каждый кластер Cloud Containers тесно интегрирован с сетевыми сервисами VK Cloud. Раздел показывает, как работает эта интеграция.",
     "shortDescription": "Интеграция кластеров Kubernetes с сетевыми сервисами VK Cloud",
     "metaTitle": "Сеть в кластере",
     "metaDescription": "",
     "sectionTitle": "Сеть в кластере",
-    "markdown": "Каждый кластер Kubernetes VK Cloud тесно интегрирован с сетевыми сервисами VK Cloud. Раздел показывает, как работает эта интеграция.",
+    "markdown": "Каждый кластер Cloud Containers тесно интегрирован с сетевыми сервисами VK Cloud. Раздел показывает, как работает эта интеграция.",
     "icon": "",
     "infobarItems": null,
     "weight": 4,

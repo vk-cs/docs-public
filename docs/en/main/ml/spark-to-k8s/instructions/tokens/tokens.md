@@ -1,11 +1,11 @@
-Access tokens (also known as refresh tokens) are used to work with Spark clusters. Registration tokens (also known as register tokens) are used to create access tokens using the ML Platform library. The following describes how to work with tokens of both types.
+Access tokens (also known as refresh tokens) are used to work with Spark clusters. Registration tokens (also known as register tokens) are used to create access tokens using the Cloud ML Platform library. The following describes how to work with tokens of both types.
 
 ## Preparatory steps
 
-If you plan to work with tokens using the ML Platform library, follow the steps below.
+If you plan to work with tokens using the Cloud ML Platform library, follow the steps below.
 
 <details>
-<summary>Preparing the Python environment and installing the ML Platform library</summary>
+<summary>Preparing the Python environment and installing the Cloud ML Platform library</summary>
 
 1. Prepare the environment for working with Python in any way convenient for you:
 
@@ -29,7 +29,7 @@ If you plan to work with tokens using the ML Platform library, follow the steps 
    </tabpanel>
    </tabs>
 
-1. Install the ML Platform library for Python:
+1. Install the Cloud ML Platform library for Python:
 
    1. Download [the library file](https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz).
 
@@ -82,7 +82,7 @@ A list of access tokens will be displayed.
 <tabs>
 <tablist>
 <tab>Personal account</tab>
-<tab>ML Platform Library</tab>
+<tab>Cloud ML Platform Library</tab>
 </tablist>
 <tabpanel>
 
@@ -95,7 +95,7 @@ A list of access tokens will be displayed.
    - **Name**: it can be anything.
    - **Role**: one of the roles of the token.
 
-     - `User`. This role gives the right to perform operations that require authorization when working with the ML Platform library (for example, to send a task to the Spark cluster).
+     - `User`. This role gives the right to perform operations that require authorization when working with the Cloud ML Platform library (for example, to send a task to the Spark cluster).
      - `Administrator`. This role gives the same rights as the `User` role, and also gives additional rights to work with tokens.
 
 1. Click the **Create** button.
@@ -154,7 +154,7 @@ The access token created in this way is displayed in the personal account.
 
 <tabs>
 <tablist>
-<tab>ML Platform library</tab>
+<tab>Cloud ML Platform library</tab>
 </tablist>
 <tabpanel>
 
@@ -194,7 +194,7 @@ The values of these tokens are sensitive information. Take the necessary precaut
    - `refresh_ttl`: the lifetime of the access token (in the `2h` format). If you do not specify this parameter, the access token will be valid indefinitely.
    - `token_type`: the role of the access token:
 
-     - The value `MLPTokenType.USER` corresponds to the role `User`. This role gives the right to perform operations that require authorization when working with the ML Platform library (for example, to send a task to the Spark cluster).
+     - The value `MLPTokenType.USER` corresponds to the role `User`. This role gives the right to perform operations that require authorization when working with the Cloud ML Platform library (for example, to send a task to the Spark cluster).
      - The value of `MLPTokenType.ADMIN` corresponds to the role of `Administrator`. This role gives the same rights as the `User` role, and also gives additional rights to work with tokens.
 
    After executing this script, the value of the created registration access token will be output.
@@ -209,7 +209,7 @@ The values of these tokens are sensitive information. Take the necessary precaut
 <tabs>
 <tablist>
 <tab>Personal account</tab>
-<tab>ML Platform library</tab>
+<tab>Cloud ML Platform library</tab>
 </tablist>
 <tabpanel>
 

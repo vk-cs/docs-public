@@ -1,8 +1,8 @@
 ## Cluster creation
 
-The Big Data cluster is created in the web interface of the VK Cloud control panel.
+The Cloud Big Data cluster is created in the web interface of the VK Cloud control panel.
 
-In the personal account of the VK Cloud control panel, in the "Big Data" tab, there is a menu for creating a Big Data cluster.
+In the personal account of the VK Cloud control panel, in the "Big Data" tab, there is a menu for creating a Cloud Big Data cluster.
 
 ![](./assets/1601643470213-1.png)
 

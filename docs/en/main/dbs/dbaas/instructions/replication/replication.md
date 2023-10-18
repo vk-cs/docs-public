@@ -1,4 +1,4 @@
-The VK Cloud Databases service allows you to add replicas to existing databases created in the `master-replica` configuration.
+The Cloud Databases service allows you to add replicas to existing databases created in the `master-replica` configuration.
 
 1. In [personal account](https://mcs.mail.ru/app/) VK Cloud go to **Databases** → **Database Instances**.
 1. In the general list, open the database menu that was created in the `master-replica` configuration.

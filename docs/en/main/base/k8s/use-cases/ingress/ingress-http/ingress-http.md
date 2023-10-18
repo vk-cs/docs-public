@@ -146,7 +146,7 @@ To configure the load balancer:
 1. Gather the necessary data:
 
    - The names of the network and subnet where the cluster nodes reside.
-   - Names of VK Cloud's cloud computing service instances that correspond to cluster's master nodes and worker nodes.
+   - Names of Cloud Servers service instances that correspond to cluster's master nodes and worker nodes.
    - The port number that was assigned to the Ingress controller in the previous step.
 
 1. Create a balancer:
@@ -173,7 +173,7 @@ To configure the load balancer:
          1. Select **Assignment protocol** `HTTP`, set for it the **port** that was assigned to the Ingress controller.
          1. In the **Allowed CIDRs** block, click the link **+ Add address**. Enter `0.0.0.0.0/0`.
          1. Select the **Send X-Forwarded-For header** option.
-         1. In the **Apply to the following instances** block, add all VK Cloud's cloud computing service instances that correspond to the cluster master nodes and worker nodes.
+         1. In the **Apply to the following instances** block, add all Cloud Servers service instances that correspond to the cluster master nodes and worker nodes.
 
             Set the same weights for all instances equal to `1`.
 
@@ -188,7 +188,7 @@ To configure the load balancer:
          1. Select **Assignment protocol** `HTTP`, set for it the **port** that has been assigned to the Ingress controller.
          1. In the **Allowed CIDRs** block, click the link **+ Add address**. Enter `0.0.0.0.0/0`.
          1. Select the **Send X-Forwarded-For header** option.
-         1. In the **Apply to the following instances** block, add all VK Cloud's cloud computing service instances that correspond to the cluster master nodes and worker nodes.
+         1. In the **Apply to the following instances** block, add all Cloud Servers service instances that correspond to the cluster master nodes and worker nodes.
 
             Set the same weights for all instances equal to `1`.
 

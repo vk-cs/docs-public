@@ -7,7 +7,7 @@ After going through all the steps of the quickstart, you will:
 1. Become familiar with Kubernetes and [addons for it](../concepts/addons-and-settings/addons/):
    1. Connect management and monitoring tools.
    1. Load the Docker images into the Docker registry.
-   1. Deploy simple applications based on the downloaded images, with the ability to use VK Cloud storage.
+   1. Deploy simple applications based on the downloaded images, with the ability to use Cloud Storage.
    1. Provide access to the deployed applications using the Ingress controller.
    1. Make sure that these applications actually work.
 
@@ -204,7 +204,7 @@ Install the following tools on the host:
 
 ## 2. Get access to cluster monitoring tools
 
-An addon with [monitoring tools](../monitoring) was installed in the cluster based on Prometheus and Grafana have been enabled. Also [Kubernetes Dashboard](../connect/k8s-dashboard/) is available for all Kubernetes VK Cloud clusters, which allows you to not only manage the cluster, but also monitor it.
+An addon with [monitoring tools](../monitoring) was installed in the cluster based on Prometheus and Grafana have been enabled. Also [Kubernetes Dashboard](../connect/k8s-dashboard/) is available for all Cloud Containers clusters, which allows you to not only manage the cluster, but also monitor it.
 
 <tabs>
 <tablist>
@@ -783,7 +783,7 @@ K8S Persistent Volume status: present
 This result demonstrates that:
 
 1. You can run applications using Docker images from the Docker cluster registry.
-1. You can mount VK Cloud storage to pods using Persistent Volume Claim.
+1. You can mount storage to pods using Persistent Volume Claim.
 1. The Ingress controller provided with the cluster is configured correctly because it shows the real IP address of the request source.
 
 ## Control the usage of resources
