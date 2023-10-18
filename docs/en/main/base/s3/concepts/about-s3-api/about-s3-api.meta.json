@@ -1,10 +1,10 @@
 {
-    "title": "API VK Cloud S3",
+    "title": "Cloud Storage API",
     "pageDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers.",
     "shortDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers",
-    "metaTitle": "API VK Cloud S3",
+    "metaTitle": "Cloud Storage API",
     "metaDescription": "Information about the service API: compatibility with the Amazon AWS S3 API, authentication, common request headers.",
-    "sectionTitle": "API VK Cloud S3",
+    "sectionTitle": "Cloud Storage API",
     "markdown": "",
     "icon": "",
     "infobarItems": null,

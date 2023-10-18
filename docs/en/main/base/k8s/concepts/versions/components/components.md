@@ -1,10 +1,10 @@
-The supported versions of components and [addons](../../addons-and-settings/addons) depend on the version of the Kubernetes VK Cloud cluster.
+The supported versions of components and [addons](../../addons-and-settings/addons) depend on the version of the Cloud Containers cluster.
 
 When [updating a cluster](../../../operations/update), part of its components are also updated, as well the installed addons. If a component, that is to be updated with the cluster, is deleted, then it will be restored during the next cluster update.
 
 ## Components
 
-These components are present in all Kubernetes VK Cloud clusters.
+These components are present in all Cloud Containers clusters.
 
 <!-- prettier-ignore -->
 | Component                                                           | Kubernetes 1.21.4–1.22.x  | Kubernetes 1.23.x–1.25.x  | Kubernetes 1.26.x |

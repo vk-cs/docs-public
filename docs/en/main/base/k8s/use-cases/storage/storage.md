@@ -438,7 +438,7 @@ When using this type of storage:
 
 This example will create:
 
-1. NFS file storage in the VK Cloud platform's cloud computing service.
+1. NFS file storage in the Cloud Servers service.
 1. A persistent volume corresponding to this storage.
 1. Static PVC using an already created persistent volume.
 1. Application `milkshake` as a StatefulSet of two pods, as well as the corresponding services.

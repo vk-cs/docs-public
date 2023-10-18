@@ -25,7 +25,7 @@ func main() {
 	// Создание сессии
 	sess, _ := session.NewSession()
 
-	// Подключение к сервису S3
+	// Подключение к сервису Cloud Storage
 	svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	bucket := "gobucket"
@@ -92,7 +92,7 @@ func main() {
 	// Создание сессии
 	sess, _ := session.NewSession()
 
-	// Подключение к сервису S3
+	// Подключение к сервису Cloud Storage
 	svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	// Копирование объекта из одного бакета в другой
@@ -140,7 +140,7 @@ func main() {
 	// Создание сессии
 	sess, _ := session.NewSession()
 
-	// Подключение к сервису S3
+	// Подключение к сервису Cloud Storage
 	svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	bucket := "gobucket"
@@ -184,7 +184,7 @@ func main() {
 	// Создание сессии
 	sess, _ := session.NewSession()
 
-	// Подключение к сервису S3
+	// Подключение к сервису Cloud Storage
 	svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	bucket := "gobucket"
@@ -231,7 +231,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("Unable to create session, %v", err)
 	}
-	// Подключение к сервису S3
+	// Подключение к сервису Cloud Storage
 	svc := s3.New(sess, aws.NewConfig().WithEndpoint(vkCloudHotboxEndpoint).WithRegion(defaultRegion))
 
 	// Удаление объекта из бакета

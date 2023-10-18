@@ -4,7 +4,7 @@ VK Cloud [has restrictions](/en/base/account/concepts/quotasandlimits) on the si
 An error occurred (InvalidArgument) when calling the UploadPart operation: Part number must be an integer between 1 and 10000, inclusive
 ```
 
-Next, we consider downloading images larger than 500 GB through the VK Cloud object storage.
+Next, we consider downloading images larger than 500 GB through the Cloud Storage.
 
 Will be used:
 

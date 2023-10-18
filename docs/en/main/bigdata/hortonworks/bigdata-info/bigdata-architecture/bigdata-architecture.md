@@ -1,6 +1,6 @@
 ## Description
 
-Big Data or Big Data is a series of approaches, tools and methods for processing structured and unstructured data of huge volumes and significant diversity to obtain results perceived by a person and effective in conditions of continuous growth, distribution over numerous nodes of a computer network.
+Cloud Big Data is a series of approaches, tools and methods for processing structured and unstructured data of huge volumes and significant diversity to obtain results perceived by a person and effective in conditions of continuous growth, distribution over numerous nodes of a computer network.
 
 The basic principles of working with big data are as follows:
 

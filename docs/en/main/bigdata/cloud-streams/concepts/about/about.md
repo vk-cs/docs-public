@@ -1,4 +1,4 @@
-To solve the problems of stream processing of large amounts of data, VK Cloud Big Data services allow you to create Cloud Streams clusters that provide the ability to safely and efficiently manage streams in real time.
+To solve the problems of stream processing of large amounts of data, Cloud Big Data services allow you to create Cloud Streams clusters that provide the ability to safely and efficiently manage streams in real time.
 
 Cloud Streams is a fault-tolerant and scalable streaming data processing system built on Apache Kafka and Apache NiFi. The main distinguishing features of Cloud Streams include:
 

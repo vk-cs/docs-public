@@ -1,4 +1,4 @@
-Various addons (additional services) are available for Kubernetes VK Cloud clusters. They can be selected in any combination and installed either when [creating a cluster using Terraform](../../../operations/create-cluster/create-terraform), or [later](../../../operations/addons/manage-addons#installing_the_addon) in already an existing cluster. The installation process is automated and requires minimal user intervention.
+Various addons (additional services) are available for Cloud Containers clusters. They can be selected in any combination and installed either when [creating a cluster using Terraform](../../../operations/create-cluster/create-terraform), or [later](../../../operations/addons/manage-addons#installing_the_addon) in already an existing cluster. The installation process is automated and requires minimal user intervention.
 
 ## Features of installing addons
 
@@ -102,7 +102,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
 [Ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress/) based on [NGINX](https://docs.nginx.com/nginx-ingress-controller/intro/overview/) works as a reverse proxy and allows to organize single entry point for services in cluster which work via HTTP or HTTPS.
 
-If you have a controller, it is sufficient to create [Ingress resource](https://kubernetes.io/docs/concepts/services-networking/ingress/) to make such services available from outside the Kubernetes cluster.
+If you have a controller, it is sufficient to create [Ingress resource](https://kubernetes.io/docs/concepts/services-networking/ingress/) to make such services available from outside the Cloud Containers cluster.
 
 The pre-installed Ingress controller integrates tightly with the VK Cloud platform. For more information, see [Network in cluster](../../network/).
 

@@ -2,7 +2,7 @@ The data storage system on the VK Cloud platform is organized using network driv
 
 ## Creating a disk
 
-Creating HDD and SSD drives is available by default in all configurations. To create LL NVME discs [contact technical support](/en/contacts) and request access to [high-performance configurations](../../concepts/vm-concept#cpu_and_ram) and disks. Learn more about [disk types](../../concepts/vm-concept#disks) — to the article [VK Cloud Servers overview](../../concepts/vm-concept/).
+Creating HDD and SSD drives is available by default in all configurations. To create LL NVME discs [contact technical support](/en/contacts) and request access to [high-performance configurations](../../concepts/vm-concept#cpu_and_ram) and disks. Learn more about [disk types](../../concepts/vm-concept#disks) — to the article [Cloud Servers overview](../../concepts/vm-concept/).
 
 <tabs>
 <tablist>
@@ -231,7 +231,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
 ## Changing the disk type
 
-Creating HDD and SSD drives is available by default in all configurations. To use LL NVME discs [contact technical support](/en/contacts) and request access to [high-performance configurations](../../concepts/vm-concept#cpu_and_ram) and disks. Learn more about [disk types](../../concepts/vm-concept#disks) — to the article [VK Cloud Servers overview](../../concepts/vm-concept/).
+Creating HDD and SSD drives is available by default in all configurations. To use LL NVME discs [contact technical support](/en/contacts) and request access to [high-performance configurations](../../concepts/vm-concept#cpu_and_ram) and disks. Learn more about [disk types](../../concepts/vm-concept#disks) — to the article [Cloud Servers overview](../../concepts/vm-concept/).
 
 <tabs>
 

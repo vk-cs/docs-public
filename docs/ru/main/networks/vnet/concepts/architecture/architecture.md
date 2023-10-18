@@ -1,6 +1,6 @@
 ## Чем оперирует сервис
 
-Сервис виртуальных сетей состоит из двух слоев:
+Сервис Cloud Networks состоит из двух слоев:
 
 1. [Программно-определяемая сеть](https://ru.wikipedia.org/wiki/Программно-определяемая_сеть) (software-defined network, SDN).
 1. [Виртуализованные сетевые функции](https://ru.wikipedia.org/wiki/Виртуализация_сетевых_функций) (Network Function Virtualization, NFV).

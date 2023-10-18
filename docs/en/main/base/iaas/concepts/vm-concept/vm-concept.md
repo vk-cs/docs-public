@@ -1,4 +1,4 @@
-VK Cloud Servers is a cloud computing service for managing virtual machines on the VK Cloud.
+Cloud Servers is a cloud computing service for managing virtual machines on the VK Cloud.
 
 ## Virtual machines
 
@@ -188,7 +188,7 @@ The image downloaded from the file can be used for VM migration or to create a v
 
 <info>
 
-VK Cloud Servers supports images in the `raw` format.
+Cloud Servers supports images in the `raw` format.
 
 </info>
 

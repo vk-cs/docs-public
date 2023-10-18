@@ -1,11 +1,10 @@
 {
-  "title": "Резервное копирование",
-  "pageDescription": "Особенности работы сервисов резервного копирования в VK Cloud.",
-  "shortDescription": "Особенности работы сервисов резервного копирования",
-  "metaTitle": "Резервное копирование",
-  "metaDescription": "Концепции резервного копирования",
-  "sectionTitle": "Резервное копирование",
-  "markdown": "Особенности работы резервного копирования в VK Cloud.",
+  "title": "Cloud Backup",
+  "pageDescription": "Резервное копирование виртуальных машин и баз данных в VK Cloud через сервис Cloud Backup.",
+  "shortDescription": "Резервное копирование виртуальных машин, инстансов баз данных",
+  "metaTitle": "Cloud Backup",
+  "metaDescription": "Cloud Backup VK Cloud: резервное копирование виртуальных машин, баз данных",
+  "sectionTitle": "Cloud Backup",
   "icon": "",
   "infobarItems": [
     {

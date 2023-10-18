@@ -5,7 +5,7 @@ Various types of disks are used in the data storage system on the VK Cloud platf
 - High-IOPS SSD;
 - Low Latency NVME.
 
-Read more in the article [VK Cloud Servers overview](../vm-concept#disks).
+Read more in the article [Cloud Servers overview](../vm-concept#disks).
 
 Certain performance characteristics are guaranteed for each type of disk.
 

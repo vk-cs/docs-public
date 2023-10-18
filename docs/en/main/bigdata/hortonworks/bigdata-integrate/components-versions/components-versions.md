@@ -4,7 +4,7 @@ VK Cloud Hadoop is based on the Hortonworks Data Platform (HDP) version 3.1. HDP
 
 ## Templates and versions
 
-Within the VK Cloud Big Data service, Hadoop templates of versions 2.6 and 3.1 are available.
+Within the Cloud Big Data service, Hadoop templates of versions 2.6 and 3.1 are available.
 
 Below are the component versions according to the specified templates:
 

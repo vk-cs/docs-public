@@ -1,10 +1,10 @@
 {
-  "title": "[Deprecated] Сервис очередей сообщений",
+  "title": "[Deprecated] Cloud Queues",
   "pageDescription": "Полностью управляемый сервис управления очередями сообщений. Совместимый с Amazon SQS API.",
   "shortDescription": "Полностью управляемый сервис управления очередями сообщений. Совместимый с Amazon SQS API",
-  "metaTitle": "[Deprecated] Сервис очередей сообщений",
+  "metaTitle": "[Deprecated] Cloud Queues",
   "metaDescription": "Полностью управляемый сервис управления очередями сообщений. Совместимый с Amazon SQS API.",
-  "sectionTitle": "[Deprecated] Сервис очередей сообщений",
+  "sectionTitle": "[Deprecated] Cloud Queues",
   "markdown": "Полностью управляемый сервис управления очередями сообщений. Совместимый с Amazon SQS API.<br><err>Работа сервиса в VK Cloud будет прекращена с 05.12.2023.</err>",
   "icon": "",
   "weight": 5,

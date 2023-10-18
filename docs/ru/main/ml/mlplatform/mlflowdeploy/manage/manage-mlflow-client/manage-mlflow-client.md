@@ -54,7 +54,7 @@ print("Имя модели: ", cli.search_registered_models()[0].latest_versions
 print("URI модели: ", model_source_uri)
 ```
 
-Создайте Client из Deployments модуля MLflow для работы в VK Cloud ML Platform:
+Создайте Client из Deployments модуля MLflow для работы в Cloud ML Platform:
 
 ```python
 from mlflow.deployments import get_deploy_client

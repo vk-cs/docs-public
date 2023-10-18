@@ -1,6 +1,6 @@
 ## Для каких задач подходит сервис
 
-Сервис контейнеров позволяет создавать кластеры Kubernetes и запускать в них различные сервисы и приложения. Доступны все привычные инструменты для Kubernetes, например:
+Сервис Cloud Containers позволяет создавать кластеры Kubernetes и запускать в них различные сервисы и приложения. Доступны все привычные инструменты для Kubernetes, например:
 
 - Хранение и обработка serverless-функций в контейнерах: OpenFaaS, OpenWhisk, Kubeless.
 - Service Mesh: Istio, Consul, Linkerd.
@@ -52,9 +52,9 @@
   - Можно применять [ограничительные политики](../architecture#vstroennaya_podderzhka_open_policy_agent) ([constraint policies](https://open-policy-agent.github.io/gatekeeper/website/docs/howto)) Gatekeeper.
   - Доступна интеграция [ролевой модели безопасности Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) с ролями платформы VK Cloud. Подробнее читайте в разделе [Управление доступом](../../concepts/access-management).
 
-- [Резервное копирование](../../use-cases/velero-backup) кластеров Kubernetes VK Cloud с помощью Velero.
+- [Резервное копирование](../../use-cases/velero-backup) кластеров Cloud Containers с помощью Velero.
 
-- Миграция других кластеров Kubernetes в Kubernetes VK Cloud с помощью Velero.
+- Миграция других кластеров Kubernetes в Cloud Containers с помощью Velero.
 
 - Набор [подготовленных аддонов](../addons-and-settings/addons/), которые можно выбрать при [создании кластера с помощью Terraform](../../operations/create-cluster) или [установить](../../operations/addons/manage-addons) в уже существующий кластер, сэкономив время на их развертывании вручную.
 - Набор [подготовленных настроек](../addons-and-settings/settings/), которые помогут повысить стабильность и безопасность работы кластера.
