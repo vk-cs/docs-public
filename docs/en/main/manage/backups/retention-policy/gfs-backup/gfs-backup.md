@@ -43,6 +43,6 @@ No. In the current implementation of GFS, backups have unique tags "weekly", "mo
 
 Two. The current year also counts.
 
-### Why is Weekly Backup a mandatory field?
+### Why is Weekly backup a mandatory field?
 
 Architectural requirement. This is necessary for the correct labeling of backups when applying the retention policy.

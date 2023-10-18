@@ -8,7 +8,7 @@
 - Improve your application's Observability: Set up end-to-end application monitoring from the infrastructure and operating system level down to the application itself to accurately and quickly identify problems and bottlenecks in the application (more information can be found on the page [What is Observability](https://www.dynatrace.com/news/blog/what-is-observability-2/)).
 - Fault tolerance of virtual infrastructure instances (virtual machines, disks, networks) is already implemented at the platform level. It makes no sense to independently increase the fault tolerance of a virtual infrastructure using the methods used in the physical infrastructure.
 - Use domain names to communicate between your application nodes. This way you won't be tied to IP addresses.
-- Use S3 storage for long-term storage of large amounts of information or static content ([Cloud Storage](/en/base/s3) or [Cloud Data Platform](/en/bigdata/hortonworks) services).
+- Use storage for long-term storage of large amounts of information or static content ([Cloud Storage](/en/base/s3) or [Cloud Data Platform](/en/bigdata/hortonworks) services).
 - For your application components deployed in [Kubernetes](/en/base/k8s/operations/scale), configure autoscaling. This will ensure that the necessary computing resources are provided during periods of increased load on the application.
 - When developing applications, apply The Twelve-Factor App methodology (for more information, see [12Factor](https://12factor.net/)).
 - Examine the documentation for the functionality, capabilities and limitations of the cloud provider.

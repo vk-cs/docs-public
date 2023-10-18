@@ -1,6 +1,6 @@
 ## Концепции
 
-Сервис мониторинга VK Cloud состоит из нескольких частей:
+Сервис Cloud Monitoring состоит из нескольких частей:
 
 1.  Масштабируемый API по приему метрик
 2.  Распределенное хранилище метрик
@@ -11,11 +11,11 @@
 
 ## Namespaces
 
-Каждый сервис пишет данные в свой namespace. Стандартные имена Namespace,формируемые сервисами VK Cloud, выглядят как “mcs/servicename”. Если необходимо писать кастомные метрики, то название Namespace не должно начинаться с “mcs/”.
+Каждый сервис пишет данные в свой namespace. Стандартные имена Namespace, формируемые сервисами VK Cloud, выглядят как `mcs/servicename`. Если необходимо писать кастомные метрики, то название Namespace не должно начинаться с `mcs/`.
 
 #### Таблица стандартных Namespace
 
-<table><tbody><tr><td style="background-color: rgb(209, 213, 216);"><p><strong>Название сервиса</strong></p></td><td style="background-color: rgb(209, 213, 216);"><p><strong>Название Namespace</strong></p></td></tr><tr><td>Облачные вычисления</td><td>mcs/vm</td></tr><tr><td>Виртуальные сети</td><td>mcs/network</td></tr><tr><td>Объектное хранилище</td><td>mcs/cloudstorage</td></tr><tr><td>Контейнеры</td><td>mcs/containers</td></tr><tr><td>Базы данных</td><td>mcs/databases</td></tr><tr><td>Большие данные</td><td>mcs/bigdata</td></tr><tr><td>SQS</td><td>mcs/managedqueue</td></tr><tr><td>Marketplace</td><td>mcs/marketplace</td></tr><tr><td>CDN</td><td>mcs/cdn</td></tr><tr><td>Аналитические БД</td><td>mcs/dwh</td></tr><tr><td>IoT</td><td>mcs/iot</td></tr><tr><td>Monitoring</td><td>mcs/monitoring</td></tr></tbody></table>
+<table><tbody><tr><td style="background-color: rgb(209, 213, 216);"><p><strong>Название сервиса</strong></p></td><td style="background-color: rgb(209, 213, 216);"><p><strong>Название Namespace</strong></p></td></tr><tr><td>Cloud Servers</td><td>mcs/vm</td></tr><tr><td>Cloud Networks</td><td>mcs/network</td></tr><tr><td>Cloud Storage</td><td>mcs/cloudstorage</td></tr><tr><td>Cloud Containers</td><td>mcs/containers</td></tr><tr><td>Cloud Databases</td><td>mcs/databases</td></tr><tr><td>Cloud Big Data</td><td>mcs/bigdata</td></tr><tr><td>SQS</td><td>mcs/managedqueue</td></tr><tr><td>Marketplace</td><td>mcs/marketplace</td></tr><tr><td>CDN</td><td>mcs/cdn</td></tr><tr><td>Arenadata DB as a Service</td><td>mcs/dwh</td></tr><tr><td>Cloud Monitoring</td><td>mcs/monitoring</td></tr></tbody></table>
 
 ## Метки (Labels)
 
@@ -23,7 +23,7 @@
 
 Для каждой метрики, которая отправляется в хранилище можно указать произвольный набор пар “ключ-значение” (labels). Например, вы вместе со значением метрики cpu_total хотите передать имя хоста виртуальной машины и название availability zone, в которой она находится, тогда вам необходимо заполнить значения для меток ‘host’ и ‘availability_zone’.
 
-Переданные метки и их значения сохраняются в базу данных VK Cloud Monitoring. Значения одной и той же метрики автоматически агрегируются с точностью до периодов 1 минута, 5 минут, 1 час. Агрегирование происходит по всем полям labels, с которыми была сохранено значение метрики
+Переданные метки и их значения сохраняются в базу данных Cloud Monitoring. Значения одной и той же метрики автоматически агрегируются с точностью до периодов 1 минута, 5 минут, 1 час. Агрегирование происходит по всем полям labels, с которыми была сохранено значение метрики
 
 Далее ключи и значения меток можно использовать для построения запросов, которые фильтруют и группируют значения метрик. Например, можно построить такой запрос в формате ala PromQL:
 
@@ -37,7 +37,7 @@ SUM BY(job) (cpu:Average{host="<"span >"server1", job!="<"span >"system"}[12h] o
 
 ## Агрегация
 
-1.  VK Cloud Monitoring автоматически агрегирует значения метрик по интервалам 1 минута, 5 минут, 1 час
+1.  Cloud Monitoring автоматически агрегирует значения метрик по интервалам 1 минута, 5 минут, 1 час
 2.  Сырые значения метрик автоматически удаляются после агрегации
 3.  Из коробки поддерживаются следующие функции агрегации:
     1.  Минимум
@@ -49,8 +49,8 @@ SUM BY(job) (cpu:Average{host="<"span >"server1", job!="<"span >"system"}[12h] o
 
 ## Единицы измерения
 
-В VK Cloud Monitoring есть стандартные единицы измерений, которые можно передавать и по которым агрегировать:
+В Cloud Monitoring есть стандартные единицы измерений, которые можно передавать и по которым агрегировать:
 
 Seconds | Microseconds | Milliseconds | Bytes | Kilobytes | Megabytes | Gigabytes | Terabytes | Bits | Kilobits | Megabits | Gigabits | Terabits | Percent | Count | Bytes/Second | Kilobytes/Second | Megabytes/Second | Gigabytes/Second | Terabytes/Second | Bits/Second | Kilobits/Second | Megabits/Second | Gigabits/Second | Terabits/Second | Count/Second | None
 
-Если не указана единица измерений, то подразумевается None.
+Если не указана единица измерений, то подразумевается `None`.

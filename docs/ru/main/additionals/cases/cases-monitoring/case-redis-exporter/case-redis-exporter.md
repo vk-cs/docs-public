@@ -8,8 +8,6 @@
 
 <warn>
 
-**Внимание**
-
 При использовании серверов и оборудования других версий некоторые шаги сценария могут отличаться, от описанных ниже.
 
 </warn>
@@ -30,8 +28,6 @@ root@redis:~# export VERSION="<версия>"
 ```
 
 <info>
-
-**Примечание**
 
 Актуальную версию redis_exporter можно [найти и скачать тут](https://github.com/oliver006/redis_exporter/releases) [или тут](https://prometheus.io/download/#mysqld_exporter).
 

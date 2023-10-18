@@ -14,7 +14,7 @@
 
 ## Эндпоинты региона Москва
 
-### Облачные вычисления
+### Cloud Servers
 
 | Эндпоинт                            | Адрес                   | Назначение |
 |-------------------------------------|-------------------------|-----------------|
@@ -26,20 +26,20 @@
 
 <info>
 
-В личном кабинете не отражен эндпоинт Cloudlogs (https://mcs.mail.ru/cloudlogs/v1/logs) — он позволяет [собирать логи ВМ](/ru/additionals/api/logging).
+В личном кабинете не отражен эндпоинт Cloud Logging (https://mcs.mail.ru/cloudlogs/v1/logs) — он позволяет [собирать логи ВМ](/ru/additionals/api/logging).
 
 </info>
 
 <details><summary>Остальные эндпоинты</summary>
 
-### Контейнеры
+### Cloud Containers
 
 | Эндпоинт                            | Адрес                   | Назначение |
 |-------------------------------------|-------------------------|-----------------|
-| Magnum            | https://infra.mail.ru:9511/v1                       | Управление [контейнерами](/ru/base/k8s) |
-| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Управление [аддонами](/ru/base/k8s/operations/addons) контейнеров |
+| Magnum            | https://infra.mail.ru:9511/v1                       | Управление контейнерами [Cloud Containers](/ru/base/k8s) |
+| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Управление [аддонами](/ru/base/k8s/operations/addons) сервиса Cloud Containers |
 
-### Виртуальные сети
+### Cloud Networks
 
 | Эндпоинт                            | Адрес                   | Назначение |
 |-------------------------------------|-------------------------|-----------------|
@@ -47,23 +47,23 @@
 | Octavia           | https://public.infra.mail.ru:9876                   | Управление [балансировщиками нагрузки](/ru/networks/vnet/operations/manage-lb) |
 | Publicdns         | https://mcs.mail.ru/public-dns                      | Управление публичными [DNS-зонами](/ru/networks/dns/publicdns) |
 
-### Большие данные
+### Cloud Big Data
 
 | Эндпоинт                            | Адрес                   | Назначение |
 |-------------------------------------|-------------------------|-----------------|
 | Sahara            | https://infra.mail.ru:8386/v1.1/<project_id>        | Управление кластерами [больших данных](/ru/additionals/api/bigdata-api) |
 
-### Базы данных
+### Cloud Databases
 
 | Эндпоинт                            | Адрес                   | Назначение |
 |-------------------------------------|-------------------------|-----------------|
 | Trove             | https://infra.mail.ru:8779/v1.0/<project_id>        | Управление [базами данных](/ru/dbs/dbaas) |
 
-### Объектное хранилище (S3)
+### Cloud Storage
 
 | Эндпоинт                            | Адрес                            | Назначение |
 |-------------------------------------|----------------------------------| -----------------|
-| Домен S3                            | https://hb.ru-msk.vkcs.cloud/    | Управление [объектным хранилищем](/ru/additionals/api/s3-rest-api) |
+| Домен S3                            | https://hb.ru-msk.vkcs.cloud/    | Управление [Cloud Storage](/ru/additionals/api/s3-rest-api) |
 
 ### AI API
 

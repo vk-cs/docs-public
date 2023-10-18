@@ -1,4 +1,4 @@
-[Addons](../../../concepts/addons-and-settings/addons) for Kubernetes VK Cloud clusters, you can also install it when [creating a cluster using Terraform](../../create-cluster/create-terraform) and into an existing cluster. Installed addons can be viewed and deleted.
+[Addons](../../../concepts/addons-and-settings/addons) for Cloud Containers clusters, you can also install it when [creating a cluster using Terraform](../../create-cluster/create-terraform) and into an existing cluster. Installed addons can be viewed and deleted.
 
 ## Viewing addons
 

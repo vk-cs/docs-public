@@ -1,4 +1,4 @@
-The virtual networks service allows to work with several network types.
+Cloud Networks service allows to work with several network types.
 
 ## Standard network
 

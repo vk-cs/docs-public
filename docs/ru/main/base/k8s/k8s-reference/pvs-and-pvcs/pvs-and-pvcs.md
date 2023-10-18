@@ -35,7 +35,7 @@
 
 Для динамической подготовки необходимо выполнение двух условий:
 
-- В кластере Kubernetes должны быть настроены классы хранения (storage classes). Кластеры Kubernetes VK Cloud уже содержат [преднастроенные классы хранения](../../concepts/storage#prednastroennye_klassy_hraneniya).
+- В кластере Kubernetes должны быть настроены классы хранения (storage classes). Кластеры Cloud Containers уже содержат [преднастроенные классы хранения](../../concepts/storage#prednastroennye_klassy_hraneniya).
 
 - Для PVC не должно быть найдено подходящих PV, которые уже существуют.
 
@@ -44,7 +44,7 @@
 - класс хранения, явно заданный в PVC;
 - класс хранения по умолчанию, если класс не задан в PVC явно.
 
-В кластерах Kubernetes VK Cloud класс хранения по умолчанию [не настроен](../../concepts/storage#prednastroennye_klassy_hraneniya). Если вы не планируете явно задавать класс хранения в PVC, то перед созданием PVC [выберите вручную класс хранения по умолчанию](https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/).
+В кластерах Cloud Containers класс хранения по умолчанию [не настроен](../../concepts/storage#prednastroennye_klassy_hraneniya). Если вы не планируете явно задавать класс хранения в PVC, то перед созданием PVC [выберите вручную класс хранения по умолчанию](https://kubernetes.io/docs/tasks/administer-cluster/change-default-storage-class/).
 
 ### 2. Связывание
 
@@ -110,11 +110,11 @@
 
   </warn>
 
-В кластерах Kubernetes VK Cloud выбранный тип хранилища влияет на [доступные политики освобождения](../../concepts/storage#dostupnye_politiki_osvobozhdeniya_postoyannyh_tomov).
+В кластерах Cloud Containers выбранный тип хранилища влияет на [доступные политики освобождения](../../concepts/storage#dostupnye_politiki_osvobozhdeniya_postoyannyh_tomov).
 
 ## Смотрите также
 
-- [Как устроено хранилище в Kubernetes VK Cloud](../../concepts/storage).
+- [Как устроено хранилище в Cloud Containers](../../concepts/storage).
 - [Список преднастроенных классов хранения](../../concepts/storage#prednastroennye_klassy_hraneniya).
 - [Сценарий использования](../../use-cases/storage), демонстрирующий использование различных PVC.
 - [Официальную документацию Kubernetes](https://kubernetes.io/docs/concepts/storage/persistent-volumes) с более подробной информацией про PVC и PV.

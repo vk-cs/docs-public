@@ -1,7 +1,7 @@
 {
     "title": "SDK",
     "pageDescription": "Подключение к S3-совместимому объектному хранилищу VK Cloud с помощью SDK.",
-    "shortDescription": "Connecting to object storage using the SDK",
+    "shortDescription": "Подключение к объектному хранилищу Cloud Storage через SDK",
     "metaTitle": "SDK",
     "metaDescription": "Подключение к S3-совместимому объектному хранилищу VK Cloud с помощью SDK",
     "sectionTitle": "SDK",

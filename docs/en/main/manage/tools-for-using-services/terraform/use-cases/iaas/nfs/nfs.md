@@ -39,7 +39,7 @@ To create NFS, you need the following objects:
 
     - **share_id** is the UUID of the share that you have been granted access to.
     - **access_type** — Access rule type. Can be either ip, user, cert, or cephx.
-    - **access_to** — Value specifying access. This can be either an IP address or a username verified by the configured Public Network security service.
+    - **access_to** — Value specifying access. This can be either an IP address or a username verified by the configured Cloud Networks security service.
     - **access_level** — Level of access to the shared resource. Can be either `rw` for read-write access or `ro` for read-only access.
 
 Example `nfs.tf` file:

@@ -1,7 +1,7 @@
 <warn>
 
 - [Масштабирование](../../concepts/architecture/) можно выполнить только когда кластер запущен.
-- Перед выполнением масштабирования из Terraform ознакомьтесь с информацией в разделе [Использование Terraform](../helpers/terraform-howto#osobennosti_ispolzovaniya_terraform_dlya_upravleniya_servisom_konteynerov).
+- Перед выполнением масштабирования из Terraform ознакомьтесь с информацией в разделе [Использование Terraform](../helpers/terraform-howto#osobennosti_ispolzovaniya_terraform_dlya_upravleniya_servisom_cloud_containers).
 
 </warn>
 

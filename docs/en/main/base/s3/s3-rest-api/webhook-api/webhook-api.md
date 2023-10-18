@@ -1,4 +1,4 @@
-Webhooks for S3 is the ability to configure sending HTTP / S requests on events for a bucket using an API. For example, you can:
+Webhooks for Cloud Storage is the ability to configure sending HTTP / S requests on events for a bucket using an API. For example, you can:
 
 - configure processing and converting files after upload
 - integrate with any external systems

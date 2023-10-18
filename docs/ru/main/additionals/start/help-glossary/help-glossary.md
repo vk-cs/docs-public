@@ -2,7 +2,7 @@
 
 Больше терминов можно найти в соответствующем разделе:
 
-- [Облачные вычисления](/ru/base/iaas/concepts/vm-concept).
+- [Cloud Servers](/ru/base/iaas/concepts/vm-concept).
 - [Виртуальные сети](/ru/networks/vnet/concepts).
 - [Контейнеры](/ru/base/k8s/k8s-reference).
 

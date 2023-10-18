@@ -17,7 +17,7 @@ To download a single object, you can use the options menu of the selected object
 
 <warn>
 
-Downloading directories in a bucket is only possible through the S3 CLI, S3 API, or S3-compatible graphical file managers.
+Downloading directories in a bucket is only possible through the AWS CLI, S3 API, or S3-compatible graphical file managers.
 
 </warn>
 

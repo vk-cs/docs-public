@@ -3,7 +3,7 @@
     "pageDescription": "",
     "shortDescription": "",
     "metaTitle": "CORS",
-    "metaDescription": "Сервис объектное хранилище VK Cloud позволяет управлять конфигурацией CORS бакета. Для загрузки конфигурации CORS необходимо сформировать XML-документ. Перечень",
+    "metaDescription": "Сервис Cloud Storage позволяет управлять конфигурацией CORS бакета. Для загрузки конфигурации CORS необходимо сформировать XML-документ. Перечень",
     "sectionTitle": "CORS",
     "markdown": "",
     "icon": "",
