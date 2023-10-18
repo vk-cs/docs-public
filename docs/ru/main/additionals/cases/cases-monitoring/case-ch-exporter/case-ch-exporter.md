@@ -8,8 +8,6 @@
 
 <warn>
 
-**Внимание**
-
 При использовании серверов и оборудования других версий некоторые шаги сценария могут отличаться от описанных ниже.
 
 </warn>
@@ -90,8 +88,6 @@ root@clickhouse:~# chown -R prometheus:prometheus /usr/local/bin/clickhouse_expo
 
 <info>
 
-**Примечание**
-
 Данный конфигурационный файл описывает пользователя Clickhouse с логином web и паролем web, с доступом только на чтение базы test и с разрешением на подключение только с localhost. Это необходимо для мониторинга.
 
 </info>
@@ -124,8 +120,6 @@ root@clickhouse:~# systemctl restart clickhouse-server
     ```
 
 <warn>
-
-**Внимание**
 
 Адрес и порт (9116), используемые clickhouse_exporter, должны быть доступны с сервера Prometheus. Если порт недоступен, возможно, вам потребуется изменить настройки firewall на сервере с clickhouse_exporter.
 
@@ -221,8 +215,6 @@ root@clickhouse:/usr/share/clickhouse-test/performance# clickhouse performance-t
 ```
 
 <info>
-
-**Примечание**
 
 Выполнение всех тестов занимает продолжительное время.
 

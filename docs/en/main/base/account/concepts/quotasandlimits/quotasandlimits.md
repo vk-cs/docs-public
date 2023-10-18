@@ -21,7 +21,7 @@ Technical limits are the limitations of the platform due to the features of the 
 
 Some of the limits are strict, they cannot be exceeded physically. For example, the limit on [4 GPUs per instance](#virtual_machines_9c2b1861) is related to the limitation of KVM technology, which does not allow connecting more than 4 video cards to one virtual machine.
 
-Other limits are not related to physical limitations and are based on the operational requirements of the services. For example, [network restrictions](#networks_neutron_af1ca443) are introduced to ensure optimal network performance and stable operation.
+Other limits are not related to physical limitations and are based on the operational requirements of the services. For example, [network restrictions](#cloud_networks_neutron_5bc6daf2) are introduced to ensure optimal network performance and stable operation.
 
 There are no corresponding quotas for some technical limits.
 
@@ -70,9 +70,9 @@ Limits on the number of processors (vCPU and High-Freq vCPU) and RAM are associa
 
 The limit on 4 GPUs per instance is related to the limitation of KVM technology, which does not allow connecting more than 4 video cards to one virtual machine.
 
-### Containers (Kubernetes)
+### Cloud Containers
 
-There are no quotas for the Containers (Kubernetes) service. The use of this service is limited only by technical limits.
+There are no quotas for the Cloud Containers service. The use of this service is limited only by technical limits.
 
 | Parameter                                         | Limit              | Hard |
 |--------------------------------------------------|--------------------|---------|
@@ -142,7 +142,7 @@ The limit on the number of disks snapshots (200 pcs.) can be exceeded by contact
 
 Quota for the number of file storage networks (**NFS / CIFS file storage networks**) is a quota for internal use.
 
-### Networks (Neutron)
+### Cloud Networks (Neutron)
 
 The limits in this section are determined by the requirements of operation, they are used to ensure the stable operation of networks. It is not recommended to request quotas exceeding the corresponding limits via [technical support](/en/contacts).
 
@@ -171,7 +171,7 @@ You can exceed the limit on the number of balancing rules per load balancer (10 
 
 The quota **Neutron balancers**, which is displayed in VK Cloud personal account, is not used.
 
-### Backup
+### Cloud Backup
 
 | Parameter                                      | Quota | Basic quota  | Limit | Hard |
 |-----------------------------------------------|---------------------------------|--------------------|--|--|
@@ -182,9 +182,9 @@ The quota **Neutron balancers**, which is displayed in VK Cloud personal account
 
 The limit on the backup size (320 TB) is due to the limit on the file size in the Object Storage service (S3), this service is used to store backups. This limit can be [increased](../../instructions/project-settings/manage#increasing_project_quotas) by contacting technical support.
 
-### Object storage (S3)
+### Cloud Storage
 
-There are no quotas for the Object storage (S3) service. The use of these services is limited only by technical limits.
+There are no quotas for the Cloud Storage service. The use of these services is limited only by technical limits.
 
 | Parameter          | Limit    | Comment | Hard |
 |-------------------|----------------------------------------------------------|--|--|

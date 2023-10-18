@@ -7,7 +7,7 @@
 
    Если вы хотите увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
 
-1. Ознакомьтесь с [особенностями использования Terraform](/ru/base/k8s/operations/helpers/terraform-howto) в сервисе контейнеров.
+1. Ознакомьтесь с [особенностями использования Terraform](/ru/base/k8s/operations/helpers/terraform-howto) в сервисе Cloud Containers.
 
 1. [Установите Terraform и настройте провайдер](../../../quick-start), если этого еще не сделано.
 

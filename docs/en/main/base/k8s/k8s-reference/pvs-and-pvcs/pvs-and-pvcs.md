@@ -35,7 +35,7 @@ A PV must be prepared prior to requesting the PV via PVC. It can be done in one 
 
 For dynamic provisioning, two conditions must be met:
 
-- Storage classes must be configured in the Kubernetes cluster. Kubernetes VK Cloud clusters already contain [pre-configured storage classes](../../concepts/storage#pre_configured_storage_classes).
+- Storage classes must be configured in the Kubernetes cluster. Cloud Containers clusters already contain [pre-configured storage classes](../../concepts/storage#pre_configured_storage_classes).
 
 - For PVCs, no suitable PVs shall be found that already exist.
 
@@ -114,7 +114,7 @@ In VK Cloud Kubernetes clusters, the storage type selected affects [available re
 
 ## See also
 
-- [How storage is organized in Kubernetes VK Cloud](../../concepts/storage).
+- [How storage is organized in Cloud Containers](../../concepts/storage).
 - [List of pre-configured storage classes](../../concepts/storage#pre_configured_storage_classes).
 - [Use-case](../../use-cases/storage) that demonstrates using of various PVCs.
 - [Official Kubernetes documentation](https://kubernetes.io/docs/concepts/storage/persistent-volumes) for more information about PVCs and PVs.

@@ -6,7 +6,7 @@ CoreDNS also [exports metrics](https://coredns.io/plugins/metrics/) to Prometheu
 
 ## Working with Container Network Interface (CNI)
 
-Kubernetes clusters use [Calico](https://projectcalico.docs.tigera.io/about/about-calico) to organize the intra-cluster network. Calico communicates with the VK Cloud platform using the OpenStack Neutron API. The platform itself uses a software-defined network [Neutron](https://wiki.openstack.org/wiki/Neutron).
+Cloud Containers clusters use [Calico](https://projectcalico.docs.tigera.io/about/about-calico) to organize the intra-cluster network. Calico communicates with the VK Cloud platform using the OpenStack Neutron API. The platform itself uses a software-defined network [Neutron](https://wiki.openstack.org/wiki/Neutron).
 
 When using OpenStack Neutron in large cloud networks (about tens of thousands of network ports per network), there are problems with convergence speed if at least a few network members fail. Synchronization of topology changes in a network of this size takes a long time, which negatively affects its performance.
 
@@ -20,7 +20,7 @@ Sprut is in the beta testing phase. Contact [technical support](../../../../../c
 
 ## Integration with load balancers
 
-Kubernetes cluster integrates with the load balancers of the VK Cloud platform. This applies to both regular Kubernetes load balancers (`LoadBalancer`) and Ingress controllers (`IngressController`): both will have a dedicated VK Cloud TCP balancer attached to them both when created. This also applies to the Ingress controller, which is installed as an [addon](../addons-and-settings/addons/).
+Cloud Containers cluster integrates with the load balancers of the VK Cloud platform. This applies to both regular Kubernetes load balancers (`LoadBalancer`) and Ingress controllers (`IngressController`): both will have a dedicated VK Cloud TCP balancer attached to them both when created. This also applies to the Ingress controller, which is installed as an [addon](../addons-and-settings/addons/).
 
 If necessary, you can use the HTTP load balancer. See [example for Ingress controller](../../use-cases/ingress/ingress-http) for details.
 

@@ -124,7 +124,7 @@ When you enter this command, the AWS command-line interface asks for four pieces
 
 - **Access Key ID** - the received key ID data is used when adding an account;
 - **Secret access key** - the received secret key data is used when adding an account;
-- **AWS region** – S3 service location region, by default it is ru-msk;
+- **AWS region** – Cloud Storage service location region, by default it is `ru-msk`;
 - **Output format** - defines how to format the output of the command used. If the output format is not specified, it will use JSON by default. Available options: JSON, YAML, text, and table.
 
 An example of an AWS CLI configuration command looks like this:

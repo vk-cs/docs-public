@@ -4,12 +4,12 @@
 
 ## Используется ли защита от DDoS (Anti-DDoS) и веб-файервол (Web Application Firewall, WAF)?
 
-Да, используется. Подробнее об этих специальных сервисах в разделе [Firewall и защита от DDoS](/ru/additionals/special/firewall-and-protection-ddos).
+Да, используется. Подробнее об этих специальных сервисах в разделе [WAF и AntiDDoS](/ru/additionals/special/firewall-and-protection-ddos).
 
 ## Какие средства защиты от DDoS и веб-файерволы предоставляются VK Cloud?
 
-- При использовании специального сервиса **Защита от DDoS** клиент может выбрать между решениями Qrator Labs, CloudFlare и ServicePipe.
-- При использовании специального сервиса **Web Application Firewall** клиент может выбрать между решениями SolidWAF и Wallarm WAF.
+- При использовании специального сервиса **AntiDDoS** клиент может выбрать между решениями Qrator Labs, CloudFlare и ServicePipe.
+- При использовании специального сервиса **WAF** клиент может выбрать между решениями SolidWAF и Wallarm WAF.
 
 ## Как разделены клиенты?
 

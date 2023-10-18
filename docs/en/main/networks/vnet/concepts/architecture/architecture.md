@@ -1,6 +1,6 @@
 ## What the service does
 
-Virtual network service consists of two layers:
+Cloud Networks service consists of two layers:
 
 1. [Software-Defined Network](https://en.wikipedia.org/wiki/Software-defined_networking) (SDN).
 1. [Network Function Virtualization](https://en.wikipedia.org/wiki/Network_function_virtualization) (NFV).

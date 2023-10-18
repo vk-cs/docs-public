@@ -24,7 +24,7 @@ The Spark cluster executes Spark jobs. Such tasks can be sent to the cluster in 
    </tabpanel>
    </tabs>
 
-1. Install the ML Platform library for Python:
+1. Install the Cloud ML Platform library for Python:
 
    1. Download [the library file](https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz).
 
@@ -122,10 +122,10 @@ spark.stop()
 
 Next, a scenario is applied in which the task is sent to the cluster along with the Python code of the Spark application:
 
-1. Using the ML Platform library, the default manifest describing the task is loaded.
-1. Using the ML Platform library, a task named `pi-spark-job` is sent to the cluster with the specified ID.
+1. Using the Cloud ML Platform library, the default manifest describing the task is loaded.
+1. Using the Cloud ML Platform library, a task named `pi-spark-job` is sent to the cluster with the specified ID.
 
-   In this case, you must specify the manifest and the name of the file with the Python code of the Spark application to run on the cluster. The ML Platform library will adjust the manifest data itself so that the code from the specified file can be executed. In this case, there is no need to make corrections to the manifest or upload additional files to the cluster bucket: to calculate the number of π, you do not need to specify additional dependencies, upload data files, etc.
+   In this case, you must specify the manifest and the name of the file with the Python code of the Spark application to run on the cluster. The Cloud ML Platform library will adjust the manifest data itself so that the code from the specified file can be executed. In this case, there is no need to make corrections to the manifest or upload additional files to the cluster bucket: to calculate the number of π, you do not need to specify additional dependencies, upload data files, etc.
 
 Execute the script to send the task to the cluster according to the specified scenario:
 

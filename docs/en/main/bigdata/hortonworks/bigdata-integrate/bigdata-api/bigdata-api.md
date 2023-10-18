@@ -2,7 +2,7 @@
 
 All instructions when working with the API are executed in the console.
 
-To create a Big Data cluster, do the following:
+To create a Cloud Big Data cluster, do the following:
 
 ```
 curl -s -H "X-Auth-Token: <your_auth_token>" -H "Content-Type: application / json" -d '
@@ -61,7 +61,7 @@ curl -s -H "X-Auth-Token: <your_auth_token>" -H "Content-Type: application / jso
 
 In this example, 3 workers are running at once and the disk is increased to 300GB
 
-The OpenStack Sahara service corresponds to Big Data clusters.
+The OpenStack Sahara service corresponds to Cloud Big Data clusters.
 
 It is important to remember that the parameters cluster_template_id, head_template_id and worker_template_id cannot be created by yourself - they are already pre-created. You can get the specified list of cluster templates template through this block:
 
@@ -71,7 +71,7 @@ curl -s -H "X-Auth-Token: <your_auth_token>" -H "Content-Type: application / jso
 
 ## Deleting a cluster
 
-Removing a Big Data cluster must be done using the command
+Removing a cluster must be done using the command:
 
 ```
 curl -s -H "X-Auth-Token:" -H "Content-Type: application / json" -X DELETE "http://infra.mail.ru:8386/v1.1//clusters" -v

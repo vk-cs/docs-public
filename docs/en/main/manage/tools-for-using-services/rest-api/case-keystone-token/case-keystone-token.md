@@ -1,4 +1,4 @@
-A Keystone token is required to work with some components and resources of the VK Cloud platform via their API. The examples of such are the Virtual networks (Neutron) service and the backups component of the Cloud computing service.
+A Keystone token is required to work with some components and resources of the VK Cloud platform via their API. The examples of such are the Virtual networks (Neutron) service and the backups component of the Cloud Servers service.
 
 ## Preparatory steps
 

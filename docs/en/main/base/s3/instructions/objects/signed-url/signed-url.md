@@ -61,7 +61,7 @@ In order to compose a signed URL, you must own static access keys.
 
 ## Examples of getting a signed link
 
-Using the S3 CLI, you can generate a pre-signed link with the following command:
+Using the AWS CLI, you can generate a pre-signed link with the following command:
 
 ```
  aws s3 presign s3: // <batch_name> / <key_name> --endpoint-url https://hb.vkcs.cloud --expires-in <time_in_seconds>

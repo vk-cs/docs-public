@@ -4,7 +4,7 @@
 An error occurred (InvalidArgument) when calling the UploadPart operation: Part number must be an integer between 1 and 10000, inclusive
 ```
 
-Далее рассмотрена загрузка образов размером более 500 ГБ через объектное хранилище VK Cloud.
+Далее рассмотрена загрузка образов размером более 500 ГБ через объектное хранилище Cloud Storage VK Cloud.
 
 Будут использоваться:
 

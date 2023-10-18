@@ -1,4 +1,4 @@
-Cloud Database – это сервис для создания облачных баз данных, подробнее в [статье](https://mcs.mail.ru/databases/).
+Cloud Databases – это сервис для создания облачных баз данных, подробнее в [статье](https://mcs.mail.ru/databases/).
 
 Запуск СУБД PostgreSQL, MySQL, MongoDB, ClickHouse и OpenSearch за пару минут.
 
