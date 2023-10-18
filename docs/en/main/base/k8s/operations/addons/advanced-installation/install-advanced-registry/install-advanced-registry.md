@@ -119,7 +119,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
             cluster_id = vkcs_kubernetes_cluster.k8s-cluster.id
             addon_id = data.vkcs_kubernetes_addon.docker-registry.id
             namespace = "kube-system"
-            configuration_values = templatefile("./docker-registry-all.yaml",{htpasswd = "<htpasswd password>", accessKey = "<access key for S3 account>", secretKey = "<secret key for S3 accoutn>", loadBalancerIP = "<floating IP>"})
+            configuration_values = templatefile("./docker-registry-all.yaml",{htpasswd = "<htpasswd password>", accessKey = "<access key for S3 account>", secretKey = "<secret key for S3 account>", loadBalancerIP = "<floating IP>"})
          
             depends_on = [
                vkcs_kubernetes_node_group.default_ng

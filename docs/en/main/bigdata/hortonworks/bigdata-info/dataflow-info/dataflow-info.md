@@ -20,7 +20,7 @@ Apache Storm is a real-time distributed streaming computing framework.
 
 Storm integrates easily with existing queue managers and databases. The Storm topology uses streams of data and processes them in arbitrarily complex ways, redistributing streams between stages of computation as needed.
 
-Apache Storm is a free open source distributed real-time computing system . Storm makes it easy to reliably handle unlimited streams of data by doing in real time what Hadoop does for data packets.
+Apache Storm is a free open source distributed real-time computing system. Storm makes it easy to reliably handle unlimited streams of data by doing in real time what Hadoop does for data packets.
 
 Apache Storm reads a stream of raw data at the input, passes it through a series of small handlers, and then feeds the output to the output. The diagram below illustrates the basic concepts of Apache Storm:
 

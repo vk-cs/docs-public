@@ -8,4 +8,4 @@ After clicking it in the window that opens, you must confirm the action:
 
 ![](./assets/1601709189876-10.png)
 
-After a while, the Big Data cluster will be successfully deleted.
+After a while, the Cloud Big Data cluster will be successfully deleted.

@@ -14,11 +14,11 @@ There are several types of buckets that differ in both the purpose and the amoun
 - Icebox — cloud storage of rarely used data: backups, logs, media content, scientific, statistical data, as well as working archives
 - Backup — placement of backup copies of instances created both automatically and manually. A bucket of this type is not subject to self-creation or deletion, but is managed by the backup service.
 
-You can create a bucket both in the VK Cloud Panel and using the S3 CLI.
+You can create a bucket both in the VK Cloud Panel and using the AWS CLI.
 
 <warn>
 
-There is a limit on the number of buckets in one project, for more information, see the article [Quotas and limits](/en/base/account/concepts/quotasandlimits#object_storage_s3_eab9d41b)
+There is a limit on the number of buckets in one project, for more information, see the article [Quotas and limits](/en/base/account/concepts/quotasandlimits#cloud_storage_c24c9efe)
 
 </warn>
 
@@ -61,17 +61,17 @@ After creating a bucket, its name cannot be changed.
 </tabpanel>
 <tabpanel>
 
-## Creation via S3 CLI
+## Creation via AWS CLI
 
 1. Create an authorized account.
 
-Before creating a bucket, you need to create a user who will be granted access to manage operations in the S3 CLI.
+Before creating a bucket, you need to create a user who will be granted access to manage operations in the AWS CLI.
 
 To do this, on the "Accounts" tab of the "Object Storage" service, create an account by clicking the "Add Account" button, specify any desired name and save the API keys received.
 
-2. Log in to S3 CLI
+2. Log in to AWS CLI
 
-Run the AWS S3 configuration
+Run the AWS configuration
 
 ```bash
 aws configure

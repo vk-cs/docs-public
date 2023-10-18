@@ -2,9 +2,9 @@
 
 More terms can be found in the corresponding section:
 
-- [Cloud computing](/en/base/iaas/concepts/vm-concept).
-- [Virtual networks](/en/networks/vnet/concepts).
-- [Containers](/en/base/k8s/k8s-reference).
+- [Cloud Servers](/en/base/iaas/concepts/vm-concept).
+- [Cloud Networks](/en/networks/vnet/concepts).
+- [Cloud Containers](/en/base/k8s/k8s-reference).
 
 </info>
 

@@ -1,4 +1,4 @@
-Using VK Cloud Servers, a Linux virtual machine (VM) will be created in the VK Cloud personal account and connected to it.
+Using Cloud Servers, a Linux virtual machine (VM) will be created in the VK Cloud personal account and connected to it.
 
 A quick start will help you get started with the service and get acquainted with its capabilities.
 

@@ -72,7 +72,7 @@ Service names:
 - `neutron` – network API;
 - `nova` – cloud computing (VM) and extensions API;
 - `octavia` — load balancer API;
-- `sahara` – Big Data processing API.
+- `sahara` – Cloud Big Data processing API.
 
 ## 3. Complete authentication
 

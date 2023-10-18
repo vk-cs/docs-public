@@ -1,4 +1,4 @@
-Composite or multipart loading allows you to save objects in VK Cloud S3 Object Storage in parts. This can be useful when loading or copying large objects. We recommend using multiple uploads for objects from 100 MB.
+Composite or multipart loading allows you to save objects in Cloud Storage in parts. This can be useful when loading or copying large objects. We recommend using multiple uploads for objects from 100 MB.
 
 Composite loading consists of the following steps:
 
@@ -16,7 +16,7 @@ If a lifecycle rule is configured to abort unfinished multipart downloads, then 
 
 **Note**
 
-After the initialization of the multipart download and the actual download of one or more parts, you must complete or interrupt the multipart download in order to suspend the charge for storing the downloaded parts. Only after the completion or interruption of a multipart upload does VK Cloud S3 free up the space allocated to the parts in the storage and stop charging for the storage of these parts.
+After the initialization of the multipart download and the actual download of one or more parts, you must complete or interrupt the multipart download in order to suspend the charge for storing the downloaded parts. Only after the completion or interruption of a multipart upload does Cloud Storage free up the space allocated to the parts in the storage and stop charging for the storage of these parts.
 
 Inquiry:
 

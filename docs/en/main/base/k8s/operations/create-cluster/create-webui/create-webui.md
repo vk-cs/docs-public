@@ -151,7 +151,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
      - **Enable monitoring:** enable this option to install a metrics collection agent in the cluster.
 
-       By default, the option is enabled and allows you to monitor the state of the cluster [using the VK Cloud Monitoring service](../../../../../manage/monitoring/monitoring-start/mon-setup-new).
+       By default, the option is enabled and allows you to monitor the state of the cluster [using the Cloud Monitoring service](../../../../../manage/monitoring/monitoring-start/mon-setup-new).
 
 1. Click the **Next step** button.
 

@@ -1,4 +1,4 @@
-In a simplified form, the DBaaS architecture (database as a service) is shown in the picture below:
+In a simplified form, the Cloud Databases architecture (database as a service) is shown in the picture below:
 
 ![](./assets/1604479588232-1604479588231.png)
 

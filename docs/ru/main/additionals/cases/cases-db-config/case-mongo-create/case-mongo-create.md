@@ -113,8 +113,6 @@ root@mongo1:~# rm /tmp/mongo1.key /tmp/mongo1.crt /tmp/mongo1.csr
 
 <warn>
 
-**Внимание**
-
 В поле CommonName укажите имя сервера (hostname).
 
 </warn>
@@ -156,8 +154,6 @@ processManagement:
 ```
 
 <warn>
-
-**Внимание**
 
 Важные параметры:
 

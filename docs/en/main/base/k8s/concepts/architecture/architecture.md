@@ -1,8 +1,8 @@
-The VK Cloud platform is based on [OpenStack](https://www.openstack.org/). The Kubernetes service architecture, based on OpenStack, gives users a wide range of capabilities, fault tolerance, scalability and integration with other services of the platform.
+The VK Cloud platform is based on [OpenStack](https://www.openstack.org/). The Cloud Containers service architecture, based on OpenStack, gives users a wide range of capabilities, fault tolerance, scalability and integration with other services of the platform.
 
 ## Cluster topologies
 
-A Kubernetes cluster consists of two types of nodes, master nodes and worker nodes:
+A Kubernetes Cloud Containers cluster consists of two types of nodes, master nodes and worker nodes:
 
 - Master nodes store cluster-wide state information and manage workload distribution across worker nodes.
 
@@ -47,7 +47,7 @@ See [Available Kubernetes versions and version support policy](../versions/) for
 
 All interaction with the cluster is through the [Kubernetes API](https://kubernetes.io/ru/docs/concepts/overview/kubernetes-api/).
 
-The Kubernetes VK Cloud cluster API endpoint is placed behind [dedicated load balancer](../network/), so the cluster API can be accessed via the same IP address regardless of the number of master nodes.
+The Cloud Containers cluster API endpoint is placed behind [dedicated load balancer](../network/), so the cluster API can be accessed via the same IP address regardless of the number of master nodes.
 
 ## Integration with VK Cloud platform
 
@@ -55,14 +55,14 @@ Integration with the VK Cloud platform is achieved through standard Kubernetes i
 
 - [Container Storage Interface](https://kubernetes-csi.github.io/docs/) (CSI): integration with storage services.
 
-  Allows to use VK Cloud storage in clusters as [persistent volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
+  Allows to use Cloud storage in clusters as [persistent volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
   Persistent Volume Claim (PVC) is available.
 
   Integration is achieved using OpenStack Cinder API. See [Storage in cluster](../storage/) for details.
 
 - [Container Network Interface](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/) (CNI): integration with network services.
 
-  Every Kubernetes VK Cloud cluster has a [Calico](https://projectcalico.docs.tigera.io/about/about-calico) plugin that supports this interface. This plugin provides:
+  Every Cloud Containers cluster has a [Calico](https://projectcalico.docs.tigera.io/about/about-calico) plugin that supports this interface. This plugin provides:
 
   - network connectivity between containers, [pods](../../k8s-reference/pods), and cluster nodes;
   - application and enforcement of Kubernetes [network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/).
@@ -75,13 +75,13 @@ Integration with the VK Cloud platform is achieved through standard Kubernetes i
 
 Since Kubernetes version 1.21, [Open Policy Agent Gatekeeper](../../k8s-reference/gatekeeper/) is built into the cluster to increase the cluster's resistance to attacks. It allows you to apply constraints, which help to increase the security of deployed workload.
 
-These constraints are created based on constraint templates. Kubernetes VK Cloud clusters already contain [preconfigured templates and constraints](../addons-and-settings/settings#pre_configured_gatekeeper_templates_and_constraints). You can create your own templates and constraints.
+These constraints are created based on constraint templates. Cloud Containers clusters already contain [preconfigured templates and constraints](../addons-and-settings/settings#pre_configured_gatekeeper_templates_and_constraints). You can create your own templates and constraints.
 
 For clusters below version 1.21 it is recommended to [install Gatekeeper](../../install-tools/gatekeeper) manually or upgrade the cluster to the current version.
 
 ## Cluster scaling options
 
-Kubernetes VK Cloud cluster has built-in scaling capabilities. You can do any type of scaling up to the limits of [quotas in action](../../../account/concepts/quotasandlimits/).
+Cloud Containers cluster has built-in scaling capabilities. You can do any type of scaling up to the limits of [quotas in action](../../../account/concepts/quotasandlimits/).
 
 The following types of scaling are available:
 
