@@ -9,22 +9,14 @@
                     "link": "docs/en/main/vendors-products/marketplace/concepts/about"
                 },
                 {
+                    "link": "docs/en/main/vendors-products/marketplace/instructions"
+                },
+                {
                     "link": "docs/en/main/vendors-products/marketplace/tariffication",
                     "hiddenForPartners": true
                 },
                 {
                     "link": "docs/en/main/vendors-products/marketplace/faq"
-                }
-            ]
-        },
-        {
-            "title": "QUICK START",
-            "links": [
-                {
-                    "link": "docs/en/main/vendors-products/marketplace/initial-configuration/dr-quick-start"
-                },
-                {
-                    "link": "docs/en/main/vendors-products/marketplace/initial-configuration/migrate-hystax"
                 }
             ]
         }
