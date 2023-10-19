@@ -1,10 +1,12 @@
-Next, you will learn how to organize the interaction of the VK Cloud virtual network with an external (client) network through a VPN tunnel. Several virtual machines will also be created to test the functionality of the tunnel.
+<warn>
 
-<info>
+The VPN service is only available in networks created with use of [Neutron SDN]( ../../concepts/architecture#sdns_used).
 
-Next, a VPN tunnel will be built to another network of the VK Cloud platform, and a virtual machine will be used as a VPN endpoint. The information provided on setting up a VPN tunnel can be adapted to work with any other VPN endpoint, such as a corporate firewall or other network equipment.
+</warn>
 
-</info>
+Throughout this guide, an VK Cloud subnet will be connected with the client subnet via a VPN tunnel. This VPN tunnel will be built to another network of the VK Cloud platform, and a virtual machine will be used as a VPN endpoint. Several virtual machines will also be created to test the functionality of the tunnel.
+
+The guide can be adapted to work with any other VPN endpoint, such as a corporate firewall or other network equipment.
 
 ## 1. Preparatory steps
 
