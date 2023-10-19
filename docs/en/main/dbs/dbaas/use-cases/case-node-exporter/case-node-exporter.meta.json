@@ -8,7 +8,14 @@
     "markdown": "",
     "icon": "",
     "infobarItems": null,
-    "weight": 0,
+    "weight": 4,
+    "additionalUuids": [
+        "a9f3571f-0da5-42aa-bb43-3ee9a06b25bd",
+        "81ae591c-4ed2-42b2-83d7-6a8efae3dfc7",
+        "8764d38d-f35c-41ad-b0e3-7fc6d998c94b",
+        "2953d0ab-c593-44d9-b20d-48ecb3320f81",
+        "fda4a0b5-6018-4308-aff0-993813ea9cc9"
+    ],
     "uuid": "3b71b3ea-8349-46c7-8df5-06eae82a4fcc",
     "createdAt": "2022-03-26T14:10:44.000Z",
     "updatedAt": "2023-10-12T12:09:40.000Z"
