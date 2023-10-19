@@ -1,3 +1,9 @@
+<warn>
+
+The VPN service is only available in networks created with use of [Neutron SDN]( ../../concepts/architecture#sdns_used).
+
+</warn>
+
 You can manage VPN tunnels: view, add or remove them from the project, as well as edit and restart tunnels.
 
 ## Viewing a list of VPN tunnels and information about them
