@@ -1,7 +1,7 @@
 {
   "title": "Логирование",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Как организовать централизованный сбор логов с помощью Fluentd или стека ELK",
   "metaTitle": "Логирование",
   "metaDescription": "",
   "sectionTitle": "Логирование",
