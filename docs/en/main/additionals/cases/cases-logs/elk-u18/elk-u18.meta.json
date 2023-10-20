@@ -9,6 +9,9 @@
     "icon": "",
     "infobarItems": null,
     "weight": 0,
+    "additionalUuids": [
+        "244bf6a3-f0a8-4589-b2ef-8bd56ec6f91c"
+    ],
     "uuid": "d2e2c045-1b01-46a5-b488-399f3f58f0b4",
     "createdAt": "2022-03-26T14:10:44.000Z",
     "updatedAt": "2023-10-16T16:00:46.000Z"

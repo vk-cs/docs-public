@@ -1,7 +1,7 @@
 {
   "title": "Logging",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "How to organize centralized log collection using Fluentd or the ELK stack",
   "metaTitle": "Logging",
   "metaDescription": "",
   "sectionTitle": "Logging",
