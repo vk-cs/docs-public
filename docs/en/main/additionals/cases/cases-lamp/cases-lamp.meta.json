@@ -1,23 +1,25 @@
 {
-  "title": "Installing LAMP on Linux",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Installing LAMP on Linux",
-  "metaDescription": "",
-  "sectionTitle": "Installing LAMP on Linux",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1,
-  "uuid": "13c45a64-6373-4170-b300-3c279414fd97",
-  "additionalUuids": [
-    "a77fde29-aa96-4afd-8be6-8df3651b294e",
-    "8d492f45-8e71-4385-9eeb-66533e0bfeb6",
-    "6e4cde76-36e1-4dfb-b968-206fb2903266",
-    "c104408c-03f3-4739-8589-9e60fe9aea4a",
-    "5f5b7af2-25cb-4e54-a197-9e8aadf58f70",
-    "c084f1e1-3d4b-4615-a7ce-5333c98b880a",
-    "ff351597-326d-4a97-be4f-474ebc804c85",
-    "62ec10f5-6806-44f5-a8e6-3c6f5a5914fb"
-  ]
+    "title": "Installing LAMP on Linux",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Installing LAMP on Linux",
+    "metaDescription": "",
+    "sectionTitle": "Installing LAMP on Linux",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "13c45a64-6373-4170-b300-3c279414fd97",
+    "additionalUuids": [
+        "a77fde29-aa96-4afd-8be6-8df3651b294e",
+        "8d492f45-8e71-4385-9eeb-66533e0bfeb6",
+        "6e4cde76-36e1-4dfb-b968-206fb2903266",
+        "c104408c-03f3-4739-8589-9e60fe9aea4a",
+        "5f5b7af2-25cb-4e54-a197-9e8aadf58f70",
+        "c084f1e1-3d4b-4615-a7ce-5333c98b880a",
+        "ff351597-326d-4a97-be4f-474ebc804c85",
+        "62ec10f5-6806-44f5-a8e6-3c6f5a5914fb"
+    ],
+    "createdAt": "2023-10-20T06:43:10.000Z",
+    "updatedAt": "2023-10-20T06:43:10.000Z"
 }
