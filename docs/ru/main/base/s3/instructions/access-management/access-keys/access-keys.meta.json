@@ -1,17 +1,18 @@
 {
-    "title": "Аккаунт и ключи доступа",
-    "pageDescription": "Создание и управление аккаунтом Cloud Storage, добавление ключей доступа.",
-    "shortDescription": "Создание и управление аккаунтом, операции с ключами доступа",
-    "metaTitle": "Аккаунт и ключи доступа",
-    "metaDescription": "Cloud Storage: создание и управление аккаунтом, добавление ключей доступа",
-    "sectionTitle": "Аккаунт и ключи доступа",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 1,
-    "uuid": "fd4db123-373a-481e-b547-770e3ca58c87",
-    "additionalUuids": [
-        "d62ab1ee-fcdf-49d3-99a4-8c1fb83fa610"
-    ],
-    "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2023-10-18T05:14:39.000Z"
+  "title": "Аккаунт и ключи доступа",
+  "pageDescription": "Доступ к Cloud Storage через AWS CLI, API и файловые менеджеры.",
+  "shortDescription": "Доступ к Cloud Storage через AWS CLI, API и файловые менеджеры",
+  "metaTitle": "Аккаунт и ключи доступа",
+  "metaDescription": "Доступ к Cloud Storage через AWS CLI, API и файловые менеджеры",
+  "sectionTitle": "Аккаунт и ключи доступа",
+  "markdown": "Доступ к Cloud Storage через AWS CLI, API и файловые менеджеры.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1,
+  "uuid": "fd4db123-373a-481e-b547-770e3ca58c87",
+  "additionalUuids": [
+    "d62ab1ee-fcdf-49d3-99a4-8c1fb83fa610"
+  ],
+  "createdAt": "2022-03-26T14:10:44.000Z",
+  "updatedAt": "2023-09-25T11:53:44.000Z"
 }
