@@ -1,0 +1,48 @@
+{
+    "meta": "VDI",
+    "path": "/services/vdi",
+    "groups": [
+        {
+            "title": "ИНФОРМАЦИЯ",
+            "links": [
+                {
+                    "link": "docs/ru/main/manage/cloud-desktops/concepts/vdi-reference"
+                },
+                {
+                    "link": "docs/ru/main/manage/cloud-desktops/concepts/overview"
+                },
+                {
+                    "link": "docs/ru/main/manage/cloud-desktops/tariffication"
+                },
+                {
+                    "link": "docs/ru/main/manage/cloud-desktops/faq"
+                }
+            ]
+        },
+        {
+            "title": "БЫСТРЫЙ СТАРТ",
+            "links": [
+                {
+                    "link": "docs/ru/main/manage/cloud-desktops/quick-start"
+                },
+                {
+                    "link": "docs/ru/main/manage/cloud-desktops/instructions/config"
+                }
+            ]
+        },
+        {
+            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
+            "links": [
+                {
+                    "link": "docs/ru/main/manage/cloud-desktops/instructions/desktops-pool/add"
+                },
+                {
+                    "link": "docs/ru/main/manage/cloud-desktops/instructions/desktops-pool/manage"
+                },
+                {
+                    "link": "docs/ru/main/manage/cloud-desktops/instructions/manage-desktops"
+                }
+            ]
+        }
+    ]
+}

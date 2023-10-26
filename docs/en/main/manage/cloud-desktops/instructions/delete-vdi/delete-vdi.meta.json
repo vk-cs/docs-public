@@ -1,0 +1,11 @@
+{
+  "title": "Removing the service infrastructure",
+  "pageDescription": "Deleting the infrastructure and connection settings of the Cloud Desktop service.",
+  "shortDescription": "Permanent removal of the main infrastructure and Cloud Desktop settings",
+  "metaTitle": "Removing the service infrastructure",
+  "metaDescription": "VK Cloud Desktop: Removing the VDI infrastructure",
+  "sectionTitle": "Removing the service infrastructure",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 4
+}

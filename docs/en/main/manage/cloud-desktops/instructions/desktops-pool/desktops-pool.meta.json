@@ -1,0 +1,12 @@
+{
+  "title": "Desktop pool",
+  "pageDescription": "A desktop pool is an association of several desktops that share computing resources. Desktops cannot be created without a pool.",
+  "shortDescription": "Combining desktops in a single resource pool",
+  "metaTitle": "Desktop pool",
+  "metaDescription": "Combining desktops in a single resource pool.",
+  "sectionTitle": "Desktop pool",
+  "markdown": "A desktop pool is an association of several desktops that share computing resources. Desktops cannot be created without a pool.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2
+}

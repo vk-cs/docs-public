@@ -1,0 +1,11 @@
+{
+  "title": "Настройка сервиса",
+  "pageDescription": "Настройка сети и подключения к каталогу пользователей AD или LDAP.",
+  "shortDescription": "Настройка сети и подключение к каталогу AD или LDAP",
+  "metaTitle": "Настройка сервиса",
+  "metaDescription": "Настройка сети и подключение к каталогу пользователей AD или LDAP.",
+  "sectionTitle": "Настройка сервиса",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 1
+}
