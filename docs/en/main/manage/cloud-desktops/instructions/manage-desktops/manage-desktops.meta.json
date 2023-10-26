@@ -1,0 +1,11 @@
+{
+  "title": "Desktops management",
+  "pageDescription": "Starting, stopping and deleting cloud desktops, working with a user session.",
+  "shortDescription": "Starting, stopping and deleting desktops, working with a user session",
+  "metaTitle": "Desktops management",
+  "metaDescription": "Starting, stopping and deleting cloud desktops, working with a user session.",
+  "sectionTitle": "Desktops management",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 3
+}
