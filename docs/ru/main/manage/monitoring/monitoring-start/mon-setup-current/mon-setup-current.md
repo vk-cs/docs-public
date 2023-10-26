@@ -36,13 +36,32 @@
    </tabpanel>
    <tabpanel>
 
-   ```powershell
-   curl --http2 \
-   -H "content-type: application/json" \
-   -H "X-Auth-Token: <токен доступа X-Subject-Token>" \
-   -d '{"capabilities":["telegraf"], "os_type":"windows"}' \
-   -X POST  https://mcs.mail.ru/infra/templater/v2/project/<идентификатор проекта>/link 
-   ```
+   1. Поместите параметры тела запроса в переменную `params`:
+
+      ```powershell
+      $params = @{'os_type' = 'windows'; 'capabilities' = @('telegraf')} | convertto-json
+      ```
+
+   1. Убедитесь в создании переменной с помощью `echo $params`. Ожидаемый вывод:
+
+      ```powershell
+      {
+         "capabilities":  [
+            "telegraf"
+         ],
+         "os_type":  "windows"
+      }
+      ```
+
+   1. Выполните команду:
+
+      ```powershell
+      [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; `
+      Invoke-WebRequest -Method Post -ContentType application/json `
+      -Uri https://mcs.mail.ru/infra/templater/v2/project/<идентификатор проекта>/link `
+      -Headers @{'X-Auth-Token' = '<токен доступа X-Subject-Token>'} `
+      -Body $params | Select-Object -Expand Content
+      ```
 
    </tabpanel>
    </tabs>
@@ -57,14 +76,14 @@
    <tabpanel>
 
    ```bash
-   sudo curl  -s -H 'content-type: application/json' -X POST https://mcs.mail.ru/infra/templater/v2/project/XXXXXX55a56842bd9bf1832f10XXXXXX/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/$(curl -s http://169.254.169.254/openstack/2023-02-22/meta_data.json|grep -Po '\"uuid\": *\"\\K[^\"]*' || cat /var/lib/cloud/data/instance-id) | sudo bash
+   sudo curl -s -H 'content-type: application/json' -X POST https://mcs.mail.ru/infra/templater/v2/project/<идентификатор проекта>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/$(curl -s http://169.254.169.254/openstack/2023-02-22/meta_data.json|grep -Po '\"uuid\": *\"\\K[^\"]*' || cat /var/lib/cloud/data/instance-id) | sudo bash
    ```
 
    </tabpanel>
    <tabpanel>
 
    ```powershell
-   [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Method 'POST' -Headers @{'Content-Type' = 'application/json'} -Uri https://mcs.mail.ru/infra/templater/v2/project/XXXXXX55a56842bd9bf1832f10XXXXXX/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/$((Get-WmiObject -Class Win32_ComputerSystemProduct).UUID.ToLower()) | iex 
+   [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Method 'POST' -Headers @{'Content-Type' = 'application/json'} -Uri https://mcs.mail.ru/infra/templater/v2/project/<идентификатор проекта>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/$((Get-WmiObject -Class Win32_ComputerSystemProduct).UUID.ToLower()) | iex
    ```
 
    </tabpanel>
