@@ -8,5 +8,6 @@
   "markdown": "Operations that can be performed with deployable virtual desktops.",
   "icon": "",
   "infobarItems": null,
-  "weight": 3
+  "weight": 3,
+  "uuid": "238f918f-e0c4-4e26-ba47-237a7790a997"
 }

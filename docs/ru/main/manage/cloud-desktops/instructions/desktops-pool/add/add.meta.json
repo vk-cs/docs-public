@@ -1,10 +1,13 @@
 {
-  "title": "Создание пула",
-  "pageDescription": "Создание нового пула рабочих столов в сервисе Cloud Desktop.",
-  "shortDescription": "Создание нового пула рабочих столов",
-  "metaTitle": "Создание пула",
-  "metaDescription": "Создание нового пула рабочих столов в сервисе Cloud Desktop.",
-  "sectionTitle": "Создание пула",
-  "icon": "",
-  "weight": 1
+    "title": "Создание пула",
+    "pageDescription": "Создание нового пула рабочих столов в сервисе Cloud Desktop.",
+    "shortDescription": "Создание нового пула рабочих столов",
+    "metaTitle": "Создание пула",
+    "metaDescription": "Создание нового пула рабочих столов в сервисе Cloud Desktop.",
+    "sectionTitle": "Создание пула",
+    "icon": "",
+    "weight": 1,
+    "uuid": "ceaab455-86eb-487b-b8ad-d1fa2599ae73",
+    "createdAt": "2023-10-26T06:43:55.000Z",
+    "updatedAt": "2023-10-26T06:43:55.000Z"
 }

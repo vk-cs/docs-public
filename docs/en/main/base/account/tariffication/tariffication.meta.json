@@ -1,15 +1,15 @@
 {
-  "title": "Tariffication",
-  "pageDescription": "Features of VK Cloud personal account billing.",
-  "shortDescription": "VK Cloud personal account billing features",
-  "metaTitle": "Tariffication",
-  "metaDescription": "Features of VK Cloud personal account billing.",
-  "sectionTitle": "Tariffication",
-  "markdown": "Features of VK Cloud personal account billing.",
-  "icon": "",
-  "weight": 4,
-  "infobarItems": null,
-  "uuid": "315854c0-1f37-4cd4-b572-edc1a4e8615a",
-  "createdAt": "2023-03-06T05:23:56.000Z",
-  "updatedAt": "2023-09-25T06:21:22.000Z"
+    "title": "Tariffication",
+    "pageDescription": "Features of VK Cloud personal account billing.",
+    "shortDescription": "VK Cloud personal account billing features",
+    "metaTitle": "Tariffication",
+    "metaDescription": "Features of VK Cloud personal account billing.",
+    "sectionTitle": "Tariffication",
+    "markdown": "Features of VK Cloud personal account billing.",
+    "icon": "",
+    "weight": 4,
+    "infobarItems": null,
+    "uuid": "315854c0-1f37-4cd4-b572-edc1a4e8615a",
+    "createdAt": "2023-03-06T05:23:56.000Z",
+    "updatedAt": "2023-10-18T10:16:49.000Z"
 }
