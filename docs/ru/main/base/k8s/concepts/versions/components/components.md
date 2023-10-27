@@ -24,6 +24,7 @@
 <!-- prettier-ignore -->
 | Аддон                                                                             | Kubernetes 1.21.4–1.22.x  | Kubernetes 1.23.x–1.26.x  |
 | --------------------------------------------------------------------------------- | ------------------------- | ------------------------- |
+| [cert-manager](https://github.com/cert-manager/cert-manager)                      | —         | 1.12.2    |
 | [Docker Registry](https://github.com/twuni/docker-registry.helm)                  | 2.2.2     | 2.2.2     |
 | [Ingress NGINX](https://github.com/kubernetes/ingress-nginx)                      | 4.1.4     | 4.1.4     |
 | [Istio](https://github.com/istio/istio)                                           | —         | 1.16.4    |

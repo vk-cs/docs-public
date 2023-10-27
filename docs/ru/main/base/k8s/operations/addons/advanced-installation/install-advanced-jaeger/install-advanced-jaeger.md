@@ -229,11 +229,11 @@
 
 Полный код настройки аддона вместе с описанием полей доступен на [GitHub](https://github.com/jaegertracing/helm-charts/blob/main/charts/jaeger/values.yaml).
 
-<warn>
+<err>
 
 Не удаляйте поля `podAnnotations.timestamp` или заданные в них значения. Эти поля требуются для корректной установки и работы аддона.
 
-</warn>
+</err>
 
 ### Изменение количества реплик Elasticsearch
 
