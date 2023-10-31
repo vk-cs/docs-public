@@ -22,105 +22,16 @@
 
 ## Преднастроенные шаблоны и ограничения Gatekeeper
 
+В кластерах Cloud Containers версий 1.21 и выше действуют [политики безопасности по умолчанию](../../security-policies#politiki_bezopasnosti_po_umolchaniyu), которые обеспечивают базовую защиту кластеров от нескольких распространенных уязвимостей.
+
+Эти политики реализуются с помощью преднастроенных шаблонов и ограничений Gatekeeper. Не рекомендуется изменять или удалять эти шаблоны и ограничения: некорректная работа или отсутствие политик может снизить безопасность кластера.
+
 <warn>
 
-Отключение или изменение этих шаблонов и ограничений может снизить безопасность кластера Kubernetes. Все возникающие проблемы с кластером, напрямую или косвенно возникшие из-за отключения настроек, указанных ниже, должны решаться клиентом самостоятельно.
+VK Cloud не несет ответственность за проблемы с кластером, связанные с изменением или удалением преднастроенных шаблонов и ограничений Gatekeeper.
 
 </warn>
 
-Шаблоны доступны для кластеров, начиная с версии Kubernetes 1.21. Для более старых версий [вручную установите Gatekeeper](../../../install-tools/gatekeeper), а также приведенные шаблоны и ограничения, или обновите кластер. Подробнее о Gatekeeper в разделе [Архитектура сервиса](../../architecture).
+Политики безопасности не действуют в кластерах версий ниже 1.21. Чтобы подключить их, [обновите такие кластера до актуальной версии](../../../operations/update). Если обновление невозможно, [установите Gatekeeper](../../../install-tools/gatekeeper#ustanovka) вручную, а затем [настройте ограничения и шаблоны](../../../install-tools/gatekeeper#opcionalno_nastroyka_ogranicheniy_i_shablonov).
 
-<tabs>
-<tablist>
-<tab>Ограничение<br>host-namespaces</tab>
-<tab>Ограничение<br>host-filesystem</tab>
-</tablist>
-<tabpanel>
-
-**Описание:**
-
-Это ограничение запрещает запуск подов с опцией `hostPID: true`.
-
-Запущенный с этой опцией под получит следующие возможности:
-
-- Просмотр всех процессов запущенных на хосте.
-- Принудительное завершение любого процесса на хосте командой `kill`, отправленной из пода.
-- Чтение переменных окружения для каждого пода на хосте путем получения доступа к файлу `/proc/[PID]/environ` для каждого процесса.
-
-Такие возможности очень широки и сами по себе считаются уязвимостями, так как могут привести к раскрытию чувствительных переменных окружения и манипулированию процессами, а также облегчают эксплуатацию других уязвимостей.
-
-**Пример действия ограничения:**
-
-<details>
-<summary>Манифест pod_namespace.yaml, не удовлетворяющий ограничению</summary>
-
-<!-- prettier-ignore -->
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx-host-namespace-disallowed
-  labels:
-    app: nginx-host-namespace
-spec:
-  hostPID: true
-  hostIPC: true
-  containers:
-    - name: nginx
-      image: nginx
-```
-
-</details>
-
-При попытке применить такой манифест с помощью `kubectl apply -f pod_namespace.yaml` будет выведено подобное сообщение о нарушении ограничения для создаваемого пода:
-
-```text
-Error from server ([...] Sharing the host namespace is not allowed: nginx-host-namespace-disallowed): error when creating "pod_namespace.yaml": admission webhook "validation.gatekeeper.sh" denied the request: [...] Sharing the host namespace is not allowed: nginx-host-namespace-disallowed
-```
-
-</tabpanel>
-<tabpanel>
-
-**Описание:**
-
-Это ограничение запрещает монтировать в под директории хоста, на котором под выполняется. Таким образом обеспечивается защита данных кластера, которые находятся на этом хосте.
-
-**Пример действия ограничения:**
-
-<details>
-<summary>Манифест pod_filesystem.yaml, не удовлетворяющий ограничению</summary>
-
-<!-- prettier-ignore -->
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx-host-filesystem
-  labels:
-    app: nginx-host-filesystem-disallowed
-spec:
-  containers:
-    - name: nginx
-      image: nginx
-      volumeMounts:
-        - mountPath: /cache
-          name: cache-volume
-          readOnly: true
-  volumes:
-    - name: cache-volume
-      hostPath:
-        path: /tmp # directory on host
-```
-
-</details>
-
-При попытке применить такой манифест с помощью `kubectl apply -f pod_filesystem.yaml` будет выведено подобное сообщение о нарушении ограничения для создаваемого пода:
-
-```text
-Error from server ([...] HostPath volume {"hostPath": {"path": "/tmp", "type": ""}, "name": "cache-volume"} is not allowed, pod: nginx-host-filesystem. Allowed path: [{"pathPrefix": "/tmp", "readOnly": true}]): error when creating "pod_filesystem.yaml": admission webhook "validation.gatekeeper.sh" denied the request: [...] HostPath volume {"hostPath": {"path": "/tmp", "type": ""}, "name": "cache-volume"} is not allowed, pod: nginx-host-filesystem. Allowed path: [{"pathPrefix": "/tmp", "readOnly": true}]
-```
-
-</tabpanel>
-</tabs>
-
-Под, нарушивший ограничение, не будет создан.
+Подробнее об политиках и рекомендациях по работе с ними читайте в разделе [Политики безопасности](../../security-policies).
