@@ -308,7 +308,7 @@
 
 1. Обратитесь в [техническую поддержку](/ru/contacts/) от имени владельца проекта, сообщите в запросе [идентификатор](#poluchenie_identifikatora_proekta) (PID) и [регион](../../../concepts/regions) удаляемого проекта.
 
-1. (Для юридических лиц) Укажите, за какой период нужны [отчетные документы](/ru/additionals/billing/operations/report#yuridicheskie_lica).
+1. (Для юридических лиц) Укажите, за какой период нужны [отчетные документы](/ru/additionals/billing/concepts/report#yuridicheskie_lica).
 
     С вами свяжутся для подтверждения удаления.
 
