@@ -1,0 +1,58 @@
+{
+    "title": "Cloud Databases",
+    "pageDescription": "Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Postgres Pro, Tarantool, Greenplum. Базы доступны в single, master-slave и кластерных конфигурациях. Использование сервиса снимает с вас нагрузку по администрированию баз данных.",
+    "shortDescription": "Управляемые и масштабируемые облачные базы данных",
+    "metaTitle": "Cloud Databases",
+    "metaDescription": "Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Tarantool",
+    "sectionTitle": "Cloud Databases",
+    "markdown": "Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Postgres Pro,Tarantool, Greenplum. Базы доступны в single, master-slave и кластерных конфигурациях. Использование сервиса снимает с вас нагрузку по администрированию баз данных.",
+    "icon": "",
+    "weight": 7,
+    "infobarItems": [
+      {
+        "text": "ClickHouse",
+        "icon": "/docs/_docs/ru/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/clickhouse"
+      },
+      {
+        "text": "MongoDB",
+        "icon": "/docs/_docs/ru/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/mongodb"
+      },
+      {
+        "text": "MySQL",
+        "icon": "/docs/_docs/ru/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/mysql"
+      },
+      {
+        "text": "OpenSearch",
+        "icon": "/docs/_docs/ru/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/opensearch"
+      },
+      {
+        "text": "PostgreSQL",
+        "icon": "/docs/_docs/ru/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/postgresql"
+      },
+      {
+        "text": "Postgres Pro",
+        "icon": "/docs/_docs/ru/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/postgrespro"
+      },
+      {
+        "text": "Redis",
+        "icon": "/docs/_docs/ru/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/redis"
+      },
+      {
+        "text": "Tarantool",
+        "icon": "/docs/_docs/ru/dbs/dbaas/assets/icon.svg",
+        "link": "../../dbs/dbaas/types/tarantool"
+      },
+      {
+        "text": "Управление с помощью Terraform",
+        "icon": "/docs/_docs/ru/manage/tools-for-using-services/terraform/assets/icon.svg",
+        "link": "../../manage/tools-for-using-services/terraform/use-cases/dbaas"
+      }],
+    "uuid": "93dd09ce-09eb-4af0-807e-ea909d8c6588"
+}

@@ -6,17 +6,17 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/iaas/concepts"
+                    "link": "docs/ru/base/iaas/concepts"
                 },
                 {
-                    "link": "docs/ru/main/vendors-products/vm-licenses"
+                    "link": "docs/ru/vendors-products/vm-licenses"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/tariffication",
+                    "link": "docs/ru/base/iaas/tariffication",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/faq"
+                    "link": "docs/ru/base/iaas/faq"
                 }
             ]
         },
@@ -24,13 +24,13 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/iaas/quick-start"
+                    "link": "docs/ru/base/iaas/quick-start"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/instructions/vm-images/vm-images-manage"
+                    "link": "docs/ru/base/iaas/instructions/vm-images/vm-images-manage"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/instructions/vm-images/vm-image-metadata"
+                    "link": "docs/ru/base/iaas/instructions/vm-images/vm-image-metadata"
                 }
             ]
         },
@@ -38,31 +38,31 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/migration/migrate-hyperv"
+                    "link": "docs/ru/additionals/migration/migrate-hyperv"
                 },
                 {
-                    "link": "docs/ru/main/additionals/migration/migrate-vmware"
+                    "link": "docs/ru/additionals/migration/migrate-vmware"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/instructions/vm/vm-console"
+                    "link": "docs/ru/base/iaas/instructions/vm/vm-console"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/troubleshooting"
+                    "link": "docs/ru/base/iaas/troubleshooting"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/use-cases/disk-encrypt"
+                    "link": "docs/ru/base/iaas/use-cases/disk-encrypt"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/use-cases/win-image"
+                    "link": "docs/ru/base/iaas/use-cases/win-image"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/use-cases/packer"
+                    "link": "docs/ru/base/iaas/use-cases/packer"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/use-cases/vm-multiqueue"
+                    "link": "docs/ru/base/iaas/use-cases/vm-multiqueue"
                 },
                 {
-                    "link": "docs/ru/main/base/iaas/use-cases/managing-node"
+                    "link": "docs/ru/base/iaas/use-cases/managing-node"
                 }
             ]
         }
