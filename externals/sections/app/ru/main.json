@@ -6,26 +6,26 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/start/get-started/corporate"
+                    "link": "docs/ru/additionals/start/get-started/corporate"
                 },
                 {
-                    "link": "docs/ru/main/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/base/account/concepts/quotasandlimits"
                 },
                 {
-                    "link": "docs/ru/main/base/account/concepts/rolesandpermissions"
+                    "link": "docs/ru/base/account/concepts/rolesandpermissions"
                 },
                 {
-                    "link": "docs/ru/main/additionals/billing",
+                    "link": "docs/ru/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/main/additionals/start/legal"
+                    "link": "docs/ru/additionals/start/legal"
                 },
                 {
-                    "link": "docs/ru/main/additionals/start/support"
+                    "link": "docs/ru/additionals/start/support"
                 },
                 {
-                    "link": "docs/ru/main/base/account/faq"
+                    "link": "docs/ru/base/account/faq"
                 }
             ]
         },
@@ -33,13 +33,13 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/quick-start"
+                    "link": "docs/ru/base/account/quick-start"
                 },
                 {
-                    "link": "docs/ru/main/base/account/instructions/activation"
+                    "link": "docs/ru/base/account/instructions/activation"
                 },
                 {
-                    "link": "docs/ru/main/additionals/billing/operations/payment",
+                    "link": "docs/ru/additionals/billing/operations/payment",
                     "hiddenForPartners": true
                 }
             ]
@@ -48,25 +48,25 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/base/account/instructions/project-settings"
+                    "link": "docs/ru/base/account/instructions/project-settings"
                 },
                 {
-                    "link": "docs/ru/main/base/account/instructions/account-manage"
+                    "link": "docs/ru/base/account/instructions/account-manage"
                 },
                 {
-                    "link": "docs/ru/main/manage/tools-for-using-services"
+                    "link": "docs/ru/manage/tools-for-using-services"
                 },
                 {
-                    "link": "docs/ru/main/base/account/instructions/actionslogs"
+                    "link": "docs/ru/base/account/instructions/actionslogs"
                 },
                 {
-                    "link": "docs/ru/main/base/account/use-cases/systemstate"
+                    "link": "docs/ru/base/account/use-cases/systemstate"
                 },
                 {
-                    "link": "docs/ru/main/base/account/use-cases/ideasportal"
+                    "link": "docs/ru/base/account/use-cases/ideasportal"
                 },
                 {
-                    "link": "docs/ru/main/base/account/use-cases/account-delete"
+                    "link": "docs/ru/base/account/use-cases/account-delete"
                 }
             ]
         }
