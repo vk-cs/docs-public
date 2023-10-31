@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/networks/vnet/concepts/router"
+                    "link": "docs/ru/networks/vnet/concepts/router"
                 },
                 {
-                    "link": "docs/ru/main/networks/vnet/tariffs"
+                    "link": "docs/ru/networks/vnet/tariffs"
                 }
             ]
         },
@@ -17,10 +17,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/main/networks/vnet/quick-start"
+                    "link": "docs/ru/networks/vnet/quick-start"
                 },
                 {
-                    "link": "docs/ru/main/networks/vnet/operations/manage-router"
+                    "link": "docs/ru/networks/vnet/operations/manage-router"
                 }
             ]
         },
@@ -28,10 +28,10 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/networks/vnet/use-cases/vpn-tunnel"
+                    "link": "docs/ru/networks/vnet/use-cases/vpn-tunnel"
                 },
                 {
-                    "link": "docs/ru/main/networks/vnet/use-cases/vip-keepalived"
+                    "link": "docs/ru/networks/vnet/use-cases/vip-keepalived"
                 }
             ]
         }

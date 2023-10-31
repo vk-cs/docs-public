@@ -6,20 +6,20 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/dbs/dbaas/types"
+                    "link": "docs/en/dbs/dbaas/types"
                 },
                 {
-                    "link": "docs/en/main/dbs/dbaas/concepts/work-configs"
+                    "link": "docs/en/dbs/dbaas/concepts/work-configs"
                 },
                 {
-                    "link": "docs/en/main/dbs/dbaas/tariffication",
+                    "link": "docs/en/dbs/dbaas/tariffication",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/main/base/account/concepts/quotasandlimits"
+                    "link": "docs/en/base/account/concepts/quotasandlimits"
                 },
                 {
-                    "link": "docs/en/main/dbs/dbaas/faq"
+                    "link": "docs/en/dbs/dbaas/faq"
                 }
             ]
         },
@@ -27,10 +27,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/dbs/dbaas/quick-start"
+                    "link": "docs/en/dbs/dbaas/quick-start"
                 },
                 {
-                    "link": "docs/en/main/dbs/dbaas/connect"
+                    "link": "docs/en/dbs/dbaas/connect"
                 }
             ]
         },
@@ -38,13 +38,13 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/main/dbs/dbaas/use-cases/db-migration"
+                    "link": "docs/en/dbs/dbaas/use-cases/db-migration"
                 },
                 {
-                    "link": "docs/en/main/dbs/dbaas/extensions"
+                    "link": "docs/en/dbs/dbaas/extensions"
                 },
                 {
-                    "link": "docs/en/main/manage/backups/db-backup"
+                    "link": "docs/en/manage/backups/db-backup"
                 }
             ]
         }
