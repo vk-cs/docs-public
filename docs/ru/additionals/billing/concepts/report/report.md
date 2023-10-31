@@ -22,7 +22,7 @@
 Как начать получать от VK Cloud отчетные документы, читайте в статье [Донастройка проекта для ЮЛ](/ru/additionals/start/get-started/corporate#otchetnye_dokumenty). По всем вопросам, связанным с отчетными документами, обращайтесь в отдел документооборота VK Cloud:
 
 - в [регионе](/ru/base/account/concepts/regions) Москва — по адресу docs_vktech@vk.company;
-- в регионе Казахстан — по адресу docs_vktech@vk.company.
+- в регионе Казахстан — по адресу accountvk@qazcloud.kz.
 
 <warn>
 

@@ -82,7 +82,7 @@
 По всем вопросам, связанным с договорами, обращайтесь в отдел документооборота VK Cloud:
 
 - в [регионе](/ru/base/account/concepts/regions) Москва — по адресу docs_vktech@vk.company;
-- в регионе Казахстан — по адресу docs_vktech@vk.company.
+- в регионе Казахстан — по адресу accountvk@qazcloud.kz.
 
 ### Договоры публичной оферты
 
