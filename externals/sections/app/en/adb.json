@@ -6,13 +6,13 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/dbs/adb/adb-info/arenadata"
+                    "link": "docs/en/dbs/adb/adb-info/arenadata"
                 },
                 {
-                    "link": "docs/en/main/dbs/adb/adb-limits/adb-limits-perf"
+                    "link": "docs/en/dbs/adb/adb-limits/adb-limits-perf"
                 },
                 {
-                    "link": "docs/en/main/additionals/billing",
+                    "link": "docs/en/additionals/billing",
                     "hiddenForPartners": true
                 }
             ]
@@ -21,16 +21,16 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/dbs/adb/adb-start/create-adb"
+                    "link": "docs/en/dbs/adb/adb-start/create-adb"
                 },
                 {
-                    "link": "docs/en/main/dbs/adb/adb-start/launch-adb"
+                    "link": "docs/en/dbs/adb/adb-start/launch-adb"
                 },
                 {
-                    "link": "docs/en/main/dbs/adb/adb-connect"
+                    "link": "docs/en/dbs/adb/adb-connect"
                 },
                 {
-                    "link": "docs/en/main/dbs/adb/adb-start/delete-adb"
+                    "link": "docs/en/dbs/adb/adb-start/delete-adb"
                 }
             ]
         }

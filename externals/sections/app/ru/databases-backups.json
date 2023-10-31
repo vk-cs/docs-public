@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/manage/backups/db-backup"
+                    "link": "docs/ru/manage/backups/db-backup"
                 },
                 {
-                    "link": "docs/ru/main/manage/backups/retention-policy"
+                    "link": "docs/ru/manage/backups/retention-policy"
                 }
             ]
         },
@@ -17,16 +17,16 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/manage/backups/db-backup/db-backup-create"
+                    "link": "docs/ru/manage/backups/db-backup/db-backup-create"
                 },
                 {
-                    "link": "docs/ru/main/manage/backups/db-backup/manage-db-backups"
+                    "link": "docs/ru/manage/backups/db-backup/manage-db-backups"
                 },
                 {
-                    "link": "docs/ru/main/manage/backups/db-backup/db-recover-backup"
+                    "link": "docs/ru/manage/backups/db-backup/db-recover-backup"
                 },
                 {
-                    "link": "docs/ru/main/manage/backups/db-backup/point-in-time-recovery-pitr"
+                    "link": "docs/ru/manage/backups/db-backup/point-in-time-recovery-pitr"
                 }
             ]
         },
@@ -34,10 +34,10 @@
             "title": "API",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/api/backup-api"
+                    "link": "docs/ru/additionals/api/backup-api"
                 },
                 {
-                    "link": "docs/ru/main/manage/backups/api-examples"
+                    "link": "docs/ru/manage/backups/api-examples"
                 }
             ]
         }

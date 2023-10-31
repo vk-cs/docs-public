@@ -1,0 +1,18 @@
+{
+  "title": "Cloud Servers",
+  "pageDescription": "Cloud Servers is a cloud computing service for managing virtual machines on the VK Cloud. Includes management of VM configurations, disks, images, backups, allows you to create a file storage.",
+  "shortDescription": "Rent a cloud server, file and block storage, unlimited support for applications and services",
+  "metaTitle": "Cloud Servers",
+  "metaDescription": "Cloud Servers is a cloud computing service for managing virtual machines on the VK Cloud",
+  "sectionTitle": "Cloud Servers",
+  "markdown": "Cloud Servers is a cloud computing service for managing virtual machines on the VK Cloud. Includes management of VM configurations, disks, images, backups, allows you to create a file storage.",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": [
+    {
+      "text": "Managing with Terraform",
+      "icon": "/docs/_docs/en/manage/tools-for-using-services/terraform/assets/icon.svg",
+      "link": "../../manage/tools-for-using-services/terraform/use-cases/iaas"
+    }],
+  "uuid": "10d14d5d-951f-4ed0-ac2a-c3d706ab1a55"
+}
