@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/networks/dns/private-dns"
+                    "link": "docs/ru/networks/dns/private-dns"
                 },
                 {
-                    "link": "docs/ru/main/networks/dns/publicdns"
+                    "link": "docs/ru/networks/dns/publicdns"
                 }
             ]
         },
@@ -17,7 +17,7 @@
             "title": "API",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/api/api-dns"
+                    "link": "docs/ru/additionals/api/api-dns"
                 }
             ]
         }

@@ -6,26 +6,26 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/additionals/start/get-started/corporate"
+                    "link": "docs/en/additionals/start/get-started/corporate"
                 },
                 {
-                    "link": "docs/en/main/base/account/concepts/quotasandlimits"
+                    "link": "docs/en/base/account/concepts/quotasandlimits"
                 },
                 {
-                    "link": "docs/en/main/base/account/concepts/rolesandpermissions"
+                    "link": "docs/en/base/account/concepts/rolesandpermissions"
                 },
                 {
-                    "link": "docs/en/main/additionals/billing",
+                    "link": "docs/en/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/main/additionals/start/legal"
+                    "link": "docs/en/additionals/start/legal"
                 },
                 {
-                    "link": "docs/en/main/additionals/start/support"
+                    "link": "docs/en/additionals/start/support"
                 },
                 {
-                    "link": "docs/en/main/base/account/faq"
+                    "link": "docs/en/base/account/faq"
                 }
             ]
         },
@@ -33,13 +33,13 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/base/account/quick-start"
+                    "link": "docs/en/base/account/quick-start"
                 },
                 {
-                    "link": "docs/en/main/base/account/instructions/activation"
+                    "link": "docs/en/base/account/instructions/activation"
                 },
                 {
-                    "link": "docs/en/main/additionals/billing/operations/payment",
+                    "link": "docs/en/additionals/billing/operations/payment",
                     "hiddenForPartners": true
                 }
             ]
@@ -48,25 +48,25 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/main/base/account/instructions/project-settings"
+                    "link": "docs/en/base/account/instructions/project-settings"
                 },
                 {
-                    "link": "docs/en/main/base/account/instructions/account-manage"
+                    "link": "docs/en/base/account/instructions/account-manage"
                 },
                 {
-                    "link": "docs/en/main/manage/tools-for-using-services"
+                    "link": "docs/en/manage/tools-for-using-services"
                 },
                 {
-                    "link": "docs/en/main/base/account/instructions/actionslogs"
+                    "link": "docs/en/base/account/instructions/actionslogs"
                 },
                 {
-                    "link": "docs/en/main/base/account/use-cases/systemstate"
+                    "link": "docs/en/base/account/use-cases/systemstate"
                 },
                 {
-                    "link": "docs/en/main/base/account/use-cases/ideasportal"
+                    "link": "docs/en/base/account/use-cases/ideasportal"
                 },
                 {
-                    "link": "docs/en/main/base/account/use-cases/account-delete"
+                    "link": "docs/en/base/account/use-cases/account-delete"
                 }
             ]
         }
