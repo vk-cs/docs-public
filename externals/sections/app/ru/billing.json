@@ -6,11 +6,11 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/billing",
+                    "link": "docs/ru/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/main/additionals/billing/operations/payment",
+                    "link": "docs/ru/additionals/billing/operations/payment",
                     "hiddenForPartners": true
                 }
             ]

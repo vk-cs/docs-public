@@ -6,10 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/manage/backups/db-backup"
+                    "link": "docs/en/manage/backups/db-backup"
                 },
                 {
-                    "link": "docs/en/main/manage/backups/retention-policy"
+                    "link": "docs/en/manage/backups/retention-policy"
                 }
             ]
         },
@@ -17,16 +17,16 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/main/manage/backups/db-backup/db-backup-create"
+                    "link": "docs/en/manage/backups/db-backup/db-backup-create"
                 },
                 {
-                    "link": "docs/en/main/manage/backups/db-backup/manage-db-backups"
+                    "link": "docs/en/manage/backups/db-backup/manage-db-backups"
                 },
                 {
-                    "link": "docs/en/main/manage/backups/db-backup/db-recover-backup"
+                    "link": "docs/en/manage/backups/db-backup/db-recover-backup"
                 },
                 {
-                    "link": "docs/en/main/manage/backups/db-backup/point-in-time-recovery-pitr"
+                    "link": "docs/en/manage/backups/db-backup/point-in-time-recovery-pitr"
                 }
             ]
         },
@@ -34,10 +34,10 @@
             "title": "API",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/api/backup-api"
+                    "link": "docs/ru/additionals/api/backup-api"
                 },
                 {
-                    "link": "docs/en/main/manage/backups/api-examples"
+                    "link": "docs/en/manage/backups/api-examples"
                 }
             ]
         }

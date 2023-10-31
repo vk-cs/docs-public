@@ -6,13 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/main/ml/vision/about-vision"
+                    "link": "docs/ru/ml/vision/about-vision"
                 },
                 {
-                    "link": "docs/ru/main/ml/vision/vision-limits"
+                    "link": "docs/ru/ml/vision/vision-limits"
                 },
                 {
-                    "link": "docs/ru/main/ml/vision/changelog"
+                    "link": "docs/ru/ml/vision/changelog"
                 }
             ]
         },
@@ -20,10 +20,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/main/ml/vision/vision-start/auth-vision"
+                    "link": "docs/ru/ml/vision/vision-start/auth-vision"
                 },
                 {
-                    "link": "docs/ru/main/ml/vision/manage-vision"
+                    "link": "docs/ru/ml/vision/manage-vision"
                 }
             ]
         },
@@ -31,13 +31,13 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/main/ml/vision/vision-integrations/vision-py"
+                    "link": "docs/ru/ml/vision/vision-integrations/vision-py"
                 },
                 {
-                    "link": "docs/ru/main/ml/vision/vision-integrations/vision-php"
+                    "link": "docs/ru/ml/vision/vision-integrations/vision-php"
                 },
                 {
-                    "link": "docs/ru/main/ml/vision/vision-integrations/vision-curl"
+                    "link": "docs/ru/ml/vision/vision-integrations/vision-curl"
                 }
             ]
         },
@@ -45,7 +45,7 @@
             "title": "API",
             "links": [
                 {
-                    "link": "docs/ru/main/additionals/api/vision-api"
+                    "link": "docs/ru/additionals/api/vision-api"
                 }
             ]
         }

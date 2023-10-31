@@ -6,17 +6,17 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/main/base/k8s/concepts"
+                    "link": "docs/en/base/k8s/concepts"
                 },
                 {
-                    "link": "docs/en/main/base/k8s/k8s-reference"
+                    "link": "docs/en/base/k8s/k8s-reference"
                 },
                 {
-                    "link": "docs/en/main/additionals/billing",
+                    "link": "docs/en/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/main/base/account/concepts/quotasandlimits"
+                    "link": "docs/en/base/account/concepts/quotasandlimits"
                 }
             ]
         },
@@ -24,19 +24,19 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/main/base/k8s/quickstart"
+                    "link": "docs/en/base/k8s/quickstart"
                 },
                 {
-                    "link": "docs/en/main/base/k8s/operations/create-cluster"
+                    "link": "docs/en/base/k8s/operations/create-cluster"
                 },
                 {
-                    "link": "docs/en/main/base/k8s/connect/k8s-dashboard"
+                    "link": "docs/en/base/k8s/connect/k8s-dashboard"
                 },
                 {
-                    "link": "docs/en/main/base/k8s/connect/kubectl"
+                    "link": "docs/en/base/k8s/connect/kubectl"
                 },
                 {
-                    "link": "docs/en/main/base/k8s/connect/docker-registry"
+                    "link": "docs/en/base/k8s/connect/docker-registry"
                 }
             ]
         },
@@ -44,22 +44,22 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/main/base/k8s/monitoring"
+                    "link": "docs/en/base/k8s/monitoring"
                 },
                 {
-                    "link": "docs/en/main/base/k8s/install-tools"
+                    "link": "docs/en/base/k8s/install-tools"
                 },
                 {
-                    "link": "docs/en/main/base/k8s/operations/addons"
+                    "link": "docs/en/base/k8s/operations/addons"
                 },
                 {
-                    "link": "docs/en/main/base/k8s/use-cases/ingress"
+                    "link": "docs/en/base/k8s/use-cases/ingress"
                 },
                 {
-                    "link": "docs/en/main/base/k8s/use-cases/local-dns-cache"
+                    "link": "docs/en/base/k8s/use-cases/local-dns-cache"
                 },
                 {
-                    "link": "docs/en/main/base/k8s/use-cases/velero-backup"
+                    "link": "docs/en/base/k8s/use-cases/velero-backup"
                 }
             ]
         }
