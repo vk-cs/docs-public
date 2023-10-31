@@ -13,7 +13,7 @@
    1. Изучите статьи об особенностях оплаты для нужных вам сервисов. Подобные статьи называются Тарификация и лежат в документации искомого сервиса. Например, [статья о тарификации](/ru/base/iaas/tariffication) для сервиса Cloud Servers.
    1. Воспользуйтесь [калькулятором](https://mcs.mail.ru/pricing/) для расчета стоимости нужной вам конфигурации.
 
-1. Ознакомьтесь со списком [отчетных документов](../operations/report), которые платформа предоставляет физическим и юридическим лицам.
+1. Ознакомьтесь со списком [отчетных документов](../concepts/report), которые платформа предоставляет физическим и юридическим лицам.
 1. [Зарегистрируйтесь](/ru/additionals/start/get-started/account-registration#registraciya_v_lichnom_kabinete) в VK Cloud и [подтвердите](/ru/additionals/start/get-started/account-registration#podtverzhdenie_uchetnoy_zapisi) учетную запись. При регистрации для вас будет создан проект в [регионе](/ru/base/account/concepts/regions) Москва.
 
 ## 1. Проверьте баланс проекта
@@ -51,7 +51,7 @@
 <tabpanel>
 
 1. Отключите [автопополнение](../operations/add-card#nastroit_avtopopolnenie) с карты, если оно было включено ранее.
-1. Настройте [электронный документооборот (ЭДО)](../operations/report#elektronnyy_dokumentooborot_edo_c37ca9e4) с VK Cloud, следуя инструкциям вашего оператора ЭДО.
+1. Настройте [электронный документооборот (ЭДО)](../concepts/report#elektronnyy_dokumentooborot_edo_76d587b) с VK Cloud, следуя инструкциям вашего оператора ЭДО.
 
    Если вам нужна помощь с подключением ЭДО, отправьте заявку в отдел документооборота VK Cloud (docs_vktech@vk.company).
 

@@ -7,7 +7,7 @@
   "sectionTitle": "Введение",
   "markdown": "Информация о балансе и оплате.",
   "icon": "",
-  "weight": 0,
+  "weight": 1,
   "infobarItems": null,
   "uuid": "0a957b04-92aa-4eeb-bc04-16f473bcfa6a",
   "additionalUuids": [
