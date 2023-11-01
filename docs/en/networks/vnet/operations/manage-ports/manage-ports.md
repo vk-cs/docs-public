@@ -191,7 +191,7 @@ This is a group operation: you can disable multiple enabled ports at once, if ne
 1. Go to **Virtual networks** → **Networks**.
 1. Click the name of the necessary network, then the name of the necessary subnet.
 1. Navigate to the **Ports** tab.
-1. Enable the port in one of the following ways:
+1. Disable the port in one of the following ways:
 
    - Using the checkboxes:
 
