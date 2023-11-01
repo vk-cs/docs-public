@@ -1,4 +1,4 @@
-You can migrate your resources to VK Cloud using the [Hystax Acura Migration](https://хст.рф/acura-live-cloud-migration-to-vk-cloud/) service without suspending applications. You can transfer resources from both virtual and physical platforms.
+You can migrate your resources to VK Cloud using the [Hystax Acura Migration](https://mcs.mail.ru/app/en/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info/) service without suspending applications. You can transfer resources from both virtual and physical platforms.
 
 <details>
   <summary>Where can I transfer data from?</summary>
