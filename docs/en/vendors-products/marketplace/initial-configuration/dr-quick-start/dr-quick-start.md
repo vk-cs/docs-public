@@ -1,4 +1,4 @@
-You can set up data recovery and IT infrastructure in case of unforeseen circumstances using the service [Hystax Acura Disaster Recovery](https://хст.рф/acura-disaster-recovery-to-vk-cloud/) without suspending applications. Using the service allows you to optimize the indicators:
+You can set up data recovery and IT infrastructure in case of unforeseen circumstances using the service [Hystax Acura Disaster Recovery](https://mcs.mail.ru/app/en/services/marketplace/v2/apps/service/440568b5-e418-431f-9d43-e54eb20ee05a/latest/info/) without suspending applications. Using the service allows you to optimize the indicators:
 
 - Recovery Point Objective (RPO) — the time between the creation of the last backup and the moment of the accident. It can be configured individually for each resource.
 - Recovery Time Objective (RTO) — the time between the response to an accident and the restoration of infrastructure. The service allows you to minimize this indicator.
