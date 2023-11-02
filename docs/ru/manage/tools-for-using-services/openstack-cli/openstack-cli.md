@@ -105,19 +105,19 @@ pip install python-<Название сервиса>client
    1. Скопируйте данные из файла `<название проекта>-openrc.sh` и выполните команды:
 
       ```powershell
-      set OS_INTERFACE="<OS_INTERFACE>"
-      set OS_IDENTITY_API_VERSION="<OS_IDENTITY_API_VERSION>"
-      set OS_PROJECT_ID="<OS_PROJECT_ID>"
-      set OS_REGION_NAME="<OS_REGION_NAME>"
-      set OS_USER_DOMAIN_NAME="<OS_USER_DOMAIN_NAME>"
-      set OS_USERNAME="<OS_USERNAME>"
-      set OS_AUTH_URL="<OS_AUTH_URL>"
+      set OS_INTERFACE=<OS_INTERFACE>
+      set OS_IDENTITY_API_VERSION=<OS_IDENTITY_API_VERSION>
+      set OS_PROJECT_ID=<OS_PROJECT_ID>
+      set OS_REGION_NAME=<OS_REGION_NAME>
+      set OS_USER_DOMAIN_NAME=<OS_USER_DOMAIN_NAME>
+      set OS_USERNAME=<OS_USERNAME>
+      set OS_AUTH_URL=<OS_AUTH_URL>
       ```
 
    2. Укажите пароль, выполнив команду:
 
       ```powershell
-      set OS_PASSWORD="<пароль пользователя проекта>"
+      set OS_PASSWORD=<пароль пользователя проекта>
       ```
 
    </tabpanel>
