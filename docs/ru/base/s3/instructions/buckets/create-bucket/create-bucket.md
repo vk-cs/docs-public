@@ -36,7 +36,6 @@
    После создания бакета изменить его название будет невозможно.
 
 1. Выберите [класс хранения](../../../references#klass_hraneniya). Вы сможете [изменить его](../../change-storage-class) позже.
-1. Выберите [настройку ACL](../../../instructions/access-management/s3-acl#fiksirovannyy_acl). Эта настройка определяет возможность доступа ко всем новым объектам, помещенным в бакет. После создания бакета вы можете изменить настройку ACL для отдельного объекта или всех новых объектов в бакете.
 1. Нажмите кнопку **Добавить бакет**.
 
 </tabpanel>
@@ -86,7 +85,7 @@
    make_bucket: example-bucket
    ```
 
-Будет создан бакет с [классом хранения](../../../references#klass_hraneniya) `Hotbox` и [настройкой ACL](../../../instructions/access-management/s3-acl#fiksirovannyy_acl) `private`.
+Будет создан бакет с [классом хранения](../../../references#klass_hraneniya) `Hotbox`.
 
 </tabpanel>
 <tabpanel>
