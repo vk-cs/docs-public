@@ -6,7 +6,7 @@ Marketplace is a VK Cloud subsystem that provides customers with access to third
 
 You can view the current list of services and applications in the VK Cloud personal account in the section [App Store](https://mcs.mail.ru/app/services/marketplace).
 
-## What is the difference between SaaS and Image Based services?
+## What is the difference between SaaS and image-based services?
 
 The services differ in architecture and pricing, the full list of differences is in the article [About the service](../concepts/about#types_of_services).
 
@@ -20,7 +20,7 @@ The services differ in architecture and pricing, the full list of differences is
 1. With [prepaid payment system](../tariffication/): check if there are enough funds in the project account.
 1. [Update](../instructions/pr-instance-manage#recreating_or_re_updating_a_service_instance) service instance.
 
-## How are SaaS and Image Based services charged?
+## How are SaaS and image-based services charged?
 
 The set of charged resources differs for different types of services, for more information, see the article [Tariffication](../tariffication/).
 
