@@ -2,7 +2,14 @@
 
 ### Machine learning
 
-NVIDIA® Tesla® A100 GPUs are great for training and inferencing deep neural networks with high performance.
+NVIDIA® Tesla® GPUs are great for training and inferencing deep neural networks with high performance.
+
+The available GPU:
+
+- A100 40GB;
+- A100 80GB;
+- V100 16GB;
+- V100S 32GB.
 
 ### High Performance Computing (HPC)
 
@@ -10,9 +17,9 @@ The solution of tasks that require large computing power is easier to carry out 
 
 ### Render graphics on the server side
 
-Server-side graphics rendering speed with the most advanced NVIDIA® Tesla® V100 GPU, far exceeds the rendering speed of a conventional graphics card.
+Server-side graphics rendering speed with the most advanced NVIDIA® Tesla®, far exceeds the rendering speed of a conventional graphics card.
 
-The time to solve problems in deep learning, graphical visualization and high-performance computing can be reduced from days to hours. Whether training neural networks, solving complex design problems or cutting-edge research, get the best performance with NVIDIA® Tesla® V100 and VK Cloud.
+The time to solve problems in deep learning, graphical visualization and high-performance computing can be reduced from days to hours. Whether training neural networks, solving complex design problems or cutting-edge research, get the best performance with NVIDIA® Tesla® and VK Cloud.
 
 ### GPU-accelerated computing in the cloud
 
@@ -22,7 +29,7 @@ Depending on the type of tasks, 1 modern GPU server can replace up to 100 conven
 
 GPU-based cloud computing will take you to a new level of performance and significantly reduce data processing time, while saving your company money.
 
-VK Cloud provides NVIDIA® Tesla® V100 graphics cards with 16 GB of VRAM.
+VK Cloud provides NVIDIA® Tesla® graphics cards with 16 GB of VRAM.
 
 ## Software
 
