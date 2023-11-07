@@ -6,7 +6,7 @@ Marketplace — подсистема VK Cloud, которая предостав
 
 Актуальный список сервисов и приложений вы можете посмотреть в личном кабинете VK Cloud в разделе [Магазин приложений](https://mcs.mail.ru/app/services/marketplace).
 
-## Чем отличаются SaaS и Image Based сервисы?
+## Чем отличаются SaaS и image-based сервисы?
 
 Сервисы различаются архитектурой и тарификацией, полный список отличий в статье [О сервисе](../concepts/about#tipy_servisov).
 
@@ -20,7 +20,7 @@ Marketplace — подсистема VK Cloud, которая предостав
 1. При [предоплатной системе оплаты](../tariffication/): проверьте, достаточно ли средств на счете проекта.
 1. [Обновите](../instructions/pr-instance-manage#peresozdanie_ili_povtornoe_obnovlenie_instansa_servisa) инстанс сервиса.
 
-## Как тарифицируются SaaS и Image Based сервисы?
+## Как тарифицируются SaaS и image-based сервисы?
 
 Набор тарифицируемых ресурсов отличается для разных типов сервисов, подробнее в статье [Тарификация](../tariffication/).
 
