@@ -59,7 +59,8 @@ paths:
         content:
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/persons_set_request'
+              oneOf:
+                $ref: '#/components/schemas/persons_set_request'
       responses:
         '200':
           description: Операция выполнена успешно
@@ -84,7 +85,8 @@ paths:
         content:
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/persons_delete_request'
+              oneOf:
+                $ref: '#/components/schemas/persons_delete_request'
       responses:
         '200':
           description: Операция выполнена успешно
@@ -109,7 +111,8 @@ paths:
         content:
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/persons_truncate_request'
+              oneOf:
+                $ref: '#/components/schemas/persons_truncate_request'
       responses:
         '200':
           description: Операция выполнена успешно
@@ -134,7 +137,8 @@ paths:
         content:
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/persons_recognize_request'
+              oneOf:
+                $ref: '#/components/schemas/persons_recognize_request'
       responses:
         '200':
           description: Операция выполнена успешно
@@ -159,7 +163,8 @@ paths:
         content:
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/objects_detect_request'
+              oneOf:
+                $ref: '#/components/schemas/objects_detect_request'
       responses:
         '200':
           description: Операция выполнена успешно
@@ -184,7 +189,8 @@ paths:
         content:
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/docs_detect_request'
+              oneOf:
+                $ref: '#/components/schemas/docs_detect_request'
       responses:
         '200':
           description: Операция выполнена успешно
@@ -209,7 +215,8 @@ paths:
         content:
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/docs_recognize_request'
+              oneOf:
+                $ref: '#/components/schemas/docs_recognize_request'
       responses:
         '200':
           description: Операция выполнена успешно
@@ -234,7 +241,8 @@ paths:
         content:
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/text_recognize_request'
+              oneOf:
+                $ref: '#/components/schemas/text_recognize_request'
       responses:
         '200':
           description: Операция выполнена успешно
@@ -259,7 +267,8 @@ paths:
         content:
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/scene_text_recognize_request'
+              oneOf:
+                $ref: '#/components/schemas/scene_text_recognize_request'
       responses:
         '200':
           description: Операция выполнена успешно
@@ -284,7 +293,8 @@ paths:
         content:
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/photo_improve_request'
+              oneOf:
+                $ref: '#/components/schemas/photo_improve_request'
       responses:
         '200':
           description: Операция выполнена успешно
@@ -309,7 +319,8 @@ paths:
         content:
           multipart/form-data:
             schema:
-              $ref: '#/components/schemas/adult_detect_request'
+              oneOf:
+                $ref: '#/components/schemas/adult_detect_request'
       responses:
         '200':
           description: Операция выполнена успешно
