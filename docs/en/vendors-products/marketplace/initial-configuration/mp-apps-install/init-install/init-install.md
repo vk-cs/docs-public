@@ -1,6 +1,6 @@
 <warn>
 
-The instruction applies to non-SaaS ans Image Based applications.
+The instruction applies to non-SaaS ans image-based applications.
 
 </warn>
 

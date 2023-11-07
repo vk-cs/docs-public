@@ -17,14 +17,14 @@ By using the services from the app store, you agree to the [user Agreement](/ru/
 VK Cloud supports two types of services:
 
 - SaaS services — centrally installed [multi-tenant](https://habr.com/en/companies/microsoft/articles/145027/) products. The vendor deploys the service either on its own infrastructure, or on the infrastructure in its project in VK Cloud. The user is granted access to the service through a separate account (tenant). The service and its instances are managed on the VK Cloud side.
-- Image Based Services — a product that is deployed based on virtual machine images in the VK Cloud project. Additional infrastructure can be used to maintain the product: virtual networks, load balancers, DBaaS clusters, S3 object storage, backup. The service, its instances, and infrastructure are managed on the VK Cloud side.
+- Image-based services — a product that is deployed based on virtual machine images in the VK Cloud project. Additional infrastructure can be used to maintain the product: virtual networks, load balancers, DBaaS clusters, S3 object storage, backup. The service, its instances, and infrastructure are managed on the VK Cloud side.
 
 Each type of service is initialized in VK Cloud differently:
 
 <tabs>
 <tablist>
 <tab>SaaS</tab>
-<tab>Image Based</tab>
+<tab>Image-based</tab>
 </tablist>
 <tabpanel>
 
@@ -44,9 +44,9 @@ Each type of service is initialized in VK Cloud differently:
 </tabpanel>
 </tabs>
 
-Key differences for SaaS and Image Based services:
+Key differences for SaaS and image-based services:
 
-| Feature / Type | SaaS | Image Based |
+| Feature / Type | SaaS | Image-based |
 | ----- | --- | --- |
 | Infrastructure location | A separate account (tenant) on the side of the supplier company | Project in VK Cloud |
 | Management of the deployed infrastructure via VK Cloud | No | Yes |
