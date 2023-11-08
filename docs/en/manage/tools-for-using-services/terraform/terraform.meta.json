@@ -5,7 +5,7 @@
   "metaTitle": "Terraform",
   "metaDescription": "Using Terraform provider VK Cloud for platform management, quick start and sample manifests.",
   "sectionTitle": "Terraform",
-  "markdown": "Using Terraform provider VK Cloud for platform management, quick start and sample manifests.",
+  "markdown": "Using Terraform provider VK Cloud for platform management, quick start and sample manifests.<br><info>Additional information about the provider and supported resources is available in the VK Cloud [GitHub repository](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).</info>",
   "icon": "",
   "weight": 3,
   "infobarItems": null,
