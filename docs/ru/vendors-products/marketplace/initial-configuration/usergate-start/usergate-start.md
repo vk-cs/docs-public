@@ -26,8 +26,7 @@ UserGate NGFW предоставляется по модели BYOL (Bring Your 
 
 ## Подготовительные шаги
 
-1. [Зарегистрируйтесь](/ru/additionals/start/get-started/account-registration#registraciya_v_lichnom_kabinete) в личном кабинете VK Cloud.
-1. [Подтвердите](/ru/additionals/start/get-started/account-registration#podtverzhdenie_uchetnoy_zapisi) учетную запись.
+1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
 1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
 1. [Разверните](../../instructions/pr-instance-add/) сервис UserGate NGFW:
 

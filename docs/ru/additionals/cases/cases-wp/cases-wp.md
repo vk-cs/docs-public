@@ -4,8 +4,7 @@
 
 ## 1. Подготовительные шаги
 
-1. [Зарегистрируйтесь](/ru/additionals/start/get-started/account-registration#registraciya_v_lichnom_kabinete) в личном кабинете VK Cloud.
-1. [Подтвердите](/ru/additionals/start/get-started/account-registration#podtverzhdenie_uchetnoy_zapisi) учетную запись.
+1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
 1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
 1. [Создайте ВМ](/ru/base/iaas/instructions/vm/vm-create):
 
