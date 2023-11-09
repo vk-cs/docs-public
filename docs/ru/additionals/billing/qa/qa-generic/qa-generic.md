@@ -1,6 +1,6 @@
 ## Как получить бонусы за регистрацию в личном кабинете?
 
-[Бонусы](../../start/balance#bonusy) начисляются при регистрации новой учетной записи. Начисление бонусов происходит после активации сервисов в проекте, когда пройдены все этапы [подтверждения учетной записи](/ru/additionals/start/get-started/account-registration#podtverzhdenie_uchetnoy_zapisi).
+[Бонусы](../../start/balance#bonusy) начисляются при регистрации новой учетной записи. Начисление бонусов происходит после активации сервисов в проекте, когда пройдены все этапы [подтверждения учетной записи](/ru/additionals/start/account-registration#2_podtverdite_uchetnuyu_zapis).
 
 Если бонусы не появились на балансе в течение трех рабочих дней, свяжитесь с [технической поддержкой](/ru/contacts), укажите [идентификатор (PID)](/ru/base/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) и [регион](/ru/base/account/concepts/regions) проекта (**Москва** или **Казахстан**).
 
