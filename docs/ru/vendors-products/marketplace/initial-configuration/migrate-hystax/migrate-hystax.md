@@ -17,8 +17,7 @@
 
 ## 1. Подготовительные шаги
 
-1. [Зарегистрируйтесь](/ru/additionals/start/get-started/account-registration#registraciya_v_lichnom_kabinete) в личном кабинете VK Cloud.
-1. [Подтвердите](/ru/additionals/start/get-started/account-registration#podtverzhdenie_uchetnoy_zapisi) учетную запись.
+1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
 1. [Настройте](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута мигрируемая инфраструктура.
 1. [Подключите](../../instructions/pr-instance-add/) сервис Hystax Acura Migration.
 

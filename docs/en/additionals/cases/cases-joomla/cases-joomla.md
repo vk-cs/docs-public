@@ -2,10 +2,9 @@
 
 This instruction will help you deploy CMS Joomla version 4.3.4 in the Almalinux 9 operating system in VK Cloud, as well as configure a DNS record for domain name access. MySQL 8.0 Single configuration is used as a DBMS.
 
-## 1. Preparatory steps
+## Preparatory steps
 
-1. [Register](/en/additionals/start/get-started/account-registration#registration_in_the_personal_account) at VK Cloud personal account.
-1. [Confirm](/en/additionals/start/get-started/account-registration#account_confirmation) your account.
+1. [Register](/en/additionals/start/account-registration) at VK Cloud.
 1. [Create](/en/networks/vnet/operations/manage-net#creating_a_network) `network1` network with internet access and a subnet with the address `10.0.0.0/24`.
 1. [Create VM](/en/base/iaas/instructions/vm/vm-create):
 

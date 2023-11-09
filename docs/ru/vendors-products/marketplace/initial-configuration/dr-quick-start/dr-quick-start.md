@@ -25,8 +25,7 @@
 
 ## 1. Подготовительные шаги
 
-1. [Зарегистрируйтесь](/ru/additionals/start/get-started/account-registration#registraciya_v_lichnom_kabinete) в личном кабинете VK Cloud.
-1. [Подтвердите](/ru/additionals/start/get-started/account-registration#podtverzhdenie_uchetnoy_zapisi) учетную запись.
+1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
 1. [Настройте](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута восстановленная инфраструктура.
 1. [Создайте ВМ](/ru/base/iaas/instructions/vm/vm-create), для которой будет применяться восстановление. В рамках быстрого старта будет использоваться ВМ `Ubuntu-DR` с операционной системой Ubuntu 18.04.
 1. [Подключите](../../instructions/pr-instance-add/) сервис Hystax Acura Disaster Recovery.

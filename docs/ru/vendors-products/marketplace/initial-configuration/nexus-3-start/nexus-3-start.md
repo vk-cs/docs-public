@@ -4,8 +4,7 @@
 
 Чтобы развернуть сервис Nexus в проекте:
 
-1. [Зарегистрируйтесь](/ru/additionals/start/get-started/account-registration#registraciya_v_lichnom_kabinete) в личном кабинете VK Cloud.
-1. [Подтвердите](/ru/additionals/start/get-started/account-registration#podtverzhdenie_uchetnoy_zapisi) учетную запись.
+1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
 1. [Разверните](../../instructions/pr-instance-add/) сервис Nexus 3:
 
    - Укажите сеть с доступом в интернет. Внешний IP-адрес будет назначен автоматически.

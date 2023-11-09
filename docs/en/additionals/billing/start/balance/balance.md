@@ -28,7 +28,7 @@ Bonuses, or bonus points, are virtual funds credited to the project balance by t
 
  Bonuses are credited:
 
-- When a new account is [registered](../../../start/get-started/account-registration) on the platform. These sign-up bonuses are credited only once, after services are activated in the [project](/en/base/account/concepts/projects) that is created for the account. The amount of bonuses depends on the region of the project:
+- When a new account is [registered](/en/additionals/start/account-registration) on the platform. These sign-up bonuses are credited only once, after services are activated in the [project](/en/base/account/concepts/projects) that is created for the account. The amount of bonuses depends on the region of the project:
 
   - Moscow — 3000 bonuses;
   - Kazakhstan — 24000 bonuses.
