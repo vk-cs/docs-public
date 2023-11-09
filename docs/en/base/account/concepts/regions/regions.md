@@ -1,6 +1,6 @@
 A region is a geographical area that unites [availability zones](/en/additionals/start/it-security/platform-security#availability_zones). Each availability zone has one or more data processing centers (data centers) where cloud infrastructure objects are physically located.
 
-The region is assigned to each [project](../projects) automatically and depends on the URL of the site where the project owner [registered](/en/additionals/start/get-started/account-registration) account.
+The region is assigned to each [project](../projects) automatically and depends on the URL of the site where the project owner [registered](/en/additionals/start/account-registration) account.
 
 You can create objects (for example, virtual machines) only in the availability zone of the region in which the project was created.
 

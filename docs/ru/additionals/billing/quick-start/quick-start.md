@@ -14,7 +14,7 @@
    1. Воспользуйтесь [калькулятором](https://mcs.mail.ru/pricing/) для расчета стоимости нужной вам конфигурации.
 
 1. Ознакомьтесь со списком [отчетных документов](../concepts/report), которые платформа предоставляет физическим и юридическим лицам.
-1. [Зарегистрируйтесь](/ru/additionals/start/get-started/account-registration#registraciya_v_lichnom_kabinete) в VK Cloud и [подтвердите](/ru/additionals/start/get-started/account-registration#podtverzhdenie_uchetnoy_zapisi) учетную запись. При регистрации для вас будет создан проект в [регионе](/ru/base/account/concepts/regions) Москва.
+1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud. При регистрации для вас будет создан проект в [регионе](/ru/base/account/concepts/regions) Москва.
 
 ## 1. Проверьте баланс проекта
 
@@ -55,7 +55,7 @@
 
    Если вам нужна помощь с подключением ЭДО, отправьте заявку в отдел документооборота VK Cloud (docs_vktech@vk.company).
 
-1. [Пройдите дорегистрацию](/ru/additionals/start/get-started/corporate#rekvizity_organizacii), чтобы формировать счета на оплату с полными реквизитами.
+1. [Пройдите дорегистрацию](/ru/additionals/billing/operations/corporate#rekvizity_organizacii), чтобы формировать счета на оплату с полными реквизитами.
 
 </tabpanel>
 </tabs>
