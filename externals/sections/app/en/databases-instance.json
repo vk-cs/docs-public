@@ -6,9 +6,6 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/dbs/dbaas/types"
-                },
-                {
                     "link": "docs/en/dbs/dbaas/concepts/work-configs"
                 },
                 {
