@@ -6,9 +6,6 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/dbs/dbaas/types"
-                },
-                {
                     "link": "docs/ru/dbs/dbaas/concepts/work-configs"
                 },
                 {
