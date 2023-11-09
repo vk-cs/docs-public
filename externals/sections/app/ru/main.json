@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/additionals/start/get-started/corporate"
+                    "link": "docs/ru/additionals/billing/operations/corporate"
                 },
                 {
                     "link": "docs/ru/base/account/concepts/quotasandlimits"
@@ -33,7 +33,8 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/base/account/quick-start"
+                    "link": "docs/ru/additionals/billing/quick-start",
+                    "hiddenForPartners": true
                 },
                 {
                     "link": "docs/ru/base/account/instructions/activation"
