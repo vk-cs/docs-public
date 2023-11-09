@@ -23,10 +23,9 @@ After completing all the steps of a instruction, you will:
 
 By using the Hystax Acura Disaster Recovery service, you agree to the license agreements of [Marketplace](/ru/additionals/start/legal/marketplace "change-lang") and [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use/).
 
-## 1. Preparatory steps
+## Preparatory steps
 
-1. [Register](/en/additionals/start/get-started/account-registration#registration_in_the_personal_account) to VK Cloud personal account.
-1. [Confirm](/en/additionals/start/get-started/account-registration#account_confirmation) user account.
+1. [Register](/en/additionals/start/account-registration) at VK Cloud.
 1. [Configure](/en/base/account/instructions/account-manage/manage-2fa) two-factor authentication (2FA) for the account on whose behalf the restored infrastructure will be deployed.
 1. [Create a VM](/en/base/iaas/instructions/vm/vm-create) for which recovery will be applied. As part of the quick start, the `Ubuntu-DR` VM with the Ubuntu 18.04 operating system will be used.
 1. [Connect](../../instructions/pr-instance-add/) Hystax Acura Disaster Recovery service.

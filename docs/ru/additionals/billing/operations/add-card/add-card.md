@@ -2,7 +2,7 @@
 
 Карта может быть привязана к проекту:
 
-- при [регистрации](../../../start/get-started/account-registration) аккаунта (если требуется);
+- при [регистрации](/ru/additionals/start/account-registration) аккаунта (если требуется);
 - при [активации сервисов](/ru/base/account/instructions/activation) в проекте (если требуется);
 - самостоятельно в любое время.
 
