@@ -38,10 +38,10 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/additionals/migration/migrate-hyperv"
+                    "link": "docs/en/additionals/cases/migration/migrate-hyperv"
                 },
                 {
-                    "link": "docs/en/additionals/migration/migrate-vmware"
+                    "link": "docs/en/additionals/cases/migration/migrate-vmware"
                 },
                 {
                     "link": "docs/en/base/iaas/instructions/vm/vm-console"
