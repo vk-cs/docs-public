@@ -7,5 +7,8 @@
     "sectionTitle": "Creating a DB instance",
     "icon": "",
     "infobarItems": null,
-    "weight": 1
+    "weight": 1,
+    "uuid": "c14f9f6e-6b12-4ae8-871f-994740237ea2",
+    "createdAt": "2023-11-10T10:04:54.000Z",
+    "updatedAt": "2023-11-10T10:04:54.000Z"
 }
