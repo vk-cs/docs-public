@@ -1,13 +1,13 @@
 {
   "title": "Logging",
-  "pageDescription": "",
+  "pageDescription": "Organizing the collection of logs using Fluentd or the ELK stack.",
   "shortDescription": "How to organize centralized log collection using Fluentd or the ELK stack",
   "metaTitle": "Logging",
-  "metaDescription": "",
+  "metaDescription": "Usage scenarios: organization of log collection using Fluentd or ELK stack",
   "sectionTitle": "Logging",
   "markdown": "",
   "icon": "",
   "infobarItems": null,
-  "weight": 5,
+  "weight": 6,
   "uuid": "6d2d06e6-12e5-4d29-9ea5-bb1253b35e92"
 }

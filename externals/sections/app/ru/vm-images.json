@@ -38,10 +38,10 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/additionals/migration/migrate-hyperv"
+                    "link": "docs/ru/additionals/cases/migration/migrate-hyperv"
                 },
                 {
-                    "link": "docs/ru/additionals/migration/migrate-vmware"
+                    "link": "docs/ru/additionals/cases/migration/migrate-vmware"
                 },
                 {
                     "link": "docs/ru/base/iaas/instructions/vm/vm-console"

@@ -2,16 +2,14 @@
 
 Containers are similar to virtual machines, but more lightweight. To isolate containerized application's resources, containers rely on the operation system on which they are running.
 
-You can install Docker CE either manually following this instruction, or from the [marketplace](https://mcs.mail.ru/app/en/services/marketplace/setup/docker/) as the preconfigured Ubuntu 18.04 virtual machine.
-
-## Before you begin the installation
+## Preparatory steps
 
 Make sure that:
 
 - You have an access to the terminal of the Ubuntu 18.04 host, on which you are planning to install Docker CE.
 - You can use `sudo` on that host to run the commands on behalf of superuser (`root`).
 
-## Install Docker CE
+## 1. Install Docker CE
 
 1. Connect to the terminal.
 
@@ -103,7 +101,7 @@ Make sure that:
    sudo apt install docker-ce -y
    ```
 
-## Check the correctness of the installation
+## 2. Check the correctness of the installation
 
 1. Connect to the terminal.
 
