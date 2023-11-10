@@ -7,7 +7,7 @@
   "sectionTitle": "Специальные сервисы",
   "markdown": "Сервисы, предоставляемые в рамках Платформы VK Cloud: 1C:ГРМ, Cloud Managed Services, WAF, AntiDDoS, облако 152-ФЗ, виртуальное частное облако, IoT Platform, Insight BI.",
   "icon": "",
-  "weight": 7,
+  "weight": 5,
   "infobarItems": null,
   "uuid": "08157caa-2c9a-46e5-9d3d-221fb59bac13"
 }

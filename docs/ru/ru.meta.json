@@ -2,7 +2,7 @@
   "title": "Документация",
   "faqLinks": [
     "docs/ru/additionals/start",
-    "docs/ru/additionals/migration",
+    "docs/ru/additionals/cases/migration",
     "docs/ru/additionals/billing",
     "docs/ru/additionals/start/it-security"
   ],

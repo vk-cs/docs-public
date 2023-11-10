@@ -1,9 +1,9 @@
 {
   "title": "Installing and using Docker CE on Linux",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Installing Docker CE on Ubuntu, managing docker containers via Docker CE.",
+  "shortDescription": "How to install Docker CE and use it to manage docker containers",
   "metaTitle": "Installing and using Docker CE on Linux",
-  "metaDescription": "",
+  "metaDescription": "Usage scenarios: how to install Docker CE and use it to manage Docker containers",
   "sectionTitle": "Installing and using Docker CE on Linux",
   "markdown": "",
   "icon": "",
