@@ -1,0 +1,11 @@
+{
+    "title": "Creating a DB instance",
+    "pageDescription": "How to create a DB instance using Terraform in VK Cloud.",
+    "shortDescription": "How to deploy a DB instance and users for it",
+    "metaTitle": "Creating a DB instance",
+    "metaDescription": "Cloud Databases: how to create a database instance using Terraform in VK Cloud",
+    "sectionTitle": "Creating a DB instance",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1
+}
