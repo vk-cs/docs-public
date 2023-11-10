@@ -1,13 +1,13 @@
 {
-  "title": "CI/CD powered by GitLab",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "CI/CD powered by GitLab",
-  "metaDescription": "",
-  "sectionTitle": "CI/CD powered by GitLab",
-  "markdown": "",
+  "title": "CI/CD based on GitLab",
+  "pageDescription": "Automation of application deployment using GitLab based on VK Cloud virtual machines.",
+  "shortDescription": "How to set up automatic deployment of an application to a K8s cluster using GitLab",
+  "metaTitle": "CI/CD based on GitLab",
+  "metaDescription": "Use cases: Instructions for automating deployment using GitLab",
+  "sectionTitle": "CI/CD based on GitLab",
+  "markdown": "This section provides instructions for automating deployment using GitLab.",
   "icon": "",
   "infobarItems": null,
-  "weight": 8,
+  "weight": 4,
   "uuid": "aec35a08-a990-48b0-8bf4-e4f41a0b3bbd"
 }
