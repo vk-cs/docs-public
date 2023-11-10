@@ -1,13 +1,13 @@
 {
   "title": "Use cases",
-  "pageDescription": "VK Cloud provides tools and software packages for implementing a variety of tasks facing system administrators: from using basic services to high-load environments and landscapes. Experienced experts share the most interesting ways to deploy the services necessary to implement the tasks.",
-  "shortDescription": "Installing LAMP, FAMP, ELK, Docker CE on CentOS, Ubuntu and other Linux-based operating systems",
+  "pageDescription": "VK Cloud provides tools and software packages for implementing a variety of tasks facing system administrators: from using basic services to high-load environments and landscapes.",
+  "shortDescription": "Installing LAMP, ELK, Docker CE on CentOS, Ubuntu and other Linux-based operating systems",
   "metaTitle": "Use cases",
   "metaDescription": "VK Cloud provides tools and software packages to implement a variety of tasks facing system administrators.",
   "sectionTitle": "Use cases",
-  "markdown": "VK Cloud provides tools and software packages for implementing a variety of tasks facing system administrators: from using basic services to high-load environments and landscapes. Experienced experts share the most interesting ways to deploy the services necessary to implement the tasks.",
+  "markdown": "VK Cloud provides tools and software packages for implementing a variety of tasks facing system administrators: from using basic services to high-load environments and landscapes. The section contains scenarios for solving popular problems, for which you can use the resources of the platform.",
   "icon": "",
-  "weight": 3,
+  "weight": 4,
   "infobarItems": null,
   "uuid": "66fc6df5-0858-4595-b2d3-46cd2b8502fe",
   "additionalUuids": [
