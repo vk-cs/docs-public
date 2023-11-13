@@ -1,0 +1,20 @@
+{
+  "title": "Концепции",
+  "pageDescription": "Как устроен сервис Cloud Big Data в VK Cloud.",
+  "shortDescription": "Принципы функционирования и устройство Cloud Big Data",
+  "metaTitle": "Концепции",
+  "metaDescription": "VK Cloud: устройство и особенности реализации сервиса Cloud Big Data",
+  "sectionTitle": "Концепции",
+  "markdown": "В разделе содержится информация об архитектуре сервиса, а также список доступных компонентов, которые можно развернуть в кластерах больших данных.",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "additionalUuids": [
+    "6eaa9096-0eee-4033-aa3e-6c1fb7a13a8c",
+    "aeeb54fb-9e9d-4a16-9427-46477c4474bc",
+    "eb57baae-4e8a-4249-b49c-169f960a69cd",
+    "a01ac908-501b-4944-99b8-a916b4d2fe7b",
+    "21b82ddd-71b9-4fe5-a8f8-8fe87be63a1e"
+  ],
+  "uuid": "1029365f-b584-4e61-b10a-6df441929148"
+}

@@ -9,5 +9,9 @@
   "icon": "",
   "weight": 7,
   "infobarItems": null,
+  "additionalUuids": [
+    "e57818fd-d240-4bf5-980e-f87e3c820450",
+    "6c23a90d-81d8-446f-bed9-3119fb047869"
+  ],
   "uuid": "d93b16d5-c976-4fc0-99ac-192ce784b348"
 }
