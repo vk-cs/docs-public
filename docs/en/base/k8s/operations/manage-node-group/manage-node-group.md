@@ -35,7 +35,7 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
    1. Select the necessary virtual machine types and write their names from the **Name** column.
 
-1. Add the [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_node_group.md) resource and the necessary data sources to the Terraform configuration file:
+1. Add the [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) resource and the necessary data sources to the Terraform configuration file:
 
    ```hcl
    ...
@@ -127,7 +127,7 @@ Labels and taints can be set both with the interfaces supported by the VK Cloud 
 </tabpanel>
 <tabpanel>
 
-1. Change the necessary [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_node_group.md) resource in the Terraform configuration file:
+1. Change the necessary [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) resource in the Terraform configuration file:
 
    ```hcl
    ...
@@ -223,7 +223,7 @@ To increase update speed, the container service updates multiple nodes in a grou
 </tabpanel>
 <tabpanel>
 
-1. Add or change the `max_node_unavailable` parameter for the necessary [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_node_group.md) resource in the Terraform configuration file:
+1. Add or change the `max_node_unavailable` parameter for the necessary [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) resource in the Terraform configuration file:
 
    ```hcl
    ...
@@ -287,7 +287,7 @@ The single cluster node group cannot be deleted from the personal account. Howev
 </tabpanel>
 <tabpanel>
 
-1. Delete the necessary [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_node_group.md) resource from the Terraform configuration file.
+1. Delete the necessary [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) resource from the Terraform configuration file.
 
 1. Check correctness of the Terraform configuration file:
 

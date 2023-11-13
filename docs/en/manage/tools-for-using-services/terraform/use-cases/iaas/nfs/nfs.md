@@ -10,7 +10,7 @@ To create NFS, create a file `nfs.tf`, which will describe the configuration of 
 
 When creating NFS, you must specify the network and subnet on which this resource will be created. You can create a network and subnet according to [instruction](../create) and specify them in the **vkcs_networking_network** and **vkcs_networking_subnet** resources in the example below.
 
-If you want to use a network and subnet created in another way, specify them as data source [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/vkcs_networking_network .md) and [vkcs_networking_subnet](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/vkcs_networking_subnet.md) instead of the corresponding resources.
+If you want to use a network and subnet created in another way, specify them as data source [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md) and [vkcs_networking_subnet](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_subnet.md) instead of the corresponding resources.
 
 ### Create NFS
 
