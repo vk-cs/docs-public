@@ -1,0 +1,14 @@
+{
+    "title": "Configuring Java Memory Heap parameters",
+    "pageDescription": "How to configure Java memory settings for cluster components in VK Cloud.",
+    "shortDescription": "How to configure Java memory settings for cluster components",
+    "metaTitle": "Configuring Java Memory Heap parameters",
+    "metaDescription": "The optimal parameters of the Java virtual machine are selected automatically when installing and configuring the cluster, depending on the type of virtual machine.",
+    "sectionTitle": "Configuring Java Memory Heap parameters",
+    "weight": 3,
+    "icon": "",
+    "infobarItems": null,
+    "uuid": "70b872db-0eb3-4d98-ba2e-2ce3a288fd43",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-10-31T06:09:40.000Z"
+}

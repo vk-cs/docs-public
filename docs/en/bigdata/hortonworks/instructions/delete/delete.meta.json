@@ -1,0 +1,17 @@
+{
+    "title": "Deleting",
+    "pageDescription": "Deleting a big data cluster from a VK Cloud project.",
+    "shortDescription": "How to remove a big data cluster from a project using your personal account or using the REST API",
+    "metaTitle": "Deleting",
+    "metaDescription": "VK Cloud: how to remove a Cloud Big Data cluster from a project",
+    "sectionTitle": "Deleting",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 4,
+    "additionalUuids": [
+        "b0351979-6320-4893-bec8-c80fa253d828"
+    ],
+    "uuid": "10ef4ef1-44b7-4c44-84af-dafde2b9c7dc",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-10-31T06:09:40.000Z"
+}

@@ -1,0 +1,14 @@
+{
+    "title": "Настройка параметров Java Memory Heap",
+    "pageDescription": "Как настроить параметры памяти Java для компонентов кластера в VK Cloud.",
+    "shortDescription": "Как настроить параметры памяти Java для компонентов кластера",
+    "metaTitle": "Настройка параметров Java Memory Heap",
+    "metaDescription": "Оптимальные параметры виртуальной машины Java подбираются автоматически при установке и настройке кластера, в зависимости от типа виртуальной машины.",
+    "sectionTitle": "Настройка параметров Java Memory Heap",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "9eeb4086-ba4c-4509-9d89-4f4c86fa93e6",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-11-03T12:41:09.000Z"
+}
