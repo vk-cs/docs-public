@@ -10,7 +10,7 @@
 
 При создании NFS необходимо указать сеть и подсеть, в которой будет создан этот ресурс. Вы можете создать сеть и подсеть в соответствии с [инструкцией](../create) и указать их в ресурсах **vkcs_networking_network** и **vkcs_networking_subnet** в примере внизу.
 
-Если вы хотите использовать сеть и подсеть созданные другим путём, укажите их в качестве data source [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/vkcs_networking_network.md) и [vkcs_networking_subnet](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/vkcs_networking_subnet.md) вместо соответствующих ресурсов.
+Если вы хотите использовать сеть и подсеть созданные другим путём, укажите их в качестве data source [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md) и [vkcs_networking_subnet](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_subnet.md) вместо соответствующих ресурсов.
 
 ### Создание NFS
 
