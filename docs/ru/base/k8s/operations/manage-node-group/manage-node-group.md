@@ -35,7 +35,7 @@
 
    1. Выберите нужные типы виртуальных машин и запишите их имена из колонки **Name**.
 
-1. Добавьте ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_node_group.md) и нужные источники данных в файл конфигурации Terraform:
+1. Добавьте ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) и нужные источники данных в файл конфигурации Terraform:
 
    ```hcl
    ...
@@ -126,7 +126,7 @@
 </tabpanel>
 <tabpanel>
 
-1. Измените нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_node_group.md) в файле конфигурации Terraform :
+1. Измените нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) в файле конфигурации Terraform :
 
    ```hcl
    ...
@@ -222,7 +222,7 @@
 </tabpanel>
 <tabpanel>
 
-1. Добавьте или измените в файле конфигурации Terraform для нужного ресурса [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_node_group.md) параметр `max_node_unavailable`:
+1. Добавьте или измените в файле конфигурации Terraform для нужного ресурса [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) параметр `max_node_unavailable`:
 
    ```hcl
    ...
@@ -286,7 +286,7 @@
 </tabpanel>
 <tabpanel>
 
-1. Удалите нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_node_group.md) из файла конфигурации Terraform.
+1. Удалите нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) из файла конфигурации Terraform.
 
 1. Проверьте конфигурационный файл Terraform на корректность:
 
