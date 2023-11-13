@@ -1,10 +1,13 @@
 {
-  "title": "Tariffication",
-  "pageDescription": "Billing of Cloud Big Data service resources in VK Cloud.",
-  "shortDescription": "Features of service billing and cost calculation",
-  "metaTitle": "Tariffication",
-  "metaDescription": "VK Cloud: features of charging the Cloud Big Data service",
-  "sectionTitle": "Tariffication",
-  "icon": "",
-  "weight": 4
+    "title": "Tariffication",
+    "pageDescription": "Billing of Cloud Big Data service resources in VK Cloud.",
+    "shortDescription": "Features of service billing and cost calculation",
+    "metaTitle": "Tariffication",
+    "metaDescription": "VK Cloud: features of charging the Cloud Big Data service",
+    "sectionTitle": "Tariffication",
+    "icon": "",
+    "weight": 4,
+    "uuid": "be47b8cf-a531-4da4-99e8-13ff4bd14767",
+    "createdAt": "2023-11-13T10:32:21.000Z",
+    "updatedAt": "2023-11-13T10:32:21.000Z"
 }
