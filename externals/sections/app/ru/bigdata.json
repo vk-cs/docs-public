@@ -6,10 +6,8 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/bigdata/hortonworks/bigdata-info/bigdata-architecture"
-                },
-                {
-                    "link": "docs/ru/bigdata/hortonworks/bigdata-limits/bigdata-perf"
+                    "link": "docs/ru/bigdata/hortonworks/tariffication",
+                    "hiddenForPartners": true
                 }
             ]
         },
@@ -17,10 +15,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/bigdata/hortonworks/bigdata-start/create-bigdata"
+                    "link": "docs/ru/bigdata/hortonworks/instructions/create"
                 },
                 {
-                    "link": "docs/ru/bigdata/hortonworks/bigdata-start/delete-bigdata"
+                    "link": "docs/ru/bigdata/hortonworks/instructions/delete"
                 }
             ]
         },
@@ -28,13 +26,10 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/bigdata/hortonworks/bigdata-scale/scale-bigdata-cluster"
+                    "link": "docs/ru/bigdata/hortonworks/instructions/scale"
                 },
                 {
-                    "link": "docs/ru/bigdata/hortonworks/launch-bigdata/access-bigdata-web"
-                },
-                {
-                    "link": "docs/ru/bigdata/hortonworks/bigdata-integrate"
+                    "link": "docs/ru/bigdata/hortonworks/connect"
                 }
             ]
         }
