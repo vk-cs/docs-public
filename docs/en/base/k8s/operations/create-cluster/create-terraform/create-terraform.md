@@ -26,7 +26,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
    <info>
 
-   The following steps list only the basic Terraform resource parameters you need to specify in this file. For a complete list of parameters, see [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs) for [Kubernetes cluster](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_cluster.md).
+   The following steps list only the basic Terraform resource parameters you need to specify in this file. For a complete list of parameters, see [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs) for [Kubernetes cluster](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_cluster.md).
 
    </info>
 

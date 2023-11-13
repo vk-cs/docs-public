@@ -50,7 +50,7 @@
 
    1. Select the desired virtual machine type and write its name from the **Name** column.
 
-1. Change the [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/vkcs_compute_flavor.md) data source in the Terraform configuration file:
+1. Change the [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md) data source in the Terraform configuration file:
 
    ```hcl
 
@@ -111,7 +111,7 @@
 </tabpanel>
 <tabpanel>
 
-1. Change the necessary [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_node_group.md) resource in the Terraform configuration file:
+1. Change the necessary [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) resource in the Terraform configuration file:
 
    ```hcl
    ...
@@ -182,7 +182,7 @@ Once automatic scaling is enabled, the manual scaling settings are no longer in 
 </tabpanel>
 <tabpanel>
 
-1. Change the necessary [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_node_group.md) resource in the Terraform configuration file:
+1. Change the necessary [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) resource in the Terraform configuration file:
 
    ```hcl
    ...

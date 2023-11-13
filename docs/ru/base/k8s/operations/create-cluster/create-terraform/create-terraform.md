@@ -26,7 +26,7 @@
 
    <info>
 
-   В следующих шагах перечислены только основные параметры ресурсов Terraform, которые нужно указать в этом файле. Полный список параметров приведен в [документации](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs) Terraform-провайдера для [кластера Kubernetes](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_cluster.md).
+   В следующих шагах перечислены только основные параметры ресурсов Terraform, которые нужно указать в этом файле. Полный список параметров приведен в [документации](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs) Terraform-провайдера для [кластера Kubernetes](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_cluster.md).
 
    </info>
 
