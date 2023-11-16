@@ -6,8 +6,6 @@ The service centralizes the logs of the entire product system in a single contro
 
 ### Advantages
 
-**Fast start**. Cloud Logging - Managed service. Connect it in 2 clicks: open the desired tab in your VK Cloud personal account and start working with logs without spending time on self-deployment and software configuration.
-
 **Real-time data**. Access to the logs of all your applications or services in real time.
 
 **Convenient search**. In Cloud Logging, you can search, view and analyze logs using text search with additional filters.
