@@ -183,6 +183,7 @@
 ```md
 [Скачать картинку](https://github.com/vk-cs/docs-public/guides/assets/vk_icon_inline.png "download")
 ```
+
 #### Ограничения на URL-адреса
 
 URL-адрес ссылки не должен содержать:
