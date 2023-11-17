@@ -1,5 +1,5 @@
 schemes:
-  - http
+  - https
 swagger: '2.0'
 info:
   description: HTTP API for Cloudlogs
@@ -12,8 +12,8 @@ securityDefinitions:
     name: X-Auth-Token
 security:
   - key: []
-host: cloudlogs.mcs.mail.ru:443
-basePath: /v1
+host: mcs.mail.ru
+basePath: /cloudlogs/v1
 paths:
 
   /swagger.json:
