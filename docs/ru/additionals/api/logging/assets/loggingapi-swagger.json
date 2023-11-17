@@ -1,6 +1,6 @@
 {
   "schemes": [
-    "http"
+    "https"
   ],
   "swagger": "2.0",
   "info": {
@@ -22,8 +22,8 @@
       ]
     }
   ],
-  "host": "cloudlogs.mcs.mail.ru:443",
-  "basePath": "/v1",
+  "host": "mcs.mail.ru",
+  "basePath": "/cloudlogs/v1",
   "paths": {
     "/swagger.json": {
       "get": {
