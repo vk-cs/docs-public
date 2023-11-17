@@ -4,7 +4,7 @@
 1. Убедитесь, что на проекте включен сервис Cloud Logging, при необходимости подключите его через [техническую поддержку](/ru/contacts).
 1. Убедитесь, что [включена](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
 1. [Получите токен доступа](/ru/additionals/cases/case-keystone-token) `X-Subject-Token`.
-1. [Узнайте](https://mcs.mail.ru/app/project/endpoints) эндпоинт для сервиса Cloud Logging; если его нет в списке, используйте `cloudlogs.mcs.mail.ru:443`.
+1. [Узнайте](https://mcs.mail.ru/app/project/endpoints) эндпоинт для сервиса Cloud Logging; если его нет в списке, используйте `https://mcs.mail.ru/cloudlogs`.
 1. Узнайте `service_id` — он может быть базовым или созданным через [техническую поддержку](/ru/contacts). Базовые значения:
 
    - `default` — значение по умолчанию.
