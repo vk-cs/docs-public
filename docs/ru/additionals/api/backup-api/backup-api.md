@@ -9,12 +9,10 @@
 
 </details>
 
-<warn>
+<info>
 
-В данной статье может не отображаться часть полей спецификации — пожалуйста, для разработки используйте исходную спецификацию в формате YAML:
+Спецификация в формате JSON доступна по ссылке: [спецификация](./assets/karboiiapi-swagger.json "download")
 
-[Спецификация в формате YAML](./assets/karboiiapi.yaml "download")
-
-</warn>
+</info>
 
 ![{swagger}](./assets/karboiiapi-swagger.json)
