@@ -19,7 +19,7 @@
 
 <info>
 
-Спецификация в формате JSON доступна по [ссылке](./assets/karboiiapi-swagger.json "download").
+Исходную спецификацию в формате JSON вы можете скачать по [ссылке](./assets/karboiiapi-swagger.json "download").
 
 </info>
 
