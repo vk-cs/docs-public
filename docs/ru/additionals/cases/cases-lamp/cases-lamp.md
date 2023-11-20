@@ -30,7 +30,7 @@
 
    </info>
 
-1. [Создайте](/ru/networks/dns/publicdns#sozdanie_zony) DNS-зону.
+1. [Создайте](/ru/networks/dns/publicdns#sozdanie_dns_zony) DNS-зону.
 
    <warn>
 
