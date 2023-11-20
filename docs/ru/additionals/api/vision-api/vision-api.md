@@ -19,7 +19,7 @@
 
 <info>
 
-Спецификация в формате JSON доступна по [ссылке](./assets/visionapi-swagger.json "download").
+Исходную спецификацию в формате JSON вы можете скачать по [ссылке](./assets/visionapi-swagger.json "download").
 
 </info>
 
