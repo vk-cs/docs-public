@@ -5,7 +5,6 @@ The following versions of Kubernetes aaS from VK Cloud are currently available:
 - 1.26.5
 - 1.25.10
 - 1.24.9
-- 1.23.13
 
 When [creating a new cluster](../../../operations/create-cluster), choose the latest available [version of Kubernetes](#kubernetes_version_support). If possible, [update the cluster](../../../operations/update) to the latest available version. The update procedure is described in [relevant concept section](../../update).
 
@@ -39,7 +38,7 @@ The version history can be viewed at [Kubernetes version history](../version-cha
 
 New features are added to all versions of Kubernetes, unless a feature and version are incompatible.
 
-| Feature                                  | 1.17.x–1.20.x | 1.21.4–1.22.х | 1.23.x–1.26.х |
+| Feature                                  | 1.17.x–1.20.x | 1.21.4–1.22.х | 1.24.x–1.26.х |
 | ---------------------------------------- | ------------- | ------------- | ------ |
 | Node group scaling settings              | +             | +             | +      |
 | Invalidate the key pair                  | +             | +             | -      |
