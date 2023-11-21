@@ -12,6 +12,10 @@
                 {
                     "link": "docs/en/additionals/billing/operations/payment",
                     "hiddenForPartners": true
+                },
+                {
+                    "link": "docs/en/additionals/billing/operations/refund",
+                    "hiddenForPartners": true
                 }
             ]
         }

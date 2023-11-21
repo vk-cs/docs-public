@@ -9,9 +9,6 @@
                     "link": "docs/ru/dbs/adb/adb-info/arenadata"
                 },
                 {
-                    "link": "docs/ru/dbs/adb/adb-limits/adb-limits-perf"
-                },
-                {
                     "link": "docs/ru/additionals/billing",
                     "hiddenForPartners": true
                 }
@@ -22,9 +19,6 @@
             "links": [
                 {
                     "link": "docs/ru/dbs/adb/adb-start/create-adb"
-                },
-                {
-                    "link": "docs/ru/dbs/adb/adb-start/launch-adb"
                 },
                 {
                     "link": "docs/ru/dbs/adb/adb-connect"

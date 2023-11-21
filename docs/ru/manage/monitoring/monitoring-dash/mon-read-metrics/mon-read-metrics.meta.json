@@ -1,7 +1,7 @@
 {
     "title": "Чтение метрик",
     "pageDescription": "",
-    "shortDescription": "",
+    "shortDescription": "Доступные функции и группировки для собираемых метрик",
     "metaTitle": "Чтение метрик",
     "metaDescription": "Cloud Monitoring предоставляет API для получения значения метрик. Сейчас реализована поддержка подмножества языка PromQL для работы с метриками на осно",
     "sectionTitle": "Чтение метрик",

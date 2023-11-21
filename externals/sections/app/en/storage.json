@@ -36,20 +36,6 @@
                 },
                 {
                     "link": "docs/en/base/s3/use-cases/load-large-image"
-                },
-                {
-                    "link": "docs/en/base/s3/use-cases/s3-domain"
-                },
-                {
-                    "link": "docs/en/base/s3/storage-connecting/s3-sdk"
-                }
-            ]
-        },
-        {
-            "title": "API",
-            "links": [
-                {
-                    "link": "docs/ru/additionals/api/s3-rest-api"
                 }
             ]
         }
