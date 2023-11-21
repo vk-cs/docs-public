@@ -1,7 +1,7 @@
 {
     "title": "S3 CLI",
     "pageDescription": "",
-    "shortDescription": "",
+    "shortDescription": "Connecting to Cloud Storage using AWS CLI, s3cmd CLI",
     "metaTitle": "S3 CLI",
     "metaDescription": "The AWS CLI, or AWS Command Line Interface, is a single tool for managing Cloud Storage service based on the AWS S3 toolkit. With just one tool downloaded, it is possi",
     "sectionTitle": "S3 CLI",
