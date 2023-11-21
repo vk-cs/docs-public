@@ -32,6 +32,9 @@
                 },
                 {
                     "link": "docs/en/networks/vnet/use-cases/vip-keepalived"
+                },
+                {
+                    "link": "docs/en/networks/vnet/use-cases/advanced-router"
                 }
             ]
         }

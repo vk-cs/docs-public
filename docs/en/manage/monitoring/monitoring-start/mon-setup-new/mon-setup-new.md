@@ -1,7 +1,6 @@
 The article will tell you how to install monitoring in a new virtual machine.
 
 1. When creating a VM, activate the “Enable monitoring” item.
-    1. This item is available only for VMs based on Linu family OS, only from VK CLoud public images.
 2. Wait for the VM to be created.
 3. Go to the “Monitoring” service.
 4. Create a new dashboard.

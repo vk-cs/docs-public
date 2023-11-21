@@ -1,7 +1,7 @@
 {
     "title": "Architecture",
     "pageDescription": "",
-    "shortDescription": "",
+    "shortDescription": "Features of the implementation of the Cloud Monitoring service",
     "metaTitle": "Architecture",
     "metaDescription": "Cloud Monitoring состоит из нескольких частей: Масштабируемый API по приему метрик\nРаспределенное хранилище метрик\nМасштабируемый API по чт",
     "sectionTitle": "Architecture",
