@@ -12,14 +12,6 @@
                     "link": "docs/ru/networks/dns/publicdns"
                 }
             ]
-        },
-        {
-            "title": "API",
-            "links": [
-                {
-                    "link": "docs/ru/additionals/api/api-dns"
-                }
-            ]
         }
     ]
 }

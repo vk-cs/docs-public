@@ -34,9 +34,6 @@
             "title": "API",
             "links": [
                 {
-                    "link": "docs/ru/additionals/api/backup-api"
-                },
-                {
                     "link": "docs/ru/manage/backups/api-examples"
                 }
             ]
