@@ -1,0 +1,20 @@
+{
+    "meta": "ML Platform",
+    "path": "/services/ml-platform",
+    "groups": [
+        {
+            "title": "INFORMATION",
+            "links": [
+                {
+                    "link": "docs/en/ml/mlplatform/concepts"
+                },
+                {
+                    "link": "docs/en/ml/mlplatform/mlflow"
+                },
+                {
+                    "link": "docs/en/ml/mlplatform/jupyterhub"
+                }
+            ]
+        }
+    ]
+}

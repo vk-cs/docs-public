@@ -6,43 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/manage/cloud-queues/architecture"
-                },
-                {
-                    "link": "docs/ru/manage/cloud-queues/limitations"
-                }
-            ]
-        },
-        {
-            "title": "БЫСТРЫЙ СТАРТ",
-            "links": [
-                {
-                    "link": "docs/ru/manage/cloud-queues/quick-start"
-                }
-            ]
-        },
-        {
-            "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
-            "links": [
-                {
-                    "link": "docs/ru/manage/cloud-queues/management/cli"
-                }
-            ]
-        },
-        {
-            "title": "API",
-            "links": [
-                {
-                    "link": "docs/ru/additionals/api/cloud-queues-api"
-                },
-                {
-                    "link": "docs/ru/manage/cloud-queues/management/request-api"
-                },
-                {
-                    "link": "docs/ru/manage/cloud-queues/management/interpreting-responses"
-                },
-                {
-                    "link": "docs/ru/manage/cloud-queues/api-examples"
+                    "link": "docs/ru/manage/cloud-queues"
                 }
             ]
         }

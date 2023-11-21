@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/ml/mlplatform"
+                    "link": "docs/ru/ml/mlplatform/concepts"
                 },
                 {
                     "link": "docs/ru/ml/mlplatform/mlflow"
@@ -15,7 +15,7 @@
                     "link": "docs/ru/ml/mlplatform/jupyterhub"
                 },
                 {
-                    "link": "docs/ru/ml/mlplatform/concepts"
+                    "link": "docs/ru/ml/mlplatform/mlflowdeploy"
                 }
             ]
         }
