@@ -1,20 +1,26 @@
 С помощью данной спецификации и сервиса https://openapi.tools/ возможна генерация SDK для различных языков программирования, а также генерация страницы с возможностью выполнять приведенные запросы.
 
 <details>
-  <summary markdown="span">Авторизация и аутентификация</summary>
+  <summary markdown="span">Получение эндпоинта, авторизация и аутентификация</summary>
 
-1. Убедитесь, что [включена](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
-1. [Получите токен доступа](/ru/additionals/cases/case-keystone-token) `X-Subject-Token`.
-1. [Узнайте](https://mcs.mail.ru/app/project/endpoints) эндпоинт для сервиса Karboii.
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. [Включите](/ru/base/account/instructions/account-manage/manage-2fa#vklyuchenie_2fa) двухфакторную аутентификацию, если это еще не сделано.
+1. Включите доступ по API, если это еще не сделано:
+
+   1. Нажмите на имя пользователя в шапке страницы и выберите **Безопасность**.
+   1. Hажмите кнопку **Активировать доступ по API**.
+
+1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
+1. Перейдите на вкладку **API Endpoints**.
+1. Найдите в блоке **Сервис OpenStack** эндпоинт **Karboii**.
+1. [Получите](/ru/manage/tools-for-using-services/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
 
 </details>
 
-<warn>
+<info>
 
-В данной статье может не отображаться часть полей спецификации — пожалуйста, для разработки используйте исходную спецификацию в формате YAML:
+Исходную спецификацию в формате JSON вы можете скачать по [ссылке](./assets/karboiiapi-swagger.json "download").
 
-[Спецификация в формате YAML](./assets/karboiiapi.yaml "download")
-
-</warn>
+</info>
 
 ![{swagger}](./assets/karboiiapi-swagger.json)
