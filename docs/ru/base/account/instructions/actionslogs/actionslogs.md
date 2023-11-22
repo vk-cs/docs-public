@@ -86,7 +86,7 @@ to=" \
 
 Пример ответа:
 
-```json 
+```json
 {
   "logs": [
     {
@@ -194,7 +194,7 @@ to=2023-11-15T16:43:00.477Z" \
 
 Пример ответа:
 
-```json 
+```json
 {
   "logs": [
     {
@@ -297,23 +297,23 @@ to=2023-11-15T16:43:00.477Z" \
    -H "X-Auth-Token: gAAAAABlXDFc8RTqKryFlXXXX" \
    -H "Content-Type: application/json" | jq > nova_part1.log
    ```
-   
+
    <info>
-   
+
    Чтобы разбить вывод записей в файл на строки, в примере запроса используется [утилита jq](/ru/manage/tools-for-using-services/rest-api/install-jq).
-   
+
    </info>
 
 2. Получите значение параметра marker из файла nova_part1.log:
 
    Команда:
-   
+
    ```bash
    cat nova_part1.log | grep marker
    ```
-   
+
    Пример ответа:
-   
+
    ```json
    "marker": "eyJ0bSI6MTY5NzM2NDAwMCwib2ZzIjoxMCwidG8iOjE3MDAwNjY1ODAsXXXX"
    ```
@@ -341,7 +341,7 @@ to=2023-11-15T16:43:00.477Z" \
 </tabpanel>
 </tabs>
 
-Для каждого действия предоставлена информация:
+В каждой записи журнала действий представлена информация:
 
 - `event_id` — идентификатор операции.
 - `user_email` — почта пользователя, совершившего операцию.
