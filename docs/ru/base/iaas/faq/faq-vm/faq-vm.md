@@ -92,6 +92,16 @@ VNC-консоль доступна на странице виртуальной
 
 Итерация биллинга происходит раз в час — в течение этого времени изменится расчет стоимости ресурсов.
 
+## Могу ли я задать плавающий IP-адрес для ВМ?
+
+Вы можете [назначить существующий](/ru/networks/vnet/operations/manage-floating-ip#privyazka_plavayushchego_ip_adresa) плавающий IP-адрес для ВМ или [добавить новый](/ru/networks/vnet/operations/manage-floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt) адрес вручную.
+
+<warn>
+
+Назначение нового плавающего IP-адреса происходит случайным образом.
+
+</warn>
+
 ## Какая разница между VPS и VDS?
 
 Видимой разницы нет.
