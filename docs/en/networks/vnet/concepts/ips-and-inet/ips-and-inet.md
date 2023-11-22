@@ -31,6 +31,12 @@ Network objects that need a router with Internet access:
 
   </info>
 
+  <warn>
+
+  The assignment of a new floating IP address and the selection of a subnet from externals network occurs randomly.
+
+  </warn>
+
 ## Public IP address pool of the ext-net external network
 
 On all subnets:
