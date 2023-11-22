@@ -40,7 +40,7 @@
 1. Выполните запрос:
 
    ```bash
-   curl -i -X GET "<Адрес эндпоинта Audit>/logs" -H "X-Auth-Token: <токен>"
+   curl -X GET "<Адрес эндпоинта Audit>/logs" -H "X-Auth-Token: <токен>"
    ```
 
    В запросе (header) можно указать дополнительные параметры:
@@ -54,80 +54,287 @@
    | `limit`  | integer | Количество возвращаемых записей. Если не указан, возвращает 100 записей |
 
 <details>
-    <summary>Пример ответа</summary>
+    <summary>Примеры запросов и ответов</summary>
 
-```json
+<tabs>
+<tablist>
+<tab>Пример 1</tab>
+<tab> Пример 2</tab>
+<tab> Пример 3</tab>
+</tablist>
+<tabpanel>
+
+Получить последние 5 записей из журнала компонента Magnum.
+
+Выполните запрос:
+
+```bash
+curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
+source=magnum&\
+limit=5&\
+from=&\
+to=" \
+-H "X-Auth-Token: gAAAAABlXDFc8RTqKryFlXXX" \
+-H "Content-Type: application/json" | jq
+```
+
+<info>
+
+Чтобы разбить вывод записей в консоль на строки, в примере запроса используется [утилита jq](/ru/manage/tools-for-using-services/rest-api/install-jq).
+
+</info>
+
+Пример ответа:
+
+```json 
 {
-    "logs": [{
-            "action": "instance-update",
-            "event_id": "b34bfd59-3f5b-4352-XXXX-28969024ce20",
-            "method": "PATCH",
-            "request_body": "{\"instance\":{\"datastore_version\":\"14\"}}",
-            "request_id": "req-ed386938-6298-XXXX-b5e6-b804d6fe294a",
-            "response_body": "",
-            "source": "trove",
-            "success": "yes",
-            "timestamp": "2023-05-17T08:18:04Z",
-            "uri": "/v1.0/b5b7ffd4ef0547e5b222f44555dfXXXX/instances/2303fd6c-79cc-XXXX-a574-ddcfac9ec104",
-            "user_email": "examle@example.ex",
-            "user_id": "d98c90595998426f9c69746f02a2XXXX"
-        }, {
-            "action": "instance-update",
-            "event_id": "35d855ec-eaf6-4f5c-XXXX-5daf020985c5",
-            "method": "PATCH",
-            "request_body": "{\"instance\":{\"datastore_version\":\"13\"}}",
-            "request_id": "req-958cad92-5cd9-459c-XXXX-66b0d7a92465",
-            "response_body": "",
-            "source": "trove",
-            "success": "yes",
-            "timestamp": "2023-05-17T07:02:40Z",
-            "uri": "/v1.0/b5b7ffd4ef0547e5b222f44555dfXXXX/instances/2303fd6c-79cc-XXXX-a574-ddcfac9ec104",
-            "user_email": "examle@example.ex",
-            "user_id": "d98c90595998426f9c69746f02a2XXXX"
-        }, {
-            "action": "delete-security-group",
-            "event_id": "1c1b2bd5-5ae2-454c-XXXX-2d79ac98b107",
-            "method": "DELETE",
-            "request_body": "<BINARY_DATA>",
-            "request_id": "req-5f7085cf-a509-4792-XXXX-c6b07c4abf99",
-            "response_body": "",
-            "source": "neutron",
-            "success": "yes",
-            "timestamp": "2023-05-17T07:02:12Z",
-            "uri": "/v2.0/security-groups/5042bd04-23e3-XXXX-9ae8-515cb9e57cb3",
-            "user_email": "examle@example.ex",
-            "user_id": "d98c90595998426f9c69746f02a2XXXX"
-        }, {
-            "action": "delete-volume",
-            "event_id": "983c2077-08f2-472d-XXXX-7d7e2f1a991c",
-            "method": "DELETE",
-            "request_body": "<BINARY_DATA>",
-            "request_id": "req-6c0f9e11-0267-40a8-XXXX-cd43443afb79",
-            "response_body": "",
-            "source": "cinder",
-            "success": "yes",
-            "timestamp": "2023-05-17T07:02:06Z",
-            "uri": "/v2/b5b7ffd4ef0547e5b222f44555dfXXXX/volumes/28b6a795-8467-468e-XXXX-60d2f21d96a4",
-            "user_email": "examle@example.ex",
-            "user_id": "d98c90595998426f9c69746f02a2XXXX"
-        }, {
-            "action": "delete-volume",
-            "event_id": "722b6196-77de-4c95-XXXX-357614133727",
-            "method": "DELETE",
-            "request_body": "<BINARY_DATA>",
-            "request_id": "req-2475b277-5977-XXXX-a31e-323a14a1d2a2",
-            "response_body": "",
-            "source": "cinder",
-            "success": "yes",
-            "timestamp": "2023-05-17T07:02:04Z",
-            "uri": "/v2/b5b7ffd4ef0547e5b222f44555dfXXXX/volumes/f9f2f6d3-f141-4489-XXXX-88406bd9a8ab",
-            "user_email": "examle@example.ex",
-            "user_id": "d98c90595998426f9c69746f02a2XXXX"
-        }
-    ],
-    "marker": "eyJ0bSI6MCwib2ZzIjo1LCJwaWQiOiJiNWI3ZmZkNGVmMDU0N2U1YjIyMmY0NDU1NWRmOGY2XXXX"
+  "logs": [
+    {
+      "action": "unknown",
+      "event_id": "4f6ed6e5-XXXX-dcc2279ba39d",
+      "method": "DELETE",
+      "request_body": "<BINARY_DATA>",
+      "request_id": "req-05134dd5-XXXX-18b29ea5552e",
+      "response_body": "<BINARY_DATA>",
+      "source": "magnum",
+      "success": "yes",
+      "timestamp": "2023-11-20T09:15:11Z",
+      "uri": "/infra/container/v1/nodegroups/XXXX-4eb4e8ec5de9",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+      "user_email": "XXXX@vk.team",
+      "user_id": "d98c90595998426f9c69746f02aXXXX"
+    },
+    {
+      "action": "unknown",
+      "event_id": "00a5def3-XXXX-f0884f24798b",
+      "method": "PATCH",
+      "request_body": "{\"delta\":-1}",
+      "request_id": "req-f697a08b-XXXX-e59c66306dd1",
+      "response_body": "{\"uuid\": \"31a092d7-XXXX\"}",
+      "source": "magnum",
+      "success": "yes",
+      "timestamp": "2023-11-20T09:08:18Z",
+      "uri": "/infra/container/v1/nodegroups/XXXX-4eb4e8ec5de9/actions/scale",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+      "user_email": "XXXX@vk.team",
+      "user_id": "d98c90595998426f9c69746f02aXXXX"
+    },
+    {
+      "action": "unknown",
+      "event_id": "2a1dedc1-XXXX-33a501fef54d",
+      "method": "PATCH",
+      "request_body": "[{\"path\":\"/autoscaling_enabled\",\"value\":false,XXXX}]",
+      "request_id": "req-49ebc8a6-XXXX-955188c4d503",
+      "response_body": "{\"uuid\": \"31a092d7-XXXX\"}",
+      "source": "magnum",
+      "success": "yes",
+      "timestamp": "2023-11-20T09:08:14Z",
+      "uri": "/infra/container/v1/nodegroups/XXXX-4eb4e8ec5de9",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+      "user_email": "XXXX@vk.team",
+      "user_id": "d98c90595998426f9c69746f02aXXXX"
+    },
+    {
+      "action": "cluster-action-create",
+      "event_id": "5dfe65a6-XXXX-bc2871bc6c06",
+      "method": "POST",
+      "request_body": "{\"action\":\"batch_delete_nodes\",\"payload\":{XXXX}}",
+      "request_id": "req-5b79a2b6-XXXX-10a15889fa44",
+      "response_body": "{\"uuid\": \"387f7086-XXXX\"}",
+      "source": "magnum",
+      "success": "yes",
+      "timestamp": "2023-11-20T09:04:48Z",
+      "uri": "/v1/clusters/XXXX-bdbbde213a03/actions",
+      "user_agent": "gophercloud/2.0.0",
+      "user_email": "magnum_sa_XXXX",
+      "user_id": "1a0542667128411e87cd701b45aXXXX"
+    },
+    {
+      "action": "unknown",
+      "event_id": "53d5dc07-XXXX-449241543e02",
+      "method": "PATCH",
+      "request_body": "[{\"path\":\"/autoscaling_enabled\",\"value\":true,XXXX}]",
+      "request_id": "req-cdd4908a-XXXX-2994b1447dbc",
+      "response_body": "{\"uuid\": \"31a092d7-XXXX\"}",
+      "source": "magnum",
+      "success": "yes",
+      "timestamp": "2023-11-20T08:59:11Z",
+      "uri": "/infra/container/v1/nodegroups/XXXX-4eb4e8ec5de9",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+      "user_email": "XXXX@vk.team",
+      "user_id": "d98c90595998426f9c69746f02aXXXX"
+    }
+  ],
+  "marker": "eyJ0bSI6MCwib2ZzIjo1LCJzcmMiOiJtYWdudW0iLCJXXXX"
 }
 ```
+
+</tabpanel>
+<tabpanel>
+
+Получить последние 5 записей за заданный интервал времени из журнала компонента Nova.
+
+Выполните запрос:
+
+```bash
+curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
+source=nova&\
+limit=5&\
+from=2023-10-15T10:00:00.000Z&\
+to=2023-11-15T16:43:00.477Z" \
+-H "X-Auth-Token: gAAAAABlXEVTelmi_XXXX" \
+-H "Content-Type: application/json" | jq
+```
+
+<info>
+
+Чтобы разбить вывод записей в консоль на строки, в примере запроса используется [утилита jq](/ru/manage/tools-for-using-services/rest-api/install-jq).
+
+</info>
+
+Пример ответа:
+
+```json 
+{
+  "logs": [
+    {
+      "action": "create-vm",
+      "event_id": "a2d05902-XXXX-60bce13de1f7",
+      "method": "POST",
+      "request_body": "{\"server\":{\"name\":\"BY-CentOS_prometheus\",\"key_name\":\"ADH-clusterXXXX\",XXXX}}",
+      "request_id": "req-1d76a3f3-XXXX-b695d066e606",
+      "response_body": "{\"server\": {\"security_groups\": [{\"name\": \"71d90a92-XXXX\"}, {\"name\": \"XXXX-aecb77b43bec\"}], XXXX}}",
+      "source": "nova",
+      "success": "yes",
+      "timestamp": "2023-11-15T12:16:26Z",
+      "uri": "/v2.1/servers",
+      "user_agent": "axios/1.4.0",
+      "user_email": "XXXX@vk.team",
+      "user_id": "5f48556ef89444dbab8fa82669dXXXX"
+    },
+    {
+      "action": "vm-action",
+      "event_id": "fc98d3d7-XXXX-c2c5fd8fe619",
+      "method": "POST",
+      "request_body": "{\"addFloatingIp\":{\"address\":\"XXXX\"}}",
+      "request_id": "req-f358678d-XXXX-311861a4ff77",
+      "response_body": "",
+      "source": "nova",
+      "success": "yes",
+      "timestamp": "2023-11-15T09:43:41Z",
+      "uri": "/v2.1/servers/c6be363f-f56c-XXXX/action",
+      "user_agent": "HashiCorp Terraform/1.4.0-dev XXXX gophercloud/2.0.0",
+      "user_id": "649a35d97fc64452b019a0809dXXXX"
+    },
+    {
+      "action": "vm-attach-volume",
+      "event_id": "1af20169-XXXX-e838b3c9d897",
+      "method": "POST",
+      "request_body": "{\"volumeAttachment\":{\"volumeId\":\"a05311f6-bba2-4744-XXXX\"}}",
+      "request_id": "req-b12733ad-XXXX-e9d8eacad17a",
+      "response_body": "{\"volumeAttachment\": {\"device\": \"/dev/vdb\", \"serverId\": \"c6be363f-f56c-XXXX\", XXXX}}",
+      "source": "nova",
+      "success": "yes",
+      "timestamp": "2023-11-15T09:43:38Z",
+      "uri": "/v2.1/servers/c6be363f-f56c-XXXX/os-volume_attachments",
+      "user_agent": "HashiCorp Terraform/1.4.0-dev XXXX gophercloud/2.0.0",
+      "user_id": "649a35d97fc64452b019a0809dXXXX"
+    },
+    {
+      "action": "create-vm",
+      "event_id": "b44645b0-XXXX-7d6026700455",
+      "method": "POST",
+      "request_body": "{\"server\":{\"availability_zone\":\"GZ1\",\"block_device_mapping_v2\":[{\"boot_index\":0,XXXX],\"user_data\":\"XXXX\"}}",
+      "request_id": "req-3dee313b-XXXX-a57e835a81cf",
+      "response_body": "{\"server\": {\"security_groups\": [{\"name\": \"39929c65-XXXX\"}], XXXX}}",
+      "source": "nova",
+      "success": "yes",
+      "timestamp": "2023-11-15T09:43:05Z",
+      "uri": "/v2.1/servers",
+      "user_agent": "HashiCorp Terraform/1.4.0-dev XXXX gophercloud/2.0.0",
+      "user_id": "649a35d97fc64452b019a0809dXXXX"
+    },
+    {
+      "action": "keypair-create",
+      "event_id": "252271c2-XXXX-4f107f482b47",
+      "method": "POST",
+      "request_body": "{\"keypair\":{\"name\":\"39929c65-XXXX\"}}",
+      "request_id": "req-7a3e266c-XXXX-0a9a5d6d2881",
+      "response_body": "{\"keypair\": {\"public_key\": \"ssh-rsa XXXX\", \"private_key\": \"***\", XXXX}}",
+      "source": "nova",
+      "success": "yes",
+      "timestamp": "2023-11-15T09:43:03Z",
+      "uri": "/v2.1/os-keypairs",
+      "user_agent": "HashiCorp Terraform/1.4.0-dev XXXX gophercloud/2.0.0",
+      "user_id": "649a35d97fc64452b019a0809dXXXX"
+    }
+  ],
+  "marker": "eyJ0bSI6MTY5NzM2NDAwMCwib2ZzIjo1LCJXXXX"
+} 
+```
+
+</tabpanel>
+<tabpanel>
+
+Вывести все записи журнала компонента Nova за заданный интервал времени в файлы порциями по 10 записей в файле.
+
+<info>
+
+Записи журнала расположены в обратном порядке по времени: самые последние — в начале журнала.
+
+</info>
+
+Выполните следующие шаги:
+
+1.	Запросите вывод в файл nova_part1.log самых последних 10 записей журнала из интересующего интервала времени:
+
+   ```bash
+   curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
+   source=nova&\
+   limit=10&\
+   from=2023-10-15T10:00:00.000Z&\
+   to=2023-11-15T16:43:00.477Z" \
+   -H "X-Auth-Token: gAAAAABlXDFc8RTqKryFlXXXX" \
+   -H "Content-Type: application/json" | jq > nova_part1.log
+   ```
+   
+   <info>
+   
+   Чтобы разбить вывод записей в файл на строки, в примере запроса используется [утилита jq](/ru/manage/tools-for-using-services/rest-api/install-jq).
+   
+   </info>
+
+2.	Получите значение параметра marker из файла nova_part1.log:
+
+   Команда:
+   
+   ```bash
+   cat nova_part1.log | grep marker
+   ```
+   
+   Пример ответа:
+   
+   ```json
+   "marker": "eyJ0bSI6MTY5NzM2NDAwMCwib2ZzIjoxMCwidG8iOjE3MDAwNjY1ODAsXXXX"
+   ```
+
+3.	Запросите вывод следующих (более ранних по времени) 10 записей журнала в файл nova_part2.log, используя полученное значение параметра marker:
+
+   ```bash
+   curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
+   source=nova&\
+   marker=eyJ0bSI6MTY5NzM2NDAwMCwib2ZzIjoxMCwidG8iOjE3MDAwNjY1ODAsXXXX&\
+   limit=10&\
+   from=2023-10-15T10:00:00.000Z&\
+   to=2023-11-15T16:43:00.477Z" \
+   -H "X-Auth-Token: gAAAAABlXDFc8RTqKryFlXXXX" \
+   -H "Content-Type: application/json" | jq > nova_part2.log
+   ```
+
+4.	Повторяйте предыдущий запрос, меняя в нем только имя файла (например: nova_part3.log, nova_part4.log, …), пока не получите все записи журнала за интересующий интервал времени.
+
+</tabpanel>
+</tabs>
 
 </details>
 
