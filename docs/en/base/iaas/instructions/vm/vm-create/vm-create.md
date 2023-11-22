@@ -52,8 +52,15 @@ The available fields may differ for different operating systems.
        - **Assign external IP**: enable the option if you need access to the virtual machine via the Internet.
 
        If the item is selected `External network (ext-net)`:
+
        - The configuration disk will be used.
        - The virtual machine will be automatically assigned an external IP address.
+
+       <warn>
+
+       The assignment of a floating IP address and the selection of a subnet from external network occurs randomly.
+
+       </warn>
 
    - **Virtual machine key**: select a key for SSH connection or create a new one.
 
