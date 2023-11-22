@@ -1,7 +1,8 @@
 Will be deleted:
 
-- service infrastructure: virtual machines, load balancers.
-- service connection settings.
+- service infrastructure: virtual machines, load balancers;
+- service connection settings;
+- virtual machines deployed to check settings.
 
 Will not be deleted:
 
