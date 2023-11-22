@@ -54,10 +54,50 @@ All existing pools will switch to the new connection settings automatically.
 
 ## Syncing with VPN
 
-Операция доступна после настройки сети и [создания](../desktops-pool/add/) пула.
+The operation is available after the network is [configured](#configuring_the_network_for_the_service_infrastructure) and the pool is [created](../desktops-pool/add/).
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
 1. Go to **Cloud desktops** → **Service settings**.
 1. Click the **Sync with VPN**.
 
    The synchronization status and time will be displayed.
+
+## Checking network settings
+
+To check the network settings, it is not necessary to save the changes in the settings.
+
+<warn>
+
+A virtual machine will be deployed for verification, its name begins with `vdi-checker`. The use of this VM [is charged](/en/base/iaas/tariffication).
+
+</warn>
+
+To check the correctness of the network settings for the service:
+
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to **Cloud desktops** → **Service settings**.
+1. On the **Network settings** tab activate the **Network settings check** option.
+1. Click the **Check connection**.
+1. Wait for the operation to complete.
+
+   To see the detailed result of the check, click **Details**.
+
+## Checking the directory connection settings
+
+To check the connection settings to the user directory, it is not necessary to save the changes in the settings.
+
+<warn>
+
+A virtual machine will be deployed for verification, its name begins with `vdi-checker`. The use of this VM [is charged](/en/base/iaas/tariffication).
+
+</warn>
+
+To check the correctness of the catalog settings for the service:
+
+1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to **Cloud desktops** → **Service settings**.
+1. On the **Directory settings** tab activate the **Directory settings check** option.
+1. Click the **Check connection**.
+1. Wait for the operation to complete.
+
+   To see the detailed result of the check, click **Details**.
