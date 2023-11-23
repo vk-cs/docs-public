@@ -6,9 +6,6 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/manage/monitoring"
-                },
-                {
                     "link": "docs/ru/manage/monitoring/monitoring-info/mon-architecture"
                 },
                 {

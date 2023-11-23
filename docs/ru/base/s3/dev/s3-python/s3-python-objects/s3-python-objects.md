@@ -1,35 +1,5 @@
 Проведя [предварительные настройки сессии](../../../storage-connecting/s3-sdk/), можно приступить к работе с объектами Cloud Storage.
 
-## Загрузка объекта
-
-Загрузка объектов в бакет инициализируется данной командой:
-
-```
-import boto3
-session = boto3.session.Session()
-s3_client = session.client(
-    service_name='s3',
-    endpoint_url='https://hb.vkcs.cloud'
-)
-
-
-test_bucket_name = 'boto3-test-bucket-name'
-
-
-#Загрузка данных из строки
-s3_client.put_object(Body='TEST_TEXT_TEST_TEXT', Bucket=test_bucket_name, Key='test_file.txt')
-
-
-#Загрузка локального файла
-s3_client.upload_file('some_test_file_from_local.txt', test_bucket_name, 'copy_some_test_file.txt')
-
-
-#Загрузка локального файла в директорию внутри бакета
-s3_client.upload_file('some_test_file_from_local.txt', test_bucket_name, 'backup_dir/copy_some_test_file.txt')
-```
-
-Подробное описание команд PUT_OBJECT и UPLOAD_FILE дано в официальной документации библиотеки boto3 по методам [PUT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.put_object) и [UPLOAD](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.upload_file).
-
 ## Копирование объектов между бакетами
 
 Копирование объектов между бакетами можно выполнить следующим образом:

@@ -31,6 +31,12 @@ You can manage floating IP addresses: view, add and remove them from a project, 
 
 ## Adding floating IP address to the project
 
+<warn>
+
+A floating IP address is randomly assigned from a shared pool.
+
+</warn>
+
 <tabs>
 <tablist>
 <tab>Personal account</tab>

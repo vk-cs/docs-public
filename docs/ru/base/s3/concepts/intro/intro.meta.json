@@ -1,7 +1,7 @@
 {
     "title": "О сервисе",
     "pageDescription": "",
-    "shortDescription": "Описание сервиса Cloud Storage и его возможности",
+    "shortDescription": "Описание сервиса Cloud Storage и его возможностей",
     "metaTitle": "О сервисе",
     "metaDescription": "Cloud Storage можно использовать для хранения и извлечения любого объема данных в любое время из любого места в Интернете. Эти задачи",
     "sectionTitle": "О сервисе",
@@ -11,5 +11,5 @@
     "weight": 0,
     "uuid": "d0254c77-2837-4595-8c67-93ba345574a3",
     "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2023-11-03T06:31:50.000Z"
+    "updatedAt": "2023-11-16T07:51:37.000Z"
 }

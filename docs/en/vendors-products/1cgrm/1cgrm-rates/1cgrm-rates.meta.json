@@ -1,7 +1,7 @@
 {
     "title": "Rates and conditions",
     "pageDescription": "",
-    "shortDescription": "",
+    "shortDescription": "Calculation of the cost of using the service, trial period for the first application",
     "metaTitle": "Rates and conditions",
     "metaDescription": "The cost For all software products of the 1C: GRM service, the general principle of cost calculation operates, regardless of the type of application, consi",
     "sectionTitle": "Rates and conditions",
@@ -11,5 +11,5 @@
     "weight": 1,
     "uuid": "79a5eb51-2971-46d0-be58-e005ec266955",
     "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2023-11-03T06:31:50.000Z"
+    "updatedAt": "2023-11-16T07:51:37.000Z"
 }

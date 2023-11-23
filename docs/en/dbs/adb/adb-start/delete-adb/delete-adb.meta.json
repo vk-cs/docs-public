@@ -1,7 +1,7 @@
 {
     "title": "Deleting",
     "pageDescription": "",
-    "shortDescription": "",
+    "shortDescription": "How to delete Arenadata DB cluster",
     "metaTitle": "Deleting",
     "metaDescription": "To delete an Arenadata DB cluster, select the required cluster on the list of analytical database instances and click the",
     "sectionTitle": "Deleting",
@@ -11,5 +11,5 @@
     "weight": 1,
     "uuid": "3eefe365-4d48-4ba4-ba5e-14a26bddfc85",
     "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2023-11-03T06:31:50.000Z"
+    "updatedAt": "2023-11-16T07:51:37.000Z"
 }

@@ -1,7 +1,7 @@
 {
     "title": "Access to the bucket object",
     "pageDescription": "",
-    "shortDescription": "",
+    "shortDescription": "Enabling public access to the bucket",
     "metaTitle": "Access to the bucket object",
     "metaDescription": "Information about objects You can view information about an object when you select a bucket on the Buckets tab of the Object Storage service. All objects o",
     "sectionTitle": "Access to the bucket object",
@@ -11,5 +11,5 @@
     "weight": 6,
     "uuid": "cded53af-f91b-40e8-aac7-cedd59705946",
     "createdAt": "2023-05-29T09:21:30.000Z",
-    "updatedAt": "2023-11-03T06:31:50.000Z"
+    "updatedAt": "2023-11-16T07:51:37.000Z"
 }
