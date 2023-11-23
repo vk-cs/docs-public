@@ -230,7 +230,7 @@ Select **Settings** - `Basic`, and set:
 
    </info>
 
-1. Specify the shared key (PSK) in the `/etc/ipsec.secret` file. The key must match the key specified [previously](#2_set_up_a_vpn_tunnel_on_the_cloud_side):
+1. Specify the shared key (PSK) in the `/etc/ipsec.secrets` file. The key must match the key specified [previously](#2_set_up_a_vpn_tunnel_on_the_cloud_side):
 
    ```ini
    192.0.2.200 192.0.2.100 : PSK "<pre-shared key, specified previously>"
@@ -272,7 +272,7 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
     - **Destination network**: `10.0.0.0/29`.
     - **Intermediate host (Next HOP)**: `172.16.0.5` (IP address of the VPN gateway on the client subnet).
 
-1. Click the **Add Interface** button.
+1. Click the **Add route** button.
 
 </tabpanel>
 </tabs>
