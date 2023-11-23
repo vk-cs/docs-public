@@ -26,7 +26,7 @@ After completing all the steps of a quick start, you will:
 1. Go to **Cloud desktops** → **Service settings**.
 1. In the **Network settings** tab, specify:
 
-    1. **Destination network (CIDR)**: the address of the subnet for which the VPN was configured.
+    1. **IP address space**: the range of IP addresses for the subnets where the service resources will be deployed. Parameter requirements: format — CIDR, minimum network prefix — `/7`, maximum — `/22`.
     1. **Router**: router with VPN network.
     1. **DNS**: DNS subnet name for the service infrastructure.
     1. **Availability zone**: `Moscow (MS1)`.
@@ -34,10 +34,10 @@ After completing all the steps of a quick start, you will:
 1. Click the **Save** button.
 1. In the **Directory settings** tab, specify:
 
-    1. **Host**: The IP address or FQDN of the OpenLDAP server.
+    1. **Host**: the IP address or FQDN of the OpenLDAP server.
     1. **Port**: `389`.
-    1. **Base DN**: directory object to search in AD or LDAP.
-    1. **User DN**: a unique account name in the OpenLDAP database that will be used to synchronize with the account directory.
+    1. **Base DN**: root directory to search for objects in AD or LDAP.
+    1. **User DN**: full path to the account in the OpenLDAP database, which will be used for synchronization with the account directory.
     1. **Password**: the password of the OpenLDAP account specified in **User DN**.
     1. **Selection field**: `UID`.
 

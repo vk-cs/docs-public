@@ -1,0 +1,17 @@
+{
+    "title": "Установка OpenCart на Linux",
+    "pageDescription": "Установка OpenCart 4.0.2.3 на операционную систему Ubuntu 22.04 в VK Cloud.",
+    "shortDescription": "Как установить и настроить OpenCart 4.0.2.3 на Ubuntu 22.04",
+    "metaTitle": "Установка OpenCart на Linux",
+    "metaDescription": "VK Cloud: как установить OpenCart 4.0.2.3 на операционную систему Ubuntu 22.04",
+    "sectionTitle": "Установка OpenCart на Linux",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 14,
+    "uuid": "afd8b8c1-d24b-4d1e-b110-f6e084a1a7d6",
+    "additionalUuids": [
+        "b2969304-7ff1-4fc5-a755-d7ec6fec0ccd"
+    ],
+    "createdAt": "2023-10-12T12:57:48.000Z",
+    "updatedAt": "2023-11-17T14:19:31.000Z"
+}

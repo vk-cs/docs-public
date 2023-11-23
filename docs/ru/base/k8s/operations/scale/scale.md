@@ -49,7 +49,7 @@
 
    1. Выберите нужный тип виртуальной машины и запишите ее имя из колонки **Name**.
 
-1. Измените нужный источник данных [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/vkcs_compute_flavor.md) в файле конфигурации Terraform :
+1. Измените нужный источник данных [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md) в файле конфигурации Terraform :
 
    ```hcl
 
@@ -110,7 +110,7 @@
 </tabpanel>
 <tabpanel>
 
-1. Измените нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_node_group.md) в файле конфигурации Terraform :
+1. Измените нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) в файле конфигурации Terraform :
 
    ```hcl
    ...
@@ -181,7 +181,7 @@
 </tabpanel>
 <tabpanel>
 
-1. Измените нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/vkcs_kubernetes_node_group.md) в файле конфигурации Terraform :
+1. Измените нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) в файле конфигурации Terraform :
 
    ```hcl
    ...

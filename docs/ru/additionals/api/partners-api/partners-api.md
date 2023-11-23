@@ -61,12 +61,10 @@ curl -X GET 'https://mcs.mail.ru/api/v1/partners/mcs1111111111111/invites' \
 
 </details>
 
-<warn>
+<info>
 
-В статье могут быть описаны не все поля спецификации. Для разработки используйте исходную спецификацию в формате YAML:
+Исходную спецификацию в формате JSON вы можете скачать по [ссылке](./assets/partnersapi-swagger.json "download").
 
-[Спецификация в формате YAML](./assets/partnersapi.yaml "download")
-
-</warn>
+</info>
 
 ![{swagger}](./assets/partnersapi-swagger.json)

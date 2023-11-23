@@ -1,9 +1,9 @@
 {
   "title": "Установка и использование Docker CE на Linux",
-  "pageDescription": "",
-  "shortDescription": "",
+  "pageDescription": "Установка Docker CE на Ubuntu, управление docker-контейнерами через Docker CE.",
+  "shortDescription": "Как установить Docker CE и использовать его для управления docker-контейнерами",
   "metaTitle": "Установка и использование Docker CE на Linux",
-  "metaDescription": "",
+  "metaDescription": "Сценарии использования: как установить Docker CE и использовать его для управления контейнерами Docker",
   "sectionTitle": "Установка и использование Docker CE на Linux",
   "markdown": "",
   "icon": "",

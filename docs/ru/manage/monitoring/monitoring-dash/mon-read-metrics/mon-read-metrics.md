@@ -25,5 +25,5 @@ Cloud Monitoring предоставляет API для получения зна
     ```
 
     ```
-    SUM BY(job) (cpu:Average{host="server1", job!="system"}[12h] offset 24h
+    SUM BY(job) (cpu:Average{host="server1", job!="system"}[12h] offset 24h)
     ```

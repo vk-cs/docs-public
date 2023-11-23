@@ -92,6 +92,16 @@ Scaling a VK Cloud virtual machine goes through the steps:
 
 Billing iteration occurs once an hour — during this time, the calculation of the cost of resources will change.
 
+## Can I set a floating IP address for a VM?
+
+You can [assign an existing](/en/networks/vnet/operations/manage-floating-ip#bindind_a_floating_ip_address) floating IP address to the VM, or [add a new](/en/networks/vnet/operations/manage-floating-ip#adding_floating_ip_address_to_the_project) address manually.
+
+<warn>
+
+The assignment of a new floating IP address occurs randomly.
+
+</warn>
+
 ## What is the difference between VPS and VDS?
 
 There is no visible difference.

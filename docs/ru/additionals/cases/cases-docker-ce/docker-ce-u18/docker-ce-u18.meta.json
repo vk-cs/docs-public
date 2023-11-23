@@ -1,6 +1,6 @@
 {
     "title": "Установка Docker CE на операционную систему Ubuntu 18.04",
-    "pageDescription": "",
+    "pageDescription": "Установка Docker CE на Ubuntu, как развернуть Docker CE в операционной системе Linux.",
     "shortDescription": "",
     "metaTitle": "Установка Docker CE на операционную систему Ubuntu 18.04",
     "metaDescription": "Docker CE (Community Edition) – это  платформа для быстрой сборки, отладки и развертывания приложений. Docker CE позволяет быстро разворачивать приложения",
@@ -11,5 +11,5 @@
     "weight": 1,
     "uuid": "e367a732-3bed-4012-86bd-1e37edc1ec11",
     "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2023-11-02T08:09:06.000Z"
+    "updatedAt": "2023-11-16T07:51:37.000Z"
 }
