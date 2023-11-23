@@ -1,15 +1,15 @@
 {
-    "title": "DNS",
-    "pageDescription": "",
+    "title": "Публичный DNS",
+    "pageDescription": "API публичного DNS",
     "shortDescription": "API публичного DNS",
-    "metaTitle": "DNS",
+    "metaTitle": "Публичный DNS",
     "metaDescription": "",
-    "sectionTitle": "DNS",
+    "sectionTitle": "Публичный DNS",
     "markdown": "",
     "icon": "",
     "infobarItems": null,
     "weight": 11,
     "uuid": "828601c4-5d6f-433f-b162-f1c5f44bc7cf",
     "createdAt": "2023-02-02T15:05:34.000Z",
-    "updatedAt": "2023-11-02T08:09:06.000Z"
+    "updatedAt": "2023-11-21T12:24:37.000Z"
 }

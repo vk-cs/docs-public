@@ -1,15 +1,15 @@
 {
-    "title": "Arenadata DB Community",
+    "title": "О сервисе",
     "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Arenadata DB Community",
+    "shortDescription": "Краткая информация об Arenadata DB as a Service",
+    "metaTitle": "О сервисе",
     "metaDescription": "Описание Arenadata DB (ADB) – распределенная СУБД, использующая концепцию MPP (massively parallel processing, массивно-параллельные вычисления) и основанна",
-    "sectionTitle": "Arenadata DB Community",
+    "sectionTitle": "О сервисе",
     "markdown": "",
     "icon": "",
     "infobarItems": null,
     "weight": 0,
     "uuid": "37ca94b6-68e5-4726-ab1f-18a3782f0568",
     "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2023-11-02T08:09:06.000Z"
+    "updatedAt": "2023-11-16T14:16:26.000Z"
 }

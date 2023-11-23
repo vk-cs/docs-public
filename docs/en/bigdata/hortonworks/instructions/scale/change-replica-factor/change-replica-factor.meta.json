@@ -1,0 +1,14 @@
+{
+    "title": "Configuring the Replication Factor",
+    "pageDescription": "Configuring the replication factor of big data cluster files in VK Cloud.",
+    "shortDescription": "How to configure the replication factor for individual files and the cluster as a whole",
+    "metaTitle": "Configuring the Replication Factor",
+    "metaDescription": "VK Cloud: how to configure the replication factor for individual files and the cluster as a whole",
+    "sectionTitle": "Configuring the Replication Factor",
+    "weight": 2,
+    "icon": "",
+    "infobarItems": null,
+    "uuid": "1be7be97-27ad-4eb8-9143-dbcb5fe2f031",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2023-11-16T14:16:26.000Z"
+}

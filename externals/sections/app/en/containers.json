@@ -30,13 +30,7 @@
                     "link": "docs/en/base/k8s/operations/create-cluster"
                 },
                 {
-                    "link": "docs/en/base/k8s/connect/k8s-dashboard"
-                },
-                {
-                    "link": "docs/en/base/k8s/connect/kubectl"
-                },
-                {
-                    "link": "docs/en/base/k8s/connect/docker-registry"
+                    "link": "docs/en/base/k8s/connect"
                 }
             ]
         },

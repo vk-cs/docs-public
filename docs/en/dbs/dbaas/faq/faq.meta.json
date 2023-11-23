@@ -1,10 +1,10 @@
 {
-    "title": "Вопросы и ответы",
-    "pageDescription": "Ответы на часто задаваемые вопросы о сервисе Cloud Databases.",
-    "shortDescription": "Ответы на часто задаваемые вопросы о сервисе Cloud Databases",
-    "metaTitle": "Вопросы и ответы",
-    "metaDescription": "Ответы на часто задаваемые вопросы о сервисе Cloud Databases",
-    "sectionTitle": "Вопросы и ответы",
+    "title": "FAQ",
+    "pageDescription": "Answers to frequently asked questions about the Cloud Databases service.",
+    "shortDescription": "Answers to frequently asked questions about the Cloud Databases service",
+    "metaTitle": "FAQ",
+    "metaDescription": "Answers to frequently asked questions about the Cloud Databases service",
+    "sectionTitle": "FAQ",
     "icon": "",
     "infobarItems": null,
     "weight": 9,
@@ -13,5 +13,5 @@
     ],
     "uuid": "a9e6ebc0-8753-4013-8893-02804358b808",
     "createdAt": "2023-07-17T06:19:42.000Z",
-    "updatedAt": "2023-11-02T08:09:06.000Z"
+    "updatedAt": "2023-11-16T14:16:26.000Z"
 }

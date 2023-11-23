@@ -9,29 +9,13 @@
                     "link": "docs/ru/ml/vision"
                 },
                 {
-                    "link": "docs/ru/ml/vision/vision-rates",
-                    "hiddenForPartners": true
-                },
-                {
                     "link": "docs/ru/ml/vision/manage-vision"
                 },
                 {
                     "link": "docs/ru/ml/cloud-voice"
                 },
                 {
-                    "link": "docs/ru/ml/cloud-voice/pricing",
-                    "hiddenForPartners": true
-                },
-                {
                     "link": "docs/ru/ml/cloud-voice/speech-recognition"
-                }
-            ]
-        },
-        {
-            "title": "API",
-            "links": [
-                {
-                    "link": "docs/ru/additionals/api/vision-api"
                 }
             ]
         }

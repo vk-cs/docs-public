@@ -22,7 +22,7 @@ Changing the created virtual resources (VMs, load balancers, DB instances) outsi
     - **Pool type**: choose one of the options:
 
         - **Sessional** — in such a pool, the desktop is assigned automatically to the user when connected. Use a session pool if you need to deploy a large number of tables of the same configuration with the same set of software. A hot table reserve is provided in the session pool.
-        - **Personalized** — in such a pool, the administrator assigns desktops to specific users. Suitable for deploying desktops with individual configuration for individual users.
+        - **Personalized** — in such a pool, the administrator assigns desktops to specific users. Suitable for deploying desktops with individual configuration for individual users. This type of pool is used most often.
 
     - **Description**: pool description, up to 250 characters.
     - **User group**: specify the user group of the AD or LDAP directory. Desktops from the pool will be assigned to users of this group. Field requirements: from 3 to 100 characters, only Latin letters, symbols are allowed `-`, `_`, `.`, numbers.
@@ -42,14 +42,6 @@ Changing the created virtual resources (VMs, load balancers, DB instances) outsi
     - **User inactivity timeout**: the time after which the user will be disconnected from the desktop if there is no activity in the desktop. The timeout works for the RDP and RX protocols.
 
       If the value is `0`, the user session will not be interrupted by timeout.
-
-    - **Actions at the end of the session**: select what happens to the desktop after the end of the user session:
-
-        - **Delete PC** — delete the desktop.
-        - **Return to hot reserve** — return the desktop to the pool reserve. Available only for session pools.
-        - **Turn off** — turn off the desktop VM. Default option.
-
-        If the parameter is not set, the desktop VM will remain enabled at the end of the session.
 
 1. Click the **Next step** button.
 

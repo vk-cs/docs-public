@@ -1,7 +1,7 @@
 {
     "title": "Приватный DNS",
     "pageDescription": "",
-    "shortDescription": "",
+    "shortDescription": "Управление DNS-зонами, развернутыми в приватных сетях",
     "metaTitle": "Приватный DNS",
     "metaDescription": "Приватный DNS в VK Cloud — функциональность DNS-сервера, работающего в проектных сетях платформы",
     "sectionTitle": "Приватный DNS",
@@ -11,5 +11,5 @@
     "weight": 4,
     "uuid": "3f8770b2-9c18-40ae-b60f-69d73d2ba926",
     "createdAt": "2022-12-27T09:51:35.000Z",
-    "updatedAt": "2023-11-02T08:09:06.000Z"
+    "updatedAt": "2023-11-16T14:16:26.000Z"
 }

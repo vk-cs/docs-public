@@ -1,7 +1,7 @@
 {
     "title": "Speech recognition",
     "pageDescription": "",
-    "shortDescription": "",
+    "shortDescription": "Methods for recognizing audio files and streaming audio",
     "metaTitle": "Speech recognition",
     "metaDescription": "",
     "sectionTitle": "Speech recognition",
@@ -11,5 +11,5 @@
     "weight": 2,
     "uuid": "b7004cb9-462c-40cf-a471-1163246ec17c",
     "createdAt": "2022-07-29T01:42:00.000Z",
-    "updatedAt": "2023-11-02T08:09:06.000Z"
+    "updatedAt": "2023-11-16T14:16:26.000Z"
 }
