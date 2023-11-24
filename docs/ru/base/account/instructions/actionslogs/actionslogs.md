@@ -66,7 +66,7 @@
 <tablist>
 <tab>Последние записи</tab>
 <tab>Записи за период</tab>
-<tab>Использование параметра `marker`</tab>
+<tab>Использование параметра marker</tab>
 </tablist>
 <tabpanel>
 
