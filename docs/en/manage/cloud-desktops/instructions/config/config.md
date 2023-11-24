@@ -1,5 +1,3 @@
-When deleting the last pool, all connection settings will also be deleted.
-
 ## Configuring the network for the service infrastructure
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
