@@ -64,9 +64,9 @@
 
 <tabs>
 <tablist>
-<tab>Пример 1</tab>
-<tab>Пример 2</tab>
-<tab>Пример 3</tab>
+<tab>Последние записи</tab>
+<tab>Записи за период</tab>
+<tab>Использование параметра `marker`</tab>
 </tablist>
 <tabpanel>
 
