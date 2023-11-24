@@ -43,15 +43,21 @@
    curl -X GET "<Адрес эндпоинта Audit>/logs" -H "X-Auth-Token: <токен>"
    ```
 
-   В запросе (header) можно указать дополнительные параметры:
+В запросе (header) можно указать дополнительные параметры:
 
-   | Параметр | Формат | Описание |
-   | --- | --- | --- |
-   | `from`   | [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) | Начало временного диапазона |
-   | `to`     | [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) | Конец временного диапазона |
-   | `source` | string  | Компонент-источник операции |
-   | `marker` | string  | Токен для запроса следующей страницы, ранее возвращенный API. TTL маркеров — 1 час |
-   | `limit`  | integer | Количество возвращаемых записей. Если не указан, возвращает 100 записей |
+| Параметр | Формат | Описание |
+| --- | --- | --- |
+| `from`   | [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) | Начало временного диапазона |
+| `to`     | [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) | Конец временного диапазона |
+| `source` | string  | Компонент-источник операции |
+| `marker` | string  | Токен для запроса следующей страницы, ранее возвращенный API. TTL маркеров — 1 час |
+| `limit`  | integer | Количество возвращаемых записей. Если не указан, возвращает 100 записей |
+
+<info>
+
+Чтобы разбить вывод записей в консоль или файл на строки, ниже в примерах запросов используется [утилита jq](/ru/manage/tools-for-using-services/rest-api/install-jq).
+
+</info>
 
 <details>
     <summary>Примеры запросов и ответов</summary>
@@ -64,25 +70,19 @@
 </tablist>
 <tabpanel>
 
-Получить последние 5 записей из журнала компонента Magnum.
+Получить последние 2 записи из журнала компонента Magnum.
 
 Выполните запрос:
 
 ```bash
 curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
 source=magnum&\
-limit=5&\
+limit=2&\
 from=&\
 to=" \
 -H "X-Auth-Token: gAAAAABlXDFc8RTqKryFlXXX" \
 -H "Content-Type: application/json" | jq
 ```
-
-<info>
-
-Чтобы разбить вывод записей в консоль на строки, в примере запроса используется [утилита jq](/ru/manage/tools-for-using-services/rest-api/install-jq).
-
-</info>
 
 Пример ответа:
 
@@ -118,51 +118,6 @@ to=" \
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
       "user_email": "XXXX@vk.team",
       "user_id": "d98c90595998426f9c69746f02aXXXX"
-    },
-    {
-      "action": "unknown",
-      "event_id": "2a1dedc1-XXXX-33a501fef54d",
-      "method": "PATCH",
-      "request_body": "[{\"path\":\"/autoscaling_enabled\",\"value\":false,XXXX}]",
-      "request_id": "req-49ebc8a6-XXXX-955188c4d503",
-      "response_body": "{\"uuid\": \"31a092d7-XXXX\"}",
-      "source": "magnum",
-      "success": "yes",
-      "timestamp": "2023-11-20T09:08:14Z",
-      "uri": "/infra/container/v1/nodegroups/XXXX-4eb4e8ec5de9",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
-      "user_email": "XXXX@vk.team",
-      "user_id": "d98c90595998426f9c69746f02aXXXX"
-    },
-    {
-      "action": "cluster-action-create",
-      "event_id": "5dfe65a6-XXXX-bc2871bc6c06",
-      "method": "POST",
-      "request_body": "{\"action\":\"batch_delete_nodes\",\"payload\":{XXXX}}",
-      "request_id": "req-5b79a2b6-XXXX-10a15889fa44",
-      "response_body": "{\"uuid\": \"387f7086-XXXX\"}",
-      "source": "magnum",
-      "success": "yes",
-      "timestamp": "2023-11-20T09:04:48Z",
-      "uri": "/v1/clusters/XXXX-bdbbde213a03/actions",
-      "user_agent": "gophercloud/2.0.0",
-      "user_email": "magnum_sa_XXXX",
-      "user_id": "1a0542667128411e87cd701b45aXXXX"
-    },
-    {
-      "action": "unknown",
-      "event_id": "53d5dc07-XXXX-449241543e02",
-      "method": "PATCH",
-      "request_body": "[{\"path\":\"/autoscaling_enabled\",\"value\":true,XXXX}]",
-      "request_id": "req-cdd4908a-XXXX-2994b1447dbc",
-      "response_body": "{\"uuid\": \"31a092d7-XXXX\"}",
-      "source": "magnum",
-      "success": "yes",
-      "timestamp": "2023-11-20T08:59:11Z",
-      "uri": "/infra/container/v1/nodegroups/XXXX-4eb4e8ec5de9",
-      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
-      "user_email": "XXXX@vk.team",
-      "user_id": "d98c90595998426f9c69746f02aXXXX"
     }
   ],
   "marker": "eyJ0bSI6MCwib2ZzIjo1LCJzcmMiOiJtYWdudW0iLCJXXXX"
@@ -172,25 +127,19 @@ to=" \
 </tabpanel>
 <tabpanel>
 
-Получить последние 5 записей за заданный интервал времени из журнала компонента Nova.
+Получить последние 2 записи за заданный интервал времени из журнала компонента Nova.
 
 Выполните запрос:
 
 ```bash
 curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
 source=nova&\
-limit=5&\
+limit=2&\
 from=2023-10-15T10:00:00.000Z&\
 to=2023-11-15T16:43:00.477Z" \
 -H "X-Auth-Token: gAAAAABlXEVTelmi_XXXX" \
 -H "Content-Type: application/json" | jq
 ```
-
-<info>
-
-Чтобы разбить вывод записей в консоль на строки, в примере запроса используется [утилита jq](/ru/manage/tools-for-using-services/rest-api/install-jq).
-
-</info>
 
 Пример ответа:
 
@@ -225,48 +174,6 @@ to=2023-11-15T16:43:00.477Z" \
       "uri": "/v2.1/servers/c6be363f-f56c-XXXX/action",
       "user_agent": "HashiCorp Terraform/1.4.0-dev XXXX gophercloud/2.0.0",
       "user_id": "649a35d97fc64452b019a0809dXXXX"
-    },
-    {
-      "action": "vm-attach-volume",
-      "event_id": "1af20169-XXXX-e838b3c9d897",
-      "method": "POST",
-      "request_body": "{\"volumeAttachment\":{\"volumeId\":\"a05311f6-bba2-4744-XXXX\"}}",
-      "request_id": "req-b12733ad-XXXX-e9d8eacad17a",
-      "response_body": "{\"volumeAttachment\": {\"device\": \"/dev/vdb\", \"serverId\": \"c6be363f-f56c-XXXX\", XXXX}}",
-      "source": "nova",
-      "success": "yes",
-      "timestamp": "2023-11-15T09:43:38Z",
-      "uri": "/v2.1/servers/c6be363f-f56c-XXXX/os-volume_attachments",
-      "user_agent": "HashiCorp Terraform/1.4.0-dev XXXX gophercloud/2.0.0",
-      "user_id": "649a35d97fc64452b019a0809dXXXX"
-    },
-    {
-      "action": "create-vm",
-      "event_id": "b44645b0-XXXX-7d6026700455",
-      "method": "POST",
-      "request_body": "{\"server\":{\"availability_zone\":\"GZ1\",\"block_device_mapping_v2\":[{\"boot_index\":0,XXXX],\"user_data\":\"XXXX\"}}",
-      "request_id": "req-3dee313b-XXXX-a57e835a81cf",
-      "response_body": "{\"server\": {\"security_groups\": [{\"name\": \"39929c65-XXXX\"}], XXXX}}",
-      "source": "nova",
-      "success": "yes",
-      "timestamp": "2023-11-15T09:43:05Z",
-      "uri": "/v2.1/servers",
-      "user_agent": "HashiCorp Terraform/1.4.0-dev XXXX gophercloud/2.0.0",
-      "user_id": "649a35d97fc64452b019a0809dXXXX"
-    },
-    {
-      "action": "keypair-create",
-      "event_id": "252271c2-XXXX-4f107f482b47",
-      "method": "POST",
-      "request_body": "{\"keypair\":{\"name\":\"39929c65-XXXX\"}}",
-      "request_id": "req-7a3e266c-XXXX-0a9a5d6d2881",
-      "response_body": "{\"keypair\": {\"public_key\": \"ssh-rsa XXXX\", \"private_key\": \"***\", XXXX}}",
-      "source": "nova",
-      "success": "yes",
-      "timestamp": "2023-11-15T09:43:03Z",
-      "uri": "/v2.1/os-keypairs",
-      "user_agent": "HashiCorp Terraform/1.4.0-dev XXXX gophercloud/2.0.0",
-      "user_id": "649a35d97fc64452b019a0809dXXXX"
     }
   ],
   "marker": "eyJ0bSI6MTY5NzM2NDAwMCwib2ZzIjo1LCJXXXX"
@@ -297,12 +204,6 @@ to=2023-11-15T16:43:00.477Z" \
    -H "X-Auth-Token: gAAAAABlXDFc8RTqKryFlXXXX" \
    -H "Content-Type: application/json" | jq > nova_part1.log
    ```
-
-   <info>
-
-   Чтобы разбить вывод записей в файл на строки, в примере запроса используется [утилита jq](/ru/manage/tools-for-using-services/rest-api/install-jq).
-
-   </info>
 
 2. Получите значение параметра `marker` из файла `nova_part1.log`:
 
