@@ -1,13 +1,18 @@
 {
   "title": "Концепции",
-  "pageDescription": "Как устроен биллинг в VK Cloud.",
-  "shortDescription": "Как устроен биллинг в VK Cloud",
+  "pageDescription": "Что такое баланс в VK Cloud, какие методы оплаты доступны ФЛ и ЮЛ, как формируются отчетные документы, отличие работы с ФЛ и ЮЛ в VK Cloud.",
+  "shortDescription": "Устройство биллинга: баланс, способы оплаты, особенности для ФЛ и ЮЛ",
   "metaTitle": "Концепции",
-  "metaDescription": "Как устроен биллинг в VK Cloud",
+  "metaDescription": "VK Cloud: понятие баланса в платформе, какие методы оплаты доступны ФЛ и ЮЛ, как формируются отчетные документы, отличие работы с ФЛ и ЮЛ в платформе",
   "sectionTitle": "Концепции",
-  "markdown": "Как устроен биллинг в VK Cloud.",
+  "markdown": "",
   "icon": "",
   "infobarItems": null,
+  "additionalUuids": [
+    "9b742e9c-bef0-432e-8d74-7b65aee3a14c",
+    "3e0fd244-8567-4700-a90f-21bfcc7cdb2a",
+    "0a957b04-92aa-4eeb-bc04-16f473bcfa6a"
+  ],
   "weight": 2,
   "uuid": "bc6eea86-3b1f-4619-b9a0-ed8beb145cbd"
 }
