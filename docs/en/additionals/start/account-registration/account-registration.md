@@ -95,7 +95,7 @@ If you do not immediately confirm the account, when you try to perform an action
    1. Click the **Отправить** button.
    1. Wait for your request to be approved.
 
-1. [Link](/en/base/account/instructions/activation#linking_a_bank_card) a card of [supported payment system](/en/additionals/billing/start/payment-methods). The specified amount will be debited from your card and credited to your project balance.
+1. [Link](/en/base/account/instructions/activation#linking_a_bank_card) a card of [supported payment system](/en/additionals/billing/concepts/payment-methods). The specified amount will be debited from your card and credited to your project balance.
 
    <warn>
 
@@ -105,11 +105,11 @@ If you do not immediately confirm the account, when you try to perform an action
 
    </warn>
 
-1. (Optional) On the **Autopayment** tab that opens, configure the [autopayment](/en/additionals/billing/operations/add-card#auto_completion) settings.
+1. (Optional) On the **Autopayment** tab that opens, configure the [autopayment](/en/additionals/billing/instructions/add-card#configure_auto_completion) settings.
 1. Click **Get started with VK Cloud**.
 1. Wait for your personal account page to open. A message about successful services activation appears.
 
-A [project](/en/base/account/concepts/projects) is automatically created for your account. After the services activation, sign-up [bonuses](/en/additionals/billing/start/balance#bonuses) are credited to your [balance](/en/additionals/billing/start/balance). These bonuses are credited only once after the registration of each new account. If no bonus points are credited within 3 working days, contact [technical support](/en/contacts).
+A [project](/en/base/account/concepts/projects) is automatically created for your account. After the services activation, sign-up [bonuses](/en/additionals/billing/concepts/balance#bonuses) are credited to your [balance](/en/additionals/billing/concepts/balance). These bonuses are credited only once after the registration of each new account. If no bonus points are credited within 3 working days, contact [technical support](/en/contacts).
 
 ## 3. Activate API access
 
@@ -142,7 +142,7 @@ You are the [owner](/en/base/account/concepts/rolesandpermissions) of the projec
 
 ## What's next?
 
-- [Customize](/en/additionals/billing/operations/corporate/) the project to make payments through the legal entity.
+- [Customize](/en/additionals/billing/instructions/corporate/) the project to make payments through the legal entity.
 - [Read](/en/base/account/concepts/quotasandlimits) information about the quotas and limits in VK Cloud projects.
-- Learn about the [payment methods](/en/additionals/billing/operations/payment) available and the key [pricing](/en/base/account/tariffication) model principles.
+- Learn about the [payment methods](/en/additionals/billing/instructions/payment) available and the key [pricing](/en/base/account/tariffication) model principles.
 - Find out how to create and connect a [virtual machine](/en/base/iaas/vm-start), a [Kubernetes cluster](/en/base/k8s/quickstart), a [database](/en/dbs/dbaas/start).

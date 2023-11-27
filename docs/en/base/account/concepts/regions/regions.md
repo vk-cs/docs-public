@@ -14,7 +14,7 @@ The following regions are available:
 
 |            | Moscow             | Kazakhstan              |
 |-------------------------------|--------------------|------------------------|
-| Site URL | https://mcs.mail.ru | https://vkcloud.kz, https://kz.mcs.mail.ru |
+| Site URL | https://cloud.vk.com | https://vkcloud.kz, https://kz.cloud.vk.com/ |
 | Availability zones             | MS1 (KO1), GZ1 | QAZ |
 | Project currency               | Rubles               | Tenge |
 
