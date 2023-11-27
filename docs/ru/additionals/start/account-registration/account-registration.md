@@ -93,7 +93,7 @@
    1. В открывшейся форме заполните поля:
 
       - **Тема**: укажите тему вида `Активация проекта <PID проекта>`.
-      - **Регион**: выберите регион проекта (**Москва** или **Казахстан**).
+      - **Регион**: выберите регион проекта.
       - **Проект**: укажите идентификатор (PID) проекта.
       - **Описание**: напишите причину обращения — требуется проверить учетную запись.
 
@@ -101,7 +101,7 @@
    1. Нажмите кнопку **Отправить**.
    1. Дождитесь одобрения вашей заявки.
 
-1. [Привяжите](/ru/base/account/instructions/activation#privyazka_bankovskoy_karty) карту [поддерживаемой платежной системы](/ru/additionals/billing/start/payment-methods). Указанная сумма будет списана с карты и зачислена на баланс вашего проекта.
+1. [Привяжите](/ru/base/account/instructions/activation#privyazka_bankovskoy_karty) карту [поддерживаемой платежной системы](/ru/additionals/billing/concepts/payment-methods). Указанная сумма будет списана с карты и зачислена на баланс вашего проекта.
 
    <warn>
 
@@ -111,11 +111,11 @@
 
    </warn>
 
-1. (Опционально) На открывшейся вкладке **Автопополнение** настройте [автопополнение](/ru/additionals/billing/operations/add-card#nastroit_avtopopolnenie) баланса.
+1. (Опционально) На открывшейся вкладке **Автопополнение** настройте [автопополнение](/ru/additionals/billing/instructions/add-card#nastroit_avtopopolnenie) баланса.
 1. Нажмите кнопку **Начать работу с VK Cloud**.
 1. Дождитесь перехода в личный кабинет. Будет показано сообщение об успешной активации сервисов.
 
-Для вашей учетной записи будет автоматически создан [проект](/ru/base/account/concepts/projects) VK Cloud. После активации сервисов на [баланс](/ru/additionals/billing/start/balance) проекта будут однократно начислены приветственные [бонусы](/ru/additionals/billing/start/balance#bonusy). Если бонусы не начислены в течение 3 рабочих дней, обратитесь в [техническую поддержку](/ru/contacts).
+Для вашей учетной записи будет автоматически создан [проект](/ru/base/account/concepts/projects) VK Cloud. После активации сервисов на [баланс](/ru/additionals/billing/concepts/balance) проекта будут однократно начислены приветственные [бонусы](/ru/additionals/billing/concepts/balance#bonusy). Если бонусы не начислены в течение 3 рабочих дней, обратитесь в [техническую поддержку](/ru/contacts).
 
 ## 3. Активируйте доступ по API
 
@@ -148,7 +148,7 @@ VK Cloud поддерживает работу с платформой при п
 
 ## Что дальше?
 
-- [Донастройте](/ru/additionals/billing/operations/corporate/) проект для проведения оплаты через ЮЛ.
+- [Донастройте](/ru/additionals/billing/instructions/corporate/) проект для проведения оплаты через ЮЛ.
 - [Ознакомьтесь](/ru/base/account/concepts/quotasandlimits) с квотами и лимитами проектов VK Cloud.
-- Ознакомьтесь со [способами пополнения баланса](/ru/additionals/billing/operations/payment) и базовыми принципами [тарификации](/ru/base/account/tariffication) сервисов.
+- Ознакомьтесь со [способами пополнения баланса](/ru/additionals/billing/instructions/payment) и базовыми принципами [тарификации](/ru/base/account/tariffication) сервисов.
 - Узнайте, как создать и подключить [виртуальную машину](/ru/base/iaas/quick-start), [кластер Kubernetes](/ru/base/k8s/quickstart), [базу данных](/ru/dbs/dbaas/start).

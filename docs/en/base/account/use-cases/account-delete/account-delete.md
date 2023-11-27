@@ -18,4 +18,4 @@ To delete an account:
 
     You will be contacted for confirmation. Deletion is possible only after correspondence with the user from his registered mail.
 
-1. If necessary, perform [refund](/en/additionals/billing/operations/refund).
+1. If necessary, perform [refund](/en/additionals/billing/instructions/refund).
