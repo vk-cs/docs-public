@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/additionals/billing/operations/corporate"
+                    "link": "docs/ru/additionals/billing/instructions/corporate"
                 },
                 {
                     "link": "docs/ru/base/account/concepts/quotasandlimits"
@@ -40,7 +40,7 @@
                     "link": "docs/ru/base/account/instructions/activation"
                 },
                 {
-                    "link": "docs/ru/additionals/billing/operations/payment",
+                    "link": "docs/ru/additionals/billing/instructions/payment",
                     "hiddenForPartners": true
                 }
             ]
