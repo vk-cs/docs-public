@@ -1,0 +1,14 @@
+{
+    "title": "Payment methods",
+    "pageDescription": "Payment methods for the VK Cloud project in the Moscow region, payment methods for the project in the Kazakhstan region.",
+    "shortDescription": "Available payment methods depending on the region",
+    "metaTitle": "Payment methods",
+    "metaDescription": "VK Cloud: available payment methods depending on the region",
+    "sectionTitle": "Payment methods",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "380afae3-e63e-4599-98ca-5bafa2b05a98",
+    "createdAt": "2022-04-07T07:18:11.000Z",
+    "updatedAt": "2023-11-15T08:37:29.000Z"
+}

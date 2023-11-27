@@ -14,7 +14,7 @@
 
 |            | Москва             | Казахстан              |
 |-------------------------------|--------------------|------------------------|
-| URL сайта | https://mcs.mail.ru | https://vkcloud.kz, https://kz.mcs.mail.ru |
+| URL сайта | https://cloud.vk.com | https://vkcloud.kz, https://kz.cloud.vk.com/ |
 | Зоны доступности              | MS1 (KO1), GZ1 | QAZ |
 | Валюта проектов                | Рубли               | Тенге |
 

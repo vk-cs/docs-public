@@ -32,7 +32,7 @@
 
 </info>
 
-Подробнее об управлении картой в статье [Операции с банковской картой](/ru/additionals/billing/operations/add-card).
+Подробнее об управлении картой в статье [Операции с банковской картой](/ru/additionals/billing/instructions/add-card).
 
 <err>
 

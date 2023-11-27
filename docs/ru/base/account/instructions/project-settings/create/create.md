@@ -35,8 +35,8 @@
 
 1. [Привяжите](../../../instructions/activation#privyazka_bankovskoy_karty) карту оплаты, если она еще не привязана.
 
-1. [Пополните](/ru/additionals/billing/operations/payment) баланс проекта, чтобы начать пользоваться сервисами.
+1. [Пополните](/ru/additionals/billing/instructions/payment) баланс проекта, чтобы начать пользоваться сервисами.
 
-    У проектов, созданных пользователями, [баланс](/ru/additionals/billing/start/balance) изначально составляет 0 рублей. [Приветственные бонусы](/ru/additionals/billing/concepts/bonus) для таких проектов не начисляются.
+    У проектов, созданных пользователями, [баланс](/ru/additionals/billing/concepts/balance) изначально составляет 0 рублей. [Приветственные бонусы](/ru/additionals/billing/concepts/bonus) для таких проектов не начисляются.
 
    Подробнее о стоимости сервисов в [статье о тарификации](../../../tariffication).

@@ -35,8 +35,8 @@ To create a project:
 
 1. [Link](../../../instructions/activation#linking_a_bank_card) the payment card if it is not already linked.
 
-1. [Top up](/en/additionals/billing/operations/payment) the project balance to start using the services.
+1. [Top up](/en/additionals/billing/instructions/payment) the project balance to start using the services.
 
-    Projects created by users have [balance](/en/additionals/billing/start/balance) initially it is 0 rubles. [Welcome bonuses](/en/additionals/billing/concepts/bonus) are not awarded for such projects.
+    Projects created by users have [balance](/en/additionals/billing/concepts/balance) initially it is 0 rubles. [Welcome bonuses](/en/additionals/billing/concepts/bonus) are not awarded for such projects.
 
    Learn more about the cost of services in the [article on pricing](../../../tariffication).
