@@ -1,6 +1,6 @@
 Tariffication is based on the “pay as you go” principle: you are charged only for the resources you consume to the nearest minute, the fee for using paid OS is charged once a day.
 
-The cost of network services is given in [price list](https://mcs.mail.ru/pricelist). You can use [calculator](https://mcs.mail.ru/en/pricing/) to calculate the total cost of platform services.
+The cost of network services is given in [price list](https://cloud.vk.com/pricelist). You can use [calculator](https://cloud.vk.com/en/pricing/) to calculate the total cost of platform services.
 
 Available operations:
 
@@ -14,6 +14,6 @@ The total cost will be displayed in the line **Final calculation**.
 
 <warn>
 
-The total cost is rounded to **two decimal places**. A similar principle applies for [detailing](../operations/detail/) and  [accounting documents](../operations/report/).
+The total cost is rounded to **two decimal places**. A similar principle applies for [detailing](../instructions/detail/) and  [accounting documents](../concepts/report/).
 
 </warn>

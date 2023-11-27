@@ -6,7 +6,7 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/additionals/billing/operations/corporate"
+                    "link": "docs/en/additionals/billing/instructions/corporate"
                 },
                 {
                     "link": "docs/en/base/account/concepts/quotasandlimits"
@@ -36,7 +36,7 @@
                     "link": "docs/en/base/account/instructions/activation"
                 },
                 {
-                    "link": "docs/en/additionals/billing/operations/payment",
+                    "link": "docs/en/additionals/billing/instructions/payment",
                     "hiddenForPartners": true
                 }
             ]
