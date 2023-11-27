@@ -13,10 +13,10 @@ export const config = {
         url: 'https://support.mcs.mail.ru/login/oauth2/authorization/vkcloud',
     },
     auth: {
-        appUrl: 'https://mcs.mail.ru/app',
-        signUpUrl: 'https://mcs.mail.ru/app/signup',
-        signInUrl: 'https://mcs.mail.ru/app/signin',
-        signOutUrl: 'https://mcs.mail.ru/app/signout',
+        appUrl: 'https://msk.cloud.vk.com/app',
+        signUpUrl: 'https://msk.cloud.vk.com/app/signup',
+        signInUrl: 'https://msk.cloud.vk.com/app/signin',
+        signOutUrl: 'https://msk.cloud.vk.com/app/signout',
     },
     github: {
         repoUrl: 'https://github.com/vk-cs/docs-public',
