@@ -79,7 +79,7 @@
 
    1. Скопируйте [идентификатор (PID)](/ru/base/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) вашего проекта из URL сайта VK Cloud.
 
-      Пример URL для региона Москва: `https://mcs.mail.ru/app/mcs123456789/main`, где `mcs123456789` — идентификатор (PID) проекта.
+      Пример URL для региона Москва: `https://msk.cloud.vk.com/app/mcs123456789/main`, где `mcs123456789` — идентификатор (PID) проекта.
 
    1. На экране подтверждения нажмите кнопку **Обратиться в поддержку**.
    1. На открывшейся странице [портала технической поддержки](https://support.mcs.mail.ru) нажмите кнопку **Новая заявка**.

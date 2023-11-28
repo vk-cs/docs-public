@@ -4,7 +4,7 @@
 1. Click the **Contact sales** button.
 1. Fill the fields in the form:
 
-    - if you have not previously been registered in your VK Cloud [personal account](https://mcs.mail.ru/app/):
+    - if you have not previously been registered in your VK Cloud [personal account](https://msk.cloud.vk.com/app/):
 
         - **Name**: name or full name to contact about the request.
         - **Email**: the contact email address to which the invitation will be sent and the partner's personal account will be linked.

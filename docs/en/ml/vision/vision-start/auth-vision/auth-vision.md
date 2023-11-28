@@ -32,13 +32,13 @@ As part of authorization through mcs, 2 types of token are supported:
 
 The token that is the easiest to generate, it has no restrictions on the lifetime and the number of tokens of this type.
 
-The token is generated on the user's page in [personal account](https://mcs.mail.ru/app/services/machinelearning/vision/).
+The token is generated on the user's page in [personal account](https://msk.cloud.vk.com/app/services/machinelearning/vision/).
 
 ## access_token
 
 To obtain this token, the [OAuth 2.0](https://ru.wikipedia.org/wiki/OAuth#OAuth_2.0) protocol is used.
 
-To get the first **access_token**, you need to send a request to the authorization server (see below) with the mcs client ID (client_id) and secret key (client_secret) from [personal account](https://mcs.mail.ru/app/ services/machinelearning/vision/).
+To get the first **access_token**, you need to send a request to the authorization server (see below) with the mcs client ID (client_id) and secret key (client_secret) from [personal account](https://msk.cloud.vk.com/app/ services/machinelearning/vision/).
 
 In response, 2 tokens will be received from the server:
 
@@ -87,11 +87,11 @@ curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 
 ## client_id
 
-The client ID on the mcs platform is taken from the [personal account] page (https://mcs.mail.ru/app/services/machinelearning/vision/).
+The client ID on the mcs platform is taken from the [personal account] page (https://msk.cloud.vk.com/app/services/machinelearning/vision/).
 
 ## client_secret
 
-The secret key is taken from the [personal account] page (https://mcs.mail.ru/app/services/machinelearning/vision/).
+The secret key is taken from the [personal account] page (https://msk.cloud.vk.com/app/services/machinelearning/vision/).
 
 ## grant_type
 

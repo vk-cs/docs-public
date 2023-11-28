@@ -151,7 +151,7 @@ To configure the load balancer:
 
 1. Create a balancer:
 
-   1. Go to [personal account](https://mcs.mail.ru/app/) VK Cloud.
+   1. Go to [personal account](https://msk.cloud.vk.com/app/) VK Cloud.
    1. Select the project where the desired cluster is located.
    1. Go to **Virtual networks → Load balancers**.
    1. Click the **Add** button.

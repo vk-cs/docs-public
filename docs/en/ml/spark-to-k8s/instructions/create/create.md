@@ -4,7 +4,7 @@
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/).
 1. Select the project where you want to create a cluster.
 1. Go to **ML Platform → Spark in k8s**.
 1. Go to **Clusters** tab.

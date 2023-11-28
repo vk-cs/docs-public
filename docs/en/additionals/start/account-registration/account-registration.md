@@ -73,7 +73,7 @@ If you do not immediately confirm the account, when you try to perform an action
 
    1. Copy the [identifier (PID)](/en/base/account/instructions/project-settings/manage#getting_the_project_id) of your project from the VK Cloud site URL.
 
-      An example for the region Moscow: `https://mcs.mail.ru/app/mcs123456789/main`, where `mcs123456789` is the project identifier (PID).
+      An example for the region Moscow: `https://msk.cloud.vk.com/app/mcs123456789/main`, where `mcs123456789` is the project identifier (PID).
 
    1. Click **Contact support**.
    1. On the [technical support portal](https://support.mcs.mail.ru) page that opens click the **Новая заявка** button.

@@ -23,7 +23,7 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
 
 ### 1.1. Create a cluster
 
-1. Go to [personal account](https://mcs.mail.ru/app/) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/) VK Cloud.
 1. Select [project](../../../base/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. If there are no clusters in the selected project yet, click **Create cluster**.
@@ -142,7 +142,7 @@ Install the following tools on the host:
 
 1. Add the **Administrator Kubernetes** role in personal account for the user on whose behalf the connection to the cluster will be performed:
 
-   1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/).
+   1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/).
    1. Select the project where the previously created cluster is located.
    1. Go to **Manage access**.
    1. Expand the menu of the desired user and select **Edit**.
@@ -151,7 +151,7 @@ Install the following tools on the host:
 
 1. [Activate API access](https://mcs.mail.ru/docs/en/base/account/project/api/api-access#activate-api-access) for this user.
 
-1. Get kubeconfig for the cluster in [VK Cloud personal account](https://mcs.mail.ru/app/):
+1. Get kubeconfig for the cluster in [VK Cloud personal account](https://msk.cloud.vk.com/app/):
 
    1. Go to **Containers → Kubernetes Clusters**.
    1. Find the desired cluster in the list, then select **Get Kubeconfig to access the cluster** in its menu.

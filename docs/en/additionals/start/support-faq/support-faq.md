@@ -36,7 +36,7 @@ Use the instruction [Enabling 2FA](../../../base/account/account/security/2faon)
 
 ## Lost my two-factor authentication app
 
-Contact [technical support](/en/contacts). Specialists will make sure that you are the owner of the account, and then deactivate this option for your account. After that, re-enable two-factor authentication in [personal account](https://mcs.mail.ru/app/account/profile).
+Contact [technical support](/en/contacts). Specialists will make sure that you are the owner of the account, and then deactivate this option for your account. After that, re-enable two-factor authentication in [personal account](https://msk.cloud.vk.com/app/account/profile).
 
 ## I did not receive bonus points upon registration
 
@@ -65,7 +65,7 @@ This data is published on the [system status](https://status.mcs.mail.ru/) page.
 
 ## Where can I change the data of a legal entity?
 
-To fill in the data about the legal entity, go to [personal account](https://mcs.mail.ru/app/account/profile), click on the name of your account and select **Project Settings** from the drop-down menu. On the page that opens, on the **General Information** tab, you can change the data of the legal entity.
+To fill in the data about the legal entity, go to [personal account](https://msk.cloud.vk.com/app/account/profile), click on the name of your account and select **Project Settings** from the drop-down menu. On the page that opens, on the **General Information** tab, you can change the data of the legal entity.
 
 ## Is there individual support for services in VK Cloud?
 

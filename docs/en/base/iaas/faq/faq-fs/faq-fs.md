@@ -22,7 +22,7 @@ Learn more about creating snapshots in the article [File Storage management](../
 
 No, there is no such possibility.
 
-A snapshot of the file storage can be created manually via [personal account](https://mcs.mail.ru/app/en/main) VK Cloud or using the API.
+A snapshot of the file storage can be created manually via [personal account](https://msk.cloud.vk.com/app/en/main) VK Cloud or using the API.
 
 ## Do file storages have any agents to control free space?
 

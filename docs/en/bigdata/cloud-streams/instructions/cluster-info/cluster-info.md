@@ -1,6 +1,6 @@
 To view information about an already created cluster:
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Big Data → Clusters**.
 
 Information about the cluster will be displayed by the tabs listed below.

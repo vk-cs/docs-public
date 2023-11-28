@@ -4,7 +4,7 @@
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en/).
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en/).
 1. Select the project where you want to create a DB instance.
 1. Go to **Databases → Database instances**.
 1. Click the **Create database** or **Add** button.
