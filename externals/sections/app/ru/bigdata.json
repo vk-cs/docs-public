@@ -15,9 +15,6 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/bigdata/hortonworks/instructions/create"
-                },
-                {
                     "link": "docs/ru/bigdata/hortonworks/instructions/delete"
                 }
             ]
