@@ -15,9 +15,6 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/bigdata/hortonworks/instructions/create"
-                },
-                {
                     "link": "docs/en/bigdata/hortonworks/instructions/delete"
                 }
             ]
