@@ -1,0 +1,11 @@
+{
+    "title": "Развертывание Grafana",
+    "pageDescription": "Шаги по развертыванию сервиса Grafana 10 в целевой проект VK Cloud с помощью Marketplace.",
+    "shortDescription": "Развертывание сервиса Grafana 10 в проекте",
+    "metaTitle": "Развертывание Grafana",
+    "metaDescription": "Marketplace VK Cloud: шаги по развертыванию сервиса Grafana 10 в целевой проект",
+    "sectionTitle": "Развертывание Grafana",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 5
+}
