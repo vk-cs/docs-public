@@ -7,7 +7,7 @@
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Go to **App store** → **My SaaS application**.
+1. Go to **App store** → **My services**.
 1. Open the service instance page by clicking on its name in the list.
 
 </tabpanel>
@@ -40,7 +40,7 @@ Activation will be required:
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Go to **App store** → **My SaaS application**.
+1. Go to **App store** → **My services**.
 1. Open the service instance page by clicking on its name in the list.
 1. Go to **Service properties** tab.
 1. Click the **Activate** button.
@@ -57,7 +57,7 @@ Activation will be required:
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Go to **App store** → **My SaaS application**.
+1. Go to **App store** → **My services**.
 1. Open the service instance page by clicking on its name in the list.
 1. Go to **Tariff plans** tab.
 1. Click the **Set up a tariff** button.
@@ -75,7 +75,7 @@ Activation will be required:
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Go to **App store** → **My SaaS application**.
+1. Go to **App store** → **My services**.
 1. Open the service instance page by clicking on its name in the list.
 1. Go to **Tariff plans** tab.
 1. Click the **Choose a tariff** button.
@@ -95,7 +95,7 @@ The update of the service instance will begin, the process may take a long time.
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Go to **App store** → **My SaaS application**.
+1. Go to **App store** → **My services**.
 1. Open the service instance page by clicking on its name in the list.
 1. Go to the **Service properties** tab.
 1. Click the **Update Access** button.
@@ -117,7 +117,7 @@ The operation is available if the service instance is in the status **Ошибк
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Go to **App store** → **My SaaS application**.
+1. Go to **App store** → **My services**.
 1. Open the service instance page by clicking on its name in the list.
 1. Go to the **Service properties** tab.
 1. Click the **Retry** button.
@@ -134,7 +134,7 @@ The operation is available if the service instance is in the status **Ошибк
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
-1. Go to **App store** → **My SaaS application**.
+1. Go to **App store** → **My services**.
 1. Open the service instance page by clicking on its name in the list.
 1. Go to the **Service properties** tab.
 1. Click the **Delete** button.
