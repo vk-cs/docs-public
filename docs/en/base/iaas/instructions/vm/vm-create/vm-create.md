@@ -33,7 +33,7 @@ The available fields may differ for different operating systems.
 3. Click the **Create instance** or **Add** button.
 4. Set VM parameters:
      - **Name of virtual machine**: use only Latin letters, numbers, or symbols `-`, `_` and `.`.
-     - **Type of virtual machine**: select the preset VM configuration (CPU and RAM). For more information, see [Cloud Servers service overview](../../../concepts/vm-concept).
+     - **Type of virtual machine**: select the preset VM configuration. For more information, see [Cloud Servers service overview](../../../concepts/vm-concept).
      - **Availability zone**: select the data center where the VM will be launched.
      - **Number of machines in configuration**: specify the desired number of VM.
      - **Disk size**: specify the desired VM disk size in gigabytes.

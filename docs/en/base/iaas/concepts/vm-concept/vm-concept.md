@@ -36,11 +36,30 @@ The policy determines the allocation of resources on the platform compute nodes.
 
 Example of using a server group: deploy multiple application VMs on only one node to speed up communication between these VMs.
 
-## CPU and RAM
-
-### Flavors
+## Flavors
 
 On the VK Cloud platform, the number of processors and the amount of RAM of the VM are set using flavors. Ready-made flavors are available to users, as well as individual (on request).
+
+### Virtual machine categories
+
+VMs are grouped into categories in a personal account:
+
+| Category | Description | Display condition |
+| --- | --- | --- |
+| Intel Cascade Lake (Intel Xeon Gen 2) | VMs located on servers with Intel Cascade Lake CPU | Available by default |
+| Intel Ice Lake (Intel Xeon Gen 3) | VMs located on servers with Intel Ice Lake CPU | Available by default |
+| Archived VM types (legacy)| Old VM configuration templates | Not displayed by default filtration |
+| High-performance CPU |  VMs located on [servers](#cpu_generations) with increased CPU clock speed | Displayed when ordering the types of VM through [technical support](/en/contacts) |
+| Virtual machines with GPU | VMs with connected [graphics card](../../../../ml/gpu/gpu-start/gpu-info/) | Displayed when ordering the types of VM through [technical support](/en/contacts) |
+| VMs with local disks | VMs with the ability to use local hypervisor disks | Displayed when ordering the types of VM through [technical support](/en/contacts) |
+| VMs located on dedicated servers | VMs located on hypervisors dedicated to the needs of one client | Displayed when ordering the types of VM through your manager |
+
+By default, only actual configuration templates are displayed: on servers with Intel Cascade Lake and Intel Ice Lake CPUs, as well as VMs with a connected graphics card, on high-performance or dedicated servers, if they were added to the project through [technical support](/en/contacts).
+
+Select the **Archive VM types** category to find the old VM configuration templates. The server for VMs of the old configuration is selected randomly: Intel Cascade Lake or Intel Ice Lake, but [charged](../../tariffication/) at the price of Intel Ice Lake. If the server is unavailable (for example, during maintenance work), these VMs can move to a server of a different generation.
+
+<details>
+   <summary> Archived VM types</summary>
 
 | Flavor's name | Configuration Parameters | Description |
 | --- | --- | --- |
@@ -50,29 +69,46 @@ On the VK Cloud platform, the number of processors and the amount of RAM of the 
 | Heavy | Up to 16 vCPU <br/> Up to 64 Gb RAM | Customized configurations for creating high-performance VMs |
 | Custom | Unlimited | Individual configurations |
 
-By default, Basic, Standard and Advanced configurations are available in the project.
+</details>
 
-To create a Heavy or Custom configuration [contact technical support](/en/contacts). The cost of a VM of this configuration is calculated individually for each request.
+To create additional VM templates (for example, with a large amount of resources) [contact technical support](/en/contacts). The cost of a VM in this case is calculated individually for each request.
 
-The number and type of CPU, as well as the amount of RAM of an already created virtual machine can be changed within the flavors available in the project. This process will require a VM reboot.
+<info>
 
-### Server hardware
+The number and type of CPU, as well as the amount of RAM of an already created virtual machine, can be changed by changing the VM template. This process will require a VM reboot.
+
+</info>
+
+### Name of VM configuration templates
+
+The name of the VM template on servers with Intel Cascade Lake, Intel Ice Lake CPUs and a VM with a connected graphics card is formed as follows:
+
+```
+<category><CPU generation>-<number of CPUs>-<amount of RAM>-<options>-<GPU model>-<number of GPUs>
+```
+
+Examples:
+
+|VM template name | Description |
+| --- | --- |
+| STD2-2-4 | VM with Intel Cascade Lake processor, 2 vCPUs and 4 GB of RAM |
+| STD3-4-8 | VM with Intel Ice Lake processor, 4 vCPU and 8 GB RAM |
+| GPU1A-32-96-A100-1 | VM with AMD EPYC 7662 processor and one connected Nvidia Tesla A10040GB graphics card |
+
+### CPU generations
 
 The performance of a VM depends on the resources of the host on which it is hosted. The VK Cloud platform provides server hardware that allows you to configure VMs of different performance levels.
 
-Characteristics of VK Cloud platform server hardware for VM hosting:
+VK Cloud platform has different CPU for VM hosting:
 
-| Parameter | Value | Availability |
+| CPU | Type and generation of CPU | Availability |
 | --- | --- | --- |
-| Processors <br/> standard | Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz <br/> Intel(R) Xeon(R) Gold 6238R CPU @ 2.20GHz<br>Intel(R) Xeon(R) Platinum 8380 CPU @ 2.3GHz | By default |
-| Processors <br/> high-performance | Intel(R) Xeon(R) Gold 6230 CPU @ 3.40GHz <br/> Intel(R) Xeon(R) Gold 6238R CPU @ 3.70GHz<br>Intel(R) Xeon(R) Platinum 8380 CPU @ 3.4GHz | On request |
-| RAM	 | DDR4, Synchronous, 2400 MHz |
-| Communication channel | Up to 1 Gbit/s, no traffic restrictions |
-| Type of virtualization | KVM + OpenStack |
+| Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz <br> Intel(R) Xeon(R) Gold 6238R CPU @ 2.20GHz | Intel Cascade Lake (Intel Xeon Gen 2) | Available by default |
+| Intel Xeon Gold 6338 @ 2.0GHz <br> Intel Xeon Platinum 8380 CPU @ 2.3GHz | Intel Ice Lake (Intel Xeon Gen 3) | Available by default |
+| Intel(R) Xeon(R) Gold 6230 CPU @ 3.40GHz <br> Intel(R) Xeon(R) Gold 6238R CPU @ 3.70GHz <br> Intel(R) Xeon(R) Platinum 8380 CPU @ 3.4GHz | High-performance processors | Available on request |
+| AMD EPYC 7662 | Select GPU VMs only | Available on request |
 
-The configurations available by default allow you to create VMs on servers with standard processors.
-
-To get access to high-performance processors [contact technical support](/en/contacts). The cost of a VM with a high-performance processor is calculated individually for each request.
+The configurations available by default allow you to create VMs on servers with standard CPU.
 
 ## Disks
 
