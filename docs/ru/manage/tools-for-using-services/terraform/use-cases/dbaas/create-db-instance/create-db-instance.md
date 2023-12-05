@@ -38,7 +38,7 @@
 </tablist>
 <tabpanel>
 
-[Шаблон конфигурации](/ru/base/iaas/concepts/vm-concept#shablony_konfiguraciy_df45dc9d) для ВМ инстанса задается через переменную `db-instance-flavor`.
+[Шаблон конфигурации](/ru/base/iaas/concepts/vm-concept#shablony_konfiguraciy) для ВМ инстанса задается через переменную `db-instance-flavor`.
 
 ```hcl
 variable "db-instance-flavor" {
