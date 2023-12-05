@@ -29,7 +29,7 @@
 
         </info>
 
-      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors_2a230ce5) for the DB instance.
+      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for the DB instance.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
