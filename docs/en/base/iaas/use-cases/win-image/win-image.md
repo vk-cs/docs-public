@@ -8,12 +8,15 @@ The Windows Server 2016 CORE edition image is used as an example, the commands a
 
 ## Preparatory steps
 
-1. Clone a repository with automated build scripts [windows-imaging-tools](https://github.com/cloudbase/windows-imaging-tools).
-1. Clone the repository to update the system image [WindowsUpdateCLI](https://github.com/cloudbase/WindowsUpdateCLI/tree/216d0e832a3a1e4a681409792210fb97938e41b9).
 1. Make sure that you have [installed and configured](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) Git.
-1. [Install the drivers](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.225-1/virtio-win.iso) VirtIO (KVM).
-1. Configure Hyper-V if this has not been done before.
-1. [Download and install](https://learn.microsoft.com/ru-ru/windows-hardware/get-started/adk-install) Windows ADK.
+1. Clone a repository with automated build scripts [windows-imaging-tools](https://github.com/cloudbase/windows-imaging-tools).
+1. Clone the repository to update the system image [WindowsUpdateCLI](https://github.com/cloudbase/WindowsUpdateCLI/).
+1. Set up the toolkit:
+
+   - [Install the drivers](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.225-1/virtio-win.iso) VirtIO (KVM).
+   - Configure Hyper-V in a way that is suitable for you ([example](https://learn.microsoft.com/ru-ru/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)), if this has not been done before.
+   - [Download and install](https://learn.microsoft.com/ru-ru/windows-hardware/get-started/adk-install) Windows ADK.
+
 1. Download the ISO image of the operating system for which you plan to migrate to VK Cloud. It is recommended to use the en-US version of the image.
 1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
@@ -67,7 +70,7 @@ The installation image may contain several editions of the operating system. Sin
 
 ## 2. Configure the external switch in Hyper-V
 
-[Create](https://learn.microsoft.com/ru-ru/windows-server/virtualization/hyper-v/get-started/create-a-virtual-switch-for-hyper-v-virtual-machines?tabs=hyper-v-manager#create-a-virtual-switch) virtual switch `external` with connection type **External network**.
+[Create](https://learn.microsoft.com/ru-ru/windows-server/virtualization/hyper-v/get-started/create-a-virtual-switch-for-hyper-v-virtual-machines?tabs=hyper-v-manager#create-a-virtual-switch) virtual switch `external` with an Internet connection.
 
 ## 3. Build the image locally
 
@@ -80,7 +83,7 @@ The installation image may contain several editions of the operating system. Sin
     Import-Module .\UnattendResources\ini.psm1
     ```
 
-1. Transfer the contents of the directory `WindowsUpdateCLI` to `windows-openstack-imaging-tools\UnattendResources\WindowsUpdates` (if the option is specified `install_updates=True`).
+1. Transfer the contents of the directory `WindowsUpdateCLI` to `windows-openstack-imaging-tools\UnattendResources\WindowsUpdates`.
 1. Create a configuration file `config.ini`:
 
     ```powershell
@@ -88,7 +91,7 @@ The installation image may contain several editions of the operating system. Sin
     New-WindowsImageConfig -ConfigFilePath $ConfigFilePath
     ```
 
-1. Open the created file and paste the code there:
+1. Open the created file and check the parameters:
 
     ```ini
     wim_file_path=D:\Temp\install.wim
