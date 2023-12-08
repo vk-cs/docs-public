@@ -1,0 +1,11 @@
+{
+    "title": "Миграция с использованием Hystax Migration",
+    "pageDescription": "Шаги по переносу инфраструктуры клиента в целевой проект VK Cloud с использованием Hystax Acura Migration.",
+    "shortDescription": "Шаги по переносу инфраструктуры клиента в целевой проект VK Cloud с помощью Hystax Acura Migration",
+    "metaTitle": "Миграция с использованием Hystax Migration",
+    "metaDescription": "Шаги по переносу инфраструктуры клиента в целевой проект VK Cloud с использованием [Hystax Acura](https://hystax.com/documentation/live-migration)",
+    "sectionTitle": "Миграция с использованием Hystax Migration",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1
+}
