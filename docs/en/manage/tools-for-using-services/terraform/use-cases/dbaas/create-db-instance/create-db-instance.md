@@ -43,7 +43,7 @@ Select one of the cluster creation examples and create a Terraform configuration
 ```hcl
 variable "db-instance-flavor" {
   type    = string
-  default = "Standard-2-8-50"
+  default = "STD3-2-6"
 }
 
 data "vkcs_compute_flavor" "db" {
@@ -105,7 +105,7 @@ The `capabilities` setting of the `vkcs_db_instance` resource is responsible for
 ```hcl
 variable "db-instance-flavor" {
   type    = string
-  default = "Standard-2-8-50"
+  default = "STD3-2-6"
 }
 
 data "vkcs_compute_flavor" "db" {
@@ -241,7 +241,7 @@ variable "db_user_password" {
 
 variable "db-instance-flavor" {
   type    = string
-  default = "Standard-2-8-50"
+  default = "STD3-2-6"
 }
 
 data "vkcs_compute_flavor" "db" {

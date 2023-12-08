@@ -138,7 +138,7 @@
                 ],
                 "availability_zone": "MS1",
                 "rank": 0,
-                "flavor": "Standard-4-8-80",
+                "flavor": "STD3-4-8",
                 "ports": [
                     {
                         "name": "port_0",

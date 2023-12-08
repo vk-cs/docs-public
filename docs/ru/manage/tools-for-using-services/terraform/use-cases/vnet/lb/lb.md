@@ -86,11 +86,11 @@ resource "vkcs_networking_subnet" "lb" {
 ```hcl
 
 data "vkcs_images_image" "compute" {
-   name = "Ubuntu-18.04-Standard"
+   name = "Ubuntu-18.04-STD3"
 }
 
 data "vkcs_compute_flavor" "compute" {
-  name = "Basic-1-2-20"
+  name = "STD2-2-4"
 }
 
 resource "vkcs_compute_instance" "compute_1" {
