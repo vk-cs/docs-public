@@ -45,7 +45,7 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
 1. In the “Create cluster” step, set:
 
    1. **Cluster name:** for example, `vk-cloud-k8s-quickstart`.
-   1. **Virtual machine type — Master:** `Standard-2-8`.
+   1. **Virtual machine type — Master:** `STD3-2-8`.
    1. **Availability zone:** `Moscow (MS1)`.
 
       <info>
@@ -63,7 +63,7 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
 
 1. In the “Node group” step, set:
 
-   1. **Node type:** `Standard-4-4`.
+   1. **Node type:** `STD3-4-8`.
    1. **Availability zone:** `Moscow (MS1)`.
 
       <info>

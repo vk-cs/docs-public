@@ -30,7 +30,7 @@ The requests will use:
   | Field                       | Value                                                     |
   +-----------------------------+-----------------------------------------------------------+
   | id                          | 8f1ba150-XXXX-4ae4-9693-d18844b30d19                      |
-  | name                        | Example_CentOS_Basic-1-1_10GB                             |
+  | name                        | Example_CentOS_STD1-1                             |
   | project_id                  | b5b7ffd4ef0547e5b222f44555dfXXXX                          |
   | status                      | ACTIVE                                                    |
   +-----------------------------+-----------------------------------------------------------+
@@ -122,7 +122,7 @@ curl -X POST \
           {
             "id": "8f1ba150-XXXX-4ae4-9693-d18844b30d19",
             "type": "OS::Nova::Server",
-            "name": "Example_CentOS_Basic-1-1_10GB"
+            "name": "Example_CentOS_STD1-1"
           }
         ],
         "provider_id": "37997f75-0637-XXXX-bf7e-49ff2ff11fa5",
@@ -146,7 +146,7 @@ curl -X POST \
         "provider_id": "37997f75-0637-XXXX-bf7e-49ff2ff11fa5",
         "resources": [{
                 "id": "8f1ba150-XXXX-4ae4-9693-d18844b30d19",
-                "name": "Example_CentOS_Basic-1-1_10GB",
+                "name": "Example_CentOS_STD1-1",
                 "type": "OS::Nova::Server"
             }
         ],

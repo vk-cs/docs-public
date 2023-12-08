@@ -94,7 +94,7 @@ Import the image according to [instructions](../../instructions/vm-images/vm-ima
       }
 
       source "openstack" "altlinux" {
-        flavor       = "Standard-2-6"
+        flavor       = "STD3-2-6"
         image_name   = "Alt-Linux-P9-Starter-Kit"
         source_image = "${var.source_image}"
         config_drive            = "true"

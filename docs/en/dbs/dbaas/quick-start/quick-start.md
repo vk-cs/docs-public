@@ -194,7 +194,7 @@ The DB instance is charged and consumes computational resources. After completin
 1. On the “Create instance” step set:
 
    - **Database instance name:** for example, `vk-cloud-dbaas-quickstart`.
-   - **Type of virtual machine:** `Standard-2-8`.
+   - **Type of virtual machine:** `STD3-2-8`.
    - **Availability zone:** `Moscow (GZ1)`.
    - **Disk Type:** `SSD`.
    - **Disk size, GB:** `10`.

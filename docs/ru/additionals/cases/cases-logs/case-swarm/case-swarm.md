@@ -32,20 +32,20 @@ Elasticsearch и Kibana необходимо установить как [при
 2.  Установите пакеты:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+root@ubuntu-std1-1:~# apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 ```
 
 3.  Добавьте ключ репозитория Docker:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+root@ubuntu-std1-1:~# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 OK
 ```
 
 4.  Добавьте репозиторий Docker:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# add-apt-repository \
+root@ubuntu-std1-1:~# add-apt-repository \
 >    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
 >    $(lsb_release -cs) \
 >    stable"
@@ -54,13 +54,13 @@ root@ubuntu-basic-1-1-10gb:~# add-apt-repository \
 5.  Установите Docker:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# apt-get update && apt-get install -y docker-ce docker-ce-cli containerd.io
+root@ubuntu-std1-1:~# apt-get update && apt-get install -y docker-ce docker-ce-cli containerd.io
 ```
 
 6.  Выполните инициализацию кластера:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# docker swarm init
+root@ubuntu-std1-1:~# docker swarm init
 ```
 
 ## Запуск Wordpress в контейнере
@@ -173,7 +173,7 @@ events {
 3.  Запустите контейнеры:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# docker stack deploy -c /root/wordpress/docker-compose.yml blog
+root@ubuntu-std1-1:~# docker stack deploy -c /root/wordpress/docker-compose.yml blog
 Creating network blog_backend
 Creating network blog_frontend
 Creating service blog_wordpress
@@ -184,7 +184,7 @@ Creating service blog_db
 4.  Убедитесь, что все запустилось успешно:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# docker service ls
+root@ubuntu-std1-1:~# docker service ls
 ID                  NAME                MODE                REPLICAS            IMAGE               PORTS
 12jo1tmdr8ni        blog_db             replicated          1/1                 mysql:5.7           
 rbdwd7oar6nv        blog_nginx          replicated          1/1                 nginx:latest        \*:80->80/tcp
@@ -208,13 +208,13 @@ oejvg6xgzcwj        blog_wordpress      replicated          1/1   �
 1.  Установите fluentd:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# curl -L https://toolbelt.treasuredata.com/sh/install-ubuntu-bionic-td-agent3.sh | sh
+root@ubuntu-std1-1:~# curl -L https://toolbelt.treasuredata.com/sh/install-ubuntu-bionic-td-agent3.sh | sh
 ```
 
 2.  Добавьте fluentd в автозагрузку:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl enable td-agent
+root@ubuntu-std1-1:~# systemctl enable td-agent
 Synchronizing state of td-agent.service with SysV service script with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable td-agent
 ```

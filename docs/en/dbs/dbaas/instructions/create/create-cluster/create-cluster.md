@@ -60,6 +60,7 @@
 
       Then set the parameters:
 
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
       - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for the cluster.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
@@ -92,6 +93,8 @@
 
       Then set the parameters:
 
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
+
       - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for the cluster.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
@@ -107,6 +110,8 @@
    1. In the **Data Node** block, configure nodes with the `data` role.
 
       Set the parameters:
+
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
 
       - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for the cluster.
 
@@ -205,6 +210,8 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
       - **Database cluster name**: it can contain only Latin letters, numbers and symbols `.`, `-`, `_`.
 
         Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
+
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
 
       - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for the cluster.
 
@@ -360,6 +367,8 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
+
       - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for the cluster.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
@@ -511,6 +520,8 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
       - **Number of replicas in shard**.
 
         For Redis, the number of replicas in sharjah is fixed.
+
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
 
       - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for the shard hosts.
 

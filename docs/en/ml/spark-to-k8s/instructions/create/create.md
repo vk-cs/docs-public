@@ -21,6 +21,8 @@
 
    1. Set the worker node settings in the **Worker-node settings** section:
 
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
+
       - **Type of virtual machine:** [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for worker nodes.
 
         Templates with high-performance CPUs are available [on request to the support service] (/en/contacts). To use these templates, select the **Show only high performance CPUs** option.
