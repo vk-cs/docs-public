@@ -8,14 +8,17 @@
 
 ## Подготовительные шаги
 
-1. Клонируйте репозиторий со скриптами автоматизированной сборки [windows-imaging-tools](https://github.com/cloudbase/windows-imaging-tools).
-1. Клонируйте репозиторий для обновления образа системы [WindowsUpdateCLI](https://github.com/cloudbase/WindowsUpdateCLI/tree/216d0e832a3a1e4a681409792210fb97938e41b9).
 1. Убедитесь, что у вас [установлен и настроен](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) Git.
-1. [Установите драйвера](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.225-1/virtio-win.iso) VirtIO (KVM).
-1. Настройте Hyper-V, если этого не было сделано ранее.
-1. [Скачайте и установите](https://learn.microsoft.com/ru-ru/windows-hardware/get-started/adk-install) Windows ADK.
+1. Клонируйте репозиторий со скриптами автоматизированной сборки [windows-imaging-tools](https://github.com/cloudbase/windows-imaging-tools).
+1. Клонируйте репозиторий для обновления образа системы [WindowsUpdateCLI](https://github.com/cloudbase/WindowsUpdateCLI/).
+1. Настройте инструментарий:
+
+   - [Скачайте драйвера](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/virtio-win-0.1.225-1/virtio-win.iso) VirtIO (KVM).
+   - Настройте Hyper-V подходящим для вас способом ([пример](https://learn.microsoft.com/ru-ru/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)), если этого не было сделано ранее.
+   - [Скачайте и установите](https://learn.microsoft.com/ru-ru/windows-hardware/get-started/adk-install) Windows ADK.
+
 1. Скачайте ISO-образ операционной системы, для которого планируется миграция в VK Cloud. Рекомендуется использовать en-US версию образа.
-1. [Установите](../../../../base/account/project/cli/setup) OpenStack CLI, если он еще не установлен. Убедитесь, что вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в облаке с его помощью.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 ## 1. Подготовьте установочный WIM-файл ОС
 
@@ -67,20 +70,19 @@
 
 ## 2. Настройте внешний коммутатор в Hyper-V
 
-[Создайте](https://learn.microsoft.com/ru-ru/windows-server/virtualization/hyper-v/get-started/create-a-virtual-switch-for-hyper-v-virtual-machines?tabs=hyper-v-manager#create-a-virtual-switch) виртуальный коммутатор `external` с типом подключения **Внешняя сеть**.
+[Создайте](https://learn.microsoft.com/ru-ru/windows-server/virtualization/hyper-v/get-started/create-a-virtual-switch-for-hyper-v-virtual-machines?tabs=hyper-v-manager#create-a-virtual-switch) виртуальный коммутатор `external` с подключением в интернет.
 
 ## 3. Соберите образ локально
 
 1. Перейдите в каталог `windows-imaging-tools` и импортируйте модули:
 
     ```powershell
-    pushd windows-openstack-imaging-tools
     Import-Module .\WinImageBuilder.psm1
     Import-Module .\Config.psm1
     Import-Module .\UnattendResources\ini.psm1
     ```
 
-1. Перенесите содержимое каталога `WindowsUpdateCLI` в `windows-openstack-imaging-tools\UnattendResources\WindowsUpdates` (если указана опция `install_updates=True`).
+1. Перенесите содержимое каталога `WindowsUpdateCLI` в `windows-imaging-tools\UnattendResources\WindowsUpdates`.
 1. Создайте конфигурационный файл `config.ini`:
 
     ```powershell
@@ -88,7 +90,7 @@
     New-WindowsImageConfig -ConfigFilePath $ConfigFilePath
     ```
 
-1. Откройте созданный файл и вставьте туда код:
+1. Откройте созданный файл и проверьте параметры:
 
     ```ini
     wim_file_path=D:\Temp\install.wim
