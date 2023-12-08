@@ -14,8 +14,8 @@ To install the Harbor repositories:
 1. Download the online installer script and unzip it:
 
 ```
-root@ubuntu-standard-2-4-40gb:~# wget https://github.com/goharbor/harbor/releases/download/v1.9.3/harbor-online-installer-v1.9.3.tgz
-root@ubuntu-standard-2-4-40gb:~# tar -zxvf harbor-online-installer-v1.9.3.tgz
+root@ubuntu-std3-2-4-40gb:~# wget https://github.com/goharbor/harbor/releases/download/v1.9.3/harbor-online-installer-v1.9.3.tgz
+root@ubuntu-std3-2-4-40gb:~# tar -zxvf harbor-online-installer-v1.9.3.tgz
 ```
 
 2. In the resulting harbor folder, configure the `harbor.yml` file:
@@ -45,7 +45,7 @@ And:
 3. Run the `install.sh` script:
 
 ```
-root@ubuntu-standard-2-4-40gb:~/harbor# ./install.sh
+root@ubuntu-std3-2-4-40gb:~/harbor# ./install.sh
 
 [Step 0]: checking installation environment ...
 Note: docker version: 19.03.5

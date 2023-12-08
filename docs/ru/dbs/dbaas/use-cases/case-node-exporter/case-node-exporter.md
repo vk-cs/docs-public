@@ -34,7 +34,7 @@
 2.  Укажите актуальную версию Prometheus:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# export VERSION="<версия>"
+root@ubuntu-std1-1:~# export VERSION="<версия>"
 ```
 
 <info>
@@ -46,47 +46,47 @@ root@ubuntu-basic-1-1-10gb:~# export VERSION="<версия>"
 3.  Создайте пользователя prometheus и группу prometheus, от имени которых вы будете запускать prometheus:
 
 ```
-root@ubuntu-basic-1-1-10gb:~#  groupadd --system prometheus
-root@ubuntu-basic-1-1-10gb:~# useradd --system -g prometheus -s /bin/false prometheus
+root@ubuntu-std1-1:~#  groupadd --system prometheus
+root@ubuntu-std1-1:~# useradd --system -g prometheus -s /bin/false prometheus
 ```
 
 4.  Установите wget и tar:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# apt install -y wget tar
+root@ubuntu-std1-1:~# apt install -y wget tar
 ```
 
 5.  Скачайте архив prometheus и распакуйте его в папку /tmp:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# wget https://github.com/prometheus/prometheus/releases/download/v$VERSION/prometheus-$VERSION.linux-amd64.tar.gz -O - | tar -xzv -C /tmp
+root@ubuntu-std1-1:~# wget https://github.com/prometheus/prometheus/releases/download/v$VERSION/prometheus-$VERSION.linux-amd64.tar.gz -O - | tar -xzv -C /tmp
 ```
 
 6.  Создайте директорию для конфигурационного файла:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# mkdir /etc/prometheus
+root@ubuntu-std1-1:~# mkdir /etc/prometheus
 ```
 
 7.  Создайте директорию для данных:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# mkdir /var/lib/prometheus
+root@ubuntu-std1-1:~# mkdir /var/lib/prometheus
 ```
 
 8.  Скопируйте содержимое распакованного архива:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# cp /tmp/prometheus-$VERSION.linux-amd64/prometheus /usr/local/bin
-root@ubuntu-basic-1-1-10gb:~# cp /tmp/prometheus-$VERSION.linux-amd64/promtool /usr/local/bin
-root@ubuntu-basic-1-1-10gb:~# cp /tmp/prometheus-$VERSION.linux-amd64/tsdb /usr/local/bin
-root@ubuntu-basic-1-1-10gb:~# cp -r /tmp/prometheus-$VERSION.linux-amd64/console\* /etc/prometheus
+root@ubuntu-std1-1:~# cp /tmp/prometheus-$VERSION.linux-amd64/prometheus /usr/local/bin
+root@ubuntu-std1-1:~# cp /tmp/prometheus-$VERSION.linux-amd64/promtool /usr/local/bin
+root@ubuntu-std1-1:~# cp /tmp/prometheus-$VERSION.linux-amd64/tsdb /usr/local/bin
+root@ubuntu-std1-1:~# cp -r /tmp/prometheus-$VERSION.linux-amd64/console\* /etc/prometheus
 ```
 
 9.  Удалите содержимое распакованного архива из папки /tmp:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# rm -rf /tmp/prometheus-$VERSION.linux-amd64
+root@ubuntu-std1-1:~# rm -rf /tmp/prometheus-$VERSION.linux-amd64
 ```
 
 10. Создайте конфигурационный файл /etc/prometheus/prometheus.yml со следующим содержимым:
@@ -105,8 +105,8 @@ scrape_configs:
 11. Измените владельца созданных файлов:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# chown -R prometheus:prometheus /var/lib/prometheus /etc/prometheus
-root@ubuntu-basic-1-1-10gb:~# chown prometheus:prometheus /usr/local/bin/prometheus /usr/local/bin/promtool /usr/local/bin/tsdb
+root@ubuntu-std1-1:~# chown -R prometheus:prometheus /var/lib/prometheus /etc/prometheus
+root@ubuntu-std1-1:~# chown prometheus:prometheus /usr/local/bin/prometheus /usr/local/bin/promtool /usr/local/bin/tsdb
 ```
 
 12. Создайте сценарий запуска systemd сервиса Prometheus. Для этого создайте файл /etc/systemd/system/prometheus.service со следующим содержимым:
@@ -133,16 +133,16 @@ WantedBy=default.target
 13. Запустите Prometheus:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl daemon-reload
-root@ubuntu-basic-1-1-10gb:~# systemctl start prometheus.service
-root@ubuntu-basic-1-1-10gb:~# systemctl enable prometheus.service
+root@ubuntu-std1-1:~# systemctl daemon-reload
+root@ubuntu-std1-1:~# systemctl start prometheus.service
+root@ubuntu-std1-1:~# systemctl enable prometheus.service
 Created symlink /etc/systemd/system/default.target.wants/prometheus.service → /etc/systemd/system/prometheus.service.
 ```
 
 14. Убедитесь, что сервис запустился:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl status prometheus.service
+root@ubuntu-std1-1:~# systemctl status prometheus.service
 ● prometheus.service - Prometheus
    Loaded: loaded (/etc/systemd/system/prometheus.service; enabled; vendor preset: enabled)
    Active: active (running) since Wed 2019-10-16 07:26:45 UTC; 1s ago
@@ -151,16 +151,16 @@ root@ubuntu-basic-1-1-10gb:~# systemctl status prometheus.service
    CGroup: /system.slice/prometheus.service
            └─3980 /usr/local/bin/prometheus --config.file /etc/prometheus/prometheus.yml --storage.tsdb.path /var/lib/prometheus --web.console.templates=/etc/prometheus/consoles --web.console.libraries=/etc/prometheus/console_libraries
 
-Oct 16 07:26:46 ubuntu-basic-1-1-10gb prometheus[3980]: level=info ts=2019-10-16T07:26:46.082Z caller=main.go:336 vm_limits="(soft=unlimited, hard=unlimited)"
-Oct 16 07:26:46 ubuntu-basic-1-1-10gb prometheus[3980]: level=info ts=2019-10-16T07:26:46.089Z caller=main.go:657 msg="Starting TSDB ..."
-Oct 16 07:26:46 ubuntu-basic-1-1-10gb prometheus[3980]: level=info ts=2019-10-16T07:26:46.099Z caller=web.go:450 component=web msg="Start listening for connections" address=0.0.0.0:9090
-Oct 16 07:26:46 ubuntu-basic-1-1-10gb prometheus[3980]: level=info ts=2019-10-16T07:26:46.104Z caller=head.go:512 component=tsdb msg="replaying WAL, this may take awhile"
-Oct 16 07:26:46 ubuntu-basic-1-1-10gb prometheus[3980]: level=info ts=2019-10-16T07:26:46.107Z caller=head.go:560 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=0
-Oct 16 07:26:46 ubuntu-basic-1-1-10gb prometheus[3980]: level=info ts=2019-10-16T07:26:46.110Z caller=main.go:672 fs_type=EXT4_SUPER_MAGIC
-Oct 16 07:26:46 ubuntu-basic-1-1-10gb prometheus[3980]: level=info ts=2019-10-16T07:26:46.110Z caller=main.go:673 msg="TSDB started"
-Oct 16 07:26:46 ubuntu-basic-1-1-10gb prometheus[3980]: level=info ts=2019-10-16T07:26:46.110Z caller=main.go:743 msg="Loading configuration file" filename=/opt/prometheus/prometheus.yml
-Oct 16 07:26:46 ubuntu-basic-1-1-10gb prometheus[3980]: level=info ts=2019-10-16T07:26:46.150Z caller=main.go:771 msg="Completed loading of configuration file" filename=/etc/prometheus/prometheus.yml
-Oct 16 07:26:46 ubuntu-basic-1-1-10gb prometheus[3980]: level=info ts=2019-10-16T07:26:46.150Z caller=main.go:626 msg="Server is ready to receive web requests."
+Oct 16 07:26:46 ubuntu-std1-1 prometheus[3980]: level=info ts=2019-10-16T07:26:46.082Z caller=main.go:336 vm_limits="(soft=unlimited, hard=unlimited)"
+Oct 16 07:26:46 ubuntu-std1-1 prometheus[3980]: level=info ts=2019-10-16T07:26:46.089Z caller=main.go:657 msg="Starting TSDB ..."
+Oct 16 07:26:46 ubuntu-std1-1 prometheus[3980]: level=info ts=2019-10-16T07:26:46.099Z caller=web.go:450 component=web msg="Start listening for connections" address=0.0.0.0:9090
+Oct 16 07:26:46 ubuntu-std1-1 prometheus[3980]: level=info ts=2019-10-16T07:26:46.104Z caller=head.go:512 component=tsdb msg="replaying WAL, this may take awhile"
+Oct 16 07:26:46 ubuntu-std1-1 prometheus[3980]: level=info ts=2019-10-16T07:26:46.107Z caller=head.go:560 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=0
+Oct 16 07:26:46 ubuntu-std1-1 prometheus[3980]: level=info ts=2019-10-16T07:26:46.110Z caller=main.go:672 fs_type=EXT4_SUPER_MAGIC
+Oct 16 07:26:46 ubuntu-std1-1 prometheus[3980]: level=info ts=2019-10-16T07:26:46.110Z caller=main.go:673 msg="TSDB started"
+Oct 16 07:26:46 ubuntu-std1-1 prometheus[3980]: level=info ts=2019-10-16T07:26:46.110Z caller=main.go:743 msg="Loading configuration file" filename=/opt/prometheus/prometheus.yml
+Oct 16 07:26:46 ubuntu-std1-1 prometheus[3980]: level=info ts=2019-10-16T07:26:46.150Z caller=main.go:771 msg="Completed loading of configuration file" filename=/etc/prometheus/prometheus.yml
+Oct 16 07:26:46 ubuntu-std1-1 prometheus[3980]: level=info ts=2019-10-16T07:26:46.150Z caller=main.go:626 msg="Server is ready to receive web requests."
 ```
 
 15. Войдите в веб-консоль Prometheus по порту 9090:
@@ -172,7 +172,7 @@ Oct 16 07:26:46 ubuntu-basic-1-1-10gb prometheus[3980]: level=info ts=2019-10-16
 1.  Укажите актуальную версию Node_exporter:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# export VERSION="0.18.1"
+root@ubuntu-std1-1:~# export VERSION="0.18.1"
 ```
 
 <info>
@@ -184,19 +184,19 @@ root@ubuntu-basic-1-1-10gb:~# export VERSION="0.18.1"
 2.  Скачайте архив mysqld_exporter и распакуйте его в папку /tmp:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# wget  https://github.com/prometheus/node_exporter/releases/download/v$VERSION/node_exporter-$VERSION.linux-amd64.tar.gz -O - | tar -xzv -C /tmp
+root@ubuntu-std1-1:~# wget  https://github.com/prometheus/node_exporter/releases/download/v$VERSION/node_exporter-$VERSION.linux-amd64.tar.gz -O - | tar -xzv -C /tmp
 ```
 
 3.  Скопируйте содержимое распакованного архива в папку /usr/local/bin:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# cp  /tmp/node_exporter-$VERSION.linux-amd64/node_exporter /usr/local/bin
+root@ubuntu-std1-1:~# cp  /tmp/node_exporter-$VERSION.linux-amd64/node_exporter /usr/local/bin
 ```
 
 4.  Измените владельца созданных файлов:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# chown -R prometheus:prometheus /usr/local/bin/node_exporter
+root@ubuntu-std1-1:~# chown -R prometheus:prometheus /usr/local/bin/node_exporter
 ```
 
 4.  Создайте сценарий запуска systemd сервиса node_exporter. Для этого создайте файл /etc/systemd/system/node_exporter.service со следующим содержимым:
@@ -220,16 +220,16 @@ WantedBy=multi-user.target
 5.  Запустите node_exporter:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl daemon-reload
-root@ubuntu-basic-1-1-10gb:~# systemctl start node_exporter.service
-root@ubuntu-basic-1-1-10gb:~# systemctl enable node_exporter.service
+root@ubuntu-std1-1:~# systemctl daemon-reload
+root@ubuntu-std1-1:~# systemctl start node_exporter.service
+root@ubuntu-std1-1:~# systemctl enable node_exporter.service
 Created symlink /etc/systemd/system/multi-user.target.wants/node_exporter.service → /etc/systemd/system/node_exporter.service.
 ```
 
 6.  Убедитесь, что сервис запустился:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl status node_exporter.service
+root@ubuntu-std1-1:~# systemctl status node_exporter.service
 ● node_exporter.service - Prometheus Node Exporter
 Loaded: loaded (/etc/systemd/system/node_exporter.service; enabled; vendor preset: enabled)
 Active: active (running) since Wed 2019-10-16 07:45:29 UTC; 2min 50s ago
@@ -238,16 +238,16 @@ Tasks: 3 (limit: 1151)
 CGroup: /system.slice/node_exporter.service
 └─4166 /usr/local/bin/node_exporter
 
-Oct 16 07:45:29 ubuntu-basic-1-1-10gb node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - sockstat" source="node_exporter.go:104"
-Oct 16 07:45:29 ubuntu-basic-1-1-10gb node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - stat" source="node_exporter.go:104"
-Oct 16 07:45:29 ubuntu-basic-1-1-10gb node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - textfile" source="node_exporter.go:104"
-Oct 16 07:45:29 ubuntu-basic-1-1-10gb node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - time" source="node_exporter.go:104"
-Oct 16 07:45:29 ubuntu-basic-1-1-10gb node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - timex" source="node_exporter.go:104"
-Oct 16 07:45:29 ubuntu-basic-1-1-10gb node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - uname" source="node_exporter.go:104"
-Oct 16 07:45:29 ubuntu-basic-1-1-10gb node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - vmstat" source="node_exporter.go:104"
-Oct 16 07:45:29 ubuntu-basic-1-1-10gb node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - xfs" source="node_exporter.go:104"
-Oct 16 07:45:29 ubuntu-basic-1-1-10gb node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - zfs" source="node_exporter.go:104"
-Oct 16 07:45:29 ubuntu-basic-1-1-10gb node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg="Listening on :9100" source="node_exporter.go:170"
+Oct 16 07:45:29 ubuntu-std1-1 node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - sockstat" source="node_exporter.go:104"
+Oct 16 07:45:29 ubuntu-std1-1 node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - stat" source="node_exporter.go:104"
+Oct 16 07:45:29 ubuntu-std1-1 node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - textfile" source="node_exporter.go:104"
+Oct 16 07:45:29 ubuntu-std1-1 node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - time" source="node_exporter.go:104"
+Oct 16 07:45:29 ubuntu-std1-1 node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - timex" source="node_exporter.go:104"
+Oct 16 07:45:29 ubuntu-std1-1 node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - uname" source="node_exporter.go:104"
+Oct 16 07:45:29 ubuntu-std1-1 node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - vmstat" source="node_exporter.go:104"
+Oct 16 07:45:29 ubuntu-std1-1 node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - xfs" source="node_exporter.go:104"
+Oct 16 07:45:29 ubuntu-std1-1 node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg=" - zfs" source="node_exporter.go:104"
+Oct 16 07:45:29 ubuntu-std1-1 node_exporter[4166]: time="2019-10-16T07:45:29Z" level=info msg="Listening on :9100" source="node_exporter.go:170"
 ```
 
 ## Настройка сервера Prometheus для получения данных Node_exporter
@@ -279,7 +279,7 @@ static_configs:
 2.  Перезапустите сервис Prometheus:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl reload prometheus.service
+root@ubuntu-std1-1:~# systemctl reload prometheus.service
 ```
 
 3.  Подождите несколько минут, чтобы накопились данные.
@@ -323,25 +323,25 @@ http://<IP-адрес вашего сервера PROMETHEUS>:9090/consoles/inde
 1.  Установите необходимое дополнительное ПО:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# apt-get install -y software-properties-common wget apt-transport-https
+root@ubuntu-std1-1:~# apt-get install -y software-properties-common wget apt-transport-https
 ```
 
 2.  Добавьте ключ репозитория Grafana:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# wget -q -O - https://packages.grafana.com/gpg.key | apt-key add -
+root@ubuntu-std1-1:~# wget -q -O - https://packages.grafana.com/gpg.key | apt-key add -
 ```
 
 3.  Добавьте репозиторий Grafana:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+root@ubuntu-std1-1:~# add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
 ```
 
 4.  Обновите репозитории и установите Grafana:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# apt-get update && apt-get -y install grafana
+root@ubuntu-std1-1:~# apt-get update && apt-get -y install grafana
 ```
 
 5.  Создайте файл /etc/grafana/provisioning/datasources/prometheus.yml со следующим содержимым:
@@ -364,7 +364,7 @@ Provisioning — новая возможность Grafana по преднаст
 6.  Измените владельца файла /etc/grafana/provisioning/datasources/prometheus.yml:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# chown grafana:grafana /etc/grafana/provisioning/datasources/prometheus.yml
+root@ubuntu-std1-1:~# chown grafana:grafana /etc/grafana/provisioning/datasources/prometheus.yml
 ```
 
 <info>
@@ -376,8 +376,8 @@ root@ubuntu-basic-1-1-10gb:~# chown grafana:grafana /etc/grafana/provisioning/da
 7.  Запустите Grafana:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl start grafana-server.service
-root@ubuntu-basic-1-1-10gb:~# systemctl enable grafana-server.service
+root@ubuntu-std1-1:~# systemctl start grafana-server.service
+root@ubuntu-std1-1:~# systemctl enable grafana-server.service
 Synchronizing state of grafana-server.service with SysV service script with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable grafana-server
 Created symlink /etc/systemd/system/multi-user.target.wants/grafana-server.service → /usr/lib/systemd/system/grafana-server.service.
@@ -386,7 +386,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/grafana-server.servi
 8.  Убедитесь в работоспособности Grafana:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl status grafana-server.service
+root@ubuntu-std1-1:~# systemctl status grafana-server.service
 
 ● grafana-server.service - Grafana instance
 Loaded: loaded (/usr/lib/systemd/system/grafana-server.service; enabled; vendor preset: enabled)
@@ -397,16 +397,16 @@ Tasks: 12 (limit: 1151)
 CGroup: /system.slice/grafana-server.service
 └─6958 /usr/sbin/grafana-server --config=/etc/grafana/grafana.ini --pidfile=/var/run/grafana/grafana-server.pid --packaging=deb cfg:default.paths.logs=/var/log/grafana cfg:default.paths.data=/var/lib/grafa
 
-Oct 16 13:26:25 ubuntu-basic-1-1-10gb grafana-server[6958]: t=2019-10-16T13:26:25+0000 lvl=info msg="Initializing provisioningServiceImpl" logger=server
-Oct 16 13:26:25 ubuntu-basic-1-1-10gb grafana-server[6958]: t=2019-10-16T13:26:25+0000 lvl=info msg="inserting datasource from configuration " logger=provisioning.datasources name=Prometheus
-Oct 16 13:26:26 ubuntu-basic-1-1-10gb grafana-server[6958]: t=2019-10-16T13:26:26+0000 lvl=info msg="Backend rendering via phantomJS" logger=rendering
-Oct 16 13:26:26 ubuntu-basic-1-1-10gb grafana-server[6958]: t=2019-10-16T13:26:26+0000 lvl=warn msg="phantomJS is deprecated and will be removed in a future release. You should consider migrating from phantomJS to gr
-Oct 16 13:26:26 ubuntu-basic-1-1-10gb grafana-server[6958]: t=2019-10-16T13:26:26+0000 lvl=info msg="Initializing Stream Manager"
-Oct 16 13:26:26 ubuntu-basic-1-1-10gb grafana-server[6958]: t=2019-10-16T13:26:26+0000 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:3000 protocol=http subUrl= socket=
-Oct 16 13:27:31 ubuntu-basic-1-1-10gb grafana-server[6958]: t=2019-10-16T13:27:31+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=93.171.201.25 ti
-Oct 16 13:27:46 ubuntu-basic-1-1-10gb grafana-server[6958]: t=2019-10-16T13:27:46+0000 lvl=info msg="Successful Login" logger=http.server User=admin@localhost
-Oct 16 13:28:23 ubuntu-basic-1-1-10gb grafana-server[6958]: 2019/10/16 13:28:23 http: proxy error: unsupported protocol scheme ""
-Oct 16 13:28:23 ubuntu-basic-1-1-10gb grafana-server[6958]: t=2019-10-16T13:28:23+0000 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/2/api/v1/quer
+Oct 16 13:26:25 ubuntu-std1-1 grafana-server[6958]: t=2019-10-16T13:26:25+0000 lvl=info msg="Initializing provisioningServiceImpl" logger=server
+Oct 16 13:26:25 ubuntu-std1-1 grafana-server[6958]: t=2019-10-16T13:26:25+0000 lvl=info msg="inserting datasource from configuration " logger=provisioning.datasources name=Prometheus
+Oct 16 13:26:26 ubuntu-std1-1 grafana-server[6958]: t=2019-10-16T13:26:26+0000 lvl=info msg="Backend rendering via phantomJS" logger=rendering
+Oct 16 13:26:26 ubuntu-std1-1 grafana-server[6958]: t=2019-10-16T13:26:26+0000 lvl=warn msg="phantomJS is deprecated and will be removed in a future release. You should consider migrating from phantomJS to gr
+Oct 16 13:26:26 ubuntu-std1-1 grafana-server[6958]: t=2019-10-16T13:26:26+0000 lvl=info msg="Initializing Stream Manager"
+Oct 16 13:26:26 ubuntu-std1-1 grafana-server[6958]: t=2019-10-16T13:26:26+0000 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:3000 protocol=http subUrl= socket=
+Oct 16 13:27:31 ubuntu-std1-1 grafana-server[6958]: t=2019-10-16T13:27:31+0000 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=93.171.201.25 ti
+Oct 16 13:27:46 ubuntu-std1-1 grafana-server[6958]: t=2019-10-16T13:27:46+0000 lvl=info msg="Successful Login" logger=http.server User=admin@localhost
+Oct 16 13:28:23 ubuntu-std1-1 grafana-server[6958]: 2019/10/16 13:28:23 http: proxy error: unsupported protocol scheme ""
+Oct 16 13:28:23 ubuntu-std1-1 grafana-server[6958]: t=2019-10-16T13:28:23+0000 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/2/api/v1/quer
 
 ```
 
@@ -445,22 +445,22 @@ Oct 16 13:28:23 ubuntu-basic-1-1-10gb grafana-server[6958]: t=2019-10-16T13:28:2
 1.  Установите утилиту sysbench:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# apt -y install sysbench
+root@ubuntu-std1-1:~# apt -y install sysbench
 ```
 
 2.  Запустите серию тестов:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# sysbench cpu  --cpu-max-prime=2000000 --time=60 run
+root@ubuntu-std1-1:~# sysbench cpu  --cpu-max-prime=2000000 --time=60 run
 
-root@ubuntu-basic-1-1-10gb:~# sysbench memory --cpu-max-prime=2000000 --time=60 run
+root@ubuntu-std1-1:~# sysbench memory --cpu-max-prime=2000000 --time=60 run
 
-root@ubuntu-basic-1-1-10gb:~# sysbench fileio --file-test-mode=rndrw --time=60 prepare
-root@ubuntu-basic-1-1-10gb:~# sysbench fileio --file-test-mode=rndrw --time=60 run
+root@ubuntu-std1-1:~# sysbench fileio --file-test-mode=rndrw --time=60 prepare
+root@ubuntu-std1-1:~# sysbench fileio --file-test-mode=rndrw --time=60 run
 
-root@ubuntu-basic-1-1-10gb:~# sysbench threads --time=60 run
+root@ubuntu-std1-1:~# sysbench threads --time=60 run
 
-root@ubuntu-basic-1-1-10gb:~# sysbench mutex --time=60 run
+root@ubuntu-std1-1:~# sysbench mutex --time=60 run
 ```
 
 В результате тестовой нагрузки графики в Grafana изменяться:
@@ -474,32 +474,32 @@ root@ubuntu-basic-1-1-10gb:~# sysbench mutex --time=60 run
 1.  Удалите Grafana:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl stop grafana-server.service
-root@ubuntu-basic-1-1-10gb:~# systemctl disable grafana-server.service
-root@ubuntu-basic-1-1-10gb:~# apt -y remove grafana
+root@ubuntu-std1-1:~# systemctl stop grafana-server.service
+root@ubuntu-std1-1:~# systemctl disable grafana-server.service
+root@ubuntu-std1-1:~# apt -y remove grafana
 ```
 
 2.  Удалите Node_exporter:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl stop node_exporter.service
-root@ubuntu-basic-1-1-10gb:~# systemctl disable node_exporter.service 
-root@ubuntu-basic-1-1-10gb:~# rm /etc/systemd/system/node_exporter.service
-root@ubuntu-basic-1-1-10gb:~# rm -rf /opt/node_exporter
+root@ubuntu-std1-1:~# systemctl stop node_exporter.service
+root@ubuntu-std1-1:~# systemctl disable node_exporter.service 
+root@ubuntu-std1-1:~# rm /etc/systemd/system/node_exporter.service
+root@ubuntu-std1-1:~# rm -rf /opt/node_exporter
 ```
 
 3.  Удалите Prometheus:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl stop prometheus.service
-root@ubuntu-basic-1-1-10gb:~# systemctl disable prometheus.service
-root@ubuntu-basic-1-1-10gb:~# rm /etc/systemd/system/prometheus.service 
-root@ubuntu-basic-1-1-10gb:~# rm -rf /opt/prometheus
+root@ubuntu-std1-1:~# systemctl stop prometheus.service
+root@ubuntu-std1-1:~# systemctl disable prometheus.service
+root@ubuntu-std1-1:~# rm /etc/systemd/system/prometheus.service 
+root@ubuntu-std1-1:~# rm -rf /opt/prometheus
 ```
 
 4.  Удалите пользователя и группу:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# userdel prometheus
-root@ubuntu-basic-1-1-10gb:~# groupdel prometheus
+root@ubuntu-std1-1:~# userdel prometheus
+root@ubuntu-std1-1:~# groupdel prometheus
 ```
