@@ -190,7 +190,7 @@ curl -X GET -H "Accept: application/json" -H "X-Auth-Token: <token>" "https://mc
             "resources": [
               {
                 "id": "8f1ba150-905f-4ae4-XXXX-d18844b30d19",
-                "name": "CentOS_Basic-1-1_10GB",
+                "name": "CentOS_STD1-1",
                 "type": "OS::Nova::Server"
               }
             ],

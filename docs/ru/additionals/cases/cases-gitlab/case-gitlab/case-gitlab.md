@@ -68,13 +68,13 @@ Port 35242   
 Перезапустите sshd:
 
 ```
-root@ubuntu-standard-2-4-40gb:/etc/ssh# service sshd restart
+root@ubuntu-std3-2-4-40gb:/etc/ssh# service sshd restart
 ```
 
 Убедитесь, что сервис слушает на новом порту:
 
 ```
-root@ubuntu-standard-2-4-40gb:/etc/ssh# netstat -tulpn | grep 35242
+root@ubuntu-std3-2-4-40gb:/etc/ssh# netstat -tulpn | grep 35242
 tcp 0 0 0.0.0.0:35242 0.0.0.0:\* LISTEN 3625/sshd
 tcp6       0      0 :::35242                :::\*                    LISTEN      3625/sshd
 ```
@@ -84,19 +84,19 @@ tcp6       0      0 :::35242                :::\*           �
 3.  Создайте необходимые директории для persistent storage gitlab:
 
 ```
-root@ubuntu-standard-2-4-40gb:~# mkdir /opt/gitlab
-root@ubuntu-standard-2-4-40gb:~# mkdir /opt/gitlab/config
-root@ubuntu-standard-2-4-40gb:~# mkdir /opt/gitlab/logs
-root@ubuntu-standard-2-4-40gb:~# mkdir /opt/gitlab/data
-root@ubuntu-standard-2-4-40gb:~# mkdir /opt/gitlab-runner
-root@ubuntu-standard-2-4-40gb:~# mkdir /opt/gitlab-runner/config
-root@ubuntu-standard-2-4-40gb:~# mkdir /opt/gitlab-runner/data
+root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab
+root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab/config
+root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab/logs
+root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab/data
+root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab-runner
+root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab-runner/config
+root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab-runner/data
 ```
 
 4.  Запустите docker-compose:
 
 ```
-root@ubuntu-standard-2-4-40gb:~# docker-compose up -d
+root@ubuntu-std3-2-4-40gb:~# docker-compose up -d
 Creating network "root_default" with the default driver
 Pulling gitlab (gitlab/gitlab-ce:latest)...
 latest: Pulling from gitlab/gitlab-ce
@@ -132,7 +132,7 @@ Creating gitlab        ... done
 Запуск занимает около 5 минут, затем сервис доступен по HTTP. Проверьте состояние запуска:
 
 ```
-root@ubuntu-standard-2-4-40gb:~# docker ps
+root@ubuntu-std3-2-4-40gb:~# docker ps
 CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS                   PORTS                                                          NAMES
 bb20bc6cb7d5        gitlab/gitlab-ce:latest       "/assets/wrapper"        10 minutes ago      Up 6 minutes (healthy)   0.0.0.0:22->22/tcp, 0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp   gitlab
 a2209bb357e7        gitlab/gitlab-runner:latest   "/usr/bin/dumb-init ..."   10 minutes ago      Up 10 minutes                                                                           gitlab-runner
@@ -165,7 +165,7 @@ letsencrypt['auto_renew_day_of_month'] = "\*/7"
 2.  Перейдите в Docker и запустите перевыпуск сертификатов:
 
 ```
-root@ubuntu-standard-2-4-40gb:~# docker exec -it gitlab bash
+root@ubuntu-std3-2-4-40gb:~# docker exec -it gitlab bash
 root@testrom:/# gitlab-ctl reconfigure
 ```
 

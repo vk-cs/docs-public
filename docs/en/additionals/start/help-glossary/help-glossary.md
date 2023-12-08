@@ -14,9 +14,7 @@ A virtual machine (VM) is a collection of resources that emulate the behavior of
 
 ## Flavors
 
-On the VK Cloud platform, the number of processors and the amount of RAM of the VM are set using flavors. Ready-made flavors are available to users, as well as individual (on request).
-
-By default, [configurations](/en/base/iaas/concepts/vm-concept) Basic, Standard и Advanced are available in the project.
+On the VK Cloud platform, the number of processors and the amount of RAM of the VM are set using flavors. [Ready-made flavors](/en/base/iaas/concepts/vm-concept) are available to users, as well as individual (on request).
 
 ## Volumes
 

@@ -52,8 +52,8 @@ In the examples below, clusters with the following configuration are created:
 - The `Moscow` region, the `GZ1` availability zone.
 - Kubernetes version: `1.23`.
 
-- One `Standard-2-6` master node.
-- Two `Basic-1-2-40` worker nodes:
+- One `STD3-4-8` master node.
+- Two `STD2-2-4` worker nodes:
 
   - with two labels configured:
 
@@ -79,11 +79,11 @@ Select one of the cluster creation examples and create the `main.tf` Terraform c
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {
-    name = "Standard-2-6"
+    name = "STD3-4-8"
 }
 
 data "vkcs_compute_flavor" "k8s-node-group-flavor" {
- name = "Basic-1-2-40"
+ name = "STD2-2-4"
 }
 
 data "vkcs_kubernetes_clustertemplate" "k8s-template" {
@@ -147,11 +147,11 @@ The `labels = { calico_ipv4pool }` setting of the `vkcs_kubernetes_cluster` reso
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {
-    name = "Standard-2-6"
+    name = "STD3-4-8"
 }
 
 data "vkcs_compute_flavor" "k8s-node-group-flavor" {
- name = "Basic-1-2-40"
+ name = "STD2-2-4"
 }
 
 data "vkcs_kubernetes_clustertemplate" "k8s-template" {
@@ -221,11 +221,11 @@ The `labels = { docker_registry_enabled }` setting of the `vkcs_kubernetes_clust
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {
-    name = "Standard-2-6"
+    name = "STD3-4-8"
 }
 
 data "vkcs_compute_flavor" "k8s-node-group-flavor" {
- name = "Basic-1-2-40"
+ name = "STD2-2-4"
 }
 
 data "vkcs_kubernetes_clustertemplate" "k8s-template" {

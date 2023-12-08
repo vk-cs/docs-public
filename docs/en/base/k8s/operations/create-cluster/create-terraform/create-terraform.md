@@ -78,7 +78,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
       ```hcl
       data "vkcs_compute_flavor" "k8s-master-flavor" {
-          name = "Standard-2-2"
+          name = "STD3-2-6"
       }
       ```
 
