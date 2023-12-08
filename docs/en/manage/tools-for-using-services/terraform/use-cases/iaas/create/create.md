@@ -95,7 +95,7 @@ An example `instance.tf` file:
 
 ```hcl
 data "vkcs_compute_flavor" "compute" {
-   name="Basic-1-2-20"
+   name="STD2-1-1"
 }
 
 data "vkcs_images_image" "compute" {

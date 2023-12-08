@@ -94,11 +94,11 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
    - Master node settings:
 
+     - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
+
      - **Virtual machine type - Master:** [virtual machine template](../../../concepts/flavors#configuration_templates) for master nodes.
 
-       Templates with high-performance CPUs are available upon request to support. To take advantage of these templates, select the "Show only high performance CPUs" option.
-
-       See [Available computing resources](../../../concepts/flavors#configuration_templates) for details.
+       Templates with high-performance CPUs are available upon request to support. See [Available computing resources](../../../concepts/flavors#configuration_templates) for details.
 
      - **Availability zone:** [availability zone](../../../../account/concepts/regions) for nodes.
      - **Master disk type:** [storage type](../../../concepts/storage#supported_vk_cloud_storage_types) which will be used by nodes.

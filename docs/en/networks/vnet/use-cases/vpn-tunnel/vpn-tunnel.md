@@ -81,7 +81,7 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
 1. Create a virtual machine that will act as a VPN gateway on the `clientNet` client network, with the following settings:
 
     - **Virtual machine name**: `client_vpn_gw`.
-    - **Virtual machine type**: `Basic-1-2`.
+    - **Virtual machine type**: `STD2-1-2`.
     - **Number of machines in the configuration**: one.
     - **Operating system**: `Ubuntu 22.04`.
     - **Network**: client network and corresponding `clientNet: clientSubnet` subnet.

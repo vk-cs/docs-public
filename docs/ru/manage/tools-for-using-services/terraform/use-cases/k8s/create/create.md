@@ -53,8 +53,8 @@ resource "vkcs_networking_router_interface" "k8s" {
 - Регион `Москва`, зона доступности `GZ1`.
 - Версия Kubernetes `1.23`.
 
-- Один master-узел `Standard-2-6`.
-- Два worker-узла `Basic-1-2-40`:
+- Один master-узел `STD3-4-8`.
+- Два worker-узла `STD2-2-4`:
 
   - С двумя метками (labels):
 
@@ -80,11 +80,11 @@ resource "vkcs_networking_router_interface" "k8s" {
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {
-    name = "Standard-2-6"
+    name = "STD3-4-8"
 }
 
 data "vkcs_compute_flavor" "k8s-node-group-flavor" {
- name = "Basic-1-2-40"
+ name = "STD2-2-4"
 }
 
 data "vkcs_kubernetes_clustertemplate" "k8s-template" {
@@ -148,11 +148,11 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {
-    name = "Standard-2-6"
+    name = "STD3-4-8"
 }
 
 data "vkcs_compute_flavor" "k8s-node-group-flavor" {
- name = "Basic-1-2-40"
+ name = "STD2-2-4"
 }
 
 data "vkcs_kubernetes_clustertemplate" "k8s-template" {
@@ -222,11 +222,11 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {
-    name = "Standard-2-6"
+    name = "STD3-4-8"
 }
 
 data "vkcs_compute_flavor" "k8s-node-group-flavor" {
- name = "Basic-1-2-40"
+ name = "STD2-2-4"
 }
 
 data "vkcs_kubernetes_clustertemplate" "k8s-template" {
