@@ -90,7 +90,7 @@ Each availability zone has one or more data processing centers (data centers) wh
 
   The address of the data center: Moscow, Korovinskoe highway, 41.
 
-  In the availability zone `MS1`, the VK Cloud infrastructure is [protected](https://mcs.mail.ru/cloud-platform/certificates/) in accordance with the Federal Law of the Russian Federation “On Personal Data” No. 152-FZ.
+  In the availability zone `MS1`, the VK Cloud infrastructure is [protected](https://cloud.vk.com/cloud-platform/certificates/) in accordance with the Federal Law of the Russian Federation “On Personal Data” No. 152-FZ.
 
 - `QAZ`: includes a data center [QazCloud](https://qazcloud.kz/).
 
@@ -102,7 +102,7 @@ The availability zones `GZ1` and `MS1` are connected using a redundant dedicated
 
 ## Security
 
-VK Cloud security is ensured by constant monitoring of VK Cloud services, conducting external audits. VK Cloud participates in the security audit program [HackerOne](https://www.hackerone.com). Infrastructure [certified](https://mcs.mail.ru/cloud-platform/certificates/) FSTEC of Russia for working with personal data.
+VK Cloud security is ensured by constant monitoring of VK Cloud services, conducting external audits. VK Cloud participates in the security audit program [HackerOne](https://www.hackerone.com). Infrastructure [certified](https://cloud.vk.com/cloud-platform/certificates/) FSTEC of Russia for working with personal data.
 
 For more information, see the section [Platform security](../it-security/).
 

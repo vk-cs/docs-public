@@ -69,7 +69,7 @@
 
 ## Есть ли индивидуальная поддержка сервисов в VK Cloud?
 
-На платформе VK Cloud можно подключить сервис приоритетной поддержки (Managed Services) от экспертов VK Cloud. Чтобы воспользоваться этим сервисом, [оставьте заявку](https://mcs.mail.ru/managed-services/).
+На платформе VK Cloud можно подключить сервис приоритетной поддержки (Managed Services) от экспертов VK Cloud. Чтобы воспользоваться этим сервисом, [оставьте заявку](https://cloud.vk.com/professional-services/).
 
 Также ознакомьтесь с [полным перечнем услуг Managed Services](/ru/additionals/start/support/support-info#individualnaya_podderzhka).
 

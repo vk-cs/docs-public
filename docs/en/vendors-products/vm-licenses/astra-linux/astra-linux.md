@@ -46,7 +46,7 @@ Only one license can be assigned to one VM.
 
 The price for a month of using the software can be found out:
 
-- in the [price list](https://mcs.mail.ru/pricelist);
+- in the [price list](https://cloud.vk.com/pricelist);
 - when creating a virtual machine;
 - in [project settings](https://msk.cloud.vk.com/app/en/project/) on the tab **Prices**.
 - in the section **Balance** [personal account](https://msk.cloud.vk.com/app/en/services/billing).

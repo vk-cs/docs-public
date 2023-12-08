@@ -46,7 +46,7 @@ Astra Linux Special Edition 1.7 «Воронеж» может выступать
 
 Цену за месяц использования ПО можно узнать:
 
-- в [прайс-листе](https://mcs.mail.ru/pricelist);
+- в [прайс-листе](https://cloud.vk.com/pricelist);
 - при [создании](/ru/base/iaas/instructions/vm/vm-create) виртуальной машины (ВМ);
 - в [настройках проекта](https://msk.cloud.vk.com/app/project/) на вкладке **Цены**.
 - в разделе **Баланс** [личного кабинета](https://msk.cloud.vk.com/app/services/billing).

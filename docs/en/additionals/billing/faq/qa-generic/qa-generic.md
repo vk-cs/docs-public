@@ -17,7 +17,7 @@ When creating new projects by existing users and when a new user enters the proj
 - If your [role](/en/base/account/concepts/rolesandpermissions) in the project is the owner, superadministrator or billing administrator.
 - After the services are activated in the project. To understand if the services are activated:
 
-  1. Go to VK Cloud [personal account](https://mcs.mail.ru/en/).
+  1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
   1. Go to the section of any service. If the **Enable services** button is displayed, [activate](/en/base/account/instructions/activation) them by pressing this button.
 
     During activation, you may need to confirm the phone number and link the payment card.

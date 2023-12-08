@@ -13,7 +13,7 @@ To join an existing VK Cloud project, follow the instructions in article [Join a
 
 ## 1. Create an account
 
-1. Go to [VK Cloud main page](https://mcs.mail.ru/en/) and click **Create a VK Cloud Account** in the upper right corner.
+1. Go to [VK Cloud main page](https://cloud.vk.com/en/) and click **Create a VK Cloud Account** in the upper right corner.
 1. In the window that appears, fill in the fields:
 
     - **Work email**: your email address.

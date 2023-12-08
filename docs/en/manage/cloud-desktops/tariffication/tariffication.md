@@ -1,6 +1,6 @@
 Tariffication is based on the “pay as you go” principle: you are charged only for the resources you consume to the nearest minute, the fee for using paid OS is charged once a day.
 
-The cost of network services is given in [price list](https://mcs.mail.ru/pricelist). Read about how to pay for the service in the section [Billing](/en/additionals/billing).
+The cost of network services is given in [price list](https://cloud.vk.com/pricelist). Read about how to pay for the service in the section [Billing](/en/additionals/billing).
 
 ## What is charged
 

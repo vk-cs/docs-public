@@ -26,7 +26,7 @@ To get access to high-performance CPUs, contact [technical support](/en/contacts
 
 ## How much does an external IP address cost?
 
-The current prices for floating IP addresses and IP addresses on virtual machine ports (`ext-net`) are posted in [price list](https://mcs.mail.ru/pricelist).
+The current prices for floating IP addresses and IP addresses on virtual machine ports (`ext-net`) are posted in [price list](https://cloud.vk.com/pricelist).
 
 ## I want to create an instance, but there is no suitable configuration
 

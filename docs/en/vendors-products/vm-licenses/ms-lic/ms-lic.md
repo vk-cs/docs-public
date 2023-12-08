@@ -1,4 +1,4 @@
-The VK Cloud platform allows you to create virtual machines with pre-installed licensed copies of Microsoft Windows Server operating systems, as well as use additional Microsoft software products — the full list is available in the [price list](https://mcs.mail.ru/pricelist).
+The VK Cloud platform allows you to create virtual machines with pre-installed licensed copies of Microsoft Windows Server operating systems, as well as use additional Microsoft software products — the full list is available in the [price list](https://cloud.vk.com/pricelist).
 
 <warn>
 
@@ -16,7 +16,7 @@ If you have any questions about licensing and rights to use Microsoft software, 
 
 The price for a month of using the software can be found out:
 
-- in the [price list](https://mcs.mail.ru/pricelist);
+- in the [price list](https://cloud.vk.com/pricelist);
 - when creating a virtual machine;
 - in [project settings](https://msk.cloud.vk.com/app/en/project/) on the tab **Prices**.
 - in the section **Balance** [personal account](https://msk.cloud.vk.com/app/en/services/billing).

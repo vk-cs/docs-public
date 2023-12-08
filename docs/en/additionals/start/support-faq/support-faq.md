@@ -69,7 +69,7 @@ To fill in the data about the legal entity, go to [personal account](https://msk
 
 ## Is there individual support for services in VK Cloud?
 
-On the VK Cloud you can connect the priority support service (Managed Services) from VK Cloud experts. To use this service, [leave a request](https://mcs.mail.ru/managed-services/).
+On the VK Cloud you can connect the priority support service (Managed Services) from VK Cloud experts. To use this service, [leave a request](https://cloud.vk.com/professional-services/).
 
 Also check out the [full list of Managed Services](/en/additionals/start/support/support-info#individual_support).
 
