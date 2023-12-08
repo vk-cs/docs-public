@@ -9,7 +9,7 @@ This instruction will help you deploy an Apache server in the Ubuntu 22.04 opera
 1. [Create VM](/en/base/iaas/instructions/vm/vm-create):
 
    - name: `Ubuntu_22_04_LAMP`;
-   - flavor: `Standard-2-2`;
+   - flavor: `STD3-2-6`;
    - operating system: Ubuntu 22.04;
    - network: `network1` with subnet `10.0.0.0/24`;
    - assign a public IP address. The example will use `211.243.95.137`;

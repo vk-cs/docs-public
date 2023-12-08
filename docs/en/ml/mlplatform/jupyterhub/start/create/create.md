@@ -9,6 +9,7 @@ During the installation process, you need to enter the following settings:
 | Parameter | Description |
 | --- | --- |
 | Instance name | The display name of the instance. Also sets the hostname on the OS. |
+| Category of virtual machine | Flavors of the VMs. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors). |
 | Type of virtual machine | Preinstalled VM configuration (CPU and RAM). |
 | Accessibility zone | Selecting the data center where the instance will be launched. |
 | Operating system | Operating system image (version, edition). |
@@ -19,7 +20,7 @@ During the installation process, you need to enter the following settings:
 | Username | Guest OS username |
 | User password | User password in the guest OS. |
 
-The next step is to configure the virtual network. You can select an existing network or create a new one (for more details, see the article "[Creating and deleting networks](/en/networks/vnet/networks/create-net)".
+The next step is to configure the virtual network. You can select an existing network or create a new one (for more details, see the article "[Creating and deleting networks](/en/networks/vnet/networks/create-net))".
 
 | Parameter | Description |
 | --- | --- |

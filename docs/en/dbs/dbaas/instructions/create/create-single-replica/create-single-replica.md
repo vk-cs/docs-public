@@ -29,6 +29,8 @@
 
         </info>
 
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
+
       - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for the DB instance.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.

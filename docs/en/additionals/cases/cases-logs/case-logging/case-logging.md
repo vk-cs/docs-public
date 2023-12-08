@@ -26,45 +26,45 @@ The ELK stack consists of three components:
 2. Import the Elasticsearch repository key:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt key add -
+root@ubuntu-std1-1:~# wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt key add -
 OK
 ```
 
 3. Install apt-transport-https:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# apt-get install apt-transport-https
+root@ubuntu-std1-1:~# apt-get install apt-transport-https
 ```
 
 4. Add a repository:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
+root@ubuntu-std1-1:~# echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
 deb https://artifacts.elastic.co/packages/7.x/apt stable main
 ```
 
 5. Install Elasticsearch:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# apt-get update && apt-get install elasticsearch
+root@ubuntu-std1-1:~# apt-get update && apt-get install elasticsearch
 ```
 
 6. Install Kibana:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# apt-get install kibana
+root@ubuntu-std1-1:~# apt-get install kibana
 ```
 
 7. Install OpenJDK for Logstash to work:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# apt-get install openjdk-8-jre
+root@ubuntu-std1-1:~# apt-get install openjdk-8-jre
 ```
 
 8. Install Logstash:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# apt-get install logstash
+root@ubuntu-std1-1:~# apt-get install logstash
 
 ```
 
@@ -111,29 +111,29 @@ Customize:
 Start elasticsearch:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl start elasticsearch.service
+root@ubuntu-std1-1:~# systemctl start elasticsearch.service
 ```
 
 If you specify too large a Heap Size value, the launch will fail. In this case, the following will be in the logs:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl start elasticsearch.service
+root@ubuntu-std1-1:~# systemctl start elasticsearch.service
 Job for elasticsearch.service failed because the control process exited with error code.
 See "systemctl status elasticsearch.service" and "journalctl -xe" for details.
-root@ubuntu-basic-1-1-10gb:~# journalctl -xe
+root@ubuntu-std1-1:~# journalctl -xe
 -- Unit elasticsearch.service has run starting up.
-Nov 12 12:48:12 ubuntu-basic-1-1-10gb elasticsearch[29841]: Exception in thread "main" java.lang.RuntimeException: starting java failed with [1]
-Nov 12 12:48:12 ubuntu-basic-1-1-10gb elasticsearch[29841]: output:
-Nov 12 12:48:12 ubuntu-basic-1-1-10gb elasticsearch[29841]: #
-Nov 12 12:48:12 ubuntu-basic-1-1-10gb elasticsearch[29841]: # There is insufficient memory for the Java Runtime Environment to continue.
-Nov 12 12:48:12 ubuntu-basic-1-1-10gb elasticsearch[29841]: # Native memory allocation (mmap) failed to map 986513408 bytes for committing reserved memory.
-Nov 12 12:48:12 ubuntu-basic-1-1-10gb elasticsearch[29841]: # An error report file with more information is saved as:
-Nov 12 12:48:12 ubuntu-basic-1-1-10gb elasticsearch[29841]: # /var/log/elasticsearch/hs_err_pid29900.log
+Nov 12 12:48:12 ubuntu-std1-1 elasticsearch[29841]: Exception in thread "main" java.lang.RuntimeException: starting java failed with [1]
+Nov 12 12:48:12 ubuntu-std1-1 elasticsearch[29841]: output:
+Nov 12 12:48:12 ubuntu-std1-1 elasticsearch[29841]: #
+Nov 12 12:48:12 ubuntu-std1-1 elasticsearch[29841]: # There is insufficient memory for the Java Runtime Environment to continue.
+Nov 12 12:48:12 ubuntu-std1-1 elasticsearch[29841]: # Native memory allocation (mmap) failed to map 986513408 bytes for committing reserved memory.
+Nov 12 12:48:12 ubuntu-std1-1 elasticsearch[29841]: # An error report file with more information is saved as:
+Nov 12 12:48:12 ubuntu-std1-1 elasticsearch[29841]: # /var/log/elasticsearch/hs_err_pid29900.log
 ```
 
 If successful, add Elasticsearch to the list of processes to start automatically:
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl enable elasticsearch.service
+root@ubuntu-std1-1:~# systemctl enable elasticsearch.service
 Synchronizing state of elasticsearch.service with SysV service script with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable elasticsearch
 Created symlink /etc/systemd/system/multi-user.target.wants/elasticsearch.service → /usr/lib/systemd/system/elasticsearch.service.
@@ -142,9 +142,9 @@ Created symlink /etc/systemd/system/multi-user.target.wants/elasticsearch.servic
 Verify that Elasticsearch is responding:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# curl http://localhost:9200
+root@ubuntu-std1-1:~# curl http://localhost:9200
 {
-"name" : "ubuntu-basic-1-1-10gb",
+"name" : "ubuntu-std1-1",
 "cluster_name" : "elasticsearch",
 "cluster_uuid" : "ZGDKK_5dQXaAOr75OQGw3g",
 "version" : {
@@ -169,13 +169,13 @@ By default, the Kibana configuration file /etc/kibana/kibana.yml contains all th
 1. Start Kibana:
 
 ```
-root@ubuntu-basic-1-1-10gb:/etc/kibana# systemctl start kibana.service
+root@ubuntu-std1-1:/etc/kibana# systemctl start kibana.service
 ```
 
 2. Add Kibana to the list of applications that start automatically:
 
 ```
-root@ubuntu-basic-1-1-10gb:/etc/kibana# systemctl enable kibana.service
+root@ubuntu-std1-1:/etc/kibana# systemctl enable kibana.service
 Synchronizing state of kibana.service with SysV service script with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable kibana
 ```
@@ -198,32 +198,32 @@ Consider the most popular first method.
 1. Install Nginx:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# apt-get install nginx
+root@ubuntu-std1-1:~# apt-get install nginx
 ```
 
 2. Make sure that in the configuration file /etc/elasticsearch/elasticsearch.yml the network.host parameter is set to 127.0.0.1 or localhost. If necessary, make this configuration and restart the elasticsearch daemon:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# cat /etc/elasticsearch/elasticsearch.yml | grep network.host
+root@ubuntu-std1-1:~# cat /etc/elasticsearch/elasticsearch.yml | grep network.host
 network.host: 127.0.0.1
-root@ubuntu-basic-1-1-10gb:~# systemctl restart elasticsearch.service
+root@ubuntu-std1-1:~# systemctl restart elasticsearch.service
 ```
 
 3. Make sure that the server.host parameter in the configuration file /etc/kibana/kibana.yml is set to 127.0.0.1 or localhost. If necessary, make this configuration and restart the kibana daemon:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# cat /etc/kibana/kibana.yml | grep server.host
+root@ubuntu-std1-1:~# cat /etc/kibana/kibana.yml | grep server.host
 server.host: "127.0.0.1"
 # When this setting's value is true Kibana uses the hostname specified in the server.host
-root@ubuntu-basic-1-1-10gb:~# systemctl restart kibana.service
+root@ubuntu-std1-1:~# systemctl restart kibana.service
 ```
 
 4. Make sure Elasticsearh and Kibana are using interface 127.0.0.1:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# netstat -tulpn | grep9200
+root@ubuntu-std1-1:~# netstat -tulpn | grep9200
 tcp6 0 0 127.0.0.1:9200 :::\* LISTEN 10512/java
-root@ubuntu-basic-1-1-10gb:~# netstat -tulpn | grep 5601
+root@ubuntu-std1-1:~# netstat -tulpn | grep 5601
 tcp 0 0 127.0.0.1:5601 0.0.0.0:\* LISTEN 11029/node
 ```
 
@@ -252,19 +252,19 @@ proxy_set_header Host $http_host;
 6. Specify the username (USER) and password (PASSWORD):
 
 ```
-root@ubuntu-basic-1-1-10gb:/etc/nginx# printf "USER:$(openssl passwd -crypt PASSWORD)\n" >> /etc/nginx/htpasswd
+root@ubuntu-std1-1:/etc/nginx# printf "USER:$(openssl passwd -crypt PASSWORD)\n" >> /etc/nginx/htpasswd
 ```
 
 7. To enable the site, create a symlink to the /etc/nginx/sites-enabled folder:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# ln -s /etc/nginx/sites-available/kibana.conf /etc/nginx/sites-enabled/kibana.conf
+root@ubuntu-std1-1:~# ln -s /etc/nginx/sites-available/kibana.conf /etc/nginx/sites-enabled/kibana.conf
 ```
 
 8. Start Nginx:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl start nginx
+root@ubuntu-std1-1:~# systemctl start nginx
 ```
 
 9. In a browser, navigate to http://<kibana server IP address>:5601. In the window that opens, enter your login and password to access the Kibana web interface.
@@ -295,13 +295,13 @@ The most common agent is Filebeat, we use it to collect Nginx logs.
 1. Install Filebeat:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# apt-get install filebeat
+root@ubuntu-std1-1:~# apt-get install filebeat
 ```
 
 2. Allow Nginx log processing:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# mv /etc/filebeat/modules.d/nginx.yml.disabled /etc/filebeat/modules.d/nginx.yml
+root@ubuntu-std1-1:~# mv /etc/filebeat/modules.d/nginx.yml.disabled /etc/filebeat/modules.d/nginx.yml
 ```
 
 If the logs are in a non-standard location, or only part of the logs needs to be processed, uncomment and fill in the var.paths variables in the /etc/filebeat/modules.d/nginx.yml file.
@@ -382,7 +382,7 @@ hosts: ["<logstash server IP address>:5044"]
 6. Make sure there are no errors in the configuration file:
 
 ```
-root@ubuntu-basic-1-1-10gb:/etc/filebeat# filebeat test config -c /etc/filebeat/filebeat.yml
+root@ubuntu-std1-1:/etc/filebeat# filebeat test config -c /etc/filebeat/filebeat.yml
 config OK
 ```
 
@@ -475,22 +475,22 @@ As a result, the output to the Elasticsearch database will be duplicated by the 
 4. Launch Logstash and add it to the list of applications to start automatically:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# systemctl start logstash
-root@ubuntu-basic-1-1-10gb:~# systemctl enable logstash
+root@ubuntu-std1-1:~# systemctl start logstash
+root@ubuntu-std1-1:~# systemctl enable logstash
 Created symlink /etc/systemd/system/multi-user.target.wants/logstash.service → /etc/systemd/system/logstash.service.
 ```
 
 5. Make sure the service has started:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# netstat -tulpn | grep5044
+root@ubuntu-std1-1:~# netstat -tulpn | grep5044
 tcp6 0 0 :::5044 :::\* LISTEN 18857/java
 ```
 
 6. Test Filebeat:
 
 ```
-root@ubuntu-basic-1-1-10gb:~# service filebeat start
+root@ubuntu-std1-1:~# service filebeat start
 ```
 
 ## Set up Kibana Templates

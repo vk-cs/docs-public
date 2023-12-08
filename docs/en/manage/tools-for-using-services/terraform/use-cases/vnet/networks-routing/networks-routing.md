@@ -35,7 +35,7 @@ Example Infrastructure:
 
    variable "compute_flavor" {
      type = string
-     default = "Basic-1-2-20"
+     default = "STD2-2-4"
    }
 
    variable "key_pair_name" {
