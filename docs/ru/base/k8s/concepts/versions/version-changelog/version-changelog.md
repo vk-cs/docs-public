@@ -1,3 +1,26 @@
+## Kubernetes 1.27.6 <a id="v1-27-6"></a>
+
+**Изменения в сервисе Kubernetes aaS:**
+
+- Удален `storage.k8s.io/v1beta1` из `CSIStorageCapacity`.
+- [Удалена поддержка](https://kubernetes.io/blog/2023/03/17/upcoming-changes-in-kubernetes-v1-27/#support-for-deprecated-seccomp-annotations) устаревших аннотаций seccomp.
+- Удалена некоторая функциональность расширения дисков.
+
+Остальные удаленные функции продукта можно найти в [официальной документации Kubernetes](https://kubernetes.io/blog/2023/03/17/upcoming-changes-in-kubernetes-v1-27/#api-removals-and-other-changes-for-kubernetes-v1-27).
+
+**Важные изменения в Kubernetes:**
+
+- Функциональность [SeccompDefault](https://kubernetes.io/docs/tutorials/security/seccomp/) переведена в статус stable.
+- Функциональность [Mutable scheduling directives for Jobs](https://github.com/kubernetes/enhancements/issues/2926) переведена в статус general availability (публичный доступ).
+- Функциональность [DownwardAPIHugePages](https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/) переведена в статус stable.
+- Добавлена возможность доступа к логам нод кластера через Kubernetes API.
+
+**Исправлены уязвимости:**
+
+- [CVE-2023-2728](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.27.md#cve-2023-2728-bypassing-enforce-mountable-secrets-policy-imposed-by-the-serviceaccount-admission-plugin): обход политики принудительного использования секретов, назначенной плагином ServiceAccount.
+
+Подробнее об этих и других изменениях в [официальной документации Kubernetes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.27.md#v1276).
+
 ## Kubernetes 1.26.5 <a id="v1-26-5"></a>
 
 **Изменения в сервисе Kubernetes aaS:**
