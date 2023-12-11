@@ -1,3 +1,26 @@
+## Kubernetes 1.27.6 <a id="v1-27-6"></a>
+
+**Changes in Kubernetes aaS service:**
+
+- Removal of `storage.k8s.io/v1beta1` from `CSIStorageCapacity`.
+- [Stopped support](https://kubernetes.io/blog/2023/03/17/upcoming-changes-in-kubernetes-v1-27/#support-for-deprecated-seccomp-annotations) for deprecated seccomp annotations.
+- Removal of several feature gates for volume expansion.
+
+Read more about these and other changes in [official Kubernetes documentation](https://kubernetes.io/blog/2023/03/17/upcoming-changes-in-kubernetes-v1-27/#api-removals-and-other-changes-for-kubernetes-v1-27).
+
+**Important changes in Kubernetes:**
+
+- [SeccompDefault](https://kubernetes.io/docs/tutorials/security/seccomp/) moved to the stable status.
+- [Mutable scheduling directives for Jobs](https://github.com/kubernetes/enhancements/issues/2926 ) transferred to the status of general availability.
+- [DownwardAPIHugePages](https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/) moved to the stable status.
+- Added the ability to access cluster node logs via the Kubernetes API.
+
+**Vulnerability fixes:**
+
+- [CVE-2023-2728](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.27.md#cve-2023-2728-bypassing-enforce-mountable-secrets-policy-imposed-by-the-serviceaccount-admission-plugin): bypassing enforce mountable secrets policy imposed by the ServiceAccount admission plugin.
+
+Read more about these and other changes in [official Kubernetes documentation](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.27.md#v1276).
+
 ## Kubernetes 1.26.5 <a id="v1-26-5"></a>
 
 **Changes in Kubernetes aaS service:**
