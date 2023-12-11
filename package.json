@@ -20,6 +20,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vk-cloud-solutions/help": "2.5.4"
+    "@vk-cloud-solutions/help": "2.5.6"
   }
 }
