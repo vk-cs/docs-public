@@ -1,15 +1,15 @@
 {
-    "title": "Подписанные URL",
+    "title": "Составление подписанного URL",
     "pageDescription": "",
     "shortDescription": "Составление и общий вид подписанного URL",
-    "metaTitle": "Подписанные URL",
+    "metaTitle": "Составление подписанного URL",
     "metaDescription": "Предварительно подписанный URL-адрес предоставляет доступ к объекту, указанному в URL-адресе, при условии, что создатель предварительно подписанного URL-ад",
-    "sectionTitle": "Подписанные URL",
+    "sectionTitle": "Составление подписанного URL",
     "markdown": "",
     "icon": "",
     "infobarItems": null,
     "weight": 5,
     "uuid": "3a73e394-55e6-4dec-8e1b-cc28fbd61f79",
     "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2023-11-17T14:19:31.000Z"
+    "updatedAt": "2023-12-01T08:46:34.000Z"
 }

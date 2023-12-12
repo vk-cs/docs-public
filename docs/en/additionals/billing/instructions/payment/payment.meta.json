@@ -1,0 +1,17 @@
+{
+    "title": "Balance management",
+    "pageDescription": "How to view, top up the VK Cloud project balance and configure notifications.",
+    "shortDescription": "How to view, top up the project balance and configure notifications",
+    "metaTitle": "Balance management",
+    "metaDescription": "VK Cloud: how to view, top up the project balance and configure notifications",
+    "sectionTitle": "Balance management",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "133535c8-339f-4d8d-b209-136c3f119a6f",
+    "additionalUuids": [
+        "6051f833-f3d5-4485-9f2f-b3807ec70dd8"
+    ],
+    "createdAt": "2022-04-07T07:18:11.000Z",
+    "updatedAt": "2023-11-29T06:23:22.000Z"
+}

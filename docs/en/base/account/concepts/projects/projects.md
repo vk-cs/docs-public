@@ -5,7 +5,7 @@ A project is a structural unit within the cloud that owns resources: virtual mac
 
 When registering a new account in VK Cloud, a project is automatically created in which the current user is registered as the owner. The project owner can create new projects and invite users to all his projects by assigning them [roles](../rolesandpermissions). The same user can be a participant in several projects and have different roles in them.
 
-Each VK Cloud project has a separate [balance](/en/additionals/billing/start/balance) which can be replenished using the [card](/en/additionals/billing/operations/add-card) linked to the project or other [payment methods](/en/additionals/billing/start/payment-methods).
+Each VK Cloud project has a separate [balance](/en/additionals/billing/concepts/balance) which can be replenished using the [card](/en/additionals/billing/instructions/add-card) linked to the project or other [payment methods](/en/additionals/billing/concepts/payment-methods).
 
 ## Automatic freezing of the project
 
@@ -38,7 +38,7 @@ A number of services may have their own terms for freezing and deleting objects.
 <details>
   <summary markdown="span">Example for the Object storage service</summary>
 
-- When the negative balance reaches -1000 rubles, the service objects are frozen.
+- When the negative balance reaches `-1000` rubles, the service objects are frozen.
 
     All the time while the objects are frozen, the service charges for data storage, while the objects have read access.
 

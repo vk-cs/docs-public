@@ -38,12 +38,12 @@
 </tablist>
 <tabpanel>
 
-[Шаблон конфигурации](/ru/base/iaas/concepts/vm-concept#shablony_konfiguraciy_df45dc9d) для ВМ инстанса задается через переменную `db-instance-flavor`.
+[Шаблон конфигурации](/ru/base/iaas/concepts/vm-concept#shablony_konfiguraciy) для ВМ инстанса задается через переменную `db-instance-flavor`.
 
 ```hcl
 variable "db-instance-flavor" {
   type    = string
-  default = "Standard-2-8-50"
+  default = "STD3-4-8-50"
 }
 
 data "vkcs_compute_flavor" "db" {
@@ -105,7 +105,7 @@ resource "vkcs_db_instance" "db-instance" {
 ```hcl
 variable "db-instance-flavor" {
   type    = string
-  default = "Standard-2-8-50"
+  default = "STD3-4-8-50"
 }
 
 data "vkcs_compute_flavor" "db" {
@@ -241,7 +241,7 @@ variable "db_user_password" {
 
 variable "db-instance-flavor" {
   type    = string
-  default = "Standard-2-8-50"
+  default = "STD3-4-8-50"
 }
 
 data "vkcs_compute_flavor" "db" {

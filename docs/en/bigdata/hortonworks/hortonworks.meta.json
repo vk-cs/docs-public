@@ -5,13 +5,20 @@
   "metaTitle": "Cloud Big Data",
   "metaDescription": "Cloud Big Data are big data solutions based on Apache Hadoop, Apache Spark, ClickHouse, Storm and Kafka. You can choose a suitable pre-installed te",
   "sectionTitle": "Cloud Big Data",
-  "markdown": "Cloud Big Data are big data solutions based on Apache Hadoop, Apache Spark, ClickHouse, Storm and Kafka. You can choose a suitable pre-installed template or define your own configuration by installing the necessary components via the web interface. Integration with Cloud Storage object storage, virtual machines, Kubernetes clusters, GPU computing, cloud machine learning services is supported.",
+  "markdown": "Cloud Big Data are big data solutions based on Apache Hadoop, Apache Spark, ClickHouse, Storm and Kafka. You can choose a suitable pre-installed template or define your own configuration by installing the necessary components via the web interface. Integration with Cloud Storage object storage, virtual machines, Kubernetes clusters, GPU computing, cloud machine learning services is supported.<br><br><warn>To connect the service and create a cluster, contact [technical support](/ru/contacts) or leave a request on [the service website](https://cloud.vk.com/bigdata/).</warn>",
   "icon": "",
+  "isBeta": true,
+  "hidden": true,
   "weight": 7,
   "infobarItems": null,
   "additionalUuids": [
     "e57818fd-d240-4bf5-980e-f87e3c820450",
-    "6c23a90d-81d8-446f-bed9-3119fb047869"
+    "6c23a90d-81d8-446f-bed9-3119fb047869",
+    "c4324c86-0e53-4da0-b371-79d089985ad7",
+    "0e9bed0b-e96d-40ca-8281-c60fcb7e0955",
+    "682f013c-eb52-45d7-8231-0946ebb7562b",
+    "d55a85f4-849a-40ad-ab2a-cc9a8d52384e",
+    "8388135f-fe0b-4a95-97fa-796755da704f"
   ],
   "uuid": "d93b16d5-c976-4fc0-99ac-192ce784b348"
 }

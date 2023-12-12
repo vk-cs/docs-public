@@ -68,13 +68,13 @@ Port 35242
 Restart sshd:
 
 ```
-root@ubuntu-standard-2-4-40gb:/etc/ssh# service sshd restart
+root@ubuntu-std3-2-4-40gb:/etc/ssh# service sshd restart
 ```
 
 Make sure the service is listening on the new port:
 
 ```
-root@ubuntu-standard-2-4-40gb:/etc/ssh# netstat -tulpn | grep 35242
+root@ubuntu-std3-2-4-40gb:/etc/ssh# netstat -tulpn | grep 35242
 tcp 0 0 0.0.0.0:35242 0.0.0.0:\* LISTEN 3625/sshd
 tcp6 0 0 :::35242 3625/sshd
 ```
@@ -84,19 +84,19 @@ Log in to the new port. If you can't connect, check your Firewall settings.
 3. Create the necessary directories for persistent storage gitlab:
 
 ```
-root@ubuntu-standard-2-4-40gb:~# mkdir /opt/gitlab
-root@ubuntu-standard-2-4-40gb:~# mkdir /opt/gitlab/config
-root@ubuntu-standard-2-4-40gb:~# mkdir /opt/gitlab/logs
-root@ubuntu-standard-2-4-40gb:~# mkdir /opt/gitlab/data
-root@ubuntu-standard-2-4-40gb:~# mkdir /opt/gitlab-runner
-root@ubuntu-standard-2-4-40gb:~# mkdir /opt/gitlab-runner/config
-root@ubuntu-standard-2-4-40gb:~# mkdir /opt/gitlab-runner/data
+root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab
+root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab/config
+root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab/logs
+root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab/data
+root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab-runner
+root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab-runner/config
+root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab-runner/data
 ```
 
 4. Run docker-compose:
 
 ```
-root@ubuntu-standard-2-4-40gb:~# docker-compose up -d
+root@ubuntu-std3-2-4-40gb:~# docker-compose up -d
 Creating network "root_default" with the default driver
 Pulling gitlab (gitlab/gitlab-ce:latest)...
 latest: Pulling from gitlab/gitlab-ce
@@ -131,7 +131,7 @@ Creating gitlab ... done
 The startup takes about 5 minutes, then the service is available via HTTP. Check the startup status:
 
 ```
-root@ubuntu-standard-2-4-40gb:~# docker ps
+root@ubuntu-std3-2-4-40gb:~# docker ps
 Container IMage Command Creed Status Ports Names
 bb20bc6cb7d5 . . . gitlab/gitlab-ce:latest . . . "/assets/wrapper" . ->443/tcp gitlab
 a2209bb357e7 . . gitlab/gitlab-runner:latest . "/usr/bin/dumb-init ..." 10 minutes ago . Up 10 minutes . . . . . . git lab runner
@@ -164,7 +164,7 @@ As a result, the use of LetsEncrypt will be allowed and certificate renewals wil
 2. Go to Docker and start reissuing certificates:
 
 ```
-root@ubuntu-standard-2-4-40gb:~# docker exec -it gitlab bash
+root@ubuntu-std3-2-4-40gb:~# docker exec -it gitlab bash
 root@testrom:/# gitlab-ctl reconfigure
 ```
 

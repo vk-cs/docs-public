@@ -36,16 +36,15 @@ As an SDN, the VK Cloud platform uses:
 
 - Sprut, VK Cloud's own SDN, fully compatible with the Openstack Neutron API.
 
-  <info>
-
-  Sprut is in beta-testing stage. To get access to the new SDN service contact [technical support](../../../../../contacts).
-
-  </info>
-
   It lacks the listed disadvantages of Openstack Neutron. Sprut provides stable operation of networks and network functions on top of these networks on a large scale. Its advantages:
 
   - It uses the HTTP REST API instead of a message queue.
   - All agents store their current state. Agents receive from the SDN controller the target state they should be in, and bring their state to the required state.
   - A layered architecture was chosen to simplify the data transfer layer and allow for more flexibility.
+  - [Advanced router](../../use-cases/advanced-router/) is used with support for static and dynamic routing.
+  - The organization of dedicated connections between the local network of clients and VK Cloud is available — [Cloud Direct Connect](https://cloud.vk.com/direct-connect).
 
-  To know more about Sprut, watch the [How to choose SDN for high loads](https://www.youtube.com/watch?v=iqSXRZ8b_bk) video.
+  Additional materials about Sprut:
+
+  - [How to choose SDN for high loads](https://www.youtube.com/watch?v=iqSXRZ8b_bk) video;
+  - [Как мы в VK Cloud SDN-ы писали](https://habr.com/ru/companies/vk/articles/763760/) article.

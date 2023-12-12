@@ -61,7 +61,7 @@ After completing all the steps of a quick start, you will:
 1. Click the **Next step** button.
 1. in the “Virtual machine settings” step, specify:
 
-    1. **Instance type**: `Basic-1-2`.
+    1. **Instance type**: `STD1-1`.
     1. **Disk size**: `10`.
     1. **Disk Type**: `HDD`.
     1. **Image**: `Astra Linux SE 1.7.2 Орел GUI`.

@@ -304,7 +304,7 @@ Deleting a project is also possible with a negative balance.
 1. Make sure that you have transferred all the necessary data from the project.
 1. Contact [technical support](/en/contacts/) on behalf of the project owner, provide in the request the [project ID](#getting-the-project-id) (PID) and [region](../../../concepts/regions) of the project being deleted.
 
-1. (For legal entities) Specify for what period you need [closing documents](/en/additionals/billing/operations/report).
+1. (For legal entities) Specify for what period you need [closing documents](/en/additionals/billing/concepts/report).
 
     You will be contacted to confirm the deletion.
 

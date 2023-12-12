@@ -7,9 +7,9 @@ Persistent volumes can be connected to simple demo applications in various ways.
    When creating the cluster:
 
    - Select the **Assign external IP** option.
-   - Create one group of worker nodes with virtual machine type `Standard-2-8` in the `MS1` availability area with total computing resources: 2 vCPU, 8 GB RAM (or more). This is necessary to be able to schedule all the required objects.
+   - Create one group of worker nodes with virtual machine type `STD3-2-8` in the `MS1` availability area with total computing resources: 2 vCPU, 8 GB RAM (or more). This is necessary to be able to schedule all the required objects.
 
-    For example, you can create one group of nodes with virtual machine type `Standard-2-8`.
+    For example, you can create one group of nodes with virtual machine type `STD3-2-8`.
 
    Other cluster parameters are at your discretion.
 

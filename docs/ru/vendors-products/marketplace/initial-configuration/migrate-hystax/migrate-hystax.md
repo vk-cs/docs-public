@@ -19,7 +19,7 @@
 
 1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
 1. [Настройте](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута мигрируемая инфраструктура.
-1. [Подключите](../../instructions/pr-instance-add/) сервис Hystax Acura Migration.
+1. [Подключите](/ru/vendors-products/marketplace/instructions/pr-instance-add/) сервис Hystax Acura Migration.
 
    Дождитесь завершения установки — на почту придет ссылка с логином и паролем. Сервис будет развернут по адресу https://migration.mcs-cloud.ru (личный кабинет Hystax Acura).
 
@@ -138,7 +138,7 @@
                 ],
                 "availability_zone": "MS1",
                 "rank": 0,
-                "flavor": "Standard-4-8-80",
+                "flavor": "STD3-4-8",
                 "ports": [
                     {
                         "name": "port_0",

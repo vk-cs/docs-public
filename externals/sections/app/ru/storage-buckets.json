@@ -24,7 +24,7 @@
                     "link": "docs/ru/base/s3/quick-start"
                 },
                 {
-                    "link": "docs/ru/base/s3/instructions/buckets/object-access"
+                    "link": "docs/ru/base/s3/instructions/buckets/create-bucket"
                 }
             ]
         },

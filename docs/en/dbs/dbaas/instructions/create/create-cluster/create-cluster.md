@@ -60,7 +60,8 @@
 
       Then set the parameters:
 
-      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors_2a230ce5) for the cluster.
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
+      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for the cluster.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
@@ -92,7 +93,9 @@
 
       Then set the parameters:
 
-      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors_2a230ce5) for the cluster.
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
+
+      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for the cluster.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
@@ -108,7 +111,9 @@
 
       Set the parameters:
 
-      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors_2a230ce5) for the cluster.
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
+
+      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for the cluster.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
@@ -206,7 +211,9 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 
-      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors_2a230ce5) for the cluster.
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
+
+      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for the cluster.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
@@ -360,7 +367,9 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 
-      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors_2a230ce5) for the cluster.
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
+
+      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for the cluster.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
@@ -512,7 +521,9 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         For Redis, the number of replicas in sharjah is fixed.
 
-      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors_2a230ce5) for the shard hosts.
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
+
+      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for the shard hosts.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 

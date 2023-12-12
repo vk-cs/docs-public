@@ -44,8 +44,8 @@ A role intended for project balance management.
 
 A billing administrator can:
 
-- [link](../../../../additionals/billing/operations/add-card) a card to the project, if not linked yet;
-- make a [payment](../../../../additionals/billing/operations/payment) or configure balance auto-completion.
+- [link](/en/additionals/billing/instructions/add-card) a card to the project, if not linked yet;
+- make a [payment](/en/additionals/billing/instructions/payment) or configure balance auto-completion.
 
 This role has no access to services and to the list of project members.
 

@@ -10,7 +10,7 @@ Packer позволяет создавать образы виртуальных
 
    </info>
 
-1. [Установите](../../../../base/account/project/cli/setup) OpenStack CLI, если он еще не установлен. Убедитесь, что вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в облаке с его помощью.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. [Загрузите образ](http://ftp.altlinux.org/pub/distributions/ALTLinux/p9/images/cloud/x86_64/) ОС Alt Linux P9 локально (файл `alt-p9-cloud-x86_64.qcow2`).
 
 ## 1. Конвертируйте образ в формат RAW
@@ -94,7 +94,7 @@ Packer позволяет создавать образы виртуальных
       }
 
       source "openstack" "altlinux" {
-        flavor       = "Standard-2-6"
+        flavor       = "STD3-2-6"
         image_name   = "Alt-Linux-P9-Starter-Kit"
         source_image = "${var.source_image}"
         config_drive            = "true"

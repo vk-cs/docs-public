@@ -1,0 +1,14 @@
+{
+    "title": "Redash 10.1 deployment",
+    "pageDescription": "Steps to deploy the Redash 10.1.0 service to the target VK Cloud project using the Marketplace. Deploying the Redash service for data visualization tasks.",
+    "shortDescription": "Deploying the Redash service for data visualization tasks",
+    "metaTitle": "Redash 10.1 deployment",
+    "metaDescription": "Marketplace VK Cloud: steps to deploy the Redash 10.1.0 service for data visualization tasks to the target project",
+    "sectionTitle": "Redash 10.1 deployment",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 6,
+    "uuid": "88d700e5-4c3d-4a99-a5ee-ac43a5b4afcb",
+    "createdAt": "2023-12-06T07:38:30.000Z",
+    "updatedAt": "2023-12-06T07:38:30.000Z"
+}
