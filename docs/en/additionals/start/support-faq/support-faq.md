@@ -61,7 +61,7 @@ If you have not received a reply by email:
 
 ## Where can I view data on the health and failures of services?
 
-This data is published on the [system status](https://status.mcs.mail.ru/) page.
+This data is published on the [system status](https://status.msk.cloud.vk.com) page.
 
 ## Where can I change the data of a legal entity?
 

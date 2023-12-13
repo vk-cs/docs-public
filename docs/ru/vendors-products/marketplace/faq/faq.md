@@ -30,4 +30,4 @@ Marketplace — подсистема VK Cloud, которая предостав
 
 ## Как занести новый сервис в Marketplace?
 
-Напишите по адресу `marketplace@mcs.mail.ru` с информацией о сервисе, который собираетесь добавить в Marketplace.
+Напишите по адресу `marketplace@cloud.vk.com` с информацией о сервисе, который собираетесь добавить в Marketplace.

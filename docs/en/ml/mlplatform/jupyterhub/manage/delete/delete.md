@@ -7,6 +7,6 @@ To delete a JupyterHub instance, you need to:
 <info>
 
 **Note**
-If the JupyterHub instance was previously associated with MLflow, you first need to [delete the MLflow instance](https://mcs.mail.ru/docs/ru/ml/mlplatform/mlflow/manage/delete).
+If the JupyterHub instance was previously associated with MLflow, you first need to [delete the MLflow instance](https://cloud.vk.com/docs/en/ml/mlplatform/mlflow/manage/delete).
 
 </info>

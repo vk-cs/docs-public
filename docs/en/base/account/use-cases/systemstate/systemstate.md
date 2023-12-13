@@ -1,6 +1,6 @@
 Through your personal account, you can monitor the status of VK Cloud services in real time, as well as get a history of resolved incidents and announcements about planned work.
 
-The information is available on the page [Статус работы сервисов](https://status.mcs.mail.ru/).
+The information is available on the page [Статус работы сервисов](https://status.msk.cloud.vk.com).
 
 Statuses can be useful if you encounter service failures. For example, when creating a VM, an error occurred: the VM was created, but did not appear in the list of virtual machines.
 

@@ -45,7 +45,7 @@ The account confirmation window opens. A confirmation email is sent to the speci
 
 If you do not immediately confirm the account, when you try to perform an action (for example, create an object or [activate services](/en/base/account/start/activation)), the confirmation will continue from the step where it was stopped.
 
-1. Confirm your email: wait for an email from the address `noreply@mcs.mail.ru` and follow the link in the email. If the email has not arrived or has expired, request it again by clicking **Send confirmation again** in the confirmation window.
+1. Confirm your email: wait for an email from the address `noreply@cloud.vk.com` and follow the link in the email. If the email has not arrived or has expired, request it again by clicking **Send confirmation again** in the confirmation window.
 1. Confirm your phone:
 
    <warn>

@@ -74,7 +74,7 @@ Logical fault tolerance is implemented using availability zones, which are combi
 
 <info>
 
-The status of the availability zones, services and infrastructure of VK Cloud can be checked on the [services page status page](https://status.mcs.mail.ru).
+The status of the availability zones, services and infrastructure of VK Cloud can be checked on the [services page status page](https://status.msk.cloud.vk.com).
 
 </info>
 

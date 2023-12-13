@@ -75,7 +75,7 @@ To transfer licenses under the Software Assurance agreement, you must go through
 
 - email: `support@mcs.mail.ru`;
 - name of the partner: `VK Cloud`;
-- partner web site: `mcs.mail.ru`.
+- partner web site: `cloud.vk.com`.
 
 After receiving the form, Microsoft will check your license and inform you and your Microsoft partner about the results of the check. Further instructions in the manual [Moving licenses within Software Assurance](https://www.microsoft.com/ru-ru/licensing/licensing-programs/software-assurance-license-mobility) and to the document [License Mobility Verification Guide](http://download.microsoft.com/download/7/9/b/79bd917e-760b-48b6-a266-796b3e47c47a/License_Mobility_Customer_Verification_Guide.pdf) Microsoft (PDF).
 

@@ -2,7 +2,7 @@
 
 ## Настройка ролевой модели
 
-Для работы с публичным DNS настройте [роли](/ru/base/account/concepts/rolesandpermissions) для пользователей [личного кабинета](https://mcs.mail.ru/app) VK Cloud:
+Для работы с публичным DNS настройте [роли](/ru/base/account/concepts/rolesandpermissions) для пользователей [личного кабинета](https://msk.cloud.vk.com/app/) VK Cloud:
 
 - Роль для просмотра DNS-зон и ресурсных записей:
 

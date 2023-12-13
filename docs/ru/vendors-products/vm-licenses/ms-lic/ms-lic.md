@@ -75,7 +75,7 @@ VK Cloud позволяет развертывать ряд серверных �
 
 - адрес электронной почты: `support@mcs.mail.ru`;
 - наименование партнера: `VK Cloud`;
-- веб-сайт партнера: `mcs.mail.ru`.
+- веб-сайт партнера: `cloud.vk.com`.
 
 Получив форму, корпорация Microsoft проверит вашу лицензию и сообщит о результатах проверки вам и вашему партнеру Microsoft. Дальнейшие инструкции в руководстве [Перемещение лицензий в рамках Software Assurance](https://www.microsoft.com/ru-ru/licensing/licensing-programs/software-assurance-license-mobility) и в документе [License Mobility Verification Guide](http://download.microsoft.com/download/7/9/b/79bd917e-760b-48b6-a266-796b3e47c47a/License_Mobility_Customer_Verification_Guide.pdf) компании Microsoft (PDF).
 

@@ -30,4 +30,4 @@ If no payment was made with the postpaid method, the service will be deleted, fo
 
 ## How do I add a new service to the Marketplace?
 
-Write to `marketplace@mcs.mail.ru` with information about the service you are going to add to the Marketplace.
+Write to `marketplace@cloud.vk.com` with information about the service you are going to add to the Marketplace.
