@@ -1,17 +1,17 @@
 {
     "title": "Работа с сетью",
     "pageDescription": "",
-    "shortDescription": "",
+    "shortDescription": "Принципы работы с сетью",
     "metaTitle": "Работа с сетью",
     "metaDescription": "",
     "sectionTitle": "Работа с сетью",
     "icon": "",
     "infobarItems": null,
-    "weight": 4,
+    "weight": 6,
     "uuid": "a688895b-a9da-412b-8ea3-b7ebbbbfd25e",
     "additionalUuids": [
         "328aea81-13b1-4879-932d-4f3d3be77a58"
     ],
     "createdAt": "2023-07-07T10:46:13.000Z",
-    "updatedAt": "2023-11-29T06:23:22.000Z"
+    "updatedAt": "2023-11-30T09:04:38.000Z"
 }
