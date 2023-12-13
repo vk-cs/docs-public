@@ -20,7 +20,7 @@ Log data can be useful both for internal analysis of incidents and when contacti
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
 1. Click on the user's name in the header of the page.
 1. Select **Action logger** from the drop-down list.
 1. (Optional) Specify the time range:
@@ -36,43 +36,31 @@ To open detailed information about an individual record, click on the icon ![Inf
 
 1. [Enable](/en/base/account/instructions/account-manage/manage-2fa) two-factor authentication (2FA) for your account.
 1. [Get](/en/additionals/cases/case-keystone-token) the `X-Auth-Token`.
-1. [Find out](https://mcs.mail.ru/app/project/endpoints) the address of the `Audit` endpoint.
+1. [Find out](https://msk.cloud.vk.com/app/en/project/endpoints) the address of the `Audit` endpoint.
 1. Run the request:
 
    ```bash
    curl -X GET "<Audit endpoint>/logs" -H "X-Auth-Token: <token>"
    ```
 
-Additional parameters can be specified in the request (header):
+   Additional parameters can be specified in the request (header):
 
-| Parameter | Format | Description |
-| --- | --- | --- |
-| `from`   | [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) | The beginning of the time range |
-| `to`     | [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) | End of time range |
-| `source` | string  | The source component of the operation |
-| `marker` | string  | The token for requesting the next page, previously returned by the API. TTL of markers — 1 hour |
-| `limit`  | integer | The number of records to return. If omitted, returns 100 records |
+   | Parameter | Format | Description |
+   | --- | --- | --- |
+   | `from`   | [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) | The beginning of the time range |
+   | `to`     | [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) | End of time range |
+   | `source` | string  | The source component of the operation |
+   | `marker` | string  | The token for requesting the next page, previously returned by the API. TTL of markers — 1 hour |
+   | `limit`  | integer | The number of records to return. If omitted, returns 100 records |
 
-<info>
+### Examples of requests and responses
 
-To split the output of records to the console or file into lines, the requests below use [the jq utility](/en/manage/tools-for-using-services/rest-api/install-jq).
-
-</info>
+To split the output of records to the console or file into lines, the requests use [the jq utility](/en/manage/tools-for-using-services/rest-api/install-jq).
 
 <details>
-    <summary>Examples of requests and responses</summary>
+    <summary>Retrieving the latest log records</summary>
 
-<tabs>
-<tablist>
-<tab>Last records</tab>
-<tab>Records over time period</tab>
-<tab>Using the marker parameter</tab>
-</tablist>
-<tabpanel>
-
-Get the last 2 records from the action log of the Magnum component.
-
-Run the request:
+To get the last 2 records from the action log of the Magnum component, run the request:
 
 ```bash
 curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
@@ -124,12 +112,12 @@ Response example:
 }
 ```
 
-</tabpanel>
-<tabpanel>
+</details>
 
-Get the last 2 records for a given time interval from the action log of the Nova component.
+<details>
+    <summary>Retrieving log records for a given period</summary>
 
-Run the request:
+To get the last 2 records from the action log of the Nova component for a given time interval, run the request:
 
 ```bash
 curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
@@ -180,20 +168,16 @@ Response example:
 } 
 ```
 
-</tabpanel>
-<tabpanel>
+</details>
 
-Output all log records of the Nova component for a given time interval into files in portions of 10 records per file.
+<details>
+    <summary>Using the marker parameter</summary>
 
-<info>
+Using the `marker` parameter, a large request for log records can be divided into several partial requests. Action log records are arranged in reverse order of time, with the most recent at the beginning of the log. So the first partial request will return a bunch of the most recent records, the next one will return a bunch of earlier records, and so on.
 
-Action log records are arranged in reverse order of time, with the most recent at the beginning of the log.
+To output all log records of the Nova component for a given time interval into files in portions of 10 records per file:
 
-</info>
-
-Complete these steps:
-
-1. Request output of the most recent 10 log records from the time interval of interest to the `nova_part1.log` file:
+1. Request output of 10 recent log records for the specified time interval to the `nova_part1.log` file:
 
    ```bash
    curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
@@ -207,8 +191,6 @@ Complete these steps:
 
 2. Extract the value of the `marker` parameter from the `nova_part1.log` file:
 
-   Command:
-
    ```bash
    cat nova_part1.log | grep marker
    ```
@@ -219,7 +201,7 @@ Complete these steps:
    "marker": "eyJ0bSI6MTY5NzM2NDAwMCwib2ZzIjoxMCwidG8iOjE3MDAwNjY1ODAsXXXX"
    ```
 
-3. Request output of the next earlier 10 log records to the `nova_part2.log` file using the received `marker` parameter value:
+3. Request output of 10 earlier log records to the `nova_part2.log` file using the `marker` parameter value:
 
    ```bash
    curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
@@ -232,10 +214,7 @@ Complete these steps:
    -H "Content-Type: application/json" | jq > nova_part2.log
    ```
 
-4. Repeat the previous request, changing only the file name (for example: `nova_part3.log`, `nova_part4.log`, ...), until you get all the log records for the time interval of interest.
-
-</tabpanel>
-</tabs>
+4. Repeat the previous request, changing only the file name (for example: `nova_part3.log`, `nova_part4.log`, ...), until you get all the log records for the specified time interval.
 
 </details>
 
@@ -263,7 +242,7 @@ Each action log record provides the information:
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
 1. Click on the user's name in the header of the page.
 1. Select **Action logger** from the drop-down list.
 1. Click the **Download report** button.
