@@ -6,15 +6,23 @@ Various addons (additional services) are available for Cloud Containers clusters
 
   The following are the system requirements of addons based on the standard values [requests and limits](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#requests-and-limits) for Kubernetes resources in the addon setup code. When using non-standard values, the system requirements of addons will change.
 
+  <info>
+
+  Some addons can be installed on all cluster nodes (including master nodes). For more details, see [Configuring and installing addons](../../../operations/addons/advanced-installation).
+
+  </info>
+
 - Addons can be installed on a dedicated group of worker nodes or on Kubernetes worker nodes selected by the scheduler. Using the first approach allows you to exclude the influence of addons on the operation of production services deployed in the cluster.
 
   The computing resources of a dedicated group of worker nodes should be sufficient for all addons, even if each addon consumes the maximum resources specified in the system requirements. It is recommended to set up automatic scaling for such a group of nodes.
 
-- For addons, it is possible to perform:
+- There are three options for installing addons:
 
   - **Standard installation** on Kubernetes worker nodes selected by the scheduler with a change in the addon configuration code.
   - **Installation on dedicated worker nodes** with a change in the addon configuration code.
-  - **Quick installation** on Kubernetes worker nodes selected by the scheduler without changing the addon setup code (with default settings). Not all addons support this installation option.
+  - **Quick installation** on Kubernetes worker nodes selected by the scheduler without changing the addon setup code (with default settings).
+
+  Not all addons support all three installation options.
 
   The installation process is described in the section [Configuring and installing addons](../../../operations/addons/advanced-installation/).
 
@@ -26,7 +34,7 @@ The availability of specific addons depends on the [region](/en/base/account/con
 
 </info>
 
-### Kube Prometheus Stack
+### Cert-manager
 
 <tabs>
 <tablist>
@@ -35,17 +43,37 @@ The availability of specific addons depends on the [region](/en/base/account/con
 </tablist>
 <tabpanel>
 
-The system for monitoring the status of the cluster and the services deployed in it is implemented on the basis of [Prometheus](https://prometheus.io/) and visualization tool [Grafana](https://grafana.com/).
+[Cert-manager](https://cert-manager.io/) helps to manage certificates in Kubernetes clusters:
 
-See [Cluster Monitoring](../../../monitoring#using_grafana) for details.
+- Issue certificates, including self-signed certificates. To do this, `cert-manager` sends requests to sources acting as certificate authority (CA).
+
+  Examples of the sources:
+  
+  - Cybersecurity solutions providers such as [Venafi](https://www.venafi.com/).
+  - Certificate providers, such as [Let’s Encrypt](https://letsencrypt.org/).
+  - Storage for secrets, such as [HashiCorp Vault](https://www.vaultproject.io/).
+  - Local containers containing the public part of a certificate and private key.
+
+- Automatically reissue expiring certificates.
+
+A certificate issued with `cert-manager` will be available to other Kubernetes resources. For example, it can be used by Ingress.
 
 </tabpanel>
 <tabpanel>
 
-- **CPU**: 850m–2500m.
-- **RAM**: 968Mi–3804Mi.
-- **HDD**: 2GB.
-- **SSD**: 10GB.
+The requirements of the individual addon components:
+
+- cert-manager:
+  - **CPU**: 10m.
+  - **RAM**: 32Mi.
+
+- [cert-manager-cainjector](https://cert-manager.io/docs/concepts/ca-injector/):
+  - **CPU**: 10m.
+  - **RAM**: 32Mi.
+
+- [cert-manager-webhook](https://cert-manager.io/docs/concepts/webhook/):
+  - **CPU**: 10m.
+  - **RAM**: 32Mi.
 
 </tabpanel>
 </tabs>
@@ -161,6 +189,30 @@ The pre-installed Ingress controller integrates tightly with the VK Cloud platfo
 
 - **CPU**: 10m—500m.
 - **RAM**: 64Mi—1Gi.
+
+</tabpanel>
+</tabs>
+
+### Kube Prometheus Stack
+
+<tabs>
+<tablist>
+<tab>Description</tab>
+<tab>System requirements</tab>
+</tablist>
+<tabpanel>
+
+The system for monitoring the status of the cluster and the services deployed in it is implemented on the basis of [Prometheus](https://prometheus.io/) and visualization tool [Grafana](https://grafana.com/).
+
+See [Cluster Monitoring](../../../monitoring#using_grafana) for details.
+
+</tabpanel>
+<tabpanel>
+
+- **CPU**: 850m–2500m.
+- **RAM**: 968Mi–3804Mi.
+- **HDD**: 2GB.
+- **SSD**: 10GB.
 
 </tabpanel>
 </tabs>
