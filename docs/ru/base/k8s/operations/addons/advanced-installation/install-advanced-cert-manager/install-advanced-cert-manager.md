@@ -26,7 +26,7 @@
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
    1. Перейдите на вкладку **Аддоны**.
-   1. Если в кластере уже есть установленные аддоны, нажмите на кнопку **Добавить аддон**.
+   1. Если в кластере уже есть установленные аддоны, нажмите кнопку **Добавить аддон**.
    1. Нажмите кнопку **Установить** на карточке аддона `cert-manager`.
    1. Выберите нужную версию аддона из выпадающего списка.
    1. Нажмите кнопку **Установить аддон**.
@@ -50,17 +50,31 @@
    </tabpanel>
    <tabpanel>
 
-   [Документация Terraform-провайдера VK Cloud](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/index.md) содержит пример использования ресурса [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md), который описывает единичный аддон. Также задокументированы источники данных, связанные с аддонами:
+   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
-   - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
-   - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
+      - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
+      - источник данных [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
+      - источник данных [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
 
-   Дополнительная информация о работе с провайдером находится в разделе [Terraform](/ru/manage/tools-for-using-services/terraform).
+      При необходимости адаптируйте приведенные по ссылкам примеры использования ресурсов и источников под свою задачу и конфигурацию Terraform.
+
+   1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
+
+      ```bash
+      terraform validate && terraform plan
+      ```
+
+   1. Примените изменения:
+
+      ```bash
+      terraform apply
+      ```
 
    </tabpanel>
    </tabs>
 
-1. [Проверьте корректность установки аддона](https://cert-manager.io/docs/installation/kubectl/#2-optional-end-to-end-verify-the-installation), выпустив тестовый самоподписанный сертификат.
+1. Проверьте корректность установки аддона, [выпустив тестовый самоподписанный сертификат](https://cert-manager.io/docs/installation/kubectl/#2-optional-end-to-end-verify-the-installation).
 
 </tabpanel>
 <tabpanel>
@@ -104,7 +118,7 @@
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
    1. Перейдите на вкладку **Аддоны**.
-   1. Если в кластере уже есть установленные аддоны, нажмите на кнопку **Добавить аддон**.
+   1. Если в кластере уже есть установленные аддоны, нажмите кнопку **Добавить аддон**.
    1. Нажмите кнопку **Установить** на карточке аддона `cert-manager`.
    1. Выберите нужную версию аддона из выпадающего списка.
    1. Нажмите кнопку **Установить аддон**.
@@ -168,17 +182,31 @@
    </tabpanel>
    <tabpanel>
 
-   [Документация Terraform-провайдера VK Cloud](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/index.md) содержит пример использования ресурса [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md), который описывает единичный аддон. Также задокументированы источники данных, связанные с аддонами:
+   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
-   - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
-   - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
+      - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
+      - источник данных [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
+      - источник данных [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
 
-   Дополнительная информация о работе с провайдером находится в разделе [Terraform](/ru/manage/tools-for-using-services/terraform).
+      При необходимости адаптируйте приведенные по ссылкам примеры использования ресурсов и источников под свою задачу и конфигурацию Terraform.
+
+   1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
+
+      ```bash
+      terraform validate && terraform plan
+      ```
+
+   1. Примените изменения:
+
+      ```bash
+      terraform apply
+      ```
 
    </tabpanel>
    </tabs>
 
-1. [Проверьте корректность установки аддона](https://cert-manager.io/docs/installation/kubectl/#2-optional-end-to-end-verify-the-installation), выпустив тестовый самоподписанный сертификат.
+1. Проверьте корректность установки аддона, [выпустив тестовый самоподписанный сертификат](https://cert-manager.io/docs/installation/kubectl/#2-optional-end-to-end-verify-the-installation).
 
 </tabpanel>
 <tabpanel>
@@ -205,7 +233,7 @@
    1. Перейдите в раздел **Контейнеры → Кластеры Kubernetes**.
    1. Нажмите на имя нужного кластера.
    1. Перейдите на вкладку **Аддоны**.
-   1. Если в кластере уже есть установленные аддоны, нажмите на кнопку **Добавить аддон**.
+   1. Если в кластере уже есть установленные аддоны, нажмите кнопку **Добавить аддон**.
    1. Нажмите кнопку **Установить** на карточке аддона `cert-manager`.
    1. Выберите нужную версию аддона из выпадающего списка.
    1. Нажмите кнопку **Установить аддон**.
@@ -222,17 +250,31 @@
    </tabpanel>
    <tabpanel>
 
-   [Документация Terraform-провайдера VK Cloud](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/index.md) содержит пример использования ресурса [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md), который описывает единичный аддон. Также задокументированы источники данных, связанные с аддонами:
+   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
-   - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
-   - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
+      - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
+      - источник данных [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
+      - источник данных [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
 
-   Дополнительная информация о работе с провайдером находится в разделе [Terraform](/ru/manage/tools-for-using-services/terraform).
+      При необходимости адаптируйте приведенные по ссылкам примеры использования ресурсов и источников под свою задачу и конфигурацию Terraform.
+
+   1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
+
+      ```bash
+      terraform validate && terraform plan
+      ```
+
+   1. Примените изменения:
+
+      ```bash
+      terraform apply
+      ```
 
    </tabpanel>
    </tabs>
 
-1. [Проверьте корректность установки аддона](https://cert-manager.io/docs/installation/kubectl/#2-optional-end-to-end-verify-the-installation), выпустив тестовый самоподписанный сертификат.
+1. Проверьте корректность установки аддона, [выпустив тестовый самоподписанный сертификат](https://cert-manager.io/docs/installation/kubectl/#2-optional-end-to-end-verify-the-installation).
 
 </tabpanel>
 </tabs>
