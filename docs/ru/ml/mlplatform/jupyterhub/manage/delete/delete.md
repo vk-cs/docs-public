@@ -6,6 +6,6 @@
 
 <info>
 
-Если ранее инстанс JupyterHub был связан с MLflow, первоначально необходимо [удалить инстанс MLflow](https://cloud.vk.com/docs/ml/mlplatform/mlflow/manage/delete).
+Если ранее инстанс JupyterHub был связан с MLflow, первоначально необходимо [удалить инстанс MLflow](ru/ml/mlplatform/mlflow/manage/delete).
 
 </info>

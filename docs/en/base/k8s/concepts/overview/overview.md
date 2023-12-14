@@ -13,7 +13,7 @@ The container service allows you to create Kubernetes clusters and run various s
 
   - Autoscaling clusters that can handle large computational loads.
   - Creating event-triggered data handlers.
-  - Integration of Kubernetes clusters and data with other [VK Cloud machine learning platform services](https://cloud.vk.com/docs/en#mlops-and-ai).
+  - Integration of Kubernetes clusters and data with other [VK Cloud machine learning platform services](https://cloud.vk.com/docs/ml).
 
 <info>
 

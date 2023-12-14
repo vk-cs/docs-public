@@ -38,7 +38,7 @@ The token is generated on the user's page in [personal account](https://msk.clou
 
 To obtain this token, the [OAuth 2.0](https://ru.wikipedia.org/wiki/OAuth#OAuth_2.0) protocol is used.
 
-To get the first **access_token**, you need to send a request to the authorization server (see below) with the mcs client ID (client_id) and secret key (client_secret) from [personal account](https://msk.cloud.vk.com/app/ services/machinelearning/vision/).
+To get the first **access_token**, you need to send a request to the authorization server (see below) with the mcs client ID (client_id) and secret key (client_secret) from [personal account](https://msk.cloud.vk.com/app/services/machinelearning/vision/).
 
 In response, 2 tokens will be received from the server:
 
