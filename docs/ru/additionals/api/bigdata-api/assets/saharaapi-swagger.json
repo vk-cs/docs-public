@@ -1,0 +1,4386 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "API сервиса Cloud Big Data для управления кластерами больших данных. Создан на основе Sahara API",
+    "version": "2.0.0",
+    "title": "Cloud Big Data API"
+  },
+  "tags": [
+    {
+      "name": "clusters",
+      "description": "Операции с кластерами больших данных"
+    },
+    {
+      "name": "backups",
+      "description": "Операции с резервными копиями кластеров"
+    },
+    {
+      "name": "cluster-templates",
+      "description": "Операции с шаблонами кластеров"
+    },
+    {
+      "name": "node-group-templates",
+      "description": "Операции с группами хостов (нод) в кластере"
+    },
+    {
+      "name": "settings",
+      "description": "Операции с настройками кластера"
+    },
+    {
+      "name": "operation",
+      "description": "Управление выполнением команд над компонентами кластера"
+    },
+    {
+      "name": "upgrade",
+      "description": "Управление обновлениями компонентов кластера"
+    }
+  ],
+  "paths": {
+    "/clusters": {
+      "get": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Получить список кластеров",
+        "operationId": "getClusterList",
+        "description": "Получить список развернутых кластеров больших данных",
+        "parameters": [
+          {
+            "name": "marker",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "Маркер нумерации страницы (пагинации)",
+            "example": "2023-08-14T10:52:15.568+03:00"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "required": false,
+            "description": "Максимальное количество выводимых записей",
+            "example": 5
+          },
+          {
+            "name": "sort_by",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "Название колонки, по которой выполнять сортировку",
+            "example": "created_at"
+          },
+          {
+            "name": "show_progress",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            },
+            "required": false,
+            "description": "Включить в выборку события кластера",
+            "example": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAllClusters"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Создать кластер",
+        "operationId": "postCluster",
+        "description": "Развернуть кластер больших данных в проекте",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/postCluster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getCluster"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные параметры запроса"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+          "422": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "500": {
+            "description": "Внешний сервер не отвечает"
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}/backups": {
+      "get": {
+        "tags": [
+          "backups"
+        ],
+        "summary": "Получить список резервных копий кластера",
+        "operationId": "getClusterBackupList",
+        "description": "Вывести созданные резервные копии для кластера больших данных",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAllClusterBackups"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+          "404": {
+            "description": "Не найдено данных или недостаточно прав для их просмотра"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "backups"
+        ],
+        "summary": "Создать резервную копию кластера",
+        "operationId": "postClusterBackup",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/postClusterBackup"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getClusterBackup"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные параметры запроса"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+		      "404": {
+            "description": "Не найдено данных или недостаточно прав для их просмотра"
+          },
+          "422": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "500": {
+            "description": "Внешний сервер не отвечает"
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}/backups/{backup_id}": {
+      "get": {
+        "tags": [
+          "backups"
+        ],
+        "summary": "Получить информацию о резервной копии",
+        "operationId": "getClusterBackup",
+        "description": "Вывести информацию о резервной копии кластера больших данных",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          },
+          {
+            "name": "backup_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID резервной копии",
+            "example": "10568XXX-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getClusterBackup"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Запрашиваемые ресурсы не найдены"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "backups"
+        ],
+        "summary": "Удалить резервную копию",
+        "operationId": "deleteClusterBackup",
+        "description": "Удалить резервную копию кластера больших данных",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          },
+          {
+            "name": "backup_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID резервной копии",
+            "example": "10568XXX-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно"
+          },
+          "404": {
+            "description": "Запрашиваемые ресурсы не найдены"
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}": {
+      "get": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Получить информацию о кластере",
+        "operationId": "getCluster",
+        "description": "Вывести информацию об отдельном кластере по его UUID",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          },
+          {
+            "name": "show_progress",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            },
+            "required": false,
+            "description": "Включить в выборку события кластера",
+            "example": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getCluster"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Запрашиваемые ресурсы не найдены"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Масштабировать кластер по горизонтали",
+        "operationId": "scaleCluster",
+        "description": "Масштабировать ресурсы кластера больших данных с помощью увеличения количества ВМ в кластере",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/scaleCluster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getClusterTemplate"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные параметры запроса"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+		      "404": {
+            "description": "Не найдено данных или недостаточно прав для их просмотра"
+          },
+          "422": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "500": {
+            "description": "Внешний сервер не отвечает"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Создать шаблон конфигурации кластера",
+        "operationId": "copyClusterAsTemplate",
+        "description": "Создать пользовательский шаблон конфигурации из ранее созданного кластера",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/createClusterAsTemplate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getClusterTemplate"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные параметры запроса"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+		      "404": {
+            "description": "Не найдено данных или недостаточно прав для их просмотра"
+          },
+          "422": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "500": {
+            "description": "Внешний сервер не отвечает"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Обновить информацию и/или функциональность существующего кластера",
+        "operationId": "updateCluster",
+        "description": "Обновить информацию о ранее развернутом кластере больших данных в проекте. Включить новый или выключить существующую функциональность кластера.",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/updateCluster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getCluster"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные параметры запроса"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+		      "404": {
+            "description": "Не найдено данных или недостаточно прав для их просмотра"
+          },
+          "422": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "500": {
+            "description": "Внешний сервер не отвечает"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Удалить кластер",
+        "operationId": "deleteCluster",
+        "description": "Удалить кластер больших данных из проекта",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно"
+          },
+          "404": {
+            "description": "Запрашиваемые ресурсы не найдены"
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}/upscale": {
+      "put": {
+        "tags": [
+          "clusters"
+        ],
+        "summary": "Масштабировать кластер по вертикали",
+        "operationId": "upscaleCluster",
+        "description": "Изменить RAM и CPU у группы ВМ кластера больших данных",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/upscaleCluster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getClusterTemplate"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные параметры запроса"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+		      "404": {
+            "description": "Не найдено данных или недостаточно прав для их просмотра"
+          },
+          "422": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "500": {
+            "description": "Внешний сервер не отвечает"
+          }
+        }
+      }
+    },
+    "/cluster-templates": {
+      "get": {
+        "tags": [
+          "cluster-templates"
+        ],
+        "summary": "Получить список шаблонов кластеров",
+        "operationId": "getClusterTemplates",
+        "description": "Вывести список всех шаблонов кластеров больших данных в проекте",
+        "parameters": [
+          {
+            "name": "marker",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "Маркер нумерации страницы (пагинации)",
+            "example": "2023-08-14T10:52:15.568+03:00"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "required": false,
+            "description": "Максимальное количество выводимых записей",
+            "example": 5
+          },
+          {
+            "name": "sort_by",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "Название колонки, по которой выполнять сортировку",
+            "example": "created_at"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "Фильтровать записи по имени шаблона",
+            "example": "template-name"
+          },
+          {
+            "name": "description",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "Фильтровать записи по описанию шаблона",
+            "example": "template description"
+          },
+          {
+            "name": "plugin_name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "Фильтровать записи по имени плагина",
+            "example": "ambari"
+          },
+          {
+            "name": "tenant_id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "Фильтровать записи по UUID пользователя",
+            "example": "111182d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          },
+          {
+            "name": "hadoop_version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "Фильтровать записи по версии кластера",
+            "example": "6.23.5"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "cluster_templates": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/clusterTemplate"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cluster-templates/{cluster_template_id}": {
+      "get": {
+        "tags": [
+          "cluster-templates"
+        ],
+        "summary": "Получить информацию о шаблоне кластера",
+        "operationId": "getClusterTemplate",
+        "description": "Вывести подробную информацию о шаблоне кластера по его UUID",
+        "parameters": [
+          {
+            "name": "cluster_template_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID шаблона кластера",
+            "example": "111111d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getClusterTemplate"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Запрашиваемые ресурсы не найдены"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "cluster-templates"
+        ],
+        "summary": "Обновить информацию о шаблоне",
+        "operationId": "updateClusterTemplate",
+        "description": "Обновить информацию о существующем шаблоне кластера больших данных",
+        "parameters": [
+          {
+            "name": "cluster_template_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID шаблона кластера",
+            "example": "111111d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/updateClusterTemplate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getClusterTemplate"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные параметры запроса"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+		      "404": {
+            "description": "Не найдено данных или недостаточно прав для их просмотра"
+          },
+          "422": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "500": {
+            "description": "Внешний сервер не отвечает"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "cluster-templates"
+        ],
+        "summary": "Копировать пользовательский шаблон кластера",
+        "operationId": "copyClusterTemplate",
+        "description": "Копировать пользовательский шаблон кластера больших данных в проекте",
+        "parameters": [
+          {
+            "name": "cluster_template_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID шаблона кластера",
+            "example": "111111d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/createClusterAsTemplate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getClusterTemplate"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные параметры запроса"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+		      "404": {
+            "description": "Не найдено данных или недостаточно прав для их просмотра"
+          },
+          "422": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "500": {
+            "description": "Внешний сервер не отвечает"
+          }
+        }
+      }
+    },
+    "/node-group-templates": {
+      "get": {
+        "tags": [
+          "node-group-templates"
+        ],
+        "summary": "Получить список шаблонов группы нод",
+        "operationId": "getNodeGroupTemplates",
+        "description": "Вывести информацию о шаблонах для группы нод кластера больших данных",
+        "parameters": [
+          {
+            "name": "marker",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "Маркер нумерации страницы (пагинации)",
+            "example": "2023-08-14T10:52:15.568+03:00"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "required": false,
+            "description": "Максимальное количество выводимых записей",
+            "example": 5
+          },
+          {
+            "name": "sort_by",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "Название колонки, по которой выполнять сортировку",
+            "example": "created_at"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "Фильтровать записи по имени группы",
+            "example": "master"
+          },
+          {
+            "name": "description",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "Фильтровать записи по описанию группы",
+            "example": "node description"
+          },
+          {
+            "name": "plugin_name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "Фильтровать записи по названию плагина",
+            "example": "ambari"
+          },
+          {
+            "name": "tenant_id",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "required": false,
+            "description": "Фильтровать записи по UUID пользователя",
+            "example": "111182d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "clusters": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/getNodeGroupTemplate"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/node-group-templates/{node_group_template_id}": {
+      "get": {
+        "tags": [
+          "node-group-templates"
+        ],
+        "summary": "Получить информацию о шаблоне группы нод",
+        "operationId": "getNodeGroupTemplate",
+        "description": "Вывести информацию о шаблоне группы нод для кластера больших данных по его UUID",
+        "parameters": [
+          {
+            "name": "node_group_template_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID шаблона группы нод",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getNodeGroupTemplate"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Запрашиваемые ресурсы не найдены"
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}/settings": {
+      "get": {
+        "tags": [
+          "settings"
+        ],
+        "summary": "Получить настройки кластера",
+        "operationId": "getSetting",
+        "description": "Вывести настройки для кластера больших данных в проекте",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "selected_settings": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/getClusterSetting"
+                      }
+                    },
+                    "options_settings": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/getClusterOptionSetting"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Запрашиваемые ресурсы не найдены"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "settings"
+        ],
+        "summary": "Установить настройки для кластера",
+        "operationId": "setSetting",
+        "description": "Задать настройки для развернутого кластера больших данных в проекте",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/setClusterSetting"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "setting": {
+                      "$ref": "#/components/schemas/getClusterSetting"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные параметры запроса"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+		      "404": {
+            "description": "Не найдено данных или недостаточно прав для их просмотра"
+          },
+          "422": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "500": {
+            "description": "Внешний сервер не отвечает"
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}/settings/{setting_id}": {
+      "delete": {
+        "tags": [
+          "settings"
+        ],
+        "summary": "Удалить настройку кластера",
+        "operationId": "deleteClusterSetting",
+        "description": "Установить настройки по умолчанию для кластера больших данных в проекте",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          },
+          {
+            "name": "setting_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID настройки",
+            "example": "768982d8-XXXX-XXXX-XXXX-7bcc4027edaa"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/getClusterSetting"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+          "404": {
+            "description": "Запрашиваемые ресурсы не найдены"
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}/operation": {
+      "get": {
+        "tags": [
+          "operation"
+        ],
+        "summary": "Получить список команд для компонентов кластера",
+        "operationId": "getOperation",
+        "description": "Вывести список доступных команд для отдельных компонентов кластера больших данных в проекте",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/getOperation"
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Запрашиваемые ресурсы не найдены"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "operation"
+        ],
+        "summary": "Выполнить команду для компонента кластера",
+        "operationId": "runOperation",
+        "description": "Запустить определенные команды на кластере больших данных",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "operation": {
+                    "type": "string",
+                    "description": "Название команды",
+                    "example": "gpstart-a"
+                  },
+                  "process": {
+                    "type": "string",
+                    "description": "Название ноды, на котором выполнить команду",
+                    "example": "adb-master"
+                  }
+                },
+                "required": [
+                  "operation",
+                  "process"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "operation": {
+                      "type": "string"
+                    },
+                    "process": {
+                      "type": "string",
+                      "description": "Название ноды, на котором выполняется команда",
+                      "example": "adb-master"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Некорректные параметры запроса"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+		      "404": {
+            "description": "Не найдено данных или недостаточно прав для их просмотра"
+          },
+          "422": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "500": {
+            "description": "Внешний сервер не отвечает"
+          }
+        }
+      }
+    },
+    "/clusters/{cluster_id}/upgrade": {
+      "get": {
+        "tags": [
+          "upgrade"
+        ],
+        "summary": "Получить список обновлений компонентов кластера",
+        "operationId": "getUpgrade",
+        "description": "Вывести список доступных обновлений для компонентов кластера больших данных в проекте",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Upgrade"
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Запрашиваемые ресурсы не найдены"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "upgrade"
+        ],
+        "summary": "Обновить компоненты кластера",
+        "operationId": "runUpgrade",
+        "description": "Загрузить и запустить на кластере все доступные обновления выбранного типа",
+        "parameters": [
+          {
+            "name": "cluster_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "description": "UUID кластера",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "upgrade_type": {
+                    "type": "string",
+                    "description": "Тип обновляемых компонентов",
+                    "example": "main",
+                    "enum": [
+                      "main",
+                      "monitoring"
+                    ]
+                  }
+                },
+                "required": [
+                  "upgrade_type"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Запрос выполнен успешно"
+          },
+          "400": {
+            "description": "Некорректные параметры запроса"
+          },
+          "403": {
+            "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+          },
+		      "404": {
+            "description": "Не найдено данных или недостаточно прав для их просмотра"
+          },
+          "422": {
+            "description": "Ошибка валидации параметров запроса"
+          },
+          "500": {
+            "description": "Внешний сервер не отвечает"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "getOperation": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Наименование компонента кластера",
+            "example": "adb-master"
+          },
+          "operation": {
+            "type": "object",
+            "properties": {
+              "gpstart-a": {
+                "type": "string",
+                "description": "Команда для выполнения",
+                "example": "gpstart -a"
+              }
+            }
+          }
+        }
+      },
+      "getClusterSetting": {
+        "type": "object",
+        "properties": {
+          "setting_group_id": {
+            "type": "integer",
+            "description": "Идентификатор группы настроек",
+            "example": "3"
+          },
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID настройки",
+            "example": "222222k1-XXXX-XXXX-XXXX-7bcc4027edbb"
+          },
+          "name": {
+            "type": "string",
+            "description": "Название настройки",
+            "example": "tcp_keepalives_interval"
+          },
+          "type": {
+            "type": "string",
+            "description": "Тип настройки",
+            "enum": [
+              "default",
+              "masteronly",
+              "different"
+            ],
+            "example": "different"
+          },
+          "value": {
+            "description": "Значение настройки",
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "example": 10
+          },
+          "additional_value": {
+            "description": "Дополнительное значение настройки",
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "nullable": true,
+            "example": 20
+          },
+          "created_at": {
+            "type": "string",
+            "description": "Дата создания настройки",
+            "example": "2023-01-16T11:02:04"
+          },
+          "updated_at": {
+            "type": "string",
+            "description": "Дата обновления настройки",
+            "example": "2023-01-16T11:02:32"
+          },
+          "status": {
+            "type": "string",
+            "description": "Статус применения настройки",
+            "enum": [
+              "applying",
+              "applied",
+              "deleting",
+              "deleted",
+              "error_applying",
+              "error_deleting"
+            ],
+            "example": "applied"
+          }
+        },
+        "required": [
+          "setting_group_id",
+          "name",
+          "type",
+          "value",
+          "id",
+          "status"
+        ]
+      },
+      "getClusterOptionSetting": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Название настройки",
+            "example": "default"
+          },
+          "setting_group_id": {
+            "type": "integer",
+            "description": "Идентификатор группы настроек",
+            "example": "3"
+          },
+          "settings": {
+            "type": "object",
+            "properties": {
+              "setting": {
+                "type": "object",
+                "description": "Информация об отдельной настройке",
+                "properties": {
+                  "run": {
+                    "type": "array",
+                    "description": "Способ выполнения настройки",
+                    "items": {
+                      "type": "string",
+                      "example": "master"
+                    }
+                  },
+                  "validation": {
+                    "description": "Способ валидации переданных значений настройки",
+                    "oneOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    ],
+                    "example": "int"
+                  },
+                  "default": {
+                    "description": "Значение настройки по умолчанию",
+                    "oneOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ],
+                    "example": 10
+                  },
+                  "comment": {
+                    "description": "Дополнительные сведения о настройке",
+                    "type": "string",
+                    "example": "Waiting time for a response to a message before resending it, secs",
+                    "nullable": true
+                  },
+                  "min_value": {
+                    "description": "Минимальное значение настойки",
+                    "type": "number",
+                    "example": 0
+                  },
+                  "max_value": {
+                    "type": "number",
+                    "description": "Максимальное значение настройки",
+                    "example": 5
+                  }
+                },
+                "required": [
+                  "run",
+                  "validation",
+                  "default"
+                ]
+              }
+            }
+          }
+        },
+        "required": [
+          "name",
+          "setting_group_id",
+          "settings"
+        ]
+      },
+      "setClusterSetting": {
+        "type": "object",
+        "properties": {
+          "setting_group_id": {
+            "type": "integer",
+            "description": "Идентификатор группы настроек",
+            "example": "3"
+          },
+          "name": {
+            "type": "string",
+            "description": "Название настройки",
+            "example": "tcp_keepalives_interval"
+          },
+          "type": {
+            "type": "string",
+            "description": "Тип настройки",
+            "enum": [
+              "default",
+              "masteronly",
+              "different"
+            ],
+            "example": "different"
+          },
+          "value": {
+            "description": "Значение настройки",
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "example": 10
+          },
+          "additional_value": {
+            "description": "Дополнительное значение настройки",
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "nullable": true,
+            "example": 20
+          }
+        },
+        "required": [
+          "setting_group_id",
+          "name",
+          "type",
+          "value"
+        ]
+      },
+      "ClusterMeta": {
+        "type": "object",
+        "properties": {
+          "security_group_count": {
+            "type": "string",
+            "description": "Количество групп безопасности",
+            "example": 3
+          },
+          "sec_group_rule_count": {
+            "type": "string",
+            "description": "Количество правил фаервола",
+            "example": 6
+          },
+          "workers_scaling": {
+            "type": "string",
+            "description": "Поддерживается ли масштабирование worker-узлов",
+            "example": false
+          },
+          "possible_features": {
+            "type": "array",
+            "description": "Поддерживаемая функциональность",
+            "items": {
+              "type": "string",
+              "enum": [
+                "monitoring",
+                "edge"
+              ],
+              "example": "monitoring"
+            }
+          },
+          "possible_scaling": {
+            "type": "array",
+            "description": "Типы групп нод, для которых разрешено масштабирование",
+            "items": {
+              "type": "string",
+              "example": "Workers",
+              "enum": [
+                "Workers"
+              ]
+            }
+          },
+          "use_sprut": {
+            "type": "boolean",
+            "description": "Использовать сеть Sprut для ресурса",
+            "example": false
+          }
+        },
+        "required": [
+          "possible_scaling"
+        ]
+      },
+      "getClusterTemplate": {
+        "type": "object",
+        "properties": {
+          "cluster_template": {
+            "$ref": "#/components/schemas/clusterTemplate"
+          }
+        },
+        "required": [
+          "cluster_template"
+        ]
+      },
+      "clusterTemplate": {
+        "type": "object",
+        "properties": {
+          "created_at": {
+            "type": "string",
+            "description": "Дата создания шаблона",
+            "example": "2023-01-01 00:00:00"
+          },
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID шаблона кластера",
+            "example": "4a361c99-XXXX-XXXX-XXXX-b59fb469d354"
+          },
+          "name": {
+            "type": "string",
+            "description": "Наименование шаблона",
+            "example": "adbe-custom-v6235-231011-091158"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание шаблона",
+            "example": "BigData cluster version 6.23.5"
+          },
+          "default_image_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID образа, используемого по умолчанию",
+            "example": "4a361c99-XXXX-XXXX-XXXX-b59fb469d354"
+          },
+          "anti_affinity": {
+            "type": "array",
+            "description": "Правила размещения виртуальных машин кластера на хостах виртуализации",
+            "items": {
+              "type": "string",
+              "example": "affinity"
+            }
+          },
+          "tenant_id": {
+            "type": "string",
+            "description": "UUID пользователя VK Cloud",
+            "example": "6r661c99-XXXX-XXXX-XXXX-b59fb469d354"
+          },
+          "neutron_management_network": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID виртуальной сети",
+            "example": "9d3c5683-XXXX-XXXX-XXXX-6557690aa42f"
+          },
+          "plugin_name": {
+            "$ref": "#/components/schemas/PluginName"
+          },
+          "plugin_type": {
+            "$ref": "#/components/schemas/PluginType"
+          },
+          "hadoop_version": {
+            "type": "string",
+            "description": "Версия кластера BigData",
+            "example": "6.23.5"
+          },
+          "info": {
+            "type": "object",
+            "description": "Дополнительная информация о шаблоне"
+          },
+          "is_default": {
+            "type": "boolean",
+            "description": "Использовать шаблон по умолчанию",
+            "example": false
+          },
+          "node_groups": {
+            "type": "array",
+            "description": "Группы нод шаблона",
+            "items": {
+              "$ref": "#/components/schemas/getNodeGroupTemplate"
+            }
+          },
+          "use_autoconfig": {
+            "type": "boolean",
+            "description": "Использовать автоматическую настойку ресурса",
+            "example": true
+          },
+          "is_protected": {
+            "type": "boolean",
+            "description": "Является ли ресурс защищенным от удаления",
+            "example": false
+          },
+          "is_public": {
+            "type": "boolean",
+            "description": "Является ли ресурс публичным",
+            "example": false
+          },
+          "domain_name": {
+            "type": "string",
+            "description": "Используемое доменное имя",
+            "example": "mcs1234567890"
+          },
+          "load_balancers": {
+            "type": "array",
+            "description": "Список балансировщиков нагрузки",
+            "items": {
+              "$ref": "#/components/schemas/LoadBalancerTemplate"
+            }
+          },
+          "meta": {
+            "$ref": "#/components/schemas/ClusterMeta"
+          },
+          "is_user_template": {
+            "type": "boolean",
+            "description": "Является ли шаблон пользовательским",
+            "example": true
+          },
+          "features": {
+            "type": "array",
+            "description": "Дополнительная функциональность кластера",
+            "items": {
+              "type": "string"
+            },
+            "example": "[ \"edge\", \"monitoring\", \"volume_autoresize\" ]"
+          }
+        },
+        "required": [
+          "created_at",
+          "id",
+          "name",
+          "description",
+          "default_image_id",
+          "anti_affinity",
+          "tenant_id",
+          "neutron_management_network",
+          "plugin_name",
+          "plugin_type",
+          "hadoop_version",
+          "info",
+          "is_default",
+          "node_groups",
+          "use_autoconfig",
+          "is_protected",
+          "is_public",
+          "domain_name",
+          "load_balancers",
+          "meta",
+          "is_user_template",
+          "features"
+        ]
+      },
+      "updateClusterTemplate": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Наименование шаблона",
+            "example": "Template2"
+          },
+          "neutron_management_network": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID виртуальной сети",
+            "example": "9d3c5683-XXXX-XXXX-XXXX-6557690aa42a"
+          },
+          "node_groups": {
+            "type": "array",
+            "description": "Группы нод шаблона",
+            "items": {
+              "$ref": "#/components/schemas/updateClusterNodeGroupTemplate"
+            }
+          },
+          "features": {
+            "type": "array",
+            "description": "Дополнительная функциональность кластера",
+            "items": {
+              "type": "string"
+            },
+            "example": "[ \"edge\", \"monitoring\", \"volume_autoresize\" ]"
+          }
+        },
+        "required": [
+          "name",
+          "neutron_management_network",
+          "node_groups",
+          "features"
+        ]
+      },
+      "createClusterAsTemplate": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Наименование нового шаблона кластера",
+            "example": "Template3"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "getAllClusters": {
+        "type": "object",
+        "properties": {
+          "clusters": {
+            "type": "array",
+            "description": "Список кластеров",
+            "items": {
+              "$ref": "#/components/schemas/cluster"
+            }
+          }
+        }
+      },
+      "getCluster": {
+        "type": "object",
+        "description": "Информация об отдельном кластере",
+        "properties": {
+          "cluster": {
+            "$ref": "#/components/schemas/cluster"
+          }
+        }
+      },
+      "cluster": {
+        "type": "object",
+        "properties": {
+          "anti_affinity": {
+            "type": "array",
+            "description": "Правила размещения виртуальных машин кластера на хостах виртуализации",
+            "items": {
+              "type": "string",
+              "example": "affinity"
+            }
+          },
+          "cluster_template_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID шаблона кластера",
+            "example": "111111d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          },
+          "created_at": {
+            "type": "string",
+            "description": "Дата создания кластера",
+            "example": "2023-01-01 00:00:00"
+          },
+          "default_image_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID образа, используемого по умолчанию",
+            "example": "4a361c99-XXXX-XXXX-XXXX-b59fb469d354"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание кластера",
+            "example": "Cluster descr"
+          },
+          "domain_name": {
+            "type": "string",
+            "description": "Используемое доменное имя",
+            "example": "mcs1234567890"
+          },
+          "features": {
+            "type": "array",
+            "description": "Дополнительная функциональность кластера",
+            "items": {
+              "type": "string"
+            },
+            "example": "[ \"edge\", \"monitoring\", \"volume_autoresize\" ]"
+          },
+          "hadoop_version": {
+            "type": "string",
+            "description": "Версия кластера BigData",
+            "example": "6.23.5"
+          },
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID кластера",
+            "example": "222222d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          },
+          "info": {
+            "type": "object",
+            "description": "Дополнительная информация",
+            "example": "{ \"db_user_name\": \"db-user-name\", \"db_name\": \"db-name\", \"Connecting settings\": { \"Connecting string\": \"some connecting expression\", \"Username\": \"db-user-name\", \"Password\": \"qwery12345\", \"DB Name\": \"db-name\" } }"
+          },
+          "is_protected": {
+            "type": "boolean",
+            "description": "Является ли ресурс защищенным от удаления",
+            "example": false
+          },
+          "is_public": {
+            "type": "boolean",
+            "description": "Является ли ресурс публичным",
+            "example": false
+          },
+          "name": {
+            "type": "string",
+            "description": "Наименование кластера",
+            "example": "BigData0001"
+          },
+          "neutron_management_network": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID виртуальной сети",
+            "example": "9d3c5683-XXXX-XXXX-XXXX-6557690aa42a"
+          },
+          "node_groups": {
+            "type": "array",
+            "description": "Информация о группах нод кластера",
+            "items": {
+              "$ref": "#/components/schemas/getNodeGroup"
+            }
+          },
+          "plugin_name": {
+            "$ref": "#/components/schemas/PluginName"
+          },
+          "plugin_type": {
+            "$ref": "#/components/schemas/PluginType"
+          },
+          "provision_progress": {
+            "type": "array",
+            "description": "Список выполненных действий над кластером",
+            "items": {
+              "$ref": "#/components/schemas/ClusterProvisionStep"
+            }
+          },
+          "status": {
+            "$ref": "#/components/schemas/ClusterStatus"
+          },
+          "status_description": {
+            "type": "string",
+            "description": "Описание статуса",
+            "example": "Operation failed"
+          },
+          "tenant_id": {
+            "type": "string",
+            "description": "UUID пользователя VK Cloud",
+            "example": "6r661c99-XXXX-XXXX-XXXX-b59fb469d354"
+          },
+          "trust_id": {
+            "type": "string",
+            "description": "Идентификатор trust (Keystone)"
+          },
+          "updated_at": {
+            "type": "string",
+            "description": "Дата обновления кластера",
+            "example": "2023-01-01 00:00:00"
+          },
+          "use_autoconfig": {
+            "type": "boolean",
+            "description": "Использовать автоматическую настойку ресурса",
+            "example": true
+          },
+          "user_keypair_id": {
+            "type": "string",
+            "description": "Наименование ключевой пары (без расширения)",
+            "example": "BigDataDB0001-cluster-keypair-name"
+          },
+          "verification": {
+            "type": "object",
+            "description": "Последние результаты проверки работоспособности",
+            "example": "{ \"created_at\": \"2023-05-23T13:01:36\", \"updated_at\": \"2023-06-23T03:42:34\", \"id\": \"dbe26107-493d-4af9-8e31-e7a69a354e1c\", \"cluster_id\": \"709dd462-44db-4b0d-9c4a-a07340504193\", \"status\": \"RED\", \"checks\": [] }"
+          },
+          "load_balancers": {
+            "type": "array",
+            "description": "Информация о балансировщиках нагрузки",
+            "items": {
+              "$ref": "#/components/schemas/LoadBalancer"
+            }
+          },
+          "bundles": {
+            "type": "array",
+            "description": "Информация об устанавливаемых пакетах (бандлах) на кластере",
+            "items": {
+              "$ref": "#/components/schemas/Bundle"
+            }
+          },
+          "capabilities": {
+            "type": "array",
+            "description": "Список доступных действий над кластером",
+            "items": {
+              "type": "string"
+            },
+            "example": "[ \"operation\", \"setting\", \"upgrading\", \"scaling\", \"upscaling\", \"monitoring\", \"edge\", \"volume_autoresize\" ]"
+          },
+          "upgrades": {
+            "type": "array",
+            "description": "Доступные обновления для компонентов кластера",
+            "items": {
+              "$ref": "#/components/schemas/Upgrade"
+            }
+          }
+        },
+        "required": [
+          "anti_affinity",
+          "cluster_template_id",
+          "created_at",
+          "default_image_id",
+          "description",
+          "domain_name",
+          "features",
+          "hadoop_version",
+          "id",
+          "info",
+          "is_protected",
+          "is_public",
+          "name",
+          "neutron_management_network",
+          "node_groups",
+          "plugin_name",
+          "plugin_type",
+          "provision_progress",
+          "status",
+          "status_description",
+          "tenant_id",
+          "trust_id",
+          "updated_at",
+          "use_autoconfig",
+          "user_keypair_id",
+          "verification",
+          "load_balancers"
+        ]
+      },
+      "postCluster": {
+        "type": "object",
+        "properties": {
+          "hadoop_version": {
+            "type": "string",
+            "description": "Версия кластера BigData",
+            "example": "6.23.5"
+          },
+          "default_image_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID образа, используемого по умолчанию",
+            "example": "4a361c99-XXXX-XXXX-XXXX-b59fb469d354"
+          },
+          "name": {
+            "type": "string",
+            "description": "Наименование кластера",
+            "example": "BigData0001"
+          },
+          "plugin_name": {
+            "$ref": "#/components/schemas/PluginName"
+          },
+          "features": {
+            "description": "Дополнительная функциональность кластера",
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": "[ \"edge\", \"monitoring\", \"volume_autoresize\" ]"
+          },
+          "neutron_management_network": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID виртуальной сети",
+            "example": "9d3c5683-XXXX-XXXX-XXXX-6557690aa42a"
+          },
+          "user_keypair_id": {
+            "type": "string",
+            "description": "Наименование ключевой пары (без расширения)",
+            "example": "BigDataDB0001-cluster-keypair-name"
+          },
+          "cluster_template_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID шаблона кластера",
+            "example": "111111d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          },
+          "node_group_info": {
+            "type": "array",
+            "description": "Информация о группе нод",
+            "items": {
+              "$ref": "#/components/schemas/postNodeGroup"
+            }
+          },
+          "load_balancers": {
+            "type": "array",
+            "description": "Информация о балансировщиках нагрузки",
+            "items": {
+              "$ref": "#/components/schemas/postLoadBalancer"
+            }
+          },
+          "extra": {
+            "oneOf": [
+              {
+                "type": "object",
+                "required": [
+                  "db_name",
+                  "db_user_name",
+                  "db_user_password"
+                ],
+                "properties": {
+                  "db_name": {
+                    "type": "string",
+                    "description": "Наименование БД",
+                    "example": "my_database"
+                  },
+                  "db_user_name": {
+                    "type": "string",
+                    "description": "Имя пользователя БД",
+                    "example": "user"
+                  },
+                  "db_user_password": {
+                    "type": "string",
+                    "description": "Пароль пользователя БД",
+                    "example": "qwerty123456789"
+                  },
+                  "grafana_password": {
+                    "type": "string",
+                    "description": "Пароль для входа в интерфейс Grafana",
+                    "example": "qwerty123456789"
+                  },
+                  "segments_per_host": {
+                    "type": "integer",
+                    "description": "Количество первичных (primary) инстансов на одном сегмент-сервере",
+                    "example": 4
+                  },
+                  "volume_scale_step_size": {
+                    "type": "integer",
+                    "description": "Шаг масштабирования диска в ГБ",
+                    "example": 150
+                  },
+                  "volume_max_scale_size": {
+                    "type": "integer",
+                    "description": "Максимальный шаг масштабирования диска в ГБ",
+                    "example": 1000
+                  },
+                  "volume_size_scale_threshold": {
+                    "type": "integer",
+                    "description": "Доля занятого места на диске для начала автомасштабирования",
+                    "example": 60
+                  },
+                  "maintenance_window": {
+                    "type": "object",
+                    "description": "Информация о техническом обслуживании",
+                    "properties": {
+                      "start": {
+                        "type": "string",
+                        "description": "Расписание технического обслуживания",
+                        "example": "45 12 * * 0-2"
+                      },
+                      "duration": {
+                        "type": "integer",
+                        "description": "Продолжительность технического обслуживания (в секундах)",
+                        "example": 15000
+                      }
+                    },
+                    "required": [
+                      "start",
+                      "duration"
+                    ]
+                  },
+                  "adbc_password": {
+                    "type": "string",
+                    "description": "Пароль для доступа через API ADBC",
+                    "example": "qwerty1234567890!"
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "required": [
+                  "panel_password"
+                ],
+                "properties": {
+                  "panel_login": {
+                    "type": "string",
+                    "description": "Имя пользователя для доступа к Control Manager",
+                    "example": "my_panel_login"
+                  },
+                  "panel_password": {
+                    "type": "string",
+                    "description": "Пароль пользователя для доступа к Control Manager",
+                    "example": "qwerty123456789!"
+                  },
+                  "mysql_password": {
+                    "type": "string",
+                    "description": "Пароль пользователя MySQL",
+                    "example": "qwerty123456789!"
+                  },
+                  "hive_password": {
+                    "type": "string",
+                    "description": "Пароль пользователя Hive",
+                    "example": "qwerty123456789!"
+                  },
+                  "airflow_db_password": {
+                    "type": "string",
+                    "description": "Пароль пользователя AirFlow",
+                    "example": "qwerty123456789!"
+                  },
+                  "airflow_db_root_password": {
+                    "type": "string",
+                    "description": "Пароль root-пользователя в AirFlow",
+                    "example": "qwerty123456789!"
+                  },
+                  "grafana_password": {
+                    "type": "string",
+                    "description": "Пароль для входа в интерфейс Grafana",
+                    "example": "qwerty123456789!"
+                  },
+                  "volume_scale_step_size": {
+                    "type": "integer",
+                    "description": "Шаг масштабирования диска в ГБ",
+                    "example": 150
+                  },
+                  "volume_max_scale_size": {
+                    "type": "integer",
+                    "description": "Максимальный шаг масштабирования диска в ГБ",
+                    "example": 1000
+                  },
+                  "volume_size_scale_threshold": {
+                    "type": "integer",
+                    "description": "Доля занятого места на диске для начала автомасштабирования",
+                    "example": 60
+                  },
+                  "maintenance_window": {
+                    "type": "object",
+                    "description": "Информация о техническом обслуживании",
+                    "properties": {
+                      "start": {
+                        "type": "string",
+                        "description": "Расписание технического обслуживания",
+                        "example": "45 12 * * 0-2"
+                      },
+                      "duration": {
+                        "type": "integer",
+                        "description": "Продолжительность технического обслуживания (в секундах)",
+                        "example": 15000
+                      }
+                    },
+                    "required": [
+                      "start",
+                      "duration"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "required": [
+                  "ambari_password"
+                ],
+                "properties": {
+                  "ranger_db_root_password": {
+                    "type": "string",
+                    "description": "Пароль пользователя root БД сервиса Apache Ranger",
+                    "example": "qwerty123456789!"
+                  },
+                  "ambari_db_password": {
+                    "type": "string",
+                    "description": "Пароль для доступа к БД Ambari",
+                    "example": "qwerty123456789!"
+                  },
+                  "ambari_password": {
+                    "type": "string",
+                    "description": "Пароль для доступа к веб-консоли Apache Ambari",
+                    "example": "qwerty123456789!"
+                  },
+                  "nifi_registry_password": {
+                    "type": "string",
+                    "description": "Пароль для Nifi Registry",
+                    "example": "qwerty123456789!"
+                  },
+                  "nifi_password": {
+                    "type": "string",
+                    "description": "Пароль для доступа к Nifi",
+                    "example": "qwerty123456789!"
+                  },
+                  "nifi_tls_token": {
+                    "type": "string",
+                    "description": "TSL-токен NiFi",
+                    "format": "uuid",
+                    "example": "ac62f113-XXXX-XXXX-XXXX-5384783fb3cc"
+                  },
+                  "nifi_props_key": {
+                    "type": "string",
+                    "description": "Пароль для шифрования значений свойства Nifi",
+                    "example": "qwerty123456789!"
+                  },
+                  "streamline_db_password": {
+                    "type": "string",
+                    "description": "Пароль для доступа к базе данных Streamline Ambari",
+                    "example": "qwerty123456789!"
+                  },
+                  "registry_db_password": {
+                    "type": "string",
+                    "description": "Пароль для доступа к базе данных Registry Ambari",
+                    "example": "qwerty123456789!"
+                  },
+                  "oozie_db_password": {
+                    "type": "string",
+                    "description": "Пароль для доступа к БД Oozie",
+                    "example": "qwerty123456789!"
+                  },
+                  "hive_db_password": {
+                    "type": "string",
+                    "description": "Пароль для доступа к базе данных Hive",
+                    "example": "qwerty123456789!"
+                  },
+                  "volume_scale_step_size": {
+                    "type": "integer",
+                    "description": "Шаг масштабирования диска в ГБ",
+                    "example": 150
+                  },
+                  "volume_max_scale_size": {
+                    "type": "integer",
+                    "description": "Максимальный шаг масштабирования диска в ГБ",
+                    "example": 1000
+                  },
+                  "volume_size_scale_threshold": {
+                    "type": "integer",
+                    "description": "Доля занятого места на диске для начала автомасштабирования",
+                    "example": 60
+                  },
+                  "maintenance_window": {
+                    "type": "object",
+                    "description": "Информация о техническом обслуживании",
+                    "properties": {
+                      "start": {
+                        "type": "string",
+                        "description": "Расписание технического обслуживания",
+                        "example": "45 12 * * 0-2"
+                      },
+                      "duration": {
+                        "type": "integer",
+                        "description": "Продолжительность технического обслуживания (в секундах)",
+                        "example": 15000
+                      }
+                    },
+                    "required": [
+                      "start",
+                      "duration"
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "grafana_password": {
+                    "type": "string",
+                    "description": "Пароль для входа в интерфейс Grafana",
+                    "example": "qwerty123456789!"
+                  },
+                  "volume_scale_step_size": {
+                    "type": "integer",
+                    "description": "Шаг масштабирования диска в ГБ",
+                    "example": 150
+                  },
+                  "volume_max_scale_size": {
+                    "type": "integer",
+                    "description": "Максимальный шаг масштабирования диска в ГБ",
+                    "example": 1000
+                  },
+                  "volume_size_scale_threshold": {
+                    "type": "integer",
+                    "description": "Доля занятого места на диске для начала автомасштабирования",
+                    "example": 60
+                  },
+                  "maintenance_window": {
+                    "type": "object",
+                    "description": "Информация о техническом обслуживании",
+                    "properties": {
+                      "start": {
+                        "type": "string",
+                        "description": "Расписание технического обслуживания",
+                        "example": "45 12 * * 0-2"
+                      },
+                      "duration": {
+                        "type": "integer",
+                        "description": "Продолжительность технического обслуживания (в секундах)",
+                        "example": 15000
+                      }
+                    },
+                    "required": [
+                      "start",
+                      "duration"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "updateCluster": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Описание кластера",
+            "example": "Cluster new descr"
+          },
+          "name": {
+            "type": "string",
+            "description": "Наименование кластера",
+            "example": "BigData0001"
+          },
+          "features": {
+            "type": "array",
+            "description": "Дополнительная функциональность кластера",
+            "items": {
+              "type": "string"
+            },
+            "example": "[ \"edge\", \"monitoring\", \"volume_autoresize\" ]"
+          },
+          "user_keypair_id": {
+            "type": "string",
+            "description": "Наименование ключевой пары (без расширения)",
+            "example": "BigDataDB0001-cluster-keypair-name"
+          },
+          "extra": {
+            "type": "object",
+            "properties": {
+              "grafana_password": {
+                "type": "string",
+                "description": "Пароль для входа в интерфейс Grafana",
+                "example": "qwerty1234567890!"
+              },
+              "volume_scale_step_size": {
+                "type": "integer",
+                "description": "Шаг масштабирования диска в ГБ",
+                "example": 150
+              },
+              "volume_max_scale_size": {
+                "type": "integer",
+                "description": "Максимальный шаг масштабирования диска в ГБ",
+                "example": 1000
+              },
+              "volume_size_scale_threshold": {
+                "type": "integer",
+                "description": "Доля занятого места на диске для начала автомасштабирования",
+                "example": 60
+              },
+              "maintenance_window": {
+                "type": "object",
+                "description": "Информация о техническом обслуживании",
+                "properties": {
+                  "start": {
+                    "type": "string",
+                    "description": "Расписание технического обслуживания",
+                    "example": "45 12 * * 0-2"
+                  },
+                  "duration": {
+                    "type": "integer",
+                    "description": "Продолжительность технического обслуживания (в секундах)",
+                    "example": 15000
+                  }
+                },
+                "required": [
+                  "start",
+                  "duration"
+                ]
+              },
+              "adbc_password": {
+                "type": "string",
+                "description": "Пароль для доступа через API ADBC",
+                "example": "qwerty1234567890!"
+              }
+            }
+          },
+          "is_public": {
+            "type": "boolean",
+            "description": "Является ли ресурс публичным",
+            "example": false
+          },
+          "is_protected": {
+            "type": "boolean",
+            "description": "Является ли ресурс защищенным от удаления",
+            "example": false
+          }
+        }
+      },
+      "scaleCluster": {
+        "type": "object",
+        "properties": {
+          "node_groups": {
+            "type": "array",
+            "description": "Информация о группах нод",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "count"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "UUID группы",
+                  "example": "ac62f113-XXXX-XXXX-XXXX-5384783fb3cc"
+                },
+                "count": {
+                  "type": "integer",
+                  "description": "Количество хостов (виртуальных машин) в группе нод",
+                  "example": 3
+                }
+              }
+            }
+          },
+          "resize_node_groups": {
+            "type": "array",
+            "description": "Перечень групп нод, где нужно изменить количество ВМ",
+            "items": {
+              "type": "object",
+              "required": [
+                "name",
+                "count"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "UUID группы",
+                  "example": "ac62f113-XXXX-XXXX-XXXX-5384783fb3cc"
+                },
+                "count": {
+                  "type": "integer",
+                  "description": "Количество хостов (виртуальных машин) в группе нод",
+                  "example": 4
+                }
+              }
+            }
+          }
+        }
+      },
+      "upscaleCluster": {
+        "type": "object",
+        "properties": {
+          "node_groups": {
+            "type": "array",
+            "description": "Информация о группах нод для масштабирования",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "flavor_id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "UUID группы",
+                  "example": "ac62f113-XXXX-XXXX-XXXX-5384783fb3cc"
+                },
+                "flavor_id": {
+                  "type": "string",
+                  "description": "UUID шаблона конфигурации",
+                  "example": "ac62f113-XXXX-XXXX-XXXX-5384783fb3cc"
+                }
+              }
+            }
+          }
+        }
+      },
+      "getAllClusterBackups": {
+        "type": "object",
+        "properties": {
+          "backups": {
+            "type": "array",
+            "description": "Информация о созданных резервных копиях",
+            "items": {
+              "$ref": "#/components/schemas/getClusterBackup"
+            }
+          }
+        }
+      },
+      "getClusterBackup": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID резервной копии",
+            "example": "6r661c99-XXXX-XXXX-XXXX-b59fb469XXXX"
+          },
+          "created_at": {
+            "type": "string",
+            "description": "Дата создания резервной копии",
+            "example": "2023-01-01 00:00:00"
+          },
+          "updated_at": {
+            "type": "string",
+            "description": "Дата обновления резервной копии",
+            "example": "2023-01-02 00:00:00"
+          },
+          "tenant_id": {
+            "type": "string",
+            "description": "UUID пользователя VK Cloud",
+            "example": "6r661c99-XXXX-XXXX-XXXX-b59fb469d354"
+          },
+          "name": {
+            "type": "string",
+            "description": "Наименование резервной копии",
+            "example": "BigData-453kfs-backup"
+          },
+          "status": {
+            "type": "string",
+            "description": "Статус резервной копии",
+            "example": "created"
+          },
+          "label": {
+            "type": "string",
+            "description": "Временная метка создания резервной копии",
+            "example": "2023-01-22 00:00:00"
+          },
+          "exclude_schemas": {
+            "type": "array",
+            "description": "Список схем для исключения из создаваемой резервной копии",
+            "items": {
+              "type": "object",
+              "properties": {
+                "schema_name": {
+                  "type": "string",
+                  "description": "Наименование схемы",
+                  "example": "mySchema_name1"
+                }
+              },
+              "required": [
+                "schema_name"
+              ]
+            }
+          },
+          "include_schemas": {
+            "type": "array",
+            "description": "Список схем для создания резервной копии",
+            "items": {
+              "type": "object",
+              "properties": {
+                "schema_name": {
+                  "type": "string",
+                  "description": "Наименование схемы",
+                  "example": "mySchema_name1"
+                }
+              },
+              "required": [
+                "schema_name"
+              ]
+            }
+          },
+          "exclude_tables": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "Список таблиц для исключения из создаваемой резервной копии",
+              "properties": {
+                "schema_name": {
+                  "type": "string",
+                  "description": "Наименование схемы",
+                  "example": "mySchema_name1"
+                },
+                "table_name": {
+                  "type": "string",
+                  "description": "Наименование таблицы",
+                  "example": "mytable1"
+                }
+              },
+              "required": [
+                "schema_name",
+                "table_name"
+              ]
+            }
+          },
+          "include_tables": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "Список таблиц для создания резервной копии",
+              "properties": {
+                "schema_name": {
+                  "type": "string",
+                  "description": "Наименование схемы",
+                  "example": "mySchema_name1"
+                },
+                "table_name": {
+                  "type": "string",
+                  "description": "Наименование таблицы",
+                  "example": "mytable1"
+                }
+              },
+              "required": [
+                "schema_name",
+                "table_name"
+              ]
+            }
+          }
+        }
+      },
+      "postClusterBackup": {
+        "type": "object",
+        "description": "Информация о резервной копии",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Наименование резервной копии",
+            "example": "BigData-453kfs-backup1"
+          },
+          "exclude_schemas": {
+            "type": "array",
+            "description": "Список схем для исключения из создаваемой резервной копии",
+            "items": {
+              "type": "object",
+              "properties": {
+                "schema_name": {
+                  "type": "string",
+                  "description": "Наименование схемы",
+                  "example": "mySchema_name1"
+                }
+              },
+              "required": [
+                "schema_name"
+              ]
+            }
+          },
+          "include_schemas": {
+            "type": "array",
+            "description": "Список схем для создания резервной копии",
+            "items": {
+              "type": "object",
+              "properties": {
+                "schema_name": {
+                  "type": "string",
+                  "description": "Наименование схемы",
+                  "example": "mySchema_name1"
+                }
+              },
+              "required": [
+                "schema_name"
+              ]
+            }
+          },
+          "exclude_tables": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "Список таблиц для исключения из создаваемой резервной копии",
+              "properties": {
+                "schema_name": {
+                  "type": "string",
+                  "description": "Наименование схемы",
+                  "example": "mySchema_name1"
+                },
+                "table_name": {
+                  "type": "string",
+                  "description": "Наименование таблицы",
+                  "example": "mytable1"
+                }
+              },
+              "required": [
+                "schema_name",
+                "table_name"
+              ]
+            }
+          },
+          "include_tables": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "Список таблиц для создания резервной копии",
+              "properties": {
+                "schema_name": {
+                  "type": "string",
+                  "description": "Наименование схемы",
+                  "example": "mySchema_name1"
+                },
+                "table_name": {
+                  "type": "string",
+                  "description": "Наименование таблицы",
+                  "example": "mytable1"
+                }
+              },
+              "required": [
+                "schema_name",
+                "table_name"
+              ]
+            }
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "NodeGroupMeta": {
+        "type": "object",
+        "description": "Метаданные группы нод",
+        "properties": {
+          "minimum_cpu": {
+            "type": "integer",
+            "description": "Минимальное количество используемых CPUs",
+            "example": 5
+          },
+          "minimum_ram": {
+            "type": "integer",
+            "description": "Минимальное количество используемой RAM, ГБ",
+            "example": 150
+          },
+          "min_disk_size": {
+            "type": "integer",
+            "description": "Минимальный размер диска, ГБ",
+            "example": 50
+          },
+          "max_disk_ssd_size": {
+            "type": "integer",
+            "description": "Максимальный объем SSD-дисков, ГБ",
+            "example": 70
+          },
+          "max_disk_high_ops_size": {
+            "type": "integer",
+            "description": "Максимальный объем High-IOPS SSD-дисков, ГБ",
+            "example": 40
+          },
+          "min_volume_scale_step_size": {
+            "type": "integer",
+            "description": "Минимальный шаг масштабирования диска в ГБ",
+            "example": 10
+          },
+          "max_volume_scale_step_size": {
+            "type": "integer",
+            "description": "Максимальный шаг масштабирования диска в ГБ",
+            "example": 15
+          },
+          "min_volume_size_scale_threshold": {
+            "type": "integer",
+            "description": "Минимальная доля занятого места на диске для начала автомасштабирования",
+            "example": 10
+          },
+          "default_volume_size_scale_threshold": {
+            "type": "integer",
+            "description": "Доля занятого места на диске для начала автомасштабирования по умолчанию",
+            "example": 20
+          },
+          "max_volume_size_scale_threshold": {
+            "type": "integer",
+            "description": "Максимальная доля занятого места на диске для начала автомасштабирования",
+            "example": 30
+          },
+          "min_volumes_per_node": {
+            "type": "integer",
+            "description": "Минимальное количество дисков на ноду",
+            "example": 2
+          },
+          "max_volumes_per_node": {
+            "type": "integer",
+            "description": "Максимальное количество дисков на группу нод",
+            "example": 7
+          },
+          "min_segments_per_host": {
+            "type": "integer",
+            "description": "Минимальное количество первичных (primary) инстансов на одном сегмент-сервере",
+            "example": 2
+          },
+          "max_segments_per_host": {
+            "type": "integer",
+            "description": "Максимальное количество первичных (primary) инстансов на одном сегмент-сервере",
+            "example": 7
+          },
+          "max_segments_per_host_limit_factor": {
+            "type": "integer",
+            "description": "Доля максимального количества первичных (primary) сегментов на одном сегмент-сервере",
+            "example": "0.5"
+          },
+          "optimal_segments_per_host": {
+            "type": "integer",
+            "description": "Оптимальное количество первичных (primary) инстансов на одном сегмент-сервере",
+            "example": 5
+          },
+          "constraints_volume_count": {
+            "type": "object",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ConstraintsCpuVolumeCount"
+              }
+            ]
+          },
+          "disable_ng_show": {
+            "type": "boolean",
+            "description": "Не отображать группу нод в личном кабинете",
+            "example": false
+          },
+          "disable_ng_change_count": {
+            "type": "boolean",
+            "description": "Запретить редактирование количества нод в группе",
+            "example": false
+          },
+          "disable_disk_change_count": {
+            "type": "boolean",
+            "description": "Запретить редактирование количества дисков в группе нод",
+            "example": true
+          },
+          "disable_disk_change_size": {
+            "type": "boolean",
+            "description": "Запретить редактирование размера дисков в группе нод",
+            "example": true
+          },
+          "disable_disk_change_type": {
+            "type": "boolean",
+            "description": "Запретить редактирование типа дисков в группе нод",
+            "example": false
+          },
+          "disable_ng_change_flavor": {
+            "type": "boolean",
+            "description": "Запретить редактирование шаблона конфигурации в группе нод",
+            "example": false
+          },
+          "disable_ng_change_security_groups": {
+            "type": "boolean",
+            "description": "Запретить редактирование пользовательских групп безопасности в группе нод",
+            "example": true
+          },
+          "disable_segments_per_host_change_count": {
+            "type": "boolean",
+            "description": "Запретить редактирование первичных (primary) сегментов на одном сегмент-сервере",
+            "example": false
+          },
+          "visibility": {
+            "type": "boolean",
+            "description": "Видимость группы в UI",
+            "example": true
+          },
+          "optional": {
+            "type": "boolean",
+            "description": "Признак обязательность группы нод для создания кластера",
+            "example": false
+          },
+          "min_vm_count": {
+            "type": "integer",
+            "description": "Минимальное количество ВМ в группе нод",
+            "example": 3
+          },
+          "max_vm_count": {
+            "type": "integer",
+            "description": "Максимальное количество ВМ в группе нод",
+            "example": 10
+          },
+          "licensed": {
+            "type": "boolean",
+            "description": "Запущен ли процесс hdfs в группе",
+            "example": true
+          },
+          "is_fip_available": {
+            "type": "boolean",
+            "description": "Доступно ли добавление плавающего IP-адреса на группу нод",
+            "example": true
+          },
+          "uncompressed_data": {
+            "type": "integer",
+            "description": "Количество несжатых данных на кластере, ГБ",
+            "example": false
+          }
+        },
+        "required": [
+          "is_fip_available"
+        ]
+      },
+      "getNodeGroupTemplate": {
+        "type": "object",
+        "properties": {
+          "created_at": {
+            "type": "string",
+            "description": "Дата создания шаблона",
+            "example": "2023-01-01 00:00:00"
+          },
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID шаблона группы",
+            "example": "5a50e19e-XXXX-XXXX-XXXX-5290171792fa"
+          },
+          "name": {
+            "type": "string",
+            "description": "Наименование шаблона группы",
+            "example": "Segments"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание шаблона",
+            "example": "Node group template descr"
+          },
+          "tenant_id": {
+            "type": "string",
+            "description": "UUID пользователя VK Cloud",
+            "example": "6r661c99-XXXX-XXXX-XXXX-b59fb469d354"
+          },
+          "flavor_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID шаблона конфигурации",
+            "example": "5a50e19e-XXXX-XXXX-XXXX-5290171792fa"
+          },
+          "image_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID образа",
+            "example": "5a50e19e-XXXX-XXXX-XXXX-5290171792ff"
+          },
+          "plugin_name": {
+            "$ref": "#/components/schemas/PluginName"
+          },
+          "hadoop_version": {
+            "type": "string",
+            "description": "Версия кластера BigData",
+            "example": "6.23.5"
+          },
+          "node_processes": {
+            "type": "array",
+            "description": "Список устанавливаемых компонентов на группе нод",
+            "items": {
+              "type": "string"
+            },
+            "example": "[ \"adb-master\" ]"
+          },
+          "volumes_per_node": {
+            "type": "integer",
+            "description": "Количество дисков на одной ноде в группе нод",
+            "example": 5
+          },
+          "volumes_size": {
+            "type": "integer",
+            "description": "Размер диска на одной ноде в группе нод, ГБ",
+            "example": 200
+          },
+          "volume_mount_prefix": {
+            "type": "string",
+            "description": "Путь монтирования дата-дисков",
+            "example": "/volumes/disk"
+          },
+          "floating_ip_pool": {
+            "type": "string",
+            "description": "UUID диапазона доступных плавающих IP-адресов",
+            "example": "9999e19e-XXXX-XXXX-XXXX-5290171792aa"
+          },
+          "security_groups": {
+            "type": "array",
+            "description": "Список групп безопасности (настройки firewall)",
+            "items": {
+              "type": "string",
+              "example": "all"
+            }
+          },
+          "auto_security_group": {
+            "type": "boolean",
+            "description": "Автоматическое назначение групп безопасности",
+            "example": false
+          },
+          "availability_zone": {
+            "type": "string",
+            "description": "Зона доступности",
+            "example": "MS1"
+          },
+          "volumes_availability_zone": {
+            "type": "string",
+            "description": "Зона доступности дисков",
+            "example": "MS1"
+          },
+          "volume_type": {
+            "type": "string",
+            "description": "Тип диска",
+            "example": "high-iops"
+          },
+          "is_proxy_gateway": {
+            "type": "boolean",
+            "description": "Выступает ли хост в качестве прокси",
+            "example": false
+          },
+          "volume_local_to_instance": {
+            "type": "boolean",
+            "description": "Обязательность расположения дисков и инстансов на одном гипервизоре",
+            "example": false
+          },
+          "is_default": {
+            "type": "boolean",
+            "description": "Применяется ли шаблон по умолчанию в Sahara. Может быть удален системой во время обновления",
+            "example": true
+          },
+          "use_autoconfig": {
+            "type": "boolean",
+            "description": "Использовать автоматическую настойку ресурса",
+            "example": true
+          },
+          "is_protected": {
+            "type": "boolean",
+            "description": "Является ли ресурс защищенным от удаления",
+            "example": false
+          },
+          "is_public": {
+            "type": "boolean",
+            "description": "Является ли ресурс публичным",
+            "example": false
+          },
+          "meta": {
+            "$ref": "#/components/schemas/NodeGroupMeta"
+          },
+          "count": {
+            "type": "integer",
+            "description": "Количество хостов (виртуальных машин) в группе нод",
+            "example": 6
+          },
+          "node_group_template_id": {
+            "type": "string",
+            "description": "UUID шаблона группы нод",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        },
+        "required": [
+          "node_processes",
+          "name",
+          "flavor_id",
+          "volumes_size",
+          "volume_type",
+          "count",
+          "node_group_template_id",
+          "volumes_per_node",
+          "availability_zone"
+        ]
+      },
+      "postNodeGroup": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/NodeGroup"
+          }
+        ],
+        "required": [
+          "node_group_template_id"
+        ]
+      },
+      "updateClusterNodeGroupTemplate": {
+        "type": "object",
+        "description": "Информация о шаблоне группы нод",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Наименование шаблона группы",
+            "example": "Segments"
+          },
+          "count": {
+            "type": "integer",
+            "description": "Количество нод в группе",
+            "example": 3
+          },
+          "node_group_template_id": {
+            "type": "string",
+            "description": "UUID шаблона группы нод",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          }
+        },
+        "required": [
+          "name",
+          "count",
+          "node_group_template_id"
+        ]
+      },
+      "getNodeGroup": {
+        "type": "object",
+        "description": "Информация о группе нод",
+        "properties": {
+          "auto_security_group": {
+            "type": "boolean",
+            "description": "Автоматическое назначение групп безопасности",
+            "example": false
+          },
+          "availability_zone": {
+            "type": "string",
+            "description": "Зона доступности",
+            "example": "MS1"
+          },
+          "count": {
+            "type": "integer",
+            "description": "Количество хостов (виртуальных машин) в группе нод",
+            "example": 3
+          },
+          "created_at": {
+            "type": "string",
+            "description": "Дата создания группы",
+            "example": "2023-01-01 00:00:00"
+          },
+          "flavor_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID шаблона конфигурации",
+            "example": "5a50e19e-XXXX-XXXX-XXXX-5290171792fa"
+          },
+          "floating_ip_pool": {
+            "type": "string",
+            "description": "UUID диапазона доступных плавающих IP-адресов",
+            "example": "9999e19e-XXXX-XXXX-XXXX-5290171792aa"
+          },
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID группы нод",
+            "example": "850f242f-XXXX-XXXX-XXXX-b4a7c752b5ea"
+          },
+          "image_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID образа",
+            "example": "5a50e19e-XXXX-XXXX-XXXX-5290171792ff"
+          },
+          "instances": {
+            "type": "array",
+            "description": "Список развернутых нод в группе нод",
+            "items": {
+              "$ref": "#/components/schemas/getInstance"
+            }
+          },
+          "is_proxy_gateway": {
+            "type": "boolean",
+            "description": "Выступает ли хост в качестве прокси",
+            "example": false
+          },
+          "name": {
+            "type": "string",
+            "description": "Наименование группы нод",
+            "example": "Master"
+          },
+          "node_group_template_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID шаблона группы нод",
+            "example": "105682d8-XXXX-XXXX-XXXX-7bcc4027edbb"
+          },
+          "node_processes": {
+            "type": "array",
+            "description": "Список устанавливаемых компонентов на группе нод",
+            "items": {
+              "type": "string"
+            },
+            "example": "[ \"adb-master\" ]"
+          },
+          "security_groups": {
+            "type": "array",
+            "description": "Список групп безопасности (настройки firewall)",
+            "items": {
+              "type": "string",
+              "example": "ssh"
+            }
+          },
+          "updated_at": {
+            "type": "string",
+            "description": "Дата обновления группы",
+            "example": "2023-01-01 00:00:00"
+          },
+          "use_autoconfig": {
+            "type": "boolean",
+            "description": "Использовать автоматическую настойку ресурса",
+            "example": true
+          },
+          "volume_local_to_instance": {
+            "type": "boolean",
+            "description": "Обязательность расположения дисков и инстансов на одном гипервизоре",
+            "example": false
+          },
+          "volume_mount_prefix": {
+            "type": "string",
+            "description": "Путь монтирования дата-дисков",
+            "example": "/volumes/disk"
+          },
+          "volume_type": {
+            "type": "string",
+            "description": "Тип диска",
+            "example": "high-iops"
+          },
+          "volumes_availability_zone": {
+            "type": "string",
+            "description": "Зона доступности дисков",
+            "example": "MS1"
+          },
+          "volumes_per_node": {
+            "type": "integer",
+            "description": "Количество дисков на одной ноде в группе нод",
+            "example": 5
+          },
+          "volumes_size": {
+            "type": "integer",
+            "description": "Размер диска на одной ноде в группе нод, ГБ",
+            "example": 200
+          },
+          "meta": {
+            "$ref": "#/components/schemas/NodeGroupMeta"
+          }
+        },
+        "required": [
+          "node_processes",
+          "name",
+          "flavor_id",
+          "volumes_size",
+          "volume_type",
+          "count",
+          "node_group_template_id",
+          "volumes_per_node",
+          "availability_zone",
+          "instances",
+          "id"
+        ]
+      },
+      "getInstance": {
+        "type": "object",
+        "description": "Информация об инстансе кластера",
+        "properties": {
+          "created_at": {
+            "type": "string",
+            "description": "Дата создания ресурса",
+            "example": "2023-01-01 00:00:00"
+          },
+          "dns_hostname": {
+            "type": "string",
+            "description": "FQDN виртуальной машины",
+            "example": "example.vk.cloud"
+          },
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID кластера в БД Sahara",
+            "example": "ac62f113-XXXX-XXXX-XXXX-5384783fb3cc"
+          },
+          "instance_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID кластера в Nova",
+            "example": "ac62f113-XXXX-XXXX-XXXX-5384783fb3aa"
+          },
+          "instance_name": {
+            "type": "string",
+            "description": "Наименование инстанса",
+            "example": "BigDataDB0001-Master-0"
+          },
+          "internal_ip": {
+            "type": "string",
+            "description": "Внутренний IP инстанса",
+            "example": "10.0.0.7"
+          },
+          "management_ip": {
+            "type": "string",
+            "nullable": true,
+            "description": "Внешний IP адрес, назначаемый на инстанс",
+            "example": "212.212.212.211"
+          },
+          "storage_devices_number": {
+            "type": "integer",
+            "description": "Количество дополнительных виртуальных дисков, подключенных к ВМ (без учета root-диска)",
+            "example": "1"
+          },
+          "updated_at": {
+            "type": "string",
+            "description": "Дата обновления ресурса",
+            "example": "2023-01-10 00:00:00"
+          },
+          "volumes": {
+            "type": "array",
+            "description": "Информация о дисках",
+            "items": {
+              "$ref": "#/components/schemas/volume"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "instance_name",
+          "management_ip"
+        ]
+      },
+      "volume": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID диска",
+            "example": "637c9a6e-XXXX-XXXX-XXXX-3a7678e34517"
+          },
+          "name": {
+            "type": "string",
+            "description": "Наименование диска",
+            "example": "volume-1"
+          },
+          "instance_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID инстанса диска",
+            "example": "637c9a6e-XXXX-XXXX-XXXX-3a7678e35555"
+          },
+          "size": {
+            "type": "integer",
+            "description": "Размер диска, ГБ",
+            "example": 40
+          }
+        }
+      },
+      "NodeGroup": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Наименование группы",
+            "example": "Segments"
+          },
+          "count": {
+            "type": "integer",
+            "description": "Количество хостов (виртуальных машин) в группе нод",
+            "example": 5
+          },
+          "flavor_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID шаблона конфигурации",
+            "example": "5a50e19e-XXXX-XXXX-XXXX-5290171792fa"
+          },
+          "plugin_name": {
+            "$ref": "#/components/schemas/PluginName"
+          },
+          "hadoop_version": {
+            "type": "string",
+            "description": "Версия кластера BigData",
+            "example": "6.23.5"
+          },
+          "node_processes": {
+            "type": "array",
+            "description": "Список устанавливаемых компонентов на группе нод",
+            "items": {
+              "type": "string"
+            },
+            "example": "[ \"adb-master\" ]"
+          },
+          "image_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID образа",
+            "example": "5a50e19e-XXXX-XXXX-XXXX-5290171792ff"
+          },
+          "volumes_per_node": {
+            "type": "integer",
+            "description": "Количество дисков на одной ноде в группе нод",
+            "example": 5
+          },
+          "volumes_size": {
+            "type": "integer",
+            "description": "Размер диска на одной ноде в группе нод, ГБ",
+            "example": 200
+          },
+          "volume_type": {
+            "type": "string",
+            "description": "Тип диска",
+            "example": "high-iops"
+          },
+          "volumes_availability_zone": {
+            "type": "string",
+            "description": "Зона доступности дисков",
+            "example": "MS1"
+          },
+          "volume_mount_prefix": {
+            "type": "string",
+            "description": "Путь монтирования дата-дисков",
+            "example": "/volumes/disk"
+          },
+          "description": {
+            "type": "string",
+            "description": "Описание группы",
+            "example": "master_group"
+          },
+          "floating_ip_pool": {
+            "type": "string",
+            "description": "UUID диапазона доступных плавающих IP-адресов",
+            "example": "9999e19e-XXXX-XXXX-XXXX-5290171792aa"
+          },
+          "security_groups": {
+            "type": "array",
+            "description": "Список групп безопасности (настройки firewall)",
+            "items": {
+              "type": "string",
+              "example": "all"
+            }
+          },
+          "auto_security_group": {
+            "type": "boolean",
+            "description": "Автоматическое назначение групп безопасности",
+            "example": false
+          },
+          "availability_zone": {
+            "type": "string",
+            "description": "Зона доступности",
+            "example": "MS1"
+          },
+          "is_proxy_gateway": {
+            "type": "boolean",
+            "description": "Выступает ли хост в качестве прокси",
+            "example": false
+          },
+          "volume_local_to_instance": {
+            "type": "boolean",
+            "description": "Обязательность расположения дисков и инстансов на одном гипервизоре",
+            "example": false
+          },
+          "use_autoconfig": {
+            "type": "boolean",
+            "description": "Использовать автоматическую настойку ресурса",
+            "example": true
+          },
+          "is_public": {
+            "type": "boolean",
+            "description": "Является ли ресурс публичным",
+            "example": false
+          },
+          "is_protected": {
+            "type": "boolean",
+            "description": "Является ли ресурс защищенным от удаления",
+            "example": false
+          }
+        }
+      },
+      "LoadBalancerTemplate": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "description": "Наименование шаблона балансировщика",
+            "example": "LoadBalancer_9486"
+          },
+          "flavor_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID шаблона конфигурации",
+            "example": "5a50e19e-XXXX-XXXX-XXXX-5290171792fa"
+          },
+          "availability_zone": {
+            "type": "string",
+            "description": "Зона доступности",
+            "example": "MS1"
+          },
+          "floating_ip_pool": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID диапазона доступных плавающих IP-адресов",
+            "example": "9999e19e-XXXX-XXXX-XXXX-5290171792aa"
+          },
+          "listeners": {
+            "type": "array",
+            "description": "Список портов, трафик с которых должен перенаправляться на группу нод",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "format": "uuid",
+                  "description": "UUID шаблона",
+                  "example": "93f910b3-XXXX-XXXX-XXXX-4c4f389ff4fa"
+                },
+                "name": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80,
+                  "description": "Имя процесса группы нод, на порт которого будет перенаправлен трафик с порта protocol_port из пула floating_ip_pool. Должно совпадать с именем процесса группы нод",
+                  "example": "jenkins"
+                },
+                "protocol": {
+                  "type": "string",
+                  "description": "Тип протокола",
+                  "enum": [
+                    "HTTP",
+                    "HTTPS"
+                  ],
+                  "default": "HTTPS",
+                  "example": "HTTPS"
+                },
+                "protocol_port": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 65535,
+                  "description": "Номер порта",
+                  "example": 8080
+                }
+              },
+              "required": [
+                "name",
+                "protocol",
+                "protocol_port"
+              ]
+            }
+          }
+        },
+        "required": [
+          "name",
+          "listeners"
+        ]
+      },
+      "postLoadBalancer": {
+        "type": "object",
+        "properties": {
+          "load_balancer_template_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID шаблона балансировщика нагрузки",
+            "example": "d47a6261-XXXX-XXXX-XXXX-3e579bb1fd"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "description": "Наименование балансировщика нагрузки"
+          },
+          "flavor_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID шаблона конфигурации",
+            "example": "5a50e19e-XXXX-XXXX-XXXX-5290171792fa"
+          },
+          "availability_zone": {
+            "type": "string",
+            "description": "Зона доступности",
+            "example": "MS1"
+          },
+          "network_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID сети",
+            "example": "93f910b3-XXXX-XXXX-XXXX-4c4f389ffXXX"
+          },
+          "floating_ip_pool": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID диапазона доступных плавающих IP-адресов",
+            "example": "9999e19e-XXXX-XXXX-XXXX-5290171792aa"
+          },
+          "listeners": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "Список портов, трафик с которых должен перенаправляться на группу нод",
+              "properties": {
+                "lb_listener_template_id": {
+                  "type": "string",
+                  "format": "uuid",
+                  "description": "Шаблон диспетчера",
+                  "example": "XX7a6261-XXXX-XXXX-XXXX-3e579bb1XX"
+                },
+                "name": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80,
+                  "description": "Имя процесса группы нод, на порт которого будет перенаправлен трафик с порта protocol_port из пула floating_ip_pool. Должно совпадать с именем процесса группы нод",
+                  "example": "jenkins"
+                },
+                "protocol": {
+                  "type": "string",
+                  "description": "Тип протокола",
+                  "enum": [
+                    "HTTP",
+                    "HTTPS"
+                  ],
+                  "default": "HTTPS",
+                  "example": "HTTPS"
+                },
+                "protocol_port": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 65535,
+                  "description": "Номер порта",
+                  "example": 8081
+                }
+              },
+              "required": [
+                "lb_listener_template_id"
+              ]
+            }
+          }
+        },
+        "required": [
+          "load_balancer_template_id",
+          "listeners"
+        ]
+      },
+      "LoadBalancer": {
+        "type": "object",
+        "properties": {
+          "load_balancer_template_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID шаблона балансировщика нагрузки",
+            "example": "d47a6261-XXXX-XXXX-XXXX-3e579bb1fd"
+          },
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID балансировщика нагрузки",
+            "example": "XX7a6261-XXXX-XXXX-XXXX-3e579bb1XX"
+          },
+          "octavia_load_balancer_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID балансировщика нагрузки в сервисе Octavia",
+            "example": "667a6261-XXXX-XXXX-XXXX-3e579bb1aa"
+          },
+          "cluster_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID кластера",
+            "example": "667a6261-XXXX-XXXX-XXXX-3e579bb1aa"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "description": "Наименование балансировщика нагрузки"
+          },
+          "flavor_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID шаблона конфигурации",
+            "example": "5a50e19e-XXXX-XXXX-XXXX-5290171792fa"
+          },
+          "network_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID сети",
+            "example": "93f910b3-XXXX-XXXX-XXXX-4c4f389ffXXX"
+          },
+          "vip_address": {
+            "type": "string",
+            "description": "Виртуальный IP-адрес",
+            "example": "10.0.0.14"
+          },
+          "floating_ip_pool": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID диапазона доступных плавающих IP-адресов",
+            "example": "9999e19e-XXXX-XXXX-XXXX-5290171792aa"
+          },
+          "floating_ip_address": {
+            "type": "string",
+            "description": "Внешний IP-адрес",
+            "example": "213.213.213.213"
+          },
+          "availability_zone": {
+            "type": "string",
+            "description": "Зона доступности",
+            "example": "MS1"
+          },
+          "listeners": {
+            "type": "array",
+            "description": "Список портов, трафик с которых должен перенаправляться на группу нод",
+            "items": {
+              "type": "object",
+              "properties": {
+                "lb_listener_template_id": {
+                  "type": "string",
+                  "format": "uuid",
+                  "description": "Шаблон диспетчера",
+                  "example": "XX7a6261-XXXX-XXXX-XXXX-3e579bb1XX"
+                },
+                "id": {
+                  "type": "string",
+                  "format": "uuid",
+                  "description": "UUID диспетчера в Sahara",
+                  "example": "yy7a6261-XXXX-XXXX-XXXX-3e579bb1xx"
+                },
+                "octavia_listener_id": {
+                  "type": "string",
+                  "format": "uuid",
+                  "description": "UUID диспетчера в Octavia",
+                  "example": "aa7a6261-XXXX-XXXX-XXXX-3e579bb1aa"
+                },
+                "name": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80,
+                  "description": "Имя процесса группы нод, на порт которого будет перенаправлен трафик с порта protocol_port из пула floating_ip_pool. Должно совпадать с именем процесса группы нод",
+                  "example": "jenkins"
+                },
+                "protocol": {
+                  "type": "string",
+                  "description": "Тип протокола",
+                  "enum": [
+                    "HTTP",
+                    "HTTPS"
+                  ],
+                  "default": "HTTPS",
+                  "example": "HTTPS"
+                },
+                "protocol_port": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 65535,
+                  "description": "Номер порта",
+                  "example": 8081
+                },
+                "default_pool": {
+                  "type": "object",
+                  "description": "Пулы групп нод, на ВМ которых перенаправляется сетевой трафик",
+                  "properties": {
+                    "lb_pool_template_id": {
+                      "type": "string",
+                      "format": "uuid",
+                      "description": "UUID шаблона пула",
+                      "example": "XX7a6261-XXXX-XXXX-XXXX-3e579bb1XX"
+                    },
+                    "id": {
+                      "type": "string",
+                      "format": "uuid",
+                      "description": "UUID пула",
+                      "example": "XX7a6261-XXXX-XXXX-XXXX-3e579bb1Xa"
+                    },
+                    "octavia_pool_id": {
+                      "type": "string",
+                      "format": "uuid",
+                      "description": "UUID пула в Octavia",
+                      "example": "ff7a6261-XXXX-XXXX-XXXX-3e579bb1ff"
+                    },
+                    "name": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 80,
+                      "description": "Наименование пула",
+                      "example": "Jenkins"
+                    },
+                    "protocol": {
+                      "type": "string",
+                      "description": "Тип протокола",
+                      "enum": [
+                        "HTTP",
+                        "HTTPS"
+                      ],
+                      "default": "HTTPS",
+                      "example": "HTTPS"
+                    },
+                    "members": {
+                      "type": "array",
+                      "description": "Список групп нод",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "lb_member_template_id": {
+                            "type": "string",
+                            "format": "uuid",
+                            "description": "UUID шаблона участника пула",
+                            "example": "333a6261-XXXX-XXXX-XXXX-3e579bb333"
+                          },
+                          "id": {
+                            "type": "string",
+                            "format": "uuid",
+                            "description": "UUID участника пула",
+                            "example": "444a6261-XXXX-XXXX-XXXX-3e579bb444"
+                          },
+                          "protocol_port": {
+                            "type": "integer",
+                            "minimum": 1,
+                            "maximum": 65535,
+                            "description": "Номер порта",
+                            "example": 8080
+                          },
+                          "node_group_id": {
+                            "type": "string",
+                            "format": "uuid",
+                            "description": "UUID группы нод",
+                            "example": "555a6261-XXXX-XXXX-XXXX-3e579bb555"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Bundle": {
+        "type": "object",
+        "description": "Информация о расширении",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "Тип расширения",
+            "example": "main"
+          },
+          "version": {
+            "type": "string",
+            "description": "Версия расширения",
+            "example": 1.0
+          },
+          "name": {
+            "type": "string",
+            "description": "Наименование расширения",
+            "example": "adb"
+          }
+        }
+      },
+      "Upgrade": {
+        "type": "object",
+        "properties": {
+          "upgrade_type": {
+            "type": "string",
+            "description": "Тип обновления",
+            "example": "main"
+          },
+          "version": {
+            "type": "string",
+            "description": "Доступная версия для обновления",
+            "example": "6.25.1"
+          }
+        }
+      },
+      "ClusterProvisionStepPart": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID этапа действия над кластером",
+            "example": "777777c99-XXXX-XXXX-XXXX-b59fb469d777"
+          },
+          "cluster_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID кластера",
+            "example": "88888c99-XXXX-XXXX-XXXX-b59fb469d888"
+          },
+          "tenant_id": {
+            "type": "string",
+            "description": "UUID пользователя VK Cloud",
+            "example": "6r661c99-XXXX-XXXX-XXXX-b59fb469d354"
+          },
+          "step_name": {
+            "type": "string",
+            "description": "Наименование шага события",
+            "example": "Create ADB cluster"
+          },
+          "step_type": {
+            "type": "string",
+            "description": "Тип шага события",
+            "example": "Engine: create cluster"
+          },
+          "total": {
+            "type": "integer",
+            "description": "Количество событий на шаге",
+            "example": "5"
+          },
+          "successful": {
+            "type": "boolean",
+            "description": "Успешность выполнения шага события",
+            "example": true
+          },
+          "created_at": {
+            "type": "string",
+            "description": "Дата создания этапа",
+            "example": "2023-01-01 00:00:00"
+          },
+          "updated_at": {
+            "type": "string",
+            "description": "Дата обновления этапа",
+            "example": "2023-01-11 00:00:00"
+          },
+          "output": {
+            "type": "string",
+            "nullable": true,
+            "description": "Необязательный результат выполнения шага события",
+            "example": "[SUCCESS] Command completed successfully"
+          }
+        },
+        "required": [
+          "created_at",
+          "step_name"
+        ]
+      },
+      "Event": {
+        "type": "object",
+        "description": "Информация о событии",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID события",
+            "example": "b08181fc-XXXX-XXXX-XXXX-f49b10a046d8"
+          },
+          "node_group_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID группы нод",
+            "example": "b08181fc-XXXX-XXXX-XXXX-f49b10a04646"
+          },
+          "instance_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID инстанса",
+            "example": "637c9a6e-XXXX-XXXX-XXXX-3a7678e35555"
+          },
+          "instance_name": {
+            "type": "string",
+            "description": "Наименование инстанса",
+            "example": "BigDataDB0001-Master-0"
+          },
+          "event_info": {
+            "type": "string",
+            "description": "Подробная информация о событии",
+            "example": "Some event happened"
+          },
+          "successful": {
+            "type": "boolean",
+            "description": "Успешность выполнения шага события",
+            "example": true
+          },
+          "step_id": {
+            "type": "string",
+            "format": "uuid",
+            "description": "UUID шага события",
+            "example": "888c9a6e-XXXX-XXXX-XXXX-3a7678e38888"
+          },
+          "created_at": {
+            "type": "string",
+            "description": "Дата создания события",
+            "example": "2023-01-01 00:00:00"
+          },
+          "updated_at": {
+            "type": "string",
+            "description": "Дата обновления события",
+            "example": "2023-01-02 00:00:00"
+          }
+        }
+      },
+      "ClusterProvisionStep": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/ClusterProvisionStepPart"
+          },
+          {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ClusterProvisionStepPart"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "events": {
+                    "type": "array",
+                    "description": "Информация о событиях кластера",
+                    "items": {
+                      "$ref": "#/components/schemas/Event"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "PluginName": {
+        "type": "string",
+        "description": "Наименование плагина",
+        "example": "tuareg_oasis_enterprise",
+        "enum": [
+          "tuareg_greenplum",
+          "tuareg_oasis",
+          "tuareg_oasis_enterprise",
+          "tuareg",
+          "tuareg_ahdp",
+          "tuareg_ahdpe",
+          "tuareg_ads",
+          "tuareg_adse",
+          "tuareg_dummy",
+          "tuareg_insight",
+          "oasis",
+          "ambari"
+        ]
+      },
+      "PluginType": {
+        "type": "string",
+        "description": "Тип плагина",
+        "example": "enterprise_custom",
+        "enum": [
+          "test",
+          "custom",
+          "combined",
+          "dummy",
+          "dataflow",
+          "spark",
+          "airflow",
+          "nifi",
+          "kafka",
+          "gpu",
+          "data",
+          "etl",
+          "edw",
+          "community_custom",
+          "enterprise_custom",
+          "tiny",
+          "small",
+          "medium",
+          "big",
+          "large",
+          "heavy"
+        ]
+      },
+      "ClusterStatus": {
+        "type": "string",
+        "description": "Статус кластера",
+        "example": "Active",
+        "enum": [
+          "InfraUpdating",
+          "Spawning",
+          "Waiting",
+          "Preparing",
+          "Starting",
+          "Scaling",
+          "Rollback",
+          "Scaling: Validating",
+          "Scaling: Configuring",
+          "Scaling: Spawning",
+          "Scaling: Waiting",
+          "Scaling: Preparing",
+          "Rollback: Spawning",
+          "Rollback: Waiting",
+          "Rollback: Preparing",
+          "AwaitingTermination",
+          "Adding Instances",
+          "Decommissioning",
+          "Deleting Instances",
+          "Deleting",
+          "Waiting deleting",
+          "Active",
+          "Error",
+          "Configuring",
+          "Validating",
+          "SetSetting",
+          "DiskScaling",
+          "Reloading",
+          "User action required",
+          "Cancel",
+          "Configuring deleting",
+          "Upgrading",
+          "Action",
+          "Upscaling"
+        ]
+      },
+      "ConstraintsCpuVolumeCount": {
+        "properties": {
+          "2": {
+            "type": "object",
+            "description": "Ограничение на количество дисков в группе нод для 2 CPU",
+            "properties": {
+              "min_volumes_per_node": {
+                "type": "integer",
+                "description": "Минимальное количество дисков на ноду",
+                "example": 2
+              },
+              "max_volumes_per_node": {
+                "type": "integer",
+                "description": "Максимальное количество дисков на ноду",
+                "example": 4
+              }
+            }
+          },
+          "4": {
+            "type": "object",
+            "description": "Ограничение на количество дисков в группе нод для 4 CPU",
+            "properties": {
+              "min_volumes_per_node": {
+                "type": "integer",
+                "description": "Минимальное количество дисков на ноду",
+                "example": 4
+              },
+              "max_volumes_per_node": {
+                "type": "integer",
+                "description": "Максимальное количество дисков на ноду",
+                "example": 6
+              }
+            }
+          },
+          "6": {
+            "type": "object",
+            "description": "Ограничение на количество дисков в группе нод для 6 CPU",
+            "properties": {
+              "min_volumes_per_node": {
+                "type": "integer",
+                "description": "Минимальное количество дисков на ноду",
+                "example": 6
+              },
+              "max_volumes_per_node": {
+                "type": "integer",
+                "description": "Максимальное количество дисков на ноду",
+                "example": 8
+              }
+            }
+          },
+          "8": {
+            "type": "object",
+            "description": "Ограничение на количество дисков в группе нод для 8 CPU",
+            "properties": {
+              "min_volumes_per_node": {
+                "type": "integer",
+                "description": "Минимальное количество дисков на ноду",
+                "example": 8
+              },
+              "max_volumes_per_node": {
+                "type": "integer",
+                "description": "Максимальное количество дисков на ноду",
+                "example": 12
+              }
+            }
+          },
+          "12": {
+            "type": "object",
+            "description": "Ограничение на количество дисков в группе нод для 12 CPU",
+            "properties": {
+              "min_volumes_per_node": {
+                "type": "integer",
+                "description": "Минимальное количество дисков на ноду",
+                "example": 12
+              },
+              "max_volumes_per_node": {
+                "type": "integer",
+                "description": "Максимальное количество дисков на ноду",
+                "example": 16
+              }
+            }
+          },
+          "16": {
+            "type": "object",
+            "description": "Ограничение на количество дисков в группе нод для 16 CPU",
+            "properties": {
+              "min_volumes_per_node": {
+                "type": "integer",
+                "description": "Минимальное количество дисков на ноду",
+                "example": 16
+              },
+              "max_volumes_per_node": {
+                "type": "integer",
+                "description": "Максимальное количество дисков на ноду",
+                "example": 24
+              }
+            }
+          },
+          "24": {
+            "type": "object",
+            "description": "Ограничение на количество дисков в группе нод для 24 CPU",
+            "properties": {
+              "min_volumes_per_node": {
+                "type": "integer",
+                "description": "Минимальное количество дисков на ноду",
+                "example": 24
+              },
+              "max_volumes_per_node": {
+                "type": "integer",
+                "description": "Максимальное количество дисков на ноду",
+                "example": 32
+              }
+            }
+          },
+          "32": {
+            "type": "object",
+            "description": "Ограничение на количество дисков в группе нод для 32 CPU",
+            "properties": {
+              "min_volumes_per_node": {
+                "type": "integer",
+                "description": "Минимальное количество дисков на ноду",
+                "example": 32
+              },
+              "max_volumes_per_node": {
+                "type": "integer",
+                "description": "Максимальное количество дисков на ноду",
+                "example": 48
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
