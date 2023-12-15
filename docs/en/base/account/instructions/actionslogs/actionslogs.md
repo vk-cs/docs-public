@@ -53,7 +53,23 @@ To open detailed information about an individual record, click on the icon ![Inf
    | `marker` | string  | The token for requesting the next page, previously returned by the API. TTL of markers — 1 hour |
    | `limit`  | integer | The number of records to return. If omitted, returns 100 records |
 
-### Examples of requests and responses
+</tabpanel>
+</tabs>
+
+Each action log record provides the information:
+
+- `event_id` — ID of the operation.
+- `user_email` — the mail of the user who performed the operation.
+- `timestamp` — date and time of the operation.
+- `source` — the component is the source of the operation.
+- `action` — a brief description of the operation.
+- `success` — a sign of successful completion of the operation.
+- `method` — REST method of the performed operation.
+- `uri` — the path where the request was executed.
+- `request_body` — request body (if any).
+- `response_body` — response body (if any).
+
+## Examples of API requests to the action log
 
 To split the output of records to the console or file into lines, the requests use [the jq utility](/en/manage/tools-for-using-services/rest-api/install-jq).
 
@@ -117,7 +133,7 @@ Response example:
 <details>
     <summary>Retrieving log records for a given period</summary>
 
-To get the last 2 records from the action log of the Nova component for a given time interval, run the request:
+To get the last 2 records from the action log of the Nova component for a given period, run the request:
 
 ```bash
 curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
@@ -175,9 +191,9 @@ Response example:
 
 Using the `marker` parameter, a large request for log records can be divided into several partial requests. Action log records are arranged in reverse order of time, with the most recent at the beginning of the log. So the first partial request will return a bunch of the most recent records, the next one will return a bunch of earlier records, and so on.
 
-To output all log records of the Nova component for a given time interval into files in portions of 10 records per file:
+To output all log records of the Nova component for a given period into files in portions of 10 records per file:
 
-1. Request output of 10 recent log records for the specified time interval to the `nova_part1.log` file:
+1. Request output of 10 recent log records for the specified period to the `nova_part1.log` file:
 
    ```bash
    curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
@@ -214,25 +230,9 @@ To output all log records of the Nova component for a given time interval into f
    -H "Content-Type: application/json" | jq > nova_part2.log
    ```
 
-4. Repeat the previous request, changing only the file name (for example: `nova_part3.log`, `nova_part4.log`, ...), until you get all the log records for the specified time interval.
+4. Repeat the previous request, changing only the file name (for example: `nova_part3.log`, `nova_part4.log`, ...), until you get all the log records for the specified period.
 
 </details>
-
-</tabpanel>
-</tabs>
-
-Each action log record provides the information:
-
-- `event_id` — ID of the operation.
-- `user_email` — the mail of the user who performed the operation.
-- `timestamp` — date and time of the operation.
-- `source` — the component is the source of the operation.
-- `action` — a brief description of the operation.
-- `success` — a sign of successful completion of the operation.
-- `method` — REST method of the performed operation.
-- `uri` — the path where the request was executed.
-- `request_body` — request body (if any).
-- `response_body` — response body (if any).
 
 ## Downloading the action log
 
