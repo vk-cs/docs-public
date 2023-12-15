@@ -8,7 +8,7 @@
 
 [Системные требования](../../../../concepts/addons-and-settings/addons#jaeger_6f817a95) аддона Jaeger зависят от выбранного количества реплик Elasticsearch и окружения кластера. Минимальное количество реплик — две, по умолчанию — три. Их количество можно изменить во время стандартной установки или установки на выделенные worker-узлы.
 
-При необходимости [выполните ручное масштабирование](../../../scale#vypolnit_ruchnoe_masshtabirovanie) групп worker-узлов или [настройте автоматическое масштабирование](../../../scale#nastroit_avtomaticheskoe_masshtabirovanie_tolko_dlya_grupp_worker_uzlov) перед установкой.
+При необходимости [выполните ручное масштабирование](../../../scale#masshtabirovanie_grupp_worker_uzlov_3e7a5fdf) групп worker-узлов или [настройте автоматическое масштабирование](../../../scale#nastroyka_avtomaticheskogo_masshtabirovaniya_grupp_worker_uzlov_1f8b2c54) перед установкой.
 
 <tabs>
 <tablist>
