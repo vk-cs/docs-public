@@ -1,0 +1,15 @@
+{
+    "title": "Cert-manager",
+    "pageDescription": "The configuration and installation of the cert-manager addon is described here.",
+    "shortDescription": "",
+    "metaTitle": "Cert-manager",
+    "metaDescription": "The configuration and installation of the cert-manager addon is described here.",
+    "sectionTitle": "Cert-manager",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "bf1cac1e-9c56-43e8-a51a-f07551cba251",
+    "createdAt": "2023-12-14T09:10:13.000Z",
+    "updatedAt": "2023-12-14T09:10:13.000Z"
+}
