@@ -11,6 +11,24 @@ The activity log stores the history of operations performed by VK Cloud componen
 
 Log data can be useful both for internal analysis of incidents and when contacting [technical support](/en/contacts/).
 
+## Downloading the action log
+
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+</tablist>
+<tabpanel>
+
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
+1. Click on the user's name in the header of the page.
+1. Select **Action logger** from the drop-down list.
+1. Click the **Download report** button.
+
+The generated report will be uploaded with the extension `.xlsx`.
+
+</tabpanel>
+</tabs>
+
 ## Viewing log
 
 <tabs>
@@ -233,21 +251,3 @@ To output all log records of the Nova component for a given period into files in
 4. Repeat the previous request, changing only the file name (for example: `nova_part3.log`, `nova_part4.log`, ...), until you get all the log records for the specified period.
 
 </details>
-
-## Downloading the action log
-
-<tabs>
-<tablist>
-<tab>Personal account</tab>
-</tablist>
-<tabpanel>
-
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
-1. Click on the user's name in the header of the page.
-1. Select **Action logger** from the drop-down list.
-1. Click the **Download report** button.
-
-The generated report will be uploaded with the extension `.xlsx`.
-
-</tabpanel>
-</tabs>
