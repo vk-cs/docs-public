@@ -1,228 +1,371 @@
-<warn>
+You can perform [Cloud Containers cluster scaling](../../concepts/scale) manually or set up automatic scaling to adapt the cluster to the changing needs of [workloads](https://kubernetes.io/docs/concepts/workloads/).
 
-- [Scaling](../../concepts/architecture/) can only be performed when the cluster is running.
-- Before performing scaling from Terraform, read the information in [Using Terraform](../helpers/terraform-howto#features_of_using_terraform_to_manage_the_container_service).
+## Vertical scaling
 
-</warn>
+This type of scaling is applicable for master nodes and groups of worker nodes. During the scaling process, [virtual machine templates](../../concepts/flavors) are changed for cluster nodes, the number of nodes remains the same. If you need to change the number of worker nodes in a group, [perform horizontal scaling](#horizontal_scaling)
 
-## Do manual scaling
+### Scaling of master nodes
 
-### For master nodes
+1. [Learn how the vertical scaling mechanism works](../../concepts/scale).
 
-<tabs>
-<tablist>
-<tab>Personal account</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+1. [Make sure](/en/base/account/instructions/project-settings/manage#viewing_project_quotas) that there are enough quotas for scaling.
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project where the necessary cluster is located.
-1. Go to **Containers** → **Kubernetes Clusters**.
-1. Expand the menu of the necessary cluster and select **Change type of master virtual machine**.
-1. Choose the virtual machine type.
-1. Click the **Save** button.
+1. Perform the scaling.
 
-   <info>
+   <warn>
 
-   Templates with high-performance CPUs are available upon request to support. To take advantage of these templates, select the "Show high performance CPUs only" option.
+   During the scaling process, the virtual machines hosting the master nodes will be restarted sequentially.
 
-   See [Available computing resources](../../concepts/flavors#configuration_templates) for details.
+   If the cluster [contains one master node](../../concepts/architecture#cluster_topologies), then the Kubernetes API will be unavailable during scaling.
 
-   </info>
+   </warn>
 
-1. Click the **Save** button.
+   <tabs>
+   <tablist>
+   <tab>Personal account</tab>
+   <tab>Terraform</tab>
+   </tablist>
+   <tabpanel>
 
-</tabpanel>
-<tabpanel>
+   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en/).
+   1. Select the project where the necessary cluster is located.
+   1. Go to **Containers** → **Kubernetes Clusters**.
+   1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
+   1. Expand the menu of the necessary cluster and select **Change type of master virtual machine**.
+   1. Select the desired VM template from the drop-down list.
 
-1. [Install the OpenStack CLI](../../../../additionals/account/project/cli/setup/) and [authorize](../../../../additionals/account/project/cli/authorization/) if not already done.
+      <info>
 
-1. Determine a new virtual machine type to be used for the cluster master nodes:
+      Templates with high-performance CPUs are available upon request to support. To take advantage of these templates, select the "Show high performance CPUs only" option.
 
-   1. Run the command:
+      See [Available computing resources](../../concepts/flavors#configuration_templates) for details.
 
-      ```bash
-      openstack flavor list
+      </info>
+
+   1. Click the **Save** button.
+
+   </tabpanel>
+   <tabpanel>
+
+   1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+
+   1. Get ready to [work with Terraform](/en/manage/tools-for-using-services/terraform/quick-start), if this has not already been done.
+
+   1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
+
+   1. Determine a new virtual machine type to be used for the cluster master nodes:
+
+      1. Run the command:
+
+         ```bash
+         openstack flavor list
+         ```
+
+         The available virtual machine types will be displayed.
+
+      1. Select the desired virtual machine type and write its name from the **Name** column.
+
+   1. Change the [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md) data source in the Terraform configuration file:
+
+      ```hcl
+      # Already existing data source with virtual machine type for the cluster
+      data "vkcs_compute_flavor" "k8s-master-flavor" {
+         name = "<name of the new virtual machine type>"
+      }
+
+      # Already described cluster configuration
+      resource "vkcs_kubernetes_cluster" "k8s-cluster" {
+         name                = "k8s-cluster"
+         master_flavor       = data.vkcs_compute_flavor.k8s-master-flavor.id
+        ...
+
+      }
       ```
 
-      The available virtual machine types will be displayed.
+   1. Check correctness of the Terraform configuration file:
 
-   1. Select the desired virtual machine type and write its name from the **Name** column.
+      ```bash
+      terraform validate
+      ```
 
-1. Change the [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md) data source in the Terraform configuration file:
+   1. Familiarize yourself with the planned changes:
 
-   ```hcl
+      ```bash
+      terraform plan
+      ```
 
-   # Already existing data source with virtual machine type for the cluster
-   data "vkcs_compute_flavor" "k8s-master-flavor" {
-      name = "<name of the new virtual machine type>"
-   }
+   1. Apply the planned changes:
 
-   # Already described cluster configuration
-   resource "vkcs_kubernetes_cluster" "k8s-cluster" {
-      name                = "k8s-cluster"
-      master_flavor       = data.vkcs_compute_flavor.k8s-master-flavor.id
-     ...
+      ```bash
+      terraform apply
+      ```
 
-   }
-   ```
+   </tabpanel>
+   </tabs>
 
-1. Check correctness of the Terraform configuration file:
+### Scaling groups of worker nodes
 
-   ```bash
-   terraform validate
-   ```
+1. [Learn how the vertical scaling mechanism works](../../concepts/scale).
 
-1. Familiarize yourself with the planned changes:
+1. Prepare to scale:
 
-   ```bash
-   terraform plan
-   ```
+   1. [Make sure](/en/base/account/instructions/project-settings/manage#viewing_project_quotas) that there are enough quotas for scaling.
+   1. If you plan to reduce the amount of computing resources, then make sure that the total amount of resources in the worker node group will be enough to accommodate the workload.
+   1. Make sure that replication is configured for the workload and replicas are distributed across multiple worker nodes from the node group.
 
-1. Apply the planned changes:
+      If there is only one worker node in the node group, [increase the number of nodes in the group](#horizontal_scaling) and configure replication if possible.
 
-   ```bash
-   terraform apply
-   ```
+1. Perform the scaling.
 
-</tabpanel>
-</tabs>
+   <warn>
 
-### For worker node group
+   During the scaling process, the virtual machines hosting the worker nodes will be restarted sequentially.
 
-<tabs>
-<tablist>
-<tab>Personal account</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+   Workloads for which replication has not been configured will not be available during scaling.
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project where the necessary cluster is located.
-1. Go to **Containers** → **Kubernetes Clusters**.
-1. Locate the necessary cluster and node group.
-1. Expand the menu of the necessary node group and select **Scaling settings**.
-1. In the dialog window:
-   1. Make sure that the **Enable autoscaling** option is disabled.
-   1. Set the necessary number of nodes. It can be changed both upward and downward.
-   Click the **Save changes** button.
+   </warn>
 
-</tabpanel>
-<tabpanel>
+   <tabs>
+   <tablist>
+   <tab>Personal account</tab>
+   <tab>Terraform</tab>
+   </tablist>
+   <tabpanel>
 
-1. Change the necessary [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) resource in the Terraform configuration file:
+   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en/).
+   1. Select the project where the necessary cluster is located.
+   1. Go to **Containers** → **Kubernetes Clusters**.
+   1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
+   1. Locate the necessary cluster and node group.
+   1. Expand the menu of the necessary node group and select **Change type of master virtual machine**.
+   1. Select the desired VM template from the drop-down list.
 
-   ```hcl
-   ...
+      <info>
 
-   # Already described worker node group configuration
-   resource "vkcs_kubernetes_node_group" "k8s-node-group" {
-     name = "k8s-node-group"
+      Templates with high-performance CPUs are available upon request to support. To take advantage of these templates, select the "Show high performance CPUs only" option.
 
-     ...
+      See [Available computing resources](../../concepts/flavors#configuration_templates) for details.
 
-     # Make sure the option responsible for autoscaling is disabled (`false`).
-     autoscaling_enabled = false
+      </info>
 
-     node_count = <necessary node number>
+   1. Click the **Save** button.
 
-     ...
+   </tabpanel>
+   <tabpanel>
 
-   }
-   ...
-   ```
+   1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
-1. Check correctness of the Terraform configuration file:
+   1. Get ready to [work with Terraform](/en/manage/tools-for-using-services/terraform/quick-start), if this has not already been done.
 
-   ```bash
-   terraform validate
-   ```
+   1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
 
-1. Familiarize yourself with the planned changes:
+   1. Define a new type of VM to be used for worker nodes in the cluster node group:
 
-   ```bash
-   terraform plan
-   ```
+      1. Run the command:
 
-1. Apply the planned changes:
+         ```bash
+         openstack flavor list
+         ```
 
-   ```bash
-   terraform apply
-   ```
+         The available virtual machine types will be displayed.
 
-</tabpanel>
-</tabs>
+      1. Select the desired virtual machine type and write its name from the **Name** column.
 
-## Configure automatic scaling (only for worker node groups)
+   1. Change the [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md) data source in the Terraform configuration file:
 
-<warn>
+      ```hcl
+      # An existing data source with a VM type for a group of worker nodes
+      data "vkcs_compute_flavor" "k8s-node-group-flavor" {
+         name = "<the name of the new VM type>"
+      }
 
-Once automatic scaling is enabled, the manual scaling settings are no longer in effect.
+      # The configuration already described for the node group
+      resource "vkcs_kubernetes_node_group" "k8s-node-group" {
+        name = "k8s-node-group"
+        cluster_id = vkcs_kubernetes_cluster.k8s-cluster.id
+        flavor_id = data.vkcs_compute_flavor.k8s-node-group-flavor.id
+        ...
 
-</warn>
+      }
+      ```
 
-<tabs>
-<tablist>
-<tab>Personal account</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+   1. Check correctness of the Terraform configuration file:
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
-1. Select the project where the necessary cluster is located.
-1. Go to **Containers** → **Kubernetes Clusters**.
-1. Locate the necessary cluster and node group.
-1. Expand the menu of the necessary node group and select **Scaling settings**.
-1. In the dialog window:
-   1. Make sure that the **Enable autoscaling** option is enabled.
-   1. Set the necessary number of nodes. It can be changed both upward and downward.
-   1. Click the **Save changes** button.
+      ```bash
+      terraform validate
+      ```
 
-</tabpanel>
-<tabpanel>
+   1. Familiarize yourself with the planned changes:
 
-1. Change the necessary [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) resource in the Terraform configuration file:
+      ```bash
+      terraform plan
+      ```
 
-   ```hcl
-   ...
+   1. Apply the planned changes:
 
-   # Already described worker node group configuration
-   resource "vkcs_kubernetes_node_group" "k8s-node-group" {
-     name = "k8s-node-group"
+      ```bash
+      terraform apply
+      ```
 
-     ...
+   </tabpanel>
+   </tabs>
 
-     # Make sure the option responsible for autoscaling is enabled (`true`).
-     autoscaling_enabled = true
+## Horizontal scaling
 
-     # Set the number of nodes within which scaling will be done.
-     min_nodes = <minimum number of nodes>
-     max_nodes = <maximum number of nodes>
+This type of scaling is applicable for groups of worker nodes. During the scaling process, the number of worker nodes in the group changes, [virtual machine templates](../../concepts/flavors) for worker nodes remain the same. If you need to change these templates for master nodes or worker nodes, [perform vertical scaling](#vertical_scaling).
 
-     ...
+### Scaling groups of worker nodes
 
-   }
-   ...
-   ```
+1. [Learn how the horizontal scaling mechanism works](../../concepts/scale).
 
-1. Check correctness of the Terraform configuration file:
+1. [Make sure](/en/base/account/instructions/project-settings/manage#viewing_project_quotas) that there are enough quotas for scaling.
 
-   ```bash
-   terraform validate
-   ```
+1. Perform the scaling.
 
-1. Familiarize yourself with the planned changes:
+   <tabs>
+   <tablist>
+   <tab>Personal account</tab>
+   <tab>Terraform</tab>
+   </tablist>
+   <tabpanel>
 
-   ```bash
-   terraform plan
-   ```
+   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en/).
+   1. Select the project where the necessary cluster is located.
+   1. Go to **Containers** → **Kubernetes Clusters**.
+   1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
+   1. Find the appropriate node group in this cluster.
+   1. Expand the menu of the necessary node group and select **Scaling settings**.
+   1. In the window that appears:
 
-1. Apply the planned changes:
+      1. Make sure that the **Enable autoscaling** option is disabled.
+      1. Set the required number of nodes. It can be changed both up and down.
+      1. Click the **Save changes** button.
 
-   ```bash
-   terraform apply
-   ```
+   </tabpanel>
+   <tabpanel>
 
-</tabpanel>
-</tabs>
+   1. Get ready to [work with Terraform](/en/manage/tools-for-using-services/terraform/quick-start), if this has not already been done.
+
+   1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
+
+   1. Change the [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) data source in the Terraform configuration file:
+
+      ```hcl
+      ...
+
+      # The configuration already described for the node group
+      resource "vkcs_kubernetes_node_group" "k8s-node-group" {
+        name = "k8s-node-group"
+
+        ...
+
+        # Make sure that the autoscaling option is disabled (false).
+        autoscaling_enabled = false
+
+        node_count = <the required number of nodes>
+
+        ...
+
+      }
+      ...
+      ```
+
+   1. Check correctness of the Terraform configuration file:
+
+      ```bash
+      terraform validate
+      ```
+
+   1. Familiarize yourself with the planned changes:
+
+      ```bash
+      terraform plan
+      ```
+
+   1. Apply the planned changes:
+
+      ```bash
+      terraform apply
+      ```
+
+   </tabpanel>
+   </tabs>
+
+### Configure automatic scaling for worker node groups
+
+1. [Learn how the horizontal scaling mechanism works](../../concepts/scale).
+
+1. [Make sure](/en/base/account/instructions/project-settings/manage#viewing_project_quotas) that there are enough quotas for scaling.
+
+1. Set up automatic scaling:
+
+   <tabs>
+   <tablist>
+   <tab>Personal account</tab>
+   <tab>Terraform</tab>
+   </tablist>
+   <tabpanel>
+
+   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+   1. Select the project where the necessary cluster is located.
+   1. Go to **Containers** → **Kubernetes Clusters**.
+   1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
+   1. Find the appropriate node group in this cluster.
+   1. Expand the menu of the necessary node group and select **Scaling settings**.
+   1. In the dialog window:
+
+      1. Make sure that the **Enable autoscaling** option is enabled.
+      1. Set the necessary number of nodes. It can be changed both upward and downward.
+      1. Click the **Save changes** button.
+
+   </tabpanel>
+   <tabpanel>
+
+   1. Get ready to [work with Terraform](/en/manage/tools-for-using-services/terraform/quick-start), if this has not already been done.
+
+   1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
+
+   1. Change the [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) data source in the Terraform configuration file:
+
+      ```hcl
+      ...
+
+      # The configuration already described for the node group
+      resource "vkcs_kubernetes_node_group" "k8s-node-group" {
+        name = "k8s-node-group"
+
+        ...
+
+        # Make sure that the autoscaling option is enabled (true)
+        autoscaling_enabled = true
+
+        # Set the number of nodes within which the scaling will be performed
+        min_nodes = <minimum number of nodes>
+        max_nodes = <maximum number of nodes>
+
+        ...
+
+      }
+      ...
+      ```
+
+   1. Check correctness of the Terraform configuration file:
+
+      ```bash
+      terraform validate
+      ```
+
+   1. Familiarize yourself with the planned changes:
+
+      ```bash
+      terraform plan
+      ```
+
+   1. Apply the planned changes:
+
+      ```bash
+      terraform apply
+      ```
+
+   </tabpanel>
+   </tabs>

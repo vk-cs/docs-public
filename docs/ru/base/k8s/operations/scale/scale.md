@@ -1,227 +1,371 @@
-<warn>
+Вы можете выполнить [масштабирование кластера Cloud Containers](../../concepts/scale) вручную или настроить автоматическое масштабирование, чтобы адаптировать кластер к меняющимся потребностям рабочих нагрузок ([workloads](https://kubernetes.io/docs/concepts/workloads/)).
 
-- [Масштабирование](../../concepts/architecture/) можно выполнить только когда кластер запущен.
-- Перед выполнением масштабирования из Terraform ознакомьтесь с информацией в разделе [Использование Terraform](../helpers/terraform-howto#osobennosti_ispolzovaniya_terraform_dlya_upravleniya_servisom_cloud_containers).
+## Вертикальное масштабирование
 
-</warn>
+Такой тип масштабирования применим для master-узлов и групп worker-узлов. В процессе масштабирования изменяются [шаблоны виртуальных машин](../../concepts/flavors) для узлов кластера, количество узлов остается прежним. Если необходимо изменить количество worker-узлов в группе, [выполните горизонтальное масштабирование](#gorizontalnoe_masshtabirovanie).
 
-## Выполнить ручное масштабирование
+### Масштабирование master-узлов
 
-### Для master-узлов
+1. [Изучите, как работает механизм вертикального масштабирования](../../concepts/scale).
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+1. [Убедитесь](/ru/base/account/instructions/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
 
-1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет VK Cloud.
-1. Выберите проект, где находится нужный кластер.
-1. Перейдите в раздел **Контейнеры** → **Кластеры Kubernetes**.
-1. Раскройте меню нужного кластера и выберите пункт **Изменить тип виртуальной машины Master**.
-1. Выберите нужный [шаблон виртуальной машины](../../concepts/flavors#shablony_konfiguracii) из выпадающего списка.
+1. Выполните масштабирование.
 
-   <info>
+   <warn>
 
-   Шаблоны с высокопроизводительными CPU доступны по запросу в службу поддержки. Чтобы воспользоваться этими шаблонами, выберите опцию «Показывать только высокопроизводительные CPU».
+   В процессе масштабирования виртуальные машины, на которых размещены master-узлы, будут последовательно перезапущены.
 
-   Подробнее в разделе [Доступные вычислительные ресурсы](../../concepts/flavors#shablony_konfiguracii).
+   Если кластер [содержит один master-узел](../../concepts/architecture#topologii_klastera), то Kubernetes API будет недоступен в ходе масштабирования.
 
-   </info>
+   </warn>
 
-1. Нажмите кнопку **Сохранить**.
+   <tabs>
+   <tablist>
+   <tab>Личный кабинет</tab>
+   <tab>Terraform</tab>
+   </tablist>
+   <tabpanel>
 
-</tabpanel>
-<tabpanel>
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. Выберите проект, где находится нужный кластер.
+   1. Перейдите в раздел **Контейнеры** → **Кластеры Kubernetes**.
+   1. [Убедитесь](../manage-cluster#zapustit_klaster_bbf98834), что нужный кластер запущен.
+   1. Раскройте меню нужного кластера и выберите пункт **Изменить тип виртуальной машины Master**.
+   1. Выберите нужный шаблон виртуальной машины из выпадающего списка.
 
-1. [Установите OpenStack CLI](../../../../../base/account/project/cli/setup/) и [пройдите авторизацию](../../../../../base/account/project/cli/authorization/), если этого еще не сделано.
+      <info>
 
-1. Определите новый тип виртуальной машины, который будет использоваться для master-узлов кластера:
+      Шаблоны с высокопроизводительными CPU доступны по запросу в службу поддержки. Чтобы воспользоваться этими шаблонами, выберите опцию «Показывать только высокопроизводительные CPU».
 
-   1. Выполните команду:
+      Подробнее в разделе [Доступные вычислительные ресурсы](../../concepts/flavors#shablony_konfiguracii).
 
-      ```bash
-      openstack flavor list
+      </info>
+
+   1. Нажмите кнопку **Сохранить**.
+
+   </tabpanel>
+   <tabpanel>
+
+   1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+
+   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+
+   1. [Убедитесь](../manage-cluster#zapustit_klaster_bbf98834), что нужный кластер запущен.
+
+   1. Определите новый тип виртуальной машины, который будет использоваться для master-узлов кластера:
+
+      1. Выполните команду:
+
+         ```bash
+         openstack flavor list
+         ```
+
+         Будут выведены доступные типы виртуальных машин.
+
+      1. Выберите нужный тип виртуальной машины и запишите ее имя из колонки **Name**.
+
+   1. Измените нужный источник данных [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md) в файле конфигурации Terraform:
+
+      ```hcl
+      # Уже существующий источник данных с типом виртуальной машины для кластера
+      data "vkcs_compute_flavor" "k8s-master-flavor" {
+         name = "<имя нового типа виртуальной машины>"
+      }
+
+      # Уже описанная конфигурация для кластера
+      resource "vkcs_kubernetes_cluster" "k8s-cluster" {
+         name                = "k8s-cluster"
+         master_flavor       = data.vkcs_compute_flavor.k8s-master-flavor.id
+        ...
+
+      }
       ```
 
-      Будут выведены доступные типы виртуальных машин.
+   1. Проверьте конфигурационный файл Terraform на корректность:
 
-   1. Выберите нужный тип виртуальной машины и запишите ее имя из колонки **Name**.
+      ```bash
+      terraform validate
+      ```
 
-1. Измените нужный источник данных [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md) в файле конфигурации Terraform :
+   1. Ознакомьтесь с планируемыми изменениями:
 
-   ```hcl
+      ```bash
+      terraform plan
+      ```
 
-   # Уже существующий источник данных с типом виртуальной машины для кластера
-   data "vkcs_compute_flavor" "k8s-master-flavor" {
-      name = "<имя нового типа виртуальной машины>"
-   }
+   1. Примените планируемые изменения:
 
-   # Уже описанная конфигурация для кластера
-   resource "vkcs_kubernetes_cluster" "k8s-cluster" {
-      name                = "k8s-cluster"
-      master_flavor       = data.vkcs_compute_flavor.k8s-master-flavor.id
-     ...
+      ```bash
+      terraform apply
+      ```
 
-   }
-   ```
+   </tabpanel>
+   </tabs>
 
-1. Проверьте конфигурационный файл Terraform на корректность:
+### Масштабирование групп worker-узлов
 
-   ```bash
-   terraform validate
-   ```
+1. [Изучите, как работает механизм вертикального масштабирования](../../concepts/scale).
 
-1. Ознакомьтесь с планируемыми изменениями:
+1. Подготовьтесь к масштабированию:
 
-   ```bash
-   terraform plan
-   ```
+   1. [Убедитесь](/ru/base/account/instructions/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
+   1. Если вы планируете сократить объем вычислительных ресурсов, то убедитесь, что итогового объема ресурсов в группе worker-узлов будет достаточно для размещения рабочей нагрузки.
+   1. Убедитесь, что для рабочей нагрузки настроена репликация и реплики распределены по нескольким worker-узлам из группы узлов.
 
-1. Примените планируемые изменения:
+      Если в группе узлов есть только один worker-узел, [увеличьте количество узлов в группе](#gorizontalnoe_masshtabirovanie) и настройте репликацию, если это возможно.
 
-   ```bash
-   terraform apply
-   ```
+1. Выполните масштабирование.
 
-</tabpanel>
-</tabs>
+   <warn>
 
-### Для групп worker-узлов
+   В процессе масштабирования виртуальные машины, на которых размещены worker-узлы, будут последовательно перезапущены.
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+   Рабочие нагрузки, для которых не была настроена репликация, будут недоступны в ходе масштабирования.
 
-1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет VK Cloud.
-1. Выберите проект, где находится нужный кластер.
-1. Перейдите в раздел **Контейнеры** → **Кластеры Kubernetes**.
-1. Найдите нужный кластер и группу узлов в нем.
-1. Раскройте меню группы узлов и выберите пункт **Настройки масштабирования**.
-1. В появившемся окне:
-   1. Убедитесь, что опция **Включить автомасштабирование** выключена.
-   1. Задайте нужное количество узлов. Его можно изменять как в большую, так и в меньшую сторону.
-   1. Нажмите кнопку **Сохранить изменения**.
+   </warn>
 
-</tabpanel>
-<tabpanel>
+   <tabs>
+   <tablist>
+   <tab>Личный кабинет</tab>
+   <tab>Terraform</tab>
+   </tablist>
+   <tabpanel>
 
-1. Измените нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) в файле конфигурации Terraform :
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. Выберите проект, где находится нужный кластер.
+   1. Перейдите в раздел **Контейнеры** → **Кластеры Kubernetes**.
+   1. [Убедитесь](../manage-cluster#zapustit_klaster_bbf98834), что нужный кластер запущен.
+   1. Найдите нужную группу узлов в этом кластере.
+   1. Раскройте меню этой группы узлов и выберите пункт **Изменить тип виртуальной машины**.
+   1. Выберите нужный шаблон виртуальной машины из выпадающего списка.
 
-   ```hcl
-   ...
+      <info>
 
-   # Уже описанная конфигурация для группы узлов
-   resource "vkcs_kubernetes_node_group" "k8s-node-group" {
-     name = "k8s-node-group"
+      Шаблоны с высокопроизводительными CPU доступны по запросу в службу поддержки. Чтобы воспользоваться этими шаблонами, выберите опцию «Показывать только высокопроизводительные CPU».
 
-     ...
+      Подробнее в разделе [Доступные вычислительные ресурсы](../../concepts/flavors#shablony_konfiguracii).
 
-     # Убедитесь, что опция, отвечающая за автомасштабирование, выключена (`false`).
-     autoscaling_enabled = false
+      </info>
 
-     node_count = <нужное количество узлов>
+   1. Нажмите кнопку **Сохранить**.
 
-     ...
+   </tabpanel>
+   <tabpanel>
 
-   }
-   ...
-   ```
+   1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. Проверьте конфигурационный файл Terraform на корректность:
+   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
-   ```bash
-   terraform validate
-   ```
+   1. [Убедитесь](../manage-cluster#zapustit_klaster_bbf98834), что нужный кластер запущен.
 
-1. Ознакомьтесь с планируемыми изменениями:
+   1. Определите новый тип виртуальной машины, который будет использоваться для worker-узлов в группе узлов кластера:
 
-   ```bash
-   terraform plan
-   ```
+      1. Выполните команду:
 
-1. Примените планируемые изменения:
+         ```bash
+         openstack flavor list
+         ```
 
-   ```bash
-   terraform apply
-   ```
+         Будут выведены доступные типы виртуальных машин.
 
-</tabpanel>
-</tabs>
+      1. Выберите нужный тип виртуальной машины и запишите ее имя из колонки **Name**.
 
-## Настроить автоматическое масштабирование (только для групп worker-узлов)
+   1. Измените нужный источник данных [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md) в файле конфигурации Terraform:
 
-<warn>
+      ```hcl
+      # Уже существующий источник данных с типом виртуальной машины для группы worker-узлов
+      data "vkcs_compute_flavor" "k8s-node-group-flavor" {
+         name = "<имя нового типа виртуальной машины>"
+      }
 
-После включения автоматического масштабирования настройки ручного масштабирования перестанут действовать.
+      # Уже описанная конфигурация для группы узлов
+      resource "vkcs_kubernetes_node_group" "k8s-node-group" {
+        name = "k8s-node-group"
+        cluster_id = vkcs_kubernetes_cluster.k8s-cluster.id
+        flavor_id = data.vkcs_compute_flavor.k8s-node-group-flavor.id
+        ...
 
-</warn>
+      }
+      ```
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-<tab>Terraform</tab>
-</tablist>
-<tabpanel>
+   1. Проверьте конфигурационный файл Terraform на корректность:
 
-1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет VK Cloud.
-1. Выберите проект, где находится нужный кластер.
-1. Перейдите в раздел **Контейнеры** → **Кластеры Kubernetes**.
-1. Найдите нужный кластер и группу узлов в нем.
-1. Раскройте меню группы узлов и выберите пункт **Настройки масштабирования**.
-1. В появившемся окне:
-   1. Убедитесь, что опция **Включить автомасштабирование** включена.
-   1. Задайте минимальное и максимальное количество узлов. В этих пределах будет осуществляться масштабирование.
-   1. Нажмите кнопку **Сохранить изменения**.
+      ```bash
+      terraform validate
+      ```
 
-</tabpanel>
-<tabpanel>
+   1. Ознакомьтесь с планируемыми изменениями:
 
-1. Измените нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) в файле конфигурации Terraform :
+      ```bash
+      terraform plan
+      ```
 
-   ```hcl
-   ...
+   1. Примените планируемые изменения:
 
-   # Уже описанная конфигурация для группы узлов
-   resource "vkcs_kubernetes_node_group" "k8s-node-group" {
-     name = "k8s-node-group"
+      ```bash
+      terraform apply
+      ```
 
-     ...
+   </tabpanel>
+   </tabs>
 
-     # Убедитесь, что опция, отвечающая за автомасштабирование, включена (`true`).
-     autoscaling_enabled = true
+## Горизонтальное масштабирование
 
-     # Задайте количество узлов, в пределах которого будет осуществляться масштабирование.
-     min_nodes = <минимальное количество узлов>
-     max_nodes = <максимальное количество узлов>
+Такой тип масштабирования применим для групп worker-узлов. В процессе масштабирования изменяется количество worker-узлов в группе, [шаблоны виртуальных машин](../../concepts/flavors) для worker-узлов остаются прежними. Если необходимо изменить эти шаблоны для master-узлов или worker-узлов, [выполните вертикальное масштабирование](#vertikalnoe_masshtabirovanie).
 
-     ...
+### Масштабирование групп worker-узлов
 
-   }
-   ...
-   ```
+1. [Изучите, как работает механизм горизонтального масштабирования](../../concepts/scale).
 
-1. Проверьте конфигурационный файл Terraform на корректность:
+1. [Убедитесь](/ru/base/account/instructions/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
 
-   ```bash
-   terraform validate
-   ```
+1. Выполните масштабирование:
 
-1. Ознакомьтесь с планируемыми изменениями:
+   <tabs>
+   <tablist>
+   <tab>Личный кабинет</tab>
+   <tab>Terraform</tab>
+   </tablist>
+   <tabpanel>
 
-   ```bash
-   terraform plan
-   ```
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. Выберите проект, где находится нужный кластер.
+   1. Перейдите в раздел **Контейнеры** → **Кластеры Kubernetes**.
+   1. [Убедитесь](../manage-cluster#zapustit_klaster_bbf98834), что нужный кластер запущен.
+   1. Найдите нужную группу узлов в этом кластере.
+   1. Раскройте меню этой группы узлов и выберите пункт **Настройки масштабирования**.
+   1. В появившемся окне:
 
-1. Примените планируемые изменения:
+      1. Убедитесь, что опция **Включить автомасштабирование** выключена.
+      1. Задайте нужное количество узлов. Его можно изменять как в большую, так и в меньшую сторону.
+      1. Нажмите кнопку **Сохранить изменения**.
 
-   ```bash
-   terraform apply
-   ```
+   </tabpanel>
+   <tabpanel>
 
-</tabpanel>
-</tabs>
+   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+
+   1. [Убедитесь](../manage-cluster#zapustit_klaster_bbf98834), что нужный кластер запущен.
+
+   1. Измените нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) в файле конфигурации Terraform:
+
+      ```hcl
+      ...
+
+      # Уже описанная конфигурация для группы узлов
+      resource "vkcs_kubernetes_node_group" "k8s-node-group" {
+        name = "k8s-node-group"
+
+        ...
+
+        # Убедитесь, что опция, отвечающая за автомасштабирование, выключена (false).
+        autoscaling_enabled = false
+
+        node_count = <нужное количество узлов>
+
+        ...
+
+      }
+      ...
+      ```
+
+   1. Проверьте конфигурационный файл Terraform на корректность:
+
+      ```bash
+      terraform validate
+      ```
+
+   1. Ознакомьтесь с планируемыми изменениями:
+
+      ```bash
+      terraform plan
+      ```
+
+   1. Примените планируемые изменения:
+
+      ```bash
+      terraform apply
+      ```
+
+   </tabpanel>
+   </tabs>
+
+### Настройка автоматического масштабирования групп worker-узлов
+
+1. [Изучите, как работает механизм горизонтального масштабирования](../../concepts/scale).
+
+1. [Убедитесь](/ru/base/account/instructions/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
+
+1. Настройте автоматическое масштабирование:
+
+   <tabs>
+   <tablist>
+   <tab>Личный кабинет</tab>
+   <tab>Terraform</tab>
+   </tablist>
+   <tabpanel>
+
+   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+   1. Выберите проект, где находится нужный кластер.
+   1. Перейдите в раздел **Контейнеры** → **Кластеры Kubernetes**.
+   1. [Убедитесь](../manage-cluster#zapustit_klaster_bbf98834), что нужный кластер запущен.
+   1. Найдите нужную группу узлов в этом кластере.
+   1. Раскройте меню этой группы узлов и выберите пункт **Настройки масштабирования**.
+   1. В появившемся окне:
+
+      1. Убедитесь, что опция **Включить автомасштабирование** включена.
+      1. Задайте минимальное и максимальное количество узлов. В этих пределах будет происходить масштабирование.
+      1. Нажмите кнопку **Сохранить изменения**.
+
+   </tabpanel>
+   <tabpanel>
+
+   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+
+   1. [Убедитесь](../manage-cluster#zapustit_klaster_bbf98834), что нужный кластер запущен.
+
+   1. Измените нужный ресурс [vkcs_kubernetes_node_group](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_node_group.md) в файле конфигурации Terraform:
+
+      ```hcl
+      ...
+
+      # Уже описанная конфигурация для группы узлов
+      resource "vkcs_kubernetes_node_group" "k8s-node-group" {
+        name = "k8s-node-group"
+
+        ...
+
+        # Убедитесь, что опция, отвечающая за автомасштабирование, включена (true)
+        autoscaling_enabled = true
+
+        # Задайте количество узлов, в пределах которого будет выполняться масштабирование
+        min_nodes = <минимальное количество узлов>
+        max_nodes = <максимальное количество узлов>
+
+        ...
+
+      }
+      ...
+      ```
+
+   1. Проверьте конфигурационный файл Terraform на корректность:
+
+      ```bash
+      terraform validate
+      ```
+
+   1. Ознакомьтесь с планируемыми изменениями:
+
+      ```bash
+      terraform plan
+      ```
+
+   1. Примените планируемые изменения:
+
+      ```bash
+      terraform apply
+      ```
+
+   </tabpanel>
+   </tabs>
