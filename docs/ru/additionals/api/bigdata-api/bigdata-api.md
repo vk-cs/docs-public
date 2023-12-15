@@ -1,78 +1,32 @@
-## Создание кластера
+API сервиса [Cloud Big Data](/ru/bigdata/hortonworks) позволяет разворачивать новые и управлять существующими кластерами больших данных и их шаблонами; доступно управление резервным копированием. Кластерам Cloud Big Data соответствует сервис [OpenStack Sahara](https://docs.openstack.org/sahara/latest/).
 
-Все инструкции при работе с API выполняются в консоли.
+<warn>
 
-Для создания кластера Cloud Big Data необходимо выполнить следующее:
+Чтобы подключить сервис и создать кластер, обратитесь в [техническую поддержку](/ru/contacts) или оставьте заявку на [сайте сервиса](https://cloud.vk.com/bigdata/).
 
-```
-curl -s -H "X-Auth-Token: <your_auth_token>" -H "Content-Type: application/json" -d '
-{
-    "plugin_name": "ambari",
-    "hadoop_version": "3.1",
-    "cluster_template_id": "<cluster_template_id>",
-    "name": "<your_cluster_name>",
-    "neutron_management_network": "<your_network_id>",
-}'  -X POST "http://infra.mail.ru:8386/v1.1/<your_project_id>/clusters" -v
-```
+</warn>
 
-В двойных кавычках после POST необходимо указать корректный API Endpoints, который указан в Профиле проекта во вкладке "API Endpoints".
+<details>
+  <summary markdown="span">Получение эндпоинта, авторизация и аутентификация</summary>
 
-Для создания более старой версии в команде необходимо указать "hadoop_version": 2.6 или 2.6.4
+1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
+1. [Включите](/ru/base/account/instructions/account-manage/manage-2fa#vklyuchenie_2fa) двухфакторную аутентификацию, если это еще не сделано.
+1. Включите доступ по API, если это еще не сделано:
 
-```
-"node_group_info": [
-        {
-            "node_group_template_id": "<head_template_id>",
-            "count": 1
-        },
-        {
-            "node_group_template_id": "<worker_template_id>",
-            "count": 2
-        }
-    ]
-}'  -X POST "http://10.200.2.116:8386/v1.1/d4fd9db1893b401c9f4b8063896f18ab/clusters" -v
-```
+   1. Нажмите на имя пользователя в шапке страницы и выберите **Безопасность**.
+   1. Hажмите кнопку **Активировать доступ по API**.
 
-Если необходимо изменить параметры 'flavor_id', 'availability_zone', 'volumes_per_node',  'volumes_size', 'volume_type', 'volume_local_to_instance', 'volumes_availability_zone', 'count'  для node групп при запуске кластера, то их можно переопределить через свойство node_group_info, как описано в примере ниже:
+1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
+1. Перейдите на вкладку **API Endpoints**.
+1. Найдите эндпоинт **Sahara** в блоке **Сервис OpenStack**.
+1. [Получите токен доступа](/ru/additionals/cases/case-keystone-token) `X-Auth-Token`.
 
-```
-curl -s -H "X-Auth-Token: <your_auth_token>" -H "Content-Type: application/json" -d '
-{
-    "plugin_name": "ambari",
-    "hadoop_version": "3.1",
-    "cluster_template_id": "<cluster_template_id>",
-    "name": "<your_cluster_name>",
-    "neutron_management_network": "<your_network_id>",
+</details>
 
+<info>
 
-    "node_group_info": [
-        {
-            "node_group_template_id": "<head_template_id>",
-            "count": 1
-        },
-        {
-            "node_group_template_id": "<worker_template_id>",
-            "count": 3,
-            "volumes_size": 300,
-        }
-    ]
-}'  -X POST "http://infra.mail.ru:8386/v1.1/<your_project_id>/clusters" -v
-```
+Исходную спецификацию в формате JSON вы можете скачать по [ссылке](./assets/saharaapi-swagger.json "download").
 
-В данном примере запущено сразу 3 worker-узла и диск увеличен до 300Гб
+</info>
 
-Кластерам Cloud Big Data соответствует сервис OpenStack Sahara.
-
-Важно помнить, что параметры cluster_template_id, head_template_id и worker_template_id нельзя создать самому - они уже предварительно созданы. Получить указанный список шаблонов кластеров template можно через данный блок:
-
-```
-curl -s -H "X-Auth-Token: <your_auth_token>" -H "Content-Type: application/json"  -X GET "http://infra.mail.ru:8386/v1.1/<your_project_ID>/cluster-templates" -v
-```
-
-## Удаление кластера
-
-Удаление кластера Cloud Big Data необходимо проводить с помощью команды:
-
-```
-curl -s -H "X-Auth-Token: " -H "Content-Type: application/json"  -X DELETE "http://infra.mail.ru:8386/v1.1//clusters" -v
-```
+![{swagger}](./assets/saharaapi-swagger.json)
