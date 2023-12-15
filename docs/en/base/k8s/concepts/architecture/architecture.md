@@ -81,22 +81,6 @@ For clusters below version 1.21 it is recommended to [install Gatekeeper](../../
 
 ## Cluster scaling options
 
-Cloud Containers cluster has built-in scaling capabilities. You can do any type of scaling up to the limits of [quotas in action](../../../account/concepts/quotasandlimits/).
+The Cloud Containers cluster has built-in [scaling capabilities for master nodes and worker nodes](../scale).
 
-The following types of scaling are available:
-
-- Manual scaling:
-
-  - Vertical, which changes the amount of computing power of the cluster master nodes.
-  
-    The number of master nodes does not change.
-
-  - Horizontal, which changes the number of worker nodes in the cluster node group.
-
-    The computational power of the worker nodes does not change.
-
-- Automatic scaling, where the number of worker nodes in the group of nodes changes depending on the load.
-
-  This instantly adds capacity when the workload increases and throttles back when the workload drops. Auto-scaling saves up to 60% in processing power.
-
-  Automatic scaling can be [configured](../../operations/scale) from 1 node up to 100 nodes.
+Automatic scaling is also supported: if it is configured, the number of worker nodes in the cluster is automatically adjusted depending on the needs of the workload.
