@@ -709,7 +709,7 @@
                      number: 80
    ```
 
-   <details>
+   </details>
 
 1. Разверните ресурс [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/):
 
