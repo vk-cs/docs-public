@@ -11,6 +11,24 @@
 
 Данные журнала могут быть полезны как при внутреннем разборе инцидентов, так и при обращении в [техническую поддержку](/ru/contacts/).
 
+## Скачивание журнала действий
+
+<tabs>
+<tablist>
+<tab>Личный кабинет</tab>
+</tablist>
+<tabpanel>
+
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. Нажмите на имя пользователя в шапке страницы.
+1. Из выпадающего списка выберите **Журнал действий**.
+1. Нажмите кнопку **Скачать отчет**.
+
+Сформированный отчет будет загружен с расширением `.xlsx`.
+
+</tabpanel>
+</tabs>
+
 ## Просмотр записей журнала
 
 <tabs>
@@ -20,7 +38,7 @@
 </tablist>
 <tabpanel>
 
-1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Нажмите на имя пользователя в шапке страницы.
 1. Из выпадающего списка выберите **Журнал действий**.
 1. (Опционально) Укажите временной диапазон:
@@ -36,12 +54,14 @@
 
 1. [Включите](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
 1. [Получите](/ru/additionals/cases/case-keystone-token) токен доступа `X-Auth-Token`.
-1. [Узнайте](https://mcs.mail.ru/app/project/endpoints) адрес эндпоинта `Audit`.
+1. [Узнайте](https://msk.cloud.vk.com/app/project/endpoints) адрес эндпоинта `Audit`.
 1. Выполните запрос:
 
    ```bash
-   curl -i -X GET "<Адрес эндпоинта Audit>/logs" -H "X-Auth-Token: <токен>"
+   curl -X GET "<Адрес эндпоинта Audit>/logs" -H "X-Auth-Token: <токен>"
    ```
+
+   Подробнее о формулировании запроса в разделе [Примеры API-запросов при работе с журналом](../actionslogs#primery_api_zaprosov_pri_rabote_s_zhurnalom).
 
    В запросе (header) можно указать дополнительные параметры:
 
@@ -53,88 +73,10 @@
    | `marker` | string  | Токен для запроса следующей страницы, ранее возвращенный API. TTL маркеров — 1 час |
    | `limit`  | integer | Количество возвращаемых записей. Если не указан, возвращает 100 записей |
 
-<details>
-    <summary>Пример ответа</summary>
-
-```json
-{
-    "logs": [{
-            "action": "instance-update",
-            "event_id": "b34bfd59-3f5b-4352-XXXX-28969024ce20",
-            "method": "PATCH",
-            "request_body": "{\"instance\":{\"datastore_version\":\"14\"}}",
-            "request_id": "req-ed386938-6298-XXXX-b5e6-b804d6fe294a",
-            "response_body": "",
-            "source": "trove",
-            "success": "yes",
-            "timestamp": "2023-05-17T08:18:04Z",
-            "uri": "/v1.0/b5b7ffd4ef0547e5b222f44555dfXXXX/instances/2303fd6c-79cc-XXXX-a574-ddcfac9ec104",
-            "user_email": "examle@example.ex",
-            "user_id": "d98c90595998426f9c69746f02a2XXXX"
-        }, {
-            "action": "instance-update",
-            "event_id": "35d855ec-eaf6-4f5c-XXXX-5daf020985c5",
-            "method": "PATCH",
-            "request_body": "{\"instance\":{\"datastore_version\":\"13\"}}",
-            "request_id": "req-958cad92-5cd9-459c-XXXX-66b0d7a92465",
-            "response_body": "",
-            "source": "trove",
-            "success": "yes",
-            "timestamp": "2023-05-17T07:02:40Z",
-            "uri": "/v1.0/b5b7ffd4ef0547e5b222f44555dfXXXX/instances/2303fd6c-79cc-XXXX-a574-ddcfac9ec104",
-            "user_email": "examle@example.ex",
-            "user_id": "d98c90595998426f9c69746f02a2XXXX"
-        }, {
-            "action": "delete-security-group",
-            "event_id": "1c1b2bd5-5ae2-454c-XXXX-2d79ac98b107",
-            "method": "DELETE",
-            "request_body": "<BINARY_DATA>",
-            "request_id": "req-5f7085cf-a509-4792-XXXX-c6b07c4abf99",
-            "response_body": "",
-            "source": "neutron",
-            "success": "yes",
-            "timestamp": "2023-05-17T07:02:12Z",
-            "uri": "/v2.0/security-groups/5042bd04-23e3-XXXX-9ae8-515cb9e57cb3",
-            "user_email": "examle@example.ex",
-            "user_id": "d98c90595998426f9c69746f02a2XXXX"
-        }, {
-            "action": "delete-volume",
-            "event_id": "983c2077-08f2-472d-XXXX-7d7e2f1a991c",
-            "method": "DELETE",
-            "request_body": "<BINARY_DATA>",
-            "request_id": "req-6c0f9e11-0267-40a8-XXXX-cd43443afb79",
-            "response_body": "",
-            "source": "cinder",
-            "success": "yes",
-            "timestamp": "2023-05-17T07:02:06Z",
-            "uri": "/v2/b5b7ffd4ef0547e5b222f44555dfXXXX/volumes/28b6a795-8467-468e-XXXX-60d2f21d96a4",
-            "user_email": "examle@example.ex",
-            "user_id": "d98c90595998426f9c69746f02a2XXXX"
-        }, {
-            "action": "delete-volume",
-            "event_id": "722b6196-77de-4c95-XXXX-357614133727",
-            "method": "DELETE",
-            "request_body": "<BINARY_DATA>",
-            "request_id": "req-2475b277-5977-XXXX-a31e-323a14a1d2a2",
-            "response_body": "",
-            "source": "cinder",
-            "success": "yes",
-            "timestamp": "2023-05-17T07:02:04Z",
-            "uri": "/v2/b5b7ffd4ef0547e5b222f44555dfXXXX/volumes/f9f2f6d3-f141-4489-XXXX-88406bd9a8ab",
-            "user_email": "examle@example.ex",
-            "user_id": "d98c90595998426f9c69746f02a2XXXX"
-        }
-    ],
-    "marker": "eyJ0bSI6MCwib2ZzIjo1LCJwaWQiOiJiNWI3ZmZkNGVmMDU0N2U1YjIyMmY0NDU1NWRmOGY2XXXX"
-}
-```
-
-</details>
-
 </tabpanel>
 </tabs>
 
-Для каждого действия предоставлена информация:
+В каждой записи журнала действий представлена информация:
 
 - `event_id` — идентификатор операции.
 - `user_email` — почта пользователя, совершившего операцию.
@@ -147,20 +89,167 @@
 - `request_body` — тело запроса (если есть).
 - `response_body` — тело ответа (если есть).
 
-## Скачивание журнала действий
+## Примеры API-запросов при работе с журналом
 
-<tabs>
-<tablist>
-<tab>Личный кабинет</tab>
-</tablist>
-<tabpanel>
+Чтобы разбить вывод записей в консоль или файл на строки, в примерах запросов используется [утилита jq](/ru/manage/tools-for-using-services/rest-api/install-jq).
 
-1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет VK Cloud.
-1. Нажмите на имя пользователя в шапке страницы.
-1. Из выпадающего списка выберите **Журнал действий**.
-1. Нажмите кнопку **Скачать отчет**.
+<details>
+    <summary>Получение последних записей</summary>
 
-Сформированный отчет будет загружен с расширением `.xlsx`.
+Чтобы получить последние 2 записи из журнала компонента Magnum, выполните запрос:
 
-</tabpanel>
-</tabs>
+```bash
+curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
+source=magnum&\
+limit=2&\
+from=&\
+to=" \
+-H "X-Auth-Token: gAAAAABlXDFc8RTqKryFlXXX" \
+-H "Content-Type: application/json" | jq
+```
+
+Пример ответа:
+
+```json
+{
+  "logs": [
+    {
+      "action": "unknown",
+      "event_id": "4f6ed6e5-XXXX-dcc2279ba39d",
+      "method": "DELETE",
+      "request_body": "<BINARY_DATA>",
+      "request_id": "req-05134dd5-XXXX-18b29ea5552e",
+      "response_body": "<BINARY_DATA>",
+      "source": "magnum",
+      "success": "yes",
+      "timestamp": "2023-11-20T09:15:11Z",
+      "uri": "/infra/container/v1/nodegroups/XXXX-4eb4e8ec5de9",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+      "user_email": "XXXX@vk.team",
+      "user_id": "d98c90595998426f9c69746f02aXXXX"
+    },
+    {
+      "action": "unknown",
+      "event_id": "00a5def3-XXXX-f0884f24798b",
+      "method": "PATCH",
+      "request_body": "{\"delta\":-1}",
+      "request_id": "req-f697a08b-XXXX-e59c66306dd1",
+      "response_body": "{\"uuid\": \"31a092d7-XXXX\"}",
+      "source": "magnum",
+      "success": "yes",
+      "timestamp": "2023-11-20T09:08:18Z",
+      "uri": "/infra/container/v1/nodegroups/XXXX-4eb4e8ec5de9/actions/scale",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+      "user_email": "XXXX@vk.team",
+      "user_id": "d98c90595998426f9c69746f02aXXXX"
+    }
+  ],
+  "marker": "eyJ0bSI6MCwib2ZzIjo1LCJzcmMiOiJtYWdudW0iLCJXXXX"
+}
+```
+
+</details>
+
+<details>
+    <summary>Получение записей за нужный период</summary>
+
+Чтобы получить последние 2 записи из журнала компонента Nova за заданный период, выполните запрос:
+
+```bash
+curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
+source=nova&\
+limit=2&\
+from=2023-10-15T10:00:00.000Z&\
+to=2023-11-15T16:43:00.477Z" \
+-H "X-Auth-Token: gAAAAABlXEVTelmi_XXXX" \
+-H "Content-Type: application/json" | jq
+```
+
+Пример ответа:
+
+```json
+{
+  "logs": [
+    {
+      "action": "create-vm",
+      "event_id": "a2d05902-XXXX-60bce13de1f7",
+      "method": "POST",
+      "request_body": "{\"server\":{\"name\":\"BY-CentOS_prometheus\",\"key_name\":\"ADH-clusterXXXX\",XXXX}}",
+      "request_id": "req-1d76a3f3-XXXX-b695d066e606",
+      "response_body": "{\"server\": {\"security_groups\": [{\"name\": \"71d90a92-XXXX\"}, {\"name\": \"XXXX-aecb77b43bec\"}], XXXX}}",
+      "source": "nova",
+      "success": "yes",
+      "timestamp": "2023-11-15T12:16:26Z",
+      "uri": "/v2.1/servers",
+      "user_agent": "axios/1.4.0",
+      "user_email": "XXXX@vk.team",
+      "user_id": "5f48556ef89444dbab8fa82669dXXXX"
+    },
+    {
+      "action": "vm-action",
+      "event_id": "fc98d3d7-XXXX-c2c5fd8fe619",
+      "method": "POST",
+      "request_body": "{\"addFloatingIp\":{\"address\":\"XXXX\"}}",
+      "request_id": "req-f358678d-XXXX-311861a4ff77",
+      "response_body": "",
+      "source": "nova",
+      "success": "yes",
+      "timestamp": "2023-11-15T09:43:41Z",
+      "uri": "/v2.1/servers/c6be363f-f56c-XXXX/action",
+      "user_agent": "HashiCorp Terraform/1.4.0-dev XXXX gophercloud/2.0.0",
+      "user_id": "649a35d97fc64452b019a0809dXXXX"
+    }
+  ],
+  "marker": "eyJ0bSI6MTY5NzM2NDAwMCwib2ZzIjo1LCJXXXX"
+} 
+```
+
+</details>
+
+<details>
+    <summary>Использование параметра marker</summary>
+
+С помощью параметра `marker` большой по объему запрос записей журнала можно разбить на несколько частичных запросов. Записи в журнале расположены в обратном порядке по времени: самые последние — в начале журнала. Поэтому первый частичный запрос вернет пачку самых свежих записей, следующий — пачку более ранних записей и т.д.
+
+Чтобы вывести все записи журнала компонента Nova за заданный период в файлы порциями по 10 записей в файле:
+
+1. Запросите вывод в файл `nova_part1.log` 10 последних записей журнала за нужный период:
+
+   ```bash
+   curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
+   source=nova&\
+   limit=10&\
+   from=2023-10-15T10:00:00.000Z&\
+   to=2023-11-15T16:43:00.477Z" \
+   -H "X-Auth-Token: gAAAAABlXDFc8RTqKryFlXXXX" \
+   -H "Content-Type: application/json" | jq > nova_part1.log
+   ```
+
+2. Получите значение параметра `marker` из файла `nova_part1.log`:
+
+   ```bash
+   cat nova_part1.log | grep marker
+   ```
+
+   Пример ответа:
+
+   ```json
+   "marker": "eyJ0bSI6MTY5NzM2NDAwMCwib2ZzIjoxMCwidG8iOjE3MDAwNjY1ODAsXXXX"
+   ```
+
+3. Запросите вывод в файл `nova_part2.log` 10 более ранних по времени записей журнала, используя значение параметра `marker`:
+
+   ```bash
+   curl -X GET "https://mcs.mail.ru/auditlogs/v1/b5b7ffd4efXXXX/logs?\
+   source=nova&\
+   marker=eyJ0bSI6MTY5NzM2NDAwMCwib2ZzIjoxMCwidG8iOjE3MDAwNjY1ODAsXXXX&\
+   limit=10&\
+   from=2023-10-15T10:00:00.000Z&\
+   to=2023-11-15T16:43:00.477Z" \
+   -H "X-Auth-Token: gAAAAABlXDFc8RTqKryFlXXXX" \
+   -H "Content-Type: application/json" | jq > nova_part2.log
+   ```
+
+4. Повторяйте предыдущий запрос, меняя в нем только имя файла (например: `nova_part3.log`, `nova_part4.log`, …), пока не получите все записи журнала за нужный период.
+
+</details>
