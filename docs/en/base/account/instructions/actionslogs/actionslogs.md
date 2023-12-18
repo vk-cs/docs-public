@@ -61,6 +61,8 @@ To open detailed information about an individual record, click on the icon ![Inf
    curl -X GET "<Audit endpoint>/logs" -H "X-Auth-Token: <token>"
    ```
 
+   More information about formulating a request in the section [Examples of API requests to the action log](../actionslogs#examples_of_api_requests_to_the_action_log).
+
    Additional parameters can be specified in the request (header):
 
    | Parameter | Format | Description |
