@@ -353,12 +353,7 @@ On the host:
 
 1. Enter the user's password for the VK Cloud account.
 
-   To avoid entering the password every time, uncomment the following lines in the configuration file, specifying the password in the `value` parameter:
-
-   ```ini
-   - name: "OS_PASSWORD"
-     value: "put your password here"
-   ```
+   This is necessary for [authentication](../../concepts/access-management) when connecting to the cluster.
 
 </tabpanel>
 <tabpanel>
