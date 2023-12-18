@@ -2,13 +2,13 @@ Cloud Containers clusters version 1.23 and higher are tightly integrated with th
 
 - Single Sign-On (SSO) technology is used.
 
-  The user logs in to the Cloud Containers cluster with the same credentials as when logging in to the VK Cloud [personal account](../../../../additionals/account).
+  The user [authenticates](#how_does_the_authentication_process_work) in the Kubernetes cluster with the same credentials as when logging into the VK Cloud [personal account](/en/base/account).
 
   SSO functionality cannot be disabled.
 
 - The user's roles in the personal account affect:
 
-  - [Available operations with clusters in the personal account](../../../../additionals/account/concepts/rolesandpermissions#roles_for_the_containers_service_and_their_permissions).
+  - [Available operations with clusters in the personal account](/en/base/account/concepts/rolesandpermissions#roles_for_the_containers_service_and_their_permissions).
   - [Available actions in the cluster](#relationship_between_the_roles_of_personal_account_and_kubernetes).
 
     A user with a specific personal account role is assigned an appropriate [Kubernetes role](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles). The Kubernetes role defines which cluster objects are available to the user and what actions are allowed to be performed on these objects.
@@ -22,6 +22,20 @@ Cloud Containers clusters version 1.23 and higher are tightly integrated with th
 To get the same capabilities for older clusters, [upgrade](../../operations/update) to version 1.23 or higher.
 
 </info>
+
+## How does the authentication process work
+
+When using [kubectl](../../connect/kubectl), the `keystone-auth` utility is responsible for authentication.
+
+The cluster configuration file is used for the operation of kubectl ([kubeconfig](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/)). This file contains all the user's details, except for the password (it is not specified for security reasons). Therefore, when using kubectl, the keystone-auth utility will require you to enter the user's password interactively in order to authenticate:
+
+```text
+Please enter password:
+```
+
+After successful authentication, a token with a short lifetime is issued, which gives temporary access to the cluster. When the token expires, `keystone-auth` will require you to enter the password again in order to update the token. This will happen both when working with kubectl and with other tools that work with such tokens — for example, `kauthproxy` uses them for authentication in the [web interfaces of cluster components and addons](../../connect).
+
+This authentication process is inconvenient when working with automated tools that need access to the cluster. To provide access to the cluster for such tools, [create a kubeconfig file for the service account](../../use-cases/sa-kubeconfig). This kubeconfig contains the details of the service account and the corresponding token with an infinite lifetime, which allows you to authenticate without entering a password.
 
 ## Relationship between the roles of personal account and Kubernetes
 
