@@ -709,7 +709,7 @@ For Ingress controller to route requests to the corresponding Service resources,
                      number: 80
    ```
 
-   <details>
+   </details>
 
 1. Deploy the [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/) resource:
 
