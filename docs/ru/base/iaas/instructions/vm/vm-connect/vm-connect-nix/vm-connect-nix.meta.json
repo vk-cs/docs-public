@@ -1,11 +1,10 @@
 {
     "title": "Подключение к ВМ Linux",
-    "sectionTitle": "Подключение к ВМ Linux",
+    "sectionTitle": "Подключение к ВМ Linux по SSH в VK Cloud.",
     "metaTitle": "Подключение к ВМ Linux",
     "pageDescription": "Подключение к ВМ Linux",
-    "shortDescription": "",
+    "shortDescription": "Как подключиться к виртуальной машине по SSH",
     "metaDescription": "Подключение к ВМ Linux",
-    "markdown": "Подключение к ВМ Linux",
     "icon": "",
     "infobarItems": null,
     "weight": 0,

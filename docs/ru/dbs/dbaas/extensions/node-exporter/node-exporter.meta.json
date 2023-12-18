@@ -1,7 +1,7 @@
 {
     "title": "Node Exporter",
     "pageDescription": "",
-    "shortDescription": "",
+    "shortDescription": "Расширения для инстансов БД на базе Prometheus",
     "metaTitle": "Node Exporter",
     "metaDescription": "Описание Расширения увеличивают функциональность баз данных и могут быть установлены в любое время.\nPrometheus - центральный сервер, предназначенный для сб",
     "sectionTitle": "Node Exporter",

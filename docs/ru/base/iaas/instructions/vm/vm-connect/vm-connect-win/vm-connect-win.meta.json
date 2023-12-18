@@ -1,11 +1,10 @@
 {
     "title": "Подключение к ВМ Windows",
-    "sectionTitle": "Подключение к ВМ Windows",
+    "sectionTitle": "Подключение к ВМ Windows по RDP в VK Cloud.",
     "metaTitle": "Подключение к ВМ Windows",
     "pageDescription": "Подключение к ВМ Windows",
-    "shortDescription": "",
+    "shortDescription": "Как подключиться к виртуальной машине по RDP",
     "metaDescription": "Подключение к ВМ Windows",
-    "markdown": "Подключение к ВМ Windows",
     "icon": "",
     "infobarItems": null,
     "weight": 1,
