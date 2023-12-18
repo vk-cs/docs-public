@@ -1,16 +1,16 @@
 {
     "title": "Cloud Big Data",
-    "pageDescription": "",
+    "pageDescription": "Работа с кластерами больших данных с помощью API. Сервис Cloud Big Data поддерживает работу с кластерами через REST API.",
     "shortDescription": "Управление кластерами с помощью API сервиса Cloud Big Data",
     "metaTitle": "Cloud Big Data",
-    "metaDescription": "Создание кластера Все инструкции при работе с API выполняются в консоли. Для создания кластера Cloud Big Data необходимо выполнить следующее: curl -s -H",
+    "metaDescription": "VK Cloud: управление кластерами с помощью API сервиса Cloud Big Data",
     "sectionTitle": "Cloud Big Data",
     "isBeta": true,
     "hidden": true,
     "icon": "",
     "infobarItems": null,
-    "weight": 3,
+    "weight": 4,
     "uuid": "976e246d-959d-4f56-99ee-6604e10c294a",
     "createdAt": "2023-02-02T15:05:34.000Z",
-    "updatedAt": "2023-12-01T08:46:34.000Z"
+    "updatedAt": "2023-12-15T15:51:57.000Z"
 }

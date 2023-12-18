@@ -430,6 +430,9 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
       Wait for the operation to complete. Creating a cluster can take a long time.
 
+</tabpanel>
+</tabs>
+
 ## Other types of DBMS
 
 <tabs>
