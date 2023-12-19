@@ -6,7 +6,7 @@ Containers are similar to virtual machines, but more lightweight. To isolate con
 
 Make sure that:
 
-- You have an access to the terminal of the Ubuntu 18.04 host, on which you are planning to install Docker CE.
+- You have an access to the terminal of the Ubuntu host, on which you are planning to install Docker CE.
 - You can use `sudo` on that host to run the commands on behalf of superuser (`root`).
 
 ## 1. Install Docker CE
@@ -59,7 +59,7 @@ Make sure that:
 1. Add the Docker repository:
 
    ```bash
-   sudo add-apt-repository -u "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+   sudo add-apt-repository -u "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
    ```
 
 1. Make sure that the repository was successfully added:
