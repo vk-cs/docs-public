@@ -6,7 +6,7 @@
 
 Убедитесь, что:
 
-- У вас есть доступ к терминалу хоста с Ubuntu 18.04, на который планируется установить Docker CE.
+- У вас есть доступ к терминалу хоста с Ubuntu, на который планируется установить Docker CE.
 - Вы можете использовать `sudo` на этом хосте, чтобы выполнять команды от имени суперпользователя (`root`).
 
 ## 1. Установите Docker CE
@@ -59,7 +59,7 @@
 1. Подключите репозиторий Docker:
 
    ```bash
-   sudo add-apt-repository -u "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+   sudo add-apt-repository -u "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
    ```
 
 1. Убедитесь, что репозиторий был подключен успешно:
