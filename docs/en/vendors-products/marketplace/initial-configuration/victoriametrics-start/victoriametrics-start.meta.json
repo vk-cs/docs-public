@@ -1,0 +1,11 @@
+{
+    "title": "VictoriaMetrics deployment",
+    "pageDescription": "Deployment of the VictoriaMetrics service in the VK Cloud project in a single or cluster configuration.",
+    "shortDescription": "Deployment of the VictoriaMetrics service in the project using the example of version 1.93.8 for data monitoring tasks",
+    "metaTitle": "VictoriaMetrics deployment",
+    "metaDescription": "VictoriaMetrics VK Cloud: deployment of the service in the project",
+    "sectionTitle": "VictoriaMetrics deployment",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 7
+}
