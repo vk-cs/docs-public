@@ -7,5 +7,8 @@
     "sectionTitle": "VictoriaMetrics deployment",
     "icon": "",
     "infobarItems": null,
-    "weight": 7
+    "weight": 7,
+    "uuid": "540d3b48-8433-4b50-a91e-6e6306560fb5",
+    "createdAt": "2023-12-19T10:32:44.000Z",
+    "updatedAt": "2023-12-19T10:32:44.000Z"
 }
