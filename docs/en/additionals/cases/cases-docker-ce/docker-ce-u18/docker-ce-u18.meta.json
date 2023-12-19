@@ -10,7 +10,9 @@
     "infobarItems": null,
     "weight": 1,
     "uuid": "f919d208-35dd-4d62-b32b-e0b76ec76dde",
-    "additionalUuids": ["cbb216a0-af08-411b-9179-e0a948eafd18"],
+    "additionalUuids": [
+        "cbb216a0-af08-411b-9179-e0a948eafd18"
+    ],
     "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2023-12-06T08:03:57.000Z"
+    "updatedAt": "2023-12-19T07:06:50.000Z"
 }
