@@ -37,7 +37,7 @@ Payment of licenses does not require additional actions and will be debited auto
 
 ## Remote Desktop Services
 
-By default, after installing Windows Server OS, only two simultaneous connections to the VM are available (console and/or RPD).
+By default, after installing Windows Server OS, only two simultaneous connections to the VM are available (console and/or RDP).
 
 These 2 connections can only be used to configure and administer the server. To allow more connections (administrative or connections to multiple users):
 
