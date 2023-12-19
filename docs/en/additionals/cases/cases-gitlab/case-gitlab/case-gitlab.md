@@ -7,7 +7,7 @@ After that you can:
 
 ## Gitlab installation
 
-Before installing Gitlab, [install and configure Docker](/en/additionals/cases/cases-gitlab/case-docker).
+Before installing Gitlab, [install and configure Docker](/en/additionals/cases/cases-docker-ce/docker-ce-u18).
 
 To install Gitlab:
 
