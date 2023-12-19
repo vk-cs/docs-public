@@ -7,7 +7,7 @@
 
 ## Установка Gitlab
 
-Перед установкой Gitlab [установите и настройте Docker](/ru/additionals/cases/cases-gitlab/case-docker).
+Перед установкой Gitlab [установите и настройте Docker](/ru/additionals/cases/cases-docker-ce/docker-ce-u18).
 
 Чтобы установить Gitlab:
 
