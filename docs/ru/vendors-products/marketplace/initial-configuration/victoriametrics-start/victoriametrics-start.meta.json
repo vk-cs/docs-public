@@ -1,0 +1,11 @@
+{
+    "title": "Развертывание VictoriaMetrics",
+    "pageDescription": "Развертывание сервиса VictoriaMetrics в проекте VK Cloud в single или кластерной конфигурации.",
+    "shortDescription": "Развертывание сервиса VictoriaMetrics в проекте на примере версии 1.93.8 для задач мониторинга данных",
+    "metaTitle": "Развертывание VictoriaMetrics",
+    "metaDescription": "VictoriaMetrics VK Cloud: развертывание сервиса в проекте",
+    "sectionTitle": "Развертывание VictoriaMetrics",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 7
+}
