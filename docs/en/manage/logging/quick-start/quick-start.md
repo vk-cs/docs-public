@@ -28,7 +28,7 @@
 
 1. Generate credentials to connect to the service:
 
-   1. [Go](https://mcs.mail.ru/app/en) to VK Cloud personal account.
+   1. [Go](https://msk.cloud.vk.com/app/en) to VK Cloud personal account.
    1. Go to **Monitoring** → **Logging**.
    1. Click to the **Settings** button.
    1. Go to the **User credential generation** tab.

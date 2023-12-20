@@ -13,7 +13,7 @@ Before performing any operation on a cluster from Terraform, read the informatio
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Expand the menu of the necessary cluster and select **Add node group**.
@@ -107,7 +107,7 @@ Labels and taints can be set both with the interfaces supported by the VK Cloud 
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.
@@ -212,7 +212,7 @@ To increase update speed, the container service updates multiple nodes in a grou
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.
@@ -277,7 +277,7 @@ The single cluster node group cannot be deleted from the personal account. Howev
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.

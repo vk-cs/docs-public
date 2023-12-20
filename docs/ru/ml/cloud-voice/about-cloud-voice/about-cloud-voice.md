@@ -2,7 +2,7 @@ Cloud Voice — сервис, который позволяет распозна
 
 ![](./assets/1633092587841-voice.png)
 
-Для начала использования сервиса перейдите на страницу [Cloud Voice](https://mcs.mail.ru/app/services/machinelearning/voice/methods/). Для этого вы должны быть авторизованы.
+Для начала использования сервиса перейдите на страницу [Cloud Voice](https://msk.cloud.vk.com/app/services/machinelearning/voice/methods/). Для этого вы должны быть авторизованы.
 
 Чтобы воспользоваться сервисом, необходимо получить токен доступа. О том как получить токен доступа, читайте в [статье](../get-voice-token).
 

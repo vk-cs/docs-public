@@ -2,7 +2,7 @@ This section will help you get to know Cloud Queues better and show you how to m
 
 ## Creating a queue
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Message queues** → **Queues**.
 1. Click the **Submit your request**.
 1. On the page that appears, fill out an application to create a new queue `qs-queue`.

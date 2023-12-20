@@ -6,7 +6,7 @@ To follow the examples given:
 
 1. Make sure that [two-factor authentication](/en/base/account/instructions/account-manage/manage-2fa) and [API access](/en/manage/tools-for-using-services/rest-api/enable-api) are enabled.
 1. [Get an access token](/ru/additionals/cases/case-keystone-token) `X-Subject-Token`.
-1. [Find out](https://mcs.mail.ru/app/en/project/endpoints) the endpoint for the Karboii service.
+1. [Find out](https://msk.cloud.vk.com/app/en/project/endpoints) the endpoint for the Karboii service.
 
 </info>
 

@@ -1,6 +1,6 @@
 # Синтаксис Extended Markdown
 
-Итоговое отображение элементов есть в статье [О портале документации](https://mcs.mail.ru/docs/ru/additionals/start/about-help).
+Итоговое отображение элементов есть в статье [О портале документации](https://cloud.vk.com/docs/additionals/start/about-help).
 
 ### Заголовки
 
@@ -314,7 +314,7 @@ console.log('Hello World');
 
 ![Альтернативный текст](./assets/swagger_spec.png)
 
-Больше примеров можно найти в разделе с [описанием API](https://mcs.mail.ru/docs/ru/additionals/api).
+Больше примеров можно найти в разделе с [описанием API](https://cloud.vk.com/docs/additionals/api).
 
 ### Символы, которые требуется экранировать
 

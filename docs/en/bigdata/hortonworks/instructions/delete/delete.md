@@ -5,7 +5,7 @@
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Go to **Big Data** → **Clusters**.
 1. Expand the menu of the desired cluster and select the **Delete** option.
 1. Confirm the operation.

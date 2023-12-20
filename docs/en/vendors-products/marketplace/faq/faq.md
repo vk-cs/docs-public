@@ -4,7 +4,7 @@ Marketplace is a VK Cloud subsystem that provides customers with access to third
 
 ## What services and applications are available for connection?
 
-You can view the current list of services and applications in the VK Cloud personal account in the section [App Store](https://mcs.mail.ru/app/services/marketplace).
+You can view the current list of services and applications in the VK Cloud personal account in the section [App Store](https://msk.cloud.vk.com/app/services/marketplace).
 
 ## What is the difference between SaaS and image-based services?
 
@@ -30,4 +30,4 @@ If no payment was made with the postpaid method, the service will be deleted, fo
 
 ## How do I add a new service to the Marketplace?
 
-Write to `marketplace@mcs.mail.ru` with information about the service you are going to add to the Marketplace.
+Write to `marketplace@cloud.vk.com` with information about the service you are going to add to the Marketplace.

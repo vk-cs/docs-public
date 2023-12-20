@@ -68,7 +68,7 @@ If you plan to work with tokens using the Cloud ML Platform library, follow the 
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Select the project where the tokens are located.
 1. Go to **ML Platform → Tokens**.
 
@@ -86,7 +86,7 @@ A list of access tokens will be displayed.
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Select the project in which you want to create a token.
 1. Go to **ML Platform → Tokens**.
 1. Click the **Create access token**.
@@ -213,7 +213,7 @@ The values of these tokens are sensitive information. Take the necessary precaut
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Select the project where the desired token is located.
 1. Go to **ML Platform → Tokens**.
 1. Expand the menu of the desired token and select **Delete**.

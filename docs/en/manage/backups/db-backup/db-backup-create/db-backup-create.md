@@ -1,4 +1,4 @@
-When creating a database, a backup plan is created in the VK Cloud panel, which can be managed in the [Backup](https://mcs.mail.ru/app/services/databases/backups/) section control panels.
+When creating a database, a backup plan is created in the VK Cloud panel, which can be managed in the [Backup](https://msk.cloud.vk.com/app/services/databases/backups/) section control panels.
 
 The current status of the plan can be seen by hovering over the colored status indicator.
 
@@ -11,7 +11,7 @@ The current status of the plan can be seen by hovering over the colored status i
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Databases** → **Backup**.
 1. On the **Automatic** tab, expand the menu of the desired backup and select the **Edit** option.
 1. On the page that opens, set the necessary settings:
@@ -47,7 +47,7 @@ If the parameter **Maximum number of full backups** is changed, is deleted after
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Databases** → **Backup**.
 1. On the **Automatic** tab, expand the menu of the desired backup and select the **Stop Backup** option.
 1. In the window that appears, confirm the operation.
@@ -75,7 +75,7 @@ Changing the backup schedule activates the plan.
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Databases** → **Backup**.
 1. Select a backup from the general list.
 1. Expand the menu of the desired backup and select the **Stop** option.
@@ -101,7 +101,7 @@ When you delete a backup plan, all restore points will be deleted.
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Databases** → **Backup**.
 1. On the **Automatic** tab, expand the menu of the desired backup and select the **Delete** option.
 1. In the window that appears, confirm the operation.
