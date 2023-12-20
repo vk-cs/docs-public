@@ -22,7 +22,7 @@
 </tablist>
 <tabpanel>
 
-1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **Объектное хранилище** → **Бакеты**.
 1. Нажмите на имя нужного бакета или создайте [новый](../../buckets/create-bucket).
 1. Нажмите кнопку **Добавить файл**.
@@ -96,7 +96,7 @@
 
 1. Создайте [бакет](../../buckets/create-bucket), если он еще не создан.
 
-1. [Узнайте](https://mcs.mail.ru/app/project/endpoints) эндпоинт для сервиса Cloud Storage.
+1. [Узнайте](https://msk.cloud.vk.com/app/project/endpoints) эндпоинт для сервиса Cloud Storage.
 
 1. [Сформируйте подпись](../../../../../additionals/api/s3-rest-api/intro) запроса для аутентификации в API.
 

@@ -7,7 +7,7 @@ After enabling 2FA, each time you log in to your personal account, you will need
 1. Install one of the applications for generating one-time codes:
    - [Google Authenticator](https://support.google.com/accounts/answer/1066447),
    - [Duo](https://duo.com/product/trusted-users/two-factor-authentication/duo-mobile).
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the username in the header of the page and go to the 2FA activation page in one of the ways:
 
    <tabs>
@@ -45,7 +45,7 @@ Two-factor authentication will be enabled for your account. A list of backup cod
 
 ## Disabling 2FA
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the username in the header of the page and select **Account settings**.
 1. On the **Security** click the **Disable security**.
 1. Enter the password from your account and the code from the authentication application.

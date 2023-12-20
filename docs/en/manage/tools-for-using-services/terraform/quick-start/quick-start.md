@@ -1,7 +1,7 @@
 ## Preparatory steps
 
 1. Install Terraform from the official VK Cloud [mirror](https://hashicorp-releases.mcs.mail.ru/terraform).
-1. Open your VK CLoud [personal account](https://mcs.mail.ru/app/).
+1. Open your VK CLoud [personal account](https://msk.cloud.vk.com/app/).
 
 1. Enable [two-factor authentication](/en/base/account/instructions/account-manage/security#enabling_2fa) and [API access](/en/manage/tools-for-using-services/rest-api/enable-api#activate_api_access), if not enabled yet.
 

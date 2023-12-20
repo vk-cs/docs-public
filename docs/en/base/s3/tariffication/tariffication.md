@@ -1,6 +1,6 @@
 ## About tariffication
 
-The cost of Cloud storage service is given in [price list](https://mcs.mail.ru/pricelist). You can use [calculator](https://mcs.mail.ru/en/pricing) to calculate the total cost of the service usage.
+The cost of Cloud storage service is given in [price list](https://cloud.vk.com/pricelist). You can use [calculator](https://cloud.vk.com/en/pricing) to calculate the total cost of the service usage.
 
 Tariffication is based on the "pay as you go" principle: you pay only for the resources you have consumed up to second.
 

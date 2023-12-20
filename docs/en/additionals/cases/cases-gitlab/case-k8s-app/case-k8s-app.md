@@ -156,7 +156,7 @@ The console logs show that both build and release completed successfully. The as
 
 ## Deploying an application to a Kubernetes cluster
 
-After successfully building the project, we will set up auto-deployment of the application to the Kubernetes cluster. For example, we use [Kubernetes cluster from VK Cloud](https://mcs.mail.ru/containers/).
+After successfully building the project, we will set up auto-deployment of the application to the Kubernetes cluster. For example, we use [Kubernetes cluster from VK Cloud](https://cloud.vk.com/containers/).
 
 After the cluster is deployed in the cloud, a configuration file of the form `kubernetes-cluster-5011_kubeconfig.yaml` is loaded on the local computer, intended for authorization in the cluster for utilities like kubectl.
 

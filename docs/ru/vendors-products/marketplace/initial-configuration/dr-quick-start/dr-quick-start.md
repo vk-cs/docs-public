@@ -1,4 +1,4 @@
-Вы можете настроить восстановление данных и IT-инфраструктуры в случае непредвиденных обстоятельств с помощью сервиса [Hystax Acura Disaster Recovery](https://mcs.mail.ru/app/services/marketplace/v2/apps/service/440568b5-e418-431f-9d43-e54eb20ee05a/latest/info/) без приостановки работы приложений. Использование сервиса позволяет оптимизировать показатели:
+Вы можете настроить восстановление данных и IT-инфраструктуры в случае непредвиденных обстоятельств с помощью сервиса [Hystax Acura Disaster Recovery](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/440568b5-e418-431f-9d43-e54eb20ee05a/latest/info/) без приостановки работы приложений. Использование сервиса позволяет оптимизировать показатели:
 
 - Конечная точка восстановления (RPO) — время между созданием последней резервной копии и моментом возникновения аварии. Может настраиваться индивидуально для каждого ресурса.
 - Конечное время восстановления (RTO) — время между реакцией на аварию и восстановлением инфраструктуры. Сервис позволяет свести этот показатель к минимуму.
@@ -221,12 +221,12 @@
 1. На шаге «Select target environment» выберите опцию **New OpenStack** и укажите параметры:
 
    - **Cloud name**: `VK Cloud`.
-   - **Keystone API endpoint**: значение Keystone из [списка эндпоинтов](https://mcs.mail.ru/app/mcs3723876490/project/endpoints), для VK Cloud — `https://infra.mail.ru:35357/v3/`.
-   - **User domain**: значение **User Domain Name** [настроек проекта](https://mcs.mail.ru/app/project/keys).
+   - **Keystone API endpoint**: значение Keystone из [списка эндпоинтов](https://msk.cloud.vk.com/app/mcs3723876490/project/endpoints), для VK Cloud — `https://infra.mail.ru:35357/v3/`.
+   - **User domain**: значение **User Domain Name** [настроек проекта](https://msk.cloud.vk.com/app/project/keys).
    - **Username**: имя пользователя с [доступом по API](/ru/manage/tools-for-using-services/rest-api/enable-api) и ролью не ниже Администратора проекта.
    - **Password**: пароль пользователя.
-   - **Target project domain**: значение **Project Domain ID** [настроек проекта](https://mcs.mail.ru/app/project/keys).
-   - **Target project ID**: значение **Project ID** [настроек проекта](https://mcs.mail.ru/app/project/keys)
+   - **Target project domain**: значение **Project Domain ID** [настроек проекта](https://msk.cloud.vk.com/app/project/keys).
+   - **Target project ID**: значение **Project ID** [настроек проекта](https://msk.cloud.vk.com/app/project/keys)
    - **Hystax Service Network**: UUID сети, в которую будет разворачиваться ВМ.
    - **Floating IP Network**: внешняя сеть `ext-net`.
 

@@ -1,6 +1,6 @@
 ## Configuring the network for the service infrastructure
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud desktops** → **Service settings**.
 1. In the **Network settings** tab, set the parameters:
 
@@ -29,7 +29,7 @@ Cloud Desktop cannot work without the AD/LDAP user directory service. If your ne
 
 To set up a connection to the user directory:
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud desktops** → **Service settings**.
 1. In the **Directory settings** tab, set the parameters:
 
@@ -54,7 +54,7 @@ All existing pools will switch to the new connection settings automatically.
 
 The operation is available after the network is [configured](#configuring_the_network_for_the_service_infrastructure) and the pool is [created](../desktops-pool/add/).
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud desktops** → **Service settings**.
 1. Click the **Sync with VPN**.
 
@@ -72,7 +72,7 @@ A virtual machine will be deployed for verification, its name begins with `vdi-c
 
 To check the correctness of the network settings for the service:
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud desktops** → **Service settings**.
 1. On the **Network settings** tab activate the **Network settings check** option.
 1. Click the **Check connection**.
@@ -92,7 +92,7 @@ A virtual machine will be deployed for verification, its name begins with `vdi-c
 
 To check the correctness of the catalog settings for the service:
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud desktops** → **Service settings**.
 1. On the **Directory settings** tab activate the **Directory settings check** option.
 1. Click the **Check connection**.

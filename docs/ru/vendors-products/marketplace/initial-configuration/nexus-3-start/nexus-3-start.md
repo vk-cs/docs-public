@@ -1,4 +1,4 @@
-Вы можете разворачивать репозитории библиотек и артефактов, применяемые в модульной разработке, с помощью сервиса [Nexus 3](https://mcs.mail.ru/app/services/marketplace/v2/apps/service/73f3ac8a-5c6e-4ced-a2e3-6ed6caed0fb0/latest/info/). Эта инструкция поможет развернуть сервис Nexus 3 на ВМ в VK Cloud, зайти в консоль сервиса и создать нового пользователя.
+Вы можете разворачивать репозитории библиотек и артефактов, применяемые в модульной разработке, с помощью сервиса [Nexus 3](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/73f3ac8a-5c6e-4ced-a2e3-6ed6caed0fb0/latest/info/). Эта инструкция поможет развернуть сервис Nexus 3 на ВМ в VK Cloud, зайти в консоль сервиса и создать нового пользователя.
 
 Используя сервис Nexus 3, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/additionals/start/legal/marketplace) и [Sonatype](https://sonatype.ru/prices).
 

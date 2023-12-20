@@ -13,7 +13,7 @@ ACL (Access Control List) позволяет контролировать, ка�
 <AccessControlPolicy>
   <Owner>
     <ID>eab55955-ebdb-4f18-a94d-f3558ff150da</ID>
-    <DisplayName>test.help@mcs.mail.ru</DisplayName>
+    <DisplayName>example@example.com</DisplayName>
   </Owner>
   <AccessControlList>
     <Grant>

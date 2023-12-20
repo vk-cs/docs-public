@@ -9,7 +9,7 @@ Key pairs are used to [connect to a VM via SSH](/en/base/iaas/instructions/vm/vm
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the user's name in the header of the page.
 1. Select **Key pairs** from the drop-down list.
 1. Click on the name of the desired key pair. Information about it will be displayed.
@@ -42,7 +42,7 @@ To display data only about the public key, add the `--public-key` option to the 
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the user's name in the header of the page.
 1. Select **Key pairs** from the drop-down list.
 1. Click the **Create key** button.
@@ -74,7 +74,7 @@ To display data only about the public key, add the `--public-key` option to the 
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the user's name in the header of the page.
 1. Select **Key pairs** from the drop-down list.
 1. Click the **Import key** button.
@@ -120,7 +120,7 @@ To restore access to a Linux virtual machine via SSH using a key pair, use the i
 
 This is a group operation: if necessary, you can delete several key pairs at once by selecting them using the checkboxes.
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the user's name in the header of the page.
 1. Select **Key pairs** from the drop-down list.
 1. Click on the icon ![Trash](./assets/trash-icon.svg "inline") in the line with the object being deleted.

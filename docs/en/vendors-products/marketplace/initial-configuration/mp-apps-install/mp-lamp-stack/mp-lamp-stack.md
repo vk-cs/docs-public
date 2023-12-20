@@ -4,7 +4,7 @@ Deploy the VM with the application according to [instruction](../init-install/).
 
 ## Connection
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **App store** → **My VM applications**.
 1. Click on the name of the installed application. It's page will open.
 1. [Connect to a VM](/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix) on which the application is deployed using the parameter values:
