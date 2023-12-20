@@ -90,7 +90,7 @@
    openstack image create --private --container-format bare --disk-format raw --file <путь_к_файлу.raw> --property hw_qemu_guest_agent=yes --property store=s3 --property os_require_quiesce=yes <название_образа>
    ```
 
-1. Проверьте загрузку образа в [личном кабинете](https://mcs.mail.ru/app/) VK Cloud в разделе **Облачные вычисления → Образы** или через CLI:
+1. Проверьте загрузку образа в [личном кабинете](https://msk.cloud.vk.com/app/) VK Cloud в разделе **Облачные вычисления → Образы** или через CLI:
 
    ```bash
    openstack image list

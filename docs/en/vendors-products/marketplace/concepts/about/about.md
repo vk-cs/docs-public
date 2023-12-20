@@ -58,4 +58,4 @@ Key differences for SaaS and image-based services:
 
 ## Information for vendors
 
-Vendors can add their software to VK Cloud by writing to `marketplace@mcs.mail.ru`.
+Vendors can add their software to VK Cloud by writing to `marketplace@cloud.vk.com`.

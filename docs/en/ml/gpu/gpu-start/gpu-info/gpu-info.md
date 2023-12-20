@@ -43,4 +43,4 @@ VK Cloud recommends using the following GPU-enabled development software:
 
 Billing per second. Rent and deploy computing power in minutes and turn it off as soon as you complete your tasks. Pay only for the actual use of resources with per-second billing.
 
-Current tariffs can be seen [here](https://mcs.mail.ru/cloud-gpu/).
+Current tariffs can be seen [here](https://cloud.vk.com/cloud-gpu/).

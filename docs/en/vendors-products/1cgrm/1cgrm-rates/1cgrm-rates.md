@@ -38,4 +38,4 @@ If you need to deposit funds and make a prepayment for the service, you should c
 
 At the end of the billing period, the project owner will be sent closing documents, reflecting the period and volume of use of services.
 
-All services provided within the 1C: GRM are not displayed in the general section [Balance](https://mcs.mail.ru/app/services/billing) your VK Cloud personal account.
+All services provided within the 1C: GRM are not displayed in the general section [Balance](https://msk.cloud.vk.com/app/services/billing) your VK Cloud personal account.

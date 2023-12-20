@@ -8,7 +8,7 @@ The list is available to all users, regardless of their [role](/en/base/account/
 
 To see the list of endpoints for your region:
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the user name in the header of the page and select **Project settings**.
 1. Go to **API endpoints** tab.
 
@@ -101,7 +101,7 @@ The Project ID does not match the [project ID](/en/base/account/instructions/pro
 
 To get the Project ID value for a project:
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Open the desired project by selecting it from the list in the header of the personal account page.
 1. Click on the user name in the header of the page and select **Project settings**.
 1. Go to **API access** or **Terraform** tab.

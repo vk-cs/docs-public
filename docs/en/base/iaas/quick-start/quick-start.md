@@ -24,7 +24,7 @@ The account balance should be positive, and [quotas](../../../additionals/accoun
 
 ## 2. Create a VM
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
 3. Click the  **Create instance** or **Add** button.
 4. In the field **Operating system** choose `Ubuntu 22.04`.
@@ -74,7 +74,7 @@ For example:
 ssh -i ubuntu-key.pem ubuntu@213.219.212.130
 ```
 
-The external IP address of the VM can be viewed in VK Cloud [personal account](https://mcs.mail.ru/app/) to **Cloud Computing → Virtual machines**.
+The external IP address of the VM can be viewed in VK Cloud [personal account](https://msk.cloud.vk.com/app/) to **Cloud Computing → Virtual machines**.
 
 The first time you connect to the VM, you will be asked to confirm the connection to a previously unknown host:
 
@@ -101,7 +101,7 @@ For example:
 ssh -i ubuntu-key.pem ubuntu@213.219.212.130
 ```
 
-The external IP address of the VM can be viewed in VK Cloud [personal account](https://mcs.mail.ru/app/) to **Cloud Computing → Virtual machines**.
+The external IP address of the VM can be viewed in VK Cloud [personal account](https://msk.cloud.vk.com/app/) to **Cloud Computing → Virtual machines**.
 
 The first time you connect to the VM, you will be asked to confirm the connection to a previously unknown host:
 
@@ -136,7 +136,7 @@ In Windows 7/8, use the PuTTY application to connect via SSH.
 
    <info>
 
-   The external IP address of the VM can be viewed in VK Cloud [personal account](https://mcs.mail.ru/app/) to **Cloud Computing → Virtual machines**.
+   The external IP address of the VM can be viewed in VK Cloud [personal account](https://msk.cloud.vk.com/app/) to **Cloud Computing → Virtual machines**.
 
    </info>
 

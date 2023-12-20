@@ -26,7 +26,7 @@ sudo sh -c "apt update; apt install -y qemu-guest-agent; systemctl enable qemu-g
 
 ## Сколько стоит внешний IP-адрес?
 
-Актуальные цены на плавающие IP-адреса и IP-адреса на портах виртуальных машин (`ext-net`) размещены в [прайс-листе](https://mcs.mail.ru/pricelist).
+Актуальные цены на плавающие IP-адреса и IP-адреса на портах виртуальных машин (`ext-net`) размещены в [прайс-листе](https://cloud.vk.com/pricelist).
 
 ## Хочу создать инстанс, но нет подходящей конфигурации
 

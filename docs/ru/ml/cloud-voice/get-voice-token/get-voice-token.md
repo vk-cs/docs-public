@@ -85,7 +85,7 @@ curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 
 Чтобы получить сервисный токен:
 
-1. В [личном кабинете](https://mcs.mail.ru/app/main) VK Cloud перейдите в раздел **AI API** → **Cloud Voice**.
+1. В [личном кабинете](https://msk.cloud.vk.com/app/main) VK Cloud перейдите в раздел **AI API** → **Cloud Voice**.
 1. Нажмите кнопку **Добавить сервисный токен**.
 1. В появившемся окне укажите необходимые параметры и нажмите кнопку **Создать**.
 

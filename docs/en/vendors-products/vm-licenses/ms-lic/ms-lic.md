@@ -1,4 +1,4 @@
-The VK Cloud platform allows you to create virtual machines with pre-installed licensed copies of Microsoft Windows Server operating systems, as well as use additional Microsoft software products — the full list is available in the [price list](https://mcs.mail.ru/pricelist).
+The VK Cloud platform allows you to create virtual machines with pre-installed licensed copies of Microsoft Windows Server operating systems, as well as use additional Microsoft software products — the full list is available in the [price list](https://cloud.vk.com/pricelist).
 
 <warn>
 
@@ -16,16 +16,16 @@ If you have any questions about licensing and rights to use Microsoft software, 
 
 The price for a month of using the software can be found out:
 
-- in the [price list](https://mcs.mail.ru/pricelist);
+- in the [price list](https://cloud.vk.com/pricelist);
 - when creating a virtual machine;
-- in [project settings](https://mcs.mail.ru/app/en/project/) on the tab **Prices**.
-- in the section **Balance** [personal account](https://mcs.mail.ru/app/en/services/billing).
+- in [project settings](https://msk.cloud.vk.com/app/en/project/) on the tab **Prices**.
+- in the section **Balance** [personal account](https://msk.cloud.vk.com/app/en/services/billing).
 
 ## Windows Server
 
 When creating a VM with Microsoft Windows OS, a licensed copy of the OS of the selected edition is automatically deployed. It will be activated when the VM is turned on.
 
-The available editions of the Microsoft Windows Server are displayed in the drop-down list **Operating system** when creating a VM through VK Cloud [personal account](https://mcs.mail.ru/app/services/infra/servers/add).
+The available editions of the Microsoft Windows Server are displayed in the drop-down list **Operating system** when creating a VM through VK Cloud [personal account](https://msk.cloud.vk.com/app/services/infra/servers/add).
 
 Every 2 vCPUs of a Windows VM require the use of one license. For example, when creating a VM with 5 vCPUs, you will need 3 Windows Server licenses. When changing the type of virtual machine, the number of licenses will be changed in accordance with the number of virtual cores of the modified configuration.
 
@@ -75,7 +75,7 @@ To transfer licenses under the Software Assurance agreement, you must go through
 
 - email: `support@mcs.mail.ru`;
 - name of the partner: `VK Cloud`;
-- partner web site: `mcs.mail.ru`.
+- partner web site: `cloud.vk.com`.
 
 After receiving the form, Microsoft will check your license and inform you and your Microsoft partner about the results of the check. Further instructions in the manual [Moving licenses within Software Assurance](https://www.microsoft.com/ru-ru/licensing/licensing-programs/software-assurance-license-mobility) and to the document [License Mobility Verification Guide](http://download.microsoft.com/download/7/9/b/79bd917e-760b-48b6-a266-796b3e47c47a/License_Mobility_Customer_Verification_Guide.pdf) Microsoft (PDF).
 

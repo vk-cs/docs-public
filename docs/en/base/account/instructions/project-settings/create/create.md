@@ -8,7 +8,7 @@ Within the framework of [basic quotas](../../../concepts/quotasandlimits) one us
 
 To create a project:
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 
 1. In the header of your personal account, click on the name of the project.
 

@@ -4,7 +4,7 @@
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Databases** → **Backup**.
 1. Go to the backup plan tab.
 1. Select a backup from the general list.

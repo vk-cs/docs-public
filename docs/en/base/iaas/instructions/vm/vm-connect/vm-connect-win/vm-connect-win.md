@@ -10,7 +10,7 @@ Make sure that the following conditions are met:
 
    <info>
 
-   The external IP address of the VM can be viewed in [personal account](https://mcs.mail.ru/app/en/) VK Cloud in the section **Cloud computing → Virtual machines**.
+   The external IP address of the VM can be viewed in [personal account](https://msk.cloud.vk.com/app/en/) VK Cloud in the section **Cloud computing → Virtual machines**.
 
    </info>
 
@@ -73,7 +73,7 @@ In macOS, use the Microsoft Remote Desktop program to connect via RDP. Specify t
 
 To get the RDP configuration file:
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
 3. Select the VM you need and go to the **Windows** tab at the bottom of the page.
 4. Click **Download RDP config**.
@@ -108,7 +108,7 @@ To connect via RDP, specify the connection parameters manually or using the RDP 
 <details>
 <summary>How to get the RDP configuration file for VK Cloud VM</summary>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
 3. Click on the name of the VM you need to go to the VM page.
 3. Go to the **General information** tab and select the **Windows** tab at the bottom of the page.

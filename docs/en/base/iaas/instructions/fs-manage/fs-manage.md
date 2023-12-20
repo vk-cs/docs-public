@@ -17,7 +17,7 @@ File storage is available only from virtual machines inside the VK Cloud project
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Select the project where you want to create the file storage.
 1. Go to **Cloud computing** → **File share**.
 1. Click to the **Create storage** or **Create** button.
@@ -222,7 +222,7 @@ The instructions are given for Ubuntu Linux. For information about connecting to
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**. A list of file repositories will be displayed.
 
@@ -251,7 +251,7 @@ The instructions are given for Ubuntu Linux. For information about connecting to
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**.
 1. Click on the name of the desired file storage. Information about it will be displayed.
@@ -281,7 +281,7 @@ The instructions are given for Ubuntu Linux. For information about connecting to
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**.
 1. Expand the menu of the desired storage and select **Change size**.
@@ -318,7 +318,7 @@ The size of the file storage cannot be reduced.
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**.
 1. Expand the menu of the desired storage and select **Create snapshot**.
@@ -350,7 +350,7 @@ The size of the file storage cannot be reduced.
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**.
 1. Expand the menu of the desired storage and select **List of snapshots**. Information about the images will be displayed.
@@ -380,7 +380,7 @@ The size of the file storage cannot be reduced.
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**.
 1. Expand the menu of the desired storage and select **List of snapshots**.
@@ -412,7 +412,7 @@ The size of the file storage cannot be reduced.
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**.
 1. Click on the name of the desired file storage.
@@ -454,7 +454,7 @@ To delete a file storage, you must first dismantle it on virtual machines.
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Select the project where the desired file storage is located.
 1. Go to **Cloud computing** → **File share**.
 1. Expand the menu of the desired storage and select **Delete**.

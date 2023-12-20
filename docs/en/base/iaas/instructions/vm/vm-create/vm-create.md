@@ -9,7 +9,7 @@ The account balance should be positive, and [quotas](/en/base/account/concepts/q
 
 ### Available OS
 
-The VK Cloud team has prepared images of some operating systems. The list of ready-made images is available in your personal account in the [window for creating a new instance](https://mcs.mail.ru/app/en/services/infra/servers/add).
+The VK Cloud team has prepared images of some operating systems. The list of ready-made images is available in your personal account in the [window for creating a new instance](https://msk.cloud.vk.com/app/en/services/infra/servers/add).
 
 If necessary, you can [import an OS image](../../vm-images/vm-images-manage#exporting_an_image) by yourself.
 
@@ -28,7 +28,7 @@ The available fields may differ for different operating systems.
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
 3. Click the **Create instance** or **Add** button.
 4. Set VM parameters:
