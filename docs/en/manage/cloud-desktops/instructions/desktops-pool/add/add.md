@@ -8,7 +8,7 @@ Changing the created virtual resources (VMs, load balancers, DB instances) outsi
 
 1. Make sure that [service connection](../../config/) is configured.
 1. Run the pool creation wizard:
-   1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+   1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
    1. Go to **Cloud desktops** → **Desktop pools**.
    1. Click the **Add** button.
 

@@ -2,7 +2,7 @@ On the [ideas portal](https://features.mcs.mail.ru/) you can offer ideas for imp
 
 ## 1. Preparatory steps
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en/).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
 1. Click on the user name in the header of the page and select **Ideas Portal**.
 
 ## 2. Formulate an idea
@@ -36,4 +36,4 @@ On the [ideas portal](https://features.mcs.mail.ru/) you can offer ideas for imp
 1. Check the implementation of the idea:
 
    1. Make sure that the idea appeared on the [portal](https://features.mcs.mail.ru/) on the **Готовые** tab.
-   1. Go to  VK Cloud [personal account](https://mcs.mail.ru/app/) and make sure the idea is implemented.
+   1. Go to  VK Cloud [personal account](https://msk.cloud.vk.com/app/) and make sure the idea is implemented.

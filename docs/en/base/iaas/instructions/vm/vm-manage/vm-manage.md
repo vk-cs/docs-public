@@ -1,4 +1,4 @@
-You can change the parameters and status of a virtual machine on the VK Cloud platform in [personal account](https://mcs.mail.ru/app/en) or using the OpenStack command line interface.
+You can change the parameters and status of a virtual machine on the VK Cloud platform in [personal account](https://msk.cloud.vk.com/app/en) or using the OpenStack command line interface.
 
 ## Getting a virtual machine ID
 
@@ -13,7 +13,7 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
 
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
 3. In the list of VMs, click on the name of the VM whose ID you want to find out.
 4. On the VM page, go to the **General information** tab.
@@ -53,7 +53,7 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
 
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
 3. Change the VM state in one of the ways.
 
@@ -124,7 +124,7 @@ The forced restart of the VM corresponds to the power off and on (power cycling)
 
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
 3. Force a VM restart in one of the ways.
 
@@ -170,7 +170,7 @@ A blocked virtual machine cannot be started or stopped, nor can it be restarted.
 
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
 3. Block or unblock the VM in one of the ways.
 
@@ -234,7 +234,7 @@ The deletion operation is irreversible! Save the necessary data before deleting 
 
    <tabpanel>
 
-   1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+   1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
    2. Go to **Cloud Computing → Virtual machines**.
    3. Delete the VM in one of the ways.
 
@@ -290,7 +290,7 @@ If the VM type changes, the VM will be rebooted.
 
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
 3. Change the VM name or type in one of the ways.
 
@@ -353,7 +353,7 @@ Tags allow you to filter the list of virtual machines and find the right VM fast
 
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
 3. Expand the VM context menu.
 4. Check the tags or click **Create a new tag**.
@@ -445,7 +445,7 @@ systemctl status qemu-guest-agent
 
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
 3. Set the password in one of the ways.
 
@@ -505,7 +505,7 @@ If the password was changed after the VM was created or the VM was created on th
 
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
 3. Open the password receipt window using one of the following methods.
 
@@ -546,7 +546,7 @@ To restore access to a Linux virtual machine via SSH using a key pair, you need 
 
 2. Create a link to the file with the public key.
 
-   1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+   1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
    2. Go to **Object storage → Buckets**.
    3. Use an existing package or [create a new one](/en/base/s3/quick-start/create-bucket).
    4. [Add file](/en/base/s3/quick-start/upload-object) with a public key in the bucket.

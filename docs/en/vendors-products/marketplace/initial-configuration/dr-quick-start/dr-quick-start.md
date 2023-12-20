@@ -1,4 +1,4 @@
-You can set up data recovery and IT infrastructure in case of unforeseen circumstances using the service [Hystax Acura Disaster Recovery](https://mcs.mail.ru/app/en/services/marketplace/v2/apps/service/440568b5-e418-431f-9d43-e54eb20ee05a/latest/info/) without suspending applications. Using the service allows you to optimize the indicators:
+You can set up data recovery and IT infrastructure in case of unforeseen circumstances using the service [Hystax Acura Disaster Recovery](https://msk.cloud.vk.com/app/en/services/marketplace/v2/apps/service/440568b5-e418-431f-9d43-e54eb20ee05a/latest/info/) without suspending applications. Using the service allows you to optimize the indicators:
 
 - Recovery Point Objective (RPO) — the time between the creation of the last backup and the moment of the accident. It can be configured individually for each resource.
 - Recovery Time Objective (RTO) — the time between the response to an accident and the restoration of infrastructure. The service allows you to minimize this indicator.
@@ -221,12 +221,12 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
 1. At the “Select target environment” step, select the **New OpenStack** option and specify the parameters:
 
    - **Cloud name**: `VK Cloud`.
-   - **Keystone API endpoint**: Keystone value from [endpoints list](https://mcs.mail.ru/app/mcs3723876490/project/endpoints), `https://infra.mail.ru:35357/v3/` for VK Cloud.
-   - **User domain**: value **User Domain Name** of [project settings](https://mcs.mail.ru/app/project/keys).
+   - **Keystone API endpoint**: Keystone value from [endpoints list](https://msk.cloud.vk.com/app/mcs3723876490/project/endpoints), `https://infra.mail.ru:35357/v3/` for VK Cloud.
+   - **User domain**: value **User Domain Name** of [project settings](https://msk.cloud.vk.com/app/project/keys).
    - **Username**: user name with [API access](/en/manage/tools-for-using-services/rest-api/enable-api) and a role not lower than the Project administrator.
    - **Password**: the user's password.
-   - **Target project domain**: value **Project Domain ID** of [project settings](https://mcs.mail.ru/app/project/keys).
-   - **Target project ID**: value **Project ID** of [project settings](https://mcs.mail.ru/app/project/keys)
+   - **Target project domain**: value **Project Domain ID** of [project settings](https://msk.cloud.vk.com/app/project/keys).
+   - **Target project ID**: value **Project ID** of [project settings](https://msk.cloud.vk.com/app/project/keys)
    - **Hystax Service Network**: The UUID of the network to which the VM will be deployed.
    - **Floating IP Network**: external network `ext-net`.
 

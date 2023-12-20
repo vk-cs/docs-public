@@ -84,7 +84,7 @@
 
 ## Kubernetes 1.23.6 <a id="v1-23-6"></a>
 
-**Изменения в сервисе Kubernetes aaS:** добавлена [интеграция с IAM облака VK Cloud](https://mcs.mail.ru/docs/ru/base/k8s/concepts/access-management).
+**Изменения в сервисе Kubernetes aaS:** добавлена [интеграция с IAM облака VK Cloud](/ru/base/k8s/concepts/access-management).
 
 **Важные изменения в Kubernetes:**
 

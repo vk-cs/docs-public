@@ -13,7 +13,7 @@ To join an existing VK Cloud project, follow the instructions in article [Join a
 
 ## 1. Create an account
 
-1. Go to [VK Cloud main page](https://mcs.mail.ru/en/) and click **Create a VK Cloud Account** in the upper right corner.
+1. Go to [VK Cloud main page](https://cloud.vk.com/en/) and click **Create a VK Cloud Account** in the upper right corner.
 1. In the window that appears, fill in the fields:
 
     - **Work email**: your email address.
@@ -45,7 +45,7 @@ The account confirmation window opens. A confirmation email is sent to the speci
 
 If you do not immediately confirm the account, when you try to perform an action (for example, create an object or [activate services](/en/base/account/start/activation)), the confirmation will continue from the step where it was stopped.
 
-1. Confirm your email: wait for an email from the address `noreply@mcs.mail.ru` and follow the link in the email. If the email has not arrived or has expired, request it again by clicking **Send confirmation again** in the confirmation window.
+1. Confirm your email: wait for an email from the address `noreply@cloud.vk.com` and follow the link in the email. If the email has not arrived or has expired, request it again by clicking **Send confirmation again** in the confirmation window.
 1. Confirm your phone:
 
    <warn>
@@ -73,7 +73,7 @@ If you do not immediately confirm the account, when you try to perform an action
 
    1. Copy the [identifier (PID)](/en/base/account/instructions/project-settings/manage#getting_the_project_id) of your project from the VK Cloud site URL.
 
-      An example for the region Moscow: `https://mcs.mail.ru/app/mcs123456789/main`, where `mcs123456789` is the project identifier (PID).
+      An example for the region Moscow: `https://msk.cloud.vk.com/app/mcs123456789/main`, where `mcs123456789` is the project identifier (PID).
 
    1. Click **Contact support**.
    1. On the [technical support portal](https://support.mcs.mail.ru) page that opens click the **Новая заявка** button.

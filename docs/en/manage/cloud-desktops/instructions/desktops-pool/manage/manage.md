@@ -6,7 +6,7 @@ You can also [manage all desktops](../../manage-desktops/) created in the system
 
 ## Viewing a list of desktop pools
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud desktops** → **Desktop pools**.
 
    A list of previously created desktop pools is displayed.
@@ -28,7 +28,7 @@ Available for desktops, all VMs of which are in an emergency state.
 
 This is a group operation: if necessary, you can manage multiple pool desktops by selecting them using checkboxes.
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud desktops** → **Desktop pools**.
 1. In the list of pools, click on the name of the desired pool.
 1. Go to the **Desktops** tab.
@@ -48,7 +48,7 @@ The VM remains turned on at the end of the session.
 
 This is a group operation: if necessary, you can manage multiple pool desktops by selecting them using checkboxes.
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud desktops** → **Desktop pools**.
 1. In the list of pools, click on the name of the desired pool.
 1. Go to the **Desktops** tab.
@@ -60,7 +60,7 @@ This is a group operation: if necessary, you can manage multiple pool desktops b
 
 This is a group operation: if necessary, you can send a message to users of several pools by selecting them using checkboxes.
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud desktops** → **Desktop pools**.
 1. Check the box for the desired pool.
 1. Click the **Message to users** button.
@@ -85,7 +85,7 @@ When deleting a desktop pool, pay attention to the following features:
 
 This is a group operation: if necessary, you can delete several pools at once by selecting them using the checkboxes.
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud desktops** → **Desktop pools**.
 1. Delete the pool using one of the following methods:
 

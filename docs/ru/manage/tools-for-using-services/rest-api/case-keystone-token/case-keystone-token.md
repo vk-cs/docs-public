@@ -2,7 +2,7 @@
 
 ## Подготовительные шаги
 
-1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет VK Cloud.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Убедитесь, что [включена](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
 1. В шапке страницы личного кабинета выберите проект, в котором планируете использовать токен.
 
@@ -24,7 +24,7 @@
 </tablist>
 <tabpanel>
 
-1. В разделе [Настройки проекта](https://mcs.mail.ru/app/project/keys/) перейдите на вкладку **Доступ по API**.
+1. В разделе [Настройки проекта](https://msk.cloud.vk.com/app/project/keys/) перейдите на вкладку **Доступ по API**.
 
     При открытии страницы будет автоматически сгенерирован новый токен. Если страница остается открытой, раз в час генерируется новый токен.
 
@@ -142,7 +142,7 @@ x-subject-token: gAAAAABkirQja1Lgr9psuyf6fC6e3Sy5WMYubpmwMNPXuT6APQkf-BPRRAySTBG
 
 Задача: получить список сетей через REST API (сервис Neutron).
 
-1. В личном кабинете [посмотрите](https://mcs.mail.ru/app/project/endpoints) эндпоинт, по которому выполняется запрос к сервису Neutron. В этом примере: `https://infra.mail.ru:9696`.
+1. В личном кабинете [посмотрите](https://msk.cloud.vk.com/app/project/endpoints) эндпоинт, по которому выполняется запрос к сервису Neutron. В этом примере: `https://infra.mail.ru:9696`.
 1. [Получите токен](#generaciya_tokena): сгенерируйте новый токен или скопируйте значение действующего токена.
 1. Выполните команду с помощью утилиты cURL:
 

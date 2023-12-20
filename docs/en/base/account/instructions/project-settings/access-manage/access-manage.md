@@ -8,7 +8,7 @@ Access control operations are available only to the following [roles](../../../c
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the user's name in the header of the page.
 1. From the drop-down list, select **Manage access**.
 
@@ -25,7 +25,7 @@ Login, assigned roles and status are displayed for each member (**Yes** — the 
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. On the access management page, go to the tab **Roles**.
 
@@ -42,7 +42,7 @@ Login, assigned roles and status are displayed for each member (**Yes** — the 
 
 For security reasons, you can make two-factor authentication (2FA) mandatory for project members:
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. [Enable](../../account-manage/manage-2fa/) 2FA for your account, if it is not already enabled.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. On the access management page, enable the option **Mandatory two-factor authentication**.
@@ -61,7 +61,7 @@ If the user enters the project by invitation, he does not need to confirm the ph
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. On the access management page, click **Add member**.
 1. Enter the email address of the member and select from the list the role you want to assign to him.
@@ -101,7 +101,7 @@ Only the project owner can assign another role to the superadministrator.
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. Expand the menu of the desired project member and select **Edit**.
 1. In the window that opens, specify the list of new roles in the field **User role**.
@@ -131,7 +131,7 @@ Only the project owner can delete the superadministrator.
 
 This is a group operation: if necessary, you can delete several members at once by selecting them using the checkboxes.
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. Expand the menu of the desired project member and select **Delete**.
 1. Confirm the deletion.
