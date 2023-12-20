@@ -21,7 +21,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
    1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
@@ -107,7 +107,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
    1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Find the cluster you need in the list.
@@ -133,7 +133,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
    1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
@@ -233,7 +233,7 @@ To [specify a temporary password](#setting_a_temporary_password_for_the_grafana_
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
    1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
@@ -297,7 +297,7 @@ The Prometheus disk stores cluster monitoring data. If there is not enough space
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
 1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the desired cluster.

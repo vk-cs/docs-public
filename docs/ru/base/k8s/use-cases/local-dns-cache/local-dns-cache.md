@@ -330,7 +330,7 @@ DNS-сервер будет развернут в следующей конфи�
    <tabpanel>
 
    ```bash
-   nslookup mcs.mail.ru && \
+   nslookup cloud.vk.com && \
    nslookup kubernetes.default
    ```
 
@@ -341,11 +341,11 @@ DNS-сервер будет развернут в следующей конфи�
    Address:        10.254.0.10#53
    
    Non-authoritative answer:
-   Name:   mcs.mail.ru
+   Name:   cloud.vk.com
    Address: 95.163.254.194
-   Name:   mcs.mail.ru
+   Name:   cloud.vk.com
    Address: 95.163.254.192
-   Name:   mcs.mail.ru
+   Name:   cloud.vk.com
    Address: 95.163.254.193
    
    Server:         10.254.0.10
@@ -359,7 +359,7 @@ DNS-сервер будет развернут в следующей конфи�
    <tabpanel>
 
    ```bash
-   nslookup mcs.mail.ru 169.254.0.10 && \
+   nslookup cloud.vk.com 169.254.0.10 && \
    nslookup kubernetes.default 169.254.0.10
    ```
 
@@ -370,11 +370,11 @@ DNS-сервер будет развернут в следующей конфи�
    Address:        169.254.0.10#53
    
    Non-authoritative answer:
-   Name:   mcs.mail.ru
+   Name:   cloud.vk.com
    Address: 95.163.254.192
-   Name:   mcs.mail.ru
+   Name:   cloud.vk.com
    Address: 95.163.254.193
-   Name:   mcs.mail.ru
+   Name:   cloud.vk.com
    Address: 95.163.254.194
    
    Server:         169.254.0.10

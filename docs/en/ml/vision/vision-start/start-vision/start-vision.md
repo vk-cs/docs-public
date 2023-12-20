@@ -9,7 +9,7 @@ API Endpoints are "entry points", the URL that connects to the management servic
 
 ### Access via client ID and secret key
 
-To control access through the client ID and secret key, the [Vision API page](https://mcs.mail.ru/app/services/machinelearning/vision/access/) displays the required information. The client ID has already been generated and cannot be replaced, and the key can be reissued with the corresponding button.
+To control access through the client ID and secret key, the [Vision API page](https://msk.cloud.vk.com/app/services/machinelearning/vision/access/) displays the required information. The client ID has already been generated and cannot be replaced, and the key can be reissued with the corresponding button.
 
 ### Access via service token
 

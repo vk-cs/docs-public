@@ -10,7 +10,7 @@ At the top of the personal account page, the balance total is displayed: the sum
 
 To view the balance:
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/en/).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
 1. Make sure that the project has [services activated](/en/base/account/instructions/activation).
 1. Open the balance page using one of these options:
 
@@ -31,7 +31,7 @@ It is possible to credit funds to the [main account](../../concepts/balance#the_
 
 To make a payment:
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/en/).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
 1. Click on the ![Make a payment](./assets/icon_plus.svg "inline") icon at the top of the personal account page or click on the **Make a payment** button on the [balance page](#viewing_the_balance).
 1. Specify the amount of the deposit.
 
@@ -59,7 +59,7 @@ You can set up a monthly expenses limit for each of your projects. When an expen
 
 To set up an expenses limitation and notifications:
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/en/).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
 1. Open the balance page using one of these options:
 
    - Click on your user name in the top part of the personal account page and select **Balance and payments** from the drop-down list.

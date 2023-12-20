@@ -1,6 +1,6 @@
 ## Editing user profile
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the username in the header of the page and select **Account settings**. A page with account information opens.
 1. On the **User profile** fill in the fields:
     - **Name and surname**: enter your first and last name;
@@ -17,7 +17,7 @@
 
 ## Password change
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the username in the header of the page and select **Account settings**.
 1. On the **Security** tab click the **Change password** button.
 1. Fill in the fields:

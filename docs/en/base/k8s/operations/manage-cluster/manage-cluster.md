@@ -18,7 +18,7 @@ This is a group operation: if necessary, you can start several stopped clusters 
 
 To start a cluster:
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Use the checkbox to select the necessary cluster.
@@ -40,7 +40,7 @@ This is a group operation: if necessary, you can stop several started clusters a
 
 To stop a cluster:
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Use the checkbox to select the necessary cluster.
@@ -61,7 +61,7 @@ Different information is available for running and stopped clusters. Terraform a
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Click on the name of the necessary cluster. A page with information will open.
@@ -111,7 +111,7 @@ After performing this operation, the existing public keys on the cluster will be
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Expand the menu of the necessary cluster and select **Invalidate**.
@@ -141,7 +141,7 @@ This is a group operation: if necessary, you can delete multiple clusters at onc
 
 To delete a cluster:
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Perform one of the actions for the necessary cluster:

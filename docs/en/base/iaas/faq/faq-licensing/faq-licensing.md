@@ -4,7 +4,7 @@ A licensed copy of the Windows Server operating system is preinstalled in the Wi
 
 ## What licenses can I get?
 
-The list of standard licenses provided is limited, you can see the list available in the [price list](https://mcs.mail.ru/pricelist).
+The list of standard licenses provided is limited, you can see the list available in the [price list](https://cloud.vk.com/pricelist).
 
 ## What types of licensing are there?
 
@@ -29,4 +29,4 @@ VK Cloud provides license rentals on a monthly basis. The purchase of a license 
 
 ## How much does an RDS license cost?
 
-The cost of the license is given in the [price list](https://mcs.mail.ru/pricelist).
+The cost of the license is given in the [price list](https://cloud.vk.com/pricelist).

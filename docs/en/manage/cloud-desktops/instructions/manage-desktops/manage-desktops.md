@@ -2,7 +2,7 @@ When a pool is successfully created, desktops are created in it automatically.
 
 ## Viewing desktop information
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Open the list of desktops using one of the following methods:
 
    - Through the general list of desktops: go to **Cloud desktops** → **Desktop list**.
@@ -18,7 +18,7 @@ The desktop status is displayed in the **Availability** column. Column **Connect
 
 This is a group operation: if necessary, you can manage multiple pool desktops by selecting them using checkboxes.
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Open the list of desktops using one of the following methods:
 
    - Through the general list of desktops:
@@ -84,7 +84,7 @@ If the session was terminated in another way, the disconnection will occur accor
 
 This is a group operation: if necessary, you can manage multiple pool desktops by selecting them using checkboxes.
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Open the list of desktops using one of the following methods:
 
    - Through the general list of desktops:

@@ -11,7 +11,7 @@
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
 1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the desired cluster.
@@ -53,7 +53,7 @@
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
 1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the desired cluster.
@@ -111,7 +111,7 @@ This is a group operation: if necessary, you can delete several addons at once b
 
 To remove the addon:
 
-1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
 1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the desired cluster.

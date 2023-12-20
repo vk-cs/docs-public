@@ -1,6 +1,6 @@
 ## Installation
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **App store**.
 1. In the block with the OpenVPN application, click **Install**.
 1. At the “Install application” step, specify the parameters according to [instructions](../init-install/).
@@ -15,7 +15,7 @@
 
 ## Connection
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **App store** → **My VM applications**.
 1. Click on the name of the installed application. It's page will open.
 1. [Connect to the VM](/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix), on which the application is deployed using the parameter value **SSH доступа к Openvpn**.
@@ -32,7 +32,7 @@ Useful materials for application administration can be found on the **Beginning 
 
 ## Using OpenVPN
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **App store** → **My VM applications**.
 1. Click on the name of the installed application. It's page will open.
 1. On the tab **Application setting** copy the parameters:

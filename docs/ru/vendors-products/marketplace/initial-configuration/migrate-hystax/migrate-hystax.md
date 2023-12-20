@@ -1,4 +1,4 @@
-Вы можете мигрировать ваши ресурсы в VK Cloud с помощью сервиса [Hystax Acura Migration](https://mcs.mail.ru/app/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info/) без приостановки работы приложений. Можно переносить ресурсы как с виртуальных, так и с физических платформ.
+Вы можете мигрировать ваши ресурсы в VK Cloud с помощью сервиса [Hystax Acura Migration](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/71713459-37ca-45db-9523-1cade3c58912/latest/info/) без приостановки работы приложений. Можно переносить ресурсы как с виртуальных, так и с физических платформ.
 
 <details>
   <summary>Откуда можно перенести данные?</summary>

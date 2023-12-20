@@ -4,7 +4,7 @@ The instruction applies to non-SaaS ans image-based applications.
 
 </warn>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **App store**.
 1. In the block with the target application, click **Install**.
 1. Set the parameters of the deployed VM:

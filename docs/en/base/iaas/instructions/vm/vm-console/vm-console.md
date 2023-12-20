@@ -30,7 +30,7 @@ Open the console in the VK Cloud personal account or use the address obtained th
 
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 2. Go to **Cloud Computing → Virtual machines**.
 3. In the list of virtual machines, click on the name of the VM you need.
 4. On the VM page, go to the tab **Console**.

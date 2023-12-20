@@ -8,7 +8,7 @@ After completing all the quick start steps, you will:
 
 ## Step 1: Create a network and subnet
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Select the project.
 1. Go to **Virtual networks** → **Networks**.
 1. Click the **Create** button.
@@ -21,7 +21,7 @@ After completing all the quick start steps, you will:
 
 Create a virtual machine with Internet access:
 
-1. Go to [personal account](https://mcs.mail.ru/app/) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/) VK Cloud.
 1. Go to **Cloud Computing** → **Virtual Machines**.
 1. Click the **Add** button.
 1. At the “Configuration” step:
@@ -43,7 +43,7 @@ The creation of the virtual machine may take some time, after which it will appe
 
 Create a second virtual machine:
 
-1. Go to [personal account](https://mcs.mail.ru/app/) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/) VK Cloud.
 1. Go to **Cloud Computing** → **Virtual Machines**.
 1. Click the **Add** button.
 1. At the “Configuration” step:
@@ -66,7 +66,7 @@ A file with a virtual machine key will be downloaded to your computer.
 
 Create a third virtual machine:
 
-1. Go to [personal account](https://mcs.mail.ru/app/) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/) VK Cloud.
 1. Go to **Cloud Computing** → **Virtual Machines**.
 1. Click the **Add** button.
 1. At the «Configuration» step:
@@ -111,7 +111,7 @@ Wait for the creation of the virtual machine to complete.
 
 To send and receive traffic, assign a security group to the VM. For previously created VMs, apply the following settings:
 
-1. Go to [personal account](https://mcs.mail.ru/app/) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/) VK Cloud.
 1. Go to **Cloud Computing** → **Virtual Machines**.
 1. Click on the menu in the virtual machine row.
 1. Select **Firewall Settings** from the menu list.
