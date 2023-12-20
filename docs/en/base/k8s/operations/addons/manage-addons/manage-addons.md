@@ -98,6 +98,98 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
 The procedure for installing addons is discussed in the [relevant section](../advanced-installation).
 
+## Editing the addon code
+
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+</tablist>
+<tabpanel>
+
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+1. Go to **Containers** → **Kubernetes clusters**.
+1. Click on the name of the desired cluster.
+1. Go to **Addons** tab.
+1. Expand the menu of the desired addon and select **Edit**.
+1. Make the necessary changes to the addon setup code.
+1. Click the **Change settings** button.
+1. In the window that opens, confirm the operation.
+
+</tabpanel>
+</tabs>
+
+If the edit failed with an error:
+
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+</tablist>
+<tabpanel>
+
+1. In the general list of [installed addons](#installed_addons_ad60db68), click the **Retry edit** button.
+1. Select one of the troubleshooting options:
+
+   - **Restore**: make changes to the latest addon settings.
+   - **Reset**: reset the addon parameters to the last working state.
+
+1. In the window that opens, make the necessary changes to the addon settings.
+1. Click the **Change settings** button.
+1. In the window that opens, confirm the operation.
+
+</tabpanel>
+</tabs>
+
+## Updating the addon version
+
+Only an increase in the addon version is available.
+
+<warn>
+
+To update some addons, you will first need to uninstall the previous version.
+
+</warn>
+
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+</tablist>
+<tabpanel>
+
+1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+1. Go to **Containers** → **Kubernetes clusters**.
+1. Click on the name of the desired cluster.
+1. Go to **Addons** tab.
+1. Open the menu of the desired addon and select **Update**.
+1. In the window that opens, review the changes.
+1. (Optional) [Update](../../update/) the cluster version for compatibility with the addon.
+1. Make the necessary changes to the addon settings.
+1. Click the **Update** button.
+
+</tabpanel>
+</tabs>
+
+If the update failed with an error:
+
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+</tablist>
+<tabpanel>
+
+1. In the general list of [installed addons](#installed_addons_ad60db68), click the **Retry update** button.
+1. Select one of the troubleshooting options:
+
+   - **Restore**: make changes to the latest addon update settings.
+   - **Reset**: reset the addon update settings to the last working state.
+
+1. In the window that opens, make the necessary changes to the addon settings.
+1. Click the **Update** button.
+
+</tabpanel>
+</tabs>
+
 ## Removing an addon
 
 <tabs>
