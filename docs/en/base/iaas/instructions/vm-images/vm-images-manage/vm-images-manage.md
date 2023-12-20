@@ -11,7 +11,7 @@ The VK Cloud service allows you to create an image from the disk of an existing 
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud computing → Images**.
 3. Click the **Create** button.
 4. In the window that appears:
@@ -78,7 +78,7 @@ When downloading through your Personal account, the size of the downloaded file 
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud computing → Images**.
 3. Click the **Create** button.
 4. In the window that appears:
@@ -165,7 +165,7 @@ Through your personal account, you can allow access to the image only for certai
 
 To change the visibility status of an image:
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud computing → Images**.
 3. Expand the menu of the desired image and select **Share image**.
 4. In the window that appears:
@@ -234,7 +234,7 @@ openstack image member list <image ID>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud computing → Images**.
 3. Do one of the following for the desired image:
 

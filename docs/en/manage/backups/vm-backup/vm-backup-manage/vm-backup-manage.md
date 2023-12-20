@@ -6,7 +6,7 @@
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to the **Backup** section in one of the ways.
 
    - Through the services menu: **Cloud Computing → Backup**.
@@ -80,7 +80,7 @@ VM recovery speed from backup is affected by:
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to the **Backup** section in one of the ways.
 
    - Through the services menu: **Cloud Computing → Backup**.
@@ -141,7 +141,7 @@ VM recovery speed from backup is affected by:
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud computing → Backup**.
 3. Open the desired backup list.
 
@@ -186,7 +186,7 @@ Delete unnecessary backups in a timely manner to save storage space.
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud computing → Backup**.
 3. Go to the **Automatic** tab.
 4. In the list of backup plans, find the plan you need.
@@ -237,7 +237,7 @@ When you delete a backup plan, all backups created under that plan will be delet
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://mcs.mail.ru/app/en) VK Cloud.
+1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud computing → Backup**.
 3. Go to the **Automatic** tab.
 4. Change the state of the backup plan in one of the ways.

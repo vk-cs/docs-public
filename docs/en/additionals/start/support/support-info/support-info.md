@@ -25,7 +25,7 @@ SLA indicators are given in the article [SLA](../sla/).
 
 | Stage | Description  |
 |----------------------|----------------------------------------------------------------------------------------|
-| Beta  | Preliminary service versions at the testing stage. They are suitable for developers who are ready to use the services, the stability of which is not guaranteed: failures or incorrect operation of some functions are possible.<br>The use of service beta versions is not charged. If the beta version of the service during the operation uses any charged VK Cloud service, it is paid according to the [price list](https://mcs.mail.ru/pricelist).<br>Technical support for beta versions is limited: providing responses and correcting even critical errors are not guaranteed. Also, the [Service Level Agreement (SLA)](../sla/) is not applied, and the response time is unlimited.<br>Documentation for beta versions may be incomplete or absent|
+| Beta  | Preliminary service versions at the testing stage. They are suitable for developers who are ready to use the services, the stability of which is not guaranteed: failures or incorrect operation of some functions are possible.<br>The use of service beta versions is not charged. If the beta version of the service during the operation uses any charged VK Cloud service, it is paid according to the [price list](https://cloud.vk.com/pricelist).<br>Technical support for beta versions is limited: providing responses and correcting even critical errors are not guaranteed. Also, the [Service Level Agreement (SLA)](../sla/) is not applied, and the response time is unlimited.<br>Documentation for beta versions may be incomplete or absent|
 | General Availability | Stable versions of services that are available to all users for purchase. They can be fully used to solve problems.<br>These services are subject to billing and the technical support is fully provided according to the [Service Level Agreement (SLA)](../sla/)|
 
 ## Support competencies
@@ -34,7 +34,7 @@ Technical support:
 
 - Provides architectural advice regarding the use of VK Cloud services.
 - Performs diagnostics of malfunctions in the operation of resources on the project.
-- Deals with issues of restoring access to [account](https://mcs.mail.ru/docs/ru/base/account/faq).
+- Deals with issues of restoring access to [account](/en/base/account/faq).
 - Informs about the work of billing.
 - Advises on troubleshooting issues in the platform.
 - Helps in setting up VK Cloud services.
@@ -78,4 +78,4 @@ This service includes extended support for all issues of implementation, mainten
   - software update of PaaS services;
   - migration of data and information systems.
 
-To learn more about the service and submit a request for cost calculation, follow the [link](https://mcs.mail.ru/managed-services/).
+To learn more about the service and submit a request for cost calculation, follow the [link](https://cloud.vk.com/professional-services/).

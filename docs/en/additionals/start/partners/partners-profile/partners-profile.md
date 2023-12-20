@@ -1,10 +1,10 @@
 ## How to become a partner
 
-1. Go to the page [Russian Enterprise Cloud Services](https://mcs.mail.ru/partner/).
+1. Go to the page [Russian Enterprise Cloud Services](https://cloud.vk.com/partner/).
 1. Click the **Contact sales** button.
 1. Fill the fields in the form:
 
-    - if you have not previously been registered in your VK Cloud [personal account](https://mcs.mail.ru/app/):
+    - if you have not previously been registered in your VK Cloud [personal account](https://msk.cloud.vk.com/app/):
 
         - **Name**: name or full name to contact about the request.
         - **Email**: the contact email address to which the invitation will be sent and the partner's personal account will be linked.
@@ -18,7 +18,7 @@ The manager of the partner department will contact you within 48 hours from the 
 
 <info>
 
-The partner's personal account will be available at the URL https://mcs.mail.ru/partner/app/
+The partner's personal account will be available at the URL https://cloud.vk.com/partner/app/
 
 </info>
 
@@ -30,7 +30,7 @@ If you have not been contacted within 48 hours, please contact the support servi
 
 ## Managing clients in the partner's personal account
 
-Client management in the partner's personal account is performed at URL [https://mcs.mail.ru/partner/app/en/clients/](https://mcs.mail.ru/partner/app/en/clients/).
+Client management in the partner's personal account is performed at URL [https://cloud.vk.com/partner/app/en/clients/](https://cloud.vk.com/partner/app/en/clients/).
 
 The following operations are available:
 
@@ -41,7 +41,7 @@ The following operations are available:
 
 ### Adding new client
 
-1. [Open](https://mcs.mail.ru/partner/app/en/clients/) clients list.
+1. [Open](https://cloud.vk.com/partner/app/en/clients/) clients list.
 1. Click the **Add** button.
 1. Fill the fields in the form:
 
@@ -60,7 +60,7 @@ An invitation letter will be sent to the specified email address, in which the c
 
 ### Checking the balance
 
-1. [Open](https://mcs.mail.ru/partner/app/en/clients/) clients list.
+1. [Open](https://cloud.vk.com/partner/app/en/clients/) clients list.
 1. In the context menu to the right of the client, select **Balance**.
 
 On the tab **Detail** tab will display detailed information on the client's debits. On the tab **Expenses on services** — statistics of expenses for the selected period of time.
@@ -81,7 +81,7 @@ Blocking the client means that it is impossible to log in to the VK Cloud person
 
 To block a client:
 
-1. [Open](https://mcs.mail.ru/partner/app/en/clients/) clients list.
+1. [Open](https://cloud.vk.com/partner/app/en/clients/) clients list.
 
     - To block one client, in the context menu to the right of the client, select **Block**.
     - To block one or more clients, select the clients in the list and click the **Block** button.
@@ -102,7 +102,7 @@ Deleting a client implies its detachment from the partner, the resources used ar
 
 </warn>
 
-1. [Open](https://mcs.mail.ru/partner/app/en/clients/) clients list.
+1. [Open](https://cloud.vk.com/partner/app/en/clients/) clients list.
 
     - To delete one client, in the context menu to the right of the client, select **Delete**.
     - To delete one or more clients, select the clients in the list and click the **Delete** button.

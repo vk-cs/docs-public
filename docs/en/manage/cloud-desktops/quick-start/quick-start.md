@@ -17,11 +17,11 @@ After completing all the steps of a quick start, you will:
    - Unique account name.
    - Account password.
 
-1. Make sure that in [personal account](https://mcs.mail.ru/app/en) the Cloud Desktop service is connected: the **Cloud desktops** section is available in the menu on the left.
+1. Make sure that in [personal account](https://msk.cloud.vk.com/app/en) the Cloud Desktop service is connected: the **Cloud desktops** section is available in the menu on the left.
 
 ## 2. Set up an external infrastructure
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Select [project](/en/base/account/concepts/projects) where the desktop will be placed.
 1. Go to **Cloud desktops** → **Service settings**.
 1. In the **Network settings** tab, specify:

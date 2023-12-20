@@ -29,7 +29,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
    1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
@@ -114,7 +114,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
    1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Find the cluster you need in the list.
@@ -140,7 +140,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
    1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
@@ -231,7 +231,7 @@ If it is necessary that the Ingress controller is not accessible from the Intern
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/en).
+   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
    1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.

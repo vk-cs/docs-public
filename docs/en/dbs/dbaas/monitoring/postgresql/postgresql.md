@@ -10,7 +10,7 @@ This tool is only available if the PostgreSQL cluster was [created](../../../dba
 
 To view monitoring data:
 
-1. Open the [VK Cloud panel](https://mcs.mail.ru/app/).
+1. Open the [VK Cloud panel](https://msk.cloud.vk.com/app/).
 1. Go to Databases→Database Instances.
 1. Find the required instance in the list.
 1. Click on the instance host for which you want to view monitoring data.

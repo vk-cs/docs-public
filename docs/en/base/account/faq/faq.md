@@ -1,6 +1,6 @@
 ## How to register in VK Cloud?
 
-Go to [VK Cloud page](https://mcs.mail.ru/en/) and click **Create a VK Cloud Account**. Fill in all the required fields to start using the account. Read more in the article [Registration in VK Cloud](/en/additionals/start/account-registration).
+Go to [VK Cloud page](https://cloud.vk.com/en/) and click **Create a VK Cloud Account**. Fill in all the required fields to start using the account. Read more in the article [Registration in VK Cloud](/en/additionals/start/account-registration).
 
 ## How do I register with a phone number from another country?
 

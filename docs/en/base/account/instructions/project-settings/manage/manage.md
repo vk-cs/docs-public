@@ -4,7 +4,7 @@ Each project has a unique identifier (PID) of the form `mscNNNNNNNNNN`, for exam
 
 To get the PID:
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. In the header of your personal account, click on the name of the project.
 
     A list of projects in which you are a member will open.
@@ -15,7 +15,7 @@ To get the PID:
 
 The project name can be changed at any stage of the project life.
 
-1. Go to VK Cloud [personal account](https://mcs.mail.ru/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. In the header of your personal account, click on the name of the project.
 
     A list of projects in which you are a member will open.
@@ -123,7 +123,7 @@ By contacting [technical support](/en/contacts), it is possible to transfer obje
 </tablist>
 <tabpanel>
 
-Quotas for the most frequently used resources are displayed on the main page of the [personal account](https://mcs.mail.ru/app/en).
+Quotas for the most frequently used resources are displayed on the main page of the [personal account](https://msk.cloud.vk.com/app/en).
 
 To see a more complete list of quotas and find out detailed information about each quota from the list:
 

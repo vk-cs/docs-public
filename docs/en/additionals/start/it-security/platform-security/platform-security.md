@@ -40,4 +40,4 @@ The main goals of live migration include:
 
 ## VK Cloud certification
 
-VK Cloud brings together all the best practices from 20 years of experience in creating public services and uses the infrastructure that has been tested on other VK Cloud services with a multi-million audience. Guaranteed reliability can be confirmed by VK Cloud certificates, which are available [here](https://mcs.mail.ru/cloud-platform/certificates/).
+VK Cloud brings together all the best practices from 20 years of experience in creating public services and uses the infrastructure that has been tested on other VK Cloud services with a multi-million audience. Guaranteed reliability can be confirmed by VK Cloud certificates, which are available [here](https://cloud.vk.com/cloud-platform/certificates/).

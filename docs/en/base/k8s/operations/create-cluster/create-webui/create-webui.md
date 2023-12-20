@@ -16,7 +16,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
 1. Run the cluster creation wizard:
 
-   1. Go to [VK Cloud personal account](https://mcs.mail.ru/app/).
+   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
    1. Select [project](../../../../account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. If there are no clusters in the selected project, click the **Create cluster** button.

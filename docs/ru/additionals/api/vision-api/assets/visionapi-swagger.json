@@ -3,7 +3,7 @@
   "info": {
     "title": "Vision",
     "description": "Vision — технология распознавания лиц и объектов на базе машинного обучения. Используя компьютерное зрение, можно разработать систему распознавания лиц, автомобильных номеров и любых других объектов и образов, организовать модерацию изображений, анализировать фото- и видеозаписи",
-    "termsOfService": "https://mcs.mail.ru/docs/additionals/start/legal/policy-vision",
+    "termsOfService": "https://cloud.vk.com/docs/additionals/start/legal/policy-vision",
     "license": {
       "name": "Apache 2.0",
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
@@ -12,7 +12,7 @@
   },
   "externalDocs": {
     "description": "Узнать больше о Vision",
-    "url": "https://mcs.mail.ru/docs/ru/ml/vision"
+    "url": "https://cloud.vk.com/docs/ml/vision"
   },
   "servers": [
     {
