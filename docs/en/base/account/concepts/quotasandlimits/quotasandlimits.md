@@ -21,7 +21,7 @@ Technical limits are the limitations of the platform due to the features of the 
 
 Some of the limits are strict, they cannot be exceeded physically. For example, the limit on [4 GPUs per instance](#virtual_machines_9c2b1861) is related to the limitation of KVM technology, which does not allow connecting more than 4 video cards to one virtual machine.
 
-Other limits are not related to physical limitations and are based on the operational requirements of the services. For example, [network restrictions](#cloud_networks_neutron_5bc6daf2) are introduced to ensure optimal network performance and stable operation.
+Other limits are not related to physical limitations and are based on the operational requirements of the services. For example, [network restrictions](#cloud_networks_7dd887aa) are introduced to ensure optimal network performance and stable operation.
 
 There are no corresponding quotas for some technical limits.
 
@@ -142,7 +142,7 @@ The limit on the number of disks snapshots (200 pcs.) can be exceeded by contact
 
 Quota for the number of file storage networks (**NFS / CIFS file storage networks**) is a quota for internal use.
 
-### Cloud Networks (Neutron)
+### Cloud Networks
 
 The limits in this section are determined by the requirements of operation, they are used to ensure the stable operation of networks. It is not recommended to request quotas exceeding the corresponding limits via [technical support](/en/contacts).
 
@@ -166,6 +166,7 @@ Even if the quota for the total number of subnets in the project has been increa
 | Number of security groups in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Neutron firewall groups** in VK Cloud personal account, `secgroups` in the extended list | 12 pcs. | not limited | |
 | Number of security rules in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Neutron firewall rules** in VK Cloud personal account, `secgroup-rules` in the extended list | 200 pcs. | not limited | |
 | Number of ports in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Neutron ports** in VK Cloud personal account, `ports` in the extended list | 120 pcs. | 500 pcs. | — |
+| Number of external Neutron or Sprut ports in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **External ports Neutron** / **External ports Sprut** in VK Cloud personal account, `external_port` in the extended list | 5 pcs. | 6 pcs. | — |
 
 You can exceed the limit on the number of balancing rules per load balancer (10 pcs.) without contacting technical support. To do this, create rules using the OpenStack CLI. For stable operation, it is not recommended to use more than 30 rules per load balancer.
 
