@@ -8,6 +8,8 @@
   "markdown": "Cloud Streams is built in the cloud based on the [Arena data Streaming](https://arenadata.tech/products/arenadata-streaming/) solution. It is based on open source tools: Apache Kafka and Apache NiFi. It is suitable for solving tasks related to streaming data processing. You can connect Kafka and Nifi as Managed services in the cloud.<br><br><warn>To connect the service and create a cluster, contact [technical support](/ru/contacts) or leave a request on [the service website](https://cloud.vk.com/cloud-streams).</warn>",
   "icon": "",
   "weight": 0,
+  "isBeta": true,
+  "hidden": true,
   "uuid": "8d5737cb-660e-4458-ad2d-710eae19e96d",
   "additionalUuids": [
     "f8b6ee01-b83e-453f-94b4-46c3d0cadde0",
