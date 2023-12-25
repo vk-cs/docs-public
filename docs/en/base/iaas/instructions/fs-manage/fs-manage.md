@@ -177,7 +177,7 @@ The instructions are given for Ubuntu Linux. For information about connecting to
 3. Use the command specified in [properties](#viewing_a_list_of_file_storages) of the created NFS storage:
 
     ```bash
-    mount -t nfs <Mount point> /<Directory name>
+    mount -t nfs <Mount point> ./<Directory name>
     ```
 
     There is:
