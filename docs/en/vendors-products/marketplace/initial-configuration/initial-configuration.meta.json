@@ -8,6 +8,9 @@
   "sectionTitle": "Configuring marketplace services",
   "icon": "",
   "infobarItems": null,
+  "additionalUuids": [
+    "216f93f5-8ffc-4f06-9182-3efa8158dc42"
+  ],
   "weight": 2,
   "uuid": "81c81c9a-3e6b-4d01-8a6a-5593998237db"
 }
