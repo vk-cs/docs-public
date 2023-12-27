@@ -6,10 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/manage/monitoring/monitoring-info/mon-architecture"
-                },
-                {
-                    "link": "docs/ru/manage/monitoring/monitoring-info/mon-agent-sw"
+                    "link": "docs/ru/manage/monitoring/concepts/mon-architecture"
                 }
             ]
         },
@@ -17,10 +14,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/manage/monitoring/monitoring-start/mon-setup-new"
+                    "link": "docs/ru/manage/monitoring/instructions/mon-setup-new"
                 },
                 {
-                    "link": "docs/ru/manage/monitoring/monitoring-start/mon-setup-current"
+                    "link": "docs/ru/manage/monitoring/instructions/mon-setup-current"
                 }
             ]
         }
