@@ -1,17 +1,12 @@
 {
-    "title": "Развертывание Nexus 3",
+    "title": "Nexus 3 deployment",
     "pageDescription": "Шаги по развертыванию сервиса Sonatype Nexus 3 в целевой проект VK Cloud с помощью Marketplace.",
     "shortDescription": "Развертывание сервиса Sonatype Nexus 3 в проекте",
-    "metaTitle": "Развертывание Nexus 3",
+    "metaTitle": "Nexus 3 deployment",
     "metaDescription": "Marketplace VK Cloud: шаги по развертыванию сервиса Sonatype Nexus 3 в целевой проект",
-    "sectionTitle": "Развертывание Nexus 3",
+    "sectionTitle": "Nexus 3 deployment",
     "icon": "",
     "infobarItems": null,
     "weight": 4,
-    "additionalUuids": [
-        "7bc44fb4-b3d9-4f39-b56c-ba3387a6ef2c"
-    ],
-    "uuid": "ec93abd2-9c23-44bc-8bc0-6320bd05f81b",
-    "createdAt": "2023-10-31T07:54:56.000Z",
-    "updatedAt": "2023-12-20T05:58:00.000Z"
+    "uuid": "6c17dbdd-c35c-4253-8a71-3aa2f79034db"
 }
