@@ -8,6 +8,9 @@
   "sectionTitle": "Настройка сервисов магазина приложений",
   "icon": "",
   "infobarItems": null,
+  "additionalUuids": [
+    "b89a3a66-c4e6-41d7-874a-f124ab944853"
+  ],
   "weight": 2,
   "uuid": "8e9665fc-7e79-44de-89a1-e97dc4dd361c"
 }

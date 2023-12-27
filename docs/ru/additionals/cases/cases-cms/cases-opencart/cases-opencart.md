@@ -2,7 +2,7 @@
 
 Данная инструкция поможет развернуть OpenCart версии 4.0.2.3 в операционной системе Ubuntu 22.04 в VK Cloud, а также настроить DNS-запись для доступа по доменному имени. В качестве СУБД используется MySQL 8.0 конфигурации Single.
 
-## 1. Подготовительные шаги
+## Подготовительные шаги
 
 1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
 1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
@@ -48,7 +48,7 @@
    Address: 87.239.106.48
    ```
 
-## Установите OpenCart на ВМ
+## 1. Установите OpenCart на ВМ
 
 1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ `Ubuntu_22_04_OpenCart`.
 1. Обновите пакеты до актуальной версии и перезагрузите ВМ с помощью команд:
@@ -116,7 +116,7 @@
       define('DIR_STORAGE', '/var/www/storage/');
       ```
 
-## 3. Проверьте работоспособность OpenCart
+## 2. Проверьте работоспособность OpenCart
 
 В браузере перейдите по адресу `http://site-opencart.example.vk.cloud/opencart/`. При успешной установке откроется страница с демо-магазином.
 
