@@ -1,0 +1,10 @@
+{
+    "title": "Управление telegraf и его плагинами",
+    "pageDescription": "",
+    "shortDescription": "Как включить или отключить плагин для метрик мониторинга, выключить или включить сам агент",
+    "metaTitle": "Управление telegraf и его плагинами",
+    "metaDescription": "",
+    "sectionTitle": "Управление telegraf и его плагинами",
+    "icon": "",
+    "weight": 3
+}

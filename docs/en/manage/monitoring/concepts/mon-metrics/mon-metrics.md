@@ -1,0 +1,209 @@
+По умолчанию стандартный агент мониторинга собирает следующую информацию из операционной системы:
+
+- Потребление CPU (плагин [cpu](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/cpu)):
+
+  - `time_user` (float)
+  - `time_system` (float)
+  - `time_idle` (float)
+  - `time_active` (float)
+  - `time_nice` (float)
+  - `time_iowait` (float)
+  - `time_irq` (float)
+  - `time_softirq` (float)
+  - `time_steal` (float)
+  - `time_guest` (float)
+  - `time_guest_nice` (float)
+  - `usage_user` (float, percent)
+  - `usage_system` (float, percent)
+  - `usage_idle` (float, percent)
+  - `usage_active` (float)
+  - `usage_nice` (float, percent)
+  - `usage_iowait` (float, percent)
+  - `usage_irq` (float, percent)
+  - `usage_softirq` (float, percent)
+  - `usage_steal` (float, percent)
+  - `usage_guest` (float, percent)
+  - `usage_guest_nice` (float, percent)
+
+- Потребление памяти (плагин [mem](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/mem)):
+
+  - `active` (integer, Darwin, FreeBSD, Linux, OpenBSD)
+  - `available` (integer)
+  - `available_percent` (float)
+  - `buffered` (integer, FreeBSD, Linux)
+  - `cached` (integer, FreeBSD, Linux, OpenBSD)
+  - `commit_limit` (integer, Linux)
+  - `committed_as` (integer, Linux)
+  - `dirty` (integer, Linux)
+  - `free` (integer, Darwin, FreeBSD, Linux, OpenBSD)
+  - `high_free` (integer, Linux)
+  - `high_total` (integer, Linux)
+  - `huge_pages_free` (integer, Linux)
+  - `huge_page_size` (integer, Linux)
+  - `huge_pages_total` (integer, Linux)
+  - `inactive` (integer, Darwin, FreeBSD, Linux, OpenBSD)
+  - `laundry` (integer, FreeBSD)
+  - `low_free` (integer, Linux)
+  - `low_total` (integer, Linux)
+  - `mapped` (integer, Linux)
+  - `page_tables` (integer, Linux)
+  - `shared` (integer, Linux)
+  - `slab` (integer, Linux)
+  - `sreclaimable` (integer, Linux)
+  - `sunreclaim` (integer, Linux)
+  - `swap_cached` (integer, Linux)
+  - `swap_free` (integer, Linux)
+  - `swap_total` (integer, Linux)
+  - `total` (integer)
+  - `used` (integer)
+  - `used_percent` (float)
+  - `vmalloc_chunk` (integer, Linux)
+  - `vmalloc_total` (integer, Linux)
+  - `vmalloc_used` (integer, Linux)
+  - `wired` (integer, Darwin, FreeBSD, OpenBSD)
+  - `write_back` (integer, Linux)
+  - `write_back_tmp` (integer, Linux)
+
+- Статистика страниц ядра ОС (плагин [kernel_vmstat](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/kernel_vmstat)):
+
+  - `nr_free_pages` (integer, nr_free_pages)
+  - `nr_inactive_anon` (integer, nr_inactive_anon)
+  - `nr_active_anon` (integer, nr_active_anon)
+  - `nr_inactive_file` (integer, nr_inactive_file)
+  - `nr_active_file` (integer, nr_active_file)
+  - `nr_unevictable` (integer, nr_unevictable)
+  - `nr_mlock` (integer, nr_mlock)
+  - `nr_anon_pages` (integer, nr_anon_pages)
+  - `nr_mapped` (integer, nr_mapped)
+  - `nr_file_pages` (integer, nr_file_pages)
+  - `nr_dirty` (integer, nr_dirty)
+  - `nr_writeback` (integer, nr_writeback)
+  - `nr_slab_reclaimable` (integer, nr_slab_reclaimable)
+  - `nr_slab_unreclaimable` (integer, nr_slab_unreclaimable)
+  - `nr_page_table_pages` (integer, nr_page_table_pages)
+  - `nr_kernel_stack` (integer, nr_kernel_stack)
+  - `nr_unstable` (integer, nr_unstable)
+  - `nr_bounce` (integer, nr_bounce)
+  - `nr_vmscan_write` (integer, nr_vmscan_write)
+  - `nr_writeback_temp` (integer, nr_writeback_temp)
+  - `nr_isolated_anon` (integer, nr_isolated_anon)
+  - `nr_isolated_file` (integer, nr_isolated_file)
+  - `nr_shmem` (integer, nr_shmem)
+  - `numa_hit` (integer, numa_hit)
+  - `numa_miss` (integer, numa_miss)
+  - `numa_foreign` (integer, numa_foreign)
+  - `numa_interleave` (integer, numa_interleave)
+  - `numa_local` (integer, numa_local)
+  - `numa_other` (integer, numa_other)
+  - `nr_anon_transparent_hugepages` (integer, nr_anon_transparent_hugepages)
+  - `pgpgin` (integer, pgpgin)
+  - `pgpgout` (integer, pgpgout)
+  - `pswpin` (integer, pswpin)
+  - `pswpout` (integer, pswpout)
+  - `pgalloc_dma` (integer, pgalloc_dma)
+  - `pgalloc_dma32` (integer, pgalloc_dma32)
+  - `pgalloc_normal` (integer, pgalloc_normal)
+  - `pgalloc_movable` (integer, pgalloc_movable)
+  - `pgfree` (integer, pgfree)
+  - `pgactivate` (integer, pgactivate)
+  - `pgdeactivate` (integer, pgdeactivate)
+  - `pgfault` (integer, pgfault)
+  - `pgmajfault` (integer, pgmajfault)
+  - `pgrefill_dma` (integer, pgrefill_dma)
+  - `pgrefill_dma32` (integer, pgrefill_dma32)
+  - `pgrefill_normal` (integer, pgrefill_normal)
+  - `pgrefill_movable` (integer, pgrefill_movable)
+  - `pgsteal_dma` (integer, pgsteal_dma)
+  - `pgsteal_dma32` (integer, pgsteal_dma32)
+  - `pgsteal_normal` (integer, pgsteal_normal)
+  - `pgsteal_movable` (integer, pgsteal_movable)
+  - `pgscan_kswapd_dma` (integer, pgscan_kswapd_dma)
+  - `pgscan_kswapd_dma32` (integer, pgscan_kswapd_dma32)
+  - `pgscan_kswapd_normal` (integer, pgscan_kswapd_normal)
+  - `pgscan_kswapd_movable` (integer, pgscan_kswapd_movable)
+  - `pgscan_direct_dma` (integer, pgscan_direct_dma)
+  - `pgscan_direct_dma32` (integer, pgscan_direct_dma32)
+  - `pgscan_direct_normal` (integer, pgscan_direct_normal)
+  - `pgscan_direct_movable` (integer, pgscan_direct_movable)
+  - `zone_reclaim_failed` (integer, zone_reclaim_failed)
+  - `pginodesteal` (integer, pginodesteal)
+  - `slabs_scanned` (integer, slabs_scanned)
+  - `kswapd_steal` (integer, kswapd_steal)
+  - `kswapd_inodesteal` (integer, kswapd_inodesteal)
+  - `kswapd_low_wmark_hit_quickly` (integer, kswapd_low_wmark_hit_quickly)
+  - `kswapd_high_wmark_hit_quickly` (integer, kswapd_high_wmark_hit_quickly)
+  - `kswapd_skip_congestion_wait` (integer, kswapd_skip_congestion_wait)
+  - `pageoutrun` (integer, pageoutrun)
+  - `allocstall` (integer, allocstall)
+  - `pgrotated` (integer, pgrotated)
+  - `compact_blocks_moved` (integer, compact_blocks_moved)
+  - `compact_pages_moved` (integer, compact_pages_moved)
+  - `compact_pagemigrate_failed` (integer, compact_pagemigrate_failed)
+  - `compact_stall` (integer, compact_stall)
+  - `compact_fail` (integer, compact_fail)
+  - `compact_success` (integer, compact_success)
+  - `htlb_buddy_alloc_success` (integer, htlb_buddy_alloc_success)
+  - `htlb_buddy_alloc_fail` (integer, htlb_buddy_alloc_fail)
+  - `unevictable_pgs_culled` (integer, unevictable_pgs_culled)
+  - `unevictable_pgs_scanned` (integer, unevictable_pgs_scanned)
+  - `unevictable_pgs_rescued` (integer, unevictable_pgs_rescued)
+  - `unevictable_pgs_mlocked` (integer, unevictable_pgs_mlocked)
+  - `unevictable_pgs_munlocked` (integer, unevictable_pgs_munlocked)
+  - `unevictable_pgs_cleared` (integer, unevictable_pgs_cleared)
+  - `unevictable_pgs_stranded` (integer, unevictable_pgs_stranded)
+  - `unevictable_pgs_mlockfreed` (integer, unevictable_pgs_mlockfreed)
+  - `thp_fault_alloc` (integer, thp_fault_alloc)
+  - `thp_fault_fallback` (integer, thp_fault_fallback)
+  - `thp_collapse_alloc` (integer, thp_collapse_alloc)
+  - `thp_collapse_alloc_failed` (integer, thp_collapse_alloc_failed)
+  - `thp_split` (integer, thp_split)
+
+- Информация о диске (плагин [disk](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/disk)):
+
+  - `free` (integer, bytes)
+  - `total` (integer, bytes)
+  - `used` (integer, bytes)
+  - `used_percent` (float, percent)
+  - `inodes_free` (integer, files)
+  - `inodes_total` (integer, files)
+  - `inodes_used` (integer, files)
+
+- Информация о дисковом IO (плагин [diskio](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/diskio)):
+
+  - `reads` (integer, counter)
+  - `writes` (integer, counter)
+  - `read_bytes` (integer, counter, bytes)
+  - `write_bytes` (integer, counter, bytes)
+  - `read_time` (integer, counter, milliseconds)
+  - `write_time` (integer, counter, milliseconds)
+  - `io_time` (integer, counter, milliseconds)
+  - `weighted_io_time` (integer, counter, milliseconds)
+  - `iops_in_progress` (integer, gauge)
+  - `merged_reads` (integer, counter)
+  - `merged_writes` (integer, counter)
+
+- Информация о работе сетевой подсистемы внутри ОС (плагин [net](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/net/NET_README.md)):
+
+  - `bytes_sent` — the total number of bytes sent by the interface;
+  - `bytes_recv` — the total number of bytes received by the interface;
+  - `packets_sent` — the total number of packets sent by the interface;
+  - `packets_recv` — the total number of packets received by the interface;
+  - `err_in` — the total number of receive errors detected by the interface;
+  - `err_out` — the total number of transmit errors detected by the interface;
+  - `drop_in` — the total number of received packets dropped by the interface;
+  - `drop_out` — the total number of transmitted packets dropped by the interface.
+
+- Информация из [NetStat](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/net/NETSTAT_README.md):
+
+  - `tcp_established`
+  - `tcp_syn_sent`
+  - `tcp_syn_recv`
+  - `tcp_fin_wait1`
+  - `tcp_fin_wait2`
+  - `tcp_time_wait`
+  - `tcp_close`
+  - `tcp_close_wait`
+  - `tcp_last_ack`
+  - `tcp_listen`
+  - `tcp_closing`
+  - `tcp_none`
