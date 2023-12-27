@@ -7,10 +7,6 @@ To run this monitoring scenario, install and configure servers using the followi
 
 <warn>
 
-**Attention**
-
-Elasticsearch and Kibana must be installed as [application in VK Cloud](https://msk.cloud.vk.com/app/services/marketplace/setup/elk_single_instance/).
-
 If you use other servers and hardware, some script steps may differ from those described below.
 
 </warn>
