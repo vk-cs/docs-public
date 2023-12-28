@@ -1,38 +1,22 @@
 1. Подключите сервис: если сервис на этапе бета-тестирования, отправьте запрос в [техническую поддержку](/ru/contacts).
-1. Создайте ВМ из публичного образа Linux с доступом в интернет. В примере используется образ Ubuntu 18.04.
+1. [Создайте ВМ](/ru/base/iaas/instructions/vm/vm-create) из публичного образа Linux с доступом в интернет. В примере используется образ Ubuntu 22.04.
 1. [Подключитесь к ВМ по SSH](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix).
-1. Установите на ВМ:
+1. Установите на ВМ [Fluent Bit](https://docs.fluentbit.io/manual/installation/linux/ubuntu) версии 2.1.9:
 
-   - [Go не ниже версии 1.17](https://go.dev/doc/install):
+   ```bash
+   curl https://cloudlogging.hb.ru-msk.vkcs.cloud/fluent-bit-install-scripts/install.sh | FLUENT_BIT_RELEASE_VERSION=2.1.9 sh
+   ```
 
-     ```bash
-     wget https://go.dev/dl/go1.17.6.linux-amd64.tar.gz
-     tar -xzf go1.17.6.linux-amd64.tar.gz
-     export PATH=$PWD/go/bin:$PATH
-     ```
+   <info>
 
-   - Git:
+   Для AltLinux Server p10 установите версию 1.9.5:
 
-     ```bash
-     sudo apt install git
-     ```
+   ```bash
+   sudo apt-get update
+   sudo apt-get install fluent-bit  
+   ```
 
-   - [Fluent-bit](https://docs.fluentbit.io/manual/installation/linux/ubuntu):
+   </info>
 
-     ```bash
-     sudo apt install ca-certificates
-     sudo curl https://raw.githubusercontent.com/fluent/fluent-bit/master/install.sh | sh
-     Build-essential
-     sudo apt install build-essential
-     ```
-
-1. Сгенерируйте учетные данные для подключения к сервису:
-
-   1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-   1. Перейдите в раздел **Мониторинг** → **Логирование**.
-   1. Нажмите кнопку **Настройки**.
-   1. Перейдите на вкладку **Генерация учетных данных**.
-   1. Нажмите кнопку **Сгенерировать**.
-   1. Сохраните полученные учетные данные.
-
-1. [Подключите](../instructions/connect-plugin/) плагин `cloudlogs-fluent-bit`.
+1. [Сгенерируйте](../instructions/generate-userdata/) учетные данные для подключения к сервису.
+1. [Установите и настройте](../instructions/connect-plugin/) плагин `vkcloudlogs-fluent-bit-plugin`.

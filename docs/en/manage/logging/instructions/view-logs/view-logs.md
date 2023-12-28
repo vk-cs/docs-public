@@ -1,1 +1,32 @@
-To view logs, use [API methods](/ru/additionals/api/logging "change-lang").
+To view the logs, use a convenient method:
+
+- [Go to](https://msk.cloud.vk.com/app/en) **Monitoring** → **Logging** chapter to personal account.
+- Use [API methods](/ru/additionals/api/logging "change-lang").
+
+To refine the search results, use [search query language](../../concepts/search-tools/). Examples of search expressions:
+
+- The message contains the line:
+
+  ```sql
+  some message
+  ```
+
+  ```sql
+  message: "some message"
+  ```
+
+  ```sql
+  message: "error: \"some message\"
+  ```
+
+- Using time, logging level and `payload`:
+
+  ```sql
+  level >= debug AND (timestamp <= "2023-04-10T10:20:00Z" OR payload.code = 200)
+  ```
+
+- Using `NOT`, `EXISTS`:
+
+  ```sql
+  service_id <> databases AND NOT message: hello AND payload.status EXISTS
+  ```
