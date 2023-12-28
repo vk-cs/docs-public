@@ -88,7 +88,7 @@ To display data only about the public key, add the `--public-key` option to the 
 </tabpanel>
 <tabpanel>
 
-1. Use the Gitlab [official documentation](https://github.com/gitlabhq/gitlabhq/blob/master/doc/user/ssh.md#generate-an-ssh-key-pair) for local generation of a key pair.
+1. Use the GitLab [official documentation](https://github.com/gitlabhq/gitlabhq/blob/master/doc/user/ssh.md#generate-an-ssh-key-pair) for local generation of a key pair.
 1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 1. Run the command:
 

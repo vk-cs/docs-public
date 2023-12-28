@@ -5,7 +5,7 @@ The container service allows you to create Kubernetes clusters and run various s
 - Storing and handling serverless functions in containers: OpenFaaS, OpenWhisk, Kubeless.
 - Service Mesh: Istio, Consul, Linkerd.
 - Monitoring, analytics, logging: Prometheus, Fluentd, Jaeger, OpenTracing.
-- CI/CD: Gitlab, CircleCI, Travis CI.
+- CI/CD: GitLab, CircleCI, Travis CI.
 - IaC (infrastructure as code): Terraform, Helm.
 - Big Data and data science: Spark.
 

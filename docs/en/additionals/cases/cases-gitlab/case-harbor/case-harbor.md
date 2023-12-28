@@ -5,7 +5,7 @@ In this article, we will look at how to install and configure Harbor repository 
 Before installing Harbor:
 
 1. [Install and configure Docker](/en/additionals/cases/cases-gitlab/case-docker).
-2. [Install and configure Gitlab](/en/additionals/cases/cases-gitlab/case-gitlab).
+2. [Install and configure GitLab](/en/additionals/cases/cases-gitlab/case-gitlab).
 
 Harbor is installed as a Docker image using the online installer.
 
@@ -38,9 +38,9 @@ data_volume: /opt/harbor
 
 And:
 
-- The hostname is the same as the Gitlab name because the deployment is done on the server that hosts Gitlab.
-- Non-standard HTTP and HTTPS ports are used, as the standard ones are used by the Gitlab web interface.
-- Uses the LetsEncrypt certificate and key that was created when you set up Gitlab.
+- The hostname is the same as the GitLab name because the deployment is done on the server that hosts GitLab.
+- Non-standard HTTP and HTTPS ports are used, as the standard ones are used by the GitLab web interface.
+- Uses the LetsEncrypt certificate and key that was created when you set up GitLab.
 
 3. Run the `install.sh` script:
 
@@ -90,7 +90,7 @@ The default login is `admin`. The primary password is set in the `harbor.yml` fi
 
 **![](./assets/1583617032537-1583617032537.png)**
 
-4. Create a user under which Gitlab will work with Harbor. To do this, select Users on the left:
+4. Create a user under which GitLab will work with Harbor. To do this, select Users on the left:
 
 ![](./assets/1583617595313-1583617595313.png)
 
@@ -102,11 +102,11 @@ The default login is `admin`. The primary password is set in the `harbor.yml` fi
 
 **Attention**
 
-Remember the password entered for the user, it will be required for integration with Gitlab.
+Remember the password entered for the user, it will be required for integration with GitLab.
 
 </warn>
 
-6. Create a new project that will contain the built images from Gitlab. To do this, select Projects on the left:
+6. Create a new project that will contain the built images from GitLab. To do this, select Projects on the left:
 
 ![](./assets/1583617765191-1583617765191.png)
 
