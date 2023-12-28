@@ -1,15 +1,15 @@
 В данной статье описано, как настроить авторазвертывание приложения в кластер Kubernetes. В примере будет использоваться оборудование:
 
-- Сервер Ubuntu 18.04 LTS x86_64: на нем будут установлены и настроены Docker, Gitlab и Harbor.
+- Сервер Ubuntu 18.04 LTS x86_64: на нем будут установлены и настроены Docker, GitLab и Harbor.
 - [Развернутый](/ru/base/k8s/operations/create-cluster/create-webui) в VK Cloud кластер K8s.
 
 ## Подготовительные шаги
 
 1. [Установите и настройте Docker](/ru/additionals/cases/cases-gitlab/case-docker).
-1. [Установите и настройте Gitlab](/ru/additionals/cases/cases-gitlab/case-gitlab).
+1. [Установите и настройте GitLab](/ru/additionals/cases/cases-gitlab/case-gitlab).
 1. [Установите и настройте Harbor](/ru/additionals/cases/cases-gitlab/case-harbor).
 
-## 1. Настройте Gitlab-runner
+## 1. Настройте GitLab-runner
 
 <info>
 
@@ -17,11 +17,11 @@
 
 </info>
 
-1. Авторизуйтесь в веб-интерфейсе Gitlab c правами администратора:
+1. Авторизуйтесь в веб-интерфейсе GitLab c правами администратора:
 
    ![](./assets/1583699032662-1583699032662.png)
 
-1. Скопируйте **registration token**. В консоли на сервере, на котором установлен Gitlab-runner, выполните команду:
+1. Скопируйте **registration token**. В консоли на сервере, на котором установлен GitLab-runner, выполните команду:
 
    ```bash
    docker exec -it gitlab-runner gitlab-runner register -n --url https://<SERVER_DNS_NAME>/ --executor docker --registration-token ua2k238fbMtAxMBBRf_z --description "shared-runner" --docker-image="docker:dind" --tag-list "shared_runner" --docker-privileged --docker-volumes /var/run/docker.sock:/var/run/docker.sock
@@ -88,13 +88,13 @@
 
    - `image` — указывает docker image, в котором будет запускаться сборка. Поскольку собирается Docker-образ, требуется image, содержащий нужные для сборки утилиты. Обычно используется `image docker:latest`.
    - `stages` — описывает стадии сборки образа. В примере стадия `test` пропускается.
-   - `before_script` — первая стадия: вход в registry по реквизитам Gitlab runner.
+   - `before_script` — первая стадия: вход в registry по реквизитам GitLab runner.
    - `build` — сборка образа. Стандартная сборка Docker-образа c использованием Dockerfile в репозитории.
    - `release` — секция формирования окончательного образа. В примере берем образ, собранный на предыдущей стадии, добавляем ему тег `latest` и загружаем в репозиторий.
 
    <warn>
 
-   `tags: shared_runner` — тег, который был указан при регистрации runner. Указание этого тега в файле `.gitlab-ci.yml` разрешает Gitlab-runner выполнять этот скрипт. После сборки вносится собранный образ в регистри с тегом `CI_COMMIT_REF_NAME`. Подробно о переменных, которые можно использовать при сборке [читайте в статье](https://docs.gitlab.com/ee/ci/variables). В примере, поскольку происходит коммит в ветку `master`, имя образа будет `k8s/k8s-conf-demo:master`.
+   `tags: shared_runner` — тег, который был указан при регистрации runner. Указание этого тега в файле `.gitlab-ci.yml` разрешает GitLab-runner выполнять этот скрипт. После сборки вносится собранный образ в регистри с тегом `CI_COMMIT_REF_NAME`. Подробно о переменных, которые можно использовать при сборке [читайте в статье](https://docs.gitlab.com/ee/ci/variables). В примере, поскольку происходит коммит в ветку `master`, имя образа будет `k8s/k8s-conf-demo:master`.
 
    </warn>
 
@@ -118,7 +118,7 @@
       7c91eab..55dd5fa  master -> master
    ```
 
-   Как только файл `.gitlab-ci.yml` появится в репозитории, Gitlab автоматически запустит его сборку.
+   Как только файл `.gitlab-ci.yml` появится в репозитории, GitLab автоматически запустит его сборку.
 
 1. Дождитесь завершения сборки.
 
@@ -323,9 +323,9 @@
    ash-work:~ kubectl delete -f deployment.yaml
    ```
 
-## 4. Разверните приложение в кластере Kubernetes с использованием Gitlab CI/CD
+## 4. Разверните приложение в кластере Kubernetes с использованием GitLab CI/CD
 
-Gitlab по умолчанию поддерживает интеграцию с кластером Kubernetes. Чтобы настроить интеграцию, получите несколько параметров кластера:
+GitLab по умолчанию поддерживает интеграцию с кластером Kubernetes. Чтобы настроить интеграцию, получите несколько параметров кластера:
 
 1. Получите API URL:
 
@@ -355,7 +355,7 @@ Gitlab по умолчанию поддерживает интеграцию с 
    kubectl get secret default-token-fhvxq -o jsonpath="{['data']['ca\.crt']}" | base64 --decode
    ```
 
-1. Создайте файл `gitlab-admin-service-account.yaml`, который описывает права доступа Gitlab к кластеру.
+1. Создайте файл `gitlab-admin-service-account.yaml`, который описывает права доступа GitLab к кластеру.
 
    <details>
      <summary>gitlab-admin-service-account.yaml</summary>
@@ -390,7 +390,7 @@ Gitlab по умолчанию поддерживает интеграцию с 
    kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep gitlab-admin | awk '{print $1}')
    ```
 
-1. Перейдите в администраторскую часть интерфейса Gitlab и нажмите **Add Kubernetes Cluster**:
+1. Перейдите в администраторскую часть интерфейса GitLab и нажмите **Add Kubernetes Cluster**:
 
    ![](./assets/1583702333521-1583702333521.png)
 
