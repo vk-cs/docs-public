@@ -1,15 +1,15 @@
-In this article, we will look at how to install and configure Gitlab.
+In this article, we will look at how to install and configure GitLab.
 
 After that you can:
 
 - [Install and configure Harbor](/en/additionals/cases/cases-gitlab/case-harbor);
 - [Configure application auto-deployment to Kubernetes cluster](/en/additionals/cases/cases-gitlab/case-k8s-app).
 
-## Gitlab installation
+## GitLab installation
 
-Before installing Gitlab, [install and configure Docker](/en/additionals/cases/cases-docker-ce/docker-ce-u18).
+Before installing GitLab, [install and configure Docker](/en/additionals/cases/cases-docker-ce/docker-ce-u18).
 
-To install Gitlab:
+To install GitLab:
 
 1. Assign a DNS name to the server that will be used to access Git in one of the following ways:
 
@@ -137,9 +137,9 @@ bb20bc6cb7d5 . . . gitlab/gitlab-ce:latest . . . "/assets/wrapper" . ->443/tcp g
 a2209bb357e7 . . gitlab/gitlab-runner:latest . "/usr/bin/dumb-init ..." 10 minutes ago . Up 10 minutes . . . . . . git lab runner
 ```
 
-## Set up Gitlab
+## Set up GitLab
 
-1. Installing Gitlab generates self-signed certificates for HTTPS. Let's not use them, let's switch to LetsEncrypt certificates. To do this, open the file `/opt/gitlab/config/gitlab.rb` and change the following parameters to the specified form:
+1. Installing GitLab generates self-signed certificates for HTTPS. Let's not use them, let's switch to LetsEncrypt certificates. To do this, open the file `/opt/gitlab/config/gitlab.rb` and change the following parameters to the specified form:
 
 ```
 ################################################### ################################
@@ -176,7 +176,7 @@ At the time of writing, the LetsEncrypt certificate issuance mechanism was not w
 
 </info>
 
-3. In the browser, in the search bar, enter the name of the Gitlab server and create an administrator (root) password:
+3. In the browser, in the search bar, enter the name of the GitLab server and create an administrator (root) password:
 
 **![](./assets/1583504218728-1583504218728.png)**
 
@@ -198,7 +198,7 @@ Then login:
 
 To set up CI/CD, take the project from [Workshop How to Run Your Application on Kubernetes](https://www.youtube.com/watch?v=rBzgGmuBgo0).
 
-Fork [repository](https://github.com/ssfilatov/k8s-conf-demo) to local Gitlab, then set up deployment and delivery for it.
+Fork [repository](https://github.com/ssfilatov/k8s-conf-demo) to local GitLab, then set up deployment and delivery for it.
 
 For this:
 
@@ -243,8 +243,8 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-6. In your home directory in the .ssh folder, a pair of myrepo keys will be created: public and private. Upload the public key to Gitlab. For this:
-1. Go to the Gitlab web interface, click on the icon in the upper right corner, and select Settings:
+6. In your home directory in the .ssh folder, a pair of myrepo keys will be created: public and private. Upload the public key to GitLab. For this:
+1. Go to the GitLab web interface, click on the icon in the upper right corner, and select Settings:
 
     **![](./assets/1583505449607-1583505449606.png)**
 

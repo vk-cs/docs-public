@@ -1,6 +1,6 @@
 {
     "title": "Настройка авторазвертывания приложения в кластер Kubernetes",
-    "pageDescription": "Как настроить Gitlab, Harbor и авторазвертывание приложения в кластер Kubernetes.",
+    "pageDescription": "Как настроить GitLab, Harbor и авторазвертывание приложения в кластер Kubernetes.",
     "shortDescription": "",
     "metaTitle": "Настройка авторазвертывания приложения в кластер Kubernetes",
     "metaDescription": "В данной статье рассмотрим, как настроить авторазвертывание приложения в кластер Kubernetes. Перед этим: Установите и настройте Docker. Установите и настро",

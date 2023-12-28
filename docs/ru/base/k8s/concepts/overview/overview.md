@@ -5,7 +5,7 @@
 - Хранение и обработка serverless-функций в контейнерах: OpenFaaS, OpenWhisk, Kubeless.
 - Service Mesh: Istio, Consul, Linkerd.
 - Мониторинг, аналитика, логирование: Prometheus, Fluentd, Jaeger, OpenTracing.
-- CI/CD: Gitlab, CircleCI, Travis CI.
+- CI/CD: GitLab, CircleCI, Travis CI.
 - IaC (инфраструктура как код): Terraform, Helm.
 - Большие данные и Data Science: Spark.
 
