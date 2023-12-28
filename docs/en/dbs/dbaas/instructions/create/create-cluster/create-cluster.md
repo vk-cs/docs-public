@@ -381,8 +381,6 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         The larger the disk size, the higher its performance in some disk operations.
 
-      - **Enable volume autoscaling**: select this option so that the disk size increases automatically when the disk is filled with data. When selecting this option, also specify **The maximum volume size, GB**.
-
       - **Network**: the network where the cluster will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/operations/manage-net#creating_a_network).
 
       - **Assign external IP:** select this option to assign a floating IP address to cluster hosts.
