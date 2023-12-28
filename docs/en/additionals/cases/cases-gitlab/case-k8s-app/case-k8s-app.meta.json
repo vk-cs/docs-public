@@ -1,6 +1,6 @@
 {
     "title": "Configuring Application Auto-Deployment to a Kubernetes Cluster",
-    "pageDescription": "How to set up Gitlab, Harbor, and auto-deployment of an application to a Kubernetes cluster.",
+    "pageDescription": "How to set up GitLab, Harbor, and auto-deployment of an application to a Kubernetes cluster.",
     "shortDescription": "",
     "metaTitle": "Configuring application auto-deployment to Kubernetes cluster",
     "metaDescription": "This article will show you how to auto-deploy an application to a Kubernetes cluster. Before that: Install and configure Docker. Install and configure",

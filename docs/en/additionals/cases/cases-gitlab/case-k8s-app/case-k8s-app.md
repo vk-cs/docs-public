@@ -3,20 +3,20 @@ In this article, we will look at how to set up auto-deployment of an application
 Before that:
 
 1. [Install and configure Docker](/en/additionals/cases/cases-gitlab/case-docker).
-2. [Install and configure Gitlab](/en/additionals/cases/cases-gitlab/case-gitlab).
+2. [Install and configure GitLab](/en/additionals/cases/cases-gitlab/case-gitlab).
 3. [Install and configure Harbor](/en/additionals/cases/cases-gitlab/case-harbor).
 
-## Set up Gitlab-runner
+## Set up GitLab-runner
 
-Gitlab-runner is an environment for autobuilding Gitlab projects. To set up autobuild, install and register runner with Gitlab. You can register a specific runner for each project (specific runner) or a common runner for multiple projects (shared runner). Let's set up a common runner.
+GitLab-runner is an environment for autobuilding GitLab projects. To set up autobuild, install and register runner with GitLab. You can register a specific runner for each project (specific runner) or a common runner for multiple projects (shared runner). Let's set up a common runner.
 
 For this:
 
-1. Log in to the Gitlab web interface with administrator rights:
+1. Log in to the GitLab web interface with administrator rights:
 
 ![](./assets/1583699032662-1583699032662.png)
 
-2. Copy the registration token and run the following in the console on the server where Gitlab-runner is installed:
+2. Copy the registration token and run the following in the console on the server where GitLab-runner is installed:
 
 ```
 root@ubuntu-std3-2-4-40gb:~# docker exec -it gitlab-runner gitlab-runner register -n --url https://<SERVER_DNS_NAME>/ --executor docker --registration-token ua2k238fbMtAxMBBRf_z -- description "shared-runner" --docker-image="docker:dind" --tag-list "shared_runner" --docker-privileged --docker-volumes /var/run/docker.sock:/var/run/docker .sock
@@ -102,13 +102,13 @@ General Purpose Variables:
 
 Variables used for work:
 
-- before_script - the stage that is executed first. We log in to the register using the variables that are specified in the Gitlab runner settings.
+- before_script - the stage that is executed first. We log in to the register using the variables that are specified in the GitLab runner settings.
 - build - image build. Standard build of a Docker image using a Dockerfile in the repository.
 <warn>
 
 **Important!**
 
-`tags: shared_runner` is the tag that was specified when registering the runner. Specifying this tag in the `.gitlab-ci.yml` file allows Gitlab-runner to execute this script. After assembly, the assembled image is entered into the registry with the `CI_COMMIT_REF_NAME` tag. For details on the variables that can be used during the build [read the article](https://docs.gitlab.com/ee/ci/variables)). In our example, since we are committing to the master branch, the image name will be `k8s/k8s-conf-demo:master`.
+`tags: shared_runner` is the tag that was specified when registering the runner. Specifying this tag in the `.gitlab-ci.yml` file allows GitLab-runner to execute this script. After assembly, the assembled image is entered into the registry with the `CI_COMMIT_REF_NAME` tag. For details on the variables that can be used during the build [read the article](https://docs.gitlab.com/ee/ci/variables)). In our example, since we are committing to the master branch, the image name will be `k8s/k8s-conf-demo:master`.
 
 </warn>
 
@@ -132,9 +132,9 @@ To testrom.ddns.net:ash/k8s-conf-demo.git
 7c91eab..55dd5fa master -> master
 ```
 
-As soon as the `.gitlab-ci.yml` file appears in the repository, Gitlab will automatically start building it.
+As soon as the `.gitlab-ci.yml` file appears in the repository, GitLab will automatically start building it.
 
-You can see how the build is going in the Gitlab web interface in the project, CI / CD / Pipelines:
+You can see how the build is going in the GitLab web interface in the project, CI / CD / Pipelines:
 
 ![](./assets/1583700761304-1583700761304.png)
 
@@ -334,9 +334,9 @@ ash-work:~ kubectl delete -f deployment.yaml
 deployment.apps "myapp" deleted
 ```
 
-## Deploying an application to a Kubernetes cluster using Gitlab CI/CD
+## Deploying an application to a Kubernetes cluster using GitLab CI/CD
 
-Gitlab supports Kubernetes cluster integration by default. To set up the integration, get a few cluster options.
+GitLab supports Kubernetes cluster integration by default. To set up the integration, get a few cluster options.
 
 For this:
 
@@ -382,7 +382,7 @@ GF9ONh9lDVttkFjaerKR4y4/E/X+e2Mi2dsyJmVHCrZTHozy8oZayC//JfzS+pK9
 -----END CERTIFICATE-----
 ```
 
-4. Now create a `gitlab-admin-service-account.yaml` file that describes Gitlab's access rights to the cluster. File contents:
+4. Now create a `gitlab-admin-service-account.yaml` file that describes GitLab's access rights to the cluster. File contents:
 
 ```
 apiVersion: v1
@@ -437,7 +437,7 @@ token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZp
 
 ```
 
-6. Go to the Gitlab admin interface and click Add Kubernetes Cluster:
+6. Go to the GitLab admin interface and click Add Kubernetes Cluster:
 
 ![](./assets/1583702333521-1583702333521.png)
 
@@ -512,7 +512,7 @@ Consider the deploy section.
 
 In the `before_script` section, curl is installed into the system, with its help the latest stable version of kubectl is downloaded.
 
-Script section: Since the cluster is managed by Gitlab, there are preset variables - KUBECONFIG stores the name of the cluster access configuration file.
+Script section: Since the cluster is managed by GitLab, there are preset variables - KUBECONFIG stores the name of the cluster access configuration file.
 
 Since the namespace is set automatically, in this namespace you need to create a secret with a login and password to access our register, which stores the application image compiled at the release stage.
 
@@ -592,6 +592,6 @@ The auto-deployment of the new version was successful.
 
 **Note**
 
-The configuration files given in this article are test files and are intended for mastering the mechanisms of Gitlab, registering and deploying images to a cluster at an initial level.
+The configuration files given in this article are test files and are intended for mastering the mechanisms of GitLab, registering and deploying images to a cluster at an initial level.
 
 </info>
