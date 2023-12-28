@@ -5,7 +5,7 @@
   "metaTitle": "Управление инстансом БД",
   "metaDescription": "Базы данных VK Cloud: основные операции с инстансами различных типов СУБД.",
   "sectionTitle": "Управление инстансом БД",
-  "markdown": "Основные операции с инстансами различных типов СУБД.",
+  "markdown": "Основные операции с инстансами различных типов СУБД.<br><warn>Поддержка функциональности автомасштабирования дисков зависит от [типа и версии СУБД](/ru/dbs/dbaas/concepts/disks-autoscaling#subd_s_podderzhkoy_avtomasshtabirovaniya).</warn>",
   "icon": "",
   "infobarItems": null,
   "weight": 2,
