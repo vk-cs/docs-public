@@ -1,141 +1,101 @@
-Чтобы установить и настроить плагин `cloudlogs-fluent-bit`:
+Чтобы настроить логирование для виртуальной машины:
 
-1. Клонируйте репозиторий с исходным кодом плагина:
+1. [Установите Fluent Bit](../../quick-start/), если этого не было сделано ранее.
+1. Установите плагин `vkcloudlogs-fluent-bit-plugin`.
+1. Настройте плагин для отправки логов в сервис Cloud Logging.
+1. Включите агент сбора логов `vkcloudlogs-fluent-bit.service`.
 
-   ```bash
-   git clone https://github.com/vk-cs/cloudlogs-fluent-bit
-   ```
+Далее приведены шаги по настройке плагина `vkcloudlogs-fluent-bit-plugin`.
 
-1. Перейдите в скачанный репозиторий и скомпилируйте библиотеку `cloudlogs-fluent-bit`:
+## 1. Установите плагин vkcloudlogs-fluent-bit-plugin
 
-   ```bash
-   cd cloudlogs-fluent-bit
-   make
-   ```
+<tabs>
+<tablist>
+<tab>CentOS 7.X, CentOS 8.X, AlmaLinux 9, Ubuntu Linux 22.X</tab>
+<tab>Astra Linux SE 1.7.2 Орел</tab>
+<tab>AltLinux Server p10</tab>
+</tablist>
+<tabpanel>
 
-1. Установите параметры подключения к API Logging VK Cloud:
+```bash
+sudo rpm -i https://cloudlogging.hb.ru-msk.vkcs.cloud/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin-0.1.3-1.x86_64.rpm
+```
 
-   ```bash
-   /opt/fluent-bit/bin/fluent-bit -i dummy -e ./vkcloudlogs-fluent-bit.so -o vkcloudlogs -p "server_host_port=<адрес сервиса>" -p "user_id=<пользователь>" -p "password=<пароль пользователя>" -p "project_id=<PID проекта>" -p "auth_url=<эндпоинт адреса авторизации>" -p "service_id=<идентификатор сервиса>"
-   ```
+</tabpanel>
+<tabpanel>
 
-   Здесь:
+```bash
+curl -sSLo vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb https://cloudlogging.hb.ru-msk.vkcs.cloud/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb
+sudo dpkg -i vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb
+```
 
-   - `auth_url` — [эндпоинт](/ru/manage/tools-for-using-services/rest-api/endpoints) Keystone; обязательный параметр;
-   - `project_id` — [идентификатор](/ru/manage/tools-for-using-services/rest-api/endpoints#poluchenie_project_id) проекта VK Cloud в OpenStack; обязательный параметр;
+</tabpanel>
+<tabpanel>
+
+```bash
+sudo apt-get install https://cloudlogging.hb.ru-msk.vkcs.cloud/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin-0.1.3-1.x86_64.rpm
+```
+
+</tabpanel>
+</tabs>
+
+После установки появится сервис `vkcloudlogs-fluent-bit.service`. По умолчанию он выключен.
+
+<info>
+
+Сервис `vkcloudlogs-fluent-bit.service` работает с файлами:
+
+- `/etc/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit.conf` — основной файл конфигурации сервиса с описаниями источников и путей назначения для логирования, подробнее в [документации плагина](https://github.com/vk-cs/cloudlogs-fluent-bit);
+- `/etc/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugins.conf` — конфигурация подключения плагина.
+
+</info>
+
+## 2. Настройте файл конфигурации vkcloudlogs-fluent-bit.conf
+
+1. Узнайте авторизационные параметры для вашего проекта:
+
+   - `auth_url` — [эндпоинт](/ru/manage/tools-for-using-services/rest-api/endpoints) Keystone;
+   - `project_id` — [идентификатор](/ru/manage/tools-for-using-services/rest-api/endpoints#poluchenie_project_id) проекта VK Cloud в OpenStack;
    - `server_host_port` — адрес сервиса Cloud Logging (`cloudlogs.mcs.mail.ru:443`);
-   - `user_id` — имя пользователя, от имени которого будут записываться логи; генерируется на этапе [подключения](../../quick-start/) сервиса;
+   - `user_id` — имя пользователя, от имени которого будут записываться логи; [генерируется](../generate-userdata/) отдельно;
    - `password` — пароль указанного пользователя;
    - `service_id` — [идентификатор сервиса](/ru/additionals/api/logging) в системе логирования (по умолчанию `default`). При необходимости создайте новые идентификаторы [на вкладке](https://msk.cloud.vk.com/app/services/monitoring/logging/settings/services) **Прочие ресурсы** раздела **Логирование**.
 
-   <details>
-      <summary>Пример установки параметров</summary>
+1. Укажите параметры подключения для плагина в файле `vkcloudlogs-fluent-bit.conf`:
 
-   ```bash
-   /opt/fluent-bit/bin/fluent-bit -i dummy -e ./vkcloudlogs-fluent-bit.so -o vkcloudlogs -p "server_host_port=cloudlogs.mcs.mail.ru:443" -p "user_id=XXXX0782a1e240fdac38a9d22c89XXXX" -p "password=1XXf$0MZ9mdXXX" -p "project_id=XXXXffd4ef0547e5b222f44555dfXXXX" -p "auth_url=https://infra.mail.ru:35357/v3/" -p "service_id=databases"
+   <details>
+     <summary>vkcloudlogs-fluent-bit.conf</summary>
+
+   В этом примере настраивается логирование данных с `ssh.service` (секция `[INPUT]`) в сервис Cloud Logging (секция `[OUTPUT]`).
+
+   ```conf
+   [INPUT]
+      Name            systemd
+      Systemd_Filter  _SYSTEMD_UNIT=ssh.service
+      Lowercase       On
+      Read_From_Tail  On
+      Tag             system.*
+
+   [OUTPUT]
+      Name              vkcloudlogs
+      Match             system.*
+      auth_url          <эндпоинт Keystone>
+      project_id        <PID проекта>
+      server_host_port  <адрес сервиса>
+      user_id           <пользователь>
+      password          <пароль пользователя>
    ```
 
    </details>
 
-   <info>
+## 3. Активируйте сервис vkcloudlogs-fluent-bit.service
 
-   Дополнительные параметры можно посмотреть в [репозитории GitHub](https://github.com/vk-cs/cloudlogs-fluent-bit).
+1. Выполните команду:
 
-   </info>
+   ```bash
+   sudo systemctl enable vkcloudlogs-fluent-bit.service
+   sudo systemctl start vkcloudlogs-fluent-bit.service
+   ```
 
-1. Установите параметры `cloudlogs-fluent-bit` для отправки логов в VK Cloud:
-
-   1. Создайте репозиторий для хранения конфигурационных файлов:
-
-      ```bash
-      mkdir -p /etc/fluentbit-cloudlogs/
-      ```
-
-   1. Создайте в репозитории файл `config.conf` с содержимым:
-
-      <details>
-        <summary>config.conf</summary>
-
-      В этом примере настраивается логирование данных с `ssh.service` (секция `[INPUT]`) в сервис Cloud Logging (секция `[OUTPUT]`).
-
-      ```conf
-      [INPUT]
-         Name            systemd
-         Systemd_Filter  _SYSTEMD_UNIT=ssh.service
-         Lowercase       On
-         Read_From_Tail  On
-         Tag             system.*
-
-      [OUTPUT]
-          Name              vkcloudlogs
-          Match             system.*
-          auth_url          <эндпоинт адреса авторизации>
-          project_id        <PID проекта>
-          server_host_port  <адрес сервиса>
-          user_id           <пользователь>
-          password          <пароль пользователя>
-      ```
-
-      </details>
-
-   1. Создайте в репозитории файл `parsers.conf` с содержимым:
-
-      <details>
-        <summary>parsers.conf</summary>
-
-      В этом примере настраивается формат отправляемых данных для сервиса `ssh`.
-
-      ```conf
-      [PARSER]
-        Name        ssh
-        Format      json
-        Time_Key    time
-        Time_Format %Y-%m-%dT%H:%M:%S.%L
-      ```
-
-      </details>
-
-   1. Проверьте работу плагина с помощью команды:
-
-      ```bash
-      /opt/fluent-bit/bin/fluent-bit --config=/etc/fluentbit-cloudlogs/config.conf --parser=/etc/fluentbit-cloudlogs/parsers.conf -e ./vkcloudlogs-fluent-bit.so
-      ```
-
-1. Если операционная система поддерживает [systemd](https://systemd.io):
-
-   1. Создайте файл сервиса `/etc/systemd/system/fluentbit-cloudlogs.service`:
-
-      <details>
-        <summary>fluentbit-cloudlogs.service</summary>
-
-      ```conf
-      [Unit]
-      Description=Fluentbit Cloudlog VKCS
-      After=network-online.target
-   
-      [Service]
-      ExecStart=/opt/fluent-bit/bin/fluent-bit --config=/etc/fluentbit-cloudlogs/config.conf --parser=/etc/fluentbit-cloudlogs/parsers.conf -e /home/ubuntu/cloudlogs-fluent-bit/vkcloudlogs-fluent-bit.so
-      Restart=on-failure
-      RestartSec=5s
-   
-      [Install]
-      WantedBy=multi-user.target
-      ```
-
-      </details>
-
-   1. Перезапустите сервис `fluentbit-cloudlogs` с помощью команд:
-
-      ```bash
-      systemctl daemon-reload
-      systemctl start fluentbit-cloudlogs
-      systemctl enable fluentbit-cloudlogs
-      ```
-
-   1. Проверьте статус сервиса `fluentbit-cloudlogs` с помощью команды:
-
-      ```bash
-      systemctl status fluentbit-cloudlogs
-      ```
-
-1. Проверьте наличие ssh-логов в личном кабинете VK Cloud в разделе **Мониторинг** → **Логирование**.
+1. Подождите несколько минут, чтобы накопились данные.
+1. Проверьте наличие логов в [личном кабинете](https://msk.cloud.vk.com/app/) VK Cloud в разделе **Мониторинг** → **Логирование**.

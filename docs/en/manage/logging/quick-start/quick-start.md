@@ -1,30 +1,22 @@
 1. Connect the service: if the service is in beta testing, send a request to [technical support](/en/contacts).
 1. Create a VM from a public Linux image with internet access. The example uses an Ubuntu 18.04 image.
 1. [Connect to the VM via SSH](/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix).
-1. Install on VM:
+1. Install on VM [Fluent Bit](https://docs.fluentbit.io/manual/installation/linux/ubuntu) 2.1.9 version:
 
-   - [Go not lower than version 1.17](https://go.dev/doc/install):
+   ```bash
+   curl https://cloudlogging.hb.ru-msk.vkcs.cloud/fluent-bit-install-scripts/install.sh | FLUENT_BIT_RELEASE_VERSION=2.1.9 sh
+   ```
 
-     ```bash
-     wget https://go.dev/dl/go1.17.6.linux-amd64.tar.gz
-     tar -xzf go1.17.6.linux-amd64.tar.gz
-     export PATH=$PWD/go/bin:$PATH
-     ```
+   <info>
 
-   - Git:
+   For AltLinux Server p10 install 1.9.5 version:
 
-     ```bash
-     sudo apt install git
-     ```
+   ```bash
+   sudo apt-get update
+   sudo apt-get install fluent-bit  
+   ```
 
-   - [Fluent-bit](https://docs.fluentbit.io/manual/installation/linux/ubuntu):
-
-     ```bash
-     sudo apt install ca-certificates
-     sudo curl https://raw.githubusercontent.com/fluent/fluent-bit/master/install.sh | sh
-     Build-essential
-     sudo apt install build-essential
-     ```
+   </info>
 
 1. Generate credentials to connect to the service:
 
@@ -35,4 +27,4 @@
    1. Click the **Generate** button.
    1. Save the received credentials.
 
-1. [Connect](../instructions/connect-plugin/) the `cloudlogs-fluent-bit` plugin.
+1. [Connect](../instructions/connect-plugin/) the `vkcloudlogs-fluent-bit-plugin` plugin.
