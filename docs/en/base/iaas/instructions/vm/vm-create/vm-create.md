@@ -71,6 +71,16 @@ The available fields may differ for different operating systems.
 
       To connect via SSH, add the group `ssh` or `ssh+www`. For more information about configuring network access rules, see [Managing firewall rules](/en/networks/vnet/operations/secgroups).
 
+   - (Optional) **Assign external IP**: enable the option and specify the IP to be able to connect to the VM from the Internet. The option is available if the VM is on a network with an Internet connection. The option is enabled and automatically configured the IP address if the VM is located on an external network (ext-net).
+
+   - (Optional) **Link a domain to an external IP**: enable the option and specify a domain to link the FQDN to the external IP. An [A-record](/en/networks/dns/publicdns#adding_resource_records) for the selected IP will be added to the DNS. The option is available if the **Assign external IP** option is enabled.
+
+   <warn>
+
+   You cannot link an external IP to a domain that matches the CNAME record of the DNS zone. In this case, the VM will be created, but the A-record will not be added.
+
+   </warn>
+
 7. Click **Next step**.
 
 8. If necessary, enable the **Use Backup** option and [specify](../../vm-backup/vm-backup-create/) settings.
