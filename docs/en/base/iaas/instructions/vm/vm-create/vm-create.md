@@ -45,24 +45,10 @@ The available fields may differ for different operating systems.
 5. Click **Next step**.
 6. Configure the VM connection to the network:
    - **Network**: select an existing network or create a new one. Depending on the choice of network type, the list of available fields will change.
-
-       If `Create new network` is selected or an existing network is selected, set the settings:
-       - **Subnet address**: the field appears if the `Create new network` option is selected. For more information, see [Managing networks and subnets](/en/networks/vnet/operations/manage-net).
-       - **Use config drive**: enable the option if you want to automatically configure the network on a virtual machine if there is no DHCP server on the network.
-       - **DNS-name**: specify the DNS name for the VM. For more information, see [Private DNS](/en/networks/dns/private-dns).
-       - **Assign external IP**: enable the option if you need access to the virtual machine via the Internet.
-
-       If the item is selected `External network (ext-net)`:
-
-       - The configuration disk will be used.
-       - The virtual machine will be automatically assigned an external IP address.
-
-       <warn>
-
-       The assignment of a floating IP address and the selection of a subnet from external network occurs randomly.
-
-       </warn>
-
+   - **SDN**: select a [virtual network management system](/en/networks/vnet/concepts/architecture#sdns_used). Resources created in networks of different SDNs will be accessible to each other only when using floating IPs. The option is available if a new network is created for the VM.
+   - **Subnet address**: the option is available if a new network is created for the VM.
+   - **Use configuration disk**: enable the option if you need to automatically configure a network on a virtual machine when there is no DHCP server on the network. The option is enabled automatically if a network with [DHCP](/en/networks/vnet/concepts/ips-and-inet#network_addressing) disabled is selected, including the external network (`ext-net`).
+   - **DNS-name**: specify the DNS name for the VM. For more information, see [Private DNS](/en/networks/dns/private-dns). The option is not available, if the external network is selected (`ext-net`).
    - **Virtual machine key**: select a key for SSH connection or create a new one.
 
       If you select `Create a new key`, save the suggested key file `.pem` after the virtual machine creation is completed.
