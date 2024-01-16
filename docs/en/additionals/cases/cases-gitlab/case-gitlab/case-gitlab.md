@@ -1,292 +1,287 @@
-In this article, we will look at how to install and configure GitLab.
+[GitLab](https://about.gitlab.com/) is a tool for collaborating on software development projects. It provides storage and management of Git repositories, as well as code version control. GitLab automates CI/CD processes: building, testing, and deploying software. To launch and automatically execute CI/CD tasks, GitLab uses the GitLab Runner application.
 
-After that you can:
+Below is an example of installing the free versions of GitLab and GitLab Runner on a virtual machine running Ubuntu 22.04. The Docker containerization platform and its Docker Compose plugin are used as the installation tool.
 
-- [Install and configure Harbor](/en/additionals/cases/cases-gitlab/case-harbor);
-- [Configure application auto-deployment to Kubernetes cluster](/en/additionals/cases/cases-gitlab/case-k8s-app).
+## Preparatory steps
 
-## GitLab installation
+1. [Register](/en/additionals/start/account-registration) at VK Cloud.
+1. [Create](/en/networks/vnet/operations/manage-net#creating_a_network) a network `network1` with internet access and a subnet with the address `10.0.0.0/24`.
+1. [Create](/en/networks/vnet/operations/secgroups) a security group `gitlab` and add inbound permissions to it for the ports:
 
-Before installing GitLab, [install and configure Docker](/en/additionals/cases/cases-docker-ce/docker-ce-u18).
+   - `80` (HTTP),
+   - `443` (HTTPS),
+   - `22` (SSH),
+   - `35242` (SSH).
 
-To install GitLab:
+   Instead of `35242`, you can use any port that is not reserved by the operating system.
 
-1. Assign a DNS name to the server that will be used to access Git in one of the following ways:
+1. [Create a VM](/en/base/iaas/instructions/vm/vm-create) running Ubuntu 22.04.
 
-- If you have a domain for this, add your server to it.
-- If you do not have a free domain, use, for example, the [NoIP](https://www.noip.com/) service, which provides dynamic DNS. To do this, register on the server, select a name and install the client on the server (read more [in the article of the NoIP service developer](https://www.noip.com/support/knowledgebase/installing-the-linux-dynamic-update-client/)).
+   When selecting VM options, consider the [hardware requirements](https://docs.gitlab.com/ee/install/requirements.html) for installing GitLab and GitLab Runner.
 
-2. Create a file `/root/docker-compose.yml` and add the following to it:
+   The following VM configuration is used as an example:
 
-```
-version: '3.7'
-services:
-gitlab:
-container_name: gitlab
-image: 'gitlab/gitlab-ce:latest'
-restart: always
-hostname: '<SERVER_DNS_NAME>'
-environment:
-GITLAB_OMNIBUS_CONFIG: |
-external_url 'https://<SERVER_DNS_NAME>'
-# Add any other gitlab.rb configuration here, each on its own line
-ports:
-- '80:80'
-- '443:443'
-- '22:22'
-volumes:
-- '/opt/gitlab/config:/etc/gitlab'
-- '/opt/gitlab/logs:/var/log/gitlab'
-- '/opt/gitlab/data:/var/opt/gitlab'
+     - name: `OA-Ubuntu-docker`;
+     - operating system: Ubuntu 22.04;
+     - network: `network1` with subnet `10.0.0.0/24`;
+     - [flavor](/en/base/iaas/concepts/vm-concept#flavors): `STD2-4-12`;
+     - network HDD drive: 50 GB;
+     - public IP address: assigned, further will be used `185.185.185.185`;
+     - security groups: `default`, `gitlab`.
 
-gitlab-runner:
-container_name: gitlab-runner
-image: gitlab/gitlab-runner:latest
-restart: always
-volumes:
-- '/opt/gitlab-runner/data:/home/gitlab_ci_multi_runner/data'
-- '/opt/gitlab-runner/config:/etc/gitlab-runner'
-- '/var/run/docker.sock:/var/run/docker.sock:rw'
-environment:
-- CI_SERVER_URL=https://<SERVER_DNS_NAME>/ci
-```
+   <info>
 
-This file launches two images: for gitlab and for gitlab-runner (this is the build pipeline).
+   When creating a VM running Ubuntu, a user is automatically created with the `ubuntu` name and full rights to use `sudo`.
 
-Please note that the container must be accessible from the external network on port 22, otherwise you will have to specify a non-standard port when accessing with the git command. Therefore, transfer the system ssh to a different port. To do this, open the file `/etc/ssh/sshd_config` and find the line:
+   </info>
 
-```
-#Port 22
-```
+1. (Optional) Assign a domain name to the VM to use for accessing GitLab. Do it in one of the following ways:
 
-If the line is commented out, uncomment it and change the port number, for example:
+   - If you have a domain, add your VM to it.
+   - If you do not have a domain, use, for example, [NoIP](https://www.noip.com/) — one of the services that provides dynamic DNS. For this, install a dynamic update client on the VM. More details in the [NoIP service documentation](https://www.noip.com/support/knowledgebase/installing-the-linux-dynamic-update-client-on-ubuntu).
 
-```
-Port 35242
-```
+    <details>
+        <summary>What is the purpose of assigning a domain name?</summary>
+        You can install GitLab on a VM that does not have a domain name. During installation, self-signed SSL certificates will be automatically issued for connecting to GitLab over HTTPS. However, you will not be able to issue a public SSL certificate for GitLab. As a result, when opening the login page of your GitLab server, users will see the warning: “The connection is not secure.”.
 
-Restart sshd:
+    </details>
 
-```
-root@ubuntu-std3-2-4-40gb:/etc/ssh# service sshd restart
-```
+1. [Connect](/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `OA-Ubuntu-docker` VM via SSH.
+1. Check the status of your operating system firewall and disable it if it is active:
 
-Make sure the service is listening on the new port:
+    ```bash
+    sudo ufw status
+    sudo ufw disable
+    ```
 
-```
-root@ubuntu-std3-2-4-40gb:/etc/ssh# netstat -tulpn | grep 35242
-tcp 0 0 0.0.0.0:35242 0.0.0.0:\* LISTEN 3625/sshd
-tcp6 0 0 :::35242 3625/sshd
-```
+    <info>
 
-Log in to the new port. If you can't connect, check your Firewall settings.
+    There is no need for the operating system firewall, since the [VK Cloud firewall controls](/en/networks/vnet/concepts/traffic-limiting) the incoming and outbound traffic on the VM.
 
-3. Create the necessary directories for persistent storage gitlab:
+    </info>
 
-```
-root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab
-root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab/config
-root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab/logs
-root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab/data
-root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab-runner
-root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab-runner/config
-root@ubuntu-std3-2-4-40gb:~# mkdir /opt/gitlab-runner/data
-```
+1. [Install and configure Docker](/en/additionals/cases/cases-docker-ce/docker-ce-u18).
+1. Install the [Docker Compose](https://docs.docker.com/compose/) plugin:
 
-4. Run docker-compose:
+   1. Update the list of available Ubuntu packages and their versions:
 
-```
-root@ubuntu-std3-2-4-40gb:~# docker-compose up -d
-Creating network "root_default" with the default driver
-Pulling gitlab (gitlab/gitlab-ce:latest)...
-latest: Pulling from gitlab/gitlab-ce
-976a760c94fc: Pull complete
-c58992f3c37b: Pull complete
-0ca0e5e7f12e: Pull complete
-f2a274cc00ca: Pull complete
-163f3071a3f8: Pull complete
-d96d45e9c9e7: Pull complete
-9a0f4e25d3a3: Pull complete
-19aad3ea2a1d: Pull complete
-fcafd8209320: Pull complete
-3a4ea7fd547c: Pull complete
-Digest: sha256:f5cb34c4d6bca26734dbce8889863d32c4ce0df02079b8c50bc4ac1dd89b53f4
-Status: Downloaded newer image for gitlab/gitlab-ce:latest
-Pulling gitlab-runner (gitlab/gitlab-runner:latest)...
-latest: Pulling from gitlab/gitlab-runner
-7ddbc47eeb70: Pull complete
-c1bbdc448b72: Pull complete
-8c3b70e39044: Pull complete
-45d437916d57: Pull complete
-59a312699ead: Pull complete
-6562c5999ae2: Pull complete
-368e9065e920: Pull complete
-b92ce2befcc8: Pull complete
-420f91b9ac4d: Pull complete
-Digest: sha256:c40748978103959590474b81b72d58f0c240f010b4c229181aaf3132efdf4bd1
-Status: Downloaded newer image for gitlab/gitlab-runner:latest
-Creating gitlab-runner ... done
-Creating gitlab ... done
-```
-The startup takes about 5 minutes, then the service is available via HTTP. Check the startup status:
+        ```bash
+        sudo apt-get update
+        ```
 
-```
-root@ubuntu-std3-2-4-40gb:~# docker ps
-Container IMage Command Creed Status Ports Names
-bb20bc6cb7d5 . . . gitlab/gitlab-ce:latest . . . "/assets/wrapper" . ->443/tcp gitlab
-a2209bb357e7 . . gitlab/gitlab-runner:latest . "/usr/bin/dumb-init ..." 10 minutes ago . Up 10 minutes . . . . . . git lab runner
-```
+   1. Install the latest version of the Docker Compose plugin:
 
-## Set up GitLab
+        ```bash
+        sudo apt-get install docker-compose-plugin
+        ```
 
-1. Installing GitLab generates self-signed certificates for HTTPS. Let's not use them, let's switch to LetsEncrypt certificates. To do this, open the file `/opt/gitlab/config/gitlab.rb` and change the following parameters to the specified form:
+   1. Verify that the plugin is installed correctly by requesting its version:
 
-```
-################################################### ################################
-# Let's Encrypt integration
-################################################### ################################
-letsencrypt['enable'] = true
-# letsencrypt['contact_emails'] = [] # This should be an array of email addresses to add as contacts
-# letsencrypt['group'] = 'root'
-# letsencrypt['key_size'] = 2048
-# letsencrypt['owner'] = 'root'
-# letsencrypt['wwwroot'] = '/var/opt/gitlab/nginx/www'
-# See http://docs.gitlab.com/omnibus/settings/ssl.html#automatic-renewal for more on these settings
-letsencrypt['auto_renew'] = true
-letsencrypt['auto_renew_hour'] = 0
-letsencrypt['auto_renew_minute'] = 15 # Should be a number or cron expression, if specified.
-letsencrypt['auto_renew_day_of_month'] = "\*/7"
+        ```bash
+        docker compose version
+        ```
 
-```
+        Expected result:
 
-As a result, the use of LetsEncrypt will be allowed and certificate renewals will be checked once a week at 00:15.
+        ```bash
+        Docker Compose version vN.N.N
+        ```
 
-2. Go to Docker and start reissuing certificates:
+        Here `N.N.N` is the plugin version number.
 
-```
-root@ubuntu-std3-2-4-40gb:~# docker exec -it gitlab bash
-root@testrom:/# gitlab-ctl reconfigure
-```
+## 1. Change the port for connecting to the VM via SSH
 
-<info>
+For access via SSH, GitLab by default uses port `22`, which is reserved by the operating system for connecting to the VM via SSH. To avoid conflict, change the system SSH port to another one.
 
-**Note**
+1. Open the `/etc/ssh/sshd_config` file for editing:
 
-At the time of writing, the LetsEncrypt certificate issuance mechanism was not working correctly due to changes in the LetsEncrypt API (for details, see cases [38255](https://gitlab.com/gitlab-org/gitlab/issues/38255) and [4900](https gitlab.com/gitlab-org/omnibus-gitlab/issues/4900)). To solve this problem, in the `/opt/gitlab/embedded/cookbooks/letsencrypt/resources/certificate.rb` file, comment out the `acme_certificate 'staging' do [...] end` section.
+    ```bash
+    sudo nano /etc/ssh/sshd_config
+    ```
 
-</info>
+1. Replace the line `#Port 22` with `Port 35242`.
 
-3. In the browser, in the search bar, enter the name of the GitLab server and create an administrator (root) password:
+    <info>
 
-**![](./assets/1583504218728-1583504218728.png)**
+    The number `35242` is used as an example. If you are going to use a different number, open it for SSH connections in the VM firewall settings. More details in the [Managing firewall rules](/en/networks/vnet/operations/secgroups) section.
 
-Then login:
+    </info>
 
-![](./assets/1583505011617-1583505011617.png)
+1. Save the file and exit the editor by pressing *Ctrl + O* and then *Ctrl + X*.
 
-4. Go to the administrator zone and choose to create a new user:
+1. Restart the `sshd` service:
 
-**![](./assets/1583505111095-1583505111095.png)**
+    ```bash
+    sudo systemctl restart sshd
+    ```
 
-5. Enter user parameters:
+1. Close the current connection to the VM:
 
-![](./assets/1583505158838-1583505158838.png)
+    ```bash
+    exit
+    ```
 
-6. You will receive an email, follow the link and enter your password. Then log in as the new user.
+1. Connect to the `OA-Ubuntu-docker` VM via SSH using the new port:
 
-## Project creation
+    ```bash
+    ssh -i <path to SSH key> ubuntu@185.185.185.185 -p 35242
+    ```
 
-To set up CI/CD, take the project from [Workshop How to Run Your Application on Kubernetes](https://www.youtube.com/watch?v=rBzgGmuBgo0).
+    Instead of `185.185.185.185` you can use the fully qualified domain name of the VM if it exists.
 
-Fork [repository](https://github.com/ssfilatov/k8s-conf-demo) to local GitLab, then set up deployment and delivery for it.
+## 2. Install GitLab and GitLab Runner using Docker Compose
 
-For this:
+1. Create directories for the GitLab persistent repository by sequentially running the commands:
 
-1. Click Create a project:
+    ```bash
+    sudo mkdir -p /opt/gitlab
+    sudo mkdir -p /opt/gitlab/config
+    sudo mkdir -p /opt/gitlab/logs
+    sudo mkdir -p /opt/gitlab/data
+    sudo mkdir -p /opt/gitlab-runner
+    sudo mkdir -p /opt/gitlab-runner/config
+    sudo mkdir -p /opt/gitlab-runner/data
+    ```
 
-![](./assets/1583505808334-1583505808333.png)
+1. Create and open for editing a Docker Compose configuration file:
 
-2. Select Import Project, Repo by URL:
+    ```bash
+    sudo nano docker-compose.yml
+    ```
 
-![](./assets/1583505908500-1583505908500.png)
+1. Copy the following content into the editor window, replacing `185.185.185.185` with the external IP address of the VM or its fully qualified domain name:
 
-3. Enter the repository name, source repository URL, project slug and create a project:
+    <details>
+      <summary>Content of the docker-compose.yml file</summary>
 
-![](./assets/1583505963970-1583505963970.png)
+      ```yaml
+      version: '3.7'
+      services:
+        gitlab:
+          container_name: gitlab
+          image: 'gitlab/gitlab-ce:latest'
+          restart: always
+          hostname: '185.185.185.185'
+          environment:
+            GITLAB_OMNIBUS_CONFIG: |
+              external_url 'https://185.185.185.185'
+              # Add any other gitlab.rb configuration parameters here, each on its own line
+          ports:
+            - '80:80'
+            - '443:443'
+            - '22:22'
+          volumes:
+            - '/opt/gitlab/config:/etc/gitlab'
+            - '/opt/gitlab/logs:/var/log/gitlab'
+            - '/opt/gitlab/data:/var/opt/gitlab'
 
-4. After a while, the project will be imported:
+        gitlab-runner:
+          container_name: gitlab-runner
+          image: gitlab/gitlab-runner:latest
+          restart: always
+          volumes:
+            - '/opt/gitlab-runner/data:/home/gitlab_ci_multi_runner/data'
+            - '/opt/gitlab-runner/config:/etc/gitlab-runner'
+            - '/var/run/docker.sock:/var/run/docker.sock:rw'
+          environment:
+            - CI_SERVER_URL=https://185.185.185.185/ci
+      ```
 
-![](./assets/1583506008973-1583506008973.png)
+    </details>
 
-5. Create an ssh key to access the repository via Git. To do this, on your workstation in the console, do the following:
+    <info>
 
-```
-ash-work:~ ssh-keygen -t rsa -f ~/.ssh/myrepo
-Generating public/private rsa key pair.
-Enter passphrase (empty for no passphrase):
-Enter the same passphrase again:
-Your identification has been saved in /Users/ash/.ssh/myrepo.
-Your public key has been saved in /Users/ash/.ssh/myrepo.pub.
-The key fingerprint is:
-SHA256:icv9wRrYB9PqRH9/imp4F8VpL1RPkCENu4OIybDKJH0 ash@ash-work.local
-The key's randomart image is:
-+---[RSA 2048]----+
-| ooo+ |
-| oo o|
-| . ..+.|
-| . + + + . .\* .|
-|. o E = S o o+ . |
-| + o . \* \* ... .|
-| o + \*.= .. . |
-| o.=oo.o .|
-| oooo. oo |
-+----[SHA256]-----+
+    If necessary, specify additional settings below the `# Add…` comment line. The configuration parameters for the Docker Compose plugin are described in the [official Docker documentation](https://docs.docker.com/compose/compose-file/03-compose-file/).
+
+    </info>
+
+1. Save the file and exit the editor by pressing *Ctrl + O* and then *Ctrl + X*.
+1. Launch the Docker Compose plugin:
+
+    ```bash
+    sudo docker compose up -d
+    ```
+
+    <details>
+      <summary>Output upon successful operation</summary>
+
+      ```txt
+      [+] Running 13/13
+      ✔ gitlab-runner 3 layers [⣿⣿⣿]      0B/0B      Pulled                 19.4s
+      ✔ 527f5363b98e Pull complete                                            1.7s
+      ✔ 5aa2f01642ad Pull complete                                            5.8s
+      ✔ 112312283fb7 Pull complete                                            2.2s
+      ✔ gitlab 8 layers [⣿⣿⣿⣿⣿⣿⣿⣿]      0B/0B      Pulled                 83.0s
+      ✔ 3dd181f9be59 Pull complete                                            0.9s
+      ✔ 5222e10cb5b3 Pull complete                                            0.7s
+      ✔ b86fffbd1d96 Pull complete                                            0.6s
+      ✔ a8f85f865bd2 Pull complete                                            1.0s
+      ✔ fd086081fce9 Pull complete                                            1.2s
+      ✔ 9c3df03dc259 Pull complete                                            1.4s
+      ✔ 539bd3fbd6f5 Pull complete                                            1.5s
+      ✔ fceb275916b3 Pull complete                                           13.3s
+      [+] Running 3/3
+      ✔ Network ubuntu_default   Created                                      1.4s
+      ✔ Container gitlab         Started                                     49.4s
+      ✔ Container gitlab-runner  Started                                     49.4s
+      ```
+    </details>  
+
+## 3. Check the status of your GitLab container
+
+Run the command:
+
+```bash
+sudo docker ps
 ```
 
-6. In your home directory in the .ssh folder, a pair of myrepo keys will be created: public and private. Upload the public key to GitLab. For this:
-1. Go to the GitLab web interface, click on the icon in the upper right corner, and select Settings:
+Output upon successful operation:
 
-    **![](./assets/1583505449607-1583505449606.png)**
-
-    2. Select SSH Keys:
-
-    **![](./assets/1583506380799-1583506380799.png)**
-
-    3. In the input field, paste the contents of the `myrepo.pub` file and click Add key:
-
-    **![](./assets/1583506456250-1583506456249.png)**
-
-    As a result, the key will be added:
-
-    ![](./assets/1583506465014-1583506465014.png)
-
-Now with the private key you can access the repository. To make things easier, add the following section to `~/.ssh/config`:
-
-```
-host <SERVER_DNS_NAME>
-HostName <SERVER_DNS_NAME>
-IdentityFile ~/.ssh/myrepo
-user git
+```txt
+CONTAINER ID   IMAGE                         COMMAND                  CREATED         STATUS                            PORTS                                                                                                         NAMES
+1e6cee4fe37a   gitlab/gitlab-ce:latest       "/assets/wrapper"        4 minutes ago   Up 9 seconds (health: starting)   0.0.0.0:22->22/tcp, :::22->22/tcp, 0.0.0.0:80->80/tcp, :::80->80/tcp, 0.0.0.0:443->443/tcp, :::443->443/tcp   gitlab
+882fc3fb80f5   gitlab/gitlab-runner:latest   "/usr/bin/dumb-init …"   4 minutes ago   Up 4 minutes                                                                                                                                    gitlab-runner
 ```
 
-Clone the repository locally:
+## 4. (Optional) Issue a public SSL certificate for the VM
 
-```
-ash-work:git git clone git@<SERVER_DNS_NAME>:ash/k8s-conf-demo.git
+If the VM on which GitLab is installed has a domain name, you can issue a public SSL certificate for your GitLab instance, for example from [Let’s Encrypt](https://letsencrypt.org/). More details in the [official GitLab documentation](https://docs.gitlab.com/omnibus/settings/ssl/).
 
-Cloning into "k8s-conf-demo"...
+## 5. Check the functionality of GitLab
 
-remote: Enumerating objects: 23, done.
+1. Obtain and copy the automatically generated GitLab admin password:
 
-remote: Counting objects: 100% (23/23), done.
+    ```bash
+    sudo cat /opt/gitlab/config/initial_root_password
+    ```
 
-remote: Compressing objects: 100% (23/23), done.
+    Output upon successful operation:
 
-remote: Total 23 (delta 3), reused 0 (delta 0)
+    ```txt
+    # WARNING: This value is valid only in the following conditions
+    #          1. If provided manually (either via `GITLAB_ROOT_PASSWORD` environment variable or via `gitlab_rails['initial_root_password']` setting in `gitlab.rb`, it was provided before database was seeded for the first time (usually, the first reconfigure run).
+    #          2. Password hasn't been changed manually, either via UI or via command line.
+    #
+    #          If the password shown here doesn't work, you must reset the admin password following https://docs.gitlab.com/ee/security/reset_user_password.html#reset-your-root-password.
 
-Object Receipt: 100% (23/23), 6.33 KiB | 6.33 MiB/s, done.
+    Password: /XR7tRH_ХХХХ=
 
-Change detection: 100% (3/3), done.
-```
+    # NOTE: This file will be automatically deleted in the first reconfigure run after 24 hours.
+    ```
 
-Now [install and configure the Harbor repository](/en/additionals/cases/cases-gitlab/case-harbor), which will contain the collected images.
+1. In the browser, go to `https://185.185.185.185`.
+
+    Instead of `185.185.185.185` you can use the fully qualified domain name of the VM if it exists.
+
+    The GitLab login page will open.
+
+1. To log in, use the administrator login (`root`) and the copied password.
+
+    The GitLab dashboard will open. The installation is complete, GitLab is ready for operation.
+
+## Delete unused resources
+
+Deployed virtual resources are charged. If you do not need them anymore:
+
+- [Delete](/en/base/iaas/instructions/vm/vm-manage#deleting_a_vm) the `OA-Ubuntu-docker` VM.
+- If necessary, [delete](/en/networks/vnet/operations/manage-floating-ip#removing_floating_ip_address_from_the_project) the floating IP address `185.185.185.185`.
