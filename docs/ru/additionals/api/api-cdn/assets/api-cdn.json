@@ -1,0 +1,2636 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "HTTP-запросы для CDN API",
+    "title": "CDN API",
+    "version": "1.0.0"
+  },
+  "host": "localhost",
+  "basePath": "/cdn/api/v1",
+  "tags": [
+    {
+      "name": "Аккаунт"
+    },
+    {
+      "name": "Группы источников"
+    },
+    {
+      "name": "Ресурсы"
+    },
+    {
+      "name": "Сертификаты Let's Encrypt"
+    },
+    {
+      "name": "SSL-сертификаты"
+    },
+    {
+      "name": "Инструменты"
+    },
+    {
+      "name": "Статистика"
+    }
+  ],
+  "paths": {
+    "/projects/{project_id}/clients/me": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Аккаунт"
+        ],
+        "summary": "Получить информацию об аккаунте",
+        "description": "Получение канонической доменной записи (CNAME) текущего аккаунта",
+        "operationId": "accountMe",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. Возвращается каноническое доменное имя (CNAME-запись) аккаунта",
+            "schema": {
+              "$ref": "#/definitions/account"
+            }
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/originGroups": {
+      "get": {
+        "description": "Получение информации о группах источников на проекте",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Группы источников"
+        ],
+        "summary": "Получить список групп источников",
+        "operationId": "getOriginGroups",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернется список групп и источников",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/originGroupGet"
+              }
+            }
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Группы источников"
+        ],
+        "summary": "Создать группу источников",
+        "description": "Добавление доменов, с которых CDN-ресурс будет забирать контент",
+        "operationId": "createOriginGroup",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/originGroupPost"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Успешное выполнение запроса. В ответе вернется массив данных созданной группы и источников в ней",
+            "schema": {
+              "$ref": "#/definitions/originGroupGet"
+            }
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/originGroups/{originGroup_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Группы источников"
+        ],
+        "summary": "Получить группу источников",
+        "description": "Получение информации о группе источников по ее идентификатору",
+        "operationId": "getOriginGroupById",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "Идентификатор группы источников",
+            "name": "originGroup_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернется массив данных созданной группы и источников в ней",
+            "schema": {
+              "$ref": "#/definitions/originGroupGet"
+            }
+          },
+          "404": {
+            "description": "Группа не найдена в этом аккаунте"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "put": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Группы источников"
+        ],
+        "summary": "Изменить группу источников",
+        "description": "Редактирование группы источников по ее идентификатору",
+        "operationId": "editOriginGroup",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "Идентификатор группы источников",
+            "name": "originGroup_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/originGroupPut"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. Группа источников изменена",
+            "schema": {
+              "$ref": "#/definitions/originGroupGet"
+            }
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса"
+          },
+          "404": {
+            "description": "Группа не найдена"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "delete": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Группы источников"
+        ],
+        "summary": "Удалить группу источников",
+        "description": "Удаление группы источников по ее идентификатору",
+        "operationId": "deleteOriginGroup",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "Идентификатор группы источников",
+            "name": "originGroup_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Успешное выполнение запроса. Группа источников удалена"
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса"
+          },
+          "404": {
+            "description": "Группа не найдена"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/resources": {
+      "get": {
+        "description": "Получение информации об CDN-ресурсах на проекте",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Ресурсы"
+        ],
+        "summary": "Получить список CDN-ресурсов",
+        "operationId": "getResources",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернется список групп и источников",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/getResource"
+              }
+            }
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Ресурсы"
+        ],
+        "summary": "Создать CDN-ресурс",
+        "operationId": "createResource",
+        "description": "Создание нового CDN-ресурса в проекте",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "description": "Параметры CDN-ресурса",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/createResource"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернется полный список параметров созданного CDN-ресурса",
+            "schema": {
+              "$ref": "#/definitions/getResource"
+            }
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса"
+          },
+          "404": {
+            "description": "Проект не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/resources/{resource_id}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Ресурсы"
+        ],
+        "summary": "Получить CDN-ресурс",
+        "description": "Получение информации об CDN-ресурсе по его идентификатору",
+        "operationId": "getResourceById",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "Идентификатор ресурса",
+            "name": "resource_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернутся данные CDN-ресурса",
+            "schema": {
+              "$ref": "#/definitions/getResource"
+            }
+          },
+          "404": {
+            "description": "CDN-ресурс не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "put": {
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Ресурсы"
+        ],
+        "summary": "Изменить CDN-ресурс",
+        "description": "Редактирование CDN-ресурса по его идентификатору",
+        "operationId": "editResource",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "Идентификатор CDN-ресурса",
+            "name": "resource_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/changeResources"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. CDN-ресурс отредактирован",
+            "schema": {
+              "$ref": "#/definitions/getResource"
+            }
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса"
+          },
+          "404": {
+            "description": "CDN-ресурс не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "delete": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Ресурсы"
+        ],
+        "summary": "Удалить CDN-ресурс",
+        "description": "Удаление CDN-ресурса по его идентификатору",
+        "operationId": "deleteResource",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "Идентификатор CDN-ресурса",
+            "name": "resource_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "CDN-ресурс успешно удален"
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса"
+          },
+          "404": {
+            "description": "CDN-ресурс не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/resources/{resource_id}/prefetch": {
+      "post": {
+        "description": "Предварительная загрузка файлов на CDN-ресурс до запроса пользователя. Рекомендуется для файлов больше 200 MB.  Доступно выполнение не более одного запроса в минуту",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Инструменты"
+        ],
+        "summary": "Наполнить кеш",
+        "operationId": "SetPrefetch",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "Идентификатор CDN-ресурса, на котором нужно предварительно разместить контент",
+            "name": "resource_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "Пути к файлам, которые нужно загрузить, без указания домена",
+            "schema": {
+              "$ref": "#/definitions/resourcePrefetch"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Успешное выполнение запроса. Файлы будут добавлены в список ожидания. Время выполнения зависит от количества файлов и их размера"
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса"
+          },
+          "404": {
+            "description": "CDN-ресурс не найден"
+          },
+          "429": {
+            "description": "Превышено количество запросов"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/resources/{resource_id}/purge": {
+      "post": {
+        "description": "Очистка кеша с CDN-ресурсов для обновления содержимого CDN. Доступно выполнение не более одного запроса в минуту",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Инструменты"
+        ],
+        "summary": "Очистить кеш",
+        "operationId": "SetPurge",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "format": "int64",
+            "description": "Идентификатор CDN-ресурса",
+            "name": "resource_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "Пути до файлов, которые нужно удалить: <br> - `[]` — удалить все файлы на CDN-ресурсе. <br> - шаблон пути — удалить определенные файлы. Используйте оператор `*` для замены любого количества символов в пути. <br> - путь к файлу без имени домена — очистить кеш выбранного файла",
+            "schema": {
+              "$ref": "#/definitions/resourcePurge"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Успешное выполнение запроса. Указанные файлы будут удалены"
+          },
+          "400": {
+            "description": "Неверное выполнение запроса"
+          },
+          "404": {
+            "description": "CDN-ресурс не найден"
+          },
+          "429": {
+            "description": "Превышено количество запросов"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/resources/{resource_id}/ssl/le/issue": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Let's Encrypt"
+        ],
+        "summary": "Выдать Let's Encrypt сертификат",
+        "description": "Запрос позволяет выдать Let's Encrypt SSL-сертификат для ресурса. Let's Encrypt сертификат будет выдан для всех CNAME-записей CDN-ресурса. После применения сертификата на ресурсе автоматически будет включен HTTPS. Сертификат будет применяться ко всем новым CNAME-записям CDN-ресурса и продлеваться автоматически. Чтобы отключить автоматическое продление сертификата, измените параметр `ssl_automate`",
+        "operationId": "ssl_le_issue",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "description": "Идентификатор CDN-ресурса",
+            "name": "resource_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Успешное выполнение запроса. Начат процесс выдачи сертификата, может занимать до 30 минут"
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса. Варианты ошибок:<br/> - **Resource already has automated certificate** — у указанного ресурса уже есть сертификат, проверьте правильность идентификатора CDN-ресурса. Если нужен новый сертификат, сначала отзовите действующий, а потом повторите запрос.<br/> - **Certificate issuing process have already being launched** — начат процесс выдачи сертификата, может занять до 30 минут. Дождитесь его завершения. <br/> - **We cannot issue a Let&#39;s Encrypt certificate for a resource with a wildcard cname** — указанный ресурс имеет дополнительный CNAME с подстановочным знаком. Для такого ресурса можно использовать только собственный сертификат"
+          },
+          "404": {
+            "description": "CDN-ресурс не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/resources/{resource_id}/ssl/le/revoke": {
+      "post": {
+        "summary": "Отозвать Let's Encrypt сертификат",
+        "description": "Отозвать и прекратить автообновление Let's Encrypt SSL-сертификата для CDN-ресурса",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Let's Encrypt"
+        ],
+        "operationId": "ssl_le_revoke",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "description": "Идентификатор CDN-ресурса",
+            "name": "resource_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "boolean",
+            "description": "Варианты удаления сертификата: `true` — сертификат будет откреплен от всех ресурсов, где он используется, и удален, `false` — сертификат будет откреплен только от указанного ресурса",
+            "name": "force",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Сертификат будет отозван"
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса. Варианты ошибок:<br/> - **Resource doesn&#39;t have any certificates** — у указанного ресурса нет сертификатов. Проверьте правильность указания идентификатора ресурса.<br/> - **Resource doesn&#39;t support automatic renewal** — у указанного ресурса нет Let’s Encrypt сертификатов. Проверьте правильность указания идентификатора ресурса.<br/> - **Several resources [123, 124, 125] are linked to this certificate. Use the ?force=true query param to revoke certificate from several resources** — сертификат, подключенный к указанному ресурсу, используется также другими ресурсами. Чтобы отозвать сертификат у всех ресурсов, укажите параметр `?force=true`"
+          },
+          "404": {
+            "description": "CDN-ресурс не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/sslData": {
+      "get": {
+        "summary": "Получить все SSL-сертификаты",
+        "description": "Получение информации обо всех SSL-сертификатах на проекте",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "SSL-сертификаты"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернется список всех сертификатов с информацией о них",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/getSSLAnswer"
+              }
+            }
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "post": {
+        "summary": "Добавить SSL-сертификаты",
+        "description": "Добавление SSL-сертификата для поставки контента через HTTPS-протокол",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "SSL-сертификаты"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "В теле запроса нужно указать все строки сертификатов и секретные ключи. Каждый сертификат прописывается на отдельной строке. Для разделения строк в теле запроса используется `\\n`",
+            "schema": {
+              "$ref": "#/definitions/addSSL"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "SSL-сертификат успешно установлен. В ответе вернется информация об установленном сертификате",
+            "schema": {
+              "$ref": "#/definitions/getSSLAnswer"
+            }
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/sslData/{ssl_id}": {
+      "delete": {
+        "summary": "Удалить SSL-сертификат",
+        "description": "Удаление SSL-сертификата по его идентификатору",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "SSL-сертификаты"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "description": "Идентификатор SSL-сертификата",
+            "name": "ssl_id",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "SSL-сертификат успешно удален"
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса"
+          },
+          "404": {
+            "description": "SSL-сертификат не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      },
+      "patch": {
+        "summary": "Изменить SSL-сертификат",
+        "description": "Изменение SSL-сертификата по его идентификатору",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "SSL-сертификаты"
+        ],
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "integer",
+            "description": "Идентификатор SSL-сертификата",
+            "name": "ssl_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "description": "В теле запроса передаются параметры, которые нужно изменить",
+            "schema": {
+              "$ref": "#/definitions/patchSSL"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Параметры SSL-сертификата успешно изменены. В ответе вернется список всех актуальных параметров SSL-сертификата",
+            "schema": {
+              "$ref": "#/definitions/getSSLAnswer"
+            }
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса"
+          },
+          "404": {
+            "description": "SSL-сертификат не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/statistics/aggregate/stats": {
+      "get": {
+        "summary": "Получить агрегированную статистику (CDN)",
+        "description": "Получение отчета о трафике CDN",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Статистика"
+        ],
+        "operationId": "GetAggregatedCDNStats",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Название сервиса. В параметре указывается CDN",
+            "name": "service",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Дата начала отчетного периода в формате ISO 8086/RFC 3339, UTC. Предпочтительно не указывать минуты и секунды. Примеры: `2018-11-01T00:00:00.000`, `2018-11-01`",
+            "name": "from",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Дата окончания отчетного периода в формате ISO 8086/RFC 3339, UTC. Предпочтительно не указывать минуты и секунды. Примеры: `2018-11-01T00:00:00.000`, `2018-11-01`",
+            "name": "to",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Идентификатор CDN-ресурса. Можно указать несколько идентификаторов, перечислив их через `&`. Пример: `resource=1&resource=2`",
+            "name": "resource",
+            "in": "query"
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "multi",
+            "description": "Указывается метрика, по которой нужно получить статистику:<br> - **upstream_bytes** — трафик в байтах от исходного сервера к CDN-серверам или к серверу предварительного кеширования;<br> - **sent_bytes** — трафик в байтах от CDN-сервера к клиентам;<br> - **shield_bytes** — трафик в байтах от сервера предварительного кеширования к CDN-серверам;<br>- **total_bytes** — общие данные по параметрам **shield_bytes**, **upstream_bytes** и **sent_bytes**;<br>- **requests** — количество запросов к пограничным серверам;<br> - **responses_2xx** — количество ответов с кодами 2xx;<br> - **responses_3xx** — количество ответов с кодами 3xx;<br> - **responses_4x** — количество ответов с кодами 4xx;<br> - **responses_5xx** — количество ответов с кодами 5xx;<br> - **responses_hit** — количество ответов с заголовком `Cache: HIT`;<br> - **responses_miss** — количество ответов с заголовком `Cache: MISS`;<br> - **cache_hit_traffic_ratio** — доля некешируемого трафика в общем объеме: `1 - upstream_bytes / sent_bytes`;<br> - **95_percentile** — показатель пропускной способности, который отсекает 5% пиков пропускной способности;<br> - **min_bandwidth** — минимальный показатель пропускной способности;<br> - **max_bandwidth** — максимальный показатель пропускной способности",
+            "name": "metrics",
+            "in": "query",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернутся данные по указанным метрикам",
+            "schema": {
+              "$ref": "#/definitions/getAggregatedCDNStatisticsResponse"
+            }
+          },
+          "204": {
+            "description": "За указанный период нет данных"
+          },
+          "400": {
+            "description": "Неверно указаны параметры запроса"
+          },
+          "404": {
+            "description": "CDN-сервер не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    },
+    "/projects/{project_id}/statistics/series": {
+      "get": {
+        "description": "Запрос позволяет получить статистику по CDN-серверу за последние 90 дней",
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Статистика"
+        ],
+        "summary": "Получить статистику по CDN-ресурсу",
+        "operationId": "GetSeriesCDNStats",
+        "parameters": [
+          {
+            "type": "string",
+            "description": "Идентификатор проекта в OpenStack",
+            "name": "project_id",
+            "in": "path",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Наименование сервиса. Доступное значение — `CDN`",
+            "name": "service",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Дата начала отчетного периода в формате ISO 8086/RFC 3339, UTC. Предпочтительно не указывать минуты и секунды. Примеры: `2018-11-01T00:00:00.000`, `2018-11-01`",
+            "name": "from",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Дата окончания отчетного периода в формате ISO 8086/RFC 3339, UTC. Предпочтительно не указывать минуты и секунды. Примеры: `2018-11-01T00:00:00.000`, `2018-11-01`",
+            "name": "to",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "string",
+            "description": "Интервалы времени, по которым будут детализированы данные. Доступные значения: 1m, 5m, 15m, 1h, 1d",
+            "name": "granularity",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "multi",
+            "description": "Указывается метрика, по которой нужно получить статистику:<br> - **upstream_bytes** — трафик в байтах от исходного сервера к CDN-серверам или к серверу предварительного кеширования;<br> - **sent_bytes** — трафик в байтах от CDN-сервера к клиентам;<br> - **shield_bytes** — трафик в байтах от сервера предварительного кеширования к CDN-серверам;<br>- **total_bytes** — общие данные по параметрам **shield_bytes**, **upstream_bytes** и **sent_bytes**;<br> - **cdn_bytes** — общие данные по параметрам **sent_bytes** и **shield_bytes**;<br> - **requests_waf_passed** — количество запросов, которые проходят через опцию Basic WAF;<br> - **requests** — количество запросов к пограничным серверам;<br> - **responses_2xx** — количество ответов с кодами 2xx;<br> - **responses_3xx** — количество ответов с кодами 3xx;<br> - **responses_4x** — количество ответов с кодами 4xx;<br> - **responses_5xx** — количество ответов с кодами 5xx;<br> - **response_types** — статистика ответов по типу контента;<br> - **responses_hit** — количество ответов с заголовком `Cache: HIT`;<br> - **responses_miss** — количество ответов с заголовком `Cache: MISS`;<br> - **cache_hit_traffic_ratio** — отношение ответов с заголовком `Cache: HIT` к общему количеству запросов: `responses_hit / requests`;<br> - **shield_traffic_ratio** — эффективность предварительного кеширования Origin Shielding: насколько больше трафика проходит с сервера предварительного кеширования, чем через обычный источник. Рассчитывается по формуле: `(shield_bytes - upstream_bytes) / shield_bytes`;<br> - **image_processed** — количество изображений, оптимизированных через сервис оптимизации изображений",
+            "name": "metrics",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "multi",
+            "description": "Группировка данных отчета (может быть указано несколько значений):<br> - **resource** — по идентификатору ресурса;<br> - **region** — по региону CDN-серверов;<br> - **country** — по странам CDN-серверов;<br> - **vhost** — по CNAME ресурса",
+            "name": "group_by",
+            "in": "query",
+            "required": true
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "multi",
+            "description": "Страны, по которым нужно отобразить статистику. Используется краткое название на английском языке из стандарта ISO 3166",
+            "name": "countries",
+            "in": "query"
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "multi",
+            "description": "Указываются регионы, по которым нужно отобразить статистику. Доступные значения:<br> - **na** — Северная Америка; <br> - **eu** — Европа;<br> - **cis** — Содружество Независимых Государств (СНГ);<br> - **asia** — Азия;<br> - **au** — Австралия;<br> - **latam** — Латинская Америка;<br> - **me** — Средний Восток;<br> - **africa** — Африка;<br> - **sa** — Южная Америка; <br> - **ru** — Россия.",
+            "name": "regions",
+            "in": "query"
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int64"
+            },
+            "collectionFormat": "multi",
+            "description": "CDN-ресурс. Для указания нескольких ресурсов используйте `&`",
+            "name": "resource",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешное выполнение запроса. В ответе вернутся данные по указанным метрикам",
+            "schema": {
+              "$ref": "#/definitions/getSeriesCDNStatisticsResponse"
+            }
+          },
+          "204": {
+            "description": "За указанный период нет данных"
+          },
+          "400": {
+            "description": "Неверный запрос"
+          },
+          "404": {
+            "description": "CDN-сервер не найден"
+          },
+          "500": {
+            "description": "Внутренняя ошибка сервера"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "account": {
+      "type": "object",
+      "required": [
+        "cname"
+      ],
+      "properties": {
+        "cname": {
+          "type": "string",
+          "example": "c1-531e19d9.gcdn.co"
+        }
+      }
+    },
+    "addSSL": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Уникальное название SSL-сертификата",
+          "type": "string"
+        },
+        "sslCertificate": {
+          "description": "Публичная часть сертификата",
+          "type": "string"
+        },
+        "sslPrivateKey": {
+          "description": "Секретный ключ SSL-сертификата",
+          "type": "string"
+        }
+      },
+      "example": {
+        "name": "New certificate",
+        "sslCertificate": "-----BEGIN CERTIFICATE-----\nMIIFWzCCBEOgAwIBAgISBK6qoNitg//89H/YJamujpWlMA0GCSqGSIb3DQEBCwUA\nMEoxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MSMwIQYDVQQD\nExpMZXQncyBFbmNyeXB0IEF1dGhvcml0eSBYMzAeFw0xODExMTMxMjQwMDJaFw0x\nOTAyMTExMjQwMDJaMBwxGjAYBgNVBAMTEWNkbjIudG50LWNsdWIuY29tMIIBIjAN\nBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzaHExDEXNSf6ELS0WUR7qq8gs9cc\nxx99sM2zs3Jld0twPmuldkVNe5xte/Hj03r4SesfOBczR7pn+t60YujPvUQDN8lx\nWYpvRuetOneyf4gNPatwzR/W1GWGlahet1xPVYGrttqL4gCJeShIXvU4aCyzW941\nPt0wCs+bg9u+59fXFkigWrWJPkwbR7bJ14XTStYynMbYLfCg+VPeGWj3d8wOhQcf\nAD86o8TLTbVfK2BDXwS5S8Dgf5u8g+WvmVHYDIkYKCxcLj0jP61Y7uHoFbSg41oN\nA9yPOa+0cYxA7U702V2WjxbfIeATYtNLZvH17lk+DYlQl8q3MLwguqZdgwIDAQAB\niIqI2xquGONtHFDOKJvy1O2qYTVRtNRVZqhc1ol+mw==\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIEkjCCA3qgAwIBAgIQCgFBQgAAAVOFc2oLheynCDANBgkqhkiG9w0BAQsFADA/\nMSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT\nDkRTVCBSb290IENBIFgzMB4XDTE2MDMxNzE2NDA0NloXDTIxMDMxNzE2NDA0Nlow\nSjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUxldCdzIEVuY3J5cHQxIzAhBgNVBAMT\nGkxldCdzIEVuY3J5cHQgQXV0aG9yaXR5IFgzMIIBIjANBgkqhkiG9w0BAQEFAAOC\nAQ8AMIIBCgKCAQEAnNMM8FrlLke3cl03g7NoYzDq1zUmGSXhvb418XCSL7e4S0EF\nq6meNQhY7LEqxGiHC6PjdeTm86dicbp5gWAf15Gan/PQeGdxyGkOlZHP/uaZ6WA8\nSMx+yk13EiSdRxta67nsHjcAHJyse6cF6s5K671B5TaYucv9bTyWaN8jKkKQDIZ0\nKOqkqm57TH2H3eDJAkSnh6/DNFu0Qg==\n-----END CERTIFICATE-----\n",
+        "sslPrivateKey": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDZcNCZiNNHfX2O\ndZpf12mv2rAZwqGZBAdpox0wntEPK3JciQ7ZRloLJeHuCNIJs9MidnH7Xk8zveju\nmab6HmfIzvMJAAm88OYWMFQRiYe1ggJEHMe7yYPQbtXwTqWDYdWmjPPma3Ujqqmb\nhmVX2rsYILD7cUjS+e0Ucfqx3QODQj/aujTt1rS0gFhJ0soY5m+C6VimPCx4Bjyw\n5rhtskJDRrfXxrIhVXOvSPFRyxDSfjt3win8vjhhZ3oFPWgrl9lVhn0zaB5hjDsd\n-----END PRIVATE KEY-----\n"
+      }
+    },
+    "changeOrigin": {
+      "type": "object",
+      "required": [
+        "source",
+        "backup",
+        "enabled"
+      ],
+      "properties": {
+        "backup": {
+          "description": "Признак использования источника как резервного: `true` — источник будет использоваться, когда один из активных источников станет недоступным",
+          "type": "boolean"
+        },
+        "enabled": {
+          "type": "boolean",
+          "description": "Доступность источника: `true` — источник доступен, `false` — источник не доступен"
+        },
+        "source": {
+          "description": "IP-адрес или доменное имя источника и порт, если настроен",
+          "type": "string"
+        }
+      },
+      "example": {
+        "backup": true,
+        "enabled": true,
+        "source": "test12.example.com"
+      }
+    },
+    "changeResources": {
+      "type": "object",
+      "properties": {
+        "active": {
+          "description": "Активность источника: `true` — ресурс активный, `false` — ресурс неактивный",
+          "type": "boolean",
+          "x-nullable": true
+        },
+        "enabled": {
+          "description": "Доступность источника: `true` — ресурс доступный, `false` — ресурс недоступный",
+          "type": "boolean",
+          "x-nullable": true
+        },
+        "logTarget": {
+          "description": "IP-адрес или доменное имя и порт (хост:порт), куда будут отправляться логи в режиме реального времени. Чтобы принимать логи, настройте свой сервер на получение логов через системный журнал",
+          "type": "string"
+        },
+        "options": {
+          "$ref": "#/definitions/resourceOptions"
+        },
+        "origin": {
+          "description": "IP-адрес или доменное имя источника и порт, если настроен. Вы можете использовать в запросе или параметр 'origin', или 'originGroup'",
+          "type": "string"
+        },
+        "originGroup": {
+          "description": "Идентификатор или название группы источников. Вы можете использовать в запросе или параметр 'origin', или 'originGroup'",
+          "type": "string"
+        },
+        "originProtocol": {
+          "$ref": "#/definitions/originProtocolEnum"
+        },
+        "secondaryHostnames": {
+          "description": "Список дополнительных CNAME-записей",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sslData": {
+          "description": "Укажите идентификатор SSL-сертификата, который будет использован для CDN-ресурса. Параметр будет заполнен автоматически, если вы выдадите сертификат Let's Encrypt. Параметр может использоваться только при `sslEnabled: true`",
+          "type": "integer",
+          "x-nullable": true
+        },
+        "sslEnabled": {
+          "description": "Признак использования HTTPS-протокола: `true` — используется HTTPS-протокол для доставки контента, `false` —  не используется HTTPS-протокол для доставки контента",
+          "type": "boolean",
+          "x-nullable": true
+        },
+        "ssl_automated": {
+          "description": "Признак автоматического обновления сертификата: `true` — SSL-сертификат Let’s Encrypt обновляется автоматически по истечении срока его действия, `false` — SSL-сертификат Let’s Encrypt не продлевается по истечении срока его действия (cодержимое не будет доставляться через HTTPS). Параметр может использоваться только при `sslEnabled: true`",
+          "type": "boolean",
+          "x-nullable": true
+        }
+      },
+      "example": {
+        "cname": "cdn.yoursite.com",
+        "logTarget": "1.2.3.4:1234",
+        "options": {
+          "allowedHttpMethods": {
+            "enabled": true,
+            "value": [
+              "GET",
+              "POST"
+            ]
+          },
+          "brotli_compression": {
+            "enabled": true,
+            "value": [
+              "text/html",
+              "text/plain"
+            ]
+          },
+          "browser_cache_settings": {
+            "enabled": true,
+            "value": "3600s"
+          },
+          "cache_http_headers": {
+            "enabled": false,
+            "value": [
+              "vary",
+              "content-length",
+              "last-modified",
+              "connection",
+              "accept-ranges",
+              "content-type",
+              "content-encoding",
+              "etag",
+              "cache-control",
+              "expires",
+              "keep-alive",
+              "server"
+            ]
+          },
+          "cors": {
+            "enabled": true,
+            "value": [
+              "yourdomain.com",
+              "yourdomain2.com"
+            ]
+          },
+          "country_acl": {
+            "enabled": true,
+            "excepted_values": [
+              "GB",
+              "DE"
+            ],
+            "policy_type": "allow"
+          },
+          "disable_cache": {
+            "enabled": true,
+            "value": false
+          },
+          "disable_proxy_force_ranges": {
+            "enabled": true,
+            "value": true
+          },
+          "edge_cache_settings": {
+            "custom_values": {
+              "100": "43200s"
+            },
+            "enabled": true,
+            "value": "43200s"
+          },
+          "fetch_compressed": {
+            "enabled": true,
+            "value": false
+          },
+          "force_return": {
+            "body": "http://example.com/redirect_address",
+            "code": 301,
+            "enabled": true
+          },
+          "forward_host_header": {
+            "enabled": false,
+            "value": false
+          },
+          "gzipOn": {
+            "enabled": true,
+            "value": true
+          },
+          "hostHeader": {
+            "enabled": true,
+            "value": "host.com"
+          },
+          "ignoreQueryString": {
+            "enabled": true,
+            "value": false
+          },
+          "ignore_cookie": {
+            "enabled": true,
+            "value": true
+          },
+          "ip_address_acl": {
+            "enabled": true,
+            "excepted_values": [
+              "192.168.1.100/32"
+            ],
+            "policy_type": "deny"
+          },
+          "proxy_cache_methods_set": {
+            "enabled": true,
+            "value": false
+          },
+          "query_params_blacklist": null,
+          "query_params_whitelist": null,
+          "redirect_http_to_https": {
+            "enabled": true,
+            "value": true
+          },
+          "redirect_https_to_http": {
+            "enabled": false,
+            "value": true
+          },
+          "referrer_acl": {
+            "enabled": true,
+            "excepted_values": [
+              "google.com",
+              "*.yandex.ru"
+            ],
+            "policy_type": "deny"
+          },
+          "rewrite": {
+            "body": "/(.*) /additional_path/$1",
+            "enabled": true,
+            "flag": "break"
+          },
+          "secure_key": {
+            "enabled": true,
+            "key": "mysupersecretkey",
+            "type": 2
+          },
+          "slice": null,
+          "stale": {
+            "enabled": true,
+            "value": [
+              "http_404",
+              "http_500"
+            ]
+          },
+          "staticHeaders": {
+            "enabled": true,
+            "value": {
+              "One_Header": "Value_1",
+              "Two_Header": "Value_2"
+            }
+          },
+          "staticRequestHeaders": {
+            "enabled": true,
+            "value": {
+              "Header-One": "Value 1",
+              "Header-Two": "Value 2"
+            }
+          },
+          "user_agent_acl": {
+            "enabled": true,
+            "excepted_values": [
+              "UserAgent Value"
+            ],
+            "policy_type": "allow"
+          }
+        },
+        "origin": "yoursite.com",
+        "originProtocol": "HTTPS",
+        "secondaryHostnames": [
+          "cdn1.yoursite.com",
+          "cdn2.yoursite.com"
+        ],
+        "sslData": 102,
+        "sslEnabled": true
+      }
+    },
+    "createOrigin": {
+      "type": "object",
+      "required": [
+        "source",
+        "backup",
+        "enabled"
+      ],
+      "properties": {
+        "backup": {
+          "description": "Признак использования источника как резервного:`true` — источник будет использоваться, когда один из активных источников станет недоступным",
+          "type": "boolean"
+        },
+        "enabled": {
+          "type": "boolean",
+          "description": "Доступность источника: `true` — источник доступен, `false` — источник не доступен"
+        },
+        "source": {
+          "description": "IP-адрес или доменное имя источника и порт, если настроен",
+          "type": "string"
+        }
+      },
+      "example": {
+        "backup": false,
+        "enabled": false,
+        "source": "test.example.com"
+      }
+    },
+    "createResource": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/changeResources"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "cname": {
+              "description": "CNAME, который будет использоваться для доставки контента через CDN",
+              "type": "string"
+            }
+          }
+        }
+      ],
+      "example": {
+        "cname": "cdn.example.com",
+        "originGroup": 132,
+        "secondaryHostnames": [
+          "1.example.com",
+          "2.example.com"
+        ]
+      }
+    },
+    "getAggregatedCDNStatisticsResponse": {
+      "type": "object",
+      "properties": {
+        "metrics": {
+          "$ref": "#/definitions/metrics"
+        }
+      },
+      "example": {
+        "metrics": {
+          "95_percentile": 14324356,
+          "cache_hit_traffic_ratio": 0.9852247660029627,
+          "max_bandwidth": 22215199,
+          "min_bandwidth": 299608,
+          "requests": 64234595,
+          "responses_2xx": 62616980,
+          "responses_3xx": 1196666,
+          "responses_4xx": 420718,
+          "responses_5xx": 216,
+          "responses_hit": 21235829,
+          "responses_miss": 339566,
+          "sent_bytes": 16552226067556,
+          "total_bytes": 16796789080876,
+          "upstream_bytes": 244563013320
+        }
+      }
+    },
+    "getOrigin": {
+      "type": "object",
+      "required": [
+        "id",
+        "source",
+        "backup",
+        "enabled"
+      ],
+      "properties": {
+        "backup": {
+          "description": "Признак использования источника как резервного: `true` — источник будет использоваться, когда один из активных источников станет недоступным",
+          "type": "boolean"
+        },
+        "enabled": {
+          "type": "boolean",
+          "description": "Доступность источника: `true` — источник доступен, `false` — источник не доступен"
+        },
+        "id": {
+          "description": "Идентификатор источника",
+          "type": "integer",
+          "format": "int64"
+        },
+        "source": {
+          "description": "IP-адрес или доменное имя источника и порт, если настроен",
+          "type": "string"
+        }
+      },
+      "example": {
+        "backup": false,
+        "enabled": false,
+        "id": 123,
+        "source": "test.example.com"
+      }
+    },
+    "getResource": {
+      "type": "object",
+      "required": [
+        "cname",
+        "created",
+        "id",
+        "originGroup_name",
+        "preset_applied",
+        "sslEnabled",
+        "status",
+        "vp_enabled"
+      ],
+      "properties": {
+        "active": {
+          "type": "boolean",
+          "description": "Активность ресурса: `true` — ресурс активный, `false` — ресурс неактивный",
+          "default": false
+        },
+        "client": {
+          "description": "Идентификатор вашей панели управления",
+          "type": "integer"
+        },
+        "cname": {
+          "description": "Псевдоним, который используется для доставки контента через CDN",
+          "type": "string"
+        },
+        "companyName": {
+          "description": "Название компании",
+          "type": "string"
+        },
+        "created": {
+          "description": "Дата создания CDN-ресурса",
+          "type": "string"
+        },
+        "deleted": {
+          "description": "Признак удаления ресурса: `true` — ресурс был удален, `false` — ресурс не был удален",
+          "type": "boolean",
+          "default": false
+        },
+        "enabled": {
+          "description": "Доступность ресурса: `true` — ресурс доступен, контент доставляется, `false` — ресурс не доступен, пользователи получают ответ `403`",
+          "type": "boolean",
+          "default": false
+        },
+        "id": {
+          "description": "Идентификатор CDN-ресурса",
+          "type": "integer"
+        },
+        "options": {
+          "$ref": "#/definitions/resourceOptions"
+        },
+        "originGroup": {
+          "description": "Идентификатор группы источников",
+          "type": "integer"
+        },
+        "originGroup_name": {
+          "description": "Название группы источников",
+          "type": "string"
+        },
+        "originProtocol": {
+          "$ref": "#/definitions/originProtocolEnum"
+        },
+        "preset_applied": {
+          "type": "boolean",
+          "description": "Признак использования предустановленных настроек на CDN-ресурсе: `true` — использовать предустановленные настройки, опции CDN-ресурса не могут изменяться, `false` — не использовать предустановленные настройки"
+        },
+        "proxy_ssl_enabled": {
+          "description": "SSL-валидация источника перед установкой соединения: `true` — CDN проверяет действительность SSL-сертификата источника перед установкой соединения, `false` — CDN не проверяет SSL-сертификат источника",
+          "type": "boolean",
+          "default": false
+        },
+        "secondaryHostnames": {
+          "description": "Список дополнительных CNAME-записей",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "shielded": {
+          "description": "Признак наличия защиты источника: `true` — защита источника включена, `false` — защита источника не включена",
+          "type": "boolean",
+          "default": false
+        },
+        "sslData": {
+          "type": "number",
+          "description": "Укажите идентификатор SSL-сертификата, который будет использован для CDN-ресурса. Параметр будет заполнен автоматически, если вы выдадите сертификат Let's Encrypt"
+        },
+        "sslEnabled": {
+          "description": "Признак использования HTTPS-протокола: `true` — используется HTTPS-протокол для доставки контента, `false` —  не используется HTTPS-протокол для доставки контента",
+          "type": "boolean"
+        },
+        "ssl_automated": {
+          "description": "Признак автоматического обновления сертификата: `true` — SSL-сертификат Let’s Encrypt обновляется автоматически по истечении срока его действия, `false` — SSL-сертификат Let’s Encrypt не продлевается по истечении срока его действия (cодержимое не будет доставляться через HTTPS). Параметр может использоваться только при `sslEnabled: true`",
+          "type": "boolean",
+          "default": false
+        },
+        "status": {
+          "description": "Статус CDN-ресурса: `active` — ресурс готов к использованию, `suspended` — ресурс недоступен, потому что сервис остановлен, `processed` — ресурс обрабатывается и пока не готов к использованию",
+          "type": "string",
+          "enum": [
+            "active",
+            "processed",
+            "suspended"
+          ]
+        },
+        "updated": {
+          "description": "Дата обновления ресурса",
+          "type": "string"
+        },
+        "vp_enabled": {
+          "type": "boolean",
+          "description": "Статус интеграции CDN-ресурса со стриминг-платформой: `true` — ресурс сконфигурирован для стриминг-платформы, изменение настроек ресурса может повлиять на его работу; `false` — ресурс не интегрирован со стриминг-платформой"
+        }
+      },
+      "example": {
+        "active": true,
+        "client": 170,
+        "cname": "cdn.site.com",
+        "companyName": "Your Company",
+        "created": "2017-06-10T10:30:04.954354Z",
+        "deleted": false,
+        "enabled": true,
+        "id": 220,
+        "options": {
+          "allowedHttpMethods": {
+            "enabled": false,
+            "value": [
+              "GET",
+              "POST",
+              "HEAD",
+              "OPTIONS"
+            ]
+          },
+          "edge_cache_settings": {
+            "enabled": true,
+            "value": true
+          },
+          "hostHeader": {
+            "enabled": true,
+            "value": "example.hb.ru-msk.vkcs.cloud"
+          },
+          "ignoreQueryString": {
+            "enabled": true,
+            "value": true
+          },
+          "stale": {
+            "enabled": true,
+            "value": [
+              "error",
+              "updating"
+            ]
+          }
+        },
+        "originGroup": 80,
+        "originGroup_name": "example.hb.ru-msk.vkcs.cloud",
+        "originProtocol": "MATCH",
+        "preset_applied": false,
+        "proxy_ssl_enabled": false,
+        "secondaryHostnames": [
+          "cdn1.yoursite.com",
+          "cdn2.yoursite.com"
+        ],
+        "shielded": false,
+        "sslEnabled": false,
+        "ssl_automated": false,
+        "status": "active",
+        "updated": "2023-11-20T08:15:19.867Z",
+        "vp_enabled": false
+      }
+    },
+    "getSSLAnswer": {
+      "type": "object",
+      "properties": {
+        "automated": {
+          "description": "Признак автоматического обновления сертификата: `true` — SSL-сертификат Let’s Encrypt обновляется автоматически по истечении срока его действия, `false` — SSL-сертификат Let’s Encrypt не продлевается по истечении срока его действия (cодержимое не будет доставляться через HTTPS). Параметр может использоваться только при `sslEnabled: true`",
+          "type": "boolean",
+          "default": false
+        },
+        "cert_issuer": {
+          "description": "Название сертифицирующего центра, который выписывает SSL-сертификат",
+          "type": "string"
+        },
+        "cert_subject_cn": {
+          "description": "Домен, который защищает SSL-сертификат",
+          "type": "string"
+        },
+        "deleted": {
+          "description": "Признак удаление сертифиаката: `true` — сертификат удален и не может быть использован для CDN-ресурса, `false` — сертификат используется",
+          "type": "boolean",
+          "default": false
+        },
+        "hasRelatedResources": {
+          "description": "Признак использования сертификата: `true` — сертификат используется для CDN-ресурсов, `false` — сертификат не используется",
+          "type": "boolean",
+          "default": false
+        },
+        "id": {
+          "description": "Идентификатор SSL-сертификата",
+          "type": "integer"
+        },
+        "name": {
+          "description": "Название сертификата",
+          "type": "string"
+        },
+        "validity_not_after": {
+          "description": "Дата, когда сертификат станет ненадежным",
+          "type": "string"
+        },
+        "validity_not_before": {
+          "description": "Дата, когда сертификат станет действительным",
+          "type": "string"
+        }
+      },
+      "example": {
+        "automated": false,
+        "cert_issuer": "Some certification center",
+        "cert_subjeck_cn": "mydomain.name",
+        "deleted": false,
+        "hasRelatedResources": true,
+        "name": "Some certifacate",
+        "validity_not_after": "2017-08-21T11:02:00Z",
+        "validity_not_before": "2016-09-17T18:06:01Z"
+      }
+    },
+    "getSeriesCDNStatisticsResponse": {
+      "type": "object",
+      "properties": {
+        "1 (example)": {
+          "description": "Идентификатор ресурса, данные по которому представлены в статистике",
+          "type": "object"
+        },
+        "country": {
+          "type": "object"
+        },
+        "metrics": {
+          "$ref": "#/definitions/seriesMetrics"
+        },
+        "region": {
+          "description": "Регионы CDN-серверов, по которым собирается статистика:<br> - **na** — Северная Америка; <br> - **eu** — Европа;<br> - **cis** — Содружество Независимых Государств (СНГ);<br> - **asia** — Азия;<br> - **au** — Австралия;<br> - **latam** — Латинская Америка;<br> - **me** — Средний Восток;<br> - **africa** — Африка;<br> - **sa** — Южная Америка; <br> - **ru** — Россия",
+          "type": "object"
+        },
+        "resource": {
+          "description": "Идентификатор ресурса, данные по которому представлены в статистике",
+          "type": "object"
+        },
+        "vhost": {
+          "type": "object",
+          "description": "CNAME ресурса, данные по которому представлены в статистике"
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "95_percentile": {
+          "description": "Показатель пропускной способности, который отсекает 5% пиков пропускной способности",
+          "type": "integer"
+        },
+        "cache_hit_traffic_ratio": {
+          "description": "Доля некешируемого трафика в общем объеме: `1 - upstream_bytes / sent_bytes`",
+          "type": "integer"
+        },
+        "max_bandwidth": {
+          "description": "Максимальный показатель пропускной способности",
+          "type": "integer"
+        },
+        "min_bandwidth": {
+          "description": "Минимальный показатель пропускной способности",
+          "type": "integer"
+        },
+        "requests": {
+          "description": "Количество запросов к пограничным серверам",
+          "type": "integer"
+        },
+        "responses_2xx": {
+          "description": "Количество ответов с кодами 2xx",
+          "type": "integer"
+        },
+        "responses_3xx": {
+          "description": "Количество ответов с кодами 3xx",
+          "type": "integer"
+        },
+        "responses_4xx": {
+          "description": "Количество ответов с кодами 4xx",
+          "type": "integer"
+        },
+        "responses_5xx": {
+          "description": "Количество ответов с кодами 5xx",
+          "type": "integer"
+        },
+        "responses_hit": {
+          "description": "Количество ответов с заголовком `Cache: HIT`",
+          "type": "integer"
+        },
+        "responses_miss": {
+          "description": "Количество ответов с заголовком `Cache: MISS`",
+          "type": "integer"
+        },
+        "shield_bytes": {
+          "description": "Трафик в байтах от сервера предварительного кеширования к CDN-серверам",
+          "type": "integer"
+        },
+        "sent_bytes": {
+          "description": "Трафик в байтах от CDN-сервера к клиентам",
+          "type": "integer"
+        },
+        "upstream_bytes": {
+          "description": "Трафик в байтах от исходного сервера к CDN-серверам или к серверу предварительного кеширования",
+          "type": "integer"
+        },
+        "total_bytes": {
+          "description": "Общие данные по параметрам `shield_bytes`, `upstream_bytes` и `sent_bytes`",
+          "type": "integer"
+        }
+      }
+    },
+    "originGroupGet": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "useNext",
+        "origin_ids",
+        "origins"
+      ],
+      "properties": {
+        "id": {
+          "description": "Идентификатор группы источников",
+          "type": "integer",
+          "format": "int64"
+        },
+        "name": {
+          "description": "Имя группы источников",
+          "type": "string"
+        },
+        "origin_ids": {
+          "description": "Массив с данными обо всех источниках в группе, включая их идентификаторы",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/getOrigin"
+          }
+        },
+        "origins": {
+          "description": "Массив с данными обо всех источниках в группе, без их идентификаторов",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/createOrigin"
+          }
+        },
+        "useNext": {
+          "description": "Использование следующего источника в случае ошибки: `true` — если этот источник отвечает с ошибками `4XX` или `5XX`, будет использоваться следующий из списка",
+          "type": "boolean"
+        }
+      },
+      "example": [
+        {
+          "id": 20,
+          "name": "YourOriginGroup",
+          "origin_ids": [
+            {
+              "backup": false,
+              "id": 5,
+              "source": "yourwebsite.com"
+            },
+            {
+              "backup": true,
+              "id": 6,
+              "source": "1.2.3.4:5500"
+            }
+          ],
+          "origins": [
+            {
+              "source": "yourwebsite.com"
+            },
+            {
+              "source": "1.2.3.4:5500"
+            }
+          ],
+          "useNext": true
+        }
+      ]
+    },
+    "originGroupPost": {
+      "type": "object",
+      "required": [
+        "name",
+        "useNext",
+        "origins"
+      ],
+      "properties": {
+        "name": {
+          "description": "Наименование группы источников",
+          "type": "string"
+        },
+        "origins": {
+          "description": "Данные всех IP-адресов или доменных имен, которые добавляются в группу",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/createOrigin"
+          }
+        },
+        "useNext": {
+          "description": "Использование следующего источника в случае ошибки: `true` — если этот источник отвечает с ошибками `4XX` или `5XX`, будет использоваться следующий из списка",
+          "type": "boolean"
+        }
+      },
+      "example": {
+        "name": "YourOriginGroup2",
+        "origins": [
+          {
+            "backup": false,
+            "enabled": true,
+            "source": "yourwebsite.com"
+          },
+          {
+            "backup": false,
+            "enabled": true,
+            "source": "1.2.3.4:5501"
+          }
+        ],
+        "useNext": true
+      }
+    },
+    "originGroupPut": {
+      "type": "object",
+      "required": [
+        "name",
+        "useNext"
+      ],
+      "properties": {
+        "name": {
+          "description": "Наименование группы источников",
+          "type": "string"
+        },
+        "origins": {
+          "description": "Данные всех IP-адресов или доменных имен, которые добавляются в группу",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/changeOrigin"
+          }
+        },
+        "useNext": {
+          "description": "Использование следующего источника в случае ошибки: `true` — если этот источник отвечает с ошибками `4XX` или `5XX`, будет использоваться следующий из списка",
+          "type": "boolean"
+        }
+      },
+      "example": {
+        "name": "group#2",
+        "origins": [
+          {
+            "backup": false,
+            "enabled": true,
+            "source": "yourdomain.com"
+          }
+        ],
+        "useNext": false
+      }
+    },
+    "originProtocolEnum": {
+      "type": "string",
+      "description": "Протокол взаимодействия с источником",
+      "enum": [
+        "HTTP",
+        "HTTPS",
+        "MATCH"
+      ]
+    },
+    "patchSSL": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Новое название SSL-сертификата. Должно быть уникальным",
+          "type": "string"
+        }
+      },
+      "example": {
+        "name": "New certificate name"
+      }
+    },
+    "resourceOptions": {
+      "type": "object",
+      "properties": {
+        "allowedHttpMethods": {
+          "type": "object",
+          "description": "HTTP-методы, доступные для CDN-ресурса",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Доступность HTTP-методов: `true` — HTTP-методы доступны для ресурса, `false` — HTTP-методы не доступны для ресурса"
+            },
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "GET",
+                  "POST",
+                  "HEAD",
+                  "OPTIONS",
+                  "PUT",
+                  "PATCH",
+                  "DELETE"
+                ]
+              },
+              "description": "Доступные методы"
+            }
+          },
+          "x-nullable": true
+        },
+        "brotli_compression": {
+          "type": "object",
+          "description": "Использование алгоритма сжатия Brotli",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования:`true` — используется компрессия Brotli, `false` — не используется"
+            },
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "x-nullable": true
+        },
+        "browser_cache_settings": {
+          "type": "object",
+          "description": "Настройки кеширования в браузере",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "string",
+              "description": "Время кеширования файлов, в секундах"
+            }
+          }
+        },
+        "cors": {
+          "type": "object",
+          "description": "Поддержка кросс-доменных запросов",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "x-nullable": true
+        },
+        "edge_cache_settings": {
+          "type": "object",
+          "description": "Настройки кеширования на CDN-ресурсе",
+          "required": [
+            "enabled"
+          ],
+          "properties": {
+            "custom_values": {
+              "type": "object",
+              "description": "Время кеширования в секундах для отдельных кодов ответов"
+            },
+            "default": {
+              "type": "string",
+              "description": "Время кеширования в секундах, контролируемое источником. Используется для кодов состояния ответа HTTP 200, 201, 204, 206, 301, 302, 303, 304, 307, 308, если исходный сервер не имеет кеширующих HTTP-заголовков. Ответы с другими кодами не будут кешироваться"
+            },
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "string",
+              "description": "Время кеширования файлов, в секундах"
+            }
+          }
+        },
+        "fetch_compressed": {
+          "type": "object",
+          "description": "Сжатие на источнике. Опция сокращает полосу пропускания между сервером-источником и кеш-серверами и увеличивает скорость отдачи контента за счет сокращения времени на сжатие файла на стороне CDN. CDN будет забирать с сервера-источника уже сжатый контент, поэтому источник должен поддерживать сжатие. В этом случае пользователи получат сжатый контент",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "x-nullable": true
+        },
+        "force_return": {
+          "type": "object",
+          "description": "Возврат кода ответа HTTP",
+          "required": [
+            "enabled"
+          ],
+          "properties": {
+            "body": {
+              "type": "string",
+              "description": "URL или текст кода ответа"
+            },
+            "code": {
+              "type": "integer",
+              "description": "Код ответа (403, 301, 302, 303 и другие)"
+            },
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            }
+          },
+          "x-nullable": true
+        },
+        "forward_host_header": {
+          "description": "Добавление заголовков запросов",
+          "type": "object",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "x-nullable": true
+        },
+        "gzipOn": {
+          "type": "object",
+          "description": "Использование алгоритма сжатия Gzip",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "x-nullable": true
+        },
+        "hostHeader": {
+          "type": "object",
+          "description": "Добавление заголовков ответов",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "string"
+            }
+          },
+          "x-nullable": true
+        },
+        "ignoreQueryString": {
+          "type": "object",
+          "description": "Игнорировать параметры запроса при кешировании файлов",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "boolean",
+              "description": "Тип игнорирования: `true` — игнорируются все параметры запроса, `false` — игнорируются параметры, указанные в `query_params_blacklist`, или все параметры, кроме указанных в `query_params_whitelist`"
+            }
+          },
+          "x-nullable": true
+        },
+        "ignore_cookie": {
+          "type": "object",
+          "description": "Игнорировать Set-Cookie",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "x-nullable": true
+        },
+        "query_params_blacklist": {
+          "type": "object",
+          "description": "Опция позволяет CDN игнорировать указанные параметры и кешировать их как отдельные объекты. Опции `ignoreQueryString`, `query_params_whitelist` и `query_params_blacklist` не могут быть включены одновременно",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "array",
+              "description": "Список параметров, которые нужно игнорировать",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "x-nullable": true
+        },
+        "query_params_whitelist": {
+          "type": "object",
+          "description": "Опция позволяет CDN игнорировать все параметры, кроме указанных, и кешировать их как отдельные объекты. Опции `ignoreQueryString`, `query_params_whitelist` и `query_params_blacklist` не могут быть включены одновременно",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "array",
+              "description": "Список параметров, которые нельзя игнорировать",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "x-nullable": true
+        },
+        "country_acl": {
+          "type": "object",
+          "description": "Позволяет защитить контент от доступа из определенных стран",
+          "required": [
+            "enabled",
+            "policy_type",
+            "excepted_values"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — опция включена, `false` — опция не включена"
+            },
+            "policy_type": {
+              "type": "string",
+              "description": "Тип политики: `allow` — разрешить доступ всем странам, кроме указанных в параметре `excepted_values`; `deny` — запретить доступ всем странам, кроме указанных в параметре `excepted_values`"
+            },
+            "excepted_values": {
+              "type": "array",
+              "description": "Список стран в формате ISO 3166-1 alpha-2",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "x-nullable": true
+        },
+        "referrer_acl": {
+          "type": "object",
+          "description": "Настройка позволяет защитить контент от публикации на других сайтах",
+          "required": [
+            "enabled",
+            "policy_type",
+            "excepted_values"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — опция включена, `false` — опция не включена"
+            },
+            "policy_type": {
+              "type": "string",              
+              "description": "Тип политики `allow` — разрешить доступ всем доменам, кроме указанных в параметре `excepted_values`; `deny` — запретить доступ всем доменам, кроме указанных в параметре `excepted_values`"
+            },
+            "excepted_values": {
+              "type": "array",
+              "description": "Список доменов или масок доменов без `http://` или `https://`",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "x-nullable": true
+        },
+        "ip_address_acl": {
+          "type": "object",
+          "description": "Настройка позволяет запретить доступ к контенту для определенных IP-адресов",
+          "required": [
+            "enabled",
+            "policy_type",
+            "excepted_values"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — опция включена, `false` — опция не включена"
+            },
+            "policy_type": {
+              "type": "string",
+              "description": "Тип политики: `allow` — разрешить доступ IP-адресам, кроме указанных в параметре `excepted_values`; `deny` — запретить доступ всем IP-адресам, кроме указанных в параметре `excepted_values`"
+            },
+            "excepted_values": {
+              "type": "array",
+              "description": "Список IP-адресов с маской подсети. Политика доступа работает по адресам сетей, вычисленным на основе указанных IP-адресов. Если два или более IP-адреса принадлежат одной сети, достаточно указать только один из этих IP-адресов",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "x-nullable": true
+        },
+        "slice": {
+          "type": "object",
+          "description": "Оптимизация доставки больших файлов. Опция ускоряет кеширование файлов больших размеров. Файл будет запрашиваться и храниться в кеше частями по 10 МБ",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "x-nullable": true
+        },
+        "stale": {
+          "type": "object",
+          "description": "Всегда онлайн: при недоступности сервера-источника устаревший контент будет доставляться из кеша",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "staticHeaders": {
+          "type": "object",
+          "description": "HTTP-заголовки, которые CDN-сервер добавит в ответ клиенту",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "object"
+            }
+          }
+        },
+        "staticRequestHeaders": {
+          "type": "object",
+          "description": "HTTP-заголовки, которые CDN-серверы будут добавлять при запросах к серверу-источнику",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "object"
+            }
+          }
+        },
+        "websockets": {
+          "type": "object",
+          "description": "Настройка разрешает WebSocket-соединения с источником",
+          "required": [
+            "enabled",
+            "value"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "description": "Признак использования: `true` — используется, `false` — не используется"
+            },
+            "value": {
+              "type": "boolean"
+            }
+          },
+          "x-nullable": true
+        }
+      }
+    },
+    "resourcePrefetch": {
+      "type": "object",
+      "required": [
+        "paths"
+      ],
+      "properties": {
+        "paths": {
+          "description": "Пути до файлов, которые нужно предварительно разместить на CDN-ресурсе",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "example": {
+        "paths": [
+          "/test.jpg",
+          "test1.jpg"
+        ]
+      }
+    },
+    "resourcePurge": {
+      "type": "object",
+      "required": [
+        "paths"
+      ],
+      "properties": {
+        "paths": {
+          "description": "Путь до файлов, которые нужно удалить",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "example": {
+        "paths": [
+          "/test.jpg",
+          "/static/*",
+          "*.png",
+          "*/images/*",
+          "*/pictures/*.jpg"
+        ]
+      }
+    },
+    "seriesMetrics": {
+      "description": "Подробности о запрошенных параметрах. Каждый параметр имеет два значения: первое — это время в метке времени UNIX, когда была получена статистика, а второе — значение метрики",
+      "type": "object",
+      "properties": {
+        "cache_hit_requests_ratio": {
+          "description": "Объем отправляемого кешированного контента. Рассчитывается по формуле: `responses_hit / requests`",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "cache_hit_traffic_ratio": {
+          "description": "Доля некешируемого трафика в общем объеме. Рассчитывается по формуле: `1 - upstream_bytes / sent_bytes`",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "cdn_bytes": {
+          "description": "Сумма трафика с серверов предварительного кеширования (`shield_bytes`) к CDN-серверам и с CDN-серверов к клиентам (`sent_bytes`)",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "image_processed": {
+          "description": "Количество изображений, оптимизированных через сервис оптимизации изображений",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "requests": {
+          "description": "Количество запросов к пограничным серверам",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "requests_waf_passed": {
+          "description": "Количество запросов, которые проходят через опцию Basic WAF",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "response_types": {
+          "description": "Статистика ответов по типу контента",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "responses_2xx": {
+          "description": "Количество ответов с кодами 2xx",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "responses_3xx": {
+          "description": "Количество ответов с кодами 3xx",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "responses_4xx": {
+          "description": "Количество ответов с кодами 4xx",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "responses_5xx": {
+          "description": "Количество ответов с кодами 5xx",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "responses_hit": {
+          "description": "Количество ответов с заголовком `Cache: HIT`",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "responses_miss": {
+          "description": "Количество ответов с заголовком `Cache: MISS`",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "sent_bytes": {
+          "description": "Трафик в байтах от CDN-сервера к клиентам",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "shield_bytes": {
+          "description": "Трафик в байтах от сервера предварительного кеширования к CDN-серверам",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "shield_traffic_ratio": {
+          "description": "Эффективность предварительного кеширования Origin Shielding: насколько больше трафика проходит с сервера предварительного кеширования, чем через обычный источник. Рассчитывается по формуле: `(shield_bytes - upstream_bytes) / shield_bytes`",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "total_bytes": {
+          "description": "Общие данные по параметрам `shield_bytes`, `upstream_bytes` и `sent_bytes`",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "upstream_bytes": {
+          "description": "Трафик в байтах от исходного сервера к CDN-серверам или к серверу предварительного кеширования",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  }
+}
