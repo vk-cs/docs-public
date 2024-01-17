@@ -1,6 +1,6 @@
 Вы можете визуализировать данные мониторинга ресурсов с помощью сервиса [Grafana](https://msk.cloud.vk.com/app/services/marketplace/v2/apps/service/e9ec618a-ca38-483b-916c-0c1fce9620be/latest/info/).
 
-Данная инструкция поможет развернуть сервис Grafana 10 на ВМ в VK Cloud, зайти в консоль сервиса и создать нового пользователя.
+Инструкция поможет развернуть сервис Grafana 10 на ВМ в VK Cloud, зайти в консоль сервиса и создать нового пользователя.
 
 Используя сервис Grafana, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/additionals/start/legal/marketplace) и [Grafana Labs](https://grafana.com/legal/grafana-labs-license/).
 
