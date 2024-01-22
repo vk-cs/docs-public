@@ -1,11 +1,12 @@
 {
-    "title": "Концепции",
-    "pageDescription": "Подробное описание принципов функционирования и устройства сервиса Kafka в VK Cloud.",
-    "shortDescription": "Как устроен сервис Kafka в VK Cloud: функциональные особенности и внутренняя архитектура",
-    "metaTitle": "Концепции",
-    "metaDescription": "Как устроен сервис Kafka в VK Cloud: функциональные особенности и внутренняя архитектура",
-    "sectionTitle": "Концепции",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
+  "title": "Концепции",
+  "pageDescription": "Подробное описание принципов функционирования и устройства сервиса Kafka в VK Cloud.",
+  "shortDescription": "Как устроен сервис Kafka в VK Cloud: функциональные особенности и внутренняя архитектура",
+  "metaTitle": "Концепции",
+  "metaDescription": "Как устроен сервис Kafka в VK Cloud: функциональные особенности и внутренняя архитектура",
+  "sectionTitle": "Концепции",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "6a6c03d7-092b-4be7-9d9a-3fd1b23c849c"
 }

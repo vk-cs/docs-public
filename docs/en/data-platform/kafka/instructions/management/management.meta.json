@@ -1,11 +1,14 @@
 {
-  "title": "Working with service components",
-  "pageDescription": "Operations for single-node or cluster installation via VK Cloud personal account.",
-  "shortDescription": "How to manage service instance components in a project",
-  "metaTitle": "Working with service components",
-  "metaDescription": "Cloud Kafka: managing service instance components in a project",
-  "sectionTitle": "Working with service components",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2
+    "title": "Working with service components",
+    "pageDescription": "Operations for single-node or cluster installation via VK Cloud personal account.",
+    "shortDescription": "How to manage service instance components in a project",
+    "metaTitle": "Working with service components",
+    "metaDescription": "Cloud Kafka: managing service instance components in a project",
+    "sectionTitle": "Working with service components",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "3bca8573-7e40-4113-a7a3-3309b1c22ea2",
+    "createdAt": "2024-01-22T11:04:00.000Z",
+    "updatedAt": "2024-01-22T11:04:00.000Z"
 }

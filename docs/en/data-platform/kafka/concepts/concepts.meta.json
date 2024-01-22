@@ -1,11 +1,12 @@
 {
-    "title": "Concepts",
-    "pageDescription": "A detailed description of the principles of operation and device of the Kafka service in VK Cloud.",
-    "shortDescription": "How the Kafka service works in VK Cloud: functional features and internal architecture",
-    "metaTitle": "Concepts",
-    "metaDescription": "How the Kafka service works in VK Cloud: functional features and internal architecture",
-    "sectionTitle": "Concepts",
-    "icon": "",
-    "infobarItems": null,
-    "weight": 2
+  "title": "Concepts",
+  "pageDescription": "A detailed description of the principles of operation and device of the Kafka service in VK Cloud.",
+  "shortDescription": "How the Kafka service works in VK Cloud: functional features and internal architecture",
+  "metaTitle": "Concepts",
+  "metaDescription": "How the Kafka service works in VK Cloud: functional features and internal architecture",
+  "sectionTitle": "Concepts",
+  "icon": "",
+  "infobarItems": null,
+  "weight": 2,
+  "uuid": "66569cc6-fe23-4bd8-94e6-cc15efda7539"
 }

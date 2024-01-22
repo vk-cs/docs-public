@@ -1,11 +1,14 @@
 {
-  "title": "Creating an instance of the service",
-  "pageDescription": "How to create an instance of the Cloud Kafka service in the desired configuration in the VK Cloud project.",
-  "shortDescription": "How to create an instance of Cloud Kafka in the desired configuration",
-  "metaTitle": "Creating an instance of the service",
-  "metaDescription": "How to create an instance of the service in the desired configuration.",
-  "sectionTitle": "Creating an instance of the service",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1
+    "title": "Creating an instance of the service",
+    "pageDescription": "How to create an instance of the Cloud Kafka service in the desired configuration in the VK Cloud project.",
+    "shortDescription": "How to create an instance of Cloud Kafka in the desired configuration",
+    "metaTitle": "Creating an instance of the service",
+    "metaDescription": "How to create an instance of the service in the desired configuration.",
+    "sectionTitle": "Creating an instance of the service",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "a24b57ac-a14c-45be-a1bd-3fcc8ae11bba",
+    "createdAt": "2024-01-22T11:04:00.000Z",
+    "updatedAt": "2024-01-22T11:04:00.000Z"
 }

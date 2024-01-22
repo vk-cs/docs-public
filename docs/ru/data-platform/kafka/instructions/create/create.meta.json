@@ -1,11 +1,14 @@
 {
-  "title": "Создание экземпляра сервиса",
-  "pageDescription": "Как создать экземпляр сервиса Cloud Kafka в нужной конфигурации в проекте VK Cloud.",
-  "shortDescription": "Как создать экземпляр Cloud Kafka в нужной конфигурации",
-  "metaTitle": "Создание экземпляра сервиса",
-  "metaDescription": "Как создать экземпляр сервиса в нужной конфигурации.",
-  "sectionTitle": "Создание экземпляра сервиса",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 1
+    "title": "Создание экземпляра сервиса",
+    "pageDescription": "Как создать экземпляр сервиса Cloud Kafka в нужной конфигурации в проекте VK Cloud.",
+    "shortDescription": "Как создать экземпляр Cloud Kafka в нужной конфигурации",
+    "metaTitle": "Создание экземпляра сервиса",
+    "metaDescription": "Как создать экземпляр сервиса в нужной конфигурации.",
+    "sectionTitle": "Создание экземпляра сервиса",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "8daaa9ae-122c-43e5-bf73-978481ab8751",
+    "createdAt": "2024-01-22T11:04:00.000Z",
+    "updatedAt": "2024-01-22T11:04:00.000Z"
 }
