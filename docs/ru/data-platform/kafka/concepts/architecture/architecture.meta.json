@@ -1,0 +1,11 @@
+{
+    "title": "Архитектура сервиса",
+    "pageDescription": "Архитектура сервиса Cloud Kafka в VK Cloud.",
+    "shortDescription": "Как устроен сервис Cloud Kafka на разных уровнях",
+    "metaTitle": "Архитектура сервиса",
+    "metaDescription": "VK Cloud: архитектура сервиса Cloud Kafka на уровне чтения / записи сообщений и на уровне управления сервисом",
+    "sectionTitle": "Архитектура сервиса",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2
+}
