@@ -1,0 +1,11 @@
+{
+    "title": "About the service",
+    "pageDescription": "General information about the Cloud Kafka service in VK Cloud.",
+    "shortDescription": "Information about the Cloud Kafka service",
+    "metaTitle": "About the service",
+    "metaDescription": "Cloud Kafka in VK Cloud: information about the service",
+    "sectionTitle": "About the service",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1
+}

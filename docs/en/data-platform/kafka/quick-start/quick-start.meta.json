@@ -1,0 +1,11 @@
+{
+    "title": "Quick start",
+    "pageDescription": "How to get started with the Cloud Kafka service in the VK Cloud project.",
+    "shortDescription": "How to deploy an instance of the service, send a message to the topic and check its receipt",
+    "metaTitle": "Quick start",
+    "metaDescription": "Cloud Kafka: deploy an instance of the service, send a message to the topic and check its receipt",
+    "sectionTitle": "Quick start",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1
+}
