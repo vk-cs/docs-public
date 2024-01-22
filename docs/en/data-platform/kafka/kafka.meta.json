@@ -1,0 +1,13 @@
+{
+  "title": "Cloud Kafka",
+  "pageDescription": "A service for creating and managing Apache Kafka clusters in the VK Cloud infrastructure.",
+  "shortDescription": "A distributed streaming platform for transferring data between applications",
+  "metaTitle": "Cloud Kafka",
+  "metaDescription": "A service for creating and managing Apache Kafka clusters in the VK Cloud infrastructure",
+  "sectionTitle": "Cloud Kafka",
+  "markdown": "A service for creating and managing Apache Kafka® clusters in the VK Cloud infrastructure. It provides ease of integration into the project infrastructure, reliability and scalability of the system, minimal delays and high throughput, provides fault-tolerant pipelines operating on the principle of “publication /subscription”.",
+  "icon": "",
+  "weight": 1,
+  "infobarItems": null,
+  "isBeta": true
+}
