@@ -1,11 +1,14 @@
 {
-  "title": "Работа с логическими группами",
-  "pageDescription": "Как создать и управлять группами экземпляров сервисов через DP Console в проекте VK Cloud.",
-  "shortDescription": "Как создать и управлять группами экземпляров сервисов через DP Console",
-  "metaTitle": "Работа с логическими группами",
-  "metaDescription": "Как создать и управлять группами экземпляров сервисов через DP Console в проекте VK Cloud",
-  "sectionTitle": "Работа с логическими группами",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 3
+    "title": "Работа с логическими группами",
+    "pageDescription": "Как создать и управлять группами экземпляров сервисов через DP Console в проекте VK Cloud.",
+    "shortDescription": "Как создать и управлять группами экземпляров сервисов через DP Console",
+    "metaTitle": "Работа с логическими группами",
+    "metaDescription": "Как создать и управлять группами экземпляров сервисов через DP Console в проекте VK Cloud",
+    "sectionTitle": "Работа с логическими группами",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 3,
+    "uuid": "b6f0e71a-500f-405c-b0f8-82bd4bea247b",
+    "createdAt": "2024-01-22T11:04:00.000Z",
+    "updatedAt": "2024-01-22T11:04:00.000Z"
 }
