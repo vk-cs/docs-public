@@ -6,6 +6,7 @@
     "metaDescription": "",
     "sectionTitle": "API партнерской программы",
     "weight": 14,
+    "hidden": true,
     "uuid": "3f525128-b6e6-4dda-908e-83ad1e68b2c8",
     "createdAt": "2023-02-13T09:27:48.000Z",
     "updatedAt": "2023-12-25T10:24:12.000Z"
