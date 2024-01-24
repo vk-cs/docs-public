@@ -2,7 +2,7 @@
 
 VK Cloud не несет ответственности за корректную работу стороннего ПО.
 
-[Сделайте резервную копию ВМ](../../instructions/vm-backup/vm-backup-create#ruchnoe_rezervnoe_kopirovanie) перед шифрованием диска.
+[Сделайте резервную копию ВМ](/ru/manage/backups/vm-backup/vm-backup-create#ruchnoe_rezervnoe_kopirovanie) перед шифрованием диска.
 
 </err>
 

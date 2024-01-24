@@ -12,7 +12,7 @@
     {
       "text": "Managing with Terraform",
       "icon": "/docs/_docs/en/manage/tools-for-using-services/terraform/assets/icon.svg",
-      "link": "../../manage/tools-for-using-services/terraform/use-cases/iaas"
+      "link": "../../manage/tools-for-using-services/terraform/use-cases/iaas/create"
     }],
   "uuid": "10d14d5d-951f-4ed0-ac2a-c3d706ab1a55"
 }
