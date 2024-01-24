@@ -17,6 +17,7 @@ RUN npm ci \
     && npm cache clean --force
 
 COPY .git/ .git/
+COPY config/ config/
 COPY configs/sentry* ./
 COPY docs.config.js ./
 COPY configs/.data/ .data/

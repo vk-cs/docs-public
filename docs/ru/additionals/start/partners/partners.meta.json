@@ -10,7 +10,7 @@
   "infobarItems": [
     {
       "text": "Справка API",
-      "icon": "",
+      "icon": "/docs/_docs/ru/additionals/start/partners/assets/icon.svg",
       "link": "../../../additionals/api/partners-api"
     }], 
   "weight": 7,
