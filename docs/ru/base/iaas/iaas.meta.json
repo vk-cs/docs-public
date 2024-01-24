@@ -12,7 +12,7 @@
     {
       "text": "Управление с помощью Terraform",
       "icon": "/docs/_docs/ru/manage/tools-for-using-services/terraform/assets/icon.svg",
-      "link": "../../manage/tools-for-using-services/terraform/use-cases/iaas"
+      "link": "../../manage/tools-for-using-services/terraform/use-cases/iaas/create"
     }],
   "uuid": "f18cbbc6-353d-4989-84a8-152fedc68060"
 }

@@ -4,14 +4,21 @@
   "description": "Публичная документация VK Cloud",
   "main": "index.js",
   "scripts": {
-    "bootstrap": "vkhelp install",
-    "init": "vkhelp init",
-    "preparation": "vkhelp preparation",
-    "build": "vkhelp build",
-    "start": "vkhelp start",
-    "healthcheck": "vkhelp healthcheck",
-    "lint": "vkhelp lint",
-    "dev": "vkhelp dev"
+    "bootstrap": "portal install && preparer prepare",
+    "init": "portal install",
+    "preparation": "preparer prepare",
+    "build": "portal build",
+    "start": "portal start",
+    "healthcheck": "audit checkup",
+    "lint": "preparer prepare",
+    "dev": "portal dev",
+
+    "portal:install": "portal install",
+    "preparer:prepare": "preparer prepare",
+    "audit:checkup": "audit checkup",
+    "portal:build": "portal build",
+    "portal:start": "portal start",
+    "portal:dev": "portal dev"
   },
   "repository": {
     "type": "git",
@@ -20,6 +27,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vk-cloud-solutions/help": "2.5.6"
+    "@vk-tech/d11n-portal": "2.7.13",
+    "@vk-tech/d11n-audit": "2.7.13",
+    "@vk-tech/d11n-preparer": "2.7.13"
   }
 }

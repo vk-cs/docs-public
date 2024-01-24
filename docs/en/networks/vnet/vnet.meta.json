@@ -12,7 +12,7 @@
     {
       "text": "Managing with Terraform",
       "icon": "/docs/_docs/en/manage/tools-for-using-services/terraform/assets/icon.svg",
-      "link": "../../manage/tools-for-using-services/terraform/use-cases/vnet"
+      "link": "../../manage/tools-for-using-services/terraform/use-cases/vnet/network"
     }],
   "uuid": "1899f5d0-4906-43a2-9757-9e9e2f0e6b2e",
   "additionalUuids": [
