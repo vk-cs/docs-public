@@ -1,0 +1,14 @@
+{
+    "title": "IPsec для VDI",
+    "pageDescription": "Как настроить защищенное подключение между VDI и LDAP в инфраструктуре VK Cloud с использованием IPsec Site-2-Site",
+    "shortDescription": "Как настроить защищенное подключение между VDI и LDAP в инфраструктуре VK Cloud с использованием IPsec Site-2-Site",
+    "metaTitle": "IPsec для VDI",
+    "metaDescription": "Как настроить защищенное подключение между VDI и LDAP в инфраструктуре VK Cloud с использованием IPsec Site-2-Site",
+    "sectionTitle": "IPsec для VDI",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "uuid": "",
+    "createdAt": "",
+    "updatedAt": ""
+}
