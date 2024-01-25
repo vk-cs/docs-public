@@ -8,7 +8,7 @@
   "markdown": "Cloud Desktop — сервис, основанный на системе виртуальных рабочих столов VDI (Virtual Desktop Infrastructure). VDI предназначена для доставки пользователям рабочих столов, созданных на удаленном сервере и функционирующих в виртуализированном окружении.",
   "icon": "",
   "isBeta": true,
-  "hidden": true,
+  "hidden": false,
   "weight": 10,
   "infobarItems": null,
   "uuid": "842b1d20-793c-49a7-9461-32eb20bec850"
