@@ -6,7 +6,7 @@
 
 [Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the addon.
 
-Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#do_manual_scaling) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) before install.
+Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_nodes_c172481b) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) before install.
 
 <tabs>
 <tablist>
@@ -97,7 +97,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. [Connect to Kiali](../../../../connect/kiali-server).
+1. [Connect to Kiali](../../../../connect/addons-ui).
 
 </tabpanel>
 <tabpanel>
@@ -199,16 +199,16 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. [Connect to Kiali](../../../../connect/kiali-server).
+1. [Connect to Kiali](../../../../connect/addons-ui).
 
 </tabpanel>
 <tabpanel>
 
 <info>
 
-Should the quick installation be done, the integration with Grafana will become unavailable.
+During quick installation, the addon configuration code is not edited. Grafana integration will not be available.
 
-To allow such integration and to specify an authentication password for Grafana, perform a **standard installation** or **installation on dedicated worker nodes**.
+If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
 </info>
 
@@ -245,7 +245,7 @@ To allow such integration and to specify an authentication password for Grafana,
    </tabpanel>
    </tabs>
 
-1. [Connect to Kiali](../../../../connect/kiali-server).
+1. [Connect to Kiali](../../../../connect/addons-ui).
 
 </tabpanel>
 </tabs>

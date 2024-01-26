@@ -26,7 +26,9 @@ The necessary addons can be [installed](../../../operations/addons/manage-addons
 | --------------------------------------------------------------------------------- | ------------------------- | ------------------------- |
 | [cert-manager](https://github.com/cert-manager/cert-manager)                      | —         | 1.12.2    |
 | [Docker Registry](https://github.com/twuni/docker-registry.helm)                  | 2.2.2     | 2.2.2     |
+| [Fluent Bit for Cloud Logging (logaas-integration)](../../../operations/addons/advanced-installation/install-advanced-logaas-integration) | — | 0.34.2 |
 | [Ingress NGINX](https://github.com/kubernetes/ingress-nginx)                      | 4.1.4     | 4.1.4     |
 | [Istio](https://github.com/istio/istio)                                           | —         | 1.16.4    |
+| [Jaeger](https://github.com/jaegertracing/jaeger)                                 | —         | 0.71.4    |
 | [Kiali](https://github.com/kiali/kiali)                                           | –         | 1.59.1    |
 | [Kube Prometheus Stack](https://github.com/prometheus-operator/kube-prometheus)   | 36.2.0    | 36.2.0    |
