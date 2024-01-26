@@ -53,9 +53,9 @@
 
 Чтобы настроить кеширование на CDN-ресурсе:
 
-- При создании CDN-ресурса воспользуйтесь методом `POST /projects/{project_id}/resources/`.
+- При создании CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `POST /projects/{project_id}/resources/`.
 
-- Для существующего CDN-ресурса воспользуйтесь методом `PUT /projects/{project_id}/resources/{resources_id}`.
+- Для существующего CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `PUT /projects/{project_id}/resources/{resources_id}`.
 
 В теле запроса в блоке `options` пропишите параметры `edge_cache_settings`.
 
@@ -139,9 +139,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы настроить кеширование в браузере пользователя:
 
-- При создании CDN-ресурса воспользуйтесь методом `POST /projects/{project_id}/resources/`.
+- При создании CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `POST /projects/{project_id}/resources/`.
 
-- Для существующего CDN-ресурса воспользуйтесь методом `PUT /projects/{project_id}/resources/{resources_id}`.
+- Для существующего CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `PUT /projects/{project_id}/resources/{resources_id}`.
 
 В теле запроса в блоке `options` пропишите параметры `browser_cache_settings`.
 
@@ -170,7 +170,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 ## Игнорирование заголовка Set-Cookie при кешировании
 
-Запросы к CDN-серверу на получение одного и того же файла могут содержать один путь до файла, но разные cookie-файлы в HTTP-заголовке `Set-Cookie`. По умолчанию CDN-ресурс считает такие запросы разными и перенаправляет их на сервер-источник. Это снижает скорость передачи данных. Игнорирование заголовка `Set-Cookie` позволяет CDN-ресурсу использовать свой кеш, а не отправлять запрос на источник.
+Запросы к CDN-серверу на получение одного и того же файла могут содержать один путь до файла, но разные значения в HTTP-заголовке `Set-Cookie`. По умолчанию CDN-ресурс считает такие запросы разными и перенаправляет их на сервер-источник. Это снижает скорость передачи данных. Игнорирование заголовка `Set-Cookie` позволяет CDN-ресурсу использовать свой кеш, а не отправлять запрос на источник.
 
 Чтобы CDN-ресурс игнорировал заголовки `Set-Cookie` в HTTP-запросах:
 
@@ -192,9 +192,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 </tabpanel>
 <tabpanel>
 
-- При создании CDN-ресурса воспользуйтесь методом `POST /projects/{project_id}/resources/`.
+- При создании CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `POST /projects/{project_id}/resources/`.
 
-- Для существующего CDN-ресурса воспользуйтесь методом `PUT /projects/{project_id}/resources/{resources_id}`.
+- Для существующего CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `PUT /projects/{project_id}/resources/{resources_id}`.
 
 В теле запроса в блоке `options` пропишите параметры `ignore_cookie`.
 
@@ -254,9 +254,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы настроить игнорирование параметров запроса:
 
-- При создании CDN-ресурса воспользуйтесь методом `POST /projects/{project_id}/resources/`.
+- При создании CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `POST /projects/{project_id}/resources/`.
 
-- Для существующего CDN-ресурса воспользуйтесь методом `PUT /projects/{project_id}/resources/{resources_id}`.
+- Для существующего CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `PUT /projects/{project_id}/resources/{resources_id}`.
 
 В теле запроса в блоке `options` пропишите параметры:
 
@@ -348,6 +348,298 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 </tabpanel>
 </tabs>
 
+## Сжатие GZip
+
+Поступающие на CDN-ресурс файлы можно сжимать методом GZip. Средняя степень сжатия этим методом составляет 70%, иногда достигает 90%. Минимальный размер файла для сжатия — 128 байт.
+
+При использовании метода сжатия GZip с источника запрашиваются несжатые файлы, поэтому опция не работает совместно со [сжатием на источнике](#szhatie_na_istochnike) и [оптимизацией доставки больших файлов](#optimizaciya_dostavki_bolshih_faylov).
+
+Для подключения сжатия GZip:
+
+<tabs>
+<tablist>
+<tab>Личный кабинет</tab>
+<tab>API</tab>
+</tablist>
+<tabpanel>
+
+1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет VK Cloud.
+1. Выберите проект, где находится нужный CDN-ресурс.
+1. Перейдите в раздел **CDN → CDN-ресурсы**.
+1. Выберите персональный домен в списке.
+1. Перейдите на вкладку **Контент**.
+1. Включите опцию **Включить сжатие GZip**.
+1. Нажмите кнопку **Сохранить изменения**.
+
+</tabpanel>
+<tabpanel>
+
+- При создании CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `POST /projects/{project_id}/resources/`.
+
+- Для существующего CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `PUT /projects/{project_id}/resources/{resources_id}`.
+
+В теле запроса в блоке `options` пропишите параметры `gzipOn`.
+
+Пример запроса с настройками сжатия GZip:
+
+```json
+curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+--header 'X-Auth-Token: example6UjMOd'\
+--header 'Content-Type: application/json'\
+--data '{
+    "originGroup": 267760,
+    "originGroup_name": "exampleorigin",
+    "secondaryHostnames": [],
+    "options":
+        {
+        "gzipOn": {
+            "enabled": true,
+            "value": true
+        }
+    }
+}'
+```
+
+</tabpanel>
+</tabs>
+
+## Сжатие Brotli
+
+Поступающие на CDN-ресурс файлы можно сжимать методом Brotli. Этот метод позволяет сжимать файлы сильнее, чем GZip. Например, для текстовых файлов степень сжатия Brotli превышает GZip в среднем на 20%. Минимальный размер файла для сжатия — 128 байт.
+
+При использовании метода сжатия Brotli с источника запрашиваются несжатые файлы, а сжатие происходит на специальном прекеш-сервере. Прекеш-сервер встает между сервером-источником и CDN-серверами и защищает сервер-источник от высокой нагрузки. Защита сервера-источника с помощью прекеш-сервера (shielding) — платная опция, для ее подключения обратитесь в [техническую поддержку](/ru/contacts).
+
+Опция не работает совместно со [сжатием на источнике](#szhatie_na_istochnike) и [оптимизацией доставки больших файлов](#optimizaciya_dostavki_bolshih_faylov).
+
+Для подключения сжатия Brotli:
+
+<tabs>
+<tablist>
+<tab>Личный кабинет</tab>
+<tab>API</tab>
+</tablist>
+<tabpanel>
+
+1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет VK Cloud.
+1. Выберите проект, где находится нужный CDN-ресурс.
+1. Перейдите в раздел **CDN → CDN-ресурсы**.
+1. Выберите персональный домен в списке.
+1. Перейдите на вкладку **Контент**.
+1. Включите опцию **Включить сжатие Brotli**.
+1. Выберите в списке типы сжимаемого контента. Тип `text/html` выбран по умолчанию, его нельзя удалить из списка.
+1. Нажмите кнопку **Сохранить изменения**.
+
+</tabpanel>
+<tabpanel>
+
+- При создании CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `POST /projects/{project_id}/resources/`.
+
+- Для существующего CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `PUT /projects/{project_id}/resources/{resources_id}`.
+
+В теле запроса в блоке `options` пропишите параметры `brotli_compression`.
+
+Пример запроса с настройками сжатия Brotli:
+
+```json
+curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+--header 'X-Auth-Token: example6UjMOd'\
+--header 'Content-Type: application/json'\
+--data '{
+    "originGroup": 267760,
+    "originGroup_name": "exampleorigin",
+    "secondaryHostnames": [],
+    "options":
+        {
+        "brotli_compression": {
+            "enabled": true,
+            "value": [
+                "text/html",
+                "application/xml+rss",
+                "application/xml"
+            ]
+        }
+    }
+}'
+```
+
+</tabpanel>
+</tabs>
+
+## Сжатие на источнике
+
+Сжатие контента на источнике ускоряет доставку контента: контент передается на CDN-сервер уже в сжатом виде, что сокращает время передачи данных. Для корректной работы опции источник должен поддерживать сжатие.
+
+Опция не работает совместно со [сжатием GZip](#szhatie_gzip), [Brotli](#szhatie_brotli) и [оптимизацией доставки больших файлов](#optimizaciya_dostavki_bolshih_faylov).
+
+</note>
+
+Чтобы CDN-ресурс запрашивал сжатый контент с источника:
+
+<tabs>
+<tablist>
+<tab>Личный кабинет</tab>
+<tab>API</tab>
+</tablist>
+<tabpanel>
+
+1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет VK Cloud.
+1. Выберите проект, где находится нужный CDN-ресурс.
+1. Перейдите в раздел **CDN → CDN-ресурсы**.
+1. Выберите персональный домен в списке.
+1. Перейдите на вкладку **Контент**.
+1. Включите опцию **Запрашивать сжатие на источнике**.
+1. Нажмите кнопку **Сохранить изменения**.
+
+</tabpanel>
+<tabpanel>
+
+- При создании CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `POST /projects/{project_id}/resources/`.
+
+- Для существующего CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `PUT /projects/{project_id}/resources/{resources_id}`.
+
+В теле запроса в блоке `options` пропишите параметры `fetch_compressed`.
+
+Пример запроса с настройками сжатия на источнике:
+
+```
+curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+--header 'X-Auth-Token: example6UjMOd'\
+--header 'Content-Type: application/json'\
+--data '{
+    "originGroup": 267760,
+    "originGroup_name": "exampleorigin",
+    "secondaryHostnames": [],
+    "options":
+        {
+        "fetch": {
+            "enabled": true,
+            "value": true
+        }
+    }
+}'
+```
+
+</tabpanel>
+</tabs>
+
+## Оптимизация доставки больших файлов
+
+Для оптимизации доставки большие файлы передаются с источника на CDN-ресурс и хранятся в кеше не целиком, а частями по 10 МБ. CDN-ресурс раньше начнет передавать файл пользователю, а также сможет передавать файл частями одновременно нескольким пользователям.
+
+Для корректной работы опции источник должен поддерживать HTTP Range request. Если для ресурса используется группа источников, файлы на каждом из используемых источников должны содержать одинаковые заголовки Content-Length и ETag.
+
+После включения или выключения опции изменятся ключи кеширования, контент будет заново запрошен с источника.
+
+<warn>
+
+Чтобы снизить нагрузку на источник, управляйте опцией в часы наименьшей нагрузки и обратитесь в [техническую поддержку](/ru/contacts) для защиты источника с помощью прекеш-сервера.
+
+</warn>
+
+Опция не работает совместно со [сжатием GZip](#szhatie_gzip), [Brotli](#szhatie_brotli) и [сжатием на источнике](#szhatie_na_istochnike).
+
+Чтобы подключить оптимизацию доставки больших файлов:
+
+<tabs>
+<tablist>
+<tab>Личный кабинет</tab>
+<tab>API</tab>
+</tablist>
+<tabpanel>
+
+1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет VK Cloud.
+1. Выберите проект, где находится нужный CDN-ресурс.
+1. Перейдите в раздел **CDN → CDN-ресурсы**.
+1. Выберите персональный домен в списке.
+1. Перейдите на вкладку **Контент**.
+1. Включите опцию **Включить оптимизацию доставки больших файлов**.
+1. Нажмите кнопку **Сохранить изменения**.
+
+</tabpanel>
+<tabpanel>
+
+- При создании CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `POST /projects/{project_id}/resources/`.
+
+- Для существующего CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `PUT /projects/{project_id}/resources/{resources_id}`.
+
+В теле запроса в блоке `options` пропишите параметры `slice`.
+
+Пример запроса с настройками оптимизации доставки больших файлов:
+
+```json
+curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+--header 'X-Auth-Token: example6UjMOd'\
+--header 'Content-Type: application/json'\
+--data '{
+    "originGroup": 267760,
+    "originGroup_name": "exampleorigin",
+    "secondaryHostnames": [],
+    "options":
+        {
+        "slice": {
+            "enabled": true,
+            "value": true
+        }
+    }
+}'
+```
+
+</tabpanel>
+</tabs>
+
+## Включение поддержки WebSocket
+
+Для передачи данных между источником и CDN-ресурсом можно использовать протокол WebSocket. В отличие от HTTP, WebSocket — двунаправленный протокол передачи данных, его использование ускоряет обмен данными.
+
+Чтобы подключить поддержку WebSocket на CDN-ресурсе:
+
+<tabs>
+<tablist>
+<tab>Личный кабинет</tab>
+<tab>API</tab>
+</tablist>
+<tabpanel>
+
+1. [Перейдите](https://mcs.mail.ru/app/) в личный кабинет VK Cloud.
+1. Выберите проект, где находится нужный CDN-ресурс.
+1. Перейдите в раздел **CDN → CDN-ресурсы**.
+1. Выберите персональный домен в списке.
+1. Перейдите на вкладку **Контент**.
+1. Включите опцию **Включить WebSocket**.
+1. Нажмите кнопку **Сохранить изменения**.
+
+</tabpanel>
+<tabpanel>
+
+- При создании CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `POST /projects/{project_id}/resources/`.
+
+- Для существующего CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `PUT /projects/{project_id}/resources/{resources_id}`.
+
+В теле запроса в блоке `options` пропишите параметры `websockets`.
+
+Пример запроса с настройками поддержки WebSocket:
+
+```json
+curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/examplef8f67/resources/175281'\
+--header 'X-Auth-Token: example6UjMOd'\
+--header 'Content-Type: application/json'\
+--data '{
+    "originGroup": 267760,
+    "originGroup_name": "exampleorigin",
+    "secondaryHostnames": [],
+    "options":
+        {
+        "websockets": {
+            "enabled": true,
+            "value": true
+        }
+    }
+}'
+```
+
+</tabpanel>
+</tabs>
+
 ## Настройка политики доступа по странам
 
 Настройка позволяет защитить контент от несанкционированного доступа из определенных стран.
@@ -378,9 +670,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы настроить политику безопасности по странам:
 
-- При создании CDN-ресурса воспользуйтесь методом `POST /projects/{project_id}/resources/`.
+- При создании CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `POST /projects/{project_id}/resources/`.
 
-- Для существующего CDN-ресурса воспользуйтесь методом `PUT /projects/{project_id}/resources/{resources_id}`.
+- Для существующего CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `PUT /projects/{project_id}/resources/{resources_id}`.
 
 В теле запроса в блоке `options` пропишите параметры `country_acl`.
 
@@ -442,9 +734,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы настроить политику безопасности по доменам:
 
-- При создании CDN-ресурса воспользуйтесь методом `POST /projects/{project_id}/resources/`.
+- При создании CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `POST /projects/{project_id}/resources/`.
 
-- Для существующего CDN-ресурса воспользуйтесь методом `PUT /projects/{project_id}/resources/{resources_id}`.
+- Для существующего CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `PUT /projects/{project_id}/resources/{resources_id}`.
 
 В теле запроса в блоке `options` пропишите параметры `referrer_acl`.
 
@@ -504,9 +796,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Чтобы настроить политику безопасности по доменам:
 
-- При создании CDN-ресурса воспользуйтесь методом `POST /projects/{project_id}/resources/`.
+- При создании CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `POST /projects/{project_id}/resources/`.
 
-- Для существующего CDN-ресурса воспользуйтесь методом `PUT /projects/{project_id}/resources/{resources_id}`.
+- Для существующего CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `PUT /projects/{project_id}/resources/{resources_id}`.
 
 В теле запроса в блоке `options` пропишите параметры `ip_address_acl`.
 
