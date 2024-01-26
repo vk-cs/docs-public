@@ -248,6 +248,7 @@ Jaeger выполняет трассировку запросов на осно�
   - **RAM**: 512M–1024M.
 
 - [Query](https://www.jaegertracing.io/docs/latest/architecture/#query):
+
   - **CPU**: 250m–500m.
   - **RAM**: 128M–512M.
 
