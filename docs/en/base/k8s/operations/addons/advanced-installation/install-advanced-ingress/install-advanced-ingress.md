@@ -10,7 +10,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
 [Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the addon.
 
-Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#do_manual_scaling) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) before install.
+Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_nodes_c172481b) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) before install.
 
 <tabs>
 <tablist>
@@ -216,9 +216,9 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 <info>
 
-When the addon is installed quickly, a load balancer with a floating IP address is created, and the Ingress controller will be accessible from the Internet.
+During quick installation, the addon configuration code is not edited. A load balancer with a floating IP address will be created, and the Ingress controller will be accessible from the Internet.
 
-If it is necessary that the Ingress controller is not accessible from the Internet, perform a **standard installation** or **installation on dedicated worker nodes**. During the installation process, [change](#editing_the_addon_setup_code_during_installation) load balancer type for Ingress controller.
+If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
 </info>
 
