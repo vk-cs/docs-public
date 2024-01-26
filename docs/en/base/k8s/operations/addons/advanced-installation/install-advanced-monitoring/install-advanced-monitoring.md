@@ -2,7 +2,7 @@
 
 [Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the addon.
 
-Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#do_manual_scaling) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) before install.
+Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_nodes_c172481b) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) before install.
 
 <tabs>
 <tablist>
@@ -218,9 +218,9 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 <info>
 
-A quick installation will create a Kubernetes secret containing a permanent password to log in to the Grafana web interface.
+During quick installation, the addon configuration code is not edited. A Kubernetes secret will be created, containing a permanent password to log in to the Grafana web interface.
 
-To [specify a temporary password](#setting_a_temporary_password_for_the_grafana_web_interface_72c82a8d) instead of a permanent one, perform **a standard installation** or **installation on dedicated worker nodes**.
+If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
 </info>
 
