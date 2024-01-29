@@ -735,14 +735,14 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
    <tabpanel>
 
    ```bash
-    openstack vpn service <VPN service ID> --disable && openstack vpn service <VPN service ID> --enable
+    openstack vpn service set <VPN service ID> --disable && openstack vpn service set <VPN service ID> --enable
    ```
   
    </tabpanel>
    <tabpanel>
 
    ```powershell
-    openstack vpn service <VPN service id> --disable; openstack vpn service <VPN service id> --enable
+    openstack vpn service set <VPN service id> --disable; openstack vpn service set <VPN service id> --enable
    ```
 
    </tabpanel>
