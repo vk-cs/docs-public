@@ -736,14 +736,14 @@
    <tabpanel>
 
    ```bash
-   openstack vpn service <идентификатор VPN-сервиса> --disable && openstack vpn service <идентификатор VPN-сервиса> --enable
+   openstack vpn service set <идентификатор VPN-сервиса> --disable && openstack vpn service set <идентификатор VPN-сервиса> --enable
    ```
   
    </tabpanel>
    <tabpanel>
 
    ```powershell
-   openstack vpn service <идентификатор VPN-сервиса> --disable; openstack vpn service <идентификатор VPN-сервиса> --enable
+   openstack vpn service set <идентификатор VPN-сервиса> --disable; openstack vpn service set <идентификатор VPN-сервиса> --enable
    ```
 
    </tabpanel>
