@@ -7,7 +7,7 @@ The activity log stores the history of operations performed by VK Cloud componen
 - `octavia` — managing load balancers.
 - `dbaas` — creating and managing DB instances.
 - `magnum` — orchestration of K8s containers.
-- `iam` — managing users in the project.
+- `iam` — managing users in the project (only available when contacting [technical support](/en/contacts/)).
 
 Log data can be useful both for internal analysis of incidents and when contacting [technical support](/en/contacts/).
 
