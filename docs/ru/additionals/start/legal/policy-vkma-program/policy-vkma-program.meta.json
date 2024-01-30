@@ -1,15 +1,20 @@
 {
-    "title": "Программа поддержки разработчиков сервисов VK Mini Apps от VK Cloud",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Программа поддержки разработчиков сервисов VK Mini Apps от VK Cloud",
-    "metaDescription": "Программа  поддержки разработчиков сервисов VK Mini Apps (далее — «Программа») разработана Обществом с ограниченной ответственностью  «ВК» (ОГРН: 1027739850962) (далее — «Компания») и предназначена для привлечения и удержания на Платформе «VK Cloud» компаний",
-    "sectionTitle": "Программа поддержки разработчиков сервисов VK Mini Apps от VK Cloud",
-    "markdown": "",
-    "icon": "",
-    "infobarItems": null,
-    "disableGithub": true,
-    "disableDateInformation": true,
-    "weight": 14,
-    "build":{"for":["dontbuild"]}
+  "title": "Программа поддержки разработчиков сервисов VK Mini Apps от VK Cloud",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Программа поддержки разработчиков сервисов VK Mini Apps от VK Cloud",
+  "metaDescription": "Программа  поддержки разработчиков сервисов VK Mini Apps (далее — «Программа») разработана Обществом с ограниченной ответственностью  «ВК» (ОГРН: 1027739850962) (далее — «Компания») и предназначена для привлечения и удержания на Платформе «VK Cloud» компаний",
+  "sectionTitle": "Программа поддержки разработчиков сервисов VK Mini Apps от VK Cloud",
+  "markdown": "",
+  "icon": "",
+  "infobarItems": null,
+  "disableGithub": true,
+  "disableDateInformation": true,
+  "weight": 14,
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  },
+  "uuid": "157ad3b9-7ff1-453f-af02-6a0b4684450d"
 }
