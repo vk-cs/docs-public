@@ -12,7 +12,7 @@ Changing the created virtual resources (VMs, load balancers, DB instances) outsi
       <details>
        <summary>Requirements and recommendations for custom desktop images</summary>
 
-      - The image must have the Windows or Astra Linux “Orel” operating system installed. To use other operating systems, please contact [technical support](/ru/contacts).
+      - The image must have the Windows or Astra Linux “Orel” operating system installed. To use other operating systems, please contact [technical support](/en/contacts).
       - The image must have the [QEMU guest agent](https://pve.proxmox.com/wiki/Qemu-guest-agent) and the [cloud-init](https://www.ibm.com/docs/ru/powervc-cloud/2.0.0?topic=init-installing-configuring-cloud-linux) package installed.
       - On the image with Astra Linux OS, you do not have to install additional software for supporting the RDP protocol and the AD directory service.
       - It is recommended to install components of the [Termidesk](https://termidesk.ru/) software on the image, which allows you to speed up connections to pool desktops.
