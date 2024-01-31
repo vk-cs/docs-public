@@ -42,7 +42,11 @@ The maximum amount of file storage is 50TB.
 
 ## In which availability zone are file storages created?
 
-Repositories are created independently of availability zones.
+Repositories are created in [availability zones](/en/additionals/start/architecture#availability_zones_567cfd7a) GZ1 (Moscow region) and QAZ (Kazakhstan region).
+[Availability zones](/en/additionals/start/architecture#availability_zones_567cfd7a) of repositories depend on the [region](/ru/base/account/concepts/regions) of the project:
+
+- GZ1 for Moscow region;
+- QAZ for Kazakhstan region.
 
 ## Is it possible to configure simultaneous access from different VMs to the file storage?
 
