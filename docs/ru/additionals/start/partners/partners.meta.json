@@ -7,12 +7,12 @@
   "sectionTitle": "Партнерам",
   "markdown": "",
   "icon": "",
+  "weight": 7,
   "infobarItems": [
     {
       "text": "Справка API",
       "icon": "/docs/_docs/ru/additionals/start/partners/assets/icon.svg",
       "link": "../../../additionals/api/partners-api"
-    }], 
-  "weight": 7,
+    }],
   "uuid": "6249aa71-381f-4ca7-9851-56039b514415"
 }
