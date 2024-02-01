@@ -39,7 +39,7 @@
    1. Поместите параметры тела запроса в переменную `params`:
 
       ```powershell
-      $params = @{'instance_id' : '<ID виртуальной машины>'; 'os_type' = 'windows'; 'capabilities' = @('telegraf')} | convertto-json
+      $params = @{'instance_id' = '<ID виртуальной машины>'; 'os_type' = 'windows'; 'capabilities' = @('telegraf')} | convertto-json
       ```
 
    1. Убедитесь в создании переменной с помощью `echo $params`. Ожидаемый вывод:
