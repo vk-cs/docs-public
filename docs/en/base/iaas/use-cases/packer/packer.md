@@ -101,8 +101,8 @@ Import the image according to [instructions](../../instructions/vm-images/vm-ima
         networks = ["${var.network_id}"]
         security_groups = ["default", "ssh"]
         ssh_username = "altlinux"
-        use_blockstorage_volume = "false"
-        volume_availability_zone = MS1
+        use_blockstorage_volume = "true"
+        volume_availability_zone = "MS1"
       }
 
       build {
