@@ -1,6 +1,4 @@
-DP Console organizes logical connectivity between instances of Data Platform services, combining them into groups.
-
-## Creating a group
+## Viewing groups of service instances
 
 <tabs>
 <tablist>
@@ -8,18 +6,27 @@ DP Console organizes logical connectivity between instances of Data Platform ser
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
+1. Go to your VK Cloud [personal account](https://cloud.vk.com/app/en/).
 1. Go to **Data Platform** → **Console**.
 1. Go to the **Groups** tab.
-1. Click **Add** or **Create group** button.
-1. Specify the name and the description of the group.
-1. Add service instances to the group:
+1. Click the name of the group.
 
-    1. Click the **Добавить экземпляры сервисов** button.
-    1. Select services from the list.
-    1. Click the **Add** button. The selected service instances will appear in the group.
+</tabpanel>
+</tabs>
 
-1. Click the **Create** button.
+## Viewing network connectivity
+
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+</tablist>
+<tabpanel>
+
+1. Go to your VK Cloud [personal account](https://cloud.vk.com/app/en/).
+1. Go to **Data Platform** → **Console**.
+1. Go to the **Groups** tab.
+1. Click the name of the group.
+1. Go to the **Сетевая связность** tab. A list of networks and services connected with them will open.
 
 </tabpanel>
 </tabs>
@@ -32,7 +39,7 @@ DP Console organizes logical connectivity between instances of Data Platform ser
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
+1. Go to your VK Cloud [personal account](https://cloud.vk.com/app/en/).
 1. Go to **Data Platform** → **Console**.
 1. Go to the **Groups** tab.
 1. Edit the group using one of the following methods:

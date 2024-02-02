@@ -1,0 +1,13 @@
+{
+  "title": "Data Platform UI Console",
+  "pageDescription": "Service to simplify work with Data Platform in the VK Cloud infrastructure.",
+  "shortDescription": "Service to simplify work with Data Platform in the VK Cloud infrastructure",
+  "metaTitle": "Data Platform UI Console",
+  "metaDescription": "Service to simplify work with Data Platform in the VK Cloud infrastructure",
+  "sectionTitle": "Data Platform UI Console",
+  "markdown": "Service to simplify work with Data Platform in the VK Cloud infrastructure. The service provides centralized management and grouping of data services through the VK Cloud personal account interface. The service is free for all Data Platform users.",
+  "icon": "",
+  "weight": 2,
+  "infobarItems": null,
+  "isBeta": true
+}
