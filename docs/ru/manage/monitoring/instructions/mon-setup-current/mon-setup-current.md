@@ -63,6 +63,7 @@
       -Headers @{'X-Auth-Token' = '<токен доступа X-Subject-Token>'} `
       -Body $params | Select-Object -Expand Content
       ```
+      Обратите внимание, что mcsXXXXXXXXXX - это имя проекта, когда как его идентификатор можно узнать в разделе "Управление доступами" личного кабинета.
 
    </tabpanel>
    </tabs>
