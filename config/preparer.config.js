@@ -1,7 +1,7 @@
 export const config = {
     docsFullPath: null, // Абсолютный путь до папки с исходниками документации, если null, то ./docs
     resultFullPath: './.data', // Абсолютный путь до папки с результатами подготовки файлами, если null, то ./preparationData
-    publicAssetsFullPath: './.docs/public/_docs', // Абсолютный путь до папки со "статикой", если null, то ./public/_docs
+    publicAssetsFullPath: null, // Абсолютный путь до папки со "статикой", если null, то ./public/_docs
     preparers: [
         'VersionMetaFilesPreparer', // Подготавливаем разделы с версиями
         'FolderStructureChecker', // Проверяем иерархию файлов и папок документации
