@@ -6,3 +6,5 @@ node_modules
 .npmrc
 .npm
 .gitkeep
+
+/public/_docs
