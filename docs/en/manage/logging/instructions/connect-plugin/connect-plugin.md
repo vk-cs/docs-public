@@ -11,8 +11,8 @@ The following are the steps for configuring the `vkcloudlogs-fluent-bit-plugin` 
 
 <tabs>
 <tablist>
-<tab>CentOS 7.X, CentOS 8.X, AlmaLinux 9, Ubuntu Linux 22.X</tab>
-<tab>Astra Linux SE 1.7.2 Орел</tab>
+<tab>CentOS 7.X, CentOS 8.X, AlmaLinux 9</tab>
+<tab>Ubuntu 22.X, Astra Linux SE 1.7.2 «Орел»</tab>
 <tab>AltLinux Server p10</tab>
 </tablist>
 <tabpanel>
