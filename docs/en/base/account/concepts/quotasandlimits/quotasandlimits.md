@@ -47,7 +47,7 @@ The following is a list of quotas and limits for the Moscow region.
 |-------------------------------------|-------|-----------------------|---------|---|
 | Number of instances in the project  | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Virtual machines** in VK Cloud personal account, `instances` in the extended list | 6 pcs. | 1000 pcs. | — |
 | Number of vCPUs in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **vCPU** in VK Cloud personal account, `cores` in the extended list | 9 pcs. | not limited | |
-| Total amount of RAM in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **RAM** in VK Cloud personal account, `ram` in the extended list | 10240 MB | not limited |
+| Total amount of RAM in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **RAM** in VK Cloud personal account, `ram` in the extended list | 10240 MB | not limited | |
 
 The limit on the number of instances in the project can be exceeded if the corresponding quota is increased upon request to [technical support](/en/contacts).
 
@@ -148,25 +148,72 @@ The limits in this section are determined by the requirements of operation, they
 
 #### Networks, subnets and IP addresses
 
+<tabs>
+<tablist>
+<tab>Sprut</tab>
+<tab>Neutron</tab>
+</tablist>
+<tabpanel>
+
 | Parameter                          | Quota | Basic quota | Limit | Hard |
 |-----------------------------------|-------|------------|---------|----|
-| Number of floating IP addresses | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Neutron floating IP addresses** in VK Cloud personal account, `floating-ips` in the extended list | 6 pcs. | 50 pcs.| — |
+| Number of networks in the project        | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Sprut networks** in VK Cloud personal account, `networks` in the extended list | 10 pcs. | 20 pcs             | — |
+| Number of subnets in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Sprut subnets** in VK Cloud personal account, `subnets` in the extended list | 10 pcs. | 20 pcs | — |
+| Number of floating IP addresses | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Sprut floating IP addresses** in VK Cloud personal account, `floating-ips` in the extended list | 6 pcs. | 50 pcs.| — |
+
+</tabpanel>
+<tabpanel>
+
+| Parameter                          | Quota | Basic quota | Limit | Hard |
+|-----------------------------------|-------|------------|---------|----|
 | Number of networks in the project        | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Neutron networks** in VK Cloud personal account, `networks` in the extended list | 10 pcs. | 20 pcs             | — |
 | Number of subnets in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Neutron subnets** in VK Cloud personal account, `subnets` in the extended list | 10 pcs. | 20 pcs | — |
+| Number of floating IP addresses | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Neutron floating IP addresses** in VK Cloud personal account, `floating-ips` in the extended list | 6 pcs. | 50 pcs.| — |
+
+</tabpanel>
+</tabs>
 
 Even if the quota for the total number of subnets in the project has been increased through technical support, it is not recommended to create more than 20 subnets in one network.
 
 #### Other parameters
 
+<tabs>
+<tablist>
+<tab>Sprut</tab>
+<tab>Neutron</tab>
+<tab>Octavia</tab>
+</tablist>
+<tabpanel>
+
 | Parameter                          | Quota | Basic quota | Limit | Hard |
 |-----------------------------------|-------|------------|---------|----|
-| Number of load balancers | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Octavia balancers** in VK Cloud personal account, `load_balancers` in the extended list | 12 pcs. | 20 pcs. | — |
-| Number of balancing rules per load balancer | — | — | 10 pcs. via VK Cloud personal account, 30 pcs. via OpenStack CLI   | —   |
+| Number of routers   | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Sprut routers** in VK Cloud personal account, `routers` in the extended list | 12 pcs. | 20 pcs.             | — |
+| Number of advanced routers | [квота](../../instructions/project-settings/manage#viewing_project_quotas) **Advanced routers** in VK Cloud personal account, `dc_router` in the extended list | 3 шт. | 3 шт.             | — |
+| Number of security groups in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Sprut firewall groups** in VK Cloud personal account, `secgroups` in the extended list | 12 pcs. | not limited | |
+| Number of security rules in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Sprut firewall rules** in VK Cloud personal account, `secgroup-rules` in the extended list | 200 pcs. | not limited | |
+| Number of ports in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Sprut ports** in VK Cloud personal account, `ports` in the extended list | 120 pcs. | 500 pcs. | — |
+| Number of external Neutron or Sprut ports in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Sprut external network ports** in VK Cloud personal account, `external_port` in the extended list | 5 pcs. | 6 pcs. | — |
+
+</tabpanel>
+<tabpanel>
+
+| Parameter                          | Quota | Basic quota | Limit | Hard |
+|-----------------------------------|-------|------------|---------|----|
 | Number of routers   | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Neutron routers** in VK Cloud personal account, `routers` in the extended list | 12 pcs. | 20 pcs.             | — |
 | Number of security groups in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Neutron firewall groups** in VK Cloud personal account, `secgroups` in the extended list | 12 pcs. | not limited | |
 | Number of security rules in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Neutron firewall rules** in VK Cloud personal account, `secgroup-rules` in the extended list | 200 pcs. | not limited | |
 | Number of ports in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Neutron ports** in VK Cloud personal account, `ports` in the extended list | 120 pcs. | 500 pcs. | — |
-| Number of external Neutron or Sprut ports in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **External ports Neutron** / **External ports Sprut** in VK Cloud personal account, `external_port` in the extended list | 5 pcs. | 6 pcs. | — |
+| Number of external Neutron or Sprut ports in the project | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Neutron external network ports** in VK Cloud personal account, `external_port` in the extended list | 5 pcs. | 6 pcs. | — |
+
+</tabpanel>
+<tabpanel>
+
+| Parameter                          | Quota | Basic quota | Limit | Hard |
+|-----------------------------------|-------|------------|---------|----|
+| Number of load balancers | [quota](../../instructions/project-settings/manage#viewing_project_quotas) **Octavia balancers** in VK Cloud personal account, `load_balancers` in the extended list | 12 pcs. | 20 pcs. | — |
+| Number of balancing rules per load balancer | — | — | 10 pcs. via VK Cloud personal account, 30 pcs. via OpenStack CLI   | —   |
+</tabpanel>
+</tabs>
 
 You can exceed the limit on the number of balancing rules per load balancer (10 pcs.) without contacting technical support. To do this, create rules using the OpenStack CLI. For stable operation, it is not recommended to use more than 30 rules per load balancer.
 
