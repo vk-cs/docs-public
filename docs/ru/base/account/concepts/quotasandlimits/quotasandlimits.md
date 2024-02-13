@@ -148,25 +148,73 @@
 
 #### Сети, подсети и IP-адреса
 
+<tabs>
+<tablist>
+<tab>Sprut</tab>
+<tab>Neutron</tab>
+</tablist>
+<tabpanel>
+
 | Параметр                          | Квота | Базовая квота | Лимит | Жесткий |
 |-----------------------------------|-------|------------|---------|----|
-| Количество сетей в проекте Neutron | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Сети Neutron** в личном кабинете, `networks` в расширенном списке | 10 шт. | 20 шт.             | — |
-| Количество плавающих IP-адресов Neutron | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **IP-адреса Neutron** в личном кабинете, `floating-ips` в расширенном списке | 6 шт. | 50 шт.| — |
-| Количество подсетей в проекте Neutron | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Подсети Neutron** в личном кабинете, `subnets` в расширенном списке | 10 шт. | 20 шт. | — |
+| Количество сетей в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Сети Sprut** в личном кабинете, `networks` в расширенном списке | 10 шт. | 20 шт.             | — |
+| Количество подсетей в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Подсети Sprut** в личном кабинете, `subnets` в расширенном списке | 10 шт. | 20 шт. | — |
+| Количество плавающих IP-адресов | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **IP-адреса Sprut** в личном кабинете, `floating-ips` в расширенном списке | 6 шт. | 50 шт.| — |
+
+</tabpanel>
+<tabpanel>
+
+| Параметр                          | Квота | Базовая квота | Лимит | Жесткий |
+|-----------------------------------|-------|------------|---------|----|
+| Количество сетей в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Сети Neutron** в личном кабинете, `networks` в расширенном списке | 10 шт. | 20 шт.             | — |
+| Количество подсетей в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Подсети Neutron** в личном кабинете, `subnets` в расширенном списке | 10 шт. | 20 шт. | — |
+| Количество плавающих IP-адресов | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **IP-адреса Neutron** в личном кабинете, `floating-ips` в расширенном списке | 6 шт. | 50 шт.| — |
+
+</tabpanel>
+</tabs>
 
 Даже если квота на общее количество подсетей в проекте была увеличена через техническую поддержку, не рекомендуется создавать более 20 подсетей в одной сети.
 
 #### Другие параметры
 
+<tabs>
+<tablist>
+<tab>Sprut</tab>
+<tab>Neutron</tab>
+<tab>Octavia</tab>
+</tablist>
+<tabpanel>
+
 | Параметр                          | Квота | Базовая квота | Лимит | Жесткий |
 |-----------------------------------|-------|------------|---------|----|
-| Количество балансировщиков нагрузки | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Балансировщики Octavia** в личном кабинете, `load_balancers` в расширенном списке | 12 шт. | 20 шт. | — |
-| Количество правил балансировки на один балансировщик | — | — | 10 шт. через личный кабинет, 30 шт. через OpenStack CLI   | —   |
+| Количество маршрутизаторов   | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Маршрутизаторы Sprut** в личном кабинете, `routers` в расширенном списке | 12 шт. | 20 шт.             | — |
+| Количество продвинутых маршрутизаторов   | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Маршрутизаторы Sprut** в личном кабинете, `dc_router` в расширенном списке | 3 шт. | 3 шт.             | — |
+| Количество групп безопасности в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Группы безопасности Sprut** В личном кабинете, `secgroups` в расширенном списке | 12 шт. | не ограничено | |
+| Количество правил безопасности в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Правила безопасности Sprut** В личном кабинете, `secgroup-rules` в расширенном списке | 200 шт. | не ограничено | |
+| Количество портов в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Порты Sprut** В личном кабинете, `ports` в расширенном списке | 120 шт. | 500 шт. | — |
+| Количество портов с адресами во внешней сети в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Порты во внешней сети Sprut** в личном кабинете, `external_port` в расширенном списке | 5 шт. | 6 шт. | — |
+
+</tabpanel>
+<tabpanel>
+
+| Параметр                          | Квота | Базовая квота | Лимит | Жесткий |
+|-----------------------------------|-------|------------|---------|----|
 | Количество маршрутизаторов   | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Маршрутизаторы Neutron** в личном кабинете, `routers` в расширенном списке | 12 шт. | 20 шт.             | — |
 | Количество групп безопасности в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Группы безопасности Neutron** В личном кабинете, `secgroups` в расширенном списке | 12 шт. | не ограничено | |
 | Количество правил безопасности в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Правила безопасности Neutron** В личном кабинете, `secgroup-rules` в расширенном списке | 200 шт. | не ограничено | |
 | Количество портов в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Порты Neutron** В личном кабинете, `ports` в расширенном списке | 120 шт. | 500 шт. | — |
-| Количество портов Neutron или Sprut с адресами во внешней сети в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Порты во внешней сети Neutron** / **Порты во внешней сети Sprut** в личном кабинете, `external_port` в расширенном списке | 5 шт. | 6 шт. | — |
+| Количество портов Neutron с адресами во внешней сети в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Порты во внешней сети Neutron** в личном кабинете, `external_port` в расширенном списке | 5 шт. | 6 шт. | — |
+
+</tabpanel>
+<tabpanel>
+
+| Параметр                          | Квота | Базовая квота | Лимит | Жесткий |
+|-----------------------------------|-------|------------|---------|----|
+| Количество балансировщиков нагрузки | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Балансировщики Octavia** в личном кабинете, `load_balancers` в расширенном списке | 12 шт. | 20 шт. | — |
+| Количество правил балансировки на один балансировщик | — | — | 10 шт. через личный кабинет, 30 шт. через OpenStack CLI   | —   |
+
+</tabpanel>
+</tabs>
 
 Вы можете превысить лимит на количество правил балансировки на один балансировщик (10 шт.), не обращаясь в техническую поддержку. Для этого создайте правила при помощи OpenStack CLI. Для стабильной работы не рекомендуется использовать более 30 правил на один балансировщик.
 
