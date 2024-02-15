@@ -7,5 +7,8 @@
     "sectionTitle": "Configuring Identity Federation",
     "icon": "",
     "hidden": true,
-    "weight": 1
+    "weight": 1,
+    "uuid": "d1c12c61-f441-4d38-b888-e4d615d88963",
+    "createdAt": "2024-02-15T12:45:14.000Z",
+    "updatedAt": "2024-02-15T12:45:14.000Z"
 }
