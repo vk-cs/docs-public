@@ -14,7 +14,8 @@
 
 1. Убедитесь, что [включена](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
 1. [Получите токен доступа](/ru/additionals/cases/case-keystone-token) `X-Subject-Token`.
-1. Узнайте [Project ID](/ru/manage/tools-for-using-services/rest-api/endpoints#poluchenie_project_id) проекта и [ID виртуальной машины](/ru/base/iaas/instructions/vm/vm-manage#poluchenie_id_virtualnoy_mashiny).
+1. [Получите Project ID](/ru/manage/tools-for-using-services/rest-api/endpoints#poluchenie_project_id), специальный идентификатор для работы с сервисами. Пример: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`.
+1. [Получите ID виртуальной машины](/ru/base/iaas/instructions/vm/vm-manage#poluchenie_id_virtualnoy_mashiny).
 1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/) к виртуальной машине.
 1. Выполните команду:
 
@@ -30,7 +31,7 @@
    -H "content-type: application/json" \
    -H "X-Auth-Token: <токен доступа X-Subject-Token>" \
    -d '{"instance_id":"<ID виртуальной машины>", "capabilities":["telegraf"], "os_type":"linux"}' \
-   -X POST  https://mcs.mail.ru/infra/templater/v2/project/<идентификатор проекта>/link
+   -X POST  https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link
    ```
 
    </tabpanel>
@@ -59,7 +60,7 @@
       ```powershell
       [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; `
       Invoke-WebRequest -Method Post -ContentType application/json `
-      -Uri https://mcs.mail.ru/infra/templater/v2/project/<идентификатор проекта>/link `
+      -Uri https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link `
       -Headers @{'X-Auth-Token' = '<токен доступа X-Subject-Token>'} `
       -Body $params | Select-Object -Expand Content
       ```
@@ -77,14 +78,14 @@
    <tabpanel>
 
    ```bash
-   sudo curl -s -H 'content-type: application/json' -X POST https://mcs.mail.ru/infra/templater/v2/project/<идентификатор проекта>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<ID виртуальной машины> | sudo bash
+   sudo curl -s -H 'content-type: application/json' -X POST https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<ID виртуальной машины> | sudo bash
    ```
 
    </tabpanel>
    <tabpanel>
 
    ```powershell
-   [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Method 'POST' -Headers @{'Content-Type' = 'application/json'} -Uri https://mcs.mail.ru/infra/templater/v2/project/<идентификатор проекта>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<ID виртуальной машины> | iex
+   [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Method 'POST' -Headers @{'Content-Type' = 'application/json'} -Uri https://mcs.mail.ru/infra/templater/v2/project/<Project ID>/link/XXXXUm5Yb33LJ7otcPnWSUXXXXXXXXXX/instance/<ID виртуальной машины> | iex
    ```
 
    </tabpanel>
