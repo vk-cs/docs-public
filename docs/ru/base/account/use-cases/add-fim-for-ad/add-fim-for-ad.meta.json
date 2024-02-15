@@ -1,0 +1,11 @@
+{
+    "title": "Настройка федерации удостоверений",
+    "pageDescription": "Настройка федеративного доступа в VK Cloud через Active Directory.",
+    "shortDescription": "Как настроить аутентификацию в VK Cloud через Active Directory",
+    "metaTitle": "Настройка федерации удостоверений",
+    "metaDescription": "Настройка федеративного доступа в VK Cloud через Active Directory",
+    "sectionTitle": "Настройка федерации удостоверений",
+    "icon": "",
+    "hidden": true,
+    "weight": 1
+}
