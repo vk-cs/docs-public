@@ -1,0 +1,12 @@
+{
+    "title": "Advanced working with Spark jobs",
+    "pageDescription": "How to create a job with a non-standard manifest on the example of working with ClickHouse.",
+    "shortDescription": "How to create a job with a non-standard manifest on the example of working with ClickHouse",
+    "metaTitle": "Advanced working with Spark jobs",
+    "metaDescription": "How to create a job with a non-standard manifest on the example of working with ClickHouse.",
+    "sectionTitle": "Advanced working with Spark jobs",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2
+}
