@@ -7,5 +7,8 @@
     "sectionTitle": "Настройка федерации удостоверений",
     "icon": "",
     "hidden": true,
-    "weight": 1
+    "weight": 1,
+    "uuid": "3d8fbd42-5a15-405d-9891-8ce10e4f8c32",
+    "createdAt": "2024-02-15T12:45:14.000Z",
+    "updatedAt": "2024-02-15T12:45:14.000Z"
 }
