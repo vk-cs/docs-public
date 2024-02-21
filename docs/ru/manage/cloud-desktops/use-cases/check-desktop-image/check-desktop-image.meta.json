@@ -7,5 +7,8 @@
     "sectionTitle": "Проверка собственных образов рабочих столов",
     "icon": "",
     "infobarItems": null,
-    "weight": 2
+    "weight": 2,
+    "uuid": "57f09808-8b2f-43e5-ac77-4f047a4b5f75",
+    "createdAt": "2024-02-21T05:14:31.000Z",
+    "updatedAt": "2024-02-21T05:14:31.000Z"
 }
