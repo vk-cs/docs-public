@@ -372,7 +372,7 @@ Open two terminal sessions:
              valid_lft forever preferred_lft forever
       ```
 
-## Monitor resource usage
+## Delete unused resources
 
 If you no longer need the created resources, delete them:
 
