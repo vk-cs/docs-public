@@ -133,6 +133,6 @@ openstack image create --private --container-format bare --disk-format qcow2 --f
 
 Wait for the operation to complete. After downloading the image, you will be able to [create a VM](../../instructions/vm/vm-create/) by standard means of the VK Cloud platform.
 
-## Monitor resource usage
+## Delete unused resources
 
 If you no longer need the imported image, [delete it](../../instructions/vm-images/vm-images-manage#deleting_an_image).

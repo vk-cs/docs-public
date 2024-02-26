@@ -452,7 +452,7 @@ Scheme of the built interaction between networks and machines within networks:
 
 ![Scheme of the built interaction between networks and machines within networks:](./assets/IPsec_scheme-After.png)
 
-## Monitor resource usage
+## Delete unused resources
 
 If you no longer need the created resources, delete them:
 
