@@ -320,7 +320,7 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
 
     The `clientVM` host must respond to the ping.
 
-## Monitor resource usage
+## Delete unused resources
 
 If you no longer need the created resources, delete them:
 
