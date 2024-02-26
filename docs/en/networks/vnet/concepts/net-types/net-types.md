@@ -18,7 +18,7 @@ It is possible to view the information about a shared network via personal accou
 
 ## External network
 
-External network (`ext-net`) provides access to the subnets with the public IP addresses and exists across all projects. It is used to provide services with the Internet access. See details in the [Network addressing and internet access](../ips-and-inet) section.
+External network (`ext-net`, `internet`) provides access to the subnets with the public IP addresses and exists across all projects. It is used to provide services with the Internet access. See details in the [Network addressing and internet access](../ips-and-inet) section.
 
 It is not possible to edit or delete the subnets of that network. The following operations can be performed via personal account, OpenStack CLI or Terraform:
 
