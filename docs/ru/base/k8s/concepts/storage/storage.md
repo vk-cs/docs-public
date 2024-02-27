@@ -88,14 +88,20 @@
 | csi-ceph-hdd-gz1-retain         | `ceph-hdd`                  | GZ1                 | Retain            |
 | csi-ceph-hdd-ms1                | `ceph-hdd`                  | MS1                 | Delete            |
 | csi-ceph-hdd-ms1-retain         | `ceph-hdd`                  | MS1                 | Retain            |
+| csi-ceph-hdd-me1                | `ceph-hdd`                  | ME1                 | Delete            |
+| csi-ceph-hdd-me1-retain         | `ceph-hdd`                  | ME1                 | Retain            |
 | csi-ceph-ssd-gz1                | `ceph-ssd`                  | GZ1                 | Delete            |
 | csi-ceph-ssd-gz1-retain         | `ceph-ssd`                  | GZ1                 | Retain            |
 | csi-ceph-ssd-ms1                | `ceph-ssd`                  | MS1                 | Delete            |
 | csi-ceph-ssd-ms1-retain         | `ceph-ssd`                  | MS1                 | Retain            |
+| csi-ceph-ssd-me1                | `ceph-ssd`                  | ME1                 | Delete            |
+| csi-ceph-ssd-me1-retain         | `ceph-ssd`                  | ME1                 | Retain            |
 | csi-high-iops-gz1               | `high-iops`                 | GZ1                 | Delete            |
 | csi-high-iops-gz1-retain        | `high-iops`                 | GZ1                 | Retain            |
 | csi-high-iops-ms1               | `high-iops`                 | MS1                 | Delete            |
 | csi-high-iops-ms1-retain        | `high-iops`                 | MS1                 | Retain            |
+| csi-high-iops-me1               | `high-iops`                 | ME1                 | Delete            |
+| csi-high-iops-me1-retain        | `high-iops`                 | ME1                 | Retain            |
 
 </tabpanel>
 </tabs>
