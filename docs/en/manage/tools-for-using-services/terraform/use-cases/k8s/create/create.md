@@ -311,7 +311,7 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 
 1. Wait for the operation to complete.
 
-## Delete unused resources
+## Check the use of resources
 
 If you no longer need the resources created with Terraform, delete them:
 

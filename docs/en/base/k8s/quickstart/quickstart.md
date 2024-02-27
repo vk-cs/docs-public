@@ -786,7 +786,7 @@ This result demonstrates that:
 1. You can mount storage to pods using Persistent Volume Claim.
 1. The Ingress controller provided with the cluster is configured correctly because it shows the real IP address of the request source.
 
-## Delete unused resources
+## Control the usage of resources
 
 A running cluster consumes computing resources. If you no longer need it:
 
