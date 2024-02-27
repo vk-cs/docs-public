@@ -1,13 +1,15 @@
 {
-  "title": "Advanced working with Spark jobs",
-  "pageDescription": "How to create a job with a non-standard manifest on the example of working with ClickHouse.",
-  "shortDescription": "How to create a job with a non-standard manifest on the example of working with ClickHouse",
-  "metaTitle": "Advanced working with Spark jobs",
-  "metaDescription": "How to create a job with a non-standard manifest on the example of working with ClickHouse.",
-  "sectionTitle": "Advanced working with Spark jobs",
-  "markdown": "",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 2,
-  "uuid": "a4fd9e6a-b547-4293-85d7-2e979f4d6693"
+    "title": "Advanced working with Spark jobs",
+    "pageDescription": "How to create a job with a non-standard manifest on the example of working with ClickHouse.",
+    "shortDescription": "How to create a job with a non-standard manifest on the example of working with ClickHouse",
+    "metaTitle": "Advanced working with Spark jobs",
+    "metaDescription": "How to create a job with a non-standard manifest on the example of working with ClickHouse.",
+    "sectionTitle": "Advanced working with Spark jobs",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 2,
+    "uuid": "a4fd9e6a-b547-4293-85d7-2e979f4d6693",
+    "createdAt": "2024-02-15T06:27:33.000Z",
+    "updatedAt": "2024-02-15T06:27:33.000Z"
 }
