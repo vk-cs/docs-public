@@ -148,6 +148,6 @@ In the last step, you created a virtual machine key that was saved to your compu
      ssh -i <path to key> centos@10.0.0.6
      ```
 
-## Step 5: Delete unused resources
+## Step 5: Monitor resource usage
 
 If you no longer need the resources you created, delete them.
