@@ -305,7 +305,7 @@ The structured interaction between networks and machines within networks looks l
 
 ![The interaction between networks scheme](./assets/advanced-router.png)
 
-## Delete unused resources
+## Monitor resource usage
 
 If you no longer need the created resources, delete them:
 

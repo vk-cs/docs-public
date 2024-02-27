@@ -244,7 +244,7 @@ velero help
    The coffee pod says Hello World to everyone! This file is located on the dynamically claimed Cinder ReadWriteOnce persistent volume.
    ```
 
-## Delete unused resources
+## Control the usage of resources
 
 1. If the Kubernetes resources you created are no longer needed, delete them.
 
