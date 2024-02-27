@@ -7,7 +7,48 @@
 ## Подготовительные шаги
 
 1. Убедитесь, что [подключение к сервису](../../config/) настроено.
-1. (Опционально) Если хотите использовать для создания ВМ пула собственный образ, [подготовьте](/ru/manage/cloud-desktops/concepts/desktop-image) и [проверьте](/ru/manage/cloud-desktops/use-cases/check-desktop-image) его.
+1. (Опционально) Если хотите использовать для создания ВМ пула собственный образ, подготовьте его:
+
+      <details>
+       <summary>Требования и рекомендации для собственных образов рабочих столов</summary>
+
+      - На образе должна быть установлена операционная система Windows или Astra Linux «Орел». Чтобы использовать другие операционные системы, обратитесь в [техническую поддержку](/ru/contacts).
+      - На образе должны быть установлены гостевой [агент QEMU](https://pve.proxmox.com/wiki/Qemu-guest-agent) и пакет [cloud-init](https://www.ibm.com/docs/ru/powervc-cloud/2.0.0?topic=init-installing-configuring-cloud-linux).
+      - На образ с ОС Astra Linux можно не устанавливать дополнительное ПО для поддержки протокола RDP и службы каталогов AD.
+      - Рекомендуется установить на образ компоненты [программного продукта Termidesk]( https://termidesk.ru/), который позволяет ускорить подключение к рабочим столам пула.
+  
+        <tabs>
+        <tablist>
+        <tab>Windows</tab>
+        <tab>Astra Linux</tab>
+        </tablist>
+        <tabpanel>
+
+        Выполните команды в приложении Windows PowerShell:
+
+        ```shell
+        Invoke-WebRequest -Uri https://repos.termidesk.ru/windows/windows_x86_64/termidesk-agent_3.3.0.22287_x64.msi -OutFile $env:TEMP\termidesk-agent.msi
+        Start-Process msiexec -ArgumentList "/i `"$env:TEMP\termidesk-agent.msi`" /qn" -Wait -NoNewWindow
+        Remove-Item $env:TEMP\termidesk-agent.msi
+        ```
+
+        </tabpanel>
+        <tabpanel>
+
+        Выполните команды в терминале:
+
+        ```shell
+        apt update && apt install -y curl lsb-release spice-vdagent xserver-xorg-video-qxl xrdp
+        echo "deb https://repos.termidesk.ru/astra $(lsb_release -cs) non-free" > /etc/apt/sources.list.d/termidesk.list
+        curl https://repos.termidesk.ru/astra/GPG-KEY-PUBLIC | apt-key add -
+        apt update && apt install -y 'python3-termidesk-agent=3.*' termidesk-pcsc-vscard termidesk-video-agent astra-ad-sssd-client
+        ```
+
+        </tabpanel>
+        </tabs>
+
+      </details>
+
 1. Запустите мастер создания пула:
 
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
@@ -54,7 +95,7 @@
     - **Тип инстанса**: выберите тип ВМ из списка типов, доступных в проекте.
     - **Размер диска**: укажите размер диска в ГБ. Значение не может быть меньше размера образа ОС.
     - **Тип диска**: выберите одно из значений — `HDD`, `SSD` или `High-IOPS SSD`.
-    - **Образ**: выберите образ для создания ВМ из списка доступных образов. При необходимости нажмите кнопку **Загрузить свой образ** и загрузите ранее [подготовленный](/ru/manage/cloud-desktops/concepts/desktop-image) и [проверенный](/ru/manage/cloud-desktops/use-cases/check-desktop-image) образ, следуя [инструкции по импорту](/ru/base/iaas/instructions/vm-images/vm-images-manage#import_obraza).
+    - **Образ**: выберите образ для создания ВМ из списка доступных образов. При необходимости нажмите кнопку **Загрузить свой образ** и загрузите [ранее подготовленный](../add#podgotovitelnye_shagi) образ, следуя [инструкции по импорту](/ru/base/iaas/instructions/vm-images/vm-images-manage#import_obraza).
 
       <info>
 
