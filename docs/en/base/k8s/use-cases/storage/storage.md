@@ -796,7 +796,7 @@ To connect an NFS persistent volume using a static PVC:
    </tabpanel>
    </tabs>
 
-## Delete unused resources
+## Control the usage of resources
 
 1. If the Kubernetes resources you created are no longer needed, delete them.
 

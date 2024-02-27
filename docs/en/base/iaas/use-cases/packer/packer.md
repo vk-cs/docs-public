@@ -223,6 +223,6 @@ Import the image according to [instructions](../../instructions/vm-images/vm-ima
     </tabpanel>
     </tabs>
 
-## Delete unused resources
+## Monitor resource usage
 
 If you no longer need the image, [delete it](../../instructions/vm-images/vm-images-manage#deleting_an_image).

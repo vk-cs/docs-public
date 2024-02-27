@@ -167,7 +167,7 @@ To demostrate how Gatekeeper works several objects will be created:
    </tabpanel>
    </tabs>
 
-## Delete unused resources
+## Control the usage of resources
 
 1. If the Kubernetes resources you created are no longer needed, delete them.
 
