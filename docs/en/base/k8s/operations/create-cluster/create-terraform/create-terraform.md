@@ -197,7 +197,7 @@ Some clarification:
   </tabpanel>
   </tabs>
 
-- For the `Moscow` region, specify one of two availability zones in the `availability_zone` parameter: `MS1` or `GZ1`.
+- For the `Moscow` region, specify one of three availability zones in the `availability_zone` parameter: `ME1`, `MS1` or `GZ1`.
 
 - It is recommended to assign a public IP address to the cluster when creating it, so that you can access the cluster from the Internet (`floating_ip_enabled = true`). To assing such an IP address, it is necessary for the subnet with the `subnet_id` identifier to be [connected](/en/networks/vnet/concepts/ips-and-inet#organizing_internet_access) to the router which has access to the external network.
 

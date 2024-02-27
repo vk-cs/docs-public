@@ -32,6 +32,8 @@ An availability zone is one or more data centers in which components of the clou
 
 Each zone is isolated from failures in other availability zones. Placing virtual resources in multiple zones provides fault tolerance and reduces the likelihood of data loss.
 
+All availability zones in the Moscow region are connected into a fully redundant fiber-optic network, which provides high speed and low latency when transferring data between availability zones.
+
 ## Image
 
 The configuration and data of the virtual machine are stored as one or more files. These files can be used as an image to run a VM in a local environment or to create a new VM.
