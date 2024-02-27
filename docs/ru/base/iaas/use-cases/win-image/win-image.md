@@ -132,6 +132,6 @@ openstack image create --private --container-format bare --disk-format qcow2 --f
 
 Дождитесь завершения операции. После загрузки образа появится возможность [создавать ВМ](../../instructions/vm/vm-create/) стандартными средствами платформы VK Cloud.
 
-## Удалите неиспользуемые ресурсы
+## Проконтролируйте использование ресурсов
 
 Если импортированный образ вам больше не нужен, [удалите его](../../instructions/vm-images/vm-images-manage#udalenie_obraza).

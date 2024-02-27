@@ -142,11 +142,12 @@ The parameters of the image import command depend on the need for backup support
 
 Changing the visibility status of an image allows you to access an image from multiple projects. Sharing an image across multiple projects allows you to speed up the deployment of virtual machines.
 
-The VK Cloud service provides the following image visibility statuses for users:
+The VK Cloud service uses the following image visibility statuses:
 
 | Status      | Description                                         |
 |-------------|-----------------------------------------------------|
 | `private`   | The image is for personal access only               |
+| `community` | The image is available to the community             |
 | `shared`    | The image can be used in several projects           |
 
 <tabs>

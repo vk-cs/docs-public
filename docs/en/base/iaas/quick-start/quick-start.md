@@ -155,7 +155,7 @@ In Windows 7/8, use the PuTTY application to connect via SSH.
 </tabpanel>
 </tabs>
 
-## Delete unused resources
+## Monitor the use of resources
 
 A running VM consumes computing resources. If you don't need it anymore:
 
