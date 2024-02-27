@@ -136,9 +136,9 @@ The VK Cloud platform supports various types of disks:
 
 | Disk Type | Name in the API | Availability zones | Description |
 |-----------|----------------|------------------|----------|
-| Network HDD | ceph-hdd | MS1, GZ1 | An ordinary magnetic hard drive. Suitable for storing large amounts of information. Triple replication to different storage servers |
-| Network SSD | ceph-ssd | MS1, GZ1 | Solid-state drive. High speed of reading and writing information. The performance is higher than that of HDD. Triple replication to different storage servers |
-| Network<br/>High-IOPS SSD | high-iops | MS1, GZ1 | SSD with increased speed of operation. Double replication: both copies are on the same storage server |
+| Network HDD | ceph-hdd | MS1, GZ1, ME1 | An ordinary magnetic hard drive. Suitable for storing large amounts of information. Triple replication to different storage servers |
+| Network SSD | ceph-ssd | MS1, GZ1, ME1 | Solid-state drive. High speed of reading and writing information. The performance is higher than that of HDD. Triple replication to different storage servers |
+| Network<br/>High-IOPS SSD | high-iops | MS1, GZ1, ME1 | SSD with increased speed of operation. Double replication: both copies are on the same storage server |
 | Local<br/>Low Latency NVME | ef-nvme | nova | SSD, which is located on the same hypervisor with the VM. High-speed operation and fast response. Double replication: both copies are on the same hypervisor |
 
 <details>
