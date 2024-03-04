@@ -17,29 +17,39 @@ The following rules apply:
 
 ## Organizing internet access
 
-In order for the router to have internet access, select the **External network connection** option when creating it. When connecting a network to such a router, select the option **Access to internet**.
+In order for objects in the subnet to have access to the Internet, you need to connect a [router](../router) to the subnet with access to [external network](../net-types#external_network).
 
-Network objects that need a router with Internet access:
+Network objects that need a router with external network access:
 
 - VPN tunnel.
 - Load balancer with internet access.
-- Virtual machines with floating IP addresses connected to the private network behind the router.
 
-  <info>
+For [virtual machine](/en/base/iaas/concepts/vm-concept#virtual_machines) the Internet access can be provided in different ways:
 
-  To access a virtual machine from the internet, assign a floating IP address to it or connect it to an external `ext-net` network with public IP addresses.
+- Connect the VM to an external network. In this way, a subnet and external IP address will be automatically assigned to it.
+- Connect the VM to a private subnet that is connected to a router with access to an external network, and assign it a floating IP address. In this way, the IP address can be set manually or automatically.
 
-  </info>
+## Public IP address pool of the internet external network
 
-  <warn>
+All projects in SDN Sprut are connected to the external network `internet`.
 
-  The assignment of a new floating IP address and the selection of a subnet from externals network occurs randomly.
+On all subnets of the external network `internet`:
 
-  </warn>
+- DHCP is disabled;
+- DNS servers `5.61.237.120` and `5.61.237.127` are used.
+
+<!-- prettier-ignore-start -->
+| Subnet name  | Subnet address   | Available IP address range                         | Gateway         |
+| ------------ | ---------------- | -------------------------------------------------- | --------------- |
+| ext-sub  | 89.208.216.0/24  | 89.208.216.1 - 89.208.216.253                       | 89.208.216.254 |
+| ext-sub2  | 212.111.84.0/22  | 212.111.84.1 - 212.111.87.253                        | 212.111.87.254 |
+<!-- prettier-ignore-end -->
 
 ## Public IP address pool of the ext-net external network
 
-On all subnets:
+All projects in SDN Neutron are connected to an external network `ext-net`.
+
+On all subnets of the external network `ext-net`:
 
 - DHCP is disabled;
 - DNS servers `5.61.237.120` and `5.61.237.127` are used.

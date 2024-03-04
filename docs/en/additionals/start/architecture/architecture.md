@@ -90,15 +90,19 @@ Each availability zone has one or more data processing centers (data centers) wh
 
   The address of the data center: Moscow, Korovinskoe highway, 41.
 
+- `ME1`: includes a data center [«Medvedkovo» Rostelecom-DPC](https://dcnetwork.ru/dc/moscow);
+
+  The address of the data center: Moscow, Chermyanskaya st., 4.
+
 - `QAZ`: includes a data center [QazCloud](https://qazcloud.kz/).
 
   The address of the data center: Republic of Kazakhstan, Akmola region, Kosshy, Republic str. 1.
 
 Each data center is equipped with independent power supply and cooling systems.
 
-The availability zones `GZ1` and `MS1` are connected using a redundant dedicated high-bandwidth and low-latency fiber network for high data transfer rates between zones.
+Availability zones within a region are connected using a redundant dedicated high-bandwidth and low-latency fiber network for high data transfer rates between zones.
 
-In the availability zones `GZ1` and `MS1`, the VK Cloud infrastructure is [protected](https://cloud.vk.com/cloud-platform/certificates/) in accordance with the Federal Law of the Russian Federation “On Personal Data” No. 152-FZ.
+The infrastructure of availability zones of all VK Cloud regions is [protected](https://cloud.vk.com/cloud-platform/certificates/) in accordance with the Federal Law of the Russian Federation “On Personal Data” No. 152-FZ.
 
 ## Security
 
