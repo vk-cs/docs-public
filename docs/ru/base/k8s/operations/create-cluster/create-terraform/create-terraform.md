@@ -200,7 +200,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   </tabpanel>
   </tabs>
 
-- Для региона `Москва` укажите одну из двух зон доступности `availability_zone`: `MS1` или `GZ1`.
+- Для региона `Москва` укажите одну из трех зон доступности `availability_zone`: `ME1`, `MS1` или `GZ1`.
 
 - Рекомендуется при создании кластера назначить ему публичный IP-адрес, чтобы можно было получить доступ к кластеру из интернета (`floating_ip_enabled = true`). Для назначения такого IP-адреса необходимо, чтобы подсеть кластера с идентификатором `subnet_id` была [подключена](/ru/networks/vnet/concepts/ips-and-inet#organizaciya_dostupa_v_internet) к маршрутизатору c доступом к внешней сети.
 

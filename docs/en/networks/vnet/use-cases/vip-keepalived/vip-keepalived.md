@@ -7,7 +7,7 @@ To show the virtual IP address setting:
   - VRRP will be configured in the [keepalived](https://keepalived.readthedocs.io/en/latest/introduction.html) implementation to serve this IP address.
 - a third virtual machine with a floating IP address will be created, from which all the necessary settings and health check will be performed.
 
-![Scenario Diagram](./assets/diagram.svg)
+![Scenario Diagram](./assets/vip-keepalived.png)
 
 ## 1. Preparation steps
 
@@ -372,7 +372,7 @@ Open two terminal sessions:
              valid_lft forever preferred_lft forever
       ```
 
-## Monitor resource usage
+## Delete unused resources
 
 If you no longer need the created resources, delete them:
 

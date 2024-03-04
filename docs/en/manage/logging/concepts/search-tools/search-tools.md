@@ -23,7 +23,7 @@ If you do not specify an expression with fields in the search, then by default t
 
 ## Requirements
 
-1. Quotes in the expression are escaped `/`.
+1. The characters `"`, `'` and `＼` in an expression are escaped using `＼`.
 1. The value can be omitted from quotation marks if it:
 
    - starts with a letter of the Latin alphabet and contains only letters of the Latin alphabet, numbers and underscores;
