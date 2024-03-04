@@ -315,7 +315,7 @@ grafana:
 
 <info>
 
-Если при добавлении аддона были выбраны имя сервиса, отличное от `kube-prometheus-stack`, или пространство имен, отличное от `prometheus-monitoring`, скорректируйте приведенные ниже шаги.
+Далее используется имя сервиса `kube-prometheus-stack` и пространство имен `prometheus-monitoring`. Если при добавлении аддона были выбраны другие параметры, скорректируйте шаги и команды.
 
 </info>
 
@@ -365,3 +365,33 @@ grafana:
 
 </tabpanel>
 </tabs>
+
+## Сброс пароля для Grafana
+
+Если аддон был установлен без указания временного пароля, значение пароля для входа в веб-интерфейс Grafana хранится в секрете Kubernetes. Если этот секрет был утерян, вы можете сбросить пароль, чтобы снова получить доступ к Grafana.
+
+<info>
+
+Далее используется имя сервиса `kube-prometheus-stack` и пространство имен `prometheus-monitoring`. Если при добавлении аддона были выбраны другие параметры, скорректируйте команды.
+
+</info>
+
+1. Получите имя пода Grafana:
+
+   ```bash
+   kubectl -n prometheus-monitoring get pod -l app.kubernetes.io/name=grafana
+   ```
+
+   **Формат имени пода из вывода команды:**
+
+   ```text
+   kube-prometheus-stack-grafana-XXXXXXXXX-XXXXX
+   ```
+
+1. Сбросьте пароль, выполнив команду внутри пода Grafana:
+
+   ```bash
+   kubectl -n prometheus-monitoring exec <имя пода Grafana> -- sh -c "grafana cli --debug admin reset-admin-password <новый пароль>"
+   ```
+
+   Если пароль успешно сброшен, в выводе команды будет сообщение `Admin password changed successfully ✔`.
