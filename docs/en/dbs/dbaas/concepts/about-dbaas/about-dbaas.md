@@ -1,24 +1,15 @@
-Cloud Databases is a service for creating cloud databases, read more in [article](https://cloud.vk.com/databases/).
+The Cloud Databases service allows you to quickly deploy the DBMS of the [types](../../types) that you need in various [configurations](../work-configs) in VK Cloud.
 
-Running PostgreSQL, MySQL, MongoDB and ClickHouse DBMS in a couple of minutes.
+Managing cloud DBMSs does not require deep knowledge of administration. A DBMS instance is created in your personal account in a couple of clicks. VK Cloud takes care of all the work of deploying the instance and its technical support. Depending on the configuration and selected options, the following will be automatically configured:
 
-- Flexible database scaling as the business grows.
-- Payment for used computing power, per-second billing.
-- Geo-distributed replicas for greater reliability and less response delay.
-- Backup to fault-tolerant storage in one click.
-- SLA 99.95% with financial guarantees.
+- data replication between hosts;
+- load balancing;
+- sharding;
+- backup;
+- scaling disks as data volumes grow.
 
-The list of DB instances available for creation can be viewed:
+In the Moscow [region](/en/base/account/concepts/regions), for some types of DBMS, you can create geo-distributed configurations with hosts in different [availability zones](/en/additionals/start/architecture#availability_zones_567cfd7a) (GZ1, MS1 and ME1) to further increase fault tolerance.
 
-- to the **Databases** [section](https://cloud.vk.com/databases/) when creating an instance;
-- to the [materials](https://cloud.vk.com/databases/) VK Cloud.
+After deploying the DBMS instance, all that remains is to create the necessary databases on it, fill them with content, connect your applications to them, configure access and monitoring.
 
-After creation, the database becomes available by certain parameters for any of your applications using connectors, below is an example for Python:
-
-```python
-from pymongo import MongoClient
-
-client = MongoClient("mongodb://<USERNAME>:<PASSWORD>@172.00.0.0")
-
-db = client.<DATABASE>
-```
+For some types of DBMS, [extensions](../extensions) are available. You can install them through your personal account.
