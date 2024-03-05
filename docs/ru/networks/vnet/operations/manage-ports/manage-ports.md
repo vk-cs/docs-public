@@ -310,7 +310,7 @@ openstack port set --help
 1. Чтобы удалить один IP-адрес источника, выполните команду:
 
    ```bash
-   openstack port unset <имя или идентификатор порта> --allowed-address ip-address=<IP-адрес>
+   openstack port unset <имя или идентификатор порта> --allowed-address ip-address=<IP-адрес>,mac-address=<mac-address>
    ```
 
    Если необходимо удалить еще несколько IP-адресов, повторите эту команду для каждого их них.
