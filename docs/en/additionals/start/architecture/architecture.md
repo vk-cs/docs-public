@@ -102,7 +102,7 @@ Each data center is equipped with independent power supply and cooling systems.
 
 Availability zones within a region are connected using a redundant dedicated high-bandwidth and low-latency fiber network for high data transfer rates between zones.
 
-The infrastructure of availability zones of all VK Cloud regions is [protected](https://cloud.vk.com/cloud-platform/certificates/) in accordance with the Federal Law of the Russian Federation “On Personal Data” No. 152-FZ.
+The infrastructure of availability zones MS1 and GZ1 of the Moscow VK Cloud region is [protected](https://cloud.vk.com/cloud-platform/certificates/) in accordance with the Federal Law of the Russian Federation “On Personal Data” No. 152-FZ.
 
 ## Security
 
