@@ -1,8 +1,13 @@
-The Spark cluster executes Spark jobs. Such tasks can be sent to the cluster in different ways. Next, the easiest way to send a task will be demonstrated, in which it is enough only to pass the Spark application code. As an example, an application will be used to calculate the approximate value of the number π.
+Spark jobs can be submitted to the cluster in different ways:
+
+- For Spark applications that do not have dependencies, it is sufficient to pass the application code in the job manifest. This approach will be demonstrated below.
+- For Spark applications that require additional artifacts for their operation, you must manually add the required artifacts to the [Cloud Storage](/en/base/s3) bucket and edit the job manifest. This approach is illustrated [using the example of working with ClickHouse](../submit-advanced-job-clickhouse/).
+
+As an example, an application will be used to calculate an approximate value of the number π.
 
 ## Preparatory steps
 
-1. Prepare the environment for working with Python in any way convenient for you:
+1. Prepare the environment for working with Python in any convenient way:
 
    <tabs>
    <tablist>
@@ -26,46 +31,47 @@ The Spark cluster executes Spark jobs. Such tasks can be sent to the cluster in 
 
 1. Install the Cloud ML Platform library for Python:
 
-   1. Download [the library file](https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz).
+   <tabs>
+   <tablist>
+   <tab>JupyterHub</tab>
+   <tab>pip</tab>
+   </tablist>
+   <tabpanel>
 
-      The most up-to-date version of the library is always available at the link provided.
-
-   1. Install packages from the downloaded file:
-
-      <tabs>
-      <tablist>
-      <tab>JupyterHub notebook</tab>
-      <tab>pip</tab>
-      </tablist>
-      <tabpanel>
+   1. [Connect to the JupyterHub instance](/en/ml/mlplatform/jupyterhub/start/connect).
+   1. In the JupyterHub notebook, create and execute a cell with the following contents:
 
       ```bash
-      %pip install mlplatform_client.tar.gz
+      %pip install https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz
       ```
 
-      </tabpanel>
-      <tabpanel>
+   </tabpanel>
+   <tabpanel>
 
-      ```bash
-      pip install mlplatform_client.tar.gz
-      ```
+   Execute the command:
 
-      </tabpanel>
-      </tabs>
+   ```bash
+   pip install https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz
+   ```
+
+   </tabpanel>
+   </tabs>
+
+   The up-to-date version of the library is always available at the link provided.
 
 1. [Create an access token](../../instructions/tokens#creating_an_access_token), which is needed to work with the library.
 
    A token with both the `Administrator` role and the `User` role is suitable.
 
-   <warn>
+   <err>
 
-   To simplify the presentation, the token value is contained directly in the Python script examples.
+   For simplicity, the token value is specified in the Python script examples in plain text.
 
-   The token value is sensitive information. Take the necessary precautions when working with it to avoid leaks.
+   When working in a production environment, do not place the token in scripts in plain text. Use environment variables, vaults for secrets, or other tools to work with sensitive data.
 
-   </warn>
+   </err>
 
-1. [Create](../../instructions/create) Spark cluster.
+1. [Create](../../instructions/create) a Spark cluster.
 
    Choose the cluster parameters at your discretion.
 
@@ -86,7 +92,7 @@ The Spark cluster executes Spark jobs. Such tasks can be sent to the cluster in 
 
 ## 1. Create a file with the Spark application code
 
-This application calculates the approximate value of the number π using the Monte Carlo method, distributing the calculations across the nodes of the Spark cluster.
+This application calculates a Monte Carlo approximation of the number π by distributing the computation across the nodes of the Spark cluster.
 
 <details>
 <summary>calculate-pi.py</summary>
@@ -120,14 +126,7 @@ spark.stop()
 
 ## 2. Send the Spark job to the cluster
 
-Next, a scenario is applied in which the task is sent to the cluster along with the Python code of the Spark application:
-
-1. Using the Cloud ML Platform library, the default manifest describing the task is loaded.
-1. Using the Cloud ML Platform library, a task named `pi-spark-job` is sent to the cluster with the specified ID.
-
-   In this case, you must specify the manifest and the name of the file with the Python code of the Spark application to run on the cluster. The Cloud ML Platform library will adjust the manifest data itself so that the code from the specified file can be executed. In this case, there is no need to make corrections to the manifest or upload additional files to the cluster bucket: to calculate the number of π, you do not need to specify additional dependencies, upload data files, etc.
-
-Execute the script to send the task to the cluster according to the specified scenario:
+Submit a job to the cluster by executing the script:
 
 ```python
 from mlplatform_client import MLPlatform
@@ -152,9 +151,23 @@ Information about the submitted task will be displayed, for example:
 Job: pi-spark-job, status: SUBMITTED, created_at: ...
 ```
 
+By default, the Spark manifest job does not contain a location of the files needed to run the Spark application.
+
+The application that calculates the number π requires [only one executable file](#1_create_a_file_with_the_spark_application_code), no additional artifacts are used.
+
+In this simple case, you don't need to host the Spark application executable in an Object Storage bucket and then edit the default manifest to add the required information to it.
+
+It is enough to pass the name of the executable file when sending a job to the cluster:
+
+```python
+spark_job_info = mlp.spark_submit_job(CLUSTER_ID, spark_job_manifest, PY_FILE)
+```
+
+The Cloud ML Platform library itself will adjust the manifest so that the code from the specified file can be executed.
+
 ## 3. Track the status of the Spark job
 
-1. Execute the Python script to get the job logs:
+1. Make sure that the result of calculating the number π appears in the task logs. If the result does not appear, run the script to obtain the logs again: intermediate logs of the work can be displayed at the time when the task has not completed yet.
 
    ```python
    from mlplatform_client import MLPlatform
@@ -169,9 +182,16 @@ Job: pi-spark-job, status: SUBMITTED, created_at: ...
    print(logs)
    ```
 
-   This script will output the Spark job logs at the time of script execution.
+   <details>
+   <summary>Example of partial output when the job completes successfully</summary>
 
-1. (Optional) Execute a Python script to get cluster events:
+   ```text
+   Pi is roughly 3.146360
+   ```
+
+   </details>
+
+1. (Optional) Get information about events in the cluster. Such information allows you to find out the current status of the cluster and jobs, for example, when investigating issues.
 
    ```python
    from mlplatform_client import MLPlatform
@@ -184,16 +204,6 @@ Job: pi-spark-job, status: SUBMITTED, created_at: ...
    events = mlp.spark_events(CLUSTER_ID)
    print(events)
    ```
-
-   This script will output Spark cluster events at the time of script execution. Event information is necessary to understand the current state of the cluster and tasks, as well as when searching for problems.
-
-1. Examine the logs: they will contain the result of the calculation of the number π. You may need to run the script to get the logs several times to see the result of the calculations: some time must pass between the start of the task and its completion. Example output:
-
-   ```text
-   Pi is roughly 3.146360
-   ```
-
-   This conclusion indicates the successful completion of the task of calculating the number π.
 
 ## Delete unused resources
 
