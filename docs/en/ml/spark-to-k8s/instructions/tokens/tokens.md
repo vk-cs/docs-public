@@ -1,13 +1,77 @@
-Access tokens (also known as refresh tokens) are used to work with Spark clusters. Registration tokens (also known as register tokens) are used to create access tokens using the Cloud ML Platform library. The following describes how to work with tokens of both types.
+To interact with Cloud Spark clusters, the Cloud ML Platform Python library is used. When working with the library, most actions require authorization using a token.
 
-## Preparatory steps
+The library supports two types of tokens:
 
-If you plan to work with tokens using the Cloud ML Platform library, follow the steps below.
+- Access tokens (refresh tokens). They are used to interact with Spark clusters.
+- Registration tokens (register tokens). They are used to create access tokens using the library (without using your personal account).
 
-<details>
-<summary>Preparing the Python environment and installing the Cloud ML Platform library</summary>
+## Getting a list of access tokens
 
-1. Prepare the environment for working with Python in any way convenient for you:
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+</tablist>
+<tabpanel>
+
+1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Select the project where the tokens are located.
+1. Go to **ML Platform → Tokens**.
+
+A list of access tokens will be displayed.
+
+</tabpanel>
+</tabs>
+
+<info>
+
+There are no registration tokens in this list.
+
+</info>
+
+## Creating an access token
+
+<tabs>
+<tablist>
+<tab>Personal account</tab>
+<tab>Cloud ML Platform library</tab>
+</tablist>
+<tabpanel>
+
+1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Select the project in which you want to create a token.
+1. Go to **ML Platform → Tokens**.
+1. Click the **Create access token** button.
+1. In the window that opens, specify the token parameters:
+
+   - **Name**: can be anything.
+   - **Role**: one of the roles of the token.
+
+     - `User`. This role gives the right to perform operations that require authorization when working with the Cloud ML Platform library (for example, send a task to the Spark cluster).
+     - `Administrator`. This role gives the same rights as the `User` role and also provides additional rights to work with tokens.
+
+1. Click the **Create** button.
+1. In the window that opens, copy the token value and save it on your device.
+
+   <err>
+
+   After closing the window, it will be impossible to restore the token value. If it is lost, create a new token.
+
+   </err>
+
+1. Click the **Ready** button.
+
+</tabpanel>
+<tabpanel>
+
+<err>
+
+For simplicity, the value of the registration token is contained directly in the Python script example, and the value of the access token is output using `print()`.
+
+When working in a production environment, do not operate tokens in clear text. Use environment variables, secret stores, or other tools to handle sensitive data.
+
+</err>
+
+1. Prepare the environment for working with Python in any convenient way, if you have not done it already:
 
    <tabs>
    <tablist>
@@ -29,100 +93,38 @@ If you plan to work with tokens using the Cloud ML Platform library, follow the 
    </tabpanel>
    </tabs>
 
-1. Install the Cloud ML Platform library for Python:
+1. Install the Cloud ML Platform library for Python if you have not done it already.
 
-   1. Download [the library file](https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz).
+   <tabs>
+   <tablist>
+   <tab>JupyterHub</tab>
+   <tab>pip</tab>
+   </tablist>
+   <tabpanel>
 
-      The most up-to-date version of the library is always available at the link provided.
-
-   1. Install packages from the downloaded file:
-
-      <tabs>
-      <tablist>
-      <tab>JupyterHub notebook</tab>
-      <tab>pip</tab>
-      </tablist>
-      <tabpanel>
+   1. [Connect to your JupyterHub instance](/en/ml/mlplatform/jupyterhub/start/connect).
+   1. In the JupyterHub notebook, create and execute a cell with the following content:
 
       ```bash
-      %pip install mlplatform_client.tar.gz
+      %pip install https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz
       ```
 
-      </tabpanel>
-      <tabpanel>
+   </tabpanel>
+   <tabpanel>
 
-      ```bash
-      pip install mlplatform_client.tar.gz
-      ```
+   Run the command:
 
-      </tabpanel>
-      </tabs>
+   ```bash
+   pip install https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz
+   ```
 
-</details>
+   </tabpanel>
+   </tabs>
 
-## Getting a list of access tokens
+   The current version of the library is available at the link provided.
 
-<tabs>
-<tablist>
-<tab>Personal account</tab>
-</tablist>
-<tabpanel>
-
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the tokens are located.
-1. Go to **ML Platform → Tokens**.
-
-A list of access tokens will be displayed.
-
-</tabpanel>
-</tabs>
-
-## Creating an access token
-
-<tabs>
-<tablist>
-<tab>Personal account</tab>
-<tab>Cloud ML Platform Library</tab>
-</tablist>
-<tabpanel>
-
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project in which you want to create a token.
-1. Go to **ML Platform → Tokens**.
-1. Click the **Create access token**.
-1. In the window that opens, specify the token parameters:
-
-   - **Name**: it can be anything.
-   - **Role**: one of the roles of the token.
-
-     - `User`. This role gives the right to perform operations that require authorization when working with the Cloud ML Platform library (for example, to send a task to the Spark cluster).
-     - `Administrator`. This role gives the same rights as the `User` role, and also gives additional rights to work with tokens.
-
-1. Click the **Create** button.
-1. In the window that opens, copy the token value and save it on your device.
-
-   <err>
-
-   After closing the window, it will be impossible to restore the token value. If it is lost, create a new token.
-
-   </err>
-
-1. Click the **Ready** button.
-
-</tabpanel>
-<tabpanel>
-
-<warn>
-
-To simplify the presentation, the value of the registration token is contained directly in the Python script example, and the value of the access token is output using `print()`.
-
-The values of these tokens are sensitive information. Take the necessary precautions when working with them to avoid leaks.
-
-</warn>
-
-1. Ask the owner of the access token with the `Administrator` role [create a registration token for you](#creating_a_registration_token).
-
-1. Create a new access token using the registration token by executing a Python script:
+1. Ask the owner of the access token with the role `Administrator` [to create a registration token for you](#creating_a_registration_token).
+1. Create a new access token using the registration token by executing the Python script:
 
    ```python
    from mlplatform_client import MLPlatform
@@ -135,17 +137,11 @@ The values of these tokens are sensitive information. Take the necessary precaut
    print(refresh_token)
    ```
 
-   The parameters of the access token (for example, its name, role, and lifetime) are determined by the registration token.
-
    After executing this script, the value of the created access token will be output.
 
+   The parameters of the access token (for example, its name, role, and lifetime) are determined by the registration token.
+
 1. Copy the token value and save it on your device.
-
-<info>
-
-The access token created in this way is displayed in the personal account.
-
-</info>
 
 </tabpanel>
 </tabs>
@@ -158,16 +154,67 @@ The access token created in this way is displayed in the personal account.
 </tablist>
 <tabpanel>
 
-<warn>
+<err>
 
-To simplify the presentation, the value of the access token is contained directly in the Python script example, and the value of the registration token is output using `print()`.
+For simplicity, the value of the access token is contained directly in the Python script example, and the value of the registration token is output using `print()`.
 
-The values of these tokens are sensitive information. Take the necessary precautions when working with them to avoid leaks.
+When working in a production environment, do not operate tokens in clear text. Use environment variables, secret stores, or other tools to handle sensitive data.
 
-</warn>
+</err>
 
-1. [Create an access token](#creating_an_access_token) with the `Administrator` role, if you don't have one yet.
+1. Prepare the environment for working with Python in any convenient way, if you have not done it already:
 
+   <tabs>
+   <tablist>
+   <tab>Using VK Cloud</tab>
+   <tab>By yourself</tab>
+   </tablist>
+   <tabpanel>
+
+   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/start/create) on the VK Cloud platform. It already contains configured Python 3.x and pip, which you can work with from JupyterHub notebook.
+
+   </tabpanel>
+   <tabpanel>
+
+   1. Install Python 3.x and pip.
+   1. If necessary, set up a virtual environment for Python.
+
+   For example, you can use [conda](https://conda.io/projects/conda/en/latest/index.html) or perform the installation and configuration manually.
+
+   </tabpanel>
+   </tabs>
+
+1. Install the Cloud ML Platform library for Python if you have not done it already.
+
+   <tabs>
+   <tablist>
+   <tab>JupyterHub</tab>
+   <tab>pip</tab>
+   </tablist>
+   <tabpanel>
+
+   1. [Connect to your JupyterHub instance](/en/ml/mlplatform/jupyterhub/start/connect).
+   1. In the JupyterHub notebook, create and execute a cell with the following content:
+
+      ```bash
+      %pip install https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz
+      ```
+
+   </tabpanel>
+   <tabpanel>
+
+   Run the command:
+
+   ```bash
+   pip install https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz
+   ```
+
+   </tabpanel>
+   </tabs>
+
+   The current version of the library is available at the link provided.
+
+1. [Create an access token](#creating_an_access_token) with the `Administrator` role if you don't have one yet.
 1. Create a registration token by executing a Python script:
 
    ```python
@@ -195,14 +242,20 @@ The values of these tokens are sensitive information. Take the necessary precaut
    - `token_type`: the role of the access token:
 
      - The value `MLPTokenType.USER` corresponds to the role `User`. This role gives the right to perform operations that require authorization when working with the Cloud ML Platform library (for example, to send a task to the Spark cluster).
-     - The value of `MLPTokenType.ADMIN` corresponds to the role of `Administrator`. This role gives the same rights as the `User` role, and also gives additional rights to work with tokens.
+     - The value of `MLPTokenType.ADMIN` corresponds to the role of `Administrator`. This role gives the same rights as the `User` role and also provides additional rights to work with tokens.
 
-   After executing this script, the value of the created registration access token will be output.
+   After executing this script, the value of the created registration token will be output.
 
-1. Provide this registration token to another user so that he can use this token to create an access token with the specified parameters.
+1. Provide this registration token to another user so that he or she can use this token to create an access token with the specified parameters.
 
 </tabpanel>
 </tabs>
+
+<info>
+
+A list of created registration tokens is not maintained. You can only [get a list of access tokens](#getting_a_list_of_access_tokens).
+
+</info>
 
 ## Deleting an access token
 
@@ -213,7 +266,7 @@ The values of these tokens are sensitive information. Take the necessary precaut
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Select the project where the desired token is located.
 1. Go to **ML Platform → Tokens**.
 1. Expand the menu of the desired token and select **Delete**.
@@ -222,15 +275,67 @@ The values of these tokens are sensitive information. Take the necessary precaut
 </tabpanel>
 <tabpanel>
 
-<warn>
+<err>
 
-To simplify the presentation, the values of access tokens are contained directly in the Python script example.
+For simplicity, the value of the access token is contained directly in the Python script example.
 
-The values of these tokens are sensitive information. Take the necessary precautions when working with them to avoid leaks.
+When working in a production environment, do not operate tokens in clear text. Use environment variables, secret stores, or other tools to handle sensitive data.
 
-</warn>
+</err>
 
-1. [Create an access token](#creating_an_access_token) with the `Administrator` role, if you don't have one yet.
+1. Prepare the environment for working with Python in any convenient way, if you have not done it already:
+
+   <tabs>
+   <tablist>
+   <tab>Using VK Cloud</tab>
+   <tab>By yourself</tab>
+   </tablist>
+   <tabpanel>
+
+   [Create a JupyterHub instance](/en/ml/mlplatform/jupyterhub/start/create) on the VK Cloud platform. It already contains configured Python 3.x and pip, which you can work with from JupyterHub notebook.
+
+   </tabpanel>
+   <tabpanel>
+
+   1. Install Python 3.x and pip.
+   1. If necessary, set up a virtual environment for Python.
+
+   For example, you can use [conda](https://conda.io/projects/conda/en/latest/index.html) or perform the installation and configuration manually.
+
+   </tabpanel>
+   </tabs>
+
+1. Install the Cloud ML Platform library for Python if you have not done it already.
+
+   <tabs>
+   <tablist>
+   <tab>JupyterHub</tab>
+   <tab>pip</tab>
+   </tablist>
+   <tabpanel>
+
+   1. [Connect to your JupyterHub instance](/en/ml/mlplatform/jupyterhub/start/connect).
+   1. In the JupyterHub notebook, create and execute a cell with the following content:
+
+      ```bash
+      %pip install https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz
+      ```
+
+   </tabpanel>
+   <tabpanel>
+
+   Run the command:
+
+   ```bash
+   pip install https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz
+   ```
+
+   </tabpanel>
+   </tabs>
+
+   The current version of the library is available at the link provided.
+
+1. [Create an access token](#creating_an_access_token) with the `Administrator` role if you don't have one yet.
 
 1. [Get a list of access tokens](#getting_a_list_of_access_tokens) and determine the name of the token to delete.
 
