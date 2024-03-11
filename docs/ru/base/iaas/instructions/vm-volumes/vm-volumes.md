@@ -175,7 +175,7 @@
    </tablist>
    <tabpanel>
 
-   1. Откройте средство управления дисками (`diskmgmt.msc`).
+   1. Откройте средство управления дисками (`diskmgmt.msc`) с правами администратора.
    1. В контекстном меню нужного раздела выберите **Расширить том**.
    1. [Увеличьте размер диска](https://learn.microsoft.com/ru-ru/windows-server/storage/disk-management/extend-a-basic-volume).
 

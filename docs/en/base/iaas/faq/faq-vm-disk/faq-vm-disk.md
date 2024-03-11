@@ -2,7 +2,7 @@
 
 You can enlarge the disk using the VK Cloud panel in the **Virtual Machines** or **Disks** section of the **Cloud Computing** service.
 
-Full information is available in the article about [disk expansion](../../instructions/vm-volumes#increasing_the_disk_size).
+Full information is available in the article about [disk expansion](../../instructions/vm-volumes#increasing_the_disk_size_with_rebooting).
 
 ## Unable to shrink disk
 
@@ -26,7 +26,7 @@ Compare the obtained indicators with the [guaranteed disk performance](../../con
 
 <info>
 
-To increase performance, you can [increase the size](../../instructions/vm-volumes#increasing_the_disk_size) or [change](../../instructions/vm-volumes#changing_the_disk_type) disk type.
+To increase performance, you can [increase the size](../../instructions/vm-volumes#increasing_the_disk_size_with_rebooting) or [change](../../instructions/vm-volumes#changing_the_disk_type) disk type.
 
 </info>
 
