@@ -1,0 +1,2495 @@
+﻿{
+  "swagger": "2.0",
+  "info": {
+    "description": "Спецификация для сервиса Cloud Desktop. Поддерживает управление пулами рабочих столов и рабочими столами в них",
+    "version": "0.0.3",
+    "title": "Cloud Desktop API"
+  },
+  "schemes": [
+    "https"
+  ],
+  "basePath": "/vdi/v1/",
+  "tags": [
+    {
+      "name": "service",
+      "description": "Общие операции для сервиса"
+    },
+    {
+      "name": "pools",
+      "description": "Управление пулом рабочих столов"
+    },
+    {
+      "name": "desktops",
+      "description": "Управление рабочими столами пулов"
+    },
+    {
+      "name": "sizing",
+      "description": "Масштабирование ресурсов сервиса"
+    },
+    {
+      "name": "iam",
+      "description": "Авторизация и аутентификация ресурсов сервиса"
+    },
+    {
+      "name": "checker",
+      "description": "Проверка работоспособности ресурсов"
+    }
+  ],
+  "paths": {
+    "/{project_id}/check": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/projectIdParam"
+        },
+        {
+          "in": "query",
+          "name": "type",
+          "type": "string",
+          "enum": [
+            "service_network",
+            "service_ldap",
+            "pool_ldap"
+          ],
+          "description": "Тип проверки (сеть / подключение LDAP / пул)",
+          "example": "service_network"
+        }
+      ],
+      "post": {
+        "parameters": [
+          {
+            "name": "config",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/UnionConfigCheck"
+            },
+            "required": true
+          }
+        ],
+        "tags": [
+          "checker"
+        ],
+        "summary": "Начать проверку по выбранному типу",
+        "description": "Начать проверку конфигурации сети, подключения к каталогу LDAP или подключения к пулу через LDAP. Для проведения проверки нужно задать ее тип (type) и указать в теле запроса (config) параметры для заданного типа",
+        "operationId": "check",
+        "responses": {
+          "201": {
+            "description": "Проверка запущена"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          }
+        }
+      }
+    },
+    "/{project_id}/check/latest": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/projectIdParam"
+        }
+      ],
+      "get": {
+        "tags": [
+          "checker"
+        ],
+        "summary": "Получить информацию о последней проверке",
+        "description": "Получить информацию о последней проверке",
+        "operationId": "getCheckLatest",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/CheckStatus"
+            }
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/{project_id}/service": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/projectIdParam"
+        }
+      ],
+      "get": {
+        "tags": [
+          "service"
+        ],
+        "summary": "Получить информацию о сервисе",
+        "description": "Получить статус сервиса и вывести доступные опции",
+        "operationId": "getService",
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/ServiceStatus"
+            }
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "service"
+        ],
+        "summary": "Удалить инфраструктуру сервиса",
+        "description": "Удалить все пулы рабочих столов и виртуальные машины, созданные для проверок",
+        "operationId": "deleteService",
+        "responses": {
+          "204": {
+            "description": "Инфраструктура сервиса удалена успешно"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/{project_id}/service/net-config": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/projectIdParam"
+        }
+      ],
+      "get": {
+        "tags": [
+          "service"
+        ],
+        "summary": "Получить сетевую конфигурацию сервиса",
+        "description": "Получить информацию о настройках сетевого подключения в сервисе",
+        "operationId": "getNetworkConfig",
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/NetworkConfig"
+            }
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "service"
+        ],
+        "summary": "Создать или обновить сетевую конфигурацию сервиса",
+        "description": "Создать новую сетевую конфигурацию или обновить существующие настройки сети для сервиса",
+        "operationId": "updateNetworkConfig",
+        "parameters": [
+          {
+            "name": "request",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/NetworkConfig"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Ресурс успешно создан"
+          },
+          "204": {
+            "description": "Ресурс успешно обновлен"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "409": {
+            "$ref": "#/responses/Conflict"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/{project_id}/service/ldap-config": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/projectIdParam"
+        }
+      ],
+      "get": {
+        "tags": [
+          "service"
+        ],
+        "summary": "Получить конфигурацию LDAP для сервиса",
+        "description": "Получить действующую настройку LDAP для сервиса Cloud Desktop",
+        "operationId": "getLDAPConfig",
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/CatalogConfig"
+            }
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "service"
+        ],
+        "summary": "Создать или обновить конфигурацию LDAP",
+        "description": "Создать новую или обновить существующую конфигурацию LDAP для сервиса",
+        "operationId": "updateLDAPConfig",
+        "parameters": [
+          {
+            "name": "request",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/CatalogConfig"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Ресурс успешно создан"
+          },
+          "204": {
+            "description": "Ресурс успешно обновлен"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/{project_id}/service/vpnaas-sync": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/projectIdParam"
+        }
+      ],
+      "post": {
+        "tags": [
+          "service"
+        ],
+        "summary": "Подключиться к LDAP и применить сетевые настройки",
+        "description": "Подключиться к настроенному серверу LDAP и развернуть сеть согласно заданным настройкам",
+        "operationId": "syncVPNaaS",
+        "responses": {
+          "204": {
+            "description": "Запрос выполнен успешно, сетевые настройки применены"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "409": {
+            "$ref": "#/responses/Conflict"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/{project_id}/pools": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/projectIdParam"
+        }
+      ],
+      "get": {
+        "tags": [
+          "pools"
+        ],
+        "summary": "Получить список пулов",
+        "description": "Получить список доступных пулов сервиса",
+        "operationId": "getPools",
+        "parameters": [
+          {
+            "$ref": "#/parameters/pageOrderParam"
+          },
+          {
+            "$ref": "#/parameters/pageMarkerParam"
+          },
+          {
+            "$ref": "#/parameters/pageLimitParam"
+          },
+          {
+            "$ref": "#/parameters/shortRespParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/ListPoolsResponse"
+            }
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "pools"
+        ],
+        "summary": "Создать пул",
+        "description": "Создать новый пул в сервисе",
+        "operationId": "createPool",
+        "parameters": [
+          {
+            "name": "request",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/CreatePoolRequest"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Ресурс успешно создан",
+            "schema": {
+              "$ref": "#/definitions/PoolDescription"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/{project_id}/pools/{pool_id}": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/projectIdParam"
+        },
+        {
+          "$ref": "#/parameters/poolIdParam"
+        }
+      ],
+      "get": {
+        "tags": [
+          "pools"
+        ],
+        "summary": "Получить информацию об отдельном пуле",
+        "description": "Получить информацию об отдельном пуле рабочих столов по его UUID",
+        "operationId": "getPool",
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/PoolDescription"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "pools"
+        ],
+        "summary": "Обновить информацию о пуле",
+        "description": "Внести изменения в существующий пул рабочих столов",
+        "operationId": "updatePool",
+        "parameters": [
+          {
+            "name": "request",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdatePoolRequest"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/PoolDescription"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "pools"
+        ],
+        "summary": "Удалить пул",
+        "description": "Удалить пул рабочих столов из проекта",
+        "operationId": "deletePool",
+        "responses": {
+          "204": {
+            "description": "Пул удален успешно"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/{project_id}/pools/{pool_id}/manage": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/projectIdParam"
+        },
+        {
+          "$ref": "#/parameters/poolIdParam"
+        }
+      ],
+      "post": {
+        "tags": [
+          "pools"
+        ],
+        "summary": "Управлять пулом рабочих столов",
+        "description": "Отправить сообщение пользователям пула",
+        "operationId": "managePool",
+        "parameters": [
+          {
+            "name": "cmd",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/PoolCommand"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/{project_id}/desktops": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/projectIdParam"
+        }
+      ],
+      "get": {
+        "tags": [
+          "desktops"
+        ],
+        "summary": "Получить список рабочих столов проекта",
+        "description": "Получить список доступных рабочих столов всех пулов проекта",
+        "operationId": "listPersonDesktops",
+        "parameters": [
+          {
+            "name": "state",
+            "in": "query",
+            "type": "string",
+            "enum": [
+              "running",
+              "stopped",
+              "error",
+              "pending",
+              "to_delete",
+              "terminating",
+              "deleted"
+            ],
+            "description": "Статус рабочего стола",
+            "example": "running"
+          },
+          {
+            "name": "connection",
+            "in": "query",
+            "type": "string",
+            "enum": [
+              "active",
+              "inactive"
+            ],
+            "description": "Статус подключения рабочего стола",
+            "example": "active"
+          },
+          {
+            "name": "ip",
+            "in": "query",
+            "type": "string",
+            "format": "ipv4",
+            "description": "IP-адрес рабочего стола",
+            "example": "172.16.0.29"
+          },
+          {
+            "name": "pool_name",
+            "in": "query",
+            "type": "string",
+            "description": "Наименование пула",
+            "example": "pool-name-1"
+          },
+          {
+            "$ref": "#/parameters/pageOrderParam"
+          },
+          {
+            "$ref": "#/parameters/pageMarkerParam"
+          },
+          {
+            "$ref": "#/parameters/pageLimitParam"
+          },
+          {
+            "$ref": "#/parameters/shortRespParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/ListDesktopsResponse"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/{project_id}/pools/{pool_id}/desktops": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/projectIdParam"
+        },
+        {
+          "$ref": "#/parameters/poolIdParam"
+        }
+      ],
+      "get": {
+        "tags": [
+          "desktops"
+        ],
+        "summary": "Получить список рабочих столов пула",
+        "description": "Получить список всех рабочих столов одного пула по его ID",
+        "operationId": "listPoolDesktops",
+        "parameters": [
+          {
+            "name": "state",
+            "in": "query",
+            "type": "string",
+            "enum": [
+              "running",
+              "stopped",
+              "error",
+              "pending",
+              "to_delete",
+              "terminating",
+              "deleted"
+            ],
+            "description": "Статус рабочего стола",
+            "example": "running"
+          },
+          {
+            "name": "connection",
+            "in": "query",
+            "type": "string",
+            "enum": [
+              "active",
+              "inactive"
+            ],
+            "description": "Статус подключения рабочего стола",
+            "example": "active"
+          },
+          {
+            "name": "ip",
+            "in": "query",
+            "type": "string",
+            "format": "ipv4",
+            "description": "IP-адрес рабочего стола",
+            "example": "172.16.0.29"
+          },
+          {
+            "$ref": "#/parameters/pageOrderParam"
+          },
+          {
+            "$ref": "#/parameters/pageMarkerParam"
+          },
+          {
+            "$ref": "#/parameters/pageLimitParam"
+          },
+          {
+            "$ref": "#/parameters/shortRespParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/ListDesktopsResponse"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/{project_id}/pools/{pool_id}/desktops/{desktop_id}": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/projectIdParam"
+        },
+        {
+          "$ref": "#/parameters/poolIdParam"
+        },
+        {
+          "$ref": "#/parameters/desktopIdParam"
+        }
+      ],
+      "get": {
+        "tags": [
+          "desktops"
+        ],
+        "summary": "Получить информацию о рабочем столе",
+        "description": "Получить информацию о рабочем столе по его ID",
+        "operationId": "getDesktop",
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/DesktopDescription"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "desktops"
+        ],
+        "summary": "Удалить рабочий стол",
+        "description": "Удалить созданный рабочий стол из пула",
+        "operationId": "deleteDesktop",
+        "responses": {
+          "204": {
+            "description": "Рабочий стол удален успешно"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/{project_id}/pools/{pool_id}/desktops/{desktop_id}/manage": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/projectIdParam"
+        },
+        {
+          "$ref": "#/parameters/poolIdParam"
+        },
+        {
+          "$ref": "#/parameters/desktopIdParam"
+        }
+      ],
+      "post": {
+        "tags": [
+          "desktops"
+        ],
+        "summary": "Управлять рабочим столом",
+        "description": "Управлять состоянием рабочего стола",
+        "operationId": "manageDesktop",
+        "parameters": [
+          {
+            "name": "cmd",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/DesktopCommand"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/{project_id}/pools/{pool_id}/journal": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/poolIdParam"
+        },
+        {
+          "$ref": "#/parameters/projectIdParam"
+        }
+      ],
+      "get": {
+        "tags": [
+          "pools"
+        ],
+        "summary": "Получить журнал операций пула",
+        "description": "Получить записи операций из журнала пула рабочих столов",
+        "operationId": "getJournal",
+        "parameters": [
+          {
+            "name": "events",
+            "in": "query",
+            "type": "string",
+            "enum": [
+              "operations",
+              "audit"
+            ],
+            "description": "Отображать события определенного типа (операции или аудит)",
+            "required": true,
+            "example": "operations"
+          },
+          {
+            "name": "user",
+            "in": "query",
+            "type": "string",
+            "description": "Имя пользователя, который выполнил операцию",
+            "example": "user@example.com"
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "type": "string",
+            "description": "Текстовый поиск событий по описанию",
+            "example": "Failed operation"
+          },
+          {
+            "name": "ip",
+            "in": "query",
+            "type": "string",
+            "format": "ipv4",
+            "description": "IP-адрес рабочего стола",
+            "example": "10.0.3.43"
+          },
+          {
+            "name": "start_date",
+            "in": "query",
+            "type": "string",
+            "format": "date-time",
+            "description": "Дата начала события",
+            "example": "2023-01-01 00:00:00"
+          },
+          {
+            "name": "end_date",
+            "in": "query",
+            "type": "string",
+            "format": "date-time",
+            "description": "Дата завершения события",
+            "example": "2023-01-02 00:20:00"
+          },
+          {
+            "$ref": "#/parameters/pageMarkerParam"
+          },
+          {
+            "$ref": "#/parameters/pageLimitParam"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/PoolJournal"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/{project_id}/sizing": {
+      "parameters": [
+        {
+          "$ref": "#/parameters/projectIdParam"
+        }
+      ],
+      "post": {
+        "tags": [
+          "sizing"
+        ],
+        "summary": "Запросить ресурсы для масштабирования пула",
+        "description": "Запросить нужные ресурсы для расширения пула на заданное количество рабочих столов",
+        "operationId": "calculateSizing",
+        "parameters": [
+          {
+            "name": "calculateRequest",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/CalculateSizingRequest"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/SizingEstimate"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/responses/Forbidden"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/activate": {
+      "post": {
+        "tags": [
+          "iam"
+        ],
+        "summary": "Активировать сервис",
+        "description": "Активировать использование сервиса Cloud Desktop в VK Cloud",
+        "operationId": "activate",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "activateRequest",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ActivateServiceRequest"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно"
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/projects/{mcs_pid}/info": {
+      "parameters": [
+        {
+          "name": "mcs_pid",
+          "in": "path",
+          "description": "Внутренний идентификатор проекта в VK Cloud",
+          "example": "mcs1234567890",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "get": {
+        "tags": [
+          "iam"
+        ],
+        "summary": "Получить текущий статус активности проекта",
+        "description": "Получить информацию о текущем статусе проекта в сервисе аутентификации и авторизации пользователей по внутреннему идентификатору проекта в VK Cloud",
+        "operationId": "getProjectInfo",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "type": "object",
+              "required": [
+                "status"
+              ],
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "ACTIVE",
+                    "FROZEN",
+                    "SUSPENDED"
+                  ],
+                  "description": "Текущий статус активности проекта",
+                  "example": "ACTIVE"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/projects/{mcs_pid}/status": {
+      "parameters": [
+        {
+          "name": "mcs_pid",
+          "in": "path",
+          "description": "Внутренний идентификатор проекта в VK Cloud",
+          "example": "mcs1234567890",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "put": {
+        "tags": [
+          "iam"
+        ],
+        "summary": "Обновить статус активности проекта",
+        "description": "Обновить статус проекта в сервисе аутентификации и авторизации пользователей по внутреннему идентификатору проекта в VK Cloud",
+        "operationId": "updateProjectStatus",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/BillingStatusRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Статус обновлен успешно",
+            "schema": {
+              "type": "object",
+              "required": [
+                "status"
+              ],
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "ACTIVE",
+                    "FROZEN",
+                    "SUSPENDED"
+                  ],
+                  "description": "Текущий статус активности проекта",
+                  "example": "SUSPENDED"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/responses/InternalError"
+          }
+        }
+      }
+    }
+  },
+  "parameters": {
+    "projectIdParam": {
+      "name": "project_id",
+      "in": "path",
+      "type": "string",
+      "required": true,
+      "description": "PID проекта в Openstack",
+      "example": "XXXXXXd4ef0547e5b222f44555XXXXXX"
+    },
+    "poolIdParam": {
+      "name": "pool_id",
+      "in": "path",
+      "type": "string",
+      "required": true,
+      "description": "Идентификатор пула рабочих столов",
+      "example": "5a50e19e-XXXX-XXXX-XXXX-5290171792fa"
+    },
+    "desktopIdParam": {
+      "name": "desktop_id",
+      "in": "path",
+      "type": "string",
+      "required": true,
+      "description": "Идентификатор рабочего стола",
+      "example": "850f242f-XXXX-XXXX-XXXX-b4a7c752b5ea"
+    },
+    "pageMarkerParam": {
+      "name": "marker",
+      "in": "query",
+      "type": "string",
+      "description": "Маркер нумерации страницы (пагинации)",
+      "example": "next-2023-10-06T17:07:31.990Z"
+    },
+    "pageLimitParam": {
+      "name": "limit",
+      "in": "query",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000,
+      "description": "Лимит количества страниц пагинации",
+      "example": 5
+    },
+    "shortRespParam": {
+      "name": "short",
+      "in": "query",
+      "type": "boolean",
+      "default": false,
+      "description": "Признак отображения краткой информации о ресурсе",
+      "example": false
+    },
+    "pageOrderParam": {
+      "name": "order",
+      "in": "query",
+      "enum": [
+        "asc",
+        "desc"
+      ],
+      "description": "Сортировка страниц (по возрастанию или убыванию)",
+      "type": "string",
+      "example": "asc"
+    }
+  },
+  "responses": {
+    "NotFound": {
+      "description": "Запрашиваемые ресурсы не найдены"
+    },
+    "BadRequest": {
+      "description": "Некорректные параметры запроса",
+      "schema": {
+        "$ref": "#/definitions/ValidationError"
+      }
+    },
+    "Unauthorized": {
+      "description": "Для выполнения запроса необходима аутентификация"
+    },
+    "Forbidden": {
+      "description": "Недостаточно прав для выполнения запроса текущим пользователем"
+    },
+    "Conflict": {
+      "description": "Функциональность не поддерживается для кластеров без автоматического развертывания сети / Невозможно обновить свойства созданного кластера"
+    },
+    "InternalError": {
+      "description": "Не удается выполнить запрос из-за внутренней ошибки",
+      "schema": {
+        "$ref": "#/definitions/InternalError"
+      }
+    }
+  },
+  "definitions": {
+    "UnionConfigCheck": {
+      "properties": {
+        "network": {
+          "$ref": "#/definitions/NetworkConfig"
+        },
+        "catalog": {
+          "$ref": "#/definitions/CatalogConfig"
+        },
+        "pool_ldap": {
+          "$ref": "#/definitions/PoolLdapConfig"
+        }
+      }
+    },
+    "CreatePoolRequest": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 100,
+          "description": "Наименование пула",
+          "example": "pool-name-1"
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 1000,
+          "description": "Краткое описание пула",
+          "example": "Пул для тестирования сервиса Cloud Desktop"
+        },
+        "config": {
+          "$ref": "#/definitions/PoolConfig"
+        }
+      },
+      "required": [
+        "config",
+        "name"
+      ]
+    },
+    "UpdatePoolRequest": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string",
+          "maxLength": 1000,
+          "description": "Обновленные данные о пуле",
+          "example": "Новые данные о пуле"
+        },
+        "config": {
+          "$ref": "#/definitions/PoolConfig"
+        }
+      },
+      "required": [
+        "config"
+      ]
+    },
+    "ListPoolsResponse": {
+      "type": "object",
+      "properties": {
+        "pools": {
+          "type": "array",
+          "description": "Список пулов",
+          "items": {
+            "$ref": "#/definitions/PoolDescription"
+          }
+        },
+        "marker": {
+          "$ref": "#/definitions/PaginationMarker"
+        }
+      },
+      "required": [
+        "pools"
+      ]
+    },
+    "CreateDesktopRequest": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string",
+          "description": "Имя пользователя рабочего стола в пуле",
+          "example": "test_user"
+        },
+        "pool_name": {
+          "type": "string",
+          "description": "Наименование пула",
+          "example": "Test_pool"
+        }
+      },
+      "required": [
+        "username"
+      ]
+    },
+    "ListDesktopsResponse": {
+      "type": "object",
+      "properties": {
+        "desktops": {
+          "type": "array",
+          "description": "Список рабочих столов",
+          "items": {
+            "$ref": "#/definitions/DesktopDescription"
+          }
+        },
+        "marker": {
+          "$ref": "#/definitions/PaginationMarker"
+        }
+      },
+      "required": [
+        "desktops"
+      ]
+    },
+    "ServiceStatus": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Текущий статус кластера",
+          "enum": [
+            "building",
+            "active",
+            "maintaining",
+            "deleted",
+            "deploying",
+            "network_creating"
+          ],
+          "example": "active"
+        },
+        "access_ips": {
+          "type": "object",
+          "description": "Список IP для доступа",
+          "properties": {
+            "fixed_ip_address": {
+              "type": "string",
+              "format": "ipv4",
+              "example": "192.178.1.1",
+              "description": "Внутренний IP-адрес"
+            },
+            "floating_ip_address": {
+              "type": "string",
+              "format": "ipv4",
+              "description": "Внешний IP-адрес",
+              "example": "212.212.212.1"
+            }
+          }
+        },
+        "options": {
+          "type": "object",
+          "description": "Опции кластера",
+          "properties": {
+            "allow_configure_network": {
+              "type": "boolean",
+              "description": "Разрешить перенастраивать сеть после развертывания сервиса",
+              "example": false
+            },
+            "allow_vpnaas_sync": {
+              "type": "boolean",
+              "description": "Разрешить интеграцию с VPNaaS",
+              "example": false
+            }
+          },
+          "required": [
+            "allow_configure_network",
+            "allow_vpnaas_sync"
+          ]
+        }
+      }
+    },
+    "CheckStatus": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Статус проверки",
+          "enum": [
+            "queued",
+            "in_progress",
+            "done",
+            "failed"
+          ],
+          "example": "in_progress"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Дата создания проверки",
+          "example": "2024-01-01 00:00:00"
+        },
+        "type": {
+          "type": "string",
+          "description": "Тип проверки (сеть / подключение LDAP / пул)",
+          "example": "service_network"
+        },
+        "reason": {
+          "type": "string",
+          "description": "Причина ошибки проверки",
+          "example": "UnknownServerError"
+        },
+        "details": {
+          "type": "string",
+          "description": "Детальная информация о проверке",
+          "example": "Some detailed info"
+        },
+        "params": {
+          "$ref": "#/definitions/UnionConfigCheck"
+        }
+      }
+    },
+    "PoolLdapConfig": {
+      "type": "object",
+      "properties": {
+        "user_group": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 100,
+          "description": "Группа пользователей",
+          "example": "vdi"
+        },
+        "ou": {
+          "type": "string",
+          "maxLength": 1000,
+          "description": "Organization Unit LDAP (в формате Distinguished Name)",
+          "example": "OU=anokat"
+        }
+      },
+      "required": [
+        "user_group"
+      ]
+    },
+    "NetworkConfig": {
+      "type": "object",
+      "properties": {
+        "cidr": {
+          "type": "string",
+          "description": "Диапазон IP-адресов для подсетей, в которых развернуты ресурсы сервиса, минимальный префикс сети — /7, максимальный — /22",
+          "example": "192.168.199.0/21"
+        },
+        "router_id": {
+          "type": "string",
+          "description": "ID маршрутизатора",
+          "example": "019f2ca5-XXXX-XXXX-XXXX-f3d5e7eaddd8"
+        },
+        "dns_servers": {
+          "type": "array",
+          "description": "Массив DNS-имен подсети для инфраструктуры сервиса",
+          "items": {
+            "type": "string",
+            "example": "88.200.200.130"
+          }
+        },
+        "availability_zone": {
+          "type": "string",
+          "description": "Зона доступности, в которой развернуты ВМ",
+          "example": "MS1"
+        }
+      },
+      "required": [
+        "cidr",
+        "router_id",
+        "dns_servers",
+        "availability_zone"
+      ]
+    },
+    "RuntimeOpts": {
+      "type": "string",
+      "default": "T",
+      "enum": [
+        "S",
+        "T"
+      ],
+      "description": "Тип оркестратора VDI: T — Термидеск, S — не поддерживается",
+      "example": "T"
+    },
+    "CatalogConfig": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "default": "ad",
+          "enum": [
+            "ad",
+            "openldap"
+          ],
+          "description": "Тип службы подключения",
+          "example": "openldap"
+        },
+        "host": {
+          "type": "string",
+          "description": "IP-адрес или FQDN сервера внешнего каталога учетных записей",
+          "example": "88.222.222.000"
+        },
+        "port": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Номер порта для доступа по протоколу (389 для LDAP)",
+          "example": 389
+        },
+        "base_dn": {
+          "type": "string",
+          "maxLength": 1000,
+          "description": "Объект каталога для поиска в AD или LDAP",
+          "example": "DC=contoso,DC=com"
+        },
+        "user_dn": {
+          "type": "string",
+          "maxLength": 1000,
+          "description": "Уникальное имя учетной записи в базе AD, которое будет использоваться для синхронизации с каталогом учетных записей",
+          "example": "CN=Admin,CN=Users,DC=contoso,DC=com"
+        },
+        "ou": {
+          "type": "string",
+          "maxLength": 1000,
+          "description": "Organization unit для каталога",
+          "example": "OU=Unit1"
+        },
+        "password": {
+          "type": "string",
+          "description": "Пароль от учетной записи AD, указанной в user_dn, через которую будет происходить синхронизация",
+          "format": "password",
+          "minLength": 6,
+          "x-isnullable": false,
+          "example": "123456789"
+        },
+        "selection_field": {
+          "type": "string",
+          "description": "Уникальный атрибут пользователя в каталоге LDAP, по которому будет происходить выборка пользователя из базы",
+          "example": "UID"
+        }
+      },
+      "required": [
+        "host",
+        "port",
+        "base_dn",
+        "user_dn",
+        "selection_field"
+      ]
+    },
+    "PoolDescription": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Идентификатор пула",
+          "example": "37615b9d-XXXX-XXXX-XXXX-7fd8a63c27d8"
+        },
+        "name": {
+          "type": "string",
+          "description": "Наименование пула",
+          "example": "test_pool"
+        },
+        "info": {
+          "type": "object",
+          "description": "Информация о пуле",
+          "properties": {
+            "description": {
+              "type": "string",
+              "maxLength": 1000,
+              "description": "Описание пула",
+              "example": "Краткое описание пула"
+            },
+            "created_at": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Дата создания пула",
+              "example": "2023-01-01 00:00:00"
+            },
+            "config": {
+              "$ref": "#/definitions/PoolConfig"
+            },
+            "status": {
+              "$ref": "#/definitions/PoolStatus"
+            }
+          },
+          "required": [
+            "created_at",
+            "config",
+            "status"
+          ]
+        },
+        "availability_zone": {
+          "type": "string",
+          "description": "Зона доступности, в которой разворачиваются ВМ",
+          "example": "MS1"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "PoolConfig": {
+      "type": "object",
+      "properties": {
+        "ou": {
+          "type": "string",
+          "maxLength": 1000,
+          "description": "Organization unit для пула",
+          "example": "OU=Unit1"
+        },
+        "pool_type": {
+          "type": "string",
+          "enum": [
+            "session",
+            "personalized"
+          ],
+          "description": "Тип пула: сессионный или персонализированный",
+          "example": "session"
+        },
+        "user_group": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 100,
+          "description": "Группа пользователей каталога AD или LDAP",
+          "example": "vdi"
+        },
+        "naming_mask": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 15,
+          "description": "Маска именования — суффикс, с которого будут начинаться имена рабочих столов в этом пуле",
+          "example": "test"
+        },
+        "naming_mask_increment": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 3,
+          "description": "Инкремент — определяет, сколько столов может быть создано в пуле. Например, при значении \"3\" в пуле может быть создано 999 рабочих столов",
+          "example": 2
+        },
+        "min_desktops": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 0,
+          "description": "Количество рабочих столов, которые будут развернуты сразу после создания пула",
+          "example": 0
+        },
+        "max_desktops": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 490,
+          "default": 0,
+          "description": "Количество столов в пуле, которые могут одновременно использоваться",
+          "example": 5
+        },
+        "hot_reserve": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 490,
+          "default": 0,
+          "description": "Горячий резерв, доступен только для сессионных пулов",
+          "example": 1
+        },
+        "inactive_timeout_mins": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1440,
+          "default": 0,
+          "description": "Время, через которое пользователь будет отсоединен от рабочего стола при отсутствии активности в рабочем столе",
+          "example": 10
+        },
+        "protocol": {
+          "$ref": "#/definitions/ProtocolOpts"
+        },
+        "desktop_config": {
+          "$ref": "#/definitions/DesktopConfig"
+        }
+      },
+      "required": [
+        "pool_type",
+        "user_group",
+        "naming_mask",
+        "protocol",
+        "desktop_config"
+      ]
+    },
+    "ProtocolOpts": {
+      "type": "string",
+      "enum": [
+        "rdp"
+      ],
+      "default": "rdp",
+      "description": "Протокол передачи данных",
+      "example": "rdp"
+    },
+    "DesktopConfig": {
+      "type": "object",
+      "properties": {
+        "flavor_id": {
+          "type": "string",
+          "description": "Тип конфигурации ВМ для рабочего стола",
+          "example": "Basic-2-4"
+        },
+        "volume_type": {
+          "type": "string",
+          "description": "Тип диска для ВМ",
+          "example": "ssd"
+        },
+        "volume_size_gb": {
+          "type": "integer",
+          "default": 10,
+          "minimum": 1,
+          "description": "Размер диска в ГБ",
+          "example": 15
+        },
+        "image_id": {
+          "type": "string",
+          "description": "UID образа",
+          "example": "4a361c99-XXXX-XXXX-XXXX-b66fb469d354"
+        },
+        "firewall_opts": {
+          "type": "array",
+          "description": "ID групп безопасности",
+          "items": {
+            "type": "string",
+            "example": "4a361c99-XXXX-XXXX-XXXX-b59fb469d354"
+          }
+        },
+        "devices": {
+          "$ref": "#/definitions/DeviceConfig"
+        }
+      },
+      "required": [
+        "flavor_id",
+        "volume_type",
+        "volume_size_gb",
+        "image_id",
+        "firewall_opts",
+        "devices"
+      ]
+    },
+    "DeviceConfig": {
+      "type": "object",
+      "properties": {
+        "allowed_devices": {
+          "type": "array",
+          "description": "Список подключаемых периферийных устройств",
+          "items": {
+            "$ref": "#/definitions/AllowedDevice"
+          }
+        }
+      },
+      "required": [
+        "allowed_devices"
+      ]
+    },
+    "PoolStatus": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": [
+            "available",
+            "unavailable",
+            "building",
+            "error",
+            "deleting"
+          ],
+          "description": "Статус пула",
+          "example": "available"
+        },
+        "stats": {
+          "$ref": "#/definitions/PoolStatistics"
+        },
+        "desktop_states": {
+          "$ref": "#/definitions/DesktopsByState"
+        }
+      },
+      "required": [
+        "state",
+        "stats",
+        "desktop_states"
+      ]
+    },
+    "PoolStatistics": {
+      "type": "object",
+      "properties": {
+        "deployed_desktops": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Количество развернутых рабочих столов",
+          "example": 3
+        },
+        "active_connections": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Количество активных подключений",
+          "example": 2
+        },
+        "available_desktops": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Количество доступных рабочих столов",
+          "example": 1
+        },
+        "unavailable_desktops": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Количество недоступных рабочих столов",
+          "example": 1
+        },
+        "hot_reserve": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Количество рабочих столов в горячем резерве",
+          "example": 0
+        },
+        "outdated_desktops": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Количество рабочих столов с устаревшим агентом",
+          "example": 0
+        },
+        "outdated_agents": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Количество устаревших агентов",
+          "example": 0
+        },
+        "remote_users": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Число удаленных пользователей рабочих столов",
+          "example": 5
+        }
+      }
+    },
+    "DesktopsByState": {
+      "type": "object",
+      "properties": {
+        "running": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Количество работающих рабочих столов",
+          "example": 2
+        },
+        "stopped": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Количество остановленных рабочих столов",
+          "example": 1
+        },
+        "error": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Количество рабочих столов в состоянии ошибки",
+          "example": 1
+        },
+        "pending": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Количество рабочих столов в состоянии ожидания",
+          "example": 1
+        },
+        "to_delete": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Количество рабочих столов, помеченных для удаления",
+          "example": 1
+        },
+        "terminating": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Количество рабочих столов в состоянии завершения",
+          "example": 1
+        },
+        "deleted": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Количество удаленных рабочих столов",
+          "example": 1
+        }
+      }
+    },
+    "PoolCommand": {
+      "properties": {
+        "cmd": {
+          "type": "string",
+          "enum": [
+            "send_message"
+          ]
+        },
+        "params": {
+          "$ref": "#/definitions/PoolManageProperties"
+        }
+      },
+      "required": [
+        "cmd"
+      ]
+    },
+    "DesktopCommand": {
+      "type": "object",
+      "properties": {
+        "cmd": {
+          "type": "string",
+          "enum": [
+            "stop",
+            "start",
+            "reboot",
+            "suspend",
+            "end_session"
+          ]
+        },
+        "params": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "cmd"
+      ]
+    },
+    "DesktopDescription": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "ID рабочего стола",
+          "example": "9d3c5683-XXXX-XXXX-XXXX-6557690aa42f"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 3,
+          "description": "Наименование рабочего стола",
+          "example": "test_pool"
+        },
+        "info": {
+          "type": "object",
+          "description": "Информация о рабочем столе",
+          "properties": {
+            "created_at": {
+              "type": "string",
+              "format": "date-time",
+              "description": "Дата создания рабочего стола",
+              "example": "2024-01-01 00:00:00"
+            },
+            "pool_id": {
+              "type": "string",
+              "description": "ID пула, в котором развернут рабочий стол",
+              "example": "ac62f113-XXXX-XXXX-XXXX-5384783fb3cc"
+            },
+            "pool_name": {
+              "type": "string",
+              "description": "Наименование пула, в котором развернут рабочий стол",
+              "example": "test_pool"
+            },
+            "username": {
+              "type": "string",
+              "minLength": 3,
+              "description": "Имя пользователя, под которым выполнен вход на рабочий стол",
+              "example": "test_admin"
+            },
+            "hostname": {
+              "type": "string",
+              "format": "hostname",
+              "description": "Имя хоста",
+              "example": "user123@desktop123"
+            },
+            "ip": {
+              "type": "string",
+              "format": "ipv4",
+              "description": "Внутренний IP-адрес рабочего стола",
+              "example": "10.0.0.2"
+            },
+            "status": {
+              "$ref": "#/definitions/DesktopStatus"
+            }
+          },
+          "required": [
+            "created_at",
+            "pool_id",
+            "pool_name",
+            "username",
+            "hostname",
+            "ip",
+            "status"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "DesktopStatus": {
+      "properties": {
+        "vm_state": {
+          "type": "string",
+          "enum": [
+            "running",
+            "stopped",
+            "error",
+            "pending",
+            "to_delete",
+            "terminating",
+            "deleted"
+          ],
+          "description": "Статус рабочего стола",
+          "example": "running"
+        },
+        "connection_state": {
+          "type": "string",
+          "enum": [
+            "active",
+            "inactive"
+          ],
+          "description": "Статус подключения рабочего стола",
+          "example": "active"
+        },
+        "availability_status": {
+          "type": "string",
+          "enum": [
+            "ready",
+            "maintenance",
+            "unavailable"
+          ],
+          "description": "Статус доступности рабочего стола",
+          "example": "ready"
+        },
+        "cache_level": {
+          "type": "integer",
+          "description": "Уровень кеша ВМ в Термидеск",
+          "example": 1
+        }
+      },
+      "required": [
+        "vm_state",
+        "connection_state",
+        "availability_status",
+        "cache_level"
+      ]
+    },
+    "PoolJournal": {
+      "type": "object",
+      "properties": {
+        "entries": {
+          "type": "array",
+          "description": "Записи журнала пула",
+          "items": {
+            "$ref": "#/definitions/JournalEntry"
+          }
+        }
+      },
+      "required": [
+        "entries"
+      ]
+    },
+    "JournalEntry": {
+      "type": "object",
+      "properties": {
+        "event": {
+          "description": "Не поддерживается"
+        },
+        "status": {
+          "description": "Не поддерживается"
+        },
+        "user": {
+          "$ref": "#/definitions/UserInfo"
+        },
+        "obj": {
+          "$ref": "#/definitions/VDIObjectInfo"
+        },
+        "time": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Время выполнения операции",
+          "example": "2024-01-01 00:00:00"
+        },
+        "description": {
+          "description": "Не поддерживается"
+        }
+      },
+      "required": [
+        "event",
+        "status",
+        "time"
+      ]
+    },
+    "UserInfo": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 3,
+          "description": "ID пользователя",
+          "example": "b08181fc-XXXX-XXXX-XXXX-f49b10a046d8"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 3,
+          "description": "Имя пользователя",
+          "example": "test_user"
+        },
+        "ip": {
+          "description": "Не поддерживается"
+        },
+        "access_device": {
+          "description": "Не поддерживается"
+        },
+        "hwid": {
+          "description": "Не поддерживается"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    },
+    "VDIObjectInfo": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Не поддерживается"
+        },
+        "name": {
+          "description": "Не поддерживается"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "pool",
+            "desktop"
+          ],
+          "description": "Тип объекта сервиса",
+          "example": "pool"
+        },
+        "ip": {
+          "description": "Не поддерживается"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "kind"
+      ]
+    },
+    "CalculateSizingRequest": {
+      "type": "object",
+      "properties": {
+        "requirements": {
+          "$ref": "#/definitions/PoolRequirements"
+        }
+      },
+      "required": [
+        "requirements"
+      ]
+    },
+    "PoolRequirements": {
+      "type": "object",
+      "properties": {
+        "runtime": {
+          "$ref": "#/definitions/RuntimeOpts"
+        },
+        "num_desktops": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 19999,
+          "description": "Количество рабочих столов",
+          "example": 30
+        },
+        "protocol": {
+          "$ref": "#/definitions/ProtocolOpts"
+        },
+        "workload": {
+          "type": "string",
+          "enum": [
+            "office",
+            "multimedia",
+            "cad"
+          ],
+          "default": "office",
+          "description": "Назначение использования пула:<br> - **office** — работа с офисными приложениями (низкое потребление системных ресурсов);<br> - **multimedia** — работа с различными мультимедийными компонентами (средне-высокое потребление ресурсов);<br> - **cad** — работа с CAD-утилитами и пакетами (высокое потребление ресурсов)",
+          "example": "office"
+        },
+        "volume_size_gb": {
+          "type": "integer",
+          "default": 10,
+          "minimum": 1,
+          "description": "Размер диска одной ВМ пула",
+          "example": 40
+        }
+      },
+      "required": [
+        "num_desktops"
+      ]
+    },
+    "SizingEstimate": {
+      "type": "object",
+      "properties": {
+        "resources": {
+          "type": "array",
+          "description": "Записи об оценке системных ресурсов",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/VirtualResource"
+          }
+        },
+        "total_resources": {
+          "type": "array",
+          "description": "Общее количество ресурсов",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/VirtualResource"
+          }
+        },
+        "diff_resources": {
+          "type": "array",
+          "description": "Разница между текущим и необходимым количеством ресурсов",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/VirtualResource"
+          }
+        }
+      },
+      "required": [
+        "resources",
+        "total_resources",
+        "diff_resources"
+      ]
+    },
+    "VirtualResource": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "cpu",
+            "ram",
+            "disk",
+            "license",
+            "instance",
+            "lb_standard",
+            "lb_service",
+            "fip",
+            "network",
+            "subnet",
+            "port",
+            "sec_group"
+          ],
+          "description": "Тип виртуального ресурса:<br> - **cpu** — центральный процессор;<br> - **ram** — память;<br> - **disk** — объем диска;<br> - **license** — лицензия на ОС;<br> - **instance** — ВМ служебного уровня (control plane) сервиса VDI;<br> - **lb_standard** — балансировщик нагрузки для кластера;<br> - **lb_service** — балансировщик нагрузки для сервисной БД;<br> - **fip** — плавающий IP-адрес;<br> - **network** — сеть;<br> - **subnet** — подсеть;<br> - **port** — порт;<br> - **sec_group** — группа безопасности",
+          "example": "cpu"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 3,
+          "description": "Наименование виртуального ресурса",
+          "example": "vCPU"
+        },
+        "amount": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Оценка используемого ресурса",
+          "example": 6
+        },
+        "volumes": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Количество дисков",
+          "example": 1
+        }
+      },
+      "required": [
+        "kind",
+        "name",
+        "amount"
+      ]
+    },
+    "ActivateServiceRequest": {
+      "type": "object",
+      "properties": {
+        "openstack_id": {
+          "type": "string",
+          "description": "PID проекта в Openstack",
+          "example": "XXXXXXd4ef0547e5b222f44555XXXXXX"
+        },
+        "mcs_pid": {
+          "type": "string",
+          "description": "Внутренний идентификатор проекта в VK Cloud",
+          "example": "mcs0000000000"
+        },
+        "owner_email": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$",
+          "description": "Адрес электронной почты владельца проекта в VK Cloud",
+          "example": "example@vk.com"
+        },
+        "name": {
+          "type": "string",
+          "pattern": "^[a-z0-9]{2,50}$",
+          "description": "Наименование проекта",
+          "example": "project123"
+        }
+      },
+      "required": [
+        "openstack_id",
+        "owner_email",
+        "mcs_pid"
+      ]
+    },
+    "BillingStatusRequest": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "ACTIVE",
+            "FROZEN",
+            "SUSPENDED"
+          ],
+          "description": "Новый статус активности проекта",
+          "example": "ACTIVE"
+        }
+      }
+    },
+    "InternalError": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "description": "Описание ошибки",
+          "example": "Сервис не отвечает"
+        },
+        "code": {
+          "type": "integer",
+          "description": "Код ошибки",
+          "example": 500
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ]
+    },
+    "ValidationError": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string",
+          "description": "Описание ошибки",
+          "example": "Ошибка валидации полей"
+        },
+        "invalid_fields": {
+          "type": "array",
+          "description": "Список полей, не прошедших валидацию",
+          "items": {
+            "type": "string",
+            "description": "Наименование поля",
+            "example": "user_dn"
+          }
+        },
+        "code": {
+          "type": "integer",
+          "description": "Код ошибки",
+          "example": 400
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ]
+    },
+    "PaginationMarker": {
+      "type": "object",
+      "description": "Информация о маркерах пагинации",
+      "properties": {
+        "prev": {
+          "type": "string",
+          "description": "ID маркера предыдущей страницы",
+          "example": "2023-08-14T10:52:15.568+03:00"
+        },
+        "next": {
+          "type": "string",
+          "description": "ID маркера следующей страницы",
+          "example": "2023-08-15T10:52:15.568+03:00"
+        }
+      },
+      "required": [
+        "prev",
+        "next"
+      ]
+    },
+    "PoolManageProperties": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "type": "string",
+          "enum": [
+            "informational",
+            "warning",
+            "error"
+          ],
+          "description": "Тип отправляемого сообщения",
+          "example": "warning"
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 999,
+          "description": "Текст сообщения",
+          "example": "Сообщение, предупреждающее о действиях"
+        }
+      },
+      "required": [
+        "level",
+        "message"
+      ]
+    },
+    "AllowedDevice": {
+      "type": "string",
+      "description": "Наименование периферийного устройства",
+      "example": "usb",
+      "enum": [
+        "printer",
+        "mic",
+        "usb",
+        "smart-card",
+        "files",
+        "clipboard",
+        "time-zone"
+      ]
+    }
+  }
+}

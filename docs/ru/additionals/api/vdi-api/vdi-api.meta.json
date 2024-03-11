@@ -1,0 +1,14 @@
+{
+    "title": "Cloud Desktop",
+    "pageDescription": "Справка по Cloud Desktop API",
+    "shortDescription": "OpenAPI-спецификация сервиса Cloud Desktop",
+    "metaTitle": "Cloud Desktop",
+    "metaDescription": "Справка по Cloud Desktop API",
+    "sectionTitle": "Cloud Desktop",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 15,
+    "hidden": true,
+    "isBeta": true
+}

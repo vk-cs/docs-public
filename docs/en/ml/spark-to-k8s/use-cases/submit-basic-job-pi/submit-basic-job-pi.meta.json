@@ -1,0 +1,15 @@
+{
+    "title": "Basic working with Spark jobs",
+    "pageDescription": "How to create a task with a standard manifest on the example of calculating the number Pi.",
+    "shortDescription": "How to create a task with a standard manifest on the example of calculating the number Pi",
+    "metaTitle": "Basic working with Spark jobs",
+    "metaDescription": "How to create a task with a standard manifest on the example of calculating the number Pi.",
+    "sectionTitle": "Basic working with Spark jobs",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1,
+    "createdAt": "2023-10-02T13:09:02.000Z",
+    "updatedAt": "2024-02-15T03:43:33.000Z",
+    "uuid": "edd4b89b-9592-4def-a7f0-4af3e2e87fba"
+}
