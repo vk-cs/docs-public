@@ -1,6 +1,6 @@
 Spark jobs can be submitted to the cluster in a variety of ways:
 
-- For Spark applications that have no dependencies, it is sufficient to pass the application code in the job manifest. This approach is shown [in the example of calculating the number π](../calculate-pi).
+- For Spark applications that have no dependencies, it is sufficient to pass the application code in the job manifest. This approach is shown [in the example of calculating the number π](../submit-basic-job-pi).
 - For Spark applications that require additional artifacts for their operation, you must manually add the required artifacts to the [Cloud Storage](/en/base/s3) bucket and edit the job manifest. This approach will be shown below.
 
 As an example, an application that executes an SQL query against a ClickHouse deployed as a [Cloud Databases](/en/dbs/dbaas) instance will be used.
@@ -278,7 +278,7 @@ When submitting a Spark job, the paths to the files uploaded to the bucket will 
    ```
 
    <details>
-   <summary>Example of the partial output when the job had been completed successfully</summary>
+   <summary>Example of partial output when the job completes successfully</summary>
 
    ```text
    ...
