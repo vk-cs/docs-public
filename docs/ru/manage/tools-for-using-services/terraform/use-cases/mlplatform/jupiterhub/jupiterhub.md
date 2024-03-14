@@ -68,7 +68,7 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
   - хотя бы одну цифру или спецсимвол из следующего диапазона: ? ! ~ @ # $ % ^ & _ - + * = ; : , . < > | [ ] { } ( ).
 
 - `flavor_id`: значение берется из источника данных `vkcs_compute_flavor`. Далее будет показано, как его формировать. Вместо источника данных вы можете указать идентификатор типа ВМ, полученный через [OpenStack CLI](/ru/manage/tools-for-using-services/openstack-cli).
-- `network_id`: значение берется из источника данных `vkcs_networking_network`. Далее будет показано, как его формировать. Вместо источника данных вы можете указать идентификатор сети, полученный из [списка сетей](/ru/networks/vnet/operations/manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih/) в личном кабинете VK Cloud или через Openstack CLI.
+- `network_id`: значение берется из источника данных `vkcs_networking_network`. Далее будет показано, как его формировать. Вместо источника данных вы можете указать идентификатор сети, полученный из [списка сетей](/ru/networks/vnet/operations/manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
 </tabpanel>
 <tabpanel>
