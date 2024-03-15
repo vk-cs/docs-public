@@ -1,8 +1,9 @@
-В статье приведены примеры создания инстанса JupiterHub при помощи Terraform.
+В статье приведены примеры создания deploy-версии инстанса MLflow при помощи Terraform.
 
 При создании инстанса используются:
 
-- ресурс [vkcs_mlplatform_jupyterhub](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_jupyterhub.md)
+- ресурс [vkcs_mlplatform_mlflow_deploy](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_mlflow_deploy.md)
+- ресурс [vkcs_mlplatform_mlflow](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_mlflow.md)
 - ресурс [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md)
 - источник даннных [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md);
 - источник данных [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md).
@@ -17,40 +18,36 @@
 
 1. Для выполнения этого сценария требуется провайдер версии 0.6.0 или выше. Убедитесь, что версия провайдера в файле `vkcs_provider.tf` выше или равна. Если версия провайдера ниже, [обновите провайдер](../../../quick-start).
 
-## 1. Создайте файл с описанием инстанса JupiterHub
+## 1. Создайте файл с описанием инстанса MLflow Deploy
 
 В примере ниже инстанс создается в следующей конфигурации:
 
 - регион по умолчанию, зона доступности `GZ1`;
-- тип диска `SSD`;
-- тип диска данных `SSD`; размер — 60 и 70 ГБ;
-- имя пользователя — `admin`, пароль — `Password!`.
+- тип диска `SSD`, размер — 50 ГБ;
+- тип диска данных `SSD`; размер — 60 ГБ.
 
 Создайте файл конфигурации Terraform `main.tf` с содержимым:
 
 ```hcl
-resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
-  name              = "tf-example"
-  admin_name        = "admin"
-  admin_password    = "Password!"
-  flavor_id         = data.vkcs_compute_flavor.basic.id
-  availability_zone = "GZ1"
+resource "vkcs_mlplatform_mlflow_deploy" "deploy" {
+  name               = "tf-example"
+  flavor_id          = data.vkcs_compute_flavor.basic.id
+  mlflow_instance_id = vkcs_mlplatform_mlflow.mlflow.id
+  availability_zone  = "GZ1"
   boot_volume = {
+    size        = 50
     volume_type = "ceph-ssd"
   }
+
   data_volumes = [
     {
       size        = 60
       volume_type = "ceph-ssd"
     },
-    {
-      size        = 70
-      volume_type = "ceph-ssd"
-    }
   ]
   networks = [
     {
-      network_id = data.vkcs_networking_network.default.id
+      network_id = vkcs_networking_network.app.id
     },
   ]
 }
@@ -58,21 +55,21 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
 
 Здесь:
 
-- `admin_password` — пароль администратора инстанса JupiterHub. Минимальная длина пароля — 8 символов. Пароль должен содержать:
-
-  - заглавные и строчные буквы латинского алфавита;
-  - хотя бы одну цифру или спецсимвол из следующего диапазона: ? ! ~ @ # $ % ^ & _ - + * = ; : , . < > | [ ] { } ( ).
-
 - `flavor_id` — идентификатор типа ВМ:
 
   - `flavor_id = data.vkcs_compute_flavor.basic.id` — значение берется из источника данных `vkcs_compute_flavor`. Далее показано, как его формировать.
   - `flavor_id = aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac` — указывается идентификатор типа ВМ, полученный через [OpenStack CLI](/ru/manage/tools-for-using-services/openstack-cli).
 
+- `mlflow_instance_id` — идентификатор инстанса MLflow для совместной работы:
+
+  - `mlflow_instance_id = vkcs_mlplatform_mlflow.mlflow.id` — создание нового инстанса, значение будет получено после создания ресурса `vkcs_mlplatform_jupyterhub`. Далее показано, как его создать.
+  - `mlflow_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"` — указывается идентификатор существующего инстанса. Идентификатор доступен на странице инстанса MLflow в [личном кабинете VK Cloud](https://cloud.vk.com/app).
+
 - `network_id` — идентификатор сети, в которой будет размещен инстанс:
 
   - `network_id = vkcs_networking_network.default.id` — создание новой сети, значение будет получено после создания ресурса `vkcs_networking_network`. Далее показано, как его создать.
   - `network_id = data.vkcs_networking_network.default.id` — резмещение в существующей сети, значение берется из источника данных `vkcs_networking_network`. Далее показано, как его формировать.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"` — резмещение в существующей сети, указывается идентификатор сети, полученный из [списка сетей](/ru/networks/vnet/operations/manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `network_id = "bb76507d-zzzz-zzzz-zzzz-2bca1a4c4cfc"` — резмещение в существующей сети, указывается идентификатор сети, полученный из [списка сетей](/ru/networks/vnet/operations/manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
 ## 2. (Опционально) Создайте файл с описанием источника данных для типа ВМ
 
@@ -84,9 +81,13 @@ data "vkcs_compute_flavor" "basic" {
 }
 ```
 
-Указанный в файле тип ВМ будет использоваться для создания инстанса JupiterHub в вашем проекте Terraform.
+Указанный в файле тип ВМ будет использоваться создания для инстанса MLflow в вашем проекте Terraform.
 
-## 3. (Опционально) Создайте файл с описанием сетевой инфраструктуры для кластера
+## 3. (Опционально) Создайте файл с описанием связанного инстанса MLflow
+
+Создайте файл конфигурации Terraform `mlflow_instance.tf` c [описанием инстанса MLflow](../mlflow/).
+
+## 4. (Опционально) Создайте файл с описанием сетевой инфраструктуры для кластера
 
 Создайте файл конфигурации Terraform `network.tf` с описанием сетевой инфраструктуры для кластера:
 
@@ -151,6 +152,8 @@ resource "vkcs_networking_router_interface" "app" {
    - `vkcs_provider.tf`;
    - `main.tf`;
    - `flavor.tf` (если создавался);
+   - `mlflow_instance.tf`(если создавался);
+   - `jh_instance.tf`(если создавался);
    - `network.tf`(если создавался).
 
 1. Перейдите в эту директорию.
@@ -172,10 +175,10 @@ resource "vkcs_networking_router_interface" "app" {
 
 ## 5. Проверьте применение конфигурации
 
-Убедитесь, что инстанс JupiterHub был успешно создан:
+Убедитесь, что инстанс MLflow Deploy был успешно создан:
 
 1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Перейдите в раздел **ML Platform** → **Инстансы**. Убедитесь, что инстанс JupiterHub создан и активен.
+1. Перейдите в раздел **ML Platform** → **Инстансы**. Убедитесь, что инстанс MLflow Deploy создан и активен.
 
 ## Удалите неиспользуемые ресурсы
 
