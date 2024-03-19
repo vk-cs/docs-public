@@ -1,8 +1,4 @@
-<warn>
-
-The VPN service is only available in networks created with use of [Neutron SDN]( ../../concepts/architecture#sdns_used).
-
-</warn>
+VPN service is available in the Neutron and Sprut [SDN](../../concepts/architecture#sdns_used). Management of VPN tunnels in Sprut SDN is available only through the personal account interface.
 
 You can manage VPN tunnels: view, add or remove them from the project, as well as edit and restart tunnels.
 
@@ -15,15 +11,15 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project.
+1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
 
    A list of VPN tunnels will appear.
 
-1. Click on the name of the VPN tunnel.
+1. Click the name of a VPN tunnel.
 
-    A page with detailed information about it will open. Navigate through the page tabs to view information about IKE and IPsec settings, endpoint groups, and the tunnel. You can also edit VPN tunnel settings on this page.
+    A page with detailed information about it will open. Navigate between the page tabs to view information about IKE and IPsec settings, endpoint groups, and the tunnel. You can also edit the VPN tunnel settings on this page.
 
 </tabpanel>
 <tabpanel>
@@ -47,31 +43,31 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
    General information about the tunnel and identifiers will be displayed:
 
-   - `IKE Policy` — identifier of the IKE policy. To view detailed information about a policy, run the command:
+   - `IKE Policy` — the identifier of the IKE policy. To view detailed information about the policy, run the command:
 
      ```bash
       openstack vpn ike policy show <IKE policy id>
      ```
 
-   - `IPSec Policy` — ID of the IPsec policy. To view detailed information about a policy, run the command:
+   - `IPSec Policy` — the identifier of the IPsec policy. To view detailed information about the policy, run the command:
 
       ```bash
       openstack vpn ipsec policy show <ipsec policy id>
       ```
 
-   - `Local Endpoint Group ID` — identifier of the local endpoint group. To view detailed information about a group, run the command:
+   - `Local Endpoint Group ID` — the identifier of the local endpoint group. To view detailed information about the group, run the command:
 
       ```bash
       openstack vpn endpoint group show <local endpoint group id>
       ```
 
-   - `Peer Endpoint Group ID` — identifier of the remote (peer) endpoint group. To view detailed information about a group, run the command:
+   - `Peer Endpoint Group ID` — the identifier of the remote (peer) endpoint group. To view detailed information about the group, run the command:
 
       ```bash
       openstack vpn endpoint group show <remote endpoint group id>
       ```
 
-   - `VPN Service` is the identifier of the VPN service that this VPN tunnel serves. To view detailed information about the service, run the command:
+   - `VPN Service` — the identifier of the VPN service that this VPN tunnel serves. To view detailed information about the service, run the command:
 
       ```bash
       openstack vpn service show <VPN service id>
@@ -89,53 +85,53 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project.
+1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
-1. Click the **Add VPN** or **Add** button.
+1. Click the **Add VPN** or **Add** button. The New VPN Tunnel Wizard opens.
+1. Select the SDN in which the VPN will be created:
 
-   The New VPN Tunnel Wizard opens.
+   - **SDN Neutron**: VPN can only be connected to a [standard router](../../concepts/router#standard_router_capabilities) of Sprut or Neutron.
+   - **SDN Sprut**: VPN can only be connected to an [advanced router](../../concepts/router#advanced_router_capabilities).
 
 1. Set up IKE:
 
-   Set up IKE:
-
-   1. **IKE Policy** - Select an IKE policy from the dropdown list. If the desired policy does not exist, create a new one:
+   1. **IKE Policy** — select an IKE policy from the dropdown list. If the desired policy does not exist, create a new one:
 
        1. Select `New IKE Policy` from the drop-down list.
        1. Set the policy settings:
 
           - **Policy name**.
           - **Key lifetime** (in seconds).
-          - **Authorization Algorithm** - it is recommended to select `sha256`.
-          - **Encryption algorithm** - `aes256` is recommended.
-          - **IKE version** - it is recommended to select the `v2` version.
-          - **Diffie-Hellman group** - it is recommended to select the `group14` group.
+          - **Authorization Algorithm** — `sha256` is recommended.
+          - **Encryption algorithm** — `aes256` is recommended.
+          - **IKE version** — `v2` is recommended.
+          - **Diffie-Hellman group** — `group14` is recommended.
   
    1. Press the **Next Step** button.
 
 1. Configure IPsec:
 
-    1. **IPsec policy** - select an IPsec policy from the drop-down list. If the desired policy does not exist, create a new one:
+    1. **IPsec policy** — select an IPsec policy from the drop-down list. If the desired policy does not exist, create a new one:
 
        1. Select `New IPsec Policy` from the drop-down list.
        1. Set the policy settings:
 
           - **Policy name**.
           - **Key lifetime** (in seconds).
-          - **Authorization Algorithm** - it is recommended to select `sha256`.
-          - **Encryption algorithm** - `aes256` is recommended.
-          - **Diffie-Hellman group** - it is recommended to select the `group14` group.
+          - **Authorization Algorithm** — it is recommended to select `sha256`.
+          - **Encryption algorithm** — `aes256` is recommended.
+          - **Diffie-Hellman group** — it is recommended to select the `group14` group.
 
     1. Press the **Next Step** button.
 
 1. Set up endpoint groups:
 
-   1. **Router** - Select the router whose subnets should be accessible through the VPN tunnel.
+   1. **Router** — select the router whose subnets should be accessible through the VPN tunnel. The available options depend on the selected SDN, and only include routers that are connected to an external network and have an assigned external IP address.
 
        <warn>
 
-       Such a router must be connected to an external network and have an assigned external IP address.
+       It is recommended to create no more than 500 connections for one router. With more connections, errors may occur.
 
        </warn>
 
@@ -143,10 +139,27 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
     1. Set the group settings:
 
-          - **Name**.
-          - **Subnets** - select one or more subnets connected to the previously selected router. These subnets will be accessible through the VPN tunnel.
+         <tabs>
+         <tablist>
+         <tab>Neutron</tab>
+         <tab>Sprut</tab>
+         </tablist>
+         <tabpanel>
 
-    1. **Remote Endpoint** - select a remote endpoint group from the dropdown list. If the required group does not exist, create a new one:
+         - **Name** — the name of a local endpoint group.
+         - **Subnets** — select one or more subnets connected to the previously selected router. These subnets will be accessible through the VPN tunnel.
+
+         </tabpanel>
+         <tabpanel>
+
+         - **Name** — the name of a local endpoint group.
+         - **Subnet address** — specify the IP address (CIDR) of the subnet connected to the previously selected router. This subnet will be accessible through the VPN tunnel.
+         - (Optional) To connect an additional subnet, click **Добавить еще один CIDR** and specify the IP address of the subnet that should be accessible through the VPN tunnel.
+
+         </tabpanel>
+         </tabs>
+
+    1. **Remote Endpoint** — select a remote endpoint group from the dropdown list. If the required group does not exist, create a new one:
 
        1. Select `New endpoint group` from the drop-down list.
        1. Set the group settings:
@@ -179,25 +192,30 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
          </info>
 
-    1. (Optional) specify advanced settings:
+    1. (Optional) Specify advanced settings:
 
-       - **Peer Router ID for Authentication (Peer ID)** - by default matches the peer address.
-       - **Initiator State** - behavior when establishing an IPsec connection:
+       - **Peer Router ID for Authentication (Peer ID)** — by default matches the peer address.
+       - (For VPN in Sprut SDN only) **Селектор потоков траффика**:
 
-         - `bi-directional` (default) - the VK Cloud platform will attempt to establish a connection with a remote peer.
-         - `response-only` - the platform expects a VPN connection to be initiated by a remote peer and does not attempt to establish one on its own.
+         - **Объединить** — do not split traffic selectors, that is, wrap all address prefixes in one data transmission tunnel.
+         - **Разделить** — split traffic selectors, that is, create a separate data transmission tunnel for each pair of address prefixes.
+
+       - **Initiator State** — behavior when establishing an IPsec connection:
+
+         - `bi-directional` (default) — the VK Cloud platform will attempt to establish a connection with a remote peer.
+         - `response-only` — the platform expects a VPN connection to be initiated by a remote peer and does not attempt to establish one on its own.
 
        - Settings for detecting the unavailability of a remote peer (Dead Peer Detection, DPD):
 
-         - **When a peer is unavailable** - determines the behavior of the VK Cloud platform if a remote peer is unavailable:
+         - **When a peer is unavailable** — determines the behavior of the VK Cloud platform if a remote peer is unavailable:
 
-           - `hold` (default) - When an unreachable IPsec connection is detected, the connection is terminated. The connection can only be re-established by a remote peer.
-           - `clear` - When an unreachable IPsec connection is detected, the connection is terminated. The connection will not be re-established even if the remote peer attempts to do so.
-           - `restart` - When an unreachable IPsec connection is detected, the connection is terminated. The VK Cloud platform will try to re-establish a connection with the remote peer.
+           - `hold` (default) — When an unreachable IPsec connection is detected, the connection is terminated. The connection can only be re-established by a remote peer.
+           - `clear` — When an unreachable IPsec connection is detected, the connection is terminated. The connection will not be re-established even if the remote peer attempts to do so.
+           - `restart` — When an unreachable IPsec connection is detected, the connection is terminated. The VK Cloud platform will try to re-establish a connection with the remote peer.
 
          - **Peer Downtime Detection Interval** — at what interval (in seconds) to send test DPD messages.
 
-         - **Time to detect peer unavailable** - if after this timeout (in seconds) no DPD check messages were received from a remote peer, then it is considered unavailable (dead).
+         - **Time to detect peer unavailable** — if after this timeout (in seconds) no DPD check messages were received from a remote peer, then it is considered unavailable (dead).
 
            The default value for this setting is four times the **Peer Downtime Detection Interval**.
 
@@ -459,6 +477,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
       --peer-endpoint-group <remote endpoint-group ID> \
       --psk "<PSK key>" \
       --enable
+   ```
   
    </tabpanel>
    <tabpanel>
@@ -493,21 +512,38 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project.
+1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
 1. Expand the menu of the desired VPN tunnel and select **Edit VPN**.
 1. If necessary, edit the local or remote endpoint group:
 
-   1. **Local Endpoint** - select a local endpoint group from the drop-down list. If the required group does not exist, create a new one:
+   1. **Local Endpoint** — select a local endpoint group from the drop-down list. If the required group does not exist, create a new one:
 
        1. Select `New endpoint group` from the drop-down list.
        1. Set the group settings:
 
-          - **Name**.
-          - **Subnets** - select one or more subnets connected to the previously selected router. These subnets will be accessible through the VPN tunnel.
+         <tabs>
+         <tablist>
+         <tab>Neutron</tab>
+         <tab>Sprut</tab>
+         </tablist>
+         <tabpanel>
 
-   1. **Remote Endpoint** - select a remote endpoint group from the dropdown list. If the required group does not exist, create a new one:
+         - **Name** — the name of a local endpoint group.
+         - **Subnets** — select one or more subnets connected to the previously selected router. These subnets will be accessible through the VPN tunnel.
+
+         </tabpanel>
+         <tabpanel>
+
+         - **Name** — the name of a local endpoint group.
+         - **Subnet address** — specify the IP address (CIDR) of the subnet connected to the previously selected router. This subnet will be accessible through the VPN tunnel.
+         - (Optional) To connect an additional subnet, click **Добавить еще один CIDR** and specify the IP address of the subnet that should be accessible through the VPN tunnel.
+
+         </tabpanel>
+         </tabs>
+
+   1. **Remote Endpoint** — select a remote endpoint group from the dropdown list. If the required group does not exist, create a new one:
 
        1. Select `New endpoint group` from the drop-down list.
        1. Set the group settings:
@@ -518,7 +554,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
             If you need to add more subnets, click the **Add subnet** link.
 
 1. Press the **Next Step** button.
-1. Edit VPN tunnel settings:
+1. Edit the VPN tunnel settings:
 
    1. Basic settings:
 
@@ -531,7 +567,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
          <info>
 
          Valid characters:
-         - uppercase and lowercase letters of the Latin alphabet;
+         - uppercase and lowercase Latin letters;
          - numbers;
          - characters `-+&!@#$%^*(),.:;_=<>{}/`.
 
@@ -539,25 +575,30 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
          </info>
 
-   1. (Optional) advanced settings:
+   1. (Optional) Аdvanced settings:
 
-      - **Peer Router ID for Authentication (Peer ID)** - by default matches the peer address.
-      - **Initiator State** - behavior when establishing an IPsec connection:
+      - **Peer Router ID for Authentication (Peer ID)** — by default matches the peer address.
+      - (For VPN in Sprut SDN only) **Селектор потоков траффика**:
 
-         - `bi-directional` (default) - the VK Cloud platform will attempt to establish a connection with a remote peer.
-         - `response-only` - the platform expects a VPN connection to be initiated by a remote peer and does not attempt to establish one on its own.
+         - **Объединить** — do not split traffic selectors, that is, wrap all address prefixes in one data transmission tunnel.
+         - **Разделить** — split traffic selectors, that is, create a separate data transmission tunnel for each pair of address prefixes.
+
+      - **Initiator State** — behavior when establishing an IPsec connection:
+
+         - `bi-directional` (default) — the VK Cloud platform will attempt to establish a connection with a remote peer.
+         - `response-only` — the platform expects a VPN connection to be initiated by a remote peer and does not attempt to establish one on its own.
 
       - Settings for detecting the unavailability of a remote peer (Dead Peer Detection, DPD):
 
-         - **When a peer is unavailable** - determines the behavior of the VK Cloud platform if a remote peer is unavailable:
+         - **When a peer is unavailable** — determines the behavior of the VK Cloud platform if a remote peer is unavailable:
 
-           - `hold` (default) - When an unreachable IPsec connection is detected, the connection is terminated. The connection can only be re-established by a remote peer.
-           - `clear` - When an unreachable IPsec connection is detected, the connection is terminated. The connection will not be re-established even if the remote peer attempts to do so.
-           - `restart` - When an unreachable IPsec connection is detected, the connection is terminated. The VK Cloud platform will try to re-establish a connection with the remote peer.
+           - `hold` (default) — when an unreachable IPsec connection is detected, the connection is terminated. The connection can only be re-established by a remote peer.
+           - `clear` — when an unreachable IPsec connection is detected, the connection is terminated. The connection will not be re-established even if the remote peer attempts to do so.
+           - `restart` — when an unreachable IPsec connection is detected, the connection is terminated. The VK Cloud platform will try to re-establish the connection with the remote peer.
 
-         - **Peer Downtime Detection Interval** — at what interval (in seconds) to send test DPD messages.
+         - **Peer Downtime Detection Interval** — the interval (in seconds) at which to send DPD test messages.
 
-         - **Time to detect peer unavailable** - if after this timeout (in seconds) no DPD check messages were received from a remote peer, then it is considered unavailable (dead).
+         - **Time to detect peer unavailable** — if during this interval (in seconds) no DPD test messages were received from a remote peer, then it is considered unavailable (dead).
 
            The default value for this setting is four times the **Peer Downtime Detection Interval**.
 
@@ -570,43 +611,45 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
    1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
    1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
+
 1. View detailed information about the VPN tunnel you want to edit.
 
 1. (If necessary) select other endpoint groups or create new ones:
 
    1. Get a list of endpoint groups and view detailed information about them:
 
-       ```bash
-       openstack vpn endpoint group list
-       ```
+      ```bash
+      openstack vpn endpoint group list
+      ```
 
-       ```bash
-       openstack vpn endpoint group show <group id>
-       ```
+      ```bash
+      openstack vpn endpoint group show <group id>
+      ```
 
-       Write down:
-       - ID of the group that will be used by the VPN tunnel as the local endpoint group. Such a group must be of type `subnet`.
+      Write down:
+
+      - ID of the group that will be used by the VPN tunnel as the local endpoint group. Such a group must be of type `subnet`.
 
          The subnets belonging to the group must be connected to the router that was specified in the previous step in the VPN service settings.
 
-       - ID of the group that will be used by the VPN tunnel as the remote endpoint group. Such a group must be of type `cidr`.
+      - ID of the group that will be used by the VPN tunnel as the remote endpoint group. Such a group must be of type `cidr`.
 
    1. If there is no suitable local endpoint group, create it:
 
-       <tabs>
-       <tablist>
-       <tab>Linux/macOS (bash, zsh)</tab>
-       <tab>Windows (PowerShell)</tab>
-       </tablist>
-       <tabpanel>
+      <tabs>
+      <tablist>
+      <tab>Linux/macOS (bash, zsh)</tab>
+      <tab>Windows (PowerShell)</tab>
+      </tablist>
+      <tabpanel>
 
-       ```bash
-       openstack vpn endpoint group create <local endpoint group name> \
-         --type subnet \
-         --value <subnet ID of the VK Cloud platform connected to the router, which should be accessible through the VPN tunnel> \
-         ...
-         --value <additional subnet ID>
-       ```
+      ```bash
+      openstack vpn endpoint group create <local endpoint group name> \
+      --type subnet \
+      --value <subnet ID of the VK Cloud platform connected to the router, which should be accessible through the VPN tunnel> \
+      ...
+      --value <additional subnet ID>
+      ```
 
       </tabpanel>
       <tabpanel>
@@ -657,7 +700,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
       After creation, information about the created object will be displayed, including its identifier. Write down the ID of the remote endpoint group that will be used by the VPN tunnel.
 
-1. Edit VPN tunnel settings:
+1. Edit the VPN tunnel settings:
 
    <tabs>
    <tablist>
@@ -701,6 +744,12 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
 ## Restarting a VPN tunnel
 
+<info>
+
+Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Sprut, all tunnel changes are applied automatically, no restart is required.
+
+</info>
+
 <tabs>
 <tablist>
 <tab>Personal account</tab>
@@ -708,8 +757,8 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project.
+1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
 1. Expand the menu of the desired VPN tunnel and select **Restart VPN**.
 1. Read the warning.
@@ -760,8 +809,8 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project.
+1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
 1. Expand the menu of the desired VPN tunnel and select **Remove VPN**.
 1. Review the list of objects to be deleted.
@@ -782,17 +831,17 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
    1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
    1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
 
-1. Look at the list of VPN tunnels and find the tunnel ID you want to remove.
+1. Look at the list of VPN tunnels and find the ID of the tunnel you want to remove.
 
 1. View detailed information about the tunnel you want to delete.
 
    Write down the following IDs:
 
-   - `IKE Policy` — identifier of the IKE policy.
-   - `IPSec Policy` — ID of the IPsec policy.
-   - `Local Endpoint Group ID` — identifier of the local endpoint group.
-   - `Peer Endpoint Group ID` — identifier of the remote (peer) endpoint group.
-   - `VPN Service` is the identifier of the VPN service that this VPN tunnel serves.
+   - `IKE Policy` — the identifier of the IKE policy.
+   - `IPSec Policy` — the identifier of the IPsec policy.
+   - `Local Endpoint Group ID` — the identifier of the local endpoint group.
+   - `Peer Endpoint Group ID` — the identifier of the remote (peer) endpoint group.
+   - `VPN Service` — the identifier of the VPN service that this VPN tunnel serves.
 
 1. To remove only the VPN tunnel, run the command:
 
@@ -800,7 +849,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
     openstack vpn ipsec site connection delete <VPN tunnel id>
    ```
 
-1. To remove the VPN tunnel and all objects associated with it, run the command:
+1. To remove the VPN tunnel and all objects associated with it, run the commands:
 
    <tabs>
    <tablist>
@@ -810,25 +859,24 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
    <tabpanel>
 
    ```bash
-    openstack vpn ipsec site connection delete <VPN tunnel id>
-    openstack vpn ike policy delete <IKE policy id>
-    openstack vpn ipsec policy delete <ipsec policy id>
-    openstack vpn endpoint group delete <local endpoint group id>
-    openstack vpn endpoint group delete <ID of remote (peer) endpoint group>
-    openstack vpn service delete <identifier of the VPN service that is serving this VPN tunnel
-   
+   openstack vpn ipsec site connection delete <VPN tunnel id>
+   openstack vpn ike policy delete <IKE policy id>
+   openstack vpn ipsec policy delete <ipsec policy id>
+   openstack vpn endpoint group delete <local endpoint group id>
+   openstack vpn endpoint group delete <ID of remote (peer) endpoint group>
+   openstack vpn service delete <identifier of the VPN service that is serving this VPN tunnel
    ```
 
    </tabpanel>
    <tabpanel>
 
    ```powershell
-    openstack vpn ipsec site connection delete <VPN tunnel ID>; `
-    openstack vpn ike policy delete <IKE policy identifier>; `
-    openstack vpn ipsec policy delete <ipsec policy id>; `
-    openstack vpn endpoint group delete <local endpoint group id>; `
-    openstack vpn endpoint group delete <ID of the remote (peer) endpoint group>; `
-    openstack vpn service delete <identifier of the VPN service that is serving this VPN tunnel>
+   openstack vpn ipsec site connection delete <VPN tunnel ID>; `
+   openstack vpn ike policy delete <IKE policy identifier>; `
+   openstack vpn ipsec policy delete <ipsec policy id>; `
+   openstack vpn endpoint group delete <local endpoint group id>; `
+   openstack vpn endpoint group delete <ID of the remote (peer) endpoint group>; `
+   openstack vpn service delete <identifier of the VPN service that is serving this VPN tunnel>
    ```
 
    </tabpanel>
