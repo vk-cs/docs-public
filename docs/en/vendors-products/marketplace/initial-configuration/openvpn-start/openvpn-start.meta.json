@@ -1,0 +1,12 @@
+{
+    "title": "OpenVPN deployment",
+    "pageDescription": "Deployment of the service providing secure access to VK Cloud project infrastructure, adding and blocking users.",
+    "shortDescription": "Deployment of the service providing secure access to VK Cloud project infrastructure, adding and blocking users",
+    "metaTitle": "OpenVPN deployment",
+    "metaDescription": "Deployment of the service providing secure access to VK Cloud project infrastructure, adding and blocking users",
+    "sectionTitle": "OpenVPN deployment",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 9,
+    "uuid": "216f93f5-8ffc-4f06-9182-3efa8158dc42"
+}
