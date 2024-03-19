@@ -34,6 +34,28 @@ The availability of specific addons depends on the [region](/en/base/account/con
 
 </info>
 
+### Capsule
+
+<tabs>
+<tablist>
+<tab>Description</tab>
+<tab>System requirements</tab>
+</tablist>
+<tabpanel>
+
+Kubernetes clusters allow you to organize the logical division of Kubernetes resources at the level of individual namespaces. However, this may not be enough to achieve resource separation and isolation in complex scenarios. For example, let's say you want to provide isolated sets of resources to multiple development teams so that they are not accessible to each other. A typical solution to this problem is to create several separate clusters for each team. With this approach, as the number of teams increases, the number of clusters also increases, which complicates the administration of these clusters.
+
+[Capsule](https://capsule.clastix.io/docs) allows you to organize isolated sets of resources within one cluster using tentants. An individual tenant represents namespaces assigned to a group of users combined with restrictions on the creation and consumption of Kubernetes resources. The Capsule policy engine not only monitors compliance with resource usage policies within a tenant, but also ensures the isolation of one tenant from another. Thus, it becomes possible to organize the work of several teams within one multi-tenant cluster without the need to administer additional clusters.
+
+</tabpanel>
+<tabpanel>
+
+- **CPU**: 200m.
+- **RAM**: 128Mi.
+
+</tabpanel>
+</tabs>
+
 ### cert-manager
 
 <tabs>
