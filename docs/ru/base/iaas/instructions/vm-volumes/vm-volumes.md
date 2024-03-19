@@ -84,7 +84,7 @@
 </tabpanel>
 </tabs>
 
-## Увеличение размера диска
+## Увеличение размера диска с перезагрузкой ВМ
 
 Ограничения, связанные с изменением размера диска ВМ на платформе VK Cloud:
 
@@ -162,6 +162,35 @@
 
 </tabpanel>
 </tabs>
+
+## Увеличение размера диска без перезагрузки ВМ
+
+1. [Увеличьте](#uvelichenie_razmera_diska_s_perezagruzkoy_vm) размер диска в личном кабинете VK Cloud или через Openstack CLI, но не перезагружайте ВМ.
+1. Увеличьте размер диска в операционной системе ВМ:
+
+   <tabs>
+   <tablist>
+   <tab>Windows</tab>
+   <tab>Linux</tab>
+   </tablist>
+   <tabpanel>
+
+   1. Откройте средство управления дисками (`diskmgmt.msc`) с правами администратора.
+   1. В контекстном меню нужного раздела выберите **Расширить том**.
+   1. [Увеличьте размер диска](https://learn.microsoft.com/ru-ru/windows-server/storage/disk-management/extend-a-basic-volume).
+
+   </tabpanel>
+   <tabpanel>
+
+   Выполните команду:
+
+   ```bash
+   growpart /dev/vda 1 <перед 1 нужен пробел>
+   sudo resize2fs /dev/vda1 <перед 1 не должно быть пробела>
+   ```
+
+   </tabpanel>
+   </tabs>
 
 ## Клонирование диска
 

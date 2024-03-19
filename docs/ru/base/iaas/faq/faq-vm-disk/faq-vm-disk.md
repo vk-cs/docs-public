@@ -2,7 +2,7 @@
 
 Увеличить диск можно при помощи панели VK Cloud в разделе **Виртуальные машины** или **Диски** раздела **Облачные вычисления**.
 
-Полная информация доступна в статье [Управление дисками](../../instructions/vm-volumes#uvelichenie_razmera_diska).
+Полная информация доступна в статье [Управление дисками](../../instructions/vm-volumes#uvelichenie_razmera_diska_s_perezagruzkoy_vm).
 
 ## Не удается уменьшить диск
 
@@ -26,7 +26,7 @@
 
 <info>
 
-Чтобы увеличить производительность, можно [увеличить размер](../../instructions/vm-volumes#uvelichenie_razmera_diska) или [изменить тип](../../instructions/vm-volumes#izmenenie_tipa_diska) диска.
+Чтобы увеличить производительность, можно [увеличить размер](../../instructions/vm-volumes#uvelichenie_razmera_diska_s_perezagruzkoy_vm) или [изменить тип](../../instructions/vm-volumes#izmenenie_tipa_diska) диска.
 
 </info>
 

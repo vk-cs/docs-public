@@ -310,7 +310,7 @@ This mechanism allows only traffic for which the source IP address is in the `al
 1. To remove a single source IP address, run the command:
 
    ```bash
-   openstack port unset <name or ID of the port> --allowed-address ip-address=<IP address>
+   openstack port unset <name or ID of the port> --allowed-address ip-address=<IP address>,mac-address=<mac-address>
    ```
 
    If you need to remove more than one IP address, repeat this command for each of them.

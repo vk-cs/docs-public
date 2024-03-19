@@ -10,9 +10,9 @@ export const config = {
         projectName: 'VK Cloud',
     },
     layout: {
-            main: {
-                schema: 'LIST'
-            }
+        main: {
+            schema: 'LIST'
+        }
     },
     contacts: {
         useNativeSupportUrl: false,
