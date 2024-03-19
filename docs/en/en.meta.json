@@ -1,12 +1,37 @@
 {
   "title": "Documentation",
-  "faqLinks": [
-    "docs/en/additionals/start",
-    "docs/en/additionals/cases/migration",
-    "docs/en/additionals/billing",
-    "docs/en/additionals/start/it-security"
-  ],
   "serviceGroupLinks": [],
+  "intro": [
+    {
+      "title": "Getting started",
+      "linkPartialPath": "/en/additionals/start",
+      "description": "Information about services, personal account, legal information and details",
+      "icon": "/ru/assets/start-icon.svg",
+      "iconMobile": "/ru/assets/start-icon-mobile.svg"
+    },
+    {
+      "title": "Migration",
+      "linkPartialPath": "/en/additionals/cases/migration",
+      "description": "How to migrate a local VM image to a VK Cloud project",
+      "icon": "/ru/assets/migration-icon.svg",
+      "iconMobile": "/ru/assets/migration-icon-mobile.svg"
+    },
+    {
+      "title": "Billing",
+      "linkPartialPath": "/en/additionals/billing",
+      "description": "A set of tools for accounting for the use of resources, generating reports, interacting with payment systems and obtaining financial documents",
+      "icon": "/ru/assets/billing-icon.svg",
+      "iconMobile": "/ru/assets/billing-icon-mobile.svg"
+    },
+    {
+      "title": "Information security",
+      "linkPartialPath": "/en/additionals/start/it-security",
+      "description": "Solutions to improve the security of working with the VK Cloud",
+      "icon": "/ru/assets/secure-icon.svg",
+      "iconMobile": "/ru/assets/secure-icon-mobile.svg"
+    }
+  ],
+
   "uuid": "301ac9a0-a82e-406d-b707-702fa2154727",
   "additionalUuids": [
     "29176af9-96b0-4303-8486-2750cb85e20b",

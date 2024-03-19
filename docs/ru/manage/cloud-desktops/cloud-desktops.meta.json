@@ -10,6 +10,11 @@
   "isBeta": true,
   "hidden": false,
   "weight": 10,
-  "infobarItems": null,
+  "infobarItems": [
+    {
+      "text": "Справка API",
+      "icon": "/docs/_docs/ru/manage/cloud-desktops/assets/icon.svg",
+      "link": "../../additionals/api/vdi-api"
+    }],
   "uuid": "842b1d20-793c-49a7-9461-32eb20bec850"
 }

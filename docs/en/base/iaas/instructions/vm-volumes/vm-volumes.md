@@ -84,7 +84,7 @@ Creating HDD and SSD drives is available by default in all configurations. To cr
 </tabpanel>
 </tabs>
 
-## Increasing the disk size
+## Increasing the disk size with rebooting
 
 Restrictions related to changing the VM disk size on the VK Cloud platform:
 
@@ -162,6 +162,35 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
 </tabpanel>
 </tabs>
+
+## Increasing the disk size without rebooting
+
+1. [Increase](#increasing_the_disk_size_with_rebooting) the disk size in your VK Cloud account or using Openstack CLI, but do not reboot it.
+1. Increase the disk size in the VM's OS:
+
+   <tabs>
+   <tablist>
+   <tab>Windows</tab>
+   <tab>Linux</tab>
+   </tablist>
+   <tabpanel>
+
+   1. Open Disk Management with administrator permissions (`diskmgmt.msc`).
+   1. Choose **Extend Volume** in right-click menu of the volume that you want to extend.
+   1. [Increase the disk size](https://learn.microsoft.com/en-us/windows-server/storage/disk-management/extend-a-basic-volume).
+
+   </tabpanel>
+   <tabpanel>
+
+   Run the command:
+
+   ```bash
+   growpart /dev/vda 1 <space is needed>
+   sudo resize2fs /dev/vda1
+   ```
+
+   </tabpanel>
+   </tabs>
 
 ## Cloning disk
 

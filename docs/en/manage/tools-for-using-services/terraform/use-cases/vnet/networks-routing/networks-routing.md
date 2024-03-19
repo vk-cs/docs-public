@@ -444,7 +444,7 @@ output "common-instance-private-ip" {
    rtt min/avg/max/mdev = 0.875/1.139/1.815/0.391 ms
    ```
 
-## Check the use of resources
+## Delete unused resources
 
 If you no longer need the resources created with Terraform, delete them:
 
