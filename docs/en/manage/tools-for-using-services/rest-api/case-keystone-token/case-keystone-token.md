@@ -39,7 +39,7 @@ Get a token:
 
 1. Execute the command:
 
-    ```
+    ```bash
     openstack token issue -c id -f value
     ```
 

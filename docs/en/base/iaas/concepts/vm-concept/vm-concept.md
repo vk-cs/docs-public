@@ -83,7 +83,7 @@ The number and type of CPU, as well as the amount of RAM of an already created v
 
 The name of the VM template on servers with Intel Cascade Lake, Intel Ice Lake CPUs and a VM with a connected graphics card is formed as follows:
 
-```
+```bash
 <category><CPU generation>-<number of CPUs>-<amount of RAM>-<options>-<GPU model>-<number of GPUs>
 ```
 

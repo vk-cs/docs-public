@@ -21,7 +21,7 @@ You can use a ready-made ACL or specify the access rights explicitly, but you ca
 
 Inquiry:
 
-```
+```bash
  PUT / HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -37,7 +37,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```bash
  HTTP / 1.1 200 OK
 
 Date: Mon, 31 Aug 2020 17:31:43 GMT
@@ -52,7 +52,7 @@ The GET operation will return a list of buckets existing in the project.
 
 Inquiry:
 
-```
+```bash
  GET / HTTP / 1.1
 
 Host: hb.vkcs.cloud
@@ -63,7 +63,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```bash
  HTTP / 1.1 200 OK
 
 x-amz-request-id: tx000000000000002ba2427-0059651b6d-1268c-ru-mska
@@ -100,7 +100,7 @@ To successfully complete the operation, you must have the rights to read the buc
 
 Inquiry:
 
-```
+```bash
  GET / HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -111,7 +111,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```bash
  HTTP / 1.1 200 OK
 
 x-amz-request-id: tx00000000000000029ac87-0059690330-8d1a-ru-mska
@@ -157,7 +157,7 @@ The operation is used to determine whether a bucket exists and whether it has pe
 
 Inquiry:
 
-```
+```bash
  HEAD / HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -168,7 +168,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```bash
  HTTP / 1.1 200 OK
 
 x-amz-id-2: JuKZqmXuiwFeDQxhD7M8KtsKobSzWA1QEjLbTMTagkKdBX2z7Il / jGhDeJ3j6s80
@@ -186,7 +186,7 @@ If 409 (BucketNotEmpty) is received as a response code, it means there are objec
 
 Inquiry:
 
-```
+```bash
  DELETE / HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -197,7 +197,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```bash
  HTTP / 1.1 204 No Content
 
 Date: Mon, 31 Aug 2020 18:13:21 GMT

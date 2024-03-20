@@ -20,7 +20,7 @@ The following methods are available for working with WebHooks:
 
 ## General XML configuration
 
-```
+```http
  PUT /? Notification HTTP / 1.1
 Host: Bucket.hb.vkcs.cloud
 
@@ -55,7 +55,7 @@ Example: It is required to execute a request to url http://test.com with PutObje
 
 Inquiry:
 
-```
+```http
  PUT /? Notification HTTP / 1.1
 
 Host: bucketA.hb.vkcs.cloud
@@ -89,7 +89,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```http
  HTTP / 1.1 200 OK
 
 Date: Mon, 31 Aug 2020 17:31:43 GMT
@@ -105,7 +105,7 @@ Returns the current rule configuration (SimpleNotificationConfiguration) of the 
 
 Inquiry:
 
-```
+```http
  GET /? Notification HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -118,7 +118,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```http
  HTTP / 1.1 200
 
 Date: Mon, 31 Aug 2020 17:31:43 GMT
@@ -170,7 +170,7 @@ Connection: close
 
 For an example of the established rules, when loading objects into bucketA with the names image / \*. Png, the following request will come:
 
-```
+```http
  POST <url> HTTP / 1.1
 x-amz-sns-messages-type: SubscriptionConfirmation
 
