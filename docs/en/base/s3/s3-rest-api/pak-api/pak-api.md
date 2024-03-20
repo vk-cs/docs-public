@@ -37,7 +37,7 @@ Connection: close
 
 **Answer**
 
-```http
+```xml
 HTTP / 1.1 200 OK
 
 Server: nginx / 1.12.1
@@ -85,7 +85,7 @@ Host: bucketName.hb.vkcs.cloud
 
 **Answer**
 
-```http
+```xml
 HTTP / 1.1 200 OK
 
 Server: nginx / 1.12.1
@@ -143,7 +143,7 @@ Host: bucketName.hb.vkcs.cloud
 
 **Answer**
 
-```http
+```xml
 HTTP / 1.1 200 OK
 
 Server: nginx / 1.12.1

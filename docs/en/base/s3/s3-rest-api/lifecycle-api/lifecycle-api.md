@@ -6,7 +6,7 @@ All available methods for working with object lifecycle:
 
 General view of the configuration
 
-```http
+```xml
  <LifecycleConfiguration>
 <Rule>
 <ID> Rule Description </ID>
@@ -51,7 +51,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```http
+```xml
  HTTP / 1.1 200 OK
 
 Date: Mon, 31 Aug 2020 17:44:35 GMT
@@ -89,7 +89,7 @@ The PUT operation creates a new lifecycle configuration for the bucket or replac
 
 Inquiry:
 
-```http
+```xml
  PUT /? Lifecycle HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud

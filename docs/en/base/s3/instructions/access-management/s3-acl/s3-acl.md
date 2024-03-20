@@ -10,7 +10,7 @@ By default, the created bucket or object gets a Private ACL, where the owner has
 
 When a container or object is created, the service creates a standard ACL that grants the resource owner full control over that resource and denies access to other projects. This is shown in the following bucket ACL example (the default object ACL has the same structure).
 
-```bash
+```xml
  <? xml version = "1.0" encoding = "UTF-8"?>
 <AccessControlPolicy xmlns = "http: // <bucket_name> .hb.vkcs.cloud / images / 01.jpg /">
 <Owner>
@@ -55,7 +55,7 @@ To grant access rights, you must specify each recipient as a type = value pair, 
 
 For example, the x-amz-grant-read header grants VK Cloud accounts identified by mcs_pid permissions to read object data and its metadata:
 
-```bash
+```xml
  x-amz-grant-read: emailAddress = "mcs1447309426", emailAddress = "mcs1380112926"
 ```
 
@@ -140,7 +140,7 @@ When granting access policy permission, you can use conditional keys to restrict
 
 ## ACL example
 
-```bash
+```xml
  <? xml version = "1.0" encoding = "UTF-8"?>
 <AccessControlPolicy xmlns = "http: // <bucket_name> .hb.vkcs.cloud / images / 01.jpg /">
 <Owner>

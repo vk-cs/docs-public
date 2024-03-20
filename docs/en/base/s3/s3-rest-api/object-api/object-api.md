@@ -112,7 +112,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20170710 / r
 
 Answer:
 
-```http
+```xml
  HTTP / 1.1 200 OK
 
 Date: Mon, 31 Aug 2020 20:22:54 GMT
@@ -196,7 +196,7 @@ For this request, the Content-MD5 and Content-Length headers are required, and t
 
 Inquiry:
 
-```http
+```xml
  DELETE /sammy.png HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -216,7 +216,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20170710 / r
 
 Answer:
 
-```http
+```xml
  HTTP / 1.1 204 No Content
 
 Date: Mon, 31 Aug 2020 19:44:09 GMT
