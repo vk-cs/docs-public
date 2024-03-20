@@ -9,7 +9,7 @@ The activity log stores the history of operations performed by VK Cloud componen
 - `magnum` — orchestration of K8s containers.
 - `iam` — managing users in the project (only available when contacting [technical support](/en/contacts/)).
 
-Log data can be useful both for internal analysis of incidents and when contacting [technical support](/en/contacts/).
+Log data can be useful both for internal analysis of incidents and when contacting technical support.
 
 ## Downloading the action log
 

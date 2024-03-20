@@ -227,12 +227,3 @@ To re-register a project to another organization:
 Copies are provided in PDF format.
 
 If you want to receive copies every reporting period, specify this in the request.
-
-## How to make a payment from a card in accounting documents for a legal entity?
-
-A payment made by any method other than bank transfer cannot be reflected in the expenses of a legal entity in [accounting documents](../../concepts/report). Such a payment can only be re-credited:
-
-1. Make a [refund](../../instructions/refund) payment via technical support.
-1. Top up the project balance by the same amount using a bank transfer.
-
-If any clarifications are required, contact [technical support](/en/contacts), inform [project ID (PID)](/en/base/account/instructions/project-settings/manage#getting_the_project_id) and [region](/en/base/account/concepts/regions).
