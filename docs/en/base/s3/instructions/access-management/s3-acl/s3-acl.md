@@ -63,7 +63,7 @@ For example, the x-amz-grant-read header grants VK Cloud accounts identified by 
 
 When granting other VK Cloud accounts access to their resources, please note that VK Cloud accounts can delegate their permissions to users under their own accounts. This is known as multi-account access.
 
-<warn>
+</warn>
 
 ## Canonical user ID
 

@@ -9,7 +9,7 @@ ACL (Access Control List) позволяет контролировать, ка�
 
 Общая XML структура конфигурации ACL:
 
-```xmlDoc
+```xml
 <AccessControlPolicy>
   <Owner>
     <ID>eab55955-ebdb-4f18-a94d-f3558ff150da</ID>
