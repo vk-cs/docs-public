@@ -9,7 +9,7 @@
 
     <info>
 
-    The **Email** field is disable to edit. To change the phone number, contact [technical support](/en/contacts).
+    To change the phone number or email, contact [technical support](/en/contacts).
 
     </info>
 

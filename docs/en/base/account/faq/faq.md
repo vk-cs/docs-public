@@ -31,12 +31,10 @@ The procedure is described in the article [Access management](../instructions/pr
 
 ## How do I change the phone number for an account?
 
-Send a request to [technical support](/en/contacts/), enter the data:
+Contact [technical support](/en/contacts/), enter the data:
 
-- current phone number;
-- new phone number.
-
-If the request was not sent from the mail of the project owner, wait for confirmation from the latter.
+- current phone number
+- new phone number
 
 The number will be changed after successful confirmation of the user's identity.
 

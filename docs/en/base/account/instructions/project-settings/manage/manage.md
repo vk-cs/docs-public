@@ -1,6 +1,6 @@
 ## Getting the Project ID
 
-Each project has a unique identifier (PID) of the form `mscNNNNNNNNNN`, for example, **msc0123456789**. It is assigned automatically and is used when contacting [technical support](/en/contacts/).
+Each project has a unique identifier (PID) of the form `mscNNNNNNNNNN`, for example, **msc0123456789**. It is assigned automatically and is used when contacting technical support.
 
 To get the PID:
 
@@ -112,7 +112,7 @@ Currently, transferring PaaS service objects between projects is not supported. 
 By contacting [technical support](/en/contacts), it is possible to transfer objects:
 
 - floating IP addresses;
-- addresses of the `ext-net` network.
+- addresses of the [external networks](/en/networks/vnet/concepts/net-types#external_network).
 
 ## Viewing project quotas
 
