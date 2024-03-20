@@ -15,7 +15,7 @@ To restore the services:
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
 1. [Making a payment](../../instructions/payment#making_a_payment) the balance of the main account of the project [in a convenient way](../../concepts/payment-methods/).
-1. Wait for the activation of services in the project. It can take up to 4 hours.
+1. Wait for the activation of services in the project. It can take up to 2 hours.
 1. Manually activate project resources:
 
    - [virtual machines](/en/base/iaas/instructions/vm/vm-manage#starting_stopping_reboot_the_vm);
