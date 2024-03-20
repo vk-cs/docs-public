@@ -48,7 +48,7 @@ Up to 3 banking days.
 
 The card may be required if you work on prepayment, and you need to top up your balance urgently — for example, to avoid project [freezing](/en/base/account/concepts/projects#automatic_freezing_of_the_project).
 
-Subsequently, a one-time payment from the card can be re-credited for correct reflection in [accounting documents](../../concepts/report).
+Write-offs for payments from bank cards are not included in [accounting documents for legal entities](../../concepts/report#composition_of_accounting_documents_55c18d7): billing report, reconciliation report.
 
 ## When and how will I receive the accounting documents after payment?
 

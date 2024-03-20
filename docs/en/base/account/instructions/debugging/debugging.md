@@ -1,4 +1,4 @@
-Information about events and errors that occurred during the operation of the service is stored in VK Cloud logs. This data is used by [technical support](/en/contacts/) when analyzing emerging incidents.
+Information about events and errors that occurred during the operation of the service is stored in VK Cloud logs. This data is used by technical support when analyzing emerging incidents.
 
 <info>
 
