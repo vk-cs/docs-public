@@ -27,12 +27,12 @@
 
 Далее ключи и значения меток можно использовать для построения запросов, которые фильтруют и группируют значения метрик. Например, можно построить такой запрос в формате ala PromQL:
 
-```
+```promql
 SUM BY(host) (cpu:Minimum{instance="<"span >"server1", app!="<"span >"system"})
 ```
 
-```
-SUM BY(job) (cpu:Average{host="<"span >"server1", job!="<"span >"system"}[12h] offset 24h
+```promql
+SUM BY(job) (cpu:Average{host="<"span >"server1", job!="<"span >"system"}[12h] offset 24h)
 ```
 
 ## Агрегация

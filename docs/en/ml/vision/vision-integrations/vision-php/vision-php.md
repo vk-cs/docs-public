@@ -1,6 +1,6 @@
 For a detailed example, see the article "[Python integration example](../vision-py/)". In this article, we will execute persons/recognize, persons/set, and persons/delete requests. This will require:
 
-```
+```bash
 sudo apt-get install php5-cli
 sudo apt-get install php5-curl
 ```

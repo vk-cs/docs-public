@@ -22,7 +22,7 @@ S3 CLI provides several options for loading objects:
 
 The following command copies the file to the specified bucket and sets the key:
 
-```
+```bash
  aws s3 cp test.txt s3: //mybucket/test2.txt --endpoint-url https://hb.vkcs.cloud
 ```
 
@@ -34,7 +34,7 @@ If objects already exist in the bucket, then the files are subject to synchroniz
 - Local file last modified time is newer than Cloud Storage object last modified time
 - Local file does not exist in the specified bucket
 
-```
+```bash
  aws s3 sync <local_path> s3: // <package_name> --endpoint-url https://hb.vkcs.cloud
 ```
 
