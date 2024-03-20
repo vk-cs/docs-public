@@ -31,7 +31,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```http
+```xml
  HTTP / 1.1 200 OK
 
 Content-Length: 258
@@ -89,7 +89,7 @@ It can take several minutes to process a request to complete a multipart upload.
 
 Inquiry:
 
-```http
+```xml
  POST /multipart-file.tar.gz?uploadId=2~iCw_lDY8VoBhoRrIJbPMrUqnE3Z-3Qh HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -116,7 +116,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```http
+```xml
  HTTP / 1.1 200 OK
 
 Content-Length: 311
@@ -178,7 +178,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```http
+```xml
  HTTP / 1.1 200 OK
 
 Content-Length: 0
