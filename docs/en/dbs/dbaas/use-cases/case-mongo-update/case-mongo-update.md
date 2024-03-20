@@ -23,7 +23,7 @@ Replicaset is multiple servers that contain the same set of data, provide failov
 1. Make sure port 27017 is open on all three servers.
 2. Make sure the name of each host (`mongo1.testdomain.com`, `mongo2.testdomain.com`, `mongoar.testdomain.com`) is known on each server. If the names are not registered in DNS, on each server, specify them in the `/etc/hosts` file. In our case:
 
-```
+```yaml
 10.0.0.2 mongo1 mongo1.testdomain.com
 10.0.0.3 mongo2 mongo2.testdomain.com
 10.0.0.4 mongoar mongoar.testdomain.com
@@ -31,7 +31,7 @@ Replicaset is multiple servers that contain the same set of data, provide failov
 
 3. Add the following to the `/etc/mongod.conf` configuration file in the `replication` section:
 
-```
+```yaml
 replication:
     replSetName: "rs0"
 security:
@@ -46,13 +46,13 @@ security:
 
 4. Restart `mongod`:
 
-```
+```sql
 root@mongo1:~# systemctl restart mongod.service
 ```
 
 5. Log into the `mongo` console and run the command:
 
-```
+```sql
 \> rs.initiate()
 {
     "info2" : "no configuration specified. Using a default configuration for the set",
@@ -67,7 +67,7 @@ rs0:PRIMARY>
 
 6. In the configuration file, in the `host` variable, instead of the value `mongo1:27017`, specify the CommonName value of the certificate:
 
-```
+```sql
 rs0:PRIMARY> cfg.members[0].host = "mongo1.testdomain.com:27017"
 mongo1.testdomain.com:27017
 rs0:PRIMARY> rs.reconfig(cfg)
@@ -91,7 +91,7 @@ rs0:PRIMARY>
 10. Copy the `/etc/ssl/mongoCA.pem` key to the current server.
 11. Issue the server certificate, just like on the `mongo1` server, using `mongo2.testdomain.com` as the CommonName:
 
-```
+```sql
 root@mongo2:~# openssl genrsa -out /tmp/mongo2.key 4096
 root@mongo2:~# openssl req -new -key /tmp/mongo2.key -out /tmp/mongo2.csr
 ...
@@ -107,7 +107,7 @@ root@mongo2:~# rm /tmp/mongo2.key /tmp/mongo2.crt /tmp/mongo2.csr
 14. Login to the `mongo1` server and log into the mongo console.
 15. Add the `mongo2` server to `replicaset`:
 
-```
+```sql
 root@mongo1:~# mongo --ssl --sslPEMKeyFile /etc/ssl/client.pem --sslCAFile /etc/ssl/mongoCA.pem --host mongo1.testdomain.com -u admin
 MongoDB shell version v4.0.14
 Enter password:
@@ -131,7 +131,7 @@ rs0:PRIMARY>
 
 16. Check the status of `replicaset`:
 
-```
+```sql
 rs0:PRIMARY> rs.status()
 {
     "set" : "rs0",
@@ -247,7 +247,7 @@ As you can see, the second node with `_id=1` is accepted into `Repliset` in the 
 
 When a node is added to `replicaset`, synchronization occurs with the primary node. Until the synchronization is completed, the second node will be in the STARTUP state. Writing data to the main node slows down the synchronization, however, this is a possible scenario (for example, when writing to the database, the database of about 350 GB was synchronized for about 14 hours).Once the synchronization is complete, on the third server (`mongoar`) do the same as on the second (`mongo2`), except for the step of adding the server to `repliset`:
 
-```
+```sql
 rs0:PRIMARY> rs.addArb("mongoar.testdomain.com:27017")
 {
 "ok" : 1,
@@ -265,7 +265,7 @@ rs0:PRIMARY>
 
 Check the status of `Repliset` (nothing is omitted from the output for brevity):
 
-```
+```sql
 rs0:PRIMARY> rs.status()
 {
 "set" : "rs0",
@@ -307,7 +307,7 @@ Let's consider an update using the transition from version 4.0 to version 4.2 as
 
 1. Change the `feature compatibility version` parameter to limit the version of MongoDB that can be used with the current dataset. To upgrade from version 4.0 to version 4.2, set it to 4.0:
 
-```
+```sql
 rs0:PRIMARY> db.adminCommand( { setFeatureCompatibilityVersion: "4.0" } )
 {
     "ok" : 1,
@@ -325,7 +325,7 @@ rs0:PRIMARY> db.adminCommand( { setFeatureCompatibilityVersion: "4.0" } )
 
 2. Check the result:
 
-```
+```sql
 rs0:PRIMARY> db.adminCommand( { getParameter: 1, featureCompatibilityVersion: 1 } )
 {
         "featureCompatibilityVersion" : {
@@ -345,7 +345,7 @@ rs0:PRIMARY> db.adminCommand( { getParameter: 1, featureCompatibilityVersion: 1 
 
 3. Connect the repository with the new version of MongoDB on all three servers (example for the first server):
 
-```
+```sql
 root@mongo1:~# wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt key add -
 OK
 root@mongo1:~# echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
@@ -357,7 +357,7 @@ root@mongo1:~# apt-get update
 
 4. Based on [documentation](https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority), into the configuration file [/etc/mongod.conf](./assets/mongod.conf_4 "download") add the option `enableMajorityReadConcern: false` and replace `net:ssl` with `net:tls` (arbiter example):
 
-```
+```yaml
 net:
   port: 27017
   bindIP: 0.0.0.0
@@ -374,7 +374,7 @@ enableMajorityReadConcern: false
 
 5. Update the arbiter node:
 
-```
+```sql
 root@mongoar:~# systemctl stop mongod.service
 root@mongoar:~# apt-get install -y mongodb-org mongodb-org-mongos mongodb-org-server mongodb-org-shell mongodb-org-tools
 root@mongoar:~# systemctl start mongod.service
@@ -382,7 +382,7 @@ root@mongoar:~# systemctl start mongod.service
 
 6. Check the status of `rs.status()`. Make sure the arbiter is running and see which of the two remaining nodes is `secondary` (command output shortened):
 
-```
+```sql
 rs0:PRIMARY> rs.status()
 {
     "set" : "rs0",
@@ -416,7 +416,7 @@ rs0:PRIMARY> rs.status()
 
 7. Currently `mongo2` server is `secondary`, update MongoDB on it:
 
-```
+```sql
 root@mongo2:~# systemctl stop mongod.service
 root@mongo2:~# apt-get install -y mongodb-org
 The following packages will be upgraded:
@@ -429,7 +429,7 @@ root@mongo2:~# systemctl start mongod.service
 
 8. Check `rs.status()` to make sure the node is running:
 
-```
+```sql
 rs0:PRIMARY> rs.status()
 {
     "set" : "rs0",
@@ -462,7 +462,7 @@ rs0:PRIMARY> rs.status()
 
 9. Force change the `primary` node to the one you have already updated (in our case, `mongo2`):
 
-```
+```sql
 rs0:PRIMARY> rs.stepDown()
 2019-12-27T12:25:10.922+0000 I NETWORK [js] DBClientConnection failed to receive message from mongo1.testdomain.com:27017 - SocketException: stream truncated
 2019-12-27T12:25:10.923+0000 E QUERY [js] Error: error doing query: failed: network error while attempting to run command 'replSetStepDown' on host 'mongo1.testdomain.com:27017' :
@@ -479,7 +479,7 @@ rs0:SECONDARY>
 10. Now the mongo1 node has become `secondary`, update it in the same way as the previous one.
 11. Check the status of `replicaset` after the update (output shortened):
 
-```
+```sql
 rs0:SECONDARY> rs.status()
 {
     "set" : "rs0",
@@ -534,7 +534,7 @@ rs0:SECONDARY>
 
 All completed successfully. If there is a need to preserve the order of the nodes that was before the update, go to the console of the current `primary` node (`mongo2`) and run the command:
 
-```
+```sql
 rs.stepDown()
 ```
 

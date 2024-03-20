@@ -20,7 +20,7 @@ After the initialization of the multipart download and the actual download of on
 
 Inquiry:
 
-```
+```http
  POST /multipart-file.tar.gz?uploads HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -31,7 +31,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```http
  HTTP / 1.1 200 OK
 
 Content-Length: 258
@@ -58,7 +58,7 @@ To ensure that the data is not tampered with as it travels over the network, you
 
 Inquiry:
 
-```
+```http
  PUT /multipart-file.tar.gz?partNumber=1&uploadId=2~iCw_lDY8VoBhoRrIJbPMrUqnE3Z-3Qh HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -70,7 +70,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```http
  HTTP / 1.1 200 OK
 
 Content-Length: 0
@@ -89,7 +89,7 @@ It can take several minutes to process a request to complete a multipart upload.
 
 Inquiry:
 
-```
+```http
  POST /multipart-file.tar.gz?uploadId=2~iCw_lDY8VoBhoRrIJbPMrUqnE3Z-3Qh HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -116,7 +116,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```http
  HTTP / 1.1 200 OK
 
 Content-Length: 311
@@ -140,7 +140,7 @@ The operation aborts the multipart download. After aborting a multipart download
 
 Inquiry:
 
-```
+```http
  DELETE /multipart-file.tar.gz?uploadId=2~iCw_lDY8VoBhoRrIJbPMrUqnE3Z-3Qh HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -152,7 +152,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```http
  HTTP / 1.1 200 OK
 
 Date: Mon, 31 Aug 2020 18:45:01 GMT
@@ -166,7 +166,7 @@ The operation returns a list of parts loaded for a specific multipart load. The 
 
 Inquiry:
 
-```
+```http
  PUT /multipart-file.tar.gz?partNumber=1&uploadId=2~iCw_lDY8VoBhoRrIJbPMrUqnE3Z-3Qh HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -178,7 +178,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```http
  HTTP / 1.1 200 OK
 
 Content-Length: 0

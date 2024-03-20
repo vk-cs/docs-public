@@ -8,7 +8,7 @@ List of available methods for CORS bucket configurations:
 
 ## General view of XML CORS configuration
 
-```
+```bash
  <CORSConfiguration>
 <CORSRule>
 <AllowedOrigin> URL </AllowedOrigin>
@@ -28,7 +28,7 @@ In order to use this operation, you must have WRITE_ACP write rights. The bucket
 
 Inquiry:
 
-```
+```bash
  GET /? Cors HTTP / 1.1
 
 
@@ -40,7 +40,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```bash
  HTTP / 1.1 200 OK
 
 
@@ -81,7 +81,7 @@ To enable cross-origin resource sharing (CORS) on a bucket, you need to add a CO
 
 Inquiry:
 
-```
+```bash
  PUT /? Cors HTTP / 1.1
 
 
@@ -114,7 +114,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```bash
  HTTP / 1.1 200 OK
 
 
@@ -133,7 +133,7 @@ In order to use this operation, you must have WRITE_ACP write rights.
 
 Inquiry:
 
-```
+```bash
  DELETE / static-images? Cors HTTP / 1.1
 
 
@@ -145,7 +145,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```bash
  HTTP / 1.1 204 No Content
 
 

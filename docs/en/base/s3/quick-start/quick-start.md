@@ -91,7 +91,7 @@
 
       Ссылка имеет следующий вид:
 
-      ```https
+      ```http
       https://hb.vkcs.cloud/<название бакета>/...?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=...%2F...%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=...&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=...
       ```
 
@@ -124,7 +124,7 @@
 
       Ссылка имеет следующий вид:
 
-      ```https
+      ```http
       https://<название бакета>.hb.vkcs.cloud/...
       ```
 
