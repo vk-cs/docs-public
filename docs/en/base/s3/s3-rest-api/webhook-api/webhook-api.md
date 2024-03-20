@@ -20,7 +20,7 @@ The following methods are available for working with WebHooks:
 
 ## General XML configuration
 
-```http
+```xml
  PUT /? Notification HTTP / 1.1
 Host: Bucket.hb.vkcs.cloud
 
@@ -55,7 +55,7 @@ Example: It is required to execute a request to url http://test.com with PutObje
 
 Inquiry:
 
-```http
+```xml
  PUT /? Notification HTTP / 1.1
 
 Host: bucketA.hb.vkcs.cloud
@@ -118,7 +118,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```http
+```xml
  HTTP / 1.1 200
 
 Date: Mon, 31 Aug 2020 17:31:43 GMT
