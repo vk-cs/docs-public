@@ -30,7 +30,7 @@
 
         Пример:
 
-        ```
+        ```http
         https://ml-platform-3c000000000000.ml.msk.vkcs.cloud/jh/user/admin/?token=000f00bdf7d00fbd0000000c0006ebfd
         ```
 
@@ -40,7 +40,7 @@
 
         В нашем примере это `admin`:
 
-        ```
+        ```http
         https://ml-platform-3c000000000000.ml.msk.vkcs.cloud/jh/user/admin/lab
         ```
 

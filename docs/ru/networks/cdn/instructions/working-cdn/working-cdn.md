@@ -20,7 +20,7 @@
 
 Пример в формате BIND ниже:
 
-```
+```bash
 $ORIGIN devmcs.ru. cdn CNAME cl-541e19d9.service.cdn.msk.vkcs.cloud.
 ```
 

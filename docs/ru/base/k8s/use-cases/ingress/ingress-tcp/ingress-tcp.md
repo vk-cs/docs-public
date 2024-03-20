@@ -104,15 +104,15 @@ deployment.apps/tea      3/3     3            3           ...
 
    Для проверки состояния Ingress-контроллера выполните команду:
 
-   ```
+   ```bash
    kubectl get svc -n example-nginx-ingress-tcp
    ```
 
    Вывод команды должен быть похож на этот:
 
    ```text
-   NAME                              TYPE           CLUSTER-IP    EXTERNAL-IP                             PORT(S)    AGE
-   nginx-ingress-tcp-nginx-ingress   LoadBalancer   ...           <назначенный балансирощику IP-адрес>    ...        ...
+   NAME                            TYPE     CLUSTER-IP    EXTERNAL-IP                PORT(S) AGE
+   nginx-ingress-tcp-nginx-ingress LoadBalancer ... <назначенный балансирощику IP-адрес> ... ...
    ```
 
 Проверьте работоспособность Ingress-контроллера, перейдя в браузере по адресу `http://<назначенный балансирощику IP-адрес>`. Если контроллер настроен корректно, отобразится страница со статусом `HTTP 404`.
