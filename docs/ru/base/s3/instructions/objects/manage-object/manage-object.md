@@ -396,7 +396,7 @@
 
    Пример ответа:
 
-   ```
+   ```bash
    https://hb.vkcs.cloud/dd-winscp/usetech.ico?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=4TucX9HhP8RZveR9Cb3vGr%2F20231113%2Fru-msk%2Fs3%2Faws4_request&X-Amz-Date=20231113T104239Z&X-Amz-Expires=300000&X-Amz-SignedHeaders=host&X-Amz-Signature=5a7c4d87d12dd12f8f420ffaed84328f1d6a79050818fd4c615b219ce7bc18e9
    ```
 
@@ -696,7 +696,7 @@
 
       Пример ответа:
 
-      ```
+      ```bash
       copy: s3://my-bucket/video.mp4 to s3://my-another-bucket/video.mp4
       copy: s3://my-bucket/pre/scheme.svg to s3://my-another-bucket/pre/scheme.svg
       copy: s3://my-bucket/picture.png to s3://my-another-bucket/picture.png

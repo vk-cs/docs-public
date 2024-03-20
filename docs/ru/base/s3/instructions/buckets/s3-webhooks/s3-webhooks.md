@@ -55,7 +55,7 @@
 
 Как выглядит этот запрос:
 
-```json
+```http
 POST / HTTP/1.1
 Host: ...
 X-Amz-Sns-Message-Type: SubscriptionConfirmation
@@ -71,7 +71,7 @@ X-Amz-Sns-Message-Type: SubscriptionConfirmation
 
 Как эта сигнатура считается:
 
-```
+```bash
 signature = HMAC-SHA256-HEX(Url, HMAC-SHA256(TopicArn, HMAC-SHA256(Time, Token)))
 ```
 
