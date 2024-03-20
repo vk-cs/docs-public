@@ -4,7 +4,7 @@
 
 Список бакетов можно получить следующим образом:
 
-```
+```python
 import boto3
 session = boto3.session.Session()
 s3_client = session.client(
