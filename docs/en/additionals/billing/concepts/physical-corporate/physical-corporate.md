@@ -121,7 +121,7 @@ It is recommended to pay for services by bank transfer, since only such payments
 
 <info>
 
-Legal entities can also top up the project balance with a bank card — for example, if you need to urgently transfer funds to avoid freezing the project. Subsequently, you can [re-credit](../../faq/qa-corporate#how_to_make_a_payment_from_a_card_in_accounting_documents_for_a_legal_entity) a one-time payment from the card for its correct reflection in the accounting documents.
+Legal entities can also top up the project balance with a bank card — for example, if you need to urgently transfer funds to avoid freezing the project. Write-offs for payments from bank cards are not included in [accounting documents for legal entities](../../concepts/report#composition_of_accounting_documents_55c18d7): billing report, reconciliation report.
 
 </info>
 
