@@ -22,7 +22,7 @@ Create user examplename with prefix keys to access the path exampleprefix. One s
 
 **Request**
 
-```
+```http
 PUT /? Pak & username = examplename & prefix = exampleprefix HTTP / 1.1
 Host: bucketName.hb.vkcs.cloud
 Date: Wed, 14 Feb 2018 11:21:57 GMT
@@ -37,7 +37,7 @@ Connection: close
 
 **Answer**
 
-```
+```xml
 HTTP / 1.1 200 OK
 
 Server: nginx / 1.12.1
@@ -69,7 +69,7 @@ X-req-id: 2NrqrYuki
 
 **Inquiries**
 
-```
+```http
 GET /? Pak & marker = prefix & max-keys = 2 & name-prefix = prefix HTTP / 1.1
 Authorization: authorization string
 Connection: close
@@ -85,7 +85,7 @@ Host: bucketName.hb.vkcs.cloud
 
 **Answer**
 
-```
+```xml
 HTTP / 1.1 200 OK
 
 Server: nginx / 1.12.1
@@ -128,7 +128,7 @@ X-req-id: 35RBZWzAX
 
 **Request**
 
-```
+```http
 DELETE /? Pak & prefix = prefix% 2Ffor1 & username = prefixusers% 2Fprefix% 2Ffor1 HTTP / 1.1
 Authorization: authorization string
 Connection: close
@@ -143,7 +143,7 @@ Host: bucketName.hb.vkcs.cloud
 
 **Answer**
 
-```
+```xml
 HTTP / 1.1 200 OK
 
 Server: nginx / 1.12.1

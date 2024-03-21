@@ -36,7 +36,7 @@ To deploy the demo applications:
 
 1. Apply this manifest to the cluster:
 
-   ``bash
+   ```bash
    kubectl apply -f ./cafe.yaml
    ```
 
@@ -126,7 +126,7 @@ deployment.apps/tea      3/3     3            3           ...
 
    To check the status of the Ingress Controller, run the command:
 
-   ```
+   ```bash
    kubectl get svc -n example-nginx-ingress-http
    ```
 

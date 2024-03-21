@@ -18,7 +18,7 @@ Pre-required:
 
 After binding, the bucket will be available via a link of the form:
 
-```
+```bash
  http: // <backet_name>. <website_address>. <domain_zone>
 ```
 
@@ -34,6 +34,6 @@ To install a personal SSL certificate, you should [contact technical support](/e
 
 After installing the certificate, the bucket will be available via a link of the form:
 
-```
+```bash
  https: // <packet_name>. <website_address>. <domain_zone>
 ```
