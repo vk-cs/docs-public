@@ -23,9 +23,9 @@ SELECT ID, name, AsText(geom) AS geom FROM gtest;
 The result should look something like this:
 
 ```sql
-id | name           | geom 
----+----------------+------------------------------
- 1 | First geometry | line(2 3,4 5,6 5,7 8) (1 row)
+ id | name           | geom 
+--- +----------------+------------------------------
+ 1  | First geometry | line(2 3,4 5,6 5,7 8) (1 row)
 ```
 
 ### How to insert a GIS object into a database?
