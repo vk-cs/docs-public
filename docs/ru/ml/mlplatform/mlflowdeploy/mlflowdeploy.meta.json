@@ -11,8 +11,8 @@
   "infobarItems": [
     {
       "text": "Управление с помощью Terraform",
-      "icon": "/docs/_icons/terraform_icon.svg",
-      "link": "/docs/ru/manage/tools-for-using-services/terraform/use-cases/mlplatform/deploymlflow"
+      "icon": "/_icons/terraform_icon.svg",
+      "link": "/docs/ru/manage/tools-for-using-services/terraform/use-cases/mlplatform/deploymlflow/"
     }],
   "uuid": "77116544-82da-41b3-a40a-863f8cd124f9"
 }
