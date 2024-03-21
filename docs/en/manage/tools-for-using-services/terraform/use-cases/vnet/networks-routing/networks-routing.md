@@ -94,7 +94,7 @@ Example Infrastructure:
    </tabpanel>
    <tabpanel>
 
-   From the document on [availability zones](/en/additionals/start/it-security/platform-security#availability_zones).
+   From the document on [availability zones](/en/additionals/start/architecture#availability_zones_567cfd7a).
 
    </tabpanel>
    </tabs>

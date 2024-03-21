@@ -95,3 +95,7 @@ Users access to databases is organized according to the role model of PostgreSQL
 ## Is it possible to use tags in Terraform?
 
 VK Cloud does not support tags in Terraform.
+
+## Is it possible to move the database to another project?
+
+Transferring PaaS service objects between projects is not supported. The virtual machine on which the database was deployed can only be transferred to another project as a regular virtual machine. It is not possible to migrate such a virtual machine as a database instance or create a database instance with a disk transferred from another project.

@@ -9,6 +9,11 @@ export const config = {
     breadcrumbs: {
         projectName: 'VK Cloud',
     },
+    layout: {
+        main: {
+            schema: 'LIST'
+        }
+    },
     contacts: {
         useNativeSupportUrl: false,
         url: 'https://support.mcs.mail.ru/login/oauth2/authorization/vkcloud',

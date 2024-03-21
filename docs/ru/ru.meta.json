@@ -1,12 +1,37 @@
 {
   "title": "Документация",
-  "faqLinks": [
-    "docs/ru/additionals/start",
-    "docs/ru/additionals/cases/migration",
-    "docs/ru/additionals/billing",
-    "docs/ru/additionals/start/it-security"
-  ],
   "serviceGroupLinks": [],
+  "intro": [
+    {
+      "title": "С чего начать",
+      "linkPartialPath": "/ru/additionals/start",
+      "description": "Информация о сервисах, работа с личным кабинетом, правовая информация и реквизиты",
+      "icon": "/ru/assets/start-icon.svg",
+      "iconMobile": "/ru/assets/start-icon-mobile.svg"
+    },
+    {
+      "title": "Миграция",
+      "linkPartialPath": "/ru/additionals/cases/migration",
+      "description": "Как мигрировать образ локальной виртуальной машины в проект VK Cloud",
+      "icon": "/ru/assets/migration-icon.svg",
+      "iconMobile": "/ru/assets/migration-icon-mobile.svg"
+    },
+    {
+      "title": "Биллинг",
+      "linkPartialPath": "/ru/additionals/billing",
+      "description": "Набор инструментов для учета использования ресурсов, оплаты и получения финансовых документов",
+      "icon": "/ru/assets/billing-icon.svg",
+      "iconMobile": "/ru/assets/billing-icon-mobile.svg"
+    },
+    {
+      "title": "Информационная безопаность",
+      "linkPartialPath": "/ru/additionals/start/it-security",
+      "description": "Решения VK Cloud по обеспечению безопасности использования платформы",
+      "icon": "/ru/assets/secure-icon.svg",
+      "iconMobile": "/ru/assets/secure-icon-mobile.svg"
+    }
+  ],
+
   "uuid": "8039e837-cbc5-4f10-8185-59be352f986e",
   "additionalUuids": [
     "b3f92ce8-83ce-4647-82d9-6ce8d1356b12",
