@@ -1,0 +1,12 @@
+{
+    "title": "Создание инстанса JupyterHub",
+    "pageDescription": "Пример создания инстанса JupyterHub с использованием Terraform.",
+    "shortDescription": "",
+    "metaTitle": "Создание инстанса JupyterHub",
+    "metaDescription": "Пример создания инстанса JupyterHub с использованием Terraform",
+    "sectionTitle": "Создание инстанса JupyterHub",
+    "markdown": "",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 1
+}
