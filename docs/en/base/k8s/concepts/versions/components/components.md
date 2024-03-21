@@ -22,13 +22,14 @@ These components are present in all Cloud Containers clusters.
 The necessary addons can be [installed](../../../operations/addons/manage-addons#installing_the_addon) in the cluster individually.
 
 <!-- prettier-ignore -->
-| Addon                                                                             | Kubernetes 1.21.4–1.22.x  | Kubernetes 1.24.x–1.27.x  |
-| --------------------------------------------------------------------------------- | ------------------------- | ------------------------- |
-| [cert-manager](https://github.com/cert-manager/cert-manager)                      | —         | 1.12.2    |
-| [Docker Registry](https://github.com/twuni/docker-registry.helm)                  | 2.2.2     | 2.2.2     |
-| [Fluent Bit for Cloud Logging (logaas-integration)](../../../operations/addons/advanced-installation/install-advanced-logaas-integration) | — | 0.34.2 |
-| [Ingress NGINX](https://github.com/kubernetes/ingress-nginx)                      | 4.1.4     | 4.1.4     |
-| [Istio](https://github.com/istio/istio)                                           | —         | 1.16.4    |
-| [Jaeger](https://github.com/jaegertracing/jaeger)                                 | —         | 0.71.4    |
-| [Kiali](https://github.com/kiali/kiali)                                           | –         | 1.59.1    |
-| [Kube Prometheus Stack](https://github.com/prometheus-operator/kube-prometheus)   | 36.2.0    | 36.2.0    |
+| Addon                                                                             | Kubernetes<br>1.21.4–1.22.x | 1.23.x–1.24.x | 1.25.x–1.26.x | 1.27.x |
+| --------------------------------------------------------------------------------- | --------------------------- | ------------- | ------------- | ------ |
+| [Capsule](https://github.com/projectcapsule/capsule)                              | —         | —         | 0.4.6     | 0.4.6     |
+| [cert-manager](https://github.com/cert-manager/cert-manager)                      | —         | 1.12.2    | 1.12.2    | 1.12.2    |
+| [Docker Registry](https://github.com/twuni/docker-registry.helm)                  | 2.2.2     | 2.2.2     | 2.2.2     | 2.2.2     |
+| [Fluent Bit для Cloud Logging<br>(logaas-integration)](../../../operations/addons/advanced-installation/install-advanced-logaas-integration) | — | 0.34.2 | 0.34.2 | 0.34.2 |
+| [Ingress NGINX](https://github.com/kubernetes/ingress-nginx)                      | 4.1.4     | 4.1.4     | 4.1.4     | 4.7.1     |
+| [Istio](https://github.com/istio/istio)                                           | —         | 1.16.4    | 1.16.4    | 1.19.3    |
+| [Jaeger](https://github.com/jaegertracing/jaeger)                                 | —         | 0.71.4    | 0.71.4    | 0.71.4    |
+| [Kiali](https://github.com/kiali/kiali)                                           | —         | 1.59.1    | 1.59.1    | 1.75.0    |
+| [Kube Prometheus Stack](https://github.com/prometheus-operator/kube-prometheus)   | 36.2.0    | 36.2.0    | 36.2.0    | 54.2.2    |

@@ -1,0 +1,11 @@
+<svg width="102" height="81" viewBox="0 0 102 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="26.2747" cy="26.4036" rx="25.2747" ry="25.3215" stroke="#D7DDE8" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="5.1 5.1"/>
+<rect x="57.6146" y="14.0693" width="43.5426" height="32.5921" rx="16" fill="#B5DCFF" stroke="black" stroke-width="1.4"/>
+<rect x="57.6146" y="46.7939" width="43.5426" height="32.5921" rx="16" fill="#B5DCFF" stroke="black" stroke-width="1.4"/>
+<rect x="15.5735" y="14.0693" width="75.0735" height="32.5921" rx="16" fill="#F6F7F9" stroke="black" stroke-width="1.4"/>
+<rect x="15.5735" y="46.7939" width="75.0735" height="32.5921" rx="16" fill="#F6F7F9" stroke="black" stroke-width="1.4"/>
+<path d="M38.5904 26.3163C37.9171 23.8805 35.689 22.0923 33.0436 22.0923C29.8651 22.0923 27.2884 24.6738 27.2884 27.8581C27.2884 28.0677 27.2998 28.2747 27.3217 28.4783C25.1787 28.9761 23.5813 30.9007 23.5813 33.1993C23.5813 35.8013 25.6283 37.924 28.1967 38.0401H28.2035C28.2747 38.0435 28.3463 38.0453 28.4183 38.0453C28.4904 38.0453 28.5661 38.0433 28.6394 38.0401L37.1521 38.0355C37.2636 38.0417 37.3762 38.0453 37.4894 38.0453C40.7507 38.0453 43.3946 35.3966 43.3946 32.1292C43.3946 29.2388 41.3254 26.833 38.5904 26.3163Z" stroke="#0077FF" stroke-width="1.4"/>
+<path d="M58.1151 26.605L51.6088 33.1234" stroke="#B5DCFF" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M67.6245 26.605L61.6186 33.1234" stroke="#B5DCFF" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M77.6342 26.605L71.1278 33.1234" stroke="#B5DCFF" stroke-width="1.4" stroke-linecap="round"/>
+</svg>
