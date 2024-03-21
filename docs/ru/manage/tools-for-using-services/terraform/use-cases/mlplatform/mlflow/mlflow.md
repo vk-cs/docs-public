@@ -60,10 +60,10 @@ resource "vkcs_mlplatform_mlflow" "mlflow" {
   - `flavor_id = data.vkcs_compute_flavor.basic.id` — значение берется из источника данных `vkcs_compute_flavor`. Далее показано, как его формировать.
   - `flavor_id = aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac` — указывается идентификатор типа ВМ, полученный через [OpenStack CLI](/ru/manage/tools-for-using-services/openstack-cli).
 
-- `jh_instance_id` — идентификатор инстанса JupiterHub для совместной работы:
+- `jh_instance_id` — идентификатор инстанса JupyterHub для совместной работы:
 
   - `jh_instance_id = vkcs_mlplatform_jupyterhub.jupyterhub.id` — создание нового инстанса, значение будет получено после создания ресурса `vkcs_mlplatform_jupyterhub`. Далее показано, как его создать.
-  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"` — указывается идентификатор существующего инстанса. Идентификатор доступен на странице инстанса JupiterHub в [личном кабинете VK Cloud](https://cloud.vk.com/app).
+  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"` — указывается идентификатор существующего инстанса. Идентификатор доступен на странице инстанса JupyterHub в [личном кабинете VK Cloud](https://cloud.vk.com/app).
 
 - `demo_mode` — демо-режим: если `true` все данные храняться на ВМ инстанса, если `false` — для хранения данных будет подключен бакет S3 с базой данных DBaaS Postgres.
 
@@ -85,9 +85,9 @@ data "vkcs_compute_flavor" "basic" {
 
 Указанный в файле тип ВМ будет использоваться создания для инстанса MLflow в вашем проекте Terraform.
 
-## 3. (Опционально) Создайте файл с описанием связанного инстанса JupiterHub
+## 3. (Опционально) Создайте файл с описанием связанного инстанса JupyterHub
 
-Создайте файл конфигурации Terraform `jh_instance.tf` c [описанием инстанса JupiterHub](../jupiterhub/).
+Создайте файл конфигурации Terraform `jh_instance.tf` c [описанием инстанса JupyterHub](../jupyterhub/).
 
 ## 4. (Опционально) Создайте файл с описанием сетевой инфраструктуры для кластера
 

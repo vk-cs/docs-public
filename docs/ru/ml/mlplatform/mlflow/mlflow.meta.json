@@ -8,6 +8,11 @@
   "markdown": "Этот раздел описывает принципы работы с сервисом MLflow, созданию и работе с инстансами MLflow.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null,
+  "infobarItems": [
+    {
+      "text": "Управление с помощью Terraform",
+      "icon": "/docs/_icons/terraform_icon.svg",
+      "link": "/docs/ru/manage/tools-for-using-services/terraform/use-cases/mlplatform/mlflow"
+    }],
   "uuid": "771f622f-35e9-407e-9379-c9143efe8886"
 }
