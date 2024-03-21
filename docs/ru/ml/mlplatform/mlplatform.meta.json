@@ -8,6 +8,11 @@
   "markdown": "Этот раздел описывает принципы работы с сервисом Cloud ML Platform, созданию и работе с инстансами JupyterHub и MLflow.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null,
+  "infobarItems": [
+    {
+      "text": "Управление с помощью Terraform",
+      "icon": "/docs/_docs/ru/manage/tools-for-using-services/terraform/assets/icon.svg",
+      "link": "../../manage/tools-for-using-services/terraform/use-cases/mlplatform/deploymlflow"
+    }],
   "uuid": "ab24a318-2169-471e-9f86-b5e68361cfdb"
 }
