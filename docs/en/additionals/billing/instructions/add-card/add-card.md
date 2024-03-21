@@ -16,7 +16,7 @@ Legal entities are recommended to pay for services using bank transfers. Card pa
 
 To bind the card:
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en/) VK Cloud.
+1. Go to your [personal account](https://cloud.vk.com/app/en/) VK Cloud.
 1. Open the project balance page in one of the following ways:
 
     - Click on the user name in the header of the page, select **Balance and payments** from the drop-down list.
@@ -55,7 +55,7 @@ In [region](/en/base/account/concepts/regions) Kazakhstan auto-completion is not
 
 To activate auto-completion:
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en/) VK Cloud.
+1. Go to your [personal account](https://cloud.vk.com/app/en/) VK Cloud.
 1. Open the project balance page in one of the following ways:
 
     - Click on the user name in the header of the page, select **Balance and payments** from the drop-down list.
@@ -79,6 +79,8 @@ To untie the card, contact [technical support](/en/contacts) and provide informa
 
 <info>
 
-If you are a legal entity and work on prepayment, leave the card as an additional means of payment for urgent payments. In emergency cases, a one-time card payment can be re-credited for correct reflection in the accounting documents, for details, contact [technical support](/en/contacts).
+If you are a legal entity and work on prepayment, leave the card as an additional means of payment for urgent payments. In emergency cases, a one-time card payment can help you to avoid project [freezing](/en/base/account/concepts/projects#automatic_freezing_of_the_project).
+
+Write-offs for payments from bank cards are not included in [accounting documents for legal entities](../../concepts/report#composition_of_accounting_documents_55c18d7): billing report, reconciliation report.
 
 </info>

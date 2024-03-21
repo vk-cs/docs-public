@@ -1,43 +1,72 @@
-## Availability zones
+To ensure a high level of security for the VK Cloud platform, the security measures and practices described below are used.
 
-VK Cloud platform resources are globally available to provide optimal cloud service levels. Each Availability Zone can consist of one or more datacenters with independent power, cooling, and network configurations.
+Additional information is available on the [Cloud Security](https://cloud.vk.com/cloud-security/) page.
 
-In contrast to using one data center, the presence of several allows you to provide an increased level of availability, fault tolerance and scalability for applications and databases in a production environment. VK Cloud Availability Zones are combined into a high-bandwidth, low-latency, redundant, dedicated fiber optic network that provides high-speed data transfer between Availability Zones.
+## Monitoring and countering attacks
 
-The performance of this network is sufficient for synchronous replication between AZs.
+Security Operations Center (SOC VK) provides monitoring of VK Cloud, analyzes security events of VK Cloud servers and identifies anomalies using a SIEM (Security Information and Event Management) class system.
 
-Availability Zones can be used to separate applications and provide uninterrupted access to them.
+The following mechanisms also work:
 
-VK Cloud platform resources are located in the following data centers:
+<tabs>
+<tablist>
+<tab>Antifraud</tab>
+<tab>Tracking for suspicious activity</tab>
+</tablist>
+<tabpanel>
 
-- in the Moscow [region](/en/base/account/concepts/regions):
+VK Cloud antifraud is a set of security measures and rules aimed at filtering automatic registrations of bots and users, as well as preventing potential attacks on the resources of the VK Cloud platform.
 
-  - GZ1 — the [Goznak](https://tech.goznak.ru/dc-goznak-moscow) data center. Address: Moscow, Prospekt Mira, 105, building 6.
-  - MS1 (ko1) — the [DataLine NORD4](https://www.dtln.ru/tsod-nord) data center. Address: Moscow, Korovinskoe highway, 41.
+When activating VK Cloud services, you may need to confirm user data. In this case, use one of the proposed methods of identity verification:
 
-- in the Kazakhstan region:
+- **Linking a bank card**. Link your card and, if necessary, pay for VK Cloud services.
+- **Company card (for legal entities)**. In your message, please attach a file with the details of the organization on whose behalf you are registering. The postal address must indicate the name or other details of the organization.
+- **Contact technical support**. Create an account activation request on the [technical support portal](/en/contacts/). Application category — account, group — activation and access.
 
-  - QAZ — the [QazCloud](https://qazcloud.kz) data center. Address: Republic of Kazakhstan, Akmola region, Kosshy, Republic str. 1.
+</tabpanel>
+<tabpanel>
 
-For projects in the Moscow region, you can choose the optimal data center according to technical considerations.
+Internet users and automated services have the right to complain both manually and automatically about suspicious activity originating from IP addresses belonging to VK Cloud. For example, suspicious activity may include accessing the same web page at short intervals, multiple password guessing attempts, etc.
 
-<info>
+To provide users with uninterrupted services, VK Cloud technical support promptly responds to such complaints.
 
-There are also resources that do not have AZs, such as an Cloud Storage bucket or a virtual network. For projects in the Moscow region, these resources are global (not bound to a zone).
+<warn>
 
-</info>
+The VK Cloud user will be sent a warning about the presence of a complaint about suspicious activity from an IP address included in his project. If there is no response within one day, the IP address can be disconnected from the virtual machine and removed from the project to eliminate suspicious activity.
 
-## Automigration
+</warn>
 
-Live VM migration is the process of moving virtual machines from one physical machine to another without affecting the availability of a virtual machine to users.
+Suspicious activity may be associated with an attacker gaining unauthorized access to a user's virtual machine. To reduce the risk of such a situation occurring, **follow safety rules**:
 
-The main goals of live migration include:
+- do not set simple passwords for accounts
+- do not provide uncontrolled access to project resources
+- be careful about the software you download and install on the virtual machine
+- scan virtual machines for malicious software or code
 
-1.  **Load balancing** . If in a network environment a server is overloaded with virtual machines, then some virtual machines can be migrated from it to reduce the load.
-2.  **Maintenance** . If a physical server requires any maintenance that requires downtime (for example, operating system updates, network configuration changes, etc.), then existing virtual machines running on that server can be moved to another physical machine, and, thus, can make these virtual machines available to users.
-3.  **Power management** . If some physical machines are underutilized, the virtual machines running on them can be migrated to other machines, and previous machines can be shut down to reduce power consumption.
-4.  **Fault tolerance** . If at some point the server malfunctions, the running virtual machines can be migrated to another machine, and the failed server will be investigated to find and fix the cause of the malfunctioning. Thus, the user experience of these virtual machines is not affected.
+</tabpanel>
+</tabs>
 
-## VK Cloud certification
+## Conducting security checks
 
-VK Cloud brings together all the best practices from 20 years of experience in creating public services and uses the infrastructure that has been tested on other VK Cloud services with a multi-million audience. Guaranteed reliability can be confirmed by VK Cloud certificates, which are available [here](https://cloud.vk.com/cloud-platform/certificates/).
+External inspections are carried out at least once a year with the participation of an external contractor. The check is carried out, among other things, using the model of an internal violator.
+
+VK Cloud also conducts its own information security audits and participates in Bug Bounty programs to find vulnerabilities:
+
+- [Standoff 365](https://bugbounty.standoff365.com/programs/vk_cs_vk).
+- [Bug Bounty Ru](https://bugbounty.ru/).
+- [BI.ZONE Bug Bounty](https://bugbounty.bi.zone/).
+
+This allows you to quickly identify and eliminate vulnerabilities in VK Cloud.
+
+## Applying secure development principles when building the platform
+
+- Information security training for platform developers.
+- Integration and automation of security tools and practices at all stages of the development and operation life cycle (DevSecOps).
+- Architectural review and security audit of each service.
+
+## Applying industry best practices
+
+- Isolation of VK Cloud segments and services from each other using a firewall.
+- Differentiation of access to VK Cloud resources using a role model at the Identity and Access Management (IAM) level.
+- Access to the platform is available only to a limited number of VK Cloud administrators with mandatory authentication. Trusted and secure hosts (jump hosts) are used for access.
+- Separation of responsibility for security between VK Cloud and the user (more details on the [Cloud Security](https://cloud.vk.com/cloud-security/) page).

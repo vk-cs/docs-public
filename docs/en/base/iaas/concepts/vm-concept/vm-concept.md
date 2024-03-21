@@ -50,11 +50,11 @@ VMs are grouped into categories in a personal account:
 | Intel Ice Lake (Intel Xeon Gen 3) | VMs located on servers with Intel Ice Lake CPU | Available by default |
 | Archived VM types (legacy)| Old VM configuration templates | Not displayed by default filtration |
 | High-performance CPU |  VMs located on [servers](#cpu_generations) with increased CPU clock speed | Displayed when ordering the types of VM through [technical support](/en/contacts) |
-| Virtual machines with GPU | VMs with connected [graphics card](../../../../ml/gpu/gpu-start/gpu-info/) | Displayed when ordering the types of VM through [technical support](/en/contacts) |
+| Virtual machines with GPU | VMs with connected [graphics card](../../../../ml/gpu/gpu-start/gpu-info/) | Displayed when ordering the types of VM through [cloud.vk.com](https://cloud.vk.com/en/) |
 | VMs with local disks | VMs with the ability to use local hypervisor disks | Displayed when ordering the types of VM through [technical support](/en/contacts) |
 | VMs located on dedicated servers | VMs located on hypervisors dedicated to the needs of one client | Displayed when ordering the types of VM through your manager |
 
-By default, only actual configuration templates are displayed: on servers with Intel Cascade Lake and Intel Ice Lake CPUs, as well as VMs with a connected graphics card, on high-performance or dedicated servers, if they were added to the project through [technical support](/en/contacts).
+By default, only actual configuration templates are displayed: on servers with Intel Cascade Lake and Intel Ice Lake CPUs, as well as VMs with a connected graphics card, on high-performance or dedicated servers, if they were added to the project.
 
 Select the **Archive VM types** category to find the old VM configuration templates. The server for VMs of the old configuration is selected randomly: Intel Cascade Lake or Intel Ice Lake, but [charged](../../tariffication/) at the price of Intel Ice Lake. If the server is unavailable (for example, during maintenance work), these VMs can move to a server of a different generation.
 
@@ -260,5 +260,3 @@ VK Cloud has the right to license software based on agreements with companies:
 - Astra Linux.
 
 For more information, see the [Licenses](../../license) section.
-
-Companies participating in the Microsoft Software Assurance program can use previously purchased licenses. To do this, go through the license check and [contact technical support](/en/contacts).
