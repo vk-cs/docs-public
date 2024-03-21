@@ -12,7 +12,7 @@
     {
       "text": "Управление с помощью Terraform",
       "icon": "/_icons/terraform_icon.svg",
-      "link": "../manage/tools-for-using-services/terraform/use-cases/mlplatform/jupyterhub"
+      "link": "../../../manage/tools-for-using-services/terraform/use-cases/mlplatform/jupyterhub"
     }],
   "uuid": "99a3a152-c351-4405-8bee-bcf9563cc5b3"
 }
