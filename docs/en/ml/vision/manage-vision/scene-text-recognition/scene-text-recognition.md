@@ -50,7 +50,7 @@ The method is subject to [restrictions](../../vision-limits#image_processing).
 
 ## Request example
 
-```curl
+```http
 curl -X 'POST' \
 curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<ваш токен>&oauth_provider=mcs" \
  -H "Accept: application/json" \
@@ -144,7 +144,7 @@ Parameters of `words`:
 
 Request example:
 
-```bash
+```http
 curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<token>&oauth_provider=mcs" \
  -H "Accept: application/json" \
  -H "Content-Type: multipart/form-data" \
@@ -174,7 +174,7 @@ Response example:
 
 Request example:
 
-```bash
+```http
 curl -X POST "https://smarty.mail.ru/api/v1/scene_text/recognize?oauth_token=<token>&oauth_provider=mcs" \
  -H "Accept: application/json" \
  -H "Content-Type: multipart/form-data" \

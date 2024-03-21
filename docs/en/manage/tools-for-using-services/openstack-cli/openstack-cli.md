@@ -229,7 +229,7 @@ Service names:
    <details>
    <summary>Example of the result of executing the command (shortened output)</summary>
 
-    ```
+    ```bash
     +------------------+------------------------------------------------------+
     | Field            | Value                                                |
     +------------------+------------------------------------------------------+
