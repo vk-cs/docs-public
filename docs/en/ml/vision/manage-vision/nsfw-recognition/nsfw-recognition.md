@@ -36,7 +36,7 @@ The method is subject to [restrictions](../../vision-limits#image_processing).
 
 ## Request example
 
-```bash
+```http
 curl -X POST "https://smarty.mail.ru/api/v1/adult/detect?oauth_token=your_token&oauth_provider=mcs" \
  -H "Accept: application/json" \
  -H "Content-Type: multipart/form-data" \

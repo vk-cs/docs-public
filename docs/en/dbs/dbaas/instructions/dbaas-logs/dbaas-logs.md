@@ -18,13 +18,13 @@
 
 Для получения логов необходимо подключиться по SSH и ввести следующую команду:
 
-```
+```bash
 \[admin@mysql-8658 ~\]journalctl -u mysqld
 ```
 
 Далее, ответом будут выведены логи:
 
-```
+```bash
 \-- Logs begin at Fri 2020-12-25 08:35:15 UTC, end at Mon 2021-01-11 18:41:34 UTC. --
 Dec 25 08:35:21 mysql-v5dot6-2020-11-30.novalocal systemd\[1\]: Starting MySQL Community Server...
 Dec 25 08:35:25 mysql-8658.novalocal mysql-systemd-start\[867\]: 2020-12-25 08:35:25 0 \[Warning\] TIMESTAMP with implicit D
@@ -61,13 +61,13 @@ lines 1-29
 
 Для получения логов необходимо подключиться по SSH и ввести следующую команду:
 
-```
+```bash
 \[admin@postgresql-9641 ~\]journalctl -u postgresql
 ```
 
 Далее, ответом будут выведены логи:
 
-```
+```bash
 \-- Logs begin at Fri 2020-12-25 07:48:19 UTC, end at Mon 2021-01-11 18:46:16 UTC. --
 Dec 25 07:48:25 postgresql-12-2020-12-11.novalocal systemd\[1\]: Starting PostgreSQL 12 database server...
 Dec 25 07:48:25 postgresql-12-2020-12-11.novalocal postmaster\[883\]: 2020-12-25 07:48:25.309 UTC \[883\] LOG:  starting Pos
@@ -104,13 +104,13 @@ lines 1-29
 
 Для получения логов необходимо подключиться по SSH и ввести следующую команду:
 
-```
+```bash
 \[admin@clickhouse5992 ~\]less /var/log/clickhouse-server/clickhouse-server.log
 ```
 
 Далее, ответом будут выведены логи:
 
-```
+```bash
 2020.12.25 20:27:13.406404 \[ 1025 \] {} <Information> SentryWriter: Sending crash reports is disabled
 2020.12.25 20:27:13.433539 \[ 1025 \] {} <Trace> Pipe: Pipe capacity is 1.00 MiB
 2020.12.25 20:27:13.583904 \[ 1025 \] {} <Information> : Starting ClickHouse 20.8.4.11 with revision 54438, no build id, PID 1025
@@ -136,13 +136,13 @@ lines 1-29
 
 Для получения логов необходимо подключиться по SSH и ввести следующую команду:
 
-```
+```bash
  \[admin@redis-4275 ~\]journalctl -u redis
 ```
 
 Далее, ответом будут выведены логи:
 
-```
+```bash
 \-- Logs begin at Mon 2021-01-11 15:45:47 UTC, end at Mon 2021-01-11 19:06:17 UTC. --
 Jan 11 15:45:47 redis-4275.novalocal redis-server\[1440\]: 1440:S 11 Jan 2021 15:45:47.013 \* MASTER <-> REPLICA sync start
 Jan 11 15:45:47 redis-4275.novalocal redis\[1440\]: MASTER <-> REPLICA sync started
@@ -179,13 +179,13 @@ lines 1-29
 
 Для получения логов необходимо подключиться по SSH и ввести следующую команду:
 
-```
+```bash
 \[admin@mongodb-5604 ~\]$ journalctl -u mongod
 ```
 
 Далее, ответом будут выведены логи:
 
-```
+```bash
 \-- Logs begin at Thu 2020-12-31 03:20:03 UTC, end at Mon 2021-01-11 19:09:03 UTC. --
 Dec 31 03:20:16 mongodb-5604.novalocal mongod.27017\[1718\]: 2020-12-31T03:20:16.602+0000 I NETWORK  \[listener\] connection
 Dec 31 03:20:16 mongodb-5604.novalocal mongod.27017\[1718\]: 2020-12-31T03:20:16.602+0000 I NETWORK  \[conn49341\] received

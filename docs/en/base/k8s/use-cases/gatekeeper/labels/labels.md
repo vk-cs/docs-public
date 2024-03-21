@@ -23,7 +23,7 @@ To demonstrate how Gatekeeper works, the following will be created:
 
    1. Create a restriction template based on the template manifest:
 
-      ``yaml
+      ```bash
       kubectl apply -f template.yaml
       ```
 

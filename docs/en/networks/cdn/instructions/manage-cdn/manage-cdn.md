@@ -70,8 +70,8 @@ Create a CNAME cdn record for the devmcs.ru domain zone directed to [ ] (in this
 
 An example in BIND format is below:
 
-```
- ORIGIN devmcs.ru.
+```bash
+ORIGIN devmcs.ru.
 cdn CNAME cl-0cc5e00c.gcdn.co.
 ```
 
