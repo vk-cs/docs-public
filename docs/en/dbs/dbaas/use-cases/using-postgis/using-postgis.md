@@ -3,7 +3,7 @@
 which will contain your GIS, you must create a table with a column of type _geometria_, which will include your GIS data. Connect to your database using PSQL and execute SQL:
 
 ```sql
-             CREATE A gtest TABLE ( ID int4, NAME varchar(20) ); SELECT AddGeometryColumn(", 'gtest','geom', -1,'LINESTRING',2);
+CREATE A gtest TABLE ( ID int4, NAME varchar(20) ); SELECT AddGeometryColumn(", 'gtest','geom', -1,'LINESTRING',2);
 ```
 
 If the geometry failed to add a column, then you probably haven't loaded functions and objects from PostGIS into your database. See the installation instructions.
@@ -23,7 +23,9 @@ SELECT ID, name, AsText(geom) AS geom FROM gtest;
 The result should look something like this:
 
 ```sql
-ID | name | Geom ---+------------------+----------------------------- 1 | First geometry | line(2 3,4 5,6 5,7 8) (1 row)
+id | name           | geom 
+---+----------------+------------------------------
+ 1 | First geometry | line(2 3,4 5,6 5,7 8) (1 row)
 ```
 
 ### How to insert a GIS object into a database?
