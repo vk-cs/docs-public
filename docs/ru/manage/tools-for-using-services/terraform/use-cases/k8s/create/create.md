@@ -51,7 +51,7 @@ resource "vkcs_networking_router_interface" "k8s" {
 В примерах ниже кластеры создаются в следующей конфигурации:
 
 - Регион `Москва`, зона доступности `GZ1`.
-- Версия Kubernetes `1.23`.
+- Версия Kubernetes `1.25`.
 
 - Один master-узел `STD3-4-8`.
 - Два worker-узла `STD2-2-4`:
@@ -88,7 +88,7 @@ data "vkcs_compute_flavor" "k8s-node-group-flavor" {
 }
 
 data "vkcs_kubernetes_clustertemplate" "k8s-template" {
-    version = "1.23"
+    version = "1.25"
 }
 
 resource "vkcs_kubernetes_cluster" "k8s-cluster" {
@@ -156,7 +156,7 @@ data "vkcs_compute_flavor" "k8s-node-group-flavor" {
 }
 
 data "vkcs_kubernetes_clustertemplate" "k8s-template" {
-    version = "1.23"
+    version = "1.25"
 }
 
 resource "vkcs_kubernetes_cluster" "k8s-cluster" {
@@ -230,7 +230,7 @@ data "vkcs_compute_flavor" "k8s-node-group-flavor" {
 }
 
 data "vkcs_kubernetes_clustertemplate" "k8s-template" {
-    version = "1.23"
+    version = "1.25"
 }
 
 resource "vkcs_kubernetes_cluster" "k8s-cluster" {
