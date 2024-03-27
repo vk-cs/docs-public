@@ -2,7 +2,7 @@
 
 Увеличить диск можно при помощи панели VK Cloud в разделе **Виртуальные машины** или **Диски** раздела **Облачные вычисления**.
 
-Полная информация доступна в статье [Управление дисками](../../instructions/vm-volumes#uvelichenie_razmera_diska_s_perezagruzkoy_vm).
+Полная информация доступна в статье [Управление дисками](../../instructions/volumes#uvelichenie_razmera_diska_s_perezagruzkoy_vm).
 
 ## Не удается уменьшить диск
 
@@ -26,7 +26,7 @@
 
 <info>
 
-Чтобы увеличить производительность, можно [увеличить размер](../../instructions/vm-volumes#uvelichenie_razmera_diska_s_perezagruzkoy_vm) или [изменить тип](../../instructions/vm-volumes#izmenenie_tipa_diska) диска.
+Чтобы увеличить производительность, можно [увеличить размер](../../instructions/volumes#uvelichenie_razmera_diska_s_perezagruzkoy_vm) или [изменить тип](../../instructions/volumes#izmenenie_tipa_diska) диска.
 
 </info>
 
@@ -36,11 +36,11 @@
 
 ## Не могу удалить диск
 
-Убедитесь, что диск [отключен](../../instructions/vm-volumes#otklyuchenie_diska_ot_vm) от ВМ — после этого удалите диск в разделе **Облачные вычисления** → **Диски**.
+Убедитесь, что диск [отключен](../../instructions/volumes#otklyuchenie_diska_ot_vm) от ВМ — после этого удалите диск в разделе **Облачные вычисления** → **Диски**.
 
 ## Как передать диск ВМ другому проекту?
 
-Воспользуйтесь [инструкцией](../../instructions/vm-volumes#peremeshchenie_diskov_mezhdu_proektami).
+Воспользуйтесь [инструкцией](../../instructions/volumes#peremeshchenie_diskov_mezhdu_proektami).
 
 ## Как загрузить свой образ ОС?
 
@@ -48,15 +48,15 @@
 
 ## Как поменять корневой (root) диск ВМ?
 
-Замена корневого диска возможна, только если в проекте VK Cloud уже был создан другой диск. Это может быть как пустой диск, так и загрузочный, содержащий операционную систему. Инструкция приведена в статье о [замене root-диска](../../instructions/vm-volumes#zamena_osnovnogo_root_diska).
+Замена корневого диска возможна, только если в проекте VK Cloud уже был создан другой диск. Это может быть как пустой диск, так и загрузочный, содержащий операционную систему. Инструкция приведена в статье о [замене root-диска](../../instructions/volumes#zamena_osnovnogo_root_diska).
 
 ## Можно ли создать снимок диска?
 
-Создание снимка диска доступно [в личном кабинете или через OpenStack CLI](../../instructions/vm-volumes#snimki_diska). Созданный снимок будет храниться до момента удаления самого диска.
+Создание снимка диска доступно [в личном кабинете или через OpenStack CLI](../../instructions/volumes#snimki_diska). Созданный снимок будет храниться до момента удаления самого диска.
 
 ## Как восстановить диск из снимка?
 
-Воспользуйтесь [инструкцией](../../instructions/vm-volumes#snimki_diska).
+Воспользуйтесь [инструкцией](../../instructions/volumes#snimki_diska).
 
 ## С какой скоростью изменяется тип диска?
 

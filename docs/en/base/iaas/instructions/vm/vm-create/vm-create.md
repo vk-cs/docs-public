@@ -11,7 +11,7 @@ The account balance should be positive, and [quotas](/en/base/account/concepts/q
 
 The VK Cloud team has prepared images of some operating systems. The list of ready-made images is available in your personal account in the [window for creating a new instance](https://msk.cloud.vk.com/app/en/services/infra/servers/add).
 
-If necessary, you can [import an OS image](../../vm-images/vm-images-manage#exporting_an_image) by yourself.
+If necessary, you can [import an OS image](../../images/images-manage#exporting_an_image) by yourself.
 
 ## Create a VM
 
@@ -39,7 +39,7 @@ The available fields may differ for different operating systems.
      - **Number of machines in configuration**: specify the desired number of VM.
      - **Disk size**: specify the desired VM disk size in gigabytes.
      - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](../../../concepts/vm-concept#disks).
-     - **Operating system**: select the operating system version or [previously created image](../../vm-images/vm-images-manage/).
+     - **Operating system**: select the operating system version or [previously created image](../../images/images-manage/).
      - **Enable monitoring**: enable to use [monitoring tools](/en/manage/monitoring/monitoring-info).
      - **Tags**: if necessary, [specify the tag](../vm-manage#assigning_tags) for the VM or create a new one.
 5. Click **Next step**.
