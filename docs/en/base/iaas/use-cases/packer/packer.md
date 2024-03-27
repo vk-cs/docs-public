@@ -50,7 +50,7 @@ Use the utility `qemu-img`:
 
 ## 2. Upload the base image to the cloud
 
-Import the image according to [instructions](../../instructions/vm-images/vm-images-manage#importing_an_image).
+Import the image according to [instructions](../../instructions/images/images-manage#importing_an_image).
 
 ## 3. Create a Packer configuration file
 
@@ -151,7 +151,7 @@ Import the image according to [instructions](../../instructions/vm-images/vm-ima
 
 ## 5. Complete the image setup
 
-1. Set [meta tags](../../instructions/vm-images/vm-image-metadata/) to the created image using the command:
+1. Set [meta tags](../../instructions/images/image-metadata/) to the created image using the command:
 
     ```bash
     openstack image set \
@@ -225,4 +225,4 @@ Import the image according to [instructions](../../instructions/vm-images/vm-ima
 
 ## Delete unused resources
 
-If you no longer need the image, [delete it](../../instructions/vm-images/vm-images-manage#deleting_an_image).
+If you no longer need the image, [delete it](../../instructions/images/images-manage#deleting_an_image).
