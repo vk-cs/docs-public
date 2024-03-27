@@ -136,7 +136,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 DELETE /multipart-file.tar.gz?uploadId=2~iCw_lDY8VoBhoRrIJbPMrUqnE3Z-3Qh HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
 Content-Length: 5242880
@@ -160,7 +160,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 GET /?uploads&delimiter=Delimiter&encoding-type=EncodingType&key-marker=KeyMarker&max-uploads=MaxUploads&prefix=Prefix&upload-id-marker=UploadIdMarker HTTP/1.1
 
 PUT /multipart-file.tar.gz?partNumber=1&uploadId=2~iCw_lDY8VoBhoRrIJbPMrUqnE3Z-3Qh HTTP/1.1
