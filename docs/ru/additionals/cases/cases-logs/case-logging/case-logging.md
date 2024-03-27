@@ -25,45 +25,45 @@
 1.  Выполните логин на сервере Ubuntu с правами root.
 2.  Импортируйте ключ репозитория Elasticsearch:
 
-```
+```bash
 root@ubuntu-std1-1:~# wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 OK
 ```
 
 3.  Установите apt-transport-https:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get install apt-transport-https
 ```
 
 4.  Добавьте репозиторий:
 
-```
+```bash
 root@ubuntu-std1-1:~# echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
 deb https://artifacts.elastic.co/packages/7.x/apt stable main
 ```
 
 5.  Установите Elasticsearch:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get update && apt-get install elasticsearch
 ```
 
 6.  Установите Kibana:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get install kibana
 ```
 
 7.  Для работы Logstash установите OpenJDK:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get install openjdk-8-jre
 ```
 
 8.  Установите Logstash:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get install logstash
 
 ```
@@ -85,14 +85,14 @@ Elasticsearch настраивается с использованием тре�
 
 По умолчанию Heap Size составляет 1 ГБ. Если объем памяти на сервере позволяет, увеличьте это значение ([подробнее о Heap Size](https://www.elastic.co/guide/en/elasticsearch/reference/current/heap-size.html)). Для этого найдите строки:
 
-```
+```txt
 Xms1g
 Xmx1g
 ```
 
 и замените их, например, на строки:
 
-```
+```txt
 Xms4g
 Xmx4g
 ```
@@ -110,13 +110,13 @@ Xmx4g
 
 Запустите Elasticsearch:
 
-```
+```bash
 root@ubuntu-std1-1:~# systemctl start elasticsearch.service
 ```
 
 Если вы указали слишком большое значение Heap Size, запуск завершится неудачей. При этом в логах будет следующее:
 
-```
+```bash
 root@ubuntu-std1-1:~# systemctl start elasticsearch.service
 Job for elasticsearch.service failed because the control process exited with error code.
 See "systemctl status elasticsearch.service" and "journalctl -xe" for details.
@@ -133,7 +133,7 @@ Nov 12 12:48:12 ubuntu-std1-1 elasticsearch[29841]: # /var/log/elasticsearch/hs_
 
 В случае успешного запуска добавьте Elasticsearch в список процессов, запускаемых автоматически:
 
-```
+```bash
 root@ubuntu-std1-1:~# systemctl enable elasticsearch.service
 Synchronizing state of elasticsearch.service with SysV service script with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable elasticsearch
@@ -142,7 +142,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/elasticsearch.servic
 
 Убедитесь, что Elasticsearch отвечает на запросы:
 
-```
+```bash
 root@ubuntu-std1-1:~# curl http://localhost:9200
 {
 "name" : "ubuntu-std1-1",
@@ -169,13 +169,13 @@ root@ubuntu-std1-1:~# curl http://localhost:9200
 
 1.  Запустите Kibana:
 
-```
+```bash
 root@ubuntu-std1-1:/etc/kibana# systemctl start kibana.service
 ```
 
 2.  Добавьте Kibana в список приложений, запускаемых автоматически:
 
-```
+```bash
 root@ubuntu-std1-1:/etc/kibana# systemctl enable kibana.service
 Synchronizing state of kibana.service with SysV service script with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable kibana
@@ -198,13 +198,13 @@ Executing: /lib/systemd/systemd-sysv-install enable kibana
 
 1.  Установите Nginx:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get install nginx
 ```
 
 2.  Убедитесь, что в конфигурационном файле /etc/elasticsearch/elasticsearch.yml параметр network.host имеет значение 127.0.0.1 или localhost. При необходимости выполните эту настройку и перезапустите демон elasticsearch:
 
-```
+```bash
 root@ubuntu-std1-1:~# cat /etc/elasticsearch/elasticsearch.yml  | grep network.host
 network.host: 127.0.0.1
 root@ubuntu-std1-1:~# systemctl restart elasticsearch.service
@@ -212,7 +212,7 @@ root@ubuntu-std1-1:~# systemctl restart elasticsearch.service
 
 3.  Убедитесь, что в конфигурационном файле /etc/kibana/kibana.yml параметр server.host имеет значение 127.0.0.1 или localhost. При необходимости выполните эту настройку и перезапустите демон kibana:
 
-```
+```bash
 root@ubuntu-std1-1:~# cat /etc/kibana/kibana.yml  | grep server.host
 server.host: "127.0.0.1"
 # When this setting's value is true Kibana uses the hostname specified in the server.host
@@ -221,7 +221,7 @@ root@ubuntu-std1-1:~# systemctl restart kibana.service
 
 4.  Убедитесь, что Elasticsearh и Kibana использовали интерфейс 127.0.0.1:
 
-```
+```bash
 root@ubuntu-std1-1:~# netstat -tulpn | grep 9200
 tcp6 0 0 127.0.0.1:9200 :::\* LISTEN 10512/java
 root@ubuntu-std1-1:~# netstat -tulpn | grep 5601
@@ -230,7 +230,7 @@ tcp        0      0 127.0.0.1:5601          0.0.0.0:\*               LISTEN     
 
 5.  В /etc/nginx/sites-available создайте файл kibana.conf и добавьте в него следующее:
 
-```
+```nginx
 server {
 listen <внешний IP-адрес сервера с Kibana и Nginx>:5601;
 server_name kibana;
@@ -253,19 +253,19 @@ proxy_set_header Host $http_host;
 
 6.  Укажите имя пользователя (USER) и пароль (PASSWORD):
 
-```
+```bash
 root@ubuntu-std1-1:/etc/nginx# printf "USER:$(openssl passwd -crypt PASSWORD)\n" >> /etc/nginx/htpasswd
 ```
 
 7.  Для включения сайта создайте симлинк в папку /etc/nginx/sites-enabled:
 
-```
+```bash
 root@ubuntu-std1-1:~# ln -s /etc/nginx/sites-available/kibana.conf /etc/nginx/sites-enabled/kibana.conf
 ```
 
 8.  Запустите Nginx:
 
-```
+```bash
 root@ubuntu-std1-1:~# systemctl start nginx 
 ```
 
@@ -296,13 +296,13 @@ Beats - часть инфраструктуры Elasticsearch, так назыв
 
 1.  Установите Filebeat:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get install filebeat
 ```
 
 2.  Разрешите обработку логов Nginx:
 
-```
+```bash
 root@ubuntu-std1-1:~# mv /etc/filebeat/modules.d/nginx.yml.disabled /etc/filebeat/modules.d/nginx.yml
 ```
 
@@ -312,7 +312,7 @@ root@ubuntu-std1-1:~# mv /etc/filebeat/modules.d/nginx.yml.disabled /etc/filebea
 
 3.  Приведите файл /etc/filebeat/modules.d/nginx.yml к следующему виду:
 
-```
+```yaml
 # Module: nginx
 # Docs: https://www.elastic.co/guide/en/beats/filebeat/7.4/filebeat-module-nginx.html
 
@@ -338,7 +338,7 @@ var.paths:
 
 4.  В файле /etc/filebeat/filebeat.yml отредактируйте секцию setup.kibana:
 
-```
+```yaml
 setup.kibana:
   host: "<IP-адрес сервера с Kibana>:5601"
   username: "логин"
@@ -353,7 +353,7 @@ setup.kibana:
 
 5.  Логи будут пересылаться в Logstash, поэтому закомментируйте секцию output.elasticsearch и укажите IP-адрес сервера, на котором расположен Logstash, в секции output.logstash:
 
-```
+```yaml
 #-------------------------- Elasticsearch output ------------------------------
 #output.elasticsearch:
 # Array of hosts to connect to.
@@ -382,7 +382,7 @@ hosts: ["<IP-адрес сервера logstash>:5044"]
 
 6.  Убедитесь, что в конфигурационном файле нет ошибок:
 
-```
+```bash
 root@ubuntu-std1-1:/etc/filebeat# filebeat test config -c /etc/filebeat/filebeat.yml
 Config OK
 ```
@@ -399,7 +399,7 @@ Config OK
 
 1.  Создайте файл /etc/logstash/conf.d/input-beats.conf, содержащий номер порта, на который Beats (в частности, Filebeat) присылает свои логи:
 
-```
+```log
 input {
 beats {
 port => 5044
@@ -409,7 +409,7 @@ port => 5044
 
 2.  Создайте файл /etc/logstash/conf.d/output-elasticsearch.conf и укажите, что логи нужно отправлять в Elasticsearch по адресу localhost и индексы нужно именовать в формате nginx-<дата> (то есть каждый день будет создаваться новый индекс, это удобно для анализа):
 
-```
+```log
 output {
 elasticsearch {
 hosts => [ "localhost:9200" ]
@@ -421,7 +421,7 @@ hosts => [ "localhost:9200" ]
 
 3.  Создайте файл /etc/logstash/conf.d/filter-nginx.conf следующего содержания:
 
-```
+```log
 filter {
  if [event][dataset] == "nginx.access" {
    grok {
@@ -460,7 +460,7 @@ Filebeat, который будет пересылать логи Nginx в Logst
 
 Секция  useragent заполняет поля по полю из лога. Обратите внимание, что обычно в подобных руководствах используется поле agent. Это поле не будет работать в связке Filebeat + Logstash, так как оно предназначено для использования при прямой записи из Filebeat в Elasticsearh. При использовании в Logstash будет выдаваться ошибка:
 
-```
+```txt
 [2019-11-19T09:55:46,254][ERROR][logstash.filters.useragent][main] Uknown error while parsing user agent data {:exception=>#<TypeError: cannot convert instance of class org.jruby.RubyHash to class java.lang.String>, :field=>"agent", :event=>#<LogStash::Event:0x1b16bb2>}
 ```
 
@@ -468,7 +468,7 @@ Filebeat, который будет пересылать логи Nginx в Logst
 
 Для отслеживания ошибок в Logstash включите дебаг. Для этого в секцию output добавьте следующую строку:
 
-```
+```bash
 stdout { codec => rubydebug }
 ```
 
@@ -476,7 +476,7 @@ stdout { codec => rubydebug }
 
 4.  Запустите Logstash и добавьте его в список приложений для автоматического запуска:
 
-```
+```bash
 root@ubuntu-std1-1:~# systemctl start logstash
 root@ubuntu-std1-1:~# systemctl enable logstash
 Created symlink /etc/systemd/system/multi-user.target.wants/logstash.service → /etc/systemd/system/logstash.service.
@@ -484,14 +484,14 @@ Created symlink /etc/systemd/system/multi-user.target.wants/logstash.service →
 
 5.  Убедитесь, что сервис запустился:
 
-```
+```bash
 root@ubuntu-std1-1:~# netstat -tulpn | grep 5044
 tcp6       0      0 :::5044                 :::\*                    LISTEN      18857/java
 ```
 
 6.  Протестируйте работу Filebeat:
 
-```
+```bash
 root@ubuntu-std1-1:~# service filebeat start
 ```
 
