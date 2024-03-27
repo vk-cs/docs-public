@@ -21,7 +21,7 @@
 
 Запрос:
 
-```
+```xml
 ...
 GET /example.txt HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -33,7 +33,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20170710/ru-msk/
 
 Ответ:
 
-```
+```xml
 ...
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 19:05:39 GMT
@@ -61,7 +61,7 @@ Cloud Storage добавляет объекты частично, если ра�
 
 Запрос:
 
-```
+```xml
 ...
 PUT /example.txt HTTP/1.1
 Content-Length: 14
@@ -79,7 +79,7 @@ Example text.
 
 Ответ:
 
-```
+```xml
 ...
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 19:46:06 GMT
@@ -104,7 +104,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 ...
 PUT /copied-example.txt HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -118,7 +118,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20170710/ru-msk/
 
 Ответ:
 
-```
+```xml
 ...
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 20:22:54 GMT
@@ -147,7 +147,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 ...
 HEAD /example.txt HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -159,7 +159,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20170710/ru-msk/
 
 Ответ:
 
-```
+```xml
 ...
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 18:51:58 GMT
@@ -179,7 +179,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 ...
 DELETE /sammy.png HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -191,7 +191,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20170710/ru-msk/
 
 Ответ:
 
-```
+```xml
 ...
 HTTP/1.1 204 No Content
 Date: Mon, 31 Aug 2020 19:44:09 GMT
@@ -208,7 +208,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 ...
 DELETE /sammy.png HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -232,7 +232,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20170710/ru-msk/
 
 Ответ:
 
-```
+```xml
 ...
 HTTP/1.1 204 No Content
 Date: Mon, 31 Aug 2020 19:44:09 GMT
