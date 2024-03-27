@@ -18,7 +18,7 @@ For this:
 
 2. Copy the registration token and run the following in the console on the server where GitLab-runner is installed:
 
-```
+```bash
 root@ubuntu-std3-2-4-40gb:~# docker exec -it gitlab-runner gitlab-runner register -n --url https://<SERVER_DNS_NAME>/ --executor docker --registration-token ua2k238fbMtAxMBBRf_z -- description "shared-runner" --docker-image="docker:dind" --tag-list "shared_runner" --docker-privileged --docker-volumes /var/run/docker.sock:/var/run/docker .sock
 ```
 
@@ -28,7 +28,7 @@ root@ubuntu-std3-2-4-40gb:~# docker exec -it gitlab-runner gitlab-runner registe
 
 \--tag-list - specifies the tags that runner will accept. Further in the project, this tag is specified so that the project is assembled by this runner.
 
-\--docker-privileged and --docker-volumes are required for the running Docker container to have access to the parent Docker to build images (details [read here](https://docs.gitlab.com/ee/ci/docker /using_docker_build.html)).
+\--docker-privileged and --docker-volumes are required for the running Docker container to have access to the parent Docker to build images (details [read here](https://docs.gitlab.com/ee/ci/docker/using_docker_build.html)).
 
 </warn>
 
@@ -57,7 +57,7 @@ Please note that Masked is enabled for the password - thanks to this, when you t
 
 Go to the folder with the downloaded repository and in a text editor create a `.gitlab-ci.yml` file with the following content:
 
-```
+```yaml
 image:docker:latest
 
 stages:
@@ -104,6 +104,7 @@ Variables used for work:
 
 - before_script - the stage that is executed first. We log in to the register using the variables that are specified in the GitLab runner settings.
 - build - image build. Standard build of a Docker image using a Dockerfile in the repository.
+
 <warn>
 
 **Important!**
@@ -116,7 +117,7 @@ Variables used for work:
 
 Upload the created file to the repository:
 
-```
+```bash
 ash-work:k8s-conf-demo git add .
 ash-work:k8s-conf-demo git commit -m "create .gitlab-ci.yml"
 [master 55dd5fa] create .gitlab-ci.yml
@@ -162,13 +163,13 @@ After the cluster is deployed in the cloud, a configuration file of the form `ku
 
 1. Connect the configuration file:
 
-```
+```bash
 ash-work:~ export KUBECONFIG=kubernetes-cluster-5011_kubeconfig.yaml
 ```
 
 2. Make sure that authorization is successful and the cluster is healthy:
 
-```
+```bash
 ash-work:~ kubectl cluster-info
 Kubernetes master is running at https://89.208.197.244:6443
 CoreDNS is running at https://89.208.197.244:6443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
@@ -180,7 +181,7 @@ The cluster responds.
 
 3 Grant the cluster access rights to the Harbor image repository. To do this, create the following secret:
 
-```
+```bash
 ash-work:~ kubectl create secret docker-registry myprivateregistry --docker-server=https://<SERVER_DNS_NAME>:8443 --docker-username=k8s --docker-password=<PASSWORD>
 secret/myprivateregistry created.
 ```
@@ -188,14 +189,14 @@ where `<SERVER_DNS_NAME>` is the Harbor server name, `<PASSWORD>` is the Harbor 
 
 4. Verify that the secret was successfully created:
 
-```
+```bash
 ash-work:~ kubectl get secret myprivateregistry --output="jsonpath={.data.\.dockerconfigjson}" | base64 --decode
 {"auths":{"https://<SERVER_DNS_NAME>:8443":{"username":"k8s","password":"<PASSWORD>","auth":"sdasdsdsdsdsdsdsdsdsdssd=="}}}%
 ```
 
 5. Create a `deployment.yml` file with the following content:
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -224,14 +225,14 @@ imagePullSecrets:
 
 6. Apply this file:
 
-```
+```bash
 ash-work:~ kubectl create -f deployment.yaml
 deployment.apps/myapp-deployment created
 ```
 
 7. After a while, make sure that the container has risen:
 
-```
+```bash
 ash-work:~ kubectl get pods
 NAME READY STATUS RESTARTS AGE
 myapp-deployment-66d55bcbd5-s86m6 1/1 Running 0 39s
@@ -239,7 +240,7 @@ myapp-deployment-66d55bcbd5-s86m6 1/1 Running 0 39s
 
 8. Create a `service.yml` file:
 
-```
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -257,14 +258,14 @@ run: myapp
 
 9. Create a service:
 
-```
+```bash
 ash-work:~ kubectl create -f service.yaml
 service/myapp-svc created
 ```
 
 10. To provide access to the application from the external network, configure the ingress controller. To do this, create a `ingress.yaml` file:
 
-```
+```yaml
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
@@ -284,14 +285,14 @@ In this file, specify the domain, when accessed, the transition to the applicati
 
 11. Apply the ingress controller:
 
-```
+```bash
 ash-work:~ kubectl create -f ingress.yaml
 ingress.extensions/myapp-ingress created
 ```
 
 12. View the state of the ingress controller:
 
-```
+```bash
 ash-work:~ kubectl describe ingress myapp-ingress
 Name: myapp-ingress
 Namespace:default
@@ -314,7 +315,7 @@ The external IP address associated with the ingress controller can be viewed in 
 
 13. Let's test the application:
 
-```
+```bash
 ash-work:~ curl --resolve echo.com:80:<INGRESS_EXTERNAL_IP> http://echo.com/handler
 OK%
 ```
@@ -325,7 +326,7 @@ Thus, we have deployed the application to the Kubernetes cluster manually.
 
 14. Delete the created:
 
-```
+```bash
 ash-work:~ kubectl delete -f ingress.yaml
 ingress.extensions "myapp-ingress" deleted
 ash-work:~ kubectl delete -f service.yaml
@@ -342,14 +343,14 @@ For this:
 
 1. Get the API URL:
 
-```
+```bash
 ash-work:~ kubectl cluster-info | grep 'Kubernetes master' | awk '/http/ {print $NF}'
 https://89.208.197.244:6443
 ```
 
 2. Get a list of cluster secrets:
 
-```
+```bash
 ash-work:~ kubectl get secrets
 NAME TYPE DATA AGE
 dashboard-sa-token-xnvmp kubernetes.io/service-account-token 3 41h
@@ -360,7 +361,7 @@ regcred kubernetes.io/dockerconfigjson 1 39h
 
 3. Get the PEM certificate of the default-token-\* secret:
 
-```
+```bash
 ash-work:~ kubectl get secret default-token-fhvxq -o jsonpath="{['data']['ca\.crt']}" | base64 --decode
 -----BEGIN CERTIFICATE-----
 MIIC9DCCAdygAwIBAgIQQf4DP2XYQaew1MEtxJtVBzANBgkqhkiG9w0BAQsFADAi
@@ -384,7 +385,7 @@ GF9ONh9lDVttkFjaerKR4y4/E/X+e2Mi2dsyJmVHCrZTHozy8oZayC//JfzS+pK9
 
 4. Now create a `gitlab-admin-service-account.yaml` file that describes GitLab's access rights to the cluster. File contents:
 
-```
+```yaml
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -407,7 +408,7 @@ name: gitlab-admin
 
 5. Apply rights:
 
-```
+```bash
 ash-work:~ kubectl apply -f gitlab-admin-service-account.yaml
 serviceaccount/gitlab-admin created
 clusterrolebinding.rbac.authorization.k8s.io/gitlab-admin created
@@ -415,7 +416,7 @@ clusterrolebinding.rbac.authorization.k8s.io/gitlab-admin created
 
 And get the cluster access token:
 
-```
+```bash
 ash-work:~ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep gitlab-admin | awk '{print $1}')
 Name: gitlab-admin-token-kcmd8
 Namespace: kube-system
@@ -453,7 +454,7 @@ Place the files `deployment.yaml`, `service.yaml`, `ingress.yaml` in the deploym
 
 Add the deploy section to the `.gitlab-ci.yml` file:
 
-```
+```yaml
 image:docker:latest
 
 stages:
@@ -526,7 +527,7 @@ The result of executing the deploy section:
 
 9. Check what was created in the cluster. We look at the namespace:
 
-```
+```bash
 ash-work:~ kubectl get namespaces
 NAME STATUS AGE
 default Active 45h
@@ -542,7 +543,7 @@ magnum-tiller Active 45h
 
 10. Our namespace is `k8s-conf-demo-1-production`. Let's look at pods, services and ingress:
 
-```
+```bash
 ash-work:~ kubectl get pods -n k8s-conf-demo-1-production
 NAME READY STATUS RESTARTS AGE
 myapp-65f4bf95b5-m9s8l 1/1 Running 0 39m
@@ -557,7 +558,7 @@ ash-work:~
 
 11. Check the health of the application:
 
-```
+```bash
 ash-work:~ curl --resolve echo.com:<INGRESS_EXTERNAL_IP> http://echo.com/handler
 OK%
 ```
@@ -566,7 +567,7 @@ OK%
 
 13. Commit the changes:
 
-```
+```bash
 ash-work:k8s-conf-demo git add . && git commit -m "update" && git push
 [master b863fad] update
 1 file changed, 1 insertion(+), 1 deletion(-)
@@ -581,7 +582,7 @@ Total 4 (changes 3), reused 0 (changes 0)
 
 14. Wait for the CI/CD execution to finish and check the application output again:
 
-```
+```bash
 ash-work:~ curl --resolve echo.com:<INGRESS_EXTERNAL_IP> http://echo.com/handler
 HANDLER OK%
 ```
