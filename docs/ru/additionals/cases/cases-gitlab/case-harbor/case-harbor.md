@@ -13,14 +13,14 @@ Harbor устанавливается как Docker-образ с помощью
 
 1. Скачайте скрипт online installer и разархивируйте его:
 
-```
+```bash
 root@ubuntu-standard-2-4-40gb:~# wget https://github.com/goharbor/harbor/releases/download/v1.9.3/harbor-online-installer-v1.9.3.tgz
 root@ubuntu-standard-2-4-40gb:~# tar -zxvf harbor-online-installer-v1.9.3.tgz
 ```
 
 2. В получившейся папке harbor настройте файл `harbor.yml`:
 
-```
+```yaml
 hostname: <SERVER_DNS_NAME>
 http:
     # port for http, default is 80. If https enabled, this port will redirect to https port
@@ -44,7 +44,7 @@ data_volume: /opt/harbor
 
 3. Выполните скрипт `install.sh`:
 
-```
+```bash
 root@ubuntu-standard-2-4-40gb:~/harbor# ./install.sh
 
 [Step 0]: checking installation environment ...
@@ -74,7 +74,7 @@ Harbor запущен.
 
 Так как у нас используются нестандартные порты, URL будет иметь следующий вид:
 
-```
+```http
 https://<SERVER_DNS_NAME>:8443
 ```
 
