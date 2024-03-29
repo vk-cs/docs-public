@@ -19,7 +19,7 @@ To retrieve an object with this logical hierarchy, you must specify the fully qu
 
 Inquiry:
 
-```
+```http
  GET /example.txt HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -30,7 +30,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20170710 / r
 
 Answer:
 
-```
+```http
  HTTP / 1.1 200 OK
 
 Date: Mon, 31 Aug 2020 19:05:39 GMT
@@ -57,7 +57,7 @@ To prevent data corruption while traversing the network, it is recommended to us
 
 Inquiry:
 
-```
+```http
  PUT /example.txt HTTP / 1.1
 
 Content-Length: 14
@@ -75,7 +75,7 @@ Example text.
 
 Answer:
 
-```
+```http
  HTTP / 1.1 200 OK
 
 Date: Mon, 31 Aug 2020 19:46:06 GMT
@@ -99,7 +99,7 @@ A copy request can return an error in two cases. This can happen when a copy req
 
 Inquiry:
 
-```
+```http
  PUT /copied-example.txt HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -112,7 +112,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20170710 / r
 
 Answer:
 
-```
+```xml
  HTTP / 1.1 200 OK
 
 Date: Mon, 31 Aug 2020 20:22:54 GMT
@@ -139,7 +139,7 @@ If the requested object does not exist, then the error returned depends on wheth
 
 Inquiry:
 
-```
+```http
  HEAD /example.txt HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -150,7 +150,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20170710 / r
 
 Answer:
 
-```
+```http
  HTTP / 1.1 200 OK
 
 Date: Mon, 31 Aug 2020 18:51:58 GMT
@@ -169,7 +169,7 @@ DELETE operations delete the object specified in the request.
 
 Inquiry:
 
-```
+```http
  DELETE /sammy.png HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -180,7 +180,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20170710 / r
 
 Answer:
 
-```
+```http
  HTTP / 1.1 204 No Content
 
 Date: Mon, 31 Aug 2020 19:44:09 GMT
@@ -196,7 +196,7 @@ For this request, the Content-MD5 and Content-Length headers are required, and t
 
 Inquiry:
 
-```
+```xml
  DELETE /sammy.png HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -216,7 +216,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20170710 / r
 
 Answer:
 
-```
+```xml
  HTTP / 1.1 204 No Content
 
 Date: Mon, 31 Aug 2020 19:44:09 GMT

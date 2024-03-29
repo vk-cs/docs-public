@@ -29,20 +29,20 @@
 1.  Выполните логин на нодe Docker с правами суперпользователя.
 2.  Установите пакеты:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 ```
 
 3.  Добавьте ключ репозитория Docker:
 
-```
+```bash
 root@ubuntu-std1-1:~# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 OK
 ```
 
 4.  Добавьте репозиторий Docker:
 
-```
+```bash
 root@ubuntu-std1-1:~# add-apt-repository \
 >    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
 >    $(lsb_release -cs) \
@@ -51,13 +51,13 @@ root@ubuntu-std1-1:~# add-apt-repository \
 
 5.  Установите Docker:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get update && apt-get install -y docker-ce docker-ce-cli containerd.io
 ```
 
 6.  Выполните инициализацию кластера:
 
-```
+```bash
 root@ubuntu-std1-1:~# docker swarm init
 ```
 
@@ -65,7 +65,7 @@ root@ubuntu-std1-1:~# docker swarm init
 
 1.  Создайте директорию /root/wordpress и положите туда файл docker-compose.yml следующего содержания:
 
-```
+```yaml
 version: '3'
 
 networks:
@@ -144,7 +144,7 @@ services:
 
 2.  В директорию /root/wordpress поместите конфигурационный файл nginx.conf:
 
-```
+```nginx
 events {
  
  }
@@ -170,7 +170,7 @@ events {
 
 3.  Запустите контейнеры:
 
-```
+```bash
 root@ubuntu-std1-1:~# docker stack deploy -c /root/wordpress/docker-compose.yml blog
 Creating network blog_backend
 Creating network blog_frontend
@@ -181,7 +181,7 @@ Creating service blog_db
 
 4.  Убедитесь, что все запустилось успешно:
 
-```
+```bash
 root@ubuntu-std1-1:~# docker service ls
 ID                  NAME                MODE                REPLICAS            IMAGE               PORTS
 12jo1tmdr8ni        blog_db             replicated          1/1                 mysql:5.7           
@@ -205,13 +205,13 @@ oejvg6xgzcwj        blog_wordpress      replicated          1/1   �
 
 1.  Установите fluentd:
 
-```
+```bash
 root@ubuntu-std1-1:~# curl -L https://toolbelt.treasuredata.com/sh/install-ubuntu-bionic-td-agent3.sh | sh
 ```
 
 2.  Добавьте fluentd в автозагрузку:
 
-```
+```bash
 root@ubuntu-std1-1:~# systemctl enable td-agent
 Synchronizing state of td-agent.service with SysV service script with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable td-agent
@@ -223,7 +223,7 @@ Executing: /lib/systemd/systemd-sysv-install enable td-agent
 
 **Секция source** \- содержит описание источника логов. Лог-драйвер Docker Fluentd по умолчанию отправляет логи по адресу tcp://localhost:24224. Опишем секцию source для приема логов:
 
-```
+```xml
 <source>
 @type forward
 port 24224
@@ -234,7 +234,7 @@ port 24224
 
 **Секция вывода данных в elasticsearch:**
 
-```
+```fluentd
 <match \*\*>
 @type elasticsearch
 host <IP_ADDRESS_OF_ELK>
@@ -249,7 +249,7 @@ logstash_format true
 
 Типовой пример фильтрации - настройка выборки по regexp:
 
-```
+```fluentd
 <filter foo.bar>
 @type grep
 <regexp>
@@ -269,14 +269,14 @@ pattern /uncool/
 
 В этом примере из потока будут выбраны записи, содержащие в поле message слово cool, в поле hostname, например, www123.example.com, и не содержащие слова uncool в поле tag. Следующие данные пройдут проверку:
 
-```
+```json
 {"message":"It's cool outside today", "hostname":"web001.example.com"}
 {"message":"That's not cool", "hostname":"web1337.example.com"}
 ```
 
 А следующие нет:
 
-```
+```json
 {"message":"I am cool but you are uncool", "hostname":"db001.example.com"}
 {"hostname":"web001.example.com"}
 {"message":"It's cool outside today"}
@@ -286,7 +286,7 @@ pattern /uncool/
 
 Парсеры предназначены для разбора логов стандартной структуры (например, логов Nginx). Парсеры задаются в секции source:
 
-```
+```xml
 <source>
 @type tail
 path /path/to/input/file

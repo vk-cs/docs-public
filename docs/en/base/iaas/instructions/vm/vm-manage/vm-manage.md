@@ -202,9 +202,9 @@ The deletion operation is irreversible! Save the necessary data before deleting 
 
 1. Prepare the VM for deletion.
 
-   - If you need to save the main disk, clone it or [replace it with an unnecessary one](../../vm-volumes#replacing_the_root_disk).
+   - If you need to save the main disk, clone it or [replace it with an unnecessary one](../../volumes#replacing_the_root_disk).
 
-   - [Disconnect from the VM](../../vm-volumes#disconnecting_a_disk_from_a_vm) additional disks that need to be saved.
+   - [Disconnect from the VM](../../volumes#disconnecting_a_disk_from_a_vm) additional disks that need to be saved.
 
       Additional disks for which the `delete_on_termination`: `False` property is set in the deletion policy can not be disconnected from the VM.
 
