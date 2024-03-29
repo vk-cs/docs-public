@@ -13,7 +13,7 @@ If you use other servers and hardware, some script steps may differ from those d
 
 ## Scheme of work
 
-**![](./assets/1575015458286-1575015458286.png)**
+![Scheme of work](./assets/1575015458286-1575015458286.png){params[width=74%; height=74%]}
 
 **Docker Swarm** is Docker in cluster mode. A cluster can consist of one node or several nodes. For this scenario, one node is enough.
 
