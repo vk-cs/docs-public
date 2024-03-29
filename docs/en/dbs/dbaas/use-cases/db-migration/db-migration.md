@@ -36,7 +36,7 @@ db = client.<DATABASE>
 
 Ниже приведён пример кода загрузки в базу SQL с помощью языка PHP:
 
-```
+```php
 <?php$servername = "mysql.hostinger.co.uk";$database = "u266072517\_name";$username = "u266072517\_user";$password = "buystuffpwd";// **Устанавливаем соединение**$conn = mysqli\_connect($servername, $username, $password, $database);// **Проверяем соединение**if (!$conn) {die("Connection failed: " . mysqli\_connect\_error()); }echo "Connected successfully";$sql = "INSERT INTO Students (name, lastname, email) VALUES ('Test', 'Testing', 'Testing@tesing.com')";if (mysqli\_query($conn, $sql)) {      echo "New record created successfully";} else {      echo "Error: " . $sql . "<br>" . mysqli\_error($conn);}mysqli\_close($conn);?>
 ```
 

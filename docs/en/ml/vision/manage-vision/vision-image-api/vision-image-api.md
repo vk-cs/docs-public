@@ -47,7 +47,7 @@ The method is subject to [restrictions](../../vision-limits#image_processing)
 
 ## Request example
 
-```curl
+```http
 curl -X 'POST'   'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@photo_imrove_improve_ok.jpg;type=image/jpeg'   -F 'meta={
   "mode": [
     "improve"
@@ -131,7 +131,7 @@ curl -X 'POST'   'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ва�
 
 Request example:
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -174,7 +174,7 @@ Response example:
 
 Request example:
 
-```curl
+```http
 curl -X 'POST'   'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@photo_imrove_resolution_ok.jpeg;type=image/jpeg'   -F 'meta={
   "mode": [
     "resolution"
@@ -204,7 +204,7 @@ Response example:
 
 Request example:
 
-```curl
+```http
 curl -X 'POST'   'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@empty.jpg;type=image/jpeg'   -F 'meta={
   "mode": [
     "resolution"
@@ -234,7 +234,7 @@ Response example:
 
 Request example:
 
-```curl
+```http
 curl -X 'POST'   'https://smarty.mail.ru/api/v1/photo/improve?oauth_token=<ваш токен>&oauth_provider=mcs'   -H 'accept: application/json'   -H 'Content-Type: multipart/form-data'   -F 'file=@photo_imrove_resolution_ok.jpeg;type=image/jpeg'   -F 'meta={
   "mode": [
     "resolution"

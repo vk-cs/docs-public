@@ -22,7 +22,7 @@ pip install ipykernel
 
 4. Create a new kernel:
 
-```
+```bash
 python -m ipykernel install --user --name set-name-of-venv --display-name "Python (myenv)"
 ```
 

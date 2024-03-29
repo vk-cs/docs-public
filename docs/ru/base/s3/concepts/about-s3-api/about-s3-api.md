@@ -72,7 +72,7 @@ Cloud Storage обеспечивает поддержку операций со�
 
 **Пример заголовка авторизации**
 
-```
+```http
 Authorization: AWS4-HMAC-SHA256
 Credential=urvt4LXPwoSL9s6ieGTLT5/20200831/ru-msk/s3/aws4_request,
 SignedHeaders=host;x-amz-acl;x-amz-content-sha256;x-amz-date,
@@ -81,7 +81,7 @@ Signature=6cab03bef74a80a0441ab7fd33c829a2cdb46bba07e82da518cdb78ac238fda5
 
 **Пример подписи (псевдо-код)**
 
-```
+```http
 canonicalRequest = \`
 ${HTTPMethod}\n
 ${canonicalURI}\n
@@ -112,7 +112,7 @@ signature = Hex(HMAC-SHA256(signingKey, stringToSign))
 
 Например, для следующего запроса:
 
-```
+```http
 GET /?acl HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -121,7 +121,7 @@ x-amz-date: 20200831T221549Z
 
 Таким будет канонический запрос:
 
-```
+```http
 GET
 /
 acl=

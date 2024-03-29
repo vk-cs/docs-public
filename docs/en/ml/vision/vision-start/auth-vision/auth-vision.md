@@ -57,7 +57,7 @@ The usage scheme for tokens is as follows:
 - Application saves tokens and uses **access token** for subsequent image recognition requests.
 - When the access token lifetime comes to an end, requests for image recognition will stop passing:
 
-```
+```bash
   "status":401,"body":"authorization failed, provider: mcs, token: vMA3Pjyno6tvCdo8MeDQ8xYT(...), reason: CONDITION/UNAUTHORIZED, Access Token invalid"
 ```
 
@@ -67,7 +67,7 @@ The usage scheme for tokens is as follows:
 
 We need to send a request to the authorization server with the client ID and secret key:
 
-```bash
+```http
 curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
    --header 'Content-Type: application/json' \
    --data '{
@@ -125,7 +125,7 @@ Type of token to generate:
 
 To generate `access_token` via `refresh_token`, send a request to the authorization server:
 
-```bash
+```http
 curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 --header 'Content-Type: application/json' \
 --data '{

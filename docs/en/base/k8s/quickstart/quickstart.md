@@ -215,7 +215,7 @@ An addon with [monitoring tools](../monitoring) was installed in the cluster bas
 
 1. In a separate terminal session, run the command:
 
-   ```
+   ```bash
    kubectl -n prometheus-monitoring port-forward service/kube-prometheus-stack-grafana 8001:80
    ```
 

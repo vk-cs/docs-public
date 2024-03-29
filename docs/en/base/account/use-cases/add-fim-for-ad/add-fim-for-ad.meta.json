@@ -1,14 +1,19 @@
 {
-    "title": "Configuring Identity Federation",
-    "pageDescription": "Configuring federated access to VK Cloud via Active Directory.",
-    "shortDescription": "How to configure authentication in VK Cloud via Active Directory",
-    "metaTitle": "Configuring Identity Federation",
-    "metaDescription": "Configuring federated access to VK Cloud via Active Directory",
-    "sectionTitle": "Configuring Identity Federation",
-    "icon": "",
-    "hidden": true,
-    "weight": 1,
-    "uuid": "d1c12c61-f441-4d38-b888-e4d615d88963",
-    "createdAt": "2024-02-15T12:45:14.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+  "title": "Configuring Identity Federation - d1c12c61-f441-4d38-b888-e4d615d88963",
+  "pageDescription": "Configuring federated access to VK Cloud via Active Directory.",
+  "shortDescription": "How to configure authentication in VK Cloud via Active Directory",
+  "metaTitle": "Configuring Identity Federation",
+  "metaDescription": "Configuring federated access to VK Cloud via Active Directory",
+  "sectionTitle": "Configuring Identity Federation",
+  "icon": "",
+  "hidden": true,
+  "weight": 1,
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  },
+  "createdAt": "2024-02-15T12:45:14.000Z",
+  "updatedAt": "2024-03-19T14:14:34.000Z",
+  "uuid": "d86aa46e-f5eb-4f3e-b066-49cdda0b370b"
 }

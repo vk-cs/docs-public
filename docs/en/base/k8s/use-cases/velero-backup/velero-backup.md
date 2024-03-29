@@ -144,7 +144,7 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
 
    1. Get detailed information about the disk with this ID using the OpenStack CLI:
 
-      ```
+      ```bash
       openstack volume show <disk ID> --fit-width
       ```
 
@@ -160,7 +160,7 @@ To get familiar with creating a backup and restoring from it, deploy a demo appl
 
 1. Make sure that NGINX is responding to requests:
 
-   ```
+   ```bash
    curl <public IP address assigned to the load balancer>
    ```
 
@@ -234,7 +234,7 @@ velero help
 
 1. Make sure that NGINX is responding to requests:
 
-   ```
+   ```bash
    curl <public IP address assigned to the load balancer>
    ```
 

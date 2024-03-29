@@ -6,7 +6,7 @@ All available methods for working with object lifecycle:
 
 General view of the configuration
 
-```
+```xml
  <LifecycleConfiguration>
 <Rule>
 <ID> Rule Description </ID>
@@ -40,7 +40,7 @@ The GET operation returns information on the lifecycle configuration set for the
 
 Inquiry:
 
-```
+```http
  GET /? Lifecycle HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -51,7 +51,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```xml
  HTTP / 1.1 200 OK
 
 Date: Mon, 31 Aug 2020 17:44:35 GMT
@@ -89,7 +89,7 @@ The PUT operation creates a new lifecycle configuration for the bucket or replac
 
 Inquiry:
 
-```
+```xml
  PUT /? Lifecycle HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -122,7 +122,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```http
  HTTP / 1.1 200 OK
 
 Date: Mon, 31 Aug 2020 17:31:43 GMT
@@ -138,7 +138,7 @@ The DELETE operation removes the lifecycle configuration from the specified buck
 
 Inquiry:
 
-```
+```http
  DELETE /? Lifecycle HTTP / 1.1
 
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -149,7 +149,7 @@ Authorization: AWS4-HMAC-SHA256 Credential = II5JDQBAN3JYM4DNEB6C / 20200831 / r
 
 Answer:
 
-```
+```http
  HTTP / 1.1 204 No Content
 
 Date: Mon, 31 Aug 2020 18:13:21 GMT
