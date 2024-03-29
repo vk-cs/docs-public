@@ -1,6 +1,6 @@
 {
-    "meta": "Диски ВМ",
-    "path": "/services/infra/volumes",
+    "meta": "Образы",
+    "path": "/services/infra/images",
     "groups": [
         {
             "title": "ИНФОРМАЦИЯ",
@@ -27,13 +27,22 @@
                     "link": "docs/ru/base/iaas/quick-start"
                 },
                 {
-                    "link": "docs/ru/base/iaas/instructions/vm-volumes"
+                    "link": "docs/ru/base/iaas/instructions/images/images-manage"
+                },
+                {
+                    "link": "docs/ru/base/iaas/instructions/images/image-metadata"
                 }
             ]
         },
         {
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
+                {
+                    "link": "docs/ru/additionals/cases/migration/migrate-hyperv"
+                },
+                {
+                    "link": "docs/ru/additionals/cases/migration/migrate-vmware"
+                },
                 {
                     "link": "docs/ru/base/iaas/instructions/vm/vm-console"
                 },

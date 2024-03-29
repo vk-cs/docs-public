@@ -128,7 +128,7 @@ deployment.apps/tea      3/3     3            3           ...
 
    Для проверки состояния Ingress-контроллера выполните команду:
 
-   ```
+   ```bash
    kubectl get svc -n example-nginx-ingress-http
    ```
 

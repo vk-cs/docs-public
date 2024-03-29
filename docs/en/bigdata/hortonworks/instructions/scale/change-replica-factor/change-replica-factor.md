@@ -17,7 +17,7 @@ VK Cloud поддерживает изменение фактора реплик
 
    Пример вывода команды:
 
-   ```
+   ```bash
    hdfs fsck /user/admin/data.csv
    /user/admin/data.csv:  Under replicated BP-1014754436-192.168.99.119-1532095262675:blk_1073743175_2396. Target Replicas is 3 but found 1 live replica(s), 0 decommissioned replica(s) and 0 decommissioning replica(s).
    Status: HEALTHY

@@ -64,7 +64,7 @@ The `vkcloudlogs-fluent-bit.service` service works with files:
 1. Specify the connection parameters for the plugin in the `vkcloudlogs-fluent-bit.conf` file:
 
    <details>
-     <summary>config.conf</summary>
+     <summary>vkcloudlogs-fluent-bit.conf</summary>
 
    In this example, data logging is configured from `ssh.service` (section `[INPUT]`) to the Cloud Logging service (section `[OUTPUT]`).
 

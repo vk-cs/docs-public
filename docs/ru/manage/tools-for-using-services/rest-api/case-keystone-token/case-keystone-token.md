@@ -38,7 +38,7 @@
 1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Выполните команду:
 
-    ```
+    ```bash
     openstack token issue -c id -f value
     ```
 

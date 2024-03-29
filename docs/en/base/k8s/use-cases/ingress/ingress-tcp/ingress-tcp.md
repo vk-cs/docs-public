@@ -102,7 +102,7 @@ To install an NGINX Ingress Controller with PROXY protocol support:
 
    To check the status of the Ingress controller, run the command:
 
-   ```
+   ```bash
    kubectl get svc -n example-nginx-ingress-tcp
    ```
 
