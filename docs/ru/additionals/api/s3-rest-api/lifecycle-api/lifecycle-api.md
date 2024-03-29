@@ -40,7 +40,7 @@
 
 Запрос:
 
-```
+```xml
 GET /?lifecycle HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -134,7 +134,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 DELETE /?lifecycle HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855

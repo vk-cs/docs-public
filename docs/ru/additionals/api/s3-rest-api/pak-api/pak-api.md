@@ -22,7 +22,7 @@
 
 **Запрос**
 
-```
+```xml
 PUT /?pak&username=examplename&prefix=exampleprefix HTTP/1.1
 Host: bucketName.hb.vkcs.cloud
 Date: Wed, 14 Feb 2018 11:21:57 GMT
@@ -68,7 +68,7 @@ X-req-id: 2NrqrYuki
 
 **Запросы**
 
-```
+```xml
 GET /?pak&marker=prefix&max-keys=2&name-prefix=prefix HTTP/1.1
 Authorization: authorization string
 Connection: close
@@ -84,7 +84,7 @@ Host: bucketName.hb.vkcs.cloud
 
 **Ответ**
 
-```
+```xml
 HTTP/1.1 200 OK
 
 Server: nginx/1.12.1
@@ -127,7 +127,7 @@ X-req-id: 35RBZWzAX
 
 **Запрос**
 
-```
+```xml
 DELETE /?pak&prefix=prefix/for1&username=prefixusers/prefix/for1 HTTP/1.1
 Authorization: authorization string
 Connection: close
@@ -142,7 +142,7 @@ Host:  bucketName.hb.vkcs.cloud
 
 **Ответ**
 
-```
+```xml
 HTTP/1.1 200 OK
 
 Server: nginx/1.12.1

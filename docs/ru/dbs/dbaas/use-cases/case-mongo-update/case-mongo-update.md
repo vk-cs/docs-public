@@ -23,7 +23,7 @@ Replicaset  - это несколько серверов, которые сод
 1.  Убедитесь, что на всех трех серверах открыт порт 27017.
 2.  Убедитесь, что имя каждого хоста (`mongo1.testdomain.com`, `mongo2.testdomain.com`, `mongoar.testdomain.com`) известно на каждом сервере. Если имена не прописаны в DNS, на каждом сервере укажите их в файле `/еtc/hosts`. В нашем случае:
 
-```
+```text
 10.0.0.2 mongo1 mongo1.testdomain.com
 10.0.0.3 mongo2 mongo2.testdomain.com
 10.0.0.4 mongoar mongoar.testdomain.com
@@ -31,7 +31,7 @@ Replicaset  - это несколько серверов, которые сод
 
 3.  В конфигурационный файл `/etc/mongod.conf` в секцию `replication` добавьте следующее:
 
-```
+```yaml
 replication:
     replSetName: "rs0"
 security:
@@ -46,13 +46,13 @@ security:
 
 4.  Перезапустите `mongod`:
 
-```
+```sql
 root@mongo1:~# systemctl restart mongod.service
 ```
 
 5.  Войдите в консоль `mongo` и выполните команду:
 
-```
+```sql
 \> rs.initiate()
 {
     "info2" : "no configuration specified. Using a default configuration for the set",
@@ -67,7 +67,7 @@ rs0:PRIMARY>
 
 6.  В конфигурационном файле в переменной `host` вместо значения `mongo1:27017` укажите значение CommonName сертификата:
 
-```
+```sql
 rs0:PRIMARY> cfg.members[0].host = "mongo1.testdomain.com:27017"
 mongo1.testdomain.com:27017
 rs0:PRIMARY> rs.reconfig(cfg)
@@ -91,7 +91,7 @@ rs0:PRIMARY>
 10. На текущий сервер скопируйте ключ `/etc/ssl/mongoCA.pem`.
 11. Выпишите серверный сертификат, так же как на сервере `mongo1`, используя `mongo2.testdomain.com` в качестве CommonName:
 
-```
+```sql
 root@mongo2:~# openssl genrsa -out /tmp/mongo2.key 4096
 root@mongo2:~# openssl req -new -key /tmp/mongo2.key -out /tmp/mongo2.csr
 ...
@@ -107,7 +107,7 @@ root@mongo2:~# rm /tmp/mongo2.key /tmp/mongo2.crt /tmp/mongo2.csr
 14. Выполните логин на сервер `mongo1` и войдите в консоль mongo.
 15. Добавьте сервер `mongo2` в `replicaset`:
 
-```
+```sql
 root@mongo1:~# mongo --ssl --sslPEMKeyFile /etc/ssl/client.pem --sslCAFile /etc/ssl/mongoCA.pem  --host mongo1.testdomain.com -u admin
 MongoDB shell version v4.0.14
 Enter password:
@@ -134,7 +134,7 @@ rs0:PRIMARY>
 
 16. Проверьте состояние `replicaset`:
 
-```
+```sql
 rs0:PRIMARY> rs.status()
 {
     "set" : "rs0",
@@ -252,7 +252,7 @@ rs0:PRIMARY>
 
 Как только синхронизация будет завершена, на третьем сервере (`mongoar`) выполните то же, что и на втором (`mongo2`), кроме шага добавления сервера в `repliset`:
 
-```
+```sql
 rs0:PRIMARY> rs.addArb("mongoar.testdomain.com:27017")
 {
         "ok" : 1,
@@ -270,7 +270,7 @@ rs0:PRIMARY>
 
 Проверьте состояние `Repliset` (для краткости из вывода выброшено несущественное):
 
-```
+```sql
 rs0:PRIMARY> rs.status()
 {
     "set" : "rs0",
@@ -312,7 +312,7 @@ rs0:PRIMARY> rs.status()
 
 1.  Измените параметр `feature compatibility version`, ограничивающий версию MongoDB, которую можно использовать с текущим набором данных. Для обновления с версии 4.0 на версию 4.2 установите его в 4.0:
 
-```
+```sql
 rs0:PRIMARY> db.adminCommand( { setFeatureCompatibilityVersion: "4.0" } )
 {
     "ok" : 1,
@@ -330,7 +330,7 @@ rs0:PRIMARY> db.adminCommand( { setFeatureCompatibilityVersion: "4.0" } )
 
 2.  Проверьте результат:
 
-```
+```sql
 rs0:PRIMARY> db.adminCommand( { getParameter: 1, featureCompatibilityVersion: 1 } )
 {
         "featureCompatibilityVersion" : {
@@ -350,7 +350,7 @@ rs0:PRIMARY> db.adminCommand( { getParameter: 1, featureCompatibilityVersion: 
 
 3.  На всех трех серверах подключите репозиторий с новой версией MongoDB (пример для первого сервера):
 
-```
+```sql
 root@mongo1:~# wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
 OK
 root@mongo1:~# echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
@@ -362,7 +362,7 @@ root@mongo1:~# apt-get update
 
 4.  Исходя из [документации](https://docs.mongodb.com/manual/reference/read-concern-majority/#disable-read-concern-majority), в конфигурационный файл [/etc/mongod.conf](../case-mongo-update/assets/mongod.conf_4 "download") добавьте опцию `enableMajorityReadConcern: false` и замените `net:ssl` на `net:tls` (пример для арбитра):
 
-```
+```yaml
 net:
   port: 27017
   bindIp: 0.0.0.0
@@ -379,7 +379,7 @@ enableMajorityReadConcern: false
 
 5.  Обновите ноду арбитра:
 
-```
+```sql
 root@mongoar:~# systemctl stop mongod.service
 root@mongoar:~# apt-get install -y mongodb-org mongodb-org-mongos mongodb-org-server mongodb-org-shell mongodb-org-tools
 root@mongoar:~# systemctl start mongod.service
@@ -387,7 +387,7 @@ root@mongoar:~# systemctl start mongod.service
 
 6.  Проверьте статус `rs.status()`. Убедитесь, что арбитр работает, и посмотрите, какая из двух оставшихся нод является `secondary` (вывод команды сокращен):
 
-```
+```sql
 rs0:PRIMARY> rs.status()
 {
     "set" : "rs0",
@@ -421,7 +421,7 @@ rs0:PRIMARY> rs.status()
 
 7.  В текущий момент сервер `mongo2` является `secondary`, обновите MongoDB на нем:
 
-```
+```sql
 root@mongo2:~# systemctl stop mongod.service
 root@mongo2:~# apt-get install -y mongodb-org
 The following packages will be upgraded:
@@ -434,7 +434,7 @@ root@mongo2:~# systemctl start mongod.service
 
 8.  Посмотрите `rs.status()`, убедитесь, что нода работает:
 
-```
+```sql
 rs0:PRIMARY> rs.status()
 {
     "set" : "rs0",
@@ -467,7 +467,7 @@ rs0:PRIMARY> rs.status()
 
 9.  Принудительно измените `primary` ноду на ту, которую уже обновили (в нашем случае - `mongo2`):
 
-```
+```sql
 rs0:PRIMARY> rs.stepDown()
 2019-12-27T12:25:10.922+0000 I NETWORK [js] DBClientConnection failed to receive message from mongo1.testdomain.com:27017 - SocketException: stream truncated
 2019-12-27T12:25:10.923+0000 E QUERY [js] Error: error doing query: failed: network error while attempting to run command 'replSetStepDown' on host 'mongo1.testdomain.com:27017' :
@@ -484,7 +484,7 @@ rs0:SECONDARY>
 10. Теперь нода mongo1 стала `secondary`, обновите ее по аналогии с предыдущей.
 11. Проверьте состояние `replicaset` после обновления (вывод сокращен):
 
-```
+```sql
 rs0:SECONDARY> rs.status()
 {
     "set" : "rs0",
@@ -539,7 +539,7 @@ rs0:SECONDARY>
 
 Все выполнено успешно. Если есть необходимость сохранения порядка нод, который был до обновления, зайдите в консоль текущей `primary` ноды (`mongo2`) и выполните команду:
 
-```
+```sql
 rs.stepDown()
 ```
 

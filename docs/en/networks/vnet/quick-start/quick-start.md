@@ -132,19 +132,19 @@ In the last step, you created a virtual machine key that was saved to your compu
 1. Open a terminal.
 1. Go to downloads:
 
-    ```
+    ```bash
     cd ~/Downloads/
     ```
 
 1. Make the key available only to the current user:
 
-     ```
+     ```bash
      chmod 400 <path to key>
      ```
 
 1. Connect to the instance via SSH:
 
-     ```
+     ```bash
      ssh -i <path to key> centos@10.0.0.6
      ```
 

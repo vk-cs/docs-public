@@ -25,45 +25,45 @@ The ELK stack consists of three components:
 1. Login to the Ubuntu server as root.
 2. Import the Elasticsearch repository key:
 
-```
+```bash
 root@ubuntu-std1-1:~# wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt key add -
 OK
 ```
 
 3. Install apt-transport-https:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get install apt-transport-https
 ```
 
 4. Add a repository:
 
-```
+```bash
 root@ubuntu-std1-1:~# echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
 deb https://artifacts.elastic.co/packages/7.x/apt stable main
 ```
 
 5. Install Elasticsearch:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get update && apt-get install elasticsearch
 ```
 
 6. Install Kibana:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get install kibana
 ```
 
 7. Install OpenJDK for Logstash to work:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get install openjdk-8-jre
 ```
 
 8. Install Logstash:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get install logstash
 
 ```
@@ -85,14 +85,14 @@ The most important thing in this file is the setting of the memory allocated for
 
 The default Heap Size is 1 GB. If the amount of memory on the server allows, increase this value ([more about Heap Size](https://www.elastic.co/guide/en/elasticsearch/reference/current/heap-size.html)). To do this, find the lines:
 
-```
+```txt
 Xms1g
 Xmx1g
 ```
 
 and replace them, for example, with the lines:
 
-```
+```txt
 Xms4g
 xmx4g
 ```
@@ -110,13 +110,13 @@ Customize:
 
 Start elasticsearch:
 
-```
+```bash
 root@ubuntu-std1-1:~# systemctl start elasticsearch.service
 ```
 
 If you specify too large a Heap Size value, the launch will fail. In this case, the following will be in the logs:
 
-```
+```bash
 root@ubuntu-std1-1:~# systemctl start elasticsearch.service
 Job for elasticsearch.service failed because the control process exited with error code.
 See "systemctl status elasticsearch.service" and "journalctl -xe" for details.
@@ -132,7 +132,7 @@ Nov 12 12:48:12 ubuntu-std1-1 elasticsearch[29841]: # /var/log/elasticsearch/hs_
 ```
 
 If successful, add Elasticsearch to the list of processes to start automatically:
-```
+```bash
 root@ubuntu-std1-1:~# systemctl enable elasticsearch.service
 Synchronizing state of elasticsearch.service with SysV service script with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable elasticsearch
@@ -141,7 +141,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/elasticsearch.servic
 
 Verify that Elasticsearch is responding:
 
-```
+```bash
 root@ubuntu-std1-1:~# curl http://localhost:9200
 {
 "name" : "ubuntu-std1-1",
@@ -168,13 +168,13 @@ By default, the Kibana configuration file /etc/kibana/kibana.yml contains all th
 
 1. Start Kibana:
 
-```
+```bash
 root@ubuntu-std1-1:/etc/kibana# systemctl start kibana.service
 ```
 
 2. Add Kibana to the list of applications that start automatically:
 
-```
+```bash
 root@ubuntu-std1-1:/etc/kibana# systemctl enable kibana.service
 Synchronizing state of kibana.service with SysV service script with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable kibana
@@ -197,13 +197,13 @@ Consider the most popular first method.
 
 1. Install Nginx:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get install nginx
 ```
 
 2. Make sure that in the configuration file /etc/elasticsearch/elasticsearch.yml the network.host parameter is set to 127.0.0.1 or localhost. If necessary, make this configuration and restart the elasticsearch daemon:
 
-```
+```bash
 root@ubuntu-std1-1:~# cat /etc/elasticsearch/elasticsearch.yml | grep network.host
 network.host: 127.0.0.1
 root@ubuntu-std1-1:~# systemctl restart elasticsearch.service
@@ -211,7 +211,7 @@ root@ubuntu-std1-1:~# systemctl restart elasticsearch.service
 
 3. Make sure that the server.host parameter in the configuration file /etc/kibana/kibana.yml is set to 127.0.0.1 or localhost. If necessary, make this configuration and restart the kibana daemon:
 
-```
+```bash
 root@ubuntu-std1-1:~# cat /etc/kibana/kibana.yml | grep server.host
 server.host: "127.0.0.1"
 # When this setting's value is true Kibana uses the hostname specified in the server.host
@@ -220,7 +220,7 @@ root@ubuntu-std1-1:~# systemctl restart kibana.service
 
 4. Make sure Elasticsearh and Kibana are using interface 127.0.0.1:
 
-```
+```bash
 root@ubuntu-std1-1:~# netstat -tulpn | grep9200
 tcp6 0 0 127.0.0.1:9200 :::\* LISTEN 10512/java
 root@ubuntu-std1-1:~# netstat -tulpn | grep 5601
@@ -229,7 +229,7 @@ tcp 0 0 127.0.0.1:5601 0.0.0.0:\* LISTEN 11029/node
 
 5. In /etc/nginx/sites-available create a kibana.conf file and add the following to it:
 
-```
+```nginx
 server {
 listen <external IP address of the server with Kibana and Nginx>:5601;
 server_name kibana;
@@ -251,19 +251,19 @@ proxy_set_header Host $http_host;
 
 6. Specify the username (USER) and password (PASSWORD):
 
-```
+```bash
 root@ubuntu-std1-1:/etc/nginx# printf "USER:$(openssl passwd -crypt PASSWORD)\n" >> /etc/nginx/htpasswd
 ```
 
 7. To enable the site, create a symlink to the /etc/nginx/sites-enabled folder:
 
-```
+```bash
 root@ubuntu-std1-1:~# ln -s /etc/nginx/sites-available/kibana.conf /etc/nginx/sites-enabled/kibana.conf
 ```
 
 8. Start Nginx:
 
-```
+```bash
 root@ubuntu-std1-1:~# systemctl start nginx
 ```
 
@@ -294,13 +294,13 @@ The most common agent is Filebeat, we use it to collect Nginx logs.
 
 1. Install Filebeat:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get install filebeat
 ```
 
 2. Allow Nginx log processing:
 
-```
+```bash
 root@ubuntu-std1-1:~# mv /etc/filebeat/modules.d/nginx.yml.disabled /etc/filebeat/modules.d/nginx.yml
 ```
 
@@ -310,7 +310,7 @@ In the example below, we will collect and analyze logs for accessing the Kibana 
 
 3. Make the /etc/filebeat/modules.d/nginx.yml file look like this:
 
-```
+```yaml
 # Module: nginx
 # Docs: https://www.elastic.co/guide/en/beats/filebeat/7.4/filebeat-module-nginx.html
 -module: nginx
@@ -335,7 +335,7 @@ var paths:
 
 4. In the /etc/filebeat/filebeat.yml file, edit the setup.kibana section:
 
-```
+```yaml
 setup.kibana:
   host: "<IP address of server with Kibana>:5601"
   username: "login"
@@ -352,7 +352,7 @@ Login and password are required for Filebeat access to Kibana in order to load t
 
 5. The logs will be sent to Logstash, so comment out the output.elasticsearch section and specify the IP address of the server hosting Logstash in the output.logstash section:
 
-```
+```txt
 #-------------------------- Elasticsearch output --------------------- ---------
 #output.elasticsearch:
 # Array of hosts to connect to.
@@ -381,7 +381,7 @@ hosts: ["<logstash server IP address>:5044"]
 
 6. Make sure there are no errors in the configuration file:
 
-```
+```bash
 root@ubuntu-std1-1:/etc/filebeat# filebeat test config -c /etc/filebeat/filebeat.yml
 config OK
 ```
@@ -398,7 +398,7 @@ The Logstash configuration file generally consists of three sections:
 
 1. Create a file /etc/logstash/conf.d/input-beats.conf containing the port number on which Beats (in particular, Filebeat) sends its logs:
 
-```
+```log
 input {
 beat {
 port => 5044
@@ -408,7 +408,7 @@ port => 5044
 
 2. Create the /etc/logstash/conf.d/output-elasticsearch.conf file and specify that logs should be sent to Elasticsearch at localhost and indexes should be named in the nginx-<date> format (that is, a new index will be created every day , which is convenient for analysis):
 
-```
+```log
 output {
 elasticsearch {
 hosts => [ "localhost:9200" ]
@@ -420,7 +420,7 @@ index => "nginx-%{+YYYY.MM.dd}"
 
 3. Create a file /etc/logstash/conf.d/filter-nginx.conf with the following content:
 
-```
+```log
 filter {
 if [event][dataset] == ​​"nginx.access" {
 grok {
@@ -458,7 +458,7 @@ The date section is used to parse the query date field from the log and convert 
 
 The useragent section fills in the fields according to the field from the log. Note that the agent field is usually used in these tutorials. This field will not work with Filebeat + Logstash as it is intended to be used when writing directly from Filebeat to Elasticsearh. When used in Logstash, an error will be thrown:
 
-```
+```txt
 [2019-11-19T09:55:46,254][ERROR][logstash.filters.useragent][main] Uknown error while parsing user agent data {:exception=>#<TypeError: cannot convert instance of class org.jruby.RubyHash to class java.lang.String>, :field=>"agent", :event=>#<LogStash::Event:0x1b16bb2>}
 ```
 
@@ -466,7 +466,7 @@ For the same reason, you don't need to use the %{COMBINEDAPACHELOG} macro in the
 
 To track errors in Logstash, enable debugging. To do this, add the following line to the output section:
 
-```
+```bash
 stdout { codec => rubydebug }
 ```
 
@@ -474,7 +474,7 @@ As a result, the output to the Elasticsearch database will be duplicated by the 
 
 4. Launch Logstash and add it to the list of applications to start automatically:
 
-```
+```bash
 root@ubuntu-std1-1:~# systemctl start logstash
 root@ubuntu-std1-1:~# systemctl enable logstash
 Created symlink /etc/systemd/system/multi-user.target.wants/logstash.service → /etc/systemd/system/logstash.service.
@@ -482,14 +482,14 @@ Created symlink /etc/systemd/system/multi-user.target.wants/logstash.service →
 
 5. Make sure the service has started:
 
-```
+```bash
 root@ubuntu-std1-1:~# netstat -tulpn | grep5044
 tcp6 0 0 :::5044 :::\* LISTEN 18857/java
 ```
 
 6. Test Filebeat:
 
-```
+```bash
 root@ubuntu-std1-1:~# service filebeat start
 ```
 
