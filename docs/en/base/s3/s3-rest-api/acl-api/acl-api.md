@@ -9,7 +9,7 @@ ACL (Access Control List) позволяет контролировать, ка�
 
 Общая XML структура конфигурации ACL:
 
-```
+```xml
 <AccessControlPolicy>
   <Owner>
     <ID>eab55955-ebdb-4f18-a94d-f3558ff150da</ID>
@@ -36,7 +36,7 @@ ACL (Access Control List) позволяет контролировать, ка�
 
 Запрос:
 
-```
+```http
 GET /?acl HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -46,7 +46,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 17:44:35 GMT
 x-amz-request-id: tx000000000000002764fa6-005963bd03-1268c-ru-mska
@@ -91,7 +91,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 PUT /?acl HTTP/1.1
 Content-Type: application/xml
 Content-Length: 675
@@ -124,7 +124,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```http
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 18:37:10 GMT
 x-amz-request-id: tx00000000000000278ac49-005963c956-1268c-ru-mska
@@ -139,7 +139,7 @@ Connection: close
 
 Запрос:
 
-```
+```http
 GET /sammy.png?acl HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -149,7 +149,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 19:12:24 GMT
 x-amz-request-id: tx0000000000000027a42dc-005963d198-1268c-ru-mska
@@ -194,7 +194,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 PUT /sammy.png?acl HTTP/1.1
 Сontent-Type: application/xml
 Content-Length: 443
@@ -221,7 +221,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```http
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 19:21:42 GMT
 x-amz-request-id: tx0000000000000027aafc9-005963d3c6-1268c-ru-mska

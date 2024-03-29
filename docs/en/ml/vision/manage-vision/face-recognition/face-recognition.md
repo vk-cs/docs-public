@@ -54,7 +54,7 @@ The method is subject to [restrictions](../../vision-limits#image_processing)
 
 ### Request example
 
-```curl
+```http
 curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs"      \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
@@ -124,7 +124,7 @@ curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш т
 
 Request example (any image is used):
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -159,7 +159,7 @@ Response example:
 
 Request example:
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -202,7 +202,7 @@ Response example:
 
 Request example:
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -247,7 +247,7 @@ As an example, you can use any empty file with the JPG extension.
 
 Request example:
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -322,7 +322,7 @@ The method is subject to [restrictions](../../vision-limits#image_processing)
 
 ### Request example
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -439,7 +439,7 @@ The value of `tag` may equal `undefined` if the value of `create_new` in the req
 
 Request example:
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -502,7 +502,7 @@ Response example:
 
 Request example:
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -546,7 +546,7 @@ It is assumed that the face from the image was not added to the database using t
 
 Request example:
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -565,7 +565,7 @@ curl -X 'POST' \
 
 Response example:
 
-```curl
+```json
 {
   "status": 200,
   "body": {
@@ -611,7 +611,7 @@ As an example, you can use any empty file with the JPG extension.
 
 Request example:
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -648,7 +648,7 @@ As an example, you can use any empty file with the JPG extension.
 
 Request example:
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -723,7 +723,7 @@ The method is subject to [restrictions](../../vision-limits#image_processing)
 
 ### Request example
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -793,7 +793,7 @@ curl -X 'POST' \
 
 Request example:
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -854,7 +854,7 @@ This request does not require the transfer of images.
 
 ### Request example
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -889,7 +889,7 @@ curl -X 'POST' \
 
 Request example:
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \

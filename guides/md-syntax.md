@@ -318,7 +318,7 @@ console.log('Hello World');
 
 ### Символы, которые требуется экранировать
 
-```
+```text
 \	 backslash
 `	 backtick (see also escaping backticks in code)
 *	 asterisk

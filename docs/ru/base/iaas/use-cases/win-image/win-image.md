@@ -124,7 +124,7 @@
 
 ## 4. Импортируйте образ в облако VK Cloud
 
-[Воспользуйтесь CLI](../../instructions/vm-images/vm-images-manage#import_obraza) для импорта образа:
+[Воспользуйтесь CLI](../../instructions/images/images-manage#import_obraza) для импорта образа:
 
 ```bash
 openstack image create --private --container-format bare --disk-format qcow2 --file D:\Win_Server_2016_img.qcow2 --property hw_qemu_guest_agent=yes --property store=s3 --property min_ram=2048 --property os_require_quiesce=yes --property min_disk=40 --property os_type=windows --property os_admin_user=Administrator --property mcs:lic:mswinsrv=true --property mcs_name='Windows Server 2016 Standard (en)' --property mcs_os_distro='server' --property mcs_os_edition='std' --property mcs_os_type='windows' --property mcs_os_lang='en' --property mcs_os_type='windows' --property mcs_os_version='2016' --property os_distro='win2k16' <Наименование образа>
@@ -134,4 +134,4 @@ openstack image create --private --container-format bare --disk-format qcow2 --f
 
 ## Удалите неиспользуемые ресурсы
 
-Если импортированный образ вам больше не нужен, [удалите его](../../instructions/vm-images/vm-images-manage#udalenie_obraza).
+Если импортированный образ вам больше не нужен, [удалите его](../../instructions/images/images-manage#udalenie_obraza).

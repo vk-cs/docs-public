@@ -312,7 +312,7 @@ All the network's subnets and ports will be deleted along with the network.
       </tablist>
       <tabpanel>
 
-      ``bash
+      ```bash
       openstack subnet <set or unset> <subnet ID> \
         --allocation-pool start=<initial IP address for DHCP>,end=<end IP address for DHCP> \
         --dns-nameserver <DNS server address> \

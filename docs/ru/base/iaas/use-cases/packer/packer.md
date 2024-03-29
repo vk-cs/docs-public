@@ -50,7 +50,7 @@ Packer позволяет создавать образы виртуальных
 
 ## 2. Загрузите базовый образ в облако
 
-Импортируйте образ по [инструкции](../../instructions/vm-images/vm-images-manage#import_obraza).
+Импортируйте образ по [инструкции](../../instructions/images/images-manage#import_obraza).
 
 ## 3. Создайте конфигурационный Packer-файл
 
@@ -151,7 +151,7 @@ Packer позволяет создавать образы виртуальных
 
 ## 5. Завершите настройку образа
 
-1. Установите [метатеги](../../instructions/vm-images/vm-image-metadata/) созданному образу с помощью команды:
+1. Установите [метатеги](../../instructions/images/image-metadata/) созданному образу с помощью команды:
 
     ```bash
     openstack image set \
@@ -225,4 +225,4 @@ Packer позволяет создавать образы виртуальных
 
 ## Удалите неиспользуемые ресурсы
 
-Если образ вам больше не нужен, [удалите его](../../instructions/vm-images/vm-images-manage#udalenie_obraza).
+Если образ вам больше не нужен, [удалите его](../../instructions/images/images-manage#udalenie_obraza).
