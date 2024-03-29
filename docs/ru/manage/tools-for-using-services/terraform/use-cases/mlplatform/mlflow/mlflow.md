@@ -99,7 +99,7 @@ data "vkcs_compute_flavor" "basic" {
 </tablist>
 <tabpanel>
 
-Пример описания источника данных для сушествующей в проекте сети:
+Пример описания источника данных для существующей в проекте сети:
 
 ```hcl
 data "vkcs_networking_network" "default" {
@@ -146,7 +146,7 @@ resource "vkcs_networking_router_interface" "app" {
 </tabpanel>
 </tabs>
 
-## 4. Создайте необходимые ресурсы с помощью Terraform
+## 5. Создайте необходимые ресурсы с помощью Terraform
 
 1. Поместите файлы конфигурации Terraform в одну директорию:
   
@@ -173,7 +173,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 1. Дождитесь завершения операции.
 
-## 5. Проверьте применение конфигурации
+## 6. Проверьте применение конфигурации
 
 Убедитесь, что инстанс MLflow был успешно создан:
 
