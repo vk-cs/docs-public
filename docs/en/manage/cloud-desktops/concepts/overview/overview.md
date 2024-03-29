@@ -39,14 +39,13 @@ The following roles are provided in the service:
 | Peripheral device | Windows OS | Linux OS |
 | --- | --- | --- |
 | Print | + | + |
-| Microphone | + | - |
-| Smart cards | + | + |
-| Files and clipboard | + | + |
-| Time zone | + | - |
+| Files | + | + |
+| Microphone | + | + |
+| Clipboard | + | + |
 
 The available peripherals are set when [adding](../../instructions/desktops-pool/add/) a desktop pool.
 
 ## What's next?
 
 - [Get acquainted](../vdi-reference/) with the basic concepts of the service.
-- [Pass](../../quick-start/) quick start.
+- [Go through](../../quick-start/) the Quick start.
