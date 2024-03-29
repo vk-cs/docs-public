@@ -18,13 +18,13 @@ After completing all the steps of a quick start, you will:
    - Account password.
 
 1. (Optional) [Set up](/en/networks/vnet/use-cases/vpn-tunnel#2_set_up_a_vpn_tunnel_on_the_cloud_side) a VPN on the router that will be used for the service.
-1. Check that the Cloud Desktop service is connected to your [personal account](https://msk.cloud.vk.com/app/en): the **Cloud desktops** section is available in the menu on the left.
+1. Check that the Cloud Desktop service is connected to your [personal account](https://msk.cloud.vk.com/app/en): the **Cloud Desktop** section is available in the menu on the left.
 
 ## 2. Set up an external infrastructure
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Select the [project](/en/base/account/concepts/projects) where the desktops will be placed.
-1. Go to **Cloud desktops** → **Service settings**.
+1. Go to **Cloud Desktop** → **Service settings**.
 1. On the **Network settings** tab, specify:
 
     - **IP address space**: a range of IP addresses for the subnets where the service resources will be deployed.
@@ -46,7 +46,7 @@ After completing all the steps of a quick start, you will:
 
 ## 3. Create a pool of desktops
 
-1. Go to **Cloud desktops** → **Desktop pools**.
+1. Go to **Cloud Desktop** → **Desktop pools**.
 1. Click the **Add** button.
 1. At the “Configuration” step, specify:
 
@@ -76,7 +76,7 @@ After completing all the steps of a quick start, you will:
 
 ## 4. Make sure that desktops are deployed in the pool
 
-1. Go to **Cloud desktops** → **Desktop pools**.
+1. Go to **Cloud Desktop** → **Desktop pools**.
 1. In the list of pools, click on the pool name `vk-cloud-desktops-pool-quickstart`.
 1. Go to the **Desktops** tab.
 
@@ -86,13 +86,13 @@ After completing all the steps of a quick start, you will:
 
 1. Write down the external IP address for connecting to the pool:
 
-    1. Go to **Cloud desktops** → **Desktop pools**.
+    1. Go to **Cloud Desktop** → **Desktop pools**.
     1. In the list of pools, click **Connection IP address**.
     1. In the list that opens, copy the **External IP address** value.
 
     In the example, the IP address is `99.166.240.100`.
 
-1. [Download and install](../instructions/assets/user_guide_1_0.pdf "download") the Cloud Desktops client on your local computer.
+1. [Download and install](../instructions/assets/Termidesk_user_guide_v_1_0.pdf "download") the Cloud Desktop client on your local computer.
 1. Connect to the pools:
 
    1. Open the installed client.

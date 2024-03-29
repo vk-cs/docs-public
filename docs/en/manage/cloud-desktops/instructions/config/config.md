@@ -1,19 +1,13 @@
 ## Configuring the network for the service infrastructure
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Go to **Cloud desktops** → **Service settings**.
+1. Go to **Cloud Desktop** → **Service settings**.
 1. On the **Network settings** tab, set the parameters:
 
    - **IP address space**: specify a range of IP addresses for the subnets where the service resources will be deployed. Parameter requirements: format — CIDR, minimum network prefix — `/7`, maximum — `/22`.
    - **Router**: select a router from the list.
    - **DNS**: specify the IP address of a DNS server. To add more addresses, click **Add DNS** and specify an additional IP address.
    - **Availability zone**: select the availability zone of the pool virtual machines from the list.
-
-    <warn>
-
-    It is not possible to change the availability zone after creating a pool.
-
-    </warn>
 
 1. CLick the **Save** button.
 
@@ -30,7 +24,7 @@ Cloud Desktop cannot work without the AD/LDAP user directory service. If your ne
 To set up a connection to the user directory:
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Go to **Cloud desktops** → **Service settings**.
+1. Go to **Cloud Desktop** → **Service settings**.
 1. On the **Directory settings** tab, set the parameters:
 
    - **Host**: specify the IP address or FQDN of the external account directory server.
@@ -63,7 +57,7 @@ A virtual machine will be deployed for verification, its name begins with `vdi-c
 To check if the service network settings are correct:
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Go to **Cloud desktops** → **Service settings**.
+1. Go to **Cloud Desktop** → **Service settings**.
 1. On the **Network settings** tab, enable the **Network settings check** option.
 1. Click **Check connection**.
 1. Wait for the operation to complete.
@@ -83,7 +77,7 @@ A virtual machine will be deployed for verification, its name begins with `vdi-c
 To check if the service catalog settings are correct:
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Go to **Cloud desktops** → **Service settings**.
+1. Go to **Cloud Desktop** → **Service settings**.
 1. On the **Directory settings** tab, enable the **Directory settings check** option.
 1. Click **Check connection**.
 1. Wait for the operation to complete.
