@@ -1,7 +1,7 @@
 {
     "title": "Quick start",
     "pageDescription": "",
-    "shortDescription": "Steps that must be performed before starting work",
+    "shortDescription": "Steps to perform before starting work",
     "metaTitle": "Quick start",
     "metaDescription": "",
     "sectionTitle": "Quick start",
@@ -11,5 +11,5 @@
     "weight": 2,
     "uuid": "66721e11-9a49-45b8-9f69-5ba973d437c8",
     "createdAt": "2022-12-27T15:32:39.000Z",
-    "updatedAt": "2024-02-21T05:45:11.000Z"
+    "updatedAt": "2024-03-25T13:31:17.000Z"
 }

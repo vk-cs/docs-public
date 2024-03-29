@@ -26,10 +26,10 @@ Cloud Monitoring предоставляет API для получения зна
 
 Примеры запросов:
 
-```sql
+```promql
 SUM BY(host) (cpu:Minimum{instance="server1", app!="system"})
 ```
 
-```sql
+```promql
 SUM BY(job) (cpu:Average{host="server1", job!="system"}[12h] offset 24h)
 ```

@@ -10,7 +10,7 @@
 
 Итак, у нас в наличии кластер Clickhouse, например с 2 шардами - в каждом 2 реплики. Имя кластера Clickhouse в VK Cloud всегда cluster. Выполним запрос:
 
-```
+```sql
 CREATE TABLE table\_name ON CLUSTER cluster
 (
     EventDate DateTime,
@@ -30,7 +30,7 @@ SAMPLE BY intHash32(UserID);
 
 ## Создание Distributed-таблиц
 
-```
+```sql
 CREATE TABLE distributed ON CLUSTER cluster
 (
     EventDate DateTime,

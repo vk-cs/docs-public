@@ -8,7 +8,7 @@
 
 ## Общий вид XML конфигурации CORS
 
-```XML
+```xml
 <CORSConfiguration>
     <CORSRule>
         <AllowedOrigin>URL</AllowedOrigin>
@@ -28,7 +28,7 @@
 
 Запрос:
 
-```
+```xml
 GET /?cors HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -38,7 +38,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```XML
+```xml
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 18:53:20 GMT
 x-amz-request-id: tx00000000000000279651f-005963cd20-1268c-ru-mska
@@ -76,7 +76,7 @@ Connection: close
 
 Запрос:
 
-```XML
+```xml
 PUT /?cors HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
 Content-Length: 374
@@ -106,7 +106,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 18:50:44 GMT
 x-amz-request-id: tx0000000000000027946fc-005963cc84-1268c-ru-mska
@@ -123,7 +123,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 DELETE /static-images?cors HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
@@ -133,7 +133,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```XML
+```xml
 HTTP/1.1 204 No Content
 Date: Mon, 31 Aug 2020 18:25:38 GMT
 x-amz-request-id: tx0000000000000002fae1f-0059690ca2-6441-ru-mska

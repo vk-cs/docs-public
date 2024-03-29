@@ -21,7 +21,7 @@
 
 Запрос:
 
-```
+```xml
 ...
 PUT / HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -38,7 +38,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 ...
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 17:31:43 GMT
@@ -54,7 +54,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 ...
 GET / HTTP/1.1
 Host: hb.vkcs.cloud
@@ -66,7 +66,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 ...
 HTTP/1.1 200 OK
 x-amz-request-id: tx000000000000002ba2427-0059651b6d-1268c-ru-mska
@@ -104,7 +104,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 ...
 GET / HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -116,7 +116,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 ...
 HTTP/1.1 200 OK
 x-amz-request-id: tx00000000000000029ac87-0059690330-8d1a-ru-mska
@@ -163,7 +163,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 ...
 HEAD / HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -175,7 +175,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 ...
 HTTP/1.1 200 OK
 x-amz-id-2: JuKZqmXuiwFeDQxhD7M8KtsKobSzWA1QEjLbTMTagkKdBX2z7Il/jGhDeJ3j6s80
@@ -194,7 +194,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 ...
 DELETE / HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
@@ -206,7 +206,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 ...
 HTTP/1.1 204 No Content
 Date: Mon, 31 Aug 2020 18:13:21 GMT

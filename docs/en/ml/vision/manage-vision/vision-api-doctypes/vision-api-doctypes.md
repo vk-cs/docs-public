@@ -41,7 +41,7 @@ The method is subject to [restrictions](../../vision-limits#image_processing)
 
 ## Request example
   
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -164,7 +164,7 @@ For each object (picture) there can be several types, with varying degrees of ce
 
 Request example:
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -214,7 +214,7 @@ Response example:
 
 Request example:
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \
@@ -258,7 +258,7 @@ Response example:
 
 Request example:
 
-```curl
+```http
 curl -X 'POST' \
   'https://smarty.mail.ru/api/v1/docs/detect?oauth_token=<ваш токен>&oauth_provider=mcs' \
   -H 'accept: application/json' \

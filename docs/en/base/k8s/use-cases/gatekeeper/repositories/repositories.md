@@ -23,7 +23,7 @@ To demostrate how Gatekeeper works several objects will be created:
 
    1. Create a constraint template based on the template manifest:
 
-      ``yaml
+      ```bash
       kubectl apply -f template.yaml
       ```
 

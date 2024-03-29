@@ -88,7 +88,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
       ```hcl
       data "vkcs_kubernetes_clustertemplate" "k8s-template" {
-          version = "1.23"
+          version = "<version of Kubernetes>"
       }
       ```
 

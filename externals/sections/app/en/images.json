@@ -27,10 +27,10 @@
                     "link": "docs/en/base/iaas/quick-start"
                 },
                 {
-                    "link": "docs/en/base/iaas/instructions/vm-images/vm-images-manage"
+                    "link": "docs/en/base/iaas/instructions/images/images-manage"
                 },
                 {
-                    "link": "docs/en/base/iaas/instructions/vm-images/vm-image-metadata"
+                    "link": "docs/en/base/iaas/instructions/images/image-metadata"
                 }
             ]
         },
