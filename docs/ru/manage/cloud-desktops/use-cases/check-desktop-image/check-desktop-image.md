@@ -1,6 +1,6 @@
-В сервисе Cloud Desktops вы можете использовать встроенные образы для развертывания рабочих столов, а также загружать собственные. Собственные образы рабочих столов должны удовлетворять [требованиям сервиса Cloud Desktops](/ru/manage/cloud-desktops/concepts/desktop-image).
+В сервисе Cloud Desktop вы можете использовать встроенные образы для развертывания рабочих столов, а также загружать собственные. Собственные образы рабочих столов должны удовлетворять [требованиям сервиса Cloud Desktop](/ru/manage/cloud-desktops/concepts/desktop-image).
 
-Далее показано, как проверить собственный образ на совместимость с сервисом Cloud Desktops.
+Далее показано, как проверить собственный образ на совместимость с сервисом Cloud Desktop.
 
 ## Подготовительные шаги
 
@@ -105,8 +105,8 @@
 
          Здесь:
 
-           - <ldap_id or domain_name> — IP-адрес или FQDN вашего сервера LDAP;
-           - \<username\> и \<password\> — имя и пароль пользователя LDAP с правами заведения ВМ в домен.
+           - `<ldap_id or domain_name>` — IP-адрес или FQDN вашего сервера LDAP;
+           - `<username>` и `<password>` — имя и пароль пользователя LDAP с правами заведения ВМ в домен.
 
      1. [Перезагрузите](/ru/base/iaas/instructions/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm) ВМ.
      1. [Перейдите](/ru/base/iaas/instructions/vm/vm-console#vnc_konsol) в консоль ВМ.
