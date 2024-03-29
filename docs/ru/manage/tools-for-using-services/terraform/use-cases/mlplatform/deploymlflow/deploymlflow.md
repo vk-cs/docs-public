@@ -2,10 +2,10 @@
 
 При создании инстанса используются:
 
-- ресурс [vkcs_mlplatform_mlflow_deploy](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_mlflow_deploy.md)
-- ресурс [vkcs_mlplatform_mlflow](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_mlflow.md)
-- ресурс [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md)
-- источник даннных [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md);
+- ресурс [vkcs_mlplatform_mlflow_deploy](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_mlflow_deploy.md);
+- ресурс [vkcs_mlplatform_mlflow](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_mlflow.md);
+- ресурс [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md);
+- источник данных [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md);
 - источник данных [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md).
 
 ## Перед созданием инстанса
@@ -16,7 +16,7 @@
 
 1. [Установите Terraform и настройте провайдер](../../../quick-start), если этого еще не сделано.
 
-1. Для выполнения этого сценария требуется провайдер версии 0.6.0 или выше. Убедитесь, что версия провайдера в файле `vkcs_provider.tf` выше или равна. Если версия провайдера ниже, [обновите провайдер](../../../quick-start#obnovlenie_terraform).
+1. Для выполнения этого сценария нужен провайдер версии 0.6.0 или выше. Убедитесь, что версия провайдера в файле `vkcs_provider.tf` не ниже. Если версия провайдера ниже, [обновите провайдер](../../../quick-start#obnovlenie_terraform).
 
 ## 1. Создайте файл с описанием инстанса MLflow Deploy
 
@@ -24,8 +24,7 @@
 
 - регион по умолчанию, зона доступности `GZ1`;
 - тип диска `SSD`, размер — 50 ГБ;
-- тип диска данных `SSD`; размер — 60 ГБ.
-
+- тип диска данных `SSD`, размер — 60 ГБ.
 Создайте файл конфигурации Terraform `main.tf` с содержимым:
 
 ```hcl
@@ -57,19 +56,19 @@ resource "vkcs_mlplatform_mlflow_deploy" "deploy" {
 
 - `flavor_id` — идентификатор типа ВМ:
 
-  - `flavor_id = data.vkcs_compute_flavor.basic.id` — значение берется из источника данных `vkcs_compute_flavor`. Далее показано, как его формировать.
+  - `flavor_id = data.vkcs_compute_flavor.basic.id` — значение берется из источника данных `vkcs_compute_flavor`. Источник будет сформирован далее.
   - `flavor_id = aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac` — указывается идентификатор типа ВМ, полученный через [OpenStack CLI](/ru/manage/tools-for-using-services/openstack-cli).
 
 - `mlflow_instance_id` — идентификатор инстанса MLflow для совместной работы:
 
-  - `mlflow_instance_id = vkcs_mlplatform_mlflow.mlflow.id` — создание нового инстанса, значение будет получено после создания ресурса `vkcs_mlplatform_jupyterhub`. Далее показано, как его создать.
+  - `mlflow_instance_id = vkcs_mlplatform_mlflow.mlflow.id` — создание нового инстанса, значение будет получено после создания ресурса `vkcs_mlplatform_jupyterhub`. Ресурс будет создан далее.
   - `mlflow_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"` — указывается идентификатор существующего инстанса. Идентификатор доступен на странице инстанса MLflow в [личном кабинете VK Cloud](https://cloud.vk.com/app).
 
 - `network_id` — идентификатор сети, в которой будет размещен инстанс:
 
-  - `network_id = vkcs_networking_network.default.id` — создание новой сети, значение будет получено после создания ресурса `vkcs_networking_network`. Далее показано, как его создать.
-  - `network_id = data.vkcs_networking_network.default.id` — резмещение в существующей сети, значение берется из источника данных `vkcs_networking_network`. Далее показано, как его формировать.
-  - `network_id = "bb76507d-zzzz-zzzz-zzzz-2bca1a4c4cfc"` — резмещение в существующей сети, указывается идентификатор сети, полученный из [списка сетей](/ru/networks/vnet/operations/manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  - `network_id = vkcs_networking_network.default.id` — создание новой сети, значение будет получено после создания ресурса `vkcs_networking_network`. Ресурс будет создан далее.
+  - `network_id = data.vkcs_networking_network.default.id` — размещение в существующей сети, значение берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
+  - `network_id = "bb76507d-zzzz-zzzz-zzzz-2bca1a4c4cfc"` — размещение в существующей сети. Указывается идентификатор сети, полученный из [списка сетей](/ru/networks/vnet/operations/manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 
 ## 2. (Опционально) Создайте файл с описанием источника данных для типа ВМ
 
@@ -81,7 +80,7 @@ data "vkcs_compute_flavor" "basic" {
 }
 ```
 
-Указанный в файле тип ВМ будет использоваться создания для инстанса MLflow в вашем проекте Terraform.
+Указанный в файле тип ВМ будет использоваться для создания инстанса MLflow в вашем проекте Terraform.
 
 ## 3. (Опционально) Создайте файл с описанием связанного инстанса MLflow
 
@@ -98,7 +97,7 @@ data "vkcs_compute_flavor" "basic" {
 </tablist>
 <tabpanel>
 
-Пример описания источника данных для сушествующей в проекте сети:
+Пример описания источника данных для существующей в проекте сети:
 
 ```hcl
 data "vkcs_networking_network" "default" {
@@ -147,7 +146,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 ## 4. Создайте необходимые ресурсы с помощью Terraform
 
-1. Поместите файлы конфигурации Terraform, в одну директорию:
+1. Поместите файлы конфигурации Terraform в одну директорию:
   
    - `vkcs_provider.tf`;
    - `main.tf`;
