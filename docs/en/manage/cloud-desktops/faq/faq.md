@@ -1,6 +1,6 @@
 ## An error has occurred in the operation of the service that I cannot fix, where can I contact?
 
-Contact [technical support](/en/contacts) VK Cloud.
+Contact VK Cloud [technical support](/en/contacts).
 
 ## What information should I provide when contacting technical support for the operation of the service?
 
