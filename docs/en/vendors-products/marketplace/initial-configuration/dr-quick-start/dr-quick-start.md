@@ -107,11 +107,11 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
 
    After installing the VM agent, `Ubuntu-DR` will appear on the main page of Hystax Acura [personal account](https://dr.mcs-cloud.ru) with **Unprotected** status.
 
-1. Expand the `Ubuntu-DR` VM menu in the **Machines Groups** list and select the **Edit Replication settings** option. In the window that opens, specify the parameters:
+1. Expand the `Ubuntu-DR` VM menu in the **Machines Groups** list and select the **Edit Replication schedule** option. In the window that opens, specify the parameters:
 
    - **Use custom Replication schedule settings**: select an option.
    - **Volume availability zone**: `MS1`.
-   - **Volume type**: `HDD`.
+   - **Volume type**: `CEPH-HDD`.
 
    <info>
 
