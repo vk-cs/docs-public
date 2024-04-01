@@ -67,7 +67,7 @@ The eviction threshold is typically 100 MB. This is the amount of free memory on
 
 Larger nodes can use resources more efficiently due to lower percentage reservations compared to smaller nodes. However, scaling the cluster will require time to launch additional nodes. As new nodes are added, the time required to deploy and cache container images will increase, which is critical to maintaining fault tolerance.
 
-The number of pods launched on a node affects the performance of the cluster. You can run a maximum of 110 pods, but for best node performance, plan for 30-40 pods per node.
+The number of pods launched on a node affects the performance of the cluster. You can run a maximum of 110 pods, but for best node performance, plan for 30–40 pods per node.
 
 When choosing the size of nodes and their number in a cluster, choose a distribution that maximizes resource utilization and maintains the desired level of fault tolerance and scalability.
 
