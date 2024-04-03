@@ -13,7 +13,7 @@ Log rotation is the process of processing, cleaning, archiving, and sending logs
 
 To access the logs of containerized applications in Kubernetes, Docker containers must transfer their logs to standard output streams (stdout) and errors (stderr). By default, Docker logging driver writes logs to a JSON file on the node, from where they can be obtained using the command:
 
-```
+```bash
 kubectl logs pod_name
 ```
 
@@ -25,7 +25,7 @@ Docker logging driver is a log collection mechanism built into the Docker engine
 
 When the Kubernetes orchestrator manages the lifecycle of Docker containers, pods with containers are often and unpredictably created, reloaded and deleted. If the settings of the Docker logging driver allow this, you can access the last logs of the pod before the reboot using the --previous argument:
 
-```
+```bash
 kubectl logs pod_name --previous
 ```
 
@@ -33,9 +33,9 @@ But it is impossible to get logs for more than one reboot back in this way. Dele
 
 Therefore, to work with application logs in Kubernetes, a system is needed to collect, aggregate, save and extract useful information from logs. A bundle of Elasticsearch search engine, Fluentd logging agent, and Kibana — EFK-stack dashboard is suitable for this task.
 
-The scheme of the logging system in the Kubernetes cluster:
+## The scheme of the logging system in the Kubernetes cluster:
 
-![](./assets/1579529210340-1579529210340.png)
+![The scheme of the logging system in the Kubernetes cluster](./assets/1579529210340-1579529210340.png){params[width=70%; height=70%]}
 
 Depending on the amount of information required in Elasticsearch processing, you can choose different ways to install the EFK stack:
 
@@ -50,7 +50,7 @@ We organize a centralized logging system for Kubernetes.
 
 1. Create namespace kube-logging:
 
-```
+```bash
 kubectl create ns kube-logging
 ```
 
@@ -62,7 +62,7 @@ When installing from helm, you will need to set the storage-class for the applic
 
 2. Find out the storage class available in the Kubernetes cluster:
 
-```
+```bash
 admin@k8s:~$ kubectl get sc 
 NAME            PROVISIONER            AGE
 hdd (default)   kubernetes.io/cinder   103d
@@ -73,7 +73,7 @@ ssd-retain      kubernetes.io/cinder   103d
 
 3. Install Elasticsearch in the Kubernetes cluster with the specified variables:
 
-   ```
+   ```bash
    helm install stable/elasticsearch \
          --name elastic \
          --set client.replicas=1 \
@@ -96,7 +96,7 @@ ssd-retain      kubernetes.io/cinder   103d
    kubectl get po -n kube-logging
    ```
 
-   ```
+   ```txt
    NAME                                           READY   STATUS    RESTARTS   AGE
    elastic-elasticsearch-client-c74598797-9m7pm   1/1     Running  
    elastic-elasticsearch-data-0                   1/1     Running  
@@ -105,11 +105,11 @@ ssd-retain      kubernetes.io/cinder   103d
 
 5. Find out the name of the services in kube-logging:
 
-   ```
+   ```bash
    kubectl get svc -n kube-logging
    ```
 
-   ```
+   ```txt
    NAME                              TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
    elastic-elasticsearch-client      ClusterIP   10.233.8.213   <none>        9200/TCP   11m
    elastic-elasticsearch-discovery   ClusterIP   None           <none>        9300/TCP   11m

@@ -88,7 +88,7 @@
 
       ```hcl
       data "vkcs_kubernetes_clustertemplate" "k8s-template" {
-          version = "1.23"
+          version = "<версия Kubernetes>"
       }
       ```
 
