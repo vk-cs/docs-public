@@ -7,59 +7,8 @@
 
 ## Подготовительные шаги
 
-1. Подготовьте окружение для работы с Python любым удобным способом:
-
-   <tabs>
-   <tablist>
-   <tab>С помощью VK Cloud</tab>
-   <tab>Самостоятельно</tab>
-   </tablist>
-   <tabpanel>
-
-   [Создайте инстанс JupyterHub](/ru/ml/mlplatform/jupyterhub/start/create) в проекте VK Cloud. Он уже содержит настроенные Python 3.x и pip, с которыми можно работать из блокнота JupyterHub (notebook).
-
-   </tabpanel>
-   <tabpanel>
-
-   1. Установите Python 3.x и pip.
-   1. При необходимости настройте виртуальное окружение (virtual environment) для Python.
-
-   Например, можно воспользоваться [conda](https://conda.io/projects/conda/en/latest/index.html) или выполнить эти шаги вручную.
-
-   </tabpanel>
-   </tabs>
-
-1. Установите библиотеку Cloud ML Platform для Python.
-
-   <tabs>
-   <tablist>
-   <tab>JupyterHub</tab>
-   <tab>pip</tab>
-   </tablist>
-   <tabpanel>
-
-   1. [Подключитесь к инстансу JupyterHub](/ru/ml/mlplatform/jupyterhub/start/connect).
-   1. В блокноте JupyterHub создайте и выполните ячейку со следующим содержимым:
-
-      ```bash
-      %pip install https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz
-      ```
-
-   </tabpanel>
-   <tabpanel>
-
-   Выполните команду:
-
-   ```bash
-   pip install https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz
-   ```
-
-   </tabpanel>
-   </tabs>
-
-   По приведенной ссылке доступна актуальная версия библиотеки.
-
-1. [Создайте токен доступа](../../instructions/tokens#sozdanie_tokena_dostupa) с ролью `Администратор`. Этот токен нужен для работы с библиотекой.
+1. [Установите библиотеку](../../ml-platform-library/install), если это еще не сделано.
+1. [Создайте токен доступа](../../ml-platform-library/authz) с ролью `Администратор`, если это еще не сделано. Этот токен нужен для работы с библиотекой.
 
    <err>
 
@@ -338,5 +287,5 @@ spark.stop()
 1. Удалите кластер Cloud Spark.
 1. Удалите реестр Docker для этого кластера.
 1. Удалите [объекты из бакета](/ru/base/s3/instructions/objects/manage-object#udalenie_obekta) и [сам бакет](/ru/base/s3/instructions/buckets/bucket#udalenie_baketa), который использовался этим кластером.
-1. [Удалите токен доступа](../../instructions/tokens#udalenie_tokena_dostupa).
+1. [Удалите токен доступа](../../ml-platform-library/authz#udalenie_tokena_dostupa).
 1. [Удалите инстанс ClickHouse](/ru/dbs/dbaas/instructions/manage-instance/clickhouse#udalenie_instansa_bd).
