@@ -50,6 +50,10 @@ Different types of routers can be used within a single VK Cloud subnet.
 
     To provide access to and from the internet, the private IP address of the port is translated to a floating IP address using the [1-to-1 NAT](https://docs.openstack.org/neutron/2023.2/admin/intro-nat.html#one-to-one-nat) mechanism.
 
+  - Organization of a [VPN tunnel](../vpn) between networks in projects with [SDN Neutron](../architecture#sdns_used).
+
+    This allows you to create a secure channel for managing the VK Cloud infrastructure or transferring data between the company network and VK Cloud networks.  
+
 ## Advanced router capabilities
 
 - **Connecting to a network junction between VK Cloud and a remote site.**
@@ -77,6 +81,14 @@ Different types of routers can be used within a single VK Cloud subnet.
 
   </info>
 
+- **Organization of a VPN tunnel between remote networks and networks in projects with SDN Sprut.**
+
+   [VPN tunnels](../vpn) in projects with [SDN Sprut](../architecture#sdns_used) are created based on an advanced router.
+
 - **Supporting redundancy for fault tolerance.**
 
   Advanced routers support VRRP protocol. Therefore, you can configure multiple routers in combination with VRRP to provide fault tolerance. If one or more routers fail, the remaining routers will continue to handle traffic that arrives at the IP address specified as the default gateway address when configuring VRRP.
+
+<warn>
+An advanced router does not support DNAT, it does not allow to use floating IP addresses to access objects on the subnet connected.
+</warn>
