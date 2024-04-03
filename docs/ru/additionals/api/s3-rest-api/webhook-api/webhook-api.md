@@ -88,7 +88,7 @@ Authorization: AWS4-HMAC-SHA256 Credential=II5JDQBAN3JYM4DNEB6C/20200831/ru-msk/
 
 Ответ:
 
-```
+```xml
 HTTP/1.1 200 OK
 Date: Mon, 31 Aug 2020 17:31:43 GMT
 x-amz-request-id: tx00000000000000010ad2b-005a6135e2-f647d-ru-mska
@@ -103,7 +103,7 @@ Connection: close
 
 Запрос:
 
-```
+```xml
 GET /?notification HTTP/1.1
 Host: my-test-bucket1.hb.vkcs.cloud
 Content-Length: 0
@@ -241,12 +241,12 @@ signature = hmac*sha256(\_url*, hmac*sha256(\_TopicArn*, hmac*sha256(\_Timestamp
 
 в нашем примере:
 
-```
+```text
 signature = hmac_sha256_hex(“http://test.com”, hmac_sha256(“mcs2883541269|bucketA|s3:ObjectCreated:Put”, hmac_sha256(“2019-12-26T19:29:12+03:00”, “RPE5UuG94rGgBH6kHXN9FUPugFxj1hs2aUQc99btJp3E49tA”)))
 ```
 
 При успешном подтверждении url, в ответ на запрос (1) будет отправлен response:
 
-```
+```http
 HTTP/1.1 200
 ```

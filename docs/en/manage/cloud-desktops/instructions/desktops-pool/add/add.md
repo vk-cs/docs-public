@@ -51,7 +51,7 @@ Changing the created virtual resources (VMs, load balancers, DB instances) outsi
 
 1. Run the pool creation wizard:
    1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-   1. Go to **Cloud desktops** → **Desktop pools**.
+   1. Go to **Cloud Desktop** → **Desktop pools**.
    1. Click the **Add** button.
 
    The wizard for creating a new pool opens.
@@ -68,15 +68,13 @@ Changing the created virtual resources (VMs, load balancers, DB instances) outsi
 
     - **Description**: the pool description, up to 250 characters.
     - **User group**: specify the user group of the AD or LDAP directory. The users in this group will be assigned desktops from the pool. Field requirements: from 3 to 100 characters, only Latin letters, symbols `-`, `_`, `.`, and numbers are allowed.
+    - **OU**: specify the organizational unit of the AD or LDAP directory. For example, `OU=Workstations,DC=domain,DC=com`.
     - **Naming mask**: the suffix with which the desktops names in this pool will begin. Field requirements: from 3 to 15 characters, only lowercase Latin letters and the `-` symbol at the end are allowed.
     - **Min number of desktops** — determines how many desktops will be deployed immediately after the pool is created. The default is `0`.
 
       This parameter cannot exceed the value of the parameter **Max number of desktops**.
 
     - **Max number of desktops** — determines how many desktops in the pool can be used at the same time.
-
-      The parameter is limited by the increment value in the **Naming mask and its increment** parameter. For example, with an increment of `3`, the maximum value of the parameter is `999`.
-
     - **Hot reserve** — available only for session pools. Hot reserve desktops become available only at the moment when the user connects and return to the reserve when the user session ends.
 
       There will be no available desktops in the hot reserve if the value `0` is selected or the parameters **Min number of desktops** and **Max number of desktops** are equal.

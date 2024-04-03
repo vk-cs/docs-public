@@ -1,6 +1,6 @@
 ### Service Description
 
-Cloud Logging is a service for working with user application logs on VMs and in the VK Cloud. Collecting, storing, reading, displaying and processing logs in a single interface in the cloud.
+Cloud Logging is a service for working with user application logs on VMs and in VK Cloud. Collecting, storing, reading, displaying and processing logs in a single interface in the cloud.
 
 The service centralizes the logs of the entire product system in a single control panel, stores records and makes it convenient to search and work with them. It also helps to control the operation of applications and debug them if necessary.
 

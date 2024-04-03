@@ -28,7 +28,7 @@ On the VK Cloud platform, it is not enough to enable multiqueue only at the imag
 
 The option includes multiqueue at the image level and will work for all VMs created after executing the instruction.
 
-1. [Create](../../instructions/vm-images/vm-images-manage) image VM.
+1. [Create](../../instructions/images/images-manage) image VM.
 1. Get a list of available images:
 
     ```bash

@@ -57,7 +57,7 @@ To deploy the OpenVPN service in the project::
 1. (Optional) Block the user. Run the command:
 
    ```bash
-   /home/ubuntu/remove_client.sh <username>
+   /home/ubuntu/revoke_client.sh <username>
    ```
 
    After the script successfully completes, the `crl.pem` certificate will be updated, and the OpenVPN service will be restarted. Access for the `<username>` user will be revoked.

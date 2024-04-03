@@ -24,7 +24,7 @@
       "iconMobile": "/ru/assets/billing-icon-mobile.svg"
     },
     {
-      "title": "Информационная безопаность",
+      "title": "Информационная безопасность",
       "linkPartialPath": "/ru/additionals/start/it-security",
       "description": "Решения VK Cloud по обеспечению безопасности использования платформы",
       "icon": "/ru/assets/secure-icon.svg",
@@ -34,6 +34,7 @@
 
   "uuid": "8039e837-cbc5-4f10-8185-59be352f986e",
   "additionalUuids": [
+    "3d8fbd42-5a15-405d-9891-8ce10e4f8c32",
     "b3f92ce8-83ce-4647-82d9-6ce8d1356b12",
     "4fdb11b9-1d08-4620-9efc-3c336cde72bd",
     "eddabafb-d6da-41cf-ba84-7d2eef26fce4",

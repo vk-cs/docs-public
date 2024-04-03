@@ -125,7 +125,7 @@ The installation image may contain several editions of the operating system. Sin
 
 ## 4. Import the image to the VK Cloud
 
-[Use the CLI](../../instructions/vm-images/vm-images-manage#importing_an_image) to import an image:
+[Use the CLI](../../instructions/images/images-manage#importing_an_image) to import an image:
 
 ```bash
 openstack image create --private --container-format bare --disk-format qcow2 --file D:\Win_Server_2016_img.qcow2 --property hw_qemu_guest_agent=yes --property store=s3 --property min_ram=2048 --property os_require_quiesce=yes --property min_disk=40 --property os_type=windows --property os_admin_user=Administrator --property mcs:lic:mswinsrv=true --property mcs_name='Windows Server 2016 Standard (en)' --property mcs_os_distro='server' --property mcs_os_edition='std' --property mcs_os_type='windows' --property mcs_os_lang='en' --property mcs_os_type='windows' --property mcs_os_version='2016' --property os_distro='win2k16' <image name>
@@ -135,4 +135,4 @@ Wait for the operation to complete. After downloading the image, you will be abl
 
 ## Delete unused resources
 
-If you no longer need the imported image, [delete it](../../instructions/vm-images/vm-images-manage#deleting_an_image).
+If you no longer need the imported image, [delete it](../../instructions/images/images-manage#deleting_an_image).
