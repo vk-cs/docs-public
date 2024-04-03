@@ -8,5 +8,6 @@
   "markdown": "Информация по работе с библиотекой и справочник методов, применимых к Cloud Spark.",
   "icon": "",
   "infobarItems": null,
-  "weight": 4
+  "weight": 4,
+  "uuid": "0f090db7-9ad5-4355-a129-658d588ad894"
 }
