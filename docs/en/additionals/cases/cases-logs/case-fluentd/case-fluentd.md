@@ -33,9 +33,9 @@ But it is impossible to get logs for more than one reboot back in this way. Dele
 
 Therefore, to work with application logs in Kubernetes, a system is needed to collect, aggregate, save and extract useful information from logs. A bundle of Elasticsearch search engine, Fluentd logging agent, and Kibana — EFK-stack dashboard is suitable for this task.
 
-The scheme of the logging system in the Kubernetes cluster:
+## The scheme of the logging system in the Kubernetes cluster:
 
-![](./assets/1579529210340-1579529210340.png)
+![The scheme of the logging system in the Kubernetes cluster](./assets/1579529210340-1579529210340.png){params[width=70%; height=70%]}
 
 Depending on the amount of information required in Elasticsearch processing, you can choose different ways to install the EFK stack:
 

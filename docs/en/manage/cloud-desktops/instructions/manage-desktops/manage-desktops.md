@@ -5,10 +5,10 @@ When a pool is successfully created, desktops are created in it automatically.
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Open the list of desktops using one of the following methods:
 
-   - Through the general list of desktops: go to **Cloud desktops** → **Desktop list**.
+   - Through the general list of desktops: go to **Cloud Desktop** → **Desktop list**.
    - Through the list of pool desktops:
 
-     1. Go to **Cloud desktops** → **Desktop pools**.
+     1. Go to **Cloud Desktop** → **Desktop pools**.
      1. In the list of pools, click on the name of the desired pool.
      1. Go to the **Desktops** tab.
 
@@ -23,12 +23,12 @@ This is a group operation: if necessary, you can manage multiple pool desktops b
 
    - Through the general list of desktops:
 
-     1. Go to **Cloud desktops** → **Desktop list**.
+     1. Go to **Cloud Desktop** → **Desktop list**.
      1. Check the box for the desired desktop.
 
    - Through the list of pool desktops:
 
-     1. Go to **Cloud desktops** → **Desktop pools**.
+     1. Go to **Cloud Desktop** → **Desktop pools**.
      1. In the list of pools, click on the name of the desired pool.
      1. Go to the **Desktops** tab.
      1. Check the box for the desired desktop.
@@ -42,7 +42,7 @@ The **Start** button is active only if all VMs for the selected tables are disab
 
 </info>
 
-## End of user session
+## Ending the user session
 
 The state of the desktop after the end of the session is determined by the setting **Actions at the end of session**, set at [pool creation](../desktops-pool/add/).
 
@@ -89,12 +89,12 @@ This is a group operation: if necessary, you can manage multiple pool desktops b
 
    - Through the general list of desktops:
 
-     1. Go to **Cloud desktops** → **Desktop list**.
+     1. Go to **Cloud Desktop** → **Desktop list**.
      1. Check the box for the desired desktop.
 
    - Through the list of pool desktops:
 
-     1. Go to **Cloud desktops** → **Desktop pools**.
+     1. Go to **Cloud Desktop** → **Desktop pools**.
      1. In the list of pools, click on the name of the desired pool.
      1. Go to the **Desktops** tab.
      1. Check the box for the desired desktop.
