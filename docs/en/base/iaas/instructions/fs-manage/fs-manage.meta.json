@@ -1,11 +1,11 @@
 {
-    "title": "File storage management",
-    "pageDescription": "How to create file storages, connect them to instances, configure access rules and take snapshots.",
-    "shortDescription": "How to create file storages, connect them to instances, configure access rules and take snapshots",
-    "metaTitle": "File storage management",
-    "metaDescription": "How to create file storages, connect them to instances, configure access rules and take snapshots",
-    "sectionTitle": "File storage management",
-    "markdown": "How to create file storages, connect them to instances, configure access rules and take snapshots.",
+    "title": "File share",
+    "pageDescription": "Creating and deleting file storages, connecting them to instances, configuring access rules and take storage snapshots.",
+    "shortDescription": "Creating and deleting file storages, connecting them to instances, configuring access rules and take storage snapshots",
+    "metaTitle": "File share",
+    "metaDescription": "Creating and deleting file storages, connecting them to instances, configuring access rules and take storage snapshots.",
+    "sectionTitle": "File share",
+    "markdown": "Creating and deleting file storages, connecting them to instances, configuring access rules and take storage snapshots.",
     "icon": "",
     "infobarItems": null,
     "weight": 4,
@@ -16,5 +16,5 @@
         "2fd98a79-90ba-4067-80d3-4ff38ec65bba"
     ],
     "createdAt": "2023-04-24T13:06:27.000Z",
-    "updatedAt": "2024-02-26T07:21:18.000Z"
+    "updatedAt": "2024-03-07T12:43:12.000Z"
 }

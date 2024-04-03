@@ -13,7 +13,7 @@ If you use other servers and hardware, some script steps may differ from those d
 
 ## Scheme of work
 
-**![](./assets/1575015458286-1575015458286.png)**
+![Scheme of work](./assets/1575015458286-1575015458286.png){params[width=74%; height=74%]}
 
 **Docker Swarm** is Docker in cluster mode. A cluster can consist of one node or several nodes. For this scenario, one node is enough.
 
@@ -29,20 +29,20 @@ To run a script:
 1. Login to the Docker node as root.
 2. Install packages:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 ```
 
 3. Add the Docker repository key:
 
-```
+```bash
 root@ubuntu-std1-1:~# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt key add-
 OK
 ```
 
 4. Add the Docker repository:
 
-```
+```bash
 root@ubuntu-std1-1:~# add-apt-repository \
 > "deb [arch=amd64] https://download.docker.com/linux/ubuntu\
 > $(lsb_release -cs) \
@@ -51,13 +51,13 @@ root@ubuntu-std1-1:~# add-apt-repository \
 
 5. Install Docker:
 
-```
+```bash
 root@ubuntu-std1-1:~# apt-get update && apt-get install -y docker-ce docker-ce-cli containerd.io
 ```
 
 6. Initialize the cluster:
 
-```
+```bash
 root@ubuntu-std1-1:~# docker swarm init
 ```
 
@@ -65,7 +65,7 @@ root@ubuntu-std1-1:~# docker swarm init
 
 1. Create a directory /root/wordpress and place the following docker-compose.yml file there:
 
-```
+```yaml
 version: '3'
 
 networks:
@@ -145,7 +145,7 @@ For each container, the Fluentd log driver is described, the background connecti
 
 2. Place the nginx.conf configuration file in the /root/wordpress directory:
 
-```
+```nginx
 events {
 
 }
@@ -171,7 +171,7 @@ proxy_set_header X-Forwarded-Proto $scheme;
 
 3. Run containers:
 
-```
+```bash
 root@ubuntu-std1-1:~# docker stack deploy -c /root/wordpress/docker-compose.yml blog
 Creating network blog_backend
 Creating network blog_frontend
@@ -182,7 +182,7 @@ Creating service blog_db
 
 4. Make sure everything started successfully:
 
-```
+```bash
 root@ubuntu-std1-1:~# docker service ls
 ID . NAME . . . . . MODE . . . REPLICAS .
 12jo1tmdr8ni 1/1 mysql:5.7
@@ -208,13 +208,13 @@ The Fluentd version being used is td-agent 3.5.1-0.
 
 1. Install fluentd:
 
-```
+```bash
 root@ubuntu-std1-1:~# curl -L https://toolbelt.treasuredata.com/sh/install-ubuntu-bionic-td-agent3.sh | sh
 ```
 
 2. Add fluentd to startup:
 
-```
+```bash
 root@ubuntu-std1-1:~# systemctl enable td-agent
 Synchronizing state of td-agent.service with SysV service script with /lib/systemd/systemd-sysv-install.
 Executing: /lib/systemd/systemd-sysv-install enable td-agent
@@ -226,7 +226,7 @@ The fluentd configuration file is located in the /etc/td-agent/td-agent.conf fol
 
 **Source section** \- contains a description of the source of the logs. The Docker Fluentd log driver sends logs to tcp://localhost:24224 by default. Let's describe the source section for receiving logs:
 
-```
+```xml
 <source>
 @type forward
 port 24224
@@ -236,7 +236,7 @@ port 24224
 @type forward means the fluentd protocol that runs over a TCP connection and is used by Docker to send logs to the Fluentd daemon.
 
 **Data output section in elasticsearch:**
-```
+```xml
 <match \*\*>
 @type elasticsearch
 host <IP_ADDRESS_OF_ELK>
@@ -251,7 +251,7 @@ Such a configuration file is the minimum for sending logs to Elasticsearh, but f
 
 A typical example of filtering is setting up a selection by regexp:
 
-```
+```xml
 <filter foo.bar>
 @type grep
 <regexp>
@@ -271,14 +271,14 @@ pattern /uncool/
 
 This example will select records from the stream that contain the word cool in the message field, the hostname field, for example, www123.example.com, and do not contain the word uncool in the tag field. The following data will be verified:
 
-```
+```json
 {"message":"It's cool outside today", "hostname":"web001.example.com"}
 {"message":"That's not cool", "hostname":"web1337.example.com"}
 ```
 
 The following are not:
 
-```
+```json
 {"message":"I am cool but you are uncool", "hostname":"db001.example.com"}
 {"hostname":"web001.example.com"}
 {"message":"It's cool outside today"}
@@ -288,7 +288,7 @@ This example is taken from the [fluentd manual](https://docs.fluentd.org/filter/
 
 Parsers are designed to parse logs of a standard structure (for example, Nginx logs). Parsers are specified in the source section:
 
-```
+```xml
 <source>
 @typetail
 path /path/to/input/file

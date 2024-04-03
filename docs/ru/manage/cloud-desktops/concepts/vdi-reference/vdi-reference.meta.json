@@ -1,14 +1,14 @@
 {
-    "title": "Справочник Cloud Desktop",
-    "pageDescription": "Справочник, описывающий основные понятия и объекты сервиса Cloud Desktop.",
-    "shortDescription": "Основные понятия и объекты",
-    "metaTitle": "Справочник Cloud Desktop",
-    "metaDescription": "Справочник, описывающий основные понятия и объекты сервиса Cloud Desktop.",
-    "sectionTitle": "Справочник Cloud Desktop",
+    "title": "Терминология",
+    "pageDescription": "Основные понятия и объекты сервиса Cloud Desktop.",
+    "shortDescription": "Основные понятия и объекты сервиса",
+    "metaTitle": "Терминология Cloud Desktop",
+    "metaDescription": "Основные понятия и объекты сервиса Cloud Desktop.",
+    "sectionTitle": "Терминология",
     "icon": "",
     "infobarItems": null,
     "weight": 2,
     "uuid": "1f7bc12f-92e7-49cc-bb3f-b7d115cabf05",
     "createdAt": "2023-10-26T06:43:55.000Z",
-    "updatedAt": "2024-02-26T07:21:18.000Z"
+    "updatedAt": "2024-03-07T12:43:12.000Z"
 }

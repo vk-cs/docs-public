@@ -13,14 +13,14 @@ To install the Harbor repositories:
 
 1. Download the online installer script and unzip it:
 
-```
+```bash
 root@ubuntu-std3-2-4-40gb:~# wget https://github.com/goharbor/harbor/releases/download/v1.9.3/harbor-online-installer-v1.9.3.tgz
 root@ubuntu-std3-2-4-40gb:~# tar -zxvf harbor-online-installer-v1.9.3.tgz
 ```
 
 2. In the resulting harbor folder, configure the `harbor.yml` file:
 
-```
+```yaml
 hostname: <SERVER_DNS_NAME>
 http:
     # port for http, default is 80. If https enabled, this port will redirect to https port
@@ -44,7 +44,7 @@ And:
 
 3. Run the `install.sh` script:
 
-```
+```bash
 root@ubuntu-std3-2-4-40gb:~/harbor# ./install.sh
 
 [Step 0]: checking installation environment ...
@@ -74,7 +74,7 @@ Harbor launched.
 
 Since we are using non-standard ports, the URL will look like this:
 
-```
+```http
 https://<SERVER_DNS_NAME>:8443
 ```
 
