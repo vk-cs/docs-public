@@ -107,11 +107,11 @@
 
    После установки агента ВМ `Ubuntu-DR` появится на главной странице [личного кабинета](https://dr.mcs-cloud.ru) Hystax Acura со статусом **Unprotected**.
 
-1. Раскройте меню ВМ `Ubuntu-DR` в списке **Machines Groups** и выберите опцию **Edit Replication settings**. В открывшемся окне укажите параметры:
+1. Раскройте меню ВМ `Ubuntu-DR` в списке **Machines Groups** и выберите опцию **Edit Replication schedule**. В открывшемся окне укажите параметры:
 
    - **Use custom Replication schedule settings**: выберите опцию.
    - **Volume availability zone**: `MS1`.
-   - **Volume type**: `HDD`.
+   - **Volume type**: `CEPH-HDD`.
 
    <info>
 

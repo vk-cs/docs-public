@@ -12,7 +12,7 @@ VPN allows you to organize a tunnel between one or more VK Cloud subnets and the
 
 The VPN service is based on [StrongSwan](https://www.strongswan.org) and allows organizing IPsec tunnels. To link VK Cloud subnets and client subnets:
 
-1. Connect to the [standard router](../router) all VK Cloud subnets that you want to be accessible via VPN.
+1. Connect to [router](../router) all VK Cloud subnets that you want to access via VPN. Networks in [SDN Sprut](../architecture#sdns_used) can only use an advanced router to organize VPN, and networks in [SDN Neutron](../architecture#sdns_used) can only use a standard one.
 
 1. Configure this router to access the [external network](../net-types#external_network) so that you can use its `SNAT` interfaces.
 
@@ -35,3 +35,13 @@ The VPN service is based on [StrongSwan](https://www.strongswan.org) and allows 
    - works in the `main` mode;
    - supports only authorization by pre-shared key;
    - supports a limited subset of Diffie-Hellman groups.
+
+General scheme for organizing a VPN connection in SDN Sprut:
+
+![General scheme for organizing a VPN connection in SDN Sprut](./assets/VPN_Sprut_scheme.png)
+
+The advanced router does not work with a floating [IP address (DNAT)](../ips-and-inet#floating_ip_adress). To use the capabilities of a floating IP address when transferring data between networks connected by a VPN tunnel in SDN Sprut, add a transit network and a standard router between the advanced router and the rest of the infrastructure in VK Cloud.
+
+Scheme for organizing a VPN connection in SDN Sprut using a floating IP address (DNAT):
+
+![Scheme for organizing a VPN connection in SDN Sprut using a floating IP address](./assets/VPN_FIP_scheme.png)
