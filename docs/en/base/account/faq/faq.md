@@ -1,8 +1,15 @@
-## How to register in VK Cloud?
+
+<details>
+
+<summary>How to register in VK Cloud?</summary>
 
 Go to [VK Cloud page](https://cloud.vk.com/en/) and click **Create a VK Cloud Account**. Fill in all the required fields to start using the account. Read more in the article [Registration in VK Cloud](/en/additionals/start/account-registration).
 
-## How do I register with a phone number from another country?
+</details>
+
+<details>
+
+<summary>How do I register with a phone number from another country?</summary>
 
 Contact technical support by email `support@mcs.mail.ru` with a request to enter the phone number manually.
 
@@ -12,15 +19,27 @@ Through the VK Cloud personal account, you can register only phone numbers that 
 
 </warn>
 
-## What rights do the project participants have?
+</details>
+
+<details>
+
+<summary>What rights do the project participants have?</summary>
 
 The role model of the project participants is described in the article [Personal account roles and their permissions](../../account/concepts/rolesandpermissions).
 
-## How do I add an additional participant to the project?
+</details>
+
+<details>
+
+<summary>How do I add an additional participant to the project?</summary>
 
 The procedure is described in the article [Access management](../instructions/project-settings/access-manage#inviting_a_new_member_to_the_project). When adding, specify the role, focusing on the [role matrix](../concepts/rolesandpermissions/).
 
-## How do I recover my account password?
+</details>
+
+<details>
+
+<summary>How do I recover my account password?</summary>
 
 1. Click **Forgot password?** on the login screen to your personal account.
 1. Enter your email in the field **Email which was used during registration**.
@@ -29,7 +48,11 @@ The procedure is described in the article [Access management](../instructions/pr
 1. Enter a new password in the field of the same name.
 1. Click the **Save** button.
 
-## How do I change the phone number for an account?
+</details>
+
+<details>
+
+<summary>How do I change the phone number for an account?</summary>
 
 Contact [technical support](/en/contacts/), enter the data:
 
@@ -38,14 +61,28 @@ Contact [technical support](/en/contacts/), enter the data:
 
 The number will be changed after successful confirmation of the user's identity.
 
-## How do I change the owner of the VK Cloud account?
+</details>
+
+<details>
+
+<summary>How do I change the owner of the VK Cloud account?</summary>
 
 Use the instructions from the article [Project management](../instructions/project-settings/manage#change_of_the_project_owner).
 
-## Can a GeekBrains program participants request an increase in quotas on VK Cloud?
+</details>
+
+<details>
+
+<summary>Can a GeekBrains program participants request an increase in quotas on VK Cloud?</summary>
 
 Yes, they can. To do this, contact the designated GeekBrains curator.
 
-## How do I delete an account?
+</details>
+
+<details>
+
+<summary>How do I delete an account?</summary>
 
 Contact technical support, read more in the article [Deleting an account](../use-cases/account-delete/).
+
+</details>
