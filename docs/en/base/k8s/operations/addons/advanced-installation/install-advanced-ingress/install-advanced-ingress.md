@@ -291,7 +291,7 @@ After editing the addon code [continue installing the addon](#installing_the_add
 
 <info>
 
-If you [selected](#installing_the_addon) a service name other than `ingress-nginx` or a namespace other than `ingress-nginx` when installing the addon, adjust the steps below.
+The following uses the service name `ingress-nginx` and the `ingress-nginx` namespace. If other parameters were selected when adding the addon, adjust the commands.
 
 </info>
 
