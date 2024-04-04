@@ -293,7 +293,7 @@ If the project lacks [quotas](../../../concepts/quotasandlimits), contact [techn
 
 <info>
 
-Information about increasing quotas [for GeekBrains program participants](../../../faq#can_a_geekbrains_program_participants_request_an_increase_in_quotas_on_vk_cloud).
+Information about increasing quotas for GeekBrains program participants you can find in [FAQ](../../../faq).
 
 </info>
 
