@@ -1,19 +1,21 @@
 {
-  "title": "FAQ",
-  "pageDescription": "Answers to frequently asked questions about the Cloud Servers service.",
-  "shortDescription": "Answers to frequently asked questions about the Cloud Servers service",
-  "metaTitle": "FAQ",
-  "metaDescription": "Answers to frequently asked questions about the Cloud Servers service",
-  "sectionTitle": "FAQ",
-  "markdown": "Answers to frequently asked questions about the Cloud Servers service.",
-  "icon": "",
-  "infobarItems": null,
-  "weight": 10,
-  "additionalUuids": [
-    "09d59eb1-1a1f-48ca-92b8-11d78bf290ad",
-    "ecb73737-3dac-4102-a11d-86ba0870e9e8",
-    "411bd59b-068e-4179-9fd1-825f118cba9a",
-    "c131a049-d9c8-4287-be79-6486f1c4e572"
-  ],
-  "uuid": "fc25d210-12e4-45c7-ba98-e8f22b0c4863"
+    "title": "FAQ",
+    "pageDescription": "Answers to frequently asked questions about the Cloud Servers service.",
+    "shortDescription": "Answers to frequently asked questions about the Cloud Servers service",
+    "metaTitle": "FAQ",
+    "metaDescription": "Answers to frequently asked questions about the Cloud Servers service",
+    "sectionTitle": "FAQ",
+    "markdown": "Answers to frequently asked questions about the Cloud Servers service.",
+    "icon": "",
+    "infobarItems": null,
+    "weight": 10,
+    "additionalUuids": [
+        "09d59eb1-1a1f-48ca-92b8-11d78bf290ad",
+        "ecb73737-3dac-4102-a11d-86ba0870e9e8",
+        "411bd59b-068e-4179-9fd1-825f118cba9a",
+        "c131a049-d9c8-4287-be79-6486f1c4e572"
+    ],
+    "uuid": "fc25d210-12e4-45c7-ba98-e8f22b0c4863",
+    "createdAt": "2024-04-04T17:24:48.000Z",
+    "updatedAt": "2024-04-04T17:24:48.000Z"
 }
