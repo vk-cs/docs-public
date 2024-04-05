@@ -73,7 +73,6 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
 
 >.|`data.vkcs_compute_flavor.basic.id`
 |Идентификатор берется из источника данных `vkcs_compute_flavor`, который будет сформирован далее.
-
 >.|`"aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`
 |Указывается идентификатор, полученный через [OpenStack CLI](/ru/manage/tools-for-using-services/openstack-cli).
 
@@ -82,10 +81,8 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
 
 >.|`vkcs_networking_network.default.id`
 |Инстанс будет размещен в новой сети, которая будет создана ресурсом `vkcs_networking_network`. Ресурс будет сформирован далее.
-
 >.|`data.vkcs_networking_network.default.id`
 |Инстанс будет размещен в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
-
 >.|`"bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`
 |Инстанс будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/operations/manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
 |===
