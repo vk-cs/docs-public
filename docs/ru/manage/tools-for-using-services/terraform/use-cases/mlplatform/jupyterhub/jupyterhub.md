@@ -62,8 +62,8 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
 |Аргумент
 |Описание
 
-|`admin_password`
-|Пароль администратора инстанса JupyterHub. Минимальная длина пароля — 8 символов. Пароль должен содержать:
+|`admin_password` — пароль администратора инстанса JupyterHub.
+| Минимальная длина пароля — 8 символов. Пароль должен содержать:
 
 - заглавные и строчные буквы латинского алфавита;
 - хотя бы одну цифру и спецсимвол из диапазона `? ! ~ @ # $ % ^ & _ - + * = ; : , . < >` `\|` `[ ] { } ( )`.
@@ -75,7 +75,7 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
 |`"aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`
 |Указывается идентификатор, полученный через [OpenStack CLI](/ru/manage/tools-for-using-services/openstack-cli).
 
-2+|`network_id` — где будет размещен инстанс:
+2+|`network_id` — идентификатор сети, в которой будет размещен инстанс:
 
 |`vkcs_networking_network.default.id`
 |Инстанс будет размещен в новой сети, которая будет создана ресурсом `vkcs_networking_network`. Ресурс будет сформирован далее.
