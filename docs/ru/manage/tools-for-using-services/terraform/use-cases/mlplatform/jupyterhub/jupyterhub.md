@@ -60,7 +60,7 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
 - `admin_password` — пароль администратора инстанса JupyterHub. Минимальная длина пароля — 8 символов. Пароль должен содержать:
 
   - заглавные и строчные буквы латинского алфавита;
-  - хотя бы одну цифру и спецсимвол из диапазона `? ! ~ @ # $ % ^ & _ - + * = ; : , . < >` `\|` `[ ] { } ( )`.
+  - хотя бы одну цифру и спецсимвол из диапазона `? ! ~ @ # $ % ^ & _ - + * = ; : , . < > | [ ] { } ( )`.
 
 - `flavor_id` — идентификатор типа ВМ. Идентификатор можно прописать в манифесте или получить из источника данных:
 
@@ -77,15 +77,11 @@ resource "vkcs_mlplatform_jupyterhub" "jupyterhub" {
   <details>
     <summary>Примеры</summary>
 
-[cols="2,2"]
-|===
-|`network_id = vkcs_networking_network.default.id`
-|Инстанс будет размещен в новой сети, которая будет создана ресурсом `vkcs_networking_network`. Ресурс будет сформирован далее.
-|`network_id = data.vkcs_networking_network.default.id`
-|Инстанс будет размещен в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
-|`network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`
-|Инстанс будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/operations/manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
-|===
+  - `network_id = vkcs_networking_network.default.id`: инстанс будет размещен в новой сети, которая будет создана ресурсом `vkcs_networking_network`. Ресурс будет сформирован далее.
+  - `network_id = data.vkcs_networking_network.default.id`: инстанс будет размещен в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/operations/manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+
+  </details>
 
 ## 2. (Опционально) Создайте файл с описанием источника данных для типа ВМ
 
