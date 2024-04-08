@@ -26,7 +26,7 @@ The Openstack Neutron API is used to work with SDN and NFV objects. Hosted agent
 
 As an SDN, the VK Cloud platform uses:
 
-- Openstack Neutron.
+- **Neutron** by Openstack.
 
   It is effective for a small network, but in large networks (thousands and tens of thousands ports) there can be problems:
   
@@ -34,7 +34,7 @@ As an SDN, the VK Cloud platform uses:
   - With a large number of events due to overcomplicated data transmission layer (dataplane).
   - With the loss of these events in the RabbitMQ queue because of their large number. This queue acts as a transport for service events.
 
-- Sprut, VK Cloud's own SDN, fully compatible with the Openstack Neutron API.
+- **Sprut**, VK Cloud's own SDN, fully compatible with the Openstack Neutron API.
 
   It lacks the listed disadvantages of Openstack Neutron. Sprut provides stable operation of networks and network functions on top of these networks on a large scale. Its advantages:
 
@@ -48,3 +48,9 @@ As an SDN, the VK Cloud platform uses:
 
   - [How to choose SDN for high loads](https://www.youtube.com/watch?v=iqSXRZ8b_bk) video;
   - [Как мы в VK Cloud SDN-ы писали](https://habr.com/ru/companies/vk/articles/763760/) article.
+
+<info>
+
+Sprut is the main SDN for all new projects. To find out which SDN is used in your project or to connect another, [contact technical support](/ru/contacts).
+
+</info>
