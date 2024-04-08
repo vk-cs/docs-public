@@ -1,13 +1,13 @@
 ## Preparatory steps
 
 1. Install Terraform from the official VK Cloud [mirror](https://hashicorp-releases.mcs.mail.ru/terraform).
-1. Open your VK CLoud [personal account](https://msk.cloud.vk.com/app/).
+1. Open your VK CLoud [personal account](https://msk.cloud.vk.com/app/en/).
 
 1. Enable [two-factor authentication](/en/base/account/instructions/account-manage/security#enabling_2fa) and [API access](/en/manage/tools-for-using-services/rest-api/enable-api#activate_api_access), if not enabled yet.
 
 1. Click on your login at the top of the page, select **Project settings** from the drop-down menu.
 
-1. Go to the **Terraform** tab. Download the main [Terraform config](../reference/configuration#the_terraform_provider_config_file) and the [Terraform mirror config](../reference/configuration#the_terraform_mirror_config_file) files by clicking on the corresponding buttons.
+1. Go to the **Terraform** tab. Download the main [Terraform configuration](../reference/configuration#the_terraform_provider_config_file) and the [Terraform mirror configuration](../reference/configuration#the_terraform_mirror_config_file) files by clicking the corresponding buttons.
 
     Files named `vkcs_provider.tf` and `terraform.rc` will be downloaded.
 
@@ -52,7 +52,7 @@ In the directory from which you are going to work with the project, run the comm
 terraform init
 ```
 
-Supplementary files necessary for working with Terraform will be created.
+This will create supplementary files needed for Terraform to work.
 
 ## Creating resources via Terraform
 
@@ -64,8 +64,8 @@ Supplementary files necessary for working with Terraform will be created.
     terraform apply
     ```
 
-    Confirm the creation by typing `yes` in the terminal window.
+    In the terminal window, type `yes` to confirm the operation.
 
-1. Wait until the operation is completed.
+1. Wait until the operation is complete.
 
 The created resources will be available in your personal account.

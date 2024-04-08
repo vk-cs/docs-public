@@ -1,163 +1,340 @@
-<warn>
+Using Terraform you can create virtual machines. As an example, a VM will be created that is accessible from an external network. To access the VM, a pair of SSH keys already existing in the project will be used.
 
-First of all, make sure you [installed and configured Terraform](../../../quick-start).
+Two options for VM configuration will be considered: without additional settings and with an additional disk connected.
 
-</warn>
+## Preparatory steps
 
-### Create a virtual network for the VM
+1. Review the available resources and [quotas](/en/base/account/concepts/quotasandlimits) for the [region](/en/base/account/concepts/regions) where you plan to create a VM. Different regions may have different quotas configured.
 
-To create a virtual machine, you need to describe the resources of the virtual network in which the VM will work. For this:
+    If you want to increase quotas, contact [technical support](/en/contacts).
 
-1. Create a file `network.tf`, which will describe the configuration of the network being created.
-2. Add the text from the example below and correct the settings for your network. To create a VM, you need the following network objects:
+1. [Install Terraform and configure the provider](../../../quick-start) if not already done.
 
-    - Resources:
+    Place the provider settings in the Terraform configuration file `provider.tf`.
 
-      - **vkcs_networking_network** — network where the VM will be created. In the example below, a network is created with the name "compute-net".
-      - **vkcs_networking_subnet** - subnet from the network. In the example: subnet_1.
-      - **vkcs_networking_router** - a router for an external network and interaction with the outside world. In the example: vm_router.
-      - **vkcs_networking_router_interface** - connect the router to the internal network.
+1. Make sure the OpenStack client is [installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and then [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) with the project.
 
-    - Data sources:
+1. Create a Terraform configuration file `variables.tf` with variables:
 
-      - **vkcs_networking_network** - external network for obtaining public IP (Floating IP).
+   ```hcl
+   variable "image_flavor" {
+     type = string
+     default = "Ubuntu-22.04-202208"
+   }
 
-Example `network.tf` file:
+   variable "compute_flavor" {
+     type = string
+     default = "STD2-2-4"
+   }
 
-```hcl
-data "vkcs_networking_network" "extnet" {
-   name="extnet"
-}
+   variable "key_pair_name" {
+     type = string
+     default = "keypair-terraform"
+   }
 
-resource "vkcs_networking_network" "compute" {
-   name="compute net"
-}
+   variable "availability_zone_name" {
+     type = string
+     default = "MS1"
+   }
+   ```
 
-resource "vkcs_networking_subnet" "compute" {
-   name="subnet_1"
-   network_id = vkcs_networking_network.compute.id
-   cidr="192.168.199.0/24"
-}
+   This file declares the following variables:
 
-resource "vkcs_networking_router" "compute" {
-   name="vm-router"
-   admin_state_up = true
-   external_network_id = data.vkcs_networking_network.extnet.id
-}
+   - `image_flavor`: the name of the virtual machine image;
+   - `compute_flavor`: the name of the virtual machine configuration template;
+   - `key_pair_name`: the name of the key pair that will be used to connect to the virtual machine via SSH;
+   - `availability_zone_name`: the name of the availability zone where the virtual machine will be hosted.
 
-resource "vkcs_networking_router_interface" "compute" {
-   router_id = vkcs_networking_router.compute.id
-   subnet_id = vkcs_networking_subnet.compute.id
-}
-```
+   If necessary, adjust the values of the variables. First find out their acceptable values:
 
-### Create a virtual machine
+   <tabs>
+   <tablist>
+   <tab>image_flavor</tab>
+   <tab>compute_flavor</tab>
+   <tab>key_pair_name</tab>
+   <tab>availability_zone_name</tab>
+   </tablist>
+   <tabpanel>
 
-To create a virtual machine, create an `main.tf` file in the directory and add the following example text. Correct the setting values in the example according to your VM.
+   Using OpenStack CLI:
 
-- Resources:
+   ```bash
+   openstack image list
+   ```
 
-  - **vkcs_compute_instance** - information about the created VM instance. This resource describes the VM and uses the previously described network resources:
+   </tabpanel>
+   <tabpanel>
 
-  - **name** — VM name.
-  - **flavor_id** — VM flavor used during creation.
-  - **security_groups** — list of security group names assigned to this VM.
-  - **availability_zone** — availability zone of this VM.
-  - **block_device** — virtual disk for the created VM. In this example, two disks are created: one from the boot image, the other is empty. The `block_device` resource is described by the following parameters:
+   Using OpenStack CLI:
 
-    - **uuid** is a unique disk identifier.
-    - **source_type** — OS boot source.
-    - **destination_type** is the destination of the boot image.
-    - **volume_type** is the volume type of the boot image target. To get a list of available types, run the `openstack volume type list` command.
-    - **volume_size** - volume block size of the boot image target.
-    - **boot_index** - disk location in *boot* boot order.
-    - **delete_on_termination** - If set to `True`, the disk will be deleted when the VM is deleted.
+   ```bash
+   openstack flavor list
+   ```
+   </tabpanel>
+   <tabpanel>
 
-    - **network** — network connected when creating a VM.
-    - **depends_on** - The VM will not start until the specified resources are created.
+   Use one of the methods:
 
-  - **vkcs_networking_floatingip** - Gets an available floating IP ID from VK Cloud. Includes the following resource:
+    - Via personal account:
 
-    - **pool** is the name of the pool that the floating IP belongs to.
+      1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud personal account.
 
-  - **vkcs_compute_floatingip_associate** - Assigns a floating IP to the created VM. Includes the following resources:
+      1. Click on your username in the page header.
 
-    - **floating_ip** — ID of the floating IP that will be assigned to the VM.
-    - **instance_id* — ID of the VM to which the floating IP will be assigned.
+      1. Select **Key pairs** from the drop-down list.
 
-- Data sources:
+        The **Key pairs** tab of the **Account information** page will open.
 
-  - **vkcs_images_image** - installation image for the created instance.
-  - **vkcs_compute_flavor** - flavor (CPU, RAM, Disk) of the VM. You can see it in the VM creation wizard through your personal account.
-  - **output "instance_fip"** - outputs the floating IP assigned to the VM to the console.
+        Key pair names appear under the **Key name** heading.
 
-An example `instance.tf` file:
+    - Using OpenStack CLI:
+
+      1. Run the command:
+
+        ```bash
+        openstack keypair list
+        ```
+
+      2. Copy the desired key pair name from the list.
+
+   </tabpanel>
+   <tabpanel>
+
+   In the section about [availability zones](/en/additionals/start/architecture#availability_zones_567cfd7a).
+
+   </tabpanel>
+   </tabs>
+
+## 1. Create a file describing the basic network infrastructure
+
+1. [Create a `network.tf` file](../../vnet/network).
+
+    The file describes the resources of the virtual network in which the VM will operate.
+
+2. Make sure that the following resources are present in `network.tf`:
+
+   - `vkcs_networking_network`,
+   - `vkcs_networking_subnet`,
+   - `vkcs_networking_router`,
+   - `vkcs_networking_router_interface`.
+
+    There is no need to configure additional security groups.
+
+The resources arguments are described in the [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs/data-sources).
+
+## 2. Create a file with the VM description
+
+Create a `main.tf` file.
+
+Depending on the required configuration option (a VM without additional settings or a VM with an additional disk), place the contents of one of the tabs below into the file.
+
+<tabs>
+<tablist>
+<tab>VM without additional settings</tab>
+<tab>VM with additional disk</tab>
+</tablist>
+<tabpanel>
+
+The file describes:
+
+- VM parameters;
+- resources assigned to the VM that are necessary for access from an external network:
+  - a floating IP address;
+  - a SSH key pair that will be used for access;
+  - security groups to which the VM must be added: `default` and `ssh` (both groups are configured in VK Cloud by default).
 
 ```hcl
 data "vkcs_compute_flavor" "compute" {
-   name="STD2-1-1"
+  name = var.compute_flavor
 }
 
 data "vkcs_images_image" "compute" {
-   name="Ubuntu-18.04-Standard"
+  name = var.image_flavor
 }
 
 resource "vkcs_compute_instance" "compute" {
-   name="compute-instance"
-   flavor_id = data.vkcs_compute_flavor.compute.id
-   security_groups = ["default"]
-   availability_zone = "GZ1"
+  name                    = "compute-instance"
+  flavor_id               = data.vkcs_compute_flavor.compute.id
+  key_pair                = var.key_pair_name
+  security_groups         = ["default","ssh"]
+  availability_zone       = var.availability_zone_name
 
-   block_device {
-     uuid = data.vkcs_images_image.compute.id
-     source_type="image"
-     destination_type = "volume"
-     volume_type = "ceph-ssd"
-     volume_size = 8
-     boot_index = 0
-     delete_on_termination = true
-   }
+  block_device {
+    uuid                  = data.vkcs_images_image.compute.id
+    source_type           = "image"
+    destination_type      = "volume"
+    volume_type           = "ceph-ssd"
+    volume_size           = 8
+    boot_index            = 0
+    delete_on_termination = true
+  }
 
-   block_device {
-     source_type="blank"
-     destination_type = "volume"
-     volume_type = "ceph-ssd"
-     volume_size = 8
-     boot_index = 1
-     delete_on_termination = true
-   }
+  network {
+    uuid = vkcs_networking_network.network.id
+  }
 
-   network{
-     uuid = vkcs_networking_network.compute.id
-   }
-
-   depends_on = [
-     vkcs_networking_network.compute,
-     vkcs_networking_subnet.compute
-   ]
+  depends_on = [
+    vkcs_networking_network.network,
+    vkcs_networking_subnet.subnetwork
+  ]
 }
 
 resource "vkcs_networking_floatingip" "fip" {
-   pool = data.vkcs_networking_network.extnet.name
+  pool = data.vkcs_networking_network.extnet.name
 }
 
 resource "vkcs_compute_floatingip_associate" "fip" {
-   floating_ip = vkcs_networking_floatingip.fip.address
-   instance_id = vkcs_compute_instance.compute.id
+  floating_ip = vkcs_networking_floatingip.fip.address
+  instance_id = vkcs_compute_instance.compute.id
 }
 
 output "instance_fip" {
-   value = vkcs_networking_floatingip.fip.address
+  value = vkcs_networking_floatingip.fip.address
 }
 ```
+</tabpanel>
+<tabpanel>
 
-### Apply changes
+The file describes:
 
-To apply the changes, add the `network.tf` and `main.tf` files to your working directory and run the following commands:
+- VM parameters;
+- resources assigned to the VM that are necessary for access from an external network:
+  - a floating IP address;
+  - a SSH key pair that will be used for access;
+  - security groups to which the VM must be added: `default` and `ssh` (both groups are configured in VK Cloud by default);
+- an additional 50 GB block device;
+- a synthetic resource `vkcs_compute_volume_attach` for connecting the block device to the VM.
+
+```hcl
+data "vkcs_compute_flavor" "compute" {
+  name = var.compute_flavor
+}
+
+data "vkcs_images_image" "compute" {
+  name = var.image_flavor
+}
+
+resource "vkcs_compute_instance" "compute" {
+  name                    = "compute-instance"
+  flavor_id               = data.vkcs_compute_flavor.compute.id
+  key_pair                = var.key_pair_name
+  security_groups         = ["default","ssh"]
+  availability_zone       = var.availability_zone_name
+
+  block_device {
+    uuid                  = data.vkcs_images_image.compute.id
+    source_type           = "image"
+    destination_type      = "volume"
+    volume_type           = "ceph-ssd"
+    volume_size           = 8
+    boot_index            = 0
+    delete_on_termination = true
+  }
+
+  network {
+    uuid = vkcs_networking_network.network.id
+  }
+
+  depends_on = [
+    vkcs_networking_network.network,
+    vkcs_networking_subnet.subnetwork
+  ]
+}
+
+resource "vkcs_blockstorage_volume" "compute-volume" {
+  name                  = "myVolume"
+  description           = "Additional volume for my app"
+  size                  = 50
+  availability_zone     = var.availability_zone_name
+  volume_type           = "ceph-ssd"
+}
+
+resource "vkcs_compute_volume_attach" "compute-volume-attached" {
+  instance_id = vkcs_compute_instance.compute.id
+  volume_id   = vkcs_blockstorage_volume.compute-volume.id
+  }
+
+resource "vkcs_networking_floatingip" "fip" {
+  pool = data.vkcs_networking_network.extnet.name
+}
+
+resource "vkcs_compute_floatingip_associate" "fip" {
+  floating_ip = vkcs_networking_floatingip.fip.address
+  instance_id = vkcs_compute_instance.compute.id
+}
+
+output "instance_fip" {
+  value = vkcs_networking_floatingip.fip.address
+}
+```
+  </tabpanel>
+  </tabs>
+
+The resources arguments are described in the [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources).
+
+## 3. Create resources using Terraform
+
+1. Place the Terraform configuration files `provider.tf`, `variables.tf`, `network.tf` and `main.tf` in the same directory.
+
+1. Go to this directory.
+
+1. Run the command:
+
+    ```bash
+    terraform init
+    ```
+
+1. Run the command:
+
+    ```bash
+    terraform apply
+    ```
+
+    When prompted for confirmation, enter `yes`.
+
+1. Wait until the operation completes.
+
+Once resource creation is complete, the Terraform `instance_fip` output will show the floating IP address assigned to the VM.
+
+## 4. Check if the example works
+
+[Connect via SSH](/en/base/iaas/vm-start/vm-connect/vm-connect-nix) to the `compute-instance` virtual machine.
+
+To connect use:
+
+- the IP address from the `instance_fip` output;
+- the private SSH key from the `keypair-terraform` key pair.
+
+If the example worked successfully, the console will show typical Ubuntu output:
 
 ```bash
-terraform init
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.0-46-generic x86_64)
+
+* Documentation: https://help.ubuntu.com
+* Management: https://landscape.canonical.com
+* Support: https://ubuntu.com/advantage
+
+System information as of Wed May 10 18:05:44 UTC 2023
+
+System load: 0.0078125 Processes: 98
+Usage of /: 35.2% of 7.42GB Users logged in: 0
+Memory usage: 9% IPv4 address for ens3: 192.168.199.20
+Swap usage: 0%
+...
 ```
-```bash
-terraform apply
-```
+
+## Delete unused resources
+
+Some of the objects created in this scenario consume resources. If you no longer need them, delete them:
+
+1. Go to the directory with the Terraform configuration files.
+
+1. Run the command:
+
+    ```bash
+    terraform destroy
+    ```
+
+    When prompted for confirmation, enter `yes`.
+
+1. Wait until the operation completes.
