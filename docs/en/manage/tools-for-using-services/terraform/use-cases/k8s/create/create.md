@@ -1,14 +1,14 @@
 The examples of creating different Kubernetes clusters using Terraform are provided below. The cluster creation procedure is described in details in the [Creating a cluster with Terraform](/en/base/k8s/operations/create-cluster/create-terraform) section.
 
-## Before creating cluster
+## Before creating a cluster
 
 1. Check out the available resources and [quotas](/en/base/account/concepts/quotasandlimits) for the [region](/en/base/account/concepts/regions) in which you plan to create a cluster. Different quotas can be set up for different regions.
 
    If you want to increase quotas, contact [technical support](/en/contacts).
 
-1. Make yourself familiar with [Terraform usage information](/en/base/k8s/operations/helpers/terraform-howto) regarding containers service.
+1. Learn about the [features of using Terraform](/en/base/k8s/operations/helpers/terraform-howto) with the Cloud Containers service.
 
-1. [Install Terraform and configure the provider](../../../quick-start), if this has not already been done.
+1. [Install Terraform and configure the provider](../../../quick-start), if not already done.
 
    Place the provider settings in the `provider.tf` Terraform configuration file.
 
@@ -65,9 +65,9 @@ In the examples below, clusters with the following configuration are created:
     - `taintkey1:taintvalue1`: `PreferNoSchedule`
     - `taintkey2:taintvalue2`: `PreferNoSchedule`
 
-- External public IP address for each cluster.
+- External public IP address assigned to each cluster.
 
-Select one of the cluster creation examples and create the `main.tf` Terraform configuration file with the neceaasry content:
+Select one of the cluster creation examples and create the `main.tf` Terraform configuration file with the necessary content:
 
 <tabs>
 <tablist>
@@ -294,14 +294,14 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 ## 3. Create the necessary resources using Terraform
 
 1. Place the created Terraform configuration files `provider.tf`, `network.tf` and `main.tf` in one directory.
-1. Navigate to this directory.
+1. Go to this directory.
 1. Run the command:
 
    ```bash
    terraform init
    ```
 
-1. Run the coommand:
+1. Run the command:
 
    ```bash
    terraform apply
@@ -315,7 +315,7 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 
 If you no longer need the resources created with Terraform, delete them:
 
-1. Navigate to the directory with the Terraform configuration files.
+1. Switch to the directory that contains the Terraform configuration files.
 
 1. Run the command:
 
