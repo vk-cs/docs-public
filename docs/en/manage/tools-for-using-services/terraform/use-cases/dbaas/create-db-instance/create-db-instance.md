@@ -6,7 +6,7 @@ The article provides examples of creating database instances with various settin
 
    If you want to increase quotas, contact [technical support](/en/contacts).
 
-1. [Install Terraform and configure the provider](../../../quick-start) if it hasn't been done yet.
+1. [Install Terraform and configure the provider](../../../quick-start), if not already done.
 
     Put the provider settings in the Terraform configuration file `provider.tf`.
 
@@ -17,18 +17,18 @@ In all the examples below, DB instances are created with the following propertie
 - [Region](/en/base/account/concepts/regions): by default (the same as the project region).
 - [Availability zone](/en/additionals/start/architecture): by default (for the Moscow region — `GZ1`).
 - DBMS type and version: MySQL 8.0.
-- [Configuration](/ru/dbs/dbaas/concepts/work-configs) of the DB instance: **Single**.
+- [Configuration](/en/dbs/dbaas/concepts/work-configs) of the DB instance: **Single**.
 - External IP address: assigned.
 
 <warn>
 
 When creating MySQL, PostgreSQL, Postgres Pro Enterprise, Postgres Pro Enterprise 1C database instances in **Cluster** [configuration](/en/dbs/dbaas/concepts/work-configs) a [service load balancer](/en/networks/vnet/concepts/load-balancer) will be created.
 
-Using a load balancer [charged](/en/networks/vnet/tariffs).
+Using a load balancer is [charged](/en/networks/vnet/tariffs).
 
 </warn>
 
-Select one of the cluster creation examples and create a Terraform configuration file `main.tf` with the right content:
+Select one of the cluster creation examples and create a Terraform configuration file `main.tf` with the appropriate content:
 
 <tabs>
 <tablist>
@@ -38,7 +38,7 @@ Select one of the cluster creation examples and create a Terraform configuration
 </tablist>
 <tabpanel>
 
-[Flavor](/ru/base/iaas/concepts/vm-concept) for instance VM, it is set via the `db-instance-flavor` variable.
+The [flavor](/en/base/iaas/concepts/vm-concept) for the instance VM is set via the `db-instance-flavor` variable.
 
 ```hcl
 variable "db-instance-flavor" {
@@ -158,6 +158,7 @@ resource "vkcs_db_instance" "db-instance" {
   }
   capabilities {
     name = "node_exporter"
+  }
     settings = {
       "listen_port" : "9100"
   }
@@ -169,7 +170,7 @@ resource "vkcs_db_instance" "db-instance" {
 
 The `vkcs_db_database` and `vkcs_db_user` resources are responsible for adding databases and users, respectively.
 
-The DB user's password is sensitive data, for safe work with it, use a variable, for example, `db_user_password`. Add the `sensitive = true` parameter to this variable to hide the output in the console:
+The DB user's password is sensitive data. For safe work with it, use a variable, for example: `db_user_password`. Add the `sensitive = true` parameter to this variable to hide its output in the console:
 
 ```hcl
 variable "db_user_password" {
@@ -335,17 +336,17 @@ resource "vkcs_db_user" "db-user" {
 
 ## 3. Check the configuration application
 
-[Go to](https://msk.cloud.vk.com/app/en/) VK Cloud personal account, **Databases** → **Databases instances**. Make sure that all the objects described in the configuration have been created successfully:
+[Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud personal account, **Databases** → **Databases instances**. Make sure that all the objects described in the configuration have been created successfully:
 
-- DB instance.
-- The external IP address for the instance is displayed on the instance page.
-- The [Prometheus Node exporter](/en/dbs/dbaas/instructions/managing-extensions) extension (if installed) — displayed on the instance page on the **Extensions** tab.
-- DB on the instance (if it was created) — is displayed on the instance page on the tab **List of databases**.
-- [DB user](/en/dbs/dbaas/instructions/users) (if it was created) — is displayed on the instance page on the tab **Users**.
+- The DB instance.
+- The external IP address for the instance — is displayed on the instance page.
+- The [Prometheus Node exporter](/en/dbs/dbaas/instructions/managing-extensions) extension (if installed) — is displayed on the instance page on the **Extensions** tab.
+- DB on the instance (if created) — is displayed on the instance page on the **List of databases** tab.
+- [DB user](/en/dbs/dbaas/instructions/users) (if created) — is displayed on the instance page on the **Users** tab.
 
 ## Delete unused resources
 
-Some objects created in this scenario consume resources. If you don't need them anymore, delete them:
+Some objects created in this scenario consume resources. If you no longer need them, delete them:
 
 1. Go to the directory with the Terraform configuration files.
 1. Run the command:

@@ -1,27 +1,27 @@
 <warn>
 
-First of all, make sure you [installed and configured Terraform](../../../quick-start).
+Make sure you [installed and configured Terraform](../../../quick-start).
 
 </warn>
 
-To create a network or security group, create a `network.tf` file, which will describe the configuration of the created entities. Add the text from the examples below, and correct the settings for your networks and security groups.
+To create a network or security group, create a `network.tf` file, which will describe the configuration of the created entities. Add the text from the example below and correct the settings for your networks and security groups.
 
-1. To create a network and security groups, you will need the following objects:
+1. To create a network and security groups, you need the following objects:
 
     - Resources:
 
-       - **vkcs_networking_network** — the network to which changes will be made.
-       - **vkcs_networking_subnet** - subnet from the network. In the example: subnetwork.
-       - **vkcs_networking_router** — a router for an external network and interaction with the outside world. In the example: router.
-       - **vkcs_networking_router_interface** — connect the router to the internal network.
-       - **vkcs_networking_secgroup** — security group to which access rules will be included.
-       - **vkcs_networking_secgroup_rule** — rule for a security group. In the example, we open access to the network from any IP on ports 22 and 3389.
-       - **vkcs_networking_port** — create a network port resource inside VK Cloud.
-       - **vkcs_networking_port_secgroup_associate** — bind a port to a security group.
+       - `vkcs_networking_network`: a network to which changes will be made.
+       - `vkcs_networking_subnet`: a subnet from the network. In the example: `subnetwork`.
+       - `vkcs_networking_router`: a router for an external network and interaction with the outside world. In the example: `router`.
+       - `vkcs_networking_router_interface`: connect the router to the internal network.
+       - `vkcs_networking_secgroup`: a security group to which access rules will be added.
+       - `vkcs_networking_secgroup_rule`: a rule for the security group. In the example, an access is opened to the network from any IP address on ports `22` and `3389`.
+       - `vkcs_networking_port`: create a network port resource inside VK Cloud.
+       - `vkcs_networking_port_secgroup_associate`: bind a port to the security group.
 
     - Data sources:
 
-       - **vkcs_networking_network** — external network for obtaining public IP (Floating IP).
+       - `vkcs_networking_network`: an external network for obtaining a floating IP address.
 
     ```hcl
     data "vkcs_networking_network" "extnet" {
@@ -96,7 +96,7 @@ To create a network or security group, create a `network.tf` file, which will de
     }
     ```
 
-1. Add an example to the `network.tf` file and run the following commands:
+1. Add the example to the `network.tf` file and run the following commands:
 
    ```bash
    terraform init

@@ -8,6 +8,6 @@
   "markdown": "Работа с [сервисом виртуальных сетей](/ru/networks/vnet) с использованием Terraform.",
   "icon": "",
   "infobarItems": null,
-  "weight": 6,
+  "weight": 7,
   "uuid": "9336a564-a734-4519-ad39-081dfb11589f"
 }
