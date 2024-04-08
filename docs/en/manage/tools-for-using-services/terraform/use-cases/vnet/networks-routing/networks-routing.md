@@ -1,19 +1,19 @@
 The following is an example of configuring routing between two networks using Terraform.
 
-Example Infrastructure:
+The infrastructure of the example:
 
-- In the example, two networks are created: private `common-private` and public `common-public`. Each network consists of one subnet.
-- Routers with interfaces in the corresponding subnets have been created for each network.
+- In the example, two networks are created: private `common-private` and public `common-public` ones. Each network consists of one subnet.
+- Routers with interfaces in the corresponding subnets are created for each network.
 - The public network router is configured to access the external network `ext-net`. Therefore, floating IP addresses can be assigned to objects in this network.
 - Each network has a port that corresponds to its only subnet. A `common-router` virtual machine is connected to these ports, acting as a router between the two networks.
-- The routers have static routes configured leading to another subnet through the virtual machine port.
-- A virtual machine has been created in each subnet. A virtual machine on a public network has a floating IP address.
+- The routers have the configured static routes that lead to another subnet through the virtual machine port.
+- A virtual machine is created in each subnet. The virtual machine on the public network has a floating IP address.
 
-  These machines are used to [check the routing settings between networks](#5_check_the_performance_of_the_example): a successful ping between them will indicate the correct configuration.
+  These machines are used to [test the routing settings between networks](#5_check_the_performance_of_the_example): a successful ping between them will indicate the correct configuration.
 
 ![Example Infrastructure Scheme](./assets/infrastructure-scheme.svg)
 
-## Before starting work
+## Before you start
 
 1. Check out the available resources and [quotas](/en/base/account/concepts/quotasandlimits) for the [region](/en/base/account/concepts/regions) in which you plan to create a cluster. Different quotas can be set up for different regions.
 
@@ -21,7 +21,7 @@ Example Infrastructure:
 
 1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 
-1. [Install Terraform and configure the provider](../../../quick-start), if this has not already been done.
+1. [Install Terraform and configure the provider](../../../quick-start), if not already done.
 
    Put the provider settings in the Terraform configuration file `provider.tf`.
 
@@ -51,12 +51,12 @@ Example Infrastructure:
 
    The following variables are declared in this file:
 
-   - `image_flavor`: name of the VM image;
-   - `compute_flavor`: name of the virtual machine configuration template;
+   - `image_flavor`: the name of the VM image;
+   - `compute_flavor`: the name of the virtual machine configuration template;
    - `key_pair_name`: the name of the key pair that will be used to connect to the virtual machine via SSH;
    - `availability_zone_name`: the name of the availability zone where the VM will be hosted.
 
-   If necessary, adjust the values of the variables, specifying their acceptable values:
+   If necessary, adjust the values of the variables. First find out their acceptable values:
 
    <tabs>
    <tablist>
@@ -103,7 +103,7 @@ Example Infrastructure:
 
 1. Create a Terraform configuration file `common-public.tf`. It describes:
 
-   - public network and subnet;
+   - a public network and subnet;
    - a router with access to an external `ext-net` network and an interface in a public subnet.
 
    ```hcl
@@ -136,7 +136,7 @@ Example Infrastructure:
 
 1. Create a Terraform configuration file `common-private.tf`. It describes:
 
-   - public network and subnet;
+   - a public network and subnet;
    - a router with an interface in a private subnet.
 
    ```hcl
@@ -169,7 +169,7 @@ Create a Terraform configuration file `main.tf`. It describes:
 - Ports in the public and private subnets that the VM connects to.
 - Configuration of the virtual machine.
 
-  The configuration uses the `user_data` parameter to execute a command that enables routing using `cloud-init`:
+  The configuration uses the `user_data` argument to run a command that enables routing using `cloud-init`:
 
   ```bash
   sysctl -w net.ipv4.ip_forward=1
@@ -422,7 +422,7 @@ output "common-instance-private-ip" {
    To connect, use:
 
    - IP address from the output `common-instance-public-floating-ip`.
-   - SSH key with the name specified in the variable `key_pair_name` for file `variables.tf`.
+   - SSH key with the name specified in the variable `key_pair_name` of the `variables.tf` file.
 
 1. Ping the IP address from the output `common-instance-private-ip`:
 
@@ -448,7 +448,7 @@ output "common-instance-private-ip" {
 
 If you no longer need the resources created with Terraform, delete them:
 
-1. Navigate to the directory with the Terraform configuration files.
+1. Switch to the directory that contains the Terraform configuration files.
 
 1. Run the command:
 
