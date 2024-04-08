@@ -8,13 +8,13 @@
 
 Эти компоненты присутствуют во всех кластерах Kubernetes сервиса Cloud Containers.
 
-[cols="4,1,1,1,1", options="header"]
+[cols="3,1,1,1,1", options="header"]
 |===
-|Компонент
-|Kubernetes<br>1.21.4–1.22.x
-|Kubernetes<br>1.24.x–1.25.x
-|Kubernetes<br>1.26.x
-|Kubernetes<br>1.27.x
+^.^|Компонент
+^.^|Kubernetes<br>1.21.4–1.22.x
+^.^|Kubernetes<br>1.24.x–1.25.x
+^.^|Kubernetes<br>1.26.x
+^.^|Kubernetes<br>1.27.x
 
 |[CoreDNS](https://github.com/coredns/coredns)
 |1.2.4
@@ -63,13 +63,13 @@
 
 Необходимые аддоны могут быть [установлены](../../../operations/addons/manage-addons#ustanovka_addona) в кластер отдельно.
 
-[cols="4,1,1,1,1", options="header"]
+[cols="3,1,1,1,1", options="header"]
 |===
-|Аддон
-|Kubernetes<br>1.21.4–1.23.x
-|Kubernetes<br>1.23.x–1.24.x
-|Kubernetes<br>1.25.x–1.26.x
-|Kubernetes<br>1.27.x
+^.^|Аддон
+^.^|Kubernetes<br>1.21.4–1.23.x
+^.^|Kubernetes<br>1.23.x–1.24.x
+^.^|Kubernetes<br>1.25.x–1.26.x
+^.^|Kubernetes<br>1.27.x
 
 |[Capsule](https://github.com/projectcapsule/capsule)
 |—
