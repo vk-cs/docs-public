@@ -29,6 +29,18 @@ For [virtual machine](/en/base/iaas/concepts/vm-concept#virtual_machines) the In
 - Connect the VM to an external network. In this way, a subnet and external IP address will be automatically assigned to it.
 - Connect the VM to a private subnet that is connected to a router with access to an external network, and assign it a floating IP address. In this way, the IP address can be set manually or automatically.
 
+## Floating IP adress
+
+A floating IP address (DNAT) is a static IP address that can be dynamically reassigned between resources in a cloud environment. Floating IP is used through [SDN](../architecture#sdns_used), which allows the network administrator to move IP addresses between devices without having to change the physical or virtual network configuration. This allows you to switch traffic between different servers without changing the configuration of the servers themselves.
+
+Floating IP addresses are used for:
+
+- Ensuring fault tolerance — if the primary server fails, the IP address can be quickly redirected to the backup server, minimizing downtime.
+
+- Load balancing — floating IP addresses can be used to distribute traffic across multiple servers, thereby increasing system performance and reliability.
+
+- Flexible network reconfiguration — in environments with frequently changing requirements, floating IP addresses allow you to quickly redistribute resources without the need to change IP addressing and associated settings.
+
 ## Public IP address pool of the internet external network
 
 All projects in SDN Sprut are connected to the external network `internet`.
