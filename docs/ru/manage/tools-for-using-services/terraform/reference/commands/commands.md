@@ -1,4 +1,4 @@
-[Командная строка Terraform](https://www.terraform.io/cli/commands) — это команда terraform, которая принимает множество подкоманд.
+[Командная строка Terraform](https://www.terraform.io/cli/commands) — это команда `terraform`, которая принимает множество подкоманд.
 
 Основные используемые команды:
 
