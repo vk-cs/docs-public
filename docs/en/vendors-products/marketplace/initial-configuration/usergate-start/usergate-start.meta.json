@@ -6,7 +6,7 @@
     "metaDescription": "UserGate NGFW VK Cloud: deploying the service in your project, connecting a network",
     "sectionTitle": "Infrastructure protection with UserGate NGFW",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 3,
     "uuid": "75df804b-853a-4947-ae4e-5f8096f60506",
     "createdAt": "2024-02-20T14:09:47.000Z",

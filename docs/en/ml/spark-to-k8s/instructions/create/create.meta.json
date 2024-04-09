@@ -6,7 +6,7 @@
     "metaDescription": "Spark VK Cloud: creating a new cluster",
     "sectionTitle": "Creating a Spark cluster",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 0,
     "createdAt": "2023-10-02T13:09:02.000Z",
     "updatedAt": "2024-03-29T16:45:57.000Z",

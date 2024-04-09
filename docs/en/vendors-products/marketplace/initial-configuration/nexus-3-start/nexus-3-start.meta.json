@@ -6,7 +6,7 @@
     "metaDescription": "Marketplace VK Cloud: steps to deploy the Sonatype Nexus 3 to the target project",
     "sectionTitle": "Nexus 3 deployment",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 4,
     "uuid": "6c17dbdd-c35c-4253-8a71-3aa2f79034db",
     "createdAt": "2023-12-27T06:43:14.000Z",

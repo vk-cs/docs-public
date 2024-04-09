@@ -6,7 +6,7 @@
     "metaDescription": "Cloud Kafka в VK Cloud: информация о сервисе",
     "sectionTitle": "О сервисе",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 1,
     "uuid": "e078c66a-efe9-4d34-9df7-6919dee12cee",
     "createdAt": "2024-01-22T11:04:00.000Z",

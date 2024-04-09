@@ -7,7 +7,7 @@
     "sectionTitle": "Using the PostGIS extension in PostgreSQL and PostgresPro",
     "markdown": "Getting started with the PostGIS extension in PostgreSQL and PostgresPro.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 1,
     "createdAt": "2023-09-05T09:12:49.000Z",
     "updatedAt": "2024-03-29T16:45:57.000Z",

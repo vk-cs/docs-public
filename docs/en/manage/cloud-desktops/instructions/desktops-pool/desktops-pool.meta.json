@@ -7,7 +7,7 @@
   "sectionTitle": "Desktop pool",
   "markdown": "A desktop pool is an association of several desktops that share computing resources. Desktops cannot be created without a pool.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 2,
   "uuid": "db8ef26d-92b9-4016-9fed-bdfd2fed5dec"
 }

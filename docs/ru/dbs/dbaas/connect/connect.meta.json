@@ -6,7 +6,7 @@
     "metaDescription": "Подключение к базам данных VK Cloud с помощью SDK.",
     "sectionTitle": "Подключение к БД",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 3,
     "uuid": "8b46516f-0525-45e9-a7e5-22cbd740be41",
     "additionalUuids": [

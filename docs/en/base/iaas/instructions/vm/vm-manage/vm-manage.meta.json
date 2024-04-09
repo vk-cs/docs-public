@@ -7,7 +7,7 @@
     "sectionTitle": "VM management",
     "markdown": "Description of the possibilities of managing a virtual machine, its state and resources.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 2,
     "uuid": "3e93d14e-0b97-44cb-ab2b-bae12eeb188d",
     "additionalUuids": [

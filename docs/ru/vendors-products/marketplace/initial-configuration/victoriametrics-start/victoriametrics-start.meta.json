@@ -6,7 +6,7 @@
     "metaDescription": "VictoriaMetrics VK Cloud: развертывание сервиса в проекте",
     "sectionTitle": "Развертывание VictoriaMetrics",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 7,
     "uuid": "d5e790d0-921a-48fc-a665-7ac2d1d78ebf",
     "createdAt": "2023-12-19T10:32:44.000Z",

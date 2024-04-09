@@ -7,7 +7,7 @@
   "sectionTitle": "Images",
   "markdown": "Creating and deleting images of virtual machines. Import of own images and export into a file. Setting meta tags to configure an image.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 3,
   "uuid": "b56990b4-b5b1-4145-af2a-711787ef5bc7"
 }

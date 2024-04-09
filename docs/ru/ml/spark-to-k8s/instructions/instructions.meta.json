@@ -7,7 +7,7 @@
   "sectionTitle": "Пошаговые инструкции",
   "markdown": "Стандартные операции по настройке и управлению кластерами в Cloud Spark.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 2,
   "uuid": "7460177b-f8f3-41e3-a3c5-53cb0b7ec2bc"
 }

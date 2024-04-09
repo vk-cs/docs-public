@@ -7,7 +7,7 @@
     "sectionTitle": "Persistent volumes and PVCs",
     "markdown": "General information about working with Persistent Volumes with use of Persistent Volume Claim.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 5,
     "uuid": "e7e0a184-d730-4593-80fe-af2bd453ddeb",
     "createdAt": "2023-01-13T09:20:35.000Z",
