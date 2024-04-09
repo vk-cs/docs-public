@@ -7,7 +7,7 @@
   "sectionTitle": "Cloud Databases",
   "markdown": "Working with the [Cloud Databases](/en/dbs/dbaas) service using Terraform.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 5,
   "uuid": "eb5034ac-f26d-4abb-a050-74cdc3ab8018"
 }

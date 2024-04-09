@@ -14,7 +14,7 @@ export const config = {
         'UuidSnapshotPreparer', // Создаём snapshot всех uuid (для checker:UuidSnapshotIntegrityChecker)
         'RedirectSnapshotPreparer', // Создаём snapshot для проверки редиректов (checker:RedirectHealthChecker)
         'MetaParamFaqLinksChecker', // Проверяем meta-параметр faqLinks, корректность указанных ссылок
-        'MetaParamInfobarItemsChecker', // Проверяем meta-параметр infobarItems, корректность ссылок и иконок
+        'MetaParamRelativeSectionsChecker', // Проверяем meta-параметр infobarItems, корректность ссылок и иконок
         'PreprocIncludeChecker', // Проверяем корректность использования {include(path)} в .md файлах
         'PreprocVariablesChecker', // Проверяем корректность использования {var(foo)} в .md файлах
         'AssetFileNamesChecker', // Проверяем корректность имён файлов в папках assets

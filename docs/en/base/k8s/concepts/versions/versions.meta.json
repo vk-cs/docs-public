@@ -7,7 +7,7 @@
   "sectionTitle": "About Kubernetes versions and components",
   "markdown": "It contains information about the available versions of Kubernetes and components that can be deployed in VK Cloud. The version support policy is also provided.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 9,
   "uuid": "872011f0-e0fc-42b7-a2bf-e0c0c4c6907a"
 }

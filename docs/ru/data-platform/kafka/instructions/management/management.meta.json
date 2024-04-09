@@ -6,7 +6,7 @@
     "metaDescription": "Cloud Kafka: управление компонентами экземпляра сервиса в проекте",
     "sectionTitle": "Работа с компонентами сервиса",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 2,
     "uuid": "5a7d8b53-3503-4083-b13c-75b981ccb7b5",
     "createdAt": "2024-01-22T11:04:00.000Z",

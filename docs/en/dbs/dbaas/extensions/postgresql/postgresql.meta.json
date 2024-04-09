@@ -7,7 +7,7 @@
     "sectionTitle": "PostgreSQL extensions",
     "markdown": "The list of available PostgreSQL extensions and their parameters.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 1,
     "additionalUuids": [
         "4f6c61d7-8b8d-40b3-a65a-9dc536661b0e",

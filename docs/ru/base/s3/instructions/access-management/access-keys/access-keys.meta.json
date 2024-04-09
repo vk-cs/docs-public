@@ -7,7 +7,7 @@
     "sectionTitle": "Аккаунт и ключи доступа",
     "markdown": "Доступ к Cloud Storage через AWS CLI, API и файловые менеджеры.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 1,
     "uuid": "fd4db123-373a-481e-b547-770e3ca58c87",
     "additionalUuids": [

@@ -7,7 +7,7 @@
     "sectionTitle": "Управление пользователями",
     "markdown": "Как добавлять, удалять пользователей инстанса БД и разграничивать их доступ к данным.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 1,
     "uuid": "130a81eb-b681-4b13-862a-99ed8512e4bf",
     "additionalUuids": [

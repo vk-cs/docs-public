@@ -8,11 +8,12 @@
   "markdown": "Cloud Servers — сервис облачных вычислений для управления виртуальными машинами в VK Cloud. Включает управление конфигурациями ВМ, дисками, образами, резервным копированием, позволяет создать файловое хранилище.",
   "icon": "",
   "weight": 1,
-  "infobarItems": [
+  "relativeSections": [
     {
-      "text": "Управление с помощью Terraform",
-      "icon": "/docs/_docs/ru/manage/tools-for-using-services/terraform/assets/icon.svg",
-      "link": "../../manage/tools-for-using-services/terraform/use-cases/iaas/create"
+      "title": "Управление с помощью Terraform",
+      "description": "",
+      "partialPath": "ru/manage/tools-for-using-services/terraform/use-cases/iaas/create",
+      "link": ""
     }],
   "uuid": "f18cbbc6-353d-4989-84a8-152fedc68060"
 }

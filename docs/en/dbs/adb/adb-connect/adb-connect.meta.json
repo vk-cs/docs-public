@@ -7,7 +7,7 @@
   "sectionTitle": "Connect to ADB",
   "markdown": "Description of ways to connect to Arenadata Databases.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 2,
   "uuid": "2f5be58e-9d03-45fc-b306-5bf43892680b"
 }

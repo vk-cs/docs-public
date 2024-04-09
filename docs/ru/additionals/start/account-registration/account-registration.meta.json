@@ -6,7 +6,7 @@
     "metaDescription": "VK Cloud: создание учетной записи в личном кабинете платформы, подтверждение аккаунта, настройка проекта, активация доступа по API",
     "sectionTitle": "Регистрация в VK Cloud",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 4,
     "additionalUuids": [
         "0229974e-c0aa-46d3-8c6b-2b41b8c12bb4",

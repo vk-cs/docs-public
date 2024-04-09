@@ -8,7 +8,7 @@
     "markdown": "Список эндпоинтов VK Cloud API для текущего региона.",
     "icon": "",
     "weight": 3,
-    "infobarItems": null,
+
     "additionalUuids": [
         "ac5e4ffc-e19b-43c9-8654-105e1205aae7"
     ],

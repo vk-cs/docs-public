@@ -8,6 +8,7 @@ export const config = {
     },
     breadcrumbs: {
         projectName: 'VK Cloud',
+        docsName: 'Документация'
     },
     layout: {
         main: {
