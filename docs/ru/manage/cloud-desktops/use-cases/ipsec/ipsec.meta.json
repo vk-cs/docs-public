@@ -6,7 +6,7 @@
     "metaDescription": "Как настроить защищенное подключение между VDI и LDAP в инфраструктуре VK Cloud с использованием IPsec Site-2-Site",
     "sectionTitle": "IPsec для VDI",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 1,
     "uuid": "a3511f7a-0177-4b1d-8342-aea339a8543e",
     "createdAt": "",

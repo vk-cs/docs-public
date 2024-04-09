@@ -7,7 +7,7 @@
     "sectionTitle": "Развертывание Ingress-контроллера с HTTP-балансировщиком",
     "markdown": "Демонстрация взаимодействия Ingress-контроллера с HTTP-балансировщиком нагрузки платформы VK Cloud",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 2,
     "uuid": "62549492-7e14-4354-852a-811dc5b3aa21",
     "createdAt": "2022-12-15T08:05:18.000Z",

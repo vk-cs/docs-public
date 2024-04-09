@@ -7,7 +7,7 @@
   "sectionTitle": "REST API",
   "markdown": "Reference information about the application programming interface (API), API operations, corresponding request and response structures, and error codes.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 3,
   "uuid": "c52a3b85-277f-419c-94b7-cf19c446dfa3"
 }

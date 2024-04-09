@@ -7,7 +7,7 @@
   "sectionTitle": "CI/CD based on GitLab",
   "markdown": "This section provides instructions for automating deployment using GitLab.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 4,
   "uuid": "aec35a08-a990-48b0-8bf4-e4f41a0b3bbd"
 }

@@ -8,7 +8,7 @@
     "markdown": "Verify phone number to activate services.",
     "icon": "",
     "weight": 1,
-    "infobarItems": null,
+
     "additionalUuids": [
         "368955b1-d609-4cb4-ac14-ef905528684f"
     ],

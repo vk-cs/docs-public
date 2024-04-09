@@ -6,7 +6,7 @@
     "metaDescription": "Обновление версии PostgreSQL на инстансах в конфигурациях Single, Master-Replica, Кластер.",
     "sectionTitle": "Обновление версии PostgreSQL",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 3,
     "uuid": "64fab3ed-9e18-488f-9ef4-ee09eb5c4417",
     "createdAt": "2023-06-02T12:20:43.000Z",

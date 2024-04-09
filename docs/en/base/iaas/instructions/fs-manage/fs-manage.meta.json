@@ -7,7 +7,7 @@
     "sectionTitle": "File share",
     "markdown": "Creating and deleting file storages, connecting them to instances, configuring access rules and take storage snapshots.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 4,
     "uuid": "a8a4975a-156f-4c36-8275-6ffe95546c1e",
     "additionalUuids": [

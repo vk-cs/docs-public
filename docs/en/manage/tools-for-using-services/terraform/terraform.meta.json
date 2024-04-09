@@ -8,6 +8,6 @@
   "markdown": "Using the VK Cloud Terraform provider to manage the platform, quick start and example manifests.<br><info>Additional information about the provider and supported resources is available in the VK Cloud [GitHub repository](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).</info>",
   "icon": "",
   "weight": 3,
-  "infobarItems": null,
+
   "uuid": "6013dc5c-4d5e-45b5-bc10-191f02848c3d"
 }

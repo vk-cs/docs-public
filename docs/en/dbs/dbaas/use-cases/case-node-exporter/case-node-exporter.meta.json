@@ -7,7 +7,7 @@
     "sectionTitle": "Monitoring Redis with Prometheus, Node exporter and Grafana",
     "markdown": "",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 4,
     "additionalUuids": [
         "a9f3571f-0da5-42aa-bb43-3ee9a06b25bd",

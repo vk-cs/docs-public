@@ -18,11 +18,12 @@
     "fad5af52-3444-431a-ba29-0ecee51ff512",
     "275111b3-0728-4346-a8ed-10ca9fdeff1e"
   ],
-  "infobarItems": [
+  "relativeSections": [
     {
-      "text": "Справка API",
-      "icon": "/docs/_docs/ru/bigdata/hortonworks/assets/icon.svg",
-      "link": "../../additionals/api/bigdata-api"
+      "title": "Справка API",
+      "description": "",
+      "partialPath": "ru/additionals/api/bigdata-api",
+      "link": ""
     }],  
   "uuid": "bd23711e-6ce4-4c13-8d37-c6050abc71b4"
 }

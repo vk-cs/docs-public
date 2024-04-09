@@ -8,7 +8,7 @@
     "markdown": "Включение и отключение двухфакторной аутентификацией в личном кабинете VK Cloud.",
     "icon": "",
     "weight": 2,
-    "infobarItems": null,
+
     "additionalUuids": [
         "177b9a78-9582-45fe-98f0-7811e7862352",
         "ba0ca820-a867-474d-837d-fc4d186e585c",

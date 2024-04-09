@@ -7,7 +7,7 @@
     "sectionTitle": "Company details",
     "markdown": "",
     "icon": "",
-    "infobarItems": null,
+
     "disableGithub": true,
     "disableDateInformation": true,
     "weight": 6,

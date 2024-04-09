@@ -7,7 +7,7 @@
   "sectionTitle": "Extensions and plugins",
   "markdown": "Extensions and plugins allow you to manage additional database functionality without having to make additional configuration changes to your instance.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 7,
   "uuid": "804fedbb-615c-42d5-a06e-c7ffc4838d98"
 }

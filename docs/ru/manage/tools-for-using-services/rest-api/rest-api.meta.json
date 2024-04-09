@@ -8,7 +8,7 @@
   "markdown": "Взаимодействие с VK Cloud API выполняется через эндпоинты. В некоторых случаях для аутентификации потребуется токен.",
   "icon": "",
   "weight": 4,
-  "infobarItems": null,
+
   "uuid": "e82794cd-bc84-4228-a998-849ce05fc10c",
   "additionalUuids": [
     "1db3249e-e258-4eb3-affb-72c7d732a872"

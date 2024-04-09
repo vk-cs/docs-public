@@ -6,7 +6,7 @@
     "metaDescription": "VK Cloud: available components for installation in the cluster, templates of component sets",
     "sectionTitle": "Components",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 3,
     "additionalUuids": [
         "13c22e1d-997a-4558-a513-88b61c334af3",

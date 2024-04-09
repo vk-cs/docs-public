@@ -7,7 +7,7 @@
   "sectionTitle": "Резервное копирование СУБД",
   "markdown": "Резервное копирование инстансов БД в автоматическом и ручном режимах.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 2,
   "uuid": "30fde4e9-d370-43bc-b75d-14ab7a6e61f6",
   "additionalUuids": [
