@@ -7,7 +7,7 @@
     "sectionTitle": "Политики безопасности",
     "markdown": "Инструменты для повышения безопасности кластера при работе с ресурсами Kubernetes.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 11,
     "uuid": "2a3bbee5-3cc0-43a5-b000-39f849b25fc8",
     "createdAt": "2023-10-31T11:01:13.000Z",

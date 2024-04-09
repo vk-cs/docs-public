@@ -7,7 +7,7 @@
   "sectionTitle": "DBMS types",
   "markdown": "The Cloud Databases service supports a number of DBMS available for deployment in VK Cloud. A different [configuration](/en/dbs/dbaas/concepts/work-configs) can be deployed for each type.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 1,
   "uuid": "f126f0c3-f4a0-4599-991d-9c58229c266d"
 }

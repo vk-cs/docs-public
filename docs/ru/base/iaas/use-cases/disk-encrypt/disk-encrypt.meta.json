@@ -7,7 +7,7 @@
     "metaDescription": "Шифрование диска при помощи cryptsetup",
     "markdown": "Шифрование диска при помощи `cryptsetup`.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 0,
     "uuid": "0ff2fce6-0f50-45f0-aa8e-4f28289397e2",
     "createdAt": "2023-04-13T15:57:13.000Z",

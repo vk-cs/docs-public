@@ -7,7 +7,7 @@
   "sectionTitle": "Concepts",
   "markdown": "This section contains information about the architecture of the service, as well as a list of available components that can be deployed in big data clusters.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 2,
   "additionalUuids": [
     "fb478a6a-91eb-4a0b-8b5d-5a6c174bd10f",

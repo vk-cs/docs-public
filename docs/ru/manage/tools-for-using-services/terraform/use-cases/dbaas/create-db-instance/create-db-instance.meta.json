@@ -6,7 +6,7 @@
     "metaDescription": "Cloud Databases: как создать инстанс БД с помощью Terraform в VK Cloud",
     "sectionTitle": "Создание инстанса БД",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 1,
     "uuid": "05965f87-b66c-4650-b368-a0355f7a353d",
     "additionalUuids": [

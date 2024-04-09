@@ -6,7 +6,7 @@
     "metaDescription": "Configuring the service connection to the AD or LDAP user directory.",
     "sectionTitle": "Setting up the service",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 1,
     "uuid": "75f4f2e3-57f2-4803-a20d-98a94d2e7846",
     "createdAt": "2023-10-26T06:43:55.000Z",

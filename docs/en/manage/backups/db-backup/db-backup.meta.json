@@ -7,7 +7,7 @@
   "sectionTitle": "DBMS backup",
   "markdown": "Replication and backup of DB instances in automatic and manual modes.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 2,
   "uuid": "9b7b474f-41e5-449f-a78f-8ebc737522d5",
   "additionalUuids": [

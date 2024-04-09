@@ -6,7 +6,7 @@
     "metaDescription": "Шаги по переносу инфраструктуры клиента в целевой проект VK Cloud с использованием [Hystax Acura](https://hystax.com/documentation/live-migration)",
     "sectionTitle": "Миграция с использованием Hystax Migration",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 2,
     "uuid": "ea85eeef-cf87-4638-94ee-ccf00cb1f3ac",
     "additionalUuids": [

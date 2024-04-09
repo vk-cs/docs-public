@@ -6,7 +6,7 @@
     "metaDescription": "Configuring data replication for Clickhouse at the table level.",
     "sectionTitle": "Using replicated and distributed ClickHouse tables",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 5,
     "additionalUuids": [
         "0a980896-60f5-4fe1-8a82-04dd28103766"

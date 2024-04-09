@@ -7,7 +7,7 @@
     "sectionTitle": "Cloud Servers",
     "markdown": "Работа с [сервисом Cloud Servers](/ru/base/iaas) с использованием Terraform.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 0,
     "uuid": "3cf2376e-bb9d-4961-bc9e-d7576069ddd6"
 }

@@ -6,7 +6,7 @@
     "metaDescription": "Marketplace VK Cloud: шаги по развертыванию сервиса Redash 10.1.0 для задач визуализации данных в целевой проект",
     "sectionTitle": "Развертывание Redash 10.1",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 6,
     "uuid": "14c8e766-2890-455e-91bd-01411ecd60d4",
     "createdAt": "2023-12-06T07:38:30.000Z",
