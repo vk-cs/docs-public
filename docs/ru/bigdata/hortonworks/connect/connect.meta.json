@@ -6,7 +6,7 @@
     "metaDescription": "VK Cloud: подключение к узлам кластера Cloud Big Data, его отдельным компонентам по SSH и веб-интерфейс",
     "sectionTitle": "Подключение",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 4,
     "uuid": "3f12382b-4da4-40fd-8ef4-859ec769e16f",
     "createdAt": "2022-07-29T10:21:21.000Z",

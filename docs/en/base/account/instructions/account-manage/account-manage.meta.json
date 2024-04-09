@@ -8,6 +8,6 @@
   "markdown": "User account management operations: viewing and changing profile data, 2FA and password, key pairs of the project.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null,
+
   "uuid": "7b2efa98-c9e9-419f-b0ef-21c09ec104de"
 }

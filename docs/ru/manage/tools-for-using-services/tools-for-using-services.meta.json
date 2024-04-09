@@ -8,11 +8,12 @@
   "markdown": "С сервисами VK Cloud можно работать не только через [личный кабинет](/ru/base/account), но и при помощи дополнительных инструментов. Эти инструменты позволяют автоматизировать рабочие процессы управления облачными ресурсами с использованием подхода Infrastructure as Code (IaC).",
   "icon": "",
   "weight": 1,
-  "infobarItems": [
+  "relativeSections": [
     {
-      "text": "Личный кабинет",
-      "icon": "/docs/_docs/ru/base/account/assets/icon.svg",
-      "link": "../../base/account/concepts/projects"
+      "title": "Личный кабинет",
+      "description": "",
+      "partialPath": "ru/base/account/concepts/projects",
+      "link": ""
     }
   ],
   "uuid": "f82f032c-2fad-4738-a896-dd06a80b4658"

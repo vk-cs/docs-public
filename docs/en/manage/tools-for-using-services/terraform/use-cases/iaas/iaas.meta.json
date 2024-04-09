@@ -7,7 +7,7 @@
     "sectionTitle": "Cloud Servers",
     "markdown": "Working with the [Cloud Servers](/en/base/iaas) service using Terraform.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 0,
     "uuid": "03c064ea-f496-4468-9286-2196733efc90"
 }

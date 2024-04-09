@@ -8,7 +8,7 @@
   "markdown": "Использование Terraform в VK Cloud.",
   "icon": "",
   "weight": 1,
-  "infobarItems": null,
+
   "uuid": "b94c90cb-ae39-4460-83d2-7881b05fac17",
   "additionalUuids": ["7eed1411-ffad-4888-90e6-1675ce7fd134"]
 }

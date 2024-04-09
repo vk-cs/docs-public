@@ -7,7 +7,7 @@
     "sectionTitle": "Конфигурации Single и Master-Replica",
     "markdown": "Создание инстанса БД в конфигурациях Single и Master-Replica",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 1,
     "additionalUuids": [
         "d45a20f1-0449-4831-96c2-d2b43cea6d7c",

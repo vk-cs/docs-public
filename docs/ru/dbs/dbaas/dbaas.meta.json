@@ -8,51 +8,60 @@
     "markdown": "Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Postgres Pro,Tarantool, Greenplum. Базы доступны в single, master-slave и кластерных конфигурациях. Использование сервиса снимает с вас нагрузку по администрированию баз данных.",
     "icon": "",
     "weight": 7,
-    "infobarItems": [
+    "relativeSections": [
       {
-        "text": "ClickHouse",
-        "icon": "/docs/_docs/ru/dbs/dbaas/assets/clickhouse_icon.svg",
-        "link": "../../dbs/dbaas/concepts/types/clickhouse"
+        "title": "ClickHouse",
+        "description": "",
+        "partialPath": "ru/dbs/dbaas/concepts/types/clickhouse",
+        "link": ""
       },
       {
-        "text": "MongoDB",
-        "icon": "/docs/_docs/ru/dbs/dbaas/assets/mongo_icon.svg",
-        "link": "../../dbs/dbaas/concepts/types/mongodb"
+        "title": "MongoDB",
+        "description": "",
+        "partialPath": "ru/dbs/dbaas/concepts/types/mongodb",
+        "link": ""
       },
       {
-        "text": "MySQL",
-        "icon": "/docs/_docs/ru/dbs/dbaas/assets/mysql_icon.svg",
-        "link": "../../dbs/dbaas/concepts/types/mysql"
+        "title": "MySQL",
+        "description": "",
+        "partialPath": "ru/dbs/dbaas/concepts/types/mysql",
+        "link": ""
       },
       {
-        "text": "OpenSearch",
-        "icon": "/docs/_docs/ru/dbs/dbaas/assets/opensearch_icon.svg",
-        "link": "../../dbs/dbaas/concepts/types/opensearch"
+        "title": "OpenSearch",
+        "description": "",
+        "partialPath": "ru/dbs/dbaas/concepts/types/opensearch",
+        "link": ""
       },
       {
-        "text": "PostgreSQL",
-        "icon": "/docs/_docs/ru/dbs/dbaas/assets/postgresql_icon.svg",
-        "link": "../../dbs/dbaas/concepts/types/postgresql"
+        "title": "PostgreSQL",
+        "description": "",
+        "partialPath": "ru/dbs/dbaas/concepts/types/postgresql",
+        "link": ""
       },
       {
-        "text": "Postgres Pro",
-        "icon": "/docs/_docs/ru/dbs/dbaas/assets/postgres_pro_icon.svg",
-        "link": "../../dbs/dbaas/concepts/types/postgrespro"
+        "title": "Postgres Pro",
+        "description": "",
+        "partialPath": "ru/dbs/dbaas/concepts/types/postgrespro",
+        "link": ""
       },
       {
-        "text": "Redis",
-        "icon": "/docs/_docs/ru/dbs/dbaas/assets/redis_icon.svg",
-        "link": "../../dbs/dbaas/concepts/types/redis"
+        "title": "Redis",
+        "description": "",
+        "partialPath": "ru/dbs/dbaas/concepts/types/redis",
+        "link": ""
       },
       {
-        "text": "Tarantool",
-        "icon": "/docs/_docs/ru/dbs/dbaas/assets/tarantool_icon.svg",
-        "link": "../../dbs/dbaas/concepts/types/tarantool"
+        "title": "Tarantool",
+        "description": "",
+        "partialPath": "ru/dbs/dbaas/concepts/types/tarantool",
+        "link": ""
       },
       {
-        "text": "Управление с помощью Terraform",
-        "icon": "/docs/_docs/ru/manage/tools-for-using-services/terraform/assets/icon.svg",
-        "link": "../../manage/tools-for-using-services/terraform/use-cases/dbaas/create-db-instance"
+        "title": "Управление с помощью Terraform",
+        "description": "",
+        "partialPath": "ru/manage/tools-for-using-services/terraform/use-cases/dbaas/create-db-instance",
+        "link": ""
       }],
     "uuid": "93dd09ce-09eb-4af0-807e-ea909d8c6588"
 }

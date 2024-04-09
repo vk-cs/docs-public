@@ -7,7 +7,7 @@
     "sectionTitle": "Connecting to the database",
     "markdown": "Connecting to databases via SSH or using the SDK.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 2,
     "uuid": "0429ed53-28a0-4f82-baa9-6170e547a992",
     "additionalUuids": [

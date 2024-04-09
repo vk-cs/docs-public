@@ -6,7 +6,7 @@
     "metaDescription": "VK Cloud: настройка мониторинга СУБД Redis в VK Cloud с помощью сервера Prometheus, расширения Node exporter и последующей визуализации в Grafana",
     "sectionTitle": "Мониторинг Redis с помощью Prometheus, Node exporter и Grafana",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 5,
     "additionalUuids": [
         "ae597249-38bf-4b04-9344-e058f6f7b7ca",
