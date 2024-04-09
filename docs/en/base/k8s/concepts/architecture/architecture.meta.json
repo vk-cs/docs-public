@@ -7,9 +7,8 @@
     "sectionTitle": "Architecture",
     "markdown": "Service architecture details: Kubernetes Cloud Containers cluster topologies and environment, integration with Kubernetes API and VK Cloud platform.",
     "icon": "",
-
     "weight": 2,
     "uuid": "28a5cb50-e090-4cd1-9d80-9bc978ee8780",
     "createdAt": "2023-01-13T09:20:35.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

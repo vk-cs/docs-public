@@ -7,9 +7,8 @@
     "sectionTitle": "Подключение к кластеру (Kubernetes Dashboard)",
     "markdown": "Как подключиться к кластеру Kubernetes с помощью Kubernetes Dashboard.",
     "icon": "",
-
     "weight": 2,
     "uuid": "2c07e5de-6bf8-4272-b68b-12680ad1eb00",
     "createdAt": "2022-12-15T08:05:18.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

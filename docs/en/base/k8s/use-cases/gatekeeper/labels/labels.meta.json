@@ -7,9 +7,8 @@
     "sectionTitle": "Configuring mandatory labels",
     "markdown": "Using Gatekeeper to enforce constraints that will check mandatory labels on Kubernetes resources.",
     "icon": "",
-
     "weight": 1,
     "uuid": "f0b66c19-8370-4dee-a8d8-4451caf200da",
     "createdAt": "2023-01-13T09:20:35.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

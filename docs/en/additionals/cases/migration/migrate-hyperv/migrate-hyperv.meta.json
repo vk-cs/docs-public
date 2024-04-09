@@ -7,9 +7,8 @@
     "metaDescription": "Migration of a Hyper-V VM to VK Cloud",
     "markdown": "Migration of a Hyper-V VM to VK Cloud.",
     "icon": "",
-
     "weight": 2,
     "uuid": "5ca8afdc-504a-402b-8a32-52557ff8c120",
     "createdAt": "2023-05-18T11:25:25.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

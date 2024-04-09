@@ -7,9 +7,8 @@
     "sectionTitle": "Updating cluster",
     "markdown": "A Kubernetes cluster can be updated in two ways: via personal account or via Terraform. This section discusses both methods in detail.",
     "icon": "",
-
     "weight": 7,
     "uuid": "0f284c49-60f7-480e-8283-529ee9808251",
     "createdAt": "2023-01-13T09:20:35.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

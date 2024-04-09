@@ -6,7 +6,6 @@
     "metaDescription": "VK Cloud: How to install and configure the LAMP stack on Ubuntu 22.04",
     "sectionTitle": "Installing LAMP on Linux",
     "icon": "",
-
     "weight": 5,
     "uuid": "13c45a64-6373-4170-b300-3c279414fd97",
     "additionalUuids": [
@@ -23,5 +22,5 @@
         "5263acc6-c123-4917-9d80-24d0ff739dc9"
     ],
     "createdAt": "2023-10-20T06:43:10.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

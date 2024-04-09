@@ -6,7 +6,6 @@
     "metaDescription": "Marketplace VK Cloud: instructions for connecting the service through your personal account",
     "sectionTitle": "Connecting the service",
     "icon": "",
-
     "weight": 1,
     "additionalUuids": [
         "bc79bb69-c0b7-4ea6-82a1-cb65138737af",
@@ -15,5 +14,5 @@
     ],
     "uuid": "06de4ba5-2b22-49ab-9fff-bbbbcaf0423f",
     "createdAt": "2023-10-11T12:54:44.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

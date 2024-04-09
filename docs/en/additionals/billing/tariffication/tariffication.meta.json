@@ -6,12 +6,11 @@
     "metaDescription": "Calculation of the cost of using VK Cloud services: manually using a price list or using an online calculator.",
     "sectionTitle": "Tariffication",
     "icon": "",
-
     "weight": 4,
     "uuid": "f1ced811-f6c4-4183-ab37-7540f6fbe1f3",
     "additionalUuids": [
         "5f3d9a45-20c9-430f-82a4-26796052fb44"
     ],
     "createdAt": "2023-05-22T13:23:03.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

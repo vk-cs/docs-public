@@ -7,11 +7,10 @@
     "sectionTitle": "Quotas and limits",
     "icon": "",
     "weight": 2,
-
     "additionalUuids": [
         "a4384e87-9aef-4953-9b4a-c9763dd8e3cd"
     ],
     "uuid": "7d9ca829-6fd1-4121-b3ae-5479ed770b65",
     "createdAt": "2022-12-23T10:06:30.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

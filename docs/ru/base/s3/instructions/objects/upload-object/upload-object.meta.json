@@ -7,12 +7,11 @@
     "sectionTitle": "Стандартная и мультипартовая загрузка объекта в бакет",
     "markdown": "",
     "icon": "",
-
     "weight": 1,
     "uuid": "b540ddd0-a9e8-4c70-a3a0-226f07805cf9",
     "additionalUuids": [
         "b1e427d0-94c0-4b7f-a5a5-9a87df47bb88"
     ],
     "createdAt": "2023-05-29T09:21:30.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

@@ -7,7 +7,6 @@
     "sectionTitle": "Installing Docker CE on Ubuntu",
     "markdown": "",
     "icon": "",
-
     "weight": 1,
     "uuid": "f919d208-35dd-4d62-b32b-e0b76ec76dde",
     "additionalUuids": [
@@ -16,5 +15,5 @@
         "111ad16d-e92b-4756-b60f-63e3b5ab9c38"
     ],
     "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

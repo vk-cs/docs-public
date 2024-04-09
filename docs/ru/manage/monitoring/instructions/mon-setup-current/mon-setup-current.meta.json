@@ -7,12 +7,11 @@
     "sectionTitle": "Установка в существующие ВМ",
     "markdown": "",
     "icon": "",
-
     "weight": 1,
     "additionalUuids": [
         "e672915f-bee8-4a19-a728-c5c3e0864636"
     ],
     "uuid": "7f1efbce-d7a9-40f7-8af6-e9d7f29fdd62",
     "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

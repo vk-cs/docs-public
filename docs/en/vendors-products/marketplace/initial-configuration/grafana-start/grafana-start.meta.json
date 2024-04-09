@@ -6,12 +6,11 @@
     "metaDescription": "Marketplace VK Cloud: steps to deploy the Grafana 10 service to the target project",
     "sectionTitle": "Grafana deployment",
     "icon": "",
-
     "weight": 5,
     "additionalUuids": [
         "384aff1e-83b5-4275-81e6-e3c6530c5777"
     ],
     "uuid": "3ae4cfae-d23c-468f-85b4-0ded5aa6aba6",
     "createdAt": "2023-12-01T08:47:30.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

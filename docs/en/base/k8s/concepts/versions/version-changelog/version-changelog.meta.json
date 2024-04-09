@@ -7,9 +7,8 @@
     "sectionTitle": "Kubernetes version history",
     "markdown": "The VK Cloud platform provides several versions of Kubernetes for use in cloud clusters. Here you will find a detailed history of the Kubernetes versions that are supported or have been supported in the past. For each version, a brief description of changes in the VK Cloud service and in Kubernetes itself are presented.",
     "icon": "",
-
     "weight": 2,
     "uuid": "006ac7ba-9931-46bf-8b98-6951357dbf5f",
     "createdAt": "2023-01-13T09:20:35.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

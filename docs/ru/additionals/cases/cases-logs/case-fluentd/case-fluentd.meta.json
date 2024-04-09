@@ -7,9 +7,8 @@
     "sectionTitle": "Как настроить централизованное логирование из Kubernetes с помощью Fluentd",
     "markdown": "",
     "icon": "",
-
     "weight": 2,
     "uuid": "a5a42168-c69c-4835-93c3-97df526e24f5",
     "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }
