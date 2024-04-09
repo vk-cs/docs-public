@@ -7,9 +7,8 @@
     "sectionTitle": "Pods",
     "markdown": "General information about pods in Kubernetes.",
     "icon": "",
-
     "weight": 1,
     "uuid": "07d0022d-ad51-4b35-8ccd-f9ed5dc58b65",
     "createdAt": "2023-01-13T09:20:35.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

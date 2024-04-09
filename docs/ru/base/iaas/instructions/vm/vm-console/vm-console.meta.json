@@ -7,9 +7,8 @@
     "sectionTitle": "Диагностика ВМ",
     "markdown": "VK Cloud – Удаленный доступ к ВМ Windows или Linux с помощью VNC-консоли. Диагностика ВМ.",
     "icon": "",
-
     "weight": 5,
     "uuid": "eb2300a9-171d-4a9e-862f-a237b30b60e3",
     "createdAt": "2023-04-13T15:57:13.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

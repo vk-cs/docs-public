@@ -6,9 +6,8 @@
     "metaDescription": "Обзор возможностей сервиса Spark в Kubernetes, реализованном на VK Cloud",
     "sectionTitle": "О сервисе",
     "icon": "",
-
     "weight": 0,
     "createdAt": "2023-10-02T13:09:02.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z",
+    "updatedAt": "2024-04-01T11:08:43.000Z",
     "uuid": "a5e681a5-e32c-4052-abbc-d0cfbf4b4539"
 }

@@ -6,7 +6,6 @@
     "metaDescription": "Marketplace VK Cloud: инструкция по подключению сервиса через личный кабинет",
     "sectionTitle": "Подключение сервиса",
     "icon": "",
-
     "weight": 1,
     "additionalUuids": [
         "3c1ee065-66b3-4b4f-a010-382423ef90c4",
@@ -16,5 +15,5 @@
     ],
     "uuid": "19813dda-a85b-4b04-bfee-98f7ac729fc7",
     "createdAt": "2023-10-11T12:54:44.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

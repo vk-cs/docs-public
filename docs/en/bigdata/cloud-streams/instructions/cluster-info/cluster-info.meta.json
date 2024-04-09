@@ -7,7 +7,6 @@
     "sectionTitle": "Connection",
     "markdown": "",
     "icon": "",
-
     "weight": 0,
     "uuid": "f0d5d42f-4d4e-4c6d-bf93-6b540d0c2d50",
     "additionalUuids": [
@@ -16,5 +15,5 @@
         "a6d2583a-33bf-47e5-a1d5-f8258b24c41a"
     ],
     "createdAt": "2023-05-31T09:51:29.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

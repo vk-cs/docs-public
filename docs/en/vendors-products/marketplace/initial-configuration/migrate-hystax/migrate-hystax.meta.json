@@ -6,12 +6,11 @@
     "metaDescription": "Steps to migrate the client's infrastructure to the target VK Cloud project using [Hystax Acura](https://hystax.com/documentation/live-migration)",
     "sectionTitle": "Migration using Hystax Migration",
     "icon": "",
-
     "weight": 2,
     "uuid": "727496dd-00d4-43f0-b0fd-944e841281c8",
     "additionalUuids": [
         "53900e72-bd17-4315-ac7f-4f5bb8cdd0fd"
     ],
     "createdAt": "2023-05-18T11:25:25.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }
