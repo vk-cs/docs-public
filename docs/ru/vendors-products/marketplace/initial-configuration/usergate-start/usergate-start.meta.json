@@ -6,7 +6,7 @@
     "metaDescription": "UseGate NGFW VK Cloud: развертывание сервиса в проекте, подключение сети",
     "sectionTitle": "Защита инфраструктуры с помощью UserGate NGFW",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 3,
     "uuid": "dda61b4d-856d-4eb2-8362-5a6c52c820b2",
     "createdAt": "2023-10-31T07:49:06.000Z",

@@ -6,7 +6,7 @@
     "shortDescription": "Как подключиться к виртуальной машине по SSH",
     "metaDescription": "Подключение к ВМ Linux",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 0,
     "additionalUuids": [
         "2d64702a-dc9c-4f40-b468-05117e982d7f",

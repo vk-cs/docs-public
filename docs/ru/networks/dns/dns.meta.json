@@ -7,11 +7,12 @@
   "sectionTitle": "DNS",
   "markdown": "DNS — это иерархическая распределенная база данных, которая позволяет хранить IP-адреса и другие данные, а также просматривать информацию по DNS именам.<br>VK Cloud позволяет публиковать ваши зоны и записи в DNS без необходимости разворачивания собственных DNS-серверов.",
   "icon": "",
-  "infobarItems": [
+  "relativeSections": [
     {
-      "text": "Справка API",
-      "icon": "/docs/_docs/ru/networks/dns/assets/icon.svg",
-      "link": "../../additionals/api/api-dns"
+      "title": "Справка API",
+      "description": "",
+      "partialPath": "ru/additionals/api/api-dns",
+      "link": ""
     }],  
   "weight": 5,
   "uuid": "980c061c-5e1b-48ec-aff0-351b6972bab5"

@@ -6,7 +6,7 @@
   "metaDescription": "Creating Linux and Windows virtual machines. Connecting to the VM via SSH and RDP. Resource and state management of virtual machines. Working with disks and images. Creating backups. Using file storage",
   "sectionTitle": "Step-by-step instructions",
   "markdown": "Standard operations for managing VK Cloud VMs and their resources.",
-  "infobarItems": null,
+
   "weight": 2,
   "uuid": "94e74c03-95cb-435c-9bb4-f401fdca4fce"
 }

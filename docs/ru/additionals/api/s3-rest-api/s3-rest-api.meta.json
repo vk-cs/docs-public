@@ -7,7 +7,7 @@
   "sectionTitle": "Cloud Storage",
   "markdown": "Операции API, структуры запросов и ответов, коды ошибок.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 4,
   "uuid": "f2c78538-f573-4d55-9d3b-ca02056f6f7f"
 }

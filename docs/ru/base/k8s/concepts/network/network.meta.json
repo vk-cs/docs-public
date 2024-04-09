@@ -7,7 +7,7 @@
     "sectionTitle": "Сеть в кластере",
     "markdown": "Каждый кластер Cloud Containers тесно интегрирован с сетевыми сервисами VK Cloud. Раздел показывает, как работает эта интеграция.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 4,
     "uuid": "ad006f6f-fac5-41eb-b752-302298e20eab",
     "createdAt": "2022-12-15T08:05:18.000Z",

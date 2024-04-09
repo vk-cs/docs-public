@@ -7,7 +7,7 @@
   "sectionTitle": "Подключения к ADB",
   "markdown": "Описание способов подключения к аналитическим базам данных.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 2,
   "uuid": "a7a105fd-6fec-4c37-b82b-514e96c182f2"
 }

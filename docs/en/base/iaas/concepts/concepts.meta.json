@@ -6,7 +6,7 @@
   "metaDescription": "Overview of the Cloud Servers service. Characteristics of the equipment and available configurations. SLA for disks",
   "sectionTitle": "Concepts",
   "markdown": "Basic concepts and characteristics of the service.",
-  "infobarItems": null,
+
   "weight": 1,
   "uuid": "08736b29-4443-414c-8024-d69f55076005"
 }

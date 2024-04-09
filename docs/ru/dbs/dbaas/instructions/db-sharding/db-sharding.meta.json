@@ -6,7 +6,7 @@
     "metaDescription": "Cloud Databases: управление шардами СУБД в VK Cloud",
     "sectionTitle": "Шардирование инстанса БД",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 4,
     "uuid": "7ff17b62-9804-4552-852e-bfc046a2b558",
     "createdAt": "2023-05-05T09:02:32.000Z",

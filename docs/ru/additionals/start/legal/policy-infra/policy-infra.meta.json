@@ -7,7 +7,7 @@
     "sectionTitle": "Пользовательское соглашение для сервиса «Infra»",
     "markdown": "",
     "icon": "",
-    "infobarItems": null,
+
     "disableGithub": true,
     "disableDateInformation": true,
     "weight": 3,

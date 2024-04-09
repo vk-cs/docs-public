@@ -7,7 +7,7 @@
     "sectionTitle": "Расширения PostgreSQL",
     "markdown": "Перечень доступных расширений PostgreSQL и их параметров.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 1,
     "additionalUuids": [
         "72e70640-64fc-42e0-96b1-0f7a3ce8a548",

@@ -7,7 +7,7 @@
   "sectionTitle": "Containers",
   "markdown": "Working with the [Cloud Containers](/en/base/k8s) service using Terraform.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 6,
   "uuid": "ca85cd22-0768-49ac-be8f-417b0f276045"
 }

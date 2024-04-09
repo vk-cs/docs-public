@@ -7,7 +7,7 @@
   "sectionTitle": "Разработка",
   "markdown": "Выполнение операций с бакетами и объектами при помощи SDK, Python и REST API. Подробнее о REST API читайте в разделе [Cloud Storage](../../../additionals/api/s3-rest-api).",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 7,
   "uuid": "3d8f52ca-acc2-4504-9acc-3a0290d86b6b"
 }

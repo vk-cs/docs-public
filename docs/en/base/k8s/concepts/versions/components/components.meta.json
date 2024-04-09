@@ -7,7 +7,7 @@
     "sectionTitle": "Versions of Kubernetes components",
     "markdown": "Which versions of components and addons are supported in VK Cloud clusters.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 3,
     "uuid": "ebe13293-8fbf-4467-bafe-1389f856c610",
     "createdAt": "2023-06-13T06:58:16.000Z",

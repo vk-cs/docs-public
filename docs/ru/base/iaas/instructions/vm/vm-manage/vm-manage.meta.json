@@ -7,7 +7,7 @@
     "sectionTitle": "Управление ВМ",
     "markdown": "Описание возможностей управления виртуальной машиной, ее состоянием и ресурсами.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 2,
     "uuid": "a3964c71-458b-4d3f-88b1-fb37b77a1b1d",
     "additionalUuids": [

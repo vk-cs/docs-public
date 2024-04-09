@@ -6,7 +6,7 @@
     "metaDescription": "Вертикальное и горизонтальное масштабирование узлов кластера VK Cloud.",
     "sectionTitle": "Масштабирование кластера",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 1,
     "uuid": "8614fddf-43ef-4188-b3d3-4122b814ab8b",
     "additionalUuids": [

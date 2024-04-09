@@ -8,7 +8,7 @@
   "markdown": "Service to simplify work with Data Platform in the VK Cloud infrastructure. The service provides centralized management and grouping of data services through the VK Cloud personal account interface. The service is free for all Data Platform users.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null,
+
   "isBeta": true,
   "uuid": "72405ea3-c208-49eb-a10b-c7873e46e997"
 }

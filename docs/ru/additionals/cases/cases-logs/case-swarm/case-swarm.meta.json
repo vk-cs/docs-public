@@ -7,7 +7,7 @@
     "sectionTitle": "Как настроить централизованное логирование для Docker Swarm с помощью Fluentd",
     "markdown": "",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 0,
     "uuid": "79579cc4-796e-4249-a142-4f1a4ebcd0f0",
     "createdAt": "2022-03-26T14:10:44.000Z",

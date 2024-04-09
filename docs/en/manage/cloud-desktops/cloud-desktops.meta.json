@@ -8,6 +8,6 @@
   "markdown": "The VDI (Virtual Desktop Infrastructure) virtual desktop system is designed to deliver desktops created on a remote server and operating in a virtualized environment to users.",
   "icon": "",
   "weight": 10,
-  "infobarItems": null,
+
   "uuid": "ea0b2b55-d2bc-4bbd-9d13-5a98b0683e12"
 }
