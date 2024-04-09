@@ -6,12 +6,11 @@
     "metaDescription": "VK Cloud: как просматривать, пополнять баланс проекта и настраивать уведомления",
     "sectionTitle": "Управление балансом проекта",
     "icon": "",
-
     "weight": 2,
     "uuid": "b60fdf73-9045-4ca8-8627-ef5ecfab21ff",
     "additionalUuids": [
         "f69da776-54cd-4bf7-814e-fc306a3c2e10"
     ],
     "createdAt": "2022-04-06T12:29:56.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

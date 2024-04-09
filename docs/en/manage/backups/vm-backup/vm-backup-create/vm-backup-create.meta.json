@@ -6,12 +6,11 @@
     "shortDescription": "Backup of virtual machines in automatic and manual mode. Creating a backup plan and VM recovery point",
     "metaDescription": "Backup of virtual machines on the VK Cloud platform, automatic and manual backups, backup plan",
     "markdown": "Backup of virtual machines in automatic and manual mode.",
-
     "weight": 1,
     "additionalUuids": [
         "ffc78353-b041-4ab8-9e69-b587a4da37ea"
     ],
     "uuid": "965a5380-d93a-4c29-9fd7-da32ce103243",
     "createdAt": "2023-05-22T15:07:55.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

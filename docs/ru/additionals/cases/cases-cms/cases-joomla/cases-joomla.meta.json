@@ -6,7 +6,6 @@
     "metaDescription": "VK Cloud: как установить Joomla! 4.3.4 на Almalinux 9",
     "sectionTitle": "Установка Joomla! на Linux",
     "icon": "",
-
     "weight": 12,
     "uuid": "93d9c2d6-bfb4-450b-83c2-758e7c07e8cf",
     "additionalUuids": [
@@ -19,5 +18,5 @@
         "1539d2e6-e336-4474-adec-dc0f39592750"
     ],
     "createdAt": "2023-10-10T11:55:20.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

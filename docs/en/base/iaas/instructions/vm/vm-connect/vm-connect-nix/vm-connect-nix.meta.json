@@ -6,7 +6,6 @@
     "shortDescription": "",
     "metaDescription": "Connecting to a Linux VM",
     "icon": "",
-
     "weight": 0,
     "additionalUuids": [
         "23b02aed-a0ab-4bdd-8d5c-8ef189c2797e",
@@ -14,5 +13,5 @@
     ],
     "uuid": "2df95ef2-6b27-4ad6-974a-6d43350c0f00",
     "createdAt": "2023-04-24T13:06:27.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

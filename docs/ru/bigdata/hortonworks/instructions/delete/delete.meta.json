@@ -6,12 +6,11 @@
     "metaDescription": "VK Cloud: как удалить кластер Cloud Big Data из проекта",
     "sectionTitle": "Удаление",
     "icon": "",
-
     "weight": 4,
     "additionalUuids": [
         "3477b2f5-e93c-4839-a5fa-98162becc64b"
     ],
     "uuid": "45797eba-dccb-4537-9b50-342f8fae3703",
     "createdAt": "2022-07-29T10:21:21.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

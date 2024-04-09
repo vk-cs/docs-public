@@ -7,7 +7,6 @@
     "sectionTitle": "Управление ключевыми парами",
     "icon": "",
     "weight": 3,
-
     "additionalUuids": [
         "e7b447ad-858b-4f35-bcbf-e64363907738",
         "13df04e2-5257-4a29-91c2-348b7f72aedf",
@@ -16,5 +15,5 @@
     ],
     "uuid": "babf647d-74c4-4e2e-82fc-63e8ff8c0793",
     "createdAt": "2023-04-13T13:49:17.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

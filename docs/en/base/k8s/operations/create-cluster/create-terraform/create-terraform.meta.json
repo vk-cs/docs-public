@@ -7,9 +7,8 @@
     "sectionTitle": "Creating a cluster with Terraform",
     "markdown": "How to create a cluster using Terraform.",
     "icon": "",
-
     "weight": 2,
     "uuid": "8f9de6cc-852b-4c03-928d-53f48a3f807a",
     "createdAt": "2023-01-13T09:20:35.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

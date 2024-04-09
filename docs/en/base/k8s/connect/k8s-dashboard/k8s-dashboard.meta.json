@@ -7,9 +7,8 @@
     "sectionTitle": "Connecting to cluster using Kubernetes Dashboard",
     "markdown": "How to connect to a Kubernetes cluster using Kubernetes Dashboard.",
     "icon": "",
-
     "weight": 2,
     "uuid": "a7d4320e-5761-4af2-9551-6d41244bb0db",
     "createdAt": "2023-01-13T09:20:35.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

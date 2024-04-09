@@ -7,12 +7,11 @@
     "sectionTitle": "Managing firewall rules",
     "markdown": "A security group is a set of custom permissive traffic rules that can be assigned to instance ports. The firewall uses these groups to control traffic.",
     "icon": "",
-
     "weight": 3,
     "uuid": "749d3f26-cda0-4379-a807-3f4df4e7acc3",
     "additionalUuids": [
         "267a104a-7b16-4295-b009-7aca075dcf17"
     ],
     "createdAt": "2023-03-17T04:38:48.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

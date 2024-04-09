@@ -6,9 +6,8 @@
     "metaDescription": "Как мигрировать данные из локальной СУБД PostgreSQL в развернутый инстанс БД VK Cloud",
     "sectionTitle": "Миграция из локальной PostgreSQL",
     "icon": "",
-
     "weight": 1,
     "uuid": "e767228f-579f-435d-877b-02659b4a8992",
     "createdAt": "2023-05-05T09:03:24.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

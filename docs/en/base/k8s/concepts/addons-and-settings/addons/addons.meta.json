@@ -7,9 +7,8 @@
     "sectionTitle": "Addons",
     "markdown": "Services that can be automatically installed in the cluster to extend its functionality.",
     "icon": "",
-
     "weight": 1,
     "uuid": "dc21e4b3-faff-4d3a-b639-2a6b9847898a",
     "createdAt": "2023-06-13T06:58:16.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

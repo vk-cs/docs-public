@@ -6,12 +6,11 @@
     "metaDescription": "Marketplace VK Cloud: шаги по развертыванию сервиса Grafana 10 в целевой проект",
     "sectionTitle": "Развертывание Grafana",
     "icon": "",
-
     "weight": 5,
     "additionalUuids": [
         "2a9dd393-ad10-4606-ac2b-3fa5557844b3"
     ],
     "uuid": "52f065bf-ae76-401d-ab88-90d50c0684f7",
     "createdAt": "2023-12-01T08:47:30.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }

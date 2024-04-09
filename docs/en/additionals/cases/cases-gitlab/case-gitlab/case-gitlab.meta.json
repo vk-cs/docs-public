@@ -7,12 +7,11 @@
     "sectionTitle": "Installing and configuring GitLab",
     "markdown": "",
     "icon": "",
-
     "weight": 2,
     "additionalUuids": [
         "64d547e3-e046-46f2-b0f9-fa15136592ba"
     ],
     "uuid": "107a346d-053e-48c3-b85b-9b35d1e3c7be",
     "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-03-29T16:45:57.000Z"
+    "updatedAt": "2024-04-01T11:08:43.000Z"
 }
