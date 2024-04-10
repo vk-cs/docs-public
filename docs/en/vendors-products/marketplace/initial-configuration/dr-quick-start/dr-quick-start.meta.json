@@ -6,7 +6,6 @@
     "metaDescription": "Hystax Acura Disaster Recovery in the Marketplace: Deploying the service, creating a plan and launching a disaster recovery",
     "sectionTitle": "Installing and configuring Hystax DR",
     "icon": "",
-
     "weight": 1,
     "uuid": "549f73f0-90ae-48d6-8cea-3976f56f3ff4",
     "additionalUuids": [
@@ -17,5 +16,5 @@
         "fcd5be1f-7037-440a-8e78-f3396c82e896"
     ],
     "createdAt": "2023-07-28T11:19:26.000Z",
-    "updatedAt": "2024-04-01T11:38:17.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }
