@@ -6,7 +6,6 @@
     "metaDescription": "Hystax Acura Disaster Recovery в Marketplace: развертывание сервиса, создание плана и запуск аварийного восстановления",
     "sectionTitle": "Установка и настройка Hystax DR",
     "icon": "",
-    "infobarItems": null,
     "weight": 1,
     "uuid": "ba4939ff-df5d-451e-a39f-4cd8cb9da3a0",
     "additionalUuids": [
@@ -17,5 +16,5 @@
         "24f1c008-1b99-4089-bde3-7afd35df2397"
     ],
     "createdAt": "2023-07-28T11:19:26.000Z",
-    "updatedAt": "2024-04-01T11:38:17.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

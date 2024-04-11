@@ -8,11 +8,10 @@
     "markdown": "Verify phone number to activate services.",
     "icon": "",
     "weight": 1,
-    "infobarItems": null,
     "additionalUuids": [
         "368955b1-d609-4cb4-ac14-ef905528684f"
     ],
     "uuid": "680fcbd9-ed6d-4b16-80d1-b8da82f54ac9",
     "createdAt": "2023-04-19T15:28:14.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-10T17:02:33.000Z"
 }

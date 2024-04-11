@@ -7,7 +7,6 @@
     "sectionTitle": "Managing load balancers",
     "markdown": "Managing load balancers in the virtual networks service.",
     "icon": "",
-    "infobarItems": null,
     "weight": 4,
     "uuid": "0211098f-0a9c-45df-b260-5cdeeabaa1a1",
     "additionalUuids": [
@@ -17,5 +16,5 @@
         "6f233a96-2079-4730-8e9c-70c33cf856fe"
     ],
     "createdAt": "2023-03-17T04:38:48.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

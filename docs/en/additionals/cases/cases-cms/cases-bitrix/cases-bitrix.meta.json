@@ -7,7 +7,6 @@
     "sectionTitle": "Installing 1C-Bitrix",
     "markdown": "",
     "icon": "",
-    "infobarItems": null,
     "weight": 15,
     "uuid": "4d820acb-a00c-4bcc-a317-25561340f982",
     "additionalUuids": [
@@ -16,5 +15,5 @@
         "bc0aeac1-e431-44b8-86f9-1e039e005e63"
     ],
     "createdAt": "2023-10-17T15:01:35.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

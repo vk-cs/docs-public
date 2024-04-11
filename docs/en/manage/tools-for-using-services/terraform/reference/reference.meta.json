@@ -1,13 +1,13 @@
 {
   "title": "Reference",
   "pageDescription": "",
-  "shortDescription": "",
+  "shortDescription": "Basic Terraform commands and sample manifests",
   "metaTitle": "Reference",
   "metaDescription": "",
   "sectionTitle": "Reference",
   "markdown": "",
   "icon": "",
   "weight": 3,
-  "infobarItems": null,
+
   "uuid": "d02c23a0-ebad-49af-b674-9998728b0146"
 }

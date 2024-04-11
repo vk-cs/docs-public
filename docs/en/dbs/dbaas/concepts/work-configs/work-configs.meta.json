@@ -6,7 +6,6 @@
     "metaDescription": "Available configurations of deployed database instances in VK Cloud.",
     "sectionTitle": "DB instance configurations",
     "icon": "",
-    "infobarItems": null,
     "weight": 3,
     "uuid": "4520d8b0-b0bd-4d5e-8765-670ea47938d3",
     "additionalUuids": [
@@ -14,5 +13,5 @@
         "3d15d0da-93f0-4442-b426-03e93f5b6b2c"
     ],
     "createdAt": "2023-06-26T14:22:32.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

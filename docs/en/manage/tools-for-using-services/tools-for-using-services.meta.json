@@ -8,16 +8,18 @@
   "markdown": "You can work with VK Cloud services not only through [personal account](/en/base/account), but also with the help of additional tools: [OpenStack CLI](/en/manage/tools-for-using-services/openstack-cli), [REST API](/en/manage/tools-for-using-services/rest-api), [Terraform](/en/manage/tools-for-using-services/terraform). These tools allow you to automate cloud resource management workflows using the Infrastructure as Code (IaC) approach.",
   "icon": "",
   "weight": 1,
-  "infobarItems": [
+  "relativeSections": [
     {
-      "text": "S3 CLI",
-      "icon": "/docs/_docs/ru/base/s3/assets/icon.svg",
-      "link": "../../base/s3/storage-connecting/s3-cli"
+      "title": "S3 CLI",
+      "description": "",
+      "partialPath": "en/base/s3/storage-connecting/s3-cli",
+      "link": ""
     },
     {
-      "text": "Personal account",
-      "icon": "/docs/_docs/ru/base/account/assets/icon.svg",
-      "link": "../../base/account/concepts/projects"
+      "title": "Personal account",
+      "description": "",
+      "partialPath": "en/base/account/concepts/projects",
+      "link": ""
     }
   ],
   "uuid": "7c7b6dac-087f-4a51-8ab5-403e35eff0d9"

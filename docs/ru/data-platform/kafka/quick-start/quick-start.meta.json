@@ -6,9 +6,8 @@
     "metaDescription": "Cloud Kafka: развернуть экземпляр сервиса, отправить сообщение в топик и проверить его получение",
     "sectionTitle": "Быстрый старт",
     "icon": "",
-    "infobarItems": null,
     "weight": 1,
     "uuid": "07af8241-db84-4c2e-92df-522d99b4627b",
     "createdAt": "2024-01-22T11:04:00.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

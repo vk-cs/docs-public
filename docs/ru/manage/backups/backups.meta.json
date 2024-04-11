@@ -6,16 +6,18 @@
   "metaDescription": "Cloud Backup VK Cloud: резервное копирование виртуальных машин, баз данных",
   "sectionTitle": "Cloud Backup",
   "icon": "",
-  "infobarItems": [
+  "relativeSections": [
     {
-      "text": "Справка API",
-      "icon": "/docs/_docs/ru/manage/backups/assets/icon.svg",
-      "link": "../../additionals/api/backup-api"
+      "title": "Справка API",
+      "description": "",
+      "partialPath": "ru/additionals/api/backup-api",
+      "link": ""
     },
     {
-      "text": "Резервное копирование с помощью сервиса Кибер Бэкап Облачный",
-      "icon": "/docs/_docs/ru/vendors-products/marketplace/assets/icon.svg",
-      "link": "../../vendors-products/marketplace/initial-configuration/cyber-backup-quick-start"
+      "title": "Резервное копирование с помощью сервиса Кибер Бэкап Облачный",
+      "description": "",
+      "partialPath": "ru/vendors-products/marketplace/initial-configuration/cyber-backup-quick-start",
+      "link": ""
     }
   ],
   "weight": 3,

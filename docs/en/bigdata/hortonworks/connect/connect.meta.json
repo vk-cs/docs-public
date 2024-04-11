@@ -6,9 +6,8 @@
     "metaDescription": "VK Cloud: connecting to Cloud Big Data cluster nodes, its individual components via SSH and web interface",
     "sectionTitle": "Connection",
     "icon": "",
-    "infobarItems": null,
     "weight": 4,
     "uuid": "d4800688-e762-41e3-9150-33d763ddc529",
     "createdAt": "2022-07-29T10:21:21.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

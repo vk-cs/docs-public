@@ -6,7 +6,6 @@
     "metaDescription": "Cloud Databases VK Cloud: creating a DB instance in Single and Master-Replica configurations",
     "sectionTitle": "Single and Master-Replica configurations",
     "icon": "",
-    "infobarItems": null,
     "weight": 1,
     "additionalUuids": [
         "320d209b-384e-45a0-8455-e5b77a6584a9",
@@ -17,5 +16,5 @@
     ],
     "uuid": "91ae80be-f228-4571-b1ab-76ce6ee97894",
     "createdAt": "2023-10-24T07:59:40.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

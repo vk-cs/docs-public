@@ -7,9 +7,8 @@
     "sectionTitle": "Tarantool",
     "markdown": "Описание in-memory-платформы вычислений Tarantool для VK Cloud.",
     "icon": "",
-    "infobarItems": null,
     "weight": 6,
     "uuid": "e655dba7-5447-4e7d-ab22-ae291916f5af",
     "createdAt": "2023-04-27T07:35:14.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

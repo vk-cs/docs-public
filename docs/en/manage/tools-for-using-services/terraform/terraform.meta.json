@@ -1,13 +1,13 @@
 {
   "title": "Terraform",
   "pageDescription": "Terraform — this is an open source software using the “Infrastructure as Code” (Infrastructure as Code, IAC) approach, created by Hashicorp.It allows users to determine the infrastructure using the declarative language of the JSON -based configuration.",
-  "shortDescription": "Using Terraform provider VK Cloud for platform management, quick start and sample manifests",
+  "shortDescription": "Using the VK Cloud Terraform provider to manage the platform, quick start and example manifests",
   "metaTitle": "Terraform",
-  "metaDescription": "Using Terraform provider VK Cloud for platform management, quick start and sample manifests.",
+  "metaDescription": "Using the VK Cloud Terraform provider to manage the platform, quick start and example manifests.",
   "sectionTitle": "Terraform",
-  "markdown": "Using Terraform provider VK Cloud for platform management, quick start and sample manifests.<br><info>Additional information about the provider and supported resources is available in the VK Cloud [GitHub repository](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).</info>",
+  "markdown": "Using the VK Cloud Terraform provider to manage the platform, quick start and example manifests.<br><info>Additional information about the provider and supported resources is available in the VK Cloud [GitHub repository](https://github.com/vk-cs/terraform-provider-vkcs/tree/master/docs).</info>",
   "icon": "",
   "weight": 3,
-  "infobarItems": null,
+
   "uuid": "6013dc5c-4d5e-45b5-bc10-191f02848c3d"
 }

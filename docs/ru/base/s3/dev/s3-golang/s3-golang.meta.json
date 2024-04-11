@@ -7,7 +7,7 @@
   "sectionTitle": "Golang",
   "markdown": "Выполнение операций с бакетами и объектами при помощи Golang.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 3,
   "uuid": "4fb3cc66-1ff1-4178-ad5a-5ca3767ac669"
 }

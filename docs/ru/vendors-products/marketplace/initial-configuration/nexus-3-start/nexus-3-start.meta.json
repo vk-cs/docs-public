@@ -6,12 +6,11 @@
     "metaDescription": "Marketplace VK Cloud: шаги по развертыванию сервиса Sonatype Nexus 3 в целевой проект",
     "sectionTitle": "Развертывание Nexus 3",
     "icon": "",
-    "infobarItems": null,
     "weight": 4,
     "additionalUuids": [
         "7bc44fb4-b3d9-4f39-b56c-ba3387a6ef2c"
     ],
     "uuid": "ec93abd2-9c23-44bc-8bc0-6320bd05f81b",
     "createdAt": "2023-10-31T07:54:56.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

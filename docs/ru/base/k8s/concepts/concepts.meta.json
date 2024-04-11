@@ -7,7 +7,7 @@
   "sectionTitle": "Концепции",
   "markdown": "Подробное описание принципов функционирования и устройства кластеров сервиса Cloud Containers.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 10,
   "uuid": "1c23d710-7408-4c2c-9c9f-a5a8c12719cc"
 }

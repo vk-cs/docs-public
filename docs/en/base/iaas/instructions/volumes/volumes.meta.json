@@ -7,7 +7,6 @@
     "sectionTitle": "Disks",
     "markdown": "Creating, deleting, and configuring disks. Connecting and disconnecting disks, moving between projects. Creating and using disk snapshots.",
     "icon": "",
-    "infobarItems": null,
     "weight": 2,
     "additionalUuids": [
         "e567da37-109c-4218-b8c0-45f46d06c4c1",
@@ -21,5 +20,5 @@
     ],
     "uuid": "a7580d16-9b75-4d26-bebd-bcf391328655",
     "createdAt": "2023-04-24T13:06:27.000Z",
-    "updatedAt": "2024-03-27T15:20:44.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }
