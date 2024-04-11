@@ -7,9 +7,8 @@
     "sectionTitle": "Ограничение трафика",
     "markdown": "Особенности использования IP Source Guard и файервола для ограничения трафика в виртуальных сетях.",
     "icon": "",
-    "infobarItems": null,
     "weight": 4,
     "uuid": "bfeaac36-d823-44d1-abea-fd1aabcf6534",
     "createdAt": "2022-12-27T09:51:35.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

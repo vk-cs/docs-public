@@ -40,7 +40,7 @@ The version history can be viewed at [Kubernetes version history](../version-cha
 
 New features are added to all versions of Kubernetes, unless a feature and version are incompatible.
 
-| Feature                                  | 1.17.x–1.20.x | 1.21.4–1.22.х | 1.24.x–1.27.х |
+| Feature                                  | 1.17.x–1.20.x | 1.21.4–1.23.х | 1.24.x–1.27.х |
 | ---------------------------------------- | ------------- | ------------- | ------ |
 | Node group scaling settings              | +             | +             | +      |
 | Invalidate the key pair                  | +             | +             | -      |

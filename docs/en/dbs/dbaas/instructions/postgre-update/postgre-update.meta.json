@@ -6,9 +6,8 @@
     "metaDescription": "How to update the PostgreSQL version on instances in Single, Master-Replica, Cluster configurations.",
     "sectionTitle": "Updating the PostgreSQL version",
     "icon": "",
-    "infobarItems": null,
     "weight": 3,
     "uuid": "967cc6f8-302b-4da9-bdaa-9f0835ef264d",
     "createdAt": "2023-06-02T12:20:43.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

@@ -7,9 +7,8 @@
     "sectionTitle": "Managing ports",
     "markdown": "Managing OpenStack ports in the virtual networks service.",
     "icon": "",
-    "infobarItems": null,
     "weight": 2,
     "uuid": "b372c224-4fe7-45ab-bd5d-20f0bc384c11",
     "createdAt": "2023-03-17T04:38:48.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

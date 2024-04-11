@@ -7,7 +7,6 @@
     "sectionTitle": "Managing networks and subnets",
     "markdown": "",
     "icon": "",
-    "infobarItems": null,
     "weight": 0,
     "uuid": "e7d18536-a3c8-4f2c-8189-5b25d9935a68",
     "additionalUuids": [
@@ -17,5 +16,5 @@
         "ebc65756-a41e-4ef7-9e5f-42506b9c737d"
     ],
     "createdAt": "2023-03-17T04:38:48.000Z",
-    "updatedAt": "2024-03-21T11:48:40.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

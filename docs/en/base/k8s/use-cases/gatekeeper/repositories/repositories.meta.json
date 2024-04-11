@@ -7,9 +7,8 @@
     "sectionTitle": "Configuring allowed repositories",
     "markdown": "Using Gatekeeper to enforce constraints that will check that images are downloaded only from allowed repositories.",
     "icon": "",
-    "infobarItems": null,
     "weight": 2,
     "uuid": "9aad2849-1640-4016-9dcb-d588c5d27e90",
     "createdAt": "2023-01-13T09:20:35.000Z",
-    "updatedAt": "2024-03-21T11:48:40.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

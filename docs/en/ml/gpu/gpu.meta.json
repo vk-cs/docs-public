@@ -8,6 +8,6 @@
   "markdown": "Cloud computing powered by NVIDIA GPUs can accelerate petabytes of data up to ten times. Suitable for deep learning, graphical visualization and high performance computing tasks.",
   "icon": "",
   "weight": 4,
-  "infobarItems": null,
+
   "uuid": "01a7ca6b-8011-4998-86e1-b80e4ab98809"
 }

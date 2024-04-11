@@ -6,9 +6,8 @@
     "shortDescription": "How to create a port and connect a network to a virtual machine",
     "metaDescription": "Connecting the network to the VM",
     "icon": "",
-    "infobarItems": null,
     "weight": 4,
     "uuid": "be312143-10d6-4d7a-88c9-f5414a131e07",
     "createdAt": "2023-04-24T13:06:27.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

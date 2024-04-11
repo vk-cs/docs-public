@@ -6,9 +6,8 @@
     "metaDescription": "Как установить и настроить плагин vkcloudlogs-fluent-bit-plugin для отправки логов в VK Cloud.",
     "sectionTitle": "Установка плагина",
     "icon": "",
-    "infobarItems": null,
     "weight": 2,
     "uuid": "40bfc03f-0ceb-4338-81ae-44c3e7936ba3",
     "createdAt": "2022-12-27T15:32:39.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

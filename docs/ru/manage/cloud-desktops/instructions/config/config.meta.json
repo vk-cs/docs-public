@@ -6,9 +6,8 @@
     "metaDescription": "Настройка сети и подключение к каталогу пользователей AD или LDAP.",
     "sectionTitle": "Настройка сервиса",
     "icon": "",
-    "infobarItems": null,
     "weight": 1,
     "uuid": "844a8708-063c-4a23-ad1d-a277900eae1a",
     "createdAt": "2023-10-26T06:43:55.000Z",
-    "updatedAt": "2024-03-29T14:16:47.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

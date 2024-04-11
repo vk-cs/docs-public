@@ -7,7 +7,6 @@
     "sectionTitle": "Компоненты",
     "markdown": "",
     "icon": "",
-    "infobarItems": null,
     "weight": 3,
     "additionalUuids": [
         "8888c8be-2621-4ffd-8d22-f4cc9c0025ca",
@@ -18,5 +17,5 @@
     ],
     "uuid": "1030c17f-6570-4f51-b987-8b5a19f9ac24",
     "createdAt": "2022-07-29T10:21:21.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

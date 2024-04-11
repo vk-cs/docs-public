@@ -296,7 +296,7 @@
 
 <info>
 
-Информация об увеличении квот [для участников программы GeekBrains](../../../faq#mozhet_li_uchastnik_programmy_geekbrains_zaprosit_uvelichenie_kvot_na_platforme_vk_cloud).
+Информацию об увеличении квот для участников программы GeekBrains можете найти в [Вопросах и ответах](../../../faq).
 
 </info>
 

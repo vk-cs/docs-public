@@ -7,12 +7,11 @@
     "sectionTitle": "Аккаунт и ключи доступа",
     "markdown": "Доступ к Cloud Storage через AWS CLI, API и файловые менеджеры.",
     "icon": "",
-    "infobarItems": null,
     "weight": 1,
     "uuid": "fd4db123-373a-481e-b547-770e3ca58c87",
     "additionalUuids": [
         "d62ab1ee-fcdf-49d3-99a4-8c1fb83fa610"
     ],
     "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

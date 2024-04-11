@@ -8,6 +8,6 @@
   "markdown": "CDN is a content delivery network that allows you to organize the transfer of content from your servers to users with minimal time delay.",
   "icon": "",
   "weight": 2,
-  "infobarItems": null,
+
   "uuid": "4b4f2f78-08c9-4479-986b-45db3747f709"
 }

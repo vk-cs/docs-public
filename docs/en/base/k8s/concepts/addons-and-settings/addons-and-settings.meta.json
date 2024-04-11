@@ -7,7 +7,7 @@
   "sectionTitle": "Addons and settings",
   "markdown": "Each Cloud Containers cluster is already pre-configured for your convenience. This section describes the settings used in the cluster, as well as addons that can be installed in the cluster.",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 3,
   "uuid": "c79491d9-6a34-4797-8396-67d0369308c6"
 }
