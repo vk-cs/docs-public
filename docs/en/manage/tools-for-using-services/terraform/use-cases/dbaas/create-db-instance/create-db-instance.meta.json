@@ -6,9 +6,9 @@
     "metaDescription": "Cloud Databases: how to create a database instance using Terraform in VK Cloud",
     "sectionTitle": "Creating a DB instance",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 1,
     "uuid": "c14f9f6e-6b12-4ae8-871f-994740237ea2",
     "createdAt": "2023-11-10T10:04:54.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-08T12:49:16.000Z"
 }

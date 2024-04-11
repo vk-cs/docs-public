@@ -7,9 +7,8 @@
     "sectionTitle": "Настройки групп worker-узлов",
     "markdown": "Перечень всех настроек групп worker-узлов.",
     "icon": "",
-    "infobarItems": null,
     "weight": 2,
     "uuid": "28f82307-4c0d-4591-99c8-6c32a919c8db",
     "createdAt": "2022-12-15T08:05:18.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

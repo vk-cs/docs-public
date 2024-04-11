@@ -7,12 +7,11 @@
     "sectionTitle": "Managing routers",
     "markdown": "Managing routers in the virtual networks service.",
     "icon": "",
-    "infobarItems": null,
     "weight": 5,
     "uuid": "f0ebf594-b4a4-4290-8574-bab3ef7fa9fe",
     "additionalUuids": [
         "5eb605a5-9b1f-46c5-95b3-5d10206de632"
     ],
     "createdAt": "2023-03-17T04:38:48.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

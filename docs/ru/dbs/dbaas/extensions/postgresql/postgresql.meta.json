@@ -7,7 +7,6 @@
     "sectionTitle": "Расширения PostgreSQL",
     "markdown": "Перечень доступных расширений PostgreSQL и их параметров.",
     "icon": "",
-    "infobarItems": null,
     "weight": 1,
     "additionalUuids": [
         "72e70640-64fc-42e0-96b1-0f7a3ce8a548",
@@ -21,6 +20,6 @@
         "61cd4612-b241-4d3e-9261-3f3490b2832f"
     ],
     "createdAt": "2023-09-05T09:12:49.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z",
+    "updatedAt": "2024-04-01T11:41:38.000Z",
     "uuid": "d0eaa2e7-c20d-4f04-b855-395178641911"
 }

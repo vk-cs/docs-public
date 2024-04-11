@@ -8,11 +8,12 @@
   "markdown": "",
   "icon": "",
   "weight": 7,
-  "infobarItems": [
+  "relativeSections": [
     {
-      "text": "Справка API",
-      "icon": "/docs/_docs/ru/additionals/start/partners/assets/icon.svg",
-      "link": "../../../additionals/api/partners-api"
+      "title": "Справка API",
+      "description": "",
+      "partialPath": "ru/additionals/api/partners-api",
+      "link": ""
     }],
   "uuid": "6249aa71-381f-4ca7-9851-56039b514415"
 }

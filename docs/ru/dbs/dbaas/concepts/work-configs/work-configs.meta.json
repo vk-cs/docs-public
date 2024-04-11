@@ -6,7 +6,6 @@
     "metaDescription": "Доступные конфигурации разворачиваемых инстансов баз данных в VK Cloud.",
     "sectionTitle": "Конфигурации инстансов БД",
     "icon": "",
-    "infobarItems": null,
     "weight": 3,
     "uuid": "2e4a9f98-5fee-4964-b26b-3d63cca8262e",
     "additionalUuids": [
@@ -15,5 +14,5 @@
         "4df18c20-6c7a-4a56-8a3d-5bc2652244d8"
     ],
     "createdAt": "2023-06-26T14:22:32.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

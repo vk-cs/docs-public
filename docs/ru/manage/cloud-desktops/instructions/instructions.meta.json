@@ -7,7 +7,7 @@
   "sectionTitle": "Пошаговые инструкции",
   "markdown": "Операции, которые можно выполнить с разворачиваемыми виртуальными рабочими столами.<br><info>Руководство пользователя Cloud Desktop [доступно в формате PDF](/ru/manage/cloud-desktops/instructions/assets/Termidesk_user_guide_v_1_0.pdf \"download\").</info>",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 3,
   "uuid": "66222ea9-fae4-4e7a-8027-e15c675dcdd7"
 }

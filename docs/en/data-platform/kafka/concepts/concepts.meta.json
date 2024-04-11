@@ -6,7 +6,7 @@
   "metaDescription": "How the Kafka service works in VK Cloud: functional features and internal architecture",
   "sectionTitle": "Concepts",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 2,
   "uuid": "66569cc6-fe23-4bd8-94e6-cc15efda7539"
 }

@@ -7,9 +7,8 @@
     "sectionTitle": "Managing cluster",
     "markdown": "This section describes the operations that can be used to manage a Kubernetes cluster. Each operation is accompanied by step-by-step instructions.",
     "icon": "",
-    "infobarItems": null,
     "weight": 2,
     "uuid": "1d9dae9f-b231-4be6-818d-4b4422548001",
     "createdAt": "2023-01-13T09:20:35.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

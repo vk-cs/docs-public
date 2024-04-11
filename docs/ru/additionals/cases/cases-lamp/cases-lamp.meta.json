@@ -6,7 +6,6 @@
     "metaDescription": "VK Cloud: как установить и настроить стек LAMP на Ubuntu 22.04",
     "sectionTitle": "Установка LAMP на Linux",
     "icon": "",
-    "infobarItems": null,
     "weight": 5,
     "uuid": "1fd81ef4-36ba-4619-b033-71f0cb31efc3",
     "additionalUuids": [
@@ -23,5 +22,5 @@
         "b7f03623-5318-44c3-ace6-f30075447671"
     ],
     "createdAt": "2023-10-20T06:43:10.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

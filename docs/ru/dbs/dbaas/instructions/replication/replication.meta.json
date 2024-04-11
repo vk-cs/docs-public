@@ -6,7 +6,6 @@
     "metaDescription": "Добавление реплики БД",
     "sectionTitle": "Репликации",
     "icon": "",
-    "infobarItems": null,
     "weight": 3,
     "additionalUuids": [
         "8acf0e6d-6c56-494a-8e8f-6b689283fce9",
@@ -14,5 +13,5 @@
     ],
     "uuid": "6e3c6a3d-944e-4fa2-a7d4-ee426529fb61",
     "createdAt": "2023-05-22T15:07:55.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

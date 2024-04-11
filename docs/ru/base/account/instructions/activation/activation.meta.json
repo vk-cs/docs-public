@@ -8,11 +8,10 @@
     "markdown": "Подтверждение номера телефона для активации сервисов.",
     "icon": "",
     "weight": 1,
-    "infobarItems": null,
     "uuid": "9349e09c-e7c0-4fe9-b592-f46785a081ac",
     "additionalUuids": [
         "6ba2f1ac-46d1-42f1-9aed-1de643882d25"
     ],
     "createdAt": "2023-04-19T15:28:14.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-10T17:02:33.000Z"
 }

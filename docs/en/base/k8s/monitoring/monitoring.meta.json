@@ -7,9 +7,8 @@
     "sectionTitle": "Cluster monitoring",
     "markdown": "A Kubernetes cluster can be monitored to track its status. This can help prevent a possible shortage of computing resources or track an incorrect cluster configuration.",
     "icon": "",
-    "infobarItems": null,
     "weight": 4,
     "uuid": "d54d6b63-3d4f-43d3-93c4-e2f3f4cbcb19",
     "createdAt": "2023-01-13T09:20:35.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

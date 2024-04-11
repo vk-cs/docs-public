@@ -7,7 +7,7 @@
   "sectionTitle": "Cloud Alerting",
   "markdown": "Сервис уведомлений об изменениях ключевых метрик облачных сервисов",
   "icon": "",
-  "infobarItems": null,
+
   "weight": 5,
   "uuid": "0044e5d2-3af7-4582-95f6-6075260b9d06"
 }

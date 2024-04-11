@@ -7,7 +7,6 @@
     "sectionTitle": "Managing key pairs",
     "icon": "",
     "weight": 3,
-    "infobarItems": null,
     "additionalUuids": [
         "3f879362-d6d1-4d2f-8421-5c5a283d9747",
         "b1c50aab-d315-4694-8b89-82824c520778",
@@ -16,5 +15,5 @@
     ],
     "uuid": "03eb6789-2dac-4d45-b4ed-cd769e480880",
     "createdAt": "2023-04-13T13:49:17.000Z",
-    "updatedAt": "2024-03-19T14:14:34.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

@@ -6,7 +6,6 @@
     "shortDescription": "Creating, importing and exporting images",
     "metaDescription": "Creating, importing and exporting images",
     "icon": "",
-    "infobarItems": null,
     "weight": 0,
     "additionalUuids": [
         "82c36518-fc4d-48ec-b471-e0faf6f9699d",
@@ -15,5 +14,5 @@
     ],
     "uuid": "11d9fa14-1277-472e-8e0c-82b5132be8c4",
     "createdAt": "2023-04-24T13:06:27.000Z",
-    "updatedAt": "2024-03-27T15:20:44.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }

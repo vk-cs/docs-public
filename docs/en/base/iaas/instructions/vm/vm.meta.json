@@ -7,7 +7,7 @@
     "sectionTitle": "Virtual machines",
     "markdown": "Creating Linux and Windows virtual machines. Connecting to VMs, managing their resources and status. VM diagnostics.",
     "icon": "",
-    "infobarItems": null,
+
     "weight": 1,
     "additionalUuids": [
         "979bea50-9f58-4fcf-b1ec-72b24c9a7150"

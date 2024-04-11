@@ -6,9 +6,8 @@
     "metaDescription": "OpenStack Console, VNC console, VM message log, VM message logs",
     "sectionTitle": "VM diagnostics",
     "icon": "",
-    "infobarItems": null,
     "weight": 5,
     "uuid": "0bb60b95-8bb4-4b70-9088-2e86d87cb3fe",
     "createdAt": "2023-04-24T13:06:27.000Z",
-    "updatedAt": "2024-03-21T11:48:40.000Z"
+    "updatedAt": "2024-04-01T11:41:38.000Z"
 }
