@@ -8,11 +8,12 @@
   "markdown": "Этот раздел описывает как создать и управлять инстансом MLflow Deploy.",
   "icon": "",
   "weight": 3,
-  "infobarItems": [
+  "relativeSections": [
     {
-      "text": "Управление с помощью Terraform",
-      "icon": "/docs/_docs/ru/manage/tools-for-using-services/terraform/assets/icon.svg",
-      "link": "../../../manage/tools-for-using-services/terraform/use-cases/mlplatform/deploymlflow"
+      "title": "Управление с помощью Terraform",
+      "description": "",
+      "partialPath": "ru/manage/tools-for-using-services/terraform/use-cases/mlplatform/deploymlflow",
+      "link": ""
     }],
   "uuid": "77116544-82da-41b3-a40a-863f8cd124f9"
 }

@@ -54,23 +54,38 @@ resource "vkcs_mlplatform_mlflow" "mlflow" {
 
 Здесь:
 
-- `flavor_id` — идентификатор типа ВМ:
+- `flavor_id` — идентификатор типа ВМ. Идентификатор можно прописать в манифесте или получить из источника данных:
 
-  - `flavor_id = data.vkcs_compute_flavor.basic.id` — значение берется из источника данных `vkcs_compute_flavor`. Источник будет сформирован далее.
-  - `flavor_id = aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac` — указывается идентификатор типа ВМ, полученный через [OpenStack CLI](/ru/manage/tools-for-using-services/openstack-cli).
+  <details>
+    <summary>Примеры</summary>
 
-- `jh_instance_id` — идентификатор инстанса JupyterHub для совместной работы:
+  - `flavor_id = data.vkcs_compute_flavor.basic.id`: идентификатор берется из источника данных `vkcs_compute_flavor`, который будет сформирован далее.
+  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: указывается идентификатор, полученный через [OpenStack CLI](/ru/manage/tools-for-using-services/openstack-cli).
 
-  - `jh_instance_id = vkcs_mlplatform_jupyterhub.jupyterhub.id` — создание нового инстанса, значение будет получено после создания ресурса `vkcs_mlplatform_jupyterhub`. Ресурс будет создан далее.
-  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"` — указывается идентификатор существующего инстанса. Идентификатор доступен на странице инстанса JupyterHub в [личном кабинете VK Cloud](https://cloud.vk.com/app).
+  </details>
+
+- `jh_instance_id` — идентификатор инстанса JupyterHub для совместной работы. Можно создать новый инстанс или использовать существующий.
+
+  <details>
+    <summary>Примеры</summary>
+
+  - `jh_instance_id = vkcs_mlplatform_jupyterhub.jupyterhub.id`: будет создан новый инстанс JupyterHub, идентификатор инстанса будет получен после создания ресурса `vkcs_mlplatform_jupyterhub`. Ресурс будет сформирован далее.
+  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: указывается идентификатор существующего инстанса. Идентификатор доступен на странице инстанса JupyterHub в [личном кабинете VK Cloud](https://cloud.vk.com/app).
+
+  </details>
 
 - `demo_mode` — демо-режим. Если `true`, все данные будут храниться на ВМ инстанса. Если `false`, для хранения данных будет подключен бакет S3 с базой данных DBaaS Postgres.
 
-- `network_id` — идентификатор сети, в которой будет размещен инстанс:
+- `network_id` — идентификатор сети, в которой будет размещен инстанс. Инстанс может быть размещен в существующей сети или в новой. Идентификатор можно указать в манифесте, получить из источника данных или ресурса.
 
-  - `network_id = vkcs_networking_network.default.id` — создание новой сети, значение будет получено после создания ресурса `vkcs_networking_network`. Ресурс будет создан далее.
-  - `network_id = data.vkcs_networking_network.default.id` — размещение в существующей сети, значение берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
-  - `network_id = "bb76507d-zzzz-zzzz-zzzz-2bca1a4c4cfc"` — размещение в существующей сети. Указывается идентификатор сети, полученный из [списка сетей](/ru/networks/vnet/operations/manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+  <details>
+    <summary>Примеры</summary>
+
+  - `network_id = vkcs_networking_network.default.id`: инстанс будет размещен в новой сети, которая будет создана ресурсом `vkcs_networking_network`. Ресурс будет сформирован далее.
+  - `network_id = data.vkcs_networking_network.default.id`: инстанс будет размещен в существующей сети, ее идентификатор берется из источника данных `vkcs_networking_network`. Источник будет сформирован далее.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: инстанс будет размещен в существующей сети. Указывается ее идентификатор, полученный из [списка сетей](/ru/networks/vnet/operations/manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) в личном кабинете VK Cloud или через Openstack CLI.
+
+  </details>
 
 ## 2. (Опционально) Создайте файл с описанием источника данных для типа ВМ
 
