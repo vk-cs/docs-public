@@ -10,10 +10,7 @@
   "weight": 2,
   "relativeSections": [
     {
-      "title": "Справка API",
-      "description": "",
-      "partialPath": "ru/additionals/api/vision-api",
-      "link": ""
+      "partialPath": "/ru/additionals/api/vision-api"
     }],  
   "uuid": "c7401563-0931-4c7d-a930-33fcdbde931c",
   "additionalUuids": [
