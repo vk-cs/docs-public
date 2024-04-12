@@ -10,10 +10,7 @@
   "weight": 7,
   "relativeSections": [
     {
-      "title": "Справка API",
-      "description": "",
-      "partialPath": "ru/additionals/api/partners-api",
-      "link": ""
+      "partialPath": "/ru/additionals/api/partners-api"
     }],
   "uuid": "6249aa71-381f-4ca7-9851-56039b514415"
 }
