@@ -10,10 +10,7 @@
   "weight": 10,
   "relativeSections": [
     {
-      "title": "Справка API",
-      "description": "",
-      "partialPath": "ru/additionals/api/vdi-api",
-      "link": ""
+      "partialPath": "/ru/additionals/api/vdi-api"
     }],
   "uuid": "842b1d20-793c-49a7-9461-32eb20bec850"
 }

@@ -10,16 +10,10 @@
   "weight": 1,
   "relativeSections": [
     {
-      "title": "S3 CLI",
-      "description": "",
-      "partialPath": "en/base/s3/storage-connecting/s3-cli",
-      "link": ""
+      "partialPath": "/en/base/s3/storage-connecting/s3-cli"
     },
     {
-      "title": "Personal account",
-      "description": "",
-      "partialPath": "en/base/account/concepts/projects",
-      "link": ""
+      "partialPath": "/en/base/account/concepts/projects"
     }
   ],
   "uuid": "7c7b6dac-087f-4a51-8ab5-403e35eff0d9"
