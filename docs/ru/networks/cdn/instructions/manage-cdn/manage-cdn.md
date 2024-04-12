@@ -587,6 +587,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 </tabpanel>
 </tabs>
 
+<!---
 ## Включение поддержки WebSocket
 
 Для передачи данных между источником и CDN-ресурсом можно использовать протокол WebSocket. В отличие от HTTP, WebSocket — двунаправленный протокол передачи данных, его использование ускоряет обмен данными.
@@ -639,7 +640,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 </tabpanel>
 </tabs>
-
+-->
 ## Настройка политики доступа по странам
 
 Настройка позволяет защитить контент от несанкционированного доступа из определенных стран.
