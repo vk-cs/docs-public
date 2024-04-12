@@ -3,30 +3,22 @@
   "serviceGroupLinks": [],
   "intro": [
     {
-      "title": "С чего начать",
-      "linkPartialPath": "/ru/additionals/start",
-      "description": "Информация о сервисах, работа с личным кабинетом, правовая информация и реквизиты",
+      "partialPath": "/ru/additionals/start",
       "icon": "/ru/assets/start-icon.svg",
       "iconMobile": "/ru/assets/start-icon-mobile.svg"
     },
     {
-      "title": "Миграция",
-      "linkPartialPath": "/ru/additionals/cases/migration",
-      "description": "Как мигрировать образ локальной виртуальной машины в проект VK Cloud",
+      "partialPath": "/ru/additionals/cases/migration",
       "icon": "/ru/assets/migration-icon.svg",
       "iconMobile": "/ru/assets/migration-icon-mobile.svg"
     },
     {
-      "title": "Биллинг",
-      "linkPartialPath": "/ru/additionals/billing",
-      "description": "Набор инструментов для учета использования ресурсов, оплаты и получения финансовых документов",
+      "partialPath": "/ru/additionals/billing",
       "icon": "/ru/assets/billing-icon.svg",
       "iconMobile": "/ru/assets/billing-icon-mobile.svg"
     },
     {
-      "title": "Информационная безопасность",
-      "linkPartialPath": "/ru/additionals/start/it-security",
-      "description": "Решения VK Cloud по обеспечению безопасности использования платформы",
+      "partialPath": "/ru/additionals/start/it-security",
       "icon": "/ru/assets/secure-icon.svg",
       "iconMobile": "/ru/assets/secure-icon-mobile.svg"
     }
