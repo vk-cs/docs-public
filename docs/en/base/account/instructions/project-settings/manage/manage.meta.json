@@ -7,7 +7,6 @@
     "sectionTitle": "Project management",
     "icon": "",
     "weight": 3,
-
     "additionalUuids": [
         "7b80e780-7934-405c-95d5-ca63b57a78ea",
         "ca52dea4-484c-4fc0-aca7-8dcc7bcc3e4a",
@@ -16,5 +15,5 @@
     ],
     "uuid": "add6e526-5ddf-4a95-814d-3a080aaa9aee",
     "createdAt": "2023-04-17T13:29:08.000Z",
-    "updatedAt": "2024-04-04T12:50:27.000Z"
+    "updatedAt": "2024-04-04T14:53:28.000Z"
 }
