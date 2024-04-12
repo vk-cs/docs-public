@@ -10,10 +10,7 @@
   "weight": 1,
   "relativeSections": [
     {
-      "title": "Личный кабинет",
-      "description": "",
-      "partialPath": "ru/base/account/concepts/projects",
-      "link": ""
+      "partialPath": "/ru/base/account/concepts/projects"
     }
   ],
   "uuid": "f82f032c-2fad-4738-a896-dd06a80b4658"
