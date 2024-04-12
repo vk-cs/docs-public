@@ -7,7 +7,6 @@
     "sectionTitle": "Управление проектом",
     "icon": "",
     "weight": 3,
-
     "additionalUuids": [
         "d02917d4-1252-48e3-bc2d-401b6332f7df",
         "f4cf5f25-9637-4d21-b82a-d520e81ed6df",
@@ -16,5 +15,5 @@
     ],
     "uuid": "f30c82d5-44ad-40ad-9bf7-682abd6d0144",
     "createdAt": "2023-04-17T13:29:08.000Z",
-    "updatedAt": "2024-04-04T12:50:27.000Z"
+    "updatedAt": "2024-04-04T14:53:28.000Z"
 }
