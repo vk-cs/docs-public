@@ -10,10 +10,7 @@
   "weight": 4,
   "relativeSections": [
     {
-      "title": "Управление с помощью Terraform",
-      "description": "",
-      "partialPath": "ru/manage/tools-for-using-services/terraform/use-cases/k8s/create",
-      "link": ""
+      "partialPath": "/ru/manage/tools-for-using-services/terraform/use-cases/k8s/create"
     }],
   "uuid": "61da57b5-e215-4762-9f78-46e7445560da"
 }

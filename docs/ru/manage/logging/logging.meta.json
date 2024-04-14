@@ -11,10 +11,7 @@
   "isBeta": true,
   "relativeSections": [
     {
-      "title": "Справка API",
-      "description": "",
-      "partialPath": "ru/additionals/api/logging",
-      "link": ""
+      "partialPath": "/ru/additionals/api/logging"
     }],  
   "uuid": "4271db39-4e48-4408-9f51-c69cfc6a4e8c"
 }
