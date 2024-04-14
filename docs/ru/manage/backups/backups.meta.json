@@ -8,16 +8,10 @@
   "icon": "",
   "relativeSections": [
     {
-      "title": "Справка API",
-      "description": "",
-      "partialPath": "ru/additionals/api/backup-api",
-      "link": ""
+      "partialPath": "/ru/additionals/api/backup-api"
     },
     {
-      "title": "Резервное копирование с помощью сервиса Кибер Бэкап Облачный",
-      "description": "",
-      "partialPath": "ru/vendors-products/marketplace/initial-configuration/cyber-backup-quick-start",
-      "link": ""
+      "partialPath": "/ru/vendors-products/marketplace/initial-configuration/cyber-backup-quick-start"
     }
   ],
   "weight": 3,
