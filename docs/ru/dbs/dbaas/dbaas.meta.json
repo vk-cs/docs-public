@@ -10,58 +10,31 @@
     "weight": 7,
     "relativeSections": [
       {
-        "title": "ClickHouse",
-        "description": "",
-        "partialPath": "ru/dbs/dbaas/concepts/types/clickhouse",
-        "link": ""
+        "partialPath": "/ru/dbs/dbaas/concepts/types/clickhouse"
       },
       {
-        "title": "MongoDB",
-        "description": "",
-        "partialPath": "ru/dbs/dbaas/concepts/types/mongodb",
-        "link": ""
+        "partialPath": "/ru/dbs/dbaas/concepts/types/mongodb"
       },
       {
-        "title": "MySQL",
-        "description": "",
-        "partialPath": "ru/dbs/dbaas/concepts/types/mysql",
-        "link": ""
+        "partialPath": "/ru/dbs/dbaas/concepts/types/mysql"
       },
       {
-        "title": "OpenSearch",
-        "description": "",
-        "partialPath": "ru/dbs/dbaas/concepts/types/opensearch",
-        "link": ""
+        "partialPath": "/ru/dbs/dbaas/concepts/types/opensearch"
       },
       {
-        "title": "PostgreSQL",
-        "description": "",
-        "partialPath": "ru/dbs/dbaas/concepts/types/postgresql",
-        "link": ""
+        "partialPath": "/ru/dbs/dbaas/concepts/types/postgresql"
       },
       {
-        "title": "Postgres Pro",
-        "description": "",
-        "partialPath": "ru/dbs/dbaas/concepts/types/postgrespro",
-        "link": ""
+        "partialPath": "/ru/dbs/dbaas/concepts/types/postgrespro"
       },
       {
-        "title": "Redis",
-        "description": "",
-        "partialPath": "ru/dbs/dbaas/concepts/types/redis",
-        "link": ""
+        "partialPath": "/ru/dbs/dbaas/concepts/types/redis"
       },
       {
-        "title": "Tarantool",
-        "description": "",
-        "partialPath": "ru/dbs/dbaas/concepts/types/tarantool",
-        "link": ""
+        "partialPath": "/ru/dbs/dbaas/concepts/types/tarantool"
       },
       {
-        "title": "Управление с помощью Terraform",
-        "description": "",
-        "partialPath": "ru/manage/tools-for-using-services/terraform/use-cases/dbaas/create-db-instance",
-        "link": ""
+        "partialPath": "/ru/manage/tools-for-using-services/terraform/use-cases/dbaas/create-db-instance"
       }],
     "uuid": "93dd09ce-09eb-4af0-807e-ea909d8c6588"
 }

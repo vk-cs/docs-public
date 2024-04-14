@@ -10,10 +10,7 @@
   "weight": 3,
   "relativeSections": [
     {
-      "title": "Справка API",
-      "description": "",
-      "partialPath": "ru/additionals/api/s3-rest-api/intro",
-      "link": ""
+      "partialPath": "/ru/additionals/api/s3-rest-api/intro"
     }],  
   "uuid": "b4b73ce5-4e87-4159-b682-67b0fa2c0457"
 }

@@ -20,10 +20,7 @@
   ],
   "relativeSections": [
     {
-      "title": "Справка API",
-      "description": "",
-      "partialPath": "ru/additionals/api/bigdata-api",
-      "link": ""
+      "partialPath": "/ru/additionals/api/bigdata-api"
     }],  
   "uuid": "bd23711e-6ce4-4c13-8d37-c6050abc71b4"
 }
