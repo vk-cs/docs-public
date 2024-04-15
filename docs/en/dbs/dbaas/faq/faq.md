@@ -51,7 +51,7 @@ Use the instructions [User management](../instructions/users/).
 
 <summary>Is backup enabled by default?</summary>
 
-Backup is not enabled by default. You can enable it when [creating an instance](../instructions/create/) or configure it in the [Backup](../../../manage/backups/db-backup/) section.
+Backup is not enabled by default. You can enable it when [creating an instance](../instructions/create/) or configure it in the [Backup](../../../storage/backups/db-backup/) section.
 
 </details>
 

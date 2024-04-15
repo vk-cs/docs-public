@@ -6,13 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/ml/gpu/gpu-start/gpu-info"
+                    "link": "docs/ru/base/gpu/gpu-start/gpu-info"
                 },
                 {
                     "link": "docs/ru/base/iaas/faq"
                 },
                 {
-                    "link": "docs/ru/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/tools-for-using-services/account/concepts/quotasandlimits"
                 }
             ]
         },
@@ -20,7 +20,7 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/ml/gpu/gpu-start/gpu-create"
+                    "link": "docs/ru/base/gpu/gpu-start/gpu-create"
                 },
                 {
                     "link": "docs/ru/base/iaas/instructions/vm/vm-connect"

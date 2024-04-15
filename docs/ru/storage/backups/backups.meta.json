@@ -1,0 +1,23 @@
+{
+  "title": "Cloud Backup",
+  "pageDescription": "Резервное копирование виртуальных машин и баз данных в VK Cloud через сервис Cloud Backup.",
+  "shortDescription": "Резервное копирование виртуальных машин, инстансов баз данных",
+  "metaTitle": "Cloud Backup",
+  "metaDescription": "Cloud Backup VK Cloud: резервное копирование виртуальных машин, баз данных",
+  "sectionTitle": "Cloud Backup",
+  "icon": "",
+  "relativeSections": [
+    {
+      "partialPath": "/ru/additionals/api/backup-api"
+    },
+    {
+      "partialPath": "/ru/vendors-products/marketplace/initial-configuration/cyber-backup-quick-start"
+    }
+  ],
+  "weight": 2,
+  "uuid": "c5585342-538a-4fa5-862d-bce351c96daf",
+  "additionalUuids": [
+    "deecb543-b47a-49dd-ac7f-5d35100d3a63",
+    "8ed7a850-d82c-4a30-9f3a-b7deca1044c8"
+  ]
+}
