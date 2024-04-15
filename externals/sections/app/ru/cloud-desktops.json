@@ -6,16 +6,16 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/manage/cloud-desktops/concepts/vdi-reference"
+                    "link": "docs/ru/base/cloud-desktops/concepts/vdi-reference"
                 },
                 {
-                    "link": "docs/ru/manage/cloud-desktops/concepts/overview"
+                    "link": "docs/ru/base/cloud-desktops/concepts/overview"
                 },
                 {
-                    "link": "docs/ru/manage/cloud-desktops/tariffication"
+                    "link": "docs/ru/base/cloud-desktops/tariffication"
                 },
                 {
-                    "link": "docs/ru/manage/cloud-desktops/faq"
+                    "link": "docs/ru/base/cloud-desktops/faq"
                 }
             ]
         },
@@ -23,10 +23,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/manage/cloud-desktops/quick-start"
+                    "link": "docs/ru/base/cloud-desktops/quick-start"
                 },
                 {
-                    "link": "docs/ru/manage/cloud-desktops/instructions/config"
+                    "link": "docs/ru/base/cloud-desktops/instructions/config"
                 }
             ]
         },
@@ -34,13 +34,13 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/manage/cloud-desktops/instructions/desktops-pool/add"
+                    "link": "docs/ru/base/cloud-desktops/instructions/desktops-pool/add"
                 },
                 {
-                    "link": "docs/ru/manage/cloud-desktops/instructions/desktops-pool/manage"
+                    "link": "docs/ru/base/cloud-desktops/instructions/desktops-pool/manage"
                 },
                 {
-                    "link": "docs/ru/manage/cloud-desktops/instructions/manage-desktops"
+                    "link": "docs/ru/base/cloud-desktops/instructions/manage-desktops"
                 }
             ]
         }

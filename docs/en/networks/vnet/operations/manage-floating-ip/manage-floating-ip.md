@@ -18,7 +18,7 @@ You can manage floating IP addresses: view, add and remove them from a project, 
 </tabpanel>
 <tabpanel>
 
-1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
 1. Run the command:
 
@@ -54,7 +54,7 @@ A floating IP address is randomly assigned from a shared pool.
 </tabpanel>
 <tabpanel>
 
-1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
 1. Run the command:
 
@@ -84,7 +84,7 @@ A floating IP address is randomly assigned from a shared pool.
 </tabpanel>
 <tabpanel>
 
-1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
 1. [Get list of floating IP addresses](#viewing_a_list_of_floating_ip_addresses). Find in the list the ID of the floating IP address for which you want to edit the description.
 
@@ -125,7 +125,7 @@ A floating IP address is randomly assigned from a shared pool.
 </tabpanel>
 <tabpanel>
 
-1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
 1. [Get list of floating IP addresses](#viewing_a_list_of_floating_ip_addresses). Find in the list the ID of the floating IP address that you want to bind to the port.
 1. Get the list of ports. Find in the list the port ID of the port to which you want to bind the floating IP address.
@@ -156,7 +156,7 @@ A floating IP address is randomly assigned from a shared pool.
 </tabpanel>
 <tabpanel>
 
-1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
 1. [Get list of floating IP addresses](#viewing_a_list_of_floating_ip_addresses). Find in the list the ID of the floating IP address that you want to unbind from the port.
 
@@ -187,7 +187,7 @@ A floating IP address is randomly assigned from a shared pool.
 </tabpanel>
 <tabpanel>
 
-1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
 1. [Get list of floating IP addresses](#viewing_a_list_of_floating_ip_addresses). Find in the list the ID of the floating IP address that you want to remove from the project.
 

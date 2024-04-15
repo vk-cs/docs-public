@@ -9,14 +9,14 @@
                     "link": "docs/ru/base/iaas/concepts"
                 },
                 {
-                    "link": "docs/ru/vendors-products/vm-licenses"
+                    "link": "docs/ru/base/vm-licenses"
                 },
                 {
                     "link": "docs/ru/base/iaas/tariffication",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/manage/backups/vm-backup/faq-vm-backup"
+                    "link": "docs/ru/storage/backups/vm-backup/faq-vm-backup"
                 }
             ]
         },
@@ -27,10 +27,10 @@
                     "link": "docs/ru/base/iaas/quick-start"
                 },
                 {
-                    "link": "docs/ru/manage/backups/vm-backup/vm-backup-create"
+                    "link": "docs/ru/storage/backups/vm-backup/vm-backup-create"
                 },
                 {
-                    "link": "docs/ru/manage/backups/vm-backup/vm-backup-manage"
+                    "link": "docs/ru/storage/backups/vm-backup/vm-backup-manage"
                 }
             ]
         },

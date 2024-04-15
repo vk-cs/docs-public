@@ -1,4 +1,4 @@
-Сервис обеспечивает сетевое взаимодействие в рамках выбранных [проекта](../../../../base/account/concepts/projects) и [региона](../../../../base/account/concepts/regions) платформы VK Cloud:
+Сервис обеспечивает сетевое взаимодействие в рамках выбранных [проекта](../../../../tools-for-using-services/account/concepts/projects) и [региона](../../../../tools-for-using-services/account/concepts/regions) платформы VK Cloud:
 
 - Создание сетей и подсетей. Подсети используют приватные IP-адреса, которые не маршрутизируются в интернете.
 

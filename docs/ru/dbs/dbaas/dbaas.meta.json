@@ -34,7 +34,7 @@
         "partialPath": "/ru/dbs/dbaas/concepts/types/tarantool"
       },
       {
-        "partialPath": "/ru/manage/tools-for-using-services/terraform/use-cases/dbaas/create-db-instance"
+        "partialPath": "/ru/tools-for-using-services/terraform/use-cases/dbaas/create-db-instance"
       }],
     "uuid": "93dd09ce-09eb-4af0-807e-ea909d8c6588"
 }
