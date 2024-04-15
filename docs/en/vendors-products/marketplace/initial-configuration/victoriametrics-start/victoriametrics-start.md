@@ -7,6 +7,8 @@ By using VictoriaMetrics, you agree to the [Marketplace](/ru/additionals/start/l
 To deploy the VictoriaMetrics service in a project:
 
 1. [Register](/en/additionals/start/account-registration) at VK Cloud.
+1. [Create](/en/networks/vnet/operations/manage-net#creating_a_network) a network, if one has not been created earlier.
+1. In the [settings of the subnet](/en/networks/vnet/operations/manage-net#editing_a_subnet) where one or more servers with the deployed service will be located, disable the **Private DNS** option.
 1. [Deploy](../../instructions/pr-instance-add/) service in the project by choosing the appropriate tariff plan (**Single**, **Cluster Mini**, **Cluster Maxi**):
 
    <details>
@@ -76,7 +78,7 @@ To deploy the VictoriaMetrics service in a project:
    1. Click the **Next step** button.
    1. At the “Параметры сервера” step:
 
-      - **Сеть**: select an existing network or create a new one. Depending on the network type you select, the list of available fields will change. If **Create new network** is selected, set the SDN type and **Subnet address**.
+      - **Сеть**: select the previously created network and subnet.
       - **Availability zone**: select which of the data centers the VM will be running in.
       - **Type of virtual machine**: select the preset VM configuration. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
       - For the system disk and data disk:
@@ -101,7 +103,7 @@ To deploy the VictoriaMetrics service in a project:
    1. At the “Параметры серверов” step:
 
       - **Количество серверов**: specify the number of VMs to deploy in the cluster.
-      - **Сеть**: select an existing network or create a new one. Depending on the network type you select, the list of available fields will change. If **Create new network** is selected, set the SDN type and **Subnet address**.
+      - **Сеть**: select the previously created network and subnet.
       - **Availability zone**: select which of the data centers the VM will be running in.
       - **Type of virtual machine**: select the preset VM configuration. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
       - For the system disk and data disk:
@@ -125,7 +127,7 @@ To deploy the VictoriaMetrics service in a project:
    1. Click the **Next step** button.
    1. At the “Общие параметры” step:
 
-      - **Сеть**: select an existing network or create a new one. Depending on the network type you select, the list of available fields will change. If **Create new network** is selected, set the SDN type and **Subnet address**.
+      - **Сеть**: select the previously created network and subnet.
       - **Availability zone**: select which of the data centers the VM will be running in.
       - **Disk size**: specify the desired VM disk size in gigabytes.
       - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#disks).

@@ -5,9 +5,11 @@ By using the Nexus 3 service, you agree to the license agreements of the [Market
 To deploy the Nexus service in a project:
 
 1. [Register](/en/additionals/start/account-registration) at VK Cloud.
+1. [Create](/en/networks/vnet/operations/manage-net#creating_a_network) a network with Internet access, if one has not been created earlier.
+1. In the [settings of the subnet](/en/networks/vnet/operations/manage-net#editing_a_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
 1. [Deploy](../../instructions/pr-instance-add/) Nexus 3 service:
 
-   - Specify the network with Internet access. The external IP address will be assigned automatically.
+   - Select the previously created network with Internet access and subnet. The external IP address will be assigned automatically.
    - Choose the other parameters at your discretion.
 
    After the installation is complete, you will receive a one-time link to the Nexus 3 console (`nexus_url`) and a password (`password`). The service will be deployed at the address like `https://nexus-<ID>.xaas.msk.vkcs.cloud`.
