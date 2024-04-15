@@ -5,10 +5,11 @@ By using the Redash 10.1.0, you agree to the license agreements of the [Marketpl
 To deploy the Redash 10 service in a project:
 
 1. [Register](/en/additionals/start/account-registration) at VK Cloud.
-1. [Create](/en/networks/vnet/operations/manage-net#creating_a_network) a network with Internet access, if it was not created earlier.
+1. [Create](/en/networks/vnet/operations/manage-net#creating_a_network) a network with Internet access, if one has not been created earlier.
+1. In the [settings of the subnet](/en/networks/vnet/operations/manage-net#editing_a_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
 1. [Deploy](../../instructions/pr-instance-add/) Redash 10 service:
 
-   - Specify the network with Internet access. The external IP address will be assigned automatically.
+   - Select the previously created network with Internet access and subnet. The external IP address will be assigned automatically.
    - Choose the other parameters at your discretion.
 
    After the installation is completed, a one-time link with access will be sent to your email.
