@@ -1,0 +1,11 @@
+{
+  "title": "Cloud ML Platform",
+  "pageDescription": "Working with Cloud ML Platform using Terraform.",
+  "shortDescription": "How to use Terraform fot managing Cloud ML Platform service",
+  "metaTitle": "Cloud ML Platform",
+  "metaDescription": "Working with Cloud ML Platform using Terraform",
+  "sectionTitle": "Cloud ML Platform",
+  "markdown": "Working with [Cloud ML Platform](/ru/ml/mlplatform) using Terraform.",
+  "icon": "",
+  "weight": 7
+}
