@@ -1,0 +1,14 @@
+{
+    "title": "Вебхуки",
+    "pageDescription": "",
+    "shortDescription": "Функции вебхуков Cloud Storage",
+    "metaTitle": "Вебхуки",
+    "metaDescription": "Общая информация\nФункция вебхуков Cloud Storage позволяет получать уведомления, когда в бакете происходят определенные события. Чтобы включить уведомления, необхо",
+    "sectionTitle": "Вебхуки",
+    "markdown": "",
+    "icon": "",
+    "weight": 8,
+    "uuid": "3ce43d6e-3837-4dce-815a-2ff37df3863d",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2024-04-15T08:50:44.000Z"
+}

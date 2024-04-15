@@ -1,0 +1,16 @@
+{
+    "title": "Быстрый старт",
+    "pageDescription": "Как начать работу с сервисом Cloud Big Data в проекте VK Cloud.",
+    "shortDescription": "Начало работы с сервисом Cloud Big Data",
+    "metaTitle": "Быстрый старт",
+    "metaDescription": "VK Cloud: как начать работу с сервисом Cloud Big Data",
+    "sectionTitle": "Быстрый старт",
+    "icon": "",
+    "additionalUuids": [
+        "edfc2f20-72f2-4275-9bb1-72b8da9398fa"
+    ],
+    "weight": 1,
+    "uuid": "11c3cf4e-1559-4421-b5c9-3fc7ef8cba05",
+    "createdAt": "2023-11-13T10:32:21.000Z",
+    "updatedAt": "2024-04-15T08:50:44.000Z"
+}
