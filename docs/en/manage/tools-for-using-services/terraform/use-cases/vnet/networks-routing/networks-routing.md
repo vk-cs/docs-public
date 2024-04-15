@@ -104,11 +104,11 @@ The infrastructure of the example:
 1. Create a Terraform configuration file `common-public.tf`. It describes:
 
    - a public network and subnet;
-   - a router with access to an external `ext-net` network and an interface in a public subnet.
+   - a router with access to an external `internet` network and an interface in a public subnet.
 
    ```hcl
    data "vkcs_networking_network" "extnet" {
-     name = "ext-net"
+     name = "internet"
    }
 
    resource "vkcs_networking_network" "common-public" {

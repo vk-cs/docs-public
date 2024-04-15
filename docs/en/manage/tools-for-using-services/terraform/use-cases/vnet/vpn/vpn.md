@@ -25,7 +25,7 @@ Create a network with the following objects:
 
 ```hcl
 data "vkcs_networking_network" "extnet" {
-   name="extnet"
+   name="internet"
 }
 
 resource "vkcs_networking_network" "network" {
