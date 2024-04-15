@@ -50,7 +50,7 @@ VMs are grouped into categories in a personal account:
 | Intel Ice Lake (Intel Xeon Gen 3) | VMs located on servers with Intel Ice Lake CPU | Available by default |
 | Archived VM types (legacy)| Old VM configuration templates | Not displayed by default filtration |
 | High-performance CPU |  VMs located on [servers](#cpu_generations) with increased CPU clock speed | Displayed when ordering the types of VM through [technical support](/en/contacts) |
-| Virtual machines with GPU | VMs with connected [graphics card](../../../../ml/gpu/gpu-start/gpu-info/) | Displayed when ordering the types of VM through [cloud.vk.com](https://cloud.vk.com/en/) |
+| Virtual machines with GPU | VMs with connected [graphics card](../../../gpu/gpu-start/gpu-info/) | Displayed when ordering the types of VM through [cloud.vk.com](https://cloud.vk.com/en/) |
 | VMs with local disks | VMs with the ability to use local hypervisor disks | Displayed when ordering the types of VM through [technical support](/en/contacts) |
 | VMs located on dedicated servers | VMs located on hypervisors dedicated to the needs of one client | Displayed when ordering the types of VM through your manager |
 
@@ -190,7 +190,7 @@ Networks and routers are not tied to availability zones.
 
 <info>
 
-A network created in the QAZ availability zone cannot be united with networks in other availability zones, since QAZ zone is located in the Kazakhstan [region](../../../account/concepts/regions). In this case, networks can be connected over [VPN](/en/networks/vnet/use-cases/vpn-tunnel).
+A network created in the QAZ availability zone cannot be united with networks in other availability zones, since QAZ zone is located in the Kazakhstan [region](../../../../tools-for-using-services/account/concepts/regions). In this case, networks can be connected over [VPN](/en/networks/vnet/use-cases/vpn-tunnel).
 
 </info>
 

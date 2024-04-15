@@ -26,8 +26,8 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
 1. Make sure that:
 
-   1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
-   1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
+   1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli).
+   1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli) in the OpenStack CLI.
 
 1. To view a list of VPN tunnels, run the command:
 
@@ -226,8 +226,8 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
 1. Make sure that:
 
-   1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
-   1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
+    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli).
+    1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli) in the OpenStack CLI.
 
 1. Set up IKE:
 
@@ -609,8 +609,8 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
 1. Make sure that:
 
-   1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
-   1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
+    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli).
+    1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli) in the OpenStack CLI.
 
 1. View detailed information about the VPN tunnel you want to edit.
 
@@ -769,8 +769,8 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 
 1. Make sure that:
 
-   1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
-   1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
+    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli).
+    1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli) in the OpenStack CLI.
 
 1. View detailed information about the VPN tunnel that needs to be restarted.
 
@@ -828,8 +828,8 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 
 1. Make sure that:
 
-   1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
-   1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
+    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli).
+    1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli) in the OpenStack CLI.
 
 1. Look at the list of VPN tunnels and find the ID of the tunnel you want to remove.
 

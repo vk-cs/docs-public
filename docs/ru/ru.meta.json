@@ -3,12 +3,12 @@
   "serviceGroupLinks": [],
   "intro": [
     {
-      "partialPath": "/ru/additionals/start",
+      "partialPath": "/ru/intro/start",
       "icon": "/ru/assets/start-icon.svg",
       "iconMobile": "/ru/assets/start-icon-mobile.svg"
     },
     {
-      "partialPath": "/ru/additionals/cases/migration",
+      "partialPath": "/ru/intro/migration",
       "icon": "/ru/assets/migration-icon.svg",
       "iconMobile": "/ru/assets/migration-icon-mobile.svg"
     },
@@ -18,7 +18,7 @@
       "iconMobile": "/ru/assets/billing-icon-mobile.svg"
     },
     {
-      "partialPath": "/ru/additionals/start/it-security",
+      "partialPath": "/ru/intro/it-security",
       "icon": "/ru/assets/secure-icon.svg",
       "iconMobile": "/ru/assets/secure-icon-mobile.svg"
     }
@@ -26,6 +26,8 @@
 
   "uuid": "8039e837-cbc5-4f10-8185-59be352f986e",
   "additionalUuids": [
+    "08157caa-2c9a-46e5-9d3d-221fb59bac13",
+    "5640e791-be03-4d14-9108-8a93b0c19167",
     "3d8fbd42-5a15-405d-9891-8ce10e4f8c32",
     "b3f92ce8-83ce-4647-82d9-6ce8d1356b12",
     "4fdb11b9-1d08-4620-9efc-3c336cde72bd",
