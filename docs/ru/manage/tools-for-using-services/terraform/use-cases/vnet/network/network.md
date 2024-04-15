@@ -25,7 +25,7 @@
 
    ```hcl
    data "vkcs_networking_network" "extnet" {
-      name = "ext-net"
+      name = "internet"
    }
 
    resource "vkcs_networking_network" "network" {

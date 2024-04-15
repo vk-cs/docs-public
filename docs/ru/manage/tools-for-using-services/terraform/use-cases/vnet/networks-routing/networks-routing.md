@@ -104,11 +104,11 @@
 1. Создайте файл конфигурации Terraform `common-public.tf`. В нем описываются:
 
    - публичная сеть и подсеть;
-   - маршрутизатор с доступом к внешней сети `ext-net` и интерфейсом в публичной подсети.
+   - маршрутизатор с доступом к внешней сети `internet` и интерфейсом в публичной подсети.
 
    ```hcl
    data "vkcs_networking_network" "extnet" {
-     name = "ext-net"
+     name = "internet"
    }
 
    resource "vkcs_networking_network" "common-public" {
