@@ -9,7 +9,7 @@
                     "link": "docs/ru/base/iaas/concepts"
                 },
                 {
-                    "link": "docs/ru/vendors-products/vm-licenses"
+                    "link": "docs/ru/base/vm-licenses"
                 },
                 {
                     "link": "docs/ru/base/iaas/tariffication",
@@ -38,10 +38,10 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/additionals/cases/migration/migrate-hyperv"
+                    "link": "docs/ru/intro/migration/migrate-hyperv"
                 },
                 {
-                    "link": "docs/ru/additionals/cases/migration/migrate-vmware"
+                    "link": "docs/ru/intro/migration/migrate-vmware"
                 },
                 {
                     "link": "docs/ru/base/iaas/instructions/vm/vm-console"
