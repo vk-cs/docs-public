@@ -7,9 +7,8 @@
     "sectionTitle": "Версии компонентов Kubernetes",
     "markdown": "Какие версии компонентов и аддонов поддерживаются в кластерах VK Cloud.",
     "icon": "",
-
     "weight": 3,
     "uuid": "ffb8a8f3-ed89-42be-9ae7-1e2e8c7a73d7",
     "createdAt": "2023-05-12T11:36:42.000Z",
-    "updatedAt": "2024-04-08T06:27:13.000Z"
+    "updatedAt": "2024-04-08T07:34:36.000Z"
 }
