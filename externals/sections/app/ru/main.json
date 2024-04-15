@@ -9,23 +9,23 @@
                     "link": "docs/ru/additionals/billing/instructions/corporate"
                 },
                 {
-                    "link": "docs/ru/base/account/concepts/quotasandlimits"
+                    "link": "docs/ru/tools-for-using-services/account/concepts/quotasandlimits"
                 },
                 {
-                    "link": "docs/ru/base/account/concepts/rolesandpermissions"
+                    "link": "docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
                 },
                 {
                     "link": "docs/ru/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/additionals/start/legal"
+                    "link": "docs/ru/intro/start/legal"
                 },
                 {
-                    "link": "docs/ru/additionals/start/support"
+                    "link": "docs/ru/intro/start/support"
                 },
                 {
-                    "link": "docs/ru/base/account/faq"
+                    "link": "docs/ru/tools-for-using-services/account/faq"
                 }
             ]
         },
@@ -37,7 +37,7 @@
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/base/account/instructions/activation"
+                    "link": "docs/ru/tools-for-using-services/account/instructions/activation"
                 },
                 {
                     "link": "docs/ru/additionals/billing/instructions/payment",
@@ -49,25 +49,25 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/base/account/instructions/project-settings"
+                    "link": "docs/ru/tools-for-using-services/account/instructions/project-settings"
                 },
                 {
-                    "link": "docs/ru/base/account/instructions/account-manage"
+                    "link": "docs/ru/tools-for-using-services/account/instructions/account-manage"
                 },
                 {
-                    "link": "docs/ru/manage/tools-for-using-services"
+                    "link": "docs/ru/tools-for-using-services"
                 },
                 {
-                    "link": "docs/ru/base/account/instructions/actionslogs"
+                    "link": "docs/ru/tools-for-using-services/account/instructions/actionslogs"
                 },
                 {
-                    "link": "docs/ru/base/account/use-cases/systemstate"
+                    "link": "docs/ru/tools-for-using-services/account/use-cases/systemstate"
                 },
                 {
-                    "link": "docs/ru/base/account/use-cases/ideasportal"
+                    "link": "docs/ru/tools-for-using-services/account/use-cases/ideasportal"
                 },
                 {
-                    "link": "docs/ru/base/account/use-cases/account-delete"
+                    "link": "docs/ru/tools-for-using-services/account/use-cases/account-delete"
                 }
             ]
         }

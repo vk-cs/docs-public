@@ -13,7 +13,7 @@
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/base/account/concepts/quotasandlimits"
+                    "link": "docs/en/tools-for-using-services/account/concepts/quotasandlimits"
                 },
                 {
                     "link": "docs/en/dbs/dbaas/faq"
@@ -41,7 +41,7 @@
                     "link": "docs/en/dbs/dbaas/extensions"
                 },
                 {
-                    "link": "docs/en/manage/backups/db-backup"
+                    "link": "docs/en/storage/backups/db-backup"
                 }
             ]
         }

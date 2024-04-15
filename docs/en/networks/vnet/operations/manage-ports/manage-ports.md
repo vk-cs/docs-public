@@ -32,7 +32,7 @@ You can manage OpenStack ports: view ports, add, edit and delete them.
 </tabpanel>
 <tabpanel>
 
-1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
 1. To see a list of all ports, run the command:
 
@@ -103,7 +103,7 @@ openstack port show --help
 </tabpanel>
 <tabpanel>
 
-1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
 1. Run the command:
 
@@ -154,7 +154,7 @@ This is a group operation: you can enable multiple disabled ports at once, if ne
 </tabpanel>
 <tabpanel>
 
-1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
 1. [Get the name or ID](#viewing_a_list_of_ports_and_port_information) of the necessary port.
 
@@ -207,7 +207,7 @@ This is a group operation: you can disable multiple enabled ports at once, if ne
 </tabpanel>
 <tabpanel>
 
-1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
 1. [Get the name or ID](#viewing_a_list_of_ports_and_port_information) of the necessary port.
 
@@ -252,7 +252,7 @@ openstack port set --help
 </tabpanel>
 <tabpanel>
 
-1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
 1. [Get the name or ID](#viewing_a_list_of_ports_and_port_information) of the necessary port.
 
@@ -295,7 +295,7 @@ This mechanism allows only traffic for which the source IP address is in the `al
 </tablist>
 <tabpanel>
 
-1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
 1. [Get the name or ID](#viewing_a_list_of_ports_and_port_information) of the necessary port.
 
@@ -366,7 +366,7 @@ This is a group operation: you can delete multiple ports at once, if necessary, 
 </tabpanel>
 <tabpanel>
 
-1. Make sure the OpenStack CLI is [installed](../../../../base/account/project/cli/setup) and you can [authorize](../../../../base/account/project/cli/authorization) in it.
+1. Make sure the OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and you can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in it.
 
 1. [Get the name or ID](#viewing_a_list_of_ports_and_port_information) of the necessary port.
 
