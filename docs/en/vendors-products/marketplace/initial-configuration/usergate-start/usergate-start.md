@@ -28,9 +28,10 @@ UserGate NGFW is provided according to the BYOL (Bring Your Own License) model: 
 
 1. [Register](/en/additionals/start/account-registration) at VK Cloud.
 1. [Create](/en/networks/vnet/operations/manage-net#creating_a_network) a network with the Internet access, if one has not already been created.
+1. In the [settings of the subnet](/en/networks/vnet/operations/manage-net#editing_a_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
 1. [Deploy](../../instructions/pr-instance-add/) the UserGate NGFW service:
 
-   - Specify a network with Internet access and incoming TCP traffic allowed for port `8001`.
+   - Select the previously created network with Internet access and subnet.
    - Choose other parameters at your discretion.
 
    After the installation is complete, you will receive a one-time link to your login and password by email. Write them down. The service will be deployed at an address like `https://<external IP address of the VM>:8001` (the UserGate console).
