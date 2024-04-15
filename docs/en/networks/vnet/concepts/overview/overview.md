@@ -1,4 +1,4 @@
-The service provides networking within the selected VK Cloud platform's [projects](../../../../base/account/concepts/projects) and [region](../../../../base/account/concepts/regions) for:
+The service provides networking within the selected VK Cloud platform's [projects](../../../../tools-for-using-services/account/concepts/projects) and [region](../../../../tools-for-using-services/account/concepts/regions) for:
 
 - Creating networks and subnets. Subnets use private IP addresses that are not routable on the internet.
 
