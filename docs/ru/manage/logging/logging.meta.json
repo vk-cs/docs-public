@@ -7,7 +7,7 @@
   "sectionTitle": "Cloud Logging",
   "markdown": "Сервис для работы с логами пользовательских приложений на ВМ в облаке VK Cloud. Сбор, хранение, чтение, отображение и обработка логов в едином интерфейсе в облаке.",
   "icon": "",
-  "weight": 6,
+  "weight": 1,
   "isBeta": true,
   "relativeSections": [
     {

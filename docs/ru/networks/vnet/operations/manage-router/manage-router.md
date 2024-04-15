@@ -24,8 +24,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli).
+    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
 
 1. Чтобы посмотреть список маршрутизаторов и их идентификаторы, выполните команду:
 
@@ -78,8 +78,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli).
+    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
 
 1. Создайте маршрутизатор нужного типа:
 
@@ -150,8 +150,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli).
+    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
 1. [Получите идентификатор](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) нужного маршрутизатора.
 1. Выполните одно из доступных действий:
 
@@ -273,8 +273,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli).
+    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
 
 1. [Получите идентификатор](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) нужного маршрутизатора.
 
@@ -343,8 +343,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli).
+    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
 
 1. [Получите идентификатор](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) нужного маршрутизатора.
 
@@ -407,8 +407,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+    1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli).
+    1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
 
 1. [Получите идентификатор](#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih) нужного маршрутизатора.
 
