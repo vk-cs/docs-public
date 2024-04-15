@@ -63,7 +63,7 @@ resource "vkcs_networking_subnet" "db-subnetwork" {
 }
 
 data "vkcs_networking_network" "extnet" {
-  name = "ext-net"
+  name = "internet"
 }
 
 resource "vkcs_networking_router" "db-router" {
