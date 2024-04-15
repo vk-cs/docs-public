@@ -32,8 +32,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack).
+   1. Вы можете [авторизоваться](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. Чтобы посмотреть список сетей и их идентификаторы, выполните команду:
 
@@ -93,8 +93,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack).
+   1. Вы можете [авторизоваться](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. Выполните команду:
 
@@ -125,8 +125,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack).
+   1. Вы можете [авторизоваться](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. [Получите идентификатор](#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) сети, которую нужно отредактировать.
 
@@ -195,8 +195,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack).
+   1. Вы можете [авторизоваться](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. [Получите идентификатор](#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) сети, которую нужно удалить.
 
@@ -234,8 +234,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack).
+   1. Вы можете [авторизоваться](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. [Получите идентификатор](#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) сети, в которой нужно создать подсеть.
 
@@ -302,8 +302,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack).
+   1. Вы можете [авторизоваться](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. [Получите идентификатор](#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) подсети, которую нужно отредактировать.
 
@@ -380,8 +380,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup).
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack).
+   1. Вы можете [авторизоваться](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. [Получите идентификатор](#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) подсети, которую нужно удалить.
 

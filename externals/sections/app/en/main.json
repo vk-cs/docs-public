@@ -9,23 +9,23 @@
                     "link": "docs/en/additionals/billing/instructions/corporate"
                 },
                 {
-                    "link": "docs/en/base/account/concepts/quotasandlimits"
+                    "link": "docs/en/tools-for-using-services/account/concepts/quotasandlimits"
                 },
                 {
-                    "link": "docs/en/base/account/concepts/rolesandpermissions"
+                    "link": "docs/en/tools-for-using-services/account/concepts/rolesandpermissions"
                 },
                 {
                     "link": "docs/en/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/additionals/start/legal"
+                    "link": "docs/en/intro/start/legal"
                 },
                 {
-                    "link": "docs/en/additionals/start/support"
+                    "link": "docs/en/intro/start/support"
                 },
                 {
-                    "link": "docs/en/base/account/faq"
+                    "link": "docs/en/tools-for-using-services/account/faq"
                 }
             ]
         },
@@ -33,7 +33,7 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/base/account/instructions/activation"
+                    "link": "docs/en/tools-for-using-services/account/instructions/activation"
                 },
                 {
                     "link": "docs/en/additionals/billing/instructions/payment",
@@ -45,25 +45,25 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/base/account/instructions/project-settings"
+                    "link": "docs/en/tools-for-using-services/account/instructions/project-settings"
                 },
                 {
-                    "link": "docs/en/base/account/instructions/account-manage"
+                    "link": "docs/en/tools-for-using-services/account/instructions/account-manage"
                 },
                 {
-                    "link": "docs/en/manage/tools-for-using-services"
+                    "link": "docs/en/tools-for-using-services"
                 },
                 {
-                    "link": "docs/en/base/account/instructions/actionslogs"
+                    "link": "docs/en/tools-for-using-services/account/instructions/actionslogs"
                 },
                 {
-                    "link": "docs/en/base/account/use-cases/systemstate"
+                    "link": "docs/en/tools-for-using-services/account/use-cases/systemstate"
                 },
                 {
-                    "link": "docs/en/base/account/use-cases/ideasportal"
+                    "link": "docs/en/tools-for-using-services/account/use-cases/ideasportal"
                 },
                 {
-                    "link": "docs/en/base/account/use-cases/account-delete"
+                    "link": "docs/en/tools-for-using-services/account/use-cases/account-delete"
                 }
             ]
         }
