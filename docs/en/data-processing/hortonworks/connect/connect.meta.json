@@ -1,10 +1,10 @@
 {
-    "title": "Connection",
+    "title": "Connecting to cluster nodes",
     "pageDescription": "Connecting to the cluster via the ADCM UI in VK Cloud. Connecting to nodes via SSH. Connecting to the components' web interfaces via an internal network.",
     "shortDescription": "Connection to cluster nodes, its individual components via SSH and web interface",
-    "metaTitle": "Connection",
+    "metaTitle": "Connecting to cluster nodes",
     "metaDescription": "VK Cloud: connecting to Cloud Big Data cluster nodes, its individual components via SSH and web interface",
-    "sectionTitle": "Connection",
+    "sectionTitle": "Connecting to cluster nodes",
     "icon": "",
     "weight": 4,
     "uuid": "d4800688-e762-41e3-9150-33d763ddc529",

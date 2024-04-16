@@ -1,10 +1,10 @@
 {
-    "title": "Обзор сервиса Cloud Servers",
+    "title": "О сервисе",
     "pageDescription": "Концепция Cloud Servers — основные понятия, связанные с виртуальными машинами.",
     "shortDescription": "Основные понятия, связанные с виртуальными машинами",
-    "metaTitle": "Обзор сервиса Cloud Servers",
+    "metaTitle": "О сервисе",
     "metaDescription": "Cloud Servers — виртуальные машины, диски, зона доступности, операционная система, образ, файловое хранилище, резервная копия, лицензии",
-    "sectionTitle": "Обзор сервиса Cloud Servers",
+    "sectionTitle": "О сервисе",
     "markdown": "",
     "weight": 0,
     "uuid": "bd2e96b3-5691-42ce-ae50-b24df740d6d7",

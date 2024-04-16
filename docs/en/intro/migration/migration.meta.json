@@ -1,10 +1,10 @@
 {
-  "title": "Migration",
-  "pageDescription": "Transferring an existing virtual infrastructure to the VK Cloud.",
-  "shortDescription": "How to migrate a local VM image to a VK Cloud project",
-  "metaTitle": "Migration",
-  "metaDescription": "Transferring an existing virtual infrastructure to the VK Cloud",
-  "sectionTitle": "Migration",
+  "title": "Migration to VK Cloud",
+  "pageDescription": "How to transfer a VM image or a whole infrastructure to the VK Cloud.",
+  "shortDescription": "How to transfer a VM image or a whole infrastructure to the VK Cloud",
+  "metaTitle": "Migration to VK Cloud",
+  "metaDescription": "How to transfer a VM image or a whole infrastructure to the VK Cloud",
+  "sectionTitle": "Migration to VK Cloud",
   "markdown": "VK Cloud supports migration of both individual VMs and the infrastructure as a whole. For the first, it is recommended to use external tools (VM Ware, Hyper-V), for the second — [Hystax software](/en/vendors-products/marketplace/initial-configuration/migrate-hystax), operating on the basis of VK Cloud.",
   "icon": "",
 
