@@ -1,10 +1,10 @@
 {
-  "title": "General information",
+  "title": "Concepts",
   "pageDescription": "Basic information about analytical massively parallel DBMS intended for storing and processing large amounts of data.",
   "shortDescription": "Basic information about analytical massively parallel DBMS intended for storing and processing large amounts of data",
-  "metaTitle": "General information",
+  "metaTitle": "Concepts",
   "metaDescription": "Basic information about analytical massively parallel DBMS intended for storing and processing large amounts of data.",
-  "sectionTitle": "General information",
+  "sectionTitle": "Concepts",
   "markdown": "Basic information about analytical massively parallel DBMS intended for storing and processing large amounts of data.",
   "icon": "",
 
@@ -12,6 +12,6 @@
     "1b2b1dc1-f158-4866-b388-c20502090dd9",
     "057398e9-5f0c-4be5-9e4f-c05749b0c1b7"
   ],
-  "weight": 0,
+  "weight": 2,
   "uuid": "c44c3ffa-f9f1-4b47-9d30-1d7903eb01c6"
 }

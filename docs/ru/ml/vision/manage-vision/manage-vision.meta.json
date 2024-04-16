@@ -8,6 +8,6 @@
   "markdown": "Методы и инструменты распознавания объектов, лиц, видео и других предметов при помощи Vision. OpenAPI-спецификация приведена в [справке API](/ru/additionals/api/vision-api).",
   "icon": "",
 
-  "weight": 2,
+  "weight": 3,
   "uuid": "a9048134-3a84-471f-a502-4ed24e747ffe"
 }

@@ -1,13 +1,13 @@
 {
-    "title": "About the service",
+    "title": "About service",
     "pageDescription": "",
     "shortDescription": "Description of the main features of the service 1C:GRM in VK Cloud",
-    "metaTitle": "About the service",
+    "metaTitle": "About service",
     "metaDescription": "With the help of ready-made infrastructure solutions, VK Cloud, in partnership with 1C Firm, provides an opportunity to quickly connect the entire range of clou",
-    "sectionTitle": "About the service",
+    "sectionTitle": "About service",
     "markdown": "",
     "icon": "",
-    "weight": 0,
+    "weight": 1,
     "uuid": "bb21c270-567d-44f5-82cc-1f336d3857a6",
     "createdAt": "2022-03-26T14:10:44.000Z",
     "updatedAt": "2024-04-08T13:06:14.000Z"
