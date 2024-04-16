@@ -27,9 +27,15 @@ REST API [CDN](../../../networks/dns/publicdns) поддерживает упр�
 Пример запроса:
 
 ```curl
-curl --location 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/example4ef0547e5b222f/resources' \
---header 'X-Auth-Token: gAAAAABlcqk9GAzdp-XXXX'
+curl --location "https://msk.cloud.vk.com/api/cdn/api/v1/projects/example4ef0547e5b222f/resources" \
+--header "X-Auth-Token: gAAAAABlcqk9GAzdp-XXXX"
 ```
+<info>
+
+Исходную спецификацию в формате JSON вы можете скачать по [ссылке](./assets/api-cdn.json "download").
+
+</info>
+
 </details>
 
 <info>
