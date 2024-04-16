@@ -45,9 +45,11 @@
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен]
+   (/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию]
+   (/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-2. Убедитесь, что Manila CLI [установлен](../../../../base/account/project/cli/packagessetup).
+2. Убедитесь, что Manila CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli).
 
 3. Создайте сеть для файлового хранилища, основанную на существующей приватной сети, выполнив команду:
 
@@ -229,9 +231,11 @@ net use <Имя диска>: <Точка подключения>
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен]
+   (/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию]
+   (/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. Убедитесь, что Manila CLI [установлен](../../../../base/account/project/cli/packagessetup).
+1. Убедитесь, что Manila CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli).
 
 1. Выполните команду:
 
@@ -261,7 +265,7 @@ net use <Имя диска>: <Точка подключения>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. Убедитесь, что Manila CLI [установлен](../../../../base/account/project/cli/packagessetup).
+1. Убедитесь, что Manila CLI [установлен](../../../../tools-for-using-services/cli/openstack-cli).
 
 1. Выполните команду:
 
@@ -292,7 +296,7 @@ net use <Имя диска>: <Точка подключения>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. Убедитесь, что Manila CLI [установлен](../../../../base/account/project/cli/packagessetup).
+1. Убедитесь, что Manila CLI [установлен](../../../../tools-for-using-services/cli/openstack-cli).
 
 1. Выполните команду:
 
@@ -330,7 +334,7 @@ net use <Имя диска>: <Точка подключения>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. Убедитесь, что Manila CLI [установлен](../../../../base/account/project/cli/packagessetup).
+1. Убедитесь, что Manila CLI [установлен](../../../../tools-for-using-services/cli/openstack-cli).
 
 1. Выполните команду:
 
@@ -360,7 +364,7 @@ net use <Имя диска>: <Точка подключения>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. Убедитесь, что Manila CLI [установлен](../../../../base/account/project/cli/packagessetup).
+1. Убедитесь, что Manila CLI [установлен](../../../../tools-for-using-services/cli/openstack-cli).
 
 1. Выполните команду:
 
@@ -392,7 +396,7 @@ net use <Имя диска>: <Точка подключения>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. Убедитесь, что Manila CLI [установлен](../../../../base/account/project/cli/packagessetup).
+1. Убедитесь, что Manila CLI [установлен](../../../../tools-for-using-services/cli/openstack-cli).
 
 1. Выполните команду:
 
@@ -426,7 +430,7 @@ net use <Имя диска>: <Точка подключения>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-2. Убедитесь, что Manila CLI [установлен](../../../../base/account/project/cli/packagessetup).
+2. Убедитесь, что Manila CLI [установлен](../../../../tools-for-using-services/cli/openstack-cli).
 
 3. Добавьте правило доступа с помощью команды:
 
@@ -465,7 +469,7 @@ net use <Имя диска>: <Точка подключения>
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. Убедитесь, что Manila CLI [установлен](../../../../base/account/project/cli/packagessetup).
+1. Убедитесь, что Manila CLI [установлен](../../../../tools-for-using-services/cli/openstack-cli).
 
 1. Выполните команду:
 

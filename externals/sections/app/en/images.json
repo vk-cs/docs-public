@@ -9,7 +9,7 @@
                     "link": "docs/en/base/iaas/concepts"
                 },
                 {
-                    "link": "docs/en/vendors-products/vm-licenses"
+                    "link": "docs/en/base/vm-licenses"
                 },
                 {
                     "link": "docs/en/base/iaas/tariffication",
@@ -38,10 +38,10 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/additionals/cases/migration/migrate-hyperv"
+                    "link": "docs/en/intro/migration/migrate-hyperv"
                 },
                 {
-                    "link": "docs/en/additionals/cases/migration/migrate-vmware"
+                    "link": "docs/en/intro/migration/migrate-vmware"
                 },
                 {
                     "link": "docs/en/base/iaas/instructions/vm/vm-console"
