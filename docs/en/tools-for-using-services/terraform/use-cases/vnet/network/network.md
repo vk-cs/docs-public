@@ -25,7 +25,7 @@ To create a network or security group, create a `network.tf` file, which will de
 
     ```hcl
     data "vkcs_networking_network" "extnet" {
-       name="extnet"
+       name="internet"
     }
 
     resource "vkcs_networking_network" "network" {
