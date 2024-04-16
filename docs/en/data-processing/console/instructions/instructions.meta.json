@@ -1,11 +1,11 @@
 {
-  "title": "Step-by-step instructions",
+  "title": "Service management",
   "pageDescription": "How to create and manage logical groups of data service instances in the VK Cloud project.",
   "shortDescription": "How to create and manage logical groups of data service instances",
-  "metaTitle": "Step-by-step instructions",
+  "metaTitle": "Service management",
   "metaDescription": "Data Platform UI Console in VK Cloud: creating and managing logical groups of data service instances",
   "markdown": "",
-  "sectionTitle": "Step-by-step instructions",
+  "sectionTitle": "Service management",
   "icon": "",
 
   "weight": 2,
