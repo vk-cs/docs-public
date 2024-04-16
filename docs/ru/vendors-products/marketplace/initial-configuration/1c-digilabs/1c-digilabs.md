@@ -23,6 +23,7 @@
 
 1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
 1. [Создайте](/ru/networks/vnet/operations/manage-net) сеть и подсеть, где будут размещены виртуальные машины облачной инфраструктуры.
+1. В [настройках подсети](/ru/networks/vnet/operations/manage-net#redaktirovanie_podseti) отключите опцию **Приватный DNS**.
 1. Запросите доступ к сервису и образам ВМ для развертывания инфраструктуры в [технической поддержке](/ru/contacts).
 1. Сделайте полную резервную копию вашей информационной базы 1С. На компьютере с ОС Linux используйте для этого утилиту [pg_dump](https://postgrespro.ru/docs/postgrespro/14/app-pgdump).
 

@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/bigdata/hortonworks/tariffication",
+                    "link": "docs/ru/data-processing/hortonworks/tariffication",
                     "hiddenForPartners": true
                 }
             ]
@@ -15,7 +15,7 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/bigdata/hortonworks/instructions/delete"
+                    "link": "docs/ru/data-processing/hortonworks/instructions/delete"
                 }
             ]
         },
@@ -23,10 +23,10 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/bigdata/hortonworks/instructions/scale"
+                    "link": "docs/ru/data-processing/hortonworks/instructions/scale"
                 },
                 {
-                    "link": "docs/ru/bigdata/hortonworks/connect"
+                    "link": "docs/ru/data-processing/hortonworks/connect"
                 }
             ]
         }

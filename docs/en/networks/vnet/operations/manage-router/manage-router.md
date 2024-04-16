@@ -24,8 +24,8 @@ You can manage routers: view, edit and delete them.
 
 1. Make sure that:
 
-   1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
-   1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
+   1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
+   1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the OpenStack CLI.
 
 1. To see a list of routers and their IDs, run the command:
 
@@ -78,8 +78,8 @@ You can manage routers: view, edit and delete them.
 
 1. Make sure that:
 
-   1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
-   1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
+    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
+    1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the OpenStack CLI.
 
 1. Create a router of the necessary type:
 
@@ -150,8 +150,8 @@ You can manage routers: view, edit and delete them.
 
 1. Make sure that:
 
-   1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
-   1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
+    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
+    1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the OpenStack CLI.
 1. [Get the ID](#viewing_a_list_of_routers_and_information_about_them) of the necessary router.
 1. Perform one of the available actions:
 
@@ -273,8 +273,8 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
 1. Make sure that:
 
-   1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
-   1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
+    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
+    1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the OpenStack CLI.
   
 1. [Get the ID](#viewing_a_list_of_routers_and_information_about_them) of the necessary router.
 
@@ -343,8 +343,8 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
 1. Make sure that:
 
-   1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
-   1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
+    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
+    1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the OpenStack CLI.
   
 1. [Get the ID](#viewing_a_list_of_routers_and_information_about_them) of the necessary router.
 
@@ -407,8 +407,8 @@ To remove a router:
 
 1. Make sure that:
 
-   1. OpenStack CLI [is installed](../../../../base/account/project/cli/setup).
-   1. You can [authorize](../../../../base/account/project/cli/authorization) in the OpenStack CLI.
+    1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
+    1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the OpenStack CLI.
   
 1. [Get the ID](#viewing_a_list_of_routers_and_information_about_them) of the necessary router.
 

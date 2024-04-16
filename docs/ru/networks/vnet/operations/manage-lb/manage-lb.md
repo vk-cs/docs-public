@@ -24,8 +24,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack) вместе с [дополнительным пакетом](/ru/manage/tools-for-using-services/openstack-cli#2_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
+   1. Вы можете [авторизоваться](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. Чтобы посмотреть список балансировщиков нагрузки и их идентификаторы, выполните команду:
 
@@ -110,8 +110,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack) вместе с [дополнительным пакетом](/ru/manage/tools-for-using-services/openstack-cli#2_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
+   1. Вы можете [авторизоваться](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. Выберите сеть и подсеть, в которых будет размещен балансировщик. [Получите идентификатор](../manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) подсети.
 
@@ -179,8 +179,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack) вместе с [дополнительным пакетом](/ru/manage/tools-for-using-services/openstack-cli#2_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
+   1. Вы можете [авторизоваться](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. [Получите идентификатор](#prosmotr_spiska_balansirovshchikov_nagruzki_i_informacii_o_nih) нужного балансировщика нагрузки.
 
@@ -244,8 +244,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack) вместе с [дополнительным пакетом](/ru/manage/tools-for-using-services/openstack-cli#2_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
+   1. Вы можете [авторизоваться](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. [Получите идентификатор порта](../manage-ports#prosmotr_spiska_portov_i_informacii_o_nih) с Virtual IP для нужного балансировщика нагрузки.
 1. [Привяжите плавающий IP-адрес](../manage-floating-ip#privyazka_plavayushchego_ip_adresa) к порту с этим идентификатором.
@@ -282,8 +282,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack) вместе с [дополнительным пакетом](/ru/manage/tools-for-using-services/openstack-cli#2_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
+   1. Вы можете [авторизоваться](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. [Получите идентификатор порта](../manage-ports#prosmotr_spiska_portov_i_informacii_o_nih) с Virtual IP для нужного балансировщика нагрузки.
 1. [Отвяжите плавающий IP-адрес](../manage-floating-ip#otvyazka_plavayushchego_ip_adresa) от порта с этим идентификатором.
@@ -387,8 +387,8 @@ openstack loadbalancer <команда> --help
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack) вместе с [дополнительным пакетом](/ru/manage/tools-for-using-services/openstack-cli#2_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
+   1. Вы можете [авторизоваться](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. Чтобы создать правило балансировки:
 
@@ -593,8 +593,8 @@ openstack loadbalancer <команда> --help
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-octaviaclient`.
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack) вместе с [дополнительным пакетом](/ru/manage/tools-for-using-services/openstack-cli#2_ustanovite_dopolnitelnye_pakety) `python-octaviaclient`.
+   1. Вы можете [авторизоваться](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в OpenStack CLI.
 
 1. [Получите идентификатор](#prosmotr_spiska_balansirovshchikov_nagruzki_i_informacii_o_nih) балансировщика нагрузки.
 
