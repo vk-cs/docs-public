@@ -4,7 +4,7 @@ The infrastructure of the example:
 
 - In the example, two networks are created: private `common-private` and public `common-public` ones. Each network consists of one subnet.
 - Routers with interfaces in the corresponding subnets are created for each network.
-- The public network router is configured to access the external network `ext-net`. Therefore, floating IP addresses can be assigned to objects in this network.
+- The public network router is configured to access the external network. Therefore, floating IP addresses can be assigned to objects in this network.
 - Each network has a port that corresponds to its only subnet. A `common-router` virtual machine is connected to these ports, acting as a router between the two networks.
 - The routers have the configured static routes that lead to another subnet through the virtual machine port.
 - A virtual machine is created in each subnet. The virtual machine on the public network has a floating IP address.
