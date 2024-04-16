@@ -1,10 +1,10 @@
 {
-    "title": "Architecture",
+    "title": "Service architecture",
     "pageDescription": "Service architecture details: Cloud Containers cluster topologies and environment, integration with Kubernetes API and VK Cloud platform.",
     "shortDescription": "Cloud Containers cluster topologies and environment, integration with Kubernetes API and VK Cloud platform.",
-    "metaTitle": "Architecture",
+    "metaTitle": "Service architecture",
     "metaDescription": "",
-    "sectionTitle": "Architecture",
+    "sectionTitle": "Service architecture",
     "markdown": "Service architecture details: Kubernetes Cloud Containers cluster topologies and environment, integration with Kubernetes API and VK Cloud platform.",
     "icon": "",
     "weight": 2,

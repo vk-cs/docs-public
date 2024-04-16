@@ -1,10 +1,10 @@
 {
-    "title": "Architecture",
+    "title": "Service architecture",
     "pageDescription": "Architecture of VK Cloud virtual network service.",
     "shortDescription": "How the service is designed",
-    "metaTitle": "Architecture",
+    "metaTitle": "Service architecture",
     "metaDescription": "",
-    "sectionTitle": "Architecture",
+    "sectionTitle": "Service architecture",
     "markdown": "Architecture of VK Cloud virtual network service.",
     "icon": "",
     "weight": 2,

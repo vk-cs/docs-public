@@ -1,9 +1,9 @@
 {
-    "title": "Connect to service",
+    "title": "Connecting the service",
     "pageDescription": "",
     "shortDescription": "How to activate the service, add users to it and deploy the application in the project",
-    "metaTitle": "Connect to service",
-    "metaDescription": "To activate the 1C: GRM service, you must have a registered account and an active project. If necessary, you should confirm the account and activate the ph",
+    "metaTitle": "Connect to the service",
+    "metaDescription": "To activate the 1C: GRM service, you must have a registered account and an active project. If necessary, you should confirm the account",
     "sectionTitle": "Connect to service",
     "markdown": "",
     "icon": "",

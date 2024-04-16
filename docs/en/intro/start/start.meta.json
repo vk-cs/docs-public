@@ -1,7 +1,7 @@
 {
   "title": "Getting started",
   "pageDescription": "VK Cloud platform provides infrastructure and platform services for the development and operation of cloud applications, expert support, configurable installations (including On-premise), consulting services. Virtualization, monitoring, container, and data storage services can be deployed on the platform. The infrastructure (IaaS) is based on OpenStack and components of its own design. The platform (PaaS) includes open source solutions (Kubernetes) and solutions from technology partners (Arenadata Greenplum, Hadoop from Arenadata, Tarantool-based queue service). The Service Catalog (SaaS Marketplace) allows you to deploy partner and customer services. Read more about the VK Cloud structure in the article Platform Architecture. Billing is carried out according to the «pay as you go» principle: the fee is charged only for the resources consumed with an accuracy of up to a second. To learn how the tools related to the payment of platform services work, see the section Billing. Technical support is provided at all stages of the implementation and operation of the platform. The public documentation portal provides basic instructions for working with VK Cloud services.",
-  "shortDescription": "Information about services, personal account, legal information and details",
+  "shortDescription": "How to register in VK Cloud or how to get technical support. Base information about the cloud, legal information, and requisites",
   "metaTitle": "Getting started",
   "metaDescription": "VK Cloud (VK Cloud) platform provides the infrastructure for developing and operating applications",
   "sectionTitle": "Getting started",

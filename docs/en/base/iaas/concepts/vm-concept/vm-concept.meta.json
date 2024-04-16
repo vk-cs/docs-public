@@ -1,10 +1,10 @@
 {
-    "title": "Cloud Servers overview",
+    "title": "About service",
     "pageDescription": "Cloud Servers Concept — basic concepts related to virtual machines.",
     "shortDescription": "Basic concepts related to virtual machines",
-    "metaTitle": "Cloud Servers overview",
+    "metaTitle": "About service",
     "metaDescription": "Cloud Servers — virtual machines, disks, availability zone, operating system, image, file storage, backup, licenses",
-    "sectionTitle": "Cloud Servers overview",
+    "sectionTitle": "About service",
     "markdown": "",
     "weight": 0,
     "uuid": "8a2a793c-233e-42f1-b47c-05748444a1e9",
