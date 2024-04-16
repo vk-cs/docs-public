@@ -26,8 +26,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-neutronclient`.
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli) `python-neutronclient`.
+   1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
 
 1. Чтобы посмотреть список VPN-туннелей, выполните команду:
 
@@ -225,8 +225,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-neutronclient`.
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli) `python-neutronclient`.
+   1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
 
 1. Настройте IKE:
 
@@ -606,8 +606,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-neutronclient`.
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli) `python-neutronclient`.
+   1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
 
 1. Посмотрите детальную информацию о VPN-туннеле, который нужно отредактировать.
 
@@ -765,8 +765,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-neutronclient`.
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli) `python-neutronclient`.
+   1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
 
 1. Посмотрите детальную информацию о VPN-туннеле, который нужно перезапустить.
 
@@ -824,8 +824,8 @@
 
 1. Убедитесь, что:
 
-   1. OpenStack CLI [установлен](../../../../base/account/project/cli/setup) вместе с [дополнительным пакетом](../../../../base/account/project/cli/packagessetup) `python-neutronclient`.
-   1. Вы можете [авторизоваться](../../../../base/account/project/cli/authorization) в OpenStack CLI.
+   1. OpenStack CLI [установлен](/ru/tools-for-using-services/cli/openstack-cli) вместе с [дополнительным пакетом](/ru/tools-for-using-services/cli/openstack-cli) `python-neutronclient`.
+   1. Вы можете [авторизоваться](/ru/tools-for-using-services/cli/openstack-cli) в OpenStack CLI.
 
 1. Посмотрите список VPN-туннелей и найдите идентификатор туннеля, который нужно удалить.
 

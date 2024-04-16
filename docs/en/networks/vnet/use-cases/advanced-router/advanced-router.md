@@ -7,7 +7,7 @@ To show the configuration of an advanced router, two independent networks will b
 
 ## Preparation steps
 
-1. Make sure the OpenStack client is [installed](../../../../manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client), and [authenticate](../../../../manage/tools-for-using-services/openstack-cli#3_complete_authentication) in the project.
+1. Make sure the OpenStack client is [installed](../../../../tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client), and [authenticate](../../../../tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
 
 1. Select a client network in your local infrastructure:
 
