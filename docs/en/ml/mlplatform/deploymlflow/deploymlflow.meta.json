@@ -1,0 +1,16 @@
+{
+  "title": "MLflow Deploy",
+  "pageDescription": "This section describes how create and manage MLflow Deploy instances.",
+  "shortDescription": "The service builds ML-models in Docker-containers and makes them available via REST API",
+  "metaTitle": "MLflow Deploy",
+  "metaDescription": "The service builds ML-models in Docker-containers and makes them available via REST API",
+  "sectionTitle": "MLflow Deploy",
+  "markdown": "This section describes how create and manage MLflow Deploy instances.",
+  "icon": "",
+  "weight": 3,
+  "relativeSections": [
+    {
+      "partialPath": "en/manage/tools-for-using-services/terraform/use-cases/mlplatform/deploymlflow"
+    }],
+  "uuid": "77116544-82da-41b3-a40a-863f8cd124f9"
+}

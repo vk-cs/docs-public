@@ -69,3 +69,14 @@ This will create supplementary files needed for Terraform to work.
 1. Wait until the operation is complete.
 
 The created resources will be available in your personal account.
+
+## Update Terraform
+
+If the provider version in the `vkcs_provider.tf` file is lower than the one needed to create the resource, an error will occur when checking the configuration. To avoid this, update your provider:
+
+1. Open the `vkcs_provider.tf` file and edit version you need, for example: `version = "~> 0.6.0"`.
+1. Run the command in the terminal:
+
+  ```bash
+  terraform init --upgrade
+  ```
