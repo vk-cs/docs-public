@@ -1,10 +1,10 @@
 {
-  "title": "Use cases",
+  "title": "How-to guides",
   "pageDescription": "VK Cloud provides tools and software packages for implementing a variety of tasks facing system administrators: from using basic services to high-load environments and landscapes.",
   "shortDescription": "Installing LAMP, ELK, Docker CE on CentOS, Ubuntu and other Linux-based operating systems",
-  "metaTitle": "Use cases",
+  "metaTitle": "How-to guides",
   "metaDescription": "VK Cloud provides tools and software packages to implement a variety of tasks facing system administrators.",
-  "sectionTitle": "Use cases",
+  "sectionTitle": "How-to guides",
   "markdown": "VK Cloud provides tools and software packages for implementing a variety of tasks facing system administrators: from using basic services to high-load environments and landscapes. The section contains scenarios for solving popular problems, for which you can use the resources of the platform.",
   "icon": "",
   "weight": 12,
