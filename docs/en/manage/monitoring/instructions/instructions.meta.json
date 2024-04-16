@@ -1,10 +1,10 @@
 {
-  "title": "Step-by-step instructions",
+  "title": "Service management",
   "pageDescription": "Контроль отображаемой информации осуществляется при помощи дашбордов, где можно добавить график, наполнить метриками и отслеживать показатели систем.",
   "shortDescription": "How to install and configure a monitoring agent on virtual machines",
-  "metaTitle": "Step-by-step instructions",
+  "metaTitle": "Service management",
   "metaDescription": "Контроль отображаемой информации осуществляется при помощи дашбордов, где можно добавить график, наполнить метриками и отслеживать показатели систем.",
-  "sectionTitle": "Step-by-step instructions",
+  "sectionTitle": "Service management",
   "markdown": "How to install and configure a monitoring agent on virtual machines.",
   "icon": "",
 

@@ -1,10 +1,10 @@
 {
-    "title": "Overview",
+    "title": "About service",
     "pageDescription": "VK cloud containers (Kubernetes) service overview.",
     "shortDescription": "A brief description of the service's features and examples of tasks that can be solved with it.",
-    "metaTitle": "Overview",
+    "metaTitle": "About service",
     "metaDescription": "",
-    "sectionTitle": "Overview",
+    "sectionTitle": "About service",
     "markdown": "VK cloud containers (Kubernetes) service overview.",
     "icon": "",
     "weight": 1,
