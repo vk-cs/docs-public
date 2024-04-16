@@ -10,6 +10,6 @@
   "weight": 3,
   "relativeSections": [
     {
-      "partialPath": "en/manage/tools-for-using-services/terraform/use-cases/mlplatform/deploymlflow"
+      "partialPath": "en/tools-for-using-services/terraform/use-cases/mlplatform/deploymlflow"
     }]
 }
