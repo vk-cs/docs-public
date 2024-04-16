@@ -13,6 +13,9 @@
                 },
                 {
                     "link": "docs/en/ml/mlplatform/jupyterhub"
+                },
+                {
+                    "link": "docs/ru/ml/mlplatform/deploymlflow"
                 }
             ]
         }
