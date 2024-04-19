@@ -16,7 +16,7 @@ When creating the instance the following was used:
 
 1. [Install Terraform and configure the provider](../../../quick-start) if not already done.
 
-1. To go through this case, you need a provider version 0.6.0 or higher. Make sure that the provider version in the `vkcs_provider.tf` file is not lower. If the provider version is lower, [update provider](../../../quick-start#update_terraform).
+1. To go through this case, you need a provider version 0.6.0 or higher. Make sure that the provider version in the `vkcs_provider.tf` file is not lower. If the provider version is lower, [update the provider](../../../quick-start#update_terraform).
 
 ## 1. Create an MLflow Deploy instance manifest file
 
@@ -70,8 +70,8 @@ Here:
   <details>
     <summary>Examples</summary>
 
-  - `mlflow_instance_id = vkcs_mlplatform_mlflow.mlflow.id`: the new MLflow instance will be created. The ID will be taken after creating the resource `vkcs_mlplatform_mlflow`. The resource will be generated further.
-  - `mlflow_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: the ID of an existing instance can be taken from MLflow instance detailes in your [VK Cloud personal account](https://cloud.vk.com/app).
+  - `mlflow_instance_id = vkcs_mlplatform_mlflow.mlflow.id`: a new MLflow instance will be created. The ID will be taken after creating the resource `vkcs_mlplatform_mlflow`. The resource will be generated further.
+  - `mlflow_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: the ID of an existing instance can be taken from MLflow instance details in your [VK Cloud personal account](https://cloud.vk.com/app/en).
 
   </details>
 
@@ -81,8 +81,8 @@ Here:
     <summary>Examples</summary>
 
   - `network_id = vkcs_networking_network.default.id`: the instance will be hosted on a new network, which will be created by the `vkcs_networking_network` resource. The resource will be generated further.
-  - `network_id = data.vkcs_networking_network.default.id`: the instance will be hosted on an existing network, its ID is taken from the `vkcs_networking_network` data source. The source will be generated hosted.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the instance will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/operations/manage-net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in the VK Cloud personal account or through the Openstack CLI.
+  - `network_id = data.vkcs_networking_network.default.id`: the instance will be hosted on an existing network. Its ID is taken from the `vkcs_networking_network` data source. The source will be generated further.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the instance will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/operations/manage-net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud personal account or via the Openstack CLI.
 
   </details>
 
@@ -192,8 +192,8 @@ resource "vkcs_networking_router_interface" "app" {
 
 Verify that the MLflow Deploy instance was successfully created:
 
-1. [Open](https://cloud.vk.com/app/) your VK Cloud personal account.
-1. Open **ML Platform** → **Instances**. Make sure your MLflow Deploy instance is created and active.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud personal account.
+1. Go to **ML Platform** → **Instances**. Make sure your MLflow Deploy instance is created and active.
 
 ## Delete unused resources
 

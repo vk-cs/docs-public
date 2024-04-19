@@ -74,7 +74,7 @@ The created resources will be available in your personal account.
 
 If the provider version in the `vkcs_provider.tf` file is lower than the one needed to create the resource, an error will occur when checking the configuration. To avoid this, update your provider:
 
-1. Open the `vkcs_provider.tf` file and edit version you need, for example: `version = "~> 0.6.0"`.
+1. Open the `vkcs_provider.tf` file and edit the version as you need, for example: `version = "~> 0.6.0"`.
 1. Run the command in the terminal:
 
   ```bash
