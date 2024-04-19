@@ -5,7 +5,7 @@
   "metaTitle": "JupyterHub",
   "metaDescription": "",
   "sectionTitle": "JupyterHub",
-  "markdown": "Этот раздел описывает принципы работы с сервисом JupyterHub, созданию и работе с инстансами JupyterHub.",
+  "markdown": "Этот раздел описывает принципы работы с сервисом JupyterHub, создание и работу с инстансами JupyterHub.",
   "icon": "",
   "weight": 1,
   "relativeSections": [

@@ -1,13 +1,13 @@
 Manage MLflow Deploy instances using MLflow Deployment Client, a pre-installed python library in JupyterHub from VK Cloud.
 
-## Before working
+## Before you start
 
 1. [Create](../../../jupyterhub/start/create/) a JupyterHub instance.
 2. [Create](../../../mlflow/start/create/) an MLflow instance.
-3. Reboot the virtual machine from JupyterHub:
-    1. Open the **Cloud Servers → Virtual machines** section.
+3. Reboot the virtual machine with the JupyterHub instance:
+    1. Go to **Cloud Servers → Virtual machines**.
     2. In the **ML Platform Instances** subsection, find the JupyterHub you need instance.
-    3. Open the menu and select **Restart**.
+    3. Open the menu of the instance and select **Restart**.
 
 <info>
 
@@ -18,7 +18,7 @@ JupyterHub, MLflow and MLflow Deploy instances must be created on the same netwo
 ## Preparing the model
 
 1. [Connect](../../../../../ml/mlplatform/jupyterhub/start/connect/) to the JupyterHub instance.
-2. Go to the **tutorials** directory.
+2. Open the **tutorials** directory.
 
     JupyterHub from VK Cloud includes training Jupyter notebooks: `mlflow_demo.ipynb` and `mlflow_deploy_demo.ipynb`.
 
@@ -70,7 +70,7 @@ client.create_endpoint(name=deploy_server_name)
   
 `client.create_endpoint(name, performance="low", disk_size=50, disk_type="ceph-ssd", av_zone=None)`
 
-The full list of parameters is listed above. You can also create a deployment server by specifying only the server name. `av_zone` in this case will be taken similarly to the zone in which the synchronized MLflow service is located.
+The full list of parameters is presented above. You can also create a deployment server by specifying only the server name. In this case, the value of the`av_zone` parameter will be the name of the zone in which the synchronized MLflow service is located.
 
 The `perfomance` parameter in the `create_enpoint` method is responsible for the configuration of the virtual machine. The following values are available:
 
@@ -80,7 +80,7 @@ The `perfomance` parameter in the `create_enpoint` method is responsible for the
 
 ### Getting a list and status of servers
 
-The deployment server is ready for work after changing the status from `CREATING` to `RUNNING`. Typically, preparing a deployment server takes about five to ten minutes.
+The deployment server is ready for operation when its status changes from `CREATING` to `RUNNING`. Typically, preparing a deployment server takes about five to ten minutes.
 
 ```python
 client.list_endpoints()
@@ -94,16 +94,16 @@ client.get_endpoint(deploy_server_name)
 
 ### Creating a deployment
 
-`deployment` in VK Cloud MLflow Deploy terminology is a running Docker container with a model on the deployment server.
+`deployment` in VK Cloud MLflow Deploy terminology is a Docker container with a model running on the deployment server.
 
 ```python
 deployment_name="test_deployment"
 client.create_deployment(server_name=deploy_server_name, deployment_name=deployment_name, model_uri=model_source_uri, port_out = None)
 ```
 
-`port_out` can be omitted, the first free one in the range from `62000` to `65000` will be selected. Running the model usually takes less than a minute.
+`port_out` can be omitted, the first free port in the range from `62000` to `65000` will be selected. Launching the model usually takes less than a minute.
 
-### Getting the list of running models and deployment status
+### Getting the list of running models and the deployment status
 
 1. Display a list of running models on the deployment server:
 
@@ -111,13 +111,13 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
     client.list_deployments(deploy_server_name)
     ```
 
-1. Get information about the deployed model by the name of the deployment server and model:
+1. Get information about a deployed model by its name and the name of the deployment server:
 
     ```python
     client.get_deployment(deploy_server_name, deployment_name)
     ```
 
-1. Use the `predict` method on the model in the Docker container:
+1. Use the `predict` method of the model in the Docker container:
 
    ```python
    data = {"inputs":[[0.045341,  0.050680,  0.060618,  0.031065,  0.028702, -0.047347, -0.054446, 0.071210,  0.133597, 0.135612],[0.075341,  0.010680,  0.030618,  0.011065,  0.098702, -0.007347, -0.014446, 0.071210,  0.093597, 0.115612]]}
@@ -130,7 +130,7 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
 
     <info>
 
-    It is recommended to set different details from the VK Cloud or JupyterHub.
+    It is recommended to set details different from VK Cloud and JupyterHub.
 
     </info>
 
@@ -162,7 +162,7 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
     print(response.text)
     ```
 
-1. Use the `predict` method on the model in the Docker container:
+1. Use the `predict` method of the model in the Docker container:
 
     ```python
     client.predict(deploy_server_name, auth_deployment_name, data)
@@ -170,7 +170,7 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
 
 ### Deleting a deployment
 
-Delete the deployment from the server by accessing the server name and deployment:
+Delete the deployment from the server using the names of the server and the deployment:
 
 ```python
 client.delete_deployment(deploy_server_name, deployment_name)
@@ -182,7 +182,7 @@ client.delete_deployment(deploy_server_name, deployment_name)
 client.delete_endpoint(deploy_server_name)
 ```
 
-### A short list of methods
+### Brief list of methods
 
 ```python
 from mlflow.deployments import get_deploy_client
@@ -193,14 +193,14 @@ client.create_endpoint(name, performance="low", disk_size=50, disk_type="ceph-ss
 client.list_endpoints()
 client.get_endpoint(server_name)
 
-# deployment — the running Docker container with a model on the deploying server
+# deployment — the running Docker container with a model on the deployment server
 client.create_deployment(server_name, deployment_name, model_uri, port_out = None)
 
-# port_out — may not be specified, the first free one in the range from 62000 to 65000 will be selected
+# port_out — can be omitted, the first free port in the range from 62000 to 65000 will be selected
 client.list_deployments(server_name)
 client.get_deployment(server_name, deployment_name)
 
-# calling the predict method on a model in a Docker container
+# call of the predict method of the model in the Docker container
 client.predict(server_name, deployment_name, df_payload)
 
 client.delete_deployment(server_name, deployment_name)
