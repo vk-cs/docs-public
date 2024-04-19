@@ -5,7 +5,7 @@
   "metaTitle": "MLflow Deploy",
   "metaDescription": "Собирает ML-модели в Docker-контейнеры и делает их доступными по REST API",
   "sectionTitle": "MLflow Deploy",
-  "markdown": "Этот раздел описывает как создать и управлять инстансом MLflow Deploy.",
+  "markdown": "Этот раздел описывает, как создать инстанс MLflow Deploy и управлять им.",
   "icon": "",
   "weight": 3,
   "relativeSections": [
