@@ -40,7 +40,6 @@ The available fields may differ for different operating systems.
      - **Disk size**: specify the desired VM disk size in gigabytes.
      - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](../../../concepts/vm-concept#disks).
      - **Operating system**: select the operating system version or [previously created image](../../images/images-manage/).
-     - **Enable monitoring**: enable to use [monitoring tools](/en/manage/monitoring/monitoring-info).
      - **Tags**: if necessary, [specify the tag](../vm-manage#assigning_tags) for the VM or create a new one.
 5. Click **Next step**.
 6. Configure the VM connection to the network:
@@ -61,11 +60,13 @@ The available fields may differ for different operating systems.
 
    - (Optional) **Link a domain to an external IP**: enable the option and specify a domain to link the FQDN to the external IP. An [A-record](/en/networks/dns/publicdns#adding_resource_records) for the selected IP will be added to the DNS. The option is available if the **Assign external IP** option is enabled.
 
-   <warn>
+      <warn>
 
-   You cannot link an external IP to a domain that matches the CNAME record of the DNS zone. In this case, the VM will be created, but the A-record will not be added.
+      You cannot link an external IP to a domain that matches the CNAME record of the DNS zone. In this case, the VM will be created, but the A-record will not be added.
 
-   </warn>
+      </warn>
+
+   - **Enable monitoring**: enable to use [monitoring tools](/en/manage/monitoring/monitoring-info).
 
 7. Click **Next step**.
 
