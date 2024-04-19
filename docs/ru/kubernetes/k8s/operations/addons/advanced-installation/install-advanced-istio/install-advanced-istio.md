@@ -49,43 +49,25 @@
       Начнется установка аддона в кластер. Этот процесс может занять длительное время.
 
    </tabpanel>
-   <tabpanel>
+      <tabpanel>
 
-   1. [Установите Terraform и настройте провайдер](/ru/manage/tools-for-using-services/terraform/quick-start), если этого еще не сделано.
-   1. Создайте конфигурационный файл Terraform с данными об устанавливаемом аддоне в блоке `vkcs_kubernetes_addon`:
+   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
-      - [Получите](../../manage-addons#dostupnye_dlya_ustanovki_addony_7c850197) список доступных для установки аддонов.
-      - Получите настройки аддона из параметра `configuration_values`, используя источник данных [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md).
-      - (Опционально) Чтобы динамически изменять параметры аддона (например, через CI), добавьте настройки аддона в отдельный yaml-файл. Используйте функцию [templatefile](https://developer.hashicorp.com/terraform/language/functions/templatefile), чтобы добавить нужные значения.
+      - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
+      - источник данных [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
+      - источник данных [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
 
-      <details>
-         <summary>Пример указания аддона</summary>
+      При необходимости адаптируйте приведенные по ссылкам примеры использования ресурсов и источников под свою задачу и конфигурацию Terraform. Например, вы можете отредактировать код настройки аддона, изменив ресурс `vkcs_kubernetes_addon`.
 
-         ```hcl
-         resource "vkcs_kubernetes_addon" "istiod" {
-            cluster_id = vkcs_kubernetes_cluster.k8s-cluster.id
-            addon_id = data.vkcs_kubernetes_addon.istiod.id
-            namespace = "istio-system"
-            configuration_values = templatefile("./istiod-all.yaml",{istioNamespace = "istio-system"})
-         
-            depends_on = [
-               vkcs_kubernetes_node_group.default_ng
-            ]
-         }
-         ```
+      <warn>
+      Некорректно заданный код настройки может привести к ошибкам при установке или неработоспособности аддона.
+      </warn>
 
-      </details>
-
-   1. Проверьте конфигурационный файл Terraform на корректность:
+   1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
 
       ```bash
-      terraform validate
-      ```
-
-   1. Ознакомьтесь с планируемыми изменениями:
-
-      ```bash
-      terraform plan
+      terraform validate && terraform plan
       ```
 
    1. Примените изменения:
@@ -194,7 +176,26 @@
    </tabpanel>
    <tabpanel>
 
-   Воспользуйтесь инструкцией из стандартной установки аддона. В настройках аддона задайте нужные исключения (tolerations) и селекторы узлов (nodeSelector).
+   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
+
+      - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
+      - источник данных [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
+      - источник данных [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
+
+      При необходимости адаптируйте приведенные по ссылкам примеры использования ресурсов и источников под свою задачу и конфигурацию Terraform.
+
+   1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
+
+      ```bash
+      terraform validate && terraform plan
+      ```
+
+   1. Примените изменения:
+
+      ```bash
+      terraform apply
+      ```
 
    </tabpanel>
    </tabs>
@@ -240,7 +241,26 @@
    </tabpanel>
    <tabpanel>
 
-   Воспользуйтесь инструкцией из стандартной установки аддона.
+   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
+
+      - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
+      - источник данных [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
+      - источник данных [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
+
+      При необходимости адаптируйте приведенные по ссылкам примеры использования ресурсов и источников под свою задачу и конфигурацию Terraform.
+
+   1. Убедитесь, что конфигурационные файлы корректны и содержат нужные изменения:
+
+      ```bash
+      terraform validate && terraform plan
+      ```
+
+   1. Примените изменения:
+
+      ```bash
+      terraform apply
+      ```
 
    </tabpanel>
    </tabs>

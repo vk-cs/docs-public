@@ -1,11 +1,11 @@
 {
-  "title": "Пошаговые инструкции",
+  "title": "Управление сервисом",
   "pageDescription": "Как создать экземпляр сервиса Cloud Kafka в проекте VK Cloud, как управлять компонентами Cloud Kafka в VK Cloud.",
   "shortDescription": "Создание экземпляра сервиса и управление его компонентами",
-  "metaTitle": "Пошаговые инструкции",
+  "metaTitle": "Управление сервисом",
   "metaDescription": "Cloud Kafka в VK Cloud: создание экземпляра сервиса, управление экземпляром и его компонентами",
   "markdown": "",
-  "sectionTitle": "Пошаговые инструкции",
+  "sectionTitle": "Управление сервисом",
   "icon": "",
 
   "weight": 3,

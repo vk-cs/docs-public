@@ -1,14 +1,14 @@
 {
-    "title": "Описание сервиса Cloud Voice",
+    "title": "О сервисе",
     "pageDescription": "",
     "shortDescription": "",
-    "metaTitle": "Описание сервиса Cloud Voice",
+    "metaTitle": "О сервисе",
     "metaDescription": "Для начала использования сервиса перейдите на страницу Cloud Voice: https://cloud.vk.com/cloud-voice/ Cloud Voice — сервис, который позволяет распознавать",
-    "sectionTitle": "Описание сервиса Cloud Voice",
+    "sectionTitle": "О сервисе",
     "markdown": "",
     "icon": "",
-    "weight": 0,
+    "weight": 1,
     "uuid": "f69bddf2-79b2-4bc3-81af-234399a07470",
     "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-04-08T11:36:41.000Z"
+    "updatedAt": "2024-04-11T15:17:56.000Z"
 }

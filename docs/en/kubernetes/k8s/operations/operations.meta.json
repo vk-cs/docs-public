@@ -1,13 +1,13 @@
 {
-  "title": "Step-by-step instructions",
+  "title": "Service management",
   "pageDescription": "A Kubernetes cluster consists of master nodes and groups of worker nodes. This section explains the operations that can be performed on the cluster and its nodes.",
   "shortDescription": "Supported operations with the cluster and its nodes",
-  "metaTitle": "Step-by-Step instructions",
+  "metaTitle": "Service management",
   "metaDescription": "Cloud Containers: operations that can be performed with the Kubernetes cluster and its nodes",
-  "sectionTitle": "Step-by-step instructions",
+  "sectionTitle": "Service management",
   "markdown": "A Kubernetes cluster consists of master nodes and groups of worker nodes. This section explains the operations that can be performed on the cluster and its nodes.",
   "icon": "",
 
-  "weight": 2,
+  "weight": 4,
   "uuid": "8f225e5a-fc0a-41a8-a492-cc6a83afe012"
 }

@@ -1,14 +1,14 @@
 {
-    "title": "Service cost",
+    "title": "Tariffication",
     "pageDescription": "",
     "shortDescription": "",
-    "metaTitle": "Service cost",
+    "metaTitle": "Tariffication",
     "metaDescription": "",
-    "sectionTitle": "Service cost",
+    "sectionTitle": "Tariffication",
     "markdown": "",
     "icon": "",
-    "weight": 2,
+    "weight": 6,
     "uuid": "5183fc57-8c72-43dc-bea0-a9d75537aa45",
     "createdAt": "2022-07-29T01:42:00.000Z",
-    "updatedAt": "2024-04-08T11:36:41.000Z"
+    "updatedAt": "2024-04-11T15:17:56.000Z"
 }
