@@ -63,7 +63,7 @@ client = get_deploy_client('vk-cloud-mlplatform')
 
 ### Создание endpoint
 
-`endpoint` в терминологии VK Cloud MLflow Deploy — это деплой-сервер виртуальной машины.
+`endpoint` в терминологии VK Cloud MLflow Deploy — это ВМ, сконфигурированная как деплой-сервер.
 
 ```python
 deploy_server_name = "deploy_server_one"
@@ -76,9 +76,9 @@ client.create_endpoint(name=deploy_server_name)
 
 Параметр `perfomance` в методе `create_enpoint` отвечает за конфигурацию виртуальной машины. Доступны следующие значения:
 
-- `low — standard 4-4` (4 ядра, 4 гигабайта RAM),
-- `mid — advanced 8-8` (8 ядер, 8 гигабайт RAM),
-- `high — advanced 16-16`
+- `low — standard 4-4` (4 ядра, 4 гигабайта RAM);
+- `mid — advanced 8-8` (8 ядер, 8 гигабайт RAM);
+- `high — advanced 16-16` (16 ядер, 16 гигабайт RAM).
 
 ### Получение списка и статуса серверов
 
