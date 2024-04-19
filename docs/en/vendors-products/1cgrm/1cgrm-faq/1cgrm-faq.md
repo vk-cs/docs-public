@@ -1,7 +1,18 @@
+<details>
+
+<summary>What questions can I contact technical support about?</summary>
+
+1. Installation of updates.
+1. Consultations on operational issues related to the service.
+1. Recovery from backups.
+
+Other questions, including consultations on working in the program, are not covered by technical support.
+
+</details>
 
 <details>
 
-<summary>What you need to run 1C: timing</summary>
+<summary>What do I need to run 1C: GRM?</summary>
 
 The launch of 1C: GRM applications is carried out with an activated account and confirmed credentials.
 
@@ -9,15 +20,15 @@ The launch of 1C: GRM applications is carried out with an activated account and 
 
 <details>
 
-<summary>Can I use a fat client to connect</summary>
+<summary>Can I use a thin client to connect?</summary>
 
-Connection to the application is carried out only through the web interface. It is not possible to use a full-fledged client installed on a local computer.
+Yes, to connect to 1C:GRM, you can use a thin client installed on a local computer.
 
 </details>
 
 <details>
 
-<summary>How many applications can I create</summary>
+<summary>How many applications can be created?</summary>
 
 VK Cloud does not limit the number of created 1C: GRM applications.
 
@@ -25,7 +36,7 @@ VK Cloud does not limit the number of created 1C: GRM applications.
 
 <details>
 
-<summary>How many users can be connected</summary>
+<summary>How many users can be connected?</summary>
 
 The file use of the 1C application limits remote access to 5 users, client-server: from 6 to 50.
 
@@ -33,64 +44,65 @@ The file use of the 1C application limits remote access to 5 users, client-serve
 
 <details>
 
-<summary>How to increase the number of licenses over 5</summary>
+<summary>What to do if I don't know a TIN?</summary>
 
-When the limit of licenses (connections) for the selected type of application is reached, you must [contact the technical support of 1C timing](mailto:support.1c.grm@mcs.mail.ru) to clarify the possibility of changing the work option and increasing the number of connections.
-
-</details>
-
-<details>
-
-<summary>Is it possible to extend the trial period</summary>
-
-Demo access is provided for each type of application once, for a period of 30 days. Expansion of this period is impossible.
+The application user can be a representative of an existing organization. To find out the TIN of the organization, contact its chief accountant or CEO.
 
 </details>
 
 <details>
 
-<summary>Do I need a SQL Server license</summary>
+<summary>Do I need to create a virtual machine myself or do you provide a ready-to-use one?</summary>
 
-When using 1C: GRM applications, no additional licenses are required.
-
-</details>
-
-<details>
-
-<summary>What to do if the user does not have a TIN</summary>
-
-The application user can be a representative of an existing organization. To clarify the TIN of the organization, you should contact the chief accountant or CEO of the organization.
+The entire infrastructure is deployed automatically. VK Cloud provides an HTTP link to a ready-to-use 1C database. You can access it via a browser or 1C thin client. Access at the infrastructure and operating system level is not provided.
 
 </details>
 
 <details>
 
-<summary>Can I order application customization</summary>
+<summary>Can I use my own 1C licenses?</summary>
 
-Technical support for 1C: GRM is already included in the cost of the monthly rental of the application. It also includes requests for consulting and customization of the deployed application. To do this, you should send a request to the technical support of 1C: GRM [by mail](mailto:support.1c.grm@mcs.mail.ru) or through the [feedback form](/en/contacts).
-
-</details>
-
-<details>
-
-<summary>What happens when demo access ends</summary>
-
-At the end of the trial period, in the absence of a positive account balance of the 1C: GRM service, the application will continue to work and an invoice will be issued for its use.
+No, this option is not provided in the 1C:GRM service.
 
 </details>
 
 <details>
 
-<summary>Why I don't see charges for the timing service in the Billing section</summary>
+<summary>I already use the 1C system. How do I transfer data to your service?</summary>
 
-Financial transactions with the 1C: GRM application are carried out by 1C: GRM technical support and you can request the current balance, as well as an invoice for payment or closing documents by [contacting the 1C: GRM technical support](mailto:support.1c.grm@mcs.mail.ru).
+1. In your 1C system, use the "Unload data from the service" function.
+1. Send an email to [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru). Our specialists will help you migrate for free.
 
 </details>
 
 <details>
 
-<summary>How to get back unused money</summary>
+<summary>Is it possible to unload the database stored in 1C:GRM? Can this be done on a schedule?</summary>
 
-To return unused funds from the account, you should [contact the technical support of 1C: GRM](mailto:support.1c.grm@mcs.mail.ru) and inform the reason for the end of the work, as well as the details for the refund.
+Yes, by default the backup database is created daily. To obtain such a copy or change the backup schedule, send an email to [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru).
+
+</details>
+
+<details>
+
+<summary>Is it possible to install configuration extensions in 1C?</summary>
+
+Yes, it is possible.
+
+</details>
+
+<details>
+
+<summary>Can I use the configurator and modify the program myself?</summary>
+
+This option is not provided.
+
+</details>
+
+<details>
+
+<summary>How to unsubscribe from the 1C: GRM?</summary>
+
+To disable your subscription to 1C: GRM, send an email to [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru).
 
 </details>
