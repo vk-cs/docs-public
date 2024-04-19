@@ -113,7 +113,7 @@ Create a Terraform configuration file `network.tf` with the network infrastructu
 </tablist>
 <tabpanel>
 
-An example of a data source for a network existing in a project:
+The data source example for a network existing in a project:
 
 ```hcl
 data "vkcs_networking_network" "default" {
