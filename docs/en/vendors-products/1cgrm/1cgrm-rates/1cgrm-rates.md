@@ -10,7 +10,7 @@ The calculation of the monthly cost of each component is made automatically in t
 
 The base cost of applications is determined as follows:
 
-<table border="0" cellpadding="0" cellspacing="0" width="435"><tbody><tr><td height="19" style="background-color: rgb(239, 239, 239);" width="54.48275862068966%">application</td><td style="background-color: rgb(239, 239, 239);" width="45.51724137931034%">The cost</td></tr><tr><td height="19">Accounting department</td><td>900 ₽ per month for 1 license</td></tr><tr><td height="19">Salary and Personnel Management</td><td>960 ₽ per month for 1 license</td></tr><tr><td height="19">Managing Our Firm</td><td>960 ₽ per month for 1 license</td></tr></tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="435"><tbody><tr><td height="19" style="background-color: rgb(239, 239, 239);" width="54.48275862068966%">application</td><td style="background-color: rgb(239, 239, 239);" width="45.51724137931034%">The cost</td></tr><tr><td height="19">Accounting department</td><td>39 ₽ per day for 1 license</td></tr><tr><td height="19">Salary and Personnel Management</td><td>41 ₽ per day for 1 license</td></tr><tr><td height="19">Managing Our Firm</td><td>40 ₽ per day for 1 license</td></tr></tbody></table>
 
 <info>
 
@@ -34,7 +34,7 @@ Demo access is provided only for the first application of each type in the proje
 
 Based on the result of using the 1C: GRM service, the project owner will be invoiced for payment according to the actual time and volume of service use.
 
-If you need to deposit funds and make a prepayment for the service, you should contact the 1C: GRM service support: `support.1c.grm@mcs.mail.ru`.
+If you need to deposit funds and make a prepayment for the service, send an email to [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru).
 
 At the end of the billing period, the project owner will be sent closing documents, reflecting the period and volume of use of services.
 
