@@ -1,14 +1,14 @@
 {
-    "title": "FAQ",
+    "title": "Вопросы и ответы",
     "pageDescription": "Ответы на самые частые вопросы о Cloud ML Platform.",
     "shortDescription": "Ответы на самые частые вопросы о Cloud ML Platform",
-    "metaTitle": "FAQ",
+    "metaTitle": "Вопросы и ответы",
     "metaDescription": "",
-    "sectionTitle": "FAQ",
+    "sectionTitle": "Вопросы и ответы",
     "markdown": "",
     "icon": "",
     "weight": 4,
     "uuid": "6cd60653-ce69-4dcf-a9c0-3cf302cc0126",
     "createdAt": "2022-10-18T09:18:02.000Z",
-    "updatedAt": "2024-04-08T11:36:41.000Z"
+    "updatedAt": "2024-04-11T15:17:56.000Z"
 }

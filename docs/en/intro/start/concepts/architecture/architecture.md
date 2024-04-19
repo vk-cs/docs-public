@@ -66,7 +66,7 @@ Cloud services are managed using the API. Users interact with the API through on
 
 ## Fault tolerance
 
-Physical fault tolerance is implemented by placing VK Cloud in two Tier III reliability level data centers in the Russian Federation. With this placement, it is guaranteed to maintain the SLA of data centers of more than 98% with a total [SLA](../support/sla/) of 99.95%.
+Physical fault tolerance is implemented by placing VK Cloud in two Tier III reliability level data centers in the Russian Federation. With this placement, it is guaranteed to maintain the SLA of data centers of more than 98% with a total [SLA](../../support/sla/) of 99.95%.
 
 Network fault tolerance is provided by communication of data centers with routes with a bandwidth of 200 GB/sec. Communication of each server with backbone providers goes through two independent channels, through two routers.
 
@@ -108,7 +108,7 @@ The infrastructure of availability zones MS1 and GZ1 of the Moscow VK Cloud regi
 
 VK Cloud security is ensured by constant monitoring of VK Cloud services, conducting external audits. VK Cloud participates in the security audit program [HackerOne](https://www.hackerone.com). Infrastructure [certified](https://cloud.vk.com/cloud-platform/certificates/) FSTEC of Russia for working with personal data.
 
-For more information, see the section [Platform security](../../it-security/).
+For more information, see the section [Platform security](/en/intro/it-security/).
 
 ## Migration to VK Cloud
 

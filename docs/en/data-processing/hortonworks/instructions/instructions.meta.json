@@ -1,10 +1,10 @@
 {
-  "title": "Step-by-step instructions",
+  "title": "Service management",
   "pageDescription": "Basic operations for a big data cluster in VK Cloud, as well as information on managing its components.",
   "shortDescription": "How to create a big data cluster, manage components in it, scale the cluster",
-  "metaTitle": "Step-by-step instructions",
+  "metaTitle": "Service management",
   "metaDescription": "VK Cloud: basic operations for a big data cluster, as well as information on managing its components",
-  "sectionTitle": "Step-by-step instructions",
+  "sectionTitle": "Service management",
   "markdown": "Basic operations for a big data cluster, as well as information on managing its components.",
   "icon": "",
 
