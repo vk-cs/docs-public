@@ -1,10 +1,10 @@
 {
-  "title": "Use cases",
+  "title": "How-to guides",
   "pageDescription": "Here are the most popular scenarios for using Spark in Kubernetes.",
   "shortDescription": "The most popular tasks that Spark helps to solve in Kubernetes",
-  "metaTitle": "Use cases",
+  "metaTitle": "How-to guides",
   "metaDescription": "The most popular tasks that Spark helps to solve in Kubernetes",
-  "sectionTitle": "Use cases",
+  "sectionTitle": "How-to guides",
   "markdown": "Here are the most popular scenarios for using Spark in Kubernetes.",
   "icon": "",
 

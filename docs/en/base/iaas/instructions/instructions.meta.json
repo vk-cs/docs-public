@@ -1,10 +1,10 @@
 {
-  "title": "Step-by-step instructions",
+  "title": "Service management",
   "pageDescription": "Standard operations for managing VK Cloud VMs and their resources.",
   "shortDescription": "Creating and managing virtual machines: connecting, working with disks and images, backups. Using file storage",
-  "metaTitle": "Step-by-step instructions",
+  "metaTitle": "Service management",
   "metaDescription": "Creating Linux and Windows virtual machines. Connecting to the VM via SSH and RDP. Resource and state management of virtual machines. Working with disks and images. Creating backups. Using file storage",
-  "sectionTitle": "Step-by-step instructions",
+  "sectionTitle": "Service management",
   "markdown": "Standard operations for managing VK Cloud VMs and their resources.",
 
   "weight": 2,

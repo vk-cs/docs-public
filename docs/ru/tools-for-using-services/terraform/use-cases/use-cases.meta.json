@@ -1,10 +1,10 @@
 {
-  "title": "Сценарии использования",
+  "title": "Практические руководства",
   "pageDescription": "Использование Terraform в VK Cloud.",
   "shortDescription": "Примеры использования Terraform в VK Cloud",
-  "metaTitle": "Сценарии использования",
+  "metaTitle": "Практические руководства",
   "metaDescription": "Использование Terraform в VK Cloud.",
-  "sectionTitle": "Сценарии использования",
+  "sectionTitle": "Практические руководства",
   "markdown": "Использование Terraform в VK Cloud.",
   "icon": "",
   "weight": 1,

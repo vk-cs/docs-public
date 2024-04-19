@@ -24,9 +24,9 @@ REST API [публичного DNS](/ru/networks/dns/publicdns) поддержи
 Пример запроса:
 
 ```curl
-curl --location 'https://mcs.mail.ru/public-dns/v2/dns' \
---header 'X-Auth-Token: gAAAAABlLjgzyxXXXX' \
---header 'Content-Type: application/json'
+curl --location "https://mcs.mail.ru/public-dns/v2/dns" \
+--header "X-Auth-Token: gAAAAABlLjgzyxXXXX" \
+--header "Content-Type: application/json"
 ```
 </details>
 

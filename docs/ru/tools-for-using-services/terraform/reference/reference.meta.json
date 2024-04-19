@@ -1,11 +1,11 @@
 {
-  "title": "Справка",
-  "pageDescription": "",
+  "title": "Справочник Terraform",
+  "pageDescription": "Основные команды Terraform и примеры манифестов.",
   "shortDescription": "Основные команды Terraform и примеры манифестов",
-  "metaTitle": "Быстрый старт",
-  "metaDescription": "",
-  "sectionTitle": "Быстрый старт",
-  "markdown": "",
+  "metaTitle": "Справочник Terraform",
+  "metaDescription": "Основные команды Terraform и примеры манифестов",
+  "sectionTitle": "Справочник Terraform",
+  "markdown": "Основные команды Terraform и примеры манифестов",
   "icon": "",
   "weight": 4,
 
