@@ -5,7 +5,7 @@
   "metaTitle": "MLflow",
   "metaDescription": "MLflow это сервис по созданию и работе с инстансами MLflow",
   "sectionTitle": "MLflow",
-  "markdown": "Этот раздел описывает принципы работы с сервисом MLflow, созданию и работе с инстансами MLflow.",
+  "markdown": "Этот раздел описывает принципы работы с сервисом MLflow, создание и работу с инстансами MLflow.",
   "icon": "",
   "weight": 2,
   "relativeSections": [

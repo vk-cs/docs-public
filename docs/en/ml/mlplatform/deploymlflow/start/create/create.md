@@ -1,10 +1,10 @@
-The MLflow Deploy service provides the ability to automatically package ML models into Docker containers and make them available via REST API to solve real-time maintenance problems.
+The MLflow Deploy service provides the ability to automatically package ML models into Docker containers and make them available via REST API to solve real-time service tasks.
 
-The service is integrated with Cloud ML Platform components: JupyterHub and MLflow.
+The service is integrated with the Cloud ML Platform components: JupyterHub and MLflow.
 
-Creating MLflow Deploy instances is available both through your VK Cloud personal account and through [MLflow Client](../../manage/manage-mlflow-client/).
+Creating MLflow Deploy instances is available both through your VK Cloud personal account and via [MLflow Client](../../manage/manage-mlflow-client/).
 
-## Before starting
+## Before you start
 
 1. [Create](../../../jupyterhub/start/create/) a JupyterHub instance.
 2. [Create](../../../mlflow/start/create/) an MLflow instance.
@@ -44,18 +44,18 @@ Creating MLflow Deploy instances is available both through your VK Cloud persona
 
 ## Creating an instance
 
-1. [Open](https://msk.cloud.vk.com/app/) your VK Cloud personal account.
-2. Open the **ML Platform** section.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud personal account.
+2. Go to **ML Platform**.
 3. In the **MLflow Deploy Instance** block, click the **Create Instance** button.
 4. Set up the instance configuration:
 
-   - **Instance name**: a name of the instance. Also sets `hostname` in OS.
-   - **Virtual machine category**: a category of preinstalled VM configurations. More details in [review of the Cloud Servers service](/en/base/iaas/concepts/vm-concept#flavors).
-   - **Virtual machine type**: pre-installed VM configuration (CPU and RAM).
-   - **Availability zone**: a data center where the instance will be launched.
+   - **Instance name**: a name of the instance. It also sets the OS `hostname` parameter.
+   - **Virtual machine category**: a category of the preset VM configurations. More details in the [review of the Cloud Servers service](/en/base/iaas/concepts/vm-concept#flavors).
+   - **Virtual machine type**: a preset VM configuration (CPU and RAM).
+   - **Availability zone**: the data center where the instance will be launched.
    - **Disk size**: the VM disk size in GB.
-   - **Disk type**: a type of instance disk to be created.
-   - **MLflow instance**: select the MLflow instance which will be connected with the MLflow Deploy instance.
+   - **Disk type**: the VM disk type.
+   - **MLflow instance**: the MLflow instance which will be connected with the MLflow Deploy instance.
 
 5. Click the **Next Step** button.
 6. Set up the network:
