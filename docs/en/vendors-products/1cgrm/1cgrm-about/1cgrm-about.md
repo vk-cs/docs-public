@@ -19,7 +19,7 @@ Working with a ready-made 1C application has advantages over deploying your own 
 - **Fast access.** The work is carried out through a web browser, where the application is accessed from any computer connected to the Internet.
 - **Free trial period** . The ability to test the service and evaluate its functionality.
 - **Flexible payment.** Payment on a monthly basis, according to the rental model, allows you to significantly save the budget, where all costs are transparent and can be regulated.
-- **Improvements on demand.** There is no need to hire IT specialists to configure and maintain the application. You can get advice or order revision by [contacting the timing support service](mailto:support.1c.grm@mcs.mail.ru) .
+- **Improvements on demand.** There is no need to hire IT specialists to configure and maintain the application. You can get advice or order a revision by sending an email to [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru).
 - **Security** . The application infrastructure is based on the VK Cloud fault-tolerant services platform, where virtual machines provide reliable storage and processing of 1C applications.
 
 ## Who benefits from 1C: timing
@@ -44,7 +44,7 @@ Depending on the number of required licenses, the application can be created in 
 
 **Note**
 
-If the total amount of data is exceeded, you must [contact the technical support of 1C timing](mailto:support.1c.grm@mcs.mail.ru) to increase the volume. The operation is charged separately and regulated by the 1C Firm's pricing policy. The current rates for additional space can be checked with technical support.
+If the total amount of data is exceeded, send an email to [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru) to increase the volume. The operation is charged separately and regulated by the 1C Firm's pricing policy. The current rates for additional space can be checked with technical support.
 
 ## Limitations
 
@@ -57,7 +57,7 @@ For 1C: GRM applications, there are physical limitations of database tables, the
 The 1C GRM service can back up the application and its data, providing the ability to restore configuration and data upon request:
 
 - Automatic backups are performed at night with a frequency of 1 day on weekdays.
-- Manual backup is performed upon [request to the technical support of 1C timing](mailto:support.1c.grm@mcs.mail.ru) .
+- Manual backup is performed upon sending an email to [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru).
 
 The maximum storage depth for backups is 7 units, provided that the total database size does not exceed the quota for storing backups.
 
@@ -73,7 +73,8 @@ The 1C: GRM service is supported by technical experts under an agreement with a 
 - Recommendations for optimal interaction with the service
 - Updating application versions and configurations
 - Application customization for individual needs
+- Disabling subscription
 
-To contact technical support, you should use the feedback form at [support](/en/contacts).
+To contact technical support, send an email to [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru).
 
 Support is provided on weekdays, from 09:00 to 18:00 Moscow time (UTC + 3). The first response time for requests for application errors is 2 hours, for other requests - 1 business day.
