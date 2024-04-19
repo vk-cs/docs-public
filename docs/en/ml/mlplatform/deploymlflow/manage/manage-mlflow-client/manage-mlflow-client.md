@@ -1,4 +1,4 @@
-Manage MLflow Deploy instances using MLflow Deployment Client, a pre-installed python library in JupyterHub from VK Cloud.
+Manage MLflow Deploy instances using MLflow Deployment Client, a python library from VK Cloud pre-installed in JupyterHub.
 
 ## Before working
 
@@ -6,7 +6,7 @@ Manage MLflow Deploy instances using MLflow Deployment Client, a pre-installed p
 2. [Create](../../../mlflow/start/create/) an MLflow instance.
 3. Reboot the virtual machine from JupyterHub:
     1. Open the **Cloud Servers → Virtual machines** section.
-    2. In the **ML Platform Instances** subsection, find the JupyterHub you need instance.
+    2. In the **ML Platform Instances** block, find the JupyterHub instance you need.
     3. Open the menu and select **Restart**.
 
 <info>
@@ -48,11 +48,11 @@ For this example use the very first model:
 
 ```python
 model_source_uri = cli.search_registered_models()[0].latest_versions[0].source
-print("Имя модели: ", cli.search_registered_models()[0].latest_versions[0].name)
-print("URI модели: ", model_source_uri)
+print("Model name: ", cli.search_registered_models()[0].latest_versions[0].name)
+print("Model URI: ", model_source_uri)
 ```
 
-Create a Client from Deployments of the MLflow module to work in Cloud ML Platform:
+Create a Client from the MLflow Deployments module to work in Cloud ML Platform:
 
 ```python
 from mlflow.deployments import get_deploy_client
@@ -61,7 +61,7 @@ client = get_deploy_client('vk-cloud-mlplatform')
 
 ### Creating an endpoint
 
-`endpoint` in VK Cloud MLflow Deploy terminology is a virtual machine deployment server.
+`endpoint` in VK Cloud MLflow Deploy terminology is a virtual machine configured as a deployment server.
 
 ```python
 deploy_server_name = "deploy_server_one"
@@ -74,9 +74,9 @@ The full list of parameters is listed above. You can also create a deployment se
 
 The `perfomance` parameter in the `create_enpoint` method is responsible for the configuration of the virtual machine. The following values are available:
 
-- `low - standard 4-4` (4 cores, 4 gigabytes of RAM),
-- `mid - advanced 8-8` (8 cores, 8 GB RAM),
-- `high - advanced 16-16`
+- `low - standard 4-4` (4 cores, 4 GB RAM)
+- `mid - advanced 8-8` (8 cores, 8 GB RAM)
+- `high - advanced 16-16` (16 cores, 16 GB RAM)
 
 ### Getting a list and status of servers
 
@@ -188,7 +188,7 @@ client.delete_endpoint(deploy_server_name)
 from mlflow.deployments import get_deploy_client
 client = get_deploy_client('vk-cloud-mlpatform')
 
-# endpoint — the VM deployment server
+# endpoint — the VM configured as deployment server
 client.create_endpoint(name, performance="low", disk_size=50, disk_type="ceph-ssd", av_zone=None)
 client.list_endpoints()
 client.get_endpoint(server_name)
