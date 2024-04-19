@@ -5,7 +5,7 @@
   "metaTitle": "Cloud ML Platform",
   "metaDescription": "Cloud ML Platform это сервис по созданию и работе с инстансами JupyterHub",
   "sectionTitle": "Cloud ML Platform",
-  "markdown": "Этот раздел описывает принципы работы с сервисом Cloud ML Platform, созданию и работе с инстансами JupyterHub и MLflow.",
+  "markdown": "Этот раздел описывает принципы работы с сервисом Cloud ML Platform, создание и работу с инстансами JupyterHub и MLflow.",
   "icon": "",
   "weight": 1,
   "uuid": "ab24a318-2169-471e-9f86-b5e68361cfdb"
