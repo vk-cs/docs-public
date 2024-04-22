@@ -48,7 +48,7 @@ For 1C applications, the maximum value of possible remote access licenses is pro
 
 Licenses are assigned automatically when a user is created in the application.
 
-The number of licenses can be changed in the application control panel up or down, but only within the selected mode. If there is a need to increase licenses over 5 units when using the file mode, you must [contact the technical support of 1C GRM](mailto:support.1c.grm@mcs.mail.ru) with a request to change the type.
+You can change the number of licenses in the application control panel: both up and down, but only within the selected mode. If you need to increase the number of licenses over 5 when using the file mode, send an email to [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru) with a request to change the type.
 
 **Note**
 
@@ -79,3 +79,7 @@ Editing is possible only for the number of licenses that provide remote access t
 Remote access to the application for its administration is carried out using user accounts created in the application. Each user created consumes one license assigned to the application in the VK Cloud panel.
 
 The initial connection for setting up and administering the application can be performed using one license assigned to the User when creating the 1C: Timing application. Connection data is sent to the User's mailing address specified during registration.
+
+## Disabling subscription
+
+To disable your subscription to 1C: GRM, send an email to [support.1c.grm@mcs.mail.ru](mailto:support.1c.grm@mcs.mail.ru).

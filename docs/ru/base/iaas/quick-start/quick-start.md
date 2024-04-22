@@ -78,11 +78,11 @@ ssh -i ubuntu-key.pem ubuntu@213.219.212.130
 
 При первом подключении к ВМ появится запрос подтверждения подключения к неизвестному ранее хосту:
 
-```shell
+```txt
 The authenticity of host '213.219.212.130 (213.219.212.130)' can't be established.
 ECDSA key fingerprint is SHA256:aYZIWs9N6KRtfFOuic6eoWcluhSp6+jha/DSBgd9McI.
 Are you sure you want to continue connecting (yes/no)?
- ```
+```
 
 Введите в терминале `yes` и нажмите _Enter_.
 
@@ -105,7 +105,7 @@ ssh -i ubuntu-key.pem ubuntu@213.219.212.130
 
 При первом подключении к ВМ появится запрос подтверждения подключения к неизвестному ранее хосту:
 
-```shell
+```txt
 The authenticity of host '213.219.212.130 (213.219.212.130)' can't be established.
 ECDSA key fingerprint is SHA256:aYZIWs9N6KRtfFOuic6eoWcluhSp6+jha/DSBgd9McI.
 Are you sure you want to continue connecting (yes/no)?
