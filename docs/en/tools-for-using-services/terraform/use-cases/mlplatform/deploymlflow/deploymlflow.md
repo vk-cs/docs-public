@@ -1,12 +1,12 @@
-This article provides examples of creating a deploy-instance MLflow using Terraform.
+This article provides examples of creating an MLflow deploy-instance using Terraform.
 
 When creating the instance the following was used:
 
-- resource [vkcs_mlplatform_mlflow_deploy](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_mlflow_deploy.md);
-- resource [vkcs_mlplatform_mlflow](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_mlflow.md);
-- resource [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md);
-- data source [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md);
-- data source [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md).
+- resource [vkcs_mlplatform_mlflow_deploy](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_mlflow_deploy.md)
+- resource [vkcs_mlplatform_mlflow](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_mlflow.md)
+- resource [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md)
+- data source [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md)
+- data source [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md)
 
 ## Before creating an instance
 
@@ -22,9 +22,9 @@ When creating the instance the following was used:
 
 In the example, the instance is created with the following configuration:
 
-- default region, availability zone `GZ1`
-- disk type `SSD`, size — 50 GB
-- data disk type `SSD`, size — 60 GB
+- default region, availability zone — `GZ1`
+- boot disk type — `SSD`, size — 50 GB
+- data disk type — `SSD`, size — 60 GB
 
 Create a Terraform configuration file `main.tf` with the content:
 

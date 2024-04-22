@@ -2,10 +2,10 @@ This article provides examples of creating a JupyterHub instance using Terraform
 
 When creating the instance the following was used:
 
-- resource [vkcs_mlplatform_jupyterhub](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_jupyterhub.md);
-- resource [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md);
-- data source [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md);
-- data source [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md).
+- resource [vkcs_mlplatform_jupyterhub](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_jupyterhub.md)
+- resource [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md)
+- data source [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md)
+- data source [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md)
 
 ## Before creating an instance
 
@@ -21,10 +21,10 @@ When creating the instance the following was used:
 
 In the example, the instance is created with the following configuration:
 
-- default region, availability zone `GZ1`
-- disk type `SSD`
+- default region, availability zone — `GZ1`
+- boot disk type — `SSD`
 - username — `admin`, password — `Password!`
-- data disk type `SSD`, size — 60 and 70 GB
+- data disk type — `SSD`, sizes — 60 and 70 GB
 
 Create a Terraform configuration file `main.tf` with the content:
 

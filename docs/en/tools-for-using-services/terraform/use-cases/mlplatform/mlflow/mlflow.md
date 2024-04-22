@@ -2,11 +2,11 @@ This article provides examples of creating an MLflow instance using Terraform.
 
 When creating the instance the following was used:
 
-- resource [vkcs_mlplatform_mlflow](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_mlflow.md);
-- resource [vkcs_mlplatform_jupyterhub](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_jupyterhub.md);
-- resource [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md);
-- data source [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md);
-- data source [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md).
+- resource [vkcs_mlplatform_mlflow](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_mlflow.md)
+- resource [vkcs_mlplatform_jupyterhub](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/mlplatform_jupyterhub.md)
+- resource [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/networking_network.md)
+- data source [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md)
+- data source [vkcs_networking_network](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/networking_network.md)
 
 ## Before creating an instance
 
@@ -22,9 +22,9 @@ When creating the instance the following was used:
 
 In the example, the instance is created with the following configuration:
 
-- default region, availability zone `GZ1`
-- disk type `SSD`, size — 50 GB
-- data disk type `SSD`, size — 60 GB
+- default region, availability zone — `GZ1`
+- disk type — `SSD`, size — 50 GB
+- data disk type — `SSD`, size — 60 GB
 
 Create a Terraform configuration file `main.tf` with the content:
 
@@ -75,7 +75,7 @@ Here:
 
   </details>
 
-- `demo_mode` — use `true` to store all data on the instance VM, use `false` to connect an S3 bucket with a DBaaS Postgres database for storing data.
+- `demo_mode` — use `true` to store all data on the instance VM, use `false` to connect an S3 bucket with a Postgres database for storing data.
 
 - `network_id` — an ID of the network where the instance will be hosted. The instance can be hosted on an existing network or a new one. You can specify the ID in the manifest or get it from the data source or resource.
 
