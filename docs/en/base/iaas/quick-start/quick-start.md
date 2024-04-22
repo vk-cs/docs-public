@@ -78,11 +78,11 @@ The external IP address of the VM can be viewed in VK Cloud [personal account](h
 
 The first time you connect to the VM, you will be asked to confirm the connection to a previously unknown host:
 
-```shell
+```txt
 The authenticity of host '213.219.212.130 (213.219.212.130)' can't be established.
 ECDSA key fingerprint is SHA256:aYZIWs9N6KRtfFOuic6eoWcluhSp6+jha/DSBgd9McI.
 Are you sure you want to continue connecting (yes/no)?
- ```
+```
 
 Type `yes` in the terminal and press _Enter_.
 
@@ -105,7 +105,7 @@ The external IP address of the VM can be viewed in VK Cloud [personal account](h
 
 The first time you connect to the VM, you will be asked to confirm the connection to a previously unknown host:
 
-```shell
+```txt
 The authenticity of host '213.219.212.130 (213.219.212.130)' can't be established.
 ECDSA key fingerprint is SHA256:aYZIWs9N6KRtfFOuic6eoWcluhSp6+jha/DSBgd9McI.
 Are you sure you want to continue connecting (yes/no)?
