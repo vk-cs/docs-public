@@ -26,7 +26,7 @@ In the example, the instance is created with the following configuration:
 - boot disk type — `SSD`, size — 50 GB
 - data disk type — `SSD`, size — 60 GB
 
-Create a Terraform configuration file `main.tf` with the content:
+Create a Terraform configuration file named `main.tf` with the content:
 
 ```hcl
 resource "vkcs_mlplatform_mlflow_deploy" "deploy" {
@@ -70,7 +70,7 @@ Here:
   <details>
     <summary>Examples</summary>
 
-  - `mlflow_instance_id = vkcs_mlplatform_mlflow.mlflow.id`: a new MLflow instance will be created. The ID will be taken after creating the resource `vkcs_mlplatform_mlflow`. The resource will be generated further.
+  - `mlflow_instance_id = vkcs_mlplatform_mlflow.mlflow.id`: a new MLflow instance will be created. The ID will be taken after creating the `vkcs_mlplatform_mlflow` resource. The resource will be generated further.
   - `mlflow_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: the ID of an existing instance can be taken from MLflow instance details in your [VK Cloud personal account](https://cloud.vk.com/app/en).
 
   </details>
@@ -197,7 +197,7 @@ Verify that the MLflow Deploy instance was successfully created:
 
 ## Delete unused resources
 
-If you no longer need Terraform resources, delete them:
+If you no longer need the Terraform resources, delete them:
 
 1. Open the directory that contains the Terraform configuration files.
 1. Run the command:
