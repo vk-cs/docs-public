@@ -26,7 +26,7 @@ In the example, the instance is created with the following configuration:
 - disk type — `SSD`, size — 50 GB
 - data disk type — `SSD`, size — 60 GB
 
-Create a Terraform configuration file `main.tf` with the content:
+Create a Terraform configuration file named `main.tf` with the content:
 
 ```hcl
 resource "vkcs_mlplatform_mlflow" "mlflow" {
@@ -90,7 +90,7 @@ Here:
 
 ## 2. (Optional) Create a file describing the data source for the VM type
 
-Create a Terraform configuration file `flavor.tf` to describe the VM type:
+Create a Terraform configuration file named `flavor.tf` to describe the VM type:
 
 ```hcl
 data "vkcs_compute_flavor" "basic" {
@@ -102,11 +102,11 @@ The specified VM type will be used to create an MLflow instance in your Terrafor
 
 ## 3. (Optional) Create a file describing the synchronized JupyterHub instance
 
-Create a Terraform configuration file `jh_instance.tf` to describe [the JupyterHub instance](../jupyterhub/).
+Create a Terraform configuration file named `jh_instance.tf` to describe [the JupyterHub instance](../jupyterhub/).
 
 ## 4. (Optional) Create a file describing the network infrastructure for the instance
 
-Create a Terraform configuration file `network.tf` with the network infrastructure description:
+Create a Terraform configuration file named `network.tf` with the network infrastructure description:
 
 <tabs>
 <tablist>
