@@ -15,7 +15,7 @@
                     "link": "docs/ru/ml/mlplatform/jupyterhub"
                 },
                 {
-                    "link": "docs/ru/ml/mlplatform/mlflowdeploy"
+                    "link": "docs/ru/ml/mlplatform/deploymlflow"
                 }
             ]
         }
