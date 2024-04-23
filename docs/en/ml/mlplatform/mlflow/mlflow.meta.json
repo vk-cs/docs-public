@@ -8,6 +8,9 @@
   "markdown": "This section describes how to work with the MLflow service, create and work with MLflow instances.",
   "icon": "",
   "weight": 1,
-
+  "relativeSections": [
+    {
+    "partialPath": "en/tools-for-using-services/terraform/use-cases/mlplatform/mlflow"
+    }],
   "uuid": "18fe60a7-f606-4dec-92ff-2fea19521c86"
 }
