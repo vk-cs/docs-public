@@ -193,7 +193,7 @@ Verify that the JupyterHub instance was successfully created:
 
 ## Delete unused resources
 
-If you no longer need Terraform resources, delete them:
+If you no longer need the Terraform resources, delete them:
 
 1. Open the directory that contains the Terraform configuration files.
 1. Run the command:

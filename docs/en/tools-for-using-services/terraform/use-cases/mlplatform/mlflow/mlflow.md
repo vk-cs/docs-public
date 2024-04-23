@@ -70,7 +70,7 @@ Here:
   <details>
     <summary>Examples</summary>
 
-  - `jh_instance_id = vkcs_mlplatform_jupyterhub.jupyterhub.id`: a new JupyterHub instance will be created. The ID will be taken after creating the resource `vkcs_mlplatform_jupyterhub`. The resource will be generated further.
+  - `jh_instance_id = vkcs_mlplatform_jupyterhub.jupyterhub.id`: a new JupyterHub instance will be created. The ID will be taken after creating the `vkcs_mlplatform_jupyterhub` resource. The resource will be generated further.
   - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: the ID of an existing instance can be taken from JupyterHub instance details in your [VK Cloud personal account](https://cloud.vk.com/app/en).
 
   </details>
@@ -198,7 +198,7 @@ Verify that the MLflow instance was successfully created:
 
 ## Delete unused resources
 
-If you no longer need Terraform resources, delete them:
+If you no longer need the Terraform resources, delete them:
 
 1. Open the directory that contains the Terraform configuration files.
 1. Run the command:
