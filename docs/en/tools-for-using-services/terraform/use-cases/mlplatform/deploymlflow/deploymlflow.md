@@ -88,7 +88,7 @@ Here:
 
 ## 2. (Optional) Create a file describing the data source for the VM type
 
-Create a Terraform configuration file `flavor.tf` to describe the VM type:
+Create a Terraform configuration file named `flavor.tf` to describe the VM type:
 
 ```hcl
 data "vkcs_compute_flavor" "basic" {
@@ -100,11 +100,11 @@ The specified VM type will be used to create an MLflow Deploy instance in your T
 
 ## 3. (Optional) Create a file describing the synchronized MLflow instance
 
-Create a Terraform configuration file `mlflow_instance.tf` to describe [the MLflow instance](../jupyterhub/).
+Create a Terraform configuration file named `mlflow_instance.tf` to describe [the MLflow instance](../jupyterhub/).
 
 ## 4. (Optional) Create a file describing the network infrastructure for the instance
 
-Create a Terraform configuration file `network.tf` with the network infrastructure description:
+Create a Terraform configuration file named `network.tf` with the network infrastructure description:
 
 <tabs>
 <tablist>
