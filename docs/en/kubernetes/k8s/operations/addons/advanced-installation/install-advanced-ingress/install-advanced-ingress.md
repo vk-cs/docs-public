@@ -287,6 +287,18 @@ service:
 
 After editing the addon code [continue installing the addon](#installing_the_addon).
 
+### Prohibition of deleting an Ingress controller node by the Autoscaler module
+
+The Autoscaler module automatically scales the cluster: it adds nodes when the load increases, and removes when it decreases. To prevent a module from deleting the node on which the add-on is running, you need to specify a ban on deletion in the pod annotation:
+
+```yaml
+controller:
+  podAnnotations:
+    cluster-autoscaler.kubernetes.io/safe-to-evict: "false"
+```
+
+After editing the addon code [continue installing the addon](#installing_the_addon).
+
 ## Getting the IP address of the load balancer
 
 <info>
