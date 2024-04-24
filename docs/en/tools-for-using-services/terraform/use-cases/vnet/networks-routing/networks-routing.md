@@ -11,7 +11,7 @@ The infrastructure of the example:
 
   These machines are used to [test the routing settings between networks](#5_check_the_performance_of_the_example): a successful ping between them will indicate the correct configuration.
 
-![Example Infrastructure Scheme](assets/infrastructure-scheme.svg)
+![Example Infrastructure Scheme](assets/infrastructure-scheme.png)
 
 ## Before you start
 
