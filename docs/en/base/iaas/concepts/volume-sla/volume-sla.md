@@ -31,7 +31,13 @@ Disk performance depends on its volume. In some cases, to increase the speed of 
 
 ## HDD
 
-Detailed performance characteristics for network HDDs of different sizes:
+Below are detailed performance characteristics for network HDD of different sizes.
+
+<info>
+
+The block size below is the amount of data that is read from or written to disk in one operation.
+
+</info>
 
 <details open>
 <summary><b>HDD 10 GB</b></summary>
@@ -123,7 +129,13 @@ Detailed performance characteristics for network HDDs of different sizes:
 
 ## SSD
 
-Detailed performance characteristics for network SSD of different sizes:
+Below are detailed performance characteristics for network SSD of different sizes.
+
+<info>
+
+The block size below is the amount of data that is read from or written to disk in one operation.
+
+</info>
 
 <details open>
 <summary><b>SSD 10 GB</b></summary>
@@ -215,7 +227,13 @@ Detailed performance characteristics for network SSD of different sizes:
 
 ## High-IOPS SSD
 
-Detailed performance characteristics for network High-IOPS SSD of different sizes:
+Below are detailed performance characteristics for network High-IOPS SSD of different sizes.
+
+<info>
+
+The block size below is the amount of data that is read from or written to disk in one operation.
+
+</info>
 
 <details open>
 <summary><b>High-IOPS SSD 10 GB</b></summary>
@@ -307,7 +325,13 @@ Detailed performance characteristics for network High-IOPS SSD of different size
 
 ## Low Latency NVME
 
-Detailed performance characteristics for local Low Latency NVME of different volumes:
+Below are detailed performance characteristics for network Low Latency NVME of different sizes.
+
+<info>
+
+The block size below is the amount of data that is read from or written to disk in one operation.
+
+</info>
 
 <details open>
 <summary><b>LL NVME 10 GB</b></summary>
