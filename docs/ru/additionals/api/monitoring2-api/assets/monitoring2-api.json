@@ -1,0 +1,852 @@
+﻿{
+  "swagger": "2.0",
+  "info": {
+    "title": "Metrics API",
+    "description": "Спецификация API для чтения метрик Cloud Monitoring",
+    "version": "1.0.0"
+  },
+  "host": "mcs.mail.ru",
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "basePath": "/v2/",
+  "securityDefinitions": {
+    "keystone": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "X-Auth-Token"
+    }
+  },
+  "security": [
+    {
+      "keystone": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "namespaces",
+      "description": "Пространства имен"
+    },
+    {
+      "name": "instant",
+      "description": "Заданный момент"
+    },
+    {
+      "name": "rangequery",
+      "description": "Заданный диапазон времени"
+    },
+    {
+      "name": "series",
+      "description": "Поиск метрик по меткам"
+    },
+    {
+      "name": "labels",
+      "description": "Имена меток"
+    },
+    {
+      "name": "labelvalues",
+      "description": "Значения метки"
+    }
+  ],
+  "paths": {
+    "/namespaces": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "namespaces"
+        ],
+        "summary": "Получить список разрешенных пространств имен",
+        "description": "Получить список [пространств имен](https://cloud.vk.com/docs/ru/manage/monitoring/concepts/mon-architecture/#namespaces) (namespaces), которые можно использовать в запросах",
+        "operationId": "allowedNamespaces",
+        "responses": {
+          "200": {
+            "description": "Список разрешенных пространств имен",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "default",
+                "mcs/dbaas",
+                "mcs/vm",
+                "mcs/k8s"
+              ]
+            }
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "500": {
+            "$ref": "#/responses/500"
+          }
+        }
+      }
+    },
+    "/{project_id}/query": {
+      "get": {
+        "tags": [
+          "instant"
+        ],
+        "summary": "Получить метрики в момент времени (Instant query)",
+        "description": "Выполнить запрос значений метрик для заданного момента времени",
+        "operationId": "InstantQuery",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/getInstantQueryResponse"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "403": {
+            "$ref": "#/responses/403"
+          },
+          "500": {
+            "$ref": "#/responses/500"
+          },
+          "502": {
+            "$ref": "#/responses/502"
+          },
+          "503": {
+            "$ref": "#/responses/503"
+          }
+        },
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Идентификатор проекта (PID) в Openstack",
+            "example": "XXXXXXd4ef0547e5b222f44333XXXXXX"
+          },
+          {
+            "name": "namespace",
+            "in": "query",
+            "type": "string",
+            "default": "default",
+            "description": "Пространство имен сервиса VK Cloud",
+            "example": "mcs/dbaas"
+          },
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Выражение запроса на языке [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/)",
+            "example": "cpu_usage_user{vm_uuid=\"8c12b66b-XXXX-f178f04baeaa\"}"
+          },
+          {
+            "name": "time",
+            "in": "query",
+            "type": "string",
+            "description": "Момент времени, для которого запрашиваются значения метрик. Формат — RFC3339 или Unix timestamp. Если параметр не указан, используется текущий момент времени сервера",
+            "example": "2024-02-01T20:10:51.781Z"
+          },
+          {
+            "name": "step",
+            "in": "query",
+            "type": "string",
+            "default": "5m",
+            "description": "Диапазон времени перед моментом time, в котором будет проведен поиск значений метрик, если значения не будут найдены для момента time. Формат — [duration в языке PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/#time-durations)",
+            "example": "1m"
+          }
+        ]
+      }
+    },
+    "/{project_id}/query_range": {
+      "get": {
+        "tags": [
+          "rangequery"
+        ],
+        "summary": "Получить метрики в диапазоне времени (Range query)",
+        "description": "Выполнить запрос значений метрик в заданном диапазоне времени",
+        "operationId": "RangeQuery",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/getRangeQueryResponse"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "403": {
+            "$ref": "#/responses/403"
+          },
+          "500": {
+            "$ref": "#/responses/500"
+          },
+          "502": {
+            "$ref": "#/responses/502"
+          },
+          "503": {
+            "$ref": "#/responses/503"
+          }
+        },
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Идентификатор проекта (PID) в Openstack",
+            "example": "XXXXXXd4ef0547e5b222f44333XXXXXX"
+          },
+          {
+            "name": "namespace",
+            "in": "query",
+            "type": "string",
+            "default": "default",
+            "description": "Пространство имен сервиса VK Cloud",
+            "example": "mcs/dbaas"
+          },
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Выражение запроса на языке [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/)",
+            "example": "cpu_usage_user{vm_uuid=\"8c12b66b-XXXX-f178f04baeaa\"}"
+          },
+          {
+            "name": "start",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Начало диапазона времени, для которого запрашиваются значения метрик. Формат — RFC3339 или Unix timestamp",
+            "example": "2024-02-01T20:10:51.781Z"
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "Конец диапазона времени, для которого запрашиваются значения метрик. Формат — RFC3339 или Unix timestamp",
+            "example": "2024-02-01T20:20:51.781Z"
+          },
+          {
+            "name": "step",
+            "in": "query",
+            "type": "string",
+            "description": "Шаг, с которым необходимо получить значения метрик в заданном диапазоне времени. Формат — [duration в языке PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/#time-durations)",
+            "example": "10s"
+          },
+          {
+            "name": "timeout",
+            "in": "query",
+            "type": "string",
+            "description": "Предельная длительность выполнения запроса. Формат — [duration в языке PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/#time-durations)",
+            "example": "10m"
+          }
+        ]
+      }
+    },
+    "/{project_id}/series": {
+      "get": {
+        "tags": [
+          "series"
+        ],
+        "summary": "Получить список метрик по заданному фильтру (Series query)",
+        "description": "Выполнить запрос списка метрик, которые [соответствуют заданному фильтру](https://prometheus.io/docs/prometheus/latest/querying/api/#finding-series-by-label-matchers). Фильтр задается набором меток в виде пар имя/значение",
+        "operationId": "SeriesQuery",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/getSeriesQueryResponse"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "403": {
+            "$ref": "#/responses/403"
+          },
+          "500": {
+            "$ref": "#/responses/500"
+          },
+          "502": {
+            "$ref": "#/responses/502"
+          },
+          "503": {
+            "$ref": "#/responses/503"
+          }
+        },
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Идентификатор проекта (PID) в Openstack",
+            "example": "XXXXXXd4ef0547e5b222f44333XXXXXX"
+          },
+          {
+            "name": "namespace",
+            "in": "query",
+            "type": "string",
+            "default": "default",
+            "description": "Пространство имен сервиса VK Cloud",
+            "example": "mcs/dbaas"
+          },
+          {
+            "name": "match[]",
+            "in": "query",
+            "required": true,
+            "type": "array",
+            "collectionFormat": "multi",
+            "description": "Выражение для фильтра на языке [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/). В выражении должна быть задана хотя бы одна метка для поиска подходящих метрик",
+            "example": "{vm_uuid=\"8c12b66b-XXXX-f178f04baeaa\"}",
+            "items": {
+              "type": "string",
+              "description": "Метка в виде пары «имя-значение»",
+              "example": "method=\"POST\""
+            }
+          },
+          {
+            "name": "start",
+            "in": "query",
+            "type": "string",
+            "description": "Начало диапазона времени, в котором нужно провести поиск подходящих метрик. Формат — RFC3339 или Unix timestamp",
+            "example": "2024-02-01T20:10:51.781Z"
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "type": "string",
+            "description": "Конец диапазона времени, в котором нужно провести поиск подходящих метрик. Формат — RFC3339 или Unix timestamp",
+            "example": "2024-02-01T20:20:51.781Z"
+          }
+        ]
+      }
+    },
+    "/{project_id}/labels": {
+      "get": {
+        "tags": [
+          "labels"
+        ],
+        "summary": "Получить список имен меток",
+        "description": "Получить список имен меток. В качестве параметров могут быть указаны селекторы метрик и/или диапазон времени, из которых нужно читать имена меток",
+        "operationId": "Labels",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/getLabelsResponse"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "403": {
+            "$ref": "#/responses/403"
+          },
+          "500": {
+            "$ref": "#/responses/500"
+          },
+          "502": {
+            "$ref": "#/responses/502"
+          },
+          "503": {
+            "$ref": "#/responses/503"
+          }
+        },
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Идентификатор проекта (PID) в Openstack",
+            "example": "XXXXXXd4ef0547e5b222f44333XXXXXX"
+          },
+          {
+            "name": "namespace",
+            "in": "query",
+            "type": "string",
+            "default": "default",
+            "description": "Пространство имен сервиса VK Cloud",
+            "example": "mcs/dbaas"
+          },
+          {
+            "name": "match[]",
+            "in": "query",
+            "type": "array",
+            "collectionFormat": "multi",
+            "items": {
+              "type": "string"
+            },
+            "description": "Выражение для фильтра на языке [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/). Позволяет выбрать метрики, из которых будут считаны имена меток",
+            "example": "{vm_uuid=\"8c12b66b-XXXX-f178f04baeaa\"}"
+          },
+          {
+            "name": "start",
+            "in": "query",
+            "type": "string",
+            "description": "Начало диапазона времени, в котором нужно читать имена меток. Формат — RFC3339 или Unix timestamp",
+            "example": "2024-02-01T20:10:51.781Z"
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "type": "string",
+            "description": "Конец диапазона времени, в котором нужно читать имена меток. Формат — RFC3339 или Unix timestamp",
+            "example": "2024-02-01T20:20:51.781Z"
+          }
+        ]
+      }
+    },
+    "/{project_id}/label/{label_name}/values": {
+      "get": {
+        "tags": [
+          "labelvalues"
+        ],
+        "summary": "Получить значения метки с заданным именем",
+        "description": "Получить значения метки с заданным именем. В качестве параметров могут быть указаны селекторы метрик и/или диапазон времени, из которых нужно читать значения метки",
+        "operationId": "LabelValues",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Запрос выполнен успешно",
+            "schema": {
+              "$ref": "#/definitions/getLabelValuesResponse"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/400"
+          },
+          "401": {
+            "$ref": "#/responses/401"
+          },
+          "403": {
+            "$ref": "#/responses/403"
+          },
+          "500": {
+            "$ref": "#/responses/500"
+          },
+          "502": {
+            "$ref": "#/responses/502"
+          },
+          "503": {
+            "$ref": "#/responses/503"
+          }
+        },
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Идентификатор проекта (PID) в Openstack",
+            "example": "XXXXXXd4ef0547e5b222f44333XXXXXX"
+          },
+          {
+            "name": "label_name",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Имя метки, значения которой нужно получить",
+            "example": "instance"
+          },
+          {
+            "name": "namespace",
+            "in": "query",
+            "type": "string",
+            "default": "default",
+            "description": "Пространство имен сервиса VK Cloud",
+            "example": "mcs/dbaas"
+          },
+          {
+            "name": "match[]",
+            "in": "query",
+            "type": "array",
+            "collectionFormat": "multi",
+            "items": {
+              "type": "string"
+            },
+            "description": "Выражение для фильтра на языке [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/). Позволяет выбрать метрики, из которых будут считаны значения метки с заданным именем",
+            "example": "{vm_uuid=\"8c12b66b-XXXX-f178f04baeaa\"}"
+          },
+          {
+            "name": "start",
+            "in": "query",
+            "type": "string",
+            "description": "Начало диапазона времени, в котором нужно читать значения метки. Формат — RFC3339 или Unix timestamp",
+            "example": "2024-02-01T20:10:51.781Z"
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "type": "string",
+            "description": "Конец диапазона времени, в котором нужно читать значения метки. Формат — RFC3339 или Unix timestamp",
+            "example": "2024-02-01T20:20:51.781Z"
+          }
+        ]
+      }
+    }
+  },
+  "responses": {
+    "400": {
+      "description": "Отсутствуют или неверно заданы параметры запроса",
+      "schema": {
+        "$ref": "#/definitions/ErrorBadRequest"
+      }
+    },
+    "401": {
+      "description": "Ошибка аутентификации",
+      "schema": {
+        "$ref": "#/definitions/Error"
+      }
+    },
+    "403": {
+      "description": "Ошибка авторизации",
+      "schema": {
+        "$ref": "#/definitions/Error"
+      }
+    },
+    "500": {
+      "description": "Внутренняя ошибка сервера",
+      "schema": {
+        "$ref": "#/definitions/Error"
+      }
+    },
+    "502": {
+      "description": "Неверный шлюз (bad gateway)",
+      "schema": {
+        "$ref": "#/definitions/Error"
+      }
+    },
+    "503": {
+      "description": "Сервис недоступен",
+      "schema": {
+        "$ref": "#/definitions/Error"
+      }
+    }
+  },
+  "definitions": {
+    "Error": {
+      "type": "object",
+      "description": "Сообщение об ошибке",
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "Something bad happened"
+        }
+      }
+    },
+    "ErrorBadRequest": {
+      "type": "object",
+      "description": "Расширенное сообщение об ошибке",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "error"
+        },
+        "errorType": {
+          "type": "string",
+          "example": "400"
+        },
+        "error": {
+          "type": "string",
+          "example": "mapping error: namespace VM key not found in config"
+        }
+      }
+    },
+    "StatusResponse": {
+      "type": "object",
+      "description": "Статус работоспособности и версия сервиса",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "success"
+        },
+        "version": {
+          "type": "string",
+          "example": "1.0.0"
+        }
+      }
+    },
+    "resultType": {
+      "type": "string",
+      "description": "Тип результата выполнения запроса",
+      "example": "vector",
+      "enum": [
+        "matrix",
+        "vector",
+        "scalar",
+        "string"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "description": "Статус выполнения запроса",
+      "example": "success",
+      "enum": [
+        "success",
+        "error"
+      ]
+    },
+    "getInstantQueryResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/status"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "resultType": {
+              "$ref": "#/definitions/resultType"
+            },
+            "result": {
+              "type": "array",
+              "description": "Метрики и их значения",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "metric": {
+                    "type": "object"
+                  },
+                  "value": {
+                    "type": "array",
+                    "items": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "description": "Результат запроса метрик для заданного момента времени",
+      "example": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {
+                "__name__": "metric_query_test",
+                "test": "instant_query_test"
+              },
+              "value": [
+                1710496778,
+                "26"
+              ]
+            },
+            {
+              "metric": {
+                "__name__": "metric_query_test",
+                "test": "instant_query_test_2"
+              },
+              "value": [
+                1710496778,
+                "27"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "getRangeQueryResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/status"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "resultType": {
+              "$ref": "#/definitions/resultType"
+            },
+            "result": {
+              "type": "array",
+              "description": "Метрики и их значения",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "metric": {
+                    "type": "object"
+                  },
+                  "values": {
+                    "type": "array",
+                    "items": {
+                      "type": "array",
+                      "items": {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "description": "Результат запроса метрик для заданного диапазона времени",
+      "example": {
+        "status": "success",
+        "data": {
+          "resultType": "vector",
+          "result": [
+            {
+              "metric": {
+                "__name__": "metric_query_test",
+                "test": "range_query_test"
+              },
+              "values": [
+                [
+                  1710430800,
+                  "871"
+                ],
+                [
+                  1710430815,
+                  "871"
+                ],
+                [
+                  1710430830,
+                  "871"
+                ]
+              ]
+            },
+            {
+              "metric": {
+                "__name__": "metric_query_test",
+                "test": "range_query_test_2"
+              },
+              "values": [
+                [
+                  1710430800,
+                  "870"
+                ],
+                [
+                  1710430815,
+                  "870"
+                ],
+                [
+                  1710430830,
+                  "870"
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "getSeriesQueryResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/status"
+        },
+        "data": {
+          "type": "array",
+          "description": "Список метрик",
+          "items": {}
+        }
+      },
+      "description": "Результат поиска метрик по заданному набору меток",
+      "example": {
+        "status": "success",
+        "data": [
+          {
+            "__name__": "up",
+            "job": "prometheus",
+            "instance": "localhost:9090"
+          },
+          {
+            "__name__": "up",
+            "job": "node",
+            "instance": "localhost:9091"
+          },
+          {
+            "__name__": "process_start_time_seconds",
+            "job": "prometheus",
+            "instance": "localhost:9090"
+          }
+        ]
+      }
+    },
+    "getLabelsResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/status"
+        },
+        "data": {
+          "type": "array",
+          "description": "Список меток",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Результат запроса списка меток",
+      "example": {
+        "status": "success",
+        "data": [
+          "host",
+          "application",
+          "job",
+          "http_code"
+        ]
+      }
+    },
+    "getLabelValuesResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "#/definitions/status"
+        },
+        "data": {
+          "type": "array",
+          "description": "Список значений метки",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Результат запроса значений заданной метки",
+      "example": {
+        "status": "success",
+        "data": [
+          "postgresql",
+          "nginx",
+          "node"
+        ]
+      }
+    }
+  }
+}
