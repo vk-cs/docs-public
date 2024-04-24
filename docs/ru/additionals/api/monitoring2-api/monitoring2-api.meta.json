@@ -1,16 +1,17 @@
 {
-    "title": "Cloud Monitoring 2.0",
-    "pageDescription": "",
-    "shortDescription": "OpenAPI-спецификация сервиса Cloud Monitoring 2.0",
-    "metaTitle": "Cloud Monitoring 2.0",
-    "metaDescription": "",
-    "sectionTitle": "Cloud Monitoring 2.0",
-    "markdown": "",
-    "icon": "",
-    "weight": 16,
-    "build": {
-      "for": [
-        "dontbuild"
-      ]
-    }
+  "title": "Cloud Monitoring 2.0",
+  "pageDescription": "",
+  "shortDescription": "OpenAPI-спецификация сервиса Cloud Monitoring 2.0",
+  "metaTitle": "Cloud Monitoring 2.0",
+  "metaDescription": "",
+  "sectionTitle": "Cloud Monitoring 2.0",
+  "markdown": "",
+  "icon": "",
+  "weight": 16,
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  },
+  "uuid": "173c5989-2b7a-4675-b08d-d6c112a8670e"
 }
