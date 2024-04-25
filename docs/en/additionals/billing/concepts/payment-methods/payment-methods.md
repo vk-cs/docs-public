@@ -17,16 +17,13 @@ The list of available payment methods is displayed on the **Balance** page of th
 
   </warn>
 
-  Supported:
-
-  - MIR and UnionPay cards issued in any countries;
-  - VISA and Mastercard cards issued in Russia and Kazakhstan.
+  Bank cards issued in Russia with ruble currency are supported.
 
   For all cards except UnionPay, you can [set up auto-top-up](../../instructions/add-card#configure_auto_completion).
 
 - Electronic money.
 
-  Supported are SberPay, Qiwi, and YooMoney.
+  SberPay and YooMoney are supported.
 
 - Mobile payments from the phones of the main mobile operators.
 - Bank transfer.
