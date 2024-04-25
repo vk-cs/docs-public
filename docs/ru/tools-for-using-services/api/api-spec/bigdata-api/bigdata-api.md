@@ -25,8 +25,8 @@ API сервиса [Cloud Big Data](/ru/bigdata/hortonworks) позволяет 
 
 <info>
 
-Исходную спецификацию в формате JSON вы можете скачать по [ссылке](./assets/saharaapi-swagger.json "download").
+Исходную спецификацию в формате JSON вы можете скачать по [ссылке](assets/saharaapi-swagger.json "download").
 
 </info>
 
-![{swagger}](./assets/saharaapi-swagger.json)
+![{swagger}](assets/saharaapi-swagger.json)

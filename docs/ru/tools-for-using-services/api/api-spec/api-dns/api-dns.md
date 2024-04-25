@@ -32,8 +32,8 @@ curl --location "https://mcs.mail.ru/public-dns/v2/dns" \
 
 <info>
 
-Исходную спецификацию в формате JSON вы можете скачать по [ссылке](./assets/public-dns-api.json "download").
+Исходную спецификацию в формате JSON вы можете скачать по [ссылке](assets/public-dns-api.json "download").
 
 </info>
 
-![{swagger}](./assets/public-dns-api.json)
+![{swagger}](assets/public-dns-api.json)
