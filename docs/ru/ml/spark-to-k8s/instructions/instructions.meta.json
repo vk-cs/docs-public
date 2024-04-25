@@ -7,7 +7,11 @@
   "sectionTitle": "Управление сервисом",
   "markdown": "Стандартные операции по настройке и управлению кластерами в Cloud Spark.",
   "icon": "",
-
+  "relativeSections": [
+    {
+      "partialPath": "ru/tools-for-using-services/terraform/use-cases/spark/create",
+      "title": "Создание кластера Spark с помощью Terraform"
+    }],
   "weight": 2,
   "uuid": "7460177b-f8f3-41e3-a3c5-53cb0b7ec2bc"
 }
