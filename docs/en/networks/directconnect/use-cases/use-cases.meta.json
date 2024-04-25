@@ -1,11 +1,12 @@
 {
-    "title": "Use cases",
-    "pageDescription": "Here are the most popular scenarios for using the Cloud Direct Connect service.",
-    "shortDescription": "Scenarios for using the Cloud Direct Connect service",
-    "metaTitle": "Use cases",
-    "metaDescription": "",
-    "sectionTitle": "Use cases",
-    "markdown": "Here are the most popular scenarios for using the Cloud Direct Connect service.",
-    "icon": "",
-    "weight": 100
+  "title": "Use cases",
+  "pageDescription": "Here are the most popular scenarios for using the Cloud Direct Connect service.",
+  "shortDescription": "Scenarios for using the Cloud Direct Connect service",
+  "metaTitle": "Use cases",
+  "metaDescription": "",
+  "sectionTitle": "Use cases",
+  "markdown": "Here are the most popular scenarios for using the Cloud Direct Connect service.",
+  "icon": "",
+  "weight": 100,
+  "uuid": "9eba5e2c-f72c-4f31-ac23-7d6092d57aae"
 }
