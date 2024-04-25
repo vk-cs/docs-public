@@ -9,5 +9,10 @@
     "icon": "",
 
     "weight": 5,
+    "additionalUuids": [
+        "b858d657-62a3-400e-9633-abfb602f033e",
+        "78312346-80a6-442f-9b76-6d866dcc74fa",
+        "2ddfa1a4-ec01-4868-b0fd-4dcecdccc07f"
+    ],
     "uuid": "732e19ed-0900-4af0-b265-662acf16caf9"
 }
