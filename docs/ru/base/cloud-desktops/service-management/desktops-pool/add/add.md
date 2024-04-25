@@ -7,7 +7,7 @@
 ## Подготовительные шаги
 
 1. Убедитесь, что [подключение к сервису](../../config/) настроено.
-1. (Опционально) Если хотите использовать для создания ВМ пула собственный образ, [подготовьте](/ru/manage/cloud-desktops/concepts/desktop-image) и [проверьте](/ru/manage/cloud-desktops/use-cases/check-desktop-image) его.
+1. (Опционально) Если хотите использовать для создания ВМ пула собственный образ, [подготовьте](/ru/base/cloud-desktops/concepts/desktop-image) и [проверьте](/ru/base/cloud-desktops/how-to-guides/check-desktop-image) его.
 1. Запустите мастер создания пула:
 
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
@@ -52,7 +52,7 @@
     - **Тип инстанса**: выберите тип ВМ из списка типов, доступных в проекте.
     - **Размер диска**: укажите размер диска в ГБ. Значение не может быть меньше размера образа ОС.
     - **Тип диска**: выберите одно из значений — `HDD`, `SSD` или `High-IOPS SSD`.
-    - **Образ**: выберите образ для создания ВМ из списка доступных образов. При необходимости нажмите кнопку **Загрузить свой образ** и загрузите ранее [подготовленный](/ru/manage/cloud-desktops/concepts/desktop-image) и [проверенный](/ru/manage/cloud-desktops/use-cases/check-desktop-image) образ, следуя [инструкции по импорту](/ru/base/iaas/instructions/vm-images/vm-images-manage#import_obraza).
+    - **Образ**: выберите образ для создания ВМ из списка доступных образов. При необходимости нажмите кнопку **Загрузить свой образ** и загрузите ранее [подготовленный](/ru/base/cloud-desktops/concepts/desktop-image) и [проверенный](/ru/base/cloud-desktops/how-to-guides/check-desktop-image) образ, следуя [инструкции по импорту](/ru/base/iaas/instructions/vm-images/vm-images-manage#import_obraza).
 
       <info>
 
@@ -66,7 +66,7 @@
 
 ## 3. Настройте периферию
 
-1. Выберите, какие [периферийные устройства](../../../concepts/overview#dostupnye_periferiynye_ustroystva) будут доступны пользователям рабочих столов пула.
+1. Выберите, какие [периферийные устройства](../../../concepts/about#dostupnye_periferiynye_ustroystva) будут доступны пользователям рабочих столов пула.
 1. Нажмите кнопку **Создать пул**.
 
    Пул будет создан в течение часа.
