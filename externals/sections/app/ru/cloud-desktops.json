@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/base/cloud-desktops/concepts/vdi-reference"
+                    "link": "docs/ru/base/cloud-desktops/concepts/glossary"
                 },
                 {
-                    "link": "docs/ru/base/cloud-desktops/concepts/overview"
+                    "link": "docs/ru/base/cloud-desktops/concepts/about"
                 },
                 {
                     "link": "docs/ru/base/cloud-desktops/tariffication"
@@ -26,7 +26,7 @@
                     "link": "docs/ru/base/cloud-desktops/quick-start"
                 },
                 {
-                    "link": "docs/ru/base/cloud-desktops/instructions/config"
+                    "link": "docs/ru/base/cloud-desktops/service-management/config"
                 }
             ]
         },
@@ -34,13 +34,13 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/base/cloud-desktops/instructions/desktops-pool/add"
+                    "link": "docs/ru/base/cloud-desktops/service-management/desktops-pool/add"
                 },
                 {
-                    "link": "docs/ru/base/cloud-desktops/instructions/desktops-pool/manage"
+                    "link": "docs/ru/base/cloud-desktops/service-management/desktops-pool/manage"
                 },
                 {
-                    "link": "docs/ru/base/cloud-desktops/instructions/manage-desktops"
+                    "link": "docs/ru/base/cloud-desktops/service-management/manage-desktops"
                 }
             ]
         }

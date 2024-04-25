@@ -1,4 +1,4 @@
-API сервиса [Cloud Desktop](/ru/manage/cloud-desktops) позволяет управлять пулами рабочих столов и рабочими столами в них.
+API сервиса [Cloud Desktop](/ru/base/cloud-desktops) позволяет управлять пулами рабочих столов и рабочими столами в них.
 
 <details>
   <summary markdown="span">Получение эндпоинта, авторизация и аутентификация</summary>

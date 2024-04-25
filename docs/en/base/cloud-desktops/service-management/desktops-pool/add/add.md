@@ -106,7 +106,7 @@ Changing the created virtual resources (VMs, load balancers, DB instances) outsi
 
 ## 3. Configure the peripherals
 
-1. Select [peripheral devices](../../../concepts/overview#available_peripherals) that will be available on the pool desktops.
+1. Select [peripheral devices](../../../concepts/about#available_peripherals) that will be available on the pool desktops.
 1. Click the **Create a pool** button.
 
    The pool will be created within an hour.

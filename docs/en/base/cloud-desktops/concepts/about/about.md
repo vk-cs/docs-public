@@ -43,9 +43,9 @@ The following roles are provided in the service:
 | Microphone | + | + |
 | Clipboard | + | + |
 
-The available peripherals are set when [adding](../../instructions/desktops-pool/add/) a desktop pool.
+The available peripherals are set when [adding](../../service-management/desktops-pool/add/) a desktop pool.
 
 ## What's next?
 
-- [Get acquainted](../vdi-reference/) with the basic concepts of the service.
+- [Get acquainted](../glossary/) with the basic concepts of the service.
 - [Go through](../../quick-start/) the Quick start.
