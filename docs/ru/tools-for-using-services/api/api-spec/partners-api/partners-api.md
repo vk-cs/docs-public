@@ -63,8 +63,8 @@ curl -X GET 'https://mcs.mail.ru/api/v1/partners/mcs1111111111111/invites' \
 
 <info>
 
-Исходную спецификацию в формате JSON вы можете скачать по [ссылке](./assets/partnersapi-swagger.json "download").
+Исходную спецификацию в формате JSON вы можете скачать по [ссылке](assets/partnersapi-swagger.json "download").
 
 </info>
 
-![{swagger}](./assets/partnersapi-swagger.json)
+![{swagger}](assets/partnersapi-swagger.json)

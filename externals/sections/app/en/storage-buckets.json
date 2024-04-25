@@ -49,7 +49,7 @@
             "title": "API",
             "links": [
                 {
-                    "link": "docs/ru/additionals/api/s3-rest-api"
+                    "link": "docs/ru/tools-for-using-services/api/api-spec/s3-rest-api"
                 }
             ]
         }

@@ -26,8 +26,8 @@ REST API сервиса [Cloud Monitoring 2.0](/ru/manage/monitoring) подде
 
 <info>
 
-Исходную спецификацию в формате JSON вы можете скачать по [ссылке](./assets/monitoring2-api.json "download").
+Исходную спецификацию в формате JSON вы можете скачать по [ссылке](assets/monitoring2-api.json "download").
 
 </info>
 
-![{swagger}](./assets/monitoring2-api.json)
+![{swagger}](assets/monitoring2-api.json)
