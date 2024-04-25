@@ -1,0 +1,11 @@
+{
+  "title": "Cloud Spark",
+  "pageDescription": "Работа с сервисом Cloud Spark с использованием Terraform.",
+  "shortDescription": "Как использовать Terraform для управления объектами сервиса Cloud Spark",
+  "metaTitle": "Cloud Spark",
+  "metaDescription": "Работа с сервисом Cloud Spark с использованием Terraform",
+  "sectionTitle": "Cloud Spark",
+  "markdown": "Работа с [сервисом Cloud Spark](/ru/ml/spark-to-k8s) с использованием Terraform.",
+  "icon": "",
+  "weight": 8
+}
