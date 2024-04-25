@@ -1,11 +1,12 @@
 {
-    "title": "Концепции",
-    "pageDescription": "Подробное описание принципов функционирования сервиса Load Balancing.",
-    "shortDescription": "Как устроен сервис Load Balancing",
-    "metaTitle": "Концепции",
-    "metaDescription": "",
-    "sectionTitle": "Концепции",
-    "markdown": "Подробное описание принципов функционирования сервиса Load Balancing.",
-    "icon": "",
-    "weight": 10
+  "title": "Концепции",
+  "pageDescription": "Подробное описание принципов функционирования сервиса Load Balancing.",
+  "shortDescription": "Как устроен сервис Load Balancing",
+  "metaTitle": "Концепции",
+  "metaDescription": "",
+  "sectionTitle": "Концепции",
+  "markdown": "Подробное описание принципов функционирования сервиса Load Balancing.",
+  "icon": "",
+  "weight": 10,
+  "uuid": "fa9230c2-cd83-42ca-aa3e-f46cc7763e75"
 }
