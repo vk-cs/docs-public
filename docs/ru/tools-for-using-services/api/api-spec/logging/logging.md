@@ -26,8 +26,8 @@
 
 <info>
 
-Исходную спецификацию в формате JSON вы можете скачать по [ссылке](./assets/loggingapi-swagger.json "download").
+Исходную спецификацию в формате JSON вы можете скачать по [ссылке](assets/loggingapi-swagger.json "download").
 
 </info>
 
-![{swagger}](./assets/loggingapi-swagger.json)
+![{swagger}](assets/loggingapi-swagger.json)
