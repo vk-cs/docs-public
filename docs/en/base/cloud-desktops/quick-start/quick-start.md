@@ -92,7 +92,7 @@ After completing all the steps of a quick start, you will:
 
     In the example, the IP address is `99.166.240.100`.
 
-1. [Download and install](../instructions/assets/Termidesk_user_guide_v_1_0.pdf "download") the Cloud Desktop client on your local computer.
+1. [Download and install](../service-management/assets/Termidesk_user_guide_v_1_0.pdf "download") the Cloud Desktop client on your local computer.
 1. Connect to the pools:
 
    1. Open the installed client.
@@ -107,9 +107,9 @@ After completing all the steps of a quick start, you will:
 
 ## Delete unused resources
 
-A running service consumes computing resources. If you don't need it anymore, [delete](../instructions/desktops-pool/manage#deleting_a_desktop_pools) the desktop pool.
+A running service consumes computing resources. If you don't need it anymore, [delete](../service-management/desktops-pool/manage#deleting_a_desktop_pools) the desktop pool.
 
 ## What's next?
 
 - [Learn about the concepts](../concepts/) of the virtual desktop service.
-- [Read the instructions](../instructions/manage-desktops/) for working with virtual desktops.
+- [Read the instructions](../service-management/manage-desktops/) for working with virtual desktops.

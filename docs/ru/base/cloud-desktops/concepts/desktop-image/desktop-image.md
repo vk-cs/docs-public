@@ -66,4 +66,4 @@
 
 ## Что дальше?
 
-[Узнайте](/ru/manage/cloud-desktops/use-cases/check-desktop-image), как проверить собственный образ рабочего стола на совместимость с сервисом Cloud Desktop.
+[Узнайте](/ru/base/cloud-desktops/how-to-guides/check-desktop-image), как проверить собственный образ рабочего стола на совместимость с сервисом Cloud Desktop.
