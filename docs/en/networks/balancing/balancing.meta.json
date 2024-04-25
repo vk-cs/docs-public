@@ -1,11 +1,12 @@
 {
-    "title": "Load Balancing",
-    "pageDescription": "The load balancer automatically distributes incoming traffic between servers, allowing applications and services to remain available even if the load is high or one of the servers is unavailable.",
-    "shortDescription": "Load distribution between servers",
-    "metaTitle": "Load Balancing",
-    "metaDescription": "",
-    "sectionTitle": "Load Balancing",
-    "markdown": "Load distribution between servers.",
-    "icon": "",
-    "weight": 2
+  "title": "Load Balancing",
+  "pageDescription": "The load balancer automatically distributes incoming traffic between servers, allowing applications and services to remain available even if the load is high or one of the servers is unavailable.",
+  "shortDescription": "Load distribution between servers",
+  "metaTitle": "Load Balancing",
+  "metaDescription": "",
+  "sectionTitle": "Load Balancing",
+  "markdown": "Load distribution between servers.",
+  "icon": "",
+  "weight": 2,
+  "uuid": "b2c0678e-a608-423e-8839-b72109532a11"
 }
