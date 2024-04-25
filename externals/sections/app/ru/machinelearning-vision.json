@@ -45,7 +45,7 @@
             "title": "API",
             "links": [
                 {
-                    "link": "docs/ru/additionals/api/vision-api"
+                    "link": "docs/ru/tools-for-using-services/api/api-spec/vision-api"
                 }
             ]
         }

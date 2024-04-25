@@ -98,9 +98,9 @@
 
 1. [Узнайте](https://msk.cloud.vk.com/app/project/endpoints) эндпоинт для сервиса Cloud Storage.
 
-1. [Сформируйте подпись](../../../../../additionals/api/s3-rest-api/intro) запроса для аутентификации в API.
+1. [Сформируйте подпись](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro) запроса для аутентификации в API.
 
-1. Используйте метод [PutObject](../../../../../additionals/api/s3-rest-api/object-api#upload) для загрузки объекта в бакет.
+1. Используйте метод [PutObject](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/object-api#upload) для загрузки объекта в бакет.
 
 </tabpanel>
 <tabpanel>
@@ -460,17 +460,17 @@
 
 1. Разделите на части файл, который нужно загрузить в бакет. Например, в Linux-системах это можно сделать при помощи команды `split`.
 
-1. [Узнайте эндпоинт и сформируйте подпись](../../../../../additionals/api/s3-rest-api/intro) запроса для аутентификации в API.
+1. [Узнайте эндпоинт и сформируйте подпись](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/intro) запроса для аутентификации в API.
 
-1. Инициируйте составную загрузку при помощи запроса [CreateMultipartUpload](../../../../../additionals/api/s3-rest-api/multipart-api#initiate_multipart_upload). На этом этапе создается ключ будущего объекта и добавляются все его пользовательские метаданные. В ответе вернется идентификатор загрузки `UploadId`, который понадобится для следующих этапов составной загрузки.
+1. Инициируйте составную загрузку при помощи запроса [CreateMultipartUpload](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#initiate_multipart_upload). На этом этапе создается ключ будущего объекта и добавляются все его пользовательские метаданные. В ответе вернется идентификатор загрузки `UploadId`, который понадобится для следующих этапов составной загрузки.
 
-1. Загрузите в бакет все части файла. Для загрузки каждой части отправьте отдельный запрос [UploadPart](../../../../../additionals/api/s3-rest-api/multipart-api#upload_part). Для каждой части укажите номер. Номера не должны повторяться, иначе последняя загруженная часть перезапишет предыдущую с таким же номером. Cloud Storage будет собирать все части объекта в порядке возрастания их номеров.
+1. Загрузите в бакет все части файла. Для загрузки каждой части отправьте отдельный запрос [UploadPart](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#upload_part). Для каждой части укажите номер. Номера не должны повторяться, иначе последняя загруженная часть перезапишет предыдущую с таким же номером. Cloud Storage будет собирать все части объекта в порядке возрастания их номеров.
 
    В каждом ответе на запрос вернется `ETag` загруженной части. Сохраните значение `ETag` и соответствующий ему номер части.
 
-1. Проверьте, все ли части файла загружены в бакет. Для этого используйте запрос [ListParts](../../../../../additionals/api/s3-rest-api/multipart-api#list_parts).
+1. Проверьте, все ли части файла загружены в бакет. Для этого используйте запрос [ListParts](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#list_parts).
 
-1. Завершите загрузку и соберите объект при помощи запроса [CompleteMultipartUpload](../../../../../additionals/api/s3-rest-api/multipart-api#complete_multipart_upload).
+1. Завершите загрузку и соберите объект при помощи запроса [CompleteMultipartUpload](../../../../../tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#complete_multipart_upload).
 
 </tabpanel>
 <tabpanel>

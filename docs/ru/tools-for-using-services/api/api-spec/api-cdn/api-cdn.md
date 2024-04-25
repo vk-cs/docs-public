@@ -1,4 +1,4 @@
-REST API [CDN](../../../networks/dns/publicdns) поддерживает управление и мониторинг работы CDN-ресурсов:
+REST API [CDN](../../../../networks/dns/publicdns) поддерживает управление и мониторинг работы CDN-ресурсов:
 
 - просмотр канонической доменной записи (CNAME) текущего аккаунта;
 - создание и управление группами источников;
@@ -35,8 +35,8 @@ curl --location "https://msk.cloud.vk.com/api/cdn/api/v1/projects/example4ef0547
 
 <info>
 
-Исходную спецификацию в формате JSON вы можете скачать по [ссылке](./assets/api-cdn.json "download").
+Исходную спецификацию в формате JSON вы можете скачать по [ссылке](assets/api-cdn.json "download").
 
 </info>
 
-![{swagger}](./assets/api-cdn.json)
+![{swagger}](assets/api-cdn.json)
