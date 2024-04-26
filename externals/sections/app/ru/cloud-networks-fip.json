@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/networks/vnet/concepts"
+                    "link": "/ru/networks/vnet/concepts"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/tariffs"
+                    "link": "/ru/networks/vnet/tariffs"
                 }
             ]
         },
@@ -17,10 +17,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/networks/vnet/quick-start"
+                    "link": "/ru/networks/vnet/quick-start"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/operations/floating-ip"
+                    "link": "/ru/networks/vnet/operations/floating-ip"
                 }
             ]
         },
@@ -28,10 +28,10 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/networks/vnet/use-cases/vpn-tunnel"
+                    "link": "/ru/networks/vnet/use-cases/vpn-tunnel"
                 },
                 {
-                    "link": "docs/ru/networks/vnet/use-cases/vip-keepalived"
+                    "link": "/ru/networks/vnet/use-cases/vip-keepalived"
                 }
             ]
         }

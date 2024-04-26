@@ -6,17 +6,17 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/storage/s3/concepts/intro"
+                    "link": "/ru/storage/s3/concepts/intro"
                 },
                 {
-                    "link": "docs/ru/storage/s3/tariffication",
+                    "link": "/ru/storage/s3/tariffication",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/tools-for-using-services/account/concepts/quotasandlimits"
+                    "link": "/ru/tools-for-using-services/account/concepts/quotasandlimits"
                 },
                 {
-                    "link": "docs/ru/storage/s3/concepts/about-s3-api"
+                    "link": "/ru/storage/s3/concepts/about-s3-api"
                 }
             ]
         },
@@ -24,7 +24,7 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/storage/s3/quick-start"
+                    "link": "/ru/storage/s3/quick-start"
                 }
             ]
         },
@@ -32,10 +32,10 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/storage/s3/storage-connecting/s3-cli"
+                    "link": "/ru/storage/s3/storage-connecting/s3-cli"
                 },
                 {
-                    "link": "docs/ru/storage/s3/use-cases/load-large-image"
+                    "link": "/ru/storage/s3/use-cases/load-large-image"
                 }
             ]
         }
