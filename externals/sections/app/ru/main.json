@@ -6,26 +6,26 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/additionals/billing/instructions/corporate"
+                    "link": "/ru/additionals/billing/instructions/corporate"
                 },
                 {
-                    "link": "docs/ru/tools-for-using-services/account/concepts/quotasandlimits"
+                    "link": "/ru/tools-for-using-services/account/concepts/quotasandlimits"
                 },
                 {
-                    "link": "docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
+                    "link": "/ru/tools-for-using-services/account/concepts/rolesandpermissions"
                 },
                 {
-                    "link": "docs/ru/additionals/billing",
+                    "link": "/ru/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/intro/start/legal"
+                    "link": "/ru/intro/start/legal"
                 },
                 {
-                    "link": "docs/ru/intro/start/support"
+                    "link": "/ru/intro/start/support"
                 },
                 {
-                    "link": "docs/ru/tools-for-using-services/account/faq"
+                    "link": "/ru/tools-for-using-services/account/faq"
                 }
             ]
         },
@@ -33,14 +33,14 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/additionals/billing/quick-start",
+                    "link": "/ru/additionals/billing/quick-start",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/tools-for-using-services/account/instructions/activation"
+                    "link": "/ru/tools-for-using-services/account/instructions/activation"
                 },
                 {
-                    "link": "docs/ru/additionals/billing/instructions/payment",
+                    "link": "/ru/additionals/billing/instructions/payment",
                     "hiddenForPartners": true
                 }
             ]
@@ -49,25 +49,25 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/tools-for-using-services/account/instructions/project-settings"
+                    "link": "/ru/tools-for-using-services/account/instructions/project-settings"
                 },
                 {
-                    "link": "docs/ru/tools-for-using-services/account/instructions/account-manage"
+                    "link": "/ru/tools-for-using-services/account/instructions/account-manage"
                 },
                 {
-                    "link": "docs/ru/tools-for-using-services"
+                    "link": "/ru/tools-for-using-services"
                 },
                 {
-                    "link": "docs/ru/tools-for-using-services/account/instructions/actionslogs"
+                    "link": "/ru/tools-for-using-services/account/instructions/actionslogs"
                 },
                 {
-                    "link": "docs/ru/tools-for-using-services/account/use-cases/systemstate"
+                    "link": "/ru/tools-for-using-services/account/use-cases/systemstate"
                 },
                 {
-                    "link": "docs/ru/tools-for-using-services/account/use-cases/ideasportal"
+                    "link": "/ru/tools-for-using-services/account/use-cases/ideasportal"
                 },
                 {
-                    "link": "docs/ru/tools-for-using-services/account/use-cases/account-delete"
+                    "link": "/ru/tools-for-using-services/account/use-cases/account-delete"
                 }
             ]
         }

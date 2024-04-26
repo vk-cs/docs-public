@@ -6,14 +6,14 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/storage/s3/tariffication",
+                    "link": "/en/storage/s3/tariffication",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/tools-for-using-services/account/concepts/quotasandlimits"
+                    "link": "/en/tools-for-using-services/account/concepts/quotasandlimits"
                 },
                 {
-                    "link": "docs/en/storage/s3/concepts/about-s3-api"
+                    "link": "/en/storage/s3/concepts/about-s3-api"
                 }
             ]
         },
@@ -21,10 +21,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/storage/s3/quick-start"
+                    "link": "/en/storage/s3/quick-start"
                 },
                 {
-                    "link": "docs/en/storage/s3/instructions/access-management"
+                    "link": "/en/storage/s3/instructions/access-management"
                 }
             ]
         },
@@ -32,10 +32,10 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/storage/s3/storage-connecting/s3-cli"
+                    "link": "/en/storage/s3/storage-connecting/s3-cli"
                 },
                 {
-                    "link": "docs/en/storage/s3/use-cases/load-large-image"
+                    "link": "/en/storage/s3/use-cases/load-large-image"
                 }
             ]
         }

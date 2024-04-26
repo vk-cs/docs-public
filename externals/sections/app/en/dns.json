@@ -6,10 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/networks/dns/private-dns"
+                    "link": "/en/networks/dns/private-dns"
                 },
                 {
-                    "link": "docs/en/networks/dns/publicdns"
+                    "link": "/en/networks/dns/publicdns"
                 }
             ]
         }
