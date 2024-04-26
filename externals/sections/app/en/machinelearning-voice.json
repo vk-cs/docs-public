@@ -6,16 +6,16 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/ml/cloud-voice/get-voice-token"
+                    "link": "/en/ml/cloud-voice/get-voice-token"
                 },
                 {
-                    "link": "docs/en/ml/cloud-voice/speech-recognition"
+                    "link": "/en/ml/cloud-voice/speech-recognition"
                 },
                 {
-                    "link": "docs/en/ml/cloud-voice/text-to-speech"
+                    "link": "/en/ml/cloud-voice/text-to-speech"
                 },
                 {
-                    "link": "docs/en/ml/cloud-voice/pricing"
+                    "link": "/en/ml/cloud-voice/pricing"
                 }
             ]
         }

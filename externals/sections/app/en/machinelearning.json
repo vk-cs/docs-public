@@ -6,16 +6,16 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/ml/vision"
+                    "link": "/en/ml/vision"
                 },
                 {
-                    "link": "docs/en/ml/vision/manage-vision"
+                    "link": "/en/ml/vision/manage-vision"
                 },
                 {
-                    "link": "docs/en/ml/cloud-voice"
+                    "link": "/en/ml/cloud-voice"
                 },
                 {
-                    "link": "docs/en/ml/cloud-voice/speech-recognition"
+                    "link": "/en/ml/cloud-voice/speech-recognition"
                 }
             ]
         }

@@ -6,14 +6,14 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/storage/s3/tariffication",
+                    "link": "/en/storage/s3/tariffication",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/tools-for-using-services/account/concepts/quotasandlimits"
+                    "link": "/en/tools-for-using-services/account/concepts/quotasandlimits"
                 },
                 {
-                    "link": "docs/en/storage/s3/concepts/about-s3-api"
+                    "link": "/en/storage/s3/concepts/about-s3-api"
                 }
             ]
         },
@@ -21,10 +21,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/storage/s3/quick-start"
+                    "link": "/en/storage/s3/quick-start"
                 },
                 {
-                    "link": "docs/en/storage/s3/instructions/buckets/create-bucket"
+                    "link": "/en/storage/s3/instructions/buckets/create-bucket"
                 }
             ]
         },
@@ -32,16 +32,16 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/storage/s3/storage-connecting/s3-cli"
+                    "link": "/en/storage/s3/storage-connecting/s3-cli"
                 },
                 {
-                    "link": "docs/en/storage/s3/use-cases/load-large-image"
+                    "link": "/en/storage/s3/use-cases/load-large-image"
                 },
                 {
-                    "link": "docs/en/storage/s3/use-cases/s3-domain"
+                    "link": "/en/storage/s3/use-cases/s3-domain"
                 },
                 {
-                    "link": "docs/en/storage/s3/storage-connecting/s3-sdk"
+                    "link": "/en/storage/s3/storage-connecting/s3-sdk"
                 }
             ]
         },
@@ -49,7 +49,7 @@
             "title": "API",
             "links": [
                 {
-                    "link": "docs/ru/tools-for-using-services/api/api-spec/s3-rest-api"
+                    "link": "/ru/tools-for-using-services/api/api-spec/s3-rest-api"
                 }
             ]
         }
