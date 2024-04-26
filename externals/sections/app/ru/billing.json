@@ -6,15 +6,15 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/additionals/billing",
+                    "link": "/ru/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/additionals/billing/instructions/payment",
+                    "link": "/ru/additionals/billing/instructions/payment",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/additionals/billing/instructions/refund",
+                    "link": "/ru/additionals/billing/instructions/refund",
                     "hiddenForPartners": true
                 }
             ]

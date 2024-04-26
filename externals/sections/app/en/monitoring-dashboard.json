@@ -6,10 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/manage/monitoring/concepts/mon-metrics"
+                    "link": "/en/manage/monitoring/concepts/mon-metrics"
                 },
                 {
-                    "link": "docs/en/manage/monitoring/concepts/mon-read-metrics"
+                    "link": "/en/manage/monitoring/concepts/mon-read-metrics"
                 }
             ]
         }

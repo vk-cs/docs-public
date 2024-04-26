@@ -6,17 +6,17 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/kubernetes/k8s/concepts"
+                    "link": "/en/kubernetes/k8s/concepts"
                 },
                 {
-                    "link": "docs/en/kubernetes/k8s/k8s-reference"
+                    "link": "/en/kubernetes/k8s/k8s-reference"
                 },
                 {
-                    "link": "docs/en/additionals/billing",
+                    "link": "/en/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/tools-for-using-services/account/concepts/quotasandlimits"
+                    "link": "/en/tools-for-using-services/account/concepts/quotasandlimits"
                 }
             ]
         },
@@ -24,13 +24,13 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/kubernetes/k8s/quickstart"
+                    "link": "/en/kubernetes/k8s/quickstart"
                 },
                 {
-                    "link": "docs/en/kubernetes/k8s/operations/create-cluster"
+                    "link": "/en/kubernetes/k8s/operations/create-cluster"
                 },
                 {
-                    "link": "docs/en/kubernetes/k8s/connect"
+                    "link": "/en/kubernetes/k8s/connect"
                 }
             ]
         },
@@ -38,22 +38,22 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/kubernetes/k8s/monitoring"
+                    "link": "/en/kubernetes/k8s/monitoring"
                 },
                 {
-                    "link": "docs/en/kubernetes/k8s/install-tools"
+                    "link": "/en/kubernetes/k8s/install-tools"
                 },
                 {
-                    "link": "docs/en/kubernetes/k8s/operations/addons"
+                    "link": "/en/kubernetes/k8s/operations/addons"
                 },
                 {
-                    "link": "docs/en/kubernetes/k8s/use-cases/ingress"
+                    "link": "/en/kubernetes/k8s/use-cases/ingress"
                 },
                 {
-                    "link": "docs/en/kubernetes/k8s/use-cases/local-dns-cache"
+                    "link": "/en/kubernetes/k8s/use-cases/local-dns-cache"
                 },
                 {
-                    "link": "docs/en/kubernetes/k8s/use-cases/velero-backup"
+                    "link": "/en/kubernetes/k8s/use-cases/velero-backup"
                 }
             ]
         }

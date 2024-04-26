@@ -6,7 +6,7 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/data-processing/hortonworks/tariffication",
+                    "link": "/en/data-processing/hortonworks/tariffication",
                     "hiddenForPartners": true
                 }
             ]
@@ -15,7 +15,7 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/data-processing/hortonworks/instructions/delete"
+                    "link": "/en/data-processing/hortonworks/instructions/delete"
                 }
             ]
         },
@@ -23,10 +23,10 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/data-processing/hortonworks/instructions/scale"
+                    "link": "/en/data-processing/hortonworks/instructions/scale"
                 },
                 {
-                    "link": "docs/en/data-processing/hortonworks/connect"
+                    "link": "/en/data-processing/hortonworks/connect"
                 }
             ]
         }

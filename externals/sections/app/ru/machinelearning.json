@@ -6,16 +6,16 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/ml/vision"
+                    "link": "/ru/ml/vision"
                 },
                 {
-                    "link": "docs/ru/ml/vision/manage-vision"
+                    "link": "/ru/ml/vision/manage-vision"
                 },
                 {
-                    "link": "docs/ru/ml/cloud-voice"
+                    "link": "/ru/ml/cloud-voice"
                 },
                 {
-                    "link": "docs/ru/ml/cloud-voice/speech-recognition"
+                    "link": "/ru/ml/cloud-voice/speech-recognition"
                 }
             ]
         }

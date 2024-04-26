@@ -6,7 +6,7 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/manage/monitoring/concepts/mon-architecture"
+                    "link": "/en/manage/monitoring/concepts/mon-architecture"
                 }
             ]
         },
@@ -14,10 +14,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/manage/monitoring/instructions/mon-setup-new"
+                    "link": "/en/manage/monitoring/instructions/mon-setup-new"
                 },
                 {
-                    "link": "docs/en/manage/monitoring/instructions/mon-setup-current"
+                    "link": "/en/manage/monitoring/instructions/mon-setup-current"
                 }
             ]
         }

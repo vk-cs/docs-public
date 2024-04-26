@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/storage/backups/db-backup"
+                    "link": "/ru/storage/backups/db-backup"
                 },
                 {
-                    "link": "docs/ru/storage/backups/retention-policy"
+                    "link": "/ru/storage/backups/retention-policy"
                 }
             ]
         },
@@ -17,16 +17,16 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/storage/backups/db-backup/db-backup-create"
+                    "link": "/ru/storage/backups/db-backup/db-backup-create"
                 },
                 {
-                    "link": "docs/ru/storage/backups/db-backup/manage-db-backups"
+                    "link": "/ru/storage/backups/db-backup/manage-db-backups"
                 },
                 {
-                    "link": "docs/ru/storage/backups/db-backup/db-recover-backup"
+                    "link": "/ru/storage/backups/db-backup/db-recover-backup"
                 },
                 {
-                    "link": "docs/ru/storage/backups/db-backup/point-in-time-recovery-pitr"
+                    "link": "/ru/storage/backups/db-backup/point-in-time-recovery-pitr"
                 }
             ]
         },
@@ -34,7 +34,7 @@
             "title": "API",
             "links": [
                 {
-                    "link": "docs/ru/storage/backups/api-examples"
+                    "link": "/ru/storage/backups/api-examples"
                 }
             ]
         }

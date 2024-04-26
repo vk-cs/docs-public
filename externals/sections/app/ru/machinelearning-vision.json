@@ -6,13 +6,13 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/ml/vision/about-vision"
+                    "link": "/ru/ml/vision/about-vision"
                 },
                 {
-                    "link": "docs/ru/ml/vision/vision-limits"
+                    "link": "/ru/ml/vision/vision-limits"
                 },
                 {
-                    "link": "docs/ru/ml/vision/changelog"
+                    "link": "/ru/ml/vision/changelog"
                 }
             ]
         },
@@ -20,10 +20,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/ml/vision/vision-start/auth-vision"
+                    "link": "/ru/ml/vision/vision-start/auth-vision"
                 },
                 {
-                    "link": "docs/ru/ml/vision/manage-vision"
+                    "link": "/ru/ml/vision/manage-vision"
                 }
             ]
         },
@@ -31,13 +31,13 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/ml/vision/vision-integrations/vision-py"
+                    "link": "/ru/ml/vision/vision-integrations/vision-py"
                 },
                 {
-                    "link": "docs/ru/ml/vision/vision-integrations/vision-php"
+                    "link": "/ru/ml/vision/vision-integrations/vision-php"
                 },
                 {
-                    "link": "docs/ru/ml/vision/vision-integrations/vision-curl"
+                    "link": "/ru/ml/vision/vision-integrations/vision-curl"
                 }
             ]
         },
@@ -45,7 +45,7 @@
             "title": "API",
             "links": [
                 {
-                    "link": "docs/ru/tools-for-using-services/api/api-spec/vision-api"
+                    "link": "/ru/tools-for-using-services/api/api-spec/vision-api"
                 }
             ]
         }
