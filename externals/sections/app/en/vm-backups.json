@@ -6,17 +6,17 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/base/iaas/concepts"
+                    "link": "/en/base/iaas/concepts"
                 },
                 {
-                    "link": "docs/en/base/vm-licenses"
+                    "link": "/en/base/vm-licenses"
                 },
                 {
-                    "link": "docs/en/base/iaas/tariffication",
+                    "link": "/en/base/iaas/tariffication",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/storage/backups/vm-backup/faq-vm-backup"
+                    "link": "/en/storage/backups/vm-backup/faq-vm-backup"
                 }
             ]
         },
@@ -24,13 +24,13 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/base/iaas/quick-start"
+                    "link": "/en/base/iaas/quick-start"
                 },
                 {
-                    "link": "docs/en/storage/backups/vm-backup/vm-backup-create"
+                    "link": "/en/storage/backups/vm-backup/vm-backup-create"
                 },
                 {
-                    "link": "docs/en/storage/backups/vm-backup/vm-backup-manage"
+                    "link": "/en/storage/backups/vm-backup/vm-backup-manage"
                 }
             ]
         },
@@ -38,25 +38,25 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/base/iaas/instructions/vm/vm-console"
+                    "link": "/en/base/iaas/instructions/vm/vm-console"
                 },
                 {
-                    "link": "docs/en/base/iaas/troubleshooting"
+                    "link": "/en/base/iaas/troubleshooting"
                 },
                 {
-                    "link": "docs/en/base/iaas/use-cases/disk-encrypt"
+                    "link": "/en/base/iaas/use-cases/disk-encrypt"
                 },
                 {
-                    "link": "docs/en/base/iaas/use-cases/win-image"
+                    "link": "/en/base/iaas/use-cases/win-image"
                 },
                 {
-                    "link": "docs/en/base/iaas/use-cases/packer"
+                    "link": "/en/base/iaas/use-cases/packer"
                 },
                 {
-                    "link": "docs/en/base/iaas/use-cases/vm-multiqueue"
+                    "link": "/en/base/iaas/use-cases/vm-multiqueue"
                 },
                 {
-                    "link": "docs/en/base/iaas/use-cases/managing-node"
+                    "link": "/en/base/iaas/use-cases/managing-node"
                 }
             ]
         }

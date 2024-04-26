@@ -6,13 +6,13 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/base/gpu/gpu-info"
+                    "link": "/en/base/gpu/gpu-info"
                 },
                 {
-                    "link": "docs/en/base/iaas/faq"
+                    "link": "/en/base/iaas/faq"
                 },
                 {
-                    "link": "docs/en/tools-for-using-services/account/concepts/quotasandlimits"
+                    "link": "/en/tools-for-using-services/account/concepts/quotasandlimits"
                 }
             ]
         },
@@ -20,10 +20,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/base/gpu/gpu-create"
+                    "link": "/en/base/gpu/gpu-create"
                 },
                 {
-                    "link": "docs/en/base/iaas/instructions/vm/vm-connect"
+                    "link": "/en/base/iaas/instructions/vm/vm-connect"
                 }
             ]
         }

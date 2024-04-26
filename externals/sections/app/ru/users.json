@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
+                    "link": "/ru/tools-for-using-services/account/concepts/rolesandpermissions"
                 },
                 {
-                    "link": "docs/ru/tools-for-using-services/account/instructions/project-settings/access-manage"
+                    "link": "/ru/tools-for-using-services/account/instructions/project-settings/access-manage"
                 }
             ]
         }

@@ -6,16 +6,16 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/base/cloud-desktops/concepts/glossary"
+                    "link": "/ru/base/cloud-desktops/concepts/glossary"
                 },
                 {
-                    "link": "docs/ru/base/cloud-desktops/concepts/about"
+                    "link": "/ru/base/cloud-desktops/concepts/about"
                 },
                 {
-                    "link": "docs/ru/base/cloud-desktops/tariffication"
+                    "link": "/ru/base/cloud-desktops/tariffication"
                 },
                 {
-                    "link": "docs/ru/base/cloud-desktops/faq"
+                    "link": "/ru/base/cloud-desktops/faq"
                 }
             ]
         },
@@ -23,10 +23,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "docs/ru/base/cloud-desktops/quick-start"
+                    "link": "/ru/base/cloud-desktops/quick-start"
                 },
                 {
-                    "link": "docs/ru/base/cloud-desktops/service-management/config"
+                    "link": "/ru/base/cloud-desktops/service-management/config"
                 }
             ]
         },
@@ -34,13 +34,13 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "docs/ru/base/cloud-desktops/service-management/desktops-pool/add"
+                    "link": "/ru/base/cloud-desktops/service-management/desktops-pool/add"
                 },
                 {
-                    "link": "docs/ru/base/cloud-desktops/service-management/desktops-pool/manage"
+                    "link": "/ru/base/cloud-desktops/service-management/desktops-pool/manage"
                 },
                 {
-                    "link": "docs/ru/base/cloud-desktops/service-management/manage-desktops"
+                    "link": "/ru/base/cloud-desktops/service-management/manage-desktops"
                 }
             ]
         }
