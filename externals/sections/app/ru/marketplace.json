@@ -6,17 +6,17 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/vendors-products/marketplace/concepts/about"
+                    "link": "/ru/vendors-products/marketplace/concepts/about"
                 },
                 {
-                    "link": "docs/ru/vendors-products/marketplace/instructions"
+                    "link": "/ru/vendors-products/marketplace/instructions"
                 },
                 {
-                    "link": "docs/ru/vendors-products/marketplace/tariffication",
+                    "link": "/ru/vendors-products/marketplace/tariffication",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/ru/vendors-products/marketplace/faq"
+                    "link": "/ru/vendors-products/marketplace/faq"
                 }
             ]
         }

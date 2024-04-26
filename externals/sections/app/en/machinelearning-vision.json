@@ -6,13 +6,13 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/ml/vision/about-vision"
+                    "link": "/en/ml/vision/about-vision"
                 },
                 {
-                    "link": "docs/en/ml/vision/vision-limits"
+                    "link": "/en/ml/vision/vision-limits"
                 },
                 {
-                    "link": "docs/en/ml/vision/changelog"
+                    "link": "/en/ml/vision/changelog"
                 }
             ]
         },
@@ -20,10 +20,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/ml/vision/vision-start/auth-vision"
+                    "link": "/en/ml/vision/vision-start/auth-vision"
                 },
                 {
-                    "link": "docs/en/ml/vision/manage-vision"
+                    "link": "/en/ml/vision/manage-vision"
                 }
             ]
         },
@@ -31,13 +31,13 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/ml/vision/vision-integrations/vision-py"
+                    "link": "/en/ml/vision/vision-integrations/vision-py"
                 },
                 {
-                    "link": "docs/en/ml/vision/vision-integrations/vision-php"
+                    "link": "/en/ml/vision/vision-integrations/vision-php"
                 },
                 {
-                    "link": "docs/en/ml/vision/vision-integrations/vision-curl"
+                    "link": "/en/ml/vision/vision-integrations/vision-curl"
                 }
             ]
         },
@@ -45,7 +45,7 @@
             "title": "API",
             "links": [
                 {
-                    "link": "docs/ru/tools-for-using-services/api/api-spec/vision-api"
+                    "link": "/ru/tools-for-using-services/api/api-spec/vision-api"
                 }
             ]
         }

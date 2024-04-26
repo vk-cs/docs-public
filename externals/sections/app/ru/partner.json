@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/intro/start/partners/about-partners"
+                    "link": "/ru/intro/start/partners/about-partners"
                 },
                 {
-                    "link": "docs/ru/intro/start/partners/partners-profile"
+                    "link": "/ru/intro/start/partners/partners-profile"
                 }
             ]
         }

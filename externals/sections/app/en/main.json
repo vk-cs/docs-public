@@ -6,26 +6,26 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/additionals/billing/instructions/corporate"
+                    "link": "/en/additionals/billing/instructions/corporate"
                 },
                 {
-                    "link": "docs/en/tools-for-using-services/account/concepts/quotasandlimits"
+                    "link": "/en/tools-for-using-services/account/concepts/quotasandlimits"
                 },
                 {
-                    "link": "docs/en/tools-for-using-services/account/concepts/rolesandpermissions"
+                    "link": "/en/tools-for-using-services/account/concepts/rolesandpermissions"
                 },
                 {
-                    "link": "docs/en/additionals/billing",
+                    "link": "/en/additionals/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "docs/en/intro/start/legal"
+                    "link": "/en/intro/start/legal"
                 },
                 {
-                    "link": "docs/en/intro/start/support"
+                    "link": "/en/intro/start/support"
                 },
                 {
-                    "link": "docs/en/tools-for-using-services/account/faq"
+                    "link": "/en/tools-for-using-services/account/faq"
                 }
             ]
         },
@@ -33,10 +33,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "docs/en/tools-for-using-services/account/instructions/activation"
+                    "link": "/en/tools-for-using-services/account/instructions/activation"
                 },
                 {
-                    "link": "docs/en/additionals/billing/instructions/payment",
+                    "link": "/en/additionals/billing/instructions/payment",
                     "hiddenForPartners": true
                 }
             ]
@@ -45,25 +45,25 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "docs/en/tools-for-using-services/account/instructions/project-settings"
+                    "link": "/en/tools-for-using-services/account/instructions/project-settings"
                 },
                 {
-                    "link": "docs/en/tools-for-using-services/account/instructions/account-manage"
+                    "link": "/en/tools-for-using-services/account/instructions/account-manage"
                 },
                 {
-                    "link": "docs/en/tools-for-using-services"
+                    "link": "/en/tools-for-using-services"
                 },
                 {
-                    "link": "docs/en/tools-for-using-services/account/instructions/actionslogs"
+                    "link": "/en/tools-for-using-services/account/instructions/actionslogs"
                 },
                 {
-                    "link": "docs/en/tools-for-using-services/account/use-cases/systemstate"
+                    "link": "/en/tools-for-using-services/account/use-cases/systemstate"
                 },
                 {
-                    "link": "docs/en/tools-for-using-services/account/use-cases/ideasportal"
+                    "link": "/en/tools-for-using-services/account/use-cases/ideasportal"
                 },
                 {
-                    "link": "docs/en/tools-for-using-services/account/use-cases/account-delete"
+                    "link": "/en/tools-for-using-services/account/use-cases/account-delete"
                 }
             ]
         }

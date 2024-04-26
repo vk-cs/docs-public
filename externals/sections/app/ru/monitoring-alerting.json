@@ -6,16 +6,16 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "docs/ru/manage/alerting/alerting-about"
+                    "link": "/ru/manage/alerting/alerting-about"
                 },
                 {
-                    "link": "docs/ru/manage/alerting/notification"
+                    "link": "/ru/manage/alerting/notification"
                 },
                 {
-                    "link": "docs/ru/manage/alerting/triggers"
+                    "link": "/ru/manage/alerting/triggers"
                 },
                 {
-                    "link": "docs/ru/manage/alerting/incidents"
+                    "link": "/ru/manage/alerting/incidents"
                 }
             ]
         }

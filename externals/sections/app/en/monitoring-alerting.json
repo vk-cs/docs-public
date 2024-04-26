@@ -6,16 +6,16 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "docs/en/manage/alerting/alerting-about"
+                    "link": "/en/manage/alerting/alerting-about"
                 },
                 {
-                    "link": "docs/en/manage/alerting/notification"
+                    "link": "/en/manage/alerting/notification"
                 },
                 {
-                    "link": "docs/en/manage/alerting/triggers"
+                    "link": "/en/manage/alerting/triggers"
                 },
                 {
-                    "link": "docs/en/manage/alerting/incidents"
+                    "link": "/en/manage/alerting/incidents"
                 }
             ]
         }
