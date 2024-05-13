@@ -10,7 +10,7 @@
   "weight": 3,
   "relativeSections": [
     {
-      "partialPath": "en/tools-for-using-services/terraform/use-cases/mlplatform/deploymlflow"
+      "partialPath": "/en/tools-for-using-services/terraform/use-cases/mlplatform/deploymlflow"
     }
   ],
   "uuid": "42b8d343-7992-4dfb-b3a8-47f1eb65f94b"
