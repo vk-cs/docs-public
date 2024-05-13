@@ -44,7 +44,7 @@ Virtualization, monitoring, container, and data storage services can be deployed
   <details>
     <summary>List of Common&Security Services</summary>
 
-  - [Billing](/en/additionals/billing) — keeps records of resource usage and expense control, generates financial reports, provides interaction with payment systems when paying for services.
+  - [Billing](/en/intro/billing) — keeps records of resource usage and expense control, generates financial reports, provides interaction with payment systems when paying for services.
   - Audit — generates an audit log of user actions in VK Cloud.
   - IAM — manages authentication and authorization of users and services in conjunction with Keystone.
   - [Cloud Monitoring](/en/manage/monitoring) — provides monitoring of cloud services and user applications.

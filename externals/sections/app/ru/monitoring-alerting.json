@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/manage/alerting/alerting-about"
+                    "link": "/ru/manage/alerting/about"
                 },
                 {
                     "link": "/ru/manage/alerting/notification"

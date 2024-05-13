@@ -15,7 +15,7 @@ Authorization data is passed in the query string:
 
 <info>
 
-Obtaining an access token, as well as supported OAuth2 providers are given in the article [Authorization](../../vision-start/auth-vision).
+Obtaining an access token, as well as supported OAuth2 providers are given in the article [Authorization](../../quick-start/auth-vision).
 
 </info>
 

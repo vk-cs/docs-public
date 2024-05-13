@@ -1,0 +1,11 @@
+{
+    "title": "Использование SSL-сертификата",
+    "pageDescription": "Как добавить Let's Encrypt или свой SSL-сертификат к CDN-ресурсу.",
+    "shortDescription": "Как добавить Let's Encrypt или свой SSL-сертификат к CDN-ресурсу",
+    "metaTitle": "Использование SSL-сертификата",
+    "metaDescription": "Как добавить Let's Encrypt или свой SSL-сертификат к CDN-ресурсу",
+    "sectionTitle": "Использование SSL-сертификата",
+    "markdown": "",
+    "icon": "",
+    "weight": 3
+}

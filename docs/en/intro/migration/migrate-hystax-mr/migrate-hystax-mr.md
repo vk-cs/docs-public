@@ -1,1 +1,1 @@
-{include(/en/vendors-products/marketplace/initial-configuration/migrate-hystax/migrate-hystax.md)}
+{include(/en/applications-and-services/marketplace/initial-configuration/migrate-hystax/migrate-hystax.md)}
