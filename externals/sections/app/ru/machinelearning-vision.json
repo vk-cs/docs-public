@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/ml/vision/about-vision"
+                    "link": "/ru/ml/vision/about"
                 },
                 {
                     "link": "/ru/ml/vision/vision-limits"
@@ -20,7 +20,7 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "/ru/ml/vision/vision-start/auth-vision"
+                    "link": "/ru/ml/vision/quick-start/auth-vision"
                 },
                 {
                     "link": "/ru/ml/vision/manage-vision"

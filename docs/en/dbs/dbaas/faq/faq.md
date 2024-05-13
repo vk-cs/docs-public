@@ -3,7 +3,7 @@
 
 <summary>How to create a database?</summary>
 
-You can create a database using [step-by-step instructions](../instructions/create/) or [quick start](../quick-start/).
+You can create a database using [step-by-step instructions](../service-management/create/) or [quick start](../quick-start/).
 
 </details>
 
@@ -11,7 +11,7 @@ You can create a database using [step-by-step instructions](../instructions/crea
 
 <summary>Which DBMS are available in the cloud?</summary>
 
-Full [list](../types/) of supported DBMS and their [configurations](../instructions/work-modes/work-configs/).
+Full [list](../types/) of supported DBMS and their [configurations](../concepts/work-configs/).
 
 </details>
 
@@ -19,7 +19,7 @@ Full [list](../types/) of supported DBMS and their [configurations](../instructi
 
 <summary>How do I select the desired DB instance configuration?</summary>
 
-You can select the desired configuration type when [creating a DB instance](../instructions/create/). After creating an instance, the configuration type cannot be changed, but you can always add a replica. For more information about configuration types, see [DB instance configurations](../concepts/work-configs/).
+You can select the desired configuration type when [creating a DB instance](../service-management/create/). After creating an instance, the configuration type cannot be changed, but you can always add a replica. For more information about configuration types, see [DB instance configurations](../concepts/work-configs/).
 
 </details>
 
@@ -27,7 +27,7 @@ You can select the desired configuration type when [creating a DB instance](../i
 
 <summary>Can I change the DB instance configuration file myself?</summary>
 
-No, the configuration file is not editable by the user. To change the configuration, contact [technical support](/en/contacts/). But you can change individual parameters for some DBMS according to [instructions](../instructions/db-config/).
+No, the configuration file is not editable by the user. To change the configuration, contact [technical support](/en/contacts/). But you can change individual parameters for some DBMS according to [instructions](../service-management/db-config/).
 
 </details>
 
@@ -35,7 +35,7 @@ No, the configuration file is not editable by the user. To change the configurat
 
 <summary>What does the cost of the service depend on?</summary>
 
-The cost of the service depends on the selected [configuration](../instructions/work-modes/work-configs/). Payment is calculated only for the resources used, for more information, see the article [Tariffication](../tariffication/).
+The cost of the service depends on the selected [configuration](../concepts/work-configs/). Payment is calculated only for the resources used, for more information, see the article [Tariffication](../tariffication/).
 
 </details>
 
@@ -43,7 +43,7 @@ The cost of the service depends on the selected [configuration](../instructions/
 
 <summary>How do I add a database user?</summary>
 
-Use the instructions [User management](../instructions/users/).
+Use the instructions [User management](../service-management/users/).
 
 </details>
 
@@ -51,7 +51,7 @@ Use the instructions [User management](../instructions/users/).
 
 <summary>Is backup enabled by default?</summary>
 
-Backup is not enabled by default. You can enable it when [creating an instance](../instructions/create/) or configure it in the [Backup](../../../storage/backups/db-backup/) section.
+Backup is not enabled by default. You can enable it when [creating an instance](../service-management/create/) or configure it in the [Backup](../../../storage/backups/db-backup/) section.
 
 </details>
 
@@ -68,7 +68,7 @@ To check if backup is enabled:
 
    If there is a green indicator next to the name of the desired plan, the backup works according to plan. If the indicator is red, the backup is suspended.
 
-Backup can be enabled when [creating a DB instance](../instructions/create/) or configured separately by [creating a backup plan](/en/manage/backups/db-backup/).
+Backup can be enabled when [creating a DB instance](../service-management/create/) or configured separately by [creating a backup plan](/en/manage/backups/db-backup/).
 
 </details>
 
@@ -98,7 +98,7 @@ You can change the type of VM hosting the databases or increase the disk size. W
 
 You can also enable autoscaling of the database disk size. Then, as the amount of data increases, the disk size will increase automatically.
 
-For instructions on scaling a DB instance, see [DB instance management](../instructions/).
+For instructions on scaling a DB instance, see [DB instance management](../service-management/).
 
 </details>
 
@@ -122,7 +122,7 @@ Asynchronous replication works for **Master-Replica** configurations. Synchronou
 
 <summary>How do I create a database replica?</summary>
 
-Use the instructions in the article [Replication](../instructions/replication/).
+Use the instructions in the article [Replication](../service-management/replication/).
 
 </details>
 
@@ -130,7 +130,7 @@ Use the instructions in the article [Replication](../instructions/replication/).
 
 <summary>How do I install monitoring extensions for the database?</summary>
 
-Installing extensions is described in detail in the section [Managing extensions](../instructions/managing-extensions/).
+Installing extensions is described in detail in the section [Managing extensions](../service-management/managing-extensions/).
 
 </details>
 
@@ -138,7 +138,7 @@ Installing extensions is described in detail in the section [Managing extensions
 
 <summary>How is auto-switching between database nodes configured?</summary>
 
-When using a database cluster, if the wizard is unavailable, switching to other nodes will be configured automatically. When using [configuration](../instructions/work-modes/work-configs/) **Master-Replica** switching will need to be done manually:
+When using a database cluster, if the wizard is unavailable, switching to other nodes will be configured automatically. When using [configuration](../concepts/work-configs/) **Master-Replica** switching will need to be done manually:
 
 - MySQL;
 - PostgreSQL, Postgres Pro.

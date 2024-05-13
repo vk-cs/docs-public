@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/base/gpu/gpu-info"
+                    "link": "/ru/base/gpu/about"
                 },
                 {
                     "link": "/ru/base/iaas/faq"
@@ -20,7 +20,7 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "/ru/base/gpu/gpu-create"
+                    "link": "/ru/base/gpu/connect"
                 },
                 {
                     "link": "/ru/base/iaas/instructions/vm/vm-connect"

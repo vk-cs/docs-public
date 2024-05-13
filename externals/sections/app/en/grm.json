@@ -6,17 +6,17 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "/en/vendors-products/1cgrm/1cgrm-about"
+                    "link": "/en/applications-and-services/1cgrm/about"
                 },
                 {
-                    "link": "/en/vendors-products/1cgrm/1cgrm-rates",
+                    "link": "/en/applications-and-services/1cgrm/tariffication",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "/en/vendors-products/1cgrm/1cgrm-start"
+                    "link": "/en/applications-and-services/1cgrm/connect"
                 },
                 {
-                    "link": "/en/vendors-products/1cgrm/1cgrm-faq"
+                    "link": "/en/applications-and-services/1cgrm/faq"
                 }
             ]
         }

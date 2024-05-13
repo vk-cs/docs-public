@@ -7,7 +7,7 @@
 
 <info>
 
-Чтобы войти в существующий проект VK Cloud, следуйте инструкциям в статье [Вход в проект по приглашению](/ru/base/account/instructions/project-invitation).
+Чтобы войти в существующий проект VK Cloud, следуйте инструкциям в статье [Вход в проект по приглашению](/ru/tools-for-using-services/account/service-management/project-invitation).
 
 </info>
 
@@ -77,7 +77,7 @@
 
    </details>
 
-   1. Скопируйте [идентификатор (PID)](/ru/base/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) вашего проекта из URL сайта VK Cloud.
+   1. Скопируйте [идентификатор (PID)](/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta) вашего проекта из URL сайта VK Cloud.
 
       Пример URL для региона Москва: `https://msk.cloud.vk.com/app/mcs123456789/main`, где `mcs123456789` — идентификатор (PID) проекта.
 
@@ -101,7 +101,7 @@
    1. Нажмите кнопку **Отправить**.
    1. Дождитесь одобрения вашей заявки.
 
-1. [Привяжите](/ru/base/account/instructions/activation#privyazka_bankovskoy_karty) карту [поддерживаемой платежной системы](/ru/additionals/billing/concepts/payment-methods). Указанная сумма будет списана с карты и зачислена на баланс вашего проекта.
+1. [Привяжите](/ru/tools-for-using-services/account/service-management/activation#privyazka_bankovskoy_karty) карту [поддерживаемой платежной системы](/ru/intro/billing/concepts/payment-methods). Указанная сумма будет списана с карты и зачислена на баланс вашего проекта.
 
    <warn>
 
@@ -111,11 +111,11 @@
 
    </warn>
 
-1. (Опционально) На открывшейся вкладке **Автопополнение** настройте [автопополнение](/ru/additionals/billing/instructions/add-card#nastroit_avtopopolnenie) баланса.
+1. (Опционально) На открывшейся вкладке **Автопополнение** настройте [автопополнение](/ru/intro/billing/service-management/add-card#nastroit_avtopopolnenie) баланса.
 1. Нажмите кнопку **Начать работу с VK Cloud**.
 1. Дождитесь перехода в личный кабинет. Будет показано сообщение об успешной активации сервисов.
 
-Для вашей учетной записи будет автоматически создан [проект](/ru/base/account/concepts/projects) VK Cloud. После активации сервисов на [баланс](/ru/additionals/billing/concepts/balance) проекта будут однократно начислены приветственные [бонусы](/ru/additionals/billing/concepts/balance#bonusy). Если бонусы не начислены в течение 3 рабочих дней, обратитесь в [техническую поддержку](/ru/contacts).
+Для вашей учетной записи будет автоматически создан [проект](/ru/base/account/concepts/projects) VK Cloud. После активации сервисов на [баланс](/ru/intro/billing/concepts/balance) проекта будут однократно начислены приветственные [бонусы](/ru/intro/billing/concepts/balance#bonusy). Если бонусы не начислены в течение 3 рабочих дней, обратитесь в [техническую поддержку](/ru/contacts).
 
 ## 3. Активируйте доступ по API
 
@@ -125,15 +125,15 @@ VK Cloud поддерживает работу с платформой при п
 
 </info>
 
-1. [Настройте](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
+1. [Настройте](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
 1. [Активируйте](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
 
 ## 4. (Опционально) Пригласите участников в проект
 
 Вы — [владелец](/ru/base/account/concepts/rolesandpermissions) созданного при регистрации аккаунта проекта. Чтобы добавить в проект других пользователей:
 
-1. [Пригласите](/ru/base/account/instructions/project-settings/access-manage) пользователей, назначив им [роли](/ru/base/account/concepts/rolesandpermissions).
-1. [Включите](/ru/base/account/instructions/project-settings/access-manage#vklyuchenie_v_proekte_obyazatelnoy_2fa) обязательную 2FA для всех участников проекта, чтобы снизить риск несанкционированного доступа.
+1. [Пригласите](/ru/tools-for-using-services/account/service-management/project-settings/access-manage) пользователей, назначив им [роли](/ru/base/account/concepts/rolesandpermissions).
+1. [Включите](/ru/tools-for-using-services/account/service-management/project-settings/access-manage#vklyuchenie_v_proekte_obyazatelnoy_2fa) обязательную 2FA для всех участников проекта, чтобы снизить риск несанкционированного доступа.
 
 ## 5. (Опционально) Подключитесь к проекту через OpenStack CLI
 
@@ -148,7 +148,7 @@ VK Cloud поддерживает работу с платформой при п
 
 ## Что дальше?
 
-- [Донастройте](/ru/additionals/billing/instructions/corporate/) проект для проведения оплаты через ЮЛ.
+- [Донастройте](/ru/intro/billing/service-management/corporate/) проект для проведения оплаты через ЮЛ.
 - [Ознакомьтесь](/ru/base/account/concepts/quotasandlimits) с квотами и лимитами проектов VK Cloud.
-- Ознакомьтесь со [способами пополнения баланса](/ru/additionals/billing/instructions/payment) и базовыми принципами [тарификации](/ru/base/account/tariffication) сервисов.
+- Ознакомьтесь со [способами пополнения баланса](/ru/intro/billing/service-management/payment) и базовыми принципами [тарификации](/ru/base/account/tariffication) сервисов.
 - Узнайте, как создать и подключить [виртуальную машину](/ru/base/iaas/quick-start), [кластер Kubernetes](/ru/base/k8s/quickstart), [базу данных](/ru/dbs/dbaas/start).
