@@ -11,7 +11,7 @@
 
 После активации сервисов проекту становятся доступны базовые квоты. Для них установлены значения по умолчанию, которые применяются для всех новых проектов региона.
 
-Квоты можно [посмотреть](../../instructions/project-settings/manage#prosmotr_kvot_proekta) в личном кабинете (краткий список) и через OpenStack CLI (расширенный список). Есть неявные квоты, которые нельзя увидеть ни одним из способов, они проявляются в виде сообщений об ошибке при попытке создать новый объект. Пример неявной квоты — [квота на количество проектов](#obshchie_d4f726f4), которые может создать один пользователь.
+Квоты можно [посмотреть](../../service-management/project-settings/manage#prosmotr_kvot_proekta) в личном кабинете (краткий список) и через OpenStack CLI (расширенный список). Есть неявные квоты, которые нельзя увидеть ни одним из способов, они проявляются в виде сообщений об ошибке при попытке создать новый объект. Пример неявной квоты — [квота на количество проектов](#obshchie_d4f726f4), которые может создать один пользователь.
 
 Квоты тесно связаны с [техническими лимитами](#kvoty_i_tehnicheskie_limity).
 
@@ -25,7 +25,7 @@
 
 Для некоторых технических лимитов не существует соответствующих им квот.
 
-Квоты можно [увеличить](../../instructions/project-settings/manage#uvelichenie_kvot_proekta) в пределах технических лимитов, обратившись в техническую поддержку.
+Квоты можно [увеличить](../../service-management/project-settings/manage#uvelichenie_kvot_proekta) в пределах технических лимитов, обратившись в техническую поддержку.
 
 Нежесткие лимиты можно превысить — либо также через [техническую поддержку](/ru/contacts), либо самостоятельно. Однако превышение этих лимитов может негативно сказаться на стабильности работы.
 
@@ -37,7 +37,7 @@
 |--------------------------------------|---------|--------------------|---------|---|
 | Количество проектов у пользователя   | — | 5 шт.   | 100 шт.            | +       |
 | Количество администраторов в проекте | — | 50 чел. | 50 чел.            | +       |
-| Количество пар SSH-ключей | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) `key-pairs` в расширенном списке | 100 пар ключей | не ограничено | |
+| Количество пар SSH-ключей | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) `key-pairs` в расширенном списке | 100 пар ключей | не ограничено | |
 
 ### Виртуальные машины
 
@@ -45,9 +45,9 @@
 
 | Параметр                            | Квота | Базовая квота | Лимит         | Жесткий |
 |-------------------------------------|-------|-----------------------|---------|---|
-| Количество инстансов в проекте      | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Виртуальные машины** в личном кабинете, `instances` в расширенном списке | 6 шт. | 1000 шт. | — |
-| Количество vCPU в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **vCPU** в личном кабинете, `cores` в расширенном списке | 9 шт. | не ограничено | |
-| Общий объем оперативной памяти в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **RAM** в личном кабинете, `ram` в расширенном списке | 10240 МБ | не ограничено |
+| Количество инстансов в проекте      | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Виртуальные машины** в личном кабинете, `instances` в расширенном списке | 6 шт. | 1000 шт. | — |
+| Количество vCPU в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **vCPU** в личном кабинете, `cores` в расширенном списке | 9 шт. | не ограничено | |
+| Общий объем оперативной памяти в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **RAM** в личном кабинете, `ram` в расширенном списке | 10240 МБ | не ограничено |
 
 Лимит на количество инстансов в проекте можно превысить, если увеличить соответствующую квоту по запросу в [техническую поддержку](/ru/contacts).
 
@@ -90,10 +90,10 @@
 
 | Параметр                  | Квота | Базовая квота                           | Лимит |
 |---------------------------|---------------------------------|-------|---------|
-| Общий объем дисков в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Размер дисков** в личном кабинете, `gigabytes` в расширенном списке | 200 ГБ | не ограничено |
-| Общий объем дисков High-IOPS SSD | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Размер High-IOPS SSD** в личном кабинете, `gigabytes_high-iops` в расширенном списке  | 200 ГБ | не ограничено |
-| Общий объем дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93) GZ1 | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Размер High-IOPS SSD в зоне - (DP1)** в личном кабинете, `gigabytes_dp1-high-iops` в расширенном списке | 200 ГБ | не ограничено |
-| Общий объем дисков High-IOPS SSD в зоне доступности MS1 | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Размер High-IOPS SSD в зоне Москва (MS1)** в личном кабинете, `gigabytes_ko1-high-iops` в расширенном списке | 200 ГБ | не ограничено |
+| Общий объем дисков в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Размер дисков** в личном кабинете, `gigabytes` в расширенном списке | 200 ГБ | не ограничено |
+| Общий объем дисков High-IOPS SSD | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Размер High-IOPS SSD** в личном кабинете, `gigabytes_high-iops` в расширенном списке  | 200 ГБ | не ограничено |
+| Общий объем дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93) GZ1 | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Размер High-IOPS SSD в зоне - (DP1)** в личном кабинете, `gigabytes_dp1-high-iops` в расширенном списке | 200 ГБ | не ограничено |
+| Общий объем дисков High-IOPS SSD в зоне доступности MS1 | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Размер High-IOPS SSD в зоне Москва (MS1)** в личном кабинете, `gigabytes_ko1-high-iops` в расширенном списке | 200 ГБ | не ограничено |
 
 Квоты на общий объем дисков в проекте учитывают диски всех типов, в том числе High-IOPS SSD. Квоты на общий объем дисков High-IOPS SSD учитывают диски, созданные в обеих зонах доступности. Если вы запрашиваете через [техническую поддержку](/ru/contacts) увеличение квоты, включенной в другую квоту, квота более высокого уровня будет увеличена пропорционально.
 
@@ -101,10 +101,10 @@
 
 | Параметр                  | Квота | Базовая квота                           | Лимит |
 |---------------------------|---------------------------------|-------|---------|
-| Количество дисков в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Диски** в личном кабинете, `volumes` в расширенном списке | 10 шт. | не ограничено |
-| Количество дисков High-IOPS SSD в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Диски High-IOPS SSD** в личном кабинете, `volumes_high-iops` в расширенном списке | 10 шт. | не ограничено |
-| Количество дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93) GZ1 | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Диски High-IOPS SSD в зоне - (DP1)** в личном кабинете, `volumes_dp1-high-iops` в расширенном списке | 10 шт. | не ограничено |
-| Количество дисков High-IOPS SSD в зоне доступности MS1 | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Диски High-IOPS SSD в зоне Москва (MS1)** в личном кабинете, `volumes_ko1-high-iops` в расширенном списке | 10 шт.  | не ограничено |
+| Количество дисков в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Диски** в личном кабинете, `volumes` в расширенном списке | 10 шт. | не ограничено |
+| Количество дисков High-IOPS SSD в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Диски High-IOPS SSD** в личном кабинете, `volumes_high-iops` в расширенном списке | 10 шт. | не ограничено |
+| Количество дисков High-IOPS SSD в [зоне доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93) GZ1 | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Диски High-IOPS SSD в зоне - (DP1)** в личном кабинете, `volumes_dp1-high-iops` в расширенном списке | 10 шт. | не ограничено |
+| Количество дисков High-IOPS SSD в зоне доступности MS1 | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Диски High-IOPS SSD в зоне Москва (MS1)** в личном кабинете, `volumes_ko1-high-iops` в расширенном списке | 10 шт.  | не ограничено |
 
 Квоты на общее количество дисков в проекте учитывают диски всех типов, в том числе High-IOPS SSD. Квоты на общее количество дисков High-IOPS SSD учитывают диски, созданные в обеих зонах доступности. Если вы запрашиваете через [техническую поддержку](/ru/contacts) увеличение квоты, включенной в другую квоту, квота более высокого уровня будет увеличена пропорционально.
 
@@ -134,10 +134,10 @@
 
 | Параметр                        | Квота | Базовая квота | Лимит   | Жесткий |
 |---------------------------------|-------|-----|---------|---------|
-| Количество файловых хранилищ в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Файловые хранилища NFS/CIFS** в личном кабинете | 10 шт. | не ограничено | |
-| Общий объем всех файловых хранилищ в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Размер файловых хранилищ NFS/CIFS** в личном кабинете | 200 ГБ | не ограничено | |
-| Общий объем снимков файловых хранилищ в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Размер снимков файловых хранилищ NFS/CIFS** в личном кабинете | 200 ГБ | не ограничено | |
-| Количество сетей файловых хранилищ | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Сети файловых хранилищ NFS/CIFS** в личном кабинете | 5 шт. | не ограничено | |
+| Количество файловых хранилищ в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Файловые хранилища NFS/CIFS** в личном кабинете | 10 шт. | не ограничено | |
+| Общий объем всех файловых хранилищ в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Размер файловых хранилищ NFS/CIFS** в личном кабинете | 200 ГБ | не ограничено | |
+| Общий объем снимков файловых хранилищ в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Размер снимков файловых хранилищ NFS/CIFS** в личном кабинете | 200 ГБ | не ограничено | |
+| Количество сетей файловых хранилищ | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Сети файловых хранилищ NFS/CIFS** в личном кабинете | 5 шт. | не ограничено | |
 | Размер одного файлового хранилища | — | — | 50 ТБ   | + |
 
 Квота на количество сетей файловых хранилищ (**Сети файловых хранилищ NFS/CIFS**) является квотой для внутреннего использования.
@@ -157,18 +157,18 @@
 
 | Параметр                          | Квота | Базовая квота | Лимит | Жесткий |
 |-----------------------------------|-------|------------|---------|----|
-| Количество сетей в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Сети Sprut** в личном кабинете, `networks` в расширенном списке | 10 шт. | 20 шт.             | — |
-| Количество подсетей в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Подсети Sprut** в личном кабинете, `subnets` в расширенном списке | 10 шт. | 20 шт. | — |
-| Количество плавающих IP-адресов | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **IP-адреса Sprut** в личном кабинете, `floating-ips` в расширенном списке | 6 шт. | 50 шт.| — |
+| Количество сетей в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Сети Sprut** в личном кабинете, `networks` в расширенном списке | 10 шт. | 20 шт.             | — |
+| Количество подсетей в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Подсети Sprut** в личном кабинете, `subnets` в расширенном списке | 10 шт. | 20 шт. | — |
+| Количество плавающих IP-адресов | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **IP-адреса Sprut** в личном кабинете, `floating-ips` в расширенном списке | 6 шт. | 50 шт.| — |
 
 </tabpanel>
 <tabpanel>
 
 | Параметр                          | Квота | Базовая квота | Лимит | Жесткий |
 |-----------------------------------|-------|------------|---------|----|
-| Количество сетей в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Сети Neutron** в личном кабинете, `networks` в расширенном списке | 10 шт. | 20 шт.             | — |
-| Количество подсетей в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Подсети Neutron** в личном кабинете, `subnets` в расширенном списке | 10 шт. | 20 шт. | — |
-| Количество плавающих IP-адресов | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **IP-адреса Neutron** в личном кабинете, `floating-ips` в расширенном списке | 6 шт. | 50 шт.| — |
+| Количество сетей в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Сети Neutron** в личном кабинете, `networks` в расширенном списке | 10 шт. | 20 шт.             | — |
+| Количество подсетей в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Подсети Neutron** в личном кабинете, `subnets` в расширенном списке | 10 шт. | 20 шт. | — |
+| Количество плавающих IP-адресов | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **IP-адреса Neutron** в личном кабинете, `floating-ips` в расширенном списке | 6 шт. | 50 шт.| — |
 
 </tabpanel>
 </tabs>
@@ -187,30 +187,30 @@
 
 | Параметр                          | Квота | Базовая квота | Лимит | Жесткий |
 |-----------------------------------|-------|------------|---------|----|
-| Количество маршрутизаторов   | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Маршрутизаторы Sprut** в личном кабинете, `routers` в расширенном списке | 12 шт. | 20 шт.             | — |
-| Количество продвинутых маршрутизаторов   | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Маршрутизаторы Sprut** в личном кабинете, `dc_router` в расширенном списке | 3 шт. | 3 шт.             | — |
-| Количество групп безопасности в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Группы безопасности Sprut** В личном кабинете, `secgroups` в расширенном списке | 12 шт. | не ограничено | |
-| Количество правил безопасности в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Правила безопасности Sprut** В личном кабинете, `secgroup-rules` в расширенном списке | 200 шт. | не ограничено | |
-| Количество портов в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Порты Sprut** В личном кабинете, `ports` в расширенном списке | 120 шт. | 500 шт. | — |
-| Количество портов с адресами во внешней сети в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Порты во внешней сети Sprut** в личном кабинете, `external_port` в расширенном списке | 5 шт. | 6 шт. | — |
+| Количество маршрутизаторов   | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Маршрутизаторы Sprut** в личном кабинете, `routers` в расширенном списке | 12 шт. | 20 шт.             | — |
+| Количество продвинутых маршрутизаторов   | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Маршрутизаторы Sprut** в личном кабинете, `dc_router` в расширенном списке | 3 шт. | 3 шт.             | — |
+| Количество групп безопасности в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Группы безопасности Sprut** В личном кабинете, `secgroups` в расширенном списке | 12 шт. | не ограничено | |
+| Количество правил безопасности в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Правила безопасности Sprut** В личном кабинете, `secgroup-rules` в расширенном списке | 200 шт. | не ограничено | |
+| Количество портов в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Порты Sprut** В личном кабинете, `ports` в расширенном списке | 120 шт. | 500 шт. | — |
+| Количество портов с адресами во внешней сети в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Порты во внешней сети Sprut** в личном кабинете, `external_port` в расширенном списке | 5 шт. | 6 шт. | — |
 
 </tabpanel>
 <tabpanel>
 
 | Параметр                          | Квота | Базовая квота | Лимит | Жесткий |
 |-----------------------------------|-------|------------|---------|----|
-| Количество маршрутизаторов   | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Маршрутизаторы Neutron** в личном кабинете, `routers` в расширенном списке | 12 шт. | 20 шт.             | — |
-| Количество групп безопасности в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Группы безопасности Neutron** В личном кабинете, `secgroups` в расширенном списке | 12 шт. | не ограничено | |
-| Количество правил безопасности в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Правила безопасности Neutron** В личном кабинете, `secgroup-rules` в расширенном списке | 200 шт. | не ограничено | |
-| Количество портов в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Порты Neutron** В личном кабинете, `ports` в расширенном списке | 120 шт. | 500 шт. | — |
-| Количество портов Neutron с адресами во внешней сети в проекте | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Порты во внешней сети Neutron** в личном кабинете, `external_port` в расширенном списке | 5 шт. | 6 шт. | — |
+| Количество маршрутизаторов   | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Маршрутизаторы Neutron** в личном кабинете, `routers` в расширенном списке | 12 шт. | 20 шт.             | — |
+| Количество групп безопасности в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Группы безопасности Neutron** В личном кабинете, `secgroups` в расширенном списке | 12 шт. | не ограничено | |
+| Количество правил безопасности в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Правила безопасности Neutron** В личном кабинете, `secgroup-rules` в расширенном списке | 200 шт. | не ограничено | |
+| Количество портов в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Порты Neutron** В личном кабинете, `ports` в расширенном списке | 120 шт. | 500 шт. | — |
+| Количество портов Neutron с адресами во внешней сети в проекте | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Порты во внешней сети Neutron** в личном кабинете, `external_port` в расширенном списке | 5 шт. | 6 шт. | — |
 
 </tabpanel>
 <tabpanel>
 
 | Параметр                          | Квота | Базовая квота | Лимит | Жесткий |
 |-----------------------------------|-------|------------|---------|----|
-| Количество балансировщиков нагрузки | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) **Балансировщики Octavia** в личном кабинете, `load_balancers` в расширенном списке | 12 шт. | 20 шт. | — |
+| Количество балансировщиков нагрузки | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) **Балансировщики Octavia** в личном кабинете, `load_balancers` в расширенном списке | 12 шт. | 20 шт. | — |
 | Количество правил балансировки на один балансировщик | — | — | 10 шт. через личный кабинет, 30 шт. через OpenStack CLI   | —   |
 
 </tabpanel>
@@ -224,12 +224,12 @@
 
 | Параметр                                      | Квота | Базовая квота  | Лимит | Жесткий |
 |-----------------------------------------------|---------------------------------|--------------------|--|--|
-| Количество резервных копий                    | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta) `backups` из расширенного списка | 400 шт. | не ограничено | |
-| Количество снимков                            | [квота](../../instructions/project-settings/manage#prosmotr_kvot_proekta)  `snapshots` из расширенного списка | 200 шт. | не ограничено | |
+| Количество резервных копий                    | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta) `backups` из расширенного списка | 400 шт. | не ограничено | |
+| Количество снимков                            | [квота](../../service-management/project-settings/manage#prosmotr_kvot_proekta)  `snapshots` из расширенного списка | 200 шт. | не ограничено | |
 | Размер одной резервной копии                  | — | — | 320 ТБ        | — |
 | Общий объем образов                           | — | — | 2 ТБ          | — |
 
-Лимит на размер резервной копии (320 ТБ) обусловлен лимитом на размер файла в сервисе Cloud Storage, этот сервис используется для хранения резервных копий. Этот лимит можно [увеличить](../../instructions/project-settings/manage#uvelichenie_kvot_proekta), обратившись в техническую поддержку.
+Лимит на размер резервной копии (320 ТБ) обусловлен лимитом на размер файла в сервисе Cloud Storage, этот сервис используется для хранения резервных копий. Этот лимит можно [увеличить](../../service-management/project-settings/manage#uvelichenie_kvot_proekta), обратившись в техническую поддержку.
 
 ### Cloud Storage
 
@@ -245,4 +245,4 @@
 | Рейт-лимит: обычные запросы  | запрос/сек: 1000 | не ограничено, максимальное известное значение среди всех проектов: 9000 запросов / сек | — |
 | Рейт-лимит: запросы на листинг | запрос/сек: 250 | не ограничено, максимальное известное значение среди всех проектов: 500 запросов / сек | — |
 
-Рейт-лимиты можно [увеличить](../../instructions/project-settings/manage#uvelichenie_kvot_proekta), обратившись в техническую поддержку.
+Рейт-лимиты можно [увеличить](../../service-management/project-settings/manage#uvelichenie_kvot_proekta), обратившись в техническую поддержку.

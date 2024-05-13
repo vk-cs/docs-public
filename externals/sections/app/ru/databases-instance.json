@@ -30,7 +30,7 @@
                     "link": "/ru/dbs/dbaas/connect"
                 },
                 {
-                    "link": "/ru/dbs/dbaas/instructions/manage-instance"
+                    "link": "/ru/dbs/dbaas/service-management/manage-instance"
                 }
             ]
         },
@@ -38,7 +38,7 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/dbs/dbaas/use-cases/db-migration"
+                    "link": "/ru/dbs/dbaas/how-to-guides/db-migration"
                 },
                 {
                     "link": "/ru/dbs/dbaas/extensions"

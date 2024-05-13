@@ -6,7 +6,7 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "/en/ml/vision/about-vision"
+                    "link": "/en/ml/vision/about"
                 },
                 {
                     "link": "/en/ml/vision/vision-limits"
@@ -20,7 +20,7 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "/en/ml/vision/vision-start/auth-vision"
+                    "link": "/en/ml/vision/quick-start/auth-vision"
                 },
                 {
                     "link": "/en/ml/vision/manage-vision"

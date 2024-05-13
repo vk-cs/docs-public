@@ -51,12 +51,12 @@ ExternalDNS will use this VK Cloud user's credentials to cooperate with the VK C
 
 Prepare the user and get all the necessary credentials:
 
-1. [Select](/base/account/instructions/project-settings/access-manage#viewing_project_members) an existing user or [invite a new user to the project](/en/base/account/instructions/project-settings/access-manage#inviting_a_new_member_to_the_project).
+1. [Select](/tools-for-using-services/account/service-management/project-settings/access-manage#viewing_project_members) an existing user or [invite a new user to the project](/en/tools-for-using-services/account/service-management/project-settings/access-manage#inviting_a_new_member_to_the_project).
 
    User Requirements:
 
    - API access must be [enabled](/en/manage/tools-for-using-services/rest-api/enable-api).
-   - One of the following roles must be [assigned](/en/base/account/instructions/project-settings/access-manage#changing_member_role) in order for ExternalDNS to operate resource records within the DNS zone:
+   - One of the following roles must be [assigned](/en/tools-for-using-services/account/service-management/project-settings/access-manage#changing_member_role) in order for ExternalDNS to operate resource records within the DNS zone:
 
      - Network Administrator (a minimum required [role](/en/base/account/concepts/rolesandpermissions#roles_and_their_permissions_the_full_matrix)).
      - Project Administrator.

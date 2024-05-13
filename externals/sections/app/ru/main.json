@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/additionals/billing/instructions/corporate"
+                    "link": "/ru/intro/billing/service-management/corporate"
                 },
                 {
                     "link": "/ru/tools-for-using-services/account/concepts/quotasandlimits"
@@ -15,7 +15,7 @@
                     "link": "/ru/tools-for-using-services/account/concepts/rolesandpermissions"
                 },
                 {
-                    "link": "/ru/additionals/billing",
+                    "link": "/ru/intro/billing",
                     "hiddenForPartners": true
                 },
                 {
@@ -33,14 +33,14 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "/ru/additionals/billing/quick-start",
+                    "link": "/ru/intro/billing/quick-start",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "/ru/tools-for-using-services/account/instructions/activation"
+                    "link": "/ru/tools-for-using-services/account/service-management/activation"
                 },
                 {
-                    "link": "/ru/additionals/billing/instructions/payment",
+                    "link": "/ru/intro/billing/service-management/payment",
                     "hiddenForPartners": true
                 }
             ]
@@ -49,25 +49,25 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/tools-for-using-services/account/instructions/project-settings"
+                    "link": "/ru/tools-for-using-services/account/service-management/project-settings"
                 },
                 {
-                    "link": "/ru/tools-for-using-services/account/instructions/account-manage"
+                    "link": "/ru/tools-for-using-services/account/service-management/account-manage"
                 },
                 {
                     "link": "/ru/tools-for-using-services"
                 },
                 {
-                    "link": "/ru/tools-for-using-services/account/instructions/actionslogs"
+                    "link": "/ru/tools-for-using-services/account/service-management/actionslogs"
                 },
                 {
-                    "link": "/ru/tools-for-using-services/account/use-cases/systemstate"
+                    "link": "/ru/tools-for-using-services/account/how-to-guides/systemstate"
                 },
                 {
-                    "link": "/ru/tools-for-using-services/account/use-cases/ideasportal"
+                    "link": "/ru/tools-for-using-services/account/how-to-guides/ideasportal"
                 },
                 {
-                    "link": "/ru/tools-for-using-services/account/use-cases/account-delete"
+                    "link": "/ru/tools-for-using-services/account/how-to-guides/account-delete"
                 }
             ]
         }

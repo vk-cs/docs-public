@@ -1,0 +1,64 @@
+К VK Cloud можно подключить вашего поставщика удостоверений (Identity Provider). Это позволит вашим сотрудникам заходить в VK Cloud без ввода логина и пароля, используя корпоративные аутентификационные данные поставщика удостоверений. Такой режим называется федерация удостоверений.
+
+Для работы в режиме федерации поставщик удостоверений должен поддерживать стандарт SAML 2.0.
+
+Далее будет показана настройка федерации удостоверений на примере [службы федерации Active Directory](https://learn.microsoft.com/ru-ru/windows-server/identity/ad-fs/ad-fs-overview) (AD FS).
+
+## Подготовительные шаги
+
+[Настройте](https://learn.microsoft.com/ru-ru/windows-server/identity/ad-fs/ad-fs-deployment) AD FS, [создайте](https://learn.microsoft.com/en-us/powershell/module/activedirectory/add-adgroupmember?view=windowsserver2022-ps) пользователей и группы.
+
+## 1. Запросите подключение федерации в VK Cloud
+
+1. [Экспортируйте](https://adfshelp.microsoft.com/MetadataExplorer/GetFederationMetadata) XML-файл с метаданными вашей AD FS.
+1. Обратитесь в [техническую поддержку](/ru/contacts/) с запросом на подключение федерации:
+
+   - укажите логин владельца проекта, который будет настраивать пользователей и группы;
+   - прикрепите выгруженный XML-файл с метаданными AD FS.
+
+1. Дождитесь ответа от технической поддержки. Вам будут отправлены реквизиты:
+
+   - XML-файл для настройки отношения доверия с проверяющей стороной (relying party trust).
+   - URL для входа федеративных пользователей в личный кабинет VK Cloud. Пример ссылки: `https://cloud.vk.com/v1/federation/saml/54f0267b-31f6-XXXX-XXX-2a24c5f436fb/signin`.
+   - ID федерации, содержится в URL для входа. Пример из ссылки выше: `54f0267b-31f6-XXXX-XXX-2a24c5f436fb`.
+
+## 2. Настройте AD FS
+
+1. [Создайте отношение доверия](https://learn.microsoft.com/ru-ru/windows-server/identity/ad-fs/operations/create-a-relying-party-trust#to-create-a-claims-aware-relying-party-trust-using-federation-metadata) с помощью метаданных федерации. Используйте XML-файл с метаданными, полученный от технической поддержки.
+1. Настройте соответствие между атрибутами пользователя и типами исходящих утверждений AD FS (Claims Mapping), для этого [добавьте](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/checklist--creating-claim-rules-for-a-relying-party-trust) правила:
+
+   - отправка учетной записи ([Send an Authentication Method Claim](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-an-authentication-method-claim));
+   - отправка атрибутов пользователя ([Send LDAP Attributes as Claims](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-ldap-attributes-as-claims));
+   - отправка членства в группах ([Send Group Membership as a Claim](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-group-membership-as-a-claim)).
+
+## 3. Настройте связь групп и ролей в VK Cloud
+
+Операции по настройке связи групп AD FS и ролей VK Cloud доступны только следующим [ролям](../../concepts/rolesandpermissions) личного кабинета: владельцу, суперадминистратору и администратору пользователей (IAM). Просмотр связей доступен также администратору проекта и наблюдателю.
+
+1. [Перейдите](https://cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. Перейдите в раздел **Управление доступами**.
+1. Перейдите на вкладку **Группы**.
+1. Добавьте группы, которые используете в Active Directory:
+
+   1. Нажмите кнопку **Добавить**. Если на странице уже есть созданные группы, нажмите кнопку **Добавить группу**.
+   1. Настройте группу:
+
+      - **Имя группы**: укажите название группы Active Directory, в которой состоит пользователь.
+      - **Разрешения**:
+         - Выберите **Проект**, чтобы связать группу и роли в рамках одного проекта. В разных проектах можно связать одну и ту же группу с разными ролями, что позволит разграничить уровень доступа федеративного пользователя к проектам.
+         - Выберите **Домен**, чтобы связать группу и роли во всех проектах одного владельца и предоставить федеративному пользователю единый уровень доступа к ним. Разрешение **Домен** доступно только владельцу проекта.
+      - **Роли группы**: выберите те [роли VK Cloud](../../concepts/rolesandpermissions/), которые соответствуют вашей матрице доступа для создаваемой группы.
+
+   1. Нажмите кнопку **Добавить группу**.
+
+## 4. Проверьте возможность входа через федерацию
+
+1. Введите в строку браузера URL для входа федеративных пользователей. Вы будете перенаправлены на страницу аутентификации AD FS.
+1. Введите свои корпоративные аутентификационные данные. После успешной авторизации вы будете перенаправлены на главную страницу личного кабинета VK Cloud.
+1. Проверьте, что автоматически назначенная роль пользователя VK Cloud соответствует выбранной при [добавлении группы](#3_nastroyte_svyaz_grupp_i_roley_v_vk_cloud).
+
+<warn>
+
+Active Directory автоматически не синхронизируется с VK Cloud. После блокировки пользователя в Active Directory [удалите](/ru/tools-for-using-services/account/service-management/project-settings/access-manage#udalenie_uchastnika) его из проектов в личном кабинете VK Cloud.
+
+</warn>

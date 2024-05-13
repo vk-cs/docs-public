@@ -108,12 +108,6 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   subnet_id           = "<идентификатор подсети>"
   availability_zone   = "<зона доступности>"
   floating_ip_enabled = <true или false: назначить ли публичный IP-адрес для API-кластера>
-  labels = {
-    # Нужные аддоны
-    docker_registry_enabled = true
-    prometheus_monitoring = true
-    ingress_controller="nginx"
-  }
 }
 ```
 
@@ -204,7 +198,7 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
 
 - Рекомендуется при создании кластера назначить ему публичный IP-адрес, чтобы можно было получить доступ к кластеру из интернета (`floating_ip_enabled = true`). Для назначения такого IP-адреса необходимо, чтобы подсеть кластера с идентификатором `subnet_id` была [подключена](/ru/networks/vnet/concepts/ips-and-inet#organizaciya_dostupa_v_internet) к маршрутизатору c доступом к внешней сети.
 
-- Если какие-то из аддонов не нужны, удалите соответствующие им строки из блока `labels`. Подробнее в разделе [Аддоны](../../../concepts/addons-and-settings/addons/).
+- Чтобы установить аддоны в кластер с помощью Terraform, [получите список доступных аддонов](../../addons/manage-addons#348-tabpanel-1) и [установите нужные](../../addons/advanced-installation).
 
 ## 3. Опишите конфигурацию одной или нескольких групп worker-узлов
 
