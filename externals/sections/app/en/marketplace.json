@@ -6,17 +6,17 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "/en/vendors-products/marketplace/concepts/about"
+                    "link": "/en/applications-and-services/marketplace/concepts/about"
                 },
                 {
-                    "link": "/en/vendors-products/marketplace/instructions"
+                    "link": "/en/applications-and-services/marketplace/service-management"
                 },
                 {
-                    "link": "/en/vendors-products/marketplace/tariffication",
+                    "link": "/en/applications-and-services/marketplace/tariffication",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "/en/vendors-products/marketplace/faq"
+                    "link": "/en/applications-and-services/marketplace/faq"
                 }
             ]
         }

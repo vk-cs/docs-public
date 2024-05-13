@@ -13,7 +13,7 @@
       "iconMobile": "/ru/assets/migration-icon-mobile.svg"
     },
     {
-      "partialPath": "/ru/additionals/billing",
+      "partialPath": "/ru/intro/billing",
       "icon": "/ru/assets/billing-icon.svg",
       "iconMobile": "/ru/assets/billing-icon-mobile.svg"
     },
@@ -26,6 +26,7 @@
 
   "uuid": "8039e837-cbc5-4f10-8185-59be352f986e",
   "additionalUuids": [
+    "fa708c77-91d4-4109-92cd-8385603f21e5",
     "08157caa-2c9a-46e5-9d3d-221fb59bac13",
     "5640e791-be03-4d14-9108-8a93b0c19167",
     "3d8fbd42-5a15-405d-9891-8ce10e4f8c32",

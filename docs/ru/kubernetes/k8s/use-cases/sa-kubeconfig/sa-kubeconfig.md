@@ -61,7 +61,7 @@
 
    Для каждой из команд должен быть выведен ответ `yes`.
 
-   Если нет прав на создание любого из этих ресурсов (ответ `no`), [скорректируйте роль пользователя VK Cloud](/ru/base/account/instructions/project-settings/access-manage#izmenenie_roli_uchastnika), от имени которого выполняется подключение к кластеру.
+   Если нет прав на создание любого из этих ресурсов (ответ `no`), [скорректируйте роль пользователя VK Cloud](/ru/tools-for-using-services/account/service-management/project-settings/access-manage#izmenenie_roli_uchastnika), от имени которого выполняется подключение к кластеру.
 
    Подробнее о ролевой модели и доступных ролях читайте в разделе [Управление доступом](../../concepts/access-management).
 

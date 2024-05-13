@@ -4,7 +4,7 @@
 
 ## Просмотр списка эндпоинтов
 
-Список доступен всем пользователям, вне зависимости от их [роли](/ru/base/account/concepts/rolesandpermissions), если в проекте [активированы сервисы](/ru/base/account/instructions/activation).
+Список доступен всем пользователям, вне зависимости от их [роли](/ru/base/account/concepts/rolesandpermissions), если в проекте [активированы сервисы](/ru/tools-for-using-services/account/service-management/activation).
 
 Чтобы увидеть список эндпоинтов для вашего региона:
 
@@ -94,7 +94,7 @@
 
 Адреса некоторых эндпоинтов содержат переменную `<project_id>`. При создании запроса замените эту переменную на Project ID текущего проекта.
 
-Project ID не совпадает с [идентификатором проекта](/ru/base/account/instructions/project-settings/manage#poluchenie_identifikatora_proekta) в личном кабинете. Это еще один идентификатор, который используется в конфигурационных файлах:
+Project ID не совпадает с [идентификатором проекта](/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta) в личном кабинете. Это еще один идентификатор, который используется в конфигурационных файлах:
 
 - В `openrc.sh`, как значение переменной `OS_PROJECT_ID`. Этот файл необходим для работы при помощи дополнительных инструментов, таких OpenStack CLI или cURL.
 - В `vkcs_provider.tf`, как значение параметра `project_id`. Этот файл необходим для работы через Terraform.

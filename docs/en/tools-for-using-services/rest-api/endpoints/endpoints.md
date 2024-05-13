@@ -4,7 +4,7 @@ To work with VK Cloud via the API [activate API access](../enable-api). Read mor
 
 ## Viewing the list of endpoints
 
-The list is available to all users, regardless of their [role](/en/base/account/concepts/rolesandpermissions) if [services are activated](/en/base/account/instructions/activation) in the project.
+The list is available to all users, regardless of their [role](/en/base/account/concepts/rolesandpermissions) if [services are activated](/en/tools-for-using-services/account/service-management/activation) in the project.
 
 To see the list of endpoints for your region:
 
@@ -94,7 +94,7 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 
 The addresses of some endpoints contain the variable `<project_id>`. When creating a request, replace this variable with the Project ID of the current project.
 
-The Project ID does not match the [project ID](/en/base/account/instructions/project-settings/manage#getting_the_project_id) to VK Cloud personal account. This is another identifier that is used in configuration files:
+The Project ID does not match the [project ID](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id) to VK Cloud personal account. This is another identifier that is used in configuration files:
 
 - In `openrc.sh`, as the value of the variable `OS_PROJECT_ID`. This file is required to work with additional tools such as the OpenStack CLI or cURL.
 - In `vkcs_provider.tf`, as the value of the `project_id` parameter. This file is required to work through Terraform.

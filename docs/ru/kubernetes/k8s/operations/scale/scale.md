@@ -8,7 +8,7 @@
 
 1. [Изучите, как работает механизм вертикального масштабирования](../../concepts/scale).
 
-1. [Убедитесь](/ru/base/account/instructions/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
+1. [Убедитесь](/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
 
 1. Выполните масштабирование.
 
@@ -109,7 +109,7 @@
 
 1. Подготовьтесь к масштабированию:
 
-   1. [Убедитесь](/ru/base/account/instructions/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
+   1. [Убедитесь](/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
    1. Если вы планируете сократить объем вычислительных ресурсов, то убедитесь, что итогового объема ресурсов в группе worker-узлов будет достаточно для размещения рабочей нагрузки.
    1. Убедитесь, что для рабочей нагрузки настроена репликация и реплики распределены по нескольким worker-узлам из группы узлов.
 
@@ -218,7 +218,7 @@
 
 1. [Изучите, как работает механизм горизонтального масштабирования](../../concepts/scale).
 
-1. [Убедитесь](/ru/base/account/instructions/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
+1. [Убедитесь](/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
 
 1. Выполните масштабирование:
 
@@ -295,7 +295,7 @@
 
 1. [Изучите, как работает механизм горизонтального масштабирования](../../concepts/scale).
 
-1. [Убедитесь](/ru/base/account/instructions/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
+1. [Убедитесь](/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta), что хватает квот для масштабирования.
 
 1. Настройте автоматическое масштабирование:
 

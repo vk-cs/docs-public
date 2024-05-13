@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/dbs/adb/adb-info/arenadata"
+                    "link": "/ru/dbs/adb/concepts/about"
                 },
                 {
-                    "link": "/ru/additionals/billing",
+                    "link": "/ru/intro/billing",
                     "hiddenForPartners": true
                 }
             ]
@@ -18,10 +18,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "/ru/dbs/adb/adb-start/create-adb"
+                    "link": "/ru/dbs/adb/quick-start/create-adb"
                 },
                 {
-                    "link": "/ru/dbs/adb/adb-connect"
+                    "link": "/ru/dbs/adb/connect"
                 }
             ]
         }

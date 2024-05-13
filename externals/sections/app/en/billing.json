@@ -6,15 +6,15 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "/en/additionals/billing",
+                    "link": "/en/intro/billing",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "/en/additionals/billing/instructions/payment",
+                    "link": "/en/intro/billing/service-management/payment",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "/en/additionals/billing/instructions/refund",
+                    "link": "/en/intro/billing/service-management/refund",
                     "hiddenForPartners": true
                 }
             ]
