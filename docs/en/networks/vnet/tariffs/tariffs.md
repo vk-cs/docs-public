@@ -2,7 +2,7 @@
 
 Tariffication is based on the "pay as you go" principle: you are charged only for the resources you consume to the nearest second.
 
-The cost of network services is given in [price list](https://cloud.vk.com/pricelist). You can use [calculator](https://cloud.vk.com/pricing) to calculate the total cost of other platform services that use network services. See [Billing](../../../additionals/billing) for how the tools related to paying for platform services work.
+The cost of network services is given in [price list](https://cloud.vk.com/pricelist). You can use [calculator](https://cloud.vk.com/pricing) to calculate the total cost of other platform services that use network services. See [Billing](../../../intro/billing) for how the tools related to paying for platform services work.
 
 ## What is charged
 

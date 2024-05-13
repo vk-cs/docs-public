@@ -4,7 +4,7 @@
 
 Чтобы выполнить приведенные примеры:
 
-1. Убедитесь, что [включена](/ru/base/account/instructions/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
+1. Убедитесь, что [включена](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
 1. [Получите токен доступа](/ru/additionals/cases/case-keystone-token) `X-Subject-Token`.
 1. [Узнайте](https://msk.cloud.vk.com/app/project/endpoints) эндпоинт для сервиса Karboii.
 

@@ -69,7 +69,7 @@ The response contains an audio file of the selected format. By default, a PCM fi
 
 ## See also
 
-[About Cloud Voice](../about-cloud-voice/)
+[About Cloud Voice](../about/)
 
 [Getting an access token](../get-voice-token/)
 

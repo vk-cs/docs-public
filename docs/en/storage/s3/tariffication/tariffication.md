@@ -4,7 +4,7 @@ The cost of Cloud storage service is given in [price list](https://cloud.vk.com/
 
 Tariffication is based on the "pay as you go" principle: you pay only for the resources you have consumed up to second.
 
-See [Billing](/en/additionals/billing) for how the tools related to paying for platform services work.
+See [Billing](/en/intro/billing) for how the tools related to paying for platform services work.
 
 ## What is charged
 

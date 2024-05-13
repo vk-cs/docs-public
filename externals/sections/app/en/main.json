@@ -6,7 +6,7 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "/en/additionals/billing/instructions/corporate"
+                    "link": "/en/intro/billing/service-management/corporate"
                 },
                 {
                     "link": "/en/tools-for-using-services/account/concepts/quotasandlimits"
@@ -15,7 +15,7 @@
                     "link": "/en/tools-for-using-services/account/concepts/rolesandpermissions"
                 },
                 {
-                    "link": "/en/additionals/billing",
+                    "link": "/en/intro/billing",
                     "hiddenForPartners": true
                 },
                 {
@@ -33,10 +33,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "/en/tools-for-using-services/account/instructions/activation"
+                    "link": "/en/tools-for-using-services/account/service-management/activation"
                 },
                 {
-                    "link": "/en/additionals/billing/instructions/payment",
+                    "link": "/en/intro/billing/service-management/payment",
                     "hiddenForPartners": true
                 }
             ]
@@ -45,25 +45,25 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "/en/tools-for-using-services/account/instructions/project-settings"
+                    "link": "/en/tools-for-using-services/account/service-management/project-settings"
                 },
                 {
-                    "link": "/en/tools-for-using-services/account/instructions/account-manage"
+                    "link": "/en/tools-for-using-services/account/service-management/account-manage"
                 },
                 {
                     "link": "/en/tools-for-using-services"
                 },
                 {
-                    "link": "/en/tools-for-using-services/account/instructions/actionslogs"
+                    "link": "/en/tools-for-using-services/account/service-management/actionslogs"
                 },
                 {
-                    "link": "/en/tools-for-using-services/account/use-cases/systemstate"
+                    "link": "/en/tools-for-using-services/account/how-to-guides/systemstate"
                 },
                 {
-                    "link": "/en/tools-for-using-services/account/use-cases/ideasportal"
+                    "link": "/en/tools-for-using-services/account/how-to-guides/ideasportal"
                 },
                 {
-                    "link": "/en/tools-for-using-services/account/use-cases/account-delete"
+                    "link": "/en/tools-for-using-services/account/how-to-guides/account-delete"
                 }
             ]
         }

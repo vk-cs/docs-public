@@ -10,7 +10,7 @@ The cost of individual components of the service is shown in the [price list](ht
 
 Billing is based on the “pay as you go” principle: the fee is charged only for the resources down to the minute.
 
-To learn how to pay for the service, see the section [Billing](/en/additionals/billing).
+To learn how to pay for the service, see the section [Billing](/en/intro/billing).
 
 ## Charged
 

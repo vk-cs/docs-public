@@ -50,7 +50,7 @@ VMs are grouped into categories in a personal account:
 | Intel Ice Lake (Intel Xeon Gen 3) | VMs located on servers with Intel Ice Lake CPU | Available by default |
 | Archived VM types (legacy)| Old VM configuration templates | Not displayed by default filtration |
 | High-performance CPU |  VMs located on [servers](#cpu_generations) with increased CPU clock speed | Displayed when ordering the types of VM through [technical support](/en/contacts) |
-| Virtual machines with GPU | VMs with connected [graphics card](../../../gpu/gpu-info/) | Displayed when ordering the types of VM through [cloud.vk.com](https://cloud.vk.com/en/) |
+| Virtual machines with GPU | VMs with connected [graphics card](../../../gpu/about/) | Displayed when ordering the types of VM through [cloud.vk.com](https://cloud.vk.com/en/) |
 | VMs with local disks | VMs with the ability to use local hypervisor disks | Displayed when ordering the types of VM through [technical support](/en/contacts) |
 | VMs located on dedicated servers | VMs located on hypervisors dedicated to the needs of one client | Displayed when ordering the types of VM through your manager |
 

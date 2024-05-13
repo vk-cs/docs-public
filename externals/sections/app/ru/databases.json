@@ -35,7 +35,7 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/dbs/dbaas/use-cases/db-migration"
+                    "link": "/ru/dbs/dbaas/how-to-guides/db-migration"
                 },
                 {
                     "link": "/ru/dbs/dbaas/extensions"

@@ -7,7 +7,7 @@ This guide will help you get started with VK Cloud:
 
 <info>
 
-To join an existing VK Cloud project, follow the instructions in article [Join a project by invitation](/en/base/account/instructions/project-invitation).
+To join an existing VK Cloud project, follow the instructions in article [Join a project by invitation](/en/tools-for-using-services/account/service-management/project-invitation).
 
 </info>
 
@@ -71,7 +71,7 @@ If you do not immediately confirm the account, when you try to perform an action
 
    </details>
 
-   1. Copy the [identifier (PID)](/en/base/account/instructions/project-settings/manage#getting_the_project_id) of your project from the VK Cloud site URL.
+   1. Copy the [identifier (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id) of your project from the VK Cloud site URL.
 
       An example for the region Moscow: `https://msk.cloud.vk.com/app/mcs123456789/main`, where `mcs123456789` is the project identifier (PID).
 
@@ -95,7 +95,7 @@ If you do not immediately confirm the account, when you try to perform an action
    1. Click the **Отправить** button.
    1. Wait for your request to be approved.
 
-1. [Link](/en/base/account/instructions/activation#linking_a_bank_card) a card of [supported payment system](/en/additionals/billing/concepts/payment-methods). The specified amount will be debited from your card and credited to your project balance.
+1. [Link](/en/tools-for-using-services/account/service-management/activation#linking_a_bank_card) a card of [supported payment system](/en/intro/billing/concepts/payment-methods). The specified amount will be debited from your card and credited to your project balance.
 
    <warn>
 
@@ -105,11 +105,11 @@ If you do not immediately confirm the account, when you try to perform an action
 
    </warn>
 
-1. (Optional) On the **Autopayment** tab that opens, configure the [autopayment](/en/additionals/billing/instructions/add-card#configure_auto_completion) settings.
+1. (Optional) On the **Autopayment** tab that opens, configure the [autopayment](/en/intro/billing/service-management/add-card#configure_auto_completion) settings.
 1. Click **Get started with VK Cloud**.
 1. Wait for your personal account page to open. A message about successful services activation appears.
 
-A [project](/en/base/account/concepts/projects) is automatically created for your account. After the services activation, sign-up [bonuses](/en/additionals/billing/concepts/balance#bonuses) are credited to your [balance](/en/additionals/billing/concepts/balance). These bonuses are credited only once after the registration of each new account. If no bonus points are credited within 3 working days, contact [technical support](/en/contacts).
+A [project](/en/base/account/concepts/projects) is automatically created for your account. After the services activation, sign-up [bonuses](/en/intro/billing/concepts/balance#bonuses) are credited to your [balance](/en/intro/billing/concepts/balance). These bonuses are credited only once after the registration of each new account. If no bonus points are credited within 3 working days, contact [technical support](/en/contacts).
 
 ## 3. Activate API access
 
@@ -119,7 +119,7 @@ VK Cloud supports working with the platform using [additional tools](/en/manage/
 
 </info>
 
-1. [Enable](/en/base/account/instructions/account-manage/manage-2fa/) 2FA for account.
+1. [Enable](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa/) 2FA for account.
 1. [Activate](/en/manage/tools-for-using-services/rest-api/enable-api) API access.
 
 ## 4. (Optional) Invite other users
@@ -127,7 +127,7 @@ VK Cloud supports working with the platform using [additional tools](/en/manage/
 You are the [owner](/en/base/account/concepts/rolesandpermissions) of the project account created during registration. To add other users to the project:
 
 1. [Invite](/en/base/account/account/adduser) users to your project and assign them with [roles](/en/base/account/concepts/rolesandpermissions).
-1. [Turn on](/en/base/account/instructions/project-settings/access-manage#inclusion_of_mandatory_2fa_in_the_project) mandatory 2FA in the project to reduce the risk of unauthorized access.
+1. [Turn on](/en/tools-for-using-services/account/service-management/project-settings/access-manage#inclusion_of_mandatory_2fa_in_the_project) mandatory 2FA in the project to reduce the risk of unauthorized access.
 
 ## 5. (Optional) Connect to the project via OpenStack CLI
 
@@ -142,7 +142,7 @@ You are the [owner](/en/base/account/concepts/rolesandpermissions) of the projec
 
 ## What's next?
 
-- [Customize](/en/additionals/billing/instructions/corporate/) the project to make payments through the legal entity.
+- [Customize](/en/intro/billing/service-management/corporate/) the project to make payments through the legal entity.
 - [Read](/en/base/account/concepts/quotasandlimits) information about the quotas and limits in VK Cloud projects.
-- Learn about the [payment methods](/en/additionals/billing/instructions/payment) available and the key [pricing](/en/base/account/tariffication) model principles.
+- Learn about the [payment methods](/en/intro/billing/service-management/payment) available and the key [pricing](/en/base/account/tariffication) model principles.
 - Find out how to create and connect a [virtual machine](/en/base/iaas/vm-start), a [Kubernetes cluster](/en/base/k8s/quickstart), a [database](/en/dbs/dbaas/start).
