@@ -77,7 +77,7 @@ Service names:
 ## 3. Complete authentication
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
-1. Make sure that [two-factor authentication](/en/base/account/instructions/account-manage/manage-2fa) and [API access](/en/manage/tools-for-using-services/rest-api/enable-api) are enabled.
+1. Make sure that [two-factor authentication](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa) and [API access](/en/manage/tools-for-using-services/rest-api/enable-api) are enabled.
 3. Select a project.
 4. On the page **Project settings** [go to the tab](https://msk.cloud.vk.com/app/project/keys/) **API access**.
 5. Click **Download openrc version 3**. A file `<project name>-openrc.sh` will be uploaded.

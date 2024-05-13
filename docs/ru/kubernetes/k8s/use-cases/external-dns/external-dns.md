@@ -51,12 +51,12 @@ ExternalDNS будет использовать реквизиты этого п
 
 Подготовьте пользователя и получите все необходимые реквизиты:
 
-1. [Выберите](/base/account/instructions/project-settings/access-manage#prosmotr_uchastnikov_proekta) существующего пользователя или [пригласите в проект](/ru/base/account/instructions/project-settings/access-manage#priglashenie_v_proekt_novogo_uchastnika) нового пользователя.
+1. [Выберите](/tools-for-using-services/account/service-management/project-settings/access-manage#prosmotr_uchastnikov_proekta) существующего пользователя или [пригласите в проект](/ru/tools-for-using-services/account/service-management/project-settings/access-manage#priglashenie_v_proekt_novogo_uchastnika) нового пользователя.
 
    Требования к пользователю:
 
    - Должен быть [активирован](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
-   - Должна быть [назначена](/ru/base/account/instructions/project-settings/access-manage#izmenenie_roli_uchastnika) одна из следующих ролей, чтобы ExternalDNS мог оперировать ресурсными записями в рамках DNS-зоны:
+   - Должна быть [назначена](/ru/tools-for-using-services/account/service-management/project-settings/access-manage#izmenenie_roli_uchastnika) одна из следующих ролей, чтобы ExternalDNS мог оперировать ресурсными записями в рамках DNS-зоны:
 
      - Администратор сети (минимально необходимая [роль](/ru/base/account/concepts/rolesandpermissions#matrica_razresheniy_dlya_vseh_roley)).
      - Администратор проекта.

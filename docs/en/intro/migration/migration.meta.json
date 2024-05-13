@@ -5,10 +5,10 @@
   "metaTitle": "Migration to VK Cloud",
   "metaDescription": "How to transfer a VM image or a whole infrastructure to the VK Cloud",
   "sectionTitle": "Migration to VK Cloud",
-  "markdown": "VK Cloud supports migration of both individual VMs and the infrastructure as a whole. For the first, it is recommended to use external tools (VM Ware, Hyper-V), for the second — [Hystax software](/en/vendors-products/marketplace/initial-configuration/migrate-hystax), operating on the basis of VK Cloud.",
+  "markdown": "VK Cloud supports migration of both individual VMs and the infrastructure as a whole. For the first, it is recommended to use external tools (VM Ware, Hyper-V), for the second — [Hystax software](/en/applications-and-services/marketplace/initial-configuration/migrate-hystax), operating on the basis of VK Cloud.",
   "icon": "",
 
-  "weight": 1,
+  "weight": 2,
   "uuid": "d01d4bc0-6858-45e1-9f5a-5e848d037637",
   "additionalUuids": [
     "cf2caea9-9be2-439b-84bf-7da57c964782",

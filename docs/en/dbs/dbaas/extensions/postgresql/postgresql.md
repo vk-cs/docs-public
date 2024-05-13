@@ -257,7 +257,7 @@ The extension [pg_stat_statements](https://www.postgresql.org/docs/current/pgsta
 
 The [PostGIS](http://postgis.net/) extension adds capabilities of working with geographic data into PostgreSQL. It implements several geospatial data types, as well supports storing, indexing and processing geographic data.
 
-For more information abount using the extension, see [Using the PostGIS extension in PostgreSQL and PostgresPro](../../use-cases/using-postgis).
+For more information abount using the extension, see [Using the PostGIS extension in PostgreSQL and PostgresPro](../../how-to-guides/using-postgis).
 
 </tabpanel>
 <tabpanel>
@@ -267,7 +267,7 @@ For more information abount using the extension, see [Using the PostGIS extensio
 - `extension_list`: list of additional extensions to be installed alongside PostGIS.
 
   The default value: no extension selected.
-  
+
   <details>
   <summary>Additional extensions available to install</summary>
 

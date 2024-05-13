@@ -6,17 +6,17 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/vendors-products/1cgrm/1cgrm-about"
+                    "link": "/ru/applications-and-services/1cgrm/about"
                 },
                 {
-                    "link": "/ru/vendors-products/1cgrm/1cgrm-rates",
+                    "link": "/ru/applications-and-services/1cgrm/tariffication",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "/ru/vendors-products/1cgrm/1cgrm-start"
+                    "link": "/ru/applications-and-services/1cgrm/connect"
                 },
                 {
-                    "link": "/ru/vendors-products/1cgrm/1cgrm-faq"
+                    "link": "/ru/applications-and-services/1cgrm/faq"
                 }
             ]
         }

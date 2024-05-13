@@ -69,7 +69,7 @@ curl -L --request POST \
 
 ## Смотрите также
 
-[Описание сервиса Cloud Voice](../about-cloud-voice/)
+[Описание сервиса Cloud Voice](../about/)
 
 [Получение токена доступа](../get-voice-token/)
 

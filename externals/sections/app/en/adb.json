@@ -6,10 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "/en/dbs/adb/adb-info/arenadata"
+                    "link": "/en/dbs/adb/concepts/about"
                 },
                 {
-                    "link": "/en/additionals/billing",
+                    "link": "/en/intro/billing",
                     "hiddenForPartners": true
                 }
             ]
@@ -18,13 +18,13 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "/en/dbs/adb/adb-start/create-adb"
+                    "link": "/en/dbs/adb/quick-start/create-adb"
                 },
                 {
-                    "link": "/en/dbs/adb/adb-connect"
+                    "link": "/en/dbs/adb/connect"
                 },
                 {
-                    "link": "/en/dbs/adb/adb-start/delete-adb"
+                    "link": "/en/dbs/adb/quick-start/delete-adb"
                 }
             ]
         }

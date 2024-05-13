@@ -21,11 +21,13 @@ You can either create your own security groups or use preconfigured groups that 
 
 For security groups to work correctly:
 
-- Either use them in combination with a `default` security group that allows any outbound traffic.
+- Either configure not only inbound but also outbound rules for them.
+- Or use them in combination with a default security group that allows any outgoing traffic. This applies to both pre-configured and custom security groups.
 
-  This applies to both pre-configured and custom security groups.
+Default security groups:
 
-- Or configure not only inbound but also outbound rules for them.
+- `default` — for nets in [SDN Neutron](../architecture#sdns_used);
+- `default-sprut` — for nets in [SDN Sprut](../architecture#sdns_used).
 
 ## Preconfigured security groups
 

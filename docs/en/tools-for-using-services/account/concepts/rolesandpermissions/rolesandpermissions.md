@@ -2,7 +2,7 @@ When a user is invited to a [project](../projects), he or she is assigned with a
 
 The same user can be a member of several projects and have different roles in each of them. The same user can be assigned with several roles in one project; in this case, the permissions of all assigned roles are summarized.
 
-You can [view](../../instructions/project-settings/access-manage) the list of project members and their roles on the **Manage access** page of the personal account.
+You can [view](../../service-management/project-settings/access-manage) the list of project members and their roles on the **Manage access** page of the personal account.
 
 ## General project management roles
 
@@ -18,7 +18,7 @@ There can be only one Project owner in a project. This role cannot be assigned t
 
 A user with the same permissions as the Project owner, including linking a card and making payments.
 
-Superadministrator is the only role, besides the Project owner, who can [activate services](../../instructions/activation) in the project.
+Superadministrator is the only role, besides the Project owner, who can [activate services](../../service-management/activation) in the project.
 
 ### Project administrator
 
@@ -32,7 +32,7 @@ A Project administrator cannot:
 
 ### User access administrator
 
-A role intended for [working with project members](../../instructions/project-settings/access-manage) on the access management page.
+A role intended for [working with project members](../../service-management/project-settings/access-manage) on the access management page.
 
 A User access administrator can invite, delete project members, and change the roles assigned to them.
 
@@ -44,8 +44,8 @@ A role intended for project balance management.
 
 A billing administrator can:
 
-- [link](/en/additionals/billing/instructions/add-card) a card to the project, if not linked yet;
-- make a [payment](/en/additionals/billing/instructions/payment) or configure balance auto-completion.
+- [link](/en/intro/billing/service-management/add-card) a card to the project, if not linked yet;
+- make a [payment](/en/intro/billing/service-management/payment) or configure balance auto-completion.
 
 This role has no access to services and to the list of project members.
 

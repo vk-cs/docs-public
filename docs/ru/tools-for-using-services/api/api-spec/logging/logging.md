@@ -3,7 +3,7 @@
 
 1. Убедитесь, что на проекте включен сервис Cloud Logging, при необходимости подключите его через [техническую поддержку](/ru/contacts).
 1. [Перейдите](https://msk.cloud.vk.com/app) в личный кабинет VK Cloud.
-1. [Включите](/ru/base/account/instructions/account-manage/manage-2fa#vklyuchenie_2fa) двухфакторную аутентификацию, если это еще не сделано.
+1. [Включите](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa#vklyuchenie_2fa) двухфакторную аутентификацию, если это еще не сделано.
 1. Включите доступ по API, если это еще не сделано:
 
    1. Нажмите на имя пользователя в шапке страницы и выберите **Безопасность**.

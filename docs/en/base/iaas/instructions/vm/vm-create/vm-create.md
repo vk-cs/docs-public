@@ -3,7 +3,7 @@ In Cloud Servers, you can create virtual machines through your personal account,
 ## Before starting work
 
 1. [Register](/en/base/account/quick-start) to VK Cloud.
-2. [Activate](/en/base/account/instructions/activation) the services.
+2. [Activate](/en/tools-for-using-services/account/service-management/activation) the services.
 
 The account balance should be positive, and [quotas](/en/base/account/concepts/quotasandlimits) should be sufficient to create the desired virtual machine configuration.
 
@@ -79,7 +79,7 @@ The available fields may differ for different operating systems.
 
 1. Get ready to work with the OpenStack CLI:
 
-   1. [Enable](/en/base/account/instructions/account-manage/manage-2fa/) two-factor authentication.
+   1. [Enable](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa/) two-factor authentication.
    2. [Activate](/en/manage/tools-for-using-services/rest-api/enable-api) API access.
    3. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
 

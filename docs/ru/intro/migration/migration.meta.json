@@ -5,10 +5,10 @@
   "metaTitle": "Миграция",
   "metaDescription": "Как перенести образ виртуальной машины или целой инфраструктуры в облако VK Cloud",
   "sectionTitle": "Миграция",
-  "markdown": "VK Cloud поддерживает миграцию как отдельных ВМ, так и инфраструктуры в целом. Для первого рекомендуется использовать внешние инструменты (VM Ware, Hyper-V), для второго — [программное обеспечение Hystax](/ru/vendors-products/marketplace/initial-configuration/migrate-hystax), функционирующего на базе VK Cloud.",
+  "markdown": "VK Cloud поддерживает миграцию как отдельных ВМ, так и инфраструктуры в целом. Для первого рекомендуется использовать внешние инструменты (VM Ware, Hyper-V), для второго — [программное обеспечение Hystax](/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax), функционирующего на базе VK Cloud.",
   "icon": "",
 
-  "weight": 1,
+  "weight": 2,
   "uuid": "1e8c5df7-0956-4cda-b1d6-6dbc2a0e1907",
   "additionalUuids": [
     "3bdcf670-1dfd-430c-96c4-916aec85ac3c",

@@ -5,7 +5,7 @@
   "metaTitle": "Getting started",
   "metaDescription": "VK Cloud (VK Cloud) platform provides the infrastructure for developing and operating applications",
   "sectionTitle": "Getting started",
-  "markdown": "VK Cloud provides infrastructure and platform services for the development and operation of cloud applications, expert support, configurable installations (including On-premise), consulting services. Virtualization, monitoring, container, and data storage services can be deployed on the platform. Learn more about [platform architecture](/en/additionals/start/architecture/).<br>At all stages of the implementation and operation of the services, [technical support](/en/additionals/start/support/) is provided. For more information about paying for services, see [Billing](/en/additionals/billing).",
+  "markdown": "VK Cloud provides infrastructure and platform services for the development and operation of cloud applications, expert support, configurable installations (including On-premise), consulting services. Virtualization, monitoring, container, and data storage services can be deployed on the platform. Learn more about [platform architecture](/en/additionals/start/architecture/).<br>At all stages of the implementation and operation of the services, [technical support](/en/additionals/start/support/) is provided. For more information about paying for services, see [Billing](/en/intro/billing).",
   "icon": "",
   "weight": 1,
 
