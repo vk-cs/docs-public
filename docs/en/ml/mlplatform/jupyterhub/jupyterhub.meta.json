@@ -10,7 +10,7 @@
   "weight": 0,
   "relativeSections": [
     {
-    "partialPath": "en/tools-for-using-services/terraform/use-cases/mlplatform/jupyterhub"
+    "partialPath": "/en/tools-for-using-services/terraform/use-cases/mlplatform/jupyterhub"
     }],
   "uuid": "4716ff81-a26b-4976-9541-0c71e6be1767"
 }
