@@ -10,7 +10,7 @@
   "weight": 2,
   "relativeSections": [
     {
-    "partialPath": "ru/tools-for-using-services/terraform/use-cases/mlplatform/mlflow",
+    "partialPath": "/ru/tools-for-using-services/terraform/use-cases/mlplatform/mlflow",
     "title": "Создание инстанса MLflow с помощью Terraform"
     }],
   "uuid": "771f622f-35e9-407e-9379-c9143efe8886"
