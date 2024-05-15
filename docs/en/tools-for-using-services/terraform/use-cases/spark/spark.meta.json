@@ -1,0 +1,11 @@
+{
+  "title": "Cloud Spark",
+  "pageDescription": "Working with Cloud Spark using Terraform.",
+  "shortDescription": "How to use Terraform for managing Cloud Spark service",
+  "metaTitle": "Cloud Spark",
+  "metaDescription": "Working with Cloud Spark using Terraform",
+  "sectionTitle": "Cloud Spark",
+  "markdown": "Working with [Cloud Spark](/en/ml/spark-to-k8s) using Terraform.",
+  "icon": "",
+  "weight": 8
+}
