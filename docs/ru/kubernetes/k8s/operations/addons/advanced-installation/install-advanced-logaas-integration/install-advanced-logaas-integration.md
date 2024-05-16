@@ -85,7 +85,7 @@
    </tabpanel>
    </tabs>
 
-1. (Опционально) [Просмотрите логи](/ru/manage/logging/instructions/view-logs) в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
+1. (Опционально) [Просмотрите логи](/ru/manage/logging/service-management/view-logs) в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
 
 </tabpanel>
 <tabpanel>
@@ -153,7 +153,7 @@
    </tabpanel>
    </tabs>
 
-1. (Опционально) [Просмотрите логи](/ru/manage/logging/instructions/view-logs) в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
+1. (Опционально) [Просмотрите логи](/ru/manage/logging/service-management/view-logs) в сервисе Cloud Logging, чтобы убедиться в работоспособности аддона.
 
 </tabpanel>
 </tabs>
