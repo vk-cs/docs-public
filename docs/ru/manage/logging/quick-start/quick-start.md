@@ -7,5 +7,5 @@
    curl https://cloudlogging.hb.ru-msk.vkcs.cloud/fluent-bit-install-scripts/install.sh | FLUENT_BIT_RELEASE_VERSION=2.1.9 sh
    ```
 
-1. [Сгенерируйте](../instructions/generate-userdata/) учетные данные для подключения к сервису.
-1. [Установите и настройте](../instructions/connect-plugin/) плагин `vkcloudlogs-fluent-bit-plugin`.
+1. [Сгенерируйте](../service-management/generate-userdata/) учетные данные для подключения к сервису.
+1. [Установите и настройте](../service-management/connect-plugin/) плагин `vkcloudlogs-fluent-bit-plugin`.
