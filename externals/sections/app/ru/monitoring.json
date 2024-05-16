@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/manage/monitoring/concepts/mon-architecture"
+                    "link": "/ru/manage/monitoring/concepts/architecture"
                 }
             ]
         },
@@ -14,10 +14,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "/ru/manage/monitoring/instructions/mon-setup-new"
+                    "link": "/ru/manage/monitoring/service-management/mon-setup-new"
                 },
                 {
-                    "link": "/ru/manage/monitoring/instructions/mon-setup-current"
+                    "link": "/ru/manage/monitoring/service-management/mon-setup-current"
                 }
             ]
         }
