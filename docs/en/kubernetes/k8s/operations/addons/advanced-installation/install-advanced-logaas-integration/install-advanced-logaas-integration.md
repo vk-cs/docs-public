@@ -67,7 +67,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. (Optional) [View logs](/en/manage/logging/instructions/view-logs) in the Cloud Logging service to make sure that the addon is working properly.
+1. (Optional) [View logs](/en/manage/logging/service-management/view-logs) in the Cloud Logging service to make sure that the addon is working properly.
 
 </tabpanel>
 <tabpanel>
@@ -121,7 +121,7 @@ If this does not suit you, perform the **standard installation**.
    </tabpanel>
    </tabs>
 
-1. (Optional) [View logs](/en/manage/logging/instructions/view-logs) in the Cloud Logging service to make sure that the addon is working properly.
+1. (Optional) [View logs](/en/manage/logging/service-management/view-logs) in the Cloud Logging service to make sure that the addon is working properly.
 
 </tabpanel>
 </tabs>
