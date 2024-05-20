@@ -4,24 +4,36 @@ To work in federated mode, the IdP must support the SAML 2.0 standard.
 
 The following steps will show you how to configure federated identity using the [Active Directory Federation Services (AD FS)](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview) as an example.
 
-## Preparation
+<info>
 
-[Set up AD FS](https://learn.microsoft.com/ru-ru/windows-server/identity/ad-fs/ad-fs-deployment) and [create](https://learn.microsoft.com/en-us/powershell/module/activedirectory/add-adgroupmember?view=windowsserver2022-ps) users and groups.
+When changing your Active Directory domain, remove the existing federation and set up a new one.
+
+</info>
+
+## Before you start
+
+1. [Set up AD FS](https://learn.microsoft.com/ru-ru/windows-server/identity/ad-fs/ad-fs-deployment) and [create](https://learn.microsoft.com/en-us/powershell/module/activedirectory/add-adgroupmember?view=windowsserver2022-ps) users and groups.
+1. [Export](https://adfshelp.microsoft.com/MetadataExplorer/GetFederationMetadata) the XML metadata file of your AD FS.
 
 ## 1. Request Federated Identity Connection to VK Cloud
 
-1. [Export](https://adfshelp.microsoft.com/MetadataExplorer/GetFederationMetadata) the XML metadata file of your AD FS
-1. Contact [technical support](/en/contacts/) and request to connect federated identity. Provide the project owner's login who will configure users and groups and attach the exported XML metadata file of AD FS.
+Creating an Identity Federation in VK Cloud is available only to a Project owner [role](../../concepts/rolesandpermissions) user.
 
-1. Wait for a response from technical support. They will provide you with the following credentials:
+1. [Go to](https://cloud.vk.com/app/en) in your personal VK Cloud account.
+1. Go to the **Manage access** section.
+1. Go to the **Identity Federation** tab.
+1. Click **Create**.
+1. Upload XML file with your AD FS metadata and click **Create**.
+1. After creating the Identity Federation an XML file will be configured. The file contain data for setting up relying party trust. Download the file to upload to your identity provider.
 
-   - XML file for configuring the relying party trust.
-   - URL for federated users to sign in to VK Cloud. Example: `https://cloud.vk.com/v1/federation/saml/54f0267b-31f6-XXXX-XXX-2a24c5f436fb/signin`.
-   - Federation ID, found in the URL for signing in to VK Cloud. Example: `54f0267b-31f6-XXXX-XXX-2a24c5f436fb`.
+The following credentials will appear on the **Identity Federation** tab:
+
+- URL for federated users to sign in to VK Cloud. Example: `https://cloud.vk.com/v1/federation/saml/54f0267b-31f6-XXXX-XXX-2a24c5f436fb/signin`.
+- Federation ID. Example: `54f0267b-31f6-XXXX-XXX-2a24c5f436fb`.
 
 ## 2. Set up AD FS
 
-1. Create a relying party trust using federation metadata. Use the XML metadata file provided by the technical support. [Instructions here](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-relying-party-trust#to-create-a-claims-aware-relying-party-trust-using-federation-metadata).
+1. Create a relying party trust using federation metadata. Use the XML metadata file. [Instructions here](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-relying-party-trust#to-create-a-claims-aware-relying-party-trust-using-federation-metadata).
 2. Configure the mapping between user attributes and AD FS outgoing claim types (Claims Mapping). Add the following rules:
    - Sending an authentication method claim: [Send an Authentication Method Claim](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-an-authentication-method-claim)
    - Sending LDAP attributes as claims: [Send LDAP Attributes as Claims](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-ldap-attributes-as-claims)
@@ -31,7 +43,7 @@ The following steps will show you how to configure federated identity using the 
 
 Configuring the relationship between AD FS groups and VK Cloud roles is available only to the following roles in the personal account [roles](../../concepts/rolesandpermissions): Project owner, Superadministrator, and user access administrator. Viewing the relationships is also available to Project administrators and Viewers.
 
-1. [Go](https://cloud.vk.com/app/) to your VK Cloud personal account.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud personal account.
 2. Go to the **Manage access** section.
 3. Click on the **Groups** tab.
 4. Add the groups that you use in Active Directory:
@@ -44,7 +56,7 @@ Configuring the relationship between AD FS groups and VK Cloud roles is availabl
          - Select **Domain** to associate the group and roles across all projects. The **Domain** permission is only available to the project owner and provides the federated user with the same access level to all projects owned by the owner.
       - **Group roles**: select the [VK Cloud roles](../../concepts/rolesandpermissions/), that correspond to your access matrix for the group being created.
 
-   1. Click the **Add group** button.
+   1. Click the **Add** button.
 
 ## 4. Check the possibility of logging in via federation
 
