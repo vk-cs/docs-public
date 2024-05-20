@@ -12,7 +12,7 @@
 
    1. Select the desired database type.
    1. Select the desired version.
-   1. Select the configuration **Single** or **Master-Replica**. The configuration is available for some [DBMS types](../../../types).
+   1. Select the configuration **Single** or **Master-Replica**. The configuration is available for some [DBMS types](../../../concepts/work-configs#available_configurations_for_dbms_types).
    1. Click the **Next step** button.
 
 1. On the “Create instance” step:
