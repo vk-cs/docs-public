@@ -1,4 +1,4 @@
-## Installing the addon
+## Installing addon
 
 [Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the addon.
 
@@ -32,7 +32,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       - application name;
       - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing_the_addon_setup_code_during_installation).
+      - [addon settings code](#editing_addon_setup_code_during_installation).
 
         <warn>
 
@@ -63,7 +63,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
             addon_id = data.vkcs_kubernetes_addon.kube-prometheus-stack.id
             namespace = "prometheus-monitoring"
             configuration_values = templatefile("./kube-prometheus-stack-all.yaml",{openstack-internal-load-balancer= "false"})
-         
+
             depends_on = [
                vkcs_kubernetes_node_group.default_ng
             ]
@@ -93,8 +93,8 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. If necessary [change the Prometheus disk size](#changing_the_prometheus_disk_size).
-1. If necessary [get the password for Grafana from the Kubernetes secret](#getting_the_password_for_grafana_from_the_kubernetes_secret).
+1. If necessary [change the Prometheus disk size](#changing_prometheus_disk_size).
+1. If necessary [get the password for Grafana from the Kubernetes secret](#getting_grafana_password_from_kubernetes_secret).
 
 </tabpanel>
 <tabpanel>
@@ -144,7 +144,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       - application name;
       - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing_the_addon_setup_code_during_installation).
+      - [addon settings code](#editing_addon_setup_code_during_installation).
 
    1. Set the necessary tolerations and nodeSelector in the addon setup code:
 
@@ -210,8 +210,8 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. If necessary [change the Prometheus disk size](#changing_the_prometheus_disk_size).
-1. If necessary [get the password for Grafana from the Kubernetes secret](#getting_the_password_for_grafana_from_the_kubernetes_secret).
+1. If necessary [change the Prometheus disk size](#changing_prometheus_disk_size).
+1. If necessary [get the password for Grafana from the Kubernetes secret](#getting_grafana_password_from_kubernetes_secret).
 
 </tabpanel>
 <tabpanel>
@@ -257,13 +257,13 @@ If this does not suit you, perform a **standard installation** or **installation
    </tabpanel>
    </tabs>
 
-1. If necessary [change the Prometheus disk size](#changing_the_prometheus_disk_size).
-1. [Get the password for Grafana from the Kubernetes secret](#getting_the_password_for_grafana_from_the_kubernetes_secret).
+1. If necessary [change the Prometheus disk size](#changing_prometheus_disk_size).
+1. [Get the password for Grafana from the Kubernetes secret](#getting_grafana_password_from_kubernetes_secret).
 
 </tabpanel>
 </tabs>
 
-## Editing the addon setup code during installation
+## Editing addon setup code during installation
 
 <info>
 
@@ -272,7 +272,7 @@ If this does not suit you, perform a **standard installation** or **installation
 
 </info>
 
-### Setting a temporary password for the Grafana web interface
+### Setting temporary password for Grafana web interface
 
 When installing an addon with default parameters, a Kubernetes secret will be created containing a permanent password to log in to the Grafana web interface.
 
@@ -283,11 +283,11 @@ grafana:
   adminPassword: "<temporary user password>"
 ```
 
-After editing the addon code [continue installing the addon](#installing_the_addon).
+After editing the addon code [continue installing the addon](#installing_addon).
 
-## Changing the Prometheus disk size
+## Changing Prometheus disk size
 
-This operation is [available](#installing_the_addon) if the monitoring addon `kube-prometheus-stack` is installed in the cluster.
+This operation is [available](#installing_addon) if the monitoring addon `kube-prometheus-stack` is installed in the cluster.
 
 The Prometheus disk stores cluster monitoring data. If there is not enough space for them, or you want to increase the performance of the Prometheus disk, increase the disk size.
 
@@ -309,7 +309,7 @@ The Prometheus disk stores cluster monitoring data. If there is not enough space
 </tabpanel>
 </tabs>
 
-## Getting the password for Grafana from the Kubernetes secret
+## Getting Grafana password from Kubernetes secret
 
 If the addon was installed without specifying a temporary password, the password value for entering the Grafana web interface can be obtained from the Kubernetes secret.
 
@@ -365,3 +365,33 @@ If, when adding an addon, a service name other than `kube-prometheus-stack` or a
 
 </tabpanel>
 </tabs>
+
+## Resetting Grafana password
+
+If the addon was installed without specifying a temporary password, the password value for entering the Grafana web interface can be obtained from the Kubernetes secret. If this secret has been lost, you can reset the password to access Grafana again.
+
+<info>
+
+Further the `kube-prometheus-stack` service name and the `prometheus-monitoring` namespace are used. If other parameters have been selected when adding the addon, modify the commands accordingly.
+
+</info>
+
+1. Get the name of the Grafana pod:
+
+   ```bash
+   kubectl -n prometheus-monitoring get pod -l app.kubernetes.io/name=grafana
+   ```
+
+   **The format of the pod name from the command output:**
+
+   ```text
+   kube-prometheus-stack-grafana-XXXXXXXXX-XXXXX
+   ```
+
+1. Reset the password by executing the command inside the Grafana pod:
+
+   ```bash
+   kubectl -n prometheus-monitoring exec <Grafana pod name> -- sh -c "grafana cli --debug admin reset-admin-password <new password>"
+   ```
+
+   If the password is successfully reset, the command output will contain the following message: `Admin password changed successfully ✔`.
