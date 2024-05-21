@@ -256,3 +256,24 @@ pip install python-<Название сервиса>client
     ```
 
    </details>
+
+- Вывести список [зон доступности](/ru/intro/start/concepts/architecture#zony_dostupnosti_d9f6db93):
+
+   ```bash
+   openstack availability zone list
+   ```
+
+   <details>
+   <summary>Пример результата выполнения команды (сокращенный вывод)</summary>
+
+    ```bash
+    +-----------+-------------+
+    | Zone Name | Zone Status |
+    +-----------+-------------+
+    | MS1       | available   |
+    | GZ1       | available   |
+    | ME1       | available   |
+    +-----------+-------------+
+    ```
+
+   </details>
