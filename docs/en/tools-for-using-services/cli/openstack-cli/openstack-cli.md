@@ -203,7 +203,7 @@ Service names:
    ```
 
    <details>
-   <summary>Example of the result of executing the command</summary>
+   <summary>The example result of running the command</summary>
 
    ```bash
    +--------------------------------------+-------------------+-------+------+-----------+-------+-----------+
@@ -227,7 +227,7 @@ Service names:
    ```
 
    <details>
-   <summary>Example of the result of executing the command (shortened output)</summary>
+   <summary>The example result of running the command</summary>
 
     ```bash
     +------------------+------------------------------------------------------+
@@ -252,6 +252,27 @@ Service names:
     | updated_at       | 2023-03-29T14:08:15Z                                 |
     | visibility       | private                                              |
     +------------------+------------------------------------------------------+
+    ```
+
+   </details>
+
+- Get the list of [availability zones](/en/intro/start/concepts/architecture#availability_zones_567cfd7a):
+
+   ```bash
+   openstack availability zone list
+   ```
+
+   <details>
+   <summary>The example result of running the command</summary>
+
+    ```bash
+    +-----------+-------------+
+    | Zone Name | Zone Status |
+    +-----------+-------------+
+    | MS1       | available   |
+    | GZ1       | available   |
+    | ME1       | available   |
+    +-----------+-------------+
     ```
 
    </details>
