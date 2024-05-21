@@ -133,6 +133,14 @@ VM recovery speed from backup is affected by:
 </tabpanel>
 </tabs>
 
+As a result of recovery, a new disk will be created and connected to the VM. The old disk will not be removed.
+
+<warn>
+
+If you no longer need the disk, [remove it](/en/base/iaas/instructions/volumes#deleting_a_disk) manually to save resources.
+
+</warn>
+
 ## Deleting backups
 
 <tabs>
