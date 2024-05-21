@@ -96,6 +96,8 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
      </warn>
 
+   - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#availability_zones_567cfd7a) from the list. To optimize and speed up the 
+     balancer connection to VMs, place them in the same zone. 
    - **DNS-name**: (Optional) DNS name for the balancer.
    - **Assign external IP**: if this option is selected, the balancer will be assigned a public IP address through which it will be accessible from the Internet. Otherwise the balancer will act as an internal load balancer. Such IP address can be [assigned later](#managing_public_ip_addresses).
 
@@ -115,34 +117,22 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 1. Select the network and subnet where the balancer will be hosted. [Get ID](/en/networks/vnet/operations/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) of the subnet.
 
+1. Select the [availability zone](/en/intro/start/concepts/architecture#availability_zones_567cfd7a) to place the balancer. To get the list of availability zones, run the command:
+   
+   ```bash
+   openstack availability zone list
+   ```
+
+   To optimize and speed up the balancer connection to VMs, place them in the same zone.
+
 1. Create a balancer:
 
-   <tabs>
-   <tablist>
-   <tab>Linux/macOS (bash, zsh)</tab>
-   <tab>Windows (PowerShell)</tab>
-   </tablist>
-   <tabpanel>
-
    ```bash
-   openstack loadbalancer create \
-     --name <load balancer name> \
-     --vip-subnet-id <subnet ID>
+   openstack loadbalancer create --name <load-balancer-name> --vip-subnet-id <subnet-ID> --availability-zone <availability-zone>
    ```
 
-   </tabpanel>
-   <tabpanel>
-
-   ```powershell
-   openstack loadbalancer create `
-     --name <load balancer name> `
-     --vip-subnet-id <subnet ID>
-   ```
-
-   </tabpanel>
-   </tabs>
-
-1. (Optional) [assign the balancer an external IP address](#managing_public_ip_addresses). Through this address, it will be accessible from the Internet. Otherwise the load balancer will act as an internal load balancer.
+1. (Optional) [Assign the balancer an external IP address](#managing_public_ip_addresses). Through this address, it 
+   will be accessible from the Internet. Otherwise the load balancer will act as an internal load balancer.
 
    The address must be assigned if you plan to place services behind the load balancer which must be accessible from the Internet. You can assign an address only if the network for the selected subnet earlier is behind a router that has access to the Internet.
 
