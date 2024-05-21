@@ -59,6 +59,7 @@ To create a load balancer, you need the following objects:
 
     - `name`: the human readable name for the load balancer. Doesn't have to be unique.
     - `vip_subnet_id`: the subnet where the load balancer address will be allocated. You can only create load balancers on networks that are allowed by the policy (for example, networks that are owned by you or networks that are public). Changing this argument creates a new load balancer.
+    - `availability_zone`: [availability_zone](/en/intro/start/concepts/architecture#availability_zones_567cfd7a), where the balancer will be placed. To optimize and speed up the balancer connection to VMs, place them in the same zone. You can get the list of availability zones in your VK Cloud personal account or via [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli#examples_of_openstack_cli_commands).
     - `tags`: the list of simple strings assigned to the load balancer.
 
   - `vkcs_lb_listener`: manages the listener resource in VK Cloud. The following arguments are supported:
@@ -130,6 +131,7 @@ resource "vkcs_compute_instance" "compute_2" {
 resource "vkcs_lb_loadbalancer" "loadbalancer" {
    name="loadbalancer"
    vip_subnet_id = "${vkcs_networking_subnet.lb.id}"
+   availability_zone = "GZ1"
    tags = ["tag1"]
 }
 
