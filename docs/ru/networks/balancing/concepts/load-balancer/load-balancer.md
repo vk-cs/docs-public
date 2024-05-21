@@ -29,7 +29,7 @@
 
 ## Типы балансировщиков нагрузки
 
-В VK Cloud существует два типа балансировщиков. Тип балансировщика можно [посмотреть](../../operations/manage-lb#prosmotr_spiska_balansirovshchikov_nagruzki_i_informacii_o_nih) в личном кабинете.
+В VK Cloud существует два типа балансировщиков. Тип балансировщика можно [посмотреть](../../service-management/manage-lb#prosmotr_spiska_balansirovshchikov_nagruzki_i_informacii_o_nih) в личном кабинете.
 
 Разные типы балансировщиков тарифицируются по разному.
 

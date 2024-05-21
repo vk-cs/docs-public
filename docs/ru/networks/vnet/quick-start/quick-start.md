@@ -268,4 +268,4 @@
 Работающие ВМ потребляют вычислительные ресурсы. Если они вам больше не нужны:
 
 - [удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie_vm) созданные ВМ;
-- [удалите](../operations/manage-net#udalenie_seti) сети `test-network` и `test-network-2`.
+- [удалите](../service-management/net#udalenie_seti) сети `test-network` и `test-network-2`.

@@ -325,8 +325,8 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
 If you no longer need the created resources, delete them:
 
 1. [Delete](/ru/base/iaas/vm-start/manage-vm/vm-delete) virtual machines.
-1. [Delete](../../operations/manage-vpn#removing_a_vpn_tunnel) VPN tunnel.
-1. [Delete](../../operations/manage-router#managing_static_routes) static routes defined on the side of the client network.
+1. [Delete](../../service-management/vpn#removing_a_vpn_tunnel) VPN tunnel.
+1. [Delete](../../service-management/router#managing_static_routes) static routes defined on the side of the client network.
 
    <info>
 
@@ -334,6 +334,6 @@ If you no longer need the created resources, delete them:
 
    </info>
 
-1. [Delete](../../operations/manage-router#removing_the_router) client and cloud network routers.
-1. Delete the client and cloud [subnets](../../operations/manage-net#deleting_a_subnet) and [networks](../../operations/manage-net#deleting_a_network).
-1. [Delete](../../operations/manage-floating-ip#removing_floating_ip_address_from_the_project) floating IP addresses.
+1. [Delete](../../service-management/router#removing_the_router) client and cloud network routers.
+1. Delete the client and cloud [subnets](../../service-management/net#deleting_a_subnet) and [networks](../../service-management/net#deleting_a_network).
+1. [Delete](../../service-management/floating-ip#removing_floating_ip_address_from_the_project) floating IP addresses.
