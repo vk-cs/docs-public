@@ -16,7 +16,7 @@
 
 1. Выберите подсеть, в которой будут размещены виртуальные машины и виртуальный IP-адрес. Они должны размещаться в одной подсети.
 
-   Если нужной подсети нет, [создайте ее](../../operations/manage-net#sozdanie_podseti).
+   Если нужной подсети нет, [создайте ее](../../service-management/net#sozdanie_podseti).
 
    Запишите следующую информацию:
    - имя подсети;
@@ -378,6 +378,6 @@
 Если созданные ресурсы вам больше не нужны, удалите их:
 
 1. [Удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie_vm) виртуальные машины.
-1. [Удалите](../../operations/manage-floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, назначенный виртуальной машине `kld-jumphost-vm`.
-1. [Удалите](../../operations/manage-ports#udalenie_porta) порт, которому назначен виртуальный IP-адрес.
-1. Удалите [подсеть](../../operations/manage-net#udalenie_podseti) и [сеть](../../operations/manage-net#udalenie_seti), в которых были размещены виртуальные машины.
+1. [Удалите](../../service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, назначенный виртуальной машине `kld-jumphost-vm`.
+1. [Удалите](../../service-management/ports#udalenie_porta) порт, которому назначен виртуальный IP-адрес.
+1. Удалите [подсеть](../../service-management/net#udalenie_podseti) и [сеть](../../service-management/net#udalenie_seti), в которых были размещены виртуальные машины.

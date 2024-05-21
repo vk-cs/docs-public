@@ -29,9 +29,9 @@ Under these conditions, the balancer can reach the peak performance, handling 1 
 
 ## Types of load balancers
 
-There are two types of load balancers in VK Cloud. You can [see](../../operations/manage-lb#viewing_a_list_of_load_balancers_and_information_about_them) the type in personal account.
+There are two types of load balancers in VK Cloud. You can [see](../../service-management/manage-lb#viewing_a_list_of_load_balancers_and_information_about_them) the type in personal account.
 
-Different types of balancers [are charged](../../../vnet/tariffs) differently.
+Different types of balancers [are charged](../../../vnet/tariffication) differently.
 
 <tabs>
 <tablist>
