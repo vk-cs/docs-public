@@ -4,7 +4,7 @@ Cloud Networks service allows to work with several network types.
 
 Standard network provides access to the subnets with the private IP addresses and exists within a single project.
 
-The standard network, its subnets and ports [can be managed](../../operations/) via personal account, OpenStack CLI or Terraform.
+The standard network, its subnets and ports [can be managed](../../service-management/) via personal account, OpenStack CLI or Terraform.
 
 ## Shared network
 
@@ -12,9 +12,9 @@ Shared network provides access to the subnets with the private IP addresses too,
 
 Firstly, a standard network should be created in the owner project. Then this network can be converted to the shared network [via the support request](/en/contacts). The shared network then will be accessible from the one or several dependent projects.
 
-A shared network, its subnets and ports [can be managed](../../operations/) via personal account, OpenStack CLI or Terraform from the owner project. A shared network can be deleted only [via the support request](/en/contacts).
+A shared network, its subnets and ports [can be managed](../../service-management/) via personal account, OpenStack CLI or Terraform from the owner project. A shared network can be deleted only [via the support request](/en/contacts).
 
-It is possible to view the information about a shared network via personal account from a dependent project, but it is allowed only [to manage ports](../../operations/manage-ports) of the network via OpenStack CLI. Also, it is not possible to connect DB instances or Kubernetes cluster to a shared network from a dependent project.
+It is possible to view the information about a shared network via personal account from a dependent project, but it is allowed only [to manage ports](../../service-management/ports) of the network via OpenStack CLI. Also, it is not possible to connect DB instances or Kubernetes cluster to a shared network from a dependent project.
 
 ## External network
 

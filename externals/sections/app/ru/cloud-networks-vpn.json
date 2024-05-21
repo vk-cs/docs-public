@@ -9,7 +9,7 @@
                     "link": "/ru/networks/vnet/concepts/vpn"
                 },
                 {
-                    "link": "/ru/networks/vnet/tariffs"
+                    "link": "/ru/networks/vnet/tariffication"
                 }
             ]
         },
@@ -20,7 +20,7 @@
                     "link": "/ru/networks/vnet/quick-start"
                 },
                 {
-                    "link": "/ru/networks/vnet/operations/vpn"
+                    "link": "/ru/networks/vnet/service-management/vpn"
                 }
             ]
         },
@@ -28,10 +28,10 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/networks/vnet/use-cases/vpn-tunnel"
+                    "link": "/ru/networks/vnet/how-to-guides/vpn-tunnel"
                 },
                 {
-                    "link": "/ru/networks/vnet/use-cases/vip-keepalived"
+                    "link": "/ru/networks/vnet/how-to-guides/vip-keepalived"
                 }
             ]
         }
