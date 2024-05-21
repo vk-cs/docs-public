@@ -6,7 +6,7 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "/en/networks/vnet/concepts/overview"
+                    "link": "/en/networks/vnet/concepts/about"
                 },
                 {
                     "link": "/en/networks/vnet/concepts/architecture"
@@ -18,7 +18,7 @@
                     "link": "/en/networks/vnet/concepts/ips-and-inet"
                 },
                 {
-                    "link": "/en/networks/vnet/tariffs"
+                    "link": "/en/networks/vnet/tariffication"
                 }
             ]
         },
@@ -29,7 +29,7 @@
                     "link": "/en/networks/vnet/quick-start"
                 },
                 {
-                    "link": "/en/networks/vnet/operations"
+                    "link": "/en/networks/vnet/service-management"
                 }
             ]
         },
@@ -37,10 +37,10 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "/en/networks/vnet/use-cases/vpn-tunnel"
+                    "link": "/en/networks/vnet/how-to-guides/vpn-tunnel"
                 },
                 {
-                    "link": "/en/networks/vnet/use-cases/vip-keepalived"
+                    "link": "/en/networks/vnet/how-to-guides/vip-keepalived"
                 }
             ]
         }

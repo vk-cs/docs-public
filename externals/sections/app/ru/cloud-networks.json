@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/networks/vnet/concepts/overview"
+                    "link": "/ru/networks/vnet/concepts/about"
                 },
                 {
                     "link": "/ru/networks/vnet/concepts/architecture"
@@ -18,7 +18,7 @@
                     "link": "/ru/networks/vnet/concepts/ips-and-inet"
                 },
                 {
-                    "link": "/ru/networks/vnet/tariffs"
+                    "link": "/ru/networks/vnet/tariffication"
                 }
             ]
         },
@@ -29,7 +29,7 @@
                     "link": "/ru/networks/vnet/quick-start"
                 },
                 {
-                    "link": "/ru/networks/vnet/operations"
+                    "link": "/ru/networks/vnet/service-management"
                 }
             ]
         },
@@ -37,10 +37,10 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/networks/vnet/use-cases/vpn-tunnel"
+                    "link": "/ru/networks/vnet/how-to-guides/vpn-tunnel"
                 },
                 {
-                    "link": "/ru/networks/vnet/use-cases/vip-keepalived"
+                    "link": "/ru/networks/vnet/how-to-guides/vip-keepalived"
                 }
             ]
         }

@@ -326,8 +326,8 @@
 Если созданные ресурсы вам больше не нужны, удалите их:
 
 1. [Удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie_vm) виртуальные машины.
-1. [Удалите](../../operations/manage-vpn#udalenie_vpn_tunnelya) VPN-туннель.
-1. [Удалите](../../operations/manage-router#upravlenie_staticheskimi_marshrutami) статические маршруты, прописанные на стороне клиентской сети.
+1. [Удалите](../../service-management/vpn#udalenie_vpn_tunnelya) VPN-туннель.
+1. [Удалите](../../service-management/router#upravlenie_staticheskimi_marshrutami) статические маршруты, прописанные на стороне клиентской сети.
 
    <info>
 
@@ -335,6 +335,6 @@
 
    </info>
 
-1. [Удалите](../../operations/manage-router#udalenie_marshrutizatora) маршрутизаторы клиентской и облачной сетей.
-1. Удалите клиентскую и облачную [подсети](../../operations/manage-net#udalenie_podseti) и [сети](../../operations/manage-net#udalenie_seti).
-1. [Удалите](../../operations/manage-floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающие IP-адреса.
+1. [Удалите](../../service-management/router#udalenie_marshrutizatora) маршрутизаторы клиентской и облачной сетей.
+1. Удалите клиентскую и облачную [подсети](../../service-management/net#udalenie_podseti) и [сети](../../service-management/net#udalenie_seti).
+1. [Удалите](../../service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающие IP-адреса.

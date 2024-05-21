@@ -280,7 +280,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
 1. To add an interface:
 
-    1. [Get the ID of the OpenStack port](../manage-ports#viewing_a_list_of_ports_and_port_information) located on the subnet you want to connect to the router. This port should not be used by any objects (load balancers, virtual machines, etc.) If there is no such port, [create it](../manage-ports#adding_a_port).
+    1. [Get the ID of the OpenStack port](../ports#viewing_a_list_of_ports_and_port_information) located on the subnet you want to connect to the router. This port should not be used by any objects (load balancers, virtual machines, etc.) If there is no such port, [create it](../ports#adding_a_port).
     1. Run the command:
 
        ```bash
