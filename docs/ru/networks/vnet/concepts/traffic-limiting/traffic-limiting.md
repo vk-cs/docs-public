@@ -34,7 +34,7 @@
 
 <warn>
 
-Группы **ssh**, **ssh+www** и **all** становятся доступны после [создания виртуальной машины](/ru/base/iaas/instructions/vm/vm-create/) с такими группами.
+Группы **ssh**, **ssh+www** и **all** становятся доступны после [создания виртуальной машины](/ru/base/iaas/service-management/vm/vm-create/) с такими группами.
 
 </warn>
 

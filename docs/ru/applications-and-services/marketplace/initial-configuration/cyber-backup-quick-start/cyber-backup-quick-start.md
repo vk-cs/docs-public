@@ -35,7 +35,7 @@
 
          Если группа не назначена, [назначьте](/ru/networks/vnet/operations/secgroups#naznachenie_gruppy_pravil_na_instans) ее.
 
-      - У вас есть приватный SSH-ключ из [ключевой пары](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix#3_proverte_nalichie_klyuchevoy_pary), которая используется для доступа к ВМ. Имя ключевой пары отображается на странице ВМ в разделе **Облачные вычисления**.
+      - У вас есть приватный SSH-ключ из [ключевой пары](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix#3_proverte_nalichie_klyuchevoy_pary), которая используется для доступа к ВМ. Имя ключевой пары отображается на странице ВМ в разделе **Облачные вычисления**.
 
    В примере в этой статье подключение описано для ВМ с Ubuntu 22.04 и именем `Ubuntu-CBC`.
 
@@ -45,7 +45,7 @@
 
    </info>
 
-1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ.
+1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ.
 1. В вашей домашней директории разместите произвольный непустой файл. Например, выполните в консоли:
 
     ```bash
@@ -102,7 +102,7 @@
 
          После того, как окно будет закрыто, посмотреть значение маркера будет невозможно.
 
-   1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ, загрузите на нее дистрибутив агента сервиса для Linux.
+   1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ, загрузите на нее дистрибутив агента сервиса для Linux.
    1. Установите на ВМ пакет `rpm`:
 
       ```bash
@@ -169,7 +169,7 @@
 
 ## 4. Удалите данные с ВМ
 
-[Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ `Ubuntu-CBC` и удалите из вашей домашней директории файл `cp_help.txt`.
+[Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ `Ubuntu-CBC` и удалите из вашей домашней директории файл `cp_help.txt`.
 
 ## 5. Восстановите ВМ из резервной копии
 
@@ -195,6 +195,6 @@
 
 ## 6. Проверьте работоспособность восстановленной ВМ
 
-1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ `Ubuntu-CBC`.
+1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ `Ubuntu-CBC`.
 1. Проверьте наличие файла `cp_help.txt` в домашней директории.
-1. [Выполните](/ru/base/iaas/instructions/vm/vm-manage) произвольные операции с ВМ.
+1. [Выполните](/ru/base/iaas/service-management/vm/vm-manage) произвольные операции с ВМ.

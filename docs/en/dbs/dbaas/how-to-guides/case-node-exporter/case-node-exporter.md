@@ -11,7 +11,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 ## Preparatory steps
 
 1. [Create](/en/networks/vnet/operations/manage-net#creating_a_network) a virtual network, for example, `monitoring-net`.
-1. [Create](/en/base/iaas/instructions/vm/vm-create) VM for Prometheus server:
+1. [Create](/en/base/iaas/service-management/vm/vm-create) VM for Prometheus server:
 
    - name: `Centos_8_5_Prometheus`;
    - operating system: CentOS 8.4;
@@ -35,7 +35,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 ## 2. Install and configure Prometheus
 
 1. [Install](/en/dbs/dbaas/instructions/managing-extensions#installing_the_extension) the **Node exporter** extension for the `Redis-5` DB instance. When installing, specify the parameter `listen_port` = `9100`.
-1. [Connect](/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `Centos_8_5_Prometheus` VM.
+1. [Connect](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Centos_8_5_Prometheus` VM.
 1. Download Prometheus and unzip the downloaded archive:
 
    ```bash

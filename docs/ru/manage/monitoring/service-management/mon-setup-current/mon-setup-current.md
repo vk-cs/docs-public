@@ -5,7 +5,7 @@
 1. Откройте страницу ВМ, нажав на ее имя в общем списке.
 1. На вкладке **Общая информация** под основной информацией о ВМ перейдите на вкладку **Настройка мониторинга**.
 1. Скопируйте появившуюся команду.
-1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/) к виртуальной машине.
+1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/) к виртуальной машине.
 1. На подключенной ВМ выполните команду, скопированную на шаге 5.
 
 Агент мониторинга будет установлен и станет запускаться каждый раз при старте ВМ.
@@ -15,8 +15,8 @@
 1. Убедитесь, что [включена](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
 1. [Получите токен доступа](/ru/additionals/cases/case-keystone-token) `X-Subject-Token`.
 1. [Получите Project ID](/ru/manage/tools-for-using-services/rest-api/endpoints#poluchenie_project_id), специальный идентификатор для работы с сервисами. Пример: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`.
-1. [Получите ID виртуальной машины](/ru/base/iaas/instructions/vm/vm-manage#poluchenie_id_virtualnoy_mashiny).
-1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/) к виртуальной машине.
+1. [Получите ID виртуальной машины](/ru/base/iaas/service-management/vm/vm-manage#poluchenie_id_virtualnoy_mashiny).
+1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/) к виртуальной машине.
 1. Выполните команду:
 
    <tabs>

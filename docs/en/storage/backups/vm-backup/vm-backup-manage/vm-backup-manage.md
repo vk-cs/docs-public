@@ -127,7 +127,7 @@ VM recovery speed from backup is affected by:
    - **Recovery Volume**: specify the disk of the selected VM to restore.
    - **Disk Name**: if necessary, specify the name of the new disk.
    - **Availability zone**: select the data center where the VM will be launched.
-   - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#disks).
+   - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#disks).
    - **Attach a volume to a VM**: enable the option if you want to connect the disk to an existing VM from the list **Virtual machine**.
 
 </tabpanel>

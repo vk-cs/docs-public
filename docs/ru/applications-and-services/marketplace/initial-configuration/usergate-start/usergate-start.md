@@ -60,8 +60,8 @@ UserGate NGFW предоставляется по модели BYOL (Bring Your 
 1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
 1. Откройте страницу ВМ сервиса (обычно `<идентификатор>usergate`), нажав на ее имя в списке.
 1. Перейдите на вкладку **Сети**.
-1. [Подключите](/ru/base/iaas/instructions/vm/vm-add-net#podklyuchenie_seti_k_vm) нужную сеть к ВМ.
-1. Перезагрузите ВМ [средствами VK Cloud](/ru/base/iaas/instructions/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm) или через [консоль UserGate](https://docs.usergate.com/upravlenie-ustrojstvom_84.html#Операции_с_сервером).
+1. [Подключите](/ru/base/iaas/service-management/vm/vm-add-net#podklyuchenie_seti_k_vm) нужную сеть к ВМ.
+1. Перезагрузите ВМ [средствами VK Cloud](/ru/base/iaas/service-management/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm) или через [консоль UserGate](https://docs.usergate.com/upravlenie-ustrojstvom_84.html#Операции_с_сервером).
 
 ## 2. Проверьте наличие добавленной сети
 

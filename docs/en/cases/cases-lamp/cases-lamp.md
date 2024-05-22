@@ -6,7 +6,7 @@ This instruction will help you deploy an Apache server in the Ubuntu 22.04 opera
 
 1. [Register](/en/additionals/start/account-registration) at VK Cloud.
 1. [Create](/en/networks/vnet/operations/manage-net#creating_a_network) `network1` network with internet access and a subnet with the address `10.0.0.0/24`.
-1. [Create VM](/en/base/iaas/instructions/vm/vm-create):
+1. [Create VM](/en/base/iaas/service-management/vm/vm-create):
 
    - name: `Ubuntu_22_04_LAMP`;
    - flavor: `STD3-2-6`;
@@ -54,7 +54,7 @@ This instruction will help you deploy an Apache server in the Ubuntu 22.04 opera
 
 ## 2. Install Apache and PHP on the VM
 
-1. [Connect](/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `Ubuntu_22_04_LAMP` VM.
+1. [Connect](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Ubuntu_22_04_LAMP` VM.
 1. Update the packages to the current version and reboot the VM using the commands:
 
    ```bash
@@ -90,7 +90,7 @@ This instruction will help you deploy an Apache server in the Ubuntu 22.04 opera
 
 Deployed virtual resources are charged. If you don't need them anymore:
 
-- [Delete](/en/base/iaas/instructions/vm/vm-manage#deleting_a_vm) `Ubuntu_22_04_LAMP` VM.
+- [Delete](/en/base/iaas/service-management/vm/vm-manage#deleting_a_vm) `Ubuntu_22_04_LAMP` VM.
 - [Delete](/en/dbs/dbaas/instructions/delete) `MySQL-5864` instance.
 - If necessary, [delete](/en/networks/vnet/operations/manage-floating-ip#removing_floating_ip_address_from_the_project) `211.243.95.137` floating IP address.
 - [Delete](/en/networks/dns/publicdns#deleting_resource_records) `site-lamp.example.vk.cloud` DNS record.

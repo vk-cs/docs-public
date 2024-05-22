@@ -1,6 +1,6 @@
 ## Включение или выключение агента
 
-1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/) к виртуальной машине.
+1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/) к виртуальной машине.
 1. [Убедитесь](../connect-plugin/), что у вас установлен плагин `vkcloudlogs-fluent-bit-plugin`.
 
 - Чтобы включить агент, выполните команду:
@@ -37,7 +37,7 @@
 
 ## Настройка агента для сбора логов из дополнительных текстовых файлов
 
-1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/) к виртуальной машине.
+1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/) к виртуальной машине.
 1. [Убедитесь](../connect-plugin/), что у вас установлен плагин `vkcloudlogs-fluent-bit-plugin`.
 1. Скорректируйте файл `vkcloudlogs-fluent-bit.conf` нужным образом:
 
@@ -89,7 +89,7 @@
 
 ## Удаление агента и плагина
 
-1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/) к виртуальной машине.
+1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/) к виртуальной машине.
 1. [Убедитесь](../connect-plugin/), что у вас установлен плагин `vkcloudlogs-fluent-bit-plugin`.
 1. Выполните команду:
 
