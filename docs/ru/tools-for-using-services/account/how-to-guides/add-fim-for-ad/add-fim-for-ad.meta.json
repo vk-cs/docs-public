@@ -1,18 +1,19 @@
 {
-    "title": "Настройка федерации удостоверений",
-    "pageDescription": "Настройка федеративного доступа в VK Cloud через Active Directory.",
-    "shortDescription": "Как настроить аутентификацию в VK Cloud через Active Directory",
-    "metaTitle": "Настройка федерации удостоверений",
-    "metaDescription": "Настройка федеративного доступа в VK Cloud через Active Directory",
-    "sectionTitle": "Настройка федерации удостоверений",
-    "icon": "",
-    "hidden": true,
-    "weight": 1,
-    "build": {
-        "for": [
-            "dontbuild"
-        ]
-    },
-    "createdAt": "2024-02-15T12:45:14.000Z",
-    "updatedAt": "2024-05-20T08:27:09.000Z"
+  "title": "Настройка федерации удостоверений",
+  "pageDescription": "Настройка федеративного доступа в VK Cloud через Active Directory.",
+  "shortDescription": "Как настроить аутентификацию в VK Cloud через Active Directory",
+  "metaTitle": "Настройка федерации удостоверений",
+  "metaDescription": "Настройка федеративного доступа в VK Cloud через Active Directory",
+  "sectionTitle": "Настройка федерации удостоверений",
+  "icon": "",
+  "hidden": true,
+  "weight": 1,
+  "build": {
+    "for": [
+      "dontbuild"
+    ]
+  },
+  "createdAt": "2024-02-15T12:45:14.000Z",
+  "updatedAt": "2024-05-20T08:27:09.000Z",
+  "uuid": "c846a64a-d934-4da9-acfa-d39b053e7752"
 }
