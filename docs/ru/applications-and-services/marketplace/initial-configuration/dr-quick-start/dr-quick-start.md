@@ -27,7 +27,7 @@
 
 1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
 1. [Настройте](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута восстановленная инфраструктура.
-1. [Создайте ВМ](/ru/base/iaas/instructions/vm/vm-create), для которой будет применяться восстановление. В рамках быстрого старта будет использоваться ВМ `Ubuntu-DR` с операционной системой Ubuntu 18.04.
+1. [Создайте ВМ](/ru/base/iaas/service-management/vm/vm-create), для которой будет применяться восстановление. В рамках быстрого старта будет использоваться ВМ `Ubuntu-DR` с операционной системой Ubuntu 18.04.
 1. [Подключите](../../service-management/pr-instance-add/) сервис Hystax Acura Disaster Recovery.
 
    Дождитесь завершения установки — на почту придет ссылка с логином и паролем. Сервис будет развернут по адресу https://dr.mcs-cloud.ru (личный кабинет Hystax Acura).
@@ -240,12 +240,12 @@
 
 ## 6. Проверьте работоспособность восстановленной ВМ
 
-Найдите восстановленную ВМ в VK Cloud (`<PID проекта>_cloud_agent`), [выполните](/ru/base/iaas/instructions/vm/vm-manage) произвольные операции над ней.
+Найдите восстановленную ВМ в VK Cloud (`<PID проекта>_cloud_agent`), [выполните](/ru/base/iaas/service-management/vm/vm-manage) произвольные операции над ней.
 
 ## Удалите неиспользуемые ресурсы
 
 Работающие ВМ потребляют вычислительные ресурсы. Если они вам больше не нужны:
 
-- [Удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie_vm) ВМ `Ubuntu-DR`.
+- [Удалите](/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm) ВМ `Ubuntu-DR`.
 - Удалите резервную инфраструктуру `VK-Cloud-infra` через [личный кабинет](https://dr.mcs-cloud.ru) Hystax Acura.
 - [Удалите](/ru/networks/vnet/operations/manage-floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, если он был создан во время восстановления.

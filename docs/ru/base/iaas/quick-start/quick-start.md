@@ -159,5 +159,5 @@ Are you sure you want to continue connecting (yes/no)?
 
 Работающая ВМ потребляет вычислительные ресурсы. Если она вам больше не нужна:
 
-- [остановите](../instructions/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm) ее, чтобы воспользоваться ею позже;
-- [удалите](../instructions/vm/vm-manage#udalenie_vm) ее навсегда.
+- [остановите](../service-management/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm) ее, чтобы воспользоваться ею позже;
+- [удалите](../service-management/vm/vm-manage#udalenie_vm) ее навсегда.

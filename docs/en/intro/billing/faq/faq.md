@@ -248,7 +248,7 @@ To restore the services:
 1. Wait for the activation of services in the project. It can take up to 2 hours.
 1. Manually activate project resources:
 
-   - [virtual machines](/en/base/iaas/instructions/vm/vm-manage#starting_stopping_reboot_the_vm);
+   - [virtual machines](/en/base/iaas/service-management/vm/vm-manage#starting_stopping_reboot_the_vm);
    - [Kubernetes containers](/en/base/k8s/operations/manage-cluster#start_cluster_ffb49399);
    - [vm backup](/en/manage/backups/vm-backup/vm-backup-manage#activating_stopping_and_deleting_a_backup_plan);
    - other resources.

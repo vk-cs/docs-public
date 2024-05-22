@@ -17,7 +17,7 @@ Creating MLflow Deploy instances is available both through your VK Cloud persona
 4. Set up the instance configuration:
 
    - **Instance name**: a name of the instance. It also sets the OS `hostname` parameter.
-   - **Virtual machine category**: a category of the preset VM configurations. More details in the [review of the Cloud Servers service](/en/base/iaas/concepts/vm-concept#flavors).
+   - **Virtual machine category**: a category of the preset VM configurations. More details in the [review of the Cloud Servers service](/en/base/iaas/concepts/about#flavors).
    - **Virtual machine type**: a preset VM configuration (CPU and RAM).
    - **Availability zone**: the data center where the instance will be launched.
    - **Disk size**: the VM disk size in GB.
