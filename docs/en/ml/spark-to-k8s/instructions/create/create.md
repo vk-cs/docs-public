@@ -15,15 +15,15 @@
 
       - **Cluster name**: it can contain only Latin letters, numbers and symbols `.`, `-`, `_`.
 
-      - **Availability zone**: [availability zone](/en/base/iaas/concepts/vm-concept#availability_zone) for the cluster.
+      - **Availability zone**: [availability zone](/en/base/iaas/concepts/about#availability_zone) for the cluster.
 
       - **Network**: the network and subnet where the cluster nodes will be located. If the necessary networks and subnets are not in the list, [create](/en/networks/vnet/operations/manage-net) them.
 
    1. Set the worker node settings in the **Worker-node settings** section:
 
-      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#flavors).
 
-      - **Type of virtual machine:** [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for worker nodes.
+      - **Type of virtual machine:** [configuration template](/en/base/iaas/concepts/about#flavors) for worker nodes.
 
         Templates with high-performance CPUs are available [on request to the support service] (/en/contacts). To use these templates, select the **Show only high performance CPUs** option.
 
@@ -59,7 +59,7 @@
              - it is allowed to use only uppercase and lowercase Latin letters, numbers, symbols from the range `!#$%&()*+,.:;<=>?@[]^_{|}~-`;
              - the password must contain at least one letter of the Latin alphabet and at least one digit.
 
-      - **Virtual machine key**: the key that is used for [connecting to cluster nodes via SSH](/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix). Select an existing key or create a new one.
+      - **Virtual machine key**: the key that is used for [connecting to cluster nodes via SSH](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix). Select an existing key or create a new one.
 
         <warn>
 

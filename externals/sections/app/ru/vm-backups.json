@@ -38,25 +38,25 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/base/iaas/instructions/vm/vm-console"
+                    "link": "/ru/base/iaas/service-management/vm/vm-console"
                 },
                 {
                     "link": "/ru/base/iaas/troubleshooting"
                 },
                 {
-                    "link": "/ru/base/iaas/use-cases/disk-encrypt"
+                    "link": "/ru/base/iaas/how-to-guides/disk-encrypt"
                 },
                 {
-                    "link": "/ru/base/iaas/use-cases/win-image"
+                    "link": "/ru/base/iaas/how-to-guides/win-image"
                 },
                 {
-                    "link": "/ru/base/iaas/use-cases/packer"
+                    "link": "/ru/base/iaas/how-to-guides/packer"
                 },
                 {
-                    "link": "/ru/base/iaas/use-cases/vm-multiqueue"
+                    "link": "/ru/base/iaas/how-to-guides/vm-multiqueue"
                 },
                 {
-                    "link": "/ru/base/iaas/use-cases/managing-node"
+                    "link": "/ru/base/iaas/how-to-guides/managing-node"
                 }
             ]
         }

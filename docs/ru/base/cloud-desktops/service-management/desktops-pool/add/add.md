@@ -52,7 +52,7 @@
     - **Тип инстанса**: выберите тип ВМ из списка типов, доступных в проекте.
     - **Размер диска**: укажите размер диска в ГБ. Значение не может быть меньше размера образа ОС.
     - **Тип диска**: выберите одно из значений — `HDD`, `SSD` или `High-IOPS SSD`.
-    - **Образ**: выберите образ для создания ВМ из списка доступных образов. При необходимости нажмите кнопку **Загрузить свой образ** и загрузите ранее [подготовленный](/ru/base/cloud-desktops/concepts/desktop-image) и [проверенный](/ru/base/cloud-desktops/how-to-guides/check-desktop-image) образ, следуя [инструкции по импорту](/ru/base/iaas/instructions/vm-images/vm-images-manage#import_obraza).
+    - **Образ**: выберите образ для создания ВМ из списка доступных образов. При необходимости нажмите кнопку **Загрузить свой образ** и загрузите ранее [подготовленный](/ru/base/cloud-desktops/concepts/desktop-image) и [проверенный](/ru/base/cloud-desktops/how-to-guides/check-desktop-image) образ, следуя [инструкции по импорту](/ru/base/iaas/service-management/images/images-manage#import_obraza).
 
       <info>
 

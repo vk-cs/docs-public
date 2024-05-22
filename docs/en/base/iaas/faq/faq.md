@@ -4,7 +4,7 @@
 
 <summary>Where are the servers located?</summary>
 
-The servers are located in [several VK Cloud data centers](../concepts/vm-concept#availability_zone) both on the territory and outside the Russian Federation.
+The servers are located in [several VK Cloud data centers](../concepts/about#availability_zone) both on the territory and outside the Russian Federation.
 
 </details>
 
@@ -20,7 +20,7 @@ VK Cloud provides virtual machines with an incoming and outgoing Internet connec
 
 <summary>How do I set a new password for a VM?</summary>
 
-Use the [instructions](../instructions/vm/vm-manage#setting_and_changing_a_password).
+Use the [instructions](../service-management/vm/vm-manage#setting_and_changing_a_password).
 
 </details>
 
@@ -102,7 +102,7 @@ In the virtualization system, CPU resources are used for graphics processing, wh
 
 <summary>How do I recover my private key?</summary>
 
-If you lose the private key that was used to access the VM over SSH, you need to create a new key pair and add the public key to the VM manually. For more information, see the article [VM Management](../instructions/vm/vm-manage#restoring_vm_access_by_key).
+If you lose the private key that was used to access the VM over SSH, you need to create a new key pair and add the public key to the VM manually. For more information, see the article [VM Management](../service-management/vm/vm-manage#restoring_vm_access_by_key).
 
 </details>
 
@@ -118,7 +118,7 @@ You can connect to the Openstack CLI using the configuration file. Information a
 
 <summary>How do I go to the virtual server console?</summary>
 
-The VNC console is available on the virtual machine page in the section **Cloud Computing → Virtual Machines**. For more information, see the article [VM diagnostics](../instructions/vm/vm-console#the_vnc_console).
+The VNC console is available on the virtual machine page in the section **Cloud Computing → Virtual Machines**. For more information, see the article [VM diagnostics](../service-management/vm/vm-console#the_vnc_console).
 
 </details>
 
@@ -140,7 +140,7 @@ The usual keyboard shortcuts, audio transmission and clipboard are not available
 
 <summary>Is it possible to increase CPU or RAM?</summary>
 
-Yes. If the machine has already been created, [change its type](../instructions/vm/vm-manage#renaming_and_changing_the_vm_type).
+Yes. If the machine has already been created, [change its type](../service-management/vm/vm-manage#renaming_and_changing_the_vm_type).
 
 </details>
 
@@ -260,7 +260,7 @@ The operation of creating and deleting resources can be performed an unlimited n
 
 You can enlarge the disk using the VK Cloud panel in the **Virtual Machines** or **Disks** section of the **Cloud Computing** service.
 
-Full information is available in the article about [disk expansion](../instructions/volumes#increasing_the_disk_size_with_rebooting).
+Full information is available in the article about [disk expansion](../service-management/volumes#increasing_the_disk_size_with_rebooting).
 
 </details>
 
@@ -292,7 +292,7 @@ Compare the obtained indicators with the [guaranteed disk performance](../concep
 
 <info>
 
-To increase performance, you can [increase the size](../instructions/volumes#increasing_the_disk_size_with_rebooting) or [change](../instructions/volumes#changing_the_disk_type) disk type.
+To increase performance, you can [increase the size](../service-management/volumes#increasing_the_disk_size_with_rebooting) or [change](../service-management/volumes#changing_the_disk_type) disk type.
 
 </info>
 
@@ -310,7 +310,7 @@ At the time of migration, there may be a decrease in read-only performance, but 
 
 <summary>I can't delete a disk</summary>
 
-Make sure that the disk [is disabled](../instructions/volumes#disconnecting_a_disk_from_a_vm) from VM — after that, delete the disk in the **Cloud Computing** → **Disks** section.
+Make sure that the disk [is disabled](../service-management/volumes#disconnecting_a_disk_from_a_vm) from VM — after that, delete the disk in the **Cloud Computing** → **Disks** section.
 
 </details>
 
@@ -318,7 +318,7 @@ Make sure that the disk [is disabled](../instructions/volumes#disconnecting_a_di
 
 <summary>How do I transfer a VM disk to another project?</summary>
 
-Use the [instructions](../instructions/volumes#transfer_disks_between_projects).
+Use the [instructions](../service-management/volumes#transfer_disks_between_projects).
 
 </details>
 
@@ -326,7 +326,7 @@ Use the [instructions](../instructions/volumes#transfer_disks_between_projects).
 
 <summary>How do I upload my OS image?</summary>
 
-The VK Cloud platform allows the creation of virtual machines from previously prepared and uploaded images. Image preparation consists of installing the necessary set of software components and drivers to work in cloud provider services, for more details in the articles [Hyper-V VM Migration to VK Cloud](../use-cases/migrate-hyperv/) and [VMware VM Migration to VK Cloud](../use-cases/migrate-vmware/).
+The VK Cloud platform allows the creation of virtual machines from previously prepared and uploaded images. Image preparation consists of installing the necessary set of software components and drivers to work in cloud provider services, for more details in the articles [Hyper-V VM Migration to VK Cloud](/en/intro/migration/migrate-hyperv) and [VMware VM Migration to VK Cloud](/en/intro/migration/migrate-vmware).
 
 </details>
 
@@ -334,7 +334,7 @@ The VK Cloud platform allows the creation of virtual machines from previously pr
 
 <summary>How do I change the VM's root disk?</summary>
 
-Replacement of the root disk is possible only if another disk has already been created in the VK Cloud project. It can be either an empty disk or a boot disk containing the operating system. Instructions are given in the article about [replacing the root disk](../instructions/volumes#replacing_the_root_disk).
+Replacement of the root disk is possible only if another disk has already been created in the VK Cloud project. It can be either an empty disk or a boot disk containing the operating system. Instructions are given in the article about [replacing the root disk](../service-management/volumes#replacing_the_root_disk).
 
 </details>
 
@@ -342,7 +342,7 @@ Replacement of the root disk is possible only if another disk has already been c
 
 <summary>Is it possible to create a disk snapshot?</summary>
 
-Creating a disk snapshot is available from [VK Cloud personal account or OpenStack CLI](../instructions/volumes#disk_snapshots). The created snapshot will be stored until the disk itself is deleted.
+Creating a disk snapshot is available from [VK Cloud personal account or OpenStack CLI](../service-management/volumes#disk_snapshots). The created snapshot will be stored until the disk itself is deleted.
 
 </details>
 
@@ -350,7 +350,7 @@ Creating a disk snapshot is available from [VK Cloud personal account or OpenSta
 
 <summary>How do I restore a disk from a snapshot?</summary>
 
-Use the [instructions](../instructions/volumes#disk_snapshots).
+Use the [instructions](../service-management/volumes#disk_snapshots).
 
 </details>
 
@@ -425,7 +425,7 @@ No, such functionality is not provided.
 
 Yes, there is such a possibility. In this case, the storage will be restored to a separate VM, this will require additional quotas.
 
-Learn more about creating snapshots in the article [File Storage management](../instructions/fs-manage#creating_a_snapshot).
+Learn more about creating snapshots in the article [File Storage management](../service-management/fs-manage#creating_a_snapshot).
 
 </details>
 
@@ -487,7 +487,7 @@ Repositories are created in [availability zones](/en/additionals/start/architect
 
 <summary>Is it possible to configure simultaneous access from different VMs to the file storage?</summary>
 
-Yes, you can, for more information, see the article [File Storage management](../instructions/fs-manage#connecting_file_storage).
+Yes, you can, for more information, see the article [File Storage management](../service-management/fs-manage#connecting_file_storage).
 
 </details>
 

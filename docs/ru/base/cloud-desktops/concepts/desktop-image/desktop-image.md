@@ -2,11 +2,11 @@
 
 Подготовить образ рабочего стола можно любым доступным способом. Например, вы можете:
 
-- [создать ВМ](/ru/base/iaas/instructions/vm/vm-create#sozdayte_vm) с нужной ОС, установить на нее необходимое ПО, а затем [создать образ](/ru/base/iaas/instructions/vm-images/vm-images-manage#sozdanie_obraza) из диска этой ВМ;
+- [создать ВМ](/ru/base/iaas/service-management/vm/vm-create#sozdayte_vm) с нужной ОС, установить на нее необходимое ПО, а затем [создать образ](/ru/base/iaas/service-management/images/images-manage#sozdanie_obraza) из диска этой ВМ;
 - воспользоваться инструкциями из разделов:
 
-  - для ОС Windows — [Подготовка образа ОС Windows для создания ВМ](/ru/base/iaas/use-cases/win-image);
-  - для ОС Astra Linux — [Создание образа с помощью Packer](/ru/base/iaas/use-cases/packer).
+  - для ОС Windows — [Подготовка образа ОС Windows для создания ВМ](/ru/base/iaas/how-to-guides/win-image);
+  - для ОС Astra Linux — [Создание образа с помощью Packer](/ru/base/iaas/how-to-guides/packer).
 
 ## Требования к собственному образу
 

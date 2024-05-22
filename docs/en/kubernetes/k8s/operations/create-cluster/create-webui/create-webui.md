@@ -94,7 +94,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
    - Master node settings:
 
-     - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
+     - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#flavors).
 
      - **Virtual machine type - Master:** [virtual machine template](../../../concepts/flavors#configuration_templates) for master nodes.
 

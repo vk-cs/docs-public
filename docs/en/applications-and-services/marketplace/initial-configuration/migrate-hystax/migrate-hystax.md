@@ -19,7 +19,7 @@ By using the Hystax Acura Migration service, you agree to the license agreements
 
 1. [Register](/en/additionals/start/account-registration) at VK Cloud.
 1. [Configure](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa) two-factor authentication (2FA) for the account on whose behalf the restored infrastructure will be deployed.
-1. [Create a VM](/en/base/iaas/instructions/vm/vm-create) for which recovery will be applied. As part of the quick start, the `Ubuntu-DR` VM with the Ubuntu 18.04 operating system will be used.
+1. [Create a VM](/en/base/iaas/service-management/vm/vm-create) for which recovery will be applied. As part of the quick start, the `Ubuntu-DR` VM with the Ubuntu 18.04 operating system will be used.
 1. [Connect](/en/applications-and-services/marketplace/service-management/pr-instance-add/) Hystax Acura Migration service.
 
    Wait for the installation to complete — a link with a username and password will be sent to your email. The service will be deployed at https://migration.mcs-cloud.ru (Hystax Acura personal account).
@@ -176,7 +176,7 @@ By using the Hystax Acura Migration service, you agree to the license agreements
 
 ## 5. Check the functionality of the added VM
 
-Find the added VM in VK Cloud (`<project PID>_cloud_agent`), [perform](/en/base/iaas/instructions/vm/vm-manage) arbitrary operations on it.
+Find the added VM in VK Cloud (`<project PID>_cloud_agent`), [perform](/en/base/iaas/service-management/vm/vm-manage) arbitrary operations on it.
 
 ## Delete unused resources
 

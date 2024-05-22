@@ -37,9 +37,9 @@ An error occurred (InvalidArgument) when calling the UploadPart operation: Part 
        addressing_style = path
    ```
 
-1. [Создайте](/ru/base/iaas/instructions/vm/vm-create) ВМ Ubuntu 22.04 в облаке VK Cloud.
+1. [Создайте](/ru/base/iaas/service-management/vm/vm-create) ВМ Ubuntu 22.04 в облаке VK Cloud.
 1. Установите на ВМ утилиту [gzip](https://www.gnu.org/software/gzip/manual/gzip.html).
-1. [Создайте](/ru/base/iaas/instructions/vm-volumes#sozdanie_diska) диск размером не менее 600 ГБ и [подключите](/ru/base/iaas/instructions/vm-volumes#podklyuchenie_diska_k_vm) его к ВМ.
+1. [Создайте](/ru/base/iaas/service-management/volumes#sozdanie_diska) диск размером не менее 600 ГБ и [подключите](/ru/base/iaas/service-management/volumes#podklyuchenie_diska_k_vm) его к ВМ.
 
 ## 2. Загрузите образ в объектное хранилище
 
@@ -124,7 +124,7 @@ An error occurred (InvalidArgument) when calling the UploadPart operation: Part 
 
 ## 3. Загрузите образ на диск VK Cloud
 
-1. [Подключитесь к ВМ](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) с помощью SSH.
+1. [Подключитесь к ВМ](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix) с помощью SSH.
 1. Проверьте наличие подключенного диска с помощью команды `lsblk`.
 
    <details>
@@ -153,16 +153,16 @@ An error occurred (InvalidArgument) when calling the UploadPart operation: Part 
 
 ## 4. Создайте образ из диска
 
-Воспользуйтесь [инструкцией](/ru/base/iaas/instructions/vm-images/vm-images-manage#sozdanie_obraza).
+Воспользуйтесь [инструкцией](/ru/base/iaas/service-management/images/images-manage#sozdanie_obraza).
 
 ## 5. Проверьте работоспособность образа
 
-Создайте ВМ, выбрав в качестве операционной системы загруженный образ, согласно [инструкции](/ru/base/iaas/instructions/vm/vm-create).
+Создайте ВМ, выбрав в качестве операционной системы загруженный образ, согласно [инструкции](/ru/base/iaas/service-management/vm/vm-create).
 
 ## Удалите неиспользуемые ресурсы
 
 Созданные ресурсы тарифицируются и потребляют вычислительные ресурсы. Если они вам больше не нужны:
 
-- [Удалите](/ru/base/iaas/instructions/vm-images/vm-images-manage#udalenie_obraza) загруженный образ из объектного хранилища.
-- [Удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie_vm) или [остановите](/ru/base/iaas/instructions/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm) ВМ.
-- [Удалите](/ru/base/iaas/instructions/vm-volumes#udalenie_diska) диск.
+- [Удалите](/ru/base/iaas/service-management/images/images-manage#udalenie_obraza) загруженный образ из объектного хранилища.
+- [Удалите](/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm) или [остановите](/ru/base/iaas/service-management/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm) ВМ.
+- [Удалите](/ru/base/iaas/service-management/volumes#udalenie_diska) диск.

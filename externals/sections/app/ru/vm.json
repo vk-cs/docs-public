@@ -27,16 +27,16 @@
                     "link": "/ru/base/iaas/quick-start"
                 },
                 {
-                    "link": "/ru/base/iaas/instructions/vm/vm-create"
+                    "link": "/ru/base/iaas/service-management/vm/vm-create"
                 },
                 {
-                    "link": "/ru/base/iaas/instructions/vm/vm-connect"
+                    "link": "/ru/base/iaas/service-management/vm/vm-connect"
                 },
                 {
-                    "link": "/ru/base/iaas/instructions/vm/vm-manage"
+                    "link": "/ru/base/iaas/service-management/vm/vm-manage"
                 },
                 {
-                    "link": "/ru/base/iaas/instructions/vm/vm-add-net"
+                    "link": "/ru/base/iaas/service-management/vm/vm-add-net"
                 }
             ]
         },
@@ -44,25 +44,25 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/base/iaas/instructions/vm/vm-console"
+                    "link": "/ru/base/iaas/service-management/vm/vm-console"
                 },
                 {
                     "link": "/ru/base/iaas/troubleshooting"
                 },
                 {
-                    "link": "/ru/base/iaas/use-cases/disk-encrypt"
+                    "link": "/ru/base/iaas/how-to-guides/disk-encrypt"
                 },
                 {
-                    "link": "/ru/base/iaas/use-cases/win-image"
+                    "link": "/ru/base/iaas/how-to-guides/win-image"
                 },
                 {
-                    "link": "/ru/base/iaas/use-cases/packer"
+                    "link": "/ru/base/iaas/how-to-guides/packer"
                 },
                 {
-                    "link": "/ru/base/iaas/use-cases/vm-multiqueue"
+                    "link": "/ru/base/iaas/how-to-guides/vm-multiqueue"
                 },
                 {
-                    "link": "/ru/base/iaas/use-cases/managing-node"
+                    "link": "/ru/base/iaas/how-to-guides/managing-node"
                 }
             ]
         }
