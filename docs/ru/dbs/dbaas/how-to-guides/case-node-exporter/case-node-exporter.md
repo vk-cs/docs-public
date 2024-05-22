@@ -11,7 +11,7 @@
 ## Подготовительные шаги
 
 1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) виртуальную сеть, например, `monitoring-net`.
-1. [Создайте](/ru/base/iaas/instructions/vm/vm-create) ВМ для сервера Prometheus:
+1. [Создайте](/ru/base/iaas/service-management/vm/vm-create) ВМ для сервера Prometheus:
 
    - имя: `Centos_8_5_Prometheus`;
    - операционная система: CentOS 8.4;
@@ -35,7 +35,7 @@
 ## 2. Установите и настройте Prometheus
 
 1. [Установите](/ru/dbs/dbaas/service-management/managing-extensions#ustanovka_rasshireniya) расширение **Node exporter** для инстанса БД `Redis-5`. При установке укажите параметр `listen_port` = `9100`.
-1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ `Centos_8_5_Prometheus`.
+1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ `Centos_8_5_Prometheus`.
 1. Скачайте Prometheus и распакуйте скачанный архив:
 
    ```bash

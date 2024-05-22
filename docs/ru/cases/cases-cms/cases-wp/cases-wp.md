@@ -6,7 +6,7 @@
 
 1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
 1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
-1. [Создайте ВМ](/ru/base/iaas/instructions/vm/vm-create):
+1. [Создайте ВМ](/ru/base/iaas/service-management/vm/vm-create):
 
    - имя: `Almalinux_9_WP`;
    - операционная система: Almalinux 9;
@@ -50,7 +50,7 @@
 
 ## 1. Установите WordPress на ВМ
 
-1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ `Almalinux_9_WP`.
+1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ `Almalinux_9_WP`.
 1. Обновите пакеты до актуальной версии и перезагрузите ВМ с помощью команд:
 
    ```bash
@@ -120,7 +120,7 @@
 
 Развернутые виртуальные ресурсы тарифицируются. Если они вам больше не нужны:
 
-- [Удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie_vm) ВМ `Almalinux_9_WP`.
+- [Удалите](/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm) ВМ `Almalinux_9_WP`.
 - [Удалите](/ru/dbs/dbaas/instructions/manage-instance/mysql#udalenie_instansa_bd_ili_ego_hostov) инстанс БД `MySQL-9341`.
 - При необходимости [удалите](/ru/networks/vnet/operations/manage-floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес `212.233.95.135`.
 - [Удалите](/ru/networks/dns/publicdns#udalenie_resursnyh_zapisey) созданную DNS-запись `site-wp.example.vk.cloud`.

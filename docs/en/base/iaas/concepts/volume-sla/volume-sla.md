@@ -5,7 +5,7 @@ Various types of disks are used in the data storage system on the VK Cloud platf
 - High-IOPS SSD
 - Low Latency NVME
 
-Read more in the article [Cloud Servers overview](../vm-concept#disks).
+Read more in the article [Cloud Servers overview](../about#disks).
 
 Certain performance characteristics are guaranteed for each type of disk.
 
@@ -101,7 +101,7 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
 
 1. Before testing, make sure that the following conditions are met:
 
-   - the disk is [non-bootable](../../instructions/volumes#replacing_the_root_disk);
+   - the disk is [non-bootable](../../service-management/volumes#replacing_the_root_disk);
    - there is no load on the disk from the operating system.
 
    When these conditions are met, the IOPS measurement results must correspond to the following values:

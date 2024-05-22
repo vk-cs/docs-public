@@ -62,7 +62,7 @@ This example will create:
 
 To connect a persistent volume using static PVC:
 
-1. [Create a network HDD](/en/base/iaas/instructions/vm-volumes/).
+1. [Create a network HDD](/en/base/iaas/service-management/volumes/).
 
    When creating, specify:
 
@@ -445,7 +445,7 @@ This example will create:
 
 To connect an NFS persistent volume using a static PVC:
 
-1. [Create file storage](/en/base/iaas/instructions/fs-manage#creating_a_file_storage).
+1. [Create file storage](/en/base/iaas/service-management/fs-manage#creating_a_file_storage).
 
    When creating it, specify:
 
@@ -455,7 +455,7 @@ To connect an NFS persistent volume using a static PVC:
    - **Network:** network and subnet where the Kubernetes cluster is located. This information can be found on the cluster page.
    - **File storage network:** existing network. If a suitable network is not on the list, select `Create new network`.
 
-1. [View information](/en/base/iaas/instructions/fs-manage#viewing_information_about_file_storage) about the created file storage.
+1. [View information](/en/base/iaas/service-management/fs-manage#viewing_information_about_file_storage) about the created file storage.
 
    Save the value of the **Connection point** parameter.
 

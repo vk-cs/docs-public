@@ -29,15 +29,15 @@
 
         </info>
 
-      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors).
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#flavors).
 
-      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/vm-concept#flavors) for the DB instance.
+      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/about#flavors) for the DB instance.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
       - **Availability zone**: [availability zone](/en/additionals/start/architecture#availability_zones_567cfd7a) for the DB instance.
 
-      - **Disk Type**: [disk type](/en/base/iaas/concepts/vm-concept#disks) for the DB instance.
+      - **Disk Type**: [disk type](/en/base/iaas/concepts/about#disks) for the DB instance.
 
       - **Disk size, GB:** disk size (in gigabytes).
 
@@ -59,7 +59,7 @@
 
       - **Firewall settings:** a list of security groups for the DB instance.
 
-        Add the `ssh` security group to the list to be able to [connect to DB instance via SSH](/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix).
+        Add the `ssh` security group to the list to be able to [connect to DB instance via SSH](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
       - **Create replica:** this option affects the instance configuration and determines whether a replica will be added.
 
@@ -83,7 +83,7 @@
 
       - **SSH access key**: select an existing key or create a new one.
 
-        The key is used to [connect to instance hosts via SSH](/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix).
+        The key is used to [connect to instance hosts via SSH](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
    1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/manage/backups/db-backup) after the cluster is created.
 

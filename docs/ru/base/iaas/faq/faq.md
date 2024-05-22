@@ -4,7 +4,7 @@
 
 <summary>Где располагаются серверы?</summary>
 
-Серверы расположены в [нескольких дата-центрах VK Cloud](../concepts/vm-concept#zona_dostupnosti) как на территории, так и за пределами РФ.
+Серверы расположены в [нескольких дата-центрах VK Cloud](../concepts/about#zona_dostupnosti) как на территории, так и за пределами РФ.
 
 </details>
 
@@ -20,7 +20,7 @@ VK Cloud обеспечивает виртуальные машины входя
 
 <summary>Как установить новый пароль для ВМ?</summary>
 
-Воспользуйтесь [инструкцией](../instructions/vm/vm-manage#ustanovka_i_izmenenie_parolya).
+Воспользуйтесь [инструкцией](../service-management/vm/vm-manage#ustanovka_i_izmenenie_parolya).
 
 </details>
 
@@ -102,7 +102,7 @@ sudo sh -c "apt update; apt install -y qemu-guest-agent; systemctl enable qemu-g
 
 <summary>Как восстановить приватный ключ?</summary>
 
-Если утрачен приватный ключ, который использовался для доступа к ВМ по протоколу SSH, создайте новую ключевую пару и добавьте публичный ключ на ВМ вручную. Подробнее — в статье [Управление ВМ](../instructions/vm/vm-manage#vosstanovlenie_dostupa_k_vm_po_klyuchu).
+Если утрачен приватный ключ, который использовался для доступа к ВМ по протоколу SSH, создайте новую ключевую пару и добавьте публичный ключ на ВМ вручную. Подробнее — в статье [Управление ВМ](../service-management/vm/vm-manage#vosstanovlenie_dostupa_k_vm_po_klyuchu).
 
 </details>
 
@@ -118,7 +118,7 @@ sudo sh -c "apt update; apt install -y qemu-guest-agent; systemctl enable qemu-g
 
 <summary>Как перейти в консоль виртуального сервера?</summary>
 
-VNC-консоль доступна на странице виртуальной машины в разделе **Облачные вычисления → Виртуальные машины**. Подробнее — в статье [Диагностика ВМ](../instructions/vm/vm-console#vnc_konsol).
+VNC-консоль доступна на странице виртуальной машины в разделе **Облачные вычисления → Виртуальные машины**. Подробнее — в статье [Диагностика ВМ](../service-management/vm/vm-console#vnc_konsol).
 
 </details>
 
@@ -140,7 +140,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Можно ли увеличить CPU или RAM?</summary>
 
-Да. Если машина уже создана, [измените ее тип](../instructions/vm/vm-manage#pereimenovanie_i_izmenenie_tipa_vm).
+Да. Если машина уже создана, [измените ее тип](../service-management/vm/vm-manage#pereimenovanie_i_izmenenie_tipa_vm).
 
 </details>
 
@@ -260,7 +260,7 @@ VNC-консоль доступна на странице виртуальной
 
 Увеличить диск можно при помощи панели VK Cloud в разделе **Виртуальные машины** или **Диски** раздела **Облачные вычисления**.
 
-Полная информация доступна в статье [Управление дисками](../instructions/volumes#uvelichenie_razmera_diska_s_perezagruzkoy_vm).
+Полная информация доступна в статье [Управление дисками](../service-management/volumes#uvelichenie_razmera_diska_s_perezagruzkoy_vm).
 
 </details>
 
@@ -292,7 +292,7 @@ VNC-консоль доступна на странице виртуальной
 
 <info>
 
-Чтобы увеличить производительность, можно [увеличить размер](../instructions/volumes#uvelichenie_razmera_diska_s_perezagruzkoy_vm) или [изменить тип](../instructions/volumes#izmenenie_tipa_diska) диска.
+Чтобы увеличить производительность, можно [увеличить размер](../service-management/volumes#uvelichenie_razmera_diska_s_perezagruzkoy_vm) или [изменить тип](../service-management/volumes#izmenenie_tipa_diska) диска.
 
 </info>
 
@@ -310,7 +310,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Не могу удалить диск</summary>
 
-Убедитесь, что диск [отключен](../instructions/volumes#otklyuchenie_diska_ot_vm) от ВМ — после этого удалите диск в разделе **Облачные вычисления** → **Диски**.
+Убедитесь, что диск [отключен](../service-management/volumes#otklyuchenie_diska_ot_vm) от ВМ — после этого удалите диск в разделе **Облачные вычисления** → **Диски**.
 
 </details>
 
@@ -318,7 +318,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Как передать диск ВМ другому проекту?</summary>
 
-Воспользуйтесь [инструкцией](../instructions/volumes#peremeshchenie_diskov_mezhdu_proektami).
+Воспользуйтесь [инструкцией](../service-management/volumes#peremeshchenie_diskov_mezhdu_proektami).
 
 </details>
 
@@ -326,7 +326,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Как загрузить свой образ ОС?</summary>
 
-Платформа VK Cloud допускает создание виртуальных машин из ранее подготовленных и загруженных образов. Подготовка образа состоит из установки необходимого набора программных компонентов и драйверов для работы в сервисах облачных провайдеров, подробней в статьях [Миграция ВМ Hyper-V в VK Cloud](../use-cases/migrate-hyperv/) и [Миграция ВМ VMware в VK Cloud](../use-cases/migrate-vmware/).
+Платформа VK Cloud допускает создание виртуальных машин из ранее подготовленных и загруженных образов. Подготовка образа состоит из установки необходимого набора программных компонентов и драйверов для работы в сервисах облачных провайдеров, подробней в статьях [Миграция ВМ Hyper-V в VK Cloud](/ru/intro/migration/migrate-hyperv) и [Миграция ВМ VMware в VK Cloud](/ru/intro/migration/migrate-vmware).
 
 </details>
 
@@ -334,7 +334,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Как поменять корневой (root) диск ВМ?</summary>
 
-Замена корневого диска возможна, только если в проекте VK Cloud уже был создан другой диск. Это может быть как пустой диск, так и загрузочный, содержащий операционную систему. Инструкция приведена в статье о [замене root-диска](../instructions/volumes#zamena_osnovnogo_root_diska).
+Замена корневого диска возможна, только если в проекте VK Cloud уже был создан другой диск. Это может быть как пустой диск, так и загрузочный, содержащий операционную систему. Инструкция приведена в статье о [замене root-диска](../service-management/volumes#zamena_osnovnogo_root_diska).
 
 </details>
 
@@ -342,7 +342,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Можно ли создать снимок диска?</summary>
 
-Создание снимка диска доступно [в личном кабинете или через OpenStack CLI](../instructions/volumes#snimki_diska). Созданный снимок будет храниться до момента удаления самого диска.
+Создание снимка диска доступно [в личном кабинете или через OpenStack CLI](../service-management/volumes#snimki_diska). Созданный снимок будет храниться до момента удаления самого диска.
 
 </details>
 
@@ -350,7 +350,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Как восстановить диск из снимка?</summary>
 
-Воспользуйтесь [инструкцией](../instructions/volumes#snimki_diska).
+Воспользуйтесь [инструкцией](../service-management/volumes#snimki_diska).
 
 </details>
 
@@ -425,7 +425,7 @@ VNC-консоль доступна на странице виртуальной
 
 Да, такая возможность есть. При этом хранилище будет восстановлено в отдельную ВМ, это потребует дополнительных квот.
 
-Подробнее о создании снимков в статье [Управление файловыми хранилищами](../instructions/fs-manage#sozdanie_snimka).
+Подробнее о создании снимков в статье [Управление файловыми хранилищами](../service-management/fs-manage#sozdanie_snimka).
 
 </details>
 
@@ -486,7 +486,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Можно ли настроить одновременный доступ с разных ВМ к файловому хранилищу?</summary>
 
-Да, можно, подробнее в статье [Управление файловыми хранилищами](../instructions/fs-manage#podklyuchenie_faylovogo_hranilishcha).
+Да, можно, подробнее в статье [Управление файловыми хранилищами](../service-management/fs-manage#podklyuchenie_faylovogo_hranilishcha).
 
 </details>
 

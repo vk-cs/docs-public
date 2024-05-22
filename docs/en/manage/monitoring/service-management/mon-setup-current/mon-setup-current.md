@@ -5,7 +5,7 @@ To install monitoring to an existing VM:
 1. Open the VM page by clicking on its name in the list.
 1. On the **General information** tab, under the main VM information, go to the **Configuring monitoring** tab.
 1. Copy the command that appears.
-1. [Connect](/en/base/iaas/instructions/vm/vm-connect/) to the virtual machine.
+1. [Connect](/en/base/iaas/service-management/vm/vm-connect/) to the virtual machine.
 1. On the connected VM, run the command copied in step 5.
 
 The monitoring agent will be installed and will start every time the VM starts.
@@ -15,8 +15,8 @@ If the **Configuring monitoring** tab is missing:
 1. Make sure two-factor authentication is [enabled](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa) and API access is [activated](/en/manage/tools-for-using-services/rest-api/enable-api).
 1. [Get an access token](/en/additionals/cases/case-keystone-token) `X-Subject-Token`.
 1. [Get the Project ID](/en/manage/tools-for-using-services/rest-api/endpoints#getting_project_id), a special identifier for working with services. Example: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`.
-1. [Get the virtual machine ID](/en/base/iaas/instructions/vm/vm-manage#getting_a_virtual_machine_id).
-1. [Connect](/en/base/iaas/instructions/vm/vm-connect/) to the virtual machine.
+1. [Get the virtual machine ID](/en/base/iaas/service-management/vm/vm-manage#getting_a_virtual_machine_id).
+1. [Connect](/en/base/iaas/service-management/vm/vm-connect/) to the virtual machine.
 1. Run the command:
 
    <tabs>

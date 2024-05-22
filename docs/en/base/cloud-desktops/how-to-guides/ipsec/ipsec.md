@@ -22,7 +22,7 @@ To show how to configure a secure connection with virtual desktops:
         - The subnet IP address.
         - The router name and IP address.
 
-    1. Create a [virtual machine](/en/base/iaas/instructions/vm/vm-create) running Windows Server 2019 on the selected network.
+    1. Create a [virtual machine](/en/base/iaas/service-management/vm/vm-create) running Windows Server 2019 on the selected network.
 
          Write down the name and IP address of the VM.
 
@@ -39,7 +39,7 @@ To show how to configure a secure connection with virtual desktops:
 
         Write down the subnet IP address (CIDR).
 
-1. [Create a virtual machine](/en/base/iaas/instructions/vm/vm-create) connected to the external network `ext-net`. This will allow you to avoid using a floating IP address during further configuration.
+1. [Create a virtual machine](/en/base/iaas/service-management/vm/vm-create) connected to the external network `ext-net`. This will allow you to avoid using a floating IP address during further configuration.
 
     The VM parameters:
 
@@ -50,7 +50,7 @@ To show how to configure a secure connection with virtual desktops:
 
 1. Update the OS on the Debian VM:
 
-    1. [Connect](/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `Debian-IPsec-Gate` virtual machine via SSH and get root user rights (`sudo bash` command).
+    1. [Connect](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Debian-IPsec-Gate` virtual machine via SSH and get root user rights (`sudo bash` command).
 
     1. Update the OS before further setup:
 
@@ -147,7 +147,7 @@ To configure a VPN tunnel on the side of the VDI environment, add an extra netwo
 
 ## 3. Configure an additional network interface in a Debian VM
 
-1. [Connect](/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix) to the `Debian-IPsec-Gate` virtual machine via SSH and get root user rights (`sudo bash` command) .
+1. [Connect](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Debian-IPsec-Gate` virtual machine via SSH and get root user rights (`sudo bash` command) .
 1. Create the `eth1` file using the command:
 
     ```bash
@@ -438,7 +438,7 @@ To ensure traffic passes correctly through the VPN tunnel, add a number of setti
 
 1. [Create](/en/networks/vnet/operations/manage-net#creating_a_network) a virtual network with CIDR `10.55.4.0/22` and router `vdi-router`. This network simulates a VDI network and is needed to test the network connection. When you deploy VDI, this network is created automatically.
 
-1. Create a test [virtual machine](/en/base/iaas/instructions/vm/vm-create) on the `10.55.4.0/22` network and connect to it via SSH.
+1. Create a test [virtual machine](/en/base/iaas/service-management/vm/vm-create) on the `10.55.4.0/22` network and connect to it via SSH.
 
 1. Ping the LDAP server:
 
@@ -456,7 +456,7 @@ Scheme of the built interaction between networks and machines within networks:
 
 If you no longer need the created resources, delete them:
 
-1. [Delete](/en/base/iaas/instructions/vm/vm-manage#deleting_a_vm) the virtual machines.
+1. [Delete](/en/base/iaas/service-management/vm/vm-manage#deleting_a_vm) the virtual machines.
 1. [Delete](/en/networks/vnet/operations/manage-vpn#removing_a_vpn_tunnel) the VPN tunnel.
 1. [Delete](/en/networks/vnet/operations/manage-router#removing_the_router) the routers.
 1. Delete the [subnet](/en/networks/vnet/operations/manage-net#deleting_a_subnet) and the [network](/en/networks/vnet/operations/manage-net#deleting_a_network) in which the VM is located.
