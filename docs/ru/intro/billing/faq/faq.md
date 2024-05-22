@@ -235,7 +235,7 @@ VK Cloud ежеминутно фиксирует потребление ресу
 1. Дождитесь активации сервисов в проекте. Она может занять до 2 часов с момента зачисления средств.
 1. Вручную активируйте ресурсы проекта:
 
-   - [виртуальные машины](/ru/base/iaas/instructions/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm);
+   - [виртуальные машины](/ru/base/iaas/service-management/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm);
    - [контейнеры Kubernetes](/ru/base/k8s/operations/manage-cluster#zapustit_klaster_bbf98834);
    - [резервное копирование ВМ](/ru/manage/backups/vm-backup/vm-backup-manage#aktivaciya_ostanovka_i_udalenie_plana_rezervnogo_kopirovaniya);
    - другие ресурсы.

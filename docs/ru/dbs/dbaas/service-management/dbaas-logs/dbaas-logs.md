@@ -14,7 +14,7 @@ VK Cloud поддерживает логирование для инстансо
 
 Чтобы вывести логи БД:
 
-1. [Подключитесь к ВМ](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) по SSH под учетной записью `admin`.
+1. [Подключитесь к ВМ](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix) по SSH под учетной записью `admin`.
 
    <info>
 

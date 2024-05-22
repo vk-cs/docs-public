@@ -12,7 +12,7 @@ During the installation process, you need to enter the following settings:
 | Type of virtual machine | Preinstalled VM configuration (CPU and RAM) |
 | Accessibility zone | Selecting the data center where the instance will be launched |
 | Disk size | Sets the VM disk size in GB |
-| Disk type | Type of instance disk to be created, [more](/en/base/iaas/vm-volumes/volume-sla) |
+| Disk type | Type of instance disk to be created, [more](/en/base/iaas/concepts/volume-sla) |
 | Choosing a domain name | Specifies the DNS name of the instance |
 | JupyterHub Instance | Selecting the JupyterHub instance to which the MLflow instance will be connected |
 

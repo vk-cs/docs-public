@@ -27,10 +27,10 @@
                     "link": "/en/base/iaas/quick-start"
                 },
                 {
-                    "link": "/en/base/iaas/instructions/images/images-manage"
+                    "link": "/en/base/iaas/service-management/images/images-manage"
                 },
                 {
-                    "link": "/en/base/iaas/instructions/images/image-metadata"
+                    "link": "/en/base/iaas/service-management/images/image-metadata"
                 }
             ]
         },
@@ -44,25 +44,25 @@
                     "link": "/en/intro/migration/migrate-vmware"
                 },
                 {
-                    "link": "/en/base/iaas/instructions/vm/vm-console"
+                    "link": "/en/base/iaas/service-management/vm/vm-console"
                 },
                 {
                     "link": "/en/base/iaas/troubleshooting"
                 },
                 {
-                    "link": "/en/base/iaas/use-cases/disk-encrypt"
+                    "link": "/en/base/iaas/how-to-guides/disk-encrypt"
                 },
                 {
-                    "link": "/en/base/iaas/use-cases/win-image"
+                    "link": "/en/base/iaas/how-to-guides/win-image"
                 },
                 {
-                    "link": "/en/base/iaas/use-cases/packer"
+                    "link": "/en/base/iaas/how-to-guides/packer"
                 },
                 {
-                    "link": "/en/base/iaas/use-cases/vm-multiqueue"
+                    "link": "/en/base/iaas/how-to-guides/vm-multiqueue"
                 },
                 {
-                    "link": "/en/base/iaas/use-cases/managing-node"
+                    "link": "/en/base/iaas/how-to-guides/managing-node"
                 }
             ]
         }

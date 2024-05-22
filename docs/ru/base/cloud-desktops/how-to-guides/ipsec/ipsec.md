@@ -22,7 +22,7 @@
         - IP-адрес подсети;
         - IP-адрес и имя маршрутизатора.
 
-    1. Создайте в выбранной сети [виртуальную машину](/ru/base/iaas/instructions/vm/vm-create) c ОС Windows Server 2019.
+    1. Создайте в выбранной сети [виртуальную машину](/ru/base/iaas/service-management/vm/vm-create) c ОС Windows Server 2019.
 
         Запишите имя и IP-адрес ВМ.
 
@@ -39,7 +39,7 @@
 
         Запишите IP-адрес (CIDR) подсети.
 
-1. [Создайте виртуальную машину](/ru/base/iaas/instructions/vm/vm-create) с подключением к внешней сети `ext-net`. Это позволит не использовать плавающий IP при дальнейшей настройке.
+1. [Создайте виртуальную машину](/ru/base/iaas/service-management/vm/vm-create) с подключением к внешней сети `ext-net`. Это позволит не использовать плавающий IP при дальнейшей настройке.
 
     Параметры ВМ:
 
@@ -50,7 +50,7 @@
 
 1. Обновите OC на ВМ Debian:
 
-    1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) к виртуальной машине `Debian-IPsec-Gate` по SSH и получите права root-пользователя (команда `sudo bash`).
+    1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix) к виртуальной машине `Debian-IPsec-Gate` по SSH и получите права root-пользователя (команда `sudo bash`).
 
     1. Обновите ОС перед дальнейшей настройкой:
 
@@ -147,7 +147,7 @@
 
 ## 3. Настройте дополнительный сетевой интерфейс в ВМ Debian
 
-1. [Подключитесь](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) к виртуальной машине `Debian-IPsec-Gate` по SSH и получите права root-пользователя (команда `sudo bash`).
+1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix) к виртуальной машине `Debian-IPsec-Gate` по SSH и получите права root-пользователя (команда `sudo bash`).
 1. Создайте файл `eth1` с помощью команды:
 
     ```bash
@@ -438,7 +438,7 @@
 
 1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) виртуальную сеть с CIDR `10.55.4.0/22` и маршрутизатором `vdi-router`. Эта сеть имитирует сеть VDI и нужна для проверки сетевой связности. При развертывании VDI такая сеть создается автоматически.
 
-1. Создайте тестовую [виртуальную машину](/ru/base/iaas/instructions/vm/vm-create) в сети `10.55.4.0/22` и подключитесь к ней по SSH.
+1. Создайте тестовую [виртуальную машину](/ru/base/iaas/service-management/vm/vm-create) в сети `10.55.4.0/22` и подключитесь к ней по SSH.
 
 1. Отправьте пинг до LDAP-сервера:
 
@@ -456,7 +456,7 @@
 
 Если созданные ресурсы вам больше не нужны, удалите их:
 
-1. [Удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie_vm) виртуальные машины.
+1. [Удалите](/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm) виртуальные машины.
 1. [Удалите](/ru/networks/vnet/operations/manage-vpn#udalenie_vpn_tunnelya) VPN.
 1. [Удалите](/ru/networks/vnet/operations/manage-router#udalenie_marshrutizatora) маршрутизаторы.
 1. Удалите [подсеть](/ru/networks/vnet/operations/manage-net#udalenie_podseti) и [сеть](/ru/networks/vnet/operations/manage-net#udalenie_seti), в которой была размещена ВМ.

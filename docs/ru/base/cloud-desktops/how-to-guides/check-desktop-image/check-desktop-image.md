@@ -28,7 +28,7 @@
 1. Проверьте, что образ виден в мастере создания ВМ:
 
      1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-     1. Загрузите подготовленный образ в VK Cloud, следуя [инструкции по импорту](/ru/base/iaas/instructions/vm-images/vm-images-manage#import_obraza).
+     1. Загрузите подготовленный образ в VK Cloud, следуя [инструкции по импорту](/ru/base/iaas/service-management/images/images-manage#import_obraza).
      1. Перейдите в раздел **Облачные вычисления** → **Вычислительные машины** и нажмите кнопку **Добавить**.
      1. Убедитесь, что в списке **Операционная система** отображается загруженный вами образ, и выберите его.
 
@@ -70,8 +70,8 @@
      1. На вкладке **Общая информация** свойств ВМ нажмите кнопку **Установить пароль** и задайте пароль администратора.
      1. Подключитесь к ВМ:
 
-         - Для [подключения](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-win) к ВМ Windows используйте протокол RDP.
-         - Для [подключения](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix) к ВМ Astra Linux используйте протокол SSH.
+         - Для [подключения](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-win) к ВМ Windows используйте протокол RDP.
+         - Для [подключения](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ Astra Linux используйте протокол SSH.
 
      1. Убедитесь, что подключение прошло успешно.
 
@@ -85,7 +85,7 @@
 
      1. Завершите текущий сеанс подключения к ВМ.
      1. [Добавьте](/ru/networks/vnet/operations/secgroups#naznachenie_gruppy_pravil_na_instans) ВМ в группу безопасности `rdp`.
-     1. Подключитесь к ВМ по протоколу RDP, следуя [инструкции по подключению к ВМ Windows](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-win#3_podklyuchites_k_vm).
+     1. Подключитесь к ВМ по протоколу RDP, следуя [инструкции по подключению к ВМ Windows](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-win#3_podklyuchites_k_vm).
      1. Убедитесь, что подключение прошло успешно и открылся графический интерфейс пользователя.
 
 1. (Для ВМ Astra Linux) Проверьте возможность подключения к ВМ с помощью LDAP.
@@ -108,10 +108,10 @@
            - `<ldap_id or domain_name>` — IP-адрес или FQDN вашего сервера LDAP;
            - `<username>` и `<password>` — имя и пароль пользователя LDAP с правами заведения ВМ в домен.
 
-     1. [Перезагрузите](/ru/base/iaas/instructions/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm) ВМ.
-     1. [Перейдите](/ru/base/iaas/instructions/vm/vm-console#vnc_konsol) в консоль ВМ.
+     1. [Перезагрузите](/ru/base/iaas/service-management/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm) ВМ.
+     1. [Перейдите](/ru/base/iaas/service-management/vm/vm-console#vnc_konsol) в консоль ВМ.
      1. Авторизуйтесь с помощью логина и пароля пользователя LDAP и убедитесь, что вход прошел успешно.
-     1. Подключитесь к ВМ по протоколу RDP, следуя [инструкции по подключению к ВМ Windows](/ru/base/iaas/instructions/vm/vm-connect/vm-connect-win#3_podklyuchites_k_vm).
+     1. Подключитесь к ВМ по протоколу RDP, следуя [инструкции по подключению к ВМ Windows](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-win#3_podklyuchites_k_vm).
      1. Авторизуйтесь с помощью логина и пароля пользователя LDAP и убедитесь, что вход прошел успешно.
 
 ## 3. Проверьте работоспособность установленного вами ПО и периферийных устройств
@@ -123,5 +123,5 @@
 
 Работающая ВМ потребляет вычислительные ресурсы. Если она вам больше не нужна:
 
-- [остановите](/ru/base/iaas/instructions/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm) ее, чтобы воспользоваться ею позже;
-- [удалите](/ru/base/iaas/instructions/vm/vm-manage#udalenie_vm) ее навсегда.
+- [остановите](/ru/base/iaas/service-management/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm) ее, чтобы воспользоваться ею позже;
+- [удалите](/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm) ее навсегда.

@@ -10,9 +10,9 @@
 
 ## Подготовительные шаги
 
-1. При [создании ВМ](/en/base/iaas/instructions/vm/vm-create) активируйте пункт **Включить мониторинг**.
+1. При [создании ВМ](/en/base/iaas/service-management/vm/vm-create) активируйте пункт **Включить мониторинг**.
 1. Дождитесь завершения создания ВМ.
-1. [Узнайте](/en/base/iaas/instructions/vm/vm-manage) ID созданной виртуальной машины.
+1. [Узнайте](/en/base/iaas/service-management/vm/vm-manage) ID созданной виртуальной машины.
 1. Подождите некоторое время, чтобы накопились данные для мониторинга.
 
 ## 1. Создайте график
@@ -45,5 +45,5 @@
 
 Работающая ВМ потребляет вычислительные ресурсы. Если она вам больше не нужна:
 
-- [остановите](/en/base/iaas/instructions/vm/vm-manage#starting_stopping_reboot_the_vm) ее, чтобы воспользоваться ею позже;
-- [удалите](/en/base/iaas/instructions/vm/vm-manage#deleting_a_vm) ее навсегда.
+- [остановите](/en/base/iaas/service-management/vm/vm-manage#starting_stopping_reboot_the_vm) ее, чтобы воспользоваться ею позже;
+- [удалите](/en/base/iaas/service-management/vm/vm-manage#deleting_a_vm) ее навсегда.

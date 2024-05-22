@@ -10,7 +10,7 @@
 - Redis
 - MongoBD
 
-Отметим, что для реализации получения логов необходимо [подключиться к БД по SSH](/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix).
+Отметим, что для реализации получения логов необходимо [подключиться к БД по SSH](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
 Ниже представлено детальное описание получения логов из каждого типа БД.
 

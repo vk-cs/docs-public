@@ -76,6 +76,6 @@
 Цену за месяц использования ПО можно узнать:
 
 - в [прайс-листе](https://cloud.vk.com/pricelist);
-- при [создании](/ru/base/iaas/instructions/vm/vm-create) виртуальной машины;
+- при [создании](/ru/base/iaas/service-management/vm/vm-create) виртуальной машины;
 - в [настройках проекта](https://msk.cloud.vk.com/app/project/) на вкладке **Цены**.
 - в разделе **Баланс** [личного кабинета](https://msk.cloud.vk.com/app/services/billing).
