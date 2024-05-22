@@ -41,9 +41,9 @@ The instruction is written using the example of Python 3.10.11 and Microsoft C++
 
 1. Download and install [Python3](https://www.python.org/downloads/windows/). It is recommended to use version 3.6 or 3.8.
 2. Download and run [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/ru/visual-cpp-build-tools/).
-3. Go to the tab **Additional components**, select from the list and install:
+3. Go to the **Additional components** tab, select from the list and install:
 
-   - `C++ CMake tools for Windows`. When you select this component, the component will be automatically selected `MSVC v143 - VS 2022 C++ x64/x86 build tools (latest)`.
+   - `C++ CMake tools for Windows`. When you select this component, the `MSVC v143 - VS 2022 C++ x64/x86 build tools (latest)` component will be automatically selected.
    - `Windows 10 SDK`.
 
 1. Run the command:
@@ -55,32 +55,37 @@ The instruction is written using the example of Python 3.10.11 and Microsoft C++
 </tabpanel>
 </tabs>
 
-## 2. Install additional packages
+## 2. (Optional) Install additional packages
 
-If necessary, install packages to work with individual OpenStack services:
+1. Install packages to work with specific OpenStack services:
 
-```bash
-pip install python-<service name>client
-```
+   ```bash
+   pip install python-<service name>client
+   ```
 
-Service names:
+   Service names:
 
-- `cinder` – block storage API and extensions;
-- `glance` – images API;
-- `heat` – orchestration API;
-- `manila` – shared file systems API;
-- `neutron` – network API;
-- `nova` – cloud computing (VM) and extensions API;
-- `octavia` — load balancer API;
-- `sahara` – Cloud Big Data processing API.
+   - `cinder` – block storage API and extensions;
+   - `glance` – images API;
+   - `heat` – orchestration API;
+   - `neutron` – network API;
+   - `nova` – cloud computing (VM) and extensions API;
+   - `octavia` — load balancer API;
+   - `sahara` – Cloud Big Data processing API.
+
+2. Install the Shared File System API client (Manila CLI) using the command:
+
+   ```bash
+   pip install "python-manilaclient==4.1.3"
+   ```
 
 ## 3. Complete authentication
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Make sure that [two-factor authentication](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa) and [API access](/en/manage/tools-for-using-services/rest-api/enable-api) are enabled.
 3. Select a project.
-4. On the page **Project settings** [go to the tab](https://msk.cloud.vk.com/app/project/keys/) **API access**.
-5. Click **Download openrc version 3**. A file `<project name>-openrc.sh` will be uploaded.
+4. On the **Project settings** page, [go to](https://msk.cloud.vk.com/app/project/keys/) the **API access** tab.
+5. Click **Download openrc version 3**. The `<project name>-openrc.sh` file will be uploaded.
 6. Specify the authentication credentials in the environment variables.
 
    <tabs>
@@ -91,7 +96,7 @@ Service names:
    </tablist>
    <tabpanel>
 
-   1. Run the script execution:
+   1. Run the script:
 
       ```bash
       source <project name>-openrc.sh
@@ -102,7 +107,7 @@ Service names:
    </tabpanel>
    <tabpanel>
 
-   1. Copy the data from the file `<project name>-openrc.sh` and run commands:
+   1. Copy the parameter values without quotes from the `<project name>-openrc.sh` file and run the commands:
 
       ```powershell
       set OS_INTERFACE=<OS_INTERFACE>
@@ -123,7 +128,7 @@ Service names:
    </tabpanel>
    <tabpanel>
 
-   1. Copy the data from the file `<project name>-openrc.sh` and run commands:
+   1. Copy the data from the `<project name>-openrc.sh` file and run the commands:
 
       ```powershell
       $env:OS_INTERFACE = "<OS_INTERFACE>"
@@ -203,7 +208,7 @@ Service names:
    ```
 
    <details>
-   <summary>The example result of running the command</summary>
+   <summary>Example of the command output</summary>
 
    ```bash
    +--------------------------------------+-------------------+-------+------+-----------+-------+-----------+
@@ -220,14 +225,14 @@ Service names:
 
    </details>
 
-- Output information about a separate image:
+- Output information about a specific image:
 
    ```bash
    openstack image show c6320138-035f-40d8-XXXX-e814edb2ce5f
    ```
 
    <details>
-   <summary>The example result of running the command</summary>
+   <summary>Example of the command output (shortened)</summary>
 
     ```bash
     +------------------+------------------------------------------------------+

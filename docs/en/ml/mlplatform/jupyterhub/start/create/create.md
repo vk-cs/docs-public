@@ -9,13 +9,13 @@ During the installation process, you need to enter the following settings:
 | Parameter | Description |
 | --- | --- |
 | Instance name | The display name of the instance. Also sets the hostname on the OS. |
-| Category of virtual machine | Flavors of the VMs. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/vm-concept#flavors). |
+| Category of virtual machine | Flavors of the VMs. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#flavors). |
 | Type of virtual machine | Preinstalled VM configuration (CPU and RAM). |
 | Accessibility zone | Selecting the data center where the instance will be launched. |
 | Operating system | Operating system image (version, edition). |
 | Number of discs | The number of hard drives in the created instance. Only one disk per JupyterHub instance is currently supported. More than one default drive cannot be selected.|
 | Disk size | Specifies the size of the VM disk in GB. Growth or shrinkage of the disk size of a JupyterHub instance is currently not supported. We recommend storing large amounts of data in external storage, for example, in [S3 object storage](/ru/base/s3).|
-| Disk type | Type of instance disk being created, [more](/en/base/iaas/vm-volumes/volume-sla). |
+| Disk type | Type of instance disk being created, [more](/en/base/iaas/concepts/volume-sla). |
 | Choosing a domain name | Specifies the DNS name of the instance.|
 | Username | Guest OS username |
 | User password | User password in the guest OS. |

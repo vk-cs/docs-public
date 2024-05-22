@@ -1,6 +1,6 @@
 ## Enabling or disabling the agent
 
-1. [Connect](/en/base/iaas/instructions/vm/vm-connect/) to the virtual machine.
+1. [Connect](/en/base/iaas/service-management/vm/vm-connect/) to the virtual machine.
 1. [Make sure](../connect-plugin/) that you have the `vkcloudlogs-fluent-bit-plugin` installed.
 
 - To enable the agent, run the command:
@@ -37,7 +37,7 @@
 
 ## Configuring the agent to collect logs from additional text files
 
-1. [Connect](/en/base/iaas/instructions/vm/vm-connect/) to the virtual machine.
+1. [Connect](/en/base/iaas/service-management/vm/vm-connect/) to the virtual machine.
 1. [Make sure](../connect-plugin/) that you have the `vkcloudlogs-fluent-bit-plugin` installed.
 1. Adjust the `vkcloudlogs-fluent-bit.conf` file as needed:
 
@@ -89,7 +89,7 @@
 
 ## Removing the agent and plugin
 
-1. [Connect](/en/base/iaas/instructions/vm/vm-connect/) to the virtual machine.
+1. [Connect](/en/base/iaas/service-management/vm/vm-connect/) to the virtual machine.
 1. [Make sure](../connect-plugin/) that you have the `vkcloudlogs-fluent-bit-plugin` installed.
 1. Run the command:
 

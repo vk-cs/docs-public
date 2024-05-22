@@ -92,7 +92,7 @@ Changing the created virtual resources (VMs, load balancers, DB instances) outsi
     - **Instance type**: select the VM type from the list of types available in the project.
     - **Disk size**: specify the disk size in GB. The value cannot be less than the size of the OS image.
     - **Disk Type**: choose one of the values — `HDD`, `SSD` or `High-IOPS SSD`.
-    - **Image**: select an image to create the VMs from the list of available images. If necessary, click **Upload your image** and download the [previously prepared](#preparatory_steps) image following the [import instructions](/en/base/iaas/instructions/vm-images/vm-images-manage#importing_an_image).
+    - **Image**: select an image to create the VMs from the list of available images. If necessary, click **Upload your image** and download the [previously prepared](#preparatory_steps) image following the [import instructions](/en/base/iaas/service-management/images/images-manage#importing_an_image).
 
       <info>
 

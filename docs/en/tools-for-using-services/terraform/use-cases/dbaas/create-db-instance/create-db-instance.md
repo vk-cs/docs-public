@@ -38,7 +38,7 @@ Select one of the cluster creation examples and create a Terraform configuration
 </tablist>
 <tabpanel>
 
-The [flavor](/en/base/iaas/concepts/vm-concept) for the instance VM is set via the `db-instance-flavor` variable.
+The [flavor](/en/base/iaas/concepts/about) for the instance VM is set via the `db-instance-flavor` variable.
 
 ```hcl
 variable "db-instance-flavor" {

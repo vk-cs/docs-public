@@ -60,8 +60,8 @@ By default, UserGate NGFW is created with a single network to connect to the MGM
 1. Go to **Cloud Servers** → **Virtual**.
 1. Open the page of the service VM (usually `<identifier>usergate`) by clicking on its name in the list.
 1. Go to the **Networks** tab.
-1. [Connect](/en/base/iaas/instructions/vm/vm-add-net#connecting_the_network_to_the_vm) the required network to the VM.
-1. Reboot the VM [using VK Cloud](/en/base/iaas/instructions/vm/vm-manage#starting_stopping_reboot_the_vm) or via the [UserGate console](https://support.usergate.com/docs/version/7.x/usergate-7/422-server-operations).
+1. [Connect](/en/base/iaas/service-management/vm/vm-add-net#connecting_the_network_to_the_vm) the required network to the VM.
+1. Reboot the VM [using VK Cloud](/en/base/iaas/service-management/vm/vm-manage#starting_stopping_reboot_the_vm) or via the [UserGate console](https://support.usergate.com/docs/version/7.x/usergate-7/422-server-operations).
 
 ## 2. Check for the added network
 

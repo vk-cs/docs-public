@@ -18,11 +18,11 @@ To see the list of endpoints for your region:
 
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
-| Nova              | https://infra.mail.ru:8774/v2.1                     | Managing [virtual machines](/en/base/iaas/instructions/vm) |
-| Cinder            | https://public.infra.mail.ru:8776/v3/<project_id>   | Managing [disks](/en/base/iaas/instructions/vm-volumes) and their snapshots |
-| Glance            | https://infra.mail.ru:9292                          | Managing [VM images](/en/base/iaas/instructions/vm-images) |
+| Nova              | https://infra.mail.ru:8774/v2.1                     | Managing [virtual machines](/en/base/iaas/service-management/vm) |
+| Cinder            | https://public.infra.mail.ru:8776/v3/<project_id>   | Managing [disks](/en/base/iaas/service-management/volumes) and their snapshots |
+| Glance            | https://infra.mail.ru:9292                          | Managing [VM images](/en/base/iaas/service-management/images) |
 | Karboii           | https://mcs.mail.ru/infra/karboii/v1                | Managing [backups](/en/manage/backups/api-examples) of VMs and database instances |
-| Manila            | https://public.infra.mail.ru:8786/v2/<project_id>   | Managing [file shares](/en/base/iaas/instructions/fs-manage) |
+| Manila            | https://public.infra.mail.ru:8786/v2/<project_id>   | Managing [file shares](/en/base/iaas/service-management/fs-manage) |
 
 <info>
 
