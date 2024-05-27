@@ -22,7 +22,7 @@ Sprut is in the beta testing phase. Contact [technical support](../../../../../c
 
 Cloud Containers cluster integrates with the load balancers of the VK Cloud platform. This applies to both regular Kubernetes load balancers (`LoadBalancer`) and Ingress controllers (`IngressController`): both will have a dedicated VK Cloud TCP balancer attached to them both when created. This also applies to the Ingress controller, which is installed as an [addon](../addons-and-settings/addons/).
 
-If necessary, you can use the HTTP load balancer. See [example for Ingress controller](../../use-cases/ingress/ingress-http) for details.
+If necessary, you can use the HTTP load balancer. See [example for Ingress controller](../../how-to-guides/ingress/ingress-http) for details.
 
 The VK Cloud platform load balancer is based on [OpenStack Octavia](https://docs.openstack.org/octavia/latest/), which has [HAProxy](http://www.haproxy.org/) at its core and supports:
 
@@ -38,13 +38,13 @@ Sometimes when using the Ingress controller, the pod in the cluster needs to see
 
 To allow a pod that is placed behind the Ingress controller to see the user's real IP address, use one of the options:
 
-- [Ingress controller with proxy protocol support](../../use-cases/ingress/ingress-tcp).
+- [Ingress controller with proxy protocol support](../../how-to-guides/ingress/ingress-tcp).
 
   If you plan to handle HTTPS traffic, configure SSL connection termination on this Ingress controller because the TCP balancer that will be created for the controller cannot terminate SSL connections itself.
 
   The [NGINX-based Ingress Controller](../addons-and-settings/addons/) provided by VK Cloud supports the proxy protocol and is already configured to work with it.
 
-- [Separate HTTP\HTTPS balancer with additional settings](../../use-cases/ingress/ingress-http):
+- [Separate HTTP\HTTPS balancer with additional settings](../../how-to-guides/ingress/ingress-http):
 
   - If you plan to handle HTTPS traffic, configure SSL connection termination on this balancer.
   - Activate the `ExternalTrafficPolicy: Local` policy on the Ingress controller.
@@ -75,6 +75,6 @@ Changing these rule groups may render the cluster inoperable.
 
 ## See also
 
-- [Container service overview](../overview/).
+- [Container service overview](../about/).
 - [Container service architecture](../architecture/).
 - [Storage in a cluster](../storage/).
