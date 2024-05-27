@@ -1,12 +1,12 @@
 Вы можете подключиться к реестру Docker, если в кластере установлен соответствующий [аддон](../../concepts/addons-and-settings/addons).
 
-При [установке](../../operations/addons/advanced-installation/install-advanced-registry/) аддона для него создается стандартный балансировщик нагрузки с плавающим IP-адресом. Поэтому к реестру Docker можно подключиться с любого хоста, имеющего доступ в интернет.
+При [установке](../../service-management/addons/advanced-installation/install-advanced-registry/) аддона для него создается стандартный балансировщик нагрузки с плавающим IP-адресом. Поэтому к реестру Docker можно подключиться с любого хоста, имеющего доступ в интернет.
 
 ## Подготовительные шаги
 
-1. [Убедитесь](../../operations/addons/manage-addons#prosmotr_addonov), что аддон реестра Docker (`docker-registry`) установлен в кластере.
+1. [Убедитесь](../../service-management/addons/manage-addons#prosmotr_addonov), что аддон реестра Docker (`docker-registry`) установлен в кластере.
 1. [Убедитесь](../kubectl#proverka_podklyucheniya_k_klasteru), что вы можете подключаться к кластеру с помощью `kubectl`.
-1. [Получите данные](../../operations/addons/advanced-installation/install-advanced-registry#podklyuchenie_k_reestru) для доступа к реестру Docker.
+1. [Получите данные](../../service-management/addons/advanced-installation/install-advanced-registry#podklyuchenie_k_reestru) для доступа к реестру Docker.
 
 ## Подключение к реестру Docker
 

@@ -64,16 +64,16 @@ API-эндпоинт кластеров Cloud Containers размещен за [
 
   В каждом кластере Cloud Containers присутствует плагин [Calico](https://projectcalico.docs.tigera.io/about/about-calico), поддерживающий этот интерфейс. Этот плагин обеспечивает:
 
-  - сетевую связность между контейнерами, [подами](../../k8s-reference/pods) и узлами кластера;
+  - сетевую связность между контейнерами, [подами](../../reference/pods) и узлами кластера;
   - применение и соблюдение [сетевых политик](https://kubernetes.io/docs/concepts/services-networking/network-policies/) (Network Policies) Kubernetes.
 
   Calico интегрируется с платформой VK Cloud с помощью OpenStack Neutron API. Подробнее в разделе [Сеть в кластере](../network/).
 
 ## Встроенная поддержка Open Policy Agent
 
-Начиная с версии 1.21, в кластеры Cloud Containers встроен [Open Policy Agent Gatekeeper](../../k8s-reference/gatekeeper/). Он позволяет применять [политики безопасности](../security-policies) для ресурсов Kubernetes. Также в таких кластерах действуют [политики безопасности по умолчанию](../addons-and-settings/settings#prednastroennye_shablony_i_ogranicheniya_gatekeeper).
+Начиная с версии 1.21, в кластеры Cloud Containers встроен [Open Policy Agent Gatekeeper](../../reference/gatekeeper/). Он позволяет применять [политики безопасности](../security-policies) для ресурсов Kubernetes. Также в таких кластерах действуют [политики безопасности по умолчанию](../addons-and-settings/settings#prednastroennye_shablony_i_ogranicheniya_gatekeeper).
 
-Политики безопасности не действуют в кластерах версий ниже 1.21. Чтобы подключить их, [обновите такие кластера до актуальной версии](../../operations/update). Если обновление невозможно, [установите Gatekeeper](../../install-tools/gatekeeper#ustanovka) вручную, а затем [настройте ограничения и шаблоны](../../install-tools/gatekeeper#opcionalno_nastroyka_ogranicheniy_i_shablonov).
+Политики безопасности не действуют в кластерах версий ниже 1.21. Чтобы подключить их, [обновите такие кластера до актуальной версии](../../service-management/update). Если обновление невозможно, [установите Gatekeeper](../../install-tools/gatekeeper#ustanovka) вручную, а затем [настройте ограничения и шаблоны](../../install-tools/gatekeeper#opcionalno_nastroyka_ogranicheniy_i_shablonov).
 
 ## Возможности масштабирования кластера
 

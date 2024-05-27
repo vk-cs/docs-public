@@ -1,18 +1,18 @@
 Data in a Kubernetes Cloud Containers cluster can be stored in several ways: directly in a container or on _volumes_. There are problems with storing data in a container:
 
 - If the container crashes or stops, data is lost.
-- Container data is inaccessible to other containers, even if all containers are in the same [pod](../../k8s-reference/pods).
+- Container data is inaccessible to other containers, even if all containers are in the same [pod](../../reference/pods).
 
 To solve these problems, Cloud Containers volumes are used. Volumes have different lifecycles depending on the usage scenario:
 
 - _Ephemeral volumes_ (EVs) have the same lifecycle as a pod. When a pod using such a volume ceases to exist, the volume is also deleted. Ephemeral volumes can only be used by a single pod, so volumes are declared directly in the pod's manifest.
 
-- _Persistent volumes_ (PVs) have their own [lifecycle](../../k8s-reference/pvs-and-pvcs), independent of the pod's lifecycle. Due to the separation of lifecycles, such volumes can be reused later with other pods. Pods and other workloads use Persistent Volume Claim (PVC) to handle persistent volumes.
+- _Persistent volumes_ (PVs) have their own [lifecycle](../../reference/pvs-and-pvcs), independent of the pod's lifecycle. Due to the separation of lifecycles, such volumes can be reused later with other pods. Pods and other workloads use Persistent Volume Claim (PVC) to handle persistent volumes.
 
 Cloud Containers clusters are tightly integrated with the VK Cloud platform to handle PVs:
 
 - The cluster [supports](#supported_vk_cloud_storage_types) storage provided by the VK Cloud platform. Block storage support is implemented using [Cinder CSI](#working_with_container_storage_interface_csi).
-- [Pre-configured storage classes](#pre_configured_storage_classes) that implement different [persistent volume reclaim policies](../../k8s-reference/pvs-and-pvcs#4_reclaiming_830589dc) are available for block storage in the cluster.
+- [Pre-configured storage classes](#pre_configured_storage_classes) that implement different [persistent volume reclaim policies](../../reference/pvs-and-pvcs#4_reclaiming_830589dc) are available for block storage in the cluster.
 
 ## Supported VK Cloud storage types
 
@@ -36,7 +36,7 @@ The storage types available in a Kubernetes cluster via Cinder CSI correlate wit
 
 Using Cinder CSI allows you to:
 
-- Statically and dynamically [provision](../../k8s-reference/pvs-and-pvcs#1_provisioning_6b9e088d) PV that is based on block storage.
+- Statically and dynamically [provision](../../reference/pvs-and-pvcs#1_provisioning_6b9e088d) PV that is based on block storage.
 
 - Automatically remount persistent volumes:
   - When the pod using the volume or the worker node hosting the pod fails (assuming the pod is restored to that node or another node).
@@ -48,7 +48,7 @@ Using Cinder CSI allows you to:
 
 ## Available reclaim policies for persistent volumes
 
-A [reclaim policy](../../k8s-reference/pvs-and-pvcs#4_reclaiming_830589dc) can be set for a PV. The policy will be triggered when the PVC associated with that volume is deleted:
+A [reclaim policy](../../reference/pvs-and-pvcs#4_reclaiming_830589dc) can be set for a PV. The policy will be triggered when the PVC associated with that volume is deleted:
 
 - Keep the volume (`Retain`). The PV and its associated storage will not be deleted.
 
@@ -66,7 +66,7 @@ A [reclaim policy](../../k8s-reference/pvs-and-pvcs#4_reclaiming_830589dc) can b
 
 ## Pre-configured storage classes
 
-When using [dynamic provisioning](../../k8s-reference/pvs-and-pvcs#1_provisioning_6b9e088d) of a persistent volume, a storage class should be specified. The default storage class is not configured in VK Cloud Kubernetes clusters. It is possible either to set the default class manually, or explicitly specify the required class when creating a PVC.
+When using [dynamic provisioning](../../reference/pvs-and-pvcs#1_provisioning_6b9e088d) of a persistent volume, a storage class should be specified. The default storage class is not configured in VK Cloud Kubernetes clusters. It is possible either to set the default class manually, or explicitly specify the required class when creating a PVC.
 
 There are preconfigured storage classes that use Cinder CSI for block storage.
 
@@ -110,6 +110,6 @@ All storage classes listed:
 
 ## See also
 
-- [Container service overview](../overview/).
+- [Container service overview](../about/).
 - [Container service architecture](../architecture/).
 - [Network in a cluster](../network/).

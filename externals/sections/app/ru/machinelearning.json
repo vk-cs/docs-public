@@ -9,13 +9,13 @@
                     "link": "/ru/ml/vision"
                 },
                 {
-                    "link": "/ru/ml/vision/manage-vision"
+                    "link": "/ru/ml/vision/service-management"
                 },
                 {
                     "link": "/ru/ml/cloud-voice"
                 },
                 {
-                    "link": "/ru/ml/cloud-voice/speech-recognition"
+                    "link": "/ru/ml/cloud-voice/service-management/speech-recognition"
                 }
             ]
         }

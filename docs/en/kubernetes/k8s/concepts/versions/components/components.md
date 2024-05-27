@@ -1,6 +1,6 @@
 The supported versions of components and [addons](../../addons-and-settings/addons) depend on the version of the Cloud Containers cluster.
 
-When [updating a cluster](../../../operations/update), part of its components are also updated, as well the installed addons. If a component, that is to be updated with the cluster, is deleted, then it will be restored during the next cluster update.
+When [updating a cluster](../../../service-management/update), part of its components are also updated, as well the installed addons. If a component, that is to be updated with the cluster, is deleted, then it will be restored during the next cluster update.
 
 ## Components
 
@@ -59,7 +59,7 @@ These components are present in all Cloud Containers clusters.
 
 ## Addons
 
-The necessary addons can be [installed](../../../operations/addons/manage-addons#installing_the_addon) in the cluster individually.
+The necessary addons can be [installed](../../../service-management/addons/manage-addons#installing_the_addon) in the cluster individually.
 
 [cols="3,1,1,1,1", options="header"]
 |===
@@ -87,7 +87,7 @@ The necessary addons can be [installed](../../../operations/addons/manage-addons
 |2.2.2
 |2.2.2
 
-|[Fluent Bit для Cloud Logging<br>(logaas-integration)](../../../operations/addons/advanced-installation/install-advanced-logaas-integration)
+|[Fluent Bit для Cloud Logging<br>(logaas-integration)](../../../service-management/addons/advanced-installation/install-advanced-logaas-integration)
 |—
 |0.34.2
 |0.34.2

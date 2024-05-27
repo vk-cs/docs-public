@@ -9,7 +9,7 @@
                     "link": "/ru/kubernetes/k8s/concepts"
                 },
                 {
-                    "link": "/ru/kubernetes/k8s/k8s-reference"
+                    "link": "/ru/kubernetes/k8s/reference"
                 },
                 {
                     "link": "/ru/intro/billing",
@@ -24,10 +24,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "/ru/kubernetes/k8s/quickstart"
+                    "link": "/ru/kubernetes/k8s/quick-start"
                 },
                 {
-                    "link": "/ru/kubernetes/k8s/operations/create-cluster"
+                    "link": "/ru/kubernetes/k8s/service-management/create-cluster"
                 },
                 {
                     "link": "/ru/kubernetes/k8s/connect"
@@ -44,16 +44,16 @@
                     "link": "/ru/kubernetes/k8s/install-tools"
                 },
                 {
-                    "link": "/ru/kubernetes/k8s/operations/addons"
+                    "link": "/ru/kubernetes/k8s/service-management/addons"
                 },
                 {
-                    "link": "/ru/kubernetes/k8s/use-cases/ingress"
+                    "link": "/ru/kubernetes/k8s/how-to-guides/ingress"
                 },
                 {
-                    "link": "/ru/kubernetes/k8s/use-cases/local-dns-cache"
+                    "link": "/ru/kubernetes/k8s/how-to-guides/local-dns-cache"
                 },
                 {
-                    "link": "/ru/kubernetes/k8s/use-cases/velero-backup"
+                    "link": "/ru/kubernetes/k8s/how-to-guides/velero-backup"
                 }
             ]
         }

@@ -10,13 +10,13 @@ Two types of scaling are supported:
 
 - _Horizontal scaling_: The number of worker nodes within a separate node group is changed. In this way, you can manage the computing resources of the cluster without affecting the virtual machine templates that are used by the nodes.
 
-Both types of scaling are performed manually. Also [can be customized](../../operations/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) automatic horizontal scaling for a group of nodes (autoscaling): the number of worker nodes in the group will be adjusted depending on the needs of the workload. This mechanism allows you to save up to 60% on computing power.
+Both types of scaling are performed manually. Also [can be customized](../../service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) automatic horizontal scaling for a group of nodes (autoscaling): the number of worker nodes in the group will be adjusted depending on the needs of the workload. This mechanism allows you to save up to 60% on computing power.
 
 ## Current restrictions
 
 - Vertical scaling capabilities are limited by [current quotas](/en/base/account/concepts/quotasandlimits) and available [virtual machine templates](../flavors#configuration_templates).
 - Horizontal scaling capabilities are limited by the current quotas and the limit on the number of worker nodes in a separate node group: from 1 to 100 nodes.
-- It is not possible to perform horizontal scaling manually if automatic scaling is configured. To perform manual scaling, [turn off automatic scaling](../../operations/scale#scaling_groups_of_worker_nodes_c172481b).
+- It is not possible to perform horizontal scaling manually if automatic scaling is configured. To perform manual scaling, [turn off automatic scaling](../../service-management/scale#scaling_groups_of_worker_nodes_c172481b).
 
 ## Ensuring accessibility with vertical scaling
 
