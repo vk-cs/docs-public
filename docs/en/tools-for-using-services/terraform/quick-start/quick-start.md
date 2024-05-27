@@ -56,7 +56,7 @@ This will create supplementary files needed for Terraform to work.
 
 ## Creating resources via Terraform
 
-1. Create a configuration of resources in the working directory — for example, a configuration for [creating a virtual machine](../use-cases/iaas/create).
+1. Create a configuration of resources in the working directory — for example, a configuration for [creating a virtual machine](../how-to-guides/iaas/create).
 
 1. Run the command:
 
