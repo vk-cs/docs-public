@@ -7,5 +7,6 @@
   "sectionTitle": "Концепции",
   "markdown": "Подробное описание принципов работы и устройства сервиса Cloud Voice.",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "e0553710-2954-4f8d-86ab-b952f05ddda5"
 }
