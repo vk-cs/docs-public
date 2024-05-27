@@ -7,10 +7,10 @@
   "sectionTitle": "MLflow Deploy",
   "markdown": "This section describes how to create and manage MLflow Deploy instances.",
   "icon": "",
-  "weight": 3,
+  "weight": 4,
   "relativeSections": [
     {
-      "partialPath": "/en/tools-for-using-services/terraform/use-cases/mlplatform/deploymlflow"
+      "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow"
     }
   ],
   "uuid": "42b8d343-7992-4dfb-b3a8-47f1eb65f94b"

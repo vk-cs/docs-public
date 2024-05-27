@@ -19,7 +19,7 @@ Cloud Containers clusters version 1.23 and higher are tightly integrated with th
 
 <info>
 
-To get the same capabilities for older clusters, [upgrade](../../operations/update) to version 1.23 or higher.
+To get the same capabilities for older clusters, [upgrade](../../service-management/update) to version 1.23 or higher.
 
 </info>
 
@@ -35,7 +35,7 @@ Please enter password:
 
 After successful authentication, a token with a short lifetime is issued, which gives temporary access to the cluster. When the token expires, `keystone-auth` will require you to enter the password again in order to update the token. This will happen both when working with kubectl and with other tools that work with such tokens — for example, `kauthproxy` uses them for authentication in the [web interfaces of cluster components and addons](../../connect).
 
-This authentication process is inconvenient when working with automated tools that need access to the cluster. To provide access to the cluster for such tools, [create a kubeconfig file for the service account](../../use-cases/sa-kubeconfig). This kubeconfig contains the details of the service account and the corresponding token with an infinite lifetime, which allows you to authenticate without entering a password.
+This authentication process is inconvenient when working with automated tools that need access to the cluster. To provide access to the cluster for such tools, [create a kubeconfig file for the service account](../../how-to-guides/sa-kubeconfig). This kubeconfig contains the details of the service account and the corresponding token with an infinite lifetime, which allows you to authenticate without entering a password.
 
 ## Relationship between the roles of personal account and Kubernetes
 

@@ -26,6 +26,6 @@
 
 После установки библиотек или при зависании Jupyter Kernel необходимо перезапустить. Для перезапуска Kernel в интерфейсе JupyterHub выберите пункт меню «Kernel» -> «Restart Kernel».
 
-Вы можете узнать больше о подключении к интерфейсу JupyterHub в статье [«Подключение к JupyterHub»](../jupyterhub/start/connect).
+Вы можете узнать больше о подключении к интерфейсу JupyterHub в статье [«Подключение к JupyterHub»](../jupyterhub/quick-start/connect).
 
 </details>

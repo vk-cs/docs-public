@@ -73,7 +73,7 @@ Resource configuration files describe the resources created via Terraform, their
 Resource configuration files can have any names. Examples in this documentation use the following naming standards:
 
 - `variables.tf` — variables that are used in the configuration. Setting frequently changed parameters as variables makes it easier to change the infrastructure configuration for a new project.
-- `main.tf` — contains a description of the main resource that is created in a [scenario](../../use-cases). For example, in the scenario for creating a [virtual machine](../../use-cases/iaas/create) the `main.tf` file should typically contain the description of a virtual machine.
+- `main.tf` — contains a description of the main resource that is created in a [scenario](../../how-to-guides). For example, in the scenario for creating a [virtual machine](../../how-to-guides/iaas/create) the `main.tf` file should typically contain the description of a virtual machine.
 
 Sometimes files are named after the types of the resources they describe:
 
