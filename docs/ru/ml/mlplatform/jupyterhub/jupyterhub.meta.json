@@ -7,10 +7,10 @@
   "sectionTitle": "JupyterHub",
   "markdown": "Этот раздел описывает принципы работы с сервисом JupyterHub, создание и работу с инстансами JupyterHub.",
   "icon": "",
-  "weight": 1,
+  "weight": 3,
   "relativeSections": [
     {
-     "partialPath": "/ru/tools-for-using-services/terraform/use-cases/mlplatform/jupyterhub",
+     "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
      "title": "Создание инстанса JupiterHub с помощью Terraform"
     }],
   "uuid": "99a3a152-c351-4405-8bee-bcf9563cc5b3"

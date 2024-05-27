@@ -9,7 +9,7 @@
   "icon": "",
   "relativeSections": [
     {
-      "partialPath": "/en/tools-for-using-services/terraform/use-cases/k8s/create"
+      "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/k8s/create"
     }],
   "uuid": "0f729ff3-2aa9-47e6-a577-2cb415acdfc9"
 }

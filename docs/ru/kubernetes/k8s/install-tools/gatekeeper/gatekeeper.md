@@ -1,4 +1,4 @@
-Gatekeeper — это контроллер, встраиваемый между Kubernetes API и движком политик Open Policy Agent (OPA) для проверки создаваемых, изменяемых и удаляемых ресурсов Kubernetes на соответствие политикам. Более подробная информация о Gatekeeper приведена в [справочнике Kubernetes](../../k8s-reference/gatekeeper/) и в [официальной документации Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/).
+Gatekeeper — это контроллер, встраиваемый между Kubernetes API и движком политик Open Policy Agent (OPA) для проверки создаваемых, изменяемых и удаляемых ресурсов Kubernetes на соответствие политикам. Более подробная информация о Gatekeeper приведена в [справочнике Kubernetes](../../reference/gatekeeper/) и в [официальной документации Gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/docs/).
 
 <warn>
 
