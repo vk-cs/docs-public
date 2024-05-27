@@ -1,4 +1,4 @@
-Some [addons](../../concepts/addons-and-settings/addons) that can be [installed](../../operations/addons/manage-addons) in the cluster have a web interface. The method of connecting to the web interface depends on the IP address of the cluster:
+Some [addons](../../concepts/addons-and-settings/addons) that can be [installed](../../service-management/addons/manage-addons) in the cluster have a web interface. The method of connecting to the web interface depends on the IP address of the cluster:
 
 - If an external IP address is assigned to the cluster, then you can connect from any host with Internet access.
 - If the cluster is assigned only an internal IP address, then you can connect only from a host in VK Cloud - a virtual machine that is located on the same subnet as the cluster.
@@ -35,7 +35,7 @@ A browser must be installed on the host to connect.
 
 Kiali is a web interface for working with Istio. To connect to it:
 
-1. [Make sure](../../operations/addons/manage-addons#viewing_addons) that `kiali` addon [is installed](../../operations/addons/advanced-installation/install-advanced-kiali) to the cluster.
+1. [Make sure](../../service-management/addons/manage-addons#viewing_addons) that `kiali` addon [is installed](../../service-management/addons/advanced-installation/install-advanced-kiali) to the cluster.
 1. On the host, in a separate terminal session, run the command:
 
    ```bash
@@ -55,7 +55,7 @@ Kiali is a web interface for working with Istio. To connect to it:
 </tabpanel>
 <tabpanel>
 
-1. [Make sure](../../operations/addons/manage-addons#viewing_addons) that `jaeger` addon [is installed](../../operations/addons/advanced-installation/install-advanced-jaeger) to the cluster.
+1. [Make sure](../../service-management/addons/manage-addons#viewing_addons) that `jaeger` addon [is installed](../../service-management/addons/advanced-installation/install-advanced-jaeger) to the cluster.
 1. On the host, in a separate terminal session, run the command:
 
    ```bash

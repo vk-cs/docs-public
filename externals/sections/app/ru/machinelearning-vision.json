@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/ml/vision/about"
+                    "link": "/ru/ml/vision/concepts/about"
                 },
                 {
-                    "link": "/ru/ml/vision/vision-limits"
+                    "link": "/ru/ml/vision/concepts/vision-limits"
                 },
                 {
                     "link": "/ru/ml/vision/changelog"
@@ -23,7 +23,7 @@
                     "link": "/ru/ml/vision/quick-start/auth-vision"
                 },
                 {
-                    "link": "/ru/ml/vision/manage-vision"
+                    "link": "/ru/ml/vision/service-management"
                 }
             ]
         },
@@ -31,13 +31,13 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/ml/vision/vision-integrations/vision-py"
+                    "link": "/ru/ml/vision/how-to-guides/vision-py"
                 },
                 {
-                    "link": "/ru/ml/vision/vision-integrations/vision-php"
+                    "link": "/ru/ml/vision/how-to-guides/vision-php"
                 },
                 {
-                    "link": "/ru/ml/vision/vision-integrations/vision-curl"
+                    "link": "/ru/ml/vision/how-to-guides/vision-curl"
                 }
             ]
         },

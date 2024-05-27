@@ -1,13 +1,13 @@
 {
     "title": "Concepts",
-    "pageDescription": "Additional information about the Cloud ML Platform service.",
-    "shortDescription": "Additional information about the Cloud ML Platform service",
+    "pageDescription": "The operating and design description of the Cloud ML Platform service.",
+    "shortDescription": "The operating and design description of the Cloud ML Platform service",
     "metaTitle": "Concepts",
-    "metaDescription": "Concepts",
+    "metaDescription": "The operating and design description of the Cloud ML Platform service",
     "sectionTitle": "Concepts",
-    "markdown": "Concepts",
+    "markdown": "The operating and design description of the Cloud ML Platform service.",
     "icon": "",
-    "weight": 2,
+    "weight": 1,
     "uuid": "181aeab3-48f1-454e-a020-bac27a54175e",
     "createdAt": "2022-07-29T01:42:00.000Z",
     "updatedAt": "2024-05-20T13:21:43.000Z"
