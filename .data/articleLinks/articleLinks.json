@@ -10765,7 +10765,7 @@
   ],
   [
     "/ru/networks/vnet/service-management/advanced-router/manage-advanced-routers",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/networks/vnet/service-management/advanced-router/manage-advanced-routers",
@@ -10969,7 +10969,7 @@
   ],
   [
     "/ru/networks/balancing/service-management/manage-lb",
-    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
   ],
   [
     "/ru/networks/balancing/service-management/manage-lb",
@@ -10989,7 +10989,7 @@
   ],
   [
     "/ru/networks/balancing/service-management/manage-lb",
-    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
   ],
   [
     "/ru/networks/balancing/service-management/manage-lb",
@@ -12117,7 +12117,7 @@
   ],
   [
     "/ru/dbs/dbaas/concepts/about",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/dbs/dbaas/concepts/about",
@@ -12277,7 +12277,7 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-single-replica",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-single-replica",
@@ -12337,7 +12337,7 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -12361,7 +12361,7 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -12377,7 +12377,7 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -12401,7 +12401,7 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -12441,7 +12441,7 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -12493,7 +12493,7 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -12949,7 +12949,7 @@
   ],
   [
     "/ru/kubernetes/k8s/concepts/architecture",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/kubernetes/k8s/concepts/architecture",
@@ -13985,7 +13985,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
@@ -15049,7 +15049,7 @@
   ],
   [
     "/ru/data-processing/kafka/service-management/create",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/data-processing/kafka/service-management/create",
@@ -15061,7 +15061,7 @@
   ],
   [
     "/ru/data-processing/kafka/service-management/create",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/data-processing/kafka/service-management/create",
@@ -15169,7 +15169,7 @@
   ],
   [
     "/ru/ml/spark-to-k8s/instructions/create",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/ml/spark-to-k8s/instructions/create",
@@ -15269,7 +15269,7 @@
   ],
   [
     "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/ru/base/s3/instructions/buckets/bucket#udalenie_baketa"
+    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/manage-bucket#udalenie_baketa"
   ],
   [
     "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
@@ -16497,11 +16497,11 @@
   ],
   [
     "/ru/tools-for-using-services/account/concepts/regions",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/tools-for-using-services/account/concepts/regions",
-    "http://localhost:3000/docs/ru/additionals/start/account-registration"
+    "http://localhost:3000/docs/ru/intro/start/account-registration"
   ],
   [
     "/ru/tools-for-using-services/account/concepts/regions",
@@ -16749,7 +16749,7 @@
   ],
   [
     "/ru/tools-for-using-services/cli/openstack-cli",
-    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
   ],
   [
     "/ru/tools-for-using-services/api/rest-api/enable-api",
@@ -16993,7 +16993,7 @@
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/iaas/create",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/iaas/create",
@@ -17033,7 +17033,7 @@
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
@@ -17189,7 +17189,7 @@
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing",
-    "http://localhost:3000/docs/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing",
