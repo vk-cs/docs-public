@@ -280,7 +280,7 @@ velero help
 
 1. Если резервные копии вам больше не нужны, удалите их из бакета, который использовался Velero.
 
-   При необходимости также [удалите сам бакет](/ru/storage/s3/instructions/buckets/bucket#udalenie_baketa).
+   При необходимости также [удалите сам бакет](/ru/storage/s3/instructions/buckets/manage-bucket#udalenie_baketa).
 
 1. Работающий кластер потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
