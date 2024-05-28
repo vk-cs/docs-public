@@ -100,7 +100,7 @@
    </tabpanel>
    <tabpanel>
 
-   В статье о [зонах доступности](/ru/additionals/start/architecture#zony_dostupnosti_d9f6db93).
+   В статье о [зонах доступности](/ru/additionals/start/architecture#az).
 
    </tabpanel>
    </tabs>
