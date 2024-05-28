@@ -1,13 +1,12 @@
 {
   "title": "Concepts",
-  "pageDescription": "Detailed description of the principles of operation and device of the CDN VK Cloud service.",
+  "pageDescription": "The operating and design description of the CDN VK Cloud service.",
   "shortDescription": "How the CDN service works",
   "metaTitle": "Concepts",
-  "metaDescription": "CDN VK Cloud concepts: principles of operation and device of the service",
+  "metaDescription": "The operating and design description of the CDN VK Cloud service",
   "sectionTitle": "Concepts",
-  "markdown": "Detailed description of the principles of operation and device of the CDN VK Cloud service.",
+  "markdown": "The operating and design description of the CDN VK Cloud service.",
   "icon": "",
-
   "weight": 1,
   "uuid": "1b9dc998-746c-4ced-a6b7-fc362ca2748e"
 }
