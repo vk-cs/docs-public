@@ -278,8 +278,6 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Опция не работает совместно со [сжатием GZip](#szhatie_gzip), [Brotli](#szhatie_brotli) и [оптимизацией доставки больших файлов](#optimizaciya_dostavki_bolshih_faylov).
 
-</note>
-
 Чтобы CDN-ресурс запрашивал сжатый контент с источника:
 
 <tabs>
