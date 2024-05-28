@@ -1,0 +1,11 @@
+{
+    "title": "Caching",
+    "pageDescription": "How to set up caching on a CDN resource and in users browsers, ignoring request parameters.",
+    "shortDescription": "How to set up caching on a CDN resource and in users browsers, ignoring request parameters",
+    "metaTitle": "Caching",
+    "metaDescription": "How to set up caching on a CDN resource and in users browsers, ignoring request parameters",
+    "sectionTitle": "Caching",
+    "markdown": "",
+    "icon": "",
+    "weight": 4
+}
