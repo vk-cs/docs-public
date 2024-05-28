@@ -262,7 +262,7 @@ yum install python-openstackclient
 
    </details>
 
-- Вывести список [зон доступности](/ru/intro/start/concepts/architecture#zony_dostupnosti_d9f6db93):
+- Вывести список [зон доступности](/ru/intro/start/concepts/architecture#az):
 
    ```bash
    openstack availability zone list
