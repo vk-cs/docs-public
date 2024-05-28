@@ -6,10 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "/en/networks/cdn/concepts/about-cdn"
+                    "link": "/en/networks/cdn/concepts/about"
                 },
                 {
-                    "link": "/en/networks/cdn/instructions/manage-cdn"
+                    "link": "/en/networks/cdn/service-management/manage-cdn"
                 }
             ]
         }
