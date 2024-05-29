@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/storage/s3/concepts/intro"
+                    "link": "/ru/storage/s3/concepts/about"
                 },
                 {
                     "link": "/ru/storage/s3/tariffication",
@@ -32,10 +32,10 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/storage/s3/storage-connecting/s3-cli"
+                    "link": "/ru/storage/s3/connect/s3-cli"
                 },
                 {
-                    "link": "/ru/storage/s3/use-cases/load-large-image"
+                    "link": "/ru/storage/s3/how-to-guides/load-large-image"
                 }
             ]
         }

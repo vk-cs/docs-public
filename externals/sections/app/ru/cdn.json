@@ -6,7 +6,7 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/networks/cdn/concepts/about-cdn"
+                    "link": "/ru/networks/cdn/concepts/about"
                 },
                 {
                     "link": "/ru/networks/cdn/concepts/http2-support"

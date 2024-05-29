@@ -8,7 +8,7 @@ See [Billing](/en/intro/billing) for how the tools related to paying for platfor
 
 ## What is charged
 
-Tarrification in Cloud storage depends on data [storage classes](../instructions/change-storage-class/).
+Tarrification in Cloud storage depends on data [storage classes](../service-management/change-storage-class/).
 
 You pay in Hotbox and Icebox for:
 
