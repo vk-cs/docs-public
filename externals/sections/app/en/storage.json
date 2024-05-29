@@ -6,7 +6,7 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "/en/storage/s3/concepts/intro"
+                    "link": "/en/storage/s3/concepts/about"
                 },
                 {
                     "link": "/en/storage/s3/tariffication",
@@ -32,10 +32,10 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "/en/storage/s3/storage-connecting/s3-cli"
+                    "link": "/en/storage/s3/connect/s3-cli"
                 },
                 {
-                    "link": "/en/storage/s3/use-cases/load-large-image"
+                    "link": "/en/storage/s3/how-to-guides/load-large-image"
                 }
             ]
         }

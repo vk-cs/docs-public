@@ -15,7 +15,7 @@ Authorization: <тип подписи>-<алгоритм подписи> Credent
 
 - `<тип подписи>` — **AWS4**.
 - `<алгоритм подписи>` — **HMAC-SHA256**.
-- `<ключ-доступа>` — [идентификатор ключа](../../../../../storage/s3/instructions/access-management) доступа к Cloud Storage.
+- `<ключ-доступа>` — [идентификатор ключа](../../../../../storage/s3/service-management/access-management) доступа к Cloud Storage.
 - `<дата>` — дата в формате ГГГГММДД.
 - `<регион>` — [регион](../../../../account/concepts/regions) аккаунта. Доступные значения:
 
