@@ -9,7 +9,7 @@ Velero — это клиент-серверная утилита для резе
 
 1. [Убедитесь](../../connect/kubectl#proverka_podklyucheniya_k_klasteru), что вы можете подключиться к кластеру с помощью `kubectl`.
 1. [Установите](/ru/tools-for-using-services/cli/openstack-cli/) OpenStack CLI, если он еще не установлен. [Убедитесь](/ru/tools-for-using-services/cli/openstack-cli/), что вы можете авторизоваться в облаке с его помощью.
-1. [Создайте hotbox-бакет](../../../../storage/s3/instructions/buckets/create-bucket/) для хранения резервных копий в сервисе [Cloud Storage](../../../../storage/s3).
+1. [Создайте hotbox-бакет](../../../../storage/s3/service-management/buckets/create-bucket/) для хранения резервных копий в сервисе [Cloud Storage](../../../../storage/s3).
 1. [Создайте аккаунт](../../../../storage/s3/access-management/s3-account) в сервисе [Cloud Storage](../../../../storage/s3).
 
    Выведенные идентификатор ключа и секрет сохраните в файл `s3_creds`:

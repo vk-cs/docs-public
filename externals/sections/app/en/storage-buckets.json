@@ -24,7 +24,7 @@
                     "link": "/en/storage/s3/quick-start"
                 },
                 {
-                    "link": "/en/storage/s3/instructions/buckets/create-bucket"
+                    "link": "/en/storage/s3/service-management/buckets/create-bucket"
                 }
             ]
         },
@@ -32,16 +32,16 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "/en/storage/s3/storage-connecting/s3-cli"
+                    "link": "/en/storage/s3/connect/s3-cli"
                 },
                 {
-                    "link": "/en/storage/s3/use-cases/load-large-image"
+                    "link": "/en/storage/s3/how-to-guides/load-large-image"
                 },
                 {
-                    "link": "/en/storage/s3/use-cases/s3-domain"
+                    "link": "/en/storage/s3/how-to-guides/s3-domain"
                 },
                 {
-                    "link": "/en/storage/s3/storage-connecting/s3-sdk"
+                    "link": "/en/storage/s3/connect/s3-sdk"
                 }
             ]
         },
