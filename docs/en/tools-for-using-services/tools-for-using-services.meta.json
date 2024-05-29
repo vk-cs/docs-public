@@ -10,7 +10,7 @@
   "weight": 11,
   "relativeSections": [
     {
-      "partialPath": "/en/storage/s3/storage-connecting/s3-cli"
+      "partialPath": "/en/storage/s3/connect/s3-cli"
     },
     {
       "partialPath": "/en/tools-for-using-services/account/concepts/projects"
