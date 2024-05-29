@@ -7,13 +7,13 @@
   },
   {
     "source": "/ru/base/s3/s3-python/s3-python-objects",
-    "destination": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/s3-python/s3-python-setup",
-    "destination": "/ru/storage/s3/storage-connecting/s3-sdk",
+    "destination": "/ru/storage/s3/connect/s3-sdk",
     "permanent": false,
     "locale": false
   },
@@ -859,7 +859,7 @@
   },
   {
     "source": "/en/base/s3/manage-s3/cors-en",
-    "destination": "/en/storage/s3/instructions/access-management/cors",
+    "destination": "/en/storage/s3/service-management/access-management/cors",
     "permanent": false,
     "locale": false
   },
@@ -2035,7 +2035,7 @@
   },
   {
     "source": "/en/additionals/account/project/api/apikeys",
-    "destination": "/en/storage/s3/instructions/access-management/apikeys",
+    "destination": "/en/storage/s3/service-management/access-management/apikeys",
     "permanent": false,
     "locale": false
   },
@@ -2335,7 +2335,7 @@
   },
   {
     "source": "/ru/additionals/account/project/api/apikeys",
-    "destination": "/ru/storage/s3/instructions/access-management/access-keys",
+    "destination": "/ru/storage/s3/service-management/access-management/access-keys",
     "permanent": false,
     "locale": false
   },
@@ -2887,7 +2887,7 @@
   },
   {
     "source": "/en/base/account/project/api/apikeys",
-    "destination": "/en/storage/s3/instructions/access-management/apikeys",
+    "destination": "/en/storage/s3/service-management/access-management/apikeys",
     "permanent": false,
     "locale": false
   },
@@ -2899,7 +2899,7 @@
   },
   {
     "source": "/ru/base/account/project/api/apikeys",
-    "destination": "/ru/storage/s3/instructions/access-management/access-keys",
+    "destination": "/ru/storage/s3/service-management/access-management/access-keys",
     "permanent": false,
     "locale": false
   },
@@ -3313,7 +3313,7 @@
   },
   {
     "source": "/ru/base/s3/dev/s3-rest-api/apikeys",
-    "destination": "/ru/storage/s3/instructions/access-management/access-keys",
+    "destination": "/ru/storage/s3/service-management/access-management/access-keys",
     "permanent": false,
     "locale": false
   },
@@ -4513,7 +4513,7 @@
   },
   {
     "source": "/ru/additionals/api/api-account/apikeys",
-    "destination": "/ru/storage/s3/instructions/access-management/access-keys",
+    "destination": "/ru/storage/s3/service-management/access-management/access-keys",
     "permanent": false,
     "locale": false
   },
@@ -5287,91 +5287,91 @@
   },
   {
     "source": "/en/base/s3/manage-s3",
-    "destination": "/en/storage/s3/instructions/access-management",
+    "destination": "/en/storage/s3/service-management/access-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/s3-rest-api/apikeys",
-    "destination": "/en/storage/s3/instructions/access-management/apikeys",
+    "destination": "/en/storage/s3/service-management/access-management/apikeys",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/manage-s3/cors",
-    "destination": "/en/storage/s3/instructions/access-management/cors",
+    "destination": "/en/storage/s3/service-management/access-management/cors",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/s3-start/s3-account",
-    "destination": "/en/storage/s3/instructions/account-management",
+    "destination": "/en/storage/s3/service-management/account-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/manage-s3/s3-acl",
-    "destination": "/en/storage/s3/instructions/access-management/s3-acl",
+    "destination": "/en/storage/s3/service-management/access-management/s3-acl",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/manage-s3/bucket",
-    "destination": "/en/storage/s3/instructions/buckets/bucket",
+    "destination": "/en/storage/s3/service-management/buckets/bucket",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/manage-s3/s3-domain",
-    "destination": "/en/storage/s3/use-cases/s3-domain",
+    "destination": "/en/storage/s3/how-to-guides/s3-domain",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/manage-s3/s3-webhooks",
-    "destination": "/en/storage/s3/instructions/buckets/s3-webhooks",
+    "destination": "/en/storage/s3/service-management/buckets/s3-webhooks",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/manage-s3/storage-class",
-    "destination": "/en/storage/s3/instructions/change-storage-class",
+    "destination": "/en/storage/s3/service-management/change-storage-class",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/s3-tools/s3-sdk",
-    "destination": "/en/storage/s3/storage-connecting/s3-sdk",
+    "destination": "/en/storage/s3/connect/s3-sdk",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/s3-start/about-s3",
-    "destination": "/en/storage/s3/concepts/intro",
+    "destination": "/en/storage/s3/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/manage-s3/object",
-    "destination": "/en/storage/s3/instructions/objects",
+    "destination": "/en/storage/s3/service-management/objects",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/manage-s3/multipart",
-    "destination": "/en/storage/s3/instructions/objects/multipart",
+    "destination": "/en/storage/s3/service-management/objects/multipart",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/manage-s3/s3-lifecycle",
-    "destination": "/en/storage/s3/instructions/objects/s3-lifecycle",
+    "destination": "/en/storage/s3/service-management/objects/s3-lifecycle",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/manage-s3/signed-url",
-    "destination": "/en/storage/s3/instructions/objects/signed-url",
+    "destination": "/en/storage/s3/service-management/objects/signed-url",
     "permanent": false,
     "locale": false
   },
@@ -5383,19 +5383,19 @@
   },
   {
     "source": "/en/base/s3/s3-start/create-bucket",
-    "destination": "/en/storage/s3/instructions/buckets/create-bucket",
+    "destination": "/en/storage/s3/service-management/buckets/create-bucket",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/s3-start/object-access",
-    "destination": "/en/storage/s3/instructions/objects/manage-object",
+    "destination": "/en/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/s3-start/upload-object",
-    "destination": "/en/storage/s3/instructions/objects/upload-object",
+    "destination": "/en/storage/s3/service-management/objects/upload-object",
     "permanent": false,
     "locale": false
   },
@@ -5407,19 +5407,19 @@
   },
   {
     "source": "/en/base/s3/s3-tools",
-    "destination": "/en/storage/s3/storage-connecting",
+    "destination": "/en/storage/s3/connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/s3-tools/s3-cli",
-    "destination": "/en/storage/s3/storage-connecting/s3-cli",
+    "destination": "/en/storage/s3/connect/s3-cli",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/s3-tools/s3-file-managers",
-    "destination": "/en/storage/s3/storage-connecting/s3-file-managers",
+    "destination": "/en/storage/s3/connect/s3-file-managers",
     "permanent": false,
     "locale": false
   },
@@ -7189,19 +7189,19 @@
   },
   {
     "source": "/ru/networks/cdn/about-cdn",
-    "destination": "/ru/networks/cdn/concepts/about-cdn",
+    "destination": "/ru/networks/cdn/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/networks/cdn/add-ssl-certificate",
-    "destination": "/ru/networks/cdn/instructions/manage-certificates",
+    "destination": "/ru/networks/cdn/service-management/manage-certificates",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/networks/cdn/manage-cdn",
-    "destination": "/ru/networks/cdn/instructions/manage-cdn",
+    "destination": "/ru/networks/cdn/service-management/manage-cdn",
     "permanent": false,
     "locale": false
   },
@@ -8281,37 +8281,37 @@
   },
   {
     "source": "/en/base/s3/quick-start/create-bucket",
-    "destination": "/en/storage/s3/instructions/buckets/create-bucket",
+    "destination": "/en/storage/s3/service-management/buckets/create-bucket",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/quick-start/object-access",
-    "destination": "/en/storage/s3/instructions/objects/manage-object",
+    "destination": "/en/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/quick-start/upload-object",
-    "destination": "/en/storage/s3/instructions/objects/upload-object",
+    "destination": "/en/storage/s3/service-management/objects/upload-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/quick-start/create-bucket",
-    "destination": "/ru/storage/s3/instructions/buckets/create-bucket",
+    "destination": "/ru/storage/s3/service-management/buckets/create-bucket",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/quick-start/object-access",
-    "destination": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/quick-start/upload-object",
-    "destination": "/ru/storage/s3/instructions/objects/upload-object",
+    "destination": "/ru/storage/s3/service-management/objects/upload-object",
     "permanent": false,
     "locale": false
   },
@@ -9091,13 +9091,13 @@
   },
   {
     "source": "/en/base/s3/buckets/s3-domain",
-    "destination": "/en/storage/s3/use-cases/s3-domain",
+    "destination": "/en/storage/s3/how-to-guides/s3-domain",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/buckets/s3-domain",
-    "destination": "/ru/storage/s3/use-cases/s3-domain",
+    "destination": "/ru/storage/s3/how-to-guides/s3-domain",
     "permanent": false,
     "locale": false
   },
@@ -9235,139 +9235,139 @@
   },
   {
     "source": "/en/base/s3/intro",
-    "destination": "/en/storage/s3/concepts/intro",
+    "destination": "/en/storage/s3/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/dev",
-    "destination": "/en/storage/s3/instructions",
+    "destination": "/en/storage/s3/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/access-management",
-    "destination": "/en/storage/s3/instructions/access-management",
+    "destination": "/en/storage/s3/service-management/access-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/access-management/apikeys",
-    "destination": "/en/storage/s3/instructions/access-management/apikeys",
+    "destination": "/en/storage/s3/service-management/access-management/apikeys",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/access-management/cors",
-    "destination": "/en/storage/s3/instructions/access-management/cors",
+    "destination": "/en/storage/s3/service-management/access-management/cors",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/access-management/s3-acl",
-    "destination": "/en/storage/s3/instructions/access-management/s3-acl",
+    "destination": "/en/storage/s3/service-management/access-management/s3-acl",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/access-management/s3-account",
-    "destination": "/en/storage/s3/instructions/account-management",
+    "destination": "/en/storage/s3/service-management/account-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/buckets",
-    "destination": "/en/storage/s3/instructions/buckets",
+    "destination": "/en/storage/s3/service-management/buckets",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/buckets/bucket",
-    "destination": "/en/storage/s3/instructions/buckets/bucket",
+    "destination": "/en/storage/s3/service-management/buckets/bucket",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/buckets/create-bucket",
-    "destination": "/en/storage/s3/instructions/buckets/create-bucket",
+    "destination": "/en/storage/s3/service-management/buckets/create-bucket",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/buckets/object-access",
-    "destination": "/en/storage/s3/instructions/objects/manage-object",
+    "destination": "/en/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/buckets/s3-webhooks",
-    "destination": "/en/storage/s3/instructions/buckets/s3-webhooks",
+    "destination": "/en/storage/s3/service-management/buckets/s3-webhooks",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/buckets/storage-class",
-    "destination": "/en/storage/s3/instructions/change-storage-class",
+    "destination": "/en/storage/s3/service-management/change-storage-class",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/objects",
-    "destination": "/en/storage/s3/instructions/objects",
+    "destination": "/en/storage/s3/service-management/objects",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/objects/delete-object",
-    "destination": "/en/storage/s3/instructions/objects/manage-object",
+    "destination": "/en/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/objects/multipart",
-    "destination": "/en/storage/s3/instructions/objects/multipart",
+    "destination": "/en/storage/s3/service-management/objects/multipart",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/objects/s3-lifecycle",
-    "destination": "/en/storage/s3/instructions/objects/s3-lifecycle",
+    "destination": "/en/storage/s3/service-management/objects/s3-lifecycle",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/objects/signed-url",
-    "destination": "/en/storage/s3/instructions/objects/signed-url",
+    "destination": "/en/storage/s3/service-management/objects/signed-url",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/objects/upload-object",
-    "destination": "/en/storage/s3/instructions/objects/upload-object",
+    "destination": "/en/storage/s3/service-management/objects/upload-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/tools",
-    "destination": "/en/storage/s3/storage-connecting",
+    "destination": "/en/storage/s3/connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/tools/s3-cli",
-    "destination": "/en/storage/s3/storage-connecting/s3-cli",
+    "destination": "/en/storage/s3/connect/s3-cli",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/tools/s3-file-managers",
-    "destination": "/en/storage/s3/storage-connecting/s3-file-managers",
+    "destination": "/en/storage/s3/connect/s3-file-managers",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/dev/s3-sdk",
-    "destination": "/en/storage/s3/storage-connecting/s3-sdk",
+    "destination": "/en/storage/s3/connect/s3-sdk",
     "permanent": false,
     "locale": false
   },
@@ -9415,61 +9415,61 @@
   },
   {
     "source": "/ru/base/s3/intro",
-    "destination": "/ru/storage/s3/concepts/intro",
+    "destination": "/ru/storage/s3/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/access-management",
-    "destination": "/ru/storage/s3/instructions/access-management",
+    "destination": "/ru/storage/s3/service-management/access-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/access-management/apikeys",
-    "destination": "/ru/storage/s3/instructions/access-management/access-keys",
+    "destination": "/ru/storage/s3/service-management/access-management/access-keys",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/access-management/cors",
-    "destination": "/ru/storage/s3/instructions/access-management/cors",
+    "destination": "/ru/storage/s3/service-management/access-management/cors",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/access-management/s3-acl",
-    "destination": "/ru/storage/s3/instructions/access-management/s3-acl",
+    "destination": "/ru/storage/s3/service-management/access-management/s3-acl",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/access-management/s3-account",
-    "destination": "/ru/storage/s3/instructions/access-management/access-keys",
+    "destination": "/ru/storage/s3/service-management/access-management/access-keys",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/buckets",
-    "destination": "/ru/storage/s3/instructions/buckets",
+    "destination": "/ru/storage/s3/service-management/buckets",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/buckets/bucket",
-    "destination": "/ru/storage/s3/instructions/buckets/manage-bucket",
+    "destination": "/ru/storage/s3/service-management/buckets/manage-bucket",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/buckets/create-bucket",
-    "destination": "/ru/storage/s3/instructions/buckets/create-bucket",
+    "destination": "/ru/storage/s3/service-management/buckets/create-bucket",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/buckets/object-access",
-    "destination": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
@@ -9481,25 +9481,25 @@
   },
   {
     "source": "/ru/base/s3/buckets/storage-class",
-    "destination": "/ru/storage/s3/instructions/change-storage-class",
+    "destination": "/ru/storage/s3/service-management/change-storage-class",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/objects",
-    "destination": "/ru/storage/s3/instructions/objects",
+    "destination": "/ru/storage/s3/service-management/objects",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/objects/delete-object",
-    "destination": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/objects/multipart",
-    "destination": "/ru/storage/s3/instructions/objects/upload-object",
+    "destination": "/ru/storage/s3/service-management/objects/upload-object",
     "permanent": false,
     "locale": false
   },
@@ -9511,49 +9511,49 @@
   },
   {
     "source": "/ru/base/s3/objects/signed-url",
-    "destination": "/ru/storage/s3/instructions/objects/signed-url",
+    "destination": "/ru/storage/s3/service-management/objects/signed-url",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/objects/upload-object",
-    "destination": "/ru/storage/s3/instructions/objects/upload-object",
+    "destination": "/ru/storage/s3/service-management/objects/upload-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/tools",
-    "destination": "/ru/storage/s3/storage-connecting",
+    "destination": "/ru/storage/s3/connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/tools/s3-cli",
-    "destination": "/ru/storage/s3/storage-connecting/s3-cli",
+    "destination": "/ru/storage/s3/connect/s3-cli",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/tools/s3-file-managers",
-    "destination": "/ru/storage/s3/storage-connecting/s3-file-managers",
+    "destination": "/ru/storage/s3/connect/s3-file-managers",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/dev/s3-sdk",
-    "destination": "/ru/storage/s3/storage-connecting/s3-sdk",
+    "destination": "/ru/storage/s3/connect/s3-sdk",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/dev/s3-python/s3-python-setup",
-    "destination": "/ru/storage/s3/storage-connecting/s3-sdk",
+    "destination": "/ru/storage/s3/connect/s3-sdk",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/dev/s3-golang/s3-golang-setup",
-    "destination": "/ru/storage/s3/storage-connecting/s3-sdk",
+    "destination": "/ru/storage/s3/connect/s3-sdk",
     "permanent": false,
     "locale": false
   },
@@ -10105,13 +10105,13 @@
   },
   {
     "source": "/en/base/s3/instructions/buckets/storage-class",
-    "destination": "/en/storage/s3/instructions/change-storage-class",
+    "destination": "/en/storage/s3/service-management/change-storage-class",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/buckets/storage-class",
-    "destination": "/ru/storage/s3/instructions/change-storage-class",
+    "destination": "/ru/storage/s3/service-management/change-storage-class",
     "permanent": false,
     "locale": false
   },
@@ -10249,7 +10249,7 @@
   },
   {
     "source": "/ru/networks/cdn/instructions/add-ssl-certificate",
-    "destination": "/ru/networks/cdn/instructions/manage-certificates",
+    "destination": "/ru/networks/cdn/service-management/manage-certificates",
     "permanent": false,
     "locale": false
   },
@@ -10273,13 +10273,13 @@
   },
   {
     "source": "/ru/base/s3/instructions/account-management",
-    "destination": "/ru/storage/s3/instructions/access-management/access-keys",
+    "destination": "/ru/storage/s3/service-management/access-management/access-keys",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/access-management/apikeys",
-    "destination": "/ru/storage/s3/instructions/access-management/access-keys",
+    "destination": "/ru/storage/s3/service-management/access-management/access-keys",
     "permanent": false,
     "locale": false
   },
@@ -12961,13 +12961,13 @@
   },
   {
     "source": "/ru/base/s3/instructions/objects/delete-object",
-    "destination": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/objects/multipart",
-    "destination": "/ru/storage/s3/instructions/objects/upload-object",
+    "destination": "/ru/storage/s3/service-management/objects/upload-object",
     "permanent": false,
     "locale": false
   },
@@ -13267,31 +13267,31 @@
   },
   {
     "source": "/en/base/s3/instructions/objects/delete-object",
-    "destination": "/en/storage/s3/instructions/objects/manage-object",
+    "destination": "/en/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/buckets/object-access",
-    "destination": "/en/storage/s3/instructions/objects/manage-object",
+    "destination": "/en/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/dev/s3-golang/s3-golang-objects",
-    "destination": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/dev/s3-python/s3-python-objects",
-    "destination": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/buckets/object-access",
-    "destination": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
@@ -13303,7 +13303,7 @@
   },
   {
     "source": "/ru/base/s3/references/signed-url",
-    "destination": "/ru/storage/s3/instructions/objects/signed-url",
+    "destination": "/ru/storage/s3/service-management/objects/signed-url",
     "permanent": false,
     "locale": false
   },
@@ -14725,7 +14725,7 @@
   },
   {
     "source": "/en/base/s3/concepts/intro",
-    "destination": "/en/storage/s3/concepts/intro",
+    "destination": "/en/storage/s3/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -14791,157 +14791,157 @@
   },
   {
     "source": "/en/base/s3/storage-connecting",
-    "destination": "/en/storage/s3/storage-connecting",
+    "destination": "/en/storage/s3/connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/storage-connecting/s3-cli",
-    "destination": "/en/storage/s3/storage-connecting/s3-cli",
+    "destination": "/en/storage/s3/connect/s3-cli",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/storage-connecting/s3-file-managers",
-    "destination": "/en/storage/s3/storage-connecting/s3-file-managers",
+    "destination": "/en/storage/s3/connect/s3-file-managers",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/storage-connecting/s3-sdk",
-    "destination": "/en/storage/s3/storage-connecting/s3-sdk",
+    "destination": "/en/storage/s3/connect/s3-sdk",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions",
-    "destination": "/en/storage/s3/instructions",
+    "destination": "/en/storage/s3/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions",
-    "destination": "/en/storage/s3/instructions",
+    "destination": "/en/storage/s3/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/account-management",
-    "destination": "/en/storage/s3/instructions/account-management",
+    "destination": "/en/storage/s3/service-management/account-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/buckets",
-    "destination": "/en/storage/s3/instructions/buckets",
+    "destination": "/en/storage/s3/service-management/buckets",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/buckets/create-bucket",
-    "destination": "/en/storage/s3/instructions/buckets/create-bucket",
+    "destination": "/en/storage/s3/service-management/buckets/create-bucket",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/buckets/bucket",
-    "destination": "/en/storage/s3/instructions/buckets/bucket",
+    "destination": "/en/storage/s3/service-management/buckets/bucket",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/buckets/s3-webhooks",
-    "destination": "/en/storage/s3/instructions/buckets/s3-webhooks",
+    "destination": "/en/storage/s3/service-management/buckets/s3-webhooks",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/objects",
-    "destination": "/en/storage/s3/instructions/objects",
+    "destination": "/en/storage/s3/service-management/objects",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/objects/upload-object",
-    "destination": "/en/storage/s3/instructions/objects/upload-object",
+    "destination": "/en/storage/s3/service-management/objects/upload-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/objects/manage-object",
-    "destination": "/en/storage/s3/instructions/objects/manage-object",
+    "destination": "/en/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/objects/manage-object",
-    "destination": "/en/storage/s3/instructions/objects/manage-object",
+    "destination": "/en/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/objects/multipart",
-    "destination": "/en/storage/s3/instructions/objects/multipart",
+    "destination": "/en/storage/s3/service-management/objects/multipart",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/objects/signed-url",
-    "destination": "/en/storage/s3/instructions/objects/signed-url",
+    "destination": "/en/storage/s3/service-management/objects/signed-url",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/objects/s3-lifecycle",
-    "destination": "/en/storage/s3/instructions/objects/s3-lifecycle",
+    "destination": "/en/storage/s3/service-management/objects/s3-lifecycle",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/change-storage-class",
-    "destination": "/en/storage/s3/instructions/change-storage-class",
+    "destination": "/en/storage/s3/service-management/change-storage-class",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/access-management",
-    "destination": "/en/storage/s3/instructions/access-management",
+    "destination": "/en/storage/s3/service-management/access-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/access-management/apikeys",
-    "destination": "/en/storage/s3/instructions/access-management/apikeys",
+    "destination": "/en/storage/s3/service-management/access-management/apikeys",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/access-management/cors",
-    "destination": "/en/storage/s3/instructions/access-management/cors",
+    "destination": "/en/storage/s3/service-management/access-management/cors",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/instructions/access-management/s3-acl",
-    "destination": "/en/storage/s3/instructions/access-management/s3-acl",
+    "destination": "/en/storage/s3/service-management/access-management/s3-acl",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/use-cases",
-    "destination": "/en/storage/s3/use-cases",
+    "destination": "/en/storage/s3/how-to-guides",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/use-cases/load-large-image",
-    "destination": "/en/storage/s3/use-cases/load-large-image",
+    "destination": "/en/storage/s3/how-to-guides/load-large-image",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/s3/use-cases/s3-domain",
-    "destination": "/en/storage/s3/use-cases/s3-domain",
+    "destination": "/en/storage/s3/how-to-guides/s3-domain",
     "permanent": false,
     "locale": false
   },
@@ -17359,7 +17359,7 @@
   },
   {
     "source": "/ru/base/s3/concepts/intro",
-    "destination": "/ru/storage/s3/concepts/intro",
+    "destination": "/ru/storage/s3/concepts/about",
     "permanent": false,
     "locale": false
   },
@@ -17371,67 +17371,67 @@
   },
   {
     "source": "/ru/base/s3/references",
-    "destination": "/ru/storage/s3/references",
+    "destination": "/ru/storage/s3/reference",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/storage-connecting",
-    "destination": "/ru/storage/s3/storage-connecting",
+    "destination": "/ru/storage/s3/connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/storage-connecting/s3-cli",
-    "destination": "/ru/storage/s3/storage-connecting/s3-cli",
+    "destination": "/ru/storage/s3/connect/s3-cli",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/storage-connecting/s3-file-managers",
-    "destination": "/ru/storage/s3/storage-connecting/s3-file-managers",
+    "destination": "/ru/storage/s3/connect/s3-file-managers",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/storage-connecting/s3-sdk",
-    "destination": "/ru/storage/s3/storage-connecting/s3-sdk",
+    "destination": "/ru/storage/s3/connect/s3-sdk",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/storage-connecting/s3-sdk",
-    "destination": "/ru/storage/s3/storage-connecting/s3-sdk",
+    "destination": "/ru/storage/s3/connect/s3-sdk",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/storage-connecting/s3-sdk",
-    "destination": "/ru/storage/s3/storage-connecting/s3-sdk",
+    "destination": "/ru/storage/s3/connect/s3-sdk",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions",
-    "destination": "/ru/storage/s3/instructions",
+    "destination": "/ru/storage/s3/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/buckets",
-    "destination": "/ru/storage/s3/instructions/buckets",
+    "destination": "/ru/storage/s3/service-management/buckets",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/buckets/create-bucket",
-    "destination": "/ru/storage/s3/instructions/buckets/create-bucket",
+    "destination": "/ru/storage/s3/service-management/buckets/create-bucket",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/buckets/bucket",
-    "destination": "/ru/storage/s3/instructions/buckets/manage-bucket",
+    "destination": "/ru/storage/s3/service-management/buckets/manage-bucket",
     "permanent": false,
     "locale": false
   },
@@ -17443,49 +17443,49 @@
   },
   {
     "source": "/ru/base/s3/instructions/objects",
-    "destination": "/ru/storage/s3/instructions/objects",
+    "destination": "/ru/storage/s3/service-management/objects",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/objects/upload-object",
-    "destination": "/ru/storage/s3/instructions/objects/upload-object",
+    "destination": "/ru/storage/s3/service-management/objects/upload-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/objects/upload-object",
-    "destination": "/ru/storage/s3/instructions/objects/upload-object",
+    "destination": "/ru/storage/s3/service-management/objects/upload-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/objects/manage-object",
-    "destination": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/objects/manage-object",
-    "destination": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/objects/manage-object",
-    "destination": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/objects/manage-object",
-    "destination": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/objects/signed-url",
-    "destination": "/ru/storage/s3/instructions/objects/signed-url",
+    "destination": "/ru/storage/s3/service-management/objects/signed-url",
     "permanent": false,
     "locale": false
   },
@@ -17497,55 +17497,55 @@
   },
   {
     "source": "/ru/base/s3/instructions/change-storage-class",
-    "destination": "/ru/storage/s3/instructions/change-storage-class",
+    "destination": "/ru/storage/s3/service-management/change-storage-class",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/access-management",
-    "destination": "/ru/storage/s3/instructions/access-management",
+    "destination": "/ru/storage/s3/service-management/access-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/access-management/access-keys",
-    "destination": "/ru/storage/s3/instructions/access-management/access-keys",
+    "destination": "/ru/storage/s3/service-management/access-management/access-keys",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/access-management/access-keys",
-    "destination": "/ru/storage/s3/instructions/access-management/access-keys",
+    "destination": "/ru/storage/s3/service-management/access-management/access-keys",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/access-management/cors",
-    "destination": "/ru/storage/s3/instructions/access-management/cors",
+    "destination": "/ru/storage/s3/service-management/access-management/cors",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/instructions/access-management/s3-acl",
-    "destination": "/ru/storage/s3/instructions/access-management/s3-acl",
+    "destination": "/ru/storage/s3/service-management/access-management/s3-acl",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/use-cases",
-    "destination": "/ru/storage/s3/use-cases",
+    "destination": "/ru/storage/s3/how-to-guides",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/use-cases/load-large-image",
-    "destination": "/ru/storage/s3/use-cases/load-large-image",
+    "destination": "/ru/storage/s3/how-to-guides/load-large-image",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/s3/use-cases/s3-domain",
-    "destination": "/ru/storage/s3/use-cases/s3-domain",
+    "destination": "/ru/storage/s3/how-to-guides/s3-domain",
     "permanent": false,
     "locale": false
   },
@@ -21601,7 +21601,7 @@
   },
   {
     "source": "/ru/networks/cdn/instructions/working-cdn",
-    "destination": "/ru/networks/cdn/instructions/manage-cdn",
+    "destination": "/ru/networks/cdn/service-management/manage-cdn",
     "permanent": false,
     "locale": false
   },
@@ -25232,6 +25232,444 @@
   {
     "source": "/en/networks/cdn/instructions/manage-cdn",
     "destination": "/en/networks/cdn/service-management/manage-cdn",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/concepts/intro",
+    "destination": "/en/storage/s3/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/storage-connecting",
+    "destination": "/en/storage/s3/connect",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/storage-connecting/s3-cli",
+    "destination": "/en/storage/s3/connect/s3-cli",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/storage-connecting/s3-file-managers",
+    "destination": "/en/storage/s3/connect/s3-file-managers",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/storage-connecting/s3-sdk",
+    "destination": "/en/storage/s3/connect/s3-sdk",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions",
+    "destination": "/en/storage/s3/service-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions",
+    "destination": "/en/storage/s3/service-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/account-management",
+    "destination": "/en/storage/s3/service-management/account-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/buckets",
+    "destination": "/en/storage/s3/service-management/buckets",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/buckets/create-bucket",
+    "destination": "/en/storage/s3/service-management/buckets/create-bucket",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/buckets/bucket",
+    "destination": "/en/storage/s3/service-management/buckets/bucket",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/buckets/s3-webhooks",
+    "destination": "/en/storage/s3/service-management/buckets/s3-webhooks",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/objects",
+    "destination": "/en/storage/s3/service-management/objects",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/objects/upload-object",
+    "destination": "/en/storage/s3/service-management/objects/upload-object",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/objects/manage-object",
+    "destination": "/en/storage/s3/service-management/objects/manage-object",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/objects/manage-object",
+    "destination": "/en/storage/s3/service-management/objects/manage-object",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/objects/multipart",
+    "destination": "/en/storage/s3/service-management/objects/multipart",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/objects/signed-url",
+    "destination": "/en/storage/s3/service-management/objects/signed-url",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/objects/s3-lifecycle",
+    "destination": "/en/storage/s3/service-management/objects/s3-lifecycle",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/change-storage-class",
+    "destination": "/en/storage/s3/service-management/change-storage-class",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/access-management",
+    "destination": "/en/storage/s3/service-management/access-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/access-management/apikeys",
+    "destination": "/en/storage/s3/service-management/access-management/apikeys",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/access-management/cors",
+    "destination": "/en/storage/s3/service-management/access-management/cors",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/instructions/access-management/s3-acl",
+    "destination": "/en/storage/s3/service-management/access-management/s3-acl",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/use-cases",
+    "destination": "/en/storage/s3/how-to-guides",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/use-cases/load-large-image",
+    "destination": "/en/storage/s3/how-to-guides/load-large-image",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/s3/use-cases/s3-domain",
+    "destination": "/en/storage/s3/how-to-guides/s3-domain",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/concepts/about-cdn",
+    "destination": "/ru/networks/cdn/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/instructions",
+    "destination": "/ru/networks/cdn/service-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/instructions/create-resource",
+    "destination": "/ru/networks/cdn/service-management/create-resource",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/instructions/manage-cdn",
+    "destination": "/ru/networks/cdn/service-management/manage-cdn",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/instructions/manage-cdn",
+    "destination": "/ru/networks/cdn/service-management/manage-cdn",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/instructions/manage-cdn/enable-cdn",
+    "destination": "/ru/networks/cdn/service-management/manage-cdn/enable-cdn",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/instructions/manage-cdn/origin-settings",
+    "destination": "/ru/networks/cdn/service-management/manage-cdn/origin-settings",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/instructions/manage-cdn/ssl",
+    "destination": "/ru/networks/cdn/service-management/manage-cdn/ssl",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/instructions/manage-cdn/caching",
+    "destination": "/ru/networks/cdn/service-management/manage-cdn/caching",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/instructions/manage-cdn/http-headers",
+    "destination": "/ru/networks/cdn/service-management/manage-cdn/http-headers",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/instructions/manage-cdn/content-settings",
+    "destination": "/ru/networks/cdn/service-management/manage-cdn/content-settings",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/instructions/manage-cdn/security",
+    "destination": "/ru/networks/cdn/service-management/manage-cdn/security",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/instructions/upload-content",
+    "destination": "/ru/networks/cdn/service-management/upload-content",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/instructions/manage-origin-groups",
+    "destination": "/ru/networks/cdn/service-management/manage-origin-groups",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/instructions/manage-certificates",
+    "destination": "/ru/networks/cdn/service-management/manage-certificates",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/networks/cdn/instructions/delete-resource",
+    "destination": "/ru/networks/cdn/service-management/delete-resource",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/concepts/intro",
+    "destination": "/ru/storage/s3/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/storage-connecting",
+    "destination": "/ru/storage/s3/connect",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/storage-connecting/s3-cli",
+    "destination": "/ru/storage/s3/connect/s3-cli",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/storage-connecting/s3-file-managers",
+    "destination": "/ru/storage/s3/connect/s3-file-managers",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/storage-connecting/s3-sdk",
+    "destination": "/ru/storage/s3/connect/s3-sdk",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/storage-connecting/s3-sdk",
+    "destination": "/ru/storage/s3/connect/s3-sdk",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/storage-connecting/s3-sdk",
+    "destination": "/ru/storage/s3/connect/s3-sdk",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions",
+    "destination": "/ru/storage/s3/service-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/buckets",
+    "destination": "/ru/storage/s3/service-management/buckets",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/buckets/create-bucket",
+    "destination": "/ru/storage/s3/service-management/buckets/create-bucket",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/buckets/manage-bucket",
+    "destination": "/ru/storage/s3/service-management/buckets/manage-bucket",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/buckets/bucket-keys",
+    "destination": "/ru/storage/s3/service-management/buckets/bucket-keys",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/objects",
+    "destination": "/ru/storage/s3/service-management/objects",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/objects/upload-object",
+    "destination": "/ru/storage/s3/service-management/objects/upload-object",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/objects/upload-object",
+    "destination": "/ru/storage/s3/service-management/objects/upload-object",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/objects/manage-object",
+    "destination": "/ru/storage/s3/service-management/objects/manage-object",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/objects/signed-url",
+    "destination": "/ru/storage/s3/service-management/objects/signed-url",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/change-storage-class",
+    "destination": "/ru/storage/s3/service-management/change-storage-class",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/access-management",
+    "destination": "/ru/storage/s3/service-management/access-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/access-management/access-keys",
+    "destination": "/ru/storage/s3/service-management/access-management/access-keys",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/access-management/access-keys",
+    "destination": "/ru/storage/s3/service-management/access-management/access-keys",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/access-management/cors",
+    "destination": "/ru/storage/s3/service-management/access-management/cors",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/instructions/access-management/s3-acl",
+    "destination": "/ru/storage/s3/service-management/access-management/s3-acl",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/use-cases",
+    "destination": "/ru/storage/s3/how-to-guides",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/use-cases/load-large-image",
+    "destination": "/ru/storage/s3/how-to-guides/load-large-image",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/use-cases/s3-domain",
+    "destination": "/ru/storage/s3/how-to-guides/s3-domain",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/s3/references",
+    "destination": "/ru/storage/s3/reference",
     "permanent": false,
     "locale": false
   }
