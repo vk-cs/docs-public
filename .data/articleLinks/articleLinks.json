@@ -2877,7 +2877,7 @@
   ],
   [
     "/en/storage/s3/quick-start",
-    "http://localhost:3000/docs/en/storage/s3/instructions/objects/signed-url"
+    "http://localhost:3000/docs/en/storage/s3/service-management/objects/signed-url"
   ],
   [
     "/en/storage/s3/quick-start",
@@ -2889,266 +2889,266 @@
   ],
   [
     "/en/storage/s3/quick-start",
-    "http://localhost:3000/docs/en/storage/s3/instructions/objects/manage-object"
+    "http://localhost:3000/docs/en/storage/s3/service-management/objects/manage-object"
   ],
   [
     "/en/storage/s3/quick-start",
-    "http://localhost:3000/docs/en/storage/s3/instructions/buckets/bucket#removing_a_bucket"
+    "http://localhost:3000/docs/en/storage/s3/service-management/buckets/bucket#removing_a_bucket"
   ],
   [
-    "/en/storage/s3/storage-connecting/s3-sdk",
-    "http://localhost:3000/docs/en/storage/s3/instructions/buckets/create-bucket"
+    "/en/storage/s3/connect/s3-sdk",
+    "http://localhost:3000/docs/en/storage/s3/service-management/buckets/create-bucket"
   ],
   [
-    "/en/storage/s3/instructions/buckets/create-bucket",
+    "/en/storage/s3/service-management/buckets/create-bucket",
     "http://localhost:3000/docs/en/base/account/concepts/quotasandlimits#cloud_storage_c24c9efe"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-cli"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-cli"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-cli"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-cli"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/instructions/access-management/s3-acl"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/service-management/access-management/s3-acl"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-cli"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-cli"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-cli"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-cli"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-cli"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-cli"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-cli"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-cli"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-cli"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-cli"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-sdk"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-sdk"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/en/storage/s3/tariffication"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-cli"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-cli"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/en/storage/s3/storage-connecting/s3-cli"
+    "/en/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/en/storage/s3/connect/s3-cli"
   ],
   [
-    "/en/storage/s3/instructions/objects/manage-object",
+    "/en/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/en/storage/s3/use-cases/load-large-image",
+    "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/base/account/concepts/quotasandlimits"
   ],
   [
-    "/en/storage/s3/use-cases/load-large-image",
+    "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/additionals/hystax/migration"
   ],
   [
-    "/en/storage/s3/use-cases/load-large-image",
+    "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/base/s3/buckets/create-bucket"
   ],
   [
-    "/en/storage/s3/use-cases/load-large-image",
+    "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/base/s3/storage-connecting/s3-cli"
   ],
   [
-    "/en/storage/s3/use-cases/load-large-image",
+    "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-create"
   ],
   [
-    "/en/storage/s3/use-cases/load-large-image",
+    "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/base/iaas/service-management/volumes#connecting_a_disk_to_a_vm"
   ],
   [
-    "/en/storage/s3/use-cases/load-large-image",
+    "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix"
   ],
   [
-    "/en/storage/s3/use-cases/load-large-image",
+    "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/base/iaas/service-management/images/images-manage#creating_an_image"
   ],
   [
-    "/en/storage/s3/use-cases/load-large-image",
+    "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-create"
   ],
   [
-    "/en/storage/s3/use-cases/load-large-image",
+    "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/base/iaas/service-management/images/images-manage#deleting_an_image"
   ],
   [
-    "/en/storage/s3/use-cases/load-large-image",
+    "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-manage#starting_stopping_reboot_the_vm"
   ],
   [
-    "/en/storage/s3/use-cases/load-large-image",
+    "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/base/iaas/service-management/volumes#deleting_a_disk"
   ],
   [
@@ -3157,7 +3157,7 @@
   ],
   [
     "/en/storage/s3/tariffication",
-    "http://localhost:3000/docs/en/storage/s3/instructions/change-storage-class"
+    "http://localhost:3000/docs/en/storage/s3/service-management/change-storage-class"
   ],
   [
     "/en/storage/s3/tariffication",
@@ -11072,184 +11072,184 @@
     "http://localhost:3000/docs/ru/networks/balancing/service-management/manage-lb#prosmotr_spiska_balansirovshchikov_nagruzki_i_informacii_o_nih"
   ],
   [
-    "/ru/networks/cdn/concepts/about-cdn",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/upload-content"
+    "/ru/networks/cdn/concepts/about",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/upload-content"
   ],
   [
     "/ru/networks/cdn/concepts/http2-support",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/add-ssl-certificate"
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-certificates"
   ],
   [
-    "/ru/networks/cdn/instructions/create-resource",
-    "http://localhost:3000/docs/ru/networks/cdn/concepts/about-cdn"
+    "/ru/networks/cdn/service-management/create-resource",
+    "http://localhost:3000/docs/ru/networks/cdn/concepts/about"
   ],
   [
-    "/ru/networks/cdn/instructions/create-resource",
+    "/ru/networks/cdn/service-management/create-resource",
     "http://localhost:3000/docs/ru/base/s3"
   ],
   [
-    "/ru/networks/cdn/instructions/create-resource",
-    "http://localhost:3000/docs/ru/networks/cdn/concepts/about-cdn"
+    "/ru/networks/cdn/service-management/create-resource",
+    "http://localhost:3000/docs/ru/networks/cdn/concepts/about"
   ],
   [
-    "/ru/networks/cdn/instructions/create-resource",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-cdn/enable-cdn"
+    "/ru/networks/cdn/service-management/create-resource",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-cdn/enable-cdn"
   ],
   [
-    "/ru/networks/cdn/instructions/create-resource",
-    "http://localhost:3000/docs/ru/networks/cdn/concepts/about-cdn"
+    "/ru/networks/cdn/service-management/create-resource",
+    "http://localhost:3000/docs/ru/networks/cdn/concepts/about"
   ],
   [
-    "/ru/networks/cdn/instructions/create-resource",
+    "/ru/networks/cdn/service-management/create-resource",
     "http://localhost:3000/docs/ru/networks/cdn/concepts/origin-groups"
   ],
   [
-    "/ru/networks/cdn/instructions/create-resource",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-certificates"
+    "/ru/networks/cdn/service-management/create-resource",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-certificates"
   ],
   [
-    "/ru/networks/cdn/instructions/create-resource",
+    "/ru/networks/cdn/service-management/create-resource",
     "http://localhost:3000/docs/ru/additionals/api/api-cdn"
   ],
   [
-    "/ru/networks/cdn/instructions/create-resource",
+    "/ru/networks/cdn/service-management/create-resource",
     "http://localhost:3000/docs/ru/base/s3/instructions/buckets/create-bucket"
   ],
   [
-    "/ru/networks/cdn/instructions/create-resource",
+    "/ru/networks/cdn/service-management/create-resource",
     "http://localhost:3000/docs/ru/base/s3/instructions/objects/upload-object"
   ],
   [
-    "/ru/networks/cdn/instructions/create-resource",
+    "/ru/networks/cdn/service-management/create-resource",
     "http://localhost:3000/docs/ru/networks/dns/publicdns#dobavlenie_resursnyh_zapisey"
   ],
   [
-    "/ru/networks/cdn/instructions/create-resource",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/upload-content"
+    "/ru/networks/cdn/service-management/create-resource",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/upload-content"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/enable-cdn",
-    "http://localhost:3000/docs/ru/networks/cdn/concepts/about-cdn"
+    "/ru/networks/cdn/service-management/manage-cdn/enable-cdn",
+    "http://localhost:3000/docs/ru/networks/cdn/concepts/about"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/origin-settings",
+    "/ru/networks/cdn/service-management/manage-cdn/origin-settings",
     "http://localhost:3000/docs/ru/networks/cdn/concepts/origin-groups"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/origin-settings",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-cdn/content-settings"
+    "/ru/networks/cdn/service-management/manage-cdn/origin-settings",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-cdn/content-settings"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/ssl",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-certificates"
+    "/ru/networks/cdn/service-management/manage-cdn/ssl",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-certificates"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/ssl",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-cdn/enable-cdn"
+    "/ru/networks/cdn/service-management/manage-cdn/ssl",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-cdn/enable-cdn"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/ssl",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-certificates"
+    "/ru/networks/cdn/service-management/manage-cdn/ssl",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-certificates"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/ssl",
+    "/ru/networks/cdn/service-management/manage-cdn/ssl",
     "http://localhost:3000/docs/ru/additionals/api/api-cdn"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/ssl",
+    "/ru/networks/cdn/service-management/manage-cdn/ssl",
     "http://localhost:3000/docs/ru/additionals/api/api-cdn"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/http-headers",
+    "/ru/networks/cdn/service-management/manage-cdn/http-headers",
     "http://localhost:3000/docs/ru/base/s3/references#cors"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/content-settings",
+    "/ru/networks/cdn/service-management/manage-cdn/content-settings",
     "http://localhost:3000/docs/ru/additionals/api/api-cdn"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/content-settings",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-cdn/content-settings#ochistka_kesha"
+    "/ru/networks/cdn/service-management/manage-cdn/content-settings",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-cdn/content-settings#ochistka_kesha"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/content-settings",
+    "/ru/networks/cdn/service-management/manage-cdn/content-settings",
     "http://localhost:3000/docs/ru/additionals/api/api-cdn"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/content-settings",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-cdn/content-settings#optimizaciya_dostavki_bolshih_faylov"
+    "/ru/networks/cdn/service-management/manage-cdn/content-settings",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-cdn/content-settings#optimizaciya_dostavki_bolshih_faylov"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/content-settings",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-cdn/content-settings#optimizaciya_dostavki_bolshih_faylov"
+    "/ru/networks/cdn/service-management/manage-cdn/content-settings",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-cdn/content-settings#optimizaciya_dostavki_bolshih_faylov"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/content-settings",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-cdn/content-settings#optimizaciya_dostavki_bolshih_faylov"
+    "/ru/networks/cdn/service-management/manage-cdn/content-settings",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-cdn/content-settings#optimizaciya_dostavki_bolshih_faylov"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/content-settings",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-cdn/content-settings#szhatie_na_istochnike"
+    "/ru/networks/cdn/service-management/manage-cdn/content-settings",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-cdn/content-settings#szhatie_na_istochnike"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/content-settings",
+    "/ru/networks/cdn/service-management/manage-cdn/content-settings",
     "http://localhost:3000/docs/ru/additionals/api/api-cdn"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-cdn/content-settings",
+    "/ru/networks/cdn/service-management/manage-cdn/content-settings",
     "http://localhost:3000/docs/ru/additionals/api/api-cdn"
   ],
   [
-    "/ru/networks/cdn/instructions/upload-content",
-    "http://localhost:3000/docs/ru/networks/cdn/concepts/about-cdn"
+    "/ru/networks/cdn/service-management/upload-content",
+    "http://localhost:3000/docs/ru/networks/cdn/concepts/about"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-origin-groups",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-origin-groups#dobavlenie_istochnika_v_gruppu"
+    "/ru/networks/cdn/service-management/manage-origin-groups",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-origin-groups#dobavlenie_istochnika_v_gruppu"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-origin-groups",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-origin-groups#redaktirovanie_istochnikov_v_gruppe"
+    "/ru/networks/cdn/service-management/manage-origin-groups",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-origin-groups#redaktirovanie_istochnikov_v_gruppe"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-origin-groups",
+    "/ru/networks/cdn/service-management/manage-origin-groups",
     "http://localhost:3000/docs/ru/networks/cdn/concepts/origin-groups"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-origin-groups",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/create-resource"
+    "/ru/networks/cdn/service-management/manage-origin-groups",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/create-resource"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-origin-groups",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-origin-groups#dobavlenie_istochnika_v_gruppu"
+    "/ru/networks/cdn/service-management/manage-origin-groups",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-origin-groups#dobavlenie_istochnika_v_gruppu"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-origin-groups",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-origin-groups#redaktirovanie_istochnikov_v_gruppe"
+    "/ru/networks/cdn/service-management/manage-origin-groups",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-origin-groups#redaktirovanie_istochnikov_v_gruppe"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-origin-groups",
+    "/ru/networks/cdn/service-management/manage-origin-groups",
     "http://localhost:3000/docs/ru/networks/cdn/concepts/origin-groups"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-origin-groups",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/delete-resource"
+    "/ru/networks/cdn/service-management/manage-origin-groups",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/delete-resource"
   ],
   [
-    "/ru/networks/cdn/instructions/manage-certificates",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/manage-cdn/ssl"
+    "/ru/networks/cdn/service-management/manage-certificates",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/manage-cdn/ssl"
   ],
   [
-    "/ru/networks/cdn/instructions/delete-resource",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/delete-resource#udalenie_cherez_interfeys_servisa_cdn"
+    "/ru/networks/cdn/service-management/delete-resource",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/delete-resource#udalenie_cherez_interfeys_servisa_cdn"
   ],
   [
-    "/ru/networks/cdn/instructions/delete-resource",
+    "/ru/networks/cdn/service-management/delete-resource",
     "http://localhost:3000/docs/ru/base/s3"
   ],
   [
-    "/ru/networks/cdn/instructions/delete-resource",
-    "http://localhost:3000/docs/ru/networks/cdn/instructions/create-resource#sozdanie_cherez_interfeys_baketa"
+    "/ru/networks/cdn/service-management/delete-resource",
+    "http://localhost:3000/docs/ru/networks/cdn/service-management/create-resource#sozdanie_cherez_interfeys_baketa"
   ],
   [
     "/ru/networks/cdn/monitoring",
@@ -11353,7 +11353,7 @@
   ],
   [
     "/ru/storage/s3/quick-start",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/objects/signed-url"
+    "http://localhost:3000/docs/ru/storage/s3/service-management/objects/signed-url"
   ],
   [
     "/ru/storage/s3/quick-start",
@@ -11365,14 +11365,14 @@
   ],
   [
     "/ru/storage/s3/quick-start",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/objects/manage-object"
+    "http://localhost:3000/docs/ru/storage/s3/service-management/objects/manage-object"
   ],
   [
     "/ru/storage/s3/quick-start",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/manage-bucket#udalenie_baketa"
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/manage-bucket#udalenie_baketa"
   ],
   [
-    "/ru/storage/s3/concepts/intro",
+    "/ru/storage/s3/concepts/about",
     "http://localhost:3000/docs/ru/manage/backups"
   ],
   [
@@ -11381,7 +11381,7 @@
   ],
   [
     "/ru/storage/s3/concepts/about-s3-api",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
     "/ru/storage/s3/concepts/about-s3-api",
@@ -11389,590 +11389,590 @@
   ],
   [
     "/ru/storage/s3/concepts/about-s3-api",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-cli",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/access-management/access-keys"
+    "/ru/storage/s3/connect/s3-cli",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/access-keys"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-cli",
+    "/ru/storage/s3/connect/s3-cli",
     "http://localhost:3000/docs/ru/tools-for-using-services/cli/aws-cli"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-cli",
+    "/ru/storage/s3/connect/s3-cli",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-cli",
+    "/ru/storage/s3/connect/s3-cli",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-file-managers",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/access-management/access-keys"
+    "/ru/storage/s3/connect/s3-file-managers",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/access-keys"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-file-managers",
+    "/ru/storage/s3/connect/s3-file-managers",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-file-managers",
-    "http://localhost:3000/docs/ru/storage/s3/references#acl"
+    "/ru/storage/s3/connect/s3-file-managers",
+    "http://localhost:3000/docs/ru/storage/s3/reference#acl"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-file-managers",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/access-management/access-keys"
+    "/ru/storage/s3/connect/s3-file-managers",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/access-keys"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-file-managers",
+    "/ru/storage/s3/connect/s3-file-managers",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-file-managers",
-    "http://localhost:3000/docs/ru/storage/s3/references#klass_hraneniya"
+    "/ru/storage/s3/connect/s3-file-managers",
+    "http://localhost:3000/docs/ru/storage/s3/reference#klass_hraneniya"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-file-managers",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/access-management/access-keys"
+    "/ru/storage/s3/connect/s3-file-managers",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/access-keys"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-file-managers",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/create-bucket"
+    "/ru/storage/s3/connect/s3-file-managers",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-file-managers",
-    "http://localhost:3000/docs/ru/storage/s3/references#klass_hraneniya"
+    "/ru/storage/s3/connect/s3-file-managers",
+    "http://localhost:3000/docs/ru/storage/s3/reference#klass_hraneniya"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-file-managers",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/access-management/access-keys"
+    "/ru/storage/s3/connect/s3-file-managers",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/access-keys"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-file-managers",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/create-bucket"
+    "/ru/storage/s3/connect/s3-file-managers",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-file-managers",
+    "/ru/storage/s3/connect/s3-file-managers",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-file-managers",
-    "http://localhost:3000/docs/ru/storage/s3/references#klass_hraneniya"
+    "/ru/storage/s3/connect/s3-file-managers",
+    "http://localhost:3000/docs/ru/storage/s3/reference#klass_hraneniya"
   ],
   [
-    "/ru/storage/s3/storage-connecting/s3-sdk",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/create-bucket"
+    "/ru/storage/s3/connect/s3-sdk",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/create-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/references#baket"
+    "/ru/storage/s3/service-management/buckets/create-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/reference#baket"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/create-bucket",
+    "/ru/storage/s3/service-management/buckets/create-bucket",
     "http://localhost:3000/docs/ru/storage/s3/tariffication"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/create-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/change-storage-class"
+    "/ru/storage/s3/service-management/buckets/create-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/change-storage-class"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/create-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "/ru/storage/s3/service-management/buckets/create-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/create-bucket",
+    "/ru/storage/s3/service-management/buckets/create-bucket",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/create-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/references#klass_hraneniya"
+    "/ru/storage/s3/service-management/buckets/create-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/reference#klass_hraneniya"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/create-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/buckets/create-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/create-bucket",
+    "/ru/storage/s3/service-management/buckets/create-bucket",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/create-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/buckets/create-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/create-bucket",
+    "/ru/storage/s3/service-management/buckets/create-bucket",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/manage-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "/ru/storage/s3/service-management/buckets/manage-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/manage-bucket",
+    "/ru/storage/s3/service-management/buckets/manage-bucket",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/manage-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/buckets/manage-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/manage-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/buckets/manage-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/manage-bucket",
+    "/ru/storage/s3/service-management/buckets/manage-bucket",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/manage-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/buckets/manage-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/manage-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/buckets/manage-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/manage-bucket",
+    "/ru/storage/s3/service-management/buckets/manage-bucket",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/manage-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/manage-bucket#dobavlenie_vebhuka_7b84d9a6"
+    "/ru/storage/s3/service-management/buckets/manage-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/manage-bucket#dobavlenie_vebhuka_7b84d9a6"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/manage-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "/ru/storage/s3/service-management/buckets/manage-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/manage-bucket",
+    "/ru/storage/s3/service-management/buckets/manage-bucket",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/manage-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/manage-bucket#dobavlenie_pravila_1a844f06"
+    "/ru/storage/s3/service-management/buckets/manage-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/manage-bucket#dobavlenie_pravila_1a844f06"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/manage-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/objects/manage-object#udalenie_obekta"
+    "/ru/storage/s3/service-management/buckets/manage-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/objects/manage-object#udalenie_obekta"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/manage-bucket",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "/ru/storage/s3/service-management/buckets/manage-bucket",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/manage-bucket",
+    "/ru/storage/s3/service-management/buckets/manage-bucket",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/buckets/bucket-keys",
+    "/ru/storage/s3/service-management/buckets/bucket-keys",
     "http://localhost:3000/docs/ru/tools-for-using-services/cli/aws-cli/"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/references#sostavnaya_zagruzka"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/reference#sostavnaya_zagruzka"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/create-bucket"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/access-management/s3-acl#fiksirovannyy_acl"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/s3-acl#fiksirovannyy_acl"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/create-bucket"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
+    "/ru/storage/s3/service-management/objects/upload-object",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/references#klass_hraneniya"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/reference#klass_hraneniya"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/access-management/s3-acl#fiksirovannyy_acl"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/s3-acl#fiksirovannyy_acl"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/create-bucket"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
+    "/ru/storage/s3/service-management/objects/upload-object",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
+    "/ru/storage/s3/service-management/objects/upload-object",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/object-api#upload"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/create-bucket"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
+    "/ru/storage/s3/service-management/objects/upload-object",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/create-bucket"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
+    "/ru/storage/s3/service-management/objects/upload-object",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/create-bucket"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
+    "/ru/storage/s3/service-management/objects/upload-object",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/create-bucket"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
+    "/ru/storage/s3/service-management/objects/upload-object",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
+    "/ru/storage/s3/service-management/objects/upload-object",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#initiate_multipart_upload"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
+    "/ru/storage/s3/service-management/objects/upload-object",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#upload_part"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
+    "/ru/storage/s3/service-management/objects/upload-object",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#list_parts"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
+    "/ru/storage/s3/service-management/objects/upload-object",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/multipart-api#complete_multipart_upload"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/create-bucket"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/instructions/objects/upload-object",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/buckets/create-bucket"
+    "/ru/storage/s3/service-management/objects/upload-object",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/access-management/s3-acl"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/s3-acl"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/objects/signed-url"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/objects/signed-url"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-sdk"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-sdk"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/storage/s3/tariffication"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/references#zhiznennyy_cikl"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/reference#zhiznennyy_cikl"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
-    "http://localhost:3000/docs/ru/storage/s3/storage-connecting/s3-cli"
+    "/ru/storage/s3/service-management/objects/manage-object",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/objects/manage-object",
+    "/ru/storage/s3/service-management/objects/manage-object",
     "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
-    "/ru/storage/s3/instructions/change-storage-class",
-    "http://localhost:3000/docs/ru/storage/s3/concepts/intro#klassy_hraneniya_baketa"
+    "/ru/storage/s3/service-management/change-storage-class",
+    "http://localhost:3000/docs/ru/storage/s3/concepts/about#klassy_hraneniya_baketa"
   ],
   [
-    "/ru/storage/s3/instructions/change-storage-class",
+    "/ru/storage/s3/service-management/change-storage-class",
     "http://localhost:3000/docs/ru/storage/s3/tariffication"
   ],
   [
-    "/ru/storage/s3/instructions/change-storage-class",
+    "/ru/storage/s3/service-management/change-storage-class",
     "http://localhost:3000/docs/ru/base/s3/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/instructions/change-storage-class",
+    "/ru/storage/s3/service-management/change-storage-class",
     "http://localhost:3000/docs/ru/base/s3/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/instructions/change-storage-class",
+    "/ru/storage/s3/service-management/change-storage-class",
     "http://localhost:3000/docs/ru/base/s3/tools/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/change-storage-class",
+    "/ru/storage/s3/service-management/change-storage-class",
     "http://localhost:3000/docs/ru/base/s3/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/instructions/change-storage-class",
+    "/ru/storage/s3/service-management/change-storage-class",
     "http://localhost:3000/docs/ru/base/s3/tools/s3-cli"
   ],
   [
-    "/ru/storage/s3/instructions/access-management/access-keys",
+    "/ru/storage/s3/service-management/access-management/access-keys",
     "http://localhost:3000/docs/ru/base/account/concepts/quotasandlimits#cloud_storage_61a20957"
   ],
   [
-    "/ru/storage/s3/instructions/access-management/access-keys",
-    "http://localhost:3000/docs/ru/storage/s3/references#prefiksnye_klyuchi"
+    "/ru/storage/s3/service-management/access-management/access-keys",
+    "http://localhost:3000/docs/ru/storage/s3/reference#prefiksnye_klyuchi"
   ],
   [
-    "/ru/storage/s3/instructions/access-management/access-keys",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/access-management/access-keys#udalenie_klyucha_dostupa"
+    "/ru/storage/s3/service-management/access-management/access-keys",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/access-keys#udalenie_klyucha_dostupa"
   ],
   [
-    "/ru/storage/s3/use-cases/load-large-image",
+    "/ru/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/ru/base/account/concepts/quotasandlimits"
   ],
   [
-    "/ru/storage/s3/use-cases/load-large-image",
+    "/ru/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/ru/additionals/migration/"
   ],
   [
-    "/ru/storage/s3/use-cases/load-large-image",
+    "/ru/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/ru/base/s3/buckets/create-bucket"
   ],
   [
-    "/ru/storage/s3/use-cases/load-large-image",
+    "/ru/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/ru/base/s3/tools/s3-cli"
   ],
   [
-    "/ru/storage/s3/use-cases/load-large-image",
+    "/ru/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-create"
   ],
   [
-    "/ru/storage/s3/use-cases/load-large-image",
+    "/ru/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/ru/base/iaas/service-management/volumes#podklyuchenie_diska_k_vm"
   ],
   [
-    "/ru/storage/s3/use-cases/load-large-image",
+    "/ru/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix"
   ],
   [
-    "/ru/storage/s3/use-cases/load-large-image",
+    "/ru/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/ru/base/iaas/service-management/images/images-manage#sozdanie_obraza"
   ],
   [
-    "/ru/storage/s3/use-cases/load-large-image",
+    "/ru/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-create"
   ],
   [
-    "/ru/storage/s3/use-cases/load-large-image",
+    "/ru/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/ru/base/iaas/service-management/images/images-manage#udalenie_obraza"
   ],
   [
-    "/ru/storage/s3/use-cases/load-large-image",
+    "/ru/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm"
   ],
   [
-    "/ru/storage/s3/use-cases/load-large-image",
+    "/ru/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/ru/base/iaas/service-management/volumes#udalenie_diska"
   ],
   [
@@ -11981,7 +11981,7 @@
   ],
   [
     "/ru/storage/s3/tariffication",
-    "http://localhost:3000/docs/ru/storage/s3/concepts/intro#klassy_hraneniya_baketa"
+    "http://localhost:3000/docs/ru/storage/s3/concepts/about#klassy_hraneniya_baketa"
   ],
   [
     "/ru/storage/s3/tariffication",
@@ -16901,7 +16901,7 @@
   ],
   [
     "/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro",
-    "http://localhost:3000/docs/ru/storage/s3/instructions/access-management"
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management"
   ],
   [
     "/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro",
