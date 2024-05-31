@@ -13232,6 +13232,18 @@
     "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry#podklyuchenie_k_reestru"
   ],
   [
+    "/ru/kubernetes/k8s/connect/docker-mirror",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry"
+  ],
+  [
+    "/ru/kubernetes/k8s/connect/docker-mirror",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/quick-start#3_zagruzite_nuzhnye_obrazy_v_reestr_docker"
+  ],
+  [
+    "/ru/kubernetes/k8s/connect/docker-mirror",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-resources"
+  ],
+  [
     "/ru/kubernetes/k8s/connect/addons-ui",
     "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/addons/manage-addons"
   ],
