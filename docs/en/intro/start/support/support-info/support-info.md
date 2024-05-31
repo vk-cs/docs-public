@@ -23,10 +23,24 @@ SLA indicators are given in the article [SLA](../sla/).
 
 ## Stages of service readiness
 
-| Stage | Description  |
-|----------------------|----------------------------------------------------------------------------------------|
-| Beta  | Preliminary service versions at the testing stage. They are suitable for developers who are ready to use the services, the stability of which is not guaranteed: failures or incorrect operation of some functions are possible.<br>The use of service beta versions is not charged. If the beta version of the service during the operation uses any charged VK Cloud service, it is paid according to the [price list](https://cloud.vk.com/pricelist).<br>Technical support for beta versions is limited: providing responses and correcting even critical errors are not guaranteed. Also, the [Service Level Agreement (SLA)](../sla/) is not applied, and the response time is unlimited.<br>Documentation for beta versions may be incomplete or absent|
-| General Availability | Stable versions of services that are available to all users for purchase. They can be fully used to solve problems.<br>These services are subject to billing and the technical support is fully provided according to the [Service Level Agreement (SLA)](../sla/)|
+[cols="1,3", options="header"]
+|===
+| Stage
+| Description
+
+| Beta
+| Preliminary service versions at the testing stage. They are suitable for developers who are ready to use the services, the stability of which is not guaranteed: failures or incorrect operation of some functions are possible.
+
+The use of service beta versions is not charged. If the beta version of the service during the operation uses any charged VK Cloud service, it is paid according to the [price list](https://cloud.vk.com/pricelist).
+
+Technical support for beta versions is limited: providing responses and correcting even critical errors are not guaranteed. Also, the [Service Level Agreement (SLA)](../sla/) is not applied, and the response time is unlimited.<br>Documentation for beta versions may be incomplete or absent
+
+| General Availability
+| Stable versions of services that are available to all users for purchase. They can be fully used to solve problems.
+
+These services are subject to billing and the technical support is fully provided according to the [Service Level Agreement (SLA)](../sla/)
+
+|===
 
 ## Support competencies
 
