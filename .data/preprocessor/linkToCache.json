@@ -1,4 +1,9 @@
 {
+  "cpu_generations": {
+    "number": null,
+    "full": "Поколения процессоров",
+    "text": "Поколения процессоров"
+  },
   "az": {
     "number": null,
     "full": "Зоны доступности",

@@ -1081,6 +1081,14 @@
   ],
   [
     "/en/base/iaas/concepts/about",
+    "http://localhost:3000/docs/en/base/iaas/concepts/about#cpu_generations"
+  ],
+  [
+    "/en/base/iaas/concepts/about",
+    "http://localhost:3000/docs/en/base/gpu/about"
+  ],
+  [
+    "/en/base/iaas/concepts/about",
     "http://localhost:3000/docs/en/base/iaas/tariffication"
   ],
   [
@@ -6941,6 +6949,14 @@
   ],
   [
     "/en/tools-for-using-services/account/concepts/quotasandlimits",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
+  ],
+  [
+    "/en/tools-for-using-services/account/concepts/quotasandlimits",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
+  ],
+  [
+    "/en/tools-for-using-services/account/concepts/quotasandlimits",
     "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/quotasandlimits#common_4cc7e93b"
   ],
   [
@@ -6961,151 +6977,27 @@
   ],
   [
     "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
     "http://localhost:3000/docs/en/base/k8s/concepts/architecture#cluster_topologies"
   ],
   [
     "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
+    "http://localhost:3000/docs/en/additionals/start/it-security/platform-security"
   ],
   [
     "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
+    "http://localhost:3000/docs/en/additionals/start/it-security/platform-security"
   ],
   [
     "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
+    "http://localhost:3000/docs/en/additionals/start/it-security/platform-security"
   ],
   [
     "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
+    "http://localhost:3000/docs/en/additionals/start/it-security/platform-security"
   ],
   [
     "/en/tools-for-using-services/account/concepts/quotasandlimits",
     "http://localhost:3000/docs/en/base/s3/use-cases/load-large-image"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
-  ],
-  [
-    "/en/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#viewing_project_quotas"
   ],
   [
     "/en/tools-for-using-services/account/concepts/quotasandlimits",
@@ -9278,6 +9170,14 @@
   [
     "/ru/base/iaas/concepts/new-volume-sla",
     "http://localhost:3000/docs/ru/base/iaas/instructions/volumes#zamena_osnovnogo_root_diska"
+  ],
+  [
+    "/ru/base/iaas/concepts/about",
+    "http://localhost:3000/docs/ru/base/iaas/concepts/about#cpu_generations"
+  ],
+  [
+    "/ru/base/iaas/concepts/about",
+    "http://localhost:3000/docs/ru/base/gpu/about"
   ],
   [
     "/ru/base/iaas/concepts/about",
@@ -16317,6 +16217,14 @@
   ],
   [
     "/ru/tools-for-using-services/account/concepts/quotasandlimits",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
+  ],
+  [
+    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
+  ],
+  [
+    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/quotasandlimits#obshchie_d4f726f4"
   ],
   [
@@ -16337,155 +16245,19 @@
   ],
   [
     "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
     "http://localhost:3000/docs/ru/base/k8s/concepts/architecture#topologii_klastera"
   ],
   [
     "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
+    "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
   [
     "/ru/tools-for-using-services/account/concepts/quotasandlimits",
     "http://localhost:3000/docs/ru/base/s3/use-cases/load-large-image"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/concepts/quotasandlimits",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#prosmotr_kvot_proekta"
   ],
   [
     "/ru/tools-for-using-services/account/concepts/quotasandlimits",
