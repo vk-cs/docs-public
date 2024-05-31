@@ -13560,6 +13560,21 @@
     ]
   },
   {
+    "uuid": "432f4242-e00d-4655-be7d-b490b6333052",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/kubernetes/k8s/connect/docker-mirror",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/connect/docker-mirror/docker-mirror.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/connect/docker-mirror/docker-mirror.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "8a5d5116-dc2f-464e-afbc-5846a6a6bae4",
     "lang": "ru",
     "type": "ARTICLE",

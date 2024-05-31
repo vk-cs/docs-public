@@ -311,6 +311,7 @@
 /docs/ru/kubernetes/k8s/connect/kubectl
 /docs/ru/kubernetes/k8s/connect/k8s-dashboard
 /docs/ru/kubernetes/k8s/connect/docker-registry
+/docs/ru/kubernetes/k8s/connect/docker-mirror
 /docs/ru/kubernetes/k8s/connect/addons-ui
 /docs/ru/kubernetes/k8s/service-management
 /docs/ru/kubernetes/k8s/service-management/create-cluster
