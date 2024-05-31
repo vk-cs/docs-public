@@ -83,7 +83,33 @@ The Company guarantees the continuous operation of the Service, provided that th
 
 If the Service is unavailable, the Company undertakes to pay the User Compensation, the amount of which is determined on the basis of the table below (hereinafter referred to as the Table):
 
-<table cellpadding="0" cellspacing="0"><tbody><tr><td style="text-align: center;" valign="middle"><p><strong>Availability time (in%) *</strong></p></td><td style="text-align: center;" valign="middle"><p><strong>Unavailability time (min. Or hour) in one Reporting period in total</strong></p></td><td style="text-align: center;" valign="middle"><p><strong>Compensation Amount</strong></p></td></tr><tr><td valign="middle"><p>99.95% and above</p></td><td valign="middle"><p>less than 45 minutes</p></td><td valign="middle"><p>not paid</p></td></tr><tr><td valign="middle"><p>99.9%–99.95%</p></td><td valign="middle"><p>45 minutes to 7.3 hours (438 minutes)</p></td><td valign="middle"><p>3% of the amount debited from the Personal Balance for the Reporting Period in which Downtime was</p></td></tr><tr><td valign="middle"><p>99.0%–99.9%</p></td><td valign="middle"><p>from 7.3 to 36 hours</p></td><td valign="middle"><p>10% of the amount debited from the Personal Balance for the Reporting Period in which Downtime was</p></td></tr><tr><td valign="middle"><p>95.0%–99.0%</p></td><td valign="middle"><p>from 36 to 73 hours</p></td><td valign="middle"><p>20% of the amount debited from the Personal Balance for the Reporting Period in which Downtime was</p></td></tr><tr><td valign="middle"><p>Less than 95%</p></td><td valign="middle"><p>more than 73 hours</p></td><td valign="middle"><p>50% of the amount debited from the Personal Balance for the Reporting Period in which Downtime was</p></td></tr></tbody></table>
+[cols="1,2,3", options="header"]
+|===
+| Availability time (in%)\*
+| Unavailability time (min. Or hour) in one Reporting period in total
+| Compensation Amount
+
+| 99.95% and above
+| less than 45 minutes
+| not paid
+
+| 99,9%–99,95%
+| 45 minutes to 7.3 hours (438 minutes)
+| 3% of the amount debited from the Personal Balance for the Reporting Period in which Downtime was
+
+| 99,0%–99,9%
+| from 7.3 to 36 hours
+| 10% of the amount debited from the Personal Balance for the Reporting Period in which Downtime was
+
+| 95,0%–99,0%
+| from 36 to 73 hours
+| 20% of the amount debited from the Personal Balance for the Reporting Period in which Downtime was
+
+| 90,0%–95,0%
+| more than 73 hours
+| 50% of the amount debited from the Personal Balance for the Reporting Period in which Downtime was
+
+|===
 
 _\* Calculated based on 43 800 minutes in the Reporting Period_
 
