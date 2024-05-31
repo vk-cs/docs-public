@@ -44,15 +44,41 @@ On the VK Cloud platform, the number of processors and the amount of RAM of the 
 
 VMs are grouped into categories in a personal account:
 
-| Category | Description | Display condition |
-| --- | --- | --- |
-| Intel Cascade Lake (Intel Xeon Gen 2) | VMs located on servers with Intel Cascade Lake CPU | Available by default |
-| Intel Ice Lake (Intel Xeon Gen 3) | VMs located on servers with Intel Ice Lake CPU | Available by default |
-| Archived VM types (legacy)| Old VM configuration templates | Not displayed by default filtration |
-| High-performance CPU |  VMs located on [servers](#cpu_generations) with increased CPU clock speed | Displayed when ordering the types of VM through [technical support](/en/contacts) |
-| Virtual machines with GPU | VMs with connected [graphics card](../../../gpu/about/) | Displayed when ordering the types of VM through [cloud.vk.com](https://cloud.vk.com/en/) |
-| VMs with local disks | VMs with the ability to use local hypervisor disks | Displayed when ordering the types of VM through [technical support](/en/contacts) |
-| VMs located on dedicated servers | VMs located on hypervisors dedicated to the needs of one client | Displayed when ordering the types of VM through your manager |
+[cols="30%,30%,40%", options="header"]
+|===
+| Category
+| Description
+| Display condition
+
+| Intel Cascade Lake (Intel Xeon Gen 2)
+| VMs located on servers with Intel Cascade Lake CPU
+| Available by default
+
+| Intel Ice Lake (Intel Xeon Gen 3)
+| VMs located on servers with Intel Ice Lake CPU
+| Available by default
+
+| Archived VM types (legacy)
+| Old VM configuration templates
+| Not displayed by default filtration
+
+| High-performance CPU
+| VMs located on [servers](#cpu_generations) with increased CPU clock speed
+| Displayed when ordering the types of VM through [technical support](/en/contacts)
+
+| Virtual machines with GPU
+| VMs with connected [graphics card](../../../gpu/about/)
+| Displayed when ordering the types of VM through [cloud.vk.com](https://cloud.vk.com/en/)
+
+| VMs with local disks
+| VMs with the ability to use local hypervisor disks
+| Displayed when ordering the types of VM through [technical support](/en/contacts)
+
+| VMs located on dedicated servers
+| VMs located on hypervisors dedicated to the needs of one client
+| Displayed when ordering the types of VM through your manager
+
+|===
 
 By default, only actual configuration templates are displayed: on servers with Intel Cascade Lake and Intel Ice Lake CPUs, as well as VMs with a connected graphics card, on high-performance or dedicated servers, if they were added to the project.
 
@@ -95,7 +121,7 @@ Examples:
 | STD3-4-8 | VM with Intel Ice Lake processor, 4 vCPU and 8 GB RAM |
 | GPU1A-32-96-A100-1 | VM with AMD EPYC 7662 processor and one connected Nvidia Tesla A10040GB graphics card |
 
-### CPU generations
+### {heading(CPU generations)[id=cpu_generations]}
 
 The performance of a VM depends on the resources of the host on which it is hosted. The VK Cloud platform provides server hardware that allows you to configure VMs of different performance levels.
 
@@ -134,12 +160,34 @@ If the VM and disk are located in different availability zones, the disk access 
 
 The VK Cloud platform supports various types of disks:
 
-| Disk Type | Name in the API | Availability zones | Description |
-|-----------|----------------|------------------|----------|
-| Network HDD | ceph-hdd | MS1, GZ1, ME1 | An ordinary magnetic hard drive. Suitable for storing large amounts of information. Triple replication to different storage servers |
-| Network SSD | ceph-ssd | MS1, GZ1, ME1 | Solid-state drive. High speed of reading and writing information. The performance is higher than that of HDD. Triple replication to different storage servers |
-| Network<br/>High-IOPS SSD | high-iops | MS1, GZ1, ME1 | SSD with increased speed of operation. Double replication: both copies are on the same storage server |
-| Local<br/>Low Latency NVME | ef-nvme | nova | SSD, which is located on the same hypervisor with the VM. High-speed operation and fast response. Double replication: both copies are on the same hypervisor |
+[cols="2,1,2,4", options="header"]
+|===
+| Disk Type
+| Name in the API
+| Availability zones
+| Description
+
+| Network HDD
+| ceph-hdd
+| `MS1`, `GZ1`, `ME1`
+| An ordinary magnetic hard drive. Suitable for storing large amounts of information. Triple replication to different storage servers
+
+| Network SSD
+| ceph-ssd
+| `MS1`, `GZ1`, `ME1`
+| Solid-state drive. High speed of reading and writing information. The performance is higher than that of HDD. Triple replication to different storage servers
+
+| Network High-IOPS SSD
+| high-iops
+| `MS1`, `GZ1`, `ME1`
+| SSD with increased speed of operation. Double replication: both copies are on the same storage server
+
+| Local Low Latency NVME
+| ef-nvme
+| nova
+| SSD, which is located on the same hypervisor with the VM. High-speed operation and fast response. Double replication: both copies are on the same hypervisor
+
+|===
 
 <details>
    <summary>Information about outdated resource names</summary>
