@@ -218,15 +218,15 @@ Quotas for the total number of disks in the project take into account all types 
 
 | Parameter                  | Limit | Hard |
 |---------------------------|---------|---|
-| Number of disks per instance  | 28 pcs.| &#10003; |
-| Size of one HDD              | 50 TB | &#10003; |
-| Size of one SSD disk              | 10 TB | &#10003; |
+| Number of disks per instance  | 25 pcs.| + |
+| Size of one HDD              | 50 TB | + |
+| Size of one SSD disk              | 10 TB | + |
 | Size of one High-IOPS SSD disk    | 2 TБ via VK Cloud personal account, 5 TB via OpenStack CLI | — |
 | Size of a single image                 | 500 GB | — |
 | Total volume of images                  | 2 TB | — |
 | Total number of disks snapshots         | 200 pcs. | — |
 
-The limit on the number of disks per instance (28 pcs.) is associated with PCI bus limitations.
+The limit on the number of disks per instance (25 pcs.) is associated with PCI bus limitations.
 
 The limit on the size of one image (500 GB) is a hard limit for the Glance service. If you need to download a larger image, use the [instruction](/en/base/s3/use-cases/load-large-image).
 
