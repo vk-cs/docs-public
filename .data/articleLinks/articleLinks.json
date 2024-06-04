@@ -15080,6 +15080,22 @@
     "http://localhost:3000/docs/ru/base/k8s"
   ],
   [
+    "/ru/ml/spark-to-k8s/concepts/about",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/operations/addons/advanced-installation/install-advanced-registry"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/concepts/about",
+    "http://localhost:3000/docs/ru/manage/monitoring"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/concepts/about",
+    "http://localhost:3000/docs/ru/storage/s3"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/concepts/about",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library"
+  ],
+  [
     "/ru/ml/spark-to-k8s/instructions/create",
     "http://localhost:3000/docs/ru/additionals/start/architecture#az"
   ],
