@@ -87,6 +87,7 @@
 /docs/en/base/cloud-desktops/concepts
 /docs/en/base/cloud-desktops/concepts/about
 /docs/en/base/cloud-desktops/concepts/glossary
+/docs/en/base/cloud-desktops/concepts/desktop-image
 /docs/en/base/cloud-desktops/service-management
 /docs/en/base/cloud-desktops/service-management/config
 /docs/en/base/cloud-desktops/service-management/desktops-pool
@@ -96,6 +97,7 @@
 /docs/en/base/cloud-desktops/service-management/delete-vdi
 /docs/en/base/cloud-desktops/how-to-guides
 /docs/en/base/cloud-desktops/how-to-guides/ipsec
+/docs/en/base/cloud-desktops/how-to-guides/check-desktop-image
 /docs/en/base/cloud-desktops/tariffication
 /docs/en/base/cloud-desktops/faq
 /docs/en/base/vm-licenses
