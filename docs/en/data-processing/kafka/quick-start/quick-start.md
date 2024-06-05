@@ -174,7 +174,7 @@ The instance of Cloud Kafka is [charged](../tariffication) and consumes computin
 
    The message means that the Cloud Kafka instance works correctly.
 
-1. Shut down the clients by pressing the keyboard shortcut _Ctrl_ + _C_ in both terminal sessions.
+1. Shut down the clients by pressing the keyboard shortcut CTRL+C in both terminal sessions.
 
 </tabpanel>
 </tabs>

@@ -26,7 +26,7 @@
 ssh -i /path/to/key.pem ubuntu@<instance_ip>
 ```
 
-4.  Установите плагины `ingest-geoip` и `ingest-user-agent` для Elasticsearch, они необходимы для совместной работы Kibana и логов Nginx. Для этого, находясь в папке с установленным elasticsearch (по умолчанию для Ubuntu — `/usr/share/elasticsearch/`), выполните команды:
+4.  Установите плагины `ingest-geoip` и `ingest-user-agent` для Elasticsearch, они необходимы для совместной работы Kibana и логов Nginx. Для этого, находясь в директории с установленным elasticsearch (по умолчанию для Ubuntu — `/usr/share/elasticsearch/`), выполните команды:
 
 ```bash
 bin/elasticsearch-plugin install ingest-geoip

@@ -123,26 +123,26 @@ For Kubernetes clusters of version 1.23 and later, the role of a Kubernetes admi
 
 <info>
 
-Some of the actions below are available only in the certain state of a cluster. For example, installing or deleting an addon is possible only when a cluster is running.
+Some of the actions below are available only in the certain state of a cluster. For example, installing or deleting an add-on is possible only when a cluster is running.
 
 </info>
 
 <!-- prettier-ignore -->
-| Operation/Role |  Kubernetes<br>administrator | Kubernetes<br>operator | Kubernetes<br>auditor | Viewer |
-| -------------- | ---------------------------  | ---------------------- | --------------------- | ------ |
-| Create a cluster                                      | &#10003; | —        | —        | — |
-| Delete a cluster                                      | &#10003; | —        | —        | — |
-| Start a cluster                                       | &#10003; | &#10003; | —        | — |
-| Stop a cluster                                        | &#10003; | &#10003; | —        | — |
-| Show information about<br>a cluster and node groups   | &#10003; | &#10003; | &#10003; | &#10003; |
-| Get kubeconfig                                        | &#10003; | &#10003; | &#10003; | — |
-| Get the secret to access<br>the Kubernetes Dashboard  | &#10003; | &#10003; | &#10003; | &#10003; |
-| Update version                                        | &#10003; | &#10003; | —        | — |
-| Change the virtual machine type                       | &#10003; | &#10003; | —        | — |
-| Change the size of the Prometheus disk                | &#10003; | &#10003; | —        | — |
-| Add a node group                                      | &#10003; | &#10003; | —        | — |
-| Delete a node group                                   | &#10003; | &#10003; | —        | — |
-| Change scaling settings                               | &#10003; | &#10003; | —        | — |
-| Change Labels and Taints                              | &#10003; | &#10003; | —        | — |
-| Install / delete an addon                             | &#10003; | &#10003; | —        | — |
+| Operation/Role                                       |  Kubernetes<br>administrator | Kubernetes<br>operator | Kubernetes<br>auditor | Viewer |
+|------------------------------------------------------| ---------------------------  | ---------------------- | --------------------- | ------ |
+| Create a cluster                                     | &#10003; | —        | —        | — |
+| Delete a cluster                                     | &#10003; | —        | —        | — |
+| Start a cluster                                      | &#10003; | &#10003; | —        | — |
+| Stop a cluster                                       | &#10003; | &#10003; | —        | — |
+| Show information about<br>a cluster and node groups  | &#10003; | &#10003; | &#10003; | &#10003; |
+| Get kubeconfig                                       | &#10003; | &#10003; | &#10003; | — |
+| Get the secret to access<br>the Kubernetes Dashboard | &#10003; | &#10003; | &#10003; | &#10003; |
+| Update version                                       | &#10003; | &#10003; | —        | — |
+| Change the virtual machine type                      | &#10003; | &#10003; | —        | — |
+| Change the size of the Prometheus disk               | &#10003; | &#10003; | —        | — |
+| Add a node group                                     | &#10003; | &#10003; | —        | — |
+| Delete a node group                                  | &#10003; | &#10003; | —        | — |
+| Change scaling settings                              | &#10003; | &#10003; | —        | — |
+| Change Labels and Taints                             | &#10003; | &#10003; | —        | — |
+| Install/delete an add-on                           | &#10003; | &#10003; | —        | — |
 <!-- prettier-ignore -->

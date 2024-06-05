@@ -78,7 +78,7 @@ The [pgBadger](https://pgbadger.darold.net/) extension allows analyzing PostgreS
 
   </warn>
 
-  The reports for a particular DB instance will be stored in a folder with a name that matches the instance identifier. To get the identifier, explore the information about the DB instance.
+  The reports for a particular DB instance will be stored in a directory with a name that matches the instance identifier. To get the identifier, explore the information about the DB instance.
 
 - `period`: the interval between report generation (in hours).
 

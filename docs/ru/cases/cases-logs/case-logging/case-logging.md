@@ -257,7 +257,7 @@ proxy_set_header Host $http_host;
 root@ubuntu-std1-1:/etc/nginx# printf "USER:$(openssl passwd -crypt PASSWORD)\n" >> /etc/nginx/htpasswd
 ```
 
-7.  Для включения сайта создайте симлинк в папку /etc/nginx/sites-enabled:
+7.  Для включения сайта создайте симлинк в директорию `/etc/nginx/sites-enabled`:
 
 ```bash
 root@ubuntu-std1-1:~# ln -s /etc/nginx/sites-available/kibana.conf /etc/nginx/sites-enabled/kibana.conf

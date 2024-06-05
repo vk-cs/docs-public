@@ -215,7 +215,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
          - **Peer Downtime Detection Interval** — at what interval (in seconds) to send test DPD messages.
 
-         - **Time to detect peer unavailable** — if after this timeout (in seconds) no DPD check messages were received from a remote peer, then it is considered unavailable (dead).
+         - **Time to detect peer unavailable** — if after this time-out (in seconds) no DPD check messages were received from a remote peer, then it is considered unavailable (dead).
 
            The default value for this setting is four times the **Peer Downtime Detection Interval**.
 
@@ -466,7 +466,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
    ```bash
     openstack vpn ipsec site connection create <VPN tunnel name> \
-      --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check timeout> \
+      --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check time-out> \
       --initiator <behavior when establishing an IPsec connection: bi-directional, response-only> \
       --peer-address "<VPN peer address>" \
       --peer-id "<VPN peer ID>" \
@@ -484,7 +484,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
    ```powershell
     openstack vpn ipsec site connection create <VPN tunnel name> `
-      --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check timeout> `
+      --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check time-out> `
       --initiator <behavior when establishing an IPsec connection> `
       --peer-address "<VPN peer address>" `
       --peer-id "<VPN peer ID>" `
@@ -712,7 +712,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
    ```bash
     openstack vpn ipsec site connection set <VPN tunnel ID> \
       --name <new VPN tunnel name> \
-      --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check timeout> \
+      --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check time-out> \
       --initiator <behavior when establishing an IPsec connection: bi-directional, response-only> \
       --peer-address "<VPN peer address>" \
       --peer-id "<VPN peer ID>" \
@@ -727,7 +727,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
    ```powershell
     openstack vpn ipsec site connection set <VPN tunnel ID> `
       --name <new VPN tunnel name> `
-      --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check timeout> `
+      --dpd action=<action when peer is unavailable>,interval=<check interval>,timeout <check time-out> `
       --initiator <behavior when establishing an IPsec connection> `
       --peer-address "<VPN peer address>" `
       --peer-id "<VPN peer ID>" `

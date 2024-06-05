@@ -320,12 +320,12 @@ The following options are available when adding or editing a rule:
 
    - **Timeout parameters**:
 
-     - `Client data`: client inactivity timeout.
-     - `Member connect`: backend connection timeout.
-     - `Member data`: backend inactive timeout.
-     - `TCP inspect`: timeout for additional TCP segments during content inspection.
+     - `Client data`: client inactivity time-out.
+     - `Member connect`: backend connection time-out.
+     - `Member data`: backend inactive time-out.
+     - `TCP inspect`: time-out for additional TCP segments during content inspection.
 
-     The timeout values are set in milliseconds. The minimum value is `0`, the maximum value is `2073600000` (576 hours).
+     The time-out values are set in milliseconds. The minimum value is `0`, the maximum value is `2073600000` (576 hours).
 
    - **Send X-Forwarded-For header** (for HTTP and HTTPS balancing protocols only): an option that allows you to enable the corresponding HTTP header to be sent to the backend. By default the option is disabled.
 
@@ -353,7 +353,7 @@ The following options are available when adding or editing a rule:
    - **Method of checking**: TCP or HTTP.
    - **Interval**: check interval in seconds.
    - **Number of attempts**: the number of times to try before the backend is deemed inaccessible.
-   - **Timeout**: timeout in seconds, after which it is considered that the backend does not respond to the check.
+   - **Timeout**: time-out in seconds, after which it is considered that the backend does not respond to the check.
 
    The following parameters are only available for the `HTTP` validation type:
 

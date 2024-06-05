@@ -65,7 +65,7 @@
    sudo systemctl enable apache2 --now
    ```
 
-1. Скачайте репозиторий OpenCart и разверните его в подкаталоге `opencart` на запущенном веб-сервере:
+1. Скачайте репозиторий OpenCart и разверните его в директории `opencart` на запущенном веб-сервере:
 
    ```bash
    cd ~
@@ -94,13 +94,13 @@
 1. Дождитесь завершения установки: появится страница **Installation complete**.
 1. (Опционально) Донастройте OpenCart согласно рекомендациям разработчика ПО:
 
-   1. Удалите каталог `install` с веб-сервера:
+   1. Удалите директорию `install` с веб-сервера:
 
       ```bash
       sudo rm -rf /var/www/html/opencart/install
       ```
 
-   1. Переместите каталог `storage` в `/var/www`:
+   1. Переместите директорию `storage` в `/var/www`:
 
       ```bash
       sudo mv /var/www/html/opencart/system/storage/ /var/www

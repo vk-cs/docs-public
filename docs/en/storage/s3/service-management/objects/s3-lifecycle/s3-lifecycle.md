@@ -4,7 +4,7 @@ The Object Storage service allows you to use an automated mechanism for cleaning
 
 Lifecycle configuration allows you to specify rules for managing the lifecycle of objects in a bucket. A configuration is a set of one or more rules. Each rule specifies the actions to be applied to the service for a group of objects after a specified period.
 
-Object life cycles can be configured only for each individual bucket. You cannot configure lifecycles for a bucket group, catalog, or project.
+Object life cycles can be configured only for each individual bucket. You cannot configure lifecycles for a bucket group, directory, or project.
 
 Lifecycle rules in the VK Cloud panel are managed on the "Lifecycle" tab of the selected bucket.
 

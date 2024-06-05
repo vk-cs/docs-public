@@ -13,7 +13,7 @@ All operations with buckets are characterized by typical error messages, request
 
 GET operations retrieves an object from a bucket. To use GET, you must have READ access to the object. By granting READ access to an anonymous user, you can return an object without using an authorization header.
 
-The bucket does not have a directory hierarchy like the standard file system. However, you can create a logical hierarchy using object key names that imply a folder structure. For example, you can name the object not sample.jpg, but photos / 2020 / August / 01.jpg.
+The bucket does not have a directory hierarchy like the standard file system. However, you can create a logical hierarchy using object key names that imply a directory structure. For example, you can name the object not sample.jpg, but photos / 2020 / August / 01.jpg.
 
 To retrieve an object with this logical hierarchy, you must specify the fully qualified name of the object in the GET operation.
 

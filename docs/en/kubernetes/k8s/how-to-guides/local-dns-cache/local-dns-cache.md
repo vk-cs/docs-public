@@ -13,7 +13,7 @@ Let some [pod](../../reference/pods) initiate a DNS query.
   If DNS queries are mostly sent via UDP protocol, then high load on `kube-dns` (for example, if any application is actively sending DNS queries) may lead to issues:
   
   - Race condition for `conntrack`. This results in significant (up to several times) slowdown of responses to DNS queries.
-  - Overflow of service tables for `conntrack`. Records for UDP are removed from these tables only by timeout (default — 30 seconds). If tables are full, new DNS queries sent via UDP will be dropped.
+  - Overflow of service tables for `conntrack`. Records for UDP are removed from these tables only by time-out (default — 30 seconds). If tables are full, new DNS queries sent via UDP will be dropped.
 
 - When using caching DNS servers, the following will happen:
 
@@ -23,7 +23,7 @@ Let some [pod](../../reference/pods) initiate a DNS query.
 
   1. The caching DNS-server itself will address to service `kube-dns` using `iptables` and `conntrack`, but via TCP protocol.
 
-     In this case load on `kube-dns` is reduced, because it is queried directly by a limited number of DNS-servers and not by all services of the cluster that require DNS for their work. Also, when using TCP, the latency associated with UDP packet loss and timeouts is reduced.
+     In this case load on `kube-dns` is reduced, because it is queried directly by a limited number of DNS-servers and not by all services of the cluster that require DNS for their work. Also, when using TCP, the latency associated with UDP packet loss and time-outs is reduced.
 
 See [official Kubernetes documentation](https://kubernetes.io/docs/tasks/administer-cluster/nodelocaldns/) for more details.
 

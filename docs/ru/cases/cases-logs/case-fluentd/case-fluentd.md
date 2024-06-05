@@ -122,7 +122,7 @@ elastic-elasticsearch-discovery   ClusterIP   None           <none>  
 helm fetch --untar stable/kibana
 ```
 
-7. Перейдите в каталог kibana и отредактируйте файл `values.yaml`:
+7. Перейдите в директорию `kibana` и отредактируйте файл `values.yaml`:
 
 ```bash
 cd kibana/ && vim values.yaml
