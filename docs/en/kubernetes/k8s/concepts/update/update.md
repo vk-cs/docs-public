@@ -4,7 +4,7 @@ Clusters of versions 1.16 and lower can only be updated by transferring a backup
 
 During a cluster update the following entities also are updated:
 
-- Installed [addons](../versions/components).
+- Installed [add-ons](../versions/components).
 - Part of the cluster [components](../versions/components):
 
   - CoreDNS.

@@ -164,7 +164,7 @@ To install and perform the initial configuration of Elasticsearch:
          -Xmx128m
          ```
 
-      1. Save your changes using the `CTRL+O` key combination and finish editing using the `CTRL+X` key combination.
+      1. Save your changes using the CTRL+O key combination and finish editing using the CTRL+X key combination.
       1. Start the Elasticsearch service and check the status. If there are no errors, the following will be displayed:
 
          **![](assets/1559939373499-1559939373499.jpeg)**
@@ -361,7 +361,7 @@ To install and perform the initial setup of Logstash:
       }
       ```
 
-   1. Save your changes using the `CTRL+O` key combination and finish editing using the `CTRL+X` key combination.
+   1. Save your changes using the CTRL+O key combination and finish editing using the CTRL+X key combination.
 
 1. Create and configure the `30-elasticsearch-output.conf` configuration file containing the rules for storing beats in Elasticsearch information. For this:
 
@@ -386,7 +386,7 @@ To install and perform the initial setup of Logstash:
       }
       ```
 
-   1. Save your changes using the `CTRL+O` key combination and finish editing using the `CTRL+X` key combination.
+   1. Save your changes using the CTRL+O key combination and finish editing using the CTRL+X key combination.
 
 1. Create a file containing rules for filtering and structuring incoming data. For this:
 
@@ -414,7 +414,7 @@ To install and perform the initial setup of Logstash:
       }
       ```
 
-   1. Save your changes using the `CTRL+O` key combination and finish editing using the `CTRL+X` key combination.
+   1. Save your changes using the CTRL+O key combination and finish editing using the CTRL+X key combination.
 
 1. Check the Logstash configuration by running the command:
       ```bash
@@ -487,7 +487,7 @@ To install Filebeat:
          hosts: ["localhost:5044"]
          ```
 
-         Save your changes using the `CTRL+O` key combination and finish editing using the `CTRL+X` key combination.
+         Save your changes using the CTRL+O key combination and finish editing using the CTRL+X key combination.
 
 1. Enable the Logstash module. To do this, run the command:
 

@@ -121,7 +121,7 @@ To mount a bucket in an operating system, you should:
 3.  Run a command of the form:
 
     ```bash
-    s3fs <package_name> / mount / <path_to_folder> -o passwd_file = ~ / .passwd-s3fs -o url = http: //hb.vkcs.cloud -o use_path_request_style
+    s3fs <package_name> / mount / <path_to_directory> -o passwd_file = ~ / .passwd-s3fs -o url = http: //hb.vkcs.cloud -o use_path_request_style
     ```
 
 ## Disk-O:

@@ -76,7 +76,7 @@ You can also use the [logoff](https://learn.microsoft.com/en-us/windows-server/a
 
 <warn>
 
-If the session has been terminated in another way, the disconnection will occur according to the timeout set when creating the pool.
+If the session has been terminated in another way, the disconnection will occur according to the time-out set when creating the pool.
 
 </warn>
 

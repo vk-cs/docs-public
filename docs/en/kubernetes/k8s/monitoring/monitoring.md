@@ -4,12 +4,12 @@ The following tools are available for monitoring the status of a Kubernetes clus
 
   They provide basic monitoring capabilities, allowing you to view information about Kubernetes resources.
 
-- [Monitoring addon](../concepts/addons-and-settings/addons#kube_prometheus_stack_9be80ec2).
+- [Monitoring add-on](../concepts/addons-and-settings/addons#kube_prometheus_stack).
 
   It provides advanced cluster monitoring capabilities, allowing you to view metrics for multiple Kubernetes resources, down to individual pods.
   It is also possible to configure alerts when specified thresholds for metrics are exceeded. For example, you can monitor if the cluster resources are not available or if the computing power of the worker nodes is insufficient.
 
-  To find out if the monitoring addon is installed in the cluster, [see the list of installed addons](../service-management/addons/manage-addons#viewing_addons).
+  To find out if the monitoring add-on is installed in the cluster, [see the list of installed addons](../service-management/addons/manage-addons#viewing_addons).
 
 ## Using Kubernetes Dashboard
 

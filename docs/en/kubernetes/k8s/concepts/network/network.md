@@ -20,7 +20,7 @@ Sprut is in the beta testing phase. Contact [technical support](../../../../../c
 
 ## Integration with load balancers
 
-Cloud Containers cluster integrates with the load balancers of the VK Cloud platform. This applies to both regular Kubernetes load balancers (`LoadBalancer`) and Ingress controllers (`IngressController`): both will have a dedicated VK Cloud TCP balancer attached to them both when created. This also applies to the Ingress controller, which is installed as an [addon](../addons-and-settings/addons/).
+Cloud Containers cluster integrates with the load balancers of the VK Cloud platform. This applies to both regular Kubernetes load balancers (`LoadBalancer`) and Ingress controllers (`IngressController`): both will have a dedicated VK Cloud TCP balancer attached to them both when created. This also applies to the Ingress controller, which is installed as an [add-on](../addons-and-settings/addons/).
 
 If necessary, you can use the HTTP load balancer. See [example for Ingress controller](../../how-to-guides/ingress/ingress-http) for details.
 

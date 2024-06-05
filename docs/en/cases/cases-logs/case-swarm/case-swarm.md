@@ -222,7 +222,7 @@ Executing: /lib/systemd/systemd-sysv-install enable td-agent
 
 ## Fluentd configuration options
 
-The fluentd configuration file is located in the /etc/td-agent/td-agent.conf folder. It consists of several sections, consider them.
+The fluentd configuration file is located in the `/etc/td-agent/td-agent.conf` directory. It consists of several sections, consider them.
 
 **Source section** \- contains a description of the source of the logs. The Docker Fluentd log driver sends logs to tcp://localhost:24224 by default. Let's describe the source section for receiving logs:
 
