@@ -1,4 +1,4 @@
-The Cloud Desktop service is based on VDI (Virtual Desktop Infrastructure) technology and is designed to provide users with desktops created on a remote server and functioning in a virtualized environment.
+The Cloud Desktop service is based on the VDI (Virtual Desktop Infrastructure) technology and is designed to provide users with desktops created on a remote server and functioning in a virtualized environment.
 
 ## What tasks is the service suitable for?
 
@@ -14,13 +14,13 @@ Tasks that the service solves:
 ## Service features
 
 - Support for guest operating systems on which cloud desktops will be launched: Windows OS, Linux OS.
-- Directory services support [AD](https://learn.microsoft.com/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)/[LDAP](https://docs.altlinux.org/archive/2.4/html-single/master/alt-docs-master/ch06s11.html).
+- Directory services support: [AD](https://learn.microsoft.com/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview) and [LDAP](https://docs.altlinux.org/archive/2.4/html-single/master/alt-docs-master/ch06s11.html).
 - Support for data transmission over the RDP protocol.
-- Support for two types of jobs: personalized and session.
+- Support for two types of workplaces: personalized and sessional.
 - Monitoring the use of peripheral devices.
 - Maintenance of more than 1000 simultaneous user connections.
-- Creating and configuring a VM on a virtualization platform from a pre-prepared master image.
-- Support of fault tolerance mechanisms for management, licensing, storage and accounting of configuration changes.
+- Creating and configuring VMs on the virtualization platform from a pre-prepared master image.
+- Support of fault tolerance mechanisms for servers that provide management, licensing, storage and accounting for configuration changes.
 
 ## Role model
 
@@ -28,11 +28,11 @@ The following roles are provided in the service:
 
 - Administrator.
 
-  Manages the service through [personal account](https://msk.cloud.vk.com/app/en) VK Cloud. Configures integration with the directory service, creates desktop pools, and assigns desktops to users.
+  Manages the service through the VK Cloud [personal account](https://msk.cloud.vk.com/app/en). Configures integration with the directory service, creates desktop pools, and assigns desktops to users.
 
 - User.
 
-  Direct user of cloud desktops. Independently installs a client application to access the desktop.
+  End user of cloud desktops. Independently installs a client application to access the desktop.
 
 ## Available peripherals
 

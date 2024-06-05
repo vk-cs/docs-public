@@ -5,7 +5,7 @@
   "metaTitle": "Service management",
   "metaDescription": "Managing desktop pools and desktops in a pool.",
   "sectionTitle": "Service management",
-  "markdown": "Operations that can be performed with deployable virtual desktops.<br><info>Cloud Desktop User's Guide [available in PDF format](/en/base/cloud-desktops/service-management/assets/Termidesk_user_guide_v_1_0.pdf \"download\") (RU).</info>",
+  "markdown": "Operations that can be performed with deployable virtual desktops.<br><info>Cloud Desktop User's Guide is [available in PDF format](/en/base/cloud-desktops/service-management/assets/Termidesk_user_guide_v_1_0.pdf \"download\") (RU).</info>",
   "icon": "",
 
   "weight": 3,

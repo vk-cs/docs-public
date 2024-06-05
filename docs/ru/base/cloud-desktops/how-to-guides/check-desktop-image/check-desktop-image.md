@@ -11,12 +11,12 @@
      - имя и пароль пользователя LDAP с правами заведения ВМ в домен.
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Создайте [сеть](/ru/networks/vnet/operations/manage-net#sozdanie_seti) и [подсеть](/ru/networks/vnet/operations/manage-net#sozdanie_podseti):
+1. Создайте [сеть](/ru/networks/vnet/service-management/net#sozdanie_seti) и [подсеть](/ru/networks/vnet/service-management/net#sozdanie_podseti):
 
      - Включите опцию **Доступ в интернет**.
      - Если на образе установлено ПО для поддержки службы каталогов AD:
 
-         - В настройках сети выберите существующий маршрутизатор с подключением к внешней сети или [создайте](/ru/networks/vnet/operations/manage-router#dobavlenie_marshrutizatora) новый.
+         - В настройках сети выберите существующий маршрутизатор с подключением к внешней сети или [создайте](/ru/networks/vnet/service-management/router#dobavlenie_marshrutizatora) новый.
          - В настройках подсети отключите опцию **Приватный DNS** и добавьте в поле **DNS-серверы** IP-адрес DNS-сервера, который вы получили у вашего системного администратора.
 
      - Остальные параметры сети и подсети выберите на свое усмотрение.
@@ -84,7 +84,7 @@
          ```
 
      1. Завершите текущий сеанс подключения к ВМ.
-     1. [Добавьте](/ru/networks/vnet/operations/secgroups#naznachenie_gruppy_pravil_na_instans) ВМ в группу безопасности `rdp`.
+     1. [Добавьте](/ru/networks/vnet/service-management/secgroups#naznachenie_gruppy_pravil_na_instans) ВМ в группу безопасности `rdp`.
      1. Подключитесь к ВМ по протоколу RDP, следуя [инструкции по подключению к ВМ Windows](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-win#3_podklyuchites_k_vm).
      1. Убедитесь, что подключение прошло успешно и открылся графический интерфейс пользователя.
 
