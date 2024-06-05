@@ -4101,7 +4101,7 @@
   ],
   [
     "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
-    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/addons#istio_1d312d07"
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/addons#istio"
   ],
   [
     "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
@@ -4997,7 +4997,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
-    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/addons#jaeger_5410bed1"
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/addons#jaeger"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
@@ -5801,7 +5801,7 @@
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/update-monitoring-addon",
-    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/addons#kube_prometheus_stack_9be80ec2"
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/addons#kube_prometheus_stack"
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/update-monitoring-addon",
@@ -5877,7 +5877,7 @@
   ],
   [
     "/en/kubernetes/k8s/monitoring",
-    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/addons#kube_prometheus_stack_9be80ec2"
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/addons#kube_prometheus_stack"
   ],
   [
     "/en/kubernetes/k8s/monitoring",
@@ -13013,7 +13013,7 @@
   ],
   [
     "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/addons-and-settings/addons#istio_92986643"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/addons-and-settings/addons#istio"
   ],
   [
     "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",

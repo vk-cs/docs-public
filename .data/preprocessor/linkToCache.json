@@ -4,6 +4,26 @@
     "full": "Поколения процессоров",
     "text": "Поколения процессоров"
   },
+  "features_of_installing_addons": {
+    "number": null,
+    "full": "Features of installing add-ons",
+    "text": "Features of installing add-ons"
+  },
+  "istio": {
+    "number": null,
+    "full": "Istio",
+    "text": "Istio"
+  },
+  "jaeger": {
+    "number": null,
+    "full": "Jaeger",
+    "text": "Jaeger"
+  },
+  "kube_prometheus_stack": {
+    "number": null,
+    "full": "Kube Prometheus Stack",
+    "text": "Kube Prometheus Stack"
+  },
   "az": {
     "number": null,
     "full": "Зоны доступности",
