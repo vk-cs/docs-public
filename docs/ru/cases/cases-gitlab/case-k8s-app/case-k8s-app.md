@@ -43,7 +43,7 @@
 
 ## 2. Настройте файл автосборки
 
-1. Перейдите в папку со скачанным репозиторием и создайте файл `.gitlab-ci.yml` с содержимым:
+1. Перейдите в директорию со скачанным репозиторием и создайте файл `.gitlab-ci.yml` с содержимым:
 
    <details>
     <summary>.gitlab-ci.yml</summary>
@@ -398,7 +398,7 @@ GitLab по умолчанию поддерживает интеграцию с 
 
    ![](assets/1583702864976-1583702864976.png)
 
-1. Переместите файлы `deployment.yaml`, `service.yaml`, `ingress.yaml` в папку `deployments` проекта.
+1. Переместите файлы `deployment.yaml`, `service.yaml`, `ingress.yaml` в директорию `deployments` проекта.
 1. В файл `.gitlab-ci.yml` добавьте секцию `deploy`:
 
    <details>

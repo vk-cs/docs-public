@@ -12,7 +12,7 @@ The VK Cloud platform load balancer is based on [OpenStack Octavia](https://docs
 
 - Terminating SSL connections on the balancer.
 
-- Fine tune timeouts.
+- Fine tune time-outs.
 
 - Different balancing methods.
 

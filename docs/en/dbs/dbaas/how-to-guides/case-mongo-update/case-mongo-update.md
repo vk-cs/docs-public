@@ -102,7 +102,7 @@ root@mongo2:~# cat /tmp/mongo2.key /tmp/mongo2.crt > /etc/ssl/mongo2.pem
 root@mongo2:~# rm /tmp/mongo2.key /tmp/mongo2.crt /tmp/mongo2.csr
 ```
 
-12. If the `var/lib/mongodb` folder is not empty, delete all files from it.
+12. If the `var/lib/mongodb` directory is not empty, delete all files from it.
 13. Restart the `mongod` server and add it to the list of applications to load automatically.
 14. Login to the `mongo1` server and log into the mongo console.
 15. Add the `mongo2` server to `replicaset`:

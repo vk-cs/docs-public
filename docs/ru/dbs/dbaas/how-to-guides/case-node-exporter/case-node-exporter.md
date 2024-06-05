@@ -56,7 +56,7 @@
    cp /tmp/prometheus-$VERSION.linux-amd64/prometheus.yml /etc/prometheus/
    ```
 
-1. (Опционально) Удалите файлы из временной папки:
+1. (Опционально) Удалите файлы из временной директории:
 
    ```bash
    rm -rf /tmp/prometheus-$VERSION.linux-amd64

@@ -56,7 +56,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
    cp /tmp/prometheus-$VERSION.linux-amd64/prometheus.yml /etc/prometheus/
    ```
 
-1. (Optional) Delete files from the temporary folder:
+1. (Optional) Delete files from the temporary directory:
 
    ```bash
    rm -rf /tmp/prometheus-$VERSION.linux-amd64

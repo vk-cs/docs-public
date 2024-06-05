@@ -1,4 +1,4 @@
-There are [multiple versions](../../concepts/versions/components) of the [Kube Prometheus Stack](../../concepts/addons-and-settings/addons#kube_prometheus_stack_9be80ec2) addon available in the Cloud Containers clusters. Update of this addon using VK Cloud interfaces is not available, but you can update the addon manually.
+There are [multiple versions](../../concepts/versions/components) of the [Kube Prometheus Stack](../../concepts/addons-and-settings/addons#kube_prometheus_stack) addon available in the Cloud Containers clusters. Update of this addon using VK Cloud interfaces is not available, but you can update the addon manually.
 
 To upgrade the Kube Prometheus Stack addon from version `36.2.0` to version `54.2.2`, it is necessary to uninstall the current version of the addon and then install the new one. Therefore, the upgrade process includes preparing the environment of the current version of the addon for saving and further re-using it with the new version.
 

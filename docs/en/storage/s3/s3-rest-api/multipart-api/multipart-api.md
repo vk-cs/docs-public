@@ -85,7 +85,7 @@ Connection: close
 
 The operation completes the multi-part download by combining the previously loaded parts. Upon receiving this request, VK Cloud merges all loaded parts in ascending order by part number, creating a new object. In a request to complete a multipart download, you must provide a list of parts. For each part from the list, you must provide the part number and the ETag header value returned after that part is loaded.
 
-It can take several minutes to process a request to complete a multipart upload. After starting to process the request, VK Cloud sends an HTTP response header containing a 200 OK response. Whitespace is periodically sent during request processing to prevent timeouts. Since an error can occur in a request after the initial 200 OK response has been sent, the body of the response should be checked to determine if the request was successful.
+It can take several minutes to process a request to complete a multipart upload. After starting to process the request, VK Cloud sends an HTTP response header containing a 200 OK response. Whitespace is periodically sent during request processing to prevent time-outs. Since an error can occur in a request after the initial 200 OK response has been sent, the body of the response should be checked to determine if the request was successful.
 
 Inquiry:
 
