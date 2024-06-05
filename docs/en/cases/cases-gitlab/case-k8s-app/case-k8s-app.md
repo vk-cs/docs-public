@@ -55,7 +55,7 @@ Please note that Masked is enabled for the password - thanks to this, when you t
 
 ## Set up the autobuild file
 
-Go to the folder with the downloaded repository and in a text editor create a `.gitlab-ci.yml` file with the following content:
+Go to the directory with the downloaded repository and in a text editor create a `.gitlab-ci.yml` file with the following content:
 
 ```yaml
 image:docker:latest
@@ -450,7 +450,7 @@ token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZp
 
 ![](assets/1583702901138-1583702901138.png)
 
-Place the files `deployment.yaml`, `service.yaml`, `ingress.yaml` in the deployments folder of the project.
+Place the files `deployment.yaml`, `service.yaml`, `ingress.yaml` in the deployments directory of the project.
 
 Add the deploy section to the `.gitlab-ci.yml` file:
 

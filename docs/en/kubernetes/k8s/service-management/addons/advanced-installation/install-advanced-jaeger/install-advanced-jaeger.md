@@ -1,4 +1,4 @@
-As part of the [addon](../../../../concepts/addons-and-settings/addons#jaeger_5410bed1) there is [Jaeger collector](https://www.jaegertracing.io/docs/latest/architecture/#collector), which requires storage to work. As a [storage backend](https://www.jaegertracing.io/docs/latest/deployment/#span-storage-backends) the Jaeger addon from VK Cloud uses Elasticsearch, which is deployed in the form of several replicas.
+As part of the [addon](../../../../concepts/addons-and-settings/addons#jaeger) there is [Jaeger collector](https://www.jaegertracing.io/docs/latest/architecture/#collector), which requires storage to work. As a [storage backend](https://www.jaegertracing.io/docs/latest/deployment/#span-storage-backends) the Jaeger addon from VK Cloud uses Elasticsearch, which is deployed in the form of several replicas.
 
 ## Installing the addon
 
@@ -6,7 +6,7 @@ As part of the [addon](../../../../concepts/addons-and-settings/addons#jaeger_54
 
 Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on groups of worker nodes.
 
-Jaeger addon [system requirements](../../../../concepts/addons-and-settings/addons#jaeger_5410bed1) depend on the selected number of Elasticsearch replicas and the cluster environment. The minimum number of replicas is two, the default is three. Their number can be changed during the standard installation or installation on dedicated worker nodes.
+Jaeger addon [system requirements](../../../../concepts/addons-and-settings/addons#jaeger) depend on the selected number of Elasticsearch replicas and the cluster environment. The minimum number of replicas is two, the default is three. Their number can be changed during the standard installation or installation on dedicated worker nodes.
 
 If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_nodes_c172481b) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) before install.
 

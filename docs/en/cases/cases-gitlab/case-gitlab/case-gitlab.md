@@ -107,7 +107,7 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
 
     </info>
 
-1. Save the file and exit the editor by pressing *Ctrl + O* and then *Ctrl + X*.
+1. Save the file and exit the editor by pressing CTRL+O and then CTRL+X.
 
 1. Restart the `sshd` service:
 
@@ -195,7 +195,7 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
 
     </info>
 
-1. Save the file and exit the editor by pressing *Ctrl + O* and then *Ctrl + X*.
+1. Save the file and exit the editor by pressing CTRL+O and then CTRL+X.
 1. Launch the Docker Compose plugin:
 
     ```bash

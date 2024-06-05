@@ -12,5 +12,5 @@ The following tasks can be accomplished using the VK Cloud Control Panel:
 - Loading an object into a bucket
 - Object Access Control
 - Object lifecycle management
-- Copying an item to a folder
+- Copying an item to a directory
 - Removing objects and buckets

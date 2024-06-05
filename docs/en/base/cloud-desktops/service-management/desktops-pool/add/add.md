@@ -40,7 +40,7 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
 
     - **User inactivity timeout**: the time after which the user will be disconnected from the desktop if there is no activity on the desktop. The timeout works for the RDP and RX protocols.
 
-      If the value is `0`, the user session will not be interrupted by timeout.
+      If the value is `0`, the user session will not be interrupted by time-out.
 
 1. Click the **Next step** button.
 
