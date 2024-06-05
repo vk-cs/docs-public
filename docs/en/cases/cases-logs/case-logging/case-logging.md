@@ -255,7 +255,7 @@ proxy_set_header Host $http_host;
 root@ubuntu-std1-1:/etc/nginx# printf "USER:$(openssl passwd -crypt PASSWORD)\n" >> /etc/nginx/htpasswd
 ```
 
-7. To enable the site, create a symlink to the /etc/nginx/sites-enabled folder:
+7. To enable the site, create a symlink to the `/etc/nginx/sites-enabled` directory:
 
 ```bash
 root@ubuntu-std1-1:~# ln -s /etc/nginx/sites-available/kibana.conf /etc/nginx/sites-enabled/kibana.conf

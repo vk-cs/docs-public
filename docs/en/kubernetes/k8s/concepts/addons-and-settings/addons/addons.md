@@ -1,36 +1,36 @@
-Various addons (additional services) are available for Cloud Containers clusters. They can be selected in any combination and installed either when [creating a cluster using Terraform](../../../service-management/create-cluster/create-terraform), or [later](../../../service-management/addons/manage-addons#installing_the_addon) in already an existing cluster. The installation process is automated and requires minimal user intervention.
+Various add-ons (additional services) are available for Cloud Containers clusters. They can be selected in any combination and installed either when [creating a cluster using Terraform](../../../service-management/create-cluster/create-terraform), or [later](../../../service-management/addons/manage-addons#installing_the_addon) in already an existing cluster. The installation process is automated and requires minimal user intervention.
 
-## Features of installing addons
+## {heading(Features of installing add-ons)[id=features_of_installing_addons]}
 
-- Addons are installed on the worker nodes of the cluster and consume their computing resources.
+- Add-ons are installed on the worker nodes of the cluster and consume their computing resources.
 
-  The following are the system requirements of addons based on the standard values [requests and limits](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#requests-and-limits) for Kubernetes resources in the addon setup code. When using non-standard values, the system requirements of addons will change.
+  The following are the system requirements of add-ons based on the standard values [requests and limits](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#requests-and-limits) for Kubernetes resources in the add-on setup code. When using non-standard values, the system requirements of add-ons will change.
 
   <info>
 
-  Some addons can be installed on all cluster nodes (including master nodes). For more details, see [Configuring and installing addons](../../../service-management/addons/advanced-installation).
+  Some add-ons can be installed on all cluster nodes (including master nodes). For more details, see [Configuring and installing add-ons](../../../service-management/addons/advanced-installation).
 
   </info>
 
-- Addons can be installed on a dedicated group of worker nodes or on Kubernetes worker nodes selected by the scheduler. Using the first approach allows you to exclude the influence of addons on the operation of production services deployed in the cluster.
+- Add-ons can be installed on a dedicated group of worker nodes or on Kubernetes worker nodes selected by the scheduler. Using the first approach allows you to exclude the influence of add-ons on the operation of production services deployed in the cluster.
 
-  The computing resources of a dedicated group of worker nodes should be sufficient for all addons, even if each addon consumes the maximum resources specified in the system requirements. It is recommended to set up automatic scaling for such a group of nodes.
+  The computing resources of a dedicated group of worker nodes should be sufficient for all add-ons, even if each add-on consumes the maximum resources specified in the system requirements. It is recommended to set up automatic scaling for such a group of nodes.
 
-- There are three options for installing addons:
+- There are three options for installing add-ons:
 
-  - **Standard installation** on Kubernetes worker nodes selected by the scheduler with a change in the addon configuration code.
-  - **Installation on dedicated worker nodes** with a change in the addon configuration code.
-  - **Quick installation** on Kubernetes worker nodes selected by the scheduler without changing the addon setup code (with default settings).
+  - **Standard installation** on Kubernetes worker nodes selected by the scheduler with a change in the add-on configuration code.
+  - **Installation on dedicated worker nodes** with a change in the add-on configuration code.
+  - **Quick installation** on Kubernetes worker nodes selected by the scheduler without changing the add-on setup code (with default settings).
 
-  Not all addons support all three installation options.
+  Not all add-ons support all three installation options.
 
-  The installation process is described in the section [Configuring and installing addons](../../../service-management/addons/advanced-installation/).
+  The installation process is described in the section [Configuring and installing add-ons](../../../service-management/addons/advanced-installation/).
 
-## Available addons
+## Available add-ons
 
 <info>
 
-The availability of specific addons depends on the [region](/en/base/account/concepts/regions) in which the cluster is planned to be placed.
+The availability of specific add-ons depends on the [region](/en/base/account/concepts/regions) in which the cluster is planned to be placed.
 
 </info>
 
@@ -83,7 +83,7 @@ A certificate issued with `cert-manager` will be available to other Kubernetes r
 </tabpanel>
 <tabpanel>
 
-The requirements of the individual addon components:
+The requirements of the individual add-on components:
 
 - cert-manager:
 
@@ -107,7 +107,7 @@ The requirements of the individual addon components:
 
 <warn>
 
-When installing the addon, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created.
+When installing the add-on, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
@@ -147,12 +147,12 @@ See [Connecting to the Docker registry](../../../connect/docker-registry/) for d
 
 Fluent Bit in combination with [special filters](https://docs.fluentbit.io/manual/pipeline/filters/lua), written in Lua, allows you to organize the delivery of logs from the Cloud Containers cluster to the [Cloud Logging](/en/manage/logging) service for further analysis of these logs.
 
-The sources of the logs are [kubelet services](https://kubernetes.io/docs/concepts/overview/components/#kubelet) and [pods](../../../reference/pods) located on cluster nodes. For more information about how the addon works, see the [section about installing it](../../../service-management/addons/advanced-installation/install-advanced-logaas-integration).
+The sources of the logs are [kubelet services](https://kubernetes.io/docs/concepts/overview/components/#kubelet) and [pods](../../../reference/pods) located on cluster nodes. For more information about how the add-on works, see the [section about installing it](../../../service-management/addons/advanced-installation/install-advanced-logaas-integration).
 
 </tabpanel>
 <tabpanel>
 
-The addon does not have its own system requirements. The addon's subs use [limit settings](../settings#limits_settings_for_pods) by default.
+The add-on does not have its own system requirements. The add-on subs use [limit settings](../settings#limits_settings_for_pods) by default.
 
 </tabpanel>
 </tabs>
@@ -161,7 +161,7 @@ The addon does not have its own system requirements. The addon's subs use [limit
 
 <warn>
 
-When installing the addon, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created.
+When installing the add-on, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
@@ -191,7 +191,7 @@ The pre-installed Ingress controller integrates tightly with the VK Cloud platfo
 </tabpanel>
 </tabs>
 
-### Istio
+### {heading(Istio)[id=istio]}
 
 <tabs>
 <tablist>
@@ -219,7 +219,7 @@ The pre-installed Ingress controller integrates tightly with the VK Cloud platfo
 </tabpanel>
 </tabs>
 
-### Jaeger
+### {heading(Jaeger)[id=jaeger]}
 
 <tabs>
 <tablist>
@@ -240,7 +240,7 @@ Jaeger performs query tracing based on the data it receives from microservices. 
 </tabpanel>
 <tabpanel>
 
-Addon requirements:
+Add-on requirements:
 
 - The number of worker nodes must be at least the selected number of Elasticsearch replicas.
 
@@ -253,7 +253,7 @@ Addon requirements:
   - `STD2-4-4` or better (for a test environment);
   - `STD2-6-6` or better (for a production environment).
 
-Requirements of individual addon components:
+Requirements of individual add-on components:
 
 - [Elasticsearch](https://www.jaegertracing.io/docs/latest/deployment/#elasticsearch):
 
@@ -293,7 +293,7 @@ To ensure stable operation of Jaeger, it is recommended to install it on a dedic
 </tablist>
 <tabpanel>
 
-[Kiali](https://kiali.io/) is a web interface for working with [Istio](#istio_1d312d07). It allows to manage, monitor and visualize a service mesh.
+[Kiali](https://kiali.io/) is a web interface for working with [Istio](#istio). It allows to manage, monitor and visualize a service mesh.
 
 </tabpanel>
 <tabpanel>
@@ -304,7 +304,7 @@ To ensure stable operation of Jaeger, it is recommended to install it on a dedic
 </tabpanel>
 </tabs>
 
-### Kube Prometheus Stack
+### {heading(Kube Prometheus Stack)[id=kube_prometheus_stack]}
 
 <tabs>
 <tablist>

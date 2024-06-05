@@ -1,6 +1,6 @@
-The supported versions of components and [addons](../../addons-and-settings/addons) depend on the version of the Cloud Containers cluster.
+The supported versions of components and [add-ons](../../addons-and-settings/addons) depend on the version of the Cloud Containers cluster.
 
-When [updating a cluster](../../../service-management/update), part of its components are also updated, as well the installed addons. If a component, that is to be updated with the cluster, is deleted, then it will be restored during the next cluster update.
+When [updating a cluster](../../../service-management/update), part of its components are also updated, as well the installed add-ons. If a component, that is to be updated with the cluster, is deleted, then it will be restored during the next cluster update.
 
 ## Components
 
@@ -57,9 +57,9 @@ These components are present in all Cloud Containers clusters.
 |1.0.9
 |===
 
-## Addons
+## Add-ons
 
-The necessary addons can be [installed](../../../service-management/addons/manage-addons#installing_the_addon) in the cluster individually.
+The necessary add-ons can be [installed](../../../service-management/addons/manage-addons#installing_the_addon) in the cluster individually.
 
 [cols="3,1,1,1,1", options="header"]
 |===
