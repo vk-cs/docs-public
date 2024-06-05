@@ -89,7 +89,7 @@ resource "vkcs_networking_router_interface" "router_interface" {
   - `dpd`: словарь настроек для протокола Dead Peer Detection (DPD). Включает в себя следующие ресурсы:
 
     - `action`: действие DPD. Возможные значения: `clear`, `hold`, `restart`, `disabled`, `restart-by-peer`. Значение по умолчанию: `hold`.
-    - `timeout`: таймаут DPD в секундах. Принимаются данные типа `positive integer`, значения которых больше чем `interval`. Значение по умолчанию: `120`.
+    - `timeout`: тайм-аут DPD в секундах. Принимаются данные типа `positive integer`, значения которых больше чем `interval`. Значение по умолчанию: `120`.
     - `interval`: интервал DPD в секундах. Принимаются данные типа `positive integer`. Значение по умолчанию: `30`.
 
   - `depends_on`: VPN-соединение запустится после создания указанных ресурсов.

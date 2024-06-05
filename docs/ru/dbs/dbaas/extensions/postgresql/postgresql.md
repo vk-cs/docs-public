@@ -78,7 +78,7 @@
 
   </warn>
 
-  Отчеты по конкретному инстансу БД хранятся в папке с именем, совпадающим с идентификатором инстанса. Идентификатор можно получить, [посмотрев информацию об инстансе БД](/ru/dbs/dbaas/service-management/manage-instance/postgresql#poluchenie_informacii_ob_instanse_bd).
+  Отчеты по конкретному инстансу БД хранятся в директории с именем, совпадающим с идентификатором инстанса. Идентификатор можно получить, [посмотрев информацию об инстансе БД](/ru/dbs/dbaas/service-management/manage-instance/postgresql#poluchenie_informacii_ob_instanse_bd).
 
 - `period`: интервал между созданием отчетов (в часах).
 

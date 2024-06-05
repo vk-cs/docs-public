@@ -18,7 +18,7 @@ root@ubuntu-std3-2-4-40gb:~# wget https://github.com/goharbor/harbor/releases/do
 root@ubuntu-std3-2-4-40gb:~# tar -zxvf harbor-online-installer-v1.9.3.tgz
 ```
 
-2. In the resulting harbor folder, configure the `harbor.yml` file:
+2. In the resulting harbor directory, configure the `harbor.yml` file:
 
 ```yaml
 hostname: <SERVER_DNS_NAME>

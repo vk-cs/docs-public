@@ -81,7 +81,7 @@ data "vkcs_networking_router" "router" {
   - `dpd`: the settings dictionary for the Dead Peer Detection (DPD) protocol. The following arguments are supported:
 
     - `action`: the DPD action. Possible values: `clear`, `hold`, `restart`, `disabled`, `restart-by-peer`. Default value: `hold`.
-    - `timeout`: the DPD timeout in seconds. Must be a positive integer, which is greater than the `interval` argument value. Default value: `120`.
+    - `timeout`: the DPD time-out in seconds. Must be a positive integer, which is greater than the `interval` argument value. Default value: `120`.
     - `interval`: the DPD interval in seconds. Must be a positive integer. Default value: `30`.
 
   - `depends_on`: the VPN connection will start after creating the specified resources.

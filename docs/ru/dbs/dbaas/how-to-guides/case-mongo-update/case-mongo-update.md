@@ -102,7 +102,7 @@ root@mongo2:~# cat /tmp/mongo2.key /tmp/mongo2.crt > /etc/ssl/mongo2.pem
 root@mongo2:~# rm /tmp/mongo2.key /tmp/mongo2.crt /tmp/mongo2.csr
 ```
 
-12. Если папка `var/lib/mongodb` не пустая, удалите все файлы из нее.
+12. Если директория `var/lib/mongodb` не пустая, удалите все файлы из нее.
 13. Перезапустите сервер `mongod` и добавьте его в список приложений, загружаемых автоматически.
 14. Выполните логин на сервер `mongo1` и войдите в консоль mongo.
 15. Добавьте сервер `mongo2` в `replicaset`:

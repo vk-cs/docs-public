@@ -74,7 +74,7 @@
 
 ## 3. Соберите образ локально
 
-1. Перейдите в каталог `windows-imaging-tools` и импортируйте модули:
+1. Перейдите в директорию `windows-imaging-tools` и импортируйте модули:
 
     ```powershell
     Import-Module .\WinImageBuilder.psm1
@@ -82,7 +82,7 @@
     Import-Module .\UnattendResources\ini.psm1
     ```
 
-1. Перенесите содержимое каталога `WindowsUpdateCLI` в `windows-imaging-tools\UnattendResources\WindowsUpdates`.
+1. Перенесите содержимое директории `WindowsUpdateCLI` в `windows-imaging-tools\UnattendResources\WindowsUpdates`.
 1. Создайте конфигурационный файл `config.ini`:
 
     ```powershell
@@ -112,7 +112,7 @@
     - `external_switch=external` — имя созданного коммутатора;
     - `virtio_iso_path="D:\Drivers\virtio.iso"` — полный путь к ISO-файлу с драйверами VirtIO;
     - `time_zone="Russian Standard Time"` — временная зона, можно узнать с помощью команды `tzutil /l`;
-    - `purge_updates=False` — не очищать каталог `WinSXS` после установки обновлений.
+    - `purge_updates=False` — не очищать директорию `WinSXS` после установки обновлений.
 
 1. Запустите локальную сборку образа с помощью команды:
 
