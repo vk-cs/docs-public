@@ -2,7 +2,7 @@ When a pool is successfully created, desktops are created in it automatically.
 
 ## Viewing desktop information
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Open the list of desktops using one of the following methods:
 
    - Through the general list of desktops: go to **Cloud Desktop** → **Desktop list**.
@@ -18,7 +18,7 @@ The desktop status is displayed in the **Availability** column. Column **Connect
 
 This is a group operation: if necessary, you can manage multiple pool desktops by selecting them using checkboxes.
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Open the list of desktops using one of the following methods:
 
    - Through the general list of desktops:
@@ -44,7 +44,7 @@ The **Start** button is active only if all VMs for the selected tables are disab
 
 ## Ending the user session
 
-The state of the desktop after the end of the session is determined by the setting **Actions at the end of session**, set at [pool creation](../desktops-pool/add/).
+The state of the desktop after the end of the session is determined by the **Actions at the end of session** option, set when [creating](../desktops-pool/add/) the pool.
 
 To end the user session, log out of the system:
 
@@ -76,15 +76,15 @@ You can also use the [logoff](https://learn.microsoft.com/en-us/windows-server/a
 
 <warn>
 
-If the session was terminated in another way, the disconnection will occur according to the timeout set when creating the pool.
+If the session has been terminated in another way, the disconnection will occur according to the timeout set when creating the pool.
 
 </warn>
 
 ## Deleting the desktop
 
-This is a group operation: if necessary, you can manage multiple pool desktops by selecting them using checkboxes.
+This is a group operation: if necessary, you can delete multiple pool desktops by selecting them using checkboxes.
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Open the list of desktops using one of the following methods:
 
    - Through the general list of desktops:

@@ -1,6 +1,6 @@
 <details>
 
-<summary>An error has occurred in the operation of the service that I cannot fix, where can I contact?</summary>
+<summary>There is an error in the service operation that I cannot fix. Where can I contact?</summary>
 
 Contact VK Cloud [technical support](/en/contacts).
 

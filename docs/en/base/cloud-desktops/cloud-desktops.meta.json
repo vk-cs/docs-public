@@ -1,11 +1,11 @@
 {
   "title": "Cloud Desktop",
-  "pageDescription": "The VDI (Virtual Desktop Infrastructure) virtual desktop system is designed to deliver desktops created on a remote server and operating in a virtualized environment to users.",
-  "shortDescription": "Delivery of desktops to users on a remote server",
+  "pageDescription": "Cloud Desktop is a service based on the Virtual Desktop Infrastructure (VDI) technology. VDI is designed to provide users with desktops created on a remote server and operating in a virtualized environment.",
+  "shortDescription": "Providing users with desktops on a remote server",
   "metaTitle": "Cloud Desktop",
-  "metaDescription": "Cloud Desktop service for delivering desktops to users on a remote server",
+  "metaDescription": "Providing users with desktops on a remote server",
   "sectionTitle": "Cloud Desktop",
-  "markdown": "The VDI (Virtual Desktop Infrastructure) virtual desktop system is designed to deliver desktops created on a remote server and operating in a virtualized environment to users.",
+  "markdown": "Cloud Desktop is a service based on the Virtual Desktop Infrastructure (VDI) technology. VDI is designed to provide users with desktops created on a remote server and operating in a virtualized environment.",
   "icon": "",
   "weight": 3,
 
