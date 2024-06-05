@@ -1912,6 +1912,14 @@
     "http://localhost:3000/docs/en/base/cloud-desktops/quick-start"
   ],
   [
+    "/en/base/cloud-desktops/concepts/desktop-image",
+    "http://localhost:3000/docs/en/base/iaas/how-to-guides"
+  ],
+  [
+    "/en/base/cloud-desktops/concepts/desktop-image",
+    "http://localhost:3000/docs/en/base/cloud-desktops/how-to-guides/check-desktop-image"
+  ],
+  [
     "/en/base/cloud-desktops/service-management/config",
     "http://localhost:3000/docs/en/base/iaas/tariffication"
   ],
@@ -1922,6 +1930,10 @@
   [
     "/en/base/cloud-desktops/service-management/desktops-pool/add",
     "http://localhost:3000/docs/en/base/cloud-desktops/service-management/config"
+  ],
+  [
+    "/en/base/cloud-desktops/service-management/desktops-pool/add",
+    "http://localhost:3000/docs/en/base/cloud-desktops/how-to-guides/check-desktop-image"
   ],
   [
     "/en/base/cloud-desktops/service-management/desktops-pool/add",
@@ -1994,6 +2006,62 @@
   [
     "/en/base/cloud-desktops/how-to-guides/ipsec",
     "http://localhost:3000/docs/en/networks/vnet/operations/manage-net#deleting_a_network"
+  ],
+  [
+    "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "http://localhost:3000/docs/en/base/cloud-desktops/concepts/desktop-image"
+  ],
+  [
+    "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_subnet"
+  ],
+  [
+    "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/router#adding_a_router"
+  ],
+  [
+    "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "http://localhost:3000/docs/en/base/cloud-desktops/how-to-guides/ipsec"
+  ],
+  [
+    "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "http://localhost:3000/docs/en/base/iaas/service-management/images/images-manage#importing_an_image"
+  ],
+  [
+    "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-connect/vm-connect-win"
+  ],
+  [
+    "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/secgroups#assign_a_rule_group_to_an_instance"
+  ],
+  [
+    "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-connect/vm-connect-win#3_connect_to_the_vm"
+  ],
+  [
+    "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-manage#starting_stopping_reboot_the_vm"
+  ],
+  [
+    "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-console#the_vnc_console"
+  ],
+  [
+    "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-connect/vm-connect-win#3_connect_to_the_vm"
+  ],
+  [
+    "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-manage#starting_stopping_reboot_the_vm"
+  ],
+  [
+    "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-manage#deleting_a_vm"
   ],
   [
     "/en/base/cloud-desktops/tariffication",
@@ -10113,11 +10181,11 @@
   ],
   [
     "/ru/base/cloud-desktops/how-to-guides/check-desktop-image",
-    "http://localhost:3000/docs/ru/networks/vnet/operations/manage-net#sozdanie_podseti"
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#sozdanie_podseti"
   ],
   [
     "/ru/base/cloud-desktops/how-to-guides/check-desktop-image",
-    "http://localhost:3000/docs/ru/networks/vnet/operations/manage-router#dobavlenie_marshrutizatora"
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/router#dobavlenie_marshrutizatora"
   ],
   [
     "/ru/base/cloud-desktops/how-to-guides/check-desktop-image",
@@ -10137,7 +10205,7 @@
   ],
   [
     "/ru/base/cloud-desktops/how-to-guides/check-desktop-image",
-    "http://localhost:3000/docs/ru/networks/vnet/operations/secgroups#naznachenie_gruppy_pravil_na_instans"
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/secgroups#naznachenie_gruppy_pravil_na_instans"
   ],
   [
     "/ru/base/cloud-desktops/how-to-guides/check-desktop-image",
