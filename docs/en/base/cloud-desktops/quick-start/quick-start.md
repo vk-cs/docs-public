@@ -1,21 +1,21 @@
-A quick start will help you get started with the service and get acquainted with its capabilities.
+This quick start will help you get started with the service and get acquainted with its capabilities.
 
-After completing all the steps of a quick start, you will:
+After completing all the steps of the quick start, you will:
 
 1. Set up a connection to an existing OpenLDAP user directory.
 1. Get acquainted with Cloud Desktop and its main features:
 
     1. Create a pool of desktops.
-    1. Make sure that two desktops are successfully deployed in the pool.
+    1. Verify that two desktops are successfully deployed in the pool.
 
 ## 1. Preparatory steps
 
 1. Create and configure the OpenLDAP user directory service ([an example](https://www.openldap.org/devel/admin/guide.html#Building%20and%20Installing%20OpenLDAP%20Software)).
 1. Find out the details of the configured directory:
 
-   - IP address or FQDN of the OpenLDAP server.
-   - Unique account name.
-   - Account password.
+   - IP address or FQDN of the OpenLDAP server
+   - Unique account name
+   - Account password
 
 1. (Optional) [Set up](/en/networks/vnet/use-cases/vpn-tunnel#2_set_up_a_vpn_tunnel_on_the_cloud_side) a VPN on the router that will be used for the service.
 1. Check that the Cloud Desktop service is connected to your [personal account](https://msk.cloud.vk.com/app/en): the **Cloud Desktop** section is available in the menu on the left.
