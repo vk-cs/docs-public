@@ -20,7 +20,7 @@
 
    1. Set the general cluster parameters:
 
-      - **Database cluster name**: it can contain only Latin letters, numbers and symbols `.`, `_`.
+      - **Database cluster name**: it can contain only Latin letters, numbers, and characters `.`, `_`.
 
         Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 
@@ -207,7 +207,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
    1. Set the general cluster parameters:
 
-      - **Database cluster name**: it can contain only Latin letters, numbers and symbols `.`, `-`, `_`.
+      - **Database cluster name**: it can contain only Latin letters, numbers, and characters `.`, `-`, `_`.
 
         Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 
@@ -363,7 +363,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
    1. Set the general cluster parameters:
 
-      - **Database cluster name**: it can contain only Latin letters, numbers and symbols `.`, `-`, `_`.
+      - **Database cluster name**: it can contain only Latin letters, numbers, and characters `.`, `-`, `_`.
 
         Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 
@@ -457,7 +457,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
       - **Database cluster name**:
 
         - ClickHouse: it can contain only Latin letters and numbers;
-        - MongoDB and Redis: it can contain only Latin letters, numbers and symbols `-`, `_`;
+        - MongoDB and Redis: it can contain only Latin letters, numbers, and characters `-`, `_`;
 
         Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 

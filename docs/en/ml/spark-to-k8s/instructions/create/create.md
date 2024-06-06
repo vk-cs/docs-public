@@ -13,7 +13,7 @@
 
    1. Set general settings:
 
-      - **Cluster name**: it can contain only Latin letters, numbers and symbols `.`, `-`, `_`.
+      - **Cluster name**: it can contain only Latin letters, numbers, and special characters `.`, `-`, `_`.
 
       - **Availability zone**: [availability zone](/en/base/iaas/concepts/about#availability_zone) for the cluster.
 
@@ -45,7 +45,7 @@
 
         1. Specify the details for accessing the registry:
 
-           - **Registry username**: it can contain only Latin letters, numbers and symbols `.`, `-`, `_`.
+           - **Registry username**: it can contain only Latin letters, numbers, and special characters `.`, `-`, `_`.
            - **Registry password**: you can come up with a password or generate it.
 
              <warn>
@@ -56,7 +56,7 @@
 
              Password requirements:
 
-             - it is allowed to use only uppercase and lowercase Latin letters, numbers, symbols from the range `!#$%&()*+,.:;<=>?@[]^_{|}~-`;
+             - it is allowed to use only uppercase and lowercase Latin letters, numbers, and special characters `!`, `#`, `$`, `%`, `&`, `(`, `)`, `*`, `+`, `,`, `.`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, `]`, `^`, `_`, `{`, `|`, `}`, `~`, `-`, `` ` ``, `;`.
              - the password must contain at least one letter of the Latin alphabet and at least one digit.
 
       - **Virtual machine key**: the key that is used for [connecting to cluster nodes via SSH](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix). Select an existing key or create a new one.

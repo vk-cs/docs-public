@@ -483,7 +483,7 @@ systemctl status qemu-guest-agent
 
 <info>
 
-The password must be at least 8 characters long and contain letters of the Latin alphabet, numbers and symbols ``! " # $ % & ( ) * + , - . : ; < = > ? @ [ ] ^ _ ` { } ~``.
+The password must be at least 8 characters long and contain letters of the Latin alphabet, numbers, and characters `!`, `"`, `#`, `$`, `%`, `&`, `(`, `)`, `*`, `+`, `,`, `-`, `.`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, `]`, `^`, `_`, `` ` ``, `{`, `}`, `~`.
 
 </info>
 
