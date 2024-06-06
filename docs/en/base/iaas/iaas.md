@@ -1,0 +1,1 @@
+Cloud Servers is a cloud computing service for managing virtual machines on the VK Cloud. Includes management of VM configurations, disks, images, backups, allows you to create a file storage.

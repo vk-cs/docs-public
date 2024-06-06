@@ -1,14 +1,13 @@
 {
-    "title": "Removing an instance",
-    "pageDescription": "How to remove an MLflow Deploy instance.",
-    "shortDescription": "",
-    "metaTitle": "Removing an instance",
-    "metaDescription": "How to remove an MLflow Deploy instance",
-    "sectionTitle": "Removing an instance",
-    "markdown": "How to remove an MLflow Deploy instance.",
-    "icon": "",
-    "weight": 2,
-    "uuid": "b53f453d-3838-4ea5-9b7b-b2e576b5ae86",
-    "createdAt": "2024-04-16T05:09:35.000Z",
-    "updatedAt": "2024-05-27T19:58:24.000Z"
+  "title": "Removing an instance",
+  "pageDescription": "How to remove an MLflow Deploy instance.",
+  "shortDescription": "",
+  "metaTitle": "Removing an instance",
+  "metaDescription": "How to remove an MLflow Deploy instance",
+  "sectionTitle": "Removing an instance",
+  "icon": "",
+  "weight": 2,
+  "uuid": "b53f453d-3838-4ea5-9b7b-b2e576b5ae86",
+  "createdAt": "2024-04-16T05:09:35.000Z",
+  "updatedAt": "2024-05-27T19:58:24.000Z"
 }

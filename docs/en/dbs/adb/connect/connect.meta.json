@@ -5,9 +5,7 @@
   "metaTitle": "Connect to ADB",
   "metaDescription": "Description of ways to connect to Arenadata Databases.",
   "sectionTitle": "Connect to ADB",
-  "markdown": "Description of ways to connect to Arenadata Databases.",
   "icon": "",
-
   "weight": 3,
   "uuid": "2f5be58e-9d03-45fc-b306-5bf43892680b"
 }

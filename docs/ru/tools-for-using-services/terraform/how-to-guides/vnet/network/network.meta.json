@@ -1,14 +1,13 @@
 {
-    "title": "Создание сетей и изменение групп безопасности",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Создание сетей и изменение групп безопасности",
-    "metaDescription": "",
-    "sectionTitle": "Создание сетей и изменение групп безопасности",
-    "markdown": "",
-    "icon": "",
-    "weight": 1,
-    "uuid": "cf7dd56a-dbd6-49ce-bf8e-80a95b564c05",
-    "createdAt": "2023-05-26T16:45:20.000Z",
-    "updatedAt": "2024-05-27T19:58:24.000Z"
+  "title": "Создание сетей и изменение групп безопасности",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Создание сетей и изменение групп безопасности",
+  "metaDescription": "",
+  "sectionTitle": "Создание сетей и изменение групп безопасности",
+  "icon": "",
+  "weight": 1,
+  "uuid": "cf7dd56a-dbd6-49ce-bf8e-80a95b564c05",
+  "createdAt": "2023-05-26T16:45:20.000Z",
+  "updatedAt": "2024-05-27T19:58:24.000Z"
 }

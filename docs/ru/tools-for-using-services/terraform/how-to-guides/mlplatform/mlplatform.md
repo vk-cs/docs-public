@@ -1,0 +1,1 @@
+Работа с [сервисом Cloud ML Platform](/ru/ml/mlplatform) с использованием Terraform.

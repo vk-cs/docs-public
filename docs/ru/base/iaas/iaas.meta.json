@@ -5,12 +5,12 @@
   "metaTitle": "Cloud Servers",
   "metaDescription": "Cloud Servers — сервис облачных вычислений для управления виртуальными машинами в VK Cloud",
   "sectionTitle": "Cloud Servers",
-  "markdown": "Cloud Servers — сервис облачных вычислений для управления виртуальными машинами в VK Cloud. Включает управление конфигурациями ВМ, дисками, образами, резервным копированием, позволяет создать файловое хранилище.",
   "icon": "",
   "weight": 1,
   "relativeSections": [
     {
       "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/iaas/create"
-    }],
+    }
+  ],
   "uuid": "f18cbbc6-353d-4989-84a8-152fedc68060"
 }

@@ -1,0 +1,1 @@
+Creating and deleting images of virtual machines. Import of own images and export into a file. Setting meta tags to configure an image.

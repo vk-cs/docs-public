@@ -1,15 +1,14 @@
 {
-    "title": "О партнерской программе",
-    "pageDescription": "",
-    "shortDescription": "Возможности и преимущества партнерской программы VK Cloud",
-    "metaTitle": "О партнерской программе",
-    "metaDescription": "Развивайте свой бизнес и зарабатывайте вместе с нами!",
-    "sectionTitle": "О партнерской программе",
-    "markdown": "",
-    "icon": "",
-    "disableGithub": true,
-    "weight": 0,
-    "uuid": "a9693534-6fa4-48a1-a93f-4c9cec91e61b",
-    "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "О партнерской программе",
+  "pageDescription": "",
+  "shortDescription": "Возможности и преимущества партнерской программы VK Cloud",
+  "metaTitle": "О партнерской программе",
+  "metaDescription": "Развивайте свой бизнес и зарабатывайте вместе с нами!",
+  "sectionTitle": "О партнерской программе",
+  "icon": "",
+  "disableGithub": true,
+  "weight": 0,
+  "uuid": "a9693534-6fa4-48a1-a93f-4c9cec91e61b",
+  "createdAt": "2022-03-26T14:10:44.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

@@ -1,14 +1,13 @@
 {
-    "title": "Managing advanced routers",
-    "pageDescription": "Adding, editing, deleting advanced routers and viewing statistics.",
-    "shortDescription": "Adding, editing, deleting advanced routers and viewing statistics",
-    "metaTitle": "Managing advanced routers",
-    "metaDescription": "",
-    "sectionTitle": "Managing advanced routers",
-    "markdown": "Adding, editing, deleting advanced routers and viewing statistics.",
-    "icon": "",
-    "weight": 1,
-    "uuid": "009acd1a-1ee4-43ed-b7d3-d4103833482a",
-    "createdAt": "2024-04-25T09:18:01.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Managing advanced routers",
+  "pageDescription": "Adding, editing, deleting advanced routers and viewing statistics.",
+  "shortDescription": "Adding, editing, deleting advanced routers and viewing statistics",
+  "metaTitle": "Managing advanced routers",
+  "metaDescription": "",
+  "sectionTitle": "Managing advanced routers",
+  "icon": "",
+  "weight": 1,
+  "uuid": "009acd1a-1ee4-43ed-b7d3-d4103833482a",
+  "createdAt": "2024-04-25T09:18:01.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

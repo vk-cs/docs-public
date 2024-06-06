@@ -1,12 +1,11 @@
 {
-    "title": "Managing CDN resource",
-    "pageDescription": "How to set up a CDN resource and its interaction with sources.",
-    "shortDescription": "How to set up a CDN resource and its interaction with sources",
-    "metaTitle": "Managing CDN resource",
-    "metaDescription": "How to set up a CDN resource and its interaction with sources.",
-    "sectionTitle": "Managing CDN resource",
-    "markdown": "",
-    "icon": "",
-    "weight": 2,
-    "uuid": "2cedd8f4-8c66-463f-9e0f-bed6b59e5c0e"
+  "title": "Managing CDN resource",
+  "pageDescription": "How to set up a CDN resource and its interaction with sources.",
+  "shortDescription": "How to set up a CDN resource and its interaction with sources",
+  "metaTitle": "Managing CDN resource",
+  "metaDescription": "How to set up a CDN resource and its interaction with sources.",
+  "sectionTitle": "Managing CDN resource",
+  "icon": "",
+  "weight": 2,
+  "uuid": "2cedd8f4-8c66-463f-9e0f-bed6b59e5c0e"
 }

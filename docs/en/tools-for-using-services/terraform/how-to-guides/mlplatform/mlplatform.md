@@ -1,0 +1,1 @@
+Working with [Cloud ML Platform](/en/ml/mlplatform) using Terraform.

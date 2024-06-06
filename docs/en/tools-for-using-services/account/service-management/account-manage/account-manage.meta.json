@@ -5,9 +5,7 @@
   "metaTitle": "Account management",
   "metaDescription": "User account management operations: viewing and changing profile data, 2FA and password, key pairs of the project.",
   "sectionTitle": "Account management",
-  "markdown": "User account management operations: viewing and changing profile data, 2FA and password, key pairs of the project.",
   "icon": "",
   "weight": 2,
-
   "uuid": "7b2efa98-c9e9-419f-b0ef-21c09ec104de"
 }

@@ -1,14 +1,13 @@
 {
-    "title": "Редактирование триггера",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Редактирование триггера",
-    "metaDescription": "",
-    "sectionTitle": "Редактирование триггера",
-    "markdown": "",
-    "icon": "",
-    "weight": 2,
-    "uuid": "0071afc7-9a02-4fe9-8937-781b0b3da96f",
-    "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Редактирование триггера",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Редактирование триггера",
+  "metaDescription": "",
+  "sectionTitle": "Редактирование триггера",
+  "icon": "",
+  "weight": 2,
+  "uuid": "0071afc7-9a02-4fe9-8937-781b0b3da96f",
+  "createdAt": "2022-03-26T14:10:44.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

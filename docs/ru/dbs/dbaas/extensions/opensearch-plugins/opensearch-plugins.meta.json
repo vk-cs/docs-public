@@ -1,14 +1,13 @@
 {
-    "title": "Плагины OpenSearch",
-    "pageDescription": "Перечень доступных плагинов OpenSearch.",
-    "shortDescription": "Перечень доступных плагинов OpenSearch",
-    "metaTitle": "Плагины OpenSearch",
-    "metaDescription": "Базы данных VK Cloud: перечень доступных плагинов OpenSearch.",
-    "sectionTitle": "Плагины OpenSearch",
-    "markdown": "Перечень доступных плагинов OpenSearch.",
-    "icon": "",
-    "weight": 2,
-    "createdAt": "2023-09-05T09:12:49.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z",
-    "uuid": "a0434c58-0f5b-4135-8dfd-1f2ec8c48ba7"
+  "title": "Плагины OpenSearch",
+  "pageDescription": "Перечень доступных плагинов OpenSearch.",
+  "shortDescription": "Перечень доступных плагинов OpenSearch",
+  "metaTitle": "Плагины OpenSearch",
+  "metaDescription": "Базы данных VK Cloud: перечень доступных плагинов OpenSearch.",
+  "sectionTitle": "Плагины OpenSearch",
+  "icon": "",
+  "weight": 2,
+  "createdAt": "2023-09-05T09:12:49.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z",
+  "uuid": "a0434c58-0f5b-4135-8dfd-1f2ec8c48ba7"
 }

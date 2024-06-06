@@ -5,10 +5,8 @@
   "metaTitle": "Data Platform UI Console",
   "metaDescription": "Сервис для упрощения работы с платформой данных в инфраструктуре VK Cloud",
   "sectionTitle": "Data Platform UI Console",
-  "markdown": "Сервис для упрощения работы с платформой данных в инфраструктуре VK Cloud. Обеспечивает централизированное управление и группировку дата-сервисов платформы данных через интерфейс личного кабинета VK Cloud. Сервис бесплатный для всех пользователей Data Platform.",
   "icon": "",
   "weight": 4,
-
   "isBeta": true,
   "uuid": "58eb5560-944a-4887-8699-f1a7dfc08a28"
 }

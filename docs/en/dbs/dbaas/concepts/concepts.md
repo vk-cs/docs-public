@@ -1,0 +1,1 @@
+Detailed description of the principles of functioning and device of the Cloud Databases service.

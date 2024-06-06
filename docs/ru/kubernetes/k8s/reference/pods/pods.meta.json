@@ -1,14 +1,13 @@
 {
-    "title": "Поды",
-    "pageDescription": "Общие сведения о подах в Kubernetes.",
-    "shortDescription": "Общие сведения о подах в Kubernetes",
-    "metaTitle": "Поды",
-    "metaDescription": "",
-    "sectionTitle": "Поды",
-    "markdown": "Общие сведения о подах в Kubernetes.",
-    "icon": "",
-    "weight": 1,
-    "uuid": "f8756c03-74b7-4ba5-ae5d-6da215a6dee7",
-    "createdAt": "2022-12-15T08:05:18.000Z",
-    "updatedAt": "2024-05-27T19:58:24.000Z"
+  "title": "Поды",
+  "pageDescription": "Общие сведения о подах в Kubernetes.",
+  "shortDescription": "Общие сведения о подах в Kubernetes",
+  "metaTitle": "Поды",
+  "metaDescription": "",
+  "sectionTitle": "Поды",
+  "icon": "",
+  "weight": 1,
+  "uuid": "f8756c03-74b7-4ba5-ae5d-6da215a6dee7",
+  "createdAt": "2022-12-15T08:05:18.000Z",
+  "updatedAt": "2024-05-27T19:58:24.000Z"
 }

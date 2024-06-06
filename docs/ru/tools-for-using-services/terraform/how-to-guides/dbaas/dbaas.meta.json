@@ -5,9 +5,7 @@
   "metaTitle": "Cloud Databases",
   "metaDescription": "Как использовать Terraform для управления объектами сервиса СУБД",
   "sectionTitle": "Cloud Databases",
-  "markdown": "Работа с [сервисом Cloud Databases](/ru/dbs/dbaas) с использованием Terraform.",
   "icon": "",
-
   "weight": 5,
   "uuid": "806b42d8-3f18-4777-8aa5-8ff492a572f8",
   "additionalUuids": [

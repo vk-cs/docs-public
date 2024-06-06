@@ -1,0 +1,1 @@
+Standard operations for managing Cloud Storage and its resources.

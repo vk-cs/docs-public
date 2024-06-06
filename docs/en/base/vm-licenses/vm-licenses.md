@@ -1,0 +1,1 @@
+A set of licensed software products, as well as the terms of their use on the VK Cloud platform.
