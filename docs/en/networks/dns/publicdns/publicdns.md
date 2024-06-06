@@ -199,7 +199,7 @@ To add a resource record:
      - `\*.dns.zone` — indicates any name in the domain request.
 
    - **Time to live (TTL)**: cache lifetime in seconds.
-   - **Value**: FQDN is the destination address (where the alias being added points to). The maximum length is 255 characters. Must consist of two or more subdomains. The maximum length of a subdomain is 63 characters. Only numbers, Latin letters, symbols `.` and `-` are allowed.
+   - **Value**: FQDN is the destination address (where the alias being added points to). The maximum length is 255 characters. Must consist of two or more subdomains. The maximum length of a subdomain is 63 characters. Only numbers, Latin letters, special characters `.` and `-` are allowed.
 
    Example: you need to create a CNAME record `www.example.com` pointing to `example.com`. To do this, enter `www` in the **Name** field, and in the **Value** — `example.com`.
 
@@ -227,7 +227,7 @@ To add a resource record:
 
    - **Priority**: host priority. The lower the value, the more preferred the host.
    - **Time to live (TTL)**: cache lifetime in seconds.
-   - **Value**: FQDN is the address of the mail server. The maximum length is 255 characters. Must consist of two or more subdomains. The maximum length of a subdomain is 63 characters. Only numbers, Latin letters, symbols `.` and `-` are allowed.
+   - **Value**: FQDN is the address of the mail server. The maximum length is 255 characters. Must consist of two or more subdomains. The maximum length of a subdomain is 63 characters. Only numbers, Latin letters, special characters `.` and `-` are allowed.
 
    </details>
    <details>
@@ -258,7 +258,7 @@ To add a resource record:
    - **Weight**: weight for hosts with the same priority. The closer this value is to `0`, the less likely it is that the host will be selected.
    - **Port**: the port number that the SRV service uses.
    - **Time to live (TTL)**: cache lifetime in seconds.
-   - **Host**: FQDN of the host hosting the service. The maximum length is 255 characters. Must consist of two or more subdomains. The maximum length of a subdomain is 63 characters. Only numbers, Latin letters, symbols `.` and `-` are allowed.
+   - **Host**: FQDN of the host hosting the service. The maximum length is 255 characters. Must consist of two or more subdomains. The maximum length of a subdomain is 63 characters. Only numbers, Latin letters, special characters `.` and `-` are allowed.
 
    </details>
    <details>

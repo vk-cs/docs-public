@@ -17,10 +17,10 @@ The login procedure depends on whether an account with your email is registered 
 
 1. On the page that opens, enter a new password and click **Register**.
 
-    The minimum password length is 8 symbols. The password must contain:
+    The minimum password length is 8 characters. The password must contain:
 
     - uppercase and lowercase Latin letters;
-    - at least one number or one symbol from the following range: ``? ! ~ @ # $ % ^ & _ - + * = ; : , . / \ | ` [ ] { } ( )``.
+    - at least one number or one special character `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `/`, `\`, `|`, `` ` ``, `[`, `]`, `{`, `}`, `(`, `)`.
 
     The password must not contain repeating groups of characters, such as ``aaa123123123``.
 

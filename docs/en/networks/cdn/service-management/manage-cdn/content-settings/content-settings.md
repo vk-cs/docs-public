@@ -21,7 +21,7 @@ To clear a cache of a CDN resource:
 1. In the **Clear cache** section, select the type of clearance:
 
     - `Full` — completely removes all files from the cache of the CDN resource. Full cache clearance will cause CDN servers to request content from origin servers that increases the load on origins and may destabilize the service. Use selective cache clearance if you need to remove a large volume of content from the cache.
-    - `Selective` — allows you to remove individual files from the cache of the CDN resource. In the input field, specify the path or pattern of the path to the files you want to delete. Use the following symbols for the pattern:
+    - `Selective` — allows you to remove individual files from the cache of the CDN resource. In the input field, specify the path or pattern of the path to the files you want to delete. Use the following characters for the pattern:
 
        - Use `/` or `*` at the beginning of the path.
        - Use `*` to replace any number of characters in the path.
@@ -37,7 +37,7 @@ In the request body specify the following:
 
 - `[]` — to delete all files on the CDN resource.
 - The file path without the domain name to clear the cache of a selected file.
-- The path pattern to delete certain files. Use the following symbols for the pattern::
+- The path pattern to delete certain files. Use the following characters for the pattern:
 
   - Use `/` or `*` at the beginning of the path.
   - Use `*` to replace any number of characters in the path.

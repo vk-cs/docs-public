@@ -168,7 +168,7 @@ Select **Settings** - `Basic`, and set:
   - consist only of the following valid characters:
     - uppercase and lowercase letters of the Latin alphabet;
     - numbers;
-    - symbols `-+&!@#$%^*(),.:;_=<>{}/`.
+    - special characters `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`.
 
 </tabpanel>
 </tabs>
