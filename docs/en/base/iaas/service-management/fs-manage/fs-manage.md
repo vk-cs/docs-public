@@ -21,7 +21,7 @@ File storages are created in your VK Cloud personal account. Connecting file sto
 1. Click the **Create** button.
 1. Set the file storage parameters:
 
-   - **Name of file storage**: it can consist only of Latin letters, numbers, and symbols `-`, `_`, and `.`.
+   - **Name of file storage**: it can consist only of Latin letters, numbers, and special characters `-`, `_`, and `.`.
    - **Storage size**: storage size in GB. Must be within the quota, not less than 10 GB and not more than 10000 GB.
    - **Protocol**: to access the storage from Windows, select the CIFS protocol, from Linux — NFS.
    - **Network**: choose from the suggested ones or create a new one. For the new network, specify also **Subnet address**.

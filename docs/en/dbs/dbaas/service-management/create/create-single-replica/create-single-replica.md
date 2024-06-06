@@ -19,7 +19,7 @@
 
    1. Set general instance parameters:
 
-      - **Database instance name**: it can contain only Latin letters, numbers and symbols `.`, `-`, `_`.
+      - **Database instance name**: it can contain only Latin letters, numbers, and characters `.`, `-`, `_`.
 
         Instance hostnames will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 

@@ -3,7 +3,7 @@
 1. Click ![plus-icon](/en/assets/plus-icon.svg "inline") **Add source**.
 1. Specify the origin URL in the **Address** fileld. CDN servers will access to the origin by that URL. There are some requirements:
 
-   - The URL may only contain Latin letters, numbers, and characters `.`, `-`.
+   - The URL may only contain Latin letters, numbers, and special characters `.`, `-`.
    - The URL must not contain a protocol scheme `http://` or `https://`. It is added automatically as `http(s)://`. The **Source interaction protocol** option determines protocol when [creating](../create-resource) or editing a CDN resource.
    - Only Fully Qualified Domain Name (FQDN) is allowed in the URL.
    - The maximum length of the entire URL is 255 characters. The maximum length of a subdomain is 63 characters.
@@ -53,7 +53,7 @@
 
 1. Edit the **Address** field. CDN servers will access the origin by the URL. There are some requirements:
 
-   - The URL may only contain Latin letters, numders and characters `.`, `-`.
+   - The URL may only contain Latin letters, numbers, and special characters `.`, `-`.
    - The URL must not contain a protocol scheme `http://` or `https://`. It is added automatically as `http(s)://`. The **Source interaction protocol** option determines protocol when [creating](../create-resource) or editing a CDN resource.
    - Only Fully Qualified Domain Name (FQDN) is allowed in the URL.
    - The maximum length of the entire URL is 255 characters. The maximum length of a subdomain is 63 characters.
@@ -69,7 +69,7 @@
 
 In the **Content Source** parameter, specify the URL that CDN servers will access the origin:
 
-- The URL may only contain Latin letters, numders and characters `.`, `-`.
+- The URL may only contain Latin letters, numbers, and special characters `.`, `-`.
 - The URL must not contain a protocol scheme `http://` or `https://`. It is added automatically as `http(s)://`. The protocol is determined in the **Source interaction protocol** option.
 - Only Fully Qualified Domain Name (FQDN) is allowed in the URL.
 - The maximum length of the entire URL is 255 characters. The maximum length of a subdomain is 63 characters.

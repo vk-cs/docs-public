@@ -19,16 +19,16 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
 
 1. Set the pool configuration parameters:
 
-    - **Pool name**: set a name that is unique within the project. Field requirements: from 3 to 128 characters, only Latin letters, symbols `-`, `_`, spaces, and numbers are allowed.
+    - **Pool name**: set a name that is unique within the project. Field requirements: from 3 to 128 characters, only Latin letters, characters `-`, `_`, spaces, and numbers are allowed.
     - **Pool type**: choose one of the options:
 
         - **Sessional** — in such a pool, the user is automatically assigned a desktop upon connection. Use the session pool if you need to deploy a large number of desktops of the same configuration with the same set of software. The session pool has hot reserve of desktops.
         - **Personalized** — in such a pool, the administrator assigns desktops to specific users. Suitable for deploying desktops with individual configuration for individual users. This type of pool is used most often.
 
     - **Description**: the pool description, up to 250 characters.
-    - **User group**: specify the user group of the AD or LDAP directory. The users in this group will be assigned desktops from the pool. Field requirements: from 3 to 100 characters, only Latin letters, symbols `-`, `_`, `.`, and numbers are allowed.
+    - **User group**: specify the user group of the AD or LDAP directory. The users in this group will be assigned desktops from the pool. Field requirements: from 3 to 100 characters, only Latin letters, characters `-`, `_`, `.`, and numbers are allowed.
     - **OU**: specify the organizational unit of the AD or LDAP directory. For example, `OU=Workstations,DC=domain,DC=com`.
-    - **Naming mask**: the suffix with which the desktops names in this pool will begin. Field requirements: from 3 to 15 characters, only lowercase Latin letters and the `-` symbol at the end are allowed.
+    - **Naming mask**: the suffix with which the desktops names in this pool will begin. Field requirements: from 3 to 15 characters, only lowercase Latin letters and the `-` character at the end are allowed.
     - **Min number of desktops** — determines how many desktops will be deployed immediately after the pool is created. The default is `0`.
 
       This parameter cannot exceed the value of the parameter **Max number of desktops**.

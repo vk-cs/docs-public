@@ -54,7 +54,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
       Password requirements:
 
-      - can contain only numbers, characters from the range `!"#$%&()*+,.:;<=>?@[]^_{|}~-`, uppercase and lowercase Latin letters;
+      - can contain only numbers, special characters `!`, `"`, `#`, `$`, `%`, `&`, `(`, `)`, `*`, `+`, `,`, `.`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, `]`, `^`, `_`, `{`, `|`, `}`, `~`, `-`, uppercase and lowercase Latin letters;
       - must consist of at least 8 characters;
       - must contain at least one uppercase and one lowercase letter of the Latin alphabet, at least one digit.
 
@@ -156,7 +156,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
       Password requirements:
 
-      - can contain only numbers, characters from the range `!"#$%&()*+,.:;<=>?@[]^_{|}~-`, uppercase and lowercase Latin letters;
+      - can contain only numbers, special characters `!`, `"`, `#`, `$`, `%`, `&`, `(`, `)`, `*`, `+`, `,`, `.`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, `]`, `^`, `_`, `{`, `|`, `}`, `~`, `-`, uppercase and lowercase Latin letters;
       - must consist of at least 8 characters;
       - must contain at least one uppercase and one lowercase letter of the Latin alphabet, at least one digit.
 
