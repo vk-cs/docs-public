@@ -18,7 +18,7 @@ You can also [connect a subnet to the router](../../net) in the **Cloud networks
 
 1. Go to the **Interfaces** tab.
 1. Click the **Add interface** button.
-1. Fill in the **Name** field. You can use numbers, Latin letters, space and symbols: `?` `!` `~` `@` `#` `$` `%` `^` `"` `&` `_` `-` `+` `*` `=` `;` `:` `,` `.` `/` `\` `|` `` ` `` `[` `]` `{` `}` `(` `)` `<` `>`.
+1. Fill in the **Name** field. You can use numbers, Latin letters, spaces, and special characters: `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `"`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `/`, `\`, `|`, `` ` ``, `[`, `]`, `{`, `}`, `(`, `)`, `<`, `>`.
 1. Select a subnet from the list or create a new one. If you need the Internet access to the router, select one of the external network subnets:
 
    - `internet` for SDN Sprut;

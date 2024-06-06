@@ -31,7 +31,7 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
 1. In the **Router type** field choose `Advanced`. If this field is missing, SDN Sprut is not enabled in your project. Please, contact [technical support](/en/contacts), to enable SDN Sprut and advanced routers.
 1. Set parameters of the router:
 
-   - **Name**. You can use numbers, Latin letters, space and symbols: `?` `!` `~` `@` `#` `$` `%` `^` `"` `&` `_` `-` `+` `*` `=` `;` `:` `,` `.` `/` `\` `|` `` ` `` `[` `]` `{` `}` `(` `)` `<` `>`.
+   - **Name**. You can use numbers, Latin letters, spaces, and special characters: `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `"`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `/`, `\`, `|`, `` ` ``, `[`, `]`, `{`, `}`, `(`, `)`, `<`, `>`.
    - **Availability zone**: choose [an availability zone](/en/additionals/start/architecture#availability_zones_567cfd7a) you need.
    - **Description**: an optional field.
    - **SNAT**: enable the option if you need to convert private IP addresses into public ones for access from the project network to the Internet. When you [add the router interface](../manage-interfaces#adding_interfaces_of_advanced_router) directed to an external network, SNAT is enabled automatically.

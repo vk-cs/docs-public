@@ -17,8 +17,8 @@ To add an HTTP header to a request:
 1. Enable the **Add request titles** option.
 1. Enter the title name and the value. The following characters are allowed:
 
-    - **Title name**: Latin letters, numbers, characters `_` and `-`.
-    - **Value**: Latin letters, numbers, characters `_ . / : - =` and space. The value cannot start with a special character and be composed only of special characters.
+    - **Title name**: Latin letters, numbers, special characters `_` and `-`.
+    - **Value**: Latin letters, numbers, special characters `_`, `.`, `/`, `:`, `-`, `=`, and spaces. The value cannot start with a special character and be composed only of special characters.
 1. (Optional) Click ![plus-icon](/en/assets/plus-icon.svg "inline") **Add title** to add one more request header. Specify the name and value of the header. You can set up to 50 request headers.
 1. (Optional) Click ![trash-icon](/en/assets/trash-icon.svg "inline") to delete a request header.
 1. Click **Save changes**.
@@ -33,8 +33,8 @@ Specify the `staticRequestHeaders` parameter in the `options` block of a request
 - To enable the option specify `"enabled": true`, to disable  — `"enabled": false`.
 - In the `value` parameter, write the headers and values in the `name: value` format. You can specify up to 50 request headers. The following characters are allowed:
 
-  - `name`: Latin letters, numbers, characters `_` and `-`.
-  - `value`: Latin letters, numbers, characters `_ . / : - =` and space. The value cannot start with a special character and be composed only of special characters.
+  - `name`: Latin letters, numbers, special characters `_` and `-`.
+  - `value`: Latin letters, numbers, special characters `_`, `.`, `/`, `:`, `-`, `=`, and spaces. The value cannot start with a special character and be composed only of special characters.
 
 Example request:
 
@@ -81,8 +81,8 @@ To add an HTTP header to a response:
 1. Enable the **Add response titles** option.
 1. Enter the title name and the value. The following characters are allowed:
 
-    - **Title name**: Latin letters, numbers, characters `_` and `-`.
-    - **Value**: Latin letters, numbers, characters `` ` ``, `~`, `!`, `@`, `#`, `%`, `^`, `&`, `*`, `(`, `)`, `-`, `_`, `=`, `+`, `/`, `|`, `"`, `;`, `:`, `?`, `.`, `>`, `<`, `{`, `}`, `[`, `]` and space. The value cannot start with a special character and be composed only of special characters.
+    - **Title name**: Latin letters, numbers, special characters `_` and `-`.
+    - **Value**: Latin letters, numbers, special characters `` ` ``, `~`, `!`, `@`, `#`, `%`, `^`, `&`, `*`, `(`, `)`, `-`, `_`, `=`, `+`, `/`, `|`, `"`, `;`, `:`, `?`, `.`, `>`, `<`, `{`, `}`, `[`, `]` and space. The value cannot start with a special character and be composed only of special characters.
 1. (Optional) Click ![plus-icon](/en/assets/plus-icon.svg "inline") **Add title** to add one more response header. Specify the name and value of the header. You can set up to 50 response headers.
 1. (Optional) Click ![trash-icon](/en/assets/trash-icon.svg "inline") to delete a response header.
 1. Click **Save changes**.
