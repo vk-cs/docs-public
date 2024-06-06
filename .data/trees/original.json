@@ -4695,6 +4695,21 @@
     ]
   },
   {
+    "uuid": "52f24096-a851-44f9-b485-6591f743b784",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit/install-advanced-fluent-bit.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit/install-advanced-fluent-bit.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "e772a76c-16b6-4280-8feb-f25a907a5631",
     "lang": "en",
     "type": "ARTICLE",
@@ -13822,6 +13837,21 @@
     "partialPath": "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry/install-advanced-registry.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry/install-advanced-registry.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "f2d4b435-dc7d-4dca-9889-3f15eb85ba37",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 7,
+    "partialPath": "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit/install-advanced-fluent-bit.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit/install-advanced-fluent-bit.md",
     "variables": {},
     "hidden": false,
     "version": null,

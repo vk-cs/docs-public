@@ -1,13 +1,13 @@
 {
-  "title": "Настройка HTTP-заголовков",
-  "pageDescription": "Как добавить HTTP-заголовки к запросам и ответам, настроить поддержку CORS.",
-  "shortDescription": "Как добавить HTTP-заголовки к запросам и ответам, настроить поддержку CORS",
-  "metaTitle": "Настройка HTTP-заголовков",
-  "metaDescription": "Как добавить HTTP-заголовки к запросам и ответам, настроить поддержку CORS",
-  "sectionTitle": "Настройка HTTP-заголовков",
-  "icon": "",
-  "weight": 5,
-  "uuid": "ded4cff5-ff35-4c4d-b6b7-aee456e92b6b",
-  "createdAt": "2024-05-13T11:54:48.000Z",
-  "updatedAt": "2024-05-29T19:32:15.000Z"
+    "title": "Настройка HTTP-заголовков",
+    "pageDescription": "Как добавить HTTP-заголовки к запросам и ответам, настроить поддержку CORS.",
+    "shortDescription": "Как добавить HTTP-заголовки к запросам и ответам, настроить поддержку CORS",
+    "metaTitle": "Настройка HTTP-заголовков",
+    "metaDescription": "Как добавить HTTP-заголовки к запросам и ответам, настроить поддержку CORS",
+    "sectionTitle": "Настройка HTTP-заголовков",
+    "icon": "",
+    "weight": 5,
+    "uuid": "ded4cff5-ff35-4c4d-b6b7-aee456e92b6b",
+    "createdAt": "2024-05-13T11:54:48.000Z",
+    "updatedAt": "2024-06-06T17:26:47.000Z"
 }
