@@ -1,14 +1,13 @@
 {
-    "title": "CORS",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "CORS",
-    "metaDescription": "Cloud Storage service allows you to manage the CORS bucket configuration. To load the CORS configuration, you need to generate an XML document. Li",
-    "sectionTitle": "CORS",
-    "markdown": "",
-    "icon": "",
-    "weight": 6,
-    "uuid": "70a24c0b-3150-4e5b-989f-1670c7956d05",
-    "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "CORS",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "CORS",
+  "metaDescription": "Cloud Storage service allows you to manage the CORS bucket configuration. To load the CORS configuration, you need to generate an XML document. Li",
+  "sectionTitle": "CORS",
+  "icon": "",
+  "weight": 6,
+  "uuid": "70a24c0b-3150-4e5b-989f-1670c7956d05",
+  "createdAt": "2022-03-26T14:10:44.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

@@ -1,0 +1,1 @@
+Cloud Databases are cloud databases (Database as a service). The service allows deploying solutions based on MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Postgres Pro, Greenplum in the cloud. The bases are available in single, master-slave and cluster configurations. Using the service relieves you of the burden of database administration.

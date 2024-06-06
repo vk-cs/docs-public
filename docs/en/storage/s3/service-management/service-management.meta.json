@@ -5,8 +5,6 @@
   "metaTitle": "Service management",
   "metaDescription": "Creating an account. Creating and managing a bucket. Adding objects to the bucket. Configuring access to the bucket and bucket objects",
   "sectionTitle": "Service management",
-  "markdown": "Standard operations for managing Cloud Storage and its resources.",
-
   "weight": 4,
   "additionalUuids": [
     "1aa27b08-b7cc-4783-8065-d5ebc5b8b642"

@@ -1,14 +1,13 @@
 {
-    "title": "Load balancer",
-    "pageDescription": "How to use a load balancer to distribute incoming traffic between multiple servers.",
-    "shortDescription": "How to distribute network traffic between servers",
-    "metaTitle": "Load balancer",
-    "metaDescription": "",
-    "sectionTitle": "Load balancer",
-    "markdown": "How to use a load balancer to distribute incoming traffic between multiple servers.",
-    "icon": "",
-    "weight": 5,
-    "uuid": "9d234375-730b-446b-b9c4-dc86bbf5f85e",
-    "createdAt": "2023-03-17T04:38:48.000Z",
-    "updatedAt": "2024-06-05T16:41:45.000Z"
+  "title": "Load balancer",
+  "pageDescription": "How to use a load balancer to distribute incoming traffic between multiple servers.",
+  "shortDescription": "How to distribute network traffic between servers",
+  "metaTitle": "Load balancer",
+  "metaDescription": "",
+  "sectionTitle": "Load balancer",
+  "icon": "",
+  "weight": 5,
+  "uuid": "9d234375-730b-446b-b9c4-dc86bbf5f85e",
+  "createdAt": "2023-03-17T04:38:48.000Z",
+  "updatedAt": "2024-06-05T16:41:45.000Z"
 }

@@ -1,14 +1,13 @@
 {
-    "title": "Подключение сервиса",
-    "pageDescription": "",
-    "shortDescription": "Инструкция по подключению сервиса",
-    "metaTitle": "Подключение сервиса",
-    "metaDescription": "Инструкция по подключению сервиса",
-    "sectionTitle": "Подключение сервиса",
-    "markdown": "Инструкция по подключению сервиса",
-    "icon": "",
-    "weight": 2,
-    "uuid": "6d49f9d5-6ed2-4951-947c-0d7c4cff668a",
-    "createdAt": "2022-12-27T14:46:55.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Подключение сервиса",
+  "pageDescription": "",
+  "shortDescription": "Инструкция по подключению сервиса",
+  "metaTitle": "Подключение сервиса",
+  "metaDescription": "Инструкция по подключению сервиса",
+  "sectionTitle": "Подключение сервиса",
+  "icon": "",
+  "weight": 2,
+  "uuid": "6d49f9d5-6ed2-4951-947c-0d7c4cff668a",
+  "createdAt": "2022-12-27T14:46:55.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

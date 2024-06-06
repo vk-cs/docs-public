@@ -5,9 +5,7 @@
   "metaTitle": "Connecting to a cluster",
   "metaDescription": "",
   "sectionTitle": "Connecting to a cluster",
-  "markdown": "There are several ways to connect to the Cloud Containers cluster and its components. All available connection options are discussed here.",
   "icon": "",
-
   "weight": 3,
   "uuid": "c8059744-4842-443c-8b70-0f3ad8630d7d"
 }

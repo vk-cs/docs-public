@@ -1,0 +1,1 @@
+User account management operations: viewing and changing profile data, 2FA and password, key pairs of the project.

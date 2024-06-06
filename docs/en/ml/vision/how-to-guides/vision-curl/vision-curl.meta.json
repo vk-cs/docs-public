@@ -1,14 +1,13 @@
 {
-    "title": "Using Curl",
-    "pageDescription": "",
-    "shortDescription": "Corl recognition request",
-    "metaTitle": "Using Curl",
-    "metaDescription": "",
-    "sectionTitle": "Using Curl",
-    "markdown": "",
-    "icon": "",
-    "weight": 2,
-    "uuid": "b0993bdf-23a0-40e7-a16e-8f4b56ab6d48",
-    "createdAt": "2022-09-20T07:30:20.000Z",
-    "updatedAt": "2024-05-27T19:58:24.000Z"
+  "title": "Using Curl",
+  "pageDescription": "",
+  "shortDescription": "Corl recognition request",
+  "metaTitle": "Using Curl",
+  "metaDescription": "",
+  "sectionTitle": "Using Curl",
+  "icon": "",
+  "weight": 2,
+  "uuid": "b0993bdf-23a0-40e7-a16e-8f4b56ab6d48",
+  "createdAt": "2022-09-20T07:30:20.000Z",
+  "updatedAt": "2024-05-27T19:58:24.000Z"
 }

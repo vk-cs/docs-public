@@ -5,9 +5,7 @@
   "metaTitle": "Virtual networks",
   "metaDescription": "",
   "sectionTitle": "Virtual networks",
-  "markdown": "Working with the [Virtual networks](/en/networks/vnet) service using Terraform.",
   "icon": "",
-
   "weight": 7,
   "uuid": "533d83cb-42fb-40ec-aa5f-2edc18ccea46"
 }

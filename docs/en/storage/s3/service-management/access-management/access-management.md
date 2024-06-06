@@ -1,0 +1,1 @@
+Available operations with resources from VK Cloud panel, as well as service functionality.

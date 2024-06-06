@@ -1,14 +1,13 @@
 {
-    "title": "Working with tokens",
-    "pageDescription": "How to create and manage various tokens.",
-    "shortDescription": "How to create and manage various tokens",
-    "metaTitle": "Working with tokens",
-    "metaDescription": "How to create and manage various tokens",
-    "sectionTitle": "Working with tokens",
-    "markdown": "",
-    "icon": "",
-    "weight": 1,
-    "createdAt": "2023-10-02T13:09:02.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z",
-    "uuid": "7ce53948-cc35-4fa6-9f96-639990c2b8f4"
+  "title": "Working with tokens",
+  "pageDescription": "How to create and manage various tokens.",
+  "shortDescription": "How to create and manage various tokens",
+  "metaTitle": "Working with tokens",
+  "metaDescription": "How to create and manage various tokens",
+  "sectionTitle": "Working with tokens",
+  "icon": "",
+  "weight": 1,
+  "createdAt": "2023-10-02T13:09:02.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z",
+  "uuid": "7ce53948-cc35-4fa6-9f96-639990c2b8f4"
 }

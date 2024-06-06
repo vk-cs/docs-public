@@ -1,0 +1,1 @@
+A Kubernetes cluster consists of master nodes and groups of worker nodes. This section explains the operations that can be performed on the cluster and its nodes.

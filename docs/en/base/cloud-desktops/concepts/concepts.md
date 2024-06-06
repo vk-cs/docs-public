@@ -1,0 +1,1 @@
+Description of the operating principles and design of the Cloud Desktop service in VK Cloud.

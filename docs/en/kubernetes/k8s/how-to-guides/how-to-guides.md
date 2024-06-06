@@ -1,0 +1,1 @@
+The Kubernetes cluster can be used for a wide variety of tasks and projects — it serves as a great platform for applications and helps ensure their interaction with end users. Here are the most popular use cases.

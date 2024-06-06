@@ -1,14 +1,13 @@
 {
-    "title": "Dynamic routing",
-    "pageDescription": "Adding, editing and deleting a BGP router, managing BGP neighbors и BGP announcements.",
-    "shortDescription": "Adding, editing and deleting a BGP router, managing BGP neighbors и BGP announcements",
-    "metaTitle": "Dynamic routing",
-    "metaDescription": "",
-    "sectionTitle": "Dynamic routing",
-    "markdown": "Adding, editing and deleting a BGP router, managing BGP neighbors и BGP announcements.",
-    "icon": "",
-    "weight": 4,
-    "uuid": "8f2eb4b0-dd96-4bfe-98fd-2dfbfa6ca8e3",
-    "createdAt": "2024-04-25T09:18:01.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Dynamic routing",
+  "pageDescription": "Adding, editing and deleting a BGP router, managing BGP neighbors и BGP announcements.",
+  "shortDescription": "Adding, editing and deleting a BGP router, managing BGP neighbors и BGP announcements",
+  "metaTitle": "Dynamic routing",
+  "metaDescription": "",
+  "sectionTitle": "Dynamic routing",
+  "icon": "",
+  "weight": 4,
+  "uuid": "8f2eb4b0-dd96-4bfe-98fd-2dfbfa6ca8e3",
+  "createdAt": "2024-04-25T09:18:01.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

@@ -1,0 +1,1 @@
+Billing refers to a set of operations for managing the balance of the project — such as depositing funds, controlling expenses, and creating invoices for payment.

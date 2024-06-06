@@ -5,12 +5,12 @@
   "metaTitle": "Партнерам",
   "metaDescription": "Информация о партнерской программе и личном кабинете партнера",
   "sectionTitle": "Партнерам",
-  "markdown": "",
   "icon": "",
   "weight": 4,
   "relativeSections": [
     {
       "partialPath": "/ru/tools-for-using-services/api/api-spec/partners-api"
-    }],
+    }
+  ],
   "uuid": "6249aa71-381f-4ca7-9851-56039b514415"
 }

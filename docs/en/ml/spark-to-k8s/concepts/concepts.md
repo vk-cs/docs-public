@@ -1,0 +1,1 @@
+Description of the basic concepts when working with the Cloud Spark service.

@@ -1,0 +1,1 @@
+The section describes the capabilities of the service and language for filtering logs.

@@ -1,0 +1,1 @@
+The Cloud Databases service supports a number of DBMS available for deployment in VK Cloud. A different [configuration](/en/dbs/dbaas/concepts/work-configs) can be deployed for each type.

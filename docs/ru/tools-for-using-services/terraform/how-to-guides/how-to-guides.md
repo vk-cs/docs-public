@@ -1,0 +1,1 @@
+Использование Terraform в VK Cloud.

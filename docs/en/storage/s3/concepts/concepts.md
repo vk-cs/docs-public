@@ -1,0 +1,1 @@
+Detailed description of the principles of operation and device of the Cloud Storage.
