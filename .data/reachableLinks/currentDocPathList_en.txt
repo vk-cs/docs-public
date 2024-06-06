@@ -310,6 +310,7 @@
 /docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule
 /docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager
 /docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry
+/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit
 /docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration
 /docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress
 /docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-istio
