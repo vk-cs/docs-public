@@ -5,7 +5,6 @@
   "metaTitle": "Advanced routers",
   "metaDescription": "",
   "sectionTitle": "Advanced routers",
-  "markdown": "Managing advanced routers in the Cloud Networks service. Advanced routers are only available with [SDN Sprut](../../concepts/architecture#ispolzuemye_sdn). To find out which SDN is used in your project or to connect another, contact [technical support](/en/contacts).",
   "icon": "",
   "weight": 6,
   "uuid": "c8a75c4d-ba9c-40cf-9103-81016972a878"

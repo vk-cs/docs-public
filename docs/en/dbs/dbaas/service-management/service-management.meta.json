@@ -5,9 +5,7 @@
   "metaTitle": "Service management",
   "metaDescription": "Standard operations for managing VK Cloud DBMS instances and their resources.",
   "sectionTitle": "Service management",
-  "markdown": "Standard operations for managing VK Cloud DBMS instances and their resources.",
   "icon": "",
-
   "weight": 4,
   "additionalUuids": [
     "c49e8863-b285-4750-8203-8576adc746ab",

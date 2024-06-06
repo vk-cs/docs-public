@@ -1,0 +1,1 @@
+Работа с [сервисом Cloud Databases](/ru/dbs/dbaas) с использованием Terraform.

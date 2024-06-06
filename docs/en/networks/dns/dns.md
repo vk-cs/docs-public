@@ -1,0 +1,1 @@
+DNS is a hierarchical distributed database that allows storing IP addresses and other data, and viewing DNS names information. VK Cloud allows publishing DNS zones and records, requiring no deployment of on-premise DNS service.

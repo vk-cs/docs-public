@@ -5,9 +5,7 @@
   "metaTitle": "Connecting to storage",
   "metaDescription": "Connecting to Cloud Storage using CLI, File managers, SDK.",
   "sectionTitle": "Connecting to storage",
-  "markdown": "Connecting to Cloud Storage using CLI, File managers, SDK.",
   "icon": "",
-
   "weight": 3,
   "uuid": "56fae007-5cd4-438a-a5d4-3e4603ce9a75"
 }

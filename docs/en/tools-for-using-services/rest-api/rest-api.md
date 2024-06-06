@@ -1,0 +1,1 @@
+Interaction with VK Cloud API is performed through endpoints. In some cases, a token will be required for authentication.

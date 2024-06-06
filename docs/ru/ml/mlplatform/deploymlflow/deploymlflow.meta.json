@@ -5,13 +5,13 @@
   "metaTitle": "MLflow Deploy",
   "metaDescription": "Собирает ML-модели в Docker-контейнеры и делает их доступными по REST API",
   "sectionTitle": "MLflow Deploy",
-  "markdown": "Этот раздел описывает, как создать инстанс MLflow Deploy и управлять им.",
   "icon": "",
   "weight": 5,
   "relativeSections": [
     {
       "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
       "title": "Создание инстанса MLflow Deploy с помощью Terraform"
-    }],
+    }
+  ],
   "uuid": "77116544-82da-41b3-a40a-863f8cd124f9"
 }

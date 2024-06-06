@@ -1,0 +1,1 @@
+Description of the principles of operation and design of the Data Platform UI Console service.

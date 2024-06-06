@@ -1,14 +1,13 @@
 {
-    "title": "Creating an MLflow instance",
-    "pageDescription": "How to create an MLflow instance using Terraform.",
-    "shortDescription": "",
-    "metaTitle": "Creating an MLflow instance",
-    "metaDescription": "How to create an MLflow instance using Terraform",
-    "sectionTitle": "Creating an MLflow instance",
-    "markdown": "",
-    "icon": "",
-    "weight": 2,
-    "uuid": "5dfc3087-4fb6-4912-8c0e-7eac46234c7d",
-    "createdAt": "2024-04-16T05:21:35.000Z",
-    "updatedAt": "2024-05-27T19:58:24.000Z"
+  "title": "Creating an MLflow instance",
+  "pageDescription": "How to create an MLflow instance using Terraform.",
+  "shortDescription": "",
+  "metaTitle": "Creating an MLflow instance",
+  "metaDescription": "How to create an MLflow instance using Terraform",
+  "sectionTitle": "Creating an MLflow instance",
+  "icon": "",
+  "weight": 2,
+  "uuid": "5dfc3087-4fb6-4912-8c0e-7eac46234c7d",
+  "createdAt": "2024-04-16T05:21:35.000Z",
+  "updatedAt": "2024-05-27T19:58:24.000Z"
 }

@@ -1,0 +1,1 @@
+VK Cloud provides tools and software packages for implementing a variety of tasks facing system administrators: from using basic services to high-load environments and landscapes. The section contains scenarios for solving popular problems, for which you can use the resources of the platform.

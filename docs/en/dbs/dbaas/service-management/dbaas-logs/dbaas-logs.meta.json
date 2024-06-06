@@ -1,13 +1,12 @@
 {
-    "title": "Getting database logs",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Getting database logs",
-    "metaDescription": "Важно\nЛоги баз данных доступны только для БД, созданных после 1 декабря 2020 года. В настоящее время реализована возможность получения логов для следующих",
-    "sectionTitle": "Getting database logs",
-    "markdown": "",
-    "icon": "",
-    "uuid": "fcce7858-28b6-49fd-8df5-d933a0517591",
-    "createdAt": "2023-05-05T09:02:32.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Getting database logs",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Getting database logs",
+  "metaDescription": "Важно\nЛоги баз данных доступны только для БД, созданных после 1 декабря 2020 года. В настоящее время реализована возможность получения логов для следующих",
+  "sectionTitle": "Getting database logs",
+  "icon": "",
+  "uuid": "fcce7858-28b6-49fd-8df5-d933a0517591",
+  "createdAt": "2023-05-05T09:02:32.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

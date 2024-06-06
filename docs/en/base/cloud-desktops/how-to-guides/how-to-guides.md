@@ -1,0 +1,1 @@
+The Cloud Desktop service allows you to organize work with virtual desktops to solve various problems. Here are some scenarios for additional configuration and use of your virtual desktops in the VK Cloud.

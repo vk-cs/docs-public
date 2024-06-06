@@ -1,14 +1,13 @@
 {
-    "title": "General description",
-    "pageDescription": "",
-    "shortDescription": "Service description and its advantages",
-    "metaTitle": "General description",
-    "metaDescription": "Vision is a technology for recognizing faces, objects, processes based on machine learning and artificial neural networks. Vision will automate and improve",
-    "sectionTitle": "General description",
-    "markdown": "",
-    "icon": "",
-    "weight": 1,
-    "uuid": "f0cb9be0-7082-4c84-bffb-b747a678a371",
-    "createdAt": "2023-05-10T07:33:28.000Z",
-    "updatedAt": "2024-05-27T19:58:24.000Z"
+  "title": "General description",
+  "pageDescription": "",
+  "shortDescription": "Service description and its advantages",
+  "metaTitle": "General description",
+  "metaDescription": "Vision is a technology for recognizing faces, objects, processes based on machine learning and artificial neural networks. Vision will automate and improve",
+  "sectionTitle": "General description",
+  "icon": "",
+  "weight": 1,
+  "uuid": "f0cb9be0-7082-4c84-bffb-b747a678a371",
+  "createdAt": "2023-05-10T07:33:28.000Z",
+  "updatedAt": "2024-05-27T19:58:24.000Z"
 }

@@ -1,14 +1,13 @@
 {
-    "title": "О сервисе",
-    "pageDescription": "Обзор сервиса CDN VK Cloud.",
-    "shortDescription": "Краткое описание устройства сервиса",
-    "metaTitle": "О сервисе",
-    "metaDescription": "Обзор устройства сервиса CDN VK Cloud",
-    "sectionTitle": "О сервисе",
-    "markdown": "Обзор сервиса CDN VK Cloud.",
-    "icon": "",
-    "weight": 0,
-    "uuid": "31a8a2f7-de31-4c5a-9778-b7fa2b9f7d43",
-    "createdAt": "2023-05-03T07:18:18.000Z",
-    "updatedAt": "2024-05-29T19:32:15.000Z"
+  "title": "О сервисе",
+  "pageDescription": "Обзор сервиса CDN VK Cloud.",
+  "shortDescription": "Краткое описание устройства сервиса",
+  "metaTitle": "О сервисе",
+  "metaDescription": "Обзор устройства сервиса CDN VK Cloud",
+  "sectionTitle": "О сервисе",
+  "icon": "",
+  "weight": 0,
+  "uuid": "31a8a2f7-de31-4c5a-9778-b7fa2b9f7d43",
+  "createdAt": "2023-05-03T07:18:18.000Z",
+  "updatedAt": "2024-05-29T19:32:15.000Z"
 }

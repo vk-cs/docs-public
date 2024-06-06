@@ -1,0 +1,1 @@
+VK Cloud поддерживает миграцию как отдельных ВМ, так и инфраструктуры в целом. Для первого рекомендуется использовать внешние инструменты (VM Ware, Hyper-V), для второго — [программное обеспечение Hystax](/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax), функционирующего на базе VK Cloud.

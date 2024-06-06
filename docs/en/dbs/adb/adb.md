@@ -1,0 +1,1 @@
+Arenadata DB is a powerful distributed analytical database based on Greenplum as a managed service. It is a massively parallel DBMS with linear scalability. Arenadata DB is used in mission-critical systems with large amounts of data, and is 20% faster than other DBMS.

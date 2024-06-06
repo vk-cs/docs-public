@@ -1,0 +1,1 @@
+Basic information about analytical massively parallel DBMS intended for storing and processing large amounts of data.
