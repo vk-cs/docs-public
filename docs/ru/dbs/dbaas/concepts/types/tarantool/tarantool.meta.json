@@ -1,13 +1,13 @@
 {
-  "title": "Tarantool",
-  "pageDescription": "Описание in-memory-платформы вычислений Tarantool для VK Cloud.",
-  "shortDescription": "",
-  "metaTitle": "Tarantool",
-  "metaDescription": "Описание in-memory-платформы вычислений Tarantool для VK Cloud.",
-  "sectionTitle": "Tarantool",
-  "icon": "",
-  "weight": 6,
-  "uuid": "e655dba7-5447-4e7d-ab22-ae291916f5af",
-  "createdAt": "2023-04-27T07:35:14.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Tarantool",
+    "pageDescription": "Описание in-memory-платформы вычислений Tarantool для VK Cloud.",
+    "shortDescription": "",
+    "metaTitle": "Tarantool",
+    "metaDescription": "Описание in-memory-платформы вычислений Tarantool для VK Cloud.",
+    "sectionTitle": "Tarantool",
+    "icon": "",
+    "weight": 6,
+    "uuid": "e655dba7-5447-4e7d-ab22-ae291916f5af",
+    "createdAt": "2023-04-27T07:35:14.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

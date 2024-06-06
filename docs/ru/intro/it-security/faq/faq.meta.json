@@ -1,20 +1,20 @@
 {
-  "title": "Вопросы и ответы",
-  "pageDescription": "Ответы на часто задаваемые вопросы об информационной безопасности VK Cloud.",
-  "shortDescription": "Ответы на часто задаваемые вопросы об информационной безопасности VK Cloud",
-  "metaTitle": "Вопросы и ответы",
-  "metaDescription": "Ответы на часто задаваемые вопросы об информационной безопасности VK Cloud.",
-  "sectionTitle": "Вопросы и ответы",
-  "icon": "",
-  "weight": 5,
-  "additionalUuids": [
-    "cab2e2d9-ee28-4458-b7c5-bcca1eec7d2f",
-    "6c8fe790-af31-4e07-8a39-8d275bd555e1",
-    "cf123175-2b56-437c-af7b-76b0bbef63e0",
-    "1a3ceab9-9225-46cf-ac65-b0b758a4f163",
-    "8602851d-f844-4f5d-b12b-d7beecb8c194"
-  ],
-  "uuid": "3b7c0baf-28b6-4dd3-8b76-537628516ad5",
-  "createdAt": "2024-05-13T11:54:48.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Вопросы и ответы",
+    "pageDescription": "Ответы на часто задаваемые вопросы об информационной безопасности VK Cloud.",
+    "shortDescription": "Ответы на часто задаваемые вопросы об информационной безопасности VK Cloud",
+    "metaTitle": "Вопросы и ответы",
+    "metaDescription": "Ответы на часто задаваемые вопросы об информационной безопасности VK Cloud.",
+    "sectionTitle": "Вопросы и ответы",
+    "icon": "",
+    "weight": 5,
+    "additionalUuids": [
+        "cab2e2d9-ee28-4458-b7c5-bcca1eec7d2f",
+        "6c8fe790-af31-4e07-8a39-8d275bd555e1",
+        "cf123175-2b56-437c-af7b-76b0bbef63e0",
+        "1a3ceab9-9225-46cf-ac65-b0b758a4f163",
+        "8602851d-f844-4f5d-b12b-d7beecb8c194"
+    ],
+    "uuid": "3b7c0baf-28b6-4dd3-8b76-537628516ad5",
+    "createdAt": "2024-05-13T11:54:48.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

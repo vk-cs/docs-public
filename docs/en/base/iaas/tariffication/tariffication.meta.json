@@ -1,13 +1,13 @@
 {
-  "title": "Tariffication",
-  "pageDescription": "How the Cloud Servers is charged, cost calculation.",
-  "shortDescription": "Rules of service charging, how to calculate the cost of using the service",
-  "metaTitle": "Tariffication",
-  "metaDescription": "How the Cloud Servers is charged, cost calculation.",
-  "sectionTitle": "Tariffication",
-  "icon": "",
-  "weight": 4,
-  "uuid": "d0c06f19-6e2a-45c2-8680-bd6e365b7cf2",
-  "createdAt": "2023-04-24T13:06:27.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Tariffication",
+    "pageDescription": "How the Cloud Servers is charged, cost calculation.",
+    "shortDescription": "Rules of service charging, how to calculate the cost of using the service",
+    "metaTitle": "Tariffication",
+    "metaDescription": "How the Cloud Servers is charged, cost calculation.",
+    "sectionTitle": "Tariffication",
+    "icon": "",
+    "weight": 4,
+    "uuid": "d0c06f19-6e2a-45c2-8680-bd6e365b7cf2",
+    "createdAt": "2023-04-24T13:06:27.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

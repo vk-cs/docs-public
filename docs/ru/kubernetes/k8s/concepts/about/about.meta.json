@@ -1,13 +1,13 @@
 {
-  "title": "О сервисе",
-  "pageDescription": "Обзор сервиса Cloud Containers в VK Cloud.",
-  "shortDescription": "Краткое описание возможностей сервиса и примеры задач, которые можно решить с его помощью",
-  "metaTitle": "О сервисе",
-  "metaDescription": "",
-  "sectionTitle": "О сервисе",
-  "icon": "",
-  "weight": 1,
-  "uuid": "f723bcfc-ae94-42c5-8e11-d400649e7cef",
-  "createdAt": "2022-12-15T08:05:18.000Z",
-  "updatedAt": "2024-05-27T19:58:24.000Z"
+    "title": "О сервисе",
+    "pageDescription": "Обзор сервиса Cloud Containers в VK Cloud.",
+    "shortDescription": "Краткое описание возможностей сервиса и примеры задач, которые можно решить с его помощью",
+    "metaTitle": "О сервисе",
+    "metaDescription": "",
+    "sectionTitle": "О сервисе",
+    "icon": "",
+    "weight": 1,
+    "uuid": "f723bcfc-ae94-42c5-8e11-d400649e7cef",
+    "createdAt": "2022-12-15T08:05:18.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

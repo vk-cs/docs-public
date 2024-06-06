@@ -1,13 +1,13 @@
 {
-  "title": "Ingress NGINX",
-  "pageDescription": "The configuration and installation of the Ingress controller addon is described here.",
-  "shortDescription": "",
-  "metaTitle": "Ingress NGINX",
-  "metaDescription": "Configuring and installing the Ingress controller addon",
-  "sectionTitle": "Ingress NGINX",
-  "icon": "",
-  "weight": 5,
-  "uuid": "2b6ffc85-38a5-4a34-8021-13ac4fafc0b5",
-  "createdAt": "2023-06-13T06:58:16.000Z",
-  "updatedAt": "2024-05-27T19:58:24.000Z"
+    "title": "Ingress NGINX",
+    "pageDescription": "The configuration and installation of the Ingress controller addon is described here.",
+    "shortDescription": "",
+    "metaTitle": "Ingress NGINX",
+    "metaDescription": "Configuring and installing the Ingress controller addon",
+    "sectionTitle": "Ingress NGINX",
+    "icon": "",
+    "weight": 5,
+    "uuid": "2b6ffc85-38a5-4a34-8021-13ac4fafc0b5",
+    "createdAt": "2023-06-13T06:58:16.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

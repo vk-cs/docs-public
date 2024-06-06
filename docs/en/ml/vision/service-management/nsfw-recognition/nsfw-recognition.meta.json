@@ -1,13 +1,13 @@
 {
-  "title": "Content recognition 18+",
-  "pageDescription": "Vision API methods for recognizing 18+ content in a photo",
-  "shortDescription": "API methods for recognizing 18+ content in a photo",
-  "metaTitle": "Content recognition 18+",
-  "metaDescription": "The method allows you to determine if there is NSFW content in the photo (18+)",
-  "sectionTitle": "Content recognition 18+",
-  "icon": "",
-  "weight": 8,
-  "uuid": "71566a39-1722-4366-80fe-92061240fed2",
-  "createdAt": "2023-07-03T05:49:27.000Z",
-  "updatedAt": "2024-05-27T19:58:24.000Z"
+    "title": "Content recognition 18+",
+    "pageDescription": "Vision API methods for recognizing 18+ content in a photo",
+    "shortDescription": "API methods for recognizing 18+ content in a photo",
+    "metaTitle": "Content recognition 18+",
+    "metaDescription": "The method allows you to determine if there is NSFW content in the photo (18+)",
+    "sectionTitle": "Content recognition 18+",
+    "icon": "",
+    "weight": 8,
+    "uuid": "71566a39-1722-4366-80fe-92061240fed2",
+    "createdAt": "2023-07-03T05:49:27.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

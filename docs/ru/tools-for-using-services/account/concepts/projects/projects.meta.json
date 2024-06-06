@@ -1,13 +1,13 @@
 {
-  "title": "Проекты",
-  "pageDescription": "Что такое проект в VK Cloud.",
-  "shortDescription": "Что такое проект в VK Cloud",
-  "metaTitle": "Проекты",
-  "metaDescription": "Что такое проект в VK Cloud.",
-  "sectionTitle": "Проекты",
-  "icon": "",
-  "weight": 0,
-  "uuid": "85a4309a-60d7-4576-b594-a311c112ec08",
-  "createdAt": "2022-12-23T10:06:30.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Проекты",
+    "pageDescription": "Что такое проект в VK Cloud.",
+    "shortDescription": "Что такое проект в VK Cloud",
+    "metaTitle": "Проекты",
+    "metaDescription": "Что такое проект в VK Cloud.",
+    "sectionTitle": "Проекты",
+    "icon": "",
+    "weight": 0,
+    "uuid": "85a4309a-60d7-4576-b594-a311c112ec08",
+    "createdAt": "2022-12-23T10:06:30.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

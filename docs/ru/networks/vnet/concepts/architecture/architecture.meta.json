@@ -1,13 +1,13 @@
 {
-  "title": "Архитектура сервиса",
-  "pageDescription": "Архитектура сервиса виртуальных сетей VK Cloud.",
-  "shortDescription": "Как устроен сервис",
-  "metaTitle": "Архитектура сервиса",
-  "metaDescription": "",
-  "sectionTitle": "Архитектура сервиса",
-  "icon": "",
-  "weight": 2,
-  "uuid": "ab284798-bdb7-4a27-aece-7bc3666ea94b",
-  "createdAt": "2022-12-27T09:51:35.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Архитектура сервиса",
+    "pageDescription": "Архитектура сервиса виртуальных сетей VK Cloud.",
+    "shortDescription": "Как устроен сервис",
+    "metaTitle": "Архитектура сервиса",
+    "metaDescription": "",
+    "sectionTitle": "Архитектура сервиса",
+    "icon": "",
+    "weight": 2,
+    "uuid": "ab284798-bdb7-4a27-aece-7bc3666ea94b",
+    "createdAt": "2022-12-27T09:51:35.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

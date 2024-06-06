@@ -1,13 +1,13 @@
 {
-  "title": "Functions and groupings of metrics",
-  "pageDescription": "",
-  "shortDescription": "Available functions and groupings for collected metrics",
-  "metaTitle": "Functions and groupings of metrics",
-  "metaDescription": "Cloud Monitoring предоставляет API для получения значения метрик. Сейчас реализована поддержка подмножества языка PromQL для работы с метриками на осно",
-  "sectionTitle": "Functions and groupings of metrics",
-  "icon": "",
-  "weight": 3,
-  "uuid": "ee308a06-5eea-4d67-b01a-a1e1790e913e",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Functions and groupings of metrics",
+    "pageDescription": "",
+    "shortDescription": "Available functions and groupings for collected metrics",
+    "metaTitle": "Functions and groupings of metrics",
+    "metaDescription": "Cloud Monitoring предоставляет API для получения значения метрик. Сейчас реализована поддержка подмножества языка PromQL для работы с метриками на осно",
+    "sectionTitle": "Functions and groupings of metrics",
+    "icon": "",
+    "weight": 3,
+    "uuid": "ee308a06-5eea-4d67-b01a-a1e1790e913e",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

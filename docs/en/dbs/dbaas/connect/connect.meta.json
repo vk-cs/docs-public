@@ -1,16 +1,16 @@
 {
-  "title": "Connecting to a database",
-  "pageDescription": "Connecting to databases via SSH or using an SDK.",
-  "shortDescription": "How to connect to the database via SSH or SDK",
-  "metaTitle": "Connecting to a database",
-  "metaDescription": "Connecting to databases via SSH or using the SDK.",
-  "sectionTitle": "Connecting to a database",
-  "icon": "",
-  "weight": 3,
-  "uuid": "0429ed53-28a0-4f82-baa9-6170e547a992",
-  "additionalUuids": [
-    "d2ca299d-f20e-4618-9fbc-3fb3bb7ad386"
-  ],
-  "createdAt": "2023-06-28T08:59:32.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Connecting to a database",
+    "pageDescription": "Connecting to databases via SSH or using an SDK.",
+    "shortDescription": "How to connect to the database via SSH or SDK",
+    "metaTitle": "Connecting to a database",
+    "metaDescription": "Connecting to databases via SSH or using the SDK.",
+    "sectionTitle": "Connecting to a database",
+    "icon": "",
+    "weight": 3,
+    "uuid": "0429ed53-28a0-4f82-baa9-6170e547a992",
+    "additionalUuids": [
+        "d2ca299d-f20e-4618-9fbc-3fb3bb7ad386"
+    ],
+    "createdAt": "2023-06-28T08:59:32.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

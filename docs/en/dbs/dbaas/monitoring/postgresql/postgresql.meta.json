@@ -1,12 +1,12 @@
 {
-  "title": "Monitoring PostgreSQL",
-  "pageDescription": "Monitoring the health of PostgreSQL instances with detailed metrics for individual hosts (both masters and replicas).",
-  "shortDescription": "Monitoring deployed PostgreSQL instances",
-  "metaTitle": "PostgreSQL Monitoring",
-  "metaDescription": "",
-  "sectionTitle": "Monitoring PostgreSQL",
-  "icon": "",
-  "uuid": "5df5a2ca-427b-48cc-8409-ce5c61490496",
-  "createdAt": "2023-03-17T13:58:06.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Monitoring PostgreSQL",
+    "pageDescription": "Monitoring the health of PostgreSQL instances with detailed metrics for individual hosts (both masters and replicas).",
+    "shortDescription": "Monitoring deployed PostgreSQL instances",
+    "metaTitle": "PostgreSQL Monitoring",
+    "metaDescription": "",
+    "sectionTitle": "Monitoring PostgreSQL",
+    "icon": "",
+    "uuid": "5df5a2ca-427b-48cc-8409-ce5c61490496",
+    "createdAt": "2023-03-17T13:58:06.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

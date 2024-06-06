@@ -1,12 +1,12 @@
 {
-  "title": "Deleting a DB instance",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Deleting a DB instance",
-  "metaDescription": "Для удаления инстанса достаточно в контекстном меню выбрать пункт",
-  "sectionTitle": "Deleting a DB instance",
-  "icon": "",
-  "uuid": "393fd594-cb20-466a-9379-5f5aeb395fae",
-  "createdAt": "2023-05-05T09:02:32.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Deleting a DB instance",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Deleting a DB instance",
+    "metaDescription": "Для удаления инстанса достаточно в контекстном меню выбрать пункт",
+    "sectionTitle": "Deleting a DB instance",
+    "icon": "",
+    "uuid": "393fd594-cb20-466a-9379-5f5aeb395fae",
+    "createdAt": "2023-05-05T09:02:32.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

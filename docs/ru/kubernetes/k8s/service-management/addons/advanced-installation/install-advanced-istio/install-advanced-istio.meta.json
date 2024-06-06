@@ -1,13 +1,13 @@
 {
-  "title": "Istio",
-  "pageDescription": "Здесь описана настройка и установка аддона Istio.",
-  "shortDescription": "",
-  "metaTitle": "Istio",
-  "metaDescription": "Сервис Cloud Containers в VK Cloud: настройка и установка аддона Istio.",
-  "sectionTitle": "Istio",
-  "icon": "",
-  "weight": 6,
-  "uuid": "c3e79646-0801-4dcc-a738-a825ca1c50b8",
-  "createdAt": "2023-06-14T08:45:10.000Z",
-  "updatedAt": "2024-05-27T19:58:24.000Z"
+    "title": "Istio",
+    "pageDescription": "Здесь описана настройка и установка аддона Istio.",
+    "shortDescription": "",
+    "metaTitle": "Istio",
+    "metaDescription": "Сервис Cloud Containers в VK Cloud: настройка и установка аддона Istio.",
+    "sectionTitle": "Istio",
+    "icon": "",
+    "weight": 6,
+    "uuid": "c3e79646-0801-4dcc-a738-a825ca1c50b8",
+    "createdAt": "2023-06-14T08:45:10.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

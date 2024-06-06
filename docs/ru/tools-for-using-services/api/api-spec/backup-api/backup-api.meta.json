@@ -1,13 +1,13 @@
 {
-  "title": "Cloud Backup",
-  "pageDescription": "",
-  "shortDescription": "OpenAPI-спецификация сервиса Cloud Backup",
-  "metaTitle": "Cloud Backup",
-  "metaDescription": "",
-  "sectionTitle": "Cloud Backup",
-  "icon": "",
-  "weight": 0,
-  "uuid": "b7710706-2554-40c7-b180-2015f9b4c15d",
-  "createdAt": "2022-12-15T13:23:52.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Cloud Backup",
+    "pageDescription": "",
+    "shortDescription": "OpenAPI-спецификация сервиса Cloud Backup",
+    "metaTitle": "Cloud Backup",
+    "metaDescription": "",
+    "sectionTitle": "Cloud Backup",
+    "icon": "",
+    "weight": 0,
+    "uuid": "b7710706-2554-40c7-b180-2015f9b4c15d",
+    "createdAt": "2022-12-15T13:23:52.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

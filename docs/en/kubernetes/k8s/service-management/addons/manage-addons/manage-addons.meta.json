@@ -1,13 +1,13 @@
 {
-  "title": "Addons management",
-  "pageDescription": "This section describes the operations that can be used to manage Kubernetes cluster addons. Each operation is accompanied by step-by-step instructions.",
-  "shortDescription": "How to view, install and remove addons in a Kubernetes cluster",
-  "metaTitle": "Addons management",
-  "metaDescription": "How to view, install and remove addons in a Kubernetes cluster",
-  "sectionTitle": "Addons management",
-  "icon": "",
-  "weight": 1,
-  "uuid": "90b8ebf7-4164-4e6f-b389-8fd206b357b4",
-  "createdAt": "2023-06-13T06:58:16.000Z",
-  "updatedAt": "2024-05-27T19:58:24.000Z"
+    "title": "Addons management",
+    "pageDescription": "This section describes the operations that can be used to manage Kubernetes cluster addons. Each operation is accompanied by step-by-step instructions.",
+    "shortDescription": "How to view, install and remove addons in a Kubernetes cluster",
+    "metaTitle": "Addons management",
+    "metaDescription": "How to view, install and remove addons in a Kubernetes cluster",
+    "sectionTitle": "Addons management",
+    "icon": "",
+    "weight": 1,
+    "uuid": "90b8ebf7-4164-4e6f-b389-8fd206b357b4",
+    "createdAt": "2023-06-13T06:58:16.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

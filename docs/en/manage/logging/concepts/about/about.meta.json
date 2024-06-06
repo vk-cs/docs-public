@@ -1,13 +1,13 @@
 {
-  "title": "About the service",
-  "pageDescription": "",
-  "shortDescription": "Information about the service and its capabilities",
-  "metaTitle": "About the service",
-  "metaDescription": "",
-  "sectionTitle": "About the service",
-  "icon": "",
-  "weight": 1,
-  "uuid": "ac6cfa5b-10a1-4012-b7d5-6b26d7bfeff8",
-  "createdAt": "2022-12-27T15:32:39.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "About the service",
+    "pageDescription": "",
+    "shortDescription": "Information about the service and its capabilities",
+    "metaTitle": "About the service",
+    "metaDescription": "",
+    "sectionTitle": "About the service",
+    "icon": "",
+    "weight": 1,
+    "uuid": "ac6cfa5b-10a1-4012-b7d5-6b26d7bfeff8",
+    "createdAt": "2022-12-27T15:32:39.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

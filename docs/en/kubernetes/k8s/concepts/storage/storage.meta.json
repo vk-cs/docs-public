@@ -1,13 +1,13 @@
 {
-  "title": "Storage in cluster",
-  "pageDescription": "Each Cloud Containers cluster is tightly integrated with storage services and allows you to create persistent volumes based on them. Here's how that integration works.",
-  "shortDescription": "Integration of Kubernetes clusters with storage services",
-  "metaTitle": "Storage in cluster",
-  "metaDescription": "",
-  "sectionTitle": "Storage in cluster",
-  "icon": "",
-  "weight": 5,
-  "uuid": "00d84a35-fd8d-49cc-87bc-20e6347bfb84",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2024-05-27T19:58:24.000Z"
+    "title": "Storage in cluster",
+    "pageDescription": "Each Cloud Containers cluster is tightly integrated with storage services and allows you to create persistent volumes based on them. Here's how that integration works.",
+    "shortDescription": "Integration of Kubernetes clusters with storage services",
+    "metaTitle": "Storage in cluster",
+    "metaDescription": "",
+    "sectionTitle": "Storage in cluster",
+    "icon": "",
+    "weight": 5,
+    "uuid": "00d84a35-fd8d-49cc-87bc-20e6347bfb84",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }
