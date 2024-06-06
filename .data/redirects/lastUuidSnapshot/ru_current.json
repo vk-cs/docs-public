@@ -530,6 +530,7 @@
   "c714f428-39cf-46ab-bf73-e2e8aef5d94a": "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule",
   "a1add7ee-640c-429c-b402-3e1423be114b": "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager",
   "26b744ec-cca5-47e2-8ade-1fd1ad250f5e": "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
+  "f2d4b435-dc7d-4dca-9889-3f15eb85ba37": "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
   "d26578b5-6854-49c6-8d36-ad8402bfe188": "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
   "5ffee9e3-63ea-49f2-96b9-b9cc25fa0be4": "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
   "c3e79646-0801-4dcc-a738-a825ca1c50b8": "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-istio",

@@ -4073,6 +4073,18 @@
   ],
   [
     "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
+    "http://localhost:3000/docs/en/kubernetes/k8s/reference/pods"
+  ],
+  [
+    "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/settings#limits_settings_for_pods"
+  ],
+  [
+    "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
+    "http://localhost:3000/docs/en/manage/logging"
+  ],
+  [
+    "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
     "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration"
   ],
   [
@@ -4093,7 +4105,7 @@
   ],
   [
     "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress#installing_the_addon"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress#installing_addon"
   ],
   [
     "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
@@ -4625,7 +4637,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule#editing_the_addon_setup_code_during_installation"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule#editing_addon_settings_code_during_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule",
@@ -4649,7 +4661,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule#editing_the_addon_setup_code_during_installation"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule#editing_addon_settings_code_during_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule",
@@ -4665,7 +4677,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule#installing_the_addon"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule#installing_addon"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager",
@@ -4681,7 +4693,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager#editing_the_addon_setup_code_during_installation"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager#editing_addon_settings_code_during_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager",
@@ -4705,7 +4717,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager#editing_the_addon_setup_code_during_installation"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager#editing_addon_settings_code_during_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager",
@@ -4721,7 +4733,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager#installing_the_addon"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager#installing_addon"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
@@ -4757,7 +4769,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry#editing_the_addon_setup_code_during_installation"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry#editing_addon_settings_code_during_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
@@ -4789,7 +4801,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry#editing_the_addon_setup_code_during_installation"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry#editing_addon_settings_code_during_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
@@ -4801,11 +4813,31 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry#installing_the_addon"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry#installing_addon"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
     "http://localhost:3000/docs/en/kubernetes/k8s/connect/docker-registry"
+  ],
+  [
+    "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/addons#features_of_installing_addons"
+  ],
+  [
+    "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af"
+  ],
+  [
+    "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit#editing_addon_settings_code_during_installation"
+  ],
+  [
+    "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
+    "http://localhost:3000/docs/ru/manage/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit#installing_addon"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
@@ -4821,7 +4853,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration#editing_the_addon_setup_code_during_installation"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration#editing_addon_settings_code_during_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
@@ -4869,7 +4901,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress#editing_the_addon_setup_code_during_installation"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress#editing_addon_settings_code_during_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
@@ -4901,7 +4933,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress#editing_the_addon_setup_code_during_installation"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress#editing_addon_settings_code_during_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
@@ -4917,11 +4949,11 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress#installing_the_addon"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress#installing_addon"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress#installing_the_addon"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress#installing_addon"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
@@ -5009,7 +5041,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger#editing_the_addon_setup_code_during_installation"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger#editing_addon_settings_code_during_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
@@ -5033,7 +5065,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger#editing_the_addon_setup_code_during_installation"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger#editing_addon_settings_code_during_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
@@ -5057,7 +5089,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger#installing_the_addon"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger#installing_addon"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali",
@@ -5077,7 +5109,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali#editing_the_addon_setup_code_during_installation"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali#editing_addon_settings_code_during_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali",
@@ -5109,7 +5141,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali#editing_the_addon_setup_code_during_installation"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali#editing_addon_settings_code_during_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali",
@@ -5125,7 +5157,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali#installing_the_addon"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali#installing_addon"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring",
@@ -5141,7 +5173,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring#editing_addon_setup_code_during_installation"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring#editing_addon_settings_code_during_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring",
@@ -5177,7 +5209,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring#editing_addon_setup_code_during_installation"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring#editing_addon_settings_code_during_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring",
@@ -12985,6 +13017,18 @@
   ],
   [
     "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/reference/pods"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/addons-and-settings/settings#nastroyki_limitov_dlya_podov"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",
+    "http://localhost:3000/docs/ru/manage/logging"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/addons-and-settings/addons",
     "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration"
   ],
   [
@@ -13758,6 +13802,26 @@
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
     "http://localhost:3000/docs/ru/kubernetes/k8s/connect/docker-registry"
+  ],
+  [
+    "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/addons-and-settings/addons#osobennosti_ustanovki_addonov"
+  ],
+  [
+    "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#nastroyka_avtomaticheskogo_masshtabirovaniya_grupp_worker_uzlov_1f8b2c54"
+  ],
+  [
+    "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit#redaktirovanie_koda_nastroyki_addona_pri_ustanovke"
+  ],
+  [
+    "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
+    "http://localhost:3000/docs/ru/manage/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit#ustanovka_addona"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",

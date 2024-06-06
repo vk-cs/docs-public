@@ -9,6 +9,11 @@
     "full": "Features of installing add-ons",
     "text": "Features of installing add-ons"
   },
+  "available_addons": {
+    "number": null,
+    "full": "Available add-ons",
+    "text": "Available add-ons"
+  },
   "istio": {
     "number": null,
     "full": "Istio",
@@ -24,9 +29,24 @@
     "full": "Kube Prometheus Stack",
     "text": "Kube Prometheus Stack"
   },
+  "installing_addon": {
+    "number": null,
+    "full": "Installing add-on",
+    "text": "Installing add-on"
+  },
+  "editing_addon_settings_code_during_installation": {
+    "number": null,
+    "full": "Editing add-on settings code during installation)",
+    "text": "Editing add-on settings code during installation)"
+  },
   "az": {
     "number": null,
     "full": "Зоны доступности",
     "text": "Зоны доступности"
+  },
+  "fluent_bit_logaas_integration": {
+    "number": null,
+    "full": "Fluent Bit для Cloud Logging (logaas-integration)",
+    "text": "Fluent Bit для Cloud Logging (logaas-integration)"
   }
 }

@@ -1,13 +1,13 @@
 {
-  "title": "Конфигурация Кластер",
-  "pageDescription": "Создание инстанса БД в конфигурации Кластер в VK Cloud.",
-  "shortDescription": "Как развернуть инстанс БД в конфигурации Кластер",
-  "metaTitle": "Конфигурация Кластер",
-  "metaDescription": "Cloud Databases VK Cloud: создание инстанса БД в конфигурации Кластер",
-  "sectionTitle": "Конфигурация Кластер",
-  "icon": "",
-  "weight": 2,
-  "createdAt": "2023-08-02T08:33:55.000Z",
-  "updatedAt": "2024-05-28T17:21:33.000Z",
-  "uuid": "c7067e25-8eae-40c1-81c4-d5787bfda578"
+    "title": "Конфигурация Кластер",
+    "pageDescription": "Создание инстанса БД в конфигурации Кластер в VK Cloud.",
+    "shortDescription": "Как развернуть инстанс БД в конфигурации Кластер",
+    "metaTitle": "Конфигурация Кластер",
+    "metaDescription": "Cloud Databases VK Cloud: создание инстанса БД в конфигурации Кластер",
+    "sectionTitle": "Конфигурация Кластер",
+    "icon": "",
+    "weight": 2,
+    "createdAt": "2023-08-02T08:33:55.000Z",
+    "updatedAt": "2024-06-06T17:26:47.000Z",
+    "uuid": "c7067e25-8eae-40c1-81c4-d5787bfda578"
 }
