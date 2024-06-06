@@ -1,16 +1,16 @@
 {
-  "title": "Firewall rules",
-  "pageDescription": "A security group is a set of custom permissive traffic rules that can be assigned to instance ports. The firewall uses these groups to control traffic.",
-  "shortDescription": "How to create and delete security groups and more",
-  "metaTitle": "Firewall rules",
-  "metaDescription": "",
-  "sectionTitle": "Firewall rules",
-  "icon": "",
-  "weight": 3,
-  "uuid": "749d3f26-cda0-4379-a807-3f4df4e7acc3",
-  "additionalUuids": [
-    "267a104a-7b16-4295-b009-7aca075dcf17"
-  ],
-  "createdAt": "2023-03-17T04:38:48.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Firewall rules",
+    "pageDescription": "A security group is a set of custom permissive traffic rules that can be assigned to instance ports. The firewall uses these groups to control traffic.",
+    "shortDescription": "How to create and delete security groups and more",
+    "metaTitle": "Firewall rules",
+    "metaDescription": "",
+    "sectionTitle": "Firewall rules",
+    "icon": "",
+    "weight": 3,
+    "uuid": "749d3f26-cda0-4379-a807-3f4df4e7acc3",
+    "additionalUuids": [
+        "267a104a-7b16-4295-b009-7aca075dcf17"
+    ],
+    "createdAt": "2023-03-17T04:38:48.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

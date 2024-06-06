@@ -1,13 +1,13 @@
 {
-  "title": "Cloud Desktop",
-  "pageDescription": "Справка по Cloud Desktop API",
-  "shortDescription": "OpenAPI-спецификация сервиса Cloud Desktop",
-  "metaTitle": "Cloud Desktop",
-  "metaDescription": "Справка по Cloud Desktop API",
-  "sectionTitle": "Cloud Desktop",
-  "icon": "",
-  "weight": 15,
-  "uuid": "6fefb25f-833a-4205-9fd8-0b1fdff0c1dd",
-  "createdAt": "2024-03-19T14:14:34.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Cloud Desktop",
+    "pageDescription": "Справка по Cloud Desktop API",
+    "shortDescription": "OpenAPI-спецификация сервиса Cloud Desktop",
+    "metaTitle": "Cloud Desktop",
+    "metaDescription": "Справка по Cloud Desktop API",
+    "sectionTitle": "Cloud Desktop",
+    "icon": "",
+    "weight": 15,
+    "uuid": "6fefb25f-833a-4205-9fd8-0b1fdff0c1dd",
+    "createdAt": "2024-03-19T14:14:34.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

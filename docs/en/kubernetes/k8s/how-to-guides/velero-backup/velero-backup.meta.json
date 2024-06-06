@@ -1,13 +1,13 @@
 {
-  "title": "Backup with Velero",
-  "pageDescription": "How to use Velero to back up and restore Kubernetes cluster resources.",
-  "shortDescription": "How to use Velero to back up and restore Kubernetes cluster resources",
-  "metaTitle": "Backup with Velero",
-  "metaDescription": "",
-  "sectionTitle": "Backup with Velero",
-  "icon": "",
-  "weight": 6,
-  "uuid": "9e12acd2-4d24-4b59-8eb4-73a642a19312",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2024-05-27T19:58:24.000Z"
+    "title": "Backup with Velero",
+    "pageDescription": "How to use Velero to back up and restore Kubernetes cluster resources.",
+    "shortDescription": "How to use Velero to back up and restore Kubernetes cluster resources",
+    "metaTitle": "Backup with Velero",
+    "metaDescription": "",
+    "sectionTitle": "Backup with Velero",
+    "icon": "",
+    "weight": 6,
+    "uuid": "9e12acd2-4d24-4b59-8eb4-73a642a19312",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

@@ -1,18 +1,18 @@
 {
-  "title": "Registration in VK Cloud",
-  "pageDescription": "Creating an account in the platform's personal account, activating API access.",
-  "shortDescription": "Creating an account in the platform's personal account, activating API access",
-  "metaTitle": "Registration in VK Cloud",
-  "metaDescription": "Creating an account in the platform's personal account, activating API access",
-  "sectionTitle": "Registration in VK Cloud",
-  "icon": "",
-  "weight": 2,
-  "additionalUuids": [
-    "312e8ee3-0ec8-4167-960e-b9c2374f4dfc",
-    "a5b8146c-623d-4497-97a0-137f624f7bfc",
-    "69527fd7-61ff-4846-a89e-af9f4d60a6df"
-  ],
-  "uuid": "06da76c0-a256-4e4d-a3a3-ef75a2b20dac",
-  "createdAt": "2023-02-07T17:15:50.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Registration in VK Cloud",
+    "pageDescription": "Creating an account in the platform's personal account, activating API access.",
+    "shortDescription": "Creating an account in the platform's personal account, activating API access",
+    "metaTitle": "Registration in VK Cloud",
+    "metaDescription": "Creating an account in the platform's personal account, activating API access",
+    "sectionTitle": "Registration in VK Cloud",
+    "icon": "",
+    "weight": 2,
+    "additionalUuids": [
+        "312e8ee3-0ec8-4167-960e-b9c2374f4dfc",
+        "a5b8146c-623d-4497-97a0-137f624f7bfc",
+        "69527fd7-61ff-4846-a89e-af9f4d60a6df"
+    ],
+    "uuid": "06da76c0-a256-4e4d-a3a3-ef75a2b20dac",
+    "createdAt": "2023-02-07T17:15:50.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

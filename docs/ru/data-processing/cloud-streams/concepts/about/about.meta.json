@@ -1,13 +1,13 @@
 {
-  "title": "О сервисе",
-  "pageDescription": "Преимущества Cloud Streams",
-  "shortDescription": "Преимущества дистрибутива Cloud Streams",
-  "metaTitle": "О сервисе",
-  "metaDescription": "Преимущества Cloud Streams",
-  "sectionTitle": "О сервисе",
-  "icon": "",
-  "weight": 0,
-  "uuid": "2e1f7082-9b05-48cb-ade1-8ee615dd8cfe",
-  "createdAt": "2023-05-31T09:51:29.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "О сервисе",
+    "pageDescription": "Преимущества Cloud Streams",
+    "shortDescription": "Преимущества дистрибутива Cloud Streams",
+    "metaTitle": "О сервисе",
+    "metaDescription": "Преимущества Cloud Streams",
+    "sectionTitle": "О сервисе",
+    "icon": "",
+    "weight": 0,
+    "uuid": "2e1f7082-9b05-48cb-ade1-8ee615dd8cfe",
+    "createdAt": "2023-05-31T09:51:29.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

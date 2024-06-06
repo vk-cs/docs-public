@@ -1,13 +1,13 @@
 {
-  "title": "About service",
-  "pageDescription": "VK cloud containers (Kubernetes) service overview.",
-  "shortDescription": "A brief description of the service's features and examples of tasks that can be solved with it.",
-  "metaTitle": "About service",
-  "metaDescription": "",
-  "sectionTitle": "About service",
-  "icon": "",
-  "weight": 1,
-  "uuid": "a03032dc-1ebe-4e75-a08b-37fd7d8daad7",
-  "createdAt": "2023-01-13T09:20:35.000Z",
-  "updatedAt": "2024-05-27T19:58:24.000Z"
+    "title": "About service",
+    "pageDescription": "VK cloud containers (Kubernetes) service overview.",
+    "shortDescription": "A brief description of the service's features and examples of tasks that can be solved with it.",
+    "metaTitle": "About service",
+    "metaDescription": "",
+    "sectionTitle": "About service",
+    "icon": "",
+    "weight": 1,
+    "uuid": "a03032dc-1ebe-4e75-a08b-37fd7d8daad7",
+    "createdAt": "2023-01-13T09:20:35.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

@@ -1,13 +1,13 @@
 {
-  "title": "About service",
-  "pageDescription": "",
-  "shortDescription": "Description of the main features of the service 1C:GRM in VK Cloud",
-  "metaTitle": "About service",
-  "metaDescription": "With the help of ready-made infrastructure solutions, VK Cloud, in partnership with 1C Firm, provides an opportunity to quickly connect the entire range of clou",
-  "sectionTitle": "About service",
-  "icon": "",
-  "weight": 1,
-  "uuid": "bb21c270-567d-44f5-82cc-1f336d3857a6",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "About service",
+    "pageDescription": "",
+    "shortDescription": "Description of the main features of the service 1C:GRM in VK Cloud",
+    "metaTitle": "About service",
+    "metaDescription": "With the help of ready-made infrastructure solutions, VK Cloud, in partnership with 1C Firm, provides an opportunity to quickly connect the entire range of clou",
+    "sectionTitle": "About service",
+    "icon": "",
+    "weight": 1,
+    "uuid": "bb21c270-567d-44f5-82cc-1f336d3857a6",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

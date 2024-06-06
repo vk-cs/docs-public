@@ -1,13 +1,13 @@
 {
-  "title": "Speech recognition",
-  "pageDescription": "",
-  "shortDescription": "Methods for recognizing audio files and streaming audio",
-  "metaTitle": "Speech recognition",
-  "metaDescription": "",
-  "sectionTitle": "Speech recognition",
-  "icon": "",
-  "weight": 3,
-  "uuid": "b7004cb9-462c-40cf-a471-1163246ec17c",
-  "createdAt": "2022-07-29T01:42:00.000Z",
-  "updatedAt": "2024-05-27T19:58:24.000Z"
+    "title": "Speech recognition",
+    "pageDescription": "",
+    "shortDescription": "Methods for recognizing audio files and streaming audio",
+    "metaTitle": "Speech recognition",
+    "metaDescription": "",
+    "sectionTitle": "Speech recognition",
+    "icon": "",
+    "weight": 3,
+    "uuid": "b7004cb9-462c-40cf-a471-1163246ec17c",
+    "createdAt": "2022-07-29T01:42:00.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

@@ -1,13 +1,13 @@
 {
-  "title": "Managing interfaces",
-  "pageDescription": "Adding and deleting interfaces of advanced router.",
-  "shortDescription": "Adding and deleting interfaces of advanced router",
-  "metaTitle": "Managing interfaces",
-  "metaDescription": "",
-  "sectionTitle": "Managing interfaces",
-  "icon": "",
-  "weight": 2,
-  "uuid": "51df0506-57ab-4ded-ab7f-88743d6d3f03",
-  "createdAt": "2024-04-25T09:18:01.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Managing interfaces",
+    "pageDescription": "Adding and deleting interfaces of advanced router.",
+    "shortDescription": "Adding and deleting interfaces of advanced router",
+    "metaTitle": "Managing interfaces",
+    "metaDescription": "",
+    "sectionTitle": "Managing interfaces",
+    "icon": "",
+    "weight": 2,
+    "uuid": "51df0506-57ab-4ded-ab7f-88743d6d3f03",
+    "createdAt": "2024-04-25T09:18:01.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }
