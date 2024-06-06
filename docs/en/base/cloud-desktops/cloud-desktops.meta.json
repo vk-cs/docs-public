@@ -5,9 +5,7 @@
   "metaTitle": "Cloud Desktop",
   "metaDescription": "Providing users with desktops on a remote server",
   "sectionTitle": "Cloud Desktop",
-  "markdown": "Cloud Desktop is a service based on the Virtual Desktop Infrastructure (VDI) technology. VDI is designed to provide users with desktops created on a remote server and operating in a virtualized environment.",
   "icon": "",
   "weight": 3,
-
   "uuid": "ea0b2b55-d2bc-4bbd-9d13-5a98b0683e12"
 }

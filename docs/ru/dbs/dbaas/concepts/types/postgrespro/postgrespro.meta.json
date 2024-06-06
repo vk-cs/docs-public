@@ -1,14 +1,13 @@
 {
-    "title": "Postgres Pro",
-    "pageDescription": "О СУБД Postgres Pro и ее версиях, доступных в VK Cloud.",
-    "shortDescription": "",
-    "metaTitle": "Postgres Pro",
-    "metaDescription": "О СУБД Postgres Pro и ее версиях, доступных в VK Cloud",
-    "sectionTitle": "Postgres Pro",
-    "markdown": "О СУБД Postgres Pro и ее версиях, доступных в VK Cloud.",
-    "icon": "",
-    "weight": 6,
-    "uuid": "a467ce69-4f9d-4e9d-a979-0f19f7ca44a0",
-    "createdAt": "2023-02-28T12:19:42.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Postgres Pro",
+  "pageDescription": "О СУБД Postgres Pro и ее версиях, доступных в VK Cloud.",
+  "shortDescription": "",
+  "metaTitle": "Postgres Pro",
+  "metaDescription": "О СУБД Postgres Pro и ее версиях, доступных в VK Cloud",
+  "sectionTitle": "Postgres Pro",
+  "icon": "",
+  "weight": 6,
+  "uuid": "a467ce69-4f9d-4e9d-a979-0f19f7ca44a0",
+  "createdAt": "2023-02-28T12:19:42.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

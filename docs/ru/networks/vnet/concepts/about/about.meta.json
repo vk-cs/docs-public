@@ -1,14 +1,13 @@
 {
-    "title": "О сервисе",
-    "pageDescription": "Обзор сервиса виртуальных сетей VK Cloud.",
-    "shortDescription": "Краткое описание возможностей сервиса",
-    "metaTitle": "Обзор сервиса виртуальных сетей",
-    "metaDescription": "",
-    "sectionTitle": "О сервисе",
-    "markdown": "Обзор сервиса виртуальных сетей VK Cloud.",
-    "icon": "",
-    "weight": 1,
-    "uuid": "77db0099-125e-4fee-9479-eeacc448dc38",
-    "createdAt": "2022-12-27T09:51:35.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "О сервисе",
+  "pageDescription": "Обзор сервиса виртуальных сетей VK Cloud.",
+  "shortDescription": "Краткое описание возможностей сервиса",
+  "metaTitle": "Обзор сервиса виртуальных сетей",
+  "metaDescription": "",
+  "sectionTitle": "О сервисе",
+  "icon": "",
+  "weight": 1,
+  "uuid": "77db0099-125e-4fee-9479-eeacc448dc38",
+  "createdAt": "2022-12-27T09:51:35.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

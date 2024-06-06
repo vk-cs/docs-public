@@ -5,9 +5,7 @@
   "metaTitle": "Управление инстансом MLflow Deploy",
   "metaDescription": "Управление инстансом MLflow Deploy",
   "sectionTitle": "Управление инстансом MLflow Deploy",
-  "markdown": "Описание возможностей управления созданным инстансом MLflow Deploy.",
   "icon": "",
   "weight": 4,
-
   "uuid": "242d1607-916e-408d-ba6b-b3b79887ab7c"
 }

@@ -1,14 +1,13 @@
 {
-    "title": "Managing instances with MLflow Client",
-    "pageDescription": "How to manage ML-model deploy via MLflow Client.",
-    "shortDescription": "",
-    "metaTitle": "Managing instances with MLflow Client",
-    "metaDescription": "Managing instances with MLflow Client",
-    "sectionTitle": "Managing instances with MLflow Client",
-    "markdown": "How to manage ML-model deploy via MLflow Client.",
-    "icon": "",
-    "weight": 1,
-    "uuid": "9b3a5770-12b3-4204-a10f-0cd6aad136d9",
-    "createdAt": "2024-04-16T05:09:35.000Z",
-    "updatedAt": "2024-05-27T19:58:24.000Z"
+  "title": "Managing instances with MLflow Client",
+  "pageDescription": "How to manage ML-model deploy via MLflow Client.",
+  "shortDescription": "",
+  "metaTitle": "Managing instances with MLflow Client",
+  "metaDescription": "Managing instances with MLflow Client",
+  "sectionTitle": "Managing instances with MLflow Client",
+  "icon": "",
+  "weight": 1,
+  "uuid": "9b3a5770-12b3-4204-a10f-0cd6aad136d9",
+  "createdAt": "2024-04-16T05:09:35.000Z",
+  "updatedAt": "2024-05-27T19:58:24.000Z"
 }

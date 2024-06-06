@@ -5,9 +5,7 @@
   "metaTitle": "Using Gatekeeper",
   "metaDescription": "",
   "sectionTitle": "Using Gatekeeper",
-  "markdown": "How to enforce Gatekeeper constraints on Kubernetes resources to comply with corporate policies.",
   "icon": "",
-
   "weight": 3,
   "uuid": "4666e053-d67f-4abd-a039-d62b6204ea09"
 }

@@ -1,15 +1,14 @@
 {
-    "title": "Личный кабинет партнера",
-    "pageDescription": "",
-    "shortDescription": "Создание партнерского аккаунта и управление клиентами",
-    "metaTitle": "Личный кабинет партнера",
-    "metaDescription": "Как стать партнёром платформы VK Cloud",
-    "sectionTitle": "Личный кабинет партнера",
-    "markdown": "",
-    "icon": "",
-    "disableGithub": true,
-    "weight": 1,
-    "uuid": "13579cfc-28a9-435d-bc19-2ccba5aa3d3b",
-    "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Личный кабинет партнера",
+  "pageDescription": "",
+  "shortDescription": "Создание партнерского аккаунта и управление клиентами",
+  "metaTitle": "Личный кабинет партнера",
+  "metaDescription": "Как стать партнёром платформы VK Cloud",
+  "sectionTitle": "Личный кабинет партнера",
+  "icon": "",
+  "disableGithub": true,
+  "weight": 1,
+  "uuid": "13579cfc-28a9-435d-bc19-2ccba5aa3d3b",
+  "createdAt": "2022-03-26T14:10:44.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

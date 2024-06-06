@@ -1,14 +1,13 @@
 {
-    "title": "Creating an bucket",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Creating an bucket",
-    "metaDescription": "When registering on the VK Cloud platform and activating an account, the user gets full access to the Object Storage service. Before uploading an object to stor",
-    "sectionTitle": "Creating an bucket",
-    "markdown": "",
-    "icon": "",
-    "weight": 0,
-    "uuid": "facede94-4c31-4f99-b096-6c4037b59074",
-    "createdAt": "2023-05-29T09:21:30.000Z",
-    "updatedAt": "2024-05-29T19:32:15.000Z"
+  "title": "Creating an bucket",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Creating an bucket",
+  "metaDescription": "When registering on the VK Cloud platform and activating an account, the user gets full access to the Object Storage service. Before uploading an object to stor",
+  "sectionTitle": "Creating an bucket",
+  "icon": "",
+  "weight": 0,
+  "uuid": "facede94-4c31-4f99-b096-6c4037b59074",
+  "createdAt": "2023-05-29T09:21:30.000Z",
+  "updatedAt": "2024-05-29T19:32:15.000Z"
 }

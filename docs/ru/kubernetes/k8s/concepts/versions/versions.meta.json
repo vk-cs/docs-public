@@ -5,9 +5,7 @@
   "metaTitle": "О версиях и компонентах Kubernetes",
   "metaDescription": "Kubernetes,K8S,версия,компоненты,история,политика,поддержка",
   "sectionTitle": "О версиях и компонентах Kubernetes",
-  "markdown": "Здесь содержится информация о доступных версиях Kubernetes и компонентов, которые можно развернуть в VK Cloud. Также приводится политика поддержки версий.",
   "icon": "",
-
   "weight": 9,
   "uuid": "fb66c4cd-8cb7-429e-a503-eb5d39e5c20e"
 }

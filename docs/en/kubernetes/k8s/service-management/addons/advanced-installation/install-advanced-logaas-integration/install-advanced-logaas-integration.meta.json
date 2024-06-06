@@ -1,14 +1,13 @@
 {
-    "title": "Fluent Bit for Cloud Logging (logaas-integration)",
-    "pageDescription": "This section describes how to configure and install the Fluent Bit addon for Cloud Logging (logaas-integration).",
-    "shortDescription": "",
-    "metaTitle": "Fluent Bit for Cloud Logging (logaas-integration)",
-    "metaDescription": "This section describes how to configure and install the Fluent Bit addon for Cloud Logging (logaas-integration).",
-    "sectionTitle": "Fluent Bit for Cloud Logging (logaas-integration)",
-    "markdown": "",
-    "icon": "",
-    "weight": 4,
-    "uuid": "e772a76c-16b6-4280-8feb-f25a907a5631",
-    "createdAt": "2024-01-26T06:55:42.000Z",
-    "updatedAt": "2024-05-27T19:58:24.000Z"
+  "title": "Fluent Bit for Cloud Logging (logaas-integration)",
+  "pageDescription": "This section describes how to configure and install the Fluent Bit addon for Cloud Logging (logaas-integration).",
+  "shortDescription": "",
+  "metaTitle": "Fluent Bit for Cloud Logging (logaas-integration)",
+  "metaDescription": "This section describes how to configure and install the Fluent Bit addon for Cloud Logging (logaas-integration).",
+  "sectionTitle": "Fluent Bit for Cloud Logging (logaas-integration)",
+  "icon": "",
+  "weight": 4,
+  "uuid": "e772a76c-16b6-4280-8feb-f25a907a5631",
+  "createdAt": "2024-01-26T06:55:42.000Z",
+  "updatedAt": "2024-05-27T19:58:24.000Z"
 }

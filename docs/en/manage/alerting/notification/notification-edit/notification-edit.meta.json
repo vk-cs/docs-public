@@ -1,14 +1,13 @@
 {
-    "title": "Editing a notification channel",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Editing a notification channel",
-    "metaDescription": "",
-    "sectionTitle": "Editing a notification channel",
-    "markdown": "",
-    "icon": "",
-    "weight": 2,
-    "uuid": "a433ebab-f86d-4b8c-bd72-5804ebb05ab3",
-    "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Editing a notification channel",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Editing a notification channel",
+  "metaDescription": "",
+  "sectionTitle": "Editing a notification channel",
+  "icon": "",
+  "weight": 2,
+  "uuid": "a433ebab-f86d-4b8c-bd72-5804ebb05ab3",
+  "createdAt": "2022-03-26T14:10:44.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

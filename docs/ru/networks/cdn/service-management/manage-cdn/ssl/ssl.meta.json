@@ -1,14 +1,13 @@
 {
-    "title": "Использование SSL-сертификата",
-    "pageDescription": "Как добавить Let's Encrypt или свой SSL-сертификат к CDN-ресурсу.",
-    "shortDescription": "Как добавить Let's Encrypt или свой SSL-сертификат к CDN-ресурсу",
-    "metaTitle": "Использование SSL-сертификата",
-    "metaDescription": "Как добавить Let's Encrypt или свой SSL-сертификат к CDN-ресурсу",
-    "sectionTitle": "Использование SSL-сертификата",
-    "markdown": "",
-    "icon": "",
-    "weight": 3,
-    "uuid": "7080314e-24bf-4277-ad21-7be0e3d7bb8b",
-    "createdAt": "2024-05-13T11:54:48.000Z",
-    "updatedAt": "2024-05-29T19:32:15.000Z"
+  "title": "Использование SSL-сертификата",
+  "pageDescription": "Как добавить Let's Encrypt или свой SSL-сертификат к CDN-ресурсу.",
+  "shortDescription": "Как добавить Let's Encrypt или свой SSL-сертификат к CDN-ресурсу",
+  "metaTitle": "Использование SSL-сертификата",
+  "metaDescription": "Как добавить Let's Encrypt или свой SSL-сертификат к CDN-ресурсу",
+  "sectionTitle": "Использование SSL-сертификата",
+  "icon": "",
+  "weight": 3,
+  "uuid": "7080314e-24bf-4277-ad21-7be0e3d7bb8b",
+  "createdAt": "2024-05-13T11:54:48.000Z",
+  "updatedAt": "2024-05-29T19:32:15.000Z"
 }

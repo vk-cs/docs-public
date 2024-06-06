@@ -5,9 +5,7 @@
   "metaTitle": "Подключение к хранилищу",
   "metaDescription": "Подключение к Cloud Storage с использованием AWS CLI, файловых менеджеров, SDK.",
   "sectionTitle": "Подключение к хранилищу",
-  "markdown": "Подключение к Cloud Storage с использованием AWS CLI, файловых менеджеров, SDK.",
   "icon": "",
-
   "weight": 3,
   "uuid": "b43a9538-c2a6-4df9-a384-ead71809cabb"
 }

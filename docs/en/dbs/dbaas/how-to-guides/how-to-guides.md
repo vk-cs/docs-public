@@ -1,0 +1,1 @@
+The Cloud Databases allows you to organize work with database instances to solve various tasks. Here are the most popular usage scenarios.

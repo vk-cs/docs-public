@@ -5,12 +5,12 @@
   "metaTitle": "Cloud Networks",
   "metaDescription": "Cloud Networks управляет сетевым доступом виртуальных машин, позволяет добавлять к ним балансировщики нагрузки, объединять их в сети и подсети, нас",
   "sectionTitle": "Cloud Networks",
-  "markdown": "Cloud Networks управляет сетевым доступом виртуальных машин, позволяет добавлять к ним балансировщики нагрузки, объединять их в сети и подсети, настраивать маршрутизаторы и сетевые экраны (firewall). Вы можете настроить VPN. Доступна визуализация топологии сети.",
   "icon": "",
   "weight": 1,
   "relativeSections": [
     {
       "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network"
-    }],
+    }
+  ],
   "uuid": "b3b0ec80-fb75-46e5-8efd-f6c80dce5da8"
 }

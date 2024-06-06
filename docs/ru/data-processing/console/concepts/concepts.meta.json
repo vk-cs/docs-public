@@ -4,10 +4,8 @@
   "shortDescription": "Как устроен сервис Data Platform UI Console в VK Cloud",
   "metaTitle": "Концепции",
   "metaDescription": "Как устроен сервис Data Platform UI Console в VK Cloud",
-  "markdown": "Описание принципов функционирования и устройства сервиса Data Platform UI Console.",
   "sectionTitle": "Концепции",
   "icon": "",
-
   "weight": 1,
   "uuid": "cadcc512-65c4-4961-b739-44e0e9e6d280"
 }

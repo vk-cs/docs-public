@@ -1,0 +1,1 @@
+The service has CNCF certification and is compatible with the standard Kubernetes API. Thanks to autoscaling, applications on Cloud Containers get additional power instantly during peak loads and reduce consumption when loads drop. Autoscaling saves up to 60% on computation.

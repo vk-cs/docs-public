@@ -1,0 +1,1 @@
+Vision is a machine learning based face and object recognition technology. Using computer vision, you can develop a system for recognizing faces, license plates and any other objects and images, organize image moderation, analyze photo and video recordings.

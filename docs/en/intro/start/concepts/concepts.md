@@ -1,0 +1,1 @@
+General terms and the principles of the VK Cloud platform operation

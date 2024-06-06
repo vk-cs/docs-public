@@ -1,0 +1,1 @@
+This section describes how to work with the JupyterHub service, create and work with JupyterHub instances.

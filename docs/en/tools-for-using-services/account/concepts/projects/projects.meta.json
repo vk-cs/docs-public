@@ -1,14 +1,13 @@
 {
-    "title": "Projects",
-    "pageDescription": "What is a project in VK Cloud.",
-    "shortDescription": "What is a project in VK Cloud",
-    "metaTitle": "Projects",
-    "metaDescription": "What is a project in VK Cloud.",
-    "sectionTitle": "Projects",
-    "markdown": "Description of the functions of projects on the VK Cloud platform.",
-    "icon": "",
-    "weight": 0,
-    "uuid": "350799e2-5faf-4714-a678-7fa97dce86d9",
-    "createdAt": "2022-12-23T10:06:30.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Projects",
+  "pageDescription": "What is a project in VK Cloud.",
+  "shortDescription": "What is a project in VK Cloud",
+  "metaTitle": "Projects",
+  "metaDescription": "What is a project in VK Cloud.",
+  "sectionTitle": "Projects",
+  "icon": "",
+  "weight": 0,
+  "uuid": "350799e2-5faf-4714-a678-7fa97dce86d9",
+  "createdAt": "2022-12-23T10:06:30.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

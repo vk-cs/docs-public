@@ -1,14 +1,13 @@
 {
-    "title": "About the service",
-    "pageDescription": "",
-    "shortDescription": "Brief information about Arenadata DB as a Service",
-    "metaTitle": "About the service",
-    "metaDescription": "Description Arenadata DB (ADB) is a distributed DBMS that uses the MPP (massively parallel processing) concept and is based on an open source DBMS - Greenp",
-    "sectionTitle": "About the service",
-    "markdown": "",
-    "icon": "",
-    "weight": 0,
-    "uuid": "d79c3b19-e66a-44be-8fd8-f2f5955d1420",
-    "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "About the service",
+  "pageDescription": "",
+  "shortDescription": "Brief information about Arenadata DB as a Service",
+  "metaTitle": "About the service",
+  "metaDescription": "Description Arenadata DB (ADB) is a distributed DBMS that uses the MPP (massively parallel processing) concept and is based on an open source DBMS - Greenp",
+  "sectionTitle": "About the service",
+  "icon": "",
+  "weight": 0,
+  "uuid": "d79c3b19-e66a-44be-8fd8-f2f5955d1420",
+  "createdAt": "2022-03-26T14:10:44.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

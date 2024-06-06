@@ -1,15 +1,14 @@
 {
-    "title": "Список доступных методов",
-    "pageDescription": "Полный список методов библиотеки Cloud ML Platform для Cloud Spark.",
-    "shortDescription": "",
-    "metaTitle": "Список доступных методов",
-    "metaDescription": "Полный список методов библиотеки Cloud ML Platform для Cloud Spark.",
-    "sectionTitle": "Список доступных методов",
-    "markdown": "",
-    "icon": "",
-    "hidden": true,
-    "weight": 1,
-    "uuid": "6bd14157-a872-4bf5-9386-8312d35b05ff",
-    "createdAt": "2024-04-03T09:41:56.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Список доступных методов",
+  "pageDescription": "Полный список методов библиотеки Cloud ML Platform для Cloud Spark.",
+  "shortDescription": "",
+  "metaTitle": "Список доступных методов",
+  "metaDescription": "Полный список методов библиотеки Cloud ML Platform для Cloud Spark.",
+  "sectionTitle": "Список доступных методов",
+  "icon": "",
+  "hidden": true,
+  "weight": 1,
+  "uuid": "6bd14157-a872-4bf5-9386-8312d35b05ff",
+  "createdAt": "2024-04-03T09:41:56.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

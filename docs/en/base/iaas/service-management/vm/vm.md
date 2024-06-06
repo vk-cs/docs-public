@@ -1,0 +1,1 @@
+Creating Linux and Windows virtual machines. Connecting to VMs, managing their resources and status. VM diagnostics.

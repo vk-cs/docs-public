@@ -1,0 +1,1 @@
+Cloud Databases — облачные базы данных (Database as a service). Сервис позволяет развернуть в облаке решения на основе MySQL, PostgreSQL, MongoDB, Redis, ClickHouse, Postgres Pro,Tarantool, Greenplum. Базы доступны в single, master-slave и кластерных конфигурациях. Использование сервиса снимает с вас нагрузку по администрированию баз данных.

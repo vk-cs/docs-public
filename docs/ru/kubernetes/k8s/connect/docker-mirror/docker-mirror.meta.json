@@ -1,14 +1,13 @@
 {
-    "title": "Настройка зеркала Docker",
-    "pageDescription": "Как использовать зеркало Docker Hub для работы с регистром Docker.",
-    "shortDescription": "",
-    "metaTitle": "Настройка зеркала Docker",
-    "metaDescription": "",
-    "sectionTitle": "Настройка зеркала Docker",
-    "markdown": "Как использовать зеркало Docker Hub для работы с регистром Docker.",
-    "icon": "",
-    "weight": 4,
-    "uuid": "432f4242-e00d-4655-be7d-b490b6333052",
-    "createdAt": "2024-05-31T14:06:02.000Z",
-    "updatedAt": "2024-05-31T14:06:02.000Z"
+  "title": "Настройка зеркала Docker",
+  "pageDescription": "Как использовать зеркало Docker Hub для работы с регистром Docker.",
+  "shortDescription": "",
+  "metaTitle": "Настройка зеркала Docker",
+  "metaDescription": "",
+  "sectionTitle": "Настройка зеркала Docker",
+  "icon": "",
+  "weight": 4,
+  "uuid": "432f4242-e00d-4655-be7d-b490b6333052",
+  "createdAt": "2024-05-31T14:06:02.000Z",
+  "updatedAt": "2024-05-31T14:06:02.000Z"
 }

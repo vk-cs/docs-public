@@ -1,0 +1,1 @@
+Backups allow you to restore the state of a virtual machine that was saved at a certain moment. On the VK Cloud platform, backups can be created manually or automatically, according to the plan.

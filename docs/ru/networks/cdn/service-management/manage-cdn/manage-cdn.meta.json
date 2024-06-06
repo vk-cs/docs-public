@@ -1,15 +1,14 @@
 {
-    "title": "Настройка CDN-ресурса",
-    "pageDescription": "Как настроить доступ к CDN-ресурсу и его взаимодействие с источниками",
-    "shortDescription": "Как настроить доступ к CDN-ресурсу и его взаимодействие с источниками",
-    "metaTitle": "Настройка CDN-ресурса",
-    "metaDescription": "Как настроить доступ к CDN-ресурсу и его взаимодействие с источниками",
-    "sectionTitle": "Настройка CDN-ресурса",
-    "markdown": "",
-    "icon": "",
-    "weight": 2,
-    "additionalUuids": [
-        "b3494b49-4c2c-486f-9f4b-3cf1e3daec75"
-    ],
-    "uuid": "869eae25-027c-42f3-bac1-301fac95ca1d"
+  "title": "Настройка CDN-ресурса",
+  "pageDescription": "Как настроить доступ к CDN-ресурсу и его взаимодействие с источниками",
+  "shortDescription": "Как настроить доступ к CDN-ресурсу и его взаимодействие с источниками",
+  "metaTitle": "Настройка CDN-ресурса",
+  "metaDescription": "Как настроить доступ к CDN-ресурсу и его взаимодействие с источниками",
+  "sectionTitle": "Настройка CDN-ресурса",
+  "icon": "",
+  "weight": 2,
+  "additionalUuids": [
+    "b3494b49-4c2c-486f-9f4b-3cf1e3daec75"
+  ],
+  "uuid": "869eae25-027c-42f3-bac1-301fac95ca1d"
 }
