@@ -5,9 +5,7 @@
   "metaTitle": "Service management",
   "metaDescription": "Spark VK Cloud: standard cluster configuration and management operations.",
   "sectionTitle": "Service management",
-  "markdown": "Standard operations for configuring and managing clusters in Cloud Spark.",
   "icon": "",
-
   "weight": 2,
   "uuid": "1b5bd1df-c554-4414-9368-c828b1f1eb10"
 }

@@ -1,0 +1,1 @@
+Cloud Monitoring — a unified monitoring service with which you monitor the status of your cloud applications, performance, optimize resource consumption for stable application operation. The service is optimized for high-load systems and offers flexible visualization of metrics and logs. The service uses a clear interface and a query language similar to Prometheus.

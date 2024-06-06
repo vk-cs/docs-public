@@ -1,0 +1,1 @@
+Cloud Desktop is a service based on the Virtual Desktop Infrastructure (VDI) technology. VDI is designed to provide users with desktops created on a remote server and operating in a virtualized environment.

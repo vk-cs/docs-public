@@ -1,0 +1,1 @@
+A desktop pool is an association of several desktops that share computing resources. Desktops cannot be created without a pool.

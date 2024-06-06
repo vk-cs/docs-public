@@ -1,13 +1,12 @@
 {
-    "title": "About the service",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "About the service",
-    "metaDescription": "Cloud Databases – это сервис для создания облачных баз данных. Перенесите базу данных в облако, избавьтесь от рутинной поддержки инфраструктуры и",
-    "sectionTitle": "About the service",
-    "markdown": "",
-    "icon": "",
-    "uuid": "09846f16-d910-4ec9-b5ba-bafd3c7ec201",
-    "createdAt": "2023-05-12T11:53:23.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "About the service",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "About the service",
+  "metaDescription": "Cloud Databases – это сервис для создания облачных баз данных. Перенесите базу данных в облако, избавьтесь от рутинной поддержки инфраструктуры и",
+  "sectionTitle": "About the service",
+  "icon": "",
+  "uuid": "09846f16-d910-4ec9-b5ba-bafd3c7ec201",
+  "createdAt": "2023-05-12T11:53:23.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

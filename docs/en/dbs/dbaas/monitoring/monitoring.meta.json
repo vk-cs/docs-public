@@ -5,9 +5,7 @@
   "metaTitle": "Monitoring DB instances",
   "metaDescription": "",
   "sectionTitle": "Monitoring DB instances",
-  "markdown": "Monitor the status of database instances with detailed information about individual host metrics.",
   "icon": "",
-
   "weight": 6,
   "uuid": "0df2d1b5-edd7-4422-a515-d8adde3a258f"
 }

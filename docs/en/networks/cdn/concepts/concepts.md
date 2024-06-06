@@ -1,0 +1,1 @@
+The operating and design description of the CDN VK Cloud service.

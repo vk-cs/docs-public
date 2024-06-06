@@ -1,14 +1,13 @@
 {
-    "title": "Updating the Kube Prometheus Stack addon",
-    "pageDescription": "How to manually update an addon with a large difference between its versions.",
-    "shortDescription": "How to manually update an addon with a large difference between its versions",
-    "metaTitle": "Updating the Kube Prometheus Stack addon",
-    "metaDescription": "How to manually update an addon with a large difference between its versions.",
-    "sectionTitle": "Updating the Kube Prometheus Stack addon",
-    "markdown": "",
-    "icon": "",
-    "weight": 9,
-    "uuid": "e04cf47f-a0ca-4951-b5d5-411854e6d11d",
-    "createdAt": "2024-05-20T16:04:40.000Z",
-    "updatedAt": "2024-06-05T16:41:45.000Z"
+  "title": "Updating the Kube Prometheus Stack addon",
+  "pageDescription": "How to manually update an addon with a large difference between its versions.",
+  "shortDescription": "How to manually update an addon with a large difference between its versions",
+  "metaTitle": "Updating the Kube Prometheus Stack addon",
+  "metaDescription": "How to manually update an addon with a large difference between its versions.",
+  "sectionTitle": "Updating the Kube Prometheus Stack addon",
+  "icon": "",
+  "weight": 9,
+  "uuid": "e04cf47f-a0ca-4951-b5d5-411854e6d11d",
+  "createdAt": "2024-05-20T16:04:40.000Z",
+  "updatedAt": "2024-06-05T16:41:45.000Z"
 }

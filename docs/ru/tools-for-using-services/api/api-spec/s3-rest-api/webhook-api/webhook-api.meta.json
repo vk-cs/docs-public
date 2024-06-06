@@ -1,14 +1,13 @@
 {
-    "title": "Webhooks",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Webhooks",
-    "metaDescription": "Webhooks для Cloud Storage - это возможность настраивать отправку HTTP/S запросов по событиям для бакета, используя API. Например, можно: настроить обработку и конвер",
-    "sectionTitle": "Webhooks",
-    "markdown": "",
-    "icon": "",
-    "weight": 9,
-    "uuid": "80c67385-b262-4835-a629-29e996b232e9",
-    "createdAt": "2023-02-02T15:05:34.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Webhooks",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Webhooks",
+  "metaDescription": "Webhooks для Cloud Storage - это возможность настраивать отправку HTTP/S запросов по событиям для бакета, используя API. Например, можно: настроить обработку и конвер",
+  "sectionTitle": "Webhooks",
+  "icon": "",
+  "weight": 9,
+  "uuid": "80c67385-b262-4835-a629-29e996b232e9",
+  "createdAt": "2023-02-02T15:05:34.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

@@ -5,9 +5,7 @@
   "metaTitle": "Using Ingress",
   "metaDescription": "",
   "sectionTitle": "Using Ingress",
-  "markdown": "How to provide access to services deployed in a cluster via Ingress.",
   "icon": "",
-
   "weight": 1,
   "uuid": "1bccdc14-a097-41da-873d-f612c1ba5df6"
 }

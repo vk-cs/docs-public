@@ -1,0 +1,1 @@
+A detailed description of the principles of operation and design of VK Cloud network services.

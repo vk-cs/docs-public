@@ -5,7 +5,6 @@
   "metaTitle": "Load Balancing",
   "metaDescription": "",
   "sectionTitle": "Load Balancing",
-  "markdown": "Load distribution between servers.",
   "icon": "",
   "weight": 2,
   "uuid": "b2c0678e-a608-423e-8839-b72109532a11"

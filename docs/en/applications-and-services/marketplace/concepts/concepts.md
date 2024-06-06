@@ -1,0 +1,1 @@
+The device and features of the Marketplace: types of services, key differences of types.

@@ -1,14 +1,13 @@
 {
-    "title": "Editing a trigger",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "Editing a trigger",
-    "metaDescription": "",
-    "sectionTitle": "Editing a trigger",
-    "markdown": "",
-    "icon": "",
-    "weight": 2,
-    "uuid": "cd0b257a-1b2d-4917-85bb-c45eee8975ee",
-    "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Editing a trigger",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "Editing a trigger",
+  "metaDescription": "",
+  "sectionTitle": "Editing a trigger",
+  "icon": "",
+  "weight": 2,
+  "uuid": "cd0b257a-1b2d-4917-85bb-c45eee8975ee",
+  "createdAt": "2022-03-26T14:10:44.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

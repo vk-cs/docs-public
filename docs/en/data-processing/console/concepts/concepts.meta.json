@@ -4,10 +4,8 @@
   "shortDescription": "How the Data Platform UI Console service works in VK Cloud",
   "metaTitle": "Concepts",
   "metaDescription": "How the Data Platform UI Console service works in VK Cloud",
-  "markdown": "Description of the principles of operation and design of the Data Platform UI Console service.",
   "sectionTitle": "Concepts",
   "icon": "",
-
   "weight": 1,
   "uuid": "d6eff2ef-a454-4f4c-957c-f078576269cd"
 }

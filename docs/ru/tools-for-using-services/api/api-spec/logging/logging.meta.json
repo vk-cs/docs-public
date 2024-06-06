@@ -1,15 +1,14 @@
 {
-    "title": "Cloud Logging",
-    "pageDescription": "",
-    "shortDescription": "Просмотр логов с помощью API сервиса Cloud Logging",
-    "metaTitle": "Cloud Logging",
-    "metaDescription": "",
-    "sectionTitle": "Cloud Logging",
-    "markdown": "",
-    "icon": "",
-    "weight": 8,
-    "isBeta": true,
-    "uuid": "851591de-d4d7-4bda-a483-d33e45ea7f62",
-    "createdAt": "2023-02-02T15:05:34.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Cloud Logging",
+  "pageDescription": "",
+  "shortDescription": "Просмотр логов с помощью API сервиса Cloud Logging",
+  "metaTitle": "Cloud Logging",
+  "metaDescription": "",
+  "sectionTitle": "Cloud Logging",
+  "icon": "",
+  "weight": 8,
+  "isBeta": true,
+  "uuid": "851591de-d4d7-4bda-a483-d33e45ea7f62",
+  "createdAt": "2023-02-02T15:05:34.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }
