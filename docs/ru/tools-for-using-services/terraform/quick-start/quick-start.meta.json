@@ -1,16 +1,16 @@
 {
-  "title": "Быстрый старт",
-  "pageDescription": "",
-  "shortDescription": "Начало работы с Terraform",
-  "metaTitle": "Быстрый старт",
-  "metaDescription": "",
-  "sectionTitle": "Быстрый старт",
-  "icon": "",
-  "weight": 0,
-  "additionalUuids": [
-    "9e9a50c6-5e61-4071-a20d-617f5fefb33b"
-  ],
-  "uuid": "5464e06e-5062-43bf-bb20-f3de8b6a1a5d",
-  "createdAt": "2023-05-26T16:45:20.000Z",
-  "updatedAt": "2024-05-27T19:58:24.000Z"
+    "title": "Быстрый старт",
+    "pageDescription": "",
+    "shortDescription": "Начало работы с Terraform",
+    "metaTitle": "Быстрый старт",
+    "metaDescription": "",
+    "sectionTitle": "Быстрый старт",
+    "icon": "",
+    "weight": 0,
+    "additionalUuids": [
+        "9e9a50c6-5e61-4071-a20d-617f5fefb33b"
+    ],
+    "uuid": "5464e06e-5062-43bf-bb20-f3de8b6a1a5d",
+    "createdAt": "2023-05-26T16:45:20.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

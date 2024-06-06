@@ -1,14 +1,14 @@
 {
-  "title": "Partner's personal account",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Partner's personal account",
-  "metaDescription": "How to become a partner of the VK Cloud platform",
-  "sectionTitle": "Partner's personal account",
-  "icon": "",
-  "disableGithub": true,
-  "weight": 1,
-  "uuid": "f191556a-8c40-459a-829a-2f44bc1d6785",
-  "createdAt": "2023-01-27T08:47:59.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Partner's personal account",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Partner's personal account",
+    "metaDescription": "How to become a partner of the VK Cloud platform",
+    "sectionTitle": "Partner's personal account",
+    "icon": "",
+    "disableGithub": true,
+    "weight": 1,
+    "uuid": "f191556a-8c40-459a-829a-2f44bc1d6785",
+    "createdAt": "2023-01-27T08:47:59.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

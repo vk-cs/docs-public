@@ -1,13 +1,13 @@
 {
-  "title": "Установка Helm",
-  "pageDescription": "Как установить пакетный менеджер Helm в кластер Kubernetes.",
-  "shortDescription": "Как установить пакетный менеджер Helm",
-  "metaTitle": "Установка Helm",
-  "metaDescription": "",
-  "sectionTitle": "Установка Helm",
-  "icon": "",
-  "weight": 1,
-  "uuid": "b01d16cb-660d-4aae-bdd2-ca10086ead6f",
-  "createdAt": "2022-12-15T08:05:18.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Установка Helm",
+    "pageDescription": "Как установить пакетный менеджер Helm в кластер Kubernetes.",
+    "shortDescription": "Как установить пакетный менеджер Helm",
+    "metaTitle": "Установка Helm",
+    "metaDescription": "",
+    "sectionTitle": "Установка Helm",
+    "icon": "",
+    "weight": 1,
+    "uuid": "b01d16cb-660d-4aae-bdd2-ca10086ead6f",
+    "createdAt": "2022-12-15T08:05:18.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

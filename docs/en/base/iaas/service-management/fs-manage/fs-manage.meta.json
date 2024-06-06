@@ -1,18 +1,18 @@
 {
-  "title": "File share",
-  "pageDescription": "Creating and deleting file storages, connecting them to instances, configuring access rules and take storage snapshots.",
-  "shortDescription": "Creating and deleting file storages, connecting them to instances, configuring access rules and take storage snapshots",
-  "metaTitle": "File share",
-  "metaDescription": "Creating and deleting file storages, connecting them to instances, configuring access rules and take storage snapshots.",
-  "sectionTitle": "File share",
-  "icon": "",
-  "weight": 4,
-  "uuid": "a8a4975a-156f-4c36-8275-6ffe95546c1e",
-  "additionalUuids": [
-    "31674d3c-e25c-41d1-b9d0-370b15eb2160",
-    "98740a96-b3a1-4735-8408-bd4f1527ea97",
-    "2fd98a79-90ba-4067-80d3-4ff38ec65bba"
-  ],
-  "createdAt": "2023-04-24T13:06:27.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "File share",
+    "pageDescription": "Creating and deleting file storages, connecting them to instances, configuring access rules and take storage snapshots.",
+    "shortDescription": "Creating and deleting file storages, connecting them to instances, configuring access rules and take storage snapshots",
+    "metaTitle": "File share",
+    "metaDescription": "Creating and deleting file storages, connecting them to instances, configuring access rules and take storage snapshots.",
+    "sectionTitle": "File share",
+    "icon": "",
+    "weight": 4,
+    "uuid": "a8a4975a-156f-4c36-8275-6ffe95546c1e",
+    "additionalUuids": [
+        "31674d3c-e25c-41d1-b9d0-370b15eb2160",
+        "98740a96-b3a1-4735-8408-bd4f1527ea97",
+        "2fd98a79-90ba-4067-80d3-4ff38ec65bba"
+    ],
+    "createdAt": "2023-04-24T13:06:27.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

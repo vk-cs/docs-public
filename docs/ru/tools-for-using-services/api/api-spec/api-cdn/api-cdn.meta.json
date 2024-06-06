@@ -1,13 +1,13 @@
 {
-  "title": "CDN",
-  "pageDescription": "OpenAPI-спецификация сервиса CDN",
-  "shortDescription": "OpenAPI-спецификация сервиса CDN",
-  "metaTitle": "CDN",
-  "metaDescription": "OpenAPI-спецификация сервиса CDN",
-  "sectionTitle": "CDN",
-  "icon": "",
-  "weight": 12,
-  "uuid": "bd2a6ee2-39a5-4f05-a933-8db9aa96b0ff",
-  "createdAt": "",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "CDN",
+    "pageDescription": "OpenAPI-спецификация сервиса CDN",
+    "shortDescription": "OpenAPI-спецификация сервиса CDN",
+    "metaTitle": "CDN",
+    "metaDescription": "OpenAPI-спецификация сервиса CDN",
+    "sectionTitle": "CDN",
+    "icon": "",
+    "weight": 12,
+    "uuid": "bd2a6ee2-39a5-4f05-a933-8db9aa96b0ff",
+    "createdAt": "",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

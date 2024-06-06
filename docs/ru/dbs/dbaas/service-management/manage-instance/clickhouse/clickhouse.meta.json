@@ -1,13 +1,13 @@
 {
-  "title": "ClickHouse",
-  "pageDescription": "Управление инстансами ClickHouse.",
-  "shortDescription": "",
-  "metaTitle": "ClickHouse",
-  "metaDescription": "Базы данных VK Cloud: управление инстансами ClickHouse.",
-  "sectionTitle": "ClickHouse",
-  "icon": "",
-  "weight": 1,
-  "uuid": "c25c5f76-68b0-453d-ba9e-c9b989b5cfd5",
-  "createdAt": "2023-06-02T07:32:11.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "ClickHouse",
+    "pageDescription": "Управление инстансами ClickHouse.",
+    "shortDescription": "",
+    "metaTitle": "ClickHouse",
+    "metaDescription": "Базы данных VK Cloud: управление инстансами ClickHouse.",
+    "sectionTitle": "ClickHouse",
+    "icon": "",
+    "weight": 1,
+    "uuid": "c25c5f76-68b0-453d-ba9e-c9b989b5cfd5",
+    "createdAt": "2023-06-02T07:32:11.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

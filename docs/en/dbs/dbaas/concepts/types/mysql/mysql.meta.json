@@ -1,13 +1,13 @@
 {
-  "title": "MySQL",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "MySQL",
-  "metaDescription": "MySQL — это колоночная аналитическая СУБД с открытым кодом, позволяющая выполнять аналитические запросы в режиме реального времени на структу",
-  "sectionTitle": "MySQL",
-  "icon": "",
-  "weight": 3,
-  "uuid": "f659953f-b8c9-4a76-bf05-1237724d84e4",
-  "createdAt": "2023-03-17T13:58:06.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "MySQL",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "MySQL",
+    "metaDescription": "MySQL — это колоночная аналитическая СУБД с открытым кодом, позволяющая выполнять аналитические запросы в режиме реального времени на структу",
+    "sectionTitle": "MySQL",
+    "icon": "",
+    "weight": 3,
+    "uuid": "f659953f-b8c9-4a76-bf05-1237724d84e4",
+    "createdAt": "2023-03-17T13:58:06.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

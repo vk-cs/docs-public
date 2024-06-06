@@ -1,13 +1,13 @@
 {
-  "title": "About the service",
-  "pageDescription": "",
-  "shortDescription": "Features of the Cloud Alerting service",
-  "metaTitle": "About the service",
-  "metaDescription": "",
-  "sectionTitle": "About the service",
-  "icon": "",
-  "weight": 0,
-  "uuid": "7b5ce2a1-69a7-4743-b404-eec9f0079bde",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "About the service",
+    "pageDescription": "",
+    "shortDescription": "Features of the Cloud Alerting service",
+    "metaTitle": "About the service",
+    "metaDescription": "",
+    "sectionTitle": "About the service",
+    "icon": "",
+    "weight": 0,
+    "uuid": "7b5ce2a1-69a7-4743-b404-eec9f0079bde",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

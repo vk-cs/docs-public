@@ -1,13 +1,13 @@
 {
-  "title": "Capsule",
-  "pageDescription": "The configuration and installation of the Capsule addon is described here.",
-  "shortDescription": "",
-  "metaTitle": "Capsule",
-  "metaDescription": "The configuration and installation of the Capsule addon is described here.",
-  "sectionTitle": "Capsule",
-  "icon": "",
-  "weight": 1,
-  "uuid": "715d8560-a802-49e9-80ea-f3d3275801bb",
-  "createdAt": "2024-03-19T14:14:34.000Z",
-  "updatedAt": "2024-05-27T19:58:24.000Z"
+    "title": "Capsule",
+    "pageDescription": "The configuration and installation of the Capsule addon is described here.",
+    "shortDescription": "",
+    "metaTitle": "Capsule",
+    "metaDescription": "The configuration and installation of the Capsule addon is described here.",
+    "sectionTitle": "Capsule",
+    "icon": "",
+    "weight": 1,
+    "uuid": "715d8560-a802-49e9-80ea-f3d3275801bb",
+    "createdAt": "2024-03-19T14:14:34.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

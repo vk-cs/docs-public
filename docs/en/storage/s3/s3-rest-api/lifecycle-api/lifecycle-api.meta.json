@@ -1,13 +1,13 @@
 {
-  "title": "Lifecycle",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Lifecycle",
-  "metaDescription": "All available methods for working with object lifecycle: Get Bucket Lifecycle Configuration - View the lifecycle configuration in a bucket\nConfigure Bucket L",
-  "sectionTitle": "Lifecycle",
-  "icon": "",
-  "weight": 5,
-  "uuid": "959b1130-542b-466f-ab13-8f8cdc55284c",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Lifecycle",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Lifecycle",
+    "metaDescription": "All available methods for working with object lifecycle: Get Bucket Lifecycle Configuration - View the lifecycle configuration in a bucket\nConfigure Bucket L",
+    "sectionTitle": "Lifecycle",
+    "icon": "",
+    "weight": 5,
+    "uuid": "959b1130-542b-466f-ab13-8f8cdc55284c",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

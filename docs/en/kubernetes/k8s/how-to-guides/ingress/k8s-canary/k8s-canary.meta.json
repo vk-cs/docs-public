@@ -1,13 +1,13 @@
 {
-  "title": "Configuring Canary Deployment Ingress",
-  "pageDescription": "",
-  "shortDescription": "How to deploy a Kubernetes cluster in VK Cloud and set up Canary Deployment on it using Nginx Ingress Annotations",
-  "metaTitle": "Configuring Canary Deployment Ingress",
-  "metaDescription": "",
-  "sectionTitle": "Configuring Canary Deployment Ingress",
-  "icon": "",
-  "weight": 5,
-  "uuid": "6f0a2aef-cf60-456d-92ec-d20dcf43c31d",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2024-05-27T19:58:24.000Z"
+    "title": "Configuring Canary Deployment Ingress",
+    "pageDescription": "",
+    "shortDescription": "How to deploy a Kubernetes cluster in VK Cloud and set up Canary Deployment on it using Nginx Ingress Annotations",
+    "metaTitle": "Configuring Canary Deployment Ingress",
+    "metaDescription": "",
+    "sectionTitle": "Configuring Canary Deployment Ingress",
+    "icon": "",
+    "weight": 5,
+    "uuid": "6f0a2aef-cf60-456d-92ec-d20dcf43c31d",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

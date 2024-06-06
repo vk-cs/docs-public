@@ -1,13 +1,13 @@
 {
-  "title": "О сервисе",
-  "pageDescription": "Преимущества Arenadata Hadoop",
-  "shortDescription": "Преимущества использования сервиса Cloud Big Data для больших данных",
-  "metaTitle": "О сервисе",
-  "metaDescription": "Преимущества Arenadata Hadoop",
-  "sectionTitle": "О сервисе",
-  "icon": "",
-  "weight": 1,
-  "uuid": "90ef432d-39ad-45df-a6f1-67d2aaa6b4fe",
-  "createdAt": "2022-07-29T10:21:21.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "О сервисе",
+    "pageDescription": "Преимущества Arenadata Hadoop",
+    "shortDescription": "Преимущества использования сервиса Cloud Big Data для больших данных",
+    "metaTitle": "О сервисе",
+    "metaDescription": "Преимущества Arenadata Hadoop",
+    "sectionTitle": "О сервисе",
+    "icon": "",
+    "weight": 1,
+    "uuid": "90ef432d-39ad-45df-a6f1-67d2aaa6b4fe",
+    "createdAt": "2022-07-29T10:21:21.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

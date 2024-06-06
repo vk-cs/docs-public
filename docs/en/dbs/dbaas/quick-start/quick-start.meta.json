@@ -1,13 +1,13 @@
 {
-  "title": "Quick start",
-  "pageDescription": "Getting started with the service.",
-  "shortDescription": "Getting started with the service",
-  "metaTitle": "Quick start",
-  "metaDescription": "VK Cloud cloud databases: getting started with the service.",
-  "sectionTitle": "Quick start",
-  "icon": "",
-  "weight": 1,
-  "uuid": "0a55d18e-5867-4570-990e-827062e43dd1",
-  "createdAt": "2023-06-05T06:11:57.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Quick start",
+    "pageDescription": "Getting started with the service.",
+    "shortDescription": "Getting started with the service",
+    "metaTitle": "Quick start",
+    "metaDescription": "VK Cloud cloud databases: getting started with the service.",
+    "sectionTitle": "Quick start",
+    "icon": "",
+    "weight": 1,
+    "uuid": "0a55d18e-5867-4570-990e-827062e43dd1",
+    "createdAt": "2023-06-05T06:11:57.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

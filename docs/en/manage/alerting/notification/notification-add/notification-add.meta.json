@@ -1,13 +1,13 @@
 {
-  "title": "Create a notification channel",
-  "pageDescription": "",
-  "shortDescription": "",
-  "metaTitle": "Create a notification channel",
-  "metaDescription": "",
-  "sectionTitle": "Create a notification channel",
-  "icon": "",
-  "weight": 2,
-  "uuid": "f168675d-52e4-420e-a6a5-1a46bfbf06ae",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Create a notification channel",
+    "pageDescription": "",
+    "shortDescription": "",
+    "metaTitle": "Create a notification channel",
+    "metaDescription": "",
+    "sectionTitle": "Create a notification channel",
+    "icon": "",
+    "weight": 2,
+    "uuid": "f168675d-52e4-420e-a6a5-1a46bfbf06ae",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

@@ -1,18 +1,18 @@
 {
-  "title": "FAQ",
-  "pageDescription": "How to pay for the project, what to do when the project is frozen, how to return funds from the project, why bonuses are not accrued in VK Cloud.",
-  "shortDescription": "Answers to frequently asked questions about the work of billing in VK Cloud",
-  "metaTitle": "FAQ",
-  "metaDescription": "VK Cloud: answers to frequently asked questions about billing",
-  "sectionTitle": "FAQ",
-  "icon": "",
-  "weight": 5,
-  "additionalUuids": [
-    "b858d657-62a3-400e-9633-abfb602f033e",
-    "78312346-80a6-442f-9b76-6d866dcc74fa",
-    "2ddfa1a4-ec01-4868-b0fd-4dcecdccc07f"
-  ],
-  "uuid": "732e19ed-0900-4af0-b265-662acf16caf9",
-  "createdAt": "2024-04-25T17:26:51.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "FAQ",
+    "pageDescription": "How to pay for the project, what to do when the project is frozen, how to return funds from the project, why bonuses are not accrued in VK Cloud.",
+    "shortDescription": "Answers to frequently asked questions about the work of billing in VK Cloud",
+    "metaTitle": "FAQ",
+    "metaDescription": "VK Cloud: answers to frequently asked questions about billing",
+    "sectionTitle": "FAQ",
+    "icon": "",
+    "weight": 5,
+    "additionalUuids": [
+        "b858d657-62a3-400e-9633-abfb602f033e",
+        "78312346-80a6-442f-9b76-6d866dcc74fa",
+        "2ddfa1a4-ec01-4868-b0fd-4dcecdccc07f"
+    ],
+    "uuid": "732e19ed-0900-4af0-b265-662acf16caf9",
+    "createdAt": "2024-04-25T17:26:51.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

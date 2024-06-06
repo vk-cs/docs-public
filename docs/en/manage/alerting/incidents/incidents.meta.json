@@ -1,13 +1,13 @@
 {
-  "title": "Changing the status of an incident",
-  "pageDescription": "",
-  "shortDescription": "Incident lifecycle management, conditions for incident re-creation",
-  "metaTitle": "Changing the status of an incident",
-  "metaDescription": "",
-  "sectionTitle": "Changing the status of an incident",
-  "icon": "",
-  "weight": 2,
-  "uuid": "dcfa65ca-3849-43d7-8a3a-5d912f35c2d1",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Changing the status of an incident",
+    "pageDescription": "",
+    "shortDescription": "Incident lifecycle management, conditions for incident re-creation",
+    "metaTitle": "Changing the status of an incident",
+    "metaDescription": "",
+    "sectionTitle": "Changing the status of an incident",
+    "icon": "",
+    "weight": 2,
+    "uuid": "dcfa65ca-3849-43d7-8a3a-5d912f35c2d1",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

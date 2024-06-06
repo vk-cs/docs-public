@@ -1,13 +1,13 @@
 {
-  "title": "Тарификация",
-  "pageDescription": "Особенности тарификации сервиса Cloud Servers, расчет стоимости.",
-  "shortDescription": "Особенности тарификации сервиса и расчет стоимости",
-  "metaTitle": "Тарификация",
-  "metaDescription": "Особенности тарификации сервиса Cloud Servers, расчет стоимости.",
-  "sectionTitle": "Тарификация",
-  "icon": "",
-  "weight": 4,
-  "uuid": "74b88b84-9ef0-4869-bd97-daee294eb85b",
-  "createdAt": "2023-04-24T13:06:27.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Тарификация",
+    "pageDescription": "Особенности тарификации сервиса Cloud Servers, расчет стоимости.",
+    "shortDescription": "Особенности тарификации сервиса и расчет стоимости",
+    "metaTitle": "Тарификация",
+    "metaDescription": "Особенности тарификации сервиса Cloud Servers, расчет стоимости.",
+    "sectionTitle": "Тарификация",
+    "icon": "",
+    "weight": 4,
+    "uuid": "74b88b84-9ef0-4869-bd97-daee294eb85b",
+    "createdAt": "2023-04-24T13:06:27.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

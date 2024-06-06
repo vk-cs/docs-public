@@ -1,13 +1,13 @@
 {
-  "title": "Быстрый старт",
-  "pageDescription": "Начало работы с кластером Kubernetes и знакомство с его основными возможностями.",
-  "shortDescription": "Начало работы с Kubernetes",
-  "metaTitle": "Быстрый старт",
-  "metaDescription": "Cloud Containers: быстрый старт поможет вам начать работу с сервисом и познакомиться с его возможностями",
-  "sectionTitle": "Быстрый старт",
-  "icon": "",
-  "weight": 1,
-  "uuid": "9868120f-246a-4336-9c29-47283b55795a",
-  "createdAt": "2022-12-15T08:05:18.000Z",
-  "updatedAt": "2024-05-27T19:58:24.000Z"
+    "title": "Быстрый старт",
+    "pageDescription": "Начало работы с кластером Kubernetes и знакомство с его основными возможностями.",
+    "shortDescription": "Начало работы с Kubernetes",
+    "metaTitle": "Быстрый старт",
+    "metaDescription": "Cloud Containers: быстрый старт поможет вам начать работу с сервисом и познакомиться с его возможностями",
+    "sectionTitle": "Быстрый старт",
+    "icon": "",
+    "weight": 1,
+    "uuid": "9868120f-246a-4336-9c29-47283b55795a",
+    "createdAt": "2022-12-15T08:05:18.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

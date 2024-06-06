@@ -1,13 +1,13 @@
 {
-  "title": "About service",
-  "pageDescription": "Basic operations for Cloud GPU virtual machines.",
-  "shortDescription": "Basic operations for Cloud GPU virtual machines",
-  "metaTitle": "About service",
-  "metaDescription": "Basic operations for Cloud GPU virtual machines",
-  "sectionTitle": "About service",
-  "icon": "",
-  "weight": 1,
-  "uuid": "b2a6e660-59c6-4de3-be83-e09aac1fb14e",
-  "createdAt": "2022-12-27T14:46:55.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "About service",
+    "pageDescription": "Basic operations for Cloud GPU virtual machines.",
+    "shortDescription": "Basic operations for Cloud GPU virtual machines",
+    "metaTitle": "About service",
+    "metaDescription": "Basic operations for Cloud GPU virtual machines",
+    "sectionTitle": "About service",
+    "icon": "",
+    "weight": 1,
+    "uuid": "b2a6e660-59c6-4de3-be83-e09aac1fb14e",
+    "createdAt": "2022-12-27T14:46:55.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }

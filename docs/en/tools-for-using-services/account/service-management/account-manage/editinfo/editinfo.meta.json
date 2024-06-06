@@ -1,16 +1,16 @@
 {
-  "title": "Changing the profile",
-  "pageDescription": "How to change the data in the user profile and password from the VK Cloud personal account.",
-  "shortDescription": "Changing the user's password and personal data",
-  "metaTitle": "Changing the profile",
-  "metaDescription": "How to change the data in the user profile and password from the VK Cloud personal account.",
-  "sectionTitle": "Changing the profile",
-  "icon": "",
-  "weight": 1,
-  "additionalUuids": [
-    "4a37e17a-42ed-477e-9322-ea2803885cee"
-  ],
-  "uuid": "4f161add-0806-448f-b660-54f2f6ff6ee0",
-  "createdAt": "2023-04-13T13:49:17.000Z",
-  "updatedAt": "2024-05-24T17:09:49.000Z"
+    "title": "Changing the profile",
+    "pageDescription": "How to change the data in the user profile and password from the VK Cloud personal account.",
+    "shortDescription": "Changing the user's password and personal data",
+    "metaTitle": "Changing the profile",
+    "metaDescription": "How to change the data in the user profile and password from the VK Cloud personal account.",
+    "sectionTitle": "Changing the profile",
+    "icon": "",
+    "weight": 1,
+    "additionalUuids": [
+        "4a37e17a-42ed-477e-9322-ea2803885cee"
+    ],
+    "uuid": "4f161add-0806-448f-b660-54f2f6ff6ee0",
+    "createdAt": "2023-04-13T13:49:17.000Z",
+    "updatedAt": "2024-05-27T20:15:36.000Z"
 }
