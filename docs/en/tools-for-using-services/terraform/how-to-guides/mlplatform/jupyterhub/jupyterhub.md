@@ -65,7 +65,7 @@ Here:
 
   - Must contain at least 8 characters.
   - Must contain uppercase and lowercase Latin letters.
-  - Must contain at least one digit and a special character from the range `? ! ~ @ # $ % ^ & _ - + * = ; : , . < > | [ ] { } ( )`.
+  - Must contain at least one digit and a special character `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `<`, `>`, `|`, `[`, `]`, `{`, `}`, `(`, `)`.
 
 - `flavor_id` — a VM type ID. You can specify the ID in the manifest or get it from the data source.
 

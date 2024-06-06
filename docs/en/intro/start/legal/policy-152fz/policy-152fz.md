@@ -152,6 +152,6 @@ The Customer can use the Service to the extent of the rights granted to him by t
 
 7.2. The Customer guarantees that his Content posted using the Contractor's Service does not contain information and images of a pornographic nature, does not promote violence, racial, sexual, religious or other forms of inequality, or other activities directly prohibited by the legislation of the Russian Federation, does not violate copyright laws. law and other applicable legislation, as this may affect the reputation of the Contractor.
 
-7.3. The forms of use by the Customer of images, texts, names, emblems and symbols of the Contractor must be agreed with the representatives of the Contractor.
+7.3. The forms of use by the Customer of images, texts, names, emblems, and characters of the Contractor must be agreed with the representatives of the Contractor.
 
 Revision: from 10/22/2021

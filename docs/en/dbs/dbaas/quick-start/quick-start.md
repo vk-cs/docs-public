@@ -231,7 +231,7 @@ The DB instance is charged and consumes computational resources. After completin
 
      <info>
 
-     It is recommended either to use strong and lenghty password, that comprises several types of characters,, or to generate password.
+     It is recommended either to use strong and lenghty password, that comprises several types of characters, or to generate password.
 
      The strong password is crucial, because this DB instance will be exposed to the internet.
 

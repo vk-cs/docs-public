@@ -12,7 +12,7 @@ Numerous pre-installed templates developed for Zabbix allow you to get informati
 - b64_pkcs12_container (default: none) — a file in PKS#12 format without a password converted to base4 containing the certificate of the certification authority, the private key, and the Zabbix agent certificate.
 - psk (default: none) — secret key (Pre Shared Key).
 - zabbix_agent_version (default: 3.4) — Zabbix agent version (possible values 3.4 or 5.0). The parameter is available for PostgreSQL and PostgreSQL Pro.
-- hostname — the name of the host (case sensitive) to display on the Zabbix server. Valid characters: Latin lowercase, uppercase, numbers and symbols: '.', ' ', '_', '-'. By default, the name of the VM instance of the DBMS. Do not use DBMS for clusters.
+- hostname — the name of the host (case sensitive) to display on the Zabbix server. Valid characters: Latin lowercase, uppercase, numbers, spaces, and special characters: `.`, `_`, `-`. By default, the name of the VM instance of the DBMS. Do not use DBMS for clusters.
 
 ## PostgreSQL monitoring
 
@@ -22,7 +22,7 @@ Numerous pre-installed templates developed for Zabbix allow you to get informati
 - b64_pkcs12_container (default: none) — a file in PKS#12 format without a password converted to base4 containing the certificate of the certification authority, the private key, and the Zabbix agent certificate.
 - psk (default: none) — secret key (Pre Shared Key).
 - zabbix_agent_version (default: 3.4) — Zabbix agent version. Possible values are 3.4 and 5.0. For PostgreSQL and PostgreSQL Pro, 5.0v2 is also available — for installing Zabbix Agent 2.
-- hostname — the name of the host (case sensitive) to display on the Zabbix server. Valid characters: Latin lowercase, uppercase, numbers and symbols: '.', ' ', '_', '-'. By default, the name of the VM instance of the DBMS. Do not use DBMS for clusters.
+- hostname — the name of the host (case sensitive) to display on the Zabbix server. Valid characters: Latin lowercase, uppercase, numbers, spaces, and special characters: `.`, `_`, `-`. By default, the name of the VM instance of the DBMS. Do not use DBMS for clusters.
 
 ## PostgreSQL monitoring
 
