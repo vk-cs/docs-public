@@ -1,0 +1,1 @@
+Начало работы с сервисом MLflow Deploy. Создание инстансов MLflow Deploy доступно как через UI, так и через [MLflow Client](../manage/manage-mlflow-client).

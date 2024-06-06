@@ -5,9 +5,7 @@
   "metaTitle": "Cloud Alerting",
   "metaDescription": "",
   "sectionTitle": "Cloud Alerting",
-  "markdown": "Service of notifications about changes in key metrics of cloud services",
   "icon": "",
-
   "weight": 2,
   "uuid": "449faa85-bd7e-4d8e-aca5-a1d1fc138263"
 }

@@ -5,7 +5,6 @@
   "metaTitle": "Cloud Big Data",
   "metaDescription": "Cloud Big Data — это решения для работы с большими данными на основе Apache Hadoop, Apache Spark, ClickHouse, Storm и Kafka. Вы можете выбрать подх",
   "sectionTitle": "Cloud Big Data",
-  "markdown": "Cloud Big Data — это решения для работы с большими данными на основе Apache Hadoop, Apache Spark, ClickHouse, Storm и Kafka. Вы можете выбрать подходящий предустановленный шаблон или задать собственную конфигурацию, установив нужные компоненты через веб-интерфейс. Поддерживается интеграция с объектным S3-хранилищем, виртуальными машинами, кластерами Kubernetes, GPU-вычислениями, облачными сервисами машинного обучения.<br><br><warn>Чтобы подключить сервис и создать кластер, обратитесь в [техническую поддержку](/ru/contacts) или оставьте заявку на [сайте сервиса](https://cloud.vk.com/bigdata/).</warn>",
   "icon": "",
   "weight": 1,
   "isBeta": true,
@@ -21,6 +20,7 @@
   "relativeSections": [
     {
       "partialPath": "/ru/tools-for-using-services/api/api-spec/bigdata-api"
-    }],  
+    }
+  ],
   "uuid": "bd23711e-6ce4-4c13-8d37-c6050abc71b4"
 }

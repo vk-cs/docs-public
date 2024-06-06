@@ -5,9 +5,7 @@
   "metaTitle": "Виртуальные сети",
   "metaDescription": "",
   "sectionTitle": "Виртуальные сети",
-  "markdown": "Работа с [сервисом виртуальных сетей](/ru/networks/vnet) с использованием Terraform.",
   "icon": "",
-
   "weight": 7,
   "uuid": "9336a564-a734-4519-ad39-081dfb11589f"
 }

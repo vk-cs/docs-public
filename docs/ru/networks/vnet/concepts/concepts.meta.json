@@ -1,13 +1,11 @@
 {
-    "title": "Концепции",
-    "pageDescription": "Подробное описание принципов функционирования и устройства сетевых сервисов VK Cloud.",
-    "shortDescription": "Как устроены сетевые сервисы VK Cloud",
-    "metaTitle": "Концепции",
-    "metaDescription": "",
-    "sectionTitle": "Концепции",
-    "markdown": "Подробное описание принципов функционирования и устройства сетевых сервисов VK Cloud.",
-    "icon": "",
-
-    "weight": 2,
-    "uuid": "5aec52a4-ff32-4122-9e53-9e54235dd5d2"
+  "title": "Концепции",
+  "pageDescription": "Подробное описание принципов функционирования и устройства сетевых сервисов VK Cloud.",
+  "shortDescription": "Как устроены сетевые сервисы VK Cloud",
+  "metaTitle": "Концепции",
+  "metaDescription": "",
+  "sectionTitle": "Концепции",
+  "icon": "",
+  "weight": 2,
+  "uuid": "5aec52a4-ff32-4122-9e53-9e54235dd5d2"
 }

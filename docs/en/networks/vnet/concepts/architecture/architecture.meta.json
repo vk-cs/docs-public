@@ -1,14 +1,13 @@
 {
-    "title": "Service architecture",
-    "pageDescription": "Architecture of VK Cloud virtual network service.",
-    "shortDescription": "How the service is designed",
-    "metaTitle": "Service architecture",
-    "metaDescription": "",
-    "sectionTitle": "Service architecture",
-    "markdown": "Architecture of VK Cloud virtual network service.",
-    "icon": "",
-    "weight": 2,
-    "uuid": "388502f4-a8ea-4588-907e-03b419422690",
-    "createdAt": "2023-03-17T04:38:48.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Service architecture",
+  "pageDescription": "Architecture of VK Cloud virtual network service.",
+  "shortDescription": "How the service is designed",
+  "metaTitle": "Service architecture",
+  "metaDescription": "",
+  "sectionTitle": "Service architecture",
+  "icon": "",
+  "weight": 2,
+  "uuid": "388502f4-a8ea-4588-907e-03b419422690",
+  "createdAt": "2023-03-17T04:38:48.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

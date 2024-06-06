@@ -5,9 +5,7 @@
   "metaTitle": "CI/CD based on GitLab",
   "metaDescription": "Use cases: Instructions for automating deployment using GitLab",
   "sectionTitle": "CI/CD based on GitLab",
-  "markdown": "This section provides instructions for automating deployment using GitLab.",
   "icon": "",
-
   "weight": 4,
   "uuid": "aec35a08-a990-48b0-8bf4-e4f41a0b3bbd"
 }

@@ -5,9 +5,7 @@
   "metaTitle": "Add-ons and settings",
   "metaDescription": "Each Cloud Containers cluster is already pre-configured for your convenience. This section describes the settings used in the cluster, as well as add-ons that can be installed in the cluster.",
   "sectionTitle": "Add-ons and settings",
-  "markdown": "Each Cloud Containers cluster is already pre-configured for your convenience. This section describes the settings used in the cluster, as well as add-ons that can be installed in the cluster.",
   "icon": "",
-
   "weight": 3,
   "uuid": "c79491d9-6a34-4797-8396-67d0369308c6"
 }

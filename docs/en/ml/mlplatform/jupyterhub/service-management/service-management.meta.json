@@ -5,9 +5,7 @@
   "metaTitle": "JupyterHub Instance Management",
   "metaDescription": "JupyterHub Instance Management",
   "sectionTitle": "JupyterHub Instance Management",
-  "markdown": "Description of how to manage the created JupyterHub instance.",
   "icon": "",
   "weight": 1,
-
   "uuid": "d2fde7ba-e4e9-4b28-8b1a-f47b6deb7780"
 }

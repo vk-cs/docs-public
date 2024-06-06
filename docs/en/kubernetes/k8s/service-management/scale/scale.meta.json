@@ -1,14 +1,13 @@
 {
-    "title": "Scaling cluster",
-    "pageDescription": "How to change the VM type for a node or the number of nodes in a cluster.",
-    "shortDescription": "How to change the VM type for a node or the number of nodes in a cluster",
-    "metaTitle": "Scaling cluster",
-    "metaDescription": "",
-    "sectionTitle": "Scaling cluster",
-    "markdown": "",
-    "icon": "",
-    "weight": 7,
-    "uuid": "5920466e-99d4-474a-b19a-d9a286815876",
-    "createdAt": "2023-01-13T09:20:35.000Z",
-    "updatedAt": "2024-05-27T19:58:24.000Z"
+  "title": "Scaling cluster",
+  "pageDescription": "How to change the VM type for a node or the number of nodes in a cluster.",
+  "shortDescription": "How to change the VM type for a node or the number of nodes in a cluster",
+  "metaTitle": "Scaling cluster",
+  "metaDescription": "",
+  "sectionTitle": "Scaling cluster",
+  "icon": "",
+  "weight": 7,
+  "uuid": "5920466e-99d4-474a-b19a-d9a286815876",
+  "createdAt": "2023-01-13T09:20:35.000Z",
+  "updatedAt": "2024-05-27T19:58:24.000Z"
 }

@@ -1,14 +1,13 @@
 {
-    "title": "Service architecture",
-    "pageDescription": "",
-    "shortDescription": "Features of the implementation of the Cloud Monitoring service",
-    "metaTitle": "Service architecture",
-    "metaDescription": "Cloud Monitoring состоит из нескольких частей: Масштабируемый API по приему метрик\nРаспределенное хранилище метрик\nМасштабируемый API по чт",
-    "sectionTitle": "Service architecture",
-    "markdown": "",
-    "icon": "",
-    "weight": 0,
-    "uuid": "8b980499-86d8-4016-b222-7c3be4dba322",
-    "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Service architecture",
+  "pageDescription": "",
+  "shortDescription": "Features of the implementation of the Cloud Monitoring service",
+  "metaTitle": "Service architecture",
+  "metaDescription": "Cloud Monitoring состоит из нескольких частей: Масштабируемый API по приему метрик\nРаспределенное хранилище метрик\nМасштабируемый API по чт",
+  "sectionTitle": "Service architecture",
+  "icon": "",
+  "weight": 0,
+  "uuid": "8b980499-86d8-4016-b222-7c3be4dba322",
+  "createdAt": "2022-03-26T14:10:44.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

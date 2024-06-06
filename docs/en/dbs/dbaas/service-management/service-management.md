@@ -1,0 +1,1 @@
+Standard operations for managing VK Cloud DBMS instances and their resources.

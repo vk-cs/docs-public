@@ -1,0 +1,1 @@
+Scenarios for using the VK Cloud Personal account service.

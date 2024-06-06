@@ -1,0 +1,1 @@
+Managing advanced routers in the Cloud Networks service. Advanced routers are only available with [SDN Sprut](../../concepts/architecture#ispolzuemye_sdn). To find out which SDN is used in your project or to connect another, contact [technical support](/en/contacts).

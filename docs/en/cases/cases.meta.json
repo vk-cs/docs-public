@@ -5,10 +5,8 @@
   "metaTitle": "How-to guides",
   "metaDescription": "VK Cloud provides tools and software packages to implement a variety of tasks facing system administrators.",
   "sectionTitle": "How-to guides",
-  "markdown": "VK Cloud provides tools and software packages for implementing a variety of tasks facing system administrators: from using basic services to high-load environments and landscapes. The section contains scenarios for solving popular problems, for which you can use the resources of the platform.",
   "icon": "",
   "weight": 12,
-
   "uuid": "66fc6df5-0858-4595-b2d3-46cd2b8502fe",
   "additionalUuids": [
     "c032270e-c4fd-4b2e-a8c4-6059ecd5240f",

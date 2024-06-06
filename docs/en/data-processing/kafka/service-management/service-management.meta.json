@@ -4,10 +4,8 @@
   "shortDescription": "Creating an instance of the service and managing its components",
   "metaTitle": "Service management",
   "metaDescription": "Cloud Kafka in VK Cloud: creating an instance of the service, managing the instance and its components",
-  "markdown": "",
   "sectionTitle": "Service management",
   "icon": "",
-
   "weight": 3,
   "uuid": "953a586d-70c8-4569-acab-f2b4159cf2c4"
 }

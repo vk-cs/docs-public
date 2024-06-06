@@ -1,17 +1,16 @@
 {
-    "title": "Standard routers",
-    "pageDescription": "Managing standard routers in the virtual networks service.",
-    "shortDescription": "Adding and editing a standard router, managing interfaces and static routes",
-    "metaTitle": "Standard routers",
-    "metaDescription": "",
-    "sectionTitle": "Standard routers",
-    "markdown": "Managing standard routers in the virtual networks service.",
-    "icon": "",
-    "weight": 5,
-    "uuid": "f0ebf594-b4a4-4290-8574-bab3ef7fa9fe",
-    "additionalUuids": [
-        "5eb605a5-9b1f-46c5-95b3-5d10206de632"
-    ],
-    "createdAt": "2023-03-17T04:38:48.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "Standard routers",
+  "pageDescription": "Managing standard routers in the virtual networks service.",
+  "shortDescription": "Adding and editing a standard router, managing interfaces and static routes",
+  "metaTitle": "Standard routers",
+  "metaDescription": "",
+  "sectionTitle": "Standard routers",
+  "icon": "",
+  "weight": 5,
+  "uuid": "f0ebf594-b4a4-4290-8574-bab3ef7fa9fe",
+  "additionalUuids": [
+    "5eb605a5-9b1f-46c5-95b3-5d10206de632"
+  ],
+  "createdAt": "2023-03-17T04:38:48.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

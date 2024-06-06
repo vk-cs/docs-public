@@ -5,9 +5,7 @@
   "metaTitle": "Logging",
   "metaDescription": "Usage scenarios: organization of log collection using Fluentd or ELK stack",
   "sectionTitle": "Logging",
-  "markdown": "",
   "icon": "",
-
   "weight": 6,
   "uuid": "6d2d06e6-12e5-4d29-9ea5-bb1253b35e92"
 }

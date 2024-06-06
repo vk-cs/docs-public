@@ -1,0 +1,1 @@
+Technical and methodological solutions to improve the security of working with the VK Cloud platform.

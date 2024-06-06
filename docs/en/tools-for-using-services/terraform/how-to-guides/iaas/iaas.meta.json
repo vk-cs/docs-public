@@ -1,13 +1,11 @@
 {
-    "title": "Cloud Servers",
-    "pageDescription": "Working with the Cloud Servers service using Terraform.",
-    "shortDescription": "How to use Terraform to manage the Cloud Servers service objects",
-    "metaTitle": "Cloud Servers",
-    "metaDescription": "",
-    "sectionTitle": "Cloud Servers",
-    "markdown": "Working with the [Cloud Servers](/en/base/iaas) service using Terraform.",
-    "icon": "",
-
-    "weight": 0,
-    "uuid": "03c064ea-f496-4468-9286-2196733efc90"
+  "title": "Cloud Servers",
+  "pageDescription": "Working with the Cloud Servers service using Terraform.",
+  "shortDescription": "How to use Terraform to manage the Cloud Servers service objects",
+  "metaTitle": "Cloud Servers",
+  "metaDescription": "",
+  "sectionTitle": "Cloud Servers",
+  "icon": "",
+  "weight": 0,
+  "uuid": "03c064ea-f496-4468-9286-2196733efc90"
 }

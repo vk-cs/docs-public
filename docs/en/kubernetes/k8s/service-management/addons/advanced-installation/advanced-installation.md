@@ -1,0 +1,1 @@
+It describes the configuration and installation of addons, including editing the addon code.

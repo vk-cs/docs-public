@@ -1,14 +1,13 @@
 {
-    "title": "CORS",
-    "pageDescription": "",
-    "shortDescription": "",
-    "metaTitle": "CORS",
-    "metaDescription": "Сервис Cloud Storage позволяет управлять конфигурацией CORS бакета. Для загрузки конфигурации CORS необходимо сформировать XML-документ. Перечень",
-    "sectionTitle": "CORS",
-    "markdown": "",
-    "icon": "",
-    "weight": 7,
-    "uuid": "0f7ce21b-d4ef-423d-a821-853200d52e91",
-    "createdAt": "2023-02-02T15:05:34.000Z",
-    "updatedAt": "2024-05-24T17:09:49.000Z"
+  "title": "CORS",
+  "pageDescription": "",
+  "shortDescription": "",
+  "metaTitle": "CORS",
+  "metaDescription": "Сервис Cloud Storage позволяет управлять конфигурацией CORS бакета. Для загрузки конфигурации CORS необходимо сформировать XML-документ. Перечень",
+  "sectionTitle": "CORS",
+  "icon": "",
+  "weight": 7,
+  "uuid": "0f7ce21b-d4ef-423d-a821-853200d52e91",
+  "createdAt": "2023-02-02T15:05:34.000Z",
+  "updatedAt": "2024-05-24T17:09:49.000Z"
 }

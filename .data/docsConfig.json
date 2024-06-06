@@ -79,7 +79,8 @@
     ]
   },
   "leftMenu": {
-    "startLevel": 3
+    "startLevel": 3,
+    "useLeftMenu": true
   },
   "basePartnerPath": "docs-private",
   "docs": {

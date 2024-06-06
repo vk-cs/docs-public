@@ -1,14 +1,13 @@
 {
-    "title": "Создание инстанса JupyterHub",
-    "pageDescription": "Пример создания инстанса JupyterHub с использованием Terraform.",
-    "shortDescription": "",
-    "metaTitle": "Создание инстанса JupyterHub",
-    "metaDescription": "Пример создания инстанса JupyterHub с использованием Terraform",
-    "sectionTitle": "Создание инстанса JupyterHub",
-    "markdown": "",
-    "icon": "",
-    "weight": 1,
-    "uuid": "66fd85f6-5860-48e2-a2ce-73dfcacc8043",
-    "createdAt": "2024-04-16T05:21:35.000Z",
-    "updatedAt": "2024-05-27T19:58:24.000Z"
+  "title": "Создание инстанса JupyterHub",
+  "pageDescription": "Пример создания инстанса JupyterHub с использованием Terraform.",
+  "shortDescription": "",
+  "metaTitle": "Создание инстанса JupyterHub",
+  "metaDescription": "Пример создания инстанса JupyterHub с использованием Terraform",
+  "sectionTitle": "Создание инстанса JupyterHub",
+  "icon": "",
+  "weight": 1,
+  "uuid": "66fd85f6-5860-48e2-a2ce-73dfcacc8043",
+  "createdAt": "2024-04-16T05:21:35.000Z",
+  "updatedAt": "2024-05-27T19:58:24.000Z"
 }

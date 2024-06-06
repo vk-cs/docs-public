@@ -5,13 +5,13 @@
   "metaTitle": "MLflow",
   "metaDescription": "MLflow это сервис по созданию и работе с инстансами MLflow",
   "sectionTitle": "MLflow",
-  "markdown": "Этот раздел описывает принципы работы с сервисом MLflow, создание и работу с инстансами MLflow.",
   "icon": "",
   "weight": 4,
   "relativeSections": [
     {
-    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
-    "title": "Создание инстанса MLflow с помощью Terraform"
-    }],
+      "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
+      "title": "Создание инстанса MLflow с помощью Terraform"
+    }
+  ],
   "uuid": "771f622f-35e9-407e-9379-c9143efe8886"
 }

@@ -1,0 +1,1 @@
+Cloud Servers service allows you to organize work with virtual machines to solve various tasks. Here are the most popular usage scenarios.

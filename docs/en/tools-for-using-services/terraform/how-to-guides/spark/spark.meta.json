@@ -5,7 +5,6 @@
   "metaTitle": "Cloud Spark",
   "metaDescription": "Working with Cloud Spark using Terraform",
   "sectionTitle": "Cloud Spark",
-  "markdown": "Working with [Cloud Spark](/en/ml/spark-to-k8s) using Terraform.",
   "icon": "",
   "weight": 8,
   "uuid": "0f7b601d-9c0f-4955-9512-404d97eb539b"

@@ -1,0 +1,1 @@
+How to install and configure a monitoring agent on virtual machines.

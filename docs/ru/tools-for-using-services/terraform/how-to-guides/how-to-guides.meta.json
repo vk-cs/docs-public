@@ -5,10 +5,10 @@
   "metaTitle": "Практические руководства",
   "metaDescription": "Использование Terraform в VK Cloud.",
   "sectionTitle": "Практические руководства",
-  "markdown": "Использование Terraform в VK Cloud.",
   "icon": "",
   "weight": 1,
-
   "uuid": "b94c90cb-ae39-4460-83d2-7881b05fac17",
-  "additionalUuids": ["7eed1411-ffad-4888-90e6-1675ce7fd134"]
+  "additionalUuids": [
+    "7eed1411-ffad-4888-90e6-1675ce7fd134"
+  ]
 }

@@ -1,0 +1,1 @@
+Basic concepts when working with the VK Cloud platform.

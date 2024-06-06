@@ -4,10 +4,8 @@
   "shortDescription": "Connecting services in your personal account and managing service instances",
   "metaTitle": "Service management",
   "metaDescription": "Marketplace VK Cloud: standard operations for managing SaaS and image-based services",
-  "markdown": "How to connect the service from the app store and how to manage service instances via [personal account](https://msk.cloud.vk.com/app/en/) VK Cloud. The initial configuration of specific services is described in the section [Configuring Marketplace services](/en/applications-and-services/marketplace/initial-configuration)",
   "sectionTitle": "Service management",
   "icon": "",
-
   "weight": 3,
   "uuid": "47775d45-6a89-4538-857c-e25620f9bc25"
 }

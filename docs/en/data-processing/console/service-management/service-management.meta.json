@@ -4,10 +4,8 @@
   "shortDescription": "How to create and manage logical groups of data service instances",
   "metaTitle": "Service management",
   "metaDescription": "Data Platform UI Console in VK Cloud: creating and managing logical groups of data service instances",
-  "markdown": "",
   "sectionTitle": "Service management",
   "icon": "",
-
   "weight": 2,
   "uuid": "0c9e0938-c558-4b65-abe5-96a42431c83a"
 }

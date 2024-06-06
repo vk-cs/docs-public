@@ -5,9 +5,7 @@
   "metaTitle": "DBMS backup",
   "metaDescription": "Backup instances in both automatic and manual mode will help to protect yourself from data loss.",
   "sectionTitle": "DBMS backup",
-  "markdown": "Replication and backup of DB instances in automatic and manual modes.",
   "icon": "",
-
   "weight": 2,
   "uuid": "9b7b474f-41e5-449f-a78f-8ebc737522d5",
   "additionalUuids": [
