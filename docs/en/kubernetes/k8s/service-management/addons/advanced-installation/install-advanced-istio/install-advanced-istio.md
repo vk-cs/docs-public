@@ -2,7 +2,7 @@
 
 [Install](../install-advanced-monitoring) the `kube-prometheus-stack` addon.
 
-## Installing the addon
+## Installing addon
 
 [Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the addon.
 
@@ -40,7 +40,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
         <warn>
 
-        An incorrectly set configuration code can lead to errors during installation or the addon is inoperable.
+        An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
 
         </warn>
 
@@ -67,7 +67,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
             addon_id = data.vkcs_kubernetes_addon.istiod.id
             namespace = "istio-system"
             configuration_values = templatefile("./istiod-all.yaml",{istioNamespace = "istio-system"})
-         
+
             depends_on = [
                vkcs_kubernetes_node_group.default_ng
             ]
@@ -149,7 +149,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - the name of the namespace where the addon will be installed;
       - addon settings code.
 
-   1. Set the necessary tolerations and nodeSelector in the addon setup code:
+   1. Set the necessary tolerations and nodeSelector in the addon settings code:
 
       <tabs>
       <tablist>
@@ -183,7 +183,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       <warn>
 
-      An incorrectly set configuration code can lead to errors during installation or the addon is inoperable.
+      An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
 
       </warn>
 
@@ -206,7 +206,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 <info>
 
-During quick installation, the addon configuration code is not edited.
+During quick installation, the addon settings code is not edited.
 
 If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 

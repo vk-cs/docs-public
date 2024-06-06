@@ -2,7 +2,7 @@
 
 Connect the [Cloud Logging](/en/manage/logging) service to the project, if it has not been done yet. To do this, [contact technical support](/en/contacts).
 
-## Installing the addon
+## Installing addon
 
 [Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the addon:
 
@@ -42,11 +42,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - the selected version;
       - application name;
       - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing_the_addon_setup_code_during_installation).
+      - [addon settings code](#editing_addon_settings_code_during_installation).
 
         <warn>
 
-        An incorrectly set configuration code can lead to errors during installation or the addon is inoperable.
+        An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
 
         </warn>
 
@@ -74,7 +74,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 <info>
 
-During quick installation, the addon configuration code is not edited.
+During quick installation, the addon settings code is not edited.
 
 If this does not suit you, perform the **standard installation**.
 
@@ -126,22 +126,22 @@ If this does not suit you, perform the **standard installation**.
 </tabpanel>
 </tabs>
 
-## Editing the addon setup code during installation
+## Editing addon settings code during installation
 
 Editing the addon code is applicable for a standard installation.
 
-The full addon setup code along with the description of the fields is available:
+The full addon settings code along with the description of the fields is available:
 
 - in your personal account;
 - in the `configuration_values` attribute from the data source [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) if Terraform is used.
 
-Also on [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml ) the Fluent Bit configuration code is available, which serves as the basis for this addon.
+Also on [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml ) the Fluent Bit settings code is available, which serves as the basis for this addon.
 
 <warn>
 
 Do not delete the fields that are required for the correct installation and operation of the addon, or the values specified in these fields.
 
-There are comments in the addon setup code that allow you to find such fields.
+There are comments in the addon settings code that allow you to find such fields.
 
 </warn>
 

@@ -6,7 +6,7 @@
     "metaDescription": "Configuring and installing an addon with monitoring tools",
     "sectionTitle": "Kube Prometheus Stack",
     "icon": "",
-    "weight": 9,
+    "weight": 10,
     "uuid": "28fa4aa2-45fb-4d94-b6f2-aa1d1d556b4e",
     "createdAt": "2023-06-13T06:58:16.000Z",
     "updatedAt": "2024-05-27T20:15:36.000Z"
