@@ -135,7 +135,28 @@
 </tabpanel>
 </tabs>
 
-### Fluent Bit для Cloud Logging (logaas-integration)
+### Fluent Bit
+
+<tabs>
+<tablist>
+<tab>Описание</tab>
+<tab>Системные требования</tab>
+</tablist>
+<tabpanel>
+
+[Fluent Bit](https://docs.fluentbit.io/manual) позволяет настраивать сбор логов в кластерах Cloud Containers, чтобы затем анализировать их в сервисе [Cloud Logging](/ru/manage/logging), например, с помощью плагинов Elasticsearch или Loki. Основное преимущество данного аддона — возможность более гибкой настройки под нужды пользователя.
+
+Источниками логов выступают [службы kubelet](https://kubernetes.io/docs/concepts/overview/components/#kubelet) и [поды](../../../reference/pods) (pods), расположенные на узлах кластера.
+
+</tabpanel>
+<tabpanel>
+
+У аддона нет собственных системных требований. Поды аддона используют [настройки лимитов](../settings#nastroyki_limitov_dlya_podov) по умолчанию.
+
+</tabpanel>
+</tabs>
+
+### {heading(Fluent Bit для Cloud Logging (logaas-integration))[id=fluent_bit_logaas_integration]}
 
 <tabs>
 <tablist>
