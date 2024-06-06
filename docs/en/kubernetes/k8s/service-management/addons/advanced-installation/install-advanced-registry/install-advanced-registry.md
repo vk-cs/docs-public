@@ -44,7 +44,7 @@
 
    Write down this IP address. It will be used to access the Docker registry.
 
-## Installing the addon
+## Installing addon
 
 <warn>
 
@@ -89,11 +89,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - application name;
       - the name of the namespace where the addon will be installed.
 
-   1. Edit the [addon setup code](#editing_the_addon_setup_code_during_installation).
+   1. Edit the [addon settings code](#editing_addon_settings_code_during_installation).
 
       <warn>
 
-      An incorrectly set configuration code can lead to errors during installation or the addon is inoperable.
+      An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
 
       </warn>
 
@@ -120,7 +120,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
             addon_id = data.vkcs_kubernetes_addon.docker-registry.id
             namespace = "kube-system"
             configuration_values = templatefile("./docker-registry-all.yaml",{htpasswd = "<htpasswd password>", accessKey = "<access key for S3 account>", secretKey = "<secret key for S3 account>", loadBalancerIP = "<floating IP>"})
-         
+
             depends_on = [
                vkcs_kubernetes_node_group.default_ng
             ]
@@ -201,9 +201,9 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - application name;
       - the name of the namespace where the addon will be installed.
 
-   1. Edit the [addon setup code](#editing_the_addon_setup_code_during_installation).
+   1. Edit the [addon settings code](#editing_addon_settings_code_during_installation).
 
-   1. Set the necessary tolerations and nodeSelector in the addon setup code:
+   1. Set the necessary tolerations and nodeSelector in the addon settings code:
 
       <tabs>
       <tablist>
@@ -237,7 +237,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       <warn>
 
-      An incorrectly set configuration code can lead to errors during installation or the addon is inoperable.
+      An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
 
       </warn>
 
@@ -258,12 +258,12 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 </tabpanel>
 </tabs>
 
-## Editing the addon setup code during installation
+## Editing addon settings code during installation
 
 <info>
 
-- When editing the addon setup code, use the information [obtained earlier](#preparatory_steps).
-- The full addon setup code along with the description of the fields is available on [GitHub](https://github.com/twuni/docker-registry.helm/blob/main/values.yaml).
+- When editing the addon settings code, use the information [obtained earlier](#preparatory_steps).
+- The full addon settings code along with the description of the fields is available on [GitHub](https://github.com/twuni/docker-registry.helm/blob/main/values.yaml).
 
 </info>
 
@@ -300,11 +300,11 @@ Specify:
      loadBalancerIP: <selected floating IP address>
    ```
 
-After editing the addon code [continue installing the addon](#installing_the_addon).
+After editing the addon code [continue installing the addon](#installing_addon).
 
 ## Connecting to registry
 
-1. Write down the data that was used in the addon setup code when installing it:
+1. Write down the data that was used in the addon settings code when installing it:
 
    - Login.
    - Password.

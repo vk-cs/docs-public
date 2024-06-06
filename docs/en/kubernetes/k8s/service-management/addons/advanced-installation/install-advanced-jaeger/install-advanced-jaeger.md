@@ -1,6 +1,6 @@
 As part of the [addon](../../../../concepts/addons-and-settings/addons#jaeger) there is [Jaeger collector](https://www.jaegertracing.io/docs/latest/architecture/#collector), which requires storage to work. As a [storage backend](https://www.jaegertracing.io/docs/latest/deployment/#span-storage-backends) the Jaeger addon from VK Cloud uses Elasticsearch, which is deployed in the form of several replicas.
 
-## Installing the addon
+## Installing addon
 
 [Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the addon.
 
@@ -38,14 +38,14 @@ If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_n
       - application name;
       - the name of the namespace where the addon will be installed.
 
-   1. Edit the [addon settings code](#editing_the_addon_setup_code_during_installation) if:
+   1. Edit the [addon settings code](#editing_addon_settings_code_during_installation) if:
 
       - you need a non-standard number of Elasticsearch replicas;
       - the master nodes and worker nodes are located in different availability zones.
 
       <warn>
 
-      An incorrectly set configuration code can lead to errors during installation or the addon is inoperable.
+      An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
 
       </warn>
 
@@ -110,12 +110,12 @@ If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_n
       - application name;
       - the name of the namespace where the addon will be installed.
 
-   1. Edit the [addon settings code](#editing_the_addon_setup_code_during_installation) if:
+   1. Edit the [addon settings code](#editing_addon_settings_code_during_installation) if:
 
       - you need a non-standard number of Elasticsearch replicas;
       - the master nodes and worker nodes are located in different availability zones.
 
-   1. Set the necessary tolerations and nodeSelector in the addon setup code:
+   1. Set the necessary tolerations and nodeSelector in the addon settings code:
 
       <tabs>
       <tablist>
@@ -159,7 +159,7 @@ If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_n
 
       <warn>
 
-      An incorrectly set configuration code can lead to errors during installation or the addon is inoperable.
+      An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
 
       </warn>
 
@@ -183,7 +183,7 @@ If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_n
 
 To install the addon in this way, it is necessary that the master nodes and the worker nodes are in the same availability zone.
 
-During quick installation, the addon configuration code is not edited. Three Elasticsearch replicas will be used as the storage backend.
+During quick installation, the addon settings code is not edited. Three Elasticsearch replicas will be used as the storage backend.
 
 If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
@@ -225,11 +225,11 @@ If this does not suit you, perform a **standard installation** or **installation
 </tabpanel>
 </tabs>
 
-## Editing the addon setup code during installation
+## Editing addon settings code during installation
 
 Editing the addon code is applicable for standard installation and installation on dedicated worker nodes.
 
-The full addon setup code along with the description of the fields is available on [GitHub](https://github.com/jaegertracing/helm-charts/blob/main/charts/jaeger/values.yaml).
+The full addon settings code along with the description of the fields is available on [GitHub](https://github.com/jaegertracing/helm-charts/blob/main/charts/jaeger/values.yaml).
 
 <err>
 
@@ -239,7 +239,7 @@ Do not delete the `podAnnotations.timestamp` fields or the values set in them. T
 
 ### Changing the number of Elasticsearch replicas
 
-To set the required number of replicas, change the value of the field in the addon setup code:
+To set the required number of replicas, change the value of the field in the addon settings code:
 
 ```yaml
 elasticsearch:
@@ -266,4 +266,4 @@ elasticsearch:
     storageClassName: "<name of the storage class>"
 ```
 
-After editing the addon code [continue installing the addon](#installing_the_addon).
+After editing the addon code [continue installing the addon](#installing_addon).

@@ -1,4 +1,4 @@
-## Installing the addon
+## Installing addon
 
 <warn>
 
@@ -40,11 +40,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       - application name;
       - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing_the_addon_setup_code_during_installation).
+      - [addon settings code](#editing_addon_settings_code_during_installation).
 
         <warn>
 
-        An incorrectly set configuration code can lead to errors during installation or the addon is inoperable.
+        An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
 
         </warn>
 
@@ -71,7 +71,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
             addon_id = data.vkcs_kubernetes_addon.kube-ingress.id
             namespace = "kube-ingress"
             configuration_values = templatefile("./ingress-all.yaml",{openstack-internal-load-balancer= "false"})
-         
+
             depends_on = [
                vkcs_kubernetes_node_group.default_ng
             ]
@@ -151,9 +151,9 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       - application name;
       - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing_the_addon_setup_code_during_installation).
+      - [addon settings code](#editing_addon_settings_code_during_installation).
 
-   1. Set the necessary tolerations and nodeSelector in the addon setup code:
+   1. Set the necessary tolerations and nodeSelector in the addon settings code:
 
       <tabs>
       <tablist>
@@ -193,7 +193,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       <warn>
 
-      An incorrectly set configuration code can lead to errors during installation or the addon is inoperable.
+      An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
 
       </warn>
 
@@ -216,7 +216,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 <info>
 
-During quick installation, the addon configuration code is not edited. A load balancer with a floating IP address will be created, and the Ingress controller will be accessible from the Internet.
+During quick installation, the addon settings code is not edited. A load balancer with a floating IP address will be created, and the Ingress controller will be accessible from the Internet.
 
 If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
@@ -260,12 +260,12 @@ If this does not suit you, perform a **standard installation** or **installation
 </tabpanel>
 </tabs>
 
-## Editing the addon setup code during installation
+## Editing addon settings code during installation
 
 <info>
 
 - Editing the addon code is applicable for standard installation and installation on dedicated worker nodes.
-- The full addon setup code along with the description of the fields is available on [GitHub](https://github.com/kubernetes/ingress-nginx/blob/main/charts/ingress-nginx/values.yaml).
+- The full addon settings code along with the description of the fields is available on [GitHub](https://github.com/kubernetes/ingress-nginx/blob/main/charts/ingress-nginx/values.yaml).
 
 </info>
 
@@ -285,7 +285,7 @@ service:
     }
 ```
 
-After editing the addon code [continue installing the addon](#installing_the_addon).
+After editing the addon code [continue installing the addon](#installing_addon).
 
 ### Prohibition of deleting an Ingress controller node by the Autoscaler module
 
@@ -297,7 +297,7 @@ controller:
     cluster-autoscaler.kubernetes.io/safe-to-evict: "false"
 ```
 
-After editing the addon code [continue installing the addon](#installing_the_addon).
+After editing the addon code [continue installing the addon](#installing_addon).
 
 ## Getting the IP address of the load balancer
 

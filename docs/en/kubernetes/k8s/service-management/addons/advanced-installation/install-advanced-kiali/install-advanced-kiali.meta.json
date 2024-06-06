@@ -6,7 +6,7 @@
     "metaDescription": "VK Cloud containers service: configuring and installing the Kiali addon.",
     "sectionTitle": "Kiali",
     "icon": "",
-    "weight": 8,
+    "weight": 9,
     "uuid": "ba0e9837-0664-4382-aa74-de8184aec77d",
     "createdAt": "2023-07-07T09:58:21.000Z",
     "updatedAt": "2024-05-27T20:15:36.000Z"

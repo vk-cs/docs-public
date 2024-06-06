@@ -1,4 +1,4 @@
-## Installing the addon
+## Installing addon
 
 [Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the addon.
 
@@ -35,11 +35,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - selected version
       - application name
       - namespace where the addon will be installed
-      - [addon setup code](#editing_the_addon_setup_code_during_installation)
+      - [addon settings code](#editing_addon_settings_code_during_installation)
 
         <warn>
 
-        An incorrectly set configuration code can lead to errors during installation or the addon is inoperable.
+        An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
 
         </warn>
 
@@ -128,7 +128,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
       - selected version
       - application name
       - the name of the namespace where the addon will be installed
-      - [addon settings code](#editing_the_addon_setup_code_during_installation)
+      - [addon settings code](#editing_addon_settings_code_during_installation)
 
    1. Set the necessary tolerations and nodeSelector in the addon setup code:
 
@@ -164,7 +164,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       <warn>
 
-      An incorrectly set configuration code can lead to errors during installation or the addon is inoperable.
+      An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
 
       </warn>
 
@@ -272,7 +272,7 @@ If this is not suitable for you, perform a **standard installation** or **instal
 </tabpanel>
 </tabs>
 
-## Editing the addon setup code during installation
+## Editing addon settings code during installation
 
 Editing the addon code is applicable for standard installation and installation on dedicated worker nodes.
 
@@ -284,4 +284,4 @@ Do not delete the `podAnnotations.timestamp` fields or the values set in them. T
 
 </err>
 
-After editing the addon code [continue installing the addon](#installing_the_addon).
+After editing the addon code [continue installing the addon](#installing_addon).
