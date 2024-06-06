@@ -106,7 +106,7 @@ In the absence of funds on the Personal balance (account) of the Customer to wri
 
 6.2. The Customer guarantees that the placement of the Customer's Content takes place in compliance with the conditions of the current legislation of the Russian Federation.
 
-6.3. The forms of use by the Customer of images, texts, names, emblems and symbols of the Contractor must be agreed with the representatives of the Contractor.
+6.3. The forms of use by the Customer of images, texts, names, emblems, and characters of the Contractor must be agreed with the representatives of the Contractor.
 
 6.4. The Contractor guarantees that the services for providing access to the Service are provided 24 (twenty four) hours a day, 7 (seven) days a week.
 

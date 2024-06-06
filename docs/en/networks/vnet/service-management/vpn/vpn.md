@@ -186,7 +186,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
          Valid characters:
          - uppercase and lowercase letters of the Latin alphabet;
          - numbers;
-         - symbols `-+&!@#$%^*(),.:;_=<>{}/`.
+         - special characters `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`.
 
          The key must contain at least one letter or number.
 
@@ -569,7 +569,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
          Valid characters:
          - uppercase and lowercase Latin letters;
          - numbers;
-         - characters `-+&!@#$%^*(),.:;_=<>{}/`.
+         - special characters `-`, `+`, `&`, `!`, `@`, `#`, `$`, `%`, `^`, `*`, `(`, `)`, `,`, `.`, `:`, `;`, `_`, `=`, `<`, `>`, `{`, `}`, `/`.
 
          The key must contain at least one letter or number.
 

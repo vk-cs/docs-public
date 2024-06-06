@@ -48,7 +48,7 @@
 
    Password requirements:
 
-   - can contain only numbers, characters from the range `!"#$%&()*+,.:;<=>?@[]^_{|}~-`, uppercase and lowercase Latin letters;
+   - can contain only numbers and special characters `!`, `"`, `#`, `$`, `%`, `&`, `(`, `)`, `*`, `+`, `,`, `.`, `:`, `;`, `<`, `=`, `>`, `?`, `@`, `[`, `]`, `^`, `_`, `{`, `|`, `}`, `~`, `-`, uppercase and lowercase Latin letters;
    - must consist of at least 8 characters;
    - must contain at least one uppercase and one lowercase letter of the Latin alphabet, at least one digit.
 

@@ -14,7 +14,7 @@ To create an account, go to the "Accounts" tab of the "Object Storage" service a
 
 <warn>
 
-The account name must start with a letter or number, it can only consist of Latin letters, numbers and symbols: period (.), Dash (-), underscore (\_).
+The account name must start with a letter or number, it can only consist of Latin letters, numbers, and characters: `.`, `-`, `_`.
 
 </warn>
 

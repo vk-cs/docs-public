@@ -16,7 +16,7 @@ You can only add one BGP router per advanced router.
 
 1. Go to the **Dynamic Routing** tab.
 1. Click the **Add a BGP router** button.
-1. Specify the name of the BGP router. You can use only numbers, Latin letters, space and symbols: `?` `!` `~` `@` `#` `$` `%` `^` `"` `&` `_` `-` `+` `*` `=` `;` `:` `,` `.` `/` `\` `|` `` ` `` `[` `]` `{` `}` `(` `)` `<` `>`.
+1. Specify the name of the BGP router. You can use only numbers, Latin letters, spaces, and special characters: `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `"`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `/`, `\`, `|`, `` ` ``, `[`, `]`, `{`, `}`, `(`, `)`, `<`, `>`.
 1. Specify an IP address for the BGP router — the router interface directed to the transit network. Use the highest IP address on the loopback or physical interface.
 1. Enter an **ASN** from the range 64512–65534.
 1. (Optional) Disable the BGP router if you do not need to establish a connection at this time. The BGP router will become inactive.
@@ -91,7 +91,7 @@ To connect autonomous networks using the BGP protocol, you need to specify the B
 1. Select the BGP router.
 1. Go to the **BGP neighbors** tab.
 1. Click **Add a BGP neighbor**.
-1. (Optional) Specify the name of the BGP neighbor. You can use only numbers, Latin letters, space and symbols: `?` `!` `~` `@` `#` `$` `%` `^` `"` `&` `_` `-` `+` `*` `=` `;` `:` `,` `.` `/` `\` `|` `` ` `` `[` `]` `{` `}` `(` `)` `<` `>`.
+1. (Optional) Specify the name of the BGP neighbor. You can use only numbers, Latin letters, spaces, and special characters: `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `"`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `/`, `\`, `|`, `` ` ``, `[`, `]`, `{`, `}`, `(`, `)`, `<`, `>`.
 1. Specify the interface directed to the transit network of the neighboring BGP router.
 1. Specify the **ASN** of the remote network. If the network does not have an ASN defined, use private ASNs from the range 64512–65534.
 1. (Optional) Disable the BGP neighbor if you do not need to establish a connection at the moment. The BGP router will not send requests to the remote router.
