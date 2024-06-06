@@ -26,7 +26,7 @@ Various add-ons (additional services) are available for Cloud Containers cluster
 
   The installation process is described in the section [Configuring and installing add-ons](../../../service-management/addons/advanced-installation/).
 
-## Available add-ons
+## {heading(Available add-ons)[id=available_addons]}
 
 <info>
 
@@ -70,7 +70,7 @@ Kubernetes clusters allow you to organize the logical division of Kubernetes res
 - Issue certificates, including self-signed certificates. To do this, `cert-manager` sends requests to sources acting as certificate authority (CA).
 
   Examples of the sources:
-  
+
   - Cybersecurity solutions providers such as [Venafi](https://www.venafi.com/).
   - Certificate providers, such as [Let’s Encrypt](https://letsencrypt.org/).
   - Storage for secrets, such as [HashiCorp Vault](https://www.vaultproject.io/).
@@ -136,6 +136,27 @@ See [Connecting to the Docker registry](../../../connect/docker-registry/) for d
 </tabpanel>
 </tabs>
 
+### Fluent Bit
+
+<tabs>
+<tablist>
+<tab>Description</tab>
+<tab>System requirements</tab>
+</tablist>
+<tabpanel>
+
+[Fluent Bit](https://docs.fluentbit.io/manual) allows you to flexibly configure log collection in Cloud Containers clusters and analyze them in the [Cloud Logging](/en/manage/logging) service, for example, using Elasticsearch or Loki plugins.
+
+The sources of the logs are [kubelet services](https://kubernetes.io/docs/concepts/overview/components/#kubelet) and [pods](../../../reference/pods) located on cluster nodes.
+
+</tabpanel>
+<tabpanel>
+
+The add-on does not have its own system requirements. The add-on subs use [limit settings](../settings#limits_settings_for_pods) by default.
+
+</tabpanel>
+</tabs>
+
 ### Fluent Bit for Cloud Logging (logaas-integration)
 
 <tabs>
@@ -186,7 +207,7 @@ The pre-installed Ingress controller integrates tightly with the VK Cloud platfo
 - **CPU**: 210m–610m.
 - **RAM**: 238Mi–660Mi.
 - **Standard load balancer**: one piece.
-- **Floating IP**: one piece. (when installed with [default settings](../../../service-management/addons/advanced-installation/install-advanced-ingress#installing_the_addon)).
+- **Floating IP**: one piece. (when installed with [default settings](../../../service-management/addons/advanced-installation/install-advanced-ingress#installing_addon)).
 
 </tabpanel>
 </tabs>

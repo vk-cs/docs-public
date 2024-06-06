@@ -32,11 +32,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       - application name;
       - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing_addon_setup_code_during_installation).
+      - [addon settings code](#editing_addon_settings_code_during_installation).
 
         <warn>
 
-        An incorrectly set configuration code can lead to errors during installation or the addon is inoperable.
+        An incorrectly set settings code can lead to errors during installation or the addon is inoperable.
 
         </warn>
 
@@ -144,9 +144,9 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       - application name;
       - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing_addon_setup_code_during_installation).
+      - [addon settings code](#editing_addon_settings_code_during_installation).
 
-   1. Set the necessary tolerations and nodeSelector in the addon setup code:
+   1. Set the necessary tolerations and nodeSelector in the addon settings code:
 
       <tabs>
       <tablist>
@@ -194,7 +194,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       <warn>
 
-      An incorrectly set configuration code can lead to errors during installation or the addon is inoperable.
+      An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
 
       </warn>
 
@@ -218,7 +218,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 <info>
 
-During quick installation, the addon configuration code is not edited. A Kubernetes secret will be created, containing a permanent password to log in to the Grafana web interface.
+During quick installation, the addon settings code is not edited. A Kubernetes secret will be created, containing a permanent password to log in to the Grafana web interface.
 
 If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
@@ -263,12 +263,12 @@ If this does not suit you, perform a **standard installation** or **installation
 </tabpanel>
 </tabs>
 
-## Editing addon setup code during installation
+## Editing addon settings code during installation
 
 <info>
 
 - Editing the addon code is applicable for standard installation and installation on dedicated worker nodes.
-- The full addon setup code along with the description of the fields is available on [GitHub](https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml).
+- The full addon settings code along with the description of the fields is available on [GitHub](https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml).
 
 </info>
 
@@ -276,7 +276,7 @@ If this does not suit you, perform a **standard installation** or **installation
 
 When installing an addon with default parameters, a Kubernetes secret will be created containing a permanent password to log in to the Grafana web interface.
 
-Also, when installing the addon, you can specify a temporary user password. In this case, the first login to the Grafana web interface is performed with this password, then you will be prompted to change it. To do this, change the value of the field in the addon setup code:
+Also, when installing the addon, you can specify a temporary user password. In this case, the first login to the Grafana web interface is performed with this password, then you will be prompted to change it. To do this, change the value of the field in the addon settings code:
 
 ```yaml
 grafana:

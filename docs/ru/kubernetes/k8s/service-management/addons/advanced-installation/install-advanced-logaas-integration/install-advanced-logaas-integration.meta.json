@@ -6,7 +6,7 @@
     "metaDescription": "Здесь описана настройка и установка аддона Fluent Bit для Cloud Logging (logaas-integration).",
     "sectionTitle": "Fluent Bit для Cloud Logging (logaas-integration)",
     "icon": "",
-    "weight": 4,
+    "weight": 5,
     "uuid": "d26578b5-6854-49c6-8d36-ad8402bfe188",
     "createdAt": "2023-12-11T07:52:05.000Z",
     "updatedAt": "2024-05-27T20:15:36.000Z"
