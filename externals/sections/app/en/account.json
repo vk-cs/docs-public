@@ -1,0 +1,14 @@
+{
+  "meta": "Manage access",
+  "path": "/account/identify-federation",
+  "groups": [
+    {
+      "title": "MANAGING IDENTITY PROVIDER",
+      "links": [
+        {
+          "link": "/en/tools-for-using-services/account/how-to-guides/add-fim-for-ad"
+        }
+      ]
+    }
+  ]
+}
