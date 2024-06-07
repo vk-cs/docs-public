@@ -42,7 +42,7 @@
 1. Go to your VK Cloud [personal account](https://cloud.vk.com/app/en/).
 1. Go to **Data Platform** → **Console**.
 1. Go to the **Groups** tab.
-1. Edit the group using one of the following methods:
+1. Open the group editing page by one of the following ways:
 
     - Open the menu of the group and select **Edit**.
     - On the group page:
