@@ -56,7 +56,7 @@ A list of origin groups will be displayed.
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud personal account.
 1. Select the project.
 1. Go to the **CDN → Source groups** section.
-1. Start to edit a group with one of the following ways:
+1. Open the group editing page by one of the following ways:
 
    - Click the name of the group you need.
    - Click ![menu-icon](/en/assets/menu-icon.svg "inline") for the group you need and select **Group settings**.
@@ -79,7 +79,7 @@ A list of origin groups will be displayed.
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud personal account.
 1. Select the project.
 1. Go to the **CDN → Source groups** section.
-1. Start to edit a group with one of the following ways:
+1. Open the group editing page by one of the following ways:
 
    - Click the name of the group you need.
    - Click ![menu-icon](/en/assets/menu-icon.svg "inline") for the group you need and select **Group settings**.
@@ -118,7 +118,7 @@ A list of origin groups will be displayed.
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud personal account.
 1. Select the project.
 1. Go to the **CDN → Source groups** section.
-1. Start to edit a group with one of the following ways:
+1. Open the group editing page by one of the following ways:
 
    - Click the name of the group you need.
    - Click ![menu-icon](/en/assets/menu-icon.svg "inline") for the group you need and select **Group settings**.
