@@ -1,5 +1,0 @@
-WARN OLD REDIRECTS:
-
-err:  /help/velero-backup-k8/
-err:  /help/en_US/k8s-pvc/persvol-k8s/
-err:  /help/ru_RU/cloud-voice/get-token/
