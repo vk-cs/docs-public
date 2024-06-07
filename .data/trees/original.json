@@ -8010,6 +8010,21 @@
     ]
   },
   {
+    "uuid": "d1c12c61-f441-4d38-b888-e4d615d88963",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/account/how-to-guides/add-fim-for-ad/add-fim-for-ad.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/account/how-to-guides/add-fim-for-ad/add-fim-for-ad.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "973d9006-c8dd-4695-9f26-28a37fc3b227",
     "lang": "en",
     "type": "ARTICLE",
@@ -17362,6 +17377,21 @@
     "partialPath": "/ru/tools-for-using-services/account/how-to-guides",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/how-to-guides/how-to-guides.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/how-to-guides/how-to-guides.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "3d8fbd42-5a15-405d-9891-8ce10e4f8c32",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad/add-fim-for-ad.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad/add-fim-for-ad.md",
     "variables": {},
     "hidden": false,
     "version": null,
