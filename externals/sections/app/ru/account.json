@@ -1,0 +1,14 @@
+{
+  "meta": "Управление доступами",
+  "path": "/account/identify-federation",
+  "groups": [
+    {
+      "title": "НАСТРОЙКА ФЕДЕРАЦИИ УДОСТОВЕРЕНИЙ",
+      "links": [
+        {
+          "link": "/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad"
+        }
+      ]
+    }
+  ]
+}
