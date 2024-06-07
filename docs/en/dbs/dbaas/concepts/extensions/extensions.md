@@ -108,7 +108,7 @@ For some extensions, mandatory parameters must be added — without them, the in
 
 The number of extensions installed per DB instance is limited and depends on the type of DBMS.
 
-Learn more about working with extensions in VK Cloud in the article [Managing extensions](../../instructions/managing-extensions/).
+Learn more about working with extensions in VK Cloud in the article [Managing extensions](../../service-management/managing-extensions/).
 
 <info>
 

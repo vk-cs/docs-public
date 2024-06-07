@@ -4,7 +4,7 @@
 - подключенная сеть;
 - DNS-имя.
 
-Подробнее про сети и порты в разделах [Управление сетями и подсетями](/ru/networks/vnet/operations/manage-net) и [Управление портами](/ru/networks/vnet/operations/manage-ports).
+Подробнее про сети и порты в разделах [Управление сетями и подсетями](/ru/networks/vnet/service-management/net) и [Управление портами](/ru/networks/vnet/service-management/ports).
 
 ## Подключение сети к ВМ
 
@@ -24,7 +24,7 @@
    1. **Имя**: задайте имя сети.
    2. **Сеть для подключения**: выберите значение из списка:
 
-      - **Создать новую сеть**: подробнее о создании новой сети в разделе [Управление сетями и подсетями](/ru/networks/vnet/operations/manage-net).
+      - **Создать новую сеть**: подробнее о создании новой сети в разделе [Управление сетями и подсетями](/ru/networks/vnet/service-management/net).
       - **Внешняя сеть (ext-net)**: виртуальной машине будет автоматически назначен IP-адрес.
       - Существующая сеть.
 
@@ -34,14 +34,14 @@
       - **DNS-имя**: имя, по которому можно обратиться к ВМ через [приватный DNS](/ru/networks/dns/private-dns).
       - **Задать IP-адрес**: включите, чтобы задать конкретный IP-адрес из пула адресов подсети.
 
-   3. **Настройки Firewall**: укажите нужные группы безопасности. Подробнее в разделе [Управление правилами файервола](/ru/networks/vnet/operations/secgroups).
+   3. **Настройки Firewall**: укажите нужные группы безопасности. Подробнее в разделе [Управление правилами файервола](/ru/networks/vnet/service-management/secgroups).
 
 7. Нажмите кнопку **Сохранить**.
 
 </tabpanel>
 <tabpanel>
 
-Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 ### Подключение к существующему порту
 
@@ -120,7 +120,7 @@
 
       Также возможно создать порт с [опциями DHCP](https://github.com/Juniper/contrail-controller/wiki/Extra-DHCP-Options).
 
-      При необходимости [установите порту плавающий IP-адрес](/ru/networks/vnet/operations/manage-floating-ip).
+      При необходимости [установите порту плавающий IP-адрес](/ru/networks/vnet/service-management/floating-ip).
 
    В результате будет выведен ID созданного порта и другая информация о нем.
 
@@ -164,12 +164,12 @@
 
 5. В появившемся окне нажмите кнопку **Подтвердить**.
 
-Подключение сети к ВМ будет удалено, но созданный ранее порт останется в статусе **Не подключен**. Подробнее об удалении портов в разделе [Управление портами](/ru/networks/vnet/operations/manage-ports).
+Подключение сети к ВМ будет удалено, но созданный ранее порт останется в статусе **Не подключен**. Подробнее об удалении портов в разделе [Управление портами](/ru/networks/vnet/service-management/ports).
 
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 2. Получите ID виртуальной машины:
 
    ```bash

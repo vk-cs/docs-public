@@ -42,7 +42,7 @@
 
 ## 2. Подтвердите учетную запись
 
-Если вы сразу не подтвердите учетную запись, процесс будет продолжен при попытке совершить в личном кабинете значимое действие (например, создать объект или [активировать сервисы](/ru/base/account/start/activation)).
+Если вы сразу не подтвердите учетную запись, процесс будет продолжен при попытке совершить в личном кабинете значимое действие (например, создать объект или [активировать сервисы](/ru/tools-for-using-services/account/service-management/activation)).
 
 1. Подтвердите вашу почту: дождитесь письма от VK Cloud с темой «Завершите регистрацию сейчас» и пройдите по ссылке **Подтвердить почту**. Если письмо не пришло или его срок давности истек, запросите письмо повторно в окне подтверждения, нажав кнопку **Выслать подтверждение еще раз**.
 
@@ -56,7 +56,7 @@
 
    <warn>
 
-   В [регионе](/ru/base/account/concepts/regions) Москва можно использовать только номера, зарегистрированные в РФ. Один номер можно привязать к двум учетным записям.
+   В [регионе](/ru/tools-for-using-services/account/concepts/regions) Москва можно использовать только номера, зарегистрированные в РФ. Один номер можно привязать к двум учетным записям.
 
    </warn>
 
@@ -70,7 +70,7 @@
    <details>
      <summary>Почему появляется эта проверка?</summary>
 
-   VK Cloud автоматически [оценивает степень безопасности](/ru/additionals/start/it-security/platform-security) учетной записи. В зависимости от результатов проверки, будет предложен один из вариантов:
+   VK Cloud автоматически [оценивает степень безопасности](/ru/intro/it-security/platform-security) учетной записи. В зависимости от результатов проверки, будет предложен один из вариантов:
 
    - Сразу привязать карту — откроется вкладка **Карта оплаты**.
    - Отправить запрос в техническую поддержку — откроется вкладка **Активация аккаунта**. Привязка карты станет доступна после того, как запрос будет обработан.
@@ -115,29 +115,29 @@
 1. Нажмите кнопку **Начать работу с VK Cloud**.
 1. Дождитесь перехода в личный кабинет. Будет показано сообщение об успешной активации сервисов.
 
-Для вашей учетной записи будет автоматически создан [проект](/ru/base/account/concepts/projects) VK Cloud. После активации сервисов на [баланс](/ru/intro/billing/concepts/balance) проекта будут однократно начислены приветственные [бонусы](/ru/intro/billing/concepts/balance#bonusy). Если бонусы не начислены в течение 3 рабочих дней, обратитесь в [техническую поддержку](/ru/contacts).
+Для вашей учетной записи будет автоматически создан [проект](/ru/tools-for-using-services/account/concepts/projects) VK Cloud. После активации сервисов на [баланс](/ru/intro/billing/concepts/balance) проекта будут однократно начислены приветственные [бонусы](/ru/intro/billing/concepts/balance#bonusy). Если бонусы не начислены в течение 3 рабочих дней, обратитесь в [техническую поддержку](/ru/contacts).
 
 ## 3. Активируйте доступ по API
 
 <info>
 
-VK Cloud поддерживает работу с платформой при помощи [дополнительных инструментов](/ru/manage/tools-for-using-services): REST API, OpenStack CLI, Terraform и других — в целях обеспечения безопасности доступ к ним активируется пользователем самостоятельно.
+VK Cloud поддерживает работу с платформой при помощи [дополнительных инструментов](/ru/tools-for-using-services): REST API, OpenStack CLI, Terraform и других — в целях обеспечения безопасности доступ к ним активируется пользователем самостоятельно.
 
 </info>
 
 1. [Настройте](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
-1. [Активируйте](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
+1. [Активируйте](/ru/tools-for-using-services/rest-api/enable-api) доступ по API.
 
 ## 4. (Опционально) Пригласите участников в проект
 
-Вы — [владелец](/ru/base/account/concepts/rolesandpermissions) созданного при регистрации аккаунта проекта. Чтобы добавить в проект других пользователей:
+Вы — [владелец](/ru/tools-for-using-services/account/concepts/rolesandpermissions) созданного при регистрации аккаунта проекта. Чтобы добавить в проект других пользователей:
 
-1. [Пригласите](/ru/tools-for-using-services/account/service-management/project-settings/access-manage) пользователей, назначив им [роли](/ru/base/account/concepts/rolesandpermissions).
+1. [Пригласите](/ru/tools-for-using-services/account/service-management/project-settings/access-manage) пользователей, назначив им [роли](/ru/tools-for-using-services/account/concepts/rolesandpermissions).
 1. [Включите](/ru/tools-for-using-services/account/service-management/project-settings/access-manage#vklyuchenie_v_proekte_obyazatelnoy_2fa) обязательную 2FA для всех участников проекта, чтобы снизить риск несанкционированного доступа.
 
 ## 5. (Опционально) Подключитесь к проекту через OpenStack CLI
 
-1. [Установите](/ru/base/account/project/cli/setup) клиент OpenStack и [пройдите аутентификацию](/ru/base/account/project/cli/authorization) в проекте.
+1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте.
 1. Проверьте подключение через CLI, выполнив в консоли команду:
 
     ```bash
@@ -149,6 +149,6 @@ VK Cloud поддерживает работу с платформой при п
 ## Что дальше?
 
 - [Донастройте](/ru/intro/billing/service-management/corporate/) проект для проведения оплаты через ЮЛ.
-- [Ознакомьтесь](/ru/base/account/concepts/quotasandlimits) с квотами и лимитами проектов VK Cloud.
-- Ознакомьтесь со [способами пополнения баланса](/ru/intro/billing/service-management/payment) и базовыми принципами [тарификации](/ru/base/account/tariffication) сервисов.
-- Узнайте, как создать и подключить [виртуальную машину](/ru/base/iaas/quick-start), [кластер Kubernetes](/ru/base/k8s/quickstart), [базу данных](/ru/dbs/dbaas/start).
+- [Ознакомьтесь](/ru/tools-for-using-services/account/concepts/quotasandlimits) с квотами и лимитами проектов VK Cloud.
+- Ознакомьтесь со [способами пополнения баланса](/ru/intro/billing/service-management/payment) и базовыми принципами [тарификации](/ru/tools-for-using-services/account/tariffication) сервисов.
+- Узнайте, как создать и подключить [виртуальную машину](/ru/base/iaas/quick-start), [кластер Kubernetes](/ru/kubernetes/k8s/quickstart), [базу данных](/ru/dbs/dbaas/start).

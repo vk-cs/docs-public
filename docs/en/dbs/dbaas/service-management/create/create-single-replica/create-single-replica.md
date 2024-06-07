@@ -35,7 +35,7 @@
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
-      - **Availability zone**: [availability zone](/en/additionals/start/architecture#availability_zones_567cfd7a) for the DB instance.
+      - **Availability zone**: [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) for the DB instance.
 
       - **Disk Type**: [disk type](/en/base/iaas/concepts/about#disks) for the DB instance.
 
@@ -45,7 +45,7 @@
 
       - **Enable volume autoscaling**: select this option so that the disk size increases automatically when the disk is filled with data. When selecting this option, also specify **The maximum volume size, GB**.
 
-      - **Network**: the network where the DB instance will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/operations/manage-net#creating_a_network).
+      - **Network**: the network where the DB instance will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
 
       - **Assign an external IP:** select this option to assign a floating IP address to the DB instance.
 
@@ -85,7 +85,7 @@
 
         The key is used to [connect to instance hosts via SSH](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
-   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/manage/backups/db-backup) after the cluster is created.
+   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/db-backup) after the cluster is created.
 
       Backup is not available for Tarantool.
 
@@ -118,7 +118,7 @@
       Set the backup options:
 
       - Set the **Backup period**.
-      - If necessary, enable backup by [GFS strategy](/en/manage/backups/retention-policy/gfs-backup) and configure storage settings.
+      - If necessary, enable backup by [GFS strategy](/en/storage/backups/retention-policy/gfs-backup) and configure storage settings.
       - If GFS backup is not enabled, set the maximum number of full backups.
 
       </tabpanel>

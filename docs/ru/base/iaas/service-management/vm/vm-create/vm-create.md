@@ -1,11 +1,11 @@
-В Cloud Servers можно создавать виртуальные машины через личный кабинет, OpenStack CLI или Terraform. Для создания виртуальной машины с помощью Terraform воспользуйтесь [инструкцией по созданию ВМ](/ru/manage/terraform/scenarios/create) в разделе Terraform.
+В Cloud Servers можно создавать виртуальные машины через личный кабинет, OpenStack CLI или Terraform. Для создания виртуальной машины с помощью Terraform воспользуйтесь [инструкцией по созданию ВМ](/ru/tools-for-using-services/terraform/how-to-guides/iaas/create) в разделе Terraform.
 
 ## Перед началом работы
 
-1. [Зарегистрируйтесь](/ru/base/account/start/registration) на платформе VK Cloud.
-2. [Активируйте](/ru/base/account/start/activation) сервисы.
+1. [Зарегистрируйтесь](/ru/intro/start/account-registration) на платформе VK Cloud.
+2. [Активируйте](/ru/tools-for-using-services/account/service-management/activation) сервисы.
 
-Баланс счета должен быть положительным, а [квот](/ru/base/account/concepts/quotasandlimits) должно быть достаточно для создания желаемой конфигурации виртуальной машины.
+Баланс счета должен быть положительным, а [квот](/ru/tools-for-using-services/account/concepts/quotasandlimits) должно быть достаточно для создания желаемой конфигурации виртуальной машины.
 
 ### Доступные ОС
 
@@ -54,7 +54,7 @@
 
    - **Настройки Firewall**: выберите нужные группы безопасности.
 
-      Чтобы подключиться по SSH, добавьте группу `ssh` или `ssh+www`. Подробнее про настройку правил сетевого доступа в разделе [Управление правилами файервола](/ru/networks/vnet/operations/secgroups).
+      Чтобы подключиться по SSH, добавьте группу `ssh` или `ssh+www`. Подробнее про настройку правил сетевого доступа в разделе [Управление правилами файервола](/ru/networks/vnet/service-management/secgroups).
 
    - (Опционально) **Назначить внешний IP**: включите опцию и укажите IP-адрес для возможности подключаться к ВМ из интернета. Опция доступна, если ВМ находится в сети с подключением к интернету. Опция включается и назначает IP-адрес автоматически, если ВМ расположена во внешней сети (ext-net).
 
@@ -80,8 +80,8 @@
 1. Подготовьтесь к работе с OpenStack CLI:
 
    1. [Включите](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa/) двухфакторную аутентификацию.
-   2. [Активируйте](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API для текущего пользователя.
-   3. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+   2. [Активируйте](/ru/tools-for-using-services/rest-api/enable-api) доступ по API для текущего пользователя.
+   3. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 2. Соберите данные:
 
@@ -106,7 +106,7 @@
        - Для создания ВМ Linux и подключения к ней по SSH сохраните `security_group_ID` группы `ssh` или `ssh+www`.
        - Для создания ВМ Windows и подключения к ней по RDP сохраните `security_group_ID` группы `rdp` или `rdp+www`.
 
-      Подробнее про настройку правил сетевого доступа в разделе [Управление правилами файервола](/ru/networks/vnet/operations/secgroups).
+      Подробнее про настройку правил сетевого доступа в разделе [Управление правилами файервола](/ru/networks/vnet/service-management/secgroups).
 
    4. Получите список доступных сетей и сохраните нужный `network_ID`:
 
@@ -115,7 +115,7 @@
       ```
 
       - Если выбрана сеть `ext-net`, то виртуальной машине будет автоматически назначен внешний IP-адрес.
-      - Если выбрана приватная сеть, то виртуальной машине после создания можно [назначить плавающий IP-адрес](/ru/networks/vnet/operations/manage-floating-ip).
+      - Если выбрана приватная сеть, то виртуальной машине после создания можно [назначить плавающий IP-адрес](/ru/networks/vnet/service-management/floating-ip).
 
    5. Получите список доступных ключевых пар и сохраните `keypair_name`:
 

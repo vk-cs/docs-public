@@ -1,12 +1,12 @@
 Вы можете управлять доступом к ресурсам облака с помощью сервиса [OpenVPN](https://msk.cloud.vk.com/app/mcs3723876490/services/marketplace/v2/apps/service/11bd457f-5006-4a5e-9aa3-e07586a487c2/v1_test/info/). Эта инструкция поможет развернуть сервис OpenVPN на ВМ в VK Cloud, зайти в консоль сервиса и создать нового пользователя.
 
-Используя сервис OpenVPN, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/additionals/start/legal/marketplace) и [OpenVPN](https://openvpn.net/legal/).
+Используя сервис OpenVPN, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/intro/start/legal/marketplace) и [OpenVPN](https://openvpn.net/legal/).
 
 Чтобы развернуть сервис OpenVPN в проекте:
 
-1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
-1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
-1. В [настройках подсети](/ru/networks/vnet/operations/manage-net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
+1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
+1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
+1. В [настройках подсети](/ru/networks/vnet/service-management/net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
 1. [Разверните](../../service-management/pr-instance-add/) сервис OpenVPN:
 
    1. На шаге «Настройки Кластера» укажите настройки ВМ:

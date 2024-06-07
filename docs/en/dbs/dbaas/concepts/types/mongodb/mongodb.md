@@ -7,10 +7,10 @@ MongoDB can be used, for example, to store product catalogs, geo-analytics data,
 
 For more information, see [official MongoDB documentation](https://docs.mongodb.com/).
 
-The list of MongoDB versions that are supported in VK Cloud is available when [creating](../../../instructions/create/) an instance of this database.
+The list of MongoDB versions that are supported in VK Cloud is available when [creating](../../../service-management/create/) an instance of this database.
 
 ## What's next
 
-- [Create](../../../instructions/create/) DB instance.
+- [Create](../../../service-management/create/) DB instance.
 - [Connect](../../../connect/) to the DB instance.
 - [Check out](../../extensions/) available database extensions.

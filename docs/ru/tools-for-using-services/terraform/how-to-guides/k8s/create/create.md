@@ -1,13 +1,13 @@
 Далее приведены примеры создания разных кластеров Kubernetes с помощью Terraform.
-Подробно процедура создания кластера описана в разделе [Создание кластера с помощью Terraform](/ru/base/k8s/operations/create-cluster/create-terraform).
+Подробно процедура создания кластера описана в разделе [Создание кластера с помощью Terraform](/ru/kubernetes/k8s/service-management/create-cluster/create-terraform).
 
 ## Перед созданием кластера
 
-1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/base/account/concepts/quotasandlimits) для [региона](/ru/base/account/concepts/regions), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
+1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits) для [региона](/ru/tools-for-using-services/account/concepts/regions), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
 
    Если вы хотите увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
 
-1. Ознакомьтесь с [особенностями использования Terraform](/ru/base/k8s/operations/helpers/terraform-howto) в сервисе Cloud Containers.
+1. Ознакомьтесь с [особенностями использования Terraform](/ru/kubernetes/k8s/service-management/helpers/terraform-howto) в сервисе Cloud Containers.
 
 1. [Установите Terraform и настройте провайдер](../../../quick-start), если этого еще не сделано.
 
@@ -218,7 +218,7 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 </tabpanel>
 <tabpanel>
 
-За установку [сервиса](/ru/base/k8s/concepts/addons-and-settings/addons) отвечает настройка `labels = { docker_registry_enabled }` ресурса `vkcs_kubernetes_cluster`.
+За установку [сервиса](/ru/kubernetes/k8s/concepts/addons-and-settings/addons) отвечает настройка `labels = { docker_registry_enabled }` ресурса `vkcs_kubernetes_cluster`.
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {

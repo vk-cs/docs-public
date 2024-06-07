@@ -26,7 +26,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    <tabpanel>
 
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
@@ -51,7 +51,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    <tabpanel>
 
-   1. [Install Terraform and configure the provider](/en/manage/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
+   1. [Install Terraform and configure the provider](/en/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
    1. Create a Terraform configuration file with data about the addon being installed in the `vkcs_kubernetes_addon` block:
 
       - [Get](../../manage-addons#addons_available_for_installation_467c6636) list of addons available for installation.
@@ -111,7 +111,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    <tabpanel>
 
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Find the cluster you need in the list.
 
@@ -137,7 +137,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    <tabpanel>
 
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
@@ -222,7 +222,7 @@ If this does not suit you, perform a **standard installation** or **installation
    <tabpanel>
 
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.

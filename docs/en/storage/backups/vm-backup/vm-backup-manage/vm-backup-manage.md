@@ -137,7 +137,7 @@ As a result of recovery, a new disk will be created and connected to the VM. The
 
 <warn>
 
-If you no longer need the disk, [remove it](/en/base/iaas/instructions/volumes#deleting_a_disk) manually to save resources.
+If you no longer need the disk, [remove it](/en/base/iaas/service-management/volumes#deleting_a_disk) manually to save resources.
 
 </warn>
 
@@ -211,9 +211,9 @@ Delete unnecessary backups in a timely manner to save storage space.
 6. Change the desired parameters.
 
    - **Name of plan** for backup.
-   - [Retention policy](/en/manage/backups/retention-policy) full backups using the switch: **Enable GFS** or **Maximum number of full backups**.
-      - For [GFS strategy](/en/manage/backups/retention-policy/gfs-backup): retention periods of full backups.
-      - For option **Maximum number of full backups**: the [quantity limit](/en/manage/backups/retention-policy/forward-incremental) full backups. When the limit is reached, the oldest backups will be deleted automatically.
+   - [Retention policy](/en/storage/backups/retention-policy) full backups using the switch: **Enable GFS** or **Maximum number of full backups**.
+      - For [GFS strategy](/en/storage/backups/retention-policy/gfs-backup): retention periods of full backups.
+      - For option **Maximum number of full backups**: the [quantity limit](/en/storage/backups/retention-policy/forward-incremental) full backups. When the limit is reached, the oldest backups will be deleted automatically.
 
    - Which backups to create: full only or full and incremental.
 

@@ -68,9 +68,9 @@ The [pgBadger](https://pgbadger.darold.net/) extension allows analyzing PostgreS
 </tabpanel>
 <tabpanel>
 
-- `s3_bucket`: name of [an object storage](/en/base/s3) bucket where the reports will be stored. Required parameter.
+- `s3_bucket`: name of [an object storage](/en/storage/s3) bucket where the reports will be stored. Required parameter.
 
-  If the bucket with this name does not exist, then [create it](/en/base/s3/buckets/create-bucket).
+  If the bucket with this name does not exist, then [create it](/en/storage/s3/service-management/buckets/create-bucket).
 
   <warn>
 

@@ -15,11 +15,11 @@
 
 ## Перед началом работы
 
-1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/base/account/concepts/quotasandlimits) для [региона](/ru/base/account/concepts/regions), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
+1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits) для [региона](/ru/tools-for-using-services/account/concepts/regions), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
 
    Если вы хотите увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 1. [Установите Terraform и настройте провайдер](../../../quick-start), если этого еще не сделано.
 
@@ -94,7 +94,7 @@
    </tabpanel>
    <tabpanel>
 
-   Из документа, посвященного [зонам доступности](/ru/additionals/start/architecture#az).
+   Из документа, посвященного [зонам доступности](/ru/intro/start/architecture#az).
 
    </tabpanel>
    </tabs>

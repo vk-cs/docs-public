@@ -1,6 +1,6 @@
-There are several ways to [top up](../../service-management/payment) the balance of [the project](/en/base/account/concepts/projects). The deposited funds are transferred to the [main account](../balance) of the project, from where they are then spent on paying for services.
+There are several ways to [top up](../../service-management/payment) the balance of [the project](/en/tools-for-using-services/account/concepts/projects). The deposited funds are transferred to the [main account](../balance) of the project, from where they are then spent on paying for services.
 
-The list of available payment methods is displayed on the **Balance** page of the personal account when you click on the button **Make a payment**. The available methods depend on [region](/en/base/account/concepts/regions).
+The list of available payment methods is displayed on the **Balance** page of the personal account when you click on the button **Make a payment**. The available methods depend on [region](/en/tools-for-using-services/account/concepts/regions).
 
 <tabs>
 <tablist>

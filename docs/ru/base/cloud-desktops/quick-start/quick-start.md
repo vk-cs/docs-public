@@ -17,13 +17,13 @@
    - Уникальное имя учетной записи.
    - Пароль от учетной записи.
 
-1. (Опционально) [Настройте](/ru/networks/vnet/use-cases/vpn-tunnel#2_nastroyte_vpn_tunnel_na_storone_oblachnoy_seti) VPN на маршрутизаторе, который будет использоваться в сервисе.
+1. (Опционально) [Настройте](/ru/networks/vnet/how-to-guides/vpn-tunnel#2_nastroyte_vpn_tunnel_na_storone_oblachnoy_seti) VPN на маршрутизаторе, который будет использоваться в сервисе.
 1. Убедитесь, что в [личном кабинете](https://msk.cloud.vk.com/app/) подключен сервис Cloud Desktop: в меню слева доступен раздел **Cloud Desktop**.
 
 ## 2. Настройте внешнюю инфраструктуру
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Выберите [проект](/ru/base/account/concepts/projects), где будут размещены рабочие столы.
+1. Выберите [проект](/ru/tools-for-using-services/account/concepts/projects), где будут размещены рабочие столы.
 1. Перейдите в раздел **Cloud Desktop** → **Настройки сервиса**.
 1. На вкладке **Настройка сети** задайте:
 

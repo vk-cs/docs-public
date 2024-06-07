@@ -54,12 +54,12 @@ The `vkcloudlogs-fluent-bit.service` service works with files:
 
 1. Find out the authorization parameters for your project:
 
-   - `auth_url` — [endpoint](/en/manage/tools-for-using-services/rest-api/endpoints) of Keystone;
-   - `project_id` — [ID](/en/manage/tools-for-using-services/rest-api/endpoints) VK Cloud project in OpenStack;
+   - `auth_url` — [endpoint](/en/tools-for-using-services/rest-api/endpoints) of Keystone;
+   - `project_id` — [ID](/en/tools-for-using-services/rest-api/endpoints) VK Cloud project in OpenStack;
    - `server_host_port` — address of the Cloud Logging service (`cloudlogs.mcs.mail.ru:443`);
    - `user_id` — the name of the user on whose behalf the logs will be recorded; generated at the [connection](../../quick-start/) stage;
    - `password` — the password of the specified user.
-   - `service_id` — [service id](/ru/additionals/api/logging "change-lang") in the logging system (by default is `default`). If necessary, create new IDs [on the tab](https://msk.cloud.vk.com/app/en/services/monitoring/logging/settings/services) **Other resources** of the **Logging**.
+   - `service_id` — [service id](/ru/tools-for-using-services/api/logging "change-lang") in the logging system (by default is `default`). If necessary, create new IDs [on the tab](https://msk.cloud.vk.com/app/en/services/monitoring/logging/settings/services) **Other resources** of the **Logging**.
 
 1. Specify the connection parameters for the plugin in the `vkcloudlogs-fluent-bit.conf` file:
 

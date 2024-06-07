@@ -16,7 +16,7 @@
 1. Создадите в сервисе резервную копию этой ВМ.
 1. Восстановите ВМ в VK Cloud из резервной копии, которая хранилась в сервисе.
 
-Используя сервис, вы соглашаетесь с [лицензионным соглашением](/ru/additionals/start/legal/marketplace) сервиса Marketplace и с [пользовательским соглашением](https://cyberprotect.ru/static/pdf/Cyberprotect_EULA_RUS.pdf) вендора ООО «Киберпротект».
+Используя сервис, вы соглашаетесь с [лицензионным соглашением](/ru/intro/start/legal/marketplace) сервиса Marketplace и с [пользовательским соглашением](https://cyberprotect.ru/static/pdf/Cyberprotect_EULA_RUS.pdf) вендора ООО «Киберпротект».
 
 ## Подготовительные шаги
 
@@ -33,7 +33,7 @@
       - Имеет внешний IP-адрес.
       - Ей назначена [группа безопасности](/ru/networks/vnet/concepts/traffic-limiting#prednastroennye_gruppy_bezopasnosti) `ssh`.
 
-         Если группа не назначена, [назначьте](/ru/networks/vnet/operations/secgroups#naznachenie_gruppy_pravil_na_instans) ее.
+         Если группа не назначена, [назначьте](/ru/networks/vnet/service-management/secgroups#naznachenie_gruppy_pravil_na_instans) ее.
 
       - У вас есть приватный SSH-ключ из [ключевой пары](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix#3_proverte_nalichie_klyuchevoy_pary), которая используется для доступа к ВМ. Имя ключевой пары отображается на странице ВМ в разделе **Облачные вычисления**.
 

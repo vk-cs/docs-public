@@ -3,7 +3,7 @@
 
 <summary>How to register in VK Cloud?</summary>
 
-Go to [VK Cloud page](https://cloud.vk.com/en/) and click **Create a VK Cloud Account**. Fill in all the required fields to start using the account. Read more in the article [Registration in VK Cloud](/en/additionals/start/account-registration).
+Go to [VK Cloud page](https://cloud.vk.com/en/) and click **Create a VK Cloud Account**. Fill in all the required fields to start using the account. Read more in the article [Registration in VK Cloud](/en/intro/start/account-registration).
 
 </details>
 

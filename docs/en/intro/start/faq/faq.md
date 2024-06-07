@@ -130,7 +130,7 @@ To fill in the data about the legal entity, go to [personal account](https://msk
 
 In VK Cloud you can connect the priority support service (Managed Services) from VK Cloud experts. To use this service, leave a request [on the website](https://cloud.vk.com/professional-services/).
 
-Also check out the [full list of Managed Services](/en/additionals/start/support/support-info#individual_support).
+Also check out the [full list of Managed Services](/en/intro/start/support/support-info#individual_support).
 
 </details>
 

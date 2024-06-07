@@ -2,13 +2,13 @@
 
 - Используется технология единого входа (Single Sign-On, SSO).
 
-  Пользователь [аутентифицируется](#kak_ustroen_process_autentifikacii) в кластере Kubernetes с теми те же реквизитами, что и при входе в [личный кабинет](/ru/base/account) VK Cloud.
+  Пользователь [аутентифицируется](#kak_ustroen_process_autentifikacii) в кластере Kubernetes с теми те же реквизитами, что и при входе в [личный кабинет](/ru/tools-for-using-services/account) VK Cloud.
 
   Функциональность SSO нельзя отключить.
 
 - Роли пользователя в личном кабинете влияют на:
 
-  - [Доступные операции с кластерами в личном кабинете](/ru/base/account/concepts/rolesandpermissions#razresheniya_roley_servisa_cloud_containers).
+  - [Доступные операции с кластерами в личном кабинете](/ru/tools-for-using-services/account/concepts/rolesandpermissions#razresheniya_roley_servisa_cloud_containers).
 
   - [Доступные действия в кластере](#vzaimosvyaz_roley_lichnogo_kabineta_i_kubernetes).
 

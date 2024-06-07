@@ -52,5 +52,5 @@ If the **Enable two-factor authentication** page opens, [configure](../account-m
 
 ## What's next?
 
-- [View](/en/base/account) the personal account features.
+- [View](/en/tools-for-using-services/account) the personal account features.
 - [Configure](/en/tools-for-using-services/account/service-management/account-manage/editinfo) your account settings.
