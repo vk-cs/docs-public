@@ -14,7 +14,7 @@
 ## Получение OAuth-токенов
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Выберите [проект](../../../../../base/account/concepts/projects).
+1. Выберите [проект](../../../../../tools-for-using-services/account/concepts/projects).
 1. Перейдите в раздел **AI API** → **Vision API**. Откроется страница с информацией, необходимой для получения токенов:
    - **OAuth endpoint**: адрес для запросов на получение OAuth-токенов;
    - **OAuth Идентификатор клиента**: идентификатор аккаунта, который необходимо передать в параметре `client_id` запроса;
@@ -61,7 +61,7 @@ curl -X POST --location 'https://mcs.mail.ru/auth/oauth/v1/token' \
 ## Получение  сервисного токена
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Выберите [проект](../../../../../base/account/concepts/projects).
+1. Выберите [проект](../../../../../tools-for-using-services/account/concepts/projects).
 1. Перейдите в раздел **AI API** → **Vision API**.
 1. Нажмите **Добавить сервисный токен**.
 1. В открывшемся окне выберите тип задач, для которых будет использоваться токен.

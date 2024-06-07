@@ -14,7 +14,7 @@
    1. Воспользуйтесь [калькулятором](https://cloud.vk.com/pricing) для расчета стоимости нужной вам конфигурации.
 
 1. Ознакомьтесь со списком [отчетных документов](../concepts/report), которые платформа предоставляет физическим и юридическим лицам.
-1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud. При регистрации для вас будет создан проект в [регионе](/ru/base/account/concepts/regions) Москва.
+1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud. При регистрации для вас будет создан проект в [регионе](/ru/tools-for-using-services/account/concepts/regions) Москва.
 
 ## 1. Проверьте баланс проекта
 
@@ -84,7 +84,7 @@
 </tabpanel>
 </tabs>
 
-Средства со счета будут списываться по мере использования платных ресурсов. Если проект уйдет в минус, он будет [заморожен](/ru/base/account/concepts/projects#avtomaticheskaya_zamorozka_proekta).
+Средства со счета будут списываться по мере использования платных ресурсов. Если проект уйдет в минус, он будет [заморожен](/ru/tools-for-using-services/account/concepts/projects#avtomaticheskaya_zamorozka_proekta).
 
 ## Что дальше?
 

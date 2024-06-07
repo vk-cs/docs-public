@@ -16,11 +16,11 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
    Otherwise, create a test cluster where the addon update will be performed:
 
-   1. [Create](../../operations/create-cluster) a Cloud Containers cluster version `1.26.5`.
+   1. [Create](../../service-management/create-cluster) a Cloud Containers cluster version `1.26.5`.
 
       When you create the cluster, select the **Assign external IP** option. Other cluster parameters can be set at your discretion.
 
-   1. [Install](../../operations/addons/advanced-installation/install-advanced-monitoring) the Kube Prometheus Stack addon version `36.2.0` in the cluster.
+   1. [Install](../../service-management/addons/advanced-installation/install-advanced-monitoring) the Kube Prometheus Stack addon version `36.2.0` in the cluster.
 
       Perform a **quick installation** of the addon (without editing the addon configuration code).
 
@@ -67,7 +67,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
 ## 1. Get information you need to update your addon
 
-1. [Go to editing the addon configuration code](../../operations/addons/manage-addons#editing_the_addon_code).
+1. [Go to editing the addon configuration code](../../service-management/addons/manage-addons#editing_the_addon_code).
 
    Do not modify the code.
 
@@ -507,8 +507,8 @@ Before you update the addon, protect the persistent volumes used by this addon f
 
 ## 3. Update addon version
 
-1. [Uninstall the current version of the addon](../../operations/addons/manage-addons#removing_an_addon) using VK Cloud interfaces.
-1. [Install](../../operations/addons/advanced-installation/install-advanced-monitoring) the Kube Prometheus Stack addon version `54.2.2` in the cluster.
+1. [Uninstall the current version of the addon](../../service-management/addons/manage-addons#removing_an_addon) using VK Cloud interfaces.
+1. [Install](../../service-management/addons/advanced-installation/install-advanced-monitoring) the Kube Prometheus Stack addon version `54.2.2` in the cluster.
 
    Perform **standard installation** as follows:
 
@@ -616,7 +616,7 @@ Before you update the addon, protect the persistent volumes used by this addon f
 
 ## 4. Verify addon operability after updating
 
-[Get access to the Grafana web interface](../../monitoring#using_grafana). To connect, use the same password that was used with the previous version of the addon. If you forgot your Grafana password, [reset it](../../operations/addons/advanced-installation/install-advanced-monitoring#resetting_grafana_password).
+[Get access to the Grafana web interface](../../monitoring#using_grafana). To connect, use the same password that was used with the previous version of the addon. If you forgot your Grafana password, [reset it](../../service-management/addons/advanced-installation/install-advanced-monitoring#resetting_grafana_password).
 
 A successful connection to Grafana indicates a successful addon update.
 
@@ -624,5 +624,5 @@ A successful connection to Grafana indicates a successful addon update.
 
 A running Cloud Containers cluster is being charged and consumes computing resources. If you have created a cluster for testing purposes and no longer need it, do as follows:
 
-- [stop](../../operations/manage-cluster) it, so you can use it later;
-- [delete](../../operations/manage-cluster#delete_cluster) it permanently.
+- [stop](../../service-management/manage-cluster) it, so you can use it later;
+- [delete](../../service-management/manage-cluster#delete_cluster) it permanently.

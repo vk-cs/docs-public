@@ -57,7 +57,7 @@
    </tabpanel>
    <tabpanel>
 
-   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Подготовьтесь к работе с Terraform](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -200,7 +200,7 @@
    </tabpanel>
    <tabpanel>
 
-   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Подготовьтесь к работе с Terraform](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -275,7 +275,7 @@
    </tabpanel>
    <tabpanel>
 
-   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Подготовьтесь к работе с Terraform](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -337,7 +337,7 @@ elasticsearch:
 
 ### Изменение настроек хранилища Elasticsearch
 
-Реплики Elasticsearch размещаются на worker-узлах кластера и используют [постоянные тома](../../../../k8s-reference/pvs-and-pvcs) в качестве хранилища. По умолчанию эти постоянные тома размещаются в той же [зоне доступности](/ru/additionals/start/architecture#az), в которой находятся master-узлы кластера. Если worker-узлы кластера и постоянные тома будут находиться в разных зонах доступности, то реплики на этих узлах не смогут работать с томами.
+Реплики Elasticsearch размещаются на worker-узлах кластера и используют [постоянные тома](../../../../k8s-reference/pvs-and-pvcs) в качестве хранилища. По умолчанию эти постоянные тома размещаются в той же [зоне доступности](/ru/intro/start/architecture#az), в которой находятся master-узлы кластера. Если worker-узлы кластера и постоянные тома будут находиться в разных зонах доступности, то реплики на этих узлах не смогут работать с томами.
 
 Чтобы обеспечить работу постоянных томов с репликами Elasticsearch, задайте [класс хранения](../../../../concepts/storage#prednastroennye_klassy_hraneniya), зона доступности которого совпадает с зоной доступности worker-узлов:
 

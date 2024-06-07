@@ -1,12 +1,12 @@
 You can manage access to the cloud resources using the [OpenVPN](https://msk.cloud.vk.com/app/mcs3723876490/services/marketplace/v2/apps/service/11bd457f-5006-4a5e-9aa3-e07586a487c2/v1_test/info/). This guide will help you deploy the OpenVPN service on a virtual machine (VM) in VK Cloud, access the service console, and create a new user.
 
-By using the OpenVPN service, you agree to the service agreements of [Marketplace](/ru/additionals/start/legal/marketplace) and [OpenVPN](https://openvpn.net/legal/).
+By using the OpenVPN service, you agree to the service agreements of [Marketplace](/ru/intro/start/legal/marketplace) and [OpenVPN](https://openvpn.net/legal/).
 
 To deploy the OpenVPN service in the project::
 
-1. [Register](/en/additionals/start/account-registration) at VK Cloud.
-1. [Create](/en/networks/vnet/operations/manage-net#creating_a_network) a network with Internet access, if one has not been created earlier.
-1. In the [settings of the subnet](/en/networks/vnet/operations/manage-net#editing_a_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
+1. [Register](/en/intro/start/account-registration) at VK Cloud.
+1. [Create](/en/networks/vnet/service-management/net#creating_a_network) a network with Internet access, if one has not been created earlier.
+1. In the [settings of the subnet](/en/networks/vnet/service-management/net#editing_a_subnet) where the VM with the deployed service will be located, disable the **Private DNS** option.
 1. [Deploy](../../service-management/pr-instance-add/) the OpenVPN service:
 
    1. In the “Настройки Кластера” step, specify VM settings:

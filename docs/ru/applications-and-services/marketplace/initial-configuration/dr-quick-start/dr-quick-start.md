@@ -21,11 +21,11 @@
 1. Создадите резервную инфраструктуру с использованием плана резервного восстановления.
 1. Восстановите резервируемую инфраструктуру в VK Cloud.
 
-Используя сервис Hystax Acura Disaster Recovery, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/additionals/start/legal/marketplace) и [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use/).
+Используя сервис Hystax Acura Disaster Recovery, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/intro/start/legal/marketplace) и [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use/).
 
 ## 1. Подготовительные шаги
 
-1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
+1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
 1. [Настройте](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута восстановленная инфраструктура.
 1. [Создайте ВМ](/ru/base/iaas/service-management/vm/vm-create), для которой будет применяться восстановление. В рамках быстрого старта будет использоваться ВМ `Ubuntu-DR` с операционной системой Ubuntu 18.04.
 1. [Подключите](../../service-management/pr-instance-add/) сервис Hystax Acura Disaster Recovery.
@@ -223,7 +223,7 @@
    - **Cloud name**: `VK Cloud`.
    - **Keystone API endpoint**: значение Keystone из [списка эндпоинтов](https://msk.cloud.vk.com/app/mcs3723876490/project/endpoints), для VK Cloud — `https://infra.mail.ru:35357/v3/`.
    - **User domain**: значение **User Domain Name** [настроек проекта](https://msk.cloud.vk.com/app/project/keys).
-   - **Username**: имя пользователя с [доступом по API](/ru/manage/tools-for-using-services/rest-api/enable-api) и ролью не ниже Администратора проекта.
+   - **Username**: имя пользователя с [доступом по API](/ru/tools-for-using-services/rest-api/enable-api) и ролью не ниже Администратора проекта.
    - **Password**: пароль пользователя.
    - **Target project domain**: значение **Project Domain ID** [настроек проекта](https://msk.cloud.vk.com/app/project/keys).
    - **Target project ID**: значение **Project ID** [настроек проекта](https://msk.cloud.vk.com/app/project/keys)
@@ -248,4 +248,4 @@
 
 - [Удалите](/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm) ВМ `Ubuntu-DR`.
 - Удалите резервную инфраструктуру `VK-Cloud-infra` через [личный кабинет](https://dr.mcs-cloud.ru) Hystax Acura.
-- [Удалите](/ru/networks/vnet/operations/manage-floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, если он был создан во время восстановления.
+- [Удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, если он был создан во время восстановления.

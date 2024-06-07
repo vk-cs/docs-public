@@ -143,7 +143,7 @@
 
 Чтобы получить расширенный список квот для проекта:
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. Введите в консоли команду:
 
     ```bash
@@ -282,7 +282,7 @@
     </tabpanel>
     </tabs>
 
-    Чтобы посмотреть квоты по другим компонентам OpenStack, [установите](/ru/manage/tools-for-using-services/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) соответствующие пакеты клиента OpenStack (`manila`, `neutron` и другие) и используйте команду, специфичную для пакета. Чтобы узнать синтаксис команды, установите соответствующий пакет и выполните `<component> help quota-show`, например, `manila help quota-show`.
+    Чтобы посмотреть квоты по другим компонентам OpenStack, [установите](/ru/tools-for-using-services/cli/openstack-cli#2_opcionalno_ustanovite_dopolnitelnye_pakety) соответствующие пакеты клиента OpenStack (`manila`, `neutron` и другие) и используйте команду, специфичную для пакета. Чтобы узнать синтаксис команды, установите соответствующий пакет и выполните `<component> help quota-show`, например, `manila help quota-show`.
 
 </tabpanel>
 </tabs>

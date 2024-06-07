@@ -22,7 +22,7 @@ A page with detailed information about it will open.
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can log in the OpenStack CLI.
 
 1. To view the list of security groups, run the command:
 
@@ -65,7 +65,7 @@ openstack security group rule list --long <security group ID>
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can log in the OpenStack CLI.
 
 1. View the security groups in the project:
 
@@ -113,7 +113,7 @@ Edit the name and (if necessary) the name of the security group.
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can log in the OpenStack CLI.
 
 1. To change the description and name of a security group, run the command:
 
@@ -154,7 +154,7 @@ A security group rule is a set of parameters that define the conditions for traf
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can log in the OpenStack CLI.
 
 1. View the list of group rules:
 
@@ -205,7 +205,7 @@ Available arguments for the rule creation command:
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can log in the OpenStack CLI.
 
 1. To view detailed information for a rule, run the command:
 
@@ -244,7 +244,7 @@ To apply a rule set to a virtual machine, the security group that contains the r
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can log in the OpenStack CLI.
 
 1. Run the command:
 
@@ -275,7 +275,7 @@ openstack server add security group <instance ID> <security group ID>
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can log in the OpenStack CLI.
 
 1. Run the command:
 
@@ -312,7 +312,7 @@ This is a group operation: if necessary, you can delete several security groups 
 </tabpanel>
 <tabpanel>
 
-1. Make sure OpenStack CLI is [installed](../../../../additionals/account/project/cli/setup). Also check that you can [log in](../../../../additionals/account/project/cli/authorization) in the OpenStack CLI.
+1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can log in the OpenStack CLI.
 
 1. Run the command:
 

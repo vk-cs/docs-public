@@ -2,7 +2,7 @@
 
 - [Через интерфейс сервиса CDN](#udalenie_cherez_interfeys_servisa_cdn).
 
-- [Через интерфейс бакета](#udalenie_cherez_interfeys_baketa) в сервисе [Cloud Storage](/ru/base/s3).
+- [Через интерфейс бакета](#udalenie_cherez_interfeys_baketa) в сервисе [Cloud Storage](/ru/storage/s3).
 
   Этот способ применим, если CDN-ресурс [был создан через интерфейс бакета](../create-resource#sozdanie_cherez_interfeys_baketa).
 

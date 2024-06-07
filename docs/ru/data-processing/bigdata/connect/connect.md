@@ -76,14 +76,14 @@
 </tablist>
 <tabpanel>
 
-1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) новую внутреннюю сеть и [маршрутизатор](/ru/networks/vnet/operations/manage-router#dobavlenie_marshrutizatora).
+1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) новую внутреннюю сеть и [маршрутизатор](/ru/networks/vnet/service-management/router#dobavlenie_marshrutizatora).
 1. Создайте кластер, указав созданную сеть.
-1. [Настройте VPN-подключение](/ru/networks/vnet/use-cases/vpn-tunnel) к сервисам VK Cloud.
+1. [Настройте VPN-подключение](/ru/networks/vnet/how-to-guides/vpn-tunnel) к сервисам VK Cloud.
 
 </tabpanel>
 <tabpanel>
 
-[Настройте](/ru/networks/vnet/operations/secgroups) группы безопасности нужным для вас образом, подробнее в статье [Ограничение трафика](/ru/networks/vnet/concepts/traffic-limiting).
+[Настройте](/ru/networks/vnet/service-management/secgroups) группы безопасности нужным для вас образом, подробнее в статье [Ограничение трафика](/ru/networks/vnet/concepts/traffic-limiting).
 
 </tabpanel>
 </tabs>

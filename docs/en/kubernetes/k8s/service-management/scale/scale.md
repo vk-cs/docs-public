@@ -47,9 +47,9 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    </tabpanel>
    <tabpanel>
 
-   1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-   1. Get ready to [work with Terraform](/en/manage/tools-for-using-services/terraform/quick-start), if this has not already been done.
+   1. Get ready to [work with Terraform](/en/tools-for-using-services/terraform/quick-start), if this has not already been done.
 
    1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
 
@@ -153,9 +153,9 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    </tabpanel>
    <tabpanel>
 
-   1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-   1. Get ready to [work with Terraform](/en/manage/tools-for-using-services/terraform/quick-start), if this has not already been done.
+   1. Get ready to [work with Terraform](/en/tools-for-using-services/terraform/quick-start), if this has not already been done.
 
    1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
 
@@ -244,7 +244,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
    </tabpanel>
    <tabpanel>
 
-   1. Get ready to [work with Terraform](/en/manage/tools-for-using-services/terraform/quick-start), if this has not already been done.
+   1. Get ready to [work with Terraform](/en/tools-for-using-services/terraform/quick-start), if this has not already been done.
 
    1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
 
@@ -321,7 +321,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
    </tabpanel>
    <tabpanel>
 
-   1. Get ready to [work with Terraform](/en/manage/tools-for-using-services/terraform/quick-start), if this has not already been done.
+   1. Get ready to [work with Terraform](/en/tools-for-using-services/terraform/quick-start), if this has not already been done.
 
    1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
 

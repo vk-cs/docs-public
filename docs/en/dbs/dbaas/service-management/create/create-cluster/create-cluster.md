@@ -24,12 +24,12 @@
 
         Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 
-      - **Network**: the network where the cluster will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/operations/manage-net#creating_a_network).
+      - **Network**: the network where the cluster will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
       - **SSH access key**: select an existing key or create a new one.
 
         The key is used to [connect to instance hosts via SSH](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
-   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/manage/backups/db-backup) after the cluster is created.
+   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/db-backup) after the cluster is created.
 
       <tabs>
       <tablist>
@@ -46,7 +46,7 @@
       Set the backup options:
 
       - Set the **Backup period**.
-      - If necessary, enable backup by [GFS strategy](/en/manage/backups/retention-policy/gfs-backup) and configure storage settings.
+      - If necessary, enable backup by [GFS strategy](/en/storage/backups/retention-policy/gfs-backup) and configure storage settings.
       - If GFS backup is not enabled, set the maximum number of full backups.
 
       </tabpanel>
@@ -65,7 +65,7 @@
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
-      - **Availability zone**: [availability zone](/en/additionals/start/architecture#availability_zones_567cfd7a) for the cluster.
+      - **Availability zone**: [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) for the cluster.
 
       - **Disk Type**: [disk type](/en/base/iaas/concepts/about#disks) for the cluster.
 
@@ -99,7 +99,7 @@
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
-      - **Availability zone**: [availability zone](/en/additionals/start/architecture#availability_zones_567cfd7a) for the cluster.
+      - **Availability zone**: [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) for the cluster.
 
       - **Disk Type**: [disk type](/en/base/iaas/concepts/about#disks) for the cluster.
 
@@ -117,7 +117,7 @@
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
-      - **Availability zone**: [availability zone](/en/additionals/start/architecture#availability_zones_567cfd7a) for the cluster.
+      - **Availability zone**: [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) for the cluster.
 
       - **Disk Type**: [disk type](/en/base/iaas/concepts/about#disks) for the cluster.
 
@@ -217,7 +217,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
-      - **Availability zone**: [availability zone](/en/additionals/start/architecture#availability_zones_567cfd7a) for the cluster.
+      - **Availability zone**: [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) for the cluster.
 
       - **Disk Type**: [disk type](/en/base/iaas/concepts/about#disks) for the cluster.
 
@@ -227,7 +227,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
       - **Enable volume autoscaling**: select this option so that the disk size increases automatically when the disk is filled with data. When selecting this option, also specify **The maximum volume size, GB**.
 
-      - **Network**: the network where the cluster will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/operations/manage-net#creating_a_network).
+      - **Network**: the network where the cluster will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
 
       - **Assign an external IP:** select this option to assign a floating IP address to the cluster.
 
@@ -249,7 +249,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         The key is used to [connect to instance hosts via SSH](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
-   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/manage/backups/db-backup) after the cluster is created.
+   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/db-backup) after the cluster is created.
 
       <tabs>
       <tablist>
@@ -280,7 +280,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
       Set the backup options:
 
       - Set the **Backup period**.
-      - If necessary, enable backup by [GFS strategy](/en/manage/backups/retention-policy/gfs-backup) and configure storage settings.
+      - If necessary, enable backup by [GFS strategy](/en/storage/backups/retention-policy/gfs-backup) and configure storage settings.
       - If GFS backup is not enabled, set the maximum number of full backups.
 
       </tabpanel>
@@ -373,7 +373,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
-      - **Availability zone**: [availability zone](/en/additionals/start/architecture#availability_zones_567cfd7a) for the cluster.
+      - **Availability zone**: [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) for the cluster.
 
       - **Disk Type**: [disk type](/en/base/iaas/concepts/about#disks) for the cluster.
 
@@ -381,7 +381,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         The larger the disk size, the higher its performance in some disk operations.
 
-      - **Network**: the network where the cluster will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/operations/manage-net#creating_a_network).
+      - **Network**: the network where the cluster will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
 
       - **Assign external IP:** select this option to assign a floating IP address to cluster hosts.
 
@@ -461,7 +461,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 
-      - **Network**: the network where the cluster will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/operations/manage-net#creating_a_network).
+      - **Network**: the network where the cluster will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
 
       - **Assign external IP:** select this option to assign a floating IP address:
 
@@ -482,7 +482,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         The key is used to [connect to instance hosts via SSH](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
-   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/manage/backups/db-backup) after the cluster is created.
+   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/db-backup) after the cluster is created.
 
       <tabs>
       <tablist>
@@ -499,7 +499,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
       Set the backup options:
 
       - Set the **Backup period**.
-      - If necessary, enable backup by [GFS strategy](/en/manage/backups/retention-policy/gfs-backup) and configure storage settings.
+      - If necessary, enable backup by [GFS strategy](/en/storage/backups/retention-policy/gfs-backup) and configure storage settings.
       - If GFS backup is not enabled, set the maximum number of full backups.
 
       </tabpanel>
@@ -528,7 +528,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
-      - **Availability zone**: [availability zone](/en/additionals/start/architecture#availability_zones_567cfd7a) for the shard hosts.
+      - **Availability zone**: [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) for the shard hosts.
 
       - **Disk Type**: [disk type](/en/base/iaas/concepts/about#disks) for the shard hosts.
 

@@ -2,7 +2,7 @@ You can create a CDN resource in two ways:
 
 - [Through the CDN service interface](#creating_resource_via_cdn_service_interface). Use this option if you need to specify third-party [content origins](../../concepts/about) or configure SSL certificates manually.
 
-- [Through the bucket interface](#creating_resource_via_bucket_interface) in the Cloud Storage(/en/base/s3) service. Use this option for the bucket to act as the content source. A corresponding CDN resource for the bucket will be automatically created, and SSL certificates will also be automatically configured.
+- [Through the bucket interface](#creating_resource_via_bucket_interface) in the Cloud Storage(/en/storage/s3) service. Use this option for the bucket to act as the content source. A corresponding CDN resource for the bucket will be automatically created, and SSL certificates will also be automatically configured.
 
 ## Creating resource via CDN service interface
 
@@ -90,7 +90,7 @@ You can create a CDN resource in two ways:
 </tabpanel>
 <tabpanel>
 
-To create a CDN resource, use the `POST /projects/{project_id}/resources/` [method](/ru/additionals/api/api-cdn "change-lang").
+To create a CDN resource, use the `POST /projects/{project_id}/resources/` [method](/ru/tools-for-using-services/api/api-cdn "change-lang").
 
 Request example:
 
@@ -119,13 +119,13 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud personal account.
-1. Select the project where the bucket you need is located. If you do not have the bucket, [create it](/ru/base/s3/instructions/buckets/create-bucket "change-lang").
+1. Select the project where the bucket you need is located. If you do not have the bucket, [create it](/ru/storage/s3/service-management/buckets/create-bucket "change-lang").
 1. Go to the **Cloud Storage → Buckets** section.
 1. Click the name of the bucket you need.
 1. Go to the **CDN** tab.
 1. Enable the **Use CDN for this bucket** option.
 
-   To make the bucket able to be an origin for a CDN resource, select the `public-read` ACL, then [create objects in this bucket](ru/base/s3/instructions/objects/upload-object "change-lang").
+   To make the bucket able to be an origin for a CDN resource, select the `public-read` ACL, then [create objects in this bucket](ru/storage/s3/service-management/objects/upload-object "change-lang").
 
 1. In the **Personal domain** field enter the personal domain, what should be used for CDN. When requesting this domain, content will be delivered via CDN. Use the Fully Qualified Domain Name (FQDN). Do not add a root domain name: you can use `cdn.example.com`, but not `cdn.example.com.`.
 

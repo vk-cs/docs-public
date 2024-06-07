@@ -10,7 +10,7 @@ Packer allows you to create virtual machine images with the necessary parameters
 
    </info>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 1. [Load the image](http://ftp.altlinux.org/pub/distributions/ALTLinux/p9/images/cloud/x86_64/) OS Alt Linux P9 to your computer (file `alt-p9-cloud-x86_64.qcow2`).
 
 ## 1. Convert image to RAW format
@@ -56,7 +56,7 @@ Import the image according to [instructions](../../service-management/images/ima
 
 1. Determine the details of the network and the downloaded image:
 
-    1. [Get](/en/networks/vnet/operations/manage-net#viewing_the_list_of_networks_and_subnets_and_information_about_them) id of the external network to which the virtual machine being created will be connected.
+    1. [Get](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) id of the external network to which the virtual machine being created will be connected.
     1. Copy the name of the downloaded image, getting a list of images using the command `openstack image list`.
     1. Write the received values into variables:
 

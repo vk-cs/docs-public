@@ -7,7 +7,7 @@
 
 ## Подготовительные шаги
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 1. Выберите клиентскую сеть в вашей локальной инфраструктуре:
 
@@ -30,7 +30,7 @@
    Для примера будет использована сеть с виртуальной машиной Router OS 7.10 (MikroTik), выполняющей функции BGP-маршрутизатора.
    </info>
 
-1. Выберите или [создайте](/ru/networks/vnet/operations/net#sozdanie_seti) виртуальную сеть с доступом к интернет в VK Cloud. Используйте уже существующий маршрутизатор с подключением к внешней сети или [создайте](/ru/networks/vnet/operations/router#dobavlenie_marshrutizatora) новый.
+1. Выберите или [создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) виртуальную сеть с доступом к интернет в VK Cloud. Используйте уже существующий маршрутизатор с подключением к внешней сети или [создайте](/ru/networks/vnet/service-management/router#dobavlenie_marshrutizatora) новый.
 
    Запишите следующую информацию:
 
@@ -59,7 +59,7 @@
 
 Схема предварительной подготовки сетей выглядит следующим образом:
 
-![Схема предварительной подготовки сетей](/ru/networks/directconnect/use-cases/advanced-router/assets/advanced-router-before.png)
+![Схема предварительной подготовки сетей](/ru/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-before.png)
 
 ## 1. Добавьте продвинутый маршрутизатор
 
@@ -312,12 +312,12 @@ IP-адрес должен отвечать на пинг.
 
 Схема выстроенного взаимодействия между сетями и машинами внутри сетей выглядит следующим образом:
 
-![Схема взаимодействия между сетями](/ru/networks/directconnect/use-cases/advanced-router/assets/advanced-router-after.png)
+![Схема взаимодействия между сетями](/ru/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-after.png)
 
 ## Удалите неиспользуемые ресурсы
 
 Если созданные ресурсы вам больше не нужны, удалите их:
 
 1. [Удалите](/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm) виртуальную машину.
-1. [Удалите](/ru/networks/vnet/operations/router#udalenie_marshrutizatora) маршрутизаторы.
-1. Удалите [подсеть](/ru/networks/vnet/operations/net#udalenie_podseti) и [сеть](/ru/networks/vnet/operations/net#udalenie_seti), в которой была размещена ВМ.
+1. [Удалите](/ru/networks/vnet/service-management/router#udalenie_marshrutizatora) маршрутизаторы.
+1. Удалите [подсеть](/ru/networks/vnet/service-management/net#udalenie_podseti) и [сеть](/ru/networks/vnet/service-management/net#udalenie_seti), в которой была размещена ВМ.

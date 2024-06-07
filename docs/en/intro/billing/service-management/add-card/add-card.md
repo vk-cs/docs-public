@@ -2,7 +2,7 @@
 
 The card can be linked to the project:
 
-- when [registering](/en/additionals/start/account-registration) account (if required);
+- when [registering](/en/intro/start/account-registration) account (if required);
 - when [activating services](/en/tools-for-using-services/account/service-management/activation) in the project (if required);
 - independently at any time.
 
@@ -49,7 +49,7 @@ The enabled auto-completion does not guarantee that there will always be funds o
 
 <warn>
 
-In [region](/en/base/account/concepts/regions) Kazakhstan auto-completion is not available.
+In [region](/en/tools-for-using-services/account/concepts/regions) Kazakhstan auto-completion is not available.
 
 </warn>
 
@@ -79,7 +79,7 @@ To untie the card, contact [technical support](/en/contacts) and provide informa
 
 <info>
 
-If you are a legal entity and work on prepayment, leave the card as an additional means of payment for urgent payments. In emergency cases, a one-time card payment can help you to avoid project [freezing](/en/base/account/concepts/projects#automatic_freezing_of_the_project).
+If you are a legal entity and work on prepayment, leave the card as an additional means of payment for urgent payments. In emergency cases, a one-time card payment can help you to avoid project [freezing](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
 
 Write-offs for payments from bank cards are not included in [accounting documents for legal entities](../../concepts/report#composition_of_accounting_documents_55c18d7): billing report, reconciliation report.
 

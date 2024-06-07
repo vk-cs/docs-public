@@ -16,6 +16,6 @@ All terms and definitions not specified in the Policy are contained, respectivel
 
 7\. The processing of User data when using the Service is carried out on the basis of the legislation of the Russian Federation.
 
-8\. The company reserves the right to make changes and additions to this Policy by notifying the User by posting a new version of the amended Policy on the website. The new version of the Policy comes into force on the day following the day of its posting on the website at: [https://mcs.mail.ru/help/ru_RU/legal/policy-privacy](/en/additionals/start/legal/policy-privacy). The User undertakes to independently regularly familiarize himself with the new editions of the Policy.
+8\. The company reserves the right to make changes and additions to this Policy by notifying the User by posting a new version of the amended Policy on the website. The new version of the Policy comes into force on the day following the day of its posting on the website at: [https://mcs.mail.ru/help/ru_RU/legal/policy-privacy](/en/intro/start/legal/policy-privacy). The User undertakes to independently regularly familiarize himself with the new editions of the Policy.
 
 Edition: from 22.10.2021

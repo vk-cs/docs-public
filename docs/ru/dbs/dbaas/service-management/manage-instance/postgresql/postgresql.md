@@ -124,7 +124,7 @@
 
 ## Создание резервной копии
 
-Операция подробно описана в разделе [Создание и удаление резервных копий](/ru/manage/backups/db-backup/operations/manage-db-backups#sozdanie_rezervnoy_kopii).
+Операция подробно описана в разделе [Создание и удаление резервных копий](/ru/storage/backups/db-backup/manage-db-backups#sozdanie_rezervnoy_kopii).
 
 ## Расширение инстанса БД
 
@@ -136,12 +136,12 @@
 </tablist>
 <tabpanel>
 
-Для расширения инстанса добавьте в него реплику. Операция подробно описана в разделе [Репликации](/ru/manage/backups/db-backup/replication).
+Для расширения инстанса добавьте в него реплику. Операция подробно описана в разделе [Репликации](../../../service-management/replication/).
 
 </tabpanel>
 <tabpanel>
 
-Для расширения инстанса добавьте в него реплику. Операция подробно описана в разделе [Репликации](/ru/manage/backups/db-backup/replication).
+Для расширения инстанса добавьте в него реплику. Операция подробно описана в разделе [Репликации](../../../service-management/replication/).
 
 </tabpanel>
 <tabpanel>

@@ -23,15 +23,15 @@ A backup is created for all VM disks.
 3. Go to the **Automatic** tab.
 4. Click the **Add**.
 5. Enter the **Name of plan** for backup.
-6. Choose [retention policy](/en/manage/backups/retention-policy) full backups using the switch: **Enable GFS** or **Maximum number of full backups**.
+6. Choose [retention policy](/en/storage/backups/retention-policy) full backups using the switch: **Enable GFS** or **Maximum number of full backups**.
 7. Configure the storage of full backups.
 
-   - For [GFS strategy](/en/manage/backups/retention-policy/gfs-backup):
+   - For [GFS strategy](/en/storage/backups/retention-policy/gfs-backup):
       1. Specify how many weeks **Keep weekly full backups**.
       2. If necessary, enable the option **Keep monthly full backups** and specify the number of months.
       3. If necessary, enable the option **Keep yearly full backups** and specify the number of years.
 
-   - For option **Maximum number of full backups** set the [quantity limit](/en/manage/backups/retention-policy/forward-incremental) full backups. When the limit is reached, the oldest backups will be deleted automatically.
+   - For option **Maximum number of full backups** set the [quantity limit](/en/storage/backups/retention-policy/forward-incremental) full backups. When the limit is reached, the oldest backups will be deleted automatically.
 
 8. Specify which backups to create: full only or full and incremental.
 

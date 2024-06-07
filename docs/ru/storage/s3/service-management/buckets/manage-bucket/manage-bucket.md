@@ -26,7 +26,7 @@
 
       Здесь:
   
-      - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+      - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
          - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
          - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
 
@@ -121,7 +121,7 @@
      print(key['Name'])
    ```
 
-   Значение переменной `endpoint_url` должно соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+   Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
    - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
@@ -442,7 +442,7 @@ Cloud Storage позволяет настроить автоматическое
 
       - (Опционально) `force` — удаляет бакет и все объекты в нем. Без этого параметра бакет будет удален, только если не содержит объектов.
   
-      - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+      - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
          - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
          - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
 

@@ -31,7 +31,7 @@
       - **Тип диска:** [тип диска](/ru/base/iaas/concepts/about#tipy_diskov_c23be93f) для узла.
       - **Размер диска:** размер диска для узла.
 
-   1. Выберите кластер Kubernetes. В этот кластер [Cloud Containers](/ru/base/k8s) будет добавлен [worker-узел](/ru/base/k8s/concepts/architecture#topologii_klastera) для размещения экземпляра Cloud Kafka.
+   1. Выберите кластер Kubernetes. В этот кластер [Cloud Containers](/ru/kubernetes/k8s) будет добавлен [worker-узел](/ru/kubernetes/k8s/concepts/architecture#topologii_klastera) для размещения экземпляра Cloud Kafka.
 
       Если нужного кластера нет в списке:
 
@@ -44,7 +44,7 @@
          1. Выберите нужную [SDN](/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn): **Neutron** или **Sprut**.
          1. Задайте адрес подсети, например, `10.0.1.0/24`.
 
-   1. Выберите [зону доступности](/ru/additionals/start/architecture#az), где будет размещен узел кластера Cloud Containers.
+   1. Выберите [зону доступности](/ru/intro/start/architecture#az), где будет размещен узел кластера Cloud Containers.
    1. Нажмите кнопку **Следующий шаг**.
 
 1. На шаге «Учетные данные»:
@@ -93,7 +93,7 @@
 1. На шаге «Параметры»:
 
    1. Задайте для экземпляра название и описание.
-   1. Выберите кластер Kubernetes. В этот кластер [Cloud Containers](/ru/base/k8s) будет добавлен [worker-узел](/ru/base/k8s/concepts/architecture#topologii_klastera) для размещения экземпляра Cloud Kafka.
+   1. Выберите кластер Kubernetes. В этот кластер [Cloud Containers](/ru/kubernetes/k8s) будет добавлен [worker-узел](/ru/kubernetes/k8s/concepts/architecture#topologii_klastera) для размещения экземпляра Cloud Kafka.
 
       Если нужного кластера нет в списке:
 
@@ -106,7 +106,7 @@
          1. Выберите нужную [SDN](/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn): **Neutron** или **Sprut**.
          1. Задайте адрес подсети, например, `10.0.1.0/24`.
 
-   1. Выберите [зону доступности](/ru/additionals/start/architecture#az), где будет размещен узел кластера Cloud Containers.
+   1. Выберите [зону доступности](/ru/intro/start/architecture#az), где будет размещен узел кластера Cloud Containers.
    1. Настройте параметры узлов кластера, выбрав одну из опций:
 
       <tabs>

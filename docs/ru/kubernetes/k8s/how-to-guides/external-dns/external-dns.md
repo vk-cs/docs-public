@@ -55,10 +55,10 @@ ExternalDNS будет использовать реквизиты этого п
 
    Требования к пользователю:
 
-   - Должен быть [активирован](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
+   - Должен быть [активирован](/ru/tools-for-using-services/rest-api/enable-api) доступ по API.
    - Должна быть [назначена](/ru/tools-for-using-services/account/service-management/project-settings/access-manage#izmenenie_roli_uchastnika) одна из следующих ролей, чтобы ExternalDNS мог оперировать ресурсными записями в рамках DNS-зоны:
 
-     - Администратор сети (минимально необходимая [роль](/ru/base/account/concepts/rolesandpermissions#matrica_razresheniy_dlya_vseh_roley)).
+     - Администратор сети (минимально необходимая [роль](/ru/tools-for-using-services/account/concepts/rolesandpermissions#matrica_razresheniy_dlya_vseh_roley)).
      - Администратор проекта.
      - Суперадминистратор.
      - Владелец проекта.
@@ -494,7 +494,7 @@ ExternalDNS будет использовать реквизиты этого п
 
 ### 3.2. Опубликуйте приложение, используя Ingress
 
-1. [Установите](/ru/base/k8s/operations/addons/advanced-installation/install-advanced-ingress) в кластер аддон Ingress NGINX самой актуальной версии.
+1. [Установите](/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress) в кластер аддон Ingress NGINX самой актуальной версии.
 
    Выполните **стандартную установку**. Не изменяйте никакие параметры, только отредактируйте код настройки аддона:
 

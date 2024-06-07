@@ -30,7 +30,7 @@ Various add-ons (additional services) are available for Cloud Containers cluster
 
 <info>
 
-The availability of specific add-ons depends on the [region](/en/base/account/concepts/regions) in which the cluster is planned to be placed.
+The availability of specific addons depends on the [region](/en/tools-for-using-services/account/concepts/regions) in which the cluster is planned to be placed.
 
 </info>
 
