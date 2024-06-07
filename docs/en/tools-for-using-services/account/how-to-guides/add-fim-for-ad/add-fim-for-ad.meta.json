@@ -6,14 +6,9 @@
   "metaDescription": "Configuring federated access to VK Cloud via Active Directory",
   "sectionTitle": "Configuring Identity Federation",
   "icon": "",
-  "hidden": true,
+  "hidden": false,
   "weight": 1,
-  "build": {
-    "for": [
-      "dontbuild"
-    ]
-  },
   "createdAt": "2024-02-15T12:45:14.000Z",
   "updatedAt": "2024-05-20T08:27:09.000Z",
-  "uuid": "39350f22-fbe4-4e8f-9fb4-c1053e1ce5f9"
+  "uuid": "d1c12c61-f441-4d38-b888-e4d615d88963"
 }
