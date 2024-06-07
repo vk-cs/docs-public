@@ -1,7 +1,7 @@
 Задания Spark можно отправлять на кластер разными способами:
 
 - Для приложений Spark, у которых нет зависимостей, достаточно передать код приложения в манифесте задания. Этот подход показан [на примере вычисления числа π](../submit-basic-job-pi).
-- Для приложений Spark, которые требуют дополнительные артефакты для своей работы, необходимо вручную добавить нужные артефакты в бакет [Cloud Storage](/ru/base/s3) и отредактировать манифест задания. Этот подход будет показан далее.
+- Для приложений Spark, которые требуют дополнительные артефакты для своей работы, необходимо вручную добавить нужные артефакты в бакет [Cloud Storage](/ru/storage/s3) и отредактировать манифест задания. Этот подход будет показан далее.
 
 Для примера будет использоваться приложение, которое выполняет SQL-запрос к ClickHouse, развернутому в виде инстанса [Cloud Databases](/ru/dbs/dbaas).
 
@@ -37,7 +37,7 @@
 
 1. Найдите и запишите идентификатор созданного кластера (содержится в поле `id`).
 
-1. [Создайте инстанс ClickHouse](/ru/dbs/dbaas/instructions/create/create-single-replica), который:
+1. [Создайте инстанс ClickHouse](/ru/dbs/dbaas/service-management/create/create-single-replica), который:
 
    - использует самую новую из доступных версий;
    - использует конфигурацию Single;
@@ -123,7 +123,7 @@ spark.stop()
       - идентификатор кластера (содержится в поле `id`);
       - имя бакета Cloud Storage (содержится в поле `s3_bucket_name`).
 
-1. [Загрузите](/ru/base/s3/instructions/objects/upload-object#standartnaya_zagruzka) файлы в директорию `spark-files` этого бакета:
+1. [Загрузите](/ru/storage/s3/service-management/objects/upload-object#standartnaya_zagruzka) файлы в директорию `spark-files` этого бакета:
 
    - `query-clickhouse.py` с кодом приложения Spark.
    - [clickhouse-jdbc-0.5.0-shaded.jar](https://repo1.maven.org/maven2/com/clickhouse/clickhouse-jdbc/0.5.0/clickhouse-jdbc-0.5.0-shaded.jar) с JDBC-драйвером для ClickHouse.
@@ -286,6 +286,6 @@ spark.stop()
 
 1. Удалите кластер Cloud Spark.
 1. Удалите реестр Docker для этого кластера.
-1. Удалите [объекты из бакета](/ru/storage/s3/instructions/objects/manage-object#udalenie_obekta) и [сам бакет](/ru/storage/s3/instructions/buckets/manage-bucket#udalenie_baketa), который использовался этим кластером.
+1. Удалите [объекты из бакета](/ru/storage/s3/service-management/objects/manage-object#udalenie_obekta) и [сам бакет](/ru/storage/s3/service-management/buckets/manage-bucket#udalenie_baketa), который использовался этим кластером.
 1. [Удалите токен доступа](../../ml-platform-library/authz#udalenie_tokena_dostupa).
-1. [Удалите инстанс ClickHouse](/ru/dbs/dbaas/instructions/manage-instance/clickhouse#udalenie_instansa_bd).
+1. [Удалите инстанс ClickHouse](/ru/dbs/dbaas/service-management/manage-instance/clickhouse#udalenie_instansa_bd).

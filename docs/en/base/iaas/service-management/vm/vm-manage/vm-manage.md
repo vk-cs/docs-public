@@ -23,7 +23,7 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 2. Do one of the following.
 
@@ -80,7 +80,7 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 2. Run the appropriate command.
 
@@ -145,7 +145,7 @@ The forced restart of the VM corresponds to the power off and on (power cycling)
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 2. Force a VM reboot:
 
@@ -211,7 +211,7 @@ The deletion operation is irreversible! Save the necessary data before deleting 
       <details>
       <summary>Check the disk deletion policy — OpenStack CLI</summary>
 
-      1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+      1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
       2. Run the command:
 
@@ -261,7 +261,7 @@ The deletion operation is irreversible! Save the necessary data before deleting 
 
    <tabpanel>
 
-   1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+   1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
    2. Delete the VM:
 
       ```bash
@@ -313,7 +313,7 @@ If the VM type changes, the VM will be rebooted.
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 2. Perform the desired action.
 
@@ -363,7 +363,7 @@ Tags allow you to filter the list of virtual machines and find the right VM fast
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 2. Run the appropriate command.
 
@@ -469,7 +469,7 @@ systemctl status qemu-guest-agent
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 2. Set a password:
 
@@ -548,9 +548,9 @@ To restore access to a Linux virtual machine via SSH using a key pair, you need 
 
    1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
    2. Go to **Object storage → Buckets**.
-   3. Use an existing package or [create a new one](/en/base/s3/quick-start/create-bucket).
-   4. [Add file](/en/base/s3/quick-start/upload-object) with a public key in the bucket.
-   5. [Enable access](/en/base/s3/quick-start/object-access) by the link to this file.
+   3. Use an existing package or [create a new one](/en/storage/s3/service-management/buckets/create-bucket).
+   4. [Add file](/en/storage/s3/service-management/objects/upload-object) with a public key in the bucket.
+   5. [Enable access](/en/storage/s3/service-management/objects/manage-object) by the link to this file.
    6. Copy the link to the file with the public key.
 
 3. Upload the public key to the VM.
@@ -592,7 +592,7 @@ The event log contains information about changes in the VM state and user action
 
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 2. Run the appropriate command.
 

@@ -2,13 +2,13 @@ Cloud Containers clusters version 1.23 and higher are tightly integrated with th
 
 - Single Sign-On (SSO) technology is used.
 
-  The user [authenticates](#how_does_the_authentication_process_work) in the Kubernetes cluster with the same credentials as when logging into the VK Cloud [personal account](/en/base/account).
+  The user [authenticates](#how_does_the_authentication_process_work) in the Kubernetes cluster with the same credentials as when logging into the VK Cloud [personal account](/en/tools-for-using-services/account).
 
   SSO functionality cannot be disabled.
 
 - The user's roles in the personal account affect:
 
-  - [Available operations with clusters in the personal account](/en/base/account/concepts/rolesandpermissions#roles_for_the_containers_service_and_their_permissions).
+  - [Available operations with clusters in the personal account](/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_for_the_containers_service_and_their_permissions).
   - [Available actions in the cluster](#relationship_between_the_roles_of_personal_account_and_kubernetes).
 
     A user with a specific personal account role is assigned an appropriate [Kubernetes role](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles). The Kubernetes role defines which cluster objects are available to the user and what actions are allowed to be performed on these objects.

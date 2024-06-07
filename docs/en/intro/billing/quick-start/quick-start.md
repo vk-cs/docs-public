@@ -14,7 +14,7 @@ After completing all the quick start steps, you will link a payment card to the 
    1. Use the [calculator](https://cloud.vk.com/en/pricing) to calculate the cost of the configuration you need.
 
 1. Check out the list of [accounting documents](../concepts/report) that the platform provides to individuals and legal entities.
-1. [Register](/en/additionals/start/account-registration) in VK Cloud. When registering, a project will be created for you in [region](/en/base/account/concepts/regions) Moscow.
+1. [Register](/en/intro/start/account-registration) in VK Cloud. When registering, a project will be created for you in [region](/en/tools-for-using-services/account/concepts/regions) Moscow.
 
 ## 1. Check the project balance
 
@@ -86,7 +86,7 @@ Crediting of funds can take up to three banking days.
 </tabpanel>
 </tabs>
 
-Funds will be debited from the account as the paid resources are used. If the project goes into negative territory, it will be [frozen](/en/base/account/concepts/projects#automatic_freezing_of_the_project).
+Funds will be debited from the account as the paid resources are used. If the project goes into negative territory, it will be [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
 
 ## What's next?
 

@@ -11,7 +11,7 @@
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
 1. Перейдите на вкладку **API Endpoints**.
 1. Найдите в блоке **Сервис OpenStack** эндпоинт **Karboii**.
-1. [Получите](/ru/manage/tools-for-using-services/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
+1. [Получите](/ru/tools-for-using-services/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
 
 </details>
 

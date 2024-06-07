@@ -1,4 +1,4 @@
-This document is an official offer of Mail.ru LLC (hereinafter referred to as the "Contractor") to conclude a user agreement (hereinafter referred to as the "Agreement") with you (hereinafter referred to as the "Customer") on the provision of services for providing access to the Infra virtual infrastructure Service within the Platform "VK Cloud" (hereinafter referred to as the "Platform"), on the terms set out in this Agreement, which is available on the Internet at: [https://mcs.mail.ru/docs/en/additionals/start/legal/policy-infra](/en/additionals/start/legal/policy-infra).
+This document is an official offer of Mail.ru LLC (hereinafter referred to as the "Contractor") to conclude a user agreement (hereinafter referred to as the "Agreement") with you (hereinafter referred to as the "Customer") on the provision of services for providing access to the Infra virtual infrastructure Service within the Platform "VK Cloud" (hereinafter referred to as the "Platform"), on the terms set out in this Agreement, which is available on the Internet at: [https://mcs.mail.ru/docs/en/intro/start/legal/policy-infra](/en/intro/start/legal/policy-infra).
 
 ## 1\. Terms and definitions
 
@@ -18,10 +18,10 @@ This document is an official offer of Mail.ru LLC (hereinafter referred to as th
 
 **The reporting period** is a calendar month.
 
-**Applicable rules** — the rules for using the Contractor's Service, available on the Internet at: [https://mcs.mail.ru/docs/en/additionals/start/legal/policy-infra](/en/additionals/start/legal/policy-infra), containing the conditions for access and use of the Service and set out in the following documents:
+**Applicable rules** — the rules for using the Contractor's Service, available on the Internet at: [https://mcs.mail.ru/docs/en/intro/start/legal/policy-infra](/en/intro/start/legal/policy-infra), containing the conditions for access and use of the Service and set out in the following documents:
 
-- Terms of use of the VK Cloud Platform ([https://help.mail.ru/mcs/legal/termofuse/](/en/additionals/start/legal/legal-terms));
-- Contractor's privacy policy ([https://help.mail.ru/mcs/legal/privacy/](/en/additionals/start/legal/policy-privacy)).
+- Terms of use of the VK Cloud Platform ([https://help.mail.ru/mcs/legal/termofuse/](/en/intro/start/legal/legal-terms));
+- Contractor's privacy policy ([https://help.mail.ru/mcs/legal/privacy/](/en/intro/start/legal/policy-privacy)).
 
 In the event that this Agreement uses terms that are not defined in Section 2 of this Agreement, the definitions of these terms of the Applicable Rules are used.
 
@@ -29,7 +29,7 @@ In the event that this Agreement uses terms that are not defined in Section 2 of
 
 2.1. Under the terms of this Agreement, the Contractor provides the Customer around the clock, with an Internet connection, a "Virtual Infrastructure Service" (Infra) (hereinafter referred to as the Service), which allows the Customer to create virtual servers and virtual disks on the Contractor's servers, and the Customer undertakes to pay for the Contractor's services for using the provision of access to the Service in the amount and in the manner determined by the Applicable Rules.
 
-2.2. The condition for using the Service is the complete and unconditional acceptance by the Customer of the provisions of this Agreement. Access to the Service is carried out within the Platform, in connection with which the condition for using the Service is the use of the Platform and acceptance of the Terms of Use of the Platform available at [https://help.mail.ru/mcs/legal/termofuse/](/en/additionals/start/legal/legal-terms), as well as the Contractor's Privacy Policy, available at [https://help.mail.ru/mcs/legal/privacy/](/en/additionals/start/legal/policy-privacy) (hereinafter collectively referred to as the "Applicable Rules"). In the event of a conflict between the provisions of the Terms of Use of the Platform and this Agreement, the provisions of this Agreement shall prevail. The Terms of Use of the Platform apply to the relations of the Parties that are not regulated by this Agreement.
+2.2. The condition for using the Service is the complete and unconditional acceptance by the Customer of the provisions of this Agreement. Access to the Service is carried out within the Platform, in connection with which the condition for using the Service is the use of the Platform and acceptance of the Terms of Use of the Platform available at [https://help.mail.ru/mcs/legal/termofuse/](/en/intro/start/legal/legal-terms), as well as the Contractor's Privacy Policy, available at [https://help.mail.ru/mcs/legal/privacy/](/en/intro/start/legal/policy-privacy) (hereinafter collectively referred to as the "Applicable Rules"). In the event of a conflict between the provisions of the Terms of Use of the Platform and this Agreement, the provisions of this Agreement shall prevail. The Terms of Use of the Platform apply to the relations of the Parties that are not regulated by this Agreement.
 
 2.3. With each access and / or actual use of the Service, the Customer agrees to the provisions of this Agreement and the Applicable Rules as amended, which were in effect at the time of the actual use of the Service.
 
@@ -92,7 +92,7 @@ The Contractor has the right to monitor the Content in order to verify that the 
 
 ## 5\. Responsibility of the Parties
 
-5.1. The extent of the Contractor's liability is limited solely by the relevant Applicable rules posted on the Site in the section [https://help.mail.ru/mcs/legal/](/en/additionals/start/legal).
+5.1. The extent of the Contractor's liability is limited solely by the relevant Applicable rules posted on the Site in the section [https://help.mail.ru/mcs/legal/](/en/intro/start/legal).
 
 5.2. The lost profit of the Customer is not subject to compensation by the Contractor.
 

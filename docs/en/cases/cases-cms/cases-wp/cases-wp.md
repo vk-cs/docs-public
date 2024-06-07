@@ -4,8 +4,8 @@ This instruction will help you deploy the latest version of the WordPress CMS in
 
 ## Preparatory steps
 
-1. [Register](/en/additionals/start/account-registration) at VK Cloud.
-1. [Create](/en/networks/vnet/operations/manage-net#creating_a_network) `network1` network with internet access and a subnet with the address `10.0.0.0/24`.
+1. [Register](/en/intro/start/account-registration) at VK Cloud.
+1. [Create](/en/networks/vnet/service-management/net#creating_a_network) `network1` network with internet access and a subnet with the address `10.0.0.0/24`.
 1. [Create VM](/en/base/iaas/service-management/vm/vm-create):
 
    - name: `Almalinux_9_WP`;
@@ -14,7 +14,7 @@ This instruction will help you deploy the latest version of the WordPress CMS in
    - assign a public IP address. The example will use `212.233.95.135`;
    - security groups (firewall settings): `default`, `ssh+www`.
 
-1. [Create DB instance](/en/dbs/dbaas/instructions/create):
+1. [Create DB instance](/en/dbs/dbaas/service-management/create):
 
    - name: `MySQL-9341`;
    - DBMS: MySQL 8.0;
@@ -121,6 +121,6 @@ The WordPress CMS admin panel opens.
 Deployed virtual resources are charged. If you don't need them anymore:
 
 - [Delete](/en/base/iaas/service-management/vm/vm-manage#deleting_a_vm) `Almalinux_9_WP` VM.
-- [Delete](/en/dbs/dbaas/instructions/delete) `MySQL-9341` instance.
-- If necessary, [delete](/en/networks/vnet/operations/manage-floating-ip#removing_floating_ip_address_from_the_project) `212.233.95.135` floating IP address.
+- [Delete](/en/dbs/dbaas/service-management/delete) `MySQL-9341` instance.
+- If necessary, [delete](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project) `212.233.95.135` floating IP address.
 - [Delete](/en/networks/dns/publicdns#deleting_resource_records) `site-wp.example.vk.cloud` DNS record.

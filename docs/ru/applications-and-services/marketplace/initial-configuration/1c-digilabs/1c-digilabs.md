@@ -17,13 +17,13 @@
 Облачная инфраструктура будет развернута на базе серверов с ОС Linux и СУБД PostgreSQL. Использование серверов с ОС Windows и СУБД MS SQL находится на стадии тестирования.
 </info>
 
-Используя сервис Размещение высоконагруженных 1С в облаке, вы соглашаетесь с лицензионным соглашением [Marketplace](/ru/additionals/start/legal/marketplace), а также с условиями использования [программных продуктов Фирмы 1С](https://v8.1c.ru/price/#fe26f071-7409-11e6-853d-0050569f2de3) и (опционально) [программного обеспечения Алькир](https://digilabs.ru/#buyOptions).
+Используя сервис Размещение высоконагруженных 1С в облаке, вы соглашаетесь с лицензионным соглашением [Marketplace](/ru/intro/start/legal/marketplace), а также с условиями использования [программных продуктов Фирмы 1С](https://v8.1c.ru/price/#fe26f071-7409-11e6-853d-0050569f2de3) и (опционально) [программного обеспечения Алькир](https://digilabs.ru/#buyOptions).
 
 ## Подготовительные шаги
 
-1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
-1. [Создайте](/ru/networks/vnet/operations/manage-net) сеть и подсеть, где будут размещены виртуальные машины облачной инфраструктуры.
-1. В [настройках подсети](/ru/networks/vnet/operations/manage-net#redaktirovanie_podseti) отключите опцию **Приватный DNS**.
+1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
+1. [Создайте](/ru/networks/vnet/service-management/net) сеть и подсеть, где будут размещены виртуальные машины облачной инфраструктуры.
+1. В [настройках подсети](/ru/networks/vnet/service-management/net#redaktirovanie_podseti) отключите опцию **Приватный DNS**.
 1. Запросите доступ к сервису и образам ВМ для развертывания инфраструктуры в [технической поддержке](/ru/contacts).
 1. Сделайте полную резервную копию вашей информационной базы 1С. На компьютере с ОС Linux используйте для этого утилиту [pg_dump](https://postgrespro.ru/docs/postgrespro/14/app-pgdump).
 
@@ -365,7 +365,7 @@
       1. Перейдите в раздел **Облачные вычисления** → **Виртуальные машины**.
       1. Откройте меню любого сервера инфраструктуры и выберите пункт **Настройка firewall**.
       1. Найдите в списке активную группу и запомните ее название.
-      1. [Назначьте](/ru/networks/vnet/operations/secgroups#naznachenie_gruppy_pravil_na_instans) эту группу безопасности ВМ.
+      1. [Назначьте](/ru/networks/vnet/service-management/secgroups#naznachenie_gruppy_pravil_na_instans) эту группу безопасности ВМ.
 
    1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-win) к ВМ.
    1. Установите на ВМ клиентское приложение системы 1С:Предприятие.
@@ -374,7 +374,7 @@
    <tabpanel>
 
    1. Подключите компьютер с установленным клиентским приложением 1С к вашей корпоративной сети с выходом в интернет.
-   1. [Создайте](/ru/networks/vnet/operations/manage-vpn) VPN-туннель между этим компьютером и кластером ВМ, на котором размещена облачная база 1С. Параметры туннеля:
+   1. [Создайте](/ru/networks/vnet/service-management/vpn) VPN-туннель между этим компьютером и кластером ВМ, на котором размещена облачная база 1С. Параметры туннеля:
 
       - **Local Endpoint**: подсеть, указанная на этапе [развертывания облачной инфраструктуры](/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs#1_razvernite_oblachnuyu_infrastrukturu_dlya_razmeshcheniya_sistemy_1s).
       - **Remote Endpoint**: подсеть вашей корпоративной сети, в которую включен компьютер с установленным клиентским приложением 1С.

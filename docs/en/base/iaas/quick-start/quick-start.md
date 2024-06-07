@@ -17,10 +17,10 @@ After passing the quick start, stop or delete the VM if you no longer need it.
 
 ## 1. Preparatory steps
 
-1. [Register](../../../additionals/account/start/registration) on the VK Cloud platform.
-2. [Activate](../../../additionals/account/start/activation) the services.
+1. [Register](/en/intro/start/account-registration) on the VK Cloud platform.
+2. [Activate](/en/tools-for-using-services/account/service-management/activation) the services.
 
-The account balance should be positive, and [quotas](../../../additionals/account/concepts/quotasandlimits) should be enough to create the target configuration of the virtual machine.
+The account balance should be positive, and [quotas](../../../tools-for-using-services/account/concepts/quotasandlimits) should be enough to create the target configuration of the virtual machine.
 
 ## 2. Create a VM
 

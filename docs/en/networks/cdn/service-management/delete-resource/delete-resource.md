@@ -2,7 +2,7 @@ You can delete a CDN resource in two ways:
 
 - [Through the CDN service interface](#deleting_resource_via_cdn_service_interface).
 
-- [Through the bucket interface](#deleting_resource_via_bucket_interface) in the [Cloud Storage](/en/base/s3) service. Use this if the CDN resource [was created trough the bucket interface](../create-resource#creating_resource_via_bucket_interface).
+- [Through the bucket interface](#deleting_resource_via_bucket_interface) in the [Cloud Storage](/en/storage/s3) service. Use this if the CDN resource [was created trough the bucket interface](../create-resource#creating_resource_via_bucket_interface).
 
 ## Deleting resource via CDN service interface
 

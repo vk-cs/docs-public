@@ -13,11 +13,11 @@
 
 Данная инструкция поможет мигрировать ваши ресурсы в VK Cloud с помощью сервиса Hystax Acura Migration на примере ВМ `Ubuntu-MR` с операционной системой Ubuntu 18.04.
 
-Используя сервис Hystax Acura Migration, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/additionals/start/legal/marketplace) и [Hystax Acura Migration](https://хст.рф/terms-of-use/).
+Используя сервис Hystax Acura Migration, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/intro/start/legal/marketplace) и [Hystax Acura Migration](https://хст.рф/terms-of-use/).
 
 ## 1. Подготовительные шаги
 
-1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
+1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
 1. [Настройте](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута мигрируемая инфраструктура.
 1. [Подключите](/ru/applications-and-services/marketplace/service-management/pr-instance-add/) сервис Hystax Acura Migration.
 
@@ -183,4 +183,4 @@
 
 - Удалите ВМ `Ubuntu-MR`, добавленную в [личный кабинет](https://migration.mcs-cloud.ru) Hystax Acura.
 - Удалите (detach) резервную инфраструктуру `VK-Cloud-infra` через [личный кабинет](https://migration.mcs-cloud.ru) Hystax Acura.
-- [Удалите](/ru/networks/vnet/operations/manage-floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, если он был создан во время миграции.
+- [Удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, если он был создан во время миграции.

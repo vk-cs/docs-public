@@ -8,7 +8,7 @@ All details on infrastructure deployment and software or creating a tenant (acco
 
 <warn>
 
-By using the services from the app store, you agree to the [user Agreement](/ru/additionals/start/legal/marketplace "change-lang").
+By using the services from the app store, you agree to the [user Agreement](/ru/intro/start/legal/marketplace "change-lang").
 
 </warn>
 

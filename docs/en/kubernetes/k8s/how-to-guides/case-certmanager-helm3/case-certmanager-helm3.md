@@ -21,7 +21,7 @@ It will be shown how to install and upgrade `cert-manager` using Helm 3 in Kuber
 
    <info>
 
-   To save time, you can [create a Kubernetes cluster](../../../../base/k8s/operations/create-cluster) in a few minutes on the VK Cloud platform.
+   To save time, you can [create a Kubernetes cluster](../../../../kubernetes/k8s/service-management/create-cluster) in a few minutes on the VK Cloud platform.
 
    </info>
 

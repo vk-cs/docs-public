@@ -84,7 +84,7 @@ Read more about these and other changes in [official Kubernetes documentation](h
 
 ## Kubernetes 1.23.6 <a id="v1-23-6"></a>
 
-**Changes in Kubernetes aaS service:** Added [integration with VK Cloud IAM](/en/base/k8s/concepts/access-management).
+**Changes in Kubernetes aaS service:** Added [integration with VK Cloud IAM](/en/kubernetes/k8s/concepts/access-management).
 
 **Important changes in Kubernetes:**
 

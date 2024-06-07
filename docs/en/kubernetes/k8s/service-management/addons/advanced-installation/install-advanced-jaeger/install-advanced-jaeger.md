@@ -27,7 +27,7 @@ If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_n
    <tabpanel>
 
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
@@ -74,7 +74,7 @@ If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_n
    <tabpanel>
 
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Find the cluster you need in the list.
 
@@ -99,7 +99,7 @@ If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_n
    <tabpanel>
 
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
@@ -198,7 +198,7 @@ If this does not suit you, perform a **standard installation** or **installation
    <tabpanel>
 
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
@@ -254,7 +254,7 @@ Make sure that the number of worker nodes in the cluster is not less than the se
 
 ### Changing Elasticsearch storage settings
 
-Elasticsearch replicas are hosted on the worker nodes of the cluster and use [persistent volumes](../../../../reference/pvs-and-pvcs) as a storage. By default, these persistent volumes are located in the same [availability zone](/en/additionals/start/architecture#availability_zones_567cfd7a) in which the cluster's master nodes are located. If the cluster worker nodes and persistent volumes are located in different availability zones, then replicas on these nodes will not be able to work with volumes.
+Elasticsearch replicas are hosted on the worker nodes of the cluster and use [persistent volumes](../../../../reference/pvs-and-pvcs) as a storage. By default, these persistent volumes are located in the same [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) in which the cluster's master nodes are located. If the cluster worker nodes and persistent volumes are located in different availability zones, then replicas on these nodes will not be able to work with volumes.
 
 To ensure that persistent volumes work with Elasticsearch replicas, set the [storage class](../../../../concepts/storage#pre_configured_storage_classes), the availability zone of which coincides with the availability zone of worker nodes:
 

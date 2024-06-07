@@ -7,7 +7,7 @@ To connect via SSH, an SSH server must be running on the virtual machine. On Lin
 Before connecting, make sure that the following conditions are met:
 
 - the virtual machine is running and the OS boot process has finished;
-- remote access via SSH protocol (TCP port `22`) is allowed in the VM network settings — [add](/en/networks/vnet/operations/secgroups#assign_a_rule_group_to_an_instance) `ssh` security group;
+- remote access via SSH protocol (TCP port `22`) is allowed in the VM network settings — [add](/en/networks/vnet/service-management/secgroups#assign_a_rule_group_to_an_instance) `ssh` security group;
 - the VM has an external (“floating”) IP address available for connection.
 
    <info>

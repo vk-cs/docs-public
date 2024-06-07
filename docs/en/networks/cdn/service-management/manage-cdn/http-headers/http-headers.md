@@ -128,7 +128,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 ## Enabling CORS headers support
 
-The [Cross-Origin Resource Sharing (CORS)](/ru/base/s3/references#cors "change-lang") mechanism uses the Access-Control-Allow-Origin response header to grant users' browsers permissions to access resources located on different domains from the origin.
+The [Cross-Origin Resource Sharing (CORS)](/ru/storage/s3/reference#cors "change-lang") mechanism uses the Access-Control-Allow-Origin response header to grant users' browsers permissions to access resources located on different domains from the origin.
 
 To configure the Access-Control-Allow-Origin HTTP header:
 

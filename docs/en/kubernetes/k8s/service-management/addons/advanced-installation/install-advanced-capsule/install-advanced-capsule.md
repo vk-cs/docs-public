@@ -50,7 +50,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    <tabpanel>
 
-   1. [Complete the Terraform quick start guide](/en/manage/tools-for-using-services/terraform/quick-start) if it is not already done.
+   1. [Complete the Terraform quick start guide](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
    1. Add to your Terraform configuration files that describe the cluster:
 
       - The [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) resource.
@@ -88,7 +88,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    <tabpanel>
 
    1. Go to your [VK Cloud personal account](https://cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Find the cluster you need in the list.
    1. Make sure that the cluster has a dedicated group of worker nodes that will host addons.
@@ -113,7 +113,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    <tabpanel>
 
    1. Go to your [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
@@ -175,7 +175,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    <tabpanel>
 
-   1. [Complete the Terraform quick start guide](/en/manage/tools-for-using-services/terraform/quick-start) if it is not already done.
+   1. [Complete the Terraform quick start guide](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
    1. Add to your Terraform configuration files that describe the cluster:
 
       - The [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) resource.
@@ -222,7 +222,7 @@ If this is not suitable for you, perform a **standard installation** or **instal
    <tabpanel>
 
    1. Go to your [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
@@ -243,7 +243,7 @@ If this is not suitable for you, perform a **standard installation** or **instal
    </tabpanel>
    <tabpanel>
 
-   1. [Complete the Terraform quick start guide](/en/manage/tools-for-using-services/terraform/quick-start) if it is not already done.
+   1. [Complete the Terraform quick start guide](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
    1. Add to your Terraform configuration files that describe the cluster:
 
       - The [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) resource.

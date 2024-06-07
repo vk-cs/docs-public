@@ -1,7 +1,7 @@
 Spark jobs can be submitted to the cluster in a variety of ways:
 
 - For Spark applications that have no dependencies, it is sufficient to pass the application code in the job manifest. This approach is shown [in the example of calculating the number π](../submit-basic-job-pi).
-- For Spark applications that require additional artifacts for their operation, you must manually add the required artifacts to the [Cloud Storage](/en/base/s3) bucket and edit the job manifest. This approach will be shown below.
+- For Spark applications that require additional artifacts for their operation, you must manually add the required artifacts to the [Cloud Storage](/en/storage/s3) bucket and edit the job manifest. This approach will be shown below.
 
 As an example, an application that executes an SQL query against a ClickHouse deployed as a [Cloud Databases](/en/dbs/dbaas) instance will be used.
 
@@ -88,7 +88,7 @@ As an example, an application that executes an SQL query against a ClickHouse de
 
 1. Find and write down the ID of the created cluster (contained in the `id` field).
 
-1. [Create a ClickHouse instance](/en/dbs/dbaas/instructions/create/create-single-replica) that:
+1. [Create a ClickHouse instance](/en/dbs/dbaas/service-management/create/create-single-replica) that:
 
    - uses the newest version available;
    - uses the Single configuration;
@@ -174,7 +174,7 @@ All mentioned environment variables [will be set up later](#3_send_the_spark_job
       - cluster identifier (contained in the `id` field);
       - Cloud Storage bucket name (contained in the `s3_bucket_name` field).
 
-1. [Upload](/en/base/s3/instructions/objects/upload-object) files to the `spark-files` directory of this bucket:
+1. [Upload](/en/storage/s3/service-management/objects/upload-object) files to the `spark-files` directory of this bucket:
 
    - the `query-clickhouse.py` file with the Spark application code;
    - the [clickhouse-jdbc-0.5.0-shaded.jar](https://repo1.maven.org/maven2/com/clickhouse/clickhouse-jdbc/0.5.0/clickhouse-jdbc-0.5.0-shaded.jar) file with the JDBC driver for ClickHouse.
@@ -337,6 +337,6 @@ If you no longer need the created resources, delete them:
 
 1. Delete the Spark cluster.
 1. Delete the Docker registry for this Spark cluster.
-1. Delete [objects from the bucket](/en/base/s3/instructions/objects/manage-object#udalenie_obekta) and [the bucket itself](/en/base/s3/instructions/buckets/bucket#removing_a_bucket) that was used by this cluster.
+1. Delete [objects from the bucket](/en/storage/s3/service-management/objects/manage-object#udalenie_obekta) and [the bucket itself](/en/storage/s3/service-management/buckets/bucket#removing_a_bucket) that was used by this cluster.
 1. [Delete the access token](../../instructions/tokens#deleting_an_access_token).
-1. [Delete the ClickHouse instance](/en/dbs/dbaas/instructions/delete).
+1. [Delete the ClickHouse instance](/en/dbs/dbaas/service-management/delete).

@@ -1,11 +1,11 @@
-In Cloud Servers, you can create virtual machines through your personal account, OpenStack CLI or Terraform. To create a VM using Terraform, use the [VM creation instructions](/en/manage/terraform/scenarios/create) in the Terraform section.
+In Cloud Servers, you can create virtual machines through your personal account, OpenStack CLI or Terraform. To create a VM using Terraform, use the [VM creation instructions](/en/tools-for-using-services/terraform/how-to-guides/iaas/create) in the Terraform section.
 
 ## Before starting work
 
-1. [Register](/en/base/account/quick-start) to VK Cloud.
+1. [Register](/en/intro/start/account-registration) to VK Cloud.
 2. [Activate](/en/tools-for-using-services/account/service-management/activation) the services.
 
-The account balance should be positive, and [quotas](/en/base/account/concepts/quotasandlimits) should be sufficient to create the desired virtual machine configuration.
+The account balance should be positive, and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) should be sufficient to create the desired virtual machine configuration.
 
 ### Available OS
 
@@ -54,7 +54,7 @@ The available fields may differ for different operating systems.
 
    - **Firewall settings**: select the appropriate security groups.
 
-      To connect via SSH, add the group `ssh` or `ssh+www`. For more information about configuring network access rules, see [Managing firewall rules](/en/networks/vnet/operations/secgroups).
+      To connect via SSH, add the group `ssh` or `ssh+www`. For more information about configuring network access rules, see [Managing firewall rules](/en/networks/vnet/service-management/secgroups).
 
    - (Optional) **Assign external IP**: enable the option and specify the IP to be able to connect to the VM from the Internet. The option is available if the VM is on a network with an Internet connection. The option is enabled and automatically configured the IP address if the VM is located on an external network (ext-net).
 
@@ -80,8 +80,8 @@ The available fields may differ for different operating systems.
 1. Get ready to work with the OpenStack CLI:
 
    1. [Enable](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa/) two-factor authentication.
-   2. [Activate](/en/manage/tools-for-using-services/rest-api/enable-api) API access.
-   3. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+   2. [Activate](/en/tools-for-using-services/rest-api/enable-api) API access.
+   3. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 2. Collect the data:
 
@@ -106,7 +106,7 @@ The available fields may differ for different operating systems.
        - To create a Linux VM and connect to it via SSH, save the `security_group_ID` of the group `ssh` or `ssh+www`.
        - To create a Windows VM and connect to it via RDP, save the `security_group_ID` of the group `rdp` or `rdp+www`.
 
-      For more information about configuring network access rules, see [Managing firewall rules](/en/networks/vnet/operations/secgroups).
+      For more information about configuring network access rules, see [Managing firewall rules](/en/networks/vnet/service-management/secgroups).
 
    4. Get a list of available networks and save the desired `network_ID`:
 
@@ -115,7 +115,7 @@ The available fields may differ for different operating systems.
       ```
 
       - If the `ext-net` network is selected, an external IP address will be automatically assigned to the virtual machine.
-      - If a private network is selected, then a floating [IP address can be assigned to the virtual machine after creation](/en/networks/vnet/operations/manage-floating-ip).
+      - If a private network is selected, then a floating [IP address can be assigned to the virtual machine after creation](/en/networks/vnet/service-management/floating-ip).
 
    5. Get a list of available key pairs and save `keypair_name`:
 

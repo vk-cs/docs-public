@@ -1,7 +1,7 @@
 To view the logs, use any method convenient for you:
 
 - [Go to](https://msk.cloud.vk.com/app/en) **Monitoring** → **Logging** section of your personal account.
-- Use [API methods](/ru/additionals/api/logging "change-lang").
+- Use [API methods](/ru/tools-for-using-services/api/logging "change-lang").
 
 To refine the search results, use [search query language](../../concepts/search-tools/). Examples of search expressions:
 

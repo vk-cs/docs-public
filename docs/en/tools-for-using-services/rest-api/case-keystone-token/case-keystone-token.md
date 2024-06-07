@@ -3,7 +3,7 @@ A Keystone token is required to work with some components and resources of the V
 ## Preparatory steps
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en/main).
-1. Make sure that [two-factor authentication](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa) and [API access](/en/manage/tools-for-using-services/rest-api/enable-api) are enabled.
+1. Make sure that [two-factor authentication](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa) and [API access](/en/tools-for-using-services/rest-api/enable-api) are enabled.
 1. At the top of your personal account page, select the project for which you need a token.
 
 ## Token generation
@@ -35,7 +35,7 @@ Get a token:
 </tabpanel>
 <tabpanel>
 
-1. Make sure you have the OpenStack client [installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate yourself](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) in the project.
+1. Make sure you have the OpenStack client [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate yourself](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
 
 1. Execute the command:
 
@@ -50,7 +50,7 @@ Get a token:
 
 1. Install the cURL [utility](https://github.com/curl/curl/blob/master/docs/INSTALL.md), if not already installed.
 
-1. [Authenticate yourself](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) in the project. The authentication procedure is the same for OpenStack client and for cURL utility.
+1. [Authenticate yourself](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project. The authentication procedure is the same for OpenStack client and for cURL utility.
 
 1. Perform the command for your operating system:
 
@@ -198,4 +198,4 @@ Other examples of token usage:
 
 - [viewing logs](/en/manage/logging/start/view-logs) in the Cloud Logging service;
 <!-- @TODO change for EN version -->
-- [working](/ru/additionals/api/api-dns "change-lang") with public DNS.
+- [working](/ru/tools-for-using-services/api/api-dns "change-lang") with public DNS.

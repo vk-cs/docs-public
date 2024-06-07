@@ -33,7 +33,7 @@ If the parameter **Maximum number of full backups** is changed, is deleted after
 </tabpanel>
 <tabpanel>
 
-[Use](/ru/additionals/api/backup-api "change-lang") the API PUT method `/{project_id}/plans/{plan_id}`.
+[Use](/ru/tools-for-using-services/api/backup-api "change-lang") the API PUT method `/{project_id}/plans/{plan_id}`.
 
 </tabpanel>
 </tabs>
@@ -55,7 +55,7 @@ If the parameter **Maximum number of full backups** is changed, is deleted after
 </tabpanel>
 <tabpanel>
 
-[Use](/ru/additionals/api/backup-api "change-lang") the API PUT method `/{project_id}/triggers/{trigger_id}`.
+[Use](/ru/tools-for-using-services/api/backup-api "change-lang") the API PUT method `/{project_id}/triggers/{trigger_id}`.
 
 </tabpanel>
 </tabs>
@@ -109,7 +109,7 @@ When you delete a backup plan, all restore points will be deleted.
 </tabpanel>
 <tabpanel>
 
-[Use](/ru/additionals/api/backup-api "change-lang") the API PUT method `/{project_id}/plans/{plan_id}`.
+[Use](/ru/tools-for-using-services/api/backup-api "change-lang") the API PUT method `/{project_id}/plans/{plan_id}`.
 
 </tabpanel>
 </tabs>

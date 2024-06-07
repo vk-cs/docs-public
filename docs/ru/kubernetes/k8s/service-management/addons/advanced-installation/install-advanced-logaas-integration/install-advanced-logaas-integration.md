@@ -57,7 +57,7 @@
    </tabpanel>
    <tabpanel>
 
-   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Подготовьтесь к работе с Terraform](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -129,7 +129,7 @@
    </tabpanel>
    <tabpanel>
 
-   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Подготовьтесь к работе с Terraform](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);

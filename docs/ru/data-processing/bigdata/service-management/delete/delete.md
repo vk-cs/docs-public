@@ -13,7 +13,7 @@
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь методом `DELETE /clusters/{cluster_id}` [REST API сервиса](/ru/additionals/api/bigdata-api).
+Воспользуйтесь методом `DELETE /clusters/{cluster_id}` [REST API сервиса](/ru/tools-for-using-services/api/api-spec/bigdata-api).
 
 </tabpanel>
 </tabs>

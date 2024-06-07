@@ -33,7 +33,7 @@
 </tabpanel>
 <tabpanel>
 
-[Воспользуйтесь](/ru/additionals/api/backup-api) PUT-методом API `/{project_id}/plans/{plan_id}`.
+[Воспользуйтесь](/ru/tools-for-using-services/api/api-spec/backup-api) PUT-методом API `/{project_id}/plans/{plan_id}`.
 
 </tabpanel>
 </tabs>
@@ -55,7 +55,7 @@
 </tabpanel>
 <tabpanel>
 
-[Воспользуйтесь](/ru/additionals/api/backup-api) PUT-методом API `/{project_id}/triggers/{trigger_id}`.
+[Воспользуйтесь](/ru/tools-for-using-services/api/api-spec/backup-api) PUT-методом API `/{project_id}/triggers/{trigger_id}`.
 
 </tabpanel>
 </tabs>
@@ -108,7 +108,7 @@
 </tabpanel>
 <tabpanel>
 
-[Воспользуйтесь](/ru/additionals/api/backup-api) PUT-методом API `/{project_id}/plans/{plan_id}`.
+[Воспользуйтесь](/ru/tools-for-using-services/api/api-spec/backup-api) PUT-методом API `/{project_id}/plans/{plan_id}`.
 
 </tabpanel>
 </tabs>
