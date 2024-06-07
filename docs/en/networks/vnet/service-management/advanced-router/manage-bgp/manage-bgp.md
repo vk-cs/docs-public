@@ -37,7 +37,7 @@ You can only add one BGP router per advanced router.
 {include(/en/_includes/_open_advanced_router.md)}
 
 1. Go to the **Dynamic Routing** tab.
-1. Start editing the dynamic router in one of the following ways:
+1. Open the editing page of the dynamic router by one of the following ways:
 
     - Click the name of the BGP router, then click the **Edit** button.
     - Expand the BGP router menu and select **Edit**.
@@ -119,7 +119,7 @@ After you add the BGP neighbor, the router will try to establish a connection wi
 1. Go to the **Dynamic Routing** tab.
 1. Select the BGP router and then go to the **BGP neighbors** tab.
 1. Select the BGP neighbor.
-1. Start editing the BGP neighbor in one of the following ways:
+1. Open the editing window of the BGP neighbor by one of the following ways:
 
     - Click the BGP neighbor name, then click the **Edit** button.
     - Expand the BGP neighbor menu and select **Edit**.
@@ -251,7 +251,7 @@ You can only edit the **Static** announcements.
 
 1. Go to the **Dynamic Routing** tab.
 1. Select the BGP router and then go to the **BGP announcements** tab.
-1. Start editing the BGP announcement in one of the following ways:
+1. Open the editing page of the BGP announcement by one of the following ways:
 
     - Expand the announcement menu and select **Edit**.
     - Click the IP address of the announced subnet, then click the **Edit** button.
