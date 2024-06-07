@@ -55,7 +55,7 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
 
 1. Go to your VK Cloud [personal account](https://cloud.vk.com/app/en/).
 1. Go to **Cloud networks** → **Routers**.
-1. Start editing the router settings in one of the following ways:
+1. Open the router editing window by one of the following ways:
 
    - Click the name of the router and then click the **Edit button** on the **General information** tab.
    - Expand the router menu and select **Edit router**.
