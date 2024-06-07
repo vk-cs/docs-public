@@ -10,7 +10,7 @@
 
 ## Подготовительные шаги
 
-1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) виртуальную сеть, например, `monitoring-net`.
+1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) виртуальную сеть, например, `monitoring-net`.
 1. [Создайте](/ru/base/iaas/service-management/vm/vm-create) ВМ для сервера Prometheus:
 
    - имя: `Centos_8_5_Prometheus`;
@@ -154,7 +154,7 @@
    - Сформируйте [поисковый запрос](https://prometheus.io/docs/prometheus/2.45/querying/examples/), чтобы просмотреть данные в табличном виде.
    - Откройте [шаблонные наборы графиков](https://prometheus.io/docs/visualization/consoles/) по адресу `http://87.239.239.239:9090/consoles/index.html.example`.
 
-1. (Опционально) [Отвяжите](/ru/networks/vnet/operations/manage-floating-ip#otvyazka_plavayushchego_ip_adresa) плавающий адрес от ВМ `Centos_8_5_Prometheus`.
+1. (Опционально) [Отвяжите](/ru/networks/vnet/service-management/floating-ip#otvyazka_plavayushchego_ip_adresa) плавающий адрес от ВМ `Centos_8_5_Prometheus`.
 
 ## 3. Настройте визуализацию данных в Grafana
 
@@ -193,6 +193,6 @@
 
 1. [Удалите](/ru/base/iaas/vm-start/manage-vm/vm-delete) развернутые виртуальные машины.
 1. [Удалите](/ru/applications-and-services/marketplace/service-management/pr-instance-manage#udalenie_instansa_servisa) виртуальную машину с Grafana.
-1. [Удалите](/ru/networks/vnet/operations/manage-floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, назначенный виртуальной машине `Centos_8_5_Prometheus`.
-1. [Удалите](/ru/networks/vnet/operations/manage-ports#udalenie_porta) порт, которому назначен виртуальный IP-адрес.
-1. [Удалите](/ru/networks/vnet/operations/manage-net#udalenie_seti) сеть `monitoring-net`.
+1. [Удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, назначенный виртуальной машине `Centos_8_5_Prometheus`.
+1. [Удалите](/ru/networks/vnet/service-management/ports#udalenie_porta) порт, которому назначен виртуальный IP-адрес.
+1. [Удалите](/ru/networks/vnet/service-management/net#udalenie_seti) сеть `monitoring-net`.

@@ -16,7 +16,7 @@
 
 Данная инструкция поможет развернуть сервис UserGate NGFW на ВМ в VK Cloud, подключиться к консоли UserGate NGFW и добавить новую сеть через консоль сервиса.
 
-Используя сервис UserGate NGFW, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/additionals/start/legal/marketplace) и [UserGate](https://www.usergate.com/ru/usergate-eula).
+Используя сервис UserGate NGFW, вы соглашаетесь с лицензионными соглашениями сервисов [Marketplace](/ru/intro/start/legal/marketplace) и [UserGate](https://www.usergate.com/ru/usergate-eula).
 
 <warn>
 
@@ -26,9 +26,9 @@ UserGate NGFW предоставляется по модели BYOL (Bring Your 
 
 ## Подготовительные шаги
 
-1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
-1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
-1. В [настройках подсети](/ru/networks/vnet/operations/manage-net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
+1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
+1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) сеть с доступом в интернет, если она не была создана ранее.
+1. В [настройках подсети](/ru/networks/vnet/service-management/net#redaktirovanie_podseti), где будет размещена ВМ с развернутым сервисом, отключите опцию **Приватный DNS**.
 1. [Разверните](../../service-management/pr-instance-add/) сервис UserGate NGFW:
 
    - Выберите ранее созданные сеть с доступом в интернет и подсеть.
@@ -85,5 +85,5 @@ UserGate NGFW предоставляется по модели BYOL (Bring Your 
 Работающая инфраструктура сервиса потребляет вычислительные ресурсы. Если она вам больше не нужна:
 
 - [Удалите](../../service-management/pr-instance-manage#udalenie_instansa_servisa) инстанс сервиса UserGate NGFW.
-- [Удалите](/ru/networks/vnet/operations/manage-net#udalenie_seti) сеть, используемую для сервиса.
-- [Удалите](/ru/networks/vnet/operations/manage-floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, созданный во время развертывания сервиса.
+- [Удалите](/ru/networks/vnet/service-management/net#udalenie_seti) сеть, используемую для сервиса.
+- [Удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, созданный во время развертывания сервиса.

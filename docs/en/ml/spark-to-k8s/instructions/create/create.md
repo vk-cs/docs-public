@@ -17,7 +17,7 @@
 
       - **Availability zone**: [availability zone](/en/base/iaas/concepts/about#availability_zone) for the cluster.
 
-      - **Network**: the network and subnet where the cluster nodes will be located. If the necessary networks and subnets are not in the list, [create](/en/networks/vnet/operations/manage-net) them.
+      - **Network**: the network and subnet where the cluster nodes will be located. If the necessary networks and subnets are not in the list, [create](/en/networks/vnet/service-management/net) them.
 
    1. Set the worker node settings in the **Worker-node settings** section:
 

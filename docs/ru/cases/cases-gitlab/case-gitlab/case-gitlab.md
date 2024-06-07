@@ -4,9 +4,9 @@
 
 ## Подготовительные шаги
 
-1. [Зарегистрируйтесь](/ru/additionals/start/account-registration) в VK Cloud.
-1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
-1. [Создайте](/ru/networks/vnet/operations/secgroups) группу безопасности `gitlab` и добавьте в нее  разрешения на входящий трафик для портов:
+1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
+1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
+1. [Создайте](/ru/networks/vnet/service-management/secgroups) группу безопасности `gitlab` и добавьте в нее  разрешения на входящий трафик для портов:
 
    - `80` (HTTP),
    - `443` (HTTPS),
@@ -60,7 +60,7 @@
 
     </info>
 
-1. [Установите и настройте Docker](/ru/additionals/cases/cases-docker-ce/docker-ce-u18).
+1. [Установите и настройте Docker](/ru/cases/cases-docker-ce/docker-ce-u18).
 1. Установите плагин [Docker Compose](https://docs.docker.com/compose/):
 
    1. Обновите список доступных пакетов Ubuntu и их версий:
@@ -103,7 +103,7 @@ GitLab для доступа по SSH по умолчанию используе
 
     <info>
 
-    Номер `35242` использован в качестве примера. Если вы используете другой номер, откройте его для подключения по SSH в настройках файервола ВМ. Подробнее в разделе [Управление правилами файервола](/ru/networks/vnet/operations/secgroups).
+    Номер `35242` использован в качестве примера. Если вы используете другой номер, откройте его для подключения по SSH в настройках файервола ВМ. Подробнее в разделе [Управление правилами файервола](/ru/networks/vnet/service-management/secgroups).
 
     </info>
 
@@ -284,4 +284,4 @@ CONTAINER ID   IMAGE                         COMMAND                  CREATED   
 Развернутые виртуальные ресурсы тарифицируются. Если они вам больше не нужны:
 
 - [Удалите](/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm) ВМ `OA-Ubuntu-docker`.
-- При необходимости [удалите](/ru/networks/vnet/operations/manage-floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес `185.185.185.185`.
+- При необходимости [удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес `185.185.185.185`.

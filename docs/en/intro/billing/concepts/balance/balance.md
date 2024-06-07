@@ -1,4 +1,4 @@
-The balance of a [project](/en/base/account/concepts/projects) is the overall sum of funds on the project accounts, the main and the bonus ones.
+The balance of a [project](/en/tools-for-using-services/account/concepts/projects) is the overall sum of funds on the project accounts, the main and the bonus ones.
 
 You can [view](../../service-management/payment) the project balance in the [personal account](https://msk.cloud.vk.com/app/en/). Information about the balance is available if the services are [activated](/en/tools-for-using-services/account/service-management/activation) in the project.
 
@@ -26,7 +26,7 @@ You can pay for services from both accounts. Funds are first debited from the bo
 
 Funds on the balance sheet begin to be spent after the creation of the first chargeable objects — for example, virtual machines and floating IP addresses.
 
-If the funds on both accounts run out, the project balance becomes negative, and the project is automatically [frozen](/en/base/account/concepts/projects#automatic_freezing_of_the_project). The project objects are placed in a queue for deletion, and a corresponding notification is sent to the project owner's email.
+If the funds on both accounts run out, the project balance becomes negative, and the project is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project). The project objects are placed in a queue for deletion, and a corresponding notification is sent to the project owner's email.
 
 <info>
 
@@ -42,12 +42,12 @@ Bonuses, or bonus points, are virtual funds credited to the project balance by t
 
 Bonuses are credited:
 
-- When a new account is [registered](/en/additionals/start/account-registration) on the platform. These sign-up bonuses are credited only once, after services are activated in the [project](/en/base/account/concepts/projects) that is created for the account. The amount of bonuses depends on the region of the project:
+- When a new account is [registered](/en/intro/start/account-registration) on the platform. These sign-up bonuses are credited only once, after services are activated in the [project](/en/tools-for-using-services/account/concepts/projects) that is created for the account. The amount of bonuses depends on the region of the project:
 
   - Moscow — 3000 bonuses;
   - Kazakhstan — 24000 bonuses.
 
-  One bonus point for [region](/en/base/account/concepts/regions) Moscow equals one ruble, for region Kazakhstan — one tenge.
+  One bonus point for [region](/en/tools-for-using-services/account/concepts/regions) Moscow equals one ruble, for region Kazakhstan — one tenge.
 
   <err>
 

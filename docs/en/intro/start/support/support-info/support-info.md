@@ -48,7 +48,7 @@ Technical support:
 
 - Provides architectural advice regarding the use of VK Cloud services.
 - Performs diagnostics of malfunctions in the operation of resources on the project.
-- Deals with issues of restoring access to [account](/en/base/account/faq).
+- Deals with issues of restoring access to [account](/en/tools-for-using-services/account/faq).
 - Informs about the work of billing.
 - Advises on troubleshooting issues in the platform.
 - Helps in setting up VK Cloud services.

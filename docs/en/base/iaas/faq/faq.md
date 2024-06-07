@@ -110,7 +110,7 @@ If you lose the private key that was used to access the VM over SSH, you need to
 
 <summary>Openstack CLI does not connect</summary>
 
-You can connect to the Openstack CLI using the configuration file. Information about installation, configuration and connection parameters is given in [CLI](/en/base/account/cli) chapter.
+You can connect to the Openstack CLI using the configuration file. Information about installation, configuration and connection parameters is given in [CLI](/en/tools-for-using-services/cli) chapter.
 
 </details>
 
@@ -170,7 +170,7 @@ Billing iteration occurs once an hour — during this time, the calculation of t
 
 <summary>Can I set a floating IP address for a VM?</summary>
 
-You can [assign an existing](/en/networks/vnet/operations/manage-floating-ip#bindind_a_floating_ip_address) floating IP address to the VM, or [add a new](/en/networks/vnet/operations/manage-floating-ip#adding_floating_ip_address_to_the_project) address manually.
+You can [assign an existing](/en/networks/vnet/service-management/floating-ip#bindind_a_floating_ip_address) floating IP address to the VM, or [add a new](/en/networks/vnet/service-management/floating-ip#adding_floating_ip_address_to_the_project) address manually.
 
 <warn>
 
@@ -240,7 +240,7 @@ To get full control over the cost of the service, it is better to rent a VPS/VDS
 
 <summary>Why can't my VMs in VK Cloud see my network outside the cloud?</summary>
 
-Network connection (VPN) must be configured between the networks. Learn more about creating a VPN between the VK Cloud network and an external network in the article [Setting up a VPN tunnel](/en/networks/vnet/use-cases/vpn-tunnel).
+Network connection (VPN) must be configured between the networks. Learn more about creating a VPN between the VK Cloud network and an external network in the article [Setting up a VPN tunnel](/en/networks/vnet/how-to-guides/vpn-tunnel).
 
 </details>
 
@@ -475,8 +475,8 @@ The maximum amount of file storage is 50TB.
 
 <summary>In which availability zone are file storages created?</summary>
 
-Repositories are created in [availability zones](/en/additionals/start/architecture#availability_zones_567cfd7a) GZ1 (Moscow region) and QAZ (Kazakhstan region).
-[Availability zones](/en/additionals/start/architecture#availability_zones_567cfd7a) of repositories depend on the [region](/ru/base/account/concepts/regions) of the project:
+Repositories are created in [availability zones](/en/intro/start/architecture#availability_zones_567cfd7a) GZ1 (Moscow region) and QAZ (Kazakhstan region).
+[Availability zones](/en/intro/start/architecture#availability_zones_567cfd7a) of repositories depend on the [region](/ru/tools-for-using-services/account/concepts/regions) of the project:
 
 - GZ1 for Moscow region;
 - QAZ for Kazakhstan region.

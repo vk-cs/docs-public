@@ -7,7 +7,7 @@ When creating the cluster the following was used:
 
 ## Before creating a cluster
 
-1. Review the available resources and [quotas](/en/base/account/concepts/quotasandlimits) for the [region](/en/base/account/concepts/regions) where you want to create the cluster. Different regions may have different quotas configured.
+1. Review the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) where you want to create the cluster. Different regions may have different quotas configured.
 
    To increase your quotas, please contact [technical support](/en/contacts).
 
@@ -75,7 +75,7 @@ Here:
 
   - `network_id = vkcs_networking_network.default.id`: the cluster will be hosted on a new network, which will be created by the `vkcs_networking_network` resource. The resource will be generated further.
   - `network_id = data.vkcs_networking_network.default.id`: the cluster will be hosted on an existing network. Its ID is taken from the `vkcs_networking_network` data source. The source will be generated further.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the cluster will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/operations/manage-net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud personal account or via the Openstack CLI.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the cluster will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud personal account or via the Openstack CLI.
 
   </details>
 
@@ -85,7 +85,7 @@ Here:
     <summary>Examples</summary>
 
   - `flavor_id = data.vkcs_compute_flavor.basic.id`: the ID is taken from the `vkcs_compute_flavor` data source, which will be generated further.
-  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: the ID is taken using the [OpenStack CLI](/en/manage/tools-for-using-services/openstack-cli).
+  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: the ID is taken using the [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
 
   </details>
 
@@ -110,7 +110,7 @@ Here:
     <summary>Examples</summary>
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: the ID is in the `vkcs_networking_network` data source, which is specified in the cluster network manifest.
-  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the external network ID is taken from the [network list](/en/networks/vnet/operations/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud personal account or via the Openstack CLI.
+  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the external network ID is taken from the [network list](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud personal account or via the Openstack CLI.
 
   </details>
 
@@ -149,7 +149,7 @@ Here:
     <summary>Examples</summary>
 
   - `flavor_id = data.vkcs_compute_flavor.basic.id`: the ID is taken from the `vkcs_compute_flavor` data source, which will be generated further.
-  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: the ID is taken using the [OpenStack CLI](/en/manage/tools-for-using-services/openstack-cli).
+  - `flavor_id = "aee06bce-xxxx-xxxx-xxxx-ec4210cc6bac"`: the ID is taken using the [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
 
   </details>
 
@@ -160,7 +160,7 @@ Here:
 
   - `network_id = vkcs_networking_network.default.id`: the cluster will be hosted on a new network, which will be created by the `vkcs_networking_network` resource. The resource will be generated further.
   - `network_id = data.vkcs_networking_network.default.id`: the cluster will be hosted on an existing network. Its ID is taken from the `vkcs_networking_network` data source. The source will be generated further.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the cluster will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/operations/manage-net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud personal account or via the Openstack CLI.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the cluster will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud personal account or via the Openstack CLI.
 
   </details>
 
@@ -170,7 +170,7 @@ Here:
     <summary>Examples</summary>
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: the ID is in the `vkcs_networking_network` data source, which is specified in the cluster network manifest.
-  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the external network ID taken from the [network list](/en/networks/vnet/operations/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud personal account or via the Openstack CLI.
+  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the external network ID taken from the [network list](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud personal account or via the Openstack CLI.
 
   </details>
 

@@ -2,13 +2,13 @@ You can collect, store and analyze metrics in the time series database using the
 
 The instructions will help you deploy the VictoriaMetrics service (using the example of version 1.93.9) on a VM in VK Cloud and configure the collection of metrics.
 
-By using VictoriaMetrics, you agree to the [Marketplace](/ru/additionals/start/legal/marketplace "change-lang") and [VictoriaMetrics](https://victoriametrics.com/assets/VM_EULA.pdf) license agreements.
+By using VictoriaMetrics, you agree to the [Marketplace](/ru/intro/start/legal/marketplace "change-lang") and [VictoriaMetrics](https://victoriametrics.com/assets/VM_EULA.pdf) license agreements.
 
 To deploy the VictoriaMetrics service in a project:
 
-1. [Register](/en/additionals/start/account-registration) at VK Cloud.
-1. [Create](/en/networks/vnet/operations/manage-net#creating_a_network) a network, if one has not been created earlier.
-1. In the [settings of the subnet](/en/networks/vnet/operations/manage-net#editing_a_subnet) where one or more servers with the deployed service will be located, disable the **Private DNS** option.
+1. [Register](/en/intro/start/account-registration) at VK Cloud.
+1. [Create](/en/networks/vnet/service-management/net#creating_a_network) a network, if one has not been created earlier.
+1. In the [settings of the subnet](/en/networks/vnet/service-management/net#editing_a_subnet) where one or more servers with the deployed service will be located, disable the **Private DNS** option.
 1. [Deploy](../../service-management/pr-instance-add/) service in the project by choosing the appropriate tariff plan (**Single**, **Cluster Mini**, **Cluster Maxi**):
 
    <details>
@@ -71,7 +71,7 @@ To deploy the VictoriaMetrics service in a project:
 
    1. At the “Настройки VictoriaMetrics” step:
 
-      - **Резервное копирование**: select the `no` option to not save data to the object storage [Cloud Storage](/en/base/s3). With the `yes` option, the data for the last 7 days will be copied.
+      - **Резервное копирование**: select the `no` option to not save data to the object storage [Cloud Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
       - **Сколько хранить все метрики**: specify the storage time of the metrics with the appropriate suffix: `h` (hour), `d` (day), `w` (week), `y` (year). If you do not specify a suffix, months are used as the unit of measurement. The minimum value is `24h` (`1d`), the default is `12` (12 months).
       - **Параметры дедупликаци**: specify the frequency of deleting the same metrics, use the suffixes `ms`, `s`, `m`, `h`. A metric is a collection of the metric itself and its metadata. For example, the metrics `cpu{host=hostname1}` and `cpu{host=hostname2}` are considered different. The default value is `1ms`.
 
@@ -94,7 +94,7 @@ To deploy the VictoriaMetrics service in a project:
 
    1. At the “Настройки VictoriaMetrics” step:
 
-      - **Резервное копирование**: select the `no` option to not save data to the object storage [Cloud Storage](/en/base/s3). With the `yes` option, the data for the last 7 days will be copied.
+      - **Резервное копирование**: select the `no` option to not save data to the object storage [Cloud Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
       - **Replication factor**: specify the number of copies of metrics that will be recorded in `vmstorage` on different VMs.
       - **Сколько хранить все метрики**: specify the storage time of the metrics with the appropriate suffix: `h` (hour), `d` (day), `w` (week), `y` (year). If you do not specify a suffix, months are used as the unit of measurement. The minimum value is `24h` (`1d`), the default is `12` (12 months).
       - **Параметры дедупликаци**: specify the frequency of deleting the same metrics, use the suffixes `ms`, `s`, `m`, `h`. A metric is a collection of the metric itself and its metadata. For example, the metrics `cpu{host=hostname1}` and `cpu{host=hostname2}` are considered different. The default value is `1ms`.
@@ -119,7 +119,7 @@ To deploy the VictoriaMetrics service in a project:
 
    1. На шаге «Настройки Кластера»:
 
-      - **Резервное копирование**: select the `no` option to not save data to the object storage [Cloud Storage](/en/base/s3). With the `yes` option, the data for the last 7 days will be copied.
+      - **Резервное копирование**: select the `no` option to not save data to the object storage [Cloud Storage](/en/storage/s3). With the `yes` option, the data for the last 7 days will be copied.
       - **Replication factor**: specify the number of copies of metrics that will be recorded in `vmstorage` on different VMs.
       - **Сколько хранить все метрики**: specify the storage time of the metrics with the appropriate suffix: `h` (hour), `d` (day), `w` (week), `y` (year). If you do not specify a suffix, months are used as the unit of measurement. The minimum value is `24h` (`1d`), the default is `12` (12 months).
       - **Параметры дедупликаци**: specify the frequency of deleting the same metrics, use the suffixes `ms`, `s`, `m`, `h`. A metric is a collection of the metric itself and its metadata. For example, the metrics `cpu{host=hostname1}` and `cpu{host=hostname2}` are considered different. The default value is `1ms`.

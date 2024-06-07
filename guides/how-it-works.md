@@ -70,9 +70,9 @@ Frontend-часть (движок документации) генерирует
 {
   "title": "Документация", ← заголовок главной страницы, отображается сверху на https://cloud.vk.com/docs
    "faqLinks": [ ← блок с часто задаваемыми вопросами, ссылки до наиболее популярных статей
-    "docs/ru/additionals/account/start/registration",
-    "docs/ru/additionals/billing",
-    "docs/ru/additionals/cases"
+    "docs/ru/tools-for-using-services/account/registration",
+    "docs/ru/intro/billing",
+    "docs/ru/cases"
   ],
   "serviceGroupLinks": [], ← deprecated
   "additionalUuids": [ "uuid1", "uuid2"], ← список uuid для редиректа на эту страницу; используется при полном удалении страницы из документации (примеры сервисов: IoT, SQS)
@@ -179,7 +179,7 @@ Frontend-часть (движок документации) генерирует
 
 Статья — страница, которая содержит основной контент. Если в папку не вложены другие папки (кроме папки `assets`), то страница считается статьей. Такая папка, кроме `.meta.json`, должна содержать `.md`-файл с разметкой статьи. Если в статье есть какие-то медиафайлы, то можно создать папку `assets` и положить их туда.
 
-Пример статьи [../docs/ru/base/iaas/instructions/vm-volumes](../docs/ru/base/iaas/instructions/volumes).
+Пример статьи [../docs/ru/base/iaas/service-management/vm-volumes](../docs/ru/base/iaas/service-management/volumes).
 
 Структура JSON-файла:
 
@@ -266,7 +266,7 @@ Frontend-часть (движок документации) генерирует
             "title": "ИНФОРМАЦИЯ", ← название блока
             "links": [ ← ссылки на разделы / подразделы / статьи
                 {
-                    "link": "docs/ru/additionals/account/start" ← ссылка на раздел / статью; всегда начинается с корня, т.е. с docs; автоматически берет актуальный заголовок страницы из указанного файла
+                    "link": "docs/ru/tools-for-using-services/accountstart" ← ссылка на раздел / статью; всегда начинается с корня, т.е. с docs; автоматически берет актуальный заголовок страницы из указанного файла
                 },
                 {
                     "link": "docs/ru/dbs/dbaas/dbaas-start"
@@ -275,7 +275,7 @@ Frontend-часть (движок документации) генерирует
                     "link": "docs/ru/dbs/dbaas"
                 },
                 {
-                    "link": "docs/ru/additionals/billing",
+                    "link": "docs/ru/intro/billing",
                     "hiddenForPartners": true ← скрывает ссылку для партнеров; исторически сложилось, что биллинг прячем от них
                 }
             ]

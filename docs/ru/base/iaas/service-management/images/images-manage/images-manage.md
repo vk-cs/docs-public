@@ -67,7 +67,7 @@
 
 Рекомендованный способ импорта образа — с использованием CLI.
 
-Размер загружаемого файла [ограничен](/ru/base/account/concepts/quotasandlimits#diski_i_obrazy_86fe464b).
+Размер загружаемого файла [ограничен](/ru/tools-for-using-services/account/concepts/quotasandlimits#diski_i_obrazy_86fe464b).
 
 </warn>
 
@@ -128,7 +128,7 @@
 </tabpanel>
 <tabpanel>
 
-1. [Получите](/ru/additionals/cases/case-keystone-token) токен доступа `X-Auth-Token`.
+1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
 1. Выполните команду:
 
    ```bash

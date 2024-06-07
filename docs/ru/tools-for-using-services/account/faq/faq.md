@@ -2,7 +2,7 @@
 
 <summary>Как зарегистрироваться в VK Cloud?</summary>
 
-Перейдите на [страницу VK Cloud](https://cloud.vk.com) и нажмите **Регистрация**. Заполните все необходимые поля, чтобы начать использовать учетную запись. Подробнее в статье [Регистрация в VK Cloud](/ru/additionals/start/account-registration).
+Перейдите на [страницу VK Cloud](https://cloud.vk.com) и нажмите **Регистрация**. Заполните все необходимые поля, чтобы начать использовать учетную запись. Подробнее в статье [Регистрация в VK Cloud](/ru/intro/start/account-registration).
 
 </details>
 

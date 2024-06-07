@@ -43,14 +43,14 @@
 Такой балансировщик создается пользователем и может использоваться для обеспечения отказоустойчивости и гибкого масштабирования приложений:
 
 - При работе с [сервисом Cloud Servers](/ru/base/iaas) для распределения входящего трафика между виртуальными серверами.
-- При работе с [сервисом Cloud Containers](/ru/base/k8s/), например при использовании [Ingress-контроллеров](/ru/base/k8s/use-cases/ingress) (в том числе [предустановленного](/ru/base/k8s/concepts/addons-and-settings/addons#ingress_controller_nginx_914e5637)) или сервисов типа [Load Balancer](/ru/base/k8s/use-cases/load-balancer).
+- При работе с [сервисом Cloud Containers](/ru/kubernetes/k8s/), например при использовании [Ingress-контроллеров](/ru/kubernetes/k8s/how-to-guides/ingress) (в том числе [предустановленного](/ru/kubernetes/k8s/concepts/addons-and-settings/addons#ingress_controller_nginx_914e5637)) или сервисов типа [Load Balancer](/ru/kubernetes/k8s/how-to-guides/load-balancer).
 
 </tabpanel>
 <tabpanel>
 
 Такой балансировщик создается автоматически для обеспечения работы сервисов и применяется:
 
-- В [сервисе Cloud Containers](/ru/base/k8s/) для каждого кластера Kubernetes, чтобы обеспечить доступ к Kubernetes API.
+- В [сервисе Cloud Containers](/ru/kubernetes/k8s/) для каждого кластера Kubernetes, чтобы обеспечить доступ к Kubernetes API.
 - В [сервисе Cloud Databases](/ru/dbs/dbaas/) для инстансов БД в кластерной конфигурации для балансировки нагрузки между узлами инстансов. Это применимо для инстансов:
   - MySQL;
   - PostgreSQL;

@@ -1,6 +1,6 @@
 ## Preparatory steps
 
-1. [Create](/en/base/s3/quick-start/create-bucket) in the object storage bucket, which will be used to store Docker images.
+1. [Create](/en/storage/s3/service-management/buckets/create-bucket) in the object storage bucket, which will be used to store Docker images.
 
    When creating, select:
 
@@ -18,7 +18,7 @@
    <tabpanel>
 
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects).
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects).
    1. Go to **Object storage → Buckets**.
    1. Click on the name of the created bucket.
    1. Go to **Keys** tab.
@@ -40,7 +40,7 @@
 
    Write down the output of the command (in the format `<login>:<encrypted password>`).
 
-1. [Add](/en/networks/vnet/operations/manage-floating-ip#adding_floating_ip_address_to_the_project) floating IP or [find](/en/networks/vnet/operations/manage-floating-ip#viewing_a_list_of_floating_ip_addresses) an existing unbound floating IP address.
+1. [Add](/en/networks/vnet/service-management/floating-ip#adding_floating_ip_address_to_the_project) floating IP or [find](/en/networks/vnet/service-management/floating-ip#viewing_a_list_of_floating_ip_addresses) an existing unbound floating IP address.
 
    Write down this IP address. It will be used to access the Docker registry.
 
@@ -78,7 +78,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    <tabpanel>
 
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
@@ -104,7 +104,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    <tabpanel>
 
-   1. [Install Terraform and configure the provider](/en/manage/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
+   1. [Install Terraform and configure the provider](/en/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
    1. Create a Terraform configuration file with data about the addon being installed in the `vkcs_kubernetes_addon` block:
 
       - [Get](../../manage-addons#addons_available_for_installation_467c6636) list of addons available for installation.
@@ -164,7 +164,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    <tabpanel>
 
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Find the cluster you need in the list.
 
@@ -190,7 +190,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    <tabpanel>
 
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.

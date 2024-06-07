@@ -6,8 +6,8 @@ Virtualization, monitoring, container, and data storage services can be deployed
     <summary>List of IaaS services</summary>
   
   - [Cloud Servers](/en/base/iaas) (IaaS Compute) — provides virtual machines with the ability to allocate public IP and unlimited traffic of 1 GBit/s (also [available](/en/ml/gpu) virtual machines with NVIDIA GPU). Responsible for virtualization and resource integration, uses the KVM hypervisor.
-  - [Cloud Storage](/en/base/s3) (IaaS Storage) — provides S3-compatible object storage. The workload on the storage is distributed among all storage nodes. You can deploy a storage with a custom architecture.
-  - [Cloud Networks](/en/networks/vnet) (IaaS Network) — provides network interaction within the selected [project](/en/base/account/concepts/projects) using SDN (Software Defined Network) technology. It operates on the basis of OpenStack Neutron and on the basis of proprietary software — Sprut. Includes components:
+  - [Cloud Storage](/en/storage/s3) (IaaS Storage) — provides S3-compatible object storage. The workload on the storage is distributed among all storage nodes. You can deploy a storage with a custom architecture.
+  - [Cloud Networks](/en/networks/vnet) (IaaS Network) — provides network interaction within the selected [project](/en/tools-for-using-services/account/concepts/projects) using SDN (Software Defined Network) technology. It operates on the basis of OpenStack Neutron and on the basis of proprietary software — Sprut. Includes components:
 
     - [DNS](/en/networks/dns) — supports public and private DNS, which provides name resolution for VK Cloud platform services.
     - [CDN](/en/networks/cdn) — organizes the transfer of content from your servers to users with minimal delay.
@@ -22,7 +22,7 @@ Virtualization, monitoring, container, and data storage services can be deployed
   <details>
     <summary>List of PaaS services</summary>
   
-  - [Cloud Containers](/en/base/k8s) — allows you to create and manage Kubernetes clusters in which you can run services and applications.
+  - [Cloud Containers](/en/kubernetes/k8s) — allows you to create and manage Kubernetes clusters in which you can run services and applications.
   - [Cloud Databases](/en/dbs/dbaas) — provides scalable DBMS: MySQL, PostgreSQL, Postgres Pro, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Arenadata DB based on Greenplum.
   - [Cloud Big Data](/en/bigdata/hortonworks) — used for big data analysis based on Arenadata Hadoop, supports scaling.
   - [Cloud Streams](/en/bigdata/cloud-streams) — provides Arenadata Streaming-based clusters for processing streaming data.
@@ -34,8 +34,8 @@ Virtualization, monitoring, container, and data storage services can be deployed
   - Monitoring — provides monitoring of metrics specific to PaaS services, for example, analytics on K8s container feeds, PostgreSQL DBMS transaction statistics.
   - Additional services:
 
-    - [1C:Ready workplace](/en/additionals/special/1cgrm) — provides resources and software for the deployment of 1C services: Accounting, Salary and Personnel Management, Management of our company.
-    - [Marketplace](/ru/additionals/mp) — allows you to quickly deploy web development and administration environments based on virtual machines.
+    - [1C:Ready workplace](/en/applications-and-services/1cgrm) — provides resources and software for the deployment of 1C services: Accounting, Salary and Personnel Management, Management of our company.
+    - [Marketplace](/ru/applications-and-services/marketplace) — allows you to quickly deploy web development and administration environments based on virtual machines.
 
   </details>
 
@@ -52,13 +52,13 @@ Virtualization, monitoring, container, and data storage services can be deployed
   
   </details>
 
-VK Cloud provides [technical support](/en/additionals/start/support/support-info) for its services. Partner solutions (for example, AntiDDoS, WAF) are supported jointly with a partner.
+VK Cloud provides [technical support](/en/intro/start/support/support-info) for its services. Partner solutions (for example, AntiDDoS, WAF) are supported jointly with a partner.
 
 The general scheme of VK Cloud components and services is shown below.
 
 ![](assets/vkcloud_architecture.png)
 
-Cloud services are managed using the API. Users interact with the API through one or more [tools](/en/manage/tools-for-using-services):
+Cloud services are managed using the API. Users interact with the API through one or more [tools](/en/tools-for-using-services):
 
 - VK Cloud personal account;
 - OpenStack CLI;
@@ -70,7 +70,7 @@ Physical fault tolerance is implemented by placing VK Cloud in two Tier III reli
 
 Network fault tolerance is provided by communication of data centers with routes with a bandwidth of 200 GB/sec. Communication of each server with backbone providers goes through two independent channels, through two routers.
 
-Logical fault tolerance is implemented using availability zones, which are combined into [regions](/en/base/account/concepts/regions).
+Logical fault tolerance is implemented using availability zones, which are combined into [regions](/en/tools-for-using-services/account/concepts/regions).
 
 <info>
 

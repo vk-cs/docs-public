@@ -1,6 +1,6 @@
 Description of how to create a cluster using Terraform is provided below. It is also possible to create a cluster [via VK Cloud personal account](../create-webui/).
 
-Ready-to-use examples of configuration files to create different clusters are listed in the [Terraform](/en/manage/terraform/use-cases/k8s/create) section.
+Ready-to-use examples of configuration files to create different clusters are listed in the [Terraform](/en/tools-for-using-services/terraform/how-to-guides/k8s/create) section.
 
 <warn>
 
@@ -18,7 +18,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
 1. Familiarize yourself with [Terraform features](../../helpers/terraform-howto/) in the container service.
 
-1. [Install Terraform and configure the provider](../../../../../manage/terraform/quick-start) if not already done.
+1. [Install Terraform and configure the provider](../../../../../tools-for-using-services/terraform/quick-start) if not already done.
 
 1. [Install the OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli/) and [authorize](/en/tools-for-using-services/cli/openstack-cli/), if not already done.
 

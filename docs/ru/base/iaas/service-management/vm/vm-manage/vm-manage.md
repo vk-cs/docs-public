@@ -23,7 +23,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
 
 2. Выполните одно из действий.
 
@@ -80,7 +80,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
 
 2. Выполните нужную команду.
 
@@ -145,7 +145,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
 
 2. Вызовите принудительный перезапуск ВМ:
 
@@ -211,7 +211,7 @@
       <details>
       <summary>Проверить политику удаления дисков — OpenStack CLI</summary>
 
-      1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+      1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
       2. Выполните команду:
 
@@ -261,7 +261,7 @@
 
    <tabpanel>
 
-   1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+   1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
    2. Удалите ВМ:
 
       ```bash
@@ -313,7 +313,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
 
 2. Выполните нужное действие.
 
@@ -363,7 +363,7 @@
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
 
 2. Выполните нужную команду.
 
@@ -469,7 +469,7 @@ systemctl status qemu-guest-agent
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
 
 2. Установите пароль:
 
@@ -493,7 +493,7 @@ systemctl status qemu-guest-agent
 
 <warn>
 
-Если после создания ВМ пароль был изменен или ВМ была создана в сети `ext-net`, [установите новый пароль](#ustanovka_i_izmenenie_parolya).
+Если после создания ВМ пароль был изменен или ВМ была создана во внешней сети, [установите новый пароль](#ustanovka_i_izmenenie_parolya).
 
 </warn>
 
@@ -542,15 +542,15 @@ systemctl status qemu-guest-agent
       ssh-keygen -y -f <имя файла с приватным ключом> > <имя файла с публичным ключом>
       ```
 
-   - Если утрачен файл с приватным ключом, [создайте новую ключевую пару](/base/account/account/keypairs/create).
+   - Если утрачен файл с приватным ключом, [создайте новую ключевую пару](/tools-for-using-services/account/service-management/account-manage/keypairs#sozdanie_klyuchevoy_pary).
 
 2. Создайте ссылку на файл с публичным ключом.
 
    1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
    2. Перейдите в раздел **Объектное хранилище → Бакеты**.
-   3. Используйте существующий бакет или [создайте новый](/base/s3/quick-start/create-bucket).
-   4. [Добавьте файл](/base/s3/quick-start/upload-object) с публичным ключом в бакет.
-   5. [Включите доступ](/base/s3/quick-start/object-access) по ссылке к этому файлу.
+   3. Используйте существующий бакет или [создайте новый](/ru/storage/s3/service-management/buckets/create-bucket).
+   4. [Добавьте файл](/ru/storage/s3/service-management/objects/upload-object) с публичным ключом в бакет.
+   5. [Включите доступ](/ru/storage/s3/service-management/objects/manage-object#predostavlenie_dostupa_k_obektu) по ссылке к этому файлу.
    6. Скопируйте ссылку на файл с публичным ключом.
 
 3. Загрузите публичный ключ на виртуальную машину.
@@ -592,7 +592,7 @@ systemctl status qemu-guest-agent
 
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте, если этого еще не сделано.
 
 2. Выполните нужную команду.
 

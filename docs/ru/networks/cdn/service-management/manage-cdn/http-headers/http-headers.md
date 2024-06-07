@@ -128,7 +128,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 ## Поддержка заголовков CORS
 
-Механизм [Cross-Origin Resource Sharing (CORS)](/ru/base/s3/references#cors) использует заголовок ответа Access-Control-Allow-Origin, чтобы браузер пользователя получал разрешения на доступ к ресурсам, которые находятся на доменах, отличных от исходного.
+Механизм [Cross-Origin Resource Sharing (CORS)](/ru/storage/s3/reference#cors) использует заголовок ответа Access-Control-Allow-Origin, чтобы браузер пользователя получал разрешения на доступ к ресурсам, которые находятся на доменах, отличных от исходного.
 
 Чтобы настроить HTTP-заголовок Access-Control-Allow-Origin:
 

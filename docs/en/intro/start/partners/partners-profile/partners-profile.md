@@ -24,7 +24,7 @@ The partner's personal account will be available at the URL https://cloud.vk.com
 
 <warn>
 
-If you have not been contacted within 48 hours, please contact the support service at the [contacts](/additionals/start/support/support-info#sposoby_obrashcheniya).
+If you have not been contacted within 48 hours, please contact the support service at the [contacts](/intro/start/support/support-info#sposoby_obrashcheniya).
 
 </warn>
 

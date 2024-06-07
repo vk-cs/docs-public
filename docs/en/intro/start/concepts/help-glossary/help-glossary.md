@@ -4,7 +4,7 @@ More terms can be found in the corresponding section:
 
 - [Cloud Servers](/en/base/iaas/concepts/about).
 - [Cloud Networks](/en/networks/vnet/concepts).
-- [Cloud Containers](/en/base/k8s/k8s-reference).
+- [Cloud Containers](/en/kubernetes/k8s/k8s-reference).
 
 </info>
 

@@ -1,10 +1,10 @@
-Cloud Storage предоставляет [RESTful XML API](/ru/additionals/api/s3-rest-api/) для программного управления хранимыми данными с помощью стандартных HTTP-запросов. API-интерфейс совместим с API-интерфейсом Amazon AWS S3, что позволяет взаимодействовать с сервисом, используя уже известные инструменты.
+Cloud Storage предоставляет [RESTful XML API](/ru/tools-for-using-services/api/api-spec/s3-rest-api/) для программного управления хранимыми данными с помощью стандартных HTTP-запросов. API-интерфейс совместим с API-интерфейсом Amazon AWS S3, что позволяет взаимодействовать с сервисом, используя уже известные инструменты.
 
 Основной протокол доступа к Cloud Storage — это протокол, созданный Amazon Web Services для сервиса AWS S3 (Simple Storage Service).
 
 Вы можете передавать команды Cloud Storage через клиент [AWS CLI](../../connect/s3-cli/).
 
-Перед началом работы с API создайте [аккаунт](/ru/base/s3/access-management/s3-account) и [бакет](/ru/base/s3/buckets/create-bucket), если этого не сделано ранее.
+Перед началом работы с API создайте [аккаунт](/ru/storage/s3/access-management/s3-account) и [бакет](ru/storage/s3/service-management/buckets/create-bucket), если этого не сделано ранее.
 
 <info>
 

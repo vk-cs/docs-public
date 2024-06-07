@@ -2,7 +2,7 @@ To record logs to the Cloud Logging service, you need the following credentials:
 
 - `user_id` — user name on whose behalf logs will be recorded;
 - `password` — password of the specified user;
-- `project_id` — [identifier](/en/manage/tools-for-using-services/rest-api/endpoints#getting_project_id) of your VK Cloud project in OpenStack.
+- `project_id` — [identifier](/en/tools-for-using-services/rest-api/endpoints#getting_project_id) of your VK Cloud project in OpenStack.
 
 To generate credentials for the service:
 

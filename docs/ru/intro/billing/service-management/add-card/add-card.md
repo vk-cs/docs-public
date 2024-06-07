@@ -2,7 +2,7 @@
 
 Карта может быть привязана к проекту:
 
-- при [регистрации](/ru/additionals/start/account-registration) аккаунта (если требуется);
+- при [регистрации](/ru/intro/start/account-registration) аккаунта (если требуется);
 - при [активации сервисов](/ru/tools-for-using-services/account/service-management/activation) в проекте (если требуется);
 - самостоятельно в любое время.
 
@@ -49,7 +49,7 @@
 
 <warn>
 
-В [регионе](/ru/base/account/concepts/regions) Казахстан автопополнение недоступно.
+В [регионе](/ru/tools-for-using-services/account/concepts/regions) Казахстан автопополнение недоступно.
 
 </warn>
 
@@ -80,6 +80,6 @@
 
 <info>
 
-Если вы юридическое лицо и работаете по предоплате, оставьте карту как дополнительное средство оплаты для срочных платежей. Это поможет избежать [заморозки](/ru/base/account/concepts/projects#avtomaticheskaya_zamorozka_proekta) проекта в случае несвоевременной оплаты. Списания по платежам с банковских карт не включаются в [закрывающие документы для юридических лиц](../../concepts/report#sostav_otchetnyh_dokumentov_a8388e6): УПД, акт сверки взаиморасчетов.
+Если вы юридическое лицо и работаете по предоплате, оставьте карту как дополнительное средство оплаты для срочных платежей. Это поможет избежать [заморозки](/ru/tools-for-using-services/account/concepts/projects#avtomaticheskaya_zamorozka_proekta) проекта в случае несвоевременной оплаты. Списания по платежам с банковских карт не включаются в [закрывающие документы для юридических лиц](../../concepts/report#sostav_otchetnyh_dokumentov_a8388e6): УПД, акт сверки взаиморасчетов.
 
 </info>

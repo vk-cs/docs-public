@@ -85,7 +85,7 @@ Several `.ovf` and `.vmdk` files will be created — a second file will be neede
 
 To load a VM image, use the OpenStack CLI to avoid possible errors when processing large files by the web interface.
 
-1. Make sure that the OpenStack client is [installed](/en/base/account/project/cli/setup) and you can [log in](/en/base/account/project/cli/authorization) to it.
+1. Make sure that the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli) and you can [log in](/en/tools-for-using-services/cli/openstack-cli) to it.
 2. Convert a disk file from VMDK format to RAW:
 
    ```bash

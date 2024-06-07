@@ -68,9 +68,9 @@
 </tabpanel>
 <tabpanel>
 
-- `s3_bucket`: имя бакета [Cloud Storage](/ru/base/s3), где будут храниться отчеты. Обязательный параметр.
+- `s3_bucket`: имя бакета [Cloud Storage](/ru/storage/s3), где будут храниться отчеты. Обязательный параметр.
 
-  Если бакета с таким именем не существует — [создайте его](/ru/base/s3/buckets/create-bucket).
+  Если бакета с таким именем не существует — [создайте его](ru/storage/s3/service-management/buckets/create-bucket).
 
   <warn>
 

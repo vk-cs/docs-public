@@ -14,7 +14,7 @@ Both types of scaling are performed manually. Also [can be customized](../../ser
 
 ## Current restrictions
 
-- Vertical scaling capabilities are limited by [current quotas](/en/base/account/concepts/quotasandlimits) and available [virtual machine templates](../flavors#configuration_templates).
+- Vertical scaling capabilities are limited by [current quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) and available [virtual machine templates](../flavors#configuration_templates).
 - Horizontal scaling capabilities are limited by the current quotas and the limit on the number of worker nodes in a separate node group: from 1 to 100 nodes.
 - It is not possible to perform horizontal scaling manually if automatic scaling is configured. To perform manual scaling, [turn off automatic scaling](../../service-management/scale#scaling_groups_of_worker_nodes_c172481b).
 

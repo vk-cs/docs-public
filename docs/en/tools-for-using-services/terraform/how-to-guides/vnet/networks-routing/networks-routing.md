@@ -15,11 +15,11 @@ The infrastructure of the example:
 
 ## Before you start
 
-1. Check out the available resources and [quotas](/en/base/account/concepts/quotasandlimits) for the [region](/en/base/account/concepts/regions) in which you plan to create a cluster. Different quotas can be set up for different regions.
+1. Check out the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) in which you plan to create a cluster. Different quotas can be set up for different regions.
 
    If you want to increase quotas, contact [technical support](/en/contacts).
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 1. [Install Terraform and configure the provider](../../../quick-start), if not already done.
 
@@ -94,7 +94,7 @@ The infrastructure of the example:
    </tabpanel>
    <tabpanel>
 
-   From the document on [availability zones](/en/additionals/start/architecture#availability_zones_567cfd7a).
+   From the document on [availability zones](/en/intro/start/architecture#availability_zones_567cfd7a).
 
    </tabpanel>
    </tabs>

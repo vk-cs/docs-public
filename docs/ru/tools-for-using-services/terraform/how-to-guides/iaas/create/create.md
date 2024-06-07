@@ -4,7 +4,7 @@
 
 ## Подготовительные шаги
 
-1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/base/account/concepts/quotasandlimits) для [региона](/ru/base/account/concepts/regions), в котором планируется создать ВМ. Для разных регионов могут быть настроены разные квоты.
+1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits) для [региона](/ru/tools-for-using-services/account/concepts/regions), в котором планируется создать ВМ. Для разных регионов могут быть настроены разные квоты.
 
     Если вы хотите увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
 
@@ -12,7 +12,7 @@
 
     Поместите настройки провайдера в файл конфигурации Terraform `provider.tf`.
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 1. Создайте файл конфигурации Terraform `variables.tf` с переменными:
 
@@ -100,7 +100,7 @@
    </tabpanel>
    <tabpanel>
 
-   В статье о [зонах доступности](/ru/additionals/start/architecture#az).
+   В статье о [зонах доступности](/ru/intro/start/architecture#az).
 
    </tabpanel>
    </tabs>

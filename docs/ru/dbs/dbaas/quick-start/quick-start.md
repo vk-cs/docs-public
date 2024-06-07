@@ -176,7 +176,7 @@
 ## 1. Создайте инстанс БД PostgreSQL
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Выберите [проект](/ru/base/account/concepts/projects), в котором будет размещен инстанс БД.
+1. Выберите [проект](/ru/tools-for-using-services/account/concepts/projects), в котором будет размещен инстанс БД.
 1. Перейдите в раздел **Базы данных → Инстансы баз данных**.
 1. Если в выбранном проекте нет ни одного инстанса БД, нажмите кнопку **Создать базу данных**.
 
@@ -592,4 +592,4 @@ tsdb1=>
 Инстанс БД [тарифицируется](../tariffication) и потребляет вычислительные ресурсы. Если он вам больше не нужен:
 
 1. Удалите инстанс БД.
-1. При необходимости [удалите плавающий IP-адрес](/ru/networks/vnet/operations/manage-floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta), назначенный инстансу БД. Присутствующие в проекте плавающие IP-адреса [тарифицируются](/ru/networks/vnet/tariffs).
+1. При необходимости [удалите плавающий IP-адрес](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta), назначенный инстансу БД. Присутствующие в проекте плавающие IP-адреса [тарифицируются](/ru/networks/vnet/tariffs).
