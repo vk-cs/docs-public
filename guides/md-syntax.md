@@ -1,6 +1,6 @@
 # Синтаксис Extended Markdown
 
-Итоговое отображение элементов есть в статье [О портале документации](https://cloud.vk.com/docs/additionals/start/about-help).
+Итоговое отображение элементов есть в статье [О портале документации](https://cloud.vk.com/docs/intro/start/about-help).
 
 ### Заголовки
 
@@ -169,7 +169,7 @@
 Относительная внутренняя ссылка (для ссылок на страницы внутри документации):
 
 ```md
-[Видимый текст ссылки](/ru/additionals/start)
+[Видимый текст ссылки](/ru/in/start)
 ```
 
 Внешняя ссылка:
@@ -314,7 +314,7 @@ console.log('Hello World');
 
 ![Альтернативный текст](./assets/swagger_spec.png)
 
-Больше примеров можно найти в разделе с [описанием API](https://cloud.vk.com/docs/additionals/api).
+Больше примеров можно найти в разделе с [описанием API](https://cloud.vk.com/docs/tools-for-using-services/api).
 
 ### Символы, которые требуется экранировать
 

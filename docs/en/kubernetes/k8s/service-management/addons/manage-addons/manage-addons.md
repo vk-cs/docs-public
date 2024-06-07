@@ -12,7 +12,7 @@
 <tabpanel>
 
 1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the desired cluster.
 1. Go to **Addons** tab.
@@ -25,7 +25,7 @@
 </tabpanel>
 <tabpanel>
 
-1. [Install Terraform and configure the provider](/en/manage/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
+1. [Install Terraform and configure the provider](/en/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
 1. Create a Terraform configuration file by specifying the cluster ID in the [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md) block.
 1. Apply the configuration for the `vcs_kubernetes_addons` data source using the command:
 
@@ -54,7 +54,7 @@
 <tabpanel>
 
 1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the desired cluster.
 1. Go to **Addons** tab.
@@ -67,7 +67,7 @@
 </tabpanel>
 <tabpanel>
 
-1. [Install Terraform and configure the provider](/en/manage/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
+1. [Install Terraform and configure the provider](/en/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
 1. Create a Terraform configuration file by specifying the cluster ID in the [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) block.
 1. Apply the configuration for the `vcs_kubernetes_addon` data source using the command:
 
@@ -107,7 +107,7 @@ The procedure for installing addons is discussed in the [relevant section](../ad
 <tabpanel>
 
 1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the desired cluster.
 1. Go to **Addons** tab.
@@ -157,7 +157,7 @@ To update some addons, you will first need to uninstall the previous version.
 <tabpanel>
 
 1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the desired cluster.
 1. Go to **Addons** tab.
@@ -204,7 +204,7 @@ This is a group operation: if necessary, you can delete several addons at once b
 To remove the addon:
 
 1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the desired cluster.
 1. Go to **Addons** tab.
@@ -218,7 +218,7 @@ To remove the addon:
 </tabpanel>
 <tabpanel>
 
-1. [Install Terraform and configure the provider](/en/manage/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
+1. [Install Terraform and configure the provider](/en/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
 1. In the Terraform configuration file, delete or comment out the block with the addons to be deleted.
 1. Check out the planned changes:
 

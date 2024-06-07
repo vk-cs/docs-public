@@ -21,7 +21,7 @@
 
    <info>
 
-   Для экономии времени вы можете за несколько минут [создать кластер Kubernetes](../../../../base/k8s/operations/create-cluster) в VK Cloud.
+   Для экономии времени вы можете за несколько минут [создать кластер Kubernetes](../../../../kubernetes/k8s/service-management/create-cluster) в VK Cloud.
 
    </info>
 

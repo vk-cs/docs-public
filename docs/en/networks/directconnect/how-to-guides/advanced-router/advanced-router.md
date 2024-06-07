@@ -7,7 +7,7 @@ To show the configuration of an advanced router, two independent networks will b
 
 ## Preparation steps
 
-1. Make sure the OpenStack client is [installed](../../../../manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](../../../../manage/tools-for-using-services/openstack-cli#3_complete_authentication) in the project.
+1. Make sure the OpenStack client is [installed](../../../../tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](../../../../tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
 
 1. Select a client network in your local infrastructure:
 
@@ -30,7 +30,7 @@ To show the configuration of an advanced router, two independent networks will b
    In this case, we will use a network with a virtual machine Router OS 7.10 (MikroTik), performing the functions of a BGP router.
    </info>
 
-1. Select or [create](../../operations/manage-net#creating_a_network) a virtual network with Internet access in VK Cloud. Use an existing router with an external network connection or [create](/en/networks/vnet/operations/router#adding_a_router) a new one.
+1. Select or [create](../../service-management/net#creating_a_network) a virtual network with Internet access in VK Cloud. Use an existing router with an external network connection or [create](/en/networks/vnet/service-management/router#adding_a_router) a new one.
 
    Note the following:
 
@@ -59,7 +59,7 @@ In this case the following data is used:
 
 The scheme for preparation of networks looks like this:
 
-![Scheme for preparation of networks](/en/networks/directconnect/use-cases/advanced-router/assets/advanced-router-before.png)
+![Scheme for preparation of networks](/en/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-before.png)
 
 ## 1. Creating an advanced router
 
@@ -303,12 +303,12 @@ The IP address must respond to ping.
 
 The structured interaction between the networks and the VMs within networks looks like this:
 
-![The interaction between networks scheme](/en/networks/directconnect/use-cases/advanced-router/assets/advanced-router-after.png)
+![The interaction between networks scheme](/en/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-after.png)
 
 ## Delete unused resources
 
 If you no longer need the created resources, delete them:
 
 1. [Delete](../../../../base/iaas/service-management/vm/vm-manage#deleting_a_vm) the virtual machine.
-1. [Delete](/en/networks/vnet/operations/router#removing_the_router) routers.
-1. Delete the [subnet](/en/networks/vnet/operations/net#deleting_a_network) and the [network](/en/networks/vnet/operations/net#deleting_a_subnet).
+1. [Delete](/en/networks/vnet/service-management/router#removing_the_router) routers.
+1. Delete the [subnet](/en/networks/vnet/service-management/net#deleting_a_network) and the [network](/en/networks/vnet/service-management/net#deleting_a_subnet).

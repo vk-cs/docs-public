@@ -130,7 +130,7 @@
 
 В VK Cloud можно подключить сервис приоритетной поддержки (Managed Services) от экспертов VK Cloud. Чтобы воспользоваться этим сервисом, оставьте заявку [на сайте](https://cloud.vk.com/professional-services/).
 
-Также ознакомьтесь с [полным перечнем услуг Managed Services](/ru/additionals/start/support/support-info#individualnaya_podderzhka).
+Также ознакомьтесь с [полным перечнем услуг Managed Services](/ru/intro/start/support/support-info#individualnaya_podderzhka).
 
 </details>
 

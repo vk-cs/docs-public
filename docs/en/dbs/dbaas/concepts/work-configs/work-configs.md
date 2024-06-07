@@ -1,6 +1,6 @@
 There are three types of DBMS instance configurations available on the VK Cloud platform. The configuration type determines how many DB instances will be created and their architecture.
 
-For any type of configuration, a replica can be created — an additional instance for [replication](../../instructions/replication/). The replica disk type and its size may differ from the master and is set separately.
+For any type of configuration, a replica can be created — an additional instance for [replication](../../service-management/replication/). The replica disk type and its size may differ from the master and is set separately.
 
 The replica can be converted to a master. In this case, replication will stop, and the instance will turn into an independent master instance, available for reading and writing. The new master instance will contain the same data as the replica before conversion to the master.
 

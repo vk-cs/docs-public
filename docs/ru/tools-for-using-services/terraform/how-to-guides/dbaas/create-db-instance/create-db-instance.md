@@ -2,7 +2,7 @@
 
 ## Подготовительные шаги
 
-1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/base/account/concepts/quotasandlimits) для [региона](/ru/base/account/concepts/regions), в котором планируете создать инстанс БД. Для разных регионов могут быть настроены разные квоты.
+1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits) для [региона](/ru/tools-for-using-services/account/concepts/regions), в котором планируете создать инстанс БД. Для разных регионов могут быть настроены разные квоты.
 
    Если вы хотите увеличить квоты, обратитесь в [техническую поддержку](/ru/contacts).
 
@@ -14,8 +14,8 @@
 
 Во всех примерах ниже инстансы БД создаются со следующими свойствами:
 
-- [Регион](/ru/base/account/concepts/regions): по умолчанию (совпадает с регионом проекта).
-- [Зона доступности](/ru/additionals/start/architecture#az): по умолчанию (для региона Москва — `GZ1`).
+- [Регион](/ru/tools-for-using-services/account/concepts/regions): по умолчанию (совпадает с регионом проекта).
+- [Зона доступности](/ru/intro/start/architecture#az): по умолчанию (для региона Москва — `GZ1`).
 - Тип СУБД и версия: MySQL 8.0.
 - [Конфигурация](/ru/dbs/dbaas/concepts/work-configs) инстанса БД: **Single**.
 - Внешний IP-адрес: назначен.
@@ -337,11 +337,11 @@ resource "vkcs_db_user" "db-user" {
 
 [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud, в раздел **Базы данных** → **Инстансы баз данных**. Убедитесь, что все описанные в конфигурации объекты были успешно созданы:
 
-- [Инстанс БД](/ru/dbs/dbaas/instructions/manage-instance/mysql#poluchenie_informacii_ob_instanse_bd_i_ego_hostah).
+- [Инстанс БД](/ru/dbs/dbaas/service-management/manage-instance/mysql#poluchenie_informacii_ob_instanse_bd_i_ego_hostah).
 - Внешний IP-адрес для инстанса — отображается на странице инстанса.
-- Расширение [Prometheus Node exporter](/ru/dbs/dbaas/instructions/managing-extensions#192-tabpanel-1) (если было установлено) — отображается на странице инстанса на вкладке **Расширения**.
+- Расширение [Prometheus Node exporter](/ru/dbs/dbaas/service-management/managing-extensions#192-tabpanel-1) (если было установлено) — отображается на странице инстанса на вкладке **Расширения**.
 - БД на инстансе (если была создана) — отображается на странице инстанса на вкладке **Список баз данных**.
-- [Пользователь БД](/ru/dbs/dbaas/instructions/users#prosmotr_spiska_polzovateley) (если был создан) — отображается на странице инстанса на вкладке **Пользователи**.
+- [Пользователь БД](/ru/dbs/dbaas/service-management/users#prosmotr_spiska_polzovateley) (если был создан) — отображается на странице инстанса на вкладке **Пользователи**.
 
 ## Удалите неиспользуемые ресурсы
 

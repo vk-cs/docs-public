@@ -46,7 +46,7 @@ A number of services may have their own terms for freezing and deleting objects.
 
     When objects are blocked, write-offs for them stop. There is no access to objects, including read access. 30 days after switching to this state, if the positive balance is not restored, the objects are deleted.
 
-For more information about the service, see [Object storage](/en/base/s3).
+For more information about the service, see [Object storage](/en/storage/s3).
 
 </details>
 

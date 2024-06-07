@@ -11,11 +11,11 @@ To show how to configure a secure connection with virtual desktops:
 
 ## Preparation steps
 
-1. Make sure the OpenStack client is [installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) in the project.
+1. Make sure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the project.
 
 1. Create an LDAP environment:
 
-    1. Select or [create](/en/networks/vnet/operations/manage-net#creating_a_network) a virtual network with the Internet access in VK Cloud. Use an existing router with a connection to an external network or [create](/en/networks/vnet/operations/manage-router#adding_a_router) a new one.
+    1. Select or [create](/en/networks/vnet/service-management/net#creating_a_network) a virtual network with the Internet access in VK Cloud. Use an existing router with a connection to an external network or [create](/en/networks/vnet/service-management/router#adding_a_router) a new one.
 
         Write down the following:
 
@@ -28,7 +28,7 @@ To show how to configure a secure connection with virtual desktops:
 
 1. Create a VDI environment:
 
-    1. In VK Cloud, select or [create](/en/networks/vnet/operations/manage-net#creating_a_network) a virtual network with the Internet access, which will serve as a transit network. Use an existing router with a connection to an external network or [create](/en/networks/vnet/operations/manage-router#adding_a_router) a new one.
+    1. In VK Cloud, select or [create](/en/networks/vnet/service-management/net#creating_a_network) a virtual network with the Internet access, which will serve as a transit network. Use an existing router with a connection to an external network or [create](/en/networks/vnet/service-management/router#adding_a_router) a new one.
 
         Write down the following:
 
@@ -84,7 +84,7 @@ Scheme of preliminary preparation of networks:
 
 ## 1. Set up a VPN tunnel on the AD/LDAP side
 
-In your personal account [create a VPN](/en/networks/vnet/operations/manage-vpn) with the following parameters:
+In your personal account [create a VPN](/en/networks/vnet/service-management/vpn) with the following parameters:
 
 1. At the “IKE Configuration” step, specify the algorithms for the primary IPsec connection:
 
@@ -436,7 +436,7 @@ To ensure traffic passes correctly through the VPN tunnel, add a number of setti
 
 ## 11. Check if VDI is able to connect to LDAP
 
-1. [Create](/en/networks/vnet/operations/manage-net#creating_a_network) a virtual network with CIDR `10.55.4.0/22` and router `vdi-router`. This network simulates a VDI network and is needed to test the network connection. When you deploy VDI, this network is created automatically.
+1. [Create](/en/networks/vnet/service-management/net#creating_a_network) a virtual network with CIDR `10.55.4.0/22` and router `vdi-router`. This network simulates a VDI network and is needed to test the network connection. When you deploy VDI, this network is created automatically.
 
 1. Create a test [virtual machine](/en/base/iaas/service-management/vm/vm-create) on the `10.55.4.0/22` network and connect to it via SSH.
 
@@ -457,6 +457,6 @@ Scheme of the built interaction between networks and machines within networks:
 If you no longer need the created resources, delete them:
 
 1. [Delete](/en/base/iaas/service-management/vm/vm-manage#deleting_a_vm) the virtual machines.
-1. [Delete](/en/networks/vnet/operations/manage-vpn#removing_a_vpn_tunnel) the VPN tunnel.
-1. [Delete](/en/networks/vnet/operations/manage-router#removing_the_router) the routers.
-1. Delete the [subnet](/en/networks/vnet/operations/manage-net#deleting_a_subnet) and the [network](/en/networks/vnet/operations/manage-net#deleting_a_network) in which the VM is located.
+1. [Delete](/en/networks/vnet/service-management/vpn#removing_a_vpn_tunnel) the VPN tunnel.
+1. [Delete](/en/networks/vnet/service-management/router#removing_the_router) the routers.
+1. Delete the [subnet](/en/networks/vnet/service-management/net#deleting_a_subnet) and the [network](/en/networks/vnet/service-management/net#deleting_a_network) in which the VM is located.

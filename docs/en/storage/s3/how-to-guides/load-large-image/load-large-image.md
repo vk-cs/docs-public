@@ -1,4 +1,4 @@
-VK Cloud [has restrictions](/en/base/account/concepts/quotasandlimits) on the size of uploaded images of operating systems. If the limit is exceeded, a message appears like:
+VK Cloud [has restrictions](/en/tools-for-using-services/account/concepts/quotasandlimits) on the size of uploaded images of operating systems. If the limit is exceeded, a message appears like:
 
 ```txt
 An error occurred (InvalidArgument) when calling the UploadPart operation: Part number must be an integer between 1 and 10000, inclusive
@@ -22,8 +22,8 @@ Will be used:
 
    To migrate a VM with UEFI emulation, use [Hystax](/en/additionals/hystax/migration) or transfer data to a new Hyper-V VM with BIOS emulation.
 
-1. Create an [account](/en/base/s3/access-management/s3-account) and [bucket](/en/base/s3/buckets/create-bucket) `uc_bucket`.
-1. Make sure that you have [installed and configured](/en/base/s3/storage-connecting/s3-cli) AWS CLI. Specify the data for connecting to the bucket in it (`Access key ID` and `Secret key`). Open the configuration file `~/.aws/config` and make changes to it:
+1. Create an [account](/en/storage/s3/access-management/s3-account) and [bucket](/en/storage/s3/service-management/buckets/create-bucket) `uc_bucket`.
+1. Make sure that you have [installed and configured](/en/storage/s3/storage-connecting/s3-cli) AWS CLI. Specify the data for connecting to the bucket in it (`Access key ID` and `Secret key`). Open the configuration file `~/.aws/config` and make changes to it:
 
    ```txt
    [default]

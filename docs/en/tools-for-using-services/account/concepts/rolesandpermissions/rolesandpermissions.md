@@ -109,7 +109,7 @@ Permissions are the privileges for viewing (**R** in the table below) or editing
 
 ## Roles for the Containers service and their permissions
 
-The following user roles are intended for working with the [Сontainers service](/en/base/k8s):
+The following user roles are intended for working with the [Сontainers service](/en/kubernetes/k8s):
 
 - Kubernetes administrator,
 - Kubernetes operator,
@@ -119,7 +119,7 @@ The operations available to Kubernetes administrator are also available to Proje
 
 For other roles these operations are unavailable.
 
-For Kubernetes clusters of version 1.23 and later, the role of a Kubernetes administrator, operator, or auditor also defines the internal [Kubernetes role](/en/base/k8s/concepts/access-management#relationship_between_the_roles_of_personal_account_and_kubernetes) (`admin`, `edit`, or `view`) assigned to the user.
+For Kubernetes clusters of version 1.23 and later, the role of a Kubernetes administrator, operator, or auditor also defines the internal [Kubernetes role](/en/kubernetes/k8s/concepts/access-management#relationship_between_the_roles_of_personal_account_and_kubernetes) (`admin`, `edit`, or `view`) assigned to the user.
 
 <info>
 

@@ -1,4 +1,4 @@
-Регион — географическая область, объединяющая [зоны доступности](/ru/additionals/start/architecture#az).
+Регион — географическая область, объединяющая [зоны доступности](/ru/intro/start/architecture#az).
 
 Регион назначается каждому [проекту](../projects) автоматически и зависит от URL сайта, на котором владелец проекта [зарегистрировал](/ru/intro/start/account-registration) свой аккаунт.
 
@@ -41,11 +41,11 @@ https://kz.cloud.vk.com
 
 - набор доступных сервисов;
 - набор [квот](../quotasandlimits);
-- адреса [эндпоинтов VK Cloud API](/ru/manage/tools-for-using-services/rest-api);
-- имя региона в файлах конфигурации [openrc](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) и [Terraform](/ru/manage/tools-for-using-services/terraform/quick-start).
+- адреса [эндпоинтов VK Cloud API](/ru/tools-for-using-services/rest-api);
+- имя региона в файлах конфигурации [openrc](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) и [Terraform](/ru/tools-for-using-services/terraform/quick-start).
 
 <warn>
 
-Объединить виртуальные сети проектов из разных регионов стандартными способами невозможно. Сетевую связность между такими проектами можно настроить при помощи [VPN-туннеля](/ru/networks/vnet/use-cases/vpn-tunnel).
+Объединить виртуальные сети проектов из разных регионов стандартными способами невозможно. Сетевую связность между такими проектами можно настроить при помощи [VPN-туннеля](/ru/networks/vnet/how-to-guides/vpn-tunnel).
 
 </warn>

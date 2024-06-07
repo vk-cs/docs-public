@@ -1,10 +1,10 @@
-In your personal account, you can view the addresses of the available API endpoints. The list and addresses of endpoints differ between [regions](/en/base/account/concepts/regions).
+In your personal account, you can view the addresses of the available API endpoints. The list and addresses of endpoints differ between [regions](/en/tools-for-using-services/account/concepts/regions).
 
-To work with VK Cloud via the API [activate API access](../enable-api). Read more about working with services in the section [Справка API](/ru/additionals/api "change-lang").
+To work with VK Cloud via the API [activate API access](../enable-api). Read more about working with services in the section [Справка API](/ru/tools-for-using-services/api "change-lang").
 
 ## Viewing the list of endpoints
 
-The list is available to all users, regardless of their [role](/en/base/account/concepts/rolesandpermissions) if [services are activated](/en/tools-for-using-services/account/service-management/activation) in the project.
+The list is available to all users, regardless of their [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) if [services are activated](/en/tools-for-using-services/account/service-management/activation) in the project.
 
 To see the list of endpoints for your region:
 
@@ -21,7 +21,7 @@ To see the list of endpoints for your region:
 | Nova              | https://infra.mail.ru:8774/v2.1                     | Managing [virtual machines](/en/base/iaas/service-management/vm) |
 | Cinder            | https://public.infra.mail.ru:8776/v3/<project_id>   | Managing [disks](/en/base/iaas/service-management/volumes) and their snapshots |
 | Glance            | https://infra.mail.ru:9292                          | Managing [VM images](/en/base/iaas/service-management/images) |
-| Karboii           | https://mcs.mail.ru/infra/karboii/v1                | Managing [backups](/en/manage/backups/api-examples) of VMs and database instances |
+| Karboii           | https://mcs.mail.ru/infra/karboii/v1                | Managing [backups](/en/storage/backups/api-examples) of VMs and database instances |
 | Manila            | https://public.infra.mail.ru:8786/v2/<project_id>   | Managing [file shares](/en/base/iaas/service-management/fs-manage) |
 
 <info>
@@ -36,15 +36,15 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
-| Magnum            | https://infra.mail.ru:9511/v1                       | Managing [containers](/en/base/k8s) |
-| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Managing container [addons](/en/base/k8s/operations/addons) |
+| Magnum            | https://infra.mail.ru:9511/v1                       | Managing [containers](/en/kubernetes/k8s) |
+| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Managing container [addons](/en/kubernetes/k8s/service-management/addons) |
 
 ### Virtual networks
 
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
 | Neutron           | https://infra.mail.ru:9696                          | Managing all [network infrastructure](/en/networks/vnet) objects, except public DNS zones and load balancers |
-| Octavia           | https://public.infra.mail.ru:9876                   | Managing [load balancers](/en/networks/vnet/operations/manage-lb) |
+| Octavia           | https://public.infra.mail.ru:9876                   | Managing [load balancers](/en/networks/balancing/service-management) |
 | Publicdns         | https://mcs.mail.ru/public-dns                      | Managing [public DNS zones](/en/networks/dns/publicdns) |
 
 ### Cloud Big Data
@@ -63,7 +63,7 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 
 | Endpoint                            | Address                          | Purpose |
 |-------------------------------------|----------------------------------|--|
-| Домен Cloud Storage                 | https://hb.ru-msk.vkcs.cloud/    | Managing [Object storage](/en/base/s3) |
+| Домен Cloud Storage                 | https://hb.ru-msk.vkcs.cloud/    | Managing [Object storage](/en/storage/s3) |
 
 ### AI API
 
@@ -85,7 +85,7 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 | Barbican          | https://public.infra.mail.ru:9311                   | A protected storage for secrets (SSH keys, Keystone tokens, TLS certificates) |
 | Gnocchi           | https://infra.mail.ru:8041                          | Gathering VM metrics (metric examples: the amount of resources available to a VM, VM resource usage) |
 | Keystone          | https://infra.mail.ru:35357/v3/                     | Managing project users, user authentication via [tokens](../case-keystone-token) |
-| Quota-manager     | https://mcs.mail.ru/quota-manager                   | Viewing project [quotas](/en/base/account/concepts/quotasandlimits) |
+| Quota-manager     | https://mcs.mail.ru/quota-manager                   | Viewing project [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) |
 | Heat              | https://infra.mail.ru:8004/v1/<project_id>          | Cloud services orchestration (deprecated)
 
 </details>

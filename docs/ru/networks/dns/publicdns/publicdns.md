@@ -2,7 +2,7 @@
 
 ## Настройка ролевой модели
 
-Для работы с публичным DNS настройте [роли](/ru/base/account/concepts/rolesandpermissions) для пользователей [личного кабинета](https://msk.cloud.vk.com/app/) VK Cloud:
+Для работы с публичным DNS настройте [роли](/ru/tools-for-using-services/account/concepts/rolesandpermissions) для пользователей [личного кабинета](https://msk.cloud.vk.com/app/) VK Cloud:
 
 - Роль для просмотра DNS-зон и ресурсных записей:
 
@@ -35,7 +35,7 @@
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методом](/ru/additionals/api/api-dns) `GET /v2/dns/`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `GET /v2/dns/`.
 
 Пример запроса:
 
@@ -106,7 +106,7 @@ DNS-зона — логическое объединение доменных и
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методом](/ru/additionals/api/api-dns) `POST /v2/dns/`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `POST /v2/dns/`.
 
 Пример запроса:
 
@@ -175,7 +175,7 @@ content-length: 319
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методом](/ru/additionals/api/api-dns) `GET /v2/dns/<dns-uuid>`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `GET /v2/dns/<dns-uuid>`.
 
 Пример запроса:
 
@@ -228,7 +228,7 @@ content-length: 321
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методом](/ru/additionals/api/api-dns) `PUT /v2/dns/<dns-uuid>`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `PUT /v2/dns/<dns-uuid>`.
 
 Пример запроса:
 
@@ -311,7 +311,7 @@ content-length: 330
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методом](/ru/additionals/api/api-dns) `DELETE /v2/dns/<dns-uuid>`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-dns) `DELETE /v2/dns/<dns-uuid>`.
 
 Пример запроса:
 
@@ -463,7 +463,7 @@ VK Cloud поддерживает типы ресурсных записей:
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методами](/ru/additionals/api/api-dns) из спецификации API.
+Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
 
 Примеры запросов:
 
@@ -720,7 +720,7 @@ content-length: 167
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методами](/ru/additionals/api/api-dns) из спецификации API.
+Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
 
 Примеры запросов:
 
@@ -987,7 +987,7 @@ content-length: 169
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методами](/ru/additionals/api/api-dns) из спецификации API.
+Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
 
 Примеры запросов:
 
@@ -1214,7 +1214,7 @@ content-length: 167
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методами](/ru/additionals/api/api-dns) из спецификации API.
+Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
 
 Примеры запросов:
 
@@ -1450,7 +1450,7 @@ content-length: 171
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методами](/ru/additionals/api/api-dns) из спецификации API.
+Воспользуйтесь [методами](/ru/tools-for-using-services/api/api-spec/api-dns) из спецификации API.
 
 <details>
     <summary>A</summary>

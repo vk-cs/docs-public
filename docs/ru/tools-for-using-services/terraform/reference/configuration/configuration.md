@@ -54,7 +54,7 @@ provider "vkcs" {
   - `password`: укажите пароль от вашей учетной записи;
   - `username`, `project_id`, `region`: значения, указанные в скачанном через личный кабинет файле, валидны для работы с текущим проектом. Эти значения также указаны на странице [Настройки проекта](https://msk.cloud.vk.com/app/project/terraform) на вкладке **Terraform**.
 
-Значения некоторых параметров зависят от [региона](/ru/base/account/concepts/regions):
+Значения некоторых параметров зависят от [региона](/ru/tools-for-using-services/account/concepts/regions):
 
 - `region`:
 

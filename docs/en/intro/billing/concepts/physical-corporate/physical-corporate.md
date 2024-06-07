@@ -16,7 +16,7 @@ If you plan to work with VK Cloud as a legal entity, go through [pre-registratio
 
 ### Prepayment
 
-The user [deposits](../../service-management/payment#making_a_payment) the project balance in advance for a certain amount. The deposited funds are transferred to the main account of the project, from where they are then spent on paying for services. If a project goes into negative territory, it is automatically [frozen](/en/base/account/concepts/projects#automatic_freezing_of_the_project) until the balance becomes positive.
+The user [deposits](../../service-management/payment#making_a_payment) the project balance in advance for a certain amount. The deposited funds are transferred to the main account of the project, from where they are then spent on paying for services. If a project goes into negative territory, it is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project) until the balance becomes positive.
 
 <tabs>
 <tablist>
@@ -39,7 +39,7 @@ When working on prepayment, only a universal transfer document is provided to a 
 
 ### Post-payment
 
-The user is billed once a month for using the services, which he pays for. The project balance under this scheme is always negative, but the project is not [frozen](/en/base/account/concepts/projects#automatic_freezing_of_the_project).
+The user is billed once a month for using the services, which he pays for. The project balance under this scheme is always negative, but the project is not [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
 
 <tabs>
 <tablist>
@@ -69,19 +69,19 @@ When working on post-payment, only a universal transfer document is provided to 
 </tablist>
 <tabpanel>
 
-Individuals work with the platform under [public offer agreements](/en/additionals/start/legal) relevant services. On the part of VK Cloud, public offer agreements are concluded:
+Individuals work with the platform under [public offer agreements](/en/intro/start/legal) relevant services. On the part of VK Cloud, public offer agreements are concluded:
 
-- for projects in [region](/en/base/account/concepts/regions) Moscow — on behalf of “VK” LLC, registered in the Russian Federation;
+- for projects in [region](/en/tools-for-using-services/account/concepts/regions) Moscow — on behalf of “VK” LLC, registered in the Russian Federation;
 - for projects in the region of Kazakhstan — on behalf of “QazCloud” LLP, registered in Kazakhstan.
 
 </tabpanel>
 <tabpanel>
 
-Legal entities work with VK Cloud either on the basis of contracts [public offer](/en/additionals/start/legal/) of the relevant services, or under an individual contract.
+Legal entities work with VK Cloud either on the basis of contracts [public offer](/en/intro/start/legal/) of the relevant services, or under an individual contract.
 
 For all questions related to contracts, please contact the VK Cloud Document management department:
 
-- in [region](/en/base/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
+- in [region](/en/tools-for-using-services/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
 - in the region of Kazakhstan — at the address accountvk@qazcloud.kz.
 
 ### Public offer agreements
@@ -156,7 +156,7 @@ By default, EDM is not connected.
 
 <info>
 
-EDM work is available only to organizations-residents of the Russian Federation who work in [region](/en/base/account/concepts/regions) Moscow.
+EDM work is available only to organizations-residents of the Russian Federation who work in [region](/en/tools-for-using-services/account/concepts/regions) Moscow.
 
 </info>
 

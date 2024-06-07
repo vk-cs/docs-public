@@ -11,7 +11,7 @@ To show the virtual IP address setting:
 
 ## 1. Preparation steps
 
-1. Make sure OpenStack CLI is [installed](/en/base/account/project/cli/setup/) and you can [authorize](/en/base/account/project/cli/authorization/) in it.
+1. Make sure OpenStack CLI is [installed](/en/tools-for-using-services/cli/openstack-cli). Also check that you can log in the OpenStack CLI.
 
 1. Select the subnet where the virtual machines and virtual IP address will be placed. They must be on the same subnet.
 

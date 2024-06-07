@@ -13,11 +13,11 @@ You can migrate your resources to VK Cloud using the [Hystax Acura Migration](ht
 
 This instruction will help you migrate your resources to VK Cloud using the Hystax Acura Migration service using the example of the `Ubuntu-MR` VM with the Ubuntu 18.04 operating system.
 
-By using the Hystax Acura Migration service, you agree to the license agreements of [Marketplace](/ru/additionals/start/legal/marketplace "change-lang") and [Hystax Acura Migration](https://хст.рф/terms-of-use/).
+By using the Hystax Acura Migration service, you agree to the license agreements of [Marketplace](/ru/intro/start/legal/marketplace "change-lang") and [Hystax Acura Migration](https://хст.рф/terms-of-use/).
 
 ## 1. Preparatory steps
 
-1. [Register](/en/additionals/start/account-registration) at VK Cloud.
+1. [Register](/en/intro/start/account-registration) at VK Cloud.
 1. [Configure](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa) two-factor authentication (2FA) for the account on whose behalf the restored infrastructure will be deployed.
 1. [Create a VM](/en/base/iaas/service-management/vm/vm-create) for which recovery will be applied. As part of the quick start, the `Ubuntu-DR` VM with the Ubuntu 18.04 operating system will be used.
 1. [Connect](/en/applications-and-services/marketplace/service-management/pr-instance-add/) Hystax Acura Migration service.
@@ -184,4 +184,4 @@ Running VMs consume computing resources. If you don't need them anymore:
 
 - Delete `Ubuntu-MR` VM, added to Hystax Acura [personal account](https://migration.mcs-cloud.ru).
 - Delete (detach) the backup infrastructure `VK-Cloud-infra` via Hystax Acura [personal account](https://migration.mcs-cloud.ru).
-- [Delete](/en/networks/vnet/operations/manage-floating-ip#removing_floating_ip_address_from_the_project) floating IP address if it was created during migration.
+- [Delete](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project) floating IP address if it was created during migration.

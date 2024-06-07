@@ -53,7 +53,7 @@ To open detailed information about an individual record, click on the icon ![Inf
 <tabpanel>
 
 1. [Enable](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa) two-factor authentication (2FA) for your account.
-1. [Get](/en/additionals/cases/case-keystone-token) the `X-Auth-Token`.
+1. [Get](/en/tools-for-using-services/api/rest-api/case-keystone-token "change-lang") the `X-Auth-Token`.
 1. [Find out](https://msk.cloud.vk.com/app/en/project/endpoints) the address of the `Audit` endpoint.
 1. Run the request:
 
@@ -91,7 +91,7 @@ Each action log record provides the information:
 
 ## Examples of API requests to the action log
 
-To split the output of records to the console or file into lines, the requests use [the jq utility](/en/manage/tools-for-using-services/rest-api/install-jq).
+To split the output of records to the console or file into lines, the requests use [the jq utility](/en/tools-for-using-services/rest-api/install-jq).
 
 <details>
     <summary>Retrieving the latest log records</summary>

@@ -66,7 +66,7 @@
 
 <summary>Есть ли API для настройки CDN?</summary>
 
-Да, методы API для управления и мониторинга работы CDN-ресурсов размещены в разделе [Справка API](/ru/additionals/api/api-cdn).
+Да, методы API для управления и мониторинга работы CDN-ресурсов размещены в разделе [Справка API](/ru/tools-for-using-services/api/api-spec/api-cdn).
 
 </details>
 

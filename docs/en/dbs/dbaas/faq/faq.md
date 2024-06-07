@@ -68,7 +68,7 @@ To check if backup is enabled:
 
    If there is a green indicator next to the name of the desired plan, the backup works according to plan. If the indicator is red, the backup is suspended.
 
-Backup can be enabled when [creating a DB instance](../service-management/create/) or configured separately by [creating a backup plan](/en/manage/backups/db-backup/).
+Backup can be enabled when [creating a DB instance](../service-management/create/) or configured separately by [creating a backup plan](/en/storage/backups/db-backup/).
 
 </details>
 
@@ -78,7 +78,7 @@ Backup can be enabled when [creating a DB instance](../service-management/create
 
 No, you can restore the database only to the version for which the backup was created.
 
-To restore a database from a backup, use the [instructions](/en/manage/backups/db-backup/db-recover-backup).
+To restore a database from a backup, use the [instructions](/en/storage/backups/db-backup/db-recover-backup).
 
 </details>
 

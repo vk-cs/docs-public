@@ -53,7 +53,7 @@
 <tabpanel>
 
 1. [Включите](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
-1. [Получите](/ru/additionals/cases/case-keystone-token) токен доступа `X-Auth-Token`.
+1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
 1. [Узнайте](https://msk.cloud.vk.com/app/project/endpoints) адрес эндпоинта `Audit`.
 1. Выполните запрос:
 
@@ -91,7 +91,7 @@
 
 ## Примеры API-запросов при работе с журналом
 
-Чтобы разбить вывод записей в консоль или файл на строки, в примерах запросов используется [утилита jq](/ru/manage/tools-for-using-services/rest-api/install-jq).
+Чтобы разбить вывод записей в консоль или файл на строки, в примерах запросов используется [утилита jq](/ru/tools-for-using-services/rest-api/install-jq).
 
 <details>
     <summary>Получение последних записей</summary>

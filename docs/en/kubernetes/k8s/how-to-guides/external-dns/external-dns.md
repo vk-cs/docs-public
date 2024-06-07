@@ -8,7 +8,7 @@ ExternalDNS integrates with the [VK Cloud DNS service](/en/networks/dns/publicdn
 
    In the example below, the `example.com` zone is used.
 
-1. [Create](https://cloud.vk.com/docs/en/base/k8s/operations/create-cluster) a Cloud Containers cluster of the latest version that has an external IP address and is accessible from the Internet.
+1. [Create](https://cloud.vk.com/docs/en/kubernetes/k8s/service-management/create-cluster) a Cloud Containers cluster of the latest version that has an external IP address and is accessible from the Internet.
 
    Select other cluster parameters at your discretion.
 
@@ -55,10 +55,10 @@ Prepare the user and get all the necessary credentials:
 
    User Requirements:
 
-   - API access must be [enabled](/en/manage/tools-for-using-services/rest-api/enable-api).
+   - API access must be [enabled](/en/tools-for-using-services/rest-api/enable-api).
    - One of the following roles must be [assigned](/en/tools-for-using-services/account/service-management/project-settings/access-manage#changing_member_role) in order for ExternalDNS to operate resource records within the DNS zone:
 
-     - Network Administrator (a minimum required [role](/en/base/account/concepts/rolesandpermissions#roles_and_their_permissions_the_full_matrix)).
+     - Network Administrator (a minimum required [role](/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_and_their_permissions_the_full_matrix)).
      - Project Administrator.
      - Superadministrator.
      - Project Owner.
@@ -494,7 +494,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
 ### 3.2. Publish the application using Ingress
 
-1. [Install](/en/base/k8s/operations/addons/advanced-installation/install-advanced-ingress) the Ingress NGINX addon of the latest version to the cluster.
+1. [Install](/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress) the Ingress NGINX addon of the latest version to the cluster.
 
    Perform a **standard installation**. Do not change any parameters, only edit the addon configuration code:
 

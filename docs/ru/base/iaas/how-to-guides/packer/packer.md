@@ -10,7 +10,7 @@ Packer позволяет создавать образы виртуальных
 
    </info>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 1. [Загрузите образ](http://ftp.altlinux.org/pub/distributions/ALTLinux/p9/images/cloud/x86_64/) ОС Alt Linux P9 локально (файл `alt-p9-cloud-x86_64.qcow2`).
 
 ## 1. Конвертируйте образ в формат RAW
@@ -56,7 +56,7 @@ Packer позволяет создавать образы виртуальных
 
 1. Определите реквизиты сети и загруженного образа:
 
-    1. [Получите](/ru/networks/vnet/operations/manage-net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) идентификатор внешней сети, к которой будет подключена создаваемая виртуальная машина.
+    1. [Получите](/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih) идентификатор внешней сети, к которой будет подключена создаваемая виртуальная машина.
     1. Скопируйте название загруженного образа, получив список образов с помощью команды `openstack image list`.
     1. Запишите полученные значения в переменные:
 

@@ -1,10 +1,10 @@
 All deductions and additions for projects are recorded in the VK Cloud personal account on the project [balance page](https://msk.cloud.vk.com/app/en/services/billing).
 
-Expenses details are available to users with the [roles](/en/base/account/concepts/rolesandpermissions) of Owner, Superadministrator, Project administrator and Billing administrator.
+Expenses details are available to users with the [roles](/en/tools-for-using-services/account/concepts/rolesandpermissions) of Owner, Superadministrator, Project administrator and Billing administrator.
 
 <warn>
 
-Deductions and additions for projects in the Moscow [region](/en/base/account/concepts/regions) are tied to the Moscow Time Zone (GMT+3), in the Kazakhstan region —  to the Astana Time Zone (GMT+6).
+Deductions and additions for projects in the Moscow [region](/en/tools-for-using-services/account/concepts/regions) are tied to the Moscow Time Zone (GMT+3), in the Kazakhstan region —  to the Astana Time Zone (GMT+6).
 
 The same principle applies to [the formation of accounting documents](../../concepts/report/).
 

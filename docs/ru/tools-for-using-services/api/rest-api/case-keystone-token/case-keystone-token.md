@@ -3,7 +3,7 @@
 ## Подготовительные шаги
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. Убедитесь, что [включена](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/manage/tools-for-using-services/rest-api/enable-api) доступ по API.
+1. Убедитесь, что [включена](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/tools-for-using-services/rest-api/enable-api) доступ по API.
 1. В шапке страницы личного кабинета выберите проект, в котором планируете использовать токен.
 
 ## Генерация токена
@@ -35,7 +35,7 @@
 </tabpanel>
 <tabpanel>
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. [Установите](/ru/tools-for-using-services/cli/openstack-cli) клиент OpenStack и пройдите аутентификацию в проекте.
 1. Выполните команду:
 
     ```bash
@@ -48,7 +48,7 @@
 <tabpanel>
 
 1. Установите утилиту [cURL](https://github.com/curl/curl/blob/master/docs/INSTALL.md), если она еще не установлена.
-1. [Пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте. Для работы с клиентом OpenStack и с утилитой cURL процедура аутентификации одинакова.
+1. [Пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli) в проекте. Для работы с клиентом OpenStack и с утилитой cURL процедура аутентификации одинакова.
 1. Выполните команду для вашей операционной системы:
 
     <tabs>
@@ -193,5 +193,5 @@ x-subject-token: gAAAAABkirQja1Lgr9psuyf6fC6e3Sy5WMYubpmwMNPXuT6APQkf-BPRRAySTBG
 
 Другие примеры использования токена:
 
-- [просмотр логов](/ru/manage/logging/start/view-logs) в сервисе Cloud Logging;
-- [работа](/ru/additionals/api/api-dns) с публичным DNS.
+- [просмотр логов](/ru/manage/logging/service-management/view-logs) в сервисе Cloud Logging;
+- [работа](/ru/tools-for-using-services/api/api-spec/api-dns) с публичным DNS.

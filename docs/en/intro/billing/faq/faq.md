@@ -4,7 +4,7 @@
 
 <summary>How do I get bonuses for registering in my personal account?</summary>
 
-[Bonuses](../concepts/balance#bonuses) are credited when registering a new account. Bonuses are credited after the activation of services in the project, when all the stages of [account confirmation](/en/additionals/start/account-registration#2_confirm_your_account) have been completed.
+[Bonuses](../concepts/balance#bonuses) are credited when registering a new account. Bonuses are credited after the activation of services in the project, when all the stages of [account confirmation](/en/intro/start/account-registration#2_confirm_your_account) have been completed.
 
 <info>
 
@@ -35,7 +35,7 @@ You can see the details of your expenses on the **Balance** page in your persona
 
 <summary>Are funds being charged after the end of the test period?</summary>
 
-After the test period has expired or bonuses have been burned off, the main balance is used to pay for resources. If the balance is zero, the project is [frozen](/en/base/account/concepts/projects#automatic_freezing_of_the_project). If the balance is positive, funds will be charged for resource usage.
+After the test period has expired or bonuses have been burned off, the main balance is used to pay for resources. If the balance is zero, the project is [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project). If the balance is positive, funds will be charged for resource usage.
 
 </details>
 
@@ -56,7 +56,7 @@ VK Cloud registers the consumption of resources in the cloud on a minute-by-minu
 
 [Balance](../concepts/balance) is displayed:
 
-- If your [role](/en/base/account/concepts/rolesandpermissions) in the project is the owner, superadministrator or billing administrator.
+- If your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) in the project is the owner, superadministrator or billing administrator.
 - After the services are activated in the project. To understand if the services are activated:
 
   1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
@@ -137,7 +137,7 @@ Up to 3 banking days.
 
 <summary>Why should I link a card if I am a legal entity and pay according to the details?</summary>
 
-The card may be required if you work on prepayment, and you need to top up your balance urgently — for example, to avoid project [freezing](/en/base/account/concepts/projects#automatic_freezing_of_the_project).
+The card may be required if you work on prepayment, and you need to top up your balance urgently — for example, to avoid project [freezing](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
 
 Write-offs for payments from bank cards are not included in [accounting documents for legal entities](../concepts/report#composition_of_accounting_documents_55c18d7): billing report, reconciliation report.
 
@@ -177,7 +177,7 @@ If you have not received your original documents or need scanned copies, please 
 Contact [technical support](/en/contacts), provide information:
 
 - [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id);
-- project [region](/en/base/account/concepts/regions);
+- project [region](/en/tools-for-using-services/account/concepts/regions);
 - amount and date of payment;
 - payment confirmation.
 
@@ -195,7 +195,7 @@ The terms of crediting funds depend on [the payment method](../concepts/payment-
 If the payment is not received within the specified time, contact [technical support](/en/contacts) to search for it, provide information:
 
 - [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id);
-- project [region](/en/base/account/concepts/regions);
+- project [region](/en/tools-for-using-services/account/concepts/regions);
 - payment confirmation.
 
 </details>
@@ -230,7 +230,7 @@ Please contact [technical support](/en/contacts). For more information about the
 
 <summary>The balance has become negative, how can the services be restored?</summary>
 
-When working on prepayment with a negative balance, the project is automatically [frozen](/en/base/account/concepts/projects#automatic_freezing_of_the_project). Its objects are placed in the queue for deletion for a period:
+When working on prepayment with a negative balance, the project is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project). Its objects are placed in the queue for deletion for a period:
 
 - 3 days if you have never replenished the project account.
 - 30 days if you have topped up the project account at least once.
@@ -249,13 +249,13 @@ To restore the services:
 1. Manually activate project resources:
 
    - [virtual machines](/en/base/iaas/service-management/vm/vm-manage#starting_stopping_reboot_the_vm);
-   - [Kubernetes containers](/en/base/k8s/operations/manage-cluster#start_cluster_ffb49399);
-   - [vm backup](/en/manage/backups/vm-backup/vm-backup-manage#activating_stopping_and_deleting_a_backup_plan);
+   - [Kubernetes containers](/en/kubernetes/k8s/service-management/manage-cluster#start_cluster_ffb49399);
+   - [vm backup](/en/storage/backups/vm-backup/vm-backup-manage#activating_stopping_and_deleting_a_backup_plan);
    - other resources.
 
 <info>
 
-To find out how long resources are in the queue for deletion, contact [technical support](/en/contacts), tell [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id) and [region](/en/base/account/concepts/regions).
+To find out how long resources are in the queue for deletion, contact [technical support](/en/contacts), tell [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id) and [region](/en/tools-for-using-services/account/concepts/regions).
 
 </info>
 
@@ -265,7 +265,7 @@ To find out how long resources are in the queue for deletion, contact [technical
 
 <summary>I have topped up my balance to unblock the services. How long to wait?</summary>
 
-Unlocking can take up to 4 hours. If you need to restore the work of the project faster, contact [technical support](/en/contacts) and ask to unblock the services manually, specify [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id) and [region](/en/base/account/concepts/regions).
+Unlocking can take up to 4 hours. If you need to restore the work of the project faster, contact [technical support](/en/contacts) and ask to unblock the services manually, specify [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id) and [region](/en/tools-for-using-services/account/concepts/regions).
 
 After unlocking, manually start the objects that were stopped — for example, virtual machines.
 
@@ -278,7 +278,7 @@ After unlocking, manually start the objects that were stopped — for example, v
 The promised payment is not supported. You can avoid freezing the project if you have already made a payment, but it does not have time to arrive on the balance before the project goes into negative. Contact [technical support](/en/contacts) and ask them to disable the blocking of services for the duration of the payment. Provide information:
 
 - [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id);
-- project [region](/en/base/account/concepts/regions);
+- project [region](/en/tools-for-using-services/account/concepts/regions);
 - payment confirmation.
 
 This situation is possible only when paying by bank transfer — when using other [payment methods](../concepts/payment-methods), the payment is credited almost instantly.
@@ -298,7 +298,7 @@ There are two options for action:
 - Pay for the services by bank transfer, contact [technical support](/en/contacts) and ask to disable the blocking of services for the duration of the payment. Provide information:
 
   - [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id);
-  - project [region](/en/base/account/concepts/regions);
+  - project [region](/en/tools-for-using-services/account/concepts/regions);
   - payment confirmation.
 
 </details>
@@ -312,7 +312,7 @@ Contact [technical support](/en/contacts) to track down the payment.
 1. Provide information:
 
    - [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id);
-   - project [region](/en/base/account/concepts/regions);
+   - project [region](/en/tools-for-using-services/account/concepts/regions);
    - payment confirmation.
 
 1. Ask to disable the blocking of services for the duration of the search.
@@ -327,8 +327,8 @@ Contact [technical support](/en/contacts) to track down the payment.
 
 With VK Cloud, you can work with a service infrastructure that is physically deployed:
 
-- On the territory of Russia — to do this, [register](/en/additionals/start/account-registration) an account in [region](/en/base/account/concepts/regions) Moscow at https://cloud.vk.com.
-- On the territory of Kazakhstan — to do this, [register](/en/additionals/start/account-registration) an account in [region](/en/base/account/concepts/regions) Kazakhstan at https://vkcloud.kz или https://kz.cloud.vk.com/.
+- On the territory of Russia — to do this, [register](/en/intro/start/account-registration) an account in [region](/en/tools-for-using-services/account/concepts/regions) Moscow at https://cloud.vk.com.
+- On the territory of Kazakhstan — to do this, [register](/en/intro/start/account-registration) an account in [region](/en/tools-for-using-services/account/concepts/regions) Kazakhstan at https://vkcloud.kz или https://kz.cloud.vk.com/.
 
 Each region has its own peculiarities of work for non-residents of the Russian Federation:
 
@@ -451,14 +451,14 @@ The manager will contact you to clarify the desired terms of the contract.
 </tablist>
 <tabpanel>
 
-If your project is in [region](/en/base/account/concepts/regions) Moscow, you are working with “VK” LLC, its main details are available at https://cloud.vk.com/contacts.
+If your project is in [region](/en/tools-for-using-services/account/concepts/regions) Moscow, you are working with “VK” LLC, its main details are available at https://cloud.vk.com/contacts.
 
 You can also [generate an invoice](../service-management/bill-generation) in your personal account and view the contents of the **Supplier** field.
 
 </tabpanel>
 <tabpanel>
 
-If your project is in [region](/ru/base/account/concepts/regions) Kazakhstan, you are working with “QazCloud” LLC, its details are available at https://vkcloud.kz/contacts/.
+If your project is in [region](/ru/tools-for-using-services/account/concepts/regions) Kazakhstan, you are working with “QazCloud” LLC, its details are available at https://vkcloud.kz/contacts/.
 
 </tabpanel>
 </tabs>
@@ -516,7 +516,7 @@ VK Cloud can duplicate reporting documents in the form of scanned copies in PDF 
 
 In order for the accounts that you [generate in your personal account](../service-management/bill-generation) to have your organization's data in the **Payer** field, go through [pre-registration](../service-management/corporate#additional_registration_of_legal_entities) of legal entity.
 
-Pre-registration is only available in [region](/en/base/account/concepts/regions) Moscow and only Russian resident companies.
+Pre-registration is only available in [region](/en/tools-for-using-services/account/concepts/regions) Moscow and only Russian resident companies.
 
 </details>
 

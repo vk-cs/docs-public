@@ -54,12 +54,12 @@ sudo apt-get install https://cloudlogging.hb.ru-msk.vkcs.cloud/vkcloudlogs-fluen
 
 1. Узнайте авторизационные параметры для вашего проекта:
 
-   - `auth_url` — [эндпоинт](/ru/manage/tools-for-using-services/rest-api/endpoints) Keystone;
-   - `project_id` — [идентификатор](/ru/manage/tools-for-using-services/rest-api/endpoints#poluchenie_project_id) проекта VK Cloud в OpenStack;
+   - `auth_url` — [эндпоинт](/ru/tools-for-using-services/rest-api/endpoints) Keystone;
+   - `project_id` — [идентификатор](/ru/tools-for-using-services/rest-api/endpoints#poluchenie_project_id) проекта VK Cloud в OpenStack;
    - `server_host_port` — адрес сервиса Cloud Logging (`cloudlogs.mcs.mail.ru:443`);
    - `user_id` — имя пользователя, от имени которого будут записываться логи; [генерируется](../generate-userdata/) отдельно;
    - `password` — пароль указанного пользователя;
-   - `service_id` — [идентификатор сервиса](/ru/additionals/api/logging) в системе логирования (по умолчанию `default`). При необходимости создайте новые идентификаторы [на вкладке](https://msk.cloud.vk.com/app/services/monitoring/logging/settings/services) **Прочие ресурсы** раздела **Логирование**.
+   - `service_id` — [идентификатор сервиса](/ru/tools-for-using-services/api/logging) в системе логирования (по умолчанию `default`). При необходимости создайте новые идентификаторы [на вкладке](https://msk.cloud.vk.com/app/services/monitoring/logging/settings/services) **Прочие ресурсы** раздела **Логирование**.
 
 1. Укажите параметры подключения для плагина в файле `vkcloudlogs-fluent-bit.conf`:
 

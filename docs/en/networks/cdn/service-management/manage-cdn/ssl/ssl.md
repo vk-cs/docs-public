@@ -34,9 +34,9 @@ Specify the following parameters in a request body:
   - `"ssl_automated": true` — the Let’s Encrypt certificate will be automatically renewed upon expiry.
   - `"ssl_automated": false` — the Let’s Encrypt certificate will not be automatically renewed.
   
-  To create or configure a Let's Encrypt certificate, use the [methods](/ru/additionals/api/api-cdn "change-lang") of the **Let's Encrypt certificates** section.
+  To create or configure a Let's Encrypt certificate, use the [methods](/ru/tools-for-using-services/api/api-cdn "change-lang") of the **Let's Encrypt certificates** section.
 
-- To use your SSL certificate, specify the `"sslEnabled": true`, and also specify the certificate identifier in the `sslData` parameter. To create or configure your certificate, use the [methods](/ru/additionals/api/api-cdn "change-lang") of the **SSL certificates** section.
+- To use your SSL certificate, specify the `"sslEnabled": true`, and also specify the certificate identifier in the `sslData` parameter. To create or configure your certificate, use the [methods](/ru/tools-for-using-services/api/api-cdn "change-lang") of the **SSL certificates** section.
 
 Example request to use SSL custom certificate:
 

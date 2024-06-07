@@ -109,7 +109,7 @@
 
 ## Разрешения ролей сервиса Cloud Containers
 
-В личном кабинете доступны специализированные роли для работы с [сервисом Cloud Containers](/ru/base/k8s):
+В личном кабинете доступны специализированные роли для работы с [сервисом Cloud Containers](/ru/kubernetes/k8s):
 
 - администратор Kubernetes,
 - оператор Kubernetes,
@@ -119,7 +119,7 @@
 
 Для остальных ролей эти операции недоступны.
 
-Для кластеров Kubernetes версии 1.23 и выше роль администратора, оператора или аудитора Kubernetes также определяет доступную пользователю внутреннюю [роль Kubernetes](/ru/base/k8s/concepts/access-management#vzaimosvyaz_roley_lichnogo_kabineta_i_kubernetes).
+Для кластеров Kubernetes версии 1.23 и выше роль администратора, оператора или аудитора Kubernetes также определяет доступную пользователю внутреннюю [роль Kubernetes](/ru/kubernetes/k8s/concepts/access-management#vzaimosvyaz_roley_lichnogo_kabineta_i_kubernetes).
 
 <info>
 
