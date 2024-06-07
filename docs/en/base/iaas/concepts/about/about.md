@@ -238,7 +238,7 @@ Networks and routers are not tied to availability zones.
 
 <info>
 
-A network created in the QAZ availability zone cannot be united with networks in other availability zones, since QAZ zone is located in the Kazakhstan [region](../../../../tools-for-using-services/account/concepts/regions). In this case, networks can be connected over [VPN](/en/networks/vnet/use-cases/vpn-tunnel).
+A network created in the QAZ availability zone cannot be united with networks in other availability zones, since QAZ zone is located in the Kazakhstan [region](../../../../tools-for-using-services/account/concepts/regions). In this case, networks can be connected over [VPN](/en/networks/vnet/how-to-guides/vpn-tunnel).
 
 </info>
 
@@ -296,7 +296,7 @@ A VM backup is needed to restore the state of the VM saved at a certain point in
 
 In manual mode, the creation of backups is started by the user. At the same time, full VM backups are created.
 
-Automatic mode supports [GFS strategy](/en/manage/backups/retention-policy/gfs-backup) and allows you to configure a backup schedule to create full and incremental backups.
+Automatic mode supports [GFS strategy](/en/storage/backups/retention-policy/gfs-backup) and allows you to configure a backup schedule to create full and incremental backups.
 
 ## Licenses
 

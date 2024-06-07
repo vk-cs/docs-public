@@ -21,11 +21,11 @@ After completing all the steps of a instruction, you will:
 1. Create a backup infrastructure using a backup recovery plan.
 1. Restore the reserved infrastructure in VK Cloud.
 
-By using the Hystax Acura Disaster Recovery service, you agree to the license agreements of [Marketplace](/ru/additionals/start/legal/marketplace "change-lang") and [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use/).
+By using the Hystax Acura Disaster Recovery service, you agree to the license agreements of [Marketplace](/ru/intro/start/legal/marketplace "change-lang") and [Hystax Acura Disaster Recovery](https://хст.рф/terms-of-use/).
 
 ## Preparatory steps
 
-1. [Register](/en/additionals/start/account-registration) at VK Cloud.
+1. [Register](/en/intro/start/account-registration) at VK Cloud.
 1. [Configure](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa) two-factor authentication (2FA) for the account on whose behalf the restored infrastructure will be deployed.
 1. [Create a VM](/en/base/iaas/service-management/vm/vm-create) for which recovery will be applied. As part of the quick start, the `Ubuntu-DR` VM with the Ubuntu 18.04 operating system will be used.
 1. [Connect](../../service-management/pr-instance-add/) Hystax Acura Disaster Recovery service.
@@ -223,7 +223,7 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
    - **Cloud name**: `VK Cloud`.
    - **Keystone API endpoint**: Keystone value from [endpoints list](https://msk.cloud.vk.com/app/mcs3723876490/project/endpoints), `https://infra.mail.ru:35357/v3/` for VK Cloud.
    - **User domain**: value **User Domain Name** of [project settings](https://msk.cloud.vk.com/app/project/keys).
-   - **Username**: user name with [API access](/en/manage/tools-for-using-services/rest-api/enable-api) and a role not lower than the Project administrator.
+   - **Username**: user name with [API access](/en/tools-for-using-services/rest-api/enable-api) and a role not lower than the Project administrator.
    - **Password**: the user's password.
    - **Target project domain**: value **Project Domain ID** of [project settings](https://msk.cloud.vk.com/app/project/keys).
    - **Target project ID**: value **Project ID** of [project settings](https://msk.cloud.vk.com/app/project/keys)
@@ -248,4 +248,4 @@ Running VMs consume computing resources. If you don't need them anymore:
 
 - [Delete](/en/base/iaas/service-management/vm/vm-manage#deleting_a_vm) `Ubuntu-DR` VM.
 - Delete the backup infrastructure `VK-Cloud-infra` via Hystax Acura [personal account](https://dr.mcs-cloud.ru).
-- [Delete](/en/networks/vnet/operations/manage-floating-ip#removing_floating_ip_address_from_the_project) floating IP address if it was created during recovery.
+- [Delete](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project) floating IP address if it was created during recovery.

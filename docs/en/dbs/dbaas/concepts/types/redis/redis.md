@@ -5,10 +5,10 @@ Redis is optimal for tasks where speed is a priority: for caching data, storing 
 
 For more information, see [official Redis documentation](http://redis.io/docs/).
 
-The list of Redis versions that are supported in VK Cloud is available when [creating](../../../instructions/create/) an instance of this database.
+The list of Redis versions that are supported in VK Cloud is available when [creating](../../../service-management/create/) an instance of this database.
 
 ## What's next
 
-- [Create](../../../instructions/create/) DB instance.
+- [Create](../../../service-management/create/) DB instance.
 - [Connect](../../../connect/) to the DB instance.
 - [Check out](../../extensions/) available database extensions.

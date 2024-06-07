@@ -1,4 +1,4 @@
-В VK Cloud [действуют ограничения](/ru/base/account/concepts/quotasandlimits) на размер загружаемых образов операционных систем. При превышении лимита появляется сообщение вида:
+В VK Cloud [действуют ограничения](/ru/tools-for-using-services/account/concepts/quotasandlimits) на размер загружаемых образов операционных систем. При превышении лимита появляется сообщение вида:
 
 ```txt
 An error occurred (InvalidArgument) when calling the UploadPart operation: Part number must be an integer between 1 and 10000, inclusive
@@ -20,10 +20,10 @@ An error occurred (InvalidArgument) when calling the UploadPart operation: Part 
    - к ВМ подключен хотя бы один диск;
    - ВМ использует эмуляцию BIOS.
 
-   Для [миграции](/ru/additionals/migration/) ВМ с эмуляцией UEFI используйте Hystax или перенесите данные на новую виртуальную машину с эмуляцией BIOS.
+   Для [миграции](/ru/intro/migration/) ВМ с эмуляцией UEFI используйте Hystax или перенесите данные на новую виртуальную машину с эмуляцией BIOS.
 
-1. Создайте [аккаунт](/ru/base/s3/access-management/s3-account) и [бакет](/ru/base/s3/buckets/create-bucket) `uc_bucket`.
-1. Убедитесь, что у вас [установлен и настроен](/ru/base/s3/tools/s3-cli) AWS CLI. Укажите в нем данные для подключения к бакету (`Access key ID` и `Secret key`). Откройте конфигурационный файл `~/.aws/config` и внесите в него изменения:
+1. Создайте [аккаунт](../../service-management/access-management/access-keys/) и [бакет](../../service-management/buckets/create-bucket/) `uc_bucket`.
+1. Убедитесь, что у вас [установлен и настроен](../../connect/s3-cli/) AWS CLI. Укажите в нем данные для подключения к бакету (`Access key ID` и `Secret key`). Откройте конфигурационный файл `~/.aws/config` и внесите в него изменения:
 
    ```txt
    [default]

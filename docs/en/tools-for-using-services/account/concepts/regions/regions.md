@@ -1,6 +1,6 @@
-A region is a geographical area that unites [availability zones](/en/additionals/start/architecture#availability_zones_567cfd7a). Each availability zone has one or more data processing centers (data centers) where cloud infrastructure objects are physically located.
+A region is a geographical area that unites [availability zones](/en/intro/start/architecture#availability_zones_567cfd7a). Each availability zone has one or more data processing centers (data centers) where cloud infrastructure objects are physically located.
 
-The region is assigned to each [project](../projects) automatically and depends on the URL of the site where the project owner [registered](/en/additionals/start/account-registration) account.
+The region is assigned to each [project](../projects) automatically and depends on the URL of the site where the project owner [registered](/en/intro/start/account-registration) account.
 
 You can create objects (for example, virtual machines) only in the availability zone of the region in which the project was created.
 
@@ -22,11 +22,11 @@ Projects created in different regions have different:
 
 - a set of available services;
 - set of [quotas](../quotasandlimits);
-- addresses of [VK Cloud API endpoints](/en/manage/tools-for-using-services/rest-api);
-- the name of the region in the configuration files [openrc](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) and [Terraform](/en/manage/tools-for-using-services/terraform/quick-start).
+- addresses of [VK Cloud API endpoints](/en/tools-for-using-services/rest-api);
+- the name of the region in the configuration files [openrc](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) and [Terraform](/en/tools-for-using-services/terraform/quick-start).
 
 <warn>
 
-It is not possible to combine virtual networks of projects from different regions using standard methods. Network connectivity between such projects can be configured using [VPN tunnel](/en/networks/vnet/use-cases/vpn-tunnel).
+It is not possible to combine virtual networks of projects from different regions using standard methods. Network connectivity between such projects can be configured using [VPN tunnel](/en/networks/vnet/how-to-guides/vpn-tunnel).
 
 </warn>

@@ -1,12 +1,12 @@
-The examples of creating different Kubernetes clusters using Terraform are provided below. The cluster creation procedure is described in details in the [Creating a cluster with Terraform](/en/base/k8s/operations/create-cluster/create-terraform) section.
+The examples of creating different Kubernetes clusters using Terraform are provided below. The cluster creation procedure is described in details in the [Creating a cluster with Terraform](/en/kubernetes/k8s/service-management/create-cluster/create-terraform) section.
 
 ## Before creating a cluster
 
-1. Check out the available resources and [quotas](/en/base/account/concepts/quotasandlimits) for the [region](/en/base/account/concepts/regions) in which you plan to create a cluster. Different quotas can be set up for different regions.
+1. Check out the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) in which you plan to create a cluster. Different quotas can be set up for different regions.
 
    If you want to increase quotas, contact [technical support](/en/contacts).
 
-1. Learn about the [features of using Terraform](/en/base/k8s/operations/helpers/terraform-howto) with the Cloud Containers service.
+1. Learn about the [features of using Terraform](/en/kubernetes/k8s/service-management/helpers/terraform-howto) with the Cloud Containers service.
 
 1. [Install Terraform and configure the provider](../../../quick-start), if not already done.
 
@@ -217,7 +217,7 @@ resource "vkcs_kubernetes_node_group" "k8s-node-group" {
 </tabpanel>
 <tabpanel>
 
-The `labels = { docker_registry_enabled }` setting of the `vkcs_kubernetes_cluster` resource is used to install the [service](/en/base/k8s/concepts/addons-and-settings/addons).
+The `labels = { docker_registry_enabled }` setting of the `vkcs_kubernetes_cluster` resource is used to install the [service](/en/kubernetes/k8s/concepts/addons-and-settings/addons).
 
 ```hcl
 data "vkcs_compute_flavor" "k8s-master-flavor" {

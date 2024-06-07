@@ -2,8 +2,8 @@
 
 ## Подготовительные шаги
 
-1. [Создайте](/ru/base/k8s/operations/create-cluster/create-webui) кластер Kubernetes в VK Cloud.
-1. [Подключитесь](/ru/base/k8s/connect/kubectl) к кластеру с помощью kubectl.
+1. [Создайте](/ru/kubernetes/k8s/service-management/create-cluster/create-webui) кластер Kubernetes в VK Cloud.
+1. [Подключитесь](/ru/kubernetes/k8s/connect/kubectl) к кластеру с помощью kubectl.
 1. Создайте тестовое приложение:
 
    1. Создайте новое пространство имен (namespace) для проекта:

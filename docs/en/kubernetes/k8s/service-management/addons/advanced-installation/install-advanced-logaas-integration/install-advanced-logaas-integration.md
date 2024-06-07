@@ -30,7 +30,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    <tabpanel>
 
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
@@ -62,7 +62,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
    - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
 
-   For more information about working with the provider, see [Terraform](/en/manage/tools-for-using-services/terraform).
+   For more information about working with the provider, see [Terraform](/en/tools-for-using-services/terraform).
 
    </tabpanel>
    </tabs>
@@ -90,7 +90,7 @@ If this does not suit you, perform the **standard installation**.
    <tabpanel>
 
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-   1. Select [project](/en/base/account/concepts/projects), where the cluster will be placed.
+   1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
@@ -116,7 +116,7 @@ If this does not suit you, perform the **standard installation**.
    - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
    - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
 
-   For more information about working with the provider, see [Terraform](/en/manage/tools-for-using-services/terraform).
+   For more information about working with the provider, see [Terraform](/en/tools-for-using-services/terraform).
 
    </tabpanel>
    </tabs>

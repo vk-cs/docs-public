@@ -27,7 +27,7 @@
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методом](/ru/additionals/api/api-cdn) `POST /projects/{project_id}/resources/{resources_id}/purge`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-cdn) `POST /projects/{project_id}/resources/{resources_id}/purge`.
 
 В теле запроса пропишите:
 
@@ -86,7 +86,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 </tabpanel>
 <tabpanel>
 
-Воспользуйтесь [методом](/ru/additionals/api/api-cdn) `POST /projects/{project_id}/resources/{resources_id}/prefetch`.
+Воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-cdn) `POST /projects/{project_id}/resources/{resources_id}/prefetch`.
 
 В теле запроса пропишите пути к файлам, которые нужно загрузить, без указания домена.
 
@@ -408,9 +408,9 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 </tabpanel>
 <tabpanel>
 
-- При создании CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `POST /projects/{project_id}/resources/`.
+- При создании CDN-ресурса воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-cdn) `POST /projects/{project_id}/resources/`.
 
-- Для существующего CDN-ресурса воспользуйтесь [методом](/ru/additionals/api/api-cdn) `PUT /projects/{project_id}/resources/{resources_id}`.
+- Для существующего CDN-ресурса воспользуйтесь [методом](/ru/tools-for-using-services/api/api-spec/api-cdn) `PUT /projects/{project_id}/resources/{resources_id}`.
 
 В теле запроса в блоке `options` пропишите параметры `websockets`.
 

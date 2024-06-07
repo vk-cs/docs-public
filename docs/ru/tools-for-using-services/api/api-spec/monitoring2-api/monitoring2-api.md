@@ -20,7 +20,7 @@ REST API сервиса [Cloud Monitoring 2.0](/ru/manage/monitoring) подде
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
 1. Перейдите на вкладку **API Endpoints**.
 1. Найдите эндпоинт для сервиса Cloud Monitoring 2.0. Если его нет в списке, используйте `https://mcs.mail.ru/XXXX`.
-1. [Получите](/ru/manage/tools-for-using-services/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
+1. [Получите](/ru/tools-for-using-services/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
 
 </details>
 

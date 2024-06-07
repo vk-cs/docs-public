@@ -43,14 +43,14 @@ Different types of balancers [are charged](../../../vnet/tariffication) differen
 This balancer is user-created and can be used to provide fault tolerance and flexible application scaling:
 
 - When working with [Cloud Servers service](/en/base/iaas) to distribute incoming traffic between virtual servers.
-- When working with [container service](/en/base/k8s/), such as when using [Ingress controllers](/en/base/k8s/use-cases/ingress) (including [the preconfigured one](/en/base/k8s/concepts/addons-and-settings/addons#ingress_controller_nginx_d11d1bb3)) or services like [Load Balancer](/en/base/k8s/use-cases/load-balancer).
+- When working with [container service](/en/kubernetes/k8s/), such as when using [Ingress controllers](/en/kubernetes/k8s/how-to-guides/ingress) (including [the preconfigured one](/en/kubernetes/k8s/concepts/addons-and-settings/addons#ingress_controller_nginx_d11d1bb3)) or services like [Load Balancer](/en/kubernetes/k8s/how-to-guides/load-balancer).
 
 </tabpanel>
 <tabpanel>
 
 This balancer is created automatically to power services and is applied:
 
-- In [container service](/en/base/k8s/) for each Kubernetes cluster to provide access to the Kubernetes API.
+- In [container service](/en/kubernetes/k8s/) for each Kubernetes cluster to provide access to the Kubernetes API.
 - In [database service](/en/dbs/dbaas/) for database instances in a cluster configuration to load-balance between instance nodes. This applies to instances:
   - MySQL;
   - PostgreSQL;

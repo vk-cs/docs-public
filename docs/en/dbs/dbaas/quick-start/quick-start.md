@@ -178,7 +178,7 @@ The DB instance is charged and consumes computational resources. After completin
 ## 1. Create PostgreSQL DB instance
 
 1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en/).
-1. Select [project](/en/base/account/concepts/projects), where the instance will be placed.
+1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the instance will be placed.
 1. Go to **Databases → Database instances**.
 1. If there are no instances in the selected project, click the **Create database** button.
 
@@ -593,5 +593,5 @@ The monitoring feature [was enabled during the instance creation](#1_create_post
 
 The DB instance [is charged](../tariffication) and consumes computational resources. If you no longer need it, then:
 
-1. [Delete DB instance](../instructions/delete).
-1. If necessary, [delete floating IP address](/en/networks/vnet/operations/manage-floating-ip#removing_floating_ip_address_from_the_project), that was assigned to the DB instance. Floating IP addresses, that exist in the project, [are charged](/en/networks/vnet/tariffs).
+1. [Delete DB instance](../service-management/delete).
+1. If necessary, [delete floating IP address](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project), that was assigned to the DB instance. Floating IP addresses, that exist in the project, [are charged](/en/networks/vnet/tariffs).

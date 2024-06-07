@@ -52,5 +52,5 @@
 
 ## Что дальше?
 
-- [Ознакомьтесь](/ru/base/account) с возможностями личного кабинета.
+- [Ознакомьтесь](/ru/tools-for-using-services/account) с возможностями личного кабинета.
 - [Настройте](/ru/tools-for-using-services/account/service-management/account-manage/editinfo) ваш профиль в VK Cloud.

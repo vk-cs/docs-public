@@ -10,7 +10,7 @@
 1. Выберите проект, где находится нужный кластер.
 1. Перейдите в раздел **Контейнеры** → **Кластеры Kubernetes**.
 1. Нажмите ![ ](../../assets/MoreIcon.svg "inline") для нужного кластера, затем выберите опцию **Добавить группу узлов**.
-1. Задайте [настройки](/ru/kubernetes/k8s/operations/helpers/node-group-settings/) для группы узлов.
+1. Задайте [настройки](/ru/kubernetes/k8s/service-management/helpers/node-group-settings/) для группы узлов.
 1. Подтвердите выполнение операции.
 
 </tabpanel>

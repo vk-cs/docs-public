@@ -4,7 +4,7 @@ A virtual machine can be connected to the network using a port. Port — VM virt
 - connected network;
 - DNS name.
 
-Learn more about networks and ports in the sections [Managing networks and subnets](/en/networks/vnet/operations/manage-net) and [Managing ports](/en/networks/vnet/operations/manage-ports).
+Learn more about networks and ports in the sections [Managing networks and subnets](/en/networks/vnet/service-management/net) and [Managing ports](/en/networks/vnet/service-management/ports).
 
 ## Connecting the network to the VM
 
@@ -24,7 +24,7 @@ Learn more about networks and ports in the sections [Managing networks and subne
    1. **Name**: set the network name.
    2. **Network for connect**: select a value from the list:
 
-      - **Create new network**: more about networks and ports in the sections [Managing networks and subnets](/en/networks/vnet/operations/manage-net).
+      - **Create new network**: more about networks and ports in the sections [Managing networks and subnets](/en/networks/vnet/service-management/net).
       - **External network (ext-net)**: the virtual machine will be automatically assigned an IP address.
       - Existing network.
 
@@ -34,14 +34,14 @@ Learn more about networks and ports in the sections [Managing networks and subne
       - **DNS-name**: the name by which you can access the VM via [private DNS](/en/networks/dns/private-dns).
       - **Set IP-address**: enable to set a specific IP address from the subnet address pool.
 
-   3. **Firewall settings**: specify the necessary security groups. For more information, see [Managing firewall rules](/en/networks/vnet/operations/secgroups).
+   3. **Firewall settings**: specify the necessary security groups. For more information, see [Managing firewall rules](/en/networks/vnet/service-management/secgroups).
 
 7. Click **Save**.
 
 </tabpanel>
 <tabpanel>
 
-Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 ### Connecting to an existing port
 
@@ -120,7 +120,7 @@ Make sure that OpenStack client [is installed](/en/manage/tools-for-using-servic
 
       It is also possible to create a port with [DHCP options](https://github.com/Juniper/contrail-controller/wiki/Extra-DHCP-Options).
 
-      If necessary, [set a floating IP address to the port](/en/networks/vnet/operations/manage-floating-ip).
+      If necessary, [set a floating IP address to the port](/en/networks/vnet/service-management/floating-ip).
 
    As a result, the ID of the created port and other information about it will be displayed.
 
@@ -164,12 +164,12 @@ Make sure that OpenStack client [is installed](/en/manage/tools-for-using-servic
 
 5. In the window that appears, click **Confirm**.
 
-The network connection to the VM will be deleted, but the previously created port will remain in the status **Not connected**. For more information about removing ports, see [Managing ports](/en/networks/vnet/operations/manage-ports).
+The network connection to the VM will be deleted, but the previously created port will remain in the status **Not connected**. For more information about removing ports, see [Managing ports](/en/networks/vnet/service-management/ports).
 
 </tabpanel>
 <tabpanel>
 
-1. Make sure that OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 2. Get the VM ID:
 
    ```bash

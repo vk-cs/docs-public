@@ -110,7 +110,7 @@ sudo sh -c "apt update; apt install -y qemu-guest-agent; systemctl enable qemu-g
 
 <summary>Не подключается Openstack CLI</summary>
 
-Подключиться к Openstack CLI можно при помощи файла конфигурации. Информация об установке, настройке и параметрах подключения приведена в [разделе утилит управления (CLI)](/ru/base/account/project/cli).
+Подключиться к Openstack CLI можно при помощи файла конфигурации. Информация об установке, настройке и параметрах подключения приведена в [разделе утилит управления (CLI)](/ru/tools-for-using-services/cli/openstack-cli).
 
 </details>
 
@@ -170,7 +170,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Могу ли я задать плавающий IP-адрес для ВМ?</summary>
 
-Вы можете [назначить существующий](/ru/networks/vnet/operations/manage-floating-ip#privyazka_plavayushchego_ip_adresa) плавающий IP-адрес для ВМ или [добавить новый](/ru/networks/vnet/operations/manage-floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt) адрес вручную.
+Вы можете [назначить существующий](/ru/networks/vnet/service-management/floating-ip#privyazka_plavayushchego_ip_adresa) плавающий IP-адрес для ВМ или [добавить новый](/ru/networks/vnet/service-management/floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt) адрес вручную.
 
 <warn>
 
@@ -240,7 +240,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>Почему мои ВМ в облаке VK Cloud не видят мою сеть вне облака?</summary>
 
-Между сетями должна быть настроена сетевая связность (VPN). Подробнее о создании VPN между сетью VK Cloud и внешней сетью в статье [Организация VPN-туннеля](/ru/networks/vnet/use-cases/vpn-tunnel).
+Между сетями должна быть настроена сетевая связность (VPN). Подробнее о создании VPN между сетью VK Cloud и внешней сетью в статье [Организация VPN-туннеля](/ru/networks/vnet/how-to-guides/vpn-tunnel).
 
 </details>
 
@@ -475,7 +475,7 @@ VNC-консоль доступна на странице виртуальной
 
 <summary>В какой зоне доступности создаются файловые хранилища?</summary>
 
-[Зона доступности](/ru/additionals/start/architecture#az) хранилища зависит от [региона](/ru/base/account/concepts/regions) проекта:
+[Зона доступности](/ru/intro/start/architecture#az) хранилища зависит от [региона](/ru/tools-for-using-services/account/concepts/regions) проекта:
 
 - GZ1 для региона Москва;
 - QAZ для региона Казахстан.

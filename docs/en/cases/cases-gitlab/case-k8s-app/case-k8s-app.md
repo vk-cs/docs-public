@@ -2,9 +2,9 @@ In this article, we will look at how to set up auto-deployment of an application
 
 Before that:
 
-1. [Install and configure Docker](/en/additionals/cases/cases-gitlab/case-docker).
-2. [Install and configure GitLab](/en/additionals/cases/cases-gitlab/case-gitlab).
-3. [Install and configure Harbor](/en/additionals/cases/cases-gitlab/case-harbor).
+1. [Install and configure Docker](/en/cases/cases-docker-ce/docker-ce-u18).
+2. [Install and configure GitLab](/en/cases/cases-gitlab/case-gitlab).
+3. [Install and configure Harbor](/en/cases/cases-gitlab/case-harbor).
 
 ## Set up GitLab-runner
 

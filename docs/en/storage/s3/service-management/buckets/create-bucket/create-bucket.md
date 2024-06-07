@@ -18,7 +18,7 @@ You can create a bucket both in the VK Cloud Panel and using the AWS CLI.
 
 <warn>
 
-There is a limit on the number of buckets in one project, for more information, see the article [Quotas and limits](/en/base/account/concepts/quotasandlimits#cloud_storage_c24c9efe)
+There is a limit on the number of buckets in one project, for more information, see the article [Quotas and limits](/en/tools-for-using-services/account/concepts/quotasandlimits#cloud_storage_c24c9efe)
 
 </warn>
 

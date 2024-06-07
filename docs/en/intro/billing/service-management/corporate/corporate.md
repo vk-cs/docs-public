@@ -2,13 +2,13 @@ VK Cloud provides special features for [legal entities](../../concepts/physical-
 
 ## Conclusion of an individual contract
 
-Legal entities by default work with VK Cloud on the basis of contracts [public offer](/en/additionals/start/legal/legal-terms/). It is possible to conclude an individual contract with VK Cloud, for more information, see the article [Billing of individuals and legal entities](../../concepts/physical-corporate).
+Legal entities by default work with VK Cloud on the basis of contracts [public offer](/en/intro/start/legal/legal-terms/). It is possible to conclude an individual contract with VK Cloud, for more information, see the article [Billing of individuals and legal entities](../../concepts/physical-corporate).
 
 To conclude an individual contract:
 
 1. Contact the VK Cloud document management Department:
 
-   - in [region](/en/base/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
+   - in [region](/en/tools-for-using-services/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
    - in the region of Kazakhstan — at the address accountvk@qazcloud.kz.
 
 1. Let us know:
@@ -26,7 +26,7 @@ To set up workflow with VK Cloud:
 
 1. Contact the VK Cloud document management Department:
 
-   - in [region](/en/base/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
+   - in [region](/en/tools-for-using-services/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
    - in the region of Kazakhstan — at the address accountvk@qazcloud.kz.
 
 1. Let us know:
@@ -38,11 +38,11 @@ To set up workflow with VK Cloud:
 
 ## Additional registration of legal entities
 
-After [registration](/en/additionals/start/account-registration) in VK Cloud, you can go to the project settings and complete the additional registration of the legal entity, specifying your details.
+After [registration](/en/intro/start/account-registration) in VK Cloud, you can go to the project settings and complete the additional registration of the legal entity, specifying your details.
 
 <info>
 
-Filling in the details in the personal account is only available in [region](/en/base/account/concepts/regions) Moscow and only Russian legal entities.
+Filling in the details in the personal account is only available in [region](/en/tools-for-using-services/account/concepts/regions) Moscow and only Russian legal entities.
 
 </info>
 

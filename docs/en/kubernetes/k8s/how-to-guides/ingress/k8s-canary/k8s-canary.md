@@ -2,8 +2,8 @@ This article will help you deploy a Kubernetes cluster and configure [Canary Dep
 
 ## Preparatory steps
 
-1. [Create](/ru/base/k8s/operations/create-cluster/create-webui) Kubernetes cluster in VK Cloud.
-1. [Connect](/ru/base/k8s/connect/kubectl) to the cluster using kubectl.
+1. [Create](/ru/kubernetes/k8s/service-management/create-cluster/create-webui) Kubernetes cluster in VK Cloud.
+1. [Connect](/ru/kubernetes/k8s/connect/kubectl) to the cluster using kubectl.
 1. Create a test application:
 
    1. Create a new namespace for the project:

@@ -4,9 +4,9 @@ Below is an example of installing the free versions of GitLab and GitLab Runner 
 
 ## Preparatory steps
 
-1. [Register](/en/additionals/start/account-registration) at VK Cloud.
-1. [Create](/en/networks/vnet/operations/manage-net#creating_a_network) a network `network1` with internet access and a subnet with the address `10.0.0.0/24`.
-1. [Create](/en/networks/vnet/operations/secgroups) a security group `gitlab` and add inbound permissions to it for the ports:
+1. [Register](/en/intro/start/account-registration) at VK Cloud.
+1. [Create](/en/networks/vnet/service-management/net#creating_a_network) a network `network1` with internet access and a subnet with the address `10.0.0.0/24`.
+1. [Create](/en/networks/vnet/service-management/secgroups) a security group `gitlab` and add inbound permissions to it for the ports:
 
    - `80` (HTTP),
    - `443` (HTTPS),
@@ -60,7 +60,7 @@ Below is an example of installing the free versions of GitLab and GitLab Runner 
 
     </info>
 
-1. [Install and configure Docker](/en/additionals/cases/cases-docker-ce/docker-ce-u18).
+1. [Install and configure Docker](/en/cases/cases-docker-ce/docker-ce-u18).
 1. Install the [Docker Compose](https://docs.docker.com/compose/) plugin:
 
    1. Update the list of available Ubuntu packages and their versions:
@@ -103,7 +103,7 @@ For access via SSH, GitLab by default uses port `22`, which is reserved by the o
 
     <info>
 
-    The number `35242` is used as an example. If you are going to use a different number, open it for SSH connections in the VM firewall settings. More details in the [Managing firewall rules](/en/networks/vnet/operations/secgroups) section.
+    The number `35242` is used as an example. If you are going to use a different number, open it for SSH connections in the VM firewall settings. More details in the [Managing firewall rules](/en/networks/vnet/service-management/secgroups) section.
 
     </info>
 
@@ -284,4 +284,4 @@ If the VM on which GitLab is installed has a domain name, you can issue a public
 Deployed virtual resources are charged. If you do not need them anymore:
 
 - [Delete](/en/base/iaas/service-management/vm/vm-manage#deleting_a_vm) the `OA-Ubuntu-docker` VM.
-- If necessary, [delete](/en/networks/vnet/operations/manage-floating-ip#removing_floating_ip_address_from_the_project) the floating IP address `185.185.185.185`.
+- If necessary, [delete](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address `185.185.185.185`.

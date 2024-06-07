@@ -19,7 +19,7 @@ API сервиса [Cloud Big Data](/ru/bigdata/hortonworks) позволяет 
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки проекта**.
 1. Перейдите на вкладку **API Endpoints**.
 1. Найдите эндпоинт **Sahara** в блоке **Сервис OpenStack**.
-1. [Получите токен доступа](/ru/additionals/cases/case-keystone-token) `X-Auth-Token`.
+1. [Получите токен доступа](../../rest-api/case-keystone-token/) `X-Auth-Token`.
 
 </details>
 

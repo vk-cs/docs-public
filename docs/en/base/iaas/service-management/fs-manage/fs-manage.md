@@ -222,7 +222,7 @@ The instructions are given for Ubuntu. For information about connecting to other
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
@@ -252,7 +252,7 @@ The instructions are given for Ubuntu. For information about connecting to other
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
@@ -283,7 +283,7 @@ The instructions are given for Ubuntu. For information about connecting to other
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
@@ -321,7 +321,7 @@ The size of the file storage cannot be reduced.
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
@@ -351,7 +351,7 @@ The size of the file storage cannot be reduced.
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
@@ -383,7 +383,7 @@ The size of the file storage cannot be reduced.
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
@@ -415,7 +415,7 @@ The size of the file storage cannot be reduced.
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
@@ -449,7 +449,7 @@ The size of the file storage cannot be reduced.
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 2. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
@@ -490,7 +490,7 @@ The size of the file storage cannot be reduced.
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 2. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
@@ -531,7 +531,7 @@ Simultaneously with the file storage, the network created for it will be deleted
 </tabpanel>
 <tabpanel>
 
-1. Make sure that the OpenStack client [is installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) to the project.
+1. Make sure that the OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
 1. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 

@@ -2,7 +2,7 @@ The article provides examples of creating database instances with various settin
 
 ## Preparatory steps
 
-1. Check out the available resources and [quotas](/en/base/account/concepts/quotasandlimits) for the [region](/en/base/account/concepts/regions) in which you plan to create a DB instance. Different quotas can be set up for different regions.
+1. Check out the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) in which you plan to create a DB instance. Different quotas can be set up for different regions.
 
    If you want to increase quotas, contact [technical support](/en/contacts).
 
@@ -14,8 +14,8 @@ The article provides examples of creating database instances with various settin
 
 In all the examples below, DB instances are created with the following properties:
 
-- [Region](/en/base/account/concepts/regions): by default (the same as the project region).
-- [Availability zone](/en/additionals/start/architecture): by default (for the Moscow region — `GZ1`).
+- [Region](/en/tools-for-using-services/account/concepts/regions): by default (the same as the project region).
+- [Availability zone](/en/intro/start/architecture): by default (for the Moscow region — `GZ1`).
 - DBMS type and version: MySQL 8.0.
 - [Configuration](/en/dbs/dbaas/concepts/work-configs) of the DB instance: **Single**.
 - External IP address: assigned.
@@ -340,9 +340,9 @@ resource "vkcs_db_user" "db-user" {
 
 - The DB instance.
 - The external IP address for the instance — is displayed on the instance page.
-- The [Prometheus Node exporter](/en/dbs/dbaas/instructions/managing-extensions) extension (if installed) — is displayed on the instance page on the **Extensions** tab.
+- The [Prometheus Node exporter](/en/dbs/dbaas/service-management/managing-extensions) extension (if installed) — is displayed on the instance page on the **Extensions** tab.
 - DB on the instance (if created) — is displayed on the instance page on the **List of databases** tab.
-- [DB user](/en/dbs/dbaas/instructions/users) (if created) — is displayed on the instance page on the **Users** tab.
+- [DB user](/en/dbs/dbaas/service-management/users) (if created) — is displayed on the instance page on the **Users** tab.
 
 ## Delete unused resources
 

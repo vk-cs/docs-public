@@ -4,7 +4,7 @@ Two options for VM configuration will be considered: without additional settings
 
 ## Preparatory steps
 
-1. Review the available resources and [quotas](/en/base/account/concepts/quotasandlimits) for the [region](/en/base/account/concepts/regions) where you plan to create a VM. Different regions may have different quotas configured.
+1. Review the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) where you plan to create a VM. Different regions may have different quotas configured.
 
     If you want to increase quotas, contact [technical support](/en/contacts).
 
@@ -12,7 +12,7 @@ Two options for VM configuration will be considered: without additional settings
 
     Place the provider settings in the Terraform configuration file `provider.tf`.
 
-1. Make sure the OpenStack client is [installed](/en/manage/tools-for-using-services/openstack-cli#1_install_the_openstack_client) and then [authenticate](/en/manage/tools-for-using-services/openstack-cli#3_complete_authentication) with the project.
+1. Make sure the OpenStack client is [installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and then [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) with the project.
 
 1. Create a Terraform configuration file `variables.tf` with variables:
 
@@ -100,7 +100,7 @@ Two options for VM configuration will be considered: without additional settings
    </tabpanel>
    <tabpanel>
 
-   In the section about [availability zones](/en/additionals/start/architecture#availability_zones_567cfd7a).
+   In the section about [availability zones](/en/intro/start/architecture#availability_zones_567cfd7a).
 
    </tabpanel>
    </tabs>

@@ -29,7 +29,7 @@
 
       - `<префикс>` — если ключи, которые используются профиле AWS CLI, дают доступ не ко всему бакету, а только к объектам с определеннным префиксом, укажите префикс для просмотра объектов с ним.
   
-      - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+      - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
          - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
          - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
 
@@ -130,7 +130,7 @@
    print(key['Key'])
    ```
 
-Значение переменной `endpoint_url` должно соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
 - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
 - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
@@ -177,7 +177,7 @@
 
    - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
    - `<имя_загруженного файла>` — имя, которое будет присвоено скаченному объекту.
-   - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+   - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
        - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
 
@@ -253,7 +253,7 @@
 
    ```
 
-   Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+   Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
    - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
@@ -279,7 +279,7 @@
    print(response['Body'].read())
    ```
 
-   Значение переменной `endpoint_url` должно соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+   Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
    - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
@@ -337,7 +337,7 @@
   
       - `<ключ_объекта>` — имя объекта и путь до него, включая директории, если они есть.
       - `<настройка_acl>` — уровень доступа ACL. Если указанный уровень доступа не настроен в проекте, то объекту будет присвоен уровень доступа `private`.
-      - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+      - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
          - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
          - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
 
@@ -466,7 +466,7 @@
 	   fmt.Printf("%s", request.URL)
    }
    ```
-   Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+   Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
    - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
@@ -512,7 +512,7 @@
       print("Error creating link")
    ```
 
-   Значение переменной `endpoint_url` должно соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+   Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
    - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
@@ -618,7 +618,7 @@
    }
    ```
 
-   Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+   Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
    - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
@@ -653,7 +653,7 @@
 
    s3_client.copy(copy_source, target_bucket_name, target_path)
    ```
-   Значение переменной `endpoint_url` должно соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+   Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
    - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
@@ -683,7 +683,7 @@
 
    - `<бакет_источник>` — имя бакета, из которого копируется объект.
    - `<бакет_приемник>` — имя бакета, в который копируется объект. Если имена совпадают, объект копируется в тот же бакет.
-   - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+   - `<домен>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
        - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
        - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
 
@@ -839,7 +839,7 @@
    }
 
    ```
-   Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+   Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
    - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
@@ -870,7 +870,7 @@
    s3_client.delete_objects(Bucket=test_bucket_name, Delete={'Objects': object_to_delete})
    ```
 
-   Значение переменной `endpoint_url` должно соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+   Значение переменной `endpoint_url` должно соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
    - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
    - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
@@ -913,7 +913,7 @@
 
     - `<имя_бакета>` — имя бакета, для которого нужно удалить незавершенные загрузки.
 
-    - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+    - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
       - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
       - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
@@ -994,7 +994,7 @@
 
     - `<UploadId>` — **ID** объекта на вкладке **Multipart** в личном кабинете или значение параметра `UploadId` в ответе AWS CLI.
 
-    - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/base/account/concepts/regions) аккаунта:
+    - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](/ru/tools-for-using-services/account/concepts/regions) аккаунта:
 
       - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
       - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.

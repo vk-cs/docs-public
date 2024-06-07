@@ -27,11 +27,11 @@
 </tabpanel>
 <tabpanel>
 
-1. [Получите URL для использования API сервиса Trove](/ru/manage/tools-for-using-services/rest-api/endpoints#prosmotr_spiska_endpointov).
+1. [Получите URL для использования API сервиса Trove](/ru/tools-for-using-services/rest-api/endpoints#prosmotr_spiska_endpointov).
 
    URL имеет вид `https://<эндпоинт API>/<идентификатор проекта>/`.
 
-1. [Получите токен](/ru/manage/tools-for-using-services/rest-api/case-keystone-token) для авторизации запросов к API.
+1. [Получите токен](/ru/tools-for-using-services/rest-api/case-keystone-token) для авторизации запросов к API.
 
 1. Выполните обновление. Процедура обновления зависит от [конфигурации](../../concepts/work-configs/):
 

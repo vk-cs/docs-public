@@ -15,13 +15,13 @@ The documents are sent to the recipients in the [way](#methods_of_obtaining_acco
 
 <info>
 
-If an organization has several [projects](/en/base/account/concepts/projects), one set of documents is generated for all projects. Upon request, separate packages of documents for each project can be provided.
+If an organization has several [projects](/en/tools-for-using-services/account/concepts/projects), one set of documents is generated for all projects. Upon request, separate packages of documents for each project can be provided.
 
 </info>
 
 How to start receiving reporting documents from VK Cloud, read the article [Additional project configuration for legal entities](../../service-management/corporate). For all questions related to accounting documents, please contact the VK Cloud Document management department:
 
-- in [region](/en/base/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
+- in [region](/en/tools-for-using-services/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
 - in the region of Kazakhstan — at the address accountvk@qazcloud.kz.
 
 <warn>
@@ -39,7 +39,7 @@ The accounting documents reflect only expenses carried out as bank transfers fro
 </tablist>
 <tabpanel>
 
-This refers to work on [service offer agreements](/en/additionals/start/legal). This scheme is used by default in all projects, for individuals and legal entities.
+This refers to work on [service offer agreements](/en/intro/start/legal). This scheme is used by default in all projects, for individuals and legal entities.
 
 Legal entities working under such an agreement are provided with only one document — a universal transfer document. The form of the universal transfer document contains all the details of the invoice, set out in p.p. 5, 5.1, 5.2 art. 169 tax code of the Russian federation.
 
@@ -118,7 +118,7 @@ You can configure EDM with VK Cloud yourself or send a request for configuration
 
 <info>
 
-EDM work is only available for projects in [region](/en/base/account/concepts/regions) Moscow and only organizations registered in the Russian Federation.
+EDM work is only available for projects in [region](/en/tools-for-using-services/account/concepts/regions) Moscow and only organizations registered in the Russian Federation.
 
 </info>
 
@@ -126,7 +126,7 @@ EDM work is only available for projects in [region](/en/base/account/concepts/re
 
 To set up a paper workflow, contact the VK Cloud Workflow Department:
 
-- in [region](/en/base/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
+- in [region](/en/tools-for-using-services/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
 - in the region of Kazakhstan — at the address accountvk@qazcloud.kz.
 
 Provide information:
@@ -140,7 +140,7 @@ Provide information:
 
 VK Cloud can provide scanned copies of accounting documents in PDF format by e-mail — every month or on a one-time basis, upon request. To get scanned copies, send a request to VK Cloud:
 
-- in [region](/en/base/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
+- in [region](/en/tools-for-using-services/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
 - in the region of Kazakhstan — at the address accountvk@qazcloud.kz.
 
 ## Tax accounting

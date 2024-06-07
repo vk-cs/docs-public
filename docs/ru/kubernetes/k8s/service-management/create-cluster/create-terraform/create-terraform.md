@@ -1,6 +1,6 @@
 Далее описывается создание кластера с помощью Terraform. Также возможно создать кластер [с помощью личного кабинета VK Cloud](../create-webui/).
 
-Готовые примеры конфигурационных файлов для создания разных кластеров [приведены](/ru/manage/terraform/use-cases/k8s/create) в разделе Terraform.
+Готовые примеры конфигурационных файлов для создания разных кластеров [приведены](/ru/tools-for-using-services/terraform/how-to-guides/k8s/create) в разделе Terraform.
 
 <warn>
 
@@ -12,13 +12,13 @@
 
 ## Перед созданием кластера
 
-1. Ознакомьтесь с доступными ресурсами и [квотами](../../../../../tools-for-using-services/account/concepts/quotasandlimits/) для [региона](../../../../../tools-for-using-services/account/concepts/regions/), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
+1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits/) для [региона](../../../../../tools-for-using-services/account/concepts/regions/), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
 
    Если вы хотите увеличить квоты, напишите в [техническую поддержку](../../../../../../contacts).
 
 1. Ознакомьтесь с [особенностями использования Terraform](../../helpers/terraform-howto/) в сервисе Cloud Containers.
 
-1. [Установите Terraform и настройте провайдер](../../../../../manage/terraform/quick-start/), если этого еще не сделано.
+1. [Установите Terraform и настройте провайдер](/ru/tools-for-using-services/terraform/quick-start/), если этого еще не сделано.
 
 1. [Установите OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli/) и [пройдите авторизацию](/ru/tools-for-using-services/cli/openstack-cli/), если этого еще не сделано.
 

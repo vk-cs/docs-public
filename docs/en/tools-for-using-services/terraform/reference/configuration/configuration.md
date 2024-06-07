@@ -54,7 +54,7 @@ The file consists of the following sections:
   - `password`: specify your account password;
   - `username`, `project_id`, `region`: the values in the file that is downloaded from the personal account are valid for working with the current project. These values can also be obtained in your personal account, on the [Project settings](https://msk.cloud.vk.com/app/en/project/terraform) page, on the **Terraform** tab.
 
-  The values of some arguments depend on the [region](/ru/base/account/concepts/regions):
+  The values of some arguments depend on the [region](/ru/tools-for-using-services/account/concepts/regions):
 
   - `region`:
 

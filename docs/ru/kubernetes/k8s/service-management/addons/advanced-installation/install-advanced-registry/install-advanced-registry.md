@@ -1,6 +1,6 @@
 ## Подготовительные шаги
 
-1. [Создайте](/ru/base/s3/quick-start/create-bucket) в Cloud Storage бакет, который будет использоваться для хранения Docker-образов.
+1. [Создайте](ru/storage/s3/service-management/buckets/create-bucket) в Cloud Storage бакет, который будет использоваться для хранения Docker-образов.
 
    При создании выберите:
 
@@ -40,7 +40,7 @@
 
    Запишите вывод команды (в формате `<логин>:<зашифрованный пароль>`).
 
-1. [Добавьте](/ru/networks/vnet/operations/manage-floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt) плавающий IP-адрес или [найдите](/ru/networks/vnet/operations/manage-floating-ip#prosmotr_spiska_plavayushchih_ip_adresov) существующий непривязанный плавающий IP-адрес.
+1. [Добавьте](/ru/networks/vnet/service-management/floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt) плавающий IP-адрес или [найдите](/ru/networks/vnet/service-management/floating-ip#prosmotr_spiska_plavayushchih_ip_adresov) существующий непривязанный плавающий IP-адрес.
 
    Запишите этот IP-адрес. Он будет использоваться для доступа к реестру Docker.
 
@@ -104,7 +104,7 @@
    </tabpanel>
    <tabpanel>
 
-   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Подготовьтесь к работе с Terraform](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);
@@ -230,7 +230,7 @@
    </tabpanel>
    <tabpanel>
 
-   1. [Подготовьтесь к работе с Terraform](/ru/manage/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Подготовьтесь к работе с Terraform](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
    1. Добавьте в ваши конфигурационные файлы Terraform, которые описывают кластер:
 
       - ресурс [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md);

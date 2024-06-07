@@ -280,7 +280,7 @@ velero help
 
 1. If you don't need the backups anymore, delete them from the bucket that Velero used.
 
-   If necessary, also [delete the bucket itself](/en/base/s3/buckets/bucket#removing_a_bucket).
+   If necessary, also [delete the bucket itself](/en/storage/s3/service-management/buckets/bucket#removing_a_bucket).
 
 1. A running cluster consumes computing resources. If you no longer need it:
 

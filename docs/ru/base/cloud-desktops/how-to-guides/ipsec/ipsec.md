@@ -11,11 +11,11 @@
 
 ## Подготовительные шаги
 
-1. Убедитесь, что клиент OpenStack [установлен](/ru/manage/tools-for-using-services/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/manage/tools-for-using-services/openstack-cli#3_proydite_autentifikaciyu) в проекте.
+1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
 1. Создайте LDAP-окружение:
 
-    1. Выберите или [создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) в VK Cloud виртуальную сеть с доступом к интернету. Используйте существующий маршрутизатор с подключением к внешней сети или [создайте](/ru/networks/vnet/operations/manage-router#dobavlenie_marshrutizatora) новый.
+    1. Выберите или [создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) в VK Cloud виртуальную сеть с доступом к интернету. Используйте существующий маршрутизатор с подключением к внешней сети или [создайте](/ru/networks/vnet/service-management/router#dobavlenie_marshrutizatora) новый.
 
         Запишите следующую информацию:
 
@@ -28,7 +28,7 @@
 
 1. Создайте VDI-окружение:
 
-    1. Выберите или [создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) в VK Cloud виртуальную сеть с доступом к интернету, которая будет выполнять функцию транзитной сети. Используйте существующий маршрутизатор с подключением к внешней сети или [создайте](/ru/networks/vnet/operations/manage-router#dobavlenie_marshrutizatora) новый.
+    1. Выберите или [создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) в VK Cloud виртуальную сеть с доступом к интернету, которая будет выполнять функцию транзитной сети. Используйте существующий маршрутизатор с подключением к внешней сети или [создайте](/ru/networks/vnet/service-management/router#dobavlenie_marshrutizatora) новый.
 
         Запишите следующую информацию:
 
@@ -84,7 +84,7 @@
 
 ## 1. Настройте VPN-туннель на стороне AD/LDAP
 
-В личном кабинете [создайте VPN](/ru/networks/vnet/operations/manage-vpn) со следующими параметрами:
+В личном кабинете [создайте VPN](/ru/networks/vnet/service-management/vpn) со следующими параметрами:
 
 1. На шаге «Настройка IKE» укажите алгоритмы для первичного IPsec-соединения:
 
@@ -436,7 +436,7 @@
 
 ## 11. Проверьте работоспособность
 
-1. [Создайте](/ru/networks/vnet/operations/manage-net#sozdanie_seti) виртуальную сеть с CIDR `10.55.4.0/22` и маршрутизатором `vdi-router`. Эта сеть имитирует сеть VDI и нужна для проверки сетевой связности. При развертывании VDI такая сеть создается автоматически.
+1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) виртуальную сеть с CIDR `10.55.4.0/22` и маршрутизатором `vdi-router`. Эта сеть имитирует сеть VDI и нужна для проверки сетевой связности. При развертывании VDI такая сеть создается автоматически.
 
 1. Создайте тестовую [виртуальную машину](/ru/base/iaas/service-management/vm/vm-create) в сети `10.55.4.0/22` и подключитесь к ней по SSH.
 
@@ -457,6 +457,6 @@
 Если созданные ресурсы вам больше не нужны, удалите их:
 
 1. [Удалите](/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm) виртуальные машины.
-1. [Удалите](/ru/networks/vnet/operations/manage-vpn#udalenie_vpn_tunnelya) VPN.
-1. [Удалите](/ru/networks/vnet/operations/manage-router#udalenie_marshrutizatora) маршрутизаторы.
-1. Удалите [подсеть](/ru/networks/vnet/operations/manage-net#udalenie_podseti) и [сеть](/ru/networks/vnet/operations/manage-net#udalenie_seti), в которой была размещена ВМ.
+1. [Удалите](/ru/networks/vnet/service-management/vpn#udalenie_vpn_tunnelya) VPN.
+1. [Удалите](/ru/networks/vnet/service-management/router#udalenie_marshrutizatora) маршрутизаторы.
+1. Удалите [подсеть](/ru/networks/vnet/service-management/net#udalenie_podseti) и [сеть](/ru/networks/vnet/service-management/net#udalenie_seti), в которой была размещена ВМ.
