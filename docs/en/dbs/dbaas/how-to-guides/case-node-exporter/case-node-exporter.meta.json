@@ -1,20 +1,20 @@
 {
-  "title": "Monitoring Redis with Prometheus, Node exporter and Grafana",
-  "pageDescription": "Configuring monitoring of the Redis DBMS in VK Cloud using the Prometheus server, Node exporter extension and subsequent visualization in Grafana.",
-  "shortDescription": "How to set up monitoring for the Redis DBMS using a separate Prometheus server and visualize it in Grafana",
-  "metaTitle": "Monitoring Redis with Prometheus, Node exporter and Grafana",
-  "metaDescription": "VK Cloud: configuring Redis DBMS monitoring in VK Cloud using Prometheus server, Node exporter extension and subsequent visualization in Grafana",
-  "sectionTitle": "Monitoring Redis with Prometheus, Node exporter and Grafana",
-  "icon": "",
-  "weight": 4,
-  "additionalUuids": [
-    "a9f3571f-0da5-42aa-bb43-3ee9a06b25bd",
-    "81ae591c-4ed2-42b2-83d7-6a8efae3dfc7",
-    "8764d38d-f35c-41ad-b0e3-7fc6d998c94b",
-    "2953d0ab-c593-44d9-b20d-48ecb3320f81",
-    "fda4a0b5-6018-4308-aff0-993813ea9cc9"
-  ],
-  "uuid": "3b71b3ea-8349-46c7-8df5-06eae82a4fcc",
-  "createdAt": "2022-03-26T14:10:44.000Z",
-  "updatedAt": "2024-06-05T16:41:45.000Z"
+    "title": "Monitoring Redis with Prometheus, Node exporter and Grafana",
+    "pageDescription": "Configuring monitoring of the Redis DBMS in VK Cloud using the Prometheus server, Node exporter extension and subsequent visualization in Grafana.",
+    "shortDescription": "How to set up monitoring for the Redis DBMS using a separate Prometheus server and visualize it in Grafana",
+    "metaTitle": "Monitoring Redis with Prometheus, Node exporter and Grafana",
+    "metaDescription": "VK Cloud: configuring Redis DBMS monitoring in VK Cloud using Prometheus server, Node exporter extension and subsequent visualization in Grafana",
+    "sectionTitle": "Monitoring Redis with Prometheus, Node exporter and Grafana",
+    "icon": "",
+    "weight": 4,
+    "additionalUuids": [
+        "a9f3571f-0da5-42aa-bb43-3ee9a06b25bd",
+        "81ae591c-4ed2-42b2-83d7-6a8efae3dfc7",
+        "8764d38d-f35c-41ad-b0e3-7fc6d998c94b",
+        "2953d0ab-c593-44d9-b20d-48ecb3320f81",
+        "fda4a0b5-6018-4308-aff0-993813ea9cc9"
+    ],
+    "uuid": "3b71b3ea-8349-46c7-8df5-06eae82a4fcc",
+    "createdAt": "2022-03-26T14:10:44.000Z",
+    "updatedAt": "2024-06-07T09:14:44.000Z"
 }

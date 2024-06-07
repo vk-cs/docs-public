@@ -3489,5 +3489,7 @@
   "/ru/storage/s3/use-cases": "/ru/storage/s3/how-to-guides",
   "/ru/storage/s3/use-cases/load-large-image": "/ru/storage/s3/how-to-guides/load-large-image",
   "/ru/storage/s3/use-cases/s3-domain": "/ru/storage/s3/how-to-guides/s3-domain",
-  "/ru/storage/s3/references": "/ru/storage/s3/reference"
+  "/ru/storage/s3/references": "/ru/storage/s3/reference",
+  "/ru/en": "/en/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
+  "/ru/ru": "/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad"
 }
