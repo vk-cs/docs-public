@@ -562,6 +562,7 @@
 /docs/ru/tools-for-using-services/account/service-management/actionslogs
 /docs/ru/tools-for-using-services/account/service-management/debugging
 /docs/ru/tools-for-using-services/account/how-to-guides
+/docs/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad
 /docs/ru/tools-for-using-services/account/how-to-guides/systemstate
 /docs/ru/tools-for-using-services/account/how-to-guides/account-delete
 /docs/ru/tools-for-using-services/account/how-to-guides/ideasportal

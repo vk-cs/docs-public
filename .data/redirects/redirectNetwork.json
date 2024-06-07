@@ -25672,5 +25672,17 @@
     "destination": "/ru/storage/s3/reference",
     "permanent": false,
     "locale": false
+  },
+  {
+    "source": "/ru/en",
+    "destination": "/en/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ru",
+    "destination": "/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
+    "permanent": false,
+    "locale": false
   }
 ]
