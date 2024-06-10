@@ -9,7 +9,7 @@ Changing created virtual resources (VMs, load balancers, DB instances) outside t
 1. Make sure that your [connection to the service](../../config/) is configured.
 1. (Optional) If you want to use your own image to create desktops, [prepare](/en/base/cloud-desktops/concepts/desktop-image) and [check](/en/base/cloud-desktops/how-to-guides/check-desktop-image) it.
 1. Run the pool creation wizard:
-   1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+   1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud personal account.
    1. Go to **Cloud Desktop** → **Desktop pools**.
    1. Click the **Add** button.
 

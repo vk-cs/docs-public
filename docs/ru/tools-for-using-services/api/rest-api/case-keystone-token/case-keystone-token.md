@@ -193,5 +193,5 @@ x-subject-token: gAAAAABkirQja1Lgr9psuyf6fC6e3Sy5WMYubpmwMNPXuT6APQkf-BPRRAySTBG
 
 Другие примеры использования токена:
 
-- [просмотр логов](/ru/manage/logging/service-management/view-logs) в сервисе Cloud Logging;
+- [просмотр логов](/ru/monitoring-services/logging/service-management/view-logs) в сервисе Cloud Logging;
 - [работа](/ru/tools-for-using-services/api/api-spec/api-dns) с публичным DNS.

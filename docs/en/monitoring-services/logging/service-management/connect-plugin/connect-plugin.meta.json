@@ -1,0 +1,13 @@
+{
+    "title": "Plugin installation",
+    "pageDescription": "How to install and configure the vkcloudlogs-fluent-bit-plugin plugin to send logs to VK Cloud.",
+    "shortDescription": "How to install and configure the vkcloudlogs-fluent-bit-plugin plugin to send logs",
+    "metaTitle": "Plugin installation",
+    "metaDescription": "How to install and configure the vkcloudlogs-fluent-bit-plugin plugin to send logs to VK Cloud.",
+    "sectionTitle": "Plugin installation",
+    "icon": "",
+    "weight": 3,
+    "uuid": "fd16f5be-7753-4a6b-99ed-975f209dd85e",
+    "createdAt": "2022-12-27T15:32:39.000Z",
+    "updatedAt": "2024-05-22T12:44:33.000Z"
+}
