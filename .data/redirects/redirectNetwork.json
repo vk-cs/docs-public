@@ -2587,79 +2587,79 @@
   },
   {
     "source": "/en/additionals/logging",
-    "destination": "/en/manage/logging",
+    "destination": "/en/monitoring-services/logging",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/logging/start",
-    "destination": "/en/manage/logging/concepts",
+    "destination": "/en/monitoring-services/logging/concepts",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/logging/start/connect-plugin",
-    "destination": "/en/manage/logging/service-management/connect-plugin",
+    "destination": "/en/monitoring-services/logging/service-management/connect-plugin",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/logging/start/intro",
-    "destination": "/en/manage/logging/concepts/about",
+    "destination": "/en/monitoring-services/logging/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/logging/start/logging-start",
-    "destination": "/en/manage/logging/quick-start",
+    "destination": "/en/monitoring-services/logging/quick-start",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/logging/start/view-logs",
-    "destination": "/en/manage/logging/service-management/view-logs",
+    "destination": "/en/monitoring-services/logging/service-management/view-logs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/logging",
-    "destination": "/ru/manage/logging",
+    "destination": "/ru/monitoring-services/logging",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/logging/start",
-    "destination": "/ru/manage/logging/concepts",
+    "destination": "/ru/monitoring-services/logging/concepts",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/logging/start/connect-plugin",
-    "destination": "/ru/manage/logging/service-management/connect-plugin",
+    "destination": "/ru/monitoring-services/logging/service-management/connect-plugin",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/logging/start/intro",
-    "destination": "/ru/manage/logging/concepts/about",
+    "destination": "/ru/monitoring-services/logging/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/logging/start/logging-start",
-    "destination": "/ru/manage/logging/quick-start",
+    "destination": "/ru/monitoring-services/logging/quick-start",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/logging/start/search-tools",
-    "destination": "/ru/manage/logging/concepts/search-tools",
+    "destination": "/ru/monitoring-services/logging/concepts/search-tools",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/logging/start/view-logs",
-    "destination": "/ru/manage/logging/service-management/view-logs",
+    "destination": "/ru/monitoring-services/logging/service-management/view-logs",
     "permanent": false,
     "locale": false
   },
@@ -3607,7 +3607,7 @@
   },
   {
     "source": "/ru/manage/logging/start/view-logs",
-    "destination": "/ru/manage/logging/service-management/view-logs",
+    "destination": "/ru/monitoring-services/logging/service-management/view-logs",
     "permanent": false,
     "locale": false
   },
@@ -9373,31 +9373,31 @@
   },
   {
     "source": "/en/manage/logging/start",
-    "destination": "/en/manage/logging/concepts",
+    "destination": "/en/monitoring-services/logging/concepts",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/logging/start/intro",
-    "destination": "/en/manage/logging/concepts/about",
+    "destination": "/en/monitoring-services/logging/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/logging/start/connect-plugin",
-    "destination": "/en/manage/logging/service-management/connect-plugin",
+    "destination": "/en/monitoring-services/logging/service-management/connect-plugin",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/logging/start/view-logs",
-    "destination": "/en/manage/logging/service-management/view-logs",
+    "destination": "/en/monitoring-services/logging/service-management/view-logs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/logging/start/logging-start",
-    "destination": "/en/manage/logging/quick-start",
+    "destination": "/en/monitoring-services/logging/quick-start",
     "permanent": false,
     "locale": false
   },
@@ -9559,37 +9559,37 @@
   },
   {
     "source": "/ru/manage/logging/start",
-    "destination": "/ru/manage/logging/concepts",
+    "destination": "/ru/monitoring-services/logging/concepts",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/logging/start/intro",
-    "destination": "/ru/manage/logging/concepts/about",
+    "destination": "/ru/monitoring-services/logging/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/logging/start/search-tools",
-    "destination": "/ru/manage/logging/concepts/search-tools",
+    "destination": "/ru/monitoring-services/logging/concepts/search-tools",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/logging/start/connect-plugin",
-    "destination": "/ru/manage/logging/service-management/connect-plugin",
+    "destination": "/ru/monitoring-services/logging/service-management/connect-plugin",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/logging/view-logs",
-    "destination": "/ru/manage/logging/service-management/view-logs",
+    "destination": "/ru/monitoring-services/logging/service-management/view-logs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/logging/start/logging-start",
-    "destination": "/ru/manage/logging/quick-start",
+    "destination": "/ru/monitoring-services/logging/quick-start",
     "permanent": false,
     "locale": false
   },
@@ -13933,109 +13933,109 @@
   },
   {
     "source": "/en/manage/monitoring/monitoring-info",
-    "destination": "/en/manage/monitoring/concepts",
+    "destination": "/en/monitoring-services/monitoring/concepts",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/monitoring/monitoring-info/mon-architecture",
-    "destination": "/en/manage/monitoring/concepts/architecture",
+    "destination": "/en/monitoring-services/monitoring/concepts/architecture",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/monitoring/monitoring-dash/mon-metrics",
-    "destination": "/en/manage/monitoring/concepts/mon-metrics",
+    "destination": "/en/monitoring-services/monitoring/concepts/mon-metrics",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/monitoring/monitoring-dash/mon-read-metrics",
-    "destination": "/en/manage/monitoring/concepts/mon-read-metrics",
+    "destination": "/en/monitoring-services/monitoring/concepts/mon-read-metrics",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/monitoring/monitoring-dash",
-    "destination": "/en/manage/monitoring/service-management",
+    "destination": "/en/monitoring-services/monitoring/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/monitoring/monitoring-start/mon-setup-current",
-    "destination": "/en/manage/monitoring/service-management/mon-setup-current",
+    "destination": "/en/monitoring-services/monitoring/service-management/mon-setup-current",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/monitoring/monitoring-info/mon-agent-sw",
-    "destination": "/en/manage/monitoring/service-management/mon-setup-current",
+    "destination": "/en/monitoring-services/monitoring/service-management/mon-setup-current",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/monitoring/monitoring-start/mon-setup-new",
-    "destination": "/en/manage/monitoring/service-management/mon-setup-new",
+    "destination": "/en/monitoring-services/monitoring/service-management/mon-setup-new",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/monitoring/monitoring-start",
-    "destination": "/en/manage/monitoring/quick-start",
+    "destination": "/en/monitoring-services/monitoring/quick-start",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/monitoring/monitoring-info",
-    "destination": "/ru/manage/monitoring/concepts",
+    "destination": "/ru/monitoring-services/monitoring/concepts",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/monitoring/monitoring-info/mon-architecture",
-    "destination": "/ru/manage/monitoring/concepts/architecture",
+    "destination": "/ru/monitoring-services/monitoring/concepts/architecture",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/monitoring/monitoring-dash/mon-metrics",
-    "destination": "/ru/manage/monitoring/concepts/mon-metrics",
+    "destination": "/ru/monitoring-services/monitoring/concepts/mon-metrics",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/monitoring/monitoring-dash/mon-read-metrics",
-    "destination": "/ru/manage/monitoring/concepts/mon-read-metrics",
+    "destination": "/ru/monitoring-services/monitoring/concepts/mon-read-metrics",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/monitoring/monitoring-dash",
-    "destination": "/ru/manage/monitoring/service-management",
+    "destination": "/ru/monitoring-services/monitoring/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/monitoring/monitoring-start/mon-setup-current",
-    "destination": "/ru/manage/monitoring/service-management/mon-setup-current",
+    "destination": "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/monitoring/monitoring-info/mon-agent-sw",
-    "destination": "/ru/manage/monitoring/service-management/mon-setup-current",
+    "destination": "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/monitoring/monitoring-start/mon-setup-new",
-    "destination": "/ru/manage/monitoring/service-management/mon-setup-new",
+    "destination": "/ru/monitoring-services/monitoring/service-management/mon-setup-new",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/monitoring/monitoring-start",
-    "destination": "/ru/manage/monitoring/quick-start",
+    "destination": "/ru/monitoring-services/monitoring/quick-start",
     "permanent": false,
     "locale": false
   },
@@ -20965,7 +20965,7 @@
   },
   {
     "source": "/en/manage/alerting/alerting-about",
-    "destination": "/en/manage/alerting/about",
+    "destination": "/en/monitoring-services/alerting/about",
     "permanent": false,
     "locale": false
   },
@@ -22315,7 +22315,7 @@
   },
   {
     "source": "/ru/manage/alerting/alerting-about",
-    "destination": "/ru/manage/alerting/about",
+    "destination": "/ru/monitoring-services/alerting/about",
     "permanent": false,
     "locale": false
   },
@@ -22765,139 +22765,139 @@
   },
   {
     "source": "/en/manage/logging/concepts/intro",
-    "destination": "/en/manage/logging/concepts/about",
+    "destination": "/en/monitoring-services/logging/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/logging/instructions",
-    "destination": "/en/manage/logging/service-management",
+    "destination": "/en/monitoring-services/logging/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/logging/instructions/generate-userdata",
-    "destination": "/en/manage/logging/service-management/generate-userdata",
+    "destination": "/en/monitoring-services/logging/service-management/generate-userdata",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/logging/instructions/connect-plugin",
-    "destination": "/en/manage/logging/service-management/connect-plugin",
+    "destination": "/en/monitoring-services/logging/service-management/connect-plugin",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/logging/instructions/manage-vkcloudlogs-plugin",
-    "destination": "/en/manage/logging/service-management/manage-vkcloudlogs-plugin",
+    "destination": "/en/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/logging/instructions/view-logs",
-    "destination": "/en/manage/logging/service-management/view-logs",
+    "destination": "/en/monitoring-services/logging/service-management/view-logs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/monitoring/concepts/mon-architecture",
-    "destination": "/en/manage/monitoring/concepts/architecture",
+    "destination": "/en/monitoring-services/monitoring/concepts/architecture",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/monitoring/instructions",
-    "destination": "/en/manage/monitoring/service-management",
+    "destination": "/en/monitoring-services/monitoring/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/monitoring/instructions/mon-setup-new",
-    "destination": "/en/manage/monitoring/service-management/mon-setup-new",
+    "destination": "/en/monitoring-services/monitoring/service-management/mon-setup-new",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/monitoring/instructions/mon-setup-current",
-    "destination": "/en/manage/monitoring/service-management/mon-setup-current",
+    "destination": "/en/monitoring-services/monitoring/service-management/mon-setup-current",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/monitoring/instructions/mon-setup-current",
-    "destination": "/en/manage/monitoring/service-management/mon-setup-current",
+    "destination": "/en/monitoring-services/monitoring/service-management/mon-setup-current",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/logging/concepts/intro",
-    "destination": "/ru/manage/logging/concepts/about",
+    "destination": "/ru/monitoring-services/logging/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/logging/instructions",
-    "destination": "/ru/manage/logging/service-management",
+    "destination": "/ru/monitoring-services/logging/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/logging/instructions/generate-userdata",
-    "destination": "/ru/manage/logging/service-management/generate-userdata",
+    "destination": "/ru/monitoring-services/logging/service-management/generate-userdata",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/logging/instructions/connect-plugin",
-    "destination": "/ru/manage/logging/service-management/connect-plugin",
+    "destination": "/ru/monitoring-services/logging/service-management/connect-plugin",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/logging/instructions/manage-vkcloudlogs-plugin",
-    "destination": "/ru/manage/logging/service-management/manage-vkcloudlogs-plugin",
+    "destination": "/ru/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/logging/instructions/view-logs",
-    "destination": "/ru/manage/logging/service-management/view-logs",
+    "destination": "/ru/monitoring-services/logging/service-management/view-logs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/monitoring/concepts/mon-architecture",
-    "destination": "/ru/manage/monitoring/concepts/architecture",
+    "destination": "/ru/monitoring-services/monitoring/concepts/architecture",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/monitoring/instructions",
-    "destination": "/ru/manage/monitoring/service-management",
+    "destination": "/ru/monitoring-services/monitoring/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/monitoring/instructions/mon-setup-new",
-    "destination": "/ru/manage/monitoring/service-management/mon-setup-new",
+    "destination": "/ru/monitoring-services/monitoring/service-management/mon-setup-new",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/monitoring/instructions/mon-setup-current",
-    "destination": "/ru/manage/monitoring/service-management/mon-setup-current",
+    "destination": "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/monitoring/instructions/mon-setup-current",
-    "destination": "/ru/manage/monitoring/service-management/mon-setup-current",
+    "destination": "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/monitoring/instructions/telegraf-manage",
-    "destination": "/ru/manage/monitoring/service-management/telegraf-manage",
+    "destination": "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
     "permanent": false,
     "locale": false
   },
@@ -25682,6 +25682,384 @@
   {
     "source": "/ru/ru",
     "destination": "/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage",
+    "destination": "/en/monitoring-services",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/logging",
+    "destination": "/en/monitoring-services/logging",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/logging/quick-start",
+    "destination": "/en/monitoring-services/logging/quick-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/logging/concepts",
+    "destination": "/en/monitoring-services/logging/concepts",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/logging/concepts/about",
+    "destination": "/en/monitoring-services/logging/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/logging/concepts/search-tools",
+    "destination": "/en/monitoring-services/logging/concepts/search-tools",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/logging/service-management",
+    "destination": "/en/monitoring-services/logging/service-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/logging/service-management/generate-userdata",
+    "destination": "/en/monitoring-services/logging/service-management/generate-userdata",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/logging/service-management/connect-plugin",
+    "destination": "/en/monitoring-services/logging/service-management/connect-plugin",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/logging/service-management/manage-vkcloudlogs-plugin",
+    "destination": "/en/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/logging/service-management/view-logs",
+    "destination": "/en/monitoring-services/logging/service-management/view-logs",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/alerting",
+    "destination": "/en/monitoring-services/alerting",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/alerting/about",
+    "destination": "/en/monitoring-services/alerting/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/alerting/notification",
+    "destination": "/en/monitoring-services/alerting/notification",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/alerting/notification/notification-add",
+    "destination": "/en/monitoring-services/alerting/notification/notification-add",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/alerting/notification/notification-edit",
+    "destination": "/en/monitoring-services/alerting/notification/notification-edit",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/alerting/triggers",
+    "destination": "/en/monitoring-services/alerting/triggers",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/alerting/triggers/trigger-edit",
+    "destination": "/en/monitoring-services/alerting/triggers/trigger-edit",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/alerting/triggers/triggers-add",
+    "destination": "/en/monitoring-services/alerting/triggers/triggers-add",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/alerting/triggers/trigger-start",
+    "destination": "/en/monitoring-services/alerting/triggers/trigger-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/alerting/incidents",
+    "destination": "/en/monitoring-services/alerting/incidents",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/monitoring",
+    "destination": "/en/monitoring-services/monitoring",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/monitoring/quick-start",
+    "destination": "/en/monitoring-services/monitoring/quick-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/monitoring/concepts",
+    "destination": "/en/monitoring-services/monitoring/concepts",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/monitoring/concepts/architecture",
+    "destination": "/en/monitoring-services/monitoring/concepts/architecture",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/monitoring/concepts/mon-metrics",
+    "destination": "/en/monitoring-services/monitoring/concepts/mon-metrics",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/monitoring/concepts/mon-read-metrics",
+    "destination": "/en/monitoring-services/monitoring/concepts/mon-read-metrics",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/monitoring/service-management",
+    "destination": "/en/monitoring-services/monitoring/service-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/monitoring/service-management/mon-setup-new",
+    "destination": "/en/monitoring-services/monitoring/service-management/mon-setup-new",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/monitoring/service-management/mon-setup-current",
+    "destination": "/en/monitoring-services/monitoring/service-management/mon-setup-current",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/manage/monitoring/service-management/mon-setup-current",
+    "destination": "/en/monitoring-services/monitoring/service-management/mon-setup-current",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage",
+    "destination": "/ru/monitoring-services",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/logging",
+    "destination": "/ru/monitoring-services/logging",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/logging/quick-start",
+    "destination": "/ru/monitoring-services/logging/quick-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/logging/concepts",
+    "destination": "/ru/monitoring-services/logging/concepts",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/logging/concepts/about",
+    "destination": "/ru/monitoring-services/logging/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/logging/concepts/search-tools",
+    "destination": "/ru/monitoring-services/logging/concepts/search-tools",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/logging/service-management",
+    "destination": "/ru/monitoring-services/logging/service-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/logging/service-management/generate-userdata",
+    "destination": "/ru/monitoring-services/logging/service-management/generate-userdata",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/logging/service-management/connect-plugin",
+    "destination": "/ru/monitoring-services/logging/service-management/connect-plugin",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/logging/service-management/manage-vkcloudlogs-plugin",
+    "destination": "/ru/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/logging/service-management/view-logs",
+    "destination": "/ru/monitoring-services/logging/service-management/view-logs",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/alerting",
+    "destination": "/ru/monitoring-services/alerting",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/alerting/about",
+    "destination": "/ru/monitoring-services/alerting/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/alerting/notification",
+    "destination": "/ru/monitoring-services/alerting/notification",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/alerting/notification/notification-add",
+    "destination": "/ru/monitoring-services/alerting/notification/notification-add",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/alerting/notification/notification-edit",
+    "destination": "/ru/monitoring-services/alerting/notification/notification-edit",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/alerting/triggers",
+    "destination": "/ru/monitoring-services/alerting/triggers",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/alerting/triggers/triggers-add",
+    "destination": "/ru/monitoring-services/alerting/triggers/triggers-add",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/alerting/triggers/trigger-edit",
+    "destination": "/ru/monitoring-services/alerting/triggers/trigger-edit",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/alerting/triggers/trigger-start",
+    "destination": "/ru/monitoring-services/alerting/triggers/trigger-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/alerting/incidents",
+    "destination": "/ru/monitoring-services/alerting/incidents",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/monitoring",
+    "destination": "/ru/monitoring-services/monitoring",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/monitoring/quick-start",
+    "destination": "/ru/monitoring-services/monitoring/quick-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/monitoring/concepts",
+    "destination": "/ru/monitoring-services/monitoring/concepts",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/monitoring/concepts/architecture",
+    "destination": "/ru/monitoring-services/monitoring/concepts/architecture",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/monitoring/concepts/mon-metrics",
+    "destination": "/ru/monitoring-services/monitoring/concepts/mon-metrics",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/monitoring/concepts/mon-read-metrics",
+    "destination": "/ru/monitoring-services/monitoring/concepts/mon-read-metrics",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/monitoring/service-management",
+    "destination": "/ru/monitoring-services/monitoring/service-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/monitoring/service-management/mon-setup-new",
+    "destination": "/ru/monitoring-services/monitoring/service-management/mon-setup-new",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/monitoring/service-management/mon-setup-current",
+    "destination": "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/monitoring/service-management/mon-setup-current",
+    "destination": "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/manage/monitoring/service-management/telegraf-manage",
+    "destination": "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
     "permanent": false,
     "locale": false
   }
