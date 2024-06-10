@@ -18,26 +18,26 @@ To join an existing VK Cloud project, follow the instructions in article [Join a
 
     - **Work email**: your email address.
 
-    <info>
+      For some corporate accounts, special registration conditions are available. Therefore, specifying a work email is recommended.
 
-    For some corporate accounts, special registration conditions are available. Therefore, specifying a work email is recommended.
+      The maximum length of email address is 320 characters.
 
-    </info>
+      <warn>
+
+      You cannot use the `+` character in the address.
+
+      </warn>
 
     - **Password**: a new password.
 
-    <warn>
+      The minimum password length is 8 characters. The password must contain:
 
-    The minimum password length is 8 characters. The password must contain:
+      - uppercase and lowercase Latin letters;
+      - at least one number or one special character `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `/`, `\`, `|`, `` ` ``, `[`, `]`, `{`, `}`, `(`, `)`.
 
-    - uppercase and lowercase Latin letters;
-    - at least one number or special character `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `/`, `\`, `|`, `` ` ``, `[`, `]`, `{`, `}`, `(`, `)`.
+      The password must not contain repeating groups of characters, such as ``aaa123123123``.
 
-    The password must not contain repeating groups of characters, such as ``aaa123123123``.
-
-    </warn>
-
-1. Click **Create an account**.
+2. Click **Create an account**.
 
 The account confirmation window opens. A confirmation email is sent to the specified email address.
 
@@ -62,7 +62,7 @@ If you do not immediately confirm the account, when you try to perform an action
 1. If additional account verification is requested, send a request to technical support:
 
    <details>
-     <summary>Why does this check appear?</summary>
+   <summary>Why does this check appear?</summary>
 
    VK Cloud platform automatically [validates the security status](../../it-security/tech#antifraud) of the account. Depending on the results of the check, one of these options is offered:
 
