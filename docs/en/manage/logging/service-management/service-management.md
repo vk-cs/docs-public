@@ -1,1 +1,0 @@
-Brief step-by-step instructions for performing basic operations in the service.

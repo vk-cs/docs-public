@@ -6,16 +6,16 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/manage/alerting/about"
+                    "link": "/ru/monitoring-services/alerting/about"
                 },
                 {
-                    "link": "/ru/manage/alerting/notification"
+                    "link": "/ru/monitoring-services/alerting/notification"
                 },
                 {
-                    "link": "/ru/manage/alerting/triggers"
+                    "link": "/ru/monitoring-services/alerting/triggers"
                 },
                 {
-                    "link": "/ru/manage/alerting/incidents"
+                    "link": "/ru/monitoring-services/alerting/incidents"
                 }
             ]
         }

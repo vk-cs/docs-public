@@ -196,6 +196,6 @@ Task: to get a list of networks via the REST API (Neutron service).
 
 Other examples of token usage:
 
-- [viewing logs](/en/manage/logging/start/view-logs) in the Cloud Logging service;
+- [viewing logs](/en/monitoring-services/logging/service-management/view-logs) in the Cloud Logging service;
 <!-- @TODO change for EN version -->
 - [working](/ru/tools-for-using-services/api/api-dns "change-lang") with public DNS.
