@@ -1,9 +1,9 @@
 {
     "title": "Ingress NGINX",
-    "pageDescription": "The configuration and installation of the Ingress controller addon is described here.",
+    "pageDescription": "The configuration and installation of the Ingress controller add-on is described here.",
     "shortDescription": "",
     "metaTitle": "Ingress NGINX",
-    "metaDescription": "Configuring and installing the Ingress controller addon",
+    "metaDescription": "Configuring and installing the Ingress controller add-on",
     "sectionTitle": "Ingress NGINX",
     "icon": "",
     "weight": 6,

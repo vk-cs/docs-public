@@ -1,4 +1,4 @@
-Various add-ons (additional services) are available for Cloud Containers clusters. They can be selected in any combination and installed either when [creating a cluster using Terraform](../../../service-management/create-cluster/create-terraform), or [later](../../../service-management/addons/manage-addons#installing_the_addon) in already an existing cluster. The installation process is automated and requires minimal user intervention.
+Various add-ons (additional services) are available for Cloud Containers clusters. They can be selected in any combination and installed either when [creating a cluster using Terraform](../../../service-management/create-cluster/create-terraform), or [later](../../../service-management/addons/manage-addons#installing_addon) in already an existing cluster. The installation process is automated and requires minimal user intervention.
 
 ## {heading(Features of installing add-ons)[id=features_of_installing_addons]}
 
@@ -30,7 +30,7 @@ Various add-ons (additional services) are available for Cloud Containers cluster
 
 <info>
 
-The availability of specific addons depends on the [region](/en/tools-for-using-services/account/concepts/regions) in which the cluster is planned to be placed.
+The availability of specific add-ons depends on the [region](/en/tools-for-using-services/account/concepts/regions) in which the cluster is planned to be placed.
 
 </info>
 

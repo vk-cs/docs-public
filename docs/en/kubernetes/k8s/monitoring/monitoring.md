@@ -9,7 +9,7 @@ The following tools are available for monitoring the status of a Kubernetes clus
   It provides advanced cluster monitoring capabilities, allowing you to view metrics for multiple Kubernetes resources, down to individual pods.
   It is also possible to configure alerts when specified thresholds for metrics are exceeded. For example, you can monitor if the cluster resources are not available or if the computing power of the worker nodes is insufficient.
 
-  To find out if the monitoring add-on is installed in the cluster, [see the list of installed addons](../service-management/addons/manage-addons#viewing_addons).
+  To find out if the monitoring add-on is installed in the cluster, [see the list of installed add-ons](../service-management/addons/manage-addons#viewing_addons).
 
 ## Using Kubernetes Dashboard
 
@@ -21,7 +21,7 @@ The following tools are available for monitoring the status of a Kubernetes clus
 
 ## Using Grafana
 
-1. [Make sure](../service-management/addons/manage-addons#viewing_addons) that the monitoring addon (`kube-prometheus-stack`) [is installed](../service-management/addons/advanced-installation/install-advanced-monitoring/) in a cluster.
+1. [Make sure](../service-management/addons/manage-addons#viewing_addons) that the monitoring add-on (`kube-prometheus-stack`) [is installed](../service-management/addons/advanced-installation/install-advanced-monitoring/) in a cluster.
 1. [Make sure](../connect/kubectl#checking_the_connection_to_the_cluster) that you can connect to the cluster using `kubectl`.
 
 1. Access the Grafana web interface:
@@ -55,7 +55,7 @@ The following tools are available for monitoring the status of a Kubernetes clus
 
       The Grafana login page will appear.
 
-1. Log in to Grafana. Depending on the parameters with which the addon was [installed](../service-management/addons/advanced-installation/install-advanced-monitoring/), use:
+1. Log in to Grafana. Depending on the parameters with which the add-on was [installed](../service-management/addons/advanced-installation/install-advanced-monitoring/), use:
 
    - Login `admin` and temporary password. The password will need to be changed after the first login.
    - Login `admin` and a permanent password from the Kubernetes secret.
