@@ -6,7 +6,7 @@ You can also [manage all desktops](../../manage-desktops/) created in the system
 
 ## Viewing a list of desktop pools
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud Desktop** → **Desktop pools**.
 
    A list of previously created desktop pools is displayed.
@@ -22,21 +22,21 @@ You can also [manage all desktops](../../manage-desktops/) created in the system
 
 <info>
 
-Available for desktops, where VM is in an emergency state.
+Available for desktops, all VMs of which are in an emergency state.
 
 </info>
 
-This is a group operation: if necessary, you can reboot multiple pool desktops by selecting them using checkboxes.
+This is a group operation: if necessary, you can manage multiple pool desktops by selecting them using checkboxes.
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud Desktop** → **Desktop pools**.
-1. In the list of pools, click on the name of the desired pool.
+1. In the list of pools, click the name of the desired pool.
 1. Go to the **Desktops** tab.
 1. Check the box for the desired desktop.
-1. Click **More** and select the **Restart** option.
+1. Click **More** and select the option **Restart**.
 1. Confirm the action.
 
-### Terminating a session
+### Logging out of a session
 
 It is used to force the termination of the user's session.
 
@@ -46,21 +46,21 @@ The VM remains turned on at the end of the session.
 
 </info>
 
-This is a group operation: if necessary, you can terminate sessions on multiple pool desktops by selecting them using checkboxes.
+This is a group operation: if necessary, you can manage multiple pool desktops by selecting them using checkboxes.
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud Desktop** → **Desktop pools**.
-1. In the list of pools, click on the name of the desired pool.
+1. In the list of pools, click the name of the desired pool.
 1. Go to the **Desktops** tab.
 1. Check the box for the desired desktop.
-1. Click **More** and select the **End session** option.
+1. Click **More** and select the option **End session**.
 1. Confirm the action.
 
 ## Sending a message to pool users
 
 This is a group operation: if necessary, you can send a message to users of several pools by selecting them using checkboxes.
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud Desktop** → **Desktop pools**.
 1. Check the box for the desired pool.
 1. Click the **Message to users** button.
@@ -75,25 +75,25 @@ This is a group operation: if necessary, you can send a message to users of seve
 
 <warn>
 
-When deleting a desktop pool, pay attention to the following:
+When deleting a desktop pool, pay attention to the following features:
 
 - The deleted pool cannot be restored.
 - If there are desktops in the pool, they will also be deleted when the pool is deleted.
-- When deleting the last pool in your project, all the settings for connecting to the user directory will also be deleted.
+- When deleting the last pool, all the settings for connecting to the user directory will also be deleted.
 
 </warn>
 
-This is a group operation: if necessary, you can delete several pools at once by selecting them using checkboxes.
+This is a group operation: if necessary, you can delete several pools at once by selecting them using the checkboxes.
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud Desktop** → **Desktop pools**.
 1. Delete the pool using one of the following methods:
 
-   - Click ![ ](/ru/assets/menu-icon.svg "inline") of the desired pool and select **Delete**.
+   - Expand the pool context menu and select the option **Delete**.
    - Via the pool page:
 
-     1. In the list of pools, select the pool you want to delete and click on its name.
+     1. In the list of pools, select the pool you want to delete and click its name.
      1. Go to the **Parameters** tab.
-     1. Click ![Trash](assets/trash-icon.svg "inline") in the upper right corner of the tab.
+     1. Click the icon ![Trash](assets/trash-icon.svg "inline") in the upper right corner of the tab.
 
 1. Confirm the deletion.
