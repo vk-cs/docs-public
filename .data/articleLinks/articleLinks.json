@@ -1189,7 +1189,7 @@
   ],
   [
     "/en/base/iaas/service-management/vm/vm-create",
-    "http://localhost:3000/docs/en/manage/monitoring/monitoring-info"
+    "http://localhost:3000/docs/en/monitoring-services/monitoring/concepts"
   ],
   [
     "/en/base/iaas/service-management/vm/vm-create",
@@ -4429,7 +4429,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/en/manage/monitoring/monitoring-start/mon-setup-new"
+    "http://localhost:3000/docs/en/monitoring-services/monitoring/service-management/mon-setup-new"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
@@ -4853,7 +4853,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
-    "http://localhost:3000/docs/en/manage/logging/service-management/view-logs"
+    "http://localhost:3000/docs/en/monitoring-services/logging/service-management/view-logs"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
@@ -4865,7 +4865,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
-    "http://localhost:3000/docs/en/manage/logging/service-management/view-logs"
+    "http://localhost:3000/docs/en/monitoring-services/logging/service-management/view-logs"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
@@ -6556,103 +6556,99 @@
     "http://localhost:3000/docs/en/ml/vision/service-management/nsfw-recognition"
   ],
   [
-    "/en/manage/logging/quick-start",
+    "/en/monitoring-services/logging/quick-start",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-create"
   ],
   [
-    "/en/manage/logging/quick-start",
+    "/en/monitoring-services/logging/quick-start",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix"
   ],
   [
-    "/en/manage/logging/quick-start",
-    "http://localhost:3000/docs/en/manage/logging/service-management/generate-userdata"
+    "/en/monitoring-services/logging/quick-start",
+    "http://localhost:3000/docs/en/monitoring-services/logging/service-management/generate-userdata"
   ],
   [
-    "/en/manage/logging/quick-start",
-    "http://localhost:3000/docs/en/manage/logging/service-management/connect-plugin"
+    "/en/monitoring-services/logging/quick-start",
+    "http://localhost:3000/docs/en/monitoring-services/logging/service-management/connect-plugin"
   ],
   [
-    "/en/manage/logging/service-management/generate-userdata",
+    "/en/monitoring-services/logging/concepts/logging-plugin",
+    "http://localhost:3000/docs/en/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin#configure_agent"
+  ],
+  [
+    "/en/monitoring-services/logging/service-management/generate-userdata",
     "http://localhost:3000/docs/en/tools-for-using-services/rest-api/endpoints#getting_project_id"
   ],
   [
-    "/en/manage/logging/service-management/connect-plugin",
-    "http://localhost:3000/docs/en/manage/logging/quick-start"
+    "/en/monitoring-services/logging/service-management/connect-plugin",
+    "http://localhost:3000/docs/en/monitoring-services/logging/quick-start"
   ],
   [
-    "/en/manage/logging/service-management/connect-plugin",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/endpoints"
+    "/en/monitoring-services/logging/service-management/connect-plugin",
+    "http://localhost:3000/docs/en/monitoring-services/logging/concepts/logging-plugin#auth_parameters"
   ],
   [
-    "/en/manage/logging/service-management/connect-plugin",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/endpoints"
-  ],
-  [
-    "/en/manage/logging/service-management/connect-plugin",
-    "http://localhost:3000/docs/en/manage/logging/quick-start"
-  ],
-  [
-    "/en/manage/logging/service-management/manage-vkcloudlogs-plugin",
+    "/en/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-connect/"
   ],
   [
-    "/en/manage/logging/service-management/manage-vkcloudlogs-plugin",
-    "http://localhost:3000/docs/en/manage/logging/service-management/connect-plugin"
+    "/en/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin",
+    "http://localhost:3000/docs/en/monitoring-services/logging/service-management/connect-plugin"
   ],
   [
-    "/en/manage/logging/service-management/manage-vkcloudlogs-plugin",
+    "/en/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-connect/"
   ],
   [
-    "/en/manage/logging/service-management/manage-vkcloudlogs-plugin",
-    "http://localhost:3000/docs/en/manage/logging/service-management/connect-plugin"
+    "/en/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin",
+    "http://localhost:3000/docs/en/monitoring-services/logging/service-management/connect-plugin"
   ],
   [
-    "/en/manage/logging/service-management/manage-vkcloudlogs-plugin",
+    "/en/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-connect/"
   ],
   [
-    "/en/manage/logging/service-management/manage-vkcloudlogs-plugin",
-    "http://localhost:3000/docs/en/manage/logging/service-management/connect-plugin"
+    "/en/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin",
+    "http://localhost:3000/docs/en/monitoring-services/logging/service-management/connect-plugin"
   ],
   [
-    "/en/manage/logging/service-management/view-logs",
-    "http://localhost:3000/docs/en/manage/logging/concepts/search-tools"
+    "/en/monitoring-services/logging/service-management/view-logs",
+    "http://localhost:3000/docs/en/monitoring-services/logging/concepts/search-tools"
   ],
   [
-    "/en/manage/monitoring/quick-start",
+    "/en/monitoring-services/monitoring/quick-start",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-create"
   ],
   [
-    "/en/manage/monitoring/quick-start",
+    "/en/monitoring-services/monitoring/quick-start",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-manage"
   ],
   [
-    "/en/manage/monitoring/quick-start",
+    "/en/monitoring-services/monitoring/quick-start",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-manage#starting_stopping_reboot_the_vm"
   ],
   [
-    "/en/manage/monitoring/quick-start",
+    "/en/monitoring-services/monitoring/quick-start",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-manage#deleting_a_vm"
   ],
   [
-    "/en/manage/monitoring/service-management/mon-setup-current",
+    "/en/monitoring-services/monitoring/service-management/mon-setup-current",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-connect/"
   ],
   [
-    "/en/manage/monitoring/service-management/mon-setup-current",
+    "/en/monitoring-services/monitoring/service-management/mon-setup-current",
     "http://localhost:3000/docs/en/tools-for-using-services/rest-api/enable-api"
   ],
   [
-    "/en/manage/monitoring/service-management/mon-setup-current",
+    "/en/monitoring-services/monitoring/service-management/mon-setup-current",
     "http://localhost:3000/docs/en/tools-for-using-services/rest-api/endpoints#getting_project_id"
   ],
   [
-    "/en/manage/monitoring/service-management/mon-setup-current",
+    "/en/monitoring-services/monitoring/service-management/mon-setup-current",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-manage#getting_a_virtual_machine_id"
   ],
   [
-    "/en/manage/monitoring/service-management/mon-setup-current",
+    "/en/monitoring-services/monitoring/service-management/mon-setup-current",
     "http://localhost:3000/docs/en/base/iaas/service-management/vm/vm-connect/"
   ],
   [
@@ -7385,7 +7381,7 @@
   ],
   [
     "/en/tools-for-using-services/rest-api/case-keystone-token",
-    "http://localhost:3000/docs/en/manage/logging/start/view-logs"
+    "http://localhost:3000/docs/en/monitoring-services/logging/service-management/view-logs"
   ],
   [
     "/en/tools-for-using-services/rest-api/enable-api",
@@ -7429,7 +7425,7 @@
   ],
   [
     "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/manage/logging/start/view-logs"
+    "http://localhost:3000/docs/en/monitoring-services/logging/service-management/view-logs"
   ],
   [
     "/en/tools-for-using-services/rest-api/endpoints",
@@ -9389,7 +9385,7 @@
   ],
   [
     "/ru/base/iaas/service-management/vm/vm-create",
-    "http://localhost:3000/docs/ru/manage/monitoring/monitoring-info"
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring/concepts"
   ],
   [
     "/ru/base/iaas/service-management/vm/vm-create",
@@ -13441,7 +13437,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/ru/manage/monitoring/monitoring-start/mon-setup-new"
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring/service-management/mon-setup-new"
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
@@ -13845,7 +13841,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
-    "http://localhost:3000/docs/ru/manage/logging/service-management/view-logs"
+    "http://localhost:3000/docs/ru/monitoring-services/logging/service-management/view-logs"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
@@ -13853,7 +13849,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
-    "http://localhost:3000/docs/ru/manage/logging/service-management/view-logs"
+    "http://localhost:3000/docs/ru/monitoring-services/logging/service-management/view-logs"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
@@ -15736,171 +15732,163 @@
     "http://localhost:3000/docs/ru/ml/vision/how-to-guides/vision-py"
   ],
   [
-    "/ru/manage/logging/quick-start",
+    "/ru/monitoring-services/logging/quick-start",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-create"
   ],
   [
-    "/ru/manage/logging/quick-start",
+    "/ru/monitoring-services/logging/quick-start",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix"
   ],
   [
-    "/ru/manage/logging/quick-start",
-    "http://localhost:3000/docs/ru/manage/logging/service-management/generate-userdata"
+    "/ru/monitoring-services/logging/quick-start",
+    "http://localhost:3000/docs/ru/monitoring-services/logging/service-management/generate-userdata"
   ],
   [
-    "/ru/manage/logging/quick-start",
-    "http://localhost:3000/docs/ru/manage/logging/service-management/connect-plugin"
+    "/ru/monitoring-services/logging/quick-start",
+    "http://localhost:3000/docs/ru/monitoring-services/logging/service-management/connect-plugin"
   ],
   [
-    "/ru/manage/logging/service-management/generate-userdata",
+    "/ru/monitoring-services/logging/concepts/logging-plugin",
+    "http://localhost:3000/docs/ru/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin#configure_agent"
+  ],
+  [
+    "/ru/monitoring-services/logging/service-management/generate-userdata",
     "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/endpoints#poluchenie_project_id"
   ],
   [
-    "/ru/manage/logging/service-management/connect-plugin",
-    "http://localhost:3000/docs/ru/manage/logging/quick-start"
+    "/ru/monitoring-services/logging/service-management/connect-plugin",
+    "http://localhost:3000/docs/ru/monitoring-services/logging/quick-start"
   ],
   [
-    "/ru/manage/logging/service-management/connect-plugin",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/endpoints"
+    "/ru/monitoring-services/logging/service-management/connect-plugin",
+    "http://localhost:3000/docs/ru/monitoring-services/logging/concepts/logging-plugin#auth_parameters"
   ],
   [
-    "/ru/manage/logging/service-management/connect-plugin",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/endpoints#poluchenie_project_id"
-  ],
-  [
-    "/ru/manage/logging/service-management/connect-plugin",
-    "http://localhost:3000/docs/ru/manage/logging/service-management/generate-userdata"
-  ],
-  [
-    "/ru/manage/logging/service-management/manage-vkcloudlogs-plugin",
+    "/ru/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-connect/"
   ],
   [
-    "/ru/manage/logging/service-management/manage-vkcloudlogs-plugin",
-    "http://localhost:3000/docs/ru/manage/logging/service-management/connect-plugin"
+    "/ru/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin",
+    "http://localhost:3000/docs/ru/monitoring-services/logging/service-management/connect-plugin"
   ],
   [
-    "/ru/manage/logging/service-management/manage-vkcloudlogs-plugin",
+    "/ru/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-connect/"
   ],
   [
-    "/ru/manage/logging/service-management/manage-vkcloudlogs-plugin",
-    "http://localhost:3000/docs/ru/manage/logging/service-management/connect-plugin"
+    "/ru/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin",
+    "http://localhost:3000/docs/ru/monitoring-services/logging/service-management/connect-plugin"
   ],
   [
-    "/ru/manage/logging/service-management/manage-vkcloudlogs-plugin",
+    "/ru/monitoring-services/logging/service-management/manage-vkcloudlogs-plugin",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-connect/"
   ],
   [
-    "/ru/manage/logging/service-management/manage-vkcloudlogs-plugin",
-    "http://localhost:3000/docs/ru/manage/logging/service-management/connect-plugin"
-  ],
-  [
-    "/ru/manage/logging/service-management/view-logs",
+    "/ru/monitoring-services/logging/service-management/view-logs",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/logging"
   ],
   [
-    "/ru/manage/logging/service-management/view-logs",
-    "http://localhost:3000/docs/ru/manage/logging/concepts/search-tools"
+    "/ru/monitoring-services/logging/service-management/view-logs",
+    "http://localhost:3000/docs/ru/monitoring-services/logging/concepts/search-tools"
   ],
   [
-    "/ru/manage/alerting/triggers/trigger-start",
-    "http://localhost:3000/docs/manage/alerting/triggers/trigger-edit"
+    "/ru/monitoring-services/alerting/triggers/trigger-start",
+    "http://localhost:3000/docs/monitoring-services/alerting/triggers/trigger-edit"
   ],
   [
-    "/ru/manage/monitoring/quick-start",
+    "/ru/monitoring-services/monitoring/quick-start",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-create"
   ],
   [
-    "/ru/manage/monitoring/quick-start",
+    "/ru/monitoring-services/monitoring/quick-start",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-manage#poluchenie_id_virtualnoy_mashiny"
   ],
   [
-    "/ru/manage/monitoring/quick-start",
+    "/ru/monitoring-services/monitoring/quick-start",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-manage#zapusk_ostanovka_perezagruzka_vm"
   ],
   [
-    "/ru/manage/monitoring/quick-start",
+    "/ru/monitoring-services/monitoring/quick-start",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm"
   ],
   [
-    "/ru/manage/monitoring/service-management/mon-setup-new",
+    "/ru/monitoring-services/monitoring/service-management/mon-setup-new",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-create"
   ],
   [
-    "/ru/manage/monitoring/service-management/mon-setup-new",
-    "http://localhost:3000/docs/ru/manage/monitoring/service-management/mon-setup-current"
+    "/ru/monitoring-services/monitoring/service-management/mon-setup-new",
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring/service-management/mon-setup-current"
   ],
   [
-    "/ru/manage/monitoring/service-management/mon-setup-current",
+    "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-connect/"
   ],
   [
-    "/ru/manage/monitoring/service-management/mon-setup-current",
+    "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
     "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api"
   ],
   [
-    "/ru/manage/monitoring/service-management/mon-setup-current",
+    "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
   ],
   [
-    "/ru/manage/monitoring/service-management/mon-setup-current",
+    "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
     "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/endpoints#poluchenie_project_id"
   ],
   [
-    "/ru/manage/monitoring/service-management/mon-setup-current",
+    "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-manage#poluchenie_id_virtualnoy_mashiny"
   ],
   [
-    "/ru/manage/monitoring/service-management/mon-setup-current",
+    "/ru/monitoring-services/monitoring/service-management/mon-setup-current",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-connect/"
   ],
   [
-    "/ru/manage/monitoring/service-management/telegraf-manage",
-    "http://localhost:3000/docs/ru/manage/monitoring/service-management/mon-setup-current"
+    "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring/service-management/mon-setup-current"
   ],
   [
-    "/ru/manage/monitoring/service-management/telegraf-manage",
+    "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-connect/"
   ],
   [
-    "/ru/manage/monitoring/service-management/telegraf-manage",
-    "http://localhost:3000/docs/ru/manage/monitoring/service-management/mon-setup-current"
+    "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring/service-management/mon-setup-current"
   ],
   [
-    "/ru/manage/monitoring/service-management/telegraf-manage",
+    "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-connect/"
   ],
   [
-    "/ru/manage/monitoring/service-management/telegraf-manage",
-    "http://localhost:3000/docs/ru/manage/monitoring/service-management/mon-setup-current"
+    "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring/service-management/mon-setup-current"
   ],
   [
-    "/ru/manage/monitoring/service-management/telegraf-manage",
+    "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-connect/"
   ],
   [
-    "/ru/manage/monitoring/service-management/telegraf-manage",
-    "http://localhost:3000/docs/ru/manage/monitoring/service-management/mon-setup-current"
+    "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring/service-management/mon-setup-current"
   ],
   [
-    "/ru/manage/monitoring/service-management/telegraf-manage",
+    "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-connect/"
   ],
   [
-    "/ru/manage/monitoring/service-management/telegraf-manage",
-    "http://localhost:3000/docs/ru/manage/monitoring/service-management/mon-setup-current"
+    "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring/service-management/mon-setup-current"
   ],
   [
-    "/ru/manage/monitoring/service-management/telegraf-manage",
+    "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-connect/"
   ],
   [
-    "/ru/manage/monitoring/service-management/telegraf-manage",
-    "http://localhost:3000/docs/ru/manage/monitoring/service-management/mon-setup-current"
+    "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring/service-management/mon-setup-current"
   ],
   [
-    "/ru/manage/monitoring/service-management/telegraf-manage",
+    "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
     "http://localhost:3000/docs/ru/base/iaas/service-management/vm/vm-connect/"
   ],
   [
@@ -16733,7 +16721,7 @@
   ],
   [
     "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
-    "http://localhost:3000/docs/ru/manage/logging/service-management/view-logs"
+    "http://localhost:3000/docs/ru/monitoring-services/logging/service-management/view-logs"
   ],
   [
     "/ru/tools-for-using-services/api/rest-api/case-keystone-token",

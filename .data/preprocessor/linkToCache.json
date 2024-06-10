@@ -39,6 +39,16 @@
     "full": "Editing add-on settings code during installation)",
     "text": "Editing add-on settings code during installation)"
   },
+  "auth_parameters": {
+    "number": null,
+    "full": "Параметры авторизации плагина",
+    "text": "Параметры авторизации плагина"
+  },
+  "configure_agent": {
+    "number": null,
+    "full": "Настройка агента для сбора логов из дополнительных текстовых файлов",
+    "text": "Настройка агента для сбора логов из дополнительных текстовых файлов"
+  },
   "az": {
     "number": null,
     "full": "Зоны доступности",
