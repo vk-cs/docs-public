@@ -66,7 +66,7 @@ The available fields may differ for different operating systems.
 
       </warn>
 
-   - **Enable monitoring**: enable to use [monitoring tools](/en/manage/monitoring/monitoring-info).
+   - **Enable monitoring**: enable to use [monitoring tools](/en/monitoring-services/monitoring/concepts).
 
 7. Click **Next step**.
 
