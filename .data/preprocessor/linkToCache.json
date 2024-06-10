@@ -29,15 +29,65 @@
     "full": "Kube Prometheus Stack",
     "text": "Kube Prometheus Stack"
   },
+  "viewing_addons": {
+    "number": null,
+    "full": "Viewing add-ons",
+    "text": "Viewing add-ons"
+  },
+  "addons_available_for_installation": {
+    "number": null,
+    "full": "Add-ons available for installation",
+    "text": "Add-ons available for installation"
+  },
+  "installed_addons": {
+    "number": null,
+    "full": "Installed add-ons",
+    "text": "Installed add-ons"
+  },
   "installing_addon": {
     "number": null,
     "full": "Installing add-on",
     "text": "Installing add-on"
   },
+  "editing_addon_code": {
+    "number": null,
+    "full": "Editing add-on code",
+    "text": "Editing add-on code"
+  },
+  "updating_addon_version": {
+    "number": null,
+    "full": "Updating add-on version",
+    "text": "Updating add-on version"
+  },
+  "removing_addon": {
+    "number": null,
+    "full": "Removing add-on",
+    "text": "Removing add-on"
+  },
   "editing_addon_settings_code_during_installation": {
     "number": null,
-    "full": "Editing add-on settings code during installation)",
-    "text": "Editing add-on settings code during installation)"
+    "full": "Editing add-on settings code during installation",
+    "text": "Editing add-on settings code during installation"
+  },
+  "1_get_information_you_need_to_update_your_addon": {
+    "number": null,
+    "full": "1. Get information you need to update your add-on",
+    "text": "1. Get information you need to update your add-on"
+  },
+  "2_prepare_addon_environment_for_update": {
+    "number": null,
+    "full": "2. Prepare add-on environment for update",
+    "text": "2. Prepare add-on environment for update"
+  },
+  "3_update_addon_version": {
+    "number": null,
+    "full": "3. Update add-on version",
+    "text": "3. Update add-on version"
+  },
+  "4_verify_addon_operability_after_updating": {
+    "number": null,
+    "full": "4. Verify add-on operability after updating",
+    "text": "4. Verify add-on operability after updating"
   },
   "auth_parameters": {
     "number": null,

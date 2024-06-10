@@ -4033,7 +4033,7 @@
   ],
   [
     "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#installing_the_addon"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#installing_addon"
   ],
   [
     "/en/kubernetes/k8s/concepts/addons-and-settings/addons",
@@ -4273,7 +4273,7 @@
   ],
   [
     "/en/kubernetes/k8s/concepts/versions/components",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#installing_the_addon"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#installing_addon"
   ],
   [
     "/en/kubernetes/k8s/concepts/versions/components",
@@ -4597,7 +4597,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/manage-addons",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#installed_addons_ad60db68"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#installed_addons"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/manage-addons",
@@ -4609,7 +4609,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/manage-addons",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#installed_addons_ad60db68"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#installed_addons"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/manage-addons",
@@ -4769,7 +4769,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#addons_available_for_installation_467c6636"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#addons_available_for_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
@@ -4901,7 +4901,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#addons_available_for_installation_467c6636"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#addons_available_for_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
@@ -4977,7 +4977,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-istio",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#addons_available_for_installation_467c6636"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#addons_available_for_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-istio",
@@ -5109,7 +5109,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#addons_available_for_installation_467c6636"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#addons_available_for_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali",
@@ -5173,7 +5173,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#addons_available_for_installation_467c6636"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#addons_available_for_installation"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring",
@@ -5761,7 +5761,7 @@
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/external-dns",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#removing_an_addon"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#removing_addon"
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/external-dns",
@@ -5849,7 +5849,7 @@
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/update-monitoring-addon",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#editing_the_addon_code"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#editing_addon_code"
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/update-monitoring-addon",
@@ -5869,7 +5869,7 @@
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/update-monitoring-addon",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#removing_an_addon"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons/manage-addons#removing_addon"
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/update-monitoring-addon",
