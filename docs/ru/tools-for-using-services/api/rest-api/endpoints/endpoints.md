@@ -1,6 +1,6 @@
 В личном кабинете вы можете посмотреть адреса доступных эндпоинтов API. Список и адреса эндпоинтов различаются между [регионами](/ru/tools-for-using-services/account/concepts/regions).
 
-Для работы с VK Cloud через API [активируйте доступ по API](../enable-api). Подробнее о работе с сервисами читайте в разделе [Справка API](/ru/tools-for-using-services/api).
+Для работы с VK Cloud через API [активируйте доступ по API](../enable-api). Подробнее о работе с сервисами читайте в разделе [Спецификация API](/ru/tools-for-using-services/api).
 
 ## Просмотр списка эндпоинтов
 
@@ -51,7 +51,7 @@
 
 | Эндпоинт                            | Адрес                   | Назначение |
 |-------------------------------------|-------------------------|-----------------|
-| Sahara            | https://infra.mail.ru:8386/v1.1/<project_id>        | Управление кластерами [больших данных](/ru/tools-for-using-services/api/api-spec/bigdata-api) |
+| Sahara            | https://infra.mail.ru:8386/v1.1/<project_id>        | Управление кластерами [Cloud Big Data](/ru/tools-for-using-services/api/api-spec/bigdata-api) |
 
 ### Cloud Databases
 
@@ -65,17 +65,17 @@
 |-------------------------------------|----------------------------------| -----------------|
 | Домен S3                            | https://hb.ru-msk.vkcs.cloud/    | Управление [Cloud Storage](/ru/tools-for-using-services/api/api-spec/s3-rest-api) |
 
+### Cloud ML Platform
+
+| Эндпоинт                              | Адрес                     | Назначение |
+|---------------------------------------|---------------------------| -----------------|
+| Mlplatform | https://msk.cloud.vk.com/infra/mlplatform   | Управление [Cloud ML Platform](/ru/ml/mlplatform) |
+
 ### AI API
 
 | Эндпоинт                              | Адрес                     | Назначение |
 |---------------------------------------|---------------------------| -----------------|
 | Vision для распознавания изображений и видео | https://smarty.mail.ru/   | [Распознавание объектов](/ru/tools-for-using-services/api/api-spec/vision-api) |
-
-### Очереди сообщений
-
-| Эндпоинт                            | Адрес                            | Назначение |
-|-------------------------------------|----------------------------------|-----------------|
-| Cloud Queues | https://sqs.mcs.mail.ru | Управление очередями сообщений. |
 
 ### Эндпоинты, не привязанные к сервисам
 
@@ -83,7 +83,6 @@
 |-------------------------------------|-------------------------|-----------------|
 | Audit             | https://mcs.mail.ru/auditlogs/v1/<project_id>       | Сбор статистики действий пользователей в проекте |
 | Barbican          | https://public.infra.mail.ru:9311                   | Защищенное хранение секретов (SSH-ключей, токенов Keystone, сертификатов TLS) |
-| Gnocchi           | https://infra.mail.ru:8041                          | Сбор метрик ВМ (примеры метрик: объем ресурсов, доступный инстансу, использование ресурсов инстансом) |
 | Keystone          | https://infra.mail.ru:35357/v3/                     | Управление пользователями проекта, авторизация пользователей на основе [токенов](../case-keystone-token) |
 | Quota-manager     | https://mcs.mail.ru/quota-manager                   | Просмотр [квот](/ru/tools-for-using-services/account/concepts/quotasandlimits) проекта |
 | Heat              | https://infra.mail.ru:8004/v1/<project_id>          | Оркестрация облачных сервисов (эндпоинт устарел) |
