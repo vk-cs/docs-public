@@ -13,7 +13,7 @@ The following software must be installed on the image:
 
   To use other operating systems, please contact [technical support](/en/contacts).
 
-- [Guest agent QEMU](https://pve.proxmox.com/wiki/Qemu-guest-agent).
+- [QEMU guest agent](https://pve.proxmox.com/wiki/Qemu-guest-agent).
 - Software for cloud-based virtual machine initialization:
 
   - For Astra Linux — the [cloud-init](https://www.ibm.com/docs/ru/powervc-cloud/2.0.0?topic=init-installing-configuring-cloud-linux) package.

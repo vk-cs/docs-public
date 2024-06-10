@@ -2,14 +2,14 @@ When a pool is successfully created, desktops are created in it automatically.
 
 ## Viewing desktop information
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud personal account.
 1. Open the list of desktops using one of the following methods:
 
    - Through the general list of desktops: go to **Cloud Desktop** → **Desktop list**.
    - Through the list of pool desktops:
 
      1. Go to **Cloud Desktop** → **Desktop pools**.
-     1. In the list of pools, click on the name of the desired pool.
+     1. In the list of pools, click the name of the desired pool.
      1. Go to the **Desktops** tab.
 
 The desktop status is displayed in the **Availability** column. Column **Connection** (`Active`/`Inactive`) shows whether the user is currently connected to the desktop.
@@ -18,7 +18,7 @@ The desktop status is displayed in the **Availability** column. Column **Connect
 
 This is a group operation: if necessary, you can manage multiple pool desktops by selecting them using checkboxes.
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud personal account.
 1. Open the list of desktops using one of the following methods:
 
    - Through the general list of desktops:
@@ -29,7 +29,7 @@ This is a group operation: if necessary, you can manage multiple pool desktops b
    - Through the list of pool desktops:
 
      1. Go to **Cloud Desktop** → **Desktop pools**.
-     1. In the list of pools, click on the name of the desired pool.
+     1. In the list of pools, click the name of the desired pool.
      1. Go to the **Desktops** tab.
      1. Check the box for the desired desktop.
 
@@ -63,7 +63,7 @@ To end the user session, log out of the system:
 <tabpanel>
 
 1. On the desktop, go to **Пуск**.
-1. Click on the name of the current user and select **Выход**.
+1. Click the name of the current user and select **Выход**.
 
 <info>
 
@@ -84,7 +84,7 @@ If the session has been terminated in another way, the disconnection will occur 
 
 This is a group operation: if necessary, you can delete multiple pool desktops by selecting them using checkboxes.
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud personal account.
 1. Open the list of desktops using one of the following methods:
 
    - Through the general list of desktops:
@@ -95,7 +95,7 @@ This is a group operation: if necessary, you can delete multiple pool desktops b
    - Through the list of pool desktops:
 
      1. Go to **Cloud Desktop** → **Desktop pools**.
-     1. In the list of pools, click on the name of the desired pool.
+     1. In the list of pools, click the name of the desired pool.
      1. Go to the **Desktops** tab.
      1. Check the box for the desired desktop.
 

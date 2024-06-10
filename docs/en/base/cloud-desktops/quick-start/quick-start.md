@@ -22,7 +22,7 @@ After completing all the steps of the quick start, you will:
 
 ## 2. Set up an external infrastructure
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud personal account.
 1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the desktops will be placed.
 1. Go to **Cloud Desktop** → **Service settings**.
 1. On the **Network settings** tab, specify:
@@ -77,7 +77,7 @@ After completing all the steps of the quick start, you will:
 ## 4. Make sure that desktops are deployed in the pool
 
 1. Go to **Cloud Desktop** → **Desktop pools**.
-1. In the list of pools, click on the pool name `vk-cloud-desktops-pool-quickstart`.
+1. In the list of pools, click the pool name `vk-cloud-desktops-pool-quickstart`.
 1. Go to the **Desktops** tab.
 
    The value `2` should be displayed in the **Deployed** block.

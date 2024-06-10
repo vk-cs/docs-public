@@ -6,10 +6,10 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/manage/monitoring/concepts/mon-metrics"
+                    "link": "/ru/monitoring-services/monitoring/concepts/mon-metrics"
                 },
                 {
-                    "link": "/ru/manage/monitoring/concepts/mon-read-metrics"
+                    "link": "/ru/monitoring-services/monitoring/concepts/mon-read-metrics"
                 }
             ]
         }
