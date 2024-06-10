@@ -79,25 +79,25 @@ After completing a quickstart, stop or delete the cluster if you no longer need 
 
 Wait for the cluster to complete, this process may take a while.
 
-### 1.2. Install addons in the cluster
+### 1.2. Install add-ons in the cluster
 
 <warn>
 
-When installing the Docker Registry and Ingress NGINX addons, [standard load balancers](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created for them.
+When installing the Docker Registry and Ingress NGINX add-ons, [standard load balancers](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created for them.
 
 Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
 </warn>
 
-1. [Install](../service-management/addons/advanced-installation/install-advanced-registry) the `docker-registry` addon.
+1. [Install](../service-management/addons/advanced-installation/install-advanced-registry) the `docker-registry` add-on.
 
    Write down the data for accessing the Docker registry.
 
-1. [Install](../service-management/addons/advanced-installation/install-advanced-monitoring/) the `kube-prometheus-stack` addon.
+1. [Install](../service-management/addons/advanced-installation/install-advanced-monitoring/) the `kube-prometheus-stack` add-on.
 
    Write down the password to access the Grafana web interface.
 
-1. [Install](../service-management/addons/advanced-installation/install-advanced-ingress/) the `ingress-nginx` addon with default parameters.
+1. [Install](../service-management/addons/advanced-installation/install-advanced-ingress/) the `ingress-nginx` add-on with default parameters.
 
    Write down the floating IP address for the load balancer.
 
@@ -204,7 +204,7 @@ Install the following tools on the host:
 
 ## 2. Get access to cluster monitoring tools
 
-An addon with [monitoring tools](../monitoring) was installed in the cluster based on Prometheus and Grafana have been enabled. Also [Kubernetes Dashboard](../connect/k8s-dashboard/) is available for all Cloud Containers clusters, which allows you to not only manage the cluster, but also monitor it.
+An add-on with [monitoring tools](../monitoring) was installed in the cluster based on Prometheus and Grafana have been enabled. Also [Kubernetes Dashboard](../connect/k8s-dashboard/) is available for all Cloud Containers clusters, which allows you to not only manage the cluster, but also monitor it.
 
 <tabs>
 <tablist>
@@ -258,7 +258,7 @@ The browser will be opened and you will be redirected to the Kubernetes Dashboar
 
 ## 3. Upload the necessary images to the Docker registry
 
-The [Docker Registry addon](../connect/docker-registry/) was installed in the cluster which will store the Docker images.
+The [Docker Registry add-on](../connect/docker-registry/) was installed in the cluster which will store the Docker images.
 
 <info>
 
@@ -673,7 +673,7 @@ To deploy the applications:
 
 ## 5. Configure Ingress for demo applications
 
-The [Ingress Controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/) addon was installed in the cluster NGINX was enabled to route incoming user requests to the applications deployed in the cluster.
+The [Ingress Controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/) add-on was installed in the cluster NGINX was enabled to route incoming user requests to the applications deployed in the cluster.
 
 For Ingress controller to route requests to the corresponding Service resources, through which the `tea` and `coffee` demo applications were published, do the following:
 

@@ -2,16 +2,16 @@
 
 Connect the [Cloud Logging](/en/manage/logging) service to the project, if it has not been done yet. To do this, [contact technical support](/en/contacts).
 
-## Installing addon
+## {heading(Installing add-on)[id=installing_addon]}
 
-[Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the addon:
+[Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on:
 
 - standard installation;
 - quick installation.
 
-Regardless of the selected installation option, the addon will be installed as [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) to all nodes of the cluster, including the master nodes.
+Regardless of the selected installation option, the add-on will be installed as [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) to all nodes of the cluster, including the master nodes.
 
-Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_nodes_c172481b) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) before install.
+Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of add-ons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_nodes_c172481b) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) before install.
 
 <tabs>
 <tablist>
@@ -20,7 +20,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 </tablist>
 <tabpanel>
 
-1. Install the addon:
+1. Install the add-on:
 
    <tabs>
    <tablist>
@@ -34,30 +34,30 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
-   1. If there are already installed addons in the cluster, click on the **Add addon** button.
-   1. Click the **Install addon** button on the `logaas-integration` addon card.
-   1. Select the desired addon version from the drop-down list.
+   1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
+   1. Click the **Install addon** button on the `logaas-integration` add-on card.
+   1. Select the desired add-on version from the drop-down list.
    1. Edit if necessary:
 
       - the selected version;
       - application name;
-      - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing_addon_settings_code_during_installation).
+      - the name of the namespace where the add-on will be installed;
+      - [add-on settings code](#editing_addon_settings_code_during_installation).
 
         <warn>
 
-        An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
+        An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
         </warn>
 
    1. Click the **Install addon** button.
 
-      The installation of the addon in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster will begin. This process can take a long time.
 
    </tabpanel>
    <tabpanel>
 
-   [Documentation of the Terraform provider VK Cloud](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/index.md) contains an example of using the resource [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md), which describes a single addon. Data sources related to addons are also documented:
+   [Documentation of the Terraform provider VK Cloud](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/index.md) contains an example of using the resource [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md), which describes a single add-on. Data sources related to add-ons are also documented:
 
    - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
    - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
@@ -67,20 +67,20 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. (Optional) [View logs](/en/monitoring-services/logging/service-management/view-logs) in the Cloud Logging service to make sure that the addon is working properly.
+1. (Optional) [View logs](/en/monitoring-services/logging/service-management/view-logs) in the Cloud Logging service to make sure that the add-on is working properly.
 
 </tabpanel>
 <tabpanel>
 
 <info>
 
-During quick installation, the addon settings code is not edited.
+During quick installation, the add-on settings code is not edited.
 
 If this does not suit you, perform the **standard installation**.
 
 </info>
 
-1. Install the addon:
+1. Install the add-on:
 
    <tabs>
    <tablist>
@@ -94,24 +94,24 @@ If this does not suit you, perform the **standard installation**.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
-   1. If there are already installed addons in the cluster, click on the **Add addon** button.
-   1. Click the **Install** button on the `logaas-integration` addon card.
-   1. Select the necessary addon version from the drop-down list.
+   1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
+   1. Click the **Install** button on the `logaas-integration` add-on card.
+   1. Select the necessary add-on version from the drop-down list.
    1. Click the **Install addon** button.
    1. Edit if necessary:
 
       - selected version;
       - application name;
-      - the name of the namespace where the addon will be installed.
+      - the name of the namespace where the add-on will be installed.
 
    1. Click the **Install addon** button.
 
-      The installation of the addon in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster will begin. This process can take a long time.
 
    </tabpanel>
    <tabpanel>
 
-   [Documentation of the Terraform provider VK Cloud](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/index.md) contains an example of using the resource [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md), which describes a single addon. Data sources related to addons are also documented:
+   [Documentation of the Terraform provider VK Cloud](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/index.md) contains an example of using the resource [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md), which describes a single add-on. Data sources related to add-ons are also documented:
 
    - [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md);
    - [vkcs_kubernetes_addons](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addons.md).
@@ -121,35 +121,35 @@ If this does not suit you, perform the **standard installation**.
    </tabpanel>
    </tabs>
 
-1. (Optional) [View logs](/en/monitoring-services/logging/service-management/view-logs) in the Cloud Logging service to make sure that the addon is working properly.
+1. (Optional) [View logs](/en/monitoring-services/logging/service-management/view-logs) in the Cloud Logging service to make sure that the add-on is working properly.
 
 </tabpanel>
 </tabs>
 
-## Editing addon settings code during installation
+## {heading(Editing add-on settings code during installation)[id=editing_addon_settings_code_during_installation]}
 
-Editing the addon code is applicable for a standard installation.
+Editing the add-on code is applicable for a standard installation.
 
-The full addon settings code along with the description of the fields is available:
+The full add-on settings code along with the description of the fields is available:
 
 - in your personal account;
 - in the `configuration_values` attribute from the data source [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) if Terraform is used.
 
-Also on [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml ) the Fluent Bit settings code is available, which serves as the basis for this addon.
+Also on [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml ) the Fluent Bit settings code is available, which serves as the basis for this add-on.
 
 <warn>
 
-Do not delete the fields that are required for the correct installation and operation of the addon, or the values specified in these fields.
+Do not delete the fields that are required for the correct installation and operation of the add-on, or the values specified in these fields.
 
-There are comments in the addon settings code that allow you to find such fields.
+There are comments in the add-on settings code that allow you to find such fields.
 
 </warn>
 
 Read more about [pipeline](https://docs.fluentbit.io/manual/pipeline) and [configuration file settings](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/classic-mode/configuration-file) in the official documentation of Fluent Bit.
 
-### Fine-tuning the behavior of the addon when working with different severity levels
+### Fine-tuning the behavior of the add-on when working with different severity levels
 
-Before sending logs to the Cloud Logging service, the addon performs the following actions:
+Before sending logs to the Cloud Logging service, the add-on performs the following actions:
 
 1. Determines the severity level of individual log entries. This is done using Fluent Bit [parsers](https://docs.fluentbit.io/manual/pipeline/filters/parser).
 
@@ -225,7 +225,7 @@ Before sending logs to the Cloud Logging service, the addon performs the followi
 
    </details>
 
-You can fine-tune the behavior of the addon when working with severity levels using:
+You can fine-tune the behavior of the add-on when working with severity levels using:
 
 <tabs>
 <tablist>
@@ -234,7 +234,7 @@ You can fine-tune the behavior of the addon when working with severity levels us
 </tablist>
 <tabpanel>
 
-Set one or more rules for custom `CustomFilter` filters in the addon code so that only logs with the specified minimum severity level get into Cloud Logging. These rules can be configured at the level of a specific namespace and at the level of specific pods in the namespace:
+Set one or more rules for custom `CustomFilter` filters in the add-on code so that only logs with the specified minimum severity level get into Cloud Logging. These rules can be configured at the level of a specific namespace and at the level of specific pods in the namespace:
 
 <!-- prettier-ignore -->
 ```yaml
@@ -299,7 +299,7 @@ customFilter:
 </tabpanel>
 <tabpanel>
 
-Set one or more rules for custom `customRegexp` pattern in the addon code to set the desired severity level for logs bypassing the standard addon mechanisms. If part of the log entry matches the specified Lua [pattern](https://www.lua.org/manual/5.4/manual.html#6.4.1), then this record is assigned the severity level specified in the rule. If there are no matches, then the record is assigned a severity level determined using the Fluent Bit parsers. This can be useful if the automatic level detection mechanism used in the add-on incorrectly determines the log level of a particular application.
+Set one or more rules for custom `customRegexp` pattern in the add-on code to set the desired severity level for logs bypassing the standard add-on mechanisms. If part of the log entry matches the specified Lua [pattern](https://www.lua.org/manual/5.4/manual.html#6.4.1), then this record is assigned the severity level specified in the rule. If there are no matches, then the record is assigned a severity level determined using the Fluent Bit parsers. This can be useful if the automatic level detection mechanism used in the add-on incorrectly determines the log level of a particular application.
 
 These rules apply at the level of a certain namespace and at the level of certain pods in the namespace:
 
