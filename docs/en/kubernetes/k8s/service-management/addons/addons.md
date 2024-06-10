@@ -1,1 +1,1 @@
-This section describes the available actions on addons and the procedure for advanced installation of addons.
+This section describes the available actions on add-ons and the procedure for advanced installation of add-ons.

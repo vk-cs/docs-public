@@ -56,7 +56,7 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
 
 - Migration of other Kubernetes clusters to Cloud Containers using Velero.
 
-- A set of [preconfigured addons](../addons-and-settings/addons/) which can be selected when [creating a cluster using Terraform](../../service-management/create-cluster) or [install](../../service-management/addons/manage-addons) into an existing cluster, saving time on their manual deployment.
+- A set of [preconfigured add-ons](../addons-and-settings/addons/) which can be selected when [creating a cluster using Terraform](../../service-management/create-cluster) or [install](../../service-management/addons/manage-addons) into an existing cluster, saving time on their manual deployment.
 - A set of [preconfigured settings](../addons-and-settings/settings/), which help improve cluster stability and security.
 
 - Monitoring the state of the cluster with Prometheus. You can view the monitoring data in [several ways](../../monitoring).

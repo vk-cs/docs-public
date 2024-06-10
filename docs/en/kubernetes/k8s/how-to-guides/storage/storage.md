@@ -13,11 +13,11 @@ Persistent volumes can be connected to simple demo applications in various ways.
 
    Other cluster parameters are at your discretion.
 
-1. [Make sure](../../service-management/addons/manage-addons#viewing_addons) that the NGINX Ingress addon (`ingress-nginx`) [is installed](../../service-management/addons/advanced-installation/install-advanced-ingress/) in a cluster with default parameters. It will be required to provide access to demo applications.
+1. [Make sure](../../service-management/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) [is installed](../../service-management/addons/advanced-installation/install-advanced-ingress/) in a cluster with default parameters. It will be required to provide access to demo applications.
 
     <warn>
 
-    When installing the addon, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created.
+    When installing the add-on, a [standard load balancer](/en/networks/vnet/concepts/load-balancer#types_of_load_balancers) will be created.
 
     Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 

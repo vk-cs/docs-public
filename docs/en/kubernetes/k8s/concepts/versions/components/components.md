@@ -59,7 +59,7 @@ These components are present in all Cloud Containers clusters.
 
 ## Add-ons
 
-The necessary add-ons can be [installed](../../../service-management/addons/manage-addons#installing_the_addon) in the cluster individually.
+The necessary add-ons can be [installed](../../../service-management/addons/manage-addons#installing_addon) in the cluster individually.
 
 [cols="3,1,1,1,1", options="header"]
 |===
