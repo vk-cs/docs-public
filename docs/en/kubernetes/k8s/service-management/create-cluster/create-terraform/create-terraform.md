@@ -195,8 +195,8 @@ Some clarification:
 
 - It is recommended to assign a public IP address to the cluster when creating it, so that you can access the cluster from the Internet (`floating_ip_enabled = true`). To assing such an IP address, it is necessary for the subnet with the `subnet_id` identifier to be [connected](/en/networks/vnet/concepts/ips-and-inet#organizing_internet_access) to the router which has access to the external network.
 
-- If some of the addons are not needed, delete the corresponding lines from the `labels` block. See [Addons](../../../concepts/addons-and-settings/addons/) for details.
-- To install addons in the cluster via Terraform, [get the list of availible addons](../../addons/manage-addons#348-tabpanel-1) and [install that you need](../../addons/advanced-installation).
+- If some of the add-ons are not needed, delete the corresponding lines from the `labels` block. See [Addons](../../../concepts/addons-and-settings/addons/) for details.
+- To install add-ons in the cluster via Terraform, [get the list of availible add-ons](../../addons/manage-addons#348-tabpanel-1) and [install that you need](../../addons/advanced-installation).
 
 ## 3. Describe the configuration of one or more worker node groups
 

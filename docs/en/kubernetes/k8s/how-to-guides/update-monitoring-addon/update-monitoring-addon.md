@@ -1,38 +1,38 @@
-There are [multiple versions](../../concepts/versions/components) of the [Kube Prometheus Stack](../../concepts/addons-and-settings/addons#kube_prometheus_stack) addon available in the Cloud Containers clusters. Update of this addon using VK Cloud interfaces is not available, but you can update the addon manually.
+There are [multiple versions](../../concepts/versions/components) of the [Kube Prometheus Stack](../../concepts/addons-and-settings/addons#kube_prometheus_stack) add-on available in the Cloud Containers clusters. Update of this add-on using VK Cloud interfaces is not available, but you can update the add-on manually.
 
-To upgrade the Kube Prometheus Stack addon from version `36.2.0` to version `54.2.2`, it is necessary to uninstall the current version of the addon and then install the new one. Therefore, the upgrade process includes preparing the environment of the current version of the addon for saving and further re-using it with the new version.
+To upgrade the Kube Prometheus Stack add-on from version `36.2.0` to version `54.2.2`, it is necessary to uninstall the current version of the add-on and then install the new one. Therefore, the upgrade process includes preparing the environment of the current version of the add-on for saving and further re-using it with the new version.
 
 <warn>
 
-It is further assumed that the addon is installed in the namespace (e.g., `kube-prometheus-stack`) that contains only those Kubernetes resources that relate to the addon.
+It is further assumed that the add-on is installed in the namespace (e.g., `kube-prometheus-stack`) that contains only those Kubernetes resources that relate to the add-on.
 
-If there are other Kubernetes resources in the namespace, modify the commands and script so that they do not affect resources not related to the addon.
+If there are other Kubernetes resources in the namespace, modify the commands and script so that they do not affect resources not related to the add-on.
 
 </warn>
 
 ## Preparation steps
 
-1. If you already have an existing Cloud Containers cluster with the Kube Prometheus Stack addon that needs to be upgraded, skip this step.
+1. If you already have an existing Cloud Containers cluster with the Kube Prometheus Stack add-on that needs to be upgraded, skip this step.
 
-   Otherwise, create a test cluster where the addon update will be performed:
+   Otherwise, create a test cluster where the add-on update will be performed:
 
    1. [Create](../../service-management/create-cluster) a Cloud Containers cluster version `1.26.5`.
 
       When you create the cluster, select the **Assign external IP** option. Other cluster parameters can be set at your discretion.
 
-   1. [Install](../../service-management/addons/advanced-installation/install-advanced-monitoring) the Kube Prometheus Stack addon version `36.2.0` in the cluster.
+   1. [Install](../../service-management/addons/advanced-installation/install-advanced-monitoring) the Kube Prometheus Stack add-on version `36.2.0` in the cluster.
 
-      Perform a **quick installation** of the addon (without editing the addon configuration code).
+      Perform a **quick installation** of the add-on (without editing the add-on configuration code).
 
 1. [Verify](../../connect/kubectl) that you can connect to the cluster via `kubectl`.
 
    To connect, use the cluster configuration file (kubeconfig) downloaded from the VK Cloud personal account.
 
-1. Make sure the addon is available and working. To do this, [access the Grafana web interface](../../monitoring#using_grafana).
+1. Make sure the add-on is available and working. To do this, [access the Grafana web interface](../../monitoring#using_grafana).
 
    <warn>
 
-   Write down the password to access Grafana, even if it is stored as a Kubernetes secret. During the addon upgrade process, the namespace where the addon and the secret are located will be deleted along with all contents.
+   Write down the password to access Grafana, even if it is stored as a Kubernetes secret. During the add-on upgrade process, the namespace where the add-on and the secret are located will be deleted along with all contents.
 
    </warn>
 
@@ -40,7 +40,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
    To install, select the Helm version that is [compatible](https://helm.sh/docs/topics/version_skew/) with the cluster.
 
-1. Set an environment variable pointing to kubeconfig for the cluster. This will simplify your work with `kubectl` and `helm` when updating the addon.
+1. Set an environment variable pointing to kubeconfig for the cluster. This will simplify your work with `kubectl` and `helm` when updating the add-on.
 
    The path to your kubeconfig files may differ from the example below.
 
@@ -65,9 +65,9 @@ If there are other Kubernetes resources in the namespace, modify the commands an
    </tabpanel>
    </tabs>
 
-## 1. Get information you need to update your addon
+## {heading(1. Get information you need to update your add-on)[id=1_get_information_you_need_to_update_your_addon]}
 
-1. [Go to editing the addon configuration code](../../service-management/addons/manage-addons#editing_the_addon_code).
+1. [Go to editing the add-on configuration code](../../service-management/addons/manage-addons#editing_addon_code).
 
    Do not modify the code.
 
@@ -75,9 +75,9 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
    1. Application name (`kube-prometheus-stack` by default).
    1. Namespace name (`prometheus-monitoring` by default).
-   1. Full addon configuration code.
+   1. Full add-on configuration code.
 
-1. Set the environment variables that point to these application and namespace names. This will simplify further updating the addon.
+1. Set the environment variables that point to these application and namespace names. This will simplify further updating the add-on.
 
    The values of your variables may differ from the example below.
 
@@ -105,7 +105,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
    </tabpanel>
    </tabs>
 
-1. Get information about [Persistent Volumes (PVs) and Persistent Volume Claims (PVCs)](../../k8s-reference/pvs-and-pvcs). They are used to store the collected metrics, as well as other data necessary for the addon to work.
+1. Get information about [Persistent Volumes (PVs) and Persistent Volume Claims (PVCs)](../../k8s-reference/pvs-and-pvcs). They are used to store the collected metrics, as well as other data necessary for the add-on to work.
 
    ```bash
    kubectl -n $NAMESPACE get pvc
@@ -125,16 +125,16 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
    </details>
 
-## 2. Prepare addon environment for update
+## {heading(2. Prepare add-on environment for update)[id=2_prepare_addon_environment_for_update]}
 
-Volumes for the addon are created by default using the `Retain` [reclaim policy](../../concepts/storage#available_reclaim_policies_for_persistent_volumes) if no changes related to the storage class have been made to the addon configuration code. So, deleting the addon will cause the deletion of the persistent volumes of data as well. This will result in the loss of metrics accumulated during the addon operation, as well as other data necessary for the addon to work.
+Volumes for the add-on are created by default using the `Retain` [reclaim policy](../../concepts/storage#available_reclaim_policies_for_persistent_volumes) if no changes related to the storage class have been made to the add-on configuration code. So, deleting the add-on will cause the deletion of the persistent volumes of data as well. This will result in the loss of metrics accumulated during the add-on operation, as well as other data necessary for the add-on to work.
 
-In addition, the following Kubernetes resources, which are also used by the addon, may prevent you from installing a new version of the addon:
+In addition, the following Kubernetes resources, which are also used by the add-on, may prevent you from installing a new version of the add-on:
 
-- A set of Custom Resource Definitions (CRDs) required for the addon to work.
-- A set of Persistent Volume Claims (PVCs) that allows the addon to use persistent volumes.
+- A set of Custom Resource Definitions (CRDs) required for the add-on to work.
+- A set of Persistent Volume Claims (PVCs) that allows the add-on to use persistent volumes.
 
-Before you update the addon, protect the persistent volumes used by this addon from deletion, and remove the mentioned Kubernetes resources using one of the methods below.
+Before you update the add-on, protect the persistent volumes used by this add-on from deletion, and remove the mentioned Kubernetes resources using one of the methods below.
 
 <tabs>
 <tablist>
@@ -285,11 +285,11 @@ Before you update the addon, protect the persistent volumes used by this addon f
 
    The script performs the following actions:
 
-   1. Detects persistent volumes that are associated with PVCs created in the namespace in which the addon is installed. For these persistent volumes, the script defines the `Retain` reclaim policy. This is necessary to prevent these volumes from being deleted when the current version of the addon is uninstalled.
-   1. Deletes the Helm chart of the current version of the addon. This is necessary for successfully removing the PVCs and CRDs sets that are used by the addon.
-   1. Removes a set of PVCs from the namespace where the addon has been installed. This is necessary for unbinding PVs from PVCs and then reusing these PVs with a new version of the addon.
-   1. Removes references to the deleted PVCs from persistent volumes that have been linked to these PVCs. These persistent volumes will become available for linking (PVs status becomes `Available`) and will be reused by the new version of the addon after it is installed.
-   1. Deletes the set of CRDs that have been used by the addon.
+   1. Detects persistent volumes that are associated with PVCs created in the namespace in which the add-on is installed. For these persistent volumes, the script defines the `Retain` reclaim policy. This is necessary to prevent these volumes from being deleted when the current version of the add-on is uninstalled.
+   1. Deletes the Helm chart of the current version of the add-on. This is necessary for successfully removing the PVCs and CRDs sets that are used by the add-on.
+   1. Removes a set of PVCs from the namespace where the add-on has been installed. This is necessary for unbinding PVs from PVCs and then reusing these PVs with a new version of the add-on.
+   1. Removes references to the deleted PVCs from persistent volumes that have been linked to these PVCs. These persistent volumes will become available for linking (PVs status becomes `Available`) and will be reused by the new version of the add-on after it is installed.
+   1. Deletes the set of CRDs that have been used by the add-on.
    1. Deletes the `prometheus-monitoring` namespace if the script has been run for this namespace.
 
 1. Make the script code file executable:
@@ -309,8 +309,8 @@ Before you update the addon, protect the persistent volumes used by this addon f
    - `-h`: show the help.
    - `-k`: path to the kubeconfig file. The default value is retrieved from the `$KUBECONFIG` environment variable if specified.
    - `-c`: name of the kubeconfig context that should be used when working with the cluster. Default value: empty string.
-   - `-n`: name of the namespace in which the addon is installed. Default value is `prometheus-monitoring`.
-   - `-r`: name of the application with which the addon is installed. It matches the name of the Helm-chart for the addon. Default value is `kube-prometheus-stack`.
+   - `-n`: name of the namespace in which the add-on is installed. Default value is `prometheus-monitoring`.
+   - `-r`: name of the application with which the add-on is installed. It matches the name of the Helm-chart for the add-on. Default value is `kube-prometheus-stack`.
    - `-d`: value of the [--dry-run](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands) argument for `kubectl`. Default value is `none`. Use `server` or `client` for test running of the script: no changes will be made to the cluster.
 
    <details>
@@ -400,7 +400,7 @@ Before you update the addon, protect the persistent volumes used by this addon f
 </tabpanel>
 <tabpanel>
 
-1. Get the list of PVs that are used by the addon via PVCs in the addon namespace:
+1. Get the list of PVs that are used by the add-on via PVCs in the add-on namespace:
 
    ```bash
    kubectl get pv -o jsonpath='{range .items[?(@.spec.claimRef.namespace=="'"${NAMESPACE}"'")]}{.metadata.name}{"\n"}{end}'
@@ -408,7 +408,7 @@ Before you update the addon, protect the persistent volumes used by this addon f
 
    The list of PVs must match the list of PVs [received earlier](#1_get_information_you_need_to_update_your_addon).
 
-2. Patch these PVs so that they use the `Retain` reclaim policy. This is necessary to prevent these volumes from being deleted when the current version of the addon is uninstalled.
+2. Patch these PVs so that they use the `Retain` reclaim policy. This is necessary to prevent these volumes from being deleted when the current version of the add-on is uninstalled.
 
    This command patches an individual PV. Run it for all PVs in the list.
 
@@ -416,7 +416,7 @@ Before you update the addon, protect the persistent volumes used by this addon f
    kubectl patch pv <PV name> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
    ```
 
-3. Get a list of all PVs in the cluster and make sure that the PVs, which the addon is working with, use the `Retain` reclaim policy and are associated with a PVC (`Bound`):
+3. Get a list of all PVs in the cluster and make sure that the PVs, which the add-on is working with, use the `Retain` reclaim policy and are associated with a PVC (`Bound`):
 
    ```bash
    kubectl get pv
@@ -434,13 +434,13 @@ Before you update the addon, protect the persistent volumes used by this addon f
 
    </details>
 
-4. Delete the Helm chart of the current version of the addon. This is necessary for successfully removing the PVCs and CRDs sets that are used by the addon.
+4. Delete the Helm chart of the current version of the add-on. This is necessary for successfully removing the PVCs and CRDs sets that are used by the add-on.
 
    ```bash
    helm uninstall -n $NAMESPACE $CHART_NAME --wait --timeout 600s
    ```
 
-5. Get a list of PVCs that have been used by the addon:
+5. Get a list of PVCs that have been used by the add-on:
 
    ```bash
    kubectl -n $NAMESPACE get pvc
@@ -448,7 +448,7 @@ Before you update the addon, protect the persistent volumes used by this addon f
 
    The final list may differ from [previously obtained](#1_get_information_you_need_to_update_your_addon): part of the PVCs has been deleted during the Helm chart deletion.
 
-6. Delete the PVCs that are used by the addon. This is necessary for unbinding PVs from PVCs and then reusing these PVs with a new version of the addon.
+6. Delete the PVCs that are used by the add-on. This is necessary for unbinding PVs from PVCs and then reusing these PVs with a new version of the add-on.
 
    This command deletes a separate PVC. Run it for all PVCs from the list.
 
@@ -456,7 +456,7 @@ Before you update the addon, protect the persistent volumes used by this addon f
    kubectl -n $NAMESPACE delete pvc <PVC name>
    ```
 
-7. Patch the PVs that are used by the addon to unbind them from the PVCs that have been deleted. These persistent volumes will become available for binding (the PVs status becomes `Available`) and will be reused by the new version of the addon after its installation.
+7. Patch the PVs that are used by the add-on to unbind them from the PVCs that have been deleted. These persistent volumes will become available for binding (the PVs status becomes `Available`) and will be reused by the new version of the add-on after its installation.
 
    This command patches an individual PV. Run it for all PVs in the list you received earlier.
 
@@ -464,7 +464,7 @@ Before you update the addon, protect the persistent volumes used by this addon f
    kubectl patch pv <PV name> --type json -p '[{"op": "remove", "path": "/spec/claimRef"}]'
    ```
 
-8. Get a list of all PVs in the cluster and make sure that the PVs, which the addon is working with, use the `Retain` reclaim policy and are available for binding (`Available`):
+8. Get a list of all PVs in the cluster and make sure that the PVs, which the add-on is working with, use the `Retain` reclaim policy and are available for binding (`Available`):
 
    ```bash
    kubectl get pv
@@ -482,13 +482,13 @@ Before you update the addon, protect the persistent volumes used by this addon f
 
    </details>
 
-9. Get a list of CRDs that the addon has worked with:
+9. Get a list of CRDs that the add-on has worked with:
 
    ```bash
    kubectl get crd -o jsonpath='{range .items[?(@.spec.group=="monitoring.coreos.com")]}{.metadata.name}{"\n"}{end}'
    ```
 
-10. Delete all CRDs that the addon has worked with.
+10. Delete all CRDs that the add-on has worked with.
 
    This command deletes an individual CRD. Execute it for all CRDs in the list obtained earlier.
 
@@ -496,7 +496,7 @@ Before you update the addon, protect the persistent volumes used by this addon f
    kubectl delete crd <CRD name>
    ```
 
-11. Delete the namespace in which the addon has been installed.
+11. Delete the namespace in which the add-on has been installed.
 
    ```bash
    kubectl delete ns $NAMESPACE
@@ -505,16 +505,16 @@ Before you update the addon, protect the persistent volumes used by this addon f
 </tabpanel>
 </tabs>
 
-## 3. Update addon version
+## {heading(3. Update add-on version)[id=3_update_addon_version]}
 
-1. [Uninstall the current version of the addon](../../service-management/addons/manage-addons#removing_an_addon) using VK Cloud interfaces.
-1. [Install](../../service-management/addons/advanced-installation/install-advanced-monitoring) the Kube Prometheus Stack addon version `54.2.2` in the cluster.
+1. [Uninstall the current version of the add-on](../../service-management/addons/manage-addons#removing_addon) using VK Cloud interfaces.
+1. [Install](../../service-management/addons/advanced-installation/install-advanced-monitoring) the Kube Prometheus Stack add-on version `54.2.2` in the cluster.
 
    Perform **standard installation** as follows:
 
-   1. Set the same application and namespace names that have been used when installing the previous version of the addon.
+   1. Set the same application and namespace names that have been used when installing the previous version of the add-on.
 
-   1. Review the previous version of the addon configuration code, [obtained earlier](#1_get_information_you_need_to_update_your_addon). Find code fragments that are responsible for setting up the storage for the following addon components:
+   1. Review the previous version of the add-on configuration code, [obtained earlier](#1_get_information_you_need_to_update_your_addon). Find code fragments that are responsible for setting up the storage for the following add-on components:
 
       <tabs>
       <tablist>
@@ -588,37 +588,37 @@ Before you update the addon, protect the persistent volumes used by this addon f
       </tabpanel>
       </tabs>
 
-   1. Review the configuration code for the new version of the addon that you plan to install.
+   1. Review the configuration code for the new version of the add-on that you plan to install.
 
-      If the code fragments that are responsible for setting up the storage are different from those obtained earlier, correct them. The storage settings for Grafana, Alert Manager and Prometheus should exactly match the same settings used for the previous version of the addon.
+      If the code fragments that are responsible for setting up the storage are different from those obtained earlier, correct them. The storage settings for Grafana, Alert Manager and Prometheus should exactly match the same settings used for the previous version of the add-on.
 
-   1. (Optional) Make other changes to the addon configuration code.
+   1. (Optional) Make other changes to the add-on configuration code.
 
-      If you specified the password for access to Grafana in the `grafana.adminPassword` field when installing the previous version of the addon, you do not need to specify it again. The new version of the addon will use the previous PVs as a storage, so the password will remain the same. Installing a new version of the addon will not change the password for accessing Grafana, even if you leave this field empty: a secret with the password for Grafana will be generated, but it will not be used.
+      If you specified the password for access to Grafana in the `grafana.adminPassword` field when installing the previous version of the add-on, you do not need to specify it again. The new version of the add-on will use the previous PVs as a storage, so the password will remain the same. Installing a new version of the add-on will not change the password for accessing Grafana, even if you leave this field empty: a secret with the password for Grafana will be generated, but it will not be used.
 
       <warn>
 
-      Incorrectly specified configuration code may cause errors during installation or inoperability of the addon.
+      Incorrectly specified configuration code may cause errors during installation or inoperability of the add-on.
 
       </warn>
 
-   1. Install the addon.
+   1. Install the add-on.
 
       The installation process may take a long time. Wait until it is completed.
 
-1. Get information about the [Persistent Volume Claims (PVCs) and persistent volumes (PVs)](../../k8s-reference/pvs-and-pvcs) used by the addon:
+1. Get information about the [Persistent Volume Claims (PVCs) and persistent volumes (PVs)](../../k8s-reference/pvs-and-pvcs) used by the add-on:
 
    ```bash
    kubectl -n $NAMESPACE get pvc
    ```
 
-   The output of the command should be similar to the output of the [previously executed](#1_get_information_you_need_to_update_your_addon) command for the addon of the previous version. Thus, the `alertmanager...` PVC must be associated with the same PV that Alert Manager used earlier. Similarly for Prometheus and Grafana.
+   The output of the command should be similar to the output of the [previously executed](#1_get_information_you_need_to_update_your_addon) command for the add-on of the previous version. Thus, the `alertmanager...` PVC must be associated with the same PV that Alert Manager used earlier. Similarly for Prometheus and Grafana.
 
-## 4. Verify addon operability after updating
+## {heading(4. Verify add-on operability after updating)[id=4_verify_addon_operability_after_updating]}
 
-[Get access to the Grafana web interface](../../monitoring#using_grafana). To connect, use the same password that was used with the previous version of the addon. If you forgot your Grafana password, [reset it](../../service-management/addons/advanced-installation/install-advanced-monitoring#resetting_grafana_password).
+[Get access to the Grafana web interface](../../monitoring#using_grafana). To connect, use the same password that was used with the previous version of the add-on. If you forgot your Grafana password, [reset it](../../service-management/addons/advanced-installation/install-advanced-monitoring#resetting_grafana_password).
 
-A successful connection to Grafana indicates a successful addon update.
+A successful connection to Grafana indicates a successful add-on update.
 
 ## Delete unused resources
 
