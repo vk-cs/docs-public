@@ -1,8 +1,8 @@
-## Installing addon
+## {heading(Installing add-on)[id=installing_addon]}
 
-[Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the addon.
+[Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on.
 
-Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_nodes_c172481b) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) before install.
+Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of add-ons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_nodes_c172481b) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) before install.
 
 <tabs>
 <tablist>
@@ -12,7 +12,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 </tablist>
 <tabpanel>
 
-1. Install the addon:
+1. Install the add-on:
 
    <tabs>
    <tablist>
@@ -26,36 +26,36 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
-   1. If there are already installed addons in the cluster, click on the **Add addon** button.
-   1. Click the **Install addon** button on the `kube-prometheus-stack` addon card.
+   1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
+   1. Click the **Install addon** button on the `kube-prometheus-stack` add-on card.
    1. Edit if necessary:
 
       - application name;
-      - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing_addon_settings_code_during_installation).
+      - the name of the namespace where the add-on will be installed;
+      - [add-on settings code](#editing_addon_settings_code_during_installation).
 
         <warn>
 
-        An incorrectly set settings code can lead to errors during installation or the addon is inoperable.
+        An incorrectly set settings code can lead to errors during installation or the add-on is inoperable.
 
         </warn>
 
    1. Click the **Install addon** button.
 
-      The installation of the addon in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster will begin. This process can take a long time.
 
    </tabpanel>
    <tabpanel>
 
    1. [Install Terraform and configure the provider](/en/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
-   1. Create a Terraform configuration file with data about the addon being installed in the `vkcs_kubernetes_addon` block:
+   1. Create a Terraform configuration file with data about the add-on being installed in the `vkcs_kubernetes_addon` block:
 
-      - [Get](../../manage-addons#addons_available_for_installation_467c6636) list of addons available for installation.
-      - Get the addon settings from the `configuration_values` parameter using the data source [vcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md).
-      - (Optional) To dynamically change the addon parameters (for example, via CI), add the addon settings to a separate yaml file. Use the [templatefile](https://developer.hashicorp.com/terraform/language/functions/templatefile) function to add the desired values.
+      - [Get](../../manage-addons#addons_available_for_installation) list of add-ons available for installation.
+      - Get the add-on settings from the `configuration_values` parameter using the data source [vcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md).
+      - (Optional) To dynamically change the add-on parameters (for example, via CI), add the add-on settings to a separate yaml file. Use the [templatefile](https://developer.hashicorp.com/terraform/language/functions/templatefile) function to add the desired values.
 
       <details>
-         <summary>Example of specifying an addon</summary>
+         <summary>Example of specifying an add-on</summary>
 
          ```hcl
          resource "vkcs_kubernetes_addon" "kube-prometheus-stack" {
@@ -99,7 +99,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 </tabpanel>
 <tabpanel>
 
-1. Prepare a dedicated group of worker nodes to install the addon, if it has not already been done:
+1. Prepare a dedicated group of worker nodes to install the add-on, if it has not already been done:
 
    <tabs>
    <tablist>
@@ -112,7 +112,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Find the cluster you need in the list.
 
-   1. Make sure that the cluster has a dedicated group of worker nodes that will host addons.
+   1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
 
       If there is no such group — [add it](../../../manage-node-group#add_worker_node_group).
 
@@ -124,7 +124,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. Install the addon:
+1. Install the add-on:
 
    <tabs>
    <tablist>
@@ -138,15 +138,15 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
-   1. If there are already installed addons in the cluster, click on the **Add addon** button.
-   1. Click the **Install addon** button on the `kube-prometheus-stack` addon card.
+   1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
+   1. Click the **Install addon** button on the `kube-prometheus-stack` add-on card.
    1. Edit if necessary:
 
       - application name;
-      - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing_addon_settings_code_during_installation).
+      - the name of the namespace where the add-on will be installed;
+      - [add-on settings code](#editing_addon_settings_code_during_installation).
 
-   1. Set the necessary tolerations and nodeSelector in the addon settings code:
+   1. Set the necessary tolerations and nodeSelector in the add-on settings code:
 
       <tabs>
       <tablist>
@@ -194,18 +194,18 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       <warn>
 
-      An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
+      An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
       </warn>
 
    1. Click the **Install addon** button.
 
-      The installation of the addon in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster will begin. This process can take a long time.
 
    </tabpanel>
    <tabpanel>
 
-   Use the instructions from the standard addon installation. In the addon settings, set the necessary exceptions (tolerations) and node selectors (nodeSelector).
+   Use the instructions from the standard add-on installation. In the add-on settings, set the necessary exceptions (tolerations) and node selectors (nodeSelector).
 
    </tabpanel>
    </tabs>
@@ -218,13 +218,13 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 <info>
 
-During quick installation, the addon settings code is not edited. A Kubernetes secret will be created, containing a permanent password to log in to the Grafana web interface.
+During quick installation, the add-on settings code is not edited. A Kubernetes secret will be created, containing a permanent password to log in to the Grafana web interface.
 
 If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
 </info>
 
-1. Install the addon:
+1. Install the add-on:
 
    <tabs>
    <tablist>
@@ -238,21 +238,21 @@ If this does not suit you, perform a **standard installation** or **installation
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
-   1. If there are already installed addons in the cluster, click on the **Add addon** button.
-   1. Click the **Install addon** button on the `kube-prometheus-stack` addon card.
+   1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
+   1. Click the **Install addon** button on the `kube-prometheus-stack` add-on card.
    1. Edit if necessary:
 
       - application name;
-      - the name of the namespace where the addon will be installed;
+      - the name of the namespace where the add-on will be installed;
 
    1. Click the **Install addon** button.
 
-      The installation of the addon in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster will begin. This process can take a long time.
 
    </tabpanel>
    <tabpanel>
 
-   Use the instructions from the standard addon installation.
+   Use the instructions from the standard add-on installation.
 
    </tabpanel>
    </tabs>
@@ -263,31 +263,31 @@ If this does not suit you, perform a **standard installation** or **installation
 </tabpanel>
 </tabs>
 
-## Editing addon settings code during installation
+## {heading(Editing add-on settings code during installation)[id=editing_addon_settings_code_during_installation]}
 
 <info>
 
-- Editing the addon code is applicable for standard installation and installation on dedicated worker nodes.
-- The full addon settings code along with the description of the fields is available on [GitHub](https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml).
+- Editing the add-on code is applicable for standard installation and installation on dedicated worker nodes.
+- The full add-on settings code along with the description of the fields is available on [GitHub](https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml).
 
 </info>
 
 ### Setting temporary password for Grafana web interface
 
-When installing an addon with default parameters, a Kubernetes secret will be created containing a permanent password to log in to the Grafana web interface.
+When installing an add-on with default parameters, a Kubernetes secret will be created containing a permanent password to log in to the Grafana web interface.
 
-Also, when installing the addon, you can specify a temporary user password. In this case, the first login to the Grafana web interface is performed with this password, then you will be prompted to change it. To do this, change the value of the field in the addon settings code:
+Also, when installing the add-on, you can specify a temporary user password. In this case, the first login to the Grafana web interface is performed with this password, then you will be prompted to change it. To do this, change the value of the field in the add-on settings code:
 
 ```yaml
 grafana:
   adminPassword: "<temporary user password>"
 ```
 
-After editing the addon code [continue installing the addon](#installing_addon).
+After editing the add-on code [continue installing the add-on](#installing_addon).
 
 ## Changing Prometheus disk size
 
-This operation is [available](#installing_addon) if the monitoring addon `kube-prometheus-stack` is installed in the cluster.
+This operation is [available](#installing_addon) if the monitoring add-on `kube-prometheus-stack` is installed in the cluster.
 
 The Prometheus disk stores cluster monitoring data. If there is not enough space for them, or you want to increase the performance of the Prometheus disk, increase the disk size.
 
@@ -302,7 +302,7 @@ The Prometheus disk stores cluster monitoring data. If there is not enough space
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the desired cluster.
 1. Go to **Addons** tab.
-1. Expand the `kube-prometheus-stack` addon menu and choose option **Change Prometheus disk size**.
+1. Expand the `kube-prometheus-stack` add-on menu and choose option **Change Prometheus disk size**.
 1. Set the desired disk size. The operation works only in the direction of increase.
 1. Click the **Confirm** button.
 
@@ -311,11 +311,11 @@ The Prometheus disk stores cluster monitoring data. If there is not enough space
 
 ## Getting Grafana password from Kubernetes secret
 
-If the addon was installed without specifying a temporary password, the password value for entering the Grafana web interface can be obtained from the Kubernetes secret.
+If the add-on was installed without specifying a temporary password, the password value for entering the Grafana web interface can be obtained from the Kubernetes secret.
 
 <info>
 
-If, when adding an addon, a service name other than `kube-prometheus-stack` or a namespace other than `prometheus-monitoring` were selected, adjust the steps below.
+If, when adding an add-on, a service name other than `kube-prometheus-stack` or a namespace other than `prometheus-monitoring` were selected, adjust the steps below.
 
 </info>
 
@@ -368,11 +368,11 @@ If, when adding an addon, a service name other than `kube-prometheus-stack` or a
 
 ## Resetting Grafana password
 
-If the addon was installed without specifying a temporary password, the password value for entering the Grafana web interface can be obtained from the Kubernetes secret. If this secret has been lost, you can reset the password to access Grafana again.
+If the add-on was installed without specifying a temporary password, the password value for entering the Grafana web interface can be obtained from the Kubernetes secret. If this secret has been lost, you can reset the password to access Grafana again.
 
 <info>
 
-Further the `kube-prometheus-stack` service name and the `prometheus-monitoring` namespace are used. If other parameters have been selected when adding the addon, modify the commands accordingly.
+Further the `kube-prometheus-stack` service name and the `prometheus-monitoring` namespace are used. If other parameters have been selected when adding the add-on, modify the commands accordingly.
 
 </info>
 

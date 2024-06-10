@@ -1,10 +1,10 @@
 {
-  "title": "Working with addons",
-  "pageDescription": "This section describes the available actions on addons and the procedure for advanced installation of addons.",
-  "shortDescription": "How to install and manage addons in Kubernetes cluster",
-  "metaTitle": "Working with addons",
-  "metaDescription": "How to install and manage addons in Kubernetes cluster",
-  "sectionTitle": "Working with addons",
+  "title": "Working with add-ons",
+  "pageDescription": "This section describes the available actions on add-ons and the procedure for advanced installation of add-ons.",
+  "shortDescription": "How to install and manage add-ons in Kubernetes cluster",
+  "metaTitle": "Working with add-ons",
+  "metaDescription": "How to install and manage add-ons in Kubernetes cluster",
+  "sectionTitle": "Working with add-ons",
   "icon": "",
   "weight": 5,
   "uuid": "15db7d64-6883-4799-921c-d848d2f90df9"

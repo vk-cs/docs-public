@@ -1,8 +1,8 @@
-## Installing addon
+## {heading(Installing add-on)[id=installing_addon]}
 
-[Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the addon.
+[Several installation options](../../../../concepts/addons-and-settings/addons#features_of_installing_addons) are available for the add-on.
 
-Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of addons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_nodes_c172481b) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) before install.
+Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of add-ons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_nodes_c172481b) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) before install.
 
 <tabs>
 <tablist>
@@ -12,7 +12,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 </tablist>
 <tabpanel>
 
-1. Install the addon:
+1. Install the add-on:
 
    <tabs>
    <tablist>
@@ -26,26 +26,26 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
-   1. If there are already installed addons in the cluster, click on the **Add addon** button.
-   1. Click the **Install** button on the `cert-manager` addon card.
-   1. Select the necessary addon version from the drop-down list.
+   1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
+   1. Click the **Install** button on the `cert-manager` add-on card.
+   1. Select the necessary add-on version from the drop-down list.
    1. Click the **Install addon** button.
    1. Edit if necessary:
 
       - selected version;
       - application name;
-      - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing_addon_settings_code_during_installation).
+      - the name of the namespace where the add-on will be installed;
+      - [add-on settings code](#editing_addon_settings_code_during_installation).
 
         <warn>
 
-        An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
+        An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
         </warn>
 
    1. Click the **Install addon** button.
 
-      The installation of the addon in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster will begin. This process can take a long time.
 
    </tabpanel>
    <tabpanel>
@@ -74,12 +74,12 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. Verify that the addon is installed correctly by [issuing a test self-signed certificate](https://cert-manager.io/docs/installation/kubectl/#2-optional-end-to-end-verify-the-installation).
+1. Verify that the add-on is installed correctly by [issuing a test self-signed certificate](https://cert-manager.io/docs/installation/kubectl/#2-optional-end-to-end-verify-the-installation).
 
 </tabpanel>
 <tabpanel>
 
-1. Prepare a dedicated group of worker nodes to install the addon, if it has not already been done:
+1. Prepare a dedicated group of worker nodes to install the add-on, if it has not already been done:
 
    <tabs>
    <tablist>
@@ -92,7 +92,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Find the cluster you need in the list.
 
-   1. Make sure that the cluster has a dedicated group of worker nodes that will host addons.
+   1. Make sure that the cluster has a dedicated group of worker nodes that will host add-ons.
 
       If there is no such group — [add it](../../../manage-node-group#add_worker_node_group).
 
@@ -104,7 +104,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. Install the addon:
+1. Install the add-on:
 
    <tabs>
    <tablist>
@@ -118,18 +118,18 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
-   1. If there are already installed addons in the cluster, click on the **Add addon** button.
-   1. Click the **Install** button on the `cert-manager` addon card.
-   1. Select the necessary addon version from the drop-down list.
+   1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
+   1. Click the **Install** button on the `cert-manager` add-on card.
+   1. Select the necessary add-on version from the drop-down list.
    1. Click the **Install addon** button.
    1. Edit if necessary:
 
       - selected version;
       - application name;
-      - the name of the namespace where the addon will be installed;
-      - [addon settings code](#editing_addon_settings_code_during_installation).
+      - the name of the namespace where the add-on will be installed;
+      - [add-on settings code](#editing_addon_settings_code_during_installation).
 
-   1. Set the necessary tolerations and nodeSelector in the addon setup code:
+   1. Set the necessary tolerations and nodeSelector in the add-on setup code:
 
       <tabs>
       <tablist>
@@ -171,13 +171,13 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       <warn>
 
-      An incorrectly specified settings code can lead to errors during installation or the addon is inoperable.
+      An incorrectly specified settings code can lead to errors during installation or the add-on is inoperable.
 
       </warn>
 
    1. Click the **Install addon** button.
 
-      The installation of the addon in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster will begin. This process can take a long time.
 
    </tabpanel>
    <tabpanel>
@@ -206,20 +206,20 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    </tabs>
 
-1. Verify that the addon is installed correctly by [issuing a test self-signed certificate](https://cert-manager.io/docs/installation/kubectl/#2-optional-end-to-end-verify-the-installation).
+1. Verify that the add-on is installed correctly by [issuing a test self-signed certificate](https://cert-manager.io/docs/installation/kubectl/#2-optional-end-to-end-verify-the-installation).
 
 </tabpanel>
 <tabpanel>
 
 <info>
 
-Editing the addon settings code is not supported during the quick installation.
+Editing the add-on settings code is not supported during the quick installation.
 
 If this is not suitable for you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
 </info>
 
-1. Install the addon:
+1. Install the add-on:
 
    <tabs>
    <tablist>
@@ -233,19 +233,19 @@ If this is not suitable for you, perform a **standard installation** or **instal
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the desired cluster.
    1. Go to **Addons** tab.
-   1. If there are already installed addons in the cluster, click on the **Add addon** button.
-   1. Click the **Install** button on the `cert-manager` addon card.
-   1. Select the necessary addon version from the drop-down list.
+   1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
+   1. Click the **Install** button on the `cert-manager` add-on card.
+   1. Select the necessary add-on version from the drop-down list.
    1. Click the **Install addon** button.
    1. Edit if necessary:
 
       - selected version;
       - application name;
-      - the name of the namespace where the addon will be installed;
+      - the name of the namespace where the add-on will be installed;
 
    1. Click the **Install addon** button.
 
-      The installation of the addon in the cluster will begin. This process can take a long time.
+      The installation of the add-on in the cluster will begin. This process can take a long time.
 
    </tabpanel>
    <tabpanel>
@@ -274,21 +274,21 @@ If this is not suitable for you, perform a **standard installation** or **instal
    </tabpanel>
    </tabs>
 
-1. Verify that the addon is installed correctly by [issuing a test self-signed certificate](https://cert-manager.io/docs/installation/kubectl/#2-optional-end-to-end-verify-the-installation).
+1. Verify that the add-on is installed correctly by [issuing a test self-signed certificate](https://cert-manager.io/docs/installation/kubectl/#2-optional-end-to-end-verify-the-installation).
 
 </tabpanel>
 </tabs>
 
-## Editing addon settings code during installation
+## {heading(Editing add-on settings code during installation)[id=editing_addon_settings_code_during_installation]}
 
-Editing the addon code is applicable for standard installation and installation on dedicated worker nodes.
+Editing the add-on code is applicable for standard installation and installation on dedicated worker nodes.
 
-The full addon setup code along with the description of the fields is available on [GitHub](https://github.com/cert-manager/cert-manager/blob/master/deploy/charts/cert-manager/values.yaml).
+The full add-on setup code along with the description of the fields is available on [GitHub](https://github.com/cert-manager/cert-manager/blob/master/deploy/charts/cert-manager/values.yaml).
 
 <err>
 
-Do not delete the `podAnnotations.timestamp` fields or the values set in them. These fields are required for correct installation and operation of the addon.
+Do not delete the `podAnnotations.timestamp` fields or the values set in them. These fields are required for correct installation and operation of the add-on.
 
 </err>
 
-After editing the addon code [continue installing the addon](#installing_addon).
+After editing the add-on code [continue installing the add-on](#installing_addon).

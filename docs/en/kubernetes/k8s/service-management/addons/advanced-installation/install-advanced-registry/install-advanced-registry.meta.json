@@ -1,9 +1,9 @@
 {
     "title": "Docker Registry",
-    "pageDescription": "This describes how to configure and install the Docker Registry addon.",
+    "pageDescription": "This describes how to configure and install the Docker Registry add-on.",
     "shortDescription": "",
     "metaTitle": "Docker Registry",
-    "metaDescription": "Configuring and installing the Docker Registry addon",
+    "metaDescription": "Configuring and installing the Docker Registry add-on",
     "sectionTitle": "Docker Registry",
     "icon": "",
     "weight": 3,
