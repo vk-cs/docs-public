@@ -59,7 +59,7 @@
           "namespaces"
         ],
         "summary": "Получить список разрешенных пространств имен",
-        "description": "Получить список [пространств имен](https://cloud.vk.com/docs/ru/manage/monitoring/concepts/architecture/#namespaces) (namespaces), которые можно использовать в запросах",
+        "description": "Получить список [пространств имен](https://cloud.vk.com/docs/ru/monitoring-services/monitoring/concepts/architecture/#namespaces) (namespaces), которые можно использовать в запросах",
         "operationId": "allowedNamespaces",
         "responses": {
           "200": {

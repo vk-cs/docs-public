@@ -26,7 +26,7 @@ To see the list of endpoints for your region:
 
 <info>
 
-The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown in the personal account allows [viewing VM logs](/en/manage/logging/start/view-logs).
+The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown in the personal account allows [viewing VM logs](/en/monitoring-services/logging/service-management/view-logs).
 
 </info>
 
