@@ -16,7 +16,7 @@ The Ingress controller can be deployed [in conjunction with the HTTP load balanc
 
    Select other cluster settings at your discretion.
 
-1. [Make sure](../../../service-management/addons/manage-addons#viewing_addons) that the NGINX Ingress addon (`ingress-nginx`) **is not installed** in the cluster. For demonstration purposes, the Ingress controller will be installed manually.
+1. [Make sure](../../../service-management/addons/manage-addons#viewing_addons) that the NGINX Ingress add-on (`ingress-nginx`) **is not installed** in the cluster. For demonstration purposes, the Ingress controller will be installed manually.
 
 1. [Make sure](../../../connect/kubectl) that you can connect to the cluster using `kubectl'.
 

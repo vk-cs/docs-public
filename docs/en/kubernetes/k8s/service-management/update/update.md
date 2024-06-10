@@ -1,4 +1,4 @@
-If the cluster is not using the most current version of Kubernetes from [the list](../../concepts/versions/version-support/), it can be upgraded to a newer version of Kubernetes. When updating a cluster, part of its components are also [updated](../../concepts/update/), as well the installed addons.
+If the cluster is not using the most current version of Kubernetes from [the list](../../concepts/versions/version-support/), it can be upgraded to a newer version of Kubernetes. When updating a cluster, part of its components are also [updated](../../concepts/update/), as well the installed add-ons.
 
 You cannot downgrade to a lower version of Kubernetes when upgrading. Clusters of versions 1.16 and below can only be upgraded by transferring a backup of data to a new cluster of the correct version, for example [using Velero](../../how-to-guides/velero-backup).
 

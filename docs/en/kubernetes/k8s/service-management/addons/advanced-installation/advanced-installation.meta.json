@@ -1,10 +1,10 @@
 {
-  "title": "Configuring and installing addons",
-  "pageDescription": "It describes the configuration and installation of addons, including editing the addon code.",
-  "shortDescription": "Setup and installation, including editing the addon code",
-  "metaTitle": "Configuring and installing addons",
-  "metaDescription": "Configuring and installing addons, including editing the addon code.",
-  "sectionTitle": "Configuring and installing addons",
+  "title": "Configuring and installing add-ons",
+  "pageDescription": "It describes the configuration and installation of add-ons, including editing the add-on code.",
+  "shortDescription": "Setup and installation, including editing the add-on code",
+  "metaTitle": "Configuring and installing add-ons",
+  "metaDescription": "Configuring and installing add-ons, including editing the add-on code.",
+  "sectionTitle": "Configuring and installing add-ons",
   "icon": "",
   "weight": 2,
   "uuid": "44642c87-461e-41f1-8a70-2c5224bb2037"

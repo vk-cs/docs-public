@@ -494,9 +494,9 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
 ### 3.2. Publish the application using Ingress
 
-1. [Install](/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress) the Ingress NGINX addon of the latest version to the cluster.
+1. [Install](/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress) the Ingress NGINX add-on of the latest version to the cluster.
 
-   Perform a **standard installation**. Do not change any parameters, only edit the addon configuration code:
+   Perform a **standard installation**. Do not change any parameters, only edit the add-on configuration code:
 
    1. Make sure that the `service.beta.kubernetes.io/openstack-internal-load-balancer` annotation is set to `false`:
 
@@ -523,7 +523,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
       This is necessary to assign a public IP address of the Ingress controller to the Ingress resource. This will allow ExternalDNS to create the correct resource records for Ingress.
 
-   Wait for the addon installation to complete. This process may take a long time.
+   Wait for the add-on installation to complete. This process may take a long time.
 
 1. Create a manifest for the `coffee` application:
 
@@ -725,9 +725,9 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
       kubectl delete -f tea-service.yaml -f tea-app.yaml
       ```
   
-   1. [Delete the Ingress NGINX addon](../../service-management/addons/manage-addons#removing_an_addon).
+   1. [Delete the Ingress NGINX add-on](../../service-management/addons/manage-addons#removing_addon).
 
-      It may take a long time to remove the addon and its associated resources.
+      It may take a long time to remove the add-on and its associated resources.
 
    1. [Delete the resource records](/en/networks/dns/publicdns#deleting_resource_records) created by ExternalDNS.
 
