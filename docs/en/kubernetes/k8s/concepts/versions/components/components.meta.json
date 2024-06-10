@@ -1,13 +1,13 @@
 {
-  "title": "Versions of Kubernetes components",
-  "pageDescription": "Which versions of components and add-ons are supported in VK Cloud clusters.",
-  "shortDescription": "Which versions of components and add-ons are supported in VK Cloud clusters",
-  "metaTitle": "Versions of Kubernetes components",
-  "metaDescription": "Container service: which versions of components and add-ons are supported in VK Cloud clusters",
-  "sectionTitle": "Versions of Kubernetes components",
-  "icon": "",
-  "weight": 3,
-  "uuid": "ebe13293-8fbf-4467-bafe-1389f856c610",
-  "createdAt": "2023-06-13T06:58:16.000Z",
-  "updatedAt": "2024-06-05T16:41:45.000Z"
+    "title": "Versions of Kubernetes components",
+    "pageDescription": "Which versions of components and add-ons are supported in VK Cloud clusters.",
+    "shortDescription": "Which versions of components and add-ons are supported in VK Cloud clusters",
+    "metaTitle": "Versions of Kubernetes components",
+    "metaDescription": "Container service: which versions of components and add-ons are supported in VK Cloud clusters",
+    "sectionTitle": "Versions of Kubernetes components",
+    "icon": "",
+    "weight": 3,
+    "uuid": "ebe13293-8fbf-4467-bafe-1389f856c610",
+    "createdAt": "2023-06-13T06:58:16.000Z",
+    "updatedAt": "2024-06-10T13:46:16.000Z"
 }
