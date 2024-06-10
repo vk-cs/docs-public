@@ -1,6 +1,6 @@
 In your personal account, you can view the addresses of the available API endpoints. The list and addresses of endpoints differ between [regions](/en/tools-for-using-services/account/concepts/regions).
 
-To work with VK Cloud via the API [activate API access](../enable-api). Read more about working with services in the section [Справка API](/ru/tools-for-using-services/api "change-lang").
+To work with VK Cloud via the API [activate API access](../enable-api). Read more about working with services in [API specification](/ru/tools-for-using-services/api "change-lang").
 
 ## Viewing the list of endpoints
 
@@ -32,14 +32,14 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 
 <details><summary>Other endpoints</summary>
 
-### Containers
+### Cloud Containers
 
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
-| Magnum            | https://infra.mail.ru:9511/v1                       | Managing [containers](/en/kubernetes/k8s) |
-| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Managing container [addons](/en/kubernetes/k8s/service-management/addons) |
+| Magnum            | https://infra.mail.ru:9511/v1                       | Managing [Cloud Containers](/en/kubernetes/k8s) |
+| Magnum-addons     | https://mcs.mail.ru/infra/container/addons          | Managing Cloud Containers [addons](/en/kubernetes/k8s/service-management/addons) |
 
-### Virtual networks
+### Cloud Networks
 
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
@@ -53,17 +53,24 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 |-------------------------------------|-------------------------|--|
 | Sahara            | https://infra.mail.ru:8386/v1.1/<project_id>        | Managing [Cloud Big Data](/en/bigdata/hortonworks/bigdata-integrate/bigdata-api) clusters |
 
-### Databases
+### Cloud Databases
 
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
 | Trove             | https://infra.mail.ru:8779/v1.0/<project_id>        | Managing [databases](/en/dbs/dbaas) |
 
-### Object storage (S3)
+### Cloud Storage
 
 | Endpoint                            | Address                          | Purpose |
 |-------------------------------------|----------------------------------|--|
-| Домен Cloud Storage                 | https://hb.ru-msk.vkcs.cloud/    | Managing [Object storage](/en/storage/s3) |
+| S3 domain                 | https://hb.ru-msk.vkcs.cloud/    | Managing [Cloud storage](/en/storage/s3) |
+
+
+### Cloud ML Platform
+
+| Endpoint                              | Address                     | Purpose |
+|---------------------------------------|---------------------------| -----------------|
+| Mlplatform | https://msk.cloud.vk.com/infra/mlplatform   | Managing [Cloud ML Platform](/en/ml/mlplatform) |
 
 ### AI API
 
@@ -71,19 +78,12 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 |-------------------------------|---------------------------|--|
 | Vision for image and video recognition  | https://smarty.mail.ru/   | [Objects recognition](/en/ml/vision) |
 
-### Message queues
-
-| Endpoint                            | Address                          | Purpose |
-|-------------------------------------|----------------------------------|--|
-| Cloud Queues                        | https://sqs.mcs.mail.ru          | Managing [message queues](/en/manage/cloud-queues) |
-
 ### Endpoints not associated with a service
 
 | Endpoint                            | Address                 | Purpose |
 |-------------------------------------|-------------------------|--|
 | Audit             | https://mcs.mail.ru/auditlogs/v1/<project_id>       | Collecting the statistics of users' actions in the project |
 | Barbican          | https://public.infra.mail.ru:9311                   | A protected storage for secrets (SSH keys, Keystone tokens, TLS certificates) |
-| Gnocchi           | https://infra.mail.ru:8041                          | Gathering VM metrics (metric examples: the amount of resources available to a VM, VM resource usage) |
 | Keystone          | https://infra.mail.ru:35357/v3/                     | Managing project users, user authentication via [tokens](../case-keystone-token) |
 | Quota-manager     | https://mcs.mail.ru/quota-manager                   | Viewing project [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) |
 | Heat              | https://infra.mail.ru:8004/v1/<project_id>          | Cloud services orchestration (deprecated)
