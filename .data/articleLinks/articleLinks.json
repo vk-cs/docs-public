@@ -7461,11 +7461,11 @@
   ],
   [
     "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/ml/vision"
+    "http://localhost:3000/docs/en/ml/mlplatform"
   ],
   [
     "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/manage/cloud-queues"
+    "http://localhost:3000/docs/en/ml/vision"
   ],
   [
     "/en/tools-for-using-services/rest-api/endpoints",
@@ -16794,6 +16794,10 @@
   [
     "/ru/tools-for-using-services/api/rest-api/endpoints",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/ml/mlplatform"
   ],
   [
     "/ru/tools-for-using-services/api/rest-api/endpoints",
