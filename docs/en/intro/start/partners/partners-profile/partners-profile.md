@@ -75,7 +75,7 @@ When displaying the details, all deposits and withdrawals are calculated based o
 
 <warn>
 
-Blocking the client means that it is impossible to log in to the VK Cloud personal account. Its virtual resources continue to work.
+Blocking the client means that it is impossible to sign in to the VK Cloud personal account. Its virtual resources continue to work.
 
 </warn>
 

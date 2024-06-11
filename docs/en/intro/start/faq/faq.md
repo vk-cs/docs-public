@@ -51,7 +51,7 @@ Registration via VK Cloud personal account is only possible for Russian numbers 
 
 <summary>I forgot my account password</summary>
 
-Restore the password from the account. To do this, click **Recover password** on the login screen.
+Restore the password from the account. To do this, click **Recover password** on the authorization page.
 
 </details>
 

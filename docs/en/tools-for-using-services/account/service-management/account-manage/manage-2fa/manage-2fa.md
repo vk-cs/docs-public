@@ -1,6 +1,6 @@
 You can enable two-factor authentication (2FA) in VK Cloud to enhance account security.
 
-After enabling 2FA, each time you log in to your personal account, you will need to enter a one-time 6-digit code from the authentication application.
+After enabling 2FA, each time you sign in to your personal account, you will need to enter a one-time 6-digit code from the authentication application.
 
 ## Enabling 2FA
 
@@ -41,7 +41,7 @@ After enabling 2FA, each time you log in to your personal account, you will need
 1. Enter your account password in the field **Account password**.
 1. Click the **Enable**.
 
-Two-factor authentication will be enabled for your account. A list of backup codes will be displayed with which you can log in to your personal account if the authentication application is unavailable.
+Two-factor authentication will be enabled for your account. A list of backup codes will be displayed with which you can sign in to your personal account if the authentication application is unavailable.
 
 ## Disabling 2FA
 

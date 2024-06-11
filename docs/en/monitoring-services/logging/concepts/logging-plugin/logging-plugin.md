@@ -17,7 +17,7 @@ Acceptable options for specifying user credentials:
 
 - `user_id` and `password`;
 - `key_file`;
-- `user_name` and `password` (for example, your username and password to log into your VK Cloud personal account).
+- `user_name` and `password` (for example, your username and password to sign in to your VK Cloud personal account).
 
 <warn>
 

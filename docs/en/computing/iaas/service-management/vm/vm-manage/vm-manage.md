@@ -558,7 +558,7 @@ To restore access to a Linux virtual machine via SSH using a key pair, you need 
    1. Go to **Cloud Computing → Virtual machines**.
    2. In the list of virtual machines, click on the name of the VM you need.
    3. On the VM page, go to the tab **Console**.
-   4. Use the default username and password to log in to the VM OS.
+   4. Use the default username and password to sign in to the VM OS.
    5. Download the file with the public key:
 
       ```bash

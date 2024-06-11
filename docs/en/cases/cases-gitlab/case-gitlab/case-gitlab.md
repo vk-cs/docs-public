@@ -42,7 +42,7 @@ Below is an example of installing the free versions of GitLab and GitLab Runner 
 
     <details>
         <summary>What is the purpose of assigning a domain name?</summary>
-        You can install GitLab on a VM that does not have a domain name. During installation, self-signed SSL certificates will be automatically issued for connecting to GitLab over HTTPS. However, you will not be able to issue a public SSL certificate for GitLab. As a result, when opening the login page of your GitLab server, users will see the warning: “The connection is not secure.”.
+        You can install GitLab on a VM that does not have a domain name. During installation, self-signed SSL certificates will be automatically issued for connecting to GitLab over HTTPS. However, you will not be able to issue a public SSL certificate for GitLab. As a result, when opening the authorization page of your GitLab server, users will see the warning: “The connection is not secure.”.
 
     </details>
 
@@ -273,9 +273,9 @@ If the VM on which GitLab is installed has a domain name, you can issue a public
 
     Instead of `185.185.185.185` you can use the fully qualified domain name of the VM if it exists.
 
-    The GitLab login page will open.
+    The GitLab authorization page will open.
 
-1. To log in, use the administrator login (`root`) and the copied password.
+1. To sign in, use the administrator login (`root`) and the copied password.
 
     The GitLab dashboard will open. The installation is complete, GitLab is ready for operation.
 

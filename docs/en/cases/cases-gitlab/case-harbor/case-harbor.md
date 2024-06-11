@@ -70,7 +70,7 @@ Harbor launched.
 
 ## Setting up the repository repository Harbor
 
-1. Log in to Harbor.
+1. Sign in to Harbor.
 
 Since we are using non-standard ports, the URL will look like this:
 
