@@ -1,4 +1,4 @@
-As part of the [addon](../../../../concepts/addons-and-settings/addons#jaeger) there is [Jaeger collector](https://www.jaegertracing.io/docs/latest/architecture/#collector), which requires storage to work. As a [storage backend](https://www.jaegertracing.io/docs/latest/deployment/#span-storage-backends) the Jaeger add-on from VK Cloud uses Elasticsearch, which is deployed in the form of several replicas.
+As part of the [add-on](../../../../concepts/addons-and-settings/addons#jaeger) there is [Jaeger collector](https://www.jaegertracing.io/docs/latest/architecture/#collector), which requires storage to work. As a [storage backend](https://www.jaegertracing.io/docs/latest/deployment/#span-storage-backends) the Jaeger add-on from VK Cloud uses Elasticsearch, which is deployed in the form of several replicas.
 
 ## {heading(Installing add-on)[id=installing_addon]}
 

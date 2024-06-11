@@ -138,7 +138,7 @@ Connect to the VM:
       2. In the block **Connection settings** click **Open**.
       3. Select the configuration file and click **Open**.
       4. Press the button **Connect** and confirm the connection again in the window that opens.
-      5. In the operating system login window, enter `<Password>`.
+      5. In the operating system authorization window, enter `<Password>`.
 
 </tabpanel>
 </tabs>

@@ -4,7 +4,7 @@ If you don't see the invitation in your **Inbox**, check the **Spam** folder.
 
 ## Accept the invitation
 
-The login procedure depends on whether an account with your email is registered in VK Cloud or not.
+The authorization procedure depends on whether an account with your email is registered in VK Cloud or not.
 
 <tabs>
 <tablist>

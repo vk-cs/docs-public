@@ -1,4 +1,4 @@
-You can visualize data from various sources (databases, Google Sheets), as well as build interactive reports using the [Redash](https://msk.cloud.vk.com/app/en/services/marketplace/v2/apps/service/7ee4cc28-6b2b-4595-b119-89c718af9e8b/latest/info/) service. This instruction will help you deploy the Redash 10.1.0 service on a VM in VK Cloud, log into the service console and create a new user.
+You can visualize data from various sources (databases, Google Sheets), as well as build interactive reports using the [Redash](https://msk.cloud.vk.com/app/en/services/marketplace/v2/apps/service/7ee4cc28-6b2b-4595-b119-89c718af9e8b/latest/info/) service. This instruction will help you deploy the Redash 10.1.0 service on a VM in VK Cloud, sign in to the service console and create a new user.
 
 By using the Redash 10.1.0, you agree to the license agreements of the [Marketplace](/ru/intro/start/legal/marketplace "change-lang") and [Redash](https://redash.io/terms) services.
 

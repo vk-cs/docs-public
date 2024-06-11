@@ -69,7 +69,7 @@ Before creating a bucket, you need to create a user who will be granted access t
 
 To do this, on the "Accounts" tab of the "Object Storage" service, create an account by clicking the "Add Account" button, specify any desired name and save the API keys received.
 
-2. Log in to AWS CLI
+2. Sign in to AWS CLI
 
 Run the AWS configuration
 
