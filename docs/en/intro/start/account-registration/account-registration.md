@@ -145,4 +145,4 @@ You are the [owner](/en/tools-for-using-services/account/concepts/rolesandpermis
 - [Customize](/en/intro/billing/service-management/corporate/) the project to make payments through the legal entity.
 - [Read](/en/tools-for-using-services/account/concepts/quotasandlimits) information about the quotas and limits in VK Cloud projects.
 - Learn about the [payment methods](/en/intro/billing/service-management/payment) available and the key [pricing](/en/tools-for-using-services/account/tariffication) model principles.
-- Find out how to create and connect a [virtual machine](/en/base/iaas/vm-start), a [Kubernetes cluster](/en/kubernetes/k8s/quickstart), a [database](/en/dbs/dbaas/start).
+- Find out how to create and connect a [virtual machine](/en/computing/iaas/quick-start), a [Kubernetes cluster](/en/kubernetes/k8s/quickstart), a [database](/en/dbs/dbaas/start).

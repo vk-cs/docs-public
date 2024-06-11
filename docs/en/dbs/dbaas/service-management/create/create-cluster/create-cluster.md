@@ -27,7 +27,7 @@
       - **Network**: the network where the cluster will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
       - **SSH access key**: select an existing key or create a new one.
 
-        The key is used to [connect to instance hosts via SSH](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix).
+        The key is used to [connect to instance hosts via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
    1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/db-backup) after the cluster is created.
 
@@ -60,14 +60,14 @@
 
       Then set the parameters:
 
-      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#flavors).
-      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/about#flavors) for the cluster.
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
+      - **Type of virtual machine**: [configuration template](/en/computing/iaas/concepts/about#flavors) for the cluster.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
       - **Availability zone**: [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) for the cluster.
 
-      - **Disk Type**: [disk type](/en/base/iaas/concepts/about#disks) for the cluster.
+      - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the cluster.
 
       - **Disk size, GB:** disk size (in gigabytes).
 
@@ -93,15 +93,15 @@
 
       Then set the parameters:
 
-      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#flavors).
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
 
-      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/about#flavors) for the cluster.
+      - **Type of virtual machine**: [configuration template](/en/computing/iaas/concepts/about#flavors) for the cluster.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
       - **Availability zone**: [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) for the cluster.
 
-      - **Disk Type**: [disk type](/en/base/iaas/concepts/about#disks) for the cluster.
+      - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the cluster.
 
       - **Disk size, GB:** disk size (in gigabytes).
 
@@ -111,15 +111,15 @@
 
       Set the parameters:
 
-      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#flavors).
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
 
-      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/about#flavors) for the cluster.
+      - **Type of virtual machine**: [configuration template](/en/computing/iaas/concepts/about#flavors) for the cluster.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
       - **Availability zone**: [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) for the cluster.
 
-      - **Disk Type**: [disk type](/en/base/iaas/concepts/about#disks) for the cluster.
+      - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the cluster.
 
       - **Disk size, GB:** disk size (in gigabytes).
 
@@ -211,15 +211,15 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 
-      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#flavors).
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
 
-      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/about#flavors) for the cluster.
+      - **Type of virtual machine**: [configuration template](/en/computing/iaas/concepts/about#flavors) for the cluster.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
       - **Availability zone**: [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) for the cluster.
 
-      - **Disk Type**: [disk type](/en/base/iaas/concepts/about#disks) for the cluster.
+      - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the cluster.
 
       - **Disk size, GB:** disk size (in gigabytes).
 
@@ -241,13 +241,13 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
       - **Firewall settings**: a list of security groups for the cluster.
 
-        Add the `ssh` security group to the list to be able to [connect to cluster hosts via SSH](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix).
+        Add the `ssh` security group to the list to be able to [connect to cluster hosts via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
       - **Number of nodes:** the number of hosts in the cluster.
 
       - **SSH access key**: select an existing key or create a new one.
 
-        The key is used to [connect to instance hosts via SSH](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix).
+        The key is used to [connect to instance hosts via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
    1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/db-backup) after the cluster is created.
 
@@ -367,15 +367,15 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 
-      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#flavors).
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
 
-      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/about#flavors) for the cluster.
+      - **Type of virtual machine**: [configuration template](/en/computing/iaas/concepts/about#flavors) for the cluster.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
       - **Availability zone**: [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) for the cluster.
 
-      - **Disk Type**: [disk type](/en/base/iaas/concepts/about#disks) for the cluster.
+      - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the cluster.
 
       - **Disk size, GB:** disk size (in gigabytes).
 
@@ -399,7 +399,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
       - **SSH access key**: select an existing key or create a new one.
 
-        The key is used to [connect to instance hosts via SSH](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix).
+        The key is used to [connect to instance hosts via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
       - Select the option **Enable monitoring** if you need to monitor the cluster using the VK Cloud tools.
 
@@ -480,7 +480,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
       - **SSH access key**: select an existing key or create a new one.
 
-        The key is used to [connect to instance hosts via SSH](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix).
+        The key is used to [connect to instance hosts via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
    1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/db-backup) after the cluster is created.
 
@@ -522,15 +522,15 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         For Redis, the number of replicas in sharjah is fixed.
 
-      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#flavors).
+      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
 
-      - **Type of virtual machine**: [configuration template](/en/base/iaas/concepts/about#flavors) for the shard hosts.
+      - **Type of virtual machine**: [configuration template](/en/computing/iaas/concepts/about#flavors) for the shard hosts.
 
         Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
 
       - **Availability zone**: [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) for the shard hosts.
 
-      - **Disk Type**: [disk type](/en/base/iaas/concepts/about#disks) for the shard hosts.
+      - **Disk Type**: [disk type](/en/computing/iaas/concepts/about#disks) for the shard hosts.
 
       - **Disk size, GB:** disk size (in gigabytes).
 

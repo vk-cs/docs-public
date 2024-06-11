@@ -27,8 +27,8 @@ You can create an instance of Cloud Kafka in one of two configurations:
    1. Specify the name and the description for the instance.
    1. Set the node parameters for the broker:
 
-      - **Type of virtual machine:** [flavor](/en/base/iaas/concepts/about#flavors) for the node.
-      - **Disk Type:** [disk type](/en/base/iaas/concepts/about#disks_types_b7c586e) for the node.
+      - **Type of virtual machine:** [flavor](/en/computing/iaas/concepts/about#flavors) for the node.
+      - **Disk Type:** [disk type](/en/computing/iaas/concepts/about#disks_types_b7c586e) for the node.
       - **Disk size:** disk size for the node.
 
    1. Select the Kubernetes cluster. A [worker node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) will be added to this [Cloud Containers](/en/kubernetes/k8s) cluster to host an instance of Cloud Kafka.
@@ -116,7 +116,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
       </tablist>
       <tabpanel>
 
-      Select one of the ready-made cluster templates. [Flavor](/en/base/iaas/concepts/about#flavors) and [disk type](/en/base/iaas/concepts/about#disks_types_b7c586e) the cluster nodes have already been selected.
+      Select one of the ready-made cluster templates. [Flavor](/en/computing/iaas/concepts/about#flavors) and [disk type](/en/computing/iaas/concepts/about#disks_types_b7c586e) the cluster nodes have already been selected.
 
       If you select any template, the Cloud Kafka instance will consist of three nodes for brokers and three nodes for ZooKeeper.
 
@@ -127,8 +127,8 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
       1. Set the node parameters for brokers in the **Broker** block:
 
-         - **Type of virtual machine:** [flavor](/en/base/iaas/concepts/about#flavors) for the node.
-         - **Disk Type:** [disk type](/en/base/iaas/concepts/about#disks_types_b7c586e) for the node.
+         - **Type of virtual machine:** [flavor](/en/computing/iaas/concepts/about#flavors) for the node.
+         - **Disk Type:** [disk type](/en/computing/iaas/concepts/about#disks_types_b7c586e) for the node.
          - **Disk size:** disk size for the node.
          - **Number of brokers:** the total number of nodes.
 

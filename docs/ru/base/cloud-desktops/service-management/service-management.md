@@ -1,1 +1,0 @@
-Операции, которые можно выполнить с разворачиваемыми виртуальными рабочими столами.<br><info>Руководство пользователя Cloud Desktop [доступно в формате PDF](/ru/base/cloud-desktops/service-management/assets/Termidesk_user_guide_v_1_0.pdf "download").</info>
