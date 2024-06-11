@@ -17085,6 +17085,66 @@
     ]
   },
   {
+    "uuid": "c5ce4c86-efb5-4194-bd02-c3cf8ad8911e",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 3,
+    "partialPath": "/ru/applications-and-services/s3-cyber-backup",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/s3-cyber-backup/s3-cyber-backup.meta.json",
+    "mdFullPath": null,
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "a86ccc6a-8dab-44a4-8bfa-576776980e95",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/applications-and-services/s3-cyber-backup/concepts",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/s3-cyber-backup/concepts/concepts.meta.json",
+    "mdFullPath": null,
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "87779807-0e12-413c-8f37-e1ae2b5fa001",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/applications-and-services/s3-cyber-backup/concepts/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/s3-cyber-backup/concepts/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/s3-cyber-backup/concepts/about/about.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "d937ca0f-ced8-403c-88b9-52c9504c8a24",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/applications-and-services/s3-cyber-backup/tariffication",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/s3-cyber-backup/tariffication/tariffication.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/s3-cyber-backup/tariffication/tariffication.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "f82f032c-2fad-4738-a896-dd06a80b4658",
     "lang": "ru",
     "type": "INTERMEDIATE",
