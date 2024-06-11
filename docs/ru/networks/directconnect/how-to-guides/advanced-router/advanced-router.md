@@ -38,7 +38,7 @@
    - имя сети, в которой находится подсеть;
    - имя маршрутизатора.
 
-1. [Создайте виртуальную машину](/ru/base/iaas/service-management/vm/vm-create) в выбранной сети. Добавьте доступ по SSH и отключите резервное копирование.
+1. [Создайте виртуальную машину](/ru/computing/iaas/service-management/vm/vm-create) в выбранной сети. Добавьте доступ по SSH и отключите резервное копирование.
 
    Запишите IP-адрес ВМ.
 
@@ -318,6 +318,6 @@ IP-адрес должен отвечать на пинг.
 
 Если созданные ресурсы вам больше не нужны, удалите их:
 
-1. [Удалите](/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm) виртуальную машину.
+1. [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) виртуальную машину.
 1. [Удалите](/ru/networks/vnet/service-management/router#udalenie_marshrutizatora) маршрутизаторы.
 1. Удалите [подсеть](/ru/networks/vnet/service-management/net#udalenie_podseti) и [сеть](/ru/networks/vnet/service-management/net#udalenie_seti), в которой была размещена ВМ.

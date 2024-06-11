@@ -335,9 +335,9 @@
 
    Нужный адрес содержится в столбце таблицы `EXTERNAL-IP`.
 
-1. [Создайте виртуальную машину Linux](/ru/base/iaas/service-management/vm/vm-create/) в той же подсети, где находится IP-адрес балансировщика.
+1. [Создайте виртуальную машину Linux](/ru/computing/iaas/service-management/vm/vm-create/) в той же подсети, где находится IP-адрес балансировщика.
 
-1. [Подключитесь к этой виртуальной машине](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix/) по SSH.
+1. [Подключитесь к этой виртуальной машине](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix/) по SSH.
 
 1. Выполните несколько раз запрос к приложению через балансировщик нагрузки:
    ```bash

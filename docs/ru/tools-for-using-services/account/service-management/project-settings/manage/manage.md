@@ -92,13 +92,13 @@
 
 1. Перенесите или скопируйте все необходимые данные.
 
-    Например, [создайте](/ru/base/iaas/service-management/images/images-manage#sozdanie_obraza) и [экспортируйте](/ru/base/iaas/service-management/images/images-manage#eksport_obraza) образы дисков виртуальных машин, остановленных на предыдущем шаге.
+    Например, [создайте](/ru/computing/iaas/service-management/images/images-manage#sozdanie_obraza) и [экспортируйте](/ru/computing/iaas/service-management/images/images-manage#eksport_obraza) образы дисков виртуальных машин, остановленных на предыдущем шаге.
 
 1. Удалите все объекты, которые тарифицируются или занимают дисковое пространство — плавающие IP-адреса, диски, бакеты, балансировщики нагрузки и другие.
 
     Полный список таких объектов — также на странице **Баланс и платежи**.
 
-    Так как загрузочные диски виртуальных машин нельзя удалить отдельно, [удалите](/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm) виртуальные машины.
+    Так как загрузочные диски виртуальных машин нельзя удалить отдельно, [удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) виртуальные машины.
 
     Объекты, которые не потребляют ресурсы — например, сети и подсети — можно оставить в проекте.
 
@@ -106,9 +106,9 @@
 
 ## Передача объектов между проектами
 
-Вы можете [переносить диски](/ru/base/iaas/service-management/volumes#peremeshchenie_diskov_mezhdu_proektami) из проекта в проект. Это позволяет переносить между проектами виртуальные машины.
+Вы можете [переносить диски](/ru/computing/iaas/service-management/volumes#peremeshchenie_diskov_mezhdu_proektami) из проекта в проект. Это позволяет переносить между проектами виртуальные машины.
 
-Перенос дисков возможен только в рамках одного региона. Если проекты находятся в разных регионах, [выгрузите](/ru/base/iaas/service-management/images/images-manage#eksport_obraza) локально образ диска и [загрузите](/ru/base/iaas/service-management/images/images-manage#import_obraza) его в новый проект.
+Перенос дисков возможен только в рамках одного региона. Если проекты находятся в разных регионах, [выгрузите](/ru/computing/iaas/service-management/images/images-manage#eksport_obraza) локально образ диска и [загрузите](/ru/computing/iaas/service-management/images/images-manage#import_obraza) его в новый проект.
 
 В настоящее время перенос объектов PaaS-сервисов между проектами не поддерживается. Например, виртуальная машина, на которой была развернута база данных, может быть перенесена в другой проект только как обычная виртуальная машина. Перенести такую виртуальную машину как инстанс базы данных или создать инстанс базы данных с диском, перенесенным из другого проекта, невозможно.
 

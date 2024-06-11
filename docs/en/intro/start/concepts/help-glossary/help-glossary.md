@@ -2,7 +2,7 @@
 
 More terms can be found in the corresponding section:
 
-- [Cloud Servers](/en/base/iaas/concepts/about).
+- [Cloud Servers](/en/computing/iaas/concepts/about).
 - [Cloud Networks](/en/networks/vnet/concepts).
 - [Cloud Containers](/en/kubernetes/k8s/k8s-reference).
 
@@ -14,7 +14,7 @@ A virtual machine (VM) is a collection of resources that emulate the behavior of
 
 ## Flavors
 
-On the VK Cloud platform, the number of processors and the amount of RAM of the VM are set using flavors. [Ready-made flavors](/en/base/iaas/concepts/about) are available to users, as well as individual (on request).
+On the VK Cloud platform, the number of processors and the amount of RAM of the VM are set using flavors. [Ready-made flavors](/en/computing/iaas/concepts/about) are available to users, as well as individual (on request).
 
 ## Volumes
 

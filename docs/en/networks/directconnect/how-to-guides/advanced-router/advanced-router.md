@@ -38,7 +38,7 @@ To show the configuration of an advanced router, two independent networks will b
    - the name of the network in which the subnet is located;
    - the router name.
 
-1. Create a [virtual machine](../../../../base/iaas/service-management/vm/vm-create) on the `vkcloud-net` network. Add SSH access and disable backup.
+1. Create a [virtual machine](../../../../computing/iaas/service-management/vm/vm-create) on the `vkcloud-net` network. Add SSH access and disable backup.
 
     Note the VM's IP address.
 
@@ -309,6 +309,6 @@ The structured interaction between the networks and the VMs within networks look
 
 If you no longer need the created resources, delete them:
 
-1. [Delete](../../../../base/iaas/service-management/vm/vm-manage#deleting_a_vm) the virtual machine.
+1. [Delete](../../../../computing/iaas/service-management/vm/vm-manage#delete_vm) the virtual machine.
 1. [Delete](/en/networks/vnet/service-management/router#removing_the_router) routers.
 1. Delete the [subnet](/en/networks/vnet/service-management/net#deleting_a_network) and the [network](/en/networks/vnet/service-management/net#deleting_a_subnet).

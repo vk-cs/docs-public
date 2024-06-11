@@ -11,7 +11,7 @@
 ## Подготовительные шаги
 
 1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) виртуальную сеть, например, `monitoring-net`.
-1. [Создайте](/ru/base/iaas/service-management/vm/vm-create) ВМ для сервера Prometheus:
+1. [Создайте](/ru/computing/iaas/service-management/vm/vm-create) ВМ для сервера Prometheus:
 
    - имя: `Centos_8_5_Prometheus`;
    - операционная система: CentOS 8.4;
@@ -35,7 +35,7 @@
 ## 2. Установите и настройте Prometheus
 
 1. [Установите](/ru/dbs/dbaas/service-management/managing-extensions#ustanovka_rasshireniya) расширение **Node exporter** для инстанса БД `Redis-5`. При установке укажите параметр `listen_port` = `9100`.
-1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ `Centos_8_5_Prometheus`.
+1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ `Centos_8_5_Prometheus`.
 1. Скачайте Prometheus и распакуйте скачанный архив:
 
    ```bash
@@ -191,7 +191,7 @@
 
 Созданные ресурсы тарифицируются и расходуют квоты. Если они вам больше не нужны:
 
-1. [Удалите](/ru/base/iaas/vm-start/manage-vm/vm-delete) развернутые виртуальные машины.
+1. [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) развернутые виртуальные машины.
 1. [Удалите](/ru/applications-and-services/marketplace/service-management/pr-instance-manage#udalenie_instansa_servisa) виртуальную машину с Grafana.
 1. [Удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес, назначенный виртуальной машине `Centos_8_5_Prometheus`.
 1. [Удалите](/ru/networks/vnet/service-management/ports#udalenie_porta) порт, которому назначен виртуальный IP-адрес.

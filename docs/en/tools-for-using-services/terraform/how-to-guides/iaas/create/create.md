@@ -298,7 +298,7 @@ Once resource creation is complete, the Terraform `instance_fip` output will sho
 
 ## 4. Check if the example works
 
-[Connect via SSH](/en/base/iaas/vm-start/vm-connect/vm-connect-nix) to the `compute-instance` virtual machine.
+[Connect via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `compute-instance` virtual machine.
 
 To connect use:
 

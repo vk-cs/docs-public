@@ -2,7 +2,7 @@
 
 <info>
 
-Если возникли сбои в работе запущенной виртуальной машины, предоставьте в техническую поддержку [логи сообщений ВМ](/ru/base/iaas/service-management/vm/vm-console#logi_soobshcheniy_vm).
+Если возникли сбои в работе запущенной виртуальной машины, предоставьте в техническую поддержку [логи сообщений ВМ](/ru/computing/iaas/service-management/vm/vm-console#logi_soobshcheniy_vm).
 
 </info>
 

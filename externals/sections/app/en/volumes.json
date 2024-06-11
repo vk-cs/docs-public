@@ -6,17 +6,17 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "/en/base/iaas/concepts"
+                    "link": "/en/computing/iaas/concepts"
                 },
                 {
-                    "link": "/en/base/vm-licenses"
+                    "link": "/en/computing/vm-licenses"
                 },
                 {
-                    "link": "/en/base/iaas/tariffication",
+                    "link": "/en/computing/iaas/tariffication",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "/en/base/iaas/faq"
+                    "link": "/en/computing/iaas/faq"
                 }
             ]
         },
@@ -24,10 +24,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "/en/base/iaas/quick-start"
+                    "link": "/en/computing/iaas/quick-start"
                 },
                 {
-                    "link": "/en/base/iaas/service-management/volumes"
+                    "link": "/en/computing/iaas/service-management/volumes"
                 }
             ]
         },
@@ -35,25 +35,25 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "/en/base/iaas/service-management/vm/vm-console"
+                    "link": "/en/computing/iaas/service-management/vm/vm-console"
                 },
                 {
-                    "link": "/en/base/iaas/troubleshooting"
+                    "link": "/en/computing/iaas/troubleshooting"
                 },
                 {
-                    "link": "/en/base/iaas/how-to-guides/disk-encrypt"
+                    "link": "/en/computing/iaas/how-to-guides/disk-encrypt"
                 },
                 {
-                    "link": "/en/base/iaas/how-to-guides/win-image"
+                    "link": "/en/computing/iaas/how-to-guides/win-image"
                 },
                 {
-                    "link": "/en/base/iaas/how-to-guides/packer"
+                    "link": "/en/computing/iaas/how-to-guides/packer"
                 },
                 {
-                    "link": "/en/base/iaas/how-to-guides/vm-multiqueue"
+                    "link": "/en/computing/iaas/how-to-guides/vm-multiqueue"
                 },
                 {
-                    "link": "/en/base/iaas/how-to-guides/managing-node"
+                    "link": "/en/computing/iaas/how-to-guides/managing-node"
                 }
             ]
         }

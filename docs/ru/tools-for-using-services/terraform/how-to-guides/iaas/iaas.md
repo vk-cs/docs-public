@@ -1,1 +1,1 @@
-Работа с [сервисом Cloud Servers](/ru/base/iaas) с использованием Terraform.
+Работа с [сервисом Cloud Servers](/ru/computing/iaas) с использованием Terraform.
