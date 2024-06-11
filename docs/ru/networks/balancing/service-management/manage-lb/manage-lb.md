@@ -468,8 +468,8 @@ openstack loadbalancer <команда> --help
       ```bash
       openstack loadbalancer healthmonitor create <идентификатор пула> \
         --name <имя healthcheck-объекта> \
-        --delay <задержка, сек> \
-        --timeout <тайм-аут, сек> \
+        --delay <задержка, с> \
+        --timeout <тайм-аут, с> \
         --max-retries <количество успешных попыток> \
         --max-retries-down <количество неуспешных попыток> \
         --type <тип проверки>
@@ -481,8 +481,8 @@ openstack loadbalancer <команда> --help
       ```powershell
       openstack loadbalancer healthmonitor create <идентификатор пула> `
         --name <имя healthcheck-объекта> `
-        --delay <задержка, сек> `
-        --timeout <тайм-аут, сек> `
+        --delay <задержка, с> `
+        --timeout <тайм-аут, с> `
         --max-retries <количество успешных попыток> `
         --max-retries-down <количество неуспешных попыток> `
         --type <тип проверки>

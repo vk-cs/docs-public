@@ -71,7 +71,7 @@ On the host from which you plan to connect to the registry:
       </tabpanel>
       </tabs>
 
-1. Log in into the registry:
+1. Sign in into the registry:
 
    ```bash
    docker login <URL of Docker registry> --username <login for Docker registry>

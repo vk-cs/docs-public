@@ -1,6 +1,6 @@
 This guide will help you get started with VK Cloud:
 
-- create an account and log in to your personal account;
+- create an account and sign in to your personal account;
 - confirm your VK Cloud account;
 - configure the project that is created during registration;
 - connect to the project via the OpenStack CLI command line interface.

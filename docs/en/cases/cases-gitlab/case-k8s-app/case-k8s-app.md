@@ -12,7 +12,7 @@ GitLab-runner is an environment for autobuilding GitLab projects. To set up auto
 
 For this:
 
-1. Log in to the GitLab web interface with administrator rights:
+1. Sign in to the GitLab web interface with administrator rights:
 
 ![](assets/1583699032662-1583699032662.png)
 
@@ -102,7 +102,7 @@ General Purpose Variables:
 
 Variables used for work:
 
-- before_script - the stage that is executed first. We log in to the register using the variables that are specified in the GitLab runner settings.
+- before_script - the stage that is executed first. We sign in to the register using the variables that are specified in the GitLab runner settings.
 - build - image build. Standard build of a Docker image using a Dockerfile in the repository.
 
 <warn>
