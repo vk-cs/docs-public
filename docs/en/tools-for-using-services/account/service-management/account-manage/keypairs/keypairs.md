@@ -1,4 +1,4 @@
-Key pairs are used to [connect to a VM via SSH](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix). The key pair consists of public and private keys: the public key is placed on the VM, the private key is stored by the user.
+Key pairs are used to [connect to a VM via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix). The key pair consists of public and private keys: the public key is placed on the VM, the private key is stored by the user.
 
 ## Viewing information about a key pair
 
@@ -107,7 +107,7 @@ The private key cannot be restored! Create a new key pair and upload the public 
 
 </err>
 
-To restore access to a Linux virtual machine via SSH using a key pair, use the instructions from the article [VM management](/en/base/iaas/service-management/vm/vm-manage#restoring_vm_access_by_key).
+To restore access to a Linux virtual machine via SSH using a key pair, use the instructions from the article [VM management](/en/computing/iaas/service-management/vm/vm-manage#restoring_vm_access_by_key).
 
 ## Deleting a key pair
 

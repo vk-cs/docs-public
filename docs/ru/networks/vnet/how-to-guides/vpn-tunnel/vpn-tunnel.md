@@ -325,7 +325,7 @@
 
 Если созданные ресурсы вам больше не нужны, удалите их:
 
-1. [Удалите](/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm) виртуальные машины.
+1. [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) виртуальные машины.
 1. [Удалите](../../service-management/vpn#udalenie_vpn_tunnelya) VPN-туннель.
 1. [Удалите](../../service-management/router#upravlenie_staticheskimi_marshrutami) статические маршруты, прописанные на стороне клиентской сети.
 

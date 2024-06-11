@@ -18,11 +18,11 @@
 
 | Эндпоинт                            | Адрес                   | Назначение |
 |-------------------------------------|-------------------------|-----------------|
-| Nova              | https://infra.mail.ru:8774/v2.1                     | Управление [виртуальными машинами](/ru/base/iaas/service-management/vm) |
-| Cinder            | https://public.infra.mail.ru:8776/v3/<project_id>   | Управление [дисками](/ru/base/iaas/service-management/volumes) и их снимками |
-| Glance            | https://infra.mail.ru:9292                          | Управление [образами ВМ](/ru/base/iaas/service-management/images) |
+| Nova              | https://infra.mail.ru:8774/v2.1                     | Управление [виртуальными машинами](/ru/computing/iaas/service-management/vm) |
+| Cinder            | https://public.infra.mail.ru:8776/v3/<project_id>   | Управление [дисками](/ru/computing/iaas/service-management/volumes) и их снимками |
+| Glance            | https://infra.mail.ru:9292                          | Управление [образами ВМ](/ru/computing/iaas/service-management/images) |
 | Karboii           | https://mcs.mail.ru/infra/karboii/v1                | Управление [резервным копированием](/ru/tools-for-using-services/api/api-spec/backup-api) ВМ и инстансов баз данных |
-| Manila            | https://public.infra.mail.ru:8786/v2/<project_id>   | Управление [файловыми хранилищами](/ru/base/iaas/service-management/fs-manage) |
+| Manila            | https://public.infra.mail.ru:8786/v2/<project_id>   | Управление [файловыми хранилищами](/ru/computing/iaas/service-management/fs-manage) |
 
 <info>
 

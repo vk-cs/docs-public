@@ -62,7 +62,7 @@
 
 Чтобы подключить постоянный том с помощью статического PVC:
 
-1. [Создайте сетевой HDD-диск](/ru/base/iaas/service-management/volumes/).
+1. [Создайте сетевой HDD-диск](/ru/computing/iaas/service-management/volumes/).
 
    При создании укажите:
 
@@ -445,7 +445,7 @@
 
 Чтобы подключить постоянный том NFS с помощью статического PVC:
 
-1. [Создайте файловое хранилище](/ru/base/iaas/service-management/fs-manage#sozdanie_faylovogo_hranilishcha).
+1. [Создайте файловое хранилище](/ru/computing/iaas/service-management/fs-manage#sozdanie_faylovogo_hranilishcha).
 
    При создании укажите:
 
@@ -455,7 +455,7 @@
    - **Cеть:** сеть и подсеть, в которых размещен кластер Kubernetes. Эту информацию можно узнать на странице кластера.
    - **Cеть файлового хранилища:** существующая сеть. Если подходящей сети нет в списке, выберите пункт `Создать новую сеть`.
 
-1. [Посмотрите информацию](/ru/base/iaas/service-management/fs-manage#prosmotr_informacii_o_faylovom_hranilishche) о созданном файловом хранилище.
+1. [Посмотрите информацию](/ru/computing/iaas/service-management/fs-manage#prosmotr_informacii_o_faylovom_hranilishche) о созданном файловом хранилище.
 
    Сохраните значение параметра **Точка подключения**.
 

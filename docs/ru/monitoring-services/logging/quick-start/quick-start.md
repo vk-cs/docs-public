@@ -1,6 +1,6 @@
 1. Подключите сервис: если сервис на этапе бета-тестирования, отправьте запрос в [техническую поддержку](/ru/contacts).
-1. [Создайте ВМ](/ru/base/iaas/service-management/vm/vm-create) из публичного образа Linux с доступом в интернет. В примере используется образ Ubuntu 22.04.
-1. [Подключитесь к ВМ по SSH](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix).
+1. [Создайте ВМ](/ru/computing/iaas/service-management/vm/vm-create) из публичного образа Linux с доступом в интернет. В примере используется образ Ubuntu 22.04.
+1. [Подключитесь к ВМ по SSH](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
 1. Установите на ВМ [Fluent Bit](https://docs.fluentbit.io/manual/installation/linux/ubuntu) версии 2.1.9:
 
    ```bash

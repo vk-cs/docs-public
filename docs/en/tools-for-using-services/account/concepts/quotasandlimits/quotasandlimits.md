@@ -128,7 +128,7 @@ There are no quotas for the Cloud Containers service. The use of this service is
 
 | Parameter                                         | Limit              | Hard |
 |--------------------------------------------------|--------------------|---------|
-| Number of [nodes](/en/base/k8s/concepts/architecture#cluster_topologies) in the node group | 100 pcs.            | &#10003; |
+| Number of [nodes](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) in the node group | 100 pcs.            | &#10003; |
 | Number of node groups in the cluster                | 50 pcs.             | — |
 | Number of pods at the node                  | 110 pcs.            | — |
 | The number of entities (ReplicaSet, StatefulSet, namespaces, etc.) in the cluster | 10000 pcs.          | — |
