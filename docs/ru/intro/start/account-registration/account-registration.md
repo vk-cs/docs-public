@@ -151,4 +151,4 @@ VK Cloud поддерживает работу с платформой при п
 - [Донастройте](/ru/intro/billing/service-management/corporate/) проект для проведения оплаты через ЮЛ.
 - [Ознакомьтесь](/ru/tools-for-using-services/account/concepts/quotasandlimits) с квотами и лимитами проектов VK Cloud.
 - Ознакомьтесь со [способами пополнения баланса](/ru/intro/billing/service-management/payment) и базовыми принципами [тарификации](/ru/tools-for-using-services/account/tariffication) сервисов.
-- Узнайте, как создать и подключить [виртуальную машину](/ru/base/iaas/quick-start), [кластер Kubernetes](/ru/kubernetes/k8s/quickstart), [базу данных](/ru/dbs/dbaas/start).
+- Узнайте, как создать и подключить [виртуальную машину](/ru/computing/iaas/quick-start), [кластер Kubernetes](/ru/kubernetes/k8s/quickstart), [базу данных](/ru/dbs/dbaas/start).

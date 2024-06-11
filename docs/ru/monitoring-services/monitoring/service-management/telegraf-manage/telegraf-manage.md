@@ -1,7 +1,7 @@
 ## Просмотр статуса агента
 
 1. [Убедитесь](../mon-setup-current/), что у вас установлен агент мониторинга telegraf.
-1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/) к виртуальной машине.
+1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/) к виртуальной машине.
 1. Выполните команду:
 
    <tabs>
@@ -20,7 +20,7 @@
 ## Включение или выключение агента
 
 1. [Убедитесь](../mon-setup-current/), что у вас установлен агент мониторинга telegraf.
-1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/) к виртуальной машине.
+1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/) к виртуальной машине.
 
 - Чтобы включить агент, выполните команду:
 
@@ -55,7 +55,7 @@
 ## Включение или отключение метрик
 
 1. [Убедитесь](../mon-setup-current/), что у вас установлен агент мониторинга telegraf.
-1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/) к виртуальной машине.
+1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/) к виртуальной машине.
 1. Найдите и внесите изменения в файл `/etc/telegraf/telegraf.conf`: добавьте или удалите параметры для мониторинга.
 
    Пример для мониторинга CPU в Linux:
@@ -87,7 +87,7 @@
 ## Включение или отключение плагина для настройки дополнительных метрик
 
 1. [Убедитесь](../mon-setup-current/), что у вас установлен агент мониторинга telegraf.
-1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/) к виртуальной машине.
+1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/) к виртуальной машине.
 1. Найдите и внесите изменения в файл `/etc/telegraf/telegraf.conf`: добавьте или удалите [нужный плагин](https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#input-plugins).
 
    Пример добавления плагина `mysql` в Linux:
@@ -116,7 +116,7 @@
 ## Просмотр логов агента
 
 1. [Убедитесь](../mon-setup-current/), что у вас установлен агент мониторинга telegraf.
-1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/) к виртуальной машине.
+1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/) к виртуальной машине.
 1. Выполните команду:
 
    <tabs>
@@ -135,7 +135,7 @@
 ## Удаление агента
 
 1. [Убедитесь](../mon-setup-current/), что у вас установлен агент мониторинга telegraf.
-1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/) к виртуальной машине.
+1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/) к виртуальной машине.
 1. Выполните команду:
 
    <tabs>

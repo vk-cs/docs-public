@@ -326,9 +326,9 @@ Read more about services and load balancers in [official Kubernetes documentatio
 
    The required address is contained in the `EXTERNAL-IP` column of the table.
 
-1. [Create Linux virtual machine](/en/base/iaas/service-management/vm/vm-create/) in the same subnet where the balancer IP address resides.
+1. [Create Linux virtual machine](/en/computing/iaas/service-management/vm/vm-create/) in the same subnet where the balancer IP address resides.
 
-1. [Connect to this virtual machine](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix/) via SSH.
+1. [Connect to this virtual machine](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix/) via SSH.
 
 1. Request the application several times via the load balancer:
 

@@ -6,7 +6,7 @@ This instruction will help you deploy OpenCart version 4.0.2.3 in the Ubuntu 22.
 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
 1. [Create](/en/networks/vnet/service-management/net#creating_a_network) `network1` network with internet access and a subnet with the address `10.0.0.0/24`.
-1. [Create VM](/en/base/iaas/service-management/vm/vm-create):
+1. [Create VM](/en/computing/iaas/service-management/vm/vm-create):
 
    - name: `Ubuntu_22_04_OpenCart`;
    - operating system: Ubuntu 22.04;
@@ -50,7 +50,7 @@ This instruction will help you deploy OpenCart version 4.0.2.3 in the Ubuntu 22.
 
 ## Install OpenCart on VM
 
-1. [Connect](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Ubuntu_22_04_OpenCart` VM.
+1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `Ubuntu_22_04_OpenCart` VM.
 1. Update the packages to the current version and reboot the VM using the commands:
 
    ```bash
@@ -126,7 +126,7 @@ In the browser, go to `http://site-opencart.example.vk.cloud/opencart/`. Upon su
 
 Deployed virtual resources are charged. If you don't need them anymore:
 
-- [Delete](/en/base/iaas/service-management/vm/vm-manage#deleting_a_vm) `Ubuntu_22_04_OpenCart` VM.
+- [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) `Ubuntu_22_04_OpenCart` VM.
 - [Delete](/en/dbs/dbaas/service-management/delete) `MySQL-9341` instance.
 - If necessary, [delete](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project) `87.239.106.48` floating IP address.
 - [Delete](/en/networks/dns/publicdns#deleting_resource_records) `site-opencart.example.vk.cloud` DNS record.

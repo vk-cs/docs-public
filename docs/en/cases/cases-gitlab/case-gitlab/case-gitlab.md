@@ -15,7 +15,7 @@ Below is an example of installing the free versions of GitLab and GitLab Runner 
 
    Instead of `35242`, you can use any port that is not reserved by the operating system.
 
-1. [Create a VM](/en/base/iaas/service-management/vm/vm-create) running Ubuntu 22.04.
+1. [Create a VM](/en/computing/iaas/service-management/vm/vm-create) running Ubuntu 22.04.
 
    When selecting VM options, consider the [hardware requirements](https://docs.gitlab.com/ee/install/requirements.html) for installing GitLab and GitLab Runner.
 
@@ -24,7 +24,7 @@ Below is an example of installing the free versions of GitLab and GitLab Runner 
      - name: `OA-Ubuntu-docker`;
      - operating system: Ubuntu 22.04;
      - network: `network1` with subnet `10.0.0.0/24`;
-     - [flavor](/en/base/iaas/concepts/about#flavors): `STD2-4-12`;
+     - [flavor](/en/computing/iaas/concepts/about#flavors): `STD2-4-12`;
      - network HDD drive: 50 GB;
      - public IP address: assigned, further will be used `185.185.185.185`;
      - security groups: `default`, `gitlab`.
@@ -46,7 +46,7 @@ Below is an example of installing the free versions of GitLab and GitLab Runner 
 
     </details>
 
-1. [Connect](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `OA-Ubuntu-docker` VM via SSH.
+1. [Connect](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) to the `OA-Ubuntu-docker` VM via SSH.
 1. Check the status of your operating system firewall and disable it if it is active:
 
     ```bash
@@ -283,5 +283,5 @@ If the VM on which GitLab is installed has a domain name, you can issue a public
 
 Deployed virtual resources are charged. If you do not need them anymore:
 
-- [Delete](/en/base/iaas/service-management/vm/vm-manage#deleting_a_vm) the `OA-Ubuntu-docker` VM.
+- [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) the `OA-Ubuntu-docker` VM.
 - If necessary, [delete](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project) the floating IP address `185.185.185.185`.

@@ -355,7 +355,7 @@
    </tablist>
    <tabpanel>
 
-   1. Если у вас нет ВМ для подключения к облачной информационной базе 1С, [создайте](/ru/base/iaas/service-management/vm/vm-create) ее. Параметры ВМ:
+   1. Если у вас нет ВМ для подключения к облачной информационной базе 1С, [создайте](/ru/computing/iaas/service-management/vm/vm-create) ее. Параметры ВМ:
 
       - Операционная система: любая версия ОС Windows.
       - Остальные параметры: на свое усмотрение.
@@ -367,7 +367,7 @@
       1. Найдите в списке активную группу и запомните ее название.
       1. [Назначьте](/ru/networks/vnet/service-management/secgroups#naznachenie_gruppy_pravil_na_instans) эту группу безопасности ВМ.
 
-   1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-win) к ВМ.
+   1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-win) к ВМ.
    1. Установите на ВМ клиентское приложение системы 1С:Предприятие.
 
    </tabpanel>
@@ -423,4 +423,4 @@
 Работающая инфраструктура сервиса тарифицируется. Если она вам больше не нужна:
 
 - [Удалите](/ru/applications-and-services/marketplace/service-management/pr-instance-manage#udalenie_instansa_servisa) инстанс сервиса Размещение высоконагруженных 1С в облаке.
-- [Удалите](/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm) ВМ, созданную для подключения к облачной информационной базе 1С.
+- [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) ВМ, созданную для подключения к облачной информационной базе 1С.

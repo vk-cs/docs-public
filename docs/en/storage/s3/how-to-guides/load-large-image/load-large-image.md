@@ -37,9 +37,9 @@ Will be used:
        addressing_style = path
    ```
 
-1. [Create](/en/base/iaas/service-management/vm/vm-create) Ubuntu 22.04 VM to VK Cloud.
+1. [Create](/en/computing/iaas/service-management/vm/vm-create) Ubuntu 22.04 VM to VK Cloud.
 1. Install the [gzip](https://www.gnu.org/software/gzip/manual/gzip.html) utility on the VM.
-1. [Create](/en/base/iaas/service-management/volumes#creating_a_disk) a disk of at least 600 GB in size and [connect](/en/base/iaas/service-management/volumes#connecting_a_disk_to_a_vm) it to the VM.
+1. [Create](/en/computing/iaas/service-management/volumes#creating_a_disk) a disk of at least 600 GB in size and [connect](/en/computing/iaas/service-management/volumes#connecting_a_disk_to_a_vm) it to the VM.
 
 ## 2. Upload the image to the object storage
 
@@ -124,7 +124,7 @@ Will be used:
 
 ## 3. Upload the image to the VK Cloud disk
 
-1. [Connect to VM](/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix) via SSH.
+1. [Connect to VM](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) via SSH.
 1. Check for a connected disk using the command `lsblk`.
 
    <details>
@@ -153,16 +153,16 @@ Will be used:
 
 ## 4. Create an image from disk
 
-Use the [instructions](/en/base/iaas/service-management/images/images-manage#creating_an_image).
+Use the [instructions](/en/computing/iaas/service-management/images/images-manage#creating_an_image).
 
 ## 5. Check the health of the image
 
-Create a VM by selecting the downloaded image as the operating system, according to [instructions](/en/base/iaas/service-management/vm/vm-create).
+Create a VM by selecting the downloaded image as the operating system, according to [instructions](/en/computing/iaas/service-management/vm/vm-create).
 
 ## Delete unused resources
 
 The created resources are charged and consume computing resources. If you don't need them anymore:
 
-- [Delete](/en/base/iaas/service-management/images/images-manage#deleting_an_image) загруженный образ из объектного хранилища.
-- [Delete](/en/base/iaas/service-management/vm/vm-manage#deleting_a_vm) or [stop](/en/base/iaas/service-management/vm/vm-manage#starting_stopping_reboot_the_vm) VM.
-- [Delete](/en/base/iaas/service-management/volumes#deleting_a_disk) диск.
+- [Delete](/en/computing/iaas/service-management/images/images-manage#deleting_an_image) загруженный образ из объектного хранилища.
+- [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) or [stop](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) VM.
+- [Delete](/en/computing/iaas/service-management/volumes#deleting_a_disk) диск.
