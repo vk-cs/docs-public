@@ -25,7 +25,7 @@
   },
   {
     "source": "/ru/base/iaas/manage-vm/managing-node",
-    "destination": "/ru/base/iaas/how-to-guides/managing-node",
+    "destination": "/ru/computing/iaas/how-to-guides/managing-node",
     "permanent": false,
     "locale": false
   },
@@ -847,13 +847,13 @@
   },
   {
     "source": "/ru/base/iaas/manage-vm/vm-state",
-    "destination": "/ru/base/iaas/how-to-guides/win-image",
+    "destination": "/ru/computing/iaas/how-to-guides/win-image",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/create-vm/vm-create-cli",
-    "destination": "/ru/base/iaas/service-management/vm/vm-create",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-create",
     "permanent": false,
     "locale": false
   },
@@ -991,85 +991,85 @@
   },
   {
     "source": "/en/base/gpu/gpu-start/use-gpu",
-    "destination": "/en/base/gpu",
+    "destination": "/en/computing/gpu",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/manage-vm",
-    "destination": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/manage-vm/vm-add-net",
-    "destination": "/en/base/iaas/service-management/vm/vm-add-net",
+    "destination": "/en/computing/iaas/service-management/vm/vm-add-net",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/manage-vm/vm-change-disk",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/manage-vm/vm-delete",
-    "destination": "/en/base/iaas/concepts",
+    "destination": "/en/computing/iaas/concepts",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/manage-vm/vm-eventlist",
-    "destination": "/en/base/iaas/concepts/about",
+    "destination": "/en/computing/iaas/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/manage-vm/vm-eventlog",
-    "destination": "/en/base/iaas/service-management",
+    "destination": "/en/computing/iaas/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/manage-vm/vm-flavor",
-    "destination": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/manage-vm/vm-flavor",
-    "destination": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/manage-vm/vm-multiqueue",
-    "destination": "/en/base/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/en/computing/iaas/how-to-guides/vm-multiqueue",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/manage-vm/vm-password",
-    "destination": "/en/base/iaas/service-management/vm",
+    "destination": "/en/computing/iaas/service-management/vm",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/manage-vm/vm-rename",
-    "destination": "/en/base/iaas/tariffication",
+    "destination": "/en/computing/iaas/tariffication",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/manage-vm/vm-state",
-    "destination": "/en/base/iaas/how-to-guides/win-image",
+    "destination": "/en/computing/iaas/how-to-guides/win-image",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/manage-vm/vm-tag",
-    "destination": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
@@ -1087,31 +1087,31 @@
   },
   {
     "source": "/en/base/iaas/vm-connect/recover-access-vm",
-    "destination": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-connect/vm-connect-nix",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-connect/vm-connect-win",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-win",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-connect/vnc-console",
-    "destination": "/en/base/iaas/service-management/vm/vm-console",
+    "destination": "/en/computing/iaas/service-management/vm/vm-console",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-limits/limits-geo",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
@@ -1135,7 +1135,7 @@
   },
   {
     "source": "/ru/base/gpu/gpu-start/use-gpu",
-    "destination": "/ru/base/gpu",
+    "destination": "/ru/computing/gpu",
     "permanent": false,
     "locale": false
   },
@@ -1147,7 +1147,7 @@
   },
   {
     "source": "/en/base/iaas/create-vm/image-logins",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
@@ -1345,7 +1345,7 @@
   },
   {
     "source": "/en/base/iaas/create-vm/vm-quick-create",
-    "destination": "/en/base/iaas/service-management/vm/vm-create",
+    "destination": "/en/computing/iaas/service-management/vm/vm-create",
     "permanent": false,
     "locale": false
   },
@@ -1375,19 +1375,19 @@
   },
   {
     "source": "/en/base/iaas/create-vm",
-    "destination": "/en/base/iaas/service-management/vm/vm-create",
+    "destination": "/en/computing/iaas/service-management/vm/vm-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/create-vm",
-    "destination": "/ru/base/iaas/service-management/vm/vm-create",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/create-vm/vm-quick-create",
-    "destination": "/ru/base/iaas/service-management/vm/vm-create",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-create",
     "permanent": false,
     "locale": false
   },
@@ -1405,7 +1405,7 @@
   },
   {
     "source": "/en/base/iaas/create-vm/vm-create-cli",
-    "destination": "/en/base/iaas/service-management/vm/vm-create",
+    "destination": "/en/computing/iaas/service-management/vm/vm-create",
     "permanent": false,
     "locale": false
   },
@@ -4105,7 +4105,7 @@
   },
   {
     "source": "/ru/dbs/dbaas/dbaas-start/dbaas-connect",
-    "destination": "/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
@@ -5059,7 +5059,7 @@
   },
   {
     "source": "/en/dbs/dbaas/dbaas-start/dbaas-connect",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
@@ -5893,37 +5893,37 @@
   },
   {
     "source": "/ru/base/iaas/vm-start/manage-vm/vm-delete",
-    "destination": "/ru/base/iaas/concepts",
+    "destination": "/ru/computing/iaas/concepts",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-start/manage-vm/vm-eventlist",
-    "destination": "/ru/base/iaas/concepts/about",
+    "destination": "/ru/computing/iaas/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-volumes/volume-sla",
-    "destination": "/ru/base/iaas/concepts/volume-sla",
+    "destination": "/ru/computing/iaas/concepts/volume-sla",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-faq",
-    "destination": "/ru/base/iaas/faq",
+    "destination": "/ru/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-faq/faq-licensing",
-    "destination": "/ru/base/iaas/faq",
+    "destination": "/ru/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-faq/faq-vm",
-    "destination": "/ru/base/iaas/faq",
+    "destination": "/ru/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
@@ -5941,127 +5941,127 @@
   },
   {
     "source": "/ru/base/iaas/vm-faq/faq-vm-disk",
-    "destination": "/ru/base/iaas/faq",
+    "destination": "/ru/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-start/manage-vm/vm-eventlog",
-    "destination": "/ru/base/iaas/service-management",
+    "destination": "/ru/computing/iaas/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/fs",
-    "destination": "/ru/base/iaas/service-management/fs-manage",
+    "destination": "/ru/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/fs/connect-fs",
-    "destination": "/ru/base/iaas/service-management/fs-manage",
+    "destination": "/ru/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/fs/create-fs",
-    "destination": "/ru/base/iaas/service-management/fs-manage",
+    "destination": "/ru/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/fs/manage-fs",
-    "destination": "/ru/base/iaas/service-management/fs-manage",
+    "destination": "/ru/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-start/manage-vm/vm-password",
-    "destination": "/ru/base/iaas/service-management/vm",
+    "destination": "/ru/computing/iaas/service-management/vm",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-interfaces",
-    "destination": "/ru/base/iaas/service-management/vm",
+    "destination": "/ru/computing/iaas/service-management/vm",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-start/manage-vm/vm-add-net",
-    "destination": "/ru/base/iaas/service-management/vm/vm-add-net",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-add-net",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-start/vm-connect",
-    "destination": "/ru/base/iaas/service-management/vm/vm-connect",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-start/vm-connect/vm-connect-nix",
-    "destination": "/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-images/image-logins",
-    "destination": "/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-start/vm-connect/vm-connect-win",
-    "destination": "/ru/base/iaas/service-management/vm/vm-connect/vm-connect-win",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-win",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-start/manage-vm/vnc-console",
-    "destination": "/ru/base/iaas/service-management/vm/vm-console",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-console",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-start/vm-quick-create",
-    "destination": "/ru/base/iaas/service-management/vm/vm-create",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-interfaces/vm-create-cli",
-    "destination": "/ru/base/iaas/service-management/vm/vm-create",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-start/manage-vm",
-    "destination": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-scenarios/recover-access-vm",
-    "destination": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-scenarios/vm-blocking",
-    "destination": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-scenarios/vm-flavor",
-    "destination": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-scenarios/vm-tag",
-    "destination": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
@@ -6097,145 +6097,145 @@
   },
   {
     "source": "/ru/base/iaas/vm-images",
-    "destination": "/ru/base/iaas/service-management/images",
+    "destination": "/ru/computing/iaas/service-management/images",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-images/vm-image-metadata",
-    "destination": "/ru/base/iaas/service-management/images/image-metadata",
+    "destination": "/ru/computing/iaas/service-management/images/image-metadata",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-images/vm-image",
-    "destination": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-images/custom-image",
-    "destination": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-images/delete-image",
-    "destination": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-images/share-image",
-    "destination": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-volumes/limits-geo",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-volumes/vm-change-disk",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-volumes/volume-convert",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-volumes/volume-create",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-volumes/volume-disconnect",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-volumes/volume-resize",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-volumes/volume-snapshot",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-volumes/volume-transfer",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/licensing",
-    "destination": "/ru/base/vm-licenses",
+    "destination": "/ru/computing/vm-licenses",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/licensing/astra-linux",
-    "destination": "/ru/base/vm-licenses/astra-linux",
+    "destination": "/ru/computing/vm-licenses/astra-linux",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/licensing/ms-lic",
-    "destination": "/ru/base/vm-licenses/ms-lic",
+    "destination": "/ru/computing/vm-licenses/ms-lic",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/licensing/license-mobility",
-    "destination": "/ru/base/vm-licenses/ms-lic",
+    "destination": "/ru/computing/vm-licenses/ms-lic",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-start/manage-vm/vm-rename",
-    "destination": "/ru/base/iaas/tariffication",
+    "destination": "/ru/computing/iaas/tariffication",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-start",
-    "destination": "/ru/base/iaas/quick-start",
+    "destination": "/ru/computing/iaas/quick-start",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-scenarios",
-    "destination": "/ru/base/iaas/how-to-guides",
+    "destination": "/ru/computing/iaas/how-to-guides",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-volumes/disk-encrypt",
-    "destination": "/ru/base/iaas/how-to-guides/disk-encrypt",
+    "destination": "/ru/computing/iaas/how-to-guides/disk-encrypt",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-scenarios/managing-node",
-    "destination": "/ru/base/iaas/how-to-guides/managing-node",
+    "destination": "/ru/computing/iaas/how-to-guides/managing-node",
     "permanent": false,
     "locale": false
   },
@@ -6259,19 +6259,19 @@
   },
   {
     "source": "/ru/base/iaas/vm-images/packer",
-    "destination": "/ru/base/iaas/how-to-guides/packer",
+    "destination": "/ru/computing/iaas/how-to-guides/packer",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-scenarios/vm-multiqueue",
-    "destination": "/ru/base/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/ru/computing/iaas/how-to-guides/vm-multiqueue",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-start/manage-vm/vm-state",
-    "destination": "/ru/base/iaas/how-to-guides/win-image",
+    "destination": "/ru/computing/iaas/how-to-guides/win-image",
     "permanent": false,
     "locale": false
   },
@@ -6529,37 +6529,37 @@
   },
   {
     "source": "/en/base/iaas/vm-start/manage-vm/vm-delete",
-    "destination": "/en/base/iaas/concepts",
+    "destination": "/en/computing/iaas/concepts",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-start/manage-vm/vm-eventlist",
-    "destination": "/en/base/iaas/concepts/about",
+    "destination": "/en/computing/iaas/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-volumes/volume-sla",
-    "destination": "/en/base/iaas/concepts/volume-sla",
+    "destination": "/en/computing/iaas/concepts/volume-sla",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-faq",
-    "destination": "/en/base/iaas/faq",
+    "destination": "/en/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-faq/faq-licensing",
-    "destination": "/en/base/iaas/faq",
+    "destination": "/en/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-faq/faq-vm",
-    "destination": "/en/base/iaas/faq",
+    "destination": "/en/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
@@ -6577,127 +6577,127 @@
   },
   {
     "source": "/en/base/iaas/vm-faq/faq-vm-disk",
-    "destination": "/en/base/iaas/faq",
+    "destination": "/en/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-start/manage-vm/vm-eventlog",
-    "destination": "/en/base/iaas/service-management",
+    "destination": "/en/computing/iaas/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/fs",
-    "destination": "/en/base/iaas/service-management/fs-manage",
+    "destination": "/en/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/fs/connect-fs",
-    "destination": "/en/base/iaas/service-management/fs-manage",
+    "destination": "/en/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/fs/create-fs",
-    "destination": "/en/base/iaas/service-management/fs-manage",
+    "destination": "/en/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/fs/manage-fs",
-    "destination": "/en/base/iaas/service-management/fs-manage",
+    "destination": "/en/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-start/manage-vm/vm-password",
-    "destination": "/en/base/iaas/service-management/vm",
+    "destination": "/en/computing/iaas/service-management/vm",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-interfaces",
-    "destination": "/en/base/iaas/service-management/vm",
+    "destination": "/en/computing/iaas/service-management/vm",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-start/manage-vm/vm-add-net",
-    "destination": "/en/base/iaas/service-management/vm/vm-add-net",
+    "destination": "/en/computing/iaas/service-management/vm/vm-add-net",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-start/vm-connect",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-start/vm-connect/vm-connect-nix",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-images/image-logins",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-start/vm-connect/vm-connect-win",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-win",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-start/manage-vm/vnc-console",
-    "destination": "/en/base/iaas/service-management/vm/vm-console",
+    "destination": "/en/computing/iaas/service-management/vm/vm-console",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-start/vm-quick-create",
-    "destination": "/en/base/iaas/service-management/vm/vm-create",
+    "destination": "/en/computing/iaas/service-management/vm/vm-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-interfaces/vm-create-cli",
-    "destination": "/en/base/iaas/service-management/vm/vm-create",
+    "destination": "/en/computing/iaas/service-management/vm/vm-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-start/manage-vm",
-    "destination": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-scenarios/recover-access-vm",
-    "destination": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-scenarios/vm-blocking",
-    "destination": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-scenarios/vm-flavor",
-    "destination": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-scenarios/vm-tag",
-    "destination": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
@@ -6733,139 +6733,139 @@
   },
   {
     "source": "/en/base/iaas/vm-images",
-    "destination": "/en/base/iaas/service-management/images",
+    "destination": "/en/computing/iaas/service-management/images",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-images/vm-image-metadata",
-    "destination": "/en/base/iaas/service-management/images/image-metadata",
+    "destination": "/en/computing/iaas/service-management/images/image-metadata",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-images/vm-image",
-    "destination": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-images/custom-image",
-    "destination": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-images/delete-image",
-    "destination": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-images/share-image",
-    "destination": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-volumes/limits-geo",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-volumes/vm-change-disk",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-volumes/volume-convert",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-volumes/volume-create",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-volumes/volume-disconnect",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-volumes/volume-resize",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-volumes/volume-snapshot",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-volumes/volume-transfer",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/licensing",
-    "destination": "/en/base/vm-licenses",
+    "destination": "/en/computing/vm-licenses",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/licensing/ms-lic",
-    "destination": "/en/base/vm-licenses/ms-lic",
+    "destination": "/en/computing/vm-licenses/ms-lic",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/licensing/license-mobility",
-    "destination": "/en/base/vm-licenses/ms-lic",
+    "destination": "/en/computing/vm-licenses/ms-lic",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-start",
-    "destination": "/en/base/iaas/quick-start",
+    "destination": "/en/computing/iaas/quick-start",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-start/manage-vm/vm-rename",
-    "destination": "/en/base/iaas/tariffication",
+    "destination": "/en/computing/iaas/tariffication",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-scenarios",
-    "destination": "/en/base/iaas/how-to-guides",
+    "destination": "/en/computing/iaas/how-to-guides",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-volumes/disk-encrypt",
-    "destination": "/en/base/iaas/how-to-guides/disk-encrypt",
+    "destination": "/en/computing/iaas/how-to-guides/disk-encrypt",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-scenarios/managing-node",
-    "destination": "/en/base/iaas/how-to-guides/managing-node",
+    "destination": "/en/computing/iaas/how-to-guides/managing-node",
     "permanent": false,
     "locale": false
   },
@@ -6889,25 +6889,25 @@
   },
   {
     "source": "/en/base/iaas/vm-images/packer",
-    "destination": "/en/base/iaas/how-to-guides/packer",
+    "destination": "/en/computing/iaas/how-to-guides/packer",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-scenarios/vm-multiqueue",
-    "destination": "/en/base/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/en/computing/iaas/how-to-guides/vm-multiqueue",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-start/manage-vm/vm-state",
-    "destination": "/en/base/iaas/how-to-guides/win-image",
+    "destination": "/en/computing/iaas/how-to-guides/win-image",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/pricing",
-    "destination": "/ru/base/iaas/tariffication",
+    "destination": "/ru/computing/iaas/tariffication",
     "permanent": false,
     "locale": false
   },
@@ -8599,7 +8599,7 @@
   },
   {
     "source": "/en/dbs/dbaas/start/connect/ssh",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
@@ -8635,7 +8635,7 @@
   },
   {
     "source": "/ru/dbs/dbaas/start/connect/ssh",
-    "destination": "/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
@@ -8803,7 +8803,7 @@
   },
   {
     "source": "/en/dbs/dbaas/instructions/connect/ssh",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
@@ -8821,7 +8821,7 @@
   },
   {
     "source": "/ru/dbs/dbaas/instructions/connect/ssh",
-    "destination": "/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
@@ -8995,7 +8995,7 @@
   },
   {
     "source": "/en/dbs/dbaas/connect/ssh",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
@@ -9007,7 +9007,7 @@
   },
   {
     "source": "/ru/dbs/dbaas/connect/ssh",
-    "destination": "/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
@@ -10639,37 +10639,37 @@
   },
   {
     "source": "/en/base/iaas/license",
-    "destination": "/en/base/vm-licenses",
+    "destination": "/en/computing/vm-licenses",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/license/alt-linux",
-    "destination": "/en/base/vm-licenses/alt-linux",
+    "destination": "/en/computing/vm-licenses/alt-linux",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/license/astra-linux",
-    "destination": "/en/base/vm-licenses/astra-linux",
+    "destination": "/en/computing/vm-licenses/astra-linux",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/license/ms-lic",
-    "destination": "/en/base/vm-licenses/ms-lic",
+    "destination": "/en/computing/vm-licenses/ms-lic",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/license/ms-lic",
-    "destination": "/en/base/vm-licenses/ms-lic",
+    "destination": "/en/computing/vm-licenses/ms-lic",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/license/red-os",
-    "destination": "/en/base/vm-licenses/red-os",
+    "destination": "/en/computing/vm-licenses/red-os",
     "permanent": false,
     "locale": false
   },
@@ -10903,37 +10903,37 @@
   },
   {
     "source": "/ru/base/iaas/license",
-    "destination": "/ru/base/vm-licenses",
+    "destination": "/ru/computing/vm-licenses",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/license/alt-linux",
-    "destination": "/ru/base/vm-licenses/alt-linux",
+    "destination": "/ru/computing/vm-licenses/alt-linux",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/license/astra-linux",
-    "destination": "/ru/base/vm-licenses/astra-linux",
+    "destination": "/ru/computing/vm-licenses/astra-linux",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/license/ms-lic",
-    "destination": "/ru/base/vm-licenses/ms-lic",
+    "destination": "/ru/computing/vm-licenses/ms-lic",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/license/ms-lic",
-    "destination": "/ru/base/vm-licenses/ms-lic",
+    "destination": "/ru/computing/vm-licenses/ms-lic",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/license/red-os",
-    "destination": "/ru/base/vm-licenses/red-os",
+    "destination": "/ru/computing/vm-licenses/red-os",
     "permanent": false,
     "locale": false
   },
@@ -14071,181 +14071,181 @@
   },
   {
     "source": "/en/base/iaas/instructions/vm-volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-images",
-    "destination": "/en/base/iaas/service-management/images",
+    "destination": "/en/computing/iaas/service-management/images",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-images/vm-images-manage",
-    "destination": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-images/vm-images-manage",
-    "destination": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-images/vm-images-manage",
-    "destination": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-images/vm-images-manage",
-    "destination": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-images/vm-image-metadata",
-    "destination": "/en/base/iaas/service-management/images/image-metadata",
+    "destination": "/en/computing/iaas/service-management/images/image-metadata",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-images",
-    "destination": "/ru/base/iaas/service-management/images",
+    "destination": "/ru/computing/iaas/service-management/images",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-images/vm-images-manage",
-    "destination": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-images/vm-images-manage",
-    "destination": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-images/vm-images-manage",
-    "destination": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-images/vm-images-manage",
-    "destination": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-images/vm-image-metadata",
-    "destination": "/ru/base/iaas/service-management/images/image-metadata",
+    "destination": "/ru/computing/iaas/service-management/images/image-metadata",
     "permanent": false,
     "locale": false
   },
@@ -14257,49 +14257,49 @@
   },
   {
     "source": "/ru/base/iaas/faq/faq-fs",
-    "destination": "/ru/base/iaas/faq",
+    "destination": "/ru/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/faq/faq-vm-disk",
-    "destination": "/ru/base/iaas/faq",
+    "destination": "/ru/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/faq/faq-vm",
-    "destination": "/ru/base/iaas/faq",
+    "destination": "/ru/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/faq/faq-licensing",
-    "destination": "/ru/base/iaas/faq",
+    "destination": "/ru/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/faq/faq-vm",
-    "destination": "/en/base/iaas/faq",
+    "destination": "/en/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/faq/faq-vm-disk",
-    "destination": "/en/base/iaas/faq",
+    "destination": "/en/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/faq/faq-fs",
-    "destination": "/en/base/iaas/faq",
+    "destination": "/en/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/faq/faq-licensing",
-    "destination": "/en/base/iaas/faq",
+    "destination": "/en/computing/iaas/faq",
     "permanent": false,
     "locale": false
   },
@@ -14545,163 +14545,163 @@
   },
   {
     "source": "/en/ml/gpu",
-    "destination": "/en/base/gpu",
+    "destination": "/en/computing/gpu",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/gpu/gpu-start",
-    "destination": "/en/base/gpu",
+    "destination": "/en/computing/gpu",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/gpu/gpu-start/gpu-create",
-    "destination": "/en/base/gpu/connect",
+    "destination": "/en/computing/gpu/connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/gpu/gpu-start/gpu-info",
-    "destination": "/en/base/gpu/about",
+    "destination": "/en/computing/gpu/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/gpu/gpu-limits",
-    "destination": "/en/base/gpu",
+    "destination": "/en/computing/gpu",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops",
-    "destination": "/en/base/cloud-desktops",
+    "destination": "/en/computing/cloud-desktops",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/quick-start",
-    "destination": "/en/base/cloud-desktops/quick-start",
+    "destination": "/en/computing/cloud-desktops/quick-start",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/concepts",
-    "destination": "/en/base/cloud-desktops/concepts",
+    "destination": "/en/computing/cloud-desktops/concepts",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/concepts/overview",
-    "destination": "/en/base/cloud-desktops/concepts/about",
+    "destination": "/en/computing/cloud-desktops/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/concepts/vdi-reference",
-    "destination": "/en/base/cloud-desktops/concepts/glossary",
+    "destination": "/en/computing/cloud-desktops/concepts/glossary",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/instructions",
-    "destination": "/en/base/cloud-desktops/service-management",
+    "destination": "/en/computing/cloud-desktops/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/instructions/config",
-    "destination": "/en/base/cloud-desktops/service-management/config",
+    "destination": "/en/computing/cloud-desktops/service-management/config",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/instructions/desktops-pool",
-    "destination": "/en/base/cloud-desktops/service-management/desktops-pool",
+    "destination": "/en/computing/cloud-desktops/service-management/desktops-pool",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/instructions/desktops-pool/add",
-    "destination": "/en/base/cloud-desktops/service-management/desktops-pool/add",
+    "destination": "/en/computing/cloud-desktops/service-management/desktops-pool/add",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/instructions/desktops-pool/manage",
-    "destination": "/en/base/cloud-desktops/service-management/desktops-pool/manage",
+    "destination": "/en/computing/cloud-desktops/service-management/desktops-pool/manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/instructions/manage-desktops",
-    "destination": "/en/base/cloud-desktops/service-management/manage-desktops",
+    "destination": "/en/computing/cloud-desktops/service-management/manage-desktops",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/instructions/delete-vdi",
-    "destination": "/en/base/cloud-desktops/service-management/delete-vdi",
+    "destination": "/en/computing/cloud-desktops/service-management/delete-vdi",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/use-cases",
-    "destination": "/en/base/cloud-desktops/how-to-guides",
+    "destination": "/en/computing/cloud-desktops/how-to-guides",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/use-cases/ipsec",
-    "destination": "/en/base/cloud-desktops/how-to-guides/ipsec",
+    "destination": "/en/computing/cloud-desktops/how-to-guides/ipsec",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/tariffication",
-    "destination": "/en/base/cloud-desktops/tariffication",
+    "destination": "/en/computing/cloud-desktops/tariffication",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/cloud-desktops/faq",
-    "destination": "/en/base/cloud-desktops/faq",
+    "destination": "/en/computing/cloud-desktops/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/vendors-products/vm-licenses",
-    "destination": "/en/base/vm-licenses",
+    "destination": "/en/computing/vm-licenses",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/vendors-products/vm-licenses/ms-lic",
-    "destination": "/en/base/vm-licenses/ms-lic",
+    "destination": "/en/computing/vm-licenses/ms-lic",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/vendors-products/vm-licenses/ms-lic",
-    "destination": "/en/base/vm-licenses/ms-lic",
+    "destination": "/en/computing/vm-licenses/ms-lic",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/vendors-products/vm-licenses/astra-linux",
-    "destination": "/en/base/vm-licenses/astra-linux",
+    "destination": "/en/computing/vm-licenses/astra-linux",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/vendors-products/vm-licenses/alt-linux",
-    "destination": "/en/base/vm-licenses/alt-linux",
+    "destination": "/en/computing/vm-licenses/alt-linux",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/vendors-products/vm-licenses/red-os",
-    "destination": "/en/base/vm-licenses/red-os",
+    "destination": "/en/computing/vm-licenses/red-os",
     "permanent": false,
     "locale": false
   },
@@ -17173,169 +17173,169 @@
   },
   {
     "source": "/ru/ml/gpu",
-    "destination": "/ru/base/gpu",
+    "destination": "/ru/computing/gpu",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/gpu/gpu-start",
-    "destination": "/ru/base/gpu",
+    "destination": "/ru/computing/gpu",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/gpu/gpu-start/gpu-info",
-    "destination": "/ru/base/gpu/about",
+    "destination": "/ru/computing/gpu/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/gpu/gpu-start/gpu-create",
-    "destination": "/ru/base/gpu/connect",
+    "destination": "/ru/computing/gpu/connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops",
-    "destination": "/ru/base/cloud-desktops",
+    "destination": "/ru/computing/cloud-desktops",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/quick-start",
-    "destination": "/ru/base/cloud-desktops/quick-start",
+    "destination": "/ru/computing/cloud-desktops/quick-start",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/concepts",
-    "destination": "/ru/base/cloud-desktops/concepts",
+    "destination": "/ru/computing/cloud-desktops/concepts",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/concepts/overview",
-    "destination": "/ru/base/cloud-desktops/concepts/about",
+    "destination": "/ru/computing/cloud-desktops/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/concepts/vdi-reference",
-    "destination": "/ru/base/cloud-desktops/concepts/glossary",
+    "destination": "/ru/computing/cloud-desktops/concepts/glossary",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/concepts/desktop-image",
-    "destination": "/ru/base/cloud-desktops/concepts/desktop-image",
+    "destination": "/ru/computing/cloud-desktops/concepts/desktop-image",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/instructions",
-    "destination": "/ru/base/cloud-desktops/service-management",
+    "destination": "/ru/computing/cloud-desktops/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/instructions/config",
-    "destination": "/ru/base/cloud-desktops/service-management/config",
+    "destination": "/ru/computing/cloud-desktops/service-management/config",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/instructions/desktops-pool",
-    "destination": "/ru/base/cloud-desktops/service-management/desktops-pool",
+    "destination": "/ru/computing/cloud-desktops/service-management/desktops-pool",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/instructions/desktops-pool/add",
-    "destination": "/ru/base/cloud-desktops/service-management/desktops-pool/add",
+    "destination": "/ru/computing/cloud-desktops/service-management/desktops-pool/add",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/instructions/desktops-pool/manage",
-    "destination": "/ru/base/cloud-desktops/service-management/desktops-pool/manage",
+    "destination": "/ru/computing/cloud-desktops/service-management/desktops-pool/manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/instructions/manage-desktops",
-    "destination": "/ru/base/cloud-desktops/service-management/manage-desktops",
+    "destination": "/ru/computing/cloud-desktops/service-management/manage-desktops",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/instructions/delete-vdi",
-    "destination": "/ru/base/cloud-desktops/service-management/delete-vdi",
+    "destination": "/ru/computing/cloud-desktops/service-management/delete-vdi",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/use-cases",
-    "destination": "/ru/base/cloud-desktops/how-to-guides",
+    "destination": "/ru/computing/cloud-desktops/how-to-guides",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/use-cases/ipsec",
-    "destination": "/ru/base/cloud-desktops/how-to-guides/ipsec",
+    "destination": "/ru/computing/cloud-desktops/how-to-guides/ipsec",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/use-cases/check-desktop-image",
-    "destination": "/ru/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "destination": "/ru/computing/cloud-desktops/how-to-guides/check-desktop-image",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/tariffication",
-    "destination": "/ru/base/cloud-desktops/tariffication",
+    "destination": "/ru/computing/cloud-desktops/tariffication",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/cloud-desktops/faq",
-    "destination": "/ru/base/cloud-desktops/faq",
+    "destination": "/ru/computing/cloud-desktops/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/vendors-products/vm-licenses",
-    "destination": "/ru/base/vm-licenses",
+    "destination": "/ru/computing/vm-licenses",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/vendors-products/vm-licenses/ms-lic",
-    "destination": "/ru/base/vm-licenses/ms-lic",
+    "destination": "/ru/computing/vm-licenses/ms-lic",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/vendors-products/vm-licenses/ms-lic",
-    "destination": "/ru/base/vm-licenses/ms-lic",
+    "destination": "/ru/computing/vm-licenses/ms-lic",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/vendors-products/vm-licenses/astra-linux",
-    "destination": "/ru/base/vm-licenses/astra-linux",
+    "destination": "/ru/computing/vm-licenses/astra-linux",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/vendors-products/vm-licenses/alt-linux",
-    "destination": "/ru/base/vm-licenses/alt-linux",
+    "destination": "/ru/computing/vm-licenses/alt-linux",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/vendors-products/vm-licenses/red-os",
-    "destination": "/ru/base/vm-licenses/red-os",
+    "destination": "/ru/computing/vm-licenses/red-os",
     "permanent": false,
     "locale": false
   },
@@ -19519,19 +19519,19 @@
   },
   {
     "source": "/en/base/gpu/gpu-start",
-    "destination": "/en/base/gpu",
+    "destination": "/en/computing/gpu",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/gpu/gpu-start/gpu-info",
-    "destination": "/en/base/gpu/about",
+    "destination": "/en/computing/gpu/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/gpu/gpu-start/gpu-create",
-    "destination": "/en/base/gpu/connect",
+    "destination": "/en/computing/gpu/connect",
     "permanent": false,
     "locale": false
   },
@@ -19555,19 +19555,19 @@
   },
   {
     "source": "/ru/base/gpu/gpu-start",
-    "destination": "/ru/base/gpu",
+    "destination": "/ru/computing/gpu",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/gpu/gpu-start/gpu-info",
-    "destination": "/ru/base/gpu/about",
+    "destination": "/ru/computing/gpu/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/gpu/gpu-start/gpu-create",
-    "destination": "/ru/base/gpu/connect",
+    "destination": "/ru/computing/gpu/connect",
     "permanent": false,
     "locale": false
   },
@@ -19771,139 +19771,139 @@
   },
   {
     "source": "/en/base/cloud-desktops/concepts/overview",
-    "destination": "/en/base/cloud-desktops/concepts/about",
+    "destination": "/en/computing/cloud-desktops/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/concepts/vdi-reference",
-    "destination": "/en/base/cloud-desktops/concepts/glossary",
+    "destination": "/en/computing/cloud-desktops/concepts/glossary",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/instructions",
-    "destination": "/en/base/cloud-desktops/service-management",
+    "destination": "/en/computing/cloud-desktops/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/instructions/config",
-    "destination": "/en/base/cloud-desktops/service-management/config",
+    "destination": "/en/computing/cloud-desktops/service-management/config",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/instructions/desktops-pool",
-    "destination": "/en/base/cloud-desktops/service-management/desktops-pool",
+    "destination": "/en/computing/cloud-desktops/service-management/desktops-pool",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/instructions/desktops-pool/add",
-    "destination": "/en/base/cloud-desktops/service-management/desktops-pool/add",
+    "destination": "/en/computing/cloud-desktops/service-management/desktops-pool/add",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/instructions/desktops-pool/manage",
-    "destination": "/en/base/cloud-desktops/service-management/desktops-pool/manage",
+    "destination": "/en/computing/cloud-desktops/service-management/desktops-pool/manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/instructions/manage-desktops",
-    "destination": "/en/base/cloud-desktops/service-management/manage-desktops",
+    "destination": "/en/computing/cloud-desktops/service-management/manage-desktops",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/instructions/delete-vdi",
-    "destination": "/en/base/cloud-desktops/service-management/delete-vdi",
+    "destination": "/en/computing/cloud-desktops/service-management/delete-vdi",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/use-cases",
-    "destination": "/en/base/cloud-desktops/how-to-guides",
+    "destination": "/en/computing/cloud-desktops/how-to-guides",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/cloud-desktops/use-cases/ipsec",
-    "destination": "/en/base/cloud-desktops/how-to-guides/ipsec",
+    "destination": "/en/computing/cloud-desktops/how-to-guides/ipsec",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/concepts/overview",
-    "destination": "/ru/base/cloud-desktops/concepts/about",
+    "destination": "/ru/computing/cloud-desktops/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/concepts/vdi-reference",
-    "destination": "/ru/base/cloud-desktops/concepts/glossary",
+    "destination": "/ru/computing/cloud-desktops/concepts/glossary",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/instructions",
-    "destination": "/ru/base/cloud-desktops/service-management",
+    "destination": "/ru/computing/cloud-desktops/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/instructions/config",
-    "destination": "/ru/base/cloud-desktops/service-management/config",
+    "destination": "/ru/computing/cloud-desktops/service-management/config",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/instructions/desktops-pool",
-    "destination": "/ru/base/cloud-desktops/service-management/desktops-pool",
+    "destination": "/ru/computing/cloud-desktops/service-management/desktops-pool",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/instructions/desktops-pool/add",
-    "destination": "/ru/base/cloud-desktops/service-management/desktops-pool/add",
+    "destination": "/ru/computing/cloud-desktops/service-management/desktops-pool/add",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/instructions/desktops-pool/manage",
-    "destination": "/ru/base/cloud-desktops/service-management/desktops-pool/manage",
+    "destination": "/ru/computing/cloud-desktops/service-management/desktops-pool/manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/instructions/manage-desktops",
-    "destination": "/ru/base/cloud-desktops/service-management/manage-desktops",
+    "destination": "/ru/computing/cloud-desktops/service-management/manage-desktops",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/instructions/delete-vdi",
-    "destination": "/ru/base/cloud-desktops/service-management/delete-vdi",
+    "destination": "/ru/computing/cloud-desktops/service-management/delete-vdi",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/use-cases",
-    "destination": "/ru/base/cloud-desktops/how-to-guides",
+    "destination": "/ru/computing/cloud-desktops/how-to-guides",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/use-cases/ipsec",
-    "destination": "/ru/base/cloud-desktops/how-to-guides/ipsec",
+    "destination": "/ru/computing/cloud-desktops/how-to-guides/ipsec",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/cloud-desktops/use-cases/check-desktop-image",
-    "destination": "/ru/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "destination": "/ru/computing/cloud-desktops/how-to-guides/check-desktop-image",
     "permanent": false,
     "locale": false
   },
@@ -20263,19 +20263,19 @@
   },
   {
     "source": "/en/base/gpu/gpu-limits",
-    "destination": "/en/base/gpu",
+    "destination": "/en/computing/gpu",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/gpu/gpu-info",
-    "destination": "/en/base/gpu/about",
+    "destination": "/en/computing/gpu/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/gpu/gpu-create",
-    "destination": "/en/base/gpu/connect",
+    "destination": "/en/computing/gpu/connect",
     "permanent": false,
     "locale": false
   },
@@ -21589,13 +21589,13 @@
   },
   {
     "source": "/ru/base/gpu/gpu-info",
-    "destination": "/ru/base/gpu/about",
+    "destination": "/ru/computing/gpu/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/gpu/gpu-create",
-    "destination": "/ru/base/gpu/connect",
+    "destination": "/ru/computing/gpu/connect",
     "permanent": false,
     "locale": false
   },
@@ -23263,517 +23263,517 @@
   },
   {
     "source": "/en/base/iaas/concepts/vm-concept",
-    "destination": "/en/base/iaas/concepts/about",
+    "destination": "/en/computing/iaas/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions",
-    "destination": "/en/base/iaas/service-management",
+    "destination": "/en/computing/iaas/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm",
-    "destination": "/en/base/iaas/service-management/vm",
+    "destination": "/en/computing/iaas/service-management/vm",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm",
-    "destination": "/en/base/iaas/service-management/vm",
+    "destination": "/en/computing/iaas/service-management/vm",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm/vm-create",
-    "destination": "/en/base/iaas/service-management/vm/vm-create",
+    "destination": "/en/computing/iaas/service-management/vm/vm-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm/vm-create",
-    "destination": "/en/base/iaas/service-management/vm/vm-create",
+    "destination": "/en/computing/iaas/service-management/vm/vm-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm/vm-connect",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm/vm-connect/vm-connect-nix",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm/vm-connect/vm-connect-win",
-    "destination": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-win",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm/vm-manage",
-    "destination": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm/vm-manage",
-    "destination": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm/vm-manage",
-    "destination": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm/vm-manage",
-    "destination": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm/vm-manage",
-    "destination": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm/vm-add-net",
-    "destination": "/en/base/iaas/service-management/vm/vm-add-net",
+    "destination": "/en/computing/iaas/service-management/vm/vm-add-net",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm/vm-console",
-    "destination": "/en/base/iaas/service-management/vm/vm-console",
+    "destination": "/en/computing/iaas/service-management/vm/vm-console",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/volumes",
-    "destination": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/images",
-    "destination": "/en/base/iaas/service-management/images",
+    "destination": "/en/computing/iaas/service-management/images",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/images/images-manage",
-    "destination": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/images/images-manage",
-    "destination": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/images/images-manage",
-    "destination": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/images/images-manage",
-    "destination": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/images/image-metadata",
-    "destination": "/en/base/iaas/service-management/images/image-metadata",
+    "destination": "/en/computing/iaas/service-management/images/image-metadata",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/fs-manage",
-    "destination": "/en/base/iaas/service-management/fs-manage",
+    "destination": "/en/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/fs-manage",
-    "destination": "/en/base/iaas/service-management/fs-manage",
+    "destination": "/en/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/fs-manage",
-    "destination": "/en/base/iaas/service-management/fs-manage",
+    "destination": "/en/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/fs-manage",
-    "destination": "/en/base/iaas/service-management/fs-manage",
+    "destination": "/en/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/use-cases",
-    "destination": "/en/base/iaas/how-to-guides",
+    "destination": "/en/computing/iaas/how-to-guides",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/use-cases/disk-encrypt",
-    "destination": "/en/base/iaas/how-to-guides/disk-encrypt",
+    "destination": "/en/computing/iaas/how-to-guides/disk-encrypt",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/use-cases/managing-node",
-    "destination": "/en/base/iaas/how-to-guides/managing-node",
+    "destination": "/en/computing/iaas/how-to-guides/managing-node",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/use-cases/vm-multiqueue",
-    "destination": "/en/base/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/en/computing/iaas/how-to-guides/vm-multiqueue",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/use-cases/win-image",
-    "destination": "/en/base/iaas/how-to-guides/win-image",
+    "destination": "/en/computing/iaas/how-to-guides/win-image",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/use-cases/packer",
-    "destination": "/en/base/iaas/how-to-guides/packer",
+    "destination": "/en/computing/iaas/how-to-guides/packer",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/concepts/vm-concept",
-    "destination": "/ru/base/iaas/concepts/about",
+    "destination": "/ru/computing/iaas/concepts/about",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions",
-    "destination": "/ru/base/iaas/service-management",
+    "destination": "/ru/computing/iaas/service-management",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm",
-    "destination": "/ru/base/iaas/service-management/vm",
+    "destination": "/ru/computing/iaas/service-management/vm",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm",
-    "destination": "/ru/base/iaas/service-management/vm",
+    "destination": "/ru/computing/iaas/service-management/vm",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm/vm-create",
-    "destination": "/ru/base/iaas/service-management/vm/vm-create",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm/vm-create",
-    "destination": "/ru/base/iaas/service-management/vm/vm-create",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm/vm-connect",
-    "destination": "/ru/base/iaas/service-management/vm/vm-connect",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix",
-    "destination": "/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix",
-    "destination": "/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix",
-    "destination": "/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm/vm-connect/vm-connect-win",
-    "destination": "/ru/base/iaas/service-management/vm/vm-connect/vm-connect-win",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-win",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm/vm-manage",
-    "destination": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm/vm-manage",
-    "destination": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm/vm-manage",
-    "destination": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm/vm-manage",
-    "destination": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm/vm-manage",
-    "destination": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm/vm-add-net",
-    "destination": "/ru/base/iaas/service-management/vm/vm-add-net",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-add-net",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm/vm-console",
-    "destination": "/ru/base/iaas/service-management/vm/vm-console",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-console",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/volumes",
-    "destination": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/images",
-    "destination": "/ru/base/iaas/service-management/images",
+    "destination": "/ru/computing/iaas/service-management/images",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/images/images-manage",
-    "destination": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/images/images-manage",
-    "destination": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/images/images-manage",
-    "destination": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/images/images-manage",
-    "destination": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/images/image-metadata",
-    "destination": "/ru/base/iaas/service-management/images/image-metadata",
+    "destination": "/ru/computing/iaas/service-management/images/image-metadata",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/fs-manage",
-    "destination": "/ru/base/iaas/service-management/fs-manage",
+    "destination": "/ru/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/fs-manage",
-    "destination": "/ru/base/iaas/service-management/fs-manage",
+    "destination": "/ru/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/fs-manage",
-    "destination": "/ru/base/iaas/service-management/fs-manage",
+    "destination": "/ru/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/fs-manage",
-    "destination": "/ru/base/iaas/service-management/fs-manage",
+    "destination": "/ru/computing/iaas/service-management/fs-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/use-cases",
-    "destination": "/ru/base/iaas/how-to-guides",
+    "destination": "/ru/computing/iaas/how-to-guides",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/use-cases/disk-encrypt",
-    "destination": "/ru/base/iaas/how-to-guides/disk-encrypt",
+    "destination": "/ru/computing/iaas/how-to-guides/disk-encrypt",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/use-cases/managing-node",
-    "destination": "/ru/base/iaas/how-to-guides/managing-node",
+    "destination": "/ru/computing/iaas/how-to-guides/managing-node",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/use-cases/vm-multiqueue",
-    "destination": "/ru/base/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/ru/computing/iaas/how-to-guides/vm-multiqueue",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/use-cases/win-image",
-    "destination": "/ru/base/iaas/how-to-guides/win-image",
+    "destination": "/ru/computing/iaas/how-to-guides/win-image",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/use-cases/packer",
-    "destination": "/ru/base/iaas/how-to-guides/packer",
+    "destination": "/ru/computing/iaas/how-to-guides/packer",
     "permanent": false,
     "locale": false
   },
@@ -26060,6 +26060,1050 @@
   {
     "source": "/ru/manage/monitoring/service-management/telegraf-manage",
     "destination": "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base",
+    "destination": "/en/computing",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas",
+    "destination": "/en/computing/iaas",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/quick-start",
+    "destination": "/en/computing/iaas/quick-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/concepts",
+    "destination": "/en/computing/iaas/concepts",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/concepts/new-vm-concept",
+    "destination": "/en/computing/iaas/concepts/new-vm-concept",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/concepts/new-volume-sla",
+    "destination": "/en/computing/iaas/concepts/new-volume-sla",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/concepts/about",
+    "destination": "/en/computing/iaas/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/concepts/volume-sla",
+    "destination": "/en/computing/iaas/concepts/volume-sla",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management",
+    "destination": "/en/computing/iaas/service-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm",
+    "destination": "/en/computing/iaas/service-management/vm",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm",
+    "destination": "/en/computing/iaas/service-management/vm",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm/vm-create",
+    "destination": "/en/computing/iaas/service-management/vm/vm-create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm/vm-create",
+    "destination": "/en/computing/iaas/service-management/vm/vm-create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm/vm-connect",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm/vm-connect/vm-connect-win",
+    "destination": "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm/vm-manage",
+    "destination": "/en/computing/iaas/service-management/vm/vm-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm/vm-add-net",
+    "destination": "/en/computing/iaas/service-management/vm/vm-add-net",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/vm/vm-console",
+    "destination": "/en/computing/iaas/service-management/vm/vm-console",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/volumes",
+    "destination": "/en/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/images",
+    "destination": "/en/computing/iaas/service-management/images",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/images/images-manage",
+    "destination": "/en/computing/iaas/service-management/images/images-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/images/image-metadata",
+    "destination": "/en/computing/iaas/service-management/images/image-metadata",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/fs-manage",
+    "destination": "/en/computing/iaas/service-management/fs-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/fs-manage",
+    "destination": "/en/computing/iaas/service-management/fs-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/fs-manage",
+    "destination": "/en/computing/iaas/service-management/fs-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/service-management/fs-manage",
+    "destination": "/en/computing/iaas/service-management/fs-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/how-to-guides",
+    "destination": "/en/computing/iaas/how-to-guides",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/how-to-guides/disk-encrypt",
+    "destination": "/en/computing/iaas/how-to-guides/disk-encrypt",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/how-to-guides/managing-node",
+    "destination": "/en/computing/iaas/how-to-guides/managing-node",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/en/computing/iaas/how-to-guides/vm-multiqueue",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/how-to-guides/win-image",
+    "destination": "/en/computing/iaas/how-to-guides/win-image",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/how-to-guides/packer",
+    "destination": "/en/computing/iaas/how-to-guides/packer",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/tariffication",
+    "destination": "/en/computing/iaas/tariffication",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/troubleshooting",
+    "destination": "/en/computing/iaas/troubleshooting",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/troubleshooting/linux-vm-network",
+    "destination": "/en/computing/iaas/troubleshooting/linux-vm-network",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/faq",
+    "destination": "/en/computing/iaas/faq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/faq",
+    "destination": "/en/computing/iaas/faq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/faq",
+    "destination": "/en/computing/iaas/faq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/faq",
+    "destination": "/en/computing/iaas/faq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/iaas/faq",
+    "destination": "/en/computing/iaas/faq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/gpu",
+    "destination": "/en/computing/gpu",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/gpu",
+    "destination": "/en/computing/gpu",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/gpu",
+    "destination": "/en/computing/gpu",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/gpu/about",
+    "destination": "/en/computing/gpu/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/gpu/connect",
+    "destination": "/en/computing/gpu/connect",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops",
+    "destination": "/en/computing/cloud-desktops",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/quick-start",
+    "destination": "/en/computing/cloud-desktops/quick-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/concepts",
+    "destination": "/en/computing/cloud-desktops/concepts",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/concepts/about",
+    "destination": "/en/computing/cloud-desktops/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/concepts/glossary",
+    "destination": "/en/computing/cloud-desktops/concepts/glossary",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/concepts/desktop-image",
+    "destination": "/en/computing/cloud-desktops/concepts/desktop-image",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/service-management",
+    "destination": "/en/computing/cloud-desktops/service-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/service-management/config",
+    "destination": "/en/computing/cloud-desktops/service-management/config",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/service-management/desktops-pool",
+    "destination": "/en/computing/cloud-desktops/service-management/desktops-pool",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/service-management/desktops-pool/add",
+    "destination": "/en/computing/cloud-desktops/service-management/desktops-pool/add",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/service-management/desktops-pool/manage",
+    "destination": "/en/computing/cloud-desktops/service-management/desktops-pool/manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/service-management/manage-desktops",
+    "destination": "/en/computing/cloud-desktops/service-management/manage-desktops",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/service-management/delete-vdi",
+    "destination": "/en/computing/cloud-desktops/service-management/delete-vdi",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/how-to-guides",
+    "destination": "/en/computing/cloud-desktops/how-to-guides",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/how-to-guides/ipsec",
+    "destination": "/en/computing/cloud-desktops/how-to-guides/ipsec",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "destination": "/en/computing/cloud-desktops/how-to-guides/check-desktop-image",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/tariffication",
+    "destination": "/en/computing/cloud-desktops/tariffication",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/cloud-desktops/faq",
+    "destination": "/en/computing/cloud-desktops/faq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/vm-licenses",
+    "destination": "/en/computing/vm-licenses",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/vm-licenses/ms-lic",
+    "destination": "/en/computing/vm-licenses/ms-lic",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/vm-licenses/ms-lic",
+    "destination": "/en/computing/vm-licenses/ms-lic",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/vm-licenses/astra-linux",
+    "destination": "/en/computing/vm-licenses/astra-linux",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/vm-licenses/alt-linux",
+    "destination": "/en/computing/vm-licenses/alt-linux",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/base/vm-licenses/red-os",
+    "destination": "/en/computing/vm-licenses/red-os",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base",
+    "destination": "/ru/computing",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas",
+    "destination": "/ru/computing/iaas",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/quick-start",
+    "destination": "/ru/computing/iaas/quick-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/concepts",
+    "destination": "/ru/computing/iaas/concepts",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/concepts/new-vm-concept",
+    "destination": "/ru/computing/iaas/concepts/new-vm-concept",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/concepts/new-volume-sla",
+    "destination": "/ru/computing/iaas/concepts/new-volume-sla",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/concepts/about",
+    "destination": "/ru/computing/iaas/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/concepts/storage-types",
+    "destination": "/ru/computing/iaas/concepts/storage-types",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/concepts/volume-sla",
+    "destination": "/ru/computing/iaas/concepts/volume-sla",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management",
+    "destination": "/ru/computing/iaas/service-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm",
+    "destination": "/ru/computing/iaas/service-management/vm",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm",
+    "destination": "/ru/computing/iaas/service-management/vm",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm/vm-create",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm/vm-create",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm/vm-connect",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm/vm-connect/vm-connect-win",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-win",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm/vm-manage",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm/vm-add-net",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-add-net",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/vm/vm-console",
+    "destination": "/ru/computing/iaas/service-management/vm/vm-console",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/volumes",
+    "destination": "/ru/computing/iaas/service-management/volumes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/images",
+    "destination": "/ru/computing/iaas/service-management/images",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/images/images-manage",
+    "destination": "/ru/computing/iaas/service-management/images/images-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/images/image-metadata",
+    "destination": "/ru/computing/iaas/service-management/images/image-metadata",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/fs-manage",
+    "destination": "/ru/computing/iaas/service-management/fs-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/fs-manage",
+    "destination": "/ru/computing/iaas/service-management/fs-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/fs-manage",
+    "destination": "/ru/computing/iaas/service-management/fs-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/service-management/fs-manage",
+    "destination": "/ru/computing/iaas/service-management/fs-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/how-to-guides",
+    "destination": "/ru/computing/iaas/how-to-guides",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/how-to-guides/disk-encrypt",
+    "destination": "/ru/computing/iaas/how-to-guides/disk-encrypt",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/how-to-guides/managing-node",
+    "destination": "/ru/computing/iaas/how-to-guides/managing-node",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/how-to-guides/vm-multiqueue",
+    "destination": "/ru/computing/iaas/how-to-guides/vm-multiqueue",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/how-to-guides/win-image",
+    "destination": "/ru/computing/iaas/how-to-guides/win-image",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/how-to-guides/packer",
+    "destination": "/ru/computing/iaas/how-to-guides/packer",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/tariffication",
+    "destination": "/ru/computing/iaas/tariffication",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/troubleshooting",
+    "destination": "/ru/computing/iaas/troubleshooting",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/troubleshooting/linux-vm-network",
+    "destination": "/ru/computing/iaas/troubleshooting/linux-vm-network",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/faq",
+    "destination": "/ru/computing/iaas/faq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/faq",
+    "destination": "/ru/computing/iaas/faq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/faq",
+    "destination": "/ru/computing/iaas/faq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/faq",
+    "destination": "/ru/computing/iaas/faq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/iaas/faq",
+    "destination": "/ru/computing/iaas/faq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/gpu",
+    "destination": "/ru/computing/gpu",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/gpu",
+    "destination": "/ru/computing/gpu",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/gpu/about",
+    "destination": "/ru/computing/gpu/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/gpu/connect",
+    "destination": "/ru/computing/gpu/connect",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops",
+    "destination": "/ru/computing/cloud-desktops",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/quick-start",
+    "destination": "/ru/computing/cloud-desktops/quick-start",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/concepts",
+    "destination": "/ru/computing/cloud-desktops/concepts",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/concepts/about",
+    "destination": "/ru/computing/cloud-desktops/concepts/about",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/concepts/glossary",
+    "destination": "/ru/computing/cloud-desktops/concepts/glossary",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/concepts/desktop-image",
+    "destination": "/ru/computing/cloud-desktops/concepts/desktop-image",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/service-management",
+    "destination": "/ru/computing/cloud-desktops/service-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/service-management/config",
+    "destination": "/ru/computing/cloud-desktops/service-management/config",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/service-management/desktops-pool",
+    "destination": "/ru/computing/cloud-desktops/service-management/desktops-pool",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/service-management/desktops-pool/add",
+    "destination": "/ru/computing/cloud-desktops/service-management/desktops-pool/add",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/service-management/desktops-pool/manage",
+    "destination": "/ru/computing/cloud-desktops/service-management/desktops-pool/manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/service-management/manage-desktops",
+    "destination": "/ru/computing/cloud-desktops/service-management/manage-desktops",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/service-management/delete-vdi",
+    "destination": "/ru/computing/cloud-desktops/service-management/delete-vdi",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/how-to-guides",
+    "destination": "/ru/computing/cloud-desktops/how-to-guides",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/how-to-guides/ipsec",
+    "destination": "/ru/computing/cloud-desktops/how-to-guides/ipsec",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/how-to-guides/check-desktop-image",
+    "destination": "/ru/computing/cloud-desktops/how-to-guides/check-desktop-image",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/tariffication",
+    "destination": "/ru/computing/cloud-desktops/tariffication",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/cloud-desktops/faq",
+    "destination": "/ru/computing/cloud-desktops/faq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/vm-licenses",
+    "destination": "/ru/computing/vm-licenses",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/vm-licenses/ms-lic",
+    "destination": "/ru/computing/vm-licenses/ms-lic",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/vm-licenses/ms-lic",
+    "destination": "/ru/computing/vm-licenses/ms-lic",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/vm-licenses/astra-linux",
+    "destination": "/ru/computing/vm-licenses/astra-linux",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/vm-licenses/alt-linux",
+    "destination": "/ru/computing/vm-licenses/alt-linux",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/base/vm-licenses/red-os",
+    "destination": "/ru/computing/vm-licenses/red-os",
     "permanent": false,
     "locale": false
   }
