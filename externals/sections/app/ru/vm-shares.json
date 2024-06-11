@@ -6,17 +6,17 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/base/iaas/concepts"
+                    "link": "/ru/computing/iaas/concepts"
                 },
                 {
-                    "link": "/ru/base/vm-licenses"
+                    "link": "/ru/computing/vm-licenses"
                 },
                 {
-                    "link": "/ru/base/iaas/tariffication",
+                    "link": "/ru/computing/iaas/tariffication",
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "/ru/base/iaas/faq"
+                    "link": "/ru/computing/iaas/faq"
                 }
             ]
         },
@@ -24,10 +24,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "/ru/base/iaas/quick-start"
+                    "link": "/ru/computing/iaas/quick-start"
                 },
                 {
-                    "link": "/ru/base/iaas/service-management/fs-manage"
+                    "link": "/ru/computing/iaas/service-management/fs-manage"
                 }
             ]
         },
@@ -35,25 +35,25 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/base/iaas/service-management/vm/vm-console"
+                    "link": "/ru/computing/iaas/service-management/vm/vm-console"
                 },
                 {
-                    "link": "/ru/base/iaas/troubleshooting"
+                    "link": "/ru/computing/iaas/troubleshooting"
                 },
                 {
-                    "link": "/ru/base/iaas/how-to-guides/disk-encrypt"
+                    "link": "/ru/computing/iaas/how-to-guides/disk-encrypt"
                 },
                 {
-                    "link": "/ru/base/iaas/how-to-guides/win-image"
+                    "link": "/ru/computing/iaas/how-to-guides/win-image"
                 },
                 {
-                    "link": "/ru/base/iaas/how-to-guides/packer"
+                    "link": "/ru/computing/iaas/how-to-guides/packer"
                 },
                 {
-                    "link": "/ru/base/iaas/how-to-guides/vm-multiqueue"
+                    "link": "/ru/computing/iaas/how-to-guides/vm-multiqueue"
                 },
                 {
-                    "link": "/ru/base/iaas/how-to-guides/managing-node"
+                    "link": "/ru/computing/iaas/how-to-guides/managing-node"
                 }
             ]
         }

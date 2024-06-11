@@ -42,7 +42,7 @@ Different types of balancers [are charged](../../../vnet/tariffication) differen
 
 This balancer is user-created and can be used to provide fault tolerance and flexible application scaling:
 
-- When working with [Cloud Servers service](/en/base/iaas) to distribute incoming traffic between virtual servers.
+- When working with [Cloud Servers service](/en/computing/iaas) to distribute incoming traffic between virtual servers.
 - When working with [container service](/en/kubernetes/k8s/), such as when using [Ingress controllers](/en/kubernetes/k8s/how-to-guides/ingress) (including [the preconfigured one](/en/kubernetes/k8s/concepts/addons-and-settings/addons#ingress_controller_nginx_d11d1bb3)) or services like [Load Balancer](/en/kubernetes/k8s/how-to-guides/load-balancer).
 
 </tabpanel>

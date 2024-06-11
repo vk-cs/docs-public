@@ -6,16 +6,16 @@
             "title": "ИНФОРМАЦИЯ",
             "links": [
                 {
-                    "link": "/ru/base/cloud-desktops/concepts/glossary"
+                    "link": "/ru/computing/cloud-desktops/concepts/glossary"
                 },
                 {
-                    "link": "/ru/base/cloud-desktops/concepts/about"
+                    "link": "/ru/computing/cloud-desktops/concepts/about"
                 },
                 {
-                    "link": "/ru/base/cloud-desktops/tariffication"
+                    "link": "/ru/computing/cloud-desktops/tariffication"
                 },
                 {
-                    "link": "/ru/base/cloud-desktops/faq"
+                    "link": "/ru/computing/cloud-desktops/faq"
                 }
             ]
         },
@@ -23,10 +23,10 @@
             "title": "БЫСТРЫЙ СТАРТ",
             "links": [
                 {
-                    "link": "/ru/base/cloud-desktops/quick-start"
+                    "link": "/ru/computing/cloud-desktops/quick-start"
                 },
                 {
-                    "link": "/ru/base/cloud-desktops/service-management/config"
+                    "link": "/ru/computing/cloud-desktops/service-management/config"
                 }
             ]
         },
@@ -34,13 +34,13 @@
             "title": "ПРОДВИНУТЫЕ НАСТРОЙКИ",
             "links": [
                 {
-                    "link": "/ru/base/cloud-desktops/service-management/desktops-pool/add"
+                    "link": "/ru/computing/cloud-desktops/service-management/desktops-pool/add"
                 },
                 {
-                    "link": "/ru/base/cloud-desktops/service-management/desktops-pool/manage"
+                    "link": "/ru/computing/cloud-desktops/service-management/desktops-pool/manage"
                 },
                 {
-                    "link": "/ru/base/cloud-desktops/service-management/manage-desktops"
+                    "link": "/ru/computing/cloud-desktops/service-management/manage-desktops"
                 }
             ]
         }

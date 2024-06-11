@@ -1,1 +1,1 @@
-Working with the [Cloud Servers](/en/base/iaas) service using Terraform.
+Working with the [Cloud Servers](/en/computing/iaas) service using Terraform.

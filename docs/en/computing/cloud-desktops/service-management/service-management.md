@@ -1,0 +1,1 @@
+Operations that can be performed with deployable virtual desktops.<br><info>Cloud Desktop User's Guide is [available in PDF format](/en/computing/cloud-desktops/service-management/assets/Termidesk_user_guide_v_1_0.pdf "download") (RU).</info>

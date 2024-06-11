@@ -24,7 +24,7 @@ Network objects that need a router with external network access:
 - VPN tunnel.
 - Load balancer with internet access.
 
-For [virtual machine](/en/base/iaas/concepts/about#virtual_machines) the Internet access can be provided in different ways:
+For [virtual machine](/en/computing/iaas/concepts/about#virtual_machines) the Internet access can be provided in different ways:
 
 - Connect the VM to an external network. In this way, a subnet and external IP address will be automatically assigned to it.
 - Connect the VM to a private subnet that is connected to a router with access to an external network, and assign it a floating IP address. In this way, the IP address can be set manually or automatically.

@@ -37,7 +37,7 @@ To deploy the VictoriaMetrics service in a project:
 
    Additionally, you can configure [vmagent](https://docs.victoriametrics.com/vmagent.html) on any node, the executable file is included in the delivery.
 
-   An instance of the service is deployed on a given number of nodes, each node includes all three components. All nodes in the cluster are equivalent. [Configuration type](/en/base/iaas/concepts/about#flavors) and the disk size is set to be the same for all nodes in the cluster. Supports vertical (increasing CPU and RAM) and horizontal (adding nodes) scaling.
+   An instance of the service is deployed on a given number of nodes, each node includes all three components. All nodes in the cluster are equivalent. [Configuration type](/en/computing/iaas/concepts/about#flavors) and the disk size is set to be the same for all nodes in the cluster. Supports vertical (increasing CPU and RAM) and horizontal (adding nodes) scaling.
 
    ![](./assets/cluster_mini_scheme.png)
 
@@ -52,7 +52,7 @@ To deploy the VictoriaMetrics service in a project:
 
    Additionally, you can configure [vmagent](https://docs.victoriametrics.com/vmagent.html) on any node, the executable file is included in the delivery.
 
-   An instance of the service is deployed on a specified number of nodes, each node includes only one of the components. [Configuration type](/en/base/iaas/concepts/about#flavors) and the disk size is set individually for each node of the cluster. Supports vertical (increasing CPU and RAM) and horizontal (adding nodes) scaling.
+   An instance of the service is deployed on a specified number of nodes, each node includes only one of the components. [Configuration type](/en/computing/iaas/concepts/about#flavors) and the disk size is set individually for each node of the cluster. Supports vertical (increasing CPU and RAM) and horizontal (adding nodes) scaling.
 
    ![](./assets/cluster_maxi_scheme.png)
 
@@ -80,11 +80,11 @@ To deploy the VictoriaMetrics service in a project:
 
       - **Сеть**: select the previously created network and subnet.
       - **Availability zone**: select which of the data centers the VM will be running in.
-      - **Type of virtual machine**: select the preset VM configuration. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#flavors).
+      - **Type of virtual machine**: select the preset VM configuration. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
       - For the system disk and data disk:
 
         - **Disk size**: specify the desired VM disk size in gigabytes.
-        - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#disks).
+        - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#disks).
 
    1. Click the **Next step** button.
    1. At the “Confirmation” step, review the calculated cost of the service and click **Connect the tariff**.
@@ -105,11 +105,11 @@ To deploy the VictoriaMetrics service in a project:
       - **Количество серверов**: specify the number of VMs to deploy in the cluster.
       - **Сеть**: select the previously created network and subnet.
       - **Availability zone**: select which of the data centers the VM will be running in.
-      - **Type of virtual machine**: select the preset VM configuration. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#flavors).
+      - **Type of virtual machine**: select the preset VM configuration. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
       - For the system disk and data disk:
 
         - **Disk size**: specify the desired VM disk size in gigabytes.
-        - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#disks).
+        - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#disks).
 
    1. Click the **Next step** button.
    1. At the “Confirmation” step, review the calculated cost of the service and click **Connect the tariff**.
@@ -130,16 +130,16 @@ To deploy the VictoriaMetrics service in a project:
       - **Сеть**: select the previously created network and subnet.
       - **Availability zone**: select which of the data centers the VM will be running in.
       - **Disk size**: specify the desired VM disk size in gigabytes.
-      - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#disks).
+      - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#disks).
 
    1. Click the **Next step** button.
    1. At the “Параметры компонентов” step:
 
-      - For each of the `vmselect`, `vminsert` and `vmstorage` components, specify the number of deployed VMs in the cluster and [the type of virtual machine](/en/base/iaas/concepts/about#flavors).
+      - For each of the `vmselect`, `vminsert` and `vmstorage` components, specify the number of deployed VMs in the cluster and [the type of virtual machine](/en/computing/iaas/concepts/about#flavors).
       - For the data disk for `vmstorage`:
 
         - **Disk size**: specify the desired VM disk size in gigabytes.
-        - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/base/iaas/concepts/about#disks).
+        - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#disks).
 
    1. At the “Confirmation” step, review the calculated cost of the service and click **Connect the tariff**.
 

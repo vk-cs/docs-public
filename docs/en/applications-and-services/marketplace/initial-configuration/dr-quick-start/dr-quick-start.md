@@ -27,7 +27,7 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
 1. [Configure](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa) two-factor authentication (2FA) for the account on whose behalf the restored infrastructure will be deployed.
-1. [Create a VM](/en/base/iaas/service-management/vm/vm-create) for which recovery will be applied. As part of the quick start, the `Ubuntu-DR` VM with the Ubuntu 18.04 operating system will be used.
+1. [Create a VM](/en/computing/iaas/service-management/vm/vm-create) for which recovery will be applied. As part of the quick start, the `Ubuntu-DR` VM with the Ubuntu 18.04 operating system will be used.
 1. [Connect](../../service-management/pr-instance-add/) Hystax Acura Disaster Recovery service.
 
    Wait for the installation to complete — a link with a username and password will be sent to your email. The service will be deployed at https://dr.mcs-cloud.ru (Hystax Acura personal account).
@@ -240,12 +240,12 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
 
 ## 6. Check the functionality of the restored VM
 
-Find the restored VM in VK Cloud (`<project ID>_cloud_agent`), [perform](/en/base/iaas/service-management/vm/vm-manage) arbitrary operations on it.
+Find the restored VM in VK Cloud (`<project ID>_cloud_agent`), [perform](/en/computing/iaas/service-management/vm/vm-manage) arbitrary operations on it.
 
 ## Delete unused resources
 
 Running VMs consume computing resources. If you don't need them anymore:
 
-- [Delete](/en/base/iaas/service-management/vm/vm-manage#deleting_a_vm) `Ubuntu-DR` VM.
+- [Delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) `Ubuntu-DR` VM.
 - Delete the backup infrastructure `VK-Cloud-infra` via Hystax Acura [personal account](https://dr.mcs-cloud.ru).
 - [Delete](/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project) floating IP address if it was created during recovery.

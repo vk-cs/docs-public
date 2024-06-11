@@ -15,7 +15,7 @@
 
    Вместо `35242` можно использовать любой порт, не зарезервированный операционной системой.
 
-1. [Создайте ВМ](/ru/base/iaas/service-management/vm/vm-create) с операционной системой Ubuntu.
+1. [Создайте ВМ](/ru/computing/iaas/service-management/vm/vm-create) с операционной системой Ubuntu.
 
    При выборе параметров ВМ учитывайте [требования к оборудованию](https://docs.gitlab.com/ee/install/requirements.html), необходимые для установки GitLab и GitLab Runner.
 
@@ -24,7 +24,7 @@
      - имя: `OA-Ubuntu-docker`;
      - операционная система: Ubuntu 22.04;
      - сеть: `network1` с подсетью `10.0.0.0/24`;
-     - [шаблон конфигурации](/ru/base/iaas/concepts/about#shablony_konfiguraciy): `STD2-4-12`;
+     - [шаблон конфигурации](/ru/computing/iaas/concepts/about#shablony_konfiguraciy): `STD2-4-12`;
      - сетевой HDD-диск: 50 ГБ;
      - публичный IP-адрес: назначен, далее будет использоваться `185.185.185.185`;
      - группы безопасности: `default`, `gitlab`.
@@ -46,7 +46,7 @@
 
     </details>
 
-1. [Подключитесь к ВМ](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix) `OA-Ubuntu-docker` по SSH.
+1. [Подключитесь к ВМ](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) `OA-Ubuntu-docker` по SSH.
 1. Проверьте состояние файервола операционной системы и отключите его, если он активен:
 
     ```bash
@@ -283,5 +283,5 @@ CONTAINER ID   IMAGE                         COMMAND                  CREATED   
 
 Развернутые виртуальные ресурсы тарифицируются. Если они вам больше не нужны:
 
-- [Удалите](/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm) ВМ `OA-Ubuntu-docker`.
+- [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) ВМ `OA-Ubuntu-docker`.
 - При необходимости [удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес `185.185.185.185`.

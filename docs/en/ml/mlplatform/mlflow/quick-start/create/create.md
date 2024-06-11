@@ -12,7 +12,7 @@ During the installation process, you need to enter the following settings:
 | Type of virtual machine | Preinstalled VM configuration (CPU and RAM) |
 | Accessibility zone | Selecting the data center where the instance will be launched |
 | Disk size | Sets the VM disk size in GB |
-| Disk type | Type of instance disk to be created, [more](/en/base/iaas/concepts/volume-sla) |
+| Disk type | Type of instance disk to be created, [more](/en/computing/iaas/concepts/volume-sla) |
 | Choosing a domain name | Specifies the DNS name of the instance |
 | JupyterHub Instance | Selecting the JupyterHub instance to which the MLflow instance will be connected |
 
@@ -35,6 +35,6 @@ Upon completion of the instance setup, a page with server characteristics and in
 
 After the installation of MLflow is completed, within 5-10 minutes, the JupyterHub instance will be automatically configured to work with MLflow.
 
-In order for the settings to take effect, you must restart the JupyterHub server. This can be done from JupyterHub in the Hub Control Panel, or restart the VM from JupyterHub in the [**Cloud Computing** -> **Virtual Machines**](/en/base/iaas/vm-start/manage-vm/vm-state) section.
+In order for the settings to take effect, you must restart the JupyterHub server. This can be done from JupyterHub in the Hub Control Panel, or restart the VM from JupyterHub in the [**Cloud Computing** -> **Virtual Machines**](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) section.
 
 </warn>
