@@ -41,7 +41,7 @@ The procedure is described in the article [Access management](../service-managem
 
 <summary>How do I recover my account password?</summary>
 
-1. Click **Forgot password?** on the login screen to your personal account.
+1. Click **Forgot password?** on the authorization page to your personal account.
 1. Enter your email in the field **Email which was used during registration**.
 1. Press the button **Send password**. An email with instructions for password recovery will be sent to the specified email address.
 1. Follow the link in the email about password recovery from the VK Cloud personal account.

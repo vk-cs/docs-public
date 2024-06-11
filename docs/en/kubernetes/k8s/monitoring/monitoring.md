@@ -53,11 +53,11 @@ The following tools are available for monitoring the status of a Kubernetes clus
       http://localhost:<port>/
       ```
 
-      The Grafana login page will appear.
+      The Grafana authorization page will appear.
 
-1. Log in to Grafana. Depending on the parameters with which the add-on was [installed](../service-management/addons/advanced-installation/install-advanced-monitoring/), use:
+1. Sign in to Grafana. Depending on the parameters with which the add-on was [installed](../service-management/addons/advanced-installation/install-advanced-monitoring/), use:
 
-   - Login `admin` and temporary password. The password will need to be changed after the first login.
+   - Login `admin` and temporary password. The password will need to be changed after the first authorization.
    - Login `admin` and a permanent password from the Kubernetes secret.
 
 Now you can work with Grafana. For example, it is possible to create and view dashboards. Preconfigured dashboards with information about various Kubernetes resources are available in the **Dashboards → Browse** side menu.

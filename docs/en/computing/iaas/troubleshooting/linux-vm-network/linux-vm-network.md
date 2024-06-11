@@ -24,9 +24,9 @@ The described approaches can also be used when access is lost to another applica
 
 1. [Make sure](../../service-management/vm/vm-manage#start_stop_restart_vm), that the VM is running.
 
-1. [Make sure](../../service-management/vm/vm-console#the_vnc_console),that you can access the virtual machine console and log in to it using a [pre-configured login](../../service-management/vm/vm-connect/vm-connect-nix#2_select_the_user_name).
+1. [Make sure](../../service-management/vm/vm-console#the_vnc_console),that you can access the virtual machine console and sign in to it using a [pre-configured login](../../service-management/vm/vm-connect/vm-connect-nix#2_select_the_user_name).
 
-   If necessary, [restore password](../../service-management/vm/vm-manage#setting_and_changing_a_password) for the login.
+   If necessary, [restore password](../../service-management/vm/vm-manage#setting_and_changing_a_password) for authorization.
 
 1. Get information about the configuration of the virtual machine network interface:
 
@@ -65,7 +65,7 @@ Sometimes the connection is hindered by incorrect initialization of the network 
 
 Check that the network interface is configured correctly:
 
-1. Connect to the virtual machine console and log in.
+1. Connect to the virtual machine console and sign in.
 
 2. Run the command:
 
@@ -298,7 +298,7 @@ The network interface may be fine, but applications and services may not be runn
 
 Check the SSH operation:
 
-1. Connect to the virtual machine console and log in.
+1. Connect to the virtual machine console and sign in.
 
 1. Run the command:
 
@@ -475,7 +475,7 @@ After the SSH connection problem is localized, enable the firewall rules back (w
 
 To check the firewall settings:
 
-1. Connect to the virtual machine console and log in.
+1. Connect to the virtual machine console and sign in.
 
 1. Disable the firewall:
 
@@ -531,7 +531,7 @@ To check the firewall settings:
 
 To turn on the firewall again:
 
-1. Connect to the virtual machine console and log in.
+1. Connect to the virtual machine console and sign in.
 
 1. Run the command:
 

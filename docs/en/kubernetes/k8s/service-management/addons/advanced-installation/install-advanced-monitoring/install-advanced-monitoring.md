@@ -218,7 +218,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 <info>
 
-During quick installation, the add-on settings code is not edited. A Kubernetes secret will be created, containing a permanent password to log in to the Grafana web interface.
+During quick installation, the add-on settings code is not edited. A Kubernetes secret will be created, containing a permanent password to sign in to the Grafana web interface.
 
 If this does not suit you, perform a **standard installation** or **installation on dedicated worker nodes**.
 
@@ -274,9 +274,9 @@ If this does not suit you, perform a **standard installation** or **installation
 
 ### Setting temporary password for Grafana web interface
 
-When installing an add-on with default parameters, a Kubernetes secret will be created containing a permanent password to log in to the Grafana web interface.
+When installing an add-on with default parameters, a Kubernetes secret will be created containing a permanent password to sign in to the Grafana web interface.
 
-Also, when installing the add-on, you can specify a temporary user password. In this case, the first login to the Grafana web interface is performed with this password, then you will be prompted to change it. To do this, change the value of the field in the add-on settings code:
+Also, when installing the add-on, you can specify a temporary user password. In this case, the first authorization to the Grafana web interface is performed with this password, then you will be prompted to change it. To do this, change the value of the field in the add-on settings code:
 
 ```yaml
 grafana:
@@ -339,7 +339,7 @@ If, when adding an add-on, a service name other than `kube-prometheus-stack` or 
 
 1. [Make sure](../../../../connect/kubectl#checking_the_connection_to_the_cluster) that you can connect to the cluster using `kubectl`.
 
-1. Get the password to log in to Grafana from the Kubernetes secret:
+1. Get the password to sign in to Grafana from the Kubernetes secret:
 
    <tabs>
    <tablist>

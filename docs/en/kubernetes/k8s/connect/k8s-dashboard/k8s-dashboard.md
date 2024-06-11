@@ -78,7 +78,7 @@ To connect to Kubernetes Dashboard, a browser must be installed on the host.
 
    </warn>
 
-   The browser will open and you will be directed to the Kubernetes Dashboard login page.
+   The browser will open and you will be directed to the Kubernetes Dashboard authorization page.
 
 1. Select the **Token** option and paste the previously copied secret.
 
