@@ -4,6 +4,21 @@
     "full": "Поколения процессоров",
     "text": "Поколения процессоров"
   },
+  "start_stop_restart_vm": {
+    "number": null,
+    "full": "Запуск, остановка, перезагрузка ВМ",
+    "text": "Запуск, остановка, перезагрузка ВМ"
+  },
+  "delete_vm": {
+    "number": null,
+    "full": "Удаление ВМ",
+    "text": "Удаление ВМ"
+  },
+  "migrate_own_licenses": {
+    "number": null,
+    "full": "Перенос в облако VK Cloud приобретенных ранее лицензий",
+    "text": "Перенос в облако VK Cloud приобретенных ранее лицензий"
+  },
   "features_of_installing_addons": {
     "number": null,
     "full": "Features of installing add-ons",
