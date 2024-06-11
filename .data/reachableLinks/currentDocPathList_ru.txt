@@ -541,6 +541,10 @@
 /docs/ru/applications-and-services/1cgrm/connect
 /docs/ru/applications-and-services/1cgrm/tariffication
 /docs/ru/applications-and-services/1cgrm/faq
+/docs/ru/applications-and-services/s3-cyber-backup
+/docs/ru/applications-and-services/s3-cyber-backup/concepts
+/docs/ru/applications-and-services/s3-cyber-backup/concepts/about
+/docs/ru/applications-and-services/s3-cyber-backup/tariffication
 /docs/ru/tools-for-using-services
 /docs/ru/tools-for-using-services/account
 /docs/ru/tools-for-using-services/account/concepts

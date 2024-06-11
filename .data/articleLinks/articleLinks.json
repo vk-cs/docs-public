@@ -16304,6 +16304,26 @@
     "http://localhost:3000/docs/ru/applications-and-services/marketplace/tariffication"
   ],
   [
+    "/ru/applications-and-services/s3-cyber-backup/concepts/about",
+    "http://localhost:3000/docs/ru/storage/s3"
+  ],
+  [
+    "/ru/applications-and-services/s3-cyber-backup/concepts/about",
+    "http://localhost:3000/docs/ru/storage/s3"
+  ],
+  [
+    "/ru/applications-and-services/s3-cyber-backup/concepts/about",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/quotasandlimits"
+  ],
+  [
+    "/ru/applications-and-services/s3-cyber-backup/tariffication",
+    "http://localhost:3000/docs/ru/networks/vnet/tariffication#tarificiruetsya"
+  ],
+  [
+    "/ru/applications-and-services/s3-cyber-backup/tariffication",
+    "http://localhost:3000/docs/ru/storage/s3/tariffication"
+  ],
+  [
     "/ru/tools-for-using-services/account/concepts/projects",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
   ],
