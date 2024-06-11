@@ -10,7 +10,7 @@ After completing all the quick start steps, you will link a payment card to the 
 1. Study the cost of VK Cloud services:
 
    1. Check out the [price list](https://cloud.vk.com/pricelist/).
-   1. Study the articles about the payment features for the services you need. Such articles are called Billing and are in the documentation of the desired service. For example, article on Cloud Servers [pricing](/en/base/iaas/tariffication).
+   1. Study the articles about the payment features for the services you need. Such articles are called Billing and are in the documentation of the desired service. For example, article on Cloud Servers [pricing](/en/computing/iaas/tariffication).
    1. Use the [calculator](https://cloud.vk.com/en/pricing) to calculate the cost of the configuration you need.
 
 1. Check out the list of [accounting documents](../concepts/report) that the platform provides to individuals and legal entities.

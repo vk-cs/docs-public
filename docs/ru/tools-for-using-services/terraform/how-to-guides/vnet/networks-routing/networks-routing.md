@@ -417,7 +417,7 @@ output "common-instance-private-ip" {
 
 ## 5. Проверьте работоспособность примера
 
-1. [Подключитесь по SSH](/ru/base/iaas/vm-start/vm-connect/vm-connect-nix) к виртуальной машине `common-instance-public`.
+1. [Подключитесь по SSH](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к виртуальной машине `common-instance-public`.
 
    Для подключения используйте:
 

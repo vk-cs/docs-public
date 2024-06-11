@@ -89,13 +89,13 @@ To preserve the project:
 1. Stop all the VMs that you want to save data from.
 1. Transfer or copy all the necessary data.
 
-    For example, [create](/en/base/iaas/service-management/images/images-manage#creating_an_image) and [export](/en/base/iaas/service-management/images/images-manage#exporting_an_image) disk images of the virtual machines stopped in the previous step.
+    For example, [create](/en/computing/iaas/service-management/images/images-manage#creating_an_image) and [export](/en/computing/iaas/service-management/images/images-manage#exporting_an_image) disk images of the virtual machines stopped in the previous step.
 
 1. Delete all objects that are charged or occupy disk space — floating IP addresses, disks, buckets, load balancers, and others.
 
     The full list of such objects is also on the page **Balance and payments**.
 
-    Since the boot disks of virtual machines cannot be deleted separately, [delete](/en/base/iaas/service-management/vm/vm-manage#deleting_a_vm) VMs.
+    Since the boot disks of virtual machines cannot be deleted separately, [delete](/en/computing/iaas/service-management/vm/vm-manage#delete_vm) VMs.
 
     Objects that do not consume resources — for example, networks and subnets — can be left in the project.
 
@@ -103,9 +103,9 @@ You will be able to reactivate the project after any period of time by uploading
 
 ## Transferring objects between projects
 
-You can [transfer disks](/en/base/iaas/service-management/volumes#transfer_disks_between_projects) between projects. This allows you to transfer virtual machines between projects.
+You can [transfer disks](/en/computing/iaas/service-management/volumes#transfer_disks_between_projects) between projects. This allows you to transfer virtual machines between projects.
 
-Disk transfer is possible only within one region. If the projects are located in different regions, [upload](/en/base/iaas/service-management/images/images-manage#exporting_an_image) locally the disk image and [download](/en/base/iaas/service-management/images/images-manage#importing_an_image) it to the new project.
+Disk transfer is possible only within one region. If the projects are located in different regions, [upload](/en/computing/iaas/service-management/images/images-manage#exporting_an_image) locally the disk image and [download](/en/computing/iaas/service-management/images/images-manage#importing_an_image) it to the new project.
 
 Currently, transferring PaaS service objects between projects is not supported. For example, the virtual machine on which the database was deployed can be moved to another project only as a regular virtual machine. It is not possible to transfer such a virtual machine as a database instance or create a database instance with a disk transferred from another project.
 

@@ -6,10 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "/en/base/gpu/about"
+                    "link": "/en/computing/gpu/about"
                 },
                 {
-                    "link": "/en/base/iaas/faq"
+                    "link": "/en/computing/iaas/faq"
                 },
                 {
                     "link": "/en/tools-for-using-services/account/concepts/quotasandlimits"
@@ -20,10 +20,10 @@
             "title": "QUICK START",
             "links": [
                 {
-                    "link": "/en/base/gpu/connect"
+                    "link": "/en/computing/gpu/connect"
                 },
                 {
-                    "link": "/en/base/iaas/service-management/vm/vm-connect"
+                    "link": "/en/computing/iaas/service-management/vm/vm-connect"
                 }
             ]
         }

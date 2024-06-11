@@ -6,7 +6,7 @@
 
 1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
 1. [Создайте](/ru/networks/vnet/service-management/net#sozdanie_seti) сеть `network1` с доступом в интернет и подсетью `10.0.0.0/24`.
-1. [Создайте ВМ](/ru/base/iaas/service-management/vm/vm-create):
+1. [Создайте ВМ](/ru/computing/iaas/service-management/vm/vm-create):
 
    - имя: `Almalinux_9_Joomla`;
    - операционная система: Almalinux 9;
@@ -50,7 +50,7 @@
 
 ## 1. Установите Joomla! на ВМ
 
-1. [Подключитесь](/ru/base/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ `Almalinux_9_Joomla`.
+1. [Подключитесь](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) к ВМ `Almalinux_9_Joomla`.
 1. Обновите пакеты до актуальной версии и перезагрузите ВМ с помощью команд:
 
    ```bash
@@ -114,7 +114,7 @@
 
 Развернутые виртуальные ресурсы тарифицируются. Если они вам больше не нужны:
 
-- [Удалите](/ru/base/iaas/service-management/vm/vm-manage#udalenie_vm) ВМ `Almalinux_9_Joomla`.
+- [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) ВМ `Almalinux_9_Joomla`.
 - [Удалите](/ru/dbs/dbaas/service-management/manage-instance/mysql#udalenie_instansa_bd_ili_ego_hostov) инстанс БД `MySQL-7313`.
 - При необходимости [удалите](/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta) плавающий IP-адрес `87.239.105.44`.
 - [Удалите](/ru/networks/dns/publicdns#udalenie_resursnyh_zapisey) созданную DNS-запись `site-joomla.example.vk.cloud`.

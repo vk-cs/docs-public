@@ -77,7 +77,7 @@ To migrate a VM with UEFI emulation, use [Hystax](/en/additionals/hystax/migrati
 To load a VM image, use the OpenStack CLI to avoid possible errors when processing large files by the web interface.
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
-2. [Convert](/en/base/iaas/how-to-guides/packer#1_convert_image_to_raw_format) the resulting export file `.vhdx` to RAW format.
+2. [Convert](/en/computing/iaas/how-to-guides/packer#1_convert_image_to_raw_format) the resulting export file `.vhdx` to RAW format.
 3. Upload the file to an existing VK Cloud project:
 
    ```bash

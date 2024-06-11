@@ -175,7 +175,7 @@
 
 ## 5. Проверьте работоспособность добавленной ВМ
 
-Найдите добавленную ВМ в VK Cloud (`<PID проекта>_cloud_agent`), [выполните](/ru/base/iaas/service-management/vm/vm-manage) произвольные операции над ней.
+Найдите добавленную ВМ в VK Cloud (`<PID проекта>_cloud_agent`), [выполните](/ru/computing/iaas/service-management/vm/vm-manage) произвольные операции над ней.
 
 ## Удалите неиспользуемые ресурсы
 
