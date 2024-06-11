@@ -641,7 +641,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to it (to both projects).
 
-2. Log in to the project you want to move the disk from.
+2. Sign in to the project you want to move the disk from.
 3. [Disconnect from VM](#disconnecting_a_disk_from_a_vm) the disk to be moved.
 4. View the list of disks:
 
@@ -664,7 +664,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
    openstack volume list
    ```
 
-10. Log in to the project you want to move the disk to.
+10. Sign in to the project you want to move the disk to.
 11. Move the disk:
 
       ```bash

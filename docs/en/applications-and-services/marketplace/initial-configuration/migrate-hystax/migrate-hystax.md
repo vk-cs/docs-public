@@ -26,7 +26,7 @@ By using the Hystax Acura Migration service, you agree to the license agreements
 
 ## 2. Make data replication
 
-1. Log in to Hystax Acura [personal account](https://migration.mcs-cloud.ru) using the received username and password.
+1. Sign in to Hystax Acura [personal account](https://migration.mcs-cloud.ru) using the received username and password.
 1. Click the **Install replication agents** button.
 1. In the “Agent selection” step, select **Linux** and click **Next**.
 1. At the “Agent settings” step, specify the parameters:
