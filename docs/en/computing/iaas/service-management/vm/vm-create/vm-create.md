@@ -153,7 +153,7 @@ The available fields may differ for different operating systems.
                            --availability-zone MS1
    ```
 
-   After creating a VM, information about it will be displayed. Find the `adminPass` field and copy its value. You will need it to log in to the server via the VNC console.
+   After creating a VM, information about it will be displayed. Find the `adminPass` field and copy its value. You will need it to sign in to the server via the VNC console.
 
 5. Check the status of the created VM:
 

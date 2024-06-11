@@ -48,4 +48,4 @@ The VK Cloud platform load balancer is based on [OpenStack Octavia](https://docs
 
 ## Security group
 
-Security group is a sets of configurable permissive rules that regulate network access rights (login via a specific protocol, through a specific port) for certain IP addresses or other security groups.
+Security group is a sets of configurable permissive rules that regulate network access rights (sign in via a specific protocol, through a specific port) for certain IP addresses or other security groups.

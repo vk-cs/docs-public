@@ -1,9 +1,9 @@
 {
     "title": "Join a project by invitation",
-    "pageDescription": "Log into a project following a link in an invitation email.",
-    "shortDescription": "Log into a project by a link in the invitation email",
+    "pageDescription": "Sign in to a project following a link in an invitation email.",
+    "shortDescription": "Sign in to a project by a link in the invitation email",
     "metaTitle": "Join a project by an invitation",
-    "metaDescription": "Log into a project by a link in the invitation email.",
+    "metaDescription": "Sign in to a project by a link in the invitation email.",
     "sectionTitle": "Join a project by an invitation",
     "weight": 0,
     "uuid": "daf2b052-025f-4e82-bdb7-5a5bc08a1a37",

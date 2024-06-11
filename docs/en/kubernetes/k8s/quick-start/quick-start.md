@@ -402,7 +402,7 @@ To put your own images in the Docker cluster registry:
 
 1. Place the built image in the Docker registry:
 
-   1. Log in to the registry:
+   1. Sign in to the registry:
 
       ```bash
       docker login 192.0.2.22:5000 --username registry --password registry-password-123456

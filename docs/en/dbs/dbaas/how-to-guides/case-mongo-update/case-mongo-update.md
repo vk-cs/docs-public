@@ -50,7 +50,7 @@ security:
 root@mongo1:~# systemctl restart mongod.service
 ```
 
-5. Log into the `mongo` console and run the command:
+5. Sign in to the `mongo` console and run the command:
 
 ```sql
 \> rs.initiate()
@@ -85,7 +85,7 @@ rs0:PRIMARY> rs.reconfig(cfg)
 rs0:PRIMARY>
 ```
 
-7. Log in to the `mongo2` server, import the MongoDB repository key, add the MongoDB repository and install MongoDB (how to do this, see the article [Installing and configuring MongoDB on Ubuntu](/en/dbs/dbaas/service-management/create/create-single-replica)).
+7. Sign in to the `mongo2` server, import the MongoDB repository key, add the MongoDB repository and install MongoDB (how to do this, see the article [Installing and configuring MongoDB on Ubuntu](/en/dbs/dbaas/service-management/create/create-single-replica)).
 8. If you edited the `/etc/hosts` file on the `mongo1` server, do the same on the current server.
 9. From the mongo1 server, copy the configuration file `/etc/mongod.conf` to the current server, change the key name in the file `PEMKeyFile:` from `/etc/ssl/mongo1.pem` to `PEMKeyFile: /etc/ssl/mongo2 .pem`.
 10. Copy the `/etc/ssl/mongoCA.pem` key to the current server.
@@ -104,7 +104,7 @@ root@mongo2:~# rm /tmp/mongo2.key /tmp/mongo2.crt /tmp/mongo2.csr
 
 12. If the `var/lib/mongodb` directory is not empty, delete all files from it.
 13. Restart the `mongod` server and add it to the list of applications to load automatically.
-14. Login to the `mongo1` server and log into the mongo console.
+14. Login to the `mongo1` server and sign in to the mongo console.
 15. Add the `mongo2` server to `replicaset`:
 
 ```sql

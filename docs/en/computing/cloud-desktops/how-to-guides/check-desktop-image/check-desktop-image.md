@@ -110,9 +110,9 @@ Connection to the Astra Linux VM via RDP and LDAP should always be checked, rega
 
      1. [Reboot](/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) the VM.
      1. [Go to](/en/computing/iaas/service-management/vm/vm-console#the_vnc_console) the VM's console.
-     1. Log in using the username and password of the LDAP user. Verify the login is successful.
+     1. Sign in using the username and password of the LDAP user. Verify you are successfully authorized.
      1. Connect to the VM via RDP, following the [instructions for connecting to a Windows VM](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win#3_connect_to_the_vm).
-     1. Log in using the username and password of the LDAP user. Verify the login is successful.
+     1. Sign in using the username and password of the LDAP user. Verify you are successfully authorized.
 
 ## 3. Check the functionality of your installed software and peripheral devices
 
