@@ -34,7 +34,7 @@
 
 <warn>
 
-Группы **ssh**, **ssh+www** и **all** становятся доступны после [создания виртуальной машины](/ru/computing/iaas/service-management/vm/vm-create/) с такими группами.
+В проекте по умолчанию доступна только группа **default**. Остальные группы будут доступны после [создания ВМ](/ru/computing/iaas/service-management/vm/vm-create/) с такими группами.
 
 </warn>
 
