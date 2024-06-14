@@ -7341,7 +7341,7 @@
   ],
   [
     "/en/tools-for-using-services/account/faq",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/faq"
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions"
   ],
   [
     "/en/tools-for-using-services/account/faq",
@@ -16693,7 +16693,7 @@
   ],
   [
     "/ru/tools-for-using-services/account/faq",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/faq"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
   ],
   [
     "/ru/tools-for-using-services/account/faq",
