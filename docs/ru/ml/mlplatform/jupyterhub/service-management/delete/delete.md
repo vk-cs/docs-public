@@ -1,11 +1,12 @@
-Для удаления инстанса JupyterHub, необходимо:
+Чтобы удалить инстанс JupyterHub:
 
-1.  [В личном кабинете VK Cloud](https://msk.cloud.vk.com/app/services/infra/servers/) перейти на страницу «Инстансы» раздела «ML Platform».
-2.  В контекстном меню инстанса выбрать пункт «Удалить».
-3.  Подтвердить проведение операции.
+1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
+1. перейдите в раздел **ML Platform** → **Инстансы**.
+1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного инстанса и выберите пункт **Удалить**.
+1. Подтвердите выполнение операции.
 
 <info>
 
-Если ранее инстанс JupyterHub был связан с MLflow, первоначально необходимо [удалить инстанс MLflow](/ru/ml/mlplatform/mlflow/manage/delete).
+Если ранее инстанс JupyterHub был связан с MLflow, сначала [удалите инстанс MLflow](/ru/ml/mlplatform/mlflow/manage/delete).
 
 </info>
