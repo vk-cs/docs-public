@@ -25,7 +25,7 @@ Through the VK Cloud personal account, you can register only phone numbers that 
 
 <summary>What rights do the project participants have?</summary>
 
-The role model of the project participants is described in the article [Personal account roles and their permissions](..olesandpermissions).
+The role model of the project participants is described in the article [Personal account roles and their permissions](../concepts/rolesandpermissions).
 
 </details>
 
