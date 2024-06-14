@@ -33,7 +33,7 @@ Default security groups:
 
 <warn>
 
-Groups **ssh**, **ssh+www** and **all** become available after [creating virtual machine](/en/computing/iaas/service-management/vm/vm-create) with these groups.
+Only the **default** group is available in a project by default, other groups become available after [creating virtual machine](/en/computing/iaas/service-management/vm/vm-create) with these groups.
 
 </warn>
 
