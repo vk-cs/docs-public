@@ -1,4 +1,7 @@
-Packer позволяет создавать образы виртуальных машин с нужными параметрами при помощи конфигурационного файла. В качестве примера будет использован образ ОС Alt Linux P9 в формате QCOW.
+Packer позволяет сконструировать новый образ ВМ на основе базового образа с желаемой гостевой ОС и любого из предустановленных в VK Cloud [шаблонов конфигурации](../../concepts/about#shablony_konfiguraciy). Параметры нового образа задаются при помощи конфигурационного файла Packer. В качестве примера будут использованы:
+
+- образ ОС Alt Linux P9 в формате QCOW2;
+- шаблон конфигурации `STD3-2-6`.
 
 ## Подготовительные шаги
 
@@ -17,7 +20,7 @@ Packer позволяет создавать образы виртуальных
 
 Используйте утилиту `qemu-img`:
 
-1. Установите `qemu-img`, если этого не сделано ранее:
+1. Установите `qemu-img`, если это не сделано ранее:
 
     <tabs>
     <tablist>
@@ -65,7 +68,15 @@ Packer позволяет создавать образы виртуальных
         export NETWORK_ID=f19e1e54-bce9-4c25-XXXX-e0f40e2cff14
         ```
 
-1. Создайте файл `altlinux.pkr.hcl`:
+1. Выберите желаемый шаблон конфигурации для нового образа ВМ. В примере — `STD3-2-6`.
+
+    <info>
+
+    Актуальные шаблоны конфигурации представлены на [странице создания ВМ](https://msk.cloud.vk.com/app/services/infra/servers/add) личного кабинета VK Cloud в списке **Тип виртуальной машины**.
+
+    </info>
+
+1. Создайте файл `altlinux.pkr.hcl`. Укажите имя выбранного шаблона конфигурации в параметре `flavor`.
 
     <details>
         <summary>altlinux.pkr.hcl</summary>
@@ -155,20 +166,10 @@ Packer позволяет создавать образы виртуальных
 
     ```bash
     openstack image set \
-    --property hw_video_model='qxl' \
-    --property hw_watchdog_action='reset' \
-    --property hw_vif_multiqueue_enabled='true' \
-    --property hw_qemu_guest_agent='yes' \
-    --property os_require_quiesce='yes' \
-    --property mcs_name='Alt Linux P9 Starter Kit' \
-    --property mcs_os_distro='debian' \
-    --property mcs_os_type='linux' \
-    --property mcs_os_version='P9' \
-    --property os_admin_user='altlinux' \
-    --property os_distro='altlinux-p9' \
-    --property os_type='linux' \
-    --property os_version='p9' \
-    c6320138-035f-40d8-XXXX-e814edb2ce5f
+        --property hw_qemu_guest_agent=True \
+        --property os_require_quiesce=yes \
+        --property mcs_name='Alt Linux P9 Starter Kit' \
+        c6320138-035f-40d8-XXXX-e814edb2ce5f
     ```
 
 1. Убедитесь, что образ корректно отображается.
@@ -209,7 +210,7 @@ Packer позволяет создавать образы виртуальных
     | min_ram          | 0                                                    |
     | name             | Alt-Linux-P9-Starter-Kit                             |
     | owner            | b5b7ffd4ef0547e5b222f44555dfXXXX                     |
-    | properties       | base_image_ref='1a8aa332-d8ef-4c40-XXXX-cade8b59aea3', boot_roles='mcs_owner', direct_url='s3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', hw_qemu_guest_agent='True', hw_video_model='qxl', hw_vif_multiqueue_enabled='True', hw_watchdog_action='reset', image_location='snapshot', image_state='available', image_type='image', instance_uuid='f19e1e54-bce9-4c25-XXXX-e0f40e2cff14', is_ephemeral_root='True', locations='[{'url': 's3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', 'metadata': {}}]', mcs_name='Alt Linux P9 Starter Kit', mcs_os_distro='debian', mcs_os_type='linux', mcs_os_version='P9', os_admin_user='altlinux', os_distro='altlinux-p9', os_require_quiesce='True', os_type='linux', os_version='p9', owner_project_name='mcsXXXX', owner_specified.openstack.md5='XXXX', owner_specified.openstack.object='images/alt-p9-cloud-x86_64', owner_specified.openstack.sha256='XXXX', owner_user_name='test@vk.team', self='/v2/images/c6320138-035f-40d8-XXXX-e814edb2ce5f', store='s3', user_id='5f48556ef89444dbab8fa82669dXXXX' |
+    | properties       | base_image_ref='1a8aa332-d8ef-4c40-XXXX-cade8b59aea3', boot_roles='mcs_owner', direct_url='s3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', hw_qemu_guest_agent='True', image_location='snapshot', image_state='available', image_type='image', instance_uuid='f19e1e54-bce9-4c25-XXXX-e0f40e2cff14', is_ephemeral_root='True', locations='[{'url': 's3://user:key@h-int.icebox.q/images-b5b7ffd4ef0547e5b222f44555dfXXXX/c6320138-035f-40d8-XXXX-e814edb2ce5f', 'metadata': {}}]', mcs_name='Alt Linux P9 Starter Kit', os_require_quiesce='True', owner_project_name='mcsXXXX', owner_specified.openstack.md5='XXXX', owner_specified.openstack.object='images/alt-p9-cloud-x86_64', owner_specified.openstack.sha256='XXXX', owner_user_name='test@vk.team', self='/v2/images/c6320138-035f-40d8-XXXX-e814edb2ce5f', store='s3', user_id='5f48556ef89444dbab8fa82669dXXXX' |
     | protected        | False                                                |
     | schema           | /v2/schemas/image                                    |
     | size             | 1653604352                                           |
