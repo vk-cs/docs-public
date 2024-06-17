@@ -1,6 +1,6 @@
 <info>
 
-Список поддерживаемых ОС Windows для миграции перечислен в разделе [Операционная система](../../concepts/about#operacionnaya_sistema).
+Список поддерживаемых ОС Windows для миграции приведен в разделе [Операционная система](../../concepts/about#operacionnaya_sistema).
 
 </info>
 
@@ -95,8 +95,8 @@
     ```ini
     wim_file_path=D:\Temp\install.wim
     image_name=Windows Server 2016 SERVERSTANDARDCORE
-    image_path=D:\Win_Server_2016_img.qcow2
-    virtual_disk_format=QCOW2
+    image_path=D:\Win_Server_2016_img.raw
+    virtual_disk_format=RAW
     image_type=KVM
     external_switch=external
     virtio_iso_path="D:\Drivers\virtio.iso"
@@ -104,7 +104,6 @@
     install_qemu_ga=True
     install_updates=True
     purge_updates=False
-    compress_qcow2=True
     ```
 
     Здесь:
@@ -120,15 +119,29 @@
     New-WindowsOnlineImage -ConfigFilePath $ConfigFilePath
     ```
 
-1. Дождитесь завершения выполнения операции и убедитесь, что файл `D:\Win_Server_2016_img.qcow2` создан.
+1. Дождитесь завершения выполнения операции и убедитесь, что файл `D:\Win_Server_2016_img.raw` создан.
 
 ## 4. Импортируйте образ в облако VK Cloud
 
 [Воспользуйтесь CLI](../../service-management/images/images-manage#import_obraza) для импорта образа:
 
 ```bash
-openstack image create --private --container-format bare --disk-format qcow2 --file D:\Win_Server_2016_img.qcow2 --property hw_qemu_guest_agent=yes --property store=s3 --property min_ram=2048 --property os_require_quiesce=yes --property min_disk=40 --property os_type=windows --property os_admin_user=Administrator --property mcs:lic:mswinsrv=true --property mcs_name='Windows Server 2016 Standard (en)' --property mcs_os_distro='server' --property mcs_os_edition='std' --property mcs_os_type='windows' --property mcs_os_lang='en' --property mcs_os_type='windows' --property mcs_os_version='2016' --property os_distro='win2k16' <Наименование образа>
+openstack image create \
+    --progress \
+    --private \
+    --container-format bare \
+    --disk-format raw \
+    --file D:\Win_Server_2016_img.raw \
+    --property store=s3 \
+    --property hw_qemu_guest_agent=True \
+    --property os_require_quiesce=yes \
+    --property mcs:lic:mswinsrv=true \
+    --property mcs_name='Windows Server 2016 Standard (en)' \
+    --property os_admin_user='Admin' \
+    --property os_type=windows \
+    <Наименование образа>
 ```
+Здесь аргументы вида `--property <ключ>=<значение>` используются для присвоения образу [метатегов](/ru/computing/iaas/service-management/images/image-metadata).
 
 Дождитесь завершения операции. После загрузки образа появится возможность [создавать ВМ](../../service-management/vm/vm-create/) стандартными средствами платформы VK Cloud.
 
