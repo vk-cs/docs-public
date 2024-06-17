@@ -1,13 +1,13 @@
-Образ может иметь метатеги, влияющие на конфигурацию виртуальной машины и гостевой операционной системы. Метатеги задаются при редактировании образа.
+Образ может иметь метатеги, влияющие на конфигурацию виртуальной машины и гостевой операционной системы. Метатеги задаются при создании или редактировании образа.
 
 ## Поддерживаемые метатеги образов
 
-Теги образов ВМ делятся на:
+Виды метатегов образов ВМ:
 
 - `os_*`: настройки гостевой операционной системы (ОС);
 - `hw_*`: настройки виртуальной машины;
 - `mcs_*`: свойства ВМ, используемые для сортировки в личном кабинете VK Cloud;
-- остальные теги, влияющие на работу с образом.
+- остальные метатеги, влияющие на работу с образом.
 
 | Имя | Описание | Значение по умолчанию |
 | --- | -------- | --- |
@@ -29,7 +29,7 @@
 <details>
    <summary>Таблица со значениями</summary>
 
-   | Short ID             | Name                                      | Version  | ID |
+   | Short ID             | Name                                      | Version  | Ссылка на сайт |
    |----------------------|-------------------------------------------|----------|----------------------------------------|
    | alpinelinux3.5       | Alpine Linux 3.5                          | 3.5      | http://alpinelinux.org/alpinelinux/3.5 |
    | alpinelinux3.6       | Alpine Linux 3.6                          | 3.6      | http://alpinelinux.org/alpinelinux/3.6 |
@@ -413,7 +413,13 @@
 </tablist>
 <tabpanel>
 
-1. Получите `ID` образа:
+1. Получите `ID` образа из списка:
+
+   ```bash
+   openstack image list
+   ```
+
+1. Получите подробную информацию о нужном образе:
 
    ```bash
    openstack image show <ID образа>
@@ -424,7 +430,7 @@
 2. Задайте метатег:
 
    ```bash
-   openstack image set --property <имя и значение тега> <ID образа>
+   openstack image set --property <имя метатега>=<значение> <ID образа>
    ```
 
 </tabpanel>
@@ -444,13 +450,13 @@
   4. Установите метатеги:
   
      ```shell
-     openstack image set --property <имя и значение тега> <ID образа>
+     openstack image set --property <имя метатега>=<значение> <ID образа>
      ```
   
      Пример:
   
      ```shell
-     openstack image set --property os_type="windows" --property os_distro="win2k16" --property os_require_quiesce="yes" --property hw_vif_model="virtio" 7c81ffd7-199d-4428-8767-8120fa1b3aae
+     openstack image set --property os_type="windows" --property os_distro="win2k16" --property os_require_quiesce="yes" --property hw_vif_model="virtio" <ID образа>
      ```
   
   5. Проверьте информацию об образе:
@@ -475,18 +481,24 @@
 </tablist>
 <tabpanel>
 
-1. Получите `ID` образа:
+1. Получите `ID` образа из списка:
+
+   ```bash
+   openstack image list
+   ```
+
+1. Получите подробную информацию о нужном образе:
 
    ```bash
    openstack image show <ID образа>
    ```
 
-   Присвоенные метатеги отображаются в строке `tags`.
+   Присвоенные метатеги отображаются в строке `properties`.
 
 2. Удалите метатег:
 
    ```bash
-   openstack image unset --property <имя и значение тега> <ID образа>
+   openstack image unset --property <имя метатега> <ID образа>
    ```
 
 </tabpanel>
