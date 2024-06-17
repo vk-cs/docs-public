@@ -10245,6 +10245,21 @@
     ]
   },
   {
+    "uuid": "6f909d36-bbbd-4aab-ace9-07b827095765",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/computing/iaas/how-to-guides/linux-image",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/how-to-guides/linux-image/linux-image.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/how-to-guides/linux-image/linux-image.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "801c5487-10e7-45b2-8e75-0646b4a4235a",
     "lang": "ru",
     "type": "ARTICLE",
@@ -10252,6 +10267,21 @@
     "partialPath": "/ru/computing/iaas/how-to-guides/packer",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/how-to-guides/packer/packer.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/how-to-guides/packer/packer.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "c084e2f8-4d10-45c0-9470-cb01cc390a75",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/computing/iaas/how-to-guides/diskimage-builder",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/how-to-guides/diskimage-builder/diskimage-builder.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/how-to-guides/diskimage-builder/diskimage-builder.md",
     "variables": {},
     "hidden": false,
     "version": null,
