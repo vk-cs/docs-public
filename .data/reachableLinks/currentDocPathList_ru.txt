@@ -85,7 +85,9 @@
 /docs/ru/computing/iaas/how-to-guides/managing-node
 /docs/ru/computing/iaas/how-to-guides/vm-multiqueue
 /docs/ru/computing/iaas/how-to-guides/win-image
+/docs/ru/computing/iaas/how-to-guides/linux-image
 /docs/ru/computing/iaas/how-to-guides/packer
+/docs/ru/computing/iaas/how-to-guides/diskimage-builder
 /docs/ru/computing/iaas/tariffication
 /docs/ru/computing/iaas/troubleshooting
 /docs/ru/computing/iaas/troubleshooting/linux-vm-network

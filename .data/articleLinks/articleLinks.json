@@ -9901,11 +9901,31 @@
   ],
   [
     "/ru/computing/iaas/how-to-guides/win-image",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/images/image-metadata"
+  ],
+  [
+    "/ru/computing/iaas/how-to-guides/win-image",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create"
   ],
   [
     "/ru/computing/iaas/how-to-guides/win-image",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/images/images-manage#udalenie_obraza"
+  ],
+  [
+    "/ru/computing/iaas/how-to-guides/linux-image",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
+  ],
+  [
+    "/ru/computing/iaas/how-to-guides/linux-image",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/images/image-metadata"
+  ],
+  [
+    "/ru/computing/iaas/how-to-guides/linux-image",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/images/images-manage#udalenie_obraza"
+  ],
+  [
+    "/ru/computing/iaas/how-to-guides/packer",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
   ],
   [
     "/ru/computing/iaas/how-to-guides/packer",
@@ -9925,6 +9945,18 @@
   ],
   [
     "/ru/computing/iaas/how-to-guides/packer",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/images/images-manage#udalenie_obraza"
+  ],
+  [
+    "/ru/computing/iaas/how-to-guides/diskimage-builder",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
+  ],
+  [
+    "/ru/computing/iaas/how-to-guides/diskimage-builder",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/images/image-metadata"
+  ],
+  [
+    "/ru/computing/iaas/how-to-guides/diskimage-builder",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/images/images-manage#udalenie_obraza"
   ],
   [
@@ -10105,15 +10137,7 @@
   ],
   [
     "/ru/computing/cloud-desktops/concepts/desktop-image",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/images/images-manage#sozdanie_obraza"
-  ],
-  [
-    "/ru/computing/cloud-desktops/concepts/desktop-image",
-    "http://localhost:3000/docs/ru/computing/iaas/how-to-guides/win-image"
-  ],
-  [
-    "/ru/computing/cloud-desktops/concepts/desktop-image",
-    "http://localhost:3000/docs/ru/computing/iaas/how-to-guides/packer"
+    "http://localhost:3000/docs/ru/computing/iaas/how-to-guides"
   ],
   [
     "/ru/computing/cloud-desktops/concepts/desktop-image",
