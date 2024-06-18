@@ -99,7 +99,7 @@ More about templates in [Gatekeeper documentation](https://open-policy-agent.git
 
 To use Gatekeeper:
 
-1. Create a constraint template manifest with the desired rules and input parameter checks.
+1. Create a constraint template manifest with the required rules and input parameter checks.
 1. Create a constraint template resource based on the manifest.
 1. Create a constraint manifest based on the created constraint template. Set the scope and parameters in the constraint.
 

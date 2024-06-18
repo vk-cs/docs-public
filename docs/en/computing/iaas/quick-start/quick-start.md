@@ -122,7 +122,7 @@ In Windows 7/8, use the PuTTY application to connect via SSH.
 2. Launch the PuTTYgen app that comes with the package:
 
    1. In the **Conversions** menu choose **Import Key** and specify the available key `.pem`.
-   2. Click the **Save private key** button, select the directory and specify the desired key name `.ppk`.
+   2. Click the **Save private key** button, select the directory and specify the required key name `.ppk`.
 
 3. Launch the Pageant app that comes with the package:
 

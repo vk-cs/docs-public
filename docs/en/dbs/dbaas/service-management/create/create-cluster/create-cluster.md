@@ -13,7 +13,7 @@
 1. On the “Configuration” step:
 
    1. Select the `OpenSearch` database type.
-   1. Select the desired OpenSearch version, for example, `2`.
+   1. Select the required OpenSearch version, for example, `2`.
    1. Click the **Next step** button.
 
 1. On the “Parameters” step:
@@ -24,7 +24,7 @@
 
         Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 
-      - **Network**: the network where the cluster will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
+      - **Network**: the network where the cluster will be hosted. If the required network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
       - **SSH access key**: select an existing key or create a new one.
 
         The key is used to [connect to instance hosts via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
@@ -199,7 +199,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 1. On the “Configuration” step:
 
    1. Select one of the database types: `MySQL`, `PostgreSQL`, `PostgresPro Enterprise` or `PostgresPro Enterprise 1C`.
-   1. Select the desired version.
+   1. Select the required version.
    1. Select the configuration **Cluster**.
    1. Click the **Next step** button.
 
@@ -227,7 +227,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
       - **Enable volume autoscaling**: select this option so that the disk size increases automatically when the disk is filled with data. When selecting this option, also specify **The maximum volume size, GB**.
 
-      - **Network**: the network where the cluster will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
+      - **Network**: the network where the cluster will be hosted. If the required network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
 
       - **Assign an external IP:** select this option to assign a floating IP address to the cluster.
 
@@ -355,7 +355,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 1. On the “Configuration” step:
 
    1. Select the `Tarantool` database type.
-   1. Select the desired version.
+   1. Select the required version.
    1. Select the configuration **Cluster**.
    1. Click the **Next step** button.
 
@@ -381,7 +381,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         The larger the disk size, the higher its performance in some disk operations.
 
-      - **Network**: the network where the cluster will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
+      - **Network**: the network where the cluster will be hosted. If the required network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
 
       - **Assign external IP:** select this option to assign a floating IP address to cluster hosts.
 
@@ -445,8 +445,8 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 1. Click the **Create database** or **Add** button.
 1. On the “Configuration” step:
 
-   1. Select the desired database type.
-   1. Select the desired version.
+   1. Select the required database type.
+   1. Select the required version.
    1. Select the configuration **Cluster**.
    1. Click the **Next step** button.
 
@@ -461,7 +461,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         Cluster node names will consist of the specified name and a suffix. The suffix will be different for different DBMS.
 
-      - **Network**: the network where the cluster will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
+      - **Network**: the network where the cluster will be hosted. If the required network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
 
       - **Assign external IP:** select this option to assign a floating IP address:
 

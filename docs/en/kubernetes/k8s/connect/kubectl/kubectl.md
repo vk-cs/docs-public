@@ -274,7 +274,7 @@ On the host from which you plan to connect to the cluster:
    1. Go to [personal account](https://msk.cloud.vk.com/app/) VK Cloud under the account of the user who will connect to the cluster.
    1. Select the project where the necessary cluster is located.
    1. Go to **Containers → Kubernetes Clusters**.
-   1. Expand the menu of the necessary cluster and select **Get Kubeconfig to access the cluster**.
+   1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Get Kubeconfig to access the cluster**.
 
    Such a file is automatically created for each new cluster and is named in the format `<cluster name>_kubeconfig.yaml`.
 

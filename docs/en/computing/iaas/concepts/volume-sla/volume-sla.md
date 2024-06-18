@@ -140,7 +140,7 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
       fsutil file createnew C:\temp\test.bin 10485760000
       ```
 
-   3. [Download the utility](https://github.com/microsoft/diskspd/releases/latest) and unpack to the desired directory.
+   3. [Download the utility](https://github.com/microsoft/diskspd/releases/latest) and unpack to the required directory.
    4. Go to the `amd64` directory of the unpacked utility.
    5. Run the command `diskspd` with parameters corresponding to the type of test:
 

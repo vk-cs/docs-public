@@ -76,11 +76,9 @@ The created backup plan will appear in the list. Read more about working with pl
    - Via the VM context menu:
 
       1. Go to **Cloud Computing → Virtual machines**.
-      2. In the list of virtual machines, find the VM for which you want to create a backup.
-      3. Expand the context menu of this VM.
-      4. Click **Create backup**.
-      5. If necessary, enter a **Comments**.
-      6. Click **Create backup**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the VM for which you want to create a backup, and select **Create backup**.
+      1. If necessary, enter **Comments**.
+      1. Click **Create backup**.
 
    - On the virtual machine page:
 

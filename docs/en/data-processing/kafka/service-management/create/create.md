@@ -33,15 +33,15 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
    1. Select the Kubernetes cluster. A [worker node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) will be added to this [Cloud Containers](/en/kubernetes/k8s) cluster to host an instance of Cloud Kafka.
 
-      If the desired cluster is not in the list:
+      If the required cluster is not in the list:
 
       1. Choose **Создать новый кластер** option.
       1. Select the network and subnet for the cluster from the drop-down list **Network**.
 
-         If the desired network is not in the list:
+         If the required network is not in the list:
 
          1. Choose **Create new network** option.
-         1. Select the desired [SDN](/en/networks/vnet/concepts/architecture#sdns_used): **Neutron** or **Sprut**.
+         1. Select the required [SDN](/en/networks/vnet/concepts/architecture#sdns_used): **Neutron** or **Sprut**.
          1. Enter the subnet address, for example, `10.0.1.0/24`.
 
    1. Select [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) where the Cloud Containers cluster node will be located.
@@ -86,7 +86,7 @@ You can create an instance of Cloud Kafka in one of two configurations:
 1. At the “Configuration” step:
 
    1. Select the type of service **Kafka**.
-   1. Select the desired version of the service.
+   1. Select the required version of the service.
    1. Select the configuration **Cluster**.
    1. Click the **Next step** button.
 
@@ -95,15 +95,15 @@ You can create an instance of Cloud Kafka in one of two configurations:
    1. Specify the name and the description for the instance.
    1. Select the Kubernetes cluster. A [worker node](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) will be added to this [Cloud Containers](/en/kubernetes/k8s) cluster to host an instance of Cloud Kafka.
 
-      If the desired cluster is not in the list:
+      If the required cluster is not in the list:
 
       1. Choose **Создать новый кластер** option.
       1. Select the network and subnet for the cluster from the drop-down list **Network**.
 
-         If the desired network is not in the list:
+         If the required network is not in the list:
 
          1. Choose **Create new network** option.
-         1. Select the desired [SDN](/en/networks/vnet/concepts/architecture#sdns_used): **Neutron** or **Sprut**.
+         1. Select the required [SDN](/en/networks/vnet/concepts/architecture#sdns_used): **Neutron** or **Sprut**.
          1. Set the subnet address, for example, `10.0.1.0/24`.
 
    1. Select [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) where the Cloud Containers cluster node will be located.

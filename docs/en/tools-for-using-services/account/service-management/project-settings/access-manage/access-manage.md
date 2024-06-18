@@ -103,7 +103,7 @@ Only the project owner can assign another role to the superadministrator.
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
-1. Expand the menu of the desired project member and select **Edit**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required project member and select **Edit**.
 1. In the window that opens, specify the list of new roles in the field **User role**.
 
     At least one role should remain in the list.
@@ -133,7 +133,7 @@ This is a group operation: if necessary, you can delete several members at once 
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
-1. Expand the menu of the desired project member and select **Delete**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required project member and select **Delete**.
 1. Confirm the deletion.
 
 </tabpanel>

@@ -4,7 +4,7 @@ This is a group operation: you can delete several instances at once by selecting
 1. Go to **ML Platform → Instances**.
 1. Delete the instance in one of the following ways:
 
-    - Expand the instance menu and select **Delete**.
+    - Click ![ ](/en/assets/more-icon.svg "inline") for the instance and select **Delete**.
     - Select the instance using the checkbox, then click the **Delete** button above the table.
 1. Confirm the deletion.
 

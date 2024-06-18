@@ -58,7 +58,7 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
 1. Open the router editing window by one of the following ways:
 
    - Click the name of the router and then click the **Edit button** on the **General information** tab.
-   - Expand the router menu and select **Edit router**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the router and select **Edit router**.
 
 1. You can do the following:
 

@@ -13,7 +13,7 @@ To control access through the client ID and secret key, the [Vision API page](ht
 
 ### Access via service token
 
-To generate a service token, click the button and select the desired scope:
+To generate a service token, click the button and select the required scope:
 
 1. Click the Add Service Token button.
 2. Select the required scope.

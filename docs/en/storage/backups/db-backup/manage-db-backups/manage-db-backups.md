@@ -13,7 +13,7 @@ In addition to automatic backups, you can create database backups manually in yo
 <tabpanel>
 
 1. Go to **Databases** → **Database Instances**.
-1. In the DB instance menu, select the option **Create backup**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the DB instance and select **Create backup**.
 1. In the window that opens, specify a comment if necessary and click **Create a backup**.
 
 </tabpanel>
@@ -63,7 +63,7 @@ A list of recovery points for the selected backup will be displayed.
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Databases** → **Backup**.
 1. Go to the **Manual** tab.
-1. Expand the menu of the desired backup and select the **Delete** option.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required backup and select the **Delete** option.
 1. In the window that appears, confirm the operation.
 
 </tabpanel>

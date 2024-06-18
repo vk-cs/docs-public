@@ -17,7 +17,7 @@ To view the network topology of an individual project:
 
 Available network topology operations:
 
-- *Move*. Use the arrows in the upper right corner or hold the left mouse button and move the diagram in the desired direction.
+- *Move*. Use the arrows in the upper right corner or hold the left mouse button and move the diagram in the required direction.
 - *Scaling*. Use **+** and **-** in the upper right corner of the diagram or scroll with the mouse wheel.
 - *Hide or show signatures*. Use the **Show labels** switch in the upper left corner of the diagram.
 - *View item details*. Click on the schematic element with the left mouse button. Options will be displayed:

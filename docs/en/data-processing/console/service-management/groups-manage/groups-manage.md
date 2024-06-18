@@ -44,7 +44,7 @@
 1. Go to the **Groups** tab.
 1. Open the group editing page by one of the following ways:
 
-    - Open the menu of the group and select **Edit**.
+    - Click ![ ](/en/assets/more-icon.svg "inline") for the group and select **Edit**.
     - On the group page:
 
         1. Click on the name of the group.
@@ -87,7 +87,7 @@ This is a group operation: you can delete several groups at once by selecting th
 1. Go to the **Groups** tab.
 1. Delete the group using one of the following methods:
 
-    - Open the menu of the group and select **Delete**.
+    - Click ![ ](/en/assets/more-icon.svg "inline") for the group and select **Delete**.
     - Click on the name of the group and then open the menu above the table and select **Delete group**.
 
 1. Confirm the deletion.

@@ -476,7 +476,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
         </info>
 
-      If the desired resource records are not present, wait a few more minutes. ExternalDNS will start creating resource records after the service has been assigned an IP address. This will take some time.
+      If the required resource records are not present, wait a few more minutes. ExternalDNS will start creating resource records after the service has been assigned an IP address. This will take some time.
 
 1. Check that the application is accessible by domain name. To do this, go to `http://tea.example.com` in your browser.
 
@@ -691,7 +691,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
 
         These TXT records are service records used by ExternalDNS to track the status of the `cafe-ingress` CNAME record created for Ingress.
 
-      If the desired resource records are not present, wait a few more minutes. ExternalDNS will begin creating resource records after the Ingress resource has been assigned an IP address. This will take some time.
+      If the required resource records are not present, wait a few more minutes. ExternalDNS will begin creating resource records after the Ingress resource has been assigned an IP address. This will take some time.
 
 1.  Verify that the application is accessible by domain name. To do this, go to `http://cafe.example.com/coffee` in your browser.
 

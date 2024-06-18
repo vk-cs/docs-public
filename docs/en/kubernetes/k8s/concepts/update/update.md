@@ -1,6 +1,6 @@
 For Kubernetes clusters with version 1.17.8 and higher, a Kubernetes version update operation to one of [supported versions](../versions/version-support/) is available in VK Cloud. You cannot downgrade versions.
 
-Clusters of versions 1.16 and lower can only be updated by transferring a backup of data to a new cluster of the desired version, for example, using [Velero](https://velero.io/docs).
+Clusters of versions 1.16 and lower can only be updated by transferring a backup of data to a new cluster of the required version, for example, using [Velero](https://velero.io/docs).
 
 During a cluster update the following entities also are updated:
 

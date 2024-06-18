@@ -80,7 +80,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
-   1. Click on the name of the desired cluster.
+   1. Click on the name of the required cluster.
    1. Go to **Addons** tab.
    1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
    1. Click the **Install addon** button on the `docker-registry` add-on card.
@@ -109,7 +109,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
       - [Get](../../manage-addons#addons_available_for_installation) list of add-ons available for installation.
       - Get the add-on settings from the `configuration_values` parameter using the data source [vcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md).
-      - (Optional) To dynamically change the add-on parameters (for example, via CI), add the add-on settings to a separate yaml file. Use the [templatefile](https://developer.hashicorp.com/terraform/language/functions/templatefile) function to add the desired values.
+      - (Optional) To dynamically change the add-on parameters (for example, via CI), add the add-on settings to a separate yaml file. Use the [templatefile](https://developer.hashicorp.com/terraform/language/functions/templatefile) function to add the required values.
 
       <details>
          <summary>Example of specifying an add-on</summary>
@@ -192,7 +192,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
-   1. Click on the name of the desired cluster.
+   1. Click on the name of the required cluster.
    1. Go to **Addons** tab.
    1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
    1. Click the **Install addon** button on the `docker-registry` add-on card.
