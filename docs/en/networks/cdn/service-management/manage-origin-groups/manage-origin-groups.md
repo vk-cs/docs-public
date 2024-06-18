@@ -59,7 +59,7 @@ A list of origin groups will be displayed.
 1. Open the group editing page by one of the following ways:
 
    - Click the name of the group you need.
-   - Click ![menu-icon](/en/assets/menu-icon.svg "inline") for the group you need and select **Group settings**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the required group and select **Group settings**.
 
 {include(/en/_includes/_cdn_origin.md)[tags=add]}
 
@@ -82,7 +82,7 @@ A list of origin groups will be displayed.
 1. Open the group editing page by one of the following ways:
 
    - Click the name of the group you need.
-   - Click ![menu-icon](/en/assets/menu-icon.svg "inline") for the group you need and select **Group settings**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the required group and select **Group settings**.
 
 1. (Optional) Use the toggle to the right from the origin to enable or disable it. You cannot disable `Active` origin if it is the only enabled origin in the group. The disabled origin will not answer requests of CDN servers.
 
@@ -121,7 +121,7 @@ A list of origin groups will be displayed.
 1. Open the group editing page by one of the following ways:
 
    - Click the name of the group you need.
-   - Click ![menu-icon](/en/assets/menu-icon.svg "inline") for the group you need and select **Group settings**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the required group and select **Group settings**.
 
 1. (Optional) Edit the group name.
 1. (Optional) [Add](#adding_origin_to_group) one or more origins.
@@ -163,7 +163,7 @@ This is a group operation: you can delete several groups at once by setting the 
 1. Delete the orgin group with one of the following ways:
 
    - Set the checkbox for the required group, then click **Delete** above the table.
-   - Click ![menu-icon](/en/assets/menu-icon.svg "inline") for the group you need and select **Delete group**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the required group and select **Delete group**.
 1. Confirm the deletion.
 
 </tabpanel>

@@ -34,7 +34,7 @@ This is a group operation: you can delete several routes at once by selecting th
 1. Open the **Static routes** tab.
 1. Delete the route in one of the following ways:
 
-    - Expand the route menu and select **Delete static route**.
+    - Click ![ ](/en/assets/more-icon.svg "inline") for the route and select **Delete static route**.
     - Set the checkbox for the required route, then click the **Delete** button above the table.
 1. Confirm the deletion.
 

@@ -1,6 +1,6 @@
 A [persistent volume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) (PV) provides long-term data storage capabilities for Kubernetes clusters. Data stored on a PV is not lost when an individual container or entire pod fails.
 
-[Workloads](https://kubernetes.io/docs/concepts/workloads/) cannot use PV directly. A [Persistent Volume Claim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#introduction) (PVC) should be created, which allows you to request a persistent volume with the desired parameters and then use it in workloads. The most common parameters that can be specified in a PVC are:
+[Workloads](https://kubernetes.io/docs/concepts/workloads/) cannot use PV directly. A [Persistent Volume Claim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#introduction) (PVC) should be created, which allows you to request a persistent volume with the required parameters and then use it in workloads. The most common parameters that can be specified in a PVC are:
 
 - Storage size (`spec.resources.requests.storage`).
 - Volume access mode (`spec.accessModes`).

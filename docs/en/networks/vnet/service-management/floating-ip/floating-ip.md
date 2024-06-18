@@ -77,7 +77,7 @@ A floating IP address is randomly assigned from a shared pool.
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Select the project where the necessary IP address is located.
 1. Go to **Virtual networks** → **Floating IP**.
-1. Expand the menu of the necessary floating IP address and select **Edit description**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required floating IP address and select **Edit description**.
 1. Set the description.
 1. Click the **Save** button.
 
@@ -109,7 +109,7 @@ A floating IP address is randomly assigned from a shared pool.
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Select the project where the necessary IP address is located.
 1. Go to **Virtual networks** → **Floating IP**.
-1. Expand the menu of the floating IP address, for which the **Internal IP** column shows `Unbinded', and select **Bind IP**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the floating IP address, for which the **Internal IP** column shows `Unbinded', and select **Bind IP**.
 
    <info>
 
@@ -150,7 +150,7 @@ A floating IP address is randomly assigned from a shared pool.
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Select the project where the necessary IP address is located.
 1. Go to **Virtual networks** → **Floating IP**.
-1. Expand the menu of the floating IP address that is bound to the internal IP and select **Unbind IP**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the floating IP address that is bound to the internal IP and select **Unbind IP**.
 1. Click the **Confirm** button.
 
 </tabpanel>
@@ -181,7 +181,7 @@ A floating IP address is randomly assigned from a shared pool.
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Select the project where the necessary IP address is located.
 1. Go to **Virtual networks** → **Floating IP**.
-1. Expand the menu of the necessary floating IP address and select **Remove IP from the project**. To remove multiple IPs at once, select them using the checkboxes and click **Remove IP from project**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required floating IP address and select **Remove IP from the project**. To remove multiple IPs at once, select them using the checkboxes and click **Remove IP from project**.
 1. Click the **Confirm** button.
 
 </tabpanel>

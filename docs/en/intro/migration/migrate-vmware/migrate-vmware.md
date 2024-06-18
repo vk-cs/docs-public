@@ -77,7 +77,7 @@ To migrate a VM with UEFI emulation, use [Hystax](/en/additionals/hystax/migrati
 
    </info>
 
-2. Select the desired VM and export to the format `.ovf`.
+2. Select the required VM and export to the format `.ovf`.
 
 Several `.ovf` and `.vmdk` files will be created — a second file will be needed for further work.
 

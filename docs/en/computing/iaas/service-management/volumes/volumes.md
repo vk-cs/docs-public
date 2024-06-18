@@ -13,7 +13,7 @@ Creating HDD and SSD drives is available by default in all configurations. To cr
 <tabpanel>
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
-2. Open the page with the desired list of disks.
+2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
 
@@ -32,7 +32,7 @@ Creating HDD and SSD drives is available by default in all configurations. To cr
       - **Empty disk**: fill in the parameters **Disk Type** and **Availability zone**.
       - **Disk snapshot**: in the **List of snapshots** field, select the snapshot from which you want to create a disk.
       - **Disk image**: fill in the parameters **Disk Type**, **Availability zone** and **Disk image**.
-      - **Disk**: in the **Cloning disk** field, select the desired disk.
+      - **Disk**: in the **Cloning disk** field, select the required disk.
 
    - **Size**: specify the disk size in gigabytes.
    - **Boot disk**: enable the option if you need to make the disk bootable.
@@ -101,7 +101,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 <tabpanel>
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
-2. Open the page with the desired list of disks.
+2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
 
@@ -115,8 +115,8 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
    - Via the disk context menu:
 
-      1. Expand the disk context menu.
-      2. Click the **Change disk size**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the disk.
+      2. Select **Change disk size**.
 
    - On the disk page:
 
@@ -202,7 +202,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 <tabpanel>
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
-2. Open the page with the desired list of disks.
+2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
    - Disks of a specific virtual machine:
@@ -215,8 +215,8 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
    - Via the disk context menu:
 
-      1. Expand the disk context menu.
-      2. Click the **Clone disk**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the disk.
+      2. Select **Clone disk**.
 
    - On the disk page:
 
@@ -233,7 +233,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 1. [Define](../../concepts/about#disks_types_b7c586e):
 
-   - the desired type of disk;
+   - the required type of disk;
    - its name in the API;
    - an accessibility zone suitable for accommodation.
 
@@ -243,7 +243,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
    openstack volume type list
    ```
 
-1. View the availability zones and copy the name of the desired zone:
+1. View the availability zones and copy the name of the required zone:
 
    ```bash
    openstack availability zone list --volume
@@ -272,7 +272,7 @@ Creating HDD and SSD drives is available by default in all configurations. To us
 <tabpanel>
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
-2. Open the page with the desired list of disks.
+2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
 
@@ -286,8 +286,8 @@ Creating HDD and SSD drives is available by default in all configurations. To us
 
    - Via the disk context menu:
 
-      1. Expand the disk context menu.
-      2. Click **Change disk type**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the disk.
+      2. Select **Change disk type**.
 
    - On the disk page:
 
@@ -348,7 +348,7 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 <tabpanel>
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
-2. Open the page with the desired list of disks.
+2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
 
@@ -362,8 +362,8 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 
    - Via the disk context menu:
 
-      1. Expand the disk context menu.
-      2. Click the **Make bootable** (**Make it non-bootable**).
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the disk.
+      2. Select **Make bootable** (**Make it non-bootable**).
 
    - On the disk page:
 
@@ -420,8 +420,8 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 
    - Via the disk context menu:
 
-      1. Expand the disk context menu.
-      2. Click the **Connect to instance**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the disk.
+      2. Select **Connect to instance**.
 
    - On the disk page:
 
@@ -483,7 +483,7 @@ To disable the VM's main (root) disk, use the option [Replacing the root disk](#
 <tabpanel>
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
-2. Open the page with the desired list of disks.
+2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
 
@@ -497,8 +497,8 @@ To disable the VM's main (root) disk, use the option [Replacing the root disk](#
 
    - Via the disk context menu:
 
-      1. Expand the disk context menu.
-      2. Click **Disconnect from instance**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the disk.
+      2. Select **Disconnect from instance**.
 
    - On the disk page:
 
@@ -557,7 +557,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. [Disconnect from VM](#disconnecting_a_disk_from_a_vm) the disk that will be used to replace the main one.
 3. [Clone](#cloning_disk) the target disk if necessary.
-4. Open the page with the desired list of disks.
+4. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
 
@@ -571,8 +571,8 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 
    - Via the disk context menu:
 
-      1. Expand the disk context menu.
-      2. Click **Replace root disk**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the disk.
+      2. Select **Replace root disk**.
 
    - On the disk page:
 
@@ -584,7 +584,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 
    <warn>
 
-   If the desired disk is not in the list, check that it is [disconnected from the VM](#disconnecting_a_disk_from_a_vm).
+   If the required disk is not in the list, check that it is [disconnected from the VM](#disconnecting_a_disk_from_a_vm).
 
    </warn>
 
@@ -714,7 +714,7 @@ When you delete a disk, all its snapshots will be deleted.
 <tabpanel>
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
-2. Open the page with the desired list of disks.
+2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
 
@@ -733,8 +733,8 @@ When you delete a disk, all its snapshots will be deleted.
 
    - Via the disk context menu:
 
-      1. Expand the disk context menu.
-      2. Click **Delete disk**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the disk.
+      2. Select **Delete disk**.
 
    - On the disk page:
 
@@ -779,7 +779,7 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 <tabpanel>
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
-2. Open the page with the desired list of disks.
+2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
 
@@ -793,8 +793,8 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 
    - Via the disk context menu:
 
-      1. Expand the disk context menu.
-      2. Click **Create snapshot**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the disk.
+      2. Select **Create snapshot**.
 
    - On the disk page:
 
@@ -821,7 +821,7 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
    openstack volume list
    ```
 
-3. Copy the ID of the desired disk.
+3. Copy the ID of the required disk.
 
 4. Create a disk snapshot.
 
@@ -852,7 +852,7 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 <tabpanel>
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
-2. Open the page with the desired list of disks.
+2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
 
@@ -866,15 +866,15 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 
    - Via the disk context menu:
 
-      1. Expand the disk context menu.
-      2. Click **List of snapshots**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the disk.
+      2. Select **List of snapshots**.
 
    - On the disk page:
 
       1. Click on the name of the disk whose snapshots you want to view.
       2. On the disk page, go to the **Snapshots** tab or on the **General Information** tab, click the **More** button and select **List of snapshots**.
 
-4. Expand the context menu of the snapshot and select the desired option:
+4. Click ![ ](/en/assets/more-icon.svg "inline") for the snapshot and select the required option:
 
    - **Create VM instance** — to go to the virtual machine creation page.
    - **Create disk** — to go to the disk creation page.

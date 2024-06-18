@@ -26,7 +26,7 @@
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
 1. Go to **Data Platform → Экземпляры сервисов**.
-1. Open the menu of the instance and select **Edit**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance and select **Edit**.
 1. In the window that opens, specify the new name and description of the instance.
 1. Click the **Save changes** button.
 
@@ -43,7 +43,7 @@
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
 1. Go to **Data Platform → Экземпляры сервисов**.
-1. Open the menu of the instance and select **Change password**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance and select **Change password**.
 1. In the window that opens, enter the new administrator password.
 
    Password requirements:
@@ -75,7 +75,7 @@
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
 1. Go to **Data Platform → Экземпляры сервисов**.
-1. Open the menu of the desired instance and select **Перейти к кластеру k8s**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required instance and select **Перейти к кластеру k8s**.
 
 </tabpanel>
 </tabs>
@@ -92,7 +92,7 @@ This is a group operation: if necessary, you can delete several instances of the
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
 1. Go to **Data Platform → Экземпляры сервисов**.
-1. Open the menu of the instance and select **Delete**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance and select **Delete**.
 1. Confirm the deletion and wait for the operation to complete. The deletion may take a long time.
 
 </tabpanel>

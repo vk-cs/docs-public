@@ -32,11 +32,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
-   1. Click on the name of the desired cluster.
+   1. Click on the name of the required cluster.
    1. Go to **Addons** tab.
    1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
    1. Click the **Install addon** button on the `logaas-integration` add-on card.
-   1. Select the desired add-on version from the drop-down list.
+   1. Select the required add-on version from the drop-down list.
    1. Edit if necessary:
 
       - the selected version;
@@ -92,7 +92,7 @@ If this does not suit you, perform the **standard installation**.
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
-   1. Click on the name of the desired cluster.
+   1. Click on the name of the required cluster.
    1. Go to **Addons** tab.
    1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
    1. Click the **Install** button on the `logaas-integration` add-on card.
@@ -299,7 +299,7 @@ customFilter:
 </tabpanel>
 <tabpanel>
 
-Set one or more rules for custom `customRegexp` pattern in the add-on code to set the desired severity level for logs bypassing the standard add-on mechanisms. If part of the log entry matches the specified Lua [pattern](https://www.lua.org/manual/5.4/manual.html#6.4.1), then this record is assigned the severity level specified in the rule. If there are no matches, then the record is assigned a severity level determined using the Fluent Bit parsers. This can be useful if the automatic level detection mechanism used in the add-on incorrectly determines the log level of a particular application.
+Set one or more rules for custom `customRegexp` pattern in the add-on code to set the required severity level for logs bypassing the standard add-on mechanisms. If part of the log entry matches the specified Lua [pattern](https://www.lua.org/manual/5.4/manual.html#6.4.1), then this record is assigned the severity level specified in the rule. If there are no matches, then the record is assigned a severity level determined using the Fluent Bit parsers. This can be useful if the automatic level detection mechanism used in the add-on incorrectly determines the log level of a particular application.
 
 These rules apply at the level of a certain namespace and at the level of certain pods in the namespace:
 
@@ -309,34 +309,34 @@ customRegexp:
   - namespace: <namespace>
     rules:
     - levels: # One rule for a namespace: setting up multiple levels
-      - level: <letter designation of the desired severity level>
+      - level: <letter designation of the required severity level>
         reg_exp: "<Lua pattern>"
-      - level: <letter designation of the desired severity level>
+      - level: <letter designation of the required severity level>
         reg_exp: "<Lua pattern>"
   - namespace: <the name of another namespace>
     rules: # Several rules for the pods in the namespace: setting up multiple levels
     - podprefix: <the prefix of the pod name> # The first rule for pods
       levels:
-      - level: <letter designation of the desired severity level>
+      - level: <letter designation of the required severity level>
         reg_exp: "<Lua pattern>"
-      - level: <letter designation of the desired severity level>
+      - level: <letter designation of the required severity level>
         reg_exp: "<Lua pattern>"
     - podprefix: <prefix of the name of another pod> # The second rule for pods
       levels:
-      - level: <letter designation of the desired severity level>
+      - level: <letter designation of the required severity level>
         reg_exp: "<Lua pattern>"
   - namespace: <the name of another namespace>
     rules:
     - levels: # The first rule for a namespace is to set up multiple levels
-      - level: <letter designation of the desired severity level>
+      - level: <letter designation of the required severity level>
         reg_exp: "<Lua pattern>"
-      - level: <letter designation of the desired severity level>
+      - level: <letter designation of the required severity level>
         reg_exp: "<Lua pattern>"
     - podprefix: <the prefix of the pod name> # The second rule for pods: setting up multiple levels
       levels:
-      - level: <letter designation of the desired severity level>
+      - level: <letter designation of the required severity level>
         reg_exp: "<Lua pattern>"
-      - level: <letter designation of the desired severity level>
+      - level: <letter designation of the required severity level>
         reg_exp: "<Lua pattern>"
 ```
 

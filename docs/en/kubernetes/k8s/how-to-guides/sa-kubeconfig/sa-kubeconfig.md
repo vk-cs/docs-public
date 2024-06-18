@@ -363,7 +363,7 @@ This authentication process is inconvenient when working with automated tools th
          </tabpanel>
          </tabs>
 
-      1. Delete the user using the desired name from the list:
+      1. Delete the user using the required name from the list:
 
          <tabs>
          <tablist>

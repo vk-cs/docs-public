@@ -166,12 +166,12 @@ To change the visibility status of an image:
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud computing → Images**.
-3. Expand the menu of the desired image and select **Share image**.
+3. Click ![ ](/en/assets/more-icon.svg "inline") for the required image and select **Share image**.
 4. In the window that appears:
 
    1. Choose one of the options:
 
-      - **My projects**: select the desired projects from the drop-down list.
+      - **My projects**: select the required projects from the drop-down list.
       - **Other projects**: specify the project ID.
 
    2. Click the **Allow access** button.
@@ -235,10 +235,10 @@ openstack image member list <image ID>
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud computing → Images**.
-3. Do one of the following for the desired image:
+3. Do one of the following for the required image:
 
    - Select the image using the checkbox, then click **Delete**.
-   - Expand the menu of the desired image and select **Remove image**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the required image and select **Remove image**.
 
 4. Click the **Confirm** button.
 

@@ -17,9 +17,9 @@ Full [list](../types/) of supported DBMS and their [configurations](../concepts/
 
 <details>
 
-<summary>How do I select the desired DB instance configuration?</summary>
+<summary>How do I select the required DB instance configuration?</summary>
 
-You can select the desired configuration type when [creating a DB instance](../service-management/create/). After creating an instance, the configuration type cannot be changed, but you can always add a replica. For more information about configuration types, see [DB instance configurations](../concepts/work-configs/).
+You can select the required configuration type when [creating a DB instance](../service-management/create/). After creating an instance, the configuration type cannot be changed, but you can always add a replica. For more information about configuration types, see [DB instance configurations](../concepts/work-configs/).
 
 </details>
 
@@ -62,11 +62,11 @@ Backup is not enabled by default. You can enable it when [creating an instance](
 To check if backup is enabled:
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired DB instance is located.
+1. Select the project where the required DB instance is located.
 1. Go to **Databases** → **Backup**.
 1. Go to the **Automatic** or **Point-in-time recovery** tab.
 
-   If there is a green indicator next to the name of the desired plan, the backup works according to plan. If the indicator is red, the backup is suspended.
+   If there is a green indicator next to the name of the required plan, the backup works according to plan. If the indicator is red, the backup is suspended.
 
 Backup can be enabled when [creating a DB instance](../service-management/create/) or configured separately by [creating a backup plan](/en/storage/backups/db-backup/).
 

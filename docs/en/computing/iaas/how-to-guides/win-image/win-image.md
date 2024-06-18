@@ -24,7 +24,7 @@ The Windows Server 2016 CORE edition image is used as an example, the commands a
 
 <info>
 
-The installation image may contain several editions of the operating system. Since the installation takes place automatically, select the desired edition in advance and export it to a separate wim file.
+The installation image may contain several editions of the operating system. Since the installation takes place automatically, select the required edition in advance and export it to a separate wim file.
 
 </info>
 

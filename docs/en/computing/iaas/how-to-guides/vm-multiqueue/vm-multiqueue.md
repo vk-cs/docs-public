@@ -35,7 +35,7 @@ The option includes multiqueue at the image level and will work for all VMs crea
     openstack image list
     ```
 
-1. Copy the ID of the desired image.
+1. Copy the ID of the required image.
 1. Enable multiqueue:
 
     ```bash
@@ -105,7 +105,7 @@ This option is used when the VM has already been created at the time of enabling
 
     </details>
 
-## 3. Set the desired number of queues for the VM
+## 3. Set the required number of queues for the VM
 
 <info>
 

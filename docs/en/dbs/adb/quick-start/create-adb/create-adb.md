@@ -1,6 +1,6 @@
 To create a database, go to the [section of your personal account "Analytical databases"](https://msk.cloud.vk.com/app/services/analytic-databases/), select the license version "Arenadata DB" and click "Create database".
 
-In the next step, select the desired cluster type, ArenadataDB instance version, and instance configuration.
+In the next step, select the required cluster type, ArenadataDB instance version, and instance configuration.
 
 The Cluster configuration is a cluster with synchronous data replication. It is used when there are increased requirements for the reliability and fault tolerance of the system.
 

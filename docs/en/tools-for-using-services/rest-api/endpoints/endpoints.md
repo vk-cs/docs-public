@@ -102,7 +102,7 @@ The Project ID does not match the [project ID](/en/tools-for-using-services/acco
 To get the Project ID value for a project:
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Open the desired project by selecting it from the list in the header of the personal account page.
+1. Open the required project by selecting it from the list in the header of the personal account page.
 1. Click on the user name in the header of the page and select **Project settings**.
 1. Go to **API access** or **Terraform** tab.
 

@@ -145,7 +145,7 @@ When selecting Zabbix agent version 5.0, a second-generation agent will be insta
 
 1. Ensure network connectivity of the instance and the monitoring server by ports for active and passive checks ([more here](https://www.zabbix.com/documentation/current/ru/manual/appendix/items/activepassive)).
 2. Decide on the encryption method of the transmitted data (without encryption, TLS, or PSK). When installing the Zabbix agent, you can choose both methods of connection protection, in this case, during operation, the encryption method can be changed by changing the connection configuration only on the server ([more here](https://www.zabbix.com/documentation/current/ru/manual/encryption)).
-3. Install the Zabbix agent on an instance or all cluster instances with the desired user parameters.
+3. Install the Zabbix agent on an instance or all cluster instances with the required user parameters.
 4. Connect the instances to the Zabbix server in the Configuration -> Hosts -> Create Hosts section ([more details here](https://www.zabbix.com/documentation/5.4/ru/manual/config/hosts/host)).
 
 <warn>
