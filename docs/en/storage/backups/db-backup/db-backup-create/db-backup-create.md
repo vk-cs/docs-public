@@ -13,7 +13,7 @@ The current status of the plan can be seen by hovering over the colored status i
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Databases** → **Backup**.
-1. On the **Automatic** tab, expand the menu of the desired backup and select the **Edit** option.
+1. On the **Automatic** tab, click ![ ](/en/assets/more-icon.svg "inline") for the required backup and select **Edit**.
 1. On the page that opens, set the necessary settings:
 
     - **Name of plan**.
@@ -49,7 +49,7 @@ If the parameter **Maximum number of full backups** is changed, is deleted after
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Databases** → **Backup**.
-1. On the **Automatic** tab, expand the menu of the desired backup and select the **Stop Backup** option.
+1. On the **Automatic** tab, click ![ ](/en/assets/more-icon.svg "inline") for the required backup and select **Stop Backup**.
 1. In the window that appears, confirm the operation.
 
 </tabpanel>
@@ -78,7 +78,7 @@ Changing the backup schedule activates the plan.
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Databases** → **Backup**.
 1. Select a backup from the general list.
-1. Expand the menu of the desired backup and select the **Stop** option.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required backup and select **Stop**.
 1. In the window that appears, confirm the operation.
 
 The backup will be stopped, and the files recorded before the stop will be deleted.
@@ -103,7 +103,7 @@ When you delete a backup plan, all restore points will be deleted.
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Databases** → **Backup**.
-1. On the **Automatic** tab, expand the menu of the desired backup and select the **Delete** option.
+1. On the **Automatic** tab, click ![ ](/en/assets/more-icon.svg "inline") for the required backup and select **Delete**.
 1. In the window that appears, confirm the operation.
 
 </tabpanel>

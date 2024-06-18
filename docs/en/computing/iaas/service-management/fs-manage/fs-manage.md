@@ -105,7 +105,7 @@ In Windows, you can connect a file storage via the NFS protocol using the Window
 
    1. In the **Tools** menu, select **Services for NFS**.
    1. Select **Client for NFS** and click the **Display the properties** icon.
-   1. Set the desired settings.
+   1. Set the required settings.
 
 3. Connect the file storage using the command specified in its [properties](#viewing_a_list_of_file_storages).
 
@@ -216,7 +216,7 @@ The instructions are given for Ubuntu. For information about connecting to other
 <tabpanel>
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired file storage is located.
+1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**. A list of file storages will be displayed.
 
 </tabpanel>
@@ -245,9 +245,9 @@ The instructions are given for Ubuntu. For information about connecting to other
 <tabpanel>
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired file storage is located.
+1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
-1. Click the name of the desired file storage. Information about it will be displayed.
+1. Click the name of the required file storage. Information about it will be displayed.
 
 </tabpanel>
 <tabpanel>
@@ -275,9 +275,9 @@ The instructions are given for Ubuntu. For information about connecting to other
 <tabpanel>
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired file storage is located.
+1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
-1. Click ![ ](/ru/assets/menu-icon.svg "inline") of the desired storage and select **Change size**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **Change size**.
 1. Enter a new value and click **Confirm**.
 
 </tabpanel>
@@ -312,9 +312,9 @@ The size of the file storage cannot be reduced.
 <tabpanel>
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired file storage is located.
+1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
-1. Click ![ ](/ru/assets/menu-icon.svg "inline") of the desired storage and select **Create snapshot**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **Create snapshot**.
 1. (Optional) Change the name of the snapshot and add a description.
 1. Click **Create snapshot**.
 
@@ -344,9 +344,9 @@ The size of the file storage cannot be reduced.
 <tabpanel>
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired file storage is located.
+1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
-1. Click ![ ](/ru/assets/menu-icon.svg "inline") of the desired storage and select **List of snapshots**. Information about the snapshots will be displayed.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **List of snapshots**. Information about the snapshots will be displayed.
 
 </tabpanel>
 <tabpanel>
@@ -374,10 +374,10 @@ The size of the file storage cannot be reduced.
 <tabpanel>
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired file storage is located.
+1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
-1. Click ![ ](/ru/assets/menu-icon.svg "inline") of the desired storage and select **List of snapshots**.
-1. Click ![ ](/ru/assets/menu-icon.svg "inline") of the desired snapshot and select **Restore file storage**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **List of snapshots**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required snapshot and select **Restore file storage**.
 1. Click **Confirm**. The process of creating a new storage from the snapshot will begin.
 
 </tabpanel>
@@ -406,10 +406,10 @@ The size of the file storage cannot be reduced.
 <tabpanel>
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired file storage is located.
+1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
-1. Click ![ ](/ru/assets/menu-icon.svg "inline") of the desired storage and select **List of snapshots**.
-1. Click ![ ](/ru/assets/menu-icon.svg "inline") of the desired snapshot and select **Delete snapshot**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **List of snapshots**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required snapshot and select **Delete snapshot**.
 1. Click **Confirm**.
 
 </tabpanel>
@@ -438,9 +438,9 @@ The size of the file storage cannot be reduced.
 <tabpanel>
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired file storage is located.
+1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
-1. Click the name of the desired file storage.
+1. Click the name of the required file storage.
 1. Go to the **Access rules** tab.
 1. Click **Add new rule**.
 1. Specify the source IP or subnet address and select an access mode.
@@ -480,11 +480,11 @@ The size of the file storage cannot be reduced.
 <tabpanel>
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired file storage is located.
+1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
-1. Click the name of the desired file storage.
+1. Click the name of the required file storage.
 1. Go to the **Access rules** tab.
-1. Click ![ ](/ru/assets/menu-icon.svg "inline") of the desired rule and select **Delete**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required rule and select **Delete**.
 1. Click **Confirm**.
 
 </tabpanel>
@@ -494,7 +494,7 @@ The size of the file storage cannot be reduced.
 
 2. Make sure that the Manila CLI is [installed](/en/tools-for-using-services/cli/openstack-cli#2_optional_install_additional_packages).
 
-3. Get the ID of the desired rule by requesting the list of access rules:
+3. Get the ID of the required rule by requesting the list of access rules:
 
     ```bash
     openstack share access list <storage name or ID>
@@ -521,9 +521,9 @@ To delete a file storage, you must first disconnect it from virtual machines and
 <tabpanel>
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired file storage is located.
+1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
-1. Click ![ ](/ru/assets/menu-icon.svg "inline") of the desired storage and select **Delete**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **Delete**.
 1. Click **Confirm**.
 
 Simultaneously with the file storage, the network created for it will be deleted.

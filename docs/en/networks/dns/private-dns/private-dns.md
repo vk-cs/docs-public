@@ -49,7 +49,7 @@ Via port settings:
 1. Open the network card by clicking on its name in the general list.
 1. Open the subnet card by clicking on its name in the general list.
 1. Go to the **Ports** tab.
-1. Expand the menu of the desired port and select **Edit port**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required port and select **Edit port**.
 1. Enter the name in the field **DNS-name**.
 1. Click the button **Save Changes**.
 

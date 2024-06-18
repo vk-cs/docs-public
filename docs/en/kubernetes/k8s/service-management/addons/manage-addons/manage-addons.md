@@ -14,7 +14,7 @@
 1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
-1. Click on the name of the desired cluster.
+1. Click on the name of the required cluster.
 1. Go to **Addons** tab.
 
    If there are no add-ons installed in the cluster yet, the cards of available add-ons will be shown on this tab in the **Available addons** block.
@@ -56,7 +56,7 @@
 1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
-1. Click on the name of the desired cluster.
+1. Click on the name of the required cluster.
 1. Go to **Addons** tab.
 
    The installed add-ons will be listed in the table. The table also shows:
@@ -109,9 +109,9 @@ The procedure for installing add-ons is discussed in the [relevant section](../a
 1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
-1. Click on the name of the desired cluster.
+1. Click on the name of the required cluster.
 1. Go to **Addons** tab.
-1. Expand the menu of the desired add-on and select **Edit**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required add-on and select **Edit**.
 1. Make the necessary changes to the add-on setup code.
 1. Click the **Change settings** button.
 1. In the window that opens, confirm the operation.
@@ -159,9 +159,9 @@ To update some add-ons, you will first need to uninstall the previous version.
 1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
-1. Click on the name of the desired cluster.
+1. Click on the name of the required cluster.
 1. Go to **Addons** tab.
-1. Open the menu of the desired add-on and select **Update**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required add-on and select **Update**.
 1. In the window that opens, review the changes.
 1. (Optional) [Update](../../update/) the cluster version for compatibility with the add-on.
 1. Make the necessary changes to the add-on settings.
@@ -206,12 +206,12 @@ To remove the add-on:
 1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
-1. Click on the name of the desired cluster.
+1. Click on the name of the required cluster.
 1. Go to **Addons** tab.
-1. Perform one of the actions for the desired add-on:
+1. Perform one of the actions for the required add-on:
 
    - Select the add-on using the checkbox, then click **Delete**.
-   - Expand the menu of the desired add-on and select **Remove addon**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the required add-on and select **Remove addon**.
 
 1. Confirm the deletion.
 

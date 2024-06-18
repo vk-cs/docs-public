@@ -587,7 +587,7 @@ The monitoring feature [was enabled during the instance creation](#1_create_post
 1. Go to **Databases → Database instances**.
 1. Click on the name of the DB instance. A page with information will open.
 1. Navigate to the **Monitoring** tab.
-1. Select the desired time interval and look at the collected data.
+1. Select the required time interval and look at the collected data.
 
 ## Delete unused resources
 

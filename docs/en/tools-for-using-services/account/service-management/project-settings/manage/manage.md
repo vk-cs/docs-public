@@ -9,7 +9,7 @@ To get the PID:
 
     A list of projects in which you are a member will open.
 
-1. To copy the PID of the desired project, hover over the project name and click on the icon ![Copy](assets/copy-icon.svg "inline") which will appear on the right.
+1. To copy the PID of the required project, hover over the project name and click on the icon ![Copy](assets/copy-icon.svg "inline") which will appear on the right.
 
 ## Changing the project name
 
@@ -20,7 +20,7 @@ The project name can be changed at any stage of the project life.
 
     A list of projects in which you are a member will open.
 
-1. Hover the mouse cursor over the name of the desired project and click on the icon ![Edit](assets/edit-icon.svg "inline") which will appear on the right.
+1. Hover the mouse cursor over the name of the required project and click on the icon ![Edit](assets/edit-icon.svg "inline") which will appear on the right.
 
 1. Enter a new name and click **Save**.
 

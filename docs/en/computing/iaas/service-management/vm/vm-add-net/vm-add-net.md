@@ -17,7 +17,7 @@ Learn more about networks and ports in the sections [Managing networks and subne
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
-3. Select the desired VM and go to the **Networks** tab.
+3. Select the required VM and go to the **Networks** tab.
 4. Click **Add connection**.
 5. In the window that appears:
 
@@ -57,7 +57,7 @@ Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/
    openstack network list
    ```
 
-1. Get a list of available ports on the desired network:
+1. Get a list of available ports on the required network:
 
    ```bash
    openstack port list --network <network name or ID>
@@ -156,11 +156,11 @@ Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
-3. Select the desired VM and go to the **Networks** tab.
-4. Do one of the following for the desired network:
+3. Select the required VM and go to the **Networks** tab.
+4. Do one of the following for the required network:
 
    - Select the network using the checkbox, then click the **Delete** button.
-   - Open the connected network menu and select **Delete connection**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the connected network and select **Delete connection**.
 
 5. In the window that appears, click **Confirm**.
 

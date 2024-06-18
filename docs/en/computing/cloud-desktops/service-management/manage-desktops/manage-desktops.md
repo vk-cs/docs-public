@@ -9,7 +9,7 @@ When a pool is successfully created, desktops are created in it automatically.
    - Through the list of pool desktops:
 
      1. Go to **Cloud Desktop** → **Desktop pools**.
-     1. In the list of pools, click the name of the desired pool.
+     1. In the list of pools, click the name of the required pool.
      1. Go to the **Desktops** tab.
 
 The desktop status is displayed in the **Availability** column. Column **Connection** (`Active`/`Inactive`) shows whether the user is currently connected to the desktop.
@@ -24,14 +24,14 @@ This is a group operation: if necessary, you can manage multiple pool desktops b
    - Through the general list of desktops:
 
      1. Go to **Cloud Desktop** → **Desktop list**.
-     1. Check the box for the desired desktop.
+     1. Check the box for the required desktop.
 
    - Through the list of pool desktops:
 
      1. Go to **Cloud Desktop** → **Desktop pools**.
-     1. In the list of pools, click the name of the desired pool.
+     1. In the list of pools, click the name of the required pool.
      1. Go to the **Desktops** tab.
-     1. Check the box for the desired desktop.
+     1. Check the box for the required desktop.
 
 1. Click **Start** or **Stop**.
 1. Confirm the action.
@@ -90,14 +90,14 @@ This is a group operation: if necessary, you can delete multiple pool desktops b
    - Through the general list of desktops:
 
      1. Go to **Cloud Desktop** → **Desktop list**.
-     1. Check the box for the desired desktop.
+     1. Check the box for the required desktop.
 
    - Through the list of pool desktops:
 
      1. Go to **Cloud Desktop** → **Desktop pools**.
-     1. In the list of pools, click the name of the desired pool.
+     1. In the list of pools, click the name of the required pool.
      1. Go to the **Desktops** tab.
-     1. Check the box for the desired desktop.
+     1. Check the box for the required desktop.
 
 1. Click the **Delete** button.
 1. Confirm the action.

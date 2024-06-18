@@ -44,7 +44,7 @@ You can edit the certificate's name only. To edit public and private key, create
 1. [Go to](https://msk.cloud.vk.com/app/) you VK Cloud personal account.
 1. Select the project.
 1. Go to **CDN** → **SSL certificates** section.
-1. Click ![menu-icon](/en/assets/menu-icon.svg "inline") for the certificate you need and select **Certificate settings**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required certificate and select **Certificate settings**.
 1. In the **SSL certificate name** field edit the certificate name.
 1. Click **Save changes**.
 
@@ -62,7 +62,7 @@ You can edit the certificate's name only. To edit public and private key, create
 1. [Go to](https://msk.cloud.vk.com/app/) you VK Cloud personal account.
 1. Select the project.
 1. Go to **CDN** → **SSL certificates** section.
-1. Click ![menu-icon](/en/assets/menu-icon.svg "inline") for the certificate you need and select **Delete certificate**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required certificate and select **Delete certificate**.
 1. Confirm the deletion.
 
 </tabpanel>

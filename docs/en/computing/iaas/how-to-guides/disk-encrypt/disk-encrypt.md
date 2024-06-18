@@ -15,7 +15,7 @@ Follow the preparatory steps to create a test Linux VM running CentOS 7.9, as we
 1. [Create the Linux VM](../../service-management/vm/vm-create/) from CentOS 7.9 image.
 2. [Create](../../service-management/volumes#creating_a_disk) and [connect](../../service-management/volumes#connecting_a_disk_to_a_vm) disk to VM.
 3. [Connect to VM](../../service-management/vm/vm-connect/vm-connect-nix/).
-4. Output a list of disks and find the name of the desired disk (for example, `/dev/vdb`):
+4. Output a list of disks and find the name of the required disk (for example, `/dev/vdb`):
 
    ```bash
    sudo fdisk -l 

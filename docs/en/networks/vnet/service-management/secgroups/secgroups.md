@@ -198,8 +198,7 @@ Available arguments for the rule creation command:
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
 1. Click the trash icon in the line with the required rule.
-1. Click the menu icon on the row of the rule you want to delete.
-1. In the menu that opens, click the **Delete** button.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the rule you want to delete and select **Delete** button.
 1. Press the **Confirm** button.
 
 </tabpanel>
@@ -306,8 +305,7 @@ This is a group operation: if necessary, you can delete several security groups 
 1. Go to [personal account](https://msk.cloud.vk.com/app/) VK Cloud.
 1. Select a project.
 1. Go to **Virtual networks** → **Firewall settings**.
-1. Click the menu icon on the row of the security group you want to delete.
-1. In the menu that opens, click the **Delete** button.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the security group you want to delete and select **Delete** button.
 
 </tabpanel>
 <tabpanel>

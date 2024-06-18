@@ -12,7 +12,7 @@ Key pairs are used to [connect to a VM via SSH](/en/computing/iaas/service-manag
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Click on the user's name in the header of the page.
 1. Select **Key pairs** from the drop-down list.
-1. Click on the name of the desired key pair. Information about it will be displayed.
+1. Click on the name of the required key pair. Information about it will be displayed.
 
 </tabpanel>
 <tabpanel>

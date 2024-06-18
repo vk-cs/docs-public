@@ -175,7 +175,7 @@ Create a Terraform configuration file `main.tf`. It describes:
   sysctl -w net.ipv4.ip_forward=1
   ```
 
-- Static routes to the desired networks via the ports of the VM.
+- Static routes to the required networks via the ports of the VM.
 - Floating IP address for connecting to the virtual machine via SSH.
 
 ```hcl

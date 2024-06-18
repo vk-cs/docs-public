@@ -439,7 +439,7 @@ If the required OS is not in the table, use the library [libosinfo](https://libo
      systeminfo
      ```
   
-  2. Select the desired `Short ID` value for the `os_distro` meta tag from the table above.
+  2. Select the required `Short ID` value for the `os_distro` meta tag from the table above.
   3. [Create](../images-manage) the image.
   4. Set meta tags:
   
