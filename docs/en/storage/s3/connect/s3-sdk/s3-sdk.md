@@ -72,7 +72,7 @@ To connect to the object storage using the SDK:
 
      <warn>
 
-     Some tools and SDKs may not read the `AWS_DEFAULT_REGION` variable and require specifying the region in a different way — check the documentation of the desired tool.
+     Some tools and SDKs may not read the `AWS_DEFAULT_REGION` variable and require specifying the region in a different way — check the documentation of the required tool.
 
      </warn>
 

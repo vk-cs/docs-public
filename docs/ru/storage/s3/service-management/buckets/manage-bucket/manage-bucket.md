@@ -221,7 +221,7 @@ Cloud Storage позволяет настроить уведомления о д
 {include(/ru/_includes/_s3-open-bucket.md)}
 
 1. Перейдите на вкладку **Webhooks**.
-1. Нажмите ![ ](/ru/assets/menu-icon.svg "inline") для нужного вебхука и выберите ![pencil-icon](/ru/assets/pencil-icon.svg "inline") **Редактировать hook**.
+1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного вебхука и выберите пункт ![pencil-icon](/ru/assets/pencil-icon.svg "inline") **Редактировать hook**.
 1. Отредактируйте [параметры](#dobavlenie_vebhuka_7b84d9a6) вебхука.
 1. Нажмите кнопку **Сохранить изменения**.
 
@@ -243,7 +243,7 @@ Cloud Storage позволяет настроить уведомления о д
 1. Перейдите на вкладку **Webhooks**.
 1. Удалите вебхук одним из способов:
 
-   - Нажмите ![ ](/ru/assets/menu-icon.svg "inline") для нужного вебхука и выберите ![trash-icon](/ru/assets/trash-icon.svg "inline") **Удалить hook**.
+   - Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного вебхука и выберите пункт ![trash-icon](/ru/assets/trash-icon.svg "inline") **Удалить hook**.
    - Установите флажок для нужного вебхука и нажмите кнопку ![trash-icon](/ru/assets/trash-icon.svg "inline") **Удалить**.
 1. Подтвердите удаление.
 

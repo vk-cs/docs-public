@@ -21,7 +21,7 @@ To delete a CDN resource:
 1. Delete the resource in one of the following ways:
 
    - Set the checkbox for the required resource, then click **Delete** above the table.
-   - Click ![menu-icon](/en/assets/menu-icon.svg "inline") for the resource you need and select **Delete**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the required resource and select **Delete**.
 
 1. Confirm the deletion.
 

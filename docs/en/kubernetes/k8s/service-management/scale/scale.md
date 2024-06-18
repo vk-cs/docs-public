@@ -31,8 +31,8 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    1. Select the project where the necessary cluster is located.
    1. Go to **Containers** → **Kubernetes Clusters**.
    1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
-   1. Expand the menu of the necessary cluster and select **Change type of master virtual machine**.
-   1. Select the desired VM template from the drop-down list.
+   1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Change type of master virtual machine**.
+   1. Select the required VM template from the drop-down list.
 
       <info>
 
@@ -63,7 +63,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
          The available virtual machine types will be displayed.
 
-      1. Select the desired virtual machine type and write its name from the **Name** column.
+      1. Select the required virtual machine type and write its name from the **Name** column.
 
    1. Change the [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md) data source in the Terraform configuration file:
 
@@ -137,8 +137,8 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    1. Go to **Containers** → **Kubernetes Clusters**.
    1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
    1. Locate the necessary cluster and node group.
-   1. Expand the menu of the necessary node group and select **Change type of master virtual machine**.
-   1. Select the desired VM template from the drop-down list.
+   1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Change type of master virtual machine**.
+   1. Select the required VM template from the drop-down list.
 
       <info>
 
@@ -169,7 +169,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
          The available virtual machine types will be displayed.
 
-      1. Select the desired virtual machine type and write its name from the **Name** column.
+      1. Select the required virtual machine type and write its name from the **Name** column.
 
    1. Change the [vkcs_compute_flavor](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/compute_flavor.md) data source in the Terraform configuration file:
 
@@ -234,7 +234,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
    1. Go to **Containers** → **Kubernetes Clusters**.
    1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
    1. Find the appropriate node group in this cluster.
-   1. Expand the menu of the necessary node group and select **Scaling settings**.
+   1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Scaling settings**.
    1. In the window that appears:
 
       1. Make sure that the **Enable autoscaling** option is disabled.
@@ -311,7 +311,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
    1. Go to **Containers** → **Kubernetes Clusters**.
    1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
    1. Find the appropriate node group in this cluster.
-   1. Expand the menu of the necessary node group and select **Scaling settings**.
+   1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Scaling settings**.
    1. In the dialog window:
 
       1. Make sure that the **Enable autoscaling** option is enabled.

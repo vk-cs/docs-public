@@ -42,7 +42,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
       The available virtual machine types will be displayed.
 
-   1. Select the desired virtual machine type and write its name from the **Name** column.
+   1. Select the required virtual machine type and write its name from the **Name** column.
 
 1. Determine the version of Kubernetes you want to create the cluster with:
 

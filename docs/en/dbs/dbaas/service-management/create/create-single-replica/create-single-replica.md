@@ -10,8 +10,8 @@
 1. Click the **Create database** or **Add** button.
 1. On the “Configuration” step:
 
-   1. Select the desired database type.
-   1. Select the desired version.
+   1. Select the required database type.
+   1. Select the required version.
    1. Select the configuration **Single** or **Master-Replica**. The configuration is available for some [DBMS types](../../../concepts/work-configs#available_configurations_for_dbms_types).
    1. Click the **Next step** button.
 
@@ -45,7 +45,7 @@
 
       - **Enable volume autoscaling**: select this option so that the disk size increases automatically when the disk is filled with data. When selecting this option, also specify **The maximum volume size, GB**.
 
-      - **Network**: the network where the DB instance will be hosted. If the desired network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
+      - **Network**: the network where the DB instance will be hosted. If the required network is not in the list, [create it](/en/networks/vnet/service-management/net#creating_a_network).
 
       - **Assign an external IP:** select this option to assign a floating IP address to the DB instance.
 

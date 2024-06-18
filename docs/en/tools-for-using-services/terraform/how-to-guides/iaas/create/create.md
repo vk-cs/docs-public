@@ -95,7 +95,7 @@ Two options for VM configuration will be considered: without additional settings
         openstack keypair list
         ```
 
-      2. Copy the desired key pair name from the list.
+      2. Copy the required key pair name from the list.
 
    </tabpanel>
    <tabpanel>

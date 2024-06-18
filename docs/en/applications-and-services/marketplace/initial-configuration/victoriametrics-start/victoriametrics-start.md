@@ -83,7 +83,7 @@ To deploy the VictoriaMetrics service in a project:
       - **Type of virtual machine**: select the preset VM configuration. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
       - For the system disk and data disk:
 
-        - **Disk size**: specify the desired VM disk size in gigabytes.
+        - **Disk size**: specify the required VM disk size in gigabytes.
         - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#disks).
 
    1. Click the **Next step** button.
@@ -108,7 +108,7 @@ To deploy the VictoriaMetrics service in a project:
       - **Type of virtual machine**: select the preset VM configuration. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#flavors).
       - For the system disk and data disk:
 
-        - **Disk size**: specify the desired VM disk size in gigabytes.
+        - **Disk size**: specify the required VM disk size in gigabytes.
         - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#disks).
 
    1. Click the **Next step** button.
@@ -129,7 +129,7 @@ To deploy the VictoriaMetrics service in a project:
 
       - **Сеть**: select the previously created network and subnet.
       - **Availability zone**: select which of the data centers the VM will be running in.
-      - **Disk size**: specify the desired VM disk size in gigabytes.
+      - **Disk size**: specify the required VM disk size in gigabytes.
       - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#disks).
 
    1. Click the **Next step** button.
@@ -138,7 +138,7 @@ To deploy the VictoriaMetrics service in a project:
       - For each of the `vmselect`, `vminsert` and `vmstorage` components, specify the number of deployed VMs in the cluster and [the type of virtual machine](/en/computing/iaas/concepts/about#flavors).
       - For the data disk for `vmstorage`:
 
-        - **Disk size**: specify the desired VM disk size in gigabytes.
+        - **Disk size**: specify the required VM disk size in gigabytes.
         - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](/en/computing/iaas/concepts/about#disks).
 
    1. At the “Confirmation” step, review the calculated cost of the service and click **Connect the tariff**.

@@ -69,7 +69,7 @@ Larger nodes can use resources more efficiently due to lower percentage reservat
 
 The number of pods launched on a node affects the performance of the cluster. You can run a maximum of 110 pods, but for best node performance, plan for 30–40 pods per node.
 
-When choosing the size of nodes and their number in a cluster, choose a distribution that maximizes resource utilization and maintains the desired level of fault tolerance and scalability.
+When choosing the size of nodes and their number in a cluster, choose a distribution that maximizes resource utilization and maintains the required level of fault tolerance and scalability.
 
 <info>
 

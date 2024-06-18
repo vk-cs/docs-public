@@ -55,7 +55,7 @@ To migrate a VM with UEFI emulation, use [Hystax](/en/additionals/hystax/migrati
 
 1. Stop the VM.
 2. Start the Hyper-V Manager.
-3. Right-click on the desired VM and select **Export**.
+3. Right-click on the required VM and select **Export**.
 4. Select where to place the VM files and click **Export**.
 
 </tabpanel>

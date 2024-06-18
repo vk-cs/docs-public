@@ -5,7 +5,7 @@ In Cloud Servers, you can create virtual machines through your personal account,
 1. [Register](/en/intro/start/account-registration) to VK Cloud.
 2. [Activate](/en/tools-for-using-services/account/service-management/activation) the services.
 
-The account balance should be positive, and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) should be sufficient to create the desired virtual machine configuration.
+The account balance should be positive, and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) should be sufficient to create the required virtual machine configuration.
 
 ### Available OS
 
@@ -36,8 +36,8 @@ The available fields may differ for different operating systems.
      - **Category of virtual machine**: select the flavor of the VM. For more information, see [Cloud Servers service overview](../../../concepts/about#flavors).
      - **Type of virtual machine**: select the preset VM configuration. For more information, see [Cloud Servers service overview](../../../concepts/about).
      - **Availability zone**: select the data center where the VM will be launched.
-     - **Number of machines in configuration**: specify the desired number of VM.
-     - **Disk size**: specify the desired VM disk size in gigabytes.
+     - **Number of machines in configuration**: specify the required number of VM.
+     - **Disk size**: specify the required VM disk size in gigabytes.
      - **Disk Type**: select one of the values — HDD, SSD or High-IOPS SSD. For more information, see [Cloud Servers service overview](../../../concepts/about#disks).
      - **Operating system**: select the operating system version or [previously created image](../../images/images-manage/).
      - **Tags**: if necessary, [specify the tag](../vm-manage#assigning_tags) for the VM or create a new one.
@@ -85,13 +85,13 @@ The available fields may differ for different operating systems.
 
 2. Collect the data:
 
-   1. Get a list of available VM types and save the desired `flavor_ID`:
+   1. Get a list of available VM types and save the required `flavor_ID`:
 
       ```bash
       openstack flavor list
       ```
 
-   2. Get a list of available VM images and save the desired `image_ID`:
+   2. Get a list of available VM images and save the required `image_ID`:
 
       ```bash
       openstack image list
@@ -108,7 +108,7 @@ The available fields may differ for different operating systems.
 
       For more information about configuring network access rules, see [Managing firewall rules](/en/networks/vnet/service-management/secgroups).
 
-   4. Get a list of available networks and save the desired `network_ID`:
+   4. Get a list of available networks and save the required `network_ID`:
 
       ```bash
       openstack network list

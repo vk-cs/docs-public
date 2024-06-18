@@ -244,7 +244,7 @@ A network created in the QAZ availability zone cannot be united with networks in
 
 ## Operating system
 
-On the VK Cloud platform, when creating a virtual machine, you can choose an operating system of the Microsoft Windows or Linux family. To create a VM with an operating system that is not in the platform list, use the VM image file with the desired OS.
+On the VK Cloud platform, when creating a virtual machine, you can choose an operating system of the Microsoft Windows or Linux family. To create a VM with an operating system that is not in the platform list, use the VM image file with the required OS.
 
 VK Cloud supports migration of Windows server versions:
 
