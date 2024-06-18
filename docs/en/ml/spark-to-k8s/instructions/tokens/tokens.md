@@ -267,9 +267,9 @@ A list of created registration tokens is not maintained. You can only [get a lis
 <tabpanel>
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired token is located.
+1. Select the project where the required token is located.
 1. Go to **ML Platform → Tokens**.
-1. Expand the menu of the desired token and select **Delete**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required token and select **Delete**.
 1. Click the **Confirm** button.
 
 </tabpanel>

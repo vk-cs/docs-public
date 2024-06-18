@@ -7,7 +7,7 @@ Manage MLflow Deploy instances using MLflow Deployment Client, a python library 
 3. Reboot the virtual machine with the JupyterHub instance:
     1. Go to **Cloud Servers → Virtual machines**.
     2. In the **ML Platform Instances** subsection, find the JupyterHub you need instance.
-    3. Open the menu of the instance and select **Restart**.
+    3. Click ![ ](/en/assets/more-icon.svg "inline") for the instance and select **Restart**.
 
 <info>
 

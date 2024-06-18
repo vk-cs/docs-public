@@ -96,7 +96,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
 1. Set up IKE:
 
-   1. **IKE Policy** — select an IKE policy from the dropdown list. If the desired policy does not exist, create a new one:
+   1. **IKE Policy** — select an IKE policy from the dropdown list. If the required policy does not exist, create a new one:
 
        1. Select `New IKE Policy` from the drop-down list.
        1. Set the policy settings:
@@ -112,7 +112,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
 1. Configure IPsec:
 
-    1. **IPsec policy** — select an IPsec policy from the drop-down list. If the desired policy does not exist, create a new one:
+    1. **IPsec policy** — select an IPsec policy from the drop-down list. If the required policy does not exist, create a new one:
 
        1. Select `New IPsec Policy` from the drop-down list.
        1. Set the policy settings:
@@ -515,7 +515,7 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
-1. Expand the menu of the desired VPN tunnel and select **Edit VPN**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VPN tunnel and select **Edit VPN**.
 1. If necessary, edit the local or remote endpoint group:
 
    1. **Local Endpoint** — select a local endpoint group from the drop-down list. If the required group does not exist, create a new one:
@@ -760,7 +760,7 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
-1. Expand the menu of the desired VPN tunnel and select **Restart VPN**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VPN tunnel and select **Restart VPN**.
 1. Read the warning.
 1. Press the **Restart** button.
 
@@ -812,7 +812,7 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
-1. Expand the menu of the desired VPN tunnel and select **Remove VPN**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VPN tunnel and select **Remove VPN**.
 1. Review the list of objects to be deleted.
 
    When deleting a VPN tunnel, the objects associated with it will also be deleted (if they are not used by other VPN tunnels):

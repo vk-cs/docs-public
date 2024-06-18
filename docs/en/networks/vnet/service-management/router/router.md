@@ -126,7 +126,7 @@ You can manage routers: view, edit and delete them.
 1. Perform one of the actions for the router you want to edit:
 
    - Click the name of the router and then in the **General information** tab, click **Edit router**.
-   - Expand the router's menu and select **Edit router**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the router and select **Edit router**.
 
 1. Perform one of the available actions:
 
@@ -250,7 +250,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 1. To add an interface:
 
     1. Click the **Add Interface** button.
-    1. Select the desired subnet from the list.
+    1. Select the required subnet from the list.
     1. Click the **Add Interface** button.
 
     As a result:
@@ -260,7 +260,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
 1. To remove an interface:
 
-    1. Expand the interface menu and select **Remove Interface**.
+    1. Click ![ ](/en/assets/more-icon.svg "inline") for the interface and select **Remove Interface**.
     1. Confirm the deletion.
 
     As a result:
@@ -336,7 +336,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
     1. Specify an intermediate node (next hop).
     1. Click the **Add Interface** button.
 
-1. To delete a static route, expand the menu of the desired route and select **Delete Interface**.
+1. To delete a static route, click ![ ](/en/assets/more-icon.svg "inline") for the required route and select **Delete Interface**.
 
 </tabpanel>
 <tabpanel>
@@ -394,10 +394,10 @@ To remove a router:
 1. Go to [personal account](https://msk.cloud.vk.com/app/) VK Cloud.
 1. Select the project where the required balancer is located.
 1. Go to **Virtual networks** → **Routers**.
-1. Do one of the following for the desired router:
+1. Do one of the following for the required router:
 
     - Select the router using the checkbox, then click the **Remove Router** button.
-    - Expand the router menu and select **Remove Router**.
+    - Click ![ ](/en/assets/more-icon.svg "inline") for the router and select **Remove Router**.
     - Click on the name of the router, then on the **General Information** tab, click on the **Delete Router** button.
 
 1. Confirm the removal of the router.

@@ -30,9 +30,9 @@ This is a group operation: if necessary, you can manage multiple pool desktops b
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud Desktop** → **Desktop pools**.
-1. In the list of pools, click the name of the desired pool.
+1. In the list of pools, click the name of the required pool.
 1. Go to the **Desktops** tab.
-1. Check the box for the desired desktop.
+1. Check the box for the required desktop.
 1. Click **More** and select the option **Restart**.
 1. Confirm the action.
 
@@ -50,9 +50,9 @@ This is a group operation: if necessary, you can manage multiple pool desktops b
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud Desktop** → **Desktop pools**.
-1. In the list of pools, click the name of the desired pool.
+1. In the list of pools, click the name of the required pool.
 1. Go to the **Desktops** tab.
-1. Check the box for the desired desktop.
+1. Check the box for the required desktop.
 1. Click **More** and select the option **End session**.
 1. Confirm the action.
 
@@ -62,7 +62,7 @@ This is a group operation: if necessary, you can send a message to users of seve
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud Desktop** → **Desktop pools**.
-1. Check the box for the desired pool.
+1. Check the box for the required pool.
 1. Click the **Message to users** button.
 1. In the window that appears, fill in the fields:
 
@@ -89,7 +89,7 @@ This is a group operation: if necessary, you can delete several pools at once by
 1. Go to **Cloud Desktop** → **Desktop pools**.
 1. Delete the pool using one of the following methods:
 
-   - Expand the pool context menu and select the option **Delete**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the pool and select **Delete**.
    - Via the pool page:
 
      1. In the list of pools, select the pool you want to delete and click its name.

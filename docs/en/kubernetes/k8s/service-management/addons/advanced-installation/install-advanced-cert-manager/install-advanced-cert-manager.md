@@ -24,7 +24,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
-   1. Click on the name of the desired cluster.
+   1. Click on the name of the required cluster.
    1. Go to **Addons** tab.
    1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
    1. Click the **Install** button on the `cert-manager` add-on card.
@@ -116,7 +116,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
-   1. Click on the name of the desired cluster.
+   1. Click on the name of the required cluster.
    1. Go to **Addons** tab.
    1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
    1. Click the **Install** button on the `cert-manager` add-on card.
@@ -231,7 +231,7 @@ If this is not suitable for you, perform a **standard installation** or **instal
    1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
-   1. Click on the name of the desired cluster.
+   1. Click on the name of the required cluster.
    1. Go to **Addons** tab.
    1. If there are already installed add-ons in the cluster, click on the **Add addon** button.
    1. Click the **Install** button on the `cert-manager` add-on card.

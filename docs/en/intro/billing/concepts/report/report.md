@@ -131,7 +131,7 @@ To set up a paper workflow, contact the VK Cloud Workflow Department:
 
 Provide information:
 
-- The desired method of document delivery: by mail or courier service.
+- The required method of document delivery: by mail or courier service.
 - (If courier delivery is selected) The recipient's contact phone number.
 - Full name of the recipient.
 - Recipient's address. If the address matches the legal address of the organization, specify it explicitly in the request.

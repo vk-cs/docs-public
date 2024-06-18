@@ -8,7 +8,7 @@
 1. Go to **Databases** → **Backup**.
 1. Go to the backup plan tab.
 1. Select a backup from the general list.
-1. Expand the backup menu and select the **Restore the instance** option.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the backup and select **Restore the instance**.
 1. In the window that opens, select the backup and click **Restore an instance from backup**.
 1. Configure the parameters of the DB instance being created.
 1. Click the **Next step** button.

@@ -148,7 +148,7 @@ This is a group operation: you can enable multiple disabled ports at once, if ne
 
    - Using the menu:
 
-     1. Open the menu of the necessary port and select **Enable port**.
+     1. Click ![ ](/en/assets/more-icon.svg "inline") for the required port and select **Enable port**.
      1. Confirm the operation.
 
 </tabpanel>
@@ -201,7 +201,7 @@ This is a group operation: you can disable multiple enabled ports at once, if ne
 
    - Using the menu:
 
-     1. Open the menu of the necessary port and select **Disable port**.
+     1. Click ![ ](/en/assets/more-icon.svg "inline") for the required port and select **Disable port**.
      1. Confirm the operation.
 
 </tabpanel>
@@ -240,7 +240,7 @@ openstack port set --help
 1. Go to **Virtual networks** → **Networks**.
 1. Click the name of the necessary network, then the name of the necessary subnet.
 1. Navigate to the **Ports** tab.
-1. Open the menu of the necessary port and select **Edit**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required port and select **Edit**.
 1. Set the parameters of the port:
 
    - port name,
@@ -360,7 +360,7 @@ This is a group operation: you can delete multiple ports at once, if necessary, 
 
    - Using the menu:
 
-     1. Open the menu of the necessary port and select **Delete port**.
+     1. Click ![ ](/en/assets/more-icon.svg "inline") for the required port and select **Delete port**.
      1. Confirm the operation.
 
 </tabpanel>

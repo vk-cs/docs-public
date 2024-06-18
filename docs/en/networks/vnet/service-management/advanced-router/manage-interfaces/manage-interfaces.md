@@ -52,7 +52,7 @@ This is a group operation: you can remove several interfaces at once by selectin
 1. Go to the **Interfaces** tab.
 1. Remove the interface in one of the following ways:
 
-    - Expand the interface menu and select **Remove interface**.
+    - Click ![ ](/en/assets/more-icon.svg "inline") for the interface and select **Remove interface**.
     - Set the checkbox for the required interface, then click the **Remove interface** button above the table.
 1. Confirm the removal.
 

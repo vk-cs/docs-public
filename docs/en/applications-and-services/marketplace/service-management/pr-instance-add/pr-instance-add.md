@@ -1,6 +1,6 @@
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **App store**.
-1. On the card of the desired service, click **Details**.
+1. On the card of the required service, click **Details**.
 1. Read the description of the service. When installing the [image-based](../../concepts/about#types_of_services) service, make sure that there are enough quotas in the project.
 1. Click the **Connect**.
 1. Follow the steps of the tariff plan configuration wizard.

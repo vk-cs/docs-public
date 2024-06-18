@@ -14,36 +14,36 @@
    - Through the context menu of the virtual machine:
 
       1. Go to **Cloud Computing → Virtual machines**.
-      2. Expand the VM context menu.
-      3. Click **Restore from backup**.
+      2. Click ![ ](/en/assets/more-icon.svg "inline") for the required VM.
+      3. Select **Restore from backup**.
 
-3. Open the desired backup list.
+3. Open the required backup list.
 
    - Copies created automatically:
 
       1. Go to the **Automatic** tab.
-      2. In the list of plans, find the desired plan.
-      3. Click on the name of the plan or expand the context menu of the plan and click **View backups**.
+      2. In the list of plans, find the required plan.
+      3. Click on the name of the plan or click ![ ](/en/assets/more-icon.svg "inline") for the plan and select **View backups**.
 
    - Copies created manually:
 
       1. Go to the **Manual** tab.
       2. In the list of virtual machines, find the VM you need.
-      3. Click on the number of recovery points in the row of the desired VM.
+      3. Click on the number of recovery points in the row of the required VM.
 
 4. Select the backup to restore.
 
    - In the list of backups created automatically:
 
-      1. Expand the context menu of the desired copy.
-      2. Click **Restore instance**.
-      3. In the window that opens, select the backup.
-      4. Click **Restore instance from backup**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the required copy.
+      1. Select **Restore instance**.
+      1. In the window that opens, select the backup.
+      1. Click **Restore instance from backup**.
 
    - In the list of manually created backups:
 
-      1. Expand the context menu of the desired copy.
-      2. Click **Restore from backup**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the required copy.
+      2. Select **Restore from backup**.
 
 5. On the page **Restoring instance from backup** choose **Restoring type** using the button **To a new instance** or **To the existing instance**.
 
@@ -88,36 +88,36 @@ VM recovery speed from backup is affected by:
    - Through the context menu of the virtual machine:
 
       1. Go to **Cloud Computing → Virtual machines**.
-      2. Expand the VM context menu.
-      3. Click **Restore from backup**.
+      2. Click ![ ](/en/assets/more-icon.svg "inline") for the required VM.
+      3. Select **Restore from backup**.
 
-3. Open the desired backup list.
+3. Open the required backup list.
 
    - Copies created automatically:
 
       1. Go to the **Automatic** tab.
-      2. In the list of plans, find the desired plan.
-      3. Click on the name of the plan or expand the context menu of the plan and click **View backups**.
+      2. In the list of plans, find the required plan.
+      3. Click on the name of the plan or click ![ ](/en/assets/more-icon.svg "inline") for the plan and select **View backups**.
 
    - Copies created manually:
 
       1. Go to the **Manual** tab.
       2. In the list of virtual machines, find the VM you need.
-      3. Click on the number of recovery points in the row of the desired VM.
+      3. Click on the number of recovery points in the row of the required VM.
 
 4. Select the backup to restore.
 
    - In the list of backups created automatically:
 
-      1. Expand the context menu of the desired copy.
-      2. Click **Restore instance**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the required copy.
+      2. Select **Restore instance**.
       3. In the window that opens, select the backup.
       4. Click **Restore Volume**.
 
    - In the list of manually created backups:
 
-      1. Expand the context menu of the desired copy.
-      2. Click **Restore Volume**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the required copy.
+      2. Select **Restore Volume**.
 
 5. To the form **Select a backup to restore the volume** select the disk for which you plan to restore.
 6. Click **Restore a volume form backup**.
@@ -151,12 +151,12 @@ If you no longer need the disk, [remove it](/en/computing/iaas/service-managemen
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud computing → Backup**.
-3. Open the desired backup list.
+3. Open the required backup list.
 
    - Copies created automatically:
       1. Go to the **Automatic** tab.
-      2. In the list of plans, find the desired plan.
-      3. Click on the name of the plan or expand the context menu of the plan and click **View backups**.
+      2. In the list of plans, find the required plan.
+      3. Click on the name of the plan or Click ![ ](/en/assets/more-icon.svg "inline") for the plan and select **View backups**.
 
    - Copies created manually:
       1. Go to the **Manual** tab.
@@ -173,9 +173,8 @@ If you no longer need the disk, [remove it](/en/computing/iaas/service-managemen
 
    - Through the context menu — for one copy:
 
-      1. In the list of backups, find the copy you want to delete.
-      2. Expand the context menu of the copy.
-      3. Click **Delete copy** and confirm the action.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the copy you want to delete.
+      2. Select **Delete copy** and confirm the action.
 
 </tabpanel>
 </tabs>
@@ -201,14 +200,14 @@ Delete unnecessary backups in a timely manner to save storage space.
 5. Use one of the methods to go to the backup plan change page.
 
    - Through the context menu:
-      1. Expand the context menu of the plan.
-      2. Click **Edit**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the plan.
+      2. Select **Edit**.
 
    - Using the button:
       1. Select a plan using the checkbox.
       2. Above the list of plans, click the **Edit** button.
 
-6. Change the desired parameters.
+6. Change the required parameters.
 
    - **Name of plan** for backup.
    - [Retention policy](/en/storage/backups/retention-policy) full backups using the switch: **Enable GFS** or **Maximum number of full backups**.
@@ -252,15 +251,14 @@ When you delete a backup plan, all backups created under that plan will be delet
 
    - Using group operations — for multiple plans:
 
-      1. In the list of backup plans, select the desired plans using the checkboxes.
-      2. Above the list of plans, click the button with the desired action.
+      1. In the list of backup plans, select the required plans using the checkboxes.
+      2. Above the list of plans, click the button with the required action.
       3. Confirm the action.
 
    - Through the context menu — for one plan:
 
-      1. In the list of backup plans, find the plan you need.
-      2. Expand the context menu of the plan.
-      3. Select and confirm the action.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the required plan.
+      1. Select and confirm the action.
 
 </tabpanel>
 </tabs>

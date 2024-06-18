@@ -117,9 +117,9 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
    - Network settings:
 
-     - **Network:** select the network and subnet where the cluster's master and worker nodes will be located. If the desired network and subnet are not on the list, [create](../../../../../networks/vnet/networks/create-net) them.
+     - **Network:** select the network and subnet where the cluster's master and worker nodes will be located. If the required network and subnet are not on the list, [create](../../../../../networks/vnet/networks/create-net) them.
 
-     - **Use load balancer network**: enable this option to use a separate subnet on the selected network for load balancers created by the cluster. If the desired subnet is not on the list, [create](../../../../../networks/vnet/networks/create-net#creating_a_subnet) it.
+     - **Use load balancer network**: enable this option to use a separate subnet on the selected network for load balancers created by the cluster. If the required subnet is not on the list, [create](../../../../../networks/vnet/networks/create-net#creating_a_subnet) it.
 
        By default, the option is disabled and the load balancers use the same subnet as the cluster nodes.
 

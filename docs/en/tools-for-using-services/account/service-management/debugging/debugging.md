@@ -26,7 +26,7 @@ To download logs locally:
 
 1. Configure the displayed entries:
 
-   - **Backend type**: select a service from the drop-down list. Select the option **Unknown backend** if the desired service is not in the list.
+   - **Backend type**: select a service from the drop-down list. Select the option **Unknown backend** if the required service is not in the list.
    - **Show only 4хх and 5хх**: enable the option if you want to display only events completed with errors of type `4XX` or `5XX`.
 
 1. Click **Download log**. A file of the form `dpp-log-<date>.json` will be downloaded.

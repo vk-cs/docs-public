@@ -16,7 +16,7 @@ The following tools are available for monitoring the status of a Kubernetes clus
 1. [Connect to the cluster using Kubernetes Dashboard](../connect/k8s-dashboard).
 1. Get data about the cluster resources:
 
-   1. Select the desired namespace from the drop-down list at the top of the Kubernetes Dashboard interface. The default namespace selected is `default`.
+   1. Select the required namespace from the drop-down list at the top of the Kubernetes Dashboard interface. The default namespace selected is `default`.
    1. From the side menu, select the Kubernetes resource of interest.
 
 ## Using Grafana
