@@ -423,7 +423,7 @@ To connect a persistent volume to multiple pods using dynamic PVC:
 
 ### Connecting file storages
 
-File storages are connected to the cluster using a persistent volume that is configured to use the existing storage via the desired protocol, such as NFS.
+File storages are connected to the cluster using a persistent volume that is configured to use the existing storage via the required protocol, such as NFS.
 
 When using this type of storage:
 

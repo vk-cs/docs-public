@@ -145,7 +145,7 @@ Install the following tools on the host:
    1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/).
    1. Select the project where the previously created cluster is located.
    1. Go to **Manage access**.
-   1. Expand the menu of the desired user and select **Edit**.
+   1. Click ![ ](/en/assets/more-icon.svg "inline") for the required user and select **Edit**.
    1. Select the **Kubernetes Administrator** role from the drop-down list.
    1. Save your changes.
 
@@ -154,7 +154,7 @@ Install the following tools on the host:
 1. Get kubeconfig for the cluster in [VK Cloud personal account](https://msk.cloud.vk.com/app/):
 
    1. Go to **Containers → Kubernetes Clusters**.
-   1. Find the desired cluster in the list, then select **Get Kubeconfig to access the cluster** in its menu.
+   1. Find the required cluster in the list, then select **Get Kubeconfig to access the cluster** in its menu.
 
 1. Move kubeconfig to the `~/.kube` directory, so you don't have to specify additional arguments when using `kubectl`.
 

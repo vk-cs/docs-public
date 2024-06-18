@@ -67,7 +67,7 @@ After creating a bucket, its name cannot be changed.
 
 Before creating a bucket, you need to create a user who will be granted access to manage operations in the AWS CLI.
 
-To do this, on the "Accounts" tab of the "Object Storage" service, create an account by clicking the "Add Account" button, specify any desired name and save the API keys received.
+To do this, on the "Accounts" tab of the "Object Storage" service, create an account by clicking the "Add Account" button, specify any required name and save the API keys received.
 
 2. Sign in to AWS CLI
 

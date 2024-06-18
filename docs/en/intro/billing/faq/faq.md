@@ -436,7 +436,7 @@ Each region has its own peculiarities of work for non-residents of the Russian F
    - full name and details of the organization;
    - full name and phone number of the contact person.
 
-The manager will contact you to clarify the desired terms of the contract.
+The manager will contact you to clarify the required terms of the contract.
 
 </details>
 

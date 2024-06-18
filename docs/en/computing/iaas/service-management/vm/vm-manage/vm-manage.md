@@ -60,20 +60,19 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
     - Using group operations — for multiple VMs:
 
         1. In the list of virtual machines, select the VMs whose state you want to change.
-        2. Above the list of VMs, click the button with the desired action.
+        2. Above the list of VMs, click the button with the required action.
         3. Confirm the action.
 
     - Through the context menu — for one VM:
 
-        1. In the list of virtual machines, find the VM whose state you want to change.
-        2. Expand the VM context menu.
-        3. Select and confirm the action.
+        1. Click ![ ](/en/assets/more-icon.svg "inline") for the VM whose state you want to change.
+        2. Select and confirm the action.
 
     - On the virtual machine page:
 
         1. In the list of virtual machines, click on the name of the VM whose state you want to change.
         2. On the VM page, go to the **General information** tab.
-        3. To the right above the table with VM parameters, click on the icon of the desired action.
+        3. To the right above the table with VM parameters, click on the icon of the required action.
         4. Confirm the action.
 
 </tabpanel>
@@ -130,9 +129,8 @@ The forced restart of the VM corresponds to the power off and on (power cycling)
 
     - Through the context menu:
 
-        1. In the list of virtual machines, find the VM you need.
-        2. Expand the VM context menu.
-        3. Click **Force reboot** and confirm the action.
+        1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VM.
+        2. Select **Force reboot** and confirm the action.
 
     - On the virtual machine page:
 
@@ -176,9 +174,8 @@ A blocked virtual machine cannot be started or stopped, nor can it be restarted.
 
     - Through the context menu:
 
-        1. In the list of virtual machines, find the VM you need.
-        2. Expand the VM context menu.
-        3. Select and confirm the action.
+        1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VM.
+        2. Select and confirm the action.
 
     - On the virtual machine page:
 
@@ -246,9 +243,8 @@ The deletion operation is irreversible! Save the necessary data before deleting 
 
       - Through the context menu — for one VM:
 
-         1. In the list of virtual machines, find the VM that you want to delete.
-         2. Expand the VM context menu.
-         3. Click **Delete** and confirm the action.
+         1. Click ![ ](/en/assets/more-icon.svg "inline") for the VM that you want to delete.
+         1. Select **Delete** and confirm the action.
 
       - On the virtual machine page:
 
@@ -296,10 +292,9 @@ If the VM type changes, the VM will be rebooted.
 
    - Through the context menu:
 
-      1. In the list of virtual machines, find the VM you need.
-      2. Expand the VM context menu.
-      3. Select an action.
-      4. Fill in the input field and click **Save**.
+      1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VM.
+      1. Select an action.
+      1. Fill in the input field and click **Save**.
 
    - On the virtual machine page:
 
@@ -315,7 +310,7 @@ If the VM type changes, the VM will be rebooted.
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-2. Perform the desired action.
+2. Perform the required action.
 
    - Rename VM:
 
@@ -355,7 +350,7 @@ Tags allow you to filter the list of virtual machines and find the right VM fast
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
-3. Expand the VM context menu.
+3. Click ![ ](/en/assets/more-icon.svg "inline") for the required VM.
 4. Check the tags or click **Create a new tag**.
 5. To add a new tag, enter its name, select a color, and click **Add tag**.
 
@@ -451,11 +446,10 @@ systemctl status qemu-guest-agent
 
     - Through the context menu:
 
-        1. In the list of virtual machines, find the VM you need.
-        2. Expand the VM context menu.
-        3. Choose **Set password**.
-        4. Enter a new password or click **Generate**.
-        5. Click **Set password**.
+        1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VM.
+        1. Select **Set password**.
+        1. Enter a new password or click **Generate**.
+        1. Click **Set password**.
 
     - On the virtual machine page:
 
@@ -511,9 +505,8 @@ If the password was changed after the VM was created or the VM was created on th
 
     - Through the context menu:
 
-        1. In the list of virtual machines, find the VM you need.
-        2. Expand the VM context menu.
-        3. Choose **Get password**.
+        1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VM.
+        1. Select **Get password**.
 
     - On the virtual machine page:
 

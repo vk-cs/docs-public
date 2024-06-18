@@ -114,7 +114,7 @@ After performing this operation, the existing public keys on the cluster will be
 1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
-1. Expand the menu of the necessary cluster and select **Invalidate**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Invalidate**.
 1. In the window that appears, perform one of the following actions:
    - Upload the public part of the new key pair, if you have created it yourself;
    - Create a new key pair using the service;
@@ -144,9 +144,9 @@ To delete a cluster:
 1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
-1. Perform one of the actions for the necessary cluster:
+1. Perform one of the actions for the required cluster:
    - Select the cluster using the checkbox, then click **Delete**.
-   - Expand the cluster menu and select **Delete Cluster**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the cluster and select **Delete Cluster**.
 1. In the window that appears:
    1. Select the option if you want to delete the cluster along with its disks.
    1. Click the **Delete cluster** button.

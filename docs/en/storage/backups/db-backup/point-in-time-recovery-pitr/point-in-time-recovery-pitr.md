@@ -42,7 +42,7 @@ When creating a PITR schedule, DBMS logs will be copied.
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Databases** → **Backup**.
 1. Go to the **Point-in-time recovery** tab.
-1. Expand the menu of the desired schedule and select the **Edit schedule** option.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required schedule and select **Edit schedule**.
 1. Make the necessary changes and click the **Save schedule**.
 
 </tabpanel>
@@ -59,7 +59,7 @@ When creating a PITR schedule, DBMS logs will be copied.
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Databases** → **Backup**.
 1. Go to the **Point-in-time recovery** tab.
-1. Click on the name of the desired schedule.
+1. Click on the name of the required schedule.
 
 A list of backups for the selected schedule will be displayed.
 
@@ -77,8 +77,8 @@ A list of backups for the selected schedule will be displayed.
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. Go to **Databases** → **Backup**.
 1. Go to the **Point-in-time recovery** tab.
-1. Click on the name of the desired schedule.
-1. Expand the menu of the desired backup and select the **Restore from backup** option.
+1. Click on the name of the required schedule.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required backup and select **Restore from backup**.
 1. On “Create instance” step specify the necessary parameters and click the **Next step**.
 1. (Optional) Specify the date and time of the required backup in the field of the same name. If you leave the field empty, the last backup created will be automatically selected.
 1. Click the **Create database**.

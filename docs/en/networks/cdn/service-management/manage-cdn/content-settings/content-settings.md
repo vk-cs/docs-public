@@ -15,7 +15,8 @@ To clear a cache of a CDN resource:
 
 1. Clear the cache with one of the following ways:
 
-    - Click ![menu-icon](/en/assets/menu-icon.svg "inline") for the resource you need and select **Clear CDN cache**.
+    - Click ![ ](/en/assets/more-icon.svg "inline") for the required resource and select **Clear 
+      CDN cache**.
     - Click the name of the personal domain you need and go to the **Content** tab.
 
 1. In the **Clear cache** section, select the type of clearance:
@@ -85,7 +86,7 @@ To preload a cache of a CDN resource:
 
 1. Upload the content with one of the following ways:
 
-    - Click ![menu-icon](/en/assets/menu-icon.svg "inline") for the resource you need and select **Uploading to CDN**.
+    - Click ![ ](/en/assets/more-icon.svg "inline") for the required resource and select **Uploading to CDN**.
     - Click the name of the personal domain you need and go to the **Content** tab.
 
 1. In the **Filling the cache** specify the path to the files on the origin without the domain name and one per line.

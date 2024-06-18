@@ -10,7 +10,7 @@ You can install extensions for DB instances and change extension parameters. Dep
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired DB instance is located.
+1. Select the project where the required DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Click on the instance name and go to the **Plugins** tab.
 
@@ -18,7 +18,7 @@ You can install extensions for DB instances and change extension parameters. Dep
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired DB instance is located.
+1. Select the project where the required DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Click on the instance name and go to the **Extensions** tab.
 
@@ -35,9 +35,9 @@ You can install extensions for DB instances and change extension parameters. Dep
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired DB instance is located.
+1. Select the project where the required DB instance is located.
 1. Go to **Databases → Database instances**.
-1. Make sure that the desired DB instance is running.
+1. Make sure that the required DB instance is running.
 1. Click on the instance name and go to the **Plugins** tab.
 1. Click the **Add** button.
 1. Select one or more extensions to install from the list.
@@ -49,9 +49,9 @@ You can install extensions for DB instances and change extension parameters. Dep
 <tabpanel>
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired DB instance is located.
+1. Select the project where the required DB instance is located.
 1. Go to **Databases → Database instances**.
-1. Make sure that the desired DB instance is running.
+1. Make sure that the required DB instance is running.
 1. Click on the instance name and go to the **Extensions** tab.
 1. Click the **Add** button.
 1. Select the extension to install from the list.
@@ -59,7 +59,7 @@ You can install extensions for DB instances and change extension parameters. Dep
 1. If necessary, edit the optional extension parameters:
 
    1. Click the link **Add parameter**.
-   1. Select the desired parameter from the drop-down list and specify its value. If necessary, add more parameters.
+   1. Select the required parameter from the drop-down list and specify its value. If necessary, add more parameters.
 
       <info>
 
@@ -85,9 +85,9 @@ Changing extension parameters is not available for OpenSearch.
 To change the extension settings:
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Select the project where the desired DB instance is located.
+1. Select the project where the required DB instance is located.
 1. Go to **Databases → Database instances**.
-1. Make sure that the desired DB instance is running.
+1. Make sure that the required DB instance is running.
 1. Click on the instance name and go to the **Extensions** tab.
 1. Click on the icon ![Pencil](./assets/pencil-icon.svg "inline") in the extension line whose parameters you want to change.
 1. Change the extension settings.

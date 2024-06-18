@@ -113,8 +113,7 @@ To send and receive traffic, assign a security group to the VM. For previously c
 
 1. Go to [personal account](https://msk.cloud.vk.com/app/) VK Cloud.
 1. Go to **Cloud Computing** → **Virtual Machines**.
-1. Click on the menu in the virtual machine row.
-1. Select **Firewall Settings** from the menu list.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the virtual machine and select **Firewall Settings**.
 1. Find the rule group created in step 3 in the list.
 1. Click **Apply** in the line with the rule group.
 1. Press **Confirm**.

@@ -154,7 +154,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 1. Perform one of the actions for the load balancer you want to edit:
 
    - Click on the balancer name.
-   - Expand the balancer menu and select **Edit balancers**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the balancer and select **Edit balancers**.
 
    This will open a page detailing the balancer.
 
@@ -224,7 +224,7 @@ If the balancer network is connected to a router with Internet access, you can a
 
      On the balancer details page, click the **Assign external IP** link in the **IP address** → **External IP** block.
 
-   - Expand the menu of the necessary balancer and select **Assign external IP**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the required balancer and select **Assign external IP**.
 
 1. Select the necessary public IP address from the list, or create a new one.
 1. Click the **Confirm** button.
@@ -263,7 +263,7 @@ If the balancer network is connected to a router with Internet access, and a pub
 
      On the balancer details page, click the **x** symbol next to the IP address in the **IP address** → **External IP** section.
 
-   - Expand the menu of the necessary balancer and select **Unlink external IP**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the required balancer and select **Unlink external IP**.
 
 1. Click **Confirm**.
 
@@ -574,7 +574,7 @@ To remove a load balancer:
 1. Perform one of the actions for the necessary load balancer:
 
    - Select the balancer using the checkbox, then click **Delete**.
-   - Expand the balancer menu and select **Delete balancer**.
+   - Click ![ ](/en/assets/more-icon.svg "inline") for the balancer and select **Delete balancer**.
 
 1. Confirm the removal of the balancer.
 

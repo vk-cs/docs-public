@@ -16,7 +16,7 @@ Before performing any operation on a cluster from Terraform, read the informatio
 1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
-1. Expand the menu of the necessary cluster and select **Add node group**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Add node group**.
 1. Set [settings](../helpers/node-group-settings/) for the node group.
 1. Click the **Add node group** button.
 
@@ -111,7 +111,7 @@ Labels and taints can be set both with the interfaces supported by the VK Cloud 
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.
-1. Expand the menu of the necessary node group and select **Labels and Taints**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Labels and Taints**.
 1. Do the necessary actions.
 
    - Manage labels:
@@ -216,7 +216,7 @@ To increase update speed, the container service updates multiple nodes in a grou
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.
-1. Expand the menu of the necessary node group and select **Node update**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Node update**.
 1. Specify the necessary percentage.
 1. Click the **Save changes** button.
 
@@ -281,7 +281,7 @@ The single cluster node group cannot be deleted from the personal account. Howev
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.
-1. Expand the menu of the necessary node group and select **Delete**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required node group and select **Delete**.
 1. Click the **Confirm** button.
 
 </tabpanel>

@@ -98,7 +98,7 @@ For most providers, it is possible to delegate zone management independently. If
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
-1. Expand the menu of the desired zone and select **Edit**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required zone and select **Edit**.
 1. Make the changes and click **Save changes**.
 
 </tabpanel>
@@ -148,7 +148,7 @@ This is a group operation: if necessary, you can delete several zones at once by
 1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
-1. Expand the menu of the desired zone and select **Delete**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required zone and select **Delete**.
 1. Confirm the action.
 
 </tabpanel>
@@ -310,7 +310,7 @@ Use the methods from the specification in [API documentation](/ru/tools-for-usin
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click on the name of the zone for which you want to change the resource record.
-1. Expand the menu of the desired entry and select **Edit**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required entry and select **Edit**.
 1. Make the changes and click **Save changes**.
 
 </tabpanel>
@@ -336,7 +336,7 @@ This is a group operation: if necessary, you can delete several records at once 
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click on the name of the zone for which you want to delete the resource record.
-1. Expand the menu of the desired entry and select **Delete**.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the required entry and select **Delete**.
 1. Confirm the action.
 
 </tabpanel>

@@ -40,7 +40,7 @@ You can only add one BGP router per advanced router.
 1. Open the editing page of the dynamic router by one of the following ways:
 
     - Click the name of the BGP router, then click the **Edit** button.
-    - Expand the BGP router menu and select **Edit**.
+    - Click ![ ](/en/assets/more-icon.svg "inline") for the BGP router and select **Edit**.
 
 1. You can do the following:
 
@@ -68,7 +68,7 @@ You can only add one BGP router per advanced router.
 1. Go to the **Dynamic Routing** tab.
 1. Delete the router in one of the following ways:
 
-    - Expand the router menu and select **Delete**.
+    - Click ![ ](/en/assets/more-icon.svg "inline") for the router and select **Delete**.
     - Set the checkbox for the required router, then click the **Delete** button above the table.
 1. Confirm the deletion.
 
@@ -122,7 +122,7 @@ After you add the BGP neighbor, the router will try to establish a connection wi
 1. Open the editing window of the BGP neighbor by one of the following ways:
 
     - Click the BGP neighbor name, then click the **Edit** button.
-    - Expand the BGP neighbor menu and select **Edit**.
+    - Click ![ ](/en/assets/more-icon.svg "inline") for the BGP neighbor and select **Edit**.
 
 1. You can do the following:
 
@@ -160,7 +160,7 @@ This is a group operation: you can delete several neighbors at once by setting t
 1. Select the BGP neighbor.
 1. Delete the BGP neighbor in one of the following ways:
 
-    - Expand the BGP neighbor menu and select **Delete**.
+    - Click ![ ](/en/assets/more-icon.svg "inline") for the BGP neighbor and select **Delete**.
     - Set the checkbox for the required BGP neighbor, then click the **Delete** button above the table.
     - Click the name of the BGP neighbor, then click the **Delete** button above the table.
 1. Confirm the deletion.
@@ -253,7 +253,7 @@ You can only edit the **Static** announcements.
 1. Select the BGP router and then go to the **BGP announcements** tab.
 1. Open the editing page of the BGP announcement by one of the following ways:
 
-    - Expand the announcement menu and select **Edit**.
+    - Click ![ ](/en/assets/more-icon.svg "inline") for the announcement and select **Edit**.
     - Click the IP address of the announced subnet, then click the **Edit** button.
 
 1. You can do the following:
@@ -283,7 +283,7 @@ This is a group operation: you can delete several announcements at once by selec
 1. Select the BGP announcement.
 1. Delete the BGP announcement in one of the following ways:
 
-    - Expand the BGP announcement menu and select **Delete**.
+    - Click ![ ](/en/assets/more-icon.svg "inline") for the BGP announcement and select **Delete**.
     - Set the checkbox for the required BGP announcement, then click the **Delete** button above the table.
     - (For **Static** only) Click the BGP announcement name, then click the **Delete** button above the table.
 1. Confirm the deletion.

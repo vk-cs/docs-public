@@ -16,7 +16,7 @@ To conclude an individual contract:
    - full name of the organization and its details;
    - full name and phone number of the contact person.
 
-The manager will contact you to clarify the desired terms of the contract.
+The manager will contact you to clarify the required terms of the contract.
 
 ## Setting up the workflow
 

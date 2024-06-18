@@ -23,7 +23,7 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
    A page with detailed information about the network will open. This will include a list of subnets on that network.
 
-1. Tap on the name of the desired subnet.
+1. Tap on the name of the required subnet.
 
    A page detailing the network information will be displayed.
 
@@ -177,9 +177,8 @@ All the network's subnets and ports will be deleted along with the network.
 <tabpanel>
 
 1. In personal account, go to **Virtual networks** → **Networks**.
-2. Click the menu icon in the row of the network you want to delete.
-3. In the menu that opens, click **Delete network**.
-4. In the window that opens, click the **Confirm** button.
+1. Click ![ ](/en/assets/more-icon.svg "inline") for the network you want to delete and select **Delete network**.
+1. In the window that opens, click the **Confirm** button.
 
 </tabpanel>
 <tabpanel>
@@ -277,10 +276,9 @@ All the network's subnets and ports will be deleted along with the network.
 
 1. In personal account, go to **Virtual networks** → **Networks**.
 2. Click on the name of the cloud network where the subnet is located.
-3. Click the menu icon in the row of the subnet you want to change.
-4. On the menu that opens, click **Edit subnet**.
-5. Make the necessary changes.
-6. Click the **Save** button.
+3. Click ![ ](/en/assets/more-icon.svg "inline") for the subnet you want to change and select **Edit subnet**.
+4. Make the necessary changes.
+5. Click the **Save** button.
 
 </tabpanel>
 <tabpanel>
@@ -353,8 +351,7 @@ Once a subnet is deleted, it cannot be restored.
 
 1. In personal account, go to **Virtual networks** → **Networks**.
 2. Click on the name of the cloud network where the subnet is located.
-3. Click the menu icon in the row of the subnet you want to delete.
-4. On the menu that opens, click the **Delete Subnet** button.
+3. Click ![ ](/en/assets/more-icon.svg "inline") for the subnet you want to delete and select **Delete Subnet**.
 5. In the window that opens, click the **Confirm** button.
 
 </tabpanel>

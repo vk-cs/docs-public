@@ -9,7 +9,7 @@ The article will tell you how to install monitoring in a new virtual machine.
         1. “Linux virtual machine”.
     3. Select a metric from the list.
     4. Select a unit of measure.
-        1. For standard metrics, we have already set the desired unit of measure.
+        1. For standard metrics, we have already set the required unit of measure.
     5. Select a filter condition for this metric.
         1. It is possible to select several filtering conditions.
     6. Select the field by which you want to group the received metrics data.
