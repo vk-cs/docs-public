@@ -5,7 +5,7 @@ Velero — это клиент-серверная утилита для резе
 1. Убедитесь, что:
 
    - либо в группах worker-узлов есть минимум 2 свободных vCPU;
-   - либо [включено автоматическое масштабирование](../../service-management/scale#nastroyka_avtomaticheskogo_masshtabirovaniya_grupp_worker_uzlov_1f8b2c54).
+   - либо [включено автоматическое масштабирование](../../service-management/scale#autoscale_worker_nodes).
 
 1. [Убедитесь](../../connect/kubectl#proverka_podklyucheniya_k_klasteru), что вы можете подключиться к кластеру с помощью `kubectl`.
 1. [Установите](/ru/tools-for-using-services/cli/openstack-cli/) OpenStack CLI, если он еще не установлен. [Убедитесь](/ru/tools-for-using-services/cli/openstack-cli/), что вы можете авторизоваться в облаке с его помощью.

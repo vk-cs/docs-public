@@ -10,7 +10,23 @@ Two types of scaling are supported:
 
 - _Horizontal scaling_: The number of worker nodes within a separate node group is changed. In this way, you can manage the computing resources of the cluster without affecting the virtual machine templates that are used by the nodes.
 
-Both types of scaling are performed manually. Also [can be customized](../../service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) automatic horizontal scaling for a group of nodes (autoscaling): the number of worker nodes in the group will be adjusted depending on the needs of the workload. This mechanism allows you to save up to 60% on computing power.
+Both types of scaling are performed manually. [Autoscaling](#autoscaling) also works.
+
+## {heading(Autoscaling)[id=autoscaling]}
+
+_Vertical autoscaling_ of master nodes works for all clusters, you cannot disable it.
+
+Vertical autoscaling agent evaluates the master node load by CPU and RAM, monitoring the following threshold values:
+
+- CPU load exceeds 80% for 30 seconds
+- CPU load exceeds 60% for 5 minutes
+- RAM load exceeds 65% for 60 seconds
+
+If at least one of the thresholds is exceeded, a request will be sent to the [Cloud Containers](/en/kubernetes/k8s) service to change the master node VM flavor. In this case, the CPU and RAM values ​​will be doubled. For example, the flavor `STD2-2-4` will be changed to `STD2-4-8`.
+
+You can change the master node VM flavor to a flavor with smaller CPU and RAM only [in manual mode](../../service-management/scale#scale_master_nodes).
+
+You can [configure](../../service-management/scale#autoscale_worker_nodes) _horizontal autoscaling_ for a group of nodes. The number of worker nodes in the group will be automatically adjusted depending on the needs of the workload. This mechanism allows you to save up to 60% on computing power.
 
 ## Current restrictions
 
