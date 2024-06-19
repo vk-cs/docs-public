@@ -8,7 +8,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 Jaeger add-on [system requirements](../../../../concepts/addons-and-settings/addons#jaeger) depend on the selected number of Elasticsearch replicas and the cluster environment. The minimum number of replicas is two, the default is three. Their number can be changed during the standard installation or installation on dedicated worker nodes.
 
-If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_nodes_c172481b) for groups of worker nodes or [configure automatic scaling](../../../scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) before install.
+If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) for groups of worker nodes or [configure automatic scaling](../../../scale#autoscale_worker_nodes) before install.
 
 <tabs>
 <tablist>
