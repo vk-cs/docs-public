@@ -22,7 +22,7 @@ Projects created in different regions have different:
 
 - a set of available services;
 - set of [quotas](../quotasandlimits);
-- addresses of [VK Cloud API endpoints](/en/tools-for-using-services/rest-api);
+- addresses of [VK Cloud API endpoints](/en/tools-for-using-services/api/rest-api);
 - the name of the region in the configuration files [openrc](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) and [Terraform](/en/tools-for-using-services/terraform/quick-start).
 
 <warn>

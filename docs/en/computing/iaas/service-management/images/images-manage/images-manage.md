@@ -128,7 +128,7 @@ The parameters of the image import command depend on the need for backup support
 </tabpanel>
 <tabpanel>
 
-1. [Get](/en/tools-for-using-services/rest-api/case-keystone-token) the access token `X-Auth-Token`.
+1. [Get](/en/tools-for-using-services/api/rest-api/case-keystone-token) the access token `X-Auth-Token`.
 1. Run the command:
 
    ```bash

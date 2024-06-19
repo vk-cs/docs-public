@@ -55,7 +55,7 @@ Prepare the user and get all the necessary credentials:
 
    User Requirements:
 
-   - API access must be [enabled](/en/tools-for-using-services/rest-api/enable-api).
+   - API access must be [enabled](/en/tools-for-using-services/api/rest-api/enable-api).
    - One of the following roles must be [assigned](/en/tools-for-using-services/account/service-management/project-settings/access-manage#changing_member_role) in order for ExternalDNS to operate resource records within the DNS zone:
 
      - Network Administrator (a minimum required [role](/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_and_their_permissions_the_full_matrix)).
@@ -142,10 +142,10 @@ Prepare the user and get all the necessary credentials:
    txtPrefix: externaldns-
 
    provider: webhook
-   
+
    extraArgs:
      webhook-provider-url: http://localhost:8888
-   
+
    sidecars:
      - name: vkcs-plugin
        image: registry.infra.mail.ru:5010/external-dns-vkcs-plugin:latest
@@ -303,13 +303,13 @@ Prepare the user and get all the necessary credentials:
 
    NAME                                     READY   STATUS    RESTARTS   AGE
    pod/external-dns-vkcs-NNNNNNNNNN-MMMMM   2/2     Running   0          ...
-   
+
    NAME                        TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
    service/external-dns-vkcs   ClusterIP   10.254.169.195   <none>        7979/TCP   ...
-   
+
    NAME                                READY   UP-TO-DATE   AVAILABLE   AGE
    deployment.apps/external-dns-vkcs   1/1     1            1           87s
-   
+
    NAME                                           DESIRED   CURRENT   READY   AGE
    replicaset.apps/external-dns-vkcs-NNNNNNNNNN   1         1         1       ...
    ```
@@ -601,11 +601,11 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
    ```text
    NAME                                DESIRED   CURRENT   READY   AGE
    replicaset.apps/coffee-YYYYYYYYY    2         2         2       ...
-   
+
    NAME                         READY   STATUS    RESTARTS   AGE
    pod/coffee-YYYYYYYYY-DDDDD   1/1     Running   0          ...
    pod/coffee-YYYYYYYYY-EEEEE   1/1     Running   0          ...
-   
+
    NAME                 TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
    service/coffee-svc   ClusterIP   10.254.243.13   <none>        80/TCP    ...
    ```
@@ -724,7 +724,7 @@ Next, several demo applications based on [NGINX's Cafe example](https://github.c
       ```bash
       kubectl delete -f tea-service.yaml -f tea-app.yaml
       ```
-  
+
    1. [Delete the Ingress NGINX add-on](../../service-management/addons/manage-addons#removing_addon).
 
       It may take a long time to remove the add-on and its associated resources.

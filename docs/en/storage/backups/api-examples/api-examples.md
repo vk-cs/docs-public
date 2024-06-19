@@ -4,7 +4,7 @@ The following are some examples of using the VK Cloud [Karboii API](/ru/tools-fo
 
 To follow the examples given:
 
-1. Make sure that [two-factor authentication](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa) and [API access](/en/tools-for-using-services/rest-api/enable-api) are enabled.
+1. Make sure that [two-factor authentication](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa) and [API access](/en/tools-for-using-services/api/rest-api/enable-api) are enabled.
 1. [Get an access token](/ru/tools-for-using-services/api/rest-api/case-keystone-token "change-lang") `X-Subject-Token`.
 1. [Find out](https://msk.cloud.vk.com/app/en/project/endpoints) the endpoint for the Karboii service.
 
