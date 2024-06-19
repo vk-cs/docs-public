@@ -594,7 +594,7 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-2. Get [access token](/en/tools-for-using-services/rest-api//case-keystone-token).
+2. Get [access token](/en/tools-for-using-services/api/rest-api//case-keystone-token).
 3. View the list of virtual machines and copy the ID of the virtual machine whose main disk needs to be replaced:
 
    ```bash
