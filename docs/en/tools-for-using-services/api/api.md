@@ -1,0 +1,1 @@
+Managing VK Cloud services via API. Specifics of connection and the description of endpoints
