@@ -44,6 +44,11 @@
     "full": "Kube Prometheus Stack",
     "text": "Kube Prometheus Stack"
   },
+  "autoscaling": {
+    "number": null,
+    "full": "Автоматическое масштабирование",
+    "text": "Автоматическое масштабирование"
+  },
   "viewing_addons": {
     "number": null,
     "full": "Viewing add-ons",
@@ -83,6 +88,21 @@
     "number": null,
     "full": "Editing add-on settings code during installation",
     "text": "Editing add-on settings code during installation"
+  },
+  "scale_master_nodes": {
+    "number": null,
+    "full": "Масштабирование master-узлов",
+    "text": "Масштабирование master-узлов"
+  },
+  "scale_worker_nodes": {
+    "number": null,
+    "full": "Масштабирование групп worker-узлов",
+    "text": "Масштабирование групп worker-узлов"
+  },
+  "autoscale_worker_nodes": {
+    "number": null,
+    "full": "Настройка автоматического масштабирования групп worker-узлов",
+    "text": "Настройка автоматического масштабирования групп worker-узлов"
   },
   "1_get_information_you_need_to_update_your_addon": {
     "number": null,
