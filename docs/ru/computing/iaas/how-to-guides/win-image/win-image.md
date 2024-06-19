@@ -35,7 +35,7 @@
     Get-WindowsImage -ImagePath E:\sources\Install.wim
     ```
 
-    Здесь `E:\sources\Install.wim` — полный пусть к WIM-файлу системы на смонтированном диске.
+    Здесь `E:\sources\Install.wim` — полный путь к WIM-файлу системы на смонтированном диске.
 
     Появится список редакций с указанием `ImageIndex` ее номера:
 
