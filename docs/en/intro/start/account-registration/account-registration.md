@@ -120,7 +120,7 @@ VK Cloud supports working with the platform using [additional tools](/en/tools-f
 </info>
 
 1. [Enable](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa/) 2FA for account.
-1. [Activate](/en/tools-for-using-services/rest-api/enable-api) API access.
+1. [Activate](/en/tools-for-using-services/api/rest-api/enable-api) API access.
 
 ## 4. (Optional) Invite other users
 
