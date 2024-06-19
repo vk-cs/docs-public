@@ -123,5 +123,15 @@
     "number": null,
     "full": "Fluent Bit для Cloud Logging (logaas-integration)",
     "text": "Fluent Bit для Cloud Logging (logaas-integration)"
+  },
+  "configure_network_connectivity": {
+    "number": null,
+    "full": "2. Настройте сетевую связанность для доступа к базе 1С из клиентской сети",
+    "text": "2. Настройте сетевую связанность для доступа к базе 1С из клиентской сети"
+  },
+  "import_1C_information_base": {
+    "number": null,
+    "full": "3. Импортируйте информационную базу 1С в облачную инфраструктуру",
+    "text": "3. Импортируйте информационную базу 1С в облачную инфраструктуру"
   }
 }

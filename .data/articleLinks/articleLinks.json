@@ -16201,11 +16201,15 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
-    "http://localhost:3000/docs/ru/networks/vnet/service-management/net"
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs#configure_network_connectivity"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
-    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#redaktirovanie_podseti"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#ustanovka_i_izmenenie_parolya"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/secgroups#sozdanie_gruppy_bezopasnosti"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
