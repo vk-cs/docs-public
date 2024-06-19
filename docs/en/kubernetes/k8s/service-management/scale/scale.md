@@ -4,7 +4,7 @@ You can perform [Cloud Containers cluster scaling](../../concepts/scale) manuall
 
 This type of scaling is applicable for master nodes and groups of worker nodes. During the scaling process, [virtual machine templates](../../concepts/flavors) are changed for cluster nodes, the number of nodes remains the same. If you need to change the number of worker nodes in a group, [perform horizontal scaling](#horizontal_scaling)
 
-### Scaling of master nodes
+### {heading(Scaling of master nodes)[id=scale_master_nodes]}
 
 1. [Learn how the vertical scaling mechanism works](../../concepts/scale).
 
@@ -103,7 +103,7 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
    </tabpanel>
    </tabs>
 
-### Scaling groups of worker nodes
+### {heading(Scaling groups of worker nodes)[id=scale_worker_nodes]}
 
 1. [Learn how the vertical scaling mechanism works](../../concepts/scale).
 
@@ -291,7 +291,7 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
    </tabpanel>
    </tabs>
 
-### Configure automatic scaling for worker node groups
+### {heading(Configuring automatic scaling for worker node groups)[id=autoscale_worker_nodes]}
 
 1. [Learn how the horizontal scaling mechanism works](../../concepts/scale).
 

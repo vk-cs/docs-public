@@ -4,7 +4,7 @@ Only [standard installation](../../../../concepts/addons-and-settings/addons#fea
 
 The add-on will be installed as a [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) controller on all nodes in the cluster, including master nodes.
 
-Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of add-ons that will be placed on worker node groups. If necessary, [perform manual scaling](../../../scale#scaling_groups_of_worker_nodes_c172481b) for worker node groups or [configure automatic scaling](../../../scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af) before installation.
+Take into account the total [maximum system requirements](../../../../concepts/addons-and-settings/addons) of add-ons that will be placed on groups of worker nodes. If necessary, [perform manual scaling](../../../scale#scale_worker_nodes) groups of worker nodes or [set up automatic scaling](../../../scale#autoscale_worker_nodes) before installation.
 
 <tabpanel>
    <tabs>
