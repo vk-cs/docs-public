@@ -5,7 +5,7 @@ Velero is a client-server utility for backing up and restoring Kubernetes cluste
 1. Make sure that:
 
    - Either the worker node groups have at least 2 vCPUs available;
-   - Or [automatic scaling is enabled](../../service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af).
+   - Or [automatic scaling is enabled](../../service-management/scale#autoscale_worker_nodes).
 
 1. [Make sure](../../connect/kubectl#checking_the_connection_to_the_cluster) that you can connect to the cluster with `kubectl`.
 1. [Install](/en/tools-for-using-services/cli/openstack-cli/) OpenStack CLI if it is not already installed. [Make sure](/en/tools-for-using-services/cli/openstack-cli/) that you can authorize in the cloud using it.
