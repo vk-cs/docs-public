@@ -511,6 +511,12 @@
 /docs/en/applications-and-services/1cgrm/tariffication
 /docs/en/applications-and-services/1cgrm/faq
 /docs/en/tools-for-using-services
+/docs/en/tools-for-using-services/api
+/docs/en/tools-for-using-services/api/rest-api
+/docs/en/tools-for-using-services/api/rest-api/enable-api
+/docs/en/tools-for-using-services/api/rest-api/case-keystone-token
+/docs/en/tools-for-using-services/api/rest-api/endpoints
+/docs/en/tools-for-using-services/api/rest-api/install-jq
 /docs/en/tools-for-using-services/account
 /docs/en/tools-for-using-services/account/concepts
 /docs/en/tools-for-using-services/account/concepts/projects
@@ -540,11 +546,6 @@
 /docs/en/tools-for-using-services/account/faq
 /docs/en/tools-for-using-services/cli
 /docs/en/tools-for-using-services/cli/openstack-cli
-/docs/en/tools-for-using-services/rest-api
-/docs/en/tools-for-using-services/rest-api/case-keystone-token
-/docs/en/tools-for-using-services/rest-api/enable-api
-/docs/en/tools-for-using-services/rest-api/endpoints
-/docs/en/tools-for-using-services/rest-api/install-jq
 /docs/en/tools-for-using-services/terraform
 /docs/en/tools-for-using-services/terraform/quick-start
 /docs/en/tools-for-using-services/terraform/how-to-guides
