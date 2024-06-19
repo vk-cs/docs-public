@@ -4217,7 +4217,19 @@
   ],
   [
     "/en/kubernetes/k8s/concepts/scale",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af"
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/scale#autoscaling"
+  ],
+  [
+    "/en/kubernetes/k8s/concepts/scale",
+    "http://localhost:3000/docs/en/kubernetes/k8s"
+  ],
+  [
+    "/en/kubernetes/k8s/concepts/scale",
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#scale_master_nodes"
+  ],
+  [
+    "/en/kubernetes/k8s/concepts/scale",
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/en/kubernetes/k8s/concepts/scale",
@@ -4625,7 +4637,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule",
@@ -4677,7 +4689,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager",
@@ -4753,7 +4765,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
@@ -4817,7 +4829,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
@@ -4837,7 +4849,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
@@ -4885,7 +4897,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
@@ -4965,7 +4977,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-istio",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-istio",
@@ -5025,7 +5037,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
@@ -5093,7 +5105,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali",
@@ -5157,7 +5169,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring",
@@ -5937,7 +5949,7 @@
   ],
   [
     "/en/kubernetes/k8s/install-tools/velero",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#configure_automatic_scaling_for_worker_node_groups_6b2cb0af"
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/en/kubernetes/k8s/install-tools/velero",
@@ -13201,7 +13213,19 @@
   ],
   [
     "/ru/kubernetes/k8s/concepts/scale",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#nastroyka_avtomaticheskogo_masshtabirovaniya_grupp_worker_uzlov_1f8b2c54"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/scale#autoscaling"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/scale",
+    "http://localhost:3000/docs/ru/kubernetes/k8s"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/scale",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#scale_master_nodes"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/scale",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/ru/kubernetes/k8s/concepts/scale",
@@ -13685,7 +13709,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#nastroyka_avtomaticheskogo_masshtabirovaniya_grupp_worker_uzlov_1f8b2c54"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-capsule",
@@ -13725,7 +13749,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#nastroyka_avtomaticheskogo_masshtabirovaniya_grupp_worker_uzlov_1f8b2c54"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-cert-manager",
@@ -13781,7 +13805,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#nastroyka_avtomaticheskogo_masshtabirovaniya_grupp_worker_uzlov_1f8b2c54"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry",
@@ -13833,7 +13857,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#nastroyka_avtomaticheskogo_masshtabirovaniya_grupp_worker_uzlov_1f8b2c54"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-fluent-bit",
@@ -13853,7 +13877,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#nastroyka_avtomaticheskogo_masshtabirovaniya_grupp_worker_uzlov_1f8b2c54"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-logaas-integration",
@@ -13893,7 +13917,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#nastroyka_avtomaticheskogo_masshtabirovaniya_grupp_worker_uzlov_1f8b2c54"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-ingress",
@@ -13961,7 +13985,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-istio",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#nastroyka_avtomaticheskogo_masshtabirovaniya_grupp_worker_uzlov_1f8b2c54"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-istio",
@@ -14009,7 +14033,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#nastroyka_avtomaticheskogo_masshtabirovaniya_grupp_worker_uzlov_1f8b2c54"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
@@ -14073,7 +14097,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#nastroyka_avtomaticheskogo_masshtabirovaniya_grupp_worker_uzlov_1f8b2c54"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-kiali",
@@ -14125,7 +14149,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#nastroyka_avtomaticheskogo_masshtabirovaniya_grupp_worker_uzlov_1f8b2c54"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-monitoring",
@@ -14945,7 +14969,7 @@
   ],
   [
     "/ru/kubernetes/k8s/install-tools/velero",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#nastroyka_avtomaticheskogo_masshtabirovaniya_grupp_worker_uzlov_1f8b2c54"
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/scale#autoscale_worker_nodes"
   ],
   [
     "/ru/kubernetes/k8s/install-tools/velero",
