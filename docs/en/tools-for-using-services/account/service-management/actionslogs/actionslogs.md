@@ -91,7 +91,7 @@ Each action log record provides the information:
 
 ## Examples of API requests to the action log
 
-To split the output of records to the console or file into lines, the requests use [the jq utility](/en/tools-for-using-services/rest-api/install-jq).
+To split the output of records to the console or file into lines, the requests use [the jq utility](/en/tools-for-using-services/api/rest-api/install-jq).
 
 <details>
     <summary>Retrieving the latest log records</summary>
@@ -201,7 +201,7 @@ Response example:
     }
   ],
   "marker": "eyJ0bSI6MTY5NzM2NDAwMCwib2ZzIjo1LCJXXXX"
-} 
+}
 ```
 
 </details>

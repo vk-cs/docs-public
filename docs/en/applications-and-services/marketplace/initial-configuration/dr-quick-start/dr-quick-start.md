@@ -59,20 +59,20 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
    - hosts: all
      vars:
        ansible_ssh_pipelining: true
-   
+
      tasks:
        - name: Generate URL rpm
          set_fact:
            download_url: "https://{{ acura_host }}/linux_agent/{{ customer_id }}?dist_type=rpm&platform=x64"
            remote_path: /tmp/hlragent.rpm
          when: ansible_os_family == "RedHat"
-   
+
        - name: Generate URL deb
          set_fact:
            download_url: "https://{{ acura_host }}/linux_agent/{{ customer_id }}?dist_type=deb&platform=x64"
            remote_path: /tmp/hlragent.deb
          when: ansible_os_family == "Debian"
-   
+
        - name: Download agent
          get_url:
            url: "{{ download_url }}"
@@ -81,21 +81,21 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
            validate_certs: no
            timeout: 300
          become: yes
-   
+
        - name: Install Hystax Linux Replication Agent from rpm package
          yum:
            name: "{{ remote_path }}"
            state: present
          become: yes
          when: ansible_os_family == "RedHat"
-   
+
        - name: Install Hystax Linux Replication Agent from deb package
          apt:
            deb: "{{ remote_path }}"
            state: present
          become: yes
          when: ansible_os_family == "Debian"
-   
+
        - name: Remove package file
          file:
            path: "{{ remote_path }}"
@@ -223,7 +223,7 @@ By using the Hystax Acura Disaster Recovery service, you agree to the license ag
    - **Cloud name**: `VK Cloud`.
    - **Keystone API endpoint**: Keystone value from [endpoints list](https://msk.cloud.vk.com/app/mcs3723876490/project/endpoints), `https://infra.mail.ru:35357/v3/` for VK Cloud.
    - **User domain**: value **User Domain Name** of [project settings](https://msk.cloud.vk.com/app/project/keys).
-   - **Username**: user name with [API access](/en/tools-for-using-services/rest-api/enable-api) and a role not lower than the Project administrator.
+   - **Username**: user name with [API access](/en/tools-for-using-services/api/rest-api/enable-api) and a role not lower than the Project administrator.
    - **Password**: the user's password.
    - **Target project domain**: value **Project Domain ID** of [project settings](https://msk.cloud.vk.com/app/project/keys).
    - **Target project ID**: value **Project ID** of [project settings](https://msk.cloud.vk.com/app/project/keys)
