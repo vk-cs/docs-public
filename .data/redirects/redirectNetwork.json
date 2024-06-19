@@ -2023,13 +2023,13 @@
   },
   {
     "source": "/en/additionals/account/project/api",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/account/project/api/apiendpoints",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
@@ -2095,7 +2095,7 @@
   },
   {
     "source": "/en/additionals/account/project/quotas",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
@@ -2107,13 +2107,13 @@
   },
   {
     "source": "/en/additionals/account/project/quotas/view",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/additionals/account/project/view",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
@@ -3301,7 +3301,7 @@
   },
   {
     "source": "/en/additionals/cases/cases-examples/case-project-id",
-    "destination": "/en/tools-for-using-services/rest-api/case-keystone-token",
+    "destination": "/en/tools-for-using-services/api/rest-api/case-keystone-token",
     "permanent": false,
     "locale": false
   },
@@ -6343,31 +6343,31 @@
   },
   {
     "source": "/en/base/account/project/view",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/project/quotas",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/project/quotas/view",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/project/api/apiendpoints",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/project/api",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
@@ -7957,7 +7957,7 @@
   },
   {
     "source": "/en/additionals/cases/case-keystone-token",
-    "destination": "/en/tools-for-using-services/rest-api/case-keystone-token",
+    "destination": "/en/tools-for-using-services/api/rest-api/case-keystone-token",
     "permanent": false,
     "locale": false
   },
@@ -8965,31 +8965,31 @@
   },
   {
     "source": "/en/base/account/instructions/project-settings/view",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/instructions/project-settings/view",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/instructions/project-settings/view",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/instructions/project-settings/view",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/account/instructions/project-settings/view",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
@@ -16249,43 +16249,43 @@
   },
   {
     "source": "/en/manage/tools-for-using-services/rest-api",
-    "destination": "/en/tools-for-using-services/rest-api",
+    "destination": "/en/tools-for-using-services/api/rest-api",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/tools-for-using-services/rest-api",
-    "destination": "/en/tools-for-using-services/rest-api",
+    "destination": "/en/tools-for-using-services/api/rest-api",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/tools-for-using-services/rest-api/case-keystone-token",
-    "destination": "/en/tools-for-using-services/rest-api/case-keystone-token",
+    "destination": "/en/tools-for-using-services/api/rest-api/case-keystone-token",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/tools-for-using-services/rest-api/enable-api",
-    "destination": "/en/tools-for-using-services/rest-api/enable-api",
+    "destination": "/en/tools-for-using-services/api/rest-api/enable-api",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/tools-for-using-services/rest-api/endpoints",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/tools-for-using-services/rest-api/endpoints",
-    "destination": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/tools-for-using-services/rest-api/install-jq",
-    "destination": "/en/tools-for-using-services/rest-api/install-jq",
+    "destination": "/en/tools-for-using-services/api/rest-api/install-jq",
     "permanent": false,
     "locale": false
   },
@@ -27104,6 +27104,48 @@
   {
     "source": "/ru/base/vm-licenses/red-os",
     "destination": "/ru/computing/vm-licenses/red-os",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/rest-api",
+    "destination": "/en/tools-for-using-services/api/rest-api",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/rest-api",
+    "destination": "/en/tools-for-using-services/api/rest-api",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/rest-api/enable-api",
+    "destination": "/en/tools-for-using-services/api/rest-api/enable-api",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/rest-api/case-keystone-token",
+    "destination": "/en/tools-for-using-services/api/rest-api/case-keystone-token",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/rest-api/endpoints",
+    "destination": "/en/tools-for-using-services/api/rest-api/endpoints",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/tools-for-using-services/rest-api/install-jq",
+    "destination": "/en/tools-for-using-services/api/rest-api/install-jq",
     "permanent": false,
     "locale": false
   }

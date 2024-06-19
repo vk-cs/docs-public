@@ -153,7 +153,7 @@
   ],
   [
     "/en/intro/start/account-registration",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/enable-api"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api"
   ],
   [
     "/en/intro/start/account-registration",
@@ -1201,7 +1201,7 @@
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-create",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/enable-api"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api"
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-create",
@@ -1469,7 +1469,7 @@
   ],
   [
     "/en/computing/iaas/service-management/volumes",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api//case-keystone-token"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api//case-keystone-token"
   ],
   [
     "/en/computing/iaas/service-management/volumes",
@@ -1517,7 +1517,7 @@
   ],
   [
     "/en/computing/iaas/service-management/images/images-manage",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/case-keystone-token"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/case-keystone-token"
   ],
   [
     "/en/computing/iaas/service-management/images/image-metadata",
@@ -3305,7 +3305,7 @@
   ],
   [
     "/en/storage/backups/api-examples",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/enable-api"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api"
   ],
   [
     "/en/dbs/dbaas/quick-start",
@@ -3905,7 +3905,7 @@
   ],
   [
     "/en/kubernetes/k8s/quick-start",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/enable-api#activate_api_access"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api#activate_api_access"
   ],
   [
     "/en/kubernetes/k8s/quick-start",
@@ -5717,7 +5717,7 @@
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/external-dns",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/enable-api"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api"
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/external-dns",
@@ -6577,7 +6577,7 @@
   ],
   [
     "/en/monitoring-services/logging/service-management/generate-userdata",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/endpoints#getting_project_id"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id"
   ],
   [
     "/en/monitoring-services/logging/service-management/connect-plugin",
@@ -6637,11 +6637,11 @@
   ],
   [
     "/en/monitoring-services/monitoring/service-management/mon-setup-current",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/enable-api"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api"
   ],
   [
     "/en/monitoring-services/monitoring/service-management/mon-setup-current",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/endpoints#getting_project_id"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id"
   ],
   [
     "/en/monitoring-services/monitoring/service-management/mon-setup-current",
@@ -6693,7 +6693,7 @@
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/enable-api"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/dr-quick-start",
@@ -6972,6 +6972,122 @@
     "http://localhost:3000/docs/en/applications-and-services/marketplace/tariffication"
   ],
   [
+    "/en/tools-for-using-services/api/rest-api/enable-api",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/account-manage/manage-2fa/"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/enable-api",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/account-manage/manage-2fa/"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/case-keystone-token",
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/case-keystone-token",
+    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/case-keystone-token",
+    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/case-keystone-token",
+    "http://localhost:3000/docs/en/monitoring-services/logging/service-management/view-logs"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/activation"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/images"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/storage/backups/api-examples"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/fs-manage"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/monitoring-services/logging/service-management/view-logs"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/kubernetes/k8s"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/networks/vnet"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/networks/balancing/service-management"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/networks/dns/publicdns"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/bigdata/hortonworks/bigdata-integrate/bigdata-api"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/dbs/dbaas"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/storage/s3"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/ml/mlplatform"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/ml/vision"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/case-keystone-token"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/quotasandlimits"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id"
+  ],
+  [
+    "/en/tools-for-using-services/api/rest-api/install-jq",
+    "http://localhost:3000/docs/en/storage/backups/api-examples#get_a_list_of_created_backup_plans"
+  ],
+  [
     "/en/tools-for-using-services/account/concepts/projects",
     "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions"
   ],
@@ -7109,7 +7225,7 @@
   ],
   [
     "/en/tools-for-using-services/account/concepts/regions",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api"
   ],
   [
     "/en/tools-for-using-services/account/concepts/regions",
@@ -7293,7 +7409,7 @@
   ],
   [
     "/en/tools-for-using-services/account/service-management/actionslogs",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/install-jq"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/install-jq"
   ],
   [
     "/en/tools-for-using-services/account/service-management/debugging",
@@ -7361,131 +7477,15 @@
   ],
   [
     "/en/tools-for-using-services/cli/openstack-cli",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/enable-api"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api"
   ],
   [
     "/en/tools-for-using-services/cli/openstack-cli",
     "http://localhost:3000/docs/en/intro/start/concepts/architecture#availability_zones_567cfd7a"
   ],
   [
-    "/en/tools-for-using-services/rest-api/case-keystone-token",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/enable-api"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/case-keystone-token",
-    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/case-keystone-token",
-    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/case-keystone-token",
-    "http://localhost:3000/docs/en/monitoring-services/logging/service-management/view-logs"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/enable-api",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/account-manage/manage-2fa/"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/enable-api",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/account-manage/manage-2fa/"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/enable-api"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/activation"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/images"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/storage/backups/api-examples"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/fs-manage"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/monitoring-services/logging/service-management/view-logs"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/kubernetes/k8s"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/kubernetes/k8s/service-management/addons"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/networks/vnet"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/networks/balancing/service-management"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/networks/dns/publicdns"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/bigdata/hortonworks/bigdata-integrate/bigdata-api"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/dbs/dbaas"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/storage/s3"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/ml/mlplatform"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/ml/vision"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/case-keystone-token"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/quotasandlimits"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/endpoints",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id"
-  ],
-  [
-    "/en/tools-for-using-services/rest-api/install-jq",
-    "http://localhost:3000/docs/en/storage/backups/api-examples#get_a_list_of_created_backup_plans"
-  ],
-  [
     "/en/tools-for-using-services/terraform/quick-start",
-    "http://localhost:3000/docs/en/tools-for-using-services/rest-api/enable-api#activate_api_access"
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api#activate_api_access"
   ],
   [
     "/en/tools-for-using-services/terraform/quick-start",
