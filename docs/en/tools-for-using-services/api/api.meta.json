@@ -6,5 +6,6 @@
   "metaDescription": "Managing VK Cloud services via API. Specifics of connection and the description of endpoints",
   "sectionTitle": "API",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "uuid": "abf2d904-17d4-4e6b-b313-4a87aa07e108"
 }
