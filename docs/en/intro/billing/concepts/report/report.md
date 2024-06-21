@@ -19,10 +19,7 @@ If an organization has several [projects](/en/tools-for-using-services/account/c
 
 </info>
 
-How to start receiving reporting documents from VK Cloud, read the article [Additional project configuration for legal entities](../../service-management/corporate). For all questions related to accounting documents, please contact the VK Cloud Document management department:
-
-- in [region](/en/tools-for-using-services/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
-- in the region of Kazakhstan — at the address accountvk@qazcloud.kz.
+How to start receiving reporting documents from VK Cloud, read the article [Additional project configuration for legal entities](../../service-management/corporate). If you have any questions related to accounting documents, please write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
 
 <warn>
 
@@ -56,8 +53,8 @@ The composition of the accounting documents depends on the specific terms of the
 
   - Additional documents, if required by contract:
 
-    - invoice,
-    - certificate of completed works.
+    - Invoice
+    - Certificate of completed works
 
     <info>
 
@@ -71,13 +68,13 @@ The composition of the accounting documents depends on the specific terms of the
 
   - Basic documents:
 
-    - universal transfer document,
-    - payment invoice.
+    - Universal transfer document
+    - Payment invoice
 
   - Additional documents, if required by contract:
 
-    - invoice,
-    - certificate of completed works.
+    - Invoice
+    - Certificate of completed works
 
     <info>
 
@@ -114,7 +111,7 @@ VK Cloud works in the EDM system [Kontur.Diadoc](https://www.diadoc.ru/).
 
 If your organization works with another EDI operator from the [register of the Federal Tax Service of the Russian Federation](https://www.nalog.gov.ru/rn77/oedo/search_edo/), set up roaming to exchange documents with VK LLC using its EDM participant ID — `2BM-7743001840-2012052807514600749280000000000`.
 
-You can configure EDM with VK Cloud yourself or send a request for configuration to the VK Cloud Document management department (docs_vktech@vk.company).
+You can configure EDM with VK Cloud yourself or send a request for configuration to the document management department of VK Cloud (docs_vktech@vk.company).
 
 <info>
 
@@ -124,24 +121,19 @@ EDM work is only available for projects in [region](/en/tools-for-using-services
 
 #### Delivery of original documents
 
-To set up a paper workflow, contact the VK Cloud Workflow Department:
+To set up paper workflow, contact the document management department of VK Cloud:
 
-- in [region](/en/tools-for-using-services/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
-- in the region of Kazakhstan — at the address accountvk@qazcloud.kz.
+1. Write to [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
+1. Specify:
 
-Provide information:
-
-- The required method of document delivery: by mail or courier service.
-- (If courier delivery is selected) The recipient's contact phone number.
-- Full name of the recipient.
-- Recipient's address. If the address matches the legal address of the organization, specify it explicitly in the request.
+   - The required method of document delivery: by mail or courier service.
+   - (If courier delivery is selected) The recipient's contact phone number.
+   - Full name of the recipient.
+   - Recipient's address. If the address matches the legal address of the organization, specify it explicitly in the request.
 
 #### Scanned copies of documents
 
-VK Cloud can provide scanned copies of accounting documents in PDF format by e-mail — every month or on a one-time basis, upon request. To get scanned copies, send a request to VK Cloud:
-
-- in [region](/en/tools-for-using-services/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
-- in the region of Kazakhstan — at the address accountvk@qazcloud.kz.
+VK Cloud can provide scanned copies of accounting documents in PDF format by e-mail — every month or on a one-time basis, upon request. To get scanned copies, write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
 
 ## Tax accounting
 

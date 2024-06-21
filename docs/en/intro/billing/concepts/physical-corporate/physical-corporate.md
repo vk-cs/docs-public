@@ -79,21 +79,18 @@ Individuals work with the platform under [public offer agreements](/en/intro/sta
 
 Legal entities work with VK Cloud either on the basis of contracts [public offer](/en/intro/start/legal/) of the relevant services, or under an individual contract.
 
-For all questions related to contracts, please contact the VK Cloud Document management department:
-
-- in [region](/en/tools-for-using-services/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
-- in the region of Kazakhstan — at the address accountvk@qazcloud.kz.
+If you have any questions related to contracts, please write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
 
 ### Public offer agreements
 
 By default, all users work under public offer contracts. On the part of VK Cloud, public offer agreements are concluded:
 
-- for projects in region Moscow — on behalf of “VK” LLC, registered in the Russian Federation;
-- for projects in the region of Kazakhstan — on behalf of “QazCloud” LLP, registered in Kazakhstan.
+- For projects in region Moscow — on behalf of “VK” LLC, registered in the Russian Federation.
+- For projects in the region of Kazakhstan — on behalf of “QazCloud” LLP, registered in Kazakhstan.
 
 ### Individual agreement
 
-if your legal entity is not a resident of the country corresponding to the project region, or you need more flexible terms of the contract — for example, a [postpaid](#post_payment) settlement scheme — [enter into an individual agreement](../../service-management/corporate#conclusion_of_an_individual_contract) with VK Cloud.
+If your legal entity is not a resident of the country corresponding to the project region, or you need more flexible terms of the contract — for example, a [postpaid](#post_payment) settlement scheme — [enter into an individual agreement](../../service-management/corporate#conclusion_of_an_individual_contract) with VK Cloud.
 
 </tabpanel>
 </tabs>
