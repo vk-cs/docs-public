@@ -6,15 +6,11 @@ Legal entities by default work with VK Cloud on the basis of contracts [public o
 
 To conclude an individual contract:
 
-1. Contact the VK Cloud document management Department:
+1. Write to VK Cloud customer service at [sales-team@mcs.mail.ru](mailto:sales-team@mcs.mail.ru).
+1. Specify:
 
-   - in [region](/en/tools-for-using-services/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
-   - in the region of Kazakhstan — at the address accountvk@qazcloud.kz.
-
-1. Let us know:
-
-   - full name of the organization and its details;
-   - full name and phone number of the contact person.
+   - Full name of the organization and its details.
+   - Full name and phone number of the contact person.
 
 The manager will contact you to clarify the required terms of the contract.
 
@@ -24,17 +20,13 @@ A contractor who works with VK Cloud as a legal entity receives a package of [ac
 
 To set up workflow with VK Cloud:
 
-1. Contact the VK Cloud document management Department:
+1. Write to the document management department of VK Cloud at [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
+1. Specify:
 
-   - in [region](/en/tools-for-using-services/account/concepts/regions) Moscow — at the address docs_vktech@vk.company;
-   - in the region of Kazakhstan — at the address accountvk@qazcloud.kz.
-
-1. Let us know:
-
-   - full name of the organization and its details;
-   - what accounting documents do you need;
-   - document management format (EDM or paper);
-   - full name and phone number of the contact person.
+   - Full name of the organization and its details.
+   - What accounting documents you require.
+   - Document management format (EDM or paper).
+   - Full name and phone number of the contact person.
 
 ## Additional registration of legal entities
 
