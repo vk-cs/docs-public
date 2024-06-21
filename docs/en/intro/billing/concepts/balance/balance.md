@@ -8,15 +8,15 @@ For each new project, two accounts are created automatically:
 
 - The main account:
 
-  - you can replenish it using one of the available [payment methods](../payment-methods);
-  - funds on it can be [refunded](../../service-management/refund);
-  - funds on it never expire.
+  - You can replenish it using one of the available [payment methods](../payment-methods).
+  - Funds on it can be [refunded](../../service-management/refund).
+  - Funds on it never expire.
 
 - The bonus account — a dedicated account for storing bonuses:
 
-  - you cannot replenish this account, funds can be credited to it by the platform only;
-  - funds on it cannot be refunded;
-  - funds on it can sometimes expire.
+  - You cannot replenish this account, funds can be credited to it by the platform only.
+  - Funds on it cannot be refunded.
+  - Funds on it can sometimes expire.
 
     See details in subsection [Bonuses](#bonuses).
 
@@ -24,7 +24,7 @@ You can pay for services from both accounts. Funds are first debited from the bo
 
 ## Expense and negative balance
 
-Funds on the balance sheet begin to be spent after the creation of the first chargeable objects — for example, virtual machines and floating IP addresses.
+The balance starts to be spent after the first chargeable objects are created, such as virtual machines and floating IP addresses.
 
 If the funds on both accounts run out, the project balance becomes negative, and the project is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project). The project objects are placed in a queue for deletion, and a corresponding notification is sent to the project owner's email.
 

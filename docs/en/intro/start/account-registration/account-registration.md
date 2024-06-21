@@ -50,7 +50,7 @@ If you do not immediately confirm the account, when you try to perform an action
 
    <warn>
 
-   For the [region](/en/tools-for-using-services/account/concepts/regions) Moscow, only phone numbers registered in the Russian Federation (starting with +7) are accepted. One phone number can be linked to no more than two accounts.
+   For the [region](/en/tools-for-using-services/account/concepts/regions) Moscow, only phone numbers registered in the Russian Federation (starting with +7) are accepted. One number can only be assigned to one account.
 
    </warn>
 
@@ -101,7 +101,7 @@ If you do not immediately confirm the account, when you try to perform an action
 
    You cannot use a virtual card for account confirmation.
 
-   One card can be linked to one project only.
+   One card can be linked to any number of projects within one account.
 
    </warn>
 

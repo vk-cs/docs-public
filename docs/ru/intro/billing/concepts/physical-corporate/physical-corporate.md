@@ -79,10 +79,7 @@
 
 ЮЛ работают с VK Cloud либо на основании договоров [публичной оферты](/ru/intro/start/legal/) соответствующих сервисов, либо по индивидуальному договору.
 
-По всем вопросам, связанным с договорами, обращайтесь в отдел документооборота VK Cloud:
-
-- в [регионе](/ru/tools-for-using-services/account/concepts/regions) Москва — по адресу docs_vktech@vk.company;
-- в регионе Казахстан — по адресу accountvk@qazcloud.kz.
+По всем вопросам, связанным с договорами, пишите в отдел документооборота VK Cloud на почту [docs_vktech@vk.company](mailto:docs_vktech@vk.company).
 
 ### Договоры публичной оферты
 
