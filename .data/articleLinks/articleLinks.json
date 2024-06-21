@@ -537,10 +537,6 @@
   ],
   [
     "/en/intro/billing/concepts/physical-corporate",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/intro/billing/concepts/physical-corporate",
     "http://localhost:3000/docs/en/intro/billing/service-management/corporate#conclusion_of_an_individual_contract"
   ],
   [
@@ -613,14 +609,6 @@
   ],
   [
     "/en/intro/billing/concepts/report",
-    "http://localhost:3000/docs/en/intro/billing/service-management/corporate"
-  ],
-  [
-    "/en/intro/billing/concepts/report",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/intro/billing/concepts/report",
     "http://localhost:3000/docs/en/intro/start/legal"
   ],
   [
@@ -634,14 +622,6 @@
   [
     "/en/intro/billing/concepts/report",
     "http://localhost:3000/docs/en/intro/billing/service-management/detail#downloading_the_report"
-  ],
-  [
-    "/en/intro/billing/concepts/report",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/intro/billing/concepts/report",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
   ],
   [
     "/en/intro/billing/concepts/report",
@@ -781,15 +761,7 @@
   ],
   [
     "/en/intro/billing/service-management/corporate",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/intro/billing/service-management/corporate",
     "http://localhost:3000/docs/en/intro/billing/concepts/report"
-  ],
-  [
-    "/en/intro/billing/service-management/corporate",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
   ],
   [
     "/en/intro/billing/service-management/corporate",
@@ -849,6 +821,10 @@
   ],
   [
     "/en/intro/billing/faq",
+    "http://localhost:3000/docs/en/intro/billing/service-management/corporate"
+  ],
+  [
+    "/en/intro/billing/faq",
     "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project"
   ],
   [
@@ -889,14 +865,6 @@
   ],
   [
     "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/intro/billing/concepts/balance#bonuses"
-  ],
-  [
-    "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/intro/billing/service-management/refund"
-  ],
-  [
-    "/en/intro/billing/faq",
     "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project"
   ],
   [
@@ -917,14 +885,6 @@
   ],
   [
     "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/intro/billing/faq",
     "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id"
   ],
   [
@@ -933,15 +893,7 @@
   ],
   [
     "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/intro/billing/concepts/payment-methods"
-  ],
-  [
-    "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id"
-  ],
-  [
-    "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+    "http://localhost:3000/docs/en/intro/billing/concepts/report#composition_of_accounting_documents_55c18d7"
   ],
   [
     "/en/intro/billing/faq",
@@ -8685,10 +8637,6 @@
   ],
   [
     "/ru/intro/billing/concepts/physical-corporate",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/intro/billing/concepts/physical-corporate",
     "http://localhost:3000/docs/ru/intro/billing/service-management/corporate#zaklyuchenie_individualnogo_dogovora"
   ],
   [
@@ -8761,14 +8709,6 @@
   ],
   [
     "/ru/intro/billing/concepts/report",
-    "http://localhost:3000/docs/ru/intro/billing/service-management/corporate#nastroyka_dokumentooborota"
-  ],
-  [
-    "/ru/intro/billing/concepts/report",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/intro/billing/concepts/report",
     "http://localhost:3000/docs/ru/intro/start/legal"
   ],
   [
@@ -8782,14 +8722,6 @@
   [
     "/ru/intro/billing/concepts/report",
     "http://localhost:3000/docs/ru/intro/billing/service-management/detail#skachivanie_otcheta"
-  ],
-  [
-    "/ru/intro/billing/concepts/report",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/intro/billing/concepts/report",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
     "/ru/intro/billing/concepts/report",
@@ -8925,15 +8857,7 @@
   ],
   [
     "/ru/intro/billing/service-management/corporate",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/intro/billing/service-management/corporate",
     "http://localhost:3000/docs/ru/intro/billing/concepts/report#elektronnyy_dokumentooborot_edo_76d587b"
-  ],
-  [
-    "/ru/intro/billing/service-management/corporate",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
   [
     "/ru/intro/billing/service-management/corporate",
@@ -9066,6 +8990,10 @@
   [
     "/ru/intro/billing/faq",
     "http://localhost:3000/docs/ru/storage/backups/vm-backup/vm-backup-manage#aktivaciya_ostanovka_i_udalenie_plana_rezervnogo_kopirovaniya"
+  ],
+  [
+    "/ru/intro/billing/faq",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
   ],
   [
     "/ru/intro/billing/faq",
