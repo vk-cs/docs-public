@@ -16225,6 +16225,10 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs#preparatory_steps"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
     "http://localhost:3000/docs/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs#configure_network_connectivity"
   ],
   [
@@ -16234,26 +16238,6 @@
   [
     "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
     "http://localhost:3000/docs/ru/networks/vnet/service-management/secgroups#sozdanie_gruppy_bezopasnosti"
-  ],
-  [
-    "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create"
-  ],
-  [
-    "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
-    "http://localhost:3000/docs/ru/networks/vnet/service-management/secgroups#naznachenie_gruppy_pravil_na_instans"
-  ],
-  [
-    "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-win"
-  ],
-  [
-    "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
-    "http://localhost:3000/docs/ru/networks/vnet/service-management/vpn"
-  ],
-  [
-    "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
-    "http://localhost:3000/docs/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs#1_razvernite_oblachnuyu_infrastrukturu_dlya_razmeshcheniya_sistemy_1s"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
