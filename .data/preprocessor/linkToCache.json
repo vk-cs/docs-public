@@ -144,6 +144,11 @@
     "full": "Fluent Bit для Cloud Logging (logaas-integration)",
     "text": "Fluent Bit для Cloud Logging (logaas-integration)"
   },
+  "preparatory_steps": {
+    "number": null,
+    "full": "Подготовительные шаги",
+    "text": "Подготовительные шаги"
+  },
   "configure_network_connectivity": {
     "number": null,
     "full": "2. Настройте сетевую связанность для доступа к базе 1С из клиентской сети",
