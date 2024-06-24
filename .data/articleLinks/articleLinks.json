@@ -2128,10 +2128,6 @@
     "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#external_network"
   ],
   [
-    "/en/networks/vnet/concepts/vpn",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/ips-and-inet#floating_ip_adress"
-  ],
-  [
     "/en/networks/vnet/concepts/net-types",
     "http://localhost:3000/docs/en/networks/vnet/service-management"
   ],
@@ -2490,6 +2486,10 @@
   [
     "/en/networks/vnet/service-management/advanced-router/manage-bgp",
     "http://localhost:3000/docs/en/networks/vnet/concepts/router#advanced_router_capabilities"
+  ],
+  [
+    "/en/networks/vnet/service-management/advanced-router/manage-dnat",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/advanced-router/manage-interfaces#adding_interfaces_of_advanced_router"
   ],
   [
     "/en/networks/vnet/service-management/vpn",
@@ -10356,10 +10356,6 @@
     "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
   ],
   [
-    "/ru/networks/vnet/concepts/vpn",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/ips-and-inet#plavayushchiy_ip_adres"
-  ],
-  [
     "/ru/networks/vnet/concepts/net-types",
     "http://localhost:3000/docs/ru/networks/vnet/service-management"
   ],
@@ -10754,6 +10750,10 @@
   [
     "/ru/networks/vnet/service-management/advanced-router/manage-bgp",
     "http://localhost:3000/docs/ru/networks/vnet/concepts/router#vozmozhnosti_prodvinutogo_marshrutizatora"
+  ],
+  [
+    "/ru/networks/vnet/service-management/advanced-router/manage-dnat",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/advanced-router/manage-interfaces#dobavlenie_interfeysa_prodvinutogo_marshrutizatora"
   ],
   [
     "/ru/networks/vnet/service-management/vpn",
