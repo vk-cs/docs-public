@@ -88,7 +88,3 @@ Different types of routers can be used within a single VK Cloud subnet.
 - **Supporting redundancy for fault tolerance.**
 
   Advanced routers support VRRP protocol. Therefore, you can configure multiple routers in combination with VRRP to provide fault tolerance. If one or more routers fail, the remaining routers will continue to handle traffic that arrives at the IP address specified as the default gateway address when configuring VRRP.
-
-<warn>
-An advanced router does not support DNAT, it does not allow to use floating IP addresses to access objects on the subnet connected.
-</warn>
