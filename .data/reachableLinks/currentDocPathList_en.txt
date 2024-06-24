@@ -127,6 +127,7 @@
 /docs/en/networks/vnet/service-management/advanced-router/manage-interfaces
 /docs/en/networks/vnet/service-management/advanced-router/manage-static-routs
 /docs/en/networks/vnet/service-management/advanced-router/manage-bgp
+/docs/en/networks/vnet/service-management/advanced-router/manage-dnat
 /docs/en/networks/vnet/service-management/vpn
 /docs/en/networks/vnet/service-management/topology
 /docs/en/networks/vnet/how-to-guides

@@ -140,6 +140,7 @@
 /docs/ru/networks/vnet/service-management/advanced-router/manage-interfaces
 /docs/ru/networks/vnet/service-management/advanced-router/manage-static-routs
 /docs/ru/networks/vnet/service-management/advanced-router/manage-bgp
+/docs/ru/networks/vnet/service-management/advanced-router/manage-dnat
 /docs/ru/networks/vnet/service-management/vpn
 /docs/ru/networks/vnet/service-management/topology
 /docs/ru/networks/vnet/how-to-guides

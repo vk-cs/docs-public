@@ -1950,6 +1950,21 @@
     ]
   },
   {
+    "uuid": "eff338e4-5490-45a2-a503-1ac88c728cbf",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/networks/vnet/service-management/advanced-router/manage-dnat",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/networks/vnet/service-management/advanced-router/manage-dnat/manage-dnat.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/networks/vnet/service-management/advanced-router/manage-dnat/manage-dnat.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "834200cc-51b4-4196-9af3-3f6175872e20",
     "lang": "en",
     "type": "ARTICLE",
@@ -11077,6 +11092,21 @@
     "partialPath": "/ru/networks/vnet/service-management/advanced-router/manage-bgp",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/service-management/advanced-router/manage-bgp/manage-bgp.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/service-management/advanced-router/manage-bgp/manage-bgp.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "ec4a88d7-8a1a-4387-8341-d172fe741191",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/networks/vnet/service-management/advanced-router/manage-dnat",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/service-management/advanced-router/manage-dnat/manage-dnat.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/service-management/advanced-router/manage-dnat/manage-dnat.md",
     "variables": {},
     "hidden": false,
     "version": null,
