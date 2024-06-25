@@ -131,6 +131,7 @@
 /docs/ru/networks/vnet/concepts/ips-and-inet
 /docs/ru/networks/vnet/service-management
 /docs/ru/networks/vnet/service-management/net
+/docs/ru/networks/vnet/service-management/shared-nets
 /docs/ru/networks/vnet/service-management/ports
 /docs/ru/networks/vnet/service-management/secgroups
 /docs/ru/networks/vnet/service-management/floating-ip
