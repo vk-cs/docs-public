@@ -2,23 +2,87 @@ Cloud Networks service allows to work with several network types.
 
 ## Standard network
 
-Standard network provides access to the subnets with the private IP addresses and exists within a single project.
+_Standard network_ provides access to the subnets with the private IP addresses and exists within a single project.
 
 The standard network, its subnets and ports [can be managed](../../service-management/) via personal account, OpenStack CLI or Terraform.
 
-## Shared network
+## {heading(Shared network)[id=shared_net]}
 
-Shared network provides access to the subnets with the private IP addresses too, but exists across several projects. Users, who have a cloud infrastructure that is distributed between several projects, can request an access to this network type.
+_Shared network_ also provides access to the subnets with the private IP addresses, but exists across several projects.
 
-Firstly, a standard network should be created in the owner project. Then this network can be converted to the shared network [via the support request](/en/contacts). The shared network then will be accessible from the one or several dependent projects.
+To create a shared network, you have to create a standard network in one project and then share it with other projects. Only a user with the [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) of the project owner (hereinafter referred to as _network owner_) has the ability to share a network.
 
-A shared network, its subnets and ports [can be managed](../../service-management/) via personal account, OpenStack CLI or Terraform from the owner project. A shared network can be deleted only [via the support request](/en/contacts).
+A network owner can share the net with any project:
 
-It is possible to view the information about a shared network via personal account from a dependent project, but it is allowed only [to manage ports](../../service-management/ports) of the network via OpenStack CLI. Also, it is not possible to connect DB instances or Kubernetes cluster to a shared network from a dependent project.
+- by [unique identifier (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id) with those projects where this user is also the owner.
+- by project ID in OpenStack ([Project ID](/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id)) with any other projects.
+
+The project user with whom the network was shared (hereinafter referred to as _network user_) will receive a message and can accept or decline the invitation to the shared network. The user's decision applies to the entire project: if one user declines the offer to join the network, the network will be unavailable for the entire project.
+
+Network users cannot manage subnets on it, but can create resources, connect services, and manage ports in their project. When connecting some resources, such as load balancers or advanced routers, service ports will be created that belong to the network owner's project and are not visible to network users. The owner of the shared network cannot control such ports; they are connected or disabled only when a service is connected or disabled. To remove a port occupied by a load balancer in a linked project, you must remove the balancer in the linked project.
+
+Only the network owner can disconnect a project from the network. Before disconnecting, the network users must delete all VMs and [PaaS services](/en/intro/start/concepts/architecture) of the project located on the shared network. It is also recommended to remove all file storages, balancers and advanced routers of the project connected to the shared network. Otherwise, the network connectivity between them and the network will remain when the network is disconnected.
+
+Only the owner of the network can delete a shared network. Before deleting, you must disable all ports, including service ports, which are visible only to the network owner. To disable service ports, network users need to remove the services connected to them in their projects.
+
+Shared network access matrix:
+
+[cols="1,2,2", options="header"]
+|===
+|Action
+|Network owner
+|Network user
+
+|Viewing a network
+|Available
+|Available
+
+|Editing a network
+|Available
+|Not available
+
+|Providing access to other projects to a network
+|Available
+|Not available
+
+|Disconnecting a project from a network
+|Available. If the project has added VM ports or [PaaS services](/en/intro/start/concepts/architecture), an error message will appear. Remove all busy ports.
+
+If the project has file storages, balancers or advanced routers, the shutdown will be performed. At the same time, the services will remain connected to the network, that is, network connectivity between projects will be preserved. It is recommended to remove all file storages, balancers and advanced routers from the disconnected network
+|Not available
+
+|Deleting a network
+|Available. If there are busy ports on the network (both the network owner's and the network user's projects ), an error message will appear. It is necessary to delete all occupied ports, including service ones
+|Not available
+
+|Viewing subnets
+|Available
+|Available
+
+|Creating, editing, deleting subnets
+|Available
+|Not available
+
+|Viewing ports
+|Available. All ports directed to all projects are visible
+|Available. All project ports are visible. Service ports that are created for file storages, balancers and advanced routers are not visible, since they belong to the network owner’s project
+
+|Creating ports
+|Available
+|Available
+
+|Editing ports
+|Available
+|Not available
+
+|Deleting ports
+|You can only delete ports in your project
+|You can only delete ports in your project
+|===
 
 ## External network
 
-External network (`ext-net`, `internet`) provides access to the subnets with the public IP addresses and exists across all projects. It is used to provide services with the Internet access. See details in the [Network addressing and internet access](../ips-and-inet) section.
+_External network_ (`ext-net`, `internet`) provides access to the subnets with the public IP addresses and exists across all projects. It is used to provide services with the Internet access. See details in the [Network addressing and internet access](../ips-and-inet) section.
 
 It is not possible to edit or delete the subnets of that network. The following operations can be performed via personal account, OpenStack CLI or Terraform:
 
