@@ -19,6 +19,31 @@
     "full": "Перенос в облако VK Cloud приобретенных ранее лицензий",
     "text": "Перенос в облако VK Cloud приобретенных ранее лицензий"
   },
+  "shared_net": {
+    "number": null,
+    "full": "Общая сеть",
+    "text": "Общая сеть"
+  },
+  "share": {
+    "number": null,
+    "full": "Доступ к сети из других проектов",
+    "text": "Доступ к сети из других проектов"
+  },
+  "view_shared": {
+    "number": null,
+    "full": "Просмотр проектов, которым доступна общая сеть",
+    "text": "Просмотр проектов, которым доступна общая сеть"
+  },
+  "unshare": {
+    "number": null,
+    "full": "Отключение проекта от общей сети",
+    "text": "Отключение проекта от общей сети"
+  },
+  "delete_shared": {
+    "number": null,
+    "full": "Удаление общей сети",
+    "text": "Удаление общей сети"
+  },
   "features_of_installing_addons": {
     "number": null,
     "full": "Features of installing add-ons",

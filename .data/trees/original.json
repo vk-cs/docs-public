@@ -1815,6 +1815,21 @@
     ]
   },
   {
+    "uuid": "9ddacf7c-21f9-428d-8a74-95b72780cc64",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/networks/vnet/service-management/shared-nets",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/networks/vnet/service-management/shared-nets/shared-nets.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/networks/vnet/service-management/shared-nets/shared-nets.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "b372c224-4fe7-45ab-bd5d-20f0bc384c11",
     "lang": "en",
     "type": "ARTICLE",
@@ -10957,6 +10972,21 @@
     "partialPath": "/ru/networks/vnet/service-management/net",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/service-management/net/net.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/service-management/net/net.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "4a55f095-c352-410a-8194-cb4a7e433f11",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/networks/vnet/service-management/shared-nets",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/service-management/shared-nets/shared-nets.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/service-management/shared-nets/shared-nets.md",
     "variables": {},
     "hidden": false,
     "version": null,
