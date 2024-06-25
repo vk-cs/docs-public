@@ -2133,7 +2133,23 @@
   ],
   [
     "/en/networks/vnet/concepts/net-types",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/ports"
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions"
+  ],
+  [
+    "/en/networks/vnet/concepts/net-types",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id"
+  ],
+  [
+    "/en/networks/vnet/concepts/net-types",
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id"
+  ],
+  [
+    "/en/networks/vnet/concepts/net-types",
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture"
+  ],
+  [
+    "/en/networks/vnet/concepts/net-types",
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture"
   ],
   [
     "/en/networks/vnet/concepts/net-types",
@@ -2153,7 +2169,7 @@
   ],
   [
     "/en/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#shared_network"
+    "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#shared_net"
   ],
   [
     "/en/networks/vnet/service-management/net",
@@ -2162,18 +2178,6 @@
   [
     "/en/networks/vnet/service-management/net",
     "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
-  ],
-  [
-    "/en/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
-  ],
-  [
-    "/en/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
-  ],
-  [
-    "/en/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#shared_network"
   ],
   [
     "/en/networks/vnet/service-management/net",
@@ -2208,8 +2212,40 @@
     "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
   ],
   [
-    "/en/networks/vnet/service-management/ports",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#shared_network"
+    "/en/networks/vnet/service-management/net",
+    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
+  ],
+  [
+    "/en/networks/vnet/service-management/net",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+  ],
+  [
+    "/en/networks/vnet/service-management/shared-nets",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions"
+  ],
+  [
+    "/en/networks/vnet/service-management/shared-nets",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id"
+  ],
+  [
+    "/en/networks/vnet/service-management/shared-nets",
+    "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id"
+  ],
+  [
+    "/en/networks/vnet/service-management/shared-nets",
+    "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#shared_net"
+  ],
+  [
+    "/en/networks/vnet/service-management/shared-nets",
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture"
+  ],
+  [
+    "/en/networks/vnet/service-management/shared-nets",
+    "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#shared_net"
+  ],
+  [
+    "/en/networks/vnet/service-management/shared-nets",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture"
   ],
   [
     "/en/networks/vnet/service-management/ports",
@@ -10361,7 +10397,23 @@
   ],
   [
     "/ru/networks/vnet/concepts/net-types",
-    "http://localhost:3000/docs/ru/networks/vnet/service-management/ports"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
+  ],
+  [
+    "/ru/networks/vnet/concepts/net-types",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
+  ],
+  [
+    "/ru/networks/vnet/concepts/net-types",
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/endpoints#poluchenie_project_id"
+  ],
+  [
+    "/ru/networks/vnet/concepts/net-types",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture"
+  ],
+  [
+    "/ru/networks/vnet/concepts/net-types",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture"
   ],
   [
     "/ru/networks/vnet/concepts/net-types",
@@ -10381,7 +10433,7 @@
   ],
   [
     "/ru/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#obshchaya_set"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#shared_net"
   ],
   [
     "/ru/networks/vnet/service-management/net",
@@ -10398,22 +10450,6 @@
   [
     "/ru/networks/vnet/service-management/net",
     "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
-  ],
-  [
-    "/ru/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack"
-  ],
-  [
-    "/ru/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
-  ],
-  [
-    "/ru/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih"
-  ],
-  [
-    "/ru/networks/vnet/service-management/net",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#obshchaya_set"
   ],
   [
     "/ru/networks/vnet/service-management/net",
@@ -10464,8 +10500,44 @@
     "http://localhost:3000/docs/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih"
   ],
   [
-    "/ru/networks/vnet/service-management/ports",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#obshchaya_set"
+    "/ru/networks/vnet/service-management/net",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack"
+  ],
+  [
+    "/ru/networks/vnet/service-management/net",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
+  ],
+  [
+    "/ru/networks/vnet/service-management/net",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih"
+  ],
+  [
+    "/ru/networks/vnet/service-management/shared-nets",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#shared_net"
+  ],
+  [
+    "/ru/networks/vnet/service-management/shared-nets",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
+  ],
+  [
+    "/ru/networks/vnet/service-management/shared-nets",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
+  ],
+  [
+    "/ru/networks/vnet/service-management/shared-nets",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#shared_net"
+  ],
+  [
+    "/ru/networks/vnet/service-management/shared-nets",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture"
+  ],
+  [
+    "/ru/networks/vnet/service-management/shared-nets",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#shared_net"
+  ],
+  [
+    "/ru/networks/vnet/service-management/shared-nets",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture"
   ],
   [
     "/ru/networks/vnet/service-management/ports",
