@@ -119,7 +119,7 @@ Check if the Ingress controller is working by browsing to `http://<IP address as
 
 The Ingress resource will publish the `coffee-svc` and `tea-svc` services through the Ingress controller, thus providing access to the applications.
 
-The following is a demonstration of how to create an Ingress resource with SSL/TLS sessions termination on the Ingress controller. If you plan to use HTTPS, session termination must be done on the controller because the TCP load balancer does not have the technical capability to terminate SSL/TLS sessions.
+The following is a demonstration of how to create an Ingress resource with SSL/TLS sessions termination on the Ingress controller.
 
 To create an Ingress resource:
 
