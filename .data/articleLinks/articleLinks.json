@@ -15940,6 +15940,62 @@
     "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/"
   ],
   [
+    "/ru/monitoring-services/event-log/concepts/about",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
+  ],
+  [
+    "/ru/monitoring-services/event-log/concepts/about",
+    "http://localhost:3000/docs/ru/monitoring-services/event-log/service-management/view-event-log"
+  ],
+  [
+    "/ru/monitoring-services/event-log/service-management/siem-integration",
+    "http://localhost:3000/docs/ru/monitoring-services/event-log/service-management/siem-integration#delete_siem_connection"
+  ],
+  [
+    "/ru/monitoring-services/event-log/service-management/siem-integration",
+    "http://localhost:3000/docs/ru/monitoring-services/event-log/service-management/siem-integration#activate_siem_connection"
+  ],
+  [
+    "/ru/monitoring-services/event-log/service-management/siem-integration",
+    "http://localhost:3000/docs/ru/monitoring-services/event-log/service-management/siem-integration#activate_siem_connection"
+  ],
+  [
+    "/ru/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/ru/monitoring-services/event-log/concepts/about/#iam_events"
+  ],
+  [
+    "/ru/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/ru/monitoring-services/event-log/service-management/view-event-log#filter_events_list"
+  ],
+  [
+    "/ru/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/ru/monitoring-services/event-log/service-management/view-event-log#export_events_list"
+  ],
+  [
+    "/ru/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/ru/monitoring-services/event-log/concepts/about/#iam_events"
+  ],
+  [
+    "/ru/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/ru/monitoring-services/event-log/service-management/view-event-log#filter_events_list"
+  ],
+  [
+    "/ru/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/ru/monitoring-services/event-log/concepts/about/#iam_events"
+  ],
+  [
+    "/ru/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/ru/monitoring-services/event-log/concepts/search-language"
+  ],
+  [
+    "/ru/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/ru/monitoring-services/event-log/concepts/about/#iam_events"
+  ],
+  [
+    "/ru/monitoring-services/event-log/service-management/view-event-log",
+    "http://localhost:3000/docs/ru/monitoring-services/event-log/service-management/view-event-log#filter_events_list"
+  ],
+  [
     "/ru/applications-and-services/marketplace/concepts/about",
     "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage"
   ],
