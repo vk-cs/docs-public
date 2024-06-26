@@ -11356,6 +11356,14 @@
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/api-dns"
   ],
   [
+    "/ru/networks/directconnect/connect",
+    "http://localhost:3000/docs/ru/networks/directconnect/how-to-guides/advanced-router"
+  ],
+  [
+    "/ru/networks/directconnect/connect",
+    "http://localhost:3000/docs/ru/networks/directconnect/how-to-guides/advanced-router"
+  ],
+  [
     "/ru/networks/directconnect/how-to-guides/advanced-router",
     "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
   ],
