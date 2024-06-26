@@ -6,5 +6,8 @@
     "metaDescription": "Создание и настройка подключения к вашей SIEM-системе",
     "sectionTitle": "Управление SIEM-подключениями",
     "icon": "",
-    "weight": 1
+    "weight": 1,
+    "uuid": "16a6dc4c-1096-4490-9eeb-ea42c385437a",
+    "createdAt": "2024-06-26T09:51:41.000Z",
+    "updatedAt": "2024-06-26T09:51:41.000Z"
 }
