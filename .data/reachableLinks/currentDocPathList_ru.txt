@@ -520,6 +520,13 @@
 /docs/ru/monitoring-services/monitoring/service-management/mon-setup-new
 /docs/ru/monitoring-services/monitoring/service-management/mon-setup-current
 /docs/ru/monitoring-services/monitoring/service-management/telegraf-manage
+/docs/ru/monitoring-services/event-log
+/docs/ru/monitoring-services/event-log/concepts
+/docs/ru/monitoring-services/event-log/concepts/about
+/docs/ru/monitoring-services/event-log/concepts/search-language
+/docs/ru/monitoring-services/event-log/service-management
+/docs/ru/monitoring-services/event-log/service-management/siem-integration
+/docs/ru/monitoring-services/event-log/service-management/view-event-log
 /docs/ru/applications-and-services
 /docs/ru/applications-and-services/marketplace
 /docs/ru/applications-and-services/marketplace/concepts

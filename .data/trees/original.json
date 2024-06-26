@@ -16815,6 +16815,111 @@
     ]
   },
   {
+    "uuid": "a44f362e-812b-488f-8704-09181f19077f",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 3,
+    "partialPath": "/ru/monitoring-services/event-log",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/event-log.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/event-log.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "7ce098bf-b921-4584-b77e-0859cc4e357e",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/monitoring-services/event-log/concepts",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/concepts.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/concepts.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "100b041f-6db3-466b-8618-9d7068141b2d",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/monitoring-services/event-log/concepts/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/about/about.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "216d6098-084c-4797-b427-f54f4fd7a4ad",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/monitoring-services/event-log/concepts/search-language",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/search-language/search-language.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/concepts/search-language/search-language.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "05c63c12-7cac-4249-83ca-edad70ea85c7",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/monitoring-services/event-log/service-management",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/service-management/service-management.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/service-management/service-management.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "16a6dc4c-1096-4490-9eeb-ea42c385437a",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/monitoring-services/event-log/service-management/siem-integration",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/service-management/siem-integration/siem-integration.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/service-management/siem-integration/siem-integration.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "a54969e9-dae2-4a4f-982a-6557ad629ebe",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/monitoring-services/event-log/service-management/view-event-log",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/service-management/view-event-log/view-event-log.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/event-log/service-management/view-event-log/view-event-log.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "834a442c-2049-4e52-92d3-7ac60a7eb18a",
     "lang": "ru",
     "type": "INTERMEDIATE",
