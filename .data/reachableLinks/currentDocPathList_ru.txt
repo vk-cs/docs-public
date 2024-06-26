@@ -180,6 +180,7 @@
 /docs/ru/networks/dns/private-dns
 /docs/ru/networks/dns/publicdns
 /docs/ru/networks/directconnect
+/docs/ru/networks/directconnect/connect
 /docs/ru/networks/directconnect/how-to-guides
 /docs/ru/networks/directconnect/how-to-guides/advanced-router
 /docs/ru/storage
