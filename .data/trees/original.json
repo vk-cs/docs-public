@@ -11715,6 +11715,21 @@
     ]
   },
   {
+    "uuid": "f3400fa4-1942-4f5f-aad9-b403144e9136",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/networks/directconnect/connect",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/directconnect/connect/connect.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/directconnect/connect/connect.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "5141f9d9-731d-4764-9179-05f0e857136a",
     "lang": "ru",
     "type": "INTERMEDIATE",
