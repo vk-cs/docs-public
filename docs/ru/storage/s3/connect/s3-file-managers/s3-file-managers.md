@@ -23,7 +23,7 @@ CyberDuck позволяет подключаться к различным хр
 
 <info>
 
-Бакеты и объекты, которые создаются через Cyberduck, имеют [класс хранения](../../reference#klass_hraneniya) `Hotbox` и [тип доступа](../../reference#acl) `private`.
+Создаваемые через Cyberduck бакеты и объекты по умолчанию имеют [класс хранения](../../reference#klass_hraneniya) и [тип доступа](../../reference#acl), указанный в настройках Cyberduck.
 
 </info>
 
