@@ -50,7 +50,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    <tabpanel>
 
-   1. [Complete the Terraform quick start guide](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
+   1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
    1. Add to your Terraform configuration files that describe the cluster:
 
       - The [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) resource.
@@ -175,7 +175,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    <tabpanel>
 
-   1. [Complete the Terraform quick start guide](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
+   1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
    1. Add to your Terraform configuration files that describe the cluster:
 
       - The [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) resource.
@@ -243,7 +243,7 @@ If this is not suitable for you, perform a **standard installation** or **instal
    </tabpanel>
    <tabpanel>
 
-   1. [Complete the Terraform quick start guide](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
+   1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
    1. Add to your Terraform configuration files that describe the cluster:
 
       - The [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_addon.md) resource.

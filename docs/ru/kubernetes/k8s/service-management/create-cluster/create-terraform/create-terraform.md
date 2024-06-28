@@ -18,7 +18,7 @@
 
 1. Ознакомьтесь с [особенностями использования Terraform](../../helpers/terraform-howto/) в сервисе Cloud Containers.
 
-1. [Установите Terraform и настройте провайдер](/ru/tools-for-using-services/terraform/quick-start/), если этого еще не сделано.
+1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
 1. [Установите OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli/) и [пройдите авторизацию](/ru/tools-for-using-services/cli/openstack-cli/), если этого еще не сделано.
 
