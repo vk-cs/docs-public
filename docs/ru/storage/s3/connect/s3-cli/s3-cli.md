@@ -62,6 +62,11 @@ VK Cloud позволяет использовать интерфейс кома
       - `hb.ru-msk.vkcs.cloud` — для региона Москва;
       - `hb.kz-ast.vkcs.cloud` — для региона Казахстан.
   
+  1. Добавьте шаблон имени хоста для доступа к бакету. В параметре **DNS-style bucket+hostname:port template for accessing a bucket** укажите значение:
+
+      - `%(bucket)s.hb.ru-msk.vkcs.cloud` — для региона Москва;
+      - `%(bucket)s.hb.kz-ast.vkcs.cloud` — для региона Казахстан.
+  
   1. Остальные настройки оставьте по умолчанию.
 
   1. Если настройки введены корректно, появится сообщение `Success. Your access key and secret key worked fine :-)`. Сохраните настройки.
