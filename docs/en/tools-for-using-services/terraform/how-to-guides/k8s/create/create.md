@@ -8,7 +8,7 @@ The examples of creating different Kubernetes clusters using Terraform are provi
 
 1. Learn about the [features of using Terraform](/en/kubernetes/k8s/service-management/helpers/terraform-howto) with the Cloud Containers service.
 
-1. [Install Terraform and configure the provider](../../../quick-start), if not already done.
+1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
    Place the provider settings in the `provider.tf` Terraform configuration file.
 
