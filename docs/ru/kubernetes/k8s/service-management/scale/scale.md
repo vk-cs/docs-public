@@ -49,7 +49,7 @@
 
    1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-   1. [Подготовьтесь к работе с Terraform](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
    1. [Убедитесь](../manage-cluster#zapustit_klaster_bbf98834), что нужный кластер запущен.
 
@@ -155,7 +155,7 @@
 
    1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-   1. [Подготовьтесь к работе с Terraform](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
    1. [Убедитесь](../manage-cluster#zapustit_klaster_bbf98834), что нужный кластер запущен.
 
@@ -244,7 +244,7 @@
    </tabpanel>
    <tabpanel>
 
-   1. [Подготовьтесь к работе с Terraform](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
    1. [Убедитесь](../manage-cluster#zapustit_klaster_bbf98834), что нужный кластер запущен.
 
@@ -321,7 +321,7 @@
    </tabpanel>
    <tabpanel>
 
-   1. [Подготовьтесь к работе с Terraform](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
+   1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
    1. [Убедитесь](../manage-cluster#zapustit_klaster_bbf98834), что нужный кластер запущен.
 

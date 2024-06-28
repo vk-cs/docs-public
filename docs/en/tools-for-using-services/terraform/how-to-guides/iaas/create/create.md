@@ -8,7 +8,7 @@ Two options for VM configuration will be considered: without additional settings
 
     If you want to increase quotas, contact [technical support](/en/contacts).
 
-1. [Install Terraform and configure the provider](../../../quick-start) if not already done.
+1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
     Place the provider settings in the Terraform configuration file `provider.tf`.
 
