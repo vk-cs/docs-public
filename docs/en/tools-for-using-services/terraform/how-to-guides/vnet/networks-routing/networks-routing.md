@@ -21,7 +21,7 @@ The infrastructure of the example:
 
 1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-1. [Install Terraform and configure the provider](../../../quick-start), if not already done.
+1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
    Put the provider settings in the Terraform configuration file `provider.tf`.
 

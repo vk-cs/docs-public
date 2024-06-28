@@ -51,7 +51,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
    </tabpanel>
    <tabpanel>
 
-   1. [Install Terraform and configure the provider](/en/tools-for-using-services/terraform/quick-start) if it hasn't been done yet.
+   1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
    1. Create a Terraform configuration file with data about the add-on being installed in the `vkcs_kubernetes_addon` block:
 
       - [Get](../../manage-addons#addons_available_for_installation) list of add-ons available for installation.

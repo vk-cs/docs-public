@@ -14,7 +14,7 @@ When creating the instance the following was used:
 
    To increase your quotas, please contact [technical support](/en/contacts).
 
-1. [Install Terraform and configure the provider](../../../quick-start) if not already done.
+1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
 1. To go through this case, you need a provider version 0.6.0 or higher. Make sure that the provider version in the `vkcs_provider.tf` file is not lower. If the provider version is lower, [update the provider](../../../quick-start#update_terraform).
 

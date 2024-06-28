@@ -1,4 +1,4 @@
-If the cluster is not using the most current version of Kubernetes from [the list](../../concepts/versions/version-support/), it can be upgraded to a newer version of Kubernetes. When updating a cluster, part of its components are also [updated](../../concepts/update/), as well the installed add-ons.
+If the cluster uses not the latest [supported](../../concepts/versions/version-support/) version of Kubernetes, it can be upgraded. At this, installed add-ons and a part of its components are also [upgraded](../../concepts/update/).
 
 You cannot downgrade to a lower version of Kubernetes when upgrading. Clusters of versions 1.16 and below can only be upgraded by transferring a backup of data to a new cluster of the correct version, for example [using Velero](../../how-to-guides/velero-backup).
 
@@ -16,7 +16,7 @@ You cannot downgrade to a lower version of Kubernetes when upgrading. Clusters o
 
 1. Examine [update procedure](../../concepts/update/).
 1. Back up the cluster you plan to update, for example, using Velero.
-1. Deploy the backup to the new cluster which is identical to the one you plan to update. Use it to verify that the update procedure goes smoothly: all cluster data and applications remain available, and applications behave as expected.
+1. Deploy the new cluster from the backup which is identical to the one you plan to update. Update it and verify that all cluster data and applications remain available, and applications behave as expected.
 1. [Set threshold](../manage-node-group#configure_update_settings) of the number of unavailable worker nodes in the node groups.
 
 ## Do update
