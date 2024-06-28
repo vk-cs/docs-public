@@ -21,7 +21,7 @@
 
 1. Убедитесь, что клиент OpenStack [установлен](/ru/tools-for-using-services/cli/openstack-cli#1_ustanovite_klient_openstack), и [пройдите аутентификацию](/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu) в проекте.
 
-1. [Установите Terraform и настройте провайдер](../../../quick-start), если этого еще не сделано.
+1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
    Поместите настройки провайдера в файл конфигурации Terraform `provider.tf`.
 

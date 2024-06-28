@@ -9,7 +9,7 @@
 
 1. Ознакомьтесь с [особенностями использования Terraform](/ru/kubernetes/k8s/service-management/helpers/terraform-howto) в сервисе Cloud Containers.
 
-1. [Установите Terraform и настройте провайдер](../../../quick-start), если этого еще не сделано.
+1. [Установите Terraform и настройте окружение](/ru/tools-for-using-services/terraform/quick-start), если это еще не сделано.
 
    Поместите настройки провайдера в файл конфигурации Terraform `provider.tf`.
 
