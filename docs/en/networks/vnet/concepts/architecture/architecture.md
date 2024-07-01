@@ -51,6 +51,6 @@ As an SDN, the VK Cloud platform uses:
 
 <info>
 
-Sprut is the main SDN for all new projects. To find out which SDN is used in your project or to connect another, [contact technical support](/ru/contacts).
+Sprut is the main SDN for all new projects. You can [find out which SDN is used in your project](en/tools-for-using-services/account/service-management/project-settings/manage#sdn_view) in the project settings. To connect another SDN, [contact technical support](/en/contacts).
 
 </info>
