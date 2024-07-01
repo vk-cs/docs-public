@@ -118,7 +118,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 1. Select the network and subnet where the balancer will be hosted. [Get ID](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) of the subnet.
 
 1. Select the [availability zone](/en/intro/start/concepts/architecture#availability_zones_567cfd7a) to place the balancer. To get the list of availability zones, run the command:
-   
+
    ```bash
    openstack availability zone list
    ```
@@ -328,6 +328,16 @@ The following options are available when adding or editing a rule:
      The time-out values are set in milliseconds. The minimum value is `0`, the maximum value is `2073600000` (576 hours).
 
    - **Send X-Forwarded-For header** (for HTTP and HTTPS balancing protocols only): an option that allows you to enable the corresponding HTTP header to be sent to the backend. By default the option is disabled.
+
+   - **Sticky sessions**: the option provides long-term connection with the server with data saved throughout the entire session.
+
+      If the option is enabled, requests are executed between servers using the selected balancing method, but after connecting, the session is assigned to the selected server. All requests for this session will be sent to the same server, regardless of the balancing method. The session will not end until the user ends it or until the server becomes unavailable. In this case, requests will be transferred to the second server according to the balancing rules.
+
+      Field **Type** allows you to configure the session settings:
+
+      - **APP-cookie**: the session is determined by the cookie specified in the application code. If this option is selected, in the **Cookie name** field, enter the cookie that identifies the session.
+      - **HTTP-cookie**: the session is determined by the cookie that the load balancer creates during connections to the server and attaches to the session.
+      - **Source IP**: the client’s IP address is used to bind the session to the server. Use this type only if the client's IP address does not change during the session.
 
    - **Apply to the following instances**: tools to select virtual machine instances that will act as backends for the balancer. You can add an instance either by selecting it from the list or by selecting the tag assigned to the instance.
 
