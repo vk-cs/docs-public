@@ -15690,6 +15690,21 @@
     ]
   },
   {
+    "uuid": "a8e95000-f7eb-44d7-9b4e-53d57a9e7621",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/ml/spark-to-k8s/instructions/buckets",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/instructions/buckets/buckets.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/instructions/buckets/buckets.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "a148e51c-5a30-47d7-87c0-f7296d1804a7",
     "lang": "ru",
     "type": "INTERMEDIATE",
@@ -15864,6 +15879,36 @@
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/configmaps/configmaps.md",
     "variables": {},
     "hidden": true,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": " ",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/ml/spark-to-k8s/monitoring",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/monitoring/monitoring.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/monitoring/monitoring.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "a9922d0d-c988-4d7c-84cd-e9bbb5d58944",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/ml/spark-to-k8s/faq",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/faq/faq.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/faq/faq.md",
+    "variables": {},
+    "hidden": false,
     "version": null,
     "buildPoints": [
       "common"
