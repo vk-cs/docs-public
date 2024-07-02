@@ -2121,10 +2121,6 @@
   ],
   [
     "/en/networks/vnet/concepts/vpn",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/architecture#sdns_used"
-  ],
-  [
-    "/en/networks/vnet/concepts/vpn",
     "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#external_network"
   ],
   [
@@ -2530,6 +2526,10 @@
   [
     "/en/networks/vnet/service-management/vpn",
     "http://localhost:3000/docs/en/networks/vnet/concepts/architecture#sdns_used"
+  ],
+  [
+    "/en/networks/vnet/service-management/vpn",
+    "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli"
   ],
   [
     "/en/networks/vnet/service-management/vpn",
@@ -10841,6 +10841,10 @@
   ],
   [
     "/ru/networks/vnet/service-management/vpn",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli"
+  ],
+  [
+    "/ru/networks/vnet/service-management/vpn",
     "http://localhost:3000/docs/ru/networks/vnet/concepts/router#vozmozhnosti_standartnogo_marshrutizatora"
   ],
   [
@@ -10878,10 +10882,6 @@
   [
     "/ru/networks/vnet/service-management/vpn",
     "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli"
-  ],
-  [
-    "/ru/networks/vnet/how-to-guides/vpn-tunnel",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
   ],
   [
     "/ru/networks/vnet/how-to-guides/vpn-tunnel",
