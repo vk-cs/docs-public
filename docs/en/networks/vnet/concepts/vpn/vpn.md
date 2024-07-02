@@ -1,10 +1,3 @@
-
-<warn>
-
-The service is only available in networks created with use of [Neutron SDN](../architecture#sdns_used).
-
-</warn>
-
 VPN allows you to organize a tunnel between one or more VK Cloud subnets and the client network. This can be useful in situations where you need to:
 
 - connect the company's network to the cloud network (for example, to have access to the VK Cloud infrastructure);

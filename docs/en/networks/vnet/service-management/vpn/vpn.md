@@ -1,6 +1,9 @@
-VPN service is available in the Neutron and Sprut [SDN](../../concepts/architecture#sdns_used). Management of VPN tunnels in Sprut SDN is available only through the personal account interface.
-
 You can manage VPN tunnels: view, add or remove them from the project, as well as edit and restart tunnels.
+
+VPN service is available in the Neutron and Sprut [SDN](../../concepts/architecture#sdns_used). Service management tools depend on SDN used:
+
+- Sprut SDN: personal account interface, API, Terraform.
+- Neutron SDN: personal account interface, API, [Terraform](/en/tools-for-using-services/terraform/how-to-guides/vnet/vpn), [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
 
 ## Viewing a list of VPN tunnels and information about them
 
