@@ -11312,6 +11312,18 @@
     "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
   ],
   [
+    "/ru/networks/dns/how-to-guides/dnsbalancer",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/ru/networks/dns/how-to-guides/dnsbalancer",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/ru/networks/dns/how-to-guides/dnsbalancer",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#delete_vm"
+  ],
+  [
     "/ru/networks/dns/publicdns",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/api-dns"
   ],

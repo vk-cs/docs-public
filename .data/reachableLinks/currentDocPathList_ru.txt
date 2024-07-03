@@ -178,6 +178,8 @@
 /docs/ru/networks/cdn/faq
 /docs/ru/networks/dns
 /docs/ru/networks/dns/private-dns
+/docs/ru/networks/dns/how-to-guides
+/docs/ru/networks/dns/how-to-guides/dnsbalancer
 /docs/ru/networks/dns/publicdns
 /docs/ru/networks/directconnect
 /docs/ru/networks/directconnect/connect
