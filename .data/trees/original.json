@@ -11685,6 +11685,36 @@
     ]
   },
   {
+    "uuid": "314bcd75-6b57-41e2-a8e8-5ff4b8ee1f6e",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/networks/dns/how-to-guides",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/dns/how-to-guides/how-to-guides.meta.json",
+    "mdFullPath": null,
+    "variables": {},
+    "hidden": true,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "ddc4804a-430d-4169-a8e3-d6f4b50b3b45",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/networks/dns/how-to-guides/dnsbalancer",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/dns/how-to-guides/dnsbalancer/dnsbalancer.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/dns/how-to-guides/dnsbalancer/dnsbalancer.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "d6699635-506c-4076-9c9e-a5d5c9dd9150",
     "lang": "ru",
     "type": "ARTICLE",
