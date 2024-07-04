@@ -18,7 +18,7 @@
 ## 1. Подготовительные шаги
 
 1. [Зарегистрируйтесь](/ru/intro/start/account-registration) в VK Cloud.
-1. [Настройте](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута мигрируемая инфраструктура.
+1. [Настройте](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для того аккаунта, от имени которого будет развернута мигрируемая инфраструктура.
 1. [Подключите](/ru/applications-and-services/marketplace/service-management/pr-instance-add/) сервис Hystax Acura Migration.
 
    Дождитесь завершения установки — на почту придет ссылка с логином и паролем. Сервис будет развернут по адресу https://migration.mcs-cloud.ru (личный кабинет Hystax Acura).
@@ -50,20 +50,20 @@
    - hosts: all
      vars:
        ansible_ssh_pipelining: true
-   
+
      tasks:
        - name: Generate URL rpm
          set_fact:
            download_url: "https://{{ acura_host }}/linux_agent/{{ customer_id }}?dist_type=rpm&platform=x64"
            remote_path: /tmp/hlragent.rpm
          when: ansible_os_family == "RedHat"
-   
+
        - name: Generate URL deb
          set_fact:
            download_url: "https://{{ acura_host }}/linux_agent/{{ customer_id }}?dist_type=deb&platform=x64"
            remote_path: /tmp/hlragent.deb
          when: ansible_os_family == "Debian"
-   
+
        - name: Download agent
          get_url:
            url: "{{ download_url }}"
@@ -72,21 +72,21 @@
            validate_certs: no
            timeout: 300
          become: yes
-   
+
        - name: Install Hystax Linux Replication Agent from rpm package
          yum:
            name: "{{ remote_path }}"
            state: present
          become: yes
          when: ansible_os_family == "RedHat"
-   
+
        - name: Install Hystax Linux Replication Agent from deb package
          apt:
            deb: "{{ remote_path }}"
            state: present
          become: yes
          when: ansible_os_family == "Debian"
-   
+
        - name: Remove package file
          file:
            path: "{{ remote_path }}"
