@@ -7,5 +7,8 @@
   "sectionTitle": "Управление аккаунтом VK Cloud",
   "icon": "",
   "weight": 1,
-  "additionalUuids": ["b627b844-6f48-4b2f-9902-1927658c0743"]
+  "additionalUuids": [
+    "b627b844-6f48-4b2f-9902-1927658c0743"
+  ],
+  "uuid": "329f275d-3814-4228-b695-579c873a8fbd"
 }

@@ -205,7 +205,7 @@
   },
   {
     "source": "/ru/additionals/account/account/security/2farecovery/2fause",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -1171,7 +1171,7 @@
   },
   {
     "source": "/ru/additionals/start/mcs-security/2fa",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -1195,7 +1195,7 @@
   },
   {
     "source": "/ru/additionals/account/account/security/2farecovery",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -1351,7 +1351,7 @@
   },
   {
     "source": "/ru/additionals/start/mcs-security",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -2155,7 +2155,7 @@
   },
   {
     "source": "/ru/additionals/account/account",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage",
     "permanent": false,
     "locale": false
   },
@@ -2167,79 +2167,79 @@
   },
   {
     "source": "/ru/additionals/account/account/delete",
-    "destination": "/ru/tools-for-using-services/account/how-to-guides/account-delete",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/edit",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/editinfo",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/editinfo",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/editinfo",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/keypairs",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/keypairs/create",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/keypairs/delete",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/keypairs/importexport",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/keypairs/recovery",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/security",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/security/2faoff",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/security/2faon",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/security/2fause",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/account/account/security/passwordsecurity",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -4567,7 +4567,7 @@
   },
   {
     "source": "/ru/additionals/api/api-account/api-access",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -4585,7 +4585,7 @@
   },
   {
     "source": "/ru/base/account/account/delete",
-    "destination": "/ru/tools-for-using-services/account/how-to-guides/account-delete",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
     "permanent": false,
     "locale": false
   },
@@ -5803,79 +5803,79 @@
   },
   {
     "source": "/ru/base/account/account",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/editinfo",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/editinfo",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/keypairs",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/keypairs/create",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/keypairs/importexport",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/keypairs/delete",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/keypairs/recovery",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/security",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/project/api/api-access",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/security/2faoff",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/security/2faon",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/security/2fause",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/account/security/passwordsecurity",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -5887,7 +5887,7 @@
   },
   {
     "source": "/ru/base/account/account/edit",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/editinfo",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo",
     "permanent": false,
     "locale": false
   },
@@ -6403,7 +6403,7 @@
   },
   {
     "source": "/ru/base/account/instructions/edit",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/editinfo",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo",
     "permanent": false,
     "locale": false
   },
@@ -8755,37 +8755,37 @@
   },
   {
     "source": "/ru/base/account/instructions/account-manage/security",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/security",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/security",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/security",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/security",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/security",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
@@ -18691,85 +18691,85 @@
   },
   {
     "source": "/ru/base/account/instructions/account-manage",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/editinfo",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/editinfo",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/editinfo",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/editinfo",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/keypairs",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/keypairs",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/keypairs",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/keypairs",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/account/instructions/account-manage/keypairs",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
@@ -18865,7 +18865,7 @@
   },
   {
     "source": "/ru/base/account/use-cases/account-delete",
-    "destination": "/ru/tools-for-using-services/account/how-to-guides/account-delete",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
     "permanent": false,
     "locale": false
   },
@@ -22585,85 +22585,85 @@
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/editinfo",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/editinfo",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/editinfo",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/editinfo",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/manage-2fa",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/keypairs",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/keypairs",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/keypairs",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/keypairs",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/tools-for-using-services/account/instructions/account-manage/keypairs",
-    "destination": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
     "permanent": false,
     "locale": false
   },
@@ -22753,7 +22753,7 @@
   },
   {
     "source": "/ru/tools-for-using-services/account/use-cases/account-delete",
-    "destination": "/ru/tools-for-using-services/account/how-to-guides/account-delete",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
     "permanent": false,
     "locale": false
   },
@@ -25681,7 +25681,7 @@
   },
   {
     "source": "/ru/ru",
-    "destination": "/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad",
     "permanent": false,
     "locale": false
   },
@@ -27146,6 +27146,102 @@
   {
     "source": "/en/tools-for-using-services/rest-api/install-jq",
     "destination": "/en/tools-for-using-services/api/rest-api/install-jq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/account-manage",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/account-manage/editinfo",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/account-manage/editinfo",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/tools-for-using-services/account/how-to-guides/account-delete",
+    "destination": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
     "permanent": false,
     "locale": false
   }

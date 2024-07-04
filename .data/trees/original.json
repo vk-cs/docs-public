@@ -17460,6 +17460,186 @@
     ]
   },
   {
+    "uuid": "69065e26-1407-46e5-a3dc-678fb90fd2eb",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 3,
+    "partialPath": "/ru/tools-for-using-services/vk-cloud-account",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/vk-cloud-account.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/vk-cloud-account.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "e1ed624b-9991-4828-9a63-4d752802afe7",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/tools-for-using-services/vk-cloud-account/service-management",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/service-management.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/service-management.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "329f275d-3814-4228-b695-579c873a8fbd",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/account-manage.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/account-manage.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "28c8f487-b585-453a-ab82-1640f7c74abd",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo/editinfo.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo/editinfo.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "58c64d85-bf48-4c63-be64-26f30e611cae",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/manage-2fa.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/manage-2fa.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "fb539bf2-64ba-499d-b8cb-e5389d1d63a1",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs/keypairs.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs/keypairs.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "e9897970-fc7d-4037-b800-5dfdd5e80d97",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/project-settings.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/project-settings.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "bddfed83-97f8-4774-8161-ee29a2b13c16",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/create",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/create/create.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/create/create.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "f46014e3-0201-4ce2-93cf-3234e18f271a",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/manage",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/manage/manage.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/manage/manage.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "46b40d1d-5c26-454c-a10f-2242b5e2a502",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/how-to-guides.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/how-to-guides.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "95aa0505-16f0-43b8-9e7d-567e026eb3ca",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad/add-fim-for-ad.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad/add-fim-for-ad.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "3d563e56-4848-488f-af5d-9c42249b2628",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete/account-delete.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete/account-delete.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "1ea92b5f-1ea5-43e9-b1c5-9eddb24081d4",
     "lang": "ru",
     "type": "INTERMEDIATE",
@@ -17595,66 +17775,6 @@
     ]
   },
   {
-    "uuid": "b627b844-6f48-4b2f-9902-1927658c0743",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/account/service-management/account-manage",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/account-manage/account-manage.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/account-manage/account-manage.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "92adb37f-3c96-4ef2-80f3-9ae77b0c8cbe",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/account/service-management/account-manage/editinfo",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/account-manage/editinfo/editinfo.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/account-manage/editinfo/editinfo.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "147d5bc6-7c79-4e0f-ad35-d3f809387014",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa/manage-2fa.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa/manage-2fa.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "babf647d-74c4-4e2e-82fc-63e8ff8c0793",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/account-manage/keypairs/keypairs.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/service-management/account-manage/keypairs/keypairs.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "b4e1e128-e778-4b33-b140-5008fa9146ff",
     "lang": "ru",
     "type": "INTERMEDIATE",
@@ -17775,21 +17895,6 @@
     ]
   },
   {
-    "uuid": "3d8fbd42-5a15-405d-9891-8ce10e4f8c32",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad/add-fim-for-ad.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad/add-fim-for-ad.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
     "uuid": "30d03839-73a1-4d58-bed0-494ed2a5f8df",
     "lang": "ru",
     "type": "ARTICLE",
@@ -17797,21 +17902,6 @@
     "partialPath": "/ru/tools-for-using-services/account/how-to-guides/systemstate",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/how-to-guides/systemstate/systemstate.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/how-to-guides/systemstate/systemstate.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "b2af87a5-29a6-4a35-bb27-3ceb22d11532",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/account/how-to-guides/account-delete",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/how-to-guides/account-delete/account-delete.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/account/how-to-guides/account-delete/account-delete.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -17902,396 +17992,6 @@
     "partialPath": "/ru/tools-for-using-services/cli/aws-cli",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/cli/aws-cli/aws-cli.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/cli/aws-cli/aws-cli.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "35bf307f-d896-4c37-9267-8fc7d90c3587",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 3,
-    "partialPath": "/ru/tools-for-using-services/api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "e82794cd-bc84-4228-a998-849ce05fc10c",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 4,
-    "partialPath": "/ru/tools-for-using-services/api/rest-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/rest-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/rest-api.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "c4d3c021-3c20-4aeb-bc97-388452c40c6d",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/api/rest-api/enable-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/enable-api/enable-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/enable-api/enable-api.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "70123755-37ab-4024-a5c6-fc56967933d7",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token/case-keystone-token.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token/case-keystone-token.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "8cfb317b-616e-44b7-bec4-18b09236c047",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/endpoints/endpoints.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/endpoints/endpoints.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "3f35c7fa-ad54-4e4b-bfae-c175a111944a",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/api/rest-api/install-jq",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/install-jq/install-jq.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/install-jq/install-jq.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "02837930-87d9-4b85-a81e-cc8dfc2fe013",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 4,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/api-spec.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/api-spec.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "b7710706-2554-40c7-b180-2015f9b4c15d",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/backup-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/backup-api/backup-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/backup-api/backup-api.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "698924fa-a36b-44d0-ab12-5ace5ee33ed7",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/vision-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/vision-api/vision-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/vision-api/vision-api.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "976e246d-959d-4f56-99ee-6604e10c294a",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/bigdata-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/bigdata-api/bigdata-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/bigdata-api/bigdata-api.md",
-    "variables": {},
-    "hidden": true,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "f2c78538-f573-4d55-9d3b-ca02056f6f7f",
-    "lang": "ru",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/s3-rest-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/s3-rest-api.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "aa8f4cb6-941c-42c0-90fa-048947d8d800",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro/intro.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro/intro.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "39c13f94-8b85-44c7-8b5a-99fe9913faaa",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/bucket-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/bucket-api/bucket-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/bucket-api/bucket-api.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "47eac79f-0fa5-44af-ab92-e95ee30c8faf",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/object-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/object-api/object-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/object-api/object-api.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "f45c4a9a-cad3-458e-87b2-4409b9190f14",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/acl-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/acl-api/acl-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/acl-api/acl-api.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "3d0433a6-158a-4d61-a25f-dc74d3839fc6",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/multipart-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/multipart-api/multipart-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/multipart-api/multipart-api.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "e774f3ed-6a17-43a9-926b-ab73fd719676",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/lifecycle-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/lifecycle-api/lifecycle-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/lifecycle-api/lifecycle-api.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "0f7ce21b-d4ef-423d-a821-853200d52e91",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/cors-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/cors-api/cors-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/cors-api/cors-api.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "9120115e-616f-48ca-a282-12639a63a366",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/pak-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/pak-api/pak-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/pak-api/pak-api.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "80c67385-b262-4835-a629-29e996b232e9",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/webhook-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/webhook-api/webhook-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/webhook-api/webhook-api.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "851591de-d4d7-4bda-a483-d33e45ea7f62",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/logging",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/logging/logging.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/logging/logging.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "8575f65f-409e-4cec-b5f6-38cf3dcd9e6e",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/magnum-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/magnum-api/magnum-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/magnum-api/magnum-api.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "828601c4-5d6f-433f-b162-f1c5f44bc7cf",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/api-dns",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/api-dns/api-dns.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/api-dns/api-dns.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "bd2a6ee2-39a5-4f05-a933-8db9aa96b0ff",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/api-cdn",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/api-cdn/api-cdn.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/api-cdn/api-cdn.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "3f525128-b6e6-4dda-908e-83ad1e68b2c8",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/partners-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/partners-api/partners-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/partners-api/partners-api.md",
-    "variables": {},
-    "hidden": true,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "6fefb25f-833a-4205-9fd8-0b1fdff0c1dd",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 5,
-    "partialPath": "/ru/tools-for-using-services/api/api-spec/vdi-api",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/vdi-api/vdi-api.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/vdi-api/vdi-api.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -18697,6 +18397,396 @@
     "partialPath": "/ru/tools-for-using-services/terraform/reference/configuration",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/reference/configuration/configuration.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/reference/configuration/configuration.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "35bf307f-d896-4c37-9267-8fc7d90c3587",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 3,
+    "partialPath": "/ru/tools-for-using-services/api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "e82794cd-bc84-4228-a998-849ce05fc10c",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/tools-for-using-services/api/rest-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/rest-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/rest-api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "c4d3c021-3c20-4aeb-bc97-388452c40c6d",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/api/rest-api/enable-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/enable-api/enable-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/enable-api/enable-api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "70123755-37ab-4024-a5c6-fc56967933d7",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token/case-keystone-token.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token/case-keystone-token.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "8cfb317b-616e-44b7-bec4-18b09236c047",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/endpoints/endpoints.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/endpoints/endpoints.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "3f35c7fa-ad54-4e4b-bfae-c175a111944a",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/api/rest-api/install-jq",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/install-jq/install-jq.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/rest-api/install-jq/install-jq.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "02837930-87d9-4b85-a81e-cc8dfc2fe013",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/api-spec.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/api-spec.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "b7710706-2554-40c7-b180-2015f9b4c15d",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/backup-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/backup-api/backup-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/backup-api/backup-api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "698924fa-a36b-44d0-ab12-5ace5ee33ed7",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/vision-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/vision-api/vision-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/vision-api/vision-api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "976e246d-959d-4f56-99ee-6604e10c294a",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/bigdata-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/bigdata-api/bigdata-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/bigdata-api/bigdata-api.md",
+    "variables": {},
+    "hidden": true,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "f2c78538-f573-4d55-9d3b-ca02056f6f7f",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/s3-rest-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/s3-rest-api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "aa8f4cb6-941c-42c0-90fa-048947d8d800",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro/intro.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro/intro.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "39c13f94-8b85-44c7-8b5a-99fe9913faaa",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/bucket-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/bucket-api/bucket-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/bucket-api/bucket-api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "47eac79f-0fa5-44af-ab92-e95ee30c8faf",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/object-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/object-api/object-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/object-api/object-api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "f45c4a9a-cad3-458e-87b2-4409b9190f14",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/acl-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/acl-api/acl-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/acl-api/acl-api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "3d0433a6-158a-4d61-a25f-dc74d3839fc6",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/multipart-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/multipart-api/multipart-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/multipart-api/multipart-api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "e774f3ed-6a17-43a9-926b-ab73fd719676",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/lifecycle-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/lifecycle-api/lifecycle-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/lifecycle-api/lifecycle-api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "0f7ce21b-d4ef-423d-a821-853200d52e91",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/cors-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/cors-api/cors-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/cors-api/cors-api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "9120115e-616f-48ca-a282-12639a63a366",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/pak-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/pak-api/pak-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/pak-api/pak-api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "80c67385-b262-4835-a629-29e996b232e9",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/s3-rest-api/webhook-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/webhook-api/webhook-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api/webhook-api/webhook-api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "851591de-d4d7-4bda-a483-d33e45ea7f62",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/logging",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/logging/logging.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/logging/logging.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "8575f65f-409e-4cec-b5f6-38cf3dcd9e6e",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/magnum-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/magnum-api/magnum-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/magnum-api/magnum-api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "828601c4-5d6f-433f-b162-f1c5f44bc7cf",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/api-dns",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/api-dns/api-dns.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/api-dns/api-dns.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "bd2a6ee2-39a5-4f05-a933-8db9aa96b0ff",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/api-cdn",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/api-cdn/api-cdn.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/api-cdn/api-cdn.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "3f525128-b6e6-4dda-908e-83ad1e68b2c8",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/partners-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/partners-api/partners-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/partners-api/partners-api.md",
+    "variables": {},
+    "hidden": true,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "6fefb25f-833a-4205-9fd8-0b1fdff0c1dd",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/vdi-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/vdi-api/vdi-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/vdi-api/vdi-api.md",
     "variables": {},
     "hidden": false,
     "version": null,
