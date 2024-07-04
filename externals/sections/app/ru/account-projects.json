@@ -1,0 +1,17 @@
+{
+    "meta": "Управление проектами",
+    "path": "/account/main",
+    "groups": [
+      {
+        "title": "НАСТРОЙКА ПРОЕКТА",
+        "links": [
+          {
+            "link": "/ru/tools-for-using-services/account/service-management/project-settings"
+          },
+          {
+            "link": "/ru/tools-for-using-services/account/service-management/project-settings/manage"
+          }
+        ]
+      }
+    ]
+  }
