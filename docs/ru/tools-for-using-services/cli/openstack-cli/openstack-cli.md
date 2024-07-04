@@ -13,7 +13,7 @@
 
 ```bash
 sudo apt update
-sudo apt install python3-openstackclient 
+sudo apt install python3-openstackclient
 ```
 
 </tabpanel>
@@ -82,7 +82,7 @@ yum install python-openstackclient
 ## 3. Пройдите аутентификацию
 
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-2. Убедитесь, что [включена](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/tools-for-using-services/rest-api/enable-api) доступ по API.
+2. Убедитесь, что [включена](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/tools-for-using-services/rest-api/enable-api) доступ по API.
 3. Выберите проект.
 4. На странице **Настройки проекта** [перейдите на вкладку](https://msk.cloud.vk.com/app/project/keys/) **Доступ по API**.
 5. Нажмите кнопку **Скачать openrc версии 3**. Будет загружен файл с именем `<название проекта>-openrc.sh`.
