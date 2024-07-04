@@ -52,7 +52,7 @@
 </tabpanel>
 <tabpanel>
 
-1. [Включите](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
+1. [Включите](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
 1. [Получите](/ru/tools-for-using-services/api/rest-api/case-keystone-token) токен доступа `X-Auth-Token`.
 1. [Узнайте](https://msk.cloud.vk.com/app/project/endpoints) адрес эндпоинта `Audit`.
 1. Выполните запрос:
@@ -201,7 +201,7 @@ to=2023-11-15T16:43:00.477Z" \
     }
   ],
   "marker": "eyJ0bSI6MTY5NzM2NDAwMCwib2ZzIjo1LCJXXXX"
-} 
+}
 ```
 
 </details>

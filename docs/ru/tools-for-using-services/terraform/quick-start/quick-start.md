@@ -2,7 +2,7 @@
 
 1. Установите Terraform c официального [зеркала](https://hashicorp-releases.mcs.mail.ru/terraform) от VK Cloud.
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-1. [Настройте двухфакторную аутентификацию](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) и [активируйте доступ по API](/ru/tools-for-using-services/rest-api/enable-api), если это еще не сделано.
+1. [Настройте двухфакторную аутентификацию](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) и [активируйте доступ по API](/ru/tools-for-using-services/rest-api/enable-api), если это еще не сделано.
 
 1. Нажмите на имя пользователя в шапке страницы, из выпадающего списка выберите **Настройки проекта**.
 

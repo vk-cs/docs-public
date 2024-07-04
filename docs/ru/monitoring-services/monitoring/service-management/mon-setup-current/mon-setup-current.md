@@ -12,7 +12,7 @@
 
 Если вкладка **Настройка мониторинга** отсутствует:
 
-1. Убедитесь, что [включена](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/tools-for-using-services/rest-api/enable-api) доступ по API.
+1. Убедитесь, что [включена](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) двухфакторная аутентификация и [активирован](/ru/tools-for-using-services/rest-api/enable-api) доступ по API.
 1. [Получите токен доступа](/ru/tools-for-using-services/api/rest-api/case-keystone-token) `X-Subject-Token`.
 1. [Получите Project ID](/ru/tools-for-using-services/rest-api/endpoints#poluchenie_project_id), специальный идентификатор для работы с сервисами. Пример: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`.
 1. [Получите ID виртуальной машины](/ru/computing/iaas/service-management/vm/vm-manage#poluchenie_id_virtualnoy_mashiny).
