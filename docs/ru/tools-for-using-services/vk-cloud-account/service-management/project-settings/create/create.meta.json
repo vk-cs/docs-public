@@ -6,5 +6,8 @@
     "metaDescription": "Описание создания проекта на платформе VK Cloud.",
     "sectionTitle": "Создание проекта",
     "icon": "",
-    "weight": 1
+    "weight": 1,
+    "uuid": "bddfed83-97f8-4774-8161-ee29a2b13c16",
+    "createdAt": "2024-07-04T10:54:19.000Z",
+    "updatedAt": "2024-07-04T10:54:19.000Z"
 }

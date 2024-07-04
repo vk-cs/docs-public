@@ -6,5 +6,6 @@
   "metaDescription": "Работа с аккаунтом VK Cloud.",
   "sectionTitle": "Управление сервисом",
   "icon": "",
-  "weight": 2
+  "weight": 2,
+  "uuid": "e1ed624b-9991-4828-9a63-4d752802afe7"
 }

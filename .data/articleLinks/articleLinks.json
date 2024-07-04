@@ -8225,7 +8225,7 @@
   ],
   [
     "/ru/intro/start/account-registration",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa"
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa"
   ],
   [
     "/ru/intro/start/account-registration",
@@ -8477,7 +8477,7 @@
   ],
   [
     "/ru/intro/start/faq",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa"
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa"
   ],
   [
     "/ru/intro/start/faq",
@@ -9369,7 +9369,7 @@
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa/"
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/"
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
@@ -16129,7 +16129,7 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/dr-quick-start",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa"
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/dr-quick-start",
@@ -16161,7 +16161,7 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa"
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax",
@@ -16177,7 +16177,7 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/cyber-backup-quick-start",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa"
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/cyber-backup-quick-start",
@@ -16516,6 +16516,74 @@
     "http://localhost:3000/docs/ru/storage/s3/tariffication"
   ],
   [
+    "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#vosstanovlenie_dostupa_k_vm_po_klyuchu"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/create",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage/"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/create",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage/"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/create",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/access-manage/"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/service-management/project-settings/manage",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage/"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad",
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad#3_nastroyte_svyaz_grupp_i_roley_v_vk_cloud"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/add-fim-for-ad",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/access-manage#udalenie_uchastnika"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#udalenie_proekta"
+  ],
+  [
+    "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
+    "http://localhost:3000/docs/ru/intro/billing/service-management/refund"
+  ],
+  [
     "/ru/tools-for-using-services/account/concepts/projects",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
   ],
@@ -16673,43 +16741,11 @@
   ],
   [
     "/ru/tools-for-using-services/account/service-management/project-invitation",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/editinfo"
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo"
   ],
   [
     "/ru/tools-for-using-services/account/service-management/activation",
     "http://localhost:3000/docs/ru/intro/billing/service-management/add-card"
-  ],
-  [
-    "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
-  ],
-  [
-    "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
-    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
-  ],
-  [
-    "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
-    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
-  ],
-  [
-    "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
-    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
-  ],
-  [
-    "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#vosstanovlenie_dostupa_k_vm_po_klyuchu"
-  ],
-  [
-    "/ru/tools-for-using-services/account/service-management/account-manage/keypairs",
-    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
-  ],
-  [
-    "/ru/tools-for-using-services/account/service-management/project-settings/create",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions#roli_dlya_obshchego_upravleniya_proektom"
-  ],
-  [
-    "/ru/tools-for-using-services/account/service-management/project-settings/create",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation#privyazka_nomera_telefona"
   ],
   [
     "/ru/tools-for-using-services/account/service-management/project-settings/create",
@@ -16726,10 +16762,6 @@
   [
     "/ru/tools-for-using-services/account/service-management/project-settings/create",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/tariffication"
-  ],
-  [
-    "/ru/tools-for-using-services/account/service-management/project-settings/manage",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
   ],
   [
     "/ru/tools-for-using-services/account/service-management/project-settings/manage",
@@ -16817,7 +16849,7 @@
   ],
   [
     "/ru/tools-for-using-services/account/service-management/project-settings/access-manage",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa"
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa"
   ],
   [
     "/ru/tools-for-using-services/account/service-management/project-settings/access-manage",
@@ -16829,7 +16861,7 @@
   ],
   [
     "/ru/tools-for-using-services/account/service-management/actionslogs",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa"
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa"
   ],
   [
     "/ru/tools-for-using-services/account/service-management/actionslogs",
@@ -16848,36 +16880,8 @@
     "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-console#logi_soobshcheniy_vm"
   ],
   [
-    "/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
-  ],
-  [
-    "/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
-  ],
-  [
-    "/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions"
-  ],
-  [
-    "/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad#3_nastroyte_svyaz_grupp_i_roley_v_vk_cloud"
-  ],
-  [
-    "/ru/tools-for-using-services/account/how-to-guides/add-fim-for-ad",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/access-manage#udalenie_uchastnika"
-  ],
-  [
     "/ru/tools-for-using-services/account/how-to-guides/systemstate",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/debugging"
-  ],
-  [
-    "/ru/tools-for-using-services/account/how-to-guides/account-delete",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#udalenie_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/account/how-to-guides/account-delete",
-    "http://localhost:3000/docs/ru/intro/billing/service-management/refund"
   ],
   [
     "/ru/tools-for-using-services/account/tariffication",
@@ -16910,218 +16914,6 @@
   [
     "/ru/tools-for-using-services/cli/openstack-cli",
     "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/enable-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa/"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/enable-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa#otklyuchenie_2fa"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
-    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
-    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
-    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token#generaciya_tokena"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
-    "http://localhost:3000/docs/ru/monitoring-services/logging/service-management/view-logs"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
-    "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/api-dns"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/tools-for-using-services/api"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/images"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/backup-api"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/logging"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/kubernetes/k8s"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/addons"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/networks/vnet"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/networks/balancing/service-management/manage-lb"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/networks/dns/publicdns"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/bigdata-api"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/dbs/dbaas"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/ml/mlplatform"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/vision-api"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/quotasandlimits"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/api/rest-api/install-jq",
-    "http://localhost:3000/docs/ru/storage/backups/api-examples#poluchit_spisok_sozdannyh_planov_rezervnogo_kopirovaniya"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/backup-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/backup-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/vision-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/vision-api",
-    "http://localhost:3000/docs/ru/ml/vision/quick-start/auth-vision"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/bigdata-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/bigdata-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro",
-    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/logging",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/logging",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/magnum-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/magnum-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/api-dns",
-    "http://localhost:3000/docs/ru/networks/dns/publicdns"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/api-dns",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/api-dns",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/api-cdn",
-    "http://localhost:3000/docs/ru/networks/cdn"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/api-cdn",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/api-cdn",
-    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/partners-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/vdi-api",
-    "http://localhost:3000/docs/ru/computing/cloud-desktops"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/vdi-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
-  ],
-  [
-    "/ru/tools-for-using-services/api/api-spec/vdi-api",
-    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
   ],
   [
     "/ru/tools-for-using-services/terraform/quick-start",
@@ -17410,6 +17202,218 @@
   [
     "/ru/tools-for-using-services/terraform/reference/configuration",
     "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/iaas/create"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/enable-api",
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/enable-api",
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa#otklyuchenie_2fa"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
+    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token#generaciya_tokena"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
+    "http://localhost:3000/docs/ru/monitoring-services/logging/service-management/view-logs"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/case-keystone-token",
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/api-dns"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/tools-for-using-services/api"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/images"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/backup-api"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/logging"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/kubernetes/k8s"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/addons"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/networks/vnet"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/networks/balancing/service-management/manage-lb"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/networks/dns/publicdns"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/bigdata-api"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/dbs/dbaas"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/s3-rest-api"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/ml/mlplatform"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/vision-api"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/quotasandlimits"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/endpoints",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
+  ],
+  [
+    "/ru/tools-for-using-services/api/rest-api/install-jq",
+    "http://localhost:3000/docs/ru/storage/backups/api-examples#poluchit_spisok_sozdannyh_planov_rezervnogo_kopirovaniya"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/backup-api",
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/backup-api",
+    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/vision-api",
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/vision-api",
+    "http://localhost:3000/docs/ru/ml/vision/quick-start/auth-vision"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/bigdata-api",
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/bigdata-api",
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/s3-rest-api/intro",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/logging",
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/logging",
+    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/magnum-api",
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/magnum-api",
+    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/api-dns",
+    "http://localhost:3000/docs/ru/networks/dns/publicdns"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/api-dns",
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/api-dns",
+    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/api-cdn",
+    "http://localhost:3000/docs/ru/networks/cdn"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/api-cdn",
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/api-cdn",
+    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/partners-api",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/vdi-api",
+    "http://localhost:3000/docs/ru/computing/cloud-desktops"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/vdi-api",
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/vdi-api",
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
   ],
   [
     "/ru/cases/cases-cms/cases-wp",
