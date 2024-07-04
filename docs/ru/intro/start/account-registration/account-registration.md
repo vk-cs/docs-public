@@ -125,7 +125,7 @@ VK Cloud поддерживает работу с платформой при п
 
 </info>
 
-1. [Настройте](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
+1. [Настройте](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) двухфакторную аутентификацию (2FA) для вашего аккаунта.
 1. [Активируйте](/ru/tools-for-using-services/rest-api/enable-api) доступ по API.
 
 ## 4. (Опционально) Пригласите участников в проект

@@ -1,33 +1,17 @@
-Вы можете создавать собственные [проекты](../../../concepts/projects) в VK Cloud. Создав проект, вы становитесь его [владельцем](../../../concepts/rolesandpermissions#roli_dlya_obshchego_upravleniya_proektom).
+{include(/ru/_includes/_project_create_header.md)}
 
-<info>
-
-В рамках [базовых квот](../../../concepts/quotasandlimits#obshchie_d4f726f4) один пользователь может создать не более 5 проектов. Это число можно увеличить в пределах существующего [лимита](../../../concepts/quotasandlimits#kvoty_i_tehnicheskie_limity) по запросу в [техническую поддержку](/ru/contacts).
-
-</info>
-
-Чтобы создать проект:
-
-1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
-
-1. В шапке личного кабинета нажмите на имя проекта.
-
-    Откроется список проектов, в которых вы являетесь участником.
-
-1. В конце списка нажмите кнопку **Создать новый проект**.
-
-    Если к вашей учетной записи не был привязан телефон, [привяжите](../../activation#privyazka_nomera_telefona) его.
-
-1. Введите имя проекта.
-
-    Требования к имени:
-
-   - длина от 4 до 63 символов;
-   - допускаются только строчные латинские буквы, цифры и спецсимволы:
-      - `_`, `-` – кроме последнего символа;
-      - `.`, `+`, `@`, `#` — кроме первого и последнего символов.
-
-1. Нажмите кнопку **Сохранить**.
+<tabs>
+<tablist>
+<tab>Личный кабинет</tab>
+<tab>VK Cloud Аккаунт</tab>
+</tablist>
+<tabpanel>
+{include(/ru/_includes/_project_create_tab_lk.md)}
+</tabpanel>
+<tabpanel>
+{include(/ru/_includes/_project_create_tab_account.md)}
+</tabpanel>
+</tabs>
 
 ## Донастройка проекта
 

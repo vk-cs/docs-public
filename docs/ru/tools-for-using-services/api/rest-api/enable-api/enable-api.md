@@ -2,7 +2,7 @@
 
 ## Активация доступа по API
 
-1. [Включите](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa/) двухфакторную аутентификацию.
+1. [Включите](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/) двухфакторную аутентификацию.
 1. Нажмите на имя пользователя в шапке страницы и включите 2FA одним из способов:
 
       <tabs>
@@ -26,6 +26,6 @@
 
 ## Деактивация доступа по API
 
-1. [Включите](/ru/tools-for-using-services/account/service-management/account-manage/manage-2fa#otklyuchenie_2fa) двухфакторную аутентификацию, если она была отключена.
+1. [Включите](/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa#otklyuchenie_2fa) двухфакторную аутентификацию, если она была отключена.
 1. Нажмите на имя пользователя в шапке страницы и выберите **Настройки аккаунта**.
 1. На вкладке **Безопасность** нажмите кнопку **Деактивировать доступ по API**.
