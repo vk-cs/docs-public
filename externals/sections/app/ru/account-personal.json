@@ -1,0 +1,14 @@
+{
+    "meta": "Изменение профиля",
+    "path": "/account/personal",
+    "groups": [
+      {
+        "title": "УПРАВЛЕНИЕ СЕРВИСОМ",
+        "links": [
+          {
+            "link": "/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo"
+          }
+        ]
+      }
+    ]
+  }
