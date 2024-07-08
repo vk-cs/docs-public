@@ -1,3 +1,16 @@
+## Kubernetes 1.28.9 <a id="v1-28-9"></a>
+
+**Важные изменения в Kubernetes:**
+
+- Теперь Kubernetes собран на  Golang версии 1.21.9.
+- Обновлен пакет `debian-base/set-cap` до версии bookworm-v1.0.2.
+
+**Исправлены уязвимости:**
+
+- [CVE-2024-3177](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#cve-2024-3177-bypassing-mountable-secrets-policy-imposed-by-the-serviceaccount-admission-plugin): обход политики использования секретов, назначенной плагином ServiceAccount.
+
+Подробнее об этих и других изменениях в [официальной документации Kubernetes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v1289).
+
 ## Kubernetes 1.27.6 <a id="v1-27-6"></a>
 
 **Изменения в сервисе Kubernetes aaS:**
