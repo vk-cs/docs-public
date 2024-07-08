@@ -6,30 +6,34 @@ When [updating a cluster](../../../service-management/update), part of its compo
 
 These components are present in all Cloud Containers clusters.
 
-[cols="3,1,1,1,1", options="header"]
+[cols="3,1,1,1,1,1", options="header"]
 |===
 .^|Компонент
 .^|Kubernetes<br>1.21.4–1.22.x
 .^|Kubernetes<br>1.24.x–1.25.x
 .^|Kubernetes<br>1.26.x
 .^|Kubernetes<br>1.27.x
+.^|Kubernetes<br>1.28.x
 
 |[CoreDNS](https://github.com/coredns/coredns)
 |1.2.4
 |1.10.1
 |1.10.1
 |1.10.1
+|1.11.1
 
 |[Calico](https://github.com/projectcalico/calico)
 |3.20.2
 |3.25.0
 |3.26.1
 |3.26.3
+|3.28.0
 
 |[Gatekeeper](https://github.com/open-policy-agent/gatekeeper)
 |3.7.0
 |3.11.0
 |3.12.0
+|3.14.0
 |3.14.0
 
 |[Helm](https://github.com/helm/helm)
@@ -37,9 +41,11 @@ These components are present in all Cloud Containers clusters.
 |3.11.3
 |3.12.2
 |3.12.2
+|3.14.2
 
 |[Kubernetes Dashboard](https://github.com/kubernetes/dashboard)
 |2.3.1
+|2.7.0
 |2.7.0
 |2.7.0
 |2.7.0
@@ -49,8 +55,10 @@ These components are present in all Cloud Containers clusters.
 |0.6.1
 |0.6.3
 |0.6.4
+|0.7.1
 
 |[Shell-operator](https://github.com/flant/shell-operator)
+|1.0.9
 |1.0.9
 |1.0.9
 |1.0.9
@@ -61,17 +69,19 @@ These components are present in all Cloud Containers clusters.
 
 The necessary add-ons can be [installed](../../../service-management/addons/manage-addons#installing_addon) in the cluster individually.
 
-[cols="3,1,1,1,1", options="header"]
+[cols="3,1,1,1,1,1", options="header"]
 |===
 .^|Аддон
 .^|Kubernetes<br>1.21.4–1.23.x
 .^|Kubernetes<br>1.23.x–1.24.x
 .^|Kubernetes<br>1.25.x–1.26.x
 .^|Kubernetes<br>1.27.x
+.^|Kubernetes<br>1.28.x
 
 |[Capsule](https://github.com/projectcapsule/capsule)
 |—
 |—
+|0.4.6
 |0.4.6
 |0.4.6
 
@@ -80,8 +90,10 @@ The necessary add-ons can be [installed](../../../service-management/addons/mana
 |1.12.2
 |1.12.2
 |1.12.2
+|1.12.2
 
 |[Docker Registry](https://github.com/twuni/docker-registry.helm)
+|2.2.2
 |2.2.2
 |2.2.2
 |2.2.2
@@ -92,21 +104,25 @@ The necessary add-ons can be [installed](../../../service-management/addons/mana
 |0.34.2
 |0.34.2
 |0.34.2
+|0.34.2
 
 |[Ingress NGINX](https://github.com/kubernetes/ingress-nginx)
 |4.1.4
 |4.1.4
 |4.1.4
 |4.7.1
+|4.10.1
 
 |[Istio](https://github.com/istio/istio)
 |—
 |1.16.4
 |1.16.4
 |1.19.3
+|1.19.3
 
 |[Jaeger](https://github.com/jaegertracing/jaeger)
 |—
+|0.71.4
 |0.71.4
 |0.71.4
 |0.71.4
@@ -116,10 +132,12 @@ The necessary add-ons can be [installed](../../../service-management/addons/mana
 |1.59.1
 |1.59.1
 |1.75.0
+|1.75.0
 
 |[Kube Prometheus Stack](https://github.com/prometheus-operator/kube-prometheus)
 |36.2.0
 |36.2.0
 |36.2.0
+|54.2.2
 |54.2.2
 |===

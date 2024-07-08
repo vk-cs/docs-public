@@ -1,3 +1,16 @@
+## Kubernetes 1.28.9 <a id="v1-28-9"></a>
+
+**Important changes in Kubernetes:**
+
+- Kubernetes is now built with Golang 1.21.9.
+- Updated `debian-base/set-cap` package to bookworm-v1.0.2.
+
+**Vulnerability fixes:**
+
+- [CVE-2024-3177](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#cve-2024-3177-bypassing-mountable-secrets-policy-imposed-by-the-serviceaccount-admission-plugin): bypassing secrets policy imposed by the ServiceAccount admission plugin.
+
+Read more about these and other changes in [official Kubernetes documentation](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.28.md#v1289).
+
 ## Kubernetes 1.27.6 <a id="v1-27-6"></a>
 
 **Changes in Kubernetes aaS service:**
