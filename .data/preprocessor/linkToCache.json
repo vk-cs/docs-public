@@ -169,6 +169,26 @@
     "full": "Зоны доступности",
     "text": "Зоны доступности"
   },
+  "activate_stop_delete_backup_plan": {
+    "number": null,
+    "full": "Активация, остановка и удаление плана резервного копирования",
+    "text": "Активация, остановка и удаление плана резервного копирования"
+  },
+  "get_provider_id": {
+    "number": null,
+    "full": "1. Получить идентификатор провайдера",
+    "text": "1. Получить идентификатор провайдера"
+  },
+  "create_plan": {
+    "number": null,
+    "full": "2. Создать план резервного копирования",
+    "text": "2. Создать план резервного копирования"
+  },
+  "create_trigger": {
+    "number": null,
+    "full": "3. Создать триггер",
+    "text": "3. Создать триггер"
+  },
   "fluent_bit_logaas_integration": {
     "number": null,
     "full": "Fluent Bit для Cloud Logging (logaas-integration)",
