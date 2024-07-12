@@ -55,7 +55,7 @@ The method is subject to [restrictions](../../concepts/vision-limits#image_proce
 ### Request example
 
 ```http
-curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs"      \
+curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<your_token>&oauth_provider=mcs"      \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_ok.jpg;type=image/jpeg' \
@@ -87,19 +87,11 @@ curl -X 'POST' "https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш т
 
 | Parameter | Type | Meaning |
 | -------- | ------ | ----------------------------------------------------- |
-| status | enum | Execution result |
+| status | enum | Execution result:<br>- `0` — successfully;<br>- `1` — array of found document types per pag;<br>- `2` — temporary error  |
 | error | string | Text description of the error (optional) |
 | name | string | File name to match files in request and response |
 
-`status` parameters:
-
-| Parameter | Meaning |
-|--------- |---------------------------------------------- |
-| 0 | Successfully |
-| 1 | Array of found document types per page |
-| 2 | Temporary error |
-
-### Answer example
+### Response example
 
 ```json
 {
@@ -126,7 +118,7 @@ Request example (any image is used):
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<your_token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_ok.jpg;type=image/jpeg' \
@@ -161,7 +153,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<your_token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_error_no_face.jpg;type=image/jpeg' \
@@ -204,7 +196,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<your_token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_error_many_people.jpg;type=image/jpeg' \
@@ -249,7 +241,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/set?oauth_token=<your_token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@empty.jpg;type=image/jpeg' \
@@ -303,6 +295,10 @@ Request parameters are passed in JSON format in the request body with `name="met
 | space | string | \-- | Numeric identifier used to avoid person intersections (required non-empty) |
 | create_new | bool | false | Whether to add a new person if no matches were found |
 | images | []image_meta | \-- | Transferred image metadata (required non-empty) |
+| update_embedding | bool         | true        | Whether to update embedding for a new person |
+| searcher | int         | 0        |  Model selection for recognition: 0 - search across all persons (first model), 1 - search for the nearest neighbor (second model) |
+
+Each time a known person is recognized, the facial vector representation (embedding) is updated to improve recognition accuracy in the future. However, in some cases, it is better to disable auto-update using the `update_embedding` parameter, for example, when it is known in advance that the photos are of poor quality.
 
 For a description of the space parameter, see the section of the [Set](/ml/vision/manage-vision/face-recognition#set) method.
 
@@ -324,7 +320,7 @@ The method is subject to [restrictions](../../concepts/vision-limits#image_proce
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<your_token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_recognize_ok_person_in_db.jpg;type=image/jpeg' \
@@ -357,31 +353,23 @@ curl -X 'POST' \
 
 | Parameter | Type | Meaning |
 | ---------------- | -------- | ------- |
-| status | enum | Execution result |
+| status | enum | Execution result:<br>- `0` — successfully;<br>- `1` — permanent error;<br>- `2` — temporary error |
 | error | string | Text description of the error (optional) |
 | name | string | File name to match files in request and response |
 | persons | []person | List of persons found in the photo |
-
-`status` parameters:
-
-| Parameter | Meaning |
-| ------------ | -------------------- |
-| 0 | successfully |
-| 1 | permanent error |
-| 2 | temporary error |
 
 `person` parameters:
 
 | Parameter | Type | Meaning |
 | ------------ | -------- | ----------------------------------------- |
 | tag | string | Found person ID |
-| coordinate | []int | Found face coordinates [left x, top y, right x, bottom y] |
+| coord | []int | Found face coordinates [left x, top y, right x, bottom y] |
 | aliases | []string | Array of similar persons (optional) |
 | confidence | float | Degree of confidence of the face detector that the found image is a face (from 0 to 1) |
 | similarity | float | The degree of similarity of the found face with the person in the database |
 | awesomeness | float | Conditional "coolness" of the photo (from 0 to 1) |
 
-For the second model only:
+For the second model only (the `searcher = 1` parameter is passed in the request):
 
 | Parameter | Type | Meaning |
 |------------ | ------- | -------------------------------------------------- |
@@ -393,7 +381,7 @@ For the second model only:
 
 The value of `tag` may equal `undefined` if the value of `create_new` in the request was `false` and no corresponding person was found in the database for the provided image.
 
-### Answer example
+### Response example
 
 ```json
 {
@@ -441,7 +429,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<your_token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_recognize_ok_create_new.jpg;type=image/jpeg' \
@@ -504,7 +492,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<your_token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_set_error_no_face.jpg;type=image/jpeg' \
@@ -548,7 +536,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<your_token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_recognize_error_no_face_in_db.jpg;type=image/jpeg' \
@@ -613,7 +601,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<your_token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_recognize_ok_create_new.jpg;type=image/jpeg' \
@@ -650,7 +638,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/recognize?oauth_token=<your_token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@empty.jpg;type=image/jpeg' \
@@ -717,7 +705,7 @@ Images are passed in the body of the request, the values ​​of the name field
 
 <warn>
 
-The method is subject to [restrictions](../../concepts/vision-limits#image_processing)
+The method is subject to [restrictions](../../vision-limits#image_processing)
 
 </warn>
 
@@ -725,7 +713,7 @@ The method is subject to [restrictions](../../concepts/vision-limits#image_proce
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<your_token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'meta={
@@ -756,19 +744,11 @@ curl -X 'POST' \
 
 | Parameter | Type | Meaning |
 | -------- | ------ | ----------------------------------------------------- |
-| status | enum | Execution result |
+| status | enum | Execution result:<br>- `0` — successfully;<br>- `1` — permanent error;<br>- `2` — temporary error |
 | error | string | Text description of the error (optional) |
 | name | string | File name to match files in request and response |
 
-`status` parameters:
-
-| Parameter | Meaning |
-| -------- | -------------------- |
-| 0 | Successfully |
-| 1 | Permanent error |
-| 2 | Temporary error |
-
-### Answer example
+### Response example
 
 ```json
 {
@@ -795,7 +775,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/delete?oauth_token=<your_token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'file=@persons_recognize_error_no_face_in_db.jpg;type=image/jpeg' \
@@ -856,7 +836,7 @@ This request does not require the transfer of images.
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<your_token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'meta={
@@ -871,7 +851,7 @@ curl -X 'POST' \
 | status | int | 200 in case of successful interaction with the Vision servers |
 | body | response | Response body |
 
-### Answer example
+### Response example
 
 ```json
 {
@@ -891,7 +871,7 @@ Request example:
 
 ```http
 curl -X 'POST' \
-  'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<ваш токен>&oauth_provider=mcs' \
+  'https://smarty.mail.ru/api/v1/persons/truncate?oauth_token=<your_token>&oauth_provider=mcs' \
   -H 'accept: application/json' \
   -H 'Content-Type: multipart/form-data' \
   -F 'meta={
