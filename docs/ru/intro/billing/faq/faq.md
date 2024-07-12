@@ -247,7 +247,7 @@ VK Cloud ежеминутно фиксирует потребление ресу
 
    - [виртуальные машины](/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm);
    - [контейнеры Kubernetes](/ru/kubernetes/k8s/service-management/manage-cluster#zapustit_klaster_bbf98834);
-   - [резервное копирование ВМ](/ru/storage/backups/vm-backup/vm-backup-manage#aktivaciya_ostanovka_i_udalenie_plana_rezervnogo_kopirovaniya);
+   - [резервное копирование ВМ](/ru/storage/backups/service-management/vm-backup/vm-backup-manage#aktivaciya_ostanovka_i_udalenie_plana_rezervnogo_kopirovaniya);
    - другие ресурсы.
 
 <info>

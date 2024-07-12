@@ -6,10 +6,10 @@
             "title": "INFORMATION",
             "links": [
                 {
-                    "link": "/en/storage/backups/db-backup"
+                    "link": "/en/storage/backups/service-management/db-backup"
                 },
                 {
-                    "link": "/en/storage/backups/retention-policy"
+                    "link": "/en/storage/backups/concepts/retention-policy"
                 }
             ]
         },
@@ -17,16 +17,16 @@
             "title": "ADVANCED SETTINGS",
             "links": [
                 {
-                    "link": "/en/storage/backups/db-backup/db-backup-create"
+                    "link": "/en/storage/backups/service-management/db-backup/db-backup-create"
                 },
                 {
-                    "link": "/en/storage/backups/db-backup/manage-db-backups"
+                    "link": "/en/storage/backups/service-management/db-backup/manage-db-backups"
                 },
                 {
-                    "link": "/en/storage/backups/db-backup/db-recover-backup"
+                    "link": "/en/storage/backups/service-management/db-backup/db-recover-backup"
                 },
                 {
-                    "link": "/en/storage/backups/db-backup/point-in-time-recovery-pitr"
+                    "link": "/en/storage/backups/service-management/db-backup/point-in-time-recovery-pitr"
                 }
             ]
         },
@@ -34,7 +34,7 @@
             "title": "API",
             "links": [
                 {
-                    "link": "/en/storage/backups/api-examples"
+                    "link": "/en/storage/backups/how-to-guides/api-examples"
                 }
             ]
         }

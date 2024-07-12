@@ -16,7 +16,7 @@
                     "hiddenForPartners": true
                 },
                 {
-                    "link": "/en/storage/backups/vm-backup/faq-vm-backup"
+                    "link": "/en/storage/backups/faq"
                 }
             ]
         },
@@ -27,10 +27,10 @@
                     "link": "/en/computing/iaas/quick-start"
                 },
                 {
-                    "link": "/en/storage/backups/vm-backup/vm-backup-create"
+                    "link": "/en/storage/backups/service-management/vm-backup/vm-backup-create"
                 },
                 {
-                    "link": "/en/storage/backups/vm-backup/vm-backup-manage"
+                    "link": "/en/storage/backups/service-management/vm-backup/vm-backup-manage"
                 }
             ]
         },
