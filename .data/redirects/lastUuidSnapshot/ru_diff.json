@@ -1,1 +1,21 @@
-{}
+{
+  "79e62e19-4e0f-4703-8170-57e06d783f43": "/ru/storage/backups/concepts/retention-policy",
+  "7e67a953-d197-4629-b912-29dc3f99dd31": "/ru/storage/backups/concepts/retention-policy/forward-incremental",
+  "b7a9313e-012d-40a1-9b6c-0ab9f5ad614a": "/ru/storage/backups/concepts/retention-policy/gfs-backup",
+  "32918039-cfc5-49f5-9300-a6b2422af0f5": "/ru/storage/backups/concepts/retention-policy/gfs-backup",
+  "fcda97f7-6a73-4b05-a112-c4a8680fe291": "/ru/storage/backups/service-management/vm-backup",
+  "525de4ae-33be-4abd-9ed4-6054e6dada56": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
+  "15694677-ca2a-47ab-8bfb-464e76690e95": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
+  "66461ab8-763a-4442-bc7d-67d5160c07c5": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
+  "2682d77f-ebc9-4526-b4c8-7edb848fa0cb": "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
+  "1be35352-82d0-47f1-8865-1ef6c2c6cb6e": "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
+  "30fde4e9-d370-43bc-b75d-14ab7a6e61f6": "/ru/storage/backups/service-management/db-backup",
+  "3e4d2992-ad22-4b56-bc18-a8522e3ada27": "/ru/storage/backups/service-management/db-backup",
+  "fa6fcdb4-3785-40c7-8f08-b55f05187127": "/ru/storage/backups/service-management/db-backup/db-backup-create",
+  "93b68cce-b5d1-431b-8b26-030b5effd7ac": "/ru/storage/backups/service-management/db-backup/manage-db-backups",
+  "71967928-a6fd-4441-90aa-f940815f9980": "/ru/storage/backups/service-management/db-backup/db-recover-backup",
+  "14165165-68a1-41ee-a430-675b4593cdb3": "/ru/storage/backups/service-management/db-backup/point-in-time-recovery-pitr",
+  "4150f7d2-2523-4de4-8455-21c1642eb7df": "/ru/storage/backups/how-to-guides/api-examples",
+  "964dd48b-a5f2-4ad6-93ad-60508f22f895": "/ru/storage/backups/faq",
+  "37e97879-48d7-42e6-9086-0f11d91c97df": "/ru/storage/backups/faq"
+}

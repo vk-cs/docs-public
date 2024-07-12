@@ -1,11 +1,12 @@
 {
-    "title": "United service management",
-    "pageDescription": "Instructions for working with backup plans and backups of virtual machines and databases.",
-    "shortDescription": "Instructions for working with backup plans and backups of virtual machines and databases",
-    "metaTitle": "United service management",
-    "metaDescription": "Instructions for working with backup plans and backups of virtual machines and databases",
-    "sectionTitle": "United service management",
-    "isBeta": true,
-    "hidden": true,
-    "weight": 1
-  }
+  "title": "United service management",
+  "pageDescription": "Instructions for working with backup plans and backups of virtual machines and databases.",
+  "shortDescription": "Instructions for working with backup plans and backups of virtual machines and databases",
+  "metaTitle": "United service management",
+  "metaDescription": "Instructions for working with backup plans and backups of virtual machines and databases",
+  "sectionTitle": "United service management",
+  "isBeta": true,
+  "hidden": true,
+  "weight": 1,
+  "uuid": "649e1d23-0533-4f8f-8676-b39ad9bd212b"
+}

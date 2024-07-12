@@ -1,10 +1,11 @@
 {
-    "title": "How-to guides",
-    "pageDescription": "Examples of using the Cloud Backup service.",
-    "shortDescription": "Examples of using the Cloud Backup service",
-    "metaTitle": "How-to guides",
-    "metaDescription": "Examples of using the Cloud Backup service on the VK Cloud platform.",
-    "sectionTitle": "How-to guides",
-    "icon": "",
-    "weight": 2
-  }
+  "title": "How-to guides",
+  "pageDescription": "Examples of using the Cloud Backup service.",
+  "shortDescription": "Examples of using the Cloud Backup service",
+  "metaTitle": "How-to guides",
+  "metaDescription": "Examples of using the Cloud Backup service on the VK Cloud platform.",
+  "sectionTitle": "How-to guides",
+  "icon": "",
+  "weight": 2,
+  "uuid": "b9fe4b06-10e0-44a6-8fb7-7fc3e35a8e28"
+}

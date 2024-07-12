@@ -1,10 +1,11 @@
 {
-    "title": "Практические руководства",
-    "pageDescription": "Примеры использования сервиса Cloud Backup.",
-    "shortDescription": "Примеры использования сервиса Cloud Backup",
-    "metaTitle": "Практические руководства",
-    "metaDescription": "Примеры использования сервиса Cloud Backup на платформе VK Cloud.",
-    "sectionTitle": "Практические руководства",
-    "icon": "",
-    "weight": 2
-  }
+  "title": "Практические руководства",
+  "pageDescription": "Примеры использования сервиса Cloud Backup.",
+  "shortDescription": "Примеры использования сервиса Cloud Backup",
+  "metaTitle": "Практические руководства",
+  "metaDescription": "Примеры использования сервиса Cloud Backup на платформе VK Cloud.",
+  "sectionTitle": "Практические руководства",
+  "icon": "",
+  "weight": 2,
+  "uuid": "99c28c0c-d29d-4e01-a350-90d256467163"
+}
