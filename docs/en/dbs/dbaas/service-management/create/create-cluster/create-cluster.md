@@ -29,7 +29,7 @@
 
         The key is used to [connect to instance hosts via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
-   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/db-backup) after the cluster is created.
+   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/service-management/db-backup) after the cluster is created.
 
       <tabs>
       <tablist>
@@ -46,7 +46,7 @@
       Set the backup options:
 
       - Set the **Backup period**.
-      - If necessary, enable backup by [GFS strategy](/en/storage/backups/retention-policy/gfs-backup) and configure storage settings.
+      - If necessary, enable backup by [GFS strategy](/en/storage/backups/concepts/retention-policy/gfs-backup) and configure storage settings.
       - If GFS backup is not enabled, set the maximum number of full backups.
 
       </tabpanel>
@@ -249,7 +249,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         The key is used to [connect to instance hosts via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
-   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/db-backup) after the cluster is created.
+   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/service-management/db-backup) after the cluster is created.
 
       <tabs>
       <tablist>
@@ -280,7 +280,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
       Set the backup options:
 
       - Set the **Backup period**.
-      - If necessary, enable backup by [GFS strategy](/en/storage/backups/retention-policy/gfs-backup) and configure storage settings.
+      - If necessary, enable backup by [GFS strategy](/en/storage/backups/concepts/retention-policy/gfs-backup) and configure storage settings.
       - If GFS backup is not enabled, set the maximum number of full backups.
 
       </tabpanel>
@@ -482,7 +482,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
 
         The key is used to [connect to instance hosts via SSH](/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
-   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/db-backup) after the cluster is created.
+   1. Set up a backup. If necessary, the backup parameters can be [set or changed](/en/storage/backups/service-management/db-backup) after the cluster is created.
 
       <tabs>
       <tablist>
@@ -499,7 +499,7 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
       Set the backup options:
 
       - Set the **Backup period**.
-      - If necessary, enable backup by [GFS strategy](/en/storage/backups/retention-policy/gfs-backup) and configure storage settings.
+      - If necessary, enable backup by [GFS strategy](/en/storage/backups/concepts/retention-policy/gfs-backup) and configure storage settings.
       - If GFS backup is not enabled, set the maximum number of full backups.
 
       </tabpanel>

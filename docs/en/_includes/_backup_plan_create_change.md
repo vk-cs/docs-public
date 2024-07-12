@@ -1,0 +1,3 @@
+{includetag(vm)}
+
+{/includetag}
