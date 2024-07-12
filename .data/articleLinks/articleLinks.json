@@ -881,7 +881,7 @@
   ],
   [
     "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/storage/backups/vm-backup/vm-backup-manage#activating_stopping_and_deleting_a_backup_plan"
+    "http://localhost:3000/docs/en/storage/backups/service-management/vm-backup/vm-backup-manage#activating_stopping_and_deleting_a_backup_plan"
   ],
   [
     "/en/intro/billing/faq",
@@ -997,7 +997,7 @@
   ],
   [
     "/en/computing/iaas/concepts/new-vm-concept",
-    "http://localhost:3000/docs/en/storage/backups/retention-policy/gfs-backup"
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
     "/en/computing/iaas/concepts/new-vm-concept",
@@ -1049,7 +1049,7 @@
   ],
   [
     "/en/computing/iaas/concepts/about",
-    "http://localhost:3000/docs/en/storage/backups/retention-policy/gfs-backup"
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
     "/en/computing/iaas/concepts/about",
@@ -1145,7 +1145,7 @@
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-create",
-    "http://localhost:3000/docs/en/storage/backups/vm-backup/vm-backup-create"
+    "http://localhost:3000/docs/en/storage/backups/service-management/vm-backup/vm-backup-create"
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-create",
@@ -1585,7 +1585,7 @@
   ],
   [
     "/en/computing/iaas/how-to-guides/disk-encrypt",
-    "http://localhost:3000/docs/en/storage/backups/vm-backup/vm-backup-create#manual_backup"
+    "http://localhost:3000/docs/en/storage/backups/service-management/vm-backup/vm-backup-create#manual_backup"
   ],
   [
     "/en/computing/iaas/how-to-guides/disk-encrypt",
@@ -3228,72 +3228,72 @@
     "http://localhost:3000/docs/en/storage/s3/concepts/about-s3-api"
   ],
   [
-    "/en/storage/backups/vm-backup/vm-backup-create",
-    "http://localhost:3000/docs/en/storage/backups/vm-backup/vm-backup-create#automatic_backup"
+    "/en/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/en/storage/backups/service-management/vm-backup/vm-backup-create#automatic_backup"
   ],
   [
-    "/en/storage/backups/vm-backup/vm-backup-create",
-    "http://localhost:3000/docs/en/storage/backups/vm-backup/vm-backup-create#manual_backup"
+    "/en/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/en/storage/backups/service-management/vm-backup/vm-backup-create#manual_backup"
   ],
   [
-    "/en/storage/backups/vm-backup/vm-backup-create",
-    "http://localhost:3000/docs/en/storage/backups/retention-policy"
+    "/en/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy"
   ],
   [
-    "/en/storage/backups/vm-backup/vm-backup-create",
-    "http://localhost:3000/docs/en/storage/backups/retention-policy/gfs-backup"
+    "/en/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
-    "/en/storage/backups/vm-backup/vm-backup-create",
-    "http://localhost:3000/docs/en/storage/backups/retention-policy/forward-incremental"
+    "/en/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy/forward-incremental"
   ],
   [
-    "/en/storage/backups/vm-backup/vm-backup-create",
-    "http://localhost:3000/docs/en/storage/backups/vm-backup/vm-backup-manage"
+    "/en/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/en/storage/backups/service-management/vm-backup/vm-backup-manage"
   ],
   [
-    "/en/storage/backups/vm-backup/vm-backup-create",
-    "http://localhost:3000/docs/en/storage/backups/vm-backup/vm-backup-manage"
+    "/en/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/en/storage/backups/service-management/vm-backup/vm-backup-manage"
   ],
   [
-    "/en/storage/backups/vm-backup/vm-backup-manage",
+    "/en/storage/backups/service-management/vm-backup/vm-backup-manage",
     "http://localhost:3000/docs/en/computing/iaas/concepts/about#disks"
   ],
   [
-    "/en/storage/backups/vm-backup/vm-backup-manage",
+    "/en/storage/backups/service-management/vm-backup/vm-backup-manage",
     "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#deleting_a_disk"
   ],
   [
-    "/en/storage/backups/vm-backup/vm-backup-manage",
-    "http://localhost:3000/docs/en/storage/backups/retention-policy"
+    "/en/storage/backups/service-management/vm-backup/vm-backup-manage",
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy"
   ],
   [
-    "/en/storage/backups/vm-backup/vm-backup-manage",
-    "http://localhost:3000/docs/en/storage/backups/retention-policy/gfs-backup"
+    "/en/storage/backups/service-management/vm-backup/vm-backup-manage",
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
-    "/en/storage/backups/vm-backup/vm-backup-manage",
-    "http://localhost:3000/docs/en/storage/backups/retention-policy/forward-incremental"
+    "/en/storage/backups/service-management/vm-backup/vm-backup-manage",
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy/forward-incremental"
   ],
   [
-    "/en/storage/backups/vm-backup/faq-vm-backup",
-    "http://localhost:3000/docs/en/storage/backups/vm-backup/vm-backup-manage"
+    "/en/storage/backups/service-management/db-backup/db-backup-create",
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy/gfs-backup/"
   ],
   [
-    "/en/storage/backups/vm-backup/faq-vm-backup",
-    "http://localhost:3000/docs/en/storage/backups/vm-backup/vm-backup-manage#deleting_backups"
+    "/en/storage/backups/service-management/db-backup/db-backup-create",
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy/forward-incremental/"
   ],
   [
-    "/en/storage/backups/db-backup/db-backup-create",
-    "http://localhost:3000/docs/en/storage/backups/retention-policy/gfs-backup"
-  ],
-  [
-    "/en/storage/backups/db-backup/db-backup-create",
-    "http://localhost:3000/docs/en/storage/backups/retention-policy/forward-incremental"
-  ],
-  [
-    "/en/storage/backups/api-examples",
+    "/en/storage/backups/how-to-guides/api-examples",
     "http://localhost:3000/docs/en/tools-for-using-services/api/rest-api/enable-api"
+  ],
+  [
+    "/en/storage/backups/faq",
+    "http://localhost:3000/docs/en/storage/backups/service-management/vm-backup/vm-backup-manage"
+  ],
+  [
+    "/en/storage/backups/faq",
+    "http://localhost:3000/docs/en/storage/backups/service-management/vm-backup/vm-backup-manage#deleting_backups"
   ],
   [
     "/en/dbs/dbaas/quick-start",
@@ -3481,11 +3481,11 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-single-replica",
-    "http://localhost:3000/docs/en/storage/backups/db-backup"
+    "http://localhost:3000/docs/en/storage/backups/service-management/db-backup"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-single-replica",
-    "http://localhost:3000/docs/en/storage/backups/retention-policy/gfs-backup"
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3497,11 +3497,11 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/storage/backups/db-backup"
+    "http://localhost:3000/docs/en/storage/backups/service-management/db-backup"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/storage/backups/retention-policy/gfs-backup"
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3601,11 +3601,11 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/storage/backups/db-backup"
+    "http://localhost:3000/docs/en/storage/backups/service-management/db-backup"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/storage/backups/retention-policy/gfs-backup"
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3653,11 +3653,11 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/storage/backups/db-backup"
+    "http://localhost:3000/docs/en/storage/backups/service-management/db-backup"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/storage/backups/retention-policy/gfs-backup"
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3813,15 +3813,15 @@
   ],
   [
     "/en/dbs/dbaas/faq",
-    "http://localhost:3000/docs/en/storage/backups/db-backup"
+    "http://localhost:3000/docs/en/storage/backups/service-management/db-backup"
   ],
   [
     "/en/dbs/dbaas/faq",
-    "http://localhost:3000/docs/en/storage/backups/db-backup/"
+    "http://localhost:3000/docs/en/storage/backups/service-management/db-backup/"
   ],
   [
     "/en/dbs/dbaas/faq",
-    "http://localhost:3000/docs/en/storage/backups/db-backup/db-recover-backup"
+    "http://localhost:3000/docs/en/storage/backups/service-management/db-backup/db-recover-backup"
   ],
   [
     "/en/dbs/dbaas/faq",
@@ -7021,7 +7021,7 @@
   ],
   [
     "/en/tools-for-using-services/api/rest-api/endpoints",
-    "http://localhost:3000/docs/en/storage/backups/api-examples"
+    "http://localhost:3000/docs/en/storage/backups/how-to-guides/api-examples"
   ],
   [
     "/en/tools-for-using-services/api/rest-api/endpoints",
@@ -7085,7 +7085,7 @@
   ],
   [
     "/en/tools-for-using-services/api/rest-api/install-jq",
-    "http://localhost:3000/docs/en/storage/backups/api-examples#get_a_list_of_created_backup_plans"
+    "http://localhost:3000/docs/en/storage/backups/how-to-guides/api-examples#get_a_list_of_created_backup_plans"
   ],
   [
     "/en/tools-for-using-services/account/concepts/projects",
@@ -9025,7 +9025,7 @@
   ],
   [
     "/ru/intro/billing/faq",
-    "http://localhost:3000/docs/ru/storage/backups/vm-backup/vm-backup-manage#aktivaciya_ostanovka_i_udalenie_plana_rezervnogo_kopirovaniya"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/vm-backup/vm-backup-manage#aktivaciya_ostanovka_i_udalenie_plana_rezervnogo_kopirovaniya"
   ],
   [
     "/ru/intro/billing/faq",
@@ -9213,7 +9213,7 @@
   ],
   [
     "/ru/computing/iaas/concepts/new-vm-concept",
-    "http://localhost:3000/docs/ru/storage/backups/retention-policy/gfs-backup"
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
     "/ru/computing/iaas/concepts/new-vm-concept",
@@ -9269,7 +9269,7 @@
   ],
   [
     "/ru/computing/iaas/concepts/about",
-    "http://localhost:3000/docs/ru/storage/backups/retention-policy/gfs-backup"
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
     "/ru/computing/iaas/concepts/about",
@@ -9365,7 +9365,7 @@
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
-    "http://localhost:3000/docs/ru/storage/backups/vm-backup/vm-backup-create"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/vm-backup/vm-backup-create"
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
@@ -9809,7 +9809,7 @@
   ],
   [
     "/ru/computing/iaas/how-to-guides/disk-encrypt",
-    "http://localhost:3000/docs/ru/storage/backups/vm-backup/vm-backup-create#ruchnoe_rezervnoe_kopirovanie"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/vm-backup/vm-backup-create#ruchnoe_rezervnoe_kopirovanie"
   ],
   [
     "/ru/computing/iaas/how-to-guides/disk-encrypt",
@@ -12044,92 +12044,144 @@
     "http://localhost:3000/docs/ru/storage/s3/concepts/about-s3-api"
   ],
   [
-    "/ru/storage/backups/vm-backup/vm-backup-create",
-    "http://localhost:3000/docs/ru/storage/backups/vm-backup/vm-backup-create#avtomaticheskoe_rezervnoe_kopirovanie"
+    "/ru/storage/backups/concepts/about",
+    "http://localhost:3000/docs/ru/storage/backups/united-service-management/create-backup-copy"
   ],
   [
-    "/ru/storage/backups/vm-backup/vm-backup-create",
-    "http://localhost:3000/docs/ru/storage/backups/vm-backup/vm-backup-create#ruchnoe_rezervnoe_kopirovanie"
+    "/ru/storage/backups/concepts/about",
+    "http://localhost:3000/docs/ru/storage/backups/united-service-management/create-backup-plan"
   ],
   [
-    "/ru/storage/backups/vm-backup/vm-backup-create",
-    "http://localhost:3000/docs/storage/backups/retention-policy"
+    "/ru/storage/backups/concepts/about",
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy/forward-incremental"
   ],
   [
-    "/ru/storage/backups/vm-backup/vm-backup-create",
-    "http://localhost:3000/docs/storage/backups/retention-policy/gfs-backup"
+    "/ru/storage/backups/concepts/about",
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
-    "/ru/storage/backups/vm-backup/vm-backup-create",
-    "http://localhost:3000/docs/storage/backups/retention-policy/forward-incremental"
+    "/ru/storage/backups/concepts/about",
+    "http://localhost:3000/docs/ru/storage/backups/united-service-management/point-in-time-recovery-pitr"
   ],
   [
-    "/ru/storage/backups/vm-backup/vm-backup-create",
-    "http://localhost:3000/docs/ru/storage/backups/vm-backup/vm-backup-manage"
+    "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/ru/storage/backups/service-management/vm-backup/vm-backup-create#avtomaticheskoe_rezervnoe_kopirovanie"
   ],
   [
-    "/ru/storage/backups/vm-backup/vm-backup-create",
-    "http://localhost:3000/docs/ru/storage/backups/vm-backup/vm-backup-manage"
+    "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/ru/storage/backups/service-management/vm-backup/vm-backup-create#ruchnoe_rezervnoe_kopirovanie"
   ],
   [
-    "/ru/storage/backups/vm-backup/vm-backup-manage",
+    "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy"
+  ],
+  [
+    "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy/gfs-backup"
+  ],
+  [
+    "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy/forward-incremental"
+  ],
+  [
+    "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/ru/storage/backups/service-management/vm-backup/vm-backup-manage"
+  ],
+  [
+    "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/ru/storage/backups/service-management/vm-backup/vm-backup-manage"
+  ],
+  [
+    "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/about#diski"
   ],
   [
-    "/ru/storage/backups/vm-backup/vm-backup-manage",
+    "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#udalenie_diska"
   ],
   [
-    "/ru/storage/backups/vm-backup/vm-backup-manage",
-    "http://localhost:3000/docs/storage/backups/retention-policy"
+    "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy"
   ],
   [
-    "/ru/storage/backups/vm-backup/vm-backup-manage",
-    "http://localhost:3000/docs/storage/backups/retention-policy/gfs-backup"
+    "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
-    "/ru/storage/backups/vm-backup/vm-backup-manage",
-    "http://localhost:3000/docs/storage/backups/retention-policy/forward-incremental"
+    "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy/forward-incremental"
   ],
   [
-    "/ru/storage/backups/vm-backup/faq-vm-backup",
-    "http://localhost:3000/docs/ru/storage/backups/vm-backup/vm-backup-manage"
+    "/ru/storage/backups/service-management/db-backup/db-backup-create",
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy/gfs-backup/"
   ],
   [
-    "/ru/storage/backups/vm-backup/faq-vm-backup",
-    "http://localhost:3000/docs/ru/storage/backups/vm-backup/vm-backup-manage#udalenie_rezervnyh_kopiy"
+    "/ru/storage/backups/service-management/db-backup/db-backup-create",
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy/forward-incremental/"
   ],
   [
-    "/ru/storage/backups/db-backup/db-backup-create",
-    "http://localhost:3000/docs/ru/storage/backups/retention-policy/gfs-backup"
-  ],
-  [
-    "/ru/storage/backups/db-backup/db-backup-create",
-    "http://localhost:3000/docs/ru/storage/backups/retention-policy/forward-incremental"
-  ],
-  [
-    "/ru/storage/backups/db-backup/db-backup-create",
+    "/ru/storage/backups/service-management/db-backup/db-backup-create",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/backup-api"
   ],
   [
-    "/ru/storage/backups/db-backup/db-backup-create",
+    "/ru/storage/backups/service-management/db-backup/db-backup-create",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/backup-api"
   ],
   [
-    "/ru/storage/backups/db-backup/db-backup-create",
+    "/ru/storage/backups/service-management/db-backup/db-backup-create",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/backup-api"
   ],
   [
-    "/ru/storage/backups/api-examples",
+    "/ru/storage/backups/united-service-management/create-backup-plan",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/backup-api"
   ],
   [
-    "/ru/storage/backups/api-examples",
+    "/ru/storage/backups/united-service-management/create-backup-copy",
+    "http://localhost:3000/docs/ru/storage/backups/united-service-management/create-backup-plan"
+  ],
+  [
+    "/ru/storage/backups/united-service-management/manage-backup-copy",
+    "http://localhost:3000/docs/ru/storage/backups/united-service-management/manage-backup-plan#activate_stop_delete_backup_plan"
+  ],
+  [
+    "/ru/storage/backups/united-service-management/restore-from-backup",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#diski"
+  ],
+  [
+    "/ru/storage/backups/united-service-management/restore-from-backup",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#udalenie_diska"
+  ],
+  [
+    "/ru/storage/backups/how-to-guides/api-examples",
+    "http://localhost:3000/docs/ru/tools-for-using-services/api/api-spec/backup-api"
+  ],
+  [
+    "/ru/storage/backups/how-to-guides/api-examples",
     "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/enable-api"
   ],
   [
-    "/ru/storage/backups/api-examples",
+    "/ru/storage/backups/how-to-guides/api-examples",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
+  ],
+  [
+    "/ru/storage/backups/how-to-guides/api-examples",
+    "http://localhost:3000/docs/ru/storage/backups/how-to-guides/api-examples#get_provider_id"
+  ],
+  [
+    "/ru/storage/backups/how-to-guides/api-examples",
+    "http://localhost:3000/docs/ru/storage/backups/how-to-guides/api-examples#create_plan"
+  ],
+  [
+    "/ru/storage/backups/how-to-guides/api-examples",
+    "http://localhost:3000/docs/ru/storage/backups/how-to-guides/api-examples#create_trigger"
+  ],
+  [
+    "/ru/storage/backups/faq",
+    "http://localhost:3000/docs/ru/storage/backups/service-management/vm-backup/vm-backup-manage"
+  ],
+  [
+    "/ru/storage/backups/faq",
+    "http://localhost:3000/docs/ru/storage/backups/service-management/vm-backup/vm-backup-manage#udalenie_rezervnyh_kopiy"
   ],
   [
     "/ru/dbs/dbaas/quick-start",
@@ -12361,11 +12413,11 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-single-replica",
-    "http://localhost:3000/docs/ru/storage/backups/db-backup"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/db-backup"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-single-replica",
-    "http://localhost:3000/docs/ru/storage/backups/retention-policy/gfs-backup"
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -12377,11 +12429,11 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/storage/backups/db-backup"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/db-backup"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/storage/backups/retention-policy/gfs-backup"
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -12481,11 +12533,11 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/storage/backups/db-backup"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/db-backup"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/storage/backups/retention-policy/gfs-backup"
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -12533,11 +12585,11 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/storage/backups/db-backup"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/db-backup"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/ru/storage/backups/retention-policy/gfs-backup"
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy/gfs-backup"
   ],
   [
     "/ru/dbs/dbaas/service-management/create/create-cluster",
@@ -12597,15 +12649,15 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/manage-instance/clickhouse",
-    "http://localhost:3000/docs/ru/storage/backups/db-backup/manage-db-backups#sozdanie_rezervnoy_kopii"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/db-backup/manage-db-backups#sozdanie_rezervnoy_kopii"
   ],
   [
     "/ru/dbs/dbaas/service-management/manage-instance/mongodb",
-    "http://localhost:3000/docs/ru/storage/backups/db-backup/manage-db-backups#sozdanie_rezervnoy_kopii"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/db-backup/manage-db-backups#sozdanie_rezervnoy_kopii"
   ],
   [
     "/ru/dbs/dbaas/service-management/manage-instance/mysql",
-    "http://localhost:3000/docs/ru/storage/backups/db-backup/manage-db-backups#sozdanie_rezervnoy_kopii"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/db-backup/manage-db-backups#sozdanie_rezervnoy_kopii"
   ],
   [
     "/ru/dbs/dbaas/service-management/manage-instance/mysql",
@@ -12617,7 +12669,7 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/manage-instance/postgresql",
-    "http://localhost:3000/docs/ru/storage/backups/db-backup/manage-db-backups#sozdanie_rezervnoy_kopii"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/db-backup/manage-db-backups#sozdanie_rezervnoy_kopii"
   ],
   [
     "/ru/dbs/dbaas/service-management/manage-instance/postgresql",
@@ -12633,7 +12685,7 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/manage-instance/redis",
-    "http://localhost:3000/docs/ru/storage/backups/db-backup/manage-db-backups#sozdanie_rezervnoy_kopii"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/db-backup/manage-db-backups#sozdanie_rezervnoy_kopii"
   ],
   [
     "/ru/dbs/dbaas/service-management/postgre-update",
@@ -12821,11 +12873,11 @@
   ],
   [
     "/ru/dbs/dbaas/faq",
-    "http://localhost:3000/docs/ru/storage/backups/db-backup/"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/db-backup/"
   ],
   [
     "/ru/dbs/dbaas/faq",
-    "http://localhost:3000/docs/ru/storage/backups/db-backup/db-recover-backup"
+    "http://localhost:3000/docs/ru/storage/backups/service-management/db-backup/db-recover-backup"
   ],
   [
     "/ru/dbs/dbaas/faq",
@@ -17325,7 +17377,7 @@
   ],
   [
     "/ru/tools-for-using-services/api/rest-api/install-jq",
-    "http://localhost:3000/docs/ru/storage/backups/api-examples#poluchit_spisok_sozdannyh_planov_rezervnogo_kopirovaniya"
+    "http://localhost:3000/docs/ru/storage/backups/how-to-guides/api-examples#poluchit_spisok_sozdannyh_planov_rezervnogo_kopirovaniya"
   ],
   [
     "/ru/tools-for-using-services/api/api-spec/backup-api",

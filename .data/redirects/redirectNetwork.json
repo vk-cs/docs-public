@@ -1075,7 +1075,7 @@
   },
   {
     "source": "/en/base/iaas/vm-availability",
-    "destination": "/en/storage/backups/vm-backup",
+    "destination": "/en/storage/backups/service-management/vm-backup",
     "permanent": false,
     "locale": false
   },
@@ -3871,31 +3871,31 @@
   },
   {
     "source": "/ru/dbs/dbaas/db-backup",
-    "destination": "/ru/storage/backups/db-backup",
+    "destination": "/ru/storage/backups/service-management/db-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/dbs/dbaas/db-backup/db-backup-create",
-    "destination": "/ru/storage/backups/db-backup/db-backup-create",
+    "destination": "/ru/storage/backups/service-management/db-backup/db-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/dbs/dbaas/db-backup/db-recover-backup",
-    "destination": "/ru/storage/backups/db-backup/db-recover-backup",
+    "destination": "/ru/storage/backups/service-management/db-backup/db-recover-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/dbs/dbaas/db-backup/manage-db-backups",
-    "destination": "/ru/storage/backups/db-backup/manage-db-backups",
+    "destination": "/ru/storage/backups/service-management/db-backup/manage-db-backups",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/dbs/dbaas/db-backup/point-in-time-recovery-pitr",
-    "destination": "/ru/storage/backups/db-backup/point-in-time-recovery-pitr",
+    "destination": "/ru/storage/backups/service-management/db-backup/point-in-time-recovery-pitr",
     "permanent": false,
     "locale": false
   },
@@ -4621,13 +4621,13 @@
   },
   {
     "source": "/ru/base/iaas/vm-faq/faq-gfs",
-    "destination": "/ru/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-backup/gfs-backup",
-    "destination": "/ru/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
     "permanent": false,
     "locale": false
   },
@@ -4651,7 +4651,7 @@
   },
   {
     "source": "/ru/dbs/dbaas/manage-db/backup-db",
-    "destination": "/ru/storage/backups/db-backup",
+    "destination": "/ru/storage/backups/service-management/db-backup",
     "permanent": false,
     "locale": false
   },
@@ -5119,37 +5119,37 @@
   },
   {
     "source": "/en/dbs/dbaas/db-backup",
-    "destination": "/en/storage/backups/db-backup",
+    "destination": "/en/storage/backups/service-management/db-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/dbs/dbaas/db-backup/db-backup-create",
-    "destination": "/en/storage/backups/db-backup/db-backup-create",
+    "destination": "/en/storage/backups/service-management/db-backup/db-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/dbs/dbaas/manage-db/backup-db",
-    "destination": "/en/storage/backups/db-backup/db-backup-create",
+    "destination": "/en/storage/backups/service-management/db-backup/db-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/dbs/dbaas/db-backup/db-recover-backup",
-    "destination": "/en/storage/backups/db-backup/db-recover-backup",
+    "destination": "/en/storage/backups/service-management/db-backup/db-recover-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/dbs/dbaas/db-backup/manage-db-backups",
-    "destination": "/en/storage/backups/db-backup/manage-db-backups",
+    "destination": "/en/storage/backups/service-management/db-backup/manage-db-backups",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/dbs/dbaas/db-backup/point-in-time-recovery-pitr",
-    "destination": "/en/storage/backups/db-backup/point-in-time-recovery-pitr",
+    "destination": "/en/storage/backups/service-management/db-backup/point-in-time-recovery-pitr",
     "permanent": false,
     "locale": false
   },
@@ -5173,13 +5173,13 @@
   },
   {
     "source": "/en/base/iaas/vm-backup/gfs-backup",
-    "destination": "/en/storage/backups/retention-policy/gfs-backup",
+    "destination": "/en/storage/backups/concepts/retention-policy/gfs-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-faq/faq-gfs",
-    "destination": "/en/storage/backups/retention-policy/gfs-backup",
+    "destination": "/en/storage/backups/concepts/retention-policy/gfs-backup",
     "permanent": false,
     "locale": false
   },
@@ -5191,37 +5191,37 @@
   },
   {
     "source": "/ru/dbs/dbaas/backup",
-    "destination": "/ru/storage/backups/db-backup",
+    "destination": "/ru/storage/backups/service-management/db-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/dbs/dbaas/backup/backup",
-    "destination": "/ru/storage/backups/db-backup",
+    "destination": "/ru/storage/backups/service-management/db-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/dbs/dbaas/backup/backup/db-backup-create",
-    "destination": "/ru/storage/backups/db-backup/db-backup-create",
+    "destination": "/ru/storage/backups/service-management/db-backup/db-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/dbs/dbaas/backup/backup/db-recover-backup",
-    "destination": "/ru/storage/backups/db-backup/db-recover-backup",
+    "destination": "/ru/storage/backups/service-management/db-backup/db-recover-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/dbs/dbaas/backup/backup/manage-db-backups",
-    "destination": "/ru/storage/backups/db-backup/manage-db-backups",
+    "destination": "/ru/storage/backups/service-management/db-backup/manage-db-backups",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/dbs/dbaas/backup/backup/point-in-time-recovery-pitr",
-    "destination": "/ru/storage/backups/db-backup/point-in-time-recovery-pitr",
+    "destination": "/ru/storage/backups/service-management/db-backup/point-in-time-recovery-pitr",
     "permanent": false,
     "locale": false
   },
@@ -5929,13 +5929,13 @@
   },
   {
     "source": "/ru/base/iaas/vm-faq/faq-vm-backup",
-    "destination": "/ru/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/ru/storage/backups/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-backup/troubleshooting",
-    "destination": "/ru/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/ru/storage/backups/faq",
     "permanent": false,
     "locale": false
   },
@@ -6067,31 +6067,31 @@
   },
   {
     "source": "/ru/base/iaas/vm-backup",
-    "destination": "/ru/storage/backups/vm-backup",
+    "destination": "/ru/storage/backups/service-management/vm-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-backup/vm-backup-plan",
-    "destination": "/ru/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-backup/vm-manual-backup",
-    "destination": "/ru/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-backup/vm-manage-backups",
-    "destination": "/ru/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/vm-backup/ru-iaas-backup-manage",
-    "destination": "/ru/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
     "permanent": false,
     "locale": false
   },
@@ -6565,13 +6565,13 @@
   },
   {
     "source": "/en/base/iaas/vm-faq/faq-vm-backup",
-    "destination": "/en/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/en/storage/backups/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-backup/troubleshooting",
-    "destination": "/en/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/en/storage/backups/faq",
     "permanent": false,
     "locale": false
   },
@@ -6703,31 +6703,31 @@
   },
   {
     "source": "/en/base/iaas/vm-backup",
-    "destination": "/en/storage/backups/vm-backup",
+    "destination": "/en/storage/backups/service-management/vm-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-backup/vm-backup-plan",
-    "destination": "/en/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-backup/vm-manual-backup",
-    "destination": "/en/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-backup/vm-manage-backups",
-    "destination": "/en/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/vm-backup/ru-iaas-backup-manage",
-    "destination": "/en/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-manage",
     "permanent": false,
     "locale": false
   },
@@ -7747,79 +7747,79 @@
   },
   {
     "source": "/en/manage/backups/db-backup/operations",
-    "destination": "/en/storage/backups/db-backup",
+    "destination": "/en/storage/backups/service-management/db-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/db-backup/operations/db-backup-create",
-    "destination": "/en/storage/backups/db-backup/db-backup-create",
+    "destination": "/en/storage/backups/service-management/db-backup/db-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/db-backup/operations/db-backup-create",
-    "destination": "/en/storage/backups/db-backup/db-backup-create",
+    "destination": "/en/storage/backups/service-management/db-backup/db-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/db-backup/operations/db-recover-backup",
-    "destination": "/en/storage/backups/db-backup/db-recover-backup",
+    "destination": "/en/storage/backups/service-management/db-backup/db-recover-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/db-backup/operations/manage-db-backups",
-    "destination": "/en/storage/backups/db-backup/manage-db-backups",
+    "destination": "/en/storage/backups/service-management/db-backup/manage-db-backups",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/db-backup/operations/point-in-time-recovery-pitr",
-    "destination": "/en/storage/backups/db-backup/point-in-time-recovery-pitr",
+    "destination": "/en/storage/backups/service-management/db-backup/point-in-time-recovery-pitr",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-backup",
-    "destination": "/en/storage/backups/vm-backup",
+    "destination": "/en/storage/backups/service-management/vm-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/faq/faq-vm-backup",
-    "destination": "/en/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/en/storage/backups/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/faq/faq-vm-backup",
-    "destination": "/en/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/en/storage/backups/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-backup/vm-backup-create",
-    "destination": "/en/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-backup/vm-backup-create",
-    "destination": "/en/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-backup/vm-backup-manage",
-    "destination": "/en/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/base/iaas/instructions/vm-backup/vm-backup-manage",
-    "destination": "/en/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-manage",
     "permanent": false,
     "locale": false
   },
@@ -7843,73 +7843,73 @@
   },
   {
     "source": "/ru/manage/backups/db-backup/operations",
-    "destination": "/ru/storage/backups/db-backup",
+    "destination": "/ru/storage/backups/service-management/db-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/db-backup/operations/db-backup-create",
-    "destination": "/ru/storage/backups/db-backup/db-backup-create",
+    "destination": "/ru/storage/backups/service-management/db-backup/db-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/db-backup/operations/db-recover-backup",
-    "destination": "/ru/storage/backups/db-backup/db-recover-backup",
+    "destination": "/ru/storage/backups/service-management/db-backup/db-recover-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/db-backup/operations/manage-db-backups",
-    "destination": "/ru/storage/backups/db-backup/manage-db-backups",
+    "destination": "/ru/storage/backups/service-management/db-backup/manage-db-backups",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/db-backup/operations/point-in-time-recovery-pitr",
-    "destination": "/ru/storage/backups/db-backup/point-in-time-recovery-pitr",
+    "destination": "/ru/storage/backups/service-management/db-backup/point-in-time-recovery-pitr",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-backup",
-    "destination": "/ru/storage/backups/vm-backup",
+    "destination": "/ru/storage/backups/service-management/vm-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/faq/faq-vm-backup",
-    "destination": "/ru/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/ru/storage/backups/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/faq/faq-vm-backup",
-    "destination": "/ru/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/ru/storage/backups/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-backup/vm-backup-create",
-    "destination": "/ru/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-backup/vm-backup-create",
-    "destination": "/ru/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-backup/vm-backup-manage",
-    "destination": "/ru/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/base/iaas/instructions/vm-backup/vm-backup-manage",
-    "destination": "/ru/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
     "permanent": false,
     "locale": false
   },
@@ -14959,115 +14959,115 @@
   },
   {
     "source": "/en/manage/backups/vm-backup",
-    "destination": "/en/storage/backups/vm-backup",
+    "destination": "/en/storage/backups/service-management/vm-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/vm-backup/vm-backup-create",
-    "destination": "/en/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/vm-backup/vm-backup-create",
-    "destination": "/en/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/vm-backup/vm-backup-manage",
-    "destination": "/en/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/vm-backup/vm-backup-manage",
-    "destination": "/en/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/vm-backup/faq-vm-backup",
-    "destination": "/en/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/en/storage/backups/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/vm-backup/faq-vm-backup",
-    "destination": "/en/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/en/storage/backups/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/db-backup",
-    "destination": "/en/storage/backups/db-backup",
+    "destination": "/en/storage/backups/service-management/db-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/db-backup",
-    "destination": "/en/storage/backups/db-backup",
+    "destination": "/en/storage/backups/service-management/db-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/db-backup/db-backup-create",
-    "destination": "/en/storage/backups/db-backup/db-backup-create",
+    "destination": "/en/storage/backups/service-management/db-backup/db-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/db-backup/db-backup-create",
-    "destination": "/en/storage/backups/db-backup/db-backup-create",
+    "destination": "/en/storage/backups/service-management/db-backup/db-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/db-backup/db-recover-backup",
-    "destination": "/en/storage/backups/db-backup/db-recover-backup",
+    "destination": "/en/storage/backups/service-management/db-backup/db-recover-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/db-backup/manage-db-backups",
-    "destination": "/en/storage/backups/db-backup/manage-db-backups",
+    "destination": "/en/storage/backups/service-management/db-backup/manage-db-backups",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/db-backup/point-in-time-recovery-pitr",
-    "destination": "/en/storage/backups/db-backup/point-in-time-recovery-pitr",
+    "destination": "/en/storage/backups/service-management/db-backup/point-in-time-recovery-pitr",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/retention-policy",
-    "destination": "/en/storage/backups/retention-policy",
+    "destination": "/en/storage/backups/concepts/retention-policy",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/retention-policy/forward-incremental",
-    "destination": "/en/storage/backups/retention-policy/forward-incremental",
+    "destination": "/en/storage/backups/concepts/retention-policy/forward-incremental",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/retention-policy/gfs-backup",
-    "destination": "/en/storage/backups/retention-policy/gfs-backup",
+    "destination": "/en/storage/backups/concepts/retention-policy/gfs-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/retention-policy/gfs-backup",
-    "destination": "/en/storage/backups/retention-policy/gfs-backup",
+    "destination": "/en/storage/backups/concepts/retention-policy/gfs-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/manage/backups/api-examples",
-    "destination": "/en/storage/backups/api-examples",
+    "destination": "/en/storage/backups/how-to-guides/api-examples",
     "permanent": false,
     "locale": false
   },
@@ -17605,115 +17605,115 @@
   },
   {
     "source": "/ru/manage/backups/vm-backup",
-    "destination": "/ru/storage/backups/vm-backup",
+    "destination": "/ru/storage/backups/service-management/vm-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/vm-backup/vm-backup-create",
-    "destination": "/ru/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/vm-backup/vm-backup-create",
-    "destination": "/ru/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/vm-backup/vm-backup-create",
-    "destination": "/ru/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/vm-backup/vm-backup-manage",
-    "destination": "/ru/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/vm-backup/vm-backup-manage",
-    "destination": "/ru/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/vm-backup/faq-vm-backup",
-    "destination": "/ru/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/ru/storage/backups/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/vm-backup/faq-vm-backup",
-    "destination": "/ru/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/ru/storage/backups/faq",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/db-backup",
-    "destination": "/ru/storage/backups/db-backup",
+    "destination": "/ru/storage/backups/service-management/db-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/db-backup",
-    "destination": "/ru/storage/backups/db-backup",
+    "destination": "/ru/storage/backups/service-management/db-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/db-backup/db-backup-create",
-    "destination": "/ru/storage/backups/db-backup/db-backup-create",
+    "destination": "/ru/storage/backups/service-management/db-backup/db-backup-create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/db-backup/manage-db-backups",
-    "destination": "/ru/storage/backups/db-backup/manage-db-backups",
+    "destination": "/ru/storage/backups/service-management/db-backup/manage-db-backups",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/db-backup/db-recover-backup",
-    "destination": "/ru/storage/backups/db-backup/db-recover-backup",
+    "destination": "/ru/storage/backups/service-management/db-backup/db-recover-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/db-backup/point-in-time-recovery-pitr",
-    "destination": "/ru/storage/backups/db-backup/point-in-time-recovery-pitr",
+    "destination": "/ru/storage/backups/service-management/db-backup/point-in-time-recovery-pitr",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/retention-policy",
-    "destination": "/ru/storage/backups/retention-policy",
+    "destination": "/ru/storage/backups/concepts/retention-policy",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/retention-policy/forward-incremental",
-    "destination": "/ru/storage/backups/retention-policy/forward-incremental",
+    "destination": "/ru/storage/backups/concepts/retention-policy/forward-incremental",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/retention-policy/gfs-backup",
-    "destination": "/ru/storage/backups/retention-policy/gfs-backup",
+    "destination": "/ru/storage/backups/concepts/retention-policy/gfs-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/retention-policy/gfs-backup",
-    "destination": "/ru/storage/backups/retention-policy/gfs-backup",
+    "destination": "/ru/storage/backups/concepts/retention-policy/gfs-backup",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/manage/backups/api-examples",
-    "destination": "/ru/storage/backups/api-examples",
+    "destination": "/ru/storage/backups/how-to-guides/api-examples",
     "permanent": false,
     "locale": false
   },
@@ -27242,6 +27242,234 @@
   {
     "source": "/ru/tools-for-using-services/account/how-to-guides/account-delete",
     "destination": "/ru/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/retention-policy",
+    "destination": "/en/storage/backups/concepts/retention-policy",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/retention-policy/forward-incremental",
+    "destination": "/en/storage/backups/concepts/retention-policy/forward-incremental",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/retention-policy/gfs-backup",
+    "destination": "/en/storage/backups/concepts/retention-policy/gfs-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/retention-policy/gfs-backup",
+    "destination": "/en/storage/backups/concepts/retention-policy/gfs-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/vm-backup",
+    "destination": "/en/storage/backups/service-management/vm-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/en/storage/backups/service-management/vm-backup/vm-backup-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/db-backup",
+    "destination": "/en/storage/backups/service-management/db-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/db-backup",
+    "destination": "/en/storage/backups/service-management/db-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/db-backup/db-backup-create",
+    "destination": "/en/storage/backups/service-management/db-backup/db-backup-create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/db-backup/db-backup-create",
+    "destination": "/en/storage/backups/service-management/db-backup/db-backup-create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/db-backup/db-recover-backup",
+    "destination": "/en/storage/backups/service-management/db-backup/db-recover-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/db-backup/manage-db-backups",
+    "destination": "/en/storage/backups/service-management/db-backup/manage-db-backups",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/db-backup/point-in-time-recovery-pitr",
+    "destination": "/en/storage/backups/service-management/db-backup/point-in-time-recovery-pitr",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/api-examples",
+    "destination": "/en/storage/backups/how-to-guides/api-examples",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/en/storage/backups/faq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/en/storage/backups/faq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/retention-policy",
+    "destination": "/ru/storage/backups/concepts/retention-policy",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/retention-policy/forward-incremental",
+    "destination": "/ru/storage/backups/concepts/retention-policy/forward-incremental",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/retention-policy/gfs-backup",
+    "destination": "/ru/storage/backups/concepts/retention-policy/gfs-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/retention-policy/gfs-backup",
+    "destination": "/ru/storage/backups/concepts/retention-policy/gfs-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/vm-backup",
+    "destination": "/ru/storage/backups/service-management/vm-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/vm-backup/vm-backup-create",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/vm-backup/vm-backup-manage",
+    "destination": "/ru/storage/backups/service-management/vm-backup/vm-backup-manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/db-backup",
+    "destination": "/ru/storage/backups/service-management/db-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/db-backup",
+    "destination": "/ru/storage/backups/service-management/db-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/db-backup/db-backup-create",
+    "destination": "/ru/storage/backups/service-management/db-backup/db-backup-create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/db-backup/manage-db-backups",
+    "destination": "/ru/storage/backups/service-management/db-backup/manage-db-backups",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/db-backup/db-recover-backup",
+    "destination": "/ru/storage/backups/service-management/db-backup/db-recover-backup",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/db-backup/point-in-time-recovery-pitr",
+    "destination": "/ru/storage/backups/service-management/db-backup/point-in-time-recovery-pitr",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/api-examples",
+    "destination": "/ru/storage/backups/how-to-guides/api-examples",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/ru/storage/backups/faq",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/storage/backups/vm-backup/faq-vm-backup",
+    "destination": "/ru/storage/backups/faq",
     "permanent": false,
     "locale": false
   }

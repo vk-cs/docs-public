@@ -6,5 +6,8 @@
     "metaDescription": "Working with backup copies of a VM, DB or analytical DB",
     "sectionTitle": "Managing backups",
     "icon": "",
-    "weight": 3
+    "weight": 3,
+    "uuid": "8716bac2-88ee-4edc-8cb9-4bf6eca3c4b9",
+    "createdAt": "2024-07-12T07:16:47.000Z",
+    "updatedAt": "2024-07-12T07:16:47.000Z"
 }

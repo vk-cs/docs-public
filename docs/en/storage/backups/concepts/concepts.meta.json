@@ -1,10 +1,11 @@
 {
-    "title": "Concepts",
-    "pageDescription": "Description of the operating principles and design of the Cloud Backup service in VK Cloud.",
-    "shortDescription": "Operating principles and design of the Cloud Backup service",
-    "metaTitle": "Concepts",
-    "metaDescription": "Description of operating principles and design of the Cloud Backup service in VK Cloud.",
-    "sectionTitle": "Concepts",
-    "icon": "",
-    "weight": 0
-  }
+  "title": "Concepts",
+  "pageDescription": "Description of the operating principles and design of the Cloud Backup service in VK Cloud.",
+  "shortDescription": "Operating principles and design of the Cloud Backup service",
+  "metaTitle": "Concepts",
+  "metaDescription": "Description of operating principles and design of the Cloud Backup service in VK Cloud.",
+  "sectionTitle": "Concepts",
+  "icon": "",
+  "weight": 0,
+  "uuid": "4c9a7907-dfe5-449c-a64e-5693b3ade636"
+}
