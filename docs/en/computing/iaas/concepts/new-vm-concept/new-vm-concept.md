@@ -249,7 +249,7 @@ A VM backup is needed to restore the state of the VM saved at a certain point in
 
 In manual mode, the creation of backups is started by the user. At the same time, full VM backups are created.
 
-Automatic mode supports [GFS strategy](/en/storage/backups/retention-policy/gfs-backup) and allows you to configure a backup schedule to create full and incremental backups.
+Automatic mode supports [GFS strategy](/en/storage/backups/concepts/retention-policy/gfs-backup) and allows you to configure a backup schedule to create full and incremental backups.
 
 ## Licenses
 
