@@ -21,7 +21,7 @@ To see the list of endpoints for your region:
 | Nova              | https://infra.mail.ru:8774/v2.1                     | Managing [virtual machines](/en/computing/iaas/service-management/vm) |
 | Cinder            | https://public.infra.mail.ru:8776/v3/<project_id>   | Managing [disks](/en/computing/iaas/service-management/volumes) and their snapshots |
 | Glance            | https://infra.mail.ru:9292                          | Managing [VM images](/en/computing/iaas/service-management/images) |
-| Karboii           | https://mcs.mail.ru/infra/karboii/v1                | Managing [backups](/en/storage/backups/api-examples) of VMs and database instances |
+| Karboii           | https://mcs.mail.ru/infra/karboii/v1                | Managing [backups](/en/storage/backups/how-to-guides/api-examples) of VMs and database instances |
 | Manila            | https://public.infra.mail.ru:8786/v2/<project_id>   | Managing [file shares](/en/computing/iaas/service-management/fs-manage) |
 
 <info>

@@ -1,0 +1,13 @@
+{
+    "title": "Point-in-time recovery (PITR)",
+    "pageDescription": "Point-in-time recovery (PITR) обеспечивает непрерывное резервное копирование данных таблицы PostgreSQL.",
+    "shortDescription": "Работа с расписанием резервного копирования (PITR) в PostgreSQL",
+    "metaTitle": "Point-in-time recovery (PITR)",
+    "metaDescription": "Point-in-time recovery (PITR) обеспечивает непрерывное резервное копирование данных таблицы PostgreSQL.",
+    "sectionTitle": "Point-in-time recovery (PITR)",
+    "icon": "",
+    "weight": 5,
+    "uuid": "14165165-68a1-41ee-a430-675b4593cdb3",
+    "createdAt": "2023-05-22T15:07:55.000Z",
+    "updatedAt": "2024-07-01T14:15:24.000Z"
+}
