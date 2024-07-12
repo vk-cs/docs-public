@@ -1,1 +1,0 @@
-As part of the VK Cloud backup plan, two approaches to storing backups are available: the GFS strategy or limiting the number of backups. The backup strategy can be selected when creating an automatic backup plan or changed in the settings.

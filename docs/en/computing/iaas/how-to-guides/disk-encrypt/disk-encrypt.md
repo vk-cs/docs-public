@@ -2,7 +2,7 @@
 
 VK Cloud is not responsible for the correct operation of third-party software.
 
-[Make a backup copy of the VM](/en/storage/backups/vm-backup/vm-backup-create#manual_backup) before encrypting the disk.
+[Make a backup copy of the VM](/en/storage/backups/service-management/vm-backup/vm-backup-create#manual_backup) before encrypting the disk.
 
 </err>
 
