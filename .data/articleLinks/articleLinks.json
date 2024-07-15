@@ -1900,6 +1900,14 @@
     "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/manage-desktops"
   ],
   [
+    "/en/computing/cloud-desktops/service-management/desktops-pool/manage",
+    "http://localhost:3000/docs/en/computing/cloud-desktops/tariffication"
+  ],
+  [
+    "/en/computing/cloud-desktops/service-management/desktops-pool/manage",
+    "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/delete-vdi"
+  ],
+  [
     "/en/computing/cloud-desktops/service-management/manage-desktops",
     "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/desktops-pool/add"
   ],
@@ -10146,6 +10154,14 @@
   [
     "/ru/computing/cloud-desktops/service-management/desktops-pool/manage",
     "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/manage-desktops"
+  ],
+  [
+    "/ru/computing/cloud-desktops/service-management/desktops-pool/manage",
+    "http://localhost:3000/docs/ru/computing/cloud-desktops/tariffication"
+  ],
+  [
+    "/ru/computing/cloud-desktops/service-management/desktops-pool/manage",
+    "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/delete-vdi"
   ],
   [
     "/ru/computing/cloud-desktops/service-management/manage-desktops",
