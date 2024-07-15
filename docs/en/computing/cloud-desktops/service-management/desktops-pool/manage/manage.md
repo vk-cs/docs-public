@@ -75,11 +75,7 @@ This is a group operation: if necessary, you can send a message to users of seve
 
 <warn>
 
-When deleting a desktop pool, pay attention to the following features:
-
-- The deleted pool cannot be restored.
-- If there are desktops in the pool, they will also be deleted when the pool is deleted.
-- When deleting the last pool, all the settings for connecting to the user directory will also be deleted.
+The deleted pool cannot be restored. If there are desktops in the pool, they will also be deleted when the pool is deleted.
 
 </warn>
 
@@ -97,3 +93,11 @@ This is a group operation: if necessary, you can delete several pools at once by
      1. Click the icon ![Trash](assets/trash-icon.svg "inline") in the upper right corner of the tab.
 
 1. Confirm the deletion.
+
+<warn>
+
+Deleting desktop pools, including the last one, does not delete the Cloud Desktop service infrastructure. It is [charged](../../../tariffication) and consumes computing resources.
+
+If you no longer use Cloud Desktop, [remove](../../delete-vdi) its infrastructure.
+
+</warn>
