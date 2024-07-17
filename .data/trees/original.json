@@ -16020,6 +16020,21 @@
     ]
   },
   {
+    "uuid": "50299291-5811-4690-971d-51b114113d62",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/ml/spark-to-k8s/instructions/launch",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/instructions/launch/launch.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/instructions/launch/launch.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "5c097ed9-75b7-4f7a-a2eb-8accc452d157",
     "lang": "ru",
     "type": "ARTICLE",
@@ -16178,7 +16193,7 @@
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/method-list/method-list.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/method-list/method-list.md",
     "variables": {},
-    "hidden": true,
+    "hidden": false,
     "version": null,
     "buildPoints": [
       "common"
@@ -16193,7 +16208,7 @@
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/clusters/clusters.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/clusters/clusters.md",
     "variables": {},
-    "hidden": true,
+    "hidden": false,
     "version": null,
     "buildPoints": [
       "common"
@@ -16208,7 +16223,7 @@
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs/spark-jobs.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs/spark-jobs.md",
     "variables": {},
-    "hidden": true,
+    "hidden": false,
     "version": null,
     "buildPoints": [
       "common"
@@ -16238,7 +16253,7 @@
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/configmaps/configmaps.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/configmaps/configmaps.md",
     "variables": {},
-    "hidden": true,
+    "hidden": false,
     "version": null,
     "buildPoints": [
       "common"
