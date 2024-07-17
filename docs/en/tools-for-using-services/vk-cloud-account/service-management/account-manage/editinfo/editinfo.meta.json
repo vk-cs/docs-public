@@ -1,0 +1,14 @@
+{
+    "title": "Updating user profile",
+    "pageDescription": "How to change user profile data and password from VK Cloud account.",
+    "shortDescription": "Changing the user's password and personal data",
+    "metaTitle": "Changing the profile",
+    "metaDescription": "How to change user profile data and password from VK Cloud account.",
+    "sectionTitle": "Updating user profile",
+    "icon": "",
+    "weight": 1,
+    "additionalUuids": [
+        "4a37e17a-42ed-477e-9322-ea2803885cee",
+        "4f161add-0806-448f-b660-54f2f6ff6ee0"
+    ]
+}

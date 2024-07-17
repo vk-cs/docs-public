@@ -18,7 +18,7 @@ By using the Hystax Acura Migration service, you agree to the license agreements
 ## 1. Preparatory steps
 
 1. [Register](/en/intro/start/account-registration) at VK Cloud.
-1. [Configure](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa) two-factor authentication (2FA) for the account on whose behalf the restored infrastructure will be deployed.
+1. [Configure](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) two-factor authentication (2FA) for the account on whose behalf the restored infrastructure will be deployed.
 1. [Create a VM](/en/computing/iaas/service-management/vm/vm-create) for which recovery will be applied. As part of the quick start, the `Ubuntu-DR` VM with the Ubuntu 18.04 operating system will be used.
 1. [Connect](/en/applications-and-services/marketplace/service-management/pr-instance-add/) Hystax Acura Migration service.
 
@@ -51,20 +51,20 @@ By using the Hystax Acura Migration service, you agree to the license agreements
    - hosts: all
      vars:
        ansible_ssh_pipelining: true
-   
+
      tasks:
        - name: Generate URL rpm
          set_fact:
            download_url: "https://{{ acura_host }}/linux_agent/{{ customer_id }}?dist_type=rpm&platform=x64"
            remote_path: /tmp/hlragent.rpm
          when: ansible_os_family == "RedHat"
-   
+
        - name: Generate URL deb
          set_fact:
            download_url: "https://{{ acura_host }}/linux_agent/{{ customer_id }}?dist_type=deb&platform=x64"
            remote_path: /tmp/hlragent.deb
          when: ansible_os_family == "Debian"
-   
+
        - name: Download agent
          get_url:
            url: "{{ download_url }}"
@@ -73,21 +73,21 @@ By using the Hystax Acura Migration service, you agree to the license agreements
            validate_certs: no
            timeout: 300
          become: yes
-   
+
        - name: Install Hystax Linux Replication Agent from rpm package
          yum:
            name: "{{ remote_path }}"
            state: present
          become: yes
          when: ansible_os_family == "RedHat"
-   
+
        - name: Install Hystax Linux Replication Agent from deb package
          apt:
            deb: "{{ remote_path }}"
            state: present
          become: yes
          when: ansible_os_family == "Debian"
-   
+
        - name: Remove package file
          file:
            path: "{{ remote_path }}"

@@ -1,40 +1,42 @@
-## Getting the Project ID
+## Getting project ID
 
-Each project has a unique identifier (PID) of the form `mcsNNNNNNNNNN`, for example, **mcs0123456789**. It is assigned automatically and is used when contacting technical support.
+{include(/en/_includes/_project_pid_common.md)}
 
 To get the PID:
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. In the header of your personal account, click on the name of the project.
+<tabs>
+<tablist>
+<tab>VK Cloud Management Console</tab>
+<tab>VK Cloud Account</tab>
+</tablist>
+<tabpanel>
+{include(/en/_includes/_project_pid_tab_lk.md)}
+</tabpanel>
+<tabpanel>
+{include(/en/_includes/_project_pid_tab_account.md)}
+</tabpanel>
+</tabs>
 
-    A list of projects in which you are a member will open.
-
-1. To copy the PID of the required project, hover over the project name and click on the icon ![Copy](assets/copy-icon.svg "inline") which will appear on the right.
-
-## Changing the project name
+## Changing project name
 
 The project name can be changed at any stage of the project life.
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. In the header of your personal account, click on the name of the project.
+<tabs>
+<tablist>
+<tab>VK Cloud Management Console</tab>
+<tab>VK Cloud Account</tab>
+</tablist>
+<tabpanel>
+{include(/en/_includes/_project_rename_tab_lk.md)}
+</tabpanel>
+<tabpanel>
+{include(/en/_includes/_project_rename_tab_account.md)}
+</tabpanel>
+</tabs>
 
-    A list of projects in which you are a member will open.
+{include(/en/_includes/_project_rename_common.md)}
 
-1. Hover the mouse cursor over the name of the required project and click on the icon ![Edit](assets/edit-icon.svg "inline") which will appear on the right.
-
-1. Enter a new name and click **Save**.
-
-You can also rename the project through the account menu. Select **Project settings** and go to the **General information** tab.
-
-For projects created automatically — for example, when registering an account — the project name by default matches its identifier.
-
-<info>
-
-Only users with the [role](../../../concepts/rolesandpermissions) of the project owner or superadministrator can change the project name.
-
-</info>
-
-## Change of the project owner
+## Changing project owner
 
 A project can have only one owner. After appointing another user as the owner, you will switch with him [roles](../../../concepts/rolesandpermissions).
 
@@ -46,7 +48,7 @@ A change of ownership is possible in any state of the project balance.
 
 1. Follow the preparatory steps:
 
-    1. If necessary, untie the payment card from the project by contacting [technical support](/en/contacts/).
+    1. If necessary, untie the payment card from the project by contacting [technical support](mailto:support@mcs.mail.ru).
 
     1. Make sure that the user you want to make the owner:
 
@@ -62,9 +64,9 @@ A change of ownership is possible in any state of the project balance.
 
             The transfer of the project is possible only with the consent of the new owner.
 
-1. Contact [technical support](/en/contacts/) on behalf of the current owner, provide the following information:
+1. Contact [technical support](mailto:support@mcs.mail.ru) on behalf of the current owner, provide the following information:
 
-    - [project](#getting_the_project_id) id (PID);
+    - [project](#getting_project_id) id (PID);
     - the new owner's email address.
 
 1. (Optional) Check the role change in the [list of project members](../access-manage).

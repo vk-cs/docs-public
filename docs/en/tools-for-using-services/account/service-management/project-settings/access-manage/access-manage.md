@@ -1,4 +1,4 @@
-Access control operations are available only to the following [roles](../../../concepts/rolesandpermissions) of personal account: owner, superadministrator and user Administrator (IAM). Viewing of project members is also available to the project administrator and viewer.
+Access control operations are available only to the following [roles](/en/tools-for-using-services/account/concepts/rolesandpermissions) of personal account: owner, superadministrator and user Administrator (IAM). Viewing of project members is also available to the project administrator and viewer.
 
 ## Viewing project members
 
@@ -43,7 +43,7 @@ Login, assigned roles and status are displayed for each member (**Yes** — the 
 For security reasons, you can make two-factor authentication (2FA) mandatory for project members:
 
 1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. [Enable](../../account-manage/manage-2fa/) 2FA for your account, if it is not already enabled.
+1. [Enable](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) 2FA for your account, if it is not already enabled.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. On the access management page, enable the option **Mandatory two-factor authentication**.
 
@@ -77,7 +77,7 @@ If the user enters the project by invitation, he does not need to confirm the ph
 
 An invitation will be sent to the specified email address, it is valid for 24 hours.
 
-After [logging in to the project](../../project-invitation/) the new member's status in the column **Activated** will change to **Yes**.
+After [logging in to the project](/en/tools-for-using-services/account/service-management/project-invitation/) the new member's status in the column **Activated** will change to **Yes**.
 
 <info>
 

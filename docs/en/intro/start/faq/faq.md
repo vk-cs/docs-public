@@ -59,7 +59,7 @@ Restore the password from the account. To do this, click **Recover password** on
 
 <summary>How do I enable two-factor authentication?</summary>
 
-Use the instruction [Enabling 2FA](en/tools-for-using-services/account/service-management/account-manage/manage-2fa).
+Use the instruction [Enabling 2FA](en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa).
 
 </details>
 

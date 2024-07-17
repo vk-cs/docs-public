@@ -19,7 +19,7 @@ The refund is available regardless of how long ago the project account was reple
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en/) under the account of the project owner.
 1. [Preserve](/en/tools-for-using-services/account/service-management/project-settings/manage#project_conservation) the project to stop debiting funds.
-1. Copy the [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id) from the VK Cloud website URL.
+1. Copy the [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) from the VK Cloud website URL.
 
    Example URL for the Moscow region: `https://msk.cloud.vk.com/app/en/mcs123456789/main`, where `mcs123456789` is the project ID (PID).
 
@@ -69,7 +69,7 @@ The refund request is processed within 48 hours. The time of receipt of funds de
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en/) under the account of the project owner.
 1. [Preserve](/en/tools-for-using-services/account/service-management/project-settings/manage#project_conservation) the project to stop debiting funds.
-1. Copy the [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id) from the VK Cloud website URL.
+1. Copy the [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) from the VK Cloud website URL.
 
    Example URL for the Moscow region: `https://msk.cloud.vk.com/app/en/mcs123456789/main`, where `mcs123456789` is the project ID (PID).
 

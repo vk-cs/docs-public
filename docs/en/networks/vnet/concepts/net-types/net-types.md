@@ -14,7 +14,7 @@ To create a shared network, you have to create a standard network in one project
 
 A network owner can share the net with any project:
 
-- by [unique identifier (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id) with those projects where this user is also the owner.
+- by [unique identifier (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) with those projects where this user is also the owner.
 - by project ID in OpenStack ([Project ID](/en/tools-for-using-services/api/rest-api/endpoints#getting_project_id)) with any other projects.
 
 The project user with whom the network was shared (hereinafter referred to as _network user_) will receive a message and can accept or decline the invitation to the shared network. The user's decision applies to the entire project: if one user declines the offer to join the network, the network will be unavailable for the entire project.
