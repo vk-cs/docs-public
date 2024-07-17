@@ -73,5 +73,5 @@
 
 Используйте следующие методы:
 
-- `spark_events` — получить список событий, произошедших в кластере.
-- `spark_job_logs` — отобразить логи нужного приложения.
+- [spark_events](../ml-platform-library/library-reference/spark-jobs#spark_events) — получить список событий, произошедших в кластере.
+- [spark_job_logs](../ml-platform-library/library-reference/spark-jobs#spark_job_logs) — отобразить логи нужного приложения.
