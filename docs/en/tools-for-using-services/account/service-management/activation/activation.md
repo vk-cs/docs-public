@@ -1,4 +1,4 @@
-## Linking a phone number
+## {heading(Linking a phone number)[id=linking_phone_number]}
 
 <warn>
 
