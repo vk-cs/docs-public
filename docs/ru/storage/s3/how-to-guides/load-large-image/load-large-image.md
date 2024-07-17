@@ -1,26 +1,20 @@
 В VK Cloud [действуют ограничения](/ru/tools-for-using-services/account/concepts/quotasandlimits) на размер загружаемых образов операционных систем. При превышении лимита появляется сообщение вида:
 
 ```txt
-An error occurred (InvalidArgument) when calling the UploadPart operation: Part number must be an integer between 1 and 10000, inclusive
+HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1f06dce4-XXXX-444c-bcaa-896ed69023c1/file, Request Entity Too Large
 ```
 
-Далее рассмотрена загрузка образов размером более 500 ГБ через объектное хранилище Cloud Storage VK Cloud.
+Далее рассмотрено создание диска из образа ОС размером более 500 ГБ через объектное хранилище VK Cloud.
 
 Будут использоваться:
 
 - виртуальная машина размером не менее 500 ГБ;
-- локальная машина семейства Linux с установленной утилитой [gzip](https://www.gnu.org/software/gzip/manual/gzip.html).
+- локальная машина семейства Linux, на которой:
 
-## 1. Подготовительные шаги
+  - установлена утилита [gzip](https://www.gnu.org/software/gzip/manual/gzip.html);
+  - имеется файл образа ОС `image.raw` размером не менее 500 ГБ.
 
-1. Проверьте возможность миграции. Виртуальная машина должна соответствовать следующим требованиям:
-
-   - операционная система ВМ имеет 64-битную архитектуру;
-   - текущий пользователь обладает правами администратора;
-   - к ВМ подключен хотя бы один диск;
-   - ВМ использует эмуляцию BIOS.
-
-   Для [миграции](/ru/intro/migration/) ВМ с эмуляцией UEFI используйте Hystax или перенесите данные на новую виртуальную машину с эмуляцией BIOS.
+## Подготовительные шаги
 
 1. Создайте [аккаунт](../../service-management/access-management/access-keys/) и [бакет](../../service-management/buckets/create-bucket/) `uc_bucket`.
 1. Убедитесь, что у вас [установлен и настроен](../../connect/s3-cli/) AWS CLI. Укажите в нем данные для подключения к бакету (`Access key ID` и `Secret key`). Откройте конфигурационный файл `~/.aws/config` и внесите в него изменения:
@@ -41,12 +35,12 @@ An error occurred (InvalidArgument) when calling the UploadPart operation: Part 
 1. Установите на ВМ утилиту [gzip](https://www.gnu.org/software/gzip/manual/gzip.html).
 1. [Создайте](/ru/computing/iaas/service-management/volumes#sozdanie_diska) диск размером не менее 600 ГБ и [подключите](/ru/computing/iaas/service-management/volumes#podklyuchenie_diska_k_vm) его к ВМ.
 
-## 2. Загрузите образ в объектное хранилище
+## 1. Загрузите образ из локальной машины в объектное хранилище
 
-1. Выполните команду:
+1. На локальной машине выполните команду:
 
    ```bash
-   dd if=/dev/vdX bs=32M | gzip -c | aws s3 cp - s3://uc_bucket/image.raw.gz --endpoint-url http://hb.ru-msk.vkcs.cloud
+   dd if=./image.raw bs=32M | gzip -c | aws s3 cp - s3://uc_bucket/image.raw.gz --endpoint-url http://hb.ru-msk.vkcs.cloud
    ```
 
 1. Убедитесь, что загрузка началась, с помощью команды:
@@ -120,11 +114,12 @@ An error occurred (InvalidArgument) when calling the UploadPart operation: Part 
 
    </details>
 
-1. Дождитесь загрузки в объектное хранилище. Вывод команды `aws s3api list-multipart-uploads` не должен содержать данных в блоке `Uploads`.
+1. Дождитесь окончания загрузки в объектное хранилище. Вывод команды `aws s3api list-multipart-uploads` не должен содержать данных в блоке `Uploads`.
 
-## 3. Загрузите образ на диск VK Cloud
+## 2. Загрузите образ на диск VK Cloud
 
 1. [Подключитесь к ВМ](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) с помощью SSH.
+
 1. Проверьте наличие подключенного диска с помощью команды `lsblk`.
 
    <details>
@@ -139,30 +134,22 @@ An error occurred (InvalidArgument) when calling the UploadPart operation: Part 
 
    </details>
 
-1. Переместите образ на диск с помощью команды:
+1. Поместите образ на диск с помощью команды:
 
    ```bash
-   wget https://uc_bucket.hb.bizmrg.com/image.raw.gz -O /dev/vdb/image.raw.gz
+   wget https://uc_bucket.hb.ru-msk.vkcs.cloud/image.raw.gz -O - | gunzip | dd of=/dev/vdb bs=32M
    ```
 
-1. Распакуйте образ с помощью команды:
+1. [Пометьте](/ru/computing/iaas/service-management/volumes#izmenenie_atributa_zagruzochnyy) диск с помещенным на него образом ОС как загрузочный.
+1. [Замените основной диск](/ru/computing/iaas/service-management/volumes#zamena_osnovnogo_root_diska) ВМ на диск с помещенным на него образом ОС.
+1. [Запустите](/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) ВМ. Убедитесь, что запуск прошел успешно.
 
-   ```bash
-   gunzip -c image.raw.gz | dd of=/dev/vdb bs=32M
-   ```
-
-## 4. Создайте образ из диска
-
-Воспользуйтесь [инструкцией](/ru/computing/iaas/service-management/images/images-manage#sozdanie_obraza).
-
-## 5. Проверьте работоспособность образа
-
-Создайте ВМ, выбрав в качестве операционной системы загруженный образ, согласно [инструкции](/ru/computing/iaas/service-management/vm/vm-create).
+Вы также можете [отключить](/ru/computing/iaas/service-management/volumes#podklyuchenie_diska_k_vm) от текущей ВМ диск с помещенным на него образом ОС и использовать его как [замену основного диска](/ru/computing/iaas/service-management/volumes#zamena_osnovnogo_root_diska) другой ВМ.  
 
 ## Удалите неиспользуемые ресурсы
 
 Созданные ресурсы тарифицируются и потребляют вычислительные ресурсы. Если они вам больше не нужны:
 
-- [Удалите](/ru/computing/iaas/service-management/images/images-manage#udalenie_obraza) загруженный образ из объектного хранилища.
 - [Удалите](/ru/computing/iaas/service-management/vm/vm-manage#delete_vm) или [остановите](/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm) ВМ.
+- [Удалите](../../service-management/buckets/manage-bucket#udalenie_baketa) бакет `uc_bucket`.
 - [Удалите](/ru/computing/iaas/service-management/volumes#udalenie_diska) диск.
