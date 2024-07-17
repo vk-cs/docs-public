@@ -6,5 +6,6 @@
   "metaDescription": "VK Cloud Account is an interface for managing a user's account.",
   "sectionTitle": "VK Cloud Account",
   "icon": "",
-  "weight": 1
+  "weight": 1,
+  "uuid": "cf53c7e8-9c29-4fd8-aab5-4904ecc38931"
 }

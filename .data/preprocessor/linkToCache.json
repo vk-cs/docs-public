@@ -159,6 +159,11 @@
     "full": "Настройка агента для сбора логов из дополнительных текстовых файлов",
     "text": "Настройка агента для сбора логов из дополнительных текстовых файлов"
   },
+  "linking_phone_number": {
+    "number": null,
+    "full": "Linking a phone number",
+    "text": "Linking a phone number"
+  },
   "sdn_view": {
     "number": null,
     "full": "Просмотр SDN проекта",
