@@ -3181,10 +3181,6 @@
   ],
   [
     "/en/storage/s3/how-to-guides/load-large-image",
-    "http://localhost:3000/docs/en/additionals/hystax/migration"
-  ],
-  [
-    "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/storage/s3/service-management/buckets/create-bucket"
   ],
   [
@@ -3205,19 +3201,23 @@
   ],
   [
     "/en/storage/s3/how-to-guides/load-large-image",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/images/images-manage#creating_an_image"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#changing_the_bootable_attribute"
   ],
   [
     "/en/storage/s3/how-to-guides/load-large-image",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-create"
-  ],
-  [
-    "/en/storage/s3/how-to-guides/load-large-image",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/images/images-manage#deleting_an_image"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/volumes#replacing_the_root_disk"
   ],
   [
     "/en/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm"
+  ],
+  [
+    "/en/storage/s3/how-to-guides/load-large-image",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm"
+  ],
+  [
+    "/en/storage/s3/how-to-guides/load-large-image",
+    "http://localhost:3000/docs/en/storage/s3/service-management/buckets/bucket#removing_a_bucket"
   ],
   [
     "/en/storage/s3/how-to-guides/load-large-image",
@@ -12005,10 +12005,6 @@
   ],
   [
     "/ru/storage/s3/how-to-guides/load-large-image",
-    "http://localhost:3000/docs/ru/intro/migration/"
-  ],
-  [
-    "/ru/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
   ],
   [
@@ -12029,19 +12025,27 @@
   ],
   [
     "/ru/storage/s3/how-to-guides/load-large-image",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/images/images-manage#sozdanie_obraza"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#izmenenie_atributa_zagruzochnyy"
   ],
   [
     "/ru/storage/s3/how-to-guides/load-large-image",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create"
-  ],
-  [
-    "/ru/storage/s3/how-to-guides/load-large-image",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/images/images-manage#udalenie_obraza"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#zamena_osnovnogo_root_diska"
   ],
   [
     "/ru/storage/s3/how-to-guides/load-large-image",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm"
+  ],
+  [
+    "/ru/storage/s3/how-to-guides/load-large-image",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/volumes#zamena_osnovnogo_root_diska"
+  ],
+  [
+    "/ru/storage/s3/how-to-guides/load-large-image",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm"
+  ],
+  [
+    "/ru/storage/s3/how-to-guides/load-large-image",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/manage-bucket#udalenie_baketa"
   ],
   [
     "/ru/storage/s3/how-to-guides/load-large-image",
