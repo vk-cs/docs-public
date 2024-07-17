@@ -1,0 +1,1 @@
+VK Cloud Account is an interface through which you can manage your user profile: change personal data and settings, manage key pairs and 2FA.

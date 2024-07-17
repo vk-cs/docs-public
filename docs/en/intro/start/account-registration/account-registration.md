@@ -71,7 +71,7 @@ If you do not immediately confirm the account, when you try to perform an action
 
    </details>
 
-   1. Copy the [identifier (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id) of your project from the VK Cloud site URL.
+   1. Copy the [identifier (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) of your project from the VK Cloud site URL.
 
       An example for the region Moscow: `https://msk.cloud.vk.com/app/mcs123456789/main`, where `mcs123456789` is the project identifier (PID).
 
@@ -119,7 +119,7 @@ VK Cloud supports working with the platform using [additional tools](/en/tools-f
 
 </info>
 
-1. [Enable](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa/) 2FA for account.
+1. [Enable](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/) 2FA for account.
 1. [Activate](/en/tools-for-using-services/api/rest-api/enable-api) API access.
 
 ## 4. (Optional) Invite other users
