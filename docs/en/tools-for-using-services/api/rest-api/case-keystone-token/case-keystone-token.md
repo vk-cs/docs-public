@@ -3,7 +3,7 @@ A Keystone token is required to work with some components and resources of the V
 ## Preparatory steps
 
 1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en/main).
-1. Make sure that [two-factor authentication](/en/tools-for-using-services/account/service-management/account-manage/manage-2fa) and [API access](/en/tools-for-using-services/api/rest-api/enable-api) are enabled.
+1. Make sure that [two-factor authentication](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) and [API access](/en/tools-for-using-services/api/rest-api/enable-api) are enabled.
 1. At the top of your personal account page, select the project for which you need a token.
 
 ## Token generation

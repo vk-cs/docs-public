@@ -23,6 +23,6 @@ If a legal entity has passed additional registration, the generated account cont
 
 <err>
 
-In the payment order, in the purpose of the payment, be sure to specify project [identifier (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id).
+In the payment order, in the purpose of the payment, be sure to specify project [identifier (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id).
 
 </err>

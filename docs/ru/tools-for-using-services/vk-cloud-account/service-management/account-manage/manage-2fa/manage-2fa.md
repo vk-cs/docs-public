@@ -4,9 +4,7 @@
 
 ## Включение 2FA
 
-1. Установите одно из приложений для генерации одноразовых кодов:
-   - [Google Authenticator](https://support.google.com/accounts/answer/1066447),
-   - [Duo Mobile](https://duo.com/product/trusted-users/two-factor-authentication/duo-mobile).
+1. Установите любое приложение для генерации одноразовых кодов.
 1. [Перейдите](https://cloud.vk.com/account) в аккаунт VK Cloud.
 1. Перейдите в раздел **Безопасность**.
 1. В блоке **Двухфакторная аутентификация** нажмите на значок ![pencil-icon](/ru/assets/pencil-icon.svg "inline"). Откроется страница с QR-кодом.

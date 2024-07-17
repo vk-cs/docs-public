@@ -67,7 +67,7 @@ The number will be changed after successful confirmation of the user's identity.
 
 <summary>How do I change the owner of the VK Cloud account?</summary>
 
-Use the instructions from the article [Project management](../service-management/project-settings/manage#change_of_the_project_owner).
+Use the instructions from the article [Project management](../service-management/project-settings/manage#changing_project_owner).
 
 </details>
 
