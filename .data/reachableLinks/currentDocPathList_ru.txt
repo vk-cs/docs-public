@@ -457,6 +457,7 @@
 /docs/ru/ml/spark-to-k8s/concepts/architecture
 /docs/ru/ml/spark-to-k8s/instructions
 /docs/ru/ml/spark-to-k8s/instructions/create
+/docs/ru/ml/spark-to-k8s/instructions/launch
 /docs/ru/ml/spark-to-k8s/instructions/manage-cluster
 /docs/ru/ml/spark-to-k8s/instructions/manage-node-group
 /docs/ru/ml/spark-to-k8s/instructions/buckets
