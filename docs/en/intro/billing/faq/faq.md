@@ -191,7 +191,7 @@ If you have not received your original documents or need scanned copies, write t
 1. Contact [technical support](/en/contacts).
 2. Specify:
 
-   - [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id)
+   - [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id)
    - Project [region](/en/tools-for-using-services/account/concepts/regions)
    - Amount and date of payment
    - Payment confirmation
@@ -209,7 +209,7 @@ The terms of crediting funds depend on [the payment method](../concepts/payment-
 
 If the payment is not received within the specified time, contact [technical support](/en/contacts) to search for it and specify:
 
-- [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id)
+- [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id)
 - Project [region](/en/tools-for-using-services/account/concepts/regions)
 - Payment confirmation
 
@@ -260,7 +260,7 @@ To restore the services:
 
 To find out how long resources are in the queue for deletion, contact [technical support](/en/contacts) and specify:
 
-- [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id)
+- [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id)
 - [Region](/en/tools-for-using-services/account/concepts/regions)
 
 </info>
@@ -306,7 +306,7 @@ Charges for bank card payments are not included in [accounting documents for leg
 1. Contact [technical support](/en/contacts).
 1. Specify:
 
-   - [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id)
+   - [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id)
    - Project [region](/en/tools-for-using-services/account/concepts/regions)
    - Payment confirmation
 
@@ -512,7 +512,7 @@ Additional registration is only available in [region](/en/tools-for-using-servic
 
 <info>
 
-You can only change the mail of the project owner via [changing the owner](/en/tools-for-using-services/account/service-management/project-settings/manage#change_of_the_project_owner).
+You can only change the mail of the project owner via [changing the owner](/en/tools-for-using-services/account/service-management/project-settings/manage#changing_project_owner).
 
 </info>
 

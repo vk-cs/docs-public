@@ -535,7 +535,7 @@ To restore access to a Linux virtual machine via SSH using a key pair, you need 
       ssh-keygen -y -f <filename with the private key> > <filename with the public key>
       ```
 
-   - If the private key file is lost, [create a new key pair](/en/tools-for-using-services/account/service-management/account-manage/keypairs).
+   - If the private key file is lost, [create a new key pair](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs).
 
 2. Create a link to the file with the public key.
 
