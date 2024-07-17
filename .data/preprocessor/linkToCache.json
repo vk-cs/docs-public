@@ -194,6 +194,26 @@
     "full": "Fluent Bit для Cloud Logging (logaas-integration)",
     "text": "Fluent Bit для Cloud Logging (logaas-integration)"
   },
+  "cluster_spark": {
+    "number": null,
+    "full": "Кластер Cloud Spark",
+    "text": "Кластер Cloud Spark"
+  },
+  "vm_docker_registry": {
+    "number": null,
+    "full": "ВМ с Docker Registry",
+    "text": "ВМ с Docker Registry"
+  },
+  "cloud_storage": {
+    "number": null,
+    "full": "Cloud Storage",
+    "text": "Cloud Storage"
+  },
+  "service_ml_platform": {
+    "number": null,
+    "full": "Сервис Cloud ML Platform",
+    "text": "Сервис Cloud ML Platform"
+  },
   "iam_events": {
     "number": null,
     "full": "Регистрируемые события сервиса IAM",
