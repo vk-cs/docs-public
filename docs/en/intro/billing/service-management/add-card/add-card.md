@@ -74,7 +74,7 @@ To activate auto-completion:
 
 To untie the card, contact [technical support](/en/contacts) and provide information:
 
-- [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id);
+- [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id);
 - the last 4 digits of the linked card number.
 
 <info>

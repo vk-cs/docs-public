@@ -45,7 +45,7 @@ The list of available payment methods is displayed on the **Balance** page of th
 
 - Bank transfer.
 
-    This option is not available in your personal account. To pay using this method, contact [technical support](/en/contacts) and request an invoice, providing the details of the organization, [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id) and the amount in tenge.
+    This option is not available in your personal account. To pay using this method, contact [technical support](/en/contacts) and request an invoice, providing the details of the organization, [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) and the amount in tenge.
 
 </tabpanel>
 </tabs>

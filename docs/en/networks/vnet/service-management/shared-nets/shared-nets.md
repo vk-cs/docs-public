@@ -20,7 +20,7 @@ To share a network with other projects:
 
    - **My projects**: allows to share a network with projects where you are also the owner.
 
-     As you select this type, select the [unique identifier (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_the_project_id) in the **ID of the project** field. PID looks like `mcsNNNNNNNNNN`. You can select several projects here.
+     As you select this type, select the [unique identifier (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) in the **ID of the project** field. PID looks like `mcsNNNNNNNNNN`. You can select several projects here.
 
    - **Other projects**: allows to share a network with any project.
 
