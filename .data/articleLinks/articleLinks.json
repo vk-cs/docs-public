@@ -15364,6 +15364,34 @@
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library"
   ],
   [
+    "/ru/ml/spark-to-k8s/concepts/architecture",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/concepts/architecture#cluster_spark"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/concepts/architecture",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/concepts/architecture#vm_docker_registry"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/concepts/architecture",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/concepts/architecture#cloud_storage"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/concepts/architecture",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/concepts/architecture#service_ml_platform"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/concepts/architecture",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-registry"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/concepts/architecture",
+    "http://localhost:3000/docs/ru/storage/s3/reference#baket"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/concepts/architecture",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library"
+  ],
+  [
     "/ru/ml/spark-to-k8s/instructions/create",
     "http://localhost:3000/docs/ru/intro/start/architecture#az"
   ],

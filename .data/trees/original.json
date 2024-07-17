@@ -15975,6 +15975,21 @@
     ]
   },
   {
+    "uuid": "6e0e1581-8cce-45c4-8fac-808654c36595",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/ml/spark-to-k8s/concepts/architecture",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/concepts/architecture/architecture.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/concepts/architecture/architecture.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "7460177b-f8f3-41e3-a3c5-53cb0b7ec2bc",
     "lang": "ru",
     "type": "INTERMEDIATE",
