@@ -18,7 +18,7 @@
 
    </err>
 
-1. [Создайте](../../instructions/create) кластер Cloud Spark.
+1. [Создайте](../../service-management/create) кластер Cloud Spark.
 
    Параметры кластера выберите на свое усмотрение.
 

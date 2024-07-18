@@ -120,7 +120,7 @@ resource "vkcs_mlplatform_spark_k8s" "spark_k8s" {
 
 - `spark_configuration` — перечень свойств (properties), отвечающих за [конфигурацию Spark](https://github.com/kubeflow/spark-operator/blob/master/docs/user-guide.md#specifying-spark-configuration).
 
-- `environment_variables` — перечень [переменных среды окружения для Spark](/ru/ml/spark-to-k8s/instructions/create).
+- `environment_variables` — перечень [переменных среды окружения для Spark](/ru/ml/spark-to-k8s/service-management/create).
 
 ## 2. Создайте файл с описанием инстанса K8S Docker Registry
 
