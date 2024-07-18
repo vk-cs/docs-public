@@ -14059,13 +14059,13 @@
   },
   {
     "source": "/en/ml/spark-to-k8s/use-cases/calculate-pi",
-    "destination": "/en/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
+    "destination": "/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/spark-to-k8s/use-cases/calculate-pi",
-    "destination": "/ru/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
+    "destination": "/ru/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
     "permanent": false,
     "locale": false
   },
@@ -27566,6 +27566,96 @@
   {
     "source": "/en/tools-for-using-services/account/how-to-guides/account-delete",
     "destination": "/en/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/spark-to-k8s/use-cases",
+    "destination": "/en/ml/spark-to-k8s/how-to-guides",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
+    "destination": "/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
+    "destination": "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/spark-to-k8s/instructions",
+    "destination": "/en/ml/spark-to-k8s/service-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/spark-to-k8s/instructions/create",
+    "destination": "/en/ml/spark-to-k8s/service-management/create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/spark-to-k8s/instructions/tokens",
+    "destination": "/en/ml/spark-to-k8s/service-management/tokens",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/spark-to-k8s/instructions",
+    "destination": "/ru/ml/spark-to-k8s/service-management",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/spark-to-k8s/instructions/create",
+    "destination": "/ru/ml/spark-to-k8s/service-management/create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/spark-to-k8s/instructions/launch",
+    "destination": "/ru/ml/spark-to-k8s/service-management/launch",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/spark-to-k8s/instructions/manage-cluster",
+    "destination": "/ru/ml/spark-to-k8s/service-management/manage-cluster",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/spark-to-k8s/instructions/manage-node-group",
+    "destination": "/ru/ml/spark-to-k8s/service-management/manage-node-group",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/spark-to-k8s/instructions/buckets",
+    "destination": "/ru/ml/spark-to-k8s/service-management/buckets",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/spark-to-k8s/use-cases",
+    "destination": "/ru/ml/spark-to-k8s/how-to-guides",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
+    "destination": "/ru/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
+    "destination": "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
     "permanent": false,
     "locale": false
   }
