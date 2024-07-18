@@ -1,0 +1,14 @@
+{
+    "meta": "Key pairs",
+    "path": "/account/key-pairs",
+    "groups": [
+      {
+        "title": "SERVICE MANAGEMENT",
+        "links": [
+          {
+            "link": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/keypairs"
+          }
+        ]
+      }
+    ]
+  }

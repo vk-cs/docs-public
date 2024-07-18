@@ -1,0 +1,20 @@
+{
+    "meta": "Project management",
+    "path": "/account/main",
+    "groups": [
+      {
+        "title": "PROJECT SETTINGS",
+        "links": [
+          {
+            "link": "/en/tools-for-using-services/vk-cloud-account/service-management/account-manage"
+          },
+          {
+            "link": "/en/tools-for-using-services/account/service-management/project-settings"
+          },
+          {
+            "link": "/en/tools-for-using-services/account/service-management/project-settings/manage"
+          }
+        ]
+      }
+    ]
+  }
