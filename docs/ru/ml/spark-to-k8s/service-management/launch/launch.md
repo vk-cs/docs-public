@@ -1,4 +1,4 @@
-Чтобы запустить задание на [созданном](/ru/ml/spark-to-k8s/instructions/create) кластере Cloud Spark:
+Чтобы запустить задание на [созданном](/ru/ml/spark-to-k8s/service-management/create) кластере Cloud Spark:
 
 1. [Авторизуйтесь](../../ml-platform-library/authz) в библиотеке Cloud ML Platform.
 
@@ -27,7 +27,7 @@
 
     </info>
 
-1. (Опционально) [Предоставьте](../../instructions/buckets) кластеру Cloud Spark доступ к дополнительно созданным бакетам.
+1. (Опционально) [Предоставьте](../../service-management/buckets) кластеру Cloud Spark доступ к дополнительно созданным бакетам.
 1. (Опционально) [Загрузите](/ru/storage/s3/service-management/objects/upload-object) в бакеты файлы и зависимости, необходимые для выполнения задания Spark.
 
     <details>
@@ -178,6 +178,6 @@
 
 <info>
 
-Подробные примеры запуска заданий Spark приведены в разделах [Базовая работа с заданиями Spark](../../use-cases/submit-basic-job-pi) и [Продвинутая работа с заданиями Spark](../../use-cases/submit-advanced-job-clickhouse).
+Подробные примеры запуска заданий Spark приведены в разделах [Базовая работа с заданиями Spark](../../how-to-guides/submit-basic-job-pi) и [Продвинутая работа с заданиями Spark](../../how-to-guides/submit-advanced-job-clickhouse).
 
 </info>
