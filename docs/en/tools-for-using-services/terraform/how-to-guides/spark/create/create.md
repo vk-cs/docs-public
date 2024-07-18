@@ -116,7 +116,7 @@ Here:
 
 - `spark_configuration` — properties of the [Spark configuration](https://github.com/kubeflow/spark-operator/blob/master/docs/user-guide.md#specifying-spark-configuration).
 
-- `environment_variables` — a list of the Spark [environment variables](/en/ml/spark-to-k8s/instructions/create).
+- `environment_variables` — a list of the Spark [environment variables](/en/ml/spark-to-k8s/service-management/create).
 
 ## 2. Create a K8S Docker Registry instance manifest file
 

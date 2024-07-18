@@ -59,7 +59,7 @@ As an example, an application that executes an SQL query against a ClickHouse de
 
    The up-to-date version of the library is always available at the link provided.
 
-1. [Create an access token](../../instructions/tokens#creating_an_access_token) with the `Administrator` role. This token is required to work with the library.
+1. [Create an access token](../../service-management/tokens#creating_an_access_token) with the `Administrator` role. This token is required to work with the library.
 
    <err>
 
@@ -69,7 +69,7 @@ As an example, an application that executes an SQL query against a ClickHouse de
 
    </err>
 
-1. [Create](../../instructions/create) a Cloud Spark cluster.
+1. [Create](../../service-management/create) a Cloud Spark cluster.
 
    Select the cluster parameters at your discretion.
 
@@ -338,5 +338,5 @@ If you no longer need the created resources, delete them:
 1. Delete the Spark cluster.
 1. Delete the Docker registry for this Spark cluster.
 1. Delete [objects from the bucket](/en/storage/s3/service-management/objects/manage-object#udalenie_obekta) and [the bucket itself](/en/storage/s3/service-management/buckets/bucket#removing_a_bucket) that was used by this cluster.
-1. [Delete the access token](../../instructions/tokens#deleting_an_access_token).
+1. [Delete the access token](../../service-management/tokens#deleting_an_access_token).
 1. [Delete the ClickHouse instance](/en/dbs/dbaas/service-management/delete).
