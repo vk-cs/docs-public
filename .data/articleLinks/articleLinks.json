@@ -6224,152 +6224,152 @@
     "http://localhost:3000/docs/en/kubernetes/k8s"
   ],
   [
-    "/en/ml/spark-to-k8s/instructions/create",
-    "http://localhost:3000/docs/en/computing/iaas/concepts/about#availability_zone"
+    "/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse"
   ],
   [
-    "/en/ml/spark-to-k8s/instructions/create",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net"
-  ],
-  [
-    "/en/ml/spark-to-k8s/instructions/create",
-    "http://localhost:3000/docs/en/computing/iaas/concepts/about#flavors"
-  ],
-  [
-    "/en/ml/spark-to-k8s/instructions/create",
-    "http://localhost:3000/docs/en/computing/iaas/concepts/about#flavors"
-  ],
-  [
-    "/en/ml/spark-to-k8s/instructions/create",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
-  ],
-  [
-    "/en/ml/spark-to-k8s/instructions/tokens",
+    "/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
     "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/create"
   ],
   [
-    "/en/ml/spark-to-k8s/instructions/tokens",
+    "/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
     "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/connect"
   ],
   [
-    "/en/ml/spark-to-k8s/instructions/tokens",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/instructions/tokens#creating_a_registration_token"
+    "/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens#creating_an_access_token"
   ],
   [
-    "/en/ml/spark-to-k8s/instructions/tokens",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/create"
+    "/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/create"
   ],
   [
-    "/en/ml/spark-to-k8s/instructions/tokens",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/connect"
+    "/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi#1_create_a_file_with_the_spark_application_code"
   ],
   [
-    "/en/ml/spark-to-k8s/instructions/tokens",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/instructions/tokens#creating_an_access_token"
+    "/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens#deleting_an_access_token"
   ],
   [
-    "/en/ml/spark-to-k8s/instructions/tokens",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/instructions/tokens#getting_a_list_of_access_tokens"
+    "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi"
   ],
   [
-    "/en/ml/spark-to-k8s/instructions/tokens",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/create"
-  ],
-  [
-    "/en/ml/spark-to-k8s/instructions/tokens",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/connect"
-  ],
-  [
-    "/en/ml/spark-to-k8s/instructions/tokens",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/instructions/tokens#creating_an_access_token"
-  ],
-  [
-    "/en/ml/spark-to-k8s/instructions/tokens",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/instructions/tokens#getting_a_list_of_access_tokens"
-  ],
-  [
-    "/en/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse"
-  ],
-  [
-    "/en/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/create"
-  ],
-  [
-    "/en/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
-    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/connect"
-  ],
-  [
-    "/en/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/instructions/tokens#creating_an_access_token"
-  ],
-  [
-    "/en/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/instructions/create"
-  ],
-  [
-    "/en/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/use-cases/submit-basic-job-pi#1_create_a_file_with_the_spark_application_code"
-  ],
-  [
-    "/en/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/instructions/tokens#deleting_an_access_token"
-  ],
-  [
-    "/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/use-cases/submit-basic-job-pi"
-  ],
-  [
-    "/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
+    "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
     "http://localhost:3000/docs/en/storage/s3"
   ],
   [
-    "/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
+    "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
     "http://localhost:3000/docs/en/dbs/dbaas"
   ],
   [
-    "/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
+    "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
     "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/create"
   ],
   [
-    "/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
+    "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
     "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/connect"
   ],
   [
-    "/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/instructions/tokens#creating_an_access_token"
+    "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens#creating_an_access_token"
   ],
   [
-    "/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/instructions/create"
+    "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/create"
   ],
   [
-    "/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
+    "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
     "http://localhost:3000/docs/en/dbs/dbaas/service-management/create/create-single-replica"
   ],
   [
-    "/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse#3_send_the_spark_job_to_the_cluster"
+    "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse#3_send_the_spark_job_to_the_cluster"
   ],
   [
-    "/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
+    "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
     "http://localhost:3000/docs/en/storage/s3/service-management/objects/upload-object"
   ],
   [
-    "/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse#1_create_a_file_with_the_spark_application_code"
+    "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse#1_create_a_file_with_the_spark_application_code"
   ],
   [
-    "/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
+    "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
     "http://localhost:3000/docs/en/storage/s3/service-management/buckets/bucket#removing_a_bucket"
   ],
   [
-    "/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/instructions/tokens#deleting_an_access_token"
+    "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens#deleting_an_access_token"
   ],
   [
-    "/en/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
+    "/en/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
     "http://localhost:3000/docs/en/dbs/dbaas/service-management/delete"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/create",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/about#availability_zone"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/create",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/create",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/about#flavors"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/create",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/about#flavors"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/create",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/tokens",
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/create"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/tokens",
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/connect"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/tokens",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens#creating_a_registration_token"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/tokens",
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/create"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/tokens",
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/connect"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/tokens",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens#creating_an_access_token"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/tokens",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens#getting_a_list_of_access_tokens"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/tokens",
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/create"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/tokens",
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/start/connect"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/tokens",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens#creating_an_access_token"
+  ],
+  [
+    "/en/ml/spark-to-k8s/service-management/tokens",
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/tokens#getting_a_list_of_access_tokens"
   ],
   [
     "/en/ml/cloud-voice/concepts/about",
@@ -7645,7 +7645,7 @@
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/spark/create",
-    "http://localhost:3000/docs/en/ml/spark-to-k8s/instructions/create"
+    "http://localhost:3000/docs/en/ml/spark-to-k8s/service-management/create"
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/spark/create",
@@ -15404,167 +15404,167 @@
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/create",
+    "/ru/ml/spark-to-k8s/service-management/create",
     "http://localhost:3000/docs/ru/intro/start/architecture#az"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/create",
+    "/ru/ml/spark-to-k8s/service-management/create",
     "http://localhost:3000/docs/ru/networks/vnet/service-management/net"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/create",
+    "/ru/ml/spark-to-k8s/service-management/create",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/create",
+    "/ru/ml/spark-to-k8s/service-management/create",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/create",
+    "/ru/ml/spark-to-k8s/service-management/create",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/launch",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/instructions/create"
+    "/ru/ml/spark-to-k8s/service-management/launch",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/service-management/create"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/launch",
+    "/ru/ml/spark-to-k8s/service-management/launch",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/launch",
+    "/ru/ml/spark-to-k8s/service-management/launch",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs#get_default_manifest"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/launch",
+    "/ru/ml/spark-to-k8s/service-management/launch",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs#get_manifest_from_yaml_file"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/launch",
+    "/ru/ml/spark-to-k8s/service-management/launch",
     "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/create-bucket"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/launch",
+    "/ru/ml/spark-to-k8s/service-management/launch",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/clusters#get_clusters"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/launch",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/instructions/buckets"
+    "/ru/ml/spark-to-k8s/service-management/launch",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/service-management/buckets"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/launch",
+    "/ru/ml/spark-to-k8s/service-management/launch",
     "http://localhost:3000/docs/ru/storage/s3/service-management/objects/upload-object"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/launch",
+    "/ru/ml/spark-to-k8s/service-management/launch",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs#spark_submit_job"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/launch",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse"
+    "/ru/ml/spark-to-k8s/service-management/launch",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/manage-cluster",
+    "/ru/ml/spark-to-k8s/service-management/manage-cluster",
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/scale"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/manage-cluster",
+    "/ru/ml/spark-to-k8s/service-management/manage-cluster",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/manage-node-group",
+    "/ru/ml/spark-to-k8s/service-management/manage-node-group",
     "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/helpers/node-group-settings/"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/manage-node-group",
+    "/ru/ml/spark-to-k8s/service-management/manage-node-group",
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/scale"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/buckets",
+    "/ru/ml/spark-to-k8s/service-management/buckets",
     "http://localhost:3000/docs/ru/storage/s3"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/buckets",
+    "/ru/ml/spark-to-k8s/service-management/buckets",
     "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/bucket-keys"
   ],
   [
-    "/ru/ml/spark-to-k8s/instructions/buckets",
+    "/ru/ml/spark-to-k8s/service-management/buckets",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
   ],
   [
-    "/ru/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse"
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse"
   ],
   [
-    "/ru/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/install"
   ],
   [
-    "/ru/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
   ],
   [
-    "/ru/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/instructions/create"
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/service-management/create"
   ],
   [
-    "/ru/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/use-cases/submit-basic-job-pi#1_sozdayte_fayl_s_kodom_prilozheniya_spark"
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi#1_sozdayte_fayl_s_kodom_prilozheniya_spark"
   ],
   [
-    "/ru/ml/spark-to-k8s/use-cases/submit-basic-job-pi",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/instructions/tokens#udalenie_tokena_dostupa"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/use-cases/submit-basic-job-pi"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/ru/storage/s3"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/ru/dbs/dbaas"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/install"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/instructions/create"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/ru/dbs/dbaas/service-management/create/create-single-replica"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse#3_otpravte_zadanie_spark_na_klaster"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/ru/storage/s3/service-management/objects/upload-object#standartnaya_zagruzka"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse#1_sozdayte_fayl_s_kodom_prilozheniya_spark"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
-    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/manage-bucket#udalenie_baketa"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz#udalenie_tokena_dostupa"
   ],
   [
-    "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/ru/storage/s3"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/ru/dbs/dbaas"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/install"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/service-management/create"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/ru/dbs/dbaas/service-management/create/create-single-replica"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse#3_otpravte_zadanie_spark_na_klaster"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/objects/upload-object#standartnaya_zagruzka"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse#1_sozdayte_fayl_s_kodom_prilozheniya_spark"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/manage-bucket#udalenie_baketa"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz#udalenie_tokena_dostupa"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
     "http://localhost:3000/docs/ru/dbs/dbaas/service-management/manage-instance/clickhouse#udalenie_instansa_bd"
   ],
   [
@@ -16341,7 +16341,7 @@
   ],
   [
     "/ru/ml/spark-to-k8s/faq",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/instructions/buckets"
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/service-management/buckets"
   ],
   [
     "/ru/ml/spark-to-k8s/faq",
@@ -17877,7 +17877,7 @@
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/spark/create",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/instructions/create"
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/service-management/create"
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/spark/create",

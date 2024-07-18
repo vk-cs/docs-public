@@ -1,1 +1,11 @@
-{}
+{
+  "7460177b-f8f3-41e3-a3c5-53cb0b7ec2bc": "/ru/ml/spark-to-k8s/service-management",
+  "5e3d42fa-638d-4528-848e-7d3bedde0ae0": "/ru/ml/spark-to-k8s/service-management/create",
+  "50299291-5811-4690-971d-51b114113d62": "/ru/ml/spark-to-k8s/service-management/launch",
+  "5c097ed9-75b7-4f7a-a2eb-8accc452d157": "/ru/ml/spark-to-k8s/service-management/manage-cluster",
+  "bf18c8ff-ef66-4e06-9424-1056667ee46d": "/ru/ml/spark-to-k8s/service-management/manage-node-group",
+  "a8e95000-f7eb-44d7-9b4e-53d57a9e7621": "/ru/ml/spark-to-k8s/service-management/buckets",
+  "a148e51c-5a30-47d7-87c0-f7296d1804a7": "/ru/ml/spark-to-k8s/how-to-guides",
+  "9a91b9c3-070a-4feb-8ebc-2fa218830b7f": "/ru/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi",
+  "6d55d132-bc9b-44c5-a6a8-687294e08baa": "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse"
+}
