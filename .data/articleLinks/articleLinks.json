@@ -7569,7 +7569,75 @@
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
     "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#external_network"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#external_network"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#external_network"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#external_network"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/en/networks/vnet/concepts/architecture#sdns_used"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/ports#viewing_a_list_of_ports_and_port_information"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/router#viewing_a_list_of_routers_and_information_about_them"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/project-settings/manage#sdn_view"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/network"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/ports#viewing_a_list_of_ports_and_port_information"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/secgroups#view_a_list_of_security_groups_and_information_about_them"
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/vnet/vpn",
@@ -17805,7 +17873,75 @@
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
     "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/ports#prosmotr_spiska_portov_i_informacii_o_nih"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/router#prosmotr_spiska_marshrutizatorov_i_informacii_o_nih"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#sdn_view"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#prosmotr_spiska_setey_i_podsetey_a_takzhe_informacii_o_nih"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/vnet/network"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/ports#prosmotr_spiska_portov_i_informacii_o_nih"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/secgroups#prosmotr_spiska_grupp_bezopasnosti_i_informacii_o_nih"
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/vnet/vpn",

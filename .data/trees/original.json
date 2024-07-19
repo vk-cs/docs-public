@@ -8685,6 +8685,21 @@
     ]
   },
   {
+    "uuid": "ac1ac684-b859-4221-b95e-fbdec0d78213",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups/secgroups.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/vnet/secgroups/secgroups.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "f84c78b0-333d-403b-8998-8f5cd404ce9d",
     "lang": "en",
     "type": "ARTICLE",
@@ -18712,6 +18727,21 @@
     "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/vnet/network/network.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/vnet/network/network.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "52aa965d-86fe-40c0-bf32-5dd47d130e3d",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/vnet/secgroups/secgroups.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/vnet/secgroups/secgroups.md",
     "variables": {},
     "hidden": false,
     "version": null,
