@@ -309,7 +309,8 @@ This authentication process is inconvenient when working with automated tools th
    preferences: {}
    users: # Users
      - name: <username>
-       user: <authentication data>
+       user:
+         token: <authentication data>
    ```
 
    </details>
