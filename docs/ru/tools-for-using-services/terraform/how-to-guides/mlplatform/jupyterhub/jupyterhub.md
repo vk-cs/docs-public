@@ -136,7 +136,7 @@ resource "vkcs_networking_subnet" "app" {
   cidr       = "192.168.199.0/24"
 }
 
-# Get external network with Inernet access
+# Get external network with Internet access
 data "vkcs_networking_network" "extnet" {
   name = "ext-net"
 }
