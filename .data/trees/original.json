@@ -10800,6 +10800,21 @@
     ]
   },
   {
+    "uuid": "eac9027a-2cbe-412a-abc7-d38790f54809",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/computing/cloud-desktops/service-management/group-policies",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/group-policies/group-policies.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/group-policies/group-policies.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "b2ebc00a-ca8f-4e0e-8707-2ab300e3b106",
     "lang": "ru",
     "type": "INTERMEDIATE",

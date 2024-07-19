@@ -103,6 +103,7 @@
 /docs/ru/computing/cloud-desktops/concepts/desktop-image
 /docs/ru/computing/cloud-desktops/service-management
 /docs/ru/computing/cloud-desktops/service-management/config
+/docs/ru/computing/cloud-desktops/service-management/group-policies
 /docs/ru/computing/cloud-desktops/service-management/desktops-pool
 /docs/ru/computing/cloud-desktops/service-management/desktops-pool/add
 /docs/ru/computing/cloud-desktops/service-management/desktops-pool/manage

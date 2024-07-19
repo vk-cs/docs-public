@@ -10160,6 +10160,10 @@
     "http://localhost:3000/docs/ru/computing/cloud-desktops/concepts/about#dostupnye_periferiynye_ustroystva"
   ],
   [
+    "/ru/computing/cloud-desktops/service-management/desktops-pool/add",
+    "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/group-policies"
+  ],
+  [
     "/ru/computing/cloud-desktops/service-management/desktops-pool/manage",
     "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/manage-desktops"
   ],
