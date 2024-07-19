@@ -631,6 +631,7 @@
 /docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow
 /docs/ru/tools-for-using-services/terraform/how-to-guides/vnet
 /docs/ru/tools-for-using-services/terraform/how-to-guides/vnet/network
+/docs/ru/tools-for-using-services/terraform/how-to-guides/vnet/secgroups
 /docs/ru/tools-for-using-services/terraform/how-to-guides/vnet/vpn
 /docs/ru/tools-for-using-services/terraform/how-to-guides/vnet/lb
 /docs/ru/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing
