@@ -4297,7 +4297,7 @@
   ],
   [
     "/en/kubernetes/k8s/concepts/access-management",
-    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/access-management#relationship_between_the_roles_of_personal_account_and_kubernetes"
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/access-management#kubernetes-roles-relation"
   ],
   [
     "/en/kubernetes/k8s/concepts/access-management",
@@ -5813,7 +5813,7 @@
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/sa-kubeconfig",
-    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/access-management#relationship_between_the_roles_of_personal_account_and_kubernetes"
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/access-management#kubernetes-roles-relation"
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/sa-kubeconfig",
@@ -7105,7 +7105,7 @@
   ],
   [
     "/en/tools-for-using-services/account/concepts/rolesandpermissions",
-    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/access-management#relationship_between_the_roles_of_personal_account_and_kubernetes"
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/access-management#kubernetes-roles-relation"
   ],
   [
     "/en/tools-for-using-services/account/concepts/quotasandlimits",
@@ -7369,7 +7369,7 @@
   ],
   [
     "/en/tools-for-using-services/account/faq",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/how-to-guides/account-delete"
+    "http://localhost:3000/docs/en/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete"
   ],
   [
     "/en/tools-for-using-services/cli/openstack-cli",
