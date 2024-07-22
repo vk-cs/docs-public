@@ -74,6 +74,11 @@
     "full": "Автоматическое масштабирование",
     "text": "Автоматическое масштабирование"
   },
+  "kubernetes-roles-relation": {
+    "number": null,
+    "full": "Relationship between the roles of management console and Kubernetes",
+    "text": "Relationship between the roles of management console and Kubernetes"
+  },
   "viewing_addons": {
     "number": null,
     "full": "Viewing add-ons",
