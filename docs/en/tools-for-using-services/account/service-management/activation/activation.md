@@ -4,7 +4,7 @@
 
 One phone number can only be linked to one account.
 
-If you fail to register a phone number at this stage, registration can be postponed with the **Enter later** button, then return to this stage when you go to any of the VK Cloud services of your personal account.
+If you fail to register a phone number at this stage, registration can be postponed with the **Enter later** button, then return to this stage when you go to any of the VK Cloud services of your management console.
 
 </warn>
 

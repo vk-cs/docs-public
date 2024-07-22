@@ -85,7 +85,7 @@ To preserve the project:
 
 1. Determine which data from the project you want to save:
 
-    1. Click on the user name in the header of the personal account page, select **Balance and payments**.
+    1. Click on the user name in the header of the management console page, select **Balance and payments**.
     1. Expand the menu of each service to see the objects in which data is stored and their size.
 
 1. Stop all the VMs that you want to save data from.
@@ -120,16 +120,16 @@ By contacting [technical support](/en/contacts), it is possible to transfer obje
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-Quotas for the most frequently used resources are displayed on the main page of the [personal account](https://msk.cloud.vk.com/app/en).
+Quotas for the most frequently used resources are displayed on the main page of the [management console](https://msk.cloud.vk.com/app/en).
 
 To see a more complete list of quotas and find out detailed information about each quota from the list:
 
-1. Click on the user name in the header of the personal account page, select from the drop-down list **Quotas management**. The quotas page opens.
+1. Click on the user name in the header of the management console page, select from the drop-down list **Quotas management**. The quotas page opens.
 
     The same page is available if you select **Project settings** and go to the **Quotas** tab.
 
@@ -304,9 +304,9 @@ Information about increasing quotas for GeekBrains program participants you can 
 1. [Go to](https://cloud.vk.com/app/en) your personal VK Cloud account.
 1. Open the project settings with one of the following ways:
 
-    - Click the project name in the header of the personal account page. Click ![more-icon](/en/assets/more-icon.svg "inline") for the project you need and select **Project settings**.
+    - Click the project name in the header of the management console page. Click ![more-icon](/en/assets/more-icon.svg "inline") for the project you need and select **Project settings**.
 
-    - Click the user name in the header of the personal account page and select **Project settings**.
+    - Click the user name in the header of the management console page and select **Project settings**.
 
 1. Go to the **Virtual networks** tab.
 

@@ -62,7 +62,7 @@ The composition of the accounting documents depends on the specific terms of the
 
     </info>
 
-    An invoice for payment is not provided. Organizations that work on prepayment [form](../../service-management/bill-generation) it independently in their personal account.
+    An invoice for payment is not provided. Organizations that work on prepayment [form](../../service-management/bill-generation) it independently in their management console.
 
 - When working on a post-payment:
 
@@ -89,7 +89,7 @@ In addition to the documents provided for in the contract, upon request, the fol
 
 - Billing report for the selected period.
 
-    It contains details on resource consumption and is used to confirm amounts in accounting documents. You can [upload](../../service-management/detail#downloading_the_report) such a report from your personal account.
+    It contains details on resource consumption and is used to confirm amounts in accounting documents. You can [upload](../../service-management/detail#downloading_the_report) such a report from your management console.
 
 - Reconciliation report with the details of mutual settlements.
 

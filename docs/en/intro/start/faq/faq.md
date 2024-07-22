@@ -43,7 +43,7 @@ After registering a phone number, changing it is possible only through a request
 
 <summary>Can't register with my phone number</summary>
 
-Registration via VK Cloud personal account is only possible for Russian numbers that start with +7.
+Registration via VK Cloud account is only possible for Russian numbers that start with +7.
 
 </details>
 
@@ -67,7 +67,7 @@ Use the instruction [Enabling 2FA](en/tools-for-using-services/vk-cloud-account/
 
 <summary>Lost my two-factor authentication app</summary>
 
-Contact [technical support](/en/contacts). Specialists will make sure that you are the owner of the account, and then deactivate this option for your account. After that, re-enable two-factor authentication in [personal account](https://msk.cloud.vk.com/app/account/profile).
+Contact [technical support](/en/contacts). Specialists will make sure that you are the owner of the account, and then deactivate this option for your account. After that, re-enable two-factor authentication in [management console](https://msk.cloud.vk.com/app/account/profile).
 
 </details>
 
@@ -120,7 +120,7 @@ This data is published on the [system status](https://status.msk.cloud.vk.com) p
 
 <summary>Where can I change the data of a legal entity?</summary>
 
-To fill in the data about the legal entity, go to [personal account](https://msk.cloud.vk.com/app/en/), click on the name of your account and select **Project Settings** from the drop-down menu. On the page that opens, on the **General Information** tab, you can change the data of the legal entity.
+To fill in the data about the legal entity, go to [management console](https://msk.cloud.vk.com/app/en/), click on the name of your account and select **Project Settings** from the drop-down menu. On the page that opens, on the **General Information** tab, you can change the data of the legal entity.
 
 </details>
 

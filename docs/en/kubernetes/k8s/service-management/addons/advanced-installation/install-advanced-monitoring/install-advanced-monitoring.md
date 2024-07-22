@@ -16,12 +16,12 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    <tabs>
    <tablist>
-   <tab>Personal account</tab>
+   <tab>Management console</tab>
    <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the required cluster.
@@ -103,11 +103,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    <tabs>
    <tablist>
-   <tab>Personal account</tab>
+   <tab>Management console</tab>
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Find the cluster you need in the list.
@@ -128,12 +128,12 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    <tabs>
    <tablist>
-   <tab>Personal account</tab>
+   <tab>Management console</tab>
    <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the required cluster.
@@ -228,12 +228,12 @@ If this does not suit you, perform a **standard installation** or **installation
 
    <tabs>
    <tablist>
-   <tab>Personal account</tab>
+   <tab>Management console</tab>
    <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the required cluster.
@@ -293,18 +293,18 @@ The Prometheus disk stores cluster monitoring data. If there is not enough space
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
-1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
-1. Go to **Containers** → **Kubernetes clusters**.
-1. Click on the name of the required cluster.
-1. Go to **Addons** tab.
-1. Click ![ ](/en/assets/more-icon.svg "inline") for the `kube-prometheus-stack` add-on and select **Change Prometheus disk size**.
-1. Set the required disk size. The operation works only in the direction of increase.
-1. Click the **Confirm** button.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
+2. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
+3. Go to **Containers** → **Kubernetes clusters**.
+4. Click on the name of the required cluster.
+5. Go to **Addons** tab.
+6. Click ![ ](/en/assets/more-icon.svg "inline") for the `kube-prometheus-stack` add-on and select **Change Prometheus disk size**.
+7. Set the required disk size. The operation works only in the direction of increase.
+8. Click the **Confirm** button.
 
 </tabpanel>
 </tabs>

@@ -2,11 +2,11 @@
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Go to **Data Platform → Экземпляры сервисов**.
 1. Click on the name of the instance.
 1. Go to the **Статус компонентов** tab.
@@ -20,11 +20,11 @@
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Go to **Data Platform → Экземпляры сервисов**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance and select **Edit**.
 1. In the window that opens, specify the new name and description of the instance.
@@ -37,11 +37,11 @@
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Go to **Data Platform → Экземпляры сервисов**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance and select **Change password**.
 1. In the window that opens, enter the new administrator password.
@@ -69,11 +69,11 @@
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Go to **Data Platform → Экземпляры сервисов**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required instance and select **Перейти к кластеру k8s**.
 
@@ -86,11 +86,11 @@ This is a group operation: if necessary, you can delete several instances of the
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Go to **Data Platform → Экземпляры сервисов**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the instance and select **Delete**.
 1. Confirm the deletion and wait for the operation to complete. The deletion may take a long time.

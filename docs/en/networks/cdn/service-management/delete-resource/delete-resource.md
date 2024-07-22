@@ -8,7 +8,7 @@ You can delete a CDN resource in two ways:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -32,11 +32,11 @@ To delete a CDN resource:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. [Go to](https://msk.cloud.vk.com/app/en) you VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project with the bucket you need.
 1. Go to the **Cloud Storage → Buckets** section.
 1. Click the name of the bucket you need.

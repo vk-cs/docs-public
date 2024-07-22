@@ -23,14 +23,14 @@ VK Cloud's Kubernetes distribution has been certified [Certified Kubernetes - Ho
 
 ## Service features
 
-- Management of [cluster](../../service-management/manage-cluster) and [groups of nodes](../../service-management/manage-node-group) using VK Cloud personal account and VK Cloud own Terraform provider.
+- Management of [cluster](../../service-management/manage-cluster) and [groups of nodes](../../service-management/manage-node-group) using VK Cloud management console and VK Cloud own Terraform provider.
 
 - Manage Cloud Containers objects and resources after [connecting to the cluster](../../connect/) using `kubectl` or Kubernetes Dashboard.
 
 - Automatic and manual [cluster scaling](../../service-management/scale).
 
   When automatic scaling is enabled, applications instantly get additional computing power when the load peaks. When the load drops, the amount of resources available to the application is reduced.
-  
+
   This approach saves up to 60% of computing resources.
 
 - Creating distributed installations within [VK Cloud regions](../../../../tools-for-using-services/account/concepts/regions): to provide high availability, different nodes of the same cluster can be located in different availability zones (different data centers). It is also recommended to place application replicas on these nodes so that replicas are also in different availability zones.

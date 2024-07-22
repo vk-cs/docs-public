@@ -1,9 +1,9 @@
 {
     "title": "Registration in VK Cloud",
-    "pageDescription": "Creating an account in the platform's personal account, activating API access.",
-    "shortDescription": "Creating an account in the platform's personal account, activating API access",
+    "pageDescription": "Creating an account in the platform's management console, activating API access.",
+    "shortDescription": "Creating an account in the platform's management console, activating API access",
     "metaTitle": "Registration in VK Cloud",
-    "metaDescription": "Creating an account in the platform's personal account, activating API access",
+    "metaDescription": "Creating an account in the platform's management console, activating API access",
     "sectionTitle": "Registration in VK Cloud",
     "icon": "",
     "weight": 2,

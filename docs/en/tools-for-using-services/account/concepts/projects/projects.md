@@ -52,4 +52,4 @@ For more information about the service, see [Object storage](/en/storage/s3).
 
 After the positive balance is restored, the services in the project are automatically activated after a while. Objects that have been stopped must be started manually after defrosting.
 
-In any state of the project balance, including after objects are deleted, all project participants have access to their personal account. The accounts of the participants and the project itself are not deleted.
+In any state of the project balance, including after objects are deleted, all project participants have access to their management console. The accounts of the participants and the project itself are not deleted.

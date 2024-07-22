@@ -1,6 +1,6 @@
 This is a group operation: you can delete several instances at once by selecting them using the checkboxes.
 
-1. [Go to](https://msk.cloud.vk.com/app/) your personal account VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/) your management console VK Cloud.
 1. Go to **ML Platform → Instances**.
 1. Delete the instance in one of the following ways:
 

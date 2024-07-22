@@ -8,7 +8,7 @@ You can create a CDN resource in two ways:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>M</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -114,11 +114,11 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the bucket you need is located. If you do not have the bucket, [create it](/ru/storage/s3/service-management/buckets/create-bucket "change-lang").
 1. Go to the **Cloud Storage → Buckets** section.
 1. Click the name of the bucket you need.
@@ -151,7 +151,7 @@ curl --location --request POST 'https://msk.cloud.vk.com/api/cdn/api/v1/projects
 
 1. Click **Save changes**.
 
-The creation of the origin group and CDN resource will start for the bucket. The created items will be available in the **CDN** section of your VK Cloud personal account.
+The creation of the origin group and CDN resource will start for the bucket. The created items will be available in the **CDN** section of your VK Cloud management console.
 
 </tabpanel>
 </tabs>

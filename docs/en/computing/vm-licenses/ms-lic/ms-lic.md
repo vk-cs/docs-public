@@ -19,13 +19,13 @@ The price for a month of using the software can be found out:
 - in the [price list](https://cloud.vk.com/pricelist);
 - when creating a virtual machine;
 - in [project settings](https://msk.cloud.vk.com/app/en/project/) on the tab **Prices**.
-- in the section **Balance** [personal account](https://msk.cloud.vk.com/app/en/services/billing).
+- in the section **Balance** [management console](https://msk.cloud.vk.com/app/en/services/billing).
 
 ## Windows Server
 
 When creating a VM with Microsoft Windows OS, a licensed copy of the OS of the selected edition is automatically deployed. It will be activated when the VM is turned on.
 
-The available editions of the Microsoft Windows Server are displayed in the drop-down list **Operating system** when creating a VM through VK Cloud [personal account](https://msk.cloud.vk.com/app/services/infra/servers/add).
+The available editions of the Microsoft Windows Server are displayed in the drop-down list **Operating system** when creating a VM through VK Cloud [management console](https://msk.cloud.vk.com/app/services/infra/servers/add).
 
 Every 2 vCPUs of a Windows VM require the use of one license. For example, when creating a VM with 5 vCPUs, you will need 3 Windows Server licenses. When changing the type of virtual machine, the number of licenses will be changed in accordance with the number of virtual cores of the modified configuration.
 

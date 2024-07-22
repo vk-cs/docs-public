@@ -1,4 +1,4 @@
-1. [Go to](https://msk.cloud.vk.com/app/en) you VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en) you VK Cloud management console.
 1. Select the project, where the net is located.
 1. Go to **Cloud Networks → Networks**.
 1. Delete the net with one of the following ways:

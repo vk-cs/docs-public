@@ -4,13 +4,13 @@ To connect the router to subnets, you need to add interfaces. To connect the rou
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
 <info>
 
-You can also [connect a subnet to the router](../../net) in the **Cloud networks** → **Networks** section of your personal account.
+You can also [connect a subnet to the router](../../net) in the **Cloud networks** → **Networks** section of your management console.
 
 </info>
 
@@ -41,7 +41,7 @@ As a result:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 

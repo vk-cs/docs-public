@@ -42,7 +42,7 @@ On the VK Cloud platform, the number of processors and the amount of RAM of the 
 
 ### Virtual machine categories
 
-VMs are grouped into categories in a personal account:
+VMs are grouped into categories in a management console:
 
 | Category | Description | Display condition |
 | --- | --- | --- |

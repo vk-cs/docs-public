@@ -61,7 +61,7 @@ Backup is not enabled by default. You can enable it when [creating an instance](
 
 To check if backup is enabled:
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en).
 1. Select the project where the required DB instance is located.
 1. Go to **Databases** → **Backup**.
 1. Go to the **Automatic** or **Point-in-time recovery** tab.
@@ -155,7 +155,7 @@ The volume is limited by the capabilities of the disk — 2 TB for High-IOPS SSD
 
 <details>
 
-<summary>Is it possible to create a user with read-only rights to the database through a personal account?</summary>
+<summary>Is it possible to create a user with read-only rights to the database through a management console?</summary>
 
 No, this is only possible through a direct SQL query.
 

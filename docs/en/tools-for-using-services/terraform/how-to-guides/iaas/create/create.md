@@ -75,9 +75,9 @@ Two options for VM configuration will be considered: without additional settings
 
    Use one of the methods:
 
-    - Via personal account:
+    - Via management console:
 
-      1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud personal account.
+      1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 
       1. Click on your username in the page header.
 

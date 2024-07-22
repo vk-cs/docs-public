@@ -1,6 +1,6 @@
 The Cloud Databases service allows you to quickly deploy the DBMS of the [types](../../types) that you need in various [configurations](../work-configs) in VK Cloud.
 
-Managing cloud DBMSs does not require deep knowledge of administration. A DBMS instance is created in your personal account in a couple of clicks. VK Cloud takes care of all the work of deploying the instance and its technical support. Depending on the configuration and selected options, the following will be automatically configured:
+Managing cloud DBMSs does not require deep knowledge of administration. A DBMS instance is created in your management console in a couple of clicks. VK Cloud takes care of all the work of deploying the instance and its technical support. Depending on the configuration and selected options, the following will be automatically configured:
 
 - data replication between hosts;
 - load balancing;
@@ -12,4 +12,4 @@ In the Moscow [region](/en/tools-for-using-services/account/concepts/regions), f
 
 After deploying the DBMS instance, all that remains is to create the necessary databases on it, fill them with content, connect your applications to them, configure access and monitoring.
 
-For some types of DBMS, [extensions](../extensions) are available. You can install them through your personal account.
+For some types of DBMS, [extensions](../extensions) are available. You can install them through your management console.

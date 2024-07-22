@@ -2,11 +2,11 @@
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://cloud.vk.com/app/en/).
+1. [Go to](https://cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Data Platform** → **Console**.
 1. Go to the **Groups** tab.
 1. Click the name of the group.
@@ -18,11 +18,11 @@
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://cloud.vk.com/app/en/).
+1. [Go to](https://cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Data Platform** → **Console**.
 1. Go to the **Groups** tab.
 1. Click the name of the group.
@@ -35,11 +35,11 @@
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://cloud.vk.com/app/en/).
+1. [Go to](https://cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Data Platform** → **Console**.
 1. Go to the **Groups** tab.
 1. Open the group editing page by one of the following ways:
@@ -76,13 +76,13 @@ Deleting a group does not delete the service instances that are part of it.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
 This is a group operation: you can delete several groups at once by selecting them using the checkboxes and clicking the **Delete** button above the list of groups.
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
+1. [Go to](https://cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Data Platform** → **Console**.
 1. Go to the **Groups** tab.
 1. Delete the group using one of the following methods:

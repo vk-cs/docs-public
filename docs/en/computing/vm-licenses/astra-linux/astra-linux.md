@@ -1,6 +1,6 @@
 VK Cloud supports the installation of virtual machines with image support from the company [Astra Linux](https://astralinux.ru).
 
-The available editions of the operating system are displayed in the drop-down list **Operating system** when creating a VM through VK Cloud [personal account](https://msk.cloud.vk.com/app/services/infra/servers/add).
+The available editions of the operating system are displayed in the drop-down list **Operating system** when creating a VM through VK Cloud [management console](https://msk.cloud.vk.com/app/services/infra/servers/add).
 
 Astra Linux Speсial Edition 1.7 is designed for the following application scenarios:
 
@@ -49,4 +49,4 @@ The price for a month of using the software can be found out:
 - in the [price list](https://cloud.vk.com/pricelist);
 - when creating a virtual machine;
 - in [project settings](https://msk.cloud.vk.com/app/en/project/) on the tab **Prices**.
-- in the section **Balance** [personal account](https://msk.cloud.vk.com/app/en/services/billing).
+- in the section **Balance** [management console](https://msk.cloud.vk.com/app/en/services/billing).

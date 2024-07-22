@@ -3,17 +3,17 @@ To interact with Cloud Spark clusters, the Cloud ML Platform Python library is u
 The library supports two types of tokens:
 
 - Access tokens (refresh tokens). They are used to interact with Spark clusters.
-- Registration tokens (register tokens). They are used to create access tokens using the library (without using your personal account).
+- Registration tokens (register tokens). They are used to create access tokens using the library (without using your management console).
 
 ## Getting a list of access tokens
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the tokens are located.
 1. Go to **ML Platform → Tokens**.
 
@@ -32,12 +32,12 @@ There are no registration tokens in this list.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>Cloud ML Platform library</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project in which you want to create a token.
 1. Go to **ML Platform → Tokens**.
 1. Click the **Create access token** button.
@@ -128,12 +128,12 @@ When working in a production environment, do not operate tokens in clear text. U
 
    ```python
    from mlplatform_client import MLPlatform
- 
+
    REGISTER_TOKEN = "<the value of the registration token>"
 
    mlp = MLPlatform()
    refresh_token = mlp.create_refresh_token(REGISTER_TOKEN)
- 
+
    print(refresh_token)
    ```
 
@@ -220,9 +220,9 @@ When working in a production environment, do not operate tokens in clear text. U
    ```python
    from mlplatform_client import MLPlatform
    from mlplatform_client.serializers.auth import MLPTokenType
-    
+
    ADMIN_REFRESH_TOKEN = "<the value of the access token with the Administrator role>"
-    
+
    mlp = MLPlatform(ADMIN_REFRESH_TOKEN)
 
    register_token = mlp.create_register_token(
@@ -261,12 +261,12 @@ A list of created registration tokens is not maintained. You can only [get a lis
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>Cloud ML Platform library</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the required token is located.
 1. Go to **ML Platform → Tokens**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required token and select **Delete**.

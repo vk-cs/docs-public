@@ -4,7 +4,7 @@ Cloud Networks service allows to work with several network types.
 
 _Standard network_ provides access to the subnets with the private IP addresses and exists within a single project.
 
-The standard network, its subnets and ports [can be managed](../../service-management/) via personal account, OpenStack CLI or Terraform.
+The standard network, its subnets and ports [can be managed](../../service-management/) via management console, OpenStack CLI or Terraform.
 
 ## {heading(Shared network)[id=shared_net]}
 
@@ -84,7 +84,7 @@ If the project has file storages, balancers or advanced routers, the shutdown wi
 
 _External network_ (`ext-net`, `internet`) provides access to the subnets with the public IP addresses and exists across all projects. It is used to provide services with the Internet access. See details in the [Network addressing and internet access](../ips-and-inet) section.
 
-It is not possible to edit or delete the subnets of that network. The following operations can be performed via personal account, OpenStack CLI or Terraform:
+It is not possible to edit or delete the subnets of that network. The following operations can be performed via management console, OpenStack CLI or Terraform:
 
 - Assigning the network to a virtual machine.
 - Assigning the network for a router external network connection.

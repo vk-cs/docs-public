@@ -10,12 +10,12 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. In personal account, go to **Virtual networks** → **Networks**.
+1. In management console, go to **Virtual networks** → **Networks**.
 
    A list of networks will be displayed.
 
@@ -69,12 +69,12 @@ In addition to the cloud network, you can create subnets. By default, one networ
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. In personal account, go to **Virtual networks** → **Networks**.
+1. In management console, go to **Virtual networks** → **Networks**.
 2. Click the **Create** button.
 3. Set the network name.
 4. (Optional) Give access to the Internet. This is necessary if you plan to use VPN, SNAT services.
@@ -103,12 +103,12 @@ Once a network is created, it will appear in the list of networks.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. In personal account, go to **Virtual networks** → **Networks**.
+1. In management console, go to **Virtual networks** → **Networks**.
 2. Click on the name of the cloud network.
 3. Go to **Network settings**.
 4. Make any changes you want.
@@ -169,7 +169,7 @@ All the network subnets and ports will be deleted along with the network.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
@@ -196,12 +196,12 @@ All the network subnets and ports will be deleted along with the network.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. In personal account, go to **Virtual networks** → **Networks**.
+1. In management console, go to **Virtual networks** → **Networks**.
 2. Click on the name of the cloud network.
 3. Click the **Add subnet** button.
 4. Specify the name of the subnet.
@@ -265,12 +265,12 @@ All the network subnets and ports will be deleted along with the network.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. In personal account, go to **Virtual networks** → **Networks**.
+1. In management console, go to **Virtual networks** → **Networks**.
 2. Click on the name of the cloud network where the subnet is located.
 3. Click ![ ](/en/assets/more-icon.svg "inline") for the subnet you want to change and select **Edit subnet**.
 4. Make the necessary changes.
@@ -340,12 +340,12 @@ Once a subnet is deleted, it cannot be restored.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. In personal account, go to **Virtual networks** → **Networks**.
+1. In management console, go to **Virtual networks** → **Networks**.
 2. Click on the name of the cloud network where the subnet is located.
 3. Click ![ ](/en/assets/more-icon.svg "inline") for the subnet you want to delete and select **Delete Subnet**.
 5. In the window that opens, click the **Confirm** button.
