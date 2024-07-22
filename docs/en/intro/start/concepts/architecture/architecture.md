@@ -4,7 +4,7 @@ Virtualization, monitoring, container, and data storage services can be deployed
 
   <details>
     <summary>List of IaaS services</summary>
-  
+
   - [Cloud Servers](/en/computing/iaas) (IaaS Compute) — provides virtual machines with the ability to allocate public IP and unlimited traffic of 1 GBit/s (also [available](/en/ml/gpu) virtual machines with NVIDIA GPU). Responsible for virtualization and resource integration, uses the KVM hypervisor.
   - [Cloud Storage](/en/storage/s3) (IaaS Storage) — provides S3-compatible object storage. The workload on the storage is distributed among all storage nodes. You can deploy a storage with a custom architecture.
   - [Cloud Networks](/en/networks/vnet) (IaaS Network) — provides network interaction within the selected [project](/en/tools-for-using-services/account/concepts/projects) using SDN (Software Defined Network) technology. It operates on the basis of OpenStack Neutron and on the basis of proprietary software — Sprut. Includes components:
@@ -21,7 +21,7 @@ Virtualization, monitoring, container, and data storage services can be deployed
 
   <details>
     <summary>List of PaaS services</summary>
-  
+
   - [Cloud Containers](/en/kubernetes/k8s) — allows you to create and manage Kubernetes clusters in which you can run services and applications.
   - [Cloud Databases](/en/dbs/dbaas) — provides scalable DBMS: MySQL, PostgreSQL, Postgres Pro, ClickHouse, MongoDB, Redis, Tarantool, OpenSearch, Arenadata DB based on Greenplum.
   - [Cloud Big Data](/en/bigdata/hortonworks) — used for big data analysis based on Arenadata Hadoop, supports scaling.
@@ -49,7 +49,7 @@ Virtualization, monitoring, container, and data storage services can be deployed
   - IAM — manages authentication and authorization of users and services in conjunction with Keystone.
   - [Cloud Monitoring](/en/manage/monitoring) — provides monitoring of cloud services and user applications.
   - Keystone — provides API client authentication, service discovery, and distributed multi-tenant authorization.
-  
+
   </details>
 
 VK Cloud provides [technical support](/en/intro/start/support/support-info) for its services. Partner solutions (for example, AntiDDoS, WAF) are supported jointly with a partner.
@@ -60,7 +60,7 @@ The general scheme of VK Cloud components and services is shown below.
 
 Cloud services are managed using the API. Users interact with the API through one or more [tools](/en/tools-for-using-services):
 
-- VK Cloud personal account;
+- VK Cloud management console;
 - OpenStack CLI;
 - Terraform with a separate provider.
 

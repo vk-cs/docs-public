@@ -5,17 +5,17 @@ You can:
 - write data to connected file storages and read data from them,
 - create snapshots of the current state of the file storage.
 
-File storages are created in your VK Cloud personal account. Connecting file storages, writing and reading data are only available in VK Cloud virtual machines. Other file storage functions are available in your VK Cloud personal account or in the OpenStack CLI using the `openstack share` commands.
+File storages are created in your VK Cloud management console. Connecting file storages, writing and reading data are only available in VK Cloud virtual machines. Other file storage functions are available in your VK Cloud management console or in the OpenStack CLI using the `openstack share` commands.
 
 ## Creating a file storage
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where you want to create a file storage.
 1. Go to **Cloud Servers** → **File share**.
 1. Click the **Create** button.
@@ -210,12 +210,12 @@ The instructions are given for Ubuntu. For information about connecting to other
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**. A list of file storages will be displayed.
 
@@ -239,12 +239,12 @@ The instructions are given for Ubuntu. For information about connecting to other
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click the name of the required file storage. Information about it will be displayed.
@@ -269,12 +269,12 @@ The instructions are given for Ubuntu. For information about connecting to other
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **Change size**.
@@ -306,12 +306,12 @@ The size of the file storage cannot be reduced.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **Create snapshot**.
@@ -338,12 +338,12 @@ The size of the file storage cannot be reduced.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **List of snapshots**. Information about the snapshots will be displayed.
@@ -368,12 +368,12 @@ The size of the file storage cannot be reduced.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **List of snapshots**.
@@ -400,12 +400,12 @@ The size of the file storage cannot be reduced.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **List of snapshots**.
@@ -432,12 +432,12 @@ The size of the file storage cannot be reduced.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click the name of the required file storage.
@@ -474,12 +474,12 @@ The size of the file storage cannot be reduced.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click the name of the required file storage.
@@ -515,12 +515,12 @@ To delete a file storage, you must first disconnect it from virtual machines and
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project where the required file storage is located.
 1. Go to **Cloud Servers** → **File share**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required storage and select **Delete**.

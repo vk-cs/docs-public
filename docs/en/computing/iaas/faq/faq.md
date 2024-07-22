@@ -26,7 +26,7 @@ Use the [instructions](../service-management/vm/vm-manage#setting_and_changing_a
 
 <details>
 
-<summary>When I change my VM password, I get an error in my personal account</summary>
+<summary>When I change my VM password, I get an error in my management console</summary>
 
 The password to the virtual machine is set through the guest agent. If the agent is unavailable, there may be problems with setting the password.
 
@@ -342,7 +342,7 @@ Replacement of the root disk is possible only if another disk has already been c
 
 <summary>Is it possible to create a disk snapshot?</summary>
 
-Creating a disk snapshot is available from [VK Cloud personal account or OpenStack CLI](../service-management/volumes#disk_snapshots). The created snapshot will be stored until the disk itself is deleted.
+Creating a disk snapshot is available from [VK Cloud management console or OpenStack CLI](../service-management/volumes#disk_snapshots). The created snapshot will be stored until the disk itself is deleted.
 
 </details>
 
@@ -435,7 +435,7 @@ Learn more about creating snapshots in the article [File Storage management](../
 
 No, there is no such possibility.
 
-A snapshot of the file storage can be created manually via [personal account](https://msk.cloud.vk.com/app/en/main) VK Cloud or using the API.
+A snapshot of the file storage can be created manually via [management console](https://msk.cloud.vk.com/app/en/main) VK Cloud or using the API.
 
 </details>
 

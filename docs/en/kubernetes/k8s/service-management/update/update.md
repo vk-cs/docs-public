@@ -23,11 +23,11 @@ You cannot downgrade to a lower version of Kubernetes when upgrading. Clusters o
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Update version**.

@@ -18,7 +18,7 @@ After completing all the quick start steps, you will link a payment card to the 
 
 ## 1. Check the project balance
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en/) VK Cloud.
+1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
 1. Click on the user name in the header of the page, select **Balance and payments** from the drop-down list.
 
 The project balance will be displayed on the page, on it you will see the welcome [bonuses](../concepts/balance) accrued after registration.
@@ -27,7 +27,7 @@ For more information about the balance, see the article [Balance management](../
 
 ## 2. Make sure that a map is linked to the project
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en/) VK Cloud.
+1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
 1. Click on the user name in the header of the page, select **Balance and payments** from the drop-down list.
 1. Check if the card is linked:
 
@@ -69,16 +69,16 @@ One card can be linked to only one project. When linking the card, a small amoun
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en/) VK Cloud.
+1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
 1. Click on the user name in the header of the page, select **Balance and payments** from the drop-down list.
 1. [Top up](../service-management/payment#making_a_payment) the project balance in a [convenient way](../concepts/payment-methods) for you.
 
 </tabpanel>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en/) VK Cloud.
+1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
 1. Click on the user name in the header of the page, select **Balance and payments** from the drop-down list.
-1. [Create an invoice](../service-management/bill-generation) for the required amount in your personal account.
+1. [Create an invoice](../service-management/bill-generation) for the required amount in your management console.
 1. Pay the bill by bank transfer.
 
 Crediting of funds can take up to three banking days.

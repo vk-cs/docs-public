@@ -71,7 +71,7 @@ Here:
     <summary>Examples</summary>
 
   - `jh_instance_id = vkcs_mlplatform_jupyterhub.jupyterhub.id`: a new JupyterHub instance will be created. The ID will be taken after creating the `vkcs_mlplatform_jupyterhub` resource. The resource will be generated further.
-  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: the ID of an existing instance can be taken from JupyterHub instance details in your [VK Cloud personal account](https://cloud.vk.com/app/en).
+  - `jh_instance_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: the ID of an existing instance can be taken from JupyterHub instance details in your [VK Cloud management console](https://cloud.vk.com/app/en).
 
   </details>
 
@@ -84,7 +84,7 @@ Here:
 
   - `network_id = vkcs_networking_network.default.id`: the instance will be hosted on a new network, which will be created by the `vkcs_networking_network` resource. The resource will be generated further.
   - `network_id = data.vkcs_networking_network.default.id`: the instance will be hosted on an existing network. Its ID is taken from the `vkcs_networking_network` data source. The source will be generated further.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the instance will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud personal account or via the Openstack CLI.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the instance will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
 
   </details>
 
@@ -165,7 +165,7 @@ resource "vkcs_networking_router_interface" "app" {
 ## 5. Create the necessary resources using Terraform
 
 1. Put the Terraform configuration files in one directory:
-  
+
    - `vkcs_provider.tf`
    - `main.tf`
    - `flavor.tf` (if created)
@@ -193,7 +193,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 Verify that the MLflow instance was successfully created:
 
-1. [Go to](https://cloud.vk.com/app/en) your VK Cloud personal account.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances**. Make sure your MLflow instance is created and active.
 
 ## Delete unused resources

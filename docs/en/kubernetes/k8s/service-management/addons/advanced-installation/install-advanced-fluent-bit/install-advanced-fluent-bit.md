@@ -9,12 +9,12 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 <tabpanel>
    <tabs>
    <tablist>
-   <tab>Personal account</tab>
+   <tab>Management console</tab>
    <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
-   1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud personal account.
+   1. [Go to](https://msk.cloud.vk.com/app/) your VK Cloud management console.
    1. Select the project where the required cluster is located.
    1. Go to **Containers → Kubernetes Clusters**.
    1. Click the name of the cluster.
@@ -78,7 +78,7 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
 The full add-on settings code along with the description of the fields is available:
 
-- In your personal account.
+- In your management console.
 - In the `configuration_values` attribute from the [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) data source if Terraform is used.
 
 Installation of the add-on is impossible without editing the settings code. It is required to set the parameters of log delivery:

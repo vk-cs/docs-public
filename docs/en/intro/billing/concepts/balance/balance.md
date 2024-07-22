@@ -1,6 +1,6 @@
 The balance of a [project](/en/tools-for-using-services/account/concepts/projects) is the overall sum of funds on the project accounts, the main and the bonus ones.
 
-You can [view](../../service-management/payment) the project balance in the [personal account](https://msk.cloud.vk.com/app/en/). Information about the balance is available if the services are [activated](/en/tools-for-using-services/account/service-management/activation) in the project.
+You can [view](../../service-management/payment) the project balance in the [management console](https://msk.cloud.vk.com/app/en/). Information about the balance is available if the services are [activated](/en/tools-for-using-services/account/service-management/activation) in the project.
 
 ## The main and the bonus account
 

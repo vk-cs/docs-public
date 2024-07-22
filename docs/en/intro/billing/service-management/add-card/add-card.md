@@ -16,7 +16,7 @@ Legal entities are recommended to pay for services using bank transfers. Card pa
 
 To bind the card:
 
-1. Go to your [personal account](https://cloud.vk.com/app/en/) VK Cloud.
+1. Go to your [management console](https://cloud.vk.com/app/en/) VK Cloud.
 1. Open the project balance page in one of the following ways:
 
     - Click on the user name in the header of the page, select **Balance and payments** from the drop-down list.
@@ -55,7 +55,7 @@ In [region](/en/tools-for-using-services/account/concepts/regions) Kazakhstan au
 
 To activate auto-completion:
 
-1. Go to your [personal account](https://cloud.vk.com/app/en/) VK Cloud.
+1. Go to your [management console](https://cloud.vk.com/app/en/) VK Cloud.
 1. Open the project balance page in one of the following ways:
 
     - Click on the user name in the header of the page, select **Balance and payments** from the drop-down list.

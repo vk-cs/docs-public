@@ -2,7 +2,7 @@
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -52,7 +52,7 @@ To change an origin:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -128,7 +128,7 @@ To change the header:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -218,7 +218,7 @@ To enable origin shielding:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 

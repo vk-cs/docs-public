@@ -40,7 +40,7 @@ To create such an application:
    metadata:
      name: coffee
    spec:
-     serviceName: coffee 
+     serviceName: coffee
      replicas: 2
      selector:
        matchLabels:
@@ -78,7 +78,7 @@ Create several load balancers with different behaviors that serve the deployed `
 </tablist>
 <tabpanel>
 
-1. Select the public IP address you want to assign to the balancer or create a new one. You can do this in [VK Cloud personal account](../../../../networks/vnet/networks/fip).
+1. Select the public IP address you want to assign to the balancer or create a new one. You can do this in [VK Cloud management console](../../../../networks/vnet/networks/fip).
 
    There should be no internal IP address attached to the IP address.
 
@@ -179,7 +179,7 @@ Create several load balancers with different behaviors that serve the deployed `
      name: coffee-svc-restrict-access-by-ip
    spec:
      type: LoadBalancer
-     loadBalancerSourceRanges: 
+     loadBalancerSourceRanges:
        - <public IP address>/32
      ports:
      - port: 80

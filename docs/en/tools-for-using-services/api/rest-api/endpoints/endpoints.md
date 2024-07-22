@@ -1,4 +1,4 @@
-In your personal account, you can view the addresses of the available API endpoints. The list and addresses of endpoints differ between [regions](/en/tools-for-using-services/account/concepts/regions).
+In your management console, you can view the addresses of the available API endpoints. The list and addresses of endpoints differ between [regions](/en/tools-for-using-services/account/concepts/regions).
 
 To work with VK Cloud via the API [activate API access](../enable-api). Read more about working with services in [API specification](/ru/tools-for-using-services/api "change-lang").
 
@@ -8,7 +8,7 @@ The list is available to all users, regardless of their [role](/en/tools-for-usi
 
 To see the list of endpoints for your region:
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en).
 1. Click on the user name in the header of the page and select **Project settings**.
 1. Go to **API endpoints** tab.
 
@@ -26,7 +26,7 @@ To see the list of endpoints for your region:
 
 <info>
 
-The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown in the personal account allows [viewing VM logs](/en/monitoring-services/logging/service-management/view-logs).
+The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown in the management console allows [viewing VM logs](/en/monitoring-services/logging/service-management/view-logs).
 
 </info>
 
@@ -94,15 +94,15 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 
 The addresses of some endpoints contain the variable `<project_id>`. When creating a request, replace this variable with the Project ID of the current project.
 
-The Project ID does not match the [project ID](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) to VK Cloud personal account. This is another identifier that is used in configuration files:
+The Project ID does not match the [project ID](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) to VK Cloud management console. This is another identifier that is used in configuration files:
 
 - In `openrc.sh`, as the value of the variable `OS_PROJECT_ID`. This file is required to work with additional tools such as the OpenStack CLI or cURL.
 - In `vkcs_provider.tf`, as the value of the `project_id` parameter. This file is required to work through Terraform.
 
 To get the Project ID value for a project:
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
-1. Open the required project by selecting it from the list in the header of the personal account page.
+1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en).
+1. Open the required project by selecting it from the list in the header of the management console page.
 1. Click on the user name in the header of the page and select **Project settings**.
 1. Go to **API access** or **Terraform** tab.
 

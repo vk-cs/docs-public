@@ -1,4 +1,4 @@
-Description of how to create a cluster using Terraform is provided below. It is also possible to create a cluster [via VK Cloud personal account](../create-webui/).
+Description of how to create a cluster using Terraform is provided below. It is also possible to create a cluster [via VK Cloud management console](../create-webui/).
 
 Ready-to-use examples of configuration files to create different clusters are listed in the [Terraform](/en/tools-for-using-services/terraform/how-to-guides/k8s/create) section.
 
@@ -128,7 +128,7 @@ Some clarification:
   If the required network and subnet already exist and you know their identifiers, specify the identifiers explicitly.
 
   Example:
-  
+
   ```hcl
   resource "vkcs_kubernetes_cluster" "k8s-cluster" {
     name                = "k8s-cluster"
@@ -140,11 +140,11 @@ Some clarification:
   ```
   </tabpanel>
   <tabpanel>
-  
+
   If the required networks and subnets already exist, but you do not know their identifiers, specify the appropriate data sources and get the identifiers.
 
   Example:
-  
+
   ```hcl
   ...
   data "vkcs_networking_network" "k8s-network" {
@@ -165,7 +165,7 @@ Some clarification:
   ```
   </tabpanel>
   <tabpanel>
-  
+
   If the required network and subnet do not already exist, create them and get the IDs:
 
   ```hcl

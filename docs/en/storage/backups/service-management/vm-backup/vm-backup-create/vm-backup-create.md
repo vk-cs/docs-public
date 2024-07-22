@@ -14,11 +14,11 @@ A backup is created for all VM disks.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>M</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 2. Go to **Cloud Computing → Backup**.
 3. Go to the **Automatic** tab.
 4. Click the **Add**.
@@ -56,11 +56,11 @@ The created backup plan will appear in the list. Read more about working with pl
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 2. Create a backup copy of the VM in one of the ways.
 
    - In the section **Backup**:

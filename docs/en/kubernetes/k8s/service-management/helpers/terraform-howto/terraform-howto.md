@@ -8,13 +8,13 @@ See the [Terraform provider documentation](https://github.com/vk-cs/terraform-pr
 
 ## Features of using Terraform to manage the container service
 
-- Some cluster operations are performed only in [personal account](../../../../../tools-for-using-services/account). For each operation, the [step-by-step instructions](../../../service-management) indicate whether it can also be performed using Terraform.
+- Some cluster operations are performed only in [management console](../../../../../tools-for-using-services/account). For each operation, the [step-by-step instructions](../../../service-management) indicate whether it can also be performed using Terraform.
 
 - Changing some parameters of an existing cluster will create a **new cluster**. The container service documentation lists only operations that can be performed on an existing cluster without creating a new cluster.
 
   See [Terraform provider documentation](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/resources/kubernetes_cluster.md#argument-reference) for details.
 
-- If you change the settings of a cluster that is managed by Terraform in your personal account, those changes will not be reflected in the Terraform configuration file.
+- If you change the settings of a cluster that is managed by Terraform in your management console, those changes will not be reflected in the Terraform configuration file.
 
   In this case, the current Terraform configuration will become obsolete, and applying it with `terraform apply` will cause the settings made to be rolled back or even render the cluster inoperable.
 

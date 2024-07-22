@@ -1,7 +1,7 @@
 {
     "title": "Updating cluster",
-    "pageDescription": "A Kubernetes cluster can be updated in two ways: via personal account or via Terraform. This section discusses both methods in detail.",
-    "shortDescription": "How to update a Kubernetes cluster using a personal account or using Terraform",
+    "pageDescription": "A Kubernetes cluster can be updated in two ways: via management console or via Terraform. This section discusses both methods in detail.",
+    "shortDescription": "How to update a Kubernetes cluster using a management console or using Terraform",
     "metaTitle": "Updating cluster",
     "metaDescription": "",
     "sectionTitle": "Updating cluster",

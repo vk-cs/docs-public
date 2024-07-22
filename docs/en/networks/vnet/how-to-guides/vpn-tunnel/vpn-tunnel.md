@@ -253,7 +253,7 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
 </tablist>
 <tabpanel>
 
-1. Open the page with the list of subnets for the `vkcloudNet` network in your personal account.
+1. Open the page with the list of subnets for the `vkcloudNet` network in your management console.
 1. Expand the `vkcloudSubnet` subnet menu and select `Edit Subnet`.
 1. Make sure the **Show static routes field** option is selected.
 1. Enter a static route to the client network `172.16.0.0/29` in the field. As the next hop, you need to specify the IP address of the `SNAT` interface of the router `router_5678` in the cloud subnet `vkcloudSubnet`.
@@ -265,7 +265,7 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
 </tabpanel>
 <tabpanel>
 
-1. Open the page with information about the router `router_1234` in your personal account, to which the client subnet `clientSubnet` and the VPN gateway `client_vpn_gw` are connected.
+1. Open the page with information about the router `router_1234` in your management console, to which the client subnet `clientSubnet` and the VPN gateway `client_vpn_gw` are connected.
 1. On the **Static Routes** tab, click the **Add Static Route** button.
 1. Write a static route to the cloud network `10.0.0.0/29`:
 
@@ -281,7 +281,7 @@ In order for traffic to pass through the VPN tunnel, you need to add static rout
 
 1. View the status of the VPN tunnel from the VK Cloud platform.
 
-    To do this, open the VPN page `vkcloud-client-vpn` in your personal account and go to the **Tunnel Settings** tab. The VPN must be in `ACTIVE` status.
+    To do this, open the VPN page `vkcloud-client-vpn` in your management console and go to the **Tunnel Settings** tab. The VPN must be in `ACTIVE` status.
 
 1. Create a firewall rule group `icmp` to allow ICMP traffic.
 

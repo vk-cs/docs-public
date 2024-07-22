@@ -1,1 +1,1 @@
-Description of tools for working with Cloud Streams clusters in the personal account of VK Cloud.
+Description of tools for working with Cloud Streams clusters in the management console of VK Cloud.

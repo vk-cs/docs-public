@@ -1,6 +1,6 @@
 ## Configuring the network for the service infrastructure
 
-1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Cloud Desktop** → **Service settings**.
 1. On the **Network settings** tab, set the parameters:
 
@@ -23,7 +23,7 @@ Cloud Desktop cannot work without the AD/LDAP user directory service. If your ne
 
 To set up a connection to the user directory:
 
-1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Cloud Desktop** → **Service settings**.
 1. On the **Directory settings** tab, set the parameters:
 
@@ -56,7 +56,7 @@ A virtual machine will be deployed for verification, its name begins with `vdi-c
 
 To check if the service network settings are correct:
 
-1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Cloud Desktop** → **Service settings**.
 1. On the **Network settings** tab, enable the **Network settings check** option.
 1. Click **Check connection**.
@@ -76,7 +76,7 @@ A virtual machine will be deployed for verification, its name begins with `vdi-c
 
 To check if the service catalog settings are correct:
 
-1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Cloud Desktop** → **Service settings**.
 1. On the **Directory settings** tab, enable the **Directory settings check** option.
 1. Click **Check connection**.

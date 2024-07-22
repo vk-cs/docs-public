@@ -28,7 +28,7 @@ Activation of API access is necessary to work with VK Cloud using the public API
 ## Deactivate API access
 
 1. [Enable](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa/) two-factor authentication if it has been disabled.
-1. Click on the user login in the upper right corner of VK Cloud [personal account](https://msk.cloud.vk.com/app/).
+1. Click on the user login in the upper right corner of VK Cloud [management console](https://msk.cloud.vk.com/app/).
 1. From the drop-down menu, select the option **Account settings**.
 1. Click on the **Security** tab.
 1. In the API access section, click **Deactivate API access**.
