@@ -1,6 +1,6 @@
 To view the logs, use any method convenient for you:
 
-- [Go to](https://msk.cloud.vk.com/app/en/services/monitoring/logging) the **Monitoring** → **Logging** section of your VK Cloud personal account.
+- [Go to](https://msk.cloud.vk.com/app/en/services/monitoring/logging) the **Monitoring** → **Logging** section of your VK Cloud management console.
 - Use [API methods](/ru/additionals/api/logging "change-lang").
 
 To refine the search results, use the [search query language](../../concepts/search-tools/). Examples of search expressions:

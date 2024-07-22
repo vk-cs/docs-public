@@ -10,11 +10,11 @@ To download logs locally:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user's name in the header of the page.
 1. From the drop-down list, select **Application debug**.
 

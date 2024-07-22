@@ -6,13 +6,13 @@ Creating HDD and SSD drives is available by default in all configurations. To cr
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
@@ -94,13 +94,13 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 <tabs>
 
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
@@ -196,12 +196,12 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
@@ -265,13 +265,13 @@ Creating HDD and SSD drives is available by default in all configurations. To us
 <tabs>
 
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
@@ -341,13 +341,13 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 <tabs>
 
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
@@ -407,13 +407,13 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 <tabs>
 
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud Computing** → **Disks**.
 3. Find a disk in the list that is not connected to the VM: the icon to the left of the disk name is blue, when you hover over it, the inscription appears **Не подключен к инстансу**.
 4. Use one of the methods to open the virtual machine selection window to attach the disk.
@@ -476,13 +476,13 @@ To disable the VM's main (root) disk, use the option [Replacing the root disk](#
 <tabs>
 
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
@@ -548,13 +548,13 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 <tabs>
 
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. [Disconnect from VM](#disconnecting_a_disk_from_a_vm) the disk that will be used to replace the main one.
 3. [Clone](#cloning_disk) the target disk if necessary.
 4. Open the page with the required list of disks.
@@ -707,13 +707,13 @@ When you delete a disk, all its snapshots will be deleted.
 <tabs>
 
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
@@ -772,13 +772,13 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 <tabs>
 
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.
@@ -845,13 +845,13 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 <tabs>
 
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
    - All disks: go to **Cloud Computing** → **Disks**.

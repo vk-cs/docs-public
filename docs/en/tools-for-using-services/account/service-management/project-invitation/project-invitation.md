@@ -52,5 +52,5 @@ If the **Enable two-factor authentication** page opens, [configure](/en/tools-fo
 
 ## What's next?
 
-- [View](/en/tools-for-using-services/account) the personal account features.
+- [View](/en/tools-for-using-services/account) the management console features.
 - [Configure](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/editinfo) your VK Cloud account settings.

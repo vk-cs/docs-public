@@ -28,7 +28,7 @@ The following roles are provided in the service:
 
 - Administrator.
 
-  Manages the service through the VK Cloud [personal account](https://msk.cloud.vk.com/app/en). Configures integration with the directory service, creates desktop pools, and assigns desktops to users.
+  Manages the service through the VK Cloud [management console](https://msk.cloud.vk.com/app/en). Configures integration with the directory service, creates desktop pools, and assigns desktops to users.
 
 - User.
 

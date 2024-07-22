@@ -6,12 +6,12 @@
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>Terraform</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the required cluster.
@@ -48,12 +48,12 @@
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>Terraform</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the required cluster.
@@ -102,11 +102,11 @@ The procedure for installing add-ons is discussed in the [relevant section](../a
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the required cluster.
@@ -123,7 +123,7 @@ If the edit failed with an error:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -152,11 +152,11 @@ To update some add-ons, you will first need to uninstall the previous version.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the required cluster.
@@ -174,7 +174,7 @@ If the update failed with an error:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -194,7 +194,7 @@ If the update failed with an error:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>Terraform</tab>
 </tablist>
 <tabpanel>
@@ -203,7 +203,7 @@ This is a group operation: if necessary, you can delete several add-ons at once 
 
 To remove the add-on:
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
 1. Go to **Containers** → **Kubernetes clusters**.
 1. Click on the name of the required cluster.

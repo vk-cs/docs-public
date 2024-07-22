@@ -7,7 +7,7 @@ To enable a CDN resource:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>

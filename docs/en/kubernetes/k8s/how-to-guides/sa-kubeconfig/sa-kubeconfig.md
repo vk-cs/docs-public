@@ -1,4 +1,4 @@
-When [connecting using kubectl](../../connect/kubectl) to a Cloud Containers cluster, [kubeconfig is used](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/), this is cluster configuration file. kubeconfig is usually used to work with the cluster from the VK Cloud personal account, which is configured to use [single sign-on technology](../../concepts/access-management). Therefore, when working with `kubectl` you periodically need to enter the user's password.
+When [connecting using kubectl](../../connect/kubectl) to a Cloud Containers cluster, [kubeconfig is used](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/), this is cluster configuration file. kubeconfig is usually used to work with the cluster from the VK Cloud management console, which is configured to use [single sign-on technology](../../concepts/access-management). Therefore, when working with `kubectl` you periodically need to enter the user's password.
 
 This authentication process is inconvenient when working with automated tools that need access to the cluster. To work with them, it is more convenient to use the kubeconfig file for the service account. This kubeconfig allows you to authenticate with a token with an infinite lifetime, without entering a password.
 
@@ -10,11 +10,11 @@ This authentication process is inconvenient when working with automated tools th
 
 1. [Make sure](../../connect/kubectl) that you can connect to the created cluster using `kubectl`.
 
-   In this case, kubeconfig will be used, downloaded from the VK Cloud personal account.
+   In this case, kubeconfig will be used, downloaded from the VK Cloud management console.
 
 1. Set the environment variables pointing to kubeconfig:
 
-   - `VKCLOUD_KUBECONFIG`: the path to the kubeconfig uploaded from the VK Cloud personal account.
+   - `VKCLOUD_KUBECONFIG`: the path to the kubeconfig uploaded from the VK Cloud management console.
    - `SA_KUBECONFIG`: the path to kubeconfig for the service account (the file itself will be created later).
 
    This will simplify further work with `kubectl`.
@@ -107,7 +107,7 @@ This authentication process is inconvenient when working with automated tools th
 
    When choosing a role, follow the [principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege) to increase security when working with the cluster. Read more about the role model in the [official Kubernetes documentation](https://kubernetes.io/docs/reference/access-authn-authz/rbac/).
 
-   As an example, the `edit` role will be assigned next. It [corresponds to](../../concepts/access-management#relationship_between_the_roles_of_personal_account_and_kubernetes) to role `Kubernetes operator` from personal account.
+   As an example, the `edit` role will be assigned next. It [corresponds to](../../concepts/access-management#kubernetes-roles-relation) to role `Kubernetes operator` from management console.
 
 1. Link the created service account to the selected cluster role. To do this, create a `ClusterRoleBinding` resource named `example-binding`.
 
@@ -276,7 +276,7 @@ This authentication process is inconvenient when working with automated tools th
 
 ## 4. Create a kubeconfig for a service account
 
-1. Create the basis for this kubeconfig by copying the kubeconfig downloaded from the VK Cloud personal account.
+1. Create the basis for this kubeconfig by copying the kubeconfig downloaded from the VK Cloud management console.
 
    ```bash
    cp $VKCLOUD_KUBECONFIG $SA_KUBECONFIG

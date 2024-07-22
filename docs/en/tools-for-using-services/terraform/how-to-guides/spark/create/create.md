@@ -75,7 +75,7 @@ Here:
 
   - `network_id = vkcs_networking_network.default.id`: the cluster will be hosted on a new network, which will be created by the `vkcs_networking_network` resource. The resource will be generated further.
   - `network_id = data.vkcs_networking_network.default.id`: the cluster will be hosted on an existing network. Its ID is taken from the `vkcs_networking_network` data source. The source will be generated further.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the cluster will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud personal account or via the Openstack CLI.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the cluster will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
 
   </details>
 
@@ -96,12 +96,12 @@ Here:
 
   - `registry_id = vkcs_mlplatform_k8s_registry.k8s_registry.id`: a new Docker registry will be created and hosted on a dedicated K8S Docker Registry virtual machine, which is not part of the cluster and is billed separately. The ID will be taken after the `vkcs_mlplatform_k8s_registry` resource is created. The resource will be generated further.
   - `registry_id = "a57e9e91-yyyy-yyyy-yyyy-fedc7ac78c33"`: an ID of an existing K8S Docker Registry. To get the K8S Docker Registry ID:
-  
-    1. [Go to](https://cloud.vk.com/app/en) your VK Cloud personal account.
+
+    1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
     1. Go to **ML Platform** → **Spark in k8s**.
     1. Go to the **Instances** tab.
     1. Click the name of the Docker Registry instance you need.
-  
+
   </details>
 
 - `ip_pool` — an external network ID for the cluster IP address pool.
@@ -110,7 +110,7 @@ Here:
     <summary>Examples</summary>
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: the ID is in the `vkcs_networking_network` data source, which is specified in the cluster network manifest.
-  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the external network ID is taken from the [network list](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud personal account or via the Openstack CLI.
+  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the external network ID is taken from the [network list](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
 
   </details>
 
@@ -160,7 +160,7 @@ Here:
 
   - `network_id = vkcs_networking_network.default.id`: the cluster will be hosted on a new network, which will be created by the `vkcs_networking_network` resource. The resource will be generated further.
   - `network_id = data.vkcs_networking_network.default.id`: the cluster will be hosted on an existing network. Its ID is taken from the `vkcs_networking_network` data source. The source will be generated further.
-  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the cluster will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud personal account or via the Openstack CLI.
+  - `network_id = "bb76507d-yyyy-yyyy-yyyy-2bca1a4c4cfc"`: the cluster will be hosted on an existing network. Its ID is taken from the [list of networks](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
 
   </details>
 
@@ -170,7 +170,7 @@ Here:
     <summary>Examples</summary>
 
   - `ip_pool = data.vkcs_networking_network.extnet.id`: the ID is in the `vkcs_networking_network` data source, which is specified in the cluster network manifest.
-  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the external network ID taken from the [network list](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud personal account or via the Openstack CLI.
+  - `ip_pool = "bb76507d-aaaa-aaaa-aaaa-2bca1a4c4cfc"`: the external network ID taken from the [network list](/en/networks/vnet/service-management/net#viewing_the_list_of_networks_and_subnets_and_information_about_them) in your VK Cloud management console or via the Openstack CLI.
 
   </details>
 
@@ -247,7 +247,7 @@ resource "vkcs_networking_router_interface" "app" {
 ## 5. Create the necessary resources using Terraform
 
 1. Put the Terraform configuration files in one directory:
-  
+
    - `vkcs_provider.tf`
    - `main.tf`
    - `registry.tf`
@@ -275,7 +275,7 @@ resource "vkcs_networking_router_interface" "app" {
 
 Verify that the Spark cluster was successfully created:
 
-1. [Go to](https://cloud.vk.com/app/en) your VK Cloud personal account.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **ML Platform** → **Instances**. Make sure your Spark cluster is created and active.
 
 ## Delete unused resources

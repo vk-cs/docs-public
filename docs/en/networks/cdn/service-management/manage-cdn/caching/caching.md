@@ -96,7 +96,7 @@ To set up user's browser caching:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -168,7 +168,7 @@ To have the CDN resource ignore `Set-Cookie` headers in HTTP requests:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -217,7 +217,7 @@ To have the CDN resource ignore parameters in HTTP requests:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>

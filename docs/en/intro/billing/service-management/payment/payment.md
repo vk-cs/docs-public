@@ -6,15 +6,15 @@ Viewing project expenses details and making payments is available to users whose
 
 ## Viewing the balance
 
-At the top of the personal account page, the balance total is displayed: the sum of funds on both project [accounts](../../concepts/balance).
+At the top of the management console page, the balance total is displayed: the sum of funds on both project [accounts](../../concepts/balance).
 
 To view the balance:
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
+1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en/).
 1. Make sure that the project has [services activated](/en/tools-for-using-services/account/service-management/activation).
 1. Open the balance page using one of these options:
 
-   - Click on your user name in the top part of the personal account page and select **Balance and payments** from the drop-down list.
+   - Click on your user name in the top part of the management console page and select **Balance and payments** from the drop-down list.
    - Select the **Balance** section in the side menu.
 
    The page displays the balance of main and bonus funds.
@@ -31,8 +31,8 @@ It is possible to credit funds to the [main account](../../concepts/balance#the_
 
 To make a payment:
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
-1. Click on the ![Make a payment](assets/icon_plus.svg "inline") icon at the top of the personal account page or click on the **Make a payment** button on the [balance page](#viewing_the_balance).
+1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en/).
+1. Click on the ![Make a payment](assets/icon_plus.svg "inline") icon at the top of the management console page or click on the **Make a payment** button on the [balance page](#viewing_the_balance).
 1. Specify the amount of the deposit.
 
    The minimum amount that can be credited is 10 rubles for projects in the Moscow [region](/en/tools-for-using-services/account/concepts/regions) and 100 tenge for projects in the Kazakhstan region.
@@ -59,10 +59,10 @@ You can set up a monthly expenses limit for each of your projects. When an expen
 
 To set up an expenses limitation and notifications:
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
+1. Go to VK Cloud [management console](https://msk.cloud.vk.com/app/en/).
 1. Open the balance page using one of these options:
 
-   - Click on your user name in the top part of the personal account page and select **Balance and payments** from the drop-down list.
+   - Click on your user name in the top part of the management console page and select **Balance and payments** from the drop-down list.
    - Select the **Balance** section in the side menu.
 
 1. On the balance page, go to the **Limitation** tab.

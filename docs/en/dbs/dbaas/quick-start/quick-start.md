@@ -31,7 +31,7 @@ The DB instance is charged and consumes computational resources. After completin
    If the utility is installed, its version will be displayed:
 
    ```text
-   psql (PostgreSQL) 14.7 
+   psql (PostgreSQL) 14.7
    ```
 
    Otherwise, there will be shown a message stating that the `psql` command is not found.
@@ -177,7 +177,7 @@ The DB instance is charged and consumes computational resources. After completin
 
 ## 1. Create PostgreSQL DB instance
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en/).
+1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/en/).
 1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the instance will be placed.
 1. Go to **Databases → Database instances**.
 1. If there are no instances in the selected project, click the **Create database** button.
@@ -243,7 +243,7 @@ The DB instance is charged and consumes computational resources. After completin
 
 ## 2. Get the external IP address of the DB instance
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en/).
+1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/en/).
 1. Select the project where the DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Click on the name of the DB instance. A page with information will open.
@@ -265,7 +265,7 @@ The DB instance is charged and consumes computational resources. After completin
    ```bash
    chmod 0600 <path/to/the/key.pem>
    ssh -i <path/to/the/key.pem> admin@<DB instance external IP address>
-   
+
    ```
 
    </tabpanel>
@@ -303,7 +303,7 @@ The DB instance is charged and consumes computational resources. After completin
    May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.725 GMT [1978] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
    May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1980]: 2023-05-19 10:29:33.735 GMT [1980] LOG:  database system was shut down at 2023-05-19 10:29:18 GMT
    May 19 10:29:33 vk-cloud-dbaas-quickstart.novalocal postmaster[1978]: 2023-05-19 10:29:33.828 GMT [1978] LOG:  database system is ready to accept connections
-   
+
    ...
    ```
 
@@ -313,7 +313,7 @@ The DB instance is charged and consumes computational resources. After completin
 
 ## 4. Install the TimescaleDB extension
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en/).
+1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/en/).
 1. Select the project where the DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Click on the name of the DB instance. A page with information will open.
@@ -460,7 +460,7 @@ The `sensor_data` table will be filled in with the randomly generated dataset. T
      2 | a    | ceiling
      3 | b    | floor
      4 | b    | ceiling
-   (4 rows)  
+   (4 rows)
    ```
 
    </details>
@@ -538,7 +538,7 @@ Earlier the `sensor_data` table was filled in with the randomly generated datase
     2023-05-21 11:00:00+00 |  47.68186282450759 |  0.5020627643634109
 
    ...
-   
+
    ```
 
    </details>
@@ -571,7 +571,7 @@ Earlier the `sensor_data` table was filled in with the randomly generated datase
     2023-05-21 10:30:00+00 | 46.664477309117196 |  58.94930860972387 |  0.6187918344821526
     2023-05-21 11:00:00+00 |  47.68186282450759 | 62.973228176266005 |  0.5020627643634109
 
-   ... 
+   ...
    ```
 
    </details>
@@ -582,7 +582,7 @@ Output of query results similar to the above ones indicates that PostgreSQL and 
 
 The monitoring feature [was enabled during the instance creation](#1_create_postgresql_db_instance). Familiarize yourself with gathered monitoring data:
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en/).
+1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/en/).
 1. Select the project where the DB instance is located.
 1. Go to **Databases → Database instances**.
 1. Click on the name of the DB instance. A page with information will open.

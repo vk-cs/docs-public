@@ -10,12 +10,12 @@ Learn more about networks and ports in the sections [Managing networks and subne
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. Go to [management console](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
 3. Select the required VM and go to the **Networks** tab.
 4. Click **Add connection**.
@@ -149,12 +149,12 @@ Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. Go to [management console](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
 3. Select the required VM and go to the **Networks** tab.
 4. Do one of the following for the required network:

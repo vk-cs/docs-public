@@ -6,12 +6,12 @@ The VK Cloud service allows you to create an image from the disk of an existing 
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud computing → Images**.
 3. Click the **Create** button.
 4. In the window that appears:
@@ -67,18 +67,18 @@ Only RAW images are supported. If your image is in a different format, [convert 
 
 The recommended way to import an image is using the CLI.
 
-When downloading through your Personal account, the size of the downloaded file is limited — no more than 100 GB.
+When downloading through your VK Cloud management console, the size of the downloaded file is limited — no more than 100 GB.
 
 </warn>
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud computing → Images**.
 3. Click the **Create** button.
 4. In the window that appears:
@@ -151,20 +151,20 @@ The VK Cloud service provides the following image visibility statuses for users:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
 <info>
 
-Through your personal account, you can allow access to the image only for certain projects.
+Through your VK Cloud management console, you can allow access to the image only for certain projects.
 
 </info>
 
 To change the visibility status of an image:
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud computing → Images**.
 3. Click ![ ](/en/assets/more-icon.svg "inline") for the required image and select **Share image**.
 4. In the window that appears:
@@ -228,12 +228,12 @@ openstack image member list <image ID>
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud computing → Images**.
 3. Do one of the following for the required image:
 
