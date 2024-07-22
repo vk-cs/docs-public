@@ -1,9 +1,9 @@
 {
     "title": "Managing cluster resources",
-    "pageDescription": "Managing cluster's Kubernetes resources via personal account.",
-    "shortDescription": "How to manage cluster's Kubernetes resources via personal account",
+    "pageDescription": "Managing cluster's Kubernetes resources via management console.",
+    "shortDescription": "How to manage cluster's Kubernetes resources via management console",
     "metaTitle": "Managing cluster resources",
-    "metaDescription": "VK Cloud containers: managing cluster's Kubernetes resources via personal account.",
+    "metaDescription": "VK Cloud containers: managing cluster's Kubernetes resources via management console.",
     "sectionTitle": "Managing cluster resources",
     "icon": "",
     "weight": 4,

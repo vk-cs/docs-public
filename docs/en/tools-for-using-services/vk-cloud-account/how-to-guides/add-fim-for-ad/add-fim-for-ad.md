@@ -62,11 +62,11 @@ Configuring a relationship between AD FS groups and VK Cloud roles is available 
 ## 4. Check the possibility of logging in via federation
 
 1. Enter the URL for federated user login in the browser address bar. You will be redirected to the AD FS authentication page.
-2. Enter your corporate authentication credentials. After successful authorization, you will be redirected to the main VK Cloud personal account page.
+2. Enter your corporate authentication credentials. After successful authorization, you will be redirected to the main VK Cloud management console page.
 3. Verify that the automatically assigned VK Cloud user role matches the one selected during [group configuration](#3_configure_role_and_group_mapping_in_vk_cloud).
 
 <warn>
 
-Active Directory is not automatically synchronized with VK Cloud. After blocking a user in Active Directory, [remove](/en/tools-for-using-services/account/service-management/project-settings/access-manage#deleting_member) them from projects in the VK Cloud personal account.
+Active Directory is not automatically synchronized with VK Cloud. After blocking a user in Active Directory, [remove](/en/tools-for-using-services/account/service-management/project-settings/access-manage#deleting_member) them from projects in the VK Cloud management console.
 
 </warn>

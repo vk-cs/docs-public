@@ -63,7 +63,7 @@ The scheme for preparation of networks looks like this:
 
 ## 1. Creating an advanced router
 
-1. In your personal account, go to **Virtual networks** → **Routers**.
+1. In your management console, go to **Virtual networks** → **Routers**.
 1. Click **Add router**.
 1. Select the **Advanced** router type. If there is no advanced type in your project, contact the [technical support](/en/contacts).
 1. Enter the name. In this case — `advanced-router`.
@@ -162,7 +162,7 @@ To configure the connection using the BGP protocol, you need to add dynamic rout
 
 To configure dynamic routes for `advanced-router`:
 
-1. In your personal account, go to **Virtual networks** → **Routers**.
+1. In your management console, go to **Virtual networks** → **Routers**.
 1. Click the added advanced router and go to the **Dynamic routing** tab.
 1. Click **Create a BGP router**.
 1. Fill in parameters:
@@ -192,7 +192,7 @@ Both announcements must have green markers.
 
 ## 5. Configure BGP neighbors for the client network router
 
-1. Connect to a router on your local network.  
+1. Connect to a router on your local network.
 1. Specify parameters for connecting via the BGP protocol:
 
    - The client network ASN: `65512`;
@@ -222,8 +222,8 @@ Both announcements must have green markers.
    Response example:
 
    ```bash
-      Flags: U - up, I - inactive 
-   0 U multihop=no vrf=main remote-address=172.20.2.215%ether1 local-address=172.20.2.204 state=up state-changes=1 uptime=3h27m12s desired-tx-interval=200ms actual-tx-interval=100ms 
+      Flags: U - up, I - inactive
+   0 U multihop=no vrf=main remote-address=172.20.2.215%ether1 local-address=172.20.2.204 state=up state-changes=1 uptime=3h27m12s desired-tx-interval=200ms actual-tx-interval=100ms
      required-min-rx=200ms remote-min-rx=10ms multiplier=5 hold-time=1s packets-rx=75343 packets-tx=72203
    ```
 
@@ -258,7 +258,7 @@ Both announcements must have green markers.
    Columns: DST-ADDRESS, GATEWAY, DISTANCE
        DST-ADDRESS    GATEWAY       DISTANCE
    DAb 172.17.0.0/24  172.20.2.215        20
-   D b 172.20.2.0/24  172.20.2.215        20   
+   D b 172.20.2.0/24  172.20.2.215        20
    ```
 
 </details>
@@ -267,7 +267,7 @@ Both announcements must have green markers.
 
 1. Configure a static route from the virtual network `vkcloud-net` to the client network `customer-net` via an advanced router:
 
-   1. In your personal account, go to **Virtual networks** → **Networks**..
+   1. In your management console, go to **Virtual networks** → **Networks**..
    1. Select the `vkcloud-net` network and open its subnets's settings.
    1. Select **Show static route field**.
    1. Enter the route: `10.0.0.0/24 - 172.17.0.100`.

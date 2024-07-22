@@ -4,11 +4,11 @@ To create a logical group:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console.
 1. Go to **Data Platform** → **Console**.
 1. Go to the **Groups** tab.
 1. Click **Add** or **Create group** button.

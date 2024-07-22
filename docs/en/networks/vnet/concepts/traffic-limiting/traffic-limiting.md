@@ -14,7 +14,7 @@ A firewall can be used to restrict traffic on virtual networks.
 
 The firewall handles traffic according to defined security groups. These groups contain rules for handling inbound and outbound traffic and operate according to the "anything not allowed is denied" principle. One or more security groups can be assigned:
 
-- In VK Cloud [personal account](https://msk.cloud.vk.com/app/en/) (only to OpenStack ports to which virtual machines are associated);
+- In VK Cloud [management console](https://msk.cloud.vk.com/app/en/) (only to OpenStack ports to which virtual machines are associated);
 - via the OpenStack CLI (to any OpenStack ports).
 
 You can either create your own security groups or use preconfigured groups that cannot be changed.

@@ -17,13 +17,13 @@ The refund is available regardless of how long ago the project account was reple
 
 ## Making a refund for individuals
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en/) under the account of the project owner.
+1. Go to your VK Cloud [management console](https://msk.cloud.vk.com/app/en/) under the account of the project owner.
 1. [Preserve](/en/tools-for-using-services/account/service-management/project-settings/manage#project_conservation) the project to stop debiting funds.
 1. Copy the [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) from the VK Cloud website URL.
 
    Example URL for the Moscow region: `https://msk.cloud.vk.com/app/en/mcs123456789/main`, where `mcs123456789` is the project ID (PID).
 
-1. In the header of the personal account page, open the menu **Help** and select **Contact support**.
+1. In the header of the management console page, open the menu **Help** and select **Contact support**.
 
    You can also go to the technical support portal by [direct link](https://support.mcs.mail.ru).
 
@@ -67,13 +67,13 @@ The refund request is processed within 48 hours. The time of receipt of funds de
 
 ## Making a refund for legal entities
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en/) under the account of the project owner.
+1. Go to your VK Cloud [management console](https://msk.cloud.vk.com/app/en/) under the account of the project owner.
 1. [Preserve](/en/tools-for-using-services/account/service-management/project-settings/manage#project_conservation) the project to stop debiting funds.
 1. Copy the [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) from the VK Cloud website URL.
 
    Example URL for the Moscow region: `https://msk.cloud.vk.com/app/en/mcs123456789/main`, where `mcs123456789` is the project ID (PID).
 
-1. In the email account associated with your VK Cloud personal account, create an email with the subject “VK Cloud: Возврат денежных средств”.
+1. In the email account associated with your VK Cloud management console, create an email with the subject “VK Cloud: Возврат денежных средств”.
 1. Specify in the email:
 
    - Region.

@@ -6,7 +6,7 @@ To clear a cache of a CDN resource:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -15,7 +15,7 @@ To clear a cache of a CDN resource:
 
 1. Clear the cache with one of the following ways:
 
-    - Click ![ ](/en/assets/more-icon.svg "inline") for the required resource and select **Clear 
+    - Click ![ ](/en/assets/more-icon.svg "inline") for the required resource and select **Clear
       CDN cache**.
     - Click the name of the personal domain you need and go to the **Content** tab.
 
@@ -77,7 +77,7 @@ To preload a cache of a CDN resource:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -124,7 +124,7 @@ To configure the HTTP response code:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -182,7 +182,7 @@ To enable GZip compression:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -235,7 +235,7 @@ To enable Brotli compression:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -291,7 +291,7 @@ To have a CDN resource request compressed content from an origin:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -352,7 +352,7 @@ To enable the optimization of large file delivery:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>

@@ -120,7 +120,7 @@ Here:
 ## 3. Create the necessary resources using Terraform
 
 1. Put the Terraform configuration files in one directory:
-  
+
    - `vkcs_provider.tf`;
    - `network.tf`;
    - `secgroup.tf`.
@@ -146,7 +146,7 @@ Here:
 
 Verify that the security rules and groups were successfully created:
 
-1. [Go to](https://cloud.vk.com/app/en) your VK Cloud personal account.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Virtual networks** → **Firewall settings**. Make sure the security group is created and includes all rules added in the example.
 
 ## Delete unused resources

@@ -1,14 +1,14 @@
-Access control operations are available only to the following [roles](/en/tools-for-using-services/account/concepts/rolesandpermissions) of personal account: owner, superadministrator and user Administrator (IAM). Viewing of project members is also available to the project administrator and viewer.
+Access control operations are available only to the following [roles](/en/tools-for-using-services/account/concepts/rolesandpermissions) of management console: owner, superadministrator and user Administrator (IAM). Viewing of project members is also available to the project administrator and viewer.
 
 ## Viewing project members
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user's name in the header of the page.
 1. From the drop-down list, select **Manage access**.
 
@@ -21,11 +21,11 @@ Login, assigned roles and status are displayed for each member (**Yes** — the 
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. On the access management page, go to the tab **Roles**.
 
@@ -42,8 +42,8 @@ Login, assigned roles and status are displayed for each member (**Yes** — the 
 
 For security reasons, you can make two-factor authentication (2FA) mandatory for project members:
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
 1. [Enable](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) 2FA for your account, if it is not already enabled.
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. On the access management page, enable the option **Mandatory two-factor authentication**.
 
@@ -57,11 +57,11 @@ If the user enters the project by invitation, he does not need to confirm the ph
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. On the access management page, click **Add member**.
 1. Enter the email address of the member and select from the list the role you want to assign to him.
@@ -97,11 +97,11 @@ Only the project owner can assign another role to the superadministrator.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required project member and select **Edit**.
 1. In the window that opens, specify the list of new roles in the field **User role**.
@@ -125,13 +125,13 @@ Only the project owner can delete the superadministrator.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
 This is a group operation: if necessary, you can delete several members at once by selecting them using the checkboxes.
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user's name in the header of the page, from the drop-down list, select **Manage access**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required project member and select **Delete**.
 1. Confirm the deletion.

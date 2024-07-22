@@ -8,11 +8,11 @@ To share a network with other projects:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. [Go to](https://cloud.vk.com/app/) you VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Cloud Networks** → **Networks**.
 1. Click ![more-icon](/ru/assets/more-icon.svg "inline") for the network and select ![sharing-icon](/ru/assets/sharing-icon.svg "inline") **Share network**.
@@ -36,11 +36,11 @@ Users of the specified projects will receive a notification of an invitation to 
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. [Go to](https://cloud.vk.com/app/) you VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Cloud Networks** → **Networks**.
 1. Click the name of the required network.
@@ -63,11 +63,11 @@ To disconnect a project from the shared network:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. [Go to](https://cloud.vk.com/app/) you VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Cloud Networks** → **Networks**.
 1. Click the name of the required network.
@@ -88,7 +88,7 @@ To delete a shared network:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 

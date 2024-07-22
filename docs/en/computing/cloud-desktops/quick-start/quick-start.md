@@ -18,11 +18,11 @@ After completing all the steps of the quick start, you will:
    - Account password
 
 1. (Optional) [Set up](/en/networks/vnet/how-to-guides/vpn-tunnel#2_set_up_a_vpn_tunnel_on_the_cloud_side) a VPN on the router that will be used for the service.
-1. Check that the Cloud Desktop service is connected to your [personal account](https://msk.cloud.vk.com/app/en): the **Cloud Desktop** section is available in the menu on the left.
+1. Check that the Cloud Desktop service is connected to your [management console](https://msk.cloud.vk.com/app/en): the **Cloud Desktop** section is available in the menu on the left.
 
 ## 2. Set up an external infrastructure
 
-1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the [project](/en/tools-for-using-services/account/concepts/projects) where the desktops will be placed.
 1. Go to **Cloud Desktop** → **Service settings**.
 1. On the **Network settings** tab, specify:

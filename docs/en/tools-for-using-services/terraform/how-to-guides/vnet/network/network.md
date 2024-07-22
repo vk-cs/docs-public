@@ -152,7 +152,7 @@ Here:
 ## 2. Create the necessary resources using Terraform
 
 1. Put the Terraform configuration files in one directory:
-  
+
    - `vkcs_provider.tf`;
    - `network.tf`.
 
@@ -177,7 +177,7 @@ Here:
 
 Verify that the net and infrastructure were successfully created:
 
-1. [Go to](https://cloud.vk.com/app/en) your VK Cloud personal account.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Go to **Virtual networks** → **Networks**. Make sure the net is created and has all subnets, routers and ports added in the example.
 
 ## Delete unused resources

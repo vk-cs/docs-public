@@ -7,11 +7,11 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where you want to create an instance of the service.
 1. Go to **Data Platform → Экземпляры сервисов**.
 1. Click the **Добавить инстанс** or **Создать экземпляр** button.
@@ -75,11 +75,11 @@ You can create an instance of Cloud Kafka in one of two configurations:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where you want to create an instance of the service.
 1. Go to **Data Platform → Экземпляры сервисов**.
 1. Click the **Создать инстанс** or **Создать экземпляр** button.

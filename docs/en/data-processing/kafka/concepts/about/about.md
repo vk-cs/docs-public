@@ -15,4 +15,4 @@ Cloud Kafka service automates processes:
 - efficient allocation of cluster resources;
 - scaling the resources of the service instance.
 
-The user can manage Cloud Kafka resources through the VK Cloud personal account, while the standard Apache Kafka tool is available — [Kafka UI](https://docs.kafka-ui.provectus.io/overview/readme).
+The user can manage Cloud Kafka resources through the VK Cloud management console, while the standard Apache Kafka tool is available — [Kafka UI](https://docs.kafka-ui.provectus.io/overview/readme).

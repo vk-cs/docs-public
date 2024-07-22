@@ -4,10 +4,10 @@
 1. Click the **Contact sales** button.
 1. Fill the fields in the form:
 
-    - if you have not previously been registered in your VK Cloud [personal account](https://msk.cloud.vk.com/app/):
+    - if you have not previously been registered in your VK Cloud [management console](https://msk.cloud.vk.com/app/):
 
         - **Name**: name or full name to contact about the request.
-        - **Email**: the contact email address to which the invitation will be sent and the partner's personal account will be linked.
+        - **Email**: the contact email address to which the invitation will be sent and the partner's management console will be linked.
         - **Phone number**: phone number for contact.
         - **Company**: name of your organization.
         - **Message**: message if necessary.
@@ -18,7 +18,7 @@ The manager of the partner department will contact you within 48 hours from the 
 
 <info>
 
-The partner's personal account will be available at the URL https://cloud.vk.com/partner/app/
+The partner's management console will be available at the URL https://cloud.vk.com/partner/app/
 
 </info>
 
@@ -28,9 +28,9 @@ If you have not been contacted within 48 hours, please contact the support servi
 
 </warn>
 
-## Managing clients in the partner's personal account
+## Managing clients in the partner's management console
 
-Client management in the partner's personal account is performed at URL [https://cloud.vk.com/partner/app/en/clients/](https://cloud.vk.com/partner/app/en/clients/).
+Client management in the partner's management console is performed at URL [https://cloud.vk.com/partner/app/en/clients/](https://cloud.vk.com/partner/app/en/clients/).
 
 The following operations are available:
 
@@ -75,7 +75,7 @@ When displaying the details, all deposits and withdrawals are calculated based o
 
 <warn>
 
-Blocking the client means that it is impossible to sign in to the VK Cloud personal account. Its virtual resources continue to work.
+Blocking the client means that it is impossible to sign in to the VK Cloud management console. Its virtual resources continue to work.
 
 </warn>
 

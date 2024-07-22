@@ -1,4 +1,4 @@
-To create a database, go to the [section of your personal account "Analytical databases"](https://msk.cloud.vk.com/app/services/analytic-databases/), select the license version "Arenadata DB" and click "Create database".
+To create a database, go to the [section of your management console "Analytical databases"](https://msk.cloud.vk.com/app/services/analytic-databases/), select the license version "Arenadata DB" and click "Create database".
 
 In the next step, select the required cluster type, ArenadataDB instance version, and instance configuration.
 

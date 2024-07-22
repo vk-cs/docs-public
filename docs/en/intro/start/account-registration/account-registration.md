@@ -1,6 +1,6 @@
 This guide will help you get started with VK Cloud:
 
-- create an account and sign in to your personal account;
+- create an account and sign in to your management console;
 - confirm your VK Cloud account;
 - configure the project that is created during registration;
 - connect to the project via the OpenStack CLI command line interface.
@@ -107,7 +107,7 @@ If you do not immediately confirm the account, when you try to perform an action
 
 1. (Optional) On the **Autopayment** tab that opens, configure the [autopayment](/en/intro/billing/service-management/add-card#configure_auto_completion) settings.
 1. Click **Get started with VK Cloud**.
-1. Wait for your personal account page to open. A message about successful services activation appears.
+1. Wait for your management console page to open. A message about successful services activation appears.
 
 A [project](/en/tools-for-using-services/account/concepts/projects) is automatically created for your account. After the services activation, sign-up [bonuses](/en/intro/billing/concepts/balance#bonuses) are credited to your [balance](/en/intro/billing/concepts/balance). These bonuses are credited only once after the registration of each new account. If no bonus points are credited within 3 working days, contact [technical support](/en/contacts).
 

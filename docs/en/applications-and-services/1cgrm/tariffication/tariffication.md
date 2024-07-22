@@ -6,7 +6,7 @@ For all software products of the 1C: GRM service, the general principle of cost 
 
 The table shows the proportional ratio of the cost of the components of the 1C: timing service.
 
-The calculation of the monthly cost of each component is made automatically in the personal account when the application is launched and depends on the type of application and the number of its users.
+The calculation of the monthly cost of each component is made automatically in the management console when the application is launched and depends on the type of application and the number of its users.
 
 The base cost of applications is determined as follows:
 
@@ -22,7 +22,7 @@ Payment is made on the basis of 30 calendar days in a month.
 
 For all 1C software products: Accounting, Salary and Human Resources Management and Management of our company, a demo period is available, within which the service is provided without restrictions for a period of 30 days.
 
-To get demo access to the application, just select it when creating. There is no withdrawal of funds during the demo access, and this service is not displayed in the "Balance" section of the VK Cloud personal account.
+To get demo access to the application, just select it when creating. There is no withdrawal of funds during the demo access, and this service is not displayed in the "Balance" section of the VK Cloud management console.
 
 <warn>
 
@@ -38,4 +38,4 @@ If you need to deposit funds and make a prepayment for the service, send an emai
 
 At the end of the billing period, the project owner will be sent closing documents, reflecting the period and volume of use of services.
 
-All services provided within the 1C: GRM are not displayed in the general section [Balance](https://msk.cloud.vk.com/app/services/billing) your VK Cloud personal account.
+All services provided within the 1C: GRM are not displayed in the general section [Balance](https://msk.cloud.vk.com/app/services/billing) your VK Cloud management console.

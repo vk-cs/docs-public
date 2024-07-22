@@ -81,7 +81,7 @@ The instruction is written using the example of Python 3.10.11 and Microsoft C++
 
 ## 3. Complete authentication
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Go to your VK Cloud [management console](https://msk.cloud.vk.com/app/en).
 1. Make sure that [two-factor authentication](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) and [API access](/en/tools-for-using-services/api/rest-api/enable-api) are enabled.
 3. Select a project.
 4. On the **Project settings** page, [go to](https://msk.cloud.vk.com/app/project/keys/) the **API access** tab.
