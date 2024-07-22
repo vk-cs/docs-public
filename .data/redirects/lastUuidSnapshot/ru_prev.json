@@ -916,6 +916,7 @@
   "881ae303-17ab-436c-b3f3-0319b85e791f": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
   "9336a564-a734-4519-ad39-081dfb11589f": "/ru/tools-for-using-services/terraform/how-to-guides/vnet",
   "cf7dd56a-dbd6-49ce-bf8e-80a95b564c05": "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
+  "52aa965d-86fe-40c0-bf32-5dd47d130e3d": "/ru/tools-for-using-services/terraform/how-to-guides/vnet/secgroups",
   "24531a5f-a42b-4f14-a6d7-ebd154e71d02": "/ru/tools-for-using-services/terraform/how-to-guides/vnet/vpn",
   "4df43315-0375-4f0b-88dc-7e13820c5b39": "/ru/tools-for-using-services/terraform/how-to-guides/vnet/lb",
   "5779baaf-cb84-4cfb-b8ad-38a88d09f6b6": "/ru/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing",
