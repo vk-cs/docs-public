@@ -2,9 +2,9 @@ A Keystone token is required to work with some components and resources of the V
 
 ## Preparatory steps
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en/main).
+1. Go to your VK Cloud [management console](https://msk.cloud.vk.com/app/en/main).
 1. Make sure that [two-factor authentication](/en/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa) and [API access](/en/tools-for-using-services/api/rest-api/enable-api) are enabled.
-1. At the top of your personal account page, select the project for which you need a token.
+1. At the top of your management console page, select the project for which you need a token.
 
 ## Token generation
 
@@ -18,13 +18,13 @@ Get a token:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 <tab>cURL</tab>
 </tablist>
 <tabpanel>
 
-1. On the [Project settings](https://msk.cloud.vk.com/app/en/project/keys/) page of the personal account, open the **API access** tab.
+1. On the [Project settings](https://msk.cloud.vk.com/app/en/project/keys/) page of the management console, open the **API access** tab.
 
     A new token is generated automatically when you open the page. If the page remains open, the token is automatically regenerated once in an hour.
 
@@ -145,7 +145,7 @@ x-subject-token: gAAAAABkirQja1Lgr9psuyf6fC6e3Sy5WMYubpmwMNPXuT6APQkf-BPRRAySTBG
 
 Task: to get a list of networks via the REST API (Neutron service).
 
-1. In your personal account, [find](https://msk.cloud.vk.com/app/en/mainproject/endpoints) the endpoint for the Neutron service. In this example: `https://infra.mail.ru:9696`.
+1. In your management console, [find](https://msk.cloud.vk.com/app/en/mainproject/endpoints) the endpoint for the Neutron service. In this example: `https://infra.mail.ru:9696`.
 1. Get the token and copy its value.
 1. Execute the command using the cURL utility:
 

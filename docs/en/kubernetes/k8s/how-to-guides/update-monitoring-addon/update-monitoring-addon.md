@@ -26,7 +26,7 @@ If there are other Kubernetes resources in the namespace, modify the commands an
 
 1. [Verify](../../connect/kubectl) that you can connect to the cluster via `kubectl`.
 
-   To connect, use the cluster configuration file (kubeconfig) downloaded from the VK Cloud personal account.
+   To connect, use the cluster configuration file (kubeconfig) downloaded from the VK Cloud management console.
 
 1. Make sure the add-on is available and working. To do this, [access the Grafana web interface](../../monitoring#using_grafana).
 

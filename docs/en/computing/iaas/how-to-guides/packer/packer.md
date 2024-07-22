@@ -175,12 +175,12 @@ Import the image according to [instructions](../../service-management/images/ima
 
     <tabs>
     <tablist>
-    <tab>Personal account</tab>
+    <tab>Management console</tab>
     <tab>OpenStack CLI</tab>
     </tablist>
     <tabpanel>
 
-    1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+    1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
     1. Go to **Cloud computing → Images**.
     1. Find the image in the list and click on it. The image page opens.
 

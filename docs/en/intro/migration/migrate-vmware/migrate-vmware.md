@@ -90,7 +90,7 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
 
    ```bash
    qemu-img convert -f vmdk -O raw <file_path.vmdk> <file_path.raw>
-   ```  
+   ```
 
 3. Upload the resulting export file `.raw` to an existing VK Cloud project.
 
@@ -124,7 +124,7 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
    --property hw_qemu_guest_agent=yes --property os_require_quiesce=yes
    ```
 
-4. Check the image download in [personal account](https://msk.cloud.vk.com/app/en/) VK Cloud in section **Cloud Computing → Images** or via CLI:
+4. Check the image download in [management console](https://msk.cloud.vk.com/app/en/) VK Cloud in section **Cloud Computing → Images** or via CLI:
 
    ```bash
    openstack image list
@@ -144,7 +144,7 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
 
 Use the imported image to [create a Linux VM](/en/computing/iaas/service-management/vm/vm-create#create_a_vm):
 
-- when creating a VM in your personal account, select an image from the list;
+- when creating a VM in your management console, select an image from the list;
 - when creating via the OpenStack CLI, specify the image ID in the appropriate command.
 
 </tabpanel>

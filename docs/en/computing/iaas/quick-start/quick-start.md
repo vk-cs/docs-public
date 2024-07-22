@@ -1,4 +1,4 @@
-Using Cloud Servers, a Linux virtual machine (VM) will be created in the VK Cloud personal account and connected to it.
+Using Cloud Servers, a Linux virtual machine (VM) will be created in the VK Cloud management console and connected to it.
 
 A quick start will help you get started with the service and get acquainted with its capabilities.
 
@@ -24,7 +24,7 @@ The account balance should be positive, and [quotas](../../../tools-for-using-se
 
 ## 2. Create a VM
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. Go to [management console](https://msk.cloud.vk.com/app/en) VK Cloud.
 2. Go to **Cloud Computing → Virtual machines**.
 3. Click the  **Create instance** or **Add** button.
 4. In the field **Operating system** choose `Ubuntu 22.04`.
@@ -74,7 +74,7 @@ For example:
 ssh -i ubuntu-key.pem ubuntu@213.219.212.130
 ```
 
-The external IP address of the VM can be viewed in VK Cloud [personal account](https://msk.cloud.vk.com/app/) to **Cloud Computing → Virtual machines**.
+The external IP address of the VM can be viewed in VK Cloud [management console](https://msk.cloud.vk.com/app/) to **Cloud Computing → Virtual machines**.
 
 The first time you connect to the VM, you will be asked to confirm the connection to a previously unknown host:
 
@@ -101,7 +101,7 @@ For example:
 ssh -i ubuntu-key.pem ubuntu@213.219.212.130
 ```
 
-The external IP address of the VM can be viewed in VK Cloud [personal account](https://msk.cloud.vk.com/app/) to **Cloud Computing → Virtual machines**.
+The external IP address of the VM can be viewed in VK Cloud [management console](https://msk.cloud.vk.com/app/) to **Cloud Computing → Virtual machines**.
 
 The first time you connect to the VM, you will be asked to confirm the connection to a previously unknown host:
 
@@ -136,7 +136,7 @@ In Windows 7/8, use the PuTTY application to connect via SSH.
 
    <info>
 
-   The external IP address of the VM can be viewed in VK Cloud [personal account](https://msk.cloud.vk.com/app/) to **Cloud Computing → Virtual machines**.
+   The external IP address of the VM can be viewed in VK Cloud [management console](https://msk.cloud.vk.com/app/) to **Cloud Computing → Virtual machines**.
 
    </info>
 

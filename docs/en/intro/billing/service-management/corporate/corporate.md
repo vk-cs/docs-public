@@ -34,15 +34,15 @@ After [registration](/en/intro/start/account-registration) in VK Cloud, you can 
 
 <info>
 
-Filling in the details in the personal account is only available in [region](/en/tools-for-using-services/account/concepts/regions) Moscow and only Russian legal entities.
+Filling in the details in the management console is only available in [region](/en/tools-for-using-services/account/concepts/regions) Moscow and only Russian legal entities.
 
 </info>
 
-If the organization works with VK Cloud on [prepayment](../../concepts/physical-corporate#predoplata), after additional registration, you will be able to [upload](../bill-generation/) from your personal account accounts that specify the details of both the supplier and the buyer of services. If the additional registration is not completed, only the details of the supplier are indicated in the invoice.
+If the organization works with VK Cloud on [prepayment](../../concepts/physical-corporate#predoplata), after additional registration, you will be able to [upload](../bill-generation/) from your management console accounts that specify the details of both the supplier and the buyer of services. If the additional registration is not completed, only the details of the supplier are indicated in the invoice.
 
 To complete additional registration:
 
-1. In your VK Cloud personal account, go to [project settings](https://msk.cloud.vk.com/app/en/project/legal/) to the **General information** tab.
+1. In your VK Cloud management console, go to [project settings](https://msk.cloud.vk.com/app/en/project/legal/) to the **General information** tab.
 1. Click the **Fill** button.
 1. In the **Pre-registration** window, enter the TIN of the organization in the field of the same name.
 

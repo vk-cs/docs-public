@@ -1,1 +1,1 @@
-Scenarios for using the VK Cloud Personal account service.
+Scenarios for using the VK Cloud management console service.

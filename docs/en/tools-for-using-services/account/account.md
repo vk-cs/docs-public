@@ -1,1 +1,1 @@
-The personal account contains VK Cloud user infrastructure management tools.
+The management console contains VK Cloud user infrastructure management tools.

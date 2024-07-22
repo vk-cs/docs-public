@@ -1,1 +1,1 @@
-Working with VK Cloud personal account.
+Working with VK Cloud management console.

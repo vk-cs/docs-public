@@ -1,5 +1,5 @@
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud Management Console.
-1. In the header of your personal account, click on the name of the project.
+1. In the header of your management console, click on the name of the project.
 
     A list of projects in which you are a member will open.
 

@@ -2,7 +2,7 @@
 
 <details>
 
-<summary>How do I get bonuses for registering in my personal account?</summary>
+<summary>How do I get bonuses for registering in my management console?</summary>
 
 [Bonuses](../concepts/balance#bonuses) are credited when registering a new account. Bonuses are credited after the activation of services in the project, when all the stages of [account confirmation](/en/intro/start/account-registration#2_confirm_your_account) have been completed.
 
@@ -20,7 +20,7 @@ If an existing user creates a new project or a new user enters the project by in
 
 [Bonuses](../concepts/balance#bonuses) in VK Cloud are spent on using cloud services and resources. One bonus is equal to one ruble.
 
-Bonuses are given for 60 days, after that they burn off. You can see the details of your expenses on the **Balance** page in your personal account.
+Bonuses are given for 60 days, after that they burn off. You can see the details of your expenses on the **Balance** page in your management console.
 
 <warn>
 
@@ -55,7 +55,7 @@ VK Cloud records the consumption of resources in the cloud on a minute-by-minute
 - If your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) in the project is the owner, superadministrator or billing administrator.
 - After the services are activated in the project. To understand if the services are activated:
 
-  1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud personal account.
+  1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
   1. Go to the section of any service. If the **Enable services** button is displayed, [activate](/en/tools-for-using-services/account/service-management/activation) them by pressing this button.
 
     During activation, you may need to confirm the phone number and link the payment card.
@@ -66,7 +66,7 @@ VK Cloud records the consumption of resources in the cloud on a minute-by-minute
 
 <summary>What is the risk of a negative balance?</summary>
 
-Negative balance is a negative value of personal account balance for clients on prepaid payment system.
+Negative balance is a negative value of management console balance for clients on prepaid payment system.
 
 No penalties are charged on negative balance. To use the services and resources of the project it is necessary to have a positive balance.
 
@@ -108,7 +108,7 @@ If you do not know your payment scheme, contact the document management departme
 
 <summary>How to pay for the work of a service from a legal entity?</summary>
 
-If you work with VK Cloud on prepayment, [form an invoice](../service-management/bill-generation/) and pay it in your personal account.
+If you work with VK Cloud on prepayment, [form an invoice](../service-management/bill-generation/) and pay it in your management console.
 
 When working on the post-payment scheme, the invoice and [accounting documents](../concepts/report#legal_entities) for the reporting period are sent via the electronic document management system (EDM) within five working days of the month following the reporting one.
 
@@ -131,7 +131,7 @@ Post-payment is available:
 - Only for legal entities.
 - Only within the framework of an individual contract with VK Cloud.
 
-To activate the postpayment scheme, [conclude an individual contract](../service-management/corporate/) and perform additional project configuration for legal entities in the VK Cloud personal account.
+To activate the postpayment scheme, [conclude an individual contract](../service-management/corporate/) and perform additional project configuration for legal entities in the VK Cloud management console.
 
 </details>
 
@@ -246,7 +246,7 @@ When working on prepayment with a negative balance, the project is automatically
 
 To restore the services:
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. [Replenish](../service-management/payment#making_a_payment) the balance of the main account of the project [in a convenient way](../concepts/payment-methods/). Use physical bank cards to get the funds to the balance faster. Funds are credited from them immediately, but if you pay by bank transfer, the process can take up to 3 working days.
 1. Wait for the activation of services in the project. It can take up to 2 hours.
 1. Manually activate project resources:
@@ -362,7 +362,7 @@ Each region has its own peculiarities of work for non-residents of the Russian F
 <tabpanel>
 
 1. Complete the [additional registration](../service-management/corporate#additional_registration_of_legal_entities) of the legal entity, if it has not already been done.
-1. [Create an invoice](../service-management/bill-generation) for the required amount in your personal account.
+1. [Create an invoice](../service-management/bill-generation) for the required amount in your management console.
 1. Pay the bill by bank transfer.
 
 </tabpanel>
@@ -435,7 +435,7 @@ The manager will contact you to clarify the required terms of the contract.
 
 If your project is in [region](/en/tools-for-using-services/account/concepts/regions) Moscow, and you are working with “VK” LLC, its main details are available at https://cloud.vk.com/contacts.
 
-You can also [generate an invoice](../service-management/bill-generation) in your personal account and view the contents of the **Supplier** field.
+You can also [generate an invoice](../service-management/bill-generation) in your management console and view the contents of the **Supplier** field.
 
 </tabpanel>
 <tabpanel>
@@ -500,7 +500,7 @@ VK Cloud can duplicate reporting documents in the form of scanned copies in PDF 
 
 <summary>I have unloaded the invoice, it does not contain my details. How do I add them?</summary>
 
-To make the data of your organization appear in the **Payer** field in the invoices, that you [generate in your personal account](../service-management/bill-generation), perform the the [additional registration](../service-management/corporate#additional_registration_of_legal_entities) of your legal entity.
+To make the data of your organization appear in the **Payer** field in the invoices, that you [generate in your management console](../service-management/bill-generation), perform the the [additional registration](../service-management/corporate#additional_registration_of_legal_entities) of your legal entity.
 
 Additional registration is only available in [region](/en/tools-for-using-services/account/concepts/regions) Moscow and only for Russian resident companies.
 
@@ -524,7 +524,7 @@ To register a project to another organization:
    - Full name and details of the organization to which the project was registered.
    - Full name and details of the organization to which the project needs to be reissued.
 
-1. For legal entities-residents of the Russian Federation in the Moscow region: [specify](/en/intro/billing/service-management/corporate#additional_registration_of_legal_entities) new details in your personal account.
+1. For legal entities-residents of the Russian Federation in the Moscow region: [specify](/en/intro/billing/service-management/corporate#additional_registration_of_legal_entities) new details in your management console.
 
 </details>
 

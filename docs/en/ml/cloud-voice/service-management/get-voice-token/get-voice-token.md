@@ -75,7 +75,7 @@ The received refresh_tokens need to be saved so that they can be used in the fut
 
 </warn>
 
-2. **Service Token** is a less preferred scenario. The token is issued once and can work without time limit. The only risk of using such a token is that when the token is selected or compromised, an attacker may be able to use the service in very large volumes, which will entail unexpected expenses. When the funds on the personal account are exhausted, the service will be suspended.
+2. **Service Token** is a less preferred scenario. The token is issued once and can work without time limit. The only risk of using such a token is that when the token is selected or compromised, an attacker may be able to use the service in very large volumes, which will entail unexpected expenses. When the funds on the management console are exhausted, the service will be suspended.
 
 To get a service token, click Machine Learning → Voice API → Add Service Token.
 

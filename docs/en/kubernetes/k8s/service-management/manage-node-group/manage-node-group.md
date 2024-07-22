@@ -8,12 +8,12 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>Terraform</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Add node group**.
@@ -98,16 +98,16 @@ Re-configuring taints can cause pods to be evicted to other nodes. If they do no
 
 </warn>
 
-Labels and taints can be set both with the interfaces supported by the VK Cloud platform (personal account and Terraform) and with `kubectl`. When assigning labels and taints, keep in mind that labels and taints set via the platform interfaces are periodically synchronized with the Kubernetes cluster (in one direction only). During synchronization, labels and taints set with the platform will overwrite labels and taints that were set with `kubectl` if their keys match. Other labels and taints that were set with `kubectl` and were not overwritten by values from the platform are valid in the cluster, but are not displayed, e.g. in the Terraform state or personal account.
+Labels and taints can be set both with the interfaces supported by the VK Cloud platform (management console and Terraform) and with `kubectl`. When assigning labels and taints, keep in mind that labels and taints set via the platform interfaces are periodically synchronized with the Kubernetes cluster (in one direction only). During synchronization, labels and taints set with the platform will overwrite labels and taints that were set with `kubectl` if their keys match. Other labels and taints that were set with `kubectl` and were not overwritten by values from the platform are valid in the cluster, but are not displayed, e.g. in the Terraform state or management console.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>Terraform</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.
@@ -153,7 +153,7 @@ Labels and taints can be set both with the interfaces supported by the VK Cloud 
      }
 
      # Taints
-     
+
      # Existing taint
      taints {
         key = "taint_key_1"
@@ -207,12 +207,12 @@ To increase update speed, the container service updates multiple nodes in a grou
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>Terraform</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.
@@ -268,16 +268,16 @@ More details about the update procedure in [Cluster version update](../../concep
 
 This operation can only be performed when the cluster is running.
 
-The single cluster node group cannot be deleted from the personal account. However, you can do it with Terraform.
+The single cluster node group cannot be deleted from the management console. However, you can do it with Terraform.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>Terraform</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Locate the necessary cluster and node group.

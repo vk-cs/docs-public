@@ -11,7 +11,7 @@ Marketplace is a VK Cloud subsystem that provides customers with access to third
 
 <summary>What services and applications are available for connection?</summary>
 
-You can view the current list of services and applications in the VK Cloud personal account in the section [App Store](https://msk.cloud.vk.com/app/services/marketplace).
+You can view the current list of services and applications in the VK Cloud management console in the section [App Store](https://msk.cloud.vk.com/app/services/marketplace).
 
 </details>
 

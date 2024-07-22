@@ -34,7 +34,7 @@ To create a load balancer, you need the following objects:
 - Data sources:
 
   - `vkcs_images_image`: an installation image for the instance to be created.
-  - `vkcs_compute_flavor`: a flavor (CPU, RAM, Disk) of the VM. You can see it in the VM creation wizard in your VK Cloud personal account.
+  - `vkcs_compute_flavor`: a flavor (CPU, RAM, Disk) of the VM. You can see it in the VM creation wizard in your VK Cloud management console.
 
 - Resources:
 
@@ -59,7 +59,7 @@ To create a load balancer, you need the following objects:
 
     - `name`: the human readable name for the load balancer. Doesn't have to be unique.
     - `vip_subnet_id`: the subnet where the load balancer address will be allocated. You can only create load balancers on networks that are allowed by the policy (for example, networks that are owned by you or networks that are public). Changing this argument creates a new load balancer.
-    - `availability_zone`: [availability_zone](/en/intro/start/concepts/architecture#availability_zones_567cfd7a), where the balancer will be placed. To optimize and speed up the balancer connection to VMs, place them in the same zone. You can get the list of availability zones in your VK Cloud personal account or via [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli#examples_of_openstack_cli_commands).
+    - `availability_zone`: [availability_zone](/en/intro/start/concepts/architecture#availability_zones_567cfd7a), where the balancer will be placed. To optimize and speed up the balancer connection to VMs, place them in the same zone. You can get the list of availability zones in your VK Cloud management console or via [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli#examples_of_openstack_cli_commands).
     - `tags`: the list of simple strings assigned to the load balancer.
 
   - `vkcs_lb_listener`: manages the listener resource in VK Cloud. The following arguments are supported:

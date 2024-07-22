@@ -85,7 +85,7 @@ If you make your bucket public (not recommended), any unauthenticated user can u
 
 ## Project ID
 
-Project ID (mcs_pid) - a unique parameter that characterizes a project on the VK Cloud platform. You can get it in your personal account in the account information area.
+Project ID (mcs_pid) - a unique parameter that characterizes a project on the VK Cloud platform. You can get it in your management console in the account information area.
 
 The button located next to the project ID allows you to copy the parameter for convenience.
 

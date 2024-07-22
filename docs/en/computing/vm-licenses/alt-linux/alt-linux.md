@@ -1,6 +1,6 @@
 VK Cloud supports the installation of virtual machines with image support from the company [Alt Linux](https://www.basealt.ru/alt-server).
 
-The available editions of the operating system are displayed in the drop-down list **Operating system** when creating a VM through VK Cloud [personal account](https://msk.cloud.vk.com/app/services/infra/servers/add).
+The available editions of the operating system are displayed in the drop-down list **Operating system** when creating a VM through VK Cloud [management console](https://msk.cloud.vk.com/app/services/infra/servers/add).
 
 ALT Server is a server image based on the Linux kernel with a wide functionality that allows you to support corporate infrastructure, as well as various additional equipment.
 
@@ -58,4 +58,4 @@ The price for a month of using the software can be found out:
 - in the [price list](https://cloud.vk.com/pricelist);
 - when creating a virtual machine;
 - in [project settings](https://msk.cloud.vk.com/app/en/project/) on the tab **Prices**.
-- in the section **Balance** [personal account](https://msk.cloud.vk.com/app/en/services/billing).
+- in the section **Balance** [management console](https://msk.cloud.vk.com/app/en/services/billing).

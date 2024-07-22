@@ -14,7 +14,7 @@ ExternalDNS integrates with the [VK Cloud DNS service](/en/networks/dns/publicdn
 
 1. [Make sure](../../connect/kubectl) that you can connect to the cluster using `kubectl`.
 
-   To connect, use the cluster configuration file (kubeconfig) downloaded from your VK Cloud personal account.
+   To connect, use the cluster configuration file (kubeconfig) downloaded from your VK Cloud management console.
 
 1. [Install](../../install-tools/helm) Helm version 3.0.0 or higher if the utility is not already installed.
 
@@ -71,7 +71,7 @@ Prepare the user and get all the necessary credentials:
 
 1. Get the credentials you need to access the VK Cloud API:
 
-   1. [Go](https://msk.cloud.vk.com/app/en) to your VK Cloud personal account using the credentials of the user assigned to ExternalDNS.
+   1. [Go](https://msk.cloud.vk.com/app/en) to your VK Cloud management console using the credentials of the user assigned to ExternalDNS.
    1. Click the username in the page header and select **Project Settings**.
    1. Go to the **API access** tab and note the values of the following parameters:
 

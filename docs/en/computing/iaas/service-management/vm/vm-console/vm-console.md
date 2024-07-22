@@ -20,17 +20,17 @@ Features of working with the VNC console:
 - you can only use the Latin alphabet to enter text;
 - the clipboard in the VNC console is not available, you cannot copy and paste the text.
 
-Open the console in the VK Cloud personal account or use the address obtained through the OpenStack CLI.
+Open the console in the VK Cloud management console or use the address obtained through the OpenStack CLI.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console></tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Go to **Cloud Computing → Virtual machines**.
 3. In the list of virtual machines, click on the name of the VM you need.
 4. On the VM page, go to the tab **Console**.
@@ -76,7 +76,7 @@ Use the VNC console on the tab or click **Open in new window**.
 </tabpanel>
 </tabs>
 
-VNC console control buttons are available in the personal account interface and in a separate window:
+VNC console control buttons are available in the VK Cloud management console interface and in a separate window:
 
 - **Send CtrAltDel** — the action of the button depends on the VM's operating system (reboot, opening the lock window, etc.).
 - **Update Session** — use it to reconnect to the VNC console.

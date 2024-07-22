@@ -4,12 +4,12 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Load balancers**.
 
@@ -74,12 +74,12 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Load balancers**.
 1. Click **Add balancer** or **Add**.
@@ -96,8 +96,8 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
      </warn>
 
-   - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#availability_zones_567cfd7a) from the list. To optimize and speed up the 
-     balancer connection to VMs, place them in the same zone. 
+   - **Availability zone**: select the [availability zone](/en/intro/start/concepts/architecture#availability_zones_567cfd7a) from the list. To optimize and speed up the
+     balancer connection to VMs, place them in the same zone.
    - **DNS-name**: (Optional) DNS name for the balancer.
    - **Assign external IP**: if this option is selected, the balancer will be assigned a public IP address through which it will be accessible from the Internet. Otherwise the balancer will act as an internal load balancer. Such IP address can be [assigned later](#managing_public_ip_addresses).
 
@@ -131,7 +131,7 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
    openstack loadbalancer create --name <load-balancer-name> --vip-subnet-id <subnet-ID> --availability-zone <availability-zone>
    ```
 
-1. (Optional) [Assign the balancer an external IP address](#managing_public_ip_addresses). Through this address, it 
+1. (Optional) [Assign the balancer an external IP address](#managing_public_ip_addresses). Through this address, it
    will be accessible from the Internet. Otherwise the load balancer will act as an internal load balancer.
 
    The address must be assigned if you plan to place services behind the load balancer which must be accessible from the Internet. You can assign an address only if the network for the selected subnet earlier is behind a router that has access to the Internet.
@@ -143,12 +143,12 @@ You can manage load balancers: view, edit and delete them, add and modify balanc
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Load balancers**.
 1. Perform one of the actions for the load balancer you want to edit:
@@ -210,12 +210,12 @@ If the balancer network is connected to a router with Internet access, you can a
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Load balancers**.
 1. Do one of the following:
@@ -249,12 +249,12 @@ If the balancer network is connected to a router with Internet access, and a pub
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual Networks** → **Load balancers**.
 1. Do one of the following:
@@ -285,7 +285,7 @@ If the balancer network is connected to a router with Internet access, and a pub
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
@@ -569,7 +569,7 @@ openstack loadbalancer <command> --help
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
@@ -578,7 +578,7 @@ This is a group operation: if necessary, you can remove multiple load balancers 
 
 To remove a load balancer:
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary load balancer is located.
 1. Go to **Virtual networks** → **Load balancers**.
 1. Perform one of the actions for the necessary load balancer:

@@ -10,7 +10,7 @@ Before performing any operation on a cluster from Terraform, read the informatio
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -18,7 +18,7 @@ This is a group operation: if necessary, you can start several stopped clusters 
 
 To start a cluster:
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Use the checkbox to select the necessary cluster.
@@ -32,7 +32,7 @@ To start a cluster:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -40,7 +40,7 @@ This is a group operation: if necessary, you can stop several started clusters a
 
 To stop a cluster:
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Use the checkbox to select the necessary cluster.
@@ -56,12 +56,12 @@ Different information is available for running and stopped clusters. Terraform a
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>Terraform</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Click on the name of the necessary cluster. A page with information will open.
@@ -107,11 +107,11 @@ After performing this operation, the existing public keys on the cluster will be
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required cluster and select **Invalidate**.
@@ -133,7 +133,7 @@ The operation can be performed only when the cluster is running.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -141,7 +141,7 @@ This is a group operation: if necessary, you can delete multiple clusters at onc
 
 To delete a cluster:
 
-1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the necessary cluster is located.
 1. Go to **Containers** → **Kubernetes Clusters**.
 1. Perform one of the actions for the required cluster:

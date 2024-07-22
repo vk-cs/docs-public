@@ -2,11 +2,11 @@
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to the **CDN → Source groups** section.
 
@@ -19,11 +19,11 @@ A list of origin groups will be displayed.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to the **CDN → Source groups** section.
 1. Click ![ ](/en/assets/plus-icon.svg "inline") **Create source group**.
@@ -49,11 +49,11 @@ A list of origin groups will be displayed.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to the **CDN → Source groups** section.
 1. Open the group editing page by one of the following ways:
@@ -72,11 +72,11 @@ A list of origin groups will be displayed.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to the **CDN → Source groups** section.
 1. Open the group editing page by one of the following ways:
@@ -111,11 +111,11 @@ A list of origin groups will be displayed.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to the **CDN → Source groups** section.
 1. Open the group editing page by one of the following ways:
@@ -151,13 +151,13 @@ You cannot delete the origin group if CDN servers use it. To delete such group, 
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
 This is a group operation: you can delete several groups at once by setting the checkboxes.
 
-1. [Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud personal account.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to the **CDN → Source groups** section.
 1. Delete the orgin group with one of the following ways:

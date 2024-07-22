@@ -15,7 +15,7 @@ The file can have any name. It is recommended to name it `provider.tf` to highli
 
 The file must be present in all Terraform working directories.
 
-The file is available for [download](../../quick-start#preparatory_steps) in your personal account, on the [Project settings](https://msk.cloud.vk.com/app/en/project/terraform) page, on the **Terraform** tab. The downloaded file has the name `vkcs_provider.tf` and contains the settings of one provider (`vkcs`). After downloading the file, edit it — specify your account password in the `password` argument.
+The file is available for [download](../../quick-start#preparatory_steps) in your management console, on the [Project settings](https://msk.cloud.vk.com/app/en/project/terraform) page, on the **Terraform** tab. The downloaded file has the name `vkcs_provider.tf` and contains the settings of one provider (`vkcs`). After downloading the file, edit it — specify your account password in the `password` argument.
 
 An example of the file contents:
 
@@ -52,7 +52,7 @@ The file consists of the following sections:
 - `provider "vkcs" {}` — settings for user authentication in the project:
 
   - `password`: specify your account password;
-  - `username`, `project_id`, `region`: the values in the file that is downloaded from the personal account are valid for working with the current project. These values can also be obtained in your personal account, on the [Project settings](https://msk.cloud.vk.com/app/en/project/terraform) page, on the **Terraform** tab.
+  - `username`, `project_id`, `region`: the values in the file that is downloaded from the management console are valid for working with the current project. These values can also be obtained in your management console, on the [Project settings](https://msk.cloud.vk.com/app/en/project/terraform) page, on the **Terraform** tab.
 
   The values of some arguments depend on the [region](/ru/tools-for-using-services/account/concepts/regions):
 
@@ -101,7 +101,7 @@ First, the resource set by the meta-argument is created, then the resource for w
 
 The file is required for Terraform startup, it contains the address of the VK Cloud Terraform mirror. The file must be named `terraform.rc` for Windows and `.terraformrc` for other OS. The file content is the same for all projects and regions.
 
-The file is available for [download](../../quick-start#preparatory_steps) on the [Project settings](https://msk.cloud.vk.com/app/en/project/terraform) page in your personal account, on the **Terraform** tab. After downloading, the file can be used as is.
+The file is available for [download](../../quick-start#preparatory_steps) on the [Project settings](https://msk.cloud.vk.com/app/en/project/terraform) page in your management console, on the **Terraform** tab. After downloading, the file can be used as is.
 
 The file must be located:
 

@@ -90,7 +90,7 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
    openstack image create --private --container-format bare --disk-format raw --file <file_path.raw> --property hw_qemu_guest_agent=yes --property store=s3 --property os_require_quiesce=yes <image name>
    ```
 
-4. Check the image download in [personal account](https://msk.cloud.vk.com/app/en/) VK Cloud in section **Cloud Computing → Images** or via CLI:
+4. Check the image download in [management console](https://msk.cloud.vk.com/app/en/) VK Cloud in section **Cloud Computing → Images** or via CLI:
 
    ```bash
    openstack image list

@@ -1,6 +1,6 @@
 ## Setting up a role model
 
-To work with public DNS, configure [roles](/en/tools-for-using-services/account/concepts/rolesandpermissions) for users of [personal account](https://msk.cloud.vk.com/app/en/) VK Cloud:
+To work with public DNS, configure [roles](/en/tools-for-using-services/account/concepts/rolesandpermissions) for users of [management console](https://msk.cloud.vk.com/app/en/) VK Cloud:
 
 - Role for viewing DNS zones and resource records:
 
@@ -21,12 +21,12 @@ To work with public DNS, configure [roles](/en/tools-for-using-services/account/
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 
@@ -44,12 +44,12 @@ DNS zone is a logical association of domain names of your resources, containing 
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click the button **Add zone**.
@@ -90,12 +90,12 @@ For most providers, it is possible to delegate zone management independently. If
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required zone and select **Edit**.
@@ -138,14 +138,14 @@ After creating NS records, you can create a zone for a delegated subdomain.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
 
 This is a group operation: if necessary, you can delete several zones at once by selecting them using the checkboxes.
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required zone and select **Delete**.
@@ -177,12 +177,12 @@ To add a resource record:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click on the name of the zone for which you want to add a resource record.
@@ -301,12 +301,12 @@ Use the methods from the specification in [API documentation](/ru/tools-for-usin
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click on the name of the zone for which you want to change the resource record.
@@ -325,14 +325,14 @@ Use the methods from the specification in [API documentation](/ru/tools-for-usin
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
 
 This is a group operation: if necessary, you can delete several records at once by selecting them using the checkboxes.
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **DNS** → **DNS zones**.
 1. Click on the name of the zone for which you want to delete the resource record.

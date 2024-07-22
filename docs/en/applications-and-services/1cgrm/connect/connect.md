@@ -66,7 +66,7 @@ The application creation process can take up to 15 minutes. At this time, a virt
 
 ## Editing an application
 
-Managing installed applications is available in the [section of your personal account](https://msk.cloud.vk.com/app/services/grm/apps/) in the context menu of each application.
+Managing installed applications is available in the [section of your management console](https://msk.cloud.vk.com/app/services/grm/apps/) in the context menu of each application.
 
 ![](./assets/1598881691615-1598881691615.png)
 

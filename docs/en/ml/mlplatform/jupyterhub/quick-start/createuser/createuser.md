@@ -1,6 +1,6 @@
 To create a new user, follow these steps:
 
-1. From your VK Cloud personal account, go to the DNS name of the JupyterHub instance, and then follow the link "Sign up to create a new user".
+1. From your VK Cloud management console, go to the DNS name of the JupyterHub instance, and then follow the link "Sign up to create a new user".
 1. Set the name and password of the user to be created. If necessary, enable two-factor authentication to sign in to JupyterHub.
 1. Sign in with an admin account and go to the Hub Control Panel. Select Authorize Users. Next to the new user, select Authorize.
     <info>

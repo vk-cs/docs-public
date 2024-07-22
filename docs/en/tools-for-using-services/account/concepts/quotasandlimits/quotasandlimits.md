@@ -13,9 +13,9 @@ After activating the services, basic quotas become available to the project. The
 
 Quotas can be [viewed](../../service-management/project-settings/manage#viewing_project_quotas):
 
-* short list — [in the personal account](../../service-management/project-settings/manage#viewing_project_quotas)
+* short list — [in the management console](../../service-management/project-settings/manage#viewing_project_quotas)
 * extended list — via the OpenStack CLI
- 
+
 There are implicit quotas that cannot be seen in any way, they manifest themselves as error messages when trying to create a new object. An example of an implicit quota is [quota for the number of projects](#common_4cc7e93b), which can be created by a single user.
 
 Quotas are closely related to [technical limits](#quotas_and_technical_limits).
@@ -56,7 +56,7 @@ The following is a list of quotas and limits for the Moscow region.
 | —
 | 50 people
 | 50 people
-| &#10003; 
+| &#10003;
 
 | Number of SSH key pairs
 | `key-pairs` in CLI
@@ -90,14 +90,14 @@ The following is a list of quotas and limits for the Moscow region.
 | `cores`
 | 9 pcs.
 | not limited
-| 
+|
 
 | Total amount of RAM in the project
 | **RAM**
 | `ram`
 | 10240 MB
 | not limited
-| 
+|
 
 |===
 
@@ -105,7 +105,7 @@ The limit on the number of instances in the project can be exceeded if the corre
 
 <info>
 
-No more than 1000 virtual machines can be displayed in the personal account.
+No more than 1000 virtual machines can be displayed in the management console.
 
 </info>
 
@@ -161,7 +161,7 @@ Non-rigid limits can be exceeded without contacting technical support. Recommend
 | not limited
 
 | Total volume of High-IOPS SSD disks in [availability zone](/en/additionals/start/it-security/platform-security) DP1
-| **High-IOPS SSD size in the (DP1) area** 
+| **High-IOPS SSD size in the (DP1) area**
 | `gigabytes_dp1-high-iops`
 | 200 GB
 | not limited
@@ -170,7 +170,7 @@ Non-rigid limits can be exceeded without contacting technical support. Recommend
 | **High-IOPS SSD size in the Moscow (MS1) (MS1) area**
 | `gigabytes_ko1-high-iops`
 | 200 GB
-| not limited 
+| not limited
 
 |===
 
@@ -221,7 +221,7 @@ Quotas for the total number of disks in the project take into account all types 
 | Number of disks per instance  | 25 pcs.| + |
 | Size of one HDD              | 50 TB | + |
 | Size of one SSD disk              | 10 TB | + |
-| Size of one High-IOPS SSD disk    | 2 TБ via VK Cloud personal account, 5 TB via OpenStack CLI | — |
+| Size of one High-IOPS SSD disk    | 2 TБ via VK Cloud management console, 5 TB via OpenStack CLI | — |
 | Size of a single image                 | 500 GB | — |
 | Total volume of images                  | 2 TB | — |
 | Total number of disks snapshots         | 200 pcs. | — |
@@ -274,7 +274,7 @@ The limit on the number of disks snapshots (200 pcs.) can be exceeded by contact
 | —
 | —
 | 50 TB
-| &#10003; 
+| &#10003;
 
 |===
 
@@ -307,7 +307,7 @@ The limits in this section are determined by the requirements of operation, they
 | `networks`
 | 10 pcs.
 | 20 pcs
-| — 
+| —
 
 | Number of subnets in the project
 | **Sprut subnets**
@@ -321,7 +321,7 @@ The limits in this section are determined by the requirements of operation, they
 | `floating-ips`
 | 6 pcs.
 | 50 pcs.
-| — 
+| —
 
 |===
 
@@ -349,7 +349,7 @@ The limits in this section are determined by the requirements of operation, they
 | `subnets`
 | 10 pcs.
 | 20 pcs
-| — 
+| —
 
 | Number of floating IP addresses
 | **Neutron floating IP addresses**
@@ -396,7 +396,7 @@ Even if the quota for the total number of subnets in the project has been increa
 | `dc_router`
 | 3 шт.
 | 3 шт.
-| — 
+| —
 
 | Number of security groups in the project
 | **Sprut firewall groups**
@@ -424,7 +424,7 @@ Even if the quota for the total number of subnets in the project has been increa
 | `external_port`
 | 5 pcs.
 | 6 pcs.
-| — 
+| —
 
 |===
 
@@ -445,7 +445,7 @@ Even if the quota for the total number of subnets in the project has been increa
 | `routers`
 | 12 pcs.
 | 20 pcs.
-| — 
+| —
 
 | Number of security groups in the project
 | **Neutron firewall groups**
@@ -466,14 +466,14 @@ Even if the quota for the total number of subnets in the project has been increa
 | `ports`
 | 120 pcs.
 | 500 pcs.
-| — 
+| —
 
 | Number of external Neutron or Sprut ports in the project
-| **Neutron external network ports** 
+| **Neutron external network ports**
 | `external_port`
 | 5 pcs.
 | 6 pcs.
-| — 
+| —
 
 |===
 
@@ -487,7 +487,7 @@ Even if the quota for the total number of subnets in the project has been increa
 | Quota in CLI
 | Basic quota
 | Limit
-| Hard 
+| Hard
 
 | Number of load balancers
 | **Octavia balancers**
@@ -510,7 +510,7 @@ Even if the quota for the total number of subnets in the project has been increa
 
 You can exceed the limit on the number of balancing rules per load balancer (10 pcs.) without contacting technical support. To do this, create rules using the OpenStack CLI. For stable operation, it is not recommended to use more than 30 rules per load balancer.
 
-The quota **Neutron balancers**, which is displayed in VK Cloud personal account, is not used.
+The quota **Neutron balancers**, which is displayed in VK Cloud management console, is not used.
 
 ### Cloud Backup
 

@@ -22,12 +22,12 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    <tabs>
    <tablist>
-   <tab>Personal account</tab>
+   <tab>Management console</tab>
    <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en/).
+   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select the project where the necessary cluster is located.
    1. Go to **Containers** → **Kubernetes Clusters**.
    1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
@@ -127,12 +127,12 @@ This type of scaling is applicable for master nodes and groups of worker nodes. 
 
    <tabs>
    <tablist>
-   <tab>Personal account</tab>
+   <tab>Management console</tab>
    <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en/).
+   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select the project where the necessary cluster is located.
    1. Go to **Containers** → **Kubernetes Clusters**.
    1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
@@ -224,12 +224,12 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
 
    <tabs>
    <tablist>
-   <tab>Personal account</tab>
+   <tab>Management console</tab>
    <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en/).
+   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select the project where the necessary cluster is located.
    1. Go to **Containers** → **Kubernetes Clusters**.
    1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
@@ -301,12 +301,12 @@ This type of scaling is applicable for groups of worker nodes. During the scalin
 
    <tabs>
    <tablist>
-   <tab>Personal account</tab>
+   <tab>Management console</tab>
    <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+   1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/en).
    1. Select the project where the necessary cluster is located.
    1. Go to **Containers** → **Kubernetes Clusters**.
    1. [Make sure](../manage-cluster#start_cluster_ffb49399) that cluster needed is running.
