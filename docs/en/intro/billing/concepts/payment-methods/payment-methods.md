@@ -1,6 +1,6 @@
 There are several ways to [top up](../../service-management/payment) the balance of [the project](/en/tools-for-using-services/account/concepts/projects). The deposited funds are transferred to the [main account](../balance) of the project, from where they are then spent on paying for services.
 
-The list of available payment methods is displayed on the **Balance** page of the personal account when you click on the button **Make a payment**. The available methods depend on [region](/en/tools-for-using-services/account/concepts/regions).
+The list of available payment methods is displayed on the **Balance** page of the management console when you click on the button **Make a payment**. The available methods depend on [region](/en/tools-for-using-services/account/concepts/regions).
 
 <tabs>
 <tablist>
@@ -45,7 +45,7 @@ The list of available payment methods is displayed on the **Balance** page of th
 
 - Bank transfer.
 
-    This option is not available in your personal account. To pay using this method, contact [technical support](/en/contacts) and request an invoice, providing the details of the organization, [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) and the amount in tenge.
+    This option is not available in your management console. To pay using this method, contact [technical support](/en/contacts) and request an invoice, providing the details of the organization, [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id) and the amount in tenge.
 
 </tabpanel>
 </tabs>

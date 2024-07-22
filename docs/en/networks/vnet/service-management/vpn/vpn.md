@@ -2,19 +2,19 @@ You can manage VPN tunnels: view, add or remove them from the project, as well a
 
 VPN service is available in the Neutron and Sprut [SDN](../../concepts/architecture#sdns_used). Service management tools depend on SDN used:
 
-- Sprut SDN: personal account interface, API, Terraform.
-- Neutron SDN: personal account interface, API, [Terraform](/en/tools-for-using-services/terraform/how-to-guides/vnet/vpn), [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
+- Sprut SDN: m interface, API, Terraform.
+- Neutron SDN: management console interface, API, [Terraform](/en/tools-for-using-services/terraform/how-to-guides/vnet/vpn), [OpenStack CLI](/en/tools-for-using-services/cli/openstack-cli).
 
 ## Viewing a list of VPN tunnels and information about them
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
 
@@ -83,12 +83,12 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
 1. Click the **Add VPN** or **Add** button. The New VPN Tunnel Wizard opens.
@@ -110,7 +110,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
           - **Encryption algorithm** — `aes256` is recommended.
           - **IKE version** — `v2` is recommended.
           - **Diffie-Hellman group** — `group14` is recommended.
-  
+
    1. Press the **Next Step** button.
 
 1. Configure IPsec:
@@ -481,7 +481,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       --psk "<PSK key>" \
       --enable
    ```
-  
+
    </tabpanel>
    <tabpanel>
 
@@ -510,12 +510,12 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VPN tunnel and select **Edit VPN**.
@@ -723,7 +723,7 @@ VPN service is available in the Neutron and Sprut [SDN](../../concepts/architect
       --peer-endpoint-group <remote endpoint-group ID> \
       --enable
    ```
-  
+
    </tabpanel>
    <tabpanel>
 
@@ -755,12 +755,12 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VPN tunnel and select **Restart VPN**.
@@ -789,7 +789,7 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
    ```bash
     openstack vpn service set <VPN service ID> --disable && openstack vpn service set <VPN service ID> --enable
    ```
-  
+
    </tabpanel>
    <tabpanel>
 
@@ -807,12 +807,12 @@ Restarting the VPN tunnel is only available for VPNs in SDN Neutron. In SDN Spru
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project you need.
 1. Go to **Virtual networks** → **VPN**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required VPN tunnel and select **Remove VPN**.

@@ -1,6 +1,6 @@
 {includetag(resources)}
 
-1. [Go to](https://cloud.vk.com/app/en) your VK Cloud personal account.
+1. [Go to](https://cloud.vk.com/app/en) your VK Cloud management console.
 1. Select the project with the CDN resource you need.
 1. Go to the **CDN → CDN resources** section.
 

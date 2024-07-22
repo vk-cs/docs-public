@@ -4,12 +4,12 @@ You can manage routers: view, edit and delete them.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Routers**.
 
@@ -53,12 +53,12 @@ You can manage routers: view, edit and delete them.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Routers**.
 1. Click the **Add router** button.
@@ -115,12 +115,12 @@ You can manage routers: view, edit and delete them.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Routers**.
 1. Perform one of the actions for the router you want to edit:
@@ -240,7 +240,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
@@ -275,7 +275,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
     1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
     1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the OpenStack CLI.
-  
+
 1. [Get the ID](#viewing_a_list_of_routers_and_information_about_them) of the necessary router.
 
 1. To add an interface:
@@ -293,7 +293,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
     - The `INTERFACE_DISTRIBUTED` and (if the router is connected to an external network) `SNAT` interfaces related to this subnet will appear in the list of interfaces.
 
    <info>
-  
+
    To get a list of interfaces, [see router details](#viewing_a_list_of_routers_and_information_about_them) using the OpenStack CLI.
 
    </info>
@@ -322,7 +322,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
@@ -345,7 +345,7 @@ Router interface management is an alternative to [managing subnets](#editing_a_r
 
     1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
     1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the OpenStack CLI.
-  
+
 1. [Get the ID](#viewing_a_list_of_routers_and_information_about_them) of the necessary router.
 
 1. To add a static route, run the command:
@@ -382,7 +382,7 @@ Before deleting the router, delete the [static routes](#managing-static-routes) 
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
@@ -391,7 +391,7 @@ This is a group operation: if necessary, you can delete several routers at once 
 
 To remove a router:
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project where the required balancer is located.
 1. Go to **Virtual networks** → **Routers**.
 1. Do one of the following for the required router:
@@ -409,7 +409,7 @@ To remove a router:
 
     1. OpenStack CLI [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client).
     1. You can [authorize](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) in the OpenStack CLI.
-  
+
 1. [Get the ID](#viewing_a_list_of_routers_and_information_about_them) of the necessary router.
 
 1. Run the command:

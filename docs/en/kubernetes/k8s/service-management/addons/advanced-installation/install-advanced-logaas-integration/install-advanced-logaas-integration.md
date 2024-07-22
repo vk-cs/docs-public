@@ -24,12 +24,12 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    <tabs>
    <tablist>
-   <tab>Personal account</tab>
+   <tab>Management console</tab>
    <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the required cluster.
@@ -84,12 +84,12 @@ If this does not suit you, perform the **standard installation**.
 
    <tabs>
    <tablist>
-   <tab>Personal account</tab>
+   <tab>Management console</tab>
    <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the required cluster.
@@ -132,7 +132,7 @@ Editing the add-on code is applicable for a standard installation.
 
 The full add-on settings code along with the description of the fields is available:
 
-- in your personal account;
+- in your management console;
 - in the `configuration_values` attribute from the data source [vkcs_kubernetes_addon](https://github.com/vk-cs/terraform-provider-vkcs/blob/master/docs/data-sources/kubernetes_addon.md) if Terraform is used.
 
 Also on [GitHub](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml ) the Fluent Bit settings code is available, which serves as the basis for this add-on.

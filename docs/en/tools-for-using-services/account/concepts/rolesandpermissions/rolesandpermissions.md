@@ -1,8 +1,8 @@
-When a user is invited to a [project](../projects), he or she is assigned with a role. The role defines the scope of [permissions](#roles_and_their_permissions_the_full_matrix) available to the user when working with the personal account and with the cloud services.
+When a user is invited to a [project](../projects), he or she is assigned with a role. The role defines the scope of [permissions](#roles_and_their_permissions_the_full_matrix) available to the user when working with the management console and with the cloud services.
 
 The same user can be a member of several projects and have different roles in each of them. The same user can be assigned with several roles in one project; in this case, the permissions of all assigned roles are summarized.
 
-You can [view](../../service-management/project-settings/access-manage) the list of project members and their roles on the **Manage access** page of the personal account.
+You can [view](../../service-management/project-settings/access-manage) the list of project members and their roles on the **Manage access** page of the management console.
 
 ## General project management roles
 
@@ -119,7 +119,7 @@ The operations available to Kubernetes administrator are also available to Proje
 
 For other roles these operations are unavailable.
 
-For Kubernetes clusters of version 1.23 and later, the role of a Kubernetes administrator, operator, or auditor also defines the internal [Kubernetes role](/en/kubernetes/k8s/concepts/access-management#relationship_between_the_roles_of_personal_account_and_kubernetes) (`admin`, `edit`, or `view`) assigned to the user.
+For Kubernetes clusters of version 1.23 and later, the role of a Kubernetes administrator, operator, or auditor also defines the internal [Kubernetes role](/en/kubernetes/k8s/concepts/access-management#kubernetes-roles-relation) (`admin`, `edit`, or `view`) assigned to the user.
 
 <info>
 

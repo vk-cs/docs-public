@@ -18,7 +18,7 @@ If the cluster uses an outdated [version of Kubernetes](#kubernetes_version_supp
 
 Kubernetes versions are supported for 14 months from the release date in Kubernetes aaS from VK Cloud.
 
-Thirty days before Kubernetes version support is discontinued, users will receive an email and notification about this in their personal account notification center.
+Thirty days before Kubernetes version support is discontinued, users will receive an email and notification about this in their management console notification center.
 
 [cols="1,2,1,1", options="header"]
 |===
@@ -32,43 +32,43 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 | 30.06.2024
 | 30.08.2025
 
-| 1.27.x  
+| 1.27.x
 | 13 September 2023
 | 11.12.2023
 | 11.02.2025
 
-| 1.26.x  
+| 1.26.x
 | 17 May 2023
 | 14.08.2023
 | 17.10.2024
 
-| 1.25.x  
+| 1.25.x
 | 17 May 2023
 | 14.06.2023
 | 14.08.2024
 
-| 1.24.x  
-| 8 December 2022  
+| 1.24.x
+| 8 December 2022
 | 06.03.2023
 | 06.05.2024
 
-| 1.23.x  
-| 13 April 2022  
+| 1.23.x
+| 13 April 2022
 | 15.08.2022
 | 15.10.2023
 
-| 1.22.x  
-| 19 January 2022  
+| 1.22.x
+| 19 January 2022
 | 18.02.2022
 | 18.04.2023
 
-| 1.21.4  
+| 1.21.4
 | 8 April 2021
 | 12.10.2021
 | 12.12.2022
 
-| 1.20.4  
-| 8 December 2020  
+| 1.20.4
+| 8 December 2020
 | 01.03.2021
 | 01.05.2022
 
@@ -82,8 +82,8 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 | 23.12.2020
 | 23.02.2022
 
-| 1.17.8  
-| 9 December 2019  
+| 1.17.8
+| 9 December 2019
 | 09.08.2020
 | 09.12.2021
 |===

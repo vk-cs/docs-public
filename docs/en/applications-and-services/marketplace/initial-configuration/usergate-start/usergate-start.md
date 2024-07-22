@@ -56,7 +56,7 @@ By default, UserGate NGFW is created with a single network to connect to the MGM
    The UserGate console dashboard will open.
 
 1. Go to **Settings** → **Network** → **Interfaces**. Make sure that there is one network adapter in the **Current node** group (the network selected during the service deployment stage).
-1. [Go to](https://msk.cloud.vk.com/app/en/) your personal account at VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) your management console at VK Cloud.
 1. Go to **Cloud Servers** → **Virtual**.
 1. Open the page of the service VM (usually `<identifier>usergate`) by clicking on its name in the list.
 1. Go to the **Networks** tab.

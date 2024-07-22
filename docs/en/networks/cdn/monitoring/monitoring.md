@@ -1,6 +1,6 @@
 ## How to get monitoring data
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en/).
+1. Go to your VK Cloud [management console](https://msk.cloud.vk.com/app/en/).
 1. Go to the **CDN** → **Statistics** section.
 1. Select the metric you need to display statistics for.
 1. Select the time interval.

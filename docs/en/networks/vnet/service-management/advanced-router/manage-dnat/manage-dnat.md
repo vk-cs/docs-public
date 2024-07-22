@@ -4,7 +4,7 @@ To provide access to a private network from the Internet, configure _DNAT_— de
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -33,7 +33,7 @@ To provide access to a private network from the Internet, configure _DNAT_— de
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -63,7 +63,7 @@ To provide access to a private network from the Internet, configure _DNAT_— de
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 

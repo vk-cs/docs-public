@@ -1,4 +1,4 @@
-To connect to an MLflow instance, you need to select its DNS name in your Personal Account and open it in a new browser tab. After that, UI MLflow will be available.
+To connect to an MLflow instance, you need to select its DNS name in your management console and open it in a new browser tab. After that, UI MLflow will be available.
 
 Next, you need to enter the username and password from MLflow.
 

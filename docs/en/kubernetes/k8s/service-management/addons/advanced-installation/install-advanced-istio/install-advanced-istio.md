@@ -20,12 +20,12 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    <tabs>
    <tablist>
-   <tab>Personal account</tab>
+   <tab>Management console</tab>
    <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the required cluster.
@@ -106,11 +106,11 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    <tabs>
    <tablist>
-   <tab>Personal account</tab>
+   <tab>Management console</tab>
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Find the cluster you need in the list.
@@ -131,12 +131,12 @@ Take into account the total [maximum system requirements](../../../../concepts/a
 
    <tabs>
    <tablist>
-   <tab>Personal account</tab>
+   <tab>Management console</tab>
    <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the required cluster.
@@ -216,12 +216,12 @@ If this does not suit you, perform a **standard installation** or **installation
 
    <tabs>
    <tablist>
-   <tab>Personal account</tab>
+   <tab>Management console</tab>
    <tab>Terraform</tab>
    </tablist>
    <tabpanel>
 
-   1. Go to [VK Cloud personal account](https://msk.cloud.vk.com/app/en).
+   1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
    1. Select [project](/en/tools-for-using-services/account/concepts/projects), where the cluster will be placed.
    1. Go to **Containers** → **Kubernetes clusters**.
    1. Click on the name of the required cluster.

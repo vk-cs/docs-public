@@ -10,11 +10,11 @@ When creating a PITR schedule, DBMS logs will be copied.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Go to **Databases** → **Backup**.
 1. Go to the **Point-in-time recovery** tab.
 1. Click the **Add**.
@@ -35,11 +35,11 @@ When creating a PITR schedule, DBMS logs will be copied.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Go to **Databases** → **Backup**.
 1. Go to the **Point-in-time recovery** tab.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required schedule and select **Edit schedule**.
@@ -52,11 +52,11 @@ When creating a PITR schedule, DBMS logs will be copied.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Go to **Databases** → **Backup**.
 1. Go to the **Point-in-time recovery** tab.
 1. Click on the name of the required schedule.
@@ -70,11 +70,11 @@ A list of backups for the selected schedule will be displayed.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Go to **Databases** → **Backup**.
 1. Go to the **Point-in-time recovery** tab.
 1. Click on the name of the required schedule.

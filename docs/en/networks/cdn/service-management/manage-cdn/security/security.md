@@ -6,7 +6,7 @@ To configure the allowed methods:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -64,7 +64,7 @@ To configure the country-based security policy:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -123,7 +123,7 @@ To configure the domain access policy:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -182,7 +182,7 @@ To configure IP address-based security policy:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -204,7 +204,7 @@ To configure IP address-based security policy:
 
 {include(/en/_includes/_api_cdn_create_change.md)}
 
-Specify the `ip_address_acl` parameter in the `options` block of a request body. 
+Specify the `ip_address_acl` parameter in the `options` block of a request body.
 
 The access policy works on network addresses calculated based on the specified IP addresses. If two or more IP addresses belong to the same network, it is sufficient to specify only one of those IP addresses.
 
@@ -229,7 +229,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
             "policy_type": "allow"
         }
     }
-}'   
+}'
 
 ```
 

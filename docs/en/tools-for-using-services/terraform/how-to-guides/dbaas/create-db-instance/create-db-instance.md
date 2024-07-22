@@ -336,7 +336,7 @@ resource "vkcs_db_user" "db-user" {
 
 ## 3. Check the configuration application
 
-[Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud personal account, **Databases** → **Databases instances**. Make sure that all the objects described in the configuration have been created successfully:
+[Go to](https://msk.cloud.vk.com/app/en/) your VK Cloud management console, **Databases** → **Databases instances**. Make sure that all the objects described in the configuration have been created successfully:
 
 - The DB instance.
 - The external IP address for the instance — is displayed on the instance page.

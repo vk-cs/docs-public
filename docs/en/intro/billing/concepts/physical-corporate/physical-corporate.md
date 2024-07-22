@@ -8,7 +8,7 @@ Organizations and individual entrepreneur can work with VK Cloud as individuals 
 
 <info>
 
-If you plan to work with VK Cloud as a legal entity, go through [pre-registration](#additional_registration_of_legal_entities) in your personal account.
+If you plan to work with VK Cloud as a legal entity, go through [pre-registration](#additional_registration_of_legal_entities) in your management console.
 
 </info>
 
@@ -127,7 +127,7 @@ Legal entities can also top up the project balance with a bank card — for exam
 
 ## Additional registration of legal entities
 
-[Additional registration](../../service-management/corporate) means saving the details of a legal entity in the project settings in the personal account. You do not need to specify banking details manually, they are filled in automatically after entering the individual taxpayer number.
+[Additional registration](../../service-management/corporate) means saving the details of a legal entity in the project settings in the management console. You do not need to specify banking details manually, they are filled in automatically after entering the individual taxpayer number.
 
 After additional registration, those organizations that work on [prepayment](#payment_scheme) can upload [invoices for payment](../../service-management/bill-generation) with full details from the personal cabinet.
 

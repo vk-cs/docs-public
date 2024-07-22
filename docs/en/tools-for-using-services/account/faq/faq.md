@@ -11,11 +11,11 @@ Go to [VK Cloud page](https://cloud.vk.com/en/) and click **Create a VK Cloud Ac
 
 <summary>How do I register with a phone number from another country?</summary>
 
-Contact technical support by email `support@mcs.mail.ru` with a request to enter the phone number manually.
+Contact technical support by email [support@mcs.mail.ru](mailto:support@mcs.mail.ru) with a request to enter the phone number manually.
 
 <warn>
 
-Through the VK Cloud personal account, you can register only phone numbers that start with `+7`.
+Through the VK Cloud Account, you can register only phone numbers that start with `+7`.
 
 </warn>
 
@@ -25,7 +25,7 @@ Through the VK Cloud personal account, you can register only phone numbers that 
 
 <summary>What rights do the project participants have?</summary>
 
-The role model of the project participants is described in the article [Personal account roles and their permissions](../concepts/rolesandpermissions).
+The role model of the project participants is described in the article [Management console roles and their permissions](../concepts/rolesandpermissions).
 
 </details>
 
@@ -41,10 +41,10 @@ The procedure is described in the article [Access management](../service-managem
 
 <summary>How do I recover my account password?</summary>
 
-1. Click **Forgot password?** on the authorization page to your personal account.
+1. Click **Forgot password?** on the authorization page to your management console.
 1. Enter your email in the field **Email which was used during registration**.
 1. Press the button **Send password**. An email with instructions for password recovery will be sent to the specified email address.
-1. Follow the link in the email about password recovery from the VK Cloud personal account.
+1. Follow the link in the email about password recovery from the VK Cloud Management Console.
 1. Enter a new password in the field of the same name.
 1. Click the **Save** button.
 
@@ -83,6 +83,6 @@ Yes, they can. To do this, contact the designated GeekBrains curator.
 
 <summary>How do I delete an account?</summary>
 
-Contact technical support, read more in the article [Deleting an account](../how-to-guides/account-delete/).
+Contact technical support, read more in the article [Deleting an account](/en/tools-for-using-services/vk-cloud-account/how-to-guides/account-delete).
 
 </details>

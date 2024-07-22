@@ -6,7 +6,7 @@ To add an HTTP header to a request:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -70,7 +70,7 @@ To add an HTTP header to a response:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>
@@ -134,7 +134,7 @@ To configure the Access-Control-Allow-Origin HTTP header:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>API</tab>
 </tablist>
 <tabpanel>

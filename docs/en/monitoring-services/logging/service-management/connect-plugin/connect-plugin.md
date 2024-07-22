@@ -80,4 +80,4 @@
    ```
 
 1. Wait a few minutes for the data to accumulate.
-1. Check the availability of logs in the **Monitoring** → **Logging** section of your VK Cloud [personal account](https://msk.cloud.vk.com/app/en/services/monitoring/logging).
+1. Check the availability of logs in the **Monitoring** → **Logging** section of your VK Cloud [management console](https://msk.cloud.vk.com/app/en/services/monitoring/logging).

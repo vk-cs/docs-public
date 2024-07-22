@@ -1,4 +1,4 @@
-All deductions and additions for projects are recorded in the VK Cloud personal account on the project [balance page](https://msk.cloud.vk.com/app/en/services/billing).
+All deductions and additions for projects are recorded in the VK Cloud management console on the project [balance page](https://msk.cloud.vk.com/app/en/services/billing).
 
 Expenses details are available to users with the [roles](/en/tools-for-using-services/account/concepts/rolesandpermissions) of Owner, Superadministrator, Project administrator and Billing administrator.
 
@@ -12,10 +12,10 @@ The same principle applies to [the formation of accounting documents](../../conc
 
 ## Viewing deductions and additions
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en/) VK Cloud.
+1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
 1. Open the balance page using one of these options:
 
-   - Click on your user name in the top part of the personal account page and select **Balance and payments** from the drop-down list.
+   - Click on your user name in the top part of the management console page and select **Balance and payments** from the drop-down list.
    - Select the **Balance** section in the side menu.
 
 1. Go to **Detail** tab.
@@ -34,10 +34,10 @@ The same principle applies to [the formation of accounting documents](../../conc
 
 ## Viewing resource consumption statistics
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en/) VK Cloud.
+1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
 1. Open the balance page using one of these options:
 
-   - Click on your user name in the top part of the personal account page and select **Balance and payments** from the drop-down list.
+   - Click on your user name in the top part of the management console page and select **Balance and payments** from the drop-down list.
    - Select the **Balance** section in the side menu.
 
 1. Go to **Expenses on services** tab.
@@ -51,10 +51,10 @@ The same principle applies to [the formation of accounting documents](../../conc
 
 ## Downloading the report
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/en/) VK Cloud.
+1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
 1. Open the balance page using one of these options:
 
-   - Click on your user name in the top part of the personal account page and select **Balance and payments** from the drop-down list.
+   - Click on your user name in the top part of the management console page and select **Balance and payments** from the drop-down list.
    - Select the **Balance** section in the side menu.
 
 1. If necessary, set filters on the displayed records.

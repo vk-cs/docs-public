@@ -59,7 +59,7 @@ For image-based services, VK Cloud virtual resources deployed to maintain the se
 
 ## Not charged
 
-- Use of the personal account of any of the vendor's services.
+- Use of the management console of any of the vendor's services.
 - Performing basic operations with the service instance: restart, delete.
 - Network traffic to maintain infrastructure.
 - Use of the service when choosing a promotional tariff.

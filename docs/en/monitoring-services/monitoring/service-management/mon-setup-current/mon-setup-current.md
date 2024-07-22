@@ -1,6 +1,6 @@
 To install monitoring to an existing VM:
 
-1. Go to your VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. Go to your VK Cloud [management console](https://msk.cloud.vk.com/app/en).
 1. Go to **Cloud computing** → **Virtual machines**.
 1. Open the VM page by clicking on its name in the list.
 1. On the **General information** tab, under the main VM information, go to the **Configuring monitoring** tab.

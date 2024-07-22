@@ -5,11 +5,11 @@ It works with the [Golang plugin](https://docs.fluentbit.io/manual/development/g
 
 | Parameter | Required? | Description | Where to find |
 | -------- | ------------- | -------- | --------- |
-| `auth_url` | Yes | The Keystone service endpoint | The Auth URL parameter in your VK Cloud [personal account](https://msk.cloud.vk.com/app/en/any/project/keys) |
-| `project_id` | Yes | An identifier of a VK Cloud project to which logs will be recorded | The Project ID parameter in your VK Cloud [personal account](https://msk.cloud.vk.com/app/en/any/project/keys).</br>Example: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`.</br>Do not confuse with Project Name of the form `mcs1234567890` |
-| `user_id` | No | An identifier of a user on whose behalf logs will be recorded | Created in your VK Cloud personal account on the [User credentials generation](https://msk.cloud.vk.com/app/en/services/monitoring/logging/settings) tab |
-| `user_name` | No | A login of a user on whose behalf logs will be recorded | The Username parameter in your VK Cloud [personal account](https://msk.cloud.vk.com/app/en/any/project/keys) |
-| `password` | No | The password of the user specified in `user_id` or `user_name` | For `user_id`, the password is created in your VK Cloud personal account on the [User credentials generation](https://msk.cloud.vk.com/app/en/services/monitoring/logging/settings) tab.</br> For `user_name`, the password of your VK Cloud personal account is used |
+| `auth_url` | Yes | The Keystone service endpoint | The Auth URL parameter in your VK Cloud [management console](https://msk.cloud.vk.com/app/en/any/project/keys) |
+| `project_id` | Yes | An identifier of a VK Cloud project to which logs will be recorded | The Project ID parameter in your VK Cloud [management console](https://msk.cloud.vk.com/app/en/any/project/keys).</br>Example: `a1b2c3d4e5f6g7h8i9a1b2c3d4e5f6g7`.</br>Do not confuse with Project Name of the form `mcs1234567890` |
+| `user_id` | No | An identifier of a user on whose behalf logs will be recorded | Created in your VK Cloud management console on the [User credentials generation](https://msk.cloud.vk.com/app/en/services/monitoring/logging/settings) tab |
+| `user_name` | No | A login of a user on whose behalf logs will be recorded | The Username parameter in your VK Cloud [management console](https://msk.cloud.vk.com/app/en/any/project/keys) |
+| `password` | No | The password of the user specified in `user_id` or `user_name` | For `user_id`, the password is created in your VK Cloud management console on the [User credentials generation](https://msk.cloud.vk.com/app/en/services/monitoring/logging/settings) tab.</br> For `user_name`, the password of your VK Cloud management console is used |
 | `key_file` | No | A name of a JSON file that contains the `user_id` and `password` values |  |
 | `internal` | No | The parameter indicating whether the recording of technical service logs will be enabled:</br> - `true` — enabled</br> - `false` — disabled</br>By default: `true` |  |
 
@@ -17,7 +17,7 @@ Acceptable options for specifying user credentials:
 
 - `user_id` and `password`;
 - `key_file`;
-- `user_name` and `password` (for example, your username and password to sign in to your VK Cloud personal account).
+- `user_name` and `password` (for example, your username and password to sign in to your VK Cloud management console).
 
 <warn>
 

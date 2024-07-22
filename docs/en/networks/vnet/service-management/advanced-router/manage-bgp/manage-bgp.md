@@ -8,7 +8,7 @@ You can only add one BGP router per advanced router.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -30,7 +30,7 @@ You can only add one BGP router per advanced router.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -59,7 +59,7 @@ You can only add one BGP router per advanced router.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -81,7 +81,7 @@ To connect autonomous networks using the BGP protocol, you need to specify the B
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -110,7 +110,7 @@ After you add the BGP neighbor, the router will try to establish a connection wi
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -147,7 +147,7 @@ After you add the BGP neighbor, the router will try to establish a connection wi
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -176,7 +176,7 @@ To view BGP announcements:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -195,7 +195,7 @@ The tab displays a list of all BGP announcements. Active announcements are marke
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -243,7 +243,7 @@ You can only edit the **Static** announcements.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
@@ -270,7 +270,7 @@ You can only edit the **Static** announcements.
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 

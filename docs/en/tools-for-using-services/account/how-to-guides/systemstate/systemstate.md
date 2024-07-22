@@ -1,4 +1,4 @@
-Through your personal account, you can monitor the status of VK Cloud services in real time, as well as get a history of resolved incidents and announcements about planned work.
+Through the management console, you can monitor the status of VK Cloud services in real time, as well as get a history of resolved incidents and announcements about planned work.
 
 The information is available on the page [Статус работы сервисов](https://status.msk.cloud.vk.com).
 
@@ -6,13 +6,13 @@ Statuses can be useful if you encounter service failures. For example, when crea
 
 ## 1. Preparatory steps
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user name in the header of the page and select **Application debug**. The [event log](/en/tools-for-using-services/account/service-management/debugging) opens.
 1. Make sure that the log contains information about errors like `5XX`. This is a sign of possible problems with the operation of the services.
 
 ## 2. View the status of the services
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user name in the header of the page and select **State of system**. The **Статус работы сервисов** page opens with information about service outages.
 1. Check the status of the services:
    - If the services are stable, contact [technical support](/en/contacts/).
@@ -24,7 +24,7 @@ When the incident is resolved, the service will resume, and information about th
 
 1. Wait for the notification about the resumption of the service.
 1. See the detailed information about the incident:
-   1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+   1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
    1. Click on the user name in the header of the page and select **State of system**.
    1. Go to the **История событий** tab.
    1. In the drop-down list, select **Облачные вычисления**.

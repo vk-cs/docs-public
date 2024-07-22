@@ -4,12 +4,12 @@ A security group is a set of custom traffic rules that can be assigned to instan
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 
@@ -49,12 +49,12 @@ openstack security group rule list --long <security group ID>
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click the **Add** button.
@@ -92,12 +92,12 @@ openstack security group create --description <group description> <new group nam
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
@@ -130,12 +130,12 @@ A security group rule is a set of parameters that define the conditions for traf
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
@@ -188,12 +188,12 @@ Available arguments for the rule creation command:
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
@@ -227,12 +227,12 @@ To apply a rule set to a virtual machine, the security group that contains the r
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
@@ -258,12 +258,12 @@ openstack server add security group <instance ID> <security group ID>
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
 
-1. Go to VK Cloud [personal account](https://msk.cloud.vk.com/app/en).
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select the project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click on the security group name.
@@ -289,7 +289,7 @@ openstack server remove security group <instance ID> <security group ID>
 
 <tabs>
 <tablist>
-<tab>Personal account</tab>
+<tab>Management console</tab>
 <tab>OpenStack CLI</tab>
 </tablist>
 <tabpanel>
@@ -302,7 +302,7 @@ A group cannot be removed as long as there are ports that use this group. Also, 
 
 This is a group operation: if necessary, you can delete several security groups at once by selecting them using the checkboxes.
 
-1. Go to [personal account](https://msk.cloud.vk.com/app/) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Select a project.
 1. Go to **Virtual networks** → **Firewall settings**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the security group you want to delete and select **Delete** button.

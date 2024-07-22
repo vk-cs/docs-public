@@ -84,7 +84,7 @@ Scheme of preliminary preparation of networks:
 
 ## 1. Set up a VPN tunnel on the AD/LDAP side
 
-In your personal account [create a VPN](/en/networks/vnet/service-management/vpn) with the following parameters:
+In your management console [create a VPN](/en/networks/vnet/service-management/vpn) with the following parameters:
 
 1. At the “IKE Configuration” step, specify the algorithms for the primary IPsec connection:
 
@@ -132,7 +132,7 @@ In your personal account [create a VPN](/en/networks/vnet/service-management/vpn
 
 To configure a VPN tunnel on the side of the VDI environment, add an extra network interface for the Debian server to the `vdi-transit-vsubnet` subnet and assign the `10.56.0.4` address to it:
 
-1. In [your personal account](https://cloud.vk.com/app/en/) go to the **Cloud computing** section → **Virtual machines**.
+1. In [your management console](https://cloud.vk.com/app/en/) go to the **Cloud computing** section → **Virtual machines**.
 1. Select the `Debian-IPsec-Gate` VM and go to the **Networks** tab.
 1. Click the **Add connection** button.
 1. Specify the following connection settings:
@@ -418,7 +418,7 @@ To ensure traffic passes correctly through the VPN tunnel, add a number of setti
 
 ## 10. Configure a static route from a VDI environment to AD/LDAP
 
-1. In [your personal account](https://cloud.vk.com/app/en/) go to the **Virtual networks** section → **Routers**.
+1. In [your management console](https://cloud.vk.com/app/en/) go to the **Virtual networks** section → **Routers**.
 1. Select the `vdi-router` router and go to the **Static routes** tab.
 1. Click the **Add static route** button.
 1. Specify the route parameters:
