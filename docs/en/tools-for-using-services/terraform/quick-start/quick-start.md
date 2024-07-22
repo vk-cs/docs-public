@@ -72,7 +72,7 @@ The created resources will be available in your management console.
 
 ## Update Terraform
 
-If the provider version in the `vkcs_provider.tf` file is lower than the one needed to create the resource, an error will occur when checking the configuration. To avoid this, update your provider:
+If the provider version in the `vkcs_provider.tf` file is lower than the one needed to create the resource, an error will occur when checking the configuration. To avoid this, update your provider to the [latest version](https://github.com/vk-cs/terraform-provider-vkcs) or to the version specified in the resource description:
 
 1. Open the `vkcs_provider.tf` file and edit the version as you need, for example: `version = "~> 0.6.0"`.
 1. Run the command in the terminal:
