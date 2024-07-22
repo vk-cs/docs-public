@@ -1,4 +1,4 @@
-[Docker CE](https://docs.docker.com/get-started/overview/) (Community Edition) – это платформа для работы с контейнеризованными приложениями. Такие приложения поставляются в виде контейнеров, которые содержат в себе все необходимое для работы приложения. Это позволяет быстро собирать, разворачивать и отлаживать приложения.
+[Docker CE](https://docs.docker.com/get-started/overview/) (Community Edition) — это платформа для работы с контейнеризованными приложениями. Такие приложения поставляются в виде контейнеров, которые содержат в себе все необходимое для работы приложения. Это позволяет быстро собирать, разворачивать и отлаживать приложения.
 
 Контейнеры похожи на виртуальные машины, но более легковесны. Для изоляции ресурсов контейнеризованного приложения контейнеры используют средства операционной системы, на которой они запущены.
 
@@ -50,7 +50,7 @@
          9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88
    uid           [ unknown] Docker Release (CE deb) <docker@docker.com>
    sub   rsa4096 2017-02-22 [S]
-   
+
    ...
    ```
 
@@ -60,6 +60,11 @@
 
    ```bash
    sudo add-apt-repository -u "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+   ```
+1. Обновите репозиторий:
+
+   ```bash
+   sudo apt update
    ```
 
 1. Убедитесь, что репозиторий был подключен успешно:
@@ -89,7 +94,7 @@
         5:20.10.21~3-0~ubuntu-bionic 500
            500 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
         5:20.10.20~3-0~ubuntu-bionic 500
-   
+
        ...
    ```
 
@@ -127,7 +132,7 @@
        Tasks: 7
       CGroup: /system.slice/docker.service
               └─8981 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
-   
+
    Mar 23 10:32:20 ubuntu18 dockerd[8981]: time="2023-03-23T10:32:20.707940356Z" level=info msg="[core] [Channel #4] Channel Connectivity change to READY" module=grpc
    Mar 23 10:32:22 ubuntu18 dockerd[8981]: time="2023-03-23T10:32:22.407748502Z" level=info msg="Loading containers: start."
    Mar 23 10:32:22 ubuntu18 dockerd[8981]: time="2023-03-23T10:32:22.569711943Z" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
@@ -155,7 +160,7 @@
    Client:
     Context:    default
     Debug Mode: false
-   
+
    Server:
     Containers: 0
      Running: 0
@@ -202,7 +207,7 @@
     Insecure Registries:
      127.0.0.0/8
     Live Restore Enabled: false
-   
+
    WARNING: No swap limit support
    ```
 
@@ -222,7 +227,7 @@
    ```text
    Hello from Docker!
    This message shows that your installation appears to be working correctly.
-   
+
    To generate this message, Docker took the following steps:
     1. The Docker client contacted the Docker daemon.
     2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
@@ -231,13 +236,13 @@
        executable that produces the output you are currently reading.
     4. The Docker daemon streamed that output to the Docker client, which sent it
        to your terminal.
-   
+
    To try something more ambitious, you can run an Ubuntu container with:
     $ docker run -it ubuntu bash
-   
+
    Share images, automate workflows, and more with a free Docker ID:
     https://hub.docker.com/
-   
+
    For more examples and ideas, visit:
     https://docs.docker.com/get-started/
    ```
