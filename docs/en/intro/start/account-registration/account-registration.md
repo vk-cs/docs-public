@@ -77,7 +77,7 @@ If you do not immediately confirm the account, when you try to perform an action
 
    1. Contact [technical support](mailto:support@mcs.mail.ru).
    1. Specify:
-      - **Subject:** `Project Activation <Project PID>`
+      - **Subject:** `Project Activation <Project PID>`.
       - **Service type**: `VK Cloud`.
       - **Service category**: `VK Cloud: account`.
       - **Service group**: `Account: Activation and Access`.
