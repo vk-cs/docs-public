@@ -310,7 +310,7 @@ Information about increasing quotas for GeekBrains program participants you can 
 
 1. Go to the **Virtual networks** tab.
 
-There are the default and additional [SDN](/en/networks/vnet/concepts/architecture#sdns_used) of the project, if it is connected. To change the SDN type, contact [technical support](/en/contacts/).
+There are the default and additional [SDN](/en/networks/vnet/concepts/architecture#sdns_used) of the project, if it is connected. To change the SDN type, contact [technical support](mailto:support@mcs.mail.ru).
 
 ## Deleting a project
 
@@ -319,7 +319,7 @@ Deleting a project is also possible with a negative balance.
 To delete a project:
 
 1. Make sure that you have transferred all the necessary data from the project.
-1. Contact [technical support](/en/contacts/) on behalf of the project owner, provide in the request the [project ID](#getting-the-project-id) (PID) and [region](../../../concepts/regions) of the project being deleted.
+1. Contact [technical support](mailto:support@mcs.mail.ru) on behalf of the project owner, provide in the request the [project ID](#getting-the-project-id) (PID) and [region](../../../concepts/regions) of the project being deleted.
 
 1. (For legal entities) Specify for what period you need [closing documents](/en/intro/billing/concepts/report).
 

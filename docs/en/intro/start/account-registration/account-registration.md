@@ -75,27 +75,20 @@ If you do not immediately confirm the account, when you try to perform an action
 
       An example for the region Moscow: `https://msk.cloud.vk.com/app/mcs123456789/main`, where `mcs123456789` is the project identifier (PID).
 
-   1. Click **Contact support**.
-   1. On the [technical support portal](https://support.mcs.mail.ru) page that opens click the **Новая заявка** button.
-   1. Sequentially select a category from the lists:
-
-      - **Тип услуги**: `VK Cloud`.
-      - **Категория услуги**: `VK Cloud: Учетная запись`.
-      - **Группа услуги**: `Учетная запись: Активация и доступ`.
-      - **Услуга**: `VK Cloud Активация и доступ: Активировать учетную запись`.
-
-   1. In the form that opens, fill in the fields:
-
-      - **Тема**: specify a topic like `Project Activation <Project PID>`.
-      - **Регион**: select the project region (**Moscow** or **Kazakhstan**).
-      - **Проект**: specify the project ID (PID).
-      - **Описание**: write the reason for the request — you need to check your account.
-
+   1. Contact [technical support](mailto:support@mcs.mail.ru).
+   1. Specify:
+      - **Subject:** `Project Activation <Project PID>`
+      - **Service type**: `VK Cloud`.
+      - **Service category**: `VK Cloud: account`.
+      - **Service group**: `Account: Activation and Access`.
+      - **Service**: `VK Cloud Activation and access: Activate account`.
+      - **Region**: select the project region (**Moscow** or **Kazakhstan**).
+      - **Project**: specify the project ID (PID).
+      - **Description**: write the reason for the request (e.g. you need to check your account).
    1. Attach additional materials according to the instructions on the page.
-   1. Click the **Отправить** button.
    1. Wait for your request to be approved.
 
-1. [Link](/en/tools-for-using-services/account/service-management/activation#linking_a_bank_card) a card of [supported payment system](/en/intro/billing/concepts/payment-methods). The specified amount will be debited from your card and credited to your project balance.
+2. [Link](/en/tools-for-using-services/account/service-management/activation#linking_a_bank_card) a card of [supported payment system](/en/intro/billing/concepts/payment-methods). The specified amount will be debited from your card and credited to your project balance.
 
    <warn>
 
@@ -105,11 +98,11 @@ If you do not immediately confirm the account, when you try to perform an action
 
    </warn>
 
-1. (Optional) On the **Autopayment** tab that opens, configure the [autopayment](/en/intro/billing/service-management/add-card#configure_auto_completion) settings.
-1. Click **Get started with VK Cloud**.
-1. Wait for your management console page to open. A message about successful services activation appears.
+3. (Optional) On the **Autopayment** tab that opens, configure the [autopayment](/en/intro/billing/service-management/add-card#configure_auto_completion) settings.
+4. Click **Get started with VK Cloud**.
+5. Wait for your management console page to open. A message about successful services activation appears.
 
-A [project](/en/tools-for-using-services/account/concepts/projects) is automatically created for your account. After the services activation, sign-up [bonuses](/en/intro/billing/concepts/balance#bonuses) are credited to your [balance](/en/intro/billing/concepts/balance). These bonuses are credited only once after the registration of each new account. If no bonus points are credited within 3 working days, contact [technical support](/en/contacts).
+A [project](/en/tools-for-using-services/account/concepts/projects) is automatically created for your account. After the services activation, sign-up [bonuses](/en/intro/billing/concepts/balance#bonuses) are credited to your [balance](/en/intro/billing/concepts/balance). These bonuses are credited only once after the registration of each new account. If no bonus points are credited within 3 working days, contact [technical support](mailto:support@mcs.mail.ru).
 
 ## 3. Activate API access
 

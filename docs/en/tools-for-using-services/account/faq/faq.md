@@ -54,7 +54,7 @@ The procedure is described in the article [Access management](../service-managem
 
 <summary>How do I change the phone number for an account?</summary>
 
-Contact [technical support](/en/contacts/), enter the data:
+Contact [technical support](mailto:support@mcs.mail.ru), enter the data:
 
 - current phone number
 - new phone number
