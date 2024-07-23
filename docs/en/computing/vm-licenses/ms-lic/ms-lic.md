@@ -81,7 +81,7 @@ After receiving the form, Microsoft will check your license and inform you and y
 
 According to the requirements of the agreement, you are responsible for performing inspections and extensions. However, you can start deploying application server software without waiting for the verification to be completed. You can deploy the software ten days before submitting the form.
 
-After passing the verification process, let us know about it to [support service](/en/contacts/), indicating the name of the project and the type of license used.
+After passing the verification process, let us know about it to [support service](mailto:support@mcs.mail.ru), indicating the name of the project and the type of license used.
 
 ### License transfer conditions
 

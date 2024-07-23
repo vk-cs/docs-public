@@ -188,7 +188,7 @@ If you have not received your original documents or need scanned copies, write t
 
 <summary>How do I get a payment receipt from a specific date?</summary>
 
-1. Contact [technical support](/en/contacts).
+1. Contact [technical support](mailto:support@mcs.mail.ru).
 2. Specify:
 
    - [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id)
@@ -207,7 +207,7 @@ The terms of crediting funds depend on [the payment method](../concepts/payment-
 - Payment by bank transfer — payment can take up to three banking days from the date of transfer of funds by the bank.
 - Payment by other methods — the payment is credited within 5-10 minutes after payment confirmation.
 
-If the payment is not received within the specified time, contact [technical support](/en/contacts) to search for it and specify:
+If the payment is not received within the specified time, contact [technical support](mailto:support@mcs.mail.ru) to search for it and specify:
 
 - [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id)
 - Project [region](/en/tools-for-using-services/account/concepts/regions)
@@ -219,7 +219,7 @@ If the payment is not received within the specified time, contact [technical sup
 
 <summary>How do I make a refund?</summary>
 
-Contact [technical support](/en/contacts). For more information about the refund conditions and the requirements for the application, see [Refund of funds](../service-management/refund).
+Contact [technical support](mailto:support@mcs.mail.ru). For more information about the refund conditions and the requirements for the application, see [Refund of funds](../service-management/refund).
 
 You can refund only funds that you have previously credited to your account. [Bonuses](../concepts/balance#bonuses) cannot be refunded.
 
@@ -258,7 +258,7 @@ To restore the services:
 
 <info>
 
-To find out how long resources are in the queue for deletion, contact [technical support](/en/contacts) and specify:
+To find out how long resources are in the queue for deletion, contact [technical support](mailto:support@mcs.mail.ru) and specify:
 
 - [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id)
 - [Region](/en/tools-for-using-services/account/concepts/regions)
@@ -303,7 +303,7 @@ Charges for bank card payments are not included in [accounting documents for leg
 
 <summary>I have topped up the balance, but the payment failed. How to avoid freezing?</summary>
 
-1. Contact [technical support](/en/contacts).
+1. Contact [technical support](mailto:support@mcs.mail.ru).
 1. Specify:
 
    - [Project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id)
@@ -337,7 +337,7 @@ Each region has its own peculiarities of work for non-residents of the Russian F
 | Legal entities-residents of Kazakhstan can work both under a public offer agreement and under an individual agreement
 
 | Phone number
-| To link a foreign phone number to your account, please contact [technical support](/en/contacts)
+| To link a foreign phone number to your account, please contact [technical support](mailto:support@mcs.mail.ru)
 | —
 
 | Payment for services
