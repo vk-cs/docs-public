@@ -17,7 +17,7 @@ To remove a page from bookmarks, click the  ![ ](../assets/active-bookmark-icon.
 To evaluate the usefulness of the article, use the icons at the bottom of the page:
 
 * ![ ](../assets/like-icon.svg "inline") if the article was useful for you.
-* ![ ](../assets/dislike-icon.svg "inline") if you didn't find the answer to your question in the documentation. To get help or consultation, please contact the [technical support](/ru/contacts).
+* ![ ](../assets/dislike-icon.svg "inline") if you didn't find the answer to your question in the documentation. To get help or consultation, please contact the [technical support](mailto:support@mcs.mail.ru).
 
 When you click an icon:
 
@@ -27,7 +27,7 @@ When you click an icon:
 
 ### Suggestions for changing the documentation
 
-If you notice a typo or error in the documentation or you want to adjust a section, suggest changes directly in the 
+If you notice a typo or error in the documentation or you want to adjust a section, suggest changes directly in the
 source texts. For this, click the **Edit on GitHub** button in the bottom of the page.
 
 For more details, see the [GitHub repository](https://github.com/vk-cs/docs-public/blob/master/README.md).

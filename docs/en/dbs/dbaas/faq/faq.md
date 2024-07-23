@@ -27,7 +27,7 @@ You can select the required configuration type when [creating a DB instance](../
 
 <summary>Can I change the DB instance configuration file myself?</summary>
 
-No, the configuration file is not editable by the user. To change the configuration, contact [technical support](/en/contacts/). But you can change individual parameters for some DBMS according to [instructions](../service-management/db-config/).
+No, the configuration file is not editable by the user. To change the configuration, contact [technical support](mailto:support@mcs.mail.ru). But you can change individual parameters for some DBMS according to [instructions](../service-management/db-config/).
 
 </details>
 
@@ -106,7 +106,7 @@ For instructions on scaling a DB instance, see [DB instance management](../servi
 
 <summary>How are the master, synchronous and asynchronous replicas distributed across the data center?</summary>
 
-The master and replicas are located in the same data center, but upon request, [technical support](/en/contacts/) engineers can distribute them to different data centers.
+The master and replicas are located in the same data center, but upon request, [technical support](mailto:support@mcs.mail.ru) engineers can distribute them to different data centers.
 
 </details>
 

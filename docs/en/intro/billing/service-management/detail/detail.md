@@ -12,7 +12,7 @@ The same principle applies to [the formation of accounting documents](../../conc
 
 ## Viewing deductions and additions
 
-1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Open the balance page using one of these options:
 
    - Click on your user name in the top part of the management console page and select **Balance and payments** from the drop-down list.
@@ -34,7 +34,7 @@ The same principle applies to [the formation of accounting documents](../../conc
 
 ## Viewing resource consumption statistics
 
-1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Open the balance page using one of these options:
 
    - Click on your user name in the top part of the management console page and select **Balance and payments** from the drop-down list.
@@ -51,7 +51,7 @@ The same principle applies to [the formation of accounting documents](../../conc
 
 ## Downloading the report
 
-1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
+1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Open the balance page using one of these options:
 
    - Click on your user name in the top part of the management console page and select **Balance and payments** from the drop-down list.

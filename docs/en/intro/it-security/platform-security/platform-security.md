@@ -21,7 +21,7 @@ When activating VK Cloud services, you may need to confirm user data. In this ca
 
 - **Linking a bank card**. Link your card and, if necessary, pay for VK Cloud services.
 - **Company card (for legal entities)**. In your message, please attach a file with the details of the organization on whose behalf you are registering. The postal address must indicate the name or other details of the organization.
-- **Contact technical support**. Create an account activation request on the [technical support portal](/en/contacts/). Application category — account, group — activation and access.
+- **Contact technical support**. Create an account activation request on the [technical support portal](mailto:support@mcs.mail.ru). Application category — account, group — activation and access.
 
 </tabpanel>
 <tabpanel>
