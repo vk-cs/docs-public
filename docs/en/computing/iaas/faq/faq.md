@@ -42,7 +42,7 @@ sudo sh -c "apt update; apt install -y qemu-guest-agent; systemctl enable qemu-g
 
 <summary>No access to high-performance CPUs</summary>
 
-To get access to high-performance CPUs, contact [technical support](/en/contacts/).
+To get access to high-performance CPUs, contact [technical support](mailto:support@mcs.mail.ru).
 
 </details>
 
@@ -58,7 +58,7 @@ The current prices for floating IP addresses and IP addresses on virtual machine
 
 <summary>I want to create an instance, but there is no suitable configuration</summary>
 
-If you did not find a suitable VM configuration when creating a VM, contact [technical support](/ru/contacts/).
+If you did not find a suitable VM configuration when creating a VM, contact [technical support](mailto:support@mcs.mail.ru).
 
 It is not recommended to use configurations in which the ratio of CPU and RAM is `1:1` or less than this value. Such configurations have performance bottlenecks and can be used to perform specific tasks, for example, for machine learning or object recognition.
 
@@ -70,7 +70,7 @@ It is not recommended to use configurations in which the ratio of CPU and RAM is
 
 If an error occurred during the VM creation process, pay attention to the pop-up window in the upper right corner of the VK Cloud panel, which displays an error message.
 
-If the message does not appear, and the creation wizard reports an error, contact [technical support](/en/contacts/).
+If the message does not appear, and the creation wizard reports an error, contact [technical support](mailto:support@mcs.mail.ru).
 
 </details>
 
@@ -78,7 +78,7 @@ If the message does not appear, and the creation wizard reports an error, contac
 
 <summary>There are not enough quotas when creating a VM</summary>
 
-Free up resources on the project or contact [technical support](/ru/contacts/), by informing the project, account details, as well as the amount of resources needed to add to the project.
+Free up resources on the project or contact [technical support](mailto:support@mcs.mail.ru), by informing the project, account details, as well as the amount of resources needed to add to the project.
 
 </details>
 
@@ -288,7 +288,7 @@ If these factors are missing, collect disk performance statistics using one of t
 - `disk utilization` — using [utility](https://www.cyberciti.biz/tips/linux-disk-performance-monitoring-howto.html) `iostat`;
 - `load average` — using [utility](https://www.digitalocean.com/community/tutorials/load-average-in-linux) `top`.
 
-Compare the obtained indicators with the [guaranteed disk performance](../concepts/volume-sla) provided by the VK Cloud platform. If there are significant deviations, contact [technical support](/en/contacts).
+Compare the obtained indicators with the [guaranteed disk performance](../concepts/volume-sla) provided by the VK Cloud platform. If there are significant deviations, contact [technical support](mailto:support@mcs.mail.ru).
 
 <info>
 
@@ -497,7 +497,7 @@ Yes, you can, for more information, see the article [File Storage management](..
 
 <summary>How do I get a Windows Server license?</summary>
 
-A licensed copy of the Windows Server operating system is preinstalled in the Windows-based VM being created. Activation of the licensed copy occurs automatically after the VM is created. If an OS activation error occurs, contact [technical support](/en/contacts) with the virtual machine ID.
+A licensed copy of the Windows Server operating system is preinstalled in the Windows-based VM being created. Activation of the licensed copy occurs automatically after the VM is created. If an OS activation error occurs, contact [technical support](mailto:support@mcs.mail.ru) with the virtual machine ID.
 
 </details>
 

@@ -15,7 +15,7 @@ Statuses can be useful if you encounter service failures. For example, when crea
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 1. Click on the user name in the header of the page and select **State of system**. The **Статус работы сервисов** page opens with information about service outages.
 1. Check the status of the services:
-   - If the services are stable, contact [technical support](/en/contacts/).
+   - If the services are stable, contact [technical support](mailto:support@mcs.mail.ru).
    - If the services are working intermittently, then the problem is known, and the VK Cloud team is already looking for a solution. Click **Подписаться на обновления** to monitor the status of services in the official Telegram channel VK Cloud.
 
 When the incident is resolved, the service will resume, and information about the incident will appear on the **Статус работы сервисов** page.

@@ -35,7 +35,7 @@ The services differ in architecture and pricing, the full list of differences is
 
 <summary>What should I do if the service did not start when connecting?</summary>
 
-1. Check if there are enough quotas in the project to deploy the service. Free up resources or increase quotas through [technical support](/en/contacts).
+1. Check if there are enough quotas in the project to deploy the service. Free up resources or increase quotas through [technical support](mailto:support@mcs.mail.ru).
 1. With [prepaid payment system](../tariffication/): check if there are enough funds in the project account.
 1. [Update](../service-management/pr-instance-manage#recreating_or_re_updating_a_service_instance) service instance.
 

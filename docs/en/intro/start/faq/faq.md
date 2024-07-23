@@ -67,7 +67,7 @@ Use the instruction [Enabling 2FA](en/tools-for-using-services/vk-cloud-account/
 
 <summary>Lost my two-factor authentication app</summary>
 
-Contact [technical support](/en/contacts). Specialists will make sure that you are the owner of the account, and then deactivate this option for your account. After that, re-enable two-factor authentication in [management console](https://msk.cloud.vk.com/app/account/profile).
+Contact [technical support](mailto:support@mcs.mail.ru). Specialists will make sure that you are the owner of the account, and then deactivate this option for your account. After that, re-enable two-factor authentication in [management console](https://msk.cloud.vk.com/app/account/profile).
 
 </details>
 
@@ -83,7 +83,7 @@ Bonus points are awarded when the first project is created in VK Cloud; this opt
 
 <summary>I do not have enough quotas</summary>
 
-The expansion of resource quotas is performed upon request to [technical support](/en/contacts).
+The expansion of resource quotas is performed upon request to [technical support](mailto:support@mcs.mail.ru).
 
 </details>
 
@@ -146,6 +146,6 @@ Yes. Read more about the affiliate program in the [documentation](..).
 
 <summary>What if I didn't find the answer to my question?</summary>
 
-If you did not find the answer to your question on the portal, [send your question](/en/contacts) to our support.
+If you did not find the answer to your question on the portal, [send your question](mailto:support@mcs.mail.ru) to our support.
 
 </details>
