@@ -72,7 +72,7 @@ To activate auto-completion:
 
 ## Unbind the card
 
-To untie the card, contact [technical support](/en/contacts) and provide information:
+To untie the card, contact [technical support](mailto:support@mcs.mail.ru) and provide information:
 
 - [project ID (PID)](/en/tools-for-using-services/account/service-management/project-settings/manage#getting_project_id);
 - the last 4 digits of the linked card number.
