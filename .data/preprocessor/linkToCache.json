@@ -179,6 +179,21 @@
     "full": "Зоны доступности",
     "text": "Зоны доступности"
   },
+  "prepay": {
+    "number": null,
+    "full": "Предоплата",
+    "text": "Предоплата"
+  },
+  "view_balance": {
+    "number": null,
+    "full": "Просмотр баланса",
+    "text": "Просмотр баланса"
+  },
+  "balance_charge": {
+    "number": null,
+    "full": "Внесение средств",
+    "text": "Внесение средств"
+  },
   "activate_stop_delete_backup_plan": {
     "number": null,
     "full": "Активация, остановка и удаление плана резервного копирования",
