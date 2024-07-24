@@ -8685,10 +8685,6 @@
   ],
   [
     "/ru/intro/billing/concepts/balance",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation"
-  ],
-  [
-    "/ru/intro/billing/concepts/balance",
     "http://localhost:3000/docs/ru/intro/billing/concepts/payment-methods"
   ],
   [
@@ -8701,19 +8697,23 @@
   ],
   [
     "/ru/intro/billing/concepts/balance",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation"
+  ],
+  [
+    "/ru/intro/billing/concepts/balance",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/projects#avtomaticheskaya_zamorozka_proekta"
   ],
   [
     "/ru/intro/billing/concepts/balance",
-    "http://localhost:3000/docs/ru/intro/billing/service-management/payment#vnesenie_sredstv"
+    "http://localhost:3000/docs/ru/intro/billing/service-management/payment#balance_charge"
   ],
   [
     "/ru/intro/billing/concepts/balance",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/projects"
+    "http://localhost:3000/docs/ru/base/account/concepts/regions"
   ],
   [
     "/ru/intro/billing/concepts/balance",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+    "http://localhost:3000/docs/ru/base/account/concepts/projects"
   ],
   [
     "/ru/intro/billing/concepts/physical-corporate",
@@ -8797,7 +8797,7 @@
   ],
   [
     "/ru/intro/billing/concepts/payment-methods",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/balance#osnovnoy_i_bonusnyy_schet"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/balance"
   ],
   [
     "/ru/intro/billing/concepts/payment-methods",
@@ -8861,7 +8861,7 @@
   ],
   [
     "/ru/intro/billing/service-management/add-card",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/balance#osnovnoy_i_bonusnyy_schet"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/balance"
   ],
   [
     "/ru/intro/billing/service-management/add-card",
@@ -8873,7 +8873,7 @@
   ],
   [
     "/ru/intro/billing/service-management/add-card",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/balance#osnovnoy_i_bonusnyy_schet"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/balance"
   ],
   [
     "/ru/intro/billing/service-management/add-card",
@@ -8905,11 +8905,11 @@
   ],
   [
     "/ru/intro/billing/service-management/payment",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/balance#osnovnoy_i_bonusnyy_schet"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/balance"
   ],
   [
     "/ru/intro/billing/service-management/payment",
-    "http://localhost:3000/docs/ru/intro/billing/service-management/payment#prosmotr_balansa"
+    "http://localhost:3000/docs/ru/intro/billing/service-management/payment#view_balance"
   ],
   [
     "/ru/intro/billing/service-management/payment",
@@ -9034,6 +9034,14 @@
   [
     "/ru/intro/billing/faq",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/activation"
+  ],
+  [
+    "/ru/intro/billing/faq",
+    "http://localhost:3000/docs/ru/intro/billing/concepts/physical-corporate#prepay"
+  ],
+  [
+    "/ru/intro/billing/faq",
+    "http://localhost:3000/docs/ru/intro/billing/service-management/payment#balance_charge"
   ],
   [
     "/ru/intro/billing/faq",
@@ -17369,7 +17377,7 @@
   ],
   [
     "/ru/tools-for-using-services/account/concepts/projects",
-    "http://localhost:3000/docs/ru/intro/billing/service-management/payment#vnesenie_sredstv"
+    "http://localhost:3000/docs/ru/intro/billing/service-management/payment#balance_charge"
   ],
   [
     "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
