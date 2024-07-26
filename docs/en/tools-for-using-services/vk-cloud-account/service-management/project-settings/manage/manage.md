@@ -6,7 +6,7 @@ Additional project settings are available in [VK Cloud  Management Console](/en/
 
 ## Getting project ID
 
-{include(/ru/_includes/_project_pid_common.md)}
+{include(/en/_includes/_project_pid_common.md)}
 
 To get the PID::
 
@@ -16,10 +16,10 @@ To get the PID::
 <tab>VK Cloud Management Console</tab>
 </tablist>
 <tabpanel>
-{include(/ru/_includes/_project_pid_tab_account.md)}
+{include(/en/_includes/_project_pid_tab_account.md)}
 </tabpanel>
 <tabpanel>
-{include(/ru/_includes/_project_pid_tab_lk.md)}
+{include(/en/_includes/_project_pid_tab_lk.md)}
 </tabpanel>
 </tabs>
 
@@ -33,11 +33,11 @@ The project name can be changed at any stage of the project life.
 <tab>VK Cloud Management Console</tab>
 </tablist>
 <tabpanel>
-{include(/ru/_includes/_project_rename_tab_account.md)}
+{include(/en/_includes/_project_rename_tab_account.md)}
 </tabpanel>
 <tabpanel>
-{include(/ru/_includes/_project_rename_tab_lk.md)}
+{include(/en/_includes/_project_rename_tab_lk.md)}
 </tabpanel>
 </tabs>
 
-{include(/ru/_includes/_project_rename_common.md)}
+{include(/en/_includes/_project_rename_common.md)}
