@@ -1,11 +1,5 @@
 You can monitor the status of individual PostgreSQL hosts using the monitoring tool built into the VK Cloud panel.
 
-<warn>
-
-This tool is only available if the PostgreSQL cluster was [created](../../../dbaas/dbaas-start/create-postresql-mysql) with the "Enable monitoring" option enabled and [config template](../../../dbaas/dbaas-start/db-config) "Single" or "Master-Replica".
-
-</warn>
-
 ## How to use monitoring
 
 To view monitoring data:

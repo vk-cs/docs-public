@@ -124,10 +124,6 @@
       </tabpanel>
       </tabs>
 
-   1. Select the option **Enable monitoring** if you need to monitor the DB instance using the tools of the VK Cloud.
-
-      This option is not available for Redis and MongoDB.
-
    1. Click the **Next step** button.
 
 1. On the “Initialization” step:
