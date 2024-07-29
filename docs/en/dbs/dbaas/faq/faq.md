@@ -1,4 +1,3 @@
-
 <details>
 
 <summary>How to create a database?</summary>
@@ -131,6 +130,8 @@ Use the instructions in the article [Replication](../service-management/replicat
 <summary>How do I install monitoring extensions for the database?</summary>
 
 Installing extensions is described in detail in the section [Managing extensions](../service-management/managing-extensions/).
+
+The monitoring service is enabled by default for PostgreSQL, PostgresPro Standard, PostgresPro Enterprise, PostgresPro Enterprise 1C.
 
 </details>
 
