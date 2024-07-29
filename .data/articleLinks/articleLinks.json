@@ -3329,10 +3329,6 @@
   ],
   [
     "/en/dbs/dbaas/quick-start",
-    "http://localhost:3000/docs/en/dbs/dbaas/quick-start#1_create_postgresql_db_instance"
-  ],
-  [
-    "/en/dbs/dbaas/quick-start",
     "http://localhost:3000/docs/en/dbs/dbaas/tariffication"
   ],
   [
@@ -3350,6 +3346,10 @@
   [
     "/en/dbs/dbaas/concepts/about",
     "http://localhost:3000/docs/en/intro/start/concepts/architecture#availability_zones_567cfd7a"
+  ],
+  [
+    "/en/dbs/dbaas/concepts/about",
+    "http://localhost:3000/docs/en/dbs/dbaas/monitoring/postgresql"
   ],
   [
     "/en/dbs/dbaas/concepts/about",
@@ -3746,10 +3746,6 @@
   [
     "/en/dbs/dbaas/how-to-guides/case-node-exporter",
     "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_a_network"
-  ],
-  [
-    "/en/dbs/dbaas/monitoring/postgresql",
-    "http://localhost:3000/docs/en/dbs/dbaas/dbaas-start/db-config"
   ],
   [
     "/en/dbs/dbaas/monitoring/postgresql",
@@ -12317,10 +12313,6 @@
   ],
   [
     "/ru/dbs/dbaas/quick-start",
-    "http://localhost:3000/docs/ru/dbs/dbaas/quick-start#1_sozdayte_instans_bd_postgresql"
-  ],
-  [
-    "/ru/dbs/dbaas/quick-start",
     "http://localhost:3000/docs/ru/dbs/dbaas/tariffication"
   ],
   [
@@ -12334,6 +12326,10 @@
   [
     "/ru/dbs/dbaas/concepts/about",
     "http://localhost:3000/docs/ru/intro/start/architecture#az"
+  ],
+  [
+    "/ru/dbs/dbaas/concepts/about",
+    "http://localhost:3000/docs/ru/dbs/dbaas/monitoring/postgresql"
   ],
   [
     "/ru/dbs/dbaas/concepts/about",
@@ -12898,10 +12894,6 @@
   [
     "/ru/dbs/dbaas/how-to-guides/case-node-exporter",
     "http://localhost:3000/docs/ru/networks/vnet/service-management/net#udalenie_seti"
-  ],
-  [
-    "/ru/dbs/dbaas/monitoring/postgresql",
-    "http://localhost:3000/docs/ru/dbs/dbaas/dbaas-start/db-config"
   ],
   [
     "/ru/dbs/dbaas/monitoring/postgresql",
