@@ -286,10 +286,6 @@ Using a load balancer [charged](/en/networks/vnet/tariffs).
       </tabpanel>
       </tabs>
 
-   1. Select the option **Enable monitoring** if you need to monitor the cluster using the tools of the VK Cloud.
-
-      This option is not available for MySQL.
-
    1. Click the **Next step** button.
 
 1. On the “Initialization” step:

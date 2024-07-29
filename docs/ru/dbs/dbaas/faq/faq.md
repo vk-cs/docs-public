@@ -132,6 +132,8 @@
 
 Установка расширений подробно описана в разделе [Управление расширениями](../service-management/managing-extensions/).
 
+Для PostgreSQL, PostgresPro Standard, PostgresPro Enterprise, PostgresPro Enterprise 1C мониторинг включен по умолчанию.
+
 </details>
 
 <details>
