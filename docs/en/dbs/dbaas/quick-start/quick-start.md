@@ -218,7 +218,6 @@ The DB instance is charged and consumes computational resources. After completin
      </info>
 
    - **Backup:** `Disabled`.
-   - **Enable monitoring:** make sure that this option is enabled.
 
 1. Click the **Next step** button.
 
@@ -580,7 +579,7 @@ Output of query results similar to the above ones indicates that PostgreSQL and 
 
 ## 9. (Optional) Familiarize yourself with the DB instance monitoring data
 
-The monitoring feature [was enabled during the instance creation](#1_create_postgresql_db_instance). Familiarize yourself with gathered monitoring data:
+The monitoring service is enabled for PostgreSQL. Look through the gathered monitoring data:
 
 1. Go to [VK Cloud management console](https://msk.cloud.vk.com/app/en/).
 1. Select the project where the DB instance is located.

@@ -10,6 +10,8 @@ Managing cloud DBMSs does not require deep knowledge of administration. A DBMS i
 
 In the Moscow [region](/en/tools-for-using-services/account/concepts/regions), for some types of DBMS, you can create geo-distributed configurations with hosts in different [availability zones](/en/intro/start/concepts/architecture#availability_zones_567cfd7a) (GZ1, MS1 and ME1) to further increase fault tolerance.
 
-After deploying the DBMS instance, all that remains is to create the necessary databases on it, fill them with content, connect your applications to them, configure access and monitoring.
+After deploying the DBMS instance, all that remains is to create the necessary databases on it, fill them with content, connect your applications to them, configure access.
+
+The built-in VK Cloud [monitoring](../../monitoring/postgresql) service enables automatically for PostgreSQL, PostgresPro Standard, PostgresPro Enterprise, PostgresPro Enterprise 1C instances.
 
 For some types of DBMS, [extensions](../extensions) are available. You can install them through your management console.
