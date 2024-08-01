@@ -10,7 +10,7 @@ Velero — это клиент-серверная утилита для резе
 1. [Убедитесь](../../connect/kubectl#proverka_podklyucheniya_k_klasteru), что вы можете подключиться к кластеру с помощью `kubectl`.
 1. [Установите](/ru/tools-for-using-services/cli/openstack-cli/) OpenStack CLI, если он еще не установлен. [Убедитесь](/ru/tools-for-using-services/cli/openstack-cli/), что вы можете авторизоваться в облаке с его помощью.
 1. [Создайте hotbox-бакет](../../../../storage/s3/service-management/buckets/create-bucket/) для хранения резервных копий в сервисе [Cloud Storage](../../../../storage/s3).
-1. [Создайте аккаунт](../../../../storage/s3/access-management/s3-account) в сервисе [Cloud Storage](../../../../storage/s3).
+1. [Создайте аккаунт](../../../../storage/s3/service-management/access-management/access-keys) в сервисе [Cloud Storage](../../../../storage/s3).
 
    Выведенные идентификатор ключа и секрет сохраните в файл `s3_creds`:
 
@@ -46,7 +46,7 @@ Velero — это клиент-серверная утилита для резе
    --secret-file <путь к файлу s3_creds> \
    --use-volume-snapshots=false \
    --backup-location-config \
-     region=ru-msk,s3ForcePathStyle="true",s3Url=https://hb.bizmrg.com:443
+     region=ru-msk,s3ForcePathStyle="true",s3Url=<домен>
 
    ```
 
@@ -62,11 +62,16 @@ Velero — это клиент-серверная утилита для резе
    --secret-file <путь к файлу s3_creds> `
    --use-volume-snapshots=false `
    --backup-location-config `
-     region=ru-msk,s3ForcePathStyle="true",s3Url=https://hb.bizmrg.com:443
+     region=ru-msk,s3ForcePathStyle="true",s3Url=<домен>
    ```
 
    </tabpanel>
    </tabs>
+
+   Здесь `<домен>` — домен сервиса Cloud Storage, соответствующий региону аккаунта:
+
+   - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва.
+   - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
 
    После завершения установки будет выведено сообщение:
 
