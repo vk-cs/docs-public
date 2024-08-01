@@ -151,7 +151,7 @@ You may need the card if you work on a prepaid basis and need to make an emergen
 
 <warn>
 
-Charges for bank card payments are not included in [accounting documents for legal entities](../concepts/report#composition_of_accounting_documents_55c18d7): billing report, reconciliation report.
+Charges for bank card payments are not included in [accounting documents for legal entities](../concepts/report#composition_of_accounting_documents): billing report, reconciliation report.
 
 </warn>
 
@@ -293,7 +293,7 @@ Pay for services with a bank card, payments from cards are faster.
 
 <warn>
 
-Charges for bank card payments are not included in [accounting documents for legal entities](../concepts/report#composition_of_accounting_documents_55c18d7): billing report, reconciliation report.
+Charges for bank card payments are not included in [accounting documents for legal entities](../concepts/report#composition_of_accounting_documents): billing report, reconciliation report.
 
 </warn>
 
@@ -470,7 +470,7 @@ Ask this question in the document management department of VK Cloud:
 
    - Full name and details of the organization.
    - The composition of [accounting documents](../concepts/report) that you require.
-   - Method of obtaining documents: through [electronic document management system (EDM)](../concepts/report#electronic_document_management_system_edm_aece81aa) or [in paper form to the postal address](../concepts/report#delivery_of_original_documents_50e7d04c).
+   - Method of obtaining documents: through [electronic document management system (EDM)](../concepts/report#edm) or [in paper form to the postal address](../concepts/report#delivery_of_original_documents).
 
    <info>
 

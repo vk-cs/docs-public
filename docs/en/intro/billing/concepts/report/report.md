@@ -4,18 +4,18 @@ Users receive financial documents from VK Cloud for all payments made. The compo
 
 When replenishing an account, individuals receive a payment receipt in accordance with [Federal Law 54](https://base.garant.ru/12130951/) «О применении контрольно-кассовой техники». The receipt is sent to the VK Cloud project owner's email address. The original payment receipt is not provided.
 
-## Legal entities
+## {heading(Legal entities and sole proprietors)[id=legal_entities]}
 
-At the end of each reporting period, VK Cloud provides the counterparty with a package of accounting [accounting documents](#composition_of_accounting_documents_55c18d7). The reporting period is equal to one calendar month, the documents are signed on the last date of this month.
+At the end of each reporting period, VK Cloud provides the counterparty with a package of accounting [accounting documents](#composition_of_accounting_documents). The reporting period is equal to one calendar month, the documents are signed on the last date of this month.
 
-The documents are sent to the recipients in the [way](#methods_of_obtaining_accounting_documents_9a1959c) that was chosen at the beginning of the cooperation, in the following terms:
+The documents are sent to the recipients in the [way](#methods_of_obtaining_accounting_documents) that was chosen at the beginning of the cooperation, in the following terms:
 
 - If an agreement of amounts is required — around the 15th of the month following the reporting period.
 - If approval is not required — on the 7th-10th of the month following the reporting period.
 
 <info>
 
-If an organization has several [projects](/en/tools-for-using-services/account/concepts/projects), one set of documents is generated for all projects. Upon request, separate packages of documents for each project can be provided.
+If an organization or a sole proprietor has several [projects](/en/tools-for-using-services/account/concepts/projects), one set of documents is generated for all projects. Upon request, separate packages of documents for each project can be provided.
 
 </info>
 
@@ -23,11 +23,11 @@ How to start receiving reporting documents from VK Cloud, read the article [Addi
 
 <warn>
 
-The accounting documents reflect only expenses carried out as bank transfers from a legal entity.
+The accounting documents reflect only expenses carried out as bank transfers from a legal entity or a sole proprietor.
 
 </warn>
 
-### Composition of accounting documents
+### {heading(Composition of accounting documents)[id=composition_of_accounting_documents]}
 
 <tabs>
 <tablist>
@@ -38,7 +38,7 @@ The accounting documents reflect only expenses carried out as bank transfers fro
 
 This refers to work on [service offer agreements](/en/intro/start/legal). This scheme is used by default in all projects, for individuals and legal entities.
 
-Legal entities working under such an agreement are provided with only one document — a universal transfer document. The form of the universal transfer document contains all the details of the invoice, set out in p.p. 5, 5.1, 5.2 art. 169 tax code of the Russian federation.
+Legal entities and sole proprietors working under such an agreement are provided with only one document — a universal transfer document. The form of the universal transfer document contains all the details of the invoice, set out in p.p. 5, 5.1, 5.2 art. 169 tax code of the Russian federation.
 
 The invoice and the Certificate of work performed are not provided, as the universal transfer document replaces both of these documents.
 
@@ -93,7 +93,7 @@ In addition to the documents provided for in the contract, upon request, the fol
 
 - Reconciliation report with the details of mutual settlements.
 
-### Methods of obtaining accounting documents
+### {heading(Methods of obtaining accounting documents)[id=methods_of_obtaining_accounting_documents]}
 
 Documents are sent through the electronic document management system (EDM).
 
@@ -105,21 +105,21 @@ VK Cloud never sends documents to a legal address without an explicit agreement 
 
 </info>
 
-#### Electronic document management system (EDM)
+#### {heading(Electronic document management system (EDM))[id=edm]}
 
 VK Cloud works in the EDM system [Kontur.Diadoc](https://www.diadoc.ru/).
 
-If your organization works with another EDI operator from the [register of the Federal Tax Service of the Russian Federation](https://www.nalog.gov.ru/rn77/oedo/search_edo/), set up roaming to exchange documents with VK LLC using its EDM participant ID — `2BM-7743001840-2012052807514600749280000000000`.
+If your organization or sole proprietor works with another EDI operator from the [register of the Federal Tax Service of the Russian Federation](https://www.nalog.gov.ru/rn77/oedo/search_edo/), set up roaming to exchange documents with VK LLC using its EDM participant ID — `2BM-7743001840-2012052807514600749280000000000`.
 
 You can configure EDM with VK Cloud yourself or send a request for configuration to the document management department of VK Cloud (docs_vktech@vk.company).
 
 <info>
 
-EDM work is only available for projects in [region](/en/tools-for-using-services/account/concepts/regions) Moscow and only organizations registered in the Russian Federation.
+EDM work is only available for projects in [region](/en/tools-for-using-services/account/concepts/regions) Moscow and only organizations and sole proprietors registered in the Russian Federation.
 
 </info>
 
-#### Delivery of original documents
+#### {heading(Delivery of original documents)[id=delivery_of_original_documents]}
 
 To set up paper workflow, contact the document management department of VK Cloud:
 

@@ -49,7 +49,7 @@
 <tabpanel>
 
 1. Отключите [автопополнение](../service-management/add-card#nastroit_avtopopolnenie) с карты, если оно было включено ранее.
-1. Настройте [электронный документооборот (ЭДО)](../concepts/report#elektronnyy_dokumentooborot_edo_76d587b) с VK Cloud, следуя инструкциям вашего оператора ЭДО.
+1. Настройте [электронный документооборот (ЭДО)](../concepts/report#edm) с VK Cloud, следуя инструкциям вашего оператора ЭДО.
 
    Если вам нужна помощь с подключением ЭДО, отправьте заявку в отдел документооборота VK Cloud (docs_vktech@vk.company).
 
