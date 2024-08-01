@@ -81,6 +81,6 @@ To untie the card, contact [technical support](mailto:support@mcs.mail.ru) and p
 
 If you are a legal entity and work on prepayment, leave the card as an additional means of payment for urgent payments. In emergency cases, a one-time card payment can help you to avoid project [freezing](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
 
-Write-offs for payments from bank cards are not included in [accounting documents for legal entities](../../concepts/report#composition_of_accounting_documents_55c18d7): billing report, reconciliation report.
+Write-offs for payments from bank cards are not included in [accounting documents for legal entities](../../concepts/report#composition_of_accounting_documents): billing report, reconciliation report.
 
 </info>
