@@ -1,15 +1,15 @@
-VK Cloud provides special features for [legal entities](../../concepts/physical-corporate/). Contractors-legal entities can receive accounting [accounting documents](../../concepts/report/) from the platform. They have the opportunity to conclude an individual contract with VK Cloud.
+VK Cloud provides special features for [legal entities and sole proprietors](../../concepts/physical-corporate/). Contractors-legal entities can receive accounting [accounting documents](../../concepts/report/) from the platform. They have the opportunity to conclude an individual contract with VK Cloud.
 
 ## Conclusion of an individual contract
 
-Legal entities by default work with VK Cloud on the basis of contracts [public offer](/en/intro/start/legal/legal-terms/). It is possible to conclude an individual contract with VK Cloud, for more information, see the article [Billing of individuals and legal entities](../../concepts/physical-corporate).
+Legal entities and sole proprietors by default work with VK Cloud on the basis of contracts [public offer](/en/intro/start/legal/legal-terms/). It is possible to conclude an individual contract with VK Cloud, for more information, see the article [Billing of individuals and legal entities](../../concepts/physical-corporate).
 
 To conclude an individual contract:
 
 1. Write to VK Cloud customer service at [sales-team@mcs.mail.ru](mailto:sales-team@mcs.mail.ru).
 1. Specify:
 
-   - Full name of the organization and its details.
+   - Full name of the organization or the sole proprietor and its details.
    - Full name and phone number of the contact person.
 
 The manager will contact you to clarify the required terms of the contract.
@@ -28,13 +28,13 @@ To set up workflow with VK Cloud:
    - Document management format (EDM or paper).
    - Full name and phone number of the contact person.
 
-## Additional registration of legal entities
+## {heading(Additional registration of legal entities and sole proprietors)[id=additional_registration_of_legal_entities]}
 
-After [registration](/en/intro/start/account-registration) in VK Cloud, you can go to the project settings and complete the additional registration of the legal entity, specifying your details.
+After [registration](/en/intro/start/account-registration) in VK Cloud, you can go to the project settings and complete the additional registration of the legal entity or the sole proprietor, specifying your details.
 
 <info>
 
-Filling in the details in the management console is only available in [region](/en/tools-for-using-services/account/concepts/regions) Moscow and only Russian legal entities.
+Filling in the details in the management console is only available in [region](/en/tools-for-using-services/account/concepts/regions) Moscow and only Russian legal entities and sole proprietors.
 
 </info>
 
@@ -49,7 +49,7 @@ To complete additional registration:
    If the TIN is found in the contractor database, most of the organization's details will be filled in automatically.
 
 1. Fill in the fields that were left empty and click **Next step**.
-1. In the window that opens, specify the legal address of the organization.
+1. In the window that opens, specify the legal address of the organization or the sole proprietor.
 
    If the TIN is found in the contractor database, the address is filled in automatically. If necessary, the pre-filled field values can be edited.
 

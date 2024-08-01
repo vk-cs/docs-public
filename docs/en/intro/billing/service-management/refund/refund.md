@@ -5,7 +5,7 @@
 - The money will be refunded:
 
   - to individuals — to a bank card or an electronic wallet from which the balance was replenished, based on checks;
-  - to legal entities — to the settlement account of the legal entity specified in the application, on the basis of an application for a refund.
+  - to legal entities and sole proprietors — to the settlement account of the legal entity or the sole proprietor specified in the application, on the basis of an application for a refund.
 
 - The refund is possible only in the project currency.
 
@@ -76,7 +76,7 @@ The response to the request will be sent to the email linked to your account.
 
 The refund request is processed within 48 hours. The time of receipt of funds depends on the payment method. When credited to the card, it can take up to 30 days, depending on the bank.
 
-## Making a refund for legal entities
+## Making a refund for legal entities and sole proprietors
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console under the account of the project owner.
 1. [Preserve](/en/tools-for-using-services/account/service-management/project-settings/manage#project_conservation) the project to stop debiting funds.
@@ -84,7 +84,7 @@ The refund request is processed within 48 hours. The time of receipt of funds de
 
    Example URL for the Moscow region: `https://msk.cloud.vk.com/app/en/mcs123456789/main`, where `mcs123456789` is the project ID (PID).
 
-1. In the email account associated with your VK Cloud management console, create an email with the subject “VK Cloud: Возврат денежных средств”.
+1. In the email account associated with your VK Cloud management console, create an email with the subject “VK Cloud: Refunds”.
 1. Specify in the email:
 
    - Region.
