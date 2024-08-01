@@ -49,7 +49,7 @@ To make a payment:
 
    <info>
 
-   For legal entities, the recommended payment method is **Bank transfer**. Payments made using other methods are not included in the [financial documents](../../concepts/report) for legal entities.
+   For legal entities and sole proprietors, the recommended payment method is **Bank transfer**. Payments made using other methods are not included in the [financial documents](../../concepts/report) for legal entities and sole proprietors.
 
    </info>
 
