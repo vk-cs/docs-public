@@ -1,4 +1,34 @@
 {
+  "additional_registration_of_legal_entities": {
+    "number": null,
+    "full": "Additional registration of legal entities and sole proprietors",
+    "text": "Additional registration of legal entities and sole proprietors"
+  },
+  "legal_entities": {
+    "number": null,
+    "full": "Legal entities and sole proprietors",
+    "text": "Legal entities and sole proprietors"
+  },
+  "composition_of_accounting_documents": {
+    "number": null,
+    "full": "Composition of accounting documents",
+    "text": "Composition of accounting documents"
+  },
+  "methods_of_obtaining_accounting_documents": {
+    "number": null,
+    "full": "Methods of obtaining accounting documents",
+    "text": "Methods of obtaining accounting documents"
+  },
+  "edm": {
+    "number": null,
+    "full": "Электронный документооборот (ЭДО)",
+    "text": "Электронный документооборот (ЭДО)"
+  },
+  "delivery_of_original_documents": {
+    "number": null,
+    "full": "Delivery of original documents",
+    "text": "Delivery of original documents"
+  },
   "cpu_generations": {
     "number": null,
     "full": "Поколения процессоров",
@@ -184,6 +214,26 @@
     "full": "Предоплата",
     "text": "Предоплата"
   },
+  "yuridicheskie_lica": {
+    "number": null,
+    "full": "Юридические лица и ИП",
+    "text": "Юридические лица и ИП"
+  },
+  "reporting_documents_composition": {
+    "number": null,
+    "full": "Состав отчетных документов",
+    "text": "Состав отчетных документов"
+  },
+  "ways_to_receive_reporting_documents": {
+    "number": null,
+    "full": "Способы получения отчетных документов",
+    "text": "Способы получения отчетных документов"
+  },
+  "delivering_original_documents": {
+    "number": null,
+    "full": "Доставка оригиналов документов",
+    "text": "Доставка оригиналов документов"
+  },
   "view_balance": {
     "number": null,
     "full": "Просмотр баланса",
@@ -193,6 +243,11 @@
     "number": null,
     "full": "Внесение средств",
     "text": "Внесение средств"
+  },
+  "doregistraciya_yul": {
+    "number": null,
+    "full": "Дорегистрация ЮЛ и ИП",
+    "text": "Дорегистрация ЮЛ и ИП"
   },
   "activate_stop_delete_backup_plan": {
     "number": null,
@@ -238,6 +293,11 @@
     "number": null,
     "full": "Сервис Cloud ML Platform",
     "text": "Сервис Cloud ML Platform"
+  },
+  "get_default_manifest_additional_info": {
+    "number": null,
+    "full": "Сигнатура метода и пример использования",
+    "text": "Сигнатура метода и пример использования"
   },
   "iam_events": {
     "number": null,

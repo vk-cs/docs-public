@@ -549,11 +549,11 @@
   ],
   [
     "/en/intro/billing/concepts/physical-corporate",
-    "http://localhost:3000/docs/en/intro/billing/concepts/report#electronic_document_management_system_edm_aece81aa"
+    "http://localhost:3000/docs/en/intro/billing/concepts/report#edm"
   ],
   [
     "/en/intro/billing/concepts/physical-corporate",
-    "http://localhost:3000/docs/en/intro/billing/concepts/report#composition_of_accounting_documents_55c18d7"
+    "http://localhost:3000/docs/en/intro/billing/concepts/report#composition_of_accounting_documents"
   ],
   [
     "/en/intro/billing/concepts/physical-corporate",
@@ -569,7 +569,7 @@
   ],
   [
     "/en/intro/billing/concepts/physical-corporate",
-    "http://localhost:3000/docs/en/intro/billing/concepts/report#delivery_of_original_documents_50e7d04c"
+    "http://localhost:3000/docs/en/intro/billing/concepts/report#delivery_of_original_documents"
   ],
   [
     "/en/intro/billing/concepts/physical-corporate",
@@ -597,11 +597,11 @@
   ],
   [
     "/en/intro/billing/concepts/report",
-    "http://localhost:3000/docs/en/intro/billing/concepts/report#composition_of_accounting_documents_55c18d7"
+    "http://localhost:3000/docs/en/intro/billing/concepts/report#composition_of_accounting_documents"
   ],
   [
     "/en/intro/billing/concepts/report",
-    "http://localhost:3000/docs/en/intro/billing/concepts/report#methods_of_obtaining_accounting_documents_9a1959c"
+    "http://localhost:3000/docs/en/intro/billing/concepts/report#methods_of_obtaining_accounting_documents"
   ],
   [
     "/en/intro/billing/concepts/report",
@@ -661,7 +661,7 @@
   ],
   [
     "/en/intro/billing/service-management/add-card",
-    "http://localhost:3000/docs/en/intro/billing/concepts/report#composition_of_accounting_documents_55c18d7"
+    "http://localhost:3000/docs/en/intro/billing/concepts/report#composition_of_accounting_documents"
   ],
   [
     "/en/intro/billing/service-management/payment",
@@ -829,7 +829,7 @@
   ],
   [
     "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/intro/billing/concepts/report#composition_of_accounting_documents_55c18d7"
+    "http://localhost:3000/docs/en/intro/billing/concepts/report#composition_of_accounting_documents"
   ],
   [
     "/en/intro/billing/faq",
@@ -893,7 +893,7 @@
   ],
   [
     "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/intro/billing/concepts/report#composition_of_accounting_documents_55c18d7"
+    "http://localhost:3000/docs/en/intro/billing/concepts/report#composition_of_accounting_documents"
   ],
   [
     "/en/intro/billing/faq",
@@ -949,7 +949,7 @@
   ],
   [
     "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/intro/billing/concepts/report#delivery_of_original_documents_50e7d04c"
+    "http://localhost:3000/docs/en/intro/billing/concepts/report#delivery_of_original_documents"
   ],
   [
     "/en/intro/billing/faq",
@@ -8649,7 +8649,7 @@
   ],
   [
     "/ru/intro/billing/quick-start",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/report#elektronnyy_dokumentooborot_edo_76d587b"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/report#edm"
   ],
   [
     "/ru/intro/billing/quick-start",
@@ -8765,11 +8765,11 @@
   ],
   [
     "/ru/intro/billing/concepts/physical-corporate",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/report#elektronnyy_dokumentooborot_edo_76d587b"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/report#edm"
   ],
   [
     "/ru/intro/billing/concepts/physical-corporate",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/report#sostav_otchetnyh_dokumentov_a8388e6"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/report#reporting_documents_composition"
   ],
   [
     "/ru/intro/billing/concepts/physical-corporate",
@@ -8785,7 +8785,7 @@
   ],
   [
     "/ru/intro/billing/concepts/physical-corporate",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/report#dostavka_originalov_dokumentov_4e41bc83"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/report#delivering_original_documents"
   ],
   [
     "/ru/intro/billing/concepts/physical-corporate",
@@ -8813,11 +8813,11 @@
   ],
   [
     "/ru/intro/billing/concepts/report",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/report#sostav_otchetnyh_dokumentov_a8388e6"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/report#reporting_documents_composition"
   ],
   [
     "/ru/intro/billing/concepts/report",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/report#sposoby_polucheniya_otchetnyh_dokumentov_8380693c"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/report#ways_to_receive_reporting_documents"
   ],
   [
     "/ru/intro/billing/concepts/report",
@@ -8881,7 +8881,7 @@
   ],
   [
     "/ru/intro/billing/service-management/add-card",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/report#sostav_otchetnyh_dokumentov_a8388e6"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/report#reporting_documents_composition"
   ],
   [
     "/ru/intro/billing/service-management/payment",
@@ -8973,7 +8973,7 @@
   ],
   [
     "/ru/intro/billing/service-management/corporate",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/report#elektronnyy_dokumentooborot_edo_76d587b"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/report#edm"
   ],
   [
     "/ru/intro/billing/service-management/corporate",
@@ -8989,7 +8989,7 @@
   ],
   [
     "/ru/intro/billing/service-management/corporate",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/report#dostavka_originalov_dokumentov_4e41bc83"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/report#delivering_original_documents"
   ],
   [
     "/ru/intro/billing/service-management/bill-generation",
@@ -9061,7 +9061,7 @@
   ],
   [
     "/ru/intro/billing/faq",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/report#sostav_otchetnyh_dokumentov_a8388e6"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/report#reporting_documents_composition"
   ],
   [
     "/ru/intro/billing/faq",
@@ -9125,7 +9125,7 @@
   ],
   [
     "/ru/intro/billing/faq",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/report#sostav_otchetnyh_dokumentov_a8388e6"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/report#reporting_documents_composition"
   ],
   [
     "/ru/intro/billing/faq",
@@ -9181,7 +9181,7 @@
   ],
   [
     "/ru/intro/billing/faq",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/report#dostavka_originalov_dokumentov_4e41bc83"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/report#delivering_original_documents"
   ],
   [
     "/ru/intro/billing/faq",
@@ -15529,6 +15529,10 @@
   ],
   [
     "/ru/ml/spark-to-k8s/service-management/launch",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs#get_default_manifest_additional_info"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/service-management/launch",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs#spark_submit_job"
   ],
   [
@@ -15682,6 +15686,14 @@
   [
     "/ru/ml/spark-to-k8s/ml-platform-library/authz",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/ml-platform-library/authz",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/install"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/ml-platform-library/authz",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz#avtorizaciya_s_pomoshchyu_tokena"
   ],
   [
     "/ru/ml/spark-to-k8s/ml-platform-library/authz",
@@ -15966,6 +15978,22 @@
   [
     "/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs#get_manifest_from_yaml_file"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/install"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
   ],
   [
     "/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs",
