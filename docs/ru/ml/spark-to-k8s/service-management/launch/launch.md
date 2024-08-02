@@ -95,6 +95,8 @@
 
       </details>
 
+    Больше примеров настройки манифеста приведено в описании метода [get_default_manifest](../../ml-platform-library/library-reference/spark-jobs#get_default_manifest_additional_info).
+
 1. Отправьте задание Spark в кластер с помощью метода [spark_submit_job](../../ml-platform-library/library-reference/spark-jobs#spark_submit_job). Чтобы указать путь к файлу с кодом приложения, используйте один из способов:
 
     <tabs>
