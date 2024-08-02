@@ -16,7 +16,7 @@
 
 {include(/ru/_includes/_spark_methods_return_value.md)}
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -65,7 +65,7 @@ get_clusters(**kwargs
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -86,7 +86,7 @@ get_clusters(**kwargs
 
 {include(/ru/_includes/_spark_methods_return_value.md)}
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -138,7 +138,7 @@ get_cluster_info(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -165,7 +165,7 @@ get_cluster_info(cluster_id: str,
 
 {include(/ru/_includes/_spark_methods_return_value.md)}
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -217,7 +217,7 @@ set_cluster_delete_time(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -238,7 +238,7 @@ set_cluster_delete_time(cluster_id: str,
 
 {include(/ru/_includes/_spark_methods_return_value.md)}
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -289,7 +289,7 @@ remove_cluster_delete_time(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -316,7 +316,7 @@ remove_cluster_delete_time(cluster_id: str,
 
 {include(/ru/_includes/_spark_methods_return_value.md)}
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -369,7 +369,7 @@ set_cluster_suspend_time(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -390,7 +390,7 @@ set_cluster_suspend_time(cluster_id: str,
 
 {include(/ru/_includes/_spark_methods_return_value.md)}
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -454,7 +454,7 @@ remove_cluster_suspend_time(cluster_id: str,
 
 Возвращаемого значения нет.
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -504,7 +504,7 @@ stop()
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -523,7 +523,7 @@ stop()
 
 Возвращаемого значения нет.
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
