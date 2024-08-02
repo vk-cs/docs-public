@@ -8,7 +8,7 @@
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -39,7 +39,7 @@
 
 Объект класса `K8sSecret` с информацией о созданном секрете.
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Поле
 |Тип
@@ -62,7 +62,7 @@
 |Данные секрета в виде пар `ключ: значение`. Для безопасности данные не выводятся в открытом виде
 |===
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -117,7 +117,7 @@ create_secret_from_yaml(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -144,7 +144,7 @@ create_secret_from_yaml(cluster_id: str,
 
 Объект класса `K8sObjectNamesList`, который содержит в себе список имен секретов.
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -198,7 +198,7 @@ list_secrets(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -233,7 +233,7 @@ list_secrets(cluster_id: str,
 
 Объект класса `K8sSecret` с информацией о секрете.
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Поле
 |Тип
@@ -258,7 +258,7 @@ list_secrets(cluster_id: str,
 Для безопасности данные не выводятся в открытом виде
 |===
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -314,7 +314,7 @@ get_secret_detail(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -349,7 +349,7 @@ get_secret_detail(cluster_id: str,
 
 Возвращаемого значения нет.
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
