@@ -14,7 +14,7 @@
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -47,7 +47,7 @@
 
 Объект класса `K8sConfigmap` с информацией о созданном ConfigMap.
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Поле
 |Тип
@@ -66,7 +66,7 @@
 |Имя пространства имен, в котором создан ConfigMap
 |===
 
-### Дополнительная информация
+### Сигнатура метода, примеры манифестов и пример использования метода
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -198,7 +198,7 @@ namespace: default
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -224,7 +224,7 @@ namespace: default
 
 Объект класса `K8sObjectNamesList[str]`, который содержит список имен всех ConfigMap в указанном пространстве имен.
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -278,7 +278,7 @@ list_configmaps(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -311,7 +311,7 @@ list_configmaps(cluster_id: str,
 
 Объект класса `K8sConfigmap` с информацией о ConfigMap с указанным именем.
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Поле
 |Тип
@@ -330,7 +330,7 @@ list_configmaps(cluster_id: str,
 |Имя пространства имен, в котором находится ConfigMap
 |===
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -386,7 +386,7 @@ get_configmap_detail(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -419,7 +419,7 @@ get_configmap_detail(cluster_id: str,
 
 Возвращаемого значения нет.
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>

@@ -12,7 +12,7 @@
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -57,7 +57,7 @@ client_manifest.job_name = '<новое имя задания>'
 
 Объект класса `Manifest`, который содержит пример стандартного манифеста типа SparkApplication. Переданное в вызове метода значение аргумента `job_name` содержится в поле `metadata.name` манифеста.
 
-### Дополнительная информация
+### {heading(Сигнатура метода и пример использования)[id=get_default_manifest_additional_info]}
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -94,6 +94,7 @@ get_default_manifest(cluster_id: str,
 
    clusters = mlp.get_clusters()
    CLUSTER_ID = clusters[0].id
+   BUCKET_NAME = clusters[0].s3_bucket_name
    JOB_NAME = "pi-spark-job"
 
    client_manifest = mlp.get_default_manifest(
@@ -105,22 +106,169 @@ get_default_manifest(cluster_id: str,
 
    В случае успеха будет выведен код манифеста.
 
-   Вы можете изменить в полученном манифесте значения параметров по умолчанию на желаемые, например:
-
-   ```python
-   # Изменить настройки исполнителя Spark
-   client_manifest.set_executor_settings(
-      {"instances": 2, "cores": 2, "memory": "1024m"})
-   
-   # Изменить настройки драйвера Spark
-   client_manifest.set_driver_settings(
-      {"coreLimit": "100m", "cores": 2, "memory": "1024m"})
-
-   #Задать путь к файлу с Python-кодом для запуска на кластере Cloud Spark
-   client_manifest.main_app_file="local:///opt/spark/examples/src/main/python/<имя файла>.py"
-   ```
+   При необходимости вы можете изменить значения параметров манифеста на желаемые.
 
 </details>
+
+### Примеры настройки манифеста
+
+<details>
+<summary>Как указать основной исполняемый файл приложения для запуска на кластере Cloud Spark</summary>
+
+Выполните скрипт Python:
+
+```python
+client_manifest.main_app_file=f"s3a://{BUCKET_NAME}/spark-files/new_main_file.py"
+```
+
+В этом примере указываются имя и путь к файлу в бакете. Имя бакета содержится в переменной `BUCKET_NAME`.
+
+</details>
+
+<details>
+<summary>Как изменить параметры исполнителя Spark</summary>
+
+Выполните скрипт Python:
+
+```python
+client_manifest.set_executor_settings(
+   {"instances": 2, "cores": 2, "memory": "1024m"})
+```
+
+В этом примере указывается:
+
+- необходимое для выполнения задания количество исполнителей;
+- количество ядер CPU и объем памяти, которые будут выделены для каждого исполнителя.
+
+</details>
+
+<details>
+<summary>Как изменить параметры драйвера Spark</summary>
+
+Выполните скрипт Python:
+
+```python
+client_manifest.set_driver_settings(
+   {"cores": 2, "coreLimit": 3, "memory": "1024m"})
+```
+
+В этом примере указывается необходимое для выполнения задания количество ресурсов драйвера:
+
+- минимальное и максимальное количество ядер CPU;
+- объем памяти.
+
+</details>
+
+<details>
+<summary>Как определить переменную окружения для драйвера Spark</summary>
+
+Выполните скрипт Python:
+
+```python
+client_manifest.set_driver_settings(
+   {"env": [{"name": "NEW_ENV", "value": "NEW_ENV_VALUE"}]})
+```
+
+В этом примере указываются имя переменной `NEW_ENV` и ее значение `NEW_ENV_VALUE`.
+
+</details>
+
+<details>
+<summary>Как изменить параметры конфигурации Spark</summary>
+
+Выполните скрипт Python:
+
+```python
+client_manifest.set_spark_conf(
+   {"spark.driver.extraJavaOptions": "-Divy.cache.dir=/tmp -Divy.home=/tmp"})
+```
+
+В этом примере драйверу Spark передаются дополнительные настройки JVM (виртуальной машины Java), которые нужны для выполнения Java-кода на кластере Spark.
+
+</details>
+
+<details>
+<summary>Как переопределить путь по умолчанию к jar-файлам и другим дополнительным файлам, необходимым для выполнения задания</summary>
+
+Выполните скрипт Python:
+
+```python
+client_manifest.set_jars([f"s3a://{BUCKET_NAME}/test.jar"])
+client_manifest.set_files([f"s3a://{BUCKET_NAME}/dataset.csv"])
+```
+
+В этом примере указывается путь к библиотеке `test.jar` и файлу `dataset.csv` в бакете. Имя бакета содержится в переменной `BUCKET_NAME`.
+
+</details>
+
+<details>
+<summary>Как указать дополнительный файл с кодом приложения</summary>
+
+Выполните скрипт Python:
+
+```python
+client_manifest.add_pyfiles([f"s3a://{BUCKET_NAME}/python_file.py"])
+```
+
+В этом примере указываются имя и путь к файлу с Python-кодом в бакете. Имя бакета содержится в переменной `BUCKET_NAME`.
+
+</details>
+
+<details>
+<summary>Как задать переменные окружения для драйвера и исполнителя Spark</summary>
+
+Выполните скрипт Python:
+
+```python
+client_manifest.add_driver_env([{"name": "MY_DRIVER_ENV", "value": "my_env_value"}])
+client_manifest.add_executor_env([{"name": "MY_EXECUTOR_ENV", "value": "my_env_value"}])
+```
+
+В этом примере определяются:
+
+- переменная окружения драйвера `MY_DRIVER_ENV` со значением `"my_env_value"`;
+- переменная окружения исполнителя `MY_EXECUTOR_ENV` со значением `"my_env_value"`.
+
+</details>
+
+<details>
+<summary>Как добавить в окружение драйвера и исполнителя Spark переменные из секрета</summary>
+
+Выполните скрипт Python:
+
+```python
+client_manifest.add_driver_env_from([{"secretRef": {"name": "my-secret"}}])
+client_manifest.add_executor_env_from([{"secretRef": {"name": "my-secret"}}])
+```
+
+В этом примере в окружение драйвера и исполнителя Spark добавляются переменные из ранее созданного [секрета](https://kubernetes.io/docs/concepts/configuration/secret/) с именем `my-secret`.
+
+</details>
+
+<details>
+<summary>Как задать параметры политики рестарта задания Spark</summary>
+
+Выполните скрипт Python:
+
+```python
+client_manifest.set_restart_policy(
+   restart_type=K8sSparkJobRestartPolicyType.ON_FAILURE,
+   on_failure_retries=3,
+   on_failure_retry_interval=20,
+   on_submission_failure_retries=5,
+   on_submission_failure_retry_interval=20)
+```
+
+В этом примере задаются параметры перезапуска задания для политики типа `ON_FAILURE`:
+
+- `on_failure_retries`: количество попыток перезапуска при ошибке выполнения задания.
+- `on_failure_retries_interval`: интервал в секундах между попытками перезапуска при ошибке выполнения задания.
+- `on_submission_failure_retries`: количество попыток запустить задание, если при запуске возникает ошибка.
+- `on_submission_failure_retries_interval`: интервал в секундах между попытками запустить задание, если при запуске возникает ошибка.
+
+</details>
+
+Больше информации о параметрах настройки Spark в [официальной документации](https://spark.apache.org/docs/latest/configuration.html).
 
 ## get_manifest_from_yaml_file
 
@@ -130,7 +278,7 @@ get_default_manifest(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -147,7 +295,7 @@ get_default_manifest(cluster_id: str,
 
 Объект класса `Manifest`.
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -190,6 +338,78 @@ get_manifest_from_yaml_file(yaml_file_path: str
 
 </details>
 
+## save_yaml
+
+Сохранить манифест в YAML-файл.
+
+Необходимая роль токена: `Администратор` или `Пользователь`. [Подробнее о ролях токенов](../../authz).
+
+### Аргументы метода
+
+[cols="1,1,4", options="header", width=100%]
+|===
+|Аргумент
+|Тип
+|Описание
+
+|`file_path`
+
+(обязательный)
+|`str`
+|Путь к файлу
+|===
+
+### Возвращаемое значение
+
+Возвращаемого значения нет.
+
+### Сигнатура метода и пример использования
+
+<details>
+<summary>Сигнатура метода</summary>
+
+```python
+save_yaml(file_path: str) -> None
+```
+
+</details>
+
+<details>
+<summary>Пример использования метода</summary>
+
+<err>
+
+Для простоты значение токена доступа указано в примере скрипта Python.
+
+При работе в production-среде не оперируйте токенами в открытом виде. Используйте переменные среды окружения, хранилища секретов или другие инструменты для работы с чувствительными данными. [Подробнее про токены](../../authz).
+
+</err>
+
+1. [Установите библиотеку](../../install), если это еще не сделано.
+1. [Создайте токен доступа](../../authz) с ролью `Администратор` или `Пользователь`, если это еще не сделано.
+1. Выполните скрипт Python:
+
+   ```python
+   from mlplatform_client import MLPlatform
+   
+   REFRESH_TOKEN = '<значение токена доступа>'
+   mlp = MLPlatform(refresh_token=REFRESH_TOKEN)
+
+   client_manifest = mlp.get_manifest_from_yaml_file(
+      yaml_file_path='/home/user/sample-job-manifest.yaml')
+
+   client_manifest.set_driver_settings(
+      {"cores": 2, "coreLimit": 3, "memory": "1024m"})
+
+   client_manifest.save_yaml("/home/user/sample-job-manifest.yaml")
+
+   print(client_manifest)
+   ```
+
+   В этом примере из файла `/home/user/sample-job-manifest.yaml` загружается манифест, который затем редактируется и сохраняется в тот же самый файл. В случае успеха будет выведен код измененного манифеста.
+
+</details>
+
 ## spark_submit_job
 
 Отправить задание в кластер Cloud Spark.
@@ -198,7 +418,7 @@ get_manifest_from_yaml_file(yaml_file_path: str
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -235,7 +455,7 @@ get_manifest_from_yaml_file(yaml_file_path: str
 
 {include(/ru/_includes/_spark_job_info.md)}
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -304,7 +524,7 @@ spark_submit_job(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -325,7 +545,7 @@ spark_submit_job(cluster_id: str,
 
 {include(/ru/_includes/_spark_job_info.md)}
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -385,7 +605,7 @@ spark_jobs_list(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -412,7 +632,7 @@ spark_jobs_list(cluster_id: str,
 
 Объект класса `K8sSparkJobInfoDetail` с детальной информацией о задании Spark.
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -491,7 +711,7 @@ spark_job_info(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -518,7 +738,7 @@ spark_job_info(cluster_id: str,
 
 Объект класса `K8sSparkJobLogs` с логами задания Spark.
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -586,7 +806,7 @@ spark_job_logs(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -613,7 +833,7 @@ spark_job_logs(cluster_id: str,
 
 Объект класса `K8sSparkApplication` с подробной информацией о приложении типа SparkApplication, запущенном на кластере Cloud Spark для выполнения задания.
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -705,7 +925,7 @@ describe_spark_job(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -732,7 +952,7 @@ describe_spark_job(cluster_id: str,
 
 Возвращаемого значения нет.
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
@@ -799,7 +1019,7 @@ spark_delete_job(cluster_id: str,
 
 ### Аргументы метода
 
-[cols="1,1,5", options="header", width=100%]
+[cols="1,1,4", options="header", width=100%]
 |===
 |Аргумент
 |Тип
@@ -818,7 +1038,7 @@ spark_delete_job(cluster_id: str,
 
 Объект класса `K8sSparkEventsList` со списком событий кластера Cloud Spark.
 
-### Дополнительная информация
+### Сигнатура метода и пример использования
 
 <details>
 <summary>Сигнатура метода</summary>
