@@ -109,6 +109,11 @@
 
       </details>
 
+   1. Select the cluster operating mode using the **Private mode** option:
+
+      - If the option is disabled, each cluster instance is assigned external IP addresses and DNS. All cluster instances, including Spark History Server and Docker Registry, are accessible from the Internet.
+      - If the option is enabled, the cluster will be created without external IP addresses and DNS. In this mode, access to Spark History Server and Docker Registry, as well as access to the cluster via API, is only possible from the local network or via VPN.
+
    1. Click the **Next step** button.
 
 1. On the «Spark settings» step:
