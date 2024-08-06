@@ -17,7 +17,7 @@ Two options for VM configuration will be considered: without additional settings
 1. Create a Terraform configuration file `variables.tf` with variables:
 
    ```hcl
-   variable "image_flavor" {
+   variable "image_name" {
      type = string
      default = "Ubuntu-22.04-202208"
    }
@@ -40,7 +40,7 @@ Two options for VM configuration will be considered: without additional settings
 
    This file declares the following variables:
 
-   - `image_flavor`: the name of the virtual machine image;
+   - `image_name`: the name of the virtual machine image;
    - `compute_flavor`: the name of the virtual machine configuration template;
    - `key_pair_name`: the name of the key pair that will be used to connect to the virtual machine via SSH;
    - `availability_zone_name`: the name of the availability zone where the virtual machine will be hosted.
@@ -49,7 +49,7 @@ Two options for VM configuration will be considered: without additional settings
 
    <tabs>
    <tablist>
-   <tab>image_flavor</tab>
+   <tab>image_name</tab>
    <tab>compute_flavor</tab>
    <tab>key_pair_name</tab>
    <tab>availability_zone_name</tab>
@@ -149,7 +149,7 @@ data "vkcs_compute_flavor" "compute" {
 }
 
 data "vkcs_images_image" "compute" {
-  name = var.image_flavor
+  name = var.image_name
 }
 
 resource "vkcs_compute_instance" "compute" {
@@ -211,7 +211,7 @@ data "vkcs_compute_flavor" "compute" {
 }
 
 data "vkcs_images_image" "compute" {
-  name = var.image_flavor
+  name = var.image_name
 }
 
 resource "vkcs_compute_instance" "compute" {
