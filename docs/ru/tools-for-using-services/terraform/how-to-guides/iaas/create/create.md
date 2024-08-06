@@ -17,7 +17,7 @@
 1. Создайте файл конфигурации Terraform `variables.tf` с переменными:
 
    ```hcl
-   variable "image_flavor" {
+   variable "image_name" {
      type = string
      default = "Ubuntu-22.04-202208"
    }
@@ -40,7 +40,7 @@
 
    В этом файле объявляются следующие переменные:
 
-   - `image_flavor`: имя образа виртуальной машины;
+   - `image_name`: имя образа виртуальной машины;
    - `compute_flavor`: имя шаблона конфигурации виртуальной машины;
    - `key_pair_name`: имя ключевой пары, которая будет использоваться для подключения к виртуальной машине по SSH;
    - `availability_zone_name`: имя зоны доступности, где будет размещена виртуальная машина.
@@ -49,7 +49,7 @@
 
    <tabs>
    <tablist>
-   <tab>image_flavor</tab>
+   <tab>image_name</tab>
    <tab>compute_flavor</tab>
    <tab>key_pair_name</tab>
    <tab>availability_zone_name</tab>
@@ -149,7 +149,7 @@ data "vkcs_compute_flavor" "compute" {
 }
 
 data "vkcs_images_image" "compute" {
-  name = var.image_flavor
+  name = var.image_name
 }
 
 resource "vkcs_compute_instance" "compute" {
@@ -211,7 +211,7 @@ data "vkcs_compute_flavor" "compute" {
 }
 
 data "vkcs_images_image" "compute" {
-  name = var.image_flavor
+  name = var.image_name
 }
 
 resource "vkcs_compute_instance" "compute" {
