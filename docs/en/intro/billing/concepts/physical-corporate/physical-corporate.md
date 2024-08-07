@@ -14,9 +14,9 @@ If you plan to work with VK Cloud as a legal entity or sole proprietor, go throu
 
 ## Payment scheme
 
-### Prepayment
+### {heading(Prepayment)[id=prepayment]}
 
-The user [deposits](../../service-management/payment#making_a_payment) the project balance in advance for a certain amount. The deposited funds are transferred to the main account of the project, from where they are then spent on paying for services. If a project goes into negative territory, it is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project) until the balance becomes positive.
+The user [deposits](../../service-management/payment#making_a_payment) the project balance in advance for a certain amount. The deposited funds are transferred to the payment account of the project, from where they are then spent on paying for services. If a project becomes negative, it is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project) until the payment account balance becomes positive.
 
 <tabs>
 <tablist>
@@ -39,7 +39,7 @@ When working on prepayment, only a universal transfer document is provided to a 
 
 ### Post-payment
 
-The user is billed once a month for using the services, which he pays for. The project balance under this scheme is always negative, but the project is not [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
+The user is billed once a month for using the services. The payment account balance of the project is always negative under this scheme, but the project is not [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
 
 <tabs>
 <tablist>
@@ -118,7 +118,7 @@ It is recommended to pay for services by bank transfer, since only such payments
 
 <info>
 
-Legal entities and sole proprietors can also top up the project balance with a bank card — for example, if you need to urgently transfer funds to avoid freezing the project. Write-offs for payments from bank cards are not included in [accounting documents for legal entities](../report#composition_of_accounting_documents): billing report, reconciliation report.
+Legal entities and sole proprietors can also top up the payment account balance of the project with a bank card, for example, if you need to urgently transfer funds to avoid freezing the project. Write-offs for payments from bank cards are not included in [accounting documents for legal entities](../report#composition_of_accounting_documents): billing report, reconciliation report.
 
 </info>
 

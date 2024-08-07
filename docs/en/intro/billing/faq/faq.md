@@ -4,7 +4,7 @@
 
 <summary>How do I get bonuses for registering in my management console?</summary>
 
-[Bonuses](../concepts/balance#bonuses) are credited when registering a new account. Bonuses are credited after the activation of services in the project, when all the stages of [account confirmation](/en/intro/start/account-registration#2_confirm_your_account) have been completed.
+[Bonuses](../concepts/balance#bonuses) are credited when registering a new user account. Bonuses are credited after the activation of services in the project, when all the stages of [account confirmation](/en/intro/start/account-registration#2_confirm_your_account) have been completed.
 
 <warn>
 
@@ -16,9 +16,9 @@ If an existing user creates a new project or a new user enters the project by in
 
 <details>
 
-<summary>Procedure for charging bonuses. Why could they have expired?</summary>
+<summary>In what order are the bonuses charged, why could they have expired?</summary>
 
-[Bonuses](../concepts/balance#bonuses) in VK Cloud are spent on using cloud services and resources. One bonus is equal to one ruble.
+[Bonuses](../concepts/balance#bonuses) in VK Cloud are spent on using cloud services and resources. There are different types of bonuses, each type of bonus can be spent only on VK Cloud services corresponding to it. One bonus is equal to one ruble.
 
 Bonuses are given for 60 days, after that they burn off. You can see the details of your expenses on the **Balance** page in your management console.
 
@@ -34,7 +34,7 @@ You cannot withdraw bonuses from the project.
 
 <summary>Are funds being charged after the end of the test period?</summary>
 
-After the test period has expired or bonuses have been burned off, the main balance is used to pay for resources. If the balance is zero, the project is [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project). If the balance is positive, funds will be charged for resource usage.
+After the test period has expired or bonuses have been burned off, the payment account balance is used to pay for resources. If the payment account balance is zero, the project is [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
 
 </details>
 
@@ -42,7 +42,7 @@ After the test period has expired or bonuses have been burned off, the main bala
 
 <summary>How are funds charged?</summary>
 
-VK Cloud records the consumption of resources in the cloud on a minute-by-minute basis, and funds for the use of resources are charged from the balance also on a minute-by-minute basis. Licenses are charged once a day.
+VK Cloud records the consumption of resources in the cloud on a minute-by-minute basis, and funds for the use of resources are charged from the payment account balance also on a minute-by-minute basis. Licenses are charged once a day.
 
 </details>
 
@@ -66,9 +66,9 @@ VK Cloud records the consumption of resources in the cloud on a minute-by-minute
 
 <summary>What is the risk of a negative balance?</summary>
 
-Negative balance is a negative value of management console balance for clients on prepaid payment system.
+The payment account balance in the project management console may go negative. If you work with VK Cloud on [prepay](../concepts/physical-corporate#prepayment), the work of services and resources in this case will be suspended.
 
-No penalties are charged on negative balance. To use the services and resources of the project it is necessary to have a positive balance.
+No penalties are charged on negative balance, but it is necessary to [replenish the payment account](../service-management/payment#making_a_payment) to continue the work.
 
 <warn>
 
@@ -82,7 +82,7 @@ Unlocking of services takes up to 4 hours from the moment of crediting.
 
 <summary>How much do I need to replenish my account to resume work?</summary>
 
-Project is automatically resumed when the balance is positive.
+The project will resume automatically when the payment account balance is positive.
 
 It is recommended to deposit an amount equal to the daily charge, or enable [auto-top-up](../service-management/add-card#configure_auto_completion).
 
@@ -92,7 +92,7 @@ It is recommended to deposit an amount equal to the daily charge, or enable [aut
 
 <summary>I have paid the bill, the services in the project are active. Why is the balance negative?</summary>
 
-You are probably a legal entity and work with VK Cloud for a post-payment. In this case, the balance of your project will always be negative.
+You are probably a legal entity and work with VK Cloud for a post-payment. In this case, the payment account balance of your project will always be negative.
 
 If you do not know your payment scheme, contact the document management department of VK Cloud:
 
@@ -221,7 +221,7 @@ If the payment is not received within the specified time, contact [technical sup
 
 Contact [technical support](mailto:support@mcs.mail.ru). For more information about the refund conditions and the requirements for the application, see [Refund of funds](../service-management/refund).
 
-You can refund only funds that you have previously credited to your account. [Bonuses](../concepts/balance#bonuses) cannot be refunded.
+You can refund only funds that you have previously credited to your payment account. [Bonuses](../concepts/balance#bonuses) cannot be refunded.
 
 For individuals, the funds will be returned to the account from which the payment has been made.
 
@@ -233,10 +233,10 @@ For individuals, the funds will be returned to the account from which the paymen
 
 <summary>The balance has become negative, how can the services be restored?</summary>
 
-When working on prepayment with a negative balance, the project is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project). Its objects are placed in the queue for deletion for a period:
+When working on prepayment with a negative payment account balance, the project is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project). Its objects are placed in the queue for deletion for a period:
 
-- 3 days if you have never replenished the project account.
-- 30 days if you have topped up the project account at least once.
+- 3 days if you have never replenished the payment account of the project.
+- 30 days if you have topped up the payment account of the project at least once.
 
    <err>
 
@@ -247,7 +247,7 @@ When working on prepayment with a negative balance, the project is automatically
 To restore the services:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-1. [Replenish](../service-management/payment#making_a_payment) the balance of the main account of the project [in a convenient way](../concepts/payment-methods/). Use physical bank cards to get the funds to the balance faster. Funds are credited from them immediately, but if you pay by bank transfer, the process can take up to 3 working days.
+1. [Replenish](../service-management/payment#making_a_payment) the payment account of the project [in a convenient way](../concepts/payment-methods/). Use physical bank cards to get the funds to the payment account balance faster. Funds are credited from them immediately, but if you pay by bank transfer, the process can take up to 3 working days.
 1. Wait for the activation of services in the project. It can take up to 2 hours.
 1. Manually activate project resources:
 
