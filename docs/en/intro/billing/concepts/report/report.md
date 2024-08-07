@@ -2,11 +2,11 @@ Users receive financial documents from VK Cloud for all payments made. The compo
 
 ## Individuals
 
-When replenishing an account, individuals receive a payment receipt in accordance with [Federal Law 54](https://base.garant.ru/12130951/) «О применении контрольно-кассовой техники». The receipt is sent to the VK Cloud project owner's email address. The original payment receipt is not provided.
+When replenishing a payment account, individuals receive a payment receipt in accordance with [Federal Law 54](https://base.garant.ru/12130951/) «О применении контрольно-кассовой техники». The receipt is sent to the VK Cloud project owner's email address. The original payment receipt is not provided.
 
 ## {heading(Legal entities and sole proprietors)[id=legal_entities]}
 
-At the end of each reporting period, VK Cloud provides the counterparty with a package of accounting [accounting documents](#composition_of_accounting_documents). The reporting period is equal to one calendar month, the documents are signed on the last date of this month.
+At the end of each reporting period, VK Cloud provides the counterparty with a package of [accounting documents](#composition_of_accounting_documents). The reporting period is equal to one calendar month, the documents are signed on the last date of this month.
 
 The documents are sent to the recipients in the [way](#methods_of_obtaining_accounting_documents) that was chosen at the beginning of the cooperation, in the following terms:
 
@@ -111,11 +111,11 @@ VK Cloud works in the EDM system [Kontur.Diadoc](https://www.diadoc.ru/).
 
 If your organization or sole proprietor works with another EDI operator from the [register of the Federal Tax Service of the Russian Federation](https://www.nalog.gov.ru/rn77/oedo/search_edo/), set up roaming to exchange documents with VK LLC using its EDM participant ID — `2BM-7743001840-2012052807514600749280000000000`.
 
-You can configure EDM with VK Cloud yourself or send a request for configuration to the document management department of VK Cloud (docs_vktech@vk.company).
+You can configure EDM with VK Cloud yourself or send a request for configuration to the document management department of VK Cloud ([docs_vktech@vk.company](mailto:docs_vktech@vk.company)).
 
 <info>
 
-EDM work is only available for projects in [region](/en/tools-for-using-services/account/concepts/regions) Moscow and only organizations and sole proprietors registered in the Russian Federation.
+EDM work is only available for projects in the Moscow [region](/en/tools-for-using-services/account/concepts/regions) and only to organizations and sole proprietors registered in the Russian Federation.
 
 </info>
 

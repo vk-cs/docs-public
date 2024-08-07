@@ -1,6 +1,6 @@
 A quick start will help you set up a new project to pay for services.
 
-After completing all the quick start steps, you will link a payment card to the project and top up the project balance for the first time. Besides that:
+After completing all the quick start steps, you will link a payment card to the project and top up the payment account of the project for the first time. Besides that:
 
 - individuals will set up auto-replenishment of the balance;
 - legal entities will set up electronic document management and prepare a project for the correct unloading of invoices for payment.
@@ -21,9 +21,9 @@ After completing all the quick start steps, you will link a payment card to the 
 1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
 1. Click on the user name in the header of the page, select **Balance and payments** from the drop-down list.
 
-The project balance will be displayed on the page, on it you will see the welcome [bonuses](../concepts/balance) accrued after registration.
+The payment account balance and the bonus balance of the project will be displayed on the page. The bonus balance display the welcome [bonuses](../concepts/balance) accrued after registration.
 
-For more information about the balance, see the article [Balance management](../service-management/payment).
+For more information about the balance, see the [Balance management](../service-management/payment) article.
 
 ## 2. Make sure that a map is linked to the project
 
@@ -60,7 +60,7 @@ One card can be linked to only one project. When linking the card, a small amoun
 </tabpanel>
 </tabs>
 
-## 4. Add the initial amount to the balance
+## 4. Add the initial amount to the payment account
 
 <tabs>
 <tablist>
@@ -71,7 +71,7 @@ One card can be linked to only one project. When linking the card, a small amoun
 
 1. Go to [management console](https://msk.cloud.vk.com/app/en/) VK Cloud.
 1. Click on the user name in the header of the page, select **Balance and payments** from the drop-down list.
-1. [Top up](../service-management/payment#making_a_payment) the project balance in a [convenient way](../concepts/payment-methods) for you.
+1. [Top up](../service-management/payment#making_a_payment) the payment account of the project in a [convenient way](../concepts/payment-methods) for you.
 
 </tabpanel>
 <tabpanel>
@@ -86,7 +86,7 @@ Crediting of funds can take up to three banking days.
 </tabpanel>
 </tabs>
 
-Funds will be debited from the account as the paid resources are used. If the project goes into negative territory, it will be [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
+Funds will be debited from the payment account as the paid resources are used. If the project becomes negative, it will be [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project).
 
 ## What's next?
 
