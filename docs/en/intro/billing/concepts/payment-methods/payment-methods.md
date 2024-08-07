@@ -1,4 +1,4 @@
-There are several ways to [top up](../../service-management/payment) the balance of [the project](/en/tools-for-using-services/account/concepts/projects). The deposited funds are transferred to the [main account](../balance) of the project, from where they are then spent on paying for services.
+There are several ways to [top up](../../service-management/payment) the balance of [the project](/en/tools-for-using-services/account/concepts/projects). The deposited funds are transferred to the [payment account balance](../balance) of the project, from where they are then spent on paying for services.
 
 The list of available payment methods is displayed on the **Balance** page of the management console when you click on the button **Make a payment**. The available methods depend on [region](/en/tools-for-using-services/account/concepts/regions).
 
@@ -39,7 +39,7 @@ The list of available payment methods is displayed on the **Balance** page of th
 
 - Bank card.
 
-    Only physical Visa and MasterCard cards issued by banks of Kazakhstan, Armenia, Azerbaijan, Belarus, Kyrgyzstan, Uzbekistan, Tajikistan, Lithuania, Latvia, Estonia and Georgia are supported.
+    Only physical Visa and MasterCard cards issued by banks of Armenia, Azerbaijan, Belarus, Estonia, Georgia, Kazakhstan, Kyrgyzstan, Latvia, Lithuania, Tajikistan, and Uzbekistan are supported.
 
     Auto-completion is not supported in the Kazakhstan region.
 

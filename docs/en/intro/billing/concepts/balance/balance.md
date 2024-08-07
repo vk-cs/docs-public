@@ -1,57 +1,50 @@
-The balance of a [project](/en/tools-for-using-services/account/concepts/projects) is the overall sum of funds on the project accounts, the main and the bonus ones.
+For each new [project](/en/tools-for-using-services/account/concepts/projects), several accounts are created automatically:
 
-You can [view](../../service-management/payment) the project balance in the [management console](https://msk.cloud.vk.com/app/en/). Information about the balance is available if the services are [activated](/en/tools-for-using-services/account/service-management/activation) in the project.
-
-## The main and the bonus account
-
-For each new project, two accounts are created automatically:
-
-- The main account:
+- The payment account is an account to which the real money is credited:
 
   - You can replenish it using one of the available [payment methods](../payment-methods).
   - Funds on it can be [refunded](../../service-management/refund).
   - Funds on it never expire.
 
-- The bonus account — a dedicated account for storing bonuses:
+- The bonus account is a dedicated account for storing bonuses:
 
   - You cannot replenish this account, funds can be credited to it by the platform only.
   - Funds on it cannot be refunded.
   - Funds on it can sometimes expire.
+  - There can be several bonus accounts. Bonuses are divided into several types, and a corresponding bonus account is created for each type. See [Bonuses](#bonuses) for details.
 
-    See details in subsection [Bonuses](#bonuses).
+Payment account status and balance of all bonus accounts are [available](../../service-management/payment) in the header of the [management console](https://msk.cloud.vk.com/app/), if services are [activated](/en/tools-for-using-services/account/service-management/activation). The sum of funds on the payment account reflects **Personal balance**, the sum of bonuses on all bonus accounts reflects **Bonus balance**.
 
-You can pay for services from both accounts. Funds are first debited from the bonus account, and after all funds on the bonus account are spent from the main account.
-
-## Expense and negative balance
+## Expenses and negative payment account balance
 
 The balance starts to be spent after the first chargeable objects are created, such as virtual machines and floating IP addresses.
 
-If the funds on both accounts run out, the project balance becomes negative, and the project is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project). The project objects are placed in a queue for deletion, and a corresponding notification is sent to the project owner's email.
+The bonus account corresponding to the type of created object is debited first. When this bonus account runs out of funds, the money is deducted from the payment account balance, even if there are funds in other bonus accounts. If the payment account balance runs out of funds, the project is automatically [frozen](/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project). The project objects are placed in a queue for deletion, and a corresponding notification is sent to the project owner's email.
 
 <info>
 
-For legal entities that work on a post-payment, a negative balance does not lead to the freezing of the project.
+For legal entities that work on a post-payment, a negative payment account balance does not lead to the freezing of the project.
 
 </info>
 
-To resume the services and avoid deleting objects, [top up](../../service-management/payment#making_a_payment) the balance. If the balance becomes positive, the project will be automatically unfrozen within 4 hours. After defrosting, all objects that have been stopped must be started manually.
+To resume the services and avoid deleting objects, [top up](../../service-management/payment#making_a_payment) the payment account balance. If the payment account balance becomes positive, the project will be automatically unfrozen within 4 hours. After defrosting, all objects that have been stopped must be started manually.
 
 ## Bonuses
 
-Bonuses, or bonus points, are virtual funds credited to the project balance by the VK Cloud platform itself. When paying for services, bonuses are the same as real funds.
+*Bonuses*, or *bonus points*, are virtual funds credited by the VK Cloud platform to the bonus balance of the project. When paying for services, one bonus point for the Moscow [region](/en/tools-for-using-services/account/concepts/regions) equals one ruble, for the Kazakhstan region — one tenge.
+
+There are different types of bonuses. The type of bonuses corresponds to the services and objects of VK Cloud, which can be paid by these bonuses. For example, bonuses for virtual machines can only be spent to pay for virtual servers.
 
 Bonuses are credited:
 
-- When a new account is [registered](/en/intro/start/account-registration) on the platform. These sign-up bonuses are credited only once, after services are activated in the [project](/en/tools-for-using-services/account/concepts/projects) that is created for the account. The amount of bonuses depends on the region of the project:
+- When a new user account is [registered](/en/intro/start/account-registration) on the platform. These sign-up bonuses are credited only once, after services are activated in the [project](/en/tools-for-using-services/account/concepts/projects) that is created for the account. The amount of bonuses depends on the region of the project:
 
   - Moscow — 3000 bonuses;
   - Kazakhstan — 24000 bonuses.
 
-  One bonus point for [region](/en/tools-for-using-services/account/concepts/regions) Moscow equals one ruble, for region Kazakhstan — one tenge.
-
   <err>
 
-  Unspent sign-up bonuses expire in 60 calendar days after the account registration.
+  Unspent sign-up bonuses expire in 60 calendar days after the user registration.
 
   </err>
 
