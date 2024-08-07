@@ -465,10 +465,6 @@
   ],
   [
     "/en/intro/billing/concepts/balance",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/activation"
-  ],
-  [
-    "/en/intro/billing/concepts/balance",
     "http://localhost:3000/docs/en/intro/billing/concepts/payment-methods"
   ],
   [
@@ -481,6 +477,10 @@
   ],
   [
     "/en/intro/billing/concepts/balance",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/activation"
+  ],
+  [
+    "/en/intro/billing/concepts/balance",
     "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/projects#automatic_freezing_of_the_project"
   ],
   [
@@ -489,11 +489,11 @@
   ],
   [
     "/en/intro/billing/concepts/balance",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/projects"
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
   ],
   [
     "/en/intro/billing/concepts/balance",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/projects"
   ],
   [
     "/en/intro/billing/concepts/physical-corporate",
@@ -649,6 +649,10 @@
   ],
   [
     "/en/intro/billing/service-management/add-card",
+    "http://localhost:3000/docs/en/intro/billing/concepts/balance"
+  ],
+  [
+    "/en/intro/billing/service-management/add-card",
     "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
   ],
   [
@@ -681,7 +685,7 @@
   ],
   [
     "/en/intro/billing/service-management/payment",
-    "http://localhost:3000/docs/en/intro/billing/concepts/balance#the_main_and_the_bonus_account"
+    "http://localhost:3000/docs/en/intro/billing/concepts/balance"
   ],
   [
     "/en/intro/billing/service-management/payment",
@@ -806,6 +810,14 @@
   [
     "/en/intro/billing/faq",
     "http://localhost:3000/docs/en/tools-for-using-services/account/service-management/activation"
+  ],
+  [
+    "/en/intro/billing/faq",
+    "http://localhost:3000/docs/en/intro/billing/concepts/physical-corporate#prepayment"
+  ],
+  [
+    "/en/intro/billing/faq",
+    "http://localhost:3000/docs/en/intro/billing/service-management/payment#making_a_payment"
   ],
   [
     "/en/intro/billing/faq",
