@@ -6,9 +6,9 @@ Viewing project expenses details and making payments is available to users whose
 
 ## Viewing the balance
 
-At the top of the management console page, the balance total is displayed: the sum of funds on both project [accounts](../../concepts/balance).
+At the top of the management console page, [the payment account balance and the bonus balance](../../concepts/balance) of the project are displayed.
 
-To view the balance:
+To see details and costs of services:
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Make sure that the project has [services activated](/en/tools-for-using-services/account/service-management/activation).
@@ -17,17 +17,15 @@ To view the balance:
    - Click on your user name in the top part of the management console page and select **Balance and payments** from the drop-down list.
    - Select the **Balance** section in the side menu.
 
-   The page displays the balance of main and bonus funds.
-
 <info>
 
-The page also displays [detailed expenses](../detail) on all projects in which your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) is Owner, Superadministrator, or Billing Administrator. The data on the **Details** и **Expenses on services** tabs are by default pre-filtered by the current project.
+The [detailing](../detail) is available on all projects in which your [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) is Owner, Superadministrator, or Billing Administrator. The data on the **Detail** and **Expenses on services** tabs is filtered by the current project by default.
 
 </info>
 
 ## Making a payment
 
-It is possible to credit funds to the [main account](../../concepts/balance#the_main_and_the_bonus_account) of the project only and in the project currency only.
+It is possible to credit funds to the [payment account balance](../../concepts/balance) of the project only and in the project currency only.
 
 To make a payment:
 
