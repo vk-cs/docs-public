@@ -1,4 +1,9 @@
 {
+  "prepayment": {
+    "number": null,
+    "full": "Prepayment",
+    "text": "Prepayment"
+  },
   "additional_registration_of_legal_entities": {
     "number": null,
     "full": "Additional registration of legal entities and sole proprietors",
