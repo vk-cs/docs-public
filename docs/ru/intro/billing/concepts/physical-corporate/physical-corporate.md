@@ -39,7 +39,7 @@
 
 ### Постоплата
 
-Пользователю раз в месяц выставляется счет за использование сервисов, который он оплачивает. Баланс лицевого счета проекта при такой схеме всегда отрицательный, но проект не [замораживается](/ru/tools-for-using-services/account/concepts/projects#avtomaticheskaya_zamorozka_proekta).
+Пользователю раз в месяц выставляется счет за использование сервисов. Баланс лицевого счета проекта при такой схеме всегда отрицательный, но проект не [замораживается](/ru/tools-for-using-services/account/concepts/projects#avtomaticheskaya_zamorozka_proekta).
 
 <tabs>
 <tablist>
