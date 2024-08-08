@@ -17,7 +17,7 @@ Cloud Spark — a solution based on [Apache Spark Operator](https://github.com/G
 - Horizontal and vertical cluster scaling with autoscaling support.
 - Access differentiation using tokens and a role model.
 - Auto-delete or put the cluster into sleep mode according to a schedule.
-- [Service Management](https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz) using the API.
+- [Service Management](https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz) using the API.
 
 ## Interaction of service components
 

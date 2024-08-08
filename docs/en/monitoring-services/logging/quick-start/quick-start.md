@@ -4,7 +4,7 @@
 1. Install [Fluent Bit](https://docs.fluentbit.io/manual/installation/linux/ubuntu) version 2.1.9 on the VM:
 
    ```bash
-   curl https://cloudlogging.hb.ru-msk.vkcs.cloud/fluent-bit-install-scripts/install.sh | FLUENT_BIT_RELEASE_VERSION=2.1.9 sh
+   curl https://cloudlogging.hb.bizmrg.com/fluent-bit-install-scripts/install.sh | FLUENT_BIT_RELEASE_VERSION=2.1.9 sh
    ```
 
 1. [Generate](../service-management/generate-userdata/) credentials for connecting to the service.
