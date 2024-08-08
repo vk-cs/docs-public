@@ -98,7 +98,7 @@ CORS использует дополнительные HTTP-заголовки. 
   <summary>Общий вид подписанного URL</summary>
 
 ```bash
-https://hb.vkcs.cloud/<имя_бакета>/<имя_ключа>?
+https://hb.bizmrg.com/<имя_бакета>/<имя_ключа>?
      X-Amz-Algorithm=AWS4-HMAC-SHA256
     &X-Amz-Expires=<интервал времени в секундах>
     &X-Amz-SignedHeaders=<список заголовков разделенный символами ";">
