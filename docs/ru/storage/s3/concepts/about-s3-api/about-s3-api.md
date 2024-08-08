@@ -14,7 +14,7 @@ Cloud Storage предоставляет [RESTful XML API](/ru/tools-for-using-s
 
 ## Совместимость с S3
 
-API Cloud Storage предназначен для взаимодействия с API Amazon AWS S3. В большинстве случаев при использовании клиентской библиотеки установка "конечной точки" (endpoint) или "базового" (base) URL-адреса `hb.vkcs.cloud` и создание ключевой пары позволит использовать сервис Cloud Storage.
+API Cloud Storage предназначен для взаимодействия с API Amazon AWS S3. В большинстве случаев при использовании клиентской библиотеки установка "конечной точки" (endpoint) или "базового" (base) URL-адреса `hb.bizmrg.com` и создание ключевой пары позволит использовать сервис Cloud Storage.
 
 Cloud Storage обеспечивает поддержку операций создания, чтения, обновления и удаления как для бакетов, так и для объектов, а также возможность определять списки управления доступом (ACL). Некоторые функции S3 не поддерживаются, как показано в таблице ниже:
 
@@ -114,7 +114,7 @@ signature = Hex(HMAC-SHA256(signingKey, stringToSign))
 
 ```http
 GET /?acl HTTP/1.1
-Host: my-test-bucket1.hb.vkcs.cloud
+Host: my-test-bucket1.hb.bizmrg.com
 x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date: 20200831T221549Z
 ```
@@ -125,7 +125,7 @@ x-amz-date: 20200831T221549Z
 GET
 /
 acl=
-host:my-test-bucket1.hb.vkcs.cloud
+host:my-test-bucket1.hb.bizmrg.com
 x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 x-amz-date:20200831T221549Z
 host;x-amz-content-sha256;x-amz-date
@@ -142,7 +142,7 @@ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 |Content-Length|Длина тела запроса в байтах. Требуется для запросов PUT, содержащих тело XML.|
 |Content-Type|Тип MIME тела запроса (например text/plain)|
 |Date|Текущая дата и время в формате всемирного координированного времени (UTC) в формате RFC 2822. Пример: Mon, 10 Jul 2017 19:05:09 +0000|
-|Host|Целевой хост для запроса (например, my-test-bucket1.hb.vkcs.cloud).|
+|Host|Целевой хост для запроса (например, my-test-bucket1.hb.bizmrg.com).|
 |x-amz-content-sha256|Хэш SHA256 полезной нагрузки запроса. Требуется при использовании AWS Signature Version 4 для аутентификации.|
 |x-amz-date|Текущая дата и время в формате всемирного координированного времени (UTC) с использованием формата ISO 8601: %Y%m%dT%H%M%SZ (например 20200831T172753Z). Если предоставляется, он имеет приоритет над заголовком «Дата».|
 

@@ -40,13 +40,13 @@ The following will be used:
 1. On the local machine, run the command:
 
    ```bash
-   dd if=./image.raw bs=32M | gzip -c | aws s3 cp - s3://uc_bucket/image.raw.gz --endpoint-url http://hb.ru-msk.vkcs.cloud
+   dd if=./image.raw bs=32M | gzip -c | aws s3 cp - s3://uc_bucket/image.raw.gz --endpoint-url http://hb.bizmrg.com
    ```
 
 1. Verify that uploading has started using the command:
 
    ```bash
-   aws s3api list-multipart-uploads --bucket uc_bucket --endpoint-url http://hb.ru-msk.vkcs.cloud
+   aws s3api list-multipart-uploads --bucket uc_bucket --endpoint-url http://hb.bizmrg.com
    ```
 
    <details>
@@ -78,7 +78,7 @@ The following will be used:
 1. Check the partitions using the command:
 
    ```bash
-   aws s3api list-parts --bucket uc_bucket --endpoint-url http://hb.ru-msk.vkcs.cloud --key image.raw.gz  --upload-id 3ceXH7brs7r8DohqQ9BsJzfjkkhMxQux67Z8MQXYGh9Bv63XXXX
+   aws s3api list-parts --bucket uc_bucket --endpoint-url http://hb.bizmrg.com --key image.raw.gz  --upload-id 3ceXH7brs7r8DohqQ9BsJzfjkkhMxQux67Z8MQXYGh9Bv63XXXX
    ```
 
    <details>
@@ -136,7 +136,7 @@ The following will be used:
 1. Place the image on the disk using the command:
 
    ```bash
-   wget https://uc_bucket.hb.ru-msk.vkcs.cloud/image.raw.gz -O - | gunzip | dd of=/dev/vdb bs=32M
+   wget https://uc_bucket.hb.bizmrg.com/image.raw.gz -O - | gunzip | dd of=/dev/vdb bs=32M
    ```
 
 1. [Mark](/en/computing/iaas/service-management/volumes#changing_the_bootable_attribute) the disk containing the OS image as bootable.

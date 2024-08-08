@@ -42,7 +42,7 @@ As an example, an application will be used to calculate an approximate value of 
    1. In the JupyterHub notebook, create and execute a cell with the following contents:
 
       ```bash
-      %pip install https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz
+      %pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
       ```
 
    </tabpanel>
@@ -51,7 +51,7 @@ As an example, an application will be used to calculate an approximate value of 
    Execute the command:
 
    ```bash
-   pip install https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz
+   pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
    ```
 
    </tabpanel>
