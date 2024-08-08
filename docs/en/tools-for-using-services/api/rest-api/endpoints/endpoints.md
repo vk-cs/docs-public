@@ -63,7 +63,7 @@ The Cloudlogs endpoint (https://mcs.mail.ru/cloudlogs/v1/logs) that is not shown
 
 | Endpoint                            | Address                          | Purpose |
 |-------------------------------------|----------------------------------|--|
-| S3 domain                 | https://hb.ru-msk.vkcs.cloud/    | Managing [Cloud storage](/en/storage/s3) |
+| S3 domain                 | https://hb.bizmrg.com/    | Managing [Cloud storage](/en/storage/s3) |
 
 
 ### Cloud ML Platform
