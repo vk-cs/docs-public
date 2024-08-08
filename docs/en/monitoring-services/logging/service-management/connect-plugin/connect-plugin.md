@@ -10,14 +10,14 @@
    <tabpanel>
 
    ```bash
-   sudo rpm -i https://cloudlogging.hb.ru-msk.vkcs.cloud/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin-0.1.3-1.x86_64.rpm
+   sudo rpm -i https://cloudlogging.hb.bizmrg.com/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin-0.1.3-1.x86_64.rpm
    ```
 
    </tabpanel>
    <tabpanel>
 
    ```bash
-   curl -sSLo vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb https://cloudlogging.hb.ru-msk.vkcs.cloud/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb
+   curl -sSLo vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb https://cloudlogging.hb.bizmrg.com/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb
    sudo dpkg -i vkcloudlogs-fluent-bit-plugin_0.1.3_amd64.deb
    ```
 
@@ -25,7 +25,7 @@
    <tabpanel>
 
    ```bash
-   sudo apt-get install https://cloudlogging.hb.ru-msk.vkcs.cloud/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin-0.1.3-1.x86_64.rpm
+   sudo apt-get install https://cloudlogging.hb.bizmrg.com/vkcloudlogs-fluent-bit-plugin/vkcloudlogs-fluent-bit-plugin-0.1.3-1.x86_64.rpm
    ```
 
    </tabpanel>
