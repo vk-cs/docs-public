@@ -61,8 +61,8 @@
 
       - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-         - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
-         - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
+         - `https://hb.bizmrg.com` — домен региона Москва;
+         - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
       - (Опционально) `<класс-хранения>` — задает [класс хранения](../../../reference#klass_hraneniya) объекта. Если не указано, класс хранения наследуется из бакета. Доступные значения:
 
@@ -82,7 +82,7 @@
 
    ```bash
    aws s3 cp ../pictures/picture.png s3://my-bucket/folder/my-picture.png 
-      --endpoint-url https://hb.ru-msk.vkcs.cloud 
+      --endpoint-url https://hb.bizmrg.com 
       --storage-class STANDARD_IA 
       --acl public-read
    ```
@@ -129,7 +129,7 @@
    )
 
    const (
-	   vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcs.cloud"
+	   vkCloudHotboxEndpoint = "https://hb.bizmrg.com"
 	   defaultRegion         = "us-east-1"
    )
 
@@ -178,8 +178,8 @@
    ```
    Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
-   - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
+   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    Команда `PutObject` подробно описана в [официальной документации к библиотеке aws-sdk-go](https://docs.aws.amazon.com/sdk-for-go/api/service/s3/#S3.PutObject).
 
@@ -197,7 +197,7 @@
       session = boto3.session.Session()
       s3_client = session.client(
          service_name = 's3', 
-         endpoint_url = 'https://hb.ru-msk.vkcs.cloud'
+         endpoint_url = 'https://hb.bizmrg.com'
          )
 
       test_bucket_name = 'boto3-test-bucket-name'
@@ -214,8 +214,8 @@
 
    Значение переменной `endpoint_url` должно соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
-   - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
+   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
 Команды `put_object` и `upload_file` подробно описаны в официальной документации к библиотеке boto3 по методам [PUT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.put_object) и [UPLOAD](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html?highlight=delete_objects#S3.Client.upload_file).
 
@@ -256,8 +256,8 @@
 
    - `<endpoint-url>` — домен сервиса Cloud Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-      - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
-      - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
+      - `https://hb.bizmrg.com` — домен региона Москва;
+      - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    В результате вернется ответ с параметрами загрузки, включая идентификатор составной загрузки — `UploadId`. Сохраните полученный идентификатор, он понадобится для выполнения последующих команд.
 
@@ -267,7 +267,7 @@
    Пример команды:
 
    ```bash
-   aws s3api create-multipart-upload --bucket mybucket --key large.avi --endpoint-url https://hb.ru-msk.vkcs.cloud
+   aws s3api create-multipart-upload --bucket mybucket --key large.avi --endpoint-url https://hb.bizmrg.com
    ```
 
    Пример ответа:
@@ -313,7 +313,7 @@
       --part-number 1 
       --body large.avi.00.part 
       --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH 
-      --endpoint-url https://hb.ru-msk.vkcs.cloud
+      --endpoint-url https://hb.bizmrg.com
    ```
 
    Пример ответа:
@@ -347,7 +347,7 @@
       --bucket mybucket 
       --key large.avi 
       --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH 
-      --endpoint-url https://hb.ru-msk.vkcs.cloud
+      --endpoint-url https://hb.bizmrg.com
    ```
 
    Пример ответа:
@@ -443,14 +443,14 @@
       --multipart-upload file://fileparts.json 
       --bucket mybucket --key large.avi 
       --upload-id example3K1xj3g1KUb2pKeDAfeT2zP6K74XiyJtceMeXH 
-      --endpoint-url https://hb.ru-msk.vkcs.cloud
+      --endpoint-url https://hb.bizmrg.com
    ```
 
    Пример ответа:
 
    ```bash
    {
-    "Location": "http://hb.ru-msk.vkcs.cloud/mybucket/large.avi",
+    "Location": "http://hb.bizmrg.com/mybucket/large.avi",
     "Bucket": "mybucket",
     "Key": "large.avi",
     "ETag": "\"example7e0a4a8ce5683bf54ee3dff96-4\""

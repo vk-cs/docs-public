@@ -35,7 +35,7 @@
    1. В блокноте JupyterHub создайте и выполните ячейку со следующим содержимым:
 
       ```bash
-      %pip install https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz
+      %pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
       ```
 
    </tabpanel>
@@ -44,7 +44,7 @@
    Выполните команду:
 
    ```bash
-   pip install https://mlplatform.hb.ru-msk.vkcs.cloud/mlplatform_client.tar.gz
+   pip install https://mlplatform.hb.bizmrg.com/mlplatform_client.tar.gz
    ```
 
    </tabpanel>

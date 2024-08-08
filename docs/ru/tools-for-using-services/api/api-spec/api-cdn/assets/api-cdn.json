@@ -1648,7 +1648,7 @@
           },
           "hostHeader": {
             "enabled": true,
-            "value": "example.hb.ru-msk.vkcs.cloud"
+            "value": "example.hb.bizmrg.com"
           },
           "ignoreQueryString": {
             "enabled": true,
@@ -1663,7 +1663,7 @@
           }
         },
         "originGroup": 80,
-        "originGroup_name": "example.hb.ru-msk.vkcs.cloud",
+        "originGroup_name": "example.hb.bizmrg.com",
         "originProtocol": "MATCH",
         "preset_applied": false,
         "proxy_ssl_enabled": false,

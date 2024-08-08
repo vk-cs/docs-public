@@ -70,13 +70,13 @@
 
       - `endpoint-url` — домен сервиса Cloud Storage, должен соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-         - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
-         - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
+         - `https://hb.bizmrg.com` — домен региона Москва;
+         - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    Пример команды создания бакета:
 
    ```bash
-   aws s3 mb s3://example-bucket --endpoint-url https://hb.ru-msk.vkcs.cloud
+   aws s3 mb s3://example-bucket --endpoint-url https://hb.bizmrg.com
    ```
 
    Пример ответа:
@@ -105,7 +105,7 @@
    )
 
    const (
-	   vkCloudHotboxEndpoint = "https://hb.ru-msk.vkcs.cloud"
+	   vkCloudHotboxEndpoint = "https://hb.bizmrg.com"
 	   defaultRegion         = "us-east-1"
    )
 
@@ -131,8 +131,8 @@
 
    Значение переменной `vkCloudHotboxEndpoint` должно соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
-   - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
+   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    Название бакета должно:
 
@@ -165,7 +165,7 @@
    session = boto3.session.Session()
    s3_client = session.client(
        service_name='s3',
-       endpoint_url='https://hb.ru-msk.vkcs.cloud'
+       endpoint_url='https://hb.bizmrg.com'
    )
 
 
@@ -176,8 +176,8 @@
 
    Значение переменной `endpoint_url` должно соответствовать [региону](../../../../../tools-for-using-services/account/concepts/regions) аккаунта:
 
-   - `https://hb.ru-msk.vkcs.cloud` — домен региона Москва;
-   - `https://hb.kz-ast.vkcs.cloud` — домен региона Казахстан.
+   - `https://hb.bizmrg.com` — домен региона Москва;
+   - `https://hb.kz-ast.bizmrg.com` — домен региона Казахстан.
 
    Название бакета должно:
 

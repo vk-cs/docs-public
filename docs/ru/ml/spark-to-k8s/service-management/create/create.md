@@ -141,7 +141,7 @@
         ```yaml
         spark.eventLog.dir: s3a://spark-bucket
         spark.eventLog.enabled: "true"
-        spark.hadoop.fs.s3a.endpoint: https://hb.vkcs.cloud
+        spark.hadoop.fs.s3a.endpoint: https://hb.bizmrg.com
         spark.hadoop.fs.s3a.impl: org.apache.hadoop.fs.s3a.S3AFileSystem
         ```
 

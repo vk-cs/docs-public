@@ -21,7 +21,7 @@ To connect to the object storage using the SDK:
    </tablist>
    <tabpanel>
 
-   - Endpoint URL: `https://hb.vkcs.cloud` or `https://hb.ru-msk.vkcs.cloud`.
+   - Endpoint URL: `https://hb.bizmrg.com`.
    - Access Key ID: the key ID received when creating the account.
    - Secret Key: the secret key received when creating the account.
    - Default region name: `ru-msk`.
@@ -29,7 +29,7 @@ To connect to the object storage using the SDK:
    </tabpanel>
    <tabpanel>
 
-   - Endpoint url: `https://hb.kz-ast.vkcs.cloud`.
+   - Endpoint url: `https://hb.kz-ast.bizmrg.com`.
    - Access Key ID: the key ID received when creating the account.
    - Secret Key: the secret key received when creating the account.
    - Default region name: `kz-ast`.
@@ -92,7 +92,7 @@ To connect to the object storage using the SDK:
      session = boto3.session.Session()
      s3_client = session.client(
          service_name = 's3',
-         endpoint_url = 'https://hb.vkcs.cloud',
+         endpoint_url = 'https://hb.bizmrg.com',
          aws_access_key_id = '<YOUR_ACCESS_KEY>',
          aws_secret_access_key = '<YOUR_SECRET_KEY>',
          region_name='ru-msk'
@@ -122,7 +122,7 @@ To connect to the object storage using the SDK:
      )
  
      const (
-         vkCloudHotboxEndpoint = "https://hb.vkcs.cloud"
+         vkCloudHotboxEndpoint = "https://hb.bizmrg.com"
          defaultRegion = "ru-msk"
      )
  

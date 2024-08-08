@@ -40,13 +40,13 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 1. На локальной машине выполните команду:
 
    ```bash
-   dd if=./image.raw bs=32M | gzip -c | aws s3 cp - s3://uc_bucket/image.raw.gz --endpoint-url http://hb.ru-msk.vkcs.cloud
+   dd if=./image.raw bs=32M | gzip -c | aws s3 cp - s3://uc_bucket/image.raw.gz --endpoint-url http://hb.bizmrg.com
    ```
 
 1. Убедитесь, что загрузка началась, с помощью команды:
 
    ```bash
-   aws s3api list-multipart-uploads --bucket uc_bucket --endpoint-url http://hb.ru-msk.vkcs.cloud
+   aws s3api list-multipart-uploads --bucket uc_bucket --endpoint-url http://hb.bizmrg.com
    ```
 
    <details>
@@ -78,7 +78,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 1. Проверьте партиции с помощью команды:
 
    ```bash
-   aws s3api list-parts --bucket uc_bucket --endpoint-url http://hb.ru-msk.vkcs.cloud --key image.raw.gz  --upload-id 3ceXH7brs7r8DohqQ9BsJzfjkkhMxQux67Z8MQXYGh9BvfrmffLufWMzwiLWPbU3XkWE3ibSefgQ1GU81ER66EEHfKMZM8xxqRsDkBaN63XXXX
+   aws s3api list-parts --bucket uc_bucket --endpoint-url http://hb.bizmrg.com --key image.raw.gz  --upload-id 3ceXH7brs7r8DohqQ9BsJzfjkkhMxQux67Z8MQXYGh9BvfrmffLufWMzwiLWPbU3XkWE3ibSefgQ1GU81ER66EEHfKMZM8xxqRsDkBaN63XXXX
    ```
 
    <details>
@@ -137,7 +137,7 @@ HttpException: 413: Client Error for url: https://infra.mail.ru:9292/v2/images/1
 1. Поместите образ на диск с помощью команды:
 
    ```bash
-   wget https://uc_bucket.hb.ru-msk.vkcs.cloud/image.raw.gz -O - | gunzip | dd of=/dev/vdb bs=32M
+   wget https://uc_bucket.hb.bizmrg.com/image.raw.gz -O - | gunzip | dd of=/dev/vdb bs=32M
    ```
 
 1. [Пометьте](/ru/computing/iaas/service-management/volumes#izmenenie_atributa_zagruzochnyy) диск с помещенным на него образом ОС как загрузочный.
