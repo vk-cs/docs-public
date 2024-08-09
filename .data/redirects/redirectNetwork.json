@@ -325,7 +325,7 @@
   },
   {
     "source": "/ru/additionals/mlplatform/manage/delete",
-    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/delete",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/manage",
     "permanent": false,
     "locale": false
   },
@@ -337,13 +337,13 @@
   },
   {
     "source": "/ru/additionals/mlplatform/start/connect",
-    "destination": "/ru/ml/mlplatform/jupyterhub/quick-start/connect",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/mlplatform/start/create",
-    "destination": "/ru/ml/mlplatform/jupyterhub/quick-start/create",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/create",
     "permanent": false,
     "locale": false
   },
@@ -805,7 +805,7 @@
   },
   {
     "source": "/ru/ml/mlplatform/manage/delete",
-    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/delete",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/manage",
     "permanent": false,
     "locale": false
   },
@@ -829,19 +829,19 @@
   },
   {
     "source": "/ru/ml/mlplatform/start/connect",
-    "destination": "/ru/ml/mlplatform/jupyterhub/quick-start/connect",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/mlplatform/start/create",
-    "destination": "/ru/ml/mlplatform/jupyterhub/quick-start/create",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/mlplatform/start/createuser",
-    "destination": "/ru/ml/mlplatform/jupyterhub/quick-start/createuser",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/manage",
     "permanent": false,
     "locale": false
   },
@@ -1297,7 +1297,7 @@
   },
   {
     "source": "/ru/additionals/mlplatform/manage/delete",
-    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/delete",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/manage",
     "permanent": false,
     "locale": false
   },
@@ -1327,13 +1327,13 @@
   },
   {
     "source": "/ru/additionals/mlplatform/start/connect",
-    "destination": "/ru/ml/mlplatform/jupyterhub/quick-start/connect",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/additionals/mlplatform/start/create",
-    "destination": "/ru/ml/mlplatform/jupyterhub/quick-start/create",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/create",
     "permanent": false,
     "locale": false
   },
@@ -24823,19 +24823,19 @@
   },
   {
     "source": "/ru/ml/mlplatform/jupyterhub/start/create",
-    "destination": "/ru/ml/mlplatform/jupyterhub/quick-start/create",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/mlplatform/jupyterhub/start/createuser",
-    "destination": "/ru/ml/mlplatform/jupyterhub/quick-start/createuser",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/mlplatform/jupyterhub/start/connect",
-    "destination": "/ru/ml/mlplatform/jupyterhub/quick-start/connect",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/connect",
     "permanent": false,
     "locale": false
   },
@@ -24847,7 +24847,7 @@
   },
   {
     "source": "/ru/ml/mlplatform/jupyterhub/manage/delete",
-    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/delete",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/manage",
     "permanent": false,
     "locale": false
   },
@@ -27656,6 +27656,30 @@
   {
     "source": "/ru/ml/spark-to-k8s/use-cases/submit-advanced-job-clickhouse",
     "destination": "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/mlplatform/jupyterhub/quick-start/create",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/mlplatform/jupyterhub/quick-start/connect",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/connect",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/mlplatform/jupyterhub/service-management/delete",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/mlplatform/jupyterhub/quick-start/createuser",
+    "destination": "/ru/ml/mlplatform/jupyterhub/service-management/manage",
     "permanent": false,
     "locale": false
   }

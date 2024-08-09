@@ -15360,23 +15360,51 @@
     "http://localhost:3000/docs/ru/networks/vnet/tariffs"
   ],
   [
-    "/ru/ml/mlplatform/jupyterhub/quick-start/create",
+    "/ru/ml/mlplatform/jupyterhub/quick-start",
+    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/service-management/manage#delete"
+  ],
+  [
+    "/ru/ml/mlplatform/jupyterhub/service-management/create",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub"
+  ],
+  [
+    "/ru/ml/mlplatform/jupyterhub/service-management/create",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
   ],
   [
-    "/ru/ml/mlplatform/jupyterhub/quick-start/create",
-    "http://localhost:3000/docs/ru/storage/s3"
+    "/ru/ml/mlplatform/jupyterhub/service-management/create",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
   ],
   [
-    "/ru/ml/mlplatform/jupyterhub/quick-start/create",
+    "/ru/ml/mlplatform/jupyterhub/service-management/create",
     "http://localhost:3000/docs/computing/iaas/concepts/volume-sla/"
   ],
   [
-    "/ru/ml/mlplatform/jupyterhub/quick-start/create",
-    "http://localhost:3000/docs/networks/vnet/service-management/net/"
+    "/ru/ml/mlplatform/jupyterhub/service-management/create",
+    "http://localhost:3000/docs/ru/storage/s3"
   ],
   [
-    "/ru/ml/mlplatform/jupyterhub/service-management/delete",
+    "/ru/ml/mlplatform/jupyterhub/service-management/create",
+    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/service-management/manage#create-users"
+  ],
+  [
+    "/ru/ml/mlplatform/jupyterhub/service-management/connect",
+    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/service-management/manage#create-users"
+  ],
+  [
+    "/ru/ml/mlplatform/jupyterhub/service-management/manage",
+    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/service-management/connect"
+  ],
+  [
+    "/ru/ml/mlplatform/jupyterhub/service-management/manage",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+  ],
+  [
+    "/ru/ml/mlplatform/jupyterhub/service-management/manage",
+    "http://localhost:3000/docs/ru/storage/s3"
+  ],
+  [
+    "/ru/ml/mlplatform/jupyterhub/service-management/manage",
     "http://localhost:3000/docs/ru/ml/mlplatform/mlflow/manage/delete"
   ],
   [

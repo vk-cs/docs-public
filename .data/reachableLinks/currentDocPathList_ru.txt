@@ -430,11 +430,10 @@
 /docs/ru/ml/mlplatform/concepts
 /docs/ru/ml/mlplatform/jupyterhub
 /docs/ru/ml/mlplatform/jupyterhub/quick-start
-/docs/ru/ml/mlplatform/jupyterhub/quick-start/create
-/docs/ru/ml/mlplatform/jupyterhub/quick-start/createuser
-/docs/ru/ml/mlplatform/jupyterhub/quick-start/connect
 /docs/ru/ml/mlplatform/jupyterhub/service-management
-/docs/ru/ml/mlplatform/jupyterhub/service-management/delete
+/docs/ru/ml/mlplatform/jupyterhub/service-management/create
+/docs/ru/ml/mlplatform/jupyterhub/service-management/connect
+/docs/ru/ml/mlplatform/jupyterhub/service-management/manage
 /docs/ru/ml/mlplatform/jupyterhub/how-to-guides
 /docs/ru/ml/mlplatform/jupyterhub/how-to-guides/kernel
 /docs/ru/ml/mlplatform/jupyterhub/how-to-guides/vscode

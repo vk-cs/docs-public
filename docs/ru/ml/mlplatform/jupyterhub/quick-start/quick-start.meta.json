@@ -1,11 +1,13 @@
 {
-  "title": "Быстрый старт",
-  "pageDescription": "Начало работы с JupyterHub.",
-  "shortDescription": "Начало работы с сервисом JupyterHub",
-  "metaTitle": "Быстрый старт",
-  "metaDescription": "Быстрый старт",
-  "sectionTitle": "Быстрый старт",
-  "icon": "",
-  "weight": 1,
-  "uuid": "6e61afa2-6eda-4d6f-8b1b-2dbb0f500bcc"
+    "title": "Быстрый старт",
+    "pageDescription": "Начало работы с JupyterHub.",
+    "shortDescription": "Начало работы с сервисом JupyterHub",
+    "metaTitle": "Быстрый старт",
+    "metaDescription": "Быстрый старт",
+    "sectionTitle": "Быстрый старт",
+    "icon": "",
+    "weight": 1,
+    "uuid": "6e61afa2-6eda-4d6f-8b1b-2dbb0f500bcc",
+    "createdAt": "2024-07-26T21:43:28.000Z",
+    "updatedAt": "2024-08-09T10:47:33.000Z"
 }
