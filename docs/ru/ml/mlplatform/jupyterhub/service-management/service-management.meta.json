@@ -1,10 +1,10 @@
 {
-  "title": "Управление инстансом JupyterHub",
-  "pageDescription": "Описание возможностей управления созданным инстансом JupyterHub.",
-  "shortDescription": "Возможности управления инстансом JupyterHub",
-  "metaTitle": "Управление инстансом JupyterHub",
-  "metaDescription": "Управление инстансом JupyterHub",
-  "sectionTitle": "Управление инстансом JupyterHub",
+  "title": "Управление сервисом",
+  "pageDescription": "Создание и управление инстансом JupyterHub.",
+  "shortDescription": "Создание инстанса JupyterHub и управление им",
+  "metaTitle": "Управление сервисом",
+  "metaDescription": "Управление сервисом",
+  "sectionTitle": "Управление сервисом",
   "icon": "",
   "weight": 4,
   "uuid": "84b3d46e-a1a8-4668-ad1b-e51c6d450d41"
