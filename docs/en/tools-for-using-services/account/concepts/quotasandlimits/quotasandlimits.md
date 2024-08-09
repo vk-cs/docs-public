@@ -218,9 +218,9 @@ Quotas for the total number of disks in the project take into account all types 
 
 | Parameter                  | Limit | Hard |
 |---------------------------|---------|---|
-| Number of disks per instance  | 25 pcs.| + |
-| Size of one HDD              | 50 TB | + |
-| Size of one SSD disk              | 10 TB | + |
+| Number of disks per instance  | 25 pcs.| &#10003; |
+| Size of one HDD              | 50 TB | &#10003; |
+| Size of one SSD disk              | 10 TB | &#10003; |
 | Size of one High-IOPS SSD disk    | 2 TБ via VK Cloud management console, 5 TB via OpenStack CLI | — |
 | Size of a single image                 | 500 GB | — |
 | Total volume of images                  | 2 TB | — |
@@ -516,8 +516,8 @@ The quota **Neutron balancers**, which is displayed in VK Cloud management conso
 
 | Parameter                                     | Quota in CLI | Basic quota  | Limit | Hard |
 |-----------------------------------------------|---------------------------------|--------------------|--|--|
-| Number of backups                             | `backups`| 400 pcs. | not limited | — |
-| Number of snapshots                           | [quota](../../service-management/project-settings/manage#viewing_project_quotas)  `snapshots` in the extended list | 200 pcs. | not limited | — |
+| Number of backups                             | `backups`| — | not limited | — |
+| Number of snapshots                           | [quota](../../service-management/project-settings/manage#viewing_project_quotas)  `snapshots` in the extended list | 200 pcs. | not limited | — |
 | Size of one backup                  | — | — | 320 TB        | — |
 | Total volume of images                           | — | — | 2 TB          | — |
 
