@@ -128,9 +128,9 @@ To fill in the data about the legal entity, go to [management console](https://m
 
 <summary>Is there individual support for services in VK Cloud?</summary>
 
-In VK Cloud you can connect the priority support service (Managed Services) from VK Cloud experts. To use this service, leave a request [on the website](https://cloud.vk.com/professional-services/).
+In VK Cloud you can connect the priority support service (Professional Services) from VK Cloud experts. To use this service, leave a request [on the website](https://cloud.vk.com/professional-services/).
 
-Also check out the [full list of Managed Services](/en/intro/start/support/support-info#individual_support).
+Also check out the [full list of Professional Services](/en/intro/start/support/support-info#individual_support).
 
 </details>
 
