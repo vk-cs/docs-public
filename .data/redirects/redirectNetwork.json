@@ -24877,19 +24877,19 @@
   },
   {
     "source": "/ru/ml/mlplatform/mlflow/start/create",
-    "destination": "/ru/ml/mlplatform/mlflow/quick-start/create",
+    "destination": "/ru/ml/mlplatform/mlflow/service-management/create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/mlplatform/mlflow/start/connect",
-    "destination": "/ru/ml/mlplatform/mlflow/quick-start/connect",
+    "destination": "/ru/ml/mlplatform/mlflow/service-management/connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/mlplatform/mlflow/start/createuser",
-    "destination": "/ru/ml/mlplatform/mlflow/quick-start/createuser",
+    "destination": "/ru/ml/mlplatform/concepts/mlflow-modes",
     "permanent": false,
     "locale": false
   },
@@ -24901,7 +24901,7 @@
   },
   {
     "source": "/ru/ml/mlplatform/mlflow/manage/delete",
-    "destination": "/ru/ml/mlplatform/mlflow/service-management/delete",
+    "destination": "/ru/ml/mlplatform/mlflow/service-management/manage",
     "permanent": false,
     "locale": false
   },
@@ -27680,6 +27680,30 @@
   {
     "source": "/ru/ml/mlplatform/jupyterhub/quick-start/createuser",
     "destination": "/ru/ml/mlplatform/jupyterhub/service-management/manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/mlplatform/mlflow/quick-start/createuser",
+    "destination": "/ru/ml/mlplatform/concepts/mlflow-modes",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/mlplatform/mlflow/quick-start/create",
+    "destination": "/ru/ml/mlplatform/mlflow/service-management/create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/mlplatform/mlflow/quick-start/connect",
+    "destination": "/ru/ml/mlplatform/mlflow/service-management/connect",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/mlplatform/mlflow/service-management/delete",
+    "destination": "/ru/ml/mlplatform/mlflow/service-management/manage",
     "permanent": false,
     "locale": false
   }

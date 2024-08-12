@@ -1,11 +1,13 @@
 {
-  "title": "Быстрый старт",
-  "pageDescription": "Начало работы с MLflow.",
-  "shortDescription": "Начало работы с сервисом MLflow",
-  "metaTitle": "Быстрый старт",
-  "metaDescription": "Быстрый старт",
-  "sectionTitle": "Быстрый старт",
-  "icon": "",
-  "weight": 1,
-  "uuid": "35cb6871-45e1-4e27-8c2c-300cb6357b11"
+    "title": "Быстрый старт",
+    "pageDescription": "Начало работы с MLflow.",
+    "shortDescription": "Начало работы с сервисом MLflow",
+    "metaTitle": "Быстрый старт",
+    "metaDescription": "Быстрый старт",
+    "sectionTitle": "Быстрый старт",
+    "icon": "",
+    "weight": 1,
+    "uuid": "35cb6871-45e1-4e27-8c2c-300cb6357b11",
+    "createdAt": "2024-08-01T09:10:53.000Z",
+    "updatedAt": "2024-08-12T12:42:35.000Z"
 }

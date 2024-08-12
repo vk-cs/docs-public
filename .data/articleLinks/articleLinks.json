@@ -15360,6 +15360,14 @@
     "http://localhost:3000/docs/ru/networks/vnet/tariffs"
   ],
   [
+    "/ru/ml/mlplatform/concepts/mlflow-modes",
+    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/service-management"
+  ],
+  [
+    "/ru/ml/mlplatform/concepts/mlflow-modes",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlflow/service-management/create"
+  ],
+  [
     "/ru/ml/mlplatform/jupyterhub/quick-start",
     "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/service-management/manage#delete"
   ],
@@ -15408,24 +15416,40 @@
     "http://localhost:3000/docs/ru/ml/mlplatform/mlflow/manage/delete"
   ],
   [
-    "/ru/ml/mlplatform/mlflow/quick-start/create",
+    "/ru/ml/mlplatform/mlflow/quick-start",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlflow/service-management/manage#delete"
+  ],
+  [
+    "/ru/ml/mlplatform/mlflow/service-management/create",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow"
+  ],
+  [
+    "/ru/ml/mlplatform/mlflow/service-management/create",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
   ],
   [
-    "/ru/ml/mlplatform/mlflow/quick-start/create",
+    "/ru/ml/mlplatform/mlflow/service-management/create",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/ru/ml/mlplatform/mlflow/service-management/create",
     "http://localhost:3000/docs/computing/iaas/concepts/volume-sla/"
   ],
   [
-    "/ru/ml/mlplatform/mlflow/quick-start/create",
-    "http://localhost:3000/docs/ru/networks/vnet/service-management/net/"
+    "/ru/ml/mlplatform/mlflow/service-management/create",
+    "http://localhost:3000/docs/ru/ml/mlplatform/concepts/mlflow-modes#standalone"
   ],
   [
-    "/ru/ml/mlplatform/mlflow/quick-start/create",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage/"
+    "/ru/ml/mlplatform/mlflow/service-management/connect",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlflow/service-management/create"
   ],
   [
-    "/ru/ml/mlplatform/mlflow/quick-start/createuser",
-    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/quick-start/createuser"
+    "/ru/ml/mlplatform/mlflow/service-management/manage",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+  ],
+  [
+    "/ru/ml/mlplatform/mlflow/service-management/manage",
+    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/service-management/delete"
   ],
   [
     "/ru/ml/mlplatform/deploymlflow/quick-start/create",

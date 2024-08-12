@@ -3371,11 +3371,11 @@
   "/ru/ml/mlplatform/jupyterhub/scenarios/kernel": "/ru/ml/mlplatform/jupyterhub/how-to-guides/kernel",
   "/ru/ml/mlplatform/jupyterhub/scenarios/vscode": "/ru/ml/mlplatform/jupyterhub/how-to-guides/vscode",
   "/ru/ml/mlplatform/mlflow/start": "/ru/ml/mlplatform/mlflow/quick-start",
-  "/ru/ml/mlplatform/mlflow/start/create": "/ru/ml/mlplatform/mlflow/quick-start/create",
-  "/ru/ml/mlplatform/mlflow/start/connect": "/ru/ml/mlplatform/mlflow/quick-start/connect",
-  "/ru/ml/mlplatform/mlflow/start/createuser": "/ru/ml/mlplatform/mlflow/quick-start/createuser",
+  "/ru/ml/mlplatform/mlflow/start/create": "/ru/ml/mlplatform/mlflow/service-management/create",
+  "/ru/ml/mlplatform/mlflow/start/connect": "/ru/ml/mlplatform/mlflow/service-management/connect",
+  "/ru/ml/mlplatform/mlflow/start/createuser": "/ru/ml/mlplatform/concepts/mlflow-modes",
   "/ru/ml/mlplatform/mlflow/manage": "/ru/ml/mlplatform/mlflow/service-management",
-  "/ru/ml/mlplatform/mlflow/manage/delete": "/ru/ml/mlplatform/mlflow/service-management/delete",
+  "/ru/ml/mlplatform/mlflow/manage/delete": "/ru/ml/mlplatform/mlflow/service-management/manage",
   "/ru/ml/mlplatform/deploymlflow/start": "/ru/ml/mlplatform/deploymlflow/quick-start",
   "/ru/ml/mlplatform/deploymlflow/start/create": "/ru/ml/mlplatform/deploymlflow/quick-start/create",
   "/ru/ml/mlplatform/deploymlflow/manage": "/ru/ml/mlplatform/deploymlflow/service-management",
@@ -3731,5 +3731,9 @@
   "/ru/ml/mlplatform/jupyterhub/quick-start/create": "/ru/ml/mlplatform/jupyterhub/service-management/create",
   "/ru/ml/mlplatform/jupyterhub/quick-start/connect": "/ru/ml/mlplatform/jupyterhub/service-management/connect",
   "/ru/ml/mlplatform/jupyterhub/service-management/delete": "/ru/ml/mlplatform/jupyterhub/service-management/manage",
-  "/ru/ml/mlplatform/jupyterhub/quick-start/createuser": "/ru/ml/mlplatform/jupyterhub/service-management/manage"
+  "/ru/ml/mlplatform/jupyterhub/quick-start/createuser": "/ru/ml/mlplatform/jupyterhub/service-management/manage",
+  "/ru/ml/mlplatform/mlflow/quick-start/createuser": "/ru/ml/mlplatform/concepts/mlflow-modes",
+  "/ru/ml/mlplatform/mlflow/quick-start/create": "/ru/ml/mlplatform/mlflow/service-management/create",
+  "/ru/ml/mlplatform/mlflow/quick-start/connect": "/ru/ml/mlplatform/mlflow/service-management/connect",
+  "/ru/ml/mlplatform/mlflow/service-management/delete": "/ru/ml/mlplatform/mlflow/service-management/manage"
 }

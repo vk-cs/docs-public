@@ -428,6 +428,8 @@
 /docs/ru/ml
 /docs/ru/ml/mlplatform
 /docs/ru/ml/mlplatform/concepts
+/docs/ru/ml/mlplatform/concepts/about
+/docs/ru/ml/mlplatform/concepts/mlflow-modes
 /docs/ru/ml/mlplatform/jupyterhub
 /docs/ru/ml/mlplatform/jupyterhub/quick-start
 /docs/ru/ml/mlplatform/jupyterhub/service-management
@@ -439,11 +441,10 @@
 /docs/ru/ml/mlplatform/jupyterhub/how-to-guides/vscode
 /docs/ru/ml/mlplatform/mlflow
 /docs/ru/ml/mlplatform/mlflow/quick-start
-/docs/ru/ml/mlplatform/mlflow/quick-start/create
-/docs/ru/ml/mlplatform/mlflow/quick-start/connect
-/docs/ru/ml/mlplatform/mlflow/quick-start/createuser
 /docs/ru/ml/mlplatform/mlflow/service-management
-/docs/ru/ml/mlplatform/mlflow/service-management/delete
+/docs/ru/ml/mlplatform/mlflow/service-management/create
+/docs/ru/ml/mlplatform/mlflow/service-management/connect
+/docs/ru/ml/mlplatform/mlflow/service-management/manage
 /docs/ru/ml/mlplatform/deploymlflow
 /docs/ru/ml/mlplatform/deploymlflow/quick-start
 /docs/ru/ml/mlplatform/deploymlflow/quick-start/create
