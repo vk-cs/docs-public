@@ -6,7 +6,7 @@
     "metaDescription": "Marketplace VK Cloud: steps to deploy the Redash 10.1.0 service for data visualization tasks to the target project",
     "sectionTitle": "Redash 10.1 deployment",
     "icon": "",
-    "weight": 6,
+    "weight": 8,
     "uuid": "88d700e5-4c3d-4a99-a5ee-ac43a5b4afcb",
     "createdAt": "2023-12-06T07:38:30.000Z",
     "updatedAt": "2024-07-29T09:02:37.000Z"
