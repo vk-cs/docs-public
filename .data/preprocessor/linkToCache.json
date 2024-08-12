@@ -279,6 +279,16 @@
     "full": "Fluent Bit для Cloud Logging (logaas-integration)",
     "text": "Fluent Bit для Cloud Logging (logaas-integration)"
   },
+  "with_jh": {
+    "number": null,
+    "full": "Связка с JupyterHub",
+    "text": "Связка с JupyterHub"
+  },
+  "standalone": {
+    "number": null,
+    "full": "Режим Standalone",
+    "text": "Режим Standalone"
+  },
   "create-users": {
     "number": null,
     "full": "Создание новых пользователей",
@@ -328,6 +338,11 @@
     "number": null,
     "full": "Удаление инстанса",
     "text": "Удаление инстанса"
+  },
+  "copy-link": {
+    "number": null,
+    "full": "Копирование ссылки на инстанс",
+    "text": "Копирование ссылки на инстанс"
   },
   "cluster_spark": {
     "number": null,

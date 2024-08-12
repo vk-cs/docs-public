@@ -15692,11 +15692,41 @@
   {
     "uuid": "1cd95bde-349c-48a8-8741-e850a897bf8b",
     "lang": "ru",
-    "type": "ARTICLE",
+    "type": "INTERMEDIATE",
     "level": 4,
     "partialPath": "/ru/ml/mlplatform/concepts",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/concepts/concepts.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/concepts/concepts.md",
+    "mdFullPath": null,
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "30edec4c-386d-477a-be57-f29bdb2fb885",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/ml/mlplatform/concepts/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/concepts/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/concepts/about/about.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "e1c5ee51-8178-47a3-897e-f5067fb62255",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/ml/mlplatform/concepts/mlflow-modes",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/concepts/mlflow-modes/mlflow-modes.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/concepts/mlflow-modes/mlflow-modes.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -15857,56 +15887,11 @@
   {
     "uuid": "35cb6871-45e1-4e27-8c2c-300cb6357b11",
     "lang": "ru",
-    "type": "INTERMEDIATE",
+    "type": "ARTICLE",
     "level": 5,
     "partialPath": "/ru/ml/mlplatform/mlflow/quick-start",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/quick-start/quick-start.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/quick-start/quick-start.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "20fd6fcb-54fb-4216-8e53-f162a1840504",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/ml/mlplatform/mlflow/quick-start/create",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/quick-start/create/create.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/quick-start/create/create.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "8f5b52a4-d7cc-496d-9df7-08b4e0b5f2ec",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/ml/mlplatform/mlflow/quick-start/connect",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/quick-start/connect/connect.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/quick-start/connect/connect.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "e1c5ee51-8178-47a3-897e-f5067fb62255",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/ml/mlplatform/mlflow/quick-start/createuser",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/quick-start/createuser/createuser.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/quick-start/createuser/createuser.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -15930,13 +15915,43 @@
     ]
   },
   {
+    "uuid": "20fd6fcb-54fb-4216-8e53-f162a1840504",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/ml/mlplatform/mlflow/service-management/create",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/service-management/create/create.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/service-management/create/create.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "8f5b52a4-d7cc-496d-9df7-08b4e0b5f2ec",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/ml/mlplatform/mlflow/service-management/connect",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/service-management/connect/connect.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/service-management/connect/connect.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "96e6d69c-7b45-4053-a8d5-91d99e00b499",
     "lang": "ru",
     "type": "ARTICLE",
     "level": 6,
-    "partialPath": "/ru/ml/mlplatform/mlflow/service-management/delete",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/service-management/delete/delete.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/service-management/delete/delete.md",
+    "partialPath": "/ru/ml/mlplatform/mlflow/service-management/manage",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/service-management/manage/manage.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlflow/service-management/manage/manage.md",
     "variables": {},
     "hidden": false,
     "version": null,
