@@ -67,7 +67,7 @@ Notifications also include informing project owners about security threats or ot
 
 ## Individual support
 
-The list of VK Cloud platform services includes the possibility of providing priority support (Managed Services).
+The list of VK Cloud platform services includes the possibility of providing priority support (Professional Services).
 
 This service includes extended support for all issues of implementation, maintenance and troubleshooting in the client's projects:
 
