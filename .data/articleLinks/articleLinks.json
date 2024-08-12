@@ -6844,6 +6844,22 @@
     "http://localhost:3000/docs/en/applications-and-services/marketplace/service-management/pr-instance-manage#updating_access_to_a_service_instance"
   ],
   [
+    "/en/applications-and-services/marketplace/initial-configuration/openvpn-start",
+    "http://localhost:3000/docs/en/intro/start/account-registration"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/openvpn-start",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/openvpn-start",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#editing_a_subnet"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/openvpn-start",
+    "http://localhost:3000/docs/en/applications-and-services/marketplace/service-management/pr-instance-add"
+  ],
+  [
     "/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
     "http://localhost:3000/docs/en/intro/start/account-registration"
   ],
@@ -6910,22 +6926,6 @@
   [
     "/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
     "http://localhost:3000/docs/en/applications-and-services/marketplace/service-management/pr-instance-manage#updating_access_to_a_service_instance"
-  ],
-  [
-    "/en/applications-and-services/marketplace/initial-configuration/openvpn-start",
-    "http://localhost:3000/docs/en/intro/start/account-registration"
-  ],
-  [
-    "/en/applications-and-services/marketplace/initial-configuration/openvpn-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
-  ],
-  [
-    "/en/applications-and-services/marketplace/initial-configuration/openvpn-start",
-    "http://localhost:3000/docs/en/networks/vnet/service-management/net#editing_a_subnet"
-  ],
-  [
-    "/en/applications-and-services/marketplace/initial-configuration/openvpn-start",
-    "http://localhost:3000/docs/en/applications-and-services/marketplace/service-management/pr-instance-add"
   ],
   [
     "/en/applications-and-services/marketplace/service-management/pr-instance-add",
@@ -17050,6 +17050,54 @@
   [
     "/ru/applications-and-services/marketplace/initial-configuration/cyber-backup-quick-start",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/ru/intro/start/account-registration"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#sozdanie_seti"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start#preparatory_steps"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start#setup_gateway"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start#setup_management"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/secgroups#dobavlenie_pravila"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start#setup_gateway"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start#setup_gateway"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start#configure_network_access_to_gateway"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/service-management/pr-instance-manage#udalenie_instansa_servisa"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#delete_vm"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#udalenie_seti"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/usergate-start",

@@ -7635,6 +7635,21 @@
     ]
   },
   {
+    "uuid": "bf57fa69-74de-436e-8448-e7d6b9943d6c",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/applications-and-services/marketplace/initial-configuration/check-point-cloud-guard",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/check-point-cloud-guard/check-point-cloud-guard.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/check-point-cloud-guard/check-point-cloud-guard.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "75df804b-853a-4947-ae4e-5f8096f60506",
     "lang": "en",
     "type": "ARTICLE",
@@ -7695,13 +7710,13 @@
     ]
   },
   {
-    "uuid": "540d3b48-8433-4b50-a91e-6e6306560fb5",
+    "uuid": "216f93f5-8ffc-4f06-9182-3efa8158dc42",
     "lang": "en",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start/victoriametrics-start.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start/victoriametrics-start.md",
+    "partialPath": "/en/applications-and-services/marketplace/initial-configuration/openvpn-start",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/openvpn-start/openvpn-start.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/openvpn-start/openvpn-start.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -7710,13 +7725,13 @@
     ]
   },
   {
-    "uuid": "216f93f5-8ffc-4f06-9182-3efa8158dc42",
+    "uuid": "540d3b48-8433-4b50-a91e-6e6306560fb5",
     "lang": "en",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/en/applications-and-services/marketplace/initial-configuration/openvpn-start",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/openvpn-start/openvpn-start.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/openvpn-start/openvpn-start.md",
+    "partialPath": "/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start/victoriametrics-start.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/applications-and-services/marketplace/initial-configuration/victoriametrics-start/victoriametrics-start.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -17572,6 +17587,21 @@
     "partialPath": "/ru/applications-and-services/marketplace/initial-configuration/cyber-backup-quick-start",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/cyber-backup-quick-start/cyber-backup-quick-start.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/cyber-backup-quick-start/cyber-backup-quick-start.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "e6f3f167-385c-49c8-9e80-e933a1cd7eb3",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start/checkpoint-start.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start/checkpoint-start.md",
     "variables": {},
     "hidden": false,
     "version": null,

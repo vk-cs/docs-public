@@ -554,6 +554,7 @@
 /docs/ru/applications-and-services/marketplace/initial-configuration/dr-quick-start
 /docs/ru/applications-and-services/marketplace/initial-configuration/migrate-hystax
 /docs/ru/applications-and-services/marketplace/initial-configuration/cyber-backup-quick-start
+/docs/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start
 /docs/ru/applications-and-services/marketplace/initial-configuration/usergate-start
 /docs/ru/applications-and-services/marketplace/initial-configuration/nexus-3-start
 /docs/ru/applications-and-services/marketplace/initial-configuration/grafana-start
