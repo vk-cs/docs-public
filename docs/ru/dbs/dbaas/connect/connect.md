@@ -89,7 +89,7 @@
 <tabpanel>
 
 1. Убедитесь, что [Oracle Java](http://www.java.com/en/download/manual.jsp) или [OpenJDK](http://openjdk.java.net) установлены.
-1. [Установите](http://jdbc.postgresql.org/download.html) JDBC-драйвер для PostgreSQL.
+1. [Установите](http://jdbc.postgresql.org/download/) JDBC-драйвер для PostgreSQL.
 1. Подключитесь к базе данных с помощью функции `DriverManager.getConnection()`:
 
    ```java
