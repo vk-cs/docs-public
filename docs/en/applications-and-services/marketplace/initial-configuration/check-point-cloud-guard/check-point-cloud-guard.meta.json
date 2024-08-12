@@ -6,5 +6,8 @@
     "metaDescription": "Deployment of the Check Point CloudGuard: gateways configuration and adding network interfaces",
     "sectionTitle": "Check Point CloudGuard deployment",
     "icon": "",
-    "weight": 4
+    "weight": 4,
+    "uuid": "bf57fa69-74de-436e-8448-e7d6b9943d6c",
+    "createdAt": "2024-08-12T10:07:33.000Z",
+    "updatedAt": "2024-08-12T10:07:33.000Z"
 }
