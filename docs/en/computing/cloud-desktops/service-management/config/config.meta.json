@@ -1,13 +1,11 @@
 {
     "title": "Setting up the service",
-    "pageDescription": "Configuring the service connection to the AD or LDAP user directory.",
-    "shortDescription": "Connecting to an AD or LDAP directory",
+    "pageDescription": "Configuring a network, a connection to an AD or LDAP user directory, and other service parameters.",
+    "shortDescription": "Configuring a network, a connection to an AD or LDAP user directory, and other service parameters",
     "metaTitle": "Setting up the service",
-    "metaDescription": "Configuring the service connection to the AD or LDAP user directory.",
+    "metaDescription": "Configuring a network, a connection to an AD or LDAP user directory, and other service parameters.",
     "sectionTitle": "Setting up the service",
     "icon": "",
     "weight": 1,
-    "uuid": "75f4f2e3-57f2-4803-a20d-98a94d2e7846",
-    "createdAt": "2023-10-26T06:43:55.000Z",
-    "updatedAt": "2024-08-02T09:36:56.000Z"
+    "uuid": "75f4f2e3-57f2-4803-a20d-98a94d2e7846"
 }
