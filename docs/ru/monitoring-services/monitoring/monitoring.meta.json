@@ -7,5 +7,9 @@
   "sectionTitle": "Cloud Monitoring",
   "icon": "",
   "weight": 3,
+  "relativeSections": [
+    {
+      "partialPath": "/ru/tools-for-using-services/api/api-spec/monitoring2-api"
+    }],
   "uuid": "9ce52650-b535-4ad8-a9a6-778c7c2541c7"
 }
