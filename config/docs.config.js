@@ -10,6 +10,9 @@ export const config = {
         projectName: 'VK Cloud',
         docsName: 'Документация'
     },
+    leftMenu: {
+        startLevel: 3,
+    },
     layout: {
         main: {
             schema: 'LIST'
