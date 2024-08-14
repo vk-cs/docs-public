@@ -6,5 +6,8 @@
     "metaDescription": "Selecting the service network parameters and checking the network connection.",
     "sectionTitle": "Setting up a network for the service infrastructure",
     "icon": "",
-    "weight": 0
+    "weight": 0,
+    "uuid": "ca6d2801-4dd4-4494-9f12-cfba470cf097",
+    "createdAt": "2024-08-14T10:37:07.000Z",
+    "updatedAt": "2024-08-14T10:37:07.000Z"
 }

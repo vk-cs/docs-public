@@ -1884,12 +1884,20 @@
     "http://localhost:3000/docs/en/computing/cloud-desktops/how-to-guides/check-desktop-image"
   ],
   [
-    "/en/computing/cloud-desktops/service-management/config",
+    "/en/computing/cloud-desktops/service-management/config/setup-net",
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#availability_zones_567cfd7a"
+  ],
+  [
+    "/en/computing/cloud-desktops/service-management/config/setup-net",
     "http://localhost:3000/docs/en/computing/iaas/tariffication"
   ],
   [
-    "/en/computing/cloud-desktops/service-management/config",
+    "/en/computing/cloud-desktops/service-management/config/setup-ldap",
     "http://localhost:3000/docs/en/computing/iaas/tariffication"
+  ],
+  [
+    "/en/computing/cloud-desktops/service-management/config/setup-provider",
+    "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/delete-vdi"
   ],
   [
     "/en/computing/cloud-desktops/service-management/desktops-pool/add",
@@ -10220,12 +10228,20 @@
     "http://localhost:3000/docs/ru/computing/cloud-desktops/how-to-guides/check-desktop-image"
   ],
   [
-    "/ru/computing/cloud-desktops/service-management/config",
+    "/ru/computing/cloud-desktops/service-management/config/setup-net",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/ru/computing/cloud-desktops/service-management/config/setup-net",
     "http://localhost:3000/docs/ru/computing/iaas/tariffication"
   ],
   [
-    "/ru/computing/cloud-desktops/service-management/config",
+    "/ru/computing/cloud-desktops/service-management/config/setup-ldap",
     "http://localhost:3000/docs/ru/computing/iaas/tariffication"
+  ],
+  [
+    "/ru/computing/cloud-desktops/service-management/config/setup-provider",
+    "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/delete-vdi"
   ],
   [
     "/ru/computing/cloud-desktops/service-management/desktops-pool/add",
