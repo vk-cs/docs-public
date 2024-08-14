@@ -1382,13 +1382,58 @@
   {
     "uuid": "75f4f2e3-57f2-4803-a20d-98a94d2e7846",
     "lang": "en",
-    "type": "ARTICLE",
+    "type": "INTERMEDIATE",
     "level": 5,
     "partialPath": "/en/computing/cloud-desktops/service-management/config",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/config/config.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/config/config.md",
     "variables": {},
     "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "ca6d2801-4dd4-4494-9f12-cfba470cf097",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/computing/cloud-desktops/service-management/config/setup-net",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/config/setup-net/setup-net.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/config/setup-net/setup-net.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "34123a87-0485-4e92-9770-ced91f20719d",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/computing/cloud-desktops/service-management/config/setup-ldap",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/config/setup-ldap/setup-ldap.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/config/setup-ldap/setup-ldap.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "c9e9a250-0265-42f9-89d8-86290f8d5c9b",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/computing/cloud-desktops/service-management/config/setup-provider",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/config/setup-provider/setup-provider.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/config/setup-provider/setup-provider.md",
+    "variables": {},
+    "hidden": true,
     "version": null,
     "buildPoints": [
       "common"
@@ -10817,13 +10862,58 @@
   {
     "uuid": "844a8708-063c-4a23-ad1d-a277900eae1a",
     "lang": "ru",
-    "type": "ARTICLE",
+    "type": "INTERMEDIATE",
     "level": 5,
     "partialPath": "/ru/computing/cloud-desktops/service-management/config",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/config.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/config.md",
     "variables": {},
     "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "6cedb058-c927-4636-9e06-ddb100e2f32b",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/computing/cloud-desktops/service-management/config/setup-net",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-net/setup-net.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-net/setup-net.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "c878e25f-aff8-4c10-b139-dadfc9f47316",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/computing/cloud-desktops/service-management/config/setup-ldap",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-ldap/setup-ldap.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-ldap/setup-ldap.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "7cd98028-0c33-4acb-a4b8-ea32163fb50c",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/computing/cloud-desktops/service-management/config/setup-provider",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-provider/setup-provider.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-provider/setup-provider.md",
+    "variables": {},
+    "hidden": true,
     "version": null,
     "buildPoints": [
       "common"

@@ -90,6 +90,9 @@
 /docs/en/computing/cloud-desktops/concepts/desktop-image
 /docs/en/computing/cloud-desktops/service-management
 /docs/en/computing/cloud-desktops/service-management/config
+/docs/en/computing/cloud-desktops/service-management/config/setup-net
+/docs/en/computing/cloud-desktops/service-management/config/setup-ldap
+/docs/en/computing/cloud-desktops/service-management/config/setup-provider
 /docs/en/computing/cloud-desktops/service-management/desktops-pool
 /docs/en/computing/cloud-desktops/service-management/desktops-pool/add
 /docs/en/computing/cloud-desktops/service-management/desktops-pool/manage
