@@ -7,10 +7,5 @@
   "sectionTitle": "Cloud Monitoring 2.0",
   "icon": "",
   "weight": 16,
-  "build": {
-    "for": [
-      "dontbuild"
-    ]
-  },
   "uuid": "173c5989-2b7a-4675-b08d-d6c112a8670e"
 }
