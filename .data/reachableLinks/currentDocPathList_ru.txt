@@ -671,6 +671,7 @@
 /docs/ru/tools-for-using-services/api/api-spec/api-cdn
 /docs/ru/tools-for-using-services/api/api-spec/partners-api
 /docs/ru/tools-for-using-services/api/api-spec/vdi-api
+/docs/ru/tools-for-using-services/api/api-spec/monitoring2-api
 /docs/ru/cases
 /docs/ru/cases/cases-cms
 /docs/ru/cases/cases-cms/cases-wp

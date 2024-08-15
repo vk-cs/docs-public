@@ -7,6 +7,10 @@
     "sectionTitle": "Managing JupyterHub instance",
     "icon": "",
     "weight": 4,
-    "additionalUuids": ["a5311849-6bbd-4e88-8022-4f85638a5c01"],
-    "uuid": "81547dc2-62dd-4677-a7f3-caf30053b322"
-  }
+    "additionalUuids": [
+        "a5311849-6bbd-4e88-8022-4f85638a5c01"
+    ],
+    "uuid": "81547dc2-62dd-4677-a7f3-caf30053b322",
+    "createdAt": "2024-08-15T07:09:26.000Z",
+    "updatedAt": "2024-08-15T07:09:26.000Z"
+}

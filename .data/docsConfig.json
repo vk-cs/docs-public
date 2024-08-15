@@ -16,6 +16,10 @@
     "docsName": "Документация",
     "isDisableBaseLevel": true
   },
+  "leftMenu": {
+    "startLevel": 3,
+    "useLeftMenu": true
+  },
   "layout": {
     "main": {
       "schema": "LIST",
@@ -77,10 +81,6 @@
     "points": [
       "common"
     ]
-  },
-  "leftMenu": {
-    "startLevel": 3,
-    "useLeftMenu": true
   },
   "basePartnerPath": "docs-private",
   "docs": {

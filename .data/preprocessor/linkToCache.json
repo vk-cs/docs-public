@@ -189,6 +189,56 @@
     "full": "4. Verify add-on operability after updating",
     "text": "4. Verify add-on operability after updating"
   },
+  "create-users": {
+    "number": null,
+    "full": "Создание новых пользователей",
+    "text": "Создание новых пользователей"
+  },
+  "change-vm-type": {
+    "number": null,
+    "full": "Изменение типа виртуальной машины",
+    "text": "Изменение типа виртуальной машины"
+  },
+  "change-disk-size": {
+    "number": null,
+    "full": "Изменение размера диска",
+    "text": "Изменение размера диска"
+  },
+  "add-s3": {
+    "number": null,
+    "full": "Подключение бакета S3",
+    "text": "Подключение бакета S3"
+  },
+  "pause": {
+    "number": null,
+    "full": "Остановка и запуск инстанса",
+    "text": "Остановка и запуск инстанса"
+  },
+  "reload": {
+    "number": null,
+    "full": "Перезагрузка инстанса",
+    "text": "Перезагрузка инстанса"
+  },
+  "force-reload": {
+    "number": null,
+    "full": "Принудительный перезапуск инстанса",
+    "text": "Принудительный перезапуск инстанса"
+  },
+  "copy-jh-link": {
+    "number": null,
+    "full": "Копирование ссылки на инстанс",
+    "text": "Копирование ссылки на инстанс"
+  },
+  "shared": {
+    "number": null,
+    "full": "Использование общих папок",
+    "text": "Использование общих папок"
+  },
+  "delete": {
+    "number": null,
+    "full": "Удаление инстанса",
+    "text": "Удаление инстанса"
+  },
   "auth_parameters": {
     "number": null,
     "full": "Параметры авторизации плагина",
@@ -288,56 +338,6 @@
     "number": null,
     "full": "Режим Standalone",
     "text": "Режим Standalone"
-  },
-  "create-users": {
-    "number": null,
-    "full": "Создание новых пользователей",
-    "text": "Создание новых пользователей"
-  },
-  "change-vm-type": {
-    "number": null,
-    "full": "Изменение типа виртуальной машины",
-    "text": "Изменение типа виртуальной машины"
-  },
-  "change-disk-size": {
-    "number": null,
-    "full": "Изменение размера диска",
-    "text": "Изменение размера диска"
-  },
-  "add-s3": {
-    "number": null,
-    "full": "Подключение бакета S3",
-    "text": "Подключение бакета S3"
-  },
-  "pause": {
-    "number": null,
-    "full": "Остановка и запуск инстанса",
-    "text": "Остановка и запуск инстанса"
-  },
-  "reload": {
-    "number": null,
-    "full": "Перезагрузка инстанса",
-    "text": "Перезагрузка инстанса"
-  },
-  "force-reload": {
-    "number": null,
-    "full": "Принудительный перезапуск инстанса",
-    "text": "Принудительный перезапуск инстанса"
-  },
-  "copy-jh-link": {
-    "number": null,
-    "full": "Копирование ссылки на инстанс",
-    "text": "Копирование ссылки на инстанс"
-  },
-  "shared": {
-    "number": null,
-    "full": "Использование общих папок",
-    "text": "Использование общих папок"
-  },
-  "delete": {
-    "number": null,
-    "full": "Удаление инстанса",
-    "text": "Удаление инстанса"
   },
   "copy-link": {
     "number": null,

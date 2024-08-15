@@ -763,7 +763,7 @@
   },
   {
     "source": "/en/ml/mlplatform/manage/delete",
-    "destination": "/en/ml/mlplatform/jupyterhub/service-management/delete",
+    "destination": "/en/ml/mlplatform/jupyterhub/service-management/manage",
     "permanent": false,
     "locale": false
   },
@@ -787,13 +787,13 @@
   },
   {
     "source": "/en/ml/mlplatform/start/connect",
-    "destination": "/en/ml/mlplatform/jupyterhub/quick-start/connect",
+    "destination": "/en/ml/mlplatform/jupyterhub/service-management/connect",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/mlplatform/start/create",
-    "destination": "/en/ml/mlplatform/jupyterhub/quick-start/create",
+    "destination": "/en/ml/mlplatform/jupyterhub/service-management/create",
     "permanent": false,
     "locale": false
   },
@@ -24121,19 +24121,19 @@
   },
   {
     "source": "/en/ml/mlplatform/jupyterhub/start/create",
-    "destination": "/en/ml/mlplatform/jupyterhub/quick-start/create",
+    "destination": "/en/ml/mlplatform/jupyterhub/service-management/create",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/mlplatform/jupyterhub/start/createuser",
-    "destination": "/en/ml/mlplatform/jupyterhub/quick-start/createuser",
+    "destination": "/en/ml/mlplatform/jupyterhub/service-management/manage",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/en/ml/mlplatform/jupyterhub/start/connect",
-    "destination": "/en/ml/mlplatform/jupyterhub/quick-start/connect",
+    "destination": "/en/ml/mlplatform/jupyterhub/service-management/connect",
     "permanent": false,
     "locale": false
   },
@@ -24157,7 +24157,7 @@
   },
   {
     "source": "/en/ml/mlplatform/jupyterhub/manage/delete",
-    "destination": "/en/ml/mlplatform/jupyterhub/service-management/delete",
+    "destination": "/en/ml/mlplatform/jupyterhub/service-management/manage",
     "permanent": false,
     "locale": false
   },
@@ -27704,6 +27704,30 @@
   {
     "source": "/ru/ml/mlplatform/mlflow/service-management/delete",
     "destination": "/ru/ml/mlplatform/mlflow/service-management/manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/mlplatform/jupyterhub/quick-start/create",
+    "destination": "/en/ml/mlplatform/jupyterhub/service-management/create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/mlplatform/jupyterhub/quick-start/connect",
+    "destination": "/en/ml/mlplatform/jupyterhub/service-management/connect",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/mlplatform/jupyterhub/service-management/delete",
+    "destination": "/en/ml/mlplatform/jupyterhub/service-management/manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/en/ml/mlplatform/jupyterhub/quick-start/createuser",
+    "destination": "/en/ml/mlplatform/jupyterhub/service-management/manage",
     "permanent": false,
     "locale": false
   }
