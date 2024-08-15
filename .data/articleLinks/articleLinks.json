@@ -6160,23 +6160,51 @@
     "http://localhost:3000/docs/en/data-processing/bigdata/connect"
   ],
   [
-    "/en/ml/mlplatform/jupyterhub/quick-start/create",
+    "/en/ml/mlplatform/jupyterhub/quick-start",
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/manage#delete"
+  ],
+  [
+    "/en/ml/mlplatform/jupyterhub/service-management/create",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub"
+  ],
+  [
+    "/en/ml/mlplatform/jupyterhub/service-management/create",
     "http://localhost:3000/docs/en/computing/iaas/concepts/about#flavors"
   ],
   [
-    "/en/ml/mlplatform/jupyterhub/quick-start/create",
+    "/en/ml/mlplatform/jupyterhub/service-management/create",
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#availability_zones_567cfd7a"
+  ],
+  [
+    "/en/ml/mlplatform/jupyterhub/service-management/create",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/volume-sla/"
+  ],
+  [
+    "/en/ml/mlplatform/jupyterhub/service-management/create",
     "http://localhost:3000/docs/ru/storage/s3"
   ],
   [
-    "/en/ml/mlplatform/jupyterhub/quick-start/create",
-    "http://localhost:3000/docs/en/computing/iaas/concepts/volume-sla"
+    "/en/ml/mlplatform/jupyterhub/service-management/create",
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/manage#create-users"
   ],
   [
-    "/en/ml/mlplatform/jupyterhub/quick-start/create",
-    "http://localhost:3000/docs/en/networks/vnet/networks/create-net"
+    "/en/ml/mlplatform/jupyterhub/service-management/connect",
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/manage#create-users"
   ],
   [
-    "/en/ml/mlplatform/jupyterhub/service-management/delete",
+    "/en/ml/mlplatform/jupyterhub/service-management/manage",
+    "http://localhost:3000/docs/en/ml/mlplatform/jupyterhub/service-management/connect"
+  ],
+  [
+    "/en/ml/mlplatform/jupyterhub/service-management/manage",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/about#flavors"
+  ],
+  [
+    "/en/ml/mlplatform/jupyterhub/service-management/manage",
+    "http://localhost:3000/docs/en/storage/s3"
+  ],
+  [
+    "/en/ml/mlplatform/jupyterhub/service-management/manage",
     "http://localhost:3000/docs/en/ml/mlplatform/mlflow/manage/delete"
   ],
   [
@@ -18406,6 +18434,18 @@
   [
     "/ru/tools-for-using-services/api/api-spec/vdi-api",
     "http://localhost:3000/docs/ru/tools-for-using-services/api/rest-api/case-keystone-token"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/monitoring2-api",
+    "http://localhost:3000/docs/ru/manage/monitoring"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/monitoring2-api",
+    "http://localhost:3000/docs/ru/tools-for-using-services/vk-cloud-account/service-management/account-manage/manage-2fa#vklyuchenie_2fa"
+  ],
+  [
+    "/ru/tools-for-using-services/api/api-spec/monitoring2-api",
+    "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/case-keystone-token"
   ],
   [
     "/ru/cases/cases-cms/cases-wp",

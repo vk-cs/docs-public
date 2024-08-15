@@ -6167,7 +6167,7 @@
   {
     "uuid": "e985d8ac-1fe1-4430-9204-67569ffd32b2",
     "lang": "en",
-    "type": "INTERMEDIATE",
+    "type": "ARTICLE",
     "level": 5,
     "partialPath": "/en/ml/mlplatform/jupyterhub/quick-start",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/quick-start/quick-start.meta.json",
@@ -6180,13 +6180,13 @@
     ]
   },
   {
-    "uuid": "13c22d91-b876-4e78-9bef-883c6e0ffa8b",
+    "uuid": "d2fde7ba-e4e9-4b28-8b1a-f47b6deb7780",
     "lang": "en",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/en/ml/mlplatform/jupyterhub/quick-start/create",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/quick-start/create/create.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/quick-start/create/create.md",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/en/ml/mlplatform/jupyterhub/service-management",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/service-management/service-management.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/service-management/service-management.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -6195,13 +6195,13 @@
     ]
   },
   {
-    "uuid": "a5311849-6bbd-4e88-8022-4f85638a5c01",
+    "uuid": "13c22d91-b876-4e78-9bef-883c6e0ffa8b",
     "lang": "en",
     "type": "ARTICLE",
     "level": 6,
-    "partialPath": "/en/ml/mlplatform/jupyterhub/quick-start/createuser",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/quick-start/createuser/createuser.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/quick-start/createuser/createuser.md",
+    "partialPath": "/en/ml/mlplatform/jupyterhub/service-management/create",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/service-management/create/create.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/service-management/create/create.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -6214,9 +6214,24 @@
     "lang": "en",
     "type": "ARTICLE",
     "level": 6,
-    "partialPath": "/en/ml/mlplatform/jupyterhub/quick-start/connect",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/quick-start/connect/connect.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/quick-start/connect/connect.md",
+    "partialPath": "/en/ml/mlplatform/jupyterhub/service-management/connect",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/service-management/connect/connect.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/service-management/connect/connect.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "81547dc2-62dd-4677-a7f3-caf30053b322",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/ml/mlplatform/jupyterhub/service-management/manage",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/service-management/manage/manage.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/service-management/manage/manage.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -6247,36 +6262,6 @@
     "partialPath": "/en/ml/mlplatform/jupyterhub/how-to-guides/kernel",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/how-to-guides/kernel/kernel.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/how-to-guides/kernel/kernel.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "d2fde7ba-e4e9-4b28-8b1a-f47b6deb7780",
-    "lang": "en",
-    "type": "INTERMEDIATE",
-    "level": 5,
-    "partialPath": "/en/ml/mlplatform/jupyterhub/service-management",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/service-management/service-management.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/service-management/service-management.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "81547dc2-62dd-4677-a7f3-caf30053b322",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/en/ml/mlplatform/jupyterhub/service-management/delete",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/service-management/delete/delete.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/ml/mlplatform/jupyterhub/service-management/delete/delete.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -19387,6 +19372,21 @@
     "partialPath": "/ru/tools-for-using-services/api/api-spec/vdi-api",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/vdi-api/vdi-api.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/vdi-api/vdi-api.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "173c5989-2b7a-4675-b08d-d6c112a8670e",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/api/api-spec/monitoring2-api",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/monitoring2-api/monitoring2-api.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/api/api-spec/monitoring2-api/monitoring2-api.md",
     "variables": {},
     "hidden": false,
     "version": null,
