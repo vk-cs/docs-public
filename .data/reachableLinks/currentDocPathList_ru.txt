@@ -454,6 +454,10 @@
 /docs/ru/ml/mlplatform/deploymlflow/service-management
 /docs/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client
 /docs/ru/ml/mlplatform/deploymlflow/service-management/delete
+/docs/ru/ml/mlplatform/mlplatform-lib
+/docs/ru/ml/mlplatform/mlplatform-lib/lib-install
+/docs/ru/ml/mlplatform/mlplatform-lib/lib-authz
+/docs/ru/ml/mlplatform/mlplatform-lib/lib-reference
 /docs/ru/ml/mlplatform/faq
 /docs/ru/ml/spark-to-k8s
 /docs/ru/ml/spark-to-k8s/concepts
