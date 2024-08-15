@@ -16125,6 +16125,66 @@
     ]
   },
   {
+    "uuid": "4e649958-85ca-4aa1-8acc-a4fb7ce5c97a",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/ml/mlplatform/mlplatform-lib",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlplatform-lib/mlplatform-lib.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlplatform-lib/mlplatform-lib.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "53fedecb-b240-40c4-ae21-5361259b5274",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/ml/mlplatform/mlplatform-lib/lib-install",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlplatform-lib/lib-install/lib-install.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlplatform-lib/lib-install/lib-install.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "fade171f-e585-4f59-88ef-13c663d4379f",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/ml/mlplatform/mlplatform-lib/lib-authz",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlplatform-lib/lib-authz/lib-authz.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlplatform-lib/lib-authz/lib-authz.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "ea439e70-58b7-4f25-a735-fad7e12a6312",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlplatform-lib/lib-reference/lib-reference.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/mlplatform-lib/lib-reference/lib-reference.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "6cd60653-ce69-4dcf-a9c0-3cf302cc0126",
     "lang": "ru",
     "type": "ARTICLE",
