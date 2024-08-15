@@ -1,11 +1,11 @@
 {
-  "title": "Usage scenarios",
+  "title": "How-to guides",
   "pageDescription": "Description of scenarios for working with the Cloud ML Platform.",
   "shortDescription": "Cloud ML Platform scenarios",
-  "metaTitle": "Usage scenarios",
+  "metaTitle": "How-to guides",
   "metaDescription": "Description of scenarios for working with the Cloud ML Platform.",
-  "sectionTitle": "Usage scenarios",
+  "sectionTitle": "How-to guides",
   "icon": "",
-  "weight": 1,
+  "weight": 5,
   "uuid": "dc4925e1-dda7-48d5-aa14-dc261360f004"
 }
