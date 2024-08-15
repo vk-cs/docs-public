@@ -1,0 +1,10 @@
+{
+    "title": "Библиотека Cloud ML Platform",
+    "pageDescription": "Документация Python-библиотеки Cloud ML Platform (для JupyterHub, MLflow, MLflow Deploy).",
+    "shortDescription": "Информация по работе с библиотекой и справочник методов, применимых к компонентам Cloud ML Platform.",
+    "metaTitle": "Библиотека Cloud ML Platform",
+    "metaDescription": "Документация Python-библиотеки Cloud ML Platform (для JupyterHub, MLflow, MLflow Deploy).",
+    "sectionTitle": "Библиотека Cloud ML Platform",
+    "icon": "",
+    "weight": 6
+  }
