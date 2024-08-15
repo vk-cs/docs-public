@@ -1,11 +1,11 @@
 {
-  "title": "Managing a JupyterHub Instance",
-  "pageDescription": "Description of how to manage the created JupyterHub instance.",
-  "shortDescription": "JupyterHub instance management capabilities",
-  "metaTitle": "JupyterHub Instance Management",
-  "metaDescription": "JupyterHub Instance Management",
-  "sectionTitle": "JupyterHub Instance Management",
+  "title": "Service management",
+  "pageDescription": "How to create and manage a JupyterHub instance.",
+  "shortDescription": "JHow to create and manage a JupyterHub instance",
+  "metaTitle": "Service management",
+  "metaDescription": "Service management",
+  "sectionTitle": "Service management",
   "icon": "",
-  "weight": 1,
+  "weight": 4,
   "uuid": "d2fde7ba-e4e9-4b28-8b1a-f47b6deb7780"
 }
