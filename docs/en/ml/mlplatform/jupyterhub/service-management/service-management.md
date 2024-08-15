@@ -1,1 +1,1 @@
-Description of how to manage the created JupyterHub instance.
+How to create and manage a JupyterHub instance.
