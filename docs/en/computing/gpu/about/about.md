@@ -6,10 +6,12 @@ NVIDIA® Tesla® GPUs are great for training and inferencing deep neural network
 
 The available GPU:
 
-- A100 40GB;
-- A100 80GB;
-- V100 16GB;
-- V100S 32GB.
+- A100 40GB
+- A100 80GB
+- V100 16GB
+- V100S 32GB
+- A30 24GB
+- L40S 48GB
 
 ### High Performance Computing (HPC)
 
