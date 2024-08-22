@@ -1,1 +1,7 @@
-{}
+{
+  "181aeab3-48f1-454e-a020-bac27a54175e": "/en/ml/mlplatform/concepts/about",
+  "6e2c6a20-e88a-49e4-ba18-c05815962b08": "/en/ml/mlplatform/concepts/mlflow-modes",
+  "3cc5f830-46e6-4932-9ff2-c711caea484e": "/en/ml/mlplatform/mlflow/service-management/create",
+  "a6b42ffc-f03e-4bfc-9f59-f01001b6a4dd": "/en/ml/mlplatform/mlflow/service-management/connect",
+  "0492cf8a-2c61-4e7e-a0b0-2e0031324764": "/en/ml/mlplatform/mlflow/service-management/manage"
+}
