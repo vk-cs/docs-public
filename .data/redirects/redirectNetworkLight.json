@@ -3740,7 +3740,6 @@
   "/en/ml/mlplatform/jupyterhub/quick-start/connect": "/en/ml/mlplatform/jupyterhub/service-management/connect",
   "/en/ml/mlplatform/jupyterhub/service-management/delete": "/en/ml/mlplatform/jupyterhub/service-management/manage",
   "/en/ml/mlplatform/jupyterhub/quick-start/createuser": "/en/ml/mlplatform/jupyterhub/service-management/manage",
-  "/en/ml/mlplatform/concepts": "/en/ml/mlplatform/concepts/about",
   "/en/ml/mlplatform/mlflow/quick-start/createuser": "/en/ml/mlplatform/concepts/mlflow-modes",
   "/en/ml/mlplatform/mlflow/quick-start/create": "/en/ml/mlplatform/mlflow/service-management/create",
   "/en/ml/mlplatform/mlflow/quick-start/connect": "/en/ml/mlplatform/mlflow/service-management/connect",

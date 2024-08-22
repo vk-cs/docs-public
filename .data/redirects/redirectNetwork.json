@@ -27732,12 +27732,6 @@
     "locale": false
   },
   {
-    "source": "/en/ml/mlplatform/concepts",
-    "destination": "/en/ml/mlplatform/concepts/about",
-    "permanent": false,
-    "locale": false
-  },
-  {
     "source": "/en/ml/mlplatform/mlflow/quick-start/createuser",
     "destination": "/en/ml/mlplatform/concepts/mlflow-modes",
     "permanent": false,
