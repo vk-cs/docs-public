@@ -25,7 +25,7 @@ Through the VK Cloud Account, you can register only phone numbers that start wit
 
 <summary>What rights do the project participants have?</summary>
 
-The role model of the project participants is described in the article [Management console roles and their permissions](../concepts/rolesandpermissions).
+The role model of the project participants is described in the article [Roles and permissions of Management console users](../concepts/rolesandpermissions).
 
 </details>
 

@@ -8,7 +8,7 @@
 
 - Роли пользователя в личном кабинете влияют на:
 
-  - [Доступные операции с кластерами в личном кабинете](/ru/tools-for-using-services/account/concepts/rolesandpermissions#razresheniya_roley_servisa_cloud_containers).
+  - [Доступные операции с кластерами в личном кабинете](/ru/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions_kubernetes).
 
   - [Доступные действия в кластере](#vzaimosvyaz_roley_lichnogo_kabineta_i_kubernetes).
 

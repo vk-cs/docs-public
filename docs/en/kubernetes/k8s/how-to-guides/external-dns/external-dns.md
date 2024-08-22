@@ -58,7 +58,7 @@ Prepare the user and get all the necessary credentials:
    - API access must be [enabled](/en/tools-for-using-services/api/rest-api/enable-api).
    - One of the following roles must be [assigned](/en/tools-for-using-services/account/service-management/project-settings/access-manage#changing_member_role) in order for ExternalDNS to operate resource records within the DNS zone:
 
-     - Network Administrator (a minimum required [role](/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_and_their_permissions_the_full_matrix)).
+     - Network Administrator (a minimum required [role](/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions)).
      - Project Administrator.
      - Superadministrator.
      - Project Owner.
