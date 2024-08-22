@@ -189,6 +189,16 @@
     "full": "4. Verify add-on operability after updating",
     "text": "4. Verify add-on operability after updating"
   },
+  "with_jh": {
+    "number": null,
+    "full": "Связка с JupyterHub",
+    "text": "Связка с JupyterHub"
+  },
+  "standalone": {
+    "number": null,
+    "full": "Режим Standalone",
+    "text": "Режим Standalone"
+  },
   "create-users": {
     "number": null,
     "full": "Создание новых пользователей",
@@ -328,16 +338,6 @@
     "number": null,
     "full": "Fluent Bit для Cloud Logging (logaas-integration)",
     "text": "Fluent Bit для Cloud Logging (logaas-integration)"
-  },
-  "with_jh": {
-    "number": null,
-    "full": "Связка с JupyterHub",
-    "text": "Связка с JupyterHub"
-  },
-  "standalone": {
-    "number": null,
-    "full": "Режим Standalone",
-    "text": "Режим Standalone"
   },
   "copy-link": {
     "number": null,

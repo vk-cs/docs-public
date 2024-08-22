@@ -407,6 +407,8 @@
 /docs/en/ml
 /docs/en/ml/mlplatform
 /docs/en/ml/mlplatform/concepts
+/docs/en/ml/mlplatform/concepts/about
+/docs/en/ml/mlplatform/concepts/mlflow-modes
 /docs/en/ml/mlplatform/jupyterhub
 /docs/en/ml/mlplatform/jupyterhub/quick-start
 /docs/en/ml/mlplatform/jupyterhub/service-management
@@ -417,11 +419,10 @@
 /docs/en/ml/mlplatform/jupyterhub/how-to-guides/kernel
 /docs/en/ml/mlplatform/mlflow
 /docs/en/ml/mlplatform/mlflow/quick-start
-/docs/en/ml/mlplatform/mlflow/quick-start/create
-/docs/en/ml/mlplatform/mlflow/quick-start/connect
-/docs/en/ml/mlplatform/mlflow/quick-start/createuser
 /docs/en/ml/mlplatform/mlflow/service-management
-/docs/en/ml/mlplatform/mlflow/service-management/delete
+/docs/en/ml/mlplatform/mlflow/service-management/create
+/docs/en/ml/mlplatform/mlflow/service-management/connect
+/docs/en/ml/mlplatform/mlflow/service-management/manage
 /docs/en/ml/mlplatform/deploymlflow
 /docs/en/ml/mlplatform/deploymlflow/quick-start
 /docs/en/ml/mlplatform/deploymlflow/quick-start/create

@@ -1,11 +1,13 @@
 {
-  "title": "Quick start",
-  "pageDescription": "Getting started with MLflow.",
-  "shortDescription": "Getting Started with MLflow Service",
-  "metaTitle": "Quick start",
-  "metaDescription": "Quick start",
-  "sectionTitle": "Quick start",
-  "icon": "",
-  "weight": 0,
-  "uuid": "331ea3bf-b0b0-4022-953b-102b4ad1567e"
+    "title": "Quick start",
+    "pageDescription": "Getting started with MLflow.",
+    "shortDescription": "Getting Started with MLflow Service",
+    "metaTitle": "Quick start",
+    "metaDescription": "Quick start",
+    "sectionTitle": "Quick start",
+    "icon": "",
+    "weight": 0,
+    "uuid": "331ea3bf-b0b0-4022-953b-102b4ad1567e",
+    "createdAt": "2024-08-09T11:12:14.000Z",
+    "updatedAt": "2024-08-22T08:15:58.000Z"
 }
