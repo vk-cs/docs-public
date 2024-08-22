@@ -5749,7 +5749,7 @@
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/external-dns",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_and_their_permissions_the_full_matrix"
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions"
   ],
   [
     "/en/kubernetes/k8s/how-to-guides/external-dns",
@@ -7141,7 +7141,7 @@
   ],
   [
     "/en/tools-for-using-services/account/concepts/rolesandpermissions",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_and_their_permissions_the_full_matrix"
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions"
   ],
   [
     "/en/tools-for-using-services/account/concepts/rolesandpermissions",
@@ -7165,7 +7165,7 @@
   ],
   [
     "/en/tools-for-using-services/account/concepts/rolesandpermissions",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_and_their_permissions_the_full_matrix"
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions"
   ],
   [
     "/en/tools-for-using-services/account/concepts/rolesandpermissions",
@@ -13553,7 +13553,7 @@
   ],
   [
     "/ru/kubernetes/k8s/concepts/access-management",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions#razresheniya_roley_servisa_cloud_containers"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions_kubernetes"
   ],
   [
     "/ru/kubernetes/k8s/concepts/access-management",
@@ -14977,7 +14977,7 @@
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/external-dns",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions#matrica_razresheniy_dlya_vseh_roley"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions"
   ],
   [
     "/ru/kubernetes/k8s/how-to-guides/external-dns",
@@ -18033,7 +18033,7 @@
   ],
   [
     "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions#matrica_razresheniy_dlya_vseh_roley"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions"
   ],
   [
     "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
@@ -18057,11 +18057,11 @@
   ],
   [
     "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions#matrica_razresheniy_dlya_vseh_roley"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions"
   ],
   [
     "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions#razresheniya_roley_servisa_cloud_containers"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions_kubernetes"
   ],
   [
     "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
