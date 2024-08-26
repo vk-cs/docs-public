@@ -23,7 +23,7 @@ resource "vkcs_networking_secgroup_rule" "example" {
 # Associate the port with the security group
 resource "vkcs_networking_port_secgroup_associate" "example" {
    port_id = vkcs_networking_port.example.id
-   enforce = ture
+   enforce = true
    security_group_ids = [
    vkcs_networking_secgroup.example.id,
    ]
