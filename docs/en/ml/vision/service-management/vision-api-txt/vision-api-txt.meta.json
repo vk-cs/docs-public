@@ -6,7 +6,5 @@
     "metaDescription": "This method allows you to recognize text in an image. The authorization data is passed in the request string: Parameter Value Type oauth_token string",
     "sectionTitle": "Text recognition in documents",
     "icon": "",
-    "uuid": "9244167b-cfc1-4f28-bdd1-785533c65795",
-    "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-08-12T12:42:35.000Z"
+    "uuid": "9244167b-cfc1-4f28-bdd1-785533c65795"
 }

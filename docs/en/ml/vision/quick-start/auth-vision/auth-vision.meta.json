@@ -6,7 +6,5 @@
     "metaDescription": "To authorize the client on the VK Cloud Vision platform, a token is used, which is transmitted in the request parameter: CURL -K -V",
     "sectionTitle": "Authorization",
     "icon": "",
-    "uuid": "cf5fe676-6fa6-44cf-8ae9-3d9f36245521",
-    "createdAt": "2022-03-26T14:10:44.000Z",
-    "updatedAt": "2024-08-12T12:42:35.000Z"
+    "uuid": "cf5fe676-6fa6-44cf-8ae9-3d9f36245521"
 }

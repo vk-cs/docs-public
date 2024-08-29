@@ -6,7 +6,5 @@
     "metaDescription": "Migration of a local database to a deployed instance of the VK Cloud DBMS.",
     "sectionTitle": "Migration from local databases",
     "icon": "",
-    "uuid": "48955f3f-64e0-4156-8b2d-c66e270d6d39",
-    "createdAt": "2023-05-05T09:03:24.000Z",
-    "updatedAt": "2024-08-12T12:42:35.000Z"
+    "uuid": "48955f3f-64e0-4156-8b2d-c66e270d6d39"
 }

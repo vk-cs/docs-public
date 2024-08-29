@@ -7,7 +7,5 @@
     "metaDescription": "Включение множества очередей (multiqueue) на Linux",
     "icon": "",
     "weight": 4,
-    "uuid": "ea236dda-40ac-4e59-8908-74d1714074c8",
-    "createdAt": "2023-04-13T15:57:13.000Z",
-    "updatedAt": "2024-08-12T12:42:35.000Z"
+    "uuid": "ea236dda-40ac-4e59-8908-74d1714074c8"
 }
