@@ -6,7 +6,5 @@
     "metaDescription": "Генерация токена X-Subject-Token для доступа к сервисам по REST API.",
     "sectionTitle": "Получение токена доступа Keystone",
     "weight": 2,
-    "uuid": "70123755-37ab-4024-a5c6-fc56967933d7",
-    "createdAt": "2023-05-26T16:45:20.000Z",
-    "updatedAt": "2024-08-12T12:42:35.000Z"
+    "uuid": "70123755-37ab-4024-a5c6-fc56967933d7"
 }

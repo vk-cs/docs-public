@@ -6,7 +6,5 @@
     "metaDescription": "Для удаления инстанса достаточно в контекстном меню выбрать пункт",
     "sectionTitle": "Deleting a DB instance",
     "icon": "",
-    "uuid": "393fd594-cb20-466a-9379-5f5aeb395fae",
-    "createdAt": "2023-05-05T09:02:32.000Z",
-    "updatedAt": "2024-08-12T12:42:35.000Z"
+    "uuid": "393fd594-cb20-466a-9379-5f5aeb395fae"
 }

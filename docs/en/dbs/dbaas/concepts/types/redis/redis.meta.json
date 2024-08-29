@@ -6,7 +6,5 @@
     "metaDescription": "Почему Redis? Redis (Remote Dictionary Server) – это быстрое хранилище данных типа «ключ‑значение» в памяти с открытым исходным кодом для использования в к",
     "sectionTitle": "Redis",
     "icon": "",
-    "uuid": "16f11128-6ec9-44cf-a5fb-f352e2d2908d",
-    "createdAt": "2023-03-17T13:58:06.000Z",
-    "updatedAt": "2024-08-12T12:42:35.000Z"
+    "uuid": "16f11128-6ec9-44cf-a5fb-f352e2d2908d"
 }
