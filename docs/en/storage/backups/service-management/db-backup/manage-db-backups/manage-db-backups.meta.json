@@ -6,7 +6,5 @@
     "metaDescription": "In addition to automatic backups, you can create database backups manually in the control panel. Creating and managing VK Cloud manual backups.",
     "sectionTitle": "Creating and deleting backups",
     "icon": "",
-    "uuid": "7c4ec246-f5b2-4fc6-be26-91280dbb4621",
-    "createdAt": "2023-05-22T15:07:55.000Z",
-    "updatedAt": "2024-08-12T12:42:35.000Z"
+    "uuid": "7c4ec246-f5b2-4fc6-be26-91280dbb4621"
 }
