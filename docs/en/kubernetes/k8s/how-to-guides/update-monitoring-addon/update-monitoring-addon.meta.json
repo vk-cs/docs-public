@@ -7,7 +7,5 @@
     "sectionTitle": "Updating the Kube Prometheus Stack add-on",
     "icon": "",
     "weight": 9,
-    "uuid": "e04cf47f-a0ca-4951-b5d5-411854e6d11d",
-    "createdAt": "2024-05-20T16:04:40.000Z",
-    "updatedAt": "2024-08-12T12:42:35.000Z"
+    "uuid": "e04cf47f-a0ca-4951-b5d5-411854e6d11d"
 }
