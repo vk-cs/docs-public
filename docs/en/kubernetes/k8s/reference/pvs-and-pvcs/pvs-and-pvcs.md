@@ -17,6 +17,12 @@ A [persistent volume](https://kubernetes.io/docs/concepts/storage/persistent-vol
   - Either mount this PV in RWO mode by a single cluster node.
   - Or mount this PV in RWX mode by multiple cluster nodes.
 
+<info>
+
+Access to PVC in RWX mode is not implemented in Cloud Containers. To organize shared access to data from several pods on different nodes, deploy [NFS server](/ru/computing/iaas/service-management/fs-manage) on a separate virtual machine.
+
+</info>
+
 ## PV and PVC lifecycle
 
 The PV and PVC life cycle is independent of the pod life cycle and [consists of](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#lifecycle-of-a-volume-and-claim) four consecutive stages:
