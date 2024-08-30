@@ -1,5 +1,11 @@
 [Shared networks](../../concepts/net-types#shared_net) allow you to work with one network in several projects.
 
+<info>
+
+To enable shared nets in your project, contact [technical support](mailto:support@mcs.mail.ru).
+
+</info>
+
 ## {heading(Sharing network)[id=share]}
 
 Only a user with the [role](/en/tools-for-using-services/account/concepts/rolesandpermissions) of the project owner can share the network with other projects.
