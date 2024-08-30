@@ -1,10 +1,10 @@
 {
-    "title": "Check Point CloudGuard deployment",
+    "title": "Infrastructure protection with Check Point CloudGuard",
     "pageDescription": "Deployment of the Check Point CloudGuard: gateways configuration and adding network interfaces.",
-    "shortDescription": "Deployment of the Check Point CloudGuard: gateways configuration and adding network interfaces",
-    "metaTitle": "Check Point CloudGuard deployment",
+    "shortDescription": "Deployment of Check Point CloudGuard Network service in the project",
+    "metaTitle": "Infrastructure protection with Check Point CloudGuard",
     "metaDescription": "Deployment of the Check Point CloudGuard: gateways configuration and adding network interfaces",
-    "sectionTitle": "Check Point CloudGuard deployment",
+    "sectionTitle": "Infrastructure protection with Check Point CloudGuard",
     "icon": "",
     "weight": 4,
     "uuid": "bf57fa69-74de-436e-8448-e7d6b9943d6c"
