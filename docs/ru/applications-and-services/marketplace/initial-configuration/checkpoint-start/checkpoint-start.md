@@ -171,36 +171,36 @@ Check Point CloudGuard Network предоставляется по модели 
    set grub2-password
    ```
 
-4. Установите пароль для экспертного режима (аналог однопользовательского режима в Linux):
+1. Установите пароль для экспертного режима (аналог однопользовательского режима в Linux):
 
    ```bash
    set expert-password
    ```
 
-5. Сохраните изменения в настройках:
+1. Сохраните изменения в настройках:
 
    ```bash
    save config
    ```
 
-6. Перезагрузите ВМ:
+1. Перезагрузите ВМ:
 
    ```bash
    reboot
    ```
 
-7. Нажмите любую клавишу, когда во время загрузки появится приглашение `Press any key to see the boot menu`.
-8. Выберите режим **Start in maintenance mode**.
-9. Введите логин, установленный при настройке шлюза (или сервера управления) и пароль, установленный для загрузчика GRUB2.
-10. Запустите диспетчер логических томов LVM:
+1. Нажмите любую клавишу, когда во время загрузки появится приглашение `Press any key to see the boot menu`.
+1. Выберите режим **Start in maintenance mode**.
+1. Введите логин, установленный при настройке шлюза (или сервера управления) и пароль, установленный для загрузчика GRUB2.
+1. Запустите диспетчер логических томов LVM:
 
     ```bash
     lvm_manager
     ```
 
-11. Введите `2` для выбора опции `Resize lv_current/lv_log Logical Volume`.
-12. Выберите нужный логический том, введя соответствующее число с клавиатуры.
-13. Задайте любое значение из предложенного диапазона.
+1. Введите `2` для выбора опции `Resize lv_current/lv_log Logical Volume`.
+1. Выберите нужный логический том, введя соответствующее число с клавиатуры.
+1. Задайте любое значение из предложенного диапазона.
 
 Дополнительная информация приведена в [статье sk95566](https://support.checkpoint.com/results/sk/sk95566) (доступ к статье открывается после приобретения продукта Check Point CloudGuard Network).
 
@@ -223,7 +223,7 @@ Check Point CloudGuard Network предоставляется по модели 
 
       Чтобы разрешить любой входящий трафик с IP-адресов вашей сети:
 
-      1. Выберите **Все протоколы и все порты** в поле **Тип**.
+      1. В поле **Тип** выберите **Все протоколы и все порты**.
       1. В разделе **Удаленный адрес** выберите **Диапазон IP-адресов** и нажмите **Использовать мой IP** для автоматической подстановки диапазона IP-адресов вашей сети.
 
       </tabpanel>
@@ -243,11 +243,11 @@ Check Point CloudGuard Network предоставляется по модели 
 
 1. Подключитесь к виртуальному шлюзу через веб-интерфейс GAiA Portal и завершите настройку шлюза с помощью мастера настройки First Time Configuration Wizard:
 
-   1. Перейдите по адресу ```https://<внешний IP-адрес>:443```, где `<внешний IP-адрес>` — внешний IP-адрес шлюза, указанный в инструкции по настройке шлюза.
+   1. Перейдите по адресу ```https://<внешний_IP_адрес>:443```, где `<внешний_IP_адрес>` — внешний IP-адрес шлюза, указанный в инструкции по настройке шлюза.
    1. Введите логин, полученный в инструкции по настройке шлюза, и пароль, установленный при [настройке](#setup_gateway).
    1. В появившемся окне в разделе **SIC** задайте пароль в поле **Activation Key**. Запишите этот пароль. Он понадобится при подключении шлюза к серверу управления.
 
-Теперь вы можете подключаться к ВМ шлюза с помощью веб-интерфейса GAiA Portal по адресу ```https://<внешний IP-адрес>``` или SSH ```<внешний IP-адрес>:22```.
+Теперь вы можете подключаться к ВМ шлюза с помощью веб-интерфейса GAiA Portal по адресу `https://<внешний_IP_адрес>` (или по SSH `<внешний_IP_адрес>:22`).
 
 ## {heading(6. Настройте сетевой доступ к серверу управления)[id=configure_network_access_to_management]}
 
@@ -269,7 +269,7 @@ Check Point CloudGuard Network предоставляется по модели 
 
       Чтобы разрешить любой входящий трафик с IP-адресов вашей сети:
 
-      1. Выберите **Все протоколы и все порты** в поле **Тип**.
+      1. В поле **Тип** выберите **Все протоколы и все порты**.
       1. В разделе **Удаленный адрес** выберите **Диапазон IP-адресов** и нажмите **Использовать мой IP** для автоматической подстановки диапазона IP-адресов вашей сети.
 
       </tabpanel>
@@ -287,30 +287,30 @@ Check Point CloudGuard Network предоставляется по модели 
 
       Вы можете задать другие порты для подключения к серверу управления через приложение SmartConsole:
 
-      1. Выберите **Другое** в поле **Тип**.
+      1. В поле **Тип** выберите **Другое**.
       1. Укажите TCP-порты `19009`, `18210`, `18190`, `443`, чтобы разрешить входящий трафик с любых IP-адресов на эти порты.
 
       </tabpanel>
       </tabs>
 
-   2. Нажмите **Сохранить правило**.
+   1. Нажмите **Сохранить правило**.
 
-2. Подключитесь к серверу управления через веб-интерфейс GAiA Portal и завершите настройку с помощью мастера настройки First Time Configuration Wizard:
+1. Подключитесь к серверу управления через веб-интерфейс GAiA Portal и завершите настройку с помощью мастера настройки First Time Configuration Wizard:
 
-   1. Перейдите по адресу ```https://<внешний IP-адрес>:443```, где `<внешний IP-адрес>` — внешний IP-адрес севера управления, указанный в инструкции по настройке сервера управления.
-   2. Введите логин, полученный в инструкции по настройке сервера управления, и пароль, установленный при [настройке](#setup_management).
-   3. В окне мастера настройки First Time Configuration Wizard нажмите **Next**.
-   4. На шаге «Deployment Options» оставьте настройки без изменения и нажмите **Next**.
-   5. На шаге «Management Connection» оставьте настройки без изменения и нажмите **Next**.
-   6. На шаге «Device Information» оставьте настройки без изменения и нажмите **Next**.
-   7. На шаге «Date and Time Settings» оставьте настройки без изменения и нажмите **Next**.
-   8. На шаге «Installation Type» выберите **Security Gateway and/or Security Management**.
-   9. На шаге «Products» выберите с помощью флажка только **Security Management**, чтобы настроить сервис **Check Point CloudGuard Network - Security Management BYOL** как сервер управления. При необходимости вы можете настроить сервис как шлюз и сервер управления одновременно. Подробнее об этом читайте в [официальной документации сервиса](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_Installation_and_Upgrade_Guide/Content/Topics-IUG/Installing-Standalone.htm).
-   10. На шаге «Security Management Administrator» оставьте настройки без изменения и нажмите **Next**.
-   11. На шаге «Security Management GUI Clients» оставьте настройки без изменения и нажмите **Next**.
-   12. На шаге «First Time Configuration Wizard Summary» нажмите **Finish** и подтвердите перезагрузку системы.
+   1. Перейдите по адресу `https://<внешний_IP_адрес>:443`, где `<внешний_IP_адрес>` — внешний IP-адрес севера управления, указанный в инструкции по настройке сервера управления.
+   1. Введите логин, полученный в инструкции по настройке сервера управления, и пароль, установленный при [настройке](#setup_management).
+   1. В окне мастера настройки First Time Configuration Wizard нажмите **Next**.
+   1. На шаге «Deployment Options» оставьте настройки без изменения и нажмите **Next**.
+   1. На шаге «Management Connection» оставьте настройки без изменения и нажмите **Next**.
+   1. На шаге «Device Information» оставьте настройки без изменения и нажмите **Next**.
+   1. На шаге «Date and Time Settings» оставьте настройки без изменения и нажмите **Next**.
+   1. На шаге «Installation Type» выберите **Security Gateway and/or Security Management**.
+   1. На шаге «Products» выберите с помощью флажка только **Security Management**, чтобы настроить сервис **Check Point CloudGuard Network — Security Management BYOL** как сервер управления. При необходимости вы можете настроить сервис как шлюз и сервер управления одновременно. Подробнее об этом читайте в [официальной документации сервиса](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_Installation_and_Upgrade_Guide/Content/Topics-IUG/Installing-Standalone.htm).
+   1. На шаге «Security Management Administrator» оставьте настройки без изменения и нажмите **Next**.
+   1. На шаге «Security Management GUI Clients» оставьте настройки без изменения и нажмите **Next**.
+   1. На шаге «First Time Configuration Wizard Summary» нажмите **Finish** и подтвердите перезагрузку системы.
 
-Теперь вы можете подключаться к ВМ сервера управления с помощью веб-интерфейса GAiA Portal по адресу ```https://<внешний IP-адрес>``` или по SSH ```<внешний IP-адрес>:22```, где `<внешний IP-адрес>` — внешний IP-адрес севера управления, указанный в инструкции по настройке сервера управления.
+Теперь вы можете подключаться к ВМ сервера управления с помощью веб-интерфейса GAiA Portal по адресу `https://<внешний_IP_адрес>` (или по SSH `<внешний_IP_адрес>:22`), где `<внешний IP-адрес>` — внешний IP-адрес севера управления, указанный в инструкции по настройке сервера управления.
 
 ## 7. Добавьте сетевые интерфейсы
 
@@ -351,12 +351,12 @@ Check Point CloudGuard Network предоставляется по модели 
 1. Включите нужные программные блейды для шлюза:
 
    1. Дважды нажмите на имя нужного шлюза в списке.
-   2. В свойствах шлюза отметьте нужные настройки на вкладке **Network Security**.
+   1. В свойствах шлюза отметьте нужные настройки на вкладке **Network Security**.
 
 1. [Создайте](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_SecurityManagement_AdminGuide/Content/Topics-SECMG/Introducing-the-unified-access-control-policy.htm?tocpath=Creating%20an%20Access%20Control%20Policy%7C_____1) политику Access Control Policy.
-4. Настройте политику [Threat Prevention Policy](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_ThreatPrevention_AdminGuide/Content/Topics-TPG/The_Check_Point_Threat_Prevention_Solution.htm?TocPath=The%20Check%20Point%20Threat%20Prevention%20Solution%7C_____0#The_Check_Point_Threat_Prevention_Solution), в режиме  **Custom Threat Prevention** или **Autonomous Threat Prevention**, а также политики QoS Policy и HTTPS Inspection при необходимости.
-5. [Установите](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_SecurityManagement_AdminGuide/Content/Topics-SECMG/Managing-Server-and-Gateway-Licenses.htm?tocpath=Managing%20Gateways%7CManaging%20%20Licenses%7C_____1) лицензии на шлюз и сервер управления.
-6.  Установите политики [Access Control Policy](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_SecurityManagement_AdminGuide/Content/Topics-SECMG/Installing-the-Access-Control-Policy.htm?tocpath=Creating%20an%20Access%20Control%20Policy%7C_____10) и [Threat Prevention Policy](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_SecurityManagement_AdminGuide/Content/Topics-SECMG/Installing-Threat-Prevention-Policy.htm) на шлюз.
+1. Настройте политику [Threat Prevention Policy](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_ThreatPrevention_AdminGuide/Content/Topics-TPG/The_Check_Point_Threat_Prevention_Solution.htm?TocPath=The%20Check%20Point%20Threat%20Prevention%20Solution%7C_____0#The_Check_Point_Threat_Prevention_Solution) в режиме  **Custom Threat Prevention** или **Autonomous Threat Prevention**, а также политики QoS Policy и HTTPS Inspection при необходимости.
+1. [Установите](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_SecurityManagement_AdminGuide/Content/Topics-SECMG/Managing-Server-and-Gateway-Licenses.htm?tocpath=Managing%20Gateways%7CManaging%20%20Licenses%7C_____1) лицензии на шлюз и сервер управления.
+1.  Установите политики [Access Control Policy](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_SecurityManagement_AdminGuide/Content/Topics-SECMG/Installing-the-Access-Control-Policy.htm?tocpath=Creating%20an%20Access%20Control%20Policy%7C_____10) и [Threat Prevention Policy](https://sc1.checkpoint.com/documents/R81.20/WebAdminGuides/EN/CP_R81.20_SecurityManagement_AdminGuide/Content/Topics-SECMG/Installing-Threat-Prevention-Policy.htm) на шлюз.
 
 ## 9. Предусмотрите резервное копирование
 
