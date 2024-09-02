@@ -20,7 +20,7 @@ COPY .git/ .git/
 COPY config/ config/
 COPY configs/sentry* ./
 COPY docs.config.js ./
-COPY configs/.data/ .data/
+COPY .data/ .data/
 COPY docs/ docs/
 COPY public/ public/
 COPY externals/ externals/
