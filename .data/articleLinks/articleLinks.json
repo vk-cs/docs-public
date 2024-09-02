@@ -4185,6 +4185,10 @@
   ],
   [
     "/en/kubernetes/k8s/concepts/storage",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/fs-manage"
+  ],
+  [
+    "/en/kubernetes/k8s/concepts/storage",
     "http://localhost:3000/docs/en/kubernetes/k8s/concepts/storage#working_with_container_storage_interface_csi"
   ],
   [
@@ -5997,6 +6001,10 @@
   ],
   [
     "/en/kubernetes/k8s/reference/pvs-and-pvcs",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage"
+  ],
+  [
+    "/en/kubernetes/k8s/reference/pvs-and-pvcs",
     "http://localhost:3000/docs/en/kubernetes/k8s/concepts/storage#pre_configured_storage_classes"
   ],
   [
@@ -6814,6 +6822,54 @@
   [
     "/en/applications-and-services/marketplace/initial-configuration/migrate-hystax",
     "http://localhost:3000/docs/en/networks/vnet/service-management/floating-ip#removing_floating_ip_address_from_the_project"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/en/intro/start/account-registration"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/en/applications-and-services/marketplace/initial-configuration/checkpoint-start#preparatory_steps"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/en/applications-and-services/marketplace/initial-configuration/checkpoint-start#setup_gateway"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/en/applications-and-services/marketplace/initial-configuration/checkpoint-start#setup_management"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/secgroups#adding_a_rule"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/en/applications-and-services/marketplace/initial-configuration/checkpoint-start#setup_gateway"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/en/applications-and-services/marketplace/initial-configuration/checkpoint-start#setup_gateway"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/en/applications-and-services/marketplace/initial-configuration/checkpoint-start#configure_network_access_to_gateway"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/en/applications-and-services/marketplace/service-management/pr-instance-manage#deleting_a_service_instance"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#delete_vm"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/net#deleting_a_network"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/usergate-start",
@@ -13425,6 +13481,10 @@
   ],
   [
     "/ru/kubernetes/k8s/concepts/storage",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/storage",
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/storage#rabota_s_container_storage_interface_csi"
   ],
   [
@@ -15258,6 +15318,10 @@
   [
     "/ru/kubernetes/k8s/reference/gatekeeper",
     "http://localhost:3000/docs/ru/kubernetes/k8s/how-to-guides/gatekeeper"
+  ],
+  [
+    "/ru/kubernetes/k8s/reference/pvs-and-pvcs",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage"
   ],
   [
     "/ru/kubernetes/k8s/reference/pvs-and-pvcs",

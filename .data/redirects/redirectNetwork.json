@@ -27754,5 +27754,11 @@
     "destination": "/en/ml/mlplatform/mlflow/service-management/manage",
     "permanent": false,
     "locale": false
+  },
+  {
+    "source": "/en/applications-and-services/marketplace/initial-configuration/check-point-cloud-guard",
+    "destination": "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "permanent": false,
+    "locale": false
   }
 ]

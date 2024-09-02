@@ -259,6 +259,31 @@
     "full": "Настройка агента для сбора логов из дополнительных текстовых файлов",
     "text": "Настройка агента для сбора логов из дополнительных текстовых файлов"
   },
+  "preparatory_steps": {
+    "number": null,
+    "full": "Подготовительные шаги",
+    "text": "Подготовительные шаги"
+  },
+  "setup_gateway": {
+    "number": null,
+    "full": "2. Настройте виртуальный шлюз",
+    "text": "2. Настройте виртуальный шлюз"
+  },
+  "setup_management": {
+    "number": null,
+    "full": "3. Настройте сервер управления",
+    "text": "3. Настройте сервер управления"
+  },
+  "configure_network_access_to_gateway": {
+    "number": null,
+    "full": "5. Настройте сетевой доступ к шлюзу",
+    "text": "5. Настройте сетевой доступ к шлюзу"
+  },
+  "configure_network_access_to_management": {
+    "number": null,
+    "full": "6. Настройте сетевой доступ к серверу управления",
+    "text": "6. Настройте сетевой доступ к серверу управления"
+  },
   "roles_permissions": {
     "number": null,
     "full": "Права для всех ролей",
@@ -418,31 +443,6 @@
     "number": null,
     "full": "Экспорт списка событий",
     "text": "Экспорт списка событий"
-  },
-  "preparatory_steps": {
-    "number": null,
-    "full": "Подготовительные шаги",
-    "text": "Подготовительные шаги"
-  },
-  "setup_gateway": {
-    "number": null,
-    "full": "2. Настройте виртуальный шлюз",
-    "text": "2. Настройте виртуальный шлюз"
-  },
-  "setup_management": {
-    "number": null,
-    "full": "3. Настройте сервер управления",
-    "text": "3. Настройте сервер управления"
-  },
-  "configure_network_access_to_gateway": {
-    "number": null,
-    "full": "5. Настройте сетевой доступ к шлюзу",
-    "text": "5. Настройте сетевой доступ к шлюзу"
-  },
-  "configure_network_access_to_management": {
-    "number": null,
-    "full": "6. Настройте сетевой доступ к серверу управления",
-    "text": "6. Настройте сетевой доступ к серверу управления"
   },
   "configure_network_connectivity": {
     "number": null,
