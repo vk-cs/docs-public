@@ -3743,5 +3743,6 @@
   "/en/ml/mlplatform/mlflow/quick-start/createuser": "/en/ml/mlplatform/concepts/mlflow-modes",
   "/en/ml/mlplatform/mlflow/quick-start/create": "/en/ml/mlplatform/mlflow/service-management/create",
   "/en/ml/mlplatform/mlflow/quick-start/connect": "/en/ml/mlplatform/mlflow/service-management/connect",
-  "/en/ml/mlplatform/mlflow/service-management/delete": "/en/ml/mlplatform/mlflow/service-management/manage"
+  "/en/ml/mlplatform/mlflow/service-management/delete": "/en/ml/mlplatform/mlflow/service-management/manage",
+  "/en/applications-and-services/marketplace/initial-configuration/check-point-cloud-guard": "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start"
 }

@@ -509,7 +509,7 @@
 /docs/en/applications-and-services/marketplace/initial-configuration
 /docs/en/applications-and-services/marketplace/initial-configuration/dr-quick-start
 /docs/en/applications-and-services/marketplace/initial-configuration/migrate-hystax
-/docs/en/applications-and-services/marketplace/initial-configuration/check-point-cloud-guard
+/docs/en/applications-and-services/marketplace/initial-configuration/checkpoint-start
 /docs/en/applications-and-services/marketplace/initial-configuration/usergate-start
 /docs/en/applications-and-services/marketplace/initial-configuration/nexus-3-start
 /docs/en/applications-and-services/marketplace/initial-configuration/grafana-start
