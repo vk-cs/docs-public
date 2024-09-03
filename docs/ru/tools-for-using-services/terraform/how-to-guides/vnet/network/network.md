@@ -112,7 +112,7 @@
 
   </details>
 
-- `pool` — пул плавающих IP-адресов: `internet` для [SDN](/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn) Sprut, `ext-net` для SDN Neutron.
+- `pool` — пул плавающих IP-адресов: `internet` для [SDN](/ru/networks/vnet/concepts/sdn) Sprut, `ext-net` для SDN Neutron.
 
 - `port_id` — идентификатор порта, с которым будет связан плавающий IP-адрес. Идентификатор можно указать в манифесте, получить из источника данных или ресурса.
 
@@ -136,7 +136,7 @@
 
   </details>
 
-- `sdn` — [SDN](/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn), в которой создается ресурс (сеть, подсеть, маршрутизатор и пр.). Доступные значения: `neutron`, `sprut`. Если SDN не указана, используется SDN по умолчанию. Узнать, какие SDN подключены для вашего проекта, можно в [настройках проекта](/ru/tools-for-using-services/account/service-management/project-settings/manage#sdn_view).
+- `sdn` — [SDN](/ru/networks/vnet/concepts/sdn), в которой создается ресурс (сеть, подсеть, маршрутизатор и пр.). Доступные значения: `neutron`, `sprut`. Если SDN не указана, используется SDN по умолчанию. Узнать, какие SDN подключены для вашего проекта, можно в [настройках проекта](/ru/tools-for-using-services/account/service-management/project-settings/manage#sdn_view).
 
 - `subnet_id` — идентификатор подсети. Идентификатор можно указать в манифесте, получить из источника данных или после создания ресурса.
 
