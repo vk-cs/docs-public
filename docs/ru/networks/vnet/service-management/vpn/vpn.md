@@ -1,6 +1,6 @@
 Вы можете управлять VPN-туннелями: просматривать, добавлять в проект и удалять их из проекта, а также редактировать и перезапускать туннели.
 
-Сервис VPN доступен в Neutron и Sprut [SDN](../../concepts/architecture#ispolzuemye_sdn). Доступные инструменты управления зависят от используемой SDN:
+Сервис VPN доступен в Neutron и Sprut [SDN](../../concepts/sdn). Доступные инструменты управления зависят от используемой SDN:
 
 - Sprut SDN: интерфейс личного кабинета, API и Terraform.
 - Neutron SDN: интерфейс личного кабинета, API, [Terraform](/ru/tools-for-using-services/terraform/how-to-guides/vnet/vpn) и [OpenStack CLI](/ru/tools-for-using-services/cli/openstack-cli).
