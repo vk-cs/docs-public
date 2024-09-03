@@ -1,0 +1,38 @@
+[
+  {
+    "group": {
+      "title": "Частное облако",
+      "items": [
+        {
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/private-cloud/",
+          "title": "Документация Private Cloud",
+          "description": "",
+          "icon": "/ru/on-premises/assets/private-cloud-icon.svg",
+          "iconMobile": "/ru/on-premises/assets/private-cloud-mobile-icon.svg"
+        },
+        {
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/private-cloud-knowledge-base/",
+          "title": "База знаний Private Cloud",
+          "description": "",
+          "icon": "/ru/on-premises/assets/knowledge-base-icon.svg",
+          "iconMobile": "/ru/on-premises/assets/knowledge-base-mobile-icon.svg"
+        }
+      ]
+    }
+  },
+  {
+    "group": {
+      "title": "Автономные продукты",
+      "items": [
+        {
+          "absoluteLink": "https://cloud.vk.com/docs/on-premises/dev-platform/",
+          "title": "Платформа разработки",
+          "description": "",
+          "icon": "/ru/on-premises/assets/dev-platform-icon.svg",
+          "iconMobile": "/ru/on-premises/assets/dev-platform-mobile-icon.svg"
+        }
+      ]
+    }
+  }
+]
+
