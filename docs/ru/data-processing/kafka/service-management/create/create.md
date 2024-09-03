@@ -41,7 +41,7 @@
          Если нужной сети нет в списке:
 
          1. Выберите пункт **Создать новую сеть**.
-         1. Выберите нужную [SDN](/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn): **Neutron** или **Sprut**.
+         1. Выберите нужную [SDN](/ru/networks/vnet/concepts/sdn): **Neutron** или **Sprut**.
          1. Задайте адрес подсети, например, `10.0.1.0/24`.
 
    1. Выберите [зону доступности](/ru/intro/start/architecture#az), где будет размещен узел кластера Cloud Containers.
@@ -103,7 +103,7 @@
          Если нужной сети нет в списке:
 
          1. Выберите пункт **Создать новую сеть**.
-         1. Выберите нужную [SDN](/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn): **Neutron** или **Sprut**.
+         1. Выберите нужную [SDN](/ru/networks/vnet/concepts/sdn): **Neutron** или **Sprut**.
          1. Задайте адрес подсети, например, `10.0.1.0/24`.
 
    1. Выберите [зону доступности](/ru/intro/start/architecture#az), где будет размещен узел кластера Cloud Containers.

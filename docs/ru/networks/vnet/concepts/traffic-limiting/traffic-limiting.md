@@ -27,8 +27,8 @@
 
 Группы безопасности по умолчанию:
 
-- `default` — для сетей [SDN Neutron](../architecture#ispolzuemye_sdn);
-- `default-sprut` — для сетей [SDN Sprut](../architecture#ispolzuemye_sdn).
+- `default` — для сетей [SDN Neutron](../sdn);
+- `default-sprut` — для сетей [SDN Sprut](../sdn).
 
 ## Преднастроенные группы безопасности
 
