@@ -12933,6 +12933,10 @@
   ],
   [
     "/ru/dbs/dbaas/service-management/postgre-update",
+    "http://localhost:3000/docs/ru/storage/backups/service-management/db-backup/manage-db-backups#sozdanie_rezervnoy_kopii"
+  ],
+  [
+    "/ru/dbs/dbaas/service-management/postgre-update",
     "http://localhost:3000/docs/ru/tools-for-using-services/rest-api/endpoints#prosmotr_spiska_endpointov"
   ],
   [
