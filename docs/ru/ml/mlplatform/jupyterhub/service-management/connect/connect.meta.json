@@ -1,9 +1,9 @@
 {
     "title": "Подключение к JupyterHub",
-    "pageDescription": "Описание процесса подключения к инстансу JupyterHub.",
+    "pageDescription": "Как подключиться к веб-интерфейсу инстанса JupyterHub.",
     "shortDescription": "Как подключиться к веб-интерфейсу инстанса JupyterHub",
     "metaTitle": "Подключение к JupyterHub",
-    "metaDescription": "Подключение к JupyterHub",
+    "metaDescription": "Как подключиться к веб-интерфейсу инстанса JupyterHub",
     "sectionTitle": "Подключение к JupyterHub",
     "icon": "",
     "weight": 2,
