@@ -1,6 +1,6 @@
 {
   "title": "MLflow",
-  "pageDescription": "Этот раздел описывает создание и работу с инстансами Mlflow.",
+  "pageDescription": "Этот раздел описывает создание инстансов Mlflow и работу с ними.",
   "shortDescription": "MLflow — один из основных open source инструментов для решения задач MLOps",
   "metaTitle": "MLflow",
   "metaDescription": "MLflow это сервис по созданию и работе с инстансами MLflow",
@@ -11,6 +11,10 @@
     {
       "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
       "title": "Создание инстанса MLflow с помощью Terraform"
+    },
+    {
+      "partialPath": "/ru/ml/mlplatform/mlplatform-lib",
+      "title": "Работа с библиотекой Cloud ML Platform"
     }
   ],
   "uuid": "771f622f-35e9-407e-9379-c9143efe8886"
