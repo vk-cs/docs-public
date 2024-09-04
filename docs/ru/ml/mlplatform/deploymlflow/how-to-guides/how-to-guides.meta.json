@@ -1,10 +1,11 @@
 {
-    "title": "Практические руководства",
-    "pageDescription": "Примеры использования сервиса MLflow Deploy.",
-    "shortDescription": "Примеры использования сервиса MLflow Deploy",
-    "metaTitle": "Практические руководства",
-    "metaDescription": "Примеры использования сервиса MLflow Deploy.",
-    "sectionTitle": "Практические руководства",
-    "icon": "",
-    "weight": 3
-  }
+  "title": "Практические руководства",
+  "pageDescription": "Примеры использования сервиса MLflow Deploy.",
+  "shortDescription": "Примеры использования сервиса MLflow Deploy",
+  "metaTitle": "Практические руководства",
+  "metaDescription": "Примеры использования сервиса MLflow Deploy.",
+  "sectionTitle": "Практические руководства",
+  "icon": "",
+  "weight": 3,
+  "uuid": "eda04283-2969-4abe-8830-dfbaf5e7bf77"
+}

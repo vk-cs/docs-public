@@ -1,10 +1,11 @@
 {
-    "title": "Подключение к MLflow Deploy",
-    "pageDescription": "Как подключиться к веб-интерфейсу инстанса MLflow Deploy.",
-    "shortDescription": "Как подключиться к веб-интерфейсу инстанса MLflow Deploy",
-    "metaTitle": "Подключение к MLflow Deploy",
-    "metaDescription": "Как подключиться к веб-интерфейсу инстанса MLflow Deploy",
-    "sectionTitle": "Подключение к MLflow Deploy",
-    "icon": "",
-    "weight": 2
+  "title": "Подключение к MLflow Deploy",
+  "pageDescription": "Как подключиться к веб-интерфейсу инстанса MLflow Deploy.",
+  "shortDescription": "Как подключиться к веб-интерфейсу инстанса MLflow Deploy",
+  "metaTitle": "Подключение к MLflow Deploy",
+  "metaDescription": "Как подключиться к веб-интерфейсу инстанса MLflow Deploy",
+  "sectionTitle": "Подключение к MLflow Deploy",
+  "icon": "",
+  "weight": 2,
+  "uuid": "1e7875a6-a9d5-4b45-8f9f-7d3809239407"
 }

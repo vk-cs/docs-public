@@ -451,10 +451,12 @@
 /docs/ru/ml/mlplatform/mlflow/service-management/manage
 /docs/ru/ml/mlplatform/deploymlflow
 /docs/ru/ml/mlplatform/deploymlflow/quick-start
-/docs/ru/ml/mlplatform/deploymlflow/quick-start/create
 /docs/ru/ml/mlplatform/deploymlflow/service-management
-/docs/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client
-/docs/ru/ml/mlplatform/deploymlflow/service-management/delete
+/docs/ru/ml/mlplatform/deploymlflow/service-management/create
+/docs/ru/ml/mlplatform/deploymlflow/service-management/connect
+/docs/ru/ml/mlplatform/deploymlflow/service-management/manage
+/docs/ru/ml/mlplatform/deploymlflow/how-to-guides
+/docs/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client
 /docs/ru/ml/mlplatform/mlplatform-lib
 /docs/ru/ml/mlplatform/mlplatform-lib/lib-install
 /docs/ru/ml/mlplatform/mlplatform-lib/lib-authz

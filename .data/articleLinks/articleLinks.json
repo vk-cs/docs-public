@@ -15493,6 +15493,10 @@
   ],
   [
     "/ru/ml/mlplatform/jupyterhub/service-management/create",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlplatform-lib/lib-reference#create_jupyter_hub"
+  ],
+  [
+    "/ru/ml/mlplatform/jupyterhub/service-management/create",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
   ],
   [
@@ -15517,6 +15521,10 @@
   ],
   [
     "/ru/ml/mlplatform/jupyterhub/service-management/manage",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlplatform-lib/lib-reference"
+  ],
+  [
+    "/ru/ml/mlplatform/jupyterhub/service-management/manage",
     "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/service-management/connect"
   ],
   [
@@ -15529,7 +15537,15 @@
   ],
   [
     "/ru/ml/mlplatform/jupyterhub/service-management/manage",
-    "http://localhost:3000/docs/ru/ml/mlplatform/mlflow/manage/delete"
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlplatform-lib/lib-reference#attach_s3_bucket_to_jh"
+  ],
+  [
+    "/ru/ml/mlplatform/jupyterhub/service-management/manage",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlflow/service-management/manage#delete"
+  ],
+  [
+    "/ru/ml/mlplatform/jupyterhub/service-management/manage",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlplatform-lib/lib-reference#delete_instance"
   ],
   [
     "/ru/ml/mlplatform/mlflow/quick-start",
@@ -15538,6 +15554,18 @@
   [
     "/ru/ml/mlplatform/mlflow/service-management/create",
     "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow"
+  ],
+  [
+    "/ru/ml/mlplatform/mlflow/service-management/create",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlplatform-lib/lib-reference#create_mlflow"
+  ],
+  [
+    "/ru/ml/mlplatform/mlflow/service-management/create",
+    "http://localhost:3000/docs/ru/ml/mlplatform/concepts/mlflow-modes#standalone"
+  ],
+  [
+    "/ru/ml/mlplatform/mlflow/service-management/create",
+    "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/quick-start/create"
   ],
   [
     "/ru/ml/mlplatform/mlflow/service-management/create",
@@ -15561,6 +15589,10 @@
   ],
   [
     "/ru/ml/mlplatform/mlflow/service-management/manage",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlplatform-lib/lib-reference"
+  ],
+  [
+    "/ru/ml/mlplatform/mlflow/service-management/manage",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
   ],
   [
@@ -15568,36 +15600,96 @@
     "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/service-management/delete"
   ],
   [
-    "/ru/ml/mlplatform/deploymlflow/quick-start/create",
-    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client"
+    "/ru/ml/mlplatform/mlflow/service-management/manage",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlplatform-lib/lib-reference#delete_instance"
   ],
   [
-    "/ru/ml/mlplatform/deploymlflow/quick-start/create",
+    "/ru/ml/mlplatform/deploymlflow/quick-start",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlflow/quick-start#1_create_mlflow"
+  ],
+  [
+    "/ru/ml/mlplatform/deploymlflow/quick-start",
+    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/service-management/manage#delete"
+  ],
+  [
+    "/ru/ml/mlplatform/deploymlflow/service-management/create",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow"
+  ],
+  [
+    "/ru/ml/mlplatform/deploymlflow/service-management/create",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlplatform-lib/lib-reference#create_deploy"
+  ],
+  [
+    "/ru/ml/mlplatform/deploymlflow/service-management/create",
+    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client"
+  ],
+  [
+    "/ru/ml/mlplatform/deploymlflow/service-management/create",
+    "http://localhost:3000/docs/ru/ml/mlplatform/concepts/mlflow-modes#standalone"
+  ],
+  [
+    "/ru/ml/mlplatform/deploymlflow/service-management/create",
     "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/quick-start/create"
   ],
   [
-    "/ru/ml/mlplatform/deploymlflow/quick-start/create",
-    "http://localhost:3000/docs/ru/ml/mlplatform/mlflow/quick-start/create"
+    "/ru/ml/mlplatform/deploymlflow/service-management/create",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlflow/service-management/create"
   ],
   [
-    "/ru/ml/mlplatform/deploymlflow/quick-start/create",
+    "/ru/ml/mlplatform/deploymlflow/service-management/create",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
   ],
   [
-    "/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client",
+    "/ru/ml/mlplatform/deploymlflow/service-management/create",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/ru/ml/mlplatform/deploymlflow/service-management/create",
+    "http://localhost:3000/docs/computing/iaas/concepts/volume-sla/"
+  ],
+  [
+    "/ru/ml/mlplatform/deploymlflow/service-management/create",
+    "http://localhost:3000/docs/ru/ml/mlplatform/concepts/mlflow-modes"
+  ],
+  [
+    "/ru/ml/mlplatform/deploymlflow/service-management/create",
+    "http://localhost:3000/docs/ru/ml/mlplatform/concepts/mlflow-modes"
+  ],
+  [
+    "/ru/ml/mlplatform/deploymlflow/service-management/connect",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlflow/service-management/create"
+  ],
+  [
+    "/ru/ml/mlplatform/deploymlflow/service-management/manage",
+    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client"
+  ],
+  [
+    "/ru/ml/mlplatform/deploymlflow/service-management/manage",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
+  ],
+  [
+    "/ru/ml/mlplatform/deploymlflow/service-management/manage",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlplatform-lib/lib-reference#delete_instance"
+  ],
+  [
+    "/ru/ml/mlplatform/deploymlflow/service-management/manage",
+    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client#delete_deploy_server"
+  ],
+  [
+    "/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client",
     "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/quick-start/create"
   ],
   [
-    "/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client",
+    "/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client",
     "http://localhost:3000/docs/ru/ml/mlplatform/mlflow/quick-start/create"
   ],
   [
-    "/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client",
+    "/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client",
     "http://localhost:3000/docs/ru/ml/mlplatform/jupyterhub/quick-start/connect"
   ],
   [
-    "/ru/ml/mlplatform/deploymlflow/service-management/delete",
-    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client"
+    "/ru/ml/mlplatform/mlplatform-lib/lib-authz",
+    "http://localhost:3000/docs/ru/ml/mlplatform/mlplatform-lib/lib-reference"
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
@@ -15921,7 +16013,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
-    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client"
+    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client"
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
@@ -16065,7 +16157,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
-    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client"
+    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client"
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
@@ -16117,7 +16209,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
-    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client"
+    "http://localhost:3000/docs/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client"
   ],
   [
     "/ru/ml/mlplatform/faq",
@@ -16344,6 +16436,10 @@
     "http://localhost:3000/docs/ru/dbs/dbaas/service-management/manage-instance/clickhouse#udalenie_instansa_bd"
   ],
   [
+    "/ru/ml/spark-to-k8s/ml-platform-library/authz",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference"
+  ],
+  [
     "/ru/ml/spark-to-k8s/ml-platform-library/library-reference/method-list",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/clusters#get_clusters"
   ],
@@ -16382,6 +16478,10 @@
   [
     "/ru/ml/spark-to-k8s/ml-platform-library/library-reference/method-list",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs#get_manifest_from_yaml_file"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/ml-platform-library/library-reference/method-list",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs#save_yaml"
   ],
   [
     "/ru/ml/spark-to-k8s/ml-platform-library/library-reference/method-list",

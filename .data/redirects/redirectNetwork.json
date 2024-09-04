@@ -19585,7 +19585,7 @@
   },
   {
     "source": "/ru/ml/mlplatform/mlflowdeploy/start/create",
-    "destination": "/ru/ml/mlplatform/deploymlflow/quick-start/create",
+    "destination": "/ru/ml/mlplatform/deploymlflow/service-management/create",
     "permanent": false,
     "locale": false
   },
@@ -19597,13 +19597,13 @@
   },
   {
     "source": "/ru/ml/mlplatform/mlflowdeploy/manage/manage-mlflow-client",
-    "destination": "/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client",
+    "destination": "/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/mlplatform/mlflowdeploy/manage/delete",
-    "destination": "/ru/ml/mlplatform/deploymlflow/service-management/delete",
+    "destination": "/ru/ml/mlplatform/deploymlflow/service-management/manage",
     "permanent": false,
     "locale": false
   },
@@ -24913,7 +24913,7 @@
   },
   {
     "source": "/ru/ml/mlplatform/deploymlflow/start/create",
-    "destination": "/ru/ml/mlplatform/deploymlflow/quick-start/create",
+    "destination": "/ru/ml/mlplatform/deploymlflow/service-management/create",
     "permanent": false,
     "locale": false
   },
@@ -24925,13 +24925,13 @@
   },
   {
     "source": "/ru/ml/mlplatform/deploymlflow/manage/manage-mlflow-client",
-    "destination": "/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client",
+    "destination": "/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client",
     "permanent": false,
     "locale": false
   },
   {
     "source": "/ru/ml/mlplatform/deploymlflow/manage/delete",
-    "destination": "/ru/ml/mlplatform/deploymlflow/service-management/delete",
+    "destination": "/ru/ml/mlplatform/deploymlflow/service-management/manage",
     "permanent": false,
     "locale": false
   },
@@ -27764,6 +27764,24 @@
   {
     "source": "/ru/networks/vnet/concepts/architecture",
     "destination": "/ru/networks/vnet/concepts/sdn",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/mlplatform/deploymlflow/quick-start/create",
+    "destination": "/ru/ml/mlplatform/deploymlflow/service-management/create",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/mlplatform/deploymlflow/service-management/delete",
+    "destination": "/ru/ml/mlplatform/deploymlflow/service-management/manage",
+    "permanent": false,
+    "locale": false
+  },
+  {
+    "source": "/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client",
+    "destination": "/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client",
     "permanent": false,
     "locale": false
   }

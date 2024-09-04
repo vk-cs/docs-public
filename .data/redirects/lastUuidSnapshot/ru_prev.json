@@ -176,6 +176,7 @@
   "cf123175-2b56-437c-af7b-76b0bbef63e0": "/ru/intro/it-security/faq",
   "1a3ceab9-9225-46cf-ac65-b0b758a4f163": "/ru/intro/it-security/faq",
   "8602851d-f844-4f5d-b12b-d7beecb8c194": "/ru/intro/it-security/faq",
+  "da60d51a-abc5-42f6-b98e-57ccbf19e320": "/ru/on-premises",
   "c4dd1987-db22-4122-9dd3-c8661c377832": "/ru/computing",
   "f18cbbc6-353d-4989-84a8-152fedc68060": "/ru/computing/iaas",
   "7cfaaf0e-10f8-4a34-9d9a-5426ef9818b3": "/ru/computing/iaas/quick-start",
@@ -274,7 +275,7 @@
   "b6ede6dc-bd8b-415b-8a55-fbcd067d6e03": "/ru/networks/vnet/quick-start",
   "5aec52a4-ff32-4122-9e53-9e54235dd5d2": "/ru/networks/vnet/concepts",
   "77db0099-125e-4fee-9479-eeacc448dc38": "/ru/networks/vnet/concepts/about",
-  "ab284798-bdb7-4a27-aece-7bc3666ea94b": "/ru/networks/vnet/concepts/architecture",
+  "ab284798-bdb7-4a27-aece-7bc3666ea94b": "/ru/networks/vnet/concepts/sdn",
   "152cc140-fdcd-4b06-8c37-05bf90f8fd21": "/ru/networks/vnet/concepts/router",
   "bfeaac36-d823-44d1-abea-fd1aabcf6534": "/ru/networks/vnet/concepts/traffic-limiting",
   "c6f5fcf4-f9e6-4ef6-a3ea-f1ec033ebb4c": "/ru/networks/vnet/concepts/vpn",
@@ -1028,5 +1029,8 @@
   "a2bd57cb-84ec-47b0-96c3-200b02875dac": "/ru/cases/cases-logs/case-logging",
   "d6d94f5b-0274-4420-b91a-f7b2c488469f": "/ru/cases/cases-logs/mp-elk-monitoring",
   "f0c8b67f-c0ce-4eed-9601-05fda772f53d": "/ru/cases/cases-logs/case-fluent-bit",
-  "a5a42168-c69c-4835-93c3-97df526e24f5": "/ru/cases/cases-logs/case-fluentd"
+  "a5a42168-c69c-4835-93c3-97df526e24f5": "/ru/cases/cases-logs/case-fluentd",
+  "69b94b27-1e6b-40e9-ae24-33d5cd44b1b9": "/ru/cases/sprut-migration",
+  "abf7e470-032e-4360-8737-ffaef73a1d75": "/ru/cases/sprut-migration/about",
+  "3c6a9fb4-8768-48df-ad9b-09388930e44d": "/ru/cases/sprut-migration/iaas"
 }
