@@ -344,6 +344,16 @@
     "full": "Дорегистрация ЮЛ и ИП",
     "text": "Дорегистрация ЮЛ и ИП"
   },
+  "neutron": {
+    "number": null,
+    "full": "Neutron",
+    "text": "Neutron"
+  },
+  "sprut": {
+    "number": null,
+    "full": "Sprut",
+    "text": "Sprut"
+  },
   "activate_stop_delete_backup_plan": {
     "number": null,
     "full": "Активация, остановка и удаление плана резервного копирования",

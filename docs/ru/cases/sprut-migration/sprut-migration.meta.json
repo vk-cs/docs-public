@@ -1,10 +1,11 @@
 {
-    "title": "Миграция в SDN Sprut",
-    "pageDescription": "Как перенести проект в SDN Sprut.",
-    "shortDescription": "Как перенести проект в SDN Sprut",
-    "metaTitle": "Миграция в SDN Sprut",
-    "metaDescription": "Как перенести проект в SDN Sprut",
-    "sectionTitle": "Миграция в SDN Sprut",
-    "icon": "",
-    "weight": 13
-  }
+  "title": "Миграция в SDN Sprut",
+  "pageDescription": "Как перенести проект в SDN Sprut.",
+  "shortDescription": "Как перенести проект в SDN Sprut",
+  "metaTitle": "Миграция в SDN Sprut",
+  "metaDescription": "Как перенести проект в SDN Sprut",
+  "sectionTitle": "Миграция в SDN Sprut",
+  "icon": "",
+  "weight": 13,
+  "uuid": "69b94b27-1e6b-40e9-ae24-33d5cd44b1b9"
+}

@@ -57,6 +57,7 @@
 /docs/ru/intro/it-security/compliance-152fz
 /docs/ru/intro/it-security/certificates
 /docs/ru/intro/it-security/faq
+/docs/ru/on-premises
 /docs/ru/computing
 /docs/ru/computing/iaas
 /docs/ru/computing/iaas/quick-start
@@ -127,7 +128,7 @@
 /docs/ru/networks/vnet/quick-start
 /docs/ru/networks/vnet/concepts
 /docs/ru/networks/vnet/concepts/about
-/docs/ru/networks/vnet/concepts/architecture
+/docs/ru/networks/vnet/concepts/sdn
 /docs/ru/networks/vnet/concepts/router
 /docs/ru/networks/vnet/concepts/traffic-limiting
 /docs/ru/networks/vnet/concepts/vpn
@@ -697,3 +698,6 @@
 /docs/ru/cases/cases-logs/mp-elk-monitoring
 /docs/ru/cases/cases-logs/case-fluent-bit
 /docs/ru/cases/cases-logs/case-fluentd
+/docs/ru/cases/sprut-migration
+/docs/ru/cases/sprut-migration/about
+/docs/ru/cases/sprut-migration/iaas
