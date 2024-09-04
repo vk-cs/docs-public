@@ -1,4 +1,4 @@
-Управление инстансом MLflow доступно через личный кабинет VK Cloud. Удалить инстанс можно также с помощью [библиотеки Cloud ML Platform](../../../mlplatform-lib/lib-reference).
+Управление инстансом MLflow Deploy доступно через личный кабинет VK Cloud. Удалить инстанс можно также с помощью библиотеки [Cloud ML Platform](../../../mlplatform-lib/lib-reference) или [MLflow Deployment Client](../../how-to-guides/manage-mlflow-client).
 
 ## {heading(Изменение типа виртуальной машины)[id=change-vm-type]}
 
@@ -14,7 +14,7 @@
 1. [Перейдите](https://msk.cloud.vk.com/app/) в личный кабинет VK Cloud.
 1. Перейдите в раздел **ML Platform** → **Инстансы**.
 1. Нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного инстанса и выберите пункт **Изменить размер диска**.
-1. В открывшемся окне измените размер диска. Минимальное значение — 30 ГБ.
+1. В открывшемся окне измените размер диска. Минимальное значение — 50 ГБ.
 1. Нажмите кнопку **Сохранить**.
 
 ## {heading(Остановка и запуск инстанса)[id=pause]}
@@ -65,7 +65,7 @@
 
 <warn>
 
-Принудительный перезапуск инстанса соответствует выключению и включению питания (power cycling). Несохраненные данные могут быть потеряны.
+Принудительный перезапуск инстанса соответствует отключению и включению питания (power cycling). Несохраненные данные могут быть потеряны.
 
 </warn>
 
@@ -90,16 +90,11 @@
 
 ## {heading(Удаление инстанса)[id=delete]}
 
-<info>
-
-Если инстанс MLflow связан с MLflow Deploy, сначала [удалите инстанс MLflow Deploy](../../../deploymlflow/service-management/delete).
-
-</info>
-
 <tabs>
 <tablist>
 <tab>Личный кабинет</tab>
 <tab>Библиотека Cloud ML Platform</tab>
+<tab>Библиотека Deployment Client</tab>
 </tablist>
 <tabpanel>
 
@@ -117,6 +112,11 @@
 <tabpanel>
 
 Используйте метод [delete_instance](../../../mlplatform-lib/lib-reference#delete_instance).
+
+</tabpanel>
+<tabpanel>
+
+Используйте метод [delete_endpoint](../../how-to-guides/manage-mlflow-client#delete_deploy_server).
 
 </tabpanel>
 </tabs>

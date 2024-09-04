@@ -1475,7 +1475,7 @@ create_deployment(deploy_server_name: str,
    predict_ref: https://jh-test-mlp-XXXX.ml.msk.vkcs.cloud/deploy/f27bd56d-XXXX/test_deployment_1/invocations
    ```
 
-   О подготовке к созданию развертывания — в разделе [Управление инстансом с помощью MLflow Client](../../deploymlflow/service-management/manage-mlflow-client).
+   О подготовке к созданию развертывания — в разделе [Управление инстансом с помощью MLflow Client](../../deploymlflow/how-to-guides/manage-mlflow-client).
 
 </details>
 
@@ -1941,7 +1941,7 @@ ping_model(deploy_server_name: str,
 
    В случае успеха будет выведена пустая строка.
 
-   О подготовке к использованию ML-модели — в разделе [Управление инстансом с помощью MLflow Client](../../deploymlflow/service-management/manage-mlflow-client).
+   О подготовке к использованию ML-модели — в разделе [Управление инстансом с помощью MLflow Client](../../deploymlflow/how-to-guides/manage-mlflow-client).
 
 </details>
 
@@ -2067,6 +2067,6 @@ predict_model(data: Dict,
    {'predictions': [262.3591008044226, 215.47878674779508]}
    ```
 
-   О подготовке к использованию ML-модели — в разделе [Управление инстансом с помощью MLflow Client](../../deploymlflow/service-management/manage-mlflow-client).
+   О подготовке к использованию ML-модели — в разделе [Управление инстансом с помощью MLflow Client](../../deploymlflow/how-to-guides/manage-mlflow-client).
 
 </details>

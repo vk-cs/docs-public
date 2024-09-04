@@ -1,6 +1,6 @@
 {
   "title": "JupyterHub",
-  "pageDescription": "Этот раздел описывает принципы работы с сервисом JupyterHub, созданию и работе с инстансами JupyterHub.",
+  "pageDescription": "Этот раздел описывает принципы работы с сервисом JupyterHub, создание инстансов JupyterHub и работу с ними.",
   "shortDescription": "Платформа для полного цикла ML-разработки и совместной работы Data-команд",
   "metaTitle": "JupyterHub",
   "metaDescription": "",
@@ -11,6 +11,10 @@
     {
       "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
       "title": "Создание инстанса JupiterHub с помощью Terraform"
+    },
+    {
+      "partialPath": "/ru/ml/mlplatform/mlplatform-lib",
+      "title": "Работа с библиотекой Cloud ML Platform"
     }
   ],
   "uuid": "99a3a152-c351-4405-8bee-bcf9563cc5b3"

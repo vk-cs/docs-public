@@ -1,10 +1,10 @@
 {
-  "title": "Управление инстансом MLflow",
-  "pageDescription": "Описание возможностей управления созданным инстансом MLflow.",
-  "shortDescription": "Возможности управления инстансом MLflow",
-  "metaTitle": "Управление инстансом MLflow",
-  "metaDescription": "Управление инстансом MLflow",
-  "sectionTitle": "Управление инстансом MLflow",
+  "title": "Управление сервисом",
+  "pageDescription": "Создание инстанса MLflow и управление им.",
+  "shortDescription": "Создание инстанса MLflow и управление им",
+  "metaTitle": "Управление сервисом",
+  "metaDescription": "Создание инстанса MLflow и управление им",
+  "sectionTitle": "Управление сервисом",
   "icon": "",
   "weight": 4,
   "uuid": "f7377eab-9e4b-4b7c-8a75-d6594bbe005f"

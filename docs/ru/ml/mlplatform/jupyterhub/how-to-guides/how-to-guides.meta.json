@@ -1,9 +1,9 @@
 {
   "title": "Практические руководства",
-  "pageDescription": "Инструкции по работе с платформой Cloud ML Platform.",
-  "shortDescription": "Инструкции по базовым операциям",
+  "pageDescription": "Примеры использования сервиса JupyterHub.",
+  "shortDescription": "Примеры использования сервиса JupyterHub",
   "metaTitle": "Практические руководства",
-  "metaDescription": "Инструкции по работе с платформой Cloud ML Platform.",
+  "metaDescription": "Примеры использования сервиса JupyterHub.",
   "sectionTitle": "Практические руководства",
   "icon": "",
   "weight": 5,

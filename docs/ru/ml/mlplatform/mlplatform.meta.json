@@ -1,9 +1,9 @@
 {
   "title": "Cloud ML Platform",
-  "pageDescription": "Этот раздел описывает принципы работы с сервисом Cloud ML Platform, созданию и работе с инстансами JupyterHub и MLflow.",
+  "pageDescription": "Этот раздел описывает принципы работы с сервисом Cloud ML Platform, созданию и работе с инстансами JupyterHub, MLflow и MLflow Deploy.",
   "shortDescription": "Платформа для полного цикла ML-разработки и совместной работы Data-команд",
   "metaTitle": "Cloud ML Platform",
-  "metaDescription": "Cloud ML Platform это сервис по созданию и работе с инстансами JupyterHub",
+  "metaDescription": "Cloud ML Platform это сервис по созданию и работе с инстансами JupyterHub, MLflow и MLflow Deploy",
   "sectionTitle": "Cloud ML Platform",
   "icon": "",
   "weight": 1,

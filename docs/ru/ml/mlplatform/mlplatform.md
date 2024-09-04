@@ -1,1 +1,1 @@
-Этот раздел описывает принципы работы с сервисом Cloud ML Platform, создание и работу с инстансами JupyterHub и MLflow.
+В разделе описаны принципы работы с сервисом Cloud ML Platform, создание и работа с инстансами JupyterHub, MLflow и Mlflow Deploy.
