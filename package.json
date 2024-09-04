@@ -1,6 +1,6 @@
 {
   "name": "docs-public",
-  "version": "1.0.0",
+  "version": "2024.9.0",
   "description": "Публичная документация VK Cloud",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,6 @@
     "healthcheck": "audit checkup",
     "lint": "preparer prepare",
     "dev": "portal dev",
-
     "portal:install": "portal install",
     "preparer:prepare": "preparer prepare",
     "audit:checkup": "audit checkup",
