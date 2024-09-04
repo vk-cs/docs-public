@@ -1,15 +1,16 @@
 {
-    "title": "Вопросы и ответы",
-    "pageDescription": "Ответы на часто задаваемые вопросы о миграции в SDN Sprut.",
-    "shortDescription": "Ответы на часто задаваемые вопросы о миграции в SDN Sprut",
-    "metaTitle": "Вопросы и ответы",
-    "metaDescription": "Ответы на часто задаваемые вопросы о миграции в SDN Sprut",
-    "sectionTitle": "Вопросы и ответы",
-    "icon": "",
-    "weight": 10,
-    "build": {
+  "title": "Вопросы и ответы",
+  "pageDescription": "Ответы на часто задаваемые вопросы о миграции в SDN Sprut.",
+  "shortDescription": "Ответы на часто задаваемые вопросы о миграции в SDN Sprut",
+  "metaTitle": "Вопросы и ответы",
+  "metaDescription": "Ответы на часто задаваемые вопросы о миграции в SDN Sprut",
+  "sectionTitle": "Вопросы и ответы",
+  "icon": "",
+  "weight": 10,
+  "build": {
     "for": [
       "dontbuild"
     ]
-  }
+  },
+  "uuid": "41aa5cdf-6e4a-4725-8139-0803dd89a2ed"
 }

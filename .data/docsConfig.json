@@ -30,6 +30,36 @@
       }
     }
   },
+  "header": {
+    "relatedSites": {
+      "ru": [
+        {
+          "title": "Публичное облако",
+          "fullLink": "https://cloud.vk.com/docs",
+          "selected": true,
+          "iconPartialPath": "/docs/_docs/ru/assets/public-cloud-icon.svg"
+        },
+        {
+          "title": "Частные инсталляции",
+          "asPath": "/on-premises",
+          "iconPartialPath": "/docs/_docs/ru/assets/private-cloud-icon.svg"
+        }
+      ],
+      "en": [
+        {
+          "title": "Public Cloud",
+          "fullLink": "https://cloud.vk.com/docs",
+          "selected": true,
+          "iconPartialPath": "/docs/_docs/ru/assets/public-cloud-icon.svg"
+        },
+        {
+          "title": "Private installations",
+          "asPath": "/on-premises",
+          "iconPartialPath": "/docs/_docs/ru/assets/private-cloud-icon.svg"
+        }
+      ]
+    }
+  },
   "contacts": {
     "useNativeSupportUrl": false,
     "url": "https://support.mcs.mail.ru/login/oauth2/authorization/vkcloud",

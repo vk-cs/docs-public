@@ -9561,7 +9561,7 @@
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-create",
@@ -10564,30 +10564,6 @@
     "http://localhost:3000/docs/ru/networks/vnet/concepts/ips-and-inet"
   ],
   [
-    "/ru/networks/vnet/concepts/architecture",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/router"
-  ],
-  [
-    "/ru/networks/vnet/concepts/architecture",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/load-balancer"
-  ],
-  [
-    "/ru/networks/vnet/concepts/architecture",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/traffic-limiting"
-  ],
-  [
-    "/ru/networks/vnet/concepts/architecture",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/vpn"
-  ],
-  [
-    "/ru/networks/vnet/concepts/architecture",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/router"
-  ],
-  [
-    "/ru/networks/vnet/concepts/architecture",
-    "http://localhost:3000/docs/ru/networks/vnet/how-to-guides/advanced-router"
-  ],
-  [
     "/ru/networks/vnet/concepts/router",
     "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
   ],
@@ -10597,7 +10573,7 @@
   ],
   [
     "/ru/networks/vnet/concepts/router",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/networks/vnet/concepts/router",
@@ -10605,19 +10581,19 @@
   ],
   [
     "/ru/networks/vnet/concepts/router",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/networks/vnet/concepts/router",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/networks/vnet/concepts/traffic-limiting",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/networks/vnet/concepts/traffic-limiting",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/networks/vnet/concepts/traffic-limiting",
@@ -10625,7 +10601,7 @@
   ],
   [
     "/ru/networks/vnet/concepts/vpn",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/networks/vnet/concepts/vpn",
@@ -10669,7 +10645,7 @@
   ],
   [
     "/ru/networks/vnet/concepts/ips-and-inet",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/networks/vnet/service-management/net",
@@ -10925,11 +10901,11 @@
   ],
   [
     "/ru/networks/vnet/service-management/router",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/networks/vnet/service-management/router",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/networks/vnet/service-management/router",
@@ -11069,7 +11045,7 @@
   ],
   [
     "/ru/networks/vnet/service-management/vpn",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/networks/vnet/service-management/vpn",
@@ -15461,7 +15437,7 @@
   ],
   [
     "/ru/data-processing/kafka/service-management/create",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/data-processing/kafka/service-management/create",
@@ -15473,7 +15449,7 @@
   ],
   [
     "/ru/data-processing/kafka/service-management/create",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/data-processing/kafka/service-management/create",
@@ -15653,7 +15629,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
@@ -15677,7 +15653,7 @@
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/ml/mlplatform/mlplatform-lib/lib-reference",
@@ -18633,7 +18609,7 @@
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
-    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture#ispolzuemye_sdn"
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/tools-for-using-services/terraform/how-to-guides/vnet/network",
@@ -19302,5 +19278,89 @@
   [
     "/ru/cases/cases-logs/mp-elk-monitoring",
     "http://localhost:3000/docs/ru/cases/cases-logs/elk-u18"
+  ],
+  [
+    "/ru/cases/sprut-migration/about",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn#sprut"
+  ],
+  [
+    "/ru/cases/sprut-migration/about",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn#neutron"
+  ],
+  [
+    "/ru/cases/sprut-migration/about",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#sdn_view"
+  ],
+  [
+    "/ru/cases/sprut-migration/about",
+    "http://localhost:3000/docs/ru/networks/vnet/how-to-guides/advanced-router"
+  ],
+  [
+    "/ru/cases/sprut-migration/about",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#shared_net"
+  ],
+  [
+    "/ru/cases/sprut-migration/about",
+    "http://localhost:3000/docs/ru/networks/dns/private-dns"
+  ],
+  [
+    "/ru/cases/sprut-migration/about",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/iaas"
+  ],
+  [
+    "/ru/cases/sprut-migration/about",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/iaas"
+  ],
+  [
+    "/ru/cases/sprut-migration/iaas",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create"
+  ],
+  [
+    "/ru/cases/sprut-migration/iaas",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/ru/cases/sprut-migration/iaas",
+    "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
+  ],
+  [
+    "/ru/cases/sprut-migration/iaas",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/router#vozmozhnosti_standartnogo_marshrutizatora"
+  ],
+  [
+    "/ru/cases/sprut-migration/iaas",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/router#vozmozhnosti_prodvinutogo_marshrutizatora"
+  ],
+  [
+    "/ru/cases/sprut-migration/iaas",
+    "http://localhost:3000/docs/ru/networks/vnet/how-to-guides/advanced-router"
+  ],
+  [
+    "/ru/cases/sprut-migration/iaas",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt"
+  ],
+  [
+    "/ru/cases/sprut-migration/iaas",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt"
+  ],
+  [
+    "/ru/cases/sprut-migration/iaas",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create"
+  ],
+  [
+    "/ru/cases/sprut-migration/iaas",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/floating-ip#udalenie_plavayushchego_ip_adresa_iz_proekta"
+  ],
+  [
+    "/ru/cases/sprut-migration/iaas",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/secgroups#udalenie_gruppy_bezopasnosti"
+  ],
+  [
+    "/ru/cases/sprut-migration/iaas",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#udalenie_podseti"
+  ],
+  [
+    "/ru/cases/sprut-migration/iaas",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/router#udalenie_marshrutizatora"
   ]
 ]

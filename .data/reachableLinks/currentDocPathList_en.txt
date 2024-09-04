@@ -47,6 +47,7 @@
 /docs/en/intro/it-security
 /docs/en/intro/it-security/platform-security
 /docs/en/intro/it-security/tech
+/docs/en/on-premises
 /docs/en/computing
 /docs/en/computing/iaas
 /docs/en/computing/iaas/quick-start

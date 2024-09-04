@@ -750,6 +750,21 @@
     ]
   },
   {
+    "uuid": "8f452966-c979-4d7d-a4bd-e6e31132eb41",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 2,
+    "partialPath": "/en/on-premises",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/on-premises/on-premises.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/on-premises/on-premises.md",
+    "variables": {},
+    "hidden": true,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "6e30a713-ff78-452d-acad-33a0f3f349b8",
     "lang": "en",
     "type": "INTERMEDIATE",
@@ -10185,6 +10200,21 @@
     ]
   },
   {
+    "uuid": "da60d51a-abc5-42f6-b98e-57ccbf19e320",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 2,
+    "partialPath": "/ru/on-premises",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/on-premises/on-premises.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/on-premises/on-premises.md",
+    "variables": {},
+    "hidden": true,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "c4dd1987-db22-4122-9dd3-c8661c377832",
     "lang": "ru",
     "type": "INTERMEDIATE",
@@ -11239,9 +11269,9 @@
     "lang": "ru",
     "type": "ARTICLE",
     "level": 5,
-    "partialPath": "/ru/networks/vnet/concepts/architecture",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/concepts/architecture/architecture.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/concepts/architecture/architecture.md",
+    "partialPath": "/ru/networks/vnet/concepts/sdn",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/concepts/sdn/sdn.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/networks/vnet/concepts/sdn/sdn.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -19777,6 +19807,51 @@
     "partialPath": "/ru/cases/cases-logs/case-fluentd",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/cases-logs/case-fluentd/case-fluentd.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/cases-logs/case-fluentd/case-fluentd.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "69b94b27-1e6b-40e9-ae24-33d5cd44b1b9",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 3,
+    "partialPath": "/ru/cases/sprut-migration",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/sprut-migration.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/sprut-migration.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "abf7e470-032e-4360-8737-ffaef73a1d75",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/cases/sprut-migration/about",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/about/about.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/about/about.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "3c6a9fb4-8768-48df-ad9b-09388930e44d",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/cases/sprut-migration/iaas",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/iaas/iaas.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/iaas/iaas.md",
     "variables": {},
     "hidden": false,
     "version": null,
