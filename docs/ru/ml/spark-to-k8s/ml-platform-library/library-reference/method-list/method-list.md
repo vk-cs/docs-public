@@ -13,6 +13,7 @@
 
 - [get_default_manifest](../spark-jobs#get_default_manifest)
 - [get_manifest_from_yaml_file](../spark-jobs#get_manifest_from_yaml_file)
+- [save_yaml](../spark-jobs#save_yaml)
 - [spark_submit_job](../spark-jobs#spark_submit_job)
 - [spark_jobs_list](../spark-jobs#spark_jobs_list)
 - [spark_job_info](../spark-jobs#spark_job_info)

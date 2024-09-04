@@ -14,7 +14,7 @@
    </tabpanel>
    <tabpanel>
 
-   1. Установите Python 3.x и pip.
+   1. Установите Python версии 3.9 или выше и pip.
    1. При необходимости настройте виртуальное окружение (virtual environment) для Python.
 
    Например, можно воспользоваться [conda](https://conda.io/projects/conda/en/latest/index.html) или выполнить эти шаги вручную.

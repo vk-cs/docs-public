@@ -1,4 +1,5 @@
-Управляйте инстансами MLflow Deploy с помощью MLflow Deployment Client, предустановленной python-библиотеки в JupyterHub от VK Cloud.
+
+Управляйте инстансами MLflow Deploy с помощью MLflow Deployment Client — предустановленной python-библиотеки в JupyterHub от VK Cloud.
 
 ## Перед началом работы
 
@@ -6,8 +7,7 @@
 2. [Создайте](../../../mlflow/quick-start/create/) инстанс MLflow.
 3. Перезагрузите виртуальную машину с JupyterHub:
    1. Перейдите в раздел **Облачные вычисления → Виртуальные машины**.
-   2. В подразделе **Инстансы ML Platform** найдите нужный инстанс JupyterHub.
-   3. Наведите на значок с тремя точками и выберите пункт **Перезагрузить**.
+   1. В подразделе **Инстансы ML Platform** нажмите ![ ](/ru/assets/more-icon.svg "inline") для нужного инстанса JupyterHub и выберите пункт **Перезагрузить**.
 
 <info>
 
@@ -15,14 +15,14 @@
 
 </info>
 
-## Подготовка модели
+## Подготовка ML-модели
 
 1. [Подключитесь](../../../jupyterhub/quick-start/connect/) к инстансу JupyterHub.
 2. Перейдите в директорию **tutorials**.
 
    В состав JupyterHub от VK Cloud включены обучающие Jupyter-ноутбуки: `mlflow_demo.ipynb` и `mlflow_deploy_demo.ipynb`.
 
-3. Подготовьте тестовую модель:
+3. Подготовьте тестовую ML-модель:
    1. Нажмите два раза на `mlflow_demo.ipynb`.
    2. В открывшемся окне нажмите на клетку с примером кода и выберите в меню **Run → Run Selected Cells**.
    3. Повторите операцию для всех клеток с кодом.
@@ -35,23 +35,23 @@
 2. В открывшемся окне нажмите на клетку с примером кода и выберите в меню **Run → Run Selected Cells**.
 3. Повторите операцию для всех клеток с кодом.
 
-Разберем подробнее проводимые операции с разворачиванием сервера и docker-контейнера.
+Разберем подробнее проводимые операции с развертыванием сервера и docker-контейнера.
 
 ### Создание MlflowClient
 
-Создайте MlflowClient из Tracking модуля MLflow для получения URI ML-модели. URI понадобится далее для деплоя модели. В примере приведено обращение к модели по URI.
+Создайте MlflowClient из Tracking модуля MLflow для получения URI ML-модели. URI понадобится далее для развертывания ML-модели. В примере приведено обращение к ML-модели по URI.
 
 ```python
 from mlflow.tracking import MlflowClient
 cli = MlflowClient()
 ```
 
-Для примера используйте самую первую модель:
+Для примера используйте самую первую ML-модель:
 
 ```python
 model_source_uri = cli.search_registered_models()[0].latest_versions[0].source
-print("Имя модели: ", cli.search_registered_models()[0].latest_versions[0].name)
-print("URI модели: ", model_source_uri)
+print("Имя ML-модели: ", cli.search_registered_models()[0].latest_versions[0].name)
+print("URI ML-модели: ", model_source_uri)
 ```
 
 Создайте Client из Deployments модуля MLflow для работы в Cloud ML Platform:
@@ -63,7 +63,7 @@ client = get_deploy_client('vk-cloud-mlplatform')
 
 ### Создание endpoint
 
-`endpoint` в терминологии VK Cloud MLflow Deploy — это ВМ, сконфигурированная как деплой-сервер.
+`endpoint` в терминологии VK Cloud MLflow Deploy — это ВМ, сконфигурированная как сервер развертывания.
 
 ```python
 deploy_server_name = "deploy_server_one"
@@ -72,7 +72,7 @@ client.create_endpoint(name=deploy_server_name)
   
 `client.create_endpoint(name, performance="low", disk_size=50, disk_type="ceph-ssd", av_zone=None)`
 
-Выше перечислен полный список параметров. Создать деплой-сервер можно и с указанием только имени сервера. `av_zone` в этом случае будет взята аналогично зоне в которой расположен связанный MLflow сервис.
+Выше перечислен полный список параметров. Создать сервер развертывания можно и с указанием только имени сервера. В этом случае в качестве значения параметра `av_zone` будет выбрана зона, в которой расположен связанный MLflow сервис.
 
 Параметр `perfomance` в методе `create_enpoint` отвечает за конфигурацию виртуальной машины. Доступны следующие значения:
 
@@ -82,13 +82,13 @@ client.create_endpoint(name=deploy_server_name)
 
 ### Получение списка и статуса серверов
 
-Деплой-сервер готов для работы после смены статуса `CREATING` на `RUNNING`. Обычно подготовка деплой-сервера занимает около пяти-десяти минут.
+Сервер развертывания готов для работы после смены статуса `CREATING` на `RUNNING`. Обычно подготовка сервера развертывания занимает около пяти-десяти минут.
 
 ```python
 client.list_endpoints()
 ```
 
-Получите информацию о статусе деплой-сервера по его имени:
+Получите информацию о статусе сервера развертывания по его имени:
 
 ```python
 client.get_endpoint(deploy_server_name)
@@ -96,30 +96,30 @@ client.get_endpoint(deploy_server_name)
 
 ### Создание deployment
 
-`deployment` в терминологии VK Cloud MLflow Deploy — это запущенный docker-контейнер с моделью на деплой-сервере.
+`deployment` в терминологии VK Cloud MLflow Deploy — это запущенный docker-контейнер с ML-моделью на сервере развертывания.
 
 ```python
 deployment_name="test_deployment"
 client.create_deployment(server_name=deploy_server_name, deployment_name=deployment_name, model_uri=model_source_uri, port_out = None)
 ```
 
-`port_out` можно не указывать, выберется первый свободный в диапазоне от `62000` до `65000`. Запуск модели обычно занимает менее минуты.
+`port_out` можно не указывать, будет выбран первый свободный в диапазоне от `62000` до `65000`. Запуск ML-модели обычно занимает менее минуты.
 
 ### Получение списка и статуса deployment
 
-1. Выведите список запущенных моделей на деплой-сервере:
+1. Выведите список запущенных ML-моделей на сервере развертывания:
 
    ```python
    client.list_deployments(deploy_server_name)
    ```
 
-1. Получите информацию о развернутой модели по имени деплой-сервера и модели:
+1. Получите информацию о развернутой ML-модели по имени сервера развертывания и ML-модели:
 
    ```python
    client.get_deployment(deploy_server_name, deployment_name)
    ```
 
-1. Используйте метод `predict` у модели в docker-контейнере:
+1. Используйте метод `predict` у ML-модели в docker-контейнере:
 
    ```python
    data = {"inputs":[[0.045341,  0.050680,  0.060618,  0.031065,  0.028702, -0.047347, -0.054446, 0.071210,  0.133597, 0.135612],[0.075341,  0.010680,  0.030618,  0.011065,  0.098702, -0.007347, -0.014446, 0.071210,  0.093597, 0.115612]]}
@@ -132,7 +132,7 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
 
    <info>
 
-   Рекомендуется задавать отличные реквизиты от облака VK Cloud или JupyterHub.
+   Рекомендуется задавать реквизиты, отличные от учетных данных личного кабинета VK Cloud или параметров авторизации на инстансе JupyterHub.
 
    </info>
 
@@ -142,14 +142,14 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
    client.create_deployment(deploy_server_name, auth_deployment_name, model_source_uri, auth=auth_value)
    ```
 
-1. Получите информацию о задеплоенной модели:
+1. Получите информацию о развернутой ML-модели:
 
    ```python
    deployment_info = client.get_deployment(deploy_server_name, auth_deployment_name)
    print(deployment_info)
    ```
 
-1. Получите DNS-имя для обращения к модели:
+1. Получите DNS-имя для обращения к ML-модели:
 
    ```python
    print(deployment_info['model_ref'])
@@ -164,7 +164,7 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
    print(response.text)
    ```
 
-1. Используйте метод `predict` у модели в docker-контейнере:
+1. Используйте метод `predict` у ML-модели в docker-контейнере:
 
    ```python
    client.predict(deploy_server_name, auth_deployment_name, data)
@@ -172,13 +172,13 @@ client.create_deployment(server_name=deploy_server_name, deployment_name=deploym
 
 ### Удаление deployment
 
-Удалите deployment с сервера, обращаясь по имени сервера и deployment:
+Удалите deployment с сервера развертывания, обращаясь по имени сервера и deployment:
 
 ```python
 client.delete_deployment(deploy_server_name, deployment_name)
 ```
 
-### Удаление деплой-сервера
+### {heading(Удаление сервера развертывания)[id=delete_deploy_server]}
 
 ```python
 client.delete_endpoint(deploy_server_name)
@@ -190,19 +190,19 @@ client.delete_endpoint(deploy_server_name)
 from mlflow.deployments import get_deploy_client
 client = get_deploy_client('vk-cloud-mlpatform')
 
-# endpoint – это деплой-сервер ВМ
+# endpoint – это ВМ, сконфигурированная как сервер развертывания
 client.create_endpoint(name, performance="low", disk_size=50, disk_type="ceph-ssd", av_zone=None)
 client.list_endpoints()
 client.get_endpoint(server_name)
 
-# deployment – запущеный docker-контейнер с моделью на deployment сервере
+# deployment – запущенный docker-контейнер с ML-моделью на сервере развертывания
 client.create_deployment(server_name, deployment_name, model_uri, port_out = None)
 
-# port_out – можно не указывать, выберется первый свободный в диапазоне от 62000 до 65000
+# port_out можно не указывать, выберется первый свободный в диапазоне от 62000 до 65000
 client.list_deployments(server_name)
 client.get_deployment(server_name, deployment_name)
 
-# вызов метода predict у модели в docker-контейнере
+# вызов метода predict у ML-модели в docker-контейнере
 client.predict(server_name, deployment_name, df_payload)
 
 client.delete_deployment(server_name, deployment_name)

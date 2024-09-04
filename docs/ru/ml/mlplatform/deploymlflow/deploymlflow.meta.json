@@ -1,9 +1,9 @@
 {
   "title": "MLflow Deploy",
-  "pageDescription": "Этот раздел описывает как создать и управлять инстансом MLflow Deploy.",
-  "shortDescription": "Собирает ML-модели в Docker-контейнеры и делает их доступными по REST API",
+  "pageDescription": "Этот раздел описывает как создать инстанс MLflow Deploy и управлять им.",
+  "shortDescription": "Инструмент для упаковки ML-моделей в Docker-контейнеры и предоставления доступа к ним по REST API",
   "metaTitle": "MLflow Deploy",
-  "metaDescription": "Собирает ML-модели в Docker-контейнеры и делает их доступными по REST API",
+  "metaDescription": "Инструмент для упаковки ML-моделей в Docker-контейнеры и предоставления доступа к ним по REST API",
   "sectionTitle": "MLflow Deploy",
   "icon": "",
   "weight": 5,
@@ -11,6 +11,10 @@
     {
       "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/deploymlflow",
       "title": "Создание инстанса MLflow Deploy с помощью Terraform"
+    },
+    {
+      "partialPath": "/ru/ml/mlplatform/mlplatform-lib",
+      "title": "Работа с библиотекой Cloud ML Platform"
     }
   ],
   "uuid": "77116544-82da-41b3-a40a-863f8cd124f9"
