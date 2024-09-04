@@ -16097,26 +16097,11 @@
   {
     "uuid": "c9c37ee4-c998-46ef-ba96-decf1accccf6",
     "lang": "ru",
-    "type": "INTERMEDIATE",
+    "type": "ARTICLE",
     "level": 5,
     "partialPath": "/ru/ml/mlplatform/deploymlflow/quick-start",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/quick-start/quick-start.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/quick-start/quick-start.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "c67d6d8f-118e-41a0-81e9-7d771bd50460",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/ml/mlplatform/deploymlflow/quick-start/create",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/quick-start/create/create.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/quick-start/create/create.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -16140,13 +16125,28 @@
     ]
   },
   {
-    "uuid": "327277eb-e5b3-4fd9-a04c-76ba466105c8",
+    "uuid": "c67d6d8f-118e-41a0-81e9-7d771bd50460",
     "lang": "ru",
     "type": "ARTICLE",
     "level": 6,
-    "partialPath": "/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client/manage-mlflow-client.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/service-management/manage-mlflow-client/manage-mlflow-client.md",
+    "partialPath": "/ru/ml/mlplatform/deploymlflow/service-management/create",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/service-management/create/create.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/service-management/create/create.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "1e7875a6-a9d5-4b45-8f9f-7d3809239407",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/ml/mlplatform/deploymlflow/service-management/connect",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/service-management/connect/connect.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/service-management/connect/connect.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -16159,9 +16159,39 @@
     "lang": "ru",
     "type": "ARTICLE",
     "level": 6,
-    "partialPath": "/ru/ml/mlplatform/deploymlflow/service-management/delete",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/service-management/delete/delete.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/service-management/delete/delete.md",
+    "partialPath": "/ru/ml/mlplatform/deploymlflow/service-management/manage",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/service-management/manage/manage.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/service-management/manage/manage.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "eda04283-2969-4abe-8830-dfbaf5e7bf77",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 5,
+    "partialPath": "/ru/ml/mlplatform/deploymlflow/how-to-guides",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/how-to-guides/how-to-guides.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/how-to-guides/how-to-guides.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "327277eb-e5b3-4fd9-a04c-76ba466105c8",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client/manage-mlflow-client.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client/manage-mlflow-client.md",
     "variables": {},
     "hidden": false,
     "version": null,

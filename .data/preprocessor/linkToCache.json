@@ -379,10 +379,20 @@
     "full": "Fluent Bit для Cloud Logging (logaas-integration)",
     "text": "Fluent Bit для Cloud Logging (logaas-integration)"
   },
+  "1_create_mlflow": {
+    "number": null,
+    "full": "1. Создайте инстанс MLflow",
+    "text": "1. Создайте инстанс MLflow"
+  },
   "copy-link": {
     "number": null,
     "full": "Копирование ссылки на инстанс",
     "text": "Копирование ссылки на инстанс"
+  },
+  "delete_deploy_server": {
+    "number": null,
+    "full": "Удаление сервера развертывания",
+    "text": "Удаление сервера развертывания"
   },
   "get_current_token_details": {
     "number": null,
