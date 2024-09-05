@@ -4,7 +4,7 @@ The article provides examples of creating database instances with various settin
 
 1. Check out the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) in which you plan to create a DB instance. Different quotas can be set up for different regions.
 
-   If you want to increase quotas, contact [technical support](/en/contacts).
+   If you want to increase quotas, contact [technical support](mailto:support@mcs.mail.ru).
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 

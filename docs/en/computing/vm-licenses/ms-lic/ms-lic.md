@@ -52,7 +52,7 @@ Licenses for Remote Desktop Services can only be granted for a licensed copy of 
 
 </warn>
 
-To activate the license, contact [technical support](/en/contacts) with information:
+To activate the license, contact [technical support](mailto:support@mcs.mail.ru) with information:
 
 - project ID;
 - id of the VM with MS Windows;
@@ -61,7 +61,7 @@ To activate the license, contact [technical support](/en/contacts) with informat
 
 ## SQL Server
 
-The SQL Server database management system is available for installation as a ready-made image with a pre-installed copy of SQL Server. Tell [technical support](/en/contacts) the ID of the VM on which it is used.
+The SQL Server database management system is available for installation as a ready-made image with a pre-installed copy of SQL Server. Tell [technical support](mailto:support@mcs.mail.ru) the ID of the VM on which it is used.
 
 The licensing method is applied “per core”: the price increases for each of the next two cores added to the VM. The minimum number of cores for which a license is purchased is four.
 

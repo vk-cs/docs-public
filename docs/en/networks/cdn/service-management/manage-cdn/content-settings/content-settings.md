@@ -227,7 +227,7 @@ curl --location --request PUT 'https://msk.cloud.vk.com/api/cdn/api/v1/projects/
 
 Files arriving at a CDN resource can be compressed using the Brotli method. This method provides stronger compression than GZip. For instance, for text files, Brotli compression exceeds GZip by an average of 20%. The minimum file size for compression is 128 bytes.
 
-When using the Brotli compression method, uncompressed files are requested from the origin, and compression occurs on a special pre-cache server. The pre-cache server stands between the origin server and the CDN servers, protecting the origin server from high load. Origin server protection using a pre-cache server (shielding) is a paid option. To enable it, contact [technical support](/en/contacts).
+When using the Brotli compression method, uncompressed files are requested from the origin, and compression occurs on a special pre-cache server. The pre-cache server stands between the origin server and the CDN servers, protecting the origin server from high load. Origin server protection using a pre-cache server (shielding) is a paid option. To enable it, contact [technical support](mailto:support@mcs.mail.ru).
 
 The option does not work in conjunction with [origin compression](#origin_compression) and [large file delivery optimization](#large_file_delivery_optimization).
 
@@ -342,7 +342,7 @@ After enabling or disabling the option, caching keys will change, and content wi
 
 <warn>
 
-To reduce the load on the origin, manage the option during off-peak hours and contact [technical support](/en/contacts) to protect the origin with a pre-cache server.
+To reduce the load on the origin, manage the option during off-peak hours and contact [technical support](mailto:support@mcs.mail.ru) to protect the origin with a pre-cache server.
 
 </warn>
 

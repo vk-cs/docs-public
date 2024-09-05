@@ -10,9 +10,9 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
 ## Before you create a cluster
 
-1. Familiarize yourself with the available resources and [quotas](../../../../../tools-for-using-services/account/concepts/quotasandlimits/) for the [region](../../../../../tools-for-using-services/account/concepts/regions/) where the cluster is to be created. Different quotas may be configured for different regions.
+1. Familiarize yourself with the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits/) for the [region](/en/tools-for-using-services/account/concepts/regions/) where the cluster is to be created. Different quotas may be configured for different regions.
 
-   If you want to increase the quotas, write to [technical support](../../../../../../contacts).
+   If you want to increase the quotas, write to [technical support](mailto:support@mcs.mail.ru).
 
 1. Run the cluster creation wizard:
 

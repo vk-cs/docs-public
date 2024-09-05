@@ -622,4 +622,4 @@ To configure firewall rules again:
 
 ## 5. Contact technical support
 
-If the diagnostics did not help in solving the problem, [contact technical support](../../../../../contacts), by providing the information obtained during the diagnosis.
+If the diagnostics did not help in solving the problem, [contact technical support](mailto:support@mcs.mail.ru), by providing the information obtained during the diagnosis.

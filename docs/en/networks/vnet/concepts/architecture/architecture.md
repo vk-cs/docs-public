@@ -29,7 +29,7 @@ As an SDN, the VK Cloud platform uses:
 - **Neutron** by Openstack.
 
   It is effective for a small network, but in large networks (thousands and tens of thousands ports) there can be problems:
-  
+
   - With synchronization of multiple agents that do not store their state.
   - With a large number of events due to overcomplicated data transmission layer (dataplane).
   - With the loss of these events in the RabbitMQ queue because of their large number. This queue acts as a transport for service events.
@@ -51,6 +51,6 @@ As an SDN, the VK Cloud platform uses:
 
 <info>
 
-Sprut is the main SDN for all new projects. You can [find out which SDN is used in your project](en/tools-for-using-services/account/service-management/project-settings/manage#sdn_view) in the project settings. To connect another SDN, [contact technical support](/en/contacts).
+Sprut is the main SDN for all new projects. You can [find out which SDN is used in your project](en/tools-for-using-services/account/service-management/project-settings/manage#sdn_view) in the project settings. To connect another SDN, [contact technical support](mailto:support@mcs.mail.ru).
 
 </info>

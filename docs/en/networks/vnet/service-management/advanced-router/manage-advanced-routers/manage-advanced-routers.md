@@ -1,6 +1,6 @@
 You can manage [advanced routers](../../../concepts/router#advanced_router_capabilities): view, edit and delete them.
 
-Advanced routers are only available with [SDN Sprut](../../../concepts/architecture#sdns_used). To find out which SDN is used in your project or to connect another, contact [technical support](/en/contacts).
+Advanced routers are only available with [SDN Sprut](../../../concepts/architecture#sdns_used). To find out which SDN is used in your project or to connect another, contact [technical support](mailto:support@mcs.mail.ru).
 
 ## View a list of advanced routers
 
@@ -28,7 +28,7 @@ Advanced routers are only available with [SDN Sprut](../../../concepts/architect
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 1. Go to **Cloud networks** → **Routers**.
 1. Click the **Add router** button.
-1. In the **Router type** field choose `Advanced`. If this field is missing, SDN Sprut is not enabled in your project. Please, contact [technical support](/en/contacts), to enable SDN Sprut and advanced routers.
+1. In the **Router type** field choose `Advanced`. If this field is missing, SDN Sprut is not enabled in your project. Please, contact [technical support](mailto:support@mcs.mail.ru), to enable SDN Sprut and advanced routers.
 1. Set parameters of the router:
 
    - **Name**. You can use numbers, Latin letters, spaces, and special characters: `?`, `!`, `~`, `@`, `#`, `$`, `%`, `^`, `"`, `&`, `_`, `-`, `+`, `*`, `=`, `;`, `:`, `,`, `.`, `/`, `\`, `|`, `` ` ``, `[`, `]`, `{`, `}`, `(`, `)`, `<`, `>`.

@@ -10,6 +10,6 @@ Incoming and outgoing traffic of caching CDN servers.
 
 <info>
 
-If you need to distribute more than 100 TB per month, contact [technical support](/en/contacts).
+If you need to distribute more than 100 TB per month, contact [technical support](mailto:support@mcs.mail.ru).
 
 </info>

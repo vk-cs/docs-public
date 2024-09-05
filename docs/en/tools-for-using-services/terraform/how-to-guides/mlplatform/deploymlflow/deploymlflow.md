@@ -12,7 +12,7 @@ When creating the instance the following was used:
 
 1. Review the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) where you want to create the instance. Different regions may have different quotas configured.
 
-   To increase your quotas, please contact [technical support](/en/contacts).
+   To increase your quotas, please contact [technical support](mailto:support@mcs.mail.ru).
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 

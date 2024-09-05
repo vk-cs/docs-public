@@ -14,7 +14,7 @@ Therefore, VK Cloud has developed its own software-defined network, Sprut. It is
 
 <info>
 
-Sprut is in the beta testing phase. Contact [technical support](../../../../../contacts) to get access to the new SDN service.
+Sprut is in the beta testing phase. Contact [technical support](mailto:support@mcs.mail.ru) to get access to the new SDN service.
 
 </info>
 
