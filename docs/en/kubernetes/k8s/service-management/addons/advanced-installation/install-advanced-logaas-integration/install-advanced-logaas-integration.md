@@ -1,6 +1,6 @@
 ## Preparatory steps
 
-Connect the [Cloud Logging](/en/manage/logging) service to the project, if it has not been done yet. To do this, [contact technical support](/en/contacts).
+Connect the [Cloud Logging](/en/manage/logging) service to the project, if it has not been done yet. To do this, [contact technical support](mailto:support@mcs.mail.ru).
 
 ## {heading(Installing add-on)[id=installing_addon]}
 

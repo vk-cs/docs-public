@@ -32,7 +32,7 @@ There are no corresponding quotas for some technical limits.
 
 Quotas can be [increased](../../service-management/project-settings/manage#increasing_project_quotas) within the technical limits by contacting technical support.
 
-Non-rigid limits can be exceeded — either also through [technical support](/en/contacts), or independently. However, exceeding these limits can negatively affect the stability of work.
+Non-rigid limits can be exceeded — either also through [technical support](mailto:support@mcs.mail.ru), or independently. However, exceeding these limits can negatively affect the stability of work.
 
 The following is a list of quotas and limits for the Moscow region.
 
@@ -101,7 +101,7 @@ The following is a list of quotas and limits for the Moscow region.
 
 |===
 
-The limit on the number of instances in the project can be exceeded if the corresponding quota is increased upon request to [technical support](/en/contacts).
+The limit on the number of instances in the project can be exceeded if the corresponding quota is increased upon request to [technical support](mailto:support@mcs.mail.ru).
 
 <info>
 
@@ -118,7 +118,7 @@ No more than 1000 virtual machines can be displayed in the management console.
 | Number of GPUs per instance            | 4 pcs.       | &#10003; |
 | The amount of RAM per instance         | 1024 GB     | — |
 
-Limits on the number of processors (vCPU and High-Freq vCPU) and RAM are associated with the limitations of standard hypervisors. If you need more vCPUs or High-Freq vCPUs, contact [technical support](/en/contacts) and order a dedicated hypervisor with the necessary characteristics.
+Limits on the number of processors (vCPU and High-Freq vCPU) and RAM are associated with the limitations of standard hypervisors. If you need more vCPUs or High-Freq vCPUs, contact [technical support](mailto:support@mcs.mail.ru) and order a dedicated hypervisor with the necessary characteristics.
 
 The limit on 4 GPUs per instance is related to the limitation of KVM technology, which does not allow connecting more than 4 video cards to one virtual machine.
 
@@ -174,7 +174,7 @@ Non-rigid limits can be exceeded without contacting technical support. Recommend
 
 |===
 
-Quotas for the total volume of disks in the project take into account all types of disks, including High-IOPS SSDs. Quotas for the total volume of High-IOPS SSD disks take into account disks created in both availability zones. If you request through [technical support](/en/contacts) an increase in the quota included in another quota, the quota of a higher level will be increased proportionally.
+Quotas for the total volume of disks in the project take into account all types of disks, including High-IOPS SSDs. Quotas for the total volume of High-IOPS SSD disks take into account disks created in both availability zones. If you request through [technical support](mailto:support@mcs.mail.ru) an increase in the quota included in another quota, the quota of a higher level will be increased proportionally.
 
 #### Number of disks
 
@@ -212,7 +212,7 @@ Quotas for the total volume of disks in the project take into account all types 
 
 |===
 
-Quotas for the total number of disks in the project take into account all types of disks, including High-IOPS SSDs. Quotas for the total number of High-IOPS SSD disks take into account disks created in both availability zones. If you request through [technical support](/en/contacts) an increase in the quota included in another quota, the quota of a higher level will be increased proportionally.
+Quotas for the total number of disks in the project take into account all types of disks, including High-IOPS SSDs. Quotas for the total number of High-IOPS SSD disks take into account disks created in both availability zones. If you request through [technical support](mailto:support@mcs.mail.ru) an increase in the quota included in another quota, the quota of a higher level will be increased proportionally.
 
 #### Limits without quotas
 
@@ -232,9 +232,9 @@ The limit on the size of one image (500 GB) is a hard limit for the Glance servi
 
 The limit on the size of one SSD-HIGH-IOPS disk (5 TB) is due to operational requirements, it can be exceeded without contacting technical support. A disk created over the limit is no different in performance, but restoring or migrating such a disk will take considerable time and will involve risks.
 
-The limit on the total volume of images (2 TB) can be exceeded by contacting [technical support](/en/contacts).
+The limit on the total volume of images (2 TB) can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru).
 
-The limit on the number of disks snapshots (200 pcs.) can be exceeded by contacting [technical support](/en/contacts).
+The limit on the number of disks snapshots (200 pcs.) can be exceeded by contacting [technical support](mailto:support@mcs.mail.ru).
 
 ### File storage
 
@@ -282,7 +282,7 @@ Quota for the number of file storage networks (**NFS / CIFS file storage network
 
 ### Cloud Networks
 
-The limits in this section are determined by the requirements of operation, they are used to ensure the stable operation of networks. It is not recommended to request quotas exceeding the corresponding limits via [technical support](/en/contacts).
+The limits in this section are determined by the requirements of operation, they are used to ensure the stable operation of networks. It is not recommended to request quotas exceeding the corresponding limits via [technical support](mailto:support@mcs.mail.ru).
 
 #### Networks, subnets and IP addresses
 

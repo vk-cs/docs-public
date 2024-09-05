@@ -1,6 +1,6 @@
 ## Configuration templates
 
-When creating Kubernetes clusters, you can select different virtual machine configuration templates that define the computing resources available to the cluster nodes. Some of the templates are available immediately, and some are available upon request to [technical support](../../../../contacts/).
+When creating Kubernetes clusters, you can select different virtual machine configuration templates that define the computing resources available to the cluster nodes. Some of the templates are available immediately, and some are available upon request to [technical support](mailto:support@mcs.mail.ru).
 
 Recommendations for choosing CPU and RAM for clusters:
 
@@ -10,7 +10,7 @@ Recommendations for choosing CPU and RAM for clusters:
 
 - For high-performance clusters: 8 to 16 vCPUs, 8 to 64 GB RAM.
 
-The following templates becomes available upon request to [technical support](../../../../contacts):
+The following templates becomes available upon request to [technical support](mailto:support@mcs.mail.ru):
 
 - *Templates with high-performance CPUs: from 16 vCPUs, from 64 GB RAM. These CPUs are more powerful.
 

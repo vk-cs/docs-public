@@ -77,7 +77,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
    - job_name: "node"
      scrape_interval: 10s
      static_configs:
-       - targets: ["10.0.3.13:9100"]   
+       - targets: ["10.0.3.13:9100"]
    ```
 
 1. Create a Prometheus startup script `/etc/systemd/system/prometheus.service` with the contents:
@@ -87,7 +87,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
    Description=Prometheus
    Wants=network-online.target
    After=network-online.target
-   
+
    [Service]
    User=prometheus
    Group=prometheus
@@ -181,7 +181,7 @@ Prometheus server, DBMS and Grafana will be deployed on separate VMs.
 
    <warn>
 
-   Installation of additional software on virtual machines of the Cloud Databases service is possible only through a request to [technical support](/en/contacts).
+   Installation of additional software on virtual machines of the Cloud Databases service is possible only through a request to [technical support](mailto:support@mcs.mail.ru).
 
    </warn>
 

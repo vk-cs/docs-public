@@ -49,9 +49,9 @@ VMs are grouped into categories in a management console:
 | Intel Cascade Lake (Intel Xeon Gen 2) | VMs located on servers with Intel Cascade Lake CPU | Available by default |
 | Intel Ice Lake (Intel Xeon Gen 3) | VMs located on servers with Intel Ice Lake CPU | Available by default |
 | Archived VM types (legacy)| Old VM configuration templates | Not displayed by default filtration |
-| High-performance CPU |  VMs located on [servers](#cpu_generations) with increased CPU clock speed | Displayed when ordering the types of VM through [technical support](/en/contacts) |
+| High-performance CPU |  VMs located on [servers](#cpu_generations) with increased CPU clock speed | Displayed when ordering the types of VM through [technical support](mailto:support@mcs.mail.ru) |
 | Virtual machines with GPU | VMs with connected [graphics card](../../../gpu/about/) | Displayed when ordering the types of VM through [cloud.vk.com](https://cloud.vk.com/en/) |
-| VMs with local disks | VMs with the ability to use local hypervisor disks | Displayed when ordering the types of VM through [technical support](/en/contacts) |
+| VMs with local disks | VMs with the ability to use local hypervisor disks | Displayed when ordering the types of VM through [technical support](mailto:support@mcs.mail.ru) |
 | VMs located on dedicated servers | VMs located on hypervisors dedicated to the needs of one client | Displayed when ordering the types of VM through your manager |
 
 By default, only actual configuration templates are displayed: on servers with Intel Cascade Lake and Intel Ice Lake CPUs, as well as VMs with a connected graphics card, on high-performance or dedicated servers, if they were added to the project.
@@ -71,7 +71,7 @@ Select the **Archive VM types** category to find the old VM configuration templa
 
 </details>
 
-To create additional VM templates (for example, with a large amount of resources) [contact technical support](/en/contacts). The cost of a VM in this case is calculated individually for each request.
+To create additional VM templates (for example, with a large amount of resources) [contact technical support](mailto:support@mcs.mail.ru). The cost of a VM in this case is calculated individually for each request.
 
 <info>
 
@@ -118,7 +118,7 @@ The VK Cloud disk subsystem uses network drives. Disk fault tolerance, continuou
 
 Network drives can be partitioned and formatted in the same way as regular locally connected drives. The advantage of network drives: they can be “moved” between VMs located in the same data center.
 
-Low Latency NVME local disks are available in high-performance configurations. To create such a configuration [contact technical support](/en/contacts).
+Low Latency NVME local disks are available in high-performance configurations. To create such a configuration [contact technical support](mailto:support@mcs.mail.ru).
 
 After creating a disk, you can change its size, type, and availability zone. The disk can be renamed, connected or disconnected from the VM, cloned or deleted. The boot disk can be made non-bootable and vice versa.
 

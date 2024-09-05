@@ -54,6 +54,6 @@ If the specified number of backups is exceeded, a new one will be written to the
 
 For example, the menu item is missing or the VM is not in the list. The problem may occur if there is no QEMU guest agent in the system (`qemu guest-agent`) — [install it](https://pve.proxmox.com/wiki/Qemu-guest-agent).
 
-After installation, you need to register additional metadata on the VM – for this [contact technical support](/en/contacts). In some cases, you may need to restart the VM.
+After installation, you need to register additional metadata on the VM – for this [contact technical support](mailto:support@mcs.mail.ru). In some cases, you may need to restart the VM.
 
 </details>

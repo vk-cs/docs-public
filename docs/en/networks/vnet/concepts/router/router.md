@@ -18,7 +18,7 @@ Routers are used to organize traffic exchange between subnets. There are two typ
 
   <info>
 
-  The Cloud Direct Connect service is connected [on request](/en/contacts).
+  The Cloud Direct Connect service is connected [on request](mailto:support@mcs.mail.ru).
 
   </info>
 
@@ -52,7 +52,7 @@ Different types of routers can be used within a single VK Cloud subnet.
 
   - Organization of a [VPN tunnel](../vpn) between networks in projects with [SDN Neutron](../architecture#sdns_used).
 
-    This allows you to create a secure channel for managing the VK Cloud infrastructure or transferring data between the company network and VK Cloud networks.  
+    This allows you to create a secure channel for managing the VK Cloud infrastructure or transferring data between the company network and VK Cloud networks.
 
 ## Advanced router capabilities
 
@@ -65,13 +65,13 @@ Different types of routers can be used within a single VK Cloud subnet.
   Both static routing and dynamic routing using (via BGP) can be configured to route traffic.
 
   The following rules apply when configuring BGP peering between an advanced router and a remote router at the remote site:
-  
+
   - BGP peering must be performed over a Direct Connect network junction.
   - Only private Autonomous System Numbers (ASNs) from the range 64512-65534 may be used.
   - On the side of both the advanced and remote router, it is allowed to announce only the prefixes of private subnets that are not routable in the internet.
 
   Also on the advanced router side, the following [BGP timers](https://www.rfc-editor.org/rfc/rfc4271#page-90) values are set:
-  
+
   - Hold timer: 240 seconds.
   - Keepalive timer: 80 seconds (hold timer / 3).
 

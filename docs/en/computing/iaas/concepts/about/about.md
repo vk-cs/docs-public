@@ -64,7 +64,7 @@ VMs are grouped into categories in a management console:
 
 | High-performance CPU
 | VMs located on [servers](#cpu_generations) with increased CPU clock speed
-| Displayed when ordering the types of VM through [technical support](/en/contacts)
+| Displayed when ordering the types of VM through [technical support](mailto:support@mcs.mail.ru)
 
 | Virtual machines with GPU
 | VMs with connected [graphics card](../../../gpu/about/)
@@ -72,7 +72,7 @@ VMs are grouped into categories in a management console:
 
 | VMs with local disks
 | VMs with the ability to use local hypervisor disks
-| Displayed when ordering the types of VM through [technical support](/en/contacts)
+| Displayed when ordering the types of VM through [technical support](mailto:support@mcs.mail.ru)
 
 | VMs located on dedicated servers
 | VMs located on hypervisors dedicated to the needs of one client
@@ -97,7 +97,7 @@ Select the **Archive VM types** category to find the old VM configuration templa
 
 </details>
 
-To create additional VM templates (for example, with a large amount of resources) [contact technical support](/en/contacts). The cost of a VM in this case is calculated individually for each request.
+To create additional VM templates (for example, with a large amount of resources) [contact technical support](mailto:support@mcs.mail.ru). The cost of a VM in this case is calculated individually for each request.
 
 <info>
 
@@ -144,7 +144,7 @@ The VK Cloud disk subsystem uses network drives. Disk fault tolerance, continuou
 
 Network drives can be partitioned and formatted in the same way as regular locally connected drives. The advantage of network drives: they can be “moved” between VMs located in the same data center.
 
-Low Latency NVME local disks are available in high-performance configurations. To create such a configuration [contact technical support](/en/contacts).
+Low Latency NVME local disks are available in high-performance configurations. To create such a configuration [contact technical support](mailto:support@mcs.mail.ru).
 
 After creating a disk, you can change its size, type, and availability zone. The disk can be renamed, connected or disconnected from the VM, cloned or deleted. The boot disk can be made non-bootable and vice versa.
 

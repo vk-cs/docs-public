@@ -2,7 +2,7 @@
 
 <summary>There is an error in the service operation that I cannot fix. Where can I contact?</summary>
 
-Contact VK Cloud [technical support](/en/contacts).
+Contact VK Cloud [technical support](mailto:support@mcs.mail.ru).
 
 </details>
 
