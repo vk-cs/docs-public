@@ -25,7 +25,7 @@
 
       - **Type of virtual machine:** [configuration template](/en/computing/iaas/concepts/about#flavors) for worker nodes.
 
-        Templates with high-performance CPUs are available [on request to the support service] (/en/contacts). To use these templates, select the **Show only high performance CPUs** option.
+        Templates with high-performance CPUs are available [on request to the support service] (mailto:support@mcs.mail.ru). To use these templates, select the **Show only high performance CPUs** option.
 
       - **Enable autoscaling**: select this option so that the cluster automatically scales the number of worker nodes depending on the load.
 

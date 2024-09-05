@@ -4,7 +4,7 @@ For any type of configuration, a replica can be created — an additional instan
 
 The replica can be converted to a master. In this case, replication will stop, and the instance will turn into an independent master instance, available for reading and writing. The new master instance will contain the same data as the replica before conversion to the master.
 
-By default, replicas and the master are placed in the same data center. To transfer one of the instances to another data center, contact [technical support](/en/contacts).
+By default, replicas and the master are placed in the same data center. To transfer one of the instances to another data center, contact [technical support](mailto:support@mcs.mail.ru).
 
 ## Single
 

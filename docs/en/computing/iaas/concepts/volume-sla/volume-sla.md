@@ -341,7 +341,7 @@ Here, `bs` and `iodepth` are [performance testing](#disk_performance_testing) pa
    </tabpanel>
    </tabs>
 
-3. If, when all conditions are met, the test results do not match the specified values, [contact technical support](/en/contacts).
+3. If, when all conditions are met, the test results do not match the specified values, [contact technical support](mailto:support@mcs.mail.ru).
 
 <warn>
 

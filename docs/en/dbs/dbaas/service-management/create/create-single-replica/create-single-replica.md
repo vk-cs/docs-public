@@ -33,7 +33,7 @@
 
       - **Type of virtual machine**: [configuration template](/en/computing/iaas/concepts/about#flavors) for the DB instance.
 
-        Templates with high-performance CPUs are available [on request to the support service](/en/contacts). To use these templates, select the option **Show only high performance CPUs**.
+        Templates with high-performance CPUs are available [on request to the support service](mailto:support@mcs.mail.ru). To use these templates, select the option **Show only high performance CPUs**.
 
       - **Availability zone**: [availability zone](/en/intro/start/architecture#availability_zones_567cfd7a) for the DB instance.
 
