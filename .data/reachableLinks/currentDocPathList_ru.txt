@@ -107,6 +107,7 @@
 /docs/ru/computing/cloud-desktops/service-management/config/setup-net
 /docs/ru/computing/cloud-desktops/service-management/config/setup-ldap
 /docs/ru/computing/cloud-desktops/service-management/config/setup-provider
+/docs/ru/computing/cloud-desktops/service-management/config/setup-saml
 /docs/ru/computing/cloud-desktops/service-management/group-policies
 /docs/ru/computing/cloud-desktops/service-management/desktops-pool
 /docs/ru/computing/cloud-desktops/service-management/desktops-pool/add
@@ -326,7 +327,6 @@
 /docs/ru/kubernetes/k8s/concepts/update
 /docs/ru/kubernetes/k8s/concepts/versions
 /docs/ru/kubernetes/k8s/concepts/versions/version-support
-/docs/ru/kubernetes/k8s/concepts/versions/version-changelog
 /docs/ru/kubernetes/k8s/concepts/versions/components
 /docs/ru/kubernetes/k8s/concepts/access-management
 /docs/ru/kubernetes/k8s/concepts/security-policies

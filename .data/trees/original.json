@@ -1455,6 +1455,21 @@
     ]
   },
   {
+    "uuid": "94010c9a-60e8-4f5b-b0fc-412917ce1f42",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/computing/cloud-desktops/service-management/config/setup-saml",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/config/setup-saml/setup-saml.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/config/setup-saml/setup-saml.md",
+    "variables": {},
+    "hidden": true,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "db8ef26d-92b9-4016-9fed-bdfd2fed5dec",
     "lang": "en",
     "type": "INTERMEDIATE",
@@ -4612,21 +4627,6 @@
     "partialPath": "/en/kubernetes/k8s/concepts/versions/version-support",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/concepts/versions/version-support/version-support.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/concepts/versions/version-support/version-support.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "006ac7ba-9931-46bf-8b98-6951357dbf5f",
-    "lang": "en",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/en/kubernetes/k8s/concepts/versions/version-changelog",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/concepts/versions/version-changelog/version-changelog.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/kubernetes/k8s/concepts/versions/version-changelog/version-changelog.md",
     "variables": {},
     "hidden": false,
     "version": null,
@@ -10950,6 +10950,21 @@
     ]
   },
   {
+    "uuid": "19c53be6-43cf-4082-9857-2ceca325ea0c",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/computing/cloud-desktops/service-management/config/setup-saml",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-saml/setup-saml.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-saml/setup-saml.md",
+    "variables": {},
+    "hidden": true,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "eac9027a-2cbe-412a-abc7-d38790f54809",
     "lang": "ru",
     "type": "ARTICLE",
@@ -14227,21 +14242,6 @@
     "partialPath": "/ru/kubernetes/k8s/concepts/versions/version-support",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/concepts/versions/version-support/version-support.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/concepts/versions/version-support/version-support.md",
-    "variables": {},
-    "hidden": false,
-    "version": null,
-    "buildPoints": [
-      "common"
-    ]
-  },
-  {
-    "uuid": "f720464c-349b-4ca7-a04e-9d7ee5149215",
-    "lang": "ru",
-    "type": "ARTICLE",
-    "level": 6,
-    "partialPath": "/ru/kubernetes/k8s/concepts/versions/version-changelog",
-    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/concepts/versions/version-changelog/version-changelog.meta.json",
-    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/kubernetes/k8s/concepts/versions/version-changelog/version-changelog.md",
     "variables": {},
     "hidden": false,
     "version": null,
