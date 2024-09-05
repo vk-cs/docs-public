@@ -2,10 +2,10 @@ New versions of Kubernetes aaS from VK Cloud are usually added 1 month after the
 
 The following versions of Kubernetes aaS from VK Cloud are currently available:
 
+- 1.29.7
 - 1.28.9
 - 1.27.6
 - 1.26.5
-- 1.25.10
 
 When [creating a new cluster](../../../service-management/create-cluster), choose the latest available [version of Kubernetes](#kubernetes_version_support). If possible, [update the cluster](../../../service-management/update) to the latest available version. The update procedure is described in [relevant concept section](../../update).
 
@@ -26,6 +26,11 @@ Thirty days before Kubernetes version support is discontinued, users will receiv
 |Official release date
 |VK Kubernetes aaS release date
 |VK Kubernetes aaS end of support date
+
+| 1.29.x
+| 17 July 2024
+| 30.08.2024
+| 30.10.2025
 
 | 1.28.x
 | 16 April 2024
@@ -94,13 +99,124 @@ The version history can be viewed at [Kubernetes version history](../version-cha
 
 New features are added to all versions of Kubernetes, unless a feature and version are incompatible.
 
-| Feature                                  | 1.17.x–1.20.x | 1.21.4–1.23.х | 1.24.x–1.28.х |
-| ---------------------------------------- | ------------- | ------------- | ------ |
-| Node group scaling settings              | +             | +             | +      |
-| Invalidate the key pair                  | +             | +             | -      |
-| Change the size of the Prometheus disk   | +             | +             | +      |
-| Change the type of Master virtual machine| +             | +             | +      |
-| Update cluster version                   | +             | +             | +      |
-| Label & Taints                           | +             | +             | +      |
-| Cluster nodes on AlmaLinux               | -             | +             | +      |
-| Integration with VK Cloud IAM            | -             | -             | +      |
+[cols="2,1,1,1,1", options="header"]
+|===
+|Feature
+|1.17.x–1.20.x
+|1.21.4–1.23.х
+|1.24.x–1.26.х
+|1.27.x–1.29.х
+
+|Node group scaling settings
+|✓
+|✓
+|✓
+|✓
+
+|Key pair invalidation
+|✓
+|✓
+|–
+|–
+
+|Change the size of the Prometheus disk
+|✓
+|✓
+|✓
+|✓
+
+|Change the type of Master virtual machine
+|✓
+|✓
+|✓
+|✓
+
+|Update cluster version
+|✓
+|✓
+|✓
+|✓
+
+|Label & Taints
+|✓
+|✓
+|✓
+|✓
+
+|Cluster nodes on AlmaLinux
+|–
+|✓
+|✓
+|✓
+
+|Integration with VK Cloud IAM
+|–
+|–
+|✓
+|✓
+
+|Autoscaling of cluster master
+|–
+|–
+|–
+|✓
+|===
+
+## Kubernetes version history
+
+[cols="1,1,2", options="header"]
+|===
+|Version
+|Changes in Kubernetes
+|Changes in Kubernetes aaS service
+
+|**Kubernetes 1.29.7**
+|[Kubernetes v1.29: Mandala](https://kubernetes.io/blog/2023/12/13/kubernetes-v1-29-release/)
+| —
+
+|**Kubernetes 1.28.9**
+|[Kubernetes v1.28: Planternetes](https://kubernetes.io/blog/2023/08/15/kubernetes-v1-28-release/)
+| —
+
+|**Kubernetes 1.27.6**
+|[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)
+|[Autoscaling](/en/kubernetes/k8s/concepts/scale#autoscaling) of cluster master nodes is implemented.
+
+|**Kubernetes 1.26.5**
+|[Kubernetes v1.26: Electrifying](https://kubernetes.io/blog/2022/12/09/kubernetes-v1-26-release/)
+|Packages are updated:
+
+- Calico is updated to version 3.26.1
+- Helm is updated to version 3.12.2
+- Gatekeeper is updated to version 3.12.0
+
+|**Kubernetes 1.25.1**
+|[Kubernetes v1.25: Combiner](https://kubernetes.io/blog/2022/08/23/kubernetes-v1-25-release/)
+| —
+
+|**Kubernetes 1.24.9**
+|[Kubernetes 1.24: Stargazer](https://kubernetes.io/blog/2022/05/03/kubernetes-1-24-release-announcement/)
+|Calico is updated to version 3.25.0
+
+|**Kubernetes 1.23.6**
+|[Kubernetes 1.23: The Next Frontier](https://kubernetes.io/blog/2021/12/07/kubernetes-1-23-release-announcement/)
+|Added [integration with VK Cloud IAM](/en/kubernetes/k8s/concepts/access-management)
+
+|**Kubernetes 1.22.6**
+|[Kubernetes 1.22: Reaching New Peaks](https://kubernetes.io/blog/2021/08/04/kubernetes-1-22-release-announcement/)
+|The cluster nodes use the [AlmaLinux](https://wiki.almalinux.org) operating system version 9.
+
+By default, a limit on the consumed computing resources ([limit ranges](https://kubernetes.io/docs/concepts/policy/limit-range/)) is set for namespaces
+
+|**Kubernetes 1.21.4**
+|[Kubernetes 1.21: Power to the Community](https://kubernetes.io/blog/2021/04/08/kubernetes-1-21-release-announcement/)
+|The cluster nodes use the [AlmaLinux](https://wiki.almalinux.org) operating system version 8
+
+|**Kubernetes 1.20.4**
+|[Kubernetes 1.20: The Raddest Release](https://kubernetes.io/blog/2020/12/08/kubernetes-1-20-release-announcement/)
+|Изменен [формат хранения логов](/en/cases/cases-logs/case-fluent-bit)
+
+[Runtime](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) of the cluster has been replaced by [CRI-O](https://cri-o.io/).
+
+[Log storage format](/en/cases/cases-logs/case-fluent-bit) has been changed
+|===
