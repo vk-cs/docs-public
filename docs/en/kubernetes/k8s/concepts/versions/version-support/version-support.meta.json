@@ -7,5 +7,6 @@
     "sectionTitle": "Kubernetes version support policy",
     "icon": "",
     "weight": 1,
-    "uuid": "2b68d53f-6843-41ab-98be-f9e078644aca"
+    "uuid": "2b68d53f-6843-41ab-98be-f9e078644aca",
+    "additionalUuids": ["006ac7ba-9931-46bf-8b98-6951357dbf5f"]    
 }

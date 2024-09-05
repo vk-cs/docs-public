@@ -2,10 +2,10 @@
 
 В данный момент в Kubernetes aaS от VK Cloud доступны следующие версии Kubernetes:
 
+- 1.29.7
 - 1.28.9
 - 1.27.6
 - 1.26.5
-- 1.25.10
 
 При [создании нового кластера](../../../service-management/create-cluster) выбирайте последнюю доступную [версию Kubernetes](#podderzhka_versiy_kubernetes). По возможности [обновляйте кластер](../../../service-management/update) до последней доступной версии. Процедура обновления описана в [соответствующем разделе концепций](../../update).
 
@@ -26,6 +26,11 @@
 |Официальная дата релиза
 |Kubernetes aaS от VK релиз
 |Kubernetes aaS от VK завершение поддержки
+
+| 1.29.x
+| 17 июля 2024
+| 30.08.2024
+| 30.10.2025
 
 | 1.28.x
 | 16 апреля 2024
@@ -94,13 +99,122 @@
 
 Новые функции добавляются во все версии Kubernetes, за исключением случаев несовместимости функции и версии.
 
-| Наименование                             | 1.17.x–1.20.x | 1.21.4–1.23.х | 1.24.x–1.28.х |
-| ---------------------------------------- | ------------- | ------------- | ------ |
-| Настройки масштабирования нод-группы     | +             | +             | +      |
-| Инвалидация ключевой пары                | +             | +             | -      |
-| Изменить размер диска Prometheus         | +             | +             | +      |
-| Изменение типа виртуальной машины Master | +             | +             | +      |
-| Обновить версию кластера                 | +             | +             | +      |
-| Label & Taints                           | +             | +             | +      |
-| Ноды кластера на AlmaLinux               | -             | +             | +      |
-| Интеграция с IAM облака VK Cloud         | -             | -             | +      |
+[cols="2,1,1,1,1", options="header"]
+|===
+|Название
+|1.17.x–1.20.x
+|1.21.4–1.23.х
+|1.24.x–1.26.х
+|1.27.x–1.29.х
+
+|Настройки масштабирования групп узлов
+|✓
+|✓
+|✓
+|✓
+
+|Инвалидация ключевой пары
+|✓
+|✓
+|–
+|–
+
+|Изменение размера диска Prometheus
+|✓
+|✓
+|✓
+|✓
+
+|Изменение типа виртуальной машины Master
+|✓
+|✓
+|✓
+|✓
+
+|Обновление версии кластера
+|✓
+|✓
+|✓
+|✓
+
+|Метки и ограничения
+|✓
+|✓
+|✓
+|✓
+
+|Узлы кластера на AlmaLinux
+|–
+|✓
+|✓
+|✓
+
+|Интеграция с IAM облака VK Cloud
+|–
+|–
+|✓
+|✓
+
+|Автоматическое масштабирование master-узлов кластера
+|–
+|–
+|–
+|✓
+|===
+
+## История версий Kubernetes
+
+[cols="1,1,2", options="header"]
+|===
+|Версия
+|Изменения в Kubernetes
+|Изменения в сервисе Kubernetes aaS
+
+|**Kubernetes 1.29.7**
+|[Kubernetes v1.29: Mandala](https://kubernetes.io/blog/2023/12/13/kubernetes-v1-29-release/)
+| —
+
+|**Kubernetes 1.28.9**
+|[Kubernetes v1.28: Planternetes](https://kubernetes.io/blog/2023/08/15/kubernetes-v1-28-release/)
+| —
+
+|**Kubernetes 1.27.6**
+|[Kubernetes v1.27: Chill Vibes](https://kubernetes.io/blog/2023/04/11/kubernetes-v1-27-release/)
+|Реализовано [автоматическое масштабирование](/kubernetes/k8s/concepts/scale#autoscaling) master-узлов кластера.
+
+|**Kubernetes 1.26.5**
+|[Kubernetes v1.26: Electrifying](https://kubernetes.io/blog/2022/12/09/kubernetes-v1-26-release/)
+|Обновление пакетов:
+
+- Calico обновлено до 3.26.1.
+- Helm обновлен до 3.12.2.
+- Gatekeeper обновлен до 3.12.0.
+
+|**Kubernetes 1.25.1**
+|[Kubernetes v1.25: Combiner](https://kubernetes.io/blog/2022/08/23/kubernetes-v1-25-release/)
+| —
+
+|**Kubernetes 1.24.9**
+|[Kubernetes 1.24: Stargazer](https://kubernetes.io/blog/2022/05/03/kubernetes-1-24-release-announcement/)
+|Calico обновлено до 3.25.0
+
+|**Kubernetes 1.23.6**
+|[Kubernetes 1.23: The Next Frontier](https://kubernetes.io/blog/2021/12/07/kubernetes-1-23-release-announcement/)
+|Добавлена [интеграция с IAM облака VK Cloud](/ru/kubernetes/k8s/concepts/access-management)
+
+|**Kubernetes 1.22.6**
+|[Kubernetes 1.22: Reaching New Peaks](https://kubernetes.io/blog/2021/08/04/kubernetes-1-22-release-announcement/)
+|На узлах кластера используется операционная система [AlmaLinux](https://wiki.almalinux.org) версии 9.
+
+По умолчанию устанавливается ограничение на потребляемые вычислительные ресурсы ([limit ranges](https://kubernetes.io/docs/concepts/policy/limit-range/)) для пространств имен (namespace)
+
+|**Kubernetes 1.21.4**
+|[Kubernetes 1.21: Power to the Community](https://kubernetes.io/blog/2021/04/08/kubernetes-1-21-release-announcement/)
+|На узлах кластера используется операционная система [AlmaLinux](https://wiki.almalinux.org) версии 8
+
+|**Kubernetes 1.20.4**
+|[Kubernetes 1.20: The Raddest Release](https://kubernetes.io/blog/2020/12/08/kubernetes-1-20-release-announcement/)
+|[Среда исполнения](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) (runtime) кластера заменена на [CRI-O](https://cri-o.io/).
+
+Изменен [формат хранения логов](/ru/cases/cases-logs/case-fluent-bit)
+|===
