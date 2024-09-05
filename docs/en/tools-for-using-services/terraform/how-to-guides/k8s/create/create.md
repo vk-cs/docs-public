@@ -4,7 +4,7 @@ The examples of creating different Kubernetes clusters using Terraform are provi
 
 1. Check out the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits) for the [region](/en/tools-for-using-services/account/concepts/regions) in which you plan to create a cluster. Different quotas can be set up for different regions.
 
-   If you want to increase quotas, contact [technical support](/en/contacts).
+   If you want to increase quotas, contact [technical support](mailto:support@mcs.mail.ru).
 
 1. Learn about the [features of using Terraform](/en/kubernetes/k8s/service-management/helpers/terraform-howto) with the Cloud Containers service.
 

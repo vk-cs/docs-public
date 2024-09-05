@@ -11,7 +11,7 @@ The following software must be installed on the image:
   - Windows of any version that supports connection to the Active Directory service.
   - Astra Linux «Orel» with graphical interface installed.
 
-  To use other operating systems, please contact [technical support](/en/contacts).
+  To use other operating systems, please contact [technical support](mailto:support@mcs.mail.ru).
 
 - [QEMU guest agent](https://pve.proxmox.com/wiki/Qemu-guest-agent).
 - Software for cloud-based virtual machine initialization:

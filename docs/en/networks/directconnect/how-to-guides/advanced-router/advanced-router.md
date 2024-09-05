@@ -42,7 +42,7 @@ To show the configuration of an advanced router, two independent networks will b
 
     Note the VM's IP address.
 
-1. Contact the [technical support](/en/contacts) to add a network to your VK Cloud project to organize a [direct connection](/en/networks/vnet/concepts/router#advanced_router_capabilities).
+1. Contact the [technical support](mailto:support@mcs.mail.ru) to add a network to your VK Cloud project to organize a [direct connection](/en/networks/vnet/concepts/router#advanced_router_capabilities).
 
     When the network is provided, note its name, subnet name, and IP address.
 
@@ -65,7 +65,7 @@ The scheme for preparation of networks looks like this:
 
 1. In your management console, go to **Virtual networks** → **Routers**.
 1. Click **Add router**.
-1. Select the **Advanced** router type. If there is no advanced type in your project, contact the [technical support](/en/contacts).
+1. Select the **Advanced** router type. If there is no advanced type in your project, contact the [technical support](mailto:support@mcs.mail.ru).
 1. Enter the name. In this case — `advanced-router`.
 1. Click **Add**.
 

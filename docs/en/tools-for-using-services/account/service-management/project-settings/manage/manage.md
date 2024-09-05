@@ -111,7 +111,7 @@ Disk transfer is possible only within one region. If the projects are located in
 
 Currently, transferring PaaS service objects between projects is not supported. For example, the virtual machine on which the database was deployed can be moved to another project only as a regular virtual machine. It is not possible to transfer such a virtual machine as a database instance or create a database instance with a disk transferred from another project.
 
-By contacting [technical support](/en/contacts), it is possible to transfer objects:
+By contacting [technical support](mailto:support@mcs.mail.ru), it is possible to transfer objects:
 
 - floating IP addresses;
 - addresses of the [external networks](/en/networks/vnet/concepts/net-types#external_network).
@@ -288,7 +288,7 @@ To get an extended list of quotas for a project:
 
 ## Increasing project quotas
 
-If the project lacks [quotas](../../../concepts/quotasandlimits), contact [technical support](/en/contacts) on behalf of the project owner and provide the information:
+If the project lacks [quotas](../../../concepts/quotasandlimits), contact [technical support](mailto:support@mcs.mail.ru) on behalf of the project owner and provide the information:
 
 - [project id](#getting-the-project-id) (PID) and [region](../../../concepts/regions);
 - which quotas need to be increased (for example, the number of CPUs, the available amount of RAM) and by how much.
