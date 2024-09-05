@@ -76,7 +76,7 @@ Check Point CloudGuard Network is provided under the BYOL (Bring Your Own Licens
    1. On the service page, click **Connect**.
    1. Set the gateway parameters on the service configuration page:
 
-      - **Network**: select a previously created network with Internet access or create a new one, specifying its type (Neutron or Sprut) and subnet address.
+      - **Network**: select a previously created network with Internet access or create a new one, specifying its [type](/en/networks/vnet/concepts/architecture#sdns_used) and subnet address.
       - Leave the other parameters unchanged.
 
    1. Press the **Next step** button.
