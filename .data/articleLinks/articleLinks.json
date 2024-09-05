@@ -1752,10 +1752,6 @@
     "http://localhost:3000/docs/en/computing/iaas/troubleshooting/linux-vm-network#5_contact_technical_support"
   ],
   [
-    "/en/computing/iaas/troubleshooting/linux-vm-network",
-    "http://localhost:3000/docs/contacts"
-  ],
-  [
     "/en/computing/iaas/faq",
     "http://localhost:3000/docs/en/computing/iaas/concepts/about#availability_zone"
   ],
@@ -1898,6 +1894,10 @@
   [
     "/en/computing/cloud-desktops/service-management/config/setup-provider",
     "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/delete-vdi"
+  ],
+  [
+    "/en/computing/cloud-desktops/service-management/config/setup-saml",
+    "http://localhost:3000/docs/en/computing/cloud-desktops/service-management/config/setup-ldap"
   ],
   [
     "/en/computing/cloud-desktops/service-management/desktops-pool/add",
@@ -4141,10 +4141,6 @@
   ],
   [
     "/en/kubernetes/k8s/concepts/network",
-    "http://localhost:3000/docs/contacts"
-  ],
-  [
-    "/en/kubernetes/k8s/concepts/network",
     "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/addons"
   ],
   [
@@ -4284,11 +4280,19 @@
     "http://localhost:3000/docs/en/kubernetes/k8s/concepts/versions/version-changelog"
   ],
   [
-    "/en/kubernetes/k8s/concepts/versions/version-changelog",
+    "/en/kubernetes/k8s/concepts/versions/version-support",
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/scale#autoscaling"
+  ],
+  [
+    "/en/kubernetes/k8s/concepts/versions/version-support",
     "http://localhost:3000/docs/en/kubernetes/k8s/concepts/access-management"
   ],
   [
-    "/en/kubernetes/k8s/concepts/versions/version-changelog",
+    "/en/kubernetes/k8s/concepts/versions/version-support",
+    "http://localhost:3000/docs/en/cases/cases-logs/case-fluent-bit"
+  ],
+  [
+    "/en/kubernetes/k8s/concepts/versions/version-support",
     "http://localhost:3000/docs/en/cases/cases-logs/case-fluent-bit"
   ],
   [
@@ -4405,11 +4409,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/contacts"
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions/"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
@@ -4497,11 +4497,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-terraform",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/en/kubernetes/k8s/service-management/create-cluster/create-terraform",
-    "http://localhost:3000/docs/contacts"
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions/"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-terraform",
@@ -6830,6 +6826,10 @@
   [
     "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
     "http://localhost:3000/docs/en/networks/vnet/service-management/net#creating_a_network"
+  ],
+  [
+    "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/en/networks/vnet/concepts/architecture#sdns_used"
   ],
   [
     "/en/applications-and-services/marketplace/initial-configuration/checkpoint-start",
@@ -10356,6 +10356,10 @@
     "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/delete-vdi"
   ],
   [
+    "/ru/computing/cloud-desktops/service-management/config/setup-saml",
+    "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/config/setup-ldap"
+  ],
+  [
     "/ru/computing/cloud-desktops/service-management/desktops-pool/add",
     "http://localhost:3000/docs/ru/computing/cloud-desktops/service-management/config"
   ],
@@ -13417,10 +13421,6 @@
   ],
   [
     "/ru/kubernetes/k8s/concepts/network",
-    "http://localhost:3000/docs/contacts"
-  ],
-  [
-    "/ru/kubernetes/k8s/concepts/network",
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/addons-and-settings/addons"
   ],
   [
@@ -13560,11 +13560,15 @@
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/versions/version-changelog"
   ],
   [
-    "/ru/kubernetes/k8s/concepts/versions/version-changelog",
+    "/ru/kubernetes/k8s/concepts/versions/version-support",
+    "http://localhost:3000/docs/kubernetes/k8s/concepts/scale#autoscaling"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/versions/version-support",
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/access-management"
   ],
   [
-    "/ru/kubernetes/k8s/concepts/versions/version-changelog",
+    "/ru/kubernetes/k8s/concepts/versions/version-support",
     "http://localhost:3000/docs/ru/cases/cases-logs/case-fluent-bit"
   ],
   [
@@ -13733,10 +13737,6 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/contacts"
-  ],
-  [
-    "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/projects"
   ],
   [
@@ -13822,10 +13822,6 @@
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-terraform",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
-  ],
-  [
-    "/ru/kubernetes/k8s/service-management/create-cluster/create-terraform",
-    "http://localhost:3000/docs/contacts"
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-terraform",
@@ -17746,6 +17742,10 @@
   [
     "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",
     "http://localhost:3000/docs/ru/networks/vnet/service-management/net#sozdanie_seti"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/checkpoint-start",

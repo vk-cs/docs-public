@@ -1,5 +1,3 @@
 {
-  "c67d6d8f-118e-41a0-81e9-7d771bd50460": "/ru/ml/mlplatform/deploymlflow/service-management/create",
-  "0362dd86-b424-48ae-a1ad-9b7f90c6427e": "/ru/ml/mlplatform/deploymlflow/service-management/manage",
-  "327277eb-e5b3-4fd9-a04c-76ba466105c8": "/ru/ml/mlplatform/deploymlflow/how-to-guides/manage-mlflow-client"
+  "f720464c-349b-4ca7-a04e-9d7ee5149215": "/ru/kubernetes/k8s/concepts/versions/version-support"
 }
