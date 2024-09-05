@@ -7,5 +7,6 @@
     "sectionTitle": "Политика поддержки версий Kubernetes",
     "icon": "",
     "weight": 1,
-    "uuid": "7b243c33-d7e4-4de1-bead-1c69d8ed2589"
+    "uuid": "7b243c33-d7e4-4de1-bead-1c69d8ed2589",
+    "additionalUuids": ["f720464c-349b-4ca7-a04e-9d7ee5149215"]    
 }
