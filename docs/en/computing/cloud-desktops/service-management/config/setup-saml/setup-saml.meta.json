@@ -1,0 +1,12 @@
+{
+    "title": "Setting up two-factor authentication",
+    "pageDescription": "Setting up two-factor authentication for users to connect to remote desktops.",
+    "shortDescription": "Setting up two-factor authentication for users to connect to remote desktops",
+    "metaTitle": "Setting up two-factor authentication",
+    "metaDescription": "Setting up two-factor authentication for users to connect to remote desktops.",
+    "sectionTitle": "Setting up two-factor authentication",
+    "icon": "",
+    "isBeta": true,
+    "hidden": true,
+    "weight": 3
+}
