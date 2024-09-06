@@ -32,7 +32,7 @@ The described approaches can also be used when access is lost to another applica
 
    1. Go to [management console](https://msk.cloud.vk.com/app/en) VK Cloud.
    1. Select the project where the necessary VM is located.
-   1. Go to **Cloud Computing → Virtual machines**.
+   1. Go to **Cloud Servers → Virtual machines**.
    1. Click on the name of the required VM.
    1. Go to the tab **Networks**.
    1. Write down the following network information:
@@ -580,7 +580,7 @@ To check the firewall settings:
 
 1. Go to [management console](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Select the project where the necessary VM is located.
-1. Go to **Cloud Computing → Virtual machines**.
+1. Go to **Cloud Servers → Virtual machines**.
 1. Click on the name of the required VM.
 1. Go to the tab **Networks**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required network connection and select **Edit connection**.
@@ -603,7 +603,7 @@ To configure firewall rules again:
 
 1. Go to [management console](https://msk.cloud.vk.com/app/en) VK Cloud.
 1. Select the project where the necessary VM is located.
-1. Go to **Cloud Computing → Virtual machines**.
+1. Go to **Cloud Servers → Virtual machines**.
 1. Click on the name of the required VM.
 1. Go to the tab **Networks**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the required network connection and select **Edit connection**.

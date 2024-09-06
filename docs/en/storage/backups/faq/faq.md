@@ -36,7 +36,7 @@ The time to create a backup depends on the amount of data on the disk of the VM 
 
 <summary>How do I delete a backup?</summary>
 
-You can delete a backup in the section **Cloud Computing → Backup**, for more information in the article [Managing backups](/en/storage/backups/service-management/vm-backup/vm-backup-manage#deleting_backups).
+You can delete a backup in the section **Cloud Servers → Backup**, for more information in the article [Managing backups](/en/storage/backups/service-management/vm-backup/vm-backup-manage#deleting_backups).
 
 </details>
 
