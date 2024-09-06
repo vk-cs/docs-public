@@ -181,7 +181,7 @@ Import the image according to [instructions](../../service-management/images/ima
     <tabpanel>
 
     1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-    1. Go to **Cloud computing → Images**.
+    1. Go to **Cloud Servers → Images**.
     1. Find the image in the list and click on it. The image page opens.
 
       The image will also become available when creating a VM.

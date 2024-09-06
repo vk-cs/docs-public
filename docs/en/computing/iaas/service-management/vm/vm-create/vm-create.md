@@ -29,7 +29,7 @@ The available fields may differ for different operating systems.
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Computing → Virtual machines**.
+2. Go to **Cloud Servers → Virtual machines**.
 3. Click the **Create instance** or **Add** button.
 4. Set VM parameters:
      - **Name of virtual machine**: use only Latin letters, numbers, or special characters `-`, `_`, and `.`.

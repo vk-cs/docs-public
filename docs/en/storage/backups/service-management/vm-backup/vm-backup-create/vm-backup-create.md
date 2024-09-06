@@ -19,7 +19,7 @@ A backup is created for all VM disks.
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-2. Go to **Cloud Computing → Backup**.
+2. Go to **Cloud Servers → Backup**.
 3. Go to the **Automatic** tab.
 4. Click the **Add**.
 5. Enter the **Name of plan** for backup.
@@ -65,7 +65,7 @@ The created backup plan will appear in the list. Read more about working with pl
 
    - In the section **Backup**:
 
-      1. Go to **Cloud Computing → Backup**.
+      1. Go to **Cloud Servers → Backup**.
       2. Go to the **Manual** tab.
       3. Click **Add**.
       4. In the window that opens, fill in the fields:
@@ -75,14 +75,14 @@ The created backup plan will appear in the list. Read more about working with pl
 
    - Via the VM context menu:
 
-      1. Go to **Cloud Computing → Virtual machines**.
+      1. Go to **Cloud Servers → Virtual machines**.
       1. Click ![ ](/en/assets/more-icon.svg "inline") for the VM for which you want to create a backup, and select **Create backup**.
       1. If necessary, enter **Comments**.
       1. Click **Create backup**.
 
    - On the virtual machine page:
 
-      1. Go to **Cloud Computing → Virtual machines**.
+      1. Go to **Cloud Servers → Virtual machines**.
       2. In the list of virtual machines, find the VM for which you want to create a backup.
       3. Click on the name of this VM.
       4. On the VM page, go to the **General Information** tab.

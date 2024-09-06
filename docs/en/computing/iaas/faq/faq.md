@@ -118,7 +118,7 @@ You can connect to the Openstack CLI using the configuration file. Information a
 
 <summary>How do I go to the virtual server console?</summary>
 
-The VNC console is available on the virtual machine page in the section **Cloud Computing → Virtual Machines**. For more information, see the article [VM diagnostics](../service-management/vm/vm-console#the_vnc_console).
+The VNC console is available on the virtual machine page in the section **Cloud Servers → Virtual Machines**. For more information, see the article [VM diagnostics](../service-management/vm/vm-console#the_vnc_console).
 
 </details>
 
@@ -258,7 +258,7 @@ The operation of creating and deleting resources can be performed an unlimited n
 
 <summary>How do I increase the disk?</summary>
 
-You can enlarge the disk using the VK Cloud panel in the **Virtual Machines** or **Disks** section of the **Cloud Computing** service.
+You can enlarge the disk using the VK Cloud panel in the **Virtual Machines** or **Disks** section of the **Cloud Servers** service.
 
 Full information is available in the article about [disk expansion](../service-management/volumes#increasing_the_disk_size_with_rebooting).
 
@@ -310,7 +310,7 @@ At the time of migration, there may be a decrease in read-only performance, but 
 
 <summary>I can't delete a disk</summary>
 
-Make sure that the disk [is disabled](../service-management/volumes#disconnecting_a_disk_from_a_vm) from VM — after that, delete the disk in the **Cloud Computing** → **Disks** section.
+Make sure that the disk [is disabled](../service-management/volumes#disconnecting_a_disk_from_a_vm) from VM — after that, delete the disk in the **Cloud Servers** → **Disks** section.
 
 </details>
 

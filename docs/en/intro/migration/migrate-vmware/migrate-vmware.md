@@ -124,7 +124,7 @@ To load a VM image, use the OpenStack CLI to avoid possible errors when processi
    --property hw_qemu_guest_agent=yes --property os_require_quiesce=yes
    ```
 
-4. Check the image download in [management console](https://msk.cloud.vk.com/app/en/) VK Cloud in section **Cloud Computing → Images** or via CLI:
+4. Check the image download in [management console](https://msk.cloud.vk.com/app/en/) VK Cloud in section **Cloud Servers → Images** or via CLI:
 
    ```bash
    openstack image list

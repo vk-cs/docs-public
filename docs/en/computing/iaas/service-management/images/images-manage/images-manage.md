@@ -12,7 +12,7 @@ The VK Cloud service allows you to create an image from the disk of an existing 
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud computing → Images**.
+2. Go to **Cloud Servers → Images**.
 3. Click the **Create** button.
 4. In the window that appears:
 
@@ -79,7 +79,7 @@ When downloading through your VK Cloud management console, the size of the downl
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud computing → Images**.
+2. Go to **Cloud Servers → Images**.
 3. Click the **Create** button.
 4. In the window that appears:
 
@@ -165,7 +165,7 @@ Through your VK Cloud management console, you can allow access to the image only
 To change the visibility status of an image:
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud computing → Images**.
+2. Go to **Cloud Servers → Images**.
 3. Click ![ ](/en/assets/more-icon.svg "inline") for the required image and select **Share image**.
 4. In the window that appears:
 
@@ -234,7 +234,7 @@ openstack image member list <image ID>
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud computing → Images**.
+2. Go to **Cloud Servers → Images**.
 3. Do one of the following for the required image:
 
    - Select the image using the checkbox, then click **Delete**.

@@ -12,7 +12,7 @@ Before connecting, make sure that the following conditions are met:
 
    <info>
 
-   The external IP address of the VM can be viewed in [management console](https://msk.cloud.vk.com/app/en/) VK Cloud in the section **Cloud computing → Virtual machines**.
+   The external IP address of the VM can be viewed in [management console](https://msk.cloud.vk.com/app/en/) VK Cloud in the section **Cloud Servers → Virtual machines**.
 
    </info>
 

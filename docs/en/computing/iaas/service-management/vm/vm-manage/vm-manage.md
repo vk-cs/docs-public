@@ -14,7 +14,7 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Computing → Virtual machines**.
+2. Go to **Cloud Servers → Virtual machines**.
 3. In the list of VMs, click on the name of the VM whose ID you want to find out.
 4. On the VM page, go to the **General information** tab.
 5. Find the row **ID of the virtual machine** in the table.
@@ -54,7 +54,7 @@ To manage a VM using the OpenStack CLI, you need a vm ID.
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Computing → Virtual machines**.
+2. Go to **Cloud Servers → Virtual machines**.
 3. Change the VM state in one of the ways.
 
     - Using group operations — for multiple VMs:
@@ -124,7 +124,7 @@ The forced restart of the VM corresponds to the power off and on (power cycling)
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Computing → Virtual machines**.
+2. Go to **Cloud Servers → Virtual machines**.
 3. Force a VM restart in one of the ways.
 
     - Through the context menu:
@@ -169,7 +169,7 @@ A blocked virtual machine cannot be started or stopped, nor can it be restarted.
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Computing → Virtual machines**.
+2. Go to **Cloud Servers → Virtual machines**.
 3. Block or unblock the VM in one of the ways.
 
     - Through the context menu:
@@ -232,7 +232,7 @@ The deletion operation is irreversible! Save the necessary data before deleting 
    <tabpanel>
 
    1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-   2. Go to **Cloud Computing → Virtual machines**.
+   2. Go to **Cloud Servers → Virtual machines**.
    3. Delete the VM in one of the ways.
 
       - Using group operations — for multiple VMs:
@@ -287,7 +287,7 @@ If the VM type changes, the VM will be rebooted.
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Computing → Virtual machines**.
+2. Go to **Cloud Servers → Virtual machines**.
 3. Change the VM name or type in one of the ways.
 
    - Through the context menu:
@@ -349,7 +349,7 @@ Tags allow you to filter the list of virtual machines and find the right VM fast
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Computing → Virtual machines**.
+2. Go to **Cloud Servers → Virtual machines**.
 3. Click ![ ](/en/assets/more-icon.svg "inline") for the required VM.
 4. Check the tags or click **Create a new tag**.
 5. To add a new tag, enter its name, select a color, and click **Add tag**.
@@ -441,7 +441,7 @@ systemctl status qemu-guest-agent
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Computing → Virtual machines**.
+2. Go to **Cloud Servers → Virtual machines**.
 3. Set the password in one of the ways.
 
     - Through the context menu:
@@ -500,7 +500,7 @@ If the password was changed after the VM was created or the VM was created on th
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Computing → Virtual machines**.
+2. Go to **Cloud Servers → Virtual machines**.
 3. Open the password receipt window using one of the following methods.
 
     - Through the context menu:
@@ -548,7 +548,7 @@ To restore access to a Linux virtual machine via SSH using a key pair, you need 
 
 3. Upload the public key to the VM.
 
-   1. Go to **Cloud Computing → Virtual machines**.
+   1. Go to **Cloud Servers → Virtual machines**.
    2. In the list of virtual machines, click on the name of the VM you need.
    3. On the VM page, go to the tab **Console**.
    4. Use the default username and password to sign in to the VM OS.
