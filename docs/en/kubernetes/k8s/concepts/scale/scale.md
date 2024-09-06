@@ -18,11 +18,11 @@ _Vertical autoscaling_ of master nodes works for all clusters, you cannot disabl
 
 Vertical autoscaling agent evaluates the master node load by CPU and RAM, monitoring the following threshold values:
 
-- CPU load exceeds 80% for 30 seconds
+- CPU load exceeds 80% for 60 seconds
 - CPU load exceeds 60% for 5 minutes
-- RAM load exceeds 65% for 60 seconds
+- RAM load exceeds 90% for 60 seconds
 
-If at least one of the thresholds is exceeded, a request will be sent to the [Cloud Containers](/en/kubernetes/k8s) service to change the master node VM flavor. In this case, the CPU and RAM values ​​will be doubled. For example, the flavor `STD2-2-4` will be changed to `STD2-4-8`.
+If at least one of the thresholds is exceeded, a request will be sent to the [Cloud Containers](/en/kubernetes/k8s) service to change the master node VM flavor. In this case, the CPU and RAM values ​​will be doubled. For example, the flavor `STD2-2-6` will be changed to `STD2-4-12`.
 
 You can change the master node VM flavor to a flavor with smaller CPU and RAM only [in manual mode](../../service-management/scale#scale_master_nodes).
 
@@ -43,9 +43,9 @@ When vertically scaling any cluster nodes, the virtual machines that are used by
 - If a node group contains multiple worker nodes, the workload hosted on them will not be available until scaling is complete if replication for the load is not configured or configured incorrectly.
 
   For example, if you place all replicas on one worker node, then when it is restarted, the workload will become unavailable, even if there are other worker nodes in the node group.
-  
+
   Configure replication so that some of the workload replicas are available when worker nodes are restarted.
 
 - If there are not enough computing resources for the workload after scaling the node group, then this load may not work correctly or become unavailable.
-  
+
   Make sure that when scaling down computing resources, the total amount of resources in the node group is sufficient.
