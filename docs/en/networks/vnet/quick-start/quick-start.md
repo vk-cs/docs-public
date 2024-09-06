@@ -22,7 +22,7 @@ After completing all the quick start steps, you will:
 Create a virtual machine with Internet access:
 
 1. Go to [management console](https://msk.cloud.vk.com/app/) VK Cloud.
-1. Go to **Cloud Computing** → **Virtual Machines**.
+1. Go to **Cloud Servers** → **Virtual Machines**.
 1. Click the **Add** button.
 1. At the “Configuration” step:
 
@@ -44,7 +44,7 @@ The creation of the virtual machine may take some time, after which it will appe
 Create a second virtual machine:
 
 1. Go to [management console](https://msk.cloud.vk.com/app/) VK Cloud.
-1. Go to **Cloud Computing** → **Virtual Machines**.
+1. Go to **Cloud Servers** → **Virtual Machines**.
 1. Click the **Add** button.
 1. At the “Configuration” step:
 
@@ -67,7 +67,7 @@ A file with a virtual machine key will be downloaded to your computer.
 Create a third virtual machine:
 
 1. Go to [management console](https://msk.cloud.vk.com/app/) VK Cloud.
-1. Go to **Cloud Computing** → **Virtual Machines**.
+1. Go to **Cloud Servers** → **Virtual Machines**.
 1. Click the **Add** button.
 1. At the «Configuration» step:
 
@@ -112,7 +112,7 @@ Wait for the creation of the virtual machine to complete.
 To send and receive traffic, assign a security group to the VM. For previously created VMs, apply the following settings:
 
 1. Go to [management console](https://msk.cloud.vk.com/app/) VK Cloud.
-1. Go to **Cloud Computing** → **Virtual Machines**.
+1. Go to **Cloud Servers** → **Virtual Machines**.
 1. Click ![ ](/en/assets/more-icon.svg "inline") for the virtual machine and select **Firewall Settings**.
 1. Find the rule group created in step 3 in the list.
 1. Click **Apply** in the line with the rule group.
