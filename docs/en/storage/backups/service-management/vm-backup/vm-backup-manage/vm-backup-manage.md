@@ -9,11 +9,11 @@
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 2. Go to the **Backup** section in one of the ways.
 
-   - Through the services menu: **Cloud Computing → Backup**.
+   - Through the services menu: **Cloud Servers → Backup**.
 
    - Through the context menu of the virtual machine:
 
-      1. Go to **Cloud Computing → Virtual machines**.
+      1. Go to **Cloud Servers → Virtual machines**.
       2. Click ![ ](/en/assets/more-icon.svg "inline") for the required VM.
       3. Select **Restore from backup**.
 
@@ -83,11 +83,11 @@ VM recovery speed from backup is affected by:
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
 2. Go to the **Backup** section in one of the ways.
 
-   - Through the services menu: **Cloud Computing → Backup**.
+   - Through the services menu: **Cloud Servers → Backup**.
 
    - Through the context menu of the virtual machine:
 
-      1. Go to **Cloud Computing → Virtual machines**.
+      1. Go to **Cloud Servers → Virtual machines**.
       2. Click ![ ](/en/assets/more-icon.svg "inline") for the required VM.
       3. Select **Restore from backup**.
 
@@ -150,7 +150,7 @@ If you no longer need the disk, [remove it](/en/computing/iaas/service-managemen
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-2. Go to **Cloud computing → Backup**.
+2. Go to **Cloud Servers → Backup**.
 3. Open the required backup list.
 
    - Copies created automatically:
@@ -194,7 +194,7 @@ Delete unnecessary backups in a timely manner to save storage space.
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-2. Go to **Cloud computing → Backup**.
+2. Go to **Cloud Servers → Backup**.
 3. Go to the **Automatic** tab.
 4. In the list of backup plans, find the plan you need.
 5. Use one of the methods to go to the backup plan change page.
@@ -245,7 +245,7 @@ When you delete a backup plan, all backups created under that plan will be delet
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en/) VK Cloud management console.
-2. Go to **Cloud computing → Backup**.
+2. Go to **Cloud Servers → Backup**.
 3. Go to the **Automatic** tab.
 4. Change the state of the backup plan in one of the ways.
 

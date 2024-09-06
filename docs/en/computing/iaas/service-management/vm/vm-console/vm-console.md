@@ -31,7 +31,7 @@ Open the console in the VK Cloud management console or use the address obtained 
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Computing → Virtual machines**.
+2. Go to **Cloud Servers → Virtual machines**.
 3. In the list of virtual machines, click on the name of the VM you need.
 4. On the VM page, go to the tab **Console**.
 5. If the VM is not running, click the start button on the tab.

@@ -17,7 +17,7 @@ In case the JupyterHub interface stops responding, you should reboot the Jupyter
 
 To restart the VM
 
-1. Go to the **Cloud Computing** -> **Virtual Machines** section.
+1. Go to the **Cloud Servers** -> **Virtual Machines** section.
 2. Click ![ ](/en/assets/more-icon.svg "inline") for the JupyterHub VM instance and select **Restart**.
 
 You can learn more about managing VM instances in ["Starting, Stopping, and Restarting a VM"](../../../computing/iaas/service-management/vm/vm-manage#start_stop_restart_vm).

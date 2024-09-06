@@ -15,11 +15,11 @@ Creating HDD and SSD drives is available by default in all configurations. To cr
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
-   - All disks: go to **Cloud Computing** → **Disks**.
+   - All disks: go to **Cloud Servers** → **Disks**.
 
    - Disks of a specific virtual machine:
 
-      1. Go to **Cloud Computing** → **Virtual machines**.
+      1. Go to **Cloud Servers** → **Virtual machines**.
       2. In the list of virtual machines, click on the name of the VM for which you want to create a disk.
       3. On the VM page, go to the **Disks** tab.
 
@@ -103,11 +103,11 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
-   - All disks: go to **Cloud Computing** → **Disks**.
+   - All disks: go to **Cloud Servers** → **Disks**.
 
    - Disks of a specific virtual machine:
 
-      1. Go to **Cloud Computing** → **Virtual machines**.
+      1. Go to **Cloud Servers** → **Virtual machines**.
       2. In the list of virtual machines, click on the name of the VM whose disk size you want to increase.
       3. On the VM page, go to the **Disks** tab.
 
@@ -204,10 +204,10 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
-   - All disks: go to **Cloud Computing** → **Disks**.
+   - All disks: go to **Cloud Servers** → **Disks**.
    - Disks of a specific virtual machine:
 
-      1. Go to **Cloud Computing** → **Virtual machines**.
+      1. Go to **Cloud Servers** → **Virtual machines**.
       2. In the list of virtual machines, click on the name of the VM whose disk size you want to increase.
       3. On the VM page, go to the **Disks** tab.
 
@@ -274,11 +274,11 @@ Creating HDD and SSD drives is available by default in all configurations. To us
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
-   - All disks: go to **Cloud Computing** → **Disks**.
+   - All disks: go to **Cloud Servers** → **Disks**.
 
    - Disks of a specific virtual machine:
 
-      1. Go to **Cloud Computing** → **Virtual machines**.
+      1. Go to **Cloud Servers** → **Virtual machines**.
       2. In the list of virtual machines, click on the name of the VM whose disk type you want to change.
       3. On the VM page, go to the **Disks** tab.
 
@@ -350,11 +350,11 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
-   - All disks: go to **Cloud Computing** → **Disks**.
+   - All disks: go to **Cloud Servers** → **Disks**.
 
    - Disks of a specific virtual machine:
 
-      1. Go to **Cloud Computing** → **Virtual machines**.
+      1. Go to **Cloud Servers** → **Virtual machines**.
       2. In the list of virtual machines, click on the VM name.
       3. On the VM page, go to the **Disks** tab.
 
@@ -414,7 +414,7 @@ To exclude the possibility of accidental booting from the disk, make it non-boot
 <tabpanel>
 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Computing** → **Disks**.
+2. Go to **Cloud Servers** → **Disks**.
 3. Find a disk in the list that is not connected to the VM: the icon to the left of the disk name is blue, when you hover over it, the inscription appears **Не подключен к инстансу**.
 4. Use one of the methods to open the virtual machine selection window to attach the disk.
 
@@ -485,11 +485,11 @@ To disable the VM's main (root) disk, use the option [Replacing the root disk](#
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
-   - All disks: go to **Cloud Computing** → **Disks**.
+   - All disks: go to **Cloud Servers** → **Disks**.
 
    - Disks of a specific virtual machine:
 
-      1. Go to **Cloud Computing** → **Virtual machines**.
+      1. Go to **Cloud Servers** → **Virtual machines**.
       2. In the list of virtual machines, click on the name of the VM from which you want to disconnect the disk.
       3. On the VM page, go to the **Disks** tab.
 
@@ -559,11 +559,11 @@ Before replacing the main disk [stop the VM](../vm/vm-manage#start_stop_restart_
 3. [Clone](#cloning_disk) the target disk if necessary.
 4. Open the page with the required list of disks.
 
-   - All disks: go to **Cloud Computing** → **Disks**.
+   - All disks: go to **Cloud Servers** → **Disks**.
 
    - Disks of a specific virtual machine:
 
-      1. Go to **Cloud Computing** → **Virtual machines**.
+      1. Go to **Cloud Servers** → **Virtual machines**.
       2. In the list of virtual machines, click on the name of the VM whose main disk you want to replace.
       3. On the VM page, go to the **Disks** tab.
 
@@ -716,11 +716,11 @@ When you delete a disk, all its snapshots will be deleted.
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
-   - All disks: go to **Cloud Computing** → **Disks**.
+   - All disks: go to **Cloud Servers** → **Disks**.
 
    - Disks of a specific virtual machine:
 
-      1. Go to **Cloud Computing** → **Virtual machines**.
+      1. Go to **Cloud Servers** → **Virtual machines**.
       2. In the list of virtual machines, click on the name of the VM whose disk you want to delete.
       3. On the VM page, go to the **Disks** tab.
 
@@ -781,11 +781,11 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
-   - All disks: go to **Cloud Computing** → **Disks**.
+   - All disks: go to **Cloud Servers** → **Disks**.
 
    - Disks of a specific virtual machine:
 
-      1. Go to **Cloud Computing** → **Virtual machines**.
+      1. Go to **Cloud Servers** → **Virtual machines**.
       2. In the list of virtual machines, click on the name of the VM that you plan to create a disk snapshot for.
       3. On the VM page, go to the **Disks** tab.
 
@@ -854,11 +854,11 @@ A disk snapshot is a file that stores a copy of a disk taken at a certain point 
 1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
 2. Open the page with the required list of disks.
 
-   - All disks: go to **Cloud Computing** → **Disks**.
+   - All disks: go to **Cloud Servers** → **Disks**.
 
    - Disks of a specific virtual machine:
 
-      1. Go to **Cloud Computing** → **Virtual machines**.
+      1. Go to **Cloud Servers** → **Virtual machines**.
       2. In the list of virtual machines, click on the VM name.
       3. On the VM page, go to the **Disks** tab.
 

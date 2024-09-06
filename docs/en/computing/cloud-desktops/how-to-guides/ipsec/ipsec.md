@@ -132,7 +132,7 @@ In your management console [create a VPN](/en/networks/vnet/service-management/v
 
 To configure a VPN tunnel on the side of the VDI environment, add an extra network interface for the Debian server to the `vdi-transit-vsubnet` subnet and assign the `10.56.0.4` address to it:
 
-1. In [your management console](https://cloud.vk.com/app/en/) go to the **Cloud computing** section → **Virtual machines**.
+1. In [your management console](https://cloud.vk.com/app/en/) go to the **Cloud Servers** section → **Virtual machines**.
 1. Select the `Debian-IPsec-Gate` VM and go to the **Networks** tab.
 1. Click the **Add connection** button.
 1. Specify the following connection settings:
