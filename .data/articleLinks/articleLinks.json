@@ -16264,6 +16264,30 @@
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library"
   ],
   [
+    "/ru/ml/spark-to-k8s/connect/spark-connect",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/service-management/create"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/connect/spark-connect",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/spark/create"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/connect/spark-connect",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz#create_token_console"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/connect/spark-connect",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/connect/spark-connect",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/connect/spark-connect",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
+  ],
+  [
     "/ru/ml/spark-to-k8s/service-management/create",
     "http://localhost:3000/docs/ru/intro/start/architecture#az"
   ],
@@ -16430,6 +16454,82 @@
   [
     "/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse",
     "http://localhost:3000/docs/ru/dbs/dbaas/service-management/manage-instance/clickhouse#udalenie_instansa_bd"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/monitoring",
+    "http://localhost:3000/docs/ru/monitoring-services/logging"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/monitoring",
+    "http://localhost:3000/docs/ru/monitoring-services/logging/service-management/connect-plugin"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/monitoring",
+    "http://localhost:3000/docs/ru/monitoring-services/logging/service-management/view-logs"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/monitoring",
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/monitoring",
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring/quick-start#1_sozdayte_grafik"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/monitoring",
+    "http://localhost:3000/docs/ru/monitoring-services/alerting"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/monitoring",
+    "http://localhost:3000/docs/ru/monitoring-services/alerting/notification/notification-add"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/monitoring",
+    "http://localhost:3000/docs/ru/monitoring-services/alerting/triggers/triggers-add"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/monitoring",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/monitoring",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/monitoring",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs#spark_events"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/monitoring",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs#spark_job_logs"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/faq",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/faq",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/monitoring#ispolzovanie_spark_history_server"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/faq",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/service-management/buckets"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/faq",
+    "http://localhost:3000/docs/ru/monitoring-services/logging"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/faq",
+    "http://localhost:3000/docs/ru/monitoring-services/alerting"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/faq",
+    "http://localhost:3000/docs/ru/monitoring-services/monitoring"
+  ],
+  [
+    "/ru/ml/spark-to-k8s/faq",
+    "http://localhost:3000/docs/ru/ml/spark-to-k8s/monitoring"
   ],
   [
     "/ru/ml/spark-to-k8s/ml-platform-library/authz",
@@ -17106,82 +17206,6 @@
   [
     "/ru/ml/spark-to-k8s/ml-platform-library/library-reference/configmaps",
     "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/configmaps#list_configmaps"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/monitoring",
-    "http://localhost:3000/docs/ru/monitoring-services/logging"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/monitoring",
-    "http://localhost:3000/docs/ru/monitoring-services/logging/service-management/connect-plugin"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/monitoring",
-    "http://localhost:3000/docs/ru/monitoring-services/logging/service-management/view-logs"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/monitoring",
-    "http://localhost:3000/docs/ru/monitoring-services/monitoring"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/monitoring",
-    "http://localhost:3000/docs/ru/monitoring-services/monitoring/quick-start#1_sozdayte_grafik"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/monitoring",
-    "http://localhost:3000/docs/ru/monitoring-services/alerting"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/monitoring",
-    "http://localhost:3000/docs/ru/monitoring-services/alerting/notification/notification-add"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/monitoring",
-    "http://localhost:3000/docs/ru/monitoring-services/alerting/triggers/triggers-add"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/monitoring",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/monitoring",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/monitoring",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs#spark_events"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/monitoring",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs#spark_job_logs"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/faq",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/ml-platform-library/authz"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/faq",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/monitoring#ispolzovanie_spark_history_server"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/faq",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/service-management/buckets"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/faq",
-    "http://localhost:3000/docs/ru/monitoring-services/logging"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/faq",
-    "http://localhost:3000/docs/ru/monitoring-services/alerting"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/faq",
-    "http://localhost:3000/docs/ru/monitoring-services/monitoring"
-  ],
-  [
-    "/ru/ml/spark-to-k8s/faq",
-    "http://localhost:3000/docs/ru/ml/spark-to-k8s/monitoring"
   ],
   [
     "/ru/ml/cloud-voice/concepts/about",

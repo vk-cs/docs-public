@@ -394,6 +394,11 @@
     "full": "Удаление сервера развертывания",
     "text": "Удаление сервера развертывания"
   },
+  "create_token_console": {
+    "number": null,
+    "full": "Создание токена доступа через библиотеку Cloud ML Platform",
+    "text": "Создание токена доступа через библиотеку Cloud ML Platform"
+  },
   "get_current_token_details": {
     "number": null,
     "full": "Получение информации о текущем токене доступа",
