@@ -12,6 +12,6 @@
       "title": "Создание кластера Spark с помощью Terraform"
     }
   ],
-  "weight": 2,
+  "weight": 4,
   "uuid": "7460177b-f8f3-41e3-a3c5-53cb0b7ec2bc"
 }
