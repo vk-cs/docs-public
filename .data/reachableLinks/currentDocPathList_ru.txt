@@ -466,6 +466,8 @@
 /docs/ru/ml/spark-to-k8s/concepts
 /docs/ru/ml/spark-to-k8s/concepts/about
 /docs/ru/ml/spark-to-k8s/concepts/architecture
+/docs/ru/ml/spark-to-k8s/connect
+/docs/ru/ml/spark-to-k8s/connect/spark-connect
 /docs/ru/ml/spark-to-k8s/service-management
 /docs/ru/ml/spark-to-k8s/service-management/create
 /docs/ru/ml/spark-to-k8s/service-management/launch
@@ -475,6 +477,8 @@
 /docs/ru/ml/spark-to-k8s/how-to-guides
 /docs/ru/ml/spark-to-k8s/how-to-guides/submit-basic-job-pi
 /docs/ru/ml/spark-to-k8s/how-to-guides/submit-advanced-job-clickhouse
+/docs/ru/ml/spark-to-k8s/monitoring
+/docs/ru/ml/spark-to-k8s/faq
 /docs/ru/ml/spark-to-k8s/ml-platform-library
 /docs/ru/ml/spark-to-k8s/ml-platform-library/install
 /docs/ru/ml/spark-to-k8s/ml-platform-library/authz
@@ -484,8 +488,6 @@
 /docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs
 /docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/secrets
 /docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/configmaps
-/docs/ru/ml/spark-to-k8s/monitoring
-/docs/ru/ml/spark-to-k8s/faq
 /docs/ru/ml/cloud-voice
 /docs/ru/ml/cloud-voice/concepts
 /docs/ru/ml/cloud-voice/concepts/about

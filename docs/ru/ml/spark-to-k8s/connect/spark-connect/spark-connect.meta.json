@@ -1,10 +1,11 @@
 {
-    "title": "Подключение к кластеру Spark через Spark Connect",
-    "pageDescription": "Как удаленно подключиться к кластеру Spark и работать с ним через IDE или Jupyter Notebook.",
-    "shortDescription": "Как удаленно подключиться к кластеру Spark и работать с ним через IDE или Jupyter Notebook",
-    "metaTitle": "Подключение к кластеру Spark через Spark Connect",
-    "metaDescription": "Как удаленно подключиться к кластеру Spark и работать с ним через IDE или Jupyter Notebook",
-    "sectionTitle": "Подключение к кластеру Spark через Spark Connect",
-    "icon": "",
-    "weight": 1
+  "title": "Подключение к кластеру Spark через Spark Connect",
+  "pageDescription": "Как удаленно подключиться к кластеру Spark и работать с ним через IDE или Jupyter Notebook.",
+  "shortDescription": "Как удаленно подключиться к кластеру Spark и работать с ним через IDE или Jupyter Notebook",
+  "metaTitle": "Подключение к кластеру Spark через Spark Connect",
+  "metaDescription": "Как удаленно подключиться к кластеру Spark и работать с ним через IDE или Jupyter Notebook",
+  "sectionTitle": "Подключение к кластеру Spark через Spark Connect",
+  "icon": "",
+  "weight": 1,
+  "uuid": "3763f06d-112f-4ee3-9f7a-9f1f1b45bf93"
 }
