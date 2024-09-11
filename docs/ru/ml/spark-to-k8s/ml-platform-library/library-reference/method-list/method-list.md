@@ -35,3 +35,7 @@
 - [list_configmaps](../configmaps#list_configmaps)
 - [get_configmap_detail](../configmaps#get_configmap_detail)
 - [delete_configmap](../configmaps#delete_configmap)
+
+## Работа со Spark Connect
+
+- [add_spark_connect_jars](../spark-connect-methods#add_spark_connect_jars)
