@@ -488,6 +488,7 @@
 /docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-jobs
 /docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/secrets
 /docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/configmaps
+/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-connect-methods
 /docs/ru/ml/cloud-voice
 /docs/ru/ml/cloud-voice/concepts
 /docs/ru/ml/cloud-voice/concepts/about
@@ -552,6 +553,7 @@
 /docs/ru/monitoring-services/monitoring/service-management/mon-setup-new
 /docs/ru/monitoring-services/monitoring/service-management/mon-setup-current
 /docs/ru/monitoring-services/monitoring/service-management/telegraf-manage
+/docs/ru/monitoring-services/monitoring/service-management/grafana-integration
 /docs/ru/monitoring-services/event-log
 /docs/ru/monitoring-services/event-log/concepts
 /docs/ru/monitoring-services/event-log/concepts/about

@@ -7590,6 +7590,21 @@
     ]
   },
   {
+    "uuid": "29d57c6d-0805-4138-8eeb-f1457bee93a6",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/monitoring-services/monitoring/service-management/grafana-integration",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/monitoring/service-management/grafana-integration/grafana-integration.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/monitoring-services/monitoring/service-management/grafana-integration/grafana-integration.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "162c920a-b096-44e5-9231-4054ddacc184",
     "lang": "en",
     "type": "INTERMEDIATE",
@@ -16665,6 +16680,21 @@
     ]
   },
   {
+    "uuid": "9495a81f-5ecc-4ab5-8591-f4be706fef2c",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-connect-methods",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-connect-methods/spark-connect-methods.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/ml/spark-to-k8s/ml-platform-library/library-reference/spark-connect-methods/spark-connect-methods.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "9c03c68b-f617-413a-95ea-9ff76218f969",
     "lang": "ru",
     "type": "INTERMEDIATE",
@@ -17617,6 +17647,21 @@
     "partialPath": "/ru/monitoring-services/monitoring/service-management/telegraf-manage",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/monitoring/service-management/telegraf-manage/telegraf-manage.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/monitoring/service-management/telegraf-manage/telegraf-manage.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "38bbea90-7f3c-4a9c-9286-9b344b981d6a",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/monitoring-services/monitoring/service-management/grafana-integration",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/monitoring/service-management/grafana-integration/grafana-integration.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/monitoring-services/monitoring/service-management/grafana-integration/grafana-integration.md",
     "variables": {},
     "hidden": false,
     "version": null,
