@@ -1,0 +1,11 @@
+{
+    "title": "Connecting Grafana",
+    "pageDescription": "How to connect the Grafana service for visualization of collected monitoring metrics.",
+    "shortDescription": "How to connect the Grafana service for visualization of collected monitoring metrics",
+    "metaTitle": "Connecting Grafana",
+    "metaDescription": "How to connect the Grafana service for visualization of collected monitoring metrics",
+    "sectionTitle": "Connecting Grafana",
+    "icon": "",
+    "weight": 4,
+    "isBeta": true
+}
