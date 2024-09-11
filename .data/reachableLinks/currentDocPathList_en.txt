@@ -503,6 +503,7 @@
 /docs/en/monitoring-services/monitoring/service-management
 /docs/en/monitoring-services/monitoring/service-management/mon-setup-new
 /docs/en/monitoring-services/monitoring/service-management/mon-setup-current
+/docs/en/monitoring-services/monitoring/service-management/grafana-integration
 /docs/en/applications-and-services
 /docs/en/applications-and-services/marketplace
 /docs/en/applications-and-services/marketplace/concepts

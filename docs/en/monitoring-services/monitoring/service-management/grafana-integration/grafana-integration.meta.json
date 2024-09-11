@@ -1,11 +1,12 @@
 {
-    "title": "Connecting Grafana",
-    "pageDescription": "How to connect the Grafana service for visualization of collected monitoring metrics.",
-    "shortDescription": "How to connect the Grafana service for visualization of collected monitoring metrics",
-    "metaTitle": "Connecting Grafana",
-    "metaDescription": "How to connect the Grafana service for visualization of collected monitoring metrics",
-    "sectionTitle": "Connecting Grafana",
-    "icon": "",
-    "weight": 4,
-    "isBeta": true
+  "title": "Connecting Grafana",
+  "pageDescription": "How to connect the Grafana service for visualization of collected monitoring metrics.",
+  "shortDescription": "How to connect the Grafana service for visualization of collected monitoring metrics",
+  "metaTitle": "Connecting Grafana",
+  "metaDescription": "How to connect the Grafana service for visualization of collected monitoring metrics",
+  "sectionTitle": "Connecting Grafana",
+  "icon": "",
+  "weight": 4,
+  "isBeta": true,
+  "uuid": "29d57c6d-0805-4138-8eeb-f1457bee93a6"
 }

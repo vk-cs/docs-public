@@ -1,11 +1,12 @@
 {
-    "title": "Подключение Grafana",
-    "pageDescription": "Как подключить сервис Grafana для визуализации собранных метрик мониторинга.",
-    "shortDescription": "Как подключить сервис Grafana для визуализации собранных метрик мониторинга",
-    "metaTitle": "Подключение Grafana",
-    "metaDescription": "Как подключить сервис Grafana для визуализации собранных метрик мониторинга",
-    "sectionTitle": "Подключение Grafana",
-    "icon": "",
-    "weight": 4,
-    "isBeta": true
+  "title": "Подключение Grafana",
+  "pageDescription": "Как подключить сервис Grafana для визуализации собранных метрик мониторинга.",
+  "shortDescription": "Как подключить сервис Grafana для визуализации собранных метрик мониторинга",
+  "metaTitle": "Подключение Grafana",
+  "metaDescription": "Как подключить сервис Grafana для визуализации собранных метрик мониторинга",
+  "sectionTitle": "Подключение Grafana",
+  "icon": "",
+  "weight": 4,
+  "isBeta": true,
+  "uuid": "38bbea90-7f3c-4a9c-9286-9b344b981d6a"
 }
