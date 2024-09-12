@@ -1,10 +1,10 @@
 {
-  "title" : "Ресурс ivkcs_compute_instance_reboot",
-  "pageDescription" : "Ресурс ivkcs_compute_instance_reboot",
-  "shortDescription" : "",
-  "metaTitle" : "Ресурс ivkcs_compute_instance_reboot",
-  "metaDescription" : "Ресурс ivkcs_compute_instance_reboot",
-  "sectionTitle" : "Ресурс ivkcs_compute_instance_reboot",
-  "uuid" : "",
-  "weight": 5 
+  "title": "Ресурс ivkcs_compute_instance_reboot",
+  "pageDescription": "Ресурс ivkcs_compute_instance_reboot",
+  "shortDescription": "",
+  "metaTitle": "Ресурс ivkcs_compute_instance_reboot",
+  "metaDescription": "Ресурс ivkcs_compute_instance_reboot",
+  "sectionTitle": "Ресурс ivkcs_compute_instance_reboot",
+  "uuid": "6824d1ae-f189-4f6a-b77a-a8788735bc7a",
+  "weight": 5
 }
