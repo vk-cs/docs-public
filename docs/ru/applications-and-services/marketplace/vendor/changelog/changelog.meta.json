@@ -1,17 +1,17 @@
 {
-  "title" : "История изменений",
-  "pageDescription" : "История изменений",
-  "shortDescription" : "",
-  "metaTitle" : "История изменений",
-  "metaDescription" : "История изменений",
-  "sectionTitle" : "История изменений",
+  "title": "История изменений",
+  "pageDescription": "История изменений",
+  "shortDescription": "",
+  "metaTitle": "История изменений",
+  "metaDescription": "История изменений",
+  "sectionTitle": "История изменений",
   "variables": {
-    "revdate" : "18.07.2024"
+    "revdate": "18.07.2024"
   },
   "build": {
     "for": [
       "dontbuild"
     ]
   },
-  "uuid" : ""
+  "uuid": "0667d811-2c02-450b-a1a1-46c1442ed0de"
 }
