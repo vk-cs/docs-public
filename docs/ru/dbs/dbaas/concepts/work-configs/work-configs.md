@@ -38,15 +38,60 @@
 
 ## Доступные конфигурации для типов СУБД
 
-| Тип СУБД | Single | Master-Replica | Кластер |
-| --------------------------| -------- | ---- | ------ |
-| PostgresPro Enterprise    | &#10003; | &#10003; | &#10003; |
-| PostgresPro Enterprise 1C | &#10003; | &#10003; | &#10003; |
-| PostgresPro Standard      | &#10003; | В разработке | В разработке |
-| MySQL                     | &#10003; | &#10003; | &#10003; |
-| Tarantool                 | &#10003; | —  | &#10003; |
-| PostgreSQL                | &#10003; | &#10003;  | &#10003; |
-| ClickHouse                | &#10003; | — | &#10003; |
-| Redis                     | &#10003; | — | &#10003; |
-| MongoDB                   | &#10003; | —  | &#10003; |
-| OpenSearch                | — | — | &#10003; |
+[cols="1,1,1,1", options="header"]
+|===
+| Тип СУБД 
+| Single 
+| Master-Replica 
+| Кластер
+
+| PostgresPro Enterprise
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
+
+| PostgresPro Enterprise 1C 
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline") 
+
+| PostgresPro Standard
+| ![](/ru/assets/check.svg "inline") 
+| В разработке 
+| В разработке
+
+| MySQL
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
+
+| Tarantool
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
+
+| PostgreSQL
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline") 
+|
+| ClickHouse
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+| Redis
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
+
+| MongoDB
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
+
+| OpenSearch
+| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
+|===

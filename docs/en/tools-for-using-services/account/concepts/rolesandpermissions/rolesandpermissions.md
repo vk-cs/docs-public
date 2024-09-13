@@ -133,22 +133,103 @@ Some of the actions below are available only in the certain state of a cluster. 
 
 </info>
 
-<!-- prettier-ignore -->
-| Operation/Role                                       |  Kubernetes<br>administrator | Kubernetes<br>operator | Kubernetes<br>auditor | Viewer |
-|------------------------------------------------------| ---------------------------  | ---------------------- | --------------------- | ------ |
-| Create a cluster                                     | &#10003; | —        | —        | — |
-| Delete a cluster                                     | &#10003; | —        | —        | — |
-| Start a cluster                                      | &#10003; | &#10003; | —        | — |
-| Stop a cluster                                       | &#10003; | &#10003; | —        | — |
-| Show information about<br>a cluster and node groups  | &#10003; | &#10003; | &#10003; | &#10003; |
-| Get kubeconfig                                       | &#10003; | &#10003; | &#10003; | — |
-| Get the secret to access<br>the Kubernetes Dashboard | &#10003; | &#10003; | &#10003; | &#10003; |
-| Update version                                       | &#10003; | &#10003; | —        | — |
-| Change the virtual machine type                      | &#10003; | &#10003; | —        | — |
-| Change the size of the Prometheus disk               | &#10003; | &#10003; | —        | — |
-| Add a node group                                     | &#10003; | &#10003; | —        | — |
-| Delete a node group                                  | &#10003; | &#10003; | —        | — |
-| Change scaling settings                              | &#10003; | &#10003; | —        | — |
-| Change Labels and Taints                             | &#10003; | &#10003; | —        | — |
-| Install/delete an add-on                           | &#10003; | &#10003; | —        | — |
-<!-- prettier-ignore -->
+[cols="2,1,1,1,1"]
+|===
+.2+| Operations
+4+| Roles
+
+| Kubernetes administrator 
+| Kubernetes operator 
+| Kubernetes auditor 
+| Viewer
+
+| Create a cluster
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline") 
+
+| Delete a cluster
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+
+| Start a cluster
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+
+| Stop a cluster
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline") 
+| ![](/en/assets/no.svg "inline") 
+
+| Show information about a cluster and node groups
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline")
+
+| Get kubeconfig
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline")
+
+| Get the secret to access the Kubernetes Dashboard 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline")
+
+| Update version
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline") 
+
+| Change the virtual machine type
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+
+| Change the size of the Prometheus disk
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline") 
+
+| Add a node group
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+
+| Delete a node group
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+
+| Change scaling settings
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+
+| Change Labels and Taints
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+
+| Install and delete an add-on
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+|===
