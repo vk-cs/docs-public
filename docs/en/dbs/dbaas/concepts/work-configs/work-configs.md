@@ -38,15 +38,60 @@ An instance in the **Cluster** configuration cannot be started, restarted, or st
 
 ## Available configurations for DBMS types
 
-| DBMS type | Single | Master-Replica | Cluster |
-| --------------------------| -------- | ---- | ------ |
-| PostgresPro Enterprise    | &#10003; | &#10003; | &#10003; |
-| PostgresPro Enterprise 1C | &#10003; | &#10003; | &#10003; |
-| PostgresPro Standard      | &#10003; | In development| In development |
-| MySQL                     | &#10003; | &#10003; | &#10003; |
-| Tarantool                 | &#10003; | —  | &#10003; |
-| PostgreSQL                | &#10003; | &#10003;  | &#10003; |
-| ClickHouse                | &#10003; | — | &#10003; |
-| Redis                     | &#10003; | — | &#10003; |
-| MongoDB                   | &#10003; | —  | &#10003; |
-| OpenSearch                | — | — | &#10003; |
+[cols="1,1,1,1", options="header"]
+|===
+| DBMS type 
+| Single 
+| Master-Replica 
+| Cluster
+
+| PostgresPro Enterprise
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+
+| PostgresPro Enterprise 1C 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+
+| PostgresPro Standard
+| ![](/en/assets/check.svg "inline") 
+| In development
+| In development
+
+| MySQL
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+
+| Tarantool
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline") 
+| ![](/en/assets/check.svg "inline")
+
+| PostgreSQL
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+
+| ClickHouse
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline") 
+| ![](/en/assets/check.svg "inline")
+
+| Redis
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline") 
+| ![](/en/assets/check.svg "inline") 
+
+| MongoDB
+| ![](/en/assets/check.svg "inline") 
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/check.svg "inline")
+
+| OpenSearch
+| ![](/en/assets/no.svg "inline") 
+| ![](/en/assets/no.svg "inline") 
+| ![](/en/assets/check.svg "inline")
+|===
