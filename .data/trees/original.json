@@ -10170,6 +10170,21 @@
     ]
   },
   {
+    "uuid": "aff6059a-18ea-4340-8a24-30feca4c44be",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/intro/it-security/penetration-testing-policy",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/it-security/penetration-testing-policy/penetration-testing-policy.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/it-security/penetration-testing-policy/penetration-testing-policy.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "20f6c792-cd60-4db1-be2c-059aac7181af",
     "lang": "ru",
     "type": "ARTICLE",
