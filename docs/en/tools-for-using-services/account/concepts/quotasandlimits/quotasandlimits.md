@@ -47,22 +47,22 @@ The following is a list of quotas and limits for the Moscow region.
 | Hard
 
 | The number of projects the user has
-| —
+| ![](/en/assets/no.svg "inline")
 | 5 pcs.
 | 100 pcs.
-| &#10003;
+| ![](/en/assets/check.svg "inline")
 
 | Number of administrators in the project
-| —
+| ![](/en/assets/no.svg "inline")
 | 50 people
 | 50 people
-| &#10003;
+| ![](/en/assets/check.svg "inline")
 
 | Number of SSH key pairs
 | `key-pairs` in CLI
 | 100 key pairs
 | not limited
-| —
+| ![](/en/assets/no.svg "inline")
 
 |===
 
@@ -83,7 +83,7 @@ The following is a list of quotas and limits for the Moscow region.
 | `instances`
 | 6 pcs.
 | 1000 pcs.
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of vCPUs in the project
 | **vCPU**
@@ -113,10 +113,10 @@ No more than 1000 virtual machines can be displayed in the management console.
 
 | Parameter                                       | Limit         | Hard |
 |-------------------------------------|-------|-----------------------|
-| Number of vCPUs per instance           | 32 pcs.  | —          |
-| Number of High-Freq vCPUs per instance | 24 pcs.      | — |
-| Number of GPUs per instance            | 4 pcs.       | &#10003; |
-| The amount of RAM per instance         | 1024 GB     | — |
+| Number of vCPUs per instance           | 32 pcs.  | ![](/en/assets/no.svg "inline")          |
+| Number of High-Freq vCPUs per instance | 24 pcs.      | ![](/en/assets/no.svg "inline") |
+| Number of GPUs per instance            | 4 pcs.       | ![](/en/assets/check.svg "inline") |
+| The amount of RAM per instance         | 1024 GB     | ![](/en/assets/no.svg "inline") |
 
 Limits on the number of processors (vCPU and High-Freq vCPU) and RAM are associated with the limitations of standard hypervisors. If you need more vCPUs or High-Freq vCPUs, contact [technical support](mailto:support@mcs.mail.ru) and order a dedicated hypervisor with the necessary characteristics.
 
@@ -128,11 +128,11 @@ There are no quotas for the Cloud Containers service. The use of this service is
 
 | Parameter                                         | Limit              | Hard |
 |--------------------------------------------------|--------------------|---------|
-| Number of [nodes](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) in the node group | 100 pcs.            | &#10003; |
-| Number of node groups in the cluster                | 50 pcs.             | — |
-| Number of pods at the node                  | 110 pcs.            | — |
-| The number of entities (ReplicaSet, StatefulSet, namespaces, etc.) in the cluster | 10000 pcs.          | — |
-| Length of the k8s cluster name and node group | 24 characters         | &#10003; |
+| Number of [nodes](/en/kubernetes/k8s/concepts/architecture#cluster_topologies) in the node group | 100 pcs.            | ![](/en/assets/check.svg "inline") |
+| Number of node groups in the cluster                | 50 pcs.             | ![](/en/assets/no.svg "inline") |
+| Number of pods at the node                  | 110 pcs.            | ![](/en/assets/no.svg "inline") |
+| The number of entities (ReplicaSet, StatefulSet, namespaces, etc.) in the cluster | 10000 pcs.          | ![](/en/assets/no.svg "inline") |
+| Length of the k8s cluster name and node group | 24 characters         | ![](/en/assets/check.svg "inline") |
 
 Non-rigid limits can be exceeded without contacting technical support. Recommendations for these and other parameters in [official Kubernetes documentation](https://kubernetes.io/docs/setup/best-practices/cluster-large/). The limit on the number of nodes in a node group is not due to the requirements of Kubernetes, the limit is introduced at the VK Cloud level.
 
@@ -218,13 +218,13 @@ Quotas for the total number of disks in the project take into account all types 
 
 | Parameter                  | Limit | Hard |
 |---------------------------|---------|---|
-| Number of disks per instance  | 25 pcs.| &#10003; |
-| Size of one HDD              | 50 TB | &#10003; |
-| Size of one SSD disk              | 10 TB | &#10003; |
-| Size of one High-IOPS SSD disk    | 2 TБ via VK Cloud management console, 5 TB via OpenStack CLI | — |
-| Size of a single image                 | 500 GB | — |
-| Total volume of images                  | 2 TB | — |
-| Total number of disks snapshots         | 200 pcs. | — |
+| Number of disks per instance  | 25 pcs.| ![](/en/assets/check.svg "inline") |
+| Size of one HDD              | 50 TB | ![](/en/assets/check.svg "inline") |
+| Size of one SSD disk              | 10 TB | ![](/en/assets/check.svg "inline") |
+| Size of one High-IOPS SSD disk    | 2 TБ via VK Cloud management console, 5 TB via OpenStack CLI | ![](/en/assets/no.svg "inline") |
+| Size of a single image                 | 500 GB | ![](/en/assets/no.svg "inline") |
+| Total volume of images                  | 2 TB | ![](/en/assets/no.svg "inline") |
+| Total number of disks snapshots         | 200 pcs. | ![](/en/assets/no.svg "inline") |
 
 The limit on the number of disks per instance (25 pcs.) is associated with PCI bus limitations.
 
@@ -250,31 +250,31 @@ The limit on the number of disks snapshots (200 pcs.) can be exceeded by contact
 | **NFS/CIFS file storage**
 | 10 pcs.
 | not limited
-| —
+| ![](/en/assets/no.svg "inline")
 
 | The total volume of all file storages in the project
 | **Size of NFS/CIFS file shares**
 | 200 GB
 | not limited
-| —
+| ![](/en/assets/no.svg "inline")
 
 | The total volume of snapshots of file storages in the project
 | **NFS/CIFS snapshot size**
 | 200 GB
 | not limited
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of file storage networks
 | **NFS / CIFS file storage networks**
 | 5 pcs.
 | not limited
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Size of one file storage
-| —
-| —
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 | 50 TB
-| &#10003;
+| ![](/en/assets/check.svg "inline")
 
 |===
 
@@ -307,21 +307,21 @@ The limits in this section are determined by the requirements of operation, they
 | `networks`
 | 10 pcs.
 | 20 pcs
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of subnets in the project
 | **Sprut subnets**
 | `subnets`
 | 10 pcs.
 | 20 pcs
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of floating IP addresses
 | **Sprut floating IP addresses**
 | `floating-ips`
 | 6 pcs.
 | 50 pcs.
-| —
+| ![](/en/assets/no.svg "inline")
 
 |===
 
@@ -342,21 +342,21 @@ The limits in this section are determined by the requirements of operation, they
 | `networks`
 | 10 pcs.
 | 20 pcs
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of subnets in the project
 | **Neutron subnets**
 | `subnets`
 | 10 pcs.
 | 20 pcs
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of floating IP addresses
 | **Neutron floating IP addresses**
 | `floating-ips`
 | 6 pcs.
 | 50 pcs.
-| —
+| ![](/en/assets/no.svg "inline")
 
 |===
 
@@ -389,42 +389,42 @@ Even if the quota for the total number of subnets in the project has been increa
 | `routers`
 | 12 pcs.
 | 20 pcs.
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of advanced routers
 | **Advanced routers**
 | `dc_router`
 | 3 шт.
 | 3 шт.
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of security groups in the project
 | **Sprut firewall groups**
 | `secgroups`
 | 12 pcs.
 | not limited
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of security rules in the project
 | **Sprut firewall rules**
 | `secgroup-rules`
 | 200 pcs.
 | not limited
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of ports in the project
 | **Sprut ports**
 | `ports`
 | 120 pcs.
 | 500 pcs.
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of external Neutron or Sprut ports in the project
 | **Sprut external network ports**
 | `external_port`
 | 5 pcs.
 | 6 pcs.
-| —
+| ![](/en/assets/no.svg "inline")
 
 |===
 
@@ -445,35 +445,35 @@ Even if the quota for the total number of subnets in the project has been increa
 | `routers`
 | 12 pcs.
 | 20 pcs.
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of security groups in the project
 | **Neutron firewall groups**
 | `secgroups`
 | 12 pcs.
 | not limited
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of security rules in the project
 | **Neutron firewall rules**
 | `secgroup-rules`
 | 200 pcs.
 | not limited
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of ports in the project
 | **Neutron ports**
 | `ports`
 | 120 pcs.
 | 500 pcs.
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of external Neutron or Sprut ports in the project
 | **Neutron external network ports**
 | `external_port`
 | 5 pcs.
 | 6 pcs.
-| —
+| ![](/en/assets/no.svg "inline")
 
 |===
 
@@ -494,14 +494,14 @@ Even if the quota for the total number of subnets in the project has been increa
 | `load_balancers`
 | 12 pcs.
 | 20 pcs.
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Number of balancing rules per load balancer
-| —
-| —
-| —
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 | 10 pcs. via PA, 30 pcs. via CLI
-| —
+| ![](/en/assets/no.svg "inline")
 
 |===
 
@@ -516,10 +516,10 @@ The quota **Neutron balancers**, which is displayed in VK Cloud management conso
 
 | Parameter                                     | Quota in CLI | Basic quota  | Limit | Hard |
 |-----------------------------------------------|---------------------------------|--------------------|--|--|
-| Number of backups                             | `backups`| — | not limited | — |
-| Number of snapshots                           | [quota](../../service-management/project-settings/manage#viewing_project_quotas)  `snapshots` in the extended list | 200 pcs. | not limited | — |
-| Size of one backup                  | — | — | 320 TB        | — |
-| Total volume of images                           | — | — | 2 TB          | — |
+| Number of backups                             | `backups`| ![](/en/assets/no.svg "inline") | not limited | ![](/en/assets/no.svg "inline") |
+| Number of snapshots                           | [quota](../../service-management/project-settings/manage#viewing_project_quotas)  `snapshots` in the extended list | 200 pcs. | not limited | ![](/en/assets/no.svg "inline") |
+| Size of one backup                  | ![](/en/assets/no.svg "inline") | ![](/en/assets/no.svg "inline") | 320 TB        | ![](/en/assets/no.svg "inline") |
+| Total volume of images                           | ![](/en/assets/no.svg "inline") | ![](/en/assets/no.svg "inline") | 2 TB          | ![](/en/assets/no.svg "inline") |
 
 The limit on the backup size (320 TB) is due to the limit on the file size in the Object Storage service (S3), this service is used to store backups. This limit can be [increased](../../service-management/project-settings/manage#increasing_project_quotas) by contacting technical support.
 
@@ -536,38 +536,38 @@ There are no quotas for the Cloud Storage service. The use of these services is 
 
 | Number of accounts
 | 25 pcs.
-| —
-| &#10003;
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/check.svg "inline")
 
 | Number of buckets
 | 100 pcs.
-| —
-| &#10003;
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/check.svg "inline")
 
 | Number of objects in the bucket
 | not limited
-| —
-| —
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 | Number of objects in the bucket
 | 32 GB, 320 TB
 | 32 GB for a regular file, 320 TB for a multipart
-| &#10003;
+| ![](/en/assets/check.svg "inline")
 
 | Size of one bucket
 | not limited
-| —
-| —
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 | Rate limit: normal requests
 | 1000 request/sec
 | unlimited, maximum known value among all projects: 9000 requests/sec
-| —
+| ![](/en/assets/no.svg "inline")
 
 | Rate limit: listing requests
 | 250 request/sec
 | unlimited, maximum known value among all projects: 500 requests/sec
-| —
+| ![](/en/assets/no.svg "inline")
 
 |===
 

@@ -12,95 +12,95 @@ VK Cloud поддерживает установку расширений и п�
 | MongoDB
 
 | Prometheus для сервера
-| &#10003;
-| &#10003;
-| &#10003;
-| &#10003;
-| —
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 | Prometheus для серверных метрик (node_exporter)
-| &#10003;
-| &#10003;
-| &#10003;
-| &#10003;
-| &#10003;
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 | Zabbix Agent (zabbix)
-| &#10003;
-| &#10003;
-| &#10003;
-| &#10003;
-| &#10003;
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
 
 | Сервис для оптимизации Postgres (holistic)
-| &#10003; 
-| —
-| —
-| —
-| —
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 | Популярные Hints для планера PostgreSQL (pg_hint_plan)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 | Набор расширений (postgres_extensions)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 | Инструмент для анализа трафика SQL и построения графиков (pgbadger)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 | Расширение для хранения данных временного ряда (timescaledb)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 | Расширение для создания и управления наборами разделов таблиц (pg_partman)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 | Расширение, собирающее статистику по системным метрикам (pg_stat_kcache)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 | Расширение, поддерживающее язык запросов к данным jsonb (jsquery)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 | Поддержка географических объектов в Postgres (postgis)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 | Отслеживание статистики выполнения операторов SQL (pg_stat_statements)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 
 |===
 

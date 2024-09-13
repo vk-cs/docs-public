@@ -12,95 +12,95 @@ Available extensions:
 | MongoDB
 
 | Prometheus for the server
-| &#10003;
-| &#10003;
-| &#10003;
-| &#10003;
-| —
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 | Prometheus for server metrics (node_exporter)
-| &#10003;
-| &#10003;
-| &#10003;
-| &#10003;
-| &#10003;
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
 
 | Zabbix Agent (zabbix)
-| &#10003;
-| &#10003;
-| &#10003;
-| &#10003;
-| &#10003;
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/check.svg "inline")
 
 | Postgres optimization service (holistic)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 | Popular Hints for the PostgreSQL glider (pg_hint_plan)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 | Set of extensions (postgres_extensions)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 | A tool for SQL traffic analysis and charting (pgbadger)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 | Extension for storing time series data (timescaledb)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 | Extension for creating and managing sets of table partitions (pg_partman)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 | An extension that collects statistics on system metrics (pg_stat_kcache) (pg_stat_kcache)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 | An extension that supports the jsonb data query language (jsquery)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 | Support for geographical objects in Postgres (postgis)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 | Tracking SQL statement execution statistics (pg_stat_statements)
-| &#10003;
-| —
-| —
-| —
-| —
+| ![](/en/assets/check.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
+| ![](/en/assets/no.svg "inline")
 
 |===
 
