@@ -36,12 +36,12 @@ The following roles are provided in the service:
 
 ## Available peripherals
 
-| Peripheral device | Windows OS | Linux OS |
-| --- | --- | --- |
-| Print | + | + |
-| Files | + | + |
-| Microphone | + | + |
-| Clipboard | + | + |
+| Peripheral device | Windows OS                         | Linux OS                           |
+|-------------------|------------------------------------|------------------------------------|
+| Print             | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
+| Files             | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
+| Microphone        | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
+| Clipboard         | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
 
 The available peripherals are set when [adding](../../service-management/desktops-pool/add/) a desktop pool.
 
