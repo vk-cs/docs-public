@@ -38,17 +38,70 @@ _Шаг расширения_ — величина в ГБ, на которую 
 
 В таблице ниже указано, для каких [конфигураций](../work-configs/) и версий СУБД поддерживается автомасштабирование дисков.
 
-| Тип СУБД | Single | Master-Replica | Кластер |
-| -------------------------------------- | - | - | - |
-| PostgresPro Enterprise (все версии)    | + | + | + |
-| PostgresPro Enterprise 1C (все версии) | + | + | + |
-| PostgresPro Standard (все версии)      | + | — | — |
-| MySQL (все версии)                     | + | + | + |
-| Tarantool                              | + | — | — |
-| PostgreSQL (все версии)                | + | + | + |
-| ClickHouse (все версии)                | + | + | + |
-| Redis 5                                | + | — | — |
-| Redis 6                                | — | — | — |
-| MongoDB 4.0                            | + | — | — |
-| MongoDB 6                              | — | — | — |
-| OpenSearch 2                           | — | — | — |
+[cols="2,1,1,1", options="header"]
+|===
+| Тип СУБД 
+| Single 
+| Master-Replica 
+| Кластер
+
+| PostgresPro Enterprise (все версии)    
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline")
+
+| PostgresPro Enterprise 1C (все версии) 
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline") 
+
+| PostgresPro Standard (все версии)      
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+
+| MySQL (все версии)
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline") 
+
+| Tarantool
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+
+| PostgreSQL (все версии)
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline") 
+
+| ClickHouse (все версии)
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/check.svg "inline") 
+
+| Redis 5
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+
+| Redis 6
+| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+
+| MongoDB 4.0
+| ![](/ru/assets/check.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+
+| MongoDB 6
+| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+
+| OpenSearch 2
+| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline") 
+| ![](/ru/assets/no.svg "inline")
+|===
