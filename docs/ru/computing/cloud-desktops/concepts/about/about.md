@@ -36,12 +36,12 @@
 
 ## Доступные периферийные устройства
 
-| Периферийное устройство | ОС Windows | ОС Linux |
-| --- | --- | --- |
-| Печать | + | + |
-| Файлы | + | + |
-| Микрофон | + | + |
-| Буфер обмена | + | + |
+| Периферийное устройство | ОС Windows                         | ОС Linux                           |
+|-------------------------|------------------------------------|------------------------------------|
+| Печать                  | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
+| Файлы                   | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
+| Микрофон                | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
+| Буфер обмена            | ![](/ru/assets/check.svg "inline") | ![](/ru/assets/check.svg "inline") |
 
 Доступные периферийные устройства задаются при [добавлении](../../service-management/desktops-pool/add/) пула рабочих столов.
 
