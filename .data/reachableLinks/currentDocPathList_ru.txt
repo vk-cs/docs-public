@@ -789,3 +789,9 @@
 /docs/ru/cases/sprut-migration
 /docs/ru/cases/sprut-migration/about
 /docs/ru/cases/sprut-migration/iaas
+/docs/ru/cases/sprut-migration/paas
+/docs/ru/cases/sprut-migration/paas/balancers
+/docs/ru/cases/sprut-migration/paas/dns
+/docs/ru/cases/sprut-migration/paas/fs-manage
+/docs/ru/cases/sprut-migration/paas/clusters
+/docs/ru/cases/sprut-migration/paas/db

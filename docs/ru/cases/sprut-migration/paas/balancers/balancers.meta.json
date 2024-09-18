@@ -1,10 +1,11 @@
 {
-    "title": "Миграция балансировщиков",
-    "pageDescription": "Как перенести балансировщики в SDN Sprut.",
-    "shortDescription": "Как перенести балансировщики в SDN Sprut",
-    "metaTitle": "Миграция балансировщиков",
-    "metaDescription": "Как перенести балансировщики в SDN Sprut",
-    "sectionTitle": "Миграция балансировщиков",
-    "icon": "",
-    "weight": 2
-  }
+  "title": "Миграция балансировщиков",
+  "pageDescription": "Как перенести балансировщики в SDN Sprut.",
+  "shortDescription": "Как перенести балансировщики в SDN Sprut",
+  "metaTitle": "Миграция балансировщиков",
+  "metaDescription": "Как перенести балансировщики в SDN Sprut",
+  "sectionTitle": "Миграция балансировщиков",
+  "icon": "",
+  "weight": 2,
+  "uuid": "411336c3-5c8b-42c9-b90a-4d609ba9fe65"
+}

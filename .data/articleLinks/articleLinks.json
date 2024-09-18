@@ -19665,6 +19665,10 @@
   ],
   [
     "/ru/cases/sprut-migration/about",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/paas"
+  ],
+  [
+    "/ru/cases/sprut-migration/about",
     "http://localhost:3000/docs/ru/cases/sprut-migration/iaas"
   ],
   [
@@ -19693,6 +19697,14 @@
   ],
   [
     "/ru/cases/sprut-migration/iaas",
+    "http://localhost:3000/docs/networks/vnet/service-management/vpn#udalenie_vpn_tunnelya"
+  ],
+  [
+    "/ru/cases/sprut-migration/iaas",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/vpn#dobavlenie_vpn_tunnelya"
+  ],
+  [
+    "/ru/cases/sprut-migration/iaas",
     "http://localhost:3000/docs/ru/networks/vnet/service-management/floating-ip#dobavlenie_plavayushchego_ip_adresa_v_proekt"
   ],
   [
@@ -19718,5 +19730,121 @@
   [
     "/ru/cases/sprut-migration/iaas",
     "http://localhost:3000/docs/ru/networks/vnet/service-management/router#udalenie_marshrutizatora"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/balancers",
+    "http://localhost:3000/docs/ru/networks/balancing/service-management/manage-lb#dobavlenie_balansirovshchika_nagruzki"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/balancers",
+    "http://localhost:3000/docs/ru/networks/balancing/service-management/manage-lb#upravlenie_pravilami_balansirovki"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/balancers",
+    "http://localhost:3000/docs/ru/networks/balancing/service-management/manage-lb#udalenie_balansirovshchika_nagruzki"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/balancers",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/how-to-guides/vnet/lb#sozdanie_balansirovshchika_nagruzki"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/fs-manage",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/iaas"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/fs-manage",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/paas/balancers"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/fs-manage",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/paas/dns"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/fs-manage",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#sozdanie_faylovogo_hranilishcha"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/fs-manage",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/fs-manage",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-add-net"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/fs-manage",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/fs-manage#podklyuchenie_faylovogo_hranilishcha"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/fs-manage",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/clusters",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/iaas"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/clusters",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/paas/balancers"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/clusters",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/paas/dns"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/clusters",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/create-cluster"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/clusters",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/how-to-guides/velero-backup"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/clusters",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/connect/kubectl#podklyuchenie_k_klasteru"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/clusters",
+    "http://localhost:3000/docs/ru/networks/vnet/how-to-guides/advanced-router"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/clusters",
+    "http://localhost:3000/docs/ru/networks/vnet/how-to-guides/advanced-router#6_nastroyte_staticheskie_marshruty_mezhdu_setyami"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/clusters",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/connect/kubectl#proverka_podklyucheniya_k_klasteru"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/clusters",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/service-management/manage-cluster#udalit_klaster"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/db",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/iaas"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/db",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/paas/balancers"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/db",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/paas/dns"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/db",
+    "http://localhost:3000/docs/ru/dbs/dbaas/how-to-guides/db-migration"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/db",
+    "http://localhost:3000/docs/ru/storage/backups/service-management/db-backup/db-recover-backup"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/db",
+    "http://localhost:3000/docs/ru/networks/vnet/how-to-guides/advanced-router"
+  ],
+  [
+    "/ru/cases/sprut-migration/paas/db",
+    "http://localhost:3000/docs/ru/dbs/dbaas/service-management/manage-instance/clickhouse#udalenie_instansa_bd"
   ]
 ]
