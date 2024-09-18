@@ -1,10 +1,11 @@
 {
-    "title": "Миграция кластеров",
-    "pageDescription": "Как перенести кластеры Kubernetes в SDN Sprut.",
-    "shortDescription": "Как перенести кластеры Kubernetes в SDN Sprut",
-    "metaTitle": "Миграция кластеров",
-    "metaDescription": "Как перенести кластеры Kubernetes в SDN Sprut",
-    "sectionTitle": "Миграция кластеров",
-    "icon": "",
-    "weight": 5
-  }
+  "title": "Миграция кластеров",
+  "pageDescription": "Как перенести кластеры Kubernetes в SDN Sprut.",
+  "shortDescription": "Как перенести кластеры Kubernetes в SDN Sprut",
+  "metaTitle": "Миграция кластеров",
+  "metaDescription": "Как перенести кластеры Kubernetes в SDN Sprut",
+  "sectionTitle": "Миграция кластеров",
+  "icon": "",
+  "weight": 5,
+  "uuid": "ea85d4d4-b628-45f7-8e9a-95d4100281ba"
+}

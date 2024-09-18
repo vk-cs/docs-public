@@ -21841,5 +21841,95 @@
     "buildPoints": [
       "common"
     ]
+  },
+  {
+    "uuid": "4eee034c-edb8-4b07-b555-af9b6c574809",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 4,
+    "partialPath": "/ru/cases/sprut-migration/paas",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/paas/paas.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/paas/paas.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "411336c3-5c8b-42c9-b90a-4d609ba9fe65",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/cases/sprut-migration/paas/balancers",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/paas/balancers/balancers.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/paas/balancers/balancers.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "4494dc30-0e95-43a7-86c3-bbdd29eca119",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/cases/sprut-migration/paas/dns",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/paas/dns/dns.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/paas/dns/dns.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "9b117d40-44af-4923-b1b0-884a1d15cb08",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/cases/sprut-migration/paas/fs-manage",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/paas/fs-manage/fs-manage.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/paas/fs-manage/fs-manage.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "ea85d4d4-b628-45f7-8e9a-95d4100281ba",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/cases/sprut-migration/paas/clusters",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/paas/clusters/clusters.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/paas/clusters/clusters.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "7f76578e-c8bc-40e1-bf08-c3fe0665c1e8",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/cases/sprut-migration/paas/db",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/paas/db/db.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/paas/db/db.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
   }
 ]

@@ -1,10 +1,11 @@
 {
-    "title": "Миграция базы данных",
-    "pageDescription": "Как перенести базы данных в SDN Sprut.",
-    "shortDescription": "Как перенести базы данных в SDN Sprut",
-    "metaTitle": "Миграция базы данных",
-    "metaDescription": "Как перенести базы данных в SDN Sprut",
-    "sectionTitle": "Миграция базы данных",
-    "icon": "",
-    "weight": 6
-  }
+  "title": "Миграция базы данных",
+  "pageDescription": "Как перенести базы данных в SDN Sprut.",
+  "shortDescription": "Как перенести базы данных в SDN Sprut",
+  "metaTitle": "Миграция базы данных",
+  "metaDescription": "Как перенести базы данных в SDN Sprut",
+  "sectionTitle": "Миграция базы данных",
+  "icon": "",
+  "weight": 6,
+  "uuid": "7f76578e-c8bc-40e1-bf08-c3fe0665c1e8"
+}

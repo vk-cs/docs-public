@@ -1,10 +1,11 @@
 {
-    "title": "Миграция файловых хранилищ",
-    "pageDescription": "Как перенести файловые хранилища в SDN Sprut.",
-    "shortDescription": "Как перенести файловые хранилища в SDN Sprut",
-    "metaTitle": "Миграция файловых хранилищ",
-    "metaDescription": "Как перенести файловые хранилища в SDN Sprut",
-    "sectionTitle": "Миграция файловых хранилищ",
-    "icon": "",
-    "weight": 4
-  }
+  "title": "Миграция файловых хранилищ",
+  "pageDescription": "Как перенести файловые хранилища в SDN Sprut.",
+  "shortDescription": "Как перенести файловые хранилища в SDN Sprut",
+  "metaTitle": "Миграция файловых хранилищ",
+  "metaDescription": "Как перенести файловые хранилища в SDN Sprut",
+  "sectionTitle": "Миграция файловых хранилищ",
+  "icon": "",
+  "weight": 4,
+  "uuid": "9b117d40-44af-4923-b1b0-884a1d15cb08"
+}
