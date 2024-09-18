@@ -1,16 +1,11 @@
 {
-  "title": "Миграция сервисов VK Cloud",
+  "title": "Миграция платформенных сервисов",
   "pageDescription": "Как перенести балансировщики, IPsec-туннели, файловые хранилища, кластеры Kubernetes и базы данных в SDN Sprut.",
   "shortDescription": "Как перенести балансировщики, IPsec-туннели, файловые хранилища, кластеры Kubernetes и базы данных в SDN Sprut",
-  "metaTitle": "Миграция сервисов VK Cloud",
+  "metaTitle": "Миграция платформенных сервисов VK Cloud",
   "metaDescription": "Как перенести балансировщики, IPsec-туннели, файловые хранилища, кластеры Kubernetes и базы данных в SDN Sprut",
-  "sectionTitle": "Миграция сервисов VK Cloud",
+  "sectionTitle": "Миграция платформенных сервисов",
   "icon": "",
   "weight": 4,
-  "build": {
-    "for": [
-      "dontbuild"
-    ]
-  },
   "uuid": "4eee034c-edb8-4b07-b555-af9b6c574809"
 }
