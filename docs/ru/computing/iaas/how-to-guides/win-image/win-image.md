@@ -92,6 +92,12 @@
 
 1. Откройте созданный файл и проверьте параметры:
 
+    <info>
+
+    Виртуальные машины, созданные на платформе VK Cloud, используют эмуляцию BIOS. Эмуляция UEFI не поддерживается.
+
+    </info>
+
     ```ini
     wim_file_path=D:\Temp\install.wim
     image_name=Windows Server 2016 SERVERSTANDARDCORE
