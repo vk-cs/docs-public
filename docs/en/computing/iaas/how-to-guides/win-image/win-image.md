@@ -93,6 +93,12 @@ The installation image may contain several editions of the operating system. Sin
 
 1. Open the created file and check the parameters:
 
+    <info>
+
+    Virtual machines created on the VK Cloud platform use BIOS emulation. UEFI emulation is not supported.
+
+    </info>
+
     ```ini
     wim_file_path=D:\Temp\install.wim
     image_name=Windows Server 2016 SERVERSTANDARDCORE
