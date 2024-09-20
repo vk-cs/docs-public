@@ -43,13 +43,13 @@ ACLs can contain up to 100 permissions.
 
 ## Recipient of rights
 
-The recipient of rights can be an VK Cloud project or one of the global VK Cloud groups. Rights can be granted to an VK Cloud project using the project ID address (mcs_pid) or the canonical user ID. Moreover, if you specify the project identifier in the request for access rights, then the service determines the canonical user ID for the corresponding project and adds it to the ACL. As a result, the ACL will always contain the canonical user ID for the project, not the project ID.
+The recipient of rights can be an VK Cloud project or one of the global VK Cloud groups. Rights can be granted to an VK Cloud project using the project ID address (PID) or the canonical user ID. Moreover, if you specify the project identifier in the request for access rights, then the service determines the canonical user ID for the corresponding project and adds it to the ACL. As a result, the ACL will always contain the canonical user ID for the project, not the project ID.
 
 To grant access rights, you must specify each recipient as a type = value pair, where type is one of the following:
 
-- id - the canonical user ID of the VK Cloud account
+- id — the canonical user ID of the VK Cloud account
 - uri is a predefined group to which permission is granted
-- emailAddress - VK Cloud project ID
+- emailAddress — VK Cloud project ID (PID)
 
 **Example: project ID**
 
@@ -65,9 +65,10 @@ When granting other VK Cloud accounts access to their resources, please note tha
 
 </warn>
 
-## Canonical user ID
+## {heading(Canonical user ID)[id=user-id]}
 
 The canonical user ID is associated with the VK Cloud account. It's a long string like `eab55955-ebdb-4f18-a94d-f3558ff150da`.
+Canonical user ID is a unique identifier consisting of a set of characters. Example - `fcd68908-6c76-42d1-968b-82ae2a5a251d`. The format is not fixed, when you work with canonical user IDs, do not use transformations and bindings to the identifier format.
 
 It can be calculated using the command
 
@@ -83,9 +84,9 @@ If you make your bucket public (not recommended), any unauthenticated user can u
 
 </info>
 
-## Project ID
+## {heading(Project ID)[id=project-id]}
 
-Project ID (mcs_pid) - a unique parameter that characterizes a project on the VK Cloud platform. You can get it in your management console in the account information area.
+Project ID (mcs_pid) — a unique parameter that characterizes a project on the VK Cloud platform. You can get it in your management console in the account information area.
 
 The button located next to the project ID allows you to copy the parameter for convenience.
 
@@ -93,7 +94,7 @@ The button located next to the project ID allows you to copy the parameter for c
 
 Cloud Storage has a set of predefined groups. When granting access to an account to a group, one of the URIs is specified instead of the canonical user ID. The following predefined groups are available:
 
-**Authenticated Users** - a group of authorized users, represented by http://acs.amazonaws.com/groups/global/AuthenticatedUsers.
+**Authenticated Users** — a group of authorized users, represented by http://acs.amazonaws.com/groups/global/AuthenticatedUsers.
 
 All VK Cloud accounts are represented in this group. Permission to access this group allows any VK Cloud account to access the resource. However, all requests must be signed (authenticated).
 
@@ -103,7 +104,7 @@ When granting access to the Authenticated Users group of users, any authorized V
 
 </info>
 
-**All Users** - The All Users group, represented by http://acs.amazonaws.com/groups/global/AllUsers.
+**All Users** — The All Users group, represented by http://acs.amazonaws.com/groups/global/AllUsers.
 
 Permission to access this group allows anyone on the Internet to access the resource. Requests can be signed (authenticated) or unsigned (anonymous). Unsigned requests omit the Authentication header in the request.
 
@@ -113,7 +114,7 @@ It is highly recommended that you do not grant permission to the All Users group
 
 </warn>
 
-## Types of permits
+## {heading(Types of permits)[id=permissons]}
 
 The table lists the permission sets that Cloud Storage supports in the ACL. The ACL permission set is the same for object ACL and bucket ACL. These ACLs grant permissions for specific buckets or object operations. The table lists the permissions and describes what they mean in the context of objects and buckets.
 
