@@ -1,4 +1,4 @@
-A Cloud Containers cluster can be scaled by changing the number of its master nodes and worker nodes. This allows you to adapt the cluster to the changing needs of workloads ([workloads](https://kubernetes.io/docs/concepts/workloads/)).
+Scaling allows you to adapt the cluster to the changing needs of workloads ([workloads](https://kubernetes.io/docs/concepts/workloads/)).
 
 ## Types of scaling
 
