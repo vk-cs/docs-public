@@ -8685,6 +8685,21 @@
     ]
   },
   {
+    "uuid": "318b32c9-9810-43fe-9142-56c9391b9524",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/en/tools-for-using-services/terraform/how-to-guides/aws",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/aws/aws.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/tools-for-using-services/terraform/how-to-guides/aws/aws.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "89340d10-bfea-4c2c-a96a-eebaa42abb5c",
     "lang": "en",
     "type": "INTERMEDIATE",
@@ -20838,6 +20853,21 @@
     ]
   },
   {
+    "uuid": "91882e7d-88d8-417a-a757-be9e07e04cc1",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/aws/aws.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/tools-for-using-services/terraform/how-to-guides/aws/aws.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "c7b4e18d-fdec-4100-a8b6-01b3c8ffb544",
     "lang": "ru",
     "type": "INTERMEDIATE",
@@ -21925,6 +21955,36 @@
     "partialPath": "/ru/cases/sprut-migration/paas/db",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/paas/db/db.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/paas/db/db.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "41aa5cdf-6e4a-4725-8139-0803dd89a2ed",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/cases/sprut-migration/faq",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/faq/faq.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/faq/faq.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "25dac540-b3c0-4b97-87d5-5d7e132cfd66",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/cases/sprut-migration/troubleshooting",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/troubleshooting/troubleshooting.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/sprut-migration/troubleshooting/troubleshooting.md",
     "variables": {},
     "hidden": false,
     "version": null,

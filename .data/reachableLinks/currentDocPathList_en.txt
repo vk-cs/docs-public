@@ -576,6 +576,7 @@
 /docs/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance
 /docs/en/tools-for-using-services/terraform/how-to-guides/k8s
 /docs/en/tools-for-using-services/terraform/how-to-guides/k8s/create
+/docs/en/tools-for-using-services/terraform/how-to-guides/aws
 /docs/en/tools-for-using-services/terraform/how-to-guides/mlplatform
 /docs/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub
 /docs/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow

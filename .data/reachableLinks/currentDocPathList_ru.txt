@@ -722,6 +722,7 @@
 /docs/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance
 /docs/ru/tools-for-using-services/terraform/how-to-guides/k8s
 /docs/ru/tools-for-using-services/terraform/how-to-guides/k8s/create
+/docs/ru/tools-for-using-services/terraform/how-to-guides/aws
 /docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform
 /docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub
 /docs/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow
@@ -795,3 +796,5 @@
 /docs/ru/cases/sprut-migration/paas/fs-manage
 /docs/ru/cases/sprut-migration/paas/clusters
 /docs/ru/cases/sprut-migration/paas/db
+/docs/ru/cases/sprut-migration/faq
+/docs/ru/cases/sprut-migration/troubleshooting

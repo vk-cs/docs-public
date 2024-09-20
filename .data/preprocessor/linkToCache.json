@@ -79,6 +79,21 @@
     "full": "Удаление общей сети",
     "text": "Удаление общей сети"
   },
+  "user-id": {
+    "number": null,
+    "full": "Выдача прав по идентификатору пользователя",
+    "text": "Выдача прав по идентификатору пользователя"
+  },
+  "project-id": {
+    "number": null,
+    "full": "Выдача прав по идентификатору проекта",
+    "text": "Выдача прав по идентификатору проекта"
+  },
+  "permissons": {
+    "number": null,
+    "full": "Виды разрешений",
+    "text": "Виды разрешений"
+  },
   "features_of_installing_addons": {
     "number": null,
     "full": "Features of installing add-ons",
