@@ -1,4 +1,4 @@
-Кластер Cloud Containers можно масштабировать, изменяя количество его master-узлов и worker-узлов. Это позволяет адаптировать кластер к меняющимся потребностям рабочих нагрузок ([workloads](https://kubernetes.io/docs/concepts/workloads/)).
+Масштабирование позволяет адаптировать кластер к меняющимся потребностям рабочих нагрузок ([workloads](https://kubernetes.io/docs/concepts/workloads/)).
 
 ## Типы масштабирования
 
