@@ -7,10 +7,5 @@
   "sectionTitle": "Вопросы и ответы",
   "icon": "",
   "weight": 10,
-  "build": {
-    "for": [
-      "dontbuild"
-    ]
-  },
   "uuid": "41aa5cdf-6e4a-4725-8139-0803dd89a2ed"
 }
