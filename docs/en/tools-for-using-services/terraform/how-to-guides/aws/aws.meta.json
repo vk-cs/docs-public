@@ -1,10 +1,11 @@
 {
-    "title": "Cloud Storage",
-    "pageDescription": "How to work with the Cloud Storage service using Terraform.",
-    "shortDescription": "How to use Terraform to manage buckets and objects in the Cloud Storage service",
-    "metaTitle": "Cloud Storage",
-    "metaDescription": "",
-    "sectionTitle": "Cloud Storage",
-    "icon": "",
-    "weight": 7
-  }
+  "title": "Cloud Storage",
+  "pageDescription": "How to work with the Cloud Storage service using Terraform.",
+  "shortDescription": "How to use Terraform to manage buckets and objects in the Cloud Storage service",
+  "metaTitle": "Cloud Storage",
+  "metaDescription": "",
+  "sectionTitle": "Cloud Storage",
+  "icon": "",
+  "weight": 7,
+  "uuid": "318b32c9-9810-43fe-9142-56c9391b9524"
+}

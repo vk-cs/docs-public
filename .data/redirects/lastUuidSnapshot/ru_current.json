@@ -1009,6 +1009,7 @@
   "c6332d21-771e-4916-a8b5-2496ac480960": "/ru/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
   "eace3838-1ea1-44ea-8ff8-1b3020151771": "/ru/tools-for-using-services/terraform/how-to-guides/k8s",
   "aad57e44-a3e2-41ff-8a70-b8546cee5142": "/ru/tools-for-using-services/terraform/how-to-guides/k8s/create",
+  "91882e7d-88d8-417a-a757-be9e07e04cc1": "/ru/tools-for-using-services/terraform/how-to-guides/aws",
   "c7b4e18d-fdec-4100-a8b6-01b3c8ffb544": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform",
   "66fd85f6-5860-48e2-a2ce-73dfcacc8043": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
   "42a38910-568b-4db3-9420-5aea83a2765a": "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
@@ -1127,5 +1128,7 @@
   "4494dc30-0e95-43a7-86c3-bbdd29eca119": "/ru/cases/sprut-migration/paas/dns",
   "9b117d40-44af-4923-b1b0-884a1d15cb08": "/ru/cases/sprut-migration/paas/fs-manage",
   "ea85d4d4-b628-45f7-8e9a-95d4100281ba": "/ru/cases/sprut-migration/paas/clusters",
-  "7f76578e-c8bc-40e1-bf08-c3fe0665c1e8": "/ru/cases/sprut-migration/paas/db"
+  "7f76578e-c8bc-40e1-bf08-c3fe0665c1e8": "/ru/cases/sprut-migration/paas/db",
+  "41aa5cdf-6e4a-4725-8139-0803dd89a2ed": "/ru/cases/sprut-migration/faq",
+  "25dac540-b3c0-4b97-87d5-5d7e132cfd66": "/ru/cases/sprut-migration/troubleshooting"
 }

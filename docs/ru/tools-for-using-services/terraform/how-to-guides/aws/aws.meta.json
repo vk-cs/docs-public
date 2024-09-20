@@ -1,10 +1,11 @@
 {
-    "title": "Cloud Storage",
-    "pageDescription": "Работа с сервисом Cloud Storage с использованием Terraform.",
-    "shortDescription": "Как использовать Terraform для управления бакетами и объектами сервиса Cloud Storage",
-    "metaTitle": "Cloud Storage",
-    "metaDescription": "",
-    "sectionTitle": "Cloud Storage",
-    "icon": "",
-    "weight": 7
-  }
+  "title": "Cloud Storage",
+  "pageDescription": "Работа с сервисом Cloud Storage с использованием Terraform.",
+  "shortDescription": "Как использовать Terraform для управления бакетами и объектами сервиса Cloud Storage",
+  "metaTitle": "Cloud Storage",
+  "metaDescription": "",
+  "sectionTitle": "Cloud Storage",
+  "icon": "",
+  "weight": 7,
+  "uuid": "91882e7d-88d8-417a-a757-be9e07e04cc1"
+}

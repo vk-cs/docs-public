@@ -7632,6 +7632,26 @@
     "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/addons"
   ],
   [
+    "/en/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/en/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions/"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
+  ],
+  [
+    "/en/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+  ],
+  [
     "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
     "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
   ],
@@ -18864,6 +18884,54 @@
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/addons-and-settings/addons"
   ],
   [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/tools-for-using-services/terraform/quick-start"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/access-keys"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/s3-acl#fiksirovannyy_acl"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/buckets/manage-bucket#avtomaticheskaya_ochistka_baketa"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/access-keys"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/s3-acl#user-id"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/service-management/project-settings/manage#poluchenie_identifikatora_proekta"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/storage/s3/service-management/access-management/s3-acl#permissons"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/storage/s3/connect/s3-cli"
+  ],
+  [
+    "/ru/tools-for-using-services/terraform/how-to-guides/aws",
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+  ],
+  [
     "/ru/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
   ],
@@ -19846,5 +19914,53 @@
   [
     "/ru/cases/sprut-migration/paas/db",
     "http://localhost:3000/docs/ru/dbs/dbaas/service-management/manage-instance/clickhouse#udalenie_instansa_bd"
+  ],
+  [
+    "/ru/cases/sprut-migration/faq",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/sdn#sprut"
+  ],
+  [
+    "/ru/cases/sprut-migration/faq",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/about#dlya_chego_nuzhna_migraciya"
+  ],
+  [
+    "/ru/cases/sprut-migration/faq",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/about#dlya_chego_nuzhna_migraciya"
+  ],
+  [
+    "/ru/cases/sprut-migration/faq",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/about#posledovatelnost_migracii"
+  ],
+  [
+    "/ru/cases/sprut-migration/faq",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/about#kakie_servisy_mozhno_migrirovat"
+  ],
+  [
+    "/ru/cases/sprut-migration/faq",
+    "http://localhost:3000/docs/ru/cases/sprut-migration"
+  ],
+  [
+    "/ru/cases/sprut-migration/faq",
+    "http://localhost:3000/docs/ru/cases/sprut-migration"
+  ],
+  [
+    "/ru/cases/sprut-migration/faq",
+    "http://localhost:3000/docs/ru/cases/sprut-migration"
+  ],
+  [
+    "/ru/cases/sprut-migration/faq",
+    "http://localhost:3000/docs/ru/networks/vnet/how-to-guides/advanced-router"
+  ],
+  [
+    "/ru/cases/sprut-migration/faq",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture"
+  ],
+  [
+    "/ru/cases/sprut-migration/faq",
+    "http://localhost:3000/docs/ru/cases/sprut-migration/paas"
+  ],
+  [
+    "/ru/cases/sprut-migration/faq",
+    "http://localhost:3000/docs/cases/sprut-migration/about#instrumenty_migracii"
   ]
 ]
