@@ -843,6 +843,7 @@
   "c14f9f6e-6b12-4ae8-871f-994740237ea2": "/en/tools-for-using-services/terraform/how-to-guides/dbaas/create-db-instance",
   "ca85cd22-0768-49ac-be8f-417b0f276045": "/en/tools-for-using-services/terraform/how-to-guides/k8s",
   "5c8c4163-6f78-4bab-ae4d-383dc6c00a47": "/en/tools-for-using-services/terraform/how-to-guides/k8s/create",
+  "318b32c9-9810-43fe-9142-56c9391b9524": "/en/tools-for-using-services/terraform/how-to-guides/aws",
   "89340d10-bfea-4c2c-a96a-eebaa42abb5c": "/en/tools-for-using-services/terraform/how-to-guides/mlplatform",
   "e7464702-ab4e-4c53-9288-9e3a8b4ef4d7": "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/jupyterhub",
   "5dfc3087-4fb6-4912-8c0e-7eac46234c7d": "/en/tools-for-using-services/terraform/how-to-guides/mlplatform/mlflow",
