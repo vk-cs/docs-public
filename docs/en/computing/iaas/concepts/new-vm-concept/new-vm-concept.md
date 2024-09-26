@@ -38,23 +38,50 @@ Example of using a server group: deploy multiple application VMs on only one nod
 
 ## Flavors
 
-On the VK Cloud platform, the number of processors and the amount of RAM of the VM are set using flavors. Ready-made flavors are available to users, as well as individual (on request).
+On the VK Cloud platform, the number of processors and the amount of RAM of the VM are set using flavors.
 
 ### Virtual machine categories
 
 VMs are grouped into categories in a management console:
 
-| Category | Description | Display condition |
-| --- | --- | --- |
-| Intel Cascade Lake (Intel Xeon Gen 2) | VMs located on servers with Intel Cascade Lake CPU | Available by default |
-| Intel Ice Lake (Intel Xeon Gen 3) | VMs located on servers with Intel Ice Lake CPU | Available by default |
-| Archived VM types (legacy)| Old VM configuration templates | Not displayed by default filtration |
-| High-performance CPU |  VMs located on [servers](#cpu_generations) with increased CPU clock speed | Displayed when ordering the types of VM through [technical support](mailto:support@mcs.mail.ru) |
-| Virtual machines with GPU | VMs with connected [graphics card](../../../gpu/about/) | Displayed when ordering the types of VM through [cloud.vk.com](https://cloud.vk.com/en/) |
-| VMs with local disks | VMs with the ability to use local hypervisor disks | Displayed when ordering the types of VM through [technical support](mailto:support@mcs.mail.ru) |
-| VMs located on dedicated servers | VMs located on hypervisors dedicated to the needs of one client | Displayed when ordering the types of VM through your manager |
+[cols="1,2,2", options="header"]
+|===
+| Category
+| Description
+| Display condition
+
+| Intel Cascade Lake (Intel Xeon Gen 2)
+| VMs located on servers with Intel Cascade Lake CPU
+| Available by default
+
+| Intel Ice Lake (Intel Xeon Gen 3)
+| VMs located on servers with Intel Ice Lake CPU
+| Available by default
+
+| Archived VM types (legacy)
+| Old VM configuration templates
+| Not displayed by default filtration
+
+| High-performance CPU
+| VMs located on [servers](#cpu_generations) with increased CPU clock speed
+| Displayed when ordering the types of VM through [technical support](mailto:support@mcs.mail.ru)
+
+| Virtual machines with GPU
+| VMs with connected [graphics card](../../../gpu/about/)
+| Displayed when ordering the types of VM through [cloud.vk.com](https://cloud.vk.com/en/)
+
+| VMs with local disks
+| VMs with the ability to use local hypervisor disks
+| Displayed when ordering the types of VM through [technical support](mailto:support@mcs.mail.ru)
+
+| VMs located on dedicated servers
+| VMs located on hypervisors dedicated to the needs of one client
+| Displayed when ordering the types of VM through your manager
+|===
 
 By default, only actual configuration templates are displayed: on servers with Intel Cascade Lake and Intel Ice Lake CPUs, as well as VMs with a connected graphics card, on high-performance or dedicated servers, if they were added to the project.
+
+To add custom VM configurations to the list, including VMs with more than 16 vCPU and 64 GB of RAM, contact [technical support](mailto:support@mcs.mail.ru).
 
 Select the **Archive VM types** category to find the old VM configuration templates. The server for VMs of the old configuration is selected randomly: Intel Cascade Lake or Intel Ice Lake, but [charged](../../tariffication/) at the price of Intel Ice Lake. If the server is unavailable (for example, during maintenance work), these VMs can move to a server of a different generation.
 
@@ -95,7 +122,7 @@ Examples:
 | STD3-4-8 | VM with Intel Ice Lake processor, 4 vCPU and 8 GB RAM |
 | GPU1A-32-96-A100-1 | VM with AMD EPYC 7662 processor and one connected Nvidia Tesla A10040GB graphics card |
 
-### CPU generations
+### {heading(CPU generations)[id=cpu_generations]}
 
 The performance of a VM depends on the resources of the host on which it is hosted. The VK Cloud platform provides server hardware that allows you to configure VMs of different performance levels.
 
@@ -134,13 +161,40 @@ If the VM and disk are located in different availability zones, the disk access 
 
 The VK Cloud platform supports various types of disks:
 
-| Disk Type | Name in the API | Availability zones | Description |
-|-----------|----------------|------------------|----------|
-| Network HDD | ceph-hdd | MS1, GZ1, ME1 | An ordinary magnetic hard drive. Suitable for storing large amounts of information. Triple replication to different storage servers |
-| Network SSD | ceph-ssd | MS1, GZ1, ME1 | Solid-state drive. High speed of reading and writing information. The performance is higher than that of HDD. Triple replication to different storage servers |
-| Network<br/>High-IOPS SSD | high-iops | MS1, GZ1, ME1 | SSD with increased speed of operation. Double replication: both copies are on the same storage server |
-| Network<br/>High-IOPS HA SSD | high-iops-ha | ME1 | SSD with increased speed of operation. Double replication to different storage servers |
-| Local<br/>Low Latency NVME | ef-nvme | nova | SSD, which is located on the same hypervisor with the VM. High-speed operation and fast response. Double replication: both copies are on the same hypervisor |
+[cols="1,1,1,3", options="header"]
+|===
+| Disk Type
+| Name in the API
+| Availability zones
+| Description
+
+| Network HDD
+| ceph-hdd
+| MS1, GZ1, ME1
+| An ordinary magnetic hard drive. Suitable for storing large amounts of information. Triple replication to different servers of DSS (data storage system)
+
+| Network SSD
+| ceph-ssd
+| MS1, GZ1, ME1
+| Solid-state drive. High speed of reading and writing information. The performance is higher than that of HDD. Triple replication to different servers of DSS
+
+| Network<br/>High-IOPS SSD
+| high-iops
+| MS1, GZ1, ME1
+| SSD with increased speed of operation. Double replication: both copies are on the same server of DSS. In case of a failure of the DSS, it will be necessary to prepare a new server and transfer physical disks with user data to the new server. Recovery time is not regulated
+
+| Local <br/>Low Latency NVME
+| ef-nvme
+| nova
+| SSD, which is located on the same hypervisor as the VM. High speed and fast response. Dual replication: both copies are on the same hypervisor
+
+| Network<br/>High-IOPS HA SSD
+| high-iops-ha
+| ME1
+| SSD with increased speed of operation. Double replication to different storage servers. Switchover time in case of storage server failure is from 30 sec to 5 min.
+
+According to the ISCSI protocol, the disk wait time in case of loss of availability is 300 sec. During this time, the VM operating system will switch to the backup storage server. However, conduct additional testing with disk failure emulation if you will use the disk to host highly loaded DBMS
+|===
 
 <details>
    <summary>Information about outdated resource names</summary>
