@@ -1001,6 +1001,14 @@
   ],
   [
     "/en/computing/iaas/concepts/new-vm-concept",
+    "http://localhost:3000/docs/en/computing/iaas/concepts/new-vm-concept#cpu_generations"
+  ],
+  [
+    "/en/computing/iaas/concepts/new-vm-concept",
+    "http://localhost:3000/docs/en/computing/gpu/about"
+  ],
+  [
+    "/en/computing/iaas/concepts/new-vm-concept",
     "http://localhost:3000/docs/en/computing/iaas/tariffication"
   ],
   [
@@ -9442,6 +9450,14 @@
   [
     "/ru/computing/iaas/quick-start",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#delete_vm"
+  ],
+  [
+    "/ru/computing/iaas/concepts/new-vm-concept",
+    "http://localhost:3000/docs/ru/computing/iaas/concepts/new-vm-concept#pokoleniya_processorov"
+  ],
+  [
+    "/ru/computing/iaas/concepts/new-vm-concept",
+    "http://localhost:3000/docs/ru/computing/gpu/about"
   ],
   [
     "/ru/computing/iaas/concepts/new-vm-concept",

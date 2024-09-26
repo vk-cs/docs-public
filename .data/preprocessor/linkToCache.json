@@ -359,6 +359,16 @@
     "full": "Дорегистрация ЮЛ и ИП",
     "text": "Дорегистрация ЮЛ и ИП"
   },
+  "flavors": {
+    "number": null,
+    "full": "Шаблоны конфигураций",
+    "text": "Шаблоны конфигураций"
+  },
+  "disk_types": {
+    "number": null,
+    "full": "Типы дисков",
+    "text": "Типы дисков"
+  },
   "neutron": {
     "number": null,
     "full": "Neutron",
