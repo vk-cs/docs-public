@@ -94,6 +94,8 @@
     "editOnGithub": true,
     "telegramSupport": true,
     "alerting": false,
+    "suggester": true,
+    "editOnGitOps": true,
     "footerPolicyLink": true,
     "autoNumberInHeaders": false
   },
