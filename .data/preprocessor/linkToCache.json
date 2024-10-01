@@ -304,6 +304,21 @@
     "full": "Права для всех ролей",
     "text": "Права для всех ролей"
   },
+  "roles_logging": {
+    "number": null,
+    "full": "Права в сервисе Cloud Logging",
+    "text": "Права в сервисе Cloud Logging"
+  },
+  "roles_monitoring": {
+    "number": null,
+    "full": "Права в сервисе Cloud Monitoring",
+    "text": "Права в сервисе Cloud Monitoring"
+  },
+  "roles_audit": {
+    "number": null,
+    "full": "Права в сервисе Cloud Audit",
+    "text": "Права в сервисе Cloud Audit"
+  },
   "linking_phone_number": {
     "number": null,
     "full": "Linking a phone number",
