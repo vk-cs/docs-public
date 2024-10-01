@@ -18609,6 +18609,10 @@
   ],
   [
     "/ru/tools-for-using-services/account/service-management/activation",
+    "http://localhost:3000/docs/ru/intro/billing/concepts/balance"
+  ],
+  [
+    "/ru/tools-for-using-services/account/service-management/activation",
     "http://localhost:3000/docs/ru/intro/billing/service-management/add-card"
   ],
   [
