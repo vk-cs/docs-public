@@ -114,6 +114,213 @@
 
 ![](assets/roles_and_permissions_full.png)
 
+## {heading(Права в сервисе Cloud Logging)[id=roles_logging]}
+
+[cols="2,1,1,1", options="header"]
+|===
+|Роли
+|Просмотр логов и конфигурации сервиса
+|Изменение настроек логов
+|Создание сервисных пользователей и названий сервисов
+
+|Владелец проекта
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Суперадминистратор
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Администратор проекта
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Администратор пользователей (IAM)
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Администратор биллинга
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Наблюдатель
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Администратор, оператор ВМ
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Администратор сети
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Администратор сетевой безопасности
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Администратор внутренних сетей
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Администратор, оператор, аудитор Kubernetes
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+|===
+
+## {heading(Права в сервисе Cloud Monitoring)[id=roles_monitoring]}
+
+[cols="2,1,1,1,1", options="header"]
+|===
+|Роли
+|Просмотр дашбордов
+|Просмотр метрик Prometheus
+|Запись в систему мониторинга
+|Создание и редактирование дашбордов
+
+|Владелец проекта
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Суперадминистратор
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Администратор проекта
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Администратор пользователей (IAM)
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Администратор биллинга
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Наблюдатель
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Администратор, оператор ВМ
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Администратор сети
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Администратор сетевой безопасности
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Администратор внутренних сетей
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Администратор, оператор, аудитор Kubernetes
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+|===
+
+## {heading(Права в сервисе Cloud Audit)[id=roles_audit]}
+
+[cols="2,2,1,1", options="header"]
+|===
+|Роли
+|Просмотр событий
+|Выгрузка данных
+|Настройка сервиса
+
+|Владелец проекта
+| Все события проекта
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Суперадминистратор
+| Все события проекта
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Администратор проекта
+| Все события проекта
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Администратор пользователей (IAM)
+| Все события сервиса IAM и все свои действия
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Администратор биллинга
+| Все события сервиса Billing и все свои действия
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Наблюдатель
+| Все события проекта
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Администратор, оператор ВМ
+| Все события сервиса Cloud Servers и все свои действия
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Администратор сети
+| Все события сервиса Cloud Network и все свои действия
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Администратор сетевой безопасности
+| Все события сервиса Cloud Network и все свои действия
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Администратор внутренних сетей
+| Все события сервиса Cloud Network и все свои действия
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Администратор, оператор, аудитор Kubernetes
+| Все события сервиса Cloud Containers и все свои действия
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+|===
+
 ## {heading(Права для ролей сервиса Cloud Containers)[id=roles_permissions_kubernetes]}
 
 В личном кабинете доступны специализированные роли для работы с [сервисом Cloud Containers](/ru/kubernetes/k8s):
