@@ -113,6 +113,213 @@ Each role has certain permissions set to perform operations.
 
 ![](assets/roles_and_permissions_full_en.png)
 
+## {heading(Permissions in Cloud Logging)[id=roles_logging]}
+
+[cols="2,1,1,1", options="header"]
+|===
+|Roles
+|Viewing logs and service configuration
+|Editing log settings
+|Creating service users and names
+
+|Project owner
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Superadministrator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Project administrator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|User access administrator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Billing administrator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Viewer
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|VM administrator, VM operator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Network administrator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Network security administrator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Internal network administrator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Kubernetes administrator, auditor, operator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+|===
+
+## {heading(Permissions in Cloud Monitoring)[id=roles_monitoring]}
+
+[cols="2,1,1,1,1", options="header"]
+|===
+|Roles
+|Viewing dashboards
+|Viewing Prometheus metrics
+|Recording in monitoring system
+|Creating and editing dashboards
+
+|Project owner
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Superadministrator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Project administrator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|User access administrator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Billing administrator
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Viewer
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|VM administrator, VM operator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Network administrator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Network security administrator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Internal network administrator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Kubernetes administrator, auditor, operator
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+|===
+
+## {heading(Permissions in Cloud Audit)[id=roles_audit]}
+
+[cols="2,2,1,1", options="header"]
+|===
+|Roles
+|Viewing events
+|Downloading data
+|Setting service
+
+|Project owner
+| All events of a project
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Superadministrator
+| All events of a project
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|Project administrator
+| All events of a project
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+
+|User access administrator
+| All the IAM service events and all his/her actions
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Billing administrator
+| All the Billing service events and all his/her actions
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Viewer
+| All events of a project
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|VM administrator, VM operator
+| All the Cloud Servers service events and all his/her actions
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Network administrator
+| All the Cloud Network service events and all his/her actions
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Network security administrator
+| All the Cloud Network service events and all his/her actions
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Internal network administrator
+| All the Cloud Network service events and all his/her actions
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
+|Kubernetes administrator, auditor, operator
+| All the Cloud Containers service events and all his/her actions
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+|===
+
 ## Roles for the Containers service and their permissions
 
 The following user roles are intended for working with the [Сontainers service](/en/kubernetes/k8s):
