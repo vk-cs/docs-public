@@ -12,7 +12,7 @@ If you use other servers and hardware, some script steps may differ from those d
 
 ## Scheme of work
 
-![Scheme of work](assets/1575925083095-1575925083095.png){params[width=68%; height=68%]}
+![Scheme of work](assets/1575925083095-1575925083095.png){params[width=68%; height=68%; noBorder=true]}
 
 The ELK stack consists of three components:
 

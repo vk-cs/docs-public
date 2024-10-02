@@ -5,7 +5,7 @@
 Разработайте брокер для SaaS-приложения по протоколу VK OSB. Чтобы получить протокол VK OSB, отправьте письмо на [marketplace@cloud.vk.com](mailto:marketplace@cloud.vk.com). Брокер должен реализовывать методы, описывающие жизненный цикл инстансов сервиса ({linkto(#pic_saas_broker)[text=рисунок %number]}).
 
 {caption(Рисунок {counter(pic)[id=numb_pic_saas_broker]} — Взаимодействие брокера с {var(sys5)} и SaaS-приложением)[align=center;position=under;id=pic_saas_broker;number={const(numb_pic_saas_broker)} ]}
-![pic1](../../assets/SaaS_broker.png)
+![pic1](../../assets/SaaS_broker.png){params[noBorder=true]}
 {/caption}
 
 В брокере должна быть настроена basic-аутентификация по безопасному протоколу HTTPS c сертификатом, выданным доверенным центром сертификации.

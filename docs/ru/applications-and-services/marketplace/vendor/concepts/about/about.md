@@ -35,7 +35,7 @@
 Взаимодействие {var(sys2)} с сервисами осуществляется по протоколу VK OSB с помощью брокеров ({linkto(#pic_xaas)[text=рисунок %number]}). Брокер обеспечивает доставку конфигурации сервиса в {var(sys1)}: {var(sys1)} периодически опрашивает брокера о текущей конфигурации сервиса.
 
 {caption(Рисунок {counter(pic)[id=numb_pic_xaas]} — Взаимодействие {var(sys2)} с сервисами)[align=center;position=under;id=pic_xaas;number={const(numb_pic_xaas)} ]}
-![pic1](../../assets/XaaS.png)
+![pic1](../../assets/XaaS.png){params[noBorder=true]}
 {/caption}
 
 SaaS-брокер обеспечивает взаимодействие конкретного SaaS-приложения с {var(sys5)}. Image-based брокер обеспечивает взаимодействие image-based приложений с {var(sys5)}. Image-based брокер внутри себя имеет тенанты, объединяющие image-based приложения одного поставщика.
@@ -230,7 +230,7 @@ Pull-модель — способ получения метрик по факт
 Периодичность, с которой запросы от {var(sys2)} направляются брокеру, настраивается в параметре `billing_cycle_step` в конфигурации сервиса (подробнее — в разделе {linkto(/ru/applications-and-services/marketplace/vendor/saas_add/saas_configure/saas_plan/#saas_plan_param)[text=%text]}).
 
 {caption(Рисунок {counter(pic)[id=numb_pic_xaas_saas_broker_resource_usage]} — Передача отчета между {var(sys5)} и брокером)[align=center;position=under;id=pic_xaas_saas_broker_resource_usage;number={const(numb_pic_xaas_saas_broker_resource_usage)} ]}
-![pic1](../../assets/SaaS_broker_resource_usage.png)
+![pic1](../../assets/SaaS_broker_resource_usage.png){params[noBorder=true]}
 {/caption}
 
 В SaaS-брокере должны быть реализованы методы, передающие отчет {var(sys3)}. Формат отчета приведен в разделе {linkto(/ru/applications-and-services/marketplace/vendor/saas_add/saas_broker/#saas_broker)[text=%text]}.

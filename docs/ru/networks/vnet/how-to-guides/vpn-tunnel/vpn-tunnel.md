@@ -97,7 +97,7 @@
    | Виртуальная подсеть со стороны облачного VPN-шлюза                      | `10.0.0.0/29`   |
    | IP-адрес порта `SNAT` в облачной подсети                             | `10.0.0.5`      |
 
-![Example Infrastructure](./assets/vpn-tunnel.png)
+![Example Infrastructure](./assets/vpn-tunnel.png){params[noBorder=true]}
 
 ## 2. Настройте VPN-туннель на стороне облачной сети
 

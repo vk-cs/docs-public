@@ -42,7 +42,7 @@ SDN Sprut полностью совместима с Openstack Neutron API и и
 
 На схеме представлена последовательность действий при миграции в SDN Sprut:
 
-![Последовательность миграции в SDN Sprut](../../sprut-migration/assets/migration_algorithm.png)
+![Последовательность миграции в SDN Sprut](../../sprut-migration/assets/migration_algorithm.png){params[noBorder=true]}
 
 Все действия разбиты на четыре этапа:
 

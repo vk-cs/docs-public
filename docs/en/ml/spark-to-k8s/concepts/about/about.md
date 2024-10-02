@@ -21,4 +21,4 @@ Cloud Spark — a solution based on [Apache Spark Operator](https://github.com/G
 
 ## Interaction of service components
 
-![](./assets/componets_scheme.png)
+![Cloud Spark components interacion](./assets/componets_scheme.png){params[noBorder=true]}

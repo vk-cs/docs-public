@@ -112,7 +112,7 @@
 
 Каждой роли соответствует определенный набор прав на выполнение операций.
 
-![](assets/roles_and_permissions_full.png)
+![Схема ролей и разрешений](assets/roles_and_permissions_full.png){params[noBorder=true]}
 
 ## {heading(Права в сервисе Cloud Logging)[id=roles_logging]}
 

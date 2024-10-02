@@ -8,7 +8,7 @@
   - будет настроен VRRP в реализации [keepalived](https://keepalived.readthedocs.io/en/latest/introduction.html) для обслуживания этого IP-адреса.
 - будет создана третья виртуальная машина с плавающим IP-адресом, с которой будут выполнены все необходимые настройки и проверка работоспособности.
 
-![Диаграмма для сценария](./assets/vip-keepalived.png)
+![Диаграмма для сценария](./assets/vip-keepalived.png){params[noBorder=true]}
 
 ## 1. Подготовительные шаги
 

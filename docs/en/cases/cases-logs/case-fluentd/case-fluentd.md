@@ -35,7 +35,7 @@ Therefore, to work with application logs in Kubernetes, a system is needed to co
 
 ## The scheme of the logging system in the Kubernetes cluster:
 
-![The scheme of the logging system in the Kubernetes cluster](assets/1579529210340-1579529210340.png){params[width=70%; height=70%]}
+![The scheme of the logging system in the Kubernetes cluster](assets/1579529210340-1579529210340.png){params[width=70%; height=70%; noBorder=true]}
 
 Depending on the amount of information required in Elasticsearch processing, you can choose different ways to install the EFK stack:
 

@@ -56,7 +56,7 @@ VK Cloud provides [technical support](/en/intro/start/support/support-info) for 
 
 The general scheme of VK Cloud components and services is shown below.
 
-![](assets/vkcloud_architecture.png)
+![VK Cloud architecture](assets/vkcloud_architecture.png){params[noBorder=true]}
 
 Cloud services are managed using the API. Users interact with the API through one or more [tools](/en/tools-for-using-services):
 
