@@ -63,7 +63,7 @@
 Основные и опциональные шаги, описываемые в манифесте Terraform, приведены на {linkto(#pic_tf_steps)[text=рисунке %number]}.
 
 {caption(Рисунок {counter(pic)[id=numb_pic_tf_steps]} — Шаги для манифеста Terraform)[align=center;position=under;id=pic_tf_steps;number={const(numb_pic_tf_steps)} ]}
-![pic1](../../../assets/steps_tf.png)
+![pic1](../../../assets/steps_tf.png){params[noBorder=true]}
 {/caption}
 
 <err>

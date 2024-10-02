@@ -12,7 +12,7 @@
 
 ## Схема работы
 
-![Scheme of work](assets/1575925083095-1575925083095.png){params[width=68%; height=68%]}
+![Scheme of work](assets/1575925083095-1575925083095.png){params[width=68%; height=68%;noBorder=true]}
 
 Стек ELK состоит из трех компонентов:
 

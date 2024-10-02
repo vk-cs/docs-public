@@ -11,7 +11,7 @@
 
   Эти машины используются для [проверки настройки маршрутизации между сетями](#5_proverte_rabotosposobnost_primera): успешный пинг между ними будет свидетельствовать о корректной настройке.
 
-![Инфраструктура примера](assets/infrastructure-scheme.png)
+![Инфраструктура примера](assets/infrastructure-scheme.png){params[noBorder=true]}
 
 ## Перед началом работы
 

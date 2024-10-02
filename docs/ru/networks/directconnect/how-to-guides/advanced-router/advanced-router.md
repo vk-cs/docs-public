@@ -59,7 +59,7 @@
 
 Схема предварительной подготовки сетей выглядит следующим образом:
 
-![Схема предварительной подготовки сетей](/ru/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-before.png)
+![Схема предварительной подготовки сетей](/ru/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-before.png){params[noBorder=true]}
 
 ## 1. Добавьте продвинутый маршрутизатор
 
@@ -312,7 +312,7 @@ IP-адрес должен отвечать на пинг.
 
 Схема выстроенного взаимодействия между сетями и машинами внутри сетей выглядит следующим образом:
 
-![Схема взаимодействия между сетями](/ru/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-after.png)
+![Схема взаимодействия между сетями](/ru/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-after.png){params[noBorder=true]}
 
 ## Удалите неиспользуемые ресурсы
 

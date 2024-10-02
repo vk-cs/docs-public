@@ -80,7 +80,7 @@ To show how to configure a secure connection with virtual desktops:
 
 Scheme of preliminary preparation of networks:
 
-![Scheme of preliminary preparation of networks](assets/IPsec_scheme-Before.png)
+![Scheme of preliminary preparation of networks](assets/IPsec_scheme-Before.png){params[noBorder=true]}
 
 ## 1. Set up a VPN tunnel on the AD/LDAP side
 
@@ -450,7 +450,7 @@ To ensure traffic passes correctly through the VPN tunnel, add a number of setti
 
 Scheme of the built interaction between networks and machines within networks:
 
-![Scheme of the built interaction between networks and machines within networks:](assets/IPsec_scheme-After.png)
+![Scheme of the built interaction between networks and machines within networks:](assets/IPsec_scheme-After.png){params[noBorder=true]}
 
 ## Delete unused resources
 

@@ -14,7 +14,7 @@ The CDN service helps:
 
   Without CDN, all users would send their requests to the origin servers, creating a significant load of these servers. CDN allows to transfer this load to the CDN servers and distribute it among them.
 
-![CDN Operation Diagram](./assets/cdn-scheme.png)
+![CDN Operation Diagram](./assets/cdn-scheme.png){params[noBorder=true]}
 
 ## CDN VK Cloud opportunities
 

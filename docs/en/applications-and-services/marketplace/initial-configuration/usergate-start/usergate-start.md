@@ -8,7 +8,7 @@ You can configure a firewall to protect your infrastructure from network attacks
 <details>
     <summary>Recommended server specifications for the service</summary>
 
-![](./assets/usergate_vm_recommendation_table_en.png)
+![Recommended server specifications for the service](./assets/usergate_vm_recommendation_table_en.png){params[noBorder=true]}
 
 To create a VM that has more than 24 CPUs, contact [technical support](mailto:support@mcs.mail.ru).
 

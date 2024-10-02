@@ -5,7 +5,7 @@
 Загрузка сервисного пакета в {var(sys1)} осуществляется с помощью системы развертывания через сервис Infra API. Схема загрузки приведена на {linkto(#pic_ib_upload)[text=рисунке %number]}.
 
 {caption(Рисунок {counter(pic)[id=numb_pic_ib_upload]} — Схема загрузки сервисного пакета)[align=center;position=under;id=pic_ib_upload;number={const(numb_pic_ib_upload)} ]}
-![pic1](../../../assets/IB_upload.png)
+![pic1](../../../assets/IB_upload.png){params[noBorder=true]}
 {/caption}
 
 Описание основных элементов схемы приведено в {linkto(#tab_scheme_elements)[text=таблице %number]}.
