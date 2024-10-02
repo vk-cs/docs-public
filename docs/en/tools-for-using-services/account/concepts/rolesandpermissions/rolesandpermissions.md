@@ -111,7 +111,7 @@ He can create and edit only rule groups (firewalls).
 
 Each role has certain permissions set to perform operations.
 
-![](assets/roles_and_permissions_full_en.png)
+![Roles and permissions](assets/roles_and_permissions_full_en.png){params[noBorder=true]}
 
 ## {heading(Permissions in Cloud Logging)[id=roles_logging]}
 

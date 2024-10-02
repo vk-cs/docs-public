@@ -11,5 +11,5 @@
 1. {linkto(../saas_upload_publish/#saas_upload_publish)[text=%text]}.
 
 {caption(Рисунок {counter(pic)[id=numb_pic_saas_upload]} — Загрузка SaaS-приложения)[align=center;position=under;id=pic_saas_upload;number={const(numb_pic_saas_upload)} ]}
-![pic1](../../../assets/SaaS_upload.png)
+![pic1](../../../assets/SaaS_upload.png){params[noBorder=true]}
 {/caption}

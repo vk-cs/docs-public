@@ -35,7 +35,7 @@ kubectl logs pod_name --previous
 
 ## Схема системы логирования в кластере Kubernetes:
 
-![The scheme of the logging system in the Kubernetes cluster](assets/1579529210340-1579529210340.png){params[width=70%; height=70%]}
+![The scheme of the logging system in the Kubernetes cluster](assets/1579529210340-1579529210340.png){params[width=70%; height=70%; noBorder=true]}
 
 В зависимости от количества информации, необходимой в обработке Elasticsearch, можно выбрать различные пути инсталляции EFK-стека:
 

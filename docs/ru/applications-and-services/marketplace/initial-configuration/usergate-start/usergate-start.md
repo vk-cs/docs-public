@@ -8,7 +8,7 @@
 <details>
     <summary>Рекомендуемые технические характеристики сервера для сервиса</summary>
 
-![](./assets/usergate_vm_recommendation_table.png)
+![Рекомендуемые технические характеристики для сервиса](./assets/usergate_vm_recommendation_table.png){params[noBorder=true]}
 
 Чтобы создать ВМ, у которой более 24 CPU, обратитесь в [техническую поддержку](/ru/contacts).
 

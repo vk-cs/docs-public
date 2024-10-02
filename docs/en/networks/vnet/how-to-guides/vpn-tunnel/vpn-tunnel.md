@@ -102,7 +102,7 @@ The guide can be adapted to work with any other VPN endpoint, such as a corporat
    | Cloud VPN Gateway Virtual Subnet                                     | `10.0.0.0/29`   |
    | IP address of the `SNAT` port in the cloud subnet                    | `10.0.0.5`      |
 
-![Example Infrastructure](./assets/vpn-tunnel.png)
+![Example Infrastructure](./assets/vpn-tunnel.png){params[noBorder=true]}
 
 ## 2. Set up a VPN tunnel on the cloud side
 
