@@ -24,7 +24,7 @@ SDN — инструмент управления overlay-сетями (вирт
 - Управление IP-адресами в проекте.
 - Настройка правил маршрутизации.
 
-![SDN в ахритектуре VK Cloud](./assets/img_sdn_basis.png)
+![SDN в ахритектуре VK Cloud](./assets/img_sdn_basis.png){params[noBorder=true]}
 
 Все сервисы и продукты в архитектуре облака связаны с SDN, поэтому для платформы важно иметь надежное, гибкое и отказоустойчивое SDN-решение.
 
@@ -53,7 +53,7 @@ _Neutron_ — SDN, которая является частью платформ
 
 На схеме предоставлена архитектура и схема работы SDN Neutron.
 
-![Архитектура SDN Neutron](./assets/neutron_arch.png)
+![Архитектура SDN Neutron](./assets/neutron_arch.png){params[noBorder=true]}
 
 Долгое время в VK Cloud использовалась только SDN Neutron, это создавало следующие проблемы и ограничения:
 
@@ -82,7 +82,7 @@ SDN Sprut обеспечивает стабильную работу сетей 
 
 На схеме представлено сравнение архитектуры SDN Neutron и SDN Sprut.
 
-![Архитектура SDN Neutron и SDN Sprut](./assets/neutron_vs_sprut.png)
+![Архитектура SDN Neutron и SDN Sprut](./assets/neutron_vs_sprut.png){params[noBorder=true]}
 
 <info>
 

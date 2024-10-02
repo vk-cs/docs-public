@@ -59,7 +59,7 @@ In this case the following data is used:
 
 The scheme for preparation of networks looks like this:
 
-![Scheme for preparation of networks](/en/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-before.png)
+![Scheme for preparation of networks](/en/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-before.png){params[noBorder=true]}
 
 ## 1. Creating an advanced router
 
@@ -303,7 +303,7 @@ The IP address must respond to ping.
 
 The structured interaction between the networks and the VMs within networks looks like this:
 
-![The interaction between networks scheme](/en/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-after.png)
+![The interaction between networks scheme](/en/networks/directconnect/how-to-guides/advanced-router/assets/advanced-router-after.png){params[noBorder=true]}
 
 ## Delete unused resources
 

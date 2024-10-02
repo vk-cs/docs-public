@@ -56,7 +56,7 @@ VK Cloud предоставляет [техническую поддержку](
 
 Общая схема компонентов и сервисов VK Cloud показана ниже.
 
-![](assets/vkcloud_architecture.png)
+![Архитектура VK Cloud](assets/vkcloud_architecture.png){params[noBorder=true]}
 
 Управление облачными сервисами выполняется с помощью API. Пользователи взаимодействуют с API через один или несколько [инструментов](/ru/tools-for-using-services):
 
