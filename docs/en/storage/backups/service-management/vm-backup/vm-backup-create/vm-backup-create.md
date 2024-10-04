@@ -12,9 +12,15 @@ A backup is created for all VM disks.
 
 ## Automatic backup
 
+<info>
+
+Make backup plans for all existing VMs. Use [filtering](/en/computing/iaas/service-management/vm/vm-filter) to see which VMs don't have a backup plan.
+
+</info>
+
 <tabs>
 <tablist>
-<tab>M</tab>
+<tab>Management console</tab>
 </tablist>
 <tabpanel>
 
