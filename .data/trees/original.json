@@ -1020,6 +1020,21 @@
     ]
   },
   {
+    "uuid": "1d21aa0f-9108-410c-b2ed-27ae9906bd37",
+    "lang": "en",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/en/computing/iaas/service-management/vm/vm-filter",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/service-management/vm/vm-filter/vm-filter.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/iaas/service-management/vm/vm-filter/vm-filter.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "a7580d16-9b75-4d26-bebd-bcf391328655",
     "lang": "en",
     "type": "ARTICLE",
@@ -10522,6 +10537,21 @@
     "partialPath": "/ru/computing/iaas/service-management/vm/vm-console",
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/service-management/vm/vm-console/vm-console.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/service-management/vm/vm-console/vm-console.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "f451638d-962b-4cb5-9346-f09cba33d80d",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 6,
+    "partialPath": "/ru/computing/iaas/service-management/vm/vm-filter",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/service-management/vm/vm-filter/vm-filter.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/iaas/service-management/vm/vm-filter/vm-filter.md",
     "variables": {},
     "hidden": false,
     "version": null,

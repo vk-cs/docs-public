@@ -65,6 +65,7 @@
 /docs/en/computing/iaas/service-management/vm/vm-manage
 /docs/en/computing/iaas/service-management/vm/vm-add-net
 /docs/en/computing/iaas/service-management/vm/vm-console
+/docs/en/computing/iaas/service-management/vm/vm-filter
 /docs/en/computing/iaas/service-management/volumes
 /docs/en/computing/iaas/service-management/images
 /docs/en/computing/iaas/service-management/images/images-manage
