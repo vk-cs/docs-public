@@ -3273,6 +3273,10 @@
   ],
   [
     "/en/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-filter"
+  ],
+  [
+    "/en/storage/backups/service-management/vm-backup/vm-backup-create",
     "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy"
   ],
   [
@@ -3330,6 +3334,14 @@
   [
     "/en/storage/backups/faq",
     "http://localhost:3000/docs/en/storage/backups/service-management/vm-backup/vm-backup-manage#deleting_backups"
+  ],
+  [
+    "/en/storage/backups/faq",
+    "http://localhost:3000/docs/en/storage/backups/concepts/retention-policy"
+  ],
+  [
+    "/en/storage/backups/faq",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-filter"
   ],
   [
     "/en/dbs/dbaas/quick-start",
@@ -12337,6 +12349,10 @@
   ],
   [
     "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-filter"
+  ],
+  [
+    "/ru/storage/backups/service-management/vm-backup/vm-backup-create",
     "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy"
   ],
   [
@@ -12446,6 +12462,14 @@
   [
     "/ru/storage/backups/faq",
     "http://localhost:3000/docs/ru/storage/backups/service-management/vm-backup/vm-backup-manage#udalenie_rezervnyh_kopiy"
+  ],
+  [
+    "/ru/storage/backups/faq",
+    "http://localhost:3000/docs/ru/storage/backups/concepts/retention-policy"
+  ],
+  [
+    "/ru/storage/backups/faq",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-filter"
   ],
   [
     "/ru/dbs/dbaas/quick-start",

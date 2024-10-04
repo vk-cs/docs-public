@@ -1,10 +1,11 @@
 {
-    "title": "Searching and filtering VM",
-    "pageDescription": "How to find a VM you need by name or settings.",
-    "shortDescription": "How to find a VM you need by name or settings",
-    "metaTitle": "Searching and filtering VM",
-    "metaDescription": "How to find a VM you need by name or settings",
-    "sectionTitle": "Searching and filtering VM",
-    "icon": "",
-    "weight": 6
+  "title": "Searching and filtering VM",
+  "pageDescription": "How to find a VM you need by name or settings.",
+  "shortDescription": "How to find a VM you need by name or settings",
+  "metaTitle": "Searching and filtering VM",
+  "metaDescription": "How to find a VM you need by name or settings",
+  "sectionTitle": "Searching and filtering VM",
+  "icon": "",
+  "weight": 6,
+  "uuid": "1d21aa0f-9108-410c-b2ed-27ae9906bd37"
 }
