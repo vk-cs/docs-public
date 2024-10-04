@@ -42,9 +42,9 @@ You can delete a backup in the section **Cloud Servers → Backup**, for more in
 
 <details>
 
-<summary>Where is the next backup copy recorded when the limit on their number is exceeded?</summary>
+<summary>What happens if the backup plan limit of copies is exceeded?</summary>
 
-If the specified number of backups is exceeded, a new one will be written to the place of the oldest copy.
+To write new copies, VK Cloud deletes old ones according to the [policy](../concepts/retention-policy) of the backup plan.
 
 </details>
 
@@ -55,5 +55,13 @@ If the specified number of backups is exceeded, a new one will be written to the
 For example, the menu item is missing or the VM is not in the list. The problem may occur if there is no QEMU guest agent in the system (`qemu guest-agent`) — [install it](https://pve.proxmox.com/wiki/Qemu-guest-agent).
 
 After installation, you need to register additional metadata on the VM – for this [contact technical support](mailto:support@mcs.mail.ru). In some cases, you may need to restart the VM.
+
+</details>
+
+<details>
+
+<summary>How to view the list of VMs without a backup plan?</summary>
+
+[Use](/en/computing/iaas/service-management/vm/vm-filter) the **Backup** filter to find such VMs.
 
 </details>
