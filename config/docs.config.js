@@ -1,3 +1,4 @@
+import { ESuggestType, ESchemaType } from "@vk-tech/d11n-helpers";
 export const config = {
     main: {
         projectName: 'VK Cloud',
@@ -15,7 +16,7 @@ export const config = {
     },
     layout: {
         main: {
-            schema: 'LIST'
+            schema: ESchemaType.LIST,
         }
     },
     header: {
@@ -59,13 +60,12 @@ export const config = {
         signOutUrl: 'https://msk.cloud.vk.com/app/signout',
     },
     gitOps: {
-        type: 'Github',
+        type: ESuggestType.GITHUB,
         data: {
             repoUrl: 'https://github.com/vk-cs/docs-public',
             path: '',
             user: 'vk-cs',
             repo: 'docs-public',
-            botToken: process.env.GITHUB_BOT_TOKEN || null,
         },
     },
     feedback: {
@@ -92,10 +92,10 @@ export const config = {
     },
     translations: {
         en: {
-            'LeftNavMenu.backLink.title': 'Go to main page',
+            'LeftMenu.BackLink': 'Go to main page',
         },
         ru: {
-            'LeftNavMenu.backLink.title': 'На главную',
+            'LeftMenu.BackLink': 'На главную',
         },
     },
 };
