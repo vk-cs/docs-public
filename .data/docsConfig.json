@@ -114,10 +114,12 @@
   },
   "translations": {
     "en": {
-      "LeftNavMenu.backLink.title": "Go to main page"
+      "LeftNavMenu.backLink.title": "Go to main page",
+      "LeftMenu.BackLink": "All sections"
     },
     "ru": {
-      "LeftNavMenu.backLink.title": "На главную"
+      "LeftNavMenu.backLink.title": "На главную",
+      "LeftMenu.BackLink": "Все разделы"
     }
   },
   "build": {
@@ -127,6 +129,7 @@
       "common"
     ]
   },
+  "versions": [],
   "docs": {
     "baseDir": "docs",
     "sectionIconName": "icon.svg"
