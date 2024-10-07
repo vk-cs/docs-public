@@ -73,13 +73,12 @@
     "signOutUrl": "https://msk.cloud.vk.com/app/signout"
   },
   "gitOps": {
-    "type": "Github",
+    "type": "GITHUB",
     "data": {
       "repoUrl": "https://github.com/vk-cs/docs-public",
       "path": "",
       "user": "vk-cs",
-      "repo": "docs-public",
-      "botToken": null
+      "repo": "docs-public"
     }
   },
   "feedback": {
@@ -114,12 +113,10 @@
   },
   "translations": {
     "en": {
-      "LeftNavMenu.backLink.title": "Go to main page",
-      "LeftMenu.BackLink": "All sections"
+      "LeftMenu.BackLink": "Go to main page"
     },
     "ru": {
-      "LeftNavMenu.backLink.title": "На главную",
-      "LeftMenu.BackLink": "Все разделы"
+      "LeftMenu.BackLink": "На главную"
     }
   },
   "build": {
