@@ -19,35 +19,35 @@ export const config = {
         }
     },
     header: {
-             relatedSites: {
-                 ru:[
-                    {
+        relatedSites: {
+            ru: [
+                {
                     title: 'Публичное облако',
                     fullLink: 'https://cloud.vk.com/docs',
                     selected: true,
                     iconPartialPath: '/ru/assets/public-cloud-icon.svg',
-                    },
-                    {
+                },
+                {
                     title: 'Частные инсталляции',
                     asPath: '/on-premises',
                     iconPartialPath: '/ru/assets/private-cloud-icon.svg',
-                    },
-                ],
-                 en:[
-                    {
+                },
+            ],
+            en: [
+                {
                     title: 'Public Cloud',
                     fullLink: 'https://cloud.vk.com/docs',
                     selected: true,
                     iconPartialPath: '/ru/assets/public-cloud-icon.svg',
-                    },
-                    {
+                },
+                {
                     title: 'Private installations',
                     asPath: '/on-premises',
                     iconPartialPath: '/ru/assets/private-cloud-icon.svg',
-                    },
-                ],
-             },
+                },
+            ],
         },
+    },
     contacts: {
         useNativeSupportUrl: false,
         url: 'https://support.mcs.mail.ru/login/oauth2/authorization/vkcloud',
@@ -58,11 +58,22 @@ export const config = {
         signInUrl: 'https://msk.cloud.vk.com/app/signin',
         signOutUrl: 'https://msk.cloud.vk.com/app/signout',
     },
-    github: {
-        repoUrl: 'https://github.com/vk-cs/docs-public',
-        user: 'vk-cs',
-        repo: 'docs-public',
-        botToken: process.env.github_vkbot_token || null,
+    gitOps: {
+        type: 'Github',
+        data: {
+            repoUrl: 'https://github.com/vk-cs/docs-public',
+            path: '',
+            user: 'vk-cs',
+            repo: 'docs-public',
+            botToken: process.env.GITHUB_BOT_TOKEN || null,
+        },
+    },
+    feedback: {
+        // Параметры обратной связи для дизлайка
+        dislike: {
+            templateId: 26083, // Шаблон письма для фидбэка из mailer.mail.ru
+            emails: ['public-docs@cloud.vk.com'], // Куда отправлять
+        },
     },
     paths: {
         policy: '/additionals/start/legal/policy-privacy',
@@ -73,8 +84,10 @@ export const config = {
     enablers: {
         auth: true,
         likeDislike: true,
+        dislikeFeedbackForm: true,
         sentry: true,
-        editOnGithub: true,
+        suggester: true,
+        editOnGitOps: true,
         telegramSupport: true,
     },
     translations: {
