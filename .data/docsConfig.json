@@ -58,7 +58,8 @@
           "iconPartialPath": "/ru/assets/private-cloud-icon.svg"
         }
       ]
-    }
+    },
+    "showRelatedSitesArticleIntermediate": false
   },
   "contacts": {
     "useNativeSupportUrl": false,
@@ -71,11 +72,23 @@
     "signInUrl": "https://msk.cloud.vk.com/app/signin",
     "signOutUrl": "https://msk.cloud.vk.com/app/signout"
   },
-  "github": {
-    "repoUrl": "https://github.com/vk-cs/docs-public",
-    "user": "vk-cs",
-    "repo": "docs-public",
-    "botToken": null
+  "gitOps": {
+    "type": "Github",
+    "data": {
+      "repoUrl": "https://github.com/vk-cs/docs-public",
+      "path": "",
+      "user": "vk-cs",
+      "repo": "docs-public",
+      "botToken": null
+    }
+  },
+  "feedback": {
+    "dislike": {
+      "templateId": 26083,
+      "emails": [
+        "public-docs@cloud.vk.com"
+      ]
+    }
   },
   "paths": {
     "policy": "/additionals/start/legal/policy-privacy",
@@ -90,12 +103,12 @@
   "enablers": {
     "auth": true,
     "likeDislike": true,
+    "dislikeFeedbackForm": true,
     "sentry": true,
-    "editOnGithub": true,
-    "telegramSupport": true,
-    "alerting": false,
     "suggester": true,
     "editOnGitOps": true,
+    "telegramSupport": true,
+    "alerting": false,
     "footerPolicyLink": true,
     "autoNumberInHeaders": false
   },
@@ -114,7 +127,6 @@
       "common"
     ]
   },
-  "basePartnerPath": "docs-private",
   "docs": {
     "baseDir": "docs",
     "sectionIconName": "icon.svg"
