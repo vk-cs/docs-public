@@ -3,7 +3,7 @@
 
   Доступные точки присутствия VK Cloud:
 
-  - [DataLine NORD4](https://www.dtln.ru/tsod-nord): г. Москва, Коровинское шоссе, 41, стойка 6H4J150 или 6H4J130.
+  - [DataLine NORD4](https://www.dtln.ru/tsod-nord): г. Москва, Коровинское шоссе, 41, стойки 5H1J020, 6H4J150, 6H4J130.
   - [Гознак](https://tech.goznak.ru/dc-goznak-moscow): г. Москва, проспект Мира, 105, строение 6, 3-й этаж, зал 303, стойка A9 или A10.
   - [Медведково](https://dcnetwork.ru/dc/moscow): г. Москва, ул. Чермянская, вл. 4, стр. 1, зал 30H11, стойка 30H11A170 U47 или 30H11B170 U47.
 
