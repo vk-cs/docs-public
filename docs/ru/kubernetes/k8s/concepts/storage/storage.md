@@ -22,7 +22,7 @@
 
 - Блочные хранилища:
 
-  - На базе [Ceph](https://ceph.io/en/). Для обеспечения отказоусточивости и сохранности данных хранилище состоит из трех реплик, находящихся в разных серверных стойках. Хранилище может использовать HDD- или SSD-диски.
+  - На базе [Ceph](https://ceph.io/en/). Для обеспечения отказоустойчивости и сохранности данных хранилище состоит из трех реплик, находящихся в разных серверных стойках. Хранилище использует SSD-диски.
 
   - На базе высокопроизводительных [NVMe](https://www.snia.org/education/what-is-nvme) SSD-дисков (High-IOPS SSD). Такое хранилище подключается по протоколу [iSCSI](https://www.snia.org/education/what-is-iscsi). Для обеспечения отказоусточивости и сохранности данных на уровне хранилища применяется аппаратный RAID-10.
 
@@ -34,7 +34,6 @@
 
 Типы хранилищ, доступные в кластере Kubernetes через Cinder CSI, соотносятся с блочными хранилищами VK Cloud следующим образом:
 
-- Ceph HDD соответствует `ceph-hdd` в Cinder.
 - Ceph SSD соответствует `ceph-ssd` в Cinder.
 - High-IOPS SSD соответствует `high-iops` в Cinder.
 
@@ -88,12 +87,6 @@
 
 | Наименование<br>класса хранения | Тип хранилища<br>Cinder CSI | Зона<br>доступности | Reclaim<br>Policy |
 | ------------------------------- | --------------------------- | ------------------- | ----------------- |
-| csi-ceph-hdd-gz1                | `ceph-hdd`                  | GZ1                 | Delete            |
-| csi-ceph-hdd-gz1-retain         | `ceph-hdd`                  | GZ1                 | Retain            |
-| csi-ceph-hdd-ms1                | `ceph-hdd`                  | MS1                 | Delete            |
-| csi-ceph-hdd-ms1-retain         | `ceph-hdd`                  | MS1                 | Retain            |
-| csi-ceph-hdd-me1                | `ceph-hdd`                  | ME1                 | Delete            |
-| csi-ceph-hdd-me1-retain         | `ceph-hdd`                  | ME1                 | Retain            |
 | csi-ceph-ssd-gz1                | `ceph-ssd`                  | GZ1                 | Delete            |
 | csi-ceph-ssd-gz1-retain         | `ceph-ssd`                  | GZ1                 | Retain            |
 | csi-ceph-ssd-ms1                | `ceph-ssd`                  | MS1                 | Delete            |

@@ -22,7 +22,7 @@ To create an MLflow instance:
     - **Name of instance**: display name of the instance, also specifies the OS hostname. The name can only contain Latin letters, numbers and special characters `-`, `_` and `.`.
     - **Category of virtual machine**: defines a list of preinstalled VM configurations in the **Type of virtual machine** box. More details in [review of the Cloud Servers service](/en/computing/iaas/concepts/about#flavors).
     - **Type of virtual machine**: preset VM configuration (CPU and RAM).
-    - **Availability zone**: selecting the [data center](/en/intro/start/concepts/architecture#availability_zones_567cfd7a) where the instance will be launched.
+    - **Availability zone**: selecting the [data center](/en/intro/start/concepts/architecture#az) where the instance will be launched.
     - **Enable MLflow demo**: if the option is enabled, all data will be stored on the instance VM, if disabled, an S3 bucket with the PostgreSQL DBaaS database will be connected to store data. To save working data, use the demo mode only to get acquainted with the functionality.
     - **Disk Size**: sets the size of the VM data disk in GB. The minimum value is 20 GB. When an instance is created, a root disk and an additional data disk are connected to it. The root disk size is fixed - 25 GB. You can only change the size of the data disk.
     - **Disk type**: [type](/en/computing/iaas/concepts/volume-sla/) of the disk to be created.

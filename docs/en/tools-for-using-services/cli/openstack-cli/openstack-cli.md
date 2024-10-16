@@ -261,7 +261,7 @@ The instruction is written using the example of Python 3.10.11 and Microsoft C++
 
    </details>
 
-- Get the list of [availability zones](/en/intro/start/concepts/architecture#availability_zones_567cfd7a):
+- Get the list of [availability zones](/en/intro/start/concepts/architecture#az):
 
    ```bash
    openstack availability zone list

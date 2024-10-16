@@ -100,7 +100,7 @@ Two options for VM configuration will be considered: without additional settings
    </tabpanel>
    <tabpanel>
 
-   In the section about [availability zones](/en/intro/start/architecture#availability_zones_567cfd7a).
+   In the section about [availability zones](/en/intro/start/architecture#az).
 
    </tabpanel>
    </tabs>
