@@ -90,7 +90,12 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
 1. Set:
 
-   - **Cluster name:** must begin with a letter. Can only consist of lowercase latin letters, numbers and hyphens `-` as a separator.
+   - **Cluster name**: must start with a letter. Can only contain lowercase Latin letters, numbers, and hyphens `-` as a separator.
+
+   - **Cluster type**:
+
+     - **Standard**: all cluster master nodes will be located in one [availability zone](/en/intro/start/concepts/architecture#az). Fault tolerance is provided at the zone level.
+     - **Regional**: cluster master nodes will be located in each of the three availability zones, which allows maintaining control even if one of the zones fails. The total number of master nodes is 3 or more.
 
    - Master node settings:
 
@@ -100,8 +105,8 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
        Templates with high-performance CPUs are available upon request to support. See [Available computing resources](../../../concepts/flavors#configuration_templates) for details.
 
-     - **Availability zone:** [availability zone](../../../../../tools-for-using-services/account/concepts/regions) for nodes.
-     - **Master disk type:** [storage type](../../../concepts/storage#supported_vk_cloud_storage_types) which will be used by nodes.
+     - **Availability zone:** [availability zone](/en/intro/start/concepts/architecture#az) for nodes. All three availability zones are automatically selected for a regional cluster and cannot be changed.
+     - **Master disk type:** [storage type](../../../concepts/storage#storage_types) that will be used by nodes. The selected disk type affects cluster performance.
 
        <warn>
 
@@ -109,7 +114,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
        </warn>
 
-     - **Number of Master nodes:** must be an odd number. One node does not provide cluster high availability at the master node level, three nodes or more do.
+     - **Number of Master nodes:** must be an odd number. One node does not provide cluster high availability at the master node level, three nodes or more do. The numer of master nodes for the regional cluster is automatically set to `3`.
 
        For more information about cluster topologies, see [Architecture](../../../concepts/architecture#cluster_topologies).
 
@@ -117,9 +122,9 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
    - Network settings:
 
-     - **Network:** select the network and subnet where the cluster's master and worker nodes will be located. If the required network and subnet are not on the list, [create](../../../../../networks/vnet/networks/create-net) them.
+     - **Network:** select the network and subnet where the cluster master and worker nodes will be located. If the required network and subnet are not on the list, [create](/en/networks/vnet/networks/create-net) them.
 
-     - **Use load balancer network**: enable this option to use a separate subnet on the selected network for load balancers created by the cluster. If the required subnet is not on the list, [create](../../../../../networks/vnet/networks/create-net#creating_a_subnet) it.
+     - **Use load balancer network**: enable this option to use a separate subnet on the selected network for load balancers created by the cluster. If the required subnet is not on the list, [create](/en/networks/vnet/networks/create-net#creating_a_subnet) it.
 
        By default, the option is disabled and the load balancers use the same subnet as the cluster nodes.
 

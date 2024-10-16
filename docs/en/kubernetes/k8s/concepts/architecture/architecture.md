@@ -6,17 +6,21 @@ A Kubernetes Cloud Containers cluster consists of two types of nodes, master nod
 
 - Master nodes store cluster-wide state information and manage workload distribution across worker nodes.
 
-- Worker nodes perform the workload ([workload](https://kubernetes.io/docs/concepts/workloads/)). They can be organized into groups of worker nodes. Place groups in different [availability zones](/en/intro/start/architecture#availability_zones_567cfd7a) to improve fault tolerance.
+- Worker nodes perform the workload ([workload](https://kubernetes.io/docs/concepts/workloads/)). They can be organized into groups of worker nodes. Place groups in different [availability zones](/en/intro/start/architecture#az) to improve fault tolerance.
 
-Cluster high availablity depends on the number of master nodes. Possible configurations:
+Cluster high availablity depends on the number of master nodes and their distribution across [availability zones](/en/intro/start/concepts/architecture#az). Possible configurations:
 
-- Cluster with one master node.
+- Cluster of one master node.
 
   Such a cluster is not high available: even if there are several worker nodes and they are organized in groups, the cluster will become inoperative if the single master node is lost.
 
-- A cluster with an odd number of master nodes (at least three).
+- Standard Cloud Containers cluster of 3 or 5 master nodes.
 
-  Such a cluster is high available: if several master nodes are lost, it will remain operational as long as there is at least one working master node. The further level of fault tolerance depends on the number and configuration of groups of worker nodes.
+  Such a cluster is fault tolerant at the availability zone level: if the availability zone is stable and several master nodes are lost, it will remain operational as long as there is at least one working master node. The further level of fault tolerance depends on the number and configuration of worker node groups.
+
+- Regional Cloud Containers cluster of 3 or 5 master nodes.
+
+  Master nodes of a regional cluster are distributed across all availability zones of a region. Such a cluster is maximally fault-tolerant: if one availability zone fails, the load will be distributed between the master nodes located in other availability zones.
 
 Regardless of the cluster topology chosen, the master nodes use distributed key-value storage [etcd](https://etcd.io/) to store information about the state of the cluster:
 

@@ -78,7 +78,7 @@ The status of the availability zones, services and infrastructure of VK Cloud ca
 
 </info>
 
-### Availability zones
+### {heading(Availability zones)[id=az]}
 
 Each availability zone has one or more data processing centers (data centers) where cloud infrastructure objects are physically located. In VK Cloud, the availability zone corresponds to a separate Tier III data center. VK Cloud provides availability zones:
 

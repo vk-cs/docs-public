@@ -12,11 +12,11 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
 ## Before creating cluster
 
-1. Familiarize yourself with the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits/) for the [region](/en/tools-for-using-services/account/concepts/regions/) in which you plan to create the cluster. Different quotas may be configured for different regions.
+1. Check out the available resources and [quotas](/en/tools-for-using-services/account/concepts/quotasandlimits/) for the [region](/en/tools-for-using-services/account/concepts/regions/) in which you plan to create the cluster. Different quotas may be configured for different regions.
 
    If you want to increase the quotas, write to [technical support](mailto:support@mcs.mail.ru).
 
-1. Familiarize yourself with [Terraform features](../../helpers/terraform-howto/) in the container service.
+1. Read about [Terraform features](../../helpers/terraform-howto/) in the container service.
 
 1. [Install Terraform and configure the environment](/en/tools-for-using-services/terraform/quick-start) if it is not already done.
 
@@ -88,7 +88,7 @@ Usage of this load balancer is [charged](/en/networks/vnet/tariffs).
 
       ```hcl
       data "vkcs_kubernetes_clustertemplate" "k8s-template" {
-          version = "<version of Kubernetes>"
+          version = "<VERSION_OF_KUBERNETES>"
       }
       ```
 
@@ -101,21 +101,30 @@ Add the cluster resource to the configuration file:
 ```hcl
 resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   name                = "k8s-cluster"
+  cluster_type        = "<CLUSTER_TYPE>"
   cluster_template_id = data.vkcs_kubernetes_clustertemplate.k8s-template.id
   master_flavor       = data.vkcs_compute_flavor.k8s-master-flavor.id
-  master_count        = <number of master nodes>
-  network_id          = "<network ID>"
-  subnet_id           = "<subnet ID>"
-  availability_zone   = "<availability zone>"
-  floating_ip_enabled = <true or false: whether to assign public IP address to the cluster's API endpoint>
+  master_count        = <NUMBER_OF_MASTER_NODES>
+  cluster_node_volume_type = "<VOLUME_TYPE>"
+  network_id          = "<NETWORK_ID>"
+  subnet_id           = "<SUBNET_ID>"
+  availability_zone   = "<AVAILABILITY_ZONE"
+  floating_ip_enabled = true
 }
 ```
 
-Some clarification:
+Here:
 
-- The number of master nodes `master_count` must be an odd number (1, 3, 5, and so on). See [Architecture](../../../concepts/architecture/) for details.
+- `cluster_type` — cluster type:
 
-- The `network_id` and `subnet_id` identifiers can be specified in different ways:
+  - `standard` (default) — all cluster master nodes will be located in one [availability zone](/en/intro/start/concepts/architecture#az). Fault tolerance is provided at the zone level.
+  - `regional` — cluster master nodes will be located in each of the three availability zones, which allows maintaining control even if one of the zones fails. The total number of master nodes is 3 or more.
+
+- `master_count` — the number of master nodes. Must be an odd number. For a standard cluster, the number of master nodes must be `1`, `3`, or `5`. For a regional cluster, the number must be `3` or `5`. For more information, see the [Service architecture](../../../concepts/architecture/) section.
+- `cluster_node_volume_type` — the volume type for [storage](../../../concepts/storage#storage_types) that will be used by nodes. The selected volume type affects the cluster performance. Available values: `ceph-ssd` (default) and `high-iops`.
+- `availability_zone` — cluster availability zone. Use this parameter if the cluster type is standard. For the `Moscow` region, specify one of three availability zones: `ME1`, `MS1`, or `GZ1`.
+- `availability_zones` — cluster availability zones. Use this parameter if the cluster type is regional. For the `Moscow` region, specify three availability zones: `["ME1", "MS1", "GZ1"]`. If the cluster is regional and the `availability_zones` parameter is not specified, availability zones will be set up automatically.
+- `network_id` and `subnet_id` are the network and subnet identifiers, respectively. They can be specified in different ways:
 
   <tabs>
   <tablist>
@@ -191,12 +200,12 @@ Some clarification:
   </tabpanel>
   </tabs>
 
-- For the `Moscow` region, specify one of three availability zones in the `availability_zone` parameter: `ME1`, `MS1` or `GZ1`.
+- `floating_ip_enabled` — assign a public IP address to the API cluster:
 
-- It is recommended to assign a public IP address to the cluster when creating it, so that you can access the cluster from the Internet (`floating_ip_enabled = true`). To assing such an IP address, it is necessary for the subnet with the `subnet_id` identifier to be [connected](/en/networks/vnet/concepts/ips-and-inet#organizing_internet_access) to the router which has access to the external network.
+  - `true` — when the cluster is created, a [floating IP address](/en/networks/vnet/concepts/ips-and-inet#floating_ip_address) will be assigned to access the cluster from the Internet. To assign such an IP address, the cluster subnet with the identifier `subnet_id` must be [connected](/en/networks/vnet/concepts/ips-and-inet#internet_access) to a router with access to the external network.
+  - `false` — the cluster will not be assigned a floating IP address.
 
-- If some of the add-ons are not needed, delete the corresponding lines from the `labels` block. See [Addons](../../../concepts/addons-and-settings/addons/) for details.
-- To install add-ons in the cluster via Terraform, [get the list of availible add-ons](../../addons/manage-addons#348-tabpanel-1) and [install that you need](../../addons/advanced-installation).
+To install add-ons in the cluster via Terraform, [get the list of availible add-ons](../../addons/manage-addons#348-tabpanel-1) and [install that you need](../../addons/advanced-installation).
 
 ## 3. Describe the configuration of one or more worker node groups
 
