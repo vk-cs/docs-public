@@ -15,7 +15,7 @@ The following rules apply:
 
 1. If a router with a public IP address is connected to the subnet, the `SNAT` port of the router will be assigned a random address from the remaining DHCP IP address pool.
 
-## Organizing internet access
+## Internet access
 
 In order for objects in the subnet to have access to the Internet, you need to connect a [router](../router) to the subnet with access to [external network](../net-types#external_network).
 
@@ -29,7 +29,7 @@ For [virtual machine](/en/computing/iaas/concepts/about#virtual_machines) the In
 - Connect the VM to an external network. In this way, a subnet and external IP address will be automatically assigned to it.
 - Connect the VM to a private subnet that is connected to a router with access to an external network, and assign it a floating IP address. In this way, the IP address can be set manually or automatically.
 
-## Floating IP adress
+## Floating IP address
 
 A floating IP address (DNAT) is a static IP address that can be dynamically reassigned between resources in a cloud environment. Floating IP is used through [SDN](../architecture#sdns_used), which allows the network administrator to move IP addresses between devices without having to change the physical or virtual network configuration. This allows you to switch traffic between different servers without changing the configuration of the servers themselves.
 

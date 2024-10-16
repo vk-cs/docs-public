@@ -18,11 +18,11 @@ Cloud Containers clusters are tightly integrated with the VK Cloud platform to h
 - The cluster [supports](#supported_vk_cloud_storage_types) storage provided by the VK Cloud platform. Block storage support is implemented using [Cinder CSI](#working_with_container_storage_interface_csi).
 - [Pre-configured storage classes](#pre_configured_storage_classes) that implement different [persistent volume reclaim policies](../../reference/pvs-and-pvcs#4_reclaiming_830589dc) are available for block storage in the cluster.
 
-## Supported VK Cloud storage types
+## {heading(Supported VK Cloud storage types)[id=storage_types]}
 
 - Block storages:
 
-  - Based on [Ceph](https://ceph.io/en/). To ensure fault tolerance and data integrity, the storage consists of three replicas located in different server racks. The storage can use HDD or SSD disks.
+  - Based on [Ceph](https://ceph.io/en/). To ensure fault tolerance and data integrity, the storage consists of three replicas located in different server racks. The storage uses SSD disks.
 
   - Based on high-performance [NVMe](https://www.snia.org/education/what-is-nvme) SSD disks (High-IOPS SSD). Such storage is connected via [iSCSI](https://www.snia.org/education/what-is-iscsi). Hardware RAID-10 is used to provide fault tolerance and data integrity at the storage level.
 
@@ -34,7 +34,6 @@ Kubernetes clusters use [OpenStack Cinder](https://docs.openstack.org/cinder/lat
 
 The storage types available in a Kubernetes cluster via Cinder CSI correlate with VK Cloud block storage as follows:
 
-- Ceph HDD corresponds to `ceph-hdd` in Cinder.
 - Ceph SSD corresponds to `ceph-ssd` in Cinder.
 - High-IOPS SSD corresponds to `high-iops` in Cinder.
 
@@ -85,12 +84,6 @@ Each storage class has a distinct reclaim policy confugured for it.
 
 | Storage class<br>name           | Cinder CSI<br>storage type  | Availability<br>zone | Reclaim<br>Policy |
 | ------------------------------- | --------------------------- | ------------------- | ----------------- |
-| csi-ceph-hdd-gz1                | `ceph-hdd`                  | GZ1                 | Delete            |
-| csi-ceph-hdd-gz1-retain         | `ceph-hdd`                  | GZ1                 | Retain            |
-| csi-ceph-hdd-ms1                | `ceph-hdd`                  | MS1                 | Delete            |
-| csi-ceph-hdd-ms1-retain         | `ceph-hdd`                  | MS1                 | Retain            |
-| csi-ceph-hdd-me1                | `ceph-hdd`                  | ME1                 | Delete            |
-| csi-ceph-hdd-me1-retain         | `ceph-hdd`                  | ME1                 | Retain            |
 | csi-ceph-ssd-gz1                | `ceph-ssd`                  | GZ1                 | Delete            |
 | csi-ceph-ssd-gz1-retain         | `ceph-ssd`                  | GZ1                 | Retain            |
 | csi-ceph-ssd-ms1                | `ceph-ssd`                  | MS1                 | Delete            |

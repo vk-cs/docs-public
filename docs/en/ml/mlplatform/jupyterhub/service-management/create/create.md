@@ -22,7 +22,7 @@ To create a JupyterHub instance:
     - **Name of instance**: display name of the instance, also sets the hostname in the OS. The name can only contain Latin letters, numbers and the special characters `-`, `_` and `.`.
     - **Category of virtual machine**: defines a list of preinstalled VM configurations in the **Type of virtual machine** box. More details in [review of the Cloud Servers service](/en/computing/iaas/concepts/about#flavors).
     - **Type of virtual machine**: preset VM configuration (CPU and RAM).
-    - **Availability zone**: selecting the [data center](/en/intro/start/concepts/architecture#availability_zones_567cfd7a) where the instance will be launched.
+    - **Availability zone**: selecting the [data center](/en/intro/start/concepts/architecture#az) where the instance will be launched.
     - **Disk Size**: sets the size of the VM data disk in GB. The minimum value is 50 GB. When an instance is created, a root disk and an additional data disk are connected to it. The root disk size is fixed - 50 GB. You can only change the size of the data disk.
     - **Disk type**: [type](/en/computing/iaas/concepts/volume-sla/) of the disk to be created.
     - **Choosing a domain name**: sets the DNS name of the instance.

@@ -15,7 +15,7 @@ These settings are set when [creating a cluster](../../create-cluster) or when [
 
   - Storage settings:
 
-    - **Disk type:** [storage type](../../../concepts/storage#supported_vk_cloud_storage_types) to be used by nodes.
+    - **Disk type:** [storage type](../../../concepts/storage#storage_types) to be used by nodes.
 
       <warn>
 

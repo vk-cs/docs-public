@@ -12,7 +12,7 @@
 
 ## Перед созданием кластера
 
-1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits/) для [региона](../../../../../tools-for-using-services/account/concepts/regions/), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
+1. Ознакомьтесь с доступными ресурсами и [квотами](/ru/tools-for-using-services/account/concepts/quotasandlimits/) для [региона](/ru/tools-for-using-services/account/concepts/regions/), в котором планируется создать кластер. Для разных регионов могут быть настроены разные квоты.
 
    Если вы хотите увеличить квоты, напишите в [техническую поддержку](/ru/contacts).
 
@@ -88,7 +88,7 @@
 
       ```hcl
       data "vkcs_kubernetes_clustertemplate" "k8s-template" {
-          version = "<версия Kubernetes>"
+          version = "<ВЕРСИЯ_KUBERNETES>"
       }
       ```
 
@@ -100,22 +100,31 @@
 
 ```hcl
 resource "vkcs_kubernetes_cluster" "k8s-cluster" {
-  name                = "k8s-cluster"
-  cluster_template_id = data.vkcs_kubernetes_clustertemplate.k8s-template.id
-  master_flavor       = data.vkcs_compute_flavor.k8s-master-flavor.id
-  master_count        = <количество master-узлов>
-  network_id          = "<идентификатор сети>"
-  subnet_id           = "<идентификатор подсети>"
-  availability_zone   = "<зона доступности>"
-  floating_ip_enabled = <true или false: назначить ли публичный IP-адрес для API-кластера>
+  name                     = "k8s-cluster"
+  cluster_type             = "<ТИП_КЛАСТЕРА>"
+  cluster_template_id      = data.vkcs_kubernetes_clustertemplate.k8s-template.id
+  master_flavor            = data.vkcs_compute_flavor.k8s-master-flavor.id
+  master_count             = <КОЛИЧЕСТВО_MASTER_УЗЛОВ>
+  cluster_node_volume_type = "<ТИП_ДИСКА>"
+  network_id               = "<ИДЕНТИФИКАТОР_СЕТИ>"
+  subnet_id                = "<ИДЕНТИФИКАТОР_ПОДСЕТИ>"
+  availability_zone        = "<ЗОНА_ДОСТУПНОСТИ>"
+  floating_ip_enabled      = true
 }
 ```
 
-Некоторые пояснения:
+Здесь:
 
-- Количество master-узлов `master_count` должно быть нечетным числом (1, 3, 5 и так далее). Подробнее в разделе [Архитектура сервиса](../../../concepts/architecture/).
+- `cluster_type` — тип кластера:
 
-- Идентификаторы сети `network_id` и подсети `subnet_id` можно задать разными способами:
+  - `standart` (по умолчанию) — все master-узлы кластера будут располагаться в одной [зоне доступности](/ru/intro/start/concepts/architecture#az). Отказоустойчивость обеспечиваетя на уровне зоны.
+  - `regional` — master-узлы кластера будут располагаться в каждой из трех зон доступности, что позволяет сохранить управление даже при отказе одной из зон. Общее количество master-узлов — 3 или более.
+
+- `master_count` — количество master-узлов. Должно быть нечетным числом. Для стандартного кластера количество master-узлов должно быть `1`, `3` или `5`. Для регионального — `3` или `5`. Подробнее в разделе [Архитектура сервиса](../../../concepts/architecture/).
+- `cluster_node_volume_type` — тип диска для [хранения данных](../../../concepts/storage#podderzhivaemye_tipy_hranilishch_vk_cloud), который будет использоваться узлами. Выбранный тип диска влияет на производительность кластера. Доступные значения: `ceph-ssd` (по умолчанию) и `high-iops`.
+- `availability_zone` — зона доступности кластера. Используйте параметр, если тип кластера — стандартный. Для региона `Москва` укажите одну из трех зон доступности: `ME1`, `MS1` или `GZ1`.
+- `availability_zones` — зоны доступности кластера. Используйте параметр, если тип кластера — региональный. Для региона `Москва` укажите три зоны доступности: `["ME1", "MS1", "GZ1"]`. Если кластер региональный и параметр `availability_zones` не указан, зоны доступности будут подставлены автоматически.
+- `network_id` и `subnet_id` — идентификаторы сети и подсети соответственно. Их можно задать разными способами:
 
   <tabs>
   <tablist>
@@ -194,11 +203,12 @@ resource "vkcs_kubernetes_cluster" "k8s-cluster" {
   </tabpanel>
   </tabs>
 
-- Для региона `Москва` укажите одну из трех зон доступности `availability_zone`: `ME1`, `MS1` или `GZ1`.
+- `floating_ip_enabled` — назначить публичный IP-адрес для API-кластера:
 
-- Рекомендуется при создании кластера назначить ему публичный IP-адрес, чтобы можно было получить доступ к кластеру из интернета (`floating_ip_enabled = true`). Для назначения такого IP-адреса необходимо, чтобы подсеть кластера с идентификатором `subnet_id` была [подключена](/ru/networks/vnet/concepts/ips-and-inet#organizaciya_dostupa_v_internet) к маршрутизатору c доступом к внешней сети.
+  - `true` — при создании кластера ему будет назначен [плавающий IP-адрес](/ru/networks/vnet/concepts/ips-and-inet#plavayushchiy_ip_adres) для доступа к кластеру из интернета. Для назначения такого IP-адреса необходимо, чтобы подсеть кластера с идентификатором `subnet_id` была [подключена](/ru/networks/vnet/concepts/ips-and-inet#organizaciya_dostupa_v_internet) к маршрутизатору c доступом к внешней сети.
+  - `false` — кластеру не будет назначен плавающий IP-адрес.
 
-- Чтобы установить аддоны в кластер с помощью Terraform, [получите список доступных аддонов](../../addons/manage-addons#348-tabpanel-1) и [установите нужные](../../addons/advanced-installation).
+Чтобы установить аддоны в кластер с помощью Terraform, [получите список доступных аддонов](../../addons/manage-addons#348-tabpanel-1) и [установите нужные](../../addons/advanced-installation).
 
 ## 3. Опишите конфигурацию одной или нескольких групп worker-узлов
 
