@@ -25,6 +25,12 @@ The VPN service is based on [StrongSwan](https://www.strongswan.org) and allows 
 
 1. Configure the VPN on the client side, taking into account the configuration of the VK Cloud IPsec VPN server, which:
 
-   - works in the `main` mode;
-   - supports only authorization by pre-shared key;
-   - supports a limited subset of Diffie-Hellman groups.
+   - works in the `main` mode
+   - supports only authorization by pre-shared key
+   - supports a limited subset of Diffie-Hellman groups
+
+Read more about setting VPN:
+
+- [Managing VPN tunnels in SDN Sprut and SDN Neutron](../../service-management/vpn/).
+- [Example of creaing VPN tunnel in SDN Sprut](../../how-to-guides/advanced-router/).
+- [Example of creaing VPN tunnel in SDN Neutron](../../how-to-guides/vpn-tunnel/).
