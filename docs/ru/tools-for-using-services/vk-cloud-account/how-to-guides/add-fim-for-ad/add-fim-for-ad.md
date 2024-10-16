@@ -36,9 +36,32 @@
 1. [Создайте отношение доверия](https://learn.microsoft.com/ru-ru/windows-server/identity/ad-fs/operations/create-a-relying-party-trust#to-create-a-claims-aware-relying-party-trust-using-federation-metadata) с помощью метаданных федерации. Используйте XML-файл с метаданными, полученный при создании федерации.
 1. Настройте соответствие между атрибутами пользователя и типами исходящих утверждений AD FS (Claims Mapping), для этого [добавьте](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/checklist--creating-claim-rules-for-a-relying-party-trust) правила:
 
-   - отправка учетной записи ([Send an Authentication Method Claim](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-an-authentication-method-claim));
-   - отправка атрибутов пользователя ([Send LDAP Attributes as Claims](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-ldap-attributes-as-claims));
-   - отправка членства в группах ([Send Group Membership as a Claim](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-group-membership-as-a-claim)).
+   - Преобразование входящего утверждения ([Transform an Incoming Claim](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-transform-an-incoming-claim)):
+
+      - **Type**: `Transform an Incoming Claim`.
+      - **Claim rule name**: `Name ID`.
+      - **Incomming claim type**: `Windows account name`.
+      - **Outgoing claim type**: `Name ID`.
+      - **Outgoing name ID format**: `Windows Qualified Domain Name`.
+   - Отправка атрибутов пользователя ([Send LDAP Attributes as Claims](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-ldap-attributes-as-claims)):
+
+      - **Type**: `Send LDAP Attributes as Claims`.
+      - **Claim rule name**: `Attributes`.
+      - **Attribute store**: `Active Directory`.
+      - **Mapping of LDAP attributes to outgoing claim types**: установите следующие соответствия:
+
+         - `E-Mail-Adresses` → `E-Mail Address`.
+         - `SAM-Account-Name` → `Subject Name`.
+         - `Given-Name` → `Name`.
+         - `Surname` → `Surname`.
+         - `Telephone-Number` → `phone_number`.
+   - Отправка членства в группах ([Send Group Membership as a Claim](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-group-membership-as-a-claim)):
+
+      - **Type**: `Send Group Membership as a Claim`.
+      - **Claim rule name**: `<НАЗВАНИЕ_ГРУППЫ>` (например, `Domain Users`).
+      - **User’s group**: `<ДОМЕН>\<НАЗВАНИЕ_ГРУППЫ>`.
+      - **Outgoing claim type**: `Group`.
+      - **Outgoing claim value**: `<НАЗВАНИЕ_ГРУППЫ>`.
 
 ## 3. Настройте связь групп и ролей в VK Cloud
 
@@ -53,7 +76,7 @@
    1. Нажмите кнопку **Добавить**. Если на странице уже есть созданные группы, нажмите кнопку **Добавить группу**.
    1. Настройте группу:
 
-      - **Имя группы**: укажите название группы Active Directory, в которой состоит пользователь.
+      - **Имя группы**: укажите название группы Active Directory, в которой состоит пользователь. Название должно совпадать с полем **Outgoing claim value** правил AD FS, настроенных ранее.
       - **Разрешения**:
          - Выберите **Проект**, чтобы связать группу и роли в рамках одного проекта. В разных проектах можно связать одну и ту же группу с разными ролями, что позволит разграничить уровень доступа федеративного пользователя к проектам.
          - Выберите **Домен**, чтобы связать группу и роли во всех проектах одного владельца и предоставить федеративному пользователю единый уровень доступа к ним. Разрешение **Домен** доступно только владельцу проекта.
