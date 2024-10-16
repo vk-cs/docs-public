@@ -99,6 +99,7 @@
     </info>
 
     ```ini
+    [DEFAULT]
     wim_file_path=D:\Temp\install.wim
     image_name=Windows Server 2016 SERVERSTANDARDCORE
     image_path=D:\Win_Server_2016_img.raw
