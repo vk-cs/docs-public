@@ -35,9 +35,33 @@ The following credentials will appear on the **Federations** tab:
 
 1. Create a relying party trust using federation metadata. Use the XML metadata file. [Instructions here](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-relying-party-trust#to-create-a-claims-aware-relying-party-trust-using-federation-metadata).
 1. Configure the mapping between user attributes and AD FS outgoing claim types (Claims Mapping). Add the following rules:
-   - Sending an authentication method claim: [Send an Authentication Method Claim](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-an-authentication-method-claim)
-   - Sending LDAP attributes as claims: [Send LDAP Attributes as Claims](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-ldap-attributes-as-claims)
-   - Sending group membership as a claim: [Send Group Membership as a Claim](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-group-membership-as-a-claim)
+
+   - [Transform an Incoming Claim](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-transform-an-incoming-claim):
+
+      - **Type**: `Transform an Incoming Claim`.
+      - **Claim rule name**: `Name ID`.
+      - **Incomming claim type**: `Windows account name`.
+      - **Outgoing claim type**: `Name ID`.
+      - **Outgoing name ID format**: `Windows Qualified Domain Name`.
+   - [Send LDAP Attributes as Claims](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-ldap-attributes-as-claims):
+
+      - **Type**: `Send LDAP Attributes as Claims`.
+      - **Claim rule name**: `Attributes`.
+      - **Attribute store**: `Active Directory`.
+      - **Mapping of LDAP attributes to outgoing claim types**: set the following matches:
+
+         - `E-Mail-Adresses` → `E-Mail Address`.
+         - `SAM-Account-Name` → `Subject Name`.
+         - `Given-Name` → `Name`.
+         - `Surname` → `Surname`.
+         - `Telephone-Number` → `phone_number`.
+   - [Send Group Membership as a Claim](https://learn.microsoft.com/en-us/windows-server/identity/ad-fs/operations/create-a-rule-to-send-group-membership-as-a-claim):
+
+      - **Type**: `Send Group Membership as a Claim`.
+      - **Claim rule name**: `<NAME_OF_GROUP>` (for instance, `Domain Users`).
+      - **User’s group**: `<DOMEN>\<NAME_OF_GROUP>`.
+      - **Outgoing claim type**: `Group`.
+      - **Outgoing claim value**: `<NAME_OF_GROUP>`.
 
 ## 3. Configure role and group mapping in VK Cloud
 
@@ -51,7 +75,7 @@ Configuring a relationship between AD FS groups and VK Cloud roles is available 
 
    1. Click the **Add** button. If there are already created groups on the page, click the **Add group** button.
    1. Configure the group:
-      - **Group name**: specify the name of the Active Directory group that the user is a member of.
+      - **Group name**: specify the name of the Active Directory group that the user is a member of. The name must be the same as in the **Outgoing claim value** box of the AD FS rules configured earlier.
       - **Permissions**:
          - Select **Project** to associate the group and roles within the same project. You can associate the same group with different roles in different projects, which allows you to differentiate the level of federated user access to projects.
          - Select **Domain** to associate the group and roles across all projects. The **Domain** permission is only available to the project owner and provides the federated user with the same access level to all projects owned by the owner.
