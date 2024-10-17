@@ -6,8 +6,6 @@
   "metaDescription": "Setting up two-factor authentication for users to connect to remote desktops.",
   "sectionTitle": "Setting up two-factor authentication",
   "icon": "",
-  "isBeta": true,
-  "hidden": true,
   "weight": 3,
   "uuid": "94010c9a-60e8-4f5b-b0fc-412917ce1f42"
 }
