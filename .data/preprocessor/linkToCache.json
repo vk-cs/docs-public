@@ -1,4 +1,9 @@
 {
+  "az": {
+    "number": null,
+    "full": "Зоны доступности",
+    "text": "Зоны доступности"
+  },
   "prepayment": {
     "number": null,
     "full": "Prepayment",
@@ -118,6 +123,11 @@
     "number": null,
     "full": "Kube Prometheus Stack",
     "text": "Kube Prometheus Stack"
+  },
+  "storage_types": {
+    "number": null,
+    "full": "Supported VK Cloud storage types",
+    "text": "Supported VK Cloud storage types"
   },
   "autoscaling": {
     "number": null,
@@ -328,11 +338,6 @@
     "number": null,
     "full": "Просмотр SDN проекта",
     "text": "Просмотр SDN проекта"
-  },
-  "az": {
-    "number": null,
-    "full": "Зоны доступности",
-    "text": "Зоны доступности"
   },
   "prepay": {
     "number": null,

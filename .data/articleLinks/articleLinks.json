@@ -1829,7 +1829,7 @@
   ],
   [
     "/en/computing/iaas/faq",
-    "http://localhost:3000/docs/en/intro/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
     "/en/computing/iaas/faq",
@@ -1889,7 +1889,7 @@
   ],
   [
     "/en/computing/cloud-desktops/service-management/config/setup-net",
-    "http://localhost:3000/docs/en/intro/start/concepts/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#az"
   ],
   [
     "/en/computing/cloud-desktops/service-management/config/setup-net",
@@ -2158,6 +2158,18 @@
   [
     "/en/networks/vnet/concepts/vpn",
     "http://localhost:3000/docs/en/networks/vnet/concepts/net-types#external_network"
+  ],
+  [
+    "/en/networks/vnet/concepts/vpn",
+    "http://localhost:3000/docs/en/networks/vnet/service-management/vpn"
+  ],
+  [
+    "/en/networks/vnet/concepts/vpn",
+    "http://localhost:3000/docs/en/networks/vnet/how-to-guides/advanced-router"
+  ],
+  [
+    "/en/networks/vnet/concepts/vpn",
+    "http://localhost:3000/docs/en/networks/vnet/how-to-guides/vpn-tunnel"
   ],
   [
     "/en/networks/vnet/concepts/net-types",
@@ -2529,7 +2541,7 @@
   ],
   [
     "/en/networks/vnet/service-management/advanced-router/manage-advanced-routers",
-    "http://localhost:3000/docs/en/additionals/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/additionals/start/architecture#az"
   ],
   [
     "/en/networks/vnet/service-management/advanced-router/manage-advanced-routers",
@@ -2733,7 +2745,7 @@
   ],
   [
     "/en/networks/balancing/service-management/manage-lb",
-    "http://localhost:3000/docs/en/intro/start/concepts/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#az"
   ],
   [
     "/en/networks/balancing/service-management/manage-lb",
@@ -2749,7 +2761,7 @@
   ],
   [
     "/en/networks/balancing/service-management/manage-lb",
-    "http://localhost:3000/docs/en/intro/start/concepts/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#az"
   ],
   [
     "/en/networks/balancing/service-management/manage-lb",
@@ -3385,7 +3397,7 @@
   ],
   [
     "/en/dbs/dbaas/concepts/about",
-    "http://localhost:3000/docs/en/intro/start/concepts/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#az"
   ],
   [
     "/en/dbs/dbaas/concepts/about",
@@ -3505,7 +3517,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-single-replica",
-    "http://localhost:3000/docs/en/intro/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-single-replica",
@@ -3561,7 +3573,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/intro/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3585,7 +3597,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/intro/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3601,7 +3613,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/intro/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3625,7 +3637,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/intro/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3665,7 +3677,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/intro/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -3717,7 +3729,7 @@
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
-    "http://localhost:3000/docs/en/intro/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
     "/en/dbs/dbaas/service-management/create/create-cluster",
@@ -4025,7 +4037,11 @@
   ],
   [
     "/en/kubernetes/k8s/concepts/architecture",
-    "http://localhost:3000/docs/en/intro/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
+  ],
+  [
+    "/en/kubernetes/k8s/concepts/architecture",
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#az"
   ],
   [
     "/en/kubernetes/k8s/concepts/architecture",
@@ -4445,6 +4461,10 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
     "http://localhost:3000/docs/en/computing/iaas/concepts/about#flavors"
   ],
   [
@@ -4457,11 +4477,11 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/regions"
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#az"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/storage#supported_vk_cloud_storage_types"
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/storage#storage_types"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-webui",
@@ -4537,15 +4557,19 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-terraform",
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/en/kubernetes/k8s/service-management/create-cluster/create-terraform",
     "http://localhost:3000/docs/en/kubernetes/k8s/concepts/architecture"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-terraform",
-    "http://localhost:3000/docs/en/networks/vnet/concepts/ips-and-inet#organizing_internet_access"
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/storage#storage_types"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-terraform",
-    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/addons-and-settings/addons"
+    "http://localhost:3000/docs/en/networks/vnet/concepts/ips-and-inet#internet_access"
   ],
   [
     "/en/kubernetes/k8s/service-management/create-cluster/create-terraform",
@@ -5117,7 +5141,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
-    "http://localhost:3000/docs/en/intro/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
     "/en/kubernetes/k8s/service-management/addons/advanced-installation/install-advanced-jaeger",
@@ -5449,7 +5473,7 @@
   ],
   [
     "/en/kubernetes/k8s/service-management/helpers/node-group-settings",
-    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/storage#supported_vk_cloud_storage_types"
+    "http://localhost:3000/docs/en/kubernetes/k8s/concepts/storage#storage_types"
   ],
   [
     "/en/kubernetes/k8s/service-management/helpers/node-group-settings",
@@ -6085,7 +6109,7 @@
   ],
   [
     "/en/data-processing/kafka/service-management/create",
-    "http://localhost:3000/docs/en/intro/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
     "/en/data-processing/kafka/service-management/create",
@@ -6097,7 +6121,7 @@
   ],
   [
     "/en/data-processing/kafka/service-management/create",
-    "http://localhost:3000/docs/en/intro/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
     "/en/data-processing/kafka/service-management/create",
@@ -6205,7 +6229,7 @@
   ],
   [
     "/en/ml/mlplatform/jupyterhub/service-management/create",
-    "http://localhost:3000/docs/en/intro/start/concepts/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#az"
   ],
   [
     "/en/ml/mlplatform/jupyterhub/service-management/create",
@@ -6253,7 +6277,7 @@
   ],
   [
     "/en/ml/mlplatform/mlflow/service-management/create",
-    "http://localhost:3000/docs/en/intro/start/concepts/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#az"
   ],
   [
     "/en/ml/mlplatform/mlflow/service-management/create",
@@ -7329,7 +7353,7 @@
   ],
   [
     "/en/tools-for-using-services/account/concepts/regions",
-    "http://localhost:3000/docs/en/intro/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
     "/en/tools-for-using-services/account/concepts/regions",
@@ -7533,7 +7557,7 @@
   ],
   [
     "/en/tools-for-using-services/cli/openstack-cli",
-    "http://localhost:3000/docs/en/intro/start/concepts/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/concepts/architecture#az"
   ],
   [
     "/en/tools-for-using-services/terraform/quick-start",
@@ -7565,7 +7589,7 @@
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
-    "http://localhost:3000/docs/en/intro/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/iaas/create",
@@ -7845,7 +7869,7 @@
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing",
-    "http://localhost:3000/docs/en/intro/start/architecture#availability_zones_567cfd7a"
+    "http://localhost:3000/docs/en/intro/start/architecture#az"
   ],
   [
     "/en/tools-for-using-services/terraform/how-to-guides/vnet/networks-routing",
@@ -10664,6 +10688,18 @@
     "http://localhost:3000/docs/ru/networks/vnet/concepts/net-types#vneshnyaya_set"
   ],
   [
+    "/ru/networks/vnet/concepts/vpn",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/vpn"
+  ],
+  [
+    "/ru/networks/vnet/concepts/vpn",
+    "http://localhost:3000/docs/ru/networks/vnet/how-to-guides/advanced-router"
+  ],
+  [
+    "/ru/networks/vnet/concepts/vpn",
+    "http://localhost:3000/docs/ru/networks/vnet/how-to-guides/vpn-tunnel"
+  ],
+  [
     "/ru/networks/vnet/concepts/net-types",
     "http://localhost:3000/docs/ru/networks/vnet/service-management"
   ],
@@ -13349,6 +13385,10 @@
   ],
   [
     "/ru/kubernetes/k8s/concepts/architecture",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/ru/kubernetes/k8s/concepts/architecture",
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/versions"
   ],
   [
@@ -13797,7 +13837,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions/"
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
@@ -13813,6 +13853,10 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
     "http://localhost:3000/docs/ru/computing/iaas/concepts/about#shablony_konfiguraciy"
   ],
   [
@@ -13825,7 +13869,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-webui",
@@ -13885,7 +13929,7 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-terraform",
-    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions"
+    "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/regions/"
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-terraform",
@@ -13905,7 +13949,15 @@
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-terraform",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/ru/kubernetes/k8s/service-management/create-cluster/create-terraform",
     "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/architecture"
+  ],
+  [
+    "/ru/kubernetes/k8s/service-management/create-cluster/create-terraform",
+    "http://localhost:3000/docs/ru/kubernetes/k8s/concepts/storage#podderzhivaemye_tipy_hranilishch_vk_cloud"
   ],
   [
     "/ru/kubernetes/k8s/service-management/create-cluster/create-terraform",

@@ -1478,7 +1478,7 @@
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/config/setup-saml/setup-saml.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/en/computing/cloud-desktops/service-management/config/setup-saml/setup-saml.md",
     "variables": {},
-    "hidden": true,
+    "hidden": false,
     "version": null,
     "buildPoints": [
       "common"
@@ -11033,7 +11033,7 @@
     "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-saml/setup-saml.meta.json",
     "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/computing/cloud-desktops/service-management/config/setup-saml/setup-saml.md",
     "variables": {},
-    "hidden": true,
+    "hidden": false,
     "version": null,
     "buildPoints": [
       "common"
