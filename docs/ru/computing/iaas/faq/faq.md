@@ -20,7 +20,7 @@ VK Cloud обеспечивает виртуальные машины входя
 
 <summary>Как установить новый пароль для ВМ?</summary>
 
-Воспользуйтесь [инструкцией](../service-management/vm/vm-manage#ustanovka_i_izmenenie_parolya).
+Воспользуйтесь [инструкцией](../service-management/vm/vm-manage#password).
 
 </details>
 
