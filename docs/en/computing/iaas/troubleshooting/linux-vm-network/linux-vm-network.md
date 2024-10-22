@@ -24,9 +24,9 @@ The described approaches can also be used when access is lost to another applica
 
 1. [Make sure](../../service-management/vm/vm-manage#start_stop_restart_vm), that the VM is running.
 
-1. [Make sure](../../service-management/vm/vm-console#the_vnc_console),that you can access the virtual machine console and sign in to it using a [pre-configured login](../../service-management/vm/vm-connect/vm-connect-nix#2_select_the_user_name).
+1. [Make sure](../../service-management/vm/vm-console#the_vnc_console),that you can access the virtual machine console and sign in.
 
-   If necessary, [restore password](../../service-management/vm/vm-manage#setting_and_changing_a_password) for authorization.
+   If necessary, [restore password](../../service-management/vm/vm-manage#password) for authorization.
 
 1. Get information about the configuration of the virtual machine network interface:
 

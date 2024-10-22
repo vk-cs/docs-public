@@ -1,6 +1,6 @@
 The recommended way to connect to a Windows VM is via the RDP (Remote Desktop Protocol).
 
-## 1. Check the possibility of connecting via RDP
+## 1. Check ability of connecting via RDP
 
 Make sure that the following conditions are met:
 
@@ -24,15 +24,15 @@ VK Cloud provides [DNS servers](/en/networks/dns/publicdns) to which you can del
 
 If RDP connection to the VM is not possible or unavailable, use the [VNC console](../../vm-console#the_vnc_console).
 
-## 2. Prepare the credentials
+## 2. Prepare credentials
 
 To connect to a VM via RDP, you need to know the operating system user name and password.
 
-On the VK Cloud platform, when creating a Windows virtual machine in the operating system, a user is created with the name `Admin` and a generated password. Use this username and password if the VM was created on a private network. If the VM was created on the `ext-net` network, before the first connection [set a new password](../../vm-manage#setting_and_changing_a_password).
+[Set password](../../vm-manage#password) to log in to the OS. Write down the username and password.
 
-If the password has been lost, [reset](../../vm-manage#setting_and_changing_a_password) or [recovery](../../vm-manage#password_recovery) it.
+If the password has been lost, [reset](../../vm-manage#password) or [recovery](../../vm-manage#password_recovery) it.
 
-## 3. Connect to the VM
+## 3. Connect to VM
 
 <tabs>
 <tablist>
