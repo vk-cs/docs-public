@@ -1209,6 +1209,14 @@
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#password"
+  ],
+  [
+    "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#password_recovery"
+  ],
+  [
+    "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#restoring_vm_access_by_key"
   ],
   [
@@ -1225,7 +1233,7 @@
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#setting_and_changing_a_password"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#password"
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win",
@@ -1273,7 +1281,7 @@
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-manage",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#setting_and_changing_a_password"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#password"
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-manage",
@@ -1342,6 +1350,10 @@
   [
     "/en/computing/iaas/service-management/vm/vm-console",
     "http://localhost:3000/docs/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication"
+  ],
+  [
+    "/en/computing/iaas/service-management/vm/vm-console",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#password"
   ],
   [
     "/en/computing/iaas/service-management/vm/vm-console",
@@ -1493,7 +1505,7 @@
   ],
   [
     "/en/computing/iaas/service-management/images/image-metadata",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#password"
   ],
   [
     "/en/computing/iaas/service-management/images/image-metadata",
@@ -1721,11 +1733,11 @@
   ],
   [
     "/en/computing/iaas/troubleshooting/linux-vm-network",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-nix#2_select_the_user_name"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-console#the_vnc_console"
   ],
   [
     "/en/computing/iaas/troubleshooting/linux-vm-network",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#setting_and_changing_a_password"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#password"
   ],
   [
     "/en/computing/iaas/troubleshooting/linux-vm-network",
@@ -1765,7 +1777,7 @@
   ],
   [
     "/en/computing/iaas/faq",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#setting_and_changing_a_password"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-manage#password"
   ],
   [
     "/en/computing/iaas/faq",
@@ -2029,7 +2041,7 @@
   ],
   [
     "/en/computing/cloud-desktops/how-to-guides/check-desktop-image",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win#3_connect_to_the_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win#3_connect_to_vm"
   ],
   [
     "/en/computing/cloud-desktops/how-to-guides/check-desktop-image",
@@ -2041,7 +2053,7 @@
   ],
   [
     "/en/computing/cloud-desktops/how-to-guides/check-desktop-image",
-    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win#3_connect_to_the_vm"
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win#3_connect_to_vm"
   ],
   [
     "/en/computing/cloud-desktops/how-to-guides/check-desktop-image",
@@ -9705,6 +9717,14 @@
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#password"
+  ],
+  [
+    "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#vosstanovlenie_parolya"
+  ],
+  [
+    "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix",
     "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#vosstanovlenie_dostupa_k_vm_po_klyuchu"
   ],
   [
@@ -9721,7 +9741,7 @@
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-win",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#ustanovka_i_izmenenie_parolya"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#password"
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-win",
@@ -9769,7 +9789,7 @@
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-manage",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#ustanovka_i_izmenenie_parolya"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#password"
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-manage",
@@ -9838,6 +9858,10 @@
   [
     "/ru/computing/iaas/service-management/vm/vm-console",
     "http://localhost:3000/docs/ru/tools-for-using-services/cli/openstack-cli#3_proydite_autentifikaciyu"
+  ],
+  [
+    "/ru/computing/iaas/service-management/vm/vm-console",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#password"
   ],
   [
     "/ru/computing/iaas/service-management/vm/vm-console",
@@ -9993,7 +10017,7 @@
   ],
   [
     "/ru/computing/iaas/service-management/images/image-metadata",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#ustanovka_i_izmenenie_parolya"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#password"
   ],
   [
     "/ru/computing/iaas/service-management/images/image-metadata",
@@ -10253,7 +10277,7 @@
   ],
   [
     "/ru/computing/iaas/troubleshooting/linux-vm-network",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix#2_vyberite_imya_polzovatelya"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-console#vnc_konsol"
   ],
   [
     "/ru/computing/iaas/troubleshooting/linux-vm-network",
@@ -10297,7 +10321,7 @@
   ],
   [
     "/ru/computing/iaas/faq",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#ustanovka_i_izmenenie_parolya"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#password"
   ],
   [
     "/ru/computing/iaas/faq",
@@ -18145,7 +18169,7 @@
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#ustanovka_i_izmenenie_parolya"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#password"
   ],
   [
     "/ru/applications-and-services/marketplace/initial-configuration/1c-digilabs",
@@ -18281,7 +18305,7 @@
   ],
   [
     "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_requirements",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#ustanovka_i_izmenenie_parolya"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#password"
   ],
   [
     "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_create_packer",
@@ -18293,11 +18317,11 @@
   ],
   [
     "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_create_packer",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix#2_vyberite_imya_polzovatelya"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
   ],
   [
     "/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_create_cloud",
-    "http://localhost:3000/docs/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix#2_vyberite_imya_polzovatelya"
+    "http://localhost:3000/docs/ru/base/iaas/instructions/vm/vm-connect/vm-connect-nix"
   ],
   [
     "/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_configure/ibopt_fill_in",
