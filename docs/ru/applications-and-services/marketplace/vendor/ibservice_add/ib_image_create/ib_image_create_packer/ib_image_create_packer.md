@@ -144,7 +144,7 @@
 
       </info>
 
-      Имя пользователя ОС зависит от ОС. Список имен приведен в разделе [Подключение к ВМ Linux](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix#2_vyberite_imya_polzovatelya).
+      Имя пользователя ОС зависит от ОС. Список имен приведен в разделе [Подключение к ВМ Linux](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix).
 
       Имя группы безопасности по умолчанию зависит от типа SDN:
 
