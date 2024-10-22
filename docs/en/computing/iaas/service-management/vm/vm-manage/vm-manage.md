@@ -389,9 +389,33 @@ Tags allow you to filter the list of virtual machines and find the right VM fast
 </tabpanel>
 </tabs>
 
-## Setting and changing a password
+## {heading(Setting and changing a password)[id=password]}
 
-In the operating system of the VK Cloud virtual machine, you can set or change the default password for the user.
+In VK Cloud images (except Bitrix), the `root` account is blocked for security purposes and an account has been added for use by default.
+
+You can see the default account name in the list below or in the password setup window.
+
+<details>
+<summary>List of default accounts for different OS</summary>
+
+| Operating system | Username |
+| --- | --- |
+| AlmaLinux | almalinux |
+| ALT Linux | altlinux |
+| Astra Linux | astra |
+| Bitrix | root |
+| CentOS | centos |
+| Debian | debian |
+| Fedora | fedora |
+| FreeBSD | freebsd |
+| openSUSE | opensuse |
+| Ubuntu | ubuntu |
+| RED OS | redos |
+| Windows | Admin |
+
+</details>
+
+You need to set the default account password by yourself during your first authorization in the OS. The set password can be changed.
 
 Conditions for setting a password:
 
@@ -487,7 +511,7 @@ Password recovery generated for the default user is available only for Windows v
 
 <warn>
 
-If the password was changed after the VM was created or the VM was created on the `ext-net` network, [set a new password](#setting_and_changing_a_password).
+If the password was changed after the VM was created or the VM was created on the `ext-net` network, [set a new password](#password).
 
 </warn>
 

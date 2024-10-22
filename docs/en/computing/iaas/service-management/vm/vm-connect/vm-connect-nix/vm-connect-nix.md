@@ -1,6 +1,6 @@
 The recommended way to connect to a Linux VM is via SSH using a key pair.
 
-## 1. Check the ability to connect via SSH
+## 1. Check ability to connect via SSH
 
 To connect via SSH, an SSH server must be running on the virtual machine. On Linux virtual machines created in VK Cloud, the OpenSSH server is installed and started by default.
 
@@ -28,27 +28,15 @@ The virtual machines that were created from the FreeBSD and Bitrix images offere
 
 If SSH connection to the VM is not possible or unavailable, use the [VNC console](../../vm-console#the_vnc_console).
 
-## 2. Select the user name
+## 2. Prepare credentials
 
-Determine the user name (login) of the operating system that is deployed on the target VM.
+To connect to the VM via SSH, you need to know the operating system account name and password.
 
-In VK Cloud images (except Bitrix), the `root` account is blocked for security reasons and a default account has been added:
+[Set a password](../../vm-manage#password) to log in to the OS. Write down the account name and password.
 
-| Operating system | Username  |
-| ---              | ---       |
-| AlmaLinux        | almalinux |
-| ALT Linux        | altlinux  |
-| Astra Linux      | astra     |
-| Bitrix           | root      |
-| CentOS           | centos    |
-| Debian           | debian    |
-| Fedora           | fedora    |
-| FreeBSD          | freebsd   |
-| openSUSE         | opensuse  |
-| Ubuntu           | ubuntu    |
-| RED OS           | redos     |
+If the password has been lost, [reset](../../vm-manage#password) or [restore](../../vm-manage#password_recovery) it.
 
-## 3. Check for a key pair
+## 3. Check for key pair
 
 To connect to a VM over SSH using a key pair, it is necessary that the public key is stored on the virtual machine in the file `~/.ssh/authorized_keys`, and the file with the private key is located on the computer from which the connection is being made.
 
@@ -59,7 +47,7 @@ If the VM was created on the VK Cloud platform:
 
 If one or both of the keys from the pair are lost, follow the [recovery instructions](../../vm-manage#restoring_vm_access_by_key).
 
-## 4. Connect to the VM
+## 4. Connect to VM
 
 <tabs>
 <tablist>

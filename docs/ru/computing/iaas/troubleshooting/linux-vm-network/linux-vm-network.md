@@ -24,7 +24,7 @@
 
 1. [Убедитесь](../../service-management/vm/vm-manage#start_stop_restart_vm), что виртуальная машина запущена.
 
-1. [Убедитесь](../../service-management/vm/vm-console#vnc_konsol), что вы можете получить доступ к VNC-консоли виртуальной машины и авторизоваться в ней по [преднастроенному логину](../../service-management/vm/vm-connect/vm-connect-nix#2_vyberite_imya_polzovatelya).
+1. [Убедитесь](../../service-management/vm/vm-console#vnc_konsol), что вы можете получить доступ к VNC-консоли виртуальной машины и авторизоваться в ней.
 
    Если это необходимо, [восстановите пароль](../../service-management/vm/vm-manage#vosstanovlenie_parolya) для логина.
 

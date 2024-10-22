@@ -8,4 +8,4 @@
    * Curl — позволяет инициализировать скачивание агента.
    * Systemd — позволяет запускать агент и следить за его работоспособностью.
 
-* Qemu-guest-agent — позволяет задавать пароль к ВМ через ЛК облачной платформы (подробнее — в разделе [Управление ВМ](/ru/computing/iaas/service-management/vm/vm-manage#ustanovka_i_izmenenie_parolya)).
+* Qemu-guest-agent — позволяет задавать пароль к ВМ через ЛК облачной платформы (подробнее — в разделе [Управление ВМ](/ru/computing/iaas/service-management/vm/vm-manage#password)).

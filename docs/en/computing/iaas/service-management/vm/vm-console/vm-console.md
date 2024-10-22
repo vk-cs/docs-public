@@ -20,61 +20,61 @@ Features of working with the VNC console:
 - you can only use the Latin alphabet to enter text;
 - the clipboard in the VNC console is not available, you cannot copy and paste the text.
 
-Open the console in the VK Cloud management console or use the address obtained through the OpenStack CLI.
+To connect VM via VNC console:
 
-<tabs>
-<tablist>
-<tab>Management console></tab>
-<tab>OpenStack CLI</tab>
-</tablist>
+1. Open the console:
 
-<tabpanel>
+    <tabs>
+    <tablist>
+    <tab>Management console</tab>
+    <tab>OpenStack CLI</tab>
+    </tablist>
 
-1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
-2. Go to **Cloud Servers → Virtual machines**.
-3. In the list of virtual machines, click on the name of the VM you need.
-4. On the VM page, go to the tab **Console**.
-5. If the VM is not running, click the start button on the tab.
+    <tabpanel>
 
-<info>
+    1. [Go to](https://msk.cloud.vk.com/app/en) VK Cloud management console.
+    1. Go to the **Cloud Servers → Virtual machines** section.
+    1. In the list of virtual machines, click on the name of the VM you need.
+    1. Go to the **Console** tab.
 
-Use the VNC console on the tab or click **Open in new window**.
+    </tabpanel>
 
-</info>
+    <tabpanel>
 
-</tabpanel>
+    1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
 
-<tabpanel>
+    1. Get a link to the VNC console page.
 
-1. Make sure that OpenStack client [is installed](/en/tools-for-using-services/cli/openstack-cli#1_install_the_openstack_client) and [authenticate](/en/tools-for-using-services/cli/openstack-cli#3_complete_authentication) to the project.
+       ```bash
+       openstack console url show <virtual machine ID>
+       ```
 
-2. Get a link to the VNC console page.
+       Example output:
 
-   ```bash
-   openstack console url show <virtual machine ID>
-   ```
+       ```bash
+       +-------+-------------------------------------------------------------------------------------+
+       | Field | Value                                                                                 |
+       +-------+-------------------------------------------------------------------------------------+
+       | type  | novnc                                                                                |
+       | url   | https://infra.mail.ru:6080/vnc_auto.html?token=20224980-43eb-4535-85c7-310a18e27941 |
+       +-------+-------------------------------------------------------------------------------------+
+       ```
 
-   Example output:
+    1. Use the link to open the VNC console page in the browser.
 
-   ```bash
-   +-------+-------------------------------------------------------------------------------------+
-   | Field | Value                                                                               |
-   +-------+-------------------------------------------------------------------------------------+
-   | type  | novnc                                                                               |
-   | url   | https://infra.mail.ru:6080/vnc_auto.html?token=20224980-43eb-4535-85c7-310a18e27941 |
-   +-------+-------------------------------------------------------------------------------------+
-   ```
+       <info>
 
-3. Use the link to open the VNC console page in the browser.
+       If the link has expired, run the command again to get a new link.
 
-   <info>
+      </info>
 
-   If the link has expired, run the command again to get a new link.
+    </tabpanel>
+    </tabs>
 
-   </info>
-
-</tabpanel>
-</tabs>
+1. If the virtual machine is not running, click the start button on the tab.
+1. [Set a password](../vm-manage#password) to log into the OS if you haven't done it already. Write down the account name and password.
+1. (Optional) Click the **Open in new window** button to open the console in a separate browser window.
+1. Enter the login and password in the console.
 
 VNC console control buttons are available in the VK Cloud management console interface and in a separate window:
 

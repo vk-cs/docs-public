@@ -20,7 +20,7 @@ VK Cloud provides virtual machines with an incoming and outgoing Internet connec
 
 <summary>How do I set a new password for a VM?</summary>
 
-Use the [instructions](../service-management/vm/vm-manage#setting_and_changing_a_password).
+Use the [instructions](../service-management/vm/vm-manage#password).
 
 </details>
 
