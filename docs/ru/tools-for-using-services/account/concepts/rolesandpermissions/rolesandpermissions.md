@@ -87,6 +87,18 @@
 
 В сервисе виртуальных сетей он может создавать и редактировать группы правил (firewall).
 
+| Оператор виртуальных машин
+| Пользователь с этой ролью может работать на виртуальной машине, но не может управлять ее настройками.
+
+Оператор ВМ может:
+
+- запустить или остановить ВМ;
+- работать в ВМ через [VNC-консоль](/ru/computing/iaas/service-management/vm/vm-console);
+- подключаться к ВМ через [SSH](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix) или [RDP](/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-win);
+- просматривать конфигурацию и сетевые настройки ВМ.
+
+Оператор ВМ не может создавать резервные копии.
+
 | Администратор сети
 | Пользователь с этой ролью может выполнять полный набор операций в сервисах виртуальных сетей и DNS.
 
@@ -231,6 +243,12 @@
 | ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/check.svg "inline")
 
+|Оператор ВМ
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+
 |Администратор сети
 | ![](/ru/assets/check.svg "inline")
 | ![](/ru/assets/no.svg "inline")
@@ -296,8 +314,8 @@
 | ![](/ru/assets/no.svg "inline")
 
 |Администратор, оператор ВМ
-| Все события сервиса Cloud Servers и все свои действия
-| ![](/ru/assets/check.svg "inline")
+| ![](/ru/assets/no.svg "inline")
+| ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 
 |Администратор сети
@@ -306,12 +324,12 @@
 | ![](/ru/assets/no.svg "inline")
 
 |Администратор сетевой безопасности
-| Все события сервиса Cloud Network и все свои действия
+| ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 
 |Администратор внутренних сетей
-| Все события сервиса Cloud Network и все свои действия
+| ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 | ![](/ru/assets/no.svg "inline")
 
