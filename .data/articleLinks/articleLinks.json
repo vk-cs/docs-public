@@ -7285,6 +7285,14 @@
   ],
   [
     "/en/tools-for-using-services/account/concepts/rolesandpermissions",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-console"
+  ],
+  [
+    "/en/tools-for-using-services/account/concepts/rolesandpermissions",
+    "http://localhost:3000/docs/en/computing/iaas/service-management/vm/vm-connect/vm-connect-win"
+  ],
+  [
+    "/en/tools-for-using-services/account/concepts/rolesandpermissions",
     "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/rolesandpermissions#roles_for_the_containers_service_and_their_permissions"
   ],
   [
@@ -8801,11 +8809,11 @@
   ],
   [
     "/ru/intro/migration/migrate-vmware",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create#sozdayte_vm"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create#create_vm"
   ],
   [
     "/ru/intro/migration/migrate-vmware",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create#sozdayte_vm"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create#create_vm"
   ],
   [
     "/ru/intro/migration/migrate-vmware",
@@ -8825,7 +8833,7 @@
   ],
   [
     "/ru/intro/migration/migrate-vmware",
-    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create#sozdayte_vm"
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create#create_vm"
   ],
   [
     "/ru/intro/billing/quick-start",
@@ -18369,6 +18377,22 @@
   ],
   [
     "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_script",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_requirements"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_script",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ib_image_create/ib_image_agent"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_script",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/vendor/ibservice_add/ibservice_upload/ibservice_upload_deploysystemtest#agent_log"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_script",
+    "http://localhost:3000/docs/ru/applications-and-services/marketplace/vendor/ivkcs/ivkcs_resources/ivkcs_agent_exec"
+  ],
+  [
+    "/ru/applications-and-services/marketplace/vendor/ibservice_add/tf_manifest/tf_manifest_script",
     "http://localhost:3000/docs/ru/applications-and-services/marketplace/vendor/ivkcs"
   ],
   [
@@ -18594,6 +18618,14 @@
   [
     "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
     "http://localhost:3000/docs/ru/tools-for-using-services/account/concepts/rolesandpermissions#roles_permissions"
+  ],
+  [
+    "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-console"
+  ],
+  [
+    "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-win"
   ],
   [
     "/ru/tools-for-using-services/account/concepts/rolesandpermissions",
@@ -19822,6 +19854,66 @@
   [
     "/ru/cases/cases-logs/mp-elk-monitoring",
     "http://localhost:3000/docs/ru/cases/cases-logs/elk-u18"
+  ],
+  [
+    "/ru/cases/performance-testing/cpu-testing",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#delete_vm"
+  ],
+  [
+    "/ru/cases/performance-testing/cpu-testing",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#udalenie_seti"
+  ],
+  [
+    "/ru/cases/performance-testing/ram-testing",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/ru/cases/performance-testing/ram-testing",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#delete_vm"
+  ],
+  [
+    "/ru/cases/performance-testing/ram-testing",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#udalenie_seti"
+  ],
+  [
+    "/ru/cases/performance-testing/disk-testing",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#delete_vm"
+  ],
+  [
+    "/ru/cases/performance-testing/disk-testing",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#udalenie_seti"
+  ],
+  [
+    "/ru/cases/performance-testing/network-testing",
+    "http://localhost:3000/docs/ru/intro/start/concepts/architecture#az"
+  ],
+  [
+    "/ru/cases/performance-testing/network-testing",
+    "http://localhost:3000/docs/ru/networks/vnet/concepts/architecture"
+  ],
+  [
+    "/ru/cases/performance-testing/network-testing",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create"
+  ],
+  [
+    "/ru/cases/performance-testing/network-testing",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-create"
+  ],
+  [
+    "/ru/cases/performance-testing/network-testing",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-connect/vm-connect-nix"
+  ],
+  [
+    "/ru/cases/performance-testing/network-testing",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#poluchenie_id_virtualnoy_mashiny"
+  ],
+  [
+    "/ru/cases/performance-testing/network-testing",
+    "http://localhost:3000/docs/ru/computing/iaas/service-management/vm/vm-manage#delete_vm"
+  ],
+  [
+    "/ru/cases/performance-testing/network-testing",
+    "http://localhost:3000/docs/ru/networks/vnet/service-management/net#udalenie_seti"
   ],
   [
     "/ru/cases/sprut-migration/about",
