@@ -107,6 +107,13 @@
 |Нет
 |—
 |Нет
+
+|`user_script`
+|Cкрипты, запускаемые через Cloud-init
+|list
+|Нет
+|—
+|Нет
 |===
 {/caption}
 
@@ -168,7 +175,7 @@ resource "vkcs_compute_instance" "single" {
 Не поддерживается установка агента.
 
 </warn>
-|FreeBSD 13.2.
+|FreeBSD 13.2
 |23.1.1
 |23e07695-844a-44b0-8e3d-bc1126b0abc4
 |FreeBSD
@@ -303,3 +310,101 @@ resource "ivkcs_user_data" "user_data" {
 }
 ```
 {/caption}
+
+## {heading(Аргумент user_script)[id=user_script]}
+
+Аргументы `user_script` приведены в {linkto(#tab_userscript)[text=таблице %number]}.
+
+{caption(Таблица {counter(table)[id=numb_tab_userscript]} — Аргументы user_script)[align=right;position=above;id=tab_userscript;number={const(numb_tab_userscript)}]}
+[cols="2,3,1,1", options="header"]
+|===
+|Имя
+|Описание
+|Формат
+|Значение по умолчанию
+
+|`name`
+|Имя скрипта. Выполнение скриптов выполняется в алфавитном порядке
+|string
+| —
+
+|`content_type`
+|Тип скрипта. Определяет, когда скрипт будет выполнен. Возможные значения:
+
+  - `text/x-shellscript-per-boot`;
+  - `text/x-shellscript-per-instance`;
+  - `text/x-shellscript-per-once`
+|string
+| —
+
+|`content`
+|Тело скрипта
+|string
+| —
+|===
+{/caption}
+
+Порядок выполнения скриптов приведен в {linkto(#tab_scripttype)[text=таблице %number]}.
+
+{caption(Таблица {counter(table)[id=numb_tab_scripttype]} — Типы скриптов)[align=right;position=above;id=tab_scripttype;number={const(numb_tab_scripttype)}]}
+[cols="1,2,3", options="header"]
+|===
+|Очередность выполнения
+|Тип скрипта
+|Описание
+
+|1
+|`x-shellscript-per-boot`
+|Выполняются в алфавитном порядке каждый раз при загрузке системы
+
+|2
+|`x-shellscript-per-instance`
+|Выполняются в алфавитном порядке при первом запуске нового инстанса
+
+|3
+|`x-shellscript-per-once`
+|Выполняются в алфавитном порядке один раз. Не запускается повторно при изменении инстанса
+|===
+{/caption}
+
+{caption(Пример ресурса `ivkcs_user_data` с `user_script`)[align=left;position=above]}
+```hcl
+
+resource "ivkcs_user_data" "init" {
+  uuid      = var.instance_uuid
+  hosts     = [local.hosts_name]
+  target_os = "almalinux9"
+
+  ssh_authorized_keys = [
+    ivkcs_ssh_keypair.keypair.public_key,
+  ]
+  
+  user_script {
+    name = "script1"
+    content_type = "text/x-shellscript-per-once"
+    content =<<-EOT
+#!/bin/bash
+
+echo "script1"
+EOT
+  }
+
+  user_script {
+    name = "script2"
+    content_type = "text/x-shellscript-per-instance"
+    content =<<-EOT
+#!/bin/bash
+
+echo "script2"
+EOT
+  }
+}
+```
+{/caption}
+
+Дополнительная информация:
+
+- [Scripts Per Boot](https://cloudinit.readthedocs.io/en/latest/reference/modules.html#scripts-per-boot);
+- [Scripts Per Instance](https://cloudinit.readthedocs.io/en/latest/reference/modules.html#scripts-per-instance);
+- [Scripts Per Once](https://cloudinit.readthedocs.io/en/latest/reference/modules.html#scripts-per-once);
+- [Scripts User](https://cloudinit.readthedocs.io/en/latest/reference/modules.html#scripts-user).
