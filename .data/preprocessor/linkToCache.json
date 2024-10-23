@@ -394,6 +394,11 @@
     "full": "Типы дисков",
     "text": "Типы дисков"
   },
+  "create_vm": {
+    "number": null,
+    "full": "Создайте ВМ",
+    "text": "Создайте ВМ"
+  },
   "neutron": {
     "number": null,
     "full": "Neutron",
@@ -1229,6 +1234,16 @@
     "full": "1 Использование скриптов",
     "text": "Использование скриптов"
   },
+  "tf_script_userdata": {
+    "number": "1.1",
+    "full": "1.1 Выполнение скриптов через Cloud-init",
+    "text": "Выполнение скриптов через Cloud-init"
+  },
+  "tf_script_agentexec": {
+    "number": "1.2",
+    "full": "1.2 Выполнение скриптов через агент",
+    "text": "Выполнение скриптов через агент"
+  },
   "tf_manifest_monitoring": {
     "number": "1",
     "full": "1 Мониторинг",
@@ -1784,6 +1799,16 @@
     "full": "Таблица 3 — Аргументы packages",
     "text": "3 Таблица 3 — Аргументы packages"
   },
+  "tab_userscript": {
+    "number": "4",
+    "full": "Таблица 4 — Аргументы user_script",
+    "text": "4 Таблица 4 — Аргументы user_script"
+  },
+  "tab_scripttype": {
+    "number": "5",
+    "full": "Таблица 5 — Типы скриптов",
+    "text": "5 Таблица 5 — Типы скриптов"
+  },
   "ivkcs_user_data": {
     "number": "1",
     "full": "1 Ресурс ivkcs_user_data",
@@ -1798,6 +1823,11 @@
     "number": "1.2",
     "full": "1.2 Аргумент packages",
     "text": "Аргумент packages"
+  },
+  "user_script": {
+    "number": "1.3",
+    "full": "1.3 Аргумент user_script",
+    "text": "Аргумент user_script"
   },
   "service_description": {
     "number": "1",
@@ -1848,5 +1878,15 @@
     "number": null,
     "full": "Права для ролей сервиса Cloud Containers",
     "text": "Права для ролей сервиса Cloud Containers"
+  },
+  "test_item_selection": {
+    "number": null,
+    "full": "Ресурсы и компоненты для тестирования",
+    "text": "Ресурсы и компоненты для тестирования"
+  },
+  "test_order": {
+    "number": null,
+    "full": "Порядок проведения тестирования",
+    "text": "Порядок проведения тестирования"
   }
 }

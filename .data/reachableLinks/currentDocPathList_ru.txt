@@ -788,6 +788,12 @@
 /docs/ru/cases/cases-logs/mp-elk-monitoring
 /docs/ru/cases/cases-logs/case-fluent-bit
 /docs/ru/cases/cases-logs/case-fluentd
+/docs/ru/cases/performance-testing
+/docs/ru/cases/performance-testing/concepts
+/docs/ru/cases/performance-testing/cpu-testing
+/docs/ru/cases/performance-testing/ram-testing
+/docs/ru/cases/performance-testing/disk-testing
+/docs/ru/cases/performance-testing/network-testing
 /docs/ru/cases/sprut-migration
 /docs/ru/cases/sprut-migration/about
 /docs/ru/cases/sprut-migration/iaas

@@ -21858,6 +21858,96 @@
     ]
   },
   {
+    "uuid": "50bf0fdd-9fe8-45a4-a331-b3a1c97bf90f",
+    "lang": "ru",
+    "type": "INTERMEDIATE",
+    "level": 3,
+    "partialPath": "/ru/cases/performance-testing",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/performance-testing/performance-testing.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/performance-testing/performance-testing.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "9cf59b91-198a-4e4a-b08d-a3088597f30f",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/cases/performance-testing/concepts",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/performance-testing/concepts/concepts.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/performance-testing/concepts/concepts.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "a40ba477-cf9b-45c1-8bf2-fde4930e8155",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/cases/performance-testing/cpu-testing",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/performance-testing/cpu-testing/cpu-testing.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/performance-testing/cpu-testing/cpu-testing.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "bb5bf8f7-5fd3-46eb-8fa1-29a151320bb0",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/cases/performance-testing/ram-testing",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/performance-testing/ram-testing/ram-testing.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/performance-testing/ram-testing/ram-testing.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "b99c6125-0612-4b6f-85f0-229f82eec78f",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/cases/performance-testing/disk-testing",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/performance-testing/disk-testing/disk-testing.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/performance-testing/disk-testing/disk-testing.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
+    "uuid": "441d63ac-bf65-4618-bec0-2eb0070f5517",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 4,
+    "partialPath": "/ru/cases/performance-testing/network-testing",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/performance-testing/network-testing/network-testing.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/cases/performance-testing/network-testing/network-testing.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "69b94b27-1e6b-40e9-ae24-33d5cd44b1b9",
     "lang": "ru",
     "type": "INTERMEDIATE",
