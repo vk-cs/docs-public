@@ -165,8 +165,8 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
 
 ## Increasing the disk size without rebooting
 
-1. [Increase](#increasing_the_disk_size_with_rebooting) the disk size in your VK Cloud account or using Openstack CLI, but do not reboot it.
-1. Increase the disk size in the VM's OS:
+1. [Increase](#increasing_the_disk_size_with_rebooting) the virtual disk size in your VK Cloud management console or via Openstack CLI, but do not reboot the VM. This will change the disk size, but will not change the size of the disk partitions in the OS.
+1. Increase the size of disk partitions in the VM operating system:
 
    <tabs>
    <tablist>
@@ -175,6 +175,7 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
    </tablist>
    <tabpanel>
 
+   1. Connect to the VM via [RDP](../vm/vm-connect/vm-connect-win) or via [console](../vm/vm-console).
    1. Open Disk Management with administrator permissions (`diskmgmt.msc`).
    1. Choose **Extend Volume** in right-click menu of the volume that you want to extend.
    1. [Increase the disk size](https://learn.microsoft.com/en-us/windows-server/storage/disk-management/extend-a-basic-volume).
@@ -182,12 +183,46 @@ Restrictions related to changing the VM disk size on the VK Cloud platform:
    </tabpanel>
    <tabpanel>
 
-   Run the command:
+   1. Connect to the VM via [SSH](../vm/vm-connect/vm-connect-nix) or via [console](../vm/vm-console).
+   1. Find out what disk partitions are on the VM and what file systems they have. To do this, run the command:
+    
+      ```bash
+        df -Th
+      ```
+            
+      In the response, find the partition you want to resize and look at its file system in the **Type** column. Typically, you need to resize `/dev/vda1`.
+   1. Increase the partition size. 
+       
+      The example command:
+    
+      ```bash
+        growpart /dev/vda 1 # you need a space before 1
+      ```
 
-   ```bash
-   growpart /dev/vda 1 <space is needed>
-   sudo resize2fs /dev/vda1
-   ```
+   1. Increase the file system size to the size of the partition. Depending on the directory file system, use the command:
+    
+      <tabs>
+      <tablist>
+      <tab>Ext1, Ext2, Ext3, Ext4</tab>
+      <tab>XFS</tab>
+      </tablist>
+      <tabpanel>
+
+      ```bash
+        sudo resize2fs /dev/vda1 # you need no space before 1
+      ```
+
+      </tabpanel>
+      <tabpanel>
+       
+      ```bash
+        sudo xfs_growfs -d /dev/vda1
+      ```
+    
+      </tabpanel>
+      </tabs>
+    
+   1. Use the `df -Th` command to verify that the partition size has changed.
 
    </tabpanel>
    </tabs>
