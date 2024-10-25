@@ -39,8 +39,8 @@ Bonuses are credited:
 
 - When a new user account is [registered](/en/intro/start/account-registration) on the platform. These sign-up bonuses are credited only once, after services are activated in the [project](/en/tools-for-using-services/account/concepts/projects) that is created for the account. The amount of bonuses depends on the region of the project:
 
-  - Moscow — 3000 bonuses;
-  - Kazakhstan — 24000 bonuses.
+  - Moscow — 3000 bonuses (1000 bonuses to pay for virtual servers and their backups, 2000 bonuses for all other services except CDN, third-party services and licenses, as well as software products from the [Marketplace](https://msk.cloud.vk.com/app/services/marketplace)).
+  - Kazakhstan — 24000 bonuses on all services except CDN, third-party services and licenses, as well as software products from the Marketplace.
 
   <err>
 
@@ -49,4 +49,10 @@ Bonuses are credited:
   </err>
 
 - During some advertising campaigns.
-- When paying refunds for the technical failures that occurred through the fault of VK Cloud.
+- When paying refunds for the technical failures that occurred through the fault of VK Cloud. See more about refunds in the agreements on the use of the relevant services.
+
+<warn>
+
+In some cases, previously accrued bonuses may be canceled or denied. See more in the [paragraph 8.3 of the VK Cloud Platform Terms of Use](/en/intro/start/legal/legal-terms#8_payment_for_company_services)
+
+</warn>
