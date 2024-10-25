@@ -7,5 +7,6 @@
   "sectionTitle": "Личный кабинет",
   "icon": "",
   "weight": 2,
+  "additionalUuids": ["ab1486af-0c0a-4aa3-b328-383da74395fc"],
   "uuid": "1ea92b5f-1ea5-43e9-b1c5-9eddb24081d4"
 }
