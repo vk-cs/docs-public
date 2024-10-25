@@ -4,11 +4,13 @@
 
 <summary>How do I get bonuses for registering in my management console?</summary>
 
-[Bonuses](../concepts/balance#bonuses) are credited when registering a new user account. Bonuses are credited after the activation of services in the project, when all the stages of [account confirmation](/en/intro/start/account-registration#2_confirm_your_account) have been completed.
+[Bonuses](../concepts/balance#bonuses) are credited when registering a new user account. Bonuses are accrued after all [registration](/en/intro/start/account-registration) steps are completed.
+
+Bonuses are not awarded when new projects are created by existing users and when a new user enters a project by invitation.
 
 <warn>
 
-If an existing user creates a new project or a new user enters the project by invitation, bonuses are not awarded.
+In some cases, previously accrued bonuses may be canceled or denied. See more in [paragraph 8.3 of the VK Cloud Platform Terms of Use](/en/intro/start/legal/legal-terms#8_payment_for_company_services)
 
 </warn>
 
