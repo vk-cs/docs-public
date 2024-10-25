@@ -29,6 +29,7 @@
 /docs/ru/intro/start/legal/research-agreement
 /docs/ru/intro/start/legal/policy-promo-migration
 /docs/ru/intro/start/legal/policy-vdi
+/docs/ru/intro/start/legal/cloud-start
 /docs/ru/intro/start/faq
 /docs/ru/intro/start/about-help
 /docs/ru/intro/migration

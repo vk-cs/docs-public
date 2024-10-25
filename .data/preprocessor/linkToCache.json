@@ -344,6 +344,11 @@
     "full": "Просмотр SDN проекта",
     "text": "Просмотр SDN проекта"
   },
+  "bonuses": {
+    "number": null,
+    "full": "Бонусы",
+    "text": "Бонусы"
+  },
   "prepay": {
     "number": null,
     "full": "Предоплата",
@@ -383,6 +388,11 @@
     "number": null,
     "full": "Дорегистрация ЮЛ и ИП",
     "text": "Дорегистрация ЮЛ и ИП"
+  },
+  "payment_refunds_bonuses": {
+    "number": null,
+    "full": "Оплата, возврат, бонусы",
+    "text": "Оплата, возврат, бонусы"
   },
   "flavors": {
     "number": null,

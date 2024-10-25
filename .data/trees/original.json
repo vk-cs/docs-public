@@ -9825,6 +9825,21 @@
     ]
   },
   {
+    "uuid": "392a9552-837b-4540-8737-ea7c4f061d48",
+    "lang": "ru",
+    "type": "ARTICLE",
+    "level": 5,
+    "partialPath": "/ru/intro/start/legal/cloud-start",
+    "metaFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/legal/cloud-start/cloud-start.meta.json",
+    "mdFullPath": "/builds/infra/front/tech-writers/docs-public/docs/ru/intro/start/legal/cloud-start/cloud-start.md",
+    "variables": {},
+    "hidden": false,
+    "version": null,
+    "buildPoints": [
+      "common"
+    ]
+  },
+  {
     "uuid": "04381ae7-c4ad-4d23-8b46-224fc197b944",
     "lang": "ru",
     "type": "ARTICLE",

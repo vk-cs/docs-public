@@ -496,6 +496,10 @@
     "http://localhost:3000/docs/en/tools-for-using-services/account/concepts/projects"
   ],
   [
+    "/en/intro/billing/concepts/balance",
+    "http://localhost:3000/docs/en/intro/start/legal/legal-terms#8_payment_for_company_services"
+  ],
+  [
     "/en/intro/billing/concepts/physical-corporate",
     "http://localhost:3000/docs/en/intro/billing/concepts/report"
   ],
@@ -789,7 +793,11 @@
   ],
   [
     "/en/intro/billing/faq",
-    "http://localhost:3000/docs/en/intro/start/account-registration#2_confirm_your_account"
+    "http://localhost:3000/docs/en/intro/start/account-registration"
+  ],
+  [
+    "/en/intro/billing/faq",
+    "http://localhost:3000/docs/en/intro/start/legal/legal-terms#8_payment_for_company_services"
   ],
   [
     "/en/intro/billing/faq",
@@ -8857,7 +8865,7 @@
   ],
   [
     "/ru/intro/billing/quick-start",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/balance#bonusy"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/balance#bonuses"
   ],
   [
     "/ru/intro/billing/quick-start",
@@ -8917,7 +8925,7 @@
   ],
   [
     "/ru/intro/billing/concepts/balance",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/balance#bonusy"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/balance#bonuses"
   ],
   [
     "/ru/intro/billing/concepts/balance",
@@ -8938,6 +8946,10 @@
   [
     "/ru/intro/billing/concepts/balance",
     "http://localhost:3000/docs/ru/base/account/concepts/projects"
+  ],
+  [
+    "/ru/intro/billing/concepts/balance",
+    "http://localhost:3000/docs/ru/intro/start/legal/legal-terms#8_oplata_uslug_kompanii"
   ],
   [
     "/ru/intro/billing/concepts/physical-corporate",
@@ -9237,11 +9249,15 @@
   ],
   [
     "/ru/intro/billing/faq",
-    "http://localhost:3000/docs/ru/intro/start/account-registration#2_podtverdite_uchetnuyu_zapis"
+    "http://localhost:3000/docs/ru/intro/start/account-registration"
   ],
   [
     "/ru/intro/billing/faq",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/balance#bonusy"
+    "http://localhost:3000/docs/ru/intro/start/legal/legal-terms#8_oplata_uslug_kompanii"
+  ],
+  [
+    "/ru/intro/billing/faq",
+    "http://localhost:3000/docs/ru/intro/billing/concepts/balance#bonuses"
   ],
   [
     "/ru/intro/billing/faq",
@@ -9321,7 +9337,7 @@
   ],
   [
     "/ru/intro/billing/faq",
-    "http://localhost:3000/docs/ru/intro/billing/concepts/balance#bonusy"
+    "http://localhost:3000/docs/ru/intro/billing/concepts/balance#bonuses"
   ],
   [
     "/ru/intro/billing/faq",
