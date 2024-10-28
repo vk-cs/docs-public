@@ -7,5 +7,6 @@
   "sectionTitle": "Management console",
   "icon": "",
   "weight": 2,
+  "additionalUuids": ["7153a6a3-19af-4a7d-906c-dd88aad569a8"],
   "uuid": "a5510c80-93ca-46d3-80db-4bacee5d0f5c"
 }
