@@ -6,6 +6,6 @@
   "metaDescription": "Использование Terraform-провайдера VK Cloud для управления платформой, быстрый старт и примеры манифестов.",
   "sectionTitle": "Terraform",
   "icon": "",
-  "weight": 4,
+  "weight": 5,
   "uuid": "409caeaa-b3cf-4fb3-a690-0a262c0383da"
 }
