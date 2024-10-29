@@ -560,7 +560,6 @@
 /docs/en/tools-for-using-services/account/service-management/debugging
 /docs/en/tools-for-using-services/account/how-to-guides
 /docs/en/tools-for-using-services/account/how-to-guides/systemstate
-/docs/en/tools-for-using-services/account/how-to-guides/ideasportal
 /docs/en/tools-for-using-services/account/tariffication
 /docs/en/tools-for-using-services/account/faq
 /docs/en/tools-for-using-services/cli

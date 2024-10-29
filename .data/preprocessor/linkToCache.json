@@ -544,6 +544,16 @@
     "full": "3. Импортируйте информационную базу 1С в облачную инфраструктуру",
     "text": "3. Импортируйте информационную базу 1С в облачную инфраструктуру"
   },
+  "roles_permissions_kubernetes": {
+    "number": null,
+    "full": "Права для ролей сервиса Cloud Containers",
+    "text": "Права для ролей сервиса Cloud Containers"
+  },
+  "xaas_vendor_roles": {
+    "number": null,
+    "full": "Роли пользователей",
+    "text": "Роли пользователей"
+  },
   "pic_xaas": {
     "number": "1",
     "full": "Рисунок 1 — Взаимодействие Магазина с сервисами",
@@ -1883,11 +1893,6 @@
     "number": "1.3.5",
     "full": "1.3.5 Лицензионное соглашение",
     "text": "Лицензионное соглашение"
-  },
-  "roles_permissions_kubernetes": {
-    "number": null,
-    "full": "Права для ролей сервиса Cloud Containers",
-    "text": "Права для ролей сервиса Cloud Containers"
   },
   "test_item_selection": {
     "number": null,
